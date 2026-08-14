@@ -1,0 +1,95 @@
+{
+ "schema": 1,
+ "id": "ic-interface.qfn.i2c.3-6v",
+ "name": "IC Interface — I2C, 3.6V — QFN",
+ "category_path": [
+  "IC",
+  "Interface"
+ ],
+ "description": "Surface-mount I2C interface ICs operating at 3.6V available in QFN package footprint options.",
+ "selection_hints": [
+  "Choose when requiring a 3.6V I2C interface IC in surface-mount QFN packaging.",
+  "Select between Tier A and Tier B options based on component quality tier requirements.",
+  "Verify target PCB footprint matches available options such as QFN-24-1EP or UQFN-16."
+ ],
+ "avoid_when": [
+  "Avoid when the PCB layout requires packages other than QFN or UQFN.",
+  "Do not use if the operating voltage specification differs from 3.6V.",
+  "Do not use if a non-I2C interface protocol is required."
+ ],
+ "keywords": [
+  "ic",
+  "interface",
+  "i2c",
+  "3.6v",
+  "qfn",
+  "uqfn",
+  "smd",
+  "stmpe1600",
+  "tcal6408rsv",
+  "qfn-24-1ep",
+  "uqfn-16",
+  "kicad-symbols",
+  "expander",
+  "6v",
+  "io",
+  "gpio",
+  "expansion",
+  "interrupt",
+  "p0",
+  "6mm",
+  "nolead",
+  "fast",
+  "mode"
+ ],
+ "facts": {
+  "package_family": "QFN",
+  "facets": [
+   "I2C",
+   "3.6V"
+  ],
+  "mounts": [
+   "smd"
+  ],
+  "footprints": [
+   "QFN-24-1EP_4x4mm_P0.5mm_EP2.6x2.6mm",
+   "UQFN-16_1.8x2.6mm_P0.4mm"
+  ],
+  "sources": {
+   "kicad-symbols": 2
+  }
+ },
+ "quality": {
+  "part_count": 2,
+  "planner_visible_count": 2,
+  "tier_counts": {
+   "A": 1,
+   "B": 1
+  },
+  "review_status": "ai_generated"
+ },
+ "representative_parts": [
+  {
+   "id": "kicad-symbols/Interface_Expansion/STMPE1600",
+   "name": "STMPE1600",
+   "tier": "A",
+   "score": 100,
+   "footprint": "QFN-24-1EP_4x4mm_P0.5mm_EP2.6x2.6mm",
+   "why": "tier A, score 100, QFN-24-1EP_4x4mm_P0.5mm_EP2.6x2.6mm"
+  },
+  {
+   "id": "kicad-symbols/Interface_Expansion/TCAL6408RSV",
+   "name": "TCAL6408RSV",
+   "tier": "B",
+   "score": 92,
+   "footprint": "UQFN-16_1.8x2.6mm_P0.4mm",
+   "why": "tier B, score 92, UQFN-16_1.8x2.6mm_P0.4mm"
+  }
+ ],
+ "part_ids": [
+  "kicad-symbols/Interface_Expansion/STMPE1600",
+  "kicad-symbols/Interface_Expansion/TCAL6408RSV"
+ ],
+ "embedding_text": "ic-interface.qfn.i2c.3-6v | IC Interface | Surface-mount I2C interface ICs operating at 3.6V available in QFN package footprint options. | ic interface i2c 3.6v qfn uqfn smd stmpe1600 tcal6408rsv qfn-24-1ep uqfn-16 kicad-symbols expander 6v io gpio expansion interrupt p0 6mm nolead fast mode | QFN | I2C 3.6V",
+ "class": "ic.interface"
+}

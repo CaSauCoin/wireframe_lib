@@ -1,0 +1,105 @@
+{
+ "schema": 1,
+ "id": "connector.usb3.usb",
+ "name": "Connector — USB — USB3",
+ "category_path": [
+  "Connector"
+ ],
+ "description": "USB3 connector cluster (7 parts) covering USB Type-A and Micro-B footprints from Molex, Würth, and Connfly, in SMD and through-hole mounts; select by exact footprint match.",
+ "selection_hints": [
+  "Prefer the tier B representative parts (USB3_A, USB3_A_Stacked) over the lower tier C entries.",
+  "Confirm SMD vs through-hole mount fits the board's mechanical assembly.",
+  "Review status is 'generated' — verify symbol-footprint pairing before committing to layout."
+ ],
+ "avoid_when": [
+  "The design needs a USB connector family other than USB3 (footprint not in this cluster).",
+  "Only tier C parts are available and the exact footprint/mount is not confirmed.",
+  "Electrical ratings or pinout are not stated by the selected part but are required for the design.",
+  "The symbol-footprint pairing has not been reviewed and layout accuracy is critical."
+ ],
+ "keywords": [
+  "usb3",
+  "usb",
+  "connector",
+  "usb type a",
+  "usb micro-b",
+  "molex",
+  "wuerth",
+  "connfly",
+  "smd",
+  "through hole",
+  "horizontal",
+  "stacked",
+  "plug",
+  "receptacle",
+  "48393-001",
+  "48406-0001",
+  "692112030100",
+  "ds1104-01",
+  "right",
+  "angle",
+  "type",
+  "micro",
+  "com",
+  "pdf"
+ ],
+ "facts": {
+  "package_family": "USB3",
+  "facets": [
+   "USB"
+  ],
+  "mounts": [
+   "smd",
+   "through_hole"
+  ],
+  "footprints": [
+   "USB3_A_Molex_48393-001",
+   "USB3_A_Molex_48406-0001_Horizontal_Stacked",
+   "USB3_A_Plug_Wuerth_692112030100_Horizontal",
+   "USB3_A_Receptacle_Wuerth_692122030100",
+   "USB3_Micro-B_Connfly_DS1104-01"
+  ],
+  "sources": {
+   "dist-legacy": 5,
+   "kicad-symbols": 2
+  }
+ },
+ "quality": {
+  "part_count": 7,
+  "planner_visible_count": 2,
+  "tier_counts": {
+   "B": 2,
+   "C": 5
+  },
+  "review_status": "ai_generated"
+ },
+ "representative_parts": [
+  {
+   "id": "kicad-symbols/Connector/USB3_A",
+   "name": "USB3_A",
+   "tier": "B",
+   "score": 100,
+   "footprint": "USB3_A_Molex_48393-001",
+   "why": "tier B, score 100, USB3_A_Molex_48393-001"
+  },
+  {
+   "id": "kicad-symbols/Connector/USB3_A_Stacked",
+   "name": "USB3_A_Stacked",
+   "tier": "B",
+   "score": 100,
+   "footprint": "USB3_A_Molex_48406-0001_Horizontal_Stacked",
+   "why": "tier B, score 100, USB3_A_Molex_48406-0001_Horizontal_Stacked"
+  }
+ ],
+ "part_ids": [
+  "kicad-symbols/Connector/USB3_A",
+  "kicad-symbols/Connector/USB3_A_Stacked",
+  "dist-legacy/USB3_A_Molex_48393-001",
+  "dist-legacy/USB3_A_Molex_48406-0001_Horizontal_Stacked",
+  "dist-legacy/USB3_A_Plug_Wuerth_692112030100_Horizontal",
+  "dist-legacy/USB3_A_Receptacle_Wuerth_692122030100",
+  "dist-legacy/USB3_Micro-B_Connfly_DS1104-01"
+ ],
+ "embedding_text": "connector.usb3.usb | Connector | USB3 connector cluster (7 parts) covering USB Type-A and Micro-B footprints from Molex, Würth, and Connfly, in SMD and through-hole mounts; select by exact footprint match. | usb3 usb connector usb type a usb micro-b molex wuerth connfly smd through hole horizontal stacked plug receptacle 48393-001 48406-0001 692112030100 ds1104-01 right angle type micro com pdf | USB3 | USB",
+ "class": "connector"
+}

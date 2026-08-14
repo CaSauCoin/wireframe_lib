@@ -1,0 +1,101 @@
+{
+ "schema": 1,
+ "id": "ic.wdfn",
+ "name": "IC — WDFN",
+ "category_path": [
+  "IC"
+ ],
+ "description": "Integrated circuit cluster containing surface-mount components in WDFN packages with pin counts from 6 to 12 and optional exposed pads.",
+ "selection_hints": [
+  "Match pin count, lead pitch, and body size to the specific WDFN footprint.",
+  "Check whether an exposed pad (1EP/2EP) or thermal vias are required by the footprint.",
+  "Verify component tier and source data quality before placement."
+ ],
+ "avoid_when": [
+  "The application requires through-hole parts or a package family other than WDFN.",
+  "The required pin count, pitch, or thermal pad configuration is not available in the footprints list."
+ ],
+ "keywords": [
+  "wdfn",
+  "ic",
+  "smd",
+  "surface mount",
+  "wdfn-8",
+  "wdfn-10",
+  "wdfn-12",
+  "wdfn-6",
+  "exposed pad",
+  "1ep",
+  "2ep",
+  "thermal vias",
+  "p0",
+  "5mm",
+  "ep1",
+  "3x3mm",
+  "8mm",
+  "thermalvias",
+  "pdf",
+  "pad",
+  "8x2",
+  "surface",
+  "mount",
+  "mm"
+ ],
+ "facts": {
+  "package_family": "WDFN",
+  "facets": [],
+  "mounts": [
+   "smd"
+  ],
+  "footprints": [
+   "WDFN-8-1EP_2x2.2mm_P0.5mm_EP0.80x0.54",
+   "WDFN-10-1EP_3x3mm_P0.5mm_EP1.8x2.5mm",
+   "WDFN-12-1EP_3x3mm_P0.45mm_EP1.7x2.5mm",
+   "WDFN-8-1EP_3x2mm_P0.5mm_EP1.3x1.4mm",
+   "WDFN-8-1EP_4x3mm_P0.65mm_EP2.4x1.8mm_ThermalVias",
+   "WDFN-8_2x2mm_P0.5mm",
+   "WDFN-10-1EP_3x3mm_P0.5mm_EP1.8x2.5mm_ThermalVias",
+   "WDFN-6-2EP_4.0x2.6mm_P0.65mm",
+   "WDFN-8-1EP_8x6mm_P1.27mm_EP6x4.8mm",
+   "WDFN-8-1EP_8x6mm_P1.27mm_EP6x4.8mm_ThermalVias"
+  ],
+  "sources": {
+   "dist-legacy": 10,
+   "kicad-symbols": 1
+  }
+ },
+ "quality": {
+  "part_count": 11,
+  "planner_visible_count": 1,
+  "tier_counts": {
+   "B": 1,
+   "C": 10
+  },
+  "review_status": "ai_generated"
+ },
+ "representative_parts": [
+  {
+   "id": "kicad-symbols/Power_Protection/EMI2121MTTAG",
+   "name": "EMI2121MTTAG",
+   "tier": "B",
+   "score": 100,
+   "footprint": "WDFN-8-1EP_2x2.2mm_P0.5mm_EP0.80x0.54",
+   "why": "tier B, score 100, WDFN-8-1EP_2x2.2mm_P0.5mm_EP0.80x0.54"
+  }
+ ],
+ "part_ids": [
+  "kicad-symbols/Power_Protection/EMI2121MTTAG",
+  "dist-legacy/WDFN-10-1EP_3x3mm_P0.5mm_EP1.8x2.5mm",
+  "dist-legacy/WDFN-12-1EP_3x3mm_P0.45mm_EP1.7x2.5mm",
+  "dist-legacy/WDFN-8-1EP_2x2.2mm_P0.5mm_EP0.80x0.54",
+  "dist-legacy/WDFN-8-1EP_3x2mm_P0.5mm_EP1.3x1.4mm",
+  "dist-legacy/WDFN-8-1EP_4x3mm_P0.65mm_EP2.4x1.8mm_ThermalVias",
+  "dist-legacy/WDFN-8_2x2mm_P0.5mm",
+  "dist-legacy/WDFN-10-1EP_3x3mm_P0.5mm_EP1.8x2.5mm_ThermalVias",
+  "dist-legacy/WDFN-6-2EP_4.0x2.6mm_P0.65mm",
+  "dist-legacy/WDFN-8-1EP_8x6mm_P1.27mm_EP6x4.8mm",
+  "dist-legacy/WDFN-8-1EP_8x6mm_P1.27mm_EP6x4.8mm_ThermalVias"
+ ],
+ "embedding_text": "ic.wdfn | IC | Integrated circuit cluster containing surface-mount components in WDFN packages with pin counts from 6 to 12 and optional exposed pads. | wdfn ic smd surface mount wdfn-8 wdfn-10 wdfn-12 wdfn-6 exposed pad 1ep 2ep thermal vias p0 5mm ep1 3x3mm 8mm thermalvias pdf pad 8x2 surface mount mm | WDFN | ",
+ "class": "ic"
+}

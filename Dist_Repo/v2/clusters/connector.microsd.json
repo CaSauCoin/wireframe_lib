@@ -1,0 +1,138 @@
+{
+ "schema": 1,
+ "id": "connector.microsd",
+ "name": "Connector — microSD",
+ "category_path": [
+  "Connector"
+ ],
+ "description": "Cluster of 12 SMD microSD card connector parts spanning multiple microSD footprint variants (Hirose DM3D-SF, DM3AT, DM3BT, Molex 47219-2001, 104031-0811, and others) from mixed library sources; review status is generated.",
+ "selection_hints": [
+  "Prefer tier A parts (e.g. Micro_SD_Card_Det1/Det2/Det_Hirose_DM3AT) for higher-confidence matches",
+  "Match the exact footprint variant (Hirose DM3D-SF, DM3AT, DM3BT vs Molex 47219-2001, 104031-0811, or 2908-05WB-MG) to your intended land pattern",
+  "Cross-check source library (kicad-symbols, digikey-kicad-library, SparkFun-KiCad-Libraries, dist-legacy) for trust level",
+  "Verify symbol-footprint pairing since review_status is 'generated', not manually confirmed"
+ ],
+ "avoid_when": [
+  "The design requires a card-detect switch or pin configuration not confirmed in the part data",
+  "A specific footprint variant isn't matched exactly to the intended PCB land pattern",
+  "Only lower tier C parts are available and no electrical or mechanical confirmation exists",
+  "A mount type other than SMD is required"
+ ],
+ "keywords": [
+  "microsd",
+  "micro sd",
+  "sd card connector",
+  "card socket",
+  "smd connector",
+  "hirose dm3d-sf",
+  "hirose dm3at",
+  "hirose dm3bt",
+  "molex 47219-2001",
+  "molex 104031-0811",
+  "2908-05wb-mg",
+  "friction fit",
+  "card detect",
+  "microsd footprint",
+  "memory card connector",
+  "push-push connector",
+  "sd",
+  "connector",
+  "hc",
+  "micro",
+  "hirose",
+  "card",
+  "sf",
+  "molex"
+ ],
+ "facts": {
+  "package_family": "microSD",
+  "facets": [],
+  "mounts": [
+   "smd"
+  ],
+  "footprints": [
+   "microSD_HC_Hirose_DM3D-SF",
+   "microSD_HC_Molex_47219-2001",
+   "MicroSD_2908-05WB-MG",
+   "microSD_Friction_Fit_Common",
+   "microSD_External_Pin",
+   "microSD_HC_Hirose_DM3AT-SF-PEJM5",
+   "microSD_HC_Hirose_DM3BT-DSF-PEJS",
+   "microSD_HC_Molex_104031-0811"
+  ],
+  "sources": {
+   "dist-legacy": 5,
+   "kicad-symbols": 4,
+   "SparkFun-KiCad-Libraries": 2,
+   "digikey-kicad-library": 1
+  }
+ },
+ "quality": {
+  "part_count": 12,
+  "planner_visible_count": 7,
+  "tier_counts": {
+   "A": 3,
+   "B": 4,
+   "C": 5
+  },
+  "review_status": "ai_generated"
+ },
+ "representative_parts": [
+  {
+   "id": "kicad-symbols/Connector/Micro_SD_Card_Det1",
+   "name": "Micro_SD_Card_Det1",
+   "tier": "A",
+   "score": 100,
+   "footprint": "microSD_HC_Hirose_DM3D-SF",
+   "why": "tier A, score 100, microSD_HC_Hirose_DM3D-SF"
+  },
+  {
+   "id": "kicad-symbols/Connector/Micro_SD_Card_Det2",
+   "name": "Micro_SD_Card_Det2",
+   "tier": "A",
+   "score": 100,
+   "footprint": "microSD_HC_Hirose_DM3D-SF",
+   "why": "tier A, score 100, microSD_HC_Hirose_DM3D-SF"
+  },
+  {
+   "id": "kicad-symbols/Connector/Micro_SD_Card_Det_Hirose_DM3AT",
+   "name": "Micro_SD_Card_Det_Hirose_DM3AT",
+   "tier": "A",
+   "score": 100,
+   "footprint": "microSD_HC_Hirose_DM3D-SF",
+   "why": "tier A, score 100, microSD_HC_Hirose_DM3D-SF"
+  },
+  {
+   "id": "kicad-symbols/Connector/Micro_SD_Card",
+   "name": "Micro_SD_Card",
+   "tier": "B",
+   "score": 100,
+   "footprint": "microSD_HC_Molex_47219-2001",
+   "why": "tier B, score 100, microSD_HC_Molex_47219-2001"
+  },
+  {
+   "id": "digikey-kicad-library/dk_Memory-Connectors-PC-Card-Sockets/2908-05WB-MG",
+   "name": "2908-05WB-MG",
+   "tier": "B",
+   "score": 100,
+   "footprint": "MicroSD_2908-05WB-MG",
+   "why": "tier B, score 100, MicroSD_2908-05WB-MG"
+  }
+ ],
+ "part_ids": [
+  "kicad-symbols/Connector/Micro_SD_Card_Det1",
+  "kicad-symbols/Connector/Micro_SD_Card_Det2",
+  "kicad-symbols/Connector/Micro_SD_Card_Det_Hirose_DM3AT",
+  "digikey-kicad-library/dk_Memory-Connectors-PC-Card-Sockets/2908-05WB-MG",
+  "kicad-symbols/Connector/Micro_SD_Card",
+  "SparkFun-KiCad-Libraries/SparkFun-Connector/microSD_Friction",
+  "SparkFun-KiCad-Libraries/SparkFun-Connector/microSD_PushPush",
+  "dist-legacy/microSD_HC_Hirose_DM3AT-SF-PEJM5",
+  "dist-legacy/microSD_HC_Hirose_DM3D-SF",
+  "dist-legacy/microSD_HC_Hirose_DM3BT-DSF-PEJS",
+  "dist-legacy/microSD_HC_Molex_104031-0811",
+  "dist-legacy/microSD_HC_Molex_47219-2001"
+ ],
+ "embedding_text": "connector.microsd | Connector | Cluster of 12 SMD microSD card connector parts spanning multiple microSD footprint variants (Hirose DM3D-SF, DM3AT, DM3BT, Molex 47219-2001, 104031-0811, and others) from mixed library sources; review status is generated. | microsd micro sd sd card connector card socket smd connector hirose dm3d-sf hirose dm3at hirose dm3bt molex 47219-2001 molex 104031-0811 2908-05wb-mg friction fit card detect microsd footprint memory card connector push-push connector sd connector hc micro hirose card sf molex | microSD | ",
+ "class": "connector"
+}

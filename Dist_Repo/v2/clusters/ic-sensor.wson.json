@@ -1,0 +1,91 @@
+{
+ "schema": 1,
+ "id": "ic-sensor.wson",
+ "name": "IC Sensor — WSON",
+ "category_path": [
+  "IC",
+  "Sensor"
+ ],
+ "description": "Surface-mount IC sensor cluster utilizing a WSON-12 package footprint with exposed pad and thermal vias.",
+ "selection_hints": [
+  "Select when designing with surface-mount IC sensors in WSON packages.",
+  "Verify compatibility with WSON-12-1EP (4x4mm, 0.5mm pitch) thermal via land patterns.",
+  "Ensure target application matches available Tier B parts such as LDC1312 or LDC1612."
+ ],
+ "avoid_when": [
+  "Through-hole mounting or non-WSON package footprints are required.",
+  "Land patterns without thermal vias or with different exposed pad dimensions are needed.",
+  "Tier A verified components or non-sensor ICs are required."
+ ],
+ "keywords": [
+  "ic",
+  "sensor",
+  "wson",
+  "wson-12",
+  "smd",
+  "ldc1312",
+  "ldc1612",
+  "thermal vias",
+  "exposed pad",
+  "4x4mm",
+  "0.5mm pitch",
+  "kicad-symbols",
+  "inductance",
+  "proximity",
+  "to",
+  "digital",
+  "converter",
+  "channel",
+  "bit",
+  "1ep",
+  "p0",
+  "5mm",
+  "ep2",
+  "6x3mm"
+ ],
+ "facts": {
+  "package_family": "WSON",
+  "facets": [],
+  "mounts": [
+   "smd"
+  ],
+  "footprints": [
+   "WSON-12-1EP_4x4mm_P0.5mm_EP2.6x3mm_ThermalVias"
+  ],
+  "sources": {
+   "kicad-symbols": 2
+  }
+ },
+ "quality": {
+  "part_count": 2,
+  "planner_visible_count": 2,
+  "tier_counts": {
+   "B": 2
+  },
+  "review_status": "ai_generated"
+ },
+ "representative_parts": [
+  {
+   "id": "kicad-symbols/Sensor_Proximity/LDC1312",
+   "name": "LDC1312",
+   "tier": "B",
+   "score": 100,
+   "footprint": "WSON-12-1EP_4x4mm_P0.5mm_EP2.6x3mm_ThermalVias",
+   "why": "tier B, score 100, WSON-12-1EP_4x4mm_P0.5mm_EP2.6x3mm_ThermalVias"
+  },
+  {
+   "id": "kicad-symbols/Sensor_Proximity/LDC1612",
+   "name": "LDC1612",
+   "tier": "B",
+   "score": 100,
+   "footprint": "WSON-12-1EP_4x4mm_P0.5mm_EP2.6x3mm_ThermalVias",
+   "why": "tier B, score 100, WSON-12-1EP_4x4mm_P0.5mm_EP2.6x3mm_ThermalVias"
+  }
+ ],
+ "part_ids": [
+  "kicad-symbols/Sensor_Proximity/LDC1312",
+  "kicad-symbols/Sensor_Proximity/LDC1612"
+ ],
+ "embedding_text": "ic-sensor.wson | IC Sensor | Surface-mount IC sensor cluster utilizing a WSON-12 package footprint with exposed pad and thermal vias. | ic sensor wson wson-12 smd ldc1312 ldc1612 thermal vias exposed pad 4x4mm 0.5mm pitch kicad-symbols inductance proximity to digital converter channel bit 1ep p0 5mm ep2 6x3mm | WSON | ",
+ "class": "ic.sensor"
+}

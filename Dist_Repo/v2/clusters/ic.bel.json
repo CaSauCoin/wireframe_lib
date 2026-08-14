@@ -1,0 +1,91 @@
+{
+ "schema": 1,
+ "id": "ic.bel",
+ "name": "IC — BEL",
+ "category_path": [
+  "IC"
+ ],
+ "description": "Integrated circuit component cluster containing 4 parts in the BEL package family with surface-mount and through-hole footprint options.",
+ "selection_hints": [
+  "Verify exact footprint match such as BEL FUSE C1F, 0826-1X1T-32-F, or SI-46020-F.",
+  "Select based on mounting requirement between SMD and through-hole options.",
+  "Check quality tier distribution of 1 Tier B part and 3 Tier C parts."
+ ],
+ "avoid_when": [
+  "The board layout requires a package family other than BEL.",
+  "Design standards require Tier A qualified parts.",
+  "Neither SMD nor through-hole BEL land patterns match the layout."
+ ],
+ "keywords": [
+  "ic",
+  "bel",
+  "bel fuse",
+  "c1f",
+  "si-46020-f",
+  "0826-1x1t-32-f",
+  "smd",
+  "through hole",
+  "celestial altium library",
+  "dist legacy",
+  "tier b",
+  "tier c",
+  "fuse",
+  "si",
+  "1x1t",
+  "ethernet",
+  "pad",
+  "mm",
+  "pitch",
+  "pins",
+  "magnetics",
+  "module",
+  "poe",
+  "through"
+ ],
+ "facts": {
+  "package_family": "BEL",
+  "facets": [],
+  "mounts": [
+   "smd",
+   "through_hole",
+   "unknown"
+  ],
+  "footprints": [
+   "BEL",
+   "Bel Fuse - 0826-1X1T-32-F",
+   "BEL FUSE SI-46020-F",
+   "BEL FUSE C1F"
+  ],
+  "sources": {
+   "celestial-altium-library": 3,
+   "dist-legacy": 1
+  }
+ },
+ "quality": {
+  "part_count": 4,
+  "planner_visible_count": 1,
+  "tier_counts": {
+   "B": 1,
+   "C": 3
+  },
+  "review_status": "ai_generated"
+ },
+ "representative_parts": [
+  {
+   "id": "dist-legacy/BEL FUSE SI-46020-F",
+   "name": "BEL FUSE SI-46020-F",
+   "tier": "B",
+   "score": 82,
+   "footprint": "BEL",
+   "why": "tier B, score 82, BEL"
+  }
+ ],
+ "part_ids": [
+  "dist-legacy/BEL FUSE SI-46020-F",
+  "celestial-altium-library/Bel Fuse - 0826-1X1T-32-F/Bel Fuse - 0826-1X1T-32-F",
+  "celestial-altium-library/BEL FUSE SI-46020-F/BEL FUSE SI-46020-F",
+  "celestial-altium-library/BEL FUSE C1F/BEL FUSE C1F"
+ ],
+ "embedding_text": "ic.bel | IC | Integrated circuit component cluster containing 4 parts in the BEL package family with surface-mount and through-hole footprint options. | ic bel bel fuse c1f si-46020-f 0826-1x1t-32-f smd through hole celestial altium library dist legacy tier b tier c fuse si 1x1t ethernet pad mm pitch pins magnetics module poe through | BEL | ",
+ "class": "ic"
+}

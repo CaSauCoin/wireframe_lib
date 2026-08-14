@@ -1,0 +1,97 @@
+{
+ "schema": 1,
+ "id": "ic-power-switching.soic.buck.60v",
+ "name": "IC Power Switching Regulator — buck, 60V — SOIC",
+ "category_path": [
+  "IC",
+  "Power",
+  "Switching Regulator"
+ ],
+ "description": "Surface-mount buck switching regulator ICs in SOIC packaging rated for 60V applications, including SOIC-8 standard and exposed pad footprints.",
+ "selection_hints": [
+  "Choose between standard SOIC-8 and exposed pad (SOIC-8-1EP) footprint variants based on thermal requirements.",
+  "Prefer tier A library entries such as LM2594HVM-ADJ over tier B options like SCT2650STE.",
+  "Verify specific part footprint dimensions and land pattern requirements before PCB placement."
+ ],
+ "avoid_when": [
+  "The circuit design requires non-SOIC packages or through-hole mounting.",
+  "Topologies other than buck switching regulation are needed.",
+  "Voltage or electrical requirements exceed the 60V rating or specific part capabilities."
+ ],
+ "keywords": [
+  "soic",
+  "buck",
+  "60v",
+  "ic power switching",
+  "switching regulator",
+  "smd",
+  "soic-8",
+  "soic-8-1ep",
+  "lm2594hvm-adj",
+  "sct2650ste",
+  "buck regulator",
+  "power ic",
+  "regulator",
+  "switching",
+  "adjustable",
+  "voltage",
+  "step",
+  "down",
+  "5a",
+  "simple",
+  "switcher",
+  "9x4",
+  "9mm",
+  "p1"
+ ],
+ "facts": {
+  "package_family": "SOIC",
+  "facets": [
+   "buck",
+   "60V"
+  ],
+  "mounts": [
+   "smd"
+  ],
+  "footprints": [
+   "SOIC-8_3.9x4.9mm_P1.27mm",
+   "SOIC-8-1EP_3.9x4.9mm_P1.27mm_EP2.41x3.3mm"
+  ],
+  "sources": {
+   "kicad-symbols": 2
+  }
+ },
+ "quality": {
+  "part_count": 2,
+  "planner_visible_count": 2,
+  "tier_counts": {
+   "A": 1,
+   "B": 1
+  },
+  "review_status": "ai_generated"
+ },
+ "representative_parts": [
+  {
+   "id": "kicad-symbols/Regulator_Switching/LM2594HVM-ADJ",
+   "name": "LM2594HVM-ADJ",
+   "tier": "A",
+   "score": 100,
+   "footprint": "SOIC-8_3.9x4.9mm_P1.27mm",
+   "why": "tier A, score 100, SOIC-8_3.9x4.9mm_P1.27mm"
+  },
+  {
+   "id": "kicad-symbols/Regulator_Switching/SCT2650STE",
+   "name": "SCT2650STE",
+   "tier": "B",
+   "score": 100,
+   "footprint": "SOIC-8-1EP_3.9x4.9mm_P1.27mm_EP2.41x3.3mm",
+   "why": "tier B, score 100, SOIC-8-1EP_3.9x4.9mm_P1.27mm_EP2.41x3.3mm"
+  }
+ ],
+ "part_ids": [
+  "kicad-symbols/Regulator_Switching/LM2594HVM-ADJ",
+  "kicad-symbols/Regulator_Switching/SCT2650STE"
+ ],
+ "embedding_text": "ic-power-switching.soic.buck.60v | IC Power Switching Regulator | Surface-mount buck switching regulator ICs in SOIC packaging rated for 60V applications, including SOIC-8 standard and exposed pad footprints. | soic buck 60v ic power switching switching regulator smd soic-8 soic-8-1ep lm2594hvm-adj sct2650ste buck regulator power ic regulator switching adjustable voltage step down 5a simple switcher 9x4 9mm p1 | SOIC | buck 60V",
+ "class": "ic.power.switching"
+}

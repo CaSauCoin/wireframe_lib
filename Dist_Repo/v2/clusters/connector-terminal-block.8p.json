@@ -1,0 +1,78 @@
+{
+ "schema": 1,
+ "id": "connector-terminal-block.8p",
+ "name": "Connector Terminal Block — 8P",
+ "category_path": [
+  "Connector",
+  "Terminal Block"
+ ],
+ "description": "Cluster of 4 tier-C, 8-position terminal block connector parts from legacy sources, covering a 3.81mm-pitch 90-degree screw-terminal footprint and a generic 8P PCB terminal footprint; none are planner-visible.",
+ "selection_hints": [
+  "Match the exact footprint: 8P_PCB_ScrewTerm_90S_3.81MM (screw, 90 degree, 3.81mm pitch) vs 8P_PCB_TERM (generic)",
+  "Confirm pin count (8) and pitch align with the board layout before committing",
+  "All 4 entries are tier C with review_status 'generated' — verify against the source data before use"
+ ],
+ "avoid_when": [
+  "A reviewed or higher-quality-tier (non-C) part is required",
+  "Planner visibility is required — this cluster has 0 planner-visible parts",
+  "The exact mount style must be known — mount type is unrecorded ('unknown')",
+  "A footprint other than the two listed 8P variants is needed"
+ ],
+ "keywords": [
+  "8p",
+  "terminal block",
+  "connector",
+  "screw terminal",
+  "screwterm",
+  "90s",
+  "3.81mm",
+  "3.81mm pitch",
+  "pcb term",
+  "8 position",
+  "8-pin",
+  "tier c",
+  "dist-legacy",
+  "generated",
+  "unreviewed",
+  "pcb",
+  "block",
+  "81mm",
+  "term",
+  "terminal",
+  "hdr",
+  "pad",
+  "mm",
+  "pitch"
+ ],
+ "facts": {
+  "package_family": "8P",
+  "facets": [],
+  "mounts": [
+   "unknown"
+  ],
+  "footprints": [
+   "8P_PCB_ScrewTerm_90S_3.81MM",
+   "8P_PCB_TERM"
+  ],
+  "sources": {
+   "dist-legacy": 4
+  }
+ },
+ "quality": {
+  "part_count": 4,
+  "planner_visible_count": 0,
+  "tier_counts": {
+   "C": 4
+  },
+  "review_status": "ai_generated"
+ },
+ "representative_parts": [],
+ "part_ids": [
+  "dist-legacy/8P_PCB_ScrewTerm_90S_3.81MM - d",
+  "dist-legacy/8P_PCB_TERM BLOCK HDR",
+  "dist-legacy/8P_PCB_TERM BLOCK HDR - duplica",
+  "dist-legacy/8P_PCB_ScrewTerm_90S_3.81MM"
+ ],
+ "embedding_text": "connector-terminal-block.8p | Connector Terminal Block | Cluster of 4 tier-C, 8-position terminal block connector parts from legacy sources, covering a 3.81mm-pitch 90-degree screw-terminal footprint and a generic 8P PCB terminal footprint; none are planner-visible. | 8p terminal block connector screw terminal screwterm 90s 3.81mm 3.81mm pitch pcb term 8 position 8-pin tier c dist-legacy generated unreviewed pcb block 81mm term terminal hdr pad mm pitch | 8P | ",
+ "class": "connector.terminal_block"
+}

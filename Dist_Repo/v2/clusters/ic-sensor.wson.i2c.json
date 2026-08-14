@@ -1,0 +1,101 @@
+{
+ "schema": 1,
+ "id": "ic-sensor.wson.i2c",
+ "name": "IC Sensor — I2C — WSON",
+ "category_path": [
+  "IC",
+  "Sensor"
+ ],
+ "description": "Cluster of 3 tier-A surface-mount I2C sensor IC parts in WSON-6 and WSON-8 exposed-pad package footprints.",
+ "selection_hints": [
+  "Select for surface-mount I2C sensor ICs in WSON packages.",
+  "Choose between WSON-6-1EP (0.65mm pitch) and WSON-8-1EP (0.5mm pitch with thermal vias) footprints.",
+  "Select when using temperature sensor ICs such as TMP1075DSG, TMP116xxDRV, or TMP117xxDRV."
+ ],
+ "avoid_when": [
+  "The layout requires non-SMD mounting or package types other than WSON.",
+  "A bus or interface other than I2C is required.",
+  "Components outside the IC sensor category are needed."
+ ],
+ "keywords": [
+  "ic",
+  "sensor",
+  "i2c",
+  "wson",
+  "smd",
+  "temperature",
+  "2x2mm",
+  "tmp1075dsg",
+  "tmp116xxdrv",
+  "tmp117xxdrv",
+  "wson-6-1ep",
+  "wson-8-1ep",
+  "thermalvias",
+  "digital",
+  "1ep",
+  "smbus",
+  "nist",
+  "p0",
+  "6mm",
+  "with",
+  "interface",
+  "bits"
+ ],
+ "facts": {
+  "package_family": "WSON",
+  "facets": [
+   "I2C"
+  ],
+  "mounts": [
+   "smd"
+  ],
+  "footprints": [
+   "WSON-6-1EP_2x2mm_P0.65mm_EP1x1.6mm",
+   "WSON-8-1EP_2x2mm_P0.5mm_EP0.9x1.6mm_ThermalVias"
+  ],
+  "sources": {
+   "kicad-symbols": 3
+  }
+ },
+ "quality": {
+  "part_count": 3,
+  "planner_visible_count": 3,
+  "tier_counts": {
+   "A": 3
+  },
+  "review_status": "ai_generated"
+ },
+ "representative_parts": [
+  {
+   "id": "kicad-symbols/Sensor_Temperature/TMP1075DSG",
+   "name": "TMP1075DSG",
+   "tier": "A",
+   "score": 100,
+   "footprint": "WSON-8-1EP_2x2mm_P0.5mm_EP0.9x1.6mm_ThermalVias",
+   "why": "tier A, score 100, WSON-8-1EP_2x2mm_P0.5mm_EP0.9x1.6mm_ThermalVias"
+  },
+  {
+   "id": "kicad-symbols/Sensor_Temperature/TMP116xxDRV",
+   "name": "TMP116xxDRV",
+   "tier": "A",
+   "score": 100,
+   "footprint": "WSON-6-1EP_2x2mm_P0.65mm_EP1x1.6mm",
+   "why": "tier A, score 100, WSON-6-1EP_2x2mm_P0.65mm_EP1x1.6mm"
+  },
+  {
+   "id": "kicad-symbols/Sensor_Temperature/TMP117xxDRV",
+   "name": "TMP117xxDRV",
+   "tier": "A",
+   "score": 100,
+   "footprint": "WSON-6-1EP_2x2mm_P0.65mm_EP1x1.6mm",
+   "why": "tier A, score 100, WSON-6-1EP_2x2mm_P0.65mm_EP1x1.6mm"
+  }
+ ],
+ "part_ids": [
+  "kicad-symbols/Sensor_Temperature/TMP1075DSG",
+  "kicad-symbols/Sensor_Temperature/TMP116xxDRV",
+  "kicad-symbols/Sensor_Temperature/TMP117xxDRV"
+ ],
+ "embedding_text": "ic-sensor.wson.i2c | IC Sensor | Cluster of 3 tier-A surface-mount I2C sensor IC parts in WSON-6 and WSON-8 exposed-pad package footprints. | ic sensor i2c wson smd temperature 2x2mm tmp1075dsg tmp116xxdrv tmp117xxdrv wson-6-1ep wson-8-1ep thermalvias digital 1ep smbus nist p0 6mm with interface bits | WSON | I2C",
+ "class": "ic.sensor"
+}

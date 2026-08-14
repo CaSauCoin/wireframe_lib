@@ -1,0 +1,148 @@
+{
+ "schema": 1,
+ "id": "connector.conn",
+ "name": "Connector — Conn",
+ "category_path": [
+  "Connector"
+ ],
+ "description": "Heterogeneous connector cluster (18 parts, 12 footprints) spanning an IEC C14 power inlet, pitched terminal blocks, audio/BNC/DIN jacks, and pogo-pin connectors, mostly through-hole mount.",
+ "selection_hints": [
+  "Match the exact footprint (C14 receptacle, terminal block pitch, jack type, or pogo pin spacing) to the physical connector needed",
+  "Prefer the single tier A part (IEC_60320_C14_Receptacle) when a verified, higher-confidence entry is required",
+  "Confirm pin/position count and pitch from the footprint name before committing to layout",
+  "Check mount type per part since this cluster mixes through_hole with unspecified mounts"
+ ],
+ "avoid_when": [
+  "The needed connector type is not one of C14 inlet, terminal block, audio/BNC/DIN jack, or pogo pin",
+  "Only a tier C entry matches and its footprint/source has not been individually checked",
+  "Electrical ratings (voltage, current) are required but not stated on the chosen part",
+  "The design needs a package family other than Conn"
+ ],
+ "keywords": [
+  "conn",
+  "connector",
+  "iec 60320",
+  "c14 receptacle",
+  "power inlet",
+  "terminal block",
+  "pogo pin",
+  "audio jack",
+  "bnc connector",
+  "din connector",
+  "right angle connector",
+  "through hole connector",
+  "pcb mount connector",
+  "2.54mm pitch",
+  "5.08mm pitch",
+  "1.27mm pitch",
+  "kicad connector",
+  "jlcpcb connector",
+  "pogo",
+  "jack",
+  "ra",
+  "5pos",
+  "pwr",
+  "pad"
+ ],
+ "facts": {
+  "package_family": "Conn",
+  "facets": [],
+  "mounts": [
+   "through_hole",
+   "unknown"
+  ],
+  "footprints": [
+   "Conn_C14_Receptacle_RightAngle_Schurter_DD21.01xx",
+   "CONN-TH_16P-P5.08_KEFA_KF2EDGKRCH-5.08-2X8P",
+   "CONN-TH_HKT-00004",
+   "CONN-TH_20P-P3.50-S4.60_L18.6-W60.3-EH3.2",
+   "CONN-TH_K966658WV-1",
+   "CONN_JACK_MICRO-CONX",
+   "CONN_AudioJackMono",
+   "CONN_BNC_RA_PCB",
+   "CONN_DIN_4PIN_KPJX-4S-S",
+   "CONN_POGO_5POS_LAP_1.27MMP",
+   "CONN_POGO_5POS_MID_1.27MMP",
+   "CONN_POGO_5POS_RA_0.100IN"
+  ],
+  "sources": {
+   "dist-legacy": 13,
+   "JLCPCB-Kicad-Library": 4,
+   "kicad-symbols": 1
+  }
+ },
+ "quality": {
+  "part_count": 18,
+  "planner_visible_count": 5,
+  "tier_counts": {
+   "A": 1,
+   "B": 4,
+   "C": 13
+  },
+  "review_status": "ai_generated"
+ },
+ "representative_parts": [
+  {
+   "id": "kicad-symbols/Connector/IEC_60320_C14_Receptacle",
+   "name": "IEC_60320_C14_Receptacle",
+   "tier": "A",
+   "score": 100,
+   "footprint": "Conn_C14_Receptacle_RightAngle_Schurter_DD21.01xx",
+   "why": "tier A, score 100, Conn_C14_Receptacle_RightAngle_Schurter_DD21.01xx"
+  },
+  {
+   "id": "JLCPCB-Kicad-Library/2975041/Connector Block, 2x8Px5.08mm, 15A",
+   "name": "Connector Block, 2x8Px5.08mm, 15A",
+   "tier": "B",
+   "score": 80,
+   "footprint": "CONN-TH_16P-P5.08_KEFA_KF2EDGKRCH-5.08-2X8P",
+   "why": "tier B, score 80, CONN-TH_16P-P5.08_KEFA_KF2EDGKRCH-5.08-2X8P"
+  },
+  {
+   "id": "JLCPCB-Kicad-Library/2876037/Connector, SP13, 4P, 5A",
+   "name": "Connector, SP13, 4P, 5A",
+   "tier": "B",
+   "score": 80,
+   "footprint": "CONN-TH_HKT-00004",
+   "why": "tier B, score 80, CONN-TH_HKT-00004"
+  },
+  {
+   "id": "JLCPCB-Kicad-Library/2974900/K175785WR-1",
+   "name": "K175785WR-1",
+   "tier": "B",
+   "score": 80,
+   "footprint": "CONN-TH_20P-P3.50-S4.60_L18.6-W60.3-EH3.2",
+   "why": "tier B, score 80, CONN-TH_20P-P3.50-S4.60_L18.6-W60.3-EH3.2"
+  },
+  {
+   "id": "JLCPCB-Kicad-Library/2974890/K966658WV-1",
+   "name": "K966658WV-1",
+   "tier": "B",
+   "score": 80,
+   "footprint": "CONN-TH_K966658WV-1",
+   "why": "tier B, score 80, CONN-TH_K966658WV-1"
+  }
+ ],
+ "part_ids": [
+  "kicad-symbols/Connector/IEC_60320_C14_Receptacle",
+  "JLCPCB-Kicad-Library/2975041/Connector Block, 2x8Px5.08mm, 15A",
+  "JLCPCB-Kicad-Library/2876037/Connector, SP13, 4P, 5A",
+  "JLCPCB-Kicad-Library/2974900/K175785WR-1",
+  "JLCPCB-Kicad-Library/2974890/K966658WV-1",
+  "dist-legacy/CONN_JACK_MICRO-CONX",
+  "dist-legacy/CONN_AudioJackMono",
+  "dist-legacy/CONN_BNC_RA_PCB",
+  "dist-legacy/CONN_DIN_4PIN_KPJX-4S-S",
+  "dist-legacy/CONN_POGO_5POS_LAP_1.27MMP",
+  "dist-legacy/CONN_POGO_5POS_MID_1.27MMP",
+  "dist-legacy/CONN_POGO_5POS_RA_0.100IN",
+  "dist-legacy/CONN_POGO_7POS_RA_0.100IN",
+  "dist-legacy/CONN_PWR-DIN_4PIN_PD-40S",
+  "dist-legacy/CONN_PWR_JACK_0.7x2.35mm",
+  "dist-legacy/CONN_PWR_JACK_2.1x5.5mm",
+  "dist-legacy/CONN_PhoneMiniStereo",
+  "dist-legacy/Conn_C14_Receptacle_RightAngle_Schurter_DD21.01xx"
+ ],
+ "embedding_text": "connector.conn | Connector | Heterogeneous connector cluster (18 parts, 12 footprints) spanning an IEC C14 power inlet, pitched terminal blocks, audio/BNC/DIN jacks, and pogo-pin connectors, mostly through-hole mount. | conn connector iec 60320 c14 receptacle power inlet terminal block pogo pin audio jack bnc connector din connector right angle connector through hole connector pcb mount connector 2.54mm pitch 5.08mm pitch 1.27mm pitch kicad connector jlcpcb connector pogo jack ra 5pos pwr pad | Conn | ",
+ "class": "connector"
+}

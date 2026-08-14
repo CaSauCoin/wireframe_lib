@@ -1,0 +1,177 @@
+{
+ "schema": 1,
+ "id": "ic.qfn.i2c",
+ "name": "IC — I2C — QFN",
+ "category_path": [
+  "IC"
+ ],
+ "description": "Cluster of 48 surface-mount IC parts featuring I2C interfaces in QFN package footprints.",
+ "selection_hints": [
+  "Prioritize tier A parts such as MPU-6050 and TCA9555RTWR.",
+  "Select based on specific QFN footprint variant and pin spacing.",
+  "Check source library origin across Altium and KiCad options."
+ ],
+ "avoid_when": [
+  "Designs requiring through-hole mounting instead of SMD.",
+  "Layouts that require non-QFN package families.",
+  "Applications that do not use an I2C interface."
+ ],
+ "keywords": [
+  "ic",
+  "i2c",
+  "qfn",
+  "smd",
+  "surface mount",
+  "mpu-6050",
+  "tca9555rtwr",
+  "ina3221",
+  "tpa5050",
+  "sx1509biultrt",
+  "vqfn",
+  "qfn50",
+  "qfn24",
+  "qfn16",
+  "touch",
+  "and",
+  "controller",
+  "interface",
+  "in",
+  "package",
+  "pin",
+  "sensor",
+  "capacitive",
+  "with"
+ ],
+ "facts": {
+  "package_family": "QFN",
+  "facets": [
+   "I2C"
+  ],
+  "mounts": [
+   "smd"
+  ],
+  "footprints": [
+   "QFN50_32T",
+   "QFN50_24T",
+   "VQFN-16_3x3mm",
+   "QFN50_16T_3X3",
+   "QFN40_28T",
+   "QFN65_16T",
+   "QFN50_20T",
+   "QFN45_28T_4X4",
+   "QFN50_20T_3X3",
+   "QFN-24-1EP_4x4mm_P0.5mm",
+   "QFN-24-1EP_4x4mm_P0.5mm_EP2.45x2.45mm",
+   "Texas_RGV0016A_VQFN-16-1EP_4x4mm_P0.65mm_EP2.1x2.1mm"
+  ],
+  "sources": {
+   "chilaboard-altium-library": 38,
+   "digikey-kicad-library": 6,
+   "SparkFun-KiCad-Libraries": 2,
+   "kicad-symbols": 2
+  }
+ },
+ "quality": {
+  "part_count": 48,
+  "planner_visible_count": 48,
+  "tier_counts": {
+   "A": 2,
+   "B": 46
+  },
+  "review_status": "ai_generated"
+ },
+ "representative_parts": [
+  {
+   "id": "SparkFun-KiCad-Libraries/SparkFun-Sensor/MPU-6050",
+   "name": "MPU-6050",
+   "tier": "A",
+   "score": 100,
+   "footprint": "QFN-24-1EP_4x4mm_P0.5mm",
+   "why": "tier A, score 100, QFN-24-1EP_4x4mm_P0.5mm"
+  },
+  {
+   "id": "SparkFun-KiCad-Libraries/SparkFun-IC-Special-Function/TCA9555RTWR",
+   "name": "TCA9555RTWR",
+   "tier": "A",
+   "score": 88,
+   "footprint": "QFN-24-1EP_4x4mm_P0.5mm_EP2.45x2.45mm",
+   "why": "tier A, score 88, QFN-24-1EP_4x4mm_P0.5mm_EP2.45x2.45mm"
+  },
+  {
+   "id": "kicad-symbols/Power_Management/INA3221",
+   "name": "INA3221",
+   "tier": "B",
+   "score": 100,
+   "footprint": "Texas_RGV0016A_VQFN-16-1EP_4x4mm_P0.65mm_EP2.1x2.1mm",
+   "why": "tier B, score 100, Texas_RGV0016A_VQFN-16-1EP_4x4mm_P0.65mm_EP2.1x2.1mm"
+  },
+  {
+   "id": "kicad-symbols/Audio/TPA5050",
+   "name": "TPA5050",
+   "tier": "B",
+   "score": 100,
+   "footprint": "Texas_S-PVQFN-N16_EP2.7x2.7mm_ThermalVias",
+   "why": "tier B, score 100, Texas_S-PVQFN-N16_EP2.7x2.7mm_ThermalVias"
+  },
+  {
+   "id": "digikey-kicad-library/dk_Interface-I-O-Expanders/SX1509BIULTRT",
+   "name": "SX1509BIULTRT",
+   "tier": "B",
+   "score": 100,
+   "footprint": "UFQFN-28-1EP_4x4mm",
+   "why": "tier B, score 100, UFQFN-28-1EP_4x4mm"
+  }
+ ],
+ "part_ids": [
+  "SparkFun-KiCad-Libraries/SparkFun-Sensor/MPU-6050",
+  "SparkFun-KiCad-Libraries/SparkFun-IC-Special-Function/TCA9555RTWR",
+  "kicad-symbols/Power_Management/INA3221",
+  "digikey-kicad-library/dk_Interface-I-O-Expanders/SX1509BIULTRT",
+  "kicad-symbols/Audio/TPA5050",
+  "digikey-kicad-library/dk_Motion-Sensors-Accelerometers/MMA8451QR1",
+  "digikey-kicad-library/dk_Motion-Sensors-Accelerometers/MMA8451QT",
+  "digikey-kicad-library/dk_Motion-Sensors-Accelerometers/MMA8452QR1",
+  "digikey-kicad-library/dk_Motion-Sensors-Accelerometers/MMA8452QT",
+  "digikey-kicad-library/dk_Motion-Sensors-IMUs-Inertial-Measurement-Units/MPU-6050_NRND",
+  "chilaboard-altium-library/MMA8451Q/MMA8451Q",
+  "chilaboard-altium-library/SI5338A_QFN24/SI5338A_QFN24",
+  "chilaboard-altium-library/XD2009_QFN16/XD2009_QFN16",
+  "chilaboard-altium-library/AB0805_QFN16/AB0805_QFN16",
+  "chilaboard-altium-library/AB1805_QFN16/AB1805_QFN16",
+  "chilaboard-altium-library/AD7291_QFN20/AD7291_QFN20",
+  "chilaboard-altium-library/AT42QT2120_QFN20/AT42QT2120_QFN20",
+  "chilaboard-altium-library/AT42QT2160_QFN28/AT42QT2160_QFN28",
+  "chilaboard-altium-library/BU21072_QFN24/BU21072_QFN24",
+  "chilaboard-altium-library/BU21078_QFN28/BU21078_QFN28",
+  "chilaboard-altium-library/CAP1298_QFN16/CAP1298_QFN16",
+  "chilaboard-altium-library/CPT112S_QFN20/CPT112S_QFN20",
+  "chilaboard-altium-library/CPT212B_QFN20/CPT212B_QFN20",
+  "chilaboard-altium-library/MAX9867_QFN32/MAX9867_QFN32",
+  "chilaboard-altium-library/MPU-9150/MPU-9150",
+  "chilaboard-altium-library/PCA9535_QFN24/PCA9535_QFN24",
+  "chilaboard-altium-library/QT60160_QFN32/QT60160_QFN32",
+  "chilaboard-altium-library/QT60240_QFN32/QT60240_QFN32",
+  "chilaboard-altium-library/SX8633_QFN32/SX8633_QFN32",
+  "chilaboard-altium-library/SX8634_QFN32/SX8634_QFN32",
+  "chilaboard-altium-library/SX8635_QFN32/SX8635_QFN32",
+  "chilaboard-altium-library/SX8636_QFN28/SX8636_QFN28",
+  "chilaboard-altium-library/SX8638_QFN28/SX8638_QFN28",
+  "chilaboard-altium-library/SX8639_QFN28/SX8639_QFN28",
+  "chilaboard-altium-library/TCA8418_QFN24/TCA8418_QFN24",
+  "chilaboard-altium-library/TDA19988_QFN64/TDA19988_QFN64",
+  "chilaboard-altium-library/TLA2024_QFN10/TLA2024_QFN10",
+  "chilaboard-altium-library/TLV320AIC3104_QFN32/TLV320AIC3104_QFN32",
+  "chilaboard-altium-library/TLV320AIC3106_QFN48/TLV320AIC3106_QFN48",
+  "chilaboard-altium-library/CDCI6214_QFN24/CDCI6214_QFN24",
+  "chilaboard-altium-library/IQS333_QFN32/IQS333_QFN32",
+  "chilaboard-altium-library/BU21077_QFN20/BU21077_QFN20",
+  "chilaboard-altium-library/AT42QT1060_QFN28/AT42QT1060_QFN28",
+  "chilaboard-altium-library/ADV7390/ADV7390",
+  "chilaboard-altium-library/PCA9534A_QFN16_RGV/PCA9534A_QFN16_RGV",
+  "chilaboard-altium-library/PCA9534_QFN16_RGV/PCA9534_QFN16_RGV",
+  "chilaboard-altium-library/PCA9557_QFN16_RGV/PCA9557_QFN16_RGV",
+  "chilaboard-altium-library/PCA9557_QFN16_RGY/PCA9557_QFN16_RGY"
+ ],
+ "embedding_text": "ic.qfn.i2c | IC | Cluster of 48 surface-mount IC parts featuring I2C interfaces in QFN package footprints. | ic i2c qfn smd surface mount mpu-6050 tca9555rtwr ina3221 tpa5050 sx1509biultrt vqfn qfn50 qfn24 qfn16 touch and controller interface in package pin sensor capacitive with | QFN | I2C",
+ "class": "ic"
+}

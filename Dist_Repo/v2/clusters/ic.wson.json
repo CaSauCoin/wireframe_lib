@@ -1,0 +1,126 @@
+{
+ "schema": 1,
+ "id": "ic.wson",
+ "name": "IC — WSON",
+ "category_path": [
+  "IC"
+ ],
+ "description": "Integrated circuit cluster of 32 surface-mount parts using WSON package footprints, including standard and exposed-pad variants with pin counts from 6 to 14.",
+ "selection_hints": [
+  "Select when a surface-mount WSON footprint variant is required for the layout.",
+  "Check body size, pin count, and exposed pad or thermal via footprint requirements.",
+  "Verify part quality tier ratings, such as Tier B or Tier C entries."
+ ],
+ "avoid_when": [
+  "The PCB layout requires non-WSON IC packages.",
+  "Through-hole mounting is required instead of surface-mount technology.",
+  "Required footprint dimensions, pin counts, or thermal pad configurations are not matched by the available entries."
+ ],
+ "keywords": [
+  "ic",
+  "wson",
+  "smd",
+  "wson-8",
+  "wson-10",
+  "wson-14",
+  "wson-6",
+  "exposed pad",
+  "1ep",
+  "thermal vias",
+  "surface mount",
+  "drv8837dsgr",
+  "5mm",
+  "p0",
+  "ep1",
+  "thermalvias",
+  "4x4mm",
+  "ep2",
+  "3x3mm",
+  "pitch",
+  "2x2mm",
+  "mm",
+  "pad",
+  "pins"
+ ],
+ "facts": {
+  "package_family": "WSON",
+  "facets": [],
+  "mounts": [
+   "smd",
+   "unknown"
+  ],
+  "footprints": [
+   "WSON-8_2x2mm",
+   "WSON-10-1EP_2.5x2.5mm_P0.5mm_EP1.2x2mm",
+   "WSON-10-1EP_2.5x2.5mm_P0.5mm_EP1.2x2mm_ThermalVias",
+   "WSON-10-1EP_2x3mm_P0.5mm_EP0.84x2.4mm_ThermalVias",
+   "WSON-10-1EP_4x4mm_P0.8mm_EP2.6x3mm_ThermalVias",
+   "WSON-10B",
+   "WSON-14-1EP_4.0x4.0mm_P0.5mm_EP2.6x2.6mm",
+   "WSON-8-1EP_2x2mm_P0.5mm_EP0.9x1.6mm",
+   "WSON-8-1EP_3x3mm_P0.5mm_EP1.6x2.0mm",
+   "WSON-6",
+   "WSON-8-6x5mm",
+   "WSON-8-8X6"
+  ],
+  "sources": {
+   "dist-legacy": 31,
+   "digikey-kicad-library": 1
+  }
+ },
+ "quality": {
+  "part_count": 32,
+  "planner_visible_count": 1,
+  "tier_counts": {
+   "B": 1,
+   "C": 31
+  },
+  "review_status": "ai_generated"
+ },
+ "representative_parts": [
+  {
+   "id": "digikey-kicad-library/dk_PMIC-Full-Half-Bridge-Drivers/DRV8837DSGR",
+   "name": "DRV8837DSGR",
+   "tier": "B",
+   "score": 100,
+   "footprint": "WSON-8_2x2mm",
+   "why": "tier B, score 100, WSON-8_2x2mm"
+  }
+ ],
+ "part_ids": [
+  "digikey-kicad-library/dk_PMIC-Full-Half-Bridge-Drivers/DRV8837DSGR",
+  "dist-legacy/WSON-10-1EP_2.5x2.5mm_P0.5mm_EP1.2x2mm",
+  "dist-legacy/WSON-10-1EP_2.5x2.5mm_P0.5mm_EP1.2x2mm_ThermalVias",
+  "dist-legacy/WSON-10-1EP_2x3mm_P0.5mm_EP0.84x2.4mm_ThermalVias",
+  "dist-legacy/WSON-10-1EP_4x4mm_P0.8mm_EP2.6x3mm_ThermalVias",
+  "dist-legacy/WSON-10B",
+  "dist-legacy/WSON-14-1EP_4.0x4.0mm_P0.5mm_EP2.6x2.6mm",
+  "dist-legacy/WSON-8-1EP_2x2mm_P0.5mm_EP0.9x1.6mm",
+  "dist-legacy/WSON-8-1EP_3x3mm_P0.5mm_EP1.6x2.0mm",
+  "dist-legacy/WSON-6",
+  "dist-legacy/WSON-8-6x5mm",
+  "dist-legacy/WSON-8-8X6",
+  "dist-legacy/WSON-8-3x3-0.65",
+  "dist-legacy/WSON-12-1EP_3x2mm_P0.5mm_EP1x2.65_ThermalVias",
+  "dist-legacy/WSON-12-1EP_4x4mm_P0.5mm_EP2.6x3mm_ThermalVias",
+  "dist-legacy/WSON-8-1EP_3x3mm_P0.5mm_EP1.2x2mm",
+  "dist-legacy/WSON-8-1EP_4x4mm_P0.8mm_EP1.98x3mm",
+  "dist-legacy/WSON-8-1EP_8x6mm_P1.27mm_EP3.4x4.3mm",
+  "dist-legacy/WSON-8-1EP_3x3mm_P0.5mm_EP1.45x2.4mm",
+  "dist-legacy/WSON-10-1EP_4x3mm_P0.5mm_EP2.2x2mm",
+  "dist-legacy/WSON-10-1EP_2x3mm_P0.5mm_EP0.84x2.4mm",
+  "dist-legacy/WSON-10-1EP_4x4mm_P0.8mm_EP2.6x3mm",
+  "dist-legacy/WSON-12-1EP_3x2mm_P0.5mm_EP1x2.65",
+  "dist-legacy/WSON-12-1EP_3x3mm_P0.5mm_EP1.5x2.5mm",
+  "dist-legacy/WSON-12-1EP_3x3mm_P0.5mm_EP1.5x2.5mm_ThermalVias",
+  "dist-legacy/WSON-12-1EP_4x4mm_P0.5mm_EP2.6x3mm",
+  "dist-legacy/WSON-8-1EP_3x2.5mm_P0.5mm_EP1.2x1.5mm_PullBack",
+  "dist-legacy/WSON-8-1EP_3x3mm_P0.5mm_EP1.2x2mm_ThermalVias",
+  "dist-legacy/WSON-8-1EP_3x3mm_P0.5mm_EP1.45x2.4mm_ThermalVias",
+  "dist-legacy/WSON-8-1EP_4x4mm_P0.8mm_EP1.98x3mm_ThermalVias",
+  "dist-legacy/WSON-8-1EP_4x4mm_P0.8mm_EP2.2x3mm_ThermalVias",
+  "dist-legacy/WSON-8-1EP_4x4mm_P0.8mm_EP2.6x3mm_ThermalVias"
+ ],
+ "embedding_text": "ic.wson | IC | Integrated circuit cluster of 32 surface-mount parts using WSON package footprints, including standard and exposed-pad variants with pin counts from 6 to 14. | ic wson smd wson-8 wson-10 wson-14 wson-6 exposed pad 1ep thermal vias surface mount drv8837dsgr 5mm p0 ep1 thermalvias 4x4mm ep2 3x3mm pitch 2x2mm mm pad pins | WSON | ",
+ "class": "ic"
+}

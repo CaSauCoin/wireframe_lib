@@ -1,0 +1,114 @@
+{
+ "schema": 1,
+ "id": "power-supply.qfn.usb.buck",
+ "name": "Power Power Supply — USB, buck, LDO — QFN",
+ "category_path": [
+  "Power",
+  "Power Supply"
+ ],
+ "description": "Surface-mount power supply ICs providing USB, buck, and LDO functions in QFN packages.",
+ "selection_hints": [
+  "Select based on the required package size and pin count, such as QFN-20 or QFN-28 footprints.",
+  "Verify the specific combination of USB, buck regulator, and LDO capabilities needed for the circuit.",
+  "Check exposed pad dimensions and pin-to-pad assignments against the PCB design rules."
+ ],
+ "avoid_when": [
+  "The board layout requires through-hole mounting or a package family other than QFN.",
+  "The application does not need USB, buck, or LDO power management features.",
+  "Higher quality tier verification is mandatory for the design."
+ ],
+ "keywords": [
+  "power supply",
+  "qfn",
+  "usb",
+  "buck",
+  "ldo",
+  "smd",
+  "surface mount",
+  "battery management",
+  "ltc3553",
+  "ltc3555",
+  "qfn-20",
+  "qfn-28",
+  "power",
+  "dc",
+  "battery",
+  "management",
+  "manager",
+  "float",
+  "1ep",
+  "p0",
+  "65mm",
+  "nolead",
+  "pmic",
+  "supply"
+ ],
+ "facts": {
+  "package_family": "QFN",
+  "facets": [
+   "USB",
+   "buck",
+   "LDO"
+  ],
+  "mounts": [
+   "smd"
+  ],
+  "footprints": [
+   "QFN-28-1EP_4x5mm_P0.5mm_EP2.65x3.65mm",
+   "QFN-20-1EP_3x3mm_P0.4mm_EP1.65x1.65mm"
+  ],
+  "sources": {
+   "kicad-symbols": 4
+  }
+ },
+ "quality": {
+  "part_count": 4,
+  "planner_visible_count": 4,
+  "tier_counts": {
+   "B": 4
+  },
+  "review_status": "ai_generated"
+ },
+ "representative_parts": [
+  {
+   "id": "kicad-symbols/Battery_Management/LTC3553",
+   "name": "LTC3553",
+   "tier": "B",
+   "score": 100,
+   "footprint": "QFN-20-1EP_3x3mm_P0.4mm_EP1.65x1.65mm",
+   "why": "tier B, score 100, QFN-20-1EP_3x3mm_P0.4mm_EP1.65x1.65mm"
+  },
+  {
+   "id": "kicad-symbols/Battery_Management/LTC3555",
+   "name": "LTC3555",
+   "tier": "B",
+   "score": 100,
+   "footprint": "QFN-28-1EP_4x5mm_P0.5mm_EP2.65x3.65mm",
+   "why": "tier B, score 100, QFN-28-1EP_4x5mm_P0.5mm_EP2.65x3.65mm"
+  },
+  {
+   "id": "kicad-symbols/Battery_Management/LTC3555-1",
+   "name": "LTC3555-1",
+   "tier": "B",
+   "score": 100,
+   "footprint": "QFN-28-1EP_4x5mm_P0.5mm_EP2.65x3.65mm",
+   "why": "tier B, score 100, QFN-28-1EP_4x5mm_P0.5mm_EP2.65x3.65mm"
+  },
+  {
+   "id": "kicad-symbols/Battery_Management/LTC3555-3",
+   "name": "LTC3555-3",
+   "tier": "B",
+   "score": 100,
+   "footprint": "QFN-28-1EP_4x5mm_P0.5mm_EP2.65x3.65mm",
+   "why": "tier B, score 100, QFN-28-1EP_4x5mm_P0.5mm_EP2.65x3.65mm"
+  }
+ ],
+ "part_ids": [
+  "kicad-symbols/Battery_Management/LTC3553",
+  "kicad-symbols/Battery_Management/LTC3555",
+  "kicad-symbols/Battery_Management/LTC3555-1",
+  "kicad-symbols/Battery_Management/LTC3555-3"
+ ],
+ "embedding_text": "power-supply.qfn.usb.buck | Power Power Supply | Surface-mount power supply ICs providing USB, buck, and LDO functions in QFN packages. | power supply qfn usb buck ldo smd surface mount battery management ltc3553 ltc3555 qfn-20 qfn-28 power dc battery management manager float 1ep p0 65mm nolead pmic supply | QFN | USB buck LDO",
+ "class": "power.supply"
+}

@@ -1,0 +1,92 @@
+{
+ "schema": 1,
+ "id": "ic-driver.qfn.spi",
+ "name": "IC Driver — SPI — QFN",
+ "category_path": [
+  "IC",
+  "Driver"
+ ],
+ "description": "IC driver cluster containing SMD parts with SPI interface using QFN surface-mount footprints.",
+ "selection_hints": [
+  "Select for surface-mount IC driver applications requiring an SPI interface.",
+  "Choose based on footprint match between WQFN-20 with thermal vias and QFN-16.",
+  "Confirm compatibility with Tier A KiCad symbol library entries such as TUSS4470 or XPT2046QF."
+ ],
+ "avoid_when": [
+  "Avoid if the design requires package styles other than QFN or non-SMD mounting.",
+  "Do not use if a control interface other than SPI is required.",
+  "Avoid when part selection depends on specific electrical limits not defined in cluster metadata."
+ ],
+ "keywords": [
+  "ic driver",
+  "spi",
+  "qfn",
+  "smd",
+  "wqfn",
+  "wqfn-20",
+  "qfn-16",
+  "tuss4470",
+  "xpt2046qf",
+  "ic",
+  "driver",
+  "kicad-symbols",
+  "1ep",
+  "4x4mm",
+  "p0",
+  "ep2",
+  "nolead",
+  "maxim",
+  "texas",
+  "direct",
+  "drive",
+  "ultrasonic"
+ ],
+ "facts": {
+  "package_family": "QFN",
+  "facets": [
+   "SPI"
+  ],
+  "mounts": [
+   "smd"
+  ],
+  "footprints": [
+   "WQFN-20-1EP_4x4mm_P0.5mm_EP2.7x2.7mm_ThermalVias",
+   "QFN-16-1EP_4x4mm_P0.65mm_EP2.1x2.1mm"
+  ],
+  "sources": {
+   "kicad-symbols": 2
+  }
+ },
+ "quality": {
+  "part_count": 2,
+  "planner_visible_count": 2,
+  "tier_counts": {
+   "A": 2
+  },
+  "review_status": "ai_generated"
+ },
+ "representative_parts": [
+  {
+   "id": "kicad-symbols/Driver/TUSS4470",
+   "name": "TUSS4470",
+   "tier": "A",
+   "score": 100,
+   "footprint": "WQFN-20-1EP_4x4mm_P0.5mm_EP2.7x2.7mm_ThermalVias",
+   "why": "tier A, score 100, WQFN-20-1EP_4x4mm_P0.5mm_EP2.7x2.7mm_ThermalVias"
+  },
+  {
+   "id": "kicad-symbols/Driver_Display/XPT2046QF",
+   "name": "XPT2046QF",
+   "tier": "A",
+   "score": 100,
+   "footprint": "QFN-16-1EP_4x4mm_P0.65mm_EP2.1x2.1mm",
+   "why": "tier A, score 100, QFN-16-1EP_4x4mm_P0.65mm_EP2.1x2.1mm"
+  }
+ ],
+ "part_ids": [
+  "kicad-symbols/Driver/TUSS4470",
+  "kicad-symbols/Driver_Display/XPT2046QF"
+ ],
+ "embedding_text": "ic-driver.qfn.spi | IC Driver | IC driver cluster containing SMD parts with SPI interface using QFN surface-mount footprints. | ic driver spi qfn smd wqfn wqfn-20 qfn-16 tuss4470 xpt2046qf ic driver kicad-symbols 1ep 4x4mm p0 ep2 nolead maxim texas direct drive ultrasonic | QFN | SPI",
+ "class": "ic.driver"
+}

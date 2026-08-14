@@ -1,0 +1,94 @@
+{
+ "schema": 1,
+ "id": "ic-analog.msop.i2c.2-05v",
+ "name": "IC Analog — I2C, 2.05V — MSOP",
+ "category_path": [
+  "IC",
+  "Analog"
+ ],
+ "description": "Analog IC cluster containing surface-mount I2C devices with a 2.05V facet in MSOP-8 and MSOP-10 footprints.",
+ "selection_hints": [
+  "Select based on whether an MSOP-8 (0.65mm pitch) or MSOP-10 (0.5mm pitch) footprint is needed.",
+  "Choose according to required analog IC functionality such as ADC or DAC.",
+  "Verify part requirements against tier A library entries."
+ ],
+ "avoid_when": [
+  "The design requires a package type other than MSOP.",
+  "An interface protocol other than I2C is required.",
+  "Footprints other than MSOP-8 0.65mm pitch or MSOP-10 0.5mm pitch are needed."
+ ],
+ "keywords": [
+  "ic",
+  "analog",
+  "ic analog",
+  "i2c",
+  "2.05v",
+  "msop",
+  "msop-8",
+  "msop-10",
+  "smd",
+  "adc",
+  "dac",
+  "max11613",
+  "mcp4728",
+  "3x3mm",
+  "p0",
+  "channel",
+  "bit",
+  "048v",
+  "internal",
+  "reference",
+  "so",
+  "05v",
+  "5mm"
+ ],
+ "facts": {
+  "package_family": "MSOP",
+  "facets": [
+   "I2C",
+   "2.05V"
+  ],
+  "mounts": [
+   "smd"
+  ],
+  "footprints": [
+   "MSOP-8_3x3mm_P0.65mm",
+   "MSOP-10_3x3mm_P0.5mm"
+  ],
+  "sources": {
+   "kicad-symbols": 2
+  }
+ },
+ "quality": {
+  "part_count": 2,
+  "planner_visible_count": 2,
+  "tier_counts": {
+   "A": 2
+  },
+  "review_status": "ai_generated"
+ },
+ "representative_parts": [
+  {
+   "id": "kicad-symbols/Analog_ADC/MAX11613",
+   "name": "MAX11613",
+   "tier": "A",
+   "score": 100,
+   "footprint": "MSOP-8_3x3mm_P0.65mm",
+   "why": "tier A, score 100, MSOP-8_3x3mm_P0.65mm"
+  },
+  {
+   "id": "kicad-symbols/Analog_DAC/MCP4728",
+   "name": "MCP4728",
+   "tier": "A",
+   "score": 100,
+   "footprint": "MSOP-10_3x3mm_P0.5mm",
+   "why": "tier A, score 100, MSOP-10_3x3mm_P0.5mm"
+  }
+ ],
+ "part_ids": [
+  "kicad-symbols/Analog_ADC/MAX11613",
+  "kicad-symbols/Analog_DAC/MCP4728"
+ ],
+ "embedding_text": "ic-analog.msop.i2c.2-05v | IC Analog | Analog IC cluster containing surface-mount I2C devices with a 2.05V facet in MSOP-8 and MSOP-10 footprints. | ic analog ic analog i2c 2.05v msop msop-8 msop-10 smd adc dac max11613 mcp4728 3x3mm p0 channel bit 048v internal reference so 05v 5mm | MSOP | I2C 2.05V",
+ "class": "ic.analog"
+}

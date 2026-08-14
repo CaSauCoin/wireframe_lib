@@ -1,0 +1,95 @@
+{
+ "schema": 1,
+ "id": "power-supply.qfn.buck.28v",
+ "name": "Power Power Supply — buck, 28V — QFN",
+ "category_path": [
+  "Power",
+  "Power Supply"
+ ],
+ "description": "Surface-mount 28V buck power supply components in QFN package footprints.",
+ "selection_hints": [
+  "Match the required package footprint between 16-pin and 24-pin VQFN variants.",
+  "Verify land pattern dimensions and exposed pad layout against board requirements.",
+  "Select between available KiCad symbol entries such as BQ24610 and BQ24650."
+ ],
+ "avoid_when": [
+  "The design requires non-SMD or through-hole mounting.",
+  "The application requires a package family other than QFN or VQFN.",
+  "Operating topology or voltage requirements differ from 28V buck."
+ ],
+ "keywords": [
+  "power supply",
+  "buck",
+  "28v",
+  "qfn",
+  "vqfn",
+  "smd",
+  "vqfn-24",
+  "vqfn-16",
+  "bq24610",
+  "bq24650",
+  "battery management",
+  "power",
+  "battery",
+  "nmos",
+  "li",
+  "ion",
+  "charger",
+  "5mm",
+  "management",
+  "10a",
+  "max",
+  "voltage",
+  "600khz",
+  "synchronous"
+ ],
+ "facts": {
+  "package_family": "QFN",
+  "facets": [
+   "buck",
+   "28V"
+  ],
+  "mounts": [
+   "smd"
+  ],
+  "footprints": [
+   "VQFN-24-1EP_4x4mm_P0.5mm_EP2.45x2.45mm",
+   "Texas_RVA_VQFN-16-1EP_3.5x3.5mm_P0.5mm_EP2.14x2.14mm_ThermalVias"
+  ],
+  "sources": {
+   "kicad-symbols": 2
+  }
+ },
+ "quality": {
+  "part_count": 2,
+  "planner_visible_count": 2,
+  "tier_counts": {
+   "B": 2
+  },
+  "review_status": "ai_generated"
+ },
+ "representative_parts": [
+  {
+   "id": "kicad-symbols/Battery_Management/BQ24610",
+   "name": "BQ24610",
+   "tier": "B",
+   "score": 100,
+   "footprint": "VQFN-24-1EP_4x4mm_P0.5mm_EP2.45x2.45mm",
+   "why": "tier B, score 100, VQFN-24-1EP_4x4mm_P0.5mm_EP2.45x2.45mm"
+  },
+  {
+   "id": "kicad-symbols/Battery_Management/BQ24650",
+   "name": "BQ24650",
+   "tier": "B",
+   "score": 100,
+   "footprint": "Texas_RVA_VQFN-16-1EP_3.5x3.5mm_P0.5mm_EP2.14x2.14mm_ThermalVias",
+   "why": "tier B, score 100, Texas_RVA_VQFN-16-1EP_3.5x3.5mm_P0.5mm_EP2.14x2.14mm_ThermalVias"
+  }
+ ],
+ "part_ids": [
+  "kicad-symbols/Battery_Management/BQ24610",
+  "kicad-symbols/Battery_Management/BQ24650"
+ ],
+ "embedding_text": "power-supply.qfn.buck.28v | Power Power Supply | Surface-mount 28V buck power supply components in QFN package footprints. | power supply buck 28v qfn vqfn smd vqfn-24 vqfn-16 bq24610 bq24650 battery management power battery nmos li ion charger 5mm management 10a max voltage 600khz synchronous | QFN | buck 28V",
+ "class": "power.supply"
+}

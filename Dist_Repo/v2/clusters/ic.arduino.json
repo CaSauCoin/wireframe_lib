@@ -1,0 +1,93 @@
+{
+ "schema": 1,
+ "id": "ic.arduino",
+ "name": "IC — Arduino",
+ "category_path": [
+  "IC"
+ ],
+ "description": "This cluster contains 8 IC parts in the Arduino package family with through-hole or unknown mounts, using footprints such as Arduino Uno Shield, Nano, and Mega Pro.",
+ "selection_hints": [
+  "Select when using Arduino form-factor board footprints including Uno Shield, Nano, or Mega Pro.",
+  "Check part quality tier and footprint details, as the cluster contains 1 tier B and 7 tier C parts.",
+  "Confirm pin and mount configuration for through-hole or unspecified mounting."
+ ],
+ "avoid_when": [
+  "Tier A or fully verified library parts are strictly required.",
+  "The design requires surface-mount component packaging.",
+  "The board design requires non-Arduino package footprint layouts."
+ ],
+ "keywords": [
+  "arduino",
+  "ic",
+  "uno shield",
+  "nano",
+  "mega pro",
+  "through hole",
+  "stm nucleo",
+  "withmountingholes",
+  "r2",
+  "r3",
+  "shield",
+  "uno",
+  "pad",
+  "mm",
+  "pitch",
+  "pins",
+  "nucleo",
+  "through",
+  "hole",
+  "mega"
+ ],
+ "facts": {
+  "package_family": "Arduino",
+  "facets": [],
+  "mounts": [
+   "through_hole",
+   "unknown"
+  ],
+  "footprints": [
+   "Arduino Uno Shield",
+   "Arduino",
+   "Arduino Nano",
+   "arduino_mega_pro",
+   "Arduino_Nano_WithMountingHoles",
+   "Arduino_UNO_R2_WithMountingHoles",
+   "Arduino_UNO_R3_WithMountingHoles"
+  ],
+  "sources": {
+   "dist-legacy": 5,
+   "matthiasbock-altium-libraries": 3
+  }
+ },
+ "quality": {
+  "part_count": 8,
+  "planner_visible_count": 1,
+  "tier_counts": {
+   "B": 1,
+   "C": 7
+  },
+  "review_status": "ai_generated"
+ },
+ "representative_parts": [
+  {
+   "id": "matthiasbock-altium-libraries/STM Nucleo/STM Nucleo",
+   "name": "STM Nucleo",
+   "tier": "B",
+   "score": 79,
+   "footprint": "Arduino Uno Shield",
+   "why": "tier B, score 79, Arduino Uno Shield"
+  }
+ ],
+ "part_ids": [
+  "matthiasbock-altium-libraries/STM Nucleo/STM Nucleo",
+  "dist-legacy/Arduino UNO R3 - v1",
+  "matthiasbock-altium-libraries/Arduino Nano/Arduino Nano",
+  "matthiasbock-altium-libraries/Arduino Uno Shield/Arduino Uno Shield",
+  "dist-legacy/arduino_mega_pro",
+  "dist-legacy/Arduino_Nano_WithMountingHoles",
+  "dist-legacy/Arduino_UNO_R2_WithMountingHoles",
+  "dist-legacy/Arduino_UNO_R3_WithMountingHoles"
+ ],
+ "embedding_text": "ic.arduino | IC | This cluster contains 8 IC parts in the Arduino package family with through-hole or unknown mounts, using footprints such as Arduino Uno Shield, Nano, and Mega Pro. | arduino ic uno shield nano mega pro through hole stm nucleo withmountingholes r2 r3 shield uno pad mm pitch pins nucleo through hole mega | Arduino | ",
+ "class": "ic"
+}

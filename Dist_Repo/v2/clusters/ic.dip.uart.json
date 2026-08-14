@@ -1,0 +1,130 @@
+{
+ "schema": 1,
+ "id": "ic.dip.uart",
+ "name": "IC — UART/serial — DIP",
+ "category_path": [
+  "IC"
+ ],
+ "description": "Cluster of 8 integrated circuits for UART and serial interfaces in through-hole DIP packages including DIP-8, DIP-16, and DIP-40 footprints.",
+ "selection_hints": [
+  "Select when designing through-hole circuits requiring DIP package UART or serial interface ICs.",
+  "Match the specific footprint variant such as DIP_8, DIP_16, DIP-16_W7.62mm, or DIP_40DW.",
+  "Prefer Tier A representative parts such as MAX3232CPE_ when available."
+ ],
+ "avoid_when": [
+  "Surface-mount (SMT) packaging is required instead of DIP through-hole mounting.",
+  "The target application requires integrated circuits other than UART or serial interface components.",
+  "Specific voltage, pinout, or electrical ratings are required but missing from the part entry."
+ ],
+ "keywords": [
+  "ic",
+  "uart",
+  "serial",
+  "dip",
+  "through_hole",
+  "dip_8",
+  "dip_16",
+  "dip_40dw",
+  "max3232",
+  "max485",
+  "adm485",
+  "ltc485",
+  "at89c51",
+  "transceiver",
+  "rs",
+  "dip8",
+  "in",
+  "package",
+  "pin",
+  "interface",
+  "dip16",
+  "rs485",
+  "line",
+  "driver"
+ ],
+ "facts": {
+  "package_family": "DIP",
+  "facets": [
+   "UART/serial"
+  ],
+  "mounts": [
+   "through_hole",
+   "unknown"
+  ],
+  "footprints": [
+   "DIP_8",
+   "DIP_16",
+   "DIP-16_W7.62mm",
+   "DIP_40DW",
+   "PDIP8 - MAX485"
+  ],
+  "sources": {
+   "chilaboard-altium-library": 6,
+   "digikey-kicad-library": 1,
+   "francescosacco-hardwarelibrary": 1
+  }
+ },
+ "quality": {
+  "part_count": 8,
+  "planner_visible_count": 8,
+  "tier_counts": {
+   "A": 1,
+   "B": 7
+  },
+  "review_status": "ai_generated"
+ },
+ "representative_parts": [
+  {
+   "id": "digikey-kicad-library/dk_Interface-Drivers-Receivers-Transceivers/MAX3232CPE_",
+   "name": "MAX3232CPE_",
+   "tier": "A",
+   "score": 100,
+   "footprint": "DIP-16_W7.62mm",
+   "why": "tier A, score 100, DIP-16_W7.62mm"
+  },
+  {
+   "id": "francescosacco-hardwarelibrary/MAX485 Type 1/MAX485 Type 1",
+   "name": "MAX485 Type 1",
+   "tier": "B",
+   "score": 80,
+   "footprint": "PDIP8 - MAX485",
+   "why": "tier B, score 80, PDIP8 - MAX485"
+  },
+  {
+   "id": "chilaboard-altium-library/ADM485_DIP8/ADM485_DIP8",
+   "name": "ADM485_DIP8",
+   "tier": "B",
+   "score": 80,
+   "footprint": "DIP_8",
+   "why": "tier B, score 80, DIP_8"
+  },
+  {
+   "id": "chilaboard-altium-library/AT89C51_DIP40/AT89C51_DIP40",
+   "name": "AT89C51_DIP40",
+   "tier": "B",
+   "score": 80,
+   "footprint": "DIP_40DW",
+   "why": "tier B, score 80, DIP_40DW"
+  },
+  {
+   "id": "chilaboard-altium-library/LTC485_DIP8/LTC485_DIP8",
+   "name": "LTC485_DIP8",
+   "tier": "B",
+   "score": 80,
+   "footprint": "DIP_8",
+   "why": "tier B, score 80, DIP_8"
+  }
+ ],
+ "part_ids": [
+  "digikey-kicad-library/dk_Interface-Drivers-Receivers-Transceivers/MAX3232CPE_",
+  "chilaboard-altium-library/ADM485_DIP8/ADM485_DIP8",
+  "chilaboard-altium-library/AT89C51_DIP40/AT89C51_DIP40",
+  "chilaboard-altium-library/LTC485_DIP8/LTC485_DIP8",
+  "chilaboard-altium-library/MAX232_DIP16/MAX232_DIP16",
+  "francescosacco-hardwarelibrary/MAX485 Type 1/MAX485 Type 1",
+  "chilaboard-altium-library/MAX485_DIP8/MAX485_DIP8",
+  "chilaboard-altium-library/SP3232_DIP16/SP3232_DIP16"
+ ],
+ "embedding_text": "ic.dip.uart | IC | Cluster of 8 integrated circuits for UART and serial interfaces in through-hole DIP packages including DIP-8, DIP-16, and DIP-40 footprints. | ic uart serial dip through_hole dip_8 dip_16 dip_40dw max3232 max485 adm485 ltc485 at89c51 transceiver rs dip8 in package pin interface dip16 rs485 line driver | DIP | UART/serial",
+ "class": "ic"
+}

@@ -1,0 +1,118 @@
+{
+ "schema": 1,
+ "id": "ic-sensor.generic",
+ "name": "IC Sensor",
+ "category_path": [
+  "IC",
+  "Sensor"
+ ],
+ "description": "Generic IC sensor cluster containing 8 parts with unassigned package families sourced from KiCad symbols and legacy distribution libraries.",
+ "selection_hints": [
+  "Assign an explicit package and footprint before committing to layout.",
+  "Verify specific sensor function such as optical, pressure, or radiation detection.",
+  "Check quality tiers (tier G and tier C) and library source trust."
+ ],
+ "avoid_when": [
+  "A pre-defined footprint or package family is required prior to part selection.",
+  "Verified tier A components are required instead of tier G or tier C entries."
+ ],
+ "keywords": [
+  "ic sensor",
+  "ic",
+  "sensor",
+  "package chosen later",
+  "kicad-symbols",
+  "dist-legacy",
+  "optical",
+  "pressure",
+  "nuclear radiation detector",
+  "pmtx08dyn",
+  "mpxa6115a",
+  "mpxaz6115a",
+  "package",
+  "chosen",
+  "later",
+  "absolute",
+  "stage",
+  "to",
+  "115kpa",
+  "analog",
+  "output",
+  "integrated",
+  "signal",
+  "conditioning"
+ ],
+ "facts": {
+  "package_family": "package chosen later",
+  "facets": [],
+  "mounts": [],
+  "footprints": [],
+  "sources": {
+   "kicad-symbols": 7,
+   "dist-legacy": 1
+  }
+ },
+ "quality": {
+  "part_count": 8,
+  "planner_visible_count": 7,
+  "tier_counts": {
+   "C": 1,
+   "G": 7
+  },
+  "review_status": "ai_generated"
+ },
+ "representative_parts": [
+  {
+   "id": "kicad-symbols/Sensor_Optical/PMTx08Dyn",
+   "name": "PMTx08Dyn",
+   "tier": "G",
+   "score": 77,
+   "footprint": "",
+   "why": "tier G, score 77"
+  },
+  {
+   "id": "kicad-symbols/Sensor_Optical/PMTx08Dyn_Shld",
+   "name": "PMTx08Dyn_Shld",
+   "tier": "G",
+   "score": 77,
+   "footprint": "",
+   "why": "tier G, score 77"
+  },
+  {
+   "id": "kicad-symbols/Sensor/Nuclear-Radiation_Detector",
+   "name": "Nuclear-Radiation_Detector",
+   "tier": "G",
+   "score": 67,
+   "footprint": "",
+   "why": "tier G, score 67"
+  },
+  {
+   "id": "kicad-symbols/Sensor_Pressure/MPXA6115A",
+   "name": "MPXA6115A",
+   "tier": "G",
+   "score": 55,
+   "footprint": "",
+   "why": "tier G, score 55"
+  },
+  {
+   "id": "kicad-symbols/Sensor_Pressure/MPXAZ6115A",
+   "name": "MPXAZ6115A",
+   "tier": "G",
+   "score": 55,
+   "footprint": "",
+   "why": "tier G, score 55"
+  }
+ ],
+ "part_ids": [
+  "dist-legacy/sensors",
+  "kicad-symbols/Sensor_Optical/PMTx08Dyn",
+  "kicad-symbols/Sensor_Optical/PMTx08Dyn_Shld",
+  "kicad-symbols/Sensor/Nuclear-Radiation_Detector",
+  "kicad-symbols/Sensor_Pressure/MPXA6115A",
+  "kicad-symbols/Sensor_Pressure/MPXAZ6115A",
+  "kicad-symbols/Sensor_Pressure/MPXH6115A",
+  "kicad-symbols/Sensor_Pressure/MPXHZ6115A"
+ ],
+ "embedding_text": "ic-sensor.generic | IC Sensor | Generic IC sensor cluster containing 8 parts with unassigned package families sourced from KiCad symbols and legacy distribution libraries. | ic sensor ic sensor package chosen later kicad-symbols dist-legacy optical pressure nuclear radiation detector pmtx08dyn mpxa6115a mpxaz6115a package chosen later absolute stage to 115kpa analog output integrated signal conditioning | package chosen later | ",
+ "class": "ic.sensor"
+}

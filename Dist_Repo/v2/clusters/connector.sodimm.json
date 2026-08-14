@@ -1,0 +1,97 @@
+{
+ "schema": 1,
+ "id": "connector.sodimm",
+ "name": "Connector — SODIMM",
+ "category_path": [
+  "Connector"
+ ],
+ "description": "Connector cluster for SODIMM card-edge and socket footprints, covering 3 parts (2 planner-visible) sourced from kicad-symbols and dist-legacy, including SODIMM-200 and SODIMM-260 DDR4 footprint variants.",
+ "selection_hints": [
+  "Match the exact footprint: SODIMM-200_1.8V_Card_edge vs SODIMM-260_DDR4_H4.0-5.2_OrientationStd_Socket",
+  "Prefer higher-tier (B) entries over tier C when available",
+  "Confirm source trust (kicad-symbols vs dist-legacy) before use",
+  "Verify symbol-footprint pairing since review_status is generated"
+ ],
+ "avoid_when": [
+  "The design requires a footprint other than SODIMM-200 or SODIMM-260",
+  "A specific mount type (smd vs unknown) cannot be confirmed for the target board",
+  "Only tier C or unreviewed entries match, and higher confidence is required",
+  "Pinout, electrical rating, or lifecycle data is needed but not provided by this cluster"
+ ],
+ "keywords": [
+  "sodimm",
+  "sodimm-200",
+  "sodimm-260",
+  "connector",
+  "card edge",
+  "socket",
+  "ddr4",
+  "1.8v",
+  "orientationstd",
+  "smd",
+  "kicad-symbols",
+  "dist-legacy",
+  "so-dimm",
+  "memory connector",
+  "edge connector",
+  "h4",
+  "mm",
+  "dimm",
+  "pin",
+  "8v",
+  "card",
+  "edge",
+  "so",
+  "ddr1"
+ ],
+ "facts": {
+  "package_family": "SODIMM",
+  "facets": [],
+  "mounts": [
+   "smd",
+   "unknown"
+  ],
+  "footprints": [
+   "SODIMM-200_1.8V_Card_edge",
+   "SODIMM-260_DDR4_H4.0-5.2_OrientationStd_Socket"
+  ],
+  "sources": {
+   "kicad-symbols": 2,
+   "dist-legacy": 1
+  }
+ },
+ "quality": {
+  "part_count": 3,
+  "planner_visible_count": 2,
+  "tier_counts": {
+   "B": 2,
+   "C": 1
+  },
+  "review_status": "ai_generated"
+ },
+ "representative_parts": [
+  {
+   "id": "kicad-symbols/Connector/SODIMM-200",
+   "name": "SODIMM-200",
+   "tier": "B",
+   "score": 80,
+   "footprint": "SODIMM-200_1.8V_Card_edge",
+   "why": "tier B, score 80, SODIMM-200_1.8V_Card_edge"
+  },
+  {
+   "id": "kicad-symbols/Connector/SODIMM-200_Split",
+   "name": "SODIMM-200_Split",
+   "tier": "B",
+   "score": 80,
+   "footprint": "SODIMM-200_1.8V_Card_edge",
+   "why": "tier B, score 80, SODIMM-200_1.8V_Card_edge"
+  }
+ ],
+ "part_ids": [
+  "kicad-symbols/Connector/SODIMM-200",
+  "kicad-symbols/Connector/SODIMM-200_Split",
+  "dist-legacy/SODIMM-260_DDR4_H4.0-5.2_OrientationStd_Socket"
+ ],
+ "embedding_text": "connector.sodimm | Connector | Connector cluster for SODIMM card-edge and socket footprints, covering 3 parts (2 planner-visible) sourced from kicad-symbols and dist-legacy, including SODIMM-200 and SODIMM-260 DDR4 footprint variants. | sodimm sodimm-200 sodimm-260 connector card edge socket ddr4 1.8v orientationstd smd kicad-symbols dist-legacy so-dimm memory connector edge connector h4 mm dimm pin 8v card edge so ddr1 | SODIMM | ",
+ "class": "connector"
+}

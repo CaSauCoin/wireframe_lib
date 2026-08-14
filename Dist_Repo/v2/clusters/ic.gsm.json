@@ -1,0 +1,96 @@
+{
+ "schema": 1,
+ "id": "ic.gsm",
+ "name": "IC — GSM",
+ "category_path": [
+  "IC"
+ ],
+ "description": "Integrated circuit cluster with 9 parts using GSM package footprints for surface-mount and through-hole designs.",
+ "selection_hints": [
+  "Select based on the exact footprint module standard required, such as SIM800, SIM900, or A2235-H.",
+  "Confirm mounting requirement for surface mount (smd) or through hole.",
+  "Prioritize Tier B quality parts over Tier C entries."
+ ],
+ "avoid_when": [
+  "The application requires non-GSM package footprints.",
+  "Neither SMD nor through-hole GSM land patterns fit the required component.",
+  "Part specifications require quality tiers higher than Tier B."
+ ],
+ "keywords": [
+  "gsm",
+  "ic",
+  "smd",
+  "through hole",
+  "gsm module",
+  "sim800",
+  "sim800c",
+  "sim900",
+  "sim7100",
+  "sim300",
+  "sim908",
+  "sim808",
+  "tc35",
+  "a2235-h",
+  "pad",
+  "mm",
+  "pitch",
+  "pins",
+  "surface",
+  "mount"
+ ],
+ "facts": {
+  "package_family": "GSM",
+  "facets": [],
+  "mounts": [
+   "smd",
+   "through_hole"
+  ],
+  "footprints": [
+   "GSM_Module_17.8x16.5mm_A2235-H",
+   "GSM_SIM7100",
+   "GSM_SIM800C",
+   "GSM_SIM900",
+   "GSM_TC35",
+   "GSM_SIM300",
+   "GSM_SIM800",
+   "GSM_SIM908",
+   "GSM_SIM808"
+  ],
+  "sources": {
+   "chilaboard-altium-library": 8,
+   "digikey-kicad-library": 1
+  }
+ },
+ "quality": {
+  "part_count": 9,
+  "planner_visible_count": 1,
+  "tier_counts": {
+   "B": 1,
+   "C": 8
+  },
+  "review_status": "ai_generated"
+ },
+ "representative_parts": [
+  {
+   "id": "digikey-kicad-library/dk_RF-Receivers/A2235-H",
+   "name": "A2235-H",
+   "tier": "B",
+   "score": 100,
+   "footprint": "GSM_Module_17.8x16.5mm_A2235-H",
+   "why": "tier B, score 100, GSM_Module_17.8x16.5mm_A2235-H"
+  }
+ ],
+ "part_ids": [
+  "digikey-kicad-library/dk_RF-Receivers/A2235-H",
+  "chilaboard-altium-library/GSM_SIM7100/GSM_SIM7100",
+  "chilaboard-altium-library/GSM_SIM800C/GSM_SIM800C",
+  "chilaboard-altium-library/GSM_SIM900/GSM_SIM900",
+  "chilaboard-altium-library/GSM_TC35/GSM_TC35",
+  "chilaboard-altium-library/GSM_SIM300/GSM_SIM300",
+  "chilaboard-altium-library/GSM_SIM800/GSM_SIM800",
+  "chilaboard-altium-library/GSM_SIM908/GSM_SIM908",
+  "chilaboard-altium-library/GSM_SIM808/GSM_SIM808"
+ ],
+ "embedding_text": "ic.gsm | IC | Integrated circuit cluster with 9 parts using GSM package footprints for surface-mount and through-hole designs. | gsm ic smd through hole gsm module sim800 sim800c sim900 sim7100 sim300 sim908 sim808 tc35 a2235-h pad mm pitch pins surface mount | GSM | ",
+ "class": "ic"
+}

@@ -1,0 +1,127 @@
+{
+ "schema": 1,
+ "id": "ic-sensor.qfn.i2c",
+ "name": "IC Sensor — I2C — QFN",
+ "category_path": [
+  "IC",
+  "Sensor"
+ ],
+ "description": "Surface-mount sensor ICs using I2C communication interface in QFN package footprints.",
+ "selection_hints": [
+  "Match specific footprint requirements such as QFN-4, WQFN-10, VQFN-16, QFN-24, or QFN-28.",
+  "Prefer tier A parts for verified quality entries in the library.",
+  "Verify sensor function matches application needs such as temperature, humidity, energy, or motion."
+ ],
+ "avoid_when": [
+  "Through-hole mounting is required rather than surface-mount (SMD).",
+  "A package family other than QFN is required for layout.",
+  "Communication protocols other than I2C are required."
+ ],
+ "keywords": [
+  "ic",
+  "sensor",
+  "i2c",
+  "qfn",
+  "vqfn",
+  "wqfn",
+  "smd",
+  "temperature",
+  "humidity",
+  "motion",
+  "energy",
+  "mcp39f521",
+  "tmp461xxrun",
+  "ens210",
+  "mpu-9150",
+  "p0",
+  "5mm",
+  "remote",
+  "and",
+  "texas",
+  "1ep",
+  "nolead",
+  "with",
+  "invensense"
+ ],
+ "facts": {
+  "package_family": "QFN",
+  "facets": [
+   "I2C"
+  ],
+  "mounts": [
+   "smd"
+  ],
+  "footprints": [
+   "InvenSense_QFN-24_4x4mm_P0.5mm",
+   "VQFN-16-1EP_3x3mm_P0.5mm_EP1.68x1.68mm",
+   "QFN-28-1EP_5x5mm_P0.5mm_EP3.35x3.35mm",
+   "Texas_RUN0010A_WQFN-10_2x2mm_P0.5mm",
+   "AMS_QFN-4-1EP_2x2mm_P0.95mm_EP0.7x1.6mm"
+  ],
+  "sources": {
+   "kicad-symbols": 7
+  }
+ },
+ "quality": {
+  "part_count": 7,
+  "planner_visible_count": 7,
+  "tier_counts": {
+   "A": 2,
+   "B": 5
+  },
+  "review_status": "ai_generated"
+ },
+ "representative_parts": [
+  {
+   "id": "kicad-symbols/Sensor_Energy/MCP39F521",
+   "name": "MCP39F521",
+   "tier": "A",
+   "score": 100,
+   "footprint": "QFN-28-1EP_5x5mm_P0.5mm_EP3.35x3.35mm",
+   "why": "tier A, score 100, QFN-28-1EP_5x5mm_P0.5mm_EP3.35x3.35mm"
+  },
+  {
+   "id": "kicad-symbols/Sensor_Temperature/TMP461xxRUN",
+   "name": "TMP461xxRUN",
+   "tier": "A",
+   "score": 100,
+   "footprint": "Texas_RUN0010A_WQFN-10_2x2mm_P0.5mm",
+   "why": "tier A, score 100, Texas_RUN0010A_WQFN-10_2x2mm_P0.5mm"
+  },
+  {
+   "id": "kicad-symbols/Sensor_Humidity/ENS210",
+   "name": "ENS210",
+   "tier": "B",
+   "score": 100,
+   "footprint": "AMS_QFN-4-1EP_2x2mm_P0.95mm_EP0.7x1.6mm",
+   "why": "tier B, score 100, AMS_QFN-4-1EP_2x2mm_P0.95mm_EP0.7x1.6mm"
+  },
+  {
+   "id": "kicad-symbols/Sensor_Motion/MPU-9150",
+   "name": "MPU-9150",
+   "tier": "B",
+   "score": 100,
+   "footprint": "InvenSense_QFN-24_4x4mm_P0.5mm",
+   "why": "tier B, score 100, InvenSense_QFN-24_4x4mm_P0.5mm"
+  },
+  {
+   "id": "kicad-symbols/Sensor_Temperature/TMP468xxRGT",
+   "name": "TMP468xxRGT",
+   "tier": "B",
+   "score": 100,
+   "footprint": "VQFN-16-1EP_3x3mm_P0.5mm_EP1.68x1.68mm",
+   "why": "tier B, score 100, VQFN-16-1EP_3x3mm_P0.5mm_EP1.68x1.68mm"
+  }
+ ],
+ "part_ids": [
+  "kicad-symbols/Sensor_Energy/MCP39F521",
+  "kicad-symbols/Sensor_Temperature/TMP461xxRUN",
+  "kicad-symbols/Sensor_Humidity/ENS210",
+  "kicad-symbols/Sensor_Motion/MPU-9150",
+  "kicad-symbols/Sensor_Temperature/TMP468xxRGT",
+  "kicad-symbols/Sensor_Temperature/TMP464xxRGT",
+  "kicad-symbols/Sensor_Motion/MPU-6050"
+ ],
+ "embedding_text": "ic-sensor.qfn.i2c | IC Sensor | Surface-mount sensor ICs using I2C communication interface in QFN package footprints. | ic sensor i2c qfn vqfn wqfn smd temperature humidity motion energy mcp39f521 tmp461xxrun ens210 mpu-9150 p0 5mm remote and texas 1ep nolead with invensense | QFN | I2C",
+ "class": "ic.sensor"
+}

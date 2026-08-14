@@ -1,0 +1,112 @@
+{
+ "schema": 1,
+ "id": "connector.sd",
+ "name": "Connector — SD",
+ "category_path": [
+  "Connector"
+ ],
+ "description": "SD connector component cluster comprising 6 parts with surface-mount and through-hole mounting options across quality tiers B and C.",
+ "selection_hints": [
+  "Match required PCB layout against available footprints such as SD_Holder_787231001 or SD_TE_2041021.",
+  "Select surface-mount (smd) or through-hole mounting types based on assembly requirements.",
+  "Prefer tier B representative parts over tier C entries."
+ ],
+ "avoid_when": [
+  "The target design requires a package family other than SD.",
+  "Component classes other than connectors are needed.",
+  "Mounting requirements are incompatible with smd or through-hole footprints."
+ ],
+ "keywords": [
+  "connector",
+  "sd",
+  "sd connector",
+  "sd card device",
+  "sd card receptacle",
+  "smd",
+  "through hole",
+  "0787231001",
+  "microsd",
+  "microsim",
+  "molex",
+  "hirose",
+  "te",
+  "card",
+  "sim",
+  "dm1aa",
+  "sf",
+  "pej82",
+  "molex2",
+  "connectors",
+  "push",
+  "device",
+  "mount"
+ ],
+ "facts": {
+  "package_family": "SD",
+  "facets": [],
+  "mounts": [
+   "smd",
+   "through_hole",
+   "unknown"
+  ],
+  "footprints": [
+   "SD_Holder_787231001",
+   "SD_Card_Device_16mm_SlotDepth",
+   "SD_TE_2041021",
+   "SD-SIM_microSD-microSIM_Molex_104168-1620",
+   "SD_Hirose_DM1AA_SF_PEJ82",
+   "SD_MOLEX2"
+  ],
+  "sources": {
+   "kicad-symbols": 2,
+   "dist-legacy": 2,
+   "digikey-kicad-library": 1,
+   "chilaboard-altium-library": 1
+  }
+ },
+ "quality": {
+  "part_count": 6,
+  "planner_visible_count": 3,
+  "tier_counts": {
+   "B": 3,
+   "C": 3
+  },
+  "review_status": "ai_generated"
+ },
+ "representative_parts": [
+  {
+   "id": "kicad-symbols/Connector/SD_Card_Device",
+   "name": "SD_Card_Device",
+   "tier": "B",
+   "score": 100,
+   "footprint": "SD_Card_Device_16mm_SlotDepth",
+   "why": "tier B, score 100, SD_Card_Device_16mm_SlotDepth"
+  },
+  {
+   "id": "kicad-symbols/Connector/SD_Card_Receptacle",
+   "name": "SD_Card_Receptacle",
+   "tier": "B",
+   "score": 100,
+   "footprint": "SD_TE_2041021",
+   "why": "tier B, score 100, SD_TE_2041021"
+  },
+  {
+   "id": "digikey-kicad-library/dk_Memory-Connectors-PC-Card-Sockets/0787231001",
+   "name": "0787231001",
+   "tier": "B",
+   "score": 100,
+   "footprint": "SD_Holder_787231001",
+   "why": "tier B, score 100, SD_Holder_787231001"
+  }
+ ],
+ "part_ids": [
+  "digikey-kicad-library/dk_Memory-Connectors-PC-Card-Sockets/0787231001",
+  "kicad-symbols/Connector/SD_Card_Device",
+  "kicad-symbols/Connector/SD_Card_Receptacle",
+  "dist-legacy/SD-SIM_microSD-microSIM_Molex_104168-1620",
+  "dist-legacy/SD_Hirose_DM1AA_SF_PEJ82",
+  "chilaboard-altium-library/SD_MOLEX2/SD_MOLEX2"
+ ],
+ "embedding_text": "connector.sd | Connector | SD connector component cluster comprising 6 parts with surface-mount and through-hole mounting options across quality tiers B and C. | connector sd sd connector sd card device sd card receptacle smd through hole 0787231001 microsd microsim molex hirose te card sim dm1aa sf pej82 molex2 connectors push device mount | SD | ",
+ "class": "connector"
+}

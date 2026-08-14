@@ -1,0 +1,115 @@
+{
+ "schema": 1,
+ "id": "connector.sma",
+ "name": "Connector — SMA",
+ "category_path": [
+  "Connector"
+ ],
+ "description": "Cluster of 7 SMA connector parts spanning SMD and through-hole mounts, with footprints including edge-mount, Molex horizontal, and jack variants.",
+ "selection_hints": [
+  "Match the exact footprint (edge, SMD, or Molex horizontal) to the intended land pattern",
+  "Prefer tier B entries; tier C entries have lower confidence",
+  "Confirm smd vs through_hole mount matches the board assembly process",
+  "Cross-check source library (SparkFun, dist-legacy, matthiasbock-altium) for trust level"
+ ],
+ "avoid_when": [
+  "The board requires a connector footprint outside the SMA family",
+  "The exact footprint variant (e.g. 6.3mm vs 8mm edge, Molex part number) is not confirmed",
+  "The part is only tier C and no verified footprint match is available",
+  "Mount type (smd vs through_hole) does not match the assembly process"
+ ],
+ "keywords": [
+  "sma",
+  "connector",
+  "rf connector",
+  "edge mount",
+  "edgemount",
+  "smd",
+  "through hole",
+  "molex",
+  "sma jack",
+  "sma edge",
+  "horizontal connector",
+  "73251",
+  "sparkfun rf",
+  "coax connector",
+  "rf jack",
+  "horizontal",
+  "edge",
+  "sparkfun",
+  "mount",
+  "sd",
+  "jack",
+  "rf",
+  "th",
+  "pad"
+ ],
+ "facts": {
+  "package_family": "SMA",
+  "facets": [],
+  "mounts": [
+   "smd",
+   "through_hole"
+  ],
+  "footprints": [
+   "SMA_Edge_6.3mm",
+   "SMA_Edge_8mm",
+   "SMA_Edge_SMD",
+   "SMA_Molex_73251-1153_EdgeMount_Horizontal",
+   "SMA_Molex_73251-2200_Horizontal",
+   "SMA JACK TH",
+   "SMA_Molex_73251-2120_EdgeMount_Horizontal"
+  ],
+  "sources": {
+   "SparkFun-KiCad-Libraries": 3,
+   "dist-legacy": 3,
+   "matthiasbock-altium-libraries": 1
+  }
+ },
+ "quality": {
+  "part_count": 7,
+  "planner_visible_count": 3,
+  "tier_counts": {
+   "B": 3,
+   "C": 4
+  },
+  "review_status": "ai_generated"
+ },
+ "representative_parts": [
+  {
+   "id": "SparkFun-KiCad-Libraries/SparkFun-RF/SMA_EdgeMount_6.3mm",
+   "name": "SMA_EdgeMount_6.3mm",
+   "tier": "B",
+   "score": 100,
+   "footprint": "SMA_Edge_6.3mm",
+   "why": "tier B, score 100, SMA_Edge_6.3mm"
+  },
+  {
+   "id": "SparkFun-KiCad-Libraries/SparkFun-RF/SMA_EdgeMount_8mm",
+   "name": "SMA_EdgeMount_8mm",
+   "tier": "B",
+   "score": 100,
+   "footprint": "SMA_Edge_8mm",
+   "why": "tier B, score 100, SMA_Edge_8mm"
+  },
+  {
+   "id": "SparkFun-KiCad-Libraries/SparkFun-RF/SMA_EdgeMount_SMD",
+   "name": "SMA_EdgeMount_SMD",
+   "tier": "B",
+   "score": 100,
+   "footprint": "SMA_Edge_SMD",
+   "why": "tier B, score 100, SMA_Edge_SMD"
+  }
+ ],
+ "part_ids": [
+  "SparkFun-KiCad-Libraries/SparkFun-RF/SMA_EdgeMount_6.3mm",
+  "SparkFun-KiCad-Libraries/SparkFun-RF/SMA_EdgeMount_8mm",
+  "SparkFun-KiCad-Libraries/SparkFun-RF/SMA_EdgeMount_SMD",
+  "dist-legacy/SMA_Molex_73251-1153_EdgeMount_Horizontal",
+  "dist-legacy/SMA_Molex_73251-2200_Horizontal",
+  "matthiasbock-altium-libraries/SMA JACK TH/SMA_JACK_TH",
+  "dist-legacy/SMA_Molex_73251-2120_EdgeMount_Horizontal"
+ ],
+ "embedding_text": "connector.sma | Connector | Cluster of 7 SMA connector parts spanning SMD and through-hole mounts, with footprints including edge-mount, Molex horizontal, and jack variants. | sma connector rf connector edge mount edgemount smd through hole molex sma jack sma edge horizontal connector 73251 sparkfun rf coax connector rf jack horizontal edge sparkfun mount sd jack rf th pad | SMA | ",
+ "class": "connector"
+}
