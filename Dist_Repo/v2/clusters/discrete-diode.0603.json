@@ -1,0 +1,167 @@
+{
+ "schema": 1,
+ "id": "discrete-diode.0603",
+ "name": "Discrete Diode — 0603",
+ "category_path": [
+  "Discrete",
+  "Diode"
+ ],
+ "description": "Cluster of discrete diode-class parts sharing 0603-family footprints, spanning signal diodes, a TVS diode, and several LED indicators; select by confirming exact device type and footprint rather than by cluster alone.",
+ "selection_hints": [
+  "Confirm whether the candidate is a signal/rectifier diode, TVS, or LED — this cluster mixes all three under discrete.diode",
+  "Match the exact footprint (e.g. D_0603_1608Metric vs LED_0603 vs C_0603_1608Metric) to the intended PCB land pattern",
+  "Prefer tier A entries (score 100) with an explicit footprint over lower-tier or unverified entries",
+  "When scores tie, check source library trust (e.g. digikey-kicad-library vs dist-legacy) before choosing"
+ ],
+ "avoid_when": [
+  "The design needs a package outside the 0603 footprint family",
+  "The required device type (rectifier, TVS, LED, etc.) cannot be confirmed for the specific part chosen",
+  "Electrical ratings such as voltage or current are not stated for the selected part",
+  "The symbol-footprint pairing is unverified or the part falls in the lower-quality tier (C) with generated review status"
+ ],
+ "keywords": [
+  "discrete diode",
+  "led",
+  "tvs diode",
+  "signal diode",
+  "rectifier",
+  "indicator led",
+  "smd",
+  "0603",
+  "d0603",
+  "led_0603",
+  "led_dual0603",
+  "c_0603_1608metric",
+  "d_0603_1608metric",
+  "footprint",
+  "optoelectronics",
+  "surface mount",
+  "handsolder",
+  "dual led",
+  "discrete",
+  "diode",
+  "indication",
+  "mm",
+  "1608metric",
+  "clear"
+ ],
+ "facts": {
+  "package_family": "0603",
+  "facets": [],
+  "mounts": [
+   "smd",
+   "unknown"
+  ],
+  "footprints": [
+   "0603",
+   "LED-0603",
+   "LED_0603",
+   "D0603",
+   "C_0603_1608Metric",
+   "D_0603_1608Metric",
+   "LED_Dual0603",
+   "C0603",
+   "CAP0603X",
+   "CN-SMD-0603",
+   "D_0201_0603Metric",
+   "D_0603_1608Metric_Pad1.05x0.95mm_HandSolder"
+  ],
+  "sources": {
+   "dist-legacy": 11,
+   "digikey-kicad-library": 10,
+   "Seeed-OPL-Kicad-Library": 5,
+   "celestial-altium-library": 3,
+   "SparkFun-KiCad-Libraries": 1,
+   "Alternate-KiCad-Library": 1,
+   "chilaboard-altium-library": 1
+  }
+ },
+ "quality": {
+  "part_count": 32,
+  "planner_visible_count": 17,
+  "tier_counts": {
+   "A": 2,
+   "B": 15,
+   "C": 15
+  },
+  "review_status": "ai_generated"
+ },
+ "representative_parts": [
+  {
+   "id": "Alternate-KiCad-Library/Diode_AKL/TS4448-RZ",
+   "name": "TS4448-RZ",
+   "tier": "A",
+   "score": 100,
+   "footprint": "D_0603_1608Metric",
+   "why": "tier A, score 100, D_0603_1608Metric"
+  },
+  {
+   "id": "SparkFun-KiCad-Libraries/SparkFun-DiscreteSemi/D_TVS_0603_24V",
+   "name": "D_TVS_0603_24V",
+   "tier": "A",
+   "score": 100,
+   "footprint": "C_0603_1608Metric",
+   "why": "tier A, score 100, C_0603_1608Metric"
+  },
+  {
+   "id": "digikey-kicad-library/dk_LED-Indication-Discrete/LTST-C19HE1WT",
+   "name": "LTST-C19HE1WT",
+   "tier": "B",
+   "score": 97,
+   "footprint": "LED_Dual0603",
+   "why": "tier B, score 97, LED_Dual0603"
+  },
+  {
+   "id": "digikey-kicad-library/dk_LED-Indication-Discrete/LG_L29K-G2J1-24-Z",
+   "name": "LG_L29K-G2J1-24-Z",
+   "tier": "B",
+   "score": 92,
+   "footprint": "0603",
+   "why": "tier B, score 92, 0603"
+  },
+  {
+   "id": "digikey-kicad-library/dk_LED-Indication-Discrete/LTST-C190GKT",
+   "name": "LTST-C190GKT",
+   "tier": "B",
+   "score": 92,
+   "footprint": "LED_0603",
+   "why": "tier B, score 92, LED_0603"
+  }
+ ],
+ "part_ids": [
+  "SparkFun-KiCad-Libraries/SparkFun-DiscreteSemi/D_TVS_0603_24V",
+  "Alternate-KiCad-Library/Diode_AKL/TS4448-RZ",
+  "digikey-kicad-library/dk_LED-Indication-Discrete/LTST-C19HE1WT",
+  "digikey-kicad-library/dk_LED-Indication-Discrete/LG_L29K-G2J1-24-Z",
+  "digikey-kicad-library/dk_LED-Indication-Discrete/LTST-C190GKT",
+  "digikey-kicad-library/dk_LED-Indication-Discrete/LTST-C190KGKT",
+  "digikey-kicad-library/dk_LED-Indication-Discrete/LTST-C190KRKT",
+  "digikey-kicad-library/dk_LED-Indication-Discrete/LTST-C190KSKT",
+  "digikey-kicad-library/dk_LED-Indication-Discrete/LTST-C191KFKT",
+  "digikey-kicad-library/dk_LED-Indication-Discrete/LTST-C191KRKT",
+  "digikey-kicad-library/dk_LED-Indication-Discrete/LTST-C191TBKT",
+  "digikey-kicad-library/dk_LED-Indication-Discrete/LTST-C193TBKT-5A",
+  "Seeed-OPL-Kicad-Library/OPL_Circuit_Protection/SMD-ESD-CG0603MLC-05E",
+  "Seeed-OPL-Kicad-Library/OPL_Optoelectronics/SMD-LED-CLEAR-BLUE_0603_",
+  "Seeed-OPL-Kicad-Library/OPL_Optoelectronics/SMD-LED-CLEAR-GREEN_0603_",
+  "Seeed-OPL-Kicad-Library/OPL_Optoelectronics/SMD-LED-CLEAR-YELLOW_0603_",
+  "Seeed-OPL-Kicad-Library/OPL_Optoelectronics/SMD-LED-YELLOW-WHITE_0603_",
+  "dist-legacy/C0603",
+  "dist-legacy/CAP0603X",
+  "dist-legacy/CN-SMD-0603",
+  "dist-legacy/D_0201_0603Metric",
+  "dist-legacy/D_0603_1608Metric_Pad1.05x0.95mm_HandSolder",
+  "dist-legacy/Fuse_0603_1608Metric",
+  "dist-legacy/Fuse_0603_1608Metric_Pad1.05x0.95mm_HandSolder",
+  "dist-legacy/SM-0402E-0603E",
+  "chilaboard-altium-library/D0603/D0603",
+  "celestial-altium-library/DIODES INC X2-DSN0603-2/DIODES_INC_X2-DSN0603-2",
+  "dist-legacy/D_0201_0603Metric_Pad0.64x0.40mm_HandSolder",
+  "celestial-altium-library/NEXPERIA DFN1608D-2 SOD1608/NEXPERIA_DFN1608D-2_SOD1608",
+  "celestial-altium-library/NEXPERIA SOD962-2 DSN0603-2/NEXPERIA_SOD962-2_DSN0603-2",
+  "dist-legacy/Nexperia_DSN0603-2_0.6x0.3mm_P0.4mm",
+  "dist-legacy/D_0603"
+ ],
+ "embedding_text": "discrete-diode.0603 | Discrete Diode | Cluster of discrete diode-class parts sharing 0603-family footprints, spanning signal diodes, a TVS diode, and several LED indicators; select by confirming exact device type and footprint rather than by cluster alone. | discrete diode led tvs diode signal diode rectifier indicator led smd 0603 d0603 led_0603 led_dual0603 c_0603_1608metric d_0603_1608metric footprint optoelectronics surface mount handsolder dual led discrete diode indication mm 1608metric clear | 0603 | ",
+ "class": "discrete.diode"
+}

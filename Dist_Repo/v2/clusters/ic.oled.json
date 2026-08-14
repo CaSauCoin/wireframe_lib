@@ -1,0 +1,103 @@
+{
+ "schema": 1,
+ "id": "ic.oled",
+ "name": "IC — OLED",
+ "category_path": [
+  "IC"
+ ],
+ "description": "IC class cluster containing 6 OLED display part entries in SMD, through-hole, and unknown mounts across quality tiers B and C.",
+ "selection_hints": [
+  "Select by exact footprint match such as folded OLED modules or SSD1306 display patterns.",
+  "Prefer Tier B representative parts over Tier C entries when choosing components.",
+  "Verify mount type compatibility among SMD, through-hole, or unknown options."
+ ],
+ "avoid_when": [
+  "The design requires a display package family other than OLED.",
+  "Tier A component quality status is strictly required.",
+  "Electrical parameters, pinouts, or dimensions not listed in cluster facts are required."
+ ],
+ "keywords": [
+  "ic",
+  "oled",
+  "ssd1306",
+  "display",
+  "sparkfun",
+  "chilaboard",
+  "smd",
+  "through_hole",
+  "128x64",
+  "128x128",
+  "spi",
+  "0.66in",
+  "1.3in",
+  "1.5in",
+  "folded",
+  "ic.oled",
+  "view",
+  "area",
+  "pixels",
+  "pad",
+  "mm",
+  "pitch",
+  "pins",
+  "3in"
+ ],
+ "facts": {
+  "package_family": "OLED",
+  "facets": [],
+  "mounts": [
+   "smd",
+   "through_hole",
+   "unknown"
+  ],
+  "footprints": [
+   "OLED_1.3in_128x64-Folded",
+   "OLED_1.5in_128x128-Folded",
+   "OLED_0.66in",
+   "OLED_SSD1306_2832",
+   "OLED_SSD1306_2864",
+   "OLED_SSD1306_64_SPI"
+  ],
+  "sources": {
+   "SparkFun-KiCad-Libraries": 3,
+   "chilaboard-altium-library": 3
+  }
+ },
+ "quality": {
+  "part_count": 6,
+  "planner_visible_count": 2,
+  "tier_counts": {
+   "B": 2,
+   "C": 4
+  },
+  "review_status": "ai_generated"
+ },
+ "representative_parts": [
+  {
+   "id": "SparkFun-KiCad-Libraries/SparkFun-Display/OLED_1.3in",
+   "name": "OLED_1.3in",
+   "tier": "B",
+   "score": 100,
+   "footprint": "OLED_1.3in_128x64-Folded",
+   "why": "tier B, score 100, OLED_1.3in_128x64-Folded"
+  },
+  {
+   "id": "SparkFun-KiCad-Libraries/SparkFun-Display/OLED_1.5in",
+   "name": "OLED_1.5in",
+   "tier": "B",
+   "score": 99,
+   "footprint": "OLED_1.5in_128x128-Folded",
+   "why": "tier B, score 99, OLED_1.5in_128x128-Folded"
+  }
+ ],
+ "part_ids": [
+  "SparkFun-KiCad-Libraries/SparkFun-Display/OLED_1.3in",
+  "SparkFun-KiCad-Libraries/SparkFun-Display/OLED_1.5in",
+  "SparkFun-KiCad-Libraries/SparkFun-Display/OLED_0.66in",
+  "chilaboard-altium-library/OLED_SSD1306_2832/OLED_SSD1306_2832",
+  "chilaboard-altium-library/OLED_SSD1306_2864/OLED_SSD1306_2864",
+  "chilaboard-altium-library/OLED_SSD1306_64_SPI/OLED_SSD1306_64_SPI"
+ ],
+ "embedding_text": "ic.oled | IC | IC class cluster containing 6 OLED display part entries in SMD, through-hole, and unknown mounts across quality tiers B and C. | ic oled ssd1306 display sparkfun chilaboard smd through_hole 128x64 128x128 spi 0.66in 1.3in 1.5in folded ic.oled view area pixels pad mm pitch pins 3in | OLED | ",
+ "class": "ic"
+}

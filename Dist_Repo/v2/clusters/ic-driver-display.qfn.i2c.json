@@ -1,0 +1,105 @@
+{
+ "schema": 1,
+ "id": "ic-driver-display.qfn.i2c",
+ "name": "IC Driver Display — I2C — QFN",
+ "category_path": [
+  "IC",
+  "Driver",
+  "Display"
+ ],
+ "description": "Surface-mount display driver IC cluster with I2C interface in QFN package variants, featuring parts such as PCA9685BS, LP5036, and TCA6507RUE.",
+ "selection_hints": [
+  "Match required pin count and footprint between QFN-28, VQFN-46, and X2QFN-12 package options.",
+  "Select for surface-mount display driver applications using I2C communication.",
+  "Prefer Tier A representative part (PCA9685BS) over Tier B options (LP5036, TCA6507RUE)."
+ ],
+ "avoid_when": [
+  "Designs requiring non-SMD or through-hole component mounting.",
+  "Applications needing communication protocols other than I2C.",
+  "Layouts specifying package types outside the QFN family."
+ ],
+ "keywords": [
+  "ic",
+  "driver",
+  "display",
+  "i2c",
+  "qfn",
+  "smd",
+  "vqfn",
+  "x2qfn",
+  "pca9685bs",
+  "lp5036",
+  "tca6507rue",
+  "display driver",
+  "led driver",
+  "qfn-28",
+  "led",
+  "bit",
+  "pwm",
+  "p0",
+  "nolead",
+  "channel",
+  "1ep",
+  "4mm",
+  "texas"
+ ],
+ "facts": {
+  "package_family": "QFN",
+  "facets": [
+   "I2C"
+  ],
+  "mounts": [
+   "smd"
+  ],
+  "footprints": [
+   "QFN-28-1EP_6x6mm_P0.65mm_EP4.25x4.25mm",
+   "VQFN-46-1EP_5x6mm_P0.4mm_EP2.8x3.8mm",
+   "Texas_X2QFN-RUE-12_1.4x2mm_P0.4mm"
+  ],
+  "sources": {
+   "kicad-symbols": 3
+  }
+ },
+ "quality": {
+  "part_count": 3,
+  "planner_visible_count": 3,
+  "tier_counts": {
+   "A": 1,
+   "B": 2
+  },
+  "review_status": "ai_generated"
+ },
+ "representative_parts": [
+  {
+   "id": "kicad-symbols/Driver_LED/PCA9685BS",
+   "name": "PCA9685BS",
+   "tier": "A",
+   "score": 100,
+   "footprint": "QFN-28-1EP_6x6mm_P0.65mm_EP4.25x4.25mm",
+   "why": "tier A, score 100, QFN-28-1EP_6x6mm_P0.65mm_EP4.25x4.25mm"
+  },
+  {
+   "id": "kicad-symbols/Driver_LED/LP5036",
+   "name": "LP5036",
+   "tier": "B",
+   "score": 100,
+   "footprint": "VQFN-46-1EP_5x6mm_P0.4mm_EP2.8x3.8mm",
+   "why": "tier B, score 100, VQFN-46-1EP_5x6mm_P0.4mm_EP2.8x3.8mm"
+  },
+  {
+   "id": "kicad-symbols/Driver_LED/TCA6507RUE",
+   "name": "TCA6507RUE",
+   "tier": "B",
+   "score": 80,
+   "footprint": "Texas_X2QFN-RUE-12_1.4x2mm_P0.4mm",
+   "why": "tier B, score 80, Texas_X2QFN-RUE-12_1.4x2mm_P0.4mm"
+  }
+ ],
+ "part_ids": [
+  "kicad-symbols/Driver_LED/PCA9685BS",
+  "kicad-symbols/Driver_LED/LP5036",
+  "kicad-symbols/Driver_LED/TCA6507RUE"
+ ],
+ "embedding_text": "ic-driver-display.qfn.i2c | IC Driver Display | Surface-mount display driver IC cluster with I2C interface in QFN package variants, featuring parts such as PCA9685BS, LP5036, and TCA6507RUE. | ic driver display i2c qfn smd vqfn x2qfn pca9685bs lp5036 tca6507rue display driver led driver qfn-28 led bit pwm p0 nolead channel 1ep 4mm texas | QFN | I2C",
+ "class": "ic.driver.display"
+}

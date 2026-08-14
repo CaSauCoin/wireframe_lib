@@ -1,0 +1,70 @@
+{
+ "schema": 1,
+ "id": "connector.sdmicro",
+ "name": "Connector — SDMICRO",
+ "category_path": [
+  "Connector"
+ ],
+ "description": "SDMICRO connector cluster with 2 SMD parts across two footprint variants (SDMICRO_MOLEX104031, SDMICRO_MOLEX105162), all tier C and generated review status.",
+ "selection_hints": [
+  "Match the exact footprint variant: MOLEX104031 vs MOLEX105162",
+  "Verify pin-to-pad mapping manually since parts are tier C and review_status is generated",
+  "Confirm source trust (chilaboard-altium-library) before use in production"
+ ],
+ "avoid_when": [
+  "Exact footprint (MOLEX104031 vs MOLEX105162) cannot be confirmed",
+  "A verified, non-generated (higher tier) part is required",
+  "The design needs a connector package other than SDMICRO",
+  "Electrical ratings or pinout must be confirmed but are not documented in this cluster"
+ ],
+ "keywords": [
+  "sdmicro",
+  "sd micro",
+  "microsd",
+  "sd card connector",
+  "molex104031",
+  "molex105162",
+  "molex",
+  "connector",
+  "card slot",
+  "memory card connector",
+  "smd",
+  "surface mount",
+  "chilaboard",
+  "surface",
+  "mount",
+  "pad",
+  "mm",
+  "pitch",
+  "pins"
+ ],
+ "facts": {
+  "package_family": "SDMICRO",
+  "facets": [],
+  "mounts": [
+   "smd"
+  ],
+  "footprints": [
+   "SDMICRO_MOLEX104031",
+   "SDMICRO_MOLEX105162"
+  ],
+  "sources": {
+   "chilaboard-altium-library": 2
+  }
+ },
+ "quality": {
+  "part_count": 2,
+  "planner_visible_count": 0,
+  "tier_counts": {
+   "C": 2
+  },
+  "review_status": "ai_generated"
+ },
+ "representative_parts": [],
+ "part_ids": [
+  "chilaboard-altium-library/SDMICRO_MOLEX104031/SDMICRO_MOLEX104031",
+  "chilaboard-altium-library/SDMICRO_MOLEX105162/SDMICRO_MOLEX105162"
+ ],
+ "embedding_text": "connector.sdmicro | Connector | SDMICRO connector cluster with 2 SMD parts across two footprint variants (SDMICRO_MOLEX104031, SDMICRO_MOLEX105162), all tier C and generated review status. | sdmicro sd micro microsd sd card connector molex104031 molex105162 molex connector card slot memory card connector smd surface mount chilaboard surface mount pad mm pitch pins | SDMICRO | ",
+ "class": "connector"
+}

@@ -1,0 +1,104 @@
+{
+ "schema": 1,
+ "id": "power-supply.dfn.i2c",
+ "name": "Power Power Supply — I2C — DFN",
+ "category_path": [
+  "Power",
+  "Power Supply"
+ ],
+ "description": "Surface-mount power supply ICs featuring I2C interfaces in DFN packages.",
+ "selection_hints": [
+  "Select based on exact footprint dimensions between DFN-6 and DFN-10.",
+  "Prefer tier A parts for higher quality ranking.",
+  "Verify exposed pad dimensions and pitch against design requirements."
+ ],
+ "avoid_when": [
+  "The design requires through-hole mounting or non-DFN packages.",
+  "A communication interface other than I2C is needed.",
+  "The PCB layout cannot support exposed pad DFN footprints."
+ ],
+ "keywords": [
+  "dfn",
+  "i2c",
+  "power supply",
+  "smd",
+  "surface mount",
+  "dfn-6",
+  "dfn-10",
+  "battery management",
+  "ltc2959",
+  "ltc2942",
+  "ltc2942-1",
+  "exposed pad",
+  "power",
+  "battery",
+  "gauge",
+  "management",
+  "gas",
+  "with",
+  "temperature",
+  "voltage",
+  "measurement",
+  "1ep",
+  "p0",
+  "5mm"
+ ],
+ "facts": {
+  "package_family": "DFN",
+  "facets": [
+   "I2C"
+  ],
+  "mounts": [
+   "smd"
+  ],
+  "footprints": [
+   "DFN-6-1EP_3x2mm_P0.5mm_EP1.65x1.35mm",
+   "DFN-10-1EP_2x3mm_P0.5mm_EP0.64x2.4mm"
+  ],
+  "sources": {
+   "kicad-symbols": 3
+  }
+ },
+ "quality": {
+  "part_count": 3,
+  "planner_visible_count": 3,
+  "tier_counts": {
+   "A": 1,
+   "B": 2
+  },
+  "review_status": "ai_generated"
+ },
+ "representative_parts": [
+  {
+   "id": "kicad-symbols/Battery_Management/LTC2959",
+   "name": "LTC2959",
+   "tier": "A",
+   "score": 100,
+   "footprint": "DFN-10-1EP_2x3mm_P0.5mm_EP0.64x2.4mm",
+   "why": "tier A, score 100, DFN-10-1EP_2x3mm_P0.5mm_EP0.64x2.4mm"
+  },
+  {
+   "id": "kicad-symbols/Battery_Management/LTC2942",
+   "name": "LTC2942",
+   "tier": "B",
+   "score": 100,
+   "footprint": "DFN-6-1EP_3x2mm_P0.5mm_EP1.65x1.35mm",
+   "why": "tier B, score 100, DFN-6-1EP_3x2mm_P0.5mm_EP1.65x1.35mm"
+  },
+  {
+   "id": "kicad-symbols/Battery_Management/LTC2942-1",
+   "name": "LTC2942-1",
+   "tier": "B",
+   "score": 100,
+   "footprint": "DFN-6-1EP_3x2mm_P0.5mm_EP1.65x1.35mm",
+   "why": "tier B, score 100, DFN-6-1EP_3x2mm_P0.5mm_EP1.65x1.35mm"
+  }
+ ],
+ "part_ids": [
+  "kicad-symbols/Battery_Management/LTC2959",
+  "kicad-symbols/Battery_Management/LTC2942",
+  "kicad-symbols/Battery_Management/LTC2942-1"
+ ],
+ "embedding_text": "power-supply.dfn.i2c | Power Power Supply | Surface-mount power supply ICs featuring I2C interfaces in DFN packages. | dfn i2c power supply smd surface mount dfn-6 dfn-10 battery management ltc2959 ltc2942 ltc2942-1 exposed pad power battery gauge management gas with temperature voltage measurement 1ep p0 5mm | DFN | I2C",
+ "class": "power.supply"
+}

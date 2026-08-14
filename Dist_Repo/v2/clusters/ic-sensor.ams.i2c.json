@@ -1,0 +1,104 @@
+{
+ "schema": 1,
+ "id": "ic-sensor.ams.i2c",
+ "name": "IC Sensor — I2C — AMS",
+ "category_path": [
+  "IC",
+  "Sensor"
+ ],
+ "description": "Cluster of 3 surface-mount I2C sensor ICs featuring AMS LGA-10 and OLGA-8 footprints for gas and optical sensing applications.",
+ "selection_hints": [
+  "Choose between gas sensor (CCS811) and optical sensors (AS7341DLG, AS7343xDLG) based on application.",
+  "Select matching footprint: AMS_LGA-10-1EP_2.7x4mm_P0.6mm or AMS_OLGA-8_2x3.1mm_P0.8mm.",
+  "Prefer tier A part CCS811 when higher quality tiering is required."
+ ],
+ "avoid_when": [
+  "The design requires non-SMD mounting types such as through-hole.",
+  "The required component uses a communication interface other than I2C.",
+  "The required footprint is not an AMS OLGA-8 or LGA-10 package."
+ ],
+ "keywords": [
+  "ic",
+  "sensor",
+  "i2c",
+  "ams",
+  "smd",
+  "gas sensor",
+  "optical sensor",
+  "ccs811",
+  "as7341dlg",
+  "as7343xdlg",
+  "olga-8",
+  "lga-10",
+  "olga",
+  "optical",
+  "channel",
+  "spectral",
+  "gas",
+  "digital",
+  "p0",
+  "lga",
+  "multi",
+  "2x3",
+  "1mm",
+  "8mm"
+ ],
+ "facts": {
+  "package_family": "AMS",
+  "facets": [
+   "I2C"
+  ],
+  "mounts": [
+   "smd"
+  ],
+  "footprints": [
+   "AMS_OLGA-8_2x3.1mm_P0.8mm",
+   "AMS_LGA-10-1EP_2.7x4mm_P0.6mm"
+  ],
+  "sources": {
+   "kicad-symbols": 3
+  }
+ },
+ "quality": {
+  "part_count": 3,
+  "planner_visible_count": 3,
+  "tier_counts": {
+   "A": 1,
+   "B": 2
+  },
+  "review_status": "ai_generated"
+ },
+ "representative_parts": [
+  {
+   "id": "kicad-symbols/Sensor_Gas/CCS811",
+   "name": "CCS811",
+   "tier": "A",
+   "score": 100,
+   "footprint": "AMS_LGA-10-1EP_2.7x4mm_P0.6mm",
+   "why": "tier A, score 100, AMS_LGA-10-1EP_2.7x4mm_P0.6mm"
+  },
+  {
+   "id": "kicad-symbols/Sensor_Optical/AS7341DLG",
+   "name": "AS7341DLG",
+   "tier": "B",
+   "score": 100,
+   "footprint": "AMS_OLGA-8_2x3.1mm_P0.8mm",
+   "why": "tier B, score 100, AMS_OLGA-8_2x3.1mm_P0.8mm"
+  },
+  {
+   "id": "kicad-symbols/Sensor_Optical/AS7343xDLG",
+   "name": "AS7343xDLG",
+   "tier": "B",
+   "score": 100,
+   "footprint": "AMS_OLGA-8_2x3.1mm_P0.8mm",
+   "why": "tier B, score 100, AMS_OLGA-8_2x3.1mm_P0.8mm"
+  }
+ ],
+ "part_ids": [
+  "kicad-symbols/Sensor_Gas/CCS811",
+  "kicad-symbols/Sensor_Optical/AS7341DLG",
+  "kicad-symbols/Sensor_Optical/AS7343xDLG"
+ ],
+ "embedding_text": "ic-sensor.ams.i2c | IC Sensor | Cluster of 3 surface-mount I2C sensor ICs featuring AMS LGA-10 and OLGA-8 footprints for gas and optical sensing applications. | ic sensor i2c ams smd gas sensor optical sensor ccs811 as7341dlg as7343xdlg olga-8 lga-10 olga optical channel spectral gas digital p0 lga multi 2x3 1mm 8mm | AMS | I2C",
+ "class": "ic.sensor"
+}

@@ -1,0 +1,97 @@
+{
+ "schema": 1,
+ "id": "ic-power-switching.msop.buck.60v",
+ "name": "IC Power Switching Regulator — buck, 60V — MSOP",
+ "category_path": [
+  "IC",
+  "Power",
+  "Switching Regulator"
+ ],
+ "description": "SMD buck switching regulator IC cluster rated for 60V operation in MSOP packages with exposed pad footprints.",
+ "selection_hints": [
+  "Select for 60V buck switching regulator applications requiring MSOP surface-mount packages.",
+  "Choose between 10-pin and 16-pin MSOP exposed pad package footprint options.",
+  "Prefer Tier A entries with validated KiCad symbol definitions."
+ ],
+ "avoid_when": [
+  "The circuit design requires a switching regulator topology other than buck.",
+  "A package family other than surface-mount MSOP is required.",
+  "Required electrical specifications beyond the 60V buck facet are not verified in part datasheets."
+ ],
+ "keywords": [
+  "ic",
+  "power",
+  "switching regulator",
+  "buck",
+  "60v",
+  "msop",
+  "smd",
+  "msop-16-1ep",
+  "msop-10-1ep",
+  "lt3988",
+  "tps54260dgq",
+  "step-down",
+  "regulator",
+  "switching",
+  "dc",
+  "step",
+  "down",
+  "dual",
+  "1a",
+  "with",
+  "1ep",
+  "p0",
+  "5mm",
+  "so"
+ ],
+ "facts": {
+  "package_family": "MSOP",
+  "facets": [
+   "buck",
+   "60V"
+  ],
+  "mounts": [
+   "smd"
+  ],
+  "footprints": [
+   "MSOP-16-1EP_3x4.039mm_P0.5mm_EP1.651x2.845mm",
+   "MSOP-10-1EP_3x3mm_P0.5mm_EP2.2x3.1mm_Mask1.83x1.89mm_ThermalVias"
+  ],
+  "sources": {
+   "kicad-symbols": 2
+  }
+ },
+ "quality": {
+  "part_count": 2,
+  "planner_visible_count": 2,
+  "tier_counts": {
+   "A": 1,
+   "B": 1
+  },
+  "review_status": "ai_generated"
+ },
+ "representative_parts": [
+  {
+   "id": "kicad-symbols/Regulator_Switching/LT3988",
+   "name": "LT3988",
+   "tier": "A",
+   "score": 100,
+   "footprint": "MSOP-16-1EP_3x4.039mm_P0.5mm_EP1.651x2.845mm",
+   "why": "tier A, score 100, MSOP-16-1EP_3x4.039mm_P0.5mm_EP1.651x2.845mm"
+  },
+  {
+   "id": "kicad-symbols/Regulator_Switching/TPS54260DGQ",
+   "name": "TPS54260DGQ",
+   "tier": "B",
+   "score": 100,
+   "footprint": "MSOP-10-1EP_3x3mm_P0.5mm_EP2.2x3.1mm_Mask1.83x1.89mm_ThermalVias",
+   "why": "tier B, score 100, MSOP-10-1EP_3x3mm_P0.5mm_EP2.2x3.1mm_Mask1.83x1.89mm_ThermalVias"
+  }
+ ],
+ "part_ids": [
+  "kicad-symbols/Regulator_Switching/LT3988",
+  "kicad-symbols/Regulator_Switching/TPS54260DGQ"
+ ],
+ "embedding_text": "ic-power-switching.msop.buck.60v | IC Power Switching Regulator | SMD buck switching regulator IC cluster rated for 60V operation in MSOP packages with exposed pad footprints. | ic power switching regulator buck 60v msop smd msop-16-1ep msop-10-1ep lt3988 tps54260dgq step-down regulator switching dc step down dual 1a with 1ep p0 5mm so | MSOP | buck 60V",
+ "class": "ic.power.switching"
+}

@@ -1,0 +1,141 @@
+{
+ "schema": 1,
+ "id": "connector.header",
+ "name": "Connector — HEADER",
+ "category_path": [
+  "Connector"
+ ],
+ "description": "Header-family connectors (single/double-row male pin headers, ~1.0-1.3mm variants) spanning SMD, through-hole and unspecified mount types, drawn mostly from a third-party Altium library plus a few legacy parts.",
+ "selection_hints": [
+  "Match the exact footprint name (e.g. Header 1x2+1 1.0mm vs 1.3mm) to the intended land pattern",
+  "Confirm mount type (smd vs through_hole) matches the board process",
+  "Prefer tier B representative parts over the many tier C entries when available",
+  "Verify pin count and row layout (1x2, 1x3, 1x4, 2x2, 1x10) against the schematic connector"
+ ],
+ "avoid_when": [
+  "The design needs a specific pitch or dimension not confirmed by the footprint name",
+  "A female/socket or non-header connector style is required",
+  "Mount type must be strictly smd or strictly through_hole but the part's mount is listed as unknown",
+  "Part must come from a trusted/reviewed source rather than the generated, mostly tier C cluster"
+ ],
+ "keywords": [
+  "header",
+  "connector",
+  "pin header",
+  "male header",
+  "1x2",
+  "1x3",
+  "1x4",
+  "1x10",
+  "2x2",
+  "1.0mm pitch",
+  "1.3mm pitch",
+  "smd header",
+  "through hole header",
+  "single row",
+  "dual row",
+  "idc",
+  "pcb header",
+  "board connector",
+  "male",
+  "pitch",
+  "pad",
+  "pins",
+  "mm",
+  "through"
+ ],
+ "facts": {
+  "package_family": "HEADER",
+  "facets": [],
+  "mounts": [
+   "smd",
+   "through_hole",
+   "unknown"
+  ],
+  "footprints": [
+   "HEADER",
+   "Header 1x2+1 1.0mm",
+   "Header 1x2+1 1.3mm",
+   "Header 1x3+1 1.3mm",
+   "HEADER_1",
+   "Header 1x1 long",
+   "Header 1x2",
+   "Header 1x2 long",
+   "HEADER 2x2",
+   "Header 1x10 male",
+   "Header 1x3 male",
+   "Header 1x4 male"
+  ],
+  "sources": {
+   "matthiasbock-altium-libraries": 25,
+   "dist-legacy": 3
+  }
+ },
+ "quality": {
+  "part_count": 28,
+  "planner_visible_count": 3,
+  "tier_counts": {
+   "B": 3,
+   "C": 25
+  },
+  "review_status": "ai_generated"
+ },
+ "representative_parts": [
+  {
+   "id": "dist-legacy/HEADER 2 BIG",
+   "name": "HEADER_2_BIG",
+   "tier": "B",
+   "score": 80,
+   "footprint": "HEADER",
+   "why": "tier B, score 80, HEADER"
+  },
+  {
+   "id": "matthiasbock-altium-libraries/Header 1x2+1 1.0mm/Header_1x2_1_1.0mm",
+   "name": "Header_1x2_1_1.0mm",
+   "tier": "B",
+   "score": 72,
+   "footprint": "Header 1x2+1 1.0mm",
+   "why": "tier B, score 72, Header 1x2+1 1.0mm"
+  },
+  {
+   "id": "matthiasbock-altium-libraries/Header 1x2+1 1.3mm/Header_1x2_1_1.3mm",
+   "name": "Header_1x2_1_1.3mm",
+   "tier": "B",
+   "score": 72,
+   "footprint": "Header 1x2+1 1.3mm",
+   "why": "tier B, score 72, Header 1x2+1 1.3mm"
+  }
+ ],
+ "part_ids": [
+  "dist-legacy/HEADER 2 BIG",
+  "matthiasbock-altium-libraries/Header 1x2+1 1.0mm/Header_1x2_1_1.0mm",
+  "matthiasbock-altium-libraries/Header 1x2+1 1.3mm/Header_1x2_1_1.3mm",
+  "dist-legacy/HEADER 3 BIG",
+  "matthiasbock-altium-libraries/Header 1x3+1 1.3mm/Header_1x3_1_1.3mm",
+  "dist-legacy/HEADER_1",
+  "matthiasbock-altium-libraries/Header 1x1 long/Header_1x1_long",
+  "matthiasbock-altium-libraries/Header 1x2/Header_1x2",
+  "matthiasbock-altium-libraries/Header 1x2 long/Header_1x2_long",
+  "matthiasbock-altium-libraries/HEADER 2x2/HEADER_2x2",
+  "matthiasbock-altium-libraries/Header 1x10 male/Header_1x10_male",
+  "matthiasbock-altium-libraries/Header 1x3 male/Header_1x3_male",
+  "matthiasbock-altium-libraries/Header 1x4 male/Header_1x4_male",
+  "matthiasbock-altium-libraries/Header 1x4 male rightangle/Header_1x4_male_rightangle",
+  "matthiasbock-altium-libraries/Header 1x5 male/Header_1x5_male",
+  "matthiasbock-altium-libraries/Header 1x6 male/Header_1x6_male",
+  "matthiasbock-altium-libraries/Header 1x7 male/Header_1x7_male",
+  "matthiasbock-altium-libraries/Header 1x8 male/Header_1x8_male",
+  "matthiasbock-altium-libraries/Header 2.00 2x9/Header_2.00_2x9",
+  "matthiasbock-altium-libraries/Header 2.00 2x9 SMD/Header_2.00_2x9_SMD",
+  "matthiasbock-altium-libraries/Header 2x10/Header_2x10",
+  "matthiasbock-altium-libraries/Header 2x5 IDC/Header_2x5_IDC",
+  "matthiasbock-altium-libraries/Header 2x5 IDC SMD/Header_2x5_IDC_SMD",
+  "matthiasbock-altium-libraries/Header 2x5 male/Header_2x5_male",
+  "matthiasbock-altium-libraries/Header 2x5 male rightangle/Header_2x5_male_rightangle",
+  "matthiasbock-altium-libraries/Header 2x7 IDC SMD/Header_2x7_IDC_SMD",
+  "matthiasbock-altium-libraries/Header 2x7 octagons/Header_2x7_octagons",
+  "matthiasbock-altium-libraries/Header 2.00 2x10/Header_2.00_2x10"
+ ],
+ "embedding_text": "connector.header | Connector | Header-family connectors (single/double-row male pin headers, ~1.0-1.3mm variants) spanning SMD, through-hole and unspecified mount types, drawn mostly from a third-party Altium library plus a few legacy parts. | header connector pin header male header 1x2 1x3 1x4 1x10 2x2 1.0mm pitch 1.3mm pitch smd header through hole header single row dual row idc pcb header board connector male pitch pad pins mm through | HEADER | ",
+ "class": "connector"
+}

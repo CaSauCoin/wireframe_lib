@@ -1,0 +1,94 @@
+{
+ "schema": 1,
+ "id": "ic.qfp.i2c",
+ "name": "IC — I2C — QFP",
+ "category_path": [
+  "IC"
+ ],
+ "description": "Integrated circuit cluster of surface-mount I2C devices in QFP packages with 64-pin exposed pad footprint variants.",
+ "selection_hints": [
+  "Match part requirements for I2C interface functionality in surface-mount QFP packages.",
+  "Check required exposed pad dimensions, such as EP5.305x5.305mm or EP8x8mm.",
+  "Select between available audio (ES9028PRO) or video (TFP410PAP) integrated circuits."
+ ],
+ "avoid_when": [
+  "The design requires non-SMD mounting or packages other than QFP/TQFP.",
+  "The target part does not use a 64-pin TQFP footprint with an exposed thermal pad.",
+  "Interfaces other than I2C are required."
+ ],
+ "keywords": [
+  "ic",
+  "i2c",
+  "qfp",
+  "tqfp",
+  "smd",
+  "tqfp-64",
+  "tqfp-64-1ep",
+  "thermal vias",
+  "exposed pad",
+  "es9028pro",
+  "tfp410pap",
+  "audio",
+  "video",
+  "kicad-symbols",
+  "texas",
+  "channel",
+  "interface",
+  "1ep",
+  "10x10mm",
+  "p0",
+  "5mm",
+  "thermalvias",
+  "ess",
+  "digital"
+ ],
+ "facts": {
+  "package_family": "QFP",
+  "facets": [
+   "I2C"
+  ],
+  "mounts": [
+   "smd"
+  ],
+  "footprints": [
+   "TQFP-64-1EP_10x10mm_P0.5mm_EP5.305x5.305mm_ThermalVias",
+   "Texas_TQFP-64-1EP_10x10mm_P0.5mm_EP8x8mm_Mask5x5mm_ThermalVias"
+  ],
+  "sources": {
+   "kicad-symbols": 2
+  }
+ },
+ "quality": {
+  "part_count": 2,
+  "planner_visible_count": 2,
+  "tier_counts": {
+   "A": 1,
+   "B": 1
+  },
+  "review_status": "ai_generated"
+ },
+ "representative_parts": [
+  {
+   "id": "kicad-symbols/Audio/ES9028PRO",
+   "name": "ES9028PRO",
+   "tier": "A",
+   "score": 100,
+   "footprint": "TQFP-64-1EP_10x10mm_P0.5mm_EP5.305x5.305mm_ThermalVias",
+   "why": "tier A, score 100, TQFP-64-1EP_10x10mm_P0.5mm_EP5.305x5.305mm_ThermalVias"
+  },
+  {
+   "id": "kicad-symbols/Video/TFP410PAP",
+   "name": "TFP410PAP",
+   "tier": "B",
+   "score": 100,
+   "footprint": "Texas_TQFP-64-1EP_10x10mm_P0.5mm_EP8x8mm_Mask5x5mm_ThermalVias",
+   "why": "tier B, score 100, Texas_TQFP-64-1EP_10x10mm_P0.5mm_EP8x8mm_Mask5x5mm_ThermalVias"
+  }
+ ],
+ "part_ids": [
+  "kicad-symbols/Audio/ES9028PRO",
+  "kicad-symbols/Video/TFP410PAP"
+ ],
+ "embedding_text": "ic.qfp.i2c | IC | Integrated circuit cluster of surface-mount I2C devices in QFP packages with 64-pin exposed pad footprint variants. | ic i2c qfp tqfp smd tqfp-64 tqfp-64-1ep thermal vias exposed pad es9028pro tfp410pap audio video kicad-symbols texas channel interface 1ep 10x10mm p0 5mm thermalvias ess digital | QFP | I2C",
+ "class": "ic"
+}

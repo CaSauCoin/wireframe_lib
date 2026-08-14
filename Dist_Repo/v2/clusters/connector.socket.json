@@ -1,0 +1,67 @@
+{
+ "schema": 1,
+ "id": "connector.socket",
+ "name": "Connector — SOCKET",
+ "category_path": [
+  "Connector"
+ ],
+ "description": "Cluster of 2 SOCKET-family connector parts (SOCKET-32, SOCKET-44 footprints) from legacy sources, all tier C with unreviewed generated metadata and unknown mount type.",
+ "selection_hints": [
+  "Match the exact footprint (SOCKET-32 vs SOCKET-44) to the required pin count",
+  "Verify mount type manually since it is not recorded as known",
+  "Review part details before use since quality tier is C and review status is generated"
+ ],
+ "avoid_when": [
+  "A verified or higher-quality-tier connector part is required",
+  "Mount type (through-hole, SMD, etc.) must be confirmed and cannot be manually checked",
+  "A footprint other than SOCKET-32 or SOCKET-44 is needed",
+  "Reviewed/validated source data is required instead of generated legacy data"
+ ],
+ "keywords": [
+  "socket",
+  "connector",
+  "socket-32",
+  "socket-44",
+  "32 pin",
+  "44 pin",
+  "ic socket",
+  "chip socket",
+  "legacy connector",
+  "tier c",
+  "generated metadata",
+  "unknown mount",
+  "pad",
+  "mm",
+  "pitch",
+  "pins"
+ ],
+ "facts": {
+  "package_family": "SOCKET",
+  "facets": [],
+  "mounts": [
+   "unknown"
+  ],
+  "footprints": [
+   "SOCKET-32",
+   "SOCKET-44"
+  ],
+  "sources": {
+   "dist-legacy": 2
+  }
+ },
+ "quality": {
+  "part_count": 2,
+  "planner_visible_count": 0,
+  "tier_counts": {
+   "C": 2
+  },
+  "review_status": "ai_generated"
+ },
+ "representative_parts": [],
+ "part_ids": [
+  "dist-legacy/SOCKET-32",
+  "dist-legacy/SOCKET-44"
+ ],
+ "embedding_text": "connector.socket | Connector | Cluster of 2 SOCKET-family connector parts (SOCKET-32, SOCKET-44 footprints) from legacy sources, all tier C with unreviewed generated metadata and unknown mount type. | socket connector socket-32 socket-44 32 pin 44 pin ic socket chip socket legacy connector tier c generated metadata unknown mount pad mm pitch pins | SOCKET | ",
+ "class": "connector"
+}

@@ -1,0 +1,93 @@
+{
+ "schema": 1,
+ "id": "ic-sensor.ssop.spi",
+ "name": "IC Sensor — SPI — SSOP",
+ "category_path": [
+  "IC",
+  "Sensor"
+ ],
+ "description": "Surface-mount IC sensor cluster featuring SPI communication in SSOP packages, including SSOP-16 and SSOP-20 footprint options.",
+ "selection_hints": [
+  "Select when requiring an SMD sensor IC using an SPI interface in an SSOP package.",
+  "Choose between SSOP-16 (5.3x6.2mm, P0.65mm) and SSOP-20 (5.3x7.2mm, P0.65mm) footprint variants.",
+  "Use for tier A parts sourced from KiCad symbols including AS5045B and MAX31865xAP."
+ ],
+ "avoid_when": [
+  "Do not use if the design requires a package family other than SSOP.",
+  "Avoid when non-SMD (through-hole) mounting is required.",
+  "Avoid if an interface other than SPI is required."
+ ],
+ "keywords": [
+  "ic",
+  "sensor",
+  "spi",
+  "ssop",
+  "smd",
+  "ssop-16",
+  "ssop-20",
+  "as5045b",
+  "max31865xap",
+  "ic sensor",
+  "kicad symbols",
+  "0.65mm pitch",
+  "magnetic",
+  "output",
+  "2mm",
+  "p0",
+  "65mm",
+  "so",
+  "temperature",
+  "rtd",
+  "position",
+  "bit",
+  "pwm"
+ ],
+ "facts": {
+  "package_family": "SSOP",
+  "facets": [
+   "SPI"
+  ],
+  "mounts": [
+   "smd"
+  ],
+  "footprints": [
+   "SSOP-16_5.3x6.2mm_P0.65mm",
+   "SSOP-20_5.3x7.2mm_P0.65mm"
+  ],
+  "sources": {
+   "kicad-symbols": 2
+  }
+ },
+ "quality": {
+  "part_count": 2,
+  "planner_visible_count": 2,
+  "tier_counts": {
+   "A": 2
+  },
+  "review_status": "ai_generated"
+ },
+ "representative_parts": [
+  {
+   "id": "kicad-symbols/Sensor_Magnetic/AS5045B",
+   "name": "AS5045B",
+   "tier": "A",
+   "score": 100,
+   "footprint": "SSOP-16_5.3x6.2mm_P0.65mm",
+   "why": "tier A, score 100, SSOP-16_5.3x6.2mm_P0.65mm"
+  },
+  {
+   "id": "kicad-symbols/Sensor_Temperature/MAX31865xAP",
+   "name": "MAX31865xAP",
+   "tier": "A",
+   "score": 100,
+   "footprint": "SSOP-20_5.3x7.2mm_P0.65mm",
+   "why": "tier A, score 100, SSOP-20_5.3x7.2mm_P0.65mm"
+  }
+ ],
+ "part_ids": [
+  "kicad-symbols/Sensor_Magnetic/AS5045B",
+  "kicad-symbols/Sensor_Temperature/MAX31865xAP"
+ ],
+ "embedding_text": "ic-sensor.ssop.spi | IC Sensor | Surface-mount IC sensor cluster featuring SPI communication in SSOP packages, including SSOP-16 and SSOP-20 footprint options. | ic sensor spi ssop smd ssop-16 ssop-20 as5045b max31865xap ic sensor kicad symbols 0.65mm pitch magnetic output 2mm p0 65mm so temperature rtd position bit pwm | SSOP | SPI",
+ "class": "ic.sensor"
+}

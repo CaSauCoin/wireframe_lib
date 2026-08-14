@@ -1,0 +1,130 @@
+{
+ "schema": 1,
+ "id": "ic.dip.i2c",
+ "name": "IC — I2C — DIP",
+ "category_path": [
+  "IC"
+ ],
+ "description": "This cluster contains 9 I2C integrated circuit parts provided in DIP footprints for through-hole mounting.",
+ "selection_hints": [
+  "Select based on the required DIP footprint variant, such as DIP-8, DIP-18, DIP-28, or DIP-40.",
+  "Prefer quality tier A parts over tier B parts when available.",
+  "Verify footprint dimensions against the selected part source."
+ ],
+ "avoid_when": [
+  "The PCB design requires surface-mount packaging rather than DIP through-hole.",
+  "The circuit design does not utilize an I2C interface.",
+  "A footprint outside the listed DIP options is required."
+ ],
+ "keywords": [
+  "ic",
+  "i2c",
+  "dip",
+  "through_hole",
+  "dip-8",
+  "dip-18",
+  "dip-28",
+  "dip-40",
+  "ds1307",
+  "mcp23008",
+  "mcp23017",
+  "mcp23018",
+  "atmega324p",
+  "integrated circuit",
+  "clock",
+  "real",
+  "time",
+  "dip8",
+  "interface",
+  "rtc",
+  "expanders",
+  "pin",
+  "an",
+  "and"
+ ],
+ "facts": {
+  "package_family": "DIP",
+  "facets": [
+   "I2C"
+  ],
+  "mounts": [
+   "through_hole",
+   "unknown"
+  ],
+  "footprints": [
+   "DIP_8",
+   "DIP-28_W7.62mm",
+   "DIP-8_W7.62mm",
+   "DIP-18_W7.62mm",
+   "DIP_40DW"
+  ],
+  "sources": {
+   "chilaboard-altium-library": 5,
+   "digikey-kicad-library": 4
+  }
+ },
+ "quality": {
+  "part_count": 9,
+  "planner_visible_count": 9,
+  "tier_counts": {
+   "A": 4,
+   "B": 5
+  },
+  "review_status": "ai_generated"
+ },
+ "representative_parts": [
+  {
+   "id": "digikey-kicad-library/dk_Clock-Timing-Real-Time-Clocks/DS1307_",
+   "name": "DS1307_",
+   "tier": "A",
+   "score": 100,
+   "footprint": "DIP-8_W7.62mm",
+   "why": "tier A, score 100, DIP-8_W7.62mm"
+  },
+  {
+   "id": "digikey-kicad-library/dk_Interface-I-O-Expanders/MCP23008-E_P",
+   "name": "MCP23008-E_P",
+   "tier": "A",
+   "score": 100,
+   "footprint": "DIP-18_W7.62mm",
+   "why": "tier A, score 100, DIP-18_W7.62mm"
+  },
+  {
+   "id": "digikey-kicad-library/dk_Interface-I-O-Expanders/MCP23017-E_SP",
+   "name": "MCP23017-E_SP",
+   "tier": "A",
+   "score": 100,
+   "footprint": "DIP-28_W7.62mm",
+   "why": "tier A, score 100, DIP-28_W7.62mm"
+  },
+  {
+   "id": "digikey-kicad-library/dk_Interface-I-O-Expanders/MCP23018-E_SP",
+   "name": "MCP23018-E_SP",
+   "tier": "A",
+   "score": 100,
+   "footprint": "DIP-28_W7.62mm",
+   "why": "tier A, score 100, DIP-28_W7.62mm"
+  },
+  {
+   "id": "chilaboard-altium-library/ATMEGA324P_DIP40/ATMEGA324P_DIP40",
+   "name": "ATMEGA324P_DIP40",
+   "tier": "B",
+   "score": 80,
+   "footprint": "DIP_40DW",
+   "why": "tier B, score 80, DIP_40DW"
+  }
+ ],
+ "part_ids": [
+  "digikey-kicad-library/dk_Clock-Timing-Real-Time-Clocks/DS1307_",
+  "digikey-kicad-library/dk_Interface-I-O-Expanders/MCP23008-E_P",
+  "digikey-kicad-library/dk_Interface-I-O-Expanders/MCP23017-E_SP",
+  "digikey-kicad-library/dk_Interface-I-O-Expanders/MCP23018-E_SP",
+  "chilaboard-altium-library/ATMEGA324P_DIP40/ATMEGA324P_DIP40",
+  "chilaboard-altium-library/DS1307_DIP8/DS1307_DIP8",
+  "chilaboard-altium-library/DS1307_DIP8C/DS1307_DIP8C",
+  "chilaboard-altium-library/DS1337_DIP8/DS1337_DIP8",
+  "chilaboard-altium-library/MCP7940_DIP8/MCP7940_DIP8"
+ ],
+ "embedding_text": "ic.dip.i2c | IC | This cluster contains 9 I2C integrated circuit parts provided in DIP footprints for through-hole mounting. | ic i2c dip through_hole dip-8 dip-18 dip-28 dip-40 ds1307 mcp23008 mcp23017 mcp23018 atmega324p integrated circuit clock real time dip8 interface rtc expanders pin an and | DIP | I2C",
+ "class": "ic"
+}

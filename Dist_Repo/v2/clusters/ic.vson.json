@@ -1,0 +1,100 @@
+{
+ "schema": 1,
+ "id": "ic.vson",
+ "name": "IC — VSON",
+ "category_path": [
+  "IC"
+ ],
+ "description": "Surface-mount integrated circuit cluster in VSON package variants featuring 8-pin, 10-pin, and 14-pin footprints with exposed pads and optional thermal vias.",
+ "selection_hints": [
+  "Verify exact pin count (8, 10, or 14 pin) and pitch (0.5mm or 0.65mm).",
+  "Match thermal pad dimensions and check whether thermal vias are required.",
+  "Prefer Tier A entries like TPS3430WDRC when fully verified parts are needed."
+ ],
+ "avoid_when": [
+  "The target design requires through-hole mounting rather than SMD.",
+  "The required board footprint is outside the VSON package family.",
+  "A different pin count, pin pitch, or exposed thermal pad dimension is required."
+ ],
+ "keywords": [
+  "vson",
+  "smd",
+  "ic",
+  "vson-8",
+  "vson-10",
+  "vson-14",
+  "exposed pad",
+  "thermal vias",
+  "0.5mm pitch",
+  "0.65mm pitch",
+  "tps3430wdrc",
+  "power supervisor",
+  "vson package",
+  "p0",
+  "1ep",
+  "ep1",
+  "3x3mm",
+  "5mm",
+  "65x2",
+  "4mm",
+  "thermalvias",
+  "65mm",
+  "pitch",
+  "package"
+ ],
+ "facts": {
+  "package_family": "VSON",
+  "facets": [],
+  "mounts": [
+   "smd"
+  ],
+  "footprints": [
+   "VSON-10-1EP_3x3mm_P0.5mm_EP1.65x2.4mm",
+   "VSON-10-1EP_3x3mm_P0.5mm_EP1.2x2mm",
+   "VSON-10-1EP_3x3mm_P0.5mm_EP1.65x2.4mm_ThermalVias",
+   "VSON-14-1EP_3x4.45mm_P0.65mm_EP1.6x4.2mm",
+   "VSON-8-1EP_3x3mm_P0.65mm_EP1.65x2.4mm",
+   "VSON-10-1EP_3x3mm_P0.5mm_EP1.2x2mm_ThermalVias",
+   "VSON-14-1EP_3x4.45mm_P0.65mm_EP1.6x4.2mm_ThermalVias",
+   "VSON-8-1EP_3x3mm_P0.65mm_EP1.65x2.4mm_ThermalVias",
+   "VSON-8_1.5x2mm_P0.5mm"
+  ],
+  "sources": {
+   "dist-legacy": 9,
+   "kicad-symbols": 1
+  }
+ },
+ "quality": {
+  "part_count": 10,
+  "planner_visible_count": 1,
+  "tier_counts": {
+   "A": 1,
+   "C": 9
+  },
+  "review_status": "ai_generated"
+ },
+ "representative_parts": [
+  {
+   "id": "kicad-symbols/Power_Supervisor/TPS3430WDRC",
+   "name": "TPS3430WDRC",
+   "tier": "A",
+   "score": 100,
+   "footprint": "VSON-10-1EP_3x3mm_P0.5mm_EP1.65x2.4mm",
+   "why": "tier A, score 100, VSON-10-1EP_3x3mm_P0.5mm_EP1.65x2.4mm"
+  }
+ ],
+ "part_ids": [
+  "kicad-symbols/Power_Supervisor/TPS3430WDRC",
+  "dist-legacy/VSON-10-1EP_3x3mm_P0.5mm_EP1.2x2mm",
+  "dist-legacy/VSON-10-1EP_3x3mm_P0.5mm_EP1.65x2.4mm_ThermalVias",
+  "dist-legacy/VSON-10-1EP_3x3mm_P0.5mm_EP1.65x2.4mm",
+  "dist-legacy/VSON-14-1EP_3x4.45mm_P0.65mm_EP1.6x4.2mm",
+  "dist-legacy/VSON-8-1EP_3x3mm_P0.65mm_EP1.65x2.4mm",
+  "dist-legacy/VSON-10-1EP_3x3mm_P0.5mm_EP1.2x2mm_ThermalVias",
+  "dist-legacy/VSON-14-1EP_3x4.45mm_P0.65mm_EP1.6x4.2mm_ThermalVias",
+  "dist-legacy/VSON-8-1EP_3x3mm_P0.65mm_EP1.65x2.4mm_ThermalVias",
+  "dist-legacy/VSON-8_1.5x2mm_P0.5mm"
+ ],
+ "embedding_text": "ic.vson | IC | Surface-mount integrated circuit cluster in VSON package variants featuring 8-pin, 10-pin, and 14-pin footprints with exposed pads and optional thermal vias. | vson smd ic vson-8 vson-10 vson-14 exposed pad thermal vias 0.5mm pitch 0.65mm pitch tps3430wdrc power supervisor vson package p0 1ep ep1 3x3mm 5mm 65x2 4mm thermalvias 65mm pitch package | VSON | ",
+ "class": "ic"
+}

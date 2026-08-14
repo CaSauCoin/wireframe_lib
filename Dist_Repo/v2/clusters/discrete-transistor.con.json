@@ -1,0 +1,83 @@
+{
+ "schema": 1,
+ "id": "discrete-transistor.con",
+ "name": "Discrete Transistor — CON",
+ "category_path": [
+  "Discrete",
+  "Transistor"
+ ],
+ "description": "Discrete transistor cluster containing 2 parts with CON and CON_3P footprints from dist-legacy.",
+ "selection_hints": [
+  "Select when requiring a discrete transistor with a CON or CON_3P footprint.",
+  "Prefer the tier B representative part CON_MIC2 over tier C entries.",
+  "Verify footprint suitability for CON or CON_3P land patterns."
+ ],
+ "avoid_when": [
+  "Do not use if the design requires package footprints other than CON or CON_3P.",
+  "Avoid if higher quality tier parts (such as Tier A) are required.",
+  "Avoid when explicit mounting type information is required."
+ ],
+ "keywords": [
+  "discrete transistor",
+  "discrete",
+  "transistor",
+  "con",
+  "con_3p",
+  "mic2",
+  "con_mic2",
+  "dist-legacy",
+  "discrete.transistor",
+  "con footprint",
+  "3p",
+  "pin",
+  "bipolar",
+  "three",
+  "junction",
+  "with",
+  "base",
+  "collector",
+  "and",
+  "emitter",
+  "terminals",
+  "bjt"
+ ],
+ "facts": {
+  "package_family": "CON",
+  "facets": [],
+  "mounts": [
+   "unknown"
+  ],
+  "footprints": [
+   "CON",
+   "CON_3P"
+  ],
+  "sources": {
+   "dist-legacy": 2
+  }
+ },
+ "quality": {
+  "part_count": 2,
+  "planner_visible_count": 1,
+  "tier_counts": {
+   "B": 1,
+   "C": 1
+  },
+  "review_status": "ai_generated"
+ },
+ "representative_parts": [
+  {
+   "id": "dist-legacy/CON MIC2",
+   "name": "CON_MIC2",
+   "tier": "B",
+   "score": 90,
+   "footprint": "CON",
+   "why": "tier B, score 90, CON"
+  }
+ ],
+ "part_ids": [
+  "dist-legacy/CON MIC2",
+  "dist-legacy/CON_3P"
+ ],
+ "embedding_text": "discrete-transistor.con | Discrete Transistor | Discrete transistor cluster containing 2 parts with CON and CON_3P footprints from dist-legacy. | discrete transistor discrete transistor con con_3p mic2 con_mic2 dist-legacy discrete.transistor con footprint 3p pin bipolar three junction with base collector and emitter terminals bjt | CON | ",
+ "class": "discrete.transistor"
+}

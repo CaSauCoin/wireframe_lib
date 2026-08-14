@@ -1,0 +1,96 @@
+{
+ "schema": 1,
+ "id": "ic.sma",
+ "name": "IC — SMA",
+ "category_path": [
+  "IC"
+ ],
+ "description": "EDA IC component cluster containing 7 parts with SMA package family footprints and through-hole or unknown mounting options.",
+ "selection_hints": [
+  "Select when requiring IC parts within the SMA package family.",
+  "Verify specific footprint requirements including right-angle, vertical, or end-launch variants.",
+  "Check part quality tier (tier B or tier C) and source provenance."
+ ],
+ "avoid_when": [
+  "Do not use when the PCB layout requires footprint families other than SMA.",
+  "Avoid if higher tier quality parts than tier B or C are required.",
+  "Avoid if through-hole or unknown mounting types are unsuitable for the design."
+ ],
+ "keywords": [
+  "ic",
+  "sma",
+  "sma package",
+  "through hole",
+  "sma-endlaunch",
+  "sma-ra",
+  "sma-ra2",
+  "sma-v",
+  "mmcx",
+  "ssmc",
+  "dist-legacy",
+  "chilaboard",
+  "endlaunch",
+  "pad",
+  "mm",
+  "pitch",
+  "pins",
+  "ra",
+  "ra2",
+  "single",
+  "pin",
+  "component",
+  "or",
+  "terminal"
+ ],
+ "facts": {
+  "package_family": "SMA",
+  "facets": [],
+  "mounts": [
+   "through_hole",
+   "unknown"
+  ],
+  "footprints": [
+   "SMA",
+   "SMA-ENDLAUNCH",
+   "SMA-RA",
+   "SMA-RA2",
+   "SMA-V",
+   "SMA_ENDLAUNCH",
+   "SMA_MMCX_SSMC"
+  ],
+  "sources": {
+   "dist-legacy": 6,
+   "chilaboard-altium-library": 1
+  }
+ },
+ "quality": {
+  "part_count": 7,
+  "planner_visible_count": 1,
+  "tier_counts": {
+   "B": 1,
+   "C": 6
+  },
+  "review_status": "ai_generated"
+ },
+ "representative_parts": [
+  {
+   "id": "dist-legacy/SMA S-2452-6",
+   "name": "SMA_S-2452-6",
+   "tier": "B",
+   "score": 80,
+   "footprint": "SMA",
+   "why": "tier B, score 80, SMA"
+  }
+ ],
+ "part_ids": [
+  "dist-legacy/SMA S-2452-6",
+  "dist-legacy/SMA-ENDLAUNCH",
+  "dist-legacy/SMA-RA",
+  "dist-legacy/SMA-RA2",
+  "dist-legacy/SMA-V",
+  "dist-legacy/SMA_ENDLAUNCH",
+  "chilaboard-altium-library/SMA_MMCX_SSMC/SMA_MMCX_SSMC"
+ ],
+ "embedding_text": "ic.sma | IC | EDA IC component cluster containing 7 parts with SMA package family footprints and through-hole or unknown mounting options. | ic sma sma package through hole sma-endlaunch sma-ra sma-ra2 sma-v mmcx ssmc dist-legacy chilaboard endlaunch pad mm pitch pins ra ra2 single pin component or terminal | SMA | ",
+ "class": "ic"
+}

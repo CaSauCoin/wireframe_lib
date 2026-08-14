@@ -1,0 +1,76 @@
+{
+ "schema": 1,
+ "id": "ic.vol",
+ "name": "IC — VOL",
+ "category_path": [
+  "IC"
+ ],
+ "description": "IC cluster containing four parts in the VOL package family using footprints such as VOL_SMD, VOL_SMD2, VOL_X2, and VOL_DUAL.",
+ "selection_hints": [
+  "Select when requiring IC parts with VOL family footprints including VOL_SMD, VOL_SMD2, VOL_X2, or VOL_DUAL.",
+  "Verify part suitability given through-hole and unknown mount classifications.",
+  "Note that all four parts are currently in quality tier C."
+ ],
+ "avoid_when": [
+  "Avoid when the PCB design requires package footprints outside the VOL family.",
+  "Do not use if planner-visible components are required, as planner visible count is zero.",
+  "Avoid if tier C quality classification is not acceptable for the project."
+ ],
+ "keywords": [
+  "vol",
+  "ic",
+  "vol_smd",
+  "vol_smd2",
+  "vol_x2",
+  "vol_dual",
+  "through hole",
+  "package family vol",
+  "tier c",
+  "dist legacy",
+  "smd",
+  "smd2",
+  "x2",
+  "dual",
+  "pad",
+  "mm",
+  "pitch",
+  "pins",
+  "through",
+  "hole"
+ ],
+ "facts": {
+  "package_family": "VOL",
+  "facets": [],
+  "mounts": [
+   "through_hole",
+   "unknown"
+  ],
+  "footprints": [
+   "VOL_SMD",
+   "VOL_SMD2",
+   "VOL_X2",
+   "VOL_DUAL"
+  ],
+  "sources": {
+   "dist-legacy": 3,
+   "chilaboard-altium-library": 1
+  }
+ },
+ "quality": {
+  "part_count": 4,
+  "planner_visible_count": 0,
+  "tier_counts": {
+   "C": 4
+  },
+  "review_status": "ai_generated"
+ },
+ "representative_parts": [],
+ "part_ids": [
+  "dist-legacy/VOL_SMD",
+  "dist-legacy/VOL_SMD2",
+  "dist-legacy/VOL_X2",
+  "chilaboard-altium-library/VOL_DUAL/VOL_DUAL"
+ ],
+ "embedding_text": "ic.vol | IC | IC cluster containing four parts in the VOL package family using footprints such as VOL_SMD, VOL_SMD2, VOL_X2, and VOL_DUAL. | vol ic vol_smd vol_smd2 vol_x2 vol_dual through hole package family vol tier c dist legacy smd smd2 x2 dual pad mm pitch pins through hole | VOL | ",
+ "class": "ic"
+}

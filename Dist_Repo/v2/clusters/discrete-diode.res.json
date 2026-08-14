@@ -1,0 +1,128 @@
+{
+ "schema": 1,
+ "id": "discrete-diode.res",
+ "name": "Discrete Diode — RES",
+ "category_path": [
+  "Discrete",
+  "Diode"
+ ],
+ "description": "Cluster of 12 discrete diode parts (dist-legacy source) that share RES land patterns instead of diode-specific footprints; metadata is auto-generated and unreviewed, so verify footprint and rating before use.",
+ "selection_hints": [
+  "Match the exact RES footprint variant (e.g. 0402_1005, 0603_1608, or RF variant) to your PCB pad geometry",
+  "Prefer tier B parts (9 of 12) over tier C when available",
+  "Confirm mount type manually since it is recorded as unknown",
+  "Check planner-visible parts (9 of 12) first before considering hidden entries"
+ ],
+ "avoid_when": [
+  "A diode-specific footprint is required rather than a generic RES land pattern",
+  "Mount type (SMD vs THT) must be confirmed and cannot be verified as unknown",
+  "Reviewed/validated metadata is required, since review_status is 'generated'",
+  "Electrical ratings (voltage, current, speed) are not stated for the candidate part"
+ ],
+ "keywords": [
+  "discrete diode",
+  "res footprint",
+  "res land pattern",
+  "diode res",
+  "0201",
+  "0603",
+  "0402",
+  "1005",
+  "1608",
+  "rf variant",
+  "dist-legacy",
+  "generic footprint",
+  "unknown mount",
+  "tier b",
+  "tier c",
+  "generated metadata",
+  "unreviewed part",
+  "smd diode footprint",
+  "res",
+  "diode",
+  "metric",
+  "rf",
+  "surface",
+  "mount"
+ ],
+ "facts": {
+  "package_family": "RES",
+  "facets": [],
+  "mounts": [
+   "unknown"
+  ],
+  "footprints": [
+   "RES"
+  ],
+  "sources": {
+   "dist-legacy": 12
+  }
+ },
+ "quality": {
+  "part_count": 12,
+  "planner_visible_count": 9,
+  "tier_counts": {
+   "B": 9,
+   "C": 3
+  },
+  "review_status": "ai_generated"
+ },
+ "representative_parts": [
+  {
+   "id": "dist-legacy/RES 0201_0603",
+   "name": "RES_0201_0603",
+   "tier": "B",
+   "score": 90,
+   "footprint": "RES",
+   "why": "tier B, score 90, RES"
+  },
+  {
+   "id": "dist-legacy/RES 0402_1005",
+   "name": "RES_0402_1005",
+   "tier": "B",
+   "score": 90,
+   "footprint": "RES",
+   "why": "tier B, score 90, RES"
+  },
+  {
+   "id": "dist-legacy/RES 0402_1005 RF",
+   "name": "RES_0402_1005_RF",
+   "tier": "B",
+   "score": 90,
+   "footprint": "RES",
+   "why": "tier B, score 90, RES"
+  },
+  {
+   "id": "dist-legacy/RES 0603_1608",
+   "name": "RES_0603_1608",
+   "tier": "B",
+   "score": 90,
+   "footprint": "RES",
+   "why": "tier B, score 90, RES"
+  },
+  {
+   "id": "dist-legacy/RES 0603_1608 RF",
+   "name": "RES_0603_1608_RF",
+   "tier": "B",
+   "score": 90,
+   "footprint": "RES",
+   "why": "tier B, score 90, RES"
+  }
+ ],
+ "part_ids": [
+  "dist-legacy/RES 0201_0603",
+  "dist-legacy/RES 0402_1005",
+  "dist-legacy/RES 0402_1005 RF",
+  "dist-legacy/RES 0603_1608",
+  "dist-legacy/RES 0603_1608 RF",
+  "dist-legacy/RES 0805_2012",
+  "dist-legacy/RES 0805_2012 RF",
+  "dist-legacy/RES 1206_3216",
+  "dist-legacy/RES 1206_3216 RF",
+  "dist-legacy/RES 1210_3225",
+  "dist-legacy/RES 2512_6432",
+  "dist-legacy/RES"
+ ],
+ "embedding_text": "discrete-diode.res | Discrete Diode | Cluster of 12 discrete diode parts (dist-legacy source) that share RES land patterns instead of diode-specific footprints; metadata is auto-generated and unreviewed, so verify footprint and rating before use. | discrete diode res footprint res land pattern diode res 0201 0603 0402 1005 1608 rf variant dist-legacy generic footprint unknown mount tier b tier c generated metadata unreviewed part smd diode footprint res diode metric rf surface mount | RES | ",
+ "class": "discrete.diode"
+}

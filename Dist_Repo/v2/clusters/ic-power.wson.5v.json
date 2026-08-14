@@ -1,0 +1,90 @@
+{
+ "schema": 1,
+ "id": "ic-power.wson.5v",
+ "name": "IC Power — 5V — WSON",
+ "category_path": [
+  "IC",
+  "Power"
+ ],
+ "description": "Cluster of 5V surface-mount power ICs in WSON packages featuring Tier A parts LM2775DSG and TPS60151DRV.",
+ "selection_hints": [
+  "Select when a 5V surface-mount power IC in a WSON package family is required.",
+  "Choose between WSON-8-1EP and WSON-6-1EP footprint options with thermal vias.",
+  "Use when selecting Tier A parts LM2775DSG or TPS60151DRV."
+ ],
+ "avoid_when": [
+  "Do not use when board layout requires package families other than WSON.",
+  "Avoid if mounting method is not surface mount (SMD).",
+  "Avoid if target voltage facet is not 5V."
+ ],
+ "keywords": [
+  "ic",
+  "power",
+  "5v",
+  "wson",
+  "smd",
+  "lm2775dsg",
+  "tps60151drv",
+  "regulator",
+  "switchedcapacitor",
+  "thermalvias",
+  "wson-8-1ep",
+  "wson-6-1ep",
+  "charge",
+  "pump",
+  "1ep",
+  "2x2mm",
+  "p0",
+  "6mm",
+  "200ma",
+  "5mm"
+ ],
+ "facts": {
+  "package_family": "WSON",
+  "facets": [
+   "5V"
+  ],
+  "mounts": [
+   "smd"
+  ],
+  "footprints": [
+   "WSON-8-1EP_2x2mm_P0.5mm_EP0.9x1.6mm_ThermalVias",
+   "WSON-6-1EP_2x2mm_P0.65mm_EP1x1.6mm_ThermalVias"
+  ],
+  "sources": {
+   "kicad-symbols": 2
+  }
+ },
+ "quality": {
+  "part_count": 2,
+  "planner_visible_count": 2,
+  "tier_counts": {
+   "A": 2
+  },
+  "review_status": "ai_generated"
+ },
+ "representative_parts": [
+  {
+   "id": "kicad-symbols/Regulator_SwitchedCapacitor/LM2775DSG",
+   "name": "LM2775DSG",
+   "tier": "A",
+   "score": 100,
+   "footprint": "WSON-8-1EP_2x2mm_P0.5mm_EP0.9x1.6mm_ThermalVias",
+   "why": "tier A, score 100, WSON-8-1EP_2x2mm_P0.5mm_EP0.9x1.6mm_ThermalVias"
+  },
+  {
+   "id": "kicad-symbols/Regulator_SwitchedCapacitor/TPS60151DRV",
+   "name": "TPS60151DRV",
+   "tier": "A",
+   "score": 100,
+   "footprint": "WSON-6-1EP_2x2mm_P0.65mm_EP1x1.6mm_ThermalVias",
+   "why": "tier A, score 100, WSON-6-1EP_2x2mm_P0.65mm_EP1x1.6mm_ThermalVias"
+  }
+ ],
+ "part_ids": [
+  "kicad-symbols/Regulator_SwitchedCapacitor/LM2775DSG",
+  "kicad-symbols/Regulator_SwitchedCapacitor/TPS60151DRV"
+ ],
+ "embedding_text": "ic-power.wson.5v | IC Power | Cluster of 5V surface-mount power ICs in WSON packages featuring Tier A parts LM2775DSG and TPS60151DRV. | ic power 5v wson smd lm2775dsg tps60151drv regulator switchedcapacitor thermalvias wson-8-1ep wson-6-1ep charge pump 1ep 2x2mm p0 6mm 200ma 5mm | WSON | 5V",
+ "class": "ic.power"
+}

@@ -1,0 +1,132 @@
+{
+ "schema": 1,
+ "id": "discrete-diode.d.32v",
+ "name": "Discrete Diode — 32V — D",
+ "category_path": [
+  "Discrete",
+  "Diode"
+ ],
+ "description": "Cluster of 8 tier-A discrete diode parts sharing a 32V facet and D-family footprints, covering TVS, diac, and variable-capacitance diode types across DO-35, MiniMELF, P600, and SOD-523 packages.",
+ "selection_hints": [
+  "Match device type (TVS, diac, or variable-capacitance) to the required circuit function.",
+  "Confirm the exact footprint (DO-35, MiniMELF, P600, SOD-523) matches the intended land pattern.",
+  "Choose SMD or through-hole mount based on the assembly process.",
+  "All parts are tier A but review_status is 'generated'; verify symbol-footprint pairing before committing a PCB."
+ ],
+ "avoid_when": [
+  "The circuit needs a diode type not present in this cluster (e.g. a standard rectifier or Schottky).",
+  "A footprint outside the listed D-family options is required.",
+  "The symbol-footprint pairing has not been manually verified.",
+  "SMD or through-hole mount availability doesn't match the target assembly process."
+ ],
+ "keywords": [
+  "diode",
+  "tvs diode",
+  "diac",
+  "variable capacitance diode",
+  "varicap",
+  "32v",
+  "do-35",
+  "sod27",
+  "minimelf",
+  "sod-523",
+  "p600",
+  "zener",
+  "horizontal",
+  "through hole",
+  "smd",
+  "discrete",
+  "kicad",
+  "d package",
+  "tvs",
+  "do",
+  "akl",
+  "alternate",
+  "library",
+  "capacitance"
+ ],
+ "facts": {
+  "package_family": "D",
+  "facets": [
+   "32V"
+  ],
+  "mounts": [
+   "smd",
+   "through_hole"
+  ],
+  "footprints": [
+   "D_DO-35_SOD27_P7.62mm_Horizontal",
+   "D_MiniMELF_TVS",
+   "D_P600_R-6_P12.70mm_Horizontal_Zener",
+   "D_P600_R-6_P12.70mm_Horizontal_TVS",
+   "D_DO-35_SOD27_P7.62mm_Horizontal_Diac",
+   "D_SOD-523"
+  ],
+  "sources": {
+   "Alternate-KiCad-Library": 7,
+   "kicad-symbols": 1
+  }
+ },
+ "quality": {
+  "part_count": 8,
+  "planner_visible_count": 8,
+  "tier_counts": {
+   "A": 8
+  },
+  "review_status": "ai_generated"
+ },
+ "representative_parts": [
+  {
+   "id": "kicad-symbols/Diode/DB3",
+   "name": "DB3",
+   "tier": "A",
+   "score": 100,
+   "footprint": "D_DO-35_SOD27_P7.62mm_Horizontal",
+   "why": "tier A, score 100, D_DO-35_SOD27_P7.62mm_Horizontal"
+  },
+  {
+   "id": "Alternate-KiCad-Library/Diode_TVS_AKL/20KPA32A",
+   "name": "20KPA32A",
+   "tier": "A",
+   "score": 100,
+   "footprint": "D_P600_R-6_P12.70mm_Horizontal_Zener",
+   "why": "tier A, score 100, D_P600_R-6_P12.70mm_Horizontal_Zener"
+  },
+  {
+   "id": "Alternate-KiCad-Library/Diode_TVS_AKL/20KPA32CA",
+   "name": "20KPA32CA",
+   "tier": "A",
+   "score": 100,
+   "footprint": "D_P600_R-6_P12.70mm_Horizontal_TVS",
+   "why": "tier A, score 100, D_P600_R-6_P12.70mm_Horizontal_TVS"
+  },
+  {
+   "id": "Alternate-KiCad-Library/Diode_Capacitance_AKL/BB329",
+   "name": "BB329",
+   "tier": "A",
+   "score": 100,
+   "footprint": "D_DO-35_SOD27_P7.62mm_Horizontal",
+   "why": "tier A, score 100, D_DO-35_SOD27_P7.62mm_Horizontal"
+  },
+  {
+   "id": "Alternate-KiCad-Library/Diac_AKL/DB3",
+   "name": "DB3",
+   "tier": "A",
+   "score": 100,
+   "footprint": "D_DO-35_SOD27_P7.62mm_Horizontal_Diac",
+   "why": "tier A, score 100, D_DO-35_SOD27_P7.62mm_Horizontal_Diac"
+  }
+ ],
+ "part_ids": [
+  "Alternate-KiCad-Library/Diode_TVS_AKL/20KPA32A",
+  "Alternate-KiCad-Library/Diode_TVS_AKL/20KPA32CA",
+  "Alternate-KiCad-Library/Diode_Capacitance_AKL/BB329",
+  "kicad-symbols/Diode/DB3",
+  "Alternate-KiCad-Library/Diac_AKL/DB3",
+  "Alternate-KiCad-Library/Diac_AKL/DLDB3",
+  "Alternate-KiCad-Library/Diode_Capacitance_AKL/HVC300A",
+  "Alternate-KiCad-Library/Diac_AKL/TMMDB3"
+ ],
+ "embedding_text": "discrete-diode.d.32v | Discrete Diode | Cluster of 8 tier-A discrete diode parts sharing a 32V facet and D-family footprints, covering TVS, diac, and variable-capacitance diode types across DO-35, MiniMELF, P600, and SOD-523 packages. | diode tvs diode diac variable capacitance diode varicap 32v do-35 sod27 minimelf sod-523 p600 zener horizontal through hole smd discrete kicad d package tvs do akl alternate library capacitance | D | 32V",
+ "class": "discrete.diode"
+}

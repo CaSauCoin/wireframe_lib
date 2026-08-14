@@ -1,0 +1,102 @@
+{
+ "schema": 1,
+ "id": "ic.m2",
+ "name": "IC — M2",
+ "category_path": [
+  "IC"
+ ],
+ "description": "IC cluster containing 7 parts in the M2 package family with surface-mount or unknown mounting and footprints including M2_MKEY, M2-KEY-B+M-2280, and M2-KEY-B-2280.",
+ "selection_hints": [
+  "Prefer Tier B parts over Tier C for higher quality scores.",
+  "Match the required footprint variant such as M2_MKEY, M2-KEY-B-2280, or M2-KEY-B+M-2280.",
+  "Verify the mounting requirement against SMD or unknown mount options."
+ ],
+ "avoid_when": [
+  "The board design requires a package family other than M2.",
+  "The design cannot accept Tier B or Tier C quality components.",
+  "A surface-mount or M2 key footprint is not applicable."
+ ],
+ "keywords": [
+  "ic",
+  "m2",
+  "m2 package",
+  "m2_mkey",
+  "m2-key-b+m-2280",
+  "m2-key-m-2280",
+  "m2-key-b-2242",
+  "m2-key-b-2280",
+  "smd",
+  "chilaboard",
+  "tier b",
+  "tier c",
+  "key",
+  "mkey",
+  "connector",
+  "pins",
+  "pad",
+  "mm",
+  "pitch",
+  "card",
+  "edge",
+  "pcie",
+  "socket",
+  "source"
+ ],
+ "facts": {
+  "package_family": "M2",
+  "facets": [],
+  "mounts": [
+   "smd",
+   "unknown"
+  ],
+  "footprints": [
+   "M2_MKEY",
+   "M2-KEY-B+M-2280",
+   "M2-KEY-M-2280",
+   "M2-KEY-B-2242",
+   "M2-KEY-B-2280"
+  ],
+  "sources": {
+   "dist-legacy": 4,
+   "chilaboard-altium-library": 3
+  }
+ },
+ "quality": {
+  "part_count": 7,
+  "planner_visible_count": 2,
+  "tier_counts": {
+   "B": 2,
+   "C": 5
+  },
+  "review_status": "ai_generated"
+ },
+ "representative_parts": [
+  {
+   "id": "chilaboard-altium-library/M.2_MKEY_SOURCE/M.2_MKEY_SOURCE",
+   "name": "M.2_MKEY_SOURCE",
+   "tier": "B",
+   "score": 79,
+   "footprint": "M2_MKEY",
+   "why": "tier B, score 79, M2_MKEY"
+  },
+  {
+   "id": "chilaboard-altium-library/M.2_MKEY_TARGET/M.2_MKEY_TARGET",
+   "name": "M.2_MKEY_TARGET",
+   "tier": "B",
+   "score": 79,
+   "footprint": "M2_MKEY",
+   "why": "tier B, score 79, M2_MKEY"
+  }
+ ],
+ "part_ids": [
+  "chilaboard-altium-library/M.2_MKEY_SOURCE/M.2_MKEY_SOURCE",
+  "chilaboard-altium-library/M.2_MKEY_TARGET/M.2_MKEY_TARGET",
+  "dist-legacy/M2-KEY-B+M-2280",
+  "dist-legacy/M2-KEY-M-2280",
+  "chilaboard-altium-library/M2_MKEY/M2_MKEY",
+  "dist-legacy/M2-KEY-B-2242",
+  "dist-legacy/M2-KEY-B-2280"
+ ],
+ "embedding_text": "ic.m2 | IC | IC cluster containing 7 parts in the M2 package family with surface-mount or unknown mounting and footprints including M2_MKEY, M2-KEY-B+M-2280, and M2-KEY-B-2280. | ic m2 m2 package m2_mkey m2-key-b+m-2280 m2-key-m-2280 m2-key-b-2242 m2-key-b-2280 smd chilaboard tier b tier c key mkey connector pins pad mm pitch card edge pcie socket source | M2 | ",
+ "class": "ic"
+}

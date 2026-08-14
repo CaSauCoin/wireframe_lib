@@ -1,0 +1,148 @@
+{
+ "schema": 1,
+ "id": "ic.qfn.usb",
+ "name": "IC — USB — QFN",
+ "category_path": [
+  "IC"
+ ],
+ "description": "This cluster contains 15 surface-mount USB integrated circuits packaged in QFN footprint variants across quality tiers A through C.",
+ "selection_hints": [
+  "Select Tier A or Tier B parts for higher quality scoring.",
+  "Match the specific QFN pin count, body size, pitch, and thermal pad footprint to the part requirements.",
+  "Confirm surface-mount (SMD) land pattern compatibility with the target package variant."
+ ],
+ "avoid_when": [
+  "The target design requires through-hole mounting or a package family other than QFN.",
+  "USB interface capabilities or related USB function facets are not required.",
+  "Component electrical parameters or exact pinout functions are not specified."
+ ],
+ "keywords": [
+  "ic",
+  "usb",
+  "qfn",
+  "smd",
+  "vqfn",
+  "wqfn",
+  "rp2040",
+  "stusb4500",
+  "bq24230rgt",
+  "tpd6s300a",
+  "mcp73871",
+  "surface mount",
+  "integrated circuit",
+  "thermalvias",
+  "microcontroller",
+  "1ep",
+  "p0",
+  "4x4mm",
+  "5mm",
+  "ep2",
+  "mcu",
+  "package",
+  "75x2",
+  "75mm"
+ ],
+ "facts": {
+  "package_family": "QFN",
+  "facets": [
+   "USB"
+  ],
+  "mounts": [
+   "smd"
+  ],
+  "footprints": [
+   "QFN32G-0.5-5X5MM",
+   "QFN50_32T",
+   "QFN-56-1EP_7x7mm_P0.4mm_EP3.2x3.2mm_ThermalVias",
+   "QFN-24-1EP_4x4mm_P0.5mm_EP2.6x2.6mm",
+   "VQFN-16-1EP_3x3mm_P0.5mm_EP1.68x1.68mm_ThermalVias",
+   "QFN-20-1EP_4x4mm",
+   "WQFN-20-1EP_3x3mm_P0.4mm_EP1.7x1.7mm_ThermalVias",
+   "QFN50_64T",
+   "QFN44G-0.5-7X7MM",
+   "QFN50_44T",
+   "QFN40_76T",
+   "QFN-24-1EP_4x4mm_P0.5mm_EP2.75x2.75mm"
+  ],
+  "sources": {
+   "chilaboard-altium-library": 5,
+   "Seeed-OPL-Kicad-Library": 3,
+   "kicad-symbols": 2,
+   "dist-legacy": 2,
+   "JLCPCB-Kicad-Library": 1,
+   "SparkFun-KiCad-Libraries": 1,
+   "digikey-kicad-library": 1
+  }
+ },
+ "quality": {
+  "part_count": 15,
+  "planner_visible_count": 13,
+  "tier_counts": {
+   "A": 2,
+   "B": 11,
+   "C": 2
+  },
+  "review_status": "ai_generated"
+ },
+ "representative_parts": [
+  {
+   "id": "JLCPCB-Kicad-Library/JLCPCB-Extended/MCU, RP2040",
+   "name": "MCU, RP2040",
+   "tier": "A",
+   "score": 100,
+   "footprint": "QFN-56-1EP_7x7mm_P0.4mm_EP3.2x3.2mm_ThermalVias",
+   "why": "tier A, score 100, QFN-56-1EP_7x7mm_P0.4mm_EP3.2x3.2mm_ThermalVias"
+  },
+  {
+   "id": "SparkFun-KiCad-Libraries/SparkFun-IC-Power/STUSB4500",
+   "name": "STUSB4500",
+   "tier": "A",
+   "score": 100,
+   "footprint": "QFN-24-1EP_4x4mm_P0.5mm_EP2.6x2.6mm",
+   "why": "tier A, score 100, QFN-24-1EP_4x4mm_P0.5mm_EP2.6x2.6mm"
+  },
+  {
+   "id": "kicad-symbols/Power_Management/BQ24230RGT",
+   "name": "BQ24230RGT",
+   "tier": "B",
+   "score": 100,
+   "footprint": "VQFN-16-1EP_3x3mm_P0.5mm_EP1.68x1.68mm_ThermalVias",
+   "why": "tier B, score 100, VQFN-16-1EP_3x3mm_P0.5mm_EP1.68x1.68mm_ThermalVias"
+  },
+  {
+   "id": "kicad-symbols/Power_Protection/TPD6S300A",
+   "name": "TPD6S300A",
+   "tier": "B",
+   "score": 100,
+   "footprint": "WQFN-20-1EP_3x3mm_P0.4mm_EP1.7x1.7mm_ThermalVias",
+   "why": "tier B, score 100, WQFN-20-1EP_3x3mm_P0.4mm_EP1.7x1.7mm_ThermalVias"
+  },
+  {
+   "id": "digikey-kicad-library/dk_PMIC-Battery-Chargers/MCP73871-2CCI_ML",
+   "name": "MCP73871-2CCI_ML",
+   "tier": "B",
+   "score": 100,
+   "footprint": "QFN-20-1EP_4x4mm",
+   "why": "tier B, score 100, QFN-20-1EP_4x4mm"
+  }
+ ],
+ "part_ids": [
+  "JLCPCB-Kicad-Library/JLCPCB-Extended/MCU, RP2040",
+  "SparkFun-KiCad-Libraries/SparkFun-IC-Power/STUSB4500",
+  "kicad-symbols/Power_Management/BQ24230RGT",
+  "digikey-kicad-library/dk_PMIC-Battery-Chargers/MCP73871-2CCI_ML",
+  "kicad-symbols/Power_Protection/TPD6S300A",
+  "Seeed-OPL-Kicad-Library/OPL_Integrated_Circuit/CONTROLLER-ATMEGA16U2-MU_QFN32_",
+  "chilaboard-altium-library/LAN9514_QFN64/LAN9514_QFN64",
+  "Seeed-OPL-Kicad-Library/OPL_Integrated_Circuit/MCU-ATMEGA32U4-MUR_VQFN44_",
+  "Seeed-OPL-Kicad-Library/OPL_Integrated_Circuit/MCU-LPC11U35FHI33_501_QFN32_",
+  "chilaboard-altium-library/ATMEGA16U2_QFN32/ATMEGA16U2_QFN32",
+  "chilaboard-altium-library/ATMEGA16U4_QFN44/ATMEGA16U4_QFN44",
+  "chilaboard-altium-library/ATMEGA32U2_QFN32/ATMEGA32U2_QFN32",
+  "chilaboard-altium-library/FT601Q_QFN76/FT601Q_QFN76",
+  "dist-legacy/QFN-24-1EP_4x4mm_P0.5mm_EP2.75x2.75mm",
+  "dist-legacy/QFN-24-1EP_4x4mm_P0.5mm_EP2.75x2.75mm_ThermalVias"
+ ],
+ "embedding_text": "ic.qfn.usb | IC | This cluster contains 15 surface-mount USB integrated circuits packaged in QFN footprint variants across quality tiers A through C. | ic usb qfn smd vqfn wqfn rp2040 stusb4500 bq24230rgt tpd6s300a mcp73871 surface mount integrated circuit thermalvias microcontroller 1ep p0 4x4mm 5mm ep2 mcu package 75x2 75mm | QFN | USB",
+ "class": "ic"
+}

@@ -1,0 +1,123 @@
+{
+ "schema": 1,
+ "id": "power-supply.qfn.usb",
+ "name": "Power Power Supply — USB — QFN",
+ "category_path": [
+  "Power",
+  "Power Supply"
+ ],
+ "description": "Surface-mount USB power supply components in QFN and VQFN packages with exposed pads from KiCad symbols.",
+ "selection_hints": [
+  "Match the required package footprint, such as VQFN-16 (3x3mm) or QFN-20 (4x4mm) with exposed pads.",
+  "Prioritize tier A parts like ADP5063 over tier B parts when available.",
+  "Verify part-specific requirements among variants such as the BQ2407x series."
+ ],
+ "avoid_when": [
+  "The circuit design requires through-hole components or non-QFN packaging.",
+  "The application does not involve USB power supply functions.",
+  "The PCB manufacturing process cannot accommodate exposed bottom pads."
+ ],
+ "keywords": [
+  "power supply",
+  "usb",
+  "qfn",
+  "vqfn",
+  "smd",
+  "battery management",
+  "adp5063",
+  "bq24072rgt",
+  "bq24073rgt",
+  "bq24074rgt",
+  "bq24075rgt",
+  "exposed pad",
+  "kicad",
+  "power",
+  "battery",
+  "management",
+  "charger",
+  "5mm",
+  "path",
+  "and",
+  "1ep",
+  "p0",
+  "nolead",
+  "supply"
+ ],
+ "facts": {
+  "package_family": "QFN",
+  "facets": [
+   "USB"
+  ],
+  "mounts": [
+   "smd"
+  ],
+  "footprints": [
+   "VQFN-16-1EP_3x3mm_P0.5mm_EP1.6x1.6mm",
+   "QFN-20-1EP_4x4mm_P0.5mm_EP2.5x2.5mm"
+  ],
+  "sources": {
+   "kicad-symbols": 6
+  }
+ },
+ "quality": {
+  "part_count": 6,
+  "planner_visible_count": 6,
+  "tier_counts": {
+   "A": 1,
+   "B": 5
+  },
+  "review_status": "ai_generated"
+ },
+ "representative_parts": [
+  {
+   "id": "kicad-symbols/Battery_Management/ADP5063",
+   "name": "ADP5063",
+   "tier": "A",
+   "score": 100,
+   "footprint": "QFN-20-1EP_4x4mm_P0.5mm_EP2.5x2.5mm",
+   "why": "tier A, score 100, QFN-20-1EP_4x4mm_P0.5mm_EP2.5x2.5mm"
+  },
+  {
+   "id": "kicad-symbols/Battery_Management/BQ24072RGT",
+   "name": "BQ24072RGT",
+   "tier": "B",
+   "score": 100,
+   "footprint": "VQFN-16-1EP_3x3mm_P0.5mm_EP1.6x1.6mm",
+   "why": "tier B, score 100, VQFN-16-1EP_3x3mm_P0.5mm_EP1.6x1.6mm"
+  },
+  {
+   "id": "kicad-symbols/Battery_Management/BQ24073RGT",
+   "name": "BQ24073RGT",
+   "tier": "B",
+   "score": 100,
+   "footprint": "VQFN-16-1EP_3x3mm_P0.5mm_EP1.6x1.6mm",
+   "why": "tier B, score 100, VQFN-16-1EP_3x3mm_P0.5mm_EP1.6x1.6mm"
+  },
+  {
+   "id": "kicad-symbols/Battery_Management/BQ24074RGT",
+   "name": "BQ24074RGT",
+   "tier": "B",
+   "score": 100,
+   "footprint": "VQFN-16-1EP_3x3mm_P0.5mm_EP1.6x1.6mm",
+   "why": "tier B, score 100, VQFN-16-1EP_3x3mm_P0.5mm_EP1.6x1.6mm"
+  },
+  {
+   "id": "kicad-symbols/Battery_Management/BQ24075RGT",
+   "name": "BQ24075RGT",
+   "tier": "B",
+   "score": 100,
+   "footprint": "VQFN-16-1EP_3x3mm_P0.5mm_EP1.6x1.6mm",
+   "why": "tier B, score 100, VQFN-16-1EP_3x3mm_P0.5mm_EP1.6x1.6mm"
+  }
+ ],
+ "part_ids": [
+  "kicad-symbols/Battery_Management/ADP5063",
+  "kicad-symbols/Battery_Management/BQ24072RGT",
+  "kicad-symbols/Battery_Management/BQ24073RGT",
+  "kicad-symbols/Battery_Management/BQ24074RGT",
+  "kicad-symbols/Battery_Management/BQ24075RGT",
+  "kicad-symbols/Battery_Management/BQ24079RGT"
+ ],
+ "embedding_text": "power-supply.qfn.usb | Power Power Supply | Surface-mount USB power supply components in QFN and VQFN packages with exposed pads from KiCad symbols. | power supply usb qfn vqfn smd battery management adp5063 bq24072rgt bq24073rgt bq24074rgt bq24075rgt exposed pad kicad power battery management charger 5mm path and 1ep p0 nolead supply | QFN | USB",
+ "class": "power.supply"
+}

@@ -1,0 +1,129 @@
+{
+ "schema": 1,
+ "id": "connector.bnc",
+ "name": "Connector — BNC",
+ "category_path": [
+  "Connector"
+ ],
+ "description": "Cluster of 8 through-hole BNC coaxial connector parts (6 tier B, 2 tier C, no tier A) spanning panel-mount vertical, right-angle, horizontal, and TE Connectivity footprints, mostly from kicad-symbols.",
+ "selection_hints": [
+  "Match the exact footprint needed (panel-mount vertical, RA, horizontal, or TE Connectivity 1478035/1478204) to the board layout",
+  "This cluster tops out at tier B — no tier A parts are present, so tier B is the best-quality option here",
+  "Cross-check source library (kicad-symbols, dist-legacy, SparkFun-KiCad-Libraries) for trust level",
+  "Review_status is 'generated', so verify the symbol-footprint pairing before committing to layout"
+ ],
+ "avoid_when": [
+  "A verified/reviewed (non-generated) part is required",
+  "The board needs an SMD or non-BNC connector package",
+  "Electrical ratings, pinout, or lifecycle data not present in these facts are required for the design",
+  "None of the listed footprints (PanelMountable_Vertical, Win_364A2x95_Horizontal, RA, TEConnectivity 1478035/1478204) fit the layout"
+ ],
+ "keywords": [
+  "bnc",
+  "bnc connector",
+  "coaxial connector",
+  "conn_coaxial",
+  "rf connector",
+  "panel mount",
+  "right angle",
+  "through hole connector",
+  "teconnectivity",
+  "vertical footprint",
+  "horizontal footprint",
+  "coax",
+  "kicad-symbols",
+  "pcb connector",
+  "connector cluster",
+  "connector",
+  "coaxial",
+  "sma",
+  "smb",
+  "smc",
+  "cinch",
+  "rca",
+  "lemo",
+  "vertical"
+ ],
+ "facts": {
+  "package_family": "BNC",
+  "facets": [],
+  "mounts": [
+   "through_hole"
+  ],
+  "footprints": [
+   "BNC_PanelMountable_Vertical",
+   "BNC_Win_364A2x95_Horizontal",
+   "BNC_RA",
+   "BNC_TEConnectivity_1478035_Horizontal",
+   "BNC_TEConnectivity_1478204_Vertical"
+  ],
+  "sources": {
+   "kicad-symbols": 5,
+   "dist-legacy": 2,
+   "SparkFun-KiCad-Libraries": 1
+  }
+ },
+ "quality": {
+  "part_count": 8,
+  "planner_visible_count": 6,
+  "tier_counts": {
+   "B": 6,
+   "C": 2
+  },
+  "review_status": "ai_generated"
+ },
+ "representative_parts": [
+  {
+   "id": "kicad-symbols/Connector/Conn_Coaxial",
+   "name": "Conn_Coaxial",
+   "tier": "B",
+   "score": 100,
+   "footprint": "BNC_PanelMountable_Vertical",
+   "why": "tier B, score 100, BNC_PanelMountable_Vertical"
+  },
+  {
+   "id": "kicad-symbols/Connector/Conn_Coaxial_Power",
+   "name": "Conn_Coaxial_Power",
+   "tier": "B",
+   "score": 100,
+   "footprint": "BNC_PanelMountable_Vertical",
+   "why": "tier B, score 100, BNC_PanelMountable_Vertical"
+  },
+  {
+   "id": "kicad-symbols/Connector/Conn_Coaxial_Small",
+   "name": "Conn_Coaxial_Small",
+   "tier": "B",
+   "score": 100,
+   "footprint": "BNC_PanelMountable_Vertical",
+   "why": "tier B, score 100, BNC_PanelMountable_Vertical"
+  },
+  {
+   "id": "kicad-symbols/Connector/Conn_Coaxial_x2",
+   "name": "Conn_Coaxial_x2",
+   "tier": "B",
+   "score": 100,
+   "footprint": "BNC_Win_364A2x95_Horizontal",
+   "why": "tier B, score 100, BNC_Win_364A2x95_Horizontal"
+  },
+  {
+   "id": "kicad-symbols/Connector/Conn_Coaxial_x2_Isolated",
+   "name": "Conn_Coaxial_x2_Isolated",
+   "tier": "B",
+   "score": 100,
+   "footprint": "BNC_RA",
+   "why": "tier B, score 100, BNC_RA"
+  }
+ ],
+ "part_ids": [
+  "kicad-symbols/Connector/Conn_Coaxial",
+  "SparkFun-KiCad-Libraries/SparkFun-RF/Conn_Coaxial",
+  "kicad-symbols/Connector/Conn_Coaxial_Power",
+  "kicad-symbols/Connector/Conn_Coaxial_Small",
+  "kicad-symbols/Connector/Conn_Coaxial_x2",
+  "kicad-symbols/Connector/Conn_Coaxial_x2_Isolated",
+  "dist-legacy/BNC_TEConnectivity_1478035_Horizontal",
+  "dist-legacy/BNC_TEConnectivity_1478204_Vertical"
+ ],
+ "embedding_text": "connector.bnc | Connector | Cluster of 8 through-hole BNC coaxial connector parts (6 tier B, 2 tier C, no tier A) spanning panel-mount vertical, right-angle, horizontal, and TE Connectivity footprints, mostly from kicad-symbols. | bnc bnc connector coaxial connector conn_coaxial rf connector panel mount right angle through hole connector teconnectivity vertical footprint horizontal footprint coax kicad-symbols pcb connector connector cluster connector coaxial sma smb smc cinch rca lemo vertical | BNC | ",
+ "class": "connector"
+}

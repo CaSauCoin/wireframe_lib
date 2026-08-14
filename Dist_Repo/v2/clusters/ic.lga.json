@@ -1,0 +1,114 @@
+{
+ "schema": 1,
+ "id": "ic.lga",
+ "name": "IC — LGA",
+ "category_path": [
+  "IC"
+ ],
+ "description": "Cluster of 12 integrated circuit parts utilizing Land Grid Array (LGA) surface-mount package footprints.",
+ "selection_hints": [
+  "Select when an integrated circuit requiring a Land Grid Array (LGA) surface-mount footprint is needed.",
+  "Match specific LGA footprint variants, pin counts, package sizes, and pin pitches to your PCB layout.",
+  "Prefer Tier B quality parts (such as BMP280 or VL6180XV0NR_1) over Tier C entries."
+ ],
+ "avoid_when": [
+  "Avoid if the design requires non-LGA packages or through-hole mounting.",
+  "Avoid when the required footprint pin count or dimension is not present in the LGA footprint list.",
+  "Avoid if Tier C entries or unknown mount types fail to meet project standards."
+ ],
+ "keywords": [
+  "lga",
+  "ic",
+  "land grid array",
+  "smd",
+  "surface mount",
+  "bmp280",
+  "vl6180",
+  "lga-8",
+  "lga-12",
+  "lga-14",
+  "lga-16",
+  "lga-24l",
+  "lga-28",
+  "p0",
+  "5mm",
+  "pitch",
+  "8mm",
+  "layoutborder3x4y",
+  "pad",
+  "mm",
+  "pins",
+  "3x3mm",
+  "surface",
+  "mount"
+ ],
+ "facts": {
+  "package_family": "LGA",
+  "facets": [],
+  "mounts": [
+   "smd",
+   "unknown"
+  ],
+  "footprints": [
+   "LGA-8_2x2.5mm_BMP280",
+   "LGA-12_4.8x2.8_VL6180",
+   "LGA-14_2x2mm_P0.35mm_LayoutBorder3x4y",
+   "LGA-14_3x2.5mm_P0.5mm_LayoutBorder3x4y",
+   "LGA-16_3x3mm_P0.5mm",
+   "LGA-16_4x4mm_P0.65mm_LayoutBorder4x4y",
+   "LGA-24L_3x3.5mm_P0.43mm",
+   "LGA-28_5.2x3.8mm_P0.5mm",
+   "LGA-14_3x5mm_P0.8mm_LayoutBorder1x6y",
+   "LGA-16_3x3mm_P0.5mm_LayoutBorder3x5y",
+   "LGA_CC-14-1_ADI",
+   "LGA-8_8x6.2mm_P1.27mm"
+  ],
+  "sources": {
+   "dist-legacy": 10,
+   "digikey-kicad-library": 2
+  }
+ },
+ "quality": {
+  "part_count": 12,
+  "planner_visible_count": 2,
+  "tier_counts": {
+   "B": 2,
+   "C": 10
+  },
+  "review_status": "ai_generated"
+ },
+ "representative_parts": [
+  {
+   "id": "digikey-kicad-library/dk_Pressure-Sensors-Transducers/BMP280",
+   "name": "BMP280",
+   "tier": "B",
+   "score": 100,
+   "footprint": "LGA-8_2x2.5mm_BMP280",
+   "why": "tier B, score 100, LGA-8_2x2.5mm_BMP280"
+  },
+  {
+   "id": "digikey-kicad-library/dk_Optical-Sensors-Ambient-Light-IR-UV-Sensors/VL6180XV0NR_1",
+   "name": "VL6180XV0NR_1",
+   "tier": "B",
+   "score": 95,
+   "footprint": "LGA-12_4.8x2.8_VL6180",
+   "why": "tier B, score 95, LGA-12_4.8x2.8_VL6180"
+  }
+ ],
+ "part_ids": [
+  "digikey-kicad-library/dk_Pressure-Sensors-Transducers/BMP280",
+  "digikey-kicad-library/dk_Optical-Sensors-Ambient-Light-IR-UV-Sensors/VL6180XV0NR_1",
+  "dist-legacy/LGA-14_2x2mm_P0.35mm_LayoutBorder3x4y",
+  "dist-legacy/LGA-14_3x2.5mm_P0.5mm_LayoutBorder3x4y",
+  "dist-legacy/LGA-16_3x3mm_P0.5mm",
+  "dist-legacy/LGA-16_4x4mm_P0.65mm_LayoutBorder4x4y",
+  "dist-legacy/LGA-24L_3x3.5mm_P0.43mm",
+  "dist-legacy/LGA-28_5.2x3.8mm_P0.5mm",
+  "dist-legacy/LGA-14_3x5mm_P0.8mm_LayoutBorder1x6y",
+  "dist-legacy/LGA-16_3x3mm_P0.5mm_LayoutBorder3x5y",
+  "dist-legacy/LGA_CC-14-1_ADI",
+  "dist-legacy/LGA-8_8x6.2mm_P1.27mm"
+ ],
+ "embedding_text": "ic.lga | IC | Cluster of 12 integrated circuit parts utilizing Land Grid Array (LGA) surface-mount package footprints. | lga ic land grid array smd surface mount bmp280 vl6180 lga-8 lga-12 lga-14 lga-16 lga-24l lga-28 p0 5mm pitch 8mm layoutborder3x4y pad mm pins 3x3mm surface mount | LGA | ",
+ "class": "ic"
+}

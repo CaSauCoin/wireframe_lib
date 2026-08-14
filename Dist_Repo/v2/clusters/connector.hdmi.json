@@ -1,0 +1,134 @@
+{
+ "schema": 1,
+ "id": "connector.hdmi",
+ "name": "Connector — HDMI",
+ "category_path": [
+  "Connector"
+ ],
+ "description": "HDMI connector cluster (19 parts) covering Type A, Mini, and Micro footprints in SMD, through-hole, and unknown mount styles, including manufacturer-specific variants from Amphenol, Molex, Kycon, and Contact Technology.",
+ "selection_hints": [
+  "Match the exact HDMI variant footprint needed (Type A, Mini, Micro, or manufacturer-specific)",
+  "Prefer the 3 tier B parts (score 100, HDMI_A_19P_SMD footprint) over the 16 tier C parts",
+  "Confirm required mount style: smd, through_hole, or unknown",
+  "Cross-check source library (kicad-symbols, dist-legacy, chilaboard-altium-library, SparkFun) for trust level"
+ ],
+ "avoid_when": [
+  "The board needs a non-HDMI connector footprint",
+  "The exact HDMI variant (A vs Mini vs Micro) cannot be confirmed",
+  "Only tier C parts are available and footprint pairing is unverified",
+  "Mount type must be known but is listed as unknown"
+ ],
+ "keywords": [
+  "hdmi",
+  "hdmi connector",
+  "hdmi type a",
+  "hdmi mini",
+  "hdmi micro",
+  "smd",
+  "through hole",
+  "molex",
+  "amphenol",
+  "kycon",
+  "contact technology",
+  "19 pin",
+  "right angle",
+  "horizontal",
+  "vertical",
+  "kicad symbols",
+  "connector",
+  "micro",
+  "pitch",
+  "type",
+  "pad",
+  "mm",
+  "pins",
+  "right"
+ ],
+ "facts": {
+  "package_family": "HDMI",
+  "facets": [],
+  "mounts": [
+   "smd",
+   "through_hole",
+   "unknown"
+  ],
+  "footprints": [
+   "HDMI_A_19P_SMD",
+   "HDMI_MICRO",
+   "HDMI_A",
+   "HDMI_A_SCRW",
+   "HDMI_MICRO_SHT",
+   "HDMI_MICRO_SHTS",
+   "HDMI_MINI",
+   "HDMI",
+   "HDMI_A_Amphenol_10029449-x01xLF_Horizontal",
+   "HDMI_A_Contact_Technology_19APL2_Horizontal",
+   "HDMI_A_Kycon_KDMIX-SL1-NS-WS-B15_VerticalRightAngle",
+   "HDMI_A_Molex_208658-1001_Horizontal"
+  ],
+  "sources": {
+   "dist-legacy": 9,
+   "chilaboard-altium-library": 6,
+   "kicad-symbols": 3,
+   "SparkFun-KiCad-Libraries": 1
+  }
+ },
+ "quality": {
+  "part_count": 19,
+  "planner_visible_count": 3,
+  "tier_counts": {
+   "B": 3,
+   "C": 16
+  },
+  "review_status": "ai_generated"
+ },
+ "representative_parts": [
+  {
+   "id": "kicad-symbols/Connector/HDMI_A",
+   "name": "HDMI_A",
+   "tier": "B",
+   "score": 100,
+   "footprint": "HDMI_A_19P_SMD",
+   "why": "tier B, score 100, HDMI_A_19P_SMD"
+  },
+  {
+   "id": "kicad-symbols/Connector/HDMI_A_1.4",
+   "name": "HDMI_A_1.4",
+   "tier": "B",
+   "score": 100,
+   "footprint": "HDMI_A_19P_SMD",
+   "why": "tier B, score 100, HDMI_A_19P_SMD"
+  },
+  {
+   "id": "kicad-symbols/Connector/HDMI_D_1.4",
+   "name": "HDMI_D_1.4",
+   "tier": "B",
+   "score": 100,
+   "footprint": "HDMI_A_19P_SMD",
+   "why": "tier B, score 100, HDMI_A_19P_SMD"
+  }
+ ],
+ "part_ids": [
+  "kicad-symbols/Connector/HDMI_A",
+  "kicad-symbols/Connector/HDMI_A_1.4",
+  "kicad-symbols/Connector/HDMI_D_1.4",
+  "SparkFun-KiCad-Libraries/SparkFun-Connector/HDMI_A_19P_SMD",
+  "chilaboard-altium-library/HDMI_A/HDMI_A",
+  "chilaboard-altium-library/HDMI_A_SCRW/HDMI_A_SCRW",
+  "chilaboard-altium-library/HDMI_MICRO/HDMI_MICRO",
+  "chilaboard-altium-library/HDMI_MICRO_SHT/HDMI_MICRO_SHT",
+  "chilaboard-altium-library/HDMI_MICRO_SHTS/HDMI_MICRO_SHTS",
+  "chilaboard-altium-library/HDMI_MINI/HDMI_MINI",
+  "dist-legacy/HDMI",
+  "dist-legacy/HDMI_A_Amphenol_10029449-x01xLF_Horizontal",
+  "dist-legacy/HDMI_A_Contact_Technology_19APL2_Horizontal",
+  "dist-legacy/HDMI_A_Kycon_KDMIX-SL1-NS-WS-B15_VerticalRightAngle",
+  "dist-legacy/HDMI_A_Molex_208658-1001_Horizontal",
+  "dist-legacy/HDMI_MICRO",
+  "dist-legacy/HDMI_Micro-D_Molex_46765-0xxx",
+  "dist-legacy/HDMI_Micro-D_Molex_46765-1xxx",
+  "dist-legacy/HDMI_Micro-D_Molex_46765-2xxx"
+ ],
+ "embedding_text": "connector.hdmi | Connector | HDMI connector cluster (19 parts) covering Type A, Mini, and Micro footprints in SMD, through-hole, and unknown mount styles, including manufacturer-specific variants from Amphenol, Molex, Kycon, and Contact Technology. | hdmi hdmi connector hdmi type a hdmi mini hdmi micro smd through hole molex amphenol kycon contact technology 19 pin right angle horizontal vertical kicad symbols connector micro pitch type pad mm pins right | HDMI | ",
+ "class": "connector"
+}

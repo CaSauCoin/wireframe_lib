@@ -1,0 +1,113 @@
+{
+ "schema": 1,
+ "id": "power-supply.dfn",
+ "name": "Power Power Supply — DFN",
+ "category_path": [
+  "Power",
+  "Power Supply"
+ ],
+ "description": "Surface-mount power supply and battery management ICs in DFN packages with exposed pads.",
+ "selection_hints": [
+  "Match the required pin count and exact DFN package dimensions such as DFN-8, DFN-10, DFN-12, or DFN-14.",
+  "Verify the exposed pad (EP) dimensions and PCB footprint landing pattern.",
+  "Prioritize Tier A parts for higher library quality verification."
+ ],
+ "avoid_when": [
+  "A through-hole or non-DFN package is required by the board design.",
+  "Assembly processes cannot support surface-mount DFN packages with exposed pads.",
+  "The required power circuit function does not align with the available parts."
+ ],
+ "keywords": [
+  "power supply",
+  "battery management",
+  "dfn",
+  "smd",
+  "surface mount",
+  "dfn-8",
+  "dfn-10",
+  "dfn-12",
+  "dfn-14",
+  "exposed pad",
+  "power",
+  "ic",
+  "ltc4067ede",
+  "max17263xxte",
+  "mc34673",
+  "mcp73833",
+  "battery",
+  "management",
+  "ion",
+  "li",
+  "charger",
+  "1ep",
+  "p0",
+  "ep1"
+ ],
+ "facts": {
+  "package_family": "DFN",
+  "facets": [],
+  "mounts": [
+   "smd"
+  ],
+  "footprints": [
+   "DFN-12-1EP_3x4mm_P0.5mm_EP1.7x3.3mm",
+   "DFN-14-1EP_3x3mm_P0.4mm_EP1.78x2.35mm",
+   "DFN-8-1EP_3x2mm_P0.5mm_EP1.75x1.45mm",
+   "DFN-10-1EP_3x3mm_P0.5mm_EP1.58x2.35mm"
+  ],
+  "sources": {
+   "kicad-symbols": 4
+  }
+ },
+ "quality": {
+  "part_count": 4,
+  "planner_visible_count": 4,
+  "tier_counts": {
+   "A": 3,
+   "B": 1
+  },
+  "review_status": "ai_generated"
+ },
+ "representative_parts": [
+  {
+   "id": "kicad-symbols/Battery_Management/LTC4067EDE",
+   "name": "LTC4067EDE",
+   "tier": "A",
+   "score": 100,
+   "footprint": "DFN-12-1EP_3x4mm_P0.5mm_EP1.7x3.3mm",
+   "why": "tier A, score 100, DFN-12-1EP_3x4mm_P0.5mm_EP1.7x3.3mm"
+  },
+  {
+   "id": "kicad-symbols/Battery_Management/MAX17263xxTE",
+   "name": "MAX17263xxTE",
+   "tier": "A",
+   "score": 100,
+   "footprint": "DFN-14-1EP_3x3mm_P0.4mm_EP1.78x2.35mm",
+   "why": "tier A, score 100, DFN-14-1EP_3x3mm_P0.4mm_EP1.78x2.35mm"
+  },
+  {
+   "id": "kicad-symbols/Battery_Management/MC34673",
+   "name": "MC34673",
+   "tier": "A",
+   "score": 100,
+   "footprint": "DFN-8-1EP_3x2mm_P0.5mm_EP1.75x1.45mm",
+   "why": "tier A, score 100, DFN-8-1EP_3x2mm_P0.5mm_EP1.75x1.45mm"
+  },
+  {
+   "id": "kicad-symbols/Battery_Management/MCP73833-xxx-MF",
+   "name": "MCP73833-xxx-MF",
+   "tier": "B",
+   "score": 100,
+   "footprint": "DFN-10-1EP_3x3mm_P0.5mm_EP1.58x2.35mm",
+   "why": "tier B, score 100, DFN-10-1EP_3x3mm_P0.5mm_EP1.58x2.35mm"
+  }
+ ],
+ "part_ids": [
+  "kicad-symbols/Battery_Management/LTC4067EDE",
+  "kicad-symbols/Battery_Management/MAX17263xxTE",
+  "kicad-symbols/Battery_Management/MC34673",
+  "kicad-symbols/Battery_Management/MCP73833-xxx-MF"
+ ],
+ "embedding_text": "power-supply.dfn | Power Power Supply | Surface-mount power supply and battery management ICs in DFN packages with exposed pads. | power supply battery management dfn smd surface mount dfn-8 dfn-10 dfn-12 dfn-14 exposed pad power ic ltc4067ede max17263xxte mc34673 mcp73833 battery management ion li charger 1ep p0 ep1 | DFN | ",
+ "class": "power.supply"
+}

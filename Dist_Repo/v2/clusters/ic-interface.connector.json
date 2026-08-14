@@ -1,0 +1,83 @@
+{
+ "schema": 1,
+ "id": "ic-interface.connector",
+ "name": "IC Interface — Connector",
+ "category_path": [
+  "IC",
+  "Interface"
+ ],
+ "description": "2 ic interface parts using Connector footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
+ "selection_hints": [
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a Connector land pattern is intended."
+ ],
+ "avoid_when": [
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than Connector."
+ ],
+ "keywords": [
+  "sfp",
+  "connector",
+  "interface",
+  "optical",
+  "serial",
+  "transceiver",
+  "for",
+  "small",
+  "form",
+  "factor",
+  "pluggable",
+  "module",
+  "gbit",
+  "to",
+  "data",
+  "agnostic"
+ ],
+ "facts": {
+  "package_family": "Connector",
+  "facets": [],
+  "mounts": [
+   "smd"
+  ],
+  "footprints": [
+   "Connector_SFP_and_Cage"
+  ],
+  "sources": {
+   "kicad-symbols": 2
+  }
+ },
+ "quality": {
+  "part_count": 2,
+  "planner_visible_count": 2,
+  "tier_counts": {
+   "B": 2
+  },
+  "review_status": "generated"
+ },
+ "representative_parts": [
+  {
+   "id": "kicad-symbols/Interface_Optical/SFP",
+   "name": "SFP",
+   "tier": "B",
+   "score": 100,
+   "footprint": "Connector_SFP_and_Cage",
+   "why": "tier B, score 100, Connector_SFP_and_Cage"
+  },
+  {
+   "id": "kicad-symbols/Interface_Optical/SFP+",
+   "name": "SFP+",
+   "tier": "B",
+   "score": 100,
+   "footprint": "Connector_SFP_and_Cage",
+   "why": "tier B, score 100, Connector_SFP_and_Cage"
+  }
+ ],
+ "part_ids": [
+  "kicad-symbols/Interface_Optical/SFP",
+  "kicad-symbols/Interface_Optical/SFP+"
+ ],
+ "embedding_text": "ic-interface.connector | IC Interface | 2 ic interface parts using Connector footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | sfp connector interface optical serial transceiver for small form factor pluggable module gbit to data agnostic | Connector | ",
+ "class": "ic.interface"
+}
