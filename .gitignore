@@ -1,0 +1,14 @@
+# Release payload — published as GitHub Release assets, never committed.
+# parts/ is ~7.9 GB and part_bundles/ ~7.8 GB; several bundles exceed GitHub's
+# 100 MB per-file hard limit, so a `git add -A` here produces a push that is
+# rejected only after uploading gigabytes.
+Dist_Repo/v2/parts/
+Dist_Repo/v2/part_bundles/
+
+# 156 MB, also over the file limit. Published on the lib-v2-index release,
+# which is what `search_index_url` in the manifest points at.
+Dist_Repo/v2/lib_search.sqlite
+
+# Build-run output, not part of the published index.
+Dist_Repo/validation/
+reports/
