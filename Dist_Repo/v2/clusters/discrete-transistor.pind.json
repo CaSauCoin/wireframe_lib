@@ -6,29 +6,21 @@
   "Discrete",
   "Transistor"
  ],
- "description": "This discrete transistor cluster contains 1 surface-mount (SMD) part using the PIND_2_2525 footprint in the PIND package family.",
+ "description": "1 discrete transistor parts using PIND footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Use when a surface-mount (SMD) discrete transistor in the PIND package family is required.",
-  "Check compatibility with the PIND_2_2525 footprint from chilaboard-altium-library.",
-  "Review the single Tier C quality part entry before using in a design."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a PIND land pattern is intended."
  ],
  "avoid_when": [
-  "Avoid when the layout requires through-hole mounting or non-PIND footprints.",
-  "Do not use if higher quality tiers than Tier C are required.",
-  "Avoid when requiring planner-visible parts."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than PIND."
  ],
  "keywords": [
+  "pind",
   "discrete",
   "transistor",
-  "pind",
-  "smd",
-  "pind_2_2525",
-  "chilaboard-altium-library",
-  "discrete transistor",
-  "surface mount",
-  "discrete.transistor",
-  "tier c",
-  "pind package",
   "surface",
   "mount",
   "pad",
@@ -55,12 +47,12 @@
   "tier_counts": {
    "C": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
   "chilaboard-altium-library/PIND_2_2525/PIND_2_2525"
  ],
- "embedding_text": "discrete-transistor.pind | Discrete Transistor | This discrete transistor cluster contains 1 surface-mount (SMD) part using the PIND_2_2525 footprint in the PIND package family. | discrete transistor pind smd pind_2_2525 chilaboard-altium-library discrete transistor surface mount discrete.transistor tier c pind package surface mount pad mm pitch pins | PIND | ",
+ "embedding_text": "discrete-transistor.pind | Discrete Transistor | 1 discrete transistor parts using PIND footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | pind discrete transistor surface mount pad mm pitch pins | PIND | ",
  "class": "discrete.transistor"
 }

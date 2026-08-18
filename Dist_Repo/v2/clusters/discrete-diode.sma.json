@@ -6,30 +6,23 @@
   "Discrete",
   "Diode"
  ],
- "description": "Cluster of 16 discrete diode components associated with the SMA package family, covering surface-mount, through-hole, and edge-mount footprints.",
+ "description": "16 discrete diode parts using SMA, footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Selecting discrete diodes with SMA package family footprint options.",
-  "Evaluating parts by footprint orientation including vertical, horizontal, and edge-mount.",
-  "Choosing between tier B (1 part) and tier C (15 parts) quality levels."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SMA, land pattern is intended."
  ],
  "avoid_when": [
-  "Components outside the discrete diode class or SMA package family are required.",
-  "Tier A quality components are strictly required.",
-  "Electrical limits or mechanical dimensions not listed in the facts must be verified."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SMA,."
  ],
  "keywords": [
-  "discrete",
-  "diode",
-  "discrete.diode",
   "sma",
-  "smd",
-  "through_hole",
   "vertical",
-  "horizontal",
-  "edgemount",
   "amphenol",
-  "samtec",
-  "dist-legacy",
+  "diode",
+  "discrete",
   "link",
   "pins",
   "package",
@@ -75,7 +68,7 @@
    "B": 1,
    "C": 15
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -105,6 +98,6 @@
   "dist-legacy/SMA_Wurth_60312002114503_Vertical",
   "dist-legacy/SMA_Wurth_60312102114405_Vertical"
  ],
- "embedding_text": "discrete-diode.sma | Discrete Diode | Cluster of 16 discrete diode components associated with the SMA package family, covering surface-mount, through-hole, and edge-mount footprints. | discrete diode discrete.diode sma smd through_hole vertical horizontal edgemount amphenol samtec dist-legacy link pins package pad mm pitch https www com female jack | SMA, | ",
+ "embedding_text": "discrete-diode.sma | Discrete Diode | 16 discrete diode parts using SMA, footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | sma vertical amphenol diode discrete link pins package pad mm pitch https www com female jack | SMA, | ",
  "class": "discrete.diode"
 }

@@ -5,29 +5,21 @@
  "category_path": [
   "IC"
  ],
- "description": "Integrated circuit cluster containing surface-mount SOT583 package devices utilizing the SOT583_8 footprint.",
+ "description": "2 ic parts using SOT583 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Verify land pattern compatibility with the SOT583_8 footprint and SMD mounting.",
-  "Check part quality tier and source library before selecting a part.",
-  "Use when surface-mount ICs in the SOT583 package family are required."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SOT583 land pattern is intended."
  ],
  "avoid_when": [
-  "The board layout requires package families other than SOT583.",
-  "Through-hole mounting or non-SMD footprints are required.",
-  "Required electrical parameters or ratings are not stated in part metadata."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SOT583."
  ],
  "keywords": [
-  "ic",
   "sot583",
-  "sot583_8",
-  "smd",
-  "surface mount",
-  "integrated circuit",
-  "vreg_tps62933f_sot583",
-  "chilaboard-altium-library",
-  "footprint",
-  "package family",
   "tps62933f",
+  "ic",
   "vreg",
   "regulator",
   "switching",
@@ -62,7 +54,7 @@
    "B": 1,
    "C": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -78,6 +70,6 @@
   "chilaboard-altium-library/VREG_TPS62933F_SOT583/VREG_TPS62933F_SOT583",
   "chilaboard-altium-library/SOT583_8/SOT583_8"
  ],
- "embedding_text": "ic.sot583 | IC | Integrated circuit cluster containing surface-mount SOT583 package devices utilizing the SOT583_8 footprint. | ic sot583 sot583_8 smd surface mount integrated circuit vreg_tps62933f_sot583 chilaboard-altium-library footprint package family tps62933f vreg regulator switching voltage pins dc with bootstrap enable feedback and soft start | SOT583 | ",
+ "embedding_text": "ic.sot583 | IC | 2 ic parts using SOT583 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | sot583 tps62933f ic vreg regulator switching voltage pins dc with bootstrap enable feedback and soft start | SOT583 | ",
  "class": "ic"
 }

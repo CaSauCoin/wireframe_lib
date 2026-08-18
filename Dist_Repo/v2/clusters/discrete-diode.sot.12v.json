@@ -6,42 +6,34 @@
   "Discrete",
   "Diode"
  ],
- "description": "Cluster of 9 tier-A discrete diode parts tagged 12V, packaged in SOT footprints (SOT-363/SC-70-6, SOT-323/SC-70, SOT-89-3, SOT-223-3), sourced from Alternate-KiCad-Library.",
+ "description": "9 discrete diode parts for 12V using SOT footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Match the exact SOT footprint (SOT-363/SC-70-6, SOT-323/SC-70, SOT-89-3, or SOT-223-3) to the intended PCB land pattern",
-  "All 9 parts are tier A with score 100 — differentiate by part number and footprint rather than tier",
-  "Verify pin-to-pad mapping against the chosen footprint before committing to layout"
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SOT land pattern is intended."
  ],
  "avoid_when": [
-  "The required footprint is not one of the four listed SOT variants",
-  "A through-hole or non-SMD mount is required",
-  "Electrical ratings beyond the 12V facet must be confirmed but no datasheet data is provided here"
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SOT."
  ],
  "keywords": [
   "diode",
   "sot",
-  "12v",
-  "sot-363",
-  "sc-70-6",
-  "sot-323",
-  "sc-70",
-  "sot-89-3",
-  "sot-223-3",
-  "smd",
-  "discrete diode",
-  "alternate-kicad-library",
-  "akl",
-  "bzb784-c12",
-  "bzv49-c12",
-  "bzv90-c12",
-  "bzx84c12s",
-  "tier a",
   "zener",
+  "12v",
   "sc",
   "dual",
+  "akl",
   "alternate",
   "kicad",
-  "library"
+  "library",
+  "discrete",
+  "independent",
+  "200mw",
+  "c12",
+  "tvs",
+  "bzb784"
  ],
  "facts": {
   "package_family": "SOT",
@@ -67,7 +59,7 @@
   "tier_counts": {
    "A": 9
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -122,6 +114,6 @@
   "Alternate-KiCad-Library/Diode_Zener_AKL/MMBZ5242BSs",
   "Alternate-KiCad-Library/Diode_TVS_AKL/SMF12CT"
  ],
- "embedding_text": "discrete-diode.sot.12v | Discrete Diode | Cluster of 9 tier-A discrete diode parts tagged 12V, packaged in SOT footprints (SOT-363/SC-70-6, SOT-323/SC-70, SOT-89-3, SOT-223-3), sourced from Alternate-KiCad-Library. | diode sot 12v sot-363 sc-70-6 sot-323 sc-70 sot-89-3 sot-223-3 smd discrete diode alternate-kicad-library akl bzb784-c12 bzv49-c12 bzv90-c12 bzx84c12s tier a zener sc dual alternate kicad library | SOT | 12V",
+ "embedding_text": "discrete-diode.sot.12v | Discrete Diode | 9 discrete diode parts for 12V using SOT footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | diode sot zener 12v sc dual akl alternate kicad library discrete independent 200mw c12 tvs bzb784 | SOT | 12V",
  "class": "discrete.diode"
 }

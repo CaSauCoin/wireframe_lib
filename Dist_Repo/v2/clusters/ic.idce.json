@@ -5,33 +5,20 @@
  "category_path": [
   "IC"
  ],
- "description": "Through-hole IC component cluster utilizing dual-row IDCE footprints ranging from 2x5 to 2x32 pins.",
+ "description": "11 ic parts using IDCE footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select based on the required pin count footprint from 2x5 to 2x32.",
-  "Verify component footprint compatibility with through-hole IDCE land patterns.",
-  "Account for tier C quality status and generated review state."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a IDCE land pattern is intended."
  ],
  "avoid_when": [
-  "Surface-mount (SMD/SMT) assembly is required.",
-  "The board layout requires package families other than IDCE.",
-  "Verified planner-visible or higher-tier parts are required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than IDCE."
  ],
  "keywords": [
-  "ic",
   "idce",
-  "through hole",
-  "through_hole",
-  "idce_2x5",
-  "idce_2x8",
-  "idce_2x10",
-  "idce_2x12",
-  "idce_2x13",
-  "idce_2x15",
-  "idce_2x17",
-  "idce_2x20",
-  "idce_2x25",
-  "idce_2x30",
-  "idce_2x32",
+  "ic",
   "through",
   "hole",
   "pad",
@@ -40,7 +27,12 @@
   "pins",
   "2x10",
   "2x12",
-  "2x13"
+  "2x13",
+  "2x15",
+  "2x17",
+  "2x20",
+  "2x25",
+  "2x30"
  ],
  "facts": {
   "package_family": "IDCE",
@@ -71,7 +63,7 @@
   "tier_counts": {
    "C": 11
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
@@ -87,6 +79,6 @@
   "chilaboard-altium-library/IDCE_2X5/IDCE_2X5",
   "chilaboard-altium-library/IDCE_2X8/IDCE_2X8"
  ],
- "embedding_text": "ic.idce | IC | Through-hole IC component cluster utilizing dual-row IDCE footprints ranging from 2x5 to 2x32 pins. | ic idce through hole through_hole idce_2x5 idce_2x8 idce_2x10 idce_2x12 idce_2x13 idce_2x15 idce_2x17 idce_2x20 idce_2x25 idce_2x30 idce_2x32 through hole pad mm pitch pins 2x10 2x12 2x13 | IDCE | ",
+ "embedding_text": "ic.idce | IC | 11 ic parts using IDCE footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | idce ic through hole pad mm pitch pins 2x10 2x12 2x13 2x15 2x17 2x20 2x25 2x30 | IDCE | ",
  "class": "ic"
 }

@@ -6,32 +6,24 @@
   "IC",
   "Microcontroller"
  ],
- "description": "This cluster contains 259 surface-mount microcontroller ICs packaged in Ball Grid Array (BGA) footprint variants including TFBGA, UFBGA, LFBGA, and DSBGA formats.",
+ "description": "259 ic microcontroller parts using BGA footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when surface-mount microcontroller ICs in BGA package formats are required.",
-  "Choose entries matching specific footprint pitch, grid layout, and package dimensions.",
-  "Prefer Tier A rated entries when available in the library cluster."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a BGA land pattern is intended."
  ],
  "avoid_when": [
-  "Avoid when the PCB design requires non-BGA surface-mount packages.",
-  "Do not use if through-hole component mounting is required.",
-  "Avoid when required footprint geometry or pitch differs from the listed BGA land patterns."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than BGA."
  ],
  "keywords": [
   "bga",
-  "microcontroller",
-  "ic",
   "mcu",
-  "smd",
-  "tfbga",
-  "ufbga",
-  "lfbga",
-  "dsbga",
-  "atmega",
-  "microchip",
-  "ball grid array",
   "arm",
   "cortex",
+  "microcontroller",
+  "ic",
   "p0",
   "flash",
   "st",
@@ -40,7 +32,8 @@
   "a7",
   "stmicroelectronics",
   "gpio",
-  "5mm"
+  "5mm",
+  "ufbga"
  ],
  "facts": {
   "package_family": "BGA",
@@ -73,7 +66,7 @@
    "A": 64,
    "B": 195
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -378,6 +371,6 @@
   "kicad-symbols/MCU_ST_STM32U5/STM32U5F9ZJJxQ",
   "kicad-symbols/MCU_ST_STM32U5/STM32U5G9ZJJxQ"
  ],
- "embedding_text": "ic-mcu.bga | IC Microcontroller | This cluster contains 259 surface-mount microcontroller ICs packaged in Ball Grid Array (BGA) footprint variants including TFBGA, UFBGA, LFBGA, and DSBGA formats. | bga microcontroller ic mcu smd tfbga ufbga lfbga dsbga atmega microchip ball grid array arm cortex p0 flash st ram stm32mp1 a7 stmicroelectronics gpio 5mm | BGA | ",
+ "embedding_text": "ic-mcu.bga | IC Microcontroller | 259 ic microcontroller parts using BGA footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | bga mcu arm cortex microcontroller ic p0 flash st ram stm32mp1 a7 stmicroelectronics gpio 5mm ufbga | BGA | ",
  "class": "ic.mcu"
 }

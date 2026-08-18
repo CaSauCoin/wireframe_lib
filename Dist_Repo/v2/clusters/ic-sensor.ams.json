@@ -6,41 +6,34 @@
   "IC",
   "Sensor"
  ],
- "description": "Cluster of 5 surface-mount sensor ICs using AMS package footprints including AMS_OLGA12, AMS_LGA-20_4.7x4.5mm_P0.65mm, and AMS_TSL2550_SMD.",
+ "description": "5 ic sensor parts using AMS footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Choose when needing an SMD sensor IC with an AMS package family footprint.",
-  "Prefer Tier A entries such as AS72651 or TSL2550T over Tier B entries.",
-  "Match the target PCB land pattern to AMS_OLGA12, AMS_LGA-20_4.7x4.5mm_P0.65mm, or AMS_TSL2550_SMD."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a AMS land pattern is intended."
  ],
  "avoid_when": [
-  "The board design requires through-hole component mounting instead of SMD.",
-  "The required layout uses footprints outside the AMS package family."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than AMS."
  ],
  "keywords": [
-  "ic sensor",
-  "ams",
-  "smd",
-  "ams_olga12",
-  "ams_lga-20_4.7x4.5mm_p0.65mm",
-  "ams_tsl2550_smd",
-  "as72651",
-  "tsl2550t",
-  "tmf8820",
-  "tmf8821",
-  "tmf8828",
-  "sensor optical",
-  "sensor distance",
-  "olga12",
   "sensor",
+  "ams",
   "lga",
   "distance",
   "tof",
   "ic",
+  "tmf8820",
+  "tmf8821",
+  "tmf8828",
   "ambient",
   "light",
   "5m",
   "ranging",
-  "3x3"
+  "3x3",
+  "zones",
+  "olga12"
  ],
  "facts": {
   "package_family": "AMS",
@@ -64,7 +57,7 @@
    "A": 2,
    "B": 3
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -115,6 +108,6 @@
   "kicad-symbols/Sensor_Distance/TMF8821",
   "kicad-symbols/Sensor_Distance/TMF8828"
  ],
- "embedding_text": "ic-sensor.ams | IC Sensor | Cluster of 5 surface-mount sensor ICs using AMS package footprints including AMS_OLGA12, AMS_LGA-20_4.7x4.5mm_P0.65mm, and AMS_TSL2550_SMD. | ic sensor ams smd ams_olga12 ams_lga-20_4.7x4.5mm_p0.65mm ams_tsl2550_smd as72651 tsl2550t tmf8820 tmf8821 tmf8828 sensor optical sensor distance olga12 sensor lga distance tof ic ambient light 5m ranging 3x3 | AMS | ",
+ "embedding_text": "ic-sensor.ams | IC Sensor | 5 ic sensor parts using AMS footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | sensor ams lga distance tof ic tmf8820 tmf8821 tmf8828 ambient light 5m ranging 3x3 zones olga12 | AMS | ",
  "class": "ic.sensor"
 }

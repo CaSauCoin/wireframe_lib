@@ -6,31 +6,24 @@
   "IC",
   "FPGA"
  ],
- "description": "Surface-mount IC FPGA cluster with 1.2V operating supply and SPI capability in QFN footprint packaging.",
+ "description": "1 ic fpga parts for SPI, 1.2V using QFN footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when needing a surface-mount IC FPGA with 1.2V supply and SPI support.",
-  "Verify compatibility with QFN footprints such as QFN-32-1EP_5x5mm_P0.5mm_EP3.7x3.7mm.",
-  "Choose tier A entries from sources like kicad-symbols."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a QFN land pattern is intended."
  ],
  "avoid_when": [
-  "The design requires through-hole or non-SMD mounting.",
-  "A package family other than QFN is required.",
-  "The application requires operating voltages other than 1.2V or non-SPI interfaces."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than QFN."
  ],
  "keywords": [
-  "ic",
   "fpga",
-  "ic fpga",
   "qfn",
+  "2v",
   "spi",
-  "1.2v",
-  "smd",
-  "ice40lp384-sg32",
   "ice40lp384",
   "sg32",
-  "kicad-symbols",
-  "qfn-32",
-  "2v",
   "lattice",
   "ice40",
   "lp",
@@ -64,7 +57,7 @@
   "tier_counts": {
    "A": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -79,6 +72,6 @@
  "part_ids": [
   "kicad-symbols/FPGA_Lattice/ICE40LP384-SG32"
  ],
- "embedding_text": "ic-fpga.qfn.spi.1-2v | IC FPGA | Surface-mount IC FPGA cluster with 1.2V operating supply and SPI capability in QFN footprint packaging. | ic fpga ic fpga qfn spi 1.2v smd ice40lp384-sg32 ice40lp384 sg32 kicad-symbols qfn-32 2v lattice ice40 lp luts gpio core supply vqfn 1ep 5x5mm | QFN | SPI 1.2V",
+ "embedding_text": "ic-fpga.qfn.spi.1-2v | IC FPGA | 1 ic fpga parts for SPI, 1.2V using QFN footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | fpga qfn 2v spi ice40lp384 sg32 lattice ice40 lp luts gpio core supply vqfn 1ep 5x5mm | QFN | SPI 1.2V",
  "class": "ic.fpga"
 }

@@ -5,44 +5,34 @@
  "category_path": [
   "Connector"
  ],
- "description": "Cluster of 52 generic TE connector parts, mostly single-row 1x04 to 1x14 headers at 1.0mm pitch with mounting pins plus one M8 straight socket, spanning SMD and through-hole footprints.",
+ "description": "52 connector parts using TE footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Match pin count and pitch to the exact TE footprint listed (e.g. 84952-N series or M8 socket)",
-  "Prefer tier A entries for higher confidence symbol-footprint pairing",
-  "Confirm mount type (SMD vs through-hole) matches the board design",
-  "Cross-check source (kicad-symbols, dist-legacy, celestial-altium-library) for trust level"
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a TE land pattern is intended."
  ],
  "avoid_when": [
-  "A non-TE footprint or land pattern is required",
-  "The design needs a pin count or pitch not present in the listed footprints",
-  "The part is tier C or has an unreviewed/generated symbol-footprint match",
-  "Electrical ratings or dimensions are needed but not provided by the part record"
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than TE."
  ],
  "keywords": [
   "connector",
   "te",
-  "te connectivity",
-  "mounting pin",
-  "single row header",
-  "1x04",
-  "1x14",
-  "1.0mm pitch",
-  "p1.0mm horizontal",
-  "m8 socket",
-  "m8 straight",
-  "smd connector",
-  "through hole connector",
-  "generic connector",
-  "conn",
-  "kicad symbols",
-  "84952 series",
-  "generated cluster",
   "mountingpin",
   "generic",
   "pin",
+  "conn",
   "connectable",
   "mounting",
-  "single"
+  "single",
+  "row",
+  "script",
+  "generated",
+  "1mp",
+  "horizontal",
+  "fpc",
+  "kicad"
  ],
  "facts": {
   "package_family": "TE",
@@ -79,7 +69,7 @@
    "B": 22,
    "C": 3
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -177,6 +167,6 @@
   "dist-legacy/TE_T4041037031-000_M8_03_Socket_Straight",
   "dist-legacy/TE_T4041037041-000_M8_04_Socket_Straight"
  ],
- "embedding_text": "connector.te | Connector | Cluster of 52 generic TE connector parts, mostly single-row 1x04 to 1x14 headers at 1.0mm pitch with mounting pins plus one M8 straight socket, spanning SMD and through-hole footprints. | connector te te connectivity mounting pin single row header 1x04 1x14 1.0mm pitch p1.0mm horizontal m8 socket m8 straight smd connector through hole connector generic connector conn kicad symbols 84952 series generated cluster mountingpin generic pin connectable mounting single | TE | ",
+ "embedding_text": "connector.te | Connector | 52 connector parts using TE footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | connector te mountingpin generic pin conn connectable mounting single row script generated 1mp horizontal fpc kicad | TE | ",
  "class": "connector"
 }

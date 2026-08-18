@@ -5,38 +5,31 @@
  "category_path": [
   "Connector"
  ],
- "description": "Shielded coaxial/triaxial connector footprints (LEMO-style), through-hole mount, no electrical or lifecycle data provided.",
+ "description": "3 connector parts using LEMO footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Match by exact part name: shielded pair, triaxial, or triaxial same-side",
-  "Confirm LEMO-EPG.00.302.NLN footprint fits the target land pattern",
-  "All three parts are tier A with score 100 but carry no electrical ratings — verify externally"
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a LEMO land pattern is intended."
  ],
  "avoid_when": [
-  "A specific voltage, current, or impedance rating must be confirmed from a datasheet",
-  "The board requires a non-LEMO footprint or SMD mounting",
-  "Symbol-footprint pairing needs independent verification before layout"
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than LEMO."
  ],
  "keywords": [
   "lemo",
   "connector",
-  "conn",
-  "shielded pair",
   "triaxial",
-  "triaxial same side",
+  "conn",
   "epg",
   "nln",
-  "through hole",
   "tht",
-  "coaxial",
-  "shielded",
-  "differential pair",
-  "lvds",
-  "rf connector",
-  "kicad symbol",
   "female",
   "jack",
   "horizontal",
   "differential",
+  "lvds",
+  "shielded",
   "pair",
   "same",
   "side"
@@ -60,7 +53,7 @@
   "tier_counts": {
    "A": 3
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -93,6 +86,6 @@
   "kicad-symbols/Connector/Conn_Triaxial",
   "kicad-symbols/Connector/Conn_Triaxial_Same_Side"
  ],
- "embedding_text": "connector.lemo | Connector | Shielded coaxial/triaxial connector footprints (LEMO-style), through-hole mount, no electrical or lifecycle data provided. | lemo connector conn shielded pair triaxial triaxial same side epg nln through hole tht coaxial shielded differential pair lvds rf connector kicad symbol female jack horizontal differential pair same side | LEMO | ",
+ "embedding_text": "connector.lemo | Connector | 3 connector parts using LEMO footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | lemo connector triaxial conn epg nln tht female jack horizontal differential lvds shielded pair same side | LEMO | ",
  "class": "connector"
 }

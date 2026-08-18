@@ -6,30 +6,26 @@
   "Discrete",
   "Transistor"
  ],
- "description": "Discrete transistor cluster containing 5 parts in PANASONIC package footprints with SMD and unknown mount types across quality tiers B and C.",
+ "description": "5 discrete transistor parts using PANASONIC footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when using discrete transistors with PANASONIC package footprints.",
-  "Prefer Tier B parts over Tier C parts for higher quality scores.",
-  "Verify component footprint compatibility with ESE22MV21, EVQPUC, or HSON-8 land patterns."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a PANASONIC land pattern is intended."
  ],
  "avoid_when": [
-  "The PCB layout requires non-PANASONIC package footprints.",
-  "The design strictly requires Tier A quality parts.",
-  "Through-hole mounting is required for the application."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than PANASONIC."
  ],
  "keywords": [
-  "discrete",
-  "transistor",
   "panasonic",
+  "transistor",
   "ese22mv21",
   "evqpuc",
-  "hson-8",
-  "smd",
-  "discrete transistor",
-  "8x8mm",
-  "p2.00mm",
+  "discrete",
   "hson",
   "pins",
+  "8x8mm",
   "p2",
   "00mm",
   "package",
@@ -64,7 +60,7 @@
    "B": 2,
    "C": 3
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -91,6 +87,6 @@
   "celestial-altium-library/PANASONIC EVQPUC/PANASONIC_EVQPUC",
   "dist-legacy/Panasonic_HSON-8_8x8mm_P2.00mm"
  ],
- "embedding_text": "discrete-transistor.panasonic | Discrete Transistor | Discrete transistor cluster containing 5 parts in PANASONIC package footprints with SMD and unknown mount types across quality tiers B and C. | discrete transistor panasonic ese22mv21 evqpuc hson-8 smd discrete transistor 8x8mm p2.00mm hson pins p2 00mm package surface mount pad mm pitch | PANASONIC | ",
+ "embedding_text": "discrete-transistor.panasonic | Discrete Transistor | 5 discrete transistor parts using PANASONIC footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | panasonic transistor ese22mv21 evqpuc discrete hson pins 8x8mm p2 00mm package surface mount pad mm pitch | PANASONIC | ",
  "class": "discrete.transistor"
 }

@@ -6,31 +6,24 @@
   "Discrete",
   "Transistor"
  ],
- "description": "Cluster of 4 through-hole discrete transistor parts using PHM package family footprints.",
+ "description": "4 discrete transistor parts using PHM footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Choose when a through-hole discrete transistor in a PHM package family is required.",
-  "Select based on the specific footprint variant among PHM_TSOP1XX_3, PHM_TSOP1XX_3B, PHM_TSOP3XX_3, and PHM_TSOP3XX_3B.",
-  "Note that all 4 parts in this cluster are classified as quality tier C."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a PHM land pattern is intended."
  ],
  "avoid_when": [
-  "Surface-mount assembly is required instead of through-hole mounting.",
-  "The board layout requires a package family other than PHM.",
-  "Parts outside the discrete transistor class are needed."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than PHM."
  ],
  "keywords": [
+  "phm",
+  "tsop1xx",
+  "3b",
+  "tsop3xx",
   "discrete",
   "transistor",
-  "phm",
-  "through hole",
-  "phm_tsop1xx_3",
-  "phm_tsop1xx_3b",
-  "phm_tsop3xx_3",
-  "phm_tsop3xx_3b",
-  "tsop1xx",
-  "tsop3xx",
-  "chilaboard altium library",
-  "discrete transistor",
-  "3b",
   "through",
   "hole",
   "pad",
@@ -60,7 +53,7 @@
   "tier_counts": {
    "C": 4
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
@@ -69,6 +62,6 @@
   "chilaboard-altium-library/PHM_TSOP3XX_3/PHM_TSOP3XX_3",
   "chilaboard-altium-library/PHM_TSOP3XX_3B/PHM_TSOP3XX_3B"
  ],
- "embedding_text": "discrete-transistor.phm | Discrete Transistor | Cluster of 4 through-hole discrete transistor parts using PHM package family footprints. | discrete transistor phm through hole phm_tsop1xx_3 phm_tsop1xx_3b phm_tsop3xx_3 phm_tsop3xx_3b tsop1xx tsop3xx chilaboard altium library discrete transistor 3b through hole pad mm pitch pins | PHM | ",
+ "embedding_text": "discrete-transistor.phm | Discrete Transistor | 4 discrete transistor parts using PHM footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | phm tsop1xx 3b tsop3xx discrete transistor through hole pad mm pitch pins | PHM | ",
  "class": "discrete.transistor"
 }

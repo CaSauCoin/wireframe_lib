@@ -6,33 +6,21 @@
   "Discrete",
   "Transistor"
  ],
- "description": "Cluster of 9 tier-C discrete transistor parts belonging to the QTO package family.",
+ "description": "9 discrete transistor parts using QTO footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Verify exact footprint variant among available QTO-220, QTO-247, and QTO-92 footprints.",
-  "Confirm part suitability given that all entries are quality tier C.",
-  "Select when requiring a land pattern in the QTO package family."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a QTO land pattern is intended."
  ],
  "avoid_when": [
-  "The PCB layout requires a package family other than QTO.",
-  "Parts rated above quality tier C are required.",
-  "Planner-visible parts are needed."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than QTO."
  ],
  "keywords": [
   "qto",
-  "discrete transistor",
   "discrete",
   "transistor",
-  "qto-220a",
-  "qto-220b",
-  "qto-220h3",
-  "qto-220t",
-  "qto-247",
-  "qto-92a",
-  "qto-92b",
-  "qto-92b1",
-  "qto-92c",
-  "tier c",
-  "qto package",
   "pad",
   "mm",
   "pitch",
@@ -41,7 +29,10 @@
   "220b",
   "220h3",
   "220t",
-  "92a"
+  "92a",
+  "92b",
+  "92b1",
+  "92c"
  ],
  "facts": {
   "package_family": "QTO",
@@ -70,7 +61,7 @@
   "tier_counts": {
    "C": 9
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
@@ -84,6 +75,6 @@
   "dist-legacy/QTO-92B1",
   "dist-legacy/QTO-92C"
  ],
- "embedding_text": "discrete-transistor.qto | Discrete Transistor | Cluster of 9 tier-C discrete transistor parts belonging to the QTO package family. | qto discrete transistor discrete transistor qto-220a qto-220b qto-220h3 qto-220t qto-247 qto-92a qto-92b qto-92b1 qto-92c tier c qto package pad mm pitch pins 220a 220b 220h3 220t 92a | QTO | ",
+ "embedding_text": "discrete-transistor.qto | Discrete Transistor | 9 discrete transistor parts using QTO footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | qto discrete transistor pad mm pitch pins 220a 220b 220h3 220t 92a 92b 92b1 92c | QTO | ",
  "class": "discrete.transistor"
 }

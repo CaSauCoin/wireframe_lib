@@ -6,28 +6,21 @@
   "Discrete",
   "Diode"
  ],
- "description": "Discrete diode cluster containing 2 tier C parts using HED2 package footprints.",
+ "description": "2 discrete diode parts using HED2 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when a discrete diode with an HED2 footprint is required.",
-  "Verify part specifications as all available parts are classified under quality tier C.",
-  "Confirm mounting configuration before use as mount type is listed as unknown."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a HED2 land pattern is intended."
  ],
  "avoid_when": [
-  "The board layout requires a package family other than HED2.",
-  "Parts with verified mounting specifications or higher quality tiers are required.",
-  "Planner-visible parts are needed for design planning."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than HED2."
  ],
  "keywords": [
   "hed2",
   "discrete",
   "diode",
-  "discrete diode",
-  "hed2 footprint",
-  "hed2 package",
-  "tier c",
-  "discrete.diode",
-  "dist-legacy",
-  "hed2 diode",
   "big",
   "package",
   "land",
@@ -61,13 +54,13 @@
   "tier_counts": {
    "C": 2
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
   "dist-legacy/HED2 BIG",
   "dist-legacy/HED2"
  ],
- "embedding_text": "discrete-diode.hed2 | Discrete Diode | Discrete diode cluster containing 2 tier C parts using HED2 package footprints. | hed2 discrete diode discrete diode hed2 footprint hed2 package tier c discrete.diode dist-legacy hed2 diode big package land pattern mm pitch pad bare with pads and footprint 08mm | HED2 | ",
+ "embedding_text": "discrete-diode.hed2 | Discrete Diode | 2 discrete diode parts using HED2 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | hed2 discrete diode big package land pattern mm pitch pad bare with pads and footprint 08mm | HED2 | ",
  "class": "discrete.diode"
 }

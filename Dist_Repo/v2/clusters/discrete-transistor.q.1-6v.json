@@ -6,34 +6,24 @@
   "Discrete",
   "Transistor"
  ],
- "description": "Discrete transistor cluster featuring 1.6V rated SMD components in the Q package family with Q_SOT-323 footprint from JLCPCB-Kicad-Library.",
+ "description": "1 discrete transistor parts for 1.6V using Q footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when needing an SMD discrete transistor with a 1.6V rating.",
-  "Use for designs specifying the Q_SOT-323 footprint in the Q package family.",
-  "Choose when utilizing parts from the JLCPCB-Kicad-Library."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a Q land pattern is intended."
  ],
  "avoid_when": [
-  "Through-hole assembly is required rather than SMD mounting.",
-  "The PCB layout requires footprints other than Q_SOT-323.",
-  "Components outside the Q package family are required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than Q."
  ],
  "keywords": [
-  "discrete transistor",
-  "discrete",
-  "transistor",
-  "1.6v",
-  "smd",
-  "q package family",
-  "q_sot-323",
-  "sot-323",
-  "nmos",
-  "2n7002w",
-  "nmos 2n7002w",
-  "jlcpcb-kicad-library",
-  "jlcpcb",
   "sot",
   "channel",
   "6v",
+  "nmos",
+  "2n7002w",
+  "jlcpcb",
   "transistors",
   "115ma",
   "200mw",
@@ -41,7 +31,9 @@
   "50pf",
   "5pf",
   "60v",
-  "900m"
+  "900m",
+  "10v",
+  "mosfets"
  ],
  "facts": {
   "package_family": "Q",
@@ -64,7 +56,7 @@
   "tier_counts": {
    "B": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -79,6 +71,6 @@
  "part_ids": [
   "JLCPCB-Kicad-Library/JLCPCB-Transistors/NMOS,2N7002W"
  ],
- "embedding_text": "discrete-transistor.q.1-6v | Discrete Transistor | Discrete transistor cluster featuring 1.6V rated SMD components in the Q package family with Q_SOT-323 footprint from JLCPCB-Kicad-Library. | discrete transistor discrete transistor 1.6v smd q package family q_sot-323 sot-323 nmos 2n7002w nmos 2n7002w jlcpcb-kicad-library jlcpcb sot channel 6v transistors 115ma 200mw 25pf 50pf 5pf 60v 900m | Q | 1.6V",
+ "embedding_text": "discrete-transistor.q.1-6v | Discrete Transistor | 1 discrete transistor parts for 1.6V using Q footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | sot channel 6v nmos 2n7002w jlcpcb transistors 115ma 200mw 25pf 50pf 5pf 60v 900m 10v mosfets | Q | 1.6V",
  "class": "discrete.transistor"
 }

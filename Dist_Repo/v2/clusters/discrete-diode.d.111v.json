@@ -6,34 +6,24 @@
   "Discrete",
   "Diode"
  ],
- "description": "Cluster of 3 tier-A through-hole discrete diodes rated for 111V in the D package family with horizontal DO-15 footprints.",
+ "description": "3 discrete diode parts for 111V using D footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when requiring a 111V through-hole discrete diode in the D package family.",
-  "Verify footprint compatibility between Zener and TVS DO-15 horizontal variants (10.16mm pitch).",
-  "Choose between BZW04 and BZW06 series parts based on footprint specification."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a D land pattern is intended."
  ],
  "avoid_when": [
-  "Surface-mount (SMD) components are required instead of through-hole mounting.",
-  "Target operating voltage differs from 111V.",
-  "The board design requires package families other than D."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than D."
  ],
  "keywords": [
-  "discrete diode",
-  "111v",
-  "through-hole",
-  "package d",
-  "do-15",
-  "p10.16mm",
-  "horizontal",
-  "bzw04-111",
-  "bzw06-111",
-  "bzw06-111b",
-  "tvs",
-  "zener",
-  "kicad library",
   "diode",
+  "tvs",
   "do",
+  "111v",
   "16mm",
+  "horizontal",
   "6mm",
   "unidirectional",
   "bzw04",
@@ -41,7 +31,9 @@
   "alternate",
   "kicad",
   "library",
-  "p10"
+  "p10",
+  "series",
+  "axial"
  ],
  "facts": {
   "package_family": "D",
@@ -65,7 +57,7 @@
   "tier_counts": {
    "A": 3
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -98,6 +90,6 @@
   "Alternate-KiCad-Library/Diode_TVS_AKL/BZW06-111",
   "Alternate-KiCad-Library/Diode_TVS_AKL/BZW06-111B"
  ],
- "embedding_text": "discrete-diode.d.111v | Discrete Diode | Cluster of 3 tier-A through-hole discrete diodes rated for 111V in the D package family with horizontal DO-15 footprints. | discrete diode 111v through-hole package d do-15 p10.16mm horizontal bzw04-111 bzw06-111 bzw06-111b tvs zener kicad library diode do 16mm 6mm unidirectional bzw04 akl alternate kicad library p10 | D | 111V",
+ "embedding_text": "discrete-diode.d.111v | Discrete Diode | 3 discrete diode parts for 111V using D footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | diode tvs do 111v 16mm horizontal 6mm unidirectional bzw04 akl alternate kicad library p10 series axial | D | 111V",
  "class": "discrete.diode"
 }

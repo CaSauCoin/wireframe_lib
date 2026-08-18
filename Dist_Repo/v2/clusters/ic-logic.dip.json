@@ -6,33 +6,22 @@
   "IC",
   "Logic"
  ],
- "description": "Cluster of 237 through-hole logic ICs utilizing DIP footprint variants ranging from 8 to 24 pins.",
+ "description": "237 ic logic parts using DIP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Selecting logic ICs requiring through-hole mounting in DIP packaging.",
-  "Choosing specific pin counts and footprint widths such as DIP-14, DIP-16, or DIP-20.",
-  "Preferring tier A quality entries for library parts."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a DIP land pattern is intended."
  ],
  "avoid_when": [
-  "Surface-mount assembly is required for the PCB design.",
-  "The component layout requires footprint families other than DIP."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than DIP."
  ],
  "keywords": [
-  "ic logic",
   "dip",
-  "through_hole",
-  "logic ic",
-  "dip-16",
-  "dip-14",
-  "dip-20",
-  "dip-24",
-  "74xx",
-  "74ahc",
-  "74ahct",
-  "74hc",
-  "w7.62mm",
-  "dip-8",
   "logic",
   "ic",
+  "74xx",
   "62mm",
   "ttl",
   "w7",
@@ -40,7 +29,11 @@
   "dil",
   "pdip",
   "54mm",
-  "300mil"
+  "300mil",
+  "bit",
+  "sparkfun",
+  "outputs",
+  "state"
  ],
  "facts": {
   "package_family": "DIP",
@@ -74,7 +67,7 @@
    "A": 108,
    "B": 129
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -357,6 +350,6 @@
   "kicad-symbols/74xx/74LS42",
   "kicad-symbols/74xx/74LS21"
  ],
- "embedding_text": "ic-logic.dip | IC Logic | Cluster of 237 through-hole logic ICs utilizing DIP footprint variants ranging from 8 to 24 pins. | ic logic dip through_hole logic ic dip-16 dip-14 dip-20 dip-24 74xx 74ahc 74ahct 74hc w7.62mm dip-8 logic ic 62mm ttl w7 tht dil pdip 54mm 300mil | DIP | ",
+ "embedding_text": "ic-logic.dip | IC Logic | 237 ic logic parts using DIP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | dip logic ic 74xx 62mm ttl w7 tht dil pdip 54mm 300mil bit sparkfun outputs state | DIP | ",
  "class": "ic.logic"
 }

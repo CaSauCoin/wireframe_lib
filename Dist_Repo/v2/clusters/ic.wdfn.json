@@ -5,31 +5,23 @@
  "category_path": [
   "IC"
  ],
- "description": "Integrated circuit cluster containing surface-mount components in WDFN packages with pin counts from 6 to 12 and optional exposed pads.",
+ "description": "11 ic parts using WDFN footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Match pin count, lead pitch, and body size to the specific WDFN footprint.",
-  "Check whether an exposed pad (1EP/2EP) or thermal vias are required by the footprint.",
-  "Verify component tier and source data quality before placement."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a WDFN land pattern is intended."
  ],
  "avoid_when": [
-  "The application requires through-hole parts or a package family other than WDFN.",
-  "The required pin count, pitch, or thermal pad configuration is not available in the footprints list."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than WDFN."
  ],
  "keywords": [
   "wdfn",
-  "ic",
-  "smd",
-  "surface mount",
-  "wdfn-8",
-  "wdfn-10",
-  "wdfn-12",
-  "wdfn-6",
-  "exposed pad",
   "1ep",
-  "2ep",
-  "thermal vias",
   "p0",
   "5mm",
+  "ic",
   "ep1",
   "3x3mm",
   "8mm",
@@ -39,7 +31,8 @@
   "8x2",
   "surface",
   "mount",
-  "mm"
+  "mm",
+  "pitch"
  ],
  "facts": {
   "package_family": "WDFN",
@@ -71,7 +64,7 @@
    "B": 1,
    "C": 10
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -96,6 +89,6 @@
   "dist-legacy/WDFN-8-1EP_8x6mm_P1.27mm_EP6x4.8mm",
   "dist-legacy/WDFN-8-1EP_8x6mm_P1.27mm_EP6x4.8mm_ThermalVias"
  ],
- "embedding_text": "ic.wdfn | IC | Integrated circuit cluster containing surface-mount components in WDFN packages with pin counts from 6 to 12 and optional exposed pads. | wdfn ic smd surface mount wdfn-8 wdfn-10 wdfn-12 wdfn-6 exposed pad 1ep 2ep thermal vias p0 5mm ep1 3x3mm 8mm thermalvias pdf pad 8x2 surface mount mm | WDFN | ",
+ "embedding_text": "ic.wdfn | IC | 11 ic parts using WDFN footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | wdfn 1ep p0 5mm ic ep1 3x3mm 8mm thermalvias pdf pad 8x2 surface mount mm pitch | WDFN | ",
  "class": "ic"
 }

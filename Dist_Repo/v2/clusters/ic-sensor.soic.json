@@ -6,42 +6,34 @@
   "IC",
   "Sensor"
  ],
- "description": "Surface-mount sensor IC cluster containing 70 tier A parts across SOIC footprint variants.",
+ "description": "70 ic sensor parts using SOIC footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select based on the required SOIC footprint variant and pin count.",
-  "Verify package width and pad layout against the specific SOIC footprint variant.",
-  "Match specific part numbers such as ACS706 or ACS712 series sensor ICs."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SOIC land pattern is intended."
  ],
  "avoid_when": [
-  "Through-hole assembly is required instead of surface-mount.",
-  "The target PCB layout uses non-SOIC package types.",
-  "Pin pitch requirements differ from 1.27mm pitch SOIC patterns."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SOIC."
  ],
  "keywords": [
   "soic",
   "sensor",
-  "ic",
-  "ic.sensor",
-  "smd",
-  "soic-8",
-  "soic-14",
-  "soic-16",
-  "soic-24w",
-  "acs712",
-  "acs706",
-  "acs713",
-  "1.27mm",
-  "kicad-symbols",
   "current",
   "hall",
   "effect",
+  "ic",
   "so",
   "p1",
   "27mm",
   "9mm",
   "9x4",
   "0v",
-  "supply"
+  "supply",
+  "monitor",
+  "isolated",
+  "bidirectional"
  ],
  "facts": {
   "package_family": "SOIC",
@@ -68,7 +60,7 @@
   "tier_counts": {
    "A": 70
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -184,6 +176,6 @@
   "kicad-symbols/Sensor_Temperature/TSIC206-SO8",
   "kicad-symbols/Sensor_Temperature/TSIC306-SO8"
  ],
- "embedding_text": "ic-sensor.soic | IC Sensor | Surface-mount sensor IC cluster containing 70 tier A parts across SOIC footprint variants. | soic sensor ic ic.sensor smd soic-8 soic-14 soic-16 soic-24w acs712 acs706 acs713 1.27mm kicad-symbols current hall effect so p1 27mm 9mm 9x4 0v supply | SOIC | ",
+ "embedding_text": "ic-sensor.soic | IC Sensor | 70 ic sensor parts using SOIC footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | soic sensor current hall effect ic so p1 27mm 9mm 9x4 0v supply monitor isolated bidirectional | SOIC | ",
  "class": "ic.sensor"
 }

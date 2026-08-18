@@ -7,42 +7,34 @@
   "Power",
   "Converter"
  ],
- "description": "Cluster of 30 power converter IC components for 3.3V buck and boost applications supporting surface-mount and through-hole footprints.",
+ "description": "30 ic power converter parts for 3.3V, buck, boost using Converter footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select based on mounting type (surface-mount or through-hole) and target DC-DC converter footprint.",
-  "Verify facet compatibility for 3.3V output alongside buck or boost conversion requirements.",
-  "Prefer Tier A parts when selecting standard symbols from kicad-symbols."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a Converter land pattern is intended."
  ],
  "avoid_when": [
-  "Avoid when the design requires power conversion parameters other than 3.3V, buck, or boost.",
-  "Avoid if the component mounting requirement is neither surface-mount nor through-hole.",
-  "Avoid when a non-converter IC package family or footprint is required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than Converter."
  ],
  "keywords": [
-  "ic power converter",
-  "3.3v",
-  "buck",
-  "boost",
-  "dc-dc converter",
-  "smd",
-  "through-hole",
-  "converter footprint",
-  "murata",
-  "recom",
-  "traco",
-  "xp power",
-  "kicad-symbols",
   "converter",
   "dc",
   "dcdc",
   "3v",
   "voltage",
+  "buck",
   "step",
   "regulator",
   "down",
   "power",
+  "recom",
   "input",
-  "isolated"
+  "isolated",
+  "output",
+  "ic",
+  "boost"
  ],
  "facts": {
   "package_family": "Converter",
@@ -80,7 +72,7 @@
    "A": 13,
    "B": 17
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -156,6 +148,6 @@
   "kicad-symbols/Converter_DCDC/TSR2-2433N",
   "kicad-symbols/Converter_DCDC/TSR3-2433N"
  ],
- "embedding_text": "ic-power-converter.converter.3v3.buck | IC Power Converter | Cluster of 30 power converter IC components for 3.3V buck and boost applications supporting surface-mount and through-hole footprints. | ic power converter 3.3v buck boost dc-dc converter smd through-hole converter footprint murata recom traco xp power kicad-symbols converter dc dcdc 3v voltage step regulator down power input isolated | Converter | 3.3V buck boost",
+ "embedding_text": "ic-power-converter.converter.3v3.buck | IC Power Converter | 30 ic power converter parts for 3.3V, buck, boost using Converter footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | converter dc dcdc 3v voltage buck step regulator down power recom input isolated output ic boost | Converter | 3.3V buck boost",
  "class": "ic.power.converter"
 }

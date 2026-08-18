@@ -5,31 +5,21 @@
  "category_path": [
   "IC"
  ],
- "description": "Integrated circuit cluster of surface-mount 5V and 5.5V SPI devices in SOIC-8 footprints, including digital potentiometer and real-time clock parts.",
+ "description": "2 ic parts for 5V, SPI, 5.5V using SOIC footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select between digital potentiometer (MCP4131-104E/SN) and real-time clock (DS1302ZN+) components.",
-  "Verify compatibility with 5V or 5.5V SPI operating parameters.",
-  "Confirm requirement for the SOIC-8_L4.9-W3.9-P1.27-LS6.0-BL footprint."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SOIC land pattern is intended."
  ],
  "avoid_when": [
-  "The application requires non-SMD through-hole packages.",
-  "The layout requires footprint specifications other than SOIC-8.",
-  "The design requires non-SPI communication interfaces."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SOIC."
  ],
  "keywords": [
   "soic",
   "spi",
   "5v",
-  "5.5v",
-  "ic",
-  "smd",
-  "soic-8",
-  "digital potentiometer",
-  "real time clock",
-  "mcp4131-104e/sn",
-  "ds1302zn+",
-  "0.3ua",
-  "jlcpcb",
   "l4",
   "w3",
   "p1",
@@ -39,8 +29,10 @@
   "rohs",
   "footprint",
   "c627741",
+  "ic",
   "real",
-  "time"
+  "time",
+  "potentiometer"
  ],
  "facts": {
   "package_family": "SOIC",
@@ -65,7 +57,7 @@
   "tier_counts": {
    "B": 2
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -89,6 +81,6 @@
   "JLCPCB-Kicad-Library/636034/Digital Potentiometer, SPI, MCP4131-104E/SN",
   "JLCPCB-Kicad-Library/JLCPCB-ICs/Real Time Clock, SPI, 0.3uA, DS1302ZN+"
  ],
- "embedding_text": "ic.soic.5v.spi | IC | Integrated circuit cluster of surface-mount 5V and 5.5V SPI devices in SOIC-8 footprints, including digital potentiometer and real-time clock parts. | soic spi 5v 5.5v ic smd soic-8 digital potentiometer real time clock mcp4131-104e/sn ds1302zn+ 0.3ua jlcpcb l4 w3 p1 ls6 bl digital rohs footprint c627741 real time | SOIC | 5V SPI 5.5V",
+ "embedding_text": "ic.soic.5v.spi | IC | 2 ic parts for 5V, SPI, 5.5V using SOIC footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | soic spi 5v l4 w3 p1 ls6 bl digital rohs footprint c627741 ic real time potentiometer | SOIC | 5V SPI 5.5V",
  "class": "ic"
 }

@@ -6,30 +6,22 @@
   "IC",
   "Memory"
  ],
- "description": "Cluster of 3.3V memory ICs in surface-mount 32-pin SOJ packages, featuring tier B KiCad library symbols including AS7C31024B variants.",
+ "description": "2 ic memory parts for 3.3V using SOJ footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select based on required SOJ-32 footprint width (7.62mm vs 10.16mm).",
-  "Verify compatibility with 3.3V power supply requirement.",
-  "Choose between AS7C31024B-xxJ and AS7C31024B-xxTJ package variants."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SOJ land pattern is intended."
  ],
  "avoid_when": [
-  "Operating voltage requirements differ from 3.3V.",
-  "Package family required is not surface-mount SOJ-32.",
-  "Through-hole or non-SMD mounting is needed."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SOJ."
  ],
  "keywords": [
-  "ic",
-  "memory",
-  "3.3v",
   "soj",
-  "soj-32",
-  "smd",
-  "as7c31024b",
-  "as7c31024b-xxj",
-  "as7c31024b-xxtj",
-  "kicad",
-  "1.27mm",
+  "memory",
   "3v",
+  "as7c31024b",
   "ram",
   "mbit",
   "128k",
@@ -65,7 +57,7 @@
   "tier_counts": {
    "B": 2
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -89,6 +81,6 @@
   "kicad-symbols/Memory_RAM/AS7C31024B-xxJ",
   "kicad-symbols/Memory_RAM/AS7C31024B-xxTJ"
  ],
- "embedding_text": "ic-memory.soj.3v3 | IC Memory | Cluster of 3.3V memory ICs in surface-mount 32-pin SOJ packages, featuring tier B KiCad library symbols including AS7C31024B variants. | ic memory 3.3v soj soj-32 smd as7c31024b as7c31024b-xxj as7c31024b-xxtj kicad 1.27mm 3v ram mbit 128k bit cmos sram 20ns mil 955mm p1 27mm so | SOJ | 3.3V",
+ "embedding_text": "ic-memory.soj.3v3 | IC Memory | 2 ic memory parts for 3.3V using SOJ footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | soj memory 3v as7c31024b ram mbit 128k bit cmos sram 20ns mil 955mm p1 27mm so | SOJ | 3.3V",
  "class": "ic.memory"
 }

@@ -5,28 +5,20 @@
  "category_path": [
   "IC"
  ],
- "description": "Integrated circuit cluster containing 3 parts in the D014 package family across D014_L, D014_M, and D014_N footprints.",
+ "description": "3 ic parts using D014 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Match layout requirements against D014_L, D014_M, or D014_N footprint variants.",
-  "Account for tier C quality classification across the 3 available parts.",
-  "Verify mounting requirements since the mount type is listed as unknown."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a D014 land pattern is intended."
  ],
  "avoid_when": [
-  "The target design requires a package family other than D014.",
-  "Higher quality tiers than tier C or planner-visible parts are required.",
-  "Fully specified mounting details are required for component selection."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than D014."
  ],
  "keywords": [
   "d014",
-  "d014_l",
-  "d014_m",
-  "d014_n",
   "ic",
-  "ic.d014",
-  "package family d014",
-  "dist-legacy",
-  "tier c",
-  "integrated circuit",
   "pad",
   "mm",
   "pitch",
@@ -53,7 +45,7 @@
   "tier_counts": {
    "C": 3
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
@@ -61,6 +53,6 @@
   "dist-legacy/D014_M",
   "dist-legacy/D014_N"
  ],
- "embedding_text": "ic.d014 | IC | Integrated circuit cluster containing 3 parts in the D014 package family across D014_L, D014_M, and D014_N footprints. | d014 d014_l d014_m d014_n ic ic.d014 package family d014 dist-legacy tier c integrated circuit pad mm pitch pins | D014 | ",
+ "embedding_text": "ic.d014 | IC | 3 ic parts using D014 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | d014 ic pad mm pitch pins | D014 | ",
  "class": "ic"
 }

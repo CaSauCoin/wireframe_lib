@@ -5,34 +5,25 @@
  "category_path": [
   "IC"
  ],
- "description": "Surface-mount IC cluster in an ESP32S footprint family supporting SPI and UART/serial communication interfaces.",
+ "description": "1 ic parts for SPI, UART/serial using ESP32S footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Require an SMD IC matching the ESP32S footprint family.",
-  "Need SPI or UART/serial communication interfaces.",
-  "Verify entry quality tier and symbol footprint mapping prior to PCB layout."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a ESP32S land pattern is intended."
  ],
  "avoid_when": [
-  "The design requires a package or footprint other than ESP32S.",
-  "Through-hole mounting is required instead of SMD.",
-  "Required electrical specifications or ratings are missing from the entry facts."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than ESP32S."
  ],
  "keywords": [
-  "ic",
-  "esp32s",
-  "esp-32s",
-  "spi",
-  "uart",
-  "serial",
-  "smd",
-  "surface mount",
-  "integrated circuit",
-  "chilaboard",
-  "footprint",
-  "package",
   "module",
   "esp",
   "32s",
   "microcontroller",
+  "spi",
+  "uart",
+  "esp32s",
   "with",
   "multifunctional",
   "gpio",
@@ -40,7 +31,8 @@
   "dac",
   "and",
   "peripherals",
-  "in"
+  "in",
+  "surface"
  ],
  "facts": {
   "package_family": "ESP32S",
@@ -64,7 +56,7 @@
   "tier_counts": {
    "B": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -79,6 +71,6 @@
  "part_ids": [
   "chilaboard-altium-library/ESP-32S/ESP-32S"
  ],
- "embedding_text": "ic.esp32s.spi.uart | IC | Surface-mount IC cluster in an ESP32S footprint family supporting SPI and UART/serial communication interfaces. | ic esp32s esp-32s spi uart serial smd surface mount integrated circuit chilaboard footprint package module esp 32s microcontroller with multifunctional gpio adc dac and peripherals in | ESP32S | SPI UART/serial",
+ "embedding_text": "ic.esp32s.spi.uart | IC | 1 ic parts for SPI, UART/serial using ESP32S footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | module esp 32s microcontroller spi uart esp32s with multifunctional gpio adc dac and peripherals in surface | ESP32S | SPI UART/serial",
  "class": "ic"
 }

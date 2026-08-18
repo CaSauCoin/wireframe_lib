@@ -6,33 +6,22 @@
   "Discrete",
   "Transistor"
  ],
- "description": "Cluster of 11 discrete 20V transistors in TO package family footprints supporting surface-mount and through-hole mounting styles.",
+ "description": "11 discrete transistor parts for 20V using TO footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Choose based on the required mounting style (SMD or through-hole) and specific TO footprint variant.",
-  "Prefer tier A parts (10 available) over tier B parts (1 available).",
-  "Verify compatibility with Alternate-KiCad-Library or digikey-kicad-library sources."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a TO land pattern is intended."
  ],
  "avoid_when": [
-  "The application requires voltage ratings other than 20V.",
-  "The PCB design requires footprint packages outside the TO family.",
-  "Integrated circuits or non-discrete transistor components are needed."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than TO."
  ],
  "keywords": [
-  "discrete transistor",
-  "20v",
   "to",
-  "to-252-2",
-  "to-251-3",
-  "to-220-3",
-  "to-92",
-  "to-39-3",
-  "to-72-4",
-  "smd",
-  "through_hole",
-  "alternate-kicad-library",
-  "digikey-kicad-library",
   "mosfet",
   "transistor",
+  "20v",
   "enchancement",
   "discrete",
   "akl",
@@ -41,7 +30,10 @@
   "kicad",
   "library",
   "dpak",
-  "nmosfet"
+  "nmosfet",
+  "nmos",
+  "mos",
+  "emos"
  ],
  "facts": {
   "package_family": "TO",
@@ -73,7 +65,7 @@
    "A": 10,
    "B": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -130,6 +122,6 @@
   "Alternate-KiCad-Library/Transistor_MOSFET_AKL/TN0702N3",
   "Alternate-KiCad-Library/Transistor_MOSFET_AKL/3N200"
  ],
- "embedding_text": "discrete-transistor.to.20v | Discrete Transistor | Cluster of 11 discrete 20V transistors in TO package family footprints supporting surface-mount and through-hole mounting styles. | discrete transistor 20v to to-252-2 to-251-3 to-220-3 to-92 to-39-3 to-72-4 smd through_hole alternate-kicad-library digikey-kicad-library mosfet transistor enchancement discrete akl mode alternate kicad library dpak nmosfet | TO | 20V",
+ "embedding_text": "discrete-transistor.to.20v | Discrete Transistor | 11 discrete transistor parts for 20V using TO footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | to mosfet transistor 20v enchancement discrete akl mode alternate kicad library dpak nmosfet nmos mos emos | TO | 20V",
  "class": "discrete.transistor"
 }

@@ -6,30 +6,24 @@
   "Passive",
   "Capacitor"
  ],
- "description": "Cluster of 2 passive capacitor parts with SMD or unknown mounts associated with KEMET footprints, including KO-CAP T530 2917_7343 4.3.",
+ "description": "2 passive capacitor parts using KEMET footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Verify footprint compatibility with KEMET or KO-CAP T530 2917_7343 4.3 land patterns.",
-  "Check part quality tier (Tier B or C) and source library before placement.",
-  "Confirm mounting requirements where SMD or unknown mounting is specified."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a KEMET land pattern is intended."
  ],
  "avoid_when": [
-  "The design requires through-hole mounting or non-KEMET footprints.",
-  "A verified Tier A component library entry is required.",
-  "The target component is not a passive capacitor."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than KEMET."
  ],
  "keywords": [
-  "passive",
-  "capacitor",
   "kemet",
-  "ko-cap",
-  "t530",
-  "2917_7343",
-  "smd",
-  "surface mount",
-  "footprint",
-  "passive capacitor",
   "ko",
   "cap",
+  "t530",
+  "capacitor",
+  "passive",
   "surface",
   "mount",
   "mm",
@@ -38,6 +32,7 @@
   "metric",
   "height",
   "package",
+  "smd",
   "pad"
  ],
  "facts": {
@@ -63,7 +58,7 @@
    "B": 1,
    "C": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -79,6 +74,6 @@
   "dist-legacy/KEMET KO-CAP T530 2917_7343 4.3",
   "celestial-altium-library/KEMET KO-CAP T530 2917_7343 4.3/KEMET_KO-CAP_T530_2917_7343_4.3"
  ],
- "embedding_text": "passive-capacitor.kemet | Passive Capacitor | Cluster of 2 passive capacitor parts with SMD or unknown mounts associated with KEMET footprints, including KO-CAP T530 2917_7343 4.3. | passive capacitor kemet ko-cap t530 2917_7343 smd surface mount footprint passive capacitor ko cap surface mount mm series in metric height package pad | KEMET | ",
+ "embedding_text": "passive-capacitor.kemet | Passive Capacitor | 2 passive capacitor parts using KEMET footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | kemet ko cap t530 capacitor passive surface mount mm series in metric height package smd pad | KEMET | ",
  "class": "passive.capacitor"
 }

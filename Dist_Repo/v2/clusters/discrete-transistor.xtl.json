@@ -6,30 +6,19 @@
   "Discrete",
   "Transistor"
  ],
- "description": "Cluster of 4 SMD discrete transistor parts in the XTL package family, containing tier C entries from the chilaboard-altium-library source across footprints XTL_3_3213, XTL_3_4520, XTL_RTC, and XTL_4_9X14.",
+ "description": "4 discrete transistor parts using XTL footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when requiring surface-mount (SMD) discrete transistors in the XTL package family.",
-  "Match board layout requirements to footprints XTL_3_3213, XTL_3_4520, XTL_RTC, or XTL_4_9X14.",
-  "Review quality tier C entries sourced from chilaboard-altium-library."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a XTL land pattern is intended."
  ],
  "avoid_when": [
-  "The PCB layout requires a package family other than XTL.",
-  "Non-SMD mounting is required for the application.",
-  "Planner-visible entries or quality tiers higher than tier C are required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than XTL."
  ],
  "keywords": [
-  "discrete transistor",
   "xtl",
-  "smd",
-  "discrete.transistor",
-  "chilaboard-altium-library",
-  "xtl_3_3213",
-  "xtl_3_4520",
-  "xtl_rtc",
-  "xtl_4_9x14",
-  "surface mount",
-  "tier c",
-  "package family",
   "discrete",
   "transistor",
   "rtc",
@@ -63,7 +52,7 @@
   "tier_counts": {
    "C": 4
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
@@ -72,6 +61,6 @@
   "chilaboard-altium-library/XTL_RTC/XTL_RTC",
   "chilaboard-altium-library/XTL_4_9X14/XTL_4_9X14"
  ],
- "embedding_text": "discrete-transistor.xtl | Discrete Transistor | Cluster of 4 SMD discrete transistor parts in the XTL package family, containing tier C entries from the chilaboard-altium-library source across footprints XTL_3_3213, XTL_3_4520, XTL_RTC, and XTL_4_9X14. | discrete transistor xtl smd discrete.transistor chilaboard-altium-library xtl_3_3213 xtl_3_4520 xtl_rtc xtl_4_9x14 surface mount tier c package family discrete transistor rtc 9x14 surface mount pad mm pitch pins | XTL | ",
+ "embedding_text": "discrete-transistor.xtl | Discrete Transistor | 4 discrete transistor parts using XTL footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | xtl discrete transistor rtc 9x14 surface mount pad mm pitch pins | XTL | ",
  "class": "discrete.transistor"
 }

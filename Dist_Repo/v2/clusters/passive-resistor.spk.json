@@ -6,30 +6,22 @@
   "Passive",
   "Resistor"
  ],
- "description": "A cluster of 7 passive resistor parts across SMD and through-hole SPK package footprints from the chilaboard Altium library.",
+ "description": "7 passive resistor parts using SPK footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Match the specific footprint variant such as SPK, SPK_C17, SPK_C23, SPK_C31, SPK_SC17, or SMD variants.",
-  "Select according to required mounting type, either surface-mount or through-hole.",
-  "Verify part parameters directly as all available entries are tier C."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SPK land pattern is intended."
  ],
  "avoid_when": [
-  "The circuit design requires a component other than a passive resistor.",
-  "The layout requires a footprint outside the SPK package family.",
-  "Pre-verified tier A or tier B library parts are strictly mandated."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SPK."
  ],
  "keywords": [
+  "spk",
   "passive",
   "resistor",
-  "spk",
   "smd",
-  "through hole",
-  "spk_c17",
-  "spk_c23",
-  "spk_c31",
-  "spk_sc17",
-  "spk_smd_1511",
-  "spk_smd_1609",
-  "chilaboard",
   "pad",
   "mm",
   "pitch",
@@ -69,7 +61,7 @@
   "tier_counts": {
    "C": 7
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
@@ -81,6 +73,6 @@
   "chilaboard-altium-library/SPK_SMD_1511/SPK_SMD_1511",
   "chilaboard-altium-library/SPK_SMD_1609/SPK_SMD_1609"
  ],
- "embedding_text": "passive-resistor.spk | Passive Resistor | A cluster of 7 passive resistor parts across SMD and through-hole SPK package footprints from the chilaboard Altium library. | passive resistor spk smd through hole spk_c17 spk_c23 spk_c31 spk_sc17 spk_smd_1511 spk_smd_1609 chilaboard pad mm pitch pins c17 c23 c31 sc17 through hole surface mount | SPK | ",
+ "embedding_text": "passive-resistor.spk | Passive Resistor | 7 passive resistor parts using SPK footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | spk passive resistor smd pad mm pitch pins c17 c23 c31 sc17 through hole surface mount | SPK | ",
  "class": "passive.resistor"
 }

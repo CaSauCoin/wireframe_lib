@@ -5,30 +5,18 @@
  "category_path": [
   "IC"
  ],
- "description": "Surface-mount 4.75V low dropout (LDO) linear voltage regulator ICs in SOT-23-5 packaging.",
+ "description": "2 ic parts for LDO, 4.75V using SOT-23-5 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Use when a 4.75V low dropout (LDO) regulator in a surface-mount SOT-23-5 package is required.",
-  "Verify individual part pinouts and ratings for AP2127K-4.75TRG1 and AP2128K-4.75TRG1.",
-  "Confirm the board layout matches the SOT-23-5 footprint."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SOT-23-5 land pattern is intended."
  ],
  "avoid_when": [
-  "Output voltage requirements differ from 4.75V.",
-  "The target design requires through-hole components or packages other than SOT-23-5.",
-  "Required electrical specifications or pin configurations are unspecified in this cluster."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SOT-23-5."
  ],
  "keywords": [
-  "ldo",
-  "4.75v",
-  "sot-23-5",
-  "voltage regulator",
-  "smd",
-  "ic",
-  "low dropout",
-  "ap2127k-4.75trg1",
-  "ap2128k-4.75trg1",
-  "alternate-kicad-library",
-  "linear regulator",
-  "sot-23",
   "sot",
   "voltage",
   "regulator",
@@ -36,11 +24,15 @@
   "low",
   "dropout",
   "enable",
+  "ldo",
   "75trg1",
   "akl",
   "300ma",
   "with",
-  "alternate"
+  "alternate",
+  "kicad",
+  "library",
+  "vreg"
  ],
  "facts": {
   "package_family": "SOT-23-5",
@@ -64,7 +56,7 @@
   "tier_counts": {
    "A": 2
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -88,6 +80,6 @@
   "Alternate-KiCad-Library/Voltage_Regulator_AKL/AP2127K-4.75TRG1",
   "Alternate-KiCad-Library/Voltage_Regulator_AKL/AP2128K-4.75TRG1"
  ],
- "embedding_text": "ic.sot-23-5.ldo.4-75v | IC | Surface-mount 4.75V low dropout (LDO) linear voltage regulator ICs in SOT-23-5 packaging. | ldo 4.75v sot-23-5 voltage regulator smd ic low dropout ap2127k-4.75trg1 ap2128k-4.75trg1 alternate-kicad-library linear regulator sot-23 sot voltage regulator 75v low dropout enable 75trg1 akl 300ma with alternate | SOT-23-5 | LDO 4.75V",
+ "embedding_text": "ic.sot-23-5.ldo.4-75v | IC | 2 ic parts for LDO, 4.75V using SOT-23-5 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | sot voltage regulator 75v low dropout enable ldo 75trg1 akl 300ma with alternate kicad library vreg | SOT-23-5 | LDO 4.75V",
  "class": "ic"
 }

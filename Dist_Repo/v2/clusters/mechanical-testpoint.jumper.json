@@ -6,30 +6,20 @@
   "Mechanical",
   "Test Point"
  ],
- "description": "Mechanical test point cluster featuring 21 parts in the Jumper package family with surface-mount and through-hole mounting options.",
+ "description": "21 mechanical test point parts using Jumper footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select based on footprint requirements like Jumper_2_NO or Jumper_3_NO variants.",
-  "Choose between surface-mount (SMD) or through-hole mounting types.",
-  "Consider open versus bridged configuration variants available in tier B or C."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a Jumper land pattern is intended."
  ],
  "avoid_when": [
-  "The design requires footprints outside the Jumper package family.",
-  "Tier A components are required, as this cluster contains only tier B and C parts.",
-  "Mounting requirements do not match SMD or through-hole jumper configurations."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than Jumper."
  ],
  "keywords": [
   "jumper",
   "mechanical",
-  "test point",
-  "mechanical testpoint",
-  "smd",
-  "through hole",
-  "jumper_2_no",
-  "jumper_3_no",
-  "jumper strap",
-  "harwin",
-  "bridged jumper",
-  "open jumper",
   "test",
   "point",
   "pitch",
@@ -41,7 +31,9 @@
   "pins",
   "pad",
   "link",
-  "for"
+  "for",
+  "harwin",
+  "pole"
  ],
  "facts": {
   "package_family": "Jumper",
@@ -73,7 +65,7 @@
    "B": 6,
    "C": 15
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -140,6 +132,6 @@
   "dist-legacy/Jumper_Harwin_S1621_P10.9mm",
   "francescosacco-hardwarelibrary/Jumper Strap/Jumper_Strap"
  ],
- "embedding_text": "mechanical-testpoint.jumper | Mechanical Test Point | Mechanical test point cluster featuring 21 parts in the Jumper package family with surface-mount and through-hole mounting options. | jumper mechanical test point mechanical testpoint smd through hole jumper_2_no jumper_3_no jumper strap harwin bridged jumper open jumper test point pitch mm pcb land pattern wire pins pad link for | Jumper | ",
+ "embedding_text": "mechanical-testpoint.jumper | Mechanical Test Point | 21 mechanical test point parts using Jumper footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | jumper mechanical test point pitch mm pcb land pattern wire pins pad link for harwin pole | Jumper | ",
  "class": "mechanical.testpoint"
 }

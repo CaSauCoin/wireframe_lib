@@ -6,30 +6,20 @@
   "IC",
   "Sensor"
  ],
- "description": "This cluster contains 6V through-hole sensor ICs in the TO package family with TO-92S footprints.",
+ "description": "2 ic sensor parts for 6V using TO footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Selecting through-hole sensor ICs in a TO-92S footprint.",
-  "Designs requiring parts in the TO package family with a 6V rating facet.",
-  "Applications accepting tier B component entries from KiCad symbols."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a TO land pattern is intended."
  ],
  "avoid_when": [
-  "Surface-mount PCB designs are required.",
-  "Footprints other than TO-92S or packages outside the TO family are needed.",
-  "Designs requiring tier A verified components."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than TO."
  ],
  "keywords": [
-  "ic",
-  "sensor",
-  "ic sensor",
-  "6v",
   "to",
-  "to-92s",
-  "to 92s",
-  "through hole",
-  "a1301xua",
-  "a1302xua",
-  "kicad symbols",
-  "tier b",
+  "sensor",
   "92s",
   "pin",
   "sip",
@@ -41,7 +31,9 @@
   "0v",
   "supply",
   "transistor",
-  "type"
+  "type",
+  "allegro",
+  "lpg0003a"
  ],
  "facts": {
   "package_family": "TO",
@@ -64,7 +56,7 @@
   "tier_counts": {
    "B": 2
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -88,6 +80,6 @@
   "kicad-symbols/Sensor_Magnetic/A1301xUA",
   "kicad-symbols/Sensor_Magnetic/A1302xUA"
  ],
- "embedding_text": "ic-sensor.to.6v | IC Sensor | This cluster contains 6V through-hole sensor ICs in the TO package family with TO-92S footprints. | ic sensor ic sensor 6v to to-92s to 92s through hole a1301xua a1302xua kicad symbols tier b 92s pin sip magnetic linear hall effect mv 0v supply transistor type | TO | 6V",
+ "embedding_text": "ic-sensor.to.6v | IC Sensor | 2 ic sensor parts for 6V using TO footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | to sensor 92s pin sip magnetic linear hall effect mv 0v supply transistor type allegro lpg0003a | TO | 6V",
  "class": "ic.sensor"
 }

@@ -5,30 +5,20 @@
  "category_path": [
   "IC"
  ],
- "description": "Cluster of 8 integrated circuit parts categorized under IC, featuring surface-mount and unknown mounting styles with Intersil footprints such as MSOP-8 M8.118 and SSOP-20.",
+ "description": "8 ic parts using INTERSIL footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when requiring IC components using Intersil package footprints such as MSOP-8 M8.118 or SSOP-20.",
-  "Confirm footprint details and sources like dist-legacy or celestial-altium-library before selection.",
-  "Verify suitability for surface-mount (SMD) board layouts."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a INTERSIL land pattern is intended."
  ],
  "avoid_when": [
-  "Avoid when the board layout requires footprints other than Intersil package options.",
-  "Do not use if higher quality tier parts (Tier A or B) are strictly required.",
-  "Avoid if planner-visible components are mandatory."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than INTERSIL."
  ],
  "keywords": [
-  "ic",
   "intersil",
-  "msop-8",
-  "ssop-20",
-  "m8.118",
-  "msop-8 m8.118",
-  "smd",
-  "surface mount",
-  "intersil msop-8",
-  "intersil ssop-20",
-  "dist-legacy",
-  "celestial-altium-library",
+  "ic",
   "m8",
   "msop",
   "pad",
@@ -40,7 +30,9 @@
   "tssop",
   "wide",
   "m24",
-  "m28"
+  "m28",
+  "surface",
+  "mount"
  ],
  "facts": {
   "package_family": "INTERSIL",
@@ -65,7 +57,7 @@
   "tier_counts": {
    "C": 8
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
@@ -78,6 +70,6 @@
   "celestial-altium-library/INTERSIL MSOP-8 M8.118/INTERSIL_MSOP-8_M8.118",
   "celestial-altium-library/INTERSIL SSOP-20/INTERSIL_SSOP-20"
  ],
- "embedding_text": "ic.intersil | IC | Cluster of 8 integrated circuit parts categorized under IC, featuring surface-mount and unknown mounting styles with Intersil footprints such as MSOP-8 M8.118 and SSOP-20. | ic intersil msop-8 ssop-20 m8.118 msop-8 m8.118 smd surface mount intersil msop-8 intersil ssop-20 dist-legacy celestial-altium-library m8 msop pad mm pitch pins ssop soic tssop wide m24 m28 | INTERSIL | ",
+ "embedding_text": "ic.intersil | IC | 8 ic parts using INTERSIL footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | intersil ic m8 msop pad mm pitch pins ssop soic tssop wide m24 m28 surface mount | INTERSIL | ",
  "class": "ic"
 }

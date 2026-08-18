@@ -6,31 +6,22 @@
   "Power",
   "Power Rail"
  ],
- "description": "Generic 1.8V power rail symbols for schematic power net labeling with package and footprint chosen later.",
+ "description": "1 power power rail parts for 1.8V with package chosen later. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Use when a 1.8V schematic power rail symbol or net label is required.",
-  "Select when package and footprint assignment is handled separately.",
-  "Verify source library compatibility with SparkFun KiCad libraries."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Select a footprint/package explicitly before placement."
  ],
  "avoid_when": [
-  "A rail voltage other than 1.8V is needed.",
-  "A physical hardware component with a predefined footprint is required.",
-  "Specific electrical ratings or regulatory data must be defined by the symbol."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review."
  ],
  "keywords": [
-  "1.8v",
-  "power rail",
   "power",
-  "power.rail",
-  "power symbol",
-  "voltage rail",
-  "1.8v rail",
-  "sparkfun",
-  "sparkfun-kicad-libraries",
-  "powersymbol",
-  "package chosen later",
   "8v",
+  "sparkfun",
   "global",
+  "powersymbol",
   "symbol",
   "creates",
   "label",
@@ -58,7 +49,7 @@
   "tier_counts": {
    "G": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -73,6 +64,6 @@
  "part_ids": [
   "SparkFun-KiCad-Libraries/SparkFun-PowerSymbol/1.8V"
  ],
- "embedding_text": "power-rail.generic.1-8v | Power Power Rail | Generic 1.8V power rail symbols for schematic power net labeling with package and footprint chosen later. | 1.8v power rail power power.rail power symbol voltage rail 1.8v rail sparkfun sparkfun-kicad-libraries powersymbol package chosen later 8v global symbol creates label with name rail package chosen later | package chosen later | 1.8V",
+ "embedding_text": "power-rail.generic.1-8v | Power Power Rail | 1 power power rail parts for 1.8V with package chosen later. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | power 8v sparkfun global powersymbol symbol creates label with name rail package chosen later | package chosen later | 1.8V",
  "class": "power.rail"
 }

@@ -5,33 +5,21 @@
  "category_path": [
   "IC"
  ],
- "description": "Cluster of 53 IC parts in the ESP32 package family featuring surface-mount, through-hole, and unknown mounting options across footprints like ESP32-WROOM-32E and ESP32-MINI.",
+ "description": "53 ic parts using ESP32 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select based on tier rank (Tier A or B preferred) and library source trust.",
-  "Match the exact required footprint, such as ESP32-WROOM-32E, ESP32-P4, or ESP32-C6-MINI-1.",
-  "Verify mounting configuration between surface-mount (SMD) and through-hole options."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a ESP32 land pattern is intended."
  ],
  "avoid_when": [
-  "A footprint outside the ESP32 package family is required.",
-  "Tier C parts cannot be validated for the design.",
-  "The target design cannot accommodate SMD or through-hole mounting."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than ESP32."
  ],
  "keywords": [
   "esp32",
-  "ic",
-  "smd",
-  "through_hole",
-  "esp32-wroom-32e",
-  "esp32-p4",
-  "esp32-c6-mini-1",
-  "esp32-c3-wroom-02",
-  "esp32-s3-wroom-1",
-  "esp32-s2-mini-1",
-  "esp32-pico-mini",
-  "esp32-mini",
-  "espressif-kicad-libraries",
-  "sparkfun-kicad-libraries",
   "wroom",
+  "ic",
   "espressif",
   "mini",
   "bluetooth",
@@ -40,7 +28,11 @@
   "wi",
   "fi",
   "s2",
-  "module"
+  "module",
+  "s3",
+  "c6",
+  "c5",
+  "ghz"
  ],
  "facts": {
   "package_family": "ESP32",
@@ -78,7 +70,7 @@
    "B": 7,
    "C": 45
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -177,6 +169,6 @@
   "dist-legacy/ESP32-C6-MINI-1",
   "dist-legacy/ESP32-S2-MINI-1"
  ],
- "embedding_text": "ic.esp32 | IC | Cluster of 53 IC parts in the ESP32 package family featuring surface-mount, through-hole, and unknown mounting options across footprints like ESP32-WROOM-32E and ESP32-MINI. | esp32 ic smd through_hole esp32-wroom-32e esp32-p4 esp32-c6-mini-1 esp32-c3-wroom-02 esp32-s3-wroom-1 esp32-s2-mini-1 esp32-pico-mini esp32-mini espressif-kicad-libraries sparkfun-kicad-libraries wroom espressif mini bluetooth and c3 wi fi s2 module | ESP32 | ",
+ "embedding_text": "ic.esp32 | IC | 53 ic parts using ESP32 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | esp32 wroom ic espressif mini bluetooth and c3 wi fi s2 module s3 c6 c5 ghz | ESP32 | ",
  "class": "ic"
 }

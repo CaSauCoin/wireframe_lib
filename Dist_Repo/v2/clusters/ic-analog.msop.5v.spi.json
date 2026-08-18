@@ -6,31 +6,23 @@
   "IC",
   "Analog"
  ],
- "description": "Analog IC component cluster for 5V surface-mount devices with an SPI interface, using MSOP-8 or MSOP-10 footprints.",
+ "description": "2 ic analog parts for 5V, SPI using MSOP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Require 5V supply voltage and SPI communication interface.",
-  "Choose between MSOP-8 (0.65mm pitch) and MSOP-10 (0.5mm pitch) footprints.",
-  "Select for surface-mount (SMD) analog IC designs."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a MSOP land pattern is intended."
  ],
  "avoid_when": [
-  "The PCB layout requires a package footprint other than MSOP.",
-  "The design uses a supply voltage other than 5V.",
-  "An interface protocol other than SPI is needed."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than MSOP."
  ],
  "keywords": [
-  "ic",
   "analog",
-  "5v",
-  "spi",
   "msop",
-  "smd",
-  "msop-8",
-  "msop-10",
-  "0.65mm",
-  "0.5mm",
-  "ltc1864",
-  "ltc1865-ms",
+  "spi",
   "adc",
+  "5v",
   "3x3mm",
   "p0",
   "channel",
@@ -66,7 +58,7 @@
   "tier_counts": {
    "A": 2
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -90,6 +82,6 @@
   "kicad-symbols/Analog_ADC/LTC1864",
   "kicad-symbols/Analog_ADC/LTC1865-MS"
  ],
- "embedding_text": "ic-analog.msop.5v.spi | IC Analog | Analog IC component cluster for 5V surface-mount devices with an SPI interface, using MSOP-8 or MSOP-10 footprints. | ic analog 5v spi msop smd msop-8 msop-10 0.65mm 0.5mm ltc1864 ltc1865-ms adc 3x3mm p0 channel bit sar to digital converter supply 150ksps interface | MSOP | 5V SPI",
+ "embedding_text": "ic-analog.msop.5v.spi | IC Analog | 2 ic analog parts for 5V, SPI using MSOP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | analog msop spi adc 5v 3x3mm p0 channel bit sar to digital converter supply 150ksps interface | MSOP | 5V SPI",
  "class": "ic.analog"
 }

@@ -6,36 +6,29 @@
   "IC",
   "RF"
  ],
- "description": "RF IC components in the TD1208 surface-mount package family sourced from KiCad symbols.",
+ "description": "1 ic rf parts using TD1208 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Verify part specifications against design requirements as this cluster contains tier C generated data.",
-  "Ensure the board layout matches the TD1208 SMD footprint.",
-  "Confirm pin-to-pad mappings prior to PCB layout commitment."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a TD1208 land pattern is intended."
  ],
  "avoid_when": [
-  "The board layout requires a footprint or package other than TD1208.",
-  "Through-hole mounting is required instead of SMD.",
-  "Unverified tier C component data is not permitted by project guidelines."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than TD1208."
  ],
  "keywords": [
   "td1208",
-  "ic",
-  "rf",
-  "ic rf",
-  "ic.rf",
-  "smd",
-  "kicad-symbols",
-  "td1208 footprint",
-  "td1208 package",
-  "surface mount",
   "sigfox",
+  "rf",
   "module",
   "high",
   "performance",
   "low",
   "current",
   "gateway",
-  "iot"
+  "iot",
+  "ic"
  ],
  "facts": {
   "package_family": "TD1208",
@@ -56,12 +49,12 @@
   "tier_counts": {
    "C": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
   "kicad-symbols/RF_Module/TD1208"
  ],
- "embedding_text": "ic-rf.td1208 | IC RF | RF IC components in the TD1208 surface-mount package family sourced from KiCad symbols. | td1208 ic rf ic rf ic.rf smd kicad-symbols td1208 footprint td1208 package surface mount sigfox module high performance low current gateway iot | TD1208 | ",
+ "embedding_text": "ic-rf.td1208 | IC RF | 1 ic rf parts using TD1208 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | td1208 sigfox rf module high performance low current gateway iot ic | TD1208 | ",
  "class": "ic.rf"
 }

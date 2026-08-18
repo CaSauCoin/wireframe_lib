@@ -6,34 +6,24 @@
   "IC",
   "Timing"
  ],
- "description": "Surface-mount timing ICs and oscillators in the Mini package family matching Mini-Circuits BK377 and CK605 footprints.",
+ "description": "3 ic timing parts using Mini footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select based on the required part model such as CVCO55xx, JTOS-25, or JTOS-50.",
-  "Match the target land pattern between Mini-Circuits BK377 (PL-005) and CK605 (PL-012).",
-  "Confirm compatibility with surface-mount (SMD) mounting requirements."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a Mini land pattern is intended."
  ],
  "avoid_when": [
-  "Through-hole mounting is required instead of SMD.",
-  "The board layout requires packages other than Mini-Circuits BK377 or CK605.",
-  "Designs require components rated higher than Tier B."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than Mini."
  ],
  "keywords": [
-  "ic timing",
   "mini",
-  "oscillator",
-  "smd",
-  "cvco55xx",
-  "jtos-25",
-  "jtos-50",
-  "mini-circuits",
-  "bk377",
-  "ck605",
-  "landpatternpl-005",
-  "landpatternpl-012",
-  "kicad-symbols",
   "circuits",
+  "oscillator",
   "vcxo",
   "jtos",
+  "bk377",
   "voltage",
   "controlled",
   "landpatternpl",
@@ -41,7 +31,9 @@
   "ic",
   "timing",
   "crystek",
-  "to"
+  "to",
+  "mhz",
+  "cvco55xx"
  ],
  "facts": {
   "package_family": "Mini",
@@ -63,7 +55,7 @@
   "tier_counts": {
    "B": 3
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -96,6 +88,6 @@
   "kicad-symbols/Oscillator/JTOS-25",
   "kicad-symbols/Oscillator/JTOS-50"
  ],
- "embedding_text": "ic-timing.mini | IC Timing | Surface-mount timing ICs and oscillators in the Mini package family matching Mini-Circuits BK377 and CK605 footprints. | ic timing mini oscillator smd cvco55xx jtos-25 jtos-50 mini-circuits bk377 ck605 landpatternpl-005 landpatternpl-012 kicad-symbols circuits vcxo jtos voltage controlled landpatternpl pl ic timing crystek to | Mini | ",
+ "embedding_text": "ic-timing.mini | IC Timing | 3 ic timing parts using Mini footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | mini circuits oscillator vcxo jtos bk377 voltage controlled landpatternpl pl ic timing crystek to mhz cvco55xx | Mini | ",
  "class": "ic.timing"
 }

@@ -6,42 +6,34 @@
   "Discrete",
   "Transistor"
  ],
- "description": "This cluster includes 7 tier-A discrete transistor parts rated for 24V in the TO package family, supporting surface-mount and through-hole mounting.",
+ "description": "7 discrete transistor parts for 24V using TO footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when requiring a 24V discrete transistor in a TO package family footprint.",
-  "Choose between surface-mount (SMD) and through-hole mounting variants.",
-  "Match the specific TO footprint variant such as TO-220, TO-251, TO-252, TO-262, or TO-263."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a TO land pattern is intended."
  ],
  "avoid_when": [
-  "The application requires a voltage rating other than 24V.",
-  "The PCB design requires a package family other than TO.",
-  "A mounting style other than surface-mount or through-hole is needed."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than TO."
  ],
  "keywords": [
-  "discrete",
-  "transistor",
-  "24v",
   "to",
-  "smd",
-  "through_hole",
-  "discrete transistor",
-  "to-220-3_vertical_gds",
-  "to-262-3_vertical_gds",
-  "to-263-2",
-  "to-263-6",
-  "to-252-2",
-  "to-251-3_vertical_gds",
-  "auirf1324",
-  "irf1324",
   "mosfet",
+  "transistor",
   "enchancement",
+  "24v",
   "vertical",
   "mos",
   "akl",
   "mode",
   "alternate",
   "kicad",
-  "library"
+  "library",
+  "nmos",
+  "emos",
+  "emosfet",
+  "discrete"
  ],
  "facts": {
   "package_family": "TO",
@@ -70,7 +62,7 @@
   "tier_counts": {
    "A": 7
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -123,6 +115,6 @@
   "Alternate-KiCad-Library/Transistor_MOSFET_AKL/NTD85N02R",
   "Alternate-KiCad-Library/Transistor_MOSFET_AKL/NTD85N02R-1G"
  ],
- "embedding_text": "discrete-transistor.to.24v | Discrete Transistor | This cluster includes 7 tier-A discrete transistor parts rated for 24V in the TO package family, supporting surface-mount and through-hole mounting. | discrete transistor 24v to smd through_hole discrete transistor to-220-3_vertical_gds to-262-3_vertical_gds to-263-2 to-263-6 to-252-2 to-251-3_vertical_gds auirf1324 irf1324 mosfet enchancement vertical mos akl mode alternate kicad library | TO | 24V",
+ "embedding_text": "discrete-transistor.to.24v | Discrete Transistor | 7 discrete transistor parts for 24V using TO footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | to mosfet transistor enchancement 24v vertical mos akl mode alternate kicad library nmos emos emosfet discrete | TO | 24V",
  "class": "discrete.transistor"
 }

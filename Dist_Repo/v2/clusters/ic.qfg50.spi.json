@@ -5,34 +5,23 @@
  "category_path": [
   "IC"
  ],
- "description": "Surface-mount IC cluster featuring an SPI interface in QFG50 package family footprints QFG50_48 and QFG50_100.",
+ "description": "4 ic parts for SPI using QFG50 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Choose when requiring a surface-mount IC with an SPI interface.",
-  "Select between QFG50_48 and QFG50_100 footprint options.",
-  "Verify compatibility with tier B parts from chilaboard-altium-library."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a QFG50 land pattern is intended."
  ],
  "avoid_when": [
-  "The design requires through-hole mounting instead of SMD.",
-  "A package footprint other than QFG50_48 or QFG50_100 is needed.",
-  "An interface other than SPI is required.",
-  "Tier A quality status is required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than QFG50."
  ],
  "keywords": [
-  "ic",
-  "spi",
-  "qfg50",
-  "qfg50_48",
-  "qfg50_100",
-  "smd",
-  "qfp48",
-  "qfp100",
-  "vs1003_qfp48",
-  "vs1053_qfp48",
-  "atmega6490a_qfp100",
-  "vs1001_qfp48",
-  "chilaboard-altium-library",
-  "surface mount",
   "audio",
+  "spi",
+  "qfp48",
+  "qfg50",
+  "ic",
   "codec",
   "and",
   "qfp",
@@ -41,7 +30,9 @@
   "decoder",
   "vs1003",
   "featuring",
-  "analog"
+  "analog",
+  "outputs",
+  "interface"
  ],
  "facts": {
   "package_family": "QFG50",
@@ -65,7 +56,7 @@
   "tier_counts": {
    "B": 4
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -107,6 +98,6 @@
   "chilaboard-altium-library/ATMEGA6490A_QFP100/ATMEGA6490A_QFP100",
   "chilaboard-altium-library/VS1001_QFP48/VS1001_QFP48"
  ],
- "embedding_text": "ic.qfg50.spi | IC | Surface-mount IC cluster featuring an SPI interface in QFG50 package family footprints QFG50_48 and QFG50_100. | ic spi qfg50 qfg50_48 qfg50_100 smd qfp48 qfp100 vs1003_qfp48 vs1053_qfp48 atmega6490a_qfp100 vs1001_qfp48 chilaboard-altium-library surface mount audio codec and qfp in pin decoder vs1003 featuring analog | QFG50 | SPI",
+ "embedding_text": "ic.qfg50.spi | IC | 4 ic parts for SPI using QFG50 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | audio spi qfp48 qfg50 ic codec and qfp in pin decoder vs1003 featuring analog outputs interface | QFG50 | SPI",
  "class": "ic"
 }

@@ -6,42 +6,34 @@
   "IC",
   "Analog"
  ],
- "description": "Surface-mount analog IC cluster providing SPI components in SO-8 footprints from the KiCad symbols library.",
+ "description": "2 ic analog parts for SPI using SO footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when an analog IC with an SPI interface is required.",
-  "Choose for surface-mount designs requiring an SO-8 footprint.",
-  "Use when selecting tier A parts from the KiCad symbols library."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SO land pattern is intended."
  ],
  "avoid_when": [
-  "Do not use if the board layout requires a footprint other than SO-8.",
-  "Avoid when non-surface-mount mounting is needed.",
-  "Avoid if an interface protocol other than SPI is required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SO."
  ],
  "keywords": [
-  "ic",
   "analog",
   "spi",
-  "so",
-  "so-8",
-  "smd",
-  "surface mount",
-  "kicad",
-  "kicad-symbols",
-  "mcp3550-60-esn",
-  "mcp3553-esn",
-  "tier a",
-  "analog adc",
   "adc",
   "delta",
   "sigma",
   "22bit",
   "converter",
+  "so",
   "esn",
   "single",
   "to",
   "digital",
   "interface",
-  "msop"
+  "msop",
+  "sparkfun",
+  "soic"
  ],
  "facts": {
   "package_family": "SO",
@@ -64,7 +56,7 @@
   "tier_counts": {
    "A": 2
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -88,6 +80,6 @@
   "kicad-symbols/Analog_ADC/MCP3550-60-ESN",
   "kicad-symbols/Analog_ADC/MCP3553-ESN"
  ],
- "embedding_text": "ic-analog.so.spi | IC Analog | Surface-mount analog IC cluster providing SPI components in SO-8 footprints from the KiCad symbols library. | ic analog spi so so-8 smd surface mount kicad kicad-symbols mcp3550-60-esn mcp3553-esn tier a analog adc adc delta sigma 22bit converter esn single to digital interface msop | SO | SPI",
+ "embedding_text": "ic-analog.so.spi | IC Analog | 2 ic analog parts for SPI using SO footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | analog spi adc delta sigma 22bit converter so esn single to digital interface msop sparkfun soic | SO | SPI",
  "class": "ic.analog"
 }

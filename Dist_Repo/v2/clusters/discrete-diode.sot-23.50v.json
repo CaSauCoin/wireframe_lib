@@ -6,43 +6,34 @@
   "Discrete",
   "Diode"
  ],
- "description": "Cluster of 16 tier-A discrete diode parts rated 50V, all using SOT-23 SMD footprints, sourced from the Alternate-KiCad-Library.",
+ "description": "16 discrete diode parts for 50V using SOT-23 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "All 16 parts in this cluster are tier A with a score of 100.",
-  "All entries share the same SOT-23 footprint and 50V facet.",
-  "Verify exact pin mapping against the chosen part's symbol/footprint before layout.",
-  "All parts come from a single source (Alternate-KiCad-Library)."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SOT-23 land pattern is intended."
  ],
  "avoid_when": [
-  "A voltage rating other than 50V is required.",
-  "A footprint other than SOT-23 is needed.",
-  "Electrical characteristics beyond the stated 50V facet must be verified and are not confirmed here."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SOT-23."
  ],
  "keywords": [
   "diode",
-  "discrete diode",
-  "sot-23",
-  "sot23",
-  "50v",
-  "50 volt diode",
-  "smd diode",
-  "surface mount diode",
-  "kicad",
-  "alternate-kicad-library",
-  "akl",
-  "tier a",
-  "discrete",
-  "diode sot-23",
   "sot",
+  "50v",
   "dual",
+  "akl",
   "alternate",
+  "kicad",
   "library",
+  "discrete",
   "common",
   "small",
   "signal",
   "cathode",
   "commoncathode",
-  "pin"
+  "pin",
+  "100ma"
  ],
  "facts": {
   "package_family": "SOT-23",
@@ -65,7 +56,7 @@
   "tier_counts": {
    "A": 16
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -127,6 +118,6 @@
   "Alternate-KiCad-Library/Diode_AKL/SMBD2838",
   "Alternate-KiCad-Library/Diode_Schottky_AKL/ZC5800E"
  ],
- "embedding_text": "discrete-diode.sot-23.50v | Discrete Diode | Cluster of 16 tier-A discrete diode parts rated 50V, all using SOT-23 SMD footprints, sourced from the Alternate-KiCad-Library. | diode discrete diode sot-23 sot23 50v 50 volt diode smd diode surface mount diode kicad alternate-kicad-library akl tier a discrete diode sot-23 sot dual alternate library common small signal cathode commoncathode pin | SOT-23 | 50V",
+ "embedding_text": "discrete-diode.sot-23.50v | Discrete Diode | 16 discrete diode parts for 50V using SOT-23 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | diode sot 50v dual akl alternate kicad library discrete common small signal cathode commoncathode pin 100ma | SOT-23 | 50V",
  "class": "discrete.diode"
 }

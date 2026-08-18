@@ -6,42 +6,34 @@
   "IC",
   "Memory"
  ],
- "description": "Cluster of 6 surface-mount 3V SPI memory ICs in SOIC package variations, including SOIC-8 and SOIC-16W footprints.",
+ "description": "6 ic memory parts for SPI, 3V using SOIC footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select for designs requiring a 3V operating voltage and SPI interface.",
-  "Choose according to specific SOIC footprint dimensions such as SOIC-8 (3.9x4.9mm or 5.3x5.3mm) or SOIC-16W (7.5x10.3mm).",
-  "Ensure surface-mount (SMD) mounting compatibility."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SOIC land pattern is intended."
  ],
  "avoid_when": [
-  "The application requires non-3V operating voltages.",
-  "A non-SPI interface is required.",
-  "The design requires package families other than SOIC or through-hole mounting."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SOIC."
  ],
  "keywords": [
-  "ic memory",
-  "spi",
-  "3v",
   "soic",
-  "smd",
-  "jeita_soic-8",
-  "soic-8",
-  "soic-16w",
-  "memory_flash",
-  "p1.27mm",
-  "kicad-symbols",
-  "gd25d05ct",
-  "gd25d10ct",
-  "m25px32-vmw",
-  "mx25l3233fm",
   "memory",
+  "spi",
   "flash",
   "sop",
   "so",
+  "3v",
   "jeita",
   "serial",
   "p1",
   "27mm",
-  "sop08"
+  "sop08",
+  "ic",
+  "0v",
+  "w8",
+  "dual"
  ],
  "facts": {
   "package_family": "SOIC",
@@ -67,7 +59,7 @@
   "tier_counts": {
    "A": 6
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -119,6 +111,6 @@
   "kicad-symbols/Memory_Flash/MX25L3233FM1",
   "kicad-symbols/Memory_Flash/MX25L3233FM2"
  ],
- "embedding_text": "ic-memory.soic.spi.3v | IC Memory | Cluster of 6 surface-mount 3V SPI memory ICs in SOIC package variations, including SOIC-8 and SOIC-16W footprints. | ic memory spi 3v soic smd jeita_soic-8 soic-8 soic-16w memory_flash p1.27mm kicad-symbols gd25d05ct gd25d10ct m25px32-vmw mx25l3233fm memory flash sop so jeita serial p1 27mm sop08 | SOIC | SPI 3V",
+ "embedding_text": "ic-memory.soic.spi.3v | IC Memory | 6 ic memory parts for SPI, 3V using SOIC footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | soic memory spi flash sop so 3v jeita serial p1 27mm sop08 ic 0v w8 dual | SOIC | SPI 3V",
  "class": "ic.memory"
 }

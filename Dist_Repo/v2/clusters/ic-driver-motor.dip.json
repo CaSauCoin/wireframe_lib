@@ -7,42 +7,34 @@
   "Driver",
   "Motor"
  ],
- "description": "Through-hole motor driver IC cluster containing 6 parts in DIP package footprints including DIP-14, DIP-16, and DIP-20.",
+ "description": "6 ic driver motor parts using DIP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select based on pin count and footprint variant, such as DIP-14, DIP-16_W7.62mm, or DIP-20_W7.62mm.",
-  "Prefer Tier A parts such as L293, L293D, L293E, or SN754410NE.",
-  "Ensure the design requires through-hole DIP mounting."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a DIP land pattern is intended."
  ],
  "avoid_when": [
-  "Surface-mount (SMD) components are required for the PCB design.",
-  "Components other than motor driver ICs are needed.",
-  "Footprints outside of DIP-14, DIP-16, or DIP-20 are required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than DIP."
  ],
  "keywords": [
-  "ic",
+  "dip",
   "driver",
   "motor",
-  "dip",
-  "through_hole",
-  "dip-14",
-  "dip-16",
-  "dip-20",
-  "l293",
-  "l293d",
-  "l293e",
-  "sn754410ne",
-  "l297",
-  "w7.62mm",
-  "motor driver",
-  "ic driver motor",
   "62mm",
+  "ic",
   "half",
   "w7",
   "tht",
   "dil",
   "pdip",
   "54mm",
-  "300mil"
+  "300mil",
+  "quadruple",
+  "drivers",
+  "stepper",
+  "controller"
  ],
  "facts": {
   "package_family": "DIP",
@@ -67,7 +59,7 @@
    "A": 4,
    "B": 2
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -119,6 +111,6 @@
   "kicad-symbols/Driver_Motor/L297",
   "kicad-symbols/Driver_Motor/PG001M"
  ],
- "embedding_text": "ic-driver-motor.dip | IC Driver Motor | Through-hole motor driver IC cluster containing 6 parts in DIP package footprints including DIP-14, DIP-16, and DIP-20. | ic driver motor dip through_hole dip-14 dip-16 dip-20 l293 l293d l293e sn754410ne l297 w7.62mm motor driver ic driver motor 62mm half w7 tht dil pdip 54mm 300mil | DIP | ",
+ "embedding_text": "ic-driver-motor.dip | IC Driver Motor | 6 ic driver motor parts using DIP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | dip driver motor 62mm ic half w7 tht dil pdip 54mm 300mil quadruple drivers stepper controller | DIP | ",
  "class": "ic.driver.motor"
 }

@@ -6,43 +6,33 @@
   "Discrete",
   "Diode"
  ],
- "description": "Generic discrete diode cluster of 278 parts spanning multiple symbol libraries (KiCad, Altium); no package/footprint is assigned yet and all entries are tier G (auto-generated, unreviewed).",
+ "description": "278 discrete diode parts with package chosen later. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "All 278 entries are tier G (generated, not yet reviewed) — verify each against a datasheet before use.",
-  "No footprint or package is set; choose and confirm a footprint explicitly before layout.",
-  "Match the symbol variant (e.g., single diode, dual common-anode, 45-degree orientation) to your schematic topology.",
-  "Check the source library (kicad-symbols, Alternate-KiCad-Library, chilaboard/celestial Altium libraries, etc.) for provenance."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Select a footprint/package explicitly before placement."
  ],
  "avoid_when": [
-  "You need a stated electrical rating (voltage, current, switching speed) — none is provided for these entries.",
-  "You require a verified, non-guessed symbol-footprint pairing for PCB placement.",
-  "You need a reviewed or higher-tier part; only tier G (generated) parts exist in this cluster."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review."
  ],
  "keywords": [
   "diode",
-  "discrete diode",
-  "generic diode",
-  "package chosen later",
-  "dual diode",
-  "common anode",
-  "d_45deg",
-  "akk",
-  "device symbol",
-  "kicad symbols",
-  "altium library",
-  "chilaboard",
-  "celestial",
-  "tier g",
-  "generated",
-  "unreviewed",
-  "no footprint assigned",
-  "symbol only",
   "dual",
   "discrete",
   "generic",
   "package",
   "chosen",
-  "later"
+  "later",
+  "schottky",
+  "symbol",
+  "akl",
+  "alternate",
+  "kicad",
+  "library",
+  "diodes",
+  "device",
+  "bridge"
  ],
  "facts": {
   "package_family": "package chosen later",
@@ -65,7 +55,7 @@
   "tier_counts": {
    "G": 278
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -389,6 +379,6 @@
   "dist-legacy/DIODE BRIDGE(FLAT) BIG",
   "dist-legacy/Diode Bridge"
  ],
- "embedding_text": "discrete-diode.generic | Discrete Diode | Generic discrete diode cluster of 278 parts spanning multiple symbol libraries (KiCad, Altium); no package/footprint is assigned yet and all entries are tier G (auto-generated, unreviewed). | diode discrete diode generic diode package chosen later dual diode common anode d_45deg akk device symbol kicad symbols altium library chilaboard celestial tier g generated unreviewed no footprint assigned symbol only dual discrete generic package chosen later | package chosen later | ",
+ "embedding_text": "discrete-diode.generic | Discrete Diode | 278 discrete diode parts with package chosen later. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | diode dual discrete generic package chosen later schottky symbol akl alternate kicad library diodes device bridge | package chosen later | ",
  "class": "discrete.diode"
 }

@@ -6,30 +6,18 @@
   "IC",
   "Power"
  ],
- "description": "Surface-mount power IC cluster featuring SOT-23 family packaging with SOT-23-6 footprints associated with 5V and 2.5V facets.",
+ "description": "1 ic power parts for 5V, 2.5V using SOT-23 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Choose when requiring surface-mount power ICs in a SOT-23 package family or SOT-23-6 footprint.",
-  "Verify part compatibility with 5V or 2.5V operating requirements.",
-  "Select Tier A library parts such as LM2665M6 from KiCad symbol sources."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SOT-23 land pattern is intended."
  ],
  "avoid_when": [
-  "The PCB design requires packages other than SOT-23 or SOT-23-6.",
-  "Through-hole assembly is required instead of surface mounting.",
-  "Operating voltage requirements fall outside 5V or 2.5V facets."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SOT-23."
  ],
  "keywords": [
-  "ic",
-  "power",
-  "sot-23",
-  "sot-23-6",
-  "5v",
-  "2.5v",
-  "smd",
-  "lm2665m6",
-  "regulator",
-  "switched capacitor",
-  "power ic",
-  "kicad",
   "sot",
   "voltage",
   "to",
@@ -37,11 +25,15 @@
   "capacitor",
   "converter",
   "or",
+  "5v",
+  "lm2665m6",
+  "regulator",
   "switchedcapacitor",
   "doubles",
   "splits",
   "input",
-  "supply"
+  "supply",
+  "ma"
  ],
  "facts": {
   "package_family": "SOT-23",
@@ -65,7 +57,7 @@
   "tier_counts": {
    "A": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -80,6 +72,6 @@
  "part_ids": [
   "kicad-symbols/Regulator_SwitchedCapacitor/LM2665M6"
  ],
- "embedding_text": "ic-power.sot-23.5v.2-5v | IC Power | Surface-mount power IC cluster featuring SOT-23 family packaging with SOT-23-6 footprints associated with 5V and 2.5V facets. | ic power sot-23 sot-23-6 5v 2.5v smd lm2665m6 regulator switched capacitor power ic kicad sot voltage to switched capacitor converter or switchedcapacitor doubles splits input supply | SOT-23 | 5V 2.5V",
+ "embedding_text": "ic-power.sot-23.5v.2-5v | IC Power | 1 ic power parts for 5V, 2.5V using SOT-23 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | sot voltage to switched capacitor converter or 5v lm2665m6 regulator switchedcapacitor doubles splits input supply ma | SOT-23 | 5V 2.5V",
  "class": "ic.power"
 }

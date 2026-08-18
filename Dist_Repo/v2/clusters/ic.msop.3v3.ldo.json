@@ -5,33 +5,23 @@
  "category_path": [
   "IC"
  ],
- "description": "This cluster contains 8 surface-mount 3.3V LDO regulator ICs in MSOP package variants, sourced from Alternate-KiCad-Library.",
+ "description": "8 ic parts for 3.3V, LDO using MSOP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Match the specific footprint requirement, such as MSOP-8, MSOP-8-1EP, or MSOP-12-1EP.",
-  "Prefer tier A parts over tier B parts for higher quality scoring.",
-  "Verify that a 3.3V LDO IC in an SMD MSOP package fits the application."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a MSOP land pattern is intended."
  ],
  "avoid_when": [
-  "The PCB layout requires package families other than MSOP.",
-  "Through-hole mounting is required instead of SMD surface mount.",
-  "The circuit requires a voltage rail or regulator type other than 3.3V LDO."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than MSOP."
  ],
  "keywords": [
-  "ic",
-  "3.3v",
-  "ldo",
   "msop",
-  "smd",
-  "voltage regulator",
-  "msop-8",
-  "msop-8-1ep",
-  "msop-12-1ep",
-  "0.65mm",
-  "alternate-kicad-library",
-  "exposed pad",
   "voltage",
   "regulator",
   "3v",
+  "ldo",
   "low",
   "dropout",
   "akl",
@@ -40,7 +30,9 @@
   "library",
   "p0",
   "65mm",
-  "so"
+  "so",
+  "vreg",
+  "pmic"
  ],
  "facts": {
   "package_family": "MSOP",
@@ -67,7 +59,7 @@
    "A": 6,
    "B": 2
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -121,6 +113,6 @@
   "Alternate-KiCad-Library/Voltage_Regulator_AKL/LT3015EMSE-3.3",
   "Alternate-KiCad-Library/Voltage_Regulator_AKL/LT3015IMSE-3.3"
  ],
- "embedding_text": "ic.msop.3v3.ldo | IC | This cluster contains 8 surface-mount 3.3V LDO regulator ICs in MSOP package variants, sourced from Alternate-KiCad-Library. | ic 3.3v ldo msop smd voltage regulator msop-8 msop-8-1ep msop-12-1ep 0.65mm alternate-kicad-library exposed pad voltage regulator 3v low dropout akl alternate kicad library p0 65mm so | MSOP | 3.3V LDO",
+ "embedding_text": "ic.msop.3v3.ldo | IC | 8 ic parts for 3.3V, LDO using MSOP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | msop voltage regulator 3v ldo low dropout akl alternate kicad library p0 65mm so vreg pmic | MSOP | 3.3V LDO",
  "class": "ic"
 }

@@ -5,27 +5,20 @@
  "category_path": [
   "IC"
  ],
- "description": "IC cluster containing one tier C part using the 8x8S package footprint from legacy distribution sources.",
+ "description": "1 ic parts using 8x8S footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Use when an IC utilizing an 8x8S package footprint is required.",
-  "Verify exact footprint land pattern and pin mapping before PCB layout.",
-  "Check tier C quality status and source details prior to part selection."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a 8x8S land pattern is intended."
  ],
  "avoid_when": [
-  "The layout requires a footprint family other than 8x8S.",
-  "Electrical specifications or land pattern details are missing or unspecified.",
-  "Application requirements mandate a higher quality tier than tier C."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than 8x8S."
  ],
  "keywords": [
   "8x8s",
   "ic",
-  "ic 8x8s",
-  "8x8s footprint",
-  "8x8s package",
-  "dist-legacy",
-  "tier c",
-  "unknown mount",
-  "generated review",
   "pad",
   "mm",
   "pitch",
@@ -50,12 +43,12 @@
   "tier_counts": {
    "C": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
   "dist-legacy/8x8S"
  ],
- "embedding_text": "ic.8x8s | IC | IC cluster containing one tier C part using the 8x8S package footprint from legacy distribution sources. | 8x8s ic ic 8x8s 8x8s footprint 8x8s package dist-legacy tier c unknown mount generated review pad mm pitch pins | 8x8S | ",
+ "embedding_text": "ic.8x8s | IC | 1 ic parts using 8x8S footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | 8x8s ic pad mm pitch pins | 8x8S | ",
  "class": "ic"
 }

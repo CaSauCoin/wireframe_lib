@@ -6,28 +6,22 @@
   "Passive",
   "Resistor"
  ],
- "description": "Surface-mount passive resistor components using DO-214AB (SMC) package footprints.",
+ "description": "1 passive resistor parts using DO214AB footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Verify footprint dimensions and land pattern match DO-214AB (SMC) requirements.",
-  "Confirm specific electrical ratings and tolerances from part data before layout.",
-  "Review quality tier and library source trust ratings."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a DO214AB land pattern is intended."
  ],
  "avoid_when": [
-  "A package family or footprint other than DO-214AB (SMC) is required.",
-  "Through-hole mounting or non-SMD construction is needed.",
-  "Electrical specifications or footprint pairings are unverified for your design."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than DO214AB."
  ],
  "keywords": [
-  "passive",
-  "resistor",
-  "do-214ab",
   "do214ab",
   "smc",
-  "smd",
-  "surface mount",
-  "passive resistor",
-  "package",
-  "footprint",
+  "passive",
+  "resistor",
   "surface",
   "mount",
   "pad",
@@ -54,12 +48,12 @@
   "tier_counts": {
    "C": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
   "celestial-altium-library/DO214AB SMC/DO214AB_SMC"
  ],
- "embedding_text": "passive-resistor.do214ab | Passive Resistor | Surface-mount passive resistor components using DO-214AB (SMC) package footprints. | passive resistor do-214ab do214ab smc smd surface mount passive resistor package footprint surface mount pad mm pitch pins | DO214AB | ",
+ "embedding_text": "passive-resistor.do214ab | Passive Resistor | 1 passive resistor parts using DO214AB footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | do214ab smc passive resistor surface mount pad mm pitch pins | DO214AB | ",
  "class": "passive.resistor"
 }

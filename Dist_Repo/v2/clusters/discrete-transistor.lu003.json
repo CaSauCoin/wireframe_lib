@@ -6,28 +6,21 @@
   "Discrete",
   "Transistor"
  ],
- "description": "Discrete transistor cluster containing 1 part associated with the LU003 package family and footprint.",
+ "description": "1 discrete transistor parts using LU003 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Verify footprint compatibility with the LU003 land pattern.",
-  "Confirm part suitability given tier C quality and generated review status.",
-  "Use when a discrete transistor in the LU003 package family is needed."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a LU003 land pattern is intended."
  ],
  "avoid_when": [
-  "The board layout requires a package family other than LU003.",
-  "Parts with quality tier C or unreviewed generated status cannot be used.",
-  "Planner-visible parts are required, as the planner visible count is zero."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than LU003."
  ],
  "keywords": [
   "lu003",
   "discrete",
   "transistor",
-  "discrete transistor",
-  "discrete.transistor",
-  "lu003 footprint",
-  "lu003 package",
-  "package family lu003",
-  "dist-legacy",
-  "tier c",
   "pad",
   "mm",
   "pitch",
@@ -52,12 +45,12 @@
   "tier_counts": {
    "C": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
   "dist-legacy/LU003"
  ],
- "embedding_text": "discrete-transistor.lu003 | Discrete Transistor | Discrete transistor cluster containing 1 part associated with the LU003 package family and footprint. | lu003 discrete transistor discrete transistor discrete.transistor lu003 footprint lu003 package package family lu003 dist-legacy tier c pad mm pitch pins | LU003 | ",
+ "embedding_text": "discrete-transistor.lu003 | Discrete Transistor | 1 discrete transistor parts using LU003 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | lu003 discrete transistor pad mm pitch pins | LU003 | ",
  "class": "discrete.transistor"
 }

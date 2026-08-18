@@ -6,28 +6,21 @@
   "Discrete",
   "Transistor"
  ],
- "description": "Discrete transistor cluster containing 1 part associated with the KC03 package family and footprint.",
+ "description": "1 discrete transistor parts using KC03 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Require a discrete transistor in the KC03 package family.",
-  "Verify footprint details as the cluster review status is generated.",
-  "Confirm suitability of the single tier-C part from dist-legacy."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a KC03 land pattern is intended."
  ],
  "avoid_when": [
-  "A footprint or package family other than KC03 is required.",
-  "Higher quality tier parts or planner-visible entries are required.",
-  "Generated unreviewed cluster data is unacceptable for the design."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than KC03."
  ],
  "keywords": [
   "kc03",
   "discrete",
   "transistor",
-  "discrete transistor",
-  "kc03 footprint",
-  "kc03 package",
-  "discrete.transistor",
-  "dist-legacy",
-  "tier c",
-  "package family kc03",
   "pad",
   "mm",
   "pitch",
@@ -52,12 +45,12 @@
   "tier_counts": {
    "C": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
   "dist-legacy/KC03"
  ],
- "embedding_text": "discrete-transistor.kc03 | Discrete Transistor | Discrete transistor cluster containing 1 part associated with the KC03 package family and footprint. | kc03 discrete transistor discrete transistor kc03 footprint kc03 package discrete.transistor dist-legacy tier c package family kc03 pad mm pitch pins | KC03 | ",
+ "embedding_text": "discrete-transistor.kc03 | Discrete Transistor | 1 discrete transistor parts using KC03 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | kc03 discrete transistor pad mm pitch pins | KC03 | ",
  "class": "discrete.transistor"
 }

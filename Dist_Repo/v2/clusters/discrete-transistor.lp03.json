@@ -6,28 +6,21 @@
   "Discrete",
   "Transistor"
  ],
- "description": "Discrete transistor cluster containing 1 tier-C part associated with the LP03 package footprint.",
+ "description": "1 discrete transistor parts using LP03 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Verify LP03 footprint compatibility for the intended PCB layout.",
-  "Confirm discrete transistor pinout and electrical specs as quality tier is C.",
-  "Check legacy distributor source data before selecting."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a LP03 land pattern is intended."
  ],
  "avoid_when": [
-  "The PCB design requires a package footprint other than LP03.",
-  "A verified or planner-visible part tier is required.",
-  "Electrical parameters or pin mappings are not verified in the source catalog."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than LP03."
  ],
  "keywords": [
-  "discrete transistor",
+  "lp03",
   "discrete",
   "transistor",
-  "lp03",
-  "lp03 footprint",
-  "lp03 package",
-  "tier c",
-  "dist-legacy",
-  "discrete.transistor",
-  "package family lp03",
   "pad",
   "mm",
   "pitch",
@@ -52,12 +45,12 @@
   "tier_counts": {
    "C": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
   "dist-legacy/LP03"
  ],
- "embedding_text": "discrete-transistor.lp03 | Discrete Transistor | Discrete transistor cluster containing 1 tier-C part associated with the LP03 package footprint. | discrete transistor discrete transistor lp03 lp03 footprint lp03 package tier c dist-legacy discrete.transistor package family lp03 pad mm pitch pins | LP03 | ",
+ "embedding_text": "discrete-transistor.lp03 | Discrete Transistor | 1 discrete transistor parts using LP03 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | lp03 discrete transistor pad mm pitch pins | LP03 | ",
  "class": "discrete.transistor"
 }

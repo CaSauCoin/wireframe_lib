@@ -7,31 +7,21 @@
   "Interface",
   "CAN"
  ],
- "description": "Surface-mount CAN interface IC cluster featuring MCP2557FD and MCP2558FD variants in a TDFN-8-1EP 3x2mm footprint.",
+ "description": "2 ic interface can parts for CAN using TDFN footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when designing surface-mount CAN interface circuits requiring a TDFN package.",
-  "Verify specific part differences between MCP2557FD-xMNY and MCP2558FD-xMNY variants.",
-  "Ensure footprint compatibility with TDFN-8-1EP 3x2mm pitch 0.5mm land patterns."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a TDFN land pattern is intended."
  ],
  "avoid_when": [
-  "The board design requires through-hole or non-TDFN packaging.",
-  "Interface protocols other than CAN are required.",
-  "Tier A verified symbols are strictly required for the design."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than TDFN."
  ],
  "keywords": [
-  "ic",
-  "interface",
   "can",
   "tdfn",
-  "tdfn-8",
-  "smd",
-  "surface mount",
-  "mcp2557fd",
-  "mcp2558fd",
-  "mcp2557fd-xmny",
-  "mcp2558fd-xmny",
-  "3x2mm",
-  "kicad",
+  "interface",
   "fd",
   "transceiver",
   "5mm",
@@ -42,7 +32,9 @@
   "mode",
   "up",
   "to",
-  "mbps"
+  "mbps",
+  "1ep",
+  "3x2mm"
  ],
  "facts": {
   "package_family": "TDFN",
@@ -65,7 +57,7 @@
   "tier_counts": {
    "B": 2
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -89,6 +81,6 @@
   "kicad-symbols/Interface_CAN_LIN/MCP2557FD-xMNY",
   "kicad-symbols/Interface_CAN_LIN/MCP2558FD-xMNY"
  ],
- "embedding_text": "ic-interface-can.tdfn.can | IC Interface CAN | Surface-mount CAN interface IC cluster featuring MCP2557FD and MCP2558FD variants in a TDFN-8-1EP 3x2mm footprint. | ic interface can tdfn tdfn-8 smd surface mount mcp2557fd mcp2558fd mcp2557fd-xmny mcp2558fd-xmny 3x2mm kicad fd transceiver 5mm xmny lin with silent mode up to mbps | TDFN | CAN",
+ "embedding_text": "ic-interface-can.tdfn.can | IC Interface CAN | 2 ic interface can parts for CAN using TDFN footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | can tdfn interface fd transceiver 5mm xmny lin with silent mode up to mbps 1ep 3x2mm | TDFN | CAN",
  "class": "ic.interface.can"
 }

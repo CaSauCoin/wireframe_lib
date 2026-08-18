@@ -6,34 +6,25 @@
   "IC",
   "Analog"
  ],
- "description": "Analog IC cluster featuring 50V components in through-hole TO-99-8 packages from the Alternate-KiCad-Library.",
+ "description": "2 ic analog parts for 50V using TO footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when requiring 50V rated analog ICs in through-hole TO-99-8 packages.",
-  "Choose when using tier B parts such as LM111H or LM311H.",
-  "Verify footprint compatibility with TO-99-8 through-hole land patterns."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a TO land pattern is intended."
  ],
  "avoid_when": [
-  "Surface-mount packaging or non-TO package families are required.",
-  "Designs require voltage ratings other than 50V.",
-  "Footprint requirements differ from TO-99-8 through-hole."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than TO."
  ],
  "keywords": [
-  "ic",
-  "analog",
-  "ic.analog",
-  "50v",
   "to",
-  "to-99-8",
-  "through_hole",
-  "lm111h",
-  "lm311h",
-  "alternate-kicad-library",
-  "tier b",
-  "to package",
+  "analog",
   "comparator",
   "voltage",
   "open",
   "collector",
+  "50v",
   "akl",
   "with",
   "high",
@@ -41,7 +32,8 @@
   "200ns",
   "propagation",
   "delay",
-  "5mv"
+  "5mv",
+  "offset"
  ],
  "facts": {
   "package_family": "TO",
@@ -64,7 +56,7 @@
   "tier_counts": {
    "B": 2
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -88,6 +80,6 @@
   "Alternate-KiCad-Library/Analog_Comparator_AKL/LM111H",
   "Alternate-KiCad-Library/Analog_Comparator_AKL/LM311H"
  ],
- "embedding_text": "ic-analog.to.50v | IC Analog | Analog IC cluster featuring 50V components in through-hole TO-99-8 packages from the Alternate-KiCad-Library. | ic analog ic.analog 50v to to-99-8 through_hole lm111h lm311h alternate-kicad-library tier b to package comparator voltage open collector akl with high ouptput 200ns propagation delay 5mv | TO | 50V",
+ "embedding_text": "ic-analog.to.50v | IC Analog | 2 ic analog parts for 50V using TO footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | to analog comparator voltage open collector 50v akl with high ouptput 200ns propagation delay 5mv offset | TO | 50V",
  "class": "ic.analog"
 }

@@ -6,31 +6,21 @@
   "Discrete",
   "FET"
  ],
- "description": "A cluster of 15 tier-A discrete 25V SMD FET parts using the TDSON-8-1 footprint from KiCad symbols.",
+ "description": "15 discrete fet parts for 25V using TDSON footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "A surface-mount 25V discrete FET is needed.",
-  "The design specifies a TDSON-8-1 package footprint.",
-  "Selecting tier-A parts from KiCad symbols such as CSD16321Q5 or CSD16322Q5."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a TDSON land pattern is intended."
  ],
  "avoid_when": [
-  "The layout requires a footprint other than TDSON-8-1.",
-  "A voltage rating other than 25V is needed.",
-  "Non-SMD or through-hole mounting is required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than TDSON."
  ],
  "keywords": [
-  "discrete",
+  "tdson",
   "fet",
   "25v",
-  "tdson",
-  "tdson-8-1",
-  "smd",
-  "kicad-symbols",
-  "discrete.fet",
-  "csd16321q5",
-  "csd16322q5",
-  "csd16325q5",
-  "csd16342q5a",
-  "csd16401q5",
   "nexfet",
   "power",
   "mosfet",
@@ -41,7 +31,9 @@
   "channel",
   "ron",
   "qg",
-  "typ"
+  "typ",
+  "son8",
+  "5x6mm"
  ],
  "facts": {
   "package_family": "TDSON",
@@ -64,7 +56,7 @@
   "tier_counts": {
    "A": 15
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -125,6 +117,6 @@
   "kicad-symbols/Transistor_FET/CSD16415Q5",
   "kicad-symbols/Transistor_FET/CSD16570Q5B"
  ],
- "embedding_text": "discrete-fet.tdson.25v | Discrete FET | A cluster of 15 tier-A discrete 25V SMD FET parts using the TDSON-8-1 footprint from KiCad symbols. | discrete fet 25v tdson tdson-8-1 smd kicad-symbols discrete.fet csd16321q5 csd16322q5 csd16325q5 csd16342q5a csd16401q5 nexfet power mosfet transistor 100a id vds channel ron qg typ | TDSON | 25V",
+ "embedding_text": "discrete-fet.tdson.25v | Discrete FET | 15 discrete fet parts for 25V using TDSON footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | tdson fet 25v nexfet power mosfet transistor 100a id vds channel ron qg typ son8 5x6mm | TDSON | 25V",
  "class": "discrete.fet"
 }

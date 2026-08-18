@@ -6,28 +6,21 @@
   "Discrete",
   "Diode"
  ],
- "description": "Cluster of 3 discrete diode parts in package family J2 supporting footprints J2, J2-C1T, and J2-D1T.",
+ "description": "3 discrete diode parts using J2 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Verify component details since all 3 parts are quality tier C.",
-  "Select when requiring J2, J2-C1T, or J2-D1T footprint styles.",
-  "Confirm mounting specifications as the mount type is listed as unknown."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a J2 land pattern is intended."
  ],
  "avoid_when": [
-  "Planner-visible parts are needed, as planner visible count is 0.",
-  "A package family or footprint other than J2 is required.",
-  "Higher quality tier parts (Tier A or Tier B) are required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than J2."
  ],
  "keywords": [
+  "j2",
   "discrete",
   "diode",
-  "discrete diode",
-  "discrete.diode",
-  "j2",
-  "j2-c1t",
-  "j2-d1t",
-  "package family j2",
-  "tier c",
-  "dist-legacy",
   "c1t",
   "d1t",
   "pad",
@@ -56,7 +49,7 @@
   "tier_counts": {
    "C": 3
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
@@ -64,6 +57,6 @@
   "dist-legacy/J2-C1T",
   "dist-legacy/J2-D1T"
  ],
- "embedding_text": "discrete-diode.j2 | Discrete Diode | Cluster of 3 discrete diode parts in package family J2 supporting footprints J2, J2-C1T, and J2-D1T. | discrete diode discrete diode discrete.diode j2 j2-c1t j2-d1t package family j2 tier c dist-legacy c1t d1t pad mm pitch pins | J2 | ",
+ "embedding_text": "discrete-diode.j2 | Discrete Diode | 3 discrete diode parts using J2 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | j2 discrete diode c1t d1t pad mm pitch pins | J2 | ",
  "class": "discrete.diode"
 }

@@ -5,37 +5,30 @@
  "category_path": [
   "IC"
  ],
- "description": "Integrated circuit cluster featuring 5 tier C SMD parts across HVSSOP-8 and HVSSOP-10 footprints with optional exposed pads and thermal vias.",
+ "description": "5 ic parts using HVSSOP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when an SMD integrated circuit in an HVSSOP-8 or HVSSOP-10 land pattern is required.",
-  "Match exact pin counts and pitch options of 0.65mm for 8-pin or 0.5mm for 10-pin variants.",
-  "Check whether the footprint requires an exposed pad (1EP) and thermal vias."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a HVSSOP land pattern is intended."
  ],
  "avoid_when": [
-  "The layout requires pin counts or package families other than 8/10-pin HVSSOP.",
-  "Through-hole mounting or non-SMD assembly is required.",
-  "Parts higher than tier C or with planner visibility are mandatory."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than HVSSOP."
  ],
  "keywords": [
   "hvssop",
-  "ic",
-  "smd",
-  "hvssop-8",
-  "hvssop-10",
   "1ep",
-  "thermalvias",
   "3x3mm",
-  "0.5mm pitch",
-  "0.65mm pitch",
-  "integrated circuit",
-  "tier c",
   "p0",
   "ep1",
   "89mm",
+  "ic",
   "65mm",
   "57x1",
   "5mm",
   "83x1",
+  "thermalvias",
   "pad",
   "mm",
   "pitch",
@@ -65,7 +58,7 @@
   "tier_counts": {
    "C": 5
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
@@ -75,6 +68,6 @@
   "dist-legacy/HVSSOP-10-1EP_3x3mm_P0.5mm_EP1.83x1.89mm_ThermalVias",
   "dist-legacy/HVSSOP-8-1EP_3x3mm_P0.65mm_EP1.57x1.89mm_ThermalVias"
  ],
- "embedding_text": "ic.hvssop | IC | Integrated circuit cluster featuring 5 tier C SMD parts across HVSSOP-8 and HVSSOP-10 footprints with optional exposed pads and thermal vias. | hvssop ic smd hvssop-8 hvssop-10 1ep thermalvias 3x3mm 0.5mm pitch 0.65mm pitch integrated circuit tier c p0 ep1 89mm 65mm 57x1 5mm 83x1 pad mm pitch pins | HVSSOP | ",
+ "embedding_text": "ic.hvssop | IC | 5 ic parts using HVSSOP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | hvssop 1ep 3x3mm p0 ep1 89mm ic 65mm 57x1 5mm 83x1 thermalvias pad mm pitch pins | HVSSOP | ",
  "class": "ic"
 }

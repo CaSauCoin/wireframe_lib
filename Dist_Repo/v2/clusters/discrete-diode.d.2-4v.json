@@ -6,44 +6,34 @@
   "Discrete",
   "Diode"
  ],
- "description": "Small-signal Zener discrete diode cluster (2.4V nominal) in D-family MELF/SOD footprints, spanning SMD and through-hole mounts across 39 tier-A/B parts.",
+ "description": "39 discrete diode parts for 2.4V using D footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Prefer tier A entries for higher confidence.",
-  "Match the exact footprint (MiniMELF, MicroMELF, SOD-123/323/523/882, DO-35) to the intended land pattern.",
-  "Confirm SMD vs through-hole mount matches the board assembly process.",
-  "Cross-check the specific 2.4V-class part number against the required application before use."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a D land pattern is intended."
  ],
  "avoid_when": [
-  "The design needs a diode outside the D package family.",
-  "The required electrical rating is not confirmed from the part's own data.",
-  "A through-hole footprint is needed but only an SMD variant is selected, or vice versa.",
-  "The symbol-footprint pairing is unverified for the chosen part."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than D."
  ],
  "keywords": [
   "diode",
-  "zener diode",
-  "2.4v",
-  "d package",
-  "sod-123",
-  "sod-323",
-  "sod-523",
-  "sod-323f",
-  "sod-882",
-  "dfn1006-2",
-  "minimelf",
-  "micromelf",
-  "do-35",
-  "sod27",
-  "smd diode",
-  "through hole diode",
-  "discrete diode",
-  "bzv55",
-  "bzm5221",
-  "bzm55",
   "zener",
   "4v",
   "sod",
-  "discrete"
+  "discrete",
+  "akl",
+  "alternate",
+  "kicad",
+  "library",
+  "500mw",
+  "minimelf",
+  "323f",
+  "c2v4",
+  "do",
+  "sod27",
+  "62mm"
  ],
  "facts": {
   "package_family": "D",
@@ -77,7 +67,7 @@
    "A": 38,
    "B": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -162,6 +152,6 @@
   "Alternate-KiCad-Library/Diode_Zener_AKL/TZM5221",
   "Alternate-KiCad-Library/Diode_Zener_AKL/BZX884-C2V4"
  ],
- "embedding_text": "discrete-diode.d.2-4v | Discrete Diode | Small-signal Zener discrete diode cluster (2.4V nominal) in D-family MELF/SOD footprints, spanning SMD and through-hole mounts across 39 tier-A/B parts. | diode zener diode 2.4v d package sod-123 sod-323 sod-523 sod-323f sod-882 dfn1006-2 minimelf micromelf do-35 sod27 smd diode through hole diode discrete diode bzv55 bzm5221 bzm55 zener 4v sod discrete | D | 2.4V",
+ "embedding_text": "discrete-diode.d.2-4v | Discrete Diode | 39 discrete diode parts for 2.4V using D footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | diode zener 4v sod discrete akl alternate kicad library 500mw minimelf 323f c2v4 do sod27 62mm | D | 2.4V",
  "class": "discrete.diode"
 }

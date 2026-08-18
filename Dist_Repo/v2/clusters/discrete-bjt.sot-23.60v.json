@@ -6,42 +6,34 @@
   "Discrete",
   "BJT"
  ],
- "description": "Cluster of 13 SMD BJT transistors in SOT-23 package rated for the 60V facet, sourced from Alternate-KiCad-Library, all tier A quality.",
+ "description": "13 discrete bjt parts for 60V using SOT-23 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "All 13 entries are tier A with score 100; distinguish by exact part number (e.g. BCV46, BCV71, BCW89).",
-  "Confirm the SOT-23 footprint matches your intended PCB land pattern before committing.",
-  "Check the specific part's datasheet for exact voltage, current, and pinout since only the 60V facet is captured here."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SOT-23 land pattern is intended."
  ],
  "avoid_when": [
-  "The design requires a package other than SOT-23.",
-  "A through-hole mount is needed instead of SMD.",
-  "Required current, gain, power, or pinout details are not confirmed from the source data."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SOT-23."
  ],
  "keywords": [
-  "sot-23",
-  "bjt",
-  "transistor",
-  "discrete",
-  "60v",
-  "smd",
-  "surface mount",
-  "alternate-kicad-library",
-  "bcv46",
-  "bcv47",
-  "bcv71",
-  "bcv72",
-  "bcw89",
-  "tier a",
-  "kicad library",
-  "discrete bjt",
   "sot",
+  "transistor",
+  "bjt",
+  "60v",
   "pnp",
   "akl",
   "alternate",
   "kicad",
   "library",
+  "discrete",
   "npn",
-  "250mw"
+  "250mw",
+  "darlington",
+  "500ma",
+  "100ma",
+  "bcv46"
  ],
  "facts": {
   "package_family": "SOT-23",
@@ -64,7 +56,7 @@
   "tier_counts": {
    "A": 13
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -123,6 +115,6 @@
   "Alternate-KiCad-Library/Transistor_BJT_AKL/MMBTA56",
   "Alternate-KiCad-Library/Transistor_BJT_AKL/PMBT2907A"
  ],
- "embedding_text": "discrete-bjt.sot-23.60v | Discrete BJT | Cluster of 13 SMD BJT transistors in SOT-23 package rated for the 60V facet, sourced from Alternate-KiCad-Library, all tier A quality. | sot-23 bjt transistor discrete 60v smd surface mount alternate-kicad-library bcv46 bcv47 bcv71 bcv72 bcw89 tier a kicad library discrete bjt sot pnp akl alternate kicad library npn 250mw | SOT-23 | 60V",
+ "embedding_text": "discrete-bjt.sot-23.60v | Discrete BJT | 13 discrete bjt parts for 60V using SOT-23 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | sot transistor bjt 60v pnp akl alternate kicad library discrete npn 250mw darlington 500ma 100ma bcv46 | SOT-23 | 60V",
  "class": "discrete.bjt"
 }

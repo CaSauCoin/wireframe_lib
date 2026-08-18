@@ -6,34 +6,25 @@
   "Power",
   "Power Supply"
  ],
- "description": "Surface-mount 22V power supply components in SOIC-8 packages from KiCad symbol libraries.",
+ "description": "2 power power supply parts for 22V using SOIC footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select between specific part numbers such as LTC4002ES8-4.2 and LTC4002ES8-8.4.",
-  "Verify compatibility with the SOIC-8_3.9x4.9mm_P1.27mm footprint.",
-  "Confirm that the 22V rating aligns with design requirements."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SOIC land pattern is intended."
  ],
  "avoid_when": [
-  "Applications requiring through-hole mounting or non-SOIC packages.",
-  "Designs requiring footprints other than SOIC-8_3.9x4.9mm_P1.27mm.",
-  "Circuits requiring ratings other than 22V."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SOIC."
  ],
  "keywords": [
-  "power",
-  "power supply",
-  "22v",
   "soic",
-  "soic-8",
-  "smd",
-  "surface mount",
-  "battery management",
-  "ltc4002es8-4.2",
-  "ltc4002es8-8.4",
-  "kicad-symbols",
-  "soic-8_3.9x4.9mm_p1.27mm",
   "battery",
   "li",
   "ion",
   "charger",
+  "22v",
+  "power",
   "ltc4002es8",
   "management",
   "standalone",
@@ -41,7 +32,8 @@
   "mode",
   "input",
   "cell",
-  "9x4"
+  "9x4",
+  "9mm"
  ],
  "facts": {
   "package_family": "SOIC",
@@ -64,7 +56,7 @@
   "tier_counts": {
    "A": 2
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -88,6 +80,6 @@
   "kicad-symbols/Battery_Management/LTC4002ES8-4.2",
   "kicad-symbols/Battery_Management/LTC4002ES8-8.4"
  ],
- "embedding_text": "power-supply.soic.22v | Power Power Supply | Surface-mount 22V power supply components in SOIC-8 packages from KiCad symbol libraries. | power power supply 22v soic soic-8 smd surface mount battery management ltc4002es8-4.2 ltc4002es8-8.4 kicad-symbols soic-8_3.9x4.9mm_p1.27mm battery li ion charger ltc4002es8 management standalone switch mode input cell 9x4 | SOIC | 22V",
+ "embedding_text": "power-supply.soic.22v | Power Power Supply | 2 power power supply parts for 22V using SOIC footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | soic battery li ion charger 22v power ltc4002es8 management standalone switch mode input cell 9x4 9mm | SOIC | 22V",
  "class": "power.supply"
 }

@@ -6,43 +6,34 @@
   "Discrete",
   "Diode"
  ],
- "description": "Cluster of 27 discrete LED-package diode parts from the digikey-kicad-library source, spanning radial indicator LEDs, RGB, infrared, bar-graph, and addressable breakout footprints, all rated tier B.",
+ "description": "27 discrete diode parts using LED footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Compare part score within the cluster (values range up to 100) to prefer higher-confidence matches",
-  "All entries are tier B with review_status 'generated', so confirm footprint and part details manually before use",
-  "Verify the chosen footprint matches the intended PCB land pattern before committing layout"
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a LED land pattern is intended."
  ],
  "avoid_when": [
-  "A tier A or manually reviewed part is required, since this cluster contains only tier B, generated entries",
-  "The needed package is not one of the six listed LED footprints",
-  "Specific electrical ratings, pinout, or manufacturer data are required but not present in the part record",
-  "A non-LED diode function (e.g. rectifier, switching, Zener) is needed"
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than LED."
  ],
  "keywords": [
   "led",
-  "discrete diode",
-  "indicator led",
-  "rgb led",
-  "infrared led",
-  "ir led",
-  "addressable led",
-  "ws2812b",
-  "bar graph led",
-  "radial led",
-  "3mm led",
-  "5mm led",
-  "tsal6100",
-  "lta-1000",
-  "wp154a4sureqbfzgc",
-  "digikey",
-  "optoelectronics",
-  "tier b",
   "discrete",
   "indication",
   "dk",
+  "optoelectronics",
   "diode",
   "radial",
-  "clear"
+  "clear",
+  "inc",
+  "5mm",
+  "bar",
+  "lite",
+  "3mm",
+  "kingbright",
+  "infrared",
+  "uv"
  ],
  "facts": {
   "package_family": "LED",
@@ -68,7 +59,7 @@
   "tier_counts": {
    "B": 27
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -141,6 +132,6 @@
   "digikey-kicad-library/dk_LEDs-Circuit-Board-Indicators-Arrays-Light-Bars-Bar-Graphs/LTA-1000HR",
   "digikey-kicad-library/dk_LEDs-Circuit-Board-Indicators-Arrays-Light-Bars-Bar-Graphs/LTA-1000Y"
  ],
- "embedding_text": "discrete-diode.led | Discrete Diode | Cluster of 27 discrete LED-package diode parts from the digikey-kicad-library source, spanning radial indicator LEDs, RGB, infrared, bar-graph, and addressable breakout footprints, all rated tier B. | led discrete diode indicator led rgb led infrared led ir led addressable led ws2812b bar graph led radial led 3mm led 5mm led tsal6100 lta-1000 wp154a4sureqbfzgc digikey optoelectronics tier b discrete indication dk diode radial clear | LED | ",
+ "embedding_text": "discrete-diode.led | Discrete Diode | 27 discrete diode parts using LED footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | led discrete indication dk optoelectronics diode radial clear inc 5mm bar lite 3mm kingbright infrared uv | LED | ",
  "class": "discrete.diode"
 }

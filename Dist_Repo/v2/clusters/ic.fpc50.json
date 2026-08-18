@@ -5,30 +5,20 @@
  "category_path": [
   "IC"
  ],
- "description": "Integrated circuit (IC) cluster containing 39 surface-mount (SMD) parts in the FPC50 package family from the chilaboard-altium-library source.",
+ "description": "39 ic parts using FPC50 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select entries with the exact footprint required, such as FPC50_40, FPC50_30, or FPC50_37.",
-  "Prefer tier B parts over tier C parts for higher quality tier classification.",
-  "Verify compatibility with the FPC50 package family and SMD mounting."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a FPC50 land pattern is intended."
  ],
  "avoid_when": [
-  "The design requires non-SMD or through-hole component mounting.",
-  "The board layout calls for a package family other than FPC50.",
-  "The target component is outside the IC category."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than FPC50."
  ],
  "keywords": [
-  "ic",
   "fpc50",
-  "smd",
-  "fpc50_40",
-  "fpc50_30",
-  "fpc50_37",
-  "fpc50_22b",
-  "fpc50_24",
-  "lcdtft",
-  "rpicam",
-  "chilaboard-altium-library",
-  "surface mount",
+  "ic",
   "interface",
   "display",
   "pins",
@@ -37,10 +27,12 @@
   "surface",
   "mount",
   "connector",
+  "lcdtft",
   "mm",
   "pitch",
   "tft",
-  "pad"
+  "pad",
+  "40d"
  ],
  "facts": {
   "package_family": "FPC50",
@@ -73,7 +65,7 @@
    "B": 15,
    "C": 24
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -158,6 +150,6 @@
   "chilaboard-altium-library/FPC50_6/FPC50_6",
   "chilaboard-altium-library/FPC50_8_SFV8R/FPC50_8_SFV8R"
  ],
- "embedding_text": "ic.fpc50 | IC | Integrated circuit (IC) cluster containing 39 surface-mount (SMD) parts in the FPC50 package family from the chilaboard-altium-library source. | ic fpc50 smd fpc50_40 fpc50_30 fpc50_37 fpc50_22b fpc50_24 lcdtft rpicam chilaboard-altium-library surface mount interface display pins fpc lcd surface mount connector mm pitch tft pad | FPC50 | ",
+ "embedding_text": "ic.fpc50 | IC | 39 ic parts using FPC50 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | fpc50 ic interface display pins fpc lcd surface mount connector lcdtft mm pitch tft pad 40d | FPC50 | ",
  "class": "ic"
 }

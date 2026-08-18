@@ -6,42 +6,34 @@
   "Mechanical",
   "Test Point"
  ],
- "description": "A cluster of 13 mechanical test point components in the Test package family, supporting surface-mount and through-hole footprints across tier B and C library parts.",
+ "description": "13 mechanical test point parts using Test footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Match the required mounting style between surface-mount and through-hole options.",
-  "Select the exact footprint variant such as pin drill, circle, pad, hole, or trace.",
-  "Prioritize tier B parts with higher scores from available library sources."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a Test land pattern is intended."
  ],
  "avoid_when": [
-  "The board layout requires a package family other than Test.",
-  "A footprint geometry outside the available cluster footprints is needed.",
-  "Tier A verified parts are strictly required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than Test."
  ],
  "keywords": [
-  "test point",
-  "mechanical test point",
   "test",
-  "mechanical",
-  "smd",
-  "through_hole",
-  "test_point_d1.02mm",
-  "test-point-pin_drill2.79mm",
-  "test point smd",
-  "test point hole",
-  "test point trace",
-  "test point screw",
   "point",
+  "mechanical",
   "points",
   "and",
   "dk",
   "measurement",
   "pad",
   "hole",
+  "smd",
   "pc",
   "keystone",
   "electronics",
   "02mm",
-  "circle"
+  "circle",
+  "1mm"
  ],
  "facts": {
   "package_family": "Test",
@@ -77,7 +69,7 @@
    "B": 7,
    "C": 6
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -136,6 +128,6 @@
   "francescosacco-hardwarelibrary/Test Point SMD/Test_Point_SMD",
   "francescosacco-hardwarelibrary/Test Point Trace/Test_Point_Trace"
  ],
- "embedding_text": "mechanical-testpoint.test | Mechanical Test Point | A cluster of 13 mechanical test point components in the Test package family, supporting surface-mount and through-hole footprints across tier B and C library parts. | test point mechanical test point test mechanical smd through_hole test_point_d1.02mm test-point-pin_drill2.79mm test point smd test point hole test point trace test point screw point points and dk measurement pad hole pc keystone electronics 02mm circle | Test | ",
+ "embedding_text": "mechanical-testpoint.test | Mechanical Test Point | 13 mechanical test point parts using Test footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | test point mechanical points and dk measurement pad hole smd pc keystone electronics 02mm circle 1mm | Test | ",
  "class": "mechanical.testpoint"
 }

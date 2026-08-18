@@ -5,34 +5,23 @@
  "category_path": [
   "IC"
  ],
- "description": "A cluster of 17 surface-mount 5V LDO IC parts in MSOP package variants sourced from Alternate-KiCad-Library.",
+ "description": "17 ic parts for 5V, LDO using MSOP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select based on the required footprint variant such as MSOP-8, MSOP-8-1EP, or MSOP-12-1EP.",
-  "Prefer Tier A quality parts (13 available) over Tier B parts (4 available).",
-  "Verify compatibility with surface-mount 5V LDO IC requirements."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a MSOP land pattern is intended."
  ],
  "avoid_when": [
-  "The design requires package families other than MSOP.",
-  "Through-hole mounting is required instead of surface mount.",
-  "The application does not use a 5V LDO IC."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than MSOP."
  ],
  "keywords": [
-  "ic",
   "msop",
-  "5v",
-  "ldo",
-  "smd",
-  "msop-8",
-  "msop-8-1ep",
-  "msop-12-1ep",
-  "alternate-kicad-library",
-  "voltage_regulator_akl",
-  "adp1720armz-5",
-  "lt1521cms8-5",
-  "lt1762ems8-5",
-  "lt1962ems8-1.5",
   "voltage",
   "regulator",
+  "5v",
+  "ldo",
   "low",
   "dropout",
   "akl",
@@ -40,7 +29,10 @@
   "kicad",
   "library",
   "p0",
-  "65mm"
+  "65mm",
+  "so",
+  "vreg",
+  "pmic"
  ],
  "facts": {
   "package_family": "MSOP",
@@ -67,7 +59,7 @@
    "A": 13,
    "B": 4
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -130,6 +122,6 @@
   "Alternate-KiCad-Library/Voltage_Regulator_AKL/LT3015IMSE-2.5",
   "Alternate-KiCad-Library/Voltage_Regulator_AKL/LT3015IMSE-5"
  ],
- "embedding_text": "ic.msop.5v.ldo | IC | A cluster of 17 surface-mount 5V LDO IC parts in MSOP package variants sourced from Alternate-KiCad-Library. | ic msop 5v ldo smd msop-8 msop-8-1ep msop-12-1ep alternate-kicad-library voltage_regulator_akl adp1720armz-5 lt1521cms8-5 lt1762ems8-5 lt1962ems8-1.5 voltage regulator low dropout akl alternate kicad library p0 65mm | MSOP | 5V LDO",
+ "embedding_text": "ic.msop.5v.ldo | IC | 17 ic parts for 5V, LDO using MSOP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | msop voltage regulator 5v ldo low dropout akl alternate kicad library p0 65mm so vreg pmic | MSOP | 5V LDO",
  "class": "ic"
 }

@@ -5,31 +5,25 @@
  "category_path": [
   "IC"
  ],
- "description": "Cluster of surface-mount IC parts featuring I2C, SPI, and UART/serial interface facets in QFN footprints.",
+ "description": "41 ic parts for I2C, SPI, UART/serial using QFN footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Match the required footprint from available QFN land patterns such as QFN-32 or QFN50_48T.",
-  "Check part quality tier ratings, prioritizing Tier A over Tier B components.",
-  "Select based on required communication interface facets including I2C, SPI, or UART/serial."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a QFN land pattern is intended."
  ],
  "avoid_when": [
-  "Designs requiring through-hole component mounting rather than surface mount.",
-  "Layouts requiring non-QFN package families.",
-  "Applications that do not utilize I2C, SPI, or UART/serial communication facets."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than QFN."
  ],
  "keywords": [
   "qfn",
-  "ic",
   "i2c",
   "spi",
+  "ic",
   "uart",
-  "serial",
-  "smd",
-  "surface mount",
-  "qfn-32",
-  "qfn50",
-  "qfn-24",
-  "integrated circuit",
   "microcontroller",
+  "serial",
   "and",
   "in",
   "package",
@@ -37,7 +31,8 @@
   "pin",
   "mcu",
   "controller",
-  "with"
+  "with",
+  "qfn50"
  ],
  "facts": {
   "package_family": "QFN",
@@ -77,7 +72,7 @@
    "A": 1,
    "B": 40
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -164,6 +159,6 @@
   "Seeed-OPL-Kicad-Library/OPL_Sensor-Transducer/MOTION_POSITION-MPU-9250_QFN24G_",
   "chilaboard-altium-library/MPU-9250/MPU-9250"
  ],
- "embedding_text": "ic.qfn.i2c.spi | IC | Cluster of surface-mount IC parts featuring I2C, SPI, and UART/serial interface facets in QFN footprints. | qfn ic i2c spi uart serial smd surface mount qfn-32 qfn50 qfn-24 integrated circuit microcontroller and in package adc pin mcu controller with | QFN | I2C SPI UART/serial",
+ "embedding_text": "ic.qfn.i2c.spi | IC | 41 ic parts for I2C, SPI, UART/serial using QFN footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | qfn i2c spi ic uart microcontroller serial and in package adc pin mcu controller with qfn50 | QFN | I2C SPI UART/serial",
  "class": "ic"
 }

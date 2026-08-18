@@ -5,44 +5,34 @@
  "category_path": [
   "Connector"
  ],
- "description": "Cluster of 13 PLCC socket connector parts spanning PLCC-20/28/32/44/52/68/84 footprints in both SMD and through-hole mount variants; all entries are tier C and marked 'generated' (unreviewed).",
+ "description": "13 connector parts using PLCC footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Match the exact PLCC pin count (20/28/32/44/52/68/84) to the target package",
-  "Match mount style: smd vs through_hole footprint variant",
-  "All 13 entries are tier C and review_status 'generated' — verify footprint details manually before use",
-  "No representative parts are listed, so inspect each candidate individually"
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a PLCC land pattern is intended."
  ],
  "avoid_when": [
-  "A non-PLCC package family is required",
-  "A verified/reviewed (non-generated) or higher-tier part is required",
-  "The specific pin count needed is not among 20/28/32/44/52/68/84",
-  "Planner-visible parts are required (planner_visible_count is 0 here)"
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than PLCC."
  ],
  "keywords": [
   "plcc",
-  "plcc socket",
-  "connector",
-  "smd",
-  "through hole",
-  "tht",
-  "plcc-20",
-  "plcc-28",
-  "plcc-32",
-  "plcc-44",
-  "plcc-52",
-  "plcc-68",
-  "plcc-84",
-  "socket connector",
-  "package family plcc",
-  "tier c",
-  "generated",
-  "unreviewed",
   "socket",
+  "tht",
+  "smd",
+  "connector",
   "pins",
   "through",
   "hole",
   "pad",
-  "mm"
+  "mm",
+  "pitch",
+  "package",
+  "surface",
+  "mount",
+  "leaded",
+  "smt"
  ],
  "facts": {
   "package_family": "PLCC",
@@ -75,7 +65,7 @@
   "tier_counts": {
    "C": 13
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
@@ -93,6 +83,6 @@
   "dist-legacy/PLCC-84_SMD-Socket",
   "dist-legacy/PLCC-84_THT-Socket"
  ],
- "embedding_text": "connector.plcc | Connector | Cluster of 13 PLCC socket connector parts spanning PLCC-20/28/32/44/52/68/84 footprints in both SMD and through-hole mount variants; all entries are tier C and marked 'generated' (unreviewed). | plcc plcc socket connector smd through hole tht plcc-20 plcc-28 plcc-32 plcc-44 plcc-52 plcc-68 plcc-84 socket connector package family plcc tier c generated unreviewed socket pins through hole pad mm | PLCC | ",
+ "embedding_text": "connector.plcc | Connector | 13 connector parts using PLCC footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | plcc socket tht smd connector pins through hole pad mm pitch package surface mount leaded smt | PLCC | ",
  "class": "connector"
 }

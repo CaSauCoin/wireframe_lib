@@ -7,42 +7,34 @@
   "Analog",
   "Amplifier"
  ],
- "description": "Cluster of 2 Tier A surface-mount IC analog amplifier parts rated for 100V in a SOT-23-5 package.",
+ "description": "2 ic analog amplifier parts for 100V using SOT-23-5 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when requiring a 100V rated IC analog amplifier in a SOT-23-5 footprint.",
-  "Choose between Tier A parts INA293A3 and INA293B3 based on specific circuit requirements.",
-  "Verify surface-mount (SMD) packaging compatibility with your PCB land pattern."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SOT-23-5 land pattern is intended."
  ],
  "avoid_when": [
-  "The design requires a package footprint other than SOT-23-5.",
-  "Operating voltage requirements exceed 100V or differ from IC analog amplifier specifications.",
-  "Through-hole mounting is required instead of surface-mount (SMD)."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SOT-23-5."
  ],
  "keywords": [
-  "ic",
-  "analog",
-  "amplifier",
-  "100v",
-  "sot-23-5",
-  "smd",
-  "ina293a3",
-  "ina293b3",
-  "kicad-symbols",
-  "tier a",
-  "surface mount",
-  "sot-23",
   "sot",
+  "amplifier",
   "current",
   "to",
+  "100v",
   "mhz",
   "bandwidth",
   "sense",
   "gain",
+  "smd",
   "highside",
   "high",
   "lowside",
   "low",
-  "hs"
+  "hs",
+  "ls"
  ],
  "facts": {
   "package_family": "SOT-23-5",
@@ -65,7 +57,7 @@
   "tier_counts": {
    "A": 2
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -89,6 +81,6 @@
   "kicad-symbols/Amplifier_Current/INA293A3",
   "kicad-symbols/Amplifier_Current/INA293B3"
  ],
- "embedding_text": "ic-analog-amplifier.sot-23-5.100v | IC Analog Amplifier | Cluster of 2 Tier A surface-mount IC analog amplifier parts rated for 100V in a SOT-23-5 package. | ic analog amplifier 100v sot-23-5 smd ina293a3 ina293b3 kicad-symbols tier a surface mount sot-23 sot current to mhz bandwidth sense gain highside high lowside low hs | SOT-23-5 | 100V",
+ "embedding_text": "ic-analog-amplifier.sot-23-5.100v | IC Analog Amplifier | 2 ic analog amplifier parts for 100V using SOT-23-5 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | sot amplifier current to 100v mhz bandwidth sense gain smd highside high lowside low hs ls | SOT-23-5 | 100V",
  "class": "ic.analog.amplifier"
 }

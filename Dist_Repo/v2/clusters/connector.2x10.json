@@ -5,40 +5,30 @@
  "category_path": [
   "Connector"
  ],
- "description": "10-part cluster of 2x10-position connectors (headers and sockets) sharing 2x10 pin-count SMD footprints at 2.0mm or 2.54mm pitch, vertical or horizontal, from SparkFun-KiCad-Libraries.",
+ "description": "10 connector parts using 2x10 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Match exact footprint (pin count, pitch, header vs socket, vertical vs horizontal) to the target board layout.",
-  "Confirm SMD mounting is compatible with the intended assembly process.",
-  "Prefer tier B entries where available; only 7 of 10 parts are planner-visible.",
-  "Distinguish generic connector parts from GNSS Flex Carrier/Module variants tied to a specific SparkFun design."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a 2x10 land pattern is intended."
  ],
  "avoid_when": [
-  "The design requires through-hole mounting instead of SMD.",
-  "A pitch or orientation other than the listed 2.0mm/2.54mm vertical/horizontal options is needed.",
-  "The part is a GNSS Flex Carrier/Module variant not intended for general-purpose connector use.",
-  "Metadata is unreviewed (review_status is 'generated') and electrical/mechanical specs are not confirmed."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than 2x10."
  ],
  "keywords": [
-  "connector",
-  "2x10",
-  "20 position",
-  "header",
-  "socket",
-  "smd",
-  "vertical",
-  "horizontal",
-  "2.0mm pitch",
-  "2.54mm pitch",
-  "pegs",
   "sparkfun",
-  "gnss flex carrier",
-  "gnss flex module",
-  "conn_02x10",
-  "surface mount connector",
+  "2x10",
+  "connector",
+  "smd",
   "p2",
+  "pegs",
+  "socket",
+  "vertical",
   "0mm",
   "flex",
   "gnss",
+  "header",
   "to",
   "module",
   "conn",
@@ -67,7 +57,7 @@
    "B": 7,
    "C": 3
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -123,6 +113,6 @@
   "SparkFun-KiCad-Libraries/SparkFun-Connector/Conn_02x10_P2.00mm_Socket_Vertical_SMD_Pegs",
   "SparkFun-KiCad-Libraries/SparkFun-Connector/Conn_02x10_P2.54mm_Socket_Vertical_SMD"
  ],
- "embedding_text": "connector.2x10 | Connector | 10-part cluster of 2x10-position connectors (headers and sockets) sharing 2x10 pin-count SMD footprints at 2.0mm or 2.54mm pitch, vertical or horizontal, from SparkFun-KiCad-Libraries. | connector 2x10 20 position header socket smd vertical horizontal 2.0mm pitch 2.54mm pitch pegs sparkfun gnss flex carrier gnss flex module conn_02x10 surface mount connector p2 0mm flex gnss to module conn 02x10 | 2x10 | ",
+ "embedding_text": "connector.2x10 | Connector | 10 connector parts using 2x10 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | sparkfun 2x10 connector smd p2 pegs socket vertical 0mm flex gnss header to module conn 02x10 | 2x10 | ",
  "class": "connector"
 }

@@ -6,32 +6,23 @@
   "Discrete",
   "LED"
  ],
- "description": "Discrete LED cluster containing 64 parts with LED3MM through-hole footprints across quality tiers B and C.",
+ "description": "64 discrete led parts using LED3MM footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when requiring a through-hole discrete LED with an LED3MM or LED3mm footprint.",
-  "Choose based on symbol variants such as standard, angled (45deg), filled, or dual bidirectional.",
-  "Filter entries by quality tier (62 tier B and 2 tier C) or source library."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a LED3MM land pattern is intended."
  ],
  "avoid_when": [
-  "Surface-mount LED packages are required instead of through-hole LED3MM.",
-  "Footprints other than LED3MM or LED3mm are needed for the layout.",
-  "Tier A component entries are strictly required for the design."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than LED3MM."
  ],
  "keywords": [
-  "discrete led",
   "led",
-  "led3mm",
-  "led3mm footprint",
-  "through_hole",
-  "through hole",
-  "discrete.led",
-  "kicad-symbols",
-  "alternate-kicad-library",
-  "bidirectional",
-  "45deg",
-  "device",
   "generic",
+  "led3mm",
   "discrete",
+  "bidirectional",
   "diode",
   "symbol",
   "akl",
@@ -41,7 +32,8 @@
   "white",
   "blue",
   "green",
-  "red"
+  "red",
+  "yellow"
  ],
  "facts": {
   "package_family": "LED3MM",
@@ -68,7 +60,7 @@
    "B": 62,
    "C": 2
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -178,6 +170,6 @@
   "dist-legacy/LED3mm",
   "chilaboard-altium-library/LED3MM/LED3MM"
  ],
- "embedding_text": "discrete-led.led3mm | Discrete LED | Discrete LED cluster containing 64 parts with LED3MM through-hole footprints across quality tiers B and C. | discrete led led led3mm led3mm footprint through_hole through hole discrete.led kicad-symbols alternate-kicad-library bidirectional 45deg device generic discrete diode symbol akl alternate kicad library white blue green red | LED3MM | ",
+ "embedding_text": "discrete-led.led3mm | Discrete LED | 64 discrete led parts using LED3MM footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | led generic led3mm discrete bidirectional diode symbol akl alternate kicad library white blue green red yellow | LED3MM | ",
  "class": "discrete.led"
 }

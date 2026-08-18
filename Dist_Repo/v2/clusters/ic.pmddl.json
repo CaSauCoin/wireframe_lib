@@ -5,28 +5,20 @@
  "category_path": [
   "IC"
  ],
- "description": "Integrated circuit component cluster using PMDDL footprints for legacy-sourced parts.",
+ "description": "1 ic parts using PMDDL footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Verify PMDDL footprint and pinout compatibility before layout.",
-  "Confirm component specifications given quality tier C cataloging.",
-  "Use when a PMDDL land pattern is explicitly required."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a PMDDL land pattern is intended."
  ],
  "avoid_when": [
-  "The PCB design requires a package family other than PMDDL.",
-  "Required electrical specifications or pinouts are unverified.",
-  "Fully reviewed or planner-visible parts are required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than PMDDL."
  ],
  "keywords": [
-  "ic",
   "pmddl",
-  "pmddl footprint",
-  "pmddl package",
-  "integrated circuit",
-  "dist-legacy",
-  "tier c",
-  "unknown mount",
-  "legacy source",
-  "ic pmddl",
+  "ic",
   "pad",
   "mm",
   "pitch",
@@ -51,12 +43,12 @@
   "tier_counts": {
    "C": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
   "dist-legacy/PMDDL"
  ],
- "embedding_text": "ic.pmddl | IC | Integrated circuit component cluster using PMDDL footprints for legacy-sourced parts. | ic pmddl pmddl footprint pmddl package integrated circuit dist-legacy tier c unknown mount legacy source ic pmddl pad mm pitch pins | PMDDL | ",
+ "embedding_text": "ic.pmddl | IC | 1 ic parts using PMDDL footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | pmddl ic pad mm pitch pins | PMDDL | ",
  "class": "ic"
 }

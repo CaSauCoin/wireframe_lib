@@ -6,44 +6,34 @@
   "Discrete",
   "Diode"
  ],
- "description": "Cluster of 50 SMD discrete diodes rated 30V in SOT-23 (SOT-23-3) packages, sourced from multiple KiCad libraries, with 48 tier-A and 2 tier-B parts; metadata is auto-generated and not manually reviewed.",
+ "description": "50 discrete diode parts for 30V using SOT-23 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Prefer tier A parts (48 of 50 in this cluster) for higher-confidence matches",
-  "Confirm the exact footprint variant (SOT-23, SOT-23-3, or SOT-23-3_L2.9-W1.3-P1.90-LS2.4-BR) before layout",
-  "Check which source library the part came from (Alternate-KiCad-Library, digikey-kicad-library, kicad-symbols, JLCPCB-Kicad-Library) for trust level",
-  "Verify the part's actual electrical ratings beyond the 30V facet before use"
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SOT-23 land pattern is intended."
  ],
  "avoid_when": [
-  "The design needs a package other than SOT-23",
-  "The part's review_status is 'generated' and hasn't been manually verified for a critical application",
-  "Exact pad/footprint dimensions matter and aren't confirmed for the chosen part",
-  "Electrical requirements (current, switching speed, polarity) beyond the 30V facet are unconfirmed"
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SOT-23."
  ],
  "keywords": [
-  "sot-23",
-  "sot23",
-  "diode",
-  "discrete diode",
-  "30v",
-  "smd",
-  "surface mount",
-  "sot-23-3",
-  "kicad-symbols",
-  "alternate-kicad-library",
-  "digikey-kicad-library",
-  "jlcpcb-kicad-library",
-  "tier a",
-  "generated",
-  "discrete",
   "sot",
+  "diode",
+  "30v",
   "schottky",
+  "discrete",
   "dual",
   "akl",
   "alternate",
   "kicad",
   "library",
   "common",
-  "200ma"
+  "200ma",
+  "zener",
+  "series",
+  "diodes",
+  "anode"
  ],
  "facts": {
   "package_family": "SOT-23",
@@ -72,7 +62,7 @@
    "A": 48,
    "B": 2
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -168,6 +158,6 @@
   "JLCPCB-Kicad-Library/2847017/Schottky, BAT54C-MS",
   "JLCPCB-Kicad-Library/JLCPCB-Diode-Packages/Schottky, BAT54S_C7420333"
  ],
- "embedding_text": "discrete-diode.sot-23.30v | Discrete Diode | Cluster of 50 SMD discrete diodes rated 30V in SOT-23 (SOT-23-3) packages, sourced from multiple KiCad libraries, with 48 tier-A and 2 tier-B parts; metadata is auto-generated and not manually reviewed. | sot-23 sot23 diode discrete diode 30v smd surface mount sot-23-3 kicad-symbols alternate-kicad-library digikey-kicad-library jlcpcb-kicad-library tier a generated discrete sot schottky dual akl alternate kicad library common 200ma | SOT-23 | 30V",
+ "embedding_text": "discrete-diode.sot-23.30v | Discrete Diode | 50 discrete diode parts for 30V using SOT-23 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | sot diode 30v schottky discrete dual akl alternate kicad library common 200ma zener series diodes anode | SOT-23 | 30V",
  "class": "discrete.diode"
 }

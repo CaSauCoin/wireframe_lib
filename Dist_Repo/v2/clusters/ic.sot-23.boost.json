@@ -5,34 +5,27 @@
  "category_path": [
   "IC"
  ],
- "description": "Surface-mount boost integrated circuits in the SOT-23 package family with SOT23_6 footprints.",
+ "description": "2 ic parts for boost using SOT-23 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when surface-mount boost ICs in the SOT-23 package family are required.",
-  "Confirm layout compatibility with the SOT23_6 footprint.",
-  "Choose between representative parts VREG_AP3032_SOT23 and VREG_TPS61165_SOT23."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SOT-23 land pattern is intended."
  ],
  "avoid_when": [
-  "The board design requires a package family other than SOT-23 or footprint other than SOT23_6.",
-  "A non-boost converter topology or non-IC component is required.",
-  "Through-hole mounting is required instead of SMD."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SOT-23."
  ],
  "keywords": [
-  "ic",
-  "boost",
-  "sot-23",
   "sot23",
-  "sot23_6",
-  "smd",
-  "ap3032",
-  "tps61165",
-  "vreg_ap3032_sot23",
-  "vreg_tps61165_sot23",
-  "boost ic",
-  "sot-23 boost",
   "vreg",
   "regulator",
+  "ic",
   "sot",
+  "boost",
   "voltage",
+  "tps61165",
+  "ap3032",
   "switching",
   "and",
   "feedback",
@@ -62,7 +55,7 @@
   "tier_counts": {
    "B": 2
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -86,6 +79,6 @@
   "chilaboard-altium-library/VREG_AP3032_SOT23/VREG_AP3032_SOT23",
   "chilaboard-altium-library/VREG_TPS61165_SOT23/VREG_TPS61165_SOT23"
  ],
- "embedding_text": "ic.sot-23.boost | IC | Surface-mount boost integrated circuits in the SOT-23 package family with SOT23_6 footprints. | ic boost sot-23 sot23 sot23_6 smd ap3032 tps61165 vreg_ap3032_sot23 vreg_tps61165_sot23 boost ic sot-23 boost vreg regulator sot voltage switching and feedback control in pin package | SOT-23 | boost",
+ "embedding_text": "ic.sot-23.boost | IC | 2 ic parts for boost using SOT-23 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | sot23 vreg regulator ic sot boost voltage tps61165 ap3032 switching and feedback control in pin package | SOT-23 | boost",
  "class": "ic"
 }

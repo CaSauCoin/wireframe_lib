@@ -5,27 +5,20 @@
  "category_path": [
   "IC"
  ],
- "description": "Integrated circuit cluster with three quality tier C parts using the HFH352 package family across HFH352_L, HFH352_M, and HFH352_N footprints.",
+ "description": "3 ic parts using HFH352 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Choose when requiring HFH352_L, HFH352_M, or HFH352_N footprint variants.",
-  "Account for all 3 parts being classified as quality tier C from dist-legacy.",
-  "Confirm pin layout and mounting details since mounting type is unknown."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a HFH352 land pattern is intended."
  ],
  "avoid_when": [
-  "The design requires a package family or footprint other than HFH352.",
-  "Verified higher quality tier components (Tier A or Tier B) are required.",
-  "Unknown mounting type is unacceptable for component selection."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than HFH352."
  ],
  "keywords": [
-  "ic",
   "hfh352",
-  "hfh352_l",
-  "hfh352_m",
-  "hfh352_n",
-  "package hfh352",
-  "tier c",
-  "dist-legacy",
-  "integrated circuit",
+  "ic",
   "pad",
   "mm",
   "pitch",
@@ -52,7 +45,7 @@
   "tier_counts": {
    "C": 3
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
@@ -60,6 +53,6 @@
   "dist-legacy/HFH352_M",
   "dist-legacy/HFH352_N"
  ],
- "embedding_text": "ic.hfh352 | IC | Integrated circuit cluster with three quality tier C parts using the HFH352 package family across HFH352_L, HFH352_M, and HFH352_N footprints. | ic hfh352 hfh352_l hfh352_m hfh352_n package hfh352 tier c dist-legacy integrated circuit pad mm pitch pins | HFH352 | ",
+ "embedding_text": "ic.hfh352 | IC | 3 ic parts using HFH352 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | hfh352 ic pad mm pitch pins | HFH352 | ",
  "class": "ic"
 }

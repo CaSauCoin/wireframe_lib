@@ -5,30 +5,20 @@
  "category_path": [
   "IC"
  ],
- "description": "Cluster of 9 IC parts in tier C using MICRON package family footprints, including MICRON TSOP-54 TG-P 400mil for SMD mounting.",
+ "description": "9 ic parts using MICRON footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Verify requirement for MICRON package family footprints, such as MICRON TSOP-54 TG-P 400mil.",
-  "Select for surface-mount (SMD) IC component applications.",
-  "Check source trust across dist-legacy and celestial-altium-library entries."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a MICRON land pattern is intended."
  ],
  "avoid_when": [
-  "The design requires footprints outside the MICRON package family.",
-  "Surface-mount (SMD) package mounting is not supported.",
-  "Tier C review status or zero planner visibility is unacceptable."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than MICRON."
  ],
  "keywords": [
-  "ic",
   "micron",
-  "smd",
-  "tsop-54",
-  "tg-p",
-  "400mil",
-  "dist-legacy",
-  "celestial-altium-library",
-  "tier c",
-  "generated",
-  "ic micron",
-  "micron tsop-54 tg-p 400mil",
+  "ic",
   "fbga",
   "x16",
   "pad",
@@ -37,10 +27,12 @@
   "pins",
   "tsop",
   "tg",
+  "400mil",
   "ball",
   "tw",
   "kd",
-  "rc"
+  "rc",
+  "tb"
  ],
  "facts": {
   "package_family": "MICRON",
@@ -64,7 +56,7 @@
   "tier_counts": {
    "C": 9
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
@@ -78,6 +70,6 @@
   "dist-legacy/MICRON VFBGA-90 8X13MM",
   "celestial-altium-library/MICRON TSOP-54 TG-P 400mil/MICRON_TSOP-54_TG-P_400mil"
  ],
- "embedding_text": "ic.micron | IC | Cluster of 9 IC parts in tier C using MICRON package family footprints, including MICRON TSOP-54 TG-P 400mil for SMD mounting. | ic micron smd tsop-54 tg-p 400mil dist-legacy celestial-altium-library tier c generated ic micron micron tsop-54 tg-p 400mil fbga x16 pad mm pitch pins tsop tg ball tw kd rc | MICRON | ",
+ "embedding_text": "ic.micron | IC | 9 ic parts using MICRON footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | micron ic fbga x16 pad mm pitch pins tsop tg 400mil ball tw kd rc tb | MICRON | ",
  "class": "ic"
 }

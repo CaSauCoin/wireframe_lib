@@ -5,33 +5,23 @@
  "category_path": [
   "IC"
  ],
- "description": "Surface-mount UART/serial IC cluster in QFN packages, featuring 2 tier B parts including ESP8285_QFN32 and TRS3122_QFN24 with QFN50_32T and QFN50_24T footprints.",
+ "description": "2 ic parts for UART/serial using QFN footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when surface-mount UART/serial ICs in QFN package family are needed.",
-  "Choose between QFN50_32T footprint (ESP8285_QFN32) and QFN50_24T footprint (TRS3122_QFN24).",
-  "Verify footprints against chilaboard-altium-library source requirements."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a QFN land pattern is intended."
  ],
  "avoid_when": [
-  "Avoid when board layout requires through-hole components or package families other than QFN.",
-  "Do not use if footprints other than QFN50_32T or QFN50_24T are required.",
-  "Avoid if parts higher than tier B quality are strictly required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than QFN."
  ],
  "keywords": [
-  "ic",
-  "uart",
-  "serial",
   "qfn",
-  "smd",
-  "esp8285_qfn32",
-  "trs3122_qfn24",
-  "qfn50_32t",
-  "qfn50_24t",
-  "chilaboard-altium-library",
-  "uart/serial",
-  "tier b",
-  "qfn package",
+  "ic",
   "esp8285",
   "transceiver",
+  "uart",
   "trs3122",
   "qfn24",
   "qfn32",
@@ -40,7 +30,9 @@
   "integrated",
   "wireless",
   "in",
-  "package"
+  "package",
+  "qfn50",
+  "serial"
  ],
  "facts": {
   "package_family": "QFN",
@@ -64,7 +56,7 @@
   "tier_counts": {
    "B": 2
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -88,6 +80,6 @@
   "chilaboard-altium-library/ESP8285_QFN32/ESP8285_QFN32",
   "chilaboard-altium-library/TRS3122_QFN24/TRS3122_QFN24"
  ],
- "embedding_text": "ic.qfn.uart | IC | Surface-mount UART/serial IC cluster in QFN packages, featuring 2 tier B parts including ESP8285_QFN32 and TRS3122_QFN24 with QFN50_32T and QFN50_24T footprints. | ic uart serial qfn smd esp8285_qfn32 trs3122_qfn24 qfn50_32t qfn50_24t chilaboard-altium-library uart/serial tier b qfn package esp8285 transceiver trs3122 qfn24 qfn32 microcontroller with integrated wireless in package | QFN | UART/serial",
+ "embedding_text": "ic.qfn.uart | IC | 2 ic parts for UART/serial using QFN footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | qfn ic esp8285 transceiver uart trs3122 qfn24 qfn32 microcontroller with integrated wireless in package qfn50 serial | QFN | UART/serial",
  "class": "ic"
 }

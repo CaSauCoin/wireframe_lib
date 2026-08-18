@@ -5,42 +5,34 @@
  "category_path": [
   "IC"
  ],
- "description": "Cluster of 55 surface-mount integrated circuits featuring 5V, LDO, and 2.5V facets across SOT-23 package family footprints.",
+ "description": "55 ic parts for 5V, LDO, 2.5V using SOT-23 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select based on specific footprint variants such as SOT-23, SOT-23-6, TSOT-23-6, or detailed SOT-23-3 footprint specs.",
-  "Prefer tier A parts over tier B entries for quality ranking.",
-  "Verify component source library compatibility among Alternate-KiCad-Library, kicad-symbols, and JLCPCB-Kicad-Library."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SOT-23 land pattern is intended."
  ],
  "avoid_when": [
-  "The PCB layout requires non-SMD or through-hole mounting.",
-  "The target design requires package families other than SOT-23 variants.",
-  "Required electrical specifications fall outside the 5V, LDO, or 2.5V facets."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SOT-23."
  ],
  "keywords": [
-  "ic",
-  "smd",
-  "sot-23",
-  "sot-23-6",
-  "tsot-23-6",
-  "ldo",
   "5v",
-  "2.5v",
+  "sot",
   "voltage",
   "regulator",
-  "integrated circuit",
-  "kicad-symbols",
-  "alternate-kicad-library",
-  "jlcpcb-kicad-library",
-  "sot",
+  "ldo",
   "low",
   "dropout",
   "terminal",
+  "ic",
   "akl",
   "alternate",
   "kicad",
   "library",
   "vreg",
-  "pmic"
+  "pmic",
+  "power"
  ],
  "facts": {
   "package_family": "SOT-23",
@@ -71,7 +63,7 @@
    "A": 54,
    "B": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -172,6 +164,6 @@
   "Alternate-KiCad-Library/Voltage_Regulator_AKL/MCP1754ST-5002E-CB",
   "JLCPCB-Kicad-Library/2829399/LDO, 2.5V, 0.3A"
  ],
- "embedding_text": "ic.sot-23.5v.ldo | IC | Cluster of 55 surface-mount integrated circuits featuring 5V, LDO, and 2.5V facets across SOT-23 package family footprints. | ic smd sot-23 sot-23-6 tsot-23-6 ldo 5v 2.5v voltage regulator integrated circuit kicad-symbols alternate-kicad-library jlcpcb-kicad-library sot low dropout terminal akl alternate kicad library vreg pmic | SOT-23 | 5V LDO 2.5V",
+ "embedding_text": "ic.sot-23.5v.ldo | IC | 55 ic parts for 5V, LDO, 2.5V using SOT-23 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | 5v sot voltage regulator ldo low dropout terminal ic akl alternate kicad library vreg pmic power | SOT-23 | 5V LDO 2.5V",
  "class": "ic"
 }

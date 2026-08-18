@@ -5,43 +5,34 @@
  "category_path": [
   "Connector"
  ],
- "description": "FPC (flexible printed circuit) board connectors, SMD-mounted, spanning multiple pitches (0.3mm, 0.4mm, 0.5mm, 1.0mm) and contact styles across horizontal and vertical footprints.",
+ "description": "17 connector parts using FPC footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Match pitch and pin count exactly (e.g. P0.5mm 1x16 vs P1.0mm 1x08)",
-  "Match contact type: dual-contact, bottom-contact, or LIF (low insertion force)",
-  "Match orientation: horizontal vs vertical mounting",
-  "Verify footprint name matches board FPC land pattern exactly"
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a FPC land pattern is intended."
  ],
  "avoid_when": [
-  "The required pitch or pin count is not covered by the listed footprints",
-  "The FPC cable's contact side (top/bottom) or orientation does not match the chosen footprint",
-  "A non-FPC connector type (e.g. board-to-board, wire-to-board) is needed"
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than FPC."
  ],
  "keywords": [
   "connector",
   "fpc",
-  "flexible printed circuit",
-  "ffc fpc",
-  "smd connector",
-  "dual contact",
-  "bottom contact",
-  "low insertion force",
-  "lif",
-  "horizontal fpc",
-  "vertical fpc",
-  "reverse numbering",
-  "p0.5mm",
-  "p1.0mm",
-  "p0.4mm",
-  "p0.3mm",
-  "camera connector",
-  "mountingpin",
   "sparkfun",
   "pin",
   "p0",
   "5mm",
   "horizontal",
-  "row"
+  "row",
+  "conn",
+  "dualcontact",
+  "02x14",
+  "mountingpin",
+  "generic",
+  "lif",
+  "contact",
+  "camera"
  ],
  "facts": {
   "package_family": "FPC",
@@ -74,7 +65,7 @@
    "B": 16,
    "C": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -137,6 +128,6 @@
   "SparkFun-KiCad-Libraries/SparkFun-Connector/Conn_01x24_FPC_P0.5mm_Horizontal_BottomContact",
   "SparkFun-KiCad-Libraries/SparkFun-Connector/Conn_01x16_FPC_P0.5mm_Horizontal_DualContact"
  ],
- "embedding_text": "connector.fpc | Connector | FPC (flexible printed circuit) board connectors, SMD-mounted, spanning multiple pitches (0.3mm, 0.4mm, 0.5mm, 1.0mm) and contact styles across horizontal and vertical footprints. | connector fpc flexible printed circuit ffc fpc smd connector dual contact bottom contact low insertion force lif horizontal fpc vertical fpc reverse numbering p0.5mm p1.0mm p0.4mm p0.3mm camera connector mountingpin sparkfun pin p0 5mm horizontal row | FPC | ",
+ "embedding_text": "connector.fpc | Connector | 17 connector parts using FPC footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | connector fpc sparkfun pin p0 5mm horizontal row conn dualcontact 02x14 mountingpin generic lif contact camera | FPC | ",
  "class": "connector"
 }

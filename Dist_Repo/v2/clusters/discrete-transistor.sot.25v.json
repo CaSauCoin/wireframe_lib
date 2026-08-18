@@ -6,34 +6,22 @@
   "Discrete",
   "Transistor"
  ],
- "description": "Discrete transistor cluster containing 8 surface-mount parts rated for 25V across SOT footprints including SOT-363_SC-70-6, SOT-323_SC-70, and SOT-363.",
+ "description": "8 discrete transistor parts for 25V using SOT footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when a 25V rated discrete transistor in a surface-mount SOT package is required.",
-  "Choose between SOT-363_SC-70-6, SOT-323_SC-70, and SOT-363 footprint options.",
-  "Prefer Tier A parts from Alternate-KiCad-Library or digikey-kicad-library."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SOT land pattern is intended."
  ],
  "avoid_when": [
-  "The circuit requires a voltage rating other than 25V.",
-  "Through-hole mounting or non-SMD components are required.",
-  "The PCB layout requires footprints outside the SOT package family."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SOT."
  ],
  "keywords": [
-  "discrete transistor",
-  "transistor",
   "sot",
-  "25v",
-  "smd",
-  "sot-363_sc-70-6",
-  "sot-323_sc-70",
-  "sot-363",
-  "alternate-kicad-library",
-  "digikey-kicad-library",
-  "dmg6301udw",
-  "fdg6301n",
-  "fdg6304p",
-  "fdg6321c",
-  "fdg6322c",
+  "transistor",
   "mosfet",
+  "25v",
   "sc",
   "enchancement",
   "discrete",
@@ -41,7 +29,11 @@
   "mos",
   "akl",
   "nmos",
-  "alternate"
+  "alternate",
+  "kicad",
+  "library",
+  "emos",
+  "emosfet"
  ],
  "facts": {
   "package_family": "SOT",
@@ -68,7 +60,7 @@
    "A": 7,
    "B": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -122,6 +114,6 @@
   "Alternate-KiCad-Library/Transistor_MOSFET_AKL/NTS4409N",
   "digikey-kicad-library/dk_Transistors-FETs-MOSFETs-Arrays/FDG6303N"
  ],
- "embedding_text": "discrete-transistor.sot.25v | Discrete Transistor | Discrete transistor cluster containing 8 surface-mount parts rated for 25V across SOT footprints including SOT-363_SC-70-6, SOT-323_SC-70, and SOT-363. | discrete transistor transistor sot 25v smd sot-363_sc-70-6 sot-323_sc-70 sot-363 alternate-kicad-library digikey-kicad-library dmg6301udw fdg6301n fdg6304p fdg6321c fdg6322c mosfet sc enchancement discrete dual mos akl nmos alternate | SOT | 25V",
+ "embedding_text": "discrete-transistor.sot.25v | Discrete Transistor | 8 discrete transistor parts for 25V using SOT footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | sot transistor mosfet 25v sc enchancement discrete dual mos akl nmos alternate kicad library emos emosfet | SOT | 25V",
  "class": "discrete.transistor"
 }

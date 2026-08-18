@@ -6,30 +6,19 @@
   "Discrete",
   "Diode"
  ],
- "description": "A cluster of 6 surface-mount 8.2V discrete diode components using SOT-23 footprints from Alternate-KiCad-Library.",
+ "description": "6 discrete diode parts for 8.2V using SOT-23 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when an SMD 8.2V discrete diode in a SOT-23 footprint is required.",
-  "Choose among tier A parts including BZX84-C8V2, AZ23C8V2, BZB84-B8V2, 2BZX84-C8V2, and DZ23-C8V2.",
-  "Verify part selection against Alternate-KiCad-Library source entries."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SOT-23 land pattern is intended."
  ],
  "avoid_when": [
-  "Do not use when a package family other than SOT-23 is needed.",
-  "Avoid if the design requires through-hole mounting instead of SMD.",
-  "Do not use if a diode rating other than 8.2V is specified."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SOT-23."
  ],
  "keywords": [
-  "discrete",
   "diode",
-  "8.2v",
-  "sot-23",
-  "smd",
-  "alternate-kicad-library",
-  "2bzx84-c8v2",
-  "az23c8v2",
-  "bzb84-b8v2",
-  "bzx84-c8v2",
-  "dz23-c8v2",
-  "discrete diode",
   "sot",
   "zener",
   "2v",
@@ -38,10 +27,13 @@
   "alternate",
   "kicad",
   "library",
+  "discrete",
   "300mw",
   "common",
   "c8v2",
-  "anode"
+  "anode",
+  "commonanode",
+  "2bzx84"
  ],
  "facts": {
   "package_family": "SOT-23",
@@ -64,7 +56,7 @@
   "tier_counts": {
    "A": 6
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -116,6 +108,6 @@
   "Alternate-KiCad-Library/Diode_Zener_AKL/DZ23-C8V2",
   "Alternate-KiCad-Library/Diode_Zener_AKL/MMBZ5237"
  ],
- "embedding_text": "discrete-diode.sot-23.8-2v | Discrete Diode | A cluster of 6 surface-mount 8.2V discrete diode components using SOT-23 footprints from Alternate-KiCad-Library. | discrete diode 8.2v sot-23 smd alternate-kicad-library 2bzx84-c8v2 az23c8v2 bzb84-b8v2 bzx84-c8v2 dz23-c8v2 discrete diode sot zener 2v dual akl alternate kicad library 300mw common c8v2 anode | SOT-23 | 8.2V",
+ "embedding_text": "discrete-diode.sot-23.8-2v | Discrete Diode | 6 discrete diode parts for 8.2V using SOT-23 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | diode sot zener 2v dual akl alternate kicad library discrete 300mw common c8v2 anode commonanode 2bzx84 | SOT-23 | 8.2V",
  "class": "discrete.diode"
 }

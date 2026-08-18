@@ -6,30 +6,23 @@
   "Discrete",
   "Transistor"
  ],
- "description": "Discrete transistor cluster containing 1 through-hole part in the Banana package family using the Banana_Jack_3Pin footprint.",
+ "description": "1 discrete transistor parts using Banana footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when a discrete transistor requiring a Banana_Jack_3Pin footprint and through-hole mounting is specified.",
-  "Verify footprint and pin assignment details for tier C quality parts before PCB layout.",
-  "Ensure the design uses the Banana package family."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a Banana land pattern is intended."
  ],
  "avoid_when": [
-  "Do not use when surface-mount components are required.",
-  "Avoid if the design requires a package family other than Banana.",
-  "Do not use if a footprint other than Banana_Jack_3Pin is required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than Banana."
  ],
  "keywords": [
-  "discrete transistor",
   "banana",
-  "banana_jack_3pin",
-  "through_hole",
-  "discrete",
-  "transistor",
-  "banana jack 3pin",
-  "dist-legacy",
-  "tier c",
-  "banana package",
   "jack",
   "3pin",
+  "discrete",
+  "transistor",
   "socket",
   "through",
   "hole",
@@ -61,12 +54,12 @@
   "tier_counts": {
    "C": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
   "dist-legacy/Banana_Jack_3Pin"
  ],
- "embedding_text": "discrete-transistor.banana | Discrete Transistor | Discrete transistor cluster containing 1 through-hole part in the Banana package family using the Banana_Jack_3Pin footprint. | discrete transistor banana banana_jack_3pin through_hole discrete transistor banana jack 3pin dist-legacy tier c banana package jack 3pin socket through hole pad mm pitch pins package triple footprint 6mm | Banana | ",
+ "embedding_text": "discrete-transistor.banana | Discrete Transistor | 1 discrete transistor parts using Banana footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | banana jack 3pin discrete transistor socket through hole pad mm pitch pins package triple footprint 6mm | Banana | ",
  "class": "discrete.transistor"
 }

@@ -6,42 +6,34 @@
   "IC",
   "Interface"
  ],
- "description": "Interface IC cluster containing 19 surface-mount (SMD) Tier A parts in SOIC package variants from KiCad symbol libraries.",
+ "description": "19 ic interface parts using SOIC footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Match the required SOIC footprint variant and pin count (such as SOIC-8, SOIC-16, or wide SOIC).",
-  "Select surface-mount (SMD) interface IC parts from the 19 Tier A KiCad library symbols.",
-  "Check pitch requirements against the standard 1.27mm SOIC footprint specifications."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SOIC land pattern is intended."
  ],
  "avoid_when": [
-  "Through-hole or non-surface-mount (non-SMD) component mounting is required.",
-  "The design requires package families other than SOIC.",
-  "Parts outside the IC Interface category are needed."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SOIC."
  ],
  "keywords": [
-  "ic",
-  "interface",
   "soic",
-  "smd",
-  "soic-8",
-  "soic-16",
-  "soic-16w",
-  "soic-18w",
-  "soic-20w",
-  "soic-24w",
-  "1.27mm",
-  "kicad",
-  "ds90lv027a",
-  "sn65lvds047d",
-  "ht9170d",
+  "interface",
   "differential",
   "so",
   "p1",
   "27mm",
+  "ic",
   "pecl",
   "driver",
   "9mm",
   "quad",
-  "reciver"
+  "reciver",
+  "lvds",
+  "receiver",
+  "9x9",
+  "pin"
  ],
  "facts": {
   "package_family": "SOIC",
@@ -67,7 +59,7 @@
   "tier_counts": {
    "A": 19
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -132,6 +124,6 @@
   "kicad-symbols/Interface_Expansion/TPIC6595",
   "kicad-symbols/Interface/U2270B"
  ],
- "embedding_text": "ic-interface.soic | IC Interface | Interface IC cluster containing 19 surface-mount (SMD) Tier A parts in SOIC package variants from KiCad symbol libraries. | ic interface soic smd soic-8 soic-16 soic-16w soic-18w soic-20w soic-24w 1.27mm kicad ds90lv027a sn65lvds047d ht9170d differential so p1 27mm pecl driver 9mm quad reciver | SOIC | ",
+ "embedding_text": "ic-interface.soic | IC Interface | 19 ic interface parts using SOIC footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | soic interface differential so p1 27mm ic pecl driver 9mm quad reciver lvds receiver 9x9 pin | SOIC | ",
  "class": "ic.interface"
 }

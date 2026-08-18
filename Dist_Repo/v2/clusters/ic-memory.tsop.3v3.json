@@ -6,33 +6,23 @@
   "IC",
   "Memory"
  ],
- "description": "Surface-mount 3.3V memory IC components in 32-pin TSOP-I packages with 0.5mm pitch.",
+ "description": "2 ic memory parts for 3.3V using TSOP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select based on required TSOP-I-32 package dimensions, such as 11.8x8mm or 18.4x8mm.",
-  "Verify part variant selection between AS7C31024B-xxST and AS7C31024B-xxT.",
-  "Ensure the design uses surface-mount (SMD) 3.3V memory IC requirements."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a TSOP land pattern is intended."
  ],
  "avoid_when": [
-  "The PCB design requires a package type other than TSOP-I-32.",
-  "The circuit operates at a supply voltage other than 3.3V.",
-  "Through-hole assembly is required instead of SMD."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than TSOP."
  ],
  "keywords": [
-  "ic",
-  "memory",
-  "3.3v",
   "tsop",
-  "tsop-i-32",
-  "smd",
-  "as7c31024b-xxst",
-  "as7c31024b-xxt",
+  "memory",
+  "3v",
   "as7c31024b",
   "ram",
-  "kicad-symbols",
-  "0.5mm",
-  "11.8x8mm",
-  "18.4x8mm",
-  "3v",
   "mbit",
   "128k",
   "bit",
@@ -41,7 +31,9 @@
   "20ns",
   "p0",
   "5mm",
-  "so"
+  "so",
+  "static",
+  "1mbit"
  ],
  "facts": {
   "package_family": "TSOP",
@@ -65,7 +57,7 @@
   "tier_counts": {
    "A": 2
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -89,6 +81,6 @@
   "kicad-symbols/Memory_RAM/AS7C31024B-xxST",
   "kicad-symbols/Memory_RAM/AS7C31024B-xxT"
  ],
- "embedding_text": "ic-memory.tsop.3v3 | IC Memory | Surface-mount 3.3V memory IC components in 32-pin TSOP-I packages with 0.5mm pitch. | ic memory 3.3v tsop tsop-i-32 smd as7c31024b-xxst as7c31024b-xxt as7c31024b ram kicad-symbols 0.5mm 11.8x8mm 18.4x8mm 3v mbit 128k bit cmos sram 20ns p0 5mm so | TSOP | 3.3V",
+ "embedding_text": "ic-memory.tsop.3v3 | IC Memory | 2 ic memory parts for 3.3V using TSOP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | tsop memory 3v as7c31024b ram mbit 128k bit cmos sram 20ns p0 5mm so static 1mbit | TSOP | 3.3V",
  "class": "ic.memory"
 }

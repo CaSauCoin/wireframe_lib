@@ -5,28 +5,20 @@
  "category_path": [
   "IC"
  ],
- "description": "This cluster contains 3 IC parts using Warning footprints with unknown mounting types and tier C quality classification.",
+ "description": "3 ic parts using Warning footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Verify part specifications and footprint suitability before selection.",
-  "Ensure the board layout requires a Warning land pattern.",
-  "Check datasheet availability and pin-to-pad mapping for tier C parts."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a Warning land pattern is intended."
  ],
  "avoid_when": [
-  "The design requires a package other than Warning.",
-  "Required electrical limits or pinout details are unstated.",
-  "Tier C parts with unknown mount type are unsuitable for the application."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than Warning."
  ],
  "keywords": [
-  "ic",
   "warning",
-  "warning footprint",
-  "warning package",
-  "ic warning",
-  "tier c",
-  "unknown mount",
-  "dist-legacy",
-  "package family warning",
-  "integrated circuit",
+  "ic",
   "bottom",
   "silk",
   "top"
@@ -50,7 +42,7 @@
   "tier_counts": {
    "C": 3
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
@@ -58,6 +50,6 @@
   "dist-legacy/Warning (T-Silk)",
   "dist-legacy/Warning (Top)"
  ],
- "embedding_text": "ic.warning | IC | This cluster contains 3 IC parts using Warning footprints with unknown mounting types and tier C quality classification. | ic warning warning footprint warning package ic warning tier c unknown mount dist-legacy package family warning integrated circuit bottom silk top | Warning | ",
+ "embedding_text": "ic.warning | IC | 3 ic parts using Warning footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | warning ic bottom silk top | Warning | ",
  "class": "ic"
 }

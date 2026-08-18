@@ -6,36 +6,30 @@
   "IC",
   "Analog"
  ],
- "description": "Cluster of 5V surface-mount analog ICs using an SPI interface in SOIC packages including SOIC-8, SOIC-14, and SOIC-16W footprints.",
+ "description": "3 ic analog parts for 5V, SPI using SOIC footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when requiring a 5V analog IC with SPI digital interface.",
-  "Choose for surface-mount designs utilizing 1.27mm pitch SOIC footprints (SOIC-8, SOIC-14, or SOIC-16W).",
-  "Match specific pin count and function (such as ADC or DAC) to project requirements."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SOIC land pattern is intended."
  ],
  "avoid_when": [
-  "Avoid if the system requires a non-5V operating supply.",
-  "Avoid if an interface protocol other than SPI is required.",
-  "Avoid if through-hole mounting or package families other than SOIC are needed."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SOIC."
  ],
  "keywords": [
-  "ic",
+  "soic",
+  "spi",
   "analog",
   "5v",
-  "spi",
-  "soic",
-  "smd",
-  "soic-8",
-  "soic-14",
-  "soic-16w",
   "adc",
   "dac",
-  "1.27mm",
-  "kicad",
   "bit",
   "interface",
   "p1",
   "27mm",
   "so",
+  "ic",
   "rail",
   "to",
   "4ch",
@@ -65,7 +59,7 @@
   "tier_counts": {
    "A": 3
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -98,6 +92,6 @@
   "kicad-symbols/Analog_ADC/LTC1865-S8",
   "kicad-symbols/Analog_ADC/MCP3204"
  ],
- "embedding_text": "ic-analog.soic.5v.spi | IC Analog | Cluster of 5V surface-mount analog ICs using an SPI interface in SOIC packages including SOIC-8, SOIC-14, and SOIC-16W footprints. | ic analog 5v spi soic smd soic-8 soic-14 soic-16w adc dac 1.27mm kicad bit interface p1 27mm so rail to 4ch channel | SOIC | 5V SPI",
+ "embedding_text": "ic-analog.soic.5v.spi | IC Analog | 3 ic analog parts for 5V, SPI using SOIC footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | soic spi analog 5v adc dac bit interface p1 27mm so ic rail to 4ch channel | SOIC | 5V SPI",
  "class": "ic.analog"
 }

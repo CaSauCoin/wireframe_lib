@@ -6,42 +6,34 @@
   "IC",
   "RF"
  ],
- "description": "A cluster of 8 surface-mount RF ICs utilizing ublox footprints including ublox_SARA_LGA-96, ublox_ZOE_M8, ublox_LENA-R8_LGA-100, and ublox_SAM-M8Q.",
+ "description": "8 ic rf parts using ublox footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select based on required footprint such as ublox_SARA_LGA-96, ublox_ZOE_M8, ublox_LENA-R8_LGA-100, or ublox_SAM-M8Q.",
-  "Prefer Tier A representative parts like SARA-U201, SARA-U260, SARA-U270, and SARA-U280.",
-  "Use when surface-mount (SMD) RF IC components are needed."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a ublox land pattern is intended."
  ],
  "avoid_when": [
-  "Through-hole or non-SMD mounting is required.",
-  "The board layout requires footprints outside the ublox package family.",
-  "Components other than RF ICs are required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than ublox."
  ],
  "keywords": [
-  "ic",
-  "rf",
-  "ic rf",
-  "ublox",
-  "smd",
-  "sara-u201",
-  "sara-u260",
-  "sara-u270",
-  "sara-u280",
-  "lena-r8001",
-  "ublox_sara_lga-96",
-  "ublox_zoe_m8",
-  "ublox_lena-r8_lga-100",
-  "ublox_sam-m8q",
   "sara",
+  "ublox",
   "gsm",
+  "rf",
   "hspa",
   "gps",
   "lga",
   "gnss",
+  "ic",
   "module",
   "at",
   "command",
-  "set"
+  "set",
+  "lte",
+  "quad",
+  "band"
  ],
  "facts": {
   "package_family": "ublox",
@@ -66,7 +58,7 @@
    "A": 4,
    "B": 4
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -120,6 +112,6 @@
   "kicad-symbols/RF_GPS/ZOE-M8G",
   "kicad-symbols/RF_GPS/ZOE-M8Q"
  ],
- "embedding_text": "ic-rf.ublox | IC RF | A cluster of 8 surface-mount RF ICs utilizing ublox footprints including ublox_SARA_LGA-96, ublox_ZOE_M8, ublox_LENA-R8_LGA-100, and ublox_SAM-M8Q. | ic rf ic rf ublox smd sara-u201 sara-u260 sara-u270 sara-u280 lena-r8001 ublox_sara_lga-96 ublox_zoe_m8 ublox_lena-r8_lga-100 ublox_sam-m8q sara gsm hspa gps lga gnss module at command set | ublox | ",
+ "embedding_text": "ic-rf.ublox | IC RF | 8 ic rf parts using ublox footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | sara ublox gsm rf hspa gps lga gnss ic module at command set lte quad band | ublox | ",
  "class": "ic.rf"
 }

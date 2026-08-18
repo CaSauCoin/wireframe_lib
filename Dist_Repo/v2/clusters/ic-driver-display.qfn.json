@@ -7,36 +7,28 @@
   "Driver",
   "Display"
  ],
- "description": "Display driver IC cluster containing 13 surface-mount parts across QFN package variants from KiCad symbols.",
+ "description": "13 ic driver display parts using QFN footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Choose according to required QFN pin count, body size, and lead pitch.",
-  "Prefer tier A parts over tier B parts for higher quality classification.",
-  "Ensure compatibility with surface-mount QFN land patterns."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a QFN land pattern is intended."
  ],
  "avoid_when": [
-  "The design requires package families other than QFN.",
-  "Through-hole mounting is required instead of surface mounting.",
-  "Application requirements depend on electrical parameters not stated in the facts."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than QFN."
  ],
  "keywords": [
-  "ic",
-  "driver",
-  "display",
   "qfn",
-  "hvqfn",
-  "vqfn",
-  "smd",
-  "display driver",
-  "is31fl3216",
-  "tlc5947rhb",
-  "is31fl3731-qf",
-  "1ep",
-  "kicad-symbols",
+  "driver",
   "led",
   "pwm",
   "bit",
+  "1ep",
   "p0",
   "nolead",
+  "ic",
+  "display",
   "with",
   "matrix",
   "channel",
@@ -73,7 +65,7 @@
    "A": 4,
    "B": 9
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -132,6 +124,6 @@
   "kicad-symbols/Driver_LED/TLC5951RTA",
   "kicad-symbols/Driver_LED/TLC5957RTQ"
  ],
- "embedding_text": "ic-driver-display.qfn | IC Driver Display | Display driver IC cluster containing 13 surface-mount parts across QFN package variants from KiCad symbols. | ic driver display qfn hvqfn vqfn smd display driver is31fl3216 tlc5947rhb is31fl3731-qf 1ep kicad-symbols led pwm bit p0 nolead with matrix channel 4mm 5mm and | QFN | ",
+ "embedding_text": "ic-driver-display.qfn | IC Driver Display | 13 ic driver display parts using QFN footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | qfn driver led pwm bit 1ep p0 nolead ic display with matrix channel 4mm 5mm and | QFN | ",
  "class": "ic.driver.display"
 }

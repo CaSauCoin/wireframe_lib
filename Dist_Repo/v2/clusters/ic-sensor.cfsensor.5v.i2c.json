@@ -6,36 +6,30 @@
   "IC",
   "Sensor"
  ],
- "description": "IC sensor cluster featuring SMD mounting, 5V and 5.5V rating facets, I2C interface, and CFSensor_XGZP6859D_7x7mm footprint, represented by part XGZP6859D.",
+ "description": "1 ic sensor parts for 5V, I2C, 5.5V using CFSensor footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Choosing an SMD sensor IC with 5V / 5.5V facets and an I2C interface.",
-  "Requiring the CFSensor_XGZP6859D_7x7mm footprint or XGZP6859D part.",
-  "Selecting Tier B parts sourced from KiCad symbols library."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a CFSensor land pattern is intended."
  ],
  "avoid_when": [
-  "A footprint other than CFSensor_XGZP6859D_7x7mm is required.",
-  "The design requires through-hole mounting instead of SMD.",
-  "An interface other than I2C or non-5V/5.5V voltage facets are needed."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than CFSensor."
  ],
  "keywords": [
-  "ic",
   "sensor",
-  "ic.sensor",
   "cfsensor",
-  "5v",
-  "5.5v",
-  "i2c",
-  "smd",
-  "xgzp6859d",
-  "cfsensor_xgzp6859d_7x7mm",
-  "7x7mm",
-  "kicad-symbols",
-  "tier b",
   "pressure",
+  "5v",
+  "xgzp6859d",
+  "i2c",
   "bit",
   "supply",
+  "7x7mm",
   "so",
-  "sencoch"
+  "sencoch",
+  "ic"
  ],
  "facts": {
   "package_family": "CFSensor",
@@ -60,7 +54,7 @@
   "tier_counts": {
    "B": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -75,6 +69,6 @@
  "part_ids": [
   "kicad-symbols/Sensor_Pressure/XGZP6859D"
  ],
- "embedding_text": "ic-sensor.cfsensor.5v.i2c | IC Sensor | IC sensor cluster featuring SMD mounting, 5V and 5.5V rating facets, I2C interface, and CFSensor_XGZP6859D_7x7mm footprint, represented by part XGZP6859D. | ic sensor ic.sensor cfsensor 5v 5.5v i2c smd xgzp6859d cfsensor_xgzp6859d_7x7mm 7x7mm kicad-symbols tier b pressure bit supply so sencoch | CFSensor | 5V I2C 5.5V",
+ "embedding_text": "ic-sensor.cfsensor.5v.i2c | IC Sensor | 1 ic sensor parts for 5V, I2C, 5.5V using CFSensor footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | sensor cfsensor pressure 5v xgzp6859d i2c bit supply 7x7mm so sencoch ic | CFSensor | 5V I2C 5.5V",
  "class": "ic.sensor"
 }

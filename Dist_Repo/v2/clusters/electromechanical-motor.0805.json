@@ -6,29 +6,20 @@
   "Electromechanical",
   "Motor"
  ],
- "description": "Electromechanical motor component cluster in 0805 SMD package format containing 1 tier B part from the Seeed-OPL KiCad library.",
+ "description": "1 electromechanical motor parts using 0805 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Use when an 0805 SMD package and R0805 footprint are required.",
-  "Check part specifications and ratings from the Seeed-OPL KiCad library entry.",
-  "Verify footprint pin mapping and component class compatibility prior to layout."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a 0805 land pattern is intended."
  ],
  "avoid_when": [
-  "The PCB layout requires non-SMD surface mount or footprints other than 0805 / R0805.",
-  "Required electrical parameters, ratings, or datasheets are not specified for the part.",
-  "The design requires verified tier A component entries."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than 0805."
  ],
  "keywords": [
-  "electromechanical",
-  "motor",
-  "0805",
-  "r0805",
-  "smd",
-  "surface mount",
-  "seeed-opl-kicad-library",
-  "seeed opl",
-  "kicad library",
-  "tier b",
   "resistor",
+  "smd",
   "10k",
   "8w",
   "res",
@@ -40,7 +31,9 @@
   "in",
   "an",
   "package",
-  "ohm"
+  "r0805",
+  "ohm",
+  "electromechanical"
  ],
  "facts": {
   "package_family": "0805",
@@ -61,7 +54,7 @@
   "tier_counts": {
    "B": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -76,6 +69,6 @@
  "part_ids": [
   "Seeed-OPL-Kicad-Library/OPL_Resistor/SMD-RES-10K-1%-1_8W_0805_"
  ],
- "embedding_text": "electromechanical-motor.0805 | Electromechanical Motor | Electromechanical motor component cluster in 0805 SMD package format containing 1 tier B part from the Seeed-OPL KiCad library. | electromechanical motor 0805 r0805 smd surface mount seeed-opl-kicad-library seeed opl kicad library tier b resistor 10k 8w res opl kohm tolerance surface mount in an package ohm | 0805 | ",
+ "embedding_text": "electromechanical-motor.0805 | Electromechanical Motor | 1 electromechanical motor parts using 0805 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | resistor smd 10k 8w res opl kohm tolerance surface mount in an package r0805 ohm electromechanical | 0805 | ",
  "class": "electromechanical.motor"
 }

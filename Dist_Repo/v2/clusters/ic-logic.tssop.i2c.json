@@ -6,32 +6,20 @@
   "IC",
   "Logic"
  ],
- "description": "IC logic components in TSSOP surface-mount packages featuring I2C interfaces, including real-time clock devices.",
+ "description": "1 ic logic parts for I2C using TSSOP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Choose when requiring surface-mount IC logic devices with an I2C interface.",
-  "Verify footprint match for TSSOP-8_L4.4-W3.0-P0.65-LS6.4-BL packaging.",
-  "Select for real-time clock implementations using the TSSOP package family."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a TSSOP land pattern is intended."
  ],
  "avoid_when": [
-  "Designs requiring through-hole components instead of surface-mount SMD.",
-  "Applications needing package families other than TSSOP.",
-  "Layouts requiring footprints other than TSSOP-8_L4.4-W3.0-P0.65-LS6.4-BL.",
-  "Circuits that do not use an I2C interface."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than TSSOP."
  ],
  "keywords": [
-  "ic logic",
   "tssop",
   "i2c",
-  "smd",
-  "real time clock",
-  "pt7c4372alex",
-  "tssop-8",
-  "tssop-8_l4.4-w3.0-p0.65-ls6.4-bl",
-  "jlcpcb-kicad-library",
-  "0.4ua",
-  "clock",
-  "ic",
-  "logic",
   "real",
   "time",
   "l4",
@@ -40,9 +28,12 @@
   "ls6",
   "bl",
   "c461795",
+  "clock",
   "4ua",
+  "pt7c4372alex",
   "clocks",
-  "rohs"
+  "rohs",
+  "footprint"
  ],
  "facts": {
   "package_family": "TSSOP",
@@ -65,7 +56,7 @@
   "tier_counts": {
    "B": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -80,6 +71,6 @@
  "part_ids": [
   "JLCPCB-Kicad-Library/461795/Real Time Clock, I2C, 0.4uA, PT7C4372ALEX"
  ],
- "embedding_text": "ic-logic.tssop.i2c | IC Logic | IC logic components in TSSOP surface-mount packages featuring I2C interfaces, including real-time clock devices. | ic logic tssop i2c smd real time clock pt7c4372alex tssop-8 tssop-8_l4.4-w3.0-p0.65-ls6.4-bl jlcpcb-kicad-library 0.4ua clock ic logic real time l4 w3 p0 ls6 bl c461795 4ua clocks rohs | TSSOP | I2C",
+ "embedding_text": "ic-logic.tssop.i2c | IC Logic | 1 ic logic parts for I2C using TSSOP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | tssop i2c real time l4 w3 p0 ls6 bl c461795 clock 4ua pt7c4372alex clocks rohs footprint | TSSOP | I2C",
  "class": "ic.logic"
 }

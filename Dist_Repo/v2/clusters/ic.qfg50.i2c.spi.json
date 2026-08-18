@@ -5,34 +5,25 @@
  "category_path": [
   "IC"
  ],
- "description": "Surface-mount IC cluster featuring I2C, SPI, and CAN interfaces in QFG50 package family variants including QFG50_48, QFG50_64, and QFG50_100 footprints.",
+ "description": "4 ic parts for I2C, SPI, CAN using QFG50 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select for surface-mount IC applications requiring I2C, SPI, or CAN interfaces.",
-  "Choose based on footprint requirements among QFG50_48, QFG50_64, or QFG50_100 variants.",
-  "Review tier B quality entries sourced from chilaboard-altium-library."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a QFG50 land pattern is intended."
  ],
  "avoid_when": [
-  "The design requires non-SMD or through-hole mounting.",
-  "The PCB layout requires package footprints outside the QFG50 family.",
-  "Applications require interfaces or specs not covered by the listed I2C, SPI, or CAN facets."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than QFG50."
  ],
  "keywords": [
-  "ic",
-  "qfg50",
-  "i2c",
-  "spi",
-  "can",
-  "smd",
-  "qfg50_48",
-  "qfg50_64",
-  "qfg50_100",
-  "stm32f030c8t6_qfp48",
-  "atmega3250a_qfp100",
-  "atmega6450a_qfp100",
-  "stm32f103rft6_qfp64",
-  "chilaboard-altium-library",
   "microcontroller",
+  "spi",
+  "i2c",
+  "qfg50",
+  "ic",
   "qfp100",
+  "can",
   "adc",
   "gpio",
   "and",
@@ -40,7 +31,8 @@
   "pin",
   "qfp",
   "package",
-  "jtag"
+  "jtag",
+  "stm32f103rft6"
  ],
  "facts": {
   "package_family": "QFG50",
@@ -67,7 +59,7 @@
   "tier_counts": {
    "B": 4
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -109,6 +101,6 @@
   "chilaboard-altium-library/ATMEGA6450A_QFP100/ATMEGA6450A_QFP100",
   "chilaboard-altium-library/STM32F103RFT6_QFP64/STM32F103RFT6_QFP64"
  ],
- "embedding_text": "ic.qfg50.i2c.spi | IC | Surface-mount IC cluster featuring I2C, SPI, and CAN interfaces in QFG50 package family variants including QFG50_48, QFG50_64, and QFG50_100 footprints. | ic qfg50 i2c spi can smd qfg50_48 qfg50_64 qfg50_100 stm32f030c8t6_qfp48 atmega3250a_qfp100 atmega6450a_qfp100 stm32f103rft6_qfp64 chilaboard-altium-library microcontroller qfp100 adc gpio and in pin qfp package jtag | QFG50 | I2C SPI CAN",
+ "embedding_text": "ic.qfg50.i2c.spi | IC | 4 ic parts for I2C, SPI, CAN using QFG50 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | microcontroller spi i2c qfg50 ic qfp100 can adc gpio and in pin qfp package jtag stm32f103rft6 | QFG50 | I2C SPI CAN",
  "class": "ic"
 }

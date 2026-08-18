@@ -7,34 +7,25 @@
   "Power",
   "Switching Regulator"
  ],
- "description": "Surface-mount 75V buck switching regulator ICs in TSSOP package options, including LM5088-1 and LM5088-2 parts.",
+ "description": "2 ic power switching regulator parts for buck, 75V using TSSOP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "A 75V buck switching regulator in an SMD TSSOP package is required.",
-  "Using parts with HTSSOP-16-1EP footprint layout, such as LM5088-1 or LM5088-2.",
-  "Accepting tier B components sourced from KiCad symbols."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a TSSOP land pattern is intended."
  ],
  "avoid_when": [
-  "Topologies other than buck regulators are required.",
-  "Voltage rating specifications differ from 75V.",
-  "Packages other than TSSOP / HTSSOP-16-1EP or non-SMD mounts are required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than TSSOP."
  ],
  "keywords": [
-  "ic",
-  "power",
-  "switching regulator",
   "buck",
-  "75v",
-  "tssop",
-  "smd",
-  "htssop-16-1ep",
-  "lm5088",
-  "lm5088-1",
-  "lm5088-2",
-  "kicad-symbols",
   "regulator",
   "switching",
+  "75v",
   "htssop",
   "4x5mm",
+  "lm5088",
   "wide",
   "input",
   "range",
@@ -42,7 +33,8 @@
   "synchronous",
   "controller",
   "1ep",
-  "p0"
+  "p0",
+  "65mm"
  ],
  "facts": {
   "package_family": "TSSOP",
@@ -66,7 +58,7 @@
   "tier_counts": {
    "B": 2
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -90,6 +82,6 @@
   "kicad-symbols/Regulator_Switching/LM5088-1",
   "kicad-symbols/Regulator_Switching/LM5088-2"
  ],
- "embedding_text": "ic-power-switching.tssop.buck.75v | IC Power Switching Regulator | Surface-mount 75V buck switching regulator ICs in TSSOP package options, including LM5088-1 and LM5088-2 parts. | ic power switching regulator buck 75v tssop smd htssop-16-1ep lm5088 lm5088-1 lm5088-2 kicad-symbols regulator switching htssop 4x5mm wide input range non synchronous controller 1ep p0 | TSSOP | buck 75V",
+ "embedding_text": "ic-power-switching.tssop.buck.75v | IC Power Switching Regulator | 2 ic power switching regulator parts for buck, 75V using TSSOP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | buck regulator switching 75v htssop 4x5mm lm5088 wide input range non synchronous controller 1ep p0 65mm | TSSOP | buck 75V",
  "class": "ic.power.switching"
 }

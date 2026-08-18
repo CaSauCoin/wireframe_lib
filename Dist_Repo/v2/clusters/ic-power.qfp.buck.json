@@ -6,32 +6,26 @@
   "IC",
   "Power"
  ],
- "description": "Surface-mount power IC cluster for buck converter applications using QFP package footprints, including LQFP-48-1EP.",
+ "description": "1 ic power parts for buck using QFP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when needing a surface-mount QFP buck power IC.",
-  "Verify requirement for the LQFP-48-1EP_7x7mm_P0.5mm_EP3.6x3.6mm footprint.",
-  "Prefer tier A parts from KiCad symbol sources such as LTC7810."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a QFP land pattern is intended."
  ],
  "avoid_when": [
-  "Avoid when layout requires non-QFP package families or through-hole mounting.",
-  "Avoid when non-buck power topology is required.",
-  "Avoid if required electrical limits or specifications are not provided for the part."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than QFP."
  ],
  "keywords": [
-  "ic power",
-  "buck",
-  "qfp",
-  "lqfp",
-  "smd",
-  "lqfp-48-1ep",
-  "ltc7810",
-  "kicad-symbols",
   "regulator",
-  "power ic",
-  "surface mount",
   "controller",
   "dual",
   "dc",
+  "lqfp",
+  "qfp",
+  "buck",
+  "ltc7810",
   "150v",
   "phase",
   "synchronous",
@@ -62,7 +56,7 @@
   "tier_counts": {
    "A": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -77,6 +71,6 @@
  "part_ids": [
   "kicad-symbols/Regulator_Controller/LTC7810"
  ],
- "embedding_text": "ic-power.qfp.buck | IC Power | Surface-mount power IC cluster for buck converter applications using QFP package footprints, including LQFP-48-1EP. | ic power buck qfp lqfp smd lqfp-48-1ep ltc7810 kicad-symbols regulator power ic surface mount controller dual dc 150v phase synchronous step down lqpf 1ep 7x7mm | QFP | buck",
+ "embedding_text": "ic-power.qfp.buck | IC Power | 1 ic power parts for buck using QFP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | regulator controller dual dc lqfp qfp buck ltc7810 150v phase synchronous step down lqpf 1ep 7x7mm | QFP | buck",
  "class": "ic.power"
 }

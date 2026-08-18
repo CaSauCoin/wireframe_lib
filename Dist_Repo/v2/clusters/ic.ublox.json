@@ -5,30 +5,20 @@
  "category_path": [
   "IC"
  ],
- "description": "IC cluster containing surface-mount parts with ublox package footprints including LEA, LENA-R8, LGA-53, NEO, SAM-M8Q, ZED, and ZOE_M8.",
+ "description": "8 ic parts using ublox footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when needing surface-mount IC components with ublox package footprints.",
-  "Choose based on the required footprint variant such as LEA, LENA-R8, LGA-53, NEO, SAM-M8Q, ZED, or ZOE_M8.",
-  "Check component footprint dimensions and hand-soldering footprint options if manually assembling."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a ublox land pattern is intended."
  ],
  "avoid_when": [
-  "Through-hole or non-SMD mounting is required for the design.",
-  "The PCB layout requires footprint land patterns outside of the ublox package family.",
-  "Specific electrical limits or ratings not documented in this cluster are required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than ublox."
  ],
  "keywords": [
   "ublox",
   "ic",
-  "smd",
-  "surface mount",
-  "lea",
-  "lena-r8",
-  "lga-100",
-  "lga-53",
-  "neo",
-  "sam-m8q",
-  "zed",
-  "zoe_m8",
   "sam",
   "m8q",
   "5mm",
@@ -40,7 +30,9 @@
   "sites",
   "default",
   "files",
-  "pdf"
+  "pdf",
+  "neo",
+  "lea"
  ],
  "facts": {
   "package_family": "ublox",
@@ -68,7 +60,7 @@
   "tier_counts": {
    "C": 8
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
@@ -81,6 +73,6 @@
   "dist-legacy/ublox_ZOE_M8",
   "dist-legacy/ublox_SAM-M8Q_HandSolder"
  ],
- "embedding_text": "ic.ublox | IC | IC cluster containing surface-mount parts with ublox package footprints including LEA, LENA-R8, LGA-53, NEO, SAM-M8Q, ZED, and ZOE_M8. | ublox ic smd surface mount lea lena-r8 lga-100 lga-53 neo sam-m8q zed zoe_m8 sam m8q 5mm lga pitch https blox com sites default files pdf | ublox | ",
+ "embedding_text": "ic.ublox | IC | 8 ic parts using ublox footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | ublox ic sam m8q 5mm lga pitch https blox com sites default files pdf neo lea | ublox | ",
  "class": "ic"
 }

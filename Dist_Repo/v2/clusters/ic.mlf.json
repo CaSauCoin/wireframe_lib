@@ -5,39 +5,30 @@
  "category_path": [
   "IC"
  ],
- "description": "Surface-mount IC cluster utilizing MLF package footprints with exposed pads and optional thermal vias across 6, 8, and 20-pin configurations.",
+ "description": "5 ic parts using MLF footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when needing surface-mount ICs in MLF packages with exposed pads.",
-  "Match target footprint dimensions such as 1.6x1.6mm, 3x3mm, or 4x4mm.",
-  "Choose footprints with thermal vias when added thermal dissipation is required.",
-  "Check part tier status (1 Tier B, 4 Tier C) and source library before selection."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a MLF land pattern is intended."
  ],
  "avoid_when": [
-  "The layout requires through-hole or non-MLF package footprints.",
-  "Pin count or pitch differs from the available 6, 8, or 20-pin MLF options.",
-  "Only Tier A verified component entries are accepted."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than MLF."
  ],
  "keywords": [
-  "ic",
   "mlf",
-  "smd",
-  "mlf-8-1ep",
-  "mlf-6-1ep",
-  "mlf-20-1ep",
-  "thermalvias",
-  "3x3mm",
-  "1.6x1.6mm",
-  "4x4mm",
-  "mic5283yml",
-  "voltage regulator",
   "1ep",
   "p0",
   "3mm",
+  "3x3mm",
   "65mm",
   "ep1",
   "55x2",
   "6mm",
   "5mm",
+  "thermalvias",
+  "ic",
   "mm",
   "microchip",
   "6x1",
@@ -67,7 +58,7 @@
    "B": 1,
    "C": 4
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -86,6 +77,6 @@
   "dist-legacy/MLF-20-1EP_4x4mm_P0.5mm_EP2.6x2.6mm_ThermalVias",
   "dist-legacy/MLF-8-1EP_3x3mm_P0.65mm_EP1.55x2.3mm"
  ],
- "embedding_text": "ic.mlf | IC | Surface-mount IC cluster utilizing MLF package footprints with exposed pads and optional thermal vias across 6, 8, and 20-pin configurations. | ic mlf smd mlf-8-1ep mlf-6-1ep mlf-20-1ep thermalvias 3x3mm 1.6x1.6mm 4x4mm mic5283yml voltage regulator 1ep p0 3mm 65mm ep1 55x2 6mm 5mm mm microchip 6x1 ep0 | MLF | ",
+ "embedding_text": "ic.mlf | IC | 5 ic parts using MLF footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | mlf 1ep p0 3mm 3x3mm 65mm ep1 55x2 6mm 5mm thermalvias ic mm microchip 6x1 ep0 | MLF | ",
  "class": "ic"
 }

@@ -7,38 +7,31 @@
   "Power",
   "Linear Regulator"
  ],
- "description": "Cluster of 6 surface-mount 3V low-dropout linear regulator ICs in SOT-23 packaging.",
+ "description": "6 ic power linear regulator parts for LDO, 3V using SOT-23 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Requires a 3V LDO linear regulator IC.",
-  "Design specifies a surface-mount SOT-23 footprint.",
-  "Selecting among APE8865N or MCP1700x series representative parts."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SOT-23 land pattern is intended."
  ],
  "avoid_when": [
-  "An output voltage other than 3V is required.",
-  "A footprint or package family other than SOT-23 is needed.",
-  "The application requires a switching regulator instead of a linear regulator."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SOT-23."
  ],
  "keywords": [
-  "ic",
-  "power",
-  "linear regulator",
-  "ldo",
-  "3v",
-  "sot-23",
-  "smd",
-  "low dropout",
-  "ape8865n",
-  "mcp1700x",
-  "mcp1703ax",
-  "kicad",
   "sot",
   "regulator",
+  "ldo",
   "linear",
   "low",
   "300ma",
   "fixed",
   "0v",
   "to",
+  "smd",
+  "ic",
+  "power",
+  "3v",
   "output",
   "hf",
   "dropout"
@@ -65,7 +58,7 @@
   "tier_counts": {
    "A": 6
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -117,6 +110,6 @@
   "kicad-symbols/Regulator_Linear/MCP1703Ax-300xxTT",
   "kicad-symbols/Regulator_Linear/TPS7A0530PDBZ"
  ],
- "embedding_text": "ic-power-ldo.sot-23.ldo.3v | IC Power Linear Regulator | Cluster of 6 surface-mount 3V low-dropout linear regulator ICs in SOT-23 packaging. | ic power linear regulator ldo 3v sot-23 smd low dropout ape8865n mcp1700x mcp1703ax kicad sot regulator linear low 300ma fixed 0v to output hf dropout | SOT-23 | LDO 3V",
+ "embedding_text": "ic-power-ldo.sot-23.ldo.3v | IC Power Linear Regulator | 6 ic power linear regulator parts for LDO, 3V using SOT-23 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | sot regulator ldo linear low 300ma fixed 0v to smd ic power 3v output hf dropout | SOT-23 | LDO 3V",
  "class": "ic.power.ldo"
 }

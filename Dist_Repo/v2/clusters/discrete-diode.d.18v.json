@@ -6,44 +6,34 @@
   "Discrete",
   "Diode"
  ],
- "description": "Cluster of 157 discrete 18V diode parts (zener and TVS types) in D-family footprints (SMA, SMB, SMC, MiniMELF, SOD-123/323/523, DO-35/DO-41), spanning SMD and through-hole mounts across three KiCad library sources.",
+ "description": "157 discrete diode parts for 18V using D footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Prefer tier A parts with exact footprint match (146 of 157 entries are tier A).",
-  "Match zener vs TVS function to the application before selecting.",
-  "Confirm SMD vs through-hole mount fits the intended board.",
-  "Check source library (Alternate-KiCad-Library, JLCPCB-Kicad-Library, kicad-symbols) for trust level."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a D land pattern is intended."
  ],
  "avoid_when": [
-  "A voltage rating other than 18V or a non-D package is required.",
-  "The zener/TVS function of the selected part is not confirmed for the application.",
-  "Only tier B or lower-confidence entries match the needed footprint.",
-  "The required mount type (SMD vs through-hole) is unavailable for the chosen part."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than D."
  ],
  "keywords": [
   "diode",
+  "18v",
   "zener",
   "tvs",
-  "18v",
-  "discrete diode",
-  "d package",
-  "sma",
-  "smb",
-  "smc",
-  "minimelf",
-  "sod-123",
-  "sod-323",
-  "sod-523",
-  "do-41",
-  "do-35",
-  "smd",
-  "through hole",
-  "kicad symbols",
   "discrete",
   "akl",
   "alternate",
   "kicad",
   "library",
-  "do"
+  "do",
+  "sod",
+  "unidirectional",
+  "horizontal",
+  "smb",
+  "bidirectional",
+  "sma"
  ],
  "facts": {
   "package_family": "D",
@@ -81,7 +71,7 @@
    "A": 146,
    "B": 11
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -284,6 +274,6 @@
   "JLCPCB-Kicad-Library/JLCPCB-Diodes/TVS-Bi,SMF18CA",
   "JLCPCB-Kicad-Library/JLCPCB-Diodes/TVS-Uni,SMF18A"
  ],
- "embedding_text": "discrete-diode.d.18v | Discrete Diode | Cluster of 157 discrete 18V diode parts (zener and TVS types) in D-family footprints (SMA, SMB, SMC, MiniMELF, SOD-123/323/523, DO-35/DO-41), spanning SMD and through-hole mounts across three KiCad library sources. | diode zener tvs 18v discrete diode d package sma smb smc minimelf sod-123 sod-323 sod-523 do-41 do-35 smd through hole kicad symbols discrete akl alternate kicad library do | D | 18V",
+ "embedding_text": "discrete-diode.d.18v | Discrete Diode | 157 discrete diode parts for 18V using D footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | diode 18v zener tvs discrete akl alternate kicad library do sod unidirectional horizontal smb bidirectional sma | D | 18V",
  "class": "discrete.diode"
 }

@@ -6,32 +6,24 @@
   "IC",
   "Sensor"
  ],
- "description": "Cluster of 6 surface-mount IC sensor parts featuring I2C interfaces and 9V facets in a WLCSP-16 footprint.",
+ "description": "6 ic sensor parts for I2C, 9V using WLCSP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when needing an IC sensor with an I2C interface and 9V facet specifications.",
-  "Verify PCB footprint compatibility with WLCSP-16 (2.225x2.17mm, 0.5mm pitch).",
-  "Choose between PAC1941x, PAC1942x, or PAC1943x component variants."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a WLCSP land pattern is intended."
  ],
  "avoid_when": [
-  "The design requires non-SMD surface mount components or packages other than WLCSP.",
-  "Communication protocols other than I2C are needed.",
-  "Tier A quality verified parts are strictly required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than WLCSP."
  ],
  "keywords": [
-  "ic",
-  "sensor",
-  "ic.sensor",
   "i2c",
-  "9v",
   "wlcsp",
-  "wlcsp-16",
-  "smd",
-  "pac1941x",
-  "pac1942x",
-  "pac1943x",
-  "2.225x2.17mm",
+  "sensor",
   "power",
   "monitor",
+  "9v",
   "energy",
   "channel",
   "side",
@@ -40,7 +32,8 @@
   "layout4x4",
   "p0",
   "5mm",
-  "csp"
+  "csp",
+  "ic"
  ],
  "facts": {
   "package_family": "WLCSP",
@@ -64,7 +57,7 @@
   "tier_counts": {
    "B": 6
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -116,6 +109,6 @@
   "kicad-symbols/Sensor_Energy/PAC1943x-xJ6CX",
   "kicad-symbols/Sensor_Energy/PAC1944x-xJ6CX"
  ],
- "embedding_text": "ic-sensor.wlcsp.i2c.9v | IC Sensor | Cluster of 6 surface-mount IC sensor parts featuring I2C interfaces and 9V facets in a WLCSP-16 footprint. | ic sensor ic.sensor i2c 9v wlcsp wlcsp-16 smd pac1941x pac1942x pac1943x 2.225x2.17mm power monitor energy channel side 225x2 17mm layout4x4 p0 5mm csp | WLCSP | I2C 9V",
+ "embedding_text": "ic-sensor.wlcsp.i2c.9v | IC Sensor | 6 ic sensor parts for I2C, 9V using WLCSP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | i2c wlcsp sensor power monitor 9v energy channel side 225x2 17mm layout4x4 p0 5mm csp ic | WLCSP | I2C 9V",
  "class": "ic.sensor"
 }

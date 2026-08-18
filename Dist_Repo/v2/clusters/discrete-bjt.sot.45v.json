@@ -6,44 +6,34 @@
   "Discrete",
   "BJT"
  ],
- "description": "Cluster of 104 SMD bipolar junction transistors (BJT) rated at the 45V facet, spanning SOT-363, SOT-323, SOT-666, SOT-223-3, SOT-89-3, SOT-523, and SOT-883 footprints, sourced from Alternate-KiCad-Library and kicad-symbols.",
+ "description": "104 discrete bjt parts for 45V using SOT footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Match the exact SOT footprint variant (e.g. SOT-363_SC-70-6 vs SOT-323_SC-70) to the intended PCB land pattern",
-  "Prefer tier A parts (92 of 104) over tier B for higher confidence",
-  "Confirm NPN vs PNP polarity and pinout from the specific part symbol before use",
-  "Note source library (Alternate-KiCad-Library vs kicad-symbols) for provenance"
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SOT land pattern is intended."
  ],
  "avoid_when": [
-  "Design requires a voltage rating other than the 45V facet",
-  "Board layout needs a non-SOT package not listed in this cluster's footprints",
-  "A specific SOT footprint variant needed is not among those listed",
-  "Only tier B entries are available and higher-confidence data is required"
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SOT."
  ],
  "keywords": [
   "sot",
-  "sot-363",
-  "sot-323",
-  "sot-666",
-  "sot-223-3",
-  "sot-89-3",
-  "sot-523",
-  "sot-883",
-  "sc-70",
-  "bjt",
   "transistor",
-  "discrete",
+  "bjt",
   "45v",
-  "smd",
+  "sc",
   "npn",
   "pnp",
-  "kicad-symbols",
-  "alternate-kicad-library",
-  "sc",
+  "discrete",
   "akl",
   "alternate",
   "kicad",
   "library",
-  "100ma"
+  "100ma",
+  "dual",
+  "to",
+  "200mw"
  ],
  "facts": {
   "package_family": "SOT",
@@ -74,7 +64,7 @@
    "A": 92,
    "B": 12
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -224,6 +214,6 @@
   "Alternate-KiCad-Library/Transistor_BJT_AKL/BC857CT",
   "Alternate-KiCad-Library/Transistor_BJT_AKL/BC857T"
  ],
- "embedding_text": "discrete-bjt.sot.45v | Discrete BJT | Cluster of 104 SMD bipolar junction transistors (BJT) rated at the 45V facet, spanning SOT-363, SOT-323, SOT-666, SOT-223-3, SOT-89-3, SOT-523, and SOT-883 footprints, sourced from Alternate-KiCad-Library and kicad-symbols. | sot sot-363 sot-323 sot-666 sot-223-3 sot-89-3 sot-523 sot-883 sc-70 bjt transistor discrete 45v smd npn pnp kicad-symbols alternate-kicad-library sc akl alternate kicad library 100ma | SOT | 45V",
+ "embedding_text": "discrete-bjt.sot.45v | Discrete BJT | 104 discrete bjt parts for 45V using SOT footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | sot transistor bjt 45v sc npn pnp discrete akl alternate kicad library 100ma dual to 200mw | SOT | 45V",
  "class": "discrete.bjt"
 }

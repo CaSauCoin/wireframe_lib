@@ -6,33 +6,27 @@
   "Passive",
   "Resistor"
  ],
- "description": "Cluster of SMD passive resistor components featuring I2C and SPI digital interfaces in QFN packages.",
+ "description": "1 passive resistor parts for I2C, SPI using QFN footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Verify support for I2C or SPI communication requirements.",
-  "Confirm compatibility with the QFN surface-mount footprint.",
-  "Select when digitally controlled resistance over serial bus interfaces is required."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a QFN land pattern is intended."
  ],
  "avoid_when": [
-  "A package family other than QFN is required.",
-  "The circuit requires through-hole mounting instead of SMD.",
-  "I2C or SPI serial digital interfaces are not supported or needed."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than QFN."
  ],
  "keywords": [
-  "passive resistor",
-  "digital potentiometer",
-  "qfn",
-  "vqfn",
-  "i2c",
-  "spi",
-  "smd",
-  "surface mount",
-  "mcp41u83x",
-  "resistor",
   "7n",
   "mcp41u83t",
+  "vqfn",
   "potentiometer",
   "digital",
+  "i2c",
+  "spi",
   "texas",
+  "mcp41u83x",
   "xxxx",
   "bit",
   "single",
@@ -63,7 +57,7 @@
   "tier_counts": {
    "A": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -78,6 +72,6 @@
  "part_ids": [
   "kicad-symbols/Potentiometer_Digital/MCP41U83x-xxxx-7N"
  ],
- "embedding_text": "passive-resistor.qfn.i2c.spi | Passive Resistor | Cluster of SMD passive resistor components featuring I2C and SPI digital interfaces in QFN packages. | passive resistor digital potentiometer qfn vqfn i2c spi smd surface mount mcp41u83x resistor 7n mcp41u83t potentiometer digital texas xxxx bit single channel interface mtp memory | QFN | I2C SPI",
+ "embedding_text": "passive-resistor.qfn.i2c.spi | Passive Resistor | 1 passive resistor parts for I2C, SPI using QFN footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | 7n mcp41u83t vqfn potentiometer digital i2c spi texas mcp41u83x xxxx bit single channel interface mtp memory | QFN | I2C SPI",
  "class": "passive.resistor"
 }

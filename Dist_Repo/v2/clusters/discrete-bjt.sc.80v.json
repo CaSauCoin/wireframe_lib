@@ -6,34 +6,25 @@
   "Discrete",
   "BJT"
  ],
- "description": "Single tier-A discrete BJT part (MMDTA06) in the 80V SC package family, using the SC-74-6_1.55x2.9mm_P0.95mm SMD footprint, sourced from one KiCad symbol library entry.",
+ "description": "1 discrete bjt parts for 80V using SC footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Only one candidate part available: MMDTA06 (tier A, score 100)",
-  "Confirm the SC-74-6_1.55x2.9mm_P0.95mm footprint matches your intended PCB land pattern",
-  "Verify the 80V facet meets your circuit's voltage requirement before use"
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SC land pattern is intended."
  ],
  "avoid_when": [
-  "Board layout requires a package other than SC-74-6_1.55x2.9mm_P0.95mm",
-  "Required rating differs from the 80V facet listed for this cluster",
-  "Only a single source (kicad-symbols) backs this part; cross-check if independent verification is needed"
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SC."
  ],
  "keywords": [
   "sc",
-  "sc-74-6",
-  "bjt",
   "transistor",
-  "discrete bjt",
-  "discrete",
+  "bjt",
   "80v",
-  "mmdta06",
-  "smd",
-  "kicad-symbols",
-  "tier a",
-  "1.55x2.9mm",
-  "p0.95mm",
-  "sc-74",
   "dual",
   "npn",
+  "mmdta06",
   "500ma",
   "ic",
   "vce",
@@ -41,7 +32,8 @@
   "9mm",
   "p0",
   "95mm",
-  "to"
+  "to",
+  "sot"
  ],
  "facts": {
   "package_family": "SC",
@@ -64,7 +56,7 @@
   "tier_counts": {
    "A": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -79,6 +71,6 @@
  "part_ids": [
   "kicad-symbols/Transistor_BJT/MMDTA06"
  ],
- "embedding_text": "discrete-bjt.sc.80v | Discrete BJT | Single tier-A discrete BJT part (MMDTA06) in the 80V SC package family, using the SC-74-6_1.55x2.9mm_P0.95mm SMD footprint, sourced from one KiCad symbol library entry. | sc sc-74-6 bjt transistor discrete bjt discrete 80v mmdta06 smd kicad-symbols tier a 1.55x2.9mm p0.95mm sc-74 dual npn 500ma ic vce 55x2 9mm p0 95mm to | SC | 80V",
+ "embedding_text": "discrete-bjt.sc.80v | Discrete BJT | 1 discrete bjt parts for 80V using SC footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | sc transistor bjt 80v dual npn mmdta06 500ma ic vce 55x2 9mm p0 95mm to sot | SC | 80V",
  "class": "discrete.bjt"
 }

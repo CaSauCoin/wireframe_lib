@@ -5,33 +5,22 @@
  "category_path": [
   "IC"
  ],
- "description": "Cluster of 66 Tier A 15V IC parts in the TO package family featuring surface-mount and through-hole footprints from Alternate-KiCad-Library.",
+ "description": "66 ic parts for 15V using TO footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select between surface-mount and through-hole mounting options.",
-  "Choose the specific TO footprint required by the layout, such as TO-220, TO-252, TO-92, TO-263, or TO-3.",
-  "Verify part selection against target footprint specifications in the cluster."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a TO land pattern is intended."
  ],
  "avoid_when": [
-  "The design requires package families other than TO.",
-  "The target circuit requires operating voltages other than 15V.",
-  "Footprint requirements do not match SMD or through-hole TO packages."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than TO."
  ],
  "keywords": [
-  "ic",
-  "15v",
   "to",
-  "to-220",
-  "to-252",
-  "to-92",
-  "to-263",
-  "to-3",
-  "to-220f",
-  "smd",
-  "through hole",
-  "through_hole",
-  "alternate-kicad-library",
   "voltage",
   "regulator",
+  "15v",
   "terminal",
   "akl",
   "alternate",
@@ -40,7 +29,10 @@
   "vreg",
   "pmic",
   "power",
-  "supply"
+  "supply",
+  "ic",
+  "5a",
+  "vertical"
  ],
  "facts": {
   "package_family": "TO",
@@ -69,7 +61,7 @@
   "tier_counts": {
    "A": 66
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -181,6 +173,6 @@
   "Alternate-KiCad-Library/Voltage_Regulator_AKL/μA7815CKTTR",
   "Alternate-KiCad-Library/Voltage_Regulator_AKL/μA78L15ACLP"
  ],
- "embedding_text": "ic.to.15v | IC | Cluster of 66 Tier A 15V IC parts in the TO package family featuring surface-mount and through-hole footprints from Alternate-KiCad-Library. | ic 15v to to-220 to-252 to-92 to-263 to-3 to-220f smd through hole through_hole alternate-kicad-library voltage regulator terminal akl alternate kicad library vreg pmic power supply | TO | 15V",
+ "embedding_text": "ic.to.15v | IC | 66 ic parts for 15V using TO footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | to voltage regulator 15v terminal akl alternate kicad library vreg pmic power supply ic 5a vertical | TO | 15V",
  "class": "ic"
 }

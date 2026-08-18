@@ -6,44 +6,34 @@
   "Discrete",
   "Diode"
  ],
- "description": "Cluster of 153 discrete diode parts rated 36V in D-family footprints (D_SMA, D_SMB, D_MiniMELF, D_SMC, D_SOD-123/123F/323/523, D_DO-35/DO-41 zener variants, D_SMB/SMC TVS), sourced mainly from Alternate-KiCad-Library.",
+ "description": "153 discrete diode parts for 36V using D footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Match the exact D-family footprint (e.g. D_SOD-123 vs D_SMA vs D_MiniMELF) to the intended land pattern.",
-  "Prefer tier A entries (145 of 153 parts) over the 8 tier B entries.",
-  "Confirm the 36V facet matches the circuit's required rating before use.",
-  "Note source library (Alternate-KiCad-Library, kicad-symbols, or JLCPCB-Kicad-Library) if sourcing/BOM traceability matters."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a D land pattern is intended."
  ],
  "avoid_when": [
-  "The needed footprint is not one of the listed D-family patterns.",
-  "A rating other than 36V is required.",
-  "The part falls in tier B and higher-confidence data is needed.",
-  "The design calls for a package family other than D."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than D."
  ],
  "keywords": [
   "diode",
-  "discrete diode",
   "36v",
   "zener",
   "tvs",
-  "d package",
-  "sod-123",
-  "sod-323",
-  "sod-523",
-  "minimelf",
-  "sma",
-  "smb",
-  "smc",
-  "do-35",
-  "do-41",
-  "smd",
-  "through hole",
-  "kicad",
   "discrete",
   "akl",
   "alternate",
+  "kicad",
   "library",
   "do",
-  "sod"
+  "sod",
+  "horizontal",
+  "unidirectional",
+  "bidirectional",
+  "smb",
+  "sma"
  ],
  "facts": {
   "package_family": "D",
@@ -81,7 +71,7 @@
    "A": 145,
    "B": 8
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -280,6 +270,6 @@
   "Alternate-KiCad-Library/Diode_TVS_AKL/TPSMP36A",
   "JLCPCB-Kicad-Library/JLCPCB-Diodes/TVS-Bi,SMF36CA"
  ],
- "embedding_text": "discrete-diode.d.36v | Discrete Diode | Cluster of 153 discrete diode parts rated 36V in D-family footprints (D_SMA, D_SMB, D_MiniMELF, D_SMC, D_SOD-123/123F/323/523, D_DO-35/DO-41 zener variants, D_SMB/SMC TVS), sourced mainly from Alternate-KiCad-Library. | diode discrete diode 36v zener tvs d package sod-123 sod-323 sod-523 minimelf sma smb smc do-35 do-41 smd through hole kicad discrete akl alternate library do sod | D | 36V",
+ "embedding_text": "discrete-diode.d.36v | Discrete Diode | 153 discrete diode parts for 36V using D footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | diode 36v zener tvs discrete akl alternate kicad library do sod horizontal unidirectional bidirectional smb sma | D | 36V",
  "class": "discrete.diode"
 }

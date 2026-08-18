@@ -6,39 +6,33 @@
   "IC",
   "Memory"
  ],
- "description": "3V IC memory component cluster containing 3 KiCad symbol parts with packages chosen later, including 29W040, M29W004, and M29W008.",
+ "description": "3 ic memory parts for 3V with package chosen later. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when requiring a 3V memory IC with symbol sources from KiCad.",
-  "Verify exact part selection among 29W040, M29W004, or M29W008.",
-  "Ensure package and footprint are assigned separately since package is chosen later."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Select a footprint/package explicitly before placement."
  ],
  "avoid_when": [
-  "Do not use if an integrated footprint or package family is required immediately.",
-  "Avoid when operating voltage requirements differ from 3V.",
-  "Avoid if parts higher than tier G quality are required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review."
  ],
  "keywords": [
-  "ic",
-  "memory",
-  "3v",
-  "ic memory",
-  "kicad-symbols",
-  "29w040",
-  "m29w004",
-  "m29w008",
-  "memory flash",
-  "package chosen later",
-  "tier g",
   "flash",
+  "memory",
   "eeprom",
+  "3v",
   "tsop",
   "512ko",
+  "ic",
   "package",
   "chosen",
   "later",
   "pack",
   "1mo",
-  "512pp"
+  "29w040",
+  "512pp",
+  "m29w004",
+  "m29w008"
  ],
  "facts": {
   "package_family": "package chosen later",
@@ -57,7 +51,7 @@
   "tier_counts": {
    "G": 3
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -90,6 +84,6 @@
   "kicad-symbols/Memory_Flash/M29W004",
   "kicad-symbols/Memory_Flash/M29W008"
  ],
- "embedding_text": "ic-memory.generic.3v | IC Memory | 3V IC memory component cluster containing 3 KiCad symbol parts with packages chosen later, including 29W040, M29W004, and M29W008. | ic memory 3v ic memory kicad-symbols 29w040 m29w004 m29w008 memory flash package chosen later tier g flash eeprom tsop 512ko package chosen later pack 1mo 512pp | package chosen later | 3V",
+ "embedding_text": "ic-memory.generic.3v | IC Memory | 3 ic memory parts for 3V with package chosen later. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | flash memory eeprom 3v tsop 512ko ic package chosen later pack 1mo 29w040 512pp m29w004 m29w008 | package chosen later | 3V",
  "class": "ic.memory"
 }

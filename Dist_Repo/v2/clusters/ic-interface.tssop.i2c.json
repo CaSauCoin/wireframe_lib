@@ -6,42 +6,34 @@
   "IC",
   "Interface"
  ],
- "description": "Cluster of 22 surface-mount I2C interface ICs packaged in TSSOP footprints with pin counts from 8 to 24.",
+ "description": "22 ic interface parts for I2C using TSSOP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when needing surface-mount I2C interface ICs in TSSOP packages.",
-  "Match required pin count (8, 10, 16, 20, or 24 pins) and package dimensions.",
-  "Verify pin pitch requirements of 0.5mm or 0.65mm."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a TSSOP land pattern is intended."
  ],
  "avoid_when": [
-  "Designs requiring through-hole mounting instead of SMD.",
-  "Interfaces other than I2C.",
-  "Packages outside the TSSOP family or specified footprints."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than TSSOP."
  ],
  "keywords": [
   "tssop",
   "i2c",
   "interface",
-  "ic",
-  "smd",
-  "tssop-8",
-  "tssop-10",
-  "tssop-16",
-  "tssop-20",
-  "tssop-24",
-  "pca9306dp",
-  "pca9536dp",
-  "pca9537",
-  "pca9538pw",
-  "pca9539xpw",
-  "kicad-symbols",
   "p0",
+  "ic",
   "65mm",
   "so",
   "expansion",
   "smbus",
   "expander",
   "texas",
-  "and"
+  "and",
+  "bit",
+  "reset",
+  "with",
+  "nxp"
  ],
  "facts": {
   "package_family": "TSSOP",
@@ -68,7 +60,7 @@
   "tier_counts": {
    "A": 22
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -136,6 +128,6 @@
   "kicad-symbols/Interface_Expansion/XRA1201IG24",
   "kicad-symbols/Interface_Expansion/XRA1201PIG24"
  ],
- "embedding_text": "ic-interface.tssop.i2c | IC Interface | Cluster of 22 surface-mount I2C interface ICs packaged in TSSOP footprints with pin counts from 8 to 24. | tssop i2c interface ic smd tssop-8 tssop-10 tssop-16 tssop-20 tssop-24 pca9306dp pca9536dp pca9537 pca9538pw pca9539xpw kicad-symbols p0 65mm so expansion smbus expander texas and | TSSOP | I2C",
+ "embedding_text": "ic-interface.tssop.i2c | IC Interface | 22 ic interface parts for I2C using TSSOP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | tssop i2c interface p0 ic 65mm so expansion smbus expander texas and bit reset with nxp | TSSOP | I2C",
  "class": "ic.interface"
 }

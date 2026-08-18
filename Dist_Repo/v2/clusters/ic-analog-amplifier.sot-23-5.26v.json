@@ -7,40 +7,34 @@
   "Analog",
   "Amplifier"
  ],
- "description": "This cluster contains 8 tier-A surface-mount analog amplifier ICs rated for 26V in SOT-23-5 packages.",
+ "description": "8 ic analog amplifier parts for 26V using SOT-23-5 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when requiring a surface-mount analog amplifier IC in a SOT-23-5 footprint.",
-  "Choose when 26V ratings match circuit requirements.",
-  "Pick from tier-A KiCad symbol entries such as INA180 series parts."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SOT-23-5 land pattern is intended."
  ],
  "avoid_when": [
-  "Do not use if a package footprint other than SOT-23-5 is needed.",
-  "Avoid when surface-mount (SMD) packaging is not supported.",
-  "Avoid if voltage requirements differ from 26V."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SOT-23-5."
  ],
  "keywords": [
-  "ic",
-  "analog",
-  "amplifier",
-  "26v",
-  "sot-23-5",
-  "smd",
-  "kicad-symbols",
-  "ina180a1",
-  "ina180a2",
-  "ina180a3",
-  "ina180a4",
-  "ina180b1",
   "sot",
+  "amplifier",
   "current",
   "rail",
   "to",
+  "26v",
   "sense",
   "circuit",
   "gain",
+  "smd",
   "monitor",
   "shunt",
-  "sensor"
+  "sensor",
+  "ic",
+  "analog",
+  "ina180a1"
  ],
  "facts": {
   "package_family": "SOT-23-5",
@@ -63,7 +57,7 @@
   "tier_counts": {
    "A": 8
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -117,6 +111,6 @@
   "kicad-symbols/Amplifier_Current/INA180B3",
   "kicad-symbols/Amplifier_Current/INA180B4"
  ],
- "embedding_text": "ic-analog-amplifier.sot-23-5.26v | IC Analog Amplifier | This cluster contains 8 tier-A surface-mount analog amplifier ICs rated for 26V in SOT-23-5 packages. | ic analog amplifier 26v sot-23-5 smd kicad-symbols ina180a1 ina180a2 ina180a3 ina180a4 ina180b1 sot current rail to sense circuit gain monitor shunt sensor | SOT-23-5 | 26V",
+ "embedding_text": "ic-analog-amplifier.sot-23-5.26v | IC Analog Amplifier | 8 ic analog amplifier parts for 26V using SOT-23-5 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | sot amplifier current rail to 26v sense circuit gain smd monitor shunt sensor ic analog ina180a1 | SOT-23-5 | 26V",
  "class": "ic.analog.amplifier"
 }

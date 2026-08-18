@@ -6,29 +6,23 @@
   "Passive",
   "Resistor"
  ],
- "description": "Cluster of 2 through-hole passive resistor library entries associated with PCIE bracket footprints from chilaboard-altium-library.",
+ "description": "2 passive resistor parts using PCIE footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Verify whether the PCIE_BRACKET or PCIE_BRACKET_LP footprint matches layout requirements.",
-  "Review component specifications carefully as all entries are currently tier C quality.",
-  "Confirm through-hole mounting compatibility with the target board design."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a PCIE land pattern is intended."
  ],
  "avoid_when": [
-  "The board layout requires surface-mount packages or non-PCIE footprints.",
-  "Designs require components verified above tier C quality rating.",
-  "A standard resistor package geometry is needed instead of bracket footprints."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than PCIE."
  ],
  "keywords": [
+  "pcie",
+  "bracket",
+  "lp",
   "passive",
   "resistor",
-  "pcie",
-  "pcie_bracket",
-  "pcie_bracket_lp",
-  "through_hole",
-  "through hole",
-  "bracket",
-  "chilaboard-altium-library",
-  "tier c",
-  "lp",
   "through",
   "hole",
   "pad",
@@ -56,13 +50,13 @@
   "tier_counts": {
    "C": 2
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
   "chilaboard-altium-library/PCIE_BRACKET/PCIE_BRACKET",
   "chilaboard-altium-library/PCIE_BRACKET_LP/PCIE_BRACKET_LP"
  ],
- "embedding_text": "passive-resistor.pcie | Passive Resistor | Cluster of 2 through-hole passive resistor library entries associated with PCIE bracket footprints from chilaboard-altium-library. | passive resistor pcie pcie_bracket pcie_bracket_lp through_hole through hole bracket chilaboard-altium-library tier c lp through hole pad mm pitch pins | PCIE | ",
+ "embedding_text": "passive-resistor.pcie | Passive Resistor | 2 passive resistor parts using PCIE footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | pcie bracket lp passive resistor through hole pad mm pitch pins | PCIE | ",
  "class": "passive.resistor"
 }

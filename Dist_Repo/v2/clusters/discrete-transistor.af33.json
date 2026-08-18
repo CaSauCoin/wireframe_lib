@@ -6,29 +6,21 @@
   "Discrete",
   "Transistor"
  ],
- "description": "Discrete transistor cluster using the AF33 footprint, containing 1 tier C part from dist-legacy sources.",
+ "description": "1 discrete transistor parts using AF33 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Use when an AF33 footprint or package family is required.",
-  "Evaluate tier C quality and dist-legacy source history before use.",
-  "Note that planner visible count for this cluster is 0."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a AF33 land pattern is intended."
  ],
  "avoid_when": [
-  "The design requires a package family or footprint other than AF33.",
-  "Tier C quality rating or generated review status is not permitted.",
-  "Parts must have a planner visible count greater than 0."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than AF33."
  ],
  "keywords": [
   "af33",
   "discrete",
   "transistor",
-  "discrete transistor",
-  "discrete.transistor",
-  "footprint af33",
-  "package af33",
-  "dist-legacy",
-  "tier c",
-  "generated review status",
-  "unknown mount",
   "pad",
   "mm",
   "pitch",
@@ -53,12 +45,12 @@
   "tier_counts": {
    "C": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
   "dist-legacy/AF33"
  ],
- "embedding_text": "discrete-transistor.af33 | Discrete Transistor | Discrete transistor cluster using the AF33 footprint, containing 1 tier C part from dist-legacy sources. | af33 discrete transistor discrete transistor discrete.transistor footprint af33 package af33 dist-legacy tier c generated review status unknown mount pad mm pitch pins | AF33 | ",
+ "embedding_text": "discrete-transistor.af33 | Discrete Transistor | 1 discrete transistor parts using AF33 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | af33 discrete transistor pad mm pitch pins | AF33 | ",
  "class": "discrete.transistor"
 }

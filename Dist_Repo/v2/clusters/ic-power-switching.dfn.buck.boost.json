@@ -7,37 +7,29 @@
   "Power",
   "Switching Regulator"
  ],
- "description": "Surface-mount DFN switching regulator IC cluster covering buck, boost, and 40V applications with three tier A KiCad symbol parts.",
+ "description": "3 ic power switching regulator parts for buck, boost, 40V using DFN footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Choose when requiring an SMD DFN switching power regulator with buck or boost facets.",
-  "Select between DFN-12-1EP (3x4mm) and DFN-8-1EP (4x4mm) footprints depending on part pinout and dimensions.",
-  "Utilize when tier A quality parts from KiCad switching regulator libraries are preferred."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a DFN land pattern is intended."
  ],
  "avoid_when": [
-  "The design requires package families other than DFN or non-SMD mounting.",
-  "Topologies, voltage limits, or functions beyond buck, boost, or 40V are required.",
-  "Part selection relies on specifications not explicitly detailed in the cluster facts."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than DFN."
  ],
  "keywords": [
-  "ic",
-  "power",
-  "switching regulator",
+  "dfn",
+  "regulator",
+  "switching",
   "buck",
   "boost",
   "40v",
-  "dfn",
-  "smd",
-  "dfn-12-1ep",
-  "dfn-8-1ep",
-  "ltc3245xde",
-  "ltc3442",
-  "mc33063mntxg",
-  "kicad-symbols",
-  "regulator",
-  "switching",
   "dc",
   "1ep",
   "p0",
+  "ic",
+  "power",
   "vin",
   "3x4mm",
   "5mm",
@@ -68,7 +60,7 @@
   "tier_counts": {
    "A": 3
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -101,6 +93,6 @@
   "kicad-symbols/Regulator_Switching/LTC3442",
   "kicad-symbols/Regulator_Switching/MC33063MNTXG"
  ],
- "embedding_text": "ic-power-switching.dfn.buck.boost | IC Power Switching Regulator | Surface-mount DFN switching regulator IC cluster covering buck, boost, and 40V applications with three tier A KiCad symbol parts. | ic power switching regulator buck boost 40v dfn smd dfn-12-1ep dfn-8-1ep ltc3245xde ltc3442 mc33063mntxg kicad-symbols regulator switching dc 1ep p0 vin 3x4mm 5mm ep1 7x3 | DFN | buck boost 40V",
+ "embedding_text": "ic-power-switching.dfn.buck.boost | IC Power Switching Regulator | 3 ic power switching regulator parts for buck, boost, 40V using DFN footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | dfn regulator switching buck boost 40v dc 1ep p0 ic power vin 3x4mm 5mm ep1 7x3 | DFN | buck boost 40V",
  "class": "ic.power.switching"
 }

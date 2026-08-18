@@ -6,28 +6,19 @@
   "Discrete",
   "Diode"
  ],
- "description": "Discrete diode cluster containing 1 tier C part associated with the DO214AB package family and footprint.",
+ "description": "1 discrete diode parts using DO214AB footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when a discrete diode with a DO214AB package family or footprint is required.",
-  "Verify part specifications directly as electrical parameters are not specified in cluster metadata.",
-  "Confirm quality requirements given the tier C rating and generated review status."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a DO214AB land pattern is intended."
  ],
  "avoid_when": [
-  "Avoid if board design requires a package family or footprint other than DO214AB.",
-  "Avoid when planner-visible parts or higher quality tier ratings are required.",
-  "Avoid if part electrical limits or pinouts must be pre-validated at the cluster level."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than DO214AB."
  ],
  "keywords": [
-  "discrete diode",
   "do214ab",
-  "discrete",
-  "diode",
-  "discrete.diode",
-  "do214ab footprint",
-  "do214ab package",
-  "dist-legacy",
-  "tier c",
-  "do214ab diode",
   "smc",
   "land",
   "pattern",
@@ -35,6 +26,7 @@
   "footprint",
   "do",
   "214ab",
+  "diode",
   "bare",
   "and",
   "for",
@@ -62,12 +54,12 @@
   "tier_counts": {
    "C": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
   "dist-legacy/DO214AB SMC"
  ],
- "embedding_text": "discrete-diode.do214ab | Discrete Diode | Discrete diode cluster containing 1 tier C part associated with the DO214AB package family and footprint. | discrete diode do214ab discrete diode discrete.diode do214ab footprint do214ab package dist-legacy tier c do214ab diode smc land pattern package footprint do 214ab bare and for pin surface mount diodes | DO214AB | ",
+ "embedding_text": "discrete-diode.do214ab | Discrete Diode | 1 discrete diode parts using DO214AB footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | do214ab smc land pattern package footprint do 214ab diode bare and for pin surface mount diodes | DO214AB | ",
  "class": "discrete.diode"
 }

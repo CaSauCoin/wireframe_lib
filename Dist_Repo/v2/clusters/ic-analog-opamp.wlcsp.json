@@ -7,28 +7,19 @@
   "Analog",
   "Op-Amp"
  ],
- "description": "Surface-mount analog operational amplifier IC cluster in WLCSP packages from Alternate-KiCad-Library.",
+ "description": "2 ic analog op-amp parts using WLCSP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when requiring an SMD analog op-amp in a WLCSP package.",
-  "Choose between WLCSP-5 and WLCSP-8 footprint options based on pin count.",
-  "Verify compatibility with tier B parts from Alternate-KiCad-Library."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a WLCSP land pattern is intended."
  ],
  "avoid_when": [
-  "The board layout requires packages other than WLCSP.",
-  "Through-hole mounting is required instead of SMD.",
-  "Parts from sources other than Alternate-KiCad-Library are needed."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than WLCSP."
  ],
  "keywords": [
-  "ic",
-  "analog",
-  "op-amp",
-  "operational amplifier",
   "wlcsp",
-  "smd",
-  "wlcsp-5",
-  "wlcsp-8",
-  "alternate-kicad-library",
-  "tier b",
   "amplifier",
   "operational",
   "cmos",
@@ -42,7 +33,8 @@
   "10mhz",
   "gbw",
   "alternate",
-  "kicad"
+  "kicad",
+  "library"
  ],
  "facts": {
   "package_family": "WLCSP",
@@ -64,7 +56,7 @@
   "tier_counts": {
    "B": 2
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -88,6 +80,6 @@
   "Alternate-KiCad-Library/Amplifier_Operational_AKL/AD8605ACBZ",
   "Alternate-KiCad-Library/Amplifier_Operational_AKL/AD8606ACBZ"
  ],
- "embedding_text": "ic-analog-opamp.wlcsp | IC Analog Op-Amp | Surface-mount analog operational amplifier IC cluster in WLCSP packages from Alternate-KiCad-Library. | ic analog op-amp operational amplifier wlcsp smd wlcsp-5 wlcsp-8 alternate-kicad-library tier b amplifier operational cmos precision rrio 5mm rail akl offset drift 10mhz gbw alternate kicad | WLCSP | ",
+ "embedding_text": "ic-analog-opamp.wlcsp | IC Analog Op-Amp | 2 ic analog op-amp parts using WLCSP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | wlcsp amplifier operational cmos precision rrio 5mm rail akl offset drift 10mhz gbw alternate kicad library | WLCSP | ",
  "class": "ic.analog.opamp"
 }

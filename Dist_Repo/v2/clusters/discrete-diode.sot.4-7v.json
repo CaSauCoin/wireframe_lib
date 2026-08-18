@@ -6,42 +6,34 @@
   "Discrete",
   "Diode"
  ],
- "description": "Cluster of 8 SMD zener diodes rated 4.7V in SOT packages (SOT-363/SC-70-6, SOT-323/SC-70, SOT-89-3, SOT-223-3), all tier A, sourced from Alternate-KiCad-Library, review status generated.",
+ "description": "8 discrete diode parts for 4.7V using SOT footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Match the exact SOT footprint (SOT-363/SC-70-6, SOT-323/SC-70, SOT-89-3, or SOT-223-3-TabPin2) to the intended PCB land pattern.",
-  "All 8 parts are tier A with score 100, so differentiate by footprint/package size rather than tier.",
-  "Confirm pin-to-pad mapping before layout since review_status is 'generated', not manually verified."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SOT land pattern is intended."
  ],
  "avoid_when": [
-  "The design requires a package outside the SOT family.",
-  "A voltage other than 4.7V is needed.",
-  "A verified (non-generated) symbol-footprint pairing is required before committing to a PCB."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SOT."
  ],
  "keywords": [
   "diode",
-  "zener diode",
-  "sot package",
-  "sot-363",
-  "sc-70-6",
-  "sot-323",
-  "sc-70",
-  "sot-89-3",
-  "sot-223-3",
-  "4.7v",
-  "smd",
-  "discrete diode",
-  "alternate-kicad-library",
-  "akl",
-  "bzb784",
-  "bzv49",
-  "bzv90",
-  "bzx84c4v7s",
   "sot",
   "zener",
   "7v",
   "sc",
   "dual",
-  "alternate"
+  "akl",
+  "alternate",
+  "kicad",
+  "library",
+  "discrete",
+  "independent",
+  "200mw",
+  "c4v7",
+  "bzb784",
+  "bzv49"
  ],
  "facts": {
   "package_family": "SOT",
@@ -67,7 +59,7 @@
   "tier_counts": {
    "A": 8
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -121,6 +113,6 @@
   "Alternate-KiCad-Library/Diode_Zener_AKL/MMBZ5230BS",
   "Alternate-KiCad-Library/Diode_Zener_AKL/MMBZ5230BSs"
  ],
- "embedding_text": "discrete-diode.sot.4-7v | Discrete Diode | Cluster of 8 SMD zener diodes rated 4.7V in SOT packages (SOT-363/SC-70-6, SOT-323/SC-70, SOT-89-3, SOT-223-3), all tier A, sourced from Alternate-KiCad-Library, review status generated. | diode zener diode sot package sot-363 sc-70-6 sot-323 sc-70 sot-89-3 sot-223-3 4.7v smd discrete diode alternate-kicad-library akl bzb784 bzv49 bzv90 bzx84c4v7s sot zener 7v sc dual alternate | SOT | 4.7V",
+ "embedding_text": "discrete-diode.sot.4-7v | Discrete Diode | 8 discrete diode parts for 4.7V using SOT footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | diode sot zener 7v sc dual akl alternate kicad library discrete independent 200mw c4v7 bzb784 bzv49 | SOT | 4.7V",
  "class": "discrete.diode"
 }

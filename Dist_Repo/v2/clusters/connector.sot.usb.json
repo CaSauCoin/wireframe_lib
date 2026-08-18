@@ -5,32 +5,23 @@
  "category_path": [
   "Connector"
  ],
- "description": "Connector-category cluster tagged USB with SOT package family; contains one tier-A part, USBLC6-2P6, score 100, SOT-666 footprint, SMD mount, sourced from kicad-symbols.",
+ "description": "1 connector parts for USB using SOT footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Only one candidate available: USBLC6-2P6 (tier A, score 100)",
-  "Confirm the SOT-666 footprint matches your intended land pattern",
-  "Review status is 'generated', so verify symbol-footprint pairing before committing layout"
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SOT land pattern is intended."
  ],
  "avoid_when": [
-  "A footprint or mount other than SOT-666/SMD is required",
-  "Specific electrical ratings are needed but not present in this part's data",
-  "A reviewed (non-generated) part is required for the design"
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SOT."
  ],
  "keywords": [
   "sot",
-  "sot-666",
+  "protection",
   "usb",
-  "connector",
-  "usblc6-2p6",
   "usblc6",
   "2p6",
-  "smd",
-  "kicad-symbols",
-  "tier a",
-  "footprint sot-666",
-  "single part cluster",
-  "generated review status",
-  "protection",
   "power",
   "very",
   "low",
@@ -40,7 +31,8 @@
   "data",
   "line",
   "ethernet",
-  "video"
+  "video",
+  "connector"
  ],
  "facts": {
   "package_family": "SOT",
@@ -63,7 +55,7 @@
   "tier_counts": {
    "A": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -78,6 +70,6 @@
  "part_ids": [
   "kicad-symbols/Power_Protection/USBLC6-2P6"
  ],
- "embedding_text": "connector.sot.usb | Connector | Connector-category cluster tagged USB with SOT package family; contains one tier-A part, USBLC6-2P6, score 100, SOT-666 footprint, SMD mount, sourced from kicad-symbols. | sot sot-666 usb connector usblc6-2p6 usblc6 2p6 smd kicad-symbols tier a footprint sot-666 single part cluster generated review status protection power very low capacitance esd diode data line ethernet video | SOT | USB",
+ "embedding_text": "connector.sot.usb | Connector | 1 connector parts for USB using SOT footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | sot protection usb usblc6 2p6 power very low capacitance esd diode data line ethernet video connector | SOT | USB",
  "class": "connector"
 }

@@ -6,32 +6,24 @@
   "Passive",
   "Resistor"
  ],
- "description": "Passive resistor cluster containing three parts across SMD and through-hole mounting types with DIP footprints including DIP-14_W7.62mm, DIPSW100S_1, and DIPSW254S_1.",
+ "description": "3 passive resistor parts using DIP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when requiring DIP package family passive resistors with through-hole or SMD mounting.",
-  "Verify the specific footprint match among DIP-14_W7.62mm, DIPSW100S_1, or DIPSW254S_1.",
-  "Prioritize the Tier A entry (DS1267_DIP) over Tier C parts for higher quality scoring."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a DIP land pattern is intended."
  ],
  "avoid_when": [
-  "The PCB layout requires package families other than DIP.",
-  "The target footprint is not DIP-14_W7.62mm, DIPSW100S_1, or DIPSW254S_1.",
-  "The design requires parts outside the passive resistor category."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than DIP."
  ],
  "keywords": [
+  "dip",
   "passive",
   "resistor",
-  "dip",
-  "dip-14",
-  "dip-14_w7.62mm",
-  "dipsw100s_1",
-  "dipsw254s_1",
-  "smd",
-  "through_hole",
-  "ds1267",
-  "ds1267_dip",
-  "potentiometer",
   "dipsw100s",
   "dipsw254s",
+  "potentiometer",
   "digital",
   "dual",
   "62mm",
@@ -40,7 +32,8 @@
   "pad",
   "mm",
   "pitch",
-  "pins"
+  "pins",
+  "ds1267"
  ],
  "facts": {
   "package_family": "DIP",
@@ -66,7 +59,7 @@
    "A": 1,
    "C": 2
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -83,6 +76,6 @@
   "chilaboard-altium-library/DIPSW100S_1/DIPSW100S_1",
   "chilaboard-altium-library/DIPSW254S_1/DIPSW254S_1"
  ],
- "embedding_text": "passive-resistor.dip | Passive Resistor | Passive resistor cluster containing three parts across SMD and through-hole mounting types with DIP footprints including DIP-14_W7.62mm, DIPSW100S_1, and DIPSW254S_1. | passive resistor dip dip-14 dip-14_w7.62mm dipsw100s_1 dipsw254s_1 smd through_hole ds1267 ds1267_dip potentiometer dipsw100s dipsw254s digital dual 62mm surface mount pad mm pitch pins | DIP | ",
+ "embedding_text": "passive-resistor.dip | Passive Resistor | 3 passive resistor parts using DIP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | dip passive resistor dipsw100s dipsw254s potentiometer digital dual 62mm surface mount pad mm pitch pins ds1267 | DIP | ",
  "class": "passive.resistor"
 }

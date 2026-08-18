@@ -6,28 +6,21 @@
   "Discrete",
   "Diode"
  ],
- "description": "This cluster contains 5 discrete diode parts in the CN package family using footprints such as CN-SMD-2520 and CN-SMD-3225.",
+ "description": "5 discrete diode parts using CN footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when discrete diodes in the CN package family are required.",
-  "Verify the specific footprint variant such as CN-SMD-2520 or CN-SMD-3225.",
-  "Check part data quality and source tier before using these tier C entries."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a CN land pattern is intended."
  ],
  "avoid_when": [
-  "The board layout requires a package family other than CN.",
-  "Planner-visible entries are required, as planner visible count is 0.",
-  "Tier C legacy source entries do not meet project quality standards."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than CN."
  ],
  "keywords": [
+  "cn",
   "discrete",
   "diode",
-  "discrete diode",
-  "cn",
-  "cn package",
-  "cn-smd-2520",
-  "cn-smd-3225",
-  "cn-0.47_400v",
-  "discrete.diode",
-  "dist-legacy",
   "smd",
   "pad",
   "mm",
@@ -58,7 +51,7 @@
   "tier_counts": {
    "C": 5
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
@@ -68,6 +61,6 @@
   "dist-legacy/CN-SMD-2520",
   "dist-legacy/CN-SMD-3225"
  ],
- "embedding_text": "discrete-diode.cn | Discrete Diode | This cluster contains 5 discrete diode parts in the CN package family using footprints such as CN-SMD-2520 and CN-SMD-3225. | discrete diode discrete diode cn cn package cn-smd-2520 cn-smd-3225 cn-0.47_400v discrete.diode dist-legacy smd pad mm pitch pins 400v | CN | ",
+ "embedding_text": "discrete-diode.cn | Discrete Diode | 5 discrete diode parts using CN footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | cn discrete diode smd pad mm pitch pins 400v | CN | ",
  "class": "discrete.diode"
 }

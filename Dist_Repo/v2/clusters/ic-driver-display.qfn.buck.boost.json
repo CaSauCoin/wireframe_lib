@@ -7,36 +7,28 @@
   "Driver",
   "Display"
  ],
- "description": "Surface-mount display driver IC cluster supporting buck and boost configurations in QFN-16 footprints with 6 Tier-B KiCad symbol parts.",
+ "description": "6 ic driver display parts for buck, boost using QFN footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when requiring a display driver IC in an SMD QFN package.",
-  "Choose for designs requiring buck or boost topology functionality.",
-  "Select between LT3755 and LT3756 part variants based on project requirements."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a QFN land pattern is intended."
  ],
  "avoid_when": [
-  "Designs requiring package families other than QFN.",
-  "Applications needing through-hole mounting rather than surface-mount.",
-  "Circuits requiring driver IC categories other than display drivers."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than QFN."
  ],
  "keywords": [
   "qfn",
-  "qfn-16",
-  "display driver",
-  "ic driver display",
-  "buck",
   "boost",
-  "smd",
-  "kicad-symbols",
-  "lt3755xud",
-  "lt3756xud",
-  "3x3mm",
-  "p0.5mm",
+  "buck",
   "led",
   "driver",
   "dc",
   "vin",
   "vout",
   "1ep",
+  "3x3mm",
   "p0",
   "5mm",
   "ep1",
@@ -66,7 +58,7 @@
   "tier_counts": {
    "B": 6
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -118,6 +110,6 @@
   "kicad-symbols/Driver_LED/LT3756xUD-1",
   "kicad-symbols/Driver_LED/LT3756xUD-2"
  ],
- "embedding_text": "ic-driver-display.qfn.buck.boost | IC Driver Display | Surface-mount display driver IC cluster supporting buck and boost configurations in QFN-16 footprints with 6 Tier-B KiCad symbol parts. | qfn qfn-16 display driver ic driver display buck boost smd kicad-symbols lt3755xud lt3756xud 3x3mm p0.5mm led driver dc vin vout 1ep p0 5mm ep1 45x1 45mm nolead | QFN | buck boost",
+ "embedding_text": "ic-driver-display.qfn.buck.boost | IC Driver Display | 6 ic driver display parts for buck, boost using QFN footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | qfn boost buck led driver dc vin vout 1ep 3x3mm p0 5mm ep1 45x1 45mm nolead | QFN | buck boost",
  "class": "ic.driver.display"
 }

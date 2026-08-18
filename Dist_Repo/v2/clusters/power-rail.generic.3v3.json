@@ -6,30 +6,18 @@
   "Power",
   "Power Rail"
  ],
- "description": "Generic 3.3V power rail symbols from KiCad and SparkFun libraries with package chosen later.",
+ "description": "4 power power rail parts for 3.3V with package chosen later. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Choose between positive (+3.3V, +3V3) and negative (-3V3) rail designations.",
-  "Select preferred symbol naming and source library for schematic conventions.",
-  "Assign a physical footprint later if board layout placement is needed."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Select a footprint/package explicitly before placement."
  ],
  "avoid_when": [
-  "A physical power component with a predefined footprint is required.",
-  "Voltages other than 3.3V are needed.",
-  "Manufacturer-specific or datasheet-backed component models are required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review."
  ],
  "keywords": [
-  "power rail",
-  "3.3v",
-  "3v3",
-  "+3.3v",
-  "+3v3",
-  "-3v3",
-  "power symbol",
-  "schematic symbol",
-  "kicad-symbols",
-  "sparkfun",
   "power",
-  "generic power",
   "3v",
   "global",
   "symbol",
@@ -41,6 +29,8 @@
   "package",
   "chosen",
   "later",
+  "3v3",
+  "sparkfun",
   "powersymbol"
  ],
  "facts": {
@@ -61,7 +51,7 @@
   "tier_counts": {
    "G": 4
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -103,6 +93,6 @@
   "kicad-symbols/power/-3V3",
   "SparkFun-KiCad-Libraries/SparkFun-PowerSymbol/3.3V"
  ],
- "embedding_text": "power-rail.generic.3v3 | Power Power Rail | Generic 3.3V power rail symbols from KiCad and SparkFun libraries with package chosen later. | power rail 3.3v 3v3 +3.3v +3v3 -3v3 power symbol schematic symbol kicad-symbols sparkfun power generic power 3v global symbol creates label with name rail package chosen later powersymbol | package chosen later | 3.3V",
+ "embedding_text": "power-rail.generic.3v3 | Power Power Rail | 4 power power rail parts for 3.3V with package chosen later. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | power 3v global symbol creates label with name rail package chosen later 3v3 sparkfun powersymbol | package chosen later | 3.3V",
  "class": "power.rail"
 }

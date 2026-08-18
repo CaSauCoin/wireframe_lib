@@ -6,44 +6,34 @@
   "Discrete",
   "Diode"
  ],
- "description": "Cluster of 12 discrete diode parts (dist-legacy source) that share RES land patterns instead of diode-specific footprints; metadata is auto-generated and unreviewed, so verify footprint and rating before use.",
+ "description": "12 discrete diode parts using RES footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Match the exact RES footprint variant (e.g. 0402_1005, 0603_1608, or RF variant) to your PCB pad geometry",
-  "Prefer tier B parts (9 of 12) over tier C when available",
-  "Confirm mount type manually since it is recorded as unknown",
-  "Check planner-visible parts (9 of 12) first before considering hidden entries"
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a RES land pattern is intended."
  ],
  "avoid_when": [
-  "A diode-specific footprint is required rather than a generic RES land pattern",
-  "Mount type (SMD vs THT) must be confirmed and cannot be verified as unknown",
-  "Reviewed/validated metadata is required, since review_status is 'generated'",
-  "Electrical ratings (voltage, current, speed) are not stated for the candidate part"
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than RES."
  ],
  "keywords": [
-  "discrete diode",
-  "res footprint",
-  "res land pattern",
-  "diode res",
-  "0201",
-  "0603",
-  "0402",
-  "1005",
-  "1608",
-  "rf variant",
-  "dist-legacy",
-  "generic footprint",
-  "unknown mount",
-  "tier b",
-  "tier c",
-  "generated metadata",
-  "unreviewed part",
-  "smd diode footprint",
   "res",
   "diode",
   "metric",
   "rf",
   "surface",
-  "mount"
+  "mount",
+  "footprint",
+  "discrete",
+  "package",
+  "smd",
+  "in",
+  "an",
+  "land",
+  "pattern",
+  "pins",
+  "bare"
  ],
  "facts": {
   "package_family": "RES",
@@ -65,7 +55,7 @@
    "B": 9,
    "C": 3
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -123,6 +113,6 @@
   "dist-legacy/RES 2512_6432",
   "dist-legacy/RES"
  ],
- "embedding_text": "discrete-diode.res | Discrete Diode | Cluster of 12 discrete diode parts (dist-legacy source) that share RES land patterns instead of diode-specific footprints; metadata is auto-generated and unreviewed, so verify footprint and rating before use. | discrete diode res footprint res land pattern diode res 0201 0603 0402 1005 1608 rf variant dist-legacy generic footprint unknown mount tier b tier c generated metadata unreviewed part smd diode footprint res diode metric rf surface mount | RES | ",
+ "embedding_text": "discrete-diode.res | Discrete Diode | 12 discrete diode parts using RES footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | res diode metric rf surface mount footprint discrete package smd in an land pattern pins bare | RES | ",
  "class": "discrete.diode"
 }

@@ -5,33 +5,24 @@
  "category_path": [
   "IC"
  ],
- "description": "Surface-mount IC cluster featuring SOT packages, including SOT-353 and SOT-363_SC-70-6, with 1.65V and 5V facets.",
+ "description": "3 ic parts for 5V, 1.65V using SOT footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when requiring surface-mount ICs in SOT-353 or SOT-363_SC-70-6 footprints.",
-  "Choose based on compatibility with 1.65V or 5V facets.",
-  "Select from Tier A representative parts including 74LVC1G175, 74LVC1G14, and 74LVC1G17."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SOT land pattern is intended."
  ],
  "avoid_when": [
-  "Avoid if layout requires through-hole mounting instead of SMD.",
-  "Avoid when packages other than SOT-353 or SOT-363_SC-70-6 are needed.",
-  "Avoid if design requirements differ from 1.65V or 5V facets."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SOT."
  ],
  "keywords": [
-  "ic",
   "sot",
-  "smd",
-  "5v",
-  "1.65v",
-  "sot-353",
-  "sot-363_sc-70-6",
-  "74lvc1g175",
-  "74lvc1g14",
-  "74lvc1g17",
-  "sparkfun-kicad-libraries",
-  "tier a",
   "sparkfun",
+  "ic",
   "single",
   "65v",
+  "5v",
   "schmitt",
   "trigger",
   "cmos",
@@ -40,7 +31,8 @@
   "sc70",
   "type",
   "flip",
-  "flop"
+  "flop",
+  "asynchronous"
  ],
  "facts": {
   "package_family": "SOT",
@@ -65,7 +57,7 @@
   "tier_counts": {
    "A": 3
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -98,6 +90,6 @@
   "SparkFun-KiCad-Libraries/SparkFun-IC-Logic/74LVC1G14",
   "SparkFun-KiCad-Libraries/SparkFun-IC-Logic/74LVC1G17"
  ],
- "embedding_text": "ic.sot.5v.1-65v | IC | Surface-mount IC cluster featuring SOT packages, including SOT-353 and SOT-363_SC-70-6, with 1.65V and 5V facets. | ic sot smd 5v 1.65v sot-353 sot-363_sc-70-6 74lvc1g175 74lvc1g14 74lvc1g17 sparkfun-kicad-libraries tier a sparkfun single 65v schmitt trigger cmos logic to sc70 type flip flop | SOT | 5V 1.65V",
+ "embedding_text": "ic.sot.5v.1-65v | IC | 3 ic parts for 5V, 1.65V using SOT footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | sot sparkfun ic single 65v 5v schmitt trigger cmos logic to sc70 type flip flop asynchronous | SOT | 5V 1.65V",
  "class": "ic"
 }

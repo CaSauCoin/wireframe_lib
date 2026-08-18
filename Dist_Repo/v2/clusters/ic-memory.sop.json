@@ -6,42 +6,34 @@
   "IC",
   "Memory"
  ],
- "description": "Surface-mount memory IC cluster containing 6 parts in SOP footprints including SOP-28, SOP-32, and SOP-44 packages.",
+ "description": "6 ic memory parts using SOP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when requiring memory ICs in surface-mount SOP packages with 1.27mm pitch.",
-  "Choose between tier A and tier B parts depending on footprint requirements such as SOP-28, SOP-32, or SOP-44.",
-  "Verify exact package dimensions against footprint specifications prior to board design."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SOP land pattern is intended."
  ],
  "avoid_when": [
-  "Through-hole mounting or non-SOP package styles are required.",
-  "The PCB design requires packages other than the supported SOP footprint variants.",
-  "A surface-mount land pattern with 1.27mm pitch is not suitable for the design."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SOP."
  ],
  "keywords": [
-  "ic",
-  "memory",
   "sop",
-  "smd",
-  "sop-28",
-  "sop-32",
-  "sop-44",
-  "1.27mm",
-  "ic memory",
-  "sop package",
-  "surface mount",
-  "hy6264axj",
-  "is62c256al",
-  "is65c256al",
+  "memory",
   "ram",
   "bit",
   "p1",
   "27mm",
   "so",
   "cmos",
+  "ic",
   "flash",
   "static",
   "sram",
-  "4x18"
+  "4x18",
+  "16mm",
+  "512k",
+  "32kx8"
  ],
  "facts": {
   "package_family": "SOP",
@@ -65,7 +57,7 @@
    "A": 3,
    "B": 3
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -117,6 +109,6 @@
   "kicad-symbols/Memory_Flash/AM29F400Bx-xxSx",
   "kicad-symbols/Memory_RAM/IS61C5128AS-25QLI"
  ],
- "embedding_text": "ic-memory.sop | IC Memory | Surface-mount memory IC cluster containing 6 parts in SOP footprints including SOP-28, SOP-32, and SOP-44 packages. | ic memory sop smd sop-28 sop-32 sop-44 1.27mm ic memory sop package surface mount hy6264axj is62c256al is65c256al ram bit p1 27mm so cmos flash static sram 4x18 | SOP | ",
+ "embedding_text": "ic-memory.sop | IC Memory | 6 ic memory parts using SOP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | sop memory ram bit p1 27mm so cmos ic flash static sram 4x18 16mm 512k 32kx8 | SOP | ",
  "class": "ic.memory"
 }

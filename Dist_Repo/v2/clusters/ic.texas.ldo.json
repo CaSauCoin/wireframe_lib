@@ -5,33 +5,22 @@
  "category_path": [
   "IC"
  ],
- "description": "Cluster of 6 surface-mount LDO IC parts utilizing Texas package footprints from Alternate-KiCad-Library.",
+ "description": "6 ic parts for LDO using Texas footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Choose when surface-mount LDO regulator ICs using Texas footprints are required.",
-  "Match design layout to footprints such as Texas_X2SON-4_1x1mm_P0.65mm, Texas_DSC0010J, or Texas_S-PWSON-N8_EP2.2x3mm.",
-  "Confirm suitability for Tier B quality level parts from Alternate-KiCad-Library."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a Texas land pattern is intended."
  ],
  "avoid_when": [
-  "Through-hole mounting is required instead of surface-mount.",
-  "The PCB footprint requires a non-Texas package footprint.",
-  "Tier A quality classification is strictly required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than Texas."
  ],
  "keywords": [
-  "ic",
-  "ldo",
-  "texas",
-  "smd",
-  "alternate-kicad-library",
-  "texas_x2son-4_1x1mm_p0.65mm",
-  "texas_dsc0010j",
-  "texas_s-pwson-n8_ep2.2x3mm",
-  "tps7a3901dsc",
-  "ap7343-09fs4",
-  "ap7343d-09fs4",
-  "ap7351d-08fs4",
-  "ap7351d-09fs4",
   "voltage",
   "regulator",
+  "ldo",
+  "texas",
   "enable",
   "low",
   "dropout",
@@ -40,7 +29,10 @@
   "dfn",
   "150ma",
   "alternate",
-  "kicad"
+  "kicad",
+  "library",
+  "vreg",
+  "ic"
  ],
  "facts": {
   "package_family": "Texas",
@@ -65,7 +57,7 @@
   "tier_counts": {
    "B": 6
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -117,6 +109,6 @@
   "Alternate-KiCad-Library/Voltage_Regulator_AKL/AP7351D-09FS4",
   "Alternate-KiCad-Library/Voltage_Regulator_AKL/LM2941LD"
  ],
- "embedding_text": "ic.texas.ldo | IC | Cluster of 6 surface-mount LDO IC parts utilizing Texas package footprints from Alternate-KiCad-Library. | ic ldo texas smd alternate-kicad-library texas_x2son-4_1x1mm_p0.65mm texas_dsc0010j texas_s-pwson-n8_ep2.2x3mm tps7a3901dsc ap7343-09fs4 ap7343d-09fs4 ap7351d-08fs4 ap7351d-09fs4 voltage regulator enable low dropout x2son akl dfn 150ma alternate kicad | Texas | LDO",
+ "embedding_text": "ic.texas.ldo | IC | 6 ic parts for LDO using Texas footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | voltage regulator ldo texas enable low dropout x2son akl dfn 150ma alternate kicad library vreg ic | Texas | LDO",
  "class": "ic"
 }

@@ -6,41 +6,34 @@
   "IC",
   "Logic"
  ],
- "description": "Surface-mount logic IC cluster in the SOG65 package family featuring 7 tier B parts with SOG65_16 and SOG65_16_W footprints.",
+ "description": "7 ic logic parts using SOG65 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select for surface-mount logic IC designs using SOG65 package footprints.",
-  "Choose between SOG65_16 and SOG65_16_W footprints based on part requirements.",
-  "Verify part selection against available Chilaboard Altium library tier B entries."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SOG65 land pattern is intended."
  ],
  "avoid_when": [
-  "Through-hole or non-surface-mount layout is required.",
-  "The component footprint is not SOG65_16 or SOG65_16_W.",
-  "Parts with quality tiers higher than tier B are strictly required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SOG65."
  ],
  "keywords": [
-  "ic logic",
-  "sog65",
-  "smd",
-  "sog65_16",
-  "sog65_16_w",
-  "chilaboard-altium-library",
-  "74hc4017",
-  "74hc4051",
-  "74hc595",
-  "74hct4051",
-  "ssop16",
-  "tssop16",
-  "logic",
   "ic",
+  "sog65",
+  "logic",
+  "ssop16",
   "analog",
+  "tssop16",
   "in",
   "multiplexer",
   "demultiplexer",
+  "74hc4051",
   "channel",
   "pin",
   "package",
   "ssop",
-  "register"
+  "register",
+  "74hct4051"
  ],
  "facts": {
   "package_family": "SOG65",
@@ -62,7 +55,7 @@
   "tier_counts": {
    "B": 7
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -115,6 +108,6 @@
   "chilaboard-altium-library/74HCT4051_TSSOP16/74HCT4051_TSSOP16",
   "chilaboard-altium-library/74HCT595_SSOP16/74HCT595_SSOP16"
  ],
- "embedding_text": "ic-logic.sog65 | IC Logic | Surface-mount logic IC cluster in the SOG65 package family featuring 7 tier B parts with SOG65_16 and SOG65_16_W footprints. | ic logic sog65 smd sog65_16 sog65_16_w chilaboard-altium-library 74hc4017 74hc4051 74hc595 74hct4051 ssop16 tssop16 logic ic analog in multiplexer demultiplexer channel pin package ssop register | SOG65 | ",
+ "embedding_text": "ic-logic.sog65 | IC Logic | 7 ic logic parts using SOG65 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | ic sog65 logic ssop16 analog tssop16 in multiplexer demultiplexer 74hc4051 channel pin package ssop register 74hct4051 | SOG65 | ",
  "class": "ic.logic"
 }

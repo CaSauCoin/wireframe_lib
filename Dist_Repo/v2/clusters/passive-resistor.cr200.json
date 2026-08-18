@@ -6,28 +6,21 @@
   "Passive",
   "Resistor"
  ],
- "description": "Through-hole passive resistor cluster using the CR200 footprint and package family.",
+ "description": "1 passive resistor parts using CR200 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when a through-hole resistor with a CR200 footprint is required.",
-  "Verify component specifications against your schematic and library sources.",
-  "Inspect the Tier C library entry for footprint and symbol correctness."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a CR200 land pattern is intended."
  ],
  "avoid_when": [
-  "Surface-mount packaging or non-CR200 footprints are required.",
-  "Design rules require Tier A or pre-verified components.",
-  "The required electrical ratings are unconfirmed in the source library."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than CR200."
  ],
  "keywords": [
+  "cr200",
   "passive",
   "resistor",
-  "cr200",
-  "through_hole",
-  "through hole",
-  "tht",
-  "footprint cr200",
-  "package cr200",
-  "passive resistor",
-  "resistors",
   "through",
   "hole",
   "pad",
@@ -54,12 +47,12 @@
   "tier_counts": {
    "C": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
   "francescosacco-hardwarelibrary/CR200/CR200"
  ],
- "embedding_text": "passive-resistor.cr200 | Passive Resistor | Through-hole passive resistor cluster using the CR200 footprint and package family. | passive resistor cr200 through_hole through hole tht footprint cr200 package cr200 passive resistor resistors through hole pad mm pitch pins | CR200 | ",
+ "embedding_text": "passive-resistor.cr200 | Passive Resistor | 1 passive resistor parts using CR200 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | cr200 passive resistor through hole pad mm pitch pins | CR200 | ",
  "class": "passive.resistor"
 }

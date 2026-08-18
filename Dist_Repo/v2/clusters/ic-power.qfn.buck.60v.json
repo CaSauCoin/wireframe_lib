@@ -6,32 +6,25 @@
   "IC",
   "Power"
  ],
- "description": "Surface-mount 60V buck power IC cluster containing three tier A parts in a QFN package family.",
+ "description": "3 ic power parts for buck, 60V using QFN footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when requiring a 60V buck power IC in an SMD QFN package.",
-  "Choose between LTC3890, LTC3892, and LTC3892-2 based on specific design needs.",
-  "Verify footprint match with QFN-32-1EP_5x5mm_P0.5mm_EP3.45x3.45mm."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a QFN land pattern is intended."
  ],
  "avoid_when": [
-  "Do not use if a package family other than QFN is required.",
-  "Avoid when power conversion topologies other than buck are needed.",
-  "Do not use if non-SMD mounting is required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than QFN."
  ],
  "keywords": [
-  "ic",
-  "power",
-  "buck",
-  "60v",
   "qfn",
-  "smd",
-  "ltc3890",
-  "ltc3892",
-  "ltc3892-2",
-  "qfn-32",
   "regulator",
   "controller",
+  "60v",
   "dual",
   "dc",
+  "buck",
   "phase",
   "synchronous",
   "step",
@@ -64,7 +57,7 @@
   "tier_counts": {
    "A": 3
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -97,6 +90,6 @@
   "kicad-symbols/Regulator_Controller/LTC3892",
   "kicad-symbols/Regulator_Controller/LTC3892-2"
  ],
- "embedding_text": "ic-power.qfn.buck.60v | IC Power | Surface-mount 60V buck power IC cluster containing three tier A parts in a QFN package family. | ic power buck 60v qfn smd ltc3890 ltc3892 ltc3892-2 qfn-32 regulator controller dual dc phase synchronous step down 1ep 5x5mm p0 5mm ep3 | QFN | buck 60V",
+ "embedding_text": "ic-power.qfn.buck.60v | IC Power | 3 ic power parts for buck, 60V using QFN footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | qfn regulator controller 60v dual dc buck phase synchronous step down 1ep 5x5mm p0 5mm ep3 | QFN | buck 60V",
  "class": "ic.power"
 }

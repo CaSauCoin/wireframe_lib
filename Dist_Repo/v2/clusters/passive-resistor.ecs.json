@@ -6,30 +6,23 @@
   "Passive",
   "Resistor"
  ],
- "description": "Passive resistor cluster containing surface-mount parts associated with the ECS package family and ECS CSM-3X footprint.",
+ "description": "1 passive resistor parts using ECS footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Verify compatibility with the ECS CSM-3X surface-mount footprint.",
-  "Confirm electrical parameters against design specifications before selection.",
-  "Review part data carefully as this cluster contains generated tier C entries."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a ECS land pattern is intended."
  ],
  "avoid_when": [
-  "The board layout requires a footprint other than ECS CSM-3X.",
-  "Through-hole mounting is required instead of surface mount.",
-  "The project policy excludes unreviewed tier C component models."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than ECS."
  ],
  "keywords": [
-  "passive",
-  "resistor",
-  "passive resistor",
   "ecs",
-  "csm-3x",
-  "ecs csm-3x",
-  "smd",
-  "surface mount",
-  "passive.resistor",
-  "celestial-altium-library",
   "csm",
   "3x",
+  "passive",
+  "resistor",
   "surface",
   "mount",
   "pad",
@@ -56,12 +49,12 @@
   "tier_counts": {
    "C": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
   "celestial-altium-library/ECS CSM-3X/ECS_CSM-3X"
  ],
- "embedding_text": "passive-resistor.ecs | Passive Resistor | Passive resistor cluster containing surface-mount parts associated with the ECS package family and ECS CSM-3X footprint. | passive resistor passive resistor ecs csm-3x ecs csm-3x smd surface mount passive.resistor celestial-altium-library csm 3x surface mount pad mm pitch pins | ECS | ",
+ "embedding_text": "passive-resistor.ecs | Passive Resistor | 1 passive resistor parts using ECS footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | ecs csm 3x passive resistor surface mount pad mm pitch pins | ECS | ",
  "class": "passive.resistor"
 }

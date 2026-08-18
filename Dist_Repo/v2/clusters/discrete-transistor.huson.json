@@ -6,36 +6,28 @@
   "Discrete",
   "Transistor"
  ],
- "description": "Discrete transistor cluster containing SMD parts with HUSON packaging and footprint HUSON-3-1EP_2x2mm_P1.3mm_EP1.1x1.6mm.",
+ "description": "1 discrete transistor parts using HUSON footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Use when a surface-mount discrete transistor in a HUSON package is required.",
-  "Select for designs compatible with the HUSON-3-1EP_2x2mm_P1.3mm_EP1.1x1.6mm footprint.",
-  "Check part specifications and source quality prior to design commitment."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a HUSON land pattern is intended."
  ],
  "avoid_when": [
-  "Avoid if the PCB design requires through-hole or non-HUSON package footprints.",
-  "Do not use when layout compatibility with HUSON-3-1EP_2x2mm_P1.3mm_EP1.1x1.6mm is not met.",
-  "Avoid if planner-visible or tier A parts are strictly required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than HUSON."
  ],
  "keywords": [
-  "discrete transistor",
-  "discrete",
-  "transistor",
   "huson",
-  "smd",
-  "surface mount",
-  "huson-3-1ep",
-  "2x2mm",
-  "p1.3mm",
-  "ep1.1x1.6mm",
-  "huson-3-1ep_2x2mm_p1.3mm_ep1.1x1.6mm",
-  "tier c",
   "1ep",
+  "2x2mm",
   "p1",
   "3mm",
   "ep1",
   "1x1",
   "6mm",
+  "discrete",
+  "transistor",
   "sot1061",
   "surface",
   "mount",
@@ -62,12 +54,12 @@
   "tier_counts": {
    "C": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
   "dist-legacy/HUSON-3-1EP_2x2mm_P1.3mm_EP1.1x1.6mm"
  ],
- "embedding_text": "discrete-transistor.huson | Discrete Transistor | Discrete transistor cluster containing SMD parts with HUSON packaging and footprint HUSON-3-1EP_2x2mm_P1.3mm_EP1.1x1.6mm. | discrete transistor discrete transistor huson smd surface mount huson-3-1ep 2x2mm p1.3mm ep1.1x1.6mm huson-3-1ep_2x2mm_p1.3mm_ep1.1x1.6mm tier c 1ep p1 3mm ep1 1x1 6mm sot1061 surface mount pad mm pitch | HUSON | ",
+ "embedding_text": "discrete-transistor.huson | Discrete Transistor | 1 discrete transistor parts using HUSON footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | huson 1ep 2x2mm p1 3mm ep1 1x1 6mm discrete transistor sot1061 surface mount pad mm pitch | HUSON | ",
  "class": "discrete.transistor"
 }

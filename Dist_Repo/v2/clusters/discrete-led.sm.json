@@ -6,28 +6,21 @@
   "Discrete",
   "LED"
  ],
- "description": "Cluster of 3 discrete LED parts in the SM package family using SM-LED, SM-LED-GEEN, or SM-LED-Red footprints.",
+ "description": "3 discrete led parts using SM footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Verify compatibility with SM-LED, SM-LED-GEEN, or SM-LED-Red footprints.",
-  "Note that all 3 parts are currently classified under quality tier C.",
-  "Check part specifications since the mounting style is unknown."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SM land pattern is intended."
  ],
  "avoid_when": [
-  "The design requires footprints other than SM-LED, SM-LED-GEEN, or SM-LED-Red.",
-  "Parts higher than quality tier C or planner-visible parts are required.",
-  "A package family other than SM is needed."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SM."
  ],
  "keywords": [
-  "discrete",
   "led",
-  "discrete led",
-  "discrete.led",
   "sm",
-  "sm-led",
-  "sm-led-geen",
-  "sm-led-red",
-  "tier c",
-  "dist-legacy",
+  "discrete",
   "geen",
   "red",
   "pad",
@@ -56,7 +49,7 @@
   "tier_counts": {
    "C": 3
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
@@ -64,6 +57,6 @@
   "dist-legacy/SM-LED-GEEN",
   "dist-legacy/SM-LED-Red"
  ],
- "embedding_text": "discrete-led.sm | Discrete LED | Cluster of 3 discrete LED parts in the SM package family using SM-LED, SM-LED-GEEN, or SM-LED-Red footprints. | discrete led discrete led discrete.led sm sm-led sm-led-geen sm-led-red tier c dist-legacy geen red pad mm pitch pins | SM | ",
+ "embedding_text": "discrete-led.sm | Discrete LED | 3 discrete led parts using SM footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | led sm discrete geen red pad mm pitch pins | SM | ",
  "class": "discrete.led"
 }

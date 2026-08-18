@@ -5,31 +5,20 @@
  "category_path": [
   "Connector"
  ],
- "description": "Cluster of 2 SOCKET-family connector parts (SOCKET-32, SOCKET-44 footprints) from legacy sources, all tier C with unreviewed generated metadata and unknown mount type.",
+ "description": "2 connector parts using SOCKET footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Match the exact footprint (SOCKET-32 vs SOCKET-44) to the required pin count",
-  "Verify mount type manually since it is not recorded as known",
-  "Review part details before use since quality tier is C and review status is generated"
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SOCKET land pattern is intended."
  ],
  "avoid_when": [
-  "A verified or higher-quality-tier connector part is required",
-  "Mount type (through-hole, SMD, etc.) must be confirmed and cannot be manually checked",
-  "A footprint other than SOCKET-32 or SOCKET-44 is needed",
-  "Reviewed/validated source data is required instead of generated legacy data"
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SOCKET."
  ],
  "keywords": [
   "socket",
   "connector",
-  "socket-32",
-  "socket-44",
-  "32 pin",
-  "44 pin",
-  "ic socket",
-  "chip socket",
-  "legacy connector",
-  "tier c",
-  "generated metadata",
-  "unknown mount",
   "pad",
   "mm",
   "pitch",
@@ -55,13 +44,13 @@
   "tier_counts": {
    "C": 2
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
   "dist-legacy/SOCKET-32",
   "dist-legacy/SOCKET-44"
  ],
- "embedding_text": "connector.socket | Connector | Cluster of 2 SOCKET-family connector parts (SOCKET-32, SOCKET-44 footprints) from legacy sources, all tier C with unreviewed generated metadata and unknown mount type. | socket connector socket-32 socket-44 32 pin 44 pin ic socket chip socket legacy connector tier c generated metadata unknown mount pad mm pitch pins | SOCKET | ",
+ "embedding_text": "connector.socket | Connector | 2 connector parts using SOCKET footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | socket connector pad mm pitch pins | SOCKET | ",
  "class": "connector"
 }

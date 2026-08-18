@@ -7,39 +7,34 @@
   "Power",
   "Linear Regulator"
  ],
- "description": "This cluster contains 29V LDO linear regulator ICs in through-hole TO-220 packages.",
+ "description": "2 ic power linear regulator parts for LDO, 29V using TO footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when requiring a 29V LDO linear regulator in a through-hole TO-220 package.",
-  "Choose between LM1084-ADJ and LM1085-ADJ based on application requirements.",
-  "Verify exact part specifications and pinouts prior to PCB placement."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a TO land pattern is intended."
  ],
  "avoid_when": [
-  "Surface-mount packaging is required rather than through-hole TO-220.",
-  "The circuit requires a voltage rating other than 29V.",
-  "Switching regulators or non-LDO power topologies are needed."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than TO."
  ],
  "keywords": [
-  "ic",
-  "power",
-  "linear regulator",
-  "ldo",
-  "29v",
-  "to",
-  "to-220",
-  "through hole",
-  "lm1084-adj",
-  "lm1085-adj",
-  "lm1084",
-  "lm1085",
   "regulator",
+  "to",
   "linear",
+  "29v",
   "adjustable",
   "5a",
   "adj",
   "d2",
   "pak",
   "voltage",
-  "positive"
+  "positive",
+  "ic",
+  "power",
+  "ldo",
+  "lm1084",
+  "lm1085"
  ],
  "facts": {
   "package_family": "TO",
@@ -63,7 +58,7 @@
   "tier_counts": {
    "B": 2
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -87,6 +82,6 @@
   "kicad-symbols/Regulator_Linear/LM1084-ADJ",
   "kicad-symbols/Regulator_Linear/LM1085-ADJ"
  ],
- "embedding_text": "ic-power-ldo.to.ldo.29v | IC Power Linear Regulator | This cluster contains 29V LDO linear regulator ICs in through-hole TO-220 packages. | ic power linear regulator ldo 29v to to-220 through hole lm1084-adj lm1085-adj lm1084 lm1085 regulator linear adjustable 5a adj d2 pak voltage positive | TO | LDO 29V",
+ "embedding_text": "ic-power-ldo.to.ldo.29v | IC Power Linear Regulator | 2 ic power linear regulator parts for LDO, 29V using TO footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | regulator to linear 29v adjustable 5a adj d2 pak voltage positive ic power ldo lm1084 lm1085 | TO | LDO 29V",
  "class": "ic.power.ldo"
 }

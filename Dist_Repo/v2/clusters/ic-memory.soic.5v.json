@@ -6,42 +6,34 @@
   "IC",
   "Memory"
  ],
- "description": "SMD 5V memory IC cluster containing 5 parts in SOIC package footprints including SOIC-28W and SOIC-32.",
+ "description": "5 ic memory parts for 5V using SOIC footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select based on footprint match between SOIC-28W_7.5x17.9mm_P1.27mm and SOIC-32_7.518x20.777mm_P1.27mm.",
-  "Prefer tier A parts over tier B parts when selecting a component.",
-  "Verify that a 5V surface-mount memory IC in a SOIC package fits the application."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SOIC land pattern is intended."
  ],
  "avoid_when": [
-  "The design requires package families other than SOIC or non-SMD mounting.",
-  "The required supply voltage is not 5V.",
-  "The target PCB land pattern does not match the listed SOIC-28W or SOIC-32 footprints."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SOIC."
  ],
  "keywords": [
-  "ic",
+  "soic",
   "memory",
   "5v",
-  "soic",
-  "smd",
-  "ic memory",
-  "soic-28w",
-  "soic-32",
-  "kicad-symbols",
-  "fm1608b-sg",
-  "fm16w08-sg",
-  "fm1808b-sg",
-  "fm18w08-sg",
-  "cy14e256la-sz",
   "fram",
   "nvram",
   "nonvolatile",
   "p1",
   "27mm",
   "so",
+  "ic",
   "sg",
   "28w",
   "5x17",
-  "9mm"
+  "9mm",
+  "parallel",
+  "64kb"
  ],
  "facts": {
   "package_family": "SOIC",
@@ -66,7 +58,7 @@
    "A": 4,
    "B": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -117,6 +109,6 @@
   "kicad-symbols/Memory_NVRAM/FM18W08-SG",
   "kicad-symbols/Memory_NVRAM/CY14E256LA-SZ"
  ],
- "embedding_text": "ic-memory.soic.5v | IC Memory | SMD 5V memory IC cluster containing 5 parts in SOIC package footprints including SOIC-28W and SOIC-32. | ic memory 5v soic smd ic memory soic-28w soic-32 kicad-symbols fm1608b-sg fm16w08-sg fm1808b-sg fm18w08-sg cy14e256la-sz fram nvram nonvolatile p1 27mm so sg 28w 5x17 9mm | SOIC | 5V",
+ "embedding_text": "ic-memory.soic.5v | IC Memory | 5 ic memory parts for 5V using SOIC footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | soic memory 5v fram nvram nonvolatile p1 27mm so ic sg 28w 5x17 9mm parallel 64kb | SOIC | 5V",
  "class": "ic.memory"
 }

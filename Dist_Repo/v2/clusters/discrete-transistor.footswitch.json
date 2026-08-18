@@ -6,29 +6,22 @@
   "Discrete",
   "Transistor"
  ],
- "description": "Discrete transistor cluster containing 1 tier C part associated with the FOOTSWITCH package family and FOOTSWITCH_MOM footprint.",
+ "description": "1 discrete transistor parts using FOOTSWITCH footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Verify footprint dimensions and land pattern when using the FOOTSWITCH_MOM footprint.",
-  "Evaluate electrical specifications as mount type is classified as unknown.",
-  "Review quality tier C ratings and dist-legacy source details before part selection."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a FOOTSWITCH land pattern is intended."
  ],
  "avoid_when": [
-  "The board layout requires a package family other than FOOTSWITCH.",
-  "A confirmed surface-mount or through-hole designation is required rather than unknown mount.",
-  "Quality tier C parts or dist-legacy sources are excluded by project requirements."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than FOOTSWITCH."
  ],
  "keywords": [
-  "discrete transistor",
-  "discrete.transistor",
+  "footswitch",
+  "mom",
   "discrete",
   "transistor",
-  "footswitch",
-  "footswitch_mom",
-  "footswitch mom",
-  "tier c",
-  "dist-legacy",
-  "unknown mount",
-  "mom",
   "pad",
   "mm",
   "pitch",
@@ -53,12 +46,12 @@
   "tier_counts": {
    "C": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
   "dist-legacy/FOOTSWITCH_MOM"
  ],
- "embedding_text": "discrete-transistor.footswitch | Discrete Transistor | Discrete transistor cluster containing 1 tier C part associated with the FOOTSWITCH package family and FOOTSWITCH_MOM footprint. | discrete transistor discrete.transistor discrete transistor footswitch footswitch_mom footswitch mom tier c dist-legacy unknown mount mom pad mm pitch pins | FOOTSWITCH | ",
+ "embedding_text": "discrete-transistor.footswitch | Discrete Transistor | 1 discrete transistor parts using FOOTSWITCH footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | footswitch mom discrete transistor pad mm pitch pins | FOOTSWITCH | ",
  "class": "discrete.transistor"
 }

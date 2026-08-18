@@ -6,31 +6,21 @@
   "IC",
   "Analog"
  ],
- "description": "Analog IC cluster with CAN facet containing 5 KiCad symbol entries assigned to quality tier G with package chosen later.",
+ "description": "5 ic analog parts for CAN with package chosen later. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when needing an analog IC part categorized under CAN facet.",
-  "Assign an explicit footprint as the package family is marked package chosen later.",
-  "Verify part specifications prior to placement since all 5 parts are tier G."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Select a footprint/package explicitly before placement."
  ],
  "avoid_when": [
-  "Parts with pre-defined footprints or specific package families are required.",
-  "Only verified high-tier quality parts (above tier G) are accepted."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review."
  ],
  "keywords": [
-  "ic",
+  "adc",
   "analog",
   "can",
-  "ic.analog",
-  "ad9280ars",
-  "adc08060",
-  "adc0832",
-  "adc1173",
-  "ca3300",
-  "kicad-symbols",
-  "analog_adc",
-  "tier g",
-  "package chosen later",
-  "adc",
+  "ic",
   "package",
   "chosen",
   "later",
@@ -38,7 +28,10 @@
   "mhz",
   "fast",
   "tssop",
+  "ad9280ars",
   "ssop",
+  "adc08060",
+  "adc0832",
   "inputs"
  ],
  "facts": {
@@ -58,7 +51,7 @@
   "tier_counts": {
    "G": 5
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -109,6 +102,6 @@
   "kicad-symbols/Analog_ADC/ADC1173",
   "kicad-symbols/Analog_ADC/CA3300"
  ],
- "embedding_text": "ic-analog.generic.can | IC Analog | Analog IC cluster with CAN facet containing 5 KiCad symbol entries assigned to quality tier G with package chosen later. | ic analog can ic.analog ad9280ars adc08060 adc0832 adc1173 ca3300 kicad-symbols analog_adc tier g package chosen later adc package chosen later video mhz fast tssop ssop inputs | package chosen later | CAN",
+ "embedding_text": "ic-analog.generic.can | IC Analog | 5 ic analog parts for CAN with package chosen later. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | adc analog can ic package chosen later video mhz fast tssop ad9280ars ssop adc08060 adc0832 inputs | package chosen later | CAN",
  "class": "ic.analog"
 }

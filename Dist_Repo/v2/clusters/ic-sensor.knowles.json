@@ -6,35 +6,27 @@
   "IC",
   "Sensor"
  ],
- "description": "Surface-mount audio IC sensor cluster featuring Knowles footprints including SPH0645LM4H-6, LGA-5, and LGA-6 packages.",
+ "description": "3 ic sensor parts using Knowles footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when requiring SMD audio sensor ICs in Knowles package footprints.",
-  "Choose based on specific footprints such as SPH0645LM4H-6 (3.5x2.65mm), LGA-5 (3.5x2.65mm), or LGA-6 (4.72x3.76mm).",
-  "Consider quality tiers with SPH0645LM4H at Tier A and SPH0641LU4H-1/SPM0687LR5H-1 at Tier B."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a Knowles land pattern is intended."
  ],
  "avoid_when": [
-  "Through-hole mounting or non-SMD assembly is required.",
-  "The design requires footprints outside the Knowles package family.",
-  "A non-audio sensor IC component is required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than Knowles."
  ],
  "keywords": [
   "knowles",
-  "ic",
-  "sensor",
-  "audio",
-  "sensor_audio",
-  "smd",
-  "lga",
-  "lga-5",
-  "lga-6",
-  "sph0645lm4h",
-  "sph0641lu4h-1",
-  "spm0687lr5h-1",
-  "3.5x2.65mm",
-  "4.72x3.76mm",
   "mems",
   "microphone",
+  "lga",
+  "sensor",
+  "sph0645lm4h",
+  "audio",
   "i2s",
+  "ic",
   "5x2",
   "65mm",
   "spm0687lr5h",
@@ -65,7 +57,7 @@
    "A": 1,
    "B": 2
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -98,6 +90,6 @@
   "kicad-symbols/Sensor_Audio/SPH0641LU4H-1",
   "kicad-symbols/Sensor_Audio/SPM0687LR5H-1"
  ],
- "embedding_text": "ic-sensor.knowles | IC Sensor | Surface-mount audio IC sensor cluster featuring Knowles footprints including SPH0645LM4H-6, LGA-5, and LGA-6 packages. | knowles ic sensor audio sensor_audio smd lga lga-5 lga-6 sph0645lm4h sph0641lu4h-1 spm0687lr5h-1 3.5x2.65mm 4.72x3.76mm mems microphone i2s 5x2 65mm spm0687lr5h bit dba snr 24bit | Knowles | ",
+ "embedding_text": "ic-sensor.knowles | IC Sensor | 3 ic sensor parts using Knowles footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | knowles mems microphone lga sensor sph0645lm4h audio i2s ic 5x2 65mm spm0687lr5h bit dba snr 24bit | Knowles | ",
  "class": "ic.sensor"
 }

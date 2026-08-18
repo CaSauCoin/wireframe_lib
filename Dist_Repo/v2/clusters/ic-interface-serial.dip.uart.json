@@ -7,33 +7,22 @@
   "Interface",
   "Serial"
  ],
- "description": "This cluster contains 14 through-hole serial UART interface ICs in DIP packages with DIP-8, DIP-14, DIP-20, DIP-28, and DIP-40 footprints.",
+ "description": "14 ic interface serial parts for UART/serial using DIP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select based on required DIP footprint width and pin count, such as DIP-8, DIP-14, DIP-20, DIP-28, or DIP-40.",
-  "Choose for through-hole UART and serial interface circuit requirements.",
-  "Select specific part models such as 16450, 16550, 8250, 8252, or GD75232N."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a DIP land pattern is intended."
  ],
  "avoid_when": [
-  "Surface-mount (SMT) mounting is required instead of through-hole DIP.",
-  "The circuit requires interface protocols other than serial/UART.",
-  "A package family other than DIP is needed for the PCB layout."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than DIP."
  ],
  "keywords": [
-  "ic",
+  "dip",
+  "uart",
   "interface",
   "serial",
-  "uart",
-  "dip",
-  "through hole",
-  "dip-8",
-  "dip-14",
-  "dip-20",
-  "dip-28",
-  "dip-40",
-  "16550",
-  "16450",
-  "8250",
-  "gd75232n",
   "62mm",
   "rs",
   "pdip",
@@ -41,8 +30,11 @@
   "tht",
   "dil",
   "54mm",
+  "ic",
   "transceiver",
-  "duplex"
+  "duplex",
+  "w7",
+  "300mil"
  ],
  "facts": {
   "package_family": "DIP",
@@ -69,7 +61,7 @@
   "tier_counts": {
    "A": 14
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -129,6 +121,6 @@
   "kicad-symbols/Interface_UART/MAX491E",
   "kicad-symbols/Interface_UART/SN75176AP"
  ],
- "embedding_text": "ic-interface-serial.dip.uart | IC Interface Serial | This cluster contains 14 through-hole serial UART interface ICs in DIP packages with DIP-8, DIP-14, DIP-20, DIP-28, and DIP-40 footprints. | ic interface serial uart dip through hole dip-8 dip-14 dip-20 dip-28 dip-40 16550 16450 8250 gd75232n 62mm rs pdip receiver tht dil 54mm transceiver duplex | DIP | UART/serial",
+ "embedding_text": "ic-interface-serial.dip.uart | IC Interface Serial | 14 ic interface serial parts for UART/serial using DIP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | dip uart interface serial 62mm rs pdip receiver tht dil 54mm ic transceiver duplex w7 300mil | DIP | UART/serial",
  "class": "ic.interface.serial"
 }

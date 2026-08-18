@@ -6,31 +6,24 @@
   "IC",
   "RF"
  ],
- "description": "RF integrated circuit cluster in surface-mount WSON packaging including footprint WSON-8-1EP_2x2mm_P0.5mm_EP0.9x1.6mm.",
+ "description": "1 ic rf parts using WSON footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Verify requirement for surface-mount WSON footprint packaging.",
-  "Select based on exact footprint fit such as WSON-8-1EP_2x2mm_P0.5mm_EP0.9x1.6mm.",
-  "Check part quality tier and source documentation before selection."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a WSON land pattern is intended."
  ],
  "avoid_when": [
-  "A non-SMD or non-WSON package is required.",
-  "The design requires a different IC class or land pattern.",
-  "Electrical specifications or pinouts are not confirmed by part documentation."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than WSON."
  ],
  "keywords": [
-  "ic",
   "rf",
   "wson",
-  "smd",
-  "trf37a73",
-  "rf amplifier",
-  "wson-8-1ep",
-  "kicad-symbols",
-  "ic.rf",
-  "wson-8-1ep_2x2mm_p0.5mm_ep0.9x1.6mm",
   "gain",
   "block",
   "1ep",
+  "trf37a73",
   "amplifier",
   "6ghz",
   "12db",
@@ -39,7 +32,8 @@
   "5mm",
   "ep0",
   "9x1",
-  "6mm"
+  "6mm",
+  "ic"
  ],
  "facts": {
   "package_family": "WSON",
@@ -60,7 +54,7 @@
   "tier_counts": {
    "A": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -75,6 +69,6 @@
  "part_ids": [
   "kicad-symbols/RF_Amplifier/TRF37A73"
  ],
- "embedding_text": "ic-rf.wson | IC RF | RF integrated circuit cluster in surface-mount WSON packaging including footprint WSON-8-1EP_2x2mm_P0.5mm_EP0.9x1.6mm. | ic rf wson smd trf37a73 rf amplifier wson-8-1ep kicad-symbols ic.rf wson-8-1ep_2x2mm_p0.5mm_ep0.9x1.6mm gain block 1ep amplifier 6ghz 12db 2x2mm p0 5mm ep0 9x1 6mm | WSON | ",
+ "embedding_text": "ic-rf.wson | IC RF | 1 ic rf parts using WSON footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | rf wson gain block 1ep trf37a73 amplifier 6ghz 12db 2x2mm p0 5mm ep0 9x1 6mm ic | WSON | ",
  "class": "ic.rf"
 }

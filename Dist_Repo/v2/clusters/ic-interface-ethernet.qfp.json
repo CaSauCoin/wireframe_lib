@@ -7,42 +7,34 @@
   "Interface",
   "Ethernet"
  ],
- "description": "Ethernet interface integrated circuits in surface-mount QFP package options, including LQFP-48 and LQFP-80 footprints.",
+ "description": "6 ic interface ethernet parts using QFP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Choose when requiring an Ethernet interface IC in a surface-mount QFP package.",
-  "Select between LQFP-48 7x7mm 0.5mm pitch and LQFP-80 10x10mm 0.4mm pitch footprints.",
-  "Verify part selection among available Tier A KiCad interface Ethernet symbols."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a QFP land pattern is intended."
  ],
  "avoid_when": [
-  "A package family other than QFP or LQFP is required.",
-  "Surface-mount (SMD) packaging is not suitable for the layout.",
-  "Footprint requirements differ from LQFP-48_7x7mm_P0.5mm or LQFP-80_10x10mm_P0.4mm."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than QFP."
  ],
  "keywords": [
-  "ic",
-  "interface",
-  "ethernet",
-  "qfp",
-  "lqfp",
-  "smd",
-  "lqfp-48",
-  "lqfp-80",
-  "dp83848c",
-  "dp83848i",
-  "ksz8081mlx",
-  "w5100",
-  "w5100s-l",
-  "7x7mm",
-  "10x10mm",
   "c48",
+  "ethernet",
+  "lqfp",
+  "interface",
+  "qfp",
   "case",
   "rmii",
   "p0",
+  "ic",
   "mii",
+  "7x7mm",
   "5mm",
   "932aa",
   "6c",
-  "pt0048a"
+  "pt0048a",
+  "phy"
  ],
  "facts": {
   "package_family": "QFP",
@@ -64,7 +56,7 @@
   "tier_counts": {
    "A": 6
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -116,6 +108,6 @@
   "kicad-symbols/Interface_Ethernet/W5100S-L",
   "kicad-symbols/Interface_Ethernet/W6100-L"
  ],
- "embedding_text": "ic-interface-ethernet.qfp | IC Interface Ethernet | Ethernet interface integrated circuits in surface-mount QFP package options, including LQFP-48 and LQFP-80 footprints. | ic interface ethernet qfp lqfp smd lqfp-48 lqfp-80 dp83848c dp83848i ksz8081mlx w5100 w5100s-l 7x7mm 10x10mm c48 case rmii p0 mii 5mm 932aa 6c pt0048a | QFP | ",
+ "embedding_text": "ic-interface-ethernet.qfp | IC Interface Ethernet | 6 ic interface ethernet parts using QFP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | c48 ethernet lqfp interface qfp case rmii p0 ic mii 7x7mm 5mm 932aa 6c pt0048a phy | QFP | ",
  "class": "ic.interface.ethernet"
 }

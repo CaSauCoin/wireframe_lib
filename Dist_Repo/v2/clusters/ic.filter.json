@@ -5,27 +5,24 @@
  "category_path": [
   "IC"
  ],
- "description": "This cluster contains 2 surface-mount IC filter parts using Murata SFECF-6 footprints.",
+ "description": "2 ic parts using Filter footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Choose when requiring an SMD filter IC with a Murata SFECF-6 footprint.",
-  "Select standard or hand-soldering footprint options based on assembly requirements.",
-  "Verify part quality tier and source availability before finalizing design."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a Filter land pattern is intended."
  ],
  "avoid_when": [
-  "Do not use if through-hole mounting is required.",
-  "Avoid when the PCB layout requires a footprint other than Murata SFECF-6."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than Filter."
  ],
  "keywords": [
-  "ic",
   "filter",
-  "ic filter",
-  "smd",
   "murata",
   "sfecf",
-  "sfecf-6",
   "handsoldering",
-  "smd filter",
-  "filter_murata_sfecf-6",
+  "ic",
+  "smd",
   "7mhz",
   "ceramic",
   "surface",
@@ -57,13 +54,13 @@
   "tier_counts": {
    "C": 2
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
   "dist-legacy/Filter_Murata_SFECF-6",
   "dist-legacy/Filter_Murata_SFECF-6_HandSoldering"
  ],
- "embedding_text": "ic.filter | IC | This cluster contains 2 surface-mount IC filter parts using Murata SFECF-6 footprints. | ic filter ic filter smd murata sfecf sfecf-6 handsoldering smd filter filter_murata_sfecf-6 7mhz ceramic surface mount pad mm pitch pins package type | Filter | ",
+ "embedding_text": "ic.filter | IC | 2 ic parts using Filter footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | filter murata sfecf handsoldering ic smd 7mhz ceramic surface mount pad mm pitch pins package type | Filter | ",
  "class": "ic"
 }

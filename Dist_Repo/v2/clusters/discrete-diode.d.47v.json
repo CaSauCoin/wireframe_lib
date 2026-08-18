@@ -6,44 +6,34 @@
   "Discrete",
   "Diode"
  ],
- "description": "Cluster of 100 discrete diode parts rated 47V in D-family footprints (SMA, SMB, MELF, MiniMELF, SOD-123/523, DO-35, DO-41, P600), including zener and TVS variants; mostly sourced from Alternate-KiCad-Library.",
+ "description": "100 discrete diode parts for 47V using D footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Match the exact footprint (e.g. SMA, SMB, MELF, SOD-123, DO-41) to the intended PCB land pattern.",
-  "Confirm whether a zener or TVS variant is needed, since both appear in this 47V cluster.",
-  "Prefer tier A entries; 95 of 100 parts are tier A and 5 are tier B.",
-  "Review status is 'generated', so verify symbol-footprint pairing before use."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a D land pattern is intended."
  ],
  "avoid_when": [
-  "A voltage rating other than 47V is required.",
-  "The board needs a footprint outside the listed D-family options.",
-  "Zener vs TVS behavior distinction is unconfirmed for the chosen part.",
-  "A tier B or unreviewed entry is the only match and verification is not possible."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than D."
  ],
  "keywords": [
   "diode",
-  "discrete diode",
   "zener",
-  "tvs",
   "47v",
-  "d package",
-  "sma",
-  "smb",
-  "melf",
-  "minimelf",
-  "sod-123",
-  "sod-523",
-  "do-41",
-  "do-35",
-  "p600",
-  "smf",
-  "alternate-kicad-library",
-  "kicad-symbols",
+  "tvs",
   "do",
   "discrete",
   "akl",
   "alternate",
   "kicad",
-  "library"
+  "library",
+  "horizontal",
+  "sod",
+  "series",
+  "axial",
+  "pin",
+  "pitch"
  ],
  "facts": {
   "package_family": "D",
@@ -80,7 +70,7 @@
    "A": 95,
    "B": 5
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -226,6 +216,6 @@
   "Alternate-KiCad-Library/Diode_TVS_AKL/BZW03-D47",
   "Alternate-KiCad-Library/Diode_Zener_AKL/BZX884-C47"
  ],
- "embedding_text": "discrete-diode.d.47v | Discrete Diode | Cluster of 100 discrete diode parts rated 47V in D-family footprints (SMA, SMB, MELF, MiniMELF, SOD-123/523, DO-35, DO-41, P600), including zener and TVS variants; mostly sourced from Alternate-KiCad-Library. | diode discrete diode zener tvs 47v d package sma smb melf minimelf sod-123 sod-523 do-41 do-35 p600 smf alternate-kicad-library kicad-symbols do discrete akl alternate kicad library | D | 47V",
+ "embedding_text": "discrete-diode.d.47v | Discrete Diode | 100 discrete diode parts for 47V using D footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | diode zener 47v tvs do discrete akl alternate kicad library horizontal sod series axial pin pitch | D | 47V",
  "class": "discrete.diode"
 }

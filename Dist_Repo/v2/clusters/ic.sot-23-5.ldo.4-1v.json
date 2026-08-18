@@ -5,42 +5,34 @@
  "category_path": [
   "IC"
  ],
- "description": "Cluster of 3 surface-mount IC parts for 4.1V LDO regulators and reference voltages in SOT-23-5 packages.",
+ "description": "3 ic parts for LDO, 4.1V using SOT-23-5 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when requiring a 4.1V LDO regulator or reference voltage component.",
-  "Choose based on footprint match and quality tier, such as tier A parts LM4132xMF-4.1 or AP7380 variants.",
-  "Verify surface-mount SOT-23-5 package footprint requirements."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SOT-23-5 land pattern is intended."
  ],
  "avoid_when": [
-  "Target design requires a voltage other than 4.1V.",
-  "PCB layout requires a footprint package other than SOT-23-5.",
-  "Through-hole mounting is required instead of surface-mount."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SOT-23-5."
  ],
  "keywords": [
-  "ic",
-  "ldo",
-  "4.1v",
-  "sot-23-5",
-  "smd",
-  "voltage regulator",
-  "voltage reference",
-  "low dropout",
-  "lm4132xmf-4.1",
-  "ap7380-41w5",
-  "ap7380-41wr",
-  "kicad",
   "sot",
   "voltage",
   "1v",
   "regulator",
   "low",
   "dropout",
+  "ldo",
   "150ma",
+  "ic",
   "reference",
   "ap7380",
   "akl",
   "enable",
-  "alternate"
+  "alternate",
+  "kicad",
+  "library"
  ],
  "facts": {
   "package_family": "SOT-23-5",
@@ -65,7 +57,7 @@
   "tier_counts": {
    "A": 3
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -98,6 +90,6 @@
   "kicad-symbols/Reference_Voltage/LM4132xMF-4.1",
   "Alternate-KiCad-Library/Voltage_Regulator_AKL/AP7380-41WR"
  ],
- "embedding_text": "ic.sot-23-5.ldo.4-1v | IC | Cluster of 3 surface-mount IC parts for 4.1V LDO regulators and reference voltages in SOT-23-5 packages. | ic ldo 4.1v sot-23-5 smd voltage regulator voltage reference low dropout lm4132xmf-4.1 ap7380-41w5 ap7380-41wr kicad sot voltage 1v regulator low dropout 150ma reference ap7380 akl enable alternate | SOT-23-5 | LDO 4.1V",
+ "embedding_text": "ic.sot-23-5.ldo.4-1v | IC | 3 ic parts for LDO, 4.1V using SOT-23-5 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | sot voltage 1v regulator low dropout ldo 150ma ic reference ap7380 akl enable alternate kicad library | SOT-23-5 | LDO 4.1V",
  "class": "ic"
 }

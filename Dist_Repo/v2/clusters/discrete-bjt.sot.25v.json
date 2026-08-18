@@ -6,39 +6,33 @@
   "Discrete",
   "BJT"
  ],
- "description": "Cluster of 2 tier-A SOT-323/SC-70 SMD discrete BJTs rated 25V, sourced from kicad-symbols, for compact surface-mount transistor placements.",
+ "description": "2 discrete bjt parts for 25V using SOT footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Both parts (BC808W, BC818W) are tier A, score 100, in SOT-323_SC-70",
-  "Confirm which specific device matches your required transistor type",
-  "Verify footprint SOT-323_SC-70 matches your PCB land pattern before layout"
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SOT land pattern is intended."
  ],
  "avoid_when": [
-  "Design requires a voltage rating other than 25V",
-  "A package other than SOT-323_SC-70 is needed",
-  "Through-hole mounting is required instead of SMD"
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SOT."
  ],
  "keywords": [
   "sot",
-  "sot-323",
-  "sc-70",
-  "bjt",
   "transistor",
-  "discrete",
+  "bjt",
   "25v",
-  "smd",
-  "surface mount",
-  "bc808w",
-  "bc818w",
-  "kicad-symbols",
-  "tier a",
-  "small signal transistor",
   "sc",
   "8a",
   "ic",
   "vce",
   "pnp",
   "to",
-  "npn"
+  "smd",
+  "discrete",
+  "npn",
+  "bc808w",
+  "bc818w"
  ],
  "facts": {
   "package_family": "SOT",
@@ -61,7 +55,7 @@
   "tier_counts": {
    "A": 2
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -85,6 +79,6 @@
   "kicad-symbols/Transistor_BJT/BC808W",
   "kicad-symbols/Transistor_BJT/BC818W"
  ],
- "embedding_text": "discrete-bjt.sot.25v | Discrete BJT | Cluster of 2 tier-A SOT-323/SC-70 SMD discrete BJTs rated 25V, sourced from kicad-symbols, for compact surface-mount transistor placements. | sot sot-323 sc-70 bjt transistor discrete 25v smd surface mount bc808w bc818w kicad-symbols tier a small signal transistor sc 8a ic vce pnp to npn | SOT | 25V",
+ "embedding_text": "discrete-bjt.sot.25v | Discrete BJT | 2 discrete bjt parts for 25V using SOT footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | sot transistor bjt 25v sc 8a ic vce pnp to smd discrete npn bc808w bc818w | SOT | 25V",
  "class": "discrete.bjt"
 }

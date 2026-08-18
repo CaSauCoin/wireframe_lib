@@ -7,42 +7,34 @@
   "Power",
   "Converter"
  ],
- "description": "Through-hole 75V buck IC power converter cluster comprising 8 tier B parts matching the Converter_DCDC_XP_POWER_JTDxxxxxxx_THT footprint from KiCad symbols.",
+ "description": "8 ic power converter parts for buck, 75V using Converter footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Requires a 75V buck IC power converter with through-hole mounting.",
-  "Matches the Converter_DCDC_XP_POWER_JTDxxxxxxx_THT footprint.",
-  "Select when tier B KiCad symbol power converter parts are acceptable."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a Converter land pattern is intended."
  ],
  "avoid_when": [
-  "Surface mount packaging is required instead of through-hole.",
-  "The design requires a footprint other than Converter_DCDC_XP_POWER_JTDxxxxxxx_THT.",
-  "Topologies other than buck or voltage ratings other than 75V are required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than Converter."
  ],
  "keywords": [
-  "ic",
-  "power",
   "converter",
-  "buck",
-  "75v",
-  "through_hole",
-  "tht",
-  "converter_dcdc_xp_power_jtdxxxxxxx_tht",
-  "jtd1548d12",
-  "jtd1548d15",
-  "jtd1548s12",
-  "jtd1548s15",
-  "jtd2048d12",
-  "kicad",
   "dc",
   "dcdc",
   "isolated",
   "input",
+  "75v",
   "voltage",
+  "power",
   "module",
   "output",
   "dip",
   "xp",
-  "jtdxxxxxxx"
+  "jtdxxxxxxx",
+  "tht",
+  "isolation",
+  "step"
  ],
  "facts": {
   "package_family": "Converter",
@@ -66,7 +58,7 @@
   "tier_counts": {
    "B": 8
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -120,6 +112,6 @@
   "kicad-symbols/Converter_DCDC/JTD2048S12",
   "kicad-symbols/Converter_DCDC/JTD2048S15"
  ],
- "embedding_text": "ic-power-converter.converter.buck.75v | IC Power Converter | Through-hole 75V buck IC power converter cluster comprising 8 tier B parts matching the Converter_DCDC_XP_POWER_JTDxxxxxxx_THT footprint from KiCad symbols. | ic power converter buck 75v through_hole tht converter_dcdc_xp_power_jtdxxxxxxx_tht jtd1548d12 jtd1548d15 jtd1548s12 jtd1548s15 jtd2048d12 kicad dc dcdc isolated input voltage module output dip xp jtdxxxxxxx | Converter | buck 75V",
+ "embedding_text": "ic-power-converter.converter.buck.75v | IC Power Converter | 8 ic power converter parts for buck, 75V using Converter footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | converter dc dcdc isolated input 75v voltage power module output dip xp jtdxxxxxxx tht isolation step | Converter | buck 75V",
  "class": "ic.power.converter"
 }

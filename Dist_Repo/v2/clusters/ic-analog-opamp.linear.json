@@ -7,31 +7,18 @@
   "Analog",
   "Op-Amp"
  ],
- "description": "Surface-mount analog operational amplifier IC cluster using Linear DJC DFN22 6x3mm footprints sourced from Alternate-KiCad-Library.",
+ "description": "3 ic analog op-amp parts using Linear footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when requiring an SMD analog operational amplifier in a Linear DJC DFN22 6x3mm footprint.",
-  "Choose between LT6017 variant parts (HDJC, IDJC, MPDJC) based on specific part requirements.",
-  "Verify PCB layout compatibility with the Linear_DJC_DFN22_6x3mm footprint."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a Linear land pattern is intended."
  ],
  "avoid_when": [
-  "Through-hole mounting is required instead of SMD.",
-  "The PCB layout requires a footprint other than Linear_DJC_DFN22_6x3mm.",
-  "Parts rated above tier B quality are strictly required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than Linear."
  ],
  "keywords": [
-  "ic",
-  "analog",
-  "op-amp",
-  "operational amplifier",
-  "linear",
-  "smd",
-  "dfn22",
-  "6x3mm",
-  "linear_djc_dfn22_6x3mm",
-  "lt6017hdjc",
-  "lt6017idjc",
-  "lt6017mpdjc",
-  "alternate-kicad-library",
   "amplifier",
   "operational",
   "dfn",
@@ -41,8 +28,13 @@
   "over",
   "the",
   "top",
+  "linear",
   "djc",
-  "rail"
+  "rail",
+  "akl",
+  "offset",
+  "drift",
+  "2mhz"
  ],
  "facts": {
   "package_family": "Linear",
@@ -63,7 +55,7 @@
   "tier_counts": {
    "B": 3
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -96,6 +88,6 @@
   "Alternate-KiCad-Library/Amplifier_Operational_AKL/LT6017IDJC",
   "Alternate-KiCad-Library/Amplifier_Operational_AKL/LT6017MPDJC"
  ],
- "embedding_text": "ic-analog-opamp.linear | IC Analog Op-Amp | Surface-mount analog operational amplifier IC cluster using Linear DJC DFN22 6x3mm footprints sourced from Alternate-KiCad-Library. | ic analog op-amp operational amplifier linear smd dfn22 6x3mm linear_djc_dfn22_6x3mm lt6017hdjc lt6017idjc lt6017mpdjc alternate-kicad-library amplifier operational dfn quad precision micropower over the top djc rail | Linear | ",
+ "embedding_text": "ic-analog-opamp.linear | IC Analog Op-Amp | 3 ic analog op-amp parts using Linear footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | amplifier operational dfn quad precision micropower over the top linear djc rail akl offset drift 2mhz | Linear | ",
  "class": "ic.analog.opamp"
 }

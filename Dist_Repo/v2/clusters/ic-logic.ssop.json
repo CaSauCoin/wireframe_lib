@@ -6,41 +6,34 @@
   "IC",
   "Logic"
  ],
- "description": "Logic IC component cluster containing 45 surface-mount parts in SSOP footprints, including 9 Tier A and 36 Tier B KiCad symbol entries.",
+ "description": "45 ic logic parts using SSOP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when surface-mount logic ICs with SSOP footprint variants are needed.",
-  "Prefer Tier A entries (9 parts) over Tier B entries (36 parts) where higher quality tiering is required.",
-  "Verify footprint dimensions matching available variants like SSOP-8, SSOP-16, SSOP-24, SSOP-48, or SSOP-56."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SSOP land pattern is intended."
  ],
  "avoid_when": [
-  "The design requires non-SMD mounting such as through-hole technology.",
-  "The required component footprint is not in the SSOP package family."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SSOP."
  ],
  "keywords": [
-  "ic",
-  "logic",
-  "ic logic",
   "ssop",
-  "smd",
-  "kicad-symbols",
-  "74xx",
-  "74xgxx",
-  "74lvc1g123",
-  "74cb3q16210dl",
-  "ssop-8",
-  "ssop-16",
-  "ssop-24",
-  "ssop-48",
-  "ssop-56",
   "cmos",
+  "logic",
+  "ic",
   "dual",
   "gate",
   "voltage",
+  "74xgxx",
   "low",
   "lvc",
   "single",
   "switch",
-  "flip"
+  "flip",
+  "flop",
+  "triple",
+  "nand"
  ],
  "facts": {
   "package_family": "SSOP",
@@ -67,7 +60,7 @@
    "A": 9,
    "B": 36
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -158,6 +151,6 @@
   "kicad-symbols/74xGxx/74LVC3G34",
   "kicad-symbols/74xGxx/74LVC3GU04"
  ],
- "embedding_text": "ic-logic.ssop | IC Logic | Logic IC component cluster containing 45 surface-mount parts in SSOP footprints, including 9 Tier A and 36 Tier B KiCad symbol entries. | ic logic ic logic ssop smd kicad-symbols 74xx 74xgxx 74lvc1g123 74cb3q16210dl ssop-8 ssop-16 ssop-24 ssop-48 ssop-56 cmos dual gate voltage low lvc single switch flip | SSOP | ",
+ "embedding_text": "ic-logic.ssop | IC Logic | 45 ic logic parts using SSOP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | ssop cmos logic ic dual gate voltage 74xgxx low lvc single switch flip flop triple nand | SSOP | ",
  "class": "ic.logic"
 }

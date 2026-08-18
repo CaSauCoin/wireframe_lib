@@ -6,32 +6,23 @@
   "Discrete",
   "Transistor"
  ],
- "description": "Cluster of discrete transistor components using Recom package family footprints, featuring through-hole mount options and quality tiers B and C.",
+ "description": "2 discrete transistor parts using Recom footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select tier B entries for higher quality tier scoring.",
-  "Verify footprint match with Recom or Recom Power R-78E3.3-1.0.",
-  "Confirm mounting requirements match through-hole or specified package."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a Recom land pattern is intended."
  ],
  "avoid_when": [
-  "The layout requires a package family other than Recom.",
-  "Through-hole mounting is unsuitable for the target board assembly.",
-  "Unverified or unknown mount specifications cannot be tolerated."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than Recom."
  ],
  "keywords": [
   "recom",
-  "discrete",
-  "transistor",
-  "recom power",
-  "r-78e3.3-1.0",
-  "through hole",
-  "discrete transistor",
-  "package recom",
-  "tier b",
-  "celestial altium library",
-  "dist legacy",
-  "through_hole",
   "power",
   "78e3",
+  "transistor",
+  "discrete",
   "pin",
   "three",
   "component",
@@ -41,7 +32,8 @@
   "collector",
   "and",
   "emitter",
-  "terminals"
+  "terminals",
+  "bjt"
  ],
  "facts": {
   "package_family": "Recom",
@@ -66,7 +58,7 @@
    "B": 1,
    "C": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -82,6 +74,6 @@
   "dist-legacy/Recom Power R-78E3.3-1.0",
   "celestial-altium-library/Recom Power R-78E3.3-1.0/Recom_Power_R-78E3.3-1.0"
  ],
- "embedding_text": "discrete-transistor.recom | Discrete Transistor | Cluster of discrete transistor components using Recom package family footprints, featuring through-hole mount options and quality tiers B and C. | recom discrete transistor recom power r-78e3.3-1.0 through hole discrete transistor package recom tier b celestial altium library dist legacy through_hole power 78e3 pin three component configured with base collector and emitter terminals | Recom | ",
+ "embedding_text": "discrete-transistor.recom | Discrete Transistor | 2 discrete transistor parts using Recom footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | recom power 78e3 transistor discrete pin three component configured with base collector and emitter terminals bjt | Recom | ",
  "class": "discrete.transistor"
 }

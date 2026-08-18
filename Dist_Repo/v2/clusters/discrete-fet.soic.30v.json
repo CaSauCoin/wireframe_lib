@@ -6,39 +6,32 @@
   "Discrete",
   "FET"
  ],
- "description": "Discrete 30V FET cluster containing 11 surface-mount parts in the SOIC package family with SOIC-8_3.9x4.9mm_P1.27mm footprints.",
+ "description": "11 discrete fet parts for 30V using SOIC footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when a 30V rated discrete FET in an SMD SOIC package is required.",
-  "Verify compatibility with the SOIC-8_3.9x4.9mm_P1.27mm footprint pattern.",
-  "Choose from tier A representative parts such as AO4842, FDS6630A, FDS6930A, FDS6930B, or FDS9435A."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SOIC land pattern is intended."
  ],
  "avoid_when": [
-  "The design requires a voltage rating other than 30V.",
-  "Through-hole mounting or packages other than SOIC are needed.",
-  "The footprint required differs from SOIC-8_3.9x4.9mm_P1.27mm."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SOIC."
  ],
  "keywords": [
-  "discrete fet",
-  "discrete",
+  "soic",
+  "channel",
   "fet",
   "30v",
-  "soic",
-  "smd",
-  "soic-8",
-  "soic-8_3.9x4.9mm_p1.27mm",
-  "transistor",
-  "ao4842",
-  "fds6630a",
-  "fds6930a",
-  "channel",
   "mosfet",
   "so",
+  "transistor",
   "id",
   "dual",
   "9x4",
   "9mm",
   "p1",
   "27mm",
+  "discrete",
   "vds",
   "ron"
  ],
@@ -63,7 +56,7 @@
   "tier_counts": {
    "A": 11
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -120,6 +113,6 @@
   "kicad-symbols/Transistor_FET/Si4532DY",
   "kicad-symbols/Transistor_FET/Si4542DY"
  ],
- "embedding_text": "discrete-fet.soic.30v | Discrete FET | Discrete 30V FET cluster containing 11 surface-mount parts in the SOIC package family with SOIC-8_3.9x4.9mm_P1.27mm footprints. | discrete fet discrete fet 30v soic smd soic-8 soic-8_3.9x4.9mm_p1.27mm transistor ao4842 fds6630a fds6930a channel mosfet so id dual 9x4 9mm p1 27mm vds ron | SOIC | 30V",
+ "embedding_text": "discrete-fet.soic.30v | Discrete FET | 11 discrete fet parts for 30V using SOIC footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | soic channel fet 30v mosfet so transistor id dual 9x4 9mm p1 27mm discrete vds ron | SOIC | 30V",
  "class": "discrete.fet"
 }

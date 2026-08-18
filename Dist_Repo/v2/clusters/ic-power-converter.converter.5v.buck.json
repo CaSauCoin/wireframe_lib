@@ -7,41 +7,33 @@
   "Power",
   "Converter"
  ],
- "description": "Cluster of 56 5V buck DC-DC converter ICs supporting surface-mount and through-hole mounting styles with Converter package footprints.",
+ "description": "56 ic power converter parts for 5V, buck using Converter footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "A 5V buck power converter IC is required in a Converter package format.",
-  "Selecting between surface-mount (SMD) and through-hole (THT) mounting types.",
-  "Matching specific DC-DC converter footprints like RECOM R-78, TRACO TSR, or Murata OKI-78SR."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a Converter land pattern is intended."
  ],
  "avoid_when": [
-  "The design requires a converter topology other than 5V buck.",
-  "Footprint requirements fall outside the Converter package family.",
-  "Mounting requirements are incompatible with SMD or through-hole styles."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than Converter."
  ],
  "keywords": [
-  "ic",
-  "power converter",
-  "5v",
-  "buck",
   "converter",
   "dcdc",
-  "smd",
-  "through_hole",
-  "tht",
-  "traco",
-  "recom",
-  "murata",
-  "oki-78sr",
-  "r-78",
-  "tsr2",
   "dc",
+  "5v",
   "voltage",
   "step",
   "down",
+  "traco",
   "regulator",
+  "buck",
+  "tht",
   "input",
   "power",
   "output",
+  "ic",
   "isolated"
  ],
  "facts": {
@@ -79,7 +71,7 @@
    "A": 18,
    "B": 38
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -181,6 +173,6 @@
   "kicad-symbols/Converter_DCDC/TSR3-2450N",
   "kicad-symbols/Converter_DCDC/TSR3-2465N"
  ],
- "embedding_text": "ic-power-converter.converter.5v.buck | IC Power Converter | Cluster of 56 5V buck DC-DC converter ICs supporting surface-mount and through-hole mounting styles with Converter package footprints. | ic power converter 5v buck converter dcdc smd through_hole tht traco recom murata oki-78sr r-78 tsr2 dc voltage step down regulator input power output isolated | Converter | 5V buck",
+ "embedding_text": "ic-power-converter.converter.5v.buck | IC Power Converter | 56 ic power converter parts for 5V, buck using Converter footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | converter dcdc dc 5v voltage step down traco regulator buck tht input power output ic isolated | Converter | 5V buck",
  "class": "ic.power.converter"
 }

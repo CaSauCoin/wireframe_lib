@@ -6,34 +6,25 @@
   "Discrete",
   "Transistor"
  ],
- "description": "Cluster of 21 discrete 120V transistor parts in the TO package family supporting surface-mount and through-hole footprints including TO-220, TO-263, TO-262, TO-220F, and TO-92.",
+ "description": "21 discrete transistor parts for 120V using TO footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when needing a 120V discrete transistor in a TO package family footprint.",
-  "Choose between surface-mount (e.g., TO-263) and through-hole (e.g., TO-220, TO-262, TO-220F, TO-92) styles.",
-  "Select based on footprint compatibility and quality tier rating."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a TO land pattern is intended."
  ],
  "avoid_when": [
-  "The application requires voltage ratings other than 120V.",
-  "The layout requires package families other than TO.",
-  "Component requirements fall outside the discrete transistor category."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than TO."
  ],
  "keywords": [
-  "discrete",
+  "to",
+  "mosfet",
   "transistor",
   "120v",
-  "to",
-  "to-220",
-  "to-263",
-  "to-262",
-  "to-220f",
-  "to-92",
-  "smd",
-  "through hole",
-  "alternate-kicad-library",
-  "digikey-kicad-library",
-  "mosfet",
   "enchancement",
   "vertical",
+  "discrete",
   "mos",
   "akl",
   "mode",
@@ -41,7 +32,8 @@
   "kicad",
   "library",
   "nmos",
-  "emos"
+  "emos",
+  "emosfet"
  ],
  "facts": {
   "package_family": "TO",
@@ -74,7 +66,7 @@
    "A": 20,
    "B": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -141,6 +133,6 @@
   "Alternate-KiCad-Library/Transistor_MOSFET_AKL/VN1206L",
   "digikey-kicad-library/dk_Transistors-Bipolar-BJT-Single/KSC1845FTA"
  ],
- "embedding_text": "discrete-transistor.to.120v | Discrete Transistor | Cluster of 21 discrete 120V transistor parts in the TO package family supporting surface-mount and through-hole footprints including TO-220, TO-263, TO-262, TO-220F, and TO-92. | discrete transistor 120v to to-220 to-263 to-262 to-220f to-92 smd through hole alternate-kicad-library digikey-kicad-library mosfet enchancement vertical mos akl mode alternate kicad library nmos emos | TO | 120V",
+ "embedding_text": "discrete-transistor.to.120v | Discrete Transistor | 21 discrete transistor parts for 120V using TO footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | to mosfet transistor 120v enchancement vertical discrete mos akl mode alternate kicad library nmos emos emosfet | TO | 120V",
  "class": "discrete.transistor"
 }

@@ -6,39 +6,31 @@
   "Passive",
   "Resistor"
  ],
- "description": "Cluster of surface-mount passive resistor components in SOT-23 package variants including SOT-23-6, SOT23_3, and SOT23_3A footprints.",
+ "description": "6 passive resistor parts using SOT-23 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select based on the required footprint variant such as SOT-23-6, SOT23_3, or SOT23_3A.",
-  "Prioritize tier A parts with top quality scores from KiCad symbols.",
-  "Check source library origin between KiCad and Altium libraries."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SOT-23 land pattern is intended."
  ],
  "avoid_when": [
-  "The design requires through-hole mounting rather than SMD.",
-  "The layout requires package families other than SOT-23.",
-  "Tier C components do not meet design verification requirements."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SOT-23."
  ],
  "keywords": [
-  "passive",
-  "resistor",
-  "sot-23",
-  "sot23",
-  "sot-23-6",
-  "sot23_3",
-  "sot23_3a",
-  "smd",
-  "mcp4012",
-  "mcp4013",
-  "mcp4022",
-  "mcp4023",
   "sot",
   "potentiometer",
   "digital",
+  "sot23",
+  "passive",
+  "resistor",
   "3a",
   "xxxxch",
   "low",
   "cost",
   "step",
   "to",
+  "smd",
   "pot",
   "up",
   "down"
@@ -66,7 +58,7 @@
    "A": 4,
    "C": 2
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -110,6 +102,6 @@
   "chilaboard-altium-library/SOT23_3/SOT23_3",
   "chilaboard-altium-library/SOT23_3A/SOT23_3A"
  ],
- "embedding_text": "passive-resistor.sot-23 | Passive Resistor | Cluster of surface-mount passive resistor components in SOT-23 package variants including SOT-23-6, SOT23_3, and SOT23_3A footprints. | passive resistor sot-23 sot23 sot-23-6 sot23_3 sot23_3a smd mcp4012 mcp4013 mcp4022 mcp4023 sot potentiometer digital 3a xxxxch low cost step to pot up down | SOT-23 | ",
+ "embedding_text": "passive-resistor.sot-23 | Passive Resistor | 6 passive resistor parts using SOT-23 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | sot potentiometer digital sot23 passive resistor 3a xxxxch low cost step to smd pot up down | SOT-23 | ",
  "class": "passive.resistor"
 }

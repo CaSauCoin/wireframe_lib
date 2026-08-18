@@ -5,41 +5,34 @@
  "category_path": [
   "IC"
  ],
- "description": "Surface-mount IC cluster featuring I2C interface support in SOG63 package footprints including SOG63_20, SOG63_24, and SOG63_28.",
+ "description": "3 ic parts for I2C using SOG63 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when requiring surface-mount I2C ICs in SOG63 package footprints.",
-  "Match target board footprint with available SOG63_20, SOG63_24, or SOG63_28 land patterns.",
-  "Verify part selection against tier B quality entries from chilaboard-altium-library."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SOG63 land pattern is intended."
  ],
  "avoid_when": [
-  "The design requires through-hole mounting instead of surface-mount components.",
-  "The layout requires package families other than SOG63.",
-  "Communication interfaces other than I2C are required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SOG63."
  ],
  "keywords": [
-  "ic",
-  "i2c",
-  "smd",
-  "sog63",
-  "sog63_20",
-  "sog63_24",
-  "sog63_28",
-  "bs8116",
-  "ttp229-l",
-  "cpt112s",
-  "ssop20",
-  "ssop28",
-  "qsop24",
-  "chilaboard-altium-library",
   "touch",
+  "i2c",
   "controller",
+  "ic",
+  "sog63",
   "capacitive",
+  "bs8116",
   "key",
   "interface",
   "and",
   "in",
   "package",
-  "ttp229"
+  "ttp229",
+  "ssop28",
+  "cpt112s",
+  "qsop24"
  ],
  "facts": {
   "package_family": "SOG63",
@@ -64,7 +57,7 @@
   "tier_counts": {
    "B": 3
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -97,6 +90,6 @@
   "chilaboard-altium-library/TTP229-L_SSOP28/TTP229-L_SSOP28",
   "chilaboard-altium-library/CPT112S_QSOP24/CPT112S_QSOP24"
  ],
- "embedding_text": "ic.sog63.i2c | IC | Surface-mount IC cluster featuring I2C interface support in SOG63 package footprints including SOG63_20, SOG63_24, and SOG63_28. | ic i2c smd sog63 sog63_20 sog63_24 sog63_28 bs8116 ttp229-l cpt112s ssop20 ssop28 qsop24 chilaboard-altium-library touch controller capacitive key interface and in package ttp229 | SOG63 | I2C",
+ "embedding_text": "ic.sog63.i2c | IC | 3 ic parts for I2C using SOG63 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | touch i2c controller ic sog63 capacitive bs8116 key interface and in package ttp229 ssop28 cpt112s qsop24 | SOG63 | I2C",
  "class": "ic"
 }

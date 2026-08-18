@@ -6,33 +6,24 @@
   "Discrete",
   "Diode"
  ],
- "description": "Discrete diode cluster containing 22 tier-C parts using PinSocket 1x02 footprints in vertical and horizontal orientations with surface-mount and through-hole options.",
+ "description": "22 discrete diode parts using PinSocket footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when requiring a discrete diode in a 1x02 PinSocket footprint.",
-  "Choose based on mount type (surface mount or through-hole) and pin pitch (1.00mm, 1.27mm, 2.00mm, or 2.54mm).",
-  "Match specific layout orientation needs including vertical, horizontal, Pin1Left, or Pin1Right."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a PinSocket land pattern is intended."
  ],
  "avoid_when": [
-  "The PCB footprint requires a package family other than PinSocket.",
-  "Required pin pitch is not 1.00mm, 1.27mm, 2.00mm, or 2.54mm.",
-  "Planner-visible parts or quality tiers above tier C are required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than PinSocket."
  ],
  "keywords": [
-  "discrete diode",
   "pinsocket",
   "1x02",
-  "smd",
-  "through hole",
   "vertical",
-  "horizontal",
-  "1.00mm pitch",
-  "1.27mm pitch",
-  "2.00mm pitch",
-  "2.54mm pitch",
-  "pin1left",
-  "pin1right",
   "00mm",
   "p2",
+  "smd",
   "2x01",
   "54mm",
   "socket",
@@ -41,7 +32,8 @@
   "pitch",
   "strip",
   "p1",
-  "row"
+  "row",
+  "27mm"
  ],
  "facts": {
   "package_family": "PinSocket",
@@ -74,7 +66,7 @@
   "tier_counts": {
    "C": 22
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
@@ -101,6 +93,6 @@
   "dist-legacy/PinSocket_2x01_P2.54mm_Vertical",
   "dist-legacy/PinSocket_2x01_P2.54mm_Vertical_SMD"
  ],
- "embedding_text": "discrete-diode.pinsocket | Discrete Diode | Discrete diode cluster containing 22 tier-C parts using PinSocket 1x02 footprints in vertical and horizontal orientations with surface-mount and through-hole options. | discrete diode pinsocket 1x02 smd through hole vertical horizontal 1.00mm pitch 1.27mm pitch 2.00mm pitch 2.54mm pitch pin1left pin1right 00mm p2 2x01 54mm socket discrete diode pitch strip p1 row | PinSocket | ",
+ "embedding_text": "discrete-diode.pinsocket | Discrete Diode | 22 discrete diode parts using PinSocket footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | pinsocket 1x02 vertical 00mm p2 smd 2x01 54mm socket discrete diode pitch strip p1 row 27mm | PinSocket | ",
  "class": "discrete.diode"
 }

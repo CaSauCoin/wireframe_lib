@@ -6,34 +6,25 @@
   "Discrete",
   "Transistor"
  ],
- "description": "A cluster of 13 discrete transistor parts with SMD and unknown mounts featuring Toshiba package footprints across quality tiers B and C.",
+ "description": "13 discrete transistor parts using TOSHIBA footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Selecting parts with Toshiba footprints such as SC-75, SOP Advance, SOT-723, SOT-23F, or TSON-8.",
-  "Filtering components by tier B or tier C quality levels.",
-  "Choosing parts sourced from dist-legacy or celestial-altium-library."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a TOSHIBA land pattern is intended."
  ],
  "avoid_when": [
-  "A Tier A verified part is strictly required.",
-  "Through-hole (THD) mounting is needed.",
-  "Footprints outside the Toshiba package family are required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than TOSHIBA."
  ],
  "keywords": [
-  "discrete",
-  "transistor",
   "toshiba",
-  "sc-75",
-  "sop advance",
-  "sop advancen",
-  "sot-723",
-  "sot-23f",
-  "tson-8",
-  "smd",
-  "dist-legacy",
-  "celestial-altium-library",
-  "ssm",
+  "transistor",
+  "discrete",
   "sc",
   "sop",
   "sot",
+  "ssm",
   "advancen",
   "5w1a",
   "advance",
@@ -41,7 +32,8 @@
   "tson",
   "bipolar",
   "pins",
-  "1x3"
+  "1x3",
+  "3x1s"
  ],
  "facts": {
   "package_family": "TOSHIBA",
@@ -71,7 +63,7 @@
    "B": 7,
    "C": 6
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -130,6 +122,6 @@
   "celestial-altium-library/TOSHIBA TSON-8 3.1x3.3 2-3X1S/TOSHIBA_TSON-8_3.1x3.3_2-3X1S",
   "celestial-altium-library/TOSHIBA SC-75 SSM N-CH/TOSHIBA_SC-75_SSM_N-CH"
  ],
- "embedding_text": "discrete-transistor.toshiba | Discrete Transistor | A cluster of 13 discrete transistor parts with SMD and unknown mounts featuring Toshiba package footprints across quality tiers B and C. | discrete transistor toshiba sc-75 sop advance sop advancen sot-723 sot-23f tson-8 smd dist-legacy celestial-altium-library ssm sc sop sot advancen 5w1a advance 5q1s tson bipolar pins 1x3 | TOSHIBA | ",
+ "embedding_text": "discrete-transistor.toshiba | Discrete Transistor | 13 discrete transistor parts using TOSHIBA footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | toshiba transistor discrete sc sop sot ssm advancen 5w1a advance 5q1s tson bipolar pins 1x3 3x1s | TOSHIBA | ",
  "class": "discrete.transistor"
 }

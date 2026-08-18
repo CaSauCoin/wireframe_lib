@@ -6,38 +6,32 @@
   "Discrete",
   "BJT"
  ],
- "description": "Cluster of 2 SMD discrete BJT parts tagged for the 120V facet, both using the SC-59 footprint in the SC package family, sourced from Alternate-KiCad-Library with tier A quality.",
+ "description": "2 discrete bjt parts for 120V using SC footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Both entries are tier A with score 100 — differentiate by exact part number (2SA1312 or 2SC2713).",
-  "Confirm the SC-59 footprint matches your PCB land pattern before use.",
-  "Verify electrical ratings against the source datasheet since only the 120V facet is recorded here."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SC land pattern is intended."
  ],
  "avoid_when": [
-  "The design requires a footprint other than SC-59 or a non-SMD mount.",
-  "Electrical parameters beyond the 120V facet are needed but not confirmed from a datasheet.",
-  "A source other than Alternate-KiCad-Library is required for trust or traceability reasons."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SC."
  ],
  "keywords": [
-  "discrete bjt",
-  "bjt",
-  "transistor",
   "sc",
-  "sc-59",
+  "transistor",
+  "bjt",
   "120v",
-  "smd",
   "2sa1312",
-  "2sc2713",
-  "alternate-kicad-library",
-  "kicad",
-  "library",
-  "discrete",
-  "tier a",
-  "package family sc",
   "akl",
   "pnp",
   "100ma",
   "150mw",
   "alternate",
+  "kicad",
+  "library",
+  "discrete",
+  "2sc2713",
   "npn"
  ],
  "facts": {
@@ -61,7 +55,7 @@
   "tier_counts": {
    "A": 2
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -85,6 +79,6 @@
   "Alternate-KiCad-Library/Transistor_BJT_AKL/2SA1312",
   "Alternate-KiCad-Library/Transistor_BJT_AKL/2SC2713"
  ],
- "embedding_text": "discrete-bjt.sc.120v | Discrete BJT | Cluster of 2 SMD discrete BJT parts tagged for the 120V facet, both using the SC-59 footprint in the SC package family, sourced from Alternate-KiCad-Library with tier A quality. | discrete bjt bjt transistor sc sc-59 120v smd 2sa1312 2sc2713 alternate-kicad-library kicad library discrete tier a package family sc akl pnp 100ma 150mw alternate npn | SC | 120V",
+ "embedding_text": "discrete-bjt.sc.120v | Discrete BJT | 2 discrete bjt parts for 120V using SC footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | sc transistor bjt 120v 2sa1312 akl pnp 100ma 150mw alternate kicad library discrete 2sc2713 npn | SC | 120V",
  "class": "discrete.bjt"
 }

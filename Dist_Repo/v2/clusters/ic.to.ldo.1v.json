@@ -5,42 +5,34 @@
  "category_path": [
   "IC"
  ],
- "description": "This cluster contains Tier A surface-mount 1V low-dropout (LDO) regulators in TO-252-2 footprints from Alternate-KiCad-Library.",
+ "description": "3 ic parts for LDO, 1V using TO footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when a 1V LDO voltage regulator in a TO-252-2 SMD footprint is required.",
-  "Choose from Tier A parts including AP7361-10D, AP7361-10DR, and AP7363-10D.",
-  "Use when sourcing components from Alternate-KiCad-Library."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a TO land pattern is intended."
  ],
  "avoid_when": [
-  "Do not use if an output voltage other than 1V is needed.",
-  "Avoid if PCB layout requires non-SMD mounting or footprints other than TO-252-2.",
-  "Do not use when package families other than TO are required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than TO."
  ],
  "keywords": [
-  "ic",
-  "ldo",
-  "1v",
   "to",
-  "to-252-2",
-  "voltage regulator",
-  "low dropout",
-  "smd",
-  "alternate-kicad-library",
-  "ap7361-10d",
-  "ap7361-10dr",
-  "ap7363-10d",
   "voltage",
   "regulator",
+  "1v",
   "low",
   "dropout",
   "enable",
   "dpak",
+  "ldo",
   "1a",
   "akl",
   "with",
   "alternate",
   "kicad",
-  "library"
+  "library",
+  "sot"
  ],
  "facts": {
   "package_family": "TO",
@@ -64,7 +56,7 @@
   "tier_counts": {
    "A": 3
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -97,6 +89,6 @@
   "Alternate-KiCad-Library/Voltage_Regulator_AKL/AP7361-10DR",
   "Alternate-KiCad-Library/Voltage_Regulator_AKL/AP7363-10D"
  ],
- "embedding_text": "ic.to.ldo.1v | IC | This cluster contains Tier A surface-mount 1V low-dropout (LDO) regulators in TO-252-2 footprints from Alternate-KiCad-Library. | ic ldo 1v to to-252-2 voltage regulator low dropout smd alternate-kicad-library ap7361-10d ap7361-10dr ap7363-10d voltage regulator low dropout enable dpak 1a akl with alternate kicad library | TO | LDO 1V",
+ "embedding_text": "ic.to.ldo.1v | IC | 3 ic parts for LDO, 1V using TO footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | to voltage regulator 1v low dropout enable dpak ldo 1a akl with alternate kicad library sot | TO | LDO 1V",
  "class": "ic"
 }

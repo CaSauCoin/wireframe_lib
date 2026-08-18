@@ -6,42 +6,34 @@
   "Discrete",
   "Diode"
  ],
- "description": "Cluster of 63 discrete diode parts assigned to CAP package family footprints with through-hole and unknown mounting options.",
+ "description": "63 discrete diode parts using CAP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when discrete diode parts require CAP package family footprints.",
-  "Verify specific footprint requirements such as CAP_D5, CAP_D8, CAP_D10, or CAP_CERAMIC.",
-  "Check through-hole mounting requirements for the targeted PCB layout."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a CAP land pattern is intended."
  ],
  "avoid_when": [
-  "The PCB layout requires surface-mount or non-CAP package footprints.",
-  "All 63 parts are tier C quality and none are visible to the planner.",
-  "Fully verified tier A or tier B component entries are required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than CAP."
  ],
  "keywords": [
-  "discrete diode",
-  "discrete",
-  "diode",
   "cap",
-  "through_hole",
-  "cap_ceramic",
-  "cap_d5",
-  "cap_d6.3",
-  "cap_d8",
-  "cap_d10",
-  "cap_d12.5",
-  "cap_d16",
-  "cap_d18",
-  "cap_mica",
-  "tier c",
   "th",
   "al",
+  "discrete",
+  "diode",
   "00mm",
   "l5",
   "alum",
   "elec",
   "d12",
   "pad",
-  "mm"
+  "mm",
+  "pitch",
+  "pins",
+  "through",
+  "hole"
  ],
  "facts": {
   "package_family": "CAP",
@@ -75,7 +67,7 @@
   "tier_counts": {
    "C": 63
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
@@ -143,6 +135,6 @@
   "celestial-altium-library/CAP TH ALUM ELEC D6.30mm S2.50m/CAP_TH_ALUM_ELEC_D6.30mm_S2.50m",
   "celestial-altium-library/CAP TH ALUM ELEC D8.00mm S3.50m/CAP_TH_ALUM_ELEC_D8.00mm_S3.50m"
  ],
- "embedding_text": "discrete-diode.cap | Discrete Diode | Cluster of 63 discrete diode parts assigned to CAP package family footprints with through-hole and unknown mounting options. | discrete diode discrete diode cap through_hole cap_ceramic cap_d5 cap_d6.3 cap_d8 cap_d10 cap_d12.5 cap_d16 cap_d18 cap_mica tier c th al 00mm l5 alum elec d12 pad mm | CAP | ",
+ "embedding_text": "discrete-diode.cap | Discrete Diode | 63 discrete diode parts using CAP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | cap th al discrete diode 00mm l5 alum elec d12 pad mm pitch pins through hole | CAP | ",
  "class": "discrete.diode"
 }

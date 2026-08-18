@@ -6,33 +6,24 @@
   "Passive",
   "Resistor"
  ],
- "description": "Surface-mount passive resistor cluster with SPI interface support in QFN packaging.",
+ "description": "1 passive resistor parts for SPI using QFN footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Verify requirement for an SPI digital interface.",
-  "Confirm board layout accommodates the QFN-16-1EP surface-mount footprint.",
-  "Use when selecting digital potentiometer parts such as the MCP4251 series."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a QFN land pattern is intended."
  ],
  "avoid_when": [
-  "Designs requiring non-QFN packages or through-hole mounting.",
-  "Applications not utilizing an SPI communication bus.",
-  "Circuits needing standard fixed passive resistors."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than QFN."
  ],
  "keywords": [
-  "passive",
-  "resistor",
-  "spi",
   "qfn",
-  "smd",
-  "surface mount",
-  "digital potentiometer",
-  "potentiometer",
-  "mcp4251",
-  "mcp4251-xxxx-ml",
-  "qfn-16-1ep",
-  "4x4mm",
-  "kicad",
   "digital",
+  "potentiometer",
   "pot",
+  "spi",
+  "mcp4251",
   "xxxx",
   "ml",
   "dual",
@@ -40,6 +31,7 @@
   "volatile",
   "memory",
   "1ep",
+  "4x4mm",
   "p0",
   "65mm"
  ],
@@ -64,7 +56,7 @@
   "tier_counts": {
    "A": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -79,6 +71,6 @@
  "part_ids": [
   "kicad-symbols/Potentiometer_Digital/MCP4251-xxxx-ML"
  ],
- "embedding_text": "passive-resistor.qfn.spi | Passive Resistor | Surface-mount passive resistor cluster with SPI interface support in QFN packaging. | passive resistor spi qfn smd surface mount digital potentiometer potentiometer mcp4251 mcp4251-xxxx-ml qfn-16-1ep 4x4mm kicad digital pot xxxx ml dual bit volatile memory 1ep p0 65mm | QFN | SPI",
+ "embedding_text": "passive-resistor.qfn.spi | Passive Resistor | 1 passive resistor parts for SPI using QFN footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | qfn digital potentiometer pot spi mcp4251 xxxx ml dual bit volatile memory 1ep 4x4mm p0 65mm | QFN | SPI",
  "class": "passive.resistor"
 }

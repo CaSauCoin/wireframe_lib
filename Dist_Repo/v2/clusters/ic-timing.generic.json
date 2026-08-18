@@ -6,29 +6,23 @@
   "IC",
   "Timing"
  ],
- "description": "Generic IC timing cluster containing 23 parts including TCXO and SMD oscillators with package chosen later.",
+ "description": "23 ic timing parts with package chosen later. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when generic IC timing, TCXO, or SMD oscillator components are needed.",
-  "Specify package and footprint details explicitly as package family is chosen later.",
-  "Verify part specifications as all 23 entries are tier G generated parts."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Select a footprint/package explicitly before placement."
  ],
  "avoid_when": [
-  "Avoid when a specific footprint or package must be defined upfront.",
-  "Avoid if higher quality tiers than tier G are required for design rules."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review."
  ],
  "keywords": [
-  "ic timing",
+  "oscillator",
+  "smd",
+  "4pin",
+  "handsoldering",
   "ic",
   "timing",
-  "oscillator",
-  "tcxo",
-  "tcxo3",
-  "smd oscillator",
-  "package chosen later",
-  "4pin",
-  "dist-legacy",
-  "smd",
-  "handsoldering",
   "package",
   "chosen",
   "later",
@@ -56,7 +50,7 @@
   "tier_counts": {
    "G": 23
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -125,6 +119,6 @@
   "dist-legacy/Oscillator_SMD_TCXO_G158",
   "dist-legacy/Oscillator_SMD_TXC_7C-4Pin_5.0x3.2mm_HandSoldering"
  ],
- "embedding_text": "ic-timing.generic | IC Timing | Generic IC timing cluster containing 23 parts including TCXO and SMD oscillators with package chosen later. | ic timing ic timing oscillator tcxo tcxo3 smd oscillator package chosen later 4pin dist-legacy smd handsoldering package chosen later pins 0mm fordahl seikoepson 0x5 2mm 2x2 | package chosen later | ",
+ "embedding_text": "ic-timing.generic | IC Timing | 23 ic timing parts with package chosen later. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | oscillator smd 4pin handsoldering ic timing package chosen later pins 0mm fordahl seikoepson 0x5 2mm 2x2 | package chosen later | ",
  "class": "ic.timing"
 }

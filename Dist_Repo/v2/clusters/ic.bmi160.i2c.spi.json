@@ -5,30 +5,27 @@
  "category_path": [
   "IC"
  ],
- "description": "IC cluster containing surface-mount (SMD) integrated circuits supporting I2C and SPI interfaces in a BMI160 footprint package.",
+ "description": "1 ic parts for I2C, SPI using BMI160 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select for designs requiring a surface-mount IC with BMI160 footprint.",
-  "Verify interface suitability for I2C or SPI protocols.",
-  "Check tier C rating and digikey-kicad-library source entry."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a BMI160 land pattern is intended."
  ],
  "avoid_when": [
-  "The design requires a package footprint other than BMI160.",
-  "The target circuit does not use surface-mount (SMD) soldering.",
-  "The system relies on communication protocols other than I2C or SPI."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than BMI160."
  ],
  "keywords": [
   "bmi160",
-  "i2c",
-  "spi",
-  "ic",
-  "smd",
-  "digikey-kicad-library",
   "sensors",
   "motion",
   "imus",
   "inertial",
   "measurement",
   "units",
+  "i2c",
+  "spi",
   "dk",
   "imu",
   "accel",
@@ -59,12 +56,12 @@
   "tier_counts": {
    "C": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
   "digikey-kicad-library/dk_Motion-Sensors-IMUs-Inertial-Measurement-Units/BMI160"
  ],
- "embedding_text": "ic.bmi160.i2c.spi | IC | IC cluster containing surface-mount (SMD) integrated circuits supporting I2C and SPI interfaces in a BMI160 footprint package. | bmi160 i2c spi ic smd digikey-kicad-library sensors motion imus inertial measurement units dk imu accel gyro 14lga transducers bosch | BMI160 | I2C SPI",
+ "embedding_text": "ic.bmi160.i2c.spi | IC | 1 ic parts for I2C, SPI using BMI160 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | bmi160 sensors motion imus inertial measurement units i2c spi dk imu accel gyro 14lga transducers bosch | BMI160 | I2C SPI",
  "class": "ic"
 }

@@ -6,37 +6,31 @@
   "Discrete",
   "Transistor"
  ],
- "description": "Discrete transistor cluster containing 10 parts across ST package family footprints with SMD and through-hole mounting options.",
+ "description": "10 discrete transistor parts using ST footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select based on specific footprint requirements such as ST_ACEPACK-2-CIB, ST_DPAK, or ST_PowerFLAT_HV.",
-  "Prefer higher quality tier parts (Tier A) such as A2C25S12M3 or A2C35S12M3.",
-  "Verify compatibility with the required mounting type (SMD or through-hole)."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a ST land pattern is intended."
  ],
  "avoid_when": [
-  "The PCB design requires a package family other than ST.",
-  "Components other than discrete transistors are needed.",
-  "Required footprint is not among the supported ST package family footprints."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than ST."
  ],
  "keywords": [
-  "discrete",
-  "transistor",
   "st",
-  "acepack",
-  "cib",
-  "pressfit",
-  "dpak",
-  "powerflat",
-  "smd",
-  "through_hole",
-  "a2c25s12m3",
-  "a2c35s12m3",
-  "a2c50s65m2",
+  "transistor",
   "module",
   "diode",
+  "discrete",
   "power",
   "rectifier",
+  "acepack",
+  "cib",
   "igbt",
+  "powerflat",
   "hv",
+  "dpak",
   "20khz",
   "phase",
   "freewheeling"
@@ -71,7 +65,7 @@
    "B": 4,
    "C": 3
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -127,6 +121,6 @@
   "dist-legacy/ST_PowerFLAT_HV-5_8x8mm",
   "dist-legacy/ST_PowerFLAT_HV-8_5x6mm"
  ],
- "embedding_text": "discrete-transistor.st | Discrete Transistor | Discrete transistor cluster containing 10 parts across ST package family footprints with SMD and through-hole mounting options. | discrete transistor st acepack cib pressfit dpak powerflat smd through_hole a2c25s12m3 a2c35s12m3 a2c50s65m2 module diode power rectifier igbt hv 20khz phase freewheeling | ST | ",
+ "embedding_text": "discrete-transistor.st | Discrete Transistor | 10 discrete transistor parts using ST footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | st transistor module diode discrete power rectifier acepack cib igbt powerflat hv dpak 20khz phase freewheeling | ST | ",
  "class": "discrete.transistor"
 }

@@ -6,30 +6,21 @@
   "Discrete",
   "FET"
  ],
- "description": "This cluster contains 14 surface-mount discrete FET components rated at 60V utilizing the LFPAK33 package family.",
+ "description": "14 discrete fet parts for 60V using LFPAK33 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select for 60V surface-mount discrete FET applications requiring an LFPAK33 footprint.",
-  "Choose when selecting among Tier A KiCad symbols like BUK7M series parts.",
-  "Use when land pattern requirements strictly match LFPAK33 packaging."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a LFPAK33 land pattern is intended."
  ],
  "avoid_when": [
-  "Avoid when the circuit requires voltage ratings other than 60V.",
-  "Do not use if the board layout requires a package family other than LFPAK33.",
-  "Avoid when through-hole mounting is required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than LFPAK33."
  ],
  "keywords": [
-  "discrete",
+  "lfpak33",
   "fet",
   "60v",
-  "lfpak33",
-  "smd",
-  "discrete fet",
-  "60v fet",
-  "buk7m12-60ex",
-  "buk7m15-60ex",
-  "buk7m19-60ex",
-  "buk7m33-60ex",
-  "buk7m42-60ex",
   "mosfet",
   "60ex",
   "transistor",
@@ -41,7 +32,8 @@
   "qqd",
   "to",
   "sot",
-  "power"
+  "power",
+  "mos"
  ],
  "facts": {
   "package_family": "LFPAK33",
@@ -64,7 +56,7 @@
   "tier_counts": {
    "A": 14
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -124,6 +116,6 @@
   "kicad-symbols/Transistor_FET/BUK9M53-60EX",
   "kicad-symbols/Transistor_FET/BUK9M85-60EX"
  ],
- "embedding_text": "discrete-fet.lfpak33.60v | Discrete FET | This cluster contains 14 surface-mount discrete FET components rated at 60V utilizing the LFPAK33 package family. | discrete fet 60v lfpak33 smd discrete fet 60v fet buk7m12-60ex buk7m15-60ex buk7m19-60ex buk7m33-60ex buk7m42-60ex mosfet 60ex transistor id vds channel trenchmos ron qqd to sot power | LFPAK33 | 60V",
+ "embedding_text": "discrete-fet.lfpak33.60v | Discrete FET | 14 discrete fet parts for 60V using LFPAK33 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | lfpak33 fet 60v mosfet 60ex transistor id vds channel trenchmos ron qqd to sot power mos | LFPAK33 | 60V",
  "class": "discrete.fet"
 }

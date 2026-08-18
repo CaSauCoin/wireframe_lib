@@ -5,28 +5,20 @@
  "category_path": [
   "IC"
  ],
- "description": "Integrated circuit component cluster containing 1 tier C part associated with the CON7 package family and CON7_1 footprint.",
+ "description": "1 ic parts using CON7 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Verify compatibility with the CON7_1 footprint.",
-  "Confirm mounting type given the unknown mount classification.",
-  "Evaluate suitability considering tier C quality status."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a CON7 land pattern is intended."
  ],
  "avoid_when": [
-  "The design requires a package family other than CON7.",
-  "The PCB layout requires a footprint other than CON7_1.",
-  "A higher quality tier or planner-visible part is required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than CON7."
  ],
  "keywords": [
-  "ic",
   "con7",
-  "con7_1",
-  "con7 footprint",
-  "package family con7",
-  "integrated circuit",
-  "tier c",
-  "dist-legacy",
-  "unknown mount",
-  "ic con7",
+  "ic",
   "pad",
   "mm",
   "pitch",
@@ -51,12 +43,12 @@
   "tier_counts": {
    "C": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
   "dist-legacy/CON7_1"
  ],
- "embedding_text": "ic.con7 | IC | Integrated circuit component cluster containing 1 tier C part associated with the CON7 package family and CON7_1 footprint. | ic con7 con7_1 con7 footprint package family con7 integrated circuit tier c dist-legacy unknown mount ic con7 pad mm pitch pins | CON7 | ",
+ "embedding_text": "ic.con7 | IC | 1 ic parts using CON7 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | con7 ic pad mm pitch pins | CON7 | ",
  "class": "ic"
 }

@@ -6,31 +6,25 @@
   "IC",
   "Driver"
  ],
- "description": "Surface-mount driver IC cluster in SOIC packaging featuring an 85V rating and SOIC-8 footprint.",
+ "description": "1 ic driver parts for 85V using SOIC footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Use when requiring an SMD driver IC in a SOIC package rated for 85V.",
-  "Verify compatibility with the SOIC-8 (3.9x4.9mm, 1.27mm pitch) footprint.",
-  "Select when a tier A KiCad driver symbol such as MIC4604YM is needed."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SOIC land pattern is intended."
  ],
  "avoid_when": [
-  "Through-hole (THD) mounting is required instead of SMD.",
-  "The circuit requires a voltage rating other than 85V.",
-  "The PCB layout calls for a footprint other than SOIC-8."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SOIC."
  ],
  "keywords": [
-  "ic driver",
-  "driver ic",
-  "soic",
-  "soic-8",
-  "85v",
-  "smd",
-  "surface mount",
-  "mic4604ym",
-  "kicad",
   "driver",
+  "soic",
+  "85v",
   "half",
   "bridge",
   "gate",
+  "mic4604ym",
   "fet",
   "mosfet",
   "with",
@@ -62,7 +56,7 @@
   "tier_counts": {
    "A": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -77,6 +71,6 @@
  "part_ids": [
   "kicad-symbols/Driver_FET/MIC4604YM"
  ],
- "embedding_text": "ic-driver.soic.85v | IC Driver | Surface-mount driver IC cluster in SOIC packaging featuring an 85V rating and SOIC-8 footprint. | ic driver driver ic soic soic-8 85v smd surface mount mic4604ym kicad driver half bridge gate fet mosfet with up to 16v programmable drive 9x4 | SOIC | 85V",
+ "embedding_text": "ic-driver.soic.85v | IC Driver | 1 ic driver parts for 85V using SOIC footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | driver soic 85v half bridge gate mic4604ym fet mosfet with up to 16v programmable drive 9x4 | SOIC | 85V",
  "class": "ic.driver"
 }

@@ -6,33 +6,22 @@
   "Discrete",
   "FET"
  ],
- "description": "Discrete surface-mount FET cluster rated for 75V applications using DirectFET package footprints such as DirectFET_ST, DirectFET_L8, and DirectFET_ME.",
+ "description": "3 discrete fet parts for 75V using DirectFET footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select according to the required DirectFET footprint package, including DirectFET_ST, DirectFET_L8, and DirectFET_ME.",
-  "Choose for surface-mount discrete FET applications with a 75V rating.",
-  "Select tier A parts including BSF450NE7NH3, IRF7759L2, or IRF7780M."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a DirectFET land pattern is intended."
  ],
  "avoid_when": [
-  "Do not use if the design requires non-DirectFET packages or through-hole mounting.",
-  "Avoid when the application requires voltage ratings other than 75V.",
-  "Avoid if components outside the discrete FET classification are needed."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than DirectFET."
  ],
  "keywords": [
-  "discrete",
+  "directfet",
+  "mosfet",
   "fet",
   "75v",
-  "directfet",
-  "smd",
-  "directfet_st",
-  "directfet_l8",
-  "directfet_me",
-  "bsf450ne7nh3",
-  "irf7759l2",
-  "irf7780m",
-  "kicad-symbols",
-  "discrete.fet",
-  "discrete fet",
-  "mosfet",
   "channel",
   "transistor",
   "id",
@@ -40,8 +29,11 @@
   "rds",
   "st",
   "infineon",
+  "discrete",
   "l8",
-  "me"
+  "me",
+  "bsf450ne7nh3",
+  "15a"
  ],
  "facts": {
   "package_family": "DirectFET",
@@ -66,7 +58,7 @@
   "tier_counts": {
    "A": 3
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -99,6 +91,6 @@
   "kicad-symbols/Transistor_FET/IRF7759L2",
   "kicad-symbols/Transistor_FET/IRF7780M"
  ],
- "embedding_text": "discrete-fet.directfet.75v | Discrete FET | Discrete surface-mount FET cluster rated for 75V applications using DirectFET package footprints such as DirectFET_ST, DirectFET_L8, and DirectFET_ME. | discrete fet 75v directfet smd directfet_st directfet_l8 directfet_me bsf450ne7nh3 irf7759l2 irf7780m kicad-symbols discrete.fet discrete fet mosfet channel transistor id vds rds st infineon l8 me | DirectFET | 75V",
+ "embedding_text": "discrete-fet.directfet.75v | Discrete FET | 3 discrete fet parts for 75V using DirectFET footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | directfet mosfet fet 75v channel transistor id vds rds st infineon discrete l8 me bsf450ne7nh3 15a | DirectFET | 75V",
  "class": "discrete.fet"
 }

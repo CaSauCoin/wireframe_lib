@@ -5,32 +5,21 @@
  "category_path": [
   "IC"
  ],
- "description": "IC component cluster with 43 parts in the Mini package family, supporting surface-mount and unknown mounting styles across KiCad and legacy library sources.",
+ "description": "43 ic parts using Mini footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select tier B parts (such as LAT-3, RMK-3-451, or SYPD-1) over tier C parts for higher quality ratings.",
-  "Verify footprint requirements against available land patterns such as Mini-Circuits_TT1224 or TTT167.",
-  "Confirm mounting type suitability when choosing between surface-mount and unknown mount parts."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a Mini land pattern is intended."
  ],
  "avoid_when": [
-  "The PCB design requires through-hole mounting rather than surface-mount.",
-  "The target footprint is not one of the Mini land patterns in this cluster.",
-  "Only tier A validated parts are acceptable for the design."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than Mini."
  ],
  "keywords": [
-  "ic",
   "mini",
-  "smd",
-  "lat-3",
-  "rmk-3-451",
-  "rmk-5-51",
-  "sypd-1",
-  "sypd-2",
-  "mini-circuits",
-  "tt1224",
-  "ttt167",
-  "mmm168",
-  "kicad-symbols",
   "circuits",
+  "ic",
   "landpatternpl",
   "case",
   "pl",
@@ -40,7 +29,10 @@
   "pdf",
   "pad",
   "mm",
-  "pitch"
+  "pitch",
+  "pins",
+  "ww2",
+  "surface"
  ],
  "facts": {
   "package_family": "Mini",
@@ -76,7 +68,7 @@
    "B": 12,
    "C": 31
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -165,6 +157,6 @@
   "dist-legacy/Mini-Circuits_TTT167",
   "dist-legacy/Mini-Circuits_YY161"
  ],
- "embedding_text": "ic.mini | IC | IC component cluster with 43 parts in the Mini package family, supporting surface-mount and unknown mounting styles across KiCad and legacy library sources. | ic mini smd lat-3 rmk-3-451 rmk-5-51 sypd-1 sypd-2 mini-circuits tt1224 ttt167 mmm168 kicad-symbols circuits landpatternpl case pl minicircuits https com pdf pad mm pitch | Mini | ",
+ "embedding_text": "ic.mini | IC | 43 ic parts using Mini footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | mini circuits ic landpatternpl case pl minicircuits https com pdf pad mm pitch pins ww2 surface | Mini | ",
  "class": "ic"
 }

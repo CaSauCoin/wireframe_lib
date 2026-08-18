@@ -6,28 +6,22 @@
   "Passive",
   "Inductor"
  ],
- "description": "Generic 12V passive inductor cluster containing one legacy part that requires package and footprint selection before board layout.",
+ "description": "1 passive inductor parts for 12V with package chosen later. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Assign an explicit package and footprint before PCB layout.",
-  "Verify part parameters against the 12V facet and circuit requirements.",
-  "Review quality tier G and source data prior to finalizing selection."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Select a footprint/package explicitly before placement."
  ],
  "avoid_when": [
-  "A defined package family or verified footprint is required upfront.",
-  "Operating requirements differ from 12V.",
-  "Designs mandate complete mounting specifications and higher quality tiers."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review."
  ],
  "keywords": [
-  "passive",
-  "inductor",
   "12v",
   "transformer",
   "6va",
-  "transformer 12v-6va",
-  "dist-legacy",
-  "package chosen later",
-  "generic",
-  "passive.inductor",
+  "passive",
+  "inductor",
   "pins",
   "package",
   "chosen",
@@ -50,7 +44,7 @@
   "tier_counts": {
    "G": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -65,6 +59,6 @@
  "part_ids": [
   "dist-legacy/Transformer 12V-6VA"
  ],
- "embedding_text": "passive-inductor.generic.12v | Passive Inductor | Generic 12V passive inductor cluster containing one legacy part that requires package and footprint selection before board layout. | passive inductor 12v transformer 6va transformer 12v-6va dist-legacy package chosen later generic passive.inductor pins package chosen later | package chosen later | 12V",
+ "embedding_text": "passive-inductor.generic.12v | Passive Inductor | 1 passive inductor parts for 12V with package chosen later. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | 12v transformer 6va passive inductor pins package chosen later | package chosen later | 12V",
  "class": "passive.inductor"
 }

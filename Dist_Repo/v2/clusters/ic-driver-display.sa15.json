@@ -7,30 +7,20 @@
   "Driver",
   "Display"
  ],
- "description": "Display character driver IC cluster containing 3 through-hole parts in the SA15 package family with SA15-11xxx footprints.",
+ "description": "3 ic driver display parts using SA15 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Requires through-hole mounting with SA15-11xxx footprints.",
-  "Select from available variants SA15-11EWA, SA15-11GWA, or SA15-11SRWA.",
-  "Verify part suitability for SA15 package family designs."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SA15 land pattern is intended."
  ],
  "avoid_when": [
-  "Surface-mount assembly is required.",
-  "The PCB design requires footprints other than SA15-11xxx.",
-  "Components outside the SA15 package family are needed."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SA15."
  ],
  "keywords": [
-  "ic",
-  "driver",
   "display",
   "sa15",
-  "sa15-11xxx",
-  "through_hole",
-  "through hole",
-  "display_character",
-  "sa15-11ewa",
-  "sa15-11gwa",
-  "sa15-11srwa",
-  "kicad-symbols",
   "single",
   "digit",
   "white",
@@ -42,7 +32,9 @@
   "diffused",
   "lens",
   "common",
-  "anode"
+  "anode",
+  "1mm",
+  "5inch"
  ],
  "facts": {
   "package_family": "SA15",
@@ -63,7 +55,7 @@
   "tier_counts": {
    "B": 3
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -96,6 +88,6 @@
   "kicad-symbols/Display_Character/SA15-11GWA",
   "kicad-symbols/Display_Character/SA15-11SRWA"
  ],
- "embedding_text": "ic-driver-display.sa15 | IC Driver Display | Display character driver IC cluster containing 3 through-hole parts in the SA15 package family with SA15-11xxx footprints. | ic driver display sa15 sa15-11xxx through_hole through hole display_character sa15-11ewa sa15-11gwa sa15-11srwa kicad-symbols single digit white 11xxx segment character numeric with diffused lens common anode | SA15 | ",
+ "embedding_text": "ic-driver-display.sa15 | IC Driver Display | 3 ic driver display parts using SA15 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | display sa15 single digit white 11xxx segment character numeric with diffused lens common anode 1mm 5inch | SA15 | ",
  "class": "ic.driver.display"
 }

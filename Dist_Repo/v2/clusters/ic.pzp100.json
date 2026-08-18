@@ -5,29 +5,20 @@
  "category_path": [
   "IC"
  ],
- "description": "Integrated circuit cluster of 3 tier-C parts matching the PZP100 package family across PZP100_L, PZP100_M, and PZP100_N footprints.",
+ "description": "3 ic parts using PZP100 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Verify exact footprint variant among PZP100_L, PZP100_M, and PZP100_N.",
-  "Check part specifications as all entries belong to quality tier C.",
-  "Confirm mounting and pin details as mount type is unspecified."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a PZP100 land pattern is intended."
  ],
  "avoid_when": [
-  "The board layout requires a package family other than PZP100.",
-  "Parts with tier A or B quality reviews are required.",
-  "Planner-visible parts are needed for automated selection."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than PZP100."
  ],
  "keywords": [
   "pzp100",
   "ic",
-  "integrated circuit",
-  "pzp100_l",
-  "pzp100_m",
-  "pzp100_n",
-  "pzp100 package",
-  "pzp100 footprint",
-  "tier c",
-  "dist-legacy",
-  "ic cluster",
   "pad",
   "mm",
   "pitch",
@@ -54,7 +45,7 @@
   "tier_counts": {
    "C": 3
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
@@ -62,6 +53,6 @@
   "dist-legacy/PZP100_M",
   "dist-legacy/PZP100_N"
  ],
- "embedding_text": "ic.pzp100 | IC | Integrated circuit cluster of 3 tier-C parts matching the PZP100 package family across PZP100_L, PZP100_M, and PZP100_N footprints. | pzp100 ic integrated circuit pzp100_l pzp100_m pzp100_n pzp100 package pzp100 footprint tier c dist-legacy ic cluster pad mm pitch pins | PZP100 | ",
+ "embedding_text": "ic.pzp100 | IC | 3 ic parts using PZP100 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | pzp100 ic pad mm pitch pins | PZP100 | ",
  "class": "ic"
 }

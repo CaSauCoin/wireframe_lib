@@ -6,32 +6,22 @@
   "IC",
   "Analog"
  ],
- "description": "A collection of 6 tier A surface-mount 3V analog IC parts using MSOP-8 3x3mm 0.65mm pitch footprints.",
+ "description": "6 ic analog parts for 3V using MSOP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when requiring surface-mount 3V analog ICs in MSOP-8 packages.",
-  "Choose between specific part numbers such as DG417LEUA, DG418LEUA, or DG419LEUA.",
-  "Verify compatibility with the MSOP-8_3x3mm_P0.65mm footprint."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a MSOP land pattern is intended."
  ],
  "avoid_when": [
-  "The application requires non-SMD mounting or packages other than MSOP-8.",
-  "The design requires operating voltages or functions outside 3V analog IC specifications.",
-  "Parts other than the DG417LEUA, DG418LEUA, or DG419LEUA series are required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than MSOP."
  ],
  "keywords": [
-  "ic",
   "analog",
-  "analog switch",
-  "3v",
   "msop",
-  "msop-8",
-  "msop-8_3x3mm_p0.65mm",
-  "smd",
-  "dg417leua",
-  "dg418leua",
-  "dg419leua",
-  "maxim",
-  "kicad-symbols",
   "switch",
+  "3v",
   "cmos",
   "single",
   "logic",
@@ -41,7 +31,9 @@
   "3x3mm",
   "p0",
   "65mm",
-  "so"
+  "so",
+  "ic",
+  "maxim"
  ],
  "facts": {
   "package_family": "MSOP",
@@ -64,7 +56,7 @@
   "tier_counts": {
    "A": 6
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -116,6 +108,6 @@
   "kicad-symbols/Analog_Switch/DG418LEUA_Maxim",
   "kicad-symbols/Analog_Switch/DG419LEUA_Maxim"
  ],
- "embedding_text": "ic-analog.msop.3v | IC Analog | A collection of 6 tier A surface-mount 3V analog IC parts using MSOP-8 3x3mm 0.65mm pitch footprints. | ic analog analog switch 3v msop msop-8 msop-8_3x3mm_p0.65mm smd dg417leua dg418leua dg419leua maxim kicad-symbols switch cmos single logic compatible ron vlogic 3x3mm p0 65mm so | MSOP | 3V",
+ "embedding_text": "ic-analog.msop.3v | IC Analog | 6 ic analog parts for 3V using MSOP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | analog msop switch 3v cmos single logic compatible ron vlogic 3x3mm p0 65mm so ic maxim | MSOP | 3V",
  "class": "ic.analog"
 }

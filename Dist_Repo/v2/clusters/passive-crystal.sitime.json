@@ -6,30 +6,21 @@
   "Passive",
   "Crystal / Resonator"
  ],
- "description": "Surface-mount crystal and resonator components in the SiTIME package family using the SiTIME_SMD-6-1EP footprint.",
+ "description": "1 passive crystal / resonator parts using SiTIME footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select for designs requiring surface-mount components with a SiTIME_SMD-6-1EP footprint.",
-  "Verify part specifications and quality tier ratings from the digikey-kicad-library source.",
-  "Confirm footprint compatibility with SiTIME package family requirements."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SiTIME land pattern is intended."
  ],
  "avoid_when": [
-  "Through-hole mounting or non-SMD assembly is required.",
-  "The board layout requires a footprint other than SiTIME_SMD-6-1EP.",
-  "A package family other than SiTIME is needed."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SiTIME."
  ],
  "keywords": [
-  "passive",
-  "crystal",
-  "resonator",
-  "passive crystal",
-  "crystal resonator",
+  "oscillators",
   "sitime",
   "smd",
-  "surface mount",
-  "sitime_smd-6-1ep",
-  "sit9102ai-243n25e200_00000y_nrnd",
-  "oscillators",
-  "digikey-kicad-library",
   "sit9102ai",
   "243n25e200",
   "00000y",
@@ -41,7 +32,8 @@
   "0000mhz",
   "lvds",
   "1ep",
-  "crystals"
+  "crystals",
+  "resonators"
  ],
  "facts": {
   "package_family": "SiTIME",
@@ -62,7 +54,7 @@
   "tier_counts": {
    "B": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -77,6 +69,6 @@
  "part_ids": [
   "digikey-kicad-library/dk_Oscillators/SIT9102AI-243N25E200_00000Y_NRND"
  ],
- "embedding_text": "passive-crystal.sitime | Passive Crystal / Resonator | Surface-mount crystal and resonator components in the SiTIME package family using the SiTIME_SMD-6-1EP footprint. | passive crystal resonator passive crystal crystal resonator sitime smd surface mount sitime_smd-6-1ep sit9102ai-243n25e200_00000y_nrnd oscillators digikey-kicad-library sit9102ai 243n25e200 00000y nrnd dk mems osc xo 0000mhz lvds 1ep crystals | SiTIME | ",
+ "embedding_text": "passive-crystal.sitime | Passive Crystal / Resonator | 1 passive crystal / resonator parts using SiTIME footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | oscillators sitime smd sit9102ai 243n25e200 00000y nrnd dk mems osc xo 0000mhz lvds 1ep crystals resonators | SiTIME | ",
  "class": "passive.crystal"
 }

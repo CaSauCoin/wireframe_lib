@@ -6,42 +6,34 @@
   "IC",
   "Interface"
  ],
- "description": "Surface-mount I2C interface IC components in SOIC package variants from 8 to 28 pins with 1.27mm pitch.",
+ "description": "12 ic interface parts for I2C using SOIC footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select for surface-mount I2C interface IC requirements.",
-  "Match the required pin count from available 8, 16, 18, 20, 24, or 28-pin SOIC footprints.",
-  "Verify specific SOIC footprint body width and pitch compatibility."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SOIC land pattern is intended."
  ],
  "avoid_when": [
-  "Designs requiring through-hole mounting instead of surface-mount SOIC.",
-  "Applications requiring interfaces or protocols other than I2C.",
-  "Layouts specifying packages other than SOIC or pin counts outside 8 to 28."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SOIC."
  ],
  "keywords": [
-  "ic",
-  "interface",
-  "i2c",
   "soic",
-  "smd",
-  "surface mount",
-  "soic-8",
-  "soic-16",
-  "soic-18w",
-  "soic-20w",
-  "soic-24w",
-  "soic-28w",
-  "1.27mm pitch",
-  "mcp23008",
-  "mcp23017",
-  "pca9536",
-  "pca9539",
+  "i2c",
+  "interface",
   "so",
   "expander",
   "expansion",
   "p1",
   "27mm",
+  "ic",
   "bit",
-  "port"
+  "port",
+  "with",
+  "interrupt",
+  "reset",
+  "smbus",
+  "channel"
  ],
  "facts": {
   "package_family": "SOIC",
@@ -70,7 +62,7 @@
   "tier_counts": {
    "A": 12
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -128,6 +120,6 @@
   "kicad-symbols/Interface_Expansion/TCA9546AD",
   "kicad-symbols/Interface_Expansion/TCA9554DW"
  ],
- "embedding_text": "ic-interface.soic.i2c | IC Interface | Surface-mount I2C interface IC components in SOIC package variants from 8 to 28 pins with 1.27mm pitch. | ic interface i2c soic smd surface mount soic-8 soic-16 soic-18w soic-20w soic-24w soic-28w 1.27mm pitch mcp23008 mcp23017 pca9536 pca9539 so expander expansion p1 27mm bit port | SOIC | I2C",
+ "embedding_text": "ic-interface.soic.i2c | IC Interface | 12 ic interface parts for I2C using SOIC footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | soic i2c interface so expander expansion p1 27mm ic bit port with interrupt reset smbus channel | SOIC | I2C",
  "class": "ic.interface"
 }

@@ -6,42 +6,34 @@
   "Discrete",
   "FET"
  ],
- "description": "This cluster contains 21 surface-mount (SMD) discrete FET components rated for 60V in SOT-23 footprints from KiCad symbols.",
+ "description": "21 discrete fet parts for 60V using SOT-23 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Choose for surface-mount designs requiring a 60V discrete FET in a SOT-23 footprint.",
-  "Select tier A entries from KiCad symbols such as 2N7002 variants or BS170F.",
-  "Use when looking for representative parts like 2N7002, 2N7002E, 2N7002H, 2N7002K, or BS170F."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SOT-23 land pattern is intended."
  ],
  "avoid_when": [
-  "Avoid when the design requires a footprint or package family other than SOT-23.",
-  "Avoid when through-hole mounting is required instead of SMD.",
-  "Avoid when a voltage rating other than 60V is specified."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SOT-23."
  ],
  "keywords": [
-  "discrete",
+  "sot",
   "fet",
   "60v",
-  "sot-23",
-  "sot23",
-  "smd",
-  "2n7002",
-  "2n7002e",
-  "2n7002h",
-  "2n7002k",
-  "bs170f",
-  "discrete.fet",
-  "kicad-symbols",
-  "transistor_fet",
-  "sot",
   "channel",
   "mosfet",
   "transistor",
   "id",
   "vds",
   "to",
+  "smd",
+  "discrete",
   "21a",
   "15a",
-  "2a"
+  "2a",
+  "switching",
+  "5a"
  ],
  "facts": {
   "package_family": "SOT-23",
@@ -64,7 +56,7 @@
   "tier_counts": {
    "A": 21
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -131,6 +123,6 @@
   "kicad-symbols/Transistor_FET/ZVN4106F",
   "kicad-symbols/Transistor_FET/ZXMN6A07F"
  ],
- "embedding_text": "discrete-fet.sot-23.60v | Discrete FET | This cluster contains 21 surface-mount (SMD) discrete FET components rated for 60V in SOT-23 footprints from KiCad symbols. | discrete fet 60v sot-23 sot23 smd 2n7002 2n7002e 2n7002h 2n7002k bs170f discrete.fet kicad-symbols transistor_fet sot channel mosfet transistor id vds to 21a 15a 2a | SOT-23 | 60V",
+ "embedding_text": "discrete-fet.sot-23.60v | Discrete FET | 21 discrete fet parts for 60V using SOT-23 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | sot fet 60v channel mosfet transistor id vds to smd discrete 21a 15a 2a switching 5a | SOT-23 | 60V",
  "class": "discrete.fet"
 }

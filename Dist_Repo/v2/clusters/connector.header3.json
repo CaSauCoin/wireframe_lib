@@ -5,31 +5,20 @@
  "category_path": [
   "Connector"
  ],
- "description": "Header3-class connector cluster containing a single generated, tier C part with the Header3 footprint sourced from dist-legacy; mount type is unspecified and the entry is not planner-visible.",
+ "description": "1 connector parts using Header3 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Only one part on record, from the dist-legacy source.",
-  "Confirm the Header3 footprint matches your board exactly before use.",
-  "Entry is unreviewed (review_status: generated) — verify pin mapping manually."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a Header3 land pattern is intended."
  ],
  "avoid_when": [
-  "Mount type (THT/SMD) must be confirmed in advance — this entry's mount is unknown.",
-  "A reviewed or higher-tier (A/B) part is required.",
-  "Planner-visible parts are required (planner_visible_count is 0 here).",
-  "The layout needs a footprint other than Header3."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than Header3."
  ],
  "keywords": [
   "header3",
   "connector",
-  "header",
-  "3-pin",
-  "pin header",
-  "dist-legacy",
-  "tier c",
-  "generated",
-  "unreviewed",
-  "unknown mount",
-  "footprint",
-  "single part",
   "pad",
   "mm",
   "pitch",
@@ -54,12 +43,12 @@
   "tier_counts": {
    "C": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
   "dist-legacy/Header3"
  ],
- "embedding_text": "connector.header3 | Connector | Header3-class connector cluster containing a single generated, tier C part with the Header3 footprint sourced from dist-legacy; mount type is unspecified and the entry is not planner-visible. | header3 connector header 3-pin pin header dist-legacy tier c generated unreviewed unknown mount footprint single part pad mm pitch pins | Header3 | ",
+ "embedding_text": "connector.header3 | Connector | 1 connector parts using Header3 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | header3 connector pad mm pitch pins | Header3 | ",
  "class": "connector"
 }

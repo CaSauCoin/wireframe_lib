@@ -6,28 +6,19 @@
   "IC",
   "Power"
  ],
- "description": "Power IC cluster featuring 7.2V rating and surface-mount TSSOP packaging, containing Tier A parts with TSSOP-8_4.4x3mm_P0.65mm footprints.",
+ "description": "2 ic power parts for 7.2V using TSSOP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when requiring a surface-mount power IC in a TSSOP package.",
-  "Verify compatibility with the TSSOP-8_4.4x3mm_P0.65mm footprint.",
-  "Choose for 7.2V rated power IC applications using Tier A symbols."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a TSSOP land pattern is intended."
  ],
  "avoid_when": [
-  "Avoid if the design requires a package family other than TSSOP.",
-  "Avoid when the layout requires a footprint other than TSSOP-8_4.4x3mm_P0.65mm.",
-  "Avoid if operating parameters differ from the 7.2V power IC classification."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than TSSOP."
  ],
  "keywords": [
-  "ic power",
-  "power ic",
   "tssop",
-  "7.2v",
-  "smd",
-  "tssop-8_4.4x3mm_p0.65mm",
-  "ucc3800",
-  "ucc3813-0",
-  "kicad-symbols",
-  "regulator controller",
   "controller",
   "power",
   "pwm",
@@ -41,7 +32,8 @@
   "cycle",
   "9v",
   "uvlo",
-  "dip"
+  "dip",
+  "soic"
  ],
  "facts": {
   "package_family": "TSSOP",
@@ -64,7 +56,7 @@
   "tier_counts": {
    "A": 2
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -88,6 +80,6 @@
   "kicad-symbols/Regulator_Controller/UCC3800",
   "kicad-symbols/Regulator_Controller/UCC3813-0"
  ],
- "embedding_text": "ic-power.tssop.7-2v | IC Power | Power IC cluster featuring 7.2V rating and surface-mount TSSOP packaging, containing Tier A parts with TSSOP-8_4.4x3mm_P0.65mm footprints. | ic power power ic tssop 7.2v smd tssop-8_4.4x3mm_p0.65mm ucc3800 ucc3813-0 kicad-symbols regulator controller controller power pwm 2v regulator low bicmos current mode duty cycle 9v uvlo dip | TSSOP | 7.2V",
+ "embedding_text": "ic-power.tssop.7-2v | IC Power | 2 ic power parts for 7.2V using TSSOP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | tssop controller power pwm 2v regulator low bicmos current mode duty cycle 9v uvlo dip soic | TSSOP | 7.2V",
  "class": "ic.power"
 }

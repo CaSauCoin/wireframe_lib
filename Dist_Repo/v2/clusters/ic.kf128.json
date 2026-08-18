@@ -5,28 +5,21 @@
  "category_path": [
   "IC"
  ],
- "description": "IC cluster with one tier C part using the KF128 package family and KF128-3p footprint.",
+ "description": "1 ic parts using KF128 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Verify footprint compatibility with KF128-3p land patterns.",
-  "Check pin-to-pad mapping and package dimensions before committing to layout.",
-  "Select when a KF128 package family entry is needed."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a KF128 land pattern is intended."
  ],
  "avoid_when": [
-  "The board layout requires a footprint other than KF128-3p.",
-  "Higher quality tier parts with full datasheet verification are required.",
-  "Electrical ratings or physical specifications are unconfirmed."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than KF128."
  ],
  "keywords": [
   "kf128",
-  "kf128-3p",
-  "ic",
-  "kf128 footprint",
-  "kf128 package",
   "3p",
-  "tier c",
-  "dist-legacy",
-  "ic kf128",
-  "kf128-3p footprint",
+  "ic",
   "pad",
   "mm",
   "pitch",
@@ -51,12 +44,12 @@
   "tier_counts": {
    "C": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
   "dist-legacy/KF128-3p"
  ],
- "embedding_text": "ic.kf128 | IC | IC cluster with one tier C part using the KF128 package family and KF128-3p footprint. | kf128 kf128-3p ic kf128 footprint kf128 package 3p tier c dist-legacy ic kf128 kf128-3p footprint pad mm pitch pins | KF128 | ",
+ "embedding_text": "ic.kf128 | IC | 1 ic parts using KF128 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | kf128 3p ic pad mm pitch pins | KF128 | ",
  "class": "ic"
 }

@@ -6,33 +6,26 @@
   "IC",
   "Sensor"
  ],
- "description": "IC sensor cluster containing 1 part in the SHT1x package family for surface-mount (SMD) designs sourced from KiCad symbols.",
+ "description": "1 ic sensor parts using SHT1x footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Use when designing with an IC sensor requiring an SHT1x footprint.",
-  "Confirm compatibility with surface-mount (SMD) assembly processes.",
-  "Review tier C entry details and footprint pin mappings before placement."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SHT1x land pattern is intended."
  ],
  "avoid_when": [
-  "The layout requires a footprint or package family other than SHT1x.",
-  "Through-hole or non-SMD mounting is required.",
-  "Tier C generated library data does not meet project verification standards."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SHT1x."
  ],
  "keywords": [
-  "ic",
-  "sensor",
-  "ic sensor",
   "sht1x",
-  "sht1x footprint",
-  "sht1x package",
-  "smd",
-  "surface mount",
-  "kicad",
-  "kicad symbols",
+  "sensor",
   "temperature",
   "humidity",
   "and",
   "module",
-  "digital"
+  "digital",
+  "ic"
  ],
  "facts": {
   "package_family": "SHT1x",
@@ -53,12 +46,12 @@
   "tier_counts": {
    "C": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
   "kicad-symbols/Sensor/SHT1x"
  ],
- "embedding_text": "ic-sensor.sht1x | IC Sensor | IC sensor cluster containing 1 part in the SHT1x package family for surface-mount (SMD) designs sourced from KiCad symbols. | ic sensor ic sensor sht1x sht1x footprint sht1x package smd surface mount kicad kicad symbols temperature humidity and module digital | SHT1x | ",
+ "embedding_text": "ic-sensor.sht1x | IC Sensor | 1 ic sensor parts using SHT1x footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | sht1x sensor temperature humidity and module digital ic | SHT1x | ",
  "class": "ic.sensor"
 }

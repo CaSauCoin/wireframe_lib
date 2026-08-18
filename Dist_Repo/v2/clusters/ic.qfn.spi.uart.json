@@ -5,34 +5,25 @@
  "category_path": [
   "IC"
  ],
- "description": "Surface-mount IC cluster featuring SPI and UART/serial interfaces in QFN package footprints including QFN50_32T, QFN50_44T, and QFN50_64T.",
+ "description": "5 ic parts for SPI, UART/serial using QFN footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Match required QFN pin count and footprint variant (QFN50_32T, QFN50_44T, or QFN50_64T).",
-  "Select when both SPI and UART/serial interface capabilities are needed.",
-  "Verify SMD mounting compatibility for the intended layout."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a QFN land pattern is intended."
  ],
  "avoid_when": [
-  "The PCB design requires packages other than QFN.",
-  "SPI or UART/serial interface connectivity is not required.",
-  "Surface-mount (SMD) assembly is not supported."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than QFN."
  ],
  "keywords": [
-  "ic",
-  "qfn",
   "spi",
   "uart",
-  "serial",
-  "smd",
-  "qfn50_32t",
-  "qfn50_44t",
-  "qfn50_64t",
-  "atmega162v",
-  "atmega324a",
-  "atmega64a",
-  "esp8285h16",
-  "esp8285n08",
+  "qfn",
   "microcontroller",
+  "ic",
   "qfn44",
+  "serial",
   "qfn32",
   "with",
   "and",
@@ -40,7 +31,8 @@
   "package",
   "qfn50",
   "mcu",
-  "gpio"
+  "gpio",
+  "bit"
  ],
  "facts": {
   "package_family": "QFN",
@@ -66,7 +58,7 @@
   "tier_counts": {
    "B": 5
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -117,6 +109,6 @@
   "chilaboard-altium-library/ESP8285H16_QFN32/ESP8285H16_QFN32",
   "chilaboard-altium-library/ESP8285N08_QFN32/ESP8285N08_QFN32"
  ],
- "embedding_text": "ic.qfn.spi.uart | IC | Surface-mount IC cluster featuring SPI and UART/serial interfaces in QFN package footprints including QFN50_32T, QFN50_44T, and QFN50_64T. | ic qfn spi uart serial smd qfn50_32t qfn50_44t qfn50_64t atmega162v atmega324a atmega64a esp8285h16 esp8285n08 microcontroller qfn44 qfn32 with and in package qfn50 mcu gpio | QFN | SPI UART/serial",
+ "embedding_text": "ic.qfn.spi.uart | IC | 5 ic parts for SPI, UART/serial using QFN footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | spi uart qfn microcontroller ic qfn44 serial qfn32 with and in package qfn50 mcu gpio bit | QFN | SPI UART/serial",
  "class": "ic"
 }

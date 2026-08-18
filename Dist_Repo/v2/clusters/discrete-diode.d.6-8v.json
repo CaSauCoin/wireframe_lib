@@ -6,44 +6,34 @@
   "Discrete",
   "Diode"
  ],
- "description": "Cluster of 114 discrete D-package diodes near 6.8V, mixing zener types (e.g. BZV55B6V8, DZ2S068X0L) and TVS types (e.g. 1.5KE6.8A/CA), across SMD and through-hole footprints (MiniMELF, MELF, SOD-123/323/523, SMA, SMB, DO-41, DO-35, DO-201).",
+ "description": "114 discrete diode parts for 6.8V using D footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Confirm whether zener or TVS diode behavior is needed before picking a part, since both types are present.",
-  "Match the exact footprint (e.g. SOD-123, SMB, MiniMELF, DO-41) to the intended land pattern.",
-  "Prefer tier A entries (108 of 114) over tier B for a validated symbol-footprint pairing.",
-  "Check source library (Alternate-KiCad-Library vs kicad-symbols) for provenance."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a D land pattern is intended."
  ],
  "avoid_when": [
-  "The design needs a package outside the listed D-family footprints.",
-  "It is unclear whether a zener or a TVS diode is required for the application.",
-  "The part is tier B or its symbol-footprint pairing is flagged/unreviewed.",
-  "A voltage rating other than 6.8V is required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than D."
  ],
  "keywords": [
   "diode",
   "zener",
-  "tvs",
-  "6.8v",
-  "discrete diode",
-  "d package",
-  "minimelf",
-  "melf",
-  "sod-123",
-  "sod-323",
-  "sod-523",
-  "sma",
-  "smb",
-  "do-41",
-  "do-35",
-  "do-201",
-  "axial",
-  "smd",
-  "through hole",
-  "kicad",
   "8v",
   "do",
   "discrete",
-  "akl"
+  "akl",
+  "alternate",
+  "kicad",
+  "library",
+  "tvs",
+  "sod",
+  "horizontal",
+  "smb",
+  "series",
+  "axial",
+  "pin"
  ],
  "facts": {
   "package_family": "D",
@@ -80,7 +70,7 @@
    "A": 108,
    "B": 6
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -240,6 +230,6 @@
   "Alternate-KiCad-Library/Diode_Zener_AKL/BZX884-C6V8",
   "Alternate-KiCad-Library/Diode_TVS_AKL/TPSMP6.8A"
  ],
- "embedding_text": "discrete-diode.d.6-8v | Discrete Diode | Cluster of 114 discrete D-package diodes near 6.8V, mixing zener types (e.g. BZV55B6V8, DZ2S068X0L) and TVS types (e.g. 1.5KE6.8A/CA), across SMD and through-hole footprints (MiniMELF, MELF, SOD-123/323/523, SMA, SMB, DO-41, DO-35, DO-201). | diode zener tvs 6.8v discrete diode d package minimelf melf sod-123 sod-323 sod-523 sma smb do-41 do-35 do-201 axial smd through hole kicad 8v do discrete akl | D | 6.8V",
+ "embedding_text": "discrete-diode.d.6-8v | Discrete Diode | 114 discrete diode parts for 6.8V using D footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | diode zener 8v do discrete akl alternate kicad library tvs sod horizontal smb series axial pin | D | 6.8V",
  "class": "discrete.diode"
 }

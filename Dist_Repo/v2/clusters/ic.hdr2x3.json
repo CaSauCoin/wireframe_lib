@@ -5,29 +5,21 @@
  "category_path": [
   "IC"
  ],
- "description": "Integrated circuit component cluster containing 2 tier-C parts utilizing HDR2X3 and HDR2X3_CEN footprint variants.",
+ "description": "2 ic parts using HDR2X3 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Verify exact footprint compatibility between HDR2X3 and HDR2X3_CEN variants.",
-  "Select when tier-C quality classification and legacy distributor sourcing are acceptable.",
-  "Confirm pin and package requirements as mounting type is specified as unknown."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a HDR2X3 land pattern is intended."
  ],
  "avoid_when": [
-  "The design requires package or footprint patterns other than HDR2X3 or HDR2X3_CEN.",
-  "Higher quality tier parts than tier C are required.",
-  "Applications cannot tolerate unknown mounting specifications."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than HDR2X3."
  ],
  "keywords": [
-  "ic",
   "hdr2x3",
-  "hdr2x3_cen",
-  "integrated circuit",
-  "hdr2x3 footprint",
-  "hdr2x3_cen footprint",
-  "tier c",
-  "dist-legacy",
-  "package family hdr2x3",
-  "ic hdr2x3",
   "cen",
+  "ic",
   "pad",
   "mm",
   "pitch",
@@ -53,13 +45,13 @@
   "tier_counts": {
    "C": 2
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
   "dist-legacy/HDR2X3",
   "dist-legacy/HDR2X3_CEN"
  ],
- "embedding_text": "ic.hdr2x3 | IC | Integrated circuit component cluster containing 2 tier-C parts utilizing HDR2X3 and HDR2X3_CEN footprint variants. | ic hdr2x3 hdr2x3_cen integrated circuit hdr2x3 footprint hdr2x3_cen footprint tier c dist-legacy package family hdr2x3 ic hdr2x3 cen pad mm pitch pins | HDR2X3 | ",
+ "embedding_text": "ic.hdr2x3 | IC | 2 ic parts using HDR2X3 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | hdr2x3 cen ic pad mm pitch pins | HDR2X3 | ",
  "class": "ic"
 }

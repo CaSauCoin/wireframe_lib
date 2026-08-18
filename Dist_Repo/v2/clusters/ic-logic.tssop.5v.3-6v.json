@@ -6,42 +6,34 @@
   "IC",
   "Logic"
  ],
- "description": "Surface-mount logic IC cluster containing 3 tier A KiCad symbols associated with 5V and 3.6V facets in TSSOP-14, TSSOP-16, and TSSOP-20 footprints.",
+ "description": "3 ic logic parts for 5V, 3.6V using TSSOP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select based on pin count requirements among TSSOP-14, TSSOP-16, or TSSOP-20 footprints.",
-  "Choose when requiring surface-mount logic ICs associated with 5V or 3.6V facets.",
-  "Match required component against representative parts TXB0104PW, TXB0106PW, or TXB0108PW."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a TSSOP land pattern is intended."
  ],
  "avoid_when": [
-  "Through-hole packaging or land patterns other than TSSOP are required.",
-  "Operating parameters or voltage requirements fall outside 5V and 3.6V facets.",
-  "Footprint sizes other than TSSOP-14, TSSOP-16, or TSSOP-20 are needed."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than TSSOP."
  ],
  "keywords": [
-  "ic",
-  "logic",
   "tssop",
-  "smd",
-  "5v",
-  "3.6v",
-  "tssop-14",
-  "tssop-16",
-  "tssop-20",
-  "txb0104pw",
-  "txb0106pw",
-  "txb0108pw",
-  "leveltranslator",
-  "kicad-symbols",
+  "logic",
   "level",
   "6v",
+  "5v",
   "bidirectional",
   "voltage",
   "translator",
+  "leveltranslator",
   "bit",
   "auto",
   "direction",
   "sensing",
-  "and"
+  "and",
+  "kv",
+  "esd"
  ],
  "facts": {
   "package_family": "TSSOP",
@@ -67,7 +59,7 @@
   "tier_counts": {
    "A": 3
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -100,6 +92,6 @@
   "kicad-symbols/Logic_LevelTranslator/TXB0106PW",
   "kicad-symbols/Logic_LevelTranslator/TXB0108PW"
  ],
- "embedding_text": "ic-logic.tssop.5v.3-6v | IC Logic | Surface-mount logic IC cluster containing 3 tier A KiCad symbols associated with 5V and 3.6V facets in TSSOP-14, TSSOP-16, and TSSOP-20 footprints. | ic logic tssop smd 5v 3.6v tssop-14 tssop-16 tssop-20 txb0104pw txb0106pw txb0108pw leveltranslator kicad-symbols level 6v bidirectional voltage translator bit auto direction sensing and | TSSOP | 5V 3.6V",
+ "embedding_text": "ic-logic.tssop.5v.3-6v | IC Logic | 3 ic logic parts for 5V, 3.6V using TSSOP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | tssop logic level 6v 5v bidirectional voltage translator leveltranslator bit auto direction sensing and kv esd | TSSOP | 5V 3.6V",
  "class": "ic.logic"
 }

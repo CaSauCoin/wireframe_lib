@@ -5,28 +5,21 @@
  "category_path": [
   "IC"
  ],
- "description": "IC cluster containing 1 tier C part associated with the TSM package family and TSM-105-01-DV footprint.",
+ "description": "1 ic parts using TSM footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Use when designing with IC components using TSM package family footprints.",
-  "Verify part specifications and mounting compatibility as mount type is unknown.",
-  "Check footprint matching for TSM-105-01-DV before PCB layout."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a TSM land pattern is intended."
  ],
  "avoid_when": [
-  "The design requires a package family other than TSM.",
-  "Tier C quality level or unknown mounting type is not suitable for the application.",
-  "Planner-visible parts are required for the automated design flow."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than TSM."
  ],
  "keywords": [
-  "ic",
   "tsm",
-  "tsm-105-01-dv",
-  "tsm package",
-  "tier c",
-  "dist-legacy",
-  "integrated circuit",
-  "ic tsm",
-  "tsm footprint",
   "dv",
+  "ic",
   "pad",
   "mm",
   "pitch",
@@ -51,12 +44,12 @@
   "tier_counts": {
    "C": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
   "dist-legacy/TSM-105-01-DV"
  ],
- "embedding_text": "ic.tsm | IC | IC cluster containing 1 tier C part associated with the TSM package family and TSM-105-01-DV footprint. | ic tsm tsm-105-01-dv tsm package tier c dist-legacy integrated circuit ic tsm tsm footprint dv pad mm pitch pins | TSM | ",
+ "embedding_text": "ic.tsm | IC | 1 ic parts using TSM footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | tsm dv ic pad mm pitch pins | TSM | ",
  "class": "ic"
 }

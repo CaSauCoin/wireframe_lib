@@ -6,41 +6,34 @@
   "IC",
   "Analog"
  ],
- "description": "Analog IC cluster in surface-mount SOT-23-5 footprint options associated with 5V and 1.08V facets, containing Tier A KiCad symbols.",
+ "description": "2 ic analog parts for 5V, 1.08V using SOT-23-5 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when an analog IC in an SMD SOT-23-5 package is required.",
-  "Use when matching 5V or 1.08V facet parameters.",
-  "Compare representative Tier A parts such as TMUX1101DBV and TMUX1102DBV for specific circuit needs."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SOT-23-5 land pattern is intended."
  ],
  "avoid_when": [
-  "Do not use if a package type other than SOT-23-5 is required.",
-  "Avoid when board assembly requires through-hole components instead of surface mount.",
-  "Avoid if voltage requirements differ from the specified 5V or 1.08V facets."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SOT-23-5."
  ],
  "keywords": [
-  "ic",
-  "analog",
-  "sot-23-5",
-  "sot-23",
-  "smd",
-  "5v",
-  "1.08v",
-  "tmux1101dbv",
-  "tmux1102dbv",
-  "analog switch",
-  "kicad-symbols",
   "sot",
+  "analog",
   "switch",
   "spst",
   "08v",
   "to",
+  "5v",
   "supply",
   "3pa",
   "leakage",
   "current",
   "normally",
   "8ohm",
-  "ron"
+  "ron",
+  "smd",
+  "ic"
  ],
  "facts": {
   "package_family": "SOT-23-5",
@@ -64,7 +57,7 @@
   "tier_counts": {
    "A": 2
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -88,6 +81,6 @@
   "kicad-symbols/Analog_Switch/TMUX1101DBV",
   "kicad-symbols/Analog_Switch/TMUX1102DBV"
  ],
- "embedding_text": "ic-analog.sot-23-5.5v.1-08v | IC Analog | Analog IC cluster in surface-mount SOT-23-5 footprint options associated with 5V and 1.08V facets, containing Tier A KiCad symbols. | ic analog sot-23-5 sot-23 smd 5v 1.08v tmux1101dbv tmux1102dbv analog switch kicad-symbols sot switch spst 08v to supply 3pa leakage current normally 8ohm ron | SOT-23-5 | 5V 1.08V",
+ "embedding_text": "ic-analog.sot-23-5.5v.1-08v | IC Analog | 2 ic analog parts for 5V, 1.08V using SOT-23-5 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | sot analog switch spst 08v to 5v supply 3pa leakage current normally 8ohm ron smd ic | SOT-23-5 | 5V 1.08V",
  "class": "ic.analog"
 }

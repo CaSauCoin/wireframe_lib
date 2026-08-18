@@ -5,32 +5,22 @@
  "category_path": [
   "IC"
  ],
- "description": "Cluster of 5 surface-mount IC parts rated for 40V using SOIC packaging, including SOIC-16 and SOIC-20W footprints.",
+ "description": "5 ic parts for 40V using SOIC footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when requiring 40V rated surface-mount ICs in SOIC packages.",
-  "Choose between SOIC-16 (3.9x9.9mm) and SOIC-20W (7.6x12.8mm) land patterns.",
-  "Filter entries by quality tier and target footprint requirement."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SOIC land pattern is intended."
  ],
  "avoid_when": [
-  "Through-hole mounting or non-SOIC package footprints are required.",
-  "Operating voltage requirements differ from 40V.",
-  "Non-IC component categories are needed."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SOIC."
  ],
  "keywords": [
-  "ic",
   "soic",
-  "40v",
-  "smd",
-  "soic-16",
-  "soic-20w",
-  "power management",
-  "ltc4364",
-  "bts716gb",
-  "bts724g",
-  "surface mount",
-  "integrated circuit",
   "pg",
   "dso",
+  "40v",
   "power",
   "surge",
   "diode",
@@ -40,7 +30,9 @@
   "p1",
   "27mm",
   "so",
-  "switch"
+  "ic",
+  "switch",
+  "stopper"
  ],
  "facts": {
   "package_family": "SOIC",
@@ -65,7 +57,7 @@
    "A": 3,
    "B": 2
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -116,6 +108,6 @@
   "kicad-symbols/Power_Management/BTS716GB",
   "kicad-symbols/Power_Management/BTS724G"
  ],
- "embedding_text": "ic.soic.40v | IC | Cluster of 5 surface-mount IC parts rated for 40V using SOIC packaging, including SOIC-16 and SOIC-20W footprints. | ic soic 40v smd soic-16 soic-20w power management ltc4364 bts716gb bts724g surface mount integrated circuit pg dso power surge diode protection to management p1 27mm so switch | SOIC | 40V",
+ "embedding_text": "ic.soic.40v | IC | 5 ic parts for 40V using SOIC footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | soic pg dso 40v power surge diode protection to management p1 27mm so ic switch stopper | SOIC | 40V",
  "class": "ic"
 }

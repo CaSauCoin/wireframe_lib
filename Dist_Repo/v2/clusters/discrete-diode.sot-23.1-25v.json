@@ -6,42 +6,34 @@
   "Discrete",
   "Diode"
  ],
- "description": "A cluster of 3 surface-mount discrete switching diode parts rated for 1.25V in SOT-23 packages.",
+ "description": "3 discrete diode parts for 1.25V using SOT-23 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when a surface-mount 1.25V switching diode in a SOT-23 package is required.",
-  "Choose between SOT-23-3 footprint options based on required PCB land pattern dimensions.",
-  "Verify selection between BAV70 and BAV99 switching diode part options."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SOT-23 land pattern is intended."
  ],
  "avoid_when": [
-  "Do not use if through-hole mounting or a package family other than SOT-23 is required.",
-  "Avoid if a diode rating other than 1.25V is required.",
-  "Avoid if Tier A parts are required, as all parts in this cluster are Tier B."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SOT-23."
  ],
  "keywords": [
-  "discrete",
-  "diode",
-  "switching diode",
-  "sot-23",
-  "sot-23-3",
-  "1.25v",
-  "smd",
-  "bav70",
-  "bav99",
-  "jlcpcb",
-  "tier b",
   "sot",
   "switching",
+  "diode",
   "25v",
   "l2",
   "w1",
   "p1",
   "ls2",
   "br",
+  "jlcpcb",
   "packages",
   "pair",
   "150ma",
   "4ns",
-  "diodes"
+  "diodes",
+  "rohs"
  ],
  "facts": {
   "package_family": "SOT-23",
@@ -65,7 +57,7 @@
   "tier_counts": {
    "B": 3
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -98,6 +90,6 @@
   "JLCPCB-Kicad-Library/JLCPCB-Diode-Packages/Switching, BAV99,215",
   "JLCPCB-Kicad-Library/JLCPCB-Diode-Packages/Switching, BAV99_C7420336"
  ],
- "embedding_text": "discrete-diode.sot-23.1-25v | Discrete Diode | A cluster of 3 surface-mount discrete switching diode parts rated for 1.25V in SOT-23 packages. | discrete diode switching diode sot-23 sot-23-3 1.25v smd bav70 bav99 jlcpcb tier b sot switching 25v l2 w1 p1 ls2 br packages pair 150ma 4ns diodes | SOT-23 | 1.25V",
+ "embedding_text": "discrete-diode.sot-23.1-25v | Discrete Diode | 3 discrete diode parts for 1.25V using SOT-23 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | sot switching diode 25v l2 w1 p1 ls2 br jlcpcb packages pair 150ma 4ns diodes rohs | SOT-23 | 1.25V",
  "class": "discrete.diode"
 }

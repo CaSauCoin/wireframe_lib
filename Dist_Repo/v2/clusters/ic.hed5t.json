@@ -5,28 +5,20 @@
  "category_path": [
   "IC"
  ],
- "description": "Integrated circuit cluster containing 1 part utilizing the HED5T package family and footprint.",
+ "description": "1 ic parts using HED5T footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when a design explicitly requires an IC component in the HED5T package family or footprint.",
-  "Verify part mounting and layout details directly, as mounting type is specified as unknown.",
-  "Check part compatibility when working with tier C quality generated entries."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a HED5T land pattern is intended."
  ],
  "avoid_when": [
-  "Avoid when board layout requires a package family or footprint other than HED5T.",
-  "Avoid when planner-visible parts are required, as planner visible count is zero.",
-  "Avoid if tier C quality or generated review status parts are excluded from design rules."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than HED5T."
  ],
  "keywords": [
-  "ic",
   "hed5t",
-  "hed5t package",
-  "hed5t footprint",
-  "integrated circuit",
-  "package family hed5t",
-  "tier c",
-  "dist-legacy",
-  "unknown mount",
-  "generated review status",
+  "ic",
   "pad",
   "mm",
   "pitch",
@@ -51,12 +43,12 @@
   "tier_counts": {
    "C": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
   "dist-legacy/HED5T"
  ],
- "embedding_text": "ic.hed5t | IC | Integrated circuit cluster containing 1 part utilizing the HED5T package family and footprint. | ic hed5t hed5t package hed5t footprint integrated circuit package family hed5t tier c dist-legacy unknown mount generated review status pad mm pitch pins | HED5T | ",
+ "embedding_text": "ic.hed5t | IC | 1 ic parts using HED5T footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | hed5t ic pad mm pitch pins | HED5T | ",
  "class": "ic"
 }

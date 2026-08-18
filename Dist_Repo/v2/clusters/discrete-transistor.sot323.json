@@ -6,28 +6,21 @@
   "Discrete",
   "Transistor"
  ],
- "description": "Discrete transistor cluster containing 3 surface-mount parts in the SOT323 package family across footprints SOT323-3AL, SOT323_3, and SOT323_3A.",
+ "description": "3 discrete transistor parts using SOT323 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Match the required footprint to SOT323-3AL, SOT323_3, or SOT323_3A.",
-  "Evaluate quality tier C parts from chilaboard-altium-library or dist-legacy sources."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SOT323 land pattern is intended."
  ],
  "avoid_when": [
-  "A package family other than SOT323 is required.",
-  "Planner-visible parts are required, as planner visible count is 0.",
-  "Quality tier C parts are unsuitable for the application."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SOT323."
  ],
  "keywords": [
-  "discrete transistor",
   "sot323",
-  "sot323-3al",
-  "sot323_3",
-  "sot323_3a",
-  "smd",
   "discrete",
   "transistor",
-  "tier c",
-  "chilaboard-altium-library",
-  "dist-legacy",
   "3al",
   "3a",
   "pad",
@@ -60,7 +53,7 @@
   "tier_counts": {
    "C": 3
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
@@ -68,6 +61,6 @@
   "chilaboard-altium-library/SOT323_3/SOT323_3",
   "chilaboard-altium-library/SOT323_3A/SOT323_3A"
  ],
- "embedding_text": "discrete-transistor.sot323 | Discrete Transistor | Discrete transistor cluster containing 3 surface-mount parts in the SOT323 package family across footprints SOT323-3AL, SOT323_3, and SOT323_3A. | discrete transistor sot323 sot323-3al sot323_3 sot323_3a smd discrete transistor tier c chilaboard-altium-library dist-legacy 3al 3a pad mm pitch pins surface mount | SOT323 | ",
+ "embedding_text": "discrete-transistor.sot323 | Discrete Transistor | 3 discrete transistor parts using SOT323 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | sot323 discrete transistor 3al 3a pad mm pitch pins surface mount | SOT323 | ",
  "class": "discrete.transistor"
 }

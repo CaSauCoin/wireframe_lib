@@ -7,42 +7,34 @@
   "Power",
   "Switching Regulator"
  ],
- "description": "Through-hole buck switching regulator IC cluster offering 15V operation with Converter DCDC footprints for MeanWell NID30 and NID60 variants.",
+ "description": "2 ic power switching regulator parts for buck, 15V using Converter footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select based on footprint match for MeanWell NID30 or NID60 through-hole modules.",
-  "Use when a 15V buck switching regulator in a Converter package is required.",
-  "Choose between representative parts NID30S24-15 and NID60S24-15 based on PCB layout requirements."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a Converter land pattern is intended."
  ],
  "avoid_when": [
-  "Surface mount (SMD) packaging is required instead of through-hole.",
-  "The application requires topologies other than buck or voltages other than 15V.",
-  "The PCB design calls for footprint packages outside the MeanWell NID30/NID60 Converter series."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than Converter."
  ],
  "keywords": [
-  "ic",
-  "power",
-  "switching regulator",
-  "buck",
-  "15v",
   "converter",
-  "through hole",
-  "tht",
-  "meanwell",
-  "dcdc",
-  "nid30",
-  "nid60",
-  "nid30s24-15",
-  "nid60s24-15",
   "regulator",
   "switching",
   "step",
   "down",
   "module",
+  "15v",
   "voltage",
   "dc",
+  "dcdc",
+  "meanwell",
   "fixed",
   "output",
-  "250khz"
+  "250khz",
+  "53v",
+  "input"
  ],
  "facts": {
   "package_family": "Converter",
@@ -67,7 +59,7 @@
   "tier_counts": {
    "A": 2
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -91,6 +83,6 @@
   "kicad-symbols/Regulator_Switching/NID30S24-15",
   "kicad-symbols/Regulator_Switching/NID60S24-15"
  ],
- "embedding_text": "ic-power-switching.converter.buck.15v | IC Power Switching Regulator | Through-hole buck switching regulator IC cluster offering 15V operation with Converter DCDC footprints for MeanWell NID30 and NID60 variants. | ic power switching regulator buck 15v converter through hole tht meanwell dcdc nid30 nid60 nid30s24-15 nid60s24-15 regulator switching step down module voltage dc fixed output 250khz | Converter | buck 15V",
+ "embedding_text": "ic-power-switching.converter.buck.15v | IC Power Switching Regulator | 2 ic power switching regulator parts for buck, 15V using Converter footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | converter regulator switching step down module 15v voltage dc dcdc meanwell fixed output 250khz 53v input | Converter | buck 15V",
  "class": "ic.power.switching"
 }

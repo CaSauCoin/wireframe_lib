@@ -6,41 +6,34 @@
   "IC",
   "Isolator"
  ],
- "description": "Surface-mount isolator IC cluster containing 63 tier A KiCad library parts across SOIC footprints including SOIC-8, SOIC-16W, and SOIC-20W.",
+ "description": "63 ic isolator parts using SOIC footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when requiring surface-mount (SMD) isolator ICs in SOIC packages.",
-  "Choose specific footprints such as SOIC-8, SOIC-16W, SOIC-20W, or Toshiba SOIC-4-6.",
-  "Verify part selection against representative models such as ADuM1300xRW or ADuM1400xRW."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SOIC land pattern is intended."
  ],
  "avoid_when": [
-  "Through-hole or non-SMD mounting is required.",
-  "The PCB design requires footprint packages other than SOIC."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SOIC."
  ],
  "keywords": [
-  "ic",
   "isolator",
   "soic",
-  "smd",
-  "soic-16w",
-  "soic-8",
-  "soic-20w",
-  "adum1300xrw",
-  "adum1400xrw",
-  "adum1401xrw",
-  "adum1402xrw",
-  "adum1410",
-  "kicad-symbols",
   "digital",
   "channel",
   "so",
   "p1",
   "27mm",
+  "ic",
   "low",
   "16w",
   "quad",
   "5x10",
   "3mm",
-  "dual"
+  "dual",
+  "25mbps",
+  "high"
  ],
  "facts": {
   "package_family": "SOIC",
@@ -66,7 +59,7 @@
   "tier_counts": {
    "A": 63
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -175,6 +168,6 @@
   "kicad-symbols/Isolator/HCPL-0211",
   "kicad-symbols/Isolator/TLP127"
  ],
- "embedding_text": "ic-isolator.soic | IC Isolator | Surface-mount isolator IC cluster containing 63 tier A KiCad library parts across SOIC footprints including SOIC-8, SOIC-16W, and SOIC-20W. | ic isolator soic smd soic-16w soic-8 soic-20w adum1300xrw adum1400xrw adum1401xrw adum1402xrw adum1410 kicad-symbols digital channel so p1 27mm low 16w quad 5x10 3mm dual | SOIC | ",
+ "embedding_text": "ic-isolator.soic | IC Isolator | 63 ic isolator parts using SOIC footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | isolator soic digital channel so p1 27mm ic low 16w quad 5x10 3mm dual 25mbps high | SOIC | ",
  "class": "ic.isolator"
 }

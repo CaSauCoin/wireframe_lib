@@ -6,36 +6,31 @@
   "Discrete",
   "Transistor"
  ],
- "description": "Cluster of 2 Tier A discrete 15V SMD transistor parts with SC-59 footprints sourced from Alternate-KiCad-Library.",
+ "description": "2 discrete transistor parts for 15V using SC footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Selects surface-mount (SMD) discrete transistor parts in SC-59 footprint.",
-  "Requires 15V rated discrete transistors.",
-  "Choosing Tier A entries from Alternate-KiCad-Library such as 2SK2394 or 2SK932."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SC land pattern is intended."
  ],
  "avoid_when": [
-  "Layout requires footprints or package families other than SC-59 / SC.",
-  "Mounting requirements call for through-hole components instead of SMD.",
-  "Circuit operating voltage differs from 15V."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SC."
  ],
  "keywords": [
-  "discrete transistor",
-  "15v",
-  "sc",
-  "sc-59",
-  "smd",
-  "2sk2394",
-  "2sk932",
-  "alternate-kicad-library",
-  "transistor",
-  "discrete",
   "jfet",
-  "tier a",
+  "sc",
+  "transistor",
+  "15v",
+  "2sk2394",
   "akl",
   "200mw",
   "alternate",
   "kicad",
   "library",
   "njfet",
+  "discrete",
+  "2sk932",
   "6ma",
   "3ma"
  ],
@@ -60,7 +55,7 @@
   "tier_counts": {
    "A": 2
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -84,6 +79,6 @@
   "Alternate-KiCad-Library/Transistor_JFET_AKL/2SK2394",
   "Alternate-KiCad-Library/Transistor_JFET_AKL/2SK932"
  ],
- "embedding_text": "discrete-transistor.sc.15v | Discrete Transistor | Cluster of 2 Tier A discrete 15V SMD transistor parts with SC-59 footprints sourced from Alternate-KiCad-Library. | discrete transistor 15v sc sc-59 smd 2sk2394 2sk932 alternate-kicad-library transistor discrete jfet tier a akl 200mw alternate kicad library njfet 6ma 3ma | SC | 15V",
+ "embedding_text": "discrete-transistor.sc.15v | Discrete Transistor | 2 discrete transistor parts for 15V using SC footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | jfet sc transistor 15v 2sk2394 akl 200mw alternate kicad library njfet discrete 2sk932 6ma 3ma | SC | 15V",
  "class": "discrete.transistor"
 }

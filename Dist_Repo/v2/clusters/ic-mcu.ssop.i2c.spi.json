@@ -6,42 +6,34 @@
   "IC",
   "Microcontroller"
  ],
- "description": "SMD IC microcontroller cluster containing 8 tier-A KiCad library parts with I2C, SPI, and CAN facets in SSOP packaging including the SSOP-28_5.3x10.2mm_P0.65mm footprint.",
+ "description": "8 ic microcontroller parts for I2C, SPI, CAN using SSOP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Selecting an SMD microcontroller with I2C, SPI, or CAN communication interfaces.",
-  "Design requires an SSOP package, specifically the SSOP-28_5.3x10.2mm_P0.65mm footprint.",
-  "Using tier-A KiCad symbol library microcontroller components."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SSOP land pattern is intended."
  ],
  "avoid_when": [
-  "The design requires package families other than SSOP.",
-  "Through-hole mounting is required instead of SMD surface mounting.",
-  "The application does not use I2C, SPI, or CAN peripheral interfaces."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SSOP."
  ],
  "keywords": [
-  "ic",
   "microcontroller",
-  "mcu",
   "ssop",
-  "smd",
-  "i2c",
-  "spi",
-  "can",
-  "ssop-28",
-  "ssop-28_5.3x10.2mm_p0.65mm",
-  "kicad-symbols",
-  "pic18f23k20_iss",
-  "pic18f24k20_iss",
-  "pic18f25k20_iss",
-  "pic18f25k80_iss",
-  "pic18f26k20_iss",
   "pic18",
   "flash",
+  "spi",
+  "i2c",
+  "can",
   "microchip",
   "iss",
+  "mcu",
   "ram",
   "eeprom",
   "adc",
-  "pwm"
+  "pwm",
+  "usart",
+  "in"
  ],
  "facts": {
   "package_family": "SSOP",
@@ -66,7 +58,7 @@
   "tier_counts": {
    "A": 8
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -120,6 +112,6 @@
   "kicad-symbols/MCU_Microchip_PIC18/PIC18LF25K80_ISS",
   "kicad-symbols/MCU_Microchip_PIC18/PIC18LF26K80_ISS"
  ],
- "embedding_text": "ic-mcu.ssop.i2c.spi | IC Microcontroller | SMD IC microcontroller cluster containing 8 tier-A KiCad library parts with I2C, SPI, and CAN facets in SSOP packaging including the SSOP-28_5.3x10.2mm_P0.65mm footprint. | ic microcontroller mcu ssop smd i2c spi can ssop-28 ssop-28_5.3x10.2mm_p0.65mm kicad-symbols pic18f23k20_iss pic18f24k20_iss pic18f25k20_iss pic18f25k80_iss pic18f26k20_iss pic18 flash microchip iss ram eeprom adc pwm | SSOP | I2C SPI CAN",
+ "embedding_text": "ic-mcu.ssop.i2c.spi | IC Microcontroller | 8 ic microcontroller parts for I2C, SPI, CAN using SSOP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | microcontroller ssop pic18 flash spi i2c can microchip iss mcu ram eeprom adc pwm usart in | SSOP | I2C SPI CAN",
  "class": "ic.mcu"
 }

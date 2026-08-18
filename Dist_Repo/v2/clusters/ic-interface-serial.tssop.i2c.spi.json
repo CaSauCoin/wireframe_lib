@@ -7,42 +7,34 @@
   "Interface",
   "Serial"
  ],
- "description": "Surface-mount serial interface IC cluster offering 5 tier-A parts in TSSOP-16, TSSOP-24, and TSSOP-28 packages for I2C, SPI, and UART/serial interfacing.",
+ "description": "5 ic interface serial parts for I2C, SPI, UART/serial using TSSOP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select based on required package footprint: TSSOP-16, TSSOP-24, or TSSOP-28.",
-  "Ensure compatibility with surface-mount TSSOP land patterns.",
-  "Choose parts matching your target serial interface protocol (I2C, SPI, or UART/serial)."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a TSSOP land pattern is intended."
  ],
  "avoid_when": [
-  "Through-hole mounting or non-TSSOP package families are required.",
-  "Footprint requirements differ from TSSOP-16, TSSOP-24, or TSSOP-28 specifications.",
-  "Serial interface protocols outside I2C, SPI, and UART/serial are needed."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than TSSOP."
  ],
  "keywords": [
-  "ic",
-  "interface",
-  "serial",
   "tssop",
+  "uart",
+  "interface",
   "i2c",
   "spi",
-  "uart",
-  "smd",
-  "tssop-16",
-  "tssop-24",
-  "tssop-28",
-  "sc16is740",
-  "sc16is750xpw",
-  "sc16is752ipw",
-  "sc16is760xpw",
-  "sc16is762ipw",
   "irda",
   "sir",
+  "serial",
   "with",
   "bytes",
   "of",
   "transmit",
   "and",
-  "receive"
+  "receive",
+  "fifos",
+  "built"
  ],
  "facts": {
   "package_family": "TSSOP",
@@ -69,7 +61,7 @@
   "tier_counts": {
    "A": 5
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -120,6 +112,6 @@
   "kicad-symbols/Interface_UART/SC16IS760xPW",
   "kicad-symbols/Interface_UART/SC16IS762IPW"
  ],
- "embedding_text": "ic-interface-serial.tssop.i2c.spi | IC Interface Serial | Surface-mount serial interface IC cluster offering 5 tier-A parts in TSSOP-16, TSSOP-24, and TSSOP-28 packages for I2C, SPI, and UART/serial interfacing. | ic interface serial tssop i2c spi uart smd tssop-16 tssop-24 tssop-28 sc16is740 sc16is750xpw sc16is752ipw sc16is760xpw sc16is762ipw irda sir with bytes of transmit and receive | TSSOP | I2C SPI UART/serial",
+ "embedding_text": "ic-interface-serial.tssop.i2c.spi | IC Interface Serial | 5 ic interface serial parts for I2C, SPI, UART/serial using TSSOP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | tssop uart interface i2c spi irda sir serial with bytes of transmit and receive fifos built | TSSOP | I2C SPI UART/serial",
  "class": "ic.interface.serial"
 }

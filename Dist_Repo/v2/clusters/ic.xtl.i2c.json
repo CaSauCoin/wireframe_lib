@@ -5,33 +5,24 @@
  "category_path": [
   "IC"
  ],
- "description": "Surface-mount IC components in the XTL package family with I2C interfaces and XTL_10_3725 or XTL_8_7050 footprint options.",
+ "description": "3 ic parts for I2C using XTL footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when needing surface-mount ICs in the XTL package family featuring an I2C interface.",
-  "Choose based on footprint compatibility with either XTL_10_3725 or XTL_8_7050 land patterns.",
-  "Verify specific part selection against available tier B components in the cluster."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a XTL land pattern is intended."
  ],
  "avoid_when": [
-  "Avoid when the design requires non-SMD mounting or a package family other than XTL.",
-  "Avoid if an I2C interface is not required by the circuit.",
-  "Avoid when the PCB footprint requires patterns other than XTL_10_3725 or XTL_8_7050."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than XTL."
  ],
  "keywords": [
-  "ic",
-  "xtl",
   "i2c",
-  "smd",
-  "xtl_10_3725",
-  "xtl_8_7050",
-  "ab-rtcmc-eoz9_3725",
-  "ab-rtcmc-ibo5_3725",
-  "osc_8_si571",
-  "chilaboard-altium-library",
-  "surface mount",
-  "tier b",
   "ab",
   "rtcmc",
   "clock",
+  "xtl",
+  "ic",
   "real",
   "time",
   "rtc",
@@ -40,7 +31,8 @@
   "eoz9",
   "with",
   "interface",
-  "output"
+  "output",
+  "and"
  ],
  "facts": {
   "package_family": "XTL",
@@ -64,7 +56,7 @@
   "tier_counts": {
    "B": 3
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -97,6 +89,6 @@
   "chilaboard-altium-library/AB-RTCMC-IBO5_3725/AB-RTCMC-IBO5_3725",
   "chilaboard-altium-library/OSC_8_Si571/OSC_8_Si571"
  ],
- "embedding_text": "ic.xtl.i2c | IC | Surface-mount IC components in the XTL package family with I2C interfaces and XTL_10_3725 or XTL_8_7050 footprint options. | ic xtl i2c smd xtl_10_3725 xtl_8_7050 ab-rtcmc-eoz9_3725 ab-rtcmc-ibo5_3725 osc_8_si571 chilaboard-altium-library surface mount tier b ab rtcmc clock real time rtc si571 oscillator eoz9 with interface output | XTL | I2C",
+ "embedding_text": "ic.xtl.i2c | IC | 3 ic parts for I2C using XTL footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | i2c ab rtcmc clock xtl ic real time rtc si571 oscillator eoz9 with interface output and | XTL | I2C",
  "class": "ic"
 }

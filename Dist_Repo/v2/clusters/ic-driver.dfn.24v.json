@@ -6,33 +6,23 @@
   "IC",
   "Driver"
  ],
- "description": "Surface-mount 24V driver IC cluster in a DFN package family with DFN-8-1EP_2x2mm_P0.5mm_EP0.6x1.2mm footprint.",
+ "description": "1 ic driver parts for 24V using DFN footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Requires a 24V rated driver IC in a surface-mount DFN package.",
-  "Matches the DFN-8-1EP_2x2mm_P0.5mm_EP0.6x1.2mm footprint.",
-  "Selecting Tier A parts from KiCad symbol sources."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a DFN land pattern is intended."
  ],
  "avoid_when": [
-  "The design requires non-DFN or non-SMD packaging.",
-  "Operating voltage specifications are other than 24V.",
-  "The footprint does not match DFN-8-1EP_2x2mm_P0.5mm_EP0.6x1.2mm."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than DFN."
  ],
  "keywords": [
-  "ic driver",
-  "24v",
   "dfn",
-  "smd",
-  "dfn-8-1ep",
-  "bdr2l00",
-  "bdr2l00_dfn",
-  "2x2mm",
-  "p0.5mm",
-  "ep0.6x1.2mm",
-  "driver_fet",
-  "kicad-symbols",
-  "surface mount",
   "driver",
+  "24v",
   "gate",
+  "bdr2l00",
   "fet",
   "half",
   "bridge",
@@ -41,7 +31,9 @@
   "diode",
   "wson",
   "1ep",
-  "p0"
+  "2x2mm",
+  "p0",
+  "5mm"
  ],
  "facts": {
   "package_family": "DFN",
@@ -64,7 +56,7 @@
   "tier_counts": {
    "A": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -79,6 +71,6 @@
  "part_ids": [
   "kicad-symbols/Driver_FET/BDR2L00_DFN"
  ],
- "embedding_text": "ic-driver.dfn.24v | IC Driver | Surface-mount 24V driver IC cluster in a DFN package family with DFN-8-1EP_2x2mm_P0.5mm_EP0.6x1.2mm footprint. | ic driver 24v dfn smd dfn-8-1ep bdr2l00 bdr2l00_dfn 2x2mm p0.5mm ep0.6x1.2mm driver_fet kicad-symbols surface mount driver gate fet half bridge integrated bootstrap diode wson 1ep p0 | DFN | 24V",
+ "embedding_text": "ic-driver.dfn.24v | IC Driver | 1 ic driver parts for 24V using DFN footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | dfn driver 24v gate bdr2l00 fet half bridge integrated bootstrap diode wson 1ep 2x2mm p0 5mm | DFN | 24V",
  "class": "ic.driver"
 }

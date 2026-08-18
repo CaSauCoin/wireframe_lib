@@ -5,28 +5,20 @@
  "category_path": [
   "IC"
  ],
- "description": "Cluster containing 1 surface-mount IC part utilizing the RS2010 package footprint.",
+ "description": "1 ic parts using RS2010 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when an SMD IC component requiring an RS2010 footprint is needed.",
-  "Verify pin assignment and package land pattern against part documentation.",
-  "Check compatibility with tier C quality status from chilaboard-altium-library."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a RS2010 land pattern is intended."
  ],
  "avoid_when": [
-  "The design requires a non-SMD or non-RS2010 package.",
-  "Through-hole mounting is required.",
-  "Unverified or quality tier C components are excluded by design requirements."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than RS2010."
  ],
  "keywords": [
-  "ic",
   "rs2010",
-  "smd",
-  "surface mount",
-  "integrated circuit",
-  "chilaboard-altium-library",
-  "footprint",
-  "package family",
-  "land pattern",
-  "tier c",
+  "ic",
   "surface",
   "mount",
   "pad",
@@ -53,12 +45,12 @@
   "tier_counts": {
    "C": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
   "chilaboard-altium-library/RS2010/RS2010"
  ],
- "embedding_text": "ic.rs2010 | IC | Cluster containing 1 surface-mount IC part utilizing the RS2010 package footprint. | ic rs2010 smd surface mount integrated circuit chilaboard-altium-library footprint package family land pattern tier c surface mount pad mm pitch pins | RS2010 | ",
+ "embedding_text": "ic.rs2010 | IC | 1 ic parts using RS2010 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | rs2010 ic surface mount pad mm pitch pins | RS2010 | ",
  "class": "ic"
 }

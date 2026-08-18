@@ -7,30 +7,20 @@
   "Analog",
   "Comparator"
  ],
- "description": "Cluster of surface-mount 0.6V analog comparator ICs using the Analog_KS-4 footprint.",
+ "description": "3 ic analog comparator parts for 0.6V using Analog footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when requiring an SMD analog comparator in an Analog_KS-4 footprint.",
-  "Confirm specific electrical characteristics and pinouts for ADCMP350, ADCMP354, or ADCMP356.",
-  "Use when KiCad symbol library tier-A parts are suitable for the application."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a Analog land pattern is intended."
  ],
  "avoid_when": [
-  "Avoid if through-hole or non-SMD mounting is required.",
-  "Do not use if the Analog_KS-4 footprint is incompatible with board constraints.",
-  "Avoid when exact part ratings or functionality must be verified against official datasheets."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than Analog."
  ],
  "keywords": [
-  "ic",
   "analog",
   "comparator",
-  "0.6v",
-  "smd",
-  "analog_ks-4",
-  "adcmp350",
-  "adcmp354",
-  "adcmp356",
-  "ks-4",
-  "surface mount",
-  "kicad",
   "ks",
   "6v",
   "single",
@@ -42,7 +32,9 @@
   "devices",
   "like",
   "eiaj",
-  "sc"
+  "sc",
+  "cmp",
+  "ic"
  ],
  "facts": {
   "package_family": "Analog",
@@ -65,7 +57,7 @@
   "tier_counts": {
    "A": 3
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -98,6 +90,6 @@
   "kicad-symbols/Comparator/ADCMP354",
   "kicad-symbols/Comparator/ADCMP356"
  ],
- "embedding_text": "ic-analog-comparator.analog.0-6v | IC Analog Comparator | Cluster of surface-mount 0.6V analog comparator ICs using the Analog_KS-4 footprint. | ic analog comparator 0.6v smd analog_ks-4 adcmp350 adcmp354 adcmp356 ks-4 surface mount kicad ks 6v single input internal reference active output devices like eiaj sc | Analog | 0.6V",
+ "embedding_text": "ic-analog-comparator.analog.0-6v | IC Analog Comparator | 3 ic analog comparator parts for 0.6V using Analog footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | analog comparator ks 6v single input internal reference active output devices like eiaj sc cmp ic | Analog | 0.6V",
  "class": "ic.analog.comparator"
 }

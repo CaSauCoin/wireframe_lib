@@ -5,29 +5,21 @@
  "category_path": [
   "IC"
  ],
- "description": "Integrated circuit component cluster containing 2 tier-C parts associated with HDR2X16 and HDR2X16_CEN footprints.",
+ "description": "2 ic parts using HDR2X16 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select between HDR2X16 and HDR2X16_CEN footprint options.",
-  "Verify part specifications since all entries are quality tier C.",
-  "Check source data from dist-legacy before layout commitment."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a HDR2X16 land pattern is intended."
  ],
  "avoid_when": [
-  "The PCB layout requires footprints other than HDR2X16 or HDR2X16_CEN.",
-  "Higher quality tier parts (tier A or B) are required.",
-  "Planner-visible component entries are needed."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than HDR2X16."
  ],
  "keywords": [
-  "ic",
   "hdr2x16",
-  "hdr2x16_cen",
-  "hdr2x16 cen",
-  "dist-legacy",
-  "tier c",
-  "package hdr2x16",
-  "footprint hdr2x16",
-  "ic hdr2x16",
-  "tier-c ic",
   "cen",
+  "ic",
   "pad",
   "mm",
   "pitch",
@@ -53,13 +45,13 @@
   "tier_counts": {
    "C": 2
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
   "dist-legacy/HDR2X16",
   "dist-legacy/HDR2X16_CEN"
  ],
- "embedding_text": "ic.hdr2x16 | IC | Integrated circuit component cluster containing 2 tier-C parts associated with HDR2X16 and HDR2X16_CEN footprints. | ic hdr2x16 hdr2x16_cen hdr2x16 cen dist-legacy tier c package hdr2x16 footprint hdr2x16 ic hdr2x16 tier-c ic cen pad mm pitch pins | HDR2X16 | ",
+ "embedding_text": "ic.hdr2x16 | IC | 2 ic parts using HDR2X16 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | hdr2x16 cen ic pad mm pitch pins | HDR2X16 | ",
  "class": "ic"
 }

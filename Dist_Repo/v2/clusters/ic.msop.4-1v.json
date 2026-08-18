@@ -5,30 +5,19 @@
  "category_path": [
   "IC"
  ],
- "description": "Surface-mount IC cluster featuring 3 Tier A parts for 4.1V applications using an MSOP-8_3x3mm_P0.65mm footprint.",
+ "description": "3 ic parts for 4.1V using MSOP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when requiring 4.1V operation in an SMD MSOP footprint.",
-  "Choose between Tier A parts including ADR444ARMZ, REF5040ADGK, and REF5040IDGK.",
-  "Verify layout compatibility with MSOP-8_3x3mm_P0.65mm land pattern."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a MSOP land pattern is intended."
  ],
  "avoid_when": [
-  "The circuit design requires a package type other than MSOP-8_3x3mm_P0.65mm.",
-  "Operating voltage parameters differ from 4.1V.",
-  "Through-hole component mounting is required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than MSOP."
  ],
  "keywords": [
-  "ic",
   "msop",
-  "4.1v",
-  "smd",
-  "msop-8_3x3mm_p0.65mm",
-  "msop-8",
-  "adr444armz",
-  "ref5040adgk",
-  "ref5040idgk",
-  "reference voltage",
-  "integrated circuit",
-  "kicad-symbols",
   "reference",
   "voltage",
   "low",
@@ -39,8 +28,11 @@
   "p0",
   "65mm",
   "so",
+  "ic",
   "1v",
-  "ultraprecision"
+  "ultraprecision",
+  "10ma",
+  "adr444armz"
  ],
  "facts": {
   "package_family": "MSOP",
@@ -63,7 +55,7 @@
   "tier_counts": {
    "A": 3
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -96,6 +88,6 @@
   "kicad-symbols/Reference_Voltage/REF5040ADGK",
   "kicad-symbols/Reference_Voltage/REF5040IDGK"
  ],
- "embedding_text": "ic.msop.4-1v | IC | Surface-mount IC cluster featuring 3 Tier A parts for 4.1V applications using an MSOP-8_3x3mm_P0.65mm footprint. | ic msop 4.1v smd msop-8_3x3mm_p0.65mm msop-8 adr444armz ref5040adgk ref5040idgk reference voltage integrated circuit kicad-symbols reference voltage low noise 096v precision 3x3mm p0 65mm so 1v ultraprecision | MSOP | 4.1V",
+ "embedding_text": "ic.msop.4-1v | IC | 3 ic parts for 4.1V using MSOP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | msop reference voltage low noise 096v precision 3x3mm p0 65mm so ic 1v ultraprecision 10ma adr444armz | MSOP | 4.1V",
  "class": "ic"
 }

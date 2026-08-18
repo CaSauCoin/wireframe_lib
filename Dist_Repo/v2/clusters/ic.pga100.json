@@ -5,27 +5,20 @@
  "category_path": [
   "IC"
  ],
- "description": "IC component cluster containing one tier C part using the PGA100 package family and footprint.",
+ "description": "1 ic parts using PGA100 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when requiring an IC component using the PGA100 package family.",
-  "Verify footprint details and mounting requirements before PCB layout.",
-  "Check individual part data as mount type is classified as unknown."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a PGA100 land pattern is intended."
  ],
  "avoid_when": [
-  "The target design requires a package footprint other than PGA100.",
-  "Unknown mounting configuration or unverified tier C part data is unacceptable."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than PGA100."
  ],
  "keywords": [
   "pga100",
   "ic",
-  "pga100 footprint",
-  "pga100 package",
-  "package family pga100",
-  "tier c ic",
-  "dist-legacy",
-  "unknown mount",
-  "ic cluster",
-  "pga100 component",
   "pad",
   "mm",
   "pitch",
@@ -50,12 +43,12 @@
   "tier_counts": {
    "C": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
   "dist-legacy/PGA100"
  ],
- "embedding_text": "ic.pga100 | IC | IC component cluster containing one tier C part using the PGA100 package family and footprint. | pga100 ic pga100 footprint pga100 package package family pga100 tier c ic dist-legacy unknown mount ic cluster pga100 component pad mm pitch pins | PGA100 | ",
+ "embedding_text": "ic.pga100 | IC | 1 ic parts using PGA100 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | pga100 ic pad mm pitch pins | PGA100 | ",
  "class": "ic"
 }

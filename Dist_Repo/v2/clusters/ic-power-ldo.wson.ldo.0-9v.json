@@ -7,42 +7,34 @@
   "Power",
   "Linear Regulator"
  ],
- "description": "Cluster of surface-mount 0.9V LDO linear regulator ICs in WSON-6 packages with a 2x2mm body and 0.65mm pitch.",
+ "description": "3 ic power linear regulator parts for LDO, 0.9V using WSON footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when requiring a surface-mount 0.9V LDO linear regulator IC.",
-  "Choose between standard WSON-6-1EP footprint or variant with thermal vias.",
-  "Verify compatibility with part numbers LP5912-0.9DRV, TLV75509PDRV, or TLV75709PDRV."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a WSON land pattern is intended."
  ],
  "avoid_when": [
-  "Output voltage requirements differ from 0.9V.",
-  "The PCB layout requires a package family other than WSON-6.",
-  "Through-hole mounting is required instead of surface mount."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than WSON."
  ],
  "keywords": [
-  "ic",
-  "power",
-  "linear regulator",
-  "ldo",
-  "0.9v",
-  "wson",
-  "wson-6",
-  "smd",
-  "2x2mm",
-  "lp5912-0.9drv",
-  "tlv75509pdrv",
-  "tlv75709pdrv",
   "regulator",
+  "wson",
+  "ldo",
   "linear",
   "low",
   "9v",
   "fixed",
   "1ep",
+  "2x2mm",
   "p0",
   "65mm",
   "ep1x1",
   "6mm",
   "nolead",
-  "output"
+  "output",
+  "ic"
  ],
  "facts": {
   "package_family": "WSON",
@@ -67,7 +59,7 @@
   "tier_counts": {
    "A": 3
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -100,6 +92,6 @@
   "kicad-symbols/Regulator_Linear/TLV75509PDRV",
   "kicad-symbols/Regulator_Linear/TLV75709PDRV"
  ],
- "embedding_text": "ic-power-ldo.wson.ldo.0-9v | IC Power Linear Regulator | Cluster of surface-mount 0.9V LDO linear regulator ICs in WSON-6 packages with a 2x2mm body and 0.65mm pitch. | ic power linear regulator ldo 0.9v wson wson-6 smd 2x2mm lp5912-0.9drv tlv75509pdrv tlv75709pdrv regulator linear low 9v fixed 1ep p0 65mm ep1x1 6mm nolead output | WSON | LDO 0.9V",
+ "embedding_text": "ic-power-ldo.wson.ldo.0-9v | IC Power Linear Regulator | 3 ic power linear regulator parts for LDO, 0.9V using WSON footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | regulator wson ldo linear low 9v fixed 1ep 2x2mm p0 65mm ep1x1 6mm nolead output ic | WSON | LDO 0.9V",
  "class": "ic.power.ldo"
 }

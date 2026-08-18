@@ -5,44 +5,34 @@
  "category_path": [
   "Connector"
  ],
- "description": "915 connector parts sharing PinSocket footprints across multiple pitches (1.27mm, 2.00mm, 2.54mm) and orientations; select by exact footprint, pin count, and pitch.",
+ "description": "915 connector parts using PinSocket footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Match footprint pitch and orientation exactly (1.27mm, 2.00mm, or 2.54mm; horizontal or vertical).",
-  "Match pin count/row configuration (e.g. 2x41 vs 1x01) to the mating header.",
-  "Prefer tier A entries with confirmed symbol-footprint pairing over tier C bulk entries.",
-  "Verify mount type (SMD vs through-hole) matches the intended assembly process."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a PinSocket land pattern is intended."
  ],
  "avoid_when": [
-  "The mating connector's pitch or pin count is unknown or unconfirmed.",
-  "The board requires a non-PinSocket package or land pattern.",
-  "Electrical ratings (voltage/current) are required but not stated by the selected part.",
-  "The symbol-footprint pairing is unverified or flagged for review."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than PinSocket."
  ],
  "keywords": [
   "pinsocket",
-  "pin socket",
-  "connector",
-  "socket strip",
-  "through hole",
-  "smd connector",
-  "1.27mm pitch",
-  "2.00mm pitch",
-  "2.54mm pitch",
-  "horizontal socket",
-  "vertical socket",
-  "header socket",
-  "dual row",
-  "single row",
-  "2x41",
-  "generic connector",
-  "board-to-board socket",
-  "female header",
   "vertical",
   "00mm",
   "smd",
   "p2",
   "socket",
-  "p1"
+  "p1",
+  "connector",
+  "54mm",
+  "strip",
+  "pitch",
+  "27mm",
+  "row",
+  "through",
+  "hole",
+  "surface"
  ],
  "facts": {
   "package_family": "PinSocket",
@@ -77,7 +67,7 @@
    "A": 16,
    "C": 899
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -1038,6 +1028,6 @@
   "dist-legacy/PinSocket_2x49_P1.27mm_Horizontal",
   "dist-legacy/PinSocket_2x50_P1.27mm_Horizontal"
  ],
- "embedding_text": "connector.pinsocket | Connector | 915 connector parts sharing PinSocket footprints across multiple pitches (1.27mm, 2.00mm, 2.54mm) and orientations; select by exact footprint, pin count, and pitch. | pinsocket pin socket connector socket strip through hole smd connector 1.27mm pitch 2.00mm pitch 2.54mm pitch horizontal socket vertical socket header socket dual row single row 2x41 generic connector board-to-board socket female header vertical 00mm smd p2 socket p1 | PinSocket | ",
+ "embedding_text": "connector.pinsocket | Connector | 915 connector parts using PinSocket footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | pinsocket vertical 00mm smd p2 socket p1 connector 54mm strip pitch 27mm row through hole surface | PinSocket | ",
  "class": "connector"
 }

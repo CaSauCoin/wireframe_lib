@@ -5,28 +5,20 @@
  "category_path": [
   "IC"
  ],
- "description": "Integrated circuit components in the WPAK package family with surface-mount footprints including WPAK_8S, WPAK_8D, and WPAK_LFPAK.",
+ "description": "4 ic parts using WPAK footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when an SMD IC component using a WPAK package footprint is required.",
-  "Choose between available WPAK footprint variants such as WPAK_8S, WPAK_8D, or WPAK_LFPAK.",
-  "Verify part quality tier and source library compatibility."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a WPAK land pattern is intended."
  ],
  "avoid_when": [
-  "The board layout requires through-hole mounting or non-WPAK package families.",
-  "Footprint variants other than WPAK_8S, WPAK_8D, or WPAK_LFPAK are required.",
-  "Tier A quality entries are strictly mandated for the design."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than WPAK."
  ],
  "keywords": [
-  "ic",
   "wpak",
-  "smd",
-  "wpak_8s",
-  "wpak_8d",
-  "wpak_lfpak",
-  "surface mount",
-  "chilaboard-altium-library",
-  "mosn",
-  "bsc160n15ns5",
+  "ic",
   "8s",
   "8d",
   "lfpak",
@@ -37,6 +29,8 @@
   "mm",
   "pitch",
   "pins",
+  "mosn",
+  "bsc160n15ns5",
   "channel",
   "power"
  ],
@@ -62,7 +56,7 @@
    "B": 1,
    "C": 3
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -80,6 +74,6 @@
   "chilaboard-altium-library/WPAK_8D/WPAK_8D",
   "chilaboard-altium-library/WPAK_LFPAK/WPAK_LFPAK"
  ],
- "embedding_text": "ic.wpak | IC | Integrated circuit components in the WPAK package family with surface-mount footprints including WPAK_8S, WPAK_8D, and WPAK_LFPAK. | ic wpak smd wpak_8s wpak_8d wpak_lfpak surface mount chilaboard-altium-library mosn bsc160n15ns5 8s 8d lfpak mosfet surface mount pad mm pitch pins channel power | WPAK | ",
+ "embedding_text": "ic.wpak | IC | 4 ic parts using WPAK footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | wpak ic 8s 8d lfpak mosfet surface mount pad mm pitch pins mosn bsc160n15ns5 channel power | WPAK | ",
  "class": "ic"
 }

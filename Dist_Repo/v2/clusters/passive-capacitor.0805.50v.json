@@ -6,42 +6,34 @@
   "Passive",
   "Capacitor"
  ],
- "description": "A cluster of 29 surface-mount 50V passive capacitors in 0805 package footprints sourced from JLCPCB and Seeed OPL KiCad libraries.",
+ "description": "29 passive capacitor parts for 50V using 0805 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select based on required capacitance value from available 0805 50V parts.",
-  "Verify footprint compatibility with C_0805 or C0805 land patterns.",
-  "Check source library between JLCPCB-Kicad-Library and Seeed-OPL-Kicad-Library."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a 0805 land pattern is intended."
  ],
  "avoid_when": [
-  "The circuit requires a voltage rating other than 50V.",
-  "The design requires a package size or mounting type other than 0805 SMD.",
-  "A component quality tier other than tier B is required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than 0805."
  ],
  "keywords": [
   "capacitor",
-  "passive capacitor",
-  "passive",
   "50v",
-  "0805",
-  "smd",
-  "c_0805",
-  "c0805",
-  "jlcpcb-kicad-library",
-  "seeed-opl-kicad-library",
-  "100nf",
-  "10uf",
-  "10nf",
-  "100pf",
-  "1.5nf",
   "capacitors",
   "ceramic",
+  "smd",
+  "passive",
   "jlcpcb",
   "multilayer",
   "mlcc",
   "smt",
   "rohs",
   "x7r",
-  "c0g"
+  "c0g",
+  "100nf",
+  "np0",
+  "5nf"
  ],
  "facts": {
   "package_family": "0805",
@@ -66,7 +58,7 @@
   "tier_counts": {
    "B": 29
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -141,6 +133,6 @@
   "JLCPCB-Kicad-Library/JLCPCB-Capacitors/0805,6.8nF",
   "Seeed-OPL-Kicad-Library/OPL_Capacitor/CERAMIC-100NF-50V-10%-X7R_0805_"
  ],
- "embedding_text": "passive-capacitor.0805.50v | Passive Capacitor | A cluster of 29 surface-mount 50V passive capacitors in 0805 package footprints sourced from JLCPCB and Seeed OPL KiCad libraries. | capacitor passive capacitor passive 50v 0805 smd c_0805 c0805 jlcpcb-kicad-library seeed-opl-kicad-library 100nf 10uf 10nf 100pf 1.5nf capacitors ceramic jlcpcb multilayer mlcc smt rohs x7r c0g | 0805 | 50V",
+ "embedding_text": "passive-capacitor.0805.50v | Passive Capacitor | 29 passive capacitor parts for 50V using 0805 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | capacitor 50v capacitors ceramic smd passive jlcpcb multilayer mlcc smt rohs x7r c0g 100nf np0 5nf | 0805 | 50V",
  "class": "passive.capacitor"
 }

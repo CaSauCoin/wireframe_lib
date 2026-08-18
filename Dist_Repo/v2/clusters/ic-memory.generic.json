@@ -6,33 +6,26 @@
   "IC",
   "Memory"
  ],
- "description": "Generic memory IC cluster containing 14 tier G Flash and ROM parts from KiCad and Chilaboard libraries with package assignment deferred.",
+ "description": "14 ic memory parts with package chosen later. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Choose based on required memory type such as Flash or ROM.",
-  "Select a specific footprint and package prior to final PCB placement.",
-  "Verify part requirements for tier G library entries."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Select a footprint/package explicitly before placement."
  ],
  "avoid_when": [
-  "A pre-assigned footprint or package family is required.",
-  "Fully verified high-tier parts are required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review."
  ],
  "keywords": [
   "memory",
   "ic",
-  "ic memory",
-  "ic.memory",
-  "flash",
-  "rom",
-  "package chosen later",
-  "kicad",
-  "chilaboard",
-  "tier g",
-  "generic",
   "package",
   "chosen",
   "later",
+  "flash",
   "pins",
   "eeprom",
+  "rom",
   "spi",
   "ram",
   "silicon",
@@ -57,7 +50,7 @@
   "tier_counts": {
    "G": 14
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -117,6 +110,6 @@
   "kicad-symbols/Memory_RAM/IDT7202",
   "kicad-symbols/Memory_ROM/XC18V01SO20"
  ],
- "embedding_text": "ic-memory.generic | IC Memory | Generic memory IC cluster containing 14 tier G Flash and ROM parts from KiCad and Chilaboard libraries with package assignment deferred. | memory ic ic memory ic.memory flash rom package chosen later kicad chilaboard tier g generic package chosen later pins eeprom spi ram silicon storage technology ssf i2c | package chosen later | ",
+ "embedding_text": "ic-memory.generic | IC Memory | 14 ic memory parts with package chosen later. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | memory ic package chosen later flash pins eeprom rom spi ram silicon storage technology ssf i2c | package chosen later | ",
  "class": "ic.memory"
 }

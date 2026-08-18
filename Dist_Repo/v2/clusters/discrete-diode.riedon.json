@@ -6,28 +6,21 @@
   "Discrete",
   "Diode"
  ],
- "description": "Cluster containing 1 discrete diode part using the RIEDON footprint family.",
+ "description": "1 discrete diode parts using RIEDON footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Use when designing with the RIEDON footprint family for discrete diodes.",
-  "Review tier C part data before integration.",
-  "Check footprint specifications against legacy source data."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a RIEDON land pattern is intended."
  ],
  "avoid_when": [
-  "Avoid if board layout requires package footprints other than RIEDON.",
-  "Avoid when planner-visible or higher tier components are required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than RIEDON."
  ],
  "keywords": [
-  "discrete",
-  "diode",
   "riedon",
-  "discrete diode",
-  "riedon footprint",
-  "riedon package",
-  "discrete.diode",
-  "dist-legacy",
-  "tier c",
-  "footprint",
   "csrl",
+  "footprint",
   "land",
   "pattern",
   "bare",
@@ -61,12 +54,12 @@
   "tier_counts": {
    "C": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
   "dist-legacy/RIEDON CSRL 2512"
  ],
- "embedding_text": "discrete-diode.riedon | Discrete Diode | Cluster containing 1 discrete diode part using the RIEDON footprint family. | discrete diode riedon discrete diode riedon footprint riedon package discrete.diode dist-legacy tier c footprint csrl land pattern bare surface mount with anode and cathode pins smd smt package | RIEDON | ",
+ "embedding_text": "discrete-diode.riedon | Discrete Diode | 1 discrete diode parts using RIEDON footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | riedon csrl footprint land pattern bare surface mount with anode and cathode pins smd smt package | RIEDON | ",
  "class": "discrete.diode"
 }

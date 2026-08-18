@@ -6,31 +6,23 @@
   "Passive",
   "Resistor"
  ],
- "description": "Cluster of SMD passive resistor and digital potentiometer components featuring an I2C interface and 36V rating in QFN footprints.",
+ "description": "2 passive resistor parts for I2C, 36V using QFN footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when an I2C-controlled digital potentiometer or resistor supporting 36V is required.",
-  "Confirm compatibility with the SMD QFN-20 footprint.",
-  "Choose between available part variants such as MCP45HV31-MQ and MCP45HV51-MQ."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a QFN land pattern is intended."
  ],
  "avoid_when": [
-  "Designs requiring packages other than SMD QFN.",
-  "Circuits that do not use an I2C control interface.",
-  "Applications operating outside 36V requirements."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than QFN."
  ],
  "keywords": [
-  "passive",
-  "resistor",
   "qfn",
-  "i2c",
-  "36v",
-  "smd",
-  "digital potentiometer",
-  "potentiometer",
-  "mcp45hv31-mq",
-  "mcp45hv51-mq",
-  "qfn-20",
-  "surface mount",
   "digital",
+  "i2c",
+  "potentiometer",
+  "36v",
   "pot",
   "mq",
   "bit",
@@ -65,7 +57,7 @@
   "tier_counts": {
    "A": 2
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -89,6 +81,6 @@
   "kicad-symbols/Potentiometer_Digital/MCP45HV31-MQ",
   "kicad-symbols/Potentiometer_Digital/MCP45HV51-MQ"
  ],
- "embedding_text": "passive-resistor.qfn.i2c.36v | Passive Resistor | Cluster of SMD passive resistor and digital potentiometer components featuring an I2C interface and 36V rating in QFN footprints. | passive resistor qfn i2c 36v smd digital potentiometer potentiometer mcp45hv31-mq mcp45hv51-mq qfn-20 surface mount digital pot mq bit single 18v serial interface volatile memory 1ep 5x5mm | QFN | I2C 36V",
+ "embedding_text": "passive-resistor.qfn.i2c.36v | Passive Resistor | 2 passive resistor parts for I2C, 36V using QFN footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | qfn digital i2c potentiometer 36v pot mq bit single 18v serial interface volatile memory 1ep 5x5mm | QFN | I2C 36V",
  "class": "passive.resistor"
 }

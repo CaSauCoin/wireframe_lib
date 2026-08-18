@@ -5,29 +5,22 @@
  "category_path": [
   "IC"
  ],
- "description": "FMC package family surface-mount IC components supporting FMC_HPC_F and FMC_HPC_M footprints.",
+ "description": "4 ic parts using FMC footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Choose between FMC_HPC_F female and FMC_HPC_M male footprints.",
-  "Select parts based on quality tier requirements (Tier B or C available).",
-  "Confirm surface-mount (SMD) mounting compatibility."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a FMC land pattern is intended."
  ],
  "avoid_when": [
-  "The board layout requires a package family other than FMC.",
-  "Through-hole or non-SMD mounting is required.",
-  "Footprints other than FMC_HPC_F or FMC_HPC_M are required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than FMC."
  ],
  "keywords": [
   "fmc",
-  "ic",
-  "smd",
-  "fmc_hpc_f",
-  "fmc_hpc_m",
-  "fmc_hpc_female",
-  "fmc_hpc_male",
-  "chilaboard-altium-library",
   "hpc",
-  "fmc package",
   "connector",
+  "ic",
   "pin",
   "female",
   "male",
@@ -62,7 +55,7 @@
    "B": 2,
    "C": 2
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -88,6 +81,6 @@
   "chilaboard-altium-library/FMC_HPC_F/FMC_HPC_F",
   "chilaboard-altium-library/FMC_HPC_M/FMC_HPC_M"
  ],
- "embedding_text": "ic.fmc | IC | FMC package family surface-mount IC components supporting FMC_HPC_F and FMC_HPC_M footprints. | fmc ic smd fmc_hpc_f fmc_hpc_m fmc_hpc_female fmc_hpc_male chilaboard-altium-library hpc fmc package connector pin female male board high fpga mezzanine card pins count for to | FMC | ",
+ "embedding_text": "ic.fmc | IC | 4 ic parts using FMC footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | fmc hpc connector ic pin female male board high fpga mezzanine card pins count for to | FMC | ",
  "class": "ic"
 }

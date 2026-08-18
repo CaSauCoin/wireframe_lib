@@ -6,44 +6,34 @@
   "Discrete",
   "Diode"
  ],
- "description": "Cluster of 1344 discrete diode parts sharing TO-family package footprints (TO-220, TO-247, TO-252, TO-263, TO-220F, TO-126, TO-5 variants), covering SMD, through-hole and unknown mount styles.",
+ "description": "1344 discrete diode parts using TO footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Match the exact TO footprint variant needed (e.g. TO-220-2_Vertical_KA vs TO-220-3_Vertical_AKA vs TO-247-3_Vertical_AKA).",
-  "Confirm required mount style (smd, through_hole) since the cluster mixes both plus unlabeled entries.",
-  "Prefer tier A parts (1203 of 1344) for higher confidence in the symbol-footprint pairing.",
-  "Cross-check the part's source library, since most entries come from Alternate-KiCad-Library rather than kicad-symbols."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a TO land pattern is intended."
  ],
  "avoid_when": [
-  "The design needs a package outside the TO family (e.g. SOT, SOD, DO, axial leaded).",
-  "The mount style is unknown/unverified for that specific part and board mount requirements are strict.",
-  "The part falls in tier B or C and footprint accuracy has not been separately confirmed.",
-  "Electrical ratings or pinout are required for selection but are not documented for the candidate part."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than TO."
  ],
  "keywords": [
   "to",
   "diode",
-  "discrete diode",
-  "to-220",
-  "to-247",
-  "to-252",
-  "to-263",
-  "to-220f",
-  "to-126",
-  "to-5",
   "vertical",
-  "smd",
-  "through hole",
-  "tabpin1",
-  "kicad-symbols",
-  "alternate-kicad-library",
-  "power package diode",
-  "generated cluster",
   "discrete",
   "schottky",
   "akl",
   "alternate",
   "kicad",
-  "library"
+  "library",
+  "rm",
+  "rectifier",
+  "dual",
+  "ka",
+  "ultrafast",
+  "220f",
+  "08mm"
  ],
  "facts": {
   "package_family": "TO",
@@ -84,7 +74,7 @@
    "B": 88,
    "C": 53
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -1474,6 +1464,6 @@
   "dist-legacy/TO-264-2_Horizontal_TabDown",
   "dist-legacy/TO-264-2_Horizontal_TabUp"
  ],
- "embedding_text": "discrete-diode.to | Discrete Diode | Cluster of 1344 discrete diode parts sharing TO-family package footprints (TO-220, TO-247, TO-252, TO-263, TO-220F, TO-126, TO-5 variants), covering SMD, through-hole and unknown mount styles. | to diode discrete diode to-220 to-247 to-252 to-263 to-220f to-126 to-5 vertical smd through hole tabpin1 kicad-symbols alternate-kicad-library power package diode generated cluster discrete schottky akl alternate kicad library | TO | ",
+ "embedding_text": "discrete-diode.to | Discrete Diode | 1344 discrete diode parts using TO footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | to diode vertical discrete schottky akl alternate kicad library rm rectifier dual ka ultrafast 220f 08mm | TO | ",
  "class": "discrete.diode"
 }

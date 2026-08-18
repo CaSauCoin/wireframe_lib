@@ -5,33 +5,24 @@
  "category_path": [
   "IC"
  ],
- "description": "Integrated circuit component cluster containing 7 surface-mount IC entries using Bosch package footprints including LGA variants.",
+ "description": "7 ic parts using BOSCH footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when requiring an IC using Bosch package footprints such as LGA-8, LGA-14, LGA-16, or LGA-28.",
-  "Verify footprint dimensions, pin pitch, and clockwise pin numbering against design specifications.",
-  "Review quality tier C status and catalog details before part selection."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a BOSCH land pattern is intended."
  ],
  "avoid_when": [
-  "The board layout requires a non-Bosch package footprint.",
-  "Through-hole mounting or non-LGA package types are required.",
-  "Tier C quality entries without planner visibility do not satisfy project requirements."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than BOSCH."
  ],
  "keywords": [
-  "ic",
   "bosch",
   "lga",
-  "smd",
-  "integrated circuit",
-  "lga-8",
-  "lga-14",
-  "lga-16",
-  "lga-28",
-  "bosch lga",
-  "clockwise pin numbering",
-  "surface mount",
   "5mm",
   "p0",
   "clockwisepinnumbering",
+  "ic",
   "8mm",
   "65mm",
   "2x3",
@@ -40,7 +31,8 @@
   "pitch",
   "pins",
   "bst",
-  "media"
+  "media",
+  "surface"
  ],
  "facts": {
   "package_family": "BOSCH",
@@ -69,7 +61,7 @@
   "tier_counts": {
    "C": 7
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
@@ -81,6 +73,6 @@
   "dist-legacy/Bosch_LGA-8_3x3mm_P0.8mm_ClockwisePinNumbering",
   "celestial-altium-library/BOSCH LGA-28 5.2x3.8MM/BOSCH_LGA-28_5.2x3.8MM"
  ],
- "embedding_text": "ic.bosch | IC | Integrated circuit component cluster containing 7 surface-mount IC entries using Bosch package footprints including LGA variants. | ic bosch lga smd integrated circuit lga-8 lga-14 lga-16 lga-28 bosch lga clockwise pin numbering surface mount 5mm p0 clockwisepinnumbering 8mm 65mm 2x3 pad mm pitch pins bst media | BOSCH | ",
+ "embedding_text": "ic.bosch | IC | 7 ic parts using BOSCH footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | bosch lga 5mm p0 clockwisepinnumbering ic 8mm 65mm 2x3 pad mm pitch pins bst media surface | BOSCH | ",
  "class": "ic"
 }

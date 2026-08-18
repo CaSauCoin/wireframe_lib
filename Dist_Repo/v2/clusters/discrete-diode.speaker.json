@@ -6,28 +6,21 @@
   "Discrete",
   "Diode"
  ],
- "description": "Discrete diode cluster containing 1 tier C part associated with SPEAKER footprints.",
+ "description": "1 discrete diode parts using SPEAKER footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Use when a discrete diode with a SPEAKER footprint is required.",
-  "Verify part specifications, quality tier, and pin-to-pad mapping before placement.",
-  "Confirm package details and source trust for the tier C entry."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SPEAKER land pattern is intended."
  ],
  "avoid_when": [
-  "The board layout requires a package family other than SPEAKER.",
-  "Required electrical ratings, dimensions, or pinouts are unspecified.",
-  "The application requires a higher quality tier or planner-visible part."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SPEAKER."
  ],
  "keywords": [
+  "speaker",
   "discrete",
   "diode",
-  "speaker",
-  "speaker footprint",
-  "discrete diode",
-  "package family speaker",
-  "tier c",
-  "dist-legacy",
-  "generated status",
-  "land pattern",
   "pad",
   "mm",
   "pitch",
@@ -52,12 +45,12 @@
   "tier_counts": {
    "C": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
   "dist-legacy/SPEAKER"
  ],
- "embedding_text": "discrete-diode.speaker | Discrete Diode | Discrete diode cluster containing 1 tier C part associated with SPEAKER footprints. | discrete diode speaker speaker footprint discrete diode package family speaker tier c dist-legacy generated status land pattern pad mm pitch pins | SPEAKER | ",
+ "embedding_text": "discrete-diode.speaker | Discrete Diode | 1 discrete diode parts using SPEAKER footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | speaker discrete diode pad mm pitch pins | SPEAKER | ",
  "class": "discrete.diode"
 }

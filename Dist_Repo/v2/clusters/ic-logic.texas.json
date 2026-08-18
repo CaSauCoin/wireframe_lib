@@ -6,42 +6,34 @@
   "IC",
   "Logic"
  ],
- "description": "Surface-mount logic IC components in the Texas package family utilizing Texas_R-PDSO-G5_DCK-5 and Texas_R-PDSO-N5_DRL-5 footprints.",
+ "description": "4 ic logic parts using Texas footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select between Texas_R-PDSO-G5_DCK-5 and Texas_R-PDSO-N5_DRL-5 footprint options.",
-  "Choose the required logic IC function such as SN74LVC1G00 or SN74LVC1G125.",
-  "Use when designing SMD PCBs requiring Texas package family logic ICs."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a Texas land pattern is intended."
  ],
  "avoid_when": [
-  "Through-hole mounting is required for the PCB layout.",
-  "The layout demands footprint packages other than Texas_R-PDSO-G5_DCK-5 or Texas_R-PDSO-N5_DRL-5.",
-  "Required logic functions or parameters are not covered by the available parts in this cluster."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than Texas."
  ],
  "keywords": [
-  "ic",
-  "logic",
-  "texas",
-  "smd",
-  "74xgxx",
-  "sn74lvc1g00dck",
-  "sn74lvc1g00drl",
-  "sn74lvc1g125dck",
-  "sn74lvc1g125drl",
-  "texas_r-pdso-g5_dck-5",
-  "texas_r-pdso-n5_drl-5",
-  "dck-5",
-  "drl-5",
-  "r-pdso-g5",
-  "r-pdso-n5",
   "single",
   "gate",
   "cmos",
+  "texas",
   "pdso",
   "sot",
+  "74xgxx",
   "nand",
   "low",
   "voltage",
-  "g5"
+  "g5",
+  "dck",
+  "lvc",
+  "ic",
+  "logic",
+  "n5"
  ],
  "facts": {
   "package_family": "Texas",
@@ -63,7 +55,7 @@
   "tier_counts": {
    "B": 4
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -105,6 +97,6 @@
   "kicad-symbols/74xGxx/SN74LVC1G125DCK",
   "kicad-symbols/74xGxx/SN74LVC1G125DRL"
  ],
- "embedding_text": "ic-logic.texas | IC Logic | Surface-mount logic IC components in the Texas package family utilizing Texas_R-PDSO-G5_DCK-5 and Texas_R-PDSO-N5_DRL-5 footprints. | ic logic texas smd 74xgxx sn74lvc1g00dck sn74lvc1g00drl sn74lvc1g125dck sn74lvc1g125drl texas_r-pdso-g5_dck-5 texas_r-pdso-n5_drl-5 dck-5 drl-5 r-pdso-g5 r-pdso-n5 single gate cmos pdso sot nand low voltage g5 | Texas | ",
+ "embedding_text": "ic-logic.texas | IC Logic | 4 ic logic parts using Texas footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | single gate cmos texas pdso sot 74xgxx nand low voltage g5 dck lvc ic logic n5 | Texas | ",
  "class": "ic.logic"
 }

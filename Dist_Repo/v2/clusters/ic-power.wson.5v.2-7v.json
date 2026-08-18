@@ -6,31 +6,21 @@
   "IC",
   "Power"
  ],
- "description": "Surface-mount power IC cluster with 5V and 2.7V facets in WSON packaging with WSON-8-1EP footprint support.",
+ "description": "1 ic power parts for 5V, 2.7V using WSON footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Applications specifying surface-mount WSON power ICs with 5V or 2.7V facets.",
-  "Designs requiring the WSON-8-1EP footprint.",
-  "Selecting tier A power components sourced from kicad-symbols."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a WSON land pattern is intended."
  ],
  "avoid_when": [
-  "Through-hole mounting or non-WSON package families are required.",
-  "Applications operating outside 5V or 2.7V facets.",
-  "Layouts incompatible with the WSON-8-1EP footprint."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than WSON."
  ],
  "keywords": [
-  "ic",
-  "power",
-  "ic power",
   "wson",
-  "wson-8-1ep",
-  "5v",
-  "2.7v",
-  "smd",
-  "lm27761",
-  "regulator",
-  "switched capacitor",
-  "kicad-symbols",
   "voltage",
+  "5v",
   "low",
   "noise",
   "switched",
@@ -38,6 +28,8 @@
   "7v",
   "to",
   "1ep",
+  "lm27761",
+  "regulator",
   "switchedcapacitor",
   "regulated",
   "inverter",
@@ -65,7 +57,7 @@
   "tier_counts": {
    "A": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -80,6 +72,6 @@
  "part_ids": [
   "kicad-symbols/Regulator_SwitchedCapacitor/LM27761"
  ],
- "embedding_text": "ic-power.wson.5v.2-7v | IC Power | Surface-mount power IC cluster with 5V and 2.7V facets in WSON packaging with WSON-8-1EP footprint support. | ic power ic power wson wson-8-1ep 5v 2.7v smd lm27761 regulator switched capacitor kicad-symbols voltage low noise switched capacitor 7v to 1ep switchedcapacitor regulated inverter with | WSON | 5V 2.7V",
+ "embedding_text": "ic-power.wson.5v.2-7v | IC Power | 1 ic power parts for 5V, 2.7V using WSON footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | wson voltage 5v low noise switched capacitor 7v to 1ep lm27761 regulator switchedcapacitor regulated inverter with | WSON | 5V 2.7V",
  "class": "ic.power"
 }

@@ -5,32 +5,20 @@
  "category_path": [
   "Connector"
  ],
- "description": "Connector cluster with a single Header4-footprint part sourced from dist-legacy, tier C, review status generated, and not currently planner-visible.",
+ "description": "1 connector parts using Header4 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Only one part is available in this cluster",
-  "Confirm the Header4 footprint matches the required land pattern",
-  "Verify mount type manually, as it is unlisted (unknown)",
-  "Review the single entry closely since it is tier C and generated, not tier A"
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a Header4 land pattern is intended."
  ],
  "avoid_when": [
-  "A verified or higher-trust (non-tier-C) part is required",
-  "Planner-visible or reviewed parts are needed, since this entry is not planner-visible",
-  "The required mount type must be confirmed and cannot be left as unknown",
-  "A footprint other than Header4 is needed"
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than Header4."
  ],
  "keywords": [
   "header4",
   "connector",
-  "header",
-  "4 pin",
-  "4-pin header",
-  "pin header",
-  "footprint header4",
-  "dist-legacy",
-  "tier c",
-  "generated",
-  "single part",
-  "unverified connector",
   "pad",
   "mm",
   "pitch",
@@ -55,12 +43,12 @@
   "tier_counts": {
    "C": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
   "dist-legacy/Header4"
  ],
- "embedding_text": "connector.header4 | Connector | Connector cluster with a single Header4-footprint part sourced from dist-legacy, tier C, review status generated, and not currently planner-visible. | header4 connector header 4 pin 4-pin header pin header footprint header4 dist-legacy tier c generated single part unverified connector pad mm pitch pins | Header4 | ",
+ "embedding_text": "connector.header4 | Connector | 1 connector parts using Header4 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | header4 connector pad mm pitch pins | Header4 | ",
  "class": "connector"
 }

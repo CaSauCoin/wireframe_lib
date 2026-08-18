@@ -5,42 +5,34 @@
  "category_path": [
   "IC"
  ],
- "description": "Cluster of 80 LDO integrated circuits in TO package variants supporting surface-mount and through-hole mounting.",
+ "description": "80 ic parts for LDO using TO footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select required mount type (surface-mount or through-hole) and exact TO footprint variant.",
-  "Check footprint tab and pin options such as TO-252, TO-263, TO-220, or TO-92.",
-  "Filter by quality tier, prioritizing Tier A parts."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a TO land pattern is intended."
  ],
  "avoid_when": [
-  "The design requires package families other than TO.",
-  "The circuit requires non-LDO IC functionality.",
-  "The PCB layout cannot support surface-mount or through-hole TO footprints."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than TO."
  ],
  "keywords": [
-  "ic",
-  "ldo",
   "to",
-  "smd",
-  "through hole",
-  "to-220",
-  "to-252",
-  "to-263",
-  "to-92",
-  "to-3",
-  "voltage regulator",
-  "low dropout",
   "regulator",
   "voltage",
+  "ldo",
   "adjustable",
   "low",
   "dropout",
   "pmic",
+  "ic",
   "akl",
   "alternate",
   "kicad",
   "library",
   "vreg",
-  "power"
+  "power",
+  "supply"
  ],
  "facts": {
   "package_family": "TO",
@@ -77,7 +69,7 @@
    "A": 79,
    "B": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -203,6 +195,6 @@
   "Alternate-KiCad-Library/Voltage_Regulator_AKL/ZLDO1117KTC",
   "Seeed-OPL-Kicad-Library/OPL_Integrated_Circuit/PMIC-LP2950-33_TO-92_"
  ],
- "embedding_text": "ic.to.ldo | IC | Cluster of 80 LDO integrated circuits in TO package variants supporting surface-mount and through-hole mounting. | ic ldo to smd through hole to-220 to-252 to-263 to-92 to-3 voltage regulator low dropout regulator voltage adjustable low dropout pmic akl alternate kicad library vreg power | TO | LDO",
+ "embedding_text": "ic.to.ldo | IC | 80 ic parts for LDO using TO footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | to regulator voltage ldo adjustable low dropout pmic ic akl alternate kicad library vreg power supply | TO | LDO",
  "class": "ic"
 }

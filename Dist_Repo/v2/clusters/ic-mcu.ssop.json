@@ -6,42 +6,34 @@
   "IC",
   "Microcontroller"
  ],
- "description": "Cluster of 23 surface-mount microcontroller ICs in SSOP package footprints (SSOP-20 and SSOP-28) sourced from KiCad symbols.",
+ "description": "23 ic microcontroller parts using SSOP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when needing surface-mount (SMD) microcontrollers in SSOP packages.",
-  "Choose based on footprint requirements such as SSOP-20 or SSOP-28 with 0.65mm lead pitch.",
-  "Filter parts by quality tier preferences (20 tier A parts, 3 tier B parts available)."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SSOP land pattern is intended."
  ],
  "avoid_when": [
-  "Through-hole mounting or non-SMD component placement is required.",
-  "The design requires package families other than SSOP.",
-  "Required PCB land pattern dimensions differ from SSOP-20 or SSOP-28 footprints."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SSOP."
  ],
  "keywords": [
   "ssop",
   "microcontroller",
-  "mcu",
-  "ic",
-  "ic.mcu",
-  "smd",
-  "ssop-20",
-  "ssop-28",
-  "p0.65mm",
-  "5.3x10.2mm",
-  "5.3x7.2mm",
-  "atmega3208-x",
-  "atmega4808-x",
-  "attiny1626-x",
-  "attiny3226-x",
-  "attiny426-x",
   "flash",
+  "mcu",
   "avr",
   "microchip",
+  "ic",
   "2mm",
   "p0",
   "65mm",
   "so",
-  "eeprom"
+  "eeprom",
+  "sram",
+  "bit",
+  "3x10",
+  "8bit"
  ],
  "facts": {
   "package_family": "SSOP",
@@ -65,7 +57,7 @@
    "A": 20,
    "B": 3
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -134,6 +126,6 @@
   "kicad-symbols/MCU_Microchip_PIC16/PIC16F76-ISS",
   "kicad-symbols/MCU_Microchip_PIC16/PIC16F870-ISS"
  ],
- "embedding_text": "ic-mcu.ssop | IC Microcontroller | Cluster of 23 surface-mount microcontroller ICs in SSOP package footprints (SSOP-20 and SSOP-28) sourced from KiCad symbols. | ssop microcontroller mcu ic ic.mcu smd ssop-20 ssop-28 p0.65mm 5.3x10.2mm 5.3x7.2mm atmega3208-x atmega4808-x attiny1626-x attiny3226-x attiny426-x flash avr microchip 2mm p0 65mm so eeprom | SSOP | ",
+ "embedding_text": "ic-mcu.ssop | IC Microcontroller | 23 ic microcontroller parts using SSOP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | ssop microcontroller flash mcu avr microchip ic 2mm p0 65mm so eeprom sram bit 3x10 8bit | SSOP | ",
  "class": "ic.mcu"
 }

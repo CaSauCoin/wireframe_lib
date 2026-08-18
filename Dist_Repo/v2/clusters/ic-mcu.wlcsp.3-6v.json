@@ -6,42 +6,34 @@
   "IC",
   "Microcontroller"
  ],
- "description": "Surface-mount microcontroller IC cluster operating at 3.6V in WLCSP packaging with WLCSP-20 footprint options.",
+ "description": "2 ic microcontroller parts for 3.6V using WLCSP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when needing a 3.6V surface-mount microcontroller in a WLCSP package.",
-  "Verify PCB layout support for WLCSP-20 1.934x2.434mm with 0.4mm pitch.",
-  "Choose between tier B parts ATSAMD10D14A-U and ATSAMD11D14A-U based on specific part requirements."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a WLCSP land pattern is intended."
  ],
  "avoid_when": [
-  "The application requires operating voltages other than 3.6V.",
-  "The design requires non-WLCSP package types or through-hole mounting.",
-  "The PCB design cannot accept a 0.4mm pitch WLCSP-20 footprint."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than WLCSP."
  ],
  "keywords": [
-  "ic",
-  "microcontroller",
-  "ic.mcu",
-  "wlcsp",
-  "3.6v",
-  "smd",
-  "wlcsp-20",
-  "atsamd10d14a-u",
-  "atsamd11d14a-u",
-  "microchip",
-  "samd",
-  "kicad-symbols",
-  "0.4mm pitch",
-  "1.934x2.434mm",
   "mcu",
+  "wlcsp",
   "arm",
   "cortex",
   "m0",
   "6v",
+  "microcontroller",
+  "microchip",
+  "samd",
   "48mhz",
   "16kb",
   "flash",
   "4kb",
-  "ram"
+  "ram",
+  "gpio",
+  "934x2"
  ],
  "facts": {
   "package_family": "WLCSP",
@@ -64,7 +56,7 @@
   "tier_counts": {
    "B": 2
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -88,6 +80,6 @@
   "kicad-symbols/MCU_Microchip_SAMD/ATSAMD10D14A-U",
   "kicad-symbols/MCU_Microchip_SAMD/ATSAMD11D14A-U"
  ],
- "embedding_text": "ic-mcu.wlcsp.3-6v | IC Microcontroller | Surface-mount microcontroller IC cluster operating at 3.6V in WLCSP packaging with WLCSP-20 footprint options. | ic microcontroller ic.mcu wlcsp 3.6v smd wlcsp-20 atsamd10d14a-u atsamd11d14a-u microchip samd kicad-symbols 0.4mm pitch 1.934x2.434mm mcu arm cortex m0 6v 48mhz 16kb flash 4kb ram | WLCSP | 3.6V",
+ "embedding_text": "ic-mcu.wlcsp.3-6v | IC Microcontroller | 2 ic microcontroller parts for 3.6V using WLCSP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | mcu wlcsp arm cortex m0 6v microcontroller microchip samd 48mhz 16kb flash 4kb ram gpio 934x2 | WLCSP | 3.6V",
  "class": "ic.mcu"
 }

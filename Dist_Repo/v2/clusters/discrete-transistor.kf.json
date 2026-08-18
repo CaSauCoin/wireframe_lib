@@ -6,28 +6,22 @@
   "Discrete",
   "Transistor"
  ],
- "description": "A discrete transistor cluster in the KF package family containing one tier C part with a KF-128_3P footprint.",
+ "description": "1 discrete transistor parts using KF footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Verify compatibility with the KF-128_3P footprint.",
-  "Use when designing with the KF package family for a discrete transistor.",
-  "Review part specifications and pin mapping prior to PCB layout."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a KF land pattern is intended."
  ],
  "avoid_when": [
-  "The board layout requires a package family other than KF.",
-  "The design requires a footprint other than KF-128_3P.",
-  "Tier C quality rating or generated review status is not acceptable for project requirements."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than KF."
  ],
  "keywords": [
-  "discrete transistor",
+  "kf",
+  "3p",
   "discrete",
   "transistor",
-  "kf",
-  "kf package family",
-  "kf-128_3p",
-  "kf-128",
-  "3p",
-  "tier c",
-  "dist-legacy",
   "pad",
   "mm",
   "pitch",
@@ -52,12 +46,12 @@
   "tier_counts": {
    "C": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
   "dist-legacy/KF-128_3P"
  ],
- "embedding_text": "discrete-transistor.kf | Discrete Transistor | A discrete transistor cluster in the KF package family containing one tier C part with a KF-128_3P footprint. | discrete transistor discrete transistor kf kf package family kf-128_3p kf-128 3p tier c dist-legacy pad mm pitch pins | KF | ",
+ "embedding_text": "discrete-transistor.kf | Discrete Transistor | 1 discrete transistor parts using KF footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | kf 3p discrete transistor pad mm pitch pins | KF | ",
  "class": "discrete.transistor"
 }

@@ -5,32 +5,20 @@
  "category_path": [
   "IC"
  ],
- "description": "Integrated circuit cluster containing 59 surface-mount (SMD) parts in the SON50 package family across various footprint variants, sourced from chilaboard-altium-library.",
+ "description": "59 ic parts using SON50 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Match the exact SON50 footprint variant required by your layout, such as SON50_6T_2018 or SON50_8T_3030.",
-  "Check quality tier, noting 27 planner-visible parts are rated Tier B.",
-  "Ensure surface-mount (SMD) packaging is compatible with design requirements."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SON50 land pattern is intended."
  ],
  "avoid_when": [
-  "Through-hole assembly is required instead of surface-mount (SMD).",
-  "The design requires packages outside the SON50 package family.",
-  "Tier A component quality verification is strictly mandated."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SON50."
  ],
  "keywords": [
   "son50",
   "ic",
-  "integrated circuit",
-  "smd",
-  "surface mount",
-  "son50_6t_2018",
-  "son50_8t_3030",
-  "son50_10t_3030",
-  "son50_6t_1620",
-  "son50_12t_3030",
-  "adg901_son8",
-  "ncp349_son6",
-  "ap2141d_son6",
-  "chilaboard-altium-library",
   "switch",
   "power",
   "6t",
@@ -40,7 +28,11 @@
   "son",
   "pins",
   "mm",
-  "pitch"
+  "pitch",
+  "son10",
+  "10t",
+  "in",
+  "package"
  ],
  "facts": {
   "package_family": "SON50",
@@ -73,7 +65,7 @@
    "B": 27,
    "C": 32
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -178,6 +170,6 @@
   "chilaboard-altium-library/SON50_8_3020/SON50_8_3020",
   "chilaboard-altium-library/SON50_6T_1616/SON50_6T_1616"
  ],
- "embedding_text": "ic.son50 | IC | Integrated circuit cluster containing 59 surface-mount (SMD) parts in the SON50 package family across various footprint variants, sourced from chilaboard-altium-library. | son50 ic integrated circuit smd surface mount son50_6t_2018 son50_8t_3030 son50_10t_3030 son50_6t_1620 son50_12t_3030 adg901_son8 ncp349_son6 ap2141d_son6 chilaboard-altium-library switch power 6t pad surface mount son pins mm pitch | SON50 | ",
+ "embedding_text": "ic.son50 | IC | 59 ic parts using SON50 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | son50 ic switch power 6t pad surface mount son pins mm pitch son10 10t in package | SON50 | ",
  "class": "ic"
 }

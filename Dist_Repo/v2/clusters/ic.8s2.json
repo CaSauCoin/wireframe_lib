@@ -5,29 +5,20 @@
  "category_path": [
   "IC"
  ],
- "description": "This IC cluster contains three component parts utilizing the 8S2 package family with 8S2_L, 8S2_M, and 8S2_N footprint variants.",
+ "description": "3 ic parts using 8S2 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when an 8S2 package family footprint is required for the layout.",
-  "Choose between 8S2_L, 8S2_M, or 8S2_N footprint variations based on board design needs.",
-  "Verify part specifications and pin mapping before committing to PCB design."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a 8S2 land pattern is intended."
  ],
  "avoid_when": [
-  "The board design requires a package family other than 8S2.",
-  "Footprints 8S2_L, 8S2_M, or 8S2_N do not match the target component.",
-  "Quality tier C or dist-legacy source status does not meet project requirements."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than 8S2."
  ],
  "keywords": [
   "8s2",
   "ic",
-  "8s2_l",
-  "8s2_m",
-  "8s2_n",
-  "integrated circuit",
-  "package family 8s2",
-  "8s2 footprint",
-  "8s2 land pattern",
-  "tier c",
-  "dist-legacy",
   "pad",
   "mm",
   "pitch",
@@ -54,7 +45,7 @@
   "tier_counts": {
    "C": 3
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
@@ -62,6 +53,6 @@
   "dist-legacy/8S2_M",
   "dist-legacy/8S2_N"
  ],
- "embedding_text": "ic.8s2 | IC | This IC cluster contains three component parts utilizing the 8S2 package family with 8S2_L, 8S2_M, and 8S2_N footprint variants. | 8s2 ic 8s2_l 8s2_m 8s2_n integrated circuit package family 8s2 8s2 footprint 8s2 land pattern tier c dist-legacy pad mm pitch pins | 8S2 | ",
+ "embedding_text": "ic.8s2 | IC | 3 ic parts using 8S2 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | 8s2 ic pad mm pitch pins | 8S2 | ",
  "class": "ic"
 }

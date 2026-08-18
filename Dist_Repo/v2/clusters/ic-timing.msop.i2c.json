@@ -6,40 +6,34 @@
   "IC",
   "Timing"
  ],
- "description": "Timing ICs with I2C interfaces in surface-mount MSOP packages, including MSOP-8 and MSOP-10 footprint options.",
+ "description": "2 ic timing parts for I2C using MSOP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Match the required pin count and pitch between MSOP-8 (0.65mm pitch) and MSOP-10 (0.5mm pitch).",
-  "Identify the required timing function, such as real-time clock (RTC) or oscillator.",
-  "Verify compatibility with I2C communication and SMD assembly."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a MSOP land pattern is intended."
  ],
  "avoid_when": [
-  "Designs requiring non-MSOP packages or through-hole mounting.",
-  "Applications that require non-I2C communication interfaces.",
-  "Circuits needing pin counts or footprints outside of MSOP-8 or MSOP-10."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than MSOP."
  ],
  "keywords": [
   "msop",
   "i2c",
-  "timing ic",
-  "ic timing",
-  "smd",
-  "msop-8",
-  "msop-10",
-  "pcf8563ts",
-  "si5351a-b-gt",
-  "rtc",
-  "oscillator",
-  "timer",
   "clock",
   "3x3mm",
   "p0",
+  "rtc",
   "calendar",
   "tssop",
   "so",
   "ic",
   "timing",
+  "oscillator",
   "cmos",
-  "5mm"
+  "5mm",
+  "pcf8563ts",
+  "timer"
  ],
  "facts": {
   "package_family": "MSOP",
@@ -63,7 +57,7 @@
   "tier_counts": {
    "A": 2
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -87,6 +81,6 @@
   "kicad-symbols/Timer_RTC/PCF8563TS",
   "kicad-symbols/Oscillator/Si5351A-B-GT"
  ],
- "embedding_text": "ic-timing.msop.i2c | IC Timing | Timing ICs with I2C interfaces in surface-mount MSOP packages, including MSOP-8 and MSOP-10 footprint options. | msop i2c timing ic ic timing smd msop-8 msop-10 pcf8563ts si5351a-b-gt rtc oscillator timer clock 3x3mm p0 calendar tssop so ic timing cmos 5mm | MSOP | I2C",
+ "embedding_text": "ic-timing.msop.i2c | IC Timing | 2 ic timing parts for I2C using MSOP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | msop i2c clock 3x3mm p0 rtc calendar tssop so ic timing oscillator cmos 5mm pcf8563ts timer | MSOP | I2C",
  "class": "ic.timing"
 }

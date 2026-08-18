@@ -7,32 +7,24 @@
   "Power",
   "Converter"
  ],
- "description": "Surface-mount buck IC power converters in QFN packages matching the Texas_B3QFN-14-1EP_5x5.5mm_P0.65mm_ThermalVia footprint.",
+ "description": "3 ic power converter parts for buck using QFN footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when requiring a surface-mount buck power converter in a QFN package.",
-  "Verify compatibility with the Texas_B3QFN-14-1EP_5x5.5mm_P0.65mm_ThermalVia footprint.",
-  "Choose between representative parts TPSM53602RDA, TPSM53603RDA, and TPSM53604RDA."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a QFN land pattern is intended."
  ],
  "avoid_when": [
-  "Do not use if surface-mount QFN packaging is not compatible with the design.",
-  "Avoid when a converter topology other than buck is required.",
-  "Do not use if a footprint other than Texas_B3QFN-14-1EP_5x5.5mm_P0.65mm_ThermalVia is needed."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than QFN."
  ],
  "keywords": [
-  "ic",
-  "power converter",
-  "buck",
-  "qfn",
-  "smd",
-  "dcdc",
   "converter",
-  "tpsm53602rda",
-  "tpsm53603rda",
-  "tpsm53604rda",
-  "b3qfn",
-  "thermalvia",
   "texas",
+  "dcdc",
   "dc",
+  "b3qfn",
+  "qfn",
   "input",
   "stepdown",
   "1ep",
@@ -40,6 +32,7 @@
   "5mm",
   "p0",
   "65mm",
+  "thermalvia",
   "instruments",
   "step"
  ],
@@ -64,7 +57,7 @@
   "tier_counts": {
    "B": 3
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -97,6 +90,6 @@
   "kicad-symbols/Converter_DCDC/TPSM53603RDA",
   "kicad-symbols/Converter_DCDC/TPSM53604RDA"
  ],
- "embedding_text": "ic-power-converter.qfn.buck | IC Power Converter | Surface-mount buck IC power converters in QFN packages matching the Texas_B3QFN-14-1EP_5x5.5mm_P0.65mm_ThermalVia footprint. | ic power converter buck qfn smd dcdc converter tpsm53602rda tpsm53603rda tpsm53604rda b3qfn thermalvia texas dc input stepdown 1ep 5x5 5mm p0 65mm instruments step | QFN | buck",
+ "embedding_text": "ic-power-converter.qfn.buck | IC Power Converter | 3 ic power converter parts for buck using QFN footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | converter texas dcdc dc b3qfn qfn input stepdown 1ep 5x5 5mm p0 65mm thermalvia instruments step | QFN | buck",
  "class": "ic.power.converter"
 }

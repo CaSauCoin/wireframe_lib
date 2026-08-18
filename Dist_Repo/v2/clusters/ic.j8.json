@@ -5,30 +5,23 @@
  "category_path": [
   "IC"
  ],
- "description": "IC component cluster containing 3 quality tier C parts within the J8 package family using footprints J8-C1T, J8-C2T, and J8-D2T.",
+ "description": "3 ic parts using J8 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when requiring an IC component with a J8 package family footprint.",
-  "Verify requirements against footprints J8-C1T, J8-C2T, or J8-D2T.",
-  "Note that all 3 parts are assigned to quality tier C with unknown mounting."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a J8 land pattern is intended."
  ],
  "avoid_when": [
-  "The layout requires a package family other than J8.",
-  "Parts with a quality tier higher than tier C are required.",
-  "Explicit mounting specification is required rather than unknown."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than J8."
  ],
  "keywords": [
-  "ic",
   "j8",
-  "j8-c1t",
-  "j8-c2t",
-  "j8-d2t",
+  "ic",
   "c1t",
   "c2t",
   "d2t",
-  "tier c",
-  "dist-legacy",
-  "package family j8",
-  "ic j8",
   "pad",
   "mm",
   "pitch",
@@ -55,7 +48,7 @@
   "tier_counts": {
    "C": 3
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
@@ -63,6 +56,6 @@
   "dist-legacy/J8-C2T",
   "dist-legacy/J8-D2T"
  ],
- "embedding_text": "ic.j8 | IC | IC component cluster containing 3 quality tier C parts within the J8 package family using footprints J8-C1T, J8-C2T, and J8-D2T. | ic j8 j8-c1t j8-c2t j8-d2t c1t c2t d2t tier c dist-legacy package family j8 ic j8 pad mm pitch pins | J8 | ",
+ "embedding_text": "ic.j8 | IC | 3 ic parts using J8 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | j8 ic c1t c2t d2t pad mm pitch pins | J8 | ",
  "class": "ic"
 }

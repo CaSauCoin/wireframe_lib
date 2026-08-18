@@ -6,32 +6,23 @@
   "Power",
   "Power Supply"
  ],
- "description": "Power supply and battery management components in surface-mount SOT-23 packages with SOT-23-6 footprints.",
+ "description": "2 power power supply parts using SOT-23 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Confirm the board layout requires an SMD SOT-23-6 footprint.",
-  "Verify specific circuit requirements when choosing between parts like AP9101CK6 and DW01A.",
-  "Check source symbol definitions and pin mappings before schematic integration."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SOT-23 land pattern is intended."
  ],
  "avoid_when": [
-  "The circuit requires through-hole mounting rather than SMD.",
-  "The layout requires a footprint other than SOT-23-6.",
-  "The system requires non-SOT-23 package families."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SOT-23."
  ],
  "keywords": [
-  "power",
-  "power supply",
-  "sot-23",
-  "sot-23-6",
-  "smd",
-  "surface mount",
-  "battery management",
-  "ap9101ck6",
-  "dw01a",
-  "kicad-symbols",
   "sot",
   "battery",
   "li",
   "protection",
+  "power",
   "ion",
   "management",
   "ic",
@@ -39,6 +30,7 @@
   "single",
   "cell",
   "to",
+  "smd",
   "supply",
   "overcharge",
   "overcurrent"
@@ -62,7 +54,7 @@
   "tier_counts": {
    "A": 2
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -86,6 +78,6 @@
   "kicad-symbols/Battery_Management/AP9101CK6",
   "kicad-symbols/Battery_Management/DW01A"
  ],
- "embedding_text": "power-supply.sot-23 | Power Power Supply | Power supply and battery management components in surface-mount SOT-23 packages with SOT-23-6 footprints. | power power supply sot-23 sot-23-6 smd surface mount battery management ap9101ck6 dw01a kicad-symbols sot battery li protection ion management ic for single cell to supply overcharge overcurrent | SOT-23 | ",
+ "embedding_text": "power-supply.sot-23 | Power Power Supply | 2 power power supply parts using SOT-23 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | sot battery li protection power ion management ic for single cell to smd supply overcharge overcurrent | SOT-23 | ",
  "class": "power.supply"
 }

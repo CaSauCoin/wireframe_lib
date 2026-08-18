@@ -6,28 +6,21 @@
   "Passive",
   "Capacitor"
  ],
- "description": "Surface-mount passive capacitor cluster containing 2 Tier-C parts using C2824 and C2824_50 footprints from the chilaboard-altium-library.",
+ "description": "2 passive capacitor parts using C2824 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Verify compatibility between C2824 and C2824_50 footprint variants.",
-  "Select when a surface-mount C2824 passive capacitor package is required.",
-  "Account for Tier C quality rating and generated review status."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a C2824 land pattern is intended."
  ],
  "avoid_when": [
-  "A package family or footprint other than C2824 or C2824_50 is required.",
-  "Through-hole mounting is required instead of SMD.",
-  "Parts rated above Tier C or planner-visible parts are required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than C2824."
  ],
  "keywords": [
+  "c2824",
   "passive",
   "capacitor",
-  "c2824",
-  "c2824_50",
-  "smd",
-  "surface mount",
-  "passive capacitor",
-  "chilaboard-altium-library",
-  "tier c",
-  "footprint",
   "surface",
   "mount",
   "pad",
@@ -55,13 +48,13 @@
   "tier_counts": {
    "C": 2
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
   "chilaboard-altium-library/C2824/C2824",
   "chilaboard-altium-library/C2824_50/C2824_50"
  ],
- "embedding_text": "passive-capacitor.c2824 | Passive Capacitor | Surface-mount passive capacitor cluster containing 2 Tier-C parts using C2824 and C2824_50 footprints from the chilaboard-altium-library. | passive capacitor c2824 c2824_50 smd surface mount passive capacitor chilaboard-altium-library tier c footprint surface mount pad mm pitch pins | C2824 | ",
+ "embedding_text": "passive-capacitor.c2824 | Passive Capacitor | 2 passive capacitor parts using C2824 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | c2824 passive capacitor surface mount pad mm pitch pins | C2824 | ",
  "class": "passive.capacitor"
 }

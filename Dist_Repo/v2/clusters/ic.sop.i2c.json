@@ -5,29 +5,22 @@
  "category_path": [
   "IC"
  ],
- "description": "Contains 2 tier B I2C integrated circuit parts in SOP package footprints from JLCPCB-Kicad-Library and dist-legacy.",
+ "description": "2 ic parts for I2C using SOP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when an I2C IC in an SOP or SOP-8 footprint is required.",
-  "Verify exact footprint dimensions such as SOP-8_L5.0-W3.8-P1.27-LS6.0-BL against PCB requirements.",
-  "Choose based on source library preference between JLCPCB-Kicad-Library and dist-legacy."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SOP land pattern is intended."
  ],
  "avoid_when": [
-  "The board design requires a package family other than SOP.",
-  "The circuit requires a bus interface other than I2C.",
-  "Parts with a quality tier higher than tier B are strictly required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SOP."
  ],
  "keywords": [
-  "ic",
-  "i2c",
   "sop",
-  "sop-8",
-  "sop 8",
+  "i2c",
+  "ic",
   "4kbit",
-  "smd",
-  "jlcpcb-kicad-library",
-  "dist-legacy",
-  "sop-8_l5.0-w3.8-p1.27-ls6.0-bl",
-  "tier b",
   "l5",
   "w3",
   "p1",
@@ -65,7 +58,7 @@
   "tier_counts": {
    "B": 2
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -89,6 +82,6 @@
   "JLCPCB-Kicad-Library/600856/4Kbit, I2C",
   "dist-legacy/SOP 8"
  ],
- "embedding_text": "ic.sop.i2c | IC | Contains 2 tier B I2C integrated circuit parts in SOP package footprints from JLCPCB-Kicad-Library and dist-legacy. | ic i2c sop sop-8 sop 8 4kbit smd jlcpcb-kicad-library dist-legacy sop-8_l5.0-w3.8-p1.27-ls6.0-bl tier b l5 w3 p1 ls6 bl c600856 clock oscillator 400khz soic eeprom rohs | SOP | I2C",
+ "embedding_text": "ic.sop.i2c | IC | 2 ic parts for I2C using SOP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | sop i2c ic 4kbit l5 w3 p1 ls6 bl c600856 clock oscillator 400khz soic eeprom rohs | SOP | I2C",
  "class": "ic"
 }

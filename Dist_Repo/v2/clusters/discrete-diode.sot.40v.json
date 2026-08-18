@@ -6,44 +6,34 @@
   "Discrete",
   "Diode"
  ],
- "description": "Cluster of 41 SMD discrete diodes rated 40V, spanning SOT-family footprints (SOT-323/143/343/363/416/563/666/223), sourced from Alternate-KiCad-Library; 40 tier A parts, 1 tier B, metadata status is generated.",
+ "description": "41 discrete diode parts for 40V using SOT footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Match the exact SOT footprint variant (e.g. SOT-323_SC-70 vs SOT-563) to your PCB land pattern",
-  "Prefer one of the 40 tier A parts over the single tier B entry",
-  "Confirm the part's 40V rating meets your circuit's voltage margin",
-  "Cross-check the chosen footprint against the part's actual pad count/pitch before layout"
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SOT land pattern is intended."
  ],
  "avoid_when": [
-  "Required footprint is not one of the listed SOT variants",
-  "Design needs a through-hole or non-SOT package",
-  "review_status is generated and independent datasheet confirmation is required before use",
-  "Circuit voltage/current needs are not confirmed against the part's actual rating"
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SOT."
  ],
  "keywords": [
   "sot",
   "diode",
-  "discrete diode",
-  "40v",
-  "smd",
-  "sot-323",
-  "sc-70",
-  "sot-143",
-  "sot-343",
-  "sot-363",
-  "sot-416",
-  "sot-563",
-  "sot-666",
-  "sot-223",
-  "alternate-kicad-library",
-  "akl",
   "schottky",
-  "tier a",
+  "40v",
   "dual",
   "sc",
+  "akl",
   "alternate",
   "kicad",
   "library",
-  "discrete"
+  "discrete",
+  "independent",
+  "120ma",
+  "bas40",
+  "common",
+  "series"
  ],
  "facts": {
   "package_family": "SOT",
@@ -74,7 +64,7 @@
    "A": 40,
    "B": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -161,6 +151,6 @@
   "Alternate-KiCad-Library/Diode_Schottky_AKL/BAS4002A",
   "Alternate-KiCad-Library/Diode_Schottky_AKL/1PS75SB45"
  ],
- "embedding_text": "discrete-diode.sot.40v | Discrete Diode | Cluster of 41 SMD discrete diodes rated 40V, spanning SOT-family footprints (SOT-323/143/343/363/416/563/666/223), sourced from Alternate-KiCad-Library; 40 tier A parts, 1 tier B, metadata status is generated. | sot diode discrete diode 40v smd sot-323 sc-70 sot-143 sot-343 sot-363 sot-416 sot-563 sot-666 sot-223 alternate-kicad-library akl schottky tier a dual sc alternate kicad library discrete | SOT | 40V",
+ "embedding_text": "discrete-diode.sot.40v | Discrete Diode | 41 discrete diode parts for 40V using SOT footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | sot diode schottky 40v dual sc akl alternate kicad library discrete independent 120ma bas40 common series | SOT | 40V",
  "class": "discrete.diode"
 }

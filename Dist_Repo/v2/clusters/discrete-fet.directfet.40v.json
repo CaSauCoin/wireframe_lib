@@ -6,31 +6,22 @@
   "Discrete",
   "FET"
  ],
- "description": "A cluster of 12 surface-mount 40V discrete FET parts using DirectFET footprints.",
+ "description": "12 discrete fet parts for 40V using DirectFET footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select based on the required DirectFET footprint variant such as MX, ME, L8, MF, MT, or ST.",
-  "Prefer Tier A quality rated parts over Tier B entries.",
-  "Confirm application compatibility with the 40V rating."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a DirectFET land pattern is intended."
  ],
  "avoid_when": [
-  "The circuit requires a voltage rating other than 40V.",
-  "The layout requires non-SMD or non-DirectFET package footprints."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than DirectFET."
  ],
  "keywords": [
-  "discrete fet",
-  "discrete",
+  "directfet",
+  "mosfet",
   "fet",
   "40v",
-  "directfet",
-  "smd",
-  "directfet_mx",
-  "directfet_me",
-  "directfet_l8",
-  "directfet_mf",
-  "directfet_mt",
-  "directfet_st",
-  "kicad-symbols",
-  "mosfet",
   "channel",
   "transistor",
   "id",
@@ -38,9 +29,11 @@
   "rds",
   "mx",
   "infineon",
+  "discrete",
   "me",
   "l8",
-  "mf"
+  "mf",
+  "4mohm"
  ],
  "facts": {
   "package_family": "DirectFET",
@@ -69,7 +62,7 @@
    "A": 10,
    "B": 2
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -127,6 +120,6 @@
   "kicad-symbols/Transistor_FET/IRF40DM229",
   "kicad-symbols/Transistor_FET/IRF7483M"
  ],
- "embedding_text": "discrete-fet.directfet.40v | Discrete FET | A cluster of 12 surface-mount 40V discrete FET parts using DirectFET footprints. | discrete fet discrete fet 40v directfet smd directfet_mx directfet_me directfet_l8 directfet_mf directfet_mt directfet_st kicad-symbols mosfet channel transistor id vds rds mx infineon me l8 mf | DirectFET | 40V",
+ "embedding_text": "discrete-fet.directfet.40v | Discrete FET | 12 discrete fet parts for 40V using DirectFET footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | directfet mosfet fet 40v channel transistor id vds rds mx infineon discrete me l8 mf 4mohm | DirectFET | 40V",
  "class": "discrete.fet"
 }

@@ -7,33 +7,24 @@
   "Analog",
   "Op-Amp"
  ],
- "description": "Analog operational amplifier ICs in surface-mount WSON packaging, associated with 5V and 4.5V facets and WSON-8-1EP footprint.",
+ "description": "1 ic analog op-amp parts for 5V, 4.5V using WSON footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when requiring surface-mount (SMD) analog op-amp ICs in a WSON package.",
-  "Verify footprint compatibility with WSON-8-1EP_3x3mm_P0.5mm_EP1.45x2.4mm.",
-  "Confirm application compatibility with 5V or 4.5V voltage facets."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a WSON land pattern is intended."
  ],
  "avoid_when": [
-  "Through-hole (THT) mounting or a non-WSON package is required.",
-  "The PCB design cannot use the WSON-8-1EP_3x3mm_P0.5mm_EP1.45x2.4mm footprint.",
-  "Design voltage requirements fall outside the 5V and 4.5V facets."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than WSON."
  ],
  "keywords": [
-  "ic",
-  "analog",
-  "op-amp",
-  "operational amplifier",
   "wson",
-  "wson-8-1ep",
-  "5v",
-  "4.5v",
-  "smd",
-  "ina821xdrg",
-  "kicad-symbols",
-  "wson-8-1ep_3x3mm_p0.5mm_ep1.45x2.4mm",
   "amplifier",
   "instrumentation",
   "low",
+  "5v",
+  "ina821xdrg",
   "mhz",
   "bandwidth",
   "offset",
@@ -42,7 +33,8 @@
   "4kohm",
   "rg",
   "to",
-  "supply"
+  "supply",
+  "1ep"
  ],
  "facts": {
   "package_family": "WSON",
@@ -66,7 +58,7 @@
   "tier_counts": {
    "B": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -81,6 +73,6 @@
  "part_ids": [
   "kicad-symbols/Amplifier_Instrumentation/INA821xDRG"
  ],
- "embedding_text": "ic-analog-opamp.wson.5v.4-5v | IC Analog Op-Amp | Analog operational amplifier ICs in surface-mount WSON packaging, associated with 5V and 4.5V facets and WSON-8-1EP footprint. | ic analog op-amp operational amplifier wson wson-8-1ep 5v 4.5v smd ina821xdrg kicad-symbols wson-8-1ep_3x3mm_p0.5mm_ep1.45x2.4mm amplifier instrumentation low mhz bandwidth offset power precision 4kohm rg to supply | WSON | 5V 4.5V",
+ "embedding_text": "ic-analog-opamp.wson.5v.4-5v | IC Analog Op-Amp | 1 ic analog op-amp parts for 5V, 4.5V using WSON footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | wson amplifier instrumentation low 5v ina821xdrg mhz bandwidth offset power precision 4kohm rg to supply 1ep | WSON | 5V 4.5V",
  "class": "ic.analog.opamp"
 }

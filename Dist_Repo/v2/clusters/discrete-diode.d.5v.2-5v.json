@@ -6,44 +6,34 @@
   "Discrete",
   "Diode"
  ],
- "description": "Discrete SMD diode cluster (D package family) covering zener and TVS parts tagged 5V/2.5V facets, spanning SOD-523/123/323/882 and MELF footprints from Alternate-KiCad-Library and JLCPCB-Kicad-Library sources.",
+ "description": "8 discrete diode parts for 5V, 2.5V using D footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Prefer tier A entries with exact footprint match",
-  "Confirm zener vs TVS diode type matches the circuit need",
-  "Verify the 5V/2.5V facet against the part's actual rating before use",
-  "Match footprint precisely (SOD-523/123/323/882 vs MicroMELF/MiniMELF differ in pad layout)"
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a D land pattern is intended."
  ],
  "avoid_when": [
-  "Required voltage, current, or speed rating is not confirmed by the selected part",
-  "Symbol-footprint pairing is guessed or flagged for review",
-  "Board layout requires a package outside the D family",
-  "Circuit needs a diode type (e.g. rectifier, Schottky) not represented among the zener/TVS parts here"
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than D."
  ],
  "keywords": [
   "diode",
-  "discrete diode",
-  "zener diode",
-  "tvs diode",
   "5v",
-  "2.5v",
-  "sod-523",
-  "sod-123",
-  "sod-323",
-  "sod-882",
-  "micromelf",
-  "minimelf",
-  "dfn1006-2",
-  "smd diode",
-  "d package",
-  "akl",
-  "jlcpcb",
-  "kicad library",
   "sod",
   "tvs",
   "zener",
   "discrete",
+  "akl",
   "alternate",
-  "kicad"
+  "kicad",
+  "library",
+  "unidirectional",
+  "dfn1006",
+  "micromelf",
+  "500mw",
+  "bzm5222b",
+  "sod523"
  ],
  "facts": {
   "package_family": "D",
@@ -75,7 +65,7 @@
    "A": 6,
    "B": 2
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -129,6 +119,6 @@
   "Alternate-KiCad-Library/Diode_TVS_AKL/AOZ8211DI-02",
   "Alternate-KiCad-Library/Diode_TVS_AKL/AOZ8231ADI-02"
  ],
- "embedding_text": "discrete-diode.d.5v.2-5v | Discrete Diode | Discrete SMD diode cluster (D package family) covering zener and TVS parts tagged 5V/2.5V facets, spanning SOD-523/123/323/882 and MELF footprints from Alternate-KiCad-Library and JLCPCB-Kicad-Library sources. | diode discrete diode zener diode tvs diode 5v 2.5v sod-523 sod-123 sod-323 sod-882 micromelf minimelf dfn1006-2 smd diode d package akl jlcpcb kicad library sod tvs zener discrete alternate kicad | D | 5V 2.5V",
+ "embedding_text": "discrete-diode.d.5v.2-5v | Discrete Diode | 8 discrete diode parts for 5V, 2.5V using D footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | diode 5v sod tvs zener discrete akl alternate kicad library unidirectional dfn1006 micromelf 500mw bzm5222b sod523 | D | 5V 2.5V",
  "class": "discrete.diode"
 }

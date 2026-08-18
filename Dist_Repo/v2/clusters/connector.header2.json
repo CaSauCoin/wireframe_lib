@@ -5,34 +5,20 @@
  "category_path": [
   "Connector"
  ],
- "description": "Connector cluster using the Header2 footprint, containing a single tier-C, generated/unreviewed part from the dist-legacy source with mount type unrecorded.",
+ "description": "1 connector parts using Header2 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Only one part exists in this cluster; confirm it actually meets your requirements before use.",
-  "Verify the Header2 footprint matches your intended PCB land pattern.",
-  "Check pin-to-pad mapping manually since mount type is not recorded.",
-  "Treat as unreviewed (tier C, generated status) and validate against a datasheet if available."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a Header2 land pattern is intended."
  ],
  "avoid_when": [
-  "A reviewed or higher-quality-tier part is required.",
-  "Mount type (through-hole vs surface-mount) must be known in advance.",
-  "A footprint other than Header2 is needed.",
-  "Sourcing beyond a single legacy-dataset entry is required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than Header2."
  ],
  "keywords": [
   "header2",
   "connector",
-  "header",
-  "2-pin header",
-  "pin header",
-  "board connector",
-  "pcb header",
-  "generated",
-  "tier c",
-  "unreviewed",
-  "dist-legacy",
-  "single part",
-  "unknown mount",
-  "footprint",
   "pad",
   "mm",
   "pitch",
@@ -57,12 +43,12 @@
   "tier_counts": {
    "C": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
   "dist-legacy/Header2"
  ],
- "embedding_text": "connector.header2 | Connector | Connector cluster using the Header2 footprint, containing a single tier-C, generated/unreviewed part from the dist-legacy source with mount type unrecorded. | header2 connector header 2-pin header pin header board connector pcb header generated tier c unreviewed dist-legacy single part unknown mount footprint pad mm pitch pins | Header2 | ",
+ "embedding_text": "connector.header2 | Connector | 1 connector parts using Header2 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | header2 connector pad mm pitch pins | Header2 | ",
  "class": "connector"
 }

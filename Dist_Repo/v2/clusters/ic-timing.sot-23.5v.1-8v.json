@@ -6,34 +6,24 @@
   "IC",
   "Timing"
  ],
- "description": "Surface-mount timing IC cluster featuring 5V and 1.8V options in the SOT-23 package family with SOT-23-6 footprints.",
+ "description": "3 ic timing parts for 5V, 1.8V using SOT-23 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select between 1.8V and 5V facet ratings based on operating requirements.",
-  "Verify SOT-23-6 footprint compatibility with target PCB layout.",
-  "Choose between representative timing parts TPL5010, TPL5110, and TPL5111."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SOT-23 land pattern is intended."
  ],
  "avoid_when": [
-  "The application requires packages other than SOT-23 or SOT-23-6.",
-  "Through-hole mounting is required instead of surface mount.",
-  "Operating voltage requirements fall outside 1.8V and 5V."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SOT-23."
  ],
  "keywords": [
-  "ic timing",
-  "timing ic",
-  "timer",
-  "sot-23",
-  "sot-23-6",
-  "smd",
-  "5v",
-  "1.8v",
-  "tpl5010",
-  "tpl5110",
-  "tpl5111",
-  "kicad-symbols",
   "sot",
+  "timer",
   "to",
   "nano",
   "8v",
+  "5v",
   "active",
   "power",
   "na",
@@ -41,7 +31,9 @@
   "vdd",
   "iout",
   "max",
-  "1ma"
+  "1ma",
+  "smd",
+  "wake"
  ],
  "facts": {
   "package_family": "SOT-23",
@@ -65,7 +57,7 @@
   "tier_counts": {
    "A": 3
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -98,6 +90,6 @@
   "kicad-symbols/Timer/TPL5110",
   "kicad-symbols/Timer/TPL5111"
  ],
- "embedding_text": "ic-timing.sot-23.5v.1-8v | IC Timing | Surface-mount timing IC cluster featuring 5V and 1.8V options in the SOT-23 package family with SOT-23-6 footprints. | ic timing timing ic timer sot-23 sot-23-6 smd 5v 1.8v tpl5010 tpl5110 tpl5111 kicad-symbols sot to nano 8v active power na ms vdd iout max 1ma | SOT-23 | 5V 1.8V",
+ "embedding_text": "ic-timing.sot-23.5v.1-8v | IC Timing | 3 ic timing parts for 5V, 1.8V using SOT-23 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | sot timer to nano 8v 5v active power na ms vdd iout max 1ma smd wake | SOT-23 | 5V 1.8V",
  "class": "ic.timing"
 }

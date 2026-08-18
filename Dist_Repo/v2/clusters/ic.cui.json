@@ -5,43 +5,34 @@
  "category_path": [
   "IC"
  ],
- "description": "Cluster of 28 IC parts in the CUI package family featuring SMD, through-hole, and unknown mounting options across 12 footprints.",
+ "description": "28 ic parts using CUI footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Choose when requiring an IC component using the CUI package family.",
-  "Filter by specific footprint names such as CUI, CUI_CEM-1201, CUI V78, or PJ series variants.",
-  "Select appropriate mounting style including SMD or through-hole.",
-  "Prefer higher-scoring tier B parts over tier C entries."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a CUI land pattern is intended."
  ],
  "avoid_when": [
-  "Do not use when the design requires package families other than CUI.",
-  "Avoid if mounting requirements are incompatible with SMD or through-hole footprints.",
-  "Avoid when tier C or unknown-mount parts lack required quality validation."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than CUI."
  ],
  "keywords": [
   "cui",
-  "ic",
-  "smd",
-  "through_hole",
-  "v78",
-  "cem-1201",
-  "mj-2523-smt",
-  "pdse1-s",
-  "sj-43514",
-  "sj-43515rs-smt-tr",
-  "pj-002ah-smt-tr",
-  "pj-002bh-smt-tr",
-  "pj-012b",
-  "pj-014d",
-  "pj-015bh-smt",
-  "pj-040d",
   "pj",
   "smt",
+  "ic",
   "tr",
   "pins",
   "pad",
   "mm",
   "pitch",
-  "sj"
+  "v78",
+  "sj",
+  "surface",
+  "mount",
+  "mj",
+  "002ah",
+  "002bh"
  ],
  "facts": {
   "package_family": "CUI",
@@ -77,7 +68,7 @@
    "B": 5,
    "C": 23
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -151,6 +142,6 @@
   "celestial-altium-library/CUI PJ-075-SMT/CUI_PJ-075-SMT",
   "celestial-altium-library/CUI UJ31-CH-31-SMT-TR/CUI_UJ31-CH-31-SMT-TR"
  ],
- "embedding_text": "ic.cui | IC | Cluster of 28 IC parts in the CUI package family featuring SMD, through-hole, and unknown mounting options across 12 footprints. | cui ic smd through_hole v78 cem-1201 mj-2523-smt pdse1-s sj-43514 sj-43515rs-smt-tr pj-002ah-smt-tr pj-002bh-smt-tr pj-012b pj-014d pj-015bh-smt pj-040d pj smt tr pins pad mm pitch sj | CUI | ",
+ "embedding_text": "ic.cui | IC | 28 ic parts using CUI footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | cui pj smt ic tr pins pad mm pitch v78 sj surface mount mj 002ah 002bh | CUI | ",
  "class": "ic"
 }

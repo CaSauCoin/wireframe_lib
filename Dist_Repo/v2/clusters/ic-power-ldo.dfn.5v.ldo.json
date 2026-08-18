@@ -7,42 +7,34 @@
   "Power",
   "Linear Regulator"
  ],
- "description": "Surface-mount IC power linear regulator cluster of 7 parts featuring DFN footprints with 5V, LDO, and 2.5V facets.",
+ "description": "7 ic power linear regulator parts for 5V, LDO, 2.5V using DFN footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Match required footprint to specific DFN package size, pitch, and exposed pad dimensions.",
-  "Prefer tier A parts over tier B parts for higher quality rating.",
-  "Select appropriate pin count variant among DFN-6, DFN-8, and DFN-10 footprints."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a DFN land pattern is intended."
  ],
  "avoid_when": [
-  "Through-hole or non-SMD mounting is required.",
-  "The design requires package families other than DFN.",
-  "Voltage or regulator specs require facets beyond 5V, 2.5V, or LDO."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than DFN."
  ],
  "keywords": [
-  "ic",
-  "power",
-  "linear regulator",
-  "ldo",
-  "dfn",
-  "smd",
-  "5v",
-  "2.5v",
-  "dfn-6",
-  "dfn-8",
-  "dfn-10",
-  "exposed pad",
-  "surface mount",
-  "kicad-symbols",
   "regulator",
+  "dfn",
+  "5v",
   "linear",
   "low",
+  "ldo",
   "fixed",
   "positive",
   "p0",
+  "ic",
+  "power",
   "output",
   "dropout",
   "current",
-  "1ep"
+  "1ep",
+  "ep1"
  ],
  "facts": {
   "package_family": "DFN",
@@ -72,7 +64,7 @@
    "A": 4,
    "B": 3
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -125,6 +117,6 @@
   "kicad-symbols/Regulator_Linear/LDK130PU25R_DFN6",
   "kicad-symbols/Regulator_Linear/AP7370-15FDC"
  ],
- "embedding_text": "ic-power-ldo.dfn.5v.ldo | IC Power Linear Regulator | Surface-mount IC power linear regulator cluster of 7 parts featuring DFN footprints with 5V, LDO, and 2.5V facets. | ic power linear regulator ldo dfn smd 5v 2.5v dfn-6 dfn-8 dfn-10 exposed pad surface mount kicad-symbols regulator linear low fixed positive p0 output dropout current 1ep | DFN | 5V LDO 2.5V",
+ "embedding_text": "ic-power-ldo.dfn.5v.ldo | IC Power Linear Regulator | 7 ic power linear regulator parts for 5V, LDO, 2.5V using DFN footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | regulator dfn 5v linear low ldo fixed positive p0 ic power output dropout current 1ep ep1 | DFN | 5V LDO 2.5V",
  "class": "ic.power.ldo"
 }

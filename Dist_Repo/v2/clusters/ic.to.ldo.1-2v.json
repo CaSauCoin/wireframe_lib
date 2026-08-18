@@ -5,43 +5,34 @@
  "category_path": [
   "IC"
  ],
- "description": "Cluster of 14 1.2V LDO regulator ICs in the TO package family supporting surface-mount and through-hole mounting styles across footprints such as TO-252-2, TO-263-2, TO-220-3, and TO-92.",
+ "description": "14 ic parts for LDO, 1.2V using TO footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when requiring a 1.2V LDO regulator in a TO package family footprint.",
-  "Filter by surface-mount (TO-252-2, TO-263-2) or through-hole (TO-220-3, TO-92) mounting style.",
-  "Choose between Tier A (13 parts) and Tier B (1 part) quality levels.",
-  "Filter by source library preference, such as Alternate-KiCad-Library or JLCPCB-Kicad-Library."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a TO land pattern is intended."
  ],
  "avoid_when": [
-  "Output voltages other than 1.2V are required.",
-  "The PCB design requires footprints outside the TO package family.",
-  "IC regulator architectures other than LDO are needed."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than TO."
  ],
  "keywords": [
-  "ldo",
-  "1.2v",
   "to",
-  "ic",
-  "to-252-2",
-  "to-263-2",
-  "to-220-3",
-  "to-92",
-  "smd",
-  "through_hole",
-  "alternate-kicad-library",
-  "jlcpcb-kicad-library",
-  "ap2114d-1.2trg1",
-  "ap7361-12d",
   "2v",
   "voltage",
   "regulator",
+  "ldo",
   "low",
   "dropout",
   "1a",
   "dpak",
+  "ic",
   "akl",
   "alternate",
-  "kicad"
+  "kicad",
+  "library",
+  "vreg",
+  "pmic"
  ],
  "facts": {
   "package_family": "TO",
@@ -73,7 +64,7 @@
    "A": 13,
    "B": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -133,6 +124,6 @@
   "Alternate-KiCad-Library/Voltage_Regulator_AKL/ZLDO1117K12TC",
   "JLCPCB-Kicad-Library/631708/LDO, 13-450V, 0.01A"
  ],
- "embedding_text": "ic.to.ldo.1-2v | IC | Cluster of 14 1.2V LDO regulator ICs in the TO package family supporting surface-mount and through-hole mounting styles across footprints such as TO-252-2, TO-263-2, TO-220-3, and TO-92. | ldo 1.2v to ic to-252-2 to-263-2 to-220-3 to-92 smd through_hole alternate-kicad-library jlcpcb-kicad-library ap2114d-1.2trg1 ap7361-12d 2v voltage regulator low dropout 1a dpak akl alternate kicad | TO | LDO 1.2V",
+ "embedding_text": "ic.to.ldo.1-2v | IC | 14 ic parts for LDO, 1.2V using TO footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | to 2v voltage regulator ldo low dropout 1a dpak ic akl alternate kicad library vreg pmic | TO | LDO 1.2V",
  "class": "ic"
 }

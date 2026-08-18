@@ -6,29 +6,21 @@
   "Passive",
   "Resistor"
  ],
- "description": "Cluster of SMD passive resistor parts associated with the R0508A package family and footprint.",
+ "description": "1 passive resistor parts using R0508A footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Verify that the PCB layout requires an R0508A SMD footprint.",
-  "Check individual part electrical specifications and ratings before design integration.",
-  "Review quality tier and library source details for validation."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a R0508A land pattern is intended."
  ],
  "avoid_when": [
-  "A package family or footprint other than R0508A is needed.",
-  "Through-hole mounting is required instead of SMD.",
-  "Electrical ratings or tolerance requirements cannot be verified from available records."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than R0508A."
  ],
  "keywords": [
   "r0508a",
   "passive",
   "resistor",
-  "passive resistor",
-  "smd",
-  "surface mount",
-  "r0508a footprint",
-  "r0508a package",
-  "passive component",
-  "chilaboard-altium-library",
-  "resistors",
   "surface",
   "mount",
   "pad",
@@ -55,12 +47,12 @@
   "tier_counts": {
    "C": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
   "chilaboard-altium-library/R0508A/R0508A"
  ],
- "embedding_text": "passive-resistor.r0508a | Passive Resistor | Cluster of SMD passive resistor parts associated with the R0508A package family and footprint. | r0508a passive resistor passive resistor smd surface mount r0508a footprint r0508a package passive component chilaboard-altium-library resistors surface mount pad mm pitch pins | R0508A | ",
+ "embedding_text": "passive-resistor.r0508a | Passive Resistor | 1 passive resistor parts using R0508A footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | r0508a passive resistor surface mount pad mm pitch pins | R0508A | ",
  "class": "passive.resistor"
 }

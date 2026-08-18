@@ -5,31 +5,21 @@
  "category_path": [
   "IC"
  ],
- "description": "Integrated circuit cluster containing 5 SMD parts across the SON65 package family, including footprint variants SON65_6T_3333, SON65_8T_3030, SON65_6T_2020, and SON65_8_3030.",
+ "description": "5 ic parts using SON65 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Choose when needing an SMD integrated circuit in the SON65 package family.",
-  "Confirm matching footprint variants such as SON65_6T_3333, SON65_8T_3030, SON65_6T_2020, or SON65_8_3030.",
-  "Check part quality tier ratings, with 1 tier B part and 4 tier C parts available."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SON65 land pattern is intended."
  ],
  "avoid_when": [
-  "Avoid when the layout requires packages other than SON65.",
-  "Avoid when through-hole mounting is required instead of SMD.",
-  "Avoid if the required footprint is not among the available SON65 land patterns."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SON65."
  ],
  "keywords": [
-  "ic",
   "son65",
-  "smd",
-  "surface mount",
-  "son65_6t_3333",
-  "son65_8t_3030",
-  "son65_6t_2020",
-  "son65_8_3030",
-  "vreg_ncp781bmn05_dfn6",
-  "chilaboard-altium-library",
-  "integrated circuit",
-  "package family son65",
   "6t",
+  "ic",
   "8t",
   "surface",
   "mount",
@@ -40,7 +30,9 @@
   "vreg",
   "voltage",
   "regulator",
-  "ncp781bmn05"
+  "ncp781bmn05",
+  "dfn6",
+  "linear"
  ],
  "facts": {
   "package_family": "SON65",
@@ -65,7 +57,7 @@
    "B": 1,
    "C": 4
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -84,6 +76,6 @@
   "chilaboard-altium-library/SON65_6T_3333/SON65_6T_3333",
   "chilaboard-altium-library/SON65_8_3030/SON65_8_3030"
  ],
- "embedding_text": "ic.son65 | IC | Integrated circuit cluster containing 5 SMD parts across the SON65 package family, including footprint variants SON65_6T_3333, SON65_8T_3030, SON65_6T_2020, and SON65_8_3030. | ic son65 smd surface mount son65_6t_3333 son65_8t_3030 son65_6t_2020 son65_8_3030 vreg_ncp781bmn05_dfn6 chilaboard-altium-library integrated circuit package family son65 6t 8t surface mount pad mm pitch pins vreg voltage regulator ncp781bmn05 | SON65 | ",
+ "embedding_text": "ic.son65 | IC | 5 ic parts using SON65 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | son65 6t ic 8t surface mount pad mm pitch pins vreg voltage regulator ncp781bmn05 dfn6 linear | SON65 | ",
  "class": "ic"
 }

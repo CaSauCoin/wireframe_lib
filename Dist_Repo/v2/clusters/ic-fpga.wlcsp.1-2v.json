@@ -6,31 +6,22 @@
   "IC",
   "FPGA"
  ],
- "description": "Cluster of 1.2V FPGA integrated circuits in surface-mount WLCSP packaging with a WLCSP-16 1.409x1.409mm 0.35mm pitch footprint.",
+ "description": "1 ic fpga parts for 1.2V using WLCSP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Targeting 1.2V FPGA IC applications requiring surface-mount WLCSP packaging.",
-  "Verifying PCB land pattern compatibility with WLCSP-16 1.409x1.409mm 0.35mm pitch footprints.",
-  "Selecting tier B quality parts sourced from KiCad symbol libraries."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a WLCSP land pattern is intended."
  ],
  "avoid_when": [
-  "The target design requires operating voltages other than 1.2V.",
-  "The board layout requires package families other than WLCSP or non-SMD mounting.",
-  "The manufacturing process cannot support 0.35mm fine-pitch WLCSP footprints."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than WLCSP."
  ],
  "keywords": [
-  "ic",
   "fpga",
-  "ic fpga",
-  "1.2v",
   "wlcsp",
-  "wlcsp-16",
-  "smd",
-  "ice40ul1k-swg16",
-  "ice40ul1k",
-  "0.35mm pitch",
-  "1.409x1.409mm",
-  "kicad-symbols",
   "2v",
+  "ice40ul1k",
   "swg16",
   "lattice",
   "ice40",
@@ -41,7 +32,8 @@
   "p0",
   "35mm",
   "csp",
-  "programmable"
+  "programmable",
+  "logic"
  ],
  "facts": {
   "package_family": "WLCSP",
@@ -64,7 +56,7 @@
   "tier_counts": {
    "B": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -79,6 +71,6 @@
  "part_ids": [
   "kicad-symbols/FPGA_Lattice/ICE40UL1K-SWG16"
  ],
- "embedding_text": "ic-fpga.wlcsp.1-2v | IC FPGA | Cluster of 1.2V FPGA integrated circuits in surface-mount WLCSP packaging with a WLCSP-16 1.409x1.409mm 0.35mm pitch footprint. | ic fpga ic fpga 1.2v wlcsp wlcsp-16 smd ice40ul1k-swg16 ice40ul1k 0.35mm pitch 1.409x1.409mm kicad-symbols 2v swg16 lattice ice40 ultraplus 409x1 409mm layout4x4 p0 35mm csp programmable | WLCSP | 1.2V",
+ "embedding_text": "ic-fpga.wlcsp.1-2v | IC FPGA | 1 ic fpga parts for 1.2V using WLCSP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | fpga wlcsp 2v ice40ul1k swg16 lattice ice40 ultraplus 409x1 409mm layout4x4 p0 35mm csp programmable logic | WLCSP | 1.2V",
  "class": "ic.fpga"
 }

@@ -6,44 +6,34 @@
   "Discrete",
   "BJT"
  ],
- "description": "Discrete BJT cluster for 60V-facet designs using TSOP-6 SMD packages (footprint TSOP-6_1.65x3.05mm_P0.95mm); contains 3 tier-A parts from Alternate-KiCad-Library, cluster review_status is generated.",
+ "description": "3 discrete bjt parts for 60V using TSOP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "All 3 parts are tier A with an identical score of 100.",
-  "Verify the TSOP-6_1.65x3.05mm_P0.95mm footprint matches your intended land pattern.",
-  "All parts come from a single source (Alternate-KiCad-Library); no cross-source comparison available.",
-  "Cluster review_status is 'generated', not manually verified."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a TSOP land pattern is intended."
  ],
  "avoid_when": [
-  "You need a package other than TSOP-6.",
-  "You need a through-hole part; this cluster is SMD-only.",
-  "You require electrical ratings or specs not captured by the 60V facet listed here.",
-  "You need a part with a reviewed (non-generated) cluster status."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than TSOP."
  ],
  "keywords": [
   "tsop",
-  "tsop-6",
-  "bjt",
   "transistor",
-  "discrete bjt",
-  "60v",
-  "smd",
-  "pbss4160dpn",
-  "pbss4160dpn-h",
-  "pbss4160dpns",
-  "alternate-kicad-library",
-  "tier a",
-  "generated",
-  "1.65x3.05mm",
-  "p0.95mm",
-  "footprint tsop-6",
+  "bjt",
   "npn",
   "pnp",
+  "60v",
+  "pbss4160dpn",
   "akl",
   "array",
   "1a",
   "420mw",
   "alternate",
-  "kicad"
+  "kicad",
+  "library",
+  "65x3",
+  "05mm"
  ],
  "facts": {
   "package_family": "TSOP",
@@ -66,7 +56,7 @@
   "tier_counts": {
    "A": 3
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -99,6 +89,6 @@
   "Alternate-KiCad-Library/Transistor_BJT_AKL/PBSS4160DPN-H",
   "Alternate-KiCad-Library/Transistor_BJT_AKL/PBSS4160DPNs"
  ],
- "embedding_text": "discrete-bjt.tsop.60v | Discrete BJT | Discrete BJT cluster for 60V-facet designs using TSOP-6 SMD packages (footprint TSOP-6_1.65x3.05mm_P0.95mm); contains 3 tier-A parts from Alternate-KiCad-Library, cluster review_status is generated. | tsop tsop-6 bjt transistor discrete bjt 60v smd pbss4160dpn pbss4160dpn-h pbss4160dpns alternate-kicad-library tier a generated 1.65x3.05mm p0.95mm footprint tsop-6 npn pnp akl array 1a 420mw alternate kicad | TSOP | 60V",
+ "embedding_text": "discrete-bjt.tsop.60v | Discrete BJT | 3 discrete bjt parts for 60V using TSOP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | tsop transistor bjt npn pnp 60v pbss4160dpn akl array 1a 420mw alternate kicad library 65x3 05mm | TSOP | 60V",
  "class": "discrete.bjt"
 }

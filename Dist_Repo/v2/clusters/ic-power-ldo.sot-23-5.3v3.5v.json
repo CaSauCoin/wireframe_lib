@@ -7,42 +7,34 @@
   "Power",
   "Linear Regulator"
  ],
- "description": "Surface-mount 3.3V and 5V low dropout (LDO) linear power regulator IC cluster utilizing SOT-23-5 and TSOT-23-5 footprints.",
+ "description": "8 ic power linear regulator parts for 3.3V, 5V, LDO using SOT-23-5 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Targeting 3.3V or 5V low dropout (LDO) linear power regulator ICs.",
-  "Board layout uses SMD SOT-23-5 or TSOT-23-5 footprints.",
-  "Selecting verified tier A parts from the KiCad symbols library."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SOT-23-5 land pattern is intended."
  ],
  "avoid_when": [
-  "Application requires output voltages other than 3.3V or 5V.",
-  "PCB layout requires packages other than SOT-23-5 or TSOT-23-5.",
-  "Non-LDO or switching regulator topologies are required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SOT-23-5."
  ],
  "keywords": [
-  "sot-23-5",
-  "tsot-23-5",
-  "ldo",
-  "linear regulator",
-  "3.3v",
-  "5v",
-  "ic power",
-  "smd",
-  "ap2127k-3.3",
-  "max1615xuk",
-  "me6211c33m5",
-  "mic5365-3.3yd5",
-  "mic5504-3.3ym5",
-  "kicad-symbols",
   "regulator",
   "sot",
   "linear",
+  "5v",
   "3v",
+  "ldo",
   "voltage",
   "to",
   "fixed",
   "power",
   "tsot",
-  "low"
+  "low",
+  "positive",
+  "smd",
+  "ic",
+  "output"
  ],
  "facts": {
   "package_family": "SOT-23-5",
@@ -68,7 +60,7 @@
   "tier_counts": {
    "A": 8
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -122,6 +114,6 @@
   "kicad-symbols/Regulator_Linear/NCV8114ASN330T1G",
   "kicad-symbols/Regulator_Linear/NCV8114BSN330T1G"
  ],
- "embedding_text": "ic-power-ldo.sot-23-5.3v3.5v | IC Power Linear Regulator | Surface-mount 3.3V and 5V low dropout (LDO) linear power regulator IC cluster utilizing SOT-23-5 and TSOT-23-5 footprints. | sot-23-5 tsot-23-5 ldo linear regulator 3.3v 5v ic power smd ap2127k-3.3 max1615xuk me6211c33m5 mic5365-3.3yd5 mic5504-3.3ym5 kicad-symbols regulator sot linear 3v voltage to fixed power tsot low | SOT-23-5 | 3.3V 5V LDO",
+ "embedding_text": "ic-power-ldo.sot-23-5.3v3.5v | IC Power Linear Regulator | 8 ic power linear regulator parts for 3.3V, 5V, LDO using SOT-23-5 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | regulator sot linear 5v 3v ldo voltage to fixed power tsot low positive smd ic output | SOT-23-5 | 3.3V 5V LDO",
  "class": "ic.power.ldo"
 }

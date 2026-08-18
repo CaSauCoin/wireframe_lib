@@ -6,32 +6,19 @@
   "IC",
   "Power"
  ],
- "description": "Surface-mount power IC cluster featuring 8.4V facet parts in SOIC-8 and SOIC-14 footprints, including UC3843 and UC3845 regulator controller symbols.",
+ "description": "4 ic power parts for 8.4V using SOIC footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Choose between SOIC-8 (3.9x4.9mm) and SOIC-14 (3.9x8.7mm) footprints based on pin count.",
-  "Select between UC3843 and UC3845 regulator controller parts for the application.",
-  "Verify suitability for 8.4V facet surface-mount power IC applications."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SOIC land pattern is intended."
  ],
  "avoid_when": [
-  "Through-hole or non-SOIC package footprints are required.",
-  "Target designs require components outside the 8.4V facet power IC class.",
-  "Part selection requires non-SMD mounting styles."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SOIC."
  ],
  "keywords": [
-  "ic",
-  "power",
   "soic",
-  "8.4v",
-  "smd",
-  "uc3843",
-  "uc3845",
-  "soic-8",
-  "soic-14",
-  "regulator_controller",
-  "kicad-symbols",
-  "p1.27mm",
-  "3.9x4.9mm",
-  "3.9x8.7mm",
   "controller",
   "pwm",
   "4v",
@@ -41,7 +28,12 @@
   "controllers",
   "duty",
   "cycle",
-  "6v"
+  "6v",
+  "uvlo",
+  "p1",
+  "27mm",
+  "so",
+  "smps"
  ],
  "facts": {
   "package_family": "SOIC",
@@ -65,7 +57,7 @@
   "tier_counts": {
    "A": 4
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -107,6 +99,6 @@
   "kicad-symbols/Regulator_Controller/UC3845_SOIC14",
   "kicad-symbols/Regulator_Controller/UC3845_SOIC8"
  ],
- "embedding_text": "ic-power.soic.8-4v | IC Power | Surface-mount power IC cluster featuring 8.4V facet parts in SOIC-8 and SOIC-14 footprints, including UC3843 and UC3845 regulator controller symbols. | ic power soic 8.4v smd uc3843 uc3845 soic-8 soic-14 regulator_controller kicad-symbols p1.27mm 3.9x4.9mm 3.9x8.7mm controller pwm 4v regulator current mode controllers duty cycle 6v | SOIC | 8.4V",
+ "embedding_text": "ic-power.soic.8-4v | IC Power | 4 ic power parts for 8.4V using SOIC footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | soic controller pwm 4v regulator current mode controllers duty cycle 6v uvlo p1 27mm so smps | SOIC | 8.4V",
  "class": "ic.power"
 }

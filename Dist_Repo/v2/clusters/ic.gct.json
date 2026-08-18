@@ -5,33 +5,23 @@
  "category_path": [
   "IC"
  ],
- "description": "Integrated circuit cluster of 8 parts using GCT package family footprints, featuring surface-mount options across Tier B and Tier C quality levels.",
+ "description": "8 ic parts using GCT footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select Tier B representative parts for higher quality scores over Tier C entries.",
-  "Verify the specific GCT footprint variant needed, such as SIM8060, SIM8051, or FFC2B28.",
-  "Confirm surface-mount (SMD) compatibility for the target PCB footprint."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a GCT land pattern is intended."
  ],
  "avoid_when": [
-  "A package family other than GCT or non-SMD mounting is required.",
-  "The design demands quality tiers higher than Tier B.",
-  "The required footprint variant is not among the GCT footprints in this cluster."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than GCT."
  ],
  "keywords": [
-  "ic",
   "gct",
-  "smd",
-  "surface mount",
   "sim8060",
-  "sim8051",
+  "ic",
   "ffc2b28",
-  "sim8060-6-0-14-00-a",
-  "sim8060-6-1-14-00-a",
-  "sim8051-6-0-14-01-a",
-  "ffc2b28-24",
-  "celestial altium library",
-  "dist legacy",
-  "tier b",
-  "tier c",
+  "sim8051",
   "sim",
   "pins",
   "pad",
@@ -40,7 +30,9 @@
   "card",
   "connector",
   "surface",
-  "mount"
+  "mount",
+  "pin",
+  "with"
  ],
  "facts": {
   "package_family": "GCT",
@@ -68,7 +60,7 @@
    "B": 2,
    "C": 6
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -98,6 +90,6 @@
   "celestial-altium-library/GCT FFC2B28-24/GCT_FFC2B28-24",
   "celestial-altium-library/GCT SIM8051-6-0-14-01-A/GCT_SIM8051-6-0-14-01-A"
  ],
- "embedding_text": "ic.gct | IC | Integrated circuit cluster of 8 parts using GCT package family footprints, featuring surface-mount options across Tier B and Tier C quality levels. | ic gct smd surface mount sim8060 sim8051 ffc2b28 sim8060-6-0-14-00-a sim8060-6-1-14-00-a sim8051-6-0-14-01-a ffc2b28-24 celestial altium library dist legacy tier b tier c sim pins pad mm pitch card connector surface mount | GCT | ",
+ "embedding_text": "ic.gct | IC | 8 ic parts using GCT footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | gct sim8060 ic ffc2b28 sim8051 sim pins pad mm pitch card connector surface mount pin with | GCT | ",
  "class": "ic"
 }

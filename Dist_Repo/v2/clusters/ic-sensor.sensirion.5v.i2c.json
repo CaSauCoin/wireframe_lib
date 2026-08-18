@@ -6,36 +6,29 @@
   "IC",
   "Sensor"
  ],
- "description": "SMD IC sensor cluster with 5V, I2C, and 5.5V facets comprising Tier B parts SCD40-D-R2 and SCD41-D-R2 in the Sensirion_SCD4x-1EP_10.1x10.1mm_P1.25mm_EP4.8x4.8mm footprint.",
+ "description": "2 ic sensor parts for 5V, I2C, 5.5V using Sensirion footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select for SMD IC sensor applications requiring I2C communication with 5V and 5.5V facets.",
-  "Choose when using the Sensirion_SCD4x-1EP_10.1x10.1mm_P1.25mm_EP4.8x4.8mm footprint.",
-  "Select when choosing between Tier B parts SCD40-D-R2 and SCD41-D-R2 from KiCad symbols."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a Sensirion land pattern is intended."
  ],
  "avoid_when": [
-  "Avoid if through-hole mounting is required instead of SMD.",
-  "Avoid when an interface other than I2C is needed.",
-  "Do not use if a footprint other than Sensirion_SCD4x-1EP_10.1x10.1mm_P1.25mm_EP4.8x4.8mm is required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than Sensirion."
  ],
  "keywords": [
-  "ic",
   "sensor",
-  "sensirion",
-  "5v",
-  "5.5v",
   "i2c",
-  "smd",
-  "scd40-d-r2",
-  "scd41-d-r2",
-  "scd4x",
-  "kicad-symbols",
-  "ic.sensor",
+  "sensirion",
   "co2",
   "ppm",
+  "5v",
   "r2",
   "gas",
   "photoacoustic",
   "accuracy",
+  "scd4x",
   "1ep",
   "1x10",
   "1mm",
@@ -65,7 +58,7 @@
   "tier_counts": {
    "B": 2
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -89,6 +82,6 @@
   "kicad-symbols/Sensor_Gas/SCD40-D-R2",
   "kicad-symbols/Sensor_Gas/SCD41-D-R2"
  ],
- "embedding_text": "ic-sensor.sensirion.5v.i2c | IC Sensor | SMD IC sensor cluster with 5V, I2C, and 5.5V facets comprising Tier B parts SCD40-D-R2 and SCD41-D-R2 in the Sensirion_SCD4x-1EP_10.1x10.1mm_P1.25mm_EP4.8x4.8mm footprint. | ic sensor sensirion 5v 5.5v i2c smd scd40-d-r2 scd41-d-r2 scd4x kicad-symbols ic.sensor co2 ppm r2 gas photoacoustic accuracy 1ep 1x10 1mm p1 25mm | Sensirion | 5V I2C 5.5V",
+ "embedding_text": "ic-sensor.sensirion.5v.i2c | IC Sensor | 2 ic sensor parts for 5V, I2C, 5.5V using Sensirion footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | sensor i2c sensirion co2 ppm 5v r2 gas photoacoustic accuracy scd4x 1ep 1x10 1mm p1 25mm | Sensirion | 5V I2C 5.5V",
  "class": "ic.sensor"
 }

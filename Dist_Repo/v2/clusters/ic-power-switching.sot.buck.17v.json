@@ -7,42 +7,34 @@
   "Power",
   "Switching Regulator"
  ],
- "description": "Surface-mount buck switching regulator ICs rated for 17V in the SOT package family using SOT-563 footprints.",
+ "description": "7 ic power switching regulator parts for buck, 17V using SOT footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Application requires a 17V buck switching regulator IC.",
-  "Board design specifies a surface-mount SOT package family part with SOT-563 footprint.",
-  "Using tier A symbols sourced from KiCad switching regulator libraries."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SOT land pattern is intended."
  ],
  "avoid_when": [
-  "The design requires non-buck topology such as boost or linear regulation.",
-  "Operating voltage specifications differ from 17V.",
-  "The PCB footprint requires through-hole mounting or package footprints other than SOT-563."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SOT."
  ],
  "keywords": [
-  "ic",
-  "power",
-  "switching regulator",
-  "buck",
-  "17v",
   "sot",
-  "sot-563",
-  "smd",
-  "kicad-symbols",
-  "tps562202",
-  "tps562203",
-  "tps562206",
-  "tps563202s",
   "voltage",
   "regulator",
   "switching",
   "step",
   "down",
   "output",
+  "17v",
+  "buck",
   "synchronous",
   "adjustable",
   "input",
   "7v",
-  "to"
+  "to",
+  "smd",
+  "jedec"
  ],
  "facts": {
   "package_family": "SOT",
@@ -66,7 +58,7 @@
   "tier_counts": {
    "A": 7
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -119,6 +111,6 @@
   "kicad-symbols/Regulator_Switching/TPS563203",
   "kicad-symbols/Regulator_Switching/TPS563206"
  ],
- "embedding_text": "ic-power-switching.sot.buck.17v | IC Power Switching Regulator | Surface-mount buck switching regulator ICs rated for 17V in the SOT package family using SOT-563 footprints. | ic power switching regulator buck 17v sot sot-563 smd kicad-symbols tps562202 tps562203 tps562206 tps563202s voltage regulator switching step down output synchronous adjustable input 7v to | SOT | buck 17V",
+ "embedding_text": "ic-power-switching.sot.buck.17v | IC Power Switching Regulator | 7 ic power switching regulator parts for buck, 17V using SOT footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | sot voltage regulator switching step down output 17v buck synchronous adjustable input 7v to smd jedec | SOT | buck 17V",
  "class": "ic.power.switching"
 }

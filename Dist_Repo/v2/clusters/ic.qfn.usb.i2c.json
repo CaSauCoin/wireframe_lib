@@ -5,34 +5,23 @@
  "category_path": [
   "IC"
  ],
- "description": "Surface-mount integrated circuits featuring USB, I2C, and SPI interfaces in QFN packages including QFN50_48T, QFN50_44T, QFN50_24T, QFN50_32T, and QFN40_76T footprints.",
+ "description": "6 ic parts for USB, I2C, SPI using QFN footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select based on the required QFN footprint variant such as QFN50_48T, QFN50_44T, QFN50_24T, QFN50_32T, or QFN40_76T.",
-  "Use when designing surface-mount boards requiring USB, I2C, or SPI functionality.",
-  "Choose when selecting Tier B components from chilaboard-altium-library."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a QFN land pattern is intended."
  ],
  "avoid_when": [
-  "The layout requires through-hole mounting or package families other than QFN.",
-  "The application requires IC facets other than USB, I2C, or SPI.",
-  "Component selection requires non-chilaboard libraries or quality tiers other than B."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than QFN."
  ],
  "keywords": [
-  "ic",
-  "qfn",
   "usb",
   "i2c",
+  "qfn",
   "spi",
-  "smd",
-  "qfn50_48t",
-  "qfn50_44t",
-  "qfn50_24t",
-  "qfn50_32t",
-  "qfn40_76t",
-  "atmega32u4",
-  "cp2112",
-  "cp2615",
-  "ft602q",
-  "stm32f103c6u6",
+  "ic",
   "bridge",
   "microcontroller",
   "adc",
@@ -40,7 +29,10 @@
   "package",
   "with",
   "controller",
-  "and"
+  "and",
+  "qfn50",
+  "qfn48",
+  "to"
  ],
  "facts": {
   "package_family": "QFN",
@@ -69,7 +61,7 @@
   "tier_counts": {
    "B": 6
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -121,6 +113,6 @@
   "chilaboard-altium-library/STM32F103C6U6_QFN48/STM32F103C6U6_QFN48",
   "chilaboard-altium-library/STM32F103CBU6_QFN48/STM32F103CBU6_QFN48"
  ],
- "embedding_text": "ic.qfn.usb.i2c | IC | Surface-mount integrated circuits featuring USB, I2C, and SPI interfaces in QFN packages including QFN50_48T, QFN50_44T, QFN50_24T, QFN50_32T, and QFN40_76T footprints. | ic qfn usb i2c spi smd qfn50_48t qfn50_44t qfn50_24t qfn50_32t qfn40_76t atmega32u4 cp2112 cp2615 ft602q stm32f103c6u6 bridge microcontroller adc in package with controller and | QFN | USB I2C SPI",
+ "embedding_text": "ic.qfn.usb.i2c | IC | 6 ic parts for USB, I2C, SPI using QFN footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | usb i2c qfn spi ic bridge microcontroller adc in package with controller and qfn50 qfn48 to | QFN | USB I2C SPI",
  "class": "ic"
 }

@@ -6,42 +6,34 @@
   "Discrete",
   "Diode"
  ],
- "description": "This cluster contains 5 surface-mount discrete diode parts in SOT package variants with 5V, 5.5V, and USB facets from KiCad and SparkFun libraries.",
+ "description": "5 discrete diode parts for 5V, USB, 5.5V using SOT footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when a surface-mount discrete diode in a SOT footprint variant is required.",
-  "Match the specific footprint needed, such as SOT-886, SOT-323, SOT-143, SOT-353, or SOT-363.",
-  "Choose based on 5V, 5.5V, or USB facets from KiCad or SparkFun libraries."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SOT land pattern is intended."
  ],
  "avoid_when": [
-  "Avoid if the design requires through-hole components instead of surface-mount SMD.",
-  "Do not use when a package family outside the SOT footprint family is required.",
-  "Avoid if the application requires facets other than 5V, 5.5V, or USB."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SOT."
  ],
  "keywords": [
-  "discrete",
-  "diode",
   "sot",
-  "smd",
   "5v",
-  "5.5v",
   "usb",
-  "sot-886",
-  "sot-143",
-  "sot-323",
-  "sot-353",
-  "sot-363",
-  "kicad",
-  "sparkfun",
   "sc",
+  "diode",
   "protection",
   "esd",
   "tvs",
+  "discrete",
   "power",
   "array",
   "standoff",
   "channels",
   "package",
-  "suppression"
+  "suppression",
+  "transient"
  ],
  "facts": {
   "package_family": "SOT",
@@ -71,7 +63,7 @@
   "tier_counts": {
    "A": 5
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -122,6 +114,6 @@
   "kicad-symbols/Power_Protection/SP0504BAJT",
   "kicad-symbols/Power_Protection/SP0505BAJT"
  ],
- "embedding_text": "discrete-diode.sot.5v.usb | Discrete Diode | This cluster contains 5 surface-mount discrete diode parts in SOT package variants with 5V, 5.5V, and USB facets from KiCad and SparkFun libraries. | discrete diode sot smd 5v 5.5v usb sot-886 sot-143 sot-323 sot-353 sot-363 kicad sparkfun sc protection esd tvs power array standoff channels package suppression | SOT | 5V USB 5.5V",
+ "embedding_text": "discrete-diode.sot.5v.usb | Discrete Diode | 5 discrete diode parts for 5V, USB, 5.5V using SOT footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | sot 5v usb sc diode protection esd tvs discrete power array standoff channels package suppression transient | SOT | 5V USB 5.5V",
  "class": "discrete.diode"
 }

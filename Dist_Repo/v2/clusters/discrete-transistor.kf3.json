@@ -6,30 +6,21 @@
   "Discrete",
   "Transistor"
  ],
- "description": "Discrete transistor cluster containing 7 tier C parts using KF3 package family footprints.",
+ "description": "7 discrete transistor parts using KF3 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Verify requirement for KF3 package family footprints.",
-  "Check specific footprint variants such as KF3-5.08 or KF3-10.",
-  "Note that all 7 parts are tier C with 0 planner visible parts."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a KF3 land pattern is intended."
  ],
  "avoid_when": [
-  "A footprint outside the KF3 package family is required.",
-  "Tier A or planner-visible parts are required.",
-  "Parts from sources other than dist-legacy are needed."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than KF3."
  ],
  "keywords": [
+  "kf3",
   "discrete",
   "transistor",
-  "kf3",
-  "kf3-10",
-  "kf3-3.5",
-  "kf3-3.96-t1",
-  "kf3-5",
-  "kf3-5.08",
-  "kf3-5.08t",
-  "kf3-8.5",
-  "dist-legacy",
-  "tier c",
   "pad",
   "mm",
   "pitch",
@@ -62,7 +53,7 @@
   "tier_counts": {
    "C": 7
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
@@ -74,6 +65,6 @@
   "dist-legacy/KF3-5.08T",
   "dist-legacy/KF3-8.5"
  ],
- "embedding_text": "discrete-transistor.kf3 | Discrete Transistor | Discrete transistor cluster containing 7 tier C parts using KF3 package family footprints. | discrete transistor kf3 kf3-10 kf3-3.5 kf3-3.96-t1 kf3-5 kf3-5.08 kf3-5.08t kf3-8.5 dist-legacy tier c pad mm pitch pins t1 08t | KF3 | ",
+ "embedding_text": "discrete-transistor.kf3 | Discrete Transistor | 7 discrete transistor parts using KF3 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | kf3 discrete transistor pad mm pitch pins t1 08t | KF3 | ",
  "class": "discrete.transistor"
 }

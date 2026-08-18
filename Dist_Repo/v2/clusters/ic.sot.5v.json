@@ -5,34 +5,25 @@
  "category_path": [
   "IC"
  ],
- "description": "Cluster of 23 surface-mount IC components for 5V applications using SOT package footprints including SOT-89-3 and SOT-223 variants.",
+ "description": "23 ic parts for 5V using SOT footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Require surface-mount 5V ICs using SOT package family footprints.",
-  "Select by specific footprint such as SOT-89-3 or SOT-223 variants.",
-  "Choose based on quality tier (Tier A or Tier B)."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SOT land pattern is intended."
  ],
  "avoid_when": [
-  "The design requires package families other than SOT.",
-  "The application does not use 5V IC components.",
-  "Through-hole mounting is required instead of SMD."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SOT."
  ],
  "keywords": [
-  "ic",
-  "5v",
   "sot",
-  "smd",
-  "sot-89-3",
-  "sot-223",
-  "sot-223-3_tabpin2",
-  "sot-223-6_tabpin3",
-  "alternate-kicad-library",
-  "digikey-kicad-library",
-  "tier a",
-  "tier b",
+  "5v",
   "voltage",
   "regulator",
   "100ma",
   "pmic",
+  "ic",
   "akl",
   "terminal",
   "alternate",
@@ -40,7 +31,8 @@
   "library",
   "vreg",
   "power",
-  "supply"
+  "supply",
+  "5a"
  ],
  "facts": {
   "package_family": "SOT",
@@ -68,7 +60,7 @@
    "A": 22,
    "B": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -137,6 +129,6 @@
   "Alternate-KiCad-Library/Voltage_Regulator_AKL/μA78M05IDCY",
   "Alternate-KiCad-Library/Voltage_Regulator_AKL/MCP1791T-5002E-DC"
  ],
- "embedding_text": "ic.sot.5v | IC | Cluster of 23 surface-mount IC components for 5V applications using SOT package footprints including SOT-89-3 and SOT-223 variants. | ic 5v sot smd sot-89-3 sot-223 sot-223-3_tabpin2 sot-223-6_tabpin3 alternate-kicad-library digikey-kicad-library tier a tier b voltage regulator 100ma pmic akl terminal alternate kicad library vreg power supply | SOT | 5V",
+ "embedding_text": "ic.sot.5v | IC | 23 ic parts for 5V using SOT footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | sot 5v voltage regulator 100ma pmic ic akl terminal alternate kicad library vreg power supply 5a | SOT | 5V",
  "class": "ic"
 }

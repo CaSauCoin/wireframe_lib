@@ -6,33 +6,20 @@
   "IC",
   "Driver"
  ],
- "description": "Surface-mount IC driver cluster containing 7 tier-A parts using Infineon MLPQ-16-14-1EP (4x4mm) and PG-DSO-20-U03 (7.5x12.8mm) footprints.",
+ "description": "7 ic driver parts using Infineon footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when requiring SMD IC drivers in Infineon MLPQ-16-14-1EP or PG-DSO-20-U03 package footprints.",
-  "Choose between MLPQ-16-14-1EP 4x4mm P0.5mm and PG-DSO-20-U03 7.5x12.8mm layout footprints.",
-  "Match specific part numbers such as 2ED1323S12P, 2ED1324S12P, IRS2001M, IRS2005M, or IRS2113M."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a Infineon land pattern is intended."
  ],
  "avoid_when": [
-  "Avoid if through-hole mounting is required.",
-  "Avoid when non-Infineon package footprints are needed.",
-  "Avoid if layout requires footprints other than MLPQ-16-14-1EP or PG-DSO-20-U03."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than Infineon."
  ],
  "keywords": [
-  "ic driver",
-  "infineon",
-  "smd",
-  "mlpq-16-14-1ep",
-  "pg-dso-20-u03",
-  "4x4mm",
-  "7.5x12.8mm",
-  "2ed1323s12p",
-  "2ed1324s12p",
-  "irs2001m",
-  "irs2005m",
-  "irs2113m",
-  "driver_fet",
-  "p0.5mm",
   "driver",
+  "infineon",
   "mlpq",
   "gate",
   "fet",
@@ -40,8 +27,13 @@
   "pg",
   "dso",
   "1ep",
+  "4x4mm",
   "p0",
-  "5mm"
+  "5mm",
+  "7x7mm",
+  "3a",
+  "u03",
+  "high"
  ],
  "facts": {
   "package_family": "Infineon",
@@ -63,7 +55,7 @@
   "tier_counts": {
    "A": 7
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -116,6 +108,6 @@
   "kicad-symbols/Driver_FET/IRS21814M",
   "kicad-symbols/Driver_FET/IRS21844M"
  ],
- "embedding_text": "ic-driver.infineon | IC Driver | Surface-mount IC driver cluster containing 7 tier-A parts using Infineon MLPQ-16-14-1EP (4x4mm) and PG-DSO-20-U03 (7.5x12.8mm) footprints. | ic driver infineon smd mlpq-16-14-1ep pg-dso-20-u03 4x4mm 7.5x12.8mm 2ed1323s12p 2ed1324s12p irs2001m irs2005m irs2113m driver_fet p0.5mm driver mlpq gate fet ic pg dso 1ep p0 5mm | Infineon | ",
+ "embedding_text": "ic-driver.infineon | IC Driver | 7 ic driver parts using Infineon footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | driver infineon mlpq gate fet ic pg dso 1ep 4x4mm p0 5mm 7x7mm 3a u03 high | Infineon | ",
  "class": "ic.driver"
 }

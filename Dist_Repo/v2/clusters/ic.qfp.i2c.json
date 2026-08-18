@@ -5,33 +5,23 @@
  "category_path": [
   "IC"
  ],
- "description": "Integrated circuit cluster of surface-mount I2C devices in QFP packages with 64-pin exposed pad footprint variants.",
+ "description": "2 ic parts for I2C using QFP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Match part requirements for I2C interface functionality in surface-mount QFP packages.",
-  "Check required exposed pad dimensions, such as EP5.305x5.305mm or EP8x8mm.",
-  "Select between available audio (ES9028PRO) or video (TFP410PAP) integrated circuits."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a QFP land pattern is intended."
  ],
  "avoid_when": [
-  "The design requires non-SMD mounting or packages other than QFP/TQFP.",
-  "The target part does not use a 64-pin TQFP footprint with an exposed thermal pad.",
-  "Interfaces other than I2C are required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than QFP."
  ],
  "keywords": [
-  "ic",
+  "tqfp",
   "i2c",
   "qfp",
-  "tqfp",
-  "smd",
-  "tqfp-64",
-  "tqfp-64-1ep",
-  "thermal vias",
-  "exposed pad",
-  "es9028pro",
-  "tfp410pap",
-  "audio",
-  "video",
-  "kicad-symbols",
   "texas",
+  "audio",
   "channel",
   "interface",
   "1ep",
@@ -40,7 +30,9 @@
   "5mm",
   "thermalvias",
   "ess",
-  "digital"
+  "ic",
+  "digital",
+  "es9028pro"
  ],
  "facts": {
   "package_family": "QFP",
@@ -65,7 +57,7 @@
    "A": 1,
    "B": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -89,6 +81,6 @@
   "kicad-symbols/Audio/ES9028PRO",
   "kicad-symbols/Video/TFP410PAP"
  ],
- "embedding_text": "ic.qfp.i2c | IC | Integrated circuit cluster of surface-mount I2C devices in QFP packages with 64-pin exposed pad footprint variants. | ic i2c qfp tqfp smd tqfp-64 tqfp-64-1ep thermal vias exposed pad es9028pro tfp410pap audio video kicad-symbols texas channel interface 1ep 10x10mm p0 5mm thermalvias ess digital | QFP | I2C",
+ "embedding_text": "ic.qfp.i2c | IC | 2 ic parts for I2C using QFP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | tqfp i2c qfp texas audio channel interface 1ep 10x10mm p0 5mm thermalvias ess ic digital es9028pro | QFP | I2C",
  "class": "ic"
 }

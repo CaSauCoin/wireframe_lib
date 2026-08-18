@@ -5,27 +5,20 @@
  "category_path": [
   "IC"
  ],
- "description": "Integrated circuit cluster containing 3 tier C parts using PowerSO20 footprint variants including PowerSO20_L, PowerSO20_M, and PowerSO20_N.",
+ "description": "3 ic parts using PowerSO20 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when a PowerSO20 footprint variant such as PowerSO20_L, PowerSO20_M, or PowerSO20_N is required.",
-  "Verify compatibility for designs using tier C component entries from dist-legacy sources.",
-  "Check specific footprint variant requirements before selecting a part."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a PowerSO20 land pattern is intended."
  ],
  "avoid_when": [
-  "Avoid when the board design requires a package family other than PowerSO20.",
-  "Avoid if planner-visible parts or quality tiers higher than tier C are required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than PowerSO20."
  ],
  "keywords": [
   "powerso20",
-  "powerso20_l",
-  "powerso20_m",
-  "powerso20_n",
   "ic",
-  "integrated circuit",
-  "tier c",
-  "dist-legacy",
-  "ic.powerso20",
-  "powerso20 package",
   "pad",
   "mm",
   "pitch",
@@ -52,7 +45,7 @@
   "tier_counts": {
    "C": 3
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
@@ -60,6 +53,6 @@
   "dist-legacy/PowerSO20_M",
   "dist-legacy/PowerSO20_N"
  ],
- "embedding_text": "ic.powerso20 | IC | Integrated circuit cluster containing 3 tier C parts using PowerSO20 footprint variants including PowerSO20_L, PowerSO20_M, and PowerSO20_N. | powerso20 powerso20_l powerso20_m powerso20_n ic integrated circuit tier c dist-legacy ic.powerso20 powerso20 package pad mm pitch pins | PowerSO20 | ",
+ "embedding_text": "ic.powerso20 | IC | 3 ic parts using PowerSO20 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | powerso20 ic pad mm pitch pins | PowerSO20 | ",
  "class": "ic"
 }

@@ -6,28 +6,19 @@
   "Discrete",
   "Diode"
  ],
- "description": "Discrete diode cluster containing 3 tier C parts using the HDR1X2 footprint and package family.",
+ "description": "3 discrete diode parts using HDR1X2 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Choose when requiring discrete diode components in the HDR1X2 package family.",
-  "Verify part specifications given that all 3 entries are tier C quality.",
-  "Confirm pin mapping and land pattern dimensions before PCB layout."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a HDR1X2 land pattern is intended."
  ],
  "avoid_when": [
-  "The PCB layout requires a package family other than HDR1X2.",
-  "Project guidelines prohibit using tier C or unreviewed generated parts.",
-  "The design requires verified mounting specifications rather than unknown mounts."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than HDR1X2."
  ],
  "keywords": [
-  "discrete",
-  "diode",
   "hdr1x2",
-  "discrete diode",
-  "discrete.diode",
-  "hdr1x2 footprint",
-  "package family hdr1x2",
-  "tier c",
-  "diode hdr1x2",
-  "discrete diode hdr1x2",
   "1x2",
   "header",
   "land",
@@ -41,7 +32,8 @@
   "pitch",
   "footprint",
   "54mm",
-  "pin"
+  "pin",
+  "discrete"
  ],
  "facts": {
   "package_family": "HDR1X2",
@@ -62,7 +54,7 @@
   "tier_counts": {
    "C": 3
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
@@ -70,6 +62,6 @@
   "dist-legacy/HDR1X2 - duplicate",
   "dist-legacy/HDR1X2 - duplicate1"
  ],
- "embedding_text": "discrete-diode.hdr1x2 | Discrete Diode | Discrete diode cluster containing 3 tier C parts using the HDR1X2 footprint and package family. | discrete diode hdr1x2 discrete diode discrete.diode hdr1x2 footprint package family hdr1x2 tier c diode hdr1x2 discrete diode hdr1x2 1x2 header land pattern bare package with pads and mm pitch footprint 54mm pin | HDR1X2 | ",
+ "embedding_text": "discrete-diode.hdr1x2 | Discrete Diode | 3 discrete diode parts using HDR1X2 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | hdr1x2 1x2 header land pattern bare package with pads and mm pitch footprint 54mm pin discrete | HDR1X2 | ",
  "class": "discrete.diode"
 }

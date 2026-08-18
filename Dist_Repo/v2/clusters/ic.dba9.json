@@ -5,29 +5,21 @@
  "category_path": [
   "IC"
  ],
- "description": "Integrated circuit cluster with 1 tier C component using the DBA9 package family and DBA9_M_RA footprint.",
+ "description": "1 ic parts using DBA9 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Layout requires the DBA9 package family or DBA9_M_RA footprint.",
-  "Single tier C component sourced from dist-legacy is acceptable.",
-  "Application specifies an IC category component in package DBA9."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a DBA9 land pattern is intended."
  ],
  "avoid_when": [
-  "The layout requires a package family other than DBA9.",
-  "Tier C quality tier or dist-legacy source is not acceptable.",
-  "Design requires planner-visible parts or higher quality tiers."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than DBA9."
  ],
  "keywords": [
-  "ic",
   "dba9",
-  "dba9_m_ra",
-  "dba9 package",
-  "dba9 footprint",
-  "tier c",
-  "dist-legacy",
-  "ic category",
-  "dba9_m_ra land pattern",
-  "package family dba9",
   "ra",
+  "ic",
   "pad",
   "mm",
   "pitch",
@@ -52,12 +44,12 @@
   "tier_counts": {
    "C": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
   "dist-legacy/DBA9_M_RA"
  ],
- "embedding_text": "ic.dba9 | IC | Integrated circuit cluster with 1 tier C component using the DBA9 package family and DBA9_M_RA footprint. | ic dba9 dba9_m_ra dba9 package dba9 footprint tier c dist-legacy ic category dba9_m_ra land pattern package family dba9 ra pad mm pitch pins | DBA9 | ",
+ "embedding_text": "ic.dba9 | IC | 1 ic parts using DBA9 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | dba9 ra ic pad mm pitch pins | DBA9 | ",
  "class": "ic"
 }

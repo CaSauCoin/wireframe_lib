@@ -6,44 +6,34 @@
   "Discrete",
   "Diode"
  ],
- "description": "TVS/Zener diodes rated 28V in D-family footprints (SOD-123/323, SMA/SMB/SMC, DO-15, P600), for transient or overvoltage clamping applications.",
+ "description": "50 discrete diode parts for 28V using D footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Match exact footprint (SOD, SMA/B/C, DO-15, or P600) to the PCB land pattern before selecting.",
-  "Prefer tier A entries; only 3 of 50 parts are tier B.",
-  "Distinguish unidirectional vs bidirectional (CA-suffix) variants by part name.",
-  "Confirm 28V matches the required clamping/breakdown voltage for the design."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a D land pattern is intended."
  ],
  "avoid_when": [
-  "The design needs a voltage rating other than 28V.",
-  "The board footprint is not one of the listed D-family patterns (SOD/SMA/SMB/SMC/DO-15/P600).",
-  "Symbol-footprint pairing is unverified or flagged for review.",
-  "A simple rectifier or signal diode is needed rather than a TVS/Zener clamp."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than D."
  ],
  "keywords": [
   "diode",
   "tvs",
-  "zener",
   "28v",
-  "discrete diode",
-  "d package",
-  "sod-123",
-  "sod-323",
-  "sma",
-  "smb",
-  "smc",
-  "do-15",
-  "p600",
-  "bidirectional diode",
-  "unidirectional diode",
-  "transient voltage suppressor",
-  "horizontal footprint",
-  "kicad library",
   "discrete",
   "akl",
   "alternate",
   "kicad",
   "library",
-  "unidirectional"
+  "unidirectional",
+  "do",
+  "zener",
+  "horizontal",
+  "bidirectional",
+  "sod",
+  "p600",
+  "smc"
  ],
  "facts": {
   "package_family": "D",
@@ -80,7 +70,7 @@
    "A": 47,
    "B": 3
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -176,6 +166,6 @@
   "Alternate-KiCad-Library/Diode_TVS_AKL/TPSMA6L28A",
   "JLCPCB-Kicad-Library/JLCPCB-Diodes/TVS-Bi,SMAJ28CA"
  ],
- "embedding_text": "discrete-diode.d.28v | Discrete Diode | TVS/Zener diodes rated 28V in D-family footprints (SOD-123/323, SMA/SMB/SMC, DO-15, P600), for transient or overvoltage clamping applications. | diode tvs zener 28v discrete diode d package sod-123 sod-323 sma smb smc do-15 p600 bidirectional diode unidirectional diode transient voltage suppressor horizontal footprint kicad library discrete akl alternate kicad library unidirectional | D | 28V",
+ "embedding_text": "discrete-diode.d.28v | Discrete Diode | 50 discrete diode parts for 28V using D footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | diode tvs 28v discrete akl alternate kicad library unidirectional do zener horizontal bidirectional sod p600 smc | D | 28V",
  "class": "discrete.diode"
 }

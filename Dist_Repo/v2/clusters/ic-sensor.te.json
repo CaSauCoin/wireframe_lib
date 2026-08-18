@@ -6,28 +6,21 @@
   "IC",
   "Sensor"
  ],
- "description": "Surface-mount sensor IC cluster featuring parts in the TE package family using TE_MS5837-xxBA footprints.",
+ "description": "1 ic sensor parts using TE footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when designing surface-mount IC sensor circuits requiring TE package family footprints.",
-  "Verify footprint compatibility with TE_MS5837-xxBA.",
-  "Confirm suitability of tier B KiCad symbol parts like MS5837-xxBA."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a TE land pattern is intended."
  ],
  "avoid_when": [
-  "Do not use when through-hole mounting is required.",
-  "Avoid if the design requires package footprints other than TE_MS5837-xxBA.",
-  "Avoid when specific unstated electrical ratings or pinouts must be verified from cluster facts alone."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than TE."
  ],
  "keywords": [
-  "ic",
   "sensor",
-  "ic sensor",
-  "te",
-  "smd",
-  "ms5837",
-  "ms5837-xxba",
-  "te_ms5837-xxba",
   "pressure",
-  "kicad-symbols",
+  "ms5837",
   "xxba",
   "ultra",
   "small",
@@ -36,7 +29,9 @@
   "with",
   "stainless",
   "steel",
-  "cap"
+  "cap",
+  "te",
+  "ic"
  ],
  "facts": {
   "package_family": "TE",
@@ -57,7 +52,7 @@
   "tier_counts": {
    "B": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -72,6 +67,6 @@
  "part_ids": [
   "kicad-symbols/Sensor_Pressure/MS5837-xxBA"
  ],
- "embedding_text": "ic-sensor.te | IC Sensor | Surface-mount sensor IC cluster featuring parts in the TE package family using TE_MS5837-xxBA footprints. | ic sensor ic sensor te smd ms5837 ms5837-xxba te_ms5837-xxba pressure kicad-symbols xxba ultra small gel filled with stainless steel cap | TE | ",
+ "embedding_text": "ic-sensor.te | IC Sensor | 1 ic sensor parts using TE footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | sensor pressure ms5837 xxba ultra small gel filled with stainless steel cap te ic | TE | ",
  "class": "ic.sensor"
 }

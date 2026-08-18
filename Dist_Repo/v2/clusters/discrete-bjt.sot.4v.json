@@ -6,42 +6,34 @@
   "Discrete",
   "BJT"
  ],
- "description": "Cluster of 3 tier-A discrete BJT parts (BF888, BFP650, BFP760) in the SOT-343/SC-70-4 SMD footprint, grouped under the 4V facet, all sourced from Alternate-KiCad-Library.",
+ "description": "3 discrete bjt parts for 4V using SOT footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "All 3 parts are tier A with score 100 — differentiate by exact part number (BF888, BFP650, or BFP760).",
-  "Confirm the SOT-343_SC-70-4 footprint matches your intended PCB land pattern.",
-  "All parts come from a single source (Alternate-KiCad-Library); cross-check elsewhere if independent verification is needed."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SOT land pattern is intended."
  ],
  "avoid_when": [
-  "The design requires a package other than SOT-343_SC-70-4.",
-  "Electrical requirements beyond the stated 4V facet are not confirmed for the chosen part.",
-  "A source other than Alternate-KiCad-Library is required for verification."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SOT."
  ],
  "keywords": [
   "sot",
-  "sot-343",
-  "sc-70-4",
-  "sc-70",
   "transistor",
   "bjt",
-  "discrete bjt",
-  "discrete",
-  "4v",
-  "bf888",
-  "bfp650",
-  "bfp760",
-  "smd",
-  "alternate-kicad-library",
-  "akl",
-  "tier a",
-  "footprint",
-  "package family sot",
   "npn",
+  "4v",
   "sc",
+  "akl",
   "rf",
   "alternate",
   "kicad",
-  "library"
+  "library",
+  "discrete",
+  "bf888",
+  "bfp650",
+  "bfp760",
+  "30ma"
  ],
  "facts": {
   "package_family": "SOT",
@@ -64,7 +56,7 @@
   "tier_counts": {
    "A": 3
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -97,6 +89,6 @@
   "Alternate-KiCad-Library/Transistor_BJT_AKL/BFP650",
   "Alternate-KiCad-Library/Transistor_BJT_AKL/BFP760"
  ],
- "embedding_text": "discrete-bjt.sot.4v | Discrete BJT | Cluster of 3 tier-A discrete BJT parts (BF888, BFP650, BFP760) in the SOT-343/SC-70-4 SMD footprint, grouped under the 4V facet, all sourced from Alternate-KiCad-Library. | sot sot-343 sc-70-4 sc-70 transistor bjt discrete bjt discrete 4v bf888 bfp650 bfp760 smd alternate-kicad-library akl tier a footprint package family sot npn sc rf alternate kicad library | SOT | 4V",
+ "embedding_text": "discrete-bjt.sot.4v | Discrete BJT | 3 discrete bjt parts for 4V using SOT footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | sot transistor bjt npn 4v sc akl rf alternate kicad library discrete bf888 bfp650 bfp760 30ma | SOT | 4V",
  "class": "discrete.bjt"
 }

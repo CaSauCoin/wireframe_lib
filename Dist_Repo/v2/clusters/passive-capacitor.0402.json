@@ -6,32 +6,23 @@
   "Passive",
   "Capacitor"
  ],
- "description": "Cluster of 50 passive capacitor library parts associated with 0402 package footprints, including surface mount entries across KiCad and Altium source libraries.",
+ "description": "50 passive capacitor parts using 0402 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Check specific footprint name and pad variant, such as hand-soldering or metric definitions.",
-  "Filter by quality tier to select tier A parts from available source libraries.",
-  "Ensure package compatibility with 0402 surface-mount PCB layout requirements."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a 0402 land pattern is intended."
  ],
  "avoid_when": [
-  "The board design requires a package size other than 0402.",
-  "A through-hole mounting configuration is required.",
-  "A non-capacitor passive component is required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than 0402."
  ],
  "keywords": [
-  "passive",
   "capacitor",
-  "0402",
-  "smd",
-  "c_0402",
-  "1005metric",
-  "0402metric",
-  "surface mount",
-  "kicad",
-  "altium",
-  "hand solder",
-  "c0402",
+  "passive",
   "sparkfun",
   "cap",
+  "1005metric",
   "unpolarized",
   "pad",
   "mm",
@@ -40,7 +31,9 @@
   "surface",
   "mount",
   "mlcc",
-  "ipc"
+  "ipc",
+  "smd",
+  "0402metric"
  ],
  "facts": {
   "package_family": "0402",
@@ -82,7 +75,7 @@
    "B": 8,
    "C": 18
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -178,6 +171,6 @@
   "matthiasbock-altium-libraries/C 0402 _ 1005/C_0402___1005",
   "embedded-society-altium-libraries/GENERIC_MLCC_CAP_0402_IPC_MEDIU/GENERIC_MLCC_CAP_0402_IPC_MEDIU"
  ],
- "embedding_text": "passive-capacitor.0402 | Passive Capacitor | Cluster of 50 passive capacitor library parts associated with 0402 package footprints, including surface mount entries across KiCad and Altium source libraries. | passive capacitor 0402 smd c_0402 1005metric 0402metric surface mount kicad altium hand solder c0402 sparkfun cap unpolarized pad mm pitch pins surface mount mlcc ipc | 0402 | ",
+ "embedding_text": "passive-capacitor.0402 | Passive Capacitor | 50 passive capacitor parts using 0402 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | capacitor passive sparkfun cap 1005metric unpolarized pad mm pitch pins surface mount mlcc ipc smd 0402metric | 0402 | ",
  "class": "passive.capacitor"
 }

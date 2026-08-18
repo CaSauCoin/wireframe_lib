@@ -6,30 +6,19 @@
   "Discrete",
   "Transistor"
  ],
- "description": "Cluster of 39 discrete transistor parts utilizing DIP package family footprints for through-hole mounting.",
+ "description": "39 discrete transistor parts using DIP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when through-hole discrete transistor parts in DIP footprints are required.",
-  "Choose according to specific footprint requirements like DIP-16, DIP-18, DIP4, or ST_SDIP-25L.",
-  "Prefer Tier A components available in the library cluster."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a DIP land pattern is intended."
  ],
  "avoid_when": [
-  "Do not use when surface-mount packaging is required.",
-  "Avoid if the design requires non-DIP package families.",
-  "Avoid when components outside the discrete transistor category are needed."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than DIP."
  ],
  "keywords": [
-  "discrete transistor",
   "dip",
-  "through_hole",
-  "dip-16",
-  "dip-18",
-  "dip4",
-  "sdip",
-  "st_sdip-25l",
-  "mc1413bp",
-  "mc1413p",
-  "stgips10c60-h",
-  "stgips10k60a",
   "transistor",
   "62mm",
   "mosfet",
@@ -41,7 +30,10 @@
   "darlington",
   "tht",
   "dil",
-  "54mm"
+  "54mm",
+  "300mil",
+  "enchancement",
+  "high"
  ],
  "facts": {
   "package_family": "DIP",
@@ -74,7 +66,7 @@
    "B": 1,
    "C": 2
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -159,6 +151,6 @@
   "dist-legacy/Vishay_HVM-DIP-3_W7.62mm",
   "francescosacco-hardwarelibrary/DIP4/DIP4"
  ],
- "embedding_text": "discrete-transistor.dip | Discrete Transistor | Cluster of 39 discrete transistor parts utilizing DIP package family footprints for through-hole mounting. | discrete transistor dip through_hole dip-16 dip-18 dip4 sdip st_sdip-25l mc1413bp mc1413p stgips10c60-h stgips10k60a transistor 62mm mosfet discrete w7 vishay pdip array darlington tht dil 54mm | DIP | ",
+ "embedding_text": "discrete-transistor.dip | Discrete Transistor | 39 discrete transistor parts using DIP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | dip transistor 62mm mosfet discrete w7 vishay pdip array darlington tht dil 54mm 300mil enchancement high | DIP | ",
  "class": "discrete.transistor"
 }

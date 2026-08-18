@@ -6,31 +6,21 @@
   "IC",
   "Analog"
  ],
- "description": "Analog IC cluster containing 3 surface-mount parts in QFN packaging (such as DAC60504, DAC70504, and DAC80504) with 5V and 2.5V facets.",
+ "description": "3 ic analog parts for 5V, 2.5V using QFN footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Selecting surface-mount analog IC parts associated with 5V and 2.5V facets.",
-  "Requiring QFN package family components using the Texas_RTE0016D_WQFN-16-1EP footprint.",
-  "Choosing between representative parts DAC60504, DAC70504, or DAC80504."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a QFN land pattern is intended."
  ],
  "avoid_when": [
-  "Through-hole mounting or non-SMD layout is required for the design.",
-  "A package family other than QFN or footprint other than Texas_RTE0016D_WQFN-16-1EP is needed.",
-  "The design requires non-analog IC components or operating facets other than 5V and 2.5V."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than QFN."
  ],
  "keywords": [
-  "ic",
   "analog",
-  "qfn",
   "5v",
-  "2.5v",
-  "smd",
-  "dac60504",
-  "dac70504",
-  "dac80504",
-  "kicad-symbols",
   "wqfn",
-  "rte0016d",
-  "ic.analog",
   "texas",
   "dac",
   "quad",
@@ -41,7 +31,9 @@
   "2ppm",
   "internal",
   "reference",
-  "1ep"
+  "rte0016d",
+  "1ep",
+  "3x3mm"
  ],
  "facts": {
   "package_family": "QFN",
@@ -65,7 +57,7 @@
   "tier_counts": {
    "B": 3
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -98,6 +90,6 @@
   "kicad-symbols/Analog_DAC/DAC70504",
   "kicad-symbols/Analog_DAC/DAC80504"
  ],
- "embedding_text": "ic-analog.qfn.5v.2-5v | IC Analog | Analog IC cluster containing 3 surface-mount parts in QFN packaging (such as DAC60504, DAC70504, and DAC80504) with 5V and 2.5V facets. | ic analog qfn 5v 2.5v smd dac60504 dac70504 dac80504 kicad-symbols wqfn rte0016d ic.analog texas dac quad bit channel voltage output 2ppm internal reference 1ep | QFN | 5V 2.5V",
+ "embedding_text": "ic-analog.qfn.5v.2-5v | IC Analog | 3 ic analog parts for 5V, 2.5V using QFN footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | analog 5v wqfn texas dac quad bit channel voltage output 2ppm internal reference rte0016d 1ep 3x3mm | QFN | 5V 2.5V",
  "class": "ic.analog"
 }

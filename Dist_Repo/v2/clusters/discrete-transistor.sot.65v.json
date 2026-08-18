@@ -6,38 +6,34 @@
   "Discrete",
   "Transistor"
  ],
- "description": "Surface-mount discrete transistor cluster containing dual NPN and dual PNP 65V components in SOT-363_SC-70-6 footprints from SparkFun KiCad libraries.",
+ "description": "2 discrete transistor parts for 65V using SOT footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when dual NPN or dual PNP discrete transistors rated for 65V are required.",
-  "Choose for surface-mount designs utilizing SOT-363_SC-70-6 footprints.",
-  "Verify part selection between Q_NPN_DUAL and Q_PNP_DUAL depending on circuit configuration."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SOT land pattern is intended."
  ],
  "avoid_when": [
-  "The design requires through-hole mounting or package footprints other than SOT-363_SC-70-6.",
-  "Circuit specifications require single transistors rather than dual NPN or PNP configurations.",
-  "Operating voltage requirements exceed 65V."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SOT."
  ],
  "keywords": [
-  "discrete",
-  "transistor",
-  "65v",
   "sot",
-  "smd",
+  "sparkfun",
+  "sc",
   "npn",
   "pnp",
   "dual",
-  "sparkfun",
-  "sot-363_sc-70-6",
-  "q_npn_dual",
-  "q_pnp_dual",
+  "65v",
+  "transistor",
   "discretesemi",
-  "sc",
   "100ma",
   "ic",
   "vce",
   "transistors",
   "sc70",
-  "bc846bs"
+  "bc846bs",
+  "discrete"
  ],
  "facts": {
   "package_family": "SOT",
@@ -60,7 +56,7 @@
   "tier_counts": {
    "A": 2
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -84,6 +80,6 @@
   "SparkFun-KiCad-Libraries/SparkFun-DiscreteSemi/Q_NPN_DUAL",
   "SparkFun-KiCad-Libraries/SparkFun-DiscreteSemi/Q_PNP_DUAL"
  ],
- "embedding_text": "discrete-transistor.sot.65v | Discrete Transistor | Surface-mount discrete transistor cluster containing dual NPN and dual PNP 65V components in SOT-363_SC-70-6 footprints from SparkFun KiCad libraries. | discrete transistor 65v sot smd npn pnp dual sparkfun sot-363_sc-70-6 q_npn_dual q_pnp_dual discretesemi sc 100ma ic vce transistors sc70 bc846bs | SOT | 65V",
+ "embedding_text": "discrete-transistor.sot.65v | Discrete Transistor | 2 discrete transistor parts for 65V using SOT footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | sot sparkfun sc npn pnp dual 65v transistor discretesemi 100ma ic vce transistors sc70 bc846bs discrete | SOT | 65V",
  "class": "discrete.transistor"
 }

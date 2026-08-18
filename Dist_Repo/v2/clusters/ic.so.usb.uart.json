@@ -5,16 +5,16 @@
  "category_path": [
   "IC"
  ],
- "description": "Surface-mount USB to UART/serial interface ICs in SO package family footprints including SO-16 and SO_20_W.",
+ "description": "5 ic parts for USB, UART/serial using SO footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select based on required footprint variant such as SO-16 or SO_20_W.",
-  "Prefer tier A parts over tier B parts for higher quality tier ranking.",
-  "Check source origin between SparkFun-KiCad-Libraries and chilaboard-altium-library."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SO land pattern is intended."
  ],
  "avoid_when": [
-  "The board layout requires packages outside the SO package family.",
-  "Non-SMD or through-hole mounting is required.",
-  "Functionality other than USB to UART/serial interface is required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SO."
  ],
  "keywords": [
   "usb",
@@ -22,20 +22,14 @@
   "serial",
   "ic",
   "so",
-  "smd",
-  "so-16",
-  "so_16",
-  "so_20_w",
-  "ch340c",
-  "ch340g",
-  "mcp2200",
-  "sparkfun",
-  "chilaboard",
   "converter",
+  "sparkfun",
   "sop16",
   "to",
   "soic",
+  "ch340c",
   "interface",
+  "ch340g",
   "bridge",
   "oscillator",
   "in"
@@ -66,7 +60,7 @@
    "A": 2,
    "B": 3
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -117,6 +111,6 @@
   "chilaboard-altium-library/MCP2200_SOP20/MCP2200_SOP20",
   "chilaboard-altium-library/CH340C_SOP16/CH340C_SOP16"
  ],
- "embedding_text": "ic.so.usb.uart | IC | Surface-mount USB to UART/serial interface ICs in SO package family footprints including SO-16 and SO_20_W. | usb uart serial ic so smd so-16 so_16 so_20_w ch340c ch340g mcp2200 sparkfun chilaboard converter sop16 to soic interface bridge oscillator in | SO | USB UART/serial",
+ "embedding_text": "ic.so.usb.uart | IC | 5 ic parts for USB, UART/serial using SO footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | usb uart serial ic so converter sparkfun sop16 to soic ch340c interface ch340g bridge oscillator in | SO | USB UART/serial",
  "class": "ic"
 }

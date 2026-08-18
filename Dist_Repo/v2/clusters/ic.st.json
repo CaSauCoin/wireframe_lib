@@ -5,31 +5,21 @@
  "category_path": [
   "IC"
  ],
- "description": "A cluster of 134 IC components with ST package family footprints including LGA, WLCSP, DFN, and SiP formats across SMD and through-hole mounts.",
+ "description": "134 ic parts using ST footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Match the target footprint against specific ST variants like LGA, WLCSP, DFN, or SiP.",
-  "Check quality tier availability, such as Tier B representative parts LIS3DH and LSM6DSOX.",
-  "Verify mounting type compatibility for SMD or through-hole board layouts."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a ST land pattern is intended."
  ],
  "avoid_when": [
-  "Package requirements fall outside the ST package family.",
-  "Tier A component quality status is strictly required.",
-  "Neither SMD nor through-hole ST footprint options fit the layout."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than ST."
  ],
  "keywords": [
-  "ic",
   "st",
-  "lga",
   "wlcsp",
-  "dfn",
-  "sip",
-  "lis3dh",
-  "lsm6dsox",
-  "smd",
-  "through hole",
-  "hlga",
-  "st_lga-16",
-  "st_lga-14l",
+  "ic",
   "pitch",
   "p0",
   "4mm",
@@ -40,7 +30,9 @@
   "surface",
   "mount",
   "package",
-  "com"
+  "com",
+  "pdf",
+  "www"
  ],
  "facts": {
   "package_family": "ST",
@@ -77,7 +69,7 @@
    "B": 2,
    "C": 132
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -233,6 +225,6 @@
   "dist-legacy/ST_WLCSP-36_2.83x2.99mm_Layout7x13_P0.4mm_Stagger_Offcenter",
   "dist-legacy/ST_WLCSP-49_3.14x3.14mm_Layout7x7_P0.4mm_Offcenter"
  ],
- "embedding_text": "ic.st | IC | A cluster of 134 IC components with ST package family footprints including LGA, WLCSP, DFN, and SiP formats across SMD and through-hole mounts. | ic st lga wlcsp dfn sip lis3dh lsm6dsox smd through hole hlga st_lga-16 st_lga-14l pitch p0 4mm pad mm pins stagger surface mount package com | ST | ",
+ "embedding_text": "ic.st | IC | 134 ic parts using ST footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | st wlcsp ic pitch p0 4mm pad mm pins stagger surface mount package com pdf www | ST | ",
  "class": "ic"
 }

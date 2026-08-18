@@ -5,44 +5,34 @@
  "category_path": [
   "Connector"
  ],
- "description": "Header-family connectors (single/double-row male pin headers, ~1.0-1.3mm variants) spanning SMD, through-hole and unspecified mount types, drawn mostly from a third-party Altium library plus a few legacy parts.",
+ "description": "28 connector parts using HEADER footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Match the exact footprint name (e.g. Header 1x2+1 1.0mm vs 1.3mm) to the intended land pattern",
-  "Confirm mount type (smd vs through_hole) matches the board process",
-  "Prefer tier B representative parts over the many tier C entries when available",
-  "Verify pin count and row layout (1x2, 1x3, 1x4, 2x2, 1x10) against the schematic connector"
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a HEADER land pattern is intended."
  ],
  "avoid_when": [
-  "The design needs a specific pitch or dimension not confirmed by the footprint name",
-  "A female/socket or non-header connector style is required",
-  "Mount type must be strictly smd or strictly through_hole but the part's mount is listed as unknown",
-  "Part must come from a trusted/reviewed source rather than the generated, mostly tier C cluster"
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than HEADER."
  ],
  "keywords": [
   "header",
   "connector",
-  "pin header",
-  "male header",
-  "1x2",
-  "1x3",
-  "1x4",
-  "1x10",
-  "2x2",
-  "1.0mm pitch",
-  "1.3mm pitch",
-  "smd header",
-  "through hole header",
-  "single row",
-  "dual row",
-  "idc",
-  "pcb header",
-  "board connector",
   "male",
   "pitch",
   "pad",
   "pins",
   "mm",
-  "through"
+  "through",
+  "hole",
+  "2x5",
+  "1x2",
+  "smd",
+  "idc",
+  "1x3",
+  "long",
+  "1x4"
  ],
  "facts": {
   "package_family": "HEADER",
@@ -78,7 +68,7 @@
    "B": 3,
    "C": 25
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -136,6 +126,6 @@
   "matthiasbock-altium-libraries/Header 2x7 octagons/Header_2x7_octagons",
   "matthiasbock-altium-libraries/Header 2.00 2x10/Header_2.00_2x10"
  ],
- "embedding_text": "connector.header | Connector | Header-family connectors (single/double-row male pin headers, ~1.0-1.3mm variants) spanning SMD, through-hole and unspecified mount types, drawn mostly from a third-party Altium library plus a few legacy parts. | header connector pin header male header 1x2 1x3 1x4 1x10 2x2 1.0mm pitch 1.3mm pitch smd header through hole header single row dual row idc pcb header board connector male pitch pad pins mm through | HEADER | ",
+ "embedding_text": "connector.header | Connector | 28 connector parts using HEADER footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | header connector male pitch pad pins mm through hole 2x5 1x2 smd idc 1x3 long 1x4 | HEADER | ",
  "class": "connector"
 }

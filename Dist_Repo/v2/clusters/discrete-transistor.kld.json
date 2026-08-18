@@ -6,28 +6,21 @@
   "Discrete",
   "Transistor"
  ],
- "description": "Discrete transistor cluster containing one tier C part using the KLD-0202 footprint.",
+ "description": "1 discrete transistor parts using KLD footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Use when requiring a discrete transistor in the KLD package family.",
-  "Verify footprints and symbol pinouts due to tier C quality rating and generated review status.",
-  "Confirm mounting specifications when unknown mount types are present."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a KLD land pattern is intended."
  ],
  "avoid_when": [
-  "The board layout requires a package family other than KLD.",
-  "Parts with a quality tier higher than tier C or planner visibility are required.",
-  "Fully specified mounting configurations are mandatory."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than KLD."
  ],
  "keywords": [
-  "discrete transistor",
+  "kld",
   "discrete",
   "transistor",
-  "kld",
-  "kld-0202",
-  "package family kld",
-  "tier c",
-  "dist-legacy",
-  "discrete.transistor",
-  "kld footprint",
   "pad",
   "mm",
   "pitch",
@@ -52,12 +45,12 @@
   "tier_counts": {
    "C": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
   "dist-legacy/KLD-0202"
  ],
- "embedding_text": "discrete-transistor.kld | Discrete Transistor | Discrete transistor cluster containing one tier C part using the KLD-0202 footprint. | discrete transistor discrete transistor kld kld-0202 package family kld tier c dist-legacy discrete.transistor kld footprint pad mm pitch pins | KLD | ",
+ "embedding_text": "discrete-transistor.kld | Discrete Transistor | 1 discrete transistor parts using KLD footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | kld discrete transistor pad mm pitch pins | KLD | ",
  "class": "discrete.transistor"
 }

@@ -5,28 +5,22 @@
  "category_path": [
   "IC"
  ],
- "description": "IC cluster containing 2 surface-mount (SMD) parts in the SIMCom package family using SIMCom_SIM800C and SIMCom_SIM900 footprints.",
+ "description": "2 ic parts using SIMCom footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Verify compatibility with SIMCom_SIM800C or SIMCom_SIM900 footprint patterns.",
-  "Select for surface-mount (SMD) IC applications requiring SIMCom package family layouts.",
-  "Review part details carefully as all entries are currently tier C quality."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SIMCom land pattern is intended."
  ],
  "avoid_when": [
-  "The design requires through-hole mounting instead of surface-mount (SMD).",
-  "The board footprint differs from SIMCom_SIM800C or SIMCom_SIM900.",
-  "Only verified tier A or planner-visible parts are accepted."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SIMCom."
  ],
  "keywords": [
-  "ic",
   "simcom",
-  "smd",
-  "surface mount",
   "sim800c",
   "sim900",
-  "simcom_sim800c",
-  "simcom_sim900",
-  "dist-legacy",
-  "ic.simcom",
+  "ic",
   "gsm",
   "module",
   "surface",
@@ -60,13 +54,13 @@
   "tier_counts": {
    "C": 2
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
   "dist-legacy/SIMCom_SIM800C",
   "dist-legacy/SIMCom_SIM900"
  ],
- "embedding_text": "ic.simcom | IC | IC cluster containing 2 surface-mount (SMD) parts in the SIMCom package family using SIMCom_SIM800C and SIMCom_SIM900 footprints. | ic simcom smd surface mount sim800c sim900 simcom_sim800c simcom_sim900 dist-legacy ic.simcom gsm module surface mount pad mm pitch pins package quad band gprs | SIMCom | ",
+ "embedding_text": "ic.simcom | IC | 2 ic parts using SIMCom footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | simcom sim800c sim900 ic gsm module surface mount pad mm pitch pins package quad band gprs | SIMCom | ",
  "class": "ic"
 }

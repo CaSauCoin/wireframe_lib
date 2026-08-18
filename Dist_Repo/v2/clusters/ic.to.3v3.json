@@ -5,42 +5,34 @@
  "category_path": [
   "IC"
  ],
- "description": "Cluster of 10 IC parts for 3.3V operating voltage available in surface-mount and through-hole TO package footprints.",
+ "description": "10 ic parts for 3.3V using TO footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Choose based on required mounting style such as surface-mount or through-hole.",
-  "Select specific package variants including TO-92, TO-220, TO-252, or TO-263.",
-  "Prefer tier A quality parts available from Alternate-KiCad-Library and digikey-kicad-library."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a TO land pattern is intended."
  ],
  "avoid_when": [
-  "Do not use when the application requires an operating voltage other than 3.3V.",
-  "Avoid if the design requires package families other than TO.",
-  "Do not use if neither surface-mount nor through-hole TO mounting is suitable."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than TO."
  ],
  "keywords": [
-  "ic",
-  "3.3v",
   "to",
-  "to-92",
-  "to-252",
-  "to-263",
-  "to-220",
-  "smd",
-  "through_hole",
-  "integrated circuit",
-  "alternate-kicad-library",
-  "digikey-kicad-library",
   "voltage",
   "3v",
   "regulator",
   "terminal",
   "pmic",
+  "ic",
   "akl",
   "alternate",
   "kicad",
   "library",
   "vreg",
   "power",
-  "supply"
+  "supply",
+  "100ma",
+  "sc"
  ],
  "facts": {
   "package_family": "TO",
@@ -73,7 +65,7 @@
    "A": 8,
    "B": 2
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -129,6 +121,6 @@
   "digikey-kicad-library/dk_PMIC-Voltage-Regulators-Linear/LD1117V33",
   "digikey-kicad-library/dk_PMIC-Voltage-Regulators-Linear/MCP1700-3302E_TO"
  ],
- "embedding_text": "ic.to.3v3 | IC | Cluster of 10 IC parts for 3.3V operating voltage available in surface-mount and through-hole TO package footprints. | ic 3.3v to to-92 to-252 to-263 to-220 smd through_hole integrated circuit alternate-kicad-library digikey-kicad-library voltage 3v regulator terminal pmic akl alternate kicad library vreg power supply | TO | 3.3V",
+ "embedding_text": "ic.to.3v3 | IC | 10 ic parts for 3.3V using TO footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | to voltage 3v regulator terminal pmic ic akl alternate kicad library vreg power supply 100ma sc | TO | 3.3V",
  "class": "ic"
 }

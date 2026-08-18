@@ -5,28 +5,21 @@
  "category_path": [
   "IC"
  ],
- "description": "IC cluster containing one tier C part associated with the Tran package family and Tran_ATX footprint.",
+ "description": "1 ic parts using Tran footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when a Tran_ATX footprint or Tran package family is required.",
-  "Verify compatibility when working with tier C generated component data.",
-  "Confirm mounting requirements since the mounting type is listed as unknown."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a Tran land pattern is intended."
  ],
  "avoid_when": [
-  "The board layout requires a footprint other than Tran_ATX.",
-  "A known mounting style or higher quality tier part is required.",
-  "Planner-visible parts are needed."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than Tran."
  ],
  "keywords": [
-  "ic",
   "tran",
-  "tran_atx",
   "atx",
-  "package family",
-  "tier c",
-  "dist-legacy",
-  "generated",
-  "unknown mount",
-  "ic tran",
+  "ic",
   "pad",
   "mm",
   "pitch",
@@ -51,12 +44,12 @@
   "tier_counts": {
    "C": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
   "dist-legacy/Tran_ATX"
  ],
- "embedding_text": "ic.tran | IC | IC cluster containing one tier C part associated with the Tran package family and Tran_ATX footprint. | ic tran tran_atx atx package family tier c dist-legacy generated unknown mount ic tran pad mm pitch pins | Tran | ",
+ "embedding_text": "ic.tran | IC | 1 ic parts using Tran footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | tran atx ic pad mm pitch pins | Tran | ",
  "class": "ic"
 }

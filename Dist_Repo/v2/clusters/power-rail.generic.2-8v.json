@@ -6,31 +6,20 @@
   "Power",
   "Power Rail"
  ],
- "description": "Schematic power rail symbol representing a 2.8V net with package chosen later.",
+ "description": "1 power power rail parts for 2.8V with package chosen later. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Connecting a 2.8V net using a schematic power rail symbol.",
-  "Designing schematics where package or footprint assignment is deferred.",
-  "Using SparkFun KiCad library power symbols."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Select a footprint/package explicitly before placement."
  ],
  "avoid_when": [
-  "A supply voltage other than 2.8V is required.",
-  "A specific physical footprint or package is required immediately on placement.",
-  "An active power regulator or IC component is needed instead of a net rail symbol."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review."
  ],
  "keywords": [
-  "2.8v",
-  "power rail",
-  "power symbol",
   "power",
-  "rail",
-  "voltage rail",
-  "supply rail",
-  "sparkfun",
-  "kicad",
-  "generic",
-  "schematic symbol",
-  "package chosen later",
   "8v",
+  "sparkfun",
   "global",
   "powersymbol",
   "symbol",
@@ -38,6 +27,7 @@
   "label",
   "with",
   "name",
+  "rail",
   "package",
   "chosen",
   "later"
@@ -59,7 +49,7 @@
   "tier_counts": {
    "G": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -74,6 +64,6 @@
  "part_ids": [
   "SparkFun-KiCad-Libraries/SparkFun-PowerSymbol/2.8V"
  ],
- "embedding_text": "power-rail.generic.2-8v | Power Power Rail | Schematic power rail symbol representing a 2.8V net with package chosen later. | 2.8v power rail power symbol power rail voltage rail supply rail sparkfun kicad generic schematic symbol package chosen later 8v global powersymbol symbol creates label with name package chosen later | package chosen later | 2.8V",
+ "embedding_text": "power-rail.generic.2-8v | Power Power Rail | 1 power power rail parts for 2.8V with package chosen later. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | power 8v sparkfun global powersymbol symbol creates label with name rail package chosen later | package chosen later | 2.8V",
  "class": "power.rail"
 }

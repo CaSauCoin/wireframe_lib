@@ -7,38 +7,31 @@
   "Analog",
   "Audio"
  ],
- "description": "Analog audio integrated circuit cluster featuring surface-mount SOT-23 packaging and SOT-23-6 footprints from KiCad symbol libraries.",
+ "description": "1 ic analog audio parts using SOT-23 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select for surface-mount analog audio IC requirements using SOT-23 packaging.",
-  "Confirm compatibility with SOT-23-6 footprint land patterns.",
-  "Check component documentation for tier A entry PAM8301."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SOT-23 land pattern is intended."
  ],
  "avoid_when": [
-  "Through-hole assembly or non-SMD mount styles are required.",
-  "The design requires package families other than SOT-23.",
-  "Applications do not involve analog audio integrated circuits."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SOT-23."
  ],
  "keywords": [
-  "ic",
-  "analog",
   "audio",
-  "sot-23",
-  "sot-23-6",
-  "smd",
-  "surface mount",
-  "pam8301",
-  "kicad symbols",
-  "analog audio ic",
-  "sot23",
-  "amplifier audio",
   "sot",
   "amplifier",
   "class",
+  "pam8301",
   "filterless",
   "mono",
   "5w",
   "tsot",
-  "to"
+  "to",
+  "smd",
+  "ic",
+  "analog"
  ],
  "facts": {
   "package_family": "SOT-23",
@@ -59,7 +52,7 @@
   "tier_counts": {
    "A": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -74,6 +67,6 @@
  "part_ids": [
   "kicad-symbols/Amplifier_Audio/PAM8301"
  ],
- "embedding_text": "ic-analog-audio.sot-23 | IC Analog Audio | Analog audio integrated circuit cluster featuring surface-mount SOT-23 packaging and SOT-23-6 footprints from KiCad symbol libraries. | ic analog audio sot-23 sot-23-6 smd surface mount pam8301 kicad symbols analog audio ic sot23 amplifier audio sot amplifier class filterless mono 5w tsot to | SOT-23 | ",
+ "embedding_text": "ic-analog-audio.sot-23 | IC Analog Audio | 1 ic analog audio parts using SOT-23 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | audio sot amplifier class pam8301 filterless mono 5w tsot to smd ic analog | SOT-23 | ",
  "class": "ic.analog.audio"
 }

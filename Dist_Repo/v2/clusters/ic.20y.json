@@ -5,28 +5,20 @@
  "category_path": [
   "IC"
  ],
- "description": "IC cluster containing 1 part in the 20Y package family with unknown mount type and tier C quality classification.",
+ "description": "1 ic parts using 20Y footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when requiring an IC part with a 20Y package footprint.",
-  "Verify mounting type and pinout details as mount is listed as unknown.",
-  "Confirm part specifications and metadata quality for tier C legacy entries."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a 20Y land pattern is intended."
  ],
  "avoid_when": [
-  "Avoid when the PCB layout requires a package family other than 20Y.",
-  "Avoid when tier C quality or unverified mount specifications are unacceptable.",
-  "Avoid if planner-visible or fully reviewed parts are required for the design."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than 20Y."
  ],
  "keywords": [
   "20y",
   "ic",
-  "20y footprint",
-  "20y package",
-  "package family",
-  "unknown mount",
-  "tier c",
-  "dist-legacy",
-  "legacy source",
-  "ic cluster",
   "pad",
   "mm",
   "pitch",
@@ -51,12 +43,12 @@
   "tier_counts": {
    "C": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
   "dist-legacy/20Y"
  ],
- "embedding_text": "ic.20y | IC | IC cluster containing 1 part in the 20Y package family with unknown mount type and tier C quality classification. | 20y ic 20y footprint 20y package package family unknown mount tier c dist-legacy legacy source ic cluster pad mm pitch pins | 20Y | ",
+ "embedding_text": "ic.20y | IC | 1 ic parts using 20Y footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | 20y ic pad mm pitch pins | 20Y | ",
  "class": "ic"
 }

@@ -6,32 +6,25 @@
   "Discrete",
   "FET"
  ],
- "description": "Discrete FET cluster containing surface-mount parts in SOT-23 footprints with 5V and 35V ratings.",
+ "description": "1 discrete fet parts for 5V, 35V using SOT-23 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when requiring surface-mount discrete FETs in a SOT-23 footprint.",
-  "Choose for designs requiring 5V or 35V voltage ratings.",
-  "Prefer Tier A KiCad symbol entries such as MMBFJ112."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SOT-23 land pattern is intended."
  ],
  "avoid_when": [
-  "Do not use when layout requires footprints other than SOT-23.",
-  "Avoid if through-hole mounting is required instead of surface-mount (SMD).",
-  "Avoid when circuit parameters fall outside the 5V or 35V rated facets."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SOT-23."
  ],
  "keywords": [
-  "discrete",
-  "fet",
-  "sot-23",
-  "5v",
-  "35v",
-  "smd",
-  "mmbfj112",
-  "transistor",
-  "kicad",
-  "surface mount",
-  "tier a",
-  "discrete fet",
   "sot",
+  "fet",
+  "transistor",
+  "35v",
+  "5v",
   "channel",
+  "mmbfj112",
   "5ma",
   "min",
   "50mohm",
@@ -39,7 +32,8 @@
   "vgs",
   "off",
   "jfet",
-  "to"
+  "to",
+  "smd"
  ],
  "facts": {
   "package_family": "SOT-23",
@@ -63,7 +57,7 @@
   "tier_counts": {
    "A": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -78,6 +72,6 @@
  "part_ids": [
   "kicad-symbols/Transistor_FET/MMBFJ112"
  ],
- "embedding_text": "discrete-fet.sot-23.5v.35v | Discrete FET | Discrete FET cluster containing surface-mount parts in SOT-23 footprints with 5V and 35V ratings. | discrete fet sot-23 5v 35v smd mmbfj112 transistor kicad surface mount tier a discrete fet sot channel 5ma min 50mohm max vgs off jfet to | SOT-23 | 5V 35V",
+ "embedding_text": "discrete-fet.sot-23.5v.35v | Discrete FET | 1 discrete fet parts for 5V, 35V using SOT-23 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | sot fet transistor 35v 5v channel mmbfj112 5ma min 50mohm max vgs off jfet to smd | SOT-23 | 5V 35V",
  "class": "discrete.fet"
 }

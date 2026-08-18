@@ -5,41 +5,34 @@
  "category_path": [
   "IC"
  ],
- "description": "Cluster of 2 tier A surface-mount IC parts matching 5V and 40V facets in an MSOP-8 footprint.",
+ "description": "2 ic parts for 5V, 40V using MSOP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Requires an SMD IC matching the MSOP-8_3x3mm_P0.65mm footprint.",
-  "Application requires parts specified with 5V and 40V facets.",
-  "Selecting between tier A variants LT6657AHMS8-2.5 and LT6657BHMS8-2.5."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a MSOP land pattern is intended."
  ],
  "avoid_when": [
-  "The PCB layout requires a non-SMD mounting format.",
-  "The design requires a package footprint other than MSOP-8_3x3mm_P0.65mm.",
-  "Required operating conditions differ from the 5V and 40V facets."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than MSOP."
  ],
  "keywords": [
-  "ic",
   "msop",
-  "smd",
-  "5v",
-  "40v",
-  "msop-8_3x3mm_p0.65mm",
-  "lt6657ahms8-2.5",
-  "lt6657bhms8-2.5",
-  "reference voltage",
-  "kicad-symbols",
-  "3x3mm",
-  "p0.65mm",
   "reference",
   "voltage",
+  "40v",
   "output",
+  "5v",
   "precision",
   "input",
   "10ma",
   "drift",
+  "3x3mm",
   "p0",
   "65mm",
   "so",
-  "vref"
+  "vref",
+  "ic"
  ],
  "facts": {
   "package_family": "MSOP",
@@ -63,7 +56,7 @@
   "tier_counts": {
    "A": 2
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -87,6 +80,6 @@
   "kicad-symbols/Reference_Voltage/LT6657AHMS8-2.5",
   "kicad-symbols/Reference_Voltage/LT6657BHMS8-2.5"
  ],
- "embedding_text": "ic.msop.5v.40v | IC | Cluster of 2 tier A surface-mount IC parts matching 5V and 40V facets in an MSOP-8 footprint. | ic msop smd 5v 40v msop-8_3x3mm_p0.65mm lt6657ahms8-2.5 lt6657bhms8-2.5 reference voltage kicad-symbols 3x3mm p0.65mm reference voltage output precision input 10ma drift p0 65mm so vref | MSOP | 5V 40V",
+ "embedding_text": "ic.msop.5v.40v | IC | 2 ic parts for 5V, 40V using MSOP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | msop reference voltage 40v output 5v precision input 10ma drift 3x3mm p0 65mm so vref ic | MSOP | 5V 40V",
  "class": "ic"
 }

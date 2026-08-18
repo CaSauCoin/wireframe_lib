@@ -6,39 +6,34 @@
   "IC",
   "Memory"
  ],
- "description": "SMD I2C EEPROM memory IC cluster in the SOG65 package family featuring SOG65_8 and SOG65_8_3 footprint options.",
+ "description": "4 ic memory parts for I2C using SOG65 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select based on footprint compatibility with SOG65_8 or SOG65_8_3.",
-  "Choose when requiring an I2C interface memory IC in an SMD SOG65 package.",
-  "Match the specific EEPROM part required, such as 24AA64, BR24L02, M24C02, or M24C08."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SOG65 land pattern is intended."
  ],
  "avoid_when": [
-  "The PCB design requires a package family other than SOG65.",
-  "A memory interface other than I2C is required.",
-  "Through-hole mounting is required instead of SMD."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SOG65."
  ],
  "keywords": [
-  "ic memory",
   "eeprom",
   "i2c",
-  "sog65",
-  "sog65_8",
-  "sog65_8_3",
-  "smd",
-  "ssop8",
-  "msop8",
-  "24aa64",
-  "br24l02",
-  "m24c02",
-  "m24c08",
   "memory",
   "ic",
+  "sog65",
+  "ssop8",
   "serial",
   "ssop",
   "in",
   "an",
   "pin",
-  "package"
+  "package",
+  "m24c02",
+  "24aa64",
+  "br24l02",
+  "msop8"
  ],
  "facts": {
   "package_family": "SOG65",
@@ -62,7 +57,7 @@
   "tier_counts": {
    "B": 4
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -104,6 +99,6 @@
   "chilaboard-altium-library/EEPROM_I2C_M24C02_SSOP8/EEPROM_I2C_M24C02_SSOP8",
   "chilaboard-altium-library/EEPROM_I2C_M24C08_SSOP8/EEPROM_I2C_M24C08_SSOP8"
  ],
- "embedding_text": "ic-memory.sog65.i2c | IC Memory | SMD I2C EEPROM memory IC cluster in the SOG65 package family featuring SOG65_8 and SOG65_8_3 footprint options. | ic memory eeprom i2c sog65 sog65_8 sog65_8_3 smd ssop8 msop8 24aa64 br24l02 m24c02 m24c08 memory ic serial ssop in an pin package | SOG65 | I2C",
+ "embedding_text": "ic-memory.sog65.i2c | IC Memory | 4 ic memory parts for I2C using SOG65 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | eeprom i2c memory ic sog65 ssop8 serial ssop in an pin package m24c02 24aa64 br24l02 msop8 | SOG65 | I2C",
  "class": "ic.memory"
 }

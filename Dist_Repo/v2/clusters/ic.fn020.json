@@ -5,28 +5,20 @@
  "category_path": [
   "IC"
  ],
- "description": "Integrated circuit cluster with 3 Tier-C parts using FN020 package family footprints FN020_L, FN020_M, or FN020_N.",
+ "description": "3 ic parts using FN020 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Requires a land pattern matching FN020_L, FN020_M, or FN020_N footprints.",
-  "Select when using parts classified in the IC category with FN020 package family.",
-  "Verify part mounting and electrical specifications as tier quality is rated C."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a FN020 land pattern is intended."
  ],
  "avoid_when": [
-  "The layout requires a package family other than FN020.",
-  "Higher quality tiers than Tier C are required for the application.",
-  "Exact mounting type must be defined prior to part selection."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than FN020."
  ],
  "keywords": [
-  "ic",
   "fn020",
-  "fn020_l",
-  "fn020_m",
-  "fn020_n",
-  "package fn020",
-  "tier c",
-  "dist-legacy",
-  "integrated circuit",
-  "fn020 footprints",
+  "ic",
   "pad",
   "mm",
   "pitch",
@@ -53,7 +45,7 @@
   "tier_counts": {
    "C": 3
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
@@ -61,6 +53,6 @@
   "dist-legacy/FN020_M",
   "dist-legacy/FN020_N"
  ],
- "embedding_text": "ic.fn020 | IC | Integrated circuit cluster with 3 Tier-C parts using FN020 package family footprints FN020_L, FN020_M, or FN020_N. | ic fn020 fn020_l fn020_m fn020_n package fn020 tier c dist-legacy integrated circuit fn020 footprints pad mm pitch pins | FN020 | ",
+ "embedding_text": "ic.fn020 | IC | 3 ic parts using FN020 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | fn020 ic pad mm pitch pins | FN020 | ",
  "class": "ic"
 }

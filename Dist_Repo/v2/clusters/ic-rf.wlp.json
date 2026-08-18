@@ -6,31 +6,20 @@
   "IC",
   "RF"
  ],
- "description": "RF integrated circuit cluster in WLP surface-mount packaging, using the WLP-4_0.83x0.83mm_P0.4mm footprint with tier-A parts MAX2679 and MAX2679B.",
+ "description": "2 ic rf parts using WLP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select for surface-mount RF IC applications requiring WLP packaging.",
-  "Verify footprint alignment with WLP-4_0.83x0.83mm_P0.4mm.",
-  "Choose between tier-A parts MAX2679 and MAX2679B from KiCad symbol sources."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a WLP land pattern is intended."
  ],
  "avoid_when": [
-  "The design requires package families other than WLP.",
-  "Through-hole mounting is specified instead of SMD.",
-  "The PCB layout requires a footprint other than WLP-4_0.83x0.83mm_P0.4mm."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than WLP."
  ],
  "keywords": [
-  "ic",
-  "rf",
-  "ic rf",
   "wlp",
-  "smd",
-  "wlp-4",
-  "wlp-4_0.83x0.83mm_p0.4mm",
-  "max2679",
-  "max2679b",
-  "kicad-symbols",
-  "rf amplifier",
-  "0.83x0.83mm",
-  "p0.4mm",
+  "rf",
   "amplifier",
   "low",
   "gps",
@@ -41,7 +30,10 @@
   "57ghz",
   "83x0",
   "83mm",
-  "p0"
+  "p0",
+  "4mm",
+  "gain",
+  "block"
  ],
  "facts": {
   "package_family": "WLP",
@@ -62,7 +54,7 @@
   "tier_counts": {
    "A": 2
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -86,6 +78,6 @@
   "kicad-symbols/RF_Amplifier/MAX2679",
   "kicad-symbols/RF_Amplifier/MAX2679B"
  ],
- "embedding_text": "ic-rf.wlp | IC RF | RF integrated circuit cluster in WLP surface-mount packaging, using the WLP-4_0.83x0.83mm_P0.4mm footprint with tier-A parts MAX2679 and MAX2679B. | ic rf ic rf wlp smd wlp-4 wlp-4_0.83x0.83mm_p0.4mm max2679 max2679b kicad-symbols rf amplifier 0.83x0.83mm p0.4mm amplifier low gps gnss ultra current noise 57ghz 83x0 83mm p0 | WLP | ",
+ "embedding_text": "ic-rf.wlp | IC RF | 2 ic rf parts using WLP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | wlp rf amplifier low gps gnss ultra current noise 57ghz 83x0 83mm p0 4mm gain block | WLP | ",
  "class": "ic.rf"
 }

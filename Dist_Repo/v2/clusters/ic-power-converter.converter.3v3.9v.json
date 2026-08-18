@@ -7,40 +7,34 @@
   "Power",
   "Converter"
  ],
- "description": "Through-hole IC power converter cluster supporting 3.3V and 9V facets with Murata MEE1SxxxxSC and TRACO TEC2 footprints.",
+ "description": "2 ic power converter parts for 3.3V, 9V using Converter footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select for through-hole 3.3V or 9V power converter applications.",
-  "Match design requirements to Murata MEE1SxxxxSC or TRACO TEC2 footprint variants.",
-  "Verify part selection against Tier B quality status."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a Converter land pattern is intended."
  ],
  "avoid_when": [
-  "Surface-mount (SMD) packaging is required.",
-  "The PCB design requires land patterns other than the specified Murata or TRACO THT footprints.",
-  "Target voltages fall outside the 3.3V or 9V facets."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than Converter."
  ],
  "keywords": [
-  "ic",
-  "power",
   "converter",
-  "dc-dc",
-  "3.3v",
-  "9v",
-  "through-hole",
-  "tht",
-  "murata",
-  "traco",
-  "mee1s0309sc",
-  "tmr-0510",
-  "mee1sxxxxsc",
-  "tec2",
   "dc",
   "dcdc",
+  "9v",
   "isolated",
   "output",
   "sip",
+  "murata",
+  "tht",
   "3v",
+  "traco",
   "input",
-  "2w"
+  "ic",
+  "power",
+  "2w",
+  "mee1s0309sc"
  ],
  "facts": {
   "package_family": "Converter",
@@ -65,7 +59,7 @@
   "tier_counts": {
    "B": 2
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -89,6 +83,6 @@
   "kicad-symbols/Converter_DCDC/MEE1S0309SC",
   "kicad-symbols/Converter_DCDC/TMR-0510"
  ],
- "embedding_text": "ic-power-converter.converter.3v3.9v | IC Power Converter | Through-hole IC power converter cluster supporting 3.3V and 9V facets with Murata MEE1SxxxxSC and TRACO TEC2 footprints. | ic power converter dc-dc 3.3v 9v through-hole tht murata traco mee1s0309sc tmr-0510 mee1sxxxxsc tec2 dc dcdc isolated output sip 3v input 2w | Converter | 3.3V 9V",
+ "embedding_text": "ic-power-converter.converter.3v3.9v | IC Power Converter | 2 ic power converter parts for 3.3V, 9V using Converter footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | converter dc dcdc 9v isolated output sip murata tht 3v traco input ic power 2w mee1s0309sc | Converter | 3.3V 9V",
  "class": "ic.power.converter"
 }

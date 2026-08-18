@@ -6,44 +6,34 @@
   "Discrete",
   "Diode"
  ],
- "description": "Discrete diodes rated 54V using D-family footprints (SMC, SMA, SMB, SOD-123F, SOD-128, P600 horizontal), spanning SMD and through-hole mounts across TVS and zener variants.",
+ "description": "30 discrete diode parts for 54V using D footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Match footprint exactly (D_SMC, D_SMA, D_SMB, D_P600, D_SOD-123F/128, D_SMAFL) to the intended land pattern.",
-  "Prefer tier A entries; only one part in this cluster is tier B.",
-  "Distinguish unidirectional vs bidirectional TVS variants (e.g. plain vs 'CA' suffixed part numbers) before substituting.",
-  "All parts derive from a single source library (Alternate-KiCad-Library); verify against a datasheet before committing to a design."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a D land pattern is intended."
  ],
  "avoid_when": [
-  "The design requires a voltage rating other than 54V.",
-  "The required package/footprint is not one of the listed D-family variants.",
-  "Directionality (unidirectional vs bidirectional) of the TVS/zener is not confirmed against the schematic need.",
-  "A through-hole horizontal P600 form factor won't fit the board, and no SMD equivalent is selected."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than D."
  ],
  "keywords": [
   "diode",
-  "tvs diode",
-  "zener diode",
-  "54v",
-  "discrete diode",
-  "d package",
-  "smc footprint",
-  "sma footprint",
-  "smb footprint",
-  "sod-123f",
-  "sod-128",
-  "p600",
-  "horizontal diode",
-  "smd diode",
-  "through hole diode",
-  "1.5smcj54a",
-  "15kp54a",
-  "bidirectional tvs",
   "tvs",
+  "54v",
   "unidirectional",
   "akl",
   "alternate",
   "kicad",
-  "library"
+  "library",
+  "discrete",
+  "bidirectional",
+  "smc",
+  "p600",
+  "do",
+  "horizontal",
+  "1mm",
+  "sod"
  ],
  "facts": {
   "package_family": "D",
@@ -78,7 +68,7 @@
    "A": 29,
    "B": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -154,6 +144,6 @@
   "Alternate-KiCad-Library/Diode_TVS_AKL/TPSMF4L54A",
   "Alternate-KiCad-Library/Diode_TVS_AKL/TPSMA6L54A"
  ],
- "embedding_text": "discrete-diode.d.54v | Discrete Diode | Discrete diodes rated 54V using D-family footprints (SMC, SMA, SMB, SOD-123F, SOD-128, P600 horizontal), spanning SMD and through-hole mounts across TVS and zener variants. | diode tvs diode zener diode 54v discrete diode d package smc footprint sma footprint smb footprint sod-123f sod-128 p600 horizontal diode smd diode through hole diode 1.5smcj54a 15kp54a bidirectional tvs tvs unidirectional akl alternate kicad library | D | 54V",
+ "embedding_text": "discrete-diode.d.54v | Discrete Diode | 30 discrete diode parts for 54V using D footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | diode tvs 54v unidirectional akl alternate kicad library discrete bidirectional smc p600 do horizontal 1mm sod | D | 54V",
  "class": "discrete.diode"
 }

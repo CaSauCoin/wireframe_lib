@@ -5,28 +5,20 @@
  "category_path": [
   "IC"
  ],
- "description": "Integrated circuit cluster containing 3 tier-C parts matching the RC052C package family and footprint variants RC052C_L, RC052C_M, and RC052C_N.",
+ "description": "3 ic parts using RC052C footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when requiring an IC component using the RC052C package family.",
-  "Verify the specific footprint variant among RC052C_L, RC052C_M, and RC052C_N.",
-  "Confirm part electrical specifications and mounting type prior to board layout."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a RC052C land pattern is intended."
  ],
  "avoid_when": [
-  "The design requires a package footprint other than RC052C variants.",
-  "Higher quality tier parts (Tier A or B) are required for the design.",
-  "Electrical ratings, pinout, or mounting details are unspecified for the target application."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than RC052C."
  ],
  "keywords": [
   "rc052c",
   "ic",
-  "integrated circuit",
-  "rc052c_l",
-  "rc052c_m",
-  "rc052c_n",
-  "package family rc052c",
-  "footprint",
-  "tier c",
-  "dist-legacy",
   "pad",
   "mm",
   "pitch",
@@ -53,7 +45,7 @@
   "tier_counts": {
    "C": 3
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
@@ -61,6 +53,6 @@
   "dist-legacy/RC052C_M",
   "dist-legacy/RC052C_N"
  ],
- "embedding_text": "ic.rc052c | IC | Integrated circuit cluster containing 3 tier-C parts matching the RC052C package family and footprint variants RC052C_L, RC052C_M, and RC052C_N. | rc052c ic integrated circuit rc052c_l rc052c_m rc052c_n package family rc052c footprint tier c dist-legacy pad mm pitch pins | RC052C | ",
+ "embedding_text": "ic.rc052c | IC | 3 ic parts using RC052C footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | rc052c ic pad mm pitch pins | RC052C | ",
  "class": "ic"
 }

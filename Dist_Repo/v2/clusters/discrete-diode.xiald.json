@@ -6,28 +6,21 @@
   "Discrete",
   "Diode"
  ],
- "description": "Discrete diode cluster containing 2 tier C parts using XIALD package family footprints (XIALD, XIALD_3).",
+ "description": "2 discrete diode parts using XIALD footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when a discrete diode with a XIALD package family footprint is required.",
-  "Check between XIALD and XIALD_3 footprint variants for layout match.",
-  "Verify part specifications as current entries are tier C quality."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a XIALD land pattern is intended."
  ],
  "avoid_when": [
-  "Avoid if the layout requires a package family other than XIALD.",
-  "Avoid if higher tier quality parts are strictly required.",
-  "Do not use if components other than discrete diodes are needed."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than XIALD."
  ],
  "keywords": [
   "xiald",
-  "xiald_3",
   "discrete",
   "diode",
-  "discrete diode",
-  "discrete.diode",
-  "package family xiald",
-  "xiald footprint",
-  "xiald_3 footprint",
-  "tier c",
   "pad",
   "mm",
   "pitch",
@@ -53,13 +46,13 @@
   "tier_counts": {
    "C": 2
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
   "dist-legacy/XIALD",
   "dist-legacy/XIALD_3"
  ],
- "embedding_text": "discrete-diode.xiald | Discrete Diode | Discrete diode cluster containing 2 tier C parts using XIALD package family footprints (XIALD, XIALD_3). | xiald xiald_3 discrete diode discrete diode discrete.diode package family xiald xiald footprint xiald_3 footprint tier c pad mm pitch pins | XIALD | ",
+ "embedding_text": "discrete-diode.xiald | Discrete Diode | 2 discrete diode parts using XIALD footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | xiald discrete diode pad mm pitch pins | XIALD | ",
  "class": "discrete.diode"
 }

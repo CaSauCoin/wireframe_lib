@@ -6,31 +6,22 @@
   "Discrete",
   "Diode"
  ],
- "description": "Discrete diode cluster containing 5 parts in the SOD323 package family using SOD323 and SOD323 IPC footprints with SMD mounting.",
+ "description": "5 discrete diode parts using SOD323 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Choose parts using SOD323 or SOD323 IPC footprints.",
-  "Prefer Tier B parts over Tier C parts within the cluster.",
-  "Verify part source between dist-legacy and celestial-altium-library."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SOD323 land pattern is intended."
  ],
  "avoid_when": [
-  "The design requires a package family other than SOD323.",
-  "Surface-mount (SMD) components are not suitable for the layout.",
-  "Parts rated at Tier B or Tier C do not satisfy quality requirements."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SOD323."
  ],
  "keywords": [
   "sod323",
   "diode",
-  "discrete diode",
-  "discrete",
-  "smd",
-  "sod323 ipc",
-  "dist-legacy",
-  "celestial-altium-library",
-  "surface mount",
-  "tier b",
-  "tier c",
-  "discrete.diode",
   "ipc",
+  "discrete",
   "anode",
   "cathode",
   "surface",
@@ -41,7 +32,8 @@
   "pins",
   "duplicate",
   "two",
-  "pin"
+  "pin",
+  "with"
  ],
  "facts": {
   "package_family": "SOD323",
@@ -66,7 +58,7 @@
    "B": 2,
    "C": 3
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -93,6 +85,6 @@
   "celestial-altium-library/SOD323/SOD323",
   "celestial-altium-library/SOD323 IPC/SOD323_IPC"
  ],
- "embedding_text": "discrete-diode.sod323 | Discrete Diode | Discrete diode cluster containing 5 parts in the SOD323 package family using SOD323 and SOD323 IPC footprints with SMD mounting. | sod323 diode discrete diode discrete smd sod323 ipc dist-legacy celestial-altium-library surface mount tier b tier c discrete.diode ipc anode cathode surface mount pad mm pitch pins duplicate two pin | SOD323 | ",
+ "embedding_text": "discrete-diode.sod323 | Discrete Diode | 5 discrete diode parts using SOD323 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | sod323 diode ipc discrete anode cathode surface mount pad mm pitch pins duplicate two pin with | SOD323 | ",
  "class": "discrete.diode"
 }

@@ -6,36 +6,25 @@
   "Discrete",
   "BJT"
  ],
- "description": "Discrete BJT cluster for 16V, SOT-23 SMD footprint, currently containing one tier-A part (BFR106) from the Alternate-KiCad-Library source.",
+ "description": "1 discrete bjt parts for 16V using SOT-23 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Only one part (BFR106, tier A, score 100) is currently in this cluster",
-  "Confirm the 16V facet matches your circuit's actual voltage requirement",
-  "Verify SOT-23 footprint and pin mapping before layout",
-  "Single-source data (Alternate-KiCad-Library) — cross-check trust before committing"
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SOT-23 land pattern is intended."
  ],
  "avoid_when": [
-  "Design needs a package other than SOT-23",
-  "Required voltage, current, or other electrical rating is not confirmed by the part's own data",
-  "Multiple verified-source options are needed and only one source is available here",
-  "Symbol-footprint pairing has not been checked against the actual part"
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SOT-23."
  ],
  "keywords": [
-  "discrete bjt",
-  "sot-23",
-  "bjt",
+  "sot",
   "transistor",
   "bfr106",
-  "16v",
-  "smd",
-  "surface mount",
-  "alternate-kicad-library",
-  "akl",
-  "kicad library",
-  "tier a",
-  "sot-23 footprint",
-  "single source",
-  "sot",
+  "bjt",
   "npn",
+  "16v",
+  "akl",
   "rf",
   "210ma",
   "700mw",
@@ -66,7 +55,7 @@
   "tier_counts": {
    "A": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -81,6 +70,6 @@
  "part_ids": [
   "Alternate-KiCad-Library/Transistor_BJT_AKL/BFR106"
  ],
- "embedding_text": "discrete-bjt.sot-23.16v | Discrete BJT | Discrete BJT cluster for 16V, SOT-23 SMD footprint, currently containing one tier-A part (BFR106) from the Alternate-KiCad-Library source. | discrete bjt sot-23 bjt transistor bfr106 16v smd surface mount alternate-kicad-library akl kicad library tier a sot-23 footprint single source sot npn rf 210ma 700mw 5ghz alternate kicad library discrete | SOT-23 | 16V",
+ "embedding_text": "discrete-bjt.sot-23.16v | Discrete BJT | 1 discrete bjt parts for 16V using SOT-23 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | sot transistor bfr106 bjt npn 16v akl rf 210ma 700mw 5ghz alternate kicad library discrete | SOT-23 | 16V",
  "class": "discrete.bjt"
 }

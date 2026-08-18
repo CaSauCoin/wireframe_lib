@@ -6,36 +6,28 @@
   "Power",
   "Power Rail"
  ],
- "description": "Generic power rail symbols for 5V and 1.5V nets sourced from SparkFun KiCad libraries with package assignment deferred.",
+ "description": "1 power power rail parts for 5V, 1.5V with package chosen later. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Verify the required rail voltage matches the 1.5V or 5V designators.",
-  "Select and assign an appropriate package or footprint prior to PCB layout.",
-  "Review symbol compatibility when integrating with SparkFun KiCad library symbols."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Select a footprint/package explicitly before placement."
  ],
  "avoid_when": [
-  "A discrete power converter or active regulator IC is required rather than a schematic rail symbol.",
-  "Rail voltages other than 1.5V or 5V are required.",
-  "A predefined physical footprint must be inherently bound to the schematic symbol."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review."
  ],
  "keywords": [
-  "power rail",
-  "power symbol",
   "5v",
-  "1.5v",
-  "sparkfun",
-  "kicad",
-  "powersymbol",
-  "generic",
   "power",
-  "rail",
-  "voltage rail",
-  "schematic symbol",
+  "sparkfun",
   "global",
+  "powersymbol",
   "symbol",
   "creates",
   "label",
   "with",
   "name",
+  "rail",
   "package",
   "chosen",
   "later"
@@ -58,7 +50,7 @@
   "tier_counts": {
    "G": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -73,6 +65,6 @@
  "part_ids": [
   "SparkFun-KiCad-Libraries/SparkFun-PowerSymbol/1.5V"
  ],
- "embedding_text": "power-rail.generic.5v.1-5v | Power Power Rail | Generic power rail symbols for 5V and 1.5V nets sourced from SparkFun KiCad libraries with package assignment deferred. | power rail power symbol 5v 1.5v sparkfun kicad powersymbol generic power rail voltage rail schematic symbol global symbol creates label with name package chosen later | package chosen later | 5V 1.5V",
+ "embedding_text": "power-rail.generic.5v.1-5v | Power Power Rail | 1 power power rail parts for 5V, 1.5V with package chosen later. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | 5v power sparkfun global powersymbol symbol creates label with name rail package chosen later | package chosen later | 5V 1.5V",
  "class": "power.rail"
 }

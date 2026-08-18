@@ -5,28 +5,20 @@
  "category_path": [
   "IC"
  ],
- "description": "Integrated circuit component cluster in the RCJ package family containing one tier-C part associated with the RCJ-2123 footprint.",
+ "description": "1 ic parts using RCJ footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Verify target PCB layout compatibility with the RCJ-2123 footprint.",
-  "Check part details and pin configuration as mounting type is listed as unknown.",
-  "Confirm part specifications given the single tier-C entry in this cluster."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a RCJ land pattern is intended."
  ],
  "avoid_when": [
-  "The board layout requires a package family other than RCJ.",
-  "A defined surface-mount or through-hole mounting type is required.",
-  "The application requires planner-visible or higher quality tier parts."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than RCJ."
  ],
  "keywords": [
   "rcj",
   "ic",
-  "rcj-2123",
-  "rcj footprint",
-  "package family rcj",
-  "tier c",
-  "integrated circuit",
-  "dist-legacy",
-  "ic.rcj",
-  "rcj package",
   "pad",
   "mm",
   "pitch",
@@ -51,12 +43,12 @@
   "tier_counts": {
    "C": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
   "dist-legacy/RCJ-2123"
  ],
- "embedding_text": "ic.rcj | IC | Integrated circuit component cluster in the RCJ package family containing one tier-C part associated with the RCJ-2123 footprint. | rcj ic rcj-2123 rcj footprint package family rcj tier c integrated circuit dist-legacy ic.rcj rcj package pad mm pitch pins | RCJ | ",
+ "embedding_text": "ic.rcj | IC | 1 ic parts using RCJ footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | rcj ic pad mm pitch pins | RCJ | ",
  "class": "ic"
 }

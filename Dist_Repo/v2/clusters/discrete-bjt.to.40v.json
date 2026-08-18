@@ -6,44 +6,34 @@
   "Discrete",
   "BJT"
  ],
- "description": "Cluster of 70 discrete BJT parts for the 40V facet in TO-family packages (TO-92, TO-39, TO-126, TO-220, and other TO variants), supporting SMD and through-hole mounting, sourced from kicad-symbols and Alternate-KiCad-Library.",
+ "description": "70 discrete bjt parts for 40V using TO footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Match the exact footprint (TO-92, TO-39, TO-126, TO-220, etc.) to the intended land pattern.",
-  "Prefer tier A entries (62 of 70 parts) over the 8 tier B entries.",
-  "Confirm SMD vs through-hole mounting matches the assembly process.",
-  "Check part source (kicad-symbols vs Alternate-KiCad-Library) for trust level."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a TO land pattern is intended."
  ],
  "avoid_when": [
-  "The design requires a voltage rating other than 40V.",
-  "The needed footprint is outside the listed TO family variants.",
-  "A tier B entry hasn't been verified against a datasheet.",
-  "Only one mount type (SMD or through-hole) is allowed and the part's mount is unconfirmed."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than TO."
  ],
  "keywords": [
-  "bjt",
-  "transistor",
-  "discrete",
-  "to package",
-  "to-92",
-  "to-39",
-  "to-126",
-  "to-220",
-  "to-18",
-  "to-3",
-  "to-5",
-  "to-66",
-  "to-78",
-  "40v",
-  "smd",
-  "through hole",
-  "kicad-symbols",
-  "alternate-kicad-library",
   "to",
+  "transistor",
+  "bjt",
+  "40v",
   "npn",
+  "discrete",
   "akl",
   "alternate",
   "kicad",
-  "library"
+  "library",
+  "pnp",
+  "ebc",
+  "sc",
+  "vertical",
+  "complementary",
+  "power"
  ],
  "facts": {
   "package_family": "TO",
@@ -80,7 +70,7 @@
    "A": 62,
    "B": 8
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -196,6 +186,6 @@
   "Alternate-KiCad-Library/Transistor_BJT_AKL/MAT12-2",
   "Alternate-KiCad-Library/Transistor_BJT_AKL/MAT12s"
  ],
- "embedding_text": "discrete-bjt.to.40v | Discrete BJT | Cluster of 70 discrete BJT parts for the 40V facet in TO-family packages (TO-92, TO-39, TO-126, TO-220, and other TO variants), supporting SMD and through-hole mounting, sourced from kicad-symbols and Alternate-KiCad-Library. | bjt transistor discrete to package to-92 to-39 to-126 to-220 to-18 to-3 to-5 to-66 to-78 40v smd through hole kicad-symbols alternate-kicad-library to npn akl alternate kicad library | TO | 40V",
+ "embedding_text": "discrete-bjt.to.40v | Discrete BJT | 70 discrete bjt parts for 40V using TO footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | to transistor bjt 40v npn discrete akl alternate kicad library pnp ebc sc vertical complementary power | TO | 40V",
  "class": "discrete.bjt"
 }

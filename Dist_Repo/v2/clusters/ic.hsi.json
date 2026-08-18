@@ -5,29 +5,21 @@
  "category_path": [
   "IC"
  ],
- "description": "Through-hole IC component cluster in the HSI package family containing four parts across HSI_C and HSI_M footprints from the chilaboard-altium-library source.",
+ "description": "4 ic parts using HSI footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Choose between HSI_C and HSI_M footprint variants.",
-  "Select by quality tier preference between Tier B (2 parts) and Tier C (2 parts).",
-  "Verify part availability against planner visibility settings, as 2 of 4 parts are visible."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a HSI land pattern is intended."
  ],
  "avoid_when": [
-  "Surface-mount assembly is required.",
-  "Footprints other than HSI_C or HSI_M are needed.",
-  "Components outside the HSI package family are required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than HSI."
  ],
  "keywords": [
-  "ic",
   "hsi",
-  "through_hole",
-  "hsi_c",
-  "hsi_m",
-  "hsi_chila_c",
-  "hsi_chila_m",
-  "chilaboard",
-  "altium",
-  "chilaboard-altium-library",
   "connector",
+  "ic",
   "chila",
   "high",
   "speed",
@@ -63,7 +55,7 @@
    "B": 2,
    "C": 2
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -89,6 +81,6 @@
   "chilaboard-altium-library/HSI_C/HSI_C",
   "chilaboard-altium-library/HSI_M/HSI_M"
  ],
- "embedding_text": "ic.hsi | IC | Through-hole IC component cluster in the HSI package family containing four parts across HSI_C and HSI_M footprints from the chilaboard-altium-library source. | ic hsi through_hole hsi_c hsi_m hsi_chila_c hsi_chila_m chilaboard altium chilaboard-altium-library connector chila high speed board interface pins pin differential and power lines mezzanine to | HSI | ",
+ "embedding_text": "ic.hsi | IC | 4 ic parts using HSI footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | hsi connector ic chila high speed board interface pins pin differential and power lines mezzanine to | HSI | ",
  "class": "ic"
 }

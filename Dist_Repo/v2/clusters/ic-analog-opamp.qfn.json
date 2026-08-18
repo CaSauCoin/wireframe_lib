@@ -7,41 +7,34 @@
   "Analog",
   "Op-Amp"
  ],
- "description": "Cluster of 43 surface-mount analog operational amplifier ICs in QFN package variants across quality tiers A and B.",
+ "description": "43 ic analog op-amp parts using QFN footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Match the required QFN footprint variant, body size, pitch, and exposed pad dimensions.",
-  "Filter by quality tier (25 tier A parts and 18 tier B parts available).",
-  "Check source library origin between Alternate-KiCad-Library and kicad-symbols."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a QFN land pattern is intended."
  ],
  "avoid_when": [
-  "Designs require package families other than QFN or non-SMD mounting.",
-  "The target footprint requires leaded or through-hole mounting."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than QFN."
  ],
  "keywords": [
-  "ic",
-  "analog",
-  "op-amp",
-  "opamp",
   "qfn",
-  "smd",
-  "vqfn",
-  "wqfn",
   "amplifier",
-  "kicad-symbols",
-  "alternate-kicad-library",
-  "ad8222acpz",
-  "ada4817-2acpz",
-  "lm324q",
   "operational",
   "rail",
   "quad",
+  "ic",
+  "analog",
   "op",
   "amp",
   "p0",
+  "opamp",
   "nolead",
   "to",
   "1ep",
-  "cmos"
+  "cmos",
+  "akl"
  ],
  "facts": {
   "package_family": "QFN",
@@ -75,7 +68,7 @@
    "A": 25,
    "B": 18
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -164,6 +157,6 @@
   "Alternate-KiCad-Library/Amplifier_Operational_AKL/TLV342IRUG",
   "kicad-symbols/Amplifier_Operational/TLV9004xRUCR"
  ],
- "embedding_text": "ic-analog-opamp.qfn | IC Analog Op-Amp | Cluster of 43 surface-mount analog operational amplifier ICs in QFN package variants across quality tiers A and B. | ic analog op-amp opamp qfn smd vqfn wqfn amplifier kicad-symbols alternate-kicad-library ad8222acpz ada4817-2acpz lm324q operational rail quad op amp p0 nolead to 1ep cmos | QFN | ",
+ "embedding_text": "ic-analog-opamp.qfn | IC Analog Op-Amp | 43 ic analog op-amp parts using QFN footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | qfn amplifier operational rail quad ic analog op amp p0 opamp nolead to 1ep cmos akl | QFN | ",
  "class": "ic.analog.opamp"
 }

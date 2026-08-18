@@ -6,29 +6,21 @@
   "Discrete",
   "Diode"
  ],
- "description": "Single discrete diode cluster using package family 103 and the 103_2KV footprint pattern.",
+ "description": "1 discrete diode parts using 103 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Use when a discrete diode requiring the 103_2KV footprint is needed.",
-  "Verify footprint details and pin assignments prior to layout as mount type is unknown.",
-  "Review component data carefully due to tier C quality rating."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a 103 land pattern is intended."
  ],
  "avoid_when": [
-  "The design requires a package family other than 103.",
-  "Unvalidated tier C data or unknown mount types are unsuitable.",
-  "A footprint pattern other than 103_2KV is required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than 103."
  ],
  "keywords": [
-  "discrete diode",
-  "diode",
-  "discrete",
-  "103",
-  "103_2kv",
-  "package family 103",
-  "103 footprint",
-  "discrete.diode",
-  "tier c",
-  "103 2kv",
   "2kv",
+  "discrete",
+  "diode",
   "pad",
   "mm",
   "pitch",
@@ -53,12 +45,12 @@
   "tier_counts": {
    "C": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
   "dist-legacy/103_2KV"
  ],
- "embedding_text": "discrete-diode.103 | Discrete Diode | Single discrete diode cluster using package family 103 and the 103_2KV footprint pattern. | discrete diode diode discrete 103 103_2kv package family 103 103 footprint discrete.diode tier c 103 2kv 2kv pad mm pitch pins | 103 | ",
+ "embedding_text": "discrete-diode.103 | Discrete Diode | 1 discrete diode parts using 103 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | 2kv discrete diode pad mm pitch pins | 103 | ",
  "class": "discrete.diode"
 }

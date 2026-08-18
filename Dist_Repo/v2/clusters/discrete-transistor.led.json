@@ -6,36 +6,28 @@
   "Discrete",
   "Transistor"
  ],
- "description": "Discrete transistor cluster containing phototransistor components mapped to LED footprints including SMD and radial package types.",
+ "description": "2 discrete transistor parts using LED footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Choose when a phototransistor or discrete transistor requires an LED package footprint.",
-  "Select between available SMD no-lead (1.7x0.8mm) and 3mm radial footprints.",
-  "Use when parts from digikey-kicad-library meet design requirements."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a LED land pattern is intended."
  ],
  "avoid_when": [
-  "Avoid if the design requires non-LED package footprints or standard transistor packages.",
-  "Avoid when requiring Tier A quality verified components, as parts in this cluster are Tier B.",
-  "Do not use if neither 2-SMD 1.7x0.8mm nor 3mm radial footprint options are suitable."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than LED."
  ],
  "keywords": [
-  "discrete",
-  "transistor",
-  "discrete transistor",
-  "led",
-  "phototransistors",
-  "optical sensors",
-  "smd",
-  "radial",
-  "als-pt19-315c_l177_tr8",
-  "ltr-4206e",
-  "digikey-kicad-library",
-  "led_3mm_radial",
   "sensors",
   "optical",
+  "phototransistors",
+  "led",
   "dk",
   "sensor",
   "photo",
   "transducers",
+  "discrete",
+  "transistor",
   "als",
   "pt19",
   "315c",
@@ -64,7 +56,7 @@
   "tier_counts": {
    "B": 2
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -88,6 +80,6 @@
   "digikey-kicad-library/dk_Optical-Sensors-Phototransistors/ALS-PT19-315C_L177_TR8",
   "digikey-kicad-library/dk_Optical-Sensors-Phototransistors/LTR-4206E"
  ],
- "embedding_text": "discrete-transistor.led | Discrete Transistor | Discrete transistor cluster containing phototransistor components mapped to LED footprints including SMD and radial package types. | discrete transistor discrete transistor led phototransistors optical sensors smd radial als-pt19-315c_l177_tr8 ltr-4206e digikey-kicad-library led_3mm_radial sensors optical dk sensor photo transducers als pt19 315c l177 tr8 630nm | LED | ",
+ "embedding_text": "discrete-transistor.led | Discrete Transistor | 2 discrete transistor parts using LED footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | sensors optical phototransistors led dk sensor photo transducers discrete transistor als pt19 315c l177 tr8 630nm | LED | ",
  "class": "discrete.transistor"
 }

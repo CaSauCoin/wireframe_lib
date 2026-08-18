@@ -6,30 +6,19 @@
   "Passive",
   "Resistor"
  ],
- "description": "A cluster of 335 tier G passive resistor library parts where package family is chosen later and no predefined footprints are assigned.",
+ "description": "335 passive resistor parts with package chosen later. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Assign an explicit package and footprint before PCB layout.",
-  "Evaluate part symbols and scores across the contributing KiCad and Altium libraries.",
-  "Check individual part requirements since all 335 items are tier G."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Select a footprint/package explicitly before placement."
  ],
  "avoid_when": [
-  "Pre-assigned physical footprints or mounting types are required.",
-  "The design requires verified tier A parts instead of tier G entries.",
-  "A defined package family is required prior to part selection."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review."
  ],
  "keywords": [
-  "passive",
   "resistor",
-  "passive resistor",
-  "package chosen later",
-  "tier g",
-  "heater",
-  "potentiometer",
-  "max5436",
-  "max5438",
-  "kicad-symbols",
-  "chilaboard-altium-library",
-  "celestial-altium-library",
+  "passive",
   "package",
   "chosen",
   "later",
@@ -41,7 +30,9 @@
   "optc",
   "sot89",
   "0602j",
-  "type"
+  "type",
+  "fbead",
+  "shunt"
  ],
  "facts": {
   "package_family": "package chosen later",
@@ -63,7 +54,7 @@
   "tier_counts": {
    "G": 335
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -444,6 +435,6 @@
   "chilaboard-altium-library/XORx4_SN74LS136_SOP/XORx4_SN74LS136_SOP",
   "chilaboard-altium-library/XORx4_SN74LS86_DIP/XORx4_SN74LS86_DIP"
  ],
- "embedding_text": "passive-resistor.generic | Passive Resistor | A cluster of 335 tier G passive resistor library parts where package family is chosen later and no predefined footprints are assigned. | passive resistor passive resistor package chosen later tier g heater potentiometer max5436 max5438 kicad-symbols chilaboard-altium-library celestial-altium-library package chosen later pins vreg to220 to263 smd optc sot89 0602j type | package chosen later | ",
+ "embedding_text": "passive-resistor.generic | Passive Resistor | 335 passive resistor parts with package chosen later. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | resistor passive package chosen later pins vreg to220 to263 smd optc sot89 0602j type fbead shunt | package chosen later | ",
  "class": "passive.resistor"
 }

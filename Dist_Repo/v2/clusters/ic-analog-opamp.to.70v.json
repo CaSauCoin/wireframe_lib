@@ -7,34 +7,24 @@
   "Analog",
   "Op-Amp"
  ],
- "description": "Cluster of 70V analog operational amplifier ICs in the TO package family, offering surface-mount and through-hole footprint options.",
+ "description": "2 ic analog op-amp parts for 70V using TO footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select between surface-mount (TO-263-5_TabPin3) and through-hole (TO-220-5_Vertical) footprints.",
-  "Verify that the circuit requires a 70V rated analog operational amplifier.",
-  "Choose between specific part options OPA544F and OPA544T based on assembly method."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a TO land pattern is intended."
  ],
  "avoid_when": [
-  "The layout requires package families other than TO.",
-  "The application requires operational amplifiers not rated for 70V.",
-  "Required footprints differ from TO-263-5_TabPin3 and TO-220-5_Vertical."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than TO."
  ],
  "keywords": [
-  "ic",
-  "analog",
-  "op-amp",
-  "opamp",
-  "70v",
   "to",
-  "smd",
-  "through_hole",
-  "to-263-5_tabpin3",
-  "to-220-5_vertical",
-  "opa544f",
-  "opa544t",
   "amplifier",
   "operational",
   "power",
   "jfet",
+  "70v",
   "akl",
   "supply",
   "voltage",
@@ -42,7 +32,9 @@
   "2a",
   "peak",
   "output",
-  "current"
+  "current",
+  "5mv",
+  "offset"
  ],
  "facts": {
   "package_family": "TO",
@@ -67,7 +59,7 @@
   "tier_counts": {
    "A": 2
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -91,6 +83,6 @@
   "Alternate-KiCad-Library/Amplifier_Operational_AKL/OPA544F",
   "Alternate-KiCad-Library/Amplifier_Operational_AKL/OPA544T"
  ],
- "embedding_text": "ic-analog-opamp.to.70v | IC Analog Op-Amp | Cluster of 70V analog operational amplifier ICs in the TO package family, offering surface-mount and through-hole footprint options. | ic analog op-amp opamp 70v to smd through_hole to-263-5_tabpin3 to-220-5_vertical opa544f opa544t amplifier operational power jfet akl supply voltage range 2a peak output current | TO | 70V",
+ "embedding_text": "ic-analog-opamp.to.70v | IC Analog Op-Amp | 2 ic analog op-amp parts for 70V using TO footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | to amplifier operational power jfet 70v akl supply voltage range 2a peak output current 5mv offset | TO | 70V",
  "class": "ic.analog.opamp"
 }

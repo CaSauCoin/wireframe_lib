@@ -7,42 +7,34 @@
   "Power",
   "Converter"
  ],
- "description": "Through-hole IC power converter cluster of 5 Tier B parts for 3.3V and 18V applications using Converter footprints.",
+ "description": "5 ic power converter parts for 3.3V, 18V using Converter footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Through-hole (THT) mounting style is required for the power converter.",
-  "Component selection requires 3.3V or 18V facet compatibility.",
-  "Layout uses KiCad through-hole DC-DC converter footprint land patterns."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a Converter land pattern is intended."
  ],
  "avoid_when": [
-  "Surface-mount (SMD) packaging is required for the PCB design.",
-  "A package style other than through-hole Converter is specified.",
-  "The application requires voltage ratings other than 3.3V or 18V."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than Converter."
  ],
  "keywords": [
   "converter",
-  "ic power converter",
-  "3.3v",
-  "18v",
-  "through_hole",
-  "tht",
-  "dcdc",
-  "kicad",
-  "tri10-1210",
-  "trn3-1210",
-  "tec2-1210wi",
-  "tec2-1215wi",
-  "tmr-1210",
   "dc",
+  "dcdc",
   "traco",
+  "18v",
   "3v",
   "output",
+  "tht",
   "sip",
   "single",
   "2w",
   "regulated",
   "input",
   "fixed",
-  "voltage"
+  "voltage",
+  "isolation"
  ],
  "facts": {
   "package_family": "Converter",
@@ -68,7 +60,7 @@
   "tier_counts": {
    "B": 5
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -119,6 +111,6 @@
   "kicad-symbols/Converter_DCDC/TEC2-1215WI",
   "kicad-symbols/Converter_DCDC/TMR-1210"
  ],
- "embedding_text": "ic-power-converter.converter.3v3.18v | IC Power Converter | Through-hole IC power converter cluster of 5 Tier B parts for 3.3V and 18V applications using Converter footprints. | converter ic power converter 3.3v 18v through_hole tht dcdc kicad tri10-1210 trn3-1210 tec2-1210wi tec2-1215wi tmr-1210 dc traco 3v output sip single 2w regulated input fixed voltage | Converter | 3.3V 18V",
+ "embedding_text": "ic-power-converter.converter.3v3.18v | IC Power Converter | 5 ic power converter parts for 3.3V, 18V using Converter footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | converter dc dcdc traco 18v 3v output tht sip single 2w regulated input fixed voltage isolation | Converter | 3.3V 18V",
  "class": "ic.power.converter"
 }

@@ -7,42 +7,34 @@
   "Analog",
   "Audio"
  ],
- "description": "Surface-mount analog audio ICs in QFN package variants including WQFN, TQFN, and HVQFN footprints with exposed thermal pads.",
+ "description": "5 ic analog audio parts using QFN footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select based on required QFN footprint variant, pin count, pitch, and exposed pad size.",
-  "Verify whether thermal vias are required on the exposed pad land pattern.",
-  "Prefer Tier A parts over Tier B parts when available."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a QFN land pattern is intended."
  ],
  "avoid_when": [
-  "The PCB layout requires non-QFN or through-hole component packaging.",
-  "Required footprints differ from the available WQFN, TQFN, and HVQFN options.",
-  "The application does not use analog audio integrated circuits."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than QFN."
  ],
  "keywords": [
-  "ic",
-  "analog audio",
-  "audio ic",
-  "qfn",
-  "wqfn",
-  "tqfn",
-  "hvqfn",
-  "smd",
-  "exposed pad",
-  "thermal vias",
-  "tpa6132a2rte",
-  "max9715xte",
-  "max9850xti",
-  "tfa9879hn",
-  "max9701xtg",
   "audio",
   "amplifier",
+  "tqfn",
   "stereo",
   "1ep",
   "p0",
   "nolead",
+  "ic",
   "analog",
+  "qfn",
   "class",
-  "5mm"
+  "5mm",
+  "wqfn",
+  "6mm",
+  "thermalvias",
+  "hvqfn"
  ],
  "facts": {
   "package_family": "QFN",
@@ -68,7 +60,7 @@
    "A": 1,
    "B": 4
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -119,6 +111,6 @@
   "kicad-symbols/Amplifier_Audio/TFA9879HN",
   "kicad-symbols/Amplifier_Audio/MAX9701xTG"
  ],
- "embedding_text": "ic-analog-audio.qfn | IC Analog Audio | Surface-mount analog audio ICs in QFN package variants including WQFN, TQFN, and HVQFN footprints with exposed thermal pads. | ic analog audio audio ic qfn wqfn tqfn hvqfn smd exposed pad thermal vias tpa6132a2rte max9715xte max9850xti tfa9879hn max9701xtg audio amplifier stereo 1ep p0 nolead analog class 5mm | QFN | ",
+ "embedding_text": "ic-analog-audio.qfn | IC Analog Audio | 5 ic analog audio parts using QFN footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | audio amplifier tqfn stereo 1ep p0 nolead ic analog qfn class 5mm wqfn 6mm thermalvias hvqfn | QFN | ",
  "class": "ic.analog.audio"
 }

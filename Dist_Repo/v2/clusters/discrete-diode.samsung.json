@@ -6,28 +6,21 @@
   "Discrete",
   "Diode"
  ],
- "description": "A discrete diode cluster containing 1 tier B component with a SAMSUNG footprint and package family.",
+ "description": "1 discrete diode parts using SAMSUNG footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when a SAMSUNG footprint or package family is required.",
-  "Verify suitability for tier B part SAMSUNG_LM561B.",
-  "Check requirements when using parts from dist-legacy sources."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SAMSUNG land pattern is intended."
  ],
  "avoid_when": [
-  "The PCB design requires a package family or footprint other than SAMSUNG.",
-  "Unknown mount type is not acceptable for the target layout.",
-  "Tier B quality components are not permitted."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SAMSUNG."
  ],
  "keywords": [
-  "discrete",
-  "diode",
-  "discrete diode",
   "samsung",
   "lm561b",
-  "samsung_lm561b",
-  "tier b",
-  "dist-legacy",
-  "package samsung",
-  "footprint samsung",
+  "diode",
   "pin",
   "anode",
   "cathode",
@@ -35,7 +28,8 @@
   "component",
   "with",
   "and",
-  "terminals"
+  "terminals",
+  "discrete"
  ],
  "facts": {
   "package_family": "SAMSUNG",
@@ -56,7 +50,7 @@
   "tier_counts": {
    "B": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -71,6 +65,6 @@
  "part_ids": [
   "dist-legacy/SAMSUNG LM561B"
  ],
- "embedding_text": "discrete-diode.samsung | Discrete Diode | A discrete diode cluster containing 1 tier B component with a SAMSUNG footprint and package family. | discrete diode discrete diode samsung lm561b samsung_lm561b tier b dist-legacy package samsung footprint samsung pin anode cathode two component with and terminals | SAMSUNG | ",
+ "embedding_text": "discrete-diode.samsung | Discrete Diode | 1 discrete diode parts using SAMSUNG footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | samsung lm561b diode pin anode cathode two component with and terminals discrete | SAMSUNG | ",
  "class": "discrete.diode"
 }

@@ -6,34 +6,30 @@
   "Discrete",
   "Diode"
  ],
- "description": "Discrete diode cluster containing 2 tier B parts in the KEYSTONE package family.",
+ "description": "2 discrete diode parts using KEYSTONE footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when a discrete diode in a KEYSTONE package family is needed.",
-  "Verify exact part specifications for entries such as KEYSTONE_3034TR or KEYSTONE_3568."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a KEYSTONE land pattern is intended."
  ],
  "avoid_when": [
-  "The layout requires a footprint or package family other than KEYSTONE.",
-  "Parts certified above quality tier B are required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than KEYSTONE."
  ],
  "keywords": [
-  "discrete",
-  "diode",
-  "discrete diode",
   "keystone",
-  "keystone footprint",
-  "3034tr",
-  "3568",
-  "keystone_3034tr",
-  "keystone_3568",
-  "dist-legacy",
+  "diode",
   "anode",
   "cathode",
+  "3034tr",
   "pin",
   "with",
   "and",
   "terminals",
   "in",
-  "footprint"
+  "footprint",
+  "discrete"
  ],
  "facts": {
   "package_family": "KEYSTONE",
@@ -54,7 +50,7 @@
   "tier_counts": {
    "B": 2
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -78,6 +74,6 @@
   "dist-legacy/KEYSTONE 3034TR",
   "dist-legacy/KEYSTONE 3568"
  ],
- "embedding_text": "discrete-diode.keystone | Discrete Diode | Discrete diode cluster containing 2 tier B parts in the KEYSTONE package family. | discrete diode discrete diode keystone keystone footprint 3034tr 3568 keystone_3034tr keystone_3568 dist-legacy anode cathode pin with and terminals in footprint | KEYSTONE | ",
+ "embedding_text": "discrete-diode.keystone | Discrete Diode | 2 discrete diode parts using KEYSTONE footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | keystone diode anode cathode 3034tr pin with and terminals in footprint discrete | KEYSTONE | ",
  "class": "discrete.diode"
 }

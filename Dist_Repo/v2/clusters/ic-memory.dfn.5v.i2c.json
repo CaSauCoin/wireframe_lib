@@ -6,34 +6,29 @@
   "IC",
   "Memory"
  ],
- "description": "Surface-mount memory IC cluster supporting 5V and 5.5V ratings with I2C interface, formatted for DFN footprints including DFN-8-1EP.",
+ "description": "1 ic memory parts for 5V, I2C, 5.5V using DFN footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when requiring an I2C memory IC rated for 5V and 5.5V operation.",
-  "Verify layout compatibility with DFN-8-1EP (3x2mm, 0.5mm pitch) SMD footprint.",
-  "Confirm part suitability for Tier B symbol 24C02Cx-x-MNY."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a DFN land pattern is intended."
  ],
  "avoid_when": [
-  "The board layout requires packages other than DFN or non-SMD mounting.",
-  "Operating voltage or bus interface requirements differ from 5V/5.5V and I2C.",
-  "Footprint pitch or pad dimensions do not match DFN-8-1EP."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than DFN."
  ],
  "keywords": [
-  "ic memory",
-  "memory",
-  "dfn",
-  "dfn-8",
-  "i2c",
-  "5v",
-  "5.5v",
-  "eeprom",
-  "smd",
-  "24c02cx",
-  "24c02cx-x-mny",
   "mny",
-  "serial",
+  "memory",
+  "5v",
+  "dfn",
+  "eeprom",
+  "i2c",
   "24c02ct",
+  "24c02cx",
   "kbit",
   "bit",
+  "serial",
   "chip",
   "address",
   "inputs",
@@ -63,7 +58,7 @@
   "tier_counts": {
    "B": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -78,6 +73,6 @@
  "part_ids": [
   "kicad-symbols/Memory_EEPROM/24C02Cx-x-MNY"
  ],
- "embedding_text": "ic-memory.dfn.5v.i2c | IC Memory | Surface-mount memory IC cluster supporting 5V and 5.5V ratings with I2C interface, formatted for DFN footprints including DFN-8-1EP. | ic memory memory dfn dfn-8 i2c 5v 5.5v eeprom smd 24c02cx 24c02cx-x-mny mny serial 24c02ct kbit bit chip address inputs a0 a1 | DFN | 5V I2C 5.5V",
+ "embedding_text": "ic-memory.dfn.5v.i2c | IC Memory | 1 ic memory parts for 5V, I2C, 5.5V using DFN footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | mny memory 5v dfn eeprom i2c 24c02ct 24c02cx kbit bit serial chip address inputs a0 a1 | DFN | 5V I2C 5.5V",
  "class": "ic.memory"
 }

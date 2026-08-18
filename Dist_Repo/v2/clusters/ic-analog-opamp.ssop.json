@@ -7,41 +7,34 @@
   "Analog",
   "Op-Amp"
  ],
- "description": "Cluster of 40 surface-mount analog op-amp integrated circuits supplied in SSOP package options such as SSOP-8, SSOP-14, SSOP-16, and SSOP-24.",
+ "description": "40 ic analog op-amp parts using SSOP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when needing an analog op-amp IC in a surface-mount SSOP package.",
-  "Choose the specific footprint matching your layout, such as SSOP-8, SSOP-14, SSOP-16, or SSOP-24.",
-  "Verify part availability across Alternate-KiCad-Library and kicad-symbols sources."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SSOP land pattern is intended."
  ],
  "avoid_when": [
-  "The design requires non-SMD or through-hole mounting.",
-  "The PCB layout requires package families other than SSOP.",
-  "A footprint pitch or package dimension outside the specified SSOP variants is required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SSOP."
  ],
  "keywords": [
-  "ic",
-  "analog",
-  "opamp",
-  "op-amp",
   "ssop",
-  "smd",
-  "ssop-8",
-  "ssop-14",
-  "ssop-16",
-  "ssop-24",
-  "kicad",
-  "ina2126e",
   "amplifier",
   "operational",
   "quad",
   "rail",
   "p0",
+  "ic",
+  "analog",
   "op",
   "amp",
   "akl",
   "offset",
   "alternate",
-  "library"
+  "kicad",
+  "library",
+  "opamp"
  ],
  "facts": {
   "package_family": "SSOP",
@@ -66,7 +59,7 @@
   "tier_counts": {
    "A": 40
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -152,6 +145,6 @@
   "Alternate-KiCad-Library/Amplifier_Operational_AKL/TLC274CDB",
   "Alternate-KiCad-Library/Amplifier_Operational_AKL/LT1814CGN"
  ],
- "embedding_text": "ic-analog-opamp.ssop | IC Analog Op-Amp | Cluster of 40 surface-mount analog op-amp integrated circuits supplied in SSOP package options such as SSOP-8, SSOP-14, SSOP-16, and SSOP-24. | ic analog opamp op-amp ssop smd ssop-8 ssop-14 ssop-16 ssop-24 kicad ina2126e amplifier operational quad rail p0 op amp akl offset alternate library | SSOP | ",
+ "embedding_text": "ic-analog-opamp.ssop | IC Analog Op-Amp | 40 ic analog op-amp parts using SSOP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | ssop amplifier operational quad rail p0 ic analog op amp akl offset alternate kicad library opamp | SSOP | ",
  "class": "ic.analog.opamp"
 }

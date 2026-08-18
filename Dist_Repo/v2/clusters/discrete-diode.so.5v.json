@@ -6,34 +6,23 @@
   "Discrete",
   "Diode"
  ],
- "description": "Surface-mount 5V discrete diode cluster containing four tier A parts in SO-8 footprints from Alternate-KiCad-Library.",
+ "description": "4 discrete diode parts for 5V using SO footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select for 5V surface-mount diode applications requiring an SO-8 footprint.",
-  "Choose between SDMA05 series variants including SDMA05, SDMA05C, SDMA05s, and SDMA05Cs.",
-  "Ensure compatibility with the SO-8_3.9x4.9mm_P1.27mm land pattern."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SO land pattern is intended."
  ],
  "avoid_when": [
-  "Designs require through-hole mounting instead of SMD.",
-  "Operating voltage requirements differ from 5V.",
-  "The board layout requires a package footprint other than SO-8_3.9x4.9mm_P1.27mm."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SO."
  ],
  "keywords": [
-  "discrete diode",
-  "diode",
-  "5v",
   "so",
-  "so-8",
-  "smd",
-  "surface mount",
-  "alternate-kicad-library",
-  "sdma05",
-  "sdma05c",
-  "sdma05s",
-  "sdma05cs",
-  "so-8_3.9x4.9mm_p1.27mm",
-  "discrete",
+  "diode",
   "tvs",
   "independent",
+  "5v",
   "akl",
   "array",
   "300w",
@@ -41,7 +30,10 @@
   "kicad",
   "library",
   "9x4",
-  "9mm"
+  "9mm",
+  "p1",
+  "27mm",
+  "quad"
  ],
  "facts": {
   "package_family": "SO",
@@ -64,7 +56,7 @@
   "tier_counts": {
    "A": 4
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -106,6 +98,6 @@
   "Alternate-KiCad-Library/Diode_TVS_AKL/SDMA05s",
   "Alternate-KiCad-Library/Diode_TVS_AKL/SDMA05C"
  ],
- "embedding_text": "discrete-diode.so.5v | Discrete Diode | Surface-mount 5V discrete diode cluster containing four tier A parts in SO-8 footprints from Alternate-KiCad-Library. | discrete diode diode 5v so so-8 smd surface mount alternate-kicad-library sdma05 sdma05c sdma05s sdma05cs so-8_3.9x4.9mm_p1.27mm discrete tvs independent akl array 300w alternate kicad library 9x4 9mm | SO | 5V",
+ "embedding_text": "discrete-diode.so.5v | Discrete Diode | 4 discrete diode parts for 5V using SO footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | so diode tvs independent 5v akl array 300w alternate kicad library 9x4 9mm p1 27mm quad | SO | 5V",
  "class": "discrete.diode"
 }

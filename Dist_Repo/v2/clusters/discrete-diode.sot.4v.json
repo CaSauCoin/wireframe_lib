@@ -6,44 +6,34 @@
   "Discrete",
   "Diode"
  ],
- "description": "Cluster of 14 SMD diode parts (facet 4V) in SOT footprints (SOT-143, SOT-323_SC-70, SOT-666, SOT-723) from the Alternate-KiCad-Library source, with 13 tier-A and 1 tier-B parts; metadata review_status is 'generated'.",
+ "description": "14 discrete diode parts for 4V using SOT footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Match the exact SOT footprint (SOT-143, SOT-323_SC-70, SOT-666, or SOT-723) to the PCB land pattern",
-  "Prefer one of the 13 tier-A parts over the single tier-B entry",
-  "Confirm the part's rating aligns with the cluster's 4V facet before use",
-  "review_status is 'generated' — verify part details before committing to a design"
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SOT land pattern is intended."
  ],
  "avoid_when": [
-  "Required footprint is not SOT-143, SOT-323_SC-70, SOT-666, or SOT-723",
-  "Design requires a non-SOT or through-hole package",
-  "Circuit requirements do not match the 4V facet",
-  "A verified (non-generated) metadata source is required for the design stage"
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SOT."
  ],
  "keywords": [
   "sot",
-  "sot-143",
-  "sot-323",
-  "sc-70",
-  "sot-666",
-  "sot-723",
   "diode",
-  "discrete diode",
-  "4v",
-  "smd",
-  "surface mount",
-  "alternate-kicad-library",
-  "akl",
-  "bat15",
-  "1ps66sb17",
-  "tier a",
-  "discrete.diode",
   "schottky",
+  "4v",
   "dual",
+  "akl",
   "alternate",
   "kicad",
   "library",
   "discrete",
-  "independent"
+  "independent",
+  "bat15",
+  "sc",
+  "bat17",
+  "series",
+  "110ma"
  ],
  "facts": {
   "package_family": "SOT",
@@ -70,7 +60,7 @@
    "A": 13,
    "B": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -130,6 +120,6 @@
   "Alternate-KiCad-Library/Diode_Schottky_AKL/HSMS-8207",
   "Alternate-KiCad-Library/Diode_Schottky_AKL/JDH3D01FV"
  ],
- "embedding_text": "discrete-diode.sot.4v | Discrete Diode | Cluster of 14 SMD diode parts (facet 4V) in SOT footprints (SOT-143, SOT-323_SC-70, SOT-666, SOT-723) from the Alternate-KiCad-Library source, with 13 tier-A and 1 tier-B parts; metadata review_status is 'generated'. | sot sot-143 sot-323 sc-70 sot-666 sot-723 diode discrete diode 4v smd surface mount alternate-kicad-library akl bat15 1ps66sb17 tier a discrete.diode schottky dual alternate kicad library discrete independent | SOT | 4V",
+ "embedding_text": "discrete-diode.sot.4v | Discrete Diode | 14 discrete diode parts for 4V using SOT footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | sot diode schottky 4v dual akl alternate kicad library discrete independent bat15 sc bat17 series 110ma | SOT | 4V",
  "class": "discrete.diode"
 }

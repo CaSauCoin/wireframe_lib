@@ -6,34 +6,24 @@
   "IC",
   "Sensor"
  ],
- "description": "Cluster of 10 surface-mount I2C 32V sensor ICs in WLCSP packaging using WLCSP-16 footprints from kicad-symbols.",
+ "description": "10 ic sensor parts for I2C, 32V using WLCSP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when requiring an SMD sensor IC with an I2C interface and 32V facet.",
-  "Confirm compatibility with WLCSP-16 footprint layout.",
-  "Choose between PAC193x and PAC195x series part variants in tier B."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a WLCSP land pattern is intended."
  ],
  "avoid_when": [
-  "The board layout requires a package family other than WLCSP or non-SMD mounting.",
-  "An interface other than I2C or rating other than 32V is required.",
-  "Tier A quality parts are strictly required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than WLCSP."
  ],
  "keywords": [
-  "ic",
-  "sensor",
   "i2c",
-  "32v",
   "wlcsp",
-  "smd",
-  "wlcsp-16",
-  "pac1931x",
-  "pac1932x",
-  "pac1933x",
-  "pac1934x",
-  "pac1951x",
-  "kicad-symbols",
-  "sensor_energy",
+  "sensor",
   "power",
   "monitor",
+  "32v",
   "energy",
   "channel",
   "side",
@@ -41,7 +31,9 @@
   "17mm",
   "layout4x4",
   "p0",
-  "5mm"
+  "5mm",
+  "csp",
+  "ic"
  ],
  "facts": {
   "package_family": "WLCSP",
@@ -65,7 +57,7 @@
   "tier_counts": {
    "B": 10
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -121,6 +113,6 @@
   "kicad-symbols/Sensor_Energy/PAC1953x-xJ6CX",
   "kicad-symbols/Sensor_Energy/PAC1954x-xJ6CX"
  ],
- "embedding_text": "ic-sensor.wlcsp.i2c.32v | IC Sensor | Cluster of 10 surface-mount I2C 32V sensor ICs in WLCSP packaging using WLCSP-16 footprints from kicad-symbols. | ic sensor i2c 32v wlcsp smd wlcsp-16 pac1931x pac1932x pac1933x pac1934x pac1951x kicad-symbols sensor_energy power monitor energy channel side 225x2 17mm layout4x4 p0 5mm | WLCSP | I2C 32V",
+ "embedding_text": "ic-sensor.wlcsp.i2c.32v | IC Sensor | 10 ic sensor parts for I2C, 32V using WLCSP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | i2c wlcsp sensor power monitor 32v energy channel side 225x2 17mm layout4x4 p0 5mm csp ic | WLCSP | I2C 32V",
  "class": "ic.sensor"
 }

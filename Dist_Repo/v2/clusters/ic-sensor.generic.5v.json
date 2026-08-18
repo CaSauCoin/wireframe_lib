@@ -6,32 +6,21 @@
   "IC",
   "Sensor"
  ],
- "description": "Generic 5V sensor IC cluster containing 4 tier G KiCad symbol entries with deferred package assignment.",
+ "description": "4 ic sensor parts for 5V with package chosen later. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when using a 5V sensor IC symbol where footprint selection is deferred.",
-  "Choose a specific entry based on required part model and specification.",
-  "Assign an explicit package and footprint before committing to PCB placement."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Select a footprint/package explicitly before placement."
  ],
  "avoid_when": [
-  "Designs requiring operating voltages other than 5V.",
-  "Projects requiring pre-assigned PCB footprints directly from the cluster.",
-  "Applications requiring fully verified tier A library parts."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review."
  ],
  "keywords": [
-  "ic",
   "sensor",
-  "5v",
-  "ic sensor",
-  "5v sensor",
-  "pressure sensor",
-  "kicad symbols",
-  "tier g",
-  "generic sensor",
-  "40pc015g",
-  "40pc100g",
-  "40pc150g",
   "pressure",
   "gauge",
+  "5v",
   "to",
   "supply",
   "accuracy",
@@ -41,7 +30,9 @@
   "excellent",
   "media",
   "compatibility",
-  "gage"
+  "gage",
+  "ic",
+  "package"
  ],
  "facts": {
   "package_family": "package chosen later",
@@ -60,7 +51,7 @@
   "tier_counts": {
    "G": 4
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -102,6 +93,6 @@
   "kicad-symbols/Sensor_Pressure/40PC150G",
   "kicad-symbols/Sensor_Pressure/40PC250G"
  ],
- "embedding_text": "ic-sensor.generic.5v | IC Sensor | Generic 5V sensor IC cluster containing 4 tier G KiCad symbol entries with deferred package assignment. | ic sensor 5v ic sensor 5v sensor pressure sensor kicad symbols tier g generic sensor 40pc015g 40pc100g 40pc150g pressure gauge to supply accuracy integrated signal conditioning excellent media compatibility gage | package chosen later | 5V",
+ "embedding_text": "ic-sensor.generic.5v | IC Sensor | 4 ic sensor parts for 5V with package chosen later. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | sensor pressure gauge 5v to supply accuracy integrated signal conditioning excellent media compatibility gage ic package | package chosen later | 5V",
  "class": "ic.sensor"
 }

@@ -5,28 +5,19 @@
  "category_path": [
   "IC"
  ],
- "description": "Single IC component cluster in package family Y using the Y-15 footprint.",
+ "description": "1 ic parts using Y footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Choose when requiring an IC component in package family Y.",
-  "Select for designs specifying a Y-15 footprint.",
-  "Verify part details as mount type is listed as unknown."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a Y land pattern is intended."
  ],
  "avoid_when": [
-  "Avoid if the PCB layout requires a package family other than Y.",
-  "Do not use when a footprint other than Y-15 is required.",
-  "Avoid if fully verified planner-visible parts are necessary."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than Y."
  ],
  "keywords": [
   "ic",
-  "integrated circuit",
-  "package family y",
-  "footprint y-15",
-  "y-15",
-  "package y",
-  "y package",
-  "y footprint",
-  "tier c",
-  "dist-legacy",
   "pad",
   "mm",
   "pitch",
@@ -51,12 +42,12 @@
   "tier_counts": {
    "C": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
   "dist-legacy/Y-15"
  ],
- "embedding_text": "ic.y | IC | Single IC component cluster in package family Y using the Y-15 footprint. | ic integrated circuit package family y footprint y-15 y-15 package y y package y footprint tier c dist-legacy pad mm pitch pins | Y | ",
+ "embedding_text": "ic.y | IC | 1 ic parts using Y footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | ic pad mm pitch pins | Y | ",
  "class": "ic"
 }

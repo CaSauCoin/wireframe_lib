@@ -5,42 +5,34 @@
  "category_path": [
   "Connector"
  ],
- "description": "Cluster of 4 SMA RF coaxial connector parts (board-edge, right-angle, vertical, vertical receptacle) from digikey-kicad-library, all tier B.",
+ "description": "4 connector parts using RF footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Match footprint to physical mounting style: board-edge, right-angle, vertical, or vertical receptacle",
-  "Confirm exact footprint name matches your PCB layout (e.g. RF_SMA_RightAngle_5-1814400-1)",
-  "All entries are tier B with score 92; no tier A alternative is available in this cluster"
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a RF land pattern is intended."
  ],
  "avoid_when": [
-  "A non-SMA RF connector type is required",
-  "The board layout needs a mounting style not listed among the four footprints here",
-  "Electrical ratings or pinout details are needed but are not stated for these parts"
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than RF."
  ],
  "keywords": [
-  "rf connector",
-  "sma",
-  "coaxial connector",
-  "board edge",
-  "right angle",
-  "vertical",
-  "receptacle",
-  "smd",
-  "digikey",
-  "coaxial-connectors-rf",
-  "142-0701-801",
-  "5-1814400-1",
-  "5-1814832-1",
-  "consma001-smd-g",
-  "interconnect",
-  "jack",
   "rf",
   "connectors",
   "coaxial",
+  "sma",
   "dk",
   "conn",
   "interconnects",
   "connector",
-  "str"
+  "jack",
+  "str",
+  "connectivity",
+  "ohm",
+  "smd",
+  "pcb",
+  "amp",
+  "vertical"
  ],
  "facts": {
   "package_family": "RF",
@@ -65,7 +57,7 @@
   "tier_counts": {
    "B": 4
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -107,6 +99,6 @@
   "digikey-kicad-library/dk_Coaxial-Connectors-RF/5-1814832-1",
   "digikey-kicad-library/dk_Coaxial-Connectors-RF/CONSMA001-SMD-G"
  ],
- "embedding_text": "connector.rf | Connector | Cluster of 4 SMA RF coaxial connector parts (board-edge, right-angle, vertical, vertical receptacle) from digikey-kicad-library, all tier B. | rf connector sma coaxial connector board edge right angle vertical receptacle smd digikey coaxial-connectors-rf 142-0701-801 5-1814400-1 5-1814832-1 consma001-smd-g interconnect jack rf connectors coaxial dk conn interconnects connector str | RF | ",
+ "embedding_text": "connector.rf | Connector | 4 connector parts using RF footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | rf connectors coaxial sma dk conn interconnects connector jack str connectivity ohm smd pcb amp vertical | RF | ",
  "class": "connector"
 }

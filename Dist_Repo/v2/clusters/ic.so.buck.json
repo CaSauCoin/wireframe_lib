@@ -5,32 +5,24 @@
  "category_path": [
   "IC"
  ],
- "description": "Cluster of 37 tier B buck IC parts in the SO package family with SMD mount options and footprints including SO_8, SO_8T, and SO-8_N.",
+ "description": "37 ic parts for buck using SO footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when requiring a buck IC in the SO package family.",
-  "Check for specific footprint variants such as SO_8, SO_8T, or SO-8_N.",
-  "Choose among tier B parts available from chilaboard-altium-library or dist-legacy sources."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SO land pattern is intended."
  ],
  "avoid_when": [
-  "The design requires a package family other than SO.",
-  "A topology other than buck or a quality tier other than B is required.",
-  "Through-hole mounting is required instead of surface mount."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SO."
  ],
  "keywords": [
-  "ic",
-  "buck",
-  "so",
-  "so_8",
-  "so_8t",
-  "so-8_n",
-  "smd",
-  "sop8",
-  "buck ic",
-  "so package",
-  "tier b",
-  "chilaboard",
   "regulator",
+  "sop8",
+  "so",
   "vreg",
+  "buck",
+  "ic",
   "switching",
   "voltage",
   "step",
@@ -67,7 +59,7 @@
   "tier_counts": {
    "B": 37
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -150,6 +142,6 @@
   "chilaboard-altium-library/VREG_LM22670_SOP8/VREG_LM22670_SOP8",
   "chilaboard-altium-library/VREG_LM22673_SOP8/VREG_LM22673_SOP8"
  ],
- "embedding_text": "ic.so.buck | IC | Cluster of 37 tier B buck IC parts in the SO package family with SMD mount options and footprints including SO_8, SO_8T, and SO-8_N. | ic buck so so_8 so_8t so-8_n smd sop8 buck ic so package tier b chilaboard regulator vreg switching voltage step down 8t an in package pin and | SO | buck",
+ "embedding_text": "ic.so.buck | IC | 37 ic parts for buck using SO footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | regulator sop8 so vreg buck ic switching voltage step down 8t an in package pin and | SO | buck",
  "class": "ic"
 }

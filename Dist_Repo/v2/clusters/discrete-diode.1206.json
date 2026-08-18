@@ -6,31 +6,22 @@
   "Discrete",
   "Diode"
  ],
- "description": "Discrete diode cluster containing 21 surface-mount parts compatible with 1206 footprint variants across quality tiers B and C.",
+ "description": "21 discrete diode parts using 1206 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "A 1206 or 3216 metric surface-mount footprint is required.",
-  "Choosing from tier B representative parts with quality score 92.",
-  "Matching exact land pattern variants such as D_1206_3216Metric or C1206."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a 1206 land pattern is intended."
  ],
  "avoid_when": [
-  "Through-hole mounting or packages other than 1206 variants are required.",
-  "Tier A components are strictly required for the design.",
-  "Parts outside of quality tiers B and C are needed."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than 1206."
  ],
  "keywords": [
   "discrete",
   "diode",
-  "1206",
-  "c1206",
   "3216metric",
   "smd",
-  "capc3216n",
-  "d_1206_3216metric",
-  "resc3216",
-  "tier b",
-  "tier c",
-  "ltst-c150kgkt",
-  "digikey-kicad-library",
   "pad",
   "led",
   "mm",
@@ -41,7 +32,8 @@
   "indication",
   "pad1",
   "42x1",
-  "75mm"
+  "75mm",
+  "c1206"
  ],
  "facts": {
   "package_family": "1206",
@@ -77,7 +69,7 @@
    "B": 5,
    "C": 16
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -144,6 +136,6 @@
   "dist-legacy/Speaker_CUI_CMR-1206S-67",
   "chilaboard-altium-library/D1206/D1206"
  ],
- "embedding_text": "discrete-diode.1206 | Discrete Diode | Discrete diode cluster containing 21 surface-mount parts compatible with 1206 footprint variants across quality tiers B and C. | discrete diode 1206 c1206 3216metric smd capc3216n d_1206_3216metric resc3216 tier b tier c ltst-c150kgkt digikey-kicad-library pad led mm pitch pins fuse handsolder indication pad1 42x1 75mm | 1206 | ",
+ "embedding_text": "discrete-diode.1206 | Discrete Diode | 21 discrete diode parts using 1206 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | discrete diode 3216metric smd pad led mm pitch pins fuse handsolder indication pad1 42x1 75mm c1206 | 1206 | ",
  "class": "discrete.diode"
 }

@@ -7,42 +7,34 @@
   "Power",
   "Linear Regulator"
  ],
- "description": "Cluster of 16 surface-mount 28V LDO linear regulator ICs utilizing SOT package footprints including SOT-223-3_TabPin2, SOT-89-3, and SOT-89-5.",
+ "description": "16 ic power linear regulator parts for LDO, 28V using SOT footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when requiring a 28V LDO linear regulator in an SMD SOT package.",
-  "Choose based on footprint requirements among SOT-223-3_TabPin2, SOT-89-3, and SOT-89-5.",
-  "Prefer Tier A quality parts when selecting representative parts."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SOT land pattern is intended."
  ],
  "avoid_when": [
-  "The application requires through-hole components rather than surface-mount.",
-  "The board layout requires a package family other than SOT.",
-  "A regulator with non-28V or non-LDO specifications is required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SOT."
  ],
  "keywords": [
-  "ic",
-  "power",
-  "linear regulator",
-  "ldo",
-  "28v",
   "sot",
-  "smd",
-  "sot-223-3_tabpin2",
-  "sot-89-3",
-  "sot-89-5",
-  "mcp1804x-1802xdb",
-  "mcp1804x-1802xmb",
-  "mcp1804x-3002xdb",
-  "mcp1804x-5002xdb",
   "regulator",
   "linear",
+  "ldo",
+  "28v",
   "fixed",
   "output",
   "positive",
+  "ic",
+  "power",
   "mcp1804x",
   "150ma",
   "with",
   "shutdown",
-  "0v"
+  "0v",
+  "tabpin2"
  ],
  "facts": {
   "package_family": "SOT",
@@ -69,7 +61,7 @@
    "A": 11,
    "B": 5
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -131,6 +123,6 @@
   "kicad-symbols/Regulator_Linear/MCP1804x-A002xMT",
   "kicad-symbols/Regulator_Linear/MCP1804x-C002xMT"
  ],
- "embedding_text": "ic-power-ldo.sot.ldo.28v | IC Power Linear Regulator | Cluster of 16 surface-mount 28V LDO linear regulator ICs utilizing SOT package footprints including SOT-223-3_TabPin2, SOT-89-3, and SOT-89-5. | ic power linear regulator ldo 28v sot smd sot-223-3_tabpin2 sot-89-3 sot-89-5 mcp1804x-1802xdb mcp1804x-1802xmb mcp1804x-3002xdb mcp1804x-5002xdb regulator linear fixed output positive mcp1804x 150ma with shutdown 0v | SOT | LDO 28V",
+ "embedding_text": "ic-power-ldo.sot.ldo.28v | IC Power Linear Regulator | 16 ic power linear regulator parts for LDO, 28V using SOT footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | sot regulator linear ldo 28v fixed output positive ic power mcp1804x 150ma with shutdown 0v tabpin2 | SOT | LDO 28V",
  "class": "ic.power.ldo"
 }

@@ -6,33 +6,24 @@
   "IC",
   "Power"
  ],
- "description": "Power IC component cluster for 5.25V surface-mount applications using VSSOP packaging and VSSOP-8_3x3mm_P0.65mm footprints.",
+ "description": "1 ic power parts for 5.25V using VSSOP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select for 5.25V power IC designs requiring SMD mounting.",
-  "Verify footprint compatibility with VSSOP-8_3x3mm_P0.65mm.",
-  "Suitable for designs using Tier A KiCad power IC symbols."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a VSSOP land pattern is intended."
  ],
  "avoid_when": [
-  "Designs requiring through-hole mounting instead of SMD.",
-  "Applications needing package footprints other than VSSOP-8_3x3mm_P0.65mm.",
-  "Operating voltage requirements differ from 5.25V."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than VSSOP."
  ],
  "keywords": [
-  "ic",
-  "power",
-  "ic power",
-  "5.25v",
   "vssop",
-  "smd",
-  "vssop-8",
-  "3x3mm",
-  "p0.65mm",
-  "lm7705",
-  "kicad",
   "regulator",
   "negative",
   "bias",
   "25v",
+  "lm7705",
   "switchedcapacitor",
   "generator",
   "low",
@@ -41,6 +32,7 @@
   "232v",
   "fixed",
   "output",
+  "3x3mm",
   "p0"
  ],
  "facts": {
@@ -64,7 +56,7 @@
   "tier_counts": {
    "A": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -79,6 +71,6 @@
  "part_ids": [
   "kicad-symbols/Regulator_SwitchedCapacitor/LM7705"
  ],
- "embedding_text": "ic-power.vssop.5-25v | IC Power | Power IC component cluster for 5.25V surface-mount applications using VSSOP packaging and VSSOP-8_3x3mm_P0.65mm footprints. | ic power ic power 5.25v vssop smd vssop-8 3x3mm p0.65mm lm7705 kicad regulator negative bias 25v switchedcapacitor generator low noise input 232v fixed output p0 | VSSOP | 5.25V",
+ "embedding_text": "ic-power.vssop.5-25v | IC Power | 1 ic power parts for 5.25V using VSSOP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | vssop regulator negative bias 25v lm7705 switchedcapacitor generator low noise input 232v fixed output 3x3mm p0 | VSSOP | 5.25V",
  "class": "ic.power"
 }

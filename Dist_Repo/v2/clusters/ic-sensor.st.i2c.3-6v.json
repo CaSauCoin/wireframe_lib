@@ -6,28 +6,19 @@
   "IC",
   "Sensor"
  ],
- "description": "ST surface-mount IC sensor cluster featuring an I2C interface and 3.6V rating in a CCLGA-7L footprint.",
+ "description": "1 ic sensor parts for I2C, 3.6V using ST footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Requires a 3.6V operating voltage and I2C digital interface.",
-  "Requires surface-mount ST CCLGA-7L (2.8x2.8mm) package footprint.",
-  "Acceptable with Tier B quality rating from KiCad symbol library."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a ST land pattern is intended."
  ],
  "avoid_when": [
-  "Operating voltage requires a spec other than 3.6V or non-I2C bus.",
-  "Design requires through-hole assembly or a non-CCLGA-7L footprint.",
-  "Strict design rules require Tier A component certification."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than ST."
  ],
  "keywords": [
-  "ic sensor",
   "sensor",
-  "st",
-  "i2c",
-  "3.6v",
-  "smd",
-  "cclga-7l",
-  "ilps28qsw",
-  "kicad-symbols",
-  "2.8x2.8mm",
   "pressure",
   "mode",
   "hpa",
@@ -35,6 +26,9 @@
   "resistant",
   "package",
   "6v",
+  "st",
+  "i2c",
+  "ilps28qsw",
   "dual",
   "full",
   "scale",
@@ -63,7 +57,7 @@
   "tier_counts": {
    "B": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -78,6 +72,6 @@
  "part_ids": [
   "kicad-symbols/Sensor_Pressure/ILPS28QSW"
  ],
- "embedding_text": "ic-sensor.st.i2c.3-6v | IC Sensor | ST surface-mount IC sensor cluster featuring an I2C interface and 3.6V rating in a CCLGA-7L footprint. | ic sensor sensor st i2c 3.6v smd cclga-7l ilps28qsw kicad-symbols 2.8x2.8mm pressure mode hpa water resistant package 6v dual full scale absolute digital | ST | I2C 3.6V",
+ "embedding_text": "ic-sensor.st.i2c.3-6v | IC Sensor | 1 ic sensor parts for I2C, 3.6V using ST footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | sensor pressure mode hpa water resistant package 6v st i2c ilps28qsw dual full scale absolute digital | ST | I2C 3.6V",
  "class": "ic.sensor"
 }

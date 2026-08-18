@@ -6,32 +6,23 @@
   "Discrete",
   "Diode"
  ],
- "description": "Through-hole 88V discrete diode cluster featuring 2 tier A parts (20KPA88A and 20KPA88CA) in package family D from Alternate-KiCad-Library with 12.70mm horizontal footprints.",
+ "description": "2 discrete diode parts for 88V using D footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select for 88V discrete diode applications requiring through-hole mounting in package family D.",
-  "Choose between 20KPA88A and 20KPA88CA based on the required footprint variant (Zener vs TVS).",
-  "Select when using tier A parts from Alternate-KiCad-Library with 12.70mm pitch horizontal footprints."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a D land pattern is intended."
  ],
  "avoid_when": [
-  "The circuit requires a voltage rating other than 88V.",
-  "Surface-mount design is required instead of through-hole.",
-  "The layout requires a package family other than D or a non-matching footprint."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than D."
  ],
  "keywords": [
-  "discrete",
   "diode",
-  "88v",
-  "package d",
-  "through hole",
-  "p600",
-  "r-6",
-  "p12.70mm",
-  "horizontal",
-  "zener",
   "tvs",
-  "20kpa88a",
-  "20kpa88ca",
-  "alternate-kicad-library",
+  "p600",
+  "88v",
+  "horizontal",
   "1mm",
   "akl",
   "unidirectional",
@@ -41,7 +32,8 @@
   "library",
   "p12",
   "70mm",
-  "series"
+  "series",
+  "axial"
  ],
  "facts": {
   "package_family": "D",
@@ -65,7 +57,7 @@
   "tier_counts": {
    "A": 2
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -89,6 +81,6 @@
   "Alternate-KiCad-Library/Diode_TVS_AKL/20KPA88A",
   "Alternate-KiCad-Library/Diode_TVS_AKL/20KPA88CA"
  ],
- "embedding_text": "discrete-diode.d.88v | Discrete Diode | Through-hole 88V discrete diode cluster featuring 2 tier A parts (20KPA88A and 20KPA88CA) in package family D from Alternate-KiCad-Library with 12.70mm horizontal footprints. | discrete diode 88v package d through hole p600 r-6 p12.70mm horizontal zener tvs 20kpa88a 20kpa88ca alternate-kicad-library 1mm akl unidirectional 20kw alternate kicad library p12 70mm series | D | 88V",
+ "embedding_text": "discrete-diode.d.88v | Discrete Diode | 2 discrete diode parts for 88V using D footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | diode tvs p600 88v horizontal 1mm akl unidirectional 20kw alternate kicad library p12 70mm series axial | D | 88V",
  "class": "discrete.diode"
 }

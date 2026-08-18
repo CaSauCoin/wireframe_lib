@@ -6,36 +6,32 @@
   "IC",
   "Analog"
  ],
- "description": "Surface-mount analog IC cluster containing 2 tier B parts in SSOP20 footprint packages sourced from KiCad symbols.",
+ "description": "2 ic analog parts using SSOP20 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Verify that a surface-mount SSOP20 land pattern matches your PCB footprint requirements.",
-  "Select between available tier B parts such as AD7226BRSZ or AD7226KR.",
-  "Check specific pinout and functional requirements against component datasheets."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SSOP20 land pattern is intended."
  ],
  "avoid_when": [
-  "The board layout requires a package other than SSOP20.",
-  "Through-hole mounting or non-SMD assembly is required.",
-  "Strict design policies require parts rated higher than tier B."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SSOP20."
  ],
  "keywords": [
-  "ic",
-  "analog",
-  "ssop20",
-  "smd",
-  "ssop",
-  "ad7226brsz",
-  "ad7226kr",
-  "analog_dac",
   "dac",
-  "kicad-symbols",
-  "analog ic",
+  "analog",
   "8bit",
+  "ssop20",
   "quad",
   "channel",
   "single",
   "reference",
   "voltage",
   "4ch",
+  "ic",
+  "ad7226brsz",
+  "ssop",
+  "ad7226kr",
   "soic"
  ],
  "facts": {
@@ -57,7 +53,7 @@
   "tier_counts": {
    "B": 2
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -81,6 +77,6 @@
   "kicad-symbols/Analog_DAC/AD7226BRSZ",
   "kicad-symbols/Analog_DAC/AD7226KR"
  ],
- "embedding_text": "ic-analog.ssop20 | IC Analog | Surface-mount analog IC cluster containing 2 tier B parts in SSOP20 footprint packages sourced from KiCad symbols. | ic analog ssop20 smd ssop ad7226brsz ad7226kr analog_dac dac kicad-symbols analog ic 8bit quad channel single reference voltage 4ch soic | SSOP20 | ",
+ "embedding_text": "ic-analog.ssop20 | IC Analog | 2 ic analog parts using SSOP20 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | dac analog 8bit ssop20 quad channel single reference voltage 4ch ic ad7226brsz ssop ad7226kr soic | SSOP20 | ",
  "class": "ic.analog"
 }

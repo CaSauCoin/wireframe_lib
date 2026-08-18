@@ -6,33 +6,26 @@
   "Discrete",
   "FET"
  ],
- "description": "Discrete 60V FET cluster containing surface-mount QFN parts with PQFN_8x8 footprints sourced from KiCad symbols.",
+ "description": "1 discrete fet parts for 60V using QFN footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select for surface-mount (SMD) discrete FET applications requiring a 60V rating.",
-  "Confirm land pattern compatibility with the PQFN_8x8 footprint.",
-  "Review Tier B quality classification and KiCad symbol definitions prior to use."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a QFN land pattern is intended."
  ],
  "avoid_when": [
-  "The PCB design requires through-hole components rather than SMD.",
-  "The layout requires package families or footprints other than QFN and PQFN_8x8.",
-  "Voltage requirements or component classification fall outside a 60V discrete FET."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than QFN."
  ],
  "keywords": [
-  "discrete",
+  "mosfet",
   "fet",
-  "discrete fet",
   "60v",
-  "qfn",
-  "smd",
-  "pqfn_8x8",
+  "powertrench",
+  "power",
   "pqfn",
   "fdmt80060dc",
   "transistor",
-  "kicad-symbols",
-  "discrete.fet",
-  "mosfet",
-  "powertrench",
-  "power",
   "43a",
   "id",
   "vds",
@@ -63,7 +56,7 @@
   "tier_counts": {
    "B": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -78,6 +71,6 @@
  "part_ids": [
   "kicad-symbols/Transistor_FET/FDMT80060DC"
  ],
- "embedding_text": "discrete-fet.qfn.60v | Discrete FET | Discrete 60V FET cluster containing surface-mount QFN parts with PQFN_8x8 footprints sourced from KiCad symbols. | discrete fet discrete fet 60v qfn smd pqfn_8x8 pqfn fdmt80060dc transistor kicad-symbols discrete.fet mosfet powertrench power 43a id vds channel 9mohm ron qg typ | QFN | 60V",
+ "embedding_text": "discrete-fet.qfn.60v | Discrete FET | 1 discrete fet parts for 60V using QFN footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | mosfet fet 60v powertrench power pqfn fdmt80060dc transistor 43a id vds channel 9mohm ron qg typ | QFN | 60V",
  "class": "discrete.fet"
 }

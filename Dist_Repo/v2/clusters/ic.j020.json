@@ -5,28 +5,20 @@
  "category_path": [
   "IC"
  ],
- "description": "Integrated circuit component cluster containing 1 tier-C entry associated with the J020 package family and footprint.",
+ "description": "1 ic parts using J020 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when requiring an integrated circuit associated with the J020 footprint or package family.",
-  "Confirm that tier C quality and dist-legacy source history are acceptable for the application.",
-  "Verify mounting requirements given the unknown mount classification in the cluster facts."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a J020 land pattern is intended."
  ],
  "avoid_when": [
-  "Avoid if the board layout requires a footprint other than J020.",
-  "Do not use if planner-visible or higher quality tier parts are required.",
-  "Avoid when exact mounting specifications must be known upfront."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than J020."
  ],
  "keywords": [
-  "ic",
-  "integrated circuit",
   "j020",
-  "j020 footprint",
-  "j020 package",
-  "package family j020",
-  "tier c",
-  "dist-legacy",
-  "single part cluster",
-  "unknown mount",
+  "ic",
   "pad",
   "mm",
   "pitch",
@@ -51,12 +43,12 @@
   "tier_counts": {
    "C": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
   "dist-legacy/J020"
  ],
- "embedding_text": "ic.j020 | IC | Integrated circuit component cluster containing 1 tier-C entry associated with the J020 package family and footprint. | ic integrated circuit j020 j020 footprint j020 package package family j020 tier c dist-legacy single part cluster unknown mount pad mm pitch pins | J020 | ",
+ "embedding_text": "ic.j020 | IC | 1 ic parts using J020 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | j020 ic pad mm pitch pins | J020 | ",
  "class": "ic"
 }

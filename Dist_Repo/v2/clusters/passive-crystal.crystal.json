@@ -6,32 +6,24 @@
   "Passive",
   "Crystal / Resonator"
  ],
- "description": "Passive crystal and resonator components supporting SMD and through-hole mounting across various standard crystal footprints.",
+ "description": "197 passive crystal / resonator parts using Crystal footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select based on target mounting style, either SMD or through-hole.",
-  "Match the specific footprint format such as SMD dimensions or cylindrical leads.",
-  "Prioritize higher quality tier parts with verified symbol and footprint pairings."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a Crystal land pattern is intended."
  ],
  "avoid_when": [
-  "The application requires an active clock oscillator rather than a passive crystal.",
-  "The target PCB layout requires a package family other than Crystal.",
-  "Mounting requirements do not match available SMD or through-hole footprint options."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than Crystal."
  ],
  "keywords": [
-  "passive",
   "crystal",
   "resonator",
   "smd",
-  "through hole",
-  "hc49-sd",
-  "hc35-u",
-  "at310",
-  "c26-lf",
-  "c38-lf",
-  "ds10",
-  "ds15",
   "0mm",
   "horizontal",
+  "passive",
   "2pin",
   "vertical",
   "1ep",
@@ -81,7 +73,7 @@
    "B": 39,
    "C": 111
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -324,6 +316,6 @@
   "dist-legacy/Crystal_SMD_FrontierElectronics_FM206",
   "dist-legacy/Crystal_SMD_MicroCrystal_MS3V-T1R"
  ],
- "embedding_text": "passive-crystal.crystal | Passive Crystal / Resonator | Passive crystal and resonator components supporting SMD and through-hole mounting across various standard crystal footprints. | passive crystal resonator smd through hole hc49-sd hc35-u at310 c26-lf c38-lf ds10 ds15 0mm horizontal 2pin vertical 1ep package quartz 5mm pdf pins pad mm | Crystal | ",
+ "embedding_text": "passive-crystal.crystal | Passive Crystal / Resonator | 197 passive crystal / resonator parts using Crystal footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | crystal resonator smd 0mm horizontal passive 2pin vertical 1ep package quartz 5mm pdf pins pad mm | Crystal | ",
  "class": "passive.crystal"
 }

@@ -5,32 +5,20 @@
  "category_path": [
   "IC"
  ],
- "description": "Integrated circuit component cluster containing 16 parts using KEYSTONE footprints with surface-mount and through-hole mounting options.",
+ "description": "16 ic parts using KEYSTONE footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Match the required footprint variant such as KEYSTONE 110, 254, 54, 611, 612, 614, 621, 7760, or 7779.",
-  "Select between surface-mount and through-hole mounting configurations.",
-  "Review parts sourced from dist-legacy or celestial-altium-library."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a KEYSTONE land pattern is intended."
  ],
  "avoid_when": [
-  "Planner-visible parts are required, as planner visible count is 0.",
-  "Quality tier A or B parts are needed, as all 16 parts are tier C.",
-  "The board layout requires a package family other than KEYSTONE."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than KEYSTONE."
  ],
  "keywords": [
   "keystone",
   "ic",
-  "integrated circuit",
-  "smd",
-  "through hole",
-  "keystone 7760",
-  "keystone 7779",
-  "keystone 110",
-  "keystone 254",
-  "keystone 54",
-  "keystone 611",
-  "keystone 612",
-  "keystone 614",
-  "keystone 621",
   "pad",
   "land",
   "pattern",
@@ -40,7 +28,11 @@
   "pins",
   "terminal",
   "for",
-  "package"
+  "package",
+  "through",
+  "hole",
+  "hardware",
+  "and"
  ],
  "facts": {
   "package_family": "KEYSTONE",
@@ -74,7 +66,7 @@
   "tier_counts": {
    "C": 16
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
@@ -95,6 +87,6 @@
   "celestial-altium-library/Keystone 614/Keystone_614",
   "celestial-altium-library/Keystone 621/Keystone_621"
  ],
- "embedding_text": "ic.keystone | IC | Integrated circuit component cluster containing 16 parts using KEYSTONE footprints with surface-mount and through-hole mounting options. | keystone ic integrated circuit smd through hole keystone 7760 keystone 7779 keystone 110 keystone 254 keystone 54 keystone 611 keystone 612 keystone 614 keystone 621 pad land pattern single bare footprint pins terminal for package | KEYSTONE | ",
+ "embedding_text": "ic.keystone | IC | 16 ic parts using KEYSTONE footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | keystone ic pad land pattern single bare footprint pins terminal for package through hole hardware and | KEYSTONE | ",
  "class": "ic"
 }

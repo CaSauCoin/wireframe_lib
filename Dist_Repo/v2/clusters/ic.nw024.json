@@ -5,28 +5,20 @@
  "category_path": [
   "IC"
  ],
- "description": "IC cluster containing integrated circuit parts utilizing the NW024 package footprint.",
+ "description": "1 ic parts using NW024 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select for designs specifically requiring an NW024 package footprint.",
-  "Verify exact pinout and package dimensions, as detailed specs are not provided in cluster metadata.",
-  "Check part quality tier and sourcing details before specifying on a production PCB."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a NW024 land pattern is intended."
  ],
  "avoid_when": [
-  "The PCB layout requires a package footprint other than NW024.",
-  "Specific electrical parameters or datasheet claims are required upfront.",
-  "Fully verified or planner-visible parts are necessary for the design."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than NW024."
  ],
  "keywords": [
-  "ic",
   "nw024",
-  "nw024 package",
-  "nw024 footprint",
-  "integrated circuit",
-  "tier c",
-  "dist-legacy",
-  "component library",
-  "land pattern",
-  "package family",
+  "ic",
   "pad",
   "mm",
   "pitch",
@@ -51,12 +43,12 @@
   "tier_counts": {
    "C": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
   "dist-legacy/NW024"
  ],
- "embedding_text": "ic.nw024 | IC | IC cluster containing integrated circuit parts utilizing the NW024 package footprint. | ic nw024 nw024 package nw024 footprint integrated circuit tier c dist-legacy component library land pattern package family pad mm pitch pins | NW024 | ",
+ "embedding_text": "ic.nw024 | IC | 1 ic parts using NW024 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | nw024 ic pad mm pitch pins | NW024 | ",
  "class": "ic"
 }

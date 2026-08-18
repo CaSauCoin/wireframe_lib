@@ -6,29 +6,22 @@
   "Passive",
   "Resistor"
  ],
- "description": "Passive resistor cluster containing two parts with PH package family footprints supporting SMD and through-hole mounting.",
+ "description": "2 passive resistor parts using PH footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Verify footprint match between PH_2 and PH_R_SMD_2.",
-  "Select between SMD and through-hole mounting options.",
-  "Evaluate tier C quality status and library source before selection."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a PH land pattern is intended."
  ],
  "avoid_when": [
-  "The design requires package footprints other than PH.",
-  "Mounting requirements differ from SMD or through-hole.",
-  "Parts with higher verified quality tiers than tier C are required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than PH."
  ],
  "keywords": [
+  "ph",
+  "smd",
   "passive",
   "resistor",
-  "passive resistor",
-  "ph",
-  "ph_2",
-  "ph_r_smd_2",
-  "smd",
-  "through hole",
-  "through-hole",
-  "surface mount",
-  "chilaboard-altium-library",
   "pad",
   "mm",
   "pitch",
@@ -59,13 +52,13 @@
   "tier_counts": {
    "C": 2
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
   "chilaboard-altium-library/PH_2/PH_2",
   "chilaboard-altium-library/PH_R_SMD_2/PH_R_SMD_2"
  ],
- "embedding_text": "passive-resistor.ph | Passive Resistor | Passive resistor cluster containing two parts with PH package family footprints supporting SMD and through-hole mounting. | passive resistor passive resistor ph ph_2 ph_r_smd_2 smd through hole through-hole surface mount chilaboard-altium-library pad mm pitch pins through hole surface mount | PH | ",
+ "embedding_text": "passive-resistor.ph | Passive Resistor | 2 passive resistor parts using PH footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | ph smd passive resistor pad mm pitch pins through hole surface mount | PH | ",
  "class": "passive.resistor"
 }

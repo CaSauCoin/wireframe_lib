@@ -5,30 +5,20 @@
  "category_path": [
   "IC"
  ],
- "description": "Integrated circuit cluster containing 6 surface-mount parts in the TPSMD package family across TPSMD_C1, TPSMD_C120, TPSMD_C60, TPSMD_C80, TPSMD_S1, and TPSMD_S140 footprints.",
+ "description": "6 ic parts using TPSMD footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select the matching TPSMD footprint variant required for layout.",
-  "Ensure compatibility with surface-mount (SMD) assembly.",
-  "Note that parts in this cluster are tier C quality from chilaboard-altium-library."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a TPSMD land pattern is intended."
  ],
  "avoid_when": [
-  "A package family other than TPSMD is required.",
-  "Through-hole or non-surface-mount design is needed.",
-  "Parts require tier validation higher than tier C."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than TPSMD."
  ],
  "keywords": [
-  "ic",
   "tpsmd",
-  "smd",
-  "surface mount",
-  "tpsmd_c1",
-  "tpsmd_c120",
-  "tpsmd_c60",
-  "tpsmd_c80",
-  "tpsmd_s1",
-  "tpsmd_s140",
-  "chilaboard-altium-library",
-  "package family tpsmd",
+  "ic",
   "surface",
   "mount",
   "pad",
@@ -64,7 +54,7 @@
   "tier_counts": {
    "C": 6
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
@@ -75,6 +65,6 @@
   "chilaboard-altium-library/TPSMD_S1/TPSMD_S1",
   "chilaboard-altium-library/TPSMD_S140/TPSMD_S140"
  ],
- "embedding_text": "ic.tpsmd | IC | Integrated circuit cluster containing 6 surface-mount parts in the TPSMD package family across TPSMD_C1, TPSMD_C120, TPSMD_C60, TPSMD_C80, TPSMD_S1, and TPSMD_S140 footprints. | ic tpsmd smd surface mount tpsmd_c1 tpsmd_c120 tpsmd_c60 tpsmd_c80 tpsmd_s1 tpsmd_s140 chilaboard-altium-library package family tpsmd surface mount pad pins c1 c120 c60 c80 s1 s140 | TPSMD | ",
+ "embedding_text": "ic.tpsmd | IC | 6 ic parts using TPSMD footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | tpsmd ic surface mount pad pins c1 c120 c60 c80 s1 s140 | TPSMD | ",
  "class": "ic"
 }

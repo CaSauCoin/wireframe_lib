@@ -6,33 +6,24 @@
   "Discrete",
   "Diode"
  ],
- "description": "Cluster of 2 surface-mount discrete TVS diode parts rated for 5V and 7V in D_SOD-323 footprints.",
+ "description": "2 discrete diode parts for 5V, 7V using D footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Choose between 5V (H4V5HD3U) and 7V (H7VHD3UA) voltage options.",
-  "Verify compatibility with SMD D_SOD-323 footprint requirements.",
-  "Suitable when tier A parts from JLCPCB-Kicad-Library are desired."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a D land pattern is intended."
  ],
  "avoid_when": [
-  "Layout requires mounting types other than surface mount (SMD).",
-  "Footprints other than D_SOD-323 are required.",
-  "Target operating voltage is not 5V or 7V."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than D."
  ],
  "keywords": [
-  "discrete diode",
-  "discrete",
-  "diode",
-  "5v",
-  "7v",
-  "smd",
-  "d_sod-323",
-  "tvs",
-  "tvs-uni",
-  "h4v5hd3u",
-  "h7vhd3ua",
-  "jlcpcb-kicad-library",
   "esd",
   "sod",
+  "7v",
+  "tvs",
   "20us",
+  "5v",
   "iec",
   "uni",
   "jlcpcb",
@@ -41,7 +32,8 @@
   "and",
   "surge",
   "protection",
-  "rohs"
+  "rohs",
+  "discrete"
  ],
  "facts": {
   "package_family": "D",
@@ -65,7 +57,7 @@
   "tier_counts": {
    "A": 2
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -89,6 +81,6 @@
   "JLCPCB-Kicad-Library/JLCPCB-Diodes/TVS-Uni,H4V5HD3U",
   "JLCPCB-Kicad-Library/JLCPCB-Diodes/TVS-Uni,H7VHD3UA"
  ],
- "embedding_text": "discrete-diode.d.5v.7v | Discrete Diode | Cluster of 2 surface-mount discrete TVS diode parts rated for 5V and 7V in D_SOD-323 footprints. | discrete diode discrete diode 5v 7v smd d_sod-323 tvs tvs-uni h4v5hd3u h7vhd3ua jlcpcb-kicad-library esd sod 20us iec uni jlcpcb diodes unidirectional and surge protection rohs | D | 5V 7V",
+ "embedding_text": "discrete-diode.d.5v.7v | Discrete Diode | 2 discrete diode parts for 5V, 7V using D footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | esd sod 7v tvs 20us 5v iec uni jlcpcb diodes unidirectional and surge protection rohs discrete | D | 5V 7V",
  "class": "discrete.diode"
 }

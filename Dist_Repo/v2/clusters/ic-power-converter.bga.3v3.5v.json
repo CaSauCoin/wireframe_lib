@@ -7,34 +7,27 @@
   "Power",
   "Converter"
  ],
- "description": "This cluster provides surface-mount IC power converters for 3.3V and 5V applications using BGA packages such as Analog_BGA-209_9.5x16mm_Layout11x19_P0.8mm.",
+ "description": "1 ic power converter parts for 3.3V, 5V using BGA footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when designing with surface-mount 3.3V or 5V IC power converters in BGA packages.",
-  "Verify compatibility with the Analog_BGA-209_9.5x16mm_Layout11x19_P0.8mm footprint.",
-  "Choose when requiring Tier A quality parts from KiCad symbol sources."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a BGA land pattern is intended."
  ],
  "avoid_when": [
-  "The design requires a package family other than BGA.",
-  "Operating voltages other than 3.3V or 5V are required.",
-  "Through-hole or non-SMD mounting is required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than BGA."
  ],
  "keywords": [
   "bga",
   "converter",
-  "ic",
-  "power",
-  "ic power converter",
-  "3.3v",
-  "5v",
-  "smd",
-  "ltm4671",
   "dcdc",
-  "analog_bga-209_9.5x16mm_layout11x19_p0.8mm",
-  "kicad",
   "dc",
   "umodule",
   "dual",
   "3v",
+  "5v",
+  "ltm4671",
   "quad",
   "regulator",
   "with",
@@ -65,7 +58,7 @@
   "tier_counts": {
    "A": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -80,6 +73,6 @@
  "part_ids": [
   "kicad-symbols/Converter_DCDC/LTM4671"
  ],
- "embedding_text": "ic-power-converter.bga.3v3.5v | IC Power Converter | This cluster provides surface-mount IC power converters for 3.3V and 5V applications using BGA packages such as Analog_BGA-209_9.5x16mm_Layout11x19_P0.8mm. | bga converter ic power ic power converter 3.3v 5v smd ltm4671 dcdc analog_bga-209_9.5x16mm_layout11x19_p0.8mm kicad dc umodule dual 3v quad regulator with configurable 12a 5a output | BGA | 3.3V 5V",
+ "embedding_text": "ic-power-converter.bga.3v3.5v | IC Power Converter | 1 ic power converter parts for 3.3V, 5V using BGA footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | bga converter dcdc dc umodule dual 3v 5v ltm4671 quad regulator with configurable 12a 5a output | BGA | 3.3V 5V",
  "class": "ic.power.converter"
 }

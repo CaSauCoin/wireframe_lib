@@ -5,28 +5,20 @@
  "category_path": [
   "IC"
  ],
- "description": "Integrated circuit cluster containing 3 parts in tier C quality associated with FN028 package footprints.",
+ "description": "3 ic parts using FN028 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when an FN028 footprint variant such as FN028_L, FN028_M, or FN028_N is required.",
-  "Verify tier C part data and footprint details before selection as planner visibility is zero.",
-  "Confirm mounting specifications because the mount type is listed as unknown."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a FN028 land pattern is intended."
  ],
  "avoid_when": [
-  "Avoid if the design requires verified higher-tier parts or planner-visible inventory.",
-  "Avoid when the board layout requires package footprints other than FN028 variants.",
-  "Avoid if specific mounting details are required without further verification."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than FN028."
  ],
  "keywords": [
-  "ic",
   "fn028",
-  "fn028_l",
-  "fn028_m",
-  "fn028_n",
-  "integrated circuit",
-  "tier c",
-  "dist-legacy",
-  "legacy distribution",
-  "package family fn028",
+  "ic",
   "pad",
   "mm",
   "pitch",
@@ -53,7 +45,7 @@
   "tier_counts": {
    "C": 3
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
@@ -61,6 +53,6 @@
   "dist-legacy/FN028_M",
   "dist-legacy/FN028_N"
  ],
- "embedding_text": "ic.fn028 | IC | Integrated circuit cluster containing 3 parts in tier C quality associated with FN028 package footprints. | ic fn028 fn028_l fn028_m fn028_n integrated circuit tier c dist-legacy legacy distribution package family fn028 pad mm pitch pins | FN028 | ",
+ "embedding_text": "ic.fn028 | IC | 3 ic parts using FN028 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | fn028 ic pad mm pitch pins | FN028 | ",
  "class": "ic"
 }

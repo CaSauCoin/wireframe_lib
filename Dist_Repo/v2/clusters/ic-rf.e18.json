@@ -6,34 +6,25 @@
   "IC",
   "RF"
  ],
- "description": "RF IC cluster in the E18 package family featuring SMD mounting and footprint E18-MS1-PCB sourced from KiCad symbols.",
+ "description": "1 ic rf parts using E18 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select for SMD RF IC designs using the E18 package family.",
-  "Use when requiring the E18-MS1-PCB footprint.",
-  "Choose when KiCad symbol source and tier C part quality are acceptable."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a E18 land pattern is intended."
  ],
  "avoid_when": [
-  "Avoid if non-SMD or through-hole mounting is required.",
-  "Do not use if footprints other than E18-MS1-PCB are needed.",
-  "Avoid when planner-visible or tier A or B quality parts are required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than E18."
  ],
  "keywords": [
-  "ic",
   "rf",
-  "ic rf",
-  "ic.rf",
   "e18",
-  "smd",
-  "e18-ms1-pcb",
-  "kicad",
-  "kicad-symbols",
-  "tier c",
-  "rf ic",
-  "e18 package",
   "zigbee",
   "ms1",
   "pcb",
-  "module"
+  "module",
+  "ic"
  ],
  "facts": {
   "package_family": "E18",
@@ -54,12 +45,12 @@
   "tier_counts": {
    "C": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
   "kicad-symbols/RF_Module/E18-MS1-PCB"
  ],
- "embedding_text": "ic-rf.e18 | IC RF | RF IC cluster in the E18 package family featuring SMD mounting and footprint E18-MS1-PCB sourced from KiCad symbols. | ic rf ic rf ic.rf e18 smd e18-ms1-pcb kicad kicad-symbols tier c rf ic e18 package zigbee ms1 pcb module | E18 | ",
+ "embedding_text": "ic-rf.e18 | IC RF | 1 ic rf parts using E18 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | rf e18 zigbee ms1 pcb module ic | E18 | ",
  "class": "ic.rf"
 }

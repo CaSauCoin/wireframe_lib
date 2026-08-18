@@ -5,29 +5,18 @@
  "category_path": [
   "IC"
  ],
- "description": "Surface-mount 1.25V IC components in the SOT-23 package family, featuring SOT-23 and SOT-23-6 footprints from KiCad symbols.",
+ "description": "10 ic parts for 1.25V using SOT-23 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when a 1.25V surface-mount IC in a SOT-23 package is required.",
-  "Verify whether the design requires the 6-pin SOT-23-6 footprint variant.",
-  "Choose from 10 tier-A parts sourced from KiCad symbols."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SOT-23 land pattern is intended."
  ],
  "avoid_when": [
-  "Applications requiring voltages other than 1.25V.",
-  "Layouts requiring packages outside the SOT-23 family.",
-  "Through-hole component designs."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SOT-23."
  ],
  "keywords": [
-  "ic",
-  "sot-23",
-  "sot-23-6",
-  "1.25v",
-  "smd",
-  "surface mount",
-  "kicad-symbols",
-  "reference voltage",
-  "max6070",
-  "max6071",
-  "tier a",
   "sot",
   "reference",
   "voltage",
@@ -36,11 +25,14 @@
   "low",
   "noise",
   "to",
+  "smd",
+  "ic",
   "high",
   "series",
   "initial",
   "accuracy",
-  "max6070baut12"
+  "max6070baut12",
+  "aec"
  ],
  "facts": {
   "package_family": "SOT-23",
@@ -64,7 +56,7 @@
   "tier_counts": {
    "A": 10
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -120,6 +112,6 @@
   "kicad-symbols/Reference_Voltage/REF3212AMDBVREP",
   "kicad-symbols/Reference_Voltage/REF35125QDBVR"
  ],
- "embedding_text": "ic.sot-23.1-25v | IC | Surface-mount 1.25V IC components in the SOT-23 package family, featuring SOT-23 and SOT-23-6 footprints from KiCad symbols. | ic sot-23 sot-23-6 1.25v smd surface mount kicad-symbols reference voltage max6070 max6071 tier a sot reference voltage 25v precision low noise to high series initial accuracy max6070baut12 | SOT-23 | 1.25V",
+ "embedding_text": "ic.sot-23.1-25v | IC | 10 ic parts for 1.25V using SOT-23 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | sot reference voltage 25v precision low noise to smd ic high series initial accuracy max6070baut12 aec | SOT-23 | 1.25V",
  "class": "ic"
 }

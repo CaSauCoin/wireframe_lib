@@ -5,28 +5,20 @@
  "category_path": [
   "IC"
  ],
- "description": "Integrated circuit (IC) cluster containing a single tier C part using the VIT package family and footprint.",
+ "description": "1 ic parts using VIT footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Use when an integrated circuit in a VIT package family or footprint is required.",
-  "Verify mounting type and land pattern requirements as mount style is unknown.",
-  "Check electrical ratings and datasheet availability for tier C parts."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a VIT land pattern is intended."
  ],
  "avoid_when": [
-  "The PCB layout requires a package family or footprint other than VIT.",
-  "Known mounting specifications are required prior to part selection, as mount style is unknown.",
-  "Higher quality tier parts (such as Tier A or Tier B) are required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than VIT."
  ],
  "keywords": [
-  "ic",
   "vit",
-  "integrated circuit",
-  "vit package",
-  "vit footprint",
-  "package family vit",
-  "tier c",
-  "dist-legacy",
-  "unknown mount",
-  "vit land pattern",
+  "ic",
   "pad",
   "pins"
  ],
@@ -49,12 +41,12 @@
   "tier_counts": {
    "C": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
   "dist-legacy/VIT"
  ],
- "embedding_text": "ic.vit | IC | Integrated circuit (IC) cluster containing a single tier C part using the VIT package family and footprint. | ic vit integrated circuit vit package vit footprint package family vit tier c dist-legacy unknown mount vit land pattern pad pins | VIT | ",
+ "embedding_text": "ic.vit | IC | 1 ic parts using VIT footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | vit ic pad pins | VIT | ",
  "class": "ic"
 }

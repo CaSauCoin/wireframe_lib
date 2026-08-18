@@ -5,30 +5,20 @@
  "category_path": [
   "IC"
  ],
- "description": "IC category cluster containing 11 parts in the IDC package family with surface-mount and through-hole mounting options.",
+ "description": "11 ic parts using IDC footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Verify the specific footprint layout required, such as IDC_2X3, IDC_2X5, or IDC_2X20.",
-  "Select based on mounting style requirements for SMD or through-hole.",
-  "Check part suitability considering all 11 entries are tier C parts from chilaboard-altium-library."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a IDC land pattern is intended."
  ],
  "avoid_when": [
-  "The PCB design requires a package family other than IDC.",
-  "Mounting methods other than SMD or through-hole are required.",
-  "Parts with planner visibility or higher quality tiers are required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than IDC."
  ],
  "keywords": [
-  "ic",
   "idc",
-  "smd",
-  "through hole",
-  "chilaboard-altium-library",
-  "idc_2x3",
-  "idc_2x4",
-  "idc_2x5",
-  "idc_2x15",
-  "idc_2x20",
-  "idc_2x25",
-  "idc_2x30",
+  "ic",
   "pad",
   "mm",
   "pitch",
@@ -40,7 +30,9 @@
   "smde",
   "2x4",
   "2x15",
-  "2x17"
+  "2x17",
+  "2x20",
+  "2x22"
  ],
  "facts": {
   "package_family": "IDC",
@@ -72,7 +64,7 @@
   "tier_counts": {
    "C": 11
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
@@ -88,6 +80,6 @@
   "chilaboard-altium-library/IDC_2X30/IDC_2X30",
   "chilaboard-altium-library/IDC_2X32/IDC_2X32"
  ],
- "embedding_text": "ic.idc | IC | IC category cluster containing 11 parts in the IDC package family with surface-mount and through-hole mounting options. | ic idc smd through hole chilaboard-altium-library idc_2x3 idc_2x4 idc_2x5 idc_2x15 idc_2x20 idc_2x25 idc_2x30 pad mm pitch pins through hole 2x5 2x3 smde 2x4 2x15 2x17 | IDC | ",
+ "embedding_text": "ic.idc | IC | 11 ic parts using IDC footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | idc ic pad mm pitch pins through hole 2x5 2x3 smde 2x4 2x15 2x17 2x20 2x22 | IDC | ",
  "class": "ic"
 }

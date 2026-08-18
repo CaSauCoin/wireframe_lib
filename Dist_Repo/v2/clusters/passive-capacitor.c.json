@@ -6,42 +6,34 @@
   "Passive",
   "Capacitor"
  ],
- "description": "A cluster of 1,154 passive capacitor parts in the C package family featuring SMD, axial, disc, and rectangular through-hole footprints across multiple quality tiers.",
+ "description": "1154 passive capacitor parts using C footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Match the specific mounting type and footprint dimensions to your board layout.",
-  "Prioritize tier A parts from trusted source libraries for verified designs.",
-  "Confirm the exact footprint metric or package variation before selection."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a C land pattern is intended."
  ],
  "avoid_when": [
-  "The PCB design requires a package family other than C.",
-  "The required footprint geometry or mounting style is not represented in this cluster.",
-  "The target design requires non-passive or active capacitor configurations."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than C."
  ],
  "keywords": [
-  "passive",
   "capacitor",
-  "c package",
-  "smd",
-  "through_hole",
-  "axial",
-  "disc",
-  "rectangular",
-  "c_1210",
-  "c_1806",
-  "c_1812",
-  "c_2225",
-  "c_3640",
   "0mm",
   "rect",
   "00mm",
   "5mm",
   "pitch",
   "50mm",
+  "passive",
   "width",
   "length",
   "radial",
   "series",
-  "tht"
+  "tht",
+  "pin",
+  "mkt",
+  "film"
  ],
  "facts": {
   "package_family": "C",
@@ -80,7 +72,7 @@
    "B": 32,
    "C": 649
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -1280,6 +1272,6 @@
   "chilaboard-altium-library/C_TRM_4842/C_TRM_4842",
   "chilaboard-altium-library/C_TRM_7H15/C_TRM_7H15"
  ],
- "embedding_text": "passive-capacitor.c | Passive Capacitor | A cluster of 1,154 passive capacitor parts in the C package family featuring SMD, axial, disc, and rectangular through-hole footprints across multiple quality tiers. | passive capacitor c package smd through_hole axial disc rectangular c_1210 c_1806 c_1812 c_2225 c_3640 0mm rect 00mm 5mm pitch 50mm width length radial series tht | C | ",
+ "embedding_text": "passive-capacitor.c | Passive Capacitor | 1154 passive capacitor parts using C footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | capacitor 0mm rect 00mm 5mm pitch 50mm passive width length radial series tht pin mkt film | C | ",
  "class": "passive.capacitor"
 }

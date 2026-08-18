@@ -7,42 +7,34 @@
   "Power",
   "Linear Regulator"
  ],
- "description": "Surface-mount 3.3V low dropout (LDO) linear regulator IC cluster in the SOIC package family, featuring standard SOIC-8 and exposed-pad SOIC-8 footprints.",
+ "description": "11 ic power linear regulator parts for 3.3V, LDO using SOIC footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when requiring a surface-mount 3.3V low dropout (LDO) linear regulator.",
-  "Choose between standard SOIC-8 (3.9x4.9mm, 1.27mm pitch) and exposed-pad (SOIC-8-1EP) footprints.",
-  "Verify part symbol compatibility with target SOIC-8 footprint variants."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SOIC land pattern is intended."
  ],
  "avoid_when": [
-  "Do not use if an output voltage other than 3.3V is required.",
-  "Do not use when through-hole mounting or package families other than SOIC are needed.",
-  "Do not use if non-LDO topologies or non-SOIC-8 footprint layouts are required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SOIC."
  ],
  "keywords": [
-  "3.3v",
-  "ldo",
-  "linear regulator",
-  "soic",
-  "soic-8",
-  "soic-8-1ep",
-  "smd",
-  "ic.power.ldo",
-  "power ic",
-  "voltage regulator",
-  "adp7142",
-  "ams1117",
-  "l78l33",
-  "lp2951",
-  "lt1129",
   "regulator",
+  "soic",
   "linear",
   "3v",
+  "ldo",
   "so",
   "fixed",
   "low",
   "voltage",
   "9x4",
-  "9mm"
+  "9mm",
+  "p1",
+  "27mm",
+  "ic",
+  "power",
+  "output"
  ],
  "facts": {
   "package_family": "SOIC",
@@ -67,7 +59,7 @@
   "tier_counts": {
    "A": 11
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -124,6 +116,6 @@
   "kicad-symbols/Regulator_Linear/TPS77733_SO8",
   "kicad-symbols/Regulator_Linear/TPS77833_SO8"
  ],
- "embedding_text": "ic-power-ldo.soic.3v3.ldo | IC Power Linear Regulator | Surface-mount 3.3V low dropout (LDO) linear regulator IC cluster in the SOIC package family, featuring standard SOIC-8 and exposed-pad SOIC-8 footprints. | 3.3v ldo linear regulator soic soic-8 soic-8-1ep smd ic.power.ldo power ic voltage regulator adp7142 ams1117 l78l33 lp2951 lt1129 regulator linear 3v so fixed low voltage 9x4 9mm | SOIC | 3.3V LDO",
+ "embedding_text": "ic-power-ldo.soic.3v3.ldo | IC Power Linear Regulator | 11 ic power linear regulator parts for 3.3V, LDO using SOIC footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | regulator soic linear 3v ldo so fixed low voltage 9x4 9mm p1 27mm ic power output | SOIC | 3.3V LDO",
  "class": "ic.power.ldo"
 }

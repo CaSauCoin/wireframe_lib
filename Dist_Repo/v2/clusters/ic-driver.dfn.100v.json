@@ -6,33 +6,23 @@
   "IC",
   "Driver"
  ],
- "description": "Cluster of 100V surface-mount IC driver components in DFN packages, including tier A parts like HIP2100_DFN and HIP2101_DFN.",
+ "description": "2 ic driver parts for 100V using DFN footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Selecting 100V SMD IC drivers in DFN package variants.",
-  "Designing PCBs compatible with DFN-12-1EP (4x4mm, 0.5mm pitch) land patterns.",
-  "Using Tier A quality KiCad driver parts such as HIP2100_DFN or HIP2101_DFN."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a DFN land pattern is intended."
  ],
  "avoid_when": [
-  "Through-hole mounting or non-DFN package footprints are required.",
-  "Voltage requirements differ from the 100V specification of this cluster.",
-  "The layout requires a footprint other than DFN-12-1EP_4x4mm_P0.5mm_EP2.66x3.38mm."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than DFN."
  ],
  "keywords": [
-  "ic driver",
-  "100v",
   "dfn",
-  "smd",
-  "dfn-12-1ep",
-  "hip2100_dfn",
-  "hip2101_dfn",
-  "4x4mm",
-  "p0.5mm",
-  "driver_fet",
-  "kicad",
-  "fet driver",
   "driver",
   "half",
   "bridge",
+  "100v",
   "fet",
   "high",
   "frequency",
@@ -40,8 +30,10 @@
   "current",
   "0a",
   "1ep",
+  "4x4mm",
   "p0",
-  "5mm"
+  "5mm",
+  "ep2"
  ],
  "facts": {
   "package_family": "DFN",
@@ -64,7 +56,7 @@
   "tier_counts": {
    "A": 2
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -88,6 +80,6 @@
   "kicad-symbols/Driver_FET/HIP2100_DFN",
   "kicad-symbols/Driver_FET/HIP2101_DFN"
  ],
- "embedding_text": "ic-driver.dfn.100v | IC Driver | Cluster of 100V surface-mount IC driver components in DFN packages, including tier A parts like HIP2100_DFN and HIP2101_DFN. | ic driver 100v dfn smd dfn-12-1ep hip2100_dfn hip2101_dfn 4x4mm p0.5mm driver_fet kicad fet driver driver half bridge fet high frequency output current 0a 1ep p0 5mm | DFN | 100V",
+ "embedding_text": "ic-driver.dfn.100v | IC Driver | 2 ic driver parts for 100V using DFN footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | dfn driver half bridge 100v fet high frequency output current 0a 1ep 4x4mm p0 5mm ep2 | DFN | 100V",
  "class": "ic.driver"
 }

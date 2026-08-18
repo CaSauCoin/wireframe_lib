@@ -7,31 +7,22 @@
   "Driver",
   "Display"
  ],
- "description": "This cluster contains 2 display driver IC parts in the MAN3610A package family for through-hole mounting.",
+ "description": "2 ic driver display parts using MAN3610A footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when a through-hole display driver IC using the MAN3610A footprint is required.",
-  "Prefer Tier A parts such as MAN3640A for verified footprint compatibility.",
-  "Check part quality tier counts and source metadata before incorporating into a design."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a MAN3610A land pattern is intended."
  ],
  "avoid_when": [
-  "Avoid when a footprint other than MAN3610A or surface-mount packaging is required.",
-  "Do not use if unverified symbol-footprint pairings or lower quality tiers are unacceptable.",
-  "Avoid when specific electrical ratings or parameters are missing from the cluster facts."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than MAN3610A."
  ],
  "keywords": [
-  "ic",
-  "driver",
   "display",
-  "ic driver display",
-  "display driver",
-  "man3610a",
-  "man3640a",
-  "through hole",
-  "through_hole",
-  "kicad-symbols",
-  "character display",
   "segment",
   "led",
+  "man3610a",
   "digit",
   "orange",
   "right",
@@ -42,7 +33,8 @@
   "hand",
   "decimal",
   "one",
-  "with"
+  "with",
+  "dot"
  ],
  "facts": {
   "package_family": "MAN3610A",
@@ -64,7 +56,7 @@
    "A": 1,
    "C": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -80,6 +72,6 @@
   "kicad-symbols/Display_Character/MAN3640A",
   "kicad-symbols/Display_Character/MAN3610A"
  ],
- "embedding_text": "ic-driver-display.man3610a | IC Driver Display | This cluster contains 2 display driver IC parts in the MAN3610A package family for through-hole mounting. | ic driver display ic driver display display driver man3610a man3640a through hole through_hole kicad-symbols character display segment led digit orange right character single common anode hand decimal one with | MAN3610A | ",
+ "embedding_text": "ic-driver-display.man3610a | IC Driver Display | 2 ic driver display parts using MAN3610A footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | display segment led man3610a digit orange right character single common anode hand decimal one with dot | MAN3610A | ",
  "class": "ic.driver.display"
 }

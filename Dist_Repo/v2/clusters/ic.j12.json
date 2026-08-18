@@ -5,28 +5,22 @@
  "category_path": [
   "IC"
  ],
- "description": "IC cluster containing 2 tier C parts in the J12 package family with J12-C2T and J12-D2T footprint options.",
+ "description": "2 ic parts using J12 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Require J12-C2T or J12-D2T footprint options.",
-  "Accept tier C quality parts from dist-legacy sources.",
-  "Confirm suitability given unknown mount type."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a J12 land pattern is intended."
  ],
  "avoid_when": [
-  "Designs require packages other than J12.",
-  "Higher tier parts or planner-visible parts are required.",
-  "Footprints other than J12-C2T or J12-D2T are needed."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than J12."
  ],
  "keywords": [
-  "ic",
   "j12",
-  "j12-c2t",
-  "j12-d2t",
   "c2t",
   "d2t",
-  "package family j12",
-  "tier c",
-  "dist-legacy",
-  "unknown mount",
+  "ic",
   "pad",
   "mm",
   "pitch",
@@ -52,13 +46,13 @@
   "tier_counts": {
    "C": 2
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
   "dist-legacy/J12-C2T",
   "dist-legacy/J12-D2T"
  ],
- "embedding_text": "ic.j12 | IC | IC cluster containing 2 tier C parts in the J12 package family with J12-C2T and J12-D2T footprint options. | ic j12 j12-c2t j12-d2t c2t d2t package family j12 tier c dist-legacy unknown mount pad mm pitch pins | J12 | ",
+ "embedding_text": "ic.j12 | IC | 2 ic parts using J12 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | j12 c2t d2t ic pad mm pitch pins | J12 | ",
  "class": "ic"
 }

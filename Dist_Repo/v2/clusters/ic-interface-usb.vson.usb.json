@@ -7,32 +7,25 @@
   "Interface",
   "USB"
  ],
- "description": "Cluster of surface-mount USB interface ICs in VSON packaging, matching footprint VSON-10-1EP_3x3mm_P0.5mm_EP1.65x2.4mm_ThermalVias.",
+ "description": "2 ic interface usb parts for USB using VSON footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when requiring a USB interface IC in a surface-mount VSON package.",
-  "Verify footprint compatibility with VSON-10-1EP_3x3mm_P0.5mm_EP1.65x2.4mm_ThermalVias.",
-  "Confirm specific part requirements for TPS2560 or TPS2561."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a VSON land pattern is intended."
  ],
  "avoid_when": [
-  "Designs requiring through-hole mounting or package families other than VSON.",
-  "Applications requiring interface protocols other than USB.",
-  "Layouts incompatible with the VSON-10-1EP footprint pattern."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than VSON."
  ],
  "keywords": [
-  "ic",
-  "interface",
   "usb",
   "vson",
-  "smd",
-  "surface mount",
-  "tps2560",
-  "tps2561",
-  "vson-10-1ep",
-  "3x3mm",
-  "thermal vias",
+  "interface",
   "current",
   "limited",
   "power",
+  "3x3mm",
   "5mm",
   "dual",
   "channel",
@@ -64,7 +57,7 @@
   "tier_counts": {
    "A": 2
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -88,6 +81,6 @@
   "kicad-symbols/Interface_USB/TPS2560",
   "kicad-symbols/Interface_USB/TPS2561"
  ],
- "embedding_text": "ic-interface-usb.vson.usb | IC Interface USB | Cluster of surface-mount USB interface ICs in VSON packaging, matching footprint VSON-10-1EP_3x3mm_P0.5mm_EP1.65x2.4mm_ThermalVias. | ic interface usb vson smd surface mount tps2560 tps2561 vson-10-1ep 3x3mm thermal vias current limited power 5mm dual channel precision adjustable switches 1ep p0 ep1 | VSON | USB",
+ "embedding_text": "ic-interface-usb.vson.usb | IC Interface USB | 2 ic interface usb parts for USB using VSON footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | usb vson interface current limited power 3x3mm 5mm dual channel precision adjustable switches 1ep p0 ep1 | VSON | USB",
  "class": "ic.interface.usb"
 }

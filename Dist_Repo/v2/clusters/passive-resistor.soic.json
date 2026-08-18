@@ -6,42 +6,34 @@
   "Passive",
   "Resistor"
  ],
- "description": "Surface-mount resistor cluster containing 5 tier-A parts in SOIC-8, SOIC-16, and SOIC-24W footprints from KiCad symbols.",
+ "description": "5 passive resistor parts using SOIC footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Match the required footprint variant such as SOIC-8, SOIC-16, or SOIC-24W.",
-  "Verify the specific part number requirements among the available digital potentiometer symbols.",
-  "Confirm SMD land pattern and 1.27mm pitch compatibility with the board design."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SOIC land pattern is intended."
  ],
  "avoid_when": [
-  "Through-hole mounting is required.",
-  "The board layout requires a package family other than SOIC.",
-  "The circuit requires standard fixed passive resistors rather than the cataloged digital potentiometer parts."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SOIC."
  ],
  "keywords": [
   "soic",
-  "soic-8",
-  "soic-16",
-  "soic-24w",
-  "passive",
-  "resistor",
-  "smd",
-  "surface mount",
   "potentiometer",
-  "digital potentiometer",
-  "kicad-symbols",
-  "ds1267",
-  "mcp4011",
-  "mcp4021",
-  "x9250",
-  "x9258",
   "digital",
+  "resistor",
   "p1",
   "27mm",
   "so",
+  "passive",
   "steps",
   "9mm",
   "dual",
-  "xxxxsn"
+  "xxxxsn",
+  "low",
+  "cost",
+  "step",
+  "9x4"
  ],
  "facts": {
   "package_family": "SOIC",
@@ -64,7 +56,7 @@
   "tier_counts": {
    "A": 5
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -115,6 +107,6 @@
   "kicad-symbols/Potentiometer_Digital/X9250",
   "kicad-symbols/Potentiometer_Digital/X9258"
  ],
- "embedding_text": "passive-resistor.soic | Passive Resistor | Surface-mount resistor cluster containing 5 tier-A parts in SOIC-8, SOIC-16, and SOIC-24W footprints from KiCad symbols. | soic soic-8 soic-16 soic-24w passive resistor smd surface mount potentiometer digital potentiometer kicad-symbols ds1267 mcp4011 mcp4021 x9250 x9258 digital p1 27mm so steps 9mm dual xxxxsn | SOIC | ",
+ "embedding_text": "passive-resistor.soic | Passive Resistor | 5 passive resistor parts using SOIC footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | soic potentiometer digital resistor p1 27mm so passive steps 9mm dual xxxxsn low cost step 9x4 | SOIC | ",
  "class": "passive.resistor"
 }

@@ -6,31 +6,23 @@
   "Passive",
   "Inductor"
  ],
- "description": "SMD passive inductor cluster featuring 0402 package components with L0402 footprints from the Seeed OPL KiCad library.",
+ "description": "1 passive inductor parts for 3.3V using 0402 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Verify exact footprint compatibility with the L0402 land pattern.",
-  "Check component ratings including inductance, tolerance, and current against design requirements.",
-  "Confirm compatibility with the Seeed OPL KiCad library source."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a 0402 land pattern is intended."
  ],
  "avoid_when": [
-  "A package family other than 0402 is required.",
-  "Through-hole mounting is required instead of SMD.",
-  "The PCB design requires a footprint other than L0402."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than 0402."
  ],
  "keywords": [
-  "passive",
   "inductor",
-  "0402",
-  "l0402",
-  "smd",
-  "surface mount",
-  "seeed",
-  "kicad",
-  "3.3v",
-  "3.3nh",
-  "300ma",
   "3nh",
+  "smd",
   "nh",
+  "300ma",
   "opl",
   "ma",
   "surface",
@@ -38,7 +30,9 @@
   "in",
   "an",
   "package",
+  "l0402",
   "rf",
+  "passive",
   "3v"
  ],
  "facts": {
@@ -62,7 +56,7 @@
   "tier_counts": {
    "B": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -77,6 +71,6 @@
  "part_ids": [
   "Seeed-OPL-Kicad-Library/OPL_Inductor/SMD-INDUCTOR-3.3NH-0.3NH-300MA_0402_"
  ],
- "embedding_text": "passive-inductor.0402.3v3 | Passive Inductor | SMD passive inductor cluster featuring 0402 package components with L0402 footprints from the Seeed OPL KiCad library. | passive inductor 0402 l0402 smd surface mount seeed kicad 3.3v 3.3nh 300ma 3nh nh opl ma surface mount in an package rf 3v | 0402 | 3.3V",
+ "embedding_text": "passive-inductor.0402.3v3 | Passive Inductor | 1 passive inductor parts for 3.3V using 0402 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | inductor 3nh smd nh 300ma opl ma surface mount in an package l0402 rf passive 3v | 0402 | 3.3V",
  "class": "passive.inductor"
 }

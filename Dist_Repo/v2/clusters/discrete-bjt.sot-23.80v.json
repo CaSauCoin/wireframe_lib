@@ -6,42 +6,34 @@
   "Discrete",
   "BJT"
  ],
- "description": "Cluster of 8 tier-A discrete BJT parts rated for the 80V facet, all in SOT-23 SMD footprints, drawn from kicad-symbols and Alternate-KiCad-Library.",
+ "description": "8 discrete bjt parts for 80V using SOT-23 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "All 8 candidates are tier A with score 100, so differentiate by exact part number and source library.",
-  "Confirm the SOT-23 footprint matches your intended PCB land pattern before committing.",
-  "Check which source library (kicad-symbols vs Alternate-KiCad-Library) fits your provenance/trust requirements."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SOT-23 land pattern is intended."
  ],
  "avoid_when": [
-  "The design needs a voltage rating other than 80V.",
-  "A package other than SOT-23 is required.",
-  "Through-hole mounting is needed, since this cluster is SMD only."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SOT-23."
  ],
  "keywords": [
-  "discrete",
-  "bjt",
-  "transistor",
-  "sot-23",
-  "sot23",
-  "80v",
-  "smd",
-  "surface mount",
-  "mmbta06",
-  "mmbta56",
-  "2sar544r",
-  "2scr544r",
-  "bss64",
-  "kicad-symbols",
-  "alternate-kicad-library",
-  "tier a",
   "sot",
+  "transistor",
+  "bjt",
+  "80v",
   "npn",
+  "discrete",
   "akl",
   "alternate",
   "kicad",
   "library",
   "5a",
-  "pnp"
+  "smd",
+  "pnp",
+  "mmbta06",
+  "darlington",
+  "2sar544r"
  ],
  "facts": {
   "package_family": "SOT-23",
@@ -65,7 +57,7 @@
   "tier_counts": {
    "A": 8
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -119,6 +111,6 @@
   "Alternate-KiCad-Library/Transistor_BJT_Darlington_AKL/MMBTA28",
   "kicad-symbols/Transistor_BJT/MMBTA56"
  ],
- "embedding_text": "discrete-bjt.sot-23.80v | Discrete BJT | Cluster of 8 tier-A discrete BJT parts rated for the 80V facet, all in SOT-23 SMD footprints, drawn from kicad-symbols and Alternate-KiCad-Library. | discrete bjt transistor sot-23 sot23 80v smd surface mount mmbta06 mmbta56 2sar544r 2scr544r bss64 kicad-symbols alternate-kicad-library tier a sot npn akl alternate kicad library 5a pnp | SOT-23 | 80V",
+ "embedding_text": "discrete-bjt.sot-23.80v | Discrete BJT | 8 discrete bjt parts for 80V using SOT-23 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | sot transistor bjt 80v npn discrete akl alternate kicad library 5a smd pnp mmbta06 darlington 2sar544r | SOT-23 | 80V",
  "class": "discrete.bjt"
 }

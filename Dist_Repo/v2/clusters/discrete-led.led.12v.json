@@ -6,30 +6,25 @@
   "Discrete",
   "LED"
  ],
- "description": "A cluster of 5 discrete 12V surface-mount LED components featuring Cree XHP50 and XHP70 footprint variants.",
+ "description": "5 discrete led parts for 12V using LED footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select based on specific footprint needs: XHP50 HighDensity, XHP50 HighIntensity, or XHP70.",
-  "Prefer Tier A or Tier B parts over Tier C entries.",
-  "Confirm design alignment with 12V surface-mount LED specifications."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a LED land pattern is intended."
  ],
  "avoid_when": [
-  "The design requires through-hole or non-SMD mounting.",
-  "Target operating voltage is not 12V.",
-  "The required land pattern differs from Cree XHP50 or XHP70 footprints."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than LED."
  ],
  "keywords": [
-  "discrete",
   "led",
-  "12v",
-  "smd",
   "cree",
+  "12v",
   "xhp50",
   "xhp70",
   "highdensity",
-  "highintensity",
-  "discrete led",
-  "xhp50 highdensity",
-  "xhp50 highintensity",
+  "discrete",
   "xlamp",
   "leds",
   "in",
@@ -37,6 +32,7 @@
   "high",
   "diode",
   "density",
+  "highintensity",
   "all"
  ],
  "facts": {
@@ -65,7 +61,7 @@
    "B": 1,
    "C": 2
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -100,6 +96,6 @@
   "dist-legacy/LED_Cree-XHP50_12V_HighDensity",
   "dist-legacy/LED_Cree-XHP70_12V"
  ],
- "embedding_text": "discrete-led.led.12v | Discrete LED | A cluster of 5 discrete 12V surface-mount LED components featuring Cree XHP50 and XHP70 footprint variants. | discrete led 12v smd cree xhp50 xhp70 highdensity highintensity discrete led xhp50 highdensity xhp50 highintensity xlamp leds in series high diode density all | LED | 12V",
+ "embedding_text": "discrete-led.led.12v | Discrete LED | 5 discrete led parts for 12V using LED footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | led cree 12v xhp50 xhp70 highdensity discrete xlamp leds in series high diode density highintensity all | LED | 12V",
  "class": "discrete.led"
 }

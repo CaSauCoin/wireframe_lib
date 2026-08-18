@@ -6,44 +6,34 @@
   "Discrete",
   "Diode"
  ],
- "description": "Cluster of 57 discrete diode parts (13 planner-visible) sharing the DIODES package family, spanning SOT-89, SOT-323-3, SOT-523, SO-8EP, PowerDI3333-8, UDFN and related footprints; metadata is auto-generated and unreviewed.",
+ "description": "57 discrete diode parts using DIODES footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Match the exact footprint (e.g. SOT-89, SOT-323-3, SO-8EP, UDFN2020-6, PowerDI3333-8) to the intended land pattern",
-  "Prefer tier B parts (13 of 57) over the larger tier C set when higher quality is needed",
-  "Confirm smd vs through_hole mount before placement, since both are present in this cluster",
-  "Cross-check source (dist-legacy vs celestial-altium-library) before relying on a given part's data"
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a DIODES land pattern is intended."
  ],
  "avoid_when": [
-  "The exact footprint/package variant cannot be confirmed against the target land pattern",
-  "Electrical ratings or pinout for the chosen part are not documented",
-  "Reviewed, verified metadata is required — review_status for this cluster is 'generated', not reviewed",
-  "A package outside the DIODES footprint family is needed"
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than DIODES."
  ],
  "keywords": [
-  "diode",
   "diodes",
-  "discrete diode",
-  "diodes inc",
-  "sot-89",
-  "sot-323-3",
-  "sot-523",
-  "so-8ep",
-  "powerdi3333-8",
-  "udfn3810-9",
-  "udfn2020-6",
-  "u-dfn2020-6e",
-  "sdt10a45p5",
-  "smaf",
-  "dmn3066lq",
-  "smd",
-  "through hole",
-  "diodes footprint family",
+  "diode",
   "discrete",
   "inc",
   "sot",
   "pad",
   "pitch",
-  "pins"
+  "pins",
+  "mm",
+  "surface",
+  "mount",
+  "package",
+  "so",
+  "dfn2020",
+  "8ep",
+  "x2"
  ],
  "facts": {
   "package_family": "DIODES",
@@ -79,7 +69,7 @@
    "B": 13,
    "C": 44
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -182,6 +172,6 @@
   "celestial-altium-library/DIODES TSOT25/DIODES_TSOT25",
   "celestial-altium-library/DIODES X2-DFN1410-6 1.4x1.0MM/DIODES_X2-DFN1410-6_1.4x1.0MM"
  ],
- "embedding_text": "discrete-diode.diodes | Discrete Diode | Cluster of 57 discrete diode parts (13 planner-visible) sharing the DIODES package family, spanning SOT-89, SOT-323-3, SOT-523, SO-8EP, PowerDI3333-8, UDFN and related footprints; metadata is auto-generated and unreviewed. | diode diodes discrete diode diodes inc sot-89 sot-323-3 sot-523 so-8ep powerdi3333-8 udfn3810-9 udfn2020-6 u-dfn2020-6e sdt10a45p5 smaf dmn3066lq smd through hole diodes footprint family discrete inc sot pad pitch pins | DIODES | ",
+ "embedding_text": "discrete-diode.diodes | Discrete Diode | 57 discrete diode parts using DIODES footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | diodes diode discrete inc sot pad pitch pins mm surface mount package so dfn2020 8ep x2 | DIODES | ",
  "class": "discrete.diode"
 }

@@ -6,44 +6,34 @@
   "Discrete",
   "Diode"
  ],
- "description": "Cluster of 19 SMD diode parts (20V facet) in SOT-family footprints (SOT-323/SC-70, SOT-363/SC-70-6, SOT-143, SOT-343/SC-70-4, SOT-666, SOT-89-3, SOT-223-3-TabPin2), all tier A, sourced from Alternate-KiCad-Library.",
+ "description": "19 discrete diode parts for 20V using SOT footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Match the exact SOT footprint variant (SC-70, SOT-143, SOT-89-3, SOT-223-3-TabPin2, SOT-666) to the intended land pattern.",
-  "All 19 entries are tier A from Alternate-KiCad-Library; distinguish parts by name and footprint.",
-  "Note some entries are named as zener diodes (BZV49-C20, BZV90-C20, BZX84C20S) while others are not (1SS402, 1SS402s) — confirm intended diode type from the part name.",
-  "Confirm the 20V facet matches the required rating before use."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SOT land pattern is intended."
  ],
  "avoid_when": [
-  "The diode type (zener vs. non-zener) or a specific electrical rating is not confirmed from the part name or source.",
-  "The board requires a package outside the listed SOT footprints.",
-  "A source other than Alternate-KiCad-Library is required.",
-  "Exact pin-to-pad footprint mapping cannot be verified before layout."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SOT."
  ],
  "keywords": [
   "diode",
   "sot",
-  "sot-323",
-  "sc-70",
-  "sot-363",
-  "sc-70-6",
-  "sot-143",
-  "sot-343",
-  "sot-666",
-  "sot-89-3",
-  "sot-223-3",
   "20v",
-  "zener",
-  "akl",
-  "alternate-kicad-library",
-  "discrete",
-  "smd",
-  "1ss402",
   "schottky",
   "dual",
   "sc",
+  "zener",
+  "akl",
   "alternate",
   "kicad",
-  "library"
+  "library",
+  "discrete",
+  "hsms",
+  "independent",
+  "200mw",
+  "1ss402"
  ],
  "facts": {
   "package_family": "SOT",
@@ -72,7 +62,7 @@
   "tier_counts": {
    "A": 19
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -137,6 +127,6 @@
   "Alternate-KiCad-Library/Diode_Schottky_AKL/HSMS-2817",
   "Alternate-KiCad-Library/Diode_Schottky_AKL/HSMS-2818"
  ],
- "embedding_text": "discrete-diode.sot.20v | Discrete Diode | Cluster of 19 SMD diode parts (20V facet) in SOT-family footprints (SOT-323/SC-70, SOT-363/SC-70-6, SOT-143, SOT-343/SC-70-4, SOT-666, SOT-89-3, SOT-223-3-TabPin2), all tier A, sourced from Alternate-KiCad-Library. | diode sot sot-323 sc-70 sot-363 sc-70-6 sot-143 sot-343 sot-666 sot-89-3 sot-223-3 20v zener akl alternate-kicad-library discrete smd 1ss402 schottky dual sc alternate kicad library | SOT | 20V",
+ "embedding_text": "discrete-diode.sot.20v | Discrete Diode | 19 discrete diode parts for 20V using SOT footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | diode sot 20v schottky dual sc zener akl alternate kicad library discrete hsms independent 200mw 1ss402 | SOT | 20V",
  "class": "discrete.diode"
 }

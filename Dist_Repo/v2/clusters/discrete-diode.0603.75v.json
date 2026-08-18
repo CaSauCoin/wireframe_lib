@@ -6,34 +6,28 @@
   "Discrete",
   "Diode"
  ],
- "description": "Cluster of surface-mount 75V discrete diodes using the 0603 D_0603_1608Metric footprint from Alternate-KiCad-Library.",
+ "description": "2 discrete diode parts for 75V using 0603 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when requiring a 75V surface-mount (SMD) discrete diode in an 0603 package.",
-  "Choose between tier A parts CD4148WT and CDZ55C75T from Alternate-KiCad-Library.",
-  "Confirm PCB layout compatibility with the D_0603_1608Metric footprint."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a 0603 land pattern is intended."
  ],
  "avoid_when": [
-  "The layout requires a footprint family other than 0603 or D_0603_1608Metric.",
-  "The application requires through-hole or non-SMD mounting.",
-  "The design specifies a voltage rating other than 75V."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than 0603."
  ],
  "keywords": [
   "diode",
-  "discrete",
   "75v",
-  "0603",
-  "smd",
-  "d_0603_1608metric",
-  "1608metric",
-  "cd4148wt",
-  "cdz55c75t",
-  "alternate-kicad-library",
-  "kicad",
-  "discrete diode",
   "zener",
+  "cd4148wt",
   "akl",
   "alternate",
+  "kicad",
   "library",
+  "1608metric",
+  "discrete",
   "small",
   "signal",
   "fast",
@@ -62,7 +56,7 @@
   "tier_counts": {
    "A": 2
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -86,6 +80,6 @@
   "Alternate-KiCad-Library/Diode_AKL/CD4148WT",
   "Alternate-KiCad-Library/Diode_Zener_AKL/CDZ55C75T"
  ],
- "embedding_text": "discrete-diode.0603.75v | Discrete Diode | Cluster of surface-mount 75V discrete diodes using the 0603 D_0603_1608Metric footprint from Alternate-KiCad-Library. | diode discrete 75v 0603 smd d_0603_1608metric 1608metric cd4148wt cdz55c75t alternate-kicad-library kicad discrete diode zener akl alternate library small signal fast switching 150ma 4ns | 0603 | 75V",
+ "embedding_text": "discrete-diode.0603.75v | Discrete Diode | 2 discrete diode parts for 75V using 0603 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | diode 75v zener cd4148wt akl alternate kicad library 1608metric discrete small signal fast switching 150ma 4ns | 0603 | 75V",
  "class": "discrete.diode"
 }

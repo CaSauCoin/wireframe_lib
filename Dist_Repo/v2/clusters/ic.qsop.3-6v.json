@@ -5,33 +5,23 @@
  "category_path": [
   "IC"
  ],
- "description": "Integrated circuit cluster with 3.6V rating in SMD QSOP packaging, featuring tier A parts from KiCad symbols with QSOP-16 footprints.",
+ "description": "1 ic parts for 3.6V using QSOP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select for surface-mount IC applications requiring 3.6V operation in a QSOP package.",
-  "Verify compatibility with the QSOP-16_3.9x4.9mm_P0.635mm land pattern.",
-  "Check part specifications and symbol definitions from the kicad-symbols library."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a QSOP land pattern is intended."
  ],
  "avoid_when": [
-  "The design requires a package family other than QSOP.",
-  "Operating voltage requirements differ from 3.6V.",
-  "Through-hole mounting or non-SMD assembly is required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than QSOP."
  ],
  "keywords": [
-  "ic",
   "qsop",
-  "3.6v",
-  "smd",
-  "qsop-16",
-  "micrf220ayqs",
-  "kicad-symbols",
-  "qsop-16_3.9x4.9mm_p0.635mm",
-  "tier a",
-  "surface mount",
-  "3.9x4.9mm",
-  "p0.635mm",
   "ask",
   "receiver",
   "6v",
+  "micrf220ayqs",
   "rf",
   "450mhz",
   "110dbm",
@@ -39,7 +29,8 @@
   "9mm",
   "p0",
   "635mm",
-  "so"
+  "so",
+  "ic"
  ],
  "facts": {
   "package_family": "QSOP",
@@ -62,7 +53,7 @@
   "tier_counts": {
    "A": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -77,6 +68,6 @@
  "part_ids": [
   "kicad-symbols/RF/MICRF220AYQS"
  ],
- "embedding_text": "ic.qsop.3-6v | IC | Integrated circuit cluster with 3.6V rating in SMD QSOP packaging, featuring tier A parts from KiCad symbols with QSOP-16 footprints. | ic qsop 3.6v smd qsop-16 micrf220ayqs kicad-symbols qsop-16_3.9x4.9mm_p0.635mm tier a surface mount 3.9x4.9mm p0.635mm ask receiver 6v rf 450mhz 110dbm 9x4 9mm p0 635mm so | QSOP | 3.6V",
+ "embedding_text": "ic.qsop.3-6v | IC | 1 ic parts for 3.6V using QSOP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | qsop ask receiver 6v micrf220ayqs rf 450mhz 110dbm 9x4 9mm p0 635mm so ic | QSOP | 3.6V",
  "class": "ic"
 }

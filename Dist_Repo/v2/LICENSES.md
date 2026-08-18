@@ -22,7 +22,7 @@ this file is the summary.
 | altium-designer-addons-component-libraries | mixed; audit sub-library licences before public release | https://github.com/Altium-Designer-addons/component-libraries | `—` |
 | matthiasbock-altium-libraries | GPL-3.0; 3D model copyrights may vary by file | https://github.com/matthiasbock/Altium-Libraries | `f85847889e669b187234f39323084c89b5480f4a` |
 | alixahedi-altium-library | MIT | https://github.com/alixahedi/Altium_Library | `8bee1a90de77cdcafccd2ba94a2a051684de9000` |
-| dist-legacy | mixed / unaudited | https://github.com/CaSauCoin/wireframe_lib | `—` |
+| dist-legacy | mixed / unaudited | https://github.com/CaSauCoin/wireframe_lib | `90c911dff2afcca862e2433421c333e1c5c9b1fc` |
 
 ## KiCad libraries
 

@@ -6,44 +6,34 @@
   "Discrete",
   "Diode"
  ],
- "description": "Cluster of 181 discrete diode parts rated 10V using D-family footprints (SMA, SMB, SMC, SOD-123, SOD-123F, SOD-323, SOD-323F, SOD-523, MiniMELF, DO-35, DO-41), spanning SMD and through-hole mounts.",
+ "description": "181 discrete diode parts for 10V using D footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
   "Prefer tier A entries with datasheets and exact footprint matches.",
-  "Match the exact D-family footprint (e.g. SOD-323 vs SMA vs DO-41) to the intended land pattern.",
-  "Confirm the 10V facet meets the circuit's actual voltage requirement before use.",
-  "Check pin-to-pad mapping and package dimensions before committing a PCB."
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a D land pattern is intended."
  ],
  "avoid_when": [
-  "The required voltage, current, speed, or tolerance is not stated by the selected part.",
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
   "The symbol-footprint pairing is guessed or flagged for review.",
-  "The board layout needs a package other than the D family.",
-  "A through-hole or SMD mount is needed but the chosen part only supports the other."
+  "The board layout needs a package other than D."
  ],
  "keywords": [
   "diode",
   "10v",
-  "discrete diode",
-  "d package",
   "zener",
-  "sma",
-  "smb",
-  "smc",
-  "sod-123",
-  "sod-123f",
-  "sod-323",
-  "sod-323f",
-  "sod-523",
-  "minimelf",
-  "do-35",
-  "do-41",
-  "smd",
-  "through hole",
-  "kicad",
-  "horizontal",
   "tvs",
   "do",
   "discrete",
-  "akl"
+  "akl",
+  "alternate",
+  "kicad",
+  "library",
+  "sod",
+  "horizontal",
+  "unidirectional",
+  "sma",
+  "smb",
+  "bidirectional"
  ],
  "facts": {
   "package_family": "D",
@@ -81,7 +71,7 @@
    "A": 167,
    "B": 14
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -308,6 +298,6 @@
   "JLCPCB-Kicad-Library/JLCPCB-Diodes/TVS-Bi,SMF10CA",
   "JLCPCB-Kicad-Library/JLCPCB-Diodes/TVS-Uni,H7VH16U"
  ],
- "embedding_text": "discrete-diode.d.10v | Discrete Diode | Cluster of 181 discrete diode parts rated 10V using D-family footprints (SMA, SMB, SMC, SOD-123, SOD-123F, SOD-323, SOD-323F, SOD-523, MiniMELF, DO-35, DO-41), spanning SMD and through-hole mounts. | diode 10v discrete diode d package zener sma smb smc sod-123 sod-123f sod-323 sod-323f sod-523 minimelf do-35 do-41 smd through hole kicad horizontal tvs do discrete akl | D | 10V",
+ "embedding_text": "discrete-diode.d.10v | Discrete Diode | 181 discrete diode parts for 10V using D footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | diode 10v zener tvs do discrete akl alternate kicad library sod horizontal unidirectional sma smb bidirectional | D | 10V",
  "class": "discrete.diode"
 }

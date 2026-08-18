@@ -6,44 +6,34 @@
   "Discrete",
   "Diode"
  ],
- "description": "Cluster of 43 discrete D-package diode parts tagged 17V, covering SMD footprints (SMC, SMA, SMB, SOD-123/123F) and through-hole footprints (DO-15, P600) in both Zener and TVS variants, all sourced from Alternate-KiCad-Library.",
+ "description": "43 discrete diode parts for 17V using D footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Match the exact footprint, including whether it's the Zener or TVS variant of a package (e.g. D_DO-15..._Zener vs D_DO-15..._TVS).",
-  "Prefer tier A entries (40 of 43 parts) over the 3 tier B entries.",
-  "Pick SMD (D_SMC/D_SMA/D_SMB/D_SOD-123/D_SOD-123F) or through-hole (D_DO-15/D_P600) based on the board's mounting requirement.",
-  "All entries come from a single source (Alternate-KiCad-Library) with review_status 'generated', not manually verified."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a D land pattern is intended."
  ],
  "avoid_when": [
-  "You need a confirmed manufacturer, datasheet, or electrical rating beyond the 17V facet — none is provided here.",
-  "You cannot distinguish whether the needed part is the Zener or the TVS variant, since both share overlapping package names.",
-  "The design requires a package outside family D.",
-  "The symbol-footprint pairing must already be manually reviewed, since this cluster's parts are only 'generated'."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than D."
  ],
  "keywords": [
   "diode",
-  "tvs diode",
-  "zener diode",
-  "17v",
-  "d package",
-  "smc",
-  "sma",
-  "smb",
-  "sod-123",
-  "sod-123f",
-  "do-15",
-  "p600",
-  "smd",
-  "through hole",
-  "horizontal",
-  "discrete diode",
-  "alternate-kicad-library",
-  "akl",
   "tvs",
+  "17v",
+  "akl",
   "alternate",
   "kicad",
   "library",
   "discrete",
-  "unidirectional"
+  "unidirectional",
+  "do",
+  "zener",
+  "bidirectional",
+  "smc",
+  "horizontal",
+  "sod",
+  "p600"
  ],
  "facts": {
   "package_family": "D",
@@ -79,7 +69,7 @@
    "A": 40,
    "B": 3
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -168,6 +158,6 @@
   "Alternate-KiCad-Library/Diode_TVS_AKL/MSMP17A",
   "Alternate-KiCad-Library/Diode_TVS_AKL/TPSMA6L17A"
  ],
- "embedding_text": "discrete-diode.d.17v | Discrete Diode | Cluster of 43 discrete D-package diode parts tagged 17V, covering SMD footprints (SMC, SMA, SMB, SOD-123/123F) and through-hole footprints (DO-15, P600) in both Zener and TVS variants, all sourced from Alternate-KiCad-Library. | diode tvs diode zener diode 17v d package smc sma smb sod-123 sod-123f do-15 p600 smd through hole horizontal discrete diode alternate-kicad-library akl tvs alternate kicad library discrete unidirectional | D | 17V",
+ "embedding_text": "discrete-diode.d.17v | Discrete Diode | 43 discrete diode parts for 17V using D footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | diode tvs 17v akl alternate kicad library discrete unidirectional do zener bidirectional smc horizontal sod p600 | D | 17V",
  "class": "discrete.diode"
 }

@@ -6,31 +6,19 @@
   "IC",
   "Interface"
  ],
- "description": "Surface-mount 3.3V UART and serial interface ICs in SOIC-16 and SOIC-16W packages with 1.27mm pitch.",
+ "description": "3 ic interface parts for 3.3V, UART/serial using SOIC footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Selecting between standard SOIC-16 (3.9x9.9mm) and wide SOIC-16W (5.3x10.2mm) footprints.",
-  "Requiring a surface-mount 3.3V UART or serial interface IC.",
-  "Using 1.27mm pitch surface-mount SOIC package ICs."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SOIC land pattern is intended."
  ],
  "avoid_when": [
-  "The design requires package families other than SOIC.",
-  "Operating voltages other than 3.3V are required.",
-  "The PCB layout specifies pin pitch or package dimensions differing from SOIC-16 or SOIC-16W."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SOIC."
  ],
  "keywords": [
   "soic",
-  "soic-16",
-  "soic-16w",
-  "ic interface",
-  "3.3v",
-  "uart",
-  "serial",
-  "smd",
-  "1.27mm",
-  "am26ls31cd",
-  "am26lv32xd",
-  "am26lv32xns",
-  "kicad-symbols",
   "interface",
   "3v",
   "rs485",
@@ -41,7 +29,11 @@
   "p1",
   "27mm",
   "rs422",
-  "differential"
+  "differential",
+  "ic",
+  "uart",
+  "serial",
+  "9x9"
  ],
  "facts": {
   "package_family": "SOIC",
@@ -66,7 +58,7 @@
   "tier_counts": {
    "A": 3
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -99,6 +91,6 @@
   "kicad-symbols/Interface/AM26LV32xD",
   "kicad-symbols/Interface/AM26LV32xNS"
  ],
- "embedding_text": "ic-interface.soic.3v3.uart | IC Interface | Surface-mount 3.3V UART and serial interface ICs in SOIC-16 and SOIC-16W packages with 1.27mm pitch. | soic soic-16 soic-16w ic interface 3.3v uart serial smd 1.27mm am26ls31cd am26lv32xd am26lv32xns kicad-symbols interface 3v rs485 so 32mbps quad line p1 27mm rs422 differential | SOIC | 3.3V UART/serial",
+ "embedding_text": "ic-interface.soic.3v3.uart | IC Interface | 3 ic interface parts for 3.3V, UART/serial using SOIC footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | soic interface 3v rs485 so 32mbps quad line p1 27mm rs422 differential ic uart serial 9x9 | SOIC | 3.3V UART/serial",
  "class": "ic.interface"
 }

@@ -6,28 +6,21 @@
   "Passive",
   "Capacitor"
  ],
- "description": "Cluster of 3 passive capacitor parts in the CP3 package family supporting CP3_6, CP3_7, and CP3_8 footprints.",
+ "description": "3 passive capacitor parts using CP3 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select based on the required footprint variant: CP3_6, CP3_7, or CP3_8.",
-  "Verify electrical ratings and mounting method as mount type is unconfirmed.",
-  "Review legacy distributor source information and Tier C quality status."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a CP3 land pattern is intended."
  ],
  "avoid_when": [
-  "A package family other than CP3 is required.",
-  "Footprints other than CP3_6, CP3_7, or CP3_8 are needed.",
-  "Design rules require verified mounting types or higher quality tier parts."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than CP3."
  ],
  "keywords": [
+  "cp3",
   "passive",
   "capacitor",
-  "cp3",
-  "cp3_6",
-  "cp3_7",
-  "cp3_8",
-  "passive capacitor",
-  "passive.capacitor",
-  "tier c",
-  "dist-legacy",
   "pad",
   "mm",
   "pitch",
@@ -54,7 +47,7 @@
   "tier_counts": {
    "C": 3
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
@@ -62,6 +55,6 @@
   "dist-legacy/CP3_7",
   "dist-legacy/CP3_8"
  ],
- "embedding_text": "passive-capacitor.cp3 | Passive Capacitor | Cluster of 3 passive capacitor parts in the CP3 package family supporting CP3_6, CP3_7, and CP3_8 footprints. | passive capacitor cp3 cp3_6 cp3_7 cp3_8 passive capacitor passive.capacitor tier c dist-legacy pad mm pitch pins | CP3 | ",
+ "embedding_text": "passive-capacitor.cp3 | Passive Capacitor | 3 passive capacitor parts using CP3 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | cp3 passive capacitor pad mm pitch pins | CP3 | ",
  "class": "passive.capacitor"
 }

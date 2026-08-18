@@ -6,33 +6,22 @@
   "Discrete",
   "Transistor"
  ],
- "description": "Discrete transistor cluster containing 180 surface-mount 30V parts in the SO package family, using SO-8_3.9x4.9mm_P1.27mm footprints from the Alternate-KiCad-Library.",
+ "description": "180 discrete transistor parts for 30V using SO footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Surface-mount discrete transistor applications requiring a 30V rating.",
-  "Layouts requiring an SO package family footprint, specifically SO-8_3.9x4.9mm_P1.27mm.",
-  "Selecting Tier A quality discrete transistor parts from the Alternate-KiCad-Library."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SO land pattern is intended."
  ],
  "avoid_when": [
-  "Design requirements specify voltage ratings other than 30V.",
-  "Through-hole mounting or package families other than SO are required.",
-  "The PCB design requires footprint geometry other than SO-8_3.9x4.9mm_P1.27mm."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SO."
  ],
  "keywords": [
-  "discrete transistor",
-  "30v",
   "so",
-  "so-8",
-  "smd",
-  "so-8_3.9x4.9mm_p1.27mm",
-  "alternate-kicad-library",
-  "discrete",
-  "transistor",
-  "ao4306",
-  "ao4354",
-  "ao4403",
-  "ao4404b",
-  "ao4405e",
   "mosfet",
+  "transistor",
+  "30v",
   "enchancement",
   "mos",
   "akl",
@@ -41,7 +30,10 @@
   "library",
   "9x4",
   "9mm",
-  "p1"
+  "p1",
+  "27mm",
+  "emos",
+  "emosfet"
  ],
  "facts": {
   "package_family": "SO",
@@ -64,7 +56,7 @@
   "tier_counts": {
    "A": 180
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -290,6 +282,6 @@
   "Alternate-KiCad-Library/Transistor_MOSFET_AKL/ZXMC3A17DN8",
   "Alternate-KiCad-Library/Transistor_MOSFET_AKL/ZXMC3F31DN8"
  ],
- "embedding_text": "discrete-transistor.so.30v | Discrete Transistor | Discrete transistor cluster containing 180 surface-mount 30V parts in the SO package family, using SO-8_3.9x4.9mm_P1.27mm footprints from the Alternate-KiCad-Library. | discrete transistor 30v so so-8 smd so-8_3.9x4.9mm_p1.27mm alternate-kicad-library discrete transistor ao4306 ao4354 ao4403 ao4404b ao4405e mosfet enchancement mos akl alternate kicad library 9x4 9mm p1 | SO | 30V",
+ "embedding_text": "discrete-transistor.so.30v | Discrete Transistor | 180 discrete transistor parts for 30V using SO footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | so mosfet transistor 30v enchancement mos akl alternate kicad library 9x4 9mm p1 27mm emos emosfet | SO | 30V",
  "class": "discrete.transistor"
 }

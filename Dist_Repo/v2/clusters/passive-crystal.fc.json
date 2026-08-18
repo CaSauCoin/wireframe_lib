@@ -6,42 +6,34 @@
   "Passive",
   "Crystal / Resonator"
  ],
- "description": "Surface-mount passive crystal and resonator components in the FC package family utilizing FC-135R footprints.",
+ "description": "1 passive crystal / resonator parts using FC footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Verify compatibility with the SMD FC-135R footprint.",
-  "Match required frequency and load capacitance values such as 32.768 kHz and 13 pF.",
-  "Review quality tier and source library metadata."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a FC land pattern is intended."
  ],
  "avoid_when": [
-  "Through-hole mounting or non-FC package families are required.",
-  "Active oscillator circuits or alternate footprint dimensions are needed.",
-  "Application specifications require a verified tier A component."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than FC."
  ],
  "keywords": [
-  "passive crystal",
-  "resonator",
-  "fc",
-  "fc-135r",
-  "smd",
-  "32.768khz",
-  "13pf",
-  "surface mount",
-  "fc-135r_l3.2-w1.5",
-  "jlcpcb-kicad-library",
-  "crystal resonator",
-  "passive",
   "crystal",
+  "fc",
   "768khz",
   "crystals",
   "135r",
   "l3",
   "w1",
   "c32346",
+  "13pf",
   "jlcpcb",
   "5pf",
   "70k",
   "oscillator",
-  "20ppm"
+  "20ppm",
+  "smd3215",
+  "2p"
  ],
  "facts": {
   "package_family": "FC",
@@ -62,7 +54,7 @@
   "tier_counts": {
    "B": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -77,6 +69,6 @@
  "part_ids": [
   "JLCPCB-Kicad-Library/JLCPCB-Crystals/Crystal, 32.768kHz, 13pF"
  ],
- "embedding_text": "passive-crystal.fc | Passive Crystal / Resonator | Surface-mount passive crystal and resonator components in the FC package family utilizing FC-135R footprints. | passive crystal resonator fc fc-135r smd 32.768khz 13pf surface mount fc-135r_l3.2-w1.5 jlcpcb-kicad-library crystal resonator passive crystal 768khz crystals 135r l3 w1 c32346 jlcpcb 5pf 70k oscillator 20ppm | FC | ",
+ "embedding_text": "passive-crystal.fc | Passive Crystal / Resonator | 1 passive crystal / resonator parts using FC footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | crystal fc 768khz crystals 135r l3 w1 c32346 13pf jlcpcb 5pf 70k oscillator 20ppm smd3215 2p | FC | ",
  "class": "passive.crystal"
 }

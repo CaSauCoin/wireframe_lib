@@ -6,35 +6,28 @@
   "IC",
   "Power"
  ],
- "description": "Power IC cluster containing surface-mount power integrated circuits in SOIC packaging, supporting 5V and 3.5V facets with SOIC-16W footprints.",
+ "description": "1 ic power parts for 5V, 3.5V using SOIC footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select for surface-mount (SMD) power IC applications requiring SOIC packaging.",
-  "Choose when using 5V or 3.5V power designs compatible with the SOIC-16W footprint.",
-  "Prefer Tier A verified entries from KiCad symbols such as LT1054xSW."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SOIC land pattern is intended."
  ],
  "avoid_when": [
-  "The PCB layout requires package families other than SOIC or non-SMD mounting.",
-  "Footprint requirements differ from SOIC-16W_7.5x10.3mm_P1.27mm.",
-  "Required voltage parameters do not match the 5V or 3.5V facets."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SOIC."
  ],
  "keywords": [
-  "ic power",
-  "power ic",
-  "soic",
-  "soic-16w",
-  "5v",
-  "3.5v",
-  "smd",
-  "lt1054xsw",
-  "switched capacitor",
   "regulator",
-  "kicad symbols",
+  "5v",
+  "soic",
   "switched",
   "capacitor",
   "voltage",
   "converter",
   "100ma",
   "so",
+  "lt1054xsw",
   "switchedcapacitor",
   "with",
   "output",
@@ -64,7 +57,7 @@
   "tier_counts": {
    "A": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -79,6 +72,6 @@
  "part_ids": [
   "kicad-symbols/Regulator_SwitchedCapacitor/LT1054xSW"
  ],
- "embedding_text": "ic-power.soic.5v.3-5v | IC Power | Power IC cluster containing surface-mount power integrated circuits in SOIC packaging, supporting 5V and 3.5V facets with SOIC-16W footprints. | ic power power ic soic soic-16w 5v 3.5v smd lt1054xsw switched capacitor regulator kicad symbols switched capacitor voltage converter 100ma so switchedcapacitor with output current operating range | SOIC | 5V 3.5V",
+ "embedding_text": "ic-power.soic.5v.3-5v | IC Power | 1 ic power parts for 5V, 3.5V using SOIC footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | regulator 5v soic switched capacitor voltage converter 100ma so lt1054xsw switchedcapacitor with output current operating range | SOIC | 5V 3.5V",
  "class": "ic.power"
 }

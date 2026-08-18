@@ -5,30 +5,22 @@
  "category_path": [
   "IC"
  ],
- "description": "Integrated circuit cluster containing 2 surface-mount parts in the FLEX package family, utilizing FLEX and FLEX QFM-24 MOL footprints.",
+ "description": "2 ic parts using FLEX footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when using FLEX or FLEX QFM-24 MOL footprints.",
-  "Verify surface mount (SMD) packaging suitability.",
-  "Account for tier C quality status across all parts in the cluster."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a FLEX land pattern is intended."
  ],
  "avoid_when": [
-  "The board layout requires packages other than FLEX family footprints.",
-  "Higher quality tier parts (Tier A or Tier B) are required.",
-  "Planner-visible components are required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than FLEX."
  ],
  "keywords": [
-  "ic",
   "flex",
   "qfm",
-  "qfm-24",
   "mol",
-  "smd",
-  "surface mount",
-  "integrated circuit",
-  "flex footprint",
-  "flex qfm-24 mol",
-  "celestial altium library",
-  "dist legacy",
+  "ic",
   "pad",
   "mm",
   "pitch",
@@ -58,13 +50,13 @@
   "tier_counts": {
    "C": 2
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
   "dist-legacy/FLEX QFM-24 MOL",
   "celestial-altium-library/FLEX QFM-24 MOL/FLEX_QFM-24_MOL"
  ],
- "embedding_text": "ic.flex | IC | Integrated circuit cluster containing 2 surface-mount parts in the FLEX package family, utilizing FLEX and FLEX QFM-24 MOL footprints. | ic flex qfm qfm-24 mol smd surface mount integrated circuit flex footprint flex qfm-24 mol celestial altium library dist legacy pad mm pitch pins surface mount | FLEX | ",
+ "embedding_text": "ic.flex | IC | 2 ic parts using FLEX footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | flex qfm mol ic pad mm pitch pins surface mount | FLEX | ",
  "class": "ic"
 }

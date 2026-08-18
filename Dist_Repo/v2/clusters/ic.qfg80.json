@@ -5,30 +5,21 @@
  "category_path": [
   "IC"
  ],
- "description": "Surface-mount IC cluster in the QFG80 package family containing 28 parts with QFG80_32, QFG80_44, and QFG80_64 footprints.",
+ "description": "28 ic parts using QFG80 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select for surface-mount IC designs using QFG80_32, QFG80_44, or QFG80_64 footprints.",
-  "Check part quality tier across the 25 tier B and 3 tier C available entries.",
-  "Match specific footprint requirements against chilaboard-altium-library source entries."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a QFG80 land pattern is intended."
  ],
  "avoid_when": [
-  "Non-SMD or through-hole component mounting is required.",
-  "The PCB design requires footprint packages other than QFG80_32, QFG80_44, or QFG80_64.",
-  "Tier A quality components are strictly required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than QFG80."
  ],
  "keywords": [
-  "ic",
   "qfg80",
-  "qfg80_32",
-  "qfg80_44",
-  "qfg80_64",
-  "smd",
-  "surface mount",
-  "chilaboard-altium-library",
-  "qfp44",
-  "qfp64",
-  "ic.qfg80",
   "microcontroller",
+  "ic",
   "bit",
   "mcu",
   "qfp",
@@ -38,6 +29,8 @@
   "package",
   "and",
   "qfp32",
+  "qfp44",
+  "qfp64",
   "qfn32",
   "interfaces"
  ],
@@ -63,7 +56,7 @@
    "B": 25,
    "C": 3
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -137,6 +130,6 @@
   "chilaboard-altium-library/QFG80_44/QFG80_44",
   "chilaboard-altium-library/QFG80_64/QFG80_64"
  ],
- "embedding_text": "ic.qfg80 | IC | Surface-mount IC cluster in the QFG80 package family containing 28 parts with QFG80_32, QFG80_44, and QFG80_64 footprints. | ic qfg80 qfg80_32 qfg80_44 qfg80_64 smd surface mount chilaboard-altium-library qfp44 qfp64 ic.qfg80 microcontroller bit mcu qfp avr in pin package and qfp32 qfn32 interfaces | QFG80 | ",
+ "embedding_text": "ic.qfg80 | IC | 28 ic parts using QFG80 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | qfg80 microcontroller ic bit mcu qfp avr in pin package and qfp32 qfp44 qfp64 qfn32 interfaces | QFG80 | ",
  "class": "ic"
 }

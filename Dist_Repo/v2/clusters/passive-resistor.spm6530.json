@@ -6,27 +6,21 @@
   "Passive",
   "Resistor"
  ],
- "description": "Cluster containing surface-mount passive resistor parts associated with the SPM6530 package family and footprint.",
+ "description": "1 passive resistor parts using SPM6530 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Verify footprint compatibility with the SPM6530 package family.",
-  "Check part quality tier and source library before integration.",
-  "Confirm surface-mount mounting requirements match design specifications."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SPM6530 land pattern is intended."
  ],
  "avoid_when": [
-  "A package family or footprint other than SPM6530 is required.",
-  "Through-hole mounting is required instead of surface mount.",
-  "Higher-tier verified parts are required for production designs."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SPM6530."
  ],
  "keywords": [
+  "spm6530",
   "passive",
   "resistor",
-  "passive resistor",
-  "spm6530",
-  "smd",
-  "surface mount",
-  "package family",
-  "footprint",
-  "passive.resistor",
   "surface",
   "mount",
   "pad",
@@ -53,12 +47,12 @@
   "tier_counts": {
    "C": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
   "francescosacco-hardwarelibrary/SPM6530/SPM6530"
  ],
- "embedding_text": "passive-resistor.spm6530 | Passive Resistor | Cluster containing surface-mount passive resistor parts associated with the SPM6530 package family and footprint. | passive resistor passive resistor spm6530 smd surface mount package family footprint passive.resistor surface mount pad mm pitch pins | SPM6530 | ",
+ "embedding_text": "passive-resistor.spm6530 | Passive Resistor | 1 passive resistor parts using SPM6530 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | spm6530 passive resistor surface mount pad mm pitch pins | SPM6530 | ",
  "class": "passive.resistor"
 }

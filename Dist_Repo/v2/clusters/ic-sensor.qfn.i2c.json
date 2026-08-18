@@ -6,41 +6,33 @@
   "IC",
   "Sensor"
  ],
- "description": "Surface-mount sensor ICs using I2C communication interface in QFN package footprints.",
+ "description": "7 ic sensor parts for I2C using QFN footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Match specific footprint requirements such as QFN-4, WQFN-10, VQFN-16, QFN-24, or QFN-28.",
-  "Prefer tier A parts for verified quality entries in the library.",
-  "Verify sensor function matches application needs such as temperature, humidity, energy, or motion."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a QFN land pattern is intended."
  ],
  "avoid_when": [
-  "Through-hole mounting is required rather than surface-mount (SMD).",
-  "A package family other than QFN is required for layout.",
-  "Communication protocols other than I2C are required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than QFN."
  ],
  "keywords": [
-  "ic",
   "sensor",
   "i2c",
   "qfn",
-  "vqfn",
-  "wqfn",
-  "smd",
   "temperature",
-  "humidity",
-  "motion",
-  "energy",
-  "mcp39f521",
-  "tmp461xxrun",
-  "ens210",
-  "mpu-9150",
   "p0",
+  "ic",
   "5mm",
   "remote",
+  "vqfn",
   "and",
   "texas",
   "1ep",
   "nolead",
   "with",
+  "motion",
   "invensense"
  ],
  "facts": {
@@ -69,7 +61,7 @@
    "A": 2,
    "B": 5
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -122,6 +114,6 @@
   "kicad-symbols/Sensor_Temperature/TMP464xxRGT",
   "kicad-symbols/Sensor_Motion/MPU-6050"
  ],
- "embedding_text": "ic-sensor.qfn.i2c | IC Sensor | Surface-mount sensor ICs using I2C communication interface in QFN package footprints. | ic sensor i2c qfn vqfn wqfn smd temperature humidity motion energy mcp39f521 tmp461xxrun ens210 mpu-9150 p0 5mm remote and texas 1ep nolead with invensense | QFN | I2C",
+ "embedding_text": "ic-sensor.qfn.i2c | IC Sensor | 7 ic sensor parts for I2C using QFN footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | sensor i2c qfn temperature p0 ic 5mm remote vqfn and texas 1ep nolead with motion invensense | QFN | I2C",
  "class": "ic.sensor"
 }

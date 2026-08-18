@@ -6,33 +6,26 @@
   "Power",
   "Power Supply"
  ],
- "description": "Surface-mount SOIC power supply components associated with 5V, USB, and 4.1V facets.",
+ "description": "1 power power supply parts for 5V, USB, 4.1V using SOIC footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when requiring SMD SOIC-8 packaging with 1.27mm pitch.",
-  "Verify application matches 5V, USB, or 4.1V operating facets.",
-  "Confirm footprint dimensions of 3.9x4.9mm fit the PCB layout."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SOIC land pattern is intended."
  ],
  "avoid_when": [
-  "The design requires through-hole mounting or non-SOIC packages.",
-  "Operating requirements fall outside 5V, USB, or 4.1V parameters.",
-  "A package footprint other than SOIC-8 with 1.27mm pitch is needed."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SOIC."
  ],
  "keywords": [
-  "power supply",
-  "soic",
-  "soic-8",
-  "5v",
-  "usb",
-  "4.1v",
-  "smd",
-  "max1811",
-  "battery management",
-  "power",
-  "surface mount",
-  "kicad",
   "battery",
+  "usb",
+  "soic",
   "charger",
   "1v",
+  "5v",
+  "power",
+  "max1811",
   "management",
   "powered",
   "li",
@@ -65,7 +58,7 @@
   "tier_counts": {
    "A": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -80,6 +73,6 @@
  "part_ids": [
   "kicad-symbols/Battery_Management/MAX1811"
  ],
- "embedding_text": "power-supply.soic.5v.usb | Power Power Supply | Surface-mount SOIC power supply components associated with 5V, USB, and 4.1V facets. | power supply soic soic-8 5v usb 4.1v smd max1811 battery management power surface mount kicad battery charger 1v management powered li 2v input 5a charging current | SOIC | 5V USB 4.1V",
+ "embedding_text": "power-supply.soic.5v.usb | Power Power Supply | 1 power power supply parts for 5V, USB, 4.1V using SOIC footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | battery usb soic charger 1v 5v power max1811 management powered li 2v input 5a charging current | SOIC | 5V USB 4.1V",
  "class": "power.supply"
 }

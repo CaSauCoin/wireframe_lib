@@ -6,40 +6,32 @@
   "IC",
   "Driver"
  ],
- "description": "Cluster of 4 surface-mount 40V driver ICs in SOT-23-6 footprints from KiCad symbols.",
+ "description": "4 ic driver parts for 40V using SOT-23 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Requires a 40V rated SMD driver IC.",
-  "Targeting SOT-23 or SOT-23-6 package footprints.",
-  "Selecting tier A parts including ZXGD3003E6, ZXGD3004E6, ZXGD3006E6, or ZXGD3009E6."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SOT-23 land pattern is intended."
  ],
  "avoid_when": [
-  "The circuit requires a voltage rating other than 40V.",
-  "The PCB design uses a package footprint other than SOT-23-6.",
-  "Through-hole mounting is required instead of SMD."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SOT-23."
  ],
  "keywords": [
-  "ic driver",
-  "driver ic",
-  "40v",
-  "sot-23",
-  "sot-23-6",
-  "smd",
-  "kicad-symbols",
-  "driver_fet",
-  "zxgd3003e6",
-  "zxgd3004e6",
-  "zxgd3006e6",
-  "zxgd3009e6",
   "sot",
   "driver",
+  "40v",
   "gate",
   "fet",
   "to",
+  "smd",
   "ic",
   "peak",
   "delay",
+  "zxgd3003e6",
   "5a",
   "2ns",
+  "zxgd3004e6",
   "8a",
   "1ns"
  ],
@@ -64,7 +56,7 @@
   "tier_counts": {
    "A": 4
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -106,6 +98,6 @@
   "kicad-symbols/Driver_FET/ZXGD3006E6",
   "kicad-symbols/Driver_FET/ZXGD3009E6"
  ],
- "embedding_text": "ic-driver.sot-23.40v | IC Driver | Cluster of 4 surface-mount 40V driver ICs in SOT-23-6 footprints from KiCad symbols. | ic driver driver ic 40v sot-23 sot-23-6 smd kicad-symbols driver_fet zxgd3003e6 zxgd3004e6 zxgd3006e6 zxgd3009e6 sot driver gate fet to ic peak delay 5a 2ns 8a 1ns | SOT-23 | 40V",
+ "embedding_text": "ic-driver.sot-23.40v | IC Driver | 4 ic driver parts for 40V using SOT-23 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | sot driver 40v gate fet to smd ic peak delay zxgd3003e6 5a 2ns zxgd3004e6 8a 1ns | SOT-23 | 40V",
  "class": "ic.driver"
 }

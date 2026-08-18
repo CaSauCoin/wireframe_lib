@@ -5,32 +5,23 @@
  "category_path": [
   "IC"
  ],
- "description": "Integrated circuit cluster in SOT-23 SMD package footprint featuring 2.7V rating and tier A KiCad power supervisor parts.",
+ "description": "2 ic parts for 2.7V using SOT-23 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when a 2.7V rated surface-mount IC in SOT-23 footprint is required.",
-  "Choose for tier A KiCad power supervisor symbol designs.",
-  "Select between MCP100-270D and MCP101-270D representative parts."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SOT-23 land pattern is intended."
  ],
  "avoid_when": [
-  "The design requires a package footprint other than SOT-23.",
-  "Operating voltage requirement differs from 2.7V.",
-  "Through-hole mounting or non-SMD packaging is required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SOT-23."
  ],
  "keywords": [
-  "ic",
-  "sot-23",
-  "2.7v",
-  "smd",
-  "power supervisor",
-  "supervisor",
-  "mcp100-270d",
-  "mcp101-270d",
-  "kicad-symbols",
-  "tier a",
   "sot",
-  "power",
+  "supervisor",
   "reset",
   "270d",
+  "power",
   "microcontroller",
   "monitor",
   "70v",
@@ -38,8 +29,10 @@
   "active",
   "output",
   "to",
+  "smd",
   "push",
-  "pull"
+  "pull",
+  "ic"
  ],
  "facts": {
   "package_family": "SOT-23",
@@ -62,7 +55,7 @@
   "tier_counts": {
    "A": 2
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -86,6 +79,6 @@
   "kicad-symbols/Power_Supervisor/MCP100-270D",
   "kicad-symbols/Power_Supervisor/MCP101-270D"
  ],
- "embedding_text": "ic.sot-23.2-7v | IC | Integrated circuit cluster in SOT-23 SMD package footprint featuring 2.7V rating and tier A KiCad power supervisor parts. | ic sot-23 2.7v smd power supervisor supervisor mcp100-270d mcp101-270d kicad-symbols tier a sot power reset 270d microcontroller monitor 70v threshold active output to push pull | SOT-23 | 2.7V",
+ "embedding_text": "ic.sot-23.2-7v | IC | 2 ic parts for 2.7V using SOT-23 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | sot supervisor reset 270d power microcontroller monitor 70v threshold active output to smd push pull ic | SOT-23 | 2.7V",
  "class": "ic"
 }

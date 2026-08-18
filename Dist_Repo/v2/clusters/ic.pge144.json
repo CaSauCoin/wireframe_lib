@@ -5,28 +5,20 @@
  "category_path": [
   "IC"
  ],
- "description": "Integrated circuit cluster containing 3 Tier C parts utilizing PGE144 package footprints (PGE144_L, PGE144_M, PGE144_N).",
+ "description": "3 ic parts using PGE144 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Verify footprint variant selection among PGE144_L, PGE144_M, and PGE144_N.",
-  "Check part specifications and symbol mappings carefully, as all cluster entries are Tier C quality.",
-  "Use when a PGE144 package footprint is required for the layout."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a PGE144 land pattern is intended."
  ],
  "avoid_when": [
-  "The design requires a package family or footprint other than PGE144.",
-  "Unverified Tier C data quality or unstated part parameters are unacceptable for the project.",
-  "A higher quality tier (Tier A or B) is required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than PGE144."
  ],
  "keywords": [
-  "ic",
   "pge144",
-  "pge144_l",
-  "pge144_m",
-  "pge144_n",
-  "pge144 footprint",
-  "pge144 package",
-  "integrated circuit",
-  "tier c",
-  "dist-legacy",
+  "ic",
   "pad",
   "mm",
   "pitch",
@@ -53,7 +45,7 @@
   "tier_counts": {
    "C": 3
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
@@ -61,6 +53,6 @@
   "dist-legacy/PGE144_M",
   "dist-legacy/PGE144_N"
  ],
- "embedding_text": "ic.pge144 | IC | Integrated circuit cluster containing 3 Tier C parts utilizing PGE144 package footprints (PGE144_L, PGE144_M, PGE144_N). | ic pge144 pge144_l pge144_m pge144_n pge144 footprint pge144 package integrated circuit tier c dist-legacy pad mm pitch pins | PGE144 | ",
+ "embedding_text": "ic.pge144 | IC | 3 ic parts using PGE144 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | pge144 ic pad mm pitch pins | PGE144 | ",
  "class": "ic"
 }

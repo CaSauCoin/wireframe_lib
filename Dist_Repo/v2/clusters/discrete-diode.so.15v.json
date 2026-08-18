@@ -6,33 +6,23 @@
   "Discrete",
   "Diode"
  ],
- "description": "Cluster of 4 tier-A surface-mount discrete diode parts with a 15V rating using the SO-8_3.9x4.9mm_P1.27mm footprint in the SO package family.",
+ "description": "4 discrete diode parts for 15V using SO footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when requiring a 15V rated surface-mount discrete diode.",
-  "Use when designing for an SO package family with SO-8_3.9x4.9mm_P1.27mm footprint.",
-  "Choose among tier-A parts such as SDMA15, SDMA15C, SDMA15Cs, or SDMA15s."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SO land pattern is intended."
  ],
  "avoid_when": [
-  "The design requires through-hole mounting instead of SMD.",
-  "The layout demands a package family other than SO or footprint other than SO-8_3.9x4.9mm_P1.27mm.",
-  "The circuit requires a diode with a voltage rating other than 15V."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SO."
  ],
  "keywords": [
-  "discrete",
-  "diode",
-  "15v",
   "so",
-  "so-8",
-  "smd",
-  "discrete diode",
-  "so-8_3.9x4.9mm_p1.27mm",
-  "sdma15",
-  "sdma15c",
-  "sdma15cs",
-  "sdma15s",
-  "alternate-kicad-library",
+  "diode",
   "tvs",
   "independent",
+  "15v",
   "akl",
   "array",
   "300w",
@@ -41,7 +31,9 @@
   "library",
   "9x4",
   "9mm",
-  "p1"
+  "p1",
+  "27mm",
+  "quad"
  ],
  "facts": {
   "package_family": "SO",
@@ -64,7 +56,7 @@
   "tier_counts": {
    "A": 4
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -106,6 +98,6 @@
   "Alternate-KiCad-Library/Diode_TVS_AKL/SDMA15s",
   "Alternate-KiCad-Library/Diode_TVS_AKL/SDMA15C"
  ],
- "embedding_text": "discrete-diode.so.15v | Discrete Diode | Cluster of 4 tier-A surface-mount discrete diode parts with a 15V rating using the SO-8_3.9x4.9mm_P1.27mm footprint in the SO package family. | discrete diode 15v so so-8 smd discrete diode so-8_3.9x4.9mm_p1.27mm sdma15 sdma15c sdma15cs sdma15s alternate-kicad-library tvs independent akl array 300w alternate kicad library 9x4 9mm p1 | SO | 15V",
+ "embedding_text": "discrete-diode.so.15v | Discrete Diode | 4 discrete diode parts for 15V using SO footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | so diode tvs independent 15v akl array 300w alternate kicad library 9x4 9mm p1 27mm quad | SO | 15V",
  "class": "discrete.diode"
 }

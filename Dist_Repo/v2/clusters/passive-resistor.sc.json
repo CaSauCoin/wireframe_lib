@@ -6,27 +6,21 @@
   "Passive",
   "Resistor"
  ],
- "description": "Passive resistor cluster containing SMD components in the SC package family with SC-90 footprint support.",
+ "description": "1 passive resistor parts using SC footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Confirm the design requires an SC package family with an SC-90 SMD footprint.",
-  "Verify electrical specifications and footprint mapping prior to PCB layout as the part is tier C.",
-  "Review library definitions sourced from matthiasbock-altium-libraries."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SC land pattern is intended."
  ],
  "avoid_when": [
-  "The PCB layout requires a package family or footprint other than SC or SC-90.",
-  "Through-hole mounting is required instead of surface mount.",
-  "Verified quality tiers higher than Tier C are required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SC."
  ],
  "keywords": [
+  "sc",
   "passive",
   "resistor",
-  "passive resistor",
-  "sc",
-  "sc-90",
-  "sc-90 footprint",
-  "smd",
-  "surface mount",
-  "sc package",
   "surface",
   "mount",
   "pad",
@@ -53,12 +47,12 @@
   "tier_counts": {
    "C": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
   "matthiasbock-altium-libraries/SC-90/SC-90"
  ],
- "embedding_text": "passive-resistor.sc | Passive Resistor | Passive resistor cluster containing SMD components in the SC package family with SC-90 footprint support. | passive resistor passive resistor sc sc-90 sc-90 footprint smd surface mount sc package surface mount pad mm pitch pins | SC | ",
+ "embedding_text": "passive-resistor.sc | Passive Resistor | 1 passive resistor parts using SC footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | sc passive resistor surface mount pad mm pitch pins | SC | ",
  "class": "passive.resistor"
 }

@@ -5,34 +5,27 @@
  "category_path": [
   "IC"
  ],
- "description": "Surface-mount IC cluster supporting SPI and UART/serial communication interfaces in the QFG50 package family with QFG50_100 footprint.",
+ "description": "1 ic parts for SPI, UART/serial using QFG50 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Require surface-mount ICs supporting SPI and UART/serial communication interfaces.",
-  "Verify compatibility with the QFG50_100 land pattern and QFG50 package family.",
-  "Review source library metadata and Tier B quality rating prior to component placement."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a QFG50 land pattern is intended."
  ],
  "avoid_when": [
-  "The design requires package footprints other than QFG50_100.",
-  "SPI or UART/serial interfaces are not required for the application.",
-  "Through-hole or non-surface-mount (SMD) mounting is needed."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than QFG50."
  ],
  "keywords": [
-  "ic",
-  "qfg50",
-  "qfg50_100",
-  "spi",
-  "uart",
-  "serial",
-  "smd",
-  "surface mount",
   "atmega3290a",
   "qfp100",
-  "atmega3290a_qfp100",
-  "chilaboard",
   "microcontroller",
   "lcd",
   "controller",
+  "spi",
+  "uart",
   "qfp",
+  "qfg50",
   "with",
   "integrated",
   "adc",
@@ -63,7 +56,7 @@
   "tier_counts": {
    "B": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -78,6 +71,6 @@
  "part_ids": [
   "chilaboard-altium-library/ATMEGA3290A_QFP100/ATMEGA3290A_QFP100"
  ],
- "embedding_text": "ic.qfg50.spi.uart | IC | Surface-mount IC cluster supporting SPI and UART/serial communication interfaces in the QFG50 package family with QFG50_100 footprint. | ic qfg50 qfg50_100 spi uart serial smd surface mount atmega3290a qfp100 atmega3290a_qfp100 chilaboard microcontroller lcd controller qfp with integrated adc and interfaces in pin | QFG50 | SPI UART/serial",
+ "embedding_text": "ic.qfg50.spi.uart | IC | 1 ic parts for SPI, UART/serial using QFG50 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | atmega3290a qfp100 microcontroller lcd controller spi uart qfp qfg50 with integrated adc and interfaces in pin | QFG50 | SPI UART/serial",
  "class": "ic"
 }

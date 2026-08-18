@@ -7,30 +7,20 @@
   "Analog",
   "Audio"
  ],
- "description": "Generic analog audio IC cluster containing 1 entry sourced from KiCad symbols with package to be chosen later.",
+ "description": "1 ic analog audio parts with package chosen later. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when an analog audio IC component is required without a pre-assigned package footprint.",
-  "Verify pin-to-pad mappings, electrical parameters, and package specifications prior to PCB design.",
-  "Review part quality as the cluster contains tier G generated entries."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Select a footprint/package explicitly before placement."
  ],
  "avoid_when": [
-  "Avoid when a specific pre-defined footprint or package family is strictly required.",
-  "Do not use if fully verified tier A parts with embedded datasheet ratings are mandatory."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review."
  ],
  "keywords": [
   "audio",
-  "ic",
-  "analog",
-  "analog audio",
-  "audio ic",
-  "tda7052a",
-  "ic.analog.audio",
-  "kicad-symbols",
-  "package chosen later",
-  "tier g",
-  "generic",
-  "ic analog audio",
   "amplifier",
+  "tda7052a",
   "1w",
   "btl",
   "mono",
@@ -40,6 +30,8 @@
   "control",
   "dip",
   "soic",
+  "ic",
+  "analog",
   "package",
   "chosen"
  ],
@@ -58,7 +50,7 @@
   "tier_counts": {
    "G": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -73,6 +65,6 @@
  "part_ids": [
   "kicad-symbols/Amplifier_Audio/TDA7052A"
  ],
- "embedding_text": "ic-analog-audio.generic | IC Analog Audio | Generic analog audio IC cluster containing 1 entry sourced from KiCad symbols with package to be chosen later. | audio ic analog analog audio audio ic tda7052a ic.analog.audio kicad-symbols package chosen later tier g generic ic analog audio amplifier 1w btl mono with dc volume control dip soic package chosen | package chosen later | ",
+ "embedding_text": "ic-analog-audio.generic | IC Analog Audio | 1 ic analog audio parts with package chosen later. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | audio amplifier tda7052a 1w btl mono with dc volume control dip soic ic analog package chosen | package chosen later | ",
  "class": "ic.analog.audio"
 }

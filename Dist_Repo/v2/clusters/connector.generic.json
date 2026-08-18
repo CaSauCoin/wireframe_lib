@@ -5,42 +5,33 @@
  "category_path": [
   "Connector"
  ],
- "description": "Generic connector cluster of 1081 parts spanning multiple pin counts and row configurations, with package/footprint left unassigned; entries are machine-generated and tiered C or G only.",
+ "description": "1081 connector parts with package chosen later. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Match required pin count and row configuration (e.g. 02x01, 02x02, 02x11) before choosing an entry",
-  "Confirm whether a shielded variant is needed",
-  "Assign an explicit footprint/package before placement, since none is preset"
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Select a footprint/package explicitly before placement."
  ],
  "avoid_when": [
-  "A specific footprint or package dimension is required and not yet selected",
-  "A tier A or verified/reviewed part is required, since only tiers C and G are present",
-  "Electrical ratings, pinout, lifecycle, or manufacturer data are needed, since none are provided here"
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review."
  ],
  "keywords": [
   "connector",
-  "generic connector",
-  "conn",
-  "header",
-  "hdr",
-  "row",
-  "shielded",
-  "row letter first",
-  "row letter last",
-  "pin count",
-  "02x01",
-  "02x02",
-  "02x11",
-  "package chosen later",
-  "generated",
-  "kicad-symbols",
-  "altium library",
   "package",
   "chosen",
   "later",
   "pins",
+  "conn",
+  "hdr",
+  "row",
   "generic",
+  "shielded",
   "pin",
-  "script"
+  "script",
+  "generated",
+  "odd",
+  "even",
+  "numbers"
  ],
  "facts": {
   "package_family": "package chosen later",
@@ -64,7 +55,7 @@
    "C": 355,
    "G": 726
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -1191,6 +1182,6 @@
   "celestial-altium-library/RF Connector - SMA/RF_Connector_-_SMA",
   "chilaboard-altium-library/RJ11_6P2C_RATU/RJ11_6P2C_RATU"
  ],
- "embedding_text": "connector.generic | Connector | Generic connector cluster of 1081 parts spanning multiple pin counts and row configurations, with package/footprint left unassigned; entries are machine-generated and tiered C or G only. | connector generic connector conn header hdr row shielded row letter first row letter last pin count 02x01 02x02 02x11 package chosen later generated kicad-symbols altium library package chosen later pins generic pin script | package chosen later | ",
+ "embedding_text": "connector.generic | Connector | 1081 connector parts with package chosen later. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | connector package chosen later pins conn hdr row generic shielded pin script generated odd even numbers | package chosen later | ",
  "class": "connector"
 }

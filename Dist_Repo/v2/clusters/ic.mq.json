@@ -5,32 +5,23 @@
  "category_path": [
   "IC"
  ],
- "description": "Cluster of 4 IC parts in the MQ package family featuring footprints such as MQ-2, MQ-6, MQ-4 Gas Sensor, and MQ-7 Gas Sensor with through-hole and unknown mount options.",
+ "description": "4 ic parts using MQ footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Verify footprint compatibility with specific target footprints such as MQ-2, MQ-6, MQ-4 Gas Sensor, or MQ-7 Gas Sensor.",
-  "Check mounting options for through-hole compatibility.",
-  "Review source library metadata from SparkFun-KiCad-Libraries or dist-legacy before PCB design."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a MQ land pattern is intended."
  ],
  "avoid_when": [
-  "The design requires a package family other than MQ.",
-  "Surface-mount packaging is required.",
-  "Fully verified tier A parts or planner-visible entries are required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than MQ."
  ],
  "keywords": [
-  "ic",
   "mq",
-  "mq-2",
-  "mq-4",
-  "mq-6",
-  "mq-7",
-  "gas sensor",
-  "through_hole",
-  "sparkfun",
-  "kicad",
-  "dist-legacy",
-  "tier c",
   "sensor",
   "gas",
+  "sparkfun",
+  "ic",
   "sno2",
   "pad",
   "mm",
@@ -40,7 +31,8 @@
   "flammable",
   "analog",
   "methane",
-  "toxic"
+  "toxic",
+  "mq7"
  ],
  "facts": {
   "package_family": "MQ",
@@ -66,7 +58,7 @@
   "tier_counts": {
    "C": 4
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
@@ -75,6 +67,6 @@
   "dist-legacy/MQ-2",
   "dist-legacy/MQ-6"
  ],
- "embedding_text": "ic.mq | IC | Cluster of 4 IC parts in the MQ package family featuring footprints such as MQ-2, MQ-6, MQ-4 Gas Sensor, and MQ-7 Gas Sensor with through-hole and unknown mount options. | ic mq mq-2 mq-4 mq-6 mq-7 gas sensor through_hole sparkfun kicad dist-legacy tier c sensor gas sno2 pad mm pitch pins mq4 flammable analog methane toxic | MQ | ",
+ "embedding_text": "ic.mq | IC | 4 ic parts using MQ footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | mq sensor gas sparkfun ic sno2 pad mm pitch pins mq4 flammable analog methane toxic mq7 | MQ | ",
  "class": "ic"
 }

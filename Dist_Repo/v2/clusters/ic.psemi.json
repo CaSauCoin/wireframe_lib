@@ -5,32 +5,25 @@
  "category_path": [
   "IC"
  ],
- "description": "Integrated circuit cluster with four surface-mount parts using PSEMI package footprints.",
+ "description": "4 ic parts using PSEMI footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when a surface-mount IC using a PSEMI package family footprint is required.",
-  "Confirm exact land pattern dimensions, pin count, and pitch matching the CSP-16 footprint variants.",
-  "Verify part specifications and quality tiers prior to selection."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a PSEMI land pattern is intended."
  ],
  "avoid_when": [
-  "Avoid when the design calls for non-SMD through-hole components.",
-  "Avoid when layout requires packages outside of the PSEMI footprint family."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than PSEMI."
  ],
  "keywords": [
-  "ic",
   "psemi",
-  "smd",
-  "csp-16",
-  "p0.4mm",
-  "1.64x2.04mm",
-  "pad0.18mm",
-  "psemi package",
-  "integrated circuit",
-  "surface mount",
   "csp",
   "64x2",
   "04mm",
   "p0",
   "4mm",
+  "ic",
   "pdf",
   "qfn",
   "pad0",
@@ -63,7 +56,7 @@
   "tier_counts": {
    "C": 4
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
@@ -72,6 +65,6 @@
   "dist-legacy/pSemi_CSP-16_1.64x2.04mm_P0.4mm",
   "dist-legacy/pSemi_CSP-16_1.64x2.04mm_P0.4mm_Pad0.18mm"
  ],
- "embedding_text": "ic.psemi | IC | Integrated circuit cluster with four surface-mount parts using PSEMI package footprints. | ic psemi smd csp-16 p0.4mm 1.64x2.04mm pad0.18mm psemi package integrated circuit surface mount csp 64x2 04mm p0 4mm pdf qfn pad0 18mm pad mm pitch pins http | PSEMI | ",
+ "embedding_text": "ic.psemi | IC | 4 ic parts using PSEMI footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | psemi csp 64x2 04mm p0 4mm ic pdf qfn pad0 18mm pad mm pitch pins http | PSEMI | ",
  "class": "ic"
 }

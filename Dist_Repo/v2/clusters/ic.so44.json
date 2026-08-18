@@ -5,28 +5,20 @@
  "category_path": [
   "IC"
  ],
- "description": "Integrated circuit components in SO44 package footprints including SO44_L, SO44_M, and SO44_N variants.",
+ "description": "3 ic parts using SO44 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Verify target footprint compatibility with SO44_L, SO44_M, or SO44_N variants.",
-  "Note that parts are tier C quality with unknown mount types.",
-  "Confirm legacy distributor source fits project sourcing constraints."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SO44 land pattern is intended."
  ],
  "avoid_when": [
-  "The layout requires a package family other than SO44.",
-  "Planner-visible or high-tier verified parts are required.",
-  "Unknown mounting parameters cannot be accepted."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SO44."
  ],
  "keywords": [
-  "ic",
   "so44",
-  "so44_l",
-  "so44_m",
-  "so44_n",
-  "so44 footprint",
-  "package family so44",
-  "integrated circuit",
-  "dist-legacy",
-  "tier c",
+  "ic",
   "pad",
   "mm",
   "pitch",
@@ -53,7 +45,7 @@
   "tier_counts": {
    "C": 3
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
@@ -61,6 +53,6 @@
   "dist-legacy/SO44_M",
   "dist-legacy/SO44_N"
  ],
- "embedding_text": "ic.so44 | IC | Integrated circuit components in SO44 package footprints including SO44_L, SO44_M, and SO44_N variants. | ic so44 so44_l so44_m so44_n so44 footprint package family so44 integrated circuit dist-legacy tier c pad mm pitch pins | SO44 | ",
+ "embedding_text": "ic.so44 | IC | 3 ic parts using SO44 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | so44 ic pad mm pitch pins | SO44 | ",
  "class": "ic"
 }

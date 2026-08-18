@@ -5,44 +5,34 @@
  "category_path": [
   "Connector"
  ],
- "description": "USB connector cluster (129 parts, 41 planner-visible) spanning USB-C receptacle/plug, Micro-B, Mini-B, Type-A and Type-B footprints across SMD, through-hole, and unmarked mount styles.",
+ "description": "129 connector parts for USB using USB footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Prefer tier A parts (only 4 of 129) for a verified footprint match",
-  "Match the exact USB variant needed: USB-C receptacle/plug, Micro-B, Mini-B, Type-A, or Type-B",
-  "Confirm mount style (smd vs through_hole) against the target PCB",
-  "Cross-check the footprint name (e.g. GCT, Molex, Kinghelm, HRO series) against the physical part"
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a USB land pattern is intended."
  ],
  "avoid_when": [
-  "The exact USB connector variant or footprint is not yet decided",
-  "Part is tier C (88 of 129) with an unverified footprint pairing",
-  "Mount type (smd/through_hole/unknown) doesn't match the intended assembly",
-  "A non-USB connector package is required"
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than USB."
  ],
  "keywords": [
   "usb",
-  "usb-c",
-  "usb type-c",
-  "usb receptacle",
-  "usb plug",
-  "micro-b",
-  "mini-b",
-  "usb type-a",
-  "usb type-b",
   "connector",
-  "smd",
-  "through hole",
-  "gct",
-  "molex",
-  "kinghelm",
-  "hro",
-  "usb4085",
-  "usb4115",
   "receptacle",
   "micro",
   "horizontal",
   "type",
   "pad",
-  "mm"
+  "mm",
+  "pitch",
+  "pins",
+  "connectors",
+  "amphenol",
+  "package",
+  "molex",
+  "gct",
+  "pdf"
  ],
  "facts": {
   "package_family": "USB",
@@ -85,7 +75,7 @@
    "B": 37,
    "C": 88
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -260,6 +250,6 @@
   "dist-legacy/USB_Mini-B_Tensility_54-00023_Vertical_CircularHoles",
   "matthiasbock-altium-libraries/USB onboard plug/USB_onboard_plug"
  ],
- "embedding_text": "connector.usb.usb | Connector | USB connector cluster (129 parts, 41 planner-visible) spanning USB-C receptacle/plug, Micro-B, Mini-B, Type-A and Type-B footprints across SMD, through-hole, and unmarked mount styles. | usb usb-c usb type-c usb receptacle usb plug micro-b mini-b usb type-a usb type-b connector smd through hole gct molex kinghelm hro usb4085 usb4115 receptacle micro horizontal type pad mm | USB",
+ "embedding_text": "connector.usb.usb | Connector | 129 connector parts for USB using USB footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | usb connector receptacle micro horizontal type pad mm pitch pins connectors amphenol package molex gct pdf | USB",
  "class": "connector"
 }

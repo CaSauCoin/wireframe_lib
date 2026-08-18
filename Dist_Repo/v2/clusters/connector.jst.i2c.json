@@ -5,41 +5,33 @@
  "category_path": [
   "Connector"
  ],
- "description": "Cluster of 3 SMD JST 1x04 P1.0mm connectors (Qwiic-style) for I2C, all sourced from SparkFun-KiCad-Libraries and rated tier B with review_status generated.",
+ "description": "3 connector parts for I2C using JST footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Match footprint orientation: JST_1x04_P1.0mm_Vertical_SMD vs Horizontal_SMD",
-  "All 3 parts are tier B (scores 78-80); no tier A entries in this cluster",
-  "Confirm 1.0mm pitch and 4-pin count match the mating Qwiic/JST cable"
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a JST land pattern is intended."
  ],
  "avoid_when": [
-  "A tier A or fully reviewed (non-generated) connector entry is required",
-  "The design needs a through-hole mount instead of SMD",
-  "A different pitch, pin count, or non-JST connector family is needed"
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than JST."
  ],
  "keywords": [
   "connector",
   "jst",
+  "sparkfun",
   "i2c",
   "qwiic",
-  "smd",
-  "1x04",
-  "p1.0mm",
-  "vertical",
-  "horizontal",
-  "4-pin",
-  "sparkfun",
-  "tier b",
-  "generated",
-  "jst connector",
-  "i2c connector",
-  "qwiic connector",
-  "jst_1x04_p1.0mm",
   "p1",
   "0mm",
+  "smd",
+  "vertical",
   "pin",
   "1mm",
   "polarized",
   "for",
+  "1x04",
+  "horizontal",
   "conn"
  ],
  "facts": {
@@ -64,7 +56,7 @@
   "tier_counts": {
    "B": 3
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -97,6 +89,6 @@
   "SparkFun-KiCad-Libraries/SparkFun-Connector/Qwiic_Vertical",
   "SparkFun-KiCad-Libraries/SparkFun-Connector/Conn_01x04_JST_P1.0mm_Vertical_SMD"
  ],
- "embedding_text": "connector.jst.i2c | Connector | Cluster of 3 SMD JST 1x04 P1.0mm connectors (Qwiic-style) for I2C, all sourced from SparkFun-KiCad-Libraries and rated tier B with review_status generated. | connector jst i2c qwiic smd 1x04 p1.0mm vertical horizontal 4-pin sparkfun tier b generated jst connector i2c connector qwiic connector jst_1x04_p1.0mm p1 0mm pin 1mm polarized for conn | JST | I2C",
+ "embedding_text": "connector.jst.i2c | Connector | 3 connector parts for I2C using JST footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | connector jst sparkfun i2c qwiic p1 0mm smd vertical pin 1mm polarized for 1x04 horizontal conn | JST | I2C",
  "class": "connector"
 }

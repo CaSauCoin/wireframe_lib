@@ -5,28 +5,21 @@
  "category_path": [
   "IC"
  ],
- "description": "EDA component cluster containing one surface-mount IC part in the EP7 package family using the EP7_8_SMD footprint.",
+ "description": "1 ic parts using EP7 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when an SMD IC using the EP7 package family or EP7_8_SMD footprint is needed.",
-  "Verify the single Tier C generated part details against your schematic requirements.",
-  "Check source data from the chilaboard-altium-library prior to committing to layout."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a EP7 land pattern is intended."
  ],
  "avoid_when": [
-  "The PCB design requires a package layout other than EP7_8_SMD.",
-  "Through-hole mounting or non-SMD footprints are required.",
-  "Fully validated or higher-tier reviewed parts are strictly required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than EP7."
  ],
  "keywords": [
-  "ic",
   "ep7",
   "smd",
-  "ep7_8_smd",
-  "surface mount",
-  "package ep7",
-  "chilaboard-altium-library",
-  "tier c",
-  "generated",
-  "eda cluster",
+  "ic",
   "surface",
   "mount",
   "pad",
@@ -53,12 +46,12 @@
   "tier_counts": {
    "C": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
   "chilaboard-altium-library/EP7_8_SMD/EP7_8_SMD"
  ],
- "embedding_text": "ic.ep7 | IC | EDA component cluster containing one surface-mount IC part in the EP7 package family using the EP7_8_SMD footprint. | ic ep7 smd ep7_8_smd surface mount package ep7 chilaboard-altium-library tier c generated eda cluster surface mount pad mm pitch pins | EP7 | ",
+ "embedding_text": "ic.ep7 | IC | 1 ic parts using EP7 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | ep7 smd ic surface mount pad mm pitch pins | EP7 | ",
  "class": "ic"
 }

@@ -5,28 +5,20 @@
  "category_path": [
   "IC"
  ],
- "description": "IC cluster containing 4 parts associated with KF5 package family footprints including KF5-10, KF5-5, KF5-5.08T, and KF5-7.62.",
+ "description": "4 ic parts using KF5 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when a KF5 footprint such as KF5-10, KF5-5, KF5-5.08T, or KF5-7.62 is required.",
-  "Verify part details and pinout independently as all entries are tier C quality.",
-  "Confirm mounting specifications prior to PCB placement."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a KF5 land pattern is intended."
  ],
  "avoid_when": [
-  "The layout requires a package family other than KF5.",
-  "Planner-visible or high-tier quality parts are required.",
-  "Electrical ratings or mounting details are not fully specified."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than KF5."
  ],
  "keywords": [
   "kf5",
   "ic",
-  "kf5-10",
-  "kf5-5",
-  "kf5-5.08t",
-  "kf5-7.62",
-  "integrated circuit",
-  "kf5 footprint",
-  "tier c",
-  "dist-legacy",
   "08t",
   "pad",
   "mm",
@@ -55,7 +47,7 @@
   "tier_counts": {
    "C": 4
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
@@ -64,6 +56,6 @@
   "dist-legacy/KF5-5.08T",
   "dist-legacy/KF5-7.62"
  ],
- "embedding_text": "ic.kf5 | IC | IC cluster containing 4 parts associated with KF5 package family footprints including KF5-10, KF5-5, KF5-5.08T, and KF5-7.62. | kf5 ic kf5-10 kf5-5 kf5-5.08t kf5-7.62 integrated circuit kf5 footprint tier c dist-legacy 08t pad mm pitch pins | KF5 | ",
+ "embedding_text": "ic.kf5 | IC | 4 ic parts using KF5 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | kf5 ic 08t pad mm pitch pins | KF5 | ",
  "class": "ic"
 }

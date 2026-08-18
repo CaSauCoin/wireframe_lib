@@ -6,35 +6,27 @@
   "IC",
   "Sensor"
  ],
- "description": "Through-hole IC sensor cluster utilizing LEM package footprints including LEM_LV25-P for voltage sensing applications.",
+ "description": "1 ic sensor parts using LEM footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Use when designing with through-hole LEM sensor modules such as the LV25-P.",
-  "Select when a LEM_LV25-P footprint land pattern is required.",
-  "Check footprint pin mapping against target schematic symbols."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a LEM land pattern is intended."
  ],
  "avoid_when": [
-  "Surface-mount (SMD) mounting is required.",
-  "The PCB layout demands a non-LEM package footprint.",
-  "Applications require component classes other than IC sensors."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than LEM."
  ],
  "keywords": [
-  "ic",
-  "sensor",
-  "ic.sensor",
-  "lem",
-  "lem_lv25-p",
-  "lv25-p",
-  "voltage sensor",
-  "sensor_voltage",
-  "through_hole",
-  "through hole",
-  "kicad-symbols",
   "voltage",
+  "lem",
   "transducer",
   "lv25",
+  "sensor",
   "lv",
   "hall",
-  "effect"
+  "effect",
+  "ic"
  ],
  "facts": {
   "package_family": "LEM",
@@ -55,7 +47,7 @@
   "tier_counts": {
    "A": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -70,6 +62,6 @@
  "part_ids": [
   "kicad-symbols/Sensor_Voltage/LV25-P"
  ],
- "embedding_text": "ic-sensor.lem | IC Sensor | Through-hole IC sensor cluster utilizing LEM package footprints including LEM_LV25-P for voltage sensing applications. | ic sensor ic.sensor lem lem_lv25-p lv25-p voltage sensor sensor_voltage through_hole through hole kicad-symbols voltage transducer lv25 lv hall effect | LEM | ",
+ "embedding_text": "ic-sensor.lem | IC Sensor | 1 ic sensor parts using LEM footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | voltage lem transducer lv25 sensor lv hall effect ic | LEM | ",
  "class": "ic.sensor"
 }

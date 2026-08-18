@@ -6,29 +6,23 @@
   "Discrete",
   "Transistor"
  ],
- "description": "Discrete transistor cluster containing 2 parts with CON and CON_3P footprints from dist-legacy.",
+ "description": "2 discrete transistor parts using CON footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when requiring a discrete transistor with a CON or CON_3P footprint.",
-  "Prefer the tier B representative part CON_MIC2 over tier C entries.",
-  "Verify footprint suitability for CON or CON_3P land patterns."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a CON land pattern is intended."
  ],
  "avoid_when": [
-  "Do not use if the design requires package footprints other than CON or CON_3P.",
-  "Avoid if higher quality tier parts (such as Tier A) are required.",
-  "Avoid when explicit mounting type information is required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than CON."
  ],
  "keywords": [
-  "discrete transistor",
-  "discrete",
-  "transistor",
   "con",
-  "con_3p",
-  "mic2",
-  "con_mic2",
-  "dist-legacy",
-  "discrete.transistor",
-  "con footprint",
+  "transistor",
   "3p",
+  "discrete",
+  "mic2",
   "pin",
   "bipolar",
   "three",
@@ -62,7 +56,7 @@
    "B": 1,
    "C": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -78,6 +72,6 @@
   "dist-legacy/CON MIC2",
   "dist-legacy/CON_3P"
  ],
- "embedding_text": "discrete-transistor.con | Discrete Transistor | Discrete transistor cluster containing 2 parts with CON and CON_3P footprints from dist-legacy. | discrete transistor discrete transistor con con_3p mic2 con_mic2 dist-legacy discrete.transistor con footprint 3p pin bipolar three junction with base collector and emitter terminals bjt | CON | ",
+ "embedding_text": "discrete-transistor.con | Discrete Transistor | 2 discrete transistor parts using CON footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | con transistor 3p discrete mic2 pin bipolar three junction with base collector and emitter terminals bjt | CON | ",
  "class": "discrete.transistor"
 }

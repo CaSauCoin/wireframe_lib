@@ -5,31 +5,22 @@
  "category_path": [
   "IC"
  ],
- "description": "Integrated circuit cluster of 2 parts using FLEXIWATT and FLEXIWATT_25V footprints with through-hole mounting, represented by TDA7850.",
+ "description": "2 ic parts using FLEXIWATT footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when requiring integrated circuits in FLEXIWATT or FLEXIWATT_25V package footprints.",
-  "Verify footprint details and quality tier (tier B or C) for your target component.",
-  "Check whether through-hole mounting matches your PCB assembly requirements."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a FLEXIWATT land pattern is intended."
  ],
  "avoid_when": [
-  "Surface-mount assembly is required for the target PCB layout.",
-  "The board design requires package footprints other than FLEXIWATT.",
-  "Tier A quality reviewed parts are strictly required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than FLEXIWATT."
  ],
  "keywords": [
   "flexiwatt",
-  "flexiwatt_25v",
-  "ic",
-  "integrated circuit",
-  "through_hole",
-  "tda7850",
-  "chilaboard-altium-library",
-  "dist-legacy",
-  "tier b",
-  "tier c",
-  "footprint",
-  "package",
   "amplifier",
+  "tda7850",
+  "ic",
   "audio",
   "power",
   "four",
@@ -40,7 +31,8 @@
   "and",
   "high",
   "side",
-  "driver"
+  "driver",
+  "controls"
  ],
  "facts": {
   "package_family": "FLEXIWATT",
@@ -65,7 +57,7 @@
    "B": 1,
    "C": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -81,6 +73,6 @@
   "chilaboard-altium-library/TDA7850/TDA7850",
   "dist-legacy/FLEXIWATT"
  ],
- "embedding_text": "ic.flexiwatt | IC | Integrated circuit cluster of 2 parts using FLEXIWATT and FLEXIWATT_25V footprints with through-hole mounting, represented by TDA7850. | flexiwatt flexiwatt_25v ic integrated circuit through_hole tda7850 chilaboard-altium-library dist-legacy tier b tier c footprint package amplifier audio power four channel with mute standby and high side driver | FLEXIWATT | ",
+ "embedding_text": "ic.flexiwatt | IC | 2 ic parts using FLEXIWATT footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | flexiwatt amplifier tda7850 ic audio power four channel with mute standby and high side driver controls | FLEXIWATT | ",
  "class": "ic"
 }

@@ -5,43 +5,34 @@
  "category_path": [
   "Connector"
  ],
- "description": "Connector cluster of 2 through-hole FanPinHeader parts at 2.54mm pitch, covering 1x03 and 1x04 vertical footprints; all entries are tier C from a single legacy source and unreviewed.",
+ "description": "2 connector parts using FanPinHeader footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Match the exact footprint: 1x03 or 1x04, P2.54mm vertical",
-  "Confirm pin count needed (3 or 4 positions) before selecting",
-  "Verify pin-to-pad mapping since all entries are tier C and generated, not reviewed"
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a FanPinHeader land pattern is intended."
  ],
  "avoid_when": [
-  "A footprint other than 1x03 or 1x04 P2.54mm vertical FanPinHeader is required",
-  "Surface-mount or non-vertical orientation is needed",
-  "A verified, higher-trust (non tier C) or reviewed part is required",
-  "Electrical ratings or pinout details are needed but not stated by the part"
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than FanPinHeader."
  ],
  "keywords": [
   "fanpinheader",
-  "pin header",
-  "connector",
-  "through hole",
-  "vertical",
-  "2.54mm pitch",
-  "p2.54mm",
-  "1x03",
-  "1x04",
-  "3 pin",
-  "4 pin",
-  "fan header",
-  "cpu fan connector",
-  "single row header",
-  "tier c",
-  "generated",
   "p2",
   "54mm",
+  "vertical",
   "pin",
+  "1x03",
+  "1x04",
+  "connector",
   "through",
   "hole",
   "cpu",
   "fan",
-  "header"
+  "header",
+  "pad",
+  "mm",
+  "pitch"
  ],
  "facts": {
   "package_family": "FanPinHeader",
@@ -63,13 +54,13 @@
   "tier_counts": {
    "C": 2
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
   "dist-legacy/FanPinHeader_1x03_P2.54mm_Vertical",
   "dist-legacy/FanPinHeader_1x04_P2.54mm_Vertical"
  ],
- "embedding_text": "connector.fanpinheader | Connector | Connector cluster of 2 through-hole FanPinHeader parts at 2.54mm pitch, covering 1x03 and 1x04 vertical footprints; all entries are tier C from a single legacy source and unreviewed. | fanpinheader pin header connector through hole vertical 2.54mm pitch p2.54mm 1x03 1x04 3 pin 4 pin fan header cpu fan connector single row header tier c generated p2 54mm pin through hole cpu fan header | FanPinHeader | ",
+ "embedding_text": "connector.fanpinheader | Connector | 2 connector parts using FanPinHeader footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | fanpinheader p2 54mm vertical pin 1x03 1x04 connector through hole cpu fan header pad mm pitch | FanPinHeader | ",
  "class": "connector"
 }

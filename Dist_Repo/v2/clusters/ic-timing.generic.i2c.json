@@ -6,33 +6,29 @@
   "IC",
   "Timing"
  ],
- "description": "Timing IC cluster providing I2C interface devices where package and footprint assignments are determined separately.",
+ "description": "1 ic timing parts for I2C with package chosen later. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Assign and verify a specific package and footprint before PCB layout.",
-  "Confirm pinout and electrical ratings against the specific part symbol.",
-  "Evaluate available tier G entries from KiCad symbol sources."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Select a footprint/package explicitly before placement."
  ],
  "avoid_when": [
-  "A pre-assigned footprint or package is required upfront.",
-  "Timing interfaces other than I2C (such as SPI or standalone) are needed."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review."
  ],
  "keywords": [
-  "ic",
-  "timing",
-  "i2c",
   "rtc",
-  "timer",
-  "m41t62q",
-  "timing ic",
-  "kicad",
-  "timer rtc",
-  "package chosen later",
+  "i2c",
   "alarm",
   "interrupt",
+  "m41t62q",
+  "timer",
   "low",
   "power",
   "with",
   "qfn",
+  "ic",
+  "timing",
   "package",
   "chosen",
   "later"
@@ -54,7 +50,7 @@
   "tier_counts": {
    "G": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -69,6 +65,6 @@
  "part_ids": [
   "kicad-symbols/Timer_RTC/M41T62Q"
  ],
- "embedding_text": "ic-timing.generic.i2c | IC Timing | Timing IC cluster providing I2C interface devices where package and footprint assignments are determined separately. | ic timing i2c rtc timer m41t62q timing ic kicad timer rtc package chosen later alarm interrupt low power with qfn package chosen later | package chosen later | I2C",
+ "embedding_text": "ic-timing.generic.i2c | IC Timing | 1 ic timing parts for I2C with package chosen later. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | rtc i2c alarm interrupt m41t62q timer low power with qfn ic timing package chosen later | package chosen later | I2C",
  "class": "ic.timing"
 }

@@ -5,42 +5,34 @@
  "category_path": [
   "IC"
  ],
- "description": "Integrated circuit cluster for 3.3V boost applications containing 2 SMD parts in SOIC-8 (3.9x4.9mm, 1.27mm pitch) footprints.",
+ "description": "2 ic parts for 3.3V, boost using SOIC footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Choose when requiring a 3.3V boost IC in an SMD SOIC package.",
-  "Verify footprint compatibility with SOIC-8 3.9x4.9mm and 1.27mm pitch.",
-  "Select between available KiCad symbols RE46C317 and RE46C318."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SOIC land pattern is intended."
  ],
  "avoid_when": [
-  "The application does not use a 3.3V boost topology.",
-  "The PCB layout requires a package family other than SOIC.",
-  "Through-hole mounting is required instead of SMD."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SOIC."
  ],
  "keywords": [
-  "ic",
   "soic",
-  "3.3v",
-  "boost",
-  "smd",
-  "soic-8",
-  "re46c317",
-  "re46c318",
-  "kicad",
-  "3.9x4.9mm",
-  "p1.27mm",
-  "audio",
-  "boost ic",
-  "integrated circuit",
   "horn",
+  "boost",
   "3v",
   "driver",
+  "audio",
   "piezoelectric",
   "with",
   "converter",
   "supply",
   "9x4",
   "9mm",
-  "p1"
+  "p1",
+  "27mm",
+  "so",
+  "ic"
  ],
  "facts": {
   "package_family": "SOIC",
@@ -64,7 +56,7 @@
   "tier_counts": {
    "A": 2
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -88,6 +80,6 @@
   "kicad-symbols/Audio/RE46C317",
   "kicad-symbols/Audio/RE46C318"
  ],
- "embedding_text": "ic.soic.3v3.boost | IC | Integrated circuit cluster for 3.3V boost applications containing 2 SMD parts in SOIC-8 (3.9x4.9mm, 1.27mm pitch) footprints. | ic soic 3.3v boost smd soic-8 re46c317 re46c318 kicad 3.9x4.9mm p1.27mm audio boost ic integrated circuit horn 3v driver piezoelectric with converter supply 9x4 9mm p1 | SOIC | 3.3V boost",
+ "embedding_text": "ic.soic.3v3.boost | IC | 2 ic parts for 3.3V, boost using SOIC footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | soic horn boost 3v driver audio piezoelectric with converter supply 9x4 9mm p1 27mm so ic | SOIC | 3.3V boost",
  "class": "ic"
 }

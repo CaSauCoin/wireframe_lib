@@ -7,42 +7,34 @@
   "Driver",
   "Display"
  ],
- "description": "Display driver IC cluster consisting of 2 tier-A LED driver parts in TO package footprints, supporting SMD and through-hole mounting.",
+ "description": "2 ic driver display parts using TO footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select based on whether an SMD (TO-252-2) or through-hole (TO-220-3_Vertical) footprint is needed.",
-  "Choose between part CL220K4-G and CL220N5-G depending on the required package layout.",
-  "Verify that a TO package family footprint fits the board requirements."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a TO land pattern is intended."
  ],
  "avoid_when": [
-  "The design requires packages outside the TO package family.",
-  "Mounting options other than surface mount (SMD) or through-hole are required.",
-  "Footprints other than TO-252-2 or TO-220-3_Vertical are needed."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than TO."
  ],
  "keywords": [
-  "ic",
-  "driver",
-  "display",
   "to",
-  "to-252-2",
-  "to-220-3_vertical",
-  "smd",
-  "through_hole",
-  "cl220k4-g",
-  "cl220n5-g",
-  "led driver",
-  "ic driver display",
-  "kicad-symbols",
-  "tier a",
+  "driver",
   "led",
+  "ic",
   "constant",
   "current",
   "temperature",
   "compensated",
   "dpak",
+  "display",
   "vertical",
   "cl220k4",
   "pak",
-  "sot"
+  "sot",
+  "cl220n5",
+  "rm"
  ],
  "facts": {
   "package_family": "TO",
@@ -65,7 +57,7 @@
   "tier_counts": {
    "A": 2
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -89,6 +81,6 @@
   "kicad-symbols/Driver_LED/CL220K4-G",
   "kicad-symbols/Driver_LED/CL220N5-G"
  ],
- "embedding_text": "ic-driver-display.to | IC Driver Display | Display driver IC cluster consisting of 2 tier-A LED driver parts in TO package footprints, supporting SMD and through-hole mounting. | ic driver display to to-252-2 to-220-3_vertical smd through_hole cl220k4-g cl220n5-g led driver ic driver display kicad-symbols tier a led constant current temperature compensated dpak vertical cl220k4 pak sot | TO | ",
+ "embedding_text": "ic-driver-display.to | IC Driver Display | 2 ic driver display parts using TO footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | to driver led ic constant current temperature compensated dpak display vertical cl220k4 pak sot cl220n5 rm | TO | ",
  "class": "ic.driver.display"
 }

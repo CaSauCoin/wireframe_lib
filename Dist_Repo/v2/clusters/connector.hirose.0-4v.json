@@ -5,35 +5,23 @@
  "category_path": [
   "Connector"
  ],
- "description": "Cluster of 2 HIROSE 0.4V connector parts (tier C, generated review status) using HIROSE and DF40C-40DP-0.4V-51 footprints, mounted SMD or unspecified.",
+ "description": "2 connector parts for 0.4V using HIROSE footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Match the exact footprint needed: generic HIROSE vs. DF40C-40DP-0.4V-51",
-  "Confirm mount type before layout — one source lists SMD, the other unknown",
-  "Cross-check part data manually since review_status is 'generated' and tier is C",
-  "Use only where a HIROSE 0.4V land pattern is specifically intended"
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a HIROSE land pattern is intended."
  ],
  "avoid_when": [
-  "The exact footprint (HIROSE vs. DF40C-40DP-0.4V-51) cannot be confirmed",
-  "Mount type must be certain and cannot be left as unspecified",
-  "A verified, higher-tier or reviewed part is required instead of a generated tier-C entry",
-  "A connector footprint outside the HIROSE 0.4V family is needed"
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than HIROSE."
  ],
  "keywords": [
   "hirose",
-  "0.4v",
-  "connector",
-  "df40c",
-  "df40c-40dp-0.4v-51",
-  "40dp",
-  "40dp-0.4v-51",
-  "smd",
-  "surface mount",
-  "hirose connector",
-  "0.4v connector",
-  "board connector",
-  "tier c",
-  "generated",
   "4v",
+  "df40c",
+  "40dp",
+  "connector",
   "pad",
   "mm",
   "pitch",
@@ -65,13 +53,13 @@
   "tier_counts": {
    "C": 2
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
   "dist-legacy/HIROSE DF40C-40DP-0.4V-51",
   "celestial-altium-library/HIROSE DF40C-40DP-0.4V-51/HIROSE_DF40C-40DP-0.4V-51"
  ],
- "embedding_text": "connector.hirose.0-4v | Connector | Cluster of 2 HIROSE 0.4V connector parts (tier C, generated review status) using HIROSE and DF40C-40DP-0.4V-51 footprints, mounted SMD or unspecified. | hirose 0.4v connector df40c df40c-40dp-0.4v-51 40dp 40dp-0.4v-51 smd surface mount hirose connector 0.4v connector board connector tier c generated 4v pad mm pitch pins surface mount | HIROSE | 0.4V",
+ "embedding_text": "connector.hirose.0-4v | Connector | 2 connector parts for 0.4V using HIROSE footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | hirose 4v df40c 40dp connector pad mm pitch pins surface mount | HIROSE | 0.4V",
  "class": "connector"
 }

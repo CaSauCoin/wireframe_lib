@@ -5,28 +5,21 @@
  "category_path": [
   "IC"
  ],
- "description": "A cluster of 3 IC parts in quality tier C utilizing TPS5430, TPS5430-1, TPS5430-2, and TPS5430-TPS5431 footprints.",
+ "description": "3 ic parts using TPS5430 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Match requirements against footprints TPS5430-1, TPS5430-2, or TPS5430-TPS5431.",
-  "Evaluate part specifications considering all entries are currently quality tier C.",
-  "Verify mounting configuration directly as mount type is specified as unknown."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a TPS5430 land pattern is intended."
  ],
  "avoid_when": [
-  "The PCB layout requires a package footprint other than TPS5430 series footprints.",
-  "Higher quality tier parts than tier C are required.",
-  "Planner-visible component availability is required, as planner visible count is 0."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than TPS5430."
  ],
  "keywords": [
-  "ic",
   "tps5430",
+  "ic",
   "tps5431",
-  "tps5430-1",
-  "tps5430-2",
-  "tps5430-tps5431",
-  "tier c",
-  "dist-legacy",
-  "tps5430 footprint",
-  "ic cluster",
   "pad",
   "mm",
   "pitch",
@@ -53,7 +46,7 @@
   "tier_counts": {
    "C": 3
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
@@ -61,6 +54,6 @@
   "dist-legacy/TPS5430-1",
   "dist-legacy/TPS5430-TPS5431"
  ],
- "embedding_text": "ic.tps5430 | IC | A cluster of 3 IC parts in quality tier C utilizing TPS5430, TPS5430-1, TPS5430-2, and TPS5430-TPS5431 footprints. | ic tps5430 tps5431 tps5430-1 tps5430-2 tps5430-tps5431 tier c dist-legacy tps5430 footprint ic cluster pad mm pitch pins | TPS5430 | ",
+ "embedding_text": "ic.tps5430 | IC | 3 ic parts using TPS5430 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | tps5430 ic tps5431 pad mm pitch pins | TPS5430 | ",
  "class": "ic"
 }

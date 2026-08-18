@@ -5,31 +5,22 @@
  "category_path": [
   "IC"
  ],
- "description": "SMD boost converter IC cluster in WSON package with 45V ratings and WSON-12 footprint.",
+ "description": "1 ic parts for boost, 45V using WSON footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Need a surface-mount 45V boost converter IC.",
-  "Targeting WSON-12 footprint (WSON-12_L3.0-W2.0-P0.5-BL-EP2.7).",
-  "Sourcing from JLCPCB KiCad library."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a WSON land pattern is intended."
  ],
  "avoid_when": [
-  "Design requires non-WSON package or through-hole mounting.",
-  "Application requires buck or topologies other than boost.",
-  "Voltage or current specifications fall outside 4-45V input or 45V output limits."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than WSON."
  ],
  "keywords": [
-  "ic",
+  "dc",
+  "wson",
   "boost",
   "45v",
-  "wson",
-  "wson-12",
-  "smd",
-  "dc-dc",
-  "4-45vin",
-  "1.5a",
-  "45v-vout",
-  "jlcpcb",
-  "boost converter",
-  "dc",
   "l3",
   "w2",
   "p0",
@@ -40,7 +31,8 @@
   "5a",
   "vout",
   "ep",
-  "2x3"
+  "2x3",
+  "converters"
  ],
  "facts": {
   "package_family": "WSON",
@@ -64,7 +56,7 @@
   "tier_counts": {
    "B": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -79,6 +71,6 @@
  "part_ids": [
   "JLCPCB-Kicad-Library/2860796/DC-DC, Boost, 4-45VIN, 1.5A, 45V-VOUT"
  ],
- "embedding_text": "ic.wson.boost.45v | IC | SMD boost converter IC cluster in WSON package with 45V ratings and WSON-12 footprint. | ic boost 45v wson wson-12 smd dc-dc 4-45vin 1.5a 45v-vout jlcpcb boost converter dc l3 w2 p0 bl ep2 c2860796 45vin 5a vout ep 2x3 | WSON | boost 45V",
+ "embedding_text": "ic.wson.boost.45v | IC | 1 ic parts for boost, 45V using WSON footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | dc wson boost 45v l3 w2 p0 bl ep2 c2860796 45vin 5a vout ep 2x3 converters | WSON | boost 45V",
  "class": "ic"
 }

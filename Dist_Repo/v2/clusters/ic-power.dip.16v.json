@@ -6,32 +6,22 @@
   "IC",
   "Power"
  ],
- "description": "Power IC cluster featuring 16V ratings and through-hole DIP packaging with DIP-8_W7.62mm footprints.",
+ "description": "2 ic power parts for 16V using DIP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when requiring 16V power ICs in through-hole DIP packages.",
-  "Verify compatibility with DIP-8_W7.62mm footprint specifications.",
-  "Choose from tier A regulator controller parts such as UC3842_DIP8 or UC3844_DIP8."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a DIP land pattern is intended."
  ],
  "avoid_when": [
-  "Surface-mount packaging is required instead of through-hole mounting.",
-  "The board layout requires footprints other than DIP-8_W7.62mm.",
-  "Application requirements differ from 16V power IC specifications."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than DIP."
  ],
  "keywords": [
-  "ic",
-  "power",
-  "16v",
   "dip",
-  "through_hole",
-  "dip-8",
-  "dip-8_w7.62mm",
-  "regulator_controller",
-  "uc3842",
-  "uc3844",
-  "uc3842_dip8",
-  "uc3844_dip8",
   "controller",
   "pwm",
+  "16v",
   "pdip",
   "62mm",
   "dip8",
@@ -41,7 +31,9 @@
   "controllers",
   "duty",
   "cycle",
-  "10v"
+  "10v",
+  "uvlo",
+  "w7"
  ],
  "facts": {
   "package_family": "DIP",
@@ -64,7 +56,7 @@
   "tier_counts": {
    "A": 2
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -88,6 +80,6 @@
   "kicad-symbols/Regulator_Controller/UC3842_DIP8",
   "kicad-symbols/Regulator_Controller/UC3844_DIP8"
  ],
- "embedding_text": "ic-power.dip.16v | IC Power | Power IC cluster featuring 16V ratings and through-hole DIP packaging with DIP-8_W7.62mm footprints. | ic power 16v dip through_hole dip-8 dip-8_w7.62mm regulator_controller uc3842 uc3844 uc3842_dip8 uc3844_dip8 controller pwm pdip 62mm dip8 regulator current mode controllers duty cycle 10v | DIP | 16V",
+ "embedding_text": "ic-power.dip.16v | IC Power | 2 ic power parts for 16V using DIP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | dip controller pwm 16v pdip 62mm dip8 regulator current mode controllers duty cycle 10v uvlo w7 | DIP | 16V",
  "class": "ic.power"
 }

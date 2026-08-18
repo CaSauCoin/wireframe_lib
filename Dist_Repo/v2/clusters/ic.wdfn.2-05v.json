@@ -5,30 +5,19 @@
  "category_path": [
   "IC"
  ],
- "description": "Surface-mount IC cluster for 2.05V applications using WDFN footprint WDFN-8-1EP_2x2mm_P0.5mm_EP0.8x1.2mm.",
+ "description": "1 ic parts for 2.05V using WDFN footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when requiring a 2.05V SMD IC in a WDFN package.",
-  "Match the target PCB layout with footprint WDFN-8-1EP_2x2mm_P0.5mm_EP0.8x1.2mm.",
-  "Confirm tier B quality status and symbol source from KiCad symbols."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a WDFN land pattern is intended."
  ],
  "avoid_when": [
-  "The design requires an operating voltage other than 2.05V.",
-  "A non-SMD or non-WDFN package family is required.",
-  "Component selection requires a tier A quality rating."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than WDFN."
  ],
  "keywords": [
-  "ic",
   "wdfn",
-  "2.05v",
-  "smd",
-  "wdfn-8-1ep",
-  "mcp1501-20xrw",
-  "2x2mm",
-  "p0.5mm",
-  "ep0.8x1.2mm",
-  "kicad-symbols",
-  "surface mount",
-  "integrated circuit",
   "reference",
   "voltage",
   "048v",
@@ -37,10 +26,13 @@
   "20xrw",
   "20ma",
   "1ep",
+  "2x2mm",
   "p0",
   "5mm",
   "ep0",
-  "8x1"
+  "8x1",
+  "2mm",
+  "nolead"
  ],
  "facts": {
   "package_family": "WDFN",
@@ -63,7 +55,7 @@
   "tier_counts": {
    "B": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -78,6 +70,6 @@
  "part_ids": [
   "kicad-symbols/Reference_Voltage/MCP1501-20xRW"
  ],
- "embedding_text": "ic.wdfn.2-05v | IC | Surface-mount IC cluster for 2.05V applications using WDFN footprint WDFN-8-1EP_2x2mm_P0.5mm_EP0.8x1.2mm. | ic wdfn 2.05v smd wdfn-8-1ep mcp1501-20xrw 2x2mm p0.5mm ep0.8x1.2mm kicad-symbols surface mount integrated circuit reference voltage 048v precision mcp1501 20xrw 20ma 1ep p0 5mm ep0 8x1 | WDFN | 2.05V",
+ "embedding_text": "ic.wdfn.2-05v | IC | 1 ic parts for 2.05V using WDFN footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | wdfn reference voltage 048v precision mcp1501 20xrw 20ma 1ep 2x2mm p0 5mm ep0 8x1 2mm nolead | WDFN | 2.05V",
  "class": "ic"
 }

@@ -6,35 +6,32 @@
   "IC",
   "Timing"
  ],
- "description": "Cluster of surface-mount I2C timing oscillator ICs using the Oscillator_SMD_SI570_SI571_Standard footprint.",
+ "description": "2 ic timing parts for I2C using Oscillator footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Verify compatibility with the Oscillator_SMD_SI570_SI571_Standard footprint.",
-  "Select between Si570 and Si571 part variants based on design requirements.",
-  "Confirm pin-to-pad mappings and electrical ratings for the selected part."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a Oscillator land pattern is intended."
  ],
  "avoid_when": [
-  "The board layout requires a footprint other than Oscillator_SMD_SI570_SI571_Standard.",
-  "Through-hole mounting is required instead of surface mount.",
-  "An interface or timing component type other than I2C oscillator is needed."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than Oscillator."
  ],
  "keywords": [
-  "ic",
-  "timing",
   "oscillator",
   "i2c",
-  "smd",
+  "programmable",
   "si570",
   "si571",
-  "oscillator_smd_si570_si571_standard",
-  "timing ic",
-  "surface mount",
-  "programmable",
   "mhz",
   "to",
   "ghz",
   "xo",
   "vcxo",
-  "standard"
+  "standard",
+  "smd",
+  "ic",
+  "timing"
  ],
  "facts": {
   "package_family": "Oscillator",
@@ -57,7 +54,7 @@
   "tier_counts": {
    "B": 2
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -81,6 +78,6 @@
   "kicad-symbols/Oscillator/Si570",
   "kicad-symbols/Oscillator/Si571"
  ],
- "embedding_text": "ic-timing.oscillator.i2c | IC Timing | Cluster of surface-mount I2C timing oscillator ICs using the Oscillator_SMD_SI570_SI571_Standard footprint. | ic timing oscillator i2c smd si570 si571 oscillator_smd_si570_si571_standard timing ic surface mount programmable mhz to ghz xo vcxo standard | Oscillator | I2C",
+ "embedding_text": "ic-timing.oscillator.i2c | IC Timing | 2 ic timing parts for I2C using Oscillator footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | oscillator i2c programmable si570 si571 mhz to ghz xo vcxo standard smd ic timing | Oscillator | I2C",
  "class": "ic.timing"
 }

@@ -5,42 +5,34 @@
  "category_path": [
   "Connector"
  ],
- "description": "Cluster of 28 USB-C connector parts spanning SMD and through-hole USBC_* footprints from a single source library; all entries are tier C with no planner-visible parts, so selection must rely on exact footprint match.",
+ "description": "28 connector parts using USBC footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Match the exact footprint (e.g. USBC_MID, USBC_PCB, USBC_HYB_UJ31CH31) to your PCB land pattern.",
-  "Confirm whether the part is SMD or through-hole before choosing.",
-  "Cross-check pin mapping and dimensions for the specific footprint since all parts are tier C."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a USBC land pattern is intended."
  ],
  "avoid_when": [
-  "You need confirmed electrical ratings, pinout, or datasheet-backed specs — none are provided in this cluster.",
-  "You require a planner-visible or higher-tier verified part; all 28 entries here are tier C.",
-  "Your target footprint is not one of the listed USBC_* variants."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than USBC."
  ],
  "keywords": [
   "usbc",
-  "usb-c",
-  "usb type-c",
-  "connector",
   "smd",
-  "through hole",
-  "usbc_mid",
-  "usbc_pcb",
+  "connector",
   "hyb",
-  "uj31ch31",
-  "uj31ch312smt",
-  "uj31ch3msmt67",
-  "uj31ch3smt",
-  "uj31ch4msmt",
-  "uj31chg1smt",
-  "kusb67xsmtthcs4",
-  "kusbxsmtthcs1",
-  "footprint",
   "pad",
   "mm",
   "pitch",
   "pins",
   "through",
-  "hole"
+  "hole",
+  "mid",
+  "pcb",
+  "kusb67xsmtthcs4",
+  "kusbxsmtthcs1",
+  "uj31ch31",
+  "uj31ch312smt"
  ],
  "facts": {
   "package_family": "USBC",
@@ -73,7 +65,7 @@
   "tier_counts": {
    "C": 28
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
@@ -106,6 +98,6 @@
   "chilaboard-altium-library/USBC_SMD_KUSBXSMTCS2/USBC_SMD_KUSBXSMTCS2",
   "chilaboard-altium-library/USBC_SMD_KUSBXSMTCS4/USBC_SMD_KUSBXSMTCS4"
  ],
- "embedding_text": "connector.usbc | Connector | Cluster of 28 USB-C connector parts spanning SMD and through-hole USBC_* footprints from a single source library; all entries are tier C with no planner-visible parts, so selection must rely on exact footprint match. | usbc usb-c usb type-c connector smd through hole usbc_mid usbc_pcb hyb uj31ch31 uj31ch312smt uj31ch3msmt67 uj31ch3smt uj31ch4msmt uj31chg1smt kusb67xsmtthcs4 kusbxsmtthcs1 footprint pad mm pitch pins through hole | USBC | ",
+ "embedding_text": "connector.usbc | Connector | 28 connector parts using USBC footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | usbc smd connector hyb pad mm pitch pins through hole mid pcb kusb67xsmtthcs4 kusbxsmtthcs1 uj31ch31 uj31ch312smt | USBC | ",
  "class": "connector"
 }

@@ -6,28 +6,21 @@
   "Discrete",
   "Transistor"
  ],
- "description": "Discrete transistor cluster containing 1 tier C part using the KK003 footprint and package family.",
+ "description": "1 discrete transistor parts using KK003 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Use when requiring a discrete transistor in a KK003 footprint.",
-  "Verify package dimensions, pinout, and electrical specifications before placement.",
-  "Evaluate suitability considering tier C quality and generated review status."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a KK003 land pattern is intended."
  ],
  "avoid_when": [
-  "The board design requires a package footprint other than KK003.",
-  "A known mounting style (SMD or through-hole) is required.",
-  "High-tier verified parts with complete datasheets are required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than KK003."
  ],
  "keywords": [
   "kk003",
   "discrete",
   "transistor",
-  "discrete transistor",
-  "kk003 footprint",
-  "kk003 package",
-  "discrete.transistor",
-  "package family",
-  "tier c",
-  "dist-legacy",
   "pad",
   "mm",
   "pitch",
@@ -52,12 +45,12 @@
   "tier_counts": {
    "C": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
   "dist-legacy/KK003"
  ],
- "embedding_text": "discrete-transistor.kk003 | Discrete Transistor | Discrete transistor cluster containing 1 tier C part using the KK003 footprint and package family. | kk003 discrete transistor discrete transistor kk003 footprint kk003 package discrete.transistor package family tier c dist-legacy pad mm pitch pins | KK003 | ",
+ "embedding_text": "discrete-transistor.kk003 | Discrete Transistor | 1 discrete transistor parts using KK003 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | kk003 discrete transistor pad mm pitch pins | KK003 | ",
  "class": "discrete.transistor"
 }

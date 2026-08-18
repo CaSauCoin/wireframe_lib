@@ -6,40 +6,34 @@
   "IC",
   "Memory"
  ],
- "description": "Surface-mount memory IC cluster featuring I2C bus support and 3.6V operation in a SOIC-8 footprint.",
+ "description": "1 ic memory parts for I2C, 3.6V using SOIC footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Requires a 3.6V I2C memory IC.",
-  "Board design utilizes an SMD SOIC package.",
-  "Matching SOIC-8_3.9x4.9mm_P1.27mm footprint is required."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SOIC land pattern is intended."
  ],
  "avoid_when": [
-  "The application requires a supply voltage other than 3.6V.",
-  "The interface is not I2C or mounting is through-hole.",
-  "A footprint package family other than SOIC is needed."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SOIC."
  ],
  "keywords": [
-  "ic",
-  "memory",
-  "i2c",
-  "3.6v",
   "soic",
-  "smd",
-  "soic-8",
-  "fm24cl16b",
-  "soic-8_3.9x4.9mm_p1.27mm",
-  "ic memory",
-  "surface mount",
+  "memory",
   "fram",
   "nvram",
   "serial",
+  "i2c",
   "6v",
+  "fm24cl16b",
   "16kb",
   "nonvolatile",
   "9x4",
   "9mm",
   "p1",
   "27mm",
-  "so"
+  "so",
+  "ic"
  ],
  "facts": {
   "package_family": "SOIC",
@@ -63,7 +57,7 @@
   "tier_counts": {
    "A": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -78,6 +72,6 @@
  "part_ids": [
   "kicad-symbols/Memory_NVRAM/FM24CL16B"
  ],
- "embedding_text": "ic-memory.soic.i2c.3-6v | IC Memory | Surface-mount memory IC cluster featuring I2C bus support and 3.6V operation in a SOIC-8 footprint. | ic memory i2c 3.6v soic smd soic-8 fm24cl16b soic-8_3.9x4.9mm_p1.27mm ic memory surface mount fram nvram serial 6v 16kb nonvolatile 9x4 9mm p1 27mm so | SOIC | I2C 3.6V",
+ "embedding_text": "ic-memory.soic.i2c.3-6v | IC Memory | 1 ic memory parts for I2C, 3.6V using SOIC footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | soic memory fram nvram serial i2c 6v fm24cl16b 16kb nonvolatile 9x4 9mm p1 27mm so ic | SOIC | I2C 3.6V",
  "class": "ic.memory"
 }

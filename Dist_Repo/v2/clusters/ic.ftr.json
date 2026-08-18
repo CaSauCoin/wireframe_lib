@@ -5,30 +5,22 @@
  "category_path": [
   "IC"
  ],
- "description": "Integrated circuit cluster in the FTR package family featuring FTR-B4G and FTR-B4S footprints across two tier C parts.",
+ "description": "2 ic parts using FTR footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when using IC components within the FTR package family.",
-  "Verify compatibility with FTR-B4G or FTR-B4S footprints.",
-  "Note that parts in this cluster are quality tier C."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a FTR land pattern is intended."
  ],
  "avoid_when": [
-  "The PCB design requires a package family other than FTR.",
-  "Footprints other than FTR-B4G or FTR-B4S are needed.",
-  "Planner-visible or higher quality tier parts are required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than FTR."
  ],
  "keywords": [
-  "ic",
   "ftr",
-  "ftr-b4g",
-  "ftr-b4s",
   "b4g",
   "b4s",
-  "package ftr",
-  "tier c",
-  "ic component",
-  "ftr package",
-  "integrated circuit",
-  "ftr footprint",
+  "ic",
   "pad",
   "mm",
   "pitch",
@@ -54,13 +46,13 @@
   "tier_counts": {
    "C": 2
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
   "dist-legacy/FTR-B4G",
   "dist-legacy/FTR-B4S"
  ],
- "embedding_text": "ic.ftr | IC | Integrated circuit cluster in the FTR package family featuring FTR-B4G and FTR-B4S footprints across two tier C parts. | ic ftr ftr-b4g ftr-b4s b4g b4s package ftr tier c ic component ftr package integrated circuit ftr footprint pad mm pitch pins | FTR | ",
+ "embedding_text": "ic.ftr | IC | 2 ic parts using FTR footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | ftr b4g b4s ic pad mm pitch pins | FTR | ",
  "class": "ic"
 }

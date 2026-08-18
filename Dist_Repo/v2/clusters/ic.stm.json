@@ -5,40 +5,32 @@
  "category_path": [
   "IC"
  ],
- "description": "Integrated circuit cluster of 18 surface-mount and unspecified mount parts in the STM package family, featuring DFN-8, LGA-14L, and WLCSP-56 footprint variants.",
+ "description": "18 ic parts using STM footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Choose when requiring integrated circuits in the STM package family.",
-  "Select based on exact footprint match such as DFN-8 2x2MM, LGA-14L 2.5x3.0MM, or WLCSP-56 B0H4.",
-  "Verify component suitability given all 18 entries are designated Tier C quality."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a STM land pattern is intended."
  ],
  "avoid_when": [
-  "The board layout requires a package family other than STM.",
-  "Through-hole mounting is required instead of SMD or unspecified mounts.",
-  "Higher quality tier parts (Tier A or B) are strictly required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than STM."
  ],
  "keywords": [
   "stm",
   "ic",
-  "smd",
-  "dfn-8",
-  "2x2mm",
-  "lga-14l",
-  "2.5x3.0mm",
-  "wlcsp-56",
-  "b0h4",
-  "stm dfn-8",
-  "stm lga-14l",
-  "stm wlcsp-56",
   "pad",
   "mm",
   "pitch",
   "pins",
   "dfn",
+  "2x2mm",
   "lga",
   "14l",
   "5x3",
   "0mm",
   "wlcsp",
+  "b0h4",
   "lqfp",
   "tfbga"
  ],
@@ -66,7 +58,7 @@
   "tier_counts": {
    "C": 18
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
@@ -89,6 +81,6 @@
   "celestial-altium-library/STM LGA-14L 2.5x3.0MM/STM_LGA-14L_2.5x3.0MM",
   "celestial-altium-library/STM WLCSP-56 B0H4/STM_WLCSP-56_B0H4"
  ],
- "embedding_text": "ic.stm | IC | Integrated circuit cluster of 18 surface-mount and unspecified mount parts in the STM package family, featuring DFN-8, LGA-14L, and WLCSP-56 footprint variants. | stm ic smd dfn-8 2x2mm lga-14l 2.5x3.0mm wlcsp-56 b0h4 stm dfn-8 stm lga-14l stm wlcsp-56 pad mm pitch pins dfn lga 14l 5x3 0mm wlcsp lqfp tfbga | STM | ",
+ "embedding_text": "ic.stm | IC | 18 ic parts using STM footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | stm ic pad mm pitch pins dfn 2x2mm lga 14l 5x3 0mm wlcsp b0h4 lqfp tfbga | STM | ",
  "class": "ic"
 }

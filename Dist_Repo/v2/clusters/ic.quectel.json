@@ -5,42 +5,34 @@
  "category_path": [
   "IC"
  ],
- "description": "EDA component cluster of 11 surface-mount IC parts using Quectel footprints, sourced from dist-legacy and SparkFun-KiCad-Libraries.",
+ "description": "11 ic parts using Quectel footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select based on exact Quectel footprint requirements such as Quectel_LG580P, Quectel_LS5x, Quectel_LG290P, or Quectel_L7X.",
-  "Filter for higher quality tier B parts (4 parts) over tier C parts (7 parts).",
-  "Verify source library origin between SparkFun-KiCad-Libraries and dist-legacy."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a Quectel land pattern is intended."
  ],
  "avoid_when": [
-  "The design requires non-SMD or through-hole mounting.",
-  "The layout requires footprints outside the Quectel package family.",
-  "Components other than integrated circuits are required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than Quectel."
  ],
  "keywords": [
   "quectel",
-  "ic",
-  "smd",
-  "surface mount",
-  "lg580p",
-  "ls550g",
-  "lg290p",
-  "lc762z",
-  "quectel_lg580p",
-  "quectel_ls5x",
-  "quectel_lg290p",
-  "quectel_l7x",
-  "quectel_bc66",
-  "quectel_m95",
-  "quectel_bg96",
-  "sparkfun-kicad-libraries",
   "gnss",
+  "ic",
   "gps",
   "module",
   "sparkfun",
   "receiver",
   "l70",
   "bg96",
-  "bc66"
+  "bc66",
+  "surface",
+  "mount",
+  "pad",
+  "mm",
+  "pitch",
+  "pins"
  ],
  "facts": {
   "package_family": "Quectel",
@@ -73,7 +65,7 @@
    "B": 4,
    "C": 7
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -122,6 +114,6 @@
   "dist-legacy/Quectel_L76",
   "dist-legacy/Quectel_L96"
  ],
- "embedding_text": "ic.quectel | IC | EDA component cluster of 11 surface-mount IC parts using Quectel footprints, sourced from dist-legacy and SparkFun-KiCad-Libraries. | quectel ic smd surface mount lg580p ls550g lg290p lc762z quectel_lg580p quectel_ls5x quectel_lg290p quectel_l7x quectel_bc66 quectel_m95 quectel_bg96 sparkfun-kicad-libraries gnss gps module sparkfun receiver l70 bg96 bc66 | Quectel | ",
+ "embedding_text": "ic.quectel | IC | 11 ic parts using Quectel footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | quectel gnss ic gps module sparkfun receiver l70 bg96 bc66 surface mount pad mm pitch pins | Quectel | ",
  "class": "ic"
 }

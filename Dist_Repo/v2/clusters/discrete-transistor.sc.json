@@ -6,42 +6,34 @@
   "Discrete",
   "Transistor"
  ],
- "description": "SMD discrete transistor cluster in the SC package family, offering footprints including SC-59, SC-59_Handsoldering, and SC-89 SOT-490.",
+ "description": "4 discrete transistor parts using SC footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select based on required footprint such as SC-59, SC-59_Handsoldering, or SC-89 SOT-490.",
-  "Consider quality tier classification, preferring Tier A or Tier B parts where available.",
-  "Verify library source, such as SparkFun-KiCad-Libraries or Alternate-KiCad-Library."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SC land pattern is intended."
  ],
  "avoid_when": [
-  "The design requires package families other than SC surface-mount packages.",
-  "Non-SMD or through-hole mounting is required.",
-  "A footprint outside the SC-59 or SC-89 SOT-490 options is needed."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SC."
  ],
  "keywords": [
   "sc",
-  "discrete transistor",
-  "sc-59",
-  "sc-89 sot-490",
-  "sc-59_handsoldering",
-  "smd",
-  "bsr92p",
-  "q_nmos_0.2a_20v",
-  "q_pmos_0.1a_20v",
-  "sparkfun-kicad-libraries",
-  "alternate-kicad-library",
   "transistor",
-  "discrete",
   "mosfet",
+  "discrete",
   "sparkfun",
   "handsoldering",
   "pmos",
   "mos",
   "sot",
+  "bsr92p",
   "enchancement",
   "nmos",
   "20v",
   "discretesemi",
-  "drain"
+  "drain",
+  "gate"
  ],
  "facts": {
   "package_family": "SC",
@@ -68,7 +60,7 @@
    "B": 2,
    "C": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -102,6 +94,6 @@
   "SparkFun-KiCad-Libraries/SparkFun-DiscreteSemi/Q_PMOS_0.1A_20V",
   "dist-legacy/SC-59_Handsoldering"
  ],
- "embedding_text": "discrete-transistor.sc | Discrete Transistor | SMD discrete transistor cluster in the SC package family, offering footprints including SC-59, SC-59_Handsoldering, and SC-89 SOT-490. | sc discrete transistor sc-59 sc-89 sot-490 sc-59_handsoldering smd bsr92p q_nmos_0.2a_20v q_pmos_0.1a_20v sparkfun-kicad-libraries alternate-kicad-library transistor discrete mosfet sparkfun handsoldering pmos mos sot enchancement nmos 20v discretesemi drain | SC | ",
+ "embedding_text": "discrete-transistor.sc | Discrete Transistor | 4 discrete transistor parts using SC footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | sc transistor mosfet discrete sparkfun handsoldering pmos mos sot bsr92p enchancement nmos 20v discretesemi drain gate | SC | ",
  "class": "discrete.transistor"
 }

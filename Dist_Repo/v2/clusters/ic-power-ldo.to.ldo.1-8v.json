@@ -7,32 +7,22 @@
   "Power",
   "Linear Regulator"
  ],
- "description": "Cluster of 13 tier-A linear LDO power regulator ICs with a 1.8V output in TO package family footprints for SMD and through-hole mounting.",
+ "description": "13 ic power linear regulator parts for LDO, 1.8V using TO footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when requiring a 1.8V LDO linear regulator in a TO package family.",
-  "Choose between surface-mount (SMD) and through-hole mounting footprints.",
-  "Match specific footprint variants including TO-252, TO-263, TO-220, or TO-92."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a TO land pattern is intended."
  ],
  "avoid_when": [
-  "Required output voltage is not 1.8V.",
-  "The design requires packages outside the TO package family.",
-  "A non-LDO power regulator design is specified."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than TO."
  ],
  "keywords": [
-  "ldo",
-  "1.8v",
-  "linear regulator",
-  "ic power",
-  "to package family",
-  "to-252",
-  "to-220",
-  "to-263",
-  "to-92",
-  "smd",
-  "through hole",
   "to",
   "regulator",
   "linear",
+  "ldo",
   "8v",
   "dpak",
   "low",
@@ -42,7 +32,9 @@
   "sot",
   "fixed",
   "voltage",
-  "d2pak"
+  "d2pak",
+  "dropout",
+  "positive"
  ],
  "facts": {
   "package_family": "TO",
@@ -72,7 +64,7 @@
   "tier_counts": {
    "A": 13
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -131,6 +123,6 @@
   "kicad-symbols/Regulator_Linear/MCP1700x-180xxTO",
   "kicad-symbols/Regulator_Linear/NCP1117-1.8_TO252"
  ],
- "embedding_text": "ic-power-ldo.to.ldo.1-8v | IC Power Linear Regulator | Cluster of 13 tier-A linear LDO power regulator ICs with a 1.8V output in TO package family footprints for SMD and through-hole mounting. | ldo 1.8v linear regulator ic power to package family to-252 to-220 to-263 to-92 smd through hole to regulator linear 8v dpak low ic power output sot fixed voltage d2pak | TO | LDO 1.8V",
+ "embedding_text": "ic-power-ldo.to.ldo.1-8v | IC Power Linear Regulator | 13 ic power linear regulator parts for LDO, 1.8V using TO footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | to regulator linear ldo 8v dpak low ic power output sot fixed voltage d2pak dropout positive | TO | LDO 1.8V",
  "class": "ic.power.ldo"
 }

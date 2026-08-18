@@ -7,42 +7,34 @@
   "Analog",
   "Audio"
  ],
- "description": "Surface-mount analog audio integrated circuits available in 8-pin and 10-pin MSOP package variants with standard or exposed thermal pads.",
+ "description": "5 ic analog audio parts using MSOP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Match required pin count (MSOP-8 or MSOP-10) and lead pitch (0.5mm or 0.65mm).",
-  "Determine if an exposed thermal pad footprint (EP) is needed.",
-  "Select from tier A parts such as LM4990MH, PAM8302AAD, PAM8302AAS, SSM2167, or TPA6203A1DGN."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a MSOP land pattern is intended."
  ],
  "avoid_when": [
-  "The design requires package families other than MSOP.",
-  "Through-hole mounting is required instead of SMD.",
-  "The application requires non-analog or non-audio IC functions."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than MSOP."
  ],
  "keywords": [
-  "ic",
-  "analog audio",
-  "msop",
-  "msop-8",
-  "msop-10",
-  "smd",
-  "lm4990mh",
-  "pam8302aad",
-  "pam8302aas",
-  "ssm2167",
-  "tpa6203a1dgn",
-  "exposed pad",
-  "thermal vias",
-  "3x3mm",
   "audio",
+  "msop",
   "amplifier",
+  "3x3mm",
   "p0",
   "so",
   "class",
+  "ic",
   "analog",
   "mono",
   "5mm",
   "65mm",
-  "with"
+  "with",
+  "1ep",
+  "ep1",
+  "5w"
  ],
  "facts": {
   "package_family": "MSOP",
@@ -66,7 +58,7 @@
   "tier_counts": {
    "A": 5
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -117,6 +109,6 @@
   "kicad-symbols/Amplifier_Audio/SSM2167",
   "kicad-symbols/Amplifier_Audio/TPA6203A1DGN"
  ],
- "embedding_text": "ic-analog-audio.msop | IC Analog Audio | Surface-mount analog audio integrated circuits available in 8-pin and 10-pin MSOP package variants with standard or exposed thermal pads. | ic analog audio msop msop-8 msop-10 smd lm4990mh pam8302aad pam8302aas ssm2167 tpa6203a1dgn exposed pad thermal vias 3x3mm audio amplifier p0 so class analog mono 5mm 65mm with | MSOP | ",
+ "embedding_text": "ic-analog-audio.msop | IC Analog Audio | 5 ic analog audio parts using MSOP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | audio msop amplifier 3x3mm p0 so class ic analog mono 5mm 65mm with 1ep ep1 5w | MSOP | ",
  "class": "ic.analog.audio"
 }

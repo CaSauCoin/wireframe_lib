@@ -6,38 +6,31 @@
   "IC",
   "Sensor"
  ],
- "description": "SMD IC sensor cluster in SOT-23 packaging with an I2C interface, featuring magnetic and temperature sensors such as TLV493D, TMP100, and TMP101.",
+ "description": "3 ic sensor parts for I2C using SOT-23 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Require an SMD IC sensor with an I2C communication interface.",
-  "Need a SOT-23 or SOT-23-6 package footprint.",
-  "Choosing between magnetic (TLV493D) or temperature (TMP100, TMP101) sensing."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SOT-23 land pattern is intended."
  ],
  "avoid_when": [
-  "A non-I2C bus or interface is required.",
-  "Package footprints other than SOT-23 or SOT-23-6 are needed.",
-  "Non-SMD or through-hole mounting is required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SOT-23."
  ],
  "keywords": [
-  "ic",
+  "sot",
   "sensor",
   "i2c",
-  "sot-23",
-  "sot-23-6",
-  "smd",
-  "tlv493d",
-  "tmp100",
-  "tmp101",
-  "magnetic sensor",
-  "temperature sensor",
-  "ic sensor",
-  "sot",
   "temperature",
   "smbus",
   "magnetic",
   "interface",
   "to",
+  "smd",
+  "ic",
   "with",
   "digital",
+  "tlv493d",
   "low",
   "power",
   "3d"
@@ -63,7 +56,7 @@
   "tier_counts": {
    "A": 3
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -96,6 +89,6 @@
   "kicad-symbols/Sensor_Temperature/TMP100",
   "kicad-symbols/Sensor_Temperature/TMP101"
  ],
- "embedding_text": "ic-sensor.sot-23.i2c | IC Sensor | SMD IC sensor cluster in SOT-23 packaging with an I2C interface, featuring magnetic and temperature sensors such as TLV493D, TMP100, and TMP101. | ic sensor i2c sot-23 sot-23-6 smd tlv493d tmp100 tmp101 magnetic sensor temperature sensor ic sensor sot temperature smbus magnetic interface to with digital low power 3d | SOT-23 | I2C",
+ "embedding_text": "ic-sensor.sot-23.i2c | IC Sensor | 3 ic sensor parts for I2C using SOT-23 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | sot sensor i2c temperature smbus magnetic interface to smd ic with digital tlv493d low power 3d | SOT-23 | I2C",
  "class": "ic.sensor"
 }

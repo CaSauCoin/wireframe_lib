@@ -5,27 +5,22 @@
  "category_path": [
   "IC"
  ],
- "description": "This IC cluster contains 1 quality tier C part using the SMC-DO-214AB footprint in the SMC package family.",
+ "description": "1 ic parts using SMC footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Use when an IC requiring an SMC-DO-214AB footprint is needed.",
-  "Evaluate part suitability carefully as the single entry is tier C quality with unknown mount type."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SMC land pattern is intended."
  ],
  "avoid_when": [
-  "The design requires a package footprint other than SMC-DO-214AB.",
-  "Tier C quality parts or unknown mount types do not meet project requirements."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SMC."
  ],
  "keywords": [
-  "ic",
   "smc",
-  "smc-do-214ab",
-  "do-214ab",
-  "214ab",
-  "ic smc",
-  "smc package",
-  "smc footprint",
-  "tier c",
-  "do 214ab",
   "do",
+  "214ab",
+  "ic",
   "pad",
   "mm",
   "pitch",
@@ -50,12 +45,12 @@
   "tier_counts": {
    "C": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
   "dist-legacy/SMC-DO-214AB"
  ],
- "embedding_text": "ic.smc | IC | This IC cluster contains 1 quality tier C part using the SMC-DO-214AB footprint in the SMC package family. | ic smc smc-do-214ab do-214ab 214ab ic smc smc package smc footprint tier c do 214ab do pad mm pitch pins | SMC | ",
+ "embedding_text": "ic.smc | IC | 1 ic parts using SMC footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | smc do 214ab ic pad mm pitch pins | SMC | ",
  "class": "ic"
 }

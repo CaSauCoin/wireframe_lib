@@ -6,33 +6,24 @@
   "IC",
   "Memory"
  ],
- "description": "Surface-mount memory IC cluster featuring SPI interface and 5V or 2.5V facets in TSSOP-8 package footprints.",
+ "description": "1 ic memory parts for 5V, SPI, 2.5V using TSSOP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when requiring surface-mount memory ICs with SPI interface support.",
-  "Use when a TSSOP-8 footprint (4.4x3mm, 0.65mm pitch) is specified.",
-  "Verify operating voltage facets (5V or 2.5V) match application requirements."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a TSSOP land pattern is intended."
  ],
  "avoid_when": [
-  "Avoid if the design requires through-hole mounting instead of SMD.",
-  "Do not use if a package family other than TSSOP is required.",
-  "Avoid when the SPI bus or specified voltage facets are incompatible."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than TSSOP."
  ],
  "keywords": [
-  "ic memory",
-  "memory ic",
-  "tssop",
-  "tssop-8",
-  "spi",
   "5v",
-  "2.5v",
-  "smd",
-  "surface mount",
-  "at25sf081-xmhd-x",
-  "at25sf081",
-  "ic.memory",
-  "kicad-symbols",
+  "tssop",
   "memory",
+  "spi",
   "flash",
+  "at25sf081",
   "xmhd",
   "mbit",
   "minimum",
@@ -41,7 +32,8 @@
   "dual",
   "and",
   "quad",
-  "support"
+  "support",
+  "4x3mm"
  ],
  "facts": {
   "package_family": "TSSOP",
@@ -66,7 +58,7 @@
   "tier_counts": {
    "A": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -81,6 +73,6 @@
  "part_ids": [
   "kicad-symbols/Memory_Flash/AT25SF081-XMHD-X"
  ],
- "embedding_text": "ic-memory.tssop.5v.spi | IC Memory | Surface-mount memory IC cluster featuring SPI interface and 5V or 2.5V facets in TSSOP-8 package footprints. | ic memory memory ic tssop tssop-8 spi 5v 2.5v smd surface mount at25sf081-xmhd-x at25sf081 ic.memory kicad-symbols memory flash xmhd mbit minimum serial with dual and quad support | TSSOP | 5V SPI 2.5V",
+ "embedding_text": "ic-memory.tssop.5v.spi | IC Memory | 1 ic memory parts for 5V, SPI, 2.5V using TSSOP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | 5v tssop memory spi flash at25sf081 xmhd mbit minimum serial with dual and quad support 4x3mm | TSSOP | 5V SPI 2.5V",
  "class": "ic.memory"
 }

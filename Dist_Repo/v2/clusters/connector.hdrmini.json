@@ -5,27 +5,26 @@
  "category_path": [
   "Connector"
  ],
- "description": "Through-hole HDRMINI header connector cluster spanning single-row footprints from 1x2 up to 1x20 pins (98 parts, all tier C, generated review status from chilaboard-altium-library).",
+ "description": "98 connector parts using HDRMINI footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Match the exact HDRMINI footprint pin count (e.g. 1X2, 1X11-1X20) to the required header size",
-  "Confirm male (M) vs female (F) footprint variant matches the mating connector",
-  "All entries are tier C with generated review status; verify footprint before use since none are planner-visible",
-  "Use only for through-hole assembly, as no other mount type is listed"
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a HDRMINI land pattern is intended."
  ],
  "avoid_when": [
-  "A planner-visible or higher-tier (non-C) verified part is required",
-  "Surface-mount or non-through-hole assembly is needed",
-  "A pin count outside 1x2 or 1x11 through 1x20 is required",
-  "Electrical ratings, pitch, or dimensions must be confirmed but are not stated"
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than HDRMINI."
  ],
  "keywords": [
   "hdrmini",
-  "header",
   "connector",
-  "through hole",
-  "single row",
-  "male",
-  "female",
+  "through",
+  "hole",
+  "pad",
+  "mm",
+  "pitch",
+  "pins",
   "1x2",
   "1x11",
   "1x12",
@@ -33,16 +32,7 @@
   "1x14",
   "1x15",
   "1x16",
-  "1x17",
-  "1x18",
-  "1x19",
-  "1x20",
-  "through",
-  "hole",
-  "pad",
-  "mm",
-  "pitch",
-  "pins"
+  "1x17"
  ],
  "facts": {
   "package_family": "HDRMINI",
@@ -74,7 +64,7 @@
   "tier_counts": {
    "C": 98
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
@@ -177,6 +167,6 @@
   "chilaboard-altium-library/HDRMINI_M_2X5/HDRMINI_M_2X5",
   "chilaboard-altium-library/HDRMINI_M_2X6/HDRMINI_M_2X6"
  ],
- "embedding_text": "connector.hdrmini | Connector | Through-hole HDRMINI header connector cluster spanning single-row footprints from 1x2 up to 1x20 pins (98 parts, all tier C, generated review status from chilaboard-altium-library). | hdrmini header connector through hole single row male female 1x2 1x11 1x12 1x13 1x14 1x15 1x16 1x17 1x18 1x19 1x20 through hole pad mm pitch pins | HDRMINI | ",
+ "embedding_text": "connector.hdrmini | Connector | 98 connector parts using HDRMINI footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | hdrmini connector through hole pad mm pitch pins 1x2 1x11 1x12 1x13 1x14 1x15 1x16 1x17 | HDRMINI | ",
  "class": "connector"
 }

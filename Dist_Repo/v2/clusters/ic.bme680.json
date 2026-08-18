@@ -5,28 +5,19 @@
  "category_path": [
   "IC"
  ],
- "description": "SMD integrated circuit cluster containing 1 component in the BME680 package family from digikey-kicad-library.",
+ "description": "1 ic parts using BME680 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Use when an SMD component with a BME680 footprint is needed.",
-  "Verify compatibility with BME680 land pattern specifications.",
-  "Check tier C quality classification before integration."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a BME680 land pattern is intended."
  ],
  "avoid_when": [
-  "The PCB layout requires a non-SMD or non-BME680 package.",
-  "The design policy excludes tier C quality components.",
-  "Exact electrical parameters or pinout configurations are required but unstated."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than BME680."
  ],
  "keywords": [
   "bme680",
-  "ic",
-  "smd",
-  "bme680 footprint",
-  "bme680 package",
-  "digikey-kicad-library",
-  "integrated circuit",
-  "surface mount",
-  "tier c",
-  "smd ic",
   "sensors",
   "specialized",
   "dk",
@@ -37,7 +28,8 @@
   "voc",
   "transducers",
   "bosch",
-  "sensortec"
+  "sensortec",
+  "ic"
  ],
  "facts": {
   "package_family": "BME680",
@@ -58,12 +50,12 @@
   "tier_counts": {
    "C": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
   "digikey-kicad-library/dk_Specialized-Sensors/BME680"
  ],
- "embedding_text": "ic.bme680 | IC | SMD integrated circuit cluster containing 1 component in the BME680 package family from digikey-kicad-library. | bme680 ic smd bme680 footprint bme680 package digikey-kicad-library integrated circuit surface mount tier c smd ic sensors specialized dk sensor rh pressure temp voc transducers bosch sensortec | BME680 | ",
+ "embedding_text": "ic.bme680 | IC | 1 ic parts using BME680 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | bme680 sensors specialized dk sensor rh pressure temp voc transducers bosch sensortec ic | BME680 | ",
  "class": "ic"
 }

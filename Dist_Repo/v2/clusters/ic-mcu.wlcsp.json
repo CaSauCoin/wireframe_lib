@@ -6,41 +6,34 @@
   "IC",
   "Microcontroller"
  ],
- "description": "Surface-mount microcontroller IC cluster consisting of 9 Tier B parts across various WLCSP footprints.",
+ "description": "9 ic microcontroller parts using WLCSP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Choose when an SMD microcontroller in a WLCSP package is required.",
-  "Select based on the required WLCSP footprint variant and layout.",
-  "Confirm footprint pitch and dimensions against the target PCB design."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a WLCSP land pattern is intended."
  ],
  "avoid_when": [
-  "The PCB layout requires non-WLCSP package options or through-hole mounting.",
-  "Tier A verified parts are strictly required for the design."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than WLCSP."
  ],
  "keywords": [
-  "ic",
-  "microcontroller",
-  "ic.mcu",
   "wlcsp",
-  "smd",
-  "kicad-symbols",
-  "attiny20-u",
-  "cybl10563-68flxit",
-  "lpc1102uk",
-  "lpc1104uk",
-  "wlcsp-81",
-  "wlcsp-16",
-  "wlcsp-20",
-  "wlcsp-36",
   "m0",
   "arm",
   "cortex",
+  "microcontroller",
   "kinetis",
   "bit",
   "nxp",
   "mcu",
   "flash",
   "sram",
-  "p0"
+  "p0",
+  "ic",
+  "kb",
+  "4mm",
+  "mhz"
  ],
  "facts": {
   "package_family": "WLCSP",
@@ -66,7 +59,7 @@
   "tier_counts": {
    "B": 9
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -121,6 +114,6 @@
   "kicad-symbols/MCU_NXP_Kinetis/MKL03Z32CBF4",
   "kicad-symbols/MCU_NXP_Kinetis/MKL17Z256CAL4"
  ],
- "embedding_text": "ic-mcu.wlcsp | IC Microcontroller | Surface-mount microcontroller IC cluster consisting of 9 Tier B parts across various WLCSP footprints. | ic microcontroller ic.mcu wlcsp smd kicad-symbols attiny20-u cybl10563-68flxit lpc1102uk lpc1104uk wlcsp-81 wlcsp-16 wlcsp-20 wlcsp-36 m0 arm cortex kinetis bit nxp mcu flash sram p0 | WLCSP | ",
+ "embedding_text": "ic-mcu.wlcsp | IC Microcontroller | 9 ic microcontroller parts using WLCSP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | wlcsp m0 arm cortex microcontroller kinetis bit nxp mcu flash sram p0 ic kb 4mm mhz | WLCSP | ",
  "class": "ic.mcu"
 }

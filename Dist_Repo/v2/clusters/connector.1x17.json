@@ -5,32 +5,21 @@
  "category_path": [
   "Connector"
  ],
- "description": "A cluster of 2 through-hole 1x17 connector parts (footprints 1x17 and 1x17_Locking) from SparkFun-KiCad-Libraries, with one tier-B and one tier-C entry.",
+ "description": "2 connector parts using 1x17 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Prefer the tier B entry (Conn_01x17, score 80) over the tier C entry when quality matters",
-  "Match the exact footprint variant needed: plain 1x17 vs 1x17_Locking",
-  "Confirm through-hole mounting fits the intended board assembly"
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a 1x17 land pattern is intended."
  ],
  "avoid_when": [
-  "A locking connector is required but the selected part uses the plain 1x17 footprint, or vice versa",
-  "Surface-mount rather than through-hole mounting is needed",
-  "The part is only planner-visible in tier B/C and review_status is generated, so pairing should be re-checked before layout"
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than 1x17."
  ],
  "keywords": [
+  "sparkfun",
   "connector",
   "1x17",
-  "conn_01x17",
-  "1x17_locking",
-  "through hole",
-  "pth connector",
-  "17 pin",
-  "17 position",
-  "sparkfun",
-  "sparkfun-kicad-libraries",
-  "header connector",
-  "locking header",
-  "single row connector",
-  "pin header 17",
   "locking",
   "conn",
   "01x17",
@@ -40,7 +29,10 @@
   "basic",
   "through",
   "hole",
-  "pad"
+  "pad",
+  "mm",
+  "pitch",
+  "pins"
  ],
  "facts": {
   "package_family": "1x17",
@@ -63,7 +55,7 @@
    "B": 1,
    "C": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -79,6 +71,6 @@
   "SparkFun-KiCad-Libraries/SparkFun-Connector/Conn_01x17",
   "SparkFun-KiCad-Libraries/SparkFun-Connector/Conn_01x17_Locking"
  ],
- "embedding_text": "connector.1x17 | Connector | A cluster of 2 through-hole 1x17 connector parts (footprints 1x17 and 1x17_Locking) from SparkFun-KiCad-Libraries, with one tier-B and one tier-C entry. | connector 1x17 conn_01x17 1x17_locking through hole pth connector 17 pin 17 position sparkfun sparkfun-kicad-libraries header connector locking header single row connector pin header 17 locking conn 01x17 pth https web basic through hole pad | 1x17 | ",
+ "embedding_text": "connector.1x17 | Connector | 2 connector parts using 1x17 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | sparkfun connector 1x17 locking conn 01x17 pth https web basic through hole pad mm pitch pins | 1x17 | ",
  "class": "connector"
 }

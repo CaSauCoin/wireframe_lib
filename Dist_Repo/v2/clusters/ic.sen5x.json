@@ -5,31 +5,22 @@
  "category_path": [
   "IC"
  ],
- "description": "Integrated circuit component cluster using SMD mounting and SEN5x footprint outline patterns.",
+ "description": "1 ic parts using SEN5x footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "The design requires an SMD component matching the SEN5x package family.",
-  "Using SEN5x_Outline footprint from SparkFun-KiCad-Libraries.",
-  "Tier C component data quality is acceptable for the application."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SEN5x land pattern is intended."
  ],
  "avoid_when": [
-  "The application requires through-hole or non-SMD mounting.",
-  "The design requires a footprint package other than SEN5x_Outline.",
-  "Unreviewed or tier C library entries are restricted."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SEN5x."
  ],
  "keywords": [
-  "ic",
-  "sen5x",
-  "sen5x_outline",
-  "smd",
   "sparkfun",
-  "kicad",
-  "libraries",
-  "sparkfun-kicad-libraries",
-  "package",
-  "footprint",
-  "integrated circuit",
   "sensor",
   "outline",
+  "sen5x",
   "sen55",
   "environmental",
   "for",
@@ -40,7 +31,8 @@
   "applications",
   "pm",
   "nox",
-  "voc"
+  "voc",
+  "rh"
  ],
  "facts": {
   "package_family": "SEN5x",
@@ -61,12 +53,12 @@
   "tier_counts": {
    "C": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
   "SparkFun-KiCad-Libraries/SparkFun-Sensor/SEN55_Outline"
  ],
- "embedding_text": "ic.sen5x | IC | Integrated circuit component cluster using SMD mounting and SEN5x footprint outline patterns. | ic sen5x sen5x_outline smd sparkfun kicad libraries sparkfun-kicad-libraries package footprint integrated circuit sensor outline sen55 environmental for hvac and air quality applications pm nox voc | SEN5x | ",
+ "embedding_text": "ic.sen5x | IC | 1 ic parts using SEN5x footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | sparkfun sensor outline sen5x sen55 environmental for hvac and air quality applications pm nox voc rh | SEN5x | ",
  "class": "ic"
 }

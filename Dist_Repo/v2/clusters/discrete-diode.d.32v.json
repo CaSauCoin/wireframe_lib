@@ -6,44 +6,34 @@
   "Discrete",
   "Diode"
  ],
- "description": "Cluster of 8 tier-A discrete diode parts sharing a 32V facet and D-family footprints, covering TVS, diac, and variable-capacitance diode types across DO-35, MiniMELF, P600, and SOD-523 packages.",
+ "description": "8 discrete diode parts for 32V using D footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Match device type (TVS, diac, or variable-capacitance) to the required circuit function.",
-  "Confirm the exact footprint (DO-35, MiniMELF, P600, SOD-523) matches the intended land pattern.",
-  "Choose SMD or through-hole mount based on the assembly process.",
-  "All parts are tier A but review_status is 'generated'; verify symbol-footprint pairing before committing a PCB."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a D land pattern is intended."
  ],
  "avoid_when": [
-  "The circuit needs a diode type not present in this cluster (e.g. a standard rectifier or Schottky).",
-  "A footprint outside the listed D-family options is required.",
-  "The symbol-footprint pairing has not been manually verified.",
-  "SMD or through-hole mount availability doesn't match the target assembly process."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than D."
  ],
  "keywords": [
   "diode",
-  "tvs diode",
-  "diac",
-  "variable capacitance diode",
-  "varicap",
   "32v",
-  "do-35",
-  "sod27",
-  "minimelf",
-  "sod-523",
-  "p600",
-  "zener",
-  "horizontal",
-  "through hole",
-  "smd",
-  "discrete",
-  "kicad",
-  "d package",
   "tvs",
+  "diac",
+  "horizontal",
   "do",
+  "discrete",
   "akl",
   "alternate",
+  "kicad",
   "library",
-  "capacitance"
+  "p600",
+  "capacitance",
+  "sod27",
+  "62mm",
+  "series"
  ],
  "facts": {
   "package_family": "D",
@@ -73,7 +63,7 @@
   "tier_counts": {
    "A": 8
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -127,6 +117,6 @@
   "Alternate-KiCad-Library/Diode_Capacitance_AKL/HVC300A",
   "Alternate-KiCad-Library/Diac_AKL/TMMDB3"
  ],
- "embedding_text": "discrete-diode.d.32v | Discrete Diode | Cluster of 8 tier-A discrete diode parts sharing a 32V facet and D-family footprints, covering TVS, diac, and variable-capacitance diode types across DO-35, MiniMELF, P600, and SOD-523 packages. | diode tvs diode diac variable capacitance diode varicap 32v do-35 sod27 minimelf sod-523 p600 zener horizontal through hole smd discrete kicad d package tvs do akl alternate library capacitance | D | 32V",
+ "embedding_text": "discrete-diode.d.32v | Discrete Diode | 8 discrete diode parts for 32V using D footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | diode 32v tvs diac horizontal do discrete akl alternate kicad library p600 capacitance sod27 62mm series | D | 32V",
  "class": "discrete.diode"
 }

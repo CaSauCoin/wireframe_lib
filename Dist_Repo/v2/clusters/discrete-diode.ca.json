@@ -6,31 +6,22 @@
   "Discrete",
   "Diode"
  ],
- "description": "Discrete diode cluster comprising 29 quality tier C parts in the CA package family across various CA-ALU footprints.",
+ "description": "29 discrete diode parts using CA footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when a discrete diode in a CA package family footprint is required.",
-  "Verify the target land pattern against the available CA-ALU footprint variants.",
-  "Review component specifications as parts originate from legacy distributor data."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a CA land pattern is intended."
  ],
  "avoid_when": [
-  "The board design requires a package family other than CA.",
-  "Parts with pre-verified planner visibility or higher quality tiers are required.",
-  "Explicit mounting type information is required as mount status is unknown."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than CA."
  ],
  "keywords": [
+  "ca",
+  "alu",
   "discrete",
   "diode",
-  "discrete.diode",
-  "ca",
-  "ca-alu",
-  "ca-alu-10",
-  "ca-alu-13bl",
-  "ca-alu-16",
-  "ca-alu-18",
-  "dist-legacy",
-  "tier c",
-  "package family ca",
-  "alu",
   "pad",
   "mm",
   "pitch",
@@ -41,7 +32,8 @@
   "10rl",
   "13bl",
   "13r",
-  "16h"
+  "16h",
+  "18bl"
  ],
  "facts": {
   "package_family": "CA",
@@ -73,7 +65,7 @@
   "tier_counts": {
    "C": 29
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
@@ -107,6 +99,6 @@
   "dist-legacy/CA-ALU-8",
   "dist-legacy/CA-ALU-8R"
  ],
- "embedding_text": "discrete-diode.ca | Discrete Diode | Discrete diode cluster comprising 29 quality tier C parts in the CA package family across various CA-ALU footprints. | discrete diode discrete.diode ca ca-alu ca-alu-10 ca-alu-13bl ca-alu-16 ca-alu-18 dist-legacy tier c package family ca alu pad mm pitch pins 10bl 10gr 10r 10rl 13bl 13r 16h | CA | ",
+ "embedding_text": "discrete-diode.ca | Discrete Diode | 29 discrete diode parts using CA footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | ca alu discrete diode pad mm pitch pins 10bl 10gr 10r 10rl 13bl 13r 16h 18bl | CA | ",
  "class": "discrete.diode"
 }

@@ -5,28 +5,20 @@
  "category_path": [
   "IC"
  ],
- "description": "IC cluster containing 3 parts associated with IDC20, IDC20-B, and IDC20-S footprints.",
+ "description": "3 ic parts using IDC20 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Verify compatibility with IDC20, IDC20-B, or IDC20-S footprint variants.",
-  "Select when an IC requiring the IDC20 package family is specified.",
-  "Review part quality, as all 3 available parts are tier C quality."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a IDC20 land pattern is intended."
  ],
  "avoid_when": [
-  "The design requires a footprint other than IDC20, IDC20-B, or IDC20-S.",
-  "Tier C quality rating or unverified generated review status is unacceptable.",
-  "An unknown mounting style does not meet project requirements."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than IDC20."
  ],
  "keywords": [
   "idc20",
   "ic",
-  "idc20-b",
-  "idc20-s",
-  "ic idc20",
-  "package family idc20",
-  "tier c",
-  "idc20 footprint",
-  "idc20 package",
-  "dist-legacy",
   "pad",
   "mm",
   "pitch",
@@ -53,7 +45,7 @@
   "tier_counts": {
    "C": 3
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
@@ -61,6 +53,6 @@
   "dist-legacy/IDC20-B",
   "dist-legacy/IDC20-S"
  ],
- "embedding_text": "ic.idc20 | IC | IC cluster containing 3 parts associated with IDC20, IDC20-B, and IDC20-S footprints. | idc20 ic idc20-b idc20-s ic idc20 package family idc20 tier c idc20 footprint idc20 package dist-legacy pad mm pitch pins | IDC20 | ",
+ "embedding_text": "ic.idc20 | IC | 3 ic parts using IDC20 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | idc20 ic pad mm pitch pins | IDC20 | ",
  "class": "ic"
 }

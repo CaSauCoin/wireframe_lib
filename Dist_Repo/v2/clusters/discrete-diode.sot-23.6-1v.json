@@ -6,29 +6,19 @@
   "Discrete",
   "Diode"
  ],
- "description": "Discrete diode cluster containing two SMD 6.1V parts in SOT-23-6 footprints sourced from Alternate-KiCad-Library.",
+ "description": "2 discrete diode parts for 6.1V using SOT-23 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select for 6.1V surface-mount (SMD) discrete diode applications.",
-  "Choose when an SOT-23 package family or SOT-23-6 footprint is required.",
-  "Select between representative parts ESDA6V1-5SC6 and ESDA6V1SC6."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SOT-23 land pattern is intended."
  ],
  "avoid_when": [
-  "Do not use if a footprint other than SOT-23-6 is required.",
-  "Avoid when surface-mount (SMD) mounting is not suitable.",
-  "Do not use if a voltage rating other than 6.1V is needed."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SOT-23."
  ],
  "keywords": [
-  "discrete",
   "diode",
-  "discrete diode",
-  "6.1v",
-  "sot-23",
-  "sot-23-6",
-  "smd",
-  "esda6v1-5sc6",
-  "esda6v1sc6",
-  "alternate-kicad-library",
-  "tier a",
   "sot",
   "tvs",
   "array",
@@ -40,8 +30,10 @@
   "library",
   "unidirectional",
   "esda",
+  "discrete",
   "esda6v1",
-  "5xunidirectional"
+  "5xunidirectional",
+  "100w"
  ],
  "facts": {
   "package_family": "SOT-23",
@@ -64,7 +56,7 @@
   "tier_counts": {
    "A": 2
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -88,6 +80,6 @@
   "Alternate-KiCad-Library/Diode_TVS_AKL/ESDA6V1-5SC6",
   "Alternate-KiCad-Library/Diode_TVS_AKL/ESDA6V1SC6"
  ],
- "embedding_text": "discrete-diode.sot-23.6-1v | Discrete Diode | Discrete diode cluster containing two SMD 6.1V parts in SOT-23-6 footprints sourced from Alternate-KiCad-Library. | discrete diode discrete diode 6.1v sot-23 sot-23-6 smd esda6v1-5sc6 esda6v1sc6 alternate-kicad-library tier a sot tvs array 1v 5sc6 akl alternate kicad library unidirectional esda esda6v1 5xunidirectional | SOT-23 | 6.1V",
+ "embedding_text": "discrete-diode.sot-23.6-1v | Discrete Diode | 2 discrete diode parts for 6.1V using SOT-23 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | diode sot tvs array 1v 5sc6 akl alternate kicad library unidirectional esda discrete esda6v1 5xunidirectional 100w | SOT-23 | 6.1V",
  "class": "discrete.diode"
 }

@@ -6,31 +6,22 @@
   "IC",
   "Analog"
  ],
- "description": "Analog IC cluster with 2.7V and 5V facets, I2C interface, and SMD mounting in a DFN-8 exposed pad package.",
+ "description": "1 ic analog parts for 5V, I2C, 2.7V using DFN footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Designing for an I2C interface operating at 2.7V or 5V supply levels.",
-  "Using SMD surface-mount assembly with DFN-8-1EP footprint requirements.",
-  "Selecting verified tier A analog IC parts from KiCad symbol sources."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a DFN land pattern is intended."
  ],
  "avoid_when": [
-  "The design requires non-DFN packages or through-hole mounting.",
-  "The system design uses a communication interface other than I2C.",
-  "Required operating voltage is outside the specified 2.7V or 5V facets."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than DFN."
  ],
  "keywords": [
-  "ic",
   "analog",
-  "ic.analog",
   "dfn",
-  "dfn-8",
-  "dfn-8-1ep",
-  "5v",
-  "2.7v",
-  "i2c",
-  "smd",
-  "ltc2451xddb",
-  "kicad-symbols",
   "to",
+  "i2c",
   "adc",
   "digital",
   "converter",
@@ -38,6 +29,8 @@
   "channel",
   "bit",
   "7v",
+  "5v",
+  "ltc2451xddb",
   "sps",
   "interface",
   "1ep"
@@ -65,7 +58,7 @@
   "tier_counts": {
    "A": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -80,6 +73,6 @@
  "part_ids": [
   "kicad-symbols/Analog_ADC/LTC2451xDDB"
  ],
- "embedding_text": "ic-analog.dfn.5v.i2c | IC Analog | Analog IC cluster with 2.7V and 5V facets, I2C interface, and SMD mounting in a DFN-8 exposed pad package. | ic analog ic.analog dfn dfn-8 dfn-8-1ep 5v 2.7v i2c smd ltc2451xddb kicad-symbols to adc digital converter single channel bit 7v sps interface 1ep | DFN | 5V I2C 2.7V",
+ "embedding_text": "ic-analog.dfn.5v.i2c | IC Analog | 1 ic analog parts for 5V, I2C, 2.7V using DFN footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | analog dfn to i2c adc digital converter single channel bit 7v 5v ltc2451xddb sps interface 1ep | DFN | 5V I2C 2.7V",
  "class": "ic.analog"
 }

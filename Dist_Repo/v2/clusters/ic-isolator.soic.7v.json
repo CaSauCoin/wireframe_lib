@@ -6,32 +6,23 @@
   "IC",
   "Isolator"
  ],
- "description": "Cluster of 12 tier A surface-mount 7V IC isolators utilizing SOIC-8 (3.9x4.9mm, 1.27mm pitch) footprints from KiCad symbols.",
+ "description": "12 ic isolator parts for 7V using SOIC footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when requiring a surface-mount 7V IC isolator.",
-  "Confirm requirement for the SOIC-8_3.9x4.9mm_P1.27mm footprint.",
-  "Choose among tier A KiCad symbol entries including HCPL-0600, HCPL-0601, and HCPL-0630."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SOIC land pattern is intended."
  ],
  "avoid_when": [
-  "The layout requires through-hole or non-SOIC packaging.",
-  "The circuit design requires isolation ratings other than 7V.",
-  "Footprint specifications differ from SOIC-8 3.9x4.9mm with 1.27mm pitch."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SOIC."
  ],
  "keywords": [
-  "ic isolator",
-  "isolator",
   "soic",
-  "soic-8",
-  "7v",
-  "smd",
-  "hcpl-0600",
-  "hcpl-0601",
-  "hcpl-0611",
-  "hcpl-0630",
-  "hcpl-0631",
-  "kicad-symbols",
+  "isolator",
   "high",
   "speed",
+  "7v",
   "compatible",
   "optocoupler",
   "enable",
@@ -41,7 +32,8 @@
   "vcm",
   "max",
   "vcc",
-  "9x4"
+  "9x4",
+  "9mm"
  ],
  "facts": {
   "package_family": "SOIC",
@@ -64,7 +56,7 @@
   "tier_counts": {
    "A": 12
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -122,6 +114,6 @@
   "kicad-symbols/Isolator/VO0631T",
   "kicad-symbols/Isolator/VO0661T"
  ],
- "embedding_text": "ic-isolator.soic.7v | IC Isolator | Cluster of 12 tier A surface-mount 7V IC isolators utilizing SOIC-8 (3.9x4.9mm, 1.27mm pitch) footprints from KiCad symbols. | ic isolator isolator soic soic-8 7v smd hcpl-0600 hcpl-0601 hcpl-0611 hcpl-0630 hcpl-0631 kicad-symbols high speed compatible optocoupler enable dv dt us vcm max vcc 9x4 | SOIC | 7V",
+ "embedding_text": "ic-isolator.soic.7v | IC Isolator | 12 ic isolator parts for 7V using SOIC footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | soic isolator high speed 7v compatible optocoupler enable dv dt us vcm max vcc 9x4 9mm | SOIC | 7V",
  "class": "ic.isolator"
 }

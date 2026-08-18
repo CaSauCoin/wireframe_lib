@@ -5,33 +5,24 @@
  "category_path": [
   "IC"
  ],
- "description": "IC components in the DIG package family supporting SMD and through-hole mounting with footprints including DIG_JTG_SMT1H and DIG_JTG_SMT2.",
+ "description": "4 ic parts using DIG footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select based on whether SMD or through-hole mounting is required.",
-  "Choose between DIG footprint variants DIG_JTG_SMT1H and DIG_JTG_SMT2.",
-  "Verify quality tier requirements, as available parts are rated Tier B and Tier C."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a DIG land pattern is intended."
  ],
  "avoid_when": [
-  "The board layout requires a package family other than DIG.",
-  "Neither DIG_JTG_SMT1H nor DIG_JTG_SMT2 matches the target footprint.",
-  "A quality tier higher than Tier B is required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than DIG."
  ],
  "keywords": [
-  "ic",
   "dig",
-  "smd",
-  "through_hole",
-  "dig_jtg_smt1h",
-  "dig_jtg_smt2",
-  "jtag_smt1h",
-  "jtag_smt2",
-  "chilaboard-altium-library",
-  "tier b",
-  "tier c",
   "jtag",
   "jtg",
   "smt2",
   "smt1h",
+  "ic",
   "module",
   "surface",
   "mount",
@@ -40,7 +31,8 @@
   "and",
   "programmer",
   "pad",
-  "mm"
+  "mm",
+  "pitch"
  ],
  "facts": {
   "package_family": "DIG",
@@ -64,7 +56,7 @@
    "B": 2,
    "C": 2
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -90,6 +82,6 @@
   "chilaboard-altium-library/DIG_JTG_SMT1H/DIG_JTG_SMT1H",
   "chilaboard-altium-library/DIG_JTG_SMT2/DIG_JTG_SMT2"
  ],
- "embedding_text": "ic.dig | IC | IC components in the DIG package family supporting SMD and through-hole mounting with footprints including DIG_JTG_SMT1H and DIG_JTG_SMT2. | ic dig smd through_hole dig_jtg_smt1h dig_jtg_smt2 jtag_smt1h jtag_smt2 chilaboard-altium-library tier b tier c jtag jtg smt2 smt1h module surface mount programming interface and programmer pad mm | DIG | ",
+ "embedding_text": "ic.dig | IC | 4 ic parts using DIG footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | dig jtag jtg smt2 smt1h ic module surface mount programming interface and programmer pad mm pitch | DIG | ",
  "class": "ic"
 }

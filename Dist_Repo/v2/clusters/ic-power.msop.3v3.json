@@ -6,33 +6,24 @@
   "IC",
   "Power"
  ],
- "description": "Surface-mount 3.3V power IC cluster in an MSOP-8 footprint (3x3mm, 0.65mm pitch) containing Tier A KiCad symbols.",
+ "description": "1 ic power parts for 3.3V using MSOP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Requires a surface-mount MSOP-8 (3x3mm, 0.65mm pitch) land pattern.",
-  "Need a 3.3V power IC component.",
-  "Selecting Tier A parts from KiCad symbol library."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a MSOP land pattern is intended."
  ],
  "avoid_when": [
-  "The board layout requires packages other than MSOP-8.",
-  "The target application requires operating voltages other than 3.3V.",
-  "Through-hole mounting is required instead of surface mount."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than MSOP."
  ],
  "keywords": [
-  "ic",
-  "power",
-  "3.3v",
   "msop",
-  "smd",
-  "msop-8",
-  "msop-8_3x3mm_p0.65mm",
-  "kicad-symbols",
-  "ltc1502xms8-3.3",
-  "regulator",
-  "switchedcapacitor",
-  "tier a",
   "3v",
   "dc",
   "ltc1502xms8",
+  "regulator",
+  "switchedcapacitor",
   "single",
   "alkaline",
   "nicd",
@@ -41,7 +32,8 @@
   "regulated",
   "charge",
   "pump",
-  "converter"
+  "converter",
+  "8v"
  ],
  "facts": {
   "package_family": "MSOP",
@@ -64,7 +56,7 @@
   "tier_counts": {
    "A": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -79,6 +71,6 @@
  "part_ids": [
   "kicad-symbols/Regulator_SwitchedCapacitor/LTC1502xMS8-3.3"
  ],
- "embedding_text": "ic-power.msop.3v3 | IC Power | Surface-mount 3.3V power IC cluster in an MSOP-8 footprint (3x3mm, 0.65mm pitch) containing Tier A KiCad symbols. | ic power 3.3v msop smd msop-8 msop-8_3x3mm_p0.65mm kicad-symbols ltc1502xms8-3.3 regulator switchedcapacitor tier a 3v dc ltc1502xms8 single alkaline nicd cell to regulated charge pump converter | MSOP | 3.3V",
+ "embedding_text": "ic-power.msop.3v3 | IC Power | 1 ic power parts for 3.3V using MSOP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | msop 3v dc ltc1502xms8 regulator switchedcapacitor single alkaline nicd cell to regulated charge pump converter 8v | MSOP | 3.3V",
  "class": "ic.power"
 }

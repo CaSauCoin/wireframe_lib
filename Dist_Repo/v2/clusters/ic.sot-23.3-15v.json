@@ -5,30 +5,18 @@
  "category_path": [
   "IC"
  ],
- "description": "Cluster of Tier A surface-mount 3.15V IC parts in SOT-23 footprints from the KiCad symbols library.",
+ "description": "2 ic parts for 3.15V using SOT-23 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when requiring a Tier A 3.15V IC in a SOT-23 surface-mount footprint.",
-  "Choose between representative parts MCP100-315D and MCP101-315D.",
-  "Use when sourcing parts from the KiCad symbols library."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SOT-23 land pattern is intended."
  ],
  "avoid_when": [
-  "The circuit layout requires a footprint package other than SOT-23.",
-  "The application voltage requirement is not 3.15V.",
-  "Through-hole mounting is required instead of surface mount."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SOT-23."
  ],
  "keywords": [
-  "ic",
-  "sot-23",
-  "3.15v",
-  "smd",
-  "power supervisor",
-  "mcp100-315d",
-  "mcp101-315d",
-  "kicad-symbols",
-  "tier a",
-  "sot23",
-  "surface mount",
-  "3.15 v",
   "sot",
   "supervisor",
   "reset",
@@ -40,7 +28,11 @@
   "threshold",
   "active",
   "output",
-  "to"
+  "to",
+  "smd",
+  "push",
+  "pull",
+  "ic"
  ],
  "facts": {
   "package_family": "SOT-23",
@@ -63,7 +55,7 @@
   "tier_counts": {
    "A": 2
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -87,6 +79,6 @@
   "kicad-symbols/Power_Supervisor/MCP100-315D",
   "kicad-symbols/Power_Supervisor/MCP101-315D"
  ],
- "embedding_text": "ic.sot-23.3-15v | IC | Cluster of Tier A surface-mount 3.15V IC parts in SOT-23 footprints from the KiCad symbols library. | ic sot-23 3.15v smd power supervisor mcp100-315d mcp101-315d kicad-symbols tier a sot23 surface mount 3.15 v sot supervisor reset 15v 315d power microcontroller monitor threshold active output to | SOT-23 | 3.15V",
+ "embedding_text": "ic.sot-23.3-15v | IC | 2 ic parts for 3.15V using SOT-23 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | sot supervisor reset 15v 315d power microcontroller monitor threshold active output to smd push pull ic | SOT-23 | 3.15V",
  "class": "ic"
 }

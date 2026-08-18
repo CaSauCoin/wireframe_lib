@@ -6,42 +6,34 @@
   "Discrete",
   "Bridge Rectifier"
  ],
- "description": "Through-hole discrete bridge rectifier cluster rated 70V, comprising 16 tier-A KiCad parts (e.g. GBU4B, GBU6B, GBU8B, KBPC1501T, KBPC1501W) spanning Vishay GBU/KBU, GeneSiC KBPC-W, and round D9.0mm/D9.8mm footprints.",
+ "description": "16 discrete bridge rectifier parts for 70V using Diode footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "All 16 parts are tier A with score 88, so differentiate by exact footprint match rather than tier.",
-  "Match the intended land pattern: Vishay GBU, Vishay KBU, GeneSiC KBPC_W, or round D9.0mm/D9.8mm.",
-  "Confirm through-hole mounting fits the board before selecting."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a Diode land pattern is intended."
  ],
  "avoid_when": [
-  "Design requires a surface-mount bridge rectifier instead of through-hole.",
-  "Required voltage rating differs from 70V.",
-  "None of the listed footprints (GBU, KBU, KBPC_W, round D9.0mm/D9.8mm) match the target land pattern."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than Diode."
  ],
  "keywords": [
-  "bridge rectifier",
-  "diode bridge",
-  "70v",
-  "through hole",
-  "discrete",
-  "gbu4b",
-  "gbu6b",
-  "gbu8b",
-  "kbpc1501t",
-  "kbpc1501w",
-  "vishay gbu",
-  "vishay kbu",
-  "genesic kbpc",
-  "round d9.8mm",
-  "round d9.0mm",
-  "single phase rectifier",
-  "kicad-symbols",
   "bridge",
   "diode",
   "rectifier",
+  "70v",
   "single",
   "phase",
   "vrms",
-  "if"
+  "if",
+  "discrete",
+  "vishay",
+  "kbpc",
+  "8mm",
+  "gbu",
+  "kbu",
+  "package",
+  "acdc"
  ],
  "facts": {
   "package_family": "Diode",
@@ -68,7 +60,7 @@
   "tier_counts": {
    "A": 16
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -130,6 +122,6 @@
   "kicad-symbols/Diode_Bridge/RB152",
   "kicad-symbols/Diode_Bridge/W01G"
  ],
- "embedding_text": "discrete-bridge.diode.70v | Discrete Bridge Rectifier | Through-hole discrete bridge rectifier cluster rated 70V, comprising 16 tier-A KiCad parts (e.g. GBU4B, GBU6B, GBU8B, KBPC1501T, KBPC1501W) spanning Vishay GBU/KBU, GeneSiC KBPC-W, and round D9.0mm/D9.8mm footprints. | bridge rectifier diode bridge 70v through hole discrete gbu4b gbu6b gbu8b kbpc1501t kbpc1501w vishay gbu vishay kbu genesic kbpc round d9.8mm round d9.0mm single phase rectifier kicad-symbols bridge diode rectifier single phase vrms if | Diode | 70V",
+ "embedding_text": "discrete-bridge.diode.70v | Discrete Bridge Rectifier | 16 discrete bridge rectifier parts for 70V using Diode footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | bridge diode rectifier 70v single phase vrms if discrete vishay kbpc 8mm gbu kbu package acdc | Diode | 70V",
  "class": "discrete.bridge"
 }

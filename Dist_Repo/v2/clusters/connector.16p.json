@@ -5,36 +5,25 @@
  "category_path": [
   "Connector"
  ],
- "description": "Cluster of 4 tier-C 16-pin connector parts sourced from dist-legacy, using 16P_PCB_HEADER_BRD_MNT or 16P_PCB_HEADER_BRD_MNT_RA footprints; mount type is unspecified.",
+ "description": "4 connector parts using 16P footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Match the exact footprint variant: straight (BRD_MNT) vs right-angle (BRD_MNT_RA).",
-  "All entries are tier C and generated/unreviewed, so verify pinout and pad mapping before use.",
-  "Confirm actual mounting style since it is not recorded for these parts."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a 16P land pattern is intended."
  ],
  "avoid_when": [
-  "You need a part with electrical ratings or pinout confirmed, since none are documented here.",
-  "You require a tier A/B or reviewed part, since all 4 entries are tier C and generated.",
-  "The design needs a footprint other than the two listed 16P header variants."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than 16P."
  ],
  "keywords": [
   "16p",
-  "16 pin",
-  "connector",
-  "header",
-  "pcb header",
-  "board mount",
-  "right angle",
-  "brd mnt",
-  "brd mnt ra",
-  "pin header",
-  "16 position",
-  "dist-legacy",
-  "generated",
-  "tier c",
   "pcb",
+  "header",
   "brd",
   "mnt",
   "ra",
+  "connector",
   "pad",
   "mm",
   "pitch",
@@ -62,7 +51,7 @@
   "tier_counts": {
    "C": 4
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
@@ -71,6 +60,6 @@
   "dist-legacy/16P_PCB_HEADER_BRD_MNT",
   "dist-legacy/16P_PCB_HEADER_BRD_MNT_RA"
  ],
- "embedding_text": "connector.16p | Connector | Cluster of 4 tier-C 16-pin connector parts sourced from dist-legacy, using 16P_PCB_HEADER_BRD_MNT or 16P_PCB_HEADER_BRD_MNT_RA footprints; mount type is unspecified. | 16p 16 pin connector header pcb header board mount right angle brd mnt brd mnt ra pin header 16 position dist-legacy generated tier c pcb brd mnt ra pad mm pitch pins duplic dup | 16P | ",
+ "embedding_text": "connector.16p | Connector | 4 connector parts using 16P footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | 16p pcb header brd mnt ra connector pad mm pitch pins duplic dup | 16P | ",
  "class": "connector"
 }

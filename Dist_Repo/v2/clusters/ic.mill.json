@@ -5,32 +5,23 @@
  "category_path": [
   "IC"
  ],
- "description": "This cluster contains 4 IC parts in the Mill package family with through-hole and unknown mounting styles.",
+ "description": "4 ic parts using Mill footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select tier B parts for higher quality rankings over tier C entries.",
-  "Verify compatibility with Mill-Max through-hole footprint options.",
-  "Match specific footprint requirements against available entries like 0914-0-15-20-77-14-11- or 0985-0-15-20-71-14-11-."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a Mill land pattern is intended."
  ],
  "avoid_when": [
-  "The design strictly requires surface-mount (SMD) packaging.",
-  "The application mandates tier A rated library components.",
-  "The PCB layout requires package families other than Mill."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than Mill."
  ],
  "keywords": [
-  "ic",
   "mill",
-  "mill-max",
-  "through hole",
-  "through_hole",
-  "0914-0-15-20-77-14-11-",
-  "0985-0-15-20-71-14-11-",
-  "tier b",
-  "tier c",
-  "dist-legacy",
-  "celestial-altium-library",
   "max",
   "receptacle",
   "pin",
+  "ic",
   "single",
   "contact",
   "pcb",
@@ -40,7 +31,8 @@
   "through",
   "hole",
   "pad",
-  "pins"
+  "pins",
+  "in"
  ],
  "facts": {
   "package_family": "Mill",
@@ -66,7 +58,7 @@
    "B": 2,
    "C": 2
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -92,6 +84,6 @@
   "celestial-altium-library/Mill-Max 0914-0-15-20-77-14-11-/Mill-Max_0914-0-15-20-77-14-11-",
   "celestial-altium-library/Mill-Max 0985-0-15-20-71-14-11-/Mill-Max_0985-0-15-20-71-14-11-"
  ],
- "embedding_text": "ic.mill | IC | This cluster contains 4 IC parts in the Mill package family with through-hole and unknown mounting styles. | ic mill mill-max through hole through_hole 0914-0-15-20-77-14-11- 0985-0-15-20-71-14-11- tier b tier c dist-legacy celestial-altium-library max receptacle pin single contact pcb socket manufactured by through hole pad pins | Mill | ",
+ "embedding_text": "ic.mill | IC | 4 ic parts using Mill footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | mill max receptacle pin ic single contact pcb socket manufactured by through hole pad pins in | Mill | ",
  "class": "ic"
 }

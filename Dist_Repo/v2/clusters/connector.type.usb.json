@@ -5,33 +5,23 @@
  "category_path": [
   "Connector"
  ],
- "description": "Cluster of 2 tier-B USB Type-C connector parts using TYPE package footprints, sourced from the JLCPCB-Kicad-Library, with no tier-A entries available.",
+ "description": "2 connector parts for USB using TYPE footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Match the exact footprint: TYPE-C-SMD_HX-TYPE-C-16PIN or TYPE-C-SMD_U263-163N-4BLS1735",
-  "Both entries are tier B (score 100) with no tier A option to prefer",
-  "Confirm pin-to-pad mapping against the chosen footprint before layout"
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a TYPE land pattern is intended."
  ],
  "avoid_when": [
-  "A tier A, datasheet-backed part is required",
-  "The board needs a footprint other than the two listed TYPE-C-SMD variants",
-  "Electrical ratings must be verified but are not stated for these parts"
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than TYPE."
  ],
  "keywords": [
-  "usb",
-  "usb type-c",
-  "type-c",
-  "type-c connector",
-  "connector",
-  "16 pin",
-  "16p",
-  "smd",
-  "type-c-smd",
-  "hx-type-c-16pin",
-  "u263-163n-4bls1735",
-  "jlcpcb",
-  "jlcpcb-kicad-library",
-  "tier b",
   "type",
+  "usb",
+  "smd",
+  "16p",
+  "connector",
   "horizontal",
   "attachment",
   "female",
@@ -40,7 +30,9 @@
   "hx",
   "16pin",
   "footprint",
-  "c2927039"
+  "c2927039",
+  "u263",
+  "163n"
  ],
  "facts": {
   "package_family": "TYPE",
@@ -64,7 +56,7 @@
   "tier_counts": {
    "B": 2
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -88,6 +80,6 @@
   "JLCPCB-Kicad-Library/JLCPCB-Extended/Connector, USB-TYPE-C-16P",
   "JLCPCB-Kicad-Library/2931474/USB Type C 16P"
  ],
- "embedding_text": "connector.type.usb | Connector | Cluster of 2 tier-B USB Type-C connector parts using TYPE package footprints, sourced from the JLCPCB-Kicad-Library, with no tier-A entries available. | usb usb type-c type-c type-c connector connector 16 pin 16p smd type-c-smd hx-type-c-16pin u263-163n-4bls1735 jlcpcb jlcpcb-kicad-library tier b type horizontal attachment female connectors rohs hx 16pin footprint c2927039 | TYPE | USB",
+ "embedding_text": "connector.type.usb | Connector | 2 connector parts for USB using TYPE footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | type usb smd 16p connector horizontal attachment female connectors rohs hx 16pin footprint c2927039 u263 163n | TYPE | USB",
  "class": "connector"
 }

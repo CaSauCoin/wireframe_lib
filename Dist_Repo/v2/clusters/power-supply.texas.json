@@ -6,28 +6,19 @@
   "Power",
   "Power Supply"
  ],
- "description": "Surface-mount power supply and battery management components from KiCad symbols in Texas footprint packages including Texas_S-PDSO-N12 and Texas_DRC0010J_ThermalVias.",
+ "description": "3 power power supply parts using Texas footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select between Texas_S-PDSO-N12 and Texas_DRC0010J_ThermalVias footprints.",
-  "Prioritize tier A parts such as BQ27441-G1 and BQ27750 over tier B options.",
-  "Verify battery management and power supply functional requirements for the target circuit."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a Texas land pattern is intended."
  ],
  "avoid_when": [
-  "Designs requiring through-hole mounting instead of SMD.",
-  "Layouts requiring packages other than Texas S-PDSO-N12 or DRC0010J land patterns.",
-  "Applications outside of power supply or battery management functions."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than Texas."
  ],
  "keywords": [
   "texas",
-  "power supply",
-  "smd",
-  "battery management",
-  "texas_s-pdso-n12",
-  "texas_drc0010j_thermalvias",
-  "bq27441-g1",
-  "bq27750",
-  "bq24013",
-  "kicad-symbols",
   "power",
   "management",
   "li",
@@ -41,7 +32,8 @@
   "polymer",
   "pdso",
   "n12",
-  "son"
+  "son",
+  "thermal"
  ],
  "facts": {
   "package_family": "Texas",
@@ -64,7 +56,7 @@
    "A": 2,
    "B": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -97,6 +89,6 @@
   "kicad-symbols/Battery_Management/BQ27750",
   "kicad-symbols/Battery_Management/BQ24013"
  ],
- "embedding_text": "power-supply.texas | Power Power Supply | Surface-mount power supply and battery management components from KiCad symbols in Texas footprint packages including Texas_S-PDSO-N12 and Texas_DRC0010J_ThermalVias. | texas power supply smd battery management texas_s-pdso-n12 texas_drc0010j_thermalvias bq27441-g1 bq27750 bq24013 kicad-symbols power management li ion fuel gauge battery supply system side polymer pdso n12 son | Texas | ",
+ "embedding_text": "power-supply.texas | Power Power Supply | 3 power power supply parts using Texas footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | texas power management li ion fuel gauge battery supply system side polymer pdso n12 son thermal | Texas | ",
  "class": "power.supply"
 }

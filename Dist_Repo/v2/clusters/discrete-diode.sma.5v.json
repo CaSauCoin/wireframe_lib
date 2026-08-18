@@ -6,28 +6,23 @@
   "Discrete",
   "Diode"
  ],
- "description": "Discrete SMD diode cluster in an SMA package for 5V applications, featuring Tier A library entries from SparkFun-KiCad-Libraries.",
+ "description": "1 discrete diode parts for 5V using SMA footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when designing with surface-mount 5V diode requirements using SMA footprints.",
-  "Choose for designs requiring Tier A parts from SparkFun-KiCad-Libraries.",
-  "Verify part specifications such as voltage and current ratings against circuit requirements."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SMA land pattern is intended."
  ],
  "avoid_when": [
-  "The layout requires through-hole mounting or a footprint other than SMA.",
-  "Circuit requirements do not match a 5V discrete SMA diode.",
-  "A package family other than SMA is specified."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SMA."
  ],
  "keywords": [
-  "diode",
-  "discrete",
-  "sma",
-  "smd",
-  "5v",
   "schottky",
   "sparkfun",
-  "discrete.diode",
-  "surface mount",
-  "tier a",
+  "diode",
+  "5v",
+  "sma",
   "1a",
   "40v",
   "discretesemi",
@@ -35,7 +30,8 @@
   "ss12",
   "ss13",
   "ss15",
-  "ss16"
+  "ss16",
+  "discrete"
  ],
  "facts": {
   "package_family": "SMA",
@@ -58,7 +54,7 @@
   "tier_counts": {
    "A": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -73,6 +69,6 @@
  "part_ids": [
   "SparkFun-KiCad-Libraries/SparkFun-DiscreteSemi/D_Schottky_1A_40V_0.5V"
  ],
- "embedding_text": "discrete-diode.sma.5v | Discrete Diode | Discrete SMD diode cluster in an SMA package for 5V applications, featuring Tier A library entries from SparkFun-KiCad-Libraries. | diode discrete sma smd 5v schottky sparkfun discrete.diode surface mount tier a 1a 40v discretesemi ss14 ss12 ss13 ss15 ss16 | SMA | 5V",
+ "embedding_text": "discrete-diode.sma.5v | Discrete Diode | 1 discrete diode parts for 5V using SMA footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | schottky sparkfun diode 5v sma 1a 40v discretesemi ss14 ss12 ss13 ss15 ss16 discrete | SMA | 5V",
  "class": "discrete.diode"
 }

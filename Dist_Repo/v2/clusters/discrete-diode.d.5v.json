@@ -6,44 +6,34 @@
   "Discrete",
   "Diode"
  ],
- "description": "Cluster of 66 discrete diode parts in the D package family with a 5V facet, spanning SOD-123F/323/523/882, SMA, SMB, SMC and their TVS variants across SMD and through-hole mounts.",
+ "description": "66 discrete diode parts for 5V using D footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Match the exact D footprint (e.g. SOD-323, SMA, SMB, SMC) to the intended PCB land pattern.",
-  "Prefer tier A entries (52 of 66 parts) over tier B for higher confidence.",
-  "Confirm whether a plain or TVS-suffixed footprint variant is needed before choosing.",
-  "Weigh source trust: entries come from Alternate-KiCad-Library, kicad-symbols, and JLCPCB-Kicad-Library."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a D land pattern is intended."
  ],
  "avoid_when": [
-  "The board requires a footprint outside this D-family list.",
-  "The symbol-footprint pairing for the chosen part is unverified or flagged for review.",
-  "The design needs a voltage facet other than 5V.",
-  "Plain and TVS footprint variants are interchangeable in name only but not in the design intent."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than D."
  ],
  "keywords": [
   "diode",
-  "discrete diode",
-  "tvs diode",
-  "5v diode",
-  "d package",
-  "sod-123f",
-  "sod-323",
-  "sod-523",
-  "sod-882",
-  "dfn1006-2",
-  "sma diode",
-  "smb diode",
-  "smc diode",
-  "smd diode",
-  "through hole diode",
-  "kicad-symbols",
-  "alternate-kicad-library",
-  "jlcpcb-kicad-library",
   "tvs",
   "5v",
   "sod",
   "discrete",
   "unidirectional",
-  "alternate"
+  "alternate",
+  "kicad",
+  "library",
+  "akl",
+  "bidirectional",
+  "dfn1006",
+  "do",
+  "smc",
+  "sma",
+  "123f"
  ],
  "facts": {
   "package_family": "D",
@@ -81,7 +71,7 @@
    "A": 52,
    "B": 14
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -193,6 +183,6 @@
   "Alternate-KiCad-Library/Diode_TVS_AKL/uClamp0501P",
   "JLCPCB-Kicad-Library/JLCPCB-Diodes/Zener,1SMA4737A"
  ],
- "embedding_text": "discrete-diode.d.5v | Discrete Diode | Cluster of 66 discrete diode parts in the D package family with a 5V facet, spanning SOD-123F/323/523/882, SMA, SMB, SMC and their TVS variants across SMD and through-hole mounts. | diode discrete diode tvs diode 5v diode d package sod-123f sod-323 sod-523 sod-882 dfn1006-2 sma diode smb diode smc diode smd diode through hole diode kicad-symbols alternate-kicad-library jlcpcb-kicad-library tvs 5v sod discrete unidirectional alternate | D | 5V",
+ "embedding_text": "discrete-diode.d.5v | Discrete Diode | 66 discrete diode parts for 5V using D footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | diode tvs 5v sod discrete unidirectional alternate kicad library akl bidirectional dfn1006 do smc sma 123f | D | 5V",
  "class": "discrete.diode"
 }

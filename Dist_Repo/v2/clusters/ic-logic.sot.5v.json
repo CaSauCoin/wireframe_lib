@@ -6,31 +6,22 @@
   "IC",
   "Logic"
  ],
- "description": "Logic IC cluster for 5V surface-mount applications using SOT family packages including SOT-363.",
+ "description": "1 ic logic parts for 5V using SOT footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select for 5V logic designs requiring surface-mount SOT package footprints.",
-  "Verify exact footprint suitability such as SOT-363_L2.1-W1.3-P0.65-LS2.1-BL.",
-  "Check tier B quality status and source compatibility with JLCPCB KiCad Library."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SOT land pattern is intended."
  ],
  "avoid_when": [
-  "The design requires non-SMD mounting or packages outside the SOT family.",
-  "Operating voltage requirements differ from 5V logic.",
-  "A higher quality tier than tier B is strictly required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SOT."
  ],
  "keywords": [
-  "ic logic",
-  "5v",
   "sot",
-  "smd",
-  "sot-363",
-  "surface mount",
-  "jlcpcb-kicad-library",
-  "dda123ju-7-f",
-  "pre biased",
-  "2 channel",
   "pnp",
-  "tier b",
   "pre",
+  "5v",
   "l2",
   "w1",
   "p0",
@@ -41,7 +32,8 @@
   "biased",
   "dda123ju",
   "10ma",
-  "bias"
+  "bias",
+  "200mw"
  ],
  "facts": {
   "package_family": "SOT",
@@ -64,7 +56,7 @@
   "tier_counts": {
    "B": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -79,6 +71,6 @@
  "part_ids": [
   "JLCPCB-Kicad-Library/444982/PNP, 2 Channel, Pre Biased, DDA123JU-7-F"
  ],
- "embedding_text": "ic-logic.sot.5v | IC Logic | Logic IC cluster for 5V surface-mount applications using SOT family packages including SOT-363. | ic logic 5v sot smd sot-363 surface mount jlcpcb-kicad-library dda123ju-7-f pre biased 2 channel pnp tier b pre l2 w1 p0 ls2 bl c444982 channel biased dda123ju 10ma bias | SOT | 5V",
+ "embedding_text": "ic-logic.sot.5v | IC Logic | 1 ic logic parts for 5V using SOT footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | sot pnp pre 5v l2 w1 p0 ls2 bl c444982 channel biased dda123ju 10ma bias 200mw | SOT | 5V",
  "class": "ic.logic"
 }

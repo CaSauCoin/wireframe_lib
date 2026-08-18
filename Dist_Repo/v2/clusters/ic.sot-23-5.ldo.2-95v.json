@@ -5,30 +5,18 @@
  "category_path": [
   "IC"
  ],
- "description": "Cluster of 4 Tier A surface-mount low-dropout (LDO) voltage regulator ICs specified for 2.95V output in a SOT-23-5 package.",
+ "description": "4 ic parts for LDO, 2.95V using SOT-23-5 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Choose when requiring a 2.95V output LDO regulator in a surface-mount SOT-23-5 package.",
-  "Select between AP7315-295W5, AP7315D-295W5, AP7343-295W5, or AP7343D-295W5 variants depending on design specifications.",
-  "Confirm compatibility with SOT-23-5 SMD land patterns."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SOT-23-5 land pattern is intended."
  ],
  "avoid_when": [
-  "The application requires an output voltage other than 2.95V.",
-  "The PCB layout specifies a footprint or package family other than SOT-23-5.",
-  "Through-hole mounting is required instead of SMD."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SOT-23-5."
  ],
  "keywords": [
-  "ic",
-  "ldo",
-  "2.95v",
-  "sot-23-5",
-  "smd",
-  "voltage regulator",
-  "low dropout",
-  "ap7315-295w5",
-  "ap7315d-295w5",
-  "ap7343-295w5",
-  "ap7343d-295w5",
-  "alternate-kicad-library",
   "sot",
   "voltage",
   "regulator",
@@ -36,11 +24,15 @@
   "low",
   "dropout",
   "enable",
+  "ldo",
   "295w5",
   "akl",
   "150ma",
   "with",
-  "alternate"
+  "alternate",
+  "kicad",
+  "library",
+  "vreg"
  ],
  "facts": {
   "package_family": "SOT-23-5",
@@ -64,7 +56,7 @@
   "tier_counts": {
    "A": 4
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -106,6 +98,6 @@
   "Alternate-KiCad-Library/Voltage_Regulator_AKL/AP7343-295W5",
   "Alternate-KiCad-Library/Voltage_Regulator_AKL/AP7343D-295W5"
  ],
- "embedding_text": "ic.sot-23-5.ldo.2-95v | IC | Cluster of 4 Tier A surface-mount low-dropout (LDO) voltage regulator ICs specified for 2.95V output in a SOT-23-5 package. | ic ldo 2.95v sot-23-5 smd voltage regulator low dropout ap7315-295w5 ap7315d-295w5 ap7343-295w5 ap7343d-295w5 alternate-kicad-library sot voltage regulator 95v low dropout enable 295w5 akl 150ma with alternate | SOT-23-5 | LDO 2.95V",
+ "embedding_text": "ic.sot-23-5.ldo.2-95v | IC | 4 ic parts for LDO, 2.95V using SOT-23-5 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | sot voltage regulator 95v low dropout enable ldo 295w5 akl 150ma with alternate kicad library vreg | SOT-23-5 | LDO 2.95V",
  "class": "ic"
 }

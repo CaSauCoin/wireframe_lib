@@ -5,28 +5,20 @@
  "category_path": [
   "IC"
  ],
- "description": "IC cluster containing 3 parts in package family PDB304 using footprints PDB304_L, PDB304_M, and PDB304_N.",
+ "description": "3 ic parts using PDB304 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when a PDB304 package family footprint (PDB304_L, PDB304_M, or PDB304_N) is required.",
-  "Verify component details carefully as all 3 parts are quality tier C.",
-  "Confirm symbol and footprint mapping prior to board layout."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a PDB304 land pattern is intended."
  ],
  "avoid_when": [
-  "The design requires a package family other than PDB304.",
-  "Footprints PDB304_L, PDB304_M, or PDB304_N do not fit layout specifications.",
-  "Verified higher tier parts (Tier A or B) are mandatory."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than PDB304."
  ],
  "keywords": [
-  "ic",
   "pdb304",
-  "pdb304_l",
-  "pdb304_m",
-  "pdb304_n",
-  "integrated circuit",
-  "package family pdb304",
-  "tier c",
-  "dist-legacy",
-  "pdb304 footprint",
+  "ic",
   "pad",
   "mm",
   "pitch",
@@ -53,7 +45,7 @@
   "tier_counts": {
    "C": 3
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
@@ -61,6 +53,6 @@
   "dist-legacy/PDB304_M",
   "dist-legacy/PDB304_N"
  ],
- "embedding_text": "ic.pdb304 | IC | IC cluster containing 3 parts in package family PDB304 using footprints PDB304_L, PDB304_M, and PDB304_N. | ic pdb304 pdb304_l pdb304_m pdb304_n integrated circuit package family pdb304 tier c dist-legacy pdb304 footprint pad mm pitch pins | PDB304 | ",
+ "embedding_text": "ic.pdb304 | IC | 3 ic parts using PDB304 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | pdb304 ic pad mm pitch pins | PDB304 | ",
  "class": "ic"
 }

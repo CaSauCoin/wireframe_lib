@@ -6,30 +6,22 @@
   "Discrete",
   "Diode"
  ],
- "description": "Discrete diode cluster containing 1 tier C part using the D0.5A package family and footprint.",
+ "description": "1 discrete diode parts using D0.5A footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Verify footprint match for the D0.5A package family.",
-  "Use when a discrete diode in a D0.5A footprint is required.",
-  "Check tier C quality status and legacy distribution source."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a D0.5A land pattern is intended."
  ],
  "avoid_when": [
-  "A footprint or package family other than D0.5A is required.",
-  "The application requires parts visible to the planner.",
-  "Tier C quality status is not suitable for design requirements."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than D0.5A."
  ],
  "keywords": [
-  "discrete",
-  "diode",
-  "discrete diode",
-  "d0.5a",
-  "d0.5a package",
-  "d0.5a footprint",
-  "discrete.diode",
-  "dist-legacy",
-  "tier c",
-  "package family d0.5a",
   "d0",
   "5a",
+  "discrete",
+  "diode",
   "pad",
   "mm",
   "pitch",
@@ -54,12 +46,12 @@
   "tier_counts": {
    "C": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
   "dist-legacy/D0.5A"
  ],
- "embedding_text": "discrete-diode.d0-5a | Discrete Diode | Discrete diode cluster containing 1 tier C part using the D0.5A package family and footprint. | discrete diode discrete diode d0.5a d0.5a package d0.5a footprint discrete.diode dist-legacy tier c package family d0.5a d0 5a pad mm pitch pins | D0.5A | ",
+ "embedding_text": "discrete-diode.d0-5a | Discrete Diode | 1 discrete diode parts using D0.5A footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | d0 5a discrete diode pad mm pitch pins | D0.5A | ",
  "class": "discrete.diode"
 }

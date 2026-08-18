@@ -7,42 +7,34 @@
   "Analog",
   "Comparator"
  ],
- "description": "Surface-mount analog comparator integrated circuits in SOIC-8 and SOIC-14 packages.",
+ "description": "15 ic analog comparator parts using SOIC footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when requiring an SMD analog comparator IC in a SOIC package.",
-  "Choose between SOIC-8 (3.9x4.9mm) and SOIC-14 (3.9x8.7mm) footprint variants.",
-  "Verify compatibility with representative parts including AD8561, LM2903, LM311, LM393, and LMV393."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SOIC land pattern is intended."
  ],
  "avoid_when": [
-  "Through-hole mounting or package families other than SOIC are required.",
-  "Footprints other than SOIC-8 or SOIC-14 1.27mm pitch are needed.",
-  "Integrated circuits outside the analog comparator class are required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SOIC."
  ],
  "keywords": [
   "soic",
-  "soic-8",
-  "soic-14",
-  "analog comparator",
   "comparator",
-  "ic",
-  "smd",
-  "ad8561",
-  "lm2903",
-  "lm311",
-  "lm393",
-  "lmv393",
-  "p1.27mm",
-  "ic.analog.comparator",
   "p1",
   "27mm",
   "so",
+  "ic",
   "analog",
   "cmp",
   "9x4",
   "9mm",
   "open",
   "collector",
-  "dip"
+  "dip",
+  "tssop",
+  "low",
+  "single"
  ],
  "facts": {
   "package_family": "SOIC",
@@ -64,7 +56,7 @@
   "tier_counts": {
    "A": 15
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -125,6 +117,6 @@
   "kicad-symbols/Comparator/LMV339",
   "kicad-symbols/Comparator/LP2901D"
  ],
- "embedding_text": "ic-analog-comparator.soic | IC Analog Comparator | Surface-mount analog comparator integrated circuits in SOIC-8 and SOIC-14 packages. | soic soic-8 soic-14 analog comparator comparator ic smd ad8561 lm2903 lm311 lm393 lmv393 p1.27mm ic.analog.comparator p1 27mm so analog cmp 9x4 9mm open collector dip | SOIC | ",
+ "embedding_text": "ic-analog-comparator.soic | IC Analog Comparator | 15 ic analog comparator parts using SOIC footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | soic comparator p1 27mm so ic analog cmp 9x4 9mm open collector dip tssop low single | SOIC | ",
  "class": "ic.analog.comparator"
 }

@@ -5,31 +5,22 @@
  "category_path": [
   "IC"
  ],
- "description": "Cluster of 8 IC parts associated with Abracon footprints across SMD, through-hole, and unknown mounting types.",
+ "description": "8 ic parts using Abracon footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when requiring parts mapped to Abracon package footprints such as AOCJY2, ASPIAIG-F1040, or ARJC02-111008B.",
-  "Choose based on required mounting style including surface mount (SMD) or through-hole.",
-  "Check quality tier distribution, noting 1 tier B part and 7 tier C parts in the cluster."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a Abracon land pattern is intended."
  ],
  "avoid_when": [
-  "Avoid when board layout requires footprints outside the Abracon package family.",
-  "Avoid if the project requires tier A rated components.",
-  "Avoid when specific footprint details or electrical ratings are unverified."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than Abracon."
  ],
  "keywords": [
   "abracon",
   "ic",
-  "aocjy2",
-  "aspiaig-f1040",
-  "aspiaig-f1265",
-  "apaes868r8060c16-t",
-  "arjc02-111008b",
-  "pro-ob-471",
-  "smd",
-  "through hole",
-  "dist legacy",
-  "celestial altium library",
   "aspiaig",
+  "aocjy2",
   "pins",
   "arjc02",
   "111008b",
@@ -40,7 +31,8 @@
   "ob",
   "f1040",
   "f1265",
-  "apaes868r8060c16"
+  "apaes868r8060c16",
+  "antenna"
  ],
  "facts": {
   "package_family": "Abracon",
@@ -71,7 +63,7 @@
    "B": 1,
    "C": 7
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -93,6 +85,6 @@
   "celestial-altium-library/Abracon ARJC02-111008B/Abracon_ARJC02-111008B",
   "dist-legacy/Abracon_PRO-OB-471"
  ],
- "embedding_text": "ic.abracon | IC | Cluster of 8 IC parts associated with Abracon footprints across SMD, through-hole, and unknown mounting types. | abracon ic aocjy2 aspiaig-f1040 aspiaig-f1265 apaes868r8060c16-t arjc02-111008b pro-ob-471 smd through hole dist legacy celestial altium library aspiaig pins arjc02 111008b pad mm pitch pro ob f1040 f1265 apaes868r8060c16 | Abracon | ",
+ "embedding_text": "ic.abracon | IC | 8 ic parts using Abracon footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | abracon ic aspiaig aocjy2 pins arjc02 111008b pad mm pitch pro ob f1040 f1265 apaes868r8060c16 antenna | Abracon | ",
  "class": "ic"
 }

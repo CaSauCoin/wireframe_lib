@@ -5,28 +5,21 @@
  "category_path": [
   "IC"
  ],
- "description": "Integrated circuit cluster of 3 parts in the SOJ28 package family featuring SMD mounting and SOJ28 footprints.",
+ "description": "3 ic parts using SOJ28 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when a surface-mount integrated circuit in an SOJ28 package family footprint is required.",
-  "Prefer tier B parts such as 71256L over lower tier C parts in the cluster.",
-  "Verify part source trust and exact footprint compatibility before board layout."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SOJ28 land pattern is intended."
  ],
  "avoid_when": [
-  "The PCB design requires a package family or land pattern other than SOJ28.",
-  "Surface-mount technology (SMD) is not supported by the assembly process.",
-  "Required electrical parameters, ratings, or pinouts are not confirmed in the source data."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SOJ28."
  ],
  "keywords": [
   "soj28",
   "ic",
-  "integrated circuit",
-  "smd",
-  "surface mount",
   "71256l",
-  "soj28 package",
-  "soj28 footprint",
-  "package family",
-  "tier b",
   "static",
   "ram",
   "memory",
@@ -62,7 +55,7 @@
    "B": 1,
    "C": 2
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -79,6 +72,6 @@
   "francescosacco-hardwarelibrary/SOJ28/SOJ28",
   "dist-legacy/SOJ28"
  ],
- "embedding_text": "ic.soj28 | IC | Integrated circuit cluster of 3 parts in the SOJ28 package family featuring SMD mounting and SOJ28 footprints. | soj28 ic integrated circuit smd surface mount 71256l soj28 package soj28 footprint package family tier b static ram memory pad mm pitch pins in package sram surface mount | SOJ28 | ",
+ "embedding_text": "ic.soj28 | IC | 3 ic parts using SOJ28 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | soj28 ic 71256l static ram memory pad mm pitch pins in package sram surface mount | SOJ28 | ",
  "class": "ic"
 }

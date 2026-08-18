@@ -6,35 +6,28 @@
   "Passive",
   "Capacitor"
  ],
- "description": "Surface-mount 10V passive capacitor cluster containing 2 tier-B parts in 0603 footprints from JLCPCB and Seeed OPL KiCad libraries.",
+ "description": "2 passive capacitor parts for 10V using 0603 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Verify required capacitance value and tolerance among available parts.",
-  "Check footprint compatibility between C_0603 and C0603 land patterns.",
-  "Select between JLCPCB and Seeed OPL library sources based on sourcing requirements."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a 0603 land pattern is intended."
  ],
  "avoid_when": [
-  "Circuit operating voltage exceeds the 10V rating.",
-  "PCB layout requires a package size other than 0603.",
-  "Through-hole mounting is required instead of SMD.",
-  "Designs strictly require tier-A validated components."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than 0603."
  ],
  "keywords": [
   "capacitor",
-  "passive capacitor",
   "10v",
-  "0603",
-  "smd",
-  "c_0603",
-  "c0603",
-  "jlcpcb",
-  "seeed opl",
   "ceramic",
   "x7r",
   "10uf",
-  "2.2uf",
   "capacitors",
+  "smd",
   "passive",
   "2uf",
+  "jlcpcb",
   "x5r",
   "multilayer",
   "mlcc",
@@ -65,7 +58,7 @@
   "tier_counts": {
    "B": 2
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -89,6 +82,6 @@
   "JLCPCB-Kicad-Library/JLCPCB-Capacitors/0603,10uF",
   "Seeed-OPL-Kicad-Library/OPL_Capacitor/CERAMIC-2.2UF-10V-10%-X7R_0603_"
  ],
- "embedding_text": "passive-capacitor.0603.10v | Passive Capacitor | Surface-mount 10V passive capacitor cluster containing 2 tier-B parts in 0603 footprints from JLCPCB and Seeed OPL KiCad libraries. | capacitor passive capacitor 10v 0603 smd c_0603 c0603 jlcpcb seeed opl ceramic x7r 10uf 2.2uf capacitors passive 2uf x5r multilayer mlcc smt rohs opl | 0603 | 10V",
+ "embedding_text": "passive-capacitor.0603.10v | Passive Capacitor | 2 passive capacitor parts for 10V using 0603 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | capacitor 10v ceramic x7r 10uf capacitors smd passive 2uf jlcpcb x5r multilayer mlcc smt rohs opl | 0603 | 10V",
  "class": "passive.capacitor"
 }

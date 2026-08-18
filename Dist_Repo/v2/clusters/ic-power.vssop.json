@@ -6,42 +6,34 @@
   "IC",
   "Power"
  ],
- "description": "Surface-mount power IC cluster featuring VSSOP packages such as VSSOP-8_3x3mm_P0.65mm for power management and regulator controller applications.",
+ "description": "1 ic power parts using VSSOP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when designing surface-mount power IC circuits requiring a VSSOP package footprint.",
-  "Verify exact pin mapping, thermal requirements, and footprint pitch such as 0.65mm.",
-  "Confirm electrical parameters and datasheet specifications for parts like the LM5023 regulator controller."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a VSSOP land pattern is intended."
  ],
  "avoid_when": [
-  "Avoid if the board design requires through-hole mounting or a non-VSSOP package family.",
-  "Do not use if specific electrical ratings, pinouts, or power tolerances are unspecified.",
-  "Avoid when the schematic requires an IC outside of power management or regulator control."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than VSSOP."
  ],
  "keywords": [
   "vssop",
-  "vssop-8",
-  "smd",
-  "ic power",
-  "regulator controller",
-  "lm5023",
-  "kicad-symbols",
-  "power management",
-  "surface mount",
-  "pwm",
-  "quasi resonant",
-  "ac dc",
   "controller",
   "quasi",
   "resonant",
+  "pwm",
   "off",
   "line",
   "ovp",
   "ac",
   "dc",
+  "lm5023",
   "regulator",
   "current",
   "mode",
-  "for"
+  "for",
+  "supplies"
  ],
  "facts": {
   "package_family": "VSSOP",
@@ -62,7 +54,7 @@
   "tier_counts": {
    "A": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -77,6 +69,6 @@
  "part_ids": [
   "kicad-symbols/Regulator_Controller/LM5023"
  ],
- "embedding_text": "ic-power.vssop | IC Power | Surface-mount power IC cluster featuring VSSOP packages such as VSSOP-8_3x3mm_P0.65mm for power management and regulator controller applications. | vssop vssop-8 smd ic power regulator controller lm5023 kicad-symbols power management surface mount pwm quasi resonant ac dc controller quasi resonant off line ovp ac dc regulator current mode for | VSSOP | ",
+ "embedding_text": "ic-power.vssop | IC Power | 1 ic power parts using VSSOP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | vssop controller quasi resonant pwm off line ovp ac dc lm5023 regulator current mode for supplies | VSSOP | ",
  "class": "ic.power"
 }

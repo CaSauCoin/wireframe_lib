@@ -6,35 +6,24 @@
   "IC",
   "Memory"
  ],
- "description": "This cluster contains 2 surface-mount IC memory parts in the SOC127 package family using the SOC127_6 footprint.",
+ "description": "2 ic memory parts using SOC127 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Verify that a surface-mount IC memory part in the SOC127 package family is required.",
-  "Confirm compatibility with the SOC127_6 footprint.",
-  "Review parts sourced from the chilaboard-altium-library.",
-  "Note that all 2 parts in this cluster are categorized under quality tier C."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SOC127 land pattern is intended."
  ],
  "avoid_when": [
-  "The design requires a package family other than SOC127.",
-  "A footprint other than SOC127_6 is required.",
-  "Through-hole mounting is required instead of SMD.",
-  "Parts with quality tiers higher than tier C are required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SOC127."
  ],
  "keywords": [
-  "ic",
-  "memory",
-  "ic memory",
-  "soc127",
-  "soc127_6",
-  "smd",
-  "chilaboard",
-  "altium",
-  "chilaboard-altium-library",
-  "tier c",
-  "ic.memory",
-  "generated",
   "eeprom",
   "1w",
   "tsoc6",
+  "soc127",
+  "ic",
+  "memory",
   "ds2432",
   "ds28e07",
   "surface",
@@ -63,13 +52,13 @@
   "tier_counts": {
    "C": 2
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
   "chilaboard-altium-library/EEPROM_1W_DS2432_TSOC6/EEPROM_1W_DS2432_TSOC6",
   "chilaboard-altium-library/EEPROM_1W_DS28E07_TSOC6/EEPROM_1W_DS28E07_TSOC6"
  ],
- "embedding_text": "ic-memory.soc127 | IC Memory | This cluster contains 2 surface-mount IC memory parts in the SOC127 package family using the SOC127_6 footprint. | ic memory ic memory soc127 soc127_6 smd chilaboard altium chilaboard-altium-library tier c ic.memory generated eeprom 1w tsoc6 ds2432 ds28e07 surface mount pad mm pitch pins | SOC127 | ",
+ "embedding_text": "ic-memory.soc127 | IC Memory | 2 ic memory parts using SOC127 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | eeprom 1w tsoc6 soc127 ic memory ds2432 ds28e07 surface mount pad mm pitch pins | SOC127 | ",
  "class": "ic.memory"
 }

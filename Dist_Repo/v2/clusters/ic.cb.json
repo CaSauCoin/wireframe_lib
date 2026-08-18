@@ -5,33 +5,24 @@
  "category_path": [
   "IC"
  ],
- "description": "Integrated circuit cluster in the CB package family featuring current sensor parts in the CB-5_Formed_Leads footprint.",
+ "description": "3 ic parts using CB footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Choose when needing IC components in the CB package family with the CB-5_Formed_Leads footprint.",
-  "Select among available ACS770 current sensor part numbers in the digikey-kicad-library.",
-  "Verify part attributes against tier B source definitions prior to layout."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a CB land pattern is intended."
  ],
  "avoid_when": [
-  "The PCB design requires a package footprint other than CB-5_Formed_Leads.",
-  "Unknown mounting type or tier B rating does not fulfill project constraints.",
-  "Components outside of the CB package family or IC category are required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than CB."
  ],
  "keywords": [
-  "ic",
-  "cb",
-  "cb-5_formed_leads",
-  "formed leads",
-  "current sensors",
-  "digikey-kicad-library",
-  "acs770ecb-200u-pff-t",
-  "acs770lcb-050b-pff-t",
-  "acs770lcb-100u-pff-t",
-  "acs770lcb",
-  "sensor",
-  "sensors",
   "current",
+  "sensors",
+  "cb",
   "pff",
   "dk",
+  "sensor",
   "hall",
   "dc",
   "formed",
@@ -39,7 +30,9 @@
   "transducers",
   "allegro",
   "microsystems",
-  "llc"
+  "llc",
+  "ic",
+  "acs770lcb"
  ],
  "facts": {
   "package_family": "CB",
@@ -60,7 +53,7 @@
   "tier_counts": {
    "B": 3
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -93,6 +86,6 @@
   "digikey-kicad-library/dk_Current-Sensors/ACS770LCB-050B-PFF-T",
   "digikey-kicad-library/dk_Current-Sensors/ACS770LCB-100U-PFF-T"
  ],
- "embedding_text": "ic.cb | IC | Integrated circuit cluster in the CB package family featuring current sensor parts in the CB-5_Formed_Leads footprint. | ic cb cb-5_formed_leads formed leads current sensors digikey-kicad-library acs770ecb-200u-pff-t acs770lcb-050b-pff-t acs770lcb-100u-pff-t acs770lcb sensor sensors current pff dk hall dc formed leads transducers allegro microsystems llc | CB | ",
+ "embedding_text": "ic.cb | IC | 3 ic parts using CB footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | current sensors cb pff dk sensor hall dc formed leads transducers allegro microsystems llc ic acs770lcb | CB | ",
  "class": "ic"
 }

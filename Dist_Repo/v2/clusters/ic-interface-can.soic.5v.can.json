@@ -7,31 +7,22 @@
   "Interface",
   "CAN"
  ],
- "description": "Surface-mount CAN interface IC cluster operating at 5V in SOIC package options including SOIC-8 and SOIC-14 footprints.",
+ "description": "7 ic interface can parts for 5V, CAN using SOIC footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select SOIC-8 or SOIC-14 footprint based on the specific part pin count and package dimension required.",
-  "Verify 5V operation requirement for the target CAN interface circuit.",
-  "Confirm SMD land pattern compatibility with 1.27mm pin pitch."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SOIC land pattern is intended."
  ],
  "avoid_when": [
-  "The design requires non-SOIC packages or through-hole mounting.",
-  "The interface circuit operates on voltage levels other than 5V.",
-  "A non-CAN interface protocol IC is required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SOIC."
  ],
  "keywords": [
-  "ic",
-  "interface",
   "can",
-  "5v",
   "soic",
-  "soic-8",
-  "soic-14",
-  "smd",
-  "p1.27mm",
-  "3.9x4.9mm",
-  "3.9x8.7mm",
-  "can interface",
-  "soic package",
+  "interface",
+  "5v",
   "transceiver",
   "high",
   "speed",
@@ -39,6 +30,7 @@
   "p1",
   "27mm",
   "so",
+  "ic",
   "supply",
   "9x4",
   "9mm",
@@ -67,7 +59,7 @@
   "tier_counts": {
    "A": 7
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -120,6 +112,6 @@
   "kicad-symbols/Interface_CAN_LIN/MCP2562-E-SN",
   "kicad-symbols/Interface_CAN_LIN/MCP2562-H-SN"
  ],
- "embedding_text": "ic-interface-can.soic.5v.can | IC Interface CAN | Surface-mount CAN interface IC cluster operating at 5V in SOIC package options including SOIC-8 and SOIC-14 footprints. | ic interface can 5v soic soic-8 soic-14 smd p1.27mm 3.9x4.9mm 3.9x8.7mm can interface soic package transceiver high speed lin p1 27mm so supply 9x4 9mm to | SOIC | 5V CAN",
+ "embedding_text": "ic-interface-can.soic.5v.can | IC Interface CAN | 7 ic interface can parts for 5V, CAN using SOIC footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | can soic interface 5v transceiver high speed lin p1 27mm so ic supply 9x4 9mm to | SOIC | 5V CAN",
  "class": "ic.interface.can"
 }

@@ -6,33 +6,29 @@
   "Discrete",
   "Transistor"
  ],
- "description": "Discrete transistor cluster featuring 50V surface-mount parts in SOIC-20W and SOIC-18 packages.",
+ "description": "2 discrete transistor parts for 50V using SOIC footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when 50V surface-mount discrete transistor parts are needed in SOIC footprints.",
-  "Choose between SOIC-20W_7.5x12.8mm_P1.27mm and SOIC-18_W7.5mm package footprints.",
-  "Consider part quality tiers, including Tier A part A2982 and Tier B part ULN2803ADWR."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SOIC land pattern is intended."
  ],
  "avoid_when": [
-  "The design requires package families other than SOIC.",
-  "Through-hole mounting is required instead of SMD.",
-  "Voltage specifications other than 50V are required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SOIC."
  ],
  "keywords": [
   "soic",
   "50v",
   "transistor",
   "discrete",
-  "smd",
-  "soic-20w",
-  "soic-18",
-  "a2982",
-  "uln2803adwr",
-  "bipolar",
-  "bjt",
-  "array",
   "20w",
   "transistors",
+  "bipolar",
+  "bjt",
   "arrays",
+  "a2982",
+  "array",
   "channel",
   "source",
   "driver",
@@ -63,7 +59,7 @@
    "A": 1,
    "B": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -87,6 +83,6 @@
   "kicad-symbols/Transistor_Array/A2982",
   "digikey-kicad-library/dk_Transistors-Bipolar-BJT-Arrays/ULN2803ADWR"
  ],
- "embedding_text": "discrete-transistor.soic.50v | Discrete Transistor | Discrete transistor cluster featuring 50V surface-mount parts in SOIC-20W and SOIC-18 packages. | soic 50v transistor discrete smd soic-20w soic-18 a2982 uln2803adwr bipolar bjt array 20w transistors arrays channel source driver ttl dtl | SOIC | 50V",
+ "embedding_text": "discrete-transistor.soic.50v | Discrete Transistor | 2 discrete transistor parts for 50V using SOIC footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | soic 50v transistor discrete 20w transistors bipolar bjt arrays a2982 array channel source driver ttl dtl | SOIC | 50V",
  "class": "discrete.transistor"
 }

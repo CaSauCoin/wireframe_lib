@@ -6,34 +6,25 @@
   "Power",
   "Power Supply"
  ],
- "description": "Power supply and battery management components rated for 4.4V in surface-mount QFN-20 packages.",
+ "description": "2 power power supply parts for 4.4V using QFN footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Confirm compatibility with the 4.4V facet specification.",
-  "Verify PCB land pattern matches the QFN-20-1EP 4x4mm 0.5mm pitch footprint with exposed pad.",
-  "Select between MCP73871-4CA and MCP73871-4CC variants based on system needs."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a QFN land pattern is intended."
  ],
  "avoid_when": [
-  "A voltage specification other than 4.4V is required.",
-  "The board layout requires through-hole mounting or a package family other than QFN.",
-  "The design cannot accommodate a QFN-20 package with an exposed pad."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than QFN."
  ],
  "keywords": [
-  "power supply",
   "qfn",
-  "4.4v",
-  "smd",
-  "surface mount",
-  "qfn-20",
-  "qfn-20-1ep",
-  "mcp73871",
-  "mcp73871-4ca",
-  "mcp73871-4cc",
-  "battery management",
-  "power",
   "battery",
   "management",
   "li",
   "5mm",
+  "power",
+  "mcp73871",
   "single",
   "cell",
   "ion",
@@ -41,7 +32,8 @@
   "charge",
   "controller",
   "40v",
-  "6h"
+  "6h",
+  "safety"
  ],
  "facts": {
   "package_family": "QFN",
@@ -64,7 +56,7 @@
   "tier_counts": {
    "A": 2
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -88,6 +80,6 @@
   "kicad-symbols/Battery_Management/MCP73871-4CA",
   "kicad-symbols/Battery_Management/MCP73871-4CC"
  ],
- "embedding_text": "power-supply.qfn.4-4v | Power Power Supply | Power supply and battery management components rated for 4.4V in surface-mount QFN-20 packages. | power supply qfn 4.4v smd surface mount qfn-20 qfn-20-1ep mcp73871 mcp73871-4ca mcp73871-4cc battery management power battery management li 5mm single cell ion po charge controller 40v 6h | QFN | 4.4V",
+ "embedding_text": "power-supply.qfn.4-4v | Power Power Supply | 2 power power supply parts for 4.4V using QFN footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | qfn battery management li 5mm power mcp73871 single cell ion po charge controller 40v 6h safety | QFN | 4.4V",
  "class": "power.supply"
 }

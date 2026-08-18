@@ -6,37 +6,31 @@
   "Discrete",
   "Transistor"
  ],
- "description": "Cluster of 7 discrete transistor parts with HARWIN package footprints supporting surface-mount and through-hole mounting configurations.",
+ "description": "7 discrete transistor parts using HARWIN footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when requiring discrete transistors with HARWIN package footprints.",
-  "Check footprint options including M20 and LTek series in vertical or horizontal layouts.",
-  "Review quality tier ratings, which consist of 2 Tier B and 5 Tier C entries."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a HARWIN land pattern is intended."
  ],
  "avoid_when": [
-  "The board design requires standard transistor packages other than HARWIN.",
-  "Tier A quality verified parts are required for the layout.",
-  "Mounting style or footprint specs remain unconfirmed."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than HARWIN."
  ],
  "keywords": [
   "harwin",
-  "discrete",
-  "transistor",
   "m20",
-  "ltek",
-  "smd",
-  "through_hole",
-  "vertical",
-  "horizontal",
-  "p2.00mm",
-  "p2.54mm",
-  "m20-7820345",
-  "m20-9960345",
-  "male",
+  "transistor",
   "p2",
+  "ltek",
+  "male",
+  "discrete",
+  "vertical",
   "pins",
   "00mm",
   "54mm",
   "pitch",
+  "horizontal",
   "mm",
   "connector",
   "89003xx"
@@ -69,7 +63,7 @@
    "B": 2,
    "C": 5
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -98,6 +92,6 @@
   "dist-legacy/Harwin_LTek-Male_03_P2.00mm_Vertical_StrainRelief",
   "dist-legacy/Harwin_M20-89003xx_1x03_P2.54mm_Horizontal"
  ],
- "embedding_text": "discrete-transistor.harwin | Discrete Transistor | Cluster of 7 discrete transistor parts with HARWIN package footprints supporting surface-mount and through-hole mounting configurations. | harwin discrete transistor m20 ltek smd through_hole vertical horizontal p2.00mm p2.54mm m20-7820345 m20-9960345 male p2 pins 00mm 54mm pitch mm connector 89003xx | HARWIN | ",
+ "embedding_text": "discrete-transistor.harwin | Discrete Transistor | 7 discrete transistor parts using HARWIN footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | harwin m20 transistor p2 ltek male discrete vertical pins 00mm 54mm pitch horizontal mm connector 89003xx | HARWIN | ",
  "class": "discrete.transistor"
 }

@@ -6,42 +6,34 @@
   "IC",
   "Microcontroller"
  ],
- "description": "Cluster of 14 surface-mount microcontroller ICs in the SO package family using footprints such as SO-8, SO-14, and SO-18.",
+ "description": "14 ic microcontroller parts using SO footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Prefer Tier A parts over Tier B parts when higher quality ranking is desired.",
-  "Match design footprint requirements with available SO-8, SO-14, or SO-18 patterns.",
-  "Select for designs using surface-mount (SMD) microcontroller ICs."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SO land pattern is intended."
  ],
  "avoid_when": [
-  "Through-hole mounting is required instead of surface-mount (SMD).",
-  "The component footprint requires a package family other than SO.",
-  "The target design needs a footprint size not included in SO-8, SO-14, or SO-18."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SO."
  ],
  "keywords": [
-  "ic",
-  "microcontroller",
-  "ic.mcu",
-  "mcu",
   "so",
-  "smd",
-  "so-8",
-  "so-14",
-  "so-18",
-  "kicad-symbols",
-  "pic16f15323-xsl",
-  "stm8s001j3m",
-  "pic16f54-iso",
-  "pic16f627-xxiso",
-  "pic16f627a-iso",
+  "microcontroller",
   "flash",
+  "mcu",
   "bit",
+  "ic",
   "microchip",
   "pic16",
   "sram",
   "based",
   "eeprom",
   "iso",
-  "so18"
+  "so18",
+  "cmos",
+  "128b",
+  "256b"
  ],
  "facts": {
   "package_family": "SO",
@@ -65,7 +57,7 @@
    "A": 2,
    "B": 12
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -125,6 +117,6 @@
   "kicad-symbols/MCU_Microchip_PIC16/PIC16F84-XXSO",
   "kicad-symbols/MCU_Microchip_PIC16/PIC16F84A-XXSO"
  ],
- "embedding_text": "ic-mcu.so | IC Microcontroller | Cluster of 14 surface-mount microcontroller ICs in the SO package family using footprints such as SO-8, SO-14, and SO-18. | ic microcontroller ic.mcu mcu so smd so-8 so-14 so-18 kicad-symbols pic16f15323-xsl stm8s001j3m pic16f54-iso pic16f627-xxiso pic16f627a-iso flash bit microchip pic16 sram based eeprom iso so18 | SO | ",
+ "embedding_text": "ic-mcu.so | IC Microcontroller | 14 ic microcontroller parts using SO footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | so microcontroller flash mcu bit ic microchip pic16 sram based eeprom iso so18 cmos 128b 256b | SO | ",
  "class": "ic.mcu"
 }

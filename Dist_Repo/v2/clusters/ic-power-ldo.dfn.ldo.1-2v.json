@@ -7,41 +7,33 @@
   "Power",
   "Linear Regulator"
  ],
- "description": "Surface-mount 1.2V low dropout (LDO) linear regulator ICs in DFN package footprints.",
+ "description": "2 ic power linear regulator parts for LDO, 1.2V using DFN footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when a surface-mount 1.2V LDO linear regulator in a DFN package is required.",
-  "Match the targeted footprint variant, such as DFN-6 (1.3x1.2mm) or DFN-6-1EP (2x2mm).",
-  "Verify part specifications, quality tier, and pin mappings against project requirements."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a DFN land pattern is intended."
  ],
  "avoid_when": [
-  "Output voltage requirements differ from 1.2V.",
-  "The PCB design requires through-hole components or packages other than DFN.",
-  "A switching regulator or non-LDO power architecture is specified."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than DFN."
  ],
  "keywords": [
-  "ic",
-  "power",
-  "linear regulator",
-  "ldo",
-  "1.2v",
-  "dfn",
-  "dfn-6",
-  "smd",
-  "ldk130pu12r_dfn6",
-  "ap7370-12fdc",
-  "dfn-6-1ep",
-  "low dropout",
   "regulator",
   "linear",
+  "dfn",
   "low",
   "fixed",
   "2v",
+  "ldo",
   "positive",
   "dropout",
   "current",
   "noise",
   "output",
   "p0",
+  "ic",
+  "power",
   "ldk130pu12r"
  ],
  "facts": {
@@ -67,7 +59,7 @@
   "tier_counts": {
    "B": 2
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -91,6 +83,6 @@
   "kicad-symbols/Regulator_Linear/LDK130PU12R_DFN6",
   "kicad-symbols/Regulator_Linear/AP7370-12FDC"
  ],
- "embedding_text": "ic-power-ldo.dfn.ldo.1-2v | IC Power Linear Regulator | Surface-mount 1.2V low dropout (LDO) linear regulator ICs in DFN package footprints. | ic power linear regulator ldo 1.2v dfn dfn-6 smd ldk130pu12r_dfn6 ap7370-12fdc dfn-6-1ep low dropout regulator linear low fixed 2v positive dropout current noise output p0 ldk130pu12r | DFN | LDO 1.2V",
+ "embedding_text": "ic-power-ldo.dfn.ldo.1-2v | IC Power Linear Regulator | 2 ic power linear regulator parts for LDO, 1.2V using DFN footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | regulator linear dfn low fixed 2v ldo positive dropout current noise output p0 ic power ldk130pu12r | DFN | LDO 1.2V",
  "class": "ic.power.ldo"
 }

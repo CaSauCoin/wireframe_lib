@@ -6,28 +6,21 @@
   "Passive",
   "Resistor"
  ],
- "description": "Cluster of through-hole passive resistor components using the J15MM footprint.",
+ "description": "1 passive resistor parts using J15MM footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Confirm requirement for through-hole mounting and J15MM footprint compatibility.",
-  "Verify individual component specifications and quality tier before design commitment.",
-  "Check symbol and land pattern assignments against source library definitions."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a J15MM land pattern is intended."
  ],
  "avoid_when": [
-  "Surface-mount assembly or footprints other than J15MM are required.",
-  "The design requires components other than passive resistors.",
-  "Project rules prohibit unverified or tier C library components."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than J15MM."
  ],
  "keywords": [
+  "j15mm",
   "passive",
   "resistor",
-  "passive resistor",
-  "j15mm",
-  "j15mm footprint",
-  "through hole",
-  "through-hole",
-  "through_hole",
-  "passive.resistor",
-  "chilaboard-altium-library",
   "through",
   "hole",
   "pad",
@@ -54,12 +47,12 @@
   "tier_counts": {
    "C": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
   "chilaboard-altium-library/J15MM/J15MM"
  ],
- "embedding_text": "passive-resistor.j15mm | Passive Resistor | Cluster of through-hole passive resistor components using the J15MM footprint. | passive resistor passive resistor j15mm j15mm footprint through hole through-hole through_hole passive.resistor chilaboard-altium-library through hole pad mm pitch pins | J15MM | ",
+ "embedding_text": "passive-resistor.j15mm | Passive Resistor | 1 passive resistor parts using J15MM footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | j15mm passive resistor through hole pad mm pitch pins | J15MM | ",
  "class": "passive.resistor"
 }

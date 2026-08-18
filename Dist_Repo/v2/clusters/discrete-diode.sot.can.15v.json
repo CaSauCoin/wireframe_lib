@@ -6,34 +6,26 @@
   "Discrete",
   "Diode"
  ],
- "description": "Discrete surface-mount diode cluster for 15V CAN applications in the SOT package family with SOT-523 footprints.",
+ "description": "1 discrete diode parts for CAN, 15V using SOT footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when requiring an SMD discrete diode for 15V CAN applications.",
-  "Verify target PCB layout accepts SOT package family footprints such as SOT-523.",
-  "Check part quality tier (Tier B) and library source compatibility with Alternate-KiCad-Library."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SOT land pattern is intended."
  ],
  "avoid_when": [
-  "Through-hole mounting or non-SMD assembly is required.",
-  "The board layout requires packages other than the SOT family or SOT-523 footprint.",
-  "Application requirements differ from 15V or CAN bus specifications."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SOT."
  ],
  "keywords": [
-  "discrete",
   "diode",
   "sot",
-  "sot-523",
-  "can",
-  "15v",
-  "smd",
-  "rclamp1502b",
-  "alternate-kicad-library",
-  "discrete diode",
-  "can diode",
-  "15v diode",
-  "sot diode",
   "tvs",
+  "rclamp1502b",
   "dual",
   "unidirectional",
+  "can",
+  "15v",
   "akl",
   "be",
   "used",
@@ -65,7 +57,7 @@
   "tier_counts": {
    "B": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -80,6 +72,6 @@
  "part_ids": [
   "Alternate-KiCad-Library/Diode_TVS_AKL/RClamp1502B"
  ],
- "embedding_text": "discrete-diode.sot.can.15v | Discrete Diode | Discrete surface-mount diode cluster for 15V CAN applications in the SOT package family with SOT-523 footprints. | discrete diode sot sot-523 can 15v smd rclamp1502b alternate-kicad-library discrete diode can diode 15v diode sot diode tvs dual unidirectional akl be used as 1xbidirectional 200w alternate kicad | SOT | CAN 15V",
+ "embedding_text": "discrete-diode.sot.can.15v | Discrete Diode | 1 discrete diode parts for CAN, 15V using SOT footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | diode sot tvs rclamp1502b dual unidirectional can 15v akl be used as 1xbidirectional 200w alternate kicad | SOT | CAN 15V",
  "class": "discrete.diode"
 }

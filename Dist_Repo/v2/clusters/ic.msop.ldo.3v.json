@@ -5,33 +5,23 @@
  "category_path": [
   "IC"
  ],
- "description": "Cluster of 5 SMD 3V LDO IC parts in the MSOP package family featuring MSOP-8 and MSOP-12-1EP footprints from Alternate-KiCad-Library.",
+ "description": "5 ic parts for LDO, 3V using MSOP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select Tier A parts for MSOP-8 footprint requirements.",
-  "Select Tier B parts for MSOP-12-1EP footprint requirements.",
-  "Choose specific part numbers such as LT1521CMS8-3, LT1762EMS8-3, LT1962EMS8-3, LT3015EMSE-3, or LT3015IMSE-3 based on quality tier and footprint."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a MSOP land pattern is intended."
  ],
  "avoid_when": [
-  "The design requires non-SMD or through-hole mounting.",
-  "A package family other than MSOP is required.",
-  "The circuit requires a voltage rating other than 3V or a non-LDO component."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than MSOP."
  ],
  "keywords": [
-  "ic",
-  "ldo",
-  "3v",
   "msop",
-  "smd",
-  "msop-8",
-  "msop-12-1ep",
-  "lt1521cms8-3",
-  "lt1762ems8-3",
-  "lt1962ems8-3",
-  "lt3015emse-3",
-  "lt3015imse-3",
-  "alternate-kicad-library",
   "voltage",
   "regulator",
+  "3v",
+  "ldo",
   "low",
   "dropout",
   "akl",
@@ -40,7 +30,9 @@
   "library",
   "p0",
   "65mm",
-  "so"
+  "so",
+  "vreg",
+  "pmic"
  ],
  "facts": {
   "package_family": "MSOP",
@@ -66,7 +58,7 @@
    "A": 3,
    "B": 2
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -117,6 +109,6 @@
   "Alternate-KiCad-Library/Voltage_Regulator_AKL/LT3015EMSE-3",
   "Alternate-KiCad-Library/Voltage_Regulator_AKL/LT3015IMSE-3"
  ],
- "embedding_text": "ic.msop.ldo.3v | IC | Cluster of 5 SMD 3V LDO IC parts in the MSOP package family featuring MSOP-8 and MSOP-12-1EP footprints from Alternate-KiCad-Library. | ic ldo 3v msop smd msop-8 msop-12-1ep lt1521cms8-3 lt1762ems8-3 lt1962ems8-3 lt3015emse-3 lt3015imse-3 alternate-kicad-library voltage regulator low dropout akl alternate kicad library p0 65mm so | MSOP | LDO 3V",
+ "embedding_text": "ic.msop.ldo.3v | IC | 5 ic parts for LDO, 3V using MSOP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | msop voltage regulator 3v ldo low dropout akl alternate kicad library p0 65mm so vreg pmic | MSOP | LDO 3V",
  "class": "ic"
 }

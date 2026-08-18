@@ -6,32 +6,20 @@
   "Passive",
   "Capacitor"
  ],
- "description": "Through-hole passive capacitor network components in SIP package families including SIP-8 and SIP-9 footprints.",
+ "description": "5 passive capacitor parts using SIP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select based on the required footprint pin count, such as SIP-8 or SIP-9.",
-  "Choose the specific capacitor network model (C_Network04 through C_Network08).",
-  "Confirm through-hole mounting compatibility with the board layout."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SIP land pattern is intended."
  ],
  "avoid_when": [
-  "Surface-mount (SMD) capacitor packaging is required.",
-  "Discrete individual capacitor components are needed rather than SIP networks.",
-  "The PCB design requires footprint packages other than SIP-8 or SIP-9."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SIP."
  ],
  "keywords": [
-  "passive",
-  "capacitor",
   "sip",
-  "sip-8",
-  "sip-9",
-  "through_hole",
-  "through-hole",
-  "capacitor network",
-  "c_network04",
-  "c_network05",
-  "c_network06",
-  "c_network07",
-  "c_network08",
-  "kicad-symbols",
+  "capacitor",
   "network",
   "star",
   "topology",
@@ -41,7 +29,11 @@
   "single",
   "bus",
   "pin",
-  "small"
+  "small",
+  "symbol",
+  "passive",
+  "sip8",
+  "network04"
  ],
  "facts": {
   "package_family": "SIP",
@@ -63,7 +55,7 @@
   "tier_counts": {
    "A": 5
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -114,6 +106,6 @@
   "kicad-symbols/Device/C_Network07",
   "kicad-symbols/Device/C_Network08"
  ],
- "embedding_text": "passive-capacitor.sip | Passive Capacitor | Through-hole passive capacitor network components in SIP package families including SIP-8 and SIP-9 footprints. | passive capacitor sip sip-8 sip-9 through_hole through-hole capacitor network c_network04 c_network05 c_network06 c_network07 c_network08 kicad-symbols network star topology device bussed capacitors single bus pin small | SIP | ",
+ "embedding_text": "passive-capacitor.sip | Passive Capacitor | 5 passive capacitor parts using SIP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | sip capacitor network star topology device bussed capacitors single bus pin small symbol passive sip8 network04 | SIP | ",
  "class": "passive.capacitor"
 }

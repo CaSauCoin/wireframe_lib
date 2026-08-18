@@ -5,42 +5,34 @@
  "category_path": [
   "IC"
  ],
- "description": "Cluster of 6 tier-A 2.8V LDO ICs in the TO package family, featuring surface-mount and through-hole footprints such as TO-252-2 and TO-92_Inline_Wide.",
+ "description": "6 ic parts for LDO, 2.8V using TO footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select based on mounting style, choosing TO-252-2 for SMD or TO-92_Inline_Wide for through-hole applications.",
-  "Choose when needing a 2.8V LDO regulator in the TO package family.",
-  "Verify exact part requirement among available tier A parts like AP7361-28D, AP7381-28V, or MCP1700T-2802E-TO."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a TO land pattern is intended."
  ],
  "avoid_when": [
-  "Do not use when an output voltage other than 2.8V is required.",
-  "Avoid if the PCB layout requires footprints outside the TO package family.",
-  "Do not use if a non-LDO regulator IC is needed."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than TO."
  ],
  "keywords": [
-  "ldo",
-  "2.8v",
   "to",
-  "to-252-2",
-  "to-92_inline_wide",
-  "ic",
-  "voltage regulator",
-  "smd",
-  "through_hole",
-  "ap7361-28d",
-  "ap7381-28v",
-  "mcp1700t-2802e-to",
   "voltage",
   "regulator",
   "8v",
   "low",
   "dropout",
+  "ldo",
   "sc",
   "akl",
   "alternate",
   "kicad",
   "library",
   "vreg",
-  "pmic"
+  "pmic",
+  "power",
+  "supply"
  ],
  "facts": {
   "package_family": "TO",
@@ -66,7 +58,7 @@
   "tier_counts": {
    "A": 6
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -118,6 +110,6 @@
   "Alternate-KiCad-Library/Voltage_Regulator_AKL/MCP1700T-2802E-TO",
   "Alternate-KiCad-Library/Voltage_Regulator_AKL/MCP1702T-2802E-TO"
  ],
- "embedding_text": "ic.to.ldo.2-8v | IC | Cluster of 6 tier-A 2.8V LDO ICs in the TO package family, featuring surface-mount and through-hole footprints such as TO-252-2 and TO-92_Inline_Wide. | ldo 2.8v to to-252-2 to-92_inline_wide ic voltage regulator smd through_hole ap7361-28d ap7381-28v mcp1700t-2802e-to voltage regulator 8v low dropout sc akl alternate kicad library vreg pmic | TO | LDO 2.8V",
+ "embedding_text": "ic.to.ldo.2-8v | IC | 6 ic parts for LDO, 2.8V using TO footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | to voltage regulator 8v low dropout ldo sc akl alternate kicad library vreg pmic power supply | TO | LDO 2.8V",
  "class": "ic"
 }

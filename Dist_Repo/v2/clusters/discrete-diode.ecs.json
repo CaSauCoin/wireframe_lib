@@ -6,30 +6,22 @@
   "Discrete",
   "Diode"
  ],
- "description": "Discrete diode component cluster containing 1 tier B part utilizing the ECS footprint.",
+ "description": "1 discrete diode parts using ECS footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when a discrete diode with an ECS footprint is needed.",
-  "Check tier B quality status and legacy distribution source data.",
-  "Verify land pattern dimensions against the ECS footprint requirement."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a ECS land pattern is intended."
  ],
  "avoid_when": [
-  "The PCB layout requires a footprint other than ECS.",
-  "Designs require a higher quality tier rating than tier B or known mounting parameters.",
-  "Specific electrical limits and mounting details are unconfirmed."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than ECS."
  ],
  "keywords": [
-  "discrete",
-  "diode",
-  "discrete diode",
   "ecs",
-  "ecs footprint",
-  "csm-3x",
-  "ecs_csm-3x",
-  "dist-legacy",
-  "discrete.diode",
-  "tier b",
   "csm",
   "3x",
+  "diode",
   "two",
   "pin",
   "anode",
@@ -37,7 +29,8 @@
   "component",
   "with",
   "and",
-  "connections"
+  "connections",
+  "discrete"
  ],
  "facts": {
   "package_family": "ECS",
@@ -58,7 +51,7 @@
   "tier_counts": {
    "B": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -73,6 +66,6 @@
  "part_ids": [
   "dist-legacy/ECS CSM-3X"
  ],
- "embedding_text": "discrete-diode.ecs | Discrete Diode | Discrete diode component cluster containing 1 tier B part utilizing the ECS footprint. | discrete diode discrete diode ecs ecs footprint csm-3x ecs_csm-3x dist-legacy discrete.diode tier b csm 3x two pin anode cathode component with and connections | ECS | ",
+ "embedding_text": "discrete-diode.ecs | Discrete Diode | 1 discrete diode parts using ECS footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | ecs csm 3x diode two pin anode cathode component with and connections discrete | ECS | ",
  "class": "discrete.diode"
 }

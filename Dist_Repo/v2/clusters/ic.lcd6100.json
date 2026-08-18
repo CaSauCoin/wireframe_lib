@@ -5,28 +5,21 @@
  "category_path": [
   "IC"
  ],
- "description": "IC cluster containing 1 tier C part associated with the LCD6100 package family and LCD6100-BB footprint.",
+ "description": "1 ic parts using LCD6100 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Require an IC part in the LCD6100 package family with an LCD6100-BB footprint.",
-  "Accept a tier C part from the dist-legacy source.",
-  "Verify part details as the review status is generated and planner visible count is zero."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a LCD6100 land pattern is intended."
  ],
  "avoid_when": [
-  "A package footprint other than LCD6100-BB is required.",
-  "Higher quality tier parts or human-reviewed part entries are required.",
-  "The application requires planner-visible parts."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than LCD6100."
  ],
  "keywords": [
-  "ic",
   "lcd6100",
-  "lcd6100-bb",
-  "dist-legacy",
-  "tier c",
   "bb",
-  "package family",
-  "footprint",
-  "c tier",
-  "legacy",
+  "ic",
   "pad",
   "mm",
   "pitch",
@@ -51,12 +44,12 @@
   "tier_counts": {
    "C": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
   "dist-legacy/LCD6100-BB"
  ],
- "embedding_text": "ic.lcd6100 | IC | IC cluster containing 1 tier C part associated with the LCD6100 package family and LCD6100-BB footprint. | ic lcd6100 lcd6100-bb dist-legacy tier c bb package family footprint c tier legacy pad mm pitch pins | LCD6100 | ",
+ "embedding_text": "ic.lcd6100 | IC | 1 ic parts using LCD6100 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | lcd6100 bb ic pad mm pitch pins | LCD6100 | ",
  "class": "ic"
 }

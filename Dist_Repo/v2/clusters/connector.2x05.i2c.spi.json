@@ -5,34 +5,27 @@
  "category_path": [
   "Connector"
  ],
- "description": "A 2x05, 1.27mm-pitch through-hole connector cluster (UEXT-style host/slave pair) tagged for I2C, SPI, and UART/serial signaling, with 2 tier-B parts from kicad-symbols.",
+ "description": "2 connector parts for I2C, SPI, UART/serial using 2x05 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Choose Host vs Slave variant based on which side of the connection you are designing",
-  "Confirm the footprint matches 2x05_P1.27mm before layout",
-  "Both parts are tier B and system-generated — verify pinout against your schematic needs"
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a 2x05 land pattern is intended."
  ],
  "avoid_when": [
-  "You need a footprint other than 2x05_P1.27mm",
-  "You require a surface-mount connector instead of through_hole",
-  "You need verified electrical ratings, pin assignments, or manufacturer data not listed here"
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than 2x05."
  ],
  "keywords": [
-  "connector",
-  "2x05",
   "uext",
-  "uext host",
-  "uext slave",
+  "connector",
   "i2c",
   "spi",
-  "uart",
-  "serial",
-  "through hole",
-  "1.27mm pitch",
-  "10 pin connector",
-  "header",
-  "kicad-symbols",
+  "2x05",
   "and",
+  "serial",
   "27mm",
+  "uart",
   "universal",
   "extension",
   "is",
@@ -64,7 +57,7 @@
   "tier_counts": {
    "B": 2
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -88,6 +81,6 @@
   "kicad-symbols/Connector/UEXT_Host",
   "kicad-symbols/Connector/UEXT_Slave"
  ],
- "embedding_text": "connector.2x05.i2c.spi | Connector | A 2x05, 1.27mm-pitch through-hole connector cluster (UEXT-style host/slave pair) tagged for I2C, SPI, and UART/serial signaling, with 2 tier-B parts from kicad-symbols. | connector 2x05 uext uext host uext slave i2c spi uart serial through hole 1.27mm pitch 10 pin connector header kicad-symbols and 27mm universal extension is layout which includes power | 2x05 | I2C SPI UART/serial",
+ "embedding_text": "connector.2x05.i2c.spi | Connector | 2 connector parts for I2C, SPI, UART/serial using 2x05 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | uext connector i2c spi 2x05 and serial 27mm uart universal extension is layout which includes power | 2x05 | I2C SPI UART/serial",
  "class": "connector"
 }

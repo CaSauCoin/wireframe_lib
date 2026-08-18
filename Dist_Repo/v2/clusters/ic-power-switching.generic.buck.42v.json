@@ -7,30 +7,20 @@
   "Power",
   "Switching Regulator"
  ],
- "description": "Generic 42V buck switching regulator IC cluster containing 1 KiCad symbol entry with package selection deferred.",
+ "description": "1 ic power switching regulator parts for buck, 42V with package chosen later. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when a 42V buck switching regulator IC is required.",
-  "Check footprint assignment and pin mapping before PCB commitment as package selection is deferred.",
-  "Review tier G KiCad symbol LT8610AC-1 for schematic inclusion."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Select a footprint/package explicitly before placement."
  ],
  "avoid_when": [
-  "Application requires a non-buck topology or voltage rating other than 42V.",
-  "An explicit footprint or package family must be defined up front.",
-  "Higher quality tier parts with verified datasheets are required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review."
  ],
  "keywords": [
-  "ic",
-  "power",
-  "switching regulator",
-  "buck",
-  "42v",
   "regulator",
   "switching",
-  "lt8610ac-1",
-  "lt8610ac",
-  "kicad-symbols",
-  "step-down",
-  "power switching",
+  "42v",
   "5a",
   "synchronous",
   "step",
@@ -39,6 +29,8 @@
   "compensation",
   "soft",
   "start",
+  "buck",
+  "lt8610ac",
   "with",
   "5ua",
   "quiescent"
@@ -61,7 +53,7 @@
   "tier_counts": {
    "G": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -76,6 +68,6 @@
  "part_ids": [
   "kicad-symbols/Regulator_Switching/LT8610AC-1"
  ],
- "embedding_text": "ic-power-switching.generic.buck.42v | IC Power Switching Regulator | Generic 42V buck switching regulator IC cluster containing 1 KiCad symbol entry with package selection deferred. | ic power switching regulator buck 42v regulator switching lt8610ac-1 lt8610ac kicad-symbols step-down power switching 5a synchronous step down internal compensation soft start with 5ua quiescent | package chosen later | buck 42V",
+ "embedding_text": "ic-power-switching.generic.buck.42v | IC Power Switching Regulator | 1 ic power switching regulator parts for buck, 42V with package chosen later. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | regulator switching 42v 5a synchronous step down internal compensation soft start buck lt8610ac with 5ua quiescent | package chosen later | buck 42V",
  "class": "ic.power.switching"
 }

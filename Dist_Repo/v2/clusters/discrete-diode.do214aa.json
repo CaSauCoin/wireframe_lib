@@ -6,28 +6,19 @@
   "Discrete",
   "Diode"
  ],
- "description": "Discrete diode cluster containing 1 tier C part with a DO214AA footprint.",
+ "description": "1 discrete diode parts using DO214AA footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Use when a DO214AA package family or footprint is required.",
-  "Verify part details for the single tier C entry from dist-legacy.",
-  "Confirm mounting method as the mount type is listed as unknown."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a DO214AA land pattern is intended."
  ],
  "avoid_when": [
-  "The layout requires a footprint other than DO214AA.",
-  "Planner-visible entries are required as planner visible count is zero.",
-  "Known mounting specifications are required prior to part selection."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than DO214AA."
  ],
  "keywords": [
-  "discrete",
-  "diode",
   "do214aa",
-  "discrete diode",
-  "do-214aa",
-  "package do214aa",
-  "footprint do214aa",
-  "tier c",
-  "dist-legacy",
-  "discrete.diode",
   "smb",
   "land",
   "pattern",
@@ -35,6 +26,7 @@
   "footprint",
   "do",
   "214aa",
+  "diode",
   "bare",
   "and",
   "for",
@@ -62,12 +54,12 @@
   "tier_counts": {
    "C": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
   "dist-legacy/DO214AA SMB"
  ],
- "embedding_text": "discrete-diode.do214aa | Discrete Diode | Discrete diode cluster containing 1 tier C part with a DO214AA footprint. | discrete diode do214aa discrete diode do-214aa package do214aa footprint do214aa tier c dist-legacy discrete.diode smb land pattern package footprint do 214aa bare and for pin surface mount diodes | DO214AA | ",
+ "embedding_text": "discrete-diode.do214aa | Discrete Diode | 1 discrete diode parts using DO214AA footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | do214aa smb land pattern package footprint do 214aa diode bare and for pin surface mount diodes | DO214AA | ",
  "class": "discrete.diode"
 }

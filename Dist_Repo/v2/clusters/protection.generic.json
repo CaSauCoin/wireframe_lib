@@ -5,30 +5,20 @@
  "category_path": [
   "Protection"
  ],
- "description": "Cluster of 12 generic protection parts including fuses, fuse holders, and TVS devices with unassigned package families.",
+ "description": "12 protection parts with package chosen later. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Identify the required protection device type such as fuse, fuse holder, or TVS diode.",
-  "Assign and verify package and footprint specifications manually.",
-  "Check part tier rating (tier C or G) and source library."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Select a footprint/package explicitly before placement."
  ],
  "avoid_when": [
-  "A specific package family or footprint must already be defined.",
-  "Tier A qualified parts are required.",
-  "Automated matching requires detailed pre-populated electrical ratings."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review."
  ],
  "keywords": [
   "protection",
-  "generic protection",
   "tvs",
   "fuse",
-  "fuse holder",
-  "rclamp0524p",
-  "0679h3500-05",
-  "package chosen later",
-  "chilaboard-altium-library",
-  "celestial-altium-library",
-  "dist-legacy",
-  "matthiasbock-altium-libraries",
   "pins",
   "package",
   "chosen",
@@ -40,7 +30,8 @@
   "sot666",
   "usbuf",
   "sot363",
-  "4sc6"
+  "4sc6",
+  "rclamp0524p"
  ],
  "facts": {
   "package_family": "package chosen later",
@@ -61,7 +52,7 @@
    "C": 4,
    "G": 8
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -119,6 +110,6 @@
   "matthiasbock-altium-libraries/Fuse/Fuse",
   "dist-legacy/Fuse"
  ],
- "embedding_text": "protection.generic | Protection | Cluster of 12 generic protection parts including fuses, fuse holders, and TVS devices with unassigned package families. | protection generic protection tvs fuse fuse holder rclamp0524p 0679h3500-05 package chosen later chilaboard-altium-library celestial-altium-library dist-legacy matthiasbock-altium-libraries pins package chosen later x2 usblc6 x4 sot23 sot666 usbuf sot363 4sc6 | package chosen later | ",
+ "embedding_text": "protection.generic | Protection | 12 protection parts with package chosen later. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | protection tvs fuse pins package chosen later x2 usblc6 x4 sot23 sot666 usbuf sot363 4sc6 rclamp0524p | package chosen later | ",
  "class": "protection"
 }

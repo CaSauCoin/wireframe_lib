@@ -5,30 +5,20 @@
  "category_path": [
   "IC"
  ],
- "description": "Cluster of 8 Tier A 3V integrated circuits in through-hole DIP packages using DIP-8_W7.62mm footprints from KiCad symbols.",
+ "description": "8 ic parts for 3V using DIP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Selecting 3V through-hole integrated circuits in DIP packaging.",
-  "Targeting a DIP-8_W7.62mm footprint.",
-  "Choosing among Tier A parts sourced from KiCad symbols."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a DIP land pattern is intended."
  ],
  "avoid_when": [
-  "Surface-mount assembly is required instead of through-hole.",
-  "The layout requires footprints other than DIP-8_W7.62mm.",
-  "Operating voltage requirements differ from 3V."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than DIP."
  ],
  "keywords": [
-  "ic",
-  "3v",
   "dip",
-  "through_hole",
-  "dip-8_w7.62mm",
-  "kicad-symbols",
-  "tier a",
-  "max7404xpa",
-  "max7405xpa",
-  "max7407xpa",
-  "max7412xpa",
-  "max7413xpa",
+  "3v",
   "62mm",
   "filter",
   "to",
@@ -39,8 +29,10 @@
   "pdip",
   "54mm",
   "300mil",
+  "ic",
   "order",
-  "active"
+  "active",
+  "low"
  ],
  "facts": {
   "package_family": "DIP",
@@ -63,7 +55,7 @@
   "tier_counts": {
    "A": 8
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -117,6 +109,6 @@
   "kicad-symbols/Filter/MAX7415xPA",
   "kicad-symbols/Reference_Voltage/REF193"
  ],
- "embedding_text": "ic.dip.3v | IC | Cluster of 8 Tier A 3V integrated circuits in through-hole DIP packages using DIP-8_W7.62mm footprints from KiCad symbols. | ic 3v dip through_hole dip-8_w7.62mm kicad-symbols tier a max7404xpa max7405xpa max7407xpa max7412xpa max7413xpa 62mm filter to clock w7 tht dil pdip 54mm 300mil order active | DIP | 3V",
+ "embedding_text": "ic.dip.3v | IC | 8 ic parts for 3V using DIP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | dip 3v 62mm filter to clock w7 tht dil pdip 54mm 300mil ic order active low | DIP | 3V",
  "class": "ic"
 }

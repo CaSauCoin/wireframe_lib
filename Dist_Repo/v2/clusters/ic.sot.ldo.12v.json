@@ -5,34 +5,24 @@
  "category_path": [
   "IC"
  ],
- "description": "Cluster containing 12V LDO regulator ICs in SOT-89-3 and SOT-223-3 package footprints with 0.1A and 1A current options.",
+ "description": "2 ic parts for LDO, 12V using SOT footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select between 0.1A and 1A current ratings based on load requirements.",
-  "Choose between SOT-89-3 and SOT-223-3 package footprints for PCB layout.",
-  "Verify footprint and land pattern compatibility for the selected part."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SOT land pattern is intended."
  ],
  "avoid_when": [
-  "A regulated output voltage other than 12V is required.",
-  "Load current requirements exceed 1A.",
-  "The PCB design requires packages outside the SOT footprint family."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SOT."
  ],
  "keywords": [
+  "sot",
   "ldo",
   "12v",
-  "sot",
-  "sot-89-3",
-  "sot-223-3",
-  "linear regulator",
-  "voltage regulator",
-  "12v ldo",
-  "0.1a",
-  "1a",
-  "ic",
-  "smd",
-  "sot-89",
-  "sot-223",
   "regulators",
   "br",
+  "1a",
   "fixed",
   "positive",
   "electrode",
@@ -40,7 +30,9 @@
   "linear",
   "low",
   "drop",
-  "out"
+  "out",
+  "rohs",
+  "l4"
  ],
  "facts": {
   "package_family": "SOT",
@@ -66,7 +58,7 @@
   "tier_counts": {
    "B": 2
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -90,6 +82,6 @@
   "JLCPCB-Kicad-Library/75501/LDO, 12V, 0.1A",
   "JLCPCB-Kicad-Library/179599/LDO, 12V, 1A"
  ],
- "embedding_text": "ic.sot.ldo.12v | IC | Cluster containing 12V LDO regulator ICs in SOT-89-3 and SOT-223-3 package footprints with 0.1A and 1A current options. | ldo 12v sot sot-89-3 sot-223-3 linear regulator voltage regulator 12v ldo 0.1a 1a ic smd sot-89 sot-223 regulators br fixed positive electrode voltage linear low drop out | SOT | LDO 12V",
+ "embedding_text": "ic.sot.ldo.12v | IC | 2 ic parts for LDO, 12V using SOT footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | sot ldo 12v regulators br 1a fixed positive electrode voltage linear low drop out rohs l4 | SOT | LDO 12V",
  "class": "ic"
 }

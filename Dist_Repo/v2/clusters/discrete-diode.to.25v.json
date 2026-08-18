@@ -6,42 +6,34 @@
   "Discrete",
   "Diode"
  ],
- "description": "Cluster of 12 tier-A discrete diodes rated 25V from the Alternate-KiCad-Library source, spanning TO-220, TO-247, TO-252, and TO-263 footprints in both SMD and through-hole mounts.",
+ "description": "12 discrete diode parts for 25V using TO footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Match the exact TO footprint variant (TO-220-2/3_Vertical, TO-247-3_Vertical, TO-252-2, TO-263-2) to the intended mount (through-hole vs SMD).",
-  "All 12 parts are tier A with score 100; use part name and footprint to differentiate rather than tier.",
-  "Confirm the 25V rating covers the circuit's required voltage margin before selecting."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a TO land pattern is intended."
  ],
  "avoid_when": [
-  "The design needs a package outside the TO family (e.g., SOD, SOT, DO, axial).",
-  "A voltage rating other than 25V is required.",
-  "A source other than Alternate-KiCad-Library is required for trust/verification reasons."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than TO."
  ],
  "keywords": [
-  "diode",
-  "discrete diode",
-  "25v",
-  "to package",
-  "to-220",
-  "to-220-2",
-  "to-220-3",
-  "to-247",
-  "to-247-3",
-  "to-252",
-  "to-263",
-  "smd",
-  "through hole",
-  "vertical",
-  "alternate-kicad-library",
-  "akl",
   "to",
+  "diode",
   "schottky",
+  "25v",
   "dual",
+  "vertical",
+  "akl",
   "alternate",
   "kicad",
   "library",
   "discrete",
-  "common"
+  "common",
+  "cathode",
+  "commoncathode",
+  "0025b",
+  "d2pak"
  ],
  "facts": {
   "package_family": "TO",
@@ -69,7 +61,7 @@
   "tier_counts": {
    "A": 12
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -127,6 +119,6 @@
   "Alternate-KiCad-Library/Diode_Schottky_AKL/STPS20L25CG",
   "Alternate-KiCad-Library/Diode_Schottky_AKL/STPS20L25CT"
  ],
- "embedding_text": "discrete-diode.to.25v | Discrete Diode | Cluster of 12 tier-A discrete diodes rated 25V from the Alternate-KiCad-Library source, spanning TO-220, TO-247, TO-252, and TO-263 footprints in both SMD and through-hole mounts. | diode discrete diode 25v to package to-220 to-220-2 to-220-3 to-247 to-247-3 to-252 to-263 smd through hole vertical alternate-kicad-library akl to schottky dual alternate kicad library discrete common | TO | 25V",
+ "embedding_text": "discrete-diode.to.25v | Discrete Diode | 12 discrete diode parts for 25V using TO footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | to diode schottky 25v dual vertical akl alternate kicad library discrete common cathode commoncathode 0025b d2pak | TO | 25V",
  "class": "discrete.diode"
 }

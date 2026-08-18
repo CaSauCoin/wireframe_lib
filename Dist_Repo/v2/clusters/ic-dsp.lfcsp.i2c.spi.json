@@ -6,32 +6,24 @@
   "IC",
   "DSP"
  ],
- "description": "Surface-mount DSP IC cluster featuring I2C and SPI interfaces in LFCSP-72 footprints.",
+ "description": "3 ic dsp parts for I2C, SPI using LFCSP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when a surface-mount DSP IC with I2C or SPI interfaces is needed.",
-  "Choose when designing for an LFCSP-72 land pattern.",
-  "Select between ADAU1450, ADAU1451, and ADAU1452 variants."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a LFCSP land pattern is intended."
  ],
  "avoid_when": [
-  "Through-hole assembly is required.",
-  "The layout requires package families other than LFCSP.",
-  "A non-DSP integrated circuit is required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than LFCSP."
  ],
  "keywords": [
-  "ic",
-  "dsp",
   "lfcsp",
-  "lfcsp-72",
+  "sigmadsp",
+  "dsp",
+  "audio",
   "i2c",
   "spi",
-  "smd",
-  "adau1450",
-  "adau1451",
-  "adau1452",
-  "10x10mm",
-  "digital signal processor",
-  "sigmadsp",
-  "audio",
   "analogdevices",
   "digital",
   "processor",
@@ -39,6 +31,7 @@
   "data",
   "ram",
   "1ep",
+  "10x10mm",
   "p0",
   "5mm"
  ],
@@ -64,7 +57,7 @@
   "tier_counts": {
    "B": 3
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -97,6 +90,6 @@
   "kicad-symbols/DSP_AnalogDevices/ADAU1451",
   "kicad-symbols/DSP_AnalogDevices/ADAU1452"
  ],
- "embedding_text": "ic-dsp.lfcsp.i2c.spi | IC DSP | Surface-mount DSP IC cluster featuring I2C and SPI interfaces in LFCSP-72 footprints. | ic dsp lfcsp lfcsp-72 i2c spi smd adau1450 adau1451 adau1452 10x10mm digital signal processor sigmadsp audio analogdevices digital processor mhz data ram 1ep p0 5mm | LFCSP | I2C SPI",
+ "embedding_text": "ic-dsp.lfcsp.i2c.spi | IC DSP | 3 ic dsp parts for I2C, SPI using LFCSP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | lfcsp sigmadsp dsp audio i2c spi analogdevices digital processor mhz data ram 1ep 10x10mm p0 5mm | LFCSP | I2C SPI",
  "class": "ic.dsp"
 }

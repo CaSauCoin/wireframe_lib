@@ -6,30 +6,21 @@
   "IC",
   "Power"
  ],
- "description": "SMD power IC cluster providing 5V buck regulation with a 1.5V output in an MSOP-10_3x3mm_P0.5mm footprint.",
+ "description": "1 ic power parts for 5V, buck, 1.5V using MSOP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Target design requires a 5V buck regulator with 1.5V output.",
-  "Layout requires an SMD MSOP-10_3x3mm_P0.5mm footprint.",
-  "Selecting tier A component symbols from KiCad libraries."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a MSOP land pattern is intended."
  ],
  "avoid_when": [
-  "Required input/output voltages differ from 5V and 1.5V.",
-  "Circuit topology requires non-buck power regulation.",
-  "Board design specifies through-hole mounting or footprints other than MSOP-10."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than MSOP."
  ],
  "keywords": [
-  "ic power",
   "msop",
-  "5v",
-  "buck",
-  "1.5v",
-  "smd",
-  "msop-10_3x3mm_p0.5mm",
-  "tps60503dgs",
-  "kicad-symbols",
   "regulator",
-  "switchedcapacitor",
-  "power ic",
+  "5v",
   "step",
   "down",
   "charge",
@@ -37,6 +28,8 @@
   "3x3mm",
   "p0",
   "5mm",
+  "tps60503dgs",
+  "switchedcapacitor",
   "250ma",
   "high",
   "efficiency",
@@ -65,7 +58,7 @@
   "tier_counts": {
    "A": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -80,6 +73,6 @@
  "part_ids": [
   "kicad-symbols/Regulator_SwitchedCapacitor/TPS60503DGS"
  ],
- "embedding_text": "ic-power.msop.5v.buck | IC Power | SMD power IC cluster providing 5V buck regulation with a 1.5V output in an MSOP-10_3x3mm_P0.5mm footprint. | ic power msop 5v buck 1.5v smd msop-10_3x3mm_p0.5mm tps60503dgs kicad-symbols regulator switchedcapacitor power ic step down charge pump 3x3mm p0 5mm 250ma high efficiency output | MSOP | 5V buck 1.5V",
+ "embedding_text": "ic-power.msop.5v.buck | IC Power | 1 ic power parts for 5V, buck, 1.5V using MSOP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | msop regulator 5v step down charge pump 3x3mm p0 5mm tps60503dgs switchedcapacitor 250ma high efficiency output | MSOP | 5V buck 1.5V",
  "class": "ic.power"
 }

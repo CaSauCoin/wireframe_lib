@@ -5,30 +5,20 @@
  "category_path": [
   "IC"
  ],
- "description": "IC cluster containing 3 tier C parts in the FJ44 package family utilizing FJ44_L, FJ44_M, and FJ44_N footprints.",
+ "description": "3 ic parts using FJ44 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when requiring an IC in the FJ44 package family with FJ44_L, FJ44_M, or FJ44_N footprints.",
-  "Verify mounting requirements as the footprint mounting type is unknown.",
-  "Evaluate part suitability considering all entries are currently quality tier C."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a FJ44 land pattern is intended."
  ],
  "avoid_when": [
-  "Avoid when the PCB design requires packages outside the FJ44 family.",
-  "Avoid if verified mounting details or higher quality tiers (tier A or B) are required.",
-  "Avoid when planner-visible components are required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than FJ44."
  ],
  "keywords": [
-  "ic",
   "fj44",
-  "fj44_l",
-  "fj44_m",
-  "fj44_n",
-  "ic.fj44",
-  "package family fj44",
-  "integrated circuit",
-  "tier c",
-  "dist-legacy",
-  "fj44 footprint",
-  "unknown mount",
+  "ic",
   "pad",
   "mm",
   "pitch",
@@ -55,7 +45,7 @@
   "tier_counts": {
    "C": 3
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
@@ -63,6 +53,6 @@
   "dist-legacy/FJ44_M",
   "dist-legacy/FJ44_N"
  ],
- "embedding_text": "ic.fj44 | IC | IC cluster containing 3 tier C parts in the FJ44 package family utilizing FJ44_L, FJ44_M, and FJ44_N footprints. | ic fj44 fj44_l fj44_m fj44_n ic.fj44 package family fj44 integrated circuit tier c dist-legacy fj44 footprint unknown mount pad mm pitch pins | FJ44 | ",
+ "embedding_text": "ic.fj44 | IC | 3 ic parts using FJ44 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | fj44 ic pad mm pitch pins | FJ44 | ",
  "class": "ic"
 }

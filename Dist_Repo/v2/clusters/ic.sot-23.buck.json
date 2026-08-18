@@ -5,30 +5,19 @@
  "category_path": [
   "IC"
  ],
- "description": "SMD buck regulator IC cluster containing 18 parts in SOT-23 package family footprints including 6-pin and 8-pin variants.",
+ "description": "18 ic parts for buck using SOT-23 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select based on exact footprint variant such as SOT-23-6 or SOT-23-8.",
-  "Prefer Tier A rated parts over Tier B entries when available.",
-  "Verify library source provider compatibility across Chilaboard, Digi-Key, or Seeed OPL."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SOT-23 land pattern is intended."
  ],
  "avoid_when": [
-  "Designs requiring package families other than SOT-23.",
-  "Applications requiring non-SMD mounting types.",
-  "Non-buck converter IC topologies."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SOT-23."
  ],
  "keywords": [
-  "sot-23",
   "sot23",
-  "buck regulator",
-  "buck ic",
-  "smd buck",
-  "sot23_6",
-  "sot23_8",
-  "sot-23-6",
-  "sot-23-8",
-  "aoz1280ci",
-  "pmic",
-  "switching regulator",
   "regulator",
   "sot",
   "buck",
@@ -40,7 +29,10 @@
   "down",
   "converter",
   "dc",
-  "in"
+  "in",
+  "package",
+  "pin",
+  "and"
  ],
  "facts": {
   "package_family": "SOT-23",
@@ -69,7 +61,7 @@
    "A": 1,
    "B": 17
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -133,6 +125,6 @@
   "chilaboard-altium-library/VREG_TPS563201_SOT23/VREG_TPS563201_SOT23",
   "chilaboard-altium-library/VREG_TPS563208_SOT23/VREG_TPS563208_SOT23"
  ],
- "embedding_text": "ic.sot-23.buck | IC | SMD buck regulator IC cluster containing 18 parts in SOT-23 package family footprints including 6-pin and 8-pin variants. | sot-23 sot23 buck regulator buck ic smd buck sot23_6 sot23_8 sot-23-6 sot-23-8 aoz1280ci pmic switching regulator regulator sot buck vreg ic voltage switching step down converter dc in | SOT-23 | buck",
+ "embedding_text": "ic.sot-23.buck | IC | 18 ic parts for buck using SOT-23 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | sot23 regulator sot buck vreg ic voltage switching step down converter dc in package pin and | SOT-23 | buck",
  "class": "ic"
 }

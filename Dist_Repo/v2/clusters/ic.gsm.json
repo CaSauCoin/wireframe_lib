@@ -5,38 +5,34 @@
  "category_path": [
   "IC"
  ],
- "description": "Integrated circuit cluster with 9 parts using GSM package footprints for surface-mount and through-hole designs.",
+ "description": "9 ic parts using GSM footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select based on the exact footprint module standard required, such as SIM800, SIM900, or A2235-H.",
-  "Confirm mounting requirement for surface mount (smd) or through hole.",
-  "Prioritize Tier B quality parts over Tier C entries."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a GSM land pattern is intended."
  ],
  "avoid_when": [
-  "The application requires non-GSM package footprints.",
-  "Neither SMD nor through-hole GSM land patterns fit the required component.",
-  "Part specifications require quality tiers higher than Tier B."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than GSM."
  ],
  "keywords": [
   "gsm",
   "ic",
-  "smd",
-  "through hole",
-  "gsm module",
-  "sim800",
-  "sim800c",
-  "sim900",
-  "sim7100",
-  "sim300",
-  "sim908",
-  "sim808",
-  "tc35",
-  "a2235-h",
   "pad",
   "mm",
   "pitch",
   "pins",
   "surface",
-  "mount"
+  "mount",
+  "sim7100",
+  "sim800c",
+  "sim900",
+  "tc35",
+  "sim300",
+  "sim800",
+  "sim908",
+  "sim808"
  ],
  "facts": {
   "package_family": "GSM",
@@ -68,7 +64,7 @@
    "B": 1,
    "C": 8
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -91,6 +87,6 @@
   "chilaboard-altium-library/GSM_SIM908/GSM_SIM908",
   "chilaboard-altium-library/GSM_SIM808/GSM_SIM808"
  ],
- "embedding_text": "ic.gsm | IC | Integrated circuit cluster with 9 parts using GSM package footprints for surface-mount and through-hole designs. | gsm ic smd through hole gsm module sim800 sim800c sim900 sim7100 sim300 sim908 sim808 tc35 a2235-h pad mm pitch pins surface mount | GSM | ",
+ "embedding_text": "ic.gsm | IC | 9 ic parts using GSM footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | gsm ic pad mm pitch pins surface mount sim7100 sim800c sim900 tc35 sim300 sim800 sim908 sim808 | GSM | ",
  "class": "ic"
 }

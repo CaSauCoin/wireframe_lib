@@ -6,42 +6,34 @@
   "Discrete",
   "Diode"
  ],
- "description": "Cluster of 9 discrete diode parts rated 3.6V in SOT surface-mount packages (SOT-363, SOT-323, SOT-89-3, SOT-223-3, SOT-553), all tier A and sourced from Alternate-KiCad-Library.",
+ "description": "9 discrete diode parts for 3.6V using SOT footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Match the exact SOT footprint variant (SOT-363/SC-70-6, SOT-323/SC-70, SOT-89-3, SOT-223-3 TabPin2, SOT-553) to the intended PCB land pattern.",
-  "All 9 parts are tier A with score 100, so differentiate by footprint and exact part number.",
-  "Confirm the 3.6V rating matches the circuit requirement before selecting."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SOT land pattern is intended."
  ],
  "avoid_when": [
-  "The design requires a through-hole or non-SOT package.",
-  "A voltage rating other than 3.6V is needed.",
-  "Independent multi-source verification is required beyond the single Alternate-KiCad-Library source."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SOT."
  ],
  "keywords": [
   "diode",
   "sot",
-  "3.6v",
-  "smd",
-  "surface mount",
-  "sot-363",
-  "sot-323",
-  "sot-89-3",
-  "sot-223-3",
-  "sot-553",
-  "sc-70",
-  "akl",
-  "alternate kicad library",
-  "discrete diode",
-  "bzb784-c3v6",
-  "bzv49-c3v6",
-  "bzv90-c3v6",
-  "bzx84c3v6s",
   "zener",
   "6v",
   "sc",
   "dual",
+  "akl",
   "alternate",
-  "kicad"
+  "kicad",
+  "library",
+  "discrete",
+  "independent",
+  "200mw",
+  "c3v6",
+  "tvs",
+  "bzb784"
  ],
  "facts": {
   "package_family": "SOT",
@@ -68,7 +60,7 @@
   "tier_counts": {
    "A": 9
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -123,6 +115,6 @@
   "Alternate-KiCad-Library/Diode_Zener_AKL/MMBZ5227BS",
   "Alternate-KiCad-Library/Diode_Zener_AKL/MMBZ5227BSs"
  ],
- "embedding_text": "discrete-diode.sot.3-6v | Discrete Diode | Cluster of 9 discrete diode parts rated 3.6V in SOT surface-mount packages (SOT-363, SOT-323, SOT-89-3, SOT-223-3, SOT-553), all tier A and sourced from Alternate-KiCad-Library. | diode sot 3.6v smd surface mount sot-363 sot-323 sot-89-3 sot-223-3 sot-553 sc-70 akl alternate kicad library discrete diode bzb784-c3v6 bzv49-c3v6 bzv90-c3v6 bzx84c3v6s zener 6v sc dual alternate kicad | SOT | 3.6V",
+ "embedding_text": "discrete-diode.sot.3-6v | Discrete Diode | 9 discrete diode parts for 3.6V using SOT footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | diode sot zener 6v sc dual akl alternate kicad library discrete independent 200mw c3v6 tvs bzb784 | SOT | 3.6V",
  "class": "discrete.diode"
 }

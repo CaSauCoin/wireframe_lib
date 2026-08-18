@@ -6,35 +6,21 @@
   "Discrete",
   "Diode"
  ],
- "description": "Cluster of 22 SMD discrete diodes in SOT-23 packages associated with a 70V facet, sourced from KiCad libraries, with 19 tier-A and 3 tier-B entries.",
+ "description": "22 discrete diode parts for 70V using SOT-23 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Prefer tier A entries for higher confidence",
-  "Match the exact SOT-23 footprint variant used on the board",
-  "Confirm the part's rating matches the 70V facet before use",
-  "Check source library trust level when multiple candidates match"
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SOT-23 land pattern is intended."
  ],
  "avoid_when": [
-  "Design requires a footprint other than SOT-23",
-  "Required electrical ratings are not confirmed for the specific part",
-  "Only tier B or lower-confidence entries are available and higher assurance is needed",
-  "Symbol-footprint pairing has not been verified for the chosen part"
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SOT-23."
  ],
  "keywords": [
-  "diode",
-  "discrete diode",
-  "sot-23",
-  "sot23",
-  "70v",
-  "smd diode",
-  "surface mount diode",
-  "kicad library",
-  "alternate-kicad-library",
-  "jlcpcb-kicad-library",
-  "digikey-kicad-library",
-  "sot-23-3",
-  "small signal diode",
-  "tier a diode",
   "sot",
+  "diode",
+  "70v",
   "schottky",
   "discrete",
   "akl",
@@ -43,7 +29,11 @@
   "library",
   "dual",
   "switching",
-  "bas70"
+  "bas70",
+  "hsms",
+  "common",
+  "cathode",
+  "200ma"
  ],
  "facts": {
   "package_family": "SOT-23",
@@ -73,7 +63,7 @@
    "A": 19,
    "B": 3
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -141,6 +131,6 @@
   "JLCPCB-Kicad-Library/JLCPCB-Diode-Packages/Switching, BAV70-C68978",
   "JLCPCB-Kicad-Library/3018491/Switching, BAV70_C3018491"
  ],
- "embedding_text": "discrete-diode.sot-23.70v | Discrete Diode | Cluster of 22 SMD discrete diodes in SOT-23 packages associated with a 70V facet, sourced from KiCad libraries, with 19 tier-A and 3 tier-B entries. | diode discrete diode sot-23 sot23 70v smd diode surface mount diode kicad library alternate-kicad-library jlcpcb-kicad-library digikey-kicad-library sot-23-3 small signal diode tier a diode sot schottky discrete akl alternate kicad library dual switching bas70 | SOT-23 | 70V",
+ "embedding_text": "discrete-diode.sot-23.70v | Discrete Diode | 22 discrete diode parts for 70V using SOT-23 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | sot diode 70v schottky discrete akl alternate kicad library dual switching bas70 hsms common cathode 200ma | SOT-23 | 70V",
  "class": "discrete.diode"
 }

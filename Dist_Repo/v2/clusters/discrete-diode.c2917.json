@@ -6,28 +6,21 @@
   "Discrete",
   "Diode"
  ],
- "description": "This discrete diode cluster contains 1 tier C part using the C2917 footprint from legacy distribution sources.",
+ "description": "1 discrete diode parts using C2917 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Verify part specifications and quality tier before using this entry.",
-  "Ensure the C2917 footprint matches the target board layout.",
-  "Confirm symbol-to-footprint pin mapping for the C2917 package."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a C2917 land pattern is intended."
  ],
  "avoid_when": [
-  "The design requires a package footprint other than C2917.",
-  "Unverified tier C parts without complete electrical specifications are unacceptable.",
-  "The board layout requires a verified mounting style rather than unknown mount."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than C2917."
  ],
  "keywords": [
   "c2917",
   "discrete",
   "diode",
-  "discrete diode",
-  "c2917 footprint",
-  "c2917 package",
-  "tier c",
-  "dist-legacy",
-  "legacy distribution",
-  "discrete.diode",
   "pad",
   "mm",
   "pitch",
@@ -52,12 +45,12 @@
   "tier_counts": {
    "C": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
   "dist-legacy/C2917"
  ],
- "embedding_text": "discrete-diode.c2917 | Discrete Diode | This discrete diode cluster contains 1 tier C part using the C2917 footprint from legacy distribution sources. | c2917 discrete diode discrete diode c2917 footprint c2917 package tier c dist-legacy legacy distribution discrete.diode pad mm pitch pins | C2917 | ",
+ "embedding_text": "discrete-diode.c2917 | Discrete Diode | 1 discrete diode parts using C2917 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | c2917 discrete diode pad mm pitch pins | C2917 | ",
  "class": "discrete.diode"
 }

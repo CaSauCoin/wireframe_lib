@@ -5,38 +5,31 @@
  "category_path": [
   "IC"
  ],
- "description": "Surface-mount 4.63V integrated circuit cluster containing 3 Tier A KiCad power supervisor parts in SOT-143 packages.",
+ "description": "3 ic parts for 4.63V using SOT footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select for surface-mount 4.63V power supervisor IC applications requiring a SOT-143 footprint.",
-  "Choose when using KiCad library Tier A parts such as CAT811LTBI-GT3, MAX811LEUS-T, or MIC811LUY.",
-  "Verify that the SOT-143 footprint matches PCB layout requirements."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SOT land pattern is intended."
  ],
  "avoid_when": [
-  "The application requires a voltage facet other than 4.63V.",
-  "The layout requires a package family or footprint other than SOT-143.",
-  "Through-hole mounting or non-SMD components are required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SOT."
  ],
  "keywords": [
   "sot",
-  "sot-143",
-  "4.63v",
-  "ic",
-  "smd",
-  "power supervisor",
-  "cat811ltbi-gt3",
-  "max811leus-t",
-  "mic811luy",
-  "kicad-symbols",
-  "power",
   "supervisor",
+  "power",
   "reset",
   "63v",
   "supply",
   "manual",
   "threshold",
+  "ic",
   "cat811ltbi",
   "gt3",
-  "max811leus"
+  "max811leus",
+  "mic811luy"
  ],
  "facts": {
   "package_family": "SOT",
@@ -59,7 +52,7 @@
   "tier_counts": {
    "A": 3
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -92,6 +85,6 @@
   "kicad-symbols/Power_Supervisor/MAX811LEUS-T",
   "kicad-symbols/Power_Supervisor/MIC811LUY"
  ],
- "embedding_text": "ic.sot.4-63v | IC | Surface-mount 4.63V integrated circuit cluster containing 3 Tier A KiCad power supervisor parts in SOT-143 packages. | sot sot-143 4.63v ic smd power supervisor cat811ltbi-gt3 max811leus-t mic811luy kicad-symbols power supervisor reset 63v supply manual threshold cat811ltbi gt3 max811leus | SOT | 4.63V",
+ "embedding_text": "ic.sot.4-63v | IC | 3 ic parts for 4.63V using SOT footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | sot supervisor power reset 63v supply manual threshold ic cat811ltbi gt3 max811leus mic811luy | SOT | 4.63V",
  "class": "ic"
 }

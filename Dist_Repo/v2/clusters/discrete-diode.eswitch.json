@@ -6,28 +6,21 @@
   "Discrete",
   "Diode"
  ],
- "description": "Discrete diode cluster in the ESWITCH package family containing 1 tier B part from the dist-legacy source.",
+ "description": "1 discrete diode parts using ESWITCH footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when requiring a discrete diode with an ESWITCH footprint.",
-  "Check specs against the representative part ESWITCH_TL3750.",
-  "Verify part suitability given the unknown mount type."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a ESWITCH land pattern is intended."
  ],
  "avoid_when": [
-  "Do not use when a footprint or package family other than ESWITCH is required.",
-  "Avoid if tier A component quality rating is strictly necessary.",
-  "Avoid when explicit mounting style details are needed for placement."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than ESWITCH."
  ],
  "keywords": [
-  "discrete",
-  "diode",
   "eswitch",
-  "discrete diode",
-  "eswitch footprint",
   "tl3750",
-  "eswitch_tl3750",
-  "dist-legacy",
-  "tier b",
-  "discrete.diode",
+  "diode",
   "component",
   "with",
   "anode",
@@ -38,7 +31,8 @@
   "surface",
   "mount",
   "footprint",
-  "smd"
+  "smd",
+  "discrete"
  ],
  "facts": {
   "package_family": "ESWITCH",
@@ -59,7 +53,7 @@
   "tier_counts": {
    "B": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -74,6 +68,6 @@
  "part_ids": [
   "dist-legacy/ESWITCH TL3750"
  ],
- "embedding_text": "discrete-diode.eswitch | Discrete Diode | Discrete diode cluster in the ESWITCH package family containing 1 tier B part from the dist-legacy source. | discrete diode eswitch discrete diode eswitch footprint tl3750 eswitch_tl3750 dist-legacy tier b discrete.diode component with anode and cathode pins in surface mount footprint smd | ESWITCH | ",
+ "embedding_text": "discrete-diode.eswitch | Discrete Diode | 1 discrete diode parts using ESWITCH footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | eswitch tl3750 diode component with anode and cathode pins in surface mount footprint smd discrete | ESWITCH | ",
  "class": "discrete.diode"
 }

@@ -5,33 +5,20 @@
  "category_path": [
   "IC"
  ],
- "description": "Cluster of 4 integrated circuit parts in the Jump package family with Jump_5p, Jump_6p, Jump_7p, and Jump_8p footprints.",
+ "description": "4 ic parts using Jump footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when needing IC parts utilizing the Jump package family.",
-  "Choose based on required pin count matching Jump_5p, Jump_6p, Jump_7p, or Jump_8p footprints.",
-  "Check requirements against quality tier C status and unknown mounting specification."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a Jump land pattern is intended."
  ],
  "avoid_when": [
-  "Do not use when the PCB design requires footprints outside of Jump_5p, Jump_6p, Jump_7p, or Jump_8p.",
-  "Avoid if project rules prohibit quality tier C parts or generated review status.",
-  "Avoid if specific defined mounting types are required, as mounting is listed as unknown."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than Jump."
  ],
  "keywords": [
-  "ic",
   "jump",
-  "ic jump",
-  "jump_5p",
-  "jump_6p",
-  "jump_7p",
-  "jump_8p",
-  "package family jump",
-  "tier c",
-  "dist-legacy",
-  "jump footprint",
-  "5p footprint",
-  "6p footprint",
-  "7p footprint",
-  "8p footprint",
+  "ic",
   "5p",
   "6p",
   "7p",
@@ -63,7 +50,7 @@
   "tier_counts": {
    "C": 4
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
@@ -72,6 +59,6 @@
   "dist-legacy/Jump_7p",
   "dist-legacy/Jump_8p"
  ],
- "embedding_text": "ic.jump | IC | Cluster of 4 integrated circuit parts in the Jump package family with Jump_5p, Jump_6p, Jump_7p, and Jump_8p footprints. | ic jump ic jump jump_5p jump_6p jump_7p jump_8p package family jump tier c dist-legacy jump footprint 5p footprint 6p footprint 7p footprint 8p footprint 5p 6p 7p 8p pad mm pitch pins | Jump | ",
+ "embedding_text": "ic.jump | IC | 4 ic parts using Jump footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | jump ic 5p 6p 7p 8p pad mm pitch pins | Jump | ",
  "class": "ic"
 }

@@ -6,43 +6,34 @@
   "Electromechanical",
   "Relay"
  ],
- "description": "Electromechanical relay cluster containing 21 parts for 5V operation in SMD and through-hole packages with DPDT, SPDT, and SPST contact configurations.",
+ "description": "21 electromechanical relay parts for 5V using Relay footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select based on contact configuration including DPDT, SPDT, or SPST.",
-  "Choose between SMD and through-hole mounting styles.",
-  "Check specific footprint requirements such as Kemet EC2/EE2, Panasonic DR, Schrack RT1, or Hongfa JQC-3FF.",
-  "Filter by quality tier (13 Tier A, 8 Tier B) or source library."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a Relay land pattern is intended."
  ],
  "avoid_when": [
-  "Coil voltage requirements differ from 5V.",
-  "Non-electromechanical or solid-state relay switching is required.",
-  "The layout requires package families other than standard relay footprints."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than Relay."
  ],
  "keywords": [
-  "electromechanical relay",
   "relay",
-  "5v",
-  "dpdt",
-  "spdt",
-  "spst",
-  "smd",
-  "through hole",
-  "kemet",
-  "ee2",
-  "ec2",
-  "hongfa",
-  "panasonic",
-  "schrack",
-  "double coil",
-  "kicad",
-  "sparkfun",
   "coil",
+  "dpdt",
+  "5v",
   "double",
   "signal",
+  "kemet",
   "latching",
   "dc",
+  "ee2",
   "electromechanical",
-  "2a"
+  "ec2",
+  "spdt",
+  "smd",
+  "2a",
+  "sparkfun"
  ],
  "facts": {
   "package_family": "Relay",
@@ -79,7 +70,7 @@
    "A": 13,
    "B": 8
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -146,6 +137,6 @@
   "SparkFun-KiCad-Libraries/SparkFun-Electromechanical/Relay_SPDT_5A_5V_10.3x20.3mm",
   "SparkFun-KiCad-Libraries/SparkFun-Electromechanical/Relay_SPST_5A_5V_5.0x20mm"
  ],
- "embedding_text": "electromechanical-relay.relay.5v | Electromechanical Relay | Electromechanical relay cluster containing 21 parts for 5V operation in SMD and through-hole packages with DPDT, SPDT, and SPST contact configurations. | electromechanical relay relay 5v dpdt spdt spst smd through hole kemet ee2 ec2 hongfa panasonic schrack double coil kicad sparkfun coil double signal latching dc electromechanical 2a | Relay | 5V",
+ "embedding_text": "electromechanical-relay.relay.5v | Electromechanical Relay | 21 electromechanical relay parts for 5V using Relay footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | relay coil dpdt 5v double signal kemet latching dc ee2 electromechanical ec2 spdt smd 2a sparkfun | Relay | 5V",
  "class": "electromechanical.relay"
 }

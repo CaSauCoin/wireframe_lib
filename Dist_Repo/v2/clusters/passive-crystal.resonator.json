@@ -6,33 +6,25 @@
   "Passive",
   "Crystal / Resonator"
  ],
- "description": "Passive crystal and resonator cluster containing 26 surface-mount and through-hole resonator components in 2-pin and 3-pin package variants.",
+ "description": "26 passive crystal / resonator parts using Resonator footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select based on whether an SMD or through-hole mount is required.",
-  "Confirm pin count and package dimensions for 2-pin or 3-pin resonator footprints.",
-  "Check the part quality tier and source library before finalizing selection."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a Resonator land pattern is intended."
  ],
  "avoid_when": [
-  "The circuit requires a standard crystal package rather than a resonator land pattern.",
-  "A verified tier A component is strictly required for the design.",
-  "The board layout needs a footprint not covered by the listed 2-pin or 3-pin variants."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than Resonator."
  ],
  "keywords": [
   "resonator",
-  "passive",
-  "crystal",
-  "passive crystal",
-  "smd",
-  "through_hole",
-  "2-pin",
-  "3-pin",
-  "murata",
-  "cdscb",
-  "cstls",
-  "16mhz",
-  "sparkfun",
   "0mm",
+  "murata",
   "3pin",
+  "smd",
+  "crystal",
+  "passive",
   "5mm",
   "ceramic",
   "pins",
@@ -76,7 +68,7 @@
    "B": 1,
    "C": 25
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -116,6 +108,6 @@
   "dist-legacy/Resonator_SMD_Murata_TPSKA-3Pin_7.9x3.8mm_HandSoldering",
   "dist-legacy/Resonator_SMD_Murata_CSTCR_4.5x2x1.15mm"
  ],
- "embedding_text": "passive-crystal.resonator | Passive Crystal / Resonator | Passive crystal and resonator cluster containing 26 surface-mount and through-hole resonator components in 2-pin and 3-pin package variants. | resonator passive crystal passive crystal smd through_hole 2-pin 3-pin murata cdscb cstls 16mhz sparkfun 0mm 3pin 5mm ceramic pins package 2pin h3 handsoldering filter pad | Resonator | ",
+ "embedding_text": "passive-crystal.resonator | Passive Crystal / Resonator | 26 passive crystal / resonator parts using Resonator footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | resonator 0mm murata 3pin smd crystal passive 5mm ceramic pins package 2pin h3 handsoldering filter pad | Resonator | ",
  "class": "passive.crystal"
 }

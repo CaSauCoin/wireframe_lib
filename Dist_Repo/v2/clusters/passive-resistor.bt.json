@@ -6,30 +6,21 @@
   "Passive",
   "Resistor"
  ],
- "description": "A cluster of 3 surface-mount passive resistors in the BT package family with BT_MS920SE, BT_XS518, and BT_XS621 footprints from the chilaboard-altium-library source.",
+ "description": "3 passive resistor parts using BT footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Match the required PCB footprint to BT_MS920SE, BT_XS518, or BT_XS621.",
-  "Verify suitability for surface-mount (SMD) BT package family resistor designs.",
-  "Review tier C parts from the chilaboard-altium-library source before placement."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a BT land pattern is intended."
  ],
  "avoid_when": [
-  "The design requires through-hole mounting or package families other than BT.",
-  "A footprint other than BT_MS920SE, BT_XS518, or BT_XS621 is needed.",
-  "The design strictly requires parts rated above tier C quality."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than BT."
  ],
  "keywords": [
+  "bt",
   "passive",
   "resistor",
-  "bt",
-  "smd",
-  "surface mount",
-  "bt_ms920se",
-  "bt_xs518",
-  "bt_xs621",
-  "passive resistor",
-  "chilaboard-altium-library",
-  "tier c",
-  "bt package",
   "ms920se",
   "xs518",
   "xs621",
@@ -61,7 +52,7 @@
   "tier_counts": {
    "C": 3
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
@@ -69,6 +60,6 @@
   "chilaboard-altium-library/BT_XS518/BT_XS518",
   "chilaboard-altium-library/BT_XS621/BT_XS621"
  ],
- "embedding_text": "passive-resistor.bt | Passive Resistor | A cluster of 3 surface-mount passive resistors in the BT package family with BT_MS920SE, BT_XS518, and BT_XS621 footprints from the chilaboard-altium-library source. | passive resistor bt smd surface mount bt_ms920se bt_xs518 bt_xs621 passive resistor chilaboard-altium-library tier c bt package ms920se xs518 xs621 surface mount pad mm pitch pins | BT | ",
+ "embedding_text": "passive-resistor.bt | Passive Resistor | 3 passive resistor parts using BT footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | bt passive resistor ms920se xs518 xs621 surface mount pad mm pitch pins | BT | ",
  "class": "passive.resistor"
 }

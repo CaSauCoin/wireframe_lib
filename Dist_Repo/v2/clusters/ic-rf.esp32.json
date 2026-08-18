@@ -6,40 +6,33 @@
   "IC",
   "RF"
  ],
- "description": "RF IC cluster containing 4 tier-C parts in the ESP32 package family with SMD and through-hole mounting options.",
+ "description": "4 ic rf parts using ESP32 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when using ESP32 series footprints including ESP32-C3 and ESP32-S3 variants.",
-  "Choose for designs requiring KiCad-sourced RF IC symbols with SMD or through-hole mounting.",
-  "Verify part specifications as all entries are currently tier C quality."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a ESP32 land pattern is intended."
  ],
  "avoid_when": [
-  "The board design requires package families other than ESP32.",
-  "Tier C quality level or generated review status is not acceptable.",
-  "Footprints outside the provided ESP32-C3 and ESP32-S3 set are required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than ESP32."
  ],
  "keywords": [
   "esp32",
-  "rf",
-  "ic",
-  "ic rf",
-  "esp32-c3",
-  "esp32-s3",
-  "wroom",
-  "devkitm",
-  "smd",
-  "through hole",
-  "kicad",
-  "esp32-c3-wroom-02",
   "c3",
+  "wroom",
+  "rf",
   "bluetooth",
   "module",
   "wifi",
   "wi",
   "fi",
+  "ic",
   "espressif",
   "board",
   "risc",
   "ble",
+  "devkitm",
   "riscv"
  ],
  "facts": {
@@ -65,7 +58,7 @@
   "tier_counts": {
    "C": 4
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
@@ -74,6 +67,6 @@
   "kicad-symbols/RF_Module/ESP32-C3-WROOM-02U",
   "kicad-symbols/RF_Module/ESP32-S3-WROOM-2"
  ],
- "embedding_text": "ic-rf.esp32 | IC RF | RF IC cluster containing 4 tier-C parts in the ESP32 package family with SMD and through-hole mounting options. | esp32 rf ic ic rf esp32-c3 esp32-s3 wroom devkitm smd through hole kicad esp32-c3-wroom-02 c3 bluetooth module wifi wi fi espressif board risc ble riscv | ESP32 | ",
+ "embedding_text": "ic-rf.esp32 | IC RF | 4 ic rf parts using ESP32 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | esp32 c3 wroom rf bluetooth module wifi wi fi ic espressif board risc ble devkitm riscv | ESP32 | ",
  "class": "ic.rf"
 }

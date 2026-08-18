@@ -7,42 +7,34 @@
   "Power",
   "Switching Regulator"
  ],
- "description": "Through-hole 5V buck switching regulator converter cluster containing 2 tier A parts with NID30 and NID60 through-hole footprints.",
+ "description": "2 ic power switching regulator parts for 5V, buck using Converter footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select based on whether NID30 or NID60 through-hole footprint is required.",
-  "Choose between NID30S24-05 and NID60S24-05 parts.",
-  "Ensure a 5V buck switching converter with through-hole mounting is specified."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a Converter land pattern is intended."
  ],
  "avoid_when": [
-  "Surface mount mounting is required instead of through-hole.",
-  "Target design requires output voltage other than 5V or non-buck topology.",
-  "Package requires footprints other than MeanWell NID30 or NID60 THT patterns."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than Converter."
  ],
  "keywords": [
-  "ic",
-  "power",
-  "switching",
-  "regulator",
-  "5v",
-  "buck",
   "converter",
-  "through-hole",
-  "tht",
-  "meanwell",
-  "nid30",
-  "nid60",
-  "nid30s24-05",
-  "nid60s24-05",
+  "regulator",
+  "switching",
   "step",
   "down",
   "module",
+  "5v",
   "voltage",
   "dc",
   "dcdc",
+  "meanwell",
   "fixed",
   "output",
   "250khz",
-  "53v"
+  "53v",
+  "input"
  ],
  "facts": {
   "package_family": "Converter",
@@ -67,7 +59,7 @@
   "tier_counts": {
    "A": 2
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -91,6 +83,6 @@
   "kicad-symbols/Regulator_Switching/NID30S24-05",
   "kicad-symbols/Regulator_Switching/NID60S24-05"
  ],
- "embedding_text": "ic-power-switching.converter.5v.buck | IC Power Switching Regulator | Through-hole 5V buck switching regulator converter cluster containing 2 tier A parts with NID30 and NID60 through-hole footprints. | ic power switching regulator 5v buck converter through-hole tht meanwell nid30 nid60 nid30s24-05 nid60s24-05 step down module voltage dc dcdc fixed output 250khz 53v | Converter | 5V buck",
+ "embedding_text": "ic-power-switching.converter.5v.buck | IC Power Switching Regulator | 2 ic power switching regulator parts for 5V, buck using Converter footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | converter regulator switching step down module 5v voltage dc dcdc meanwell fixed output 250khz 53v input | Converter | 5V buck",
  "class": "ic.power.switching"
 }

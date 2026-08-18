@@ -6,42 +6,34 @@
   "Discrete",
   "FET"
  ],
- "description": "Discrete FET cluster containing 8 100V parts across surface-mount and through-hole TO package footprints.",
+ "description": "8 discrete fet parts for 100V using TO footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Choose based on required mounting style such as surface-mount or through-hole.",
-  "Select parts by specific TO footprint variant such as TO-220, TO-252, TO-263, or TO-247.",
-  "Prefer Tier A parts available in this 8-part cluster."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a TO land pattern is intended."
  ],
  "avoid_when": [
-  "The application requires voltage ratings other than 100V.",
-  "The design requires package families other than TO.",
-  "The PCB layout requires footprints not present in this cluster's TO footprint list."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than TO."
  ],
  "keywords": [
-  "discrete",
+  "to",
   "fet",
   "100v",
-  "to",
-  "smd",
-  "through_hole",
-  "to-220",
-  "to-252",
-  "to-263",
-  "to-247",
-  "irf540n",
-  "irf9540n",
-  "ipb180n10s4-02",
-  "irfp4468pbf",
-  "irfs4310z",
   "mosfet",
   "channel",
   "power",
   "transistor",
   "id",
   "vds",
+  "discrete",
   "vertical",
   "d2pak",
-  "hexfet"
+  "hexfet",
+  "sot",
+  "rm",
+  "trenchfet"
  ],
  "facts": {
   "package_family": "TO",
@@ -71,7 +63,7 @@
    "A": 7,
    "B": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -125,6 +117,6 @@
   "kicad-symbols/Transistor_FET/SUD50P10-43L",
   "kicad-symbols/Transistor_FET/IRFI4212H"
  ],
- "embedding_text": "discrete-fet.to.100v | Discrete FET | Discrete FET cluster containing 8 100V parts across surface-mount and through-hole TO package footprints. | discrete fet 100v to smd through_hole to-220 to-252 to-263 to-247 irf540n irf9540n ipb180n10s4-02 irfp4468pbf irfs4310z mosfet channel power transistor id vds vertical d2pak hexfet | TO | 100V",
+ "embedding_text": "discrete-fet.to.100v | Discrete FET | 8 discrete fet parts for 100V using TO footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | to fet 100v mosfet channel power transistor id vds discrete vertical d2pak hexfet sot rm trenchfet | TO | 100V",
  "class": "discrete.fet"
 }

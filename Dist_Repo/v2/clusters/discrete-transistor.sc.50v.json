@@ -6,34 +6,30 @@
   "Discrete",
   "Transistor"
  ],
- "description": "This cluster contains surface-mount 50V discrete transistors in the SC package family utilizing SC-59 footprints.",
+ "description": "2 discrete transistor parts for 50V using SC footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when needing a 50V rated surface-mount discrete transistor.",
-  "Choose for PCB layouts specifying an SC-59 footprint within the SC package family.",
-  "Select from tier A representative parts including 2SK208 and 2SK209."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SC land pattern is intended."
  ],
  "avoid_when": [
-  "The PCB design requires a package or footprint other than SC or SC-59.",
-  "The application requires through-hole mounting instead of SMD.",
-  "The circuit requires a voltage rating other than 50V."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SC."
  ],
  "keywords": [
-  "discrete transistor",
-  "discrete",
+  "jfet",
+  "sc",
   "transistor",
   "50v",
-  "sc",
-  "sc-59",
-  "smd",
   "2sk208",
-  "2sk209",
-  "alternate-kicad-library",
-  "kicad",
-  "jfet",
   "akl",
   "alternate",
+  "kicad",
   "library",
   "njfet",
+  "discrete",
+  "2sk209",
   "3ma",
   "100mw",
   "2ma",
@@ -60,7 +56,7 @@
   "tier_counts": {
    "A": 2
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -84,6 +80,6 @@
   "Alternate-KiCad-Library/Transistor_JFET_AKL/2SK208",
   "Alternate-KiCad-Library/Transistor_JFET_AKL/2SK209"
  ],
- "embedding_text": "discrete-transistor.sc.50v | Discrete Transistor | This cluster contains surface-mount 50V discrete transistors in the SC package family utilizing SC-59 footprints. | discrete transistor discrete transistor 50v sc sc-59 smd 2sk208 2sk209 alternate-kicad-library kicad jfet akl alternate library njfet 3ma 100mw 2ma 150mw | SC | 50V",
+ "embedding_text": "discrete-transistor.sc.50v | Discrete Transistor | 2 discrete transistor parts for 50V using SC footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | jfet sc transistor 50v 2sk208 akl alternate kicad library njfet discrete 2sk209 3ma 100mw 2ma 150mw | SC | 50V",
  "class": "discrete.transistor"
 }

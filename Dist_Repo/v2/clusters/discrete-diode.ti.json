@@ -6,36 +6,28 @@
   "Discrete",
   "Diode"
  ],
- "description": "Discrete diode cluster containing 3 surface-mount parts in the TI package family, including TI SOD-523 DYA0002A footprint entries sourced from dist-legacy and celestial-altium-library.",
+ "description": "3 discrete diode parts using TI footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Choose when requiring surface-mount discrete diodes using TI package family land patterns.",
-  "Verify compatibility with footprints such as TI SOD-523 DYA0002A.",
-  "Note that all 3 parts in this cluster are tier C quality."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a TI land pattern is intended."
  ],
  "avoid_when": [
-  "Avoid when non-TI footprint packages or through-hole mounting are required.",
-  "Do not use if parts must have higher than tier C quality status.",
-  "Avoid if specific electrical parameters or limits not specified in the cluster facts are required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than TI."
  ],
  "keywords": [
-  "discrete diode",
-  "discrete",
-  "diode",
   "ti",
-  "sod-523",
-  "dya0002a",
-  "ti sod-523 dya0002a",
-  "smd",
-  "package family ti",
-  "celestial-altium-library",
-  "dist-legacy",
-  "tier c",
   "sod",
+  "dya0002a",
   "x1son",
   "dpy",
   "footprint",
   "land",
   "pattern",
+  "discrete",
+  "diode",
   "bare",
   "package",
   "and",
@@ -65,7 +57,7 @@
   "tier_counts": {
    "C": 3
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
@@ -73,6 +65,6 @@
   "dist-legacy/TI SOD-523 DYA0002A",
   "celestial-altium-library/TI SOD-523 DYA0002A/TI_SOD-523_DYA0002A"
  ],
- "embedding_text": "discrete-diode.ti | Discrete Diode | Discrete diode cluster containing 3 surface-mount parts in the TI package family, including TI SOD-523 DYA0002A footprint entries sourced from dist-legacy and celestial-altium-library. | discrete diode discrete diode ti sod-523 dya0002a ti sod-523 dya0002a smd package family ti celestial-altium-library dist-legacy tier c sod x1son dpy footprint land pattern bare package and for component surface | TI | ",
+ "embedding_text": "discrete-diode.ti | Discrete Diode | 3 discrete diode parts using TI footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | ti sod dya0002a x1son dpy footprint land pattern discrete diode bare package and for component surface | TI | ",
  "class": "discrete.diode"
 }

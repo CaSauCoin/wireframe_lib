@@ -6,33 +6,25 @@
   "Passive",
   "Inductor"
  ],
- "description": "Cluster of 9 passive inductor parts across IND package footprints with SMD and unknown mount options.",
+ "description": "9 passive inductor parts using IND footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select based on specific IND footprint variants such as 0806_2016, 1008_2520, or standard IND.",
-  "Check part quality tier, noting available parts are rated tier B or C.",
-  "Verify source library compatibility between dist-legacy and celestial-altium-library."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a IND land pattern is intended."
  ],
  "avoid_when": [
-  "A package family other than IND is required.",
-  "The application requires verified tier A parts.",
-  "A non-SMD mount type is required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than IND."
  ],
  "keywords": [
-  "passive",
-  "inductor",
   "ind",
-  "smd",
-  "passive inductor",
-  "ind 0806_2016",
-  "ind 1008_2520",
-  "0201_0603",
-  "0402_1005",
-  "0603_1608",
-  "rf ww",
-  "dist-legacy",
+  "inductor",
+  "passive",
   "surface",
   "mount",
   "rf",
+  "smd",
   "chip",
   "in",
   "imperial",
@@ -67,7 +59,7 @@
    "B": 7,
    "C": 2
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -122,6 +114,6 @@
   "celestial-altium-library/IND 0806_2016/IND_0806_2016",
   "celestial-altium-library/IND 1008_2520/IND_1008_2520"
  ],
- "embedding_text": "passive-inductor.ind | Passive Inductor | Cluster of 9 passive inductor parts across IND package footprints with SMD and unknown mount options. | passive inductor ind smd passive inductor ind 0806_2016 ind 1008_2520 0201_0603 0402_1005 0603_1608 rf ww dist-legacy surface mount rf chip in imperial metric package size an ww matsushita | IND | ",
+ "embedding_text": "passive-inductor.ind | Passive Inductor | 9 passive inductor parts using IND footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | ind inductor passive surface mount rf smd chip in imperial metric package size an ww matsushita | IND | ",
  "class": "passive.inductor"
 }

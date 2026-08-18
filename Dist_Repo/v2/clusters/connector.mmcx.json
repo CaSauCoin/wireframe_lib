@@ -5,44 +5,34 @@
  "category_path": [
   "Connector"
  ],
- "description": "Cluster of 4 MMCX coaxial connector parts (Molex 73415 series) with horizontal SMD footprints in 0.8mm, 1.0mm, and 1.6mm PCB thickness variants plus one vertical through-hole footprint; all tier C, review status generated.",
+ "description": "4 connector parts using MMCX footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Match footprint to actual PCB thickness for horizontal variants (0.8mm, 1.0mm, or 1.6mm)",
-  "Choose horizontal vs vertical orientation based on board mounting need",
-  "Confirm mount type (smd or through_hole) matches the intended footprint",
-  "All 4 parts are tier C with generated (unreviewed) status — verify before use"
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a MMCX land pattern is intended."
  ],
  "avoid_when": [
-  "A verified, non-generated part with reviewed footprint pairing is required",
-  "The board needs a connector package other than MMCX",
-  "PCB thickness does not match one of the available horizontal footprint variants (0.8mm, 1.0mm, 1.6mm)",
-  "Electrical ratings or pinout are needed but not stated for the selected part"
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than MMCX."
  ],
  "keywords": [
   "mmcx",
   "molex",
-  "connector",
-  "coaxial connector",
-  "rf connector",
-  "73415-0961",
-  "73415-1471",
   "horizontal",
-  "vertical",
-  "smd",
-  "through hole",
-  "0.8mm pcb",
-  "1.0mm pcb",
-  "1.6mm pcb",
-  "pcb mount",
-  "tier c",
   "pcb",
+  "connector",
   "sd",
   "coaxial",
+  "vertical",
   "8mm",
   "0mm",
   "6mm",
   "pad",
-  "mm"
+  "mm",
+  "pitch",
+  "pins",
+  "package"
  ],
  "facts": {
   "package_family": "MMCX",
@@ -67,7 +57,7 @@
   "tier_counts": {
    "C": 4
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
@@ -76,6 +66,6 @@
   "dist-legacy/MMCX_Molex_73415-0961_Horizontal_1.6mm-PCB",
   "dist-legacy/MMCX_Molex_73415-1471_Vertical"
  ],
- "embedding_text": "connector.mmcx | Connector | Cluster of 4 MMCX coaxial connector parts (Molex 73415 series) with horizontal SMD footprints in 0.8mm, 1.0mm, and 1.6mm PCB thickness variants plus one vertical through-hole footprint; all tier C, review status generated. | mmcx molex connector coaxial connector rf connector 73415-0961 73415-1471 horizontal vertical smd through hole 0.8mm pcb 1.0mm pcb 1.6mm pcb pcb mount tier c pcb sd coaxial 8mm 0mm 6mm pad mm | MMCX | ",
+ "embedding_text": "connector.mmcx | Connector | 4 connector parts using MMCX footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | mmcx molex horizontal pcb connector sd coaxial vertical 8mm 0mm 6mm pad mm pitch pins package | MMCX | ",
  "class": "connector"
 }

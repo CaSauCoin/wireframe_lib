@@ -6,39 +6,34 @@
   "IC",
   "Analog"
  ],
- "description": "Analog IC cluster of 6 surface-mount Tier A parts using SPI communication and SOT-363_SC-70-6 footprints.",
+ "description": "6 ic analog parts for SPI using SOT footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Selecting surface-mount analog ICs in SOT package family requiring an SPI interface.",
-  "Using SOT-363_SC-70-6 footprint for analog ADC or DAC integrated circuits.",
-  "Choosing Tier A analog IC components from KiCad symbols source."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SOT land pattern is intended."
  ],
  "avoid_when": [
-  "The design requires non-SMD or through-hole mounting.",
-  "The application requires an interface other than SPI.",
-  "A package footprint other than SOT-363_SC-70-6 is required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SOT."
  ],
  "keywords": [
-  "ic",
-  "analog",
-  "analog ic",
-  "spi",
   "sot",
-  "sot-363",
-  "sc-70-6",
-  "sot-363_sc-70-6",
-  "smd",
-  "adc",
-  "dac",
-  "kicad-symbols",
   "sc",
+  "analog",
+  "spi",
   "channel",
   "to",
+  "adc",
   "single",
   "bit",
+  "smd",
   "us6",
   "umt6",
   "mini6",
-  "tssop6"
+  "tssop6",
+  "ic",
+  "dac"
  ],
  "facts": {
   "package_family": "SOT",
@@ -61,7 +56,7 @@
   "tier_counts": {
    "A": 6
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -113,6 +108,6 @@
   "kicad-symbols/Analog_DAC/DAC6311xDCK",
   "kicad-symbols/Analog_DAC/DAC7311xDCK"
  ],
- "embedding_text": "ic-analog.sot.spi | IC Analog | Analog IC cluster of 6 surface-mount Tier A parts using SPI communication and SOT-363_SC-70-6 footprints. | ic analog analog ic spi sot sot-363 sc-70-6 sot-363_sc-70-6 smd adc dac kicad-symbols sc channel to single bit us6 umt6 mini6 tssop6 | SOT | SPI",
+ "embedding_text": "ic-analog.sot.spi | IC Analog | 6 ic analog parts for SPI using SOT footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | sot sc analog spi channel to adc single bit smd us6 umt6 mini6 tssop6 ic dac | SOT | SPI",
  "class": "ic.analog"
 }

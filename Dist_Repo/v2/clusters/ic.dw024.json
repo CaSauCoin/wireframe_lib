@@ -5,27 +5,20 @@
  "category_path": [
   "IC"
  ],
- "description": "Integrated circuit component cluster containing 3 tier C parts utilizing DW024 package family footprints DW024_L, DW024_M, and DW024_N.",
+ "description": "3 ic parts using DW024 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when requiring DW024 package family footprints including DW024_L, DW024_M, or DW024_N.",
-  "Review part details carefully as all three entries carry a tier C quality rating.",
-  "Verify mounting requirements since the mounting type is listed as unknown."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a DW024 land pattern is intended."
  ],
  "avoid_when": [
-  "The design requires a package family other than DW024.",
-  "Higher quality tier parts are required.",
-  "Planner-visible parts are required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than DW024."
  ],
  "keywords": [
-  "ic",
   "dw024",
-  "dw024_l",
-  "dw024_m",
-  "dw024_n",
-  "package family dw024",
-  "tier c",
-  "dist-legacy",
-  "ic dw024",
+  "ic",
   "pad",
   "mm",
   "pitch",
@@ -52,7 +45,7 @@
   "tier_counts": {
    "C": 3
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
@@ -60,6 +53,6 @@
   "dist-legacy/DW024_M",
   "dist-legacy/DW024_N"
  ],
- "embedding_text": "ic.dw024 | IC | Integrated circuit component cluster containing 3 tier C parts utilizing DW024 package family footprints DW024_L, DW024_M, and DW024_N. | ic dw024 dw024_l dw024_m dw024_n package family dw024 tier c dist-legacy ic dw024 pad mm pitch pins | DW024 | ",
+ "embedding_text": "ic.dw024 | IC | 3 ic parts using DW024 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | dw024 ic pad mm pitch pins | DW024 | ",
  "class": "ic"
 }

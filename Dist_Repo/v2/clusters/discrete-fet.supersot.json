@@ -6,28 +6,20 @@
   "Discrete",
   "FET"
  ],
- "description": "Discrete FET component cluster containing surface-mount devices in SuperSOT-6 packaging from KiCad symbol libraries.",
+ "description": "2 discrete fet parts using SuperSOT footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when requiring a discrete surface-mount FET in a SuperSOT-6 footprint.",
-  "Choose between tier A parts such as FDC2512 and FDC86244.",
-  "Verify compatibility with SuperSOT-6 land patterns."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SuperSOT land pattern is intended."
  ],
  "avoid_when": [
-  "The board layout requires packages other than SuperSOT-6.",
-  "Through-hole mounting is required instead of surface mount.",
-  "The application requires non-FET discrete components."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SuperSOT."
  ],
  "keywords": [
-  "discrete",
-  "fet",
   "supersot",
-  "supersot-6",
-  "smd",
-  "kicad-symbols",
-  "fdc2512",
-  "fdc86244",
-  "discrete fet",
-  "surface mount",
+  "fet",
   "channel",
   "mosfet",
   "transistor",
@@ -36,8 +28,11 @@
   "vds",
   "ron",
   "ssot",
+  "discrete",
+  "fdc2512",
   "4a",
   "425mohm",
+  "fdc86244",
   "3a"
  ],
  "facts": {
@@ -59,7 +54,7 @@
   "tier_counts": {
    "A": 2
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -83,6 +78,6 @@
   "kicad-symbols/Transistor_FET/FDC2512",
   "kicad-symbols/Transistor_FET/FDC86244"
  ],
- "embedding_text": "discrete-fet.supersot | Discrete FET | Discrete FET component cluster containing surface-mount devices in SuperSOT-6 packaging from KiCad symbol libraries. | discrete fet supersot supersot-6 smd kicad-symbols fdc2512 fdc86244 discrete fet surface mount channel mosfet transistor id 150v vds ron ssot 4a 425mohm 3a | SuperSOT | ",
+ "embedding_text": "discrete-fet.supersot | Discrete FET | 2 discrete fet parts using SuperSOT footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | supersot fet channel mosfet transistor id 150v vds ron ssot discrete fdc2512 4a 425mohm fdc86244 3a | SuperSOT | ",
  "class": "discrete.fet"
 }

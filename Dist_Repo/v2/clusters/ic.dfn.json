@@ -5,34 +5,24 @@
  "category_path": [
   "IC"
  ],
- "description": "Integrated circuit cluster containing 85 surface-mount parts in DFN package footprints with various pin counts and exposed pad dimensions.",
+ "description": "85 ic parts using DFN footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when a surface-mount integrated circuit in a DFN package footprint is required.",
-  "Match exact package body size, lead pitch, and exposed pad dimensions to component requirements.",
-  "Prefer Tier A and Tier B entries with validated symbol and footprint pairings."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a DFN land pattern is intended."
  ],
  "avoid_when": [
-  "The board layout requires through-hole components or packages other than DFN.",
-  "Target pin pitch, lead count, or exposed thermal pad dimensions do not match the footprint specs.",
-  "Required electrical parameters or pinout assignments are unverified for the selected entry."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than DFN."
  ],
  "keywords": [
-  "ic",
   "dfn",
-  "smd",
-  "surface mount",
-  "integrated circuit",
-  "dual flat no-lead",
-  "dfn-6",
-  "dfn-8",
-  "dfn-10",
-  "dfn-12",
-  "dfn-16",
-  "exposed pad",
   "p0",
   "1ep",
   "5mm",
   "ep1",
+  "ic",
   "3x3mm",
   "package",
   "mm",
@@ -40,7 +30,9 @@
   "4mm",
   "pitch",
   "pad",
-  "2x2mm"
+  "2x2mm",
+  "surface",
+  "mount"
  ],
  "facts": {
   "package_family": "DFN",
@@ -77,7 +69,7 @@
    "B": 7,
    "C": 72
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -208,6 +200,6 @@
   "dist-legacy/DFN-8-1EP_6x5mm_P1.27mm_EP2x2mm",
   "francescosacco-hardwarelibrary/DFN 2x3 Thermal/DFN_2x3_Thermal"
  ],
- "embedding_text": "ic.dfn | IC | Integrated circuit cluster containing 85 surface-mount parts in DFN package footprints with various pin counts and exposed pad dimensions. | ic dfn smd surface mount integrated circuit dual flat no-lead dfn-6 dfn-8 dfn-10 dfn-12 dfn-16 exposed pad p0 1ep 5mm ep1 3x3mm package mm ep0 4mm pitch pad 2x2mm | DFN | ",
+ "embedding_text": "ic.dfn | IC | 85 ic parts using DFN footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | dfn p0 1ep 5mm ep1 ic 3x3mm package mm ep0 4mm pitch pad 2x2mm surface mount | DFN | ",
  "class": "ic"
 }

@@ -5,33 +5,24 @@
  "category_path": [
   "IC"
  ],
- "description": "Integrated circuit cluster containing surface-mount parts in SOT563 packaging using the SOT563_6 footprint.",
+ "description": "1 ic parts using SOT563 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Choose for surface-mount IC applications requiring a SOT563 package.",
-  "Confirm compatibility with the SOT563_6 footprint.",
-  "Check tier B quality status and library source details before selection."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SOT563 land pattern is intended."
  ],
  "avoid_when": [
-  "The design requires through-hole mounting instead of SMD.",
-  "The PCB footprint is not compatible with SOT563 or SOT563_6.",
-  "Higher quality tiers than Tier B are required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SOT563."
  ],
  "keywords": [
-  "ic",
-  "integrated circuit",
   "sot563",
-  "sot563_6",
-  "smd",
   "sn74avc1t45",
-  "sn74avc1t45_sot563",
-  "chilaboard-altium-library",
-  "tier b",
-  "footprint",
-  "package",
-  "surface mount",
   "translator",
   "voltage",
   "level",
+  "ic",
   "pin",
   "single",
   "bit",
@@ -40,7 +31,8 @@
   "with",
   "direction",
   "control",
-  "in"
+  "in",
+  "sot"
  ],
  "facts": {
   "package_family": "SOT563",
@@ -61,7 +53,7 @@
   "tier_counts": {
    "B": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -76,6 +68,6 @@
  "part_ids": [
   "chilaboard-altium-library/SN74AVC1T45_SOT563/SN74AVC1T45_SOT563"
  ],
- "embedding_text": "ic.sot563 | IC | Integrated circuit cluster containing surface-mount parts in SOT563 packaging using the SOT563_6 footprint. | ic integrated circuit sot563 sot563_6 smd sn74avc1t45 sn74avc1t45_sot563 chilaboard-altium-library tier b footprint package surface mount translator voltage level pin single bit dual supply with direction control in | SOT563 | ",
+ "embedding_text": "ic.sot563 | IC | 1 ic parts using SOT563 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | sot563 sn74avc1t45 translator voltage level ic pin single bit dual supply with direction control in sot | SOT563 | ",
  "class": "ic"
 }

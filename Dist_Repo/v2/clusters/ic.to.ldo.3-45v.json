@@ -5,42 +5,34 @@
  "category_path": [
   "IC"
  ],
- "description": "This cluster contains 3.45V LDO ICs in the TO package family, offering surface-mount (TO-263-3_TabPin2) and through-hole (TO-220-3_Vertical) footprint options.",
+ "description": "5 ic parts for LDO, 3.45V using TO footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select surface-mount (TO-263-3_TabPin2) or through-hole (TO-220-3_Vertical) based on PCB mounting requirements.",
-  "Choose the specific part series among LT1584, LT1585, and LT1587 for 3.45V regulation.",
-  "Verify footprint pin mapping for TO-220-3_Vertical or TO-263-3_TabPin2 layout."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a TO land pattern is intended."
  ],
  "avoid_when": [
-  "An output voltage other than 3.45V is required.",
-  "The layout requires package families other than TO.",
-  "A non-LDO regulator architecture is needed."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than TO."
  ],
  "keywords": [
-  "ldo",
-  "3.45v",
-  "3.45v ldo",
-  "to package",
-  "to-220-3",
-  "to-220-3_vertical",
-  "to-263-3",
-  "to-263-3_tabpin2",
-  "smd",
-  "through_hole",
-  "lt1584",
-  "lt1585",
-  "lt1587",
-  "voltage regulator",
-  "ic",
   "to",
   "voltage",
   "regulator",
   "45v",
   "low",
   "dropout",
+  "ldo",
   "vertical",
   "akl",
-  "alternate"
+  "alternate",
+  "kicad",
+  "library",
+  "vreg",
+  "pmic",
+  "power",
+  "supply"
  ],
  "facts": {
   "package_family": "TO",
@@ -66,7 +58,7 @@
   "tier_counts": {
    "A": 5
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -117,6 +109,6 @@
   "Alternate-KiCad-Library/Voltage_Regulator_AKL/LT1587CM-3.45",
   "Alternate-KiCad-Library/Voltage_Regulator_AKL/LT1587CT-3.45"
  ],
- "embedding_text": "ic.to.ldo.3-45v | IC | This cluster contains 3.45V LDO ICs in the TO package family, offering surface-mount (TO-263-3_TabPin2) and through-hole (TO-220-3_Vertical) footprint options. | ldo 3.45v 3.45v ldo to package to-220-3 to-220-3_vertical to-263-3 to-263-3_tabpin2 smd through_hole lt1584 lt1585 lt1587 voltage regulator ic to voltage regulator 45v low dropout vertical akl alternate | TO | LDO 3.45V",
+ "embedding_text": "ic.to.ldo.3-45v | IC | 5 ic parts for LDO, 3.45V using TO footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | to voltage regulator 45v low dropout ldo vertical akl alternate kicad library vreg pmic power supply | TO | LDO 3.45V",
  "class": "ic"
 }

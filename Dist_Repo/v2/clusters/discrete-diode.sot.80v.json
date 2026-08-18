@@ -6,34 +6,18 @@
   "Discrete",
   "Diode"
  ],
- "description": "Cluster of 20 SMD diode parts rated for 80V in SOT-family footprints (SOT-323_SC-70, SOT-363_SC-70-6, SOT-416, SOT-723), sourced from Alternate-KiCad-Library, with 16 of 20 entries at tier A.",
+ "description": "20 discrete diode parts for 80V using SOT footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Match the exact SOT footprint variant (SOT-323_SC-70, SOT-363_SC-70-6, SOT-416, SOT-723) to the intended PCB land pattern.",
-  "Prefer tier A entries (16 of 20) over the 4 tier B entries for higher confidence.",
-  "All parts in this cluster are SMD-mount only.",
-  "Confirm any part-specific electrical ratings beyond the shared 80V facet directly on the chosen part before use."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SOT land pattern is intended."
  ],
  "avoid_when": [
-  "A through-hole or non-SOT package is required.",
-  "The design needs a footprint outside SOT-323_SC-70, SOT-363_SC-70-6, SOT-416, or SOT-723.",
-  "A voltage rating other than 80V is required.",
-  "Only reviewed (non-generated) parts are acceptable for the design's quality bar."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SOT."
  ],
  "keywords": [
-  "sot diode",
-  "discrete diode",
-  "80v diode",
-  "smd diode",
-  "sot-323",
-  "sc-70",
-  "sot-363",
-  "sc-70-6",
-  "sot-416",
-  "sot-723",
-  "alternate-kicad-library",
-  "akl diode",
-  "sot package",
-  "tier a diode",
   "sot",
   "diode",
   "80v",
@@ -43,7 +27,13 @@
   "alternate",
   "kicad",
   "library",
-  "discrete"
+  "discrete",
+  "4ns",
+  "common",
+  "100ma",
+  "series",
+  "fast",
+  "switching"
  ],
  "facts": {
   "package_family": "SOT",
@@ -70,7 +60,7 @@
    "A": 16,
    "B": 4
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -136,6 +126,6 @@
   "Alternate-KiCad-Library/Diode_AKL/1SS362",
   "Alternate-KiCad-Library/Diode_AKL/1SS362FV"
  ],
- "embedding_text": "discrete-diode.sot.80v | Discrete Diode | Cluster of 20 SMD diode parts rated for 80V in SOT-family footprints (SOT-323_SC-70, SOT-363_SC-70-6, SOT-416, SOT-723), sourced from Alternate-KiCad-Library, with 16 of 20 entries at tier A. | sot diode discrete diode 80v diode smd diode sot-323 sc-70 sot-363 sc-70-6 sot-416 sot-723 alternate-kicad-library akl diode sot package tier a diode sot diode 80v sc dual akl alternate kicad library discrete | SOT | 80V",
+ "embedding_text": "discrete-diode.sot.80v | Discrete Diode | 20 discrete diode parts for 80V using SOT footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | sot diode 80v sc dual akl alternate kicad library discrete 4ns common 100ma series fast switching | SOT | 80V",
  "class": "discrete.diode"
 }

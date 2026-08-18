@@ -6,42 +6,34 @@
   "IC",
   "Analog"
  ],
- "description": "A cluster of 38 surface-mount analog ICs using SOT package footprints such as SOT-353_SC-70-5, SOT-363_SC-70-6, and SOT-553.",
+ "description": "38 ic analog parts using SOT footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when surface-mount (SMD) analog ICs in SOT footprint options are required.",
-  "Choose when target footprints match SOT-353_SC-70-5, SOT-363_SC-70-6, or SOT-553.",
-  "Filter by preferred library source, such as Alternate-KiCad-Library or kicad-symbols."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SOT land pattern is intended."
  ],
  "avoid_when": [
-  "Through-hole mounting is required.",
-  "The design requires footprint packages outside the SOT family.",
-  "A package footprint other than SOT-353_SC-70-5, SOT-363_SC-70-6, or SOT-553 is needed."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SOT."
  ],
  "keywords": [
-  "ic",
-  "analog",
   "sot",
-  "smd",
-  "sot-353_sc-70-5",
-  "sot-363_sc-70-6",
-  "sot-553",
-  "azv331ks",
-  "lmv331ic",
-  "lmv331idck",
-  "lmv331se",
-  "lmv331sq3t2g",
-  "alternate-kicad-library",
-  "kicad-symbols",
+  "analog",
   "comparator",
   "sc",
   "rail",
+  "ic",
   "voltage",
   "to",
   "akl",
   "propagation",
   "delay",
   "offset",
-  "alternate"
+  "alternate",
+  "kicad",
+  "library",
+  "low"
  ],
  "facts": {
   "package_family": "SOT",
@@ -65,7 +57,7 @@
   "tier_counts": {
    "A": 38
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -149,6 +141,6 @@
   "kicad-symbols/Analog_Switch/TS5A3159DCK",
   "kicad-symbols/Analog_Switch/TS5A3160DCK"
  ],
- "embedding_text": "ic-analog.sot | IC Analog | A cluster of 38 surface-mount analog ICs using SOT package footprints such as SOT-353_SC-70-5, SOT-363_SC-70-6, and SOT-553. | ic analog sot smd sot-353_sc-70-5 sot-363_sc-70-6 sot-553 azv331ks lmv331ic lmv331idck lmv331se lmv331sq3t2g alternate-kicad-library kicad-symbols comparator sc rail voltage to akl propagation delay offset alternate | SOT | ",
+ "embedding_text": "ic-analog.sot | IC Analog | 38 ic analog parts using SOT footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | sot analog comparator sc rail ic voltage to akl propagation delay offset alternate kicad library low | SOT | ",
  "class": "ic.analog"
 }

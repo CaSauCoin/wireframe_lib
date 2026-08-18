@@ -6,42 +6,34 @@
   "IC",
   "Sensor"
  ],
- "description": "Cluster of surface-mount sensor ICs featuring an SPI interface and SOIC packaging such as SOIC-8_3.9x4.9mm_P1.27mm.",
+ "description": "9 ic sensor parts for SPI using SOIC footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Requires a surface-mount sensor IC with an SPI interface.",
-  "Fits SOIC package family footprint SOIC-8_3.9x4.9mm_P1.27mm.",
-  "Selecting tier A parts sourced from KiCad symbol libraries."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SOIC land pattern is intended."
  ],
  "avoid_when": [
-  "Through-hole or non-SMD mounting is required.",
-  "A bus or communication interface other than SPI is required.",
-  "The board design requires a package footprint other than SOIC."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SOIC."
  ],
  "keywords": [
-  "ic",
-  "sensor",
-  "ic sensor",
-  "spi",
   "soic",
-  "soic-8",
-  "smd",
-  "soic-8_3.9x4.9mm_p1.27mm",
-  "lm74cim",
-  "max31855easa",
-  "max31855jasa",
-  "max31855kasa",
-  "max31855nasa",
-  "temperature sensor",
+  "sensor",
+  "spi",
   "temperature",
   "9x4",
   "9mm",
   "p1",
   "27mm",
   "so",
+  "ic",
   "cold",
   "junction",
   "type",
-  "thermocouple"
+  "thermocouple",
+  "interface",
+  "maxim"
  ],
  "facts": {
   "package_family": "SOIC",
@@ -64,7 +56,7 @@
   "tier_counts": {
    "A": 9
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -119,6 +111,6 @@
   "kicad-symbols/Sensor_Temperature/MAX31855TASA",
   "kicad-symbols/Sensor_Magnetic/TLE5012B"
  ],
- "embedding_text": "ic-sensor.soic.spi | IC Sensor | Cluster of surface-mount sensor ICs featuring an SPI interface and SOIC packaging such as SOIC-8_3.9x4.9mm_P1.27mm. | ic sensor ic sensor spi soic soic-8 smd soic-8_3.9x4.9mm_p1.27mm lm74cim max31855easa max31855jasa max31855kasa max31855nasa temperature sensor temperature 9x4 9mm p1 27mm so cold junction type thermocouple | SOIC | SPI",
+ "embedding_text": "ic-sensor.soic.spi | IC Sensor | 9 ic sensor parts for SPI using SOIC footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | soic sensor spi temperature 9x4 9mm p1 27mm so ic cold junction type thermocouple interface maxim | SOIC | SPI",
  "class": "ic.sensor"
 }

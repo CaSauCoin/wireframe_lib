@@ -6,42 +6,34 @@
   "Discrete",
   "FET"
  ],
- "description": "Discrete FET cluster containing 7 surface-mount 20V parts in the SOT package family using SOT-363_SC-70-6, SOT-323_SC-70, SOT-666, or SOT-523 footprints.",
+ "description": "7 discrete fet parts for 20V using SOT footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select for 20V surface-mount discrete FET applications.",
-  "Verify footprint compatibility with SOT-363_SC-70-6, SOT-323_SC-70, SOT-666, or SOT-523.",
-  "Prefer tier A parts, which comprise 6 of the 7 available options."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SOT land pattern is intended."
  ],
  "avoid_when": [
-  "Through-hole mounting is required instead of SMD.",
-  "A voltage rating other than 20V is required.",
-  "The layout requires packages outside the supported SOT footprints."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SOT."
  ],
  "keywords": [
-  "discrete",
+  "sot",
+  "sc",
   "fet",
   "20v",
-  "sot",
-  "smd",
-  "sot-363_sc-70-6",
-  "sot-323_sc-70",
-  "sot-666",
-  "sot-523",
-  "bsd235c",
-  "bsd840n",
-  "bss214nw",
-  "fdg1024nz",
-  "fdg6335n",
-  "sc",
   "mosfet",
   "channel",
   "transistor",
+  "discrete",
   "id",
   "vds",
   "to",
+  "smd",
   "dual",
   "us6",
-  "umt6"
+  "umt6",
+  "mini6"
  ],
  "facts": {
   "package_family": "SOT",
@@ -68,7 +60,7 @@
    "A": 6,
    "B": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -121,6 +113,6 @@
   "kicad-symbols/Transistor_FET/PMDT290UCE",
   "kicad-symbols/Transistor_FET/DMG1012T"
  ],
- "embedding_text": "discrete-fet.sot.20v | Discrete FET | Discrete FET cluster containing 7 surface-mount 20V parts in the SOT package family using SOT-363_SC-70-6, SOT-323_SC-70, SOT-666, or SOT-523 footprints. | discrete fet 20v sot smd sot-363_sc-70-6 sot-323_sc-70 sot-666 sot-523 bsd235c bsd840n bss214nw fdg1024nz fdg6335n sc mosfet channel transistor id vds to dual us6 umt6 | SOT | 20V",
+ "embedding_text": "discrete-fet.sot.20v | Discrete FET | 7 discrete fet parts for 20V using SOT footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | sot sc fet 20v mosfet channel transistor discrete id vds to smd dual us6 umt6 mini6 | SOT | 20V",
  "class": "discrete.fet"
 }

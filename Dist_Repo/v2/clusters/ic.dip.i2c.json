@@ -5,42 +5,34 @@
  "category_path": [
   "IC"
  ],
- "description": "This cluster contains 9 I2C integrated circuit parts provided in DIP footprints for through-hole mounting.",
+ "description": "9 ic parts for I2C using DIP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select based on the required DIP footprint variant, such as DIP-8, DIP-18, DIP-28, or DIP-40.",
-  "Prefer quality tier A parts over tier B parts when available.",
-  "Verify footprint dimensions against the selected part source."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a DIP land pattern is intended."
  ],
  "avoid_when": [
-  "The PCB design requires surface-mount packaging rather than DIP through-hole.",
-  "The circuit design does not utilize an I2C interface.",
-  "A footprint outside the listed DIP options is required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than DIP."
  ],
  "keywords": [
-  "ic",
-  "i2c",
   "dip",
-  "through_hole",
-  "dip-8",
-  "dip-18",
-  "dip-28",
-  "dip-40",
-  "ds1307",
-  "mcp23008",
-  "mcp23017",
-  "mcp23018",
-  "atmega324p",
-  "integrated circuit",
+  "i2c",
+  "ic",
   "clock",
   "real",
   "time",
   "dip8",
   "interface",
+  "ds1307",
   "rtc",
   "expanders",
   "pin",
   "an",
-  "and"
+  "and",
+  "in",
+  "package"
  ],
  "facts": {
   "package_family": "DIP",
@@ -70,7 +62,7 @@
    "A": 4,
    "B": 5
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -125,6 +117,6 @@
   "chilaboard-altium-library/DS1337_DIP8/DS1337_DIP8",
   "chilaboard-altium-library/MCP7940_DIP8/MCP7940_DIP8"
  ],
- "embedding_text": "ic.dip.i2c | IC | This cluster contains 9 I2C integrated circuit parts provided in DIP footprints for through-hole mounting. | ic i2c dip through_hole dip-8 dip-18 dip-28 dip-40 ds1307 mcp23008 mcp23017 mcp23018 atmega324p integrated circuit clock real time dip8 interface rtc expanders pin an and | DIP | I2C",
+ "embedding_text": "ic.dip.i2c | IC | 9 ic parts for I2C using DIP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | dip i2c ic clock real time dip8 interface ds1307 rtc expanders pin an and in package | DIP | I2C",
  "class": "ic"
 }

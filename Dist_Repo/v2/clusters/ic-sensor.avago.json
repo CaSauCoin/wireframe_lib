@@ -6,39 +6,32 @@
   "IC",
   "Sensor"
  ],
- "description": "IC sensor cluster containing surface-mount components in the Avago package family, such as the APDS-9960 footprint.",
+ "description": "1 ic sensor parts using Avago footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select for surface-mount IC sensor designs using the Avago_APDS-9960 footprint.",
-  "Choose when using tier B parts sourced from kicad-symbols.",
-  "Confirm land pattern compatibility with the Avago package family."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a Avago land pattern is intended."
  ],
  "avoid_when": [
-  "Avoid if the PCB layout requires non-SMD mounting.",
-  "Do not use when requiring footprints outside the Avago package family.",
-  "Avoid when specific electrical ratings not provided in the cluster facts are required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than Avago."
  ],
  "keywords": [
-  "ic",
   "sensor",
-  "ic.sensor",
-  "avago",
-  "apds-9960",
-  "avago_apds-9960",
-  "smd",
-  "kicad-symbols",
-  "tier b",
-  "ic sensor",
   "apds",
   "light",
   "rgb",
   "gesture",
+  "avago",
   "digital",
   "proximity",
   "ambient",
   "and",
   "dfn",
   "optical",
-  "ir"
+  "ir",
+  "ic"
  ],
  "facts": {
   "package_family": "Avago",
@@ -59,7 +52,7 @@
   "tier_counts": {
    "B": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -74,6 +67,6 @@
  "part_ids": [
   "kicad-symbols/Sensor/APDS-9960"
  ],
- "embedding_text": "ic-sensor.avago | IC Sensor | IC sensor cluster containing surface-mount components in the Avago package family, such as the APDS-9960 footprint. | ic sensor ic.sensor avago apds-9960 avago_apds-9960 smd kicad-symbols tier b ic sensor apds light rgb gesture digital proximity ambient and dfn optical ir | Avago | ",
+ "embedding_text": "ic-sensor.avago | IC Sensor | 1 ic sensor parts using Avago footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | sensor apds light rgb gesture avago digital proximity ambient and dfn optical ir ic | Avago | ",
  "class": "ic.sensor"
 }

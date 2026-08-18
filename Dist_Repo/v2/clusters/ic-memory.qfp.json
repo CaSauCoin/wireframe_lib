@@ -6,35 +6,31 @@
   "IC",
   "Memory"
  ],
- "description": "Memory IC cluster containing surface-mount QFP package family components with TQFP-64_14x14mm_P0.8mm footprints.",
+ "description": "1 ic memory parts using QFP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select for memory IC designs using QFP package family footprints.",
-  "Verify compatibility with TQFP-64_14x14mm_P0.8mm land patterns.",
-  "Choose when surface-mount (SMD) mounting is required."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a QFP land pattern is intended."
  ],
  "avoid_when": [
-  "The design requires non-SMD or through-hole mounting.",
-  "The PCB layout requires package families other than QFP.",
-  "A footprint other than TQFP-64_14x14mm_P0.8mm is required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than QFP."
  ],
  "keywords": [
-  "ic",
-  "memory",
-  "qfp",
   "tqfp",
-  "tqfp-64",
-  "smd",
-  "idt7006pf",
+  "memory",
   "ram",
-  "sram",
-  "14x14mm",
-  "0.8mm",
-  "memory ic",
   "dual",
   "port",
+  "qfp",
+  "idt7006pf",
   "16k",
+  "sram",
+  "14x14mm",
   "p0",
-  "8mm"
+  "8mm",
+  "ic"
  ],
  "facts": {
   "package_family": "QFP",
@@ -55,7 +51,7 @@
   "tier_counts": {
    "A": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -70,6 +66,6 @@
  "part_ids": [
   "kicad-symbols/Memory_RAM/IDT7006PF"
  ],
- "embedding_text": "ic-memory.qfp | IC Memory | Memory IC cluster containing surface-mount QFP package family components with TQFP-64_14x14mm_P0.8mm footprints. | ic memory qfp tqfp tqfp-64 smd idt7006pf ram sram 14x14mm 0.8mm memory ic dual port 16k p0 8mm | QFP | ",
+ "embedding_text": "ic-memory.qfp | IC Memory | 1 ic memory parts using QFP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | tqfp memory ram dual port qfp idt7006pf 16k sram 14x14mm p0 8mm ic | QFP | ",
  "class": "ic.memory"
 }

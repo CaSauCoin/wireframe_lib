@@ -6,44 +6,34 @@
   "Discrete",
   "Diode"
  ],
- "description": "Cluster of 185 discrete diodes rated 60V using D-family footprints, spanning SMD and through-hole land patterns (SMA, SMB, SMC, SOD-123F, MELF, MiniMELF, DO-35, DO-201AD, SOD-128, P600) sourced from kicad-symbols, Alternate-KiCad-Library, and JLCPCB-Kicad-Library.",
+ "description": "185 discrete diode parts for 60V using D footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Match the exact footprint (SMA, SMB, SMC, SOD-123F, DO-35, DO-201AD, SOD-128, P600, etc.) to the intended PCB land pattern.",
-  "Prefer tier A parts (164 of 185) over tier B when available.",
-  "Confirm smd vs through_hole mount matches the assembly process.",
-  "Check source library (kicad-symbols, Alternate-KiCad-Library, JLCPCB-Kicad-Library) for provenance."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a D land pattern is intended."
  ],
  "avoid_when": [
-  "The design needs a voltage, current, or speed rating not confirmed on the selected part.",
-  "No footprint in this list (D_SMA, D_SMB, D_SMC, D_SOD-123F, D_MELF, D_MiniMELF, D_SMAFL, D_DO-35, D_DO-201AD, D_SOD-128, D_P600) matches the required land pattern.",
-  "Symbol-footprint pairing is unverified or flagged for review.",
-  "The required mount type (smd or through_hole) is not available for the chosen part."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than D."
  ],
  "keywords": [
   "diode",
-  "discrete diode",
-  "60v",
-  "d package",
-  "smd diode",
-  "through hole diode",
-  "sma footprint",
-  "smb footprint",
-  "smc footprint",
-  "sod-123f",
-  "minimelf",
-  "melf",
-  "smafl",
-  "do-35",
-  "do-201ad",
-  "sod-128",
-  "p600",
-  "kicad diode library",
   "schottky",
+  "60v",
   "discrete",
   "akl",
   "alternate",
   "kicad",
-  "library"
+  "library",
+  "do",
+  "tvs",
+  "sod",
+  "horizontal",
+  "sma",
+  "smc",
+  "smb",
+  "123f"
  ],
  "facts": {
   "package_family": "D",
@@ -81,7 +71,7 @@
    "A": 164,
    "B": 21
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -312,6 +302,6 @@
   "Alternate-KiCad-Library/Diode_TVS_AKL/TPSMA6L60A",
   "JLCPCB-Kicad-Library/JLCPCB-Diodes/Schottky,SS36-E3/57T"
  ],
- "embedding_text": "discrete-diode.d.60v | Discrete Diode | Cluster of 185 discrete diodes rated 60V using D-family footprints, spanning SMD and through-hole land patterns (SMA, SMB, SMC, SOD-123F, MELF, MiniMELF, DO-35, DO-201AD, SOD-128, P600) sourced from kicad-symbols, Alternate-KiCad-Library, and JLCPCB-Kicad-Library. | diode discrete diode 60v d package smd diode through hole diode sma footprint smb footprint smc footprint sod-123f minimelf melf smafl do-35 do-201ad sod-128 p600 kicad diode library schottky discrete akl alternate kicad library | D | 60V",
+ "embedding_text": "discrete-diode.d.60v | Discrete Diode | 185 discrete diode parts for 60V using D footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | diode schottky 60v discrete akl alternate kicad library do tvs sod horizontal sma smc smb 123f | D | 60V",
  "class": "discrete.diode"
 }

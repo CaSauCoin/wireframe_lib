@@ -7,29 +7,19 @@
   "Power",
   "Switching Regulator"
  ],
- "description": "Surface-mount 3.3V buck switching regulator ICs in DFN packages, including MAX15062A and PAM2305CGF330.",
+ "description": "2 ic power switching regulator parts for 3.3V, buck using DFN footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when requiring a 3.3V buck switching regulator IC in a surface-mount DFN package.",
-  "Choose between DFN-8 0.5mm pitch and DFN-6-1EP 0.65mm pitch package footprints.",
-  "Select representative parts such as MAX15062A or PAM2305CGF330 based on footprint requirements."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a DFN land pattern is intended."
  ],
  "avoid_when": [
-  "Avoid if the design requires non-buck topology or fixed output voltages other than 3.3V.",
-  "Avoid when through-hole mounting or non-DFN package families are required.",
-  "Avoid if footprints other than DFN-8 2x2mm P0.5mm or DFN-6-1EP 2x2mm P0.65mm are needed."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than DFN."
  ],
  "keywords": [
-  "ic power switching",
-  "switching regulator",
-  "buck regulator",
-  "3.3v buck",
   "dfn",
-  "smd",
-  "dfn-8",
-  "dfn-6-1ep",
-  "max15062a",
-  "pam2305cgf330",
-  "step down",
   "regulator",
   "switching",
   "dc",
@@ -42,7 +32,9 @@
   "buck",
   "converter",
   "2x2mm",
-  "p0"
+  "p0",
+  "ic",
+  "power"
  ],
  "facts": {
   "package_family": "DFN",
@@ -67,7 +59,7 @@
   "tier_counts": {
    "A": 2
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -91,6 +83,6 @@
   "kicad-symbols/Regulator_Switching/MAX15062A",
   "kicad-symbols/Regulator_Switching/PAM2305CGF330"
  ],
- "embedding_text": "ic-power-switching.dfn.3v3.buck | IC Power Switching Regulator | Surface-mount 3.3V buck switching regulator ICs in DFN packages, including MAX15062A and PAM2305CGF330. | ic power switching switching regulator buck regulator 3.3v buck dfn smd dfn-8 dfn-6-1ep max15062a pam2305cgf330 step down regulator switching dc 3v step down fixed output voltage buck converter 2x2mm p0 | DFN | 3.3V buck",
+ "embedding_text": "ic-power-switching.dfn.3v3.buck | IC Power Switching Regulator | 2 ic power switching regulator parts for 3.3V, buck using DFN footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | dfn regulator switching dc 3v step down fixed output voltage buck converter 2x2mm p0 ic power | DFN | 3.3V buck",
  "class": "ic.power.switching"
 }

@@ -6,32 +6,23 @@
   "IC",
   "Analog"
  ],
- "description": "Analog IC cluster comprising 78 surface-mount parts across SOT-23-5, ANALOG SOT-23-5 RJ-5, and ANALOG TSOT-23-5 UJ-5 footprints.",
+ "description": "78 ic analog parts using SOT-23-5 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Choose when requiring an analog IC component in an SMD package.",
-  "Prefer Tier A parts, which comprise 76 of the 78 entries in this cluster.",
-  "Check footprint specifications for SOT-23-5, ANALOG SOT-23-5 RJ-5, or ANALOG TSOT-23-5 UJ-5."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SOT-23-5 land pattern is intended."
  ],
  "avoid_when": [
-  "Avoid when non-SMD or through-hole mounting is required.",
-  "Do not use if the board layout requires footprints outside the SOT-23-5 family."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SOT-23-5."
  ],
  "keywords": [
-  "ic",
-  "analog",
-  "sot-23-5",
-  "smd",
-  "tsot-23-5",
-  "surface mount",
-  "alternate-kicad-library",
-  "celestial-altium-library",
-  "ap331awg",
-  "lm397mf",
-  "lmc7211aim5",
-  "azv331k",
   "sot",
+  "analog",
   "comparator",
   "rail",
+  "ic",
   "akl",
   "propagation",
   "delay",
@@ -40,7 +31,9 @@
   "library",
   "voltage",
   "offset",
-  "open"
+  "open",
+  "to",
+  "hysteresis"
  ],
  "facts": {
   "package_family": "SOT-23-5",
@@ -65,7 +58,7 @@
    "A": 76,
    "C": 2
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -189,6 +182,6 @@
   "celestial-altium-library/ANALOG SOT-23-5 RJ-5/ANALOG_SOT-23-5_RJ-5",
   "celestial-altium-library/ANALOG TSOT-23-5 UJ-5/ANALOG_TSOT-23-5_UJ-5"
  ],
- "embedding_text": "ic-analog.sot-23-5 | IC Analog | Analog IC cluster comprising 78 surface-mount parts across SOT-23-5, ANALOG SOT-23-5 RJ-5, and ANALOG TSOT-23-5 UJ-5 footprints. | ic analog sot-23-5 smd tsot-23-5 surface mount alternate-kicad-library celestial-altium-library ap331awg lm397mf lmc7211aim5 azv331k sot comparator rail akl propagation delay alternate kicad library voltage offset open | SOT-23-5 | ",
+ "embedding_text": "ic-analog.sot-23-5 | IC Analog | 78 ic analog parts using SOT-23-5 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | sot analog comparator rail ic akl propagation delay alternate kicad library voltage offset open to hysteresis | SOT-23-5 | ",
  "class": "ic.analog"
 }

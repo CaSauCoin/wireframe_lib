@@ -6,32 +6,23 @@
   "Passive",
   "Resistor"
  ],
- "description": "Surface-mount passive resistor components featuring 36V rating and I2C interface in TSSOP-14 footprints.",
+ "description": "2 passive resistor parts for I2C, 36V using TSSOP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select for I2C-controlled 36V passive resistor applications requiring SMD TSSOP packages.",
-  "Verify part compatibility with the TSSOP-14_4.4x5mm_P0.65mm footprint.",
-  "Choose between specific representative parts such as MCP45HV31-ST and MCP45HV51-ST."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a TSSOP land pattern is intended."
  ],
  "avoid_when": [
-  "A package family other than TSSOP or mounting other than SMD is required.",
-  "The application does not use an I2C interface or 36V rating.",
-  "Footprints other than TSSOP-14_4.4x5mm_P0.65mm are needed."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than TSSOP."
  ],
  "keywords": [
-  "passive",
-  "resistor",
   "tssop",
-  "i2c",
-  "36v",
-  "smd",
-  "tssop-14",
-  "tssop-14_4.4x5mm_p0.65mm",
-  "potentiometer_digital",
-  "mcp45hv31-st",
-  "mcp45hv51-st",
-  "kicad-symbols",
   "digital",
+  "i2c",
   "potentiometer",
+  "36v",
   "pot",
   "st",
   "bit",
@@ -41,7 +32,8 @@
   "interface",
   "volatile",
   "memory",
-  "4x5mm"
+  "4x5mm",
+  "p0"
  ],
  "facts": {
   "package_family": "TSSOP",
@@ -65,7 +57,7 @@
   "tier_counts": {
    "A": 2
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -89,6 +81,6 @@
   "kicad-symbols/Potentiometer_Digital/MCP45HV31-ST",
   "kicad-symbols/Potentiometer_Digital/MCP45HV51-ST"
  ],
- "embedding_text": "passive-resistor.tssop.i2c.36v | Passive Resistor | Surface-mount passive resistor components featuring 36V rating and I2C interface in TSSOP-14 footprints. | passive resistor tssop i2c 36v smd tssop-14 tssop-14_4.4x5mm_p0.65mm potentiometer_digital mcp45hv31-st mcp45hv51-st kicad-symbols digital potentiometer pot st bit single 18v serial interface volatile memory 4x5mm | TSSOP | I2C 36V",
+ "embedding_text": "passive-resistor.tssop.i2c.36v | Passive Resistor | 2 passive resistor parts for I2C, 36V using TSSOP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | tssop digital i2c potentiometer 36v pot st bit single 18v serial interface volatile memory 4x5mm p0 | TSSOP | I2C 36V",
  "class": "passive.resistor"
 }

@@ -6,44 +6,34 @@
   "Discrete",
   "Diode"
  ],
- "description": "Cluster of 10 through-hole diode parts rated 70V, using TO-92 and TO-220 footprint variants; all tier A entries sourced from the Alternate-KiCad-Library.",
+ "description": "10 discrete diode parts for 70V using TO footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Match the exact footprint variant (TO-92_Inline_Wide, TO-92-2, TO-92-2_AK, TO-220-2_Vertical_KA, TO-220-3_Vertical_AKA) to the intended PCB land pattern",
-  "All 10 parts are tier A, score 100, from the Alternate-KiCad-Library source",
-  "Confirm the 70V rating matches the circuit requirement before selecting a part",
-  "Verify pin/pad mapping against the chosen footprint before committing a PCB"
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a TO land pattern is intended."
  ],
  "avoid_when": [
-  "A surface-mount package is required instead of through-hole TO",
-  "The required voltage rating is not 70V",
-  "None of the listed TO footprint variants match the PCB land pattern",
-  "Symbol-footprint pairing has not been verified for the chosen part"
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than TO."
  ],
  "keywords": [
   "diode",
-  "discrete diode",
-  "70v",
-  "to-92",
-  "to-220",
-  "through hole",
-  "to-92-2",
-  "to-92-2_ak",
-  "to-220-2_vertical_ka",
-  "to-220-3_vertical_aka",
-  "to-92_inline_wide",
-  "schottky",
-  "alternate-kicad-library",
-  "akl",
-  "mbd701",
-  "mbr1070",
-  "mbr1070ct",
-  "msd6102",
-  "msd6150",
   "to",
+  "70v",
   "sc",
   "current",
   "dual",
-  "limiting"
+  "limiting",
+  "akl",
+  "alternate",
+  "kicad",
+  "library",
+  "discrete",
+  "schottky",
+  "43a",
+  "sot54",
+  "pa33"
  ],
  "facts": {
   "package_family": "TO",
@@ -70,7 +60,7 @@
   "tier_counts": {
    "A": 10
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -126,6 +116,6 @@
   "Alternate-KiCad-Library/Diode_Current_Limiting_AKL/OSCRDT235-A",
   "Alternate-KiCad-Library/Diode_Current_Limiting_AKL/OSCRDT235-C"
  ],
- "embedding_text": "discrete-diode.to.70v | Discrete Diode | Cluster of 10 through-hole diode parts rated 70V, using TO-92 and TO-220 footprint variants; all tier A entries sourced from the Alternate-KiCad-Library. | diode discrete diode 70v to-92 to-220 through hole to-92-2 to-92-2_ak to-220-2_vertical_ka to-220-3_vertical_aka to-92_inline_wide schottky alternate-kicad-library akl mbd701 mbr1070 mbr1070ct msd6102 msd6150 to sc current dual limiting | TO | 70V",
+ "embedding_text": "discrete-diode.to.70v | Discrete Diode | 10 discrete diode parts for 70V using TO footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | diode to 70v sc current dual limiting akl alternate kicad library discrete schottky 43a sot54 pa33 | TO | 70V",
  "class": "discrete.diode"
 }

@@ -6,28 +6,21 @@
   "Discrete",
   "Transistor"
  ],
- "description": "Discrete transistor cluster featuring surface-mount components in ATPAK package family footprints such as ATPAK-2.",
+ "description": "1 discrete transistor parts using ATPAK footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select for surface-mount discrete transistor applications requiring ATPAK package footprints.",
-  "Verify compatibility with ATPAK-2 footprint specifications.",
-  "Check part quality tier and data completeness before integration."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a ATPAK land pattern is intended."
  ],
  "avoid_when": [
-  "The design requires through-hole or non-ATPAK package footprints.",
-  "A package type other than ATPAK or ATPAK-2 is specified.",
-  "Planner-visible or higher quality tier parts are strictly required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than ATPAK."
  ],
  "keywords": [
   "atpak",
-  "atpak-2",
   "discrete",
   "transistor",
-  "discrete transistor",
-  "smd",
-  "surface mount",
-  "package family",
-  "footprint",
-  "discrete.transistor",
   "package",
   "surface",
   "mount",
@@ -35,6 +28,7 @@
   "mm",
   "pitch",
   "pins",
+  "smd",
   "http",
   "www",
   "onsemi",
@@ -60,12 +54,12 @@
   "tier_counts": {
    "C": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
   "dist-legacy/ATPAK-2"
  ],
- "embedding_text": "discrete-transistor.atpak | Discrete Transistor | Discrete transistor cluster featuring surface-mount components in ATPAK package family footprints such as ATPAK-2. | atpak atpak-2 discrete transistor discrete transistor smd surface mount package family footprint discrete.transistor package surface mount pad mm pitch pins http www onsemi com pub | ATPAK | ",
+ "embedding_text": "discrete-transistor.atpak | Discrete Transistor | 1 discrete transistor parts using ATPAK footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | atpak discrete transistor package surface mount pad mm pitch pins smd http www onsemi com pub | ATPAK | ",
  "class": "discrete.transistor"
 }

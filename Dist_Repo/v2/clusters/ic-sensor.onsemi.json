@@ -6,31 +6,22 @@
   "IC",
   "Sensor"
  ],
- "description": "Sensor IC cluster featuring OnSemi SMD and through-hole footprints including CASE100CY and CASE100AQ, represented by QRE1113GR and QRE1113 parts.",
+ "description": "2 ic sensor parts using OnSemi footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Choose when requiring OnSemi CASE100CY or CASE100AQ footprints.",
-  "Select between SMD (e.g., QRE1113GR) and through-hole (e.g., QRE1113) mounting options.",
-  "Prefer Tier A ranked parts like QRE1113GR for higher library quality rating."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a OnSemi land pattern is intended."
  ],
  "avoid_when": [
-  "The layout requires package footprints outside of OnSemi CASE100CY or CASE100AQ.",
-  "Components non-compliant with SMD or through-hole OnSemi sensor footprint specifications are needed."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than OnSemi."
  ],
  "keywords": [
-  "ic",
   "sensor",
-  "onsemi",
-  "smd",
-  "through_hole",
-  "case100cy",
-  "case100aq",
-  "qre1113gr",
-  "qre1113",
-  "onsemi_case100cy",
-  "onsemi_case100aq",
-  "ic sensor",
   "reflective",
   "optical",
+  "onsemi",
   "opto",
   "coupler",
   "proximity",
@@ -38,7 +29,11 @@
   "object",
   "couple",
   "photo",
-  "reflex"
+  "reflex",
+  "ic",
+  "qre1113gr",
+  "smd",
+  "case100cy"
  ],
  "facts": {
   "package_family": "OnSemi",
@@ -62,7 +57,7 @@
    "A": 1,
    "B": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -86,6 +81,6 @@
   "kicad-symbols/Sensor_Proximity/QRE1113GR",
   "kicad-symbols/Sensor_Proximity/QRE1113"
  ],
- "embedding_text": "ic-sensor.onsemi | IC Sensor | Sensor IC cluster featuring OnSemi SMD and through-hole footprints including CASE100CY and CASE100AQ, represented by QRE1113GR and QRE1113 parts. | ic sensor onsemi smd through_hole case100cy case100aq qre1113gr qre1113 onsemi_case100cy onsemi_case100aq ic sensor reflective optical opto coupler proximity miniature object couple photo reflex | OnSemi | ",
+ "embedding_text": "ic-sensor.onsemi | IC Sensor | 2 ic sensor parts using OnSemi footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | sensor reflective optical onsemi opto coupler proximity miniature object couple photo reflex ic qre1113gr smd case100cy | OnSemi | ",
  "class": "ic.sensor"
 }

@@ -5,34 +5,24 @@
  "category_path": [
   "IC"
  ],
- "description": "Surface-mount UART and serial interface integrated circuits packaged in small-outline (SO) footprint variants including SO_8, SO_14, SO_16, SO_16_W, SO_16_WL, and SO_20_W.",
+ "description": "26 ic parts for UART/serial using SO footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select based on the specific SO footprint variant required, such as SO_8, SO_14, SO_16, SO_16_W, SO_16_WL, or SO_20_W.",
-  "Verify that an SMD small-outline package matches your design requirements.",
-  "Confirm symbol, pinout, and footprint compatibility for the target UART/serial IC."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SO land pattern is intended."
  ],
  "avoid_when": [
-  "Designs requiring package families other than surface-mount SO.",
-  "Applications requiring through-hole mounting instead of SMD.",
-  "Components with interfaces or functions other than UART/serial."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SO."
  ],
  "keywords": [
+  "transceiver",
+  "so",
   "ic",
+  "rs",
   "uart",
   "serial",
-  "so",
-  "smd",
-  "so_8",
-  "so_14",
-  "so_16",
-  "so_16_w",
-  "so_16_wl",
-  "so_20_w",
-  "small outline",
-  "uart ic",
-  "serial ic",
-  "transceiver",
-  "rs",
   "sop8",
   "differential",
   "in",
@@ -40,7 +30,9 @@
   "and",
   "driver",
   "pin",
-  "so16w"
+  "so16w",
+  "with",
+  "soic"
  ],
  "facts": {
   "package_family": "SO",
@@ -68,7 +60,7 @@
   "tier_counts": {
    "B": 26
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -140,6 +132,6 @@
   "chilaboard-altium-library/ADM2483_SO16W/ADM2483_SO16W",
   "chilaboard-altium-library/MAX491_SOP14/MAX491_SOP14"
  ],
- "embedding_text": "ic.so.uart | IC | Surface-mount UART and serial interface integrated circuits packaged in small-outline (SO) footprint variants including SO_8, SO_14, SO_16, SO_16_W, SO_16_WL, and SO_20_W. | ic uart serial so smd so_8 so_14 so_16 so_16_w so_16_wl so_20_w small outline uart ic serial ic transceiver rs sop8 differential in package and driver pin so16w | SO | UART/serial",
+ "embedding_text": "ic.so.uart | IC | 26 ic parts for UART/serial using SO footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | transceiver so ic rs uart serial sop8 differential in package and driver pin so16w with soic | SO | UART/serial",
  "class": "ic"
 }

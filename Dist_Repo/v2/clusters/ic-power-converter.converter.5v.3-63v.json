@@ -7,35 +7,28 @@
   "Power",
   "Converter"
  ],
- "description": "Through-hole IC power converter cluster with 5V and 3.63V facets using TRACO DCDC footprints.",
+ "description": "2 ic power converter parts for 5V, 3.63V using Converter footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when requiring a through-hole IC power converter with 5V or 3.63V facets.",
-  "Choose when using TRACO TBA1-xxxx or TME series through-hole footprints.",
-  "Verify compatibility with tier B representative parts TBA1-0311 or TME-0305S."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a Converter land pattern is intended."
  ],
  "avoid_when": [
-  "Do not use when surface-mount (SMD) packaging is required.",
-  "Avoid when layout requires footprints other than TRACO TBA1 or TME series.",
-  "Avoid if voltage facets other than 5V or 3.63V are needed."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than Converter."
  ],
  "keywords": [
-  "ic power converter",
-  "power converter",
   "converter",
-  "dcdc",
-  "5v",
-  "3.63v",
-  "through_hole",
-  "tht",
-  "traco",
-  "tba1-0311",
-  "tme-0305s",
-  "kicad-symbols",
   "dc",
+  "dcdc",
+  "traco",
   "1w",
   "63v",
+  "5v",
   "output",
   "sip",
+  "tht",
   "regulated",
   "tba1",
   "single",
@@ -66,7 +59,7 @@
   "tier_counts": {
    "B": 2
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -90,6 +83,6 @@
   "kicad-symbols/Converter_DCDC/TBA1-0311",
   "kicad-symbols/Converter_DCDC/TME-0305S"
  ],
- "embedding_text": "ic-power-converter.converter.5v.3-63v | IC Power Converter | Through-hole IC power converter cluster with 5V and 3.63V facets using TRACO DCDC footprints. | ic power converter power converter converter dcdc 5v 3.63v through_hole tht traco tba1-0311 tme-0305s kicad-symbols dc 1w 63v output sip regulated tba1 single tme unregulated input | Converter | 5V 3.63V",
+ "embedding_text": "ic-power-converter.converter.5v.3-63v | IC Power Converter | 2 ic power converter parts for 5V, 3.63V using Converter footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | converter dc dcdc traco 1w 63v 5v output sip tht regulated tba1 single tme unregulated input | Converter | 5V 3.63V",
  "class": "ic.power.converter"
 }

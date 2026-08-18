@@ -7,42 +7,34 @@
   "Power",
   "Linear Regulator"
  ],
- "description": "Surface-mount 3V LDO linear regulator IC cluster in WSON packages featuring 6 KiCad symbol parts classified under Tier A and Tier B quality ratings.",
+ "description": "6 ic power linear regulator parts for LDO, 3V using WSON footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Prefer Tier A parts such as LP5912-3.0DRV, TLV70030_WSON6, TLV75530PDRV, or TLV75730PDRV.",
-  "Select the specific WSON footprint needed, including WSON-6 and WSON-8 package variants.",
-  "Use when a 3V surface-mount LDO linear regulator is required."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a WSON land pattern is intended."
  ],
  "avoid_when": [
-  "The design requires package families other than WSON.",
-  "Through-hole mounting is required instead of SMD.",
-  "The application requires an output voltage other than 3V."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than WSON."
  ],
  "keywords": [
-  "ic",
-  "power",
-  "linear regulator",
-  "ldo",
-  "3v",
   "wson",
-  "smd",
-  "wson-6",
-  "wson-8",
-  "wson6",
-  "lp5912-3.0drv",
-  "tlv70030",
-  "tlv75530pdrv",
-  "tlv75730pdrv",
-  "lp2951-3.0_wson",
   "regulator",
   "linear",
+  "ldo",
   "low",
   "5mm",
   "p0",
+  "3v",
   "fixed",
+  "ic",
+  "power",
   "0v",
   "1ep",
-  "nolead"
+  "nolead",
+  "output",
+  "wson6"
  ],
  "facts": {
   "package_family": "WSON",
@@ -71,7 +63,7 @@
    "A": 4,
    "B": 2
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -123,6 +115,6 @@
   "kicad-symbols/Regulator_Linear/LP2951-3.0_WSON",
   "kicad-symbols/Regulator_Linear/LP3982ILD-3.0"
  ],
- "embedding_text": "ic-power-ldo.wson.ldo.3v | IC Power Linear Regulator | Surface-mount 3V LDO linear regulator IC cluster in WSON packages featuring 6 KiCad symbol parts classified under Tier A and Tier B quality ratings. | ic power linear regulator ldo 3v wson smd wson-6 wson-8 wson6 lp5912-3.0drv tlv70030 tlv75530pdrv tlv75730pdrv lp2951-3.0_wson regulator linear low 5mm p0 fixed 0v 1ep nolead | WSON | LDO 3V",
+ "embedding_text": "ic-power-ldo.wson.ldo.3v | IC Power Linear Regulator | 6 ic power linear regulator parts for LDO, 3V using WSON footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | wson regulator linear ldo low 5mm p0 3v fixed ic power 0v 1ep nolead output wson6 | WSON | LDO 3V",
  "class": "ic.power.ldo"
 }

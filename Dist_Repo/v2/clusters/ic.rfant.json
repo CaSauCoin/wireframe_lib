@@ -5,28 +5,20 @@
  "category_path": [
   "IC"
  ],
- "description": "Integrated circuit cluster containing 1 tier C part using the RFANT package family and footprint.",
+ "description": "1 ic parts using RFANT footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Use when an RFANT package family footprint is required.",
-  "Review tier C quality status and dist-legacy source trust.",
-  "Verify mount configuration and specifications for the selected part."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a RFANT land pattern is intended."
  ],
  "avoid_when": [
-  "The PCB layout requires a package family other than RFANT.",
-  "The design requires planner-visible components.",
-  "Tier C quality rating does not meet project requirements."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than RFANT."
  ],
  "keywords": [
   "rfant",
   "ic",
-  "integrated circuit",
-  "rfant package",
-  "rfant footprint",
-  "package family",
-  "dist-legacy",
-  "tier c",
-  "unknown mount",
-  "ic component",
   "pad",
   "mm",
   "pitch",
@@ -51,12 +43,12 @@
   "tier_counts": {
    "C": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
   "dist-legacy/RFANT"
  ],
- "embedding_text": "ic.rfant | IC | Integrated circuit cluster containing 1 tier C part using the RFANT package family and footprint. | rfant ic integrated circuit rfant package rfant footprint package family dist-legacy tier c unknown mount ic component pad mm pitch pins | RFANT | ",
+ "embedding_text": "ic.rfant | IC | 1 ic parts using RFANT footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | rfant ic pad mm pitch pins | RFANT | ",
  "class": "ic"
 }

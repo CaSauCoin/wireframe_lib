@@ -6,27 +6,20 @@
   "Discrete",
   "Diode"
  ],
- "description": "Discrete diode cluster containing 1 tier B part using the SQCB footprint and package family.",
+ "description": "1 discrete diode parts using SQCB footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when a discrete diode in an SQCB footprint is required.",
-  "Verify component details for the tier B SQCB Series entry from dist-legacy."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SQCB land pattern is intended."
  ],
  "avoid_when": [
-  "The design requires a footprint other than SQCB.",
-  "A component class other than a discrete diode is needed.",
-  "An unknown mounting style is unacceptable for assembly."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SQCB."
  ],
  "keywords": [
   "sqcb",
   "diode",
-  "discrete",
-  "discrete diode",
-  "sqcb footprint",
-  "sqcb series",
-  "dist-legacy",
-  "discrete.diode",
-  "sqcb package",
-  "tier b",
   "series",
   "anode",
   "cathode",
@@ -38,7 +31,8 @@
   "in",
   "an",
   "package",
-  "smd"
+  "smd",
+  "discrete"
  ],
  "facts": {
   "package_family": "SQCB",
@@ -59,7 +53,7 @@
   "tier_counts": {
    "B": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -74,6 +68,6 @@
  "part_ids": [
   "dist-legacy/SQCB Series"
  ],
- "embedding_text": "discrete-diode.sqcb | Discrete Diode | Discrete diode cluster containing 1 tier B part using the SQCB footprint and package family. | sqcb diode discrete discrete diode sqcb footprint sqcb series dist-legacy discrete.diode sqcb package tier b series anode cathode two pin with and terminals in an package smd | SQCB | ",
+ "embedding_text": "discrete-diode.sqcb | Discrete Diode | 1 discrete diode parts using SQCB footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | sqcb diode series anode cathode two pin with and terminals in an package smd discrete | SQCB | ",
  "class": "discrete.diode"
 }

@@ -6,42 +6,34 @@
   "IC",
   "Sensor"
  ],
- "description": "Surface-mount sensor IC cluster containing KiCad symbol entries in TSSOP-14 and TSSOP-16 packages with 0.65mm pitch.",
+ "description": "3 ic sensor parts using TSSOP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when requiring surface-mount sensor ICs in TSSOP-14 or TSSOP-16 packages.",
-  "Verify the specific sensor function such as temperature, motion, or touch.",
-  "Ensure PCB layout matches 4.4x5mm TSSOP footprint with 0.65mm pitch."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a TSSOP land pattern is intended."
  ],
  "avoid_when": [
-  "The design requires non-SMD or through-hole mounting.",
-  "The required footprint is not a 14-pin or 16-pin TSSOP package.",
-  "The part needed is not an IC sensor."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than TSSOP."
  ],
  "keywords": [
-  "ic",
-  "sensor",
   "tssop",
-  "smd",
-  "tssop-14",
-  "tssop-16",
-  "ips2200",
-  "max31856",
-  "pca8886",
-  "0.65mm",
-  "4.4x5mm",
-  "kicad",
+  "sensor",
   "4x5mm",
   "p0",
   "65mm",
   "so",
   "nxp",
+  "ic",
   "touch",
   "inductive",
   "position",
   "jedec",
   "mo",
   "ab",
-  "texas"
+  "texas",
+  "pw0016a"
  ],
  "facts": {
   "package_family": "TSSOP",
@@ -63,7 +55,7 @@
   "tier_counts": {
    "A": 3
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -96,6 +88,6 @@
   "kicad-symbols/Sensor_Temperature/MAX31856",
   "kicad-symbols/Sensor_Touch/PCA8886"
  ],
- "embedding_text": "ic-sensor.tssop | IC Sensor | Surface-mount sensor IC cluster containing KiCad symbol entries in TSSOP-14 and TSSOP-16 packages with 0.65mm pitch. | ic sensor tssop smd tssop-14 tssop-16 ips2200 max31856 pca8886 0.65mm 4.4x5mm kicad 4x5mm p0 65mm so nxp touch inductive position jedec mo ab texas | TSSOP | ",
+ "embedding_text": "ic-sensor.tssop | IC Sensor | 3 ic sensor parts using TSSOP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | tssop sensor 4x5mm p0 65mm so nxp ic touch inductive position jedec mo ab texas pw0016a | TSSOP | ",
  "class": "ic.sensor"
 }

@@ -5,28 +5,20 @@
  "category_path": [
   "IC"
  ],
- "description": "Cluster of 3 surface-mount IC parts utilizing M80 package footprints from the chilaboard-altium-library.",
+ "description": "3 ic parts using M80 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Verify exact footprint match among M80_82806, M80_82808, and M80_82810 land patterns.",
-  "Select when surface-mount IC parts in the M80 package family are required.",
-  "Account for tier C quality review status across all 3 parts."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a M80 land pattern is intended."
  ],
  "avoid_when": [
-  "The board layout requires non-SMD mounting or a package family other than M80.",
-  "Parts with quality tiers higher than tier C are required.",
-  "Planner-visible parts are explicitly required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than M80."
  ],
  "keywords": [
   "m80",
   "ic",
-  "smd",
-  "surface mount",
-  "m80_82806",
-  "m80_82808",
-  "m80_82810",
-  "chilaboard-altium-library",
-  "tier c",
-  "ic.m80",
   "surface",
   "mount",
   "pad",
@@ -55,7 +47,7 @@
   "tier_counts": {
    "C": 3
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
@@ -63,6 +55,6 @@
   "chilaboard-altium-library/M80_82808/M80_82808",
   "chilaboard-altium-library/M80_82810/M80_82810"
  ],
- "embedding_text": "ic.m80 | IC | Cluster of 3 surface-mount IC parts utilizing M80 package footprints from the chilaboard-altium-library. | m80 ic smd surface mount m80_82806 m80_82808 m80_82810 chilaboard-altium-library tier c ic.m80 surface mount pad mm pitch pins | M80 | ",
+ "embedding_text": "ic.m80 | IC | 3 ic parts using M80 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | m80 ic surface mount pad mm pitch pins | M80 | ",
  "class": "ic"
 }

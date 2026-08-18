@@ -6,44 +6,34 @@
   "Discrete",
   "Bridge Rectifier"
  ],
- "description": "Cluster of 3 discrete bridge rectifier diodes in SMD TSSOP-4 packages (footprint TSSOP-4_4.4x5mm_P4mm), sourced from kicad-symbols, all tier B with review_status 'generated'.",
+ "description": "3 discrete bridge rectifier parts using TSSOP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Match the exact footprint TSSOP-4_4.4x5mm_P4mm to your intended land pattern",
-  "Distinguish among MDB6S, MDB8S, MDB10S by part number since all share tier B and score 80",
-  "Confirm symbol-footprint pairing yourself; review_status is 'generated', not verified",
-  "Verify electrical ratings against the manufacturer datasheet before use; none are recorded here"
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a TSSOP land pattern is intended."
  ],
  "avoid_when": [
-  "The design requires a package other than TSSOP-4",
-  "Through-hole mounting is needed (all parts here are SMD only)",
-  "Confirmed/reviewed (non-generated) part data is required",
-  "Specific voltage or current ratings must be verified and are not captured in these facts"
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than TSSOP."
  ],
  "keywords": [
-  "bridge rectifier",
-  "diode bridge",
-  "tssop",
-  "tssop-4",
-  "smd",
-  "single phase",
-  "mdb6s",
-  "mdb8s",
-  "mdb10s",
-  "kicad-symbols",
-  "discrete",
-  "rectifier",
-  "tier b",
-  "4.4x5mm",
-  "p4mm",
-  "generated",
   "bridge",
+  "tssop",
+  "rectifier",
   "diode",
   "ac",
   "dc",
   "single",
   "phase",
   "vrms",
-  "1a"
+  "1a",
+  "if",
+  "4x5mm",
+  "p4mm",
+  "so",
+  "acdc",
+  "discrete"
  ],
  "facts": {
   "package_family": "TSSOP",
@@ -64,7 +54,7 @@
   "tier_counts": {
    "B": 3
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -97,6 +87,6 @@
   "kicad-symbols/Diode_Bridge/MDB6S",
   "kicad-symbols/Diode_Bridge/MDB8S"
  ],
- "embedding_text": "discrete-bridge.tssop | Discrete Bridge Rectifier | Cluster of 3 discrete bridge rectifier diodes in SMD TSSOP-4 packages (footprint TSSOP-4_4.4x5mm_P4mm), sourced from kicad-symbols, all tier B with review_status 'generated'. | bridge rectifier diode bridge tssop tssop-4 smd single phase mdb6s mdb8s mdb10s kicad-symbols discrete rectifier tier b 4.4x5mm p4mm generated bridge diode ac dc single phase vrms 1a | TSSOP | ",
+ "embedding_text": "discrete-bridge.tssop | Discrete Bridge Rectifier | 3 discrete bridge rectifier parts using TSSOP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | bridge tssop rectifier diode ac dc single phase vrms 1a if 4x5mm p4mm so acdc discrete | TSSOP | ",
  "class": "discrete.bridge"
 }

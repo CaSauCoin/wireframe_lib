@@ -5,32 +5,24 @@
  "category_path": [
   "IC"
  ],
- "description": "This cluster contains 6 through-hole buck IC parts in the TO220 package family using TO220_5 and TO220_7 footprints.",
+ "description": "6 ic parts for buck using TO220 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when requiring a through-hole buck IC in a TO220 package family.",
-  "Verify whether the design requires a TO220_5 or TO220_7 footprint.",
-  "Choose between fixed 5V and adjustable (ADJ) part options such as LM2576 or LM2596."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a TO220 land pattern is intended."
  ],
  "avoid_when": [
-  "Surface-mount (SMD) assembly is required instead of through-hole.",
-  "The design requires a footprint other than TO220_5 or TO220_7.",
-  "Regulator topologies other than buck converters are needed."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than TO220."
  ],
  "keywords": [
   "to220",
-  "buck",
-  "ic",
-  "through_hole",
-  "to220_5",
-  "to220_7",
-  "lm2576",
-  "lm2596",
-  "lm2576t",
-  "lm2596t",
-  "vreg",
-  "chilaboard-altium-library",
   "regulator",
+  "vreg",
+  "buck",
   "voltage",
+  "ic",
   "to",
   "step",
   "down",
@@ -38,7 +30,9 @@
   "in",
   "pin",
   "package",
-  "adj"
+  "lm2576t",
+  "adj",
+  "lm2596t"
  ],
  "facts": {
   "package_family": "TO220",
@@ -62,7 +56,7 @@
   "tier_counts": {
    "B": 6
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -114,6 +108,6 @@
   "chilaboard-altium-library/VREG_LM2596T-ADJ_TO220/VREG_LM2596T-ADJ_TO220",
   "chilaboard-altium-library/VREG_LM2678_TO220/VREG_LM2678_TO220"
  ],
- "embedding_text": "ic.to220.buck | IC | This cluster contains 6 through-hole buck IC parts in the TO220 package family using TO220_5 and TO220_7 footprints. | to220 buck ic through_hole to220_5 to220_7 lm2576 lm2596 lm2576t lm2596t vreg chilaboard-altium-library regulator voltage to step down switching in pin package adj | TO220 | buck",
+ "embedding_text": "ic.to220.buck | IC | 6 ic parts for buck using TO220 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | to220 regulator vreg buck voltage ic to step down switching in pin package lm2576t adj lm2596t | TO220 | buck",
  "class": "ic"
 }

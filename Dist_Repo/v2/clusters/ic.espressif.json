@@ -5,31 +5,25 @@
  "category_path": [
   "IC"
  ],
- "description": "Cluster of 5 IC parts utilizing ESPRESSIF footprints, including ESP32-WROOM-32 and ESP32-C3-MINI-1, available in surface-mount configurations.",
+ "description": "5 ic parts using ESPRESSIF footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Choose when needing an IC designed for ESPRESSIF footprints such as ESP32-C3-MINI-1 or ESP32-WROOM-32.",
-  "Prefer higher-tier entries, noting the cluster contains one tier B part and four tier C parts.",
-  "Verify exact footprint compatibility between dist-legacy and celestial-altium-library sources."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a ESPRESSIF land pattern is intended."
  ],
  "avoid_when": [
-  "Do not use when the PCB design requires a package family other than ESPRESSIF.",
-  "Avoid if strict quality tier A approval is required.",
-  "Avoid when surface-mount (SMD) packaging is not suitable for the layout."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than ESPRESSIF."
  ],
  "keywords": [
   "espressif",
-  "ic",
   "esp32",
-  "esp32-wroom-32",
-  "esp32-c3-mini-1",
-  "wroom",
   "c3",
   "mini",
-  "smd",
-  "package espressif",
-  "celestial-altium-library",
-  "dist-legacy",
+  "ic",
   "vfqfn",
+  "wroom",
   "pad",
   "mm",
   "pitch",
@@ -65,7 +59,7 @@
    "B": 1,
    "C": 4
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -84,6 +78,6 @@
   "celestial-altium-library/Espressif ESP32-WROOM-32/Espressif ESP32-WROOM-32",
   "celestial-altium-library/ESPRESSIF ESP32-C3-MINI-1/ESPRESSIF ESP32-C3-MINI-1"
  ],
- "embedding_text": "ic.espressif | IC | Cluster of 5 IC parts utilizing ESPRESSIF footprints, including ESP32-WROOM-32 and ESP32-C3-MINI-1, available in surface-mount configurations. | espressif ic esp32 esp32-wroom-32 esp32-c3-mini-1 wroom c3 mini smd package espressif celestial-altium-library dist-legacy vfqfn pad mm pitch pins module surface mount 5x5mm 6x6mm | ESPRESSIF | ",
+ "embedding_text": "ic.espressif | IC | 5 ic parts using ESPRESSIF footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | espressif esp32 c3 mini ic vfqfn wroom pad mm pitch pins module surface mount 5x5mm 6x6mm | ESPRESSIF | ",
  "class": "ic"
 }

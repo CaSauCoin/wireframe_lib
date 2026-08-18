@@ -7,36 +7,31 @@
   "Power",
   "Converter"
  ],
- "description": "This cluster includes 18 IC power converter parts supporting 3.3V and 5V facets in surface-mount and through-hole Converter footprints.",
+ "description": "18 ic power converter parts for 3.3V, 5V using Converter footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when a 3.3V or 5V IC power converter is needed.",
-  "Choose between surface-mount (SMD) and through-hole (THT) mounting configurations.",
-  "Evaluate parts based on quality tier (13 Tier A and 5 Tier B parts)."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a Converter land pattern is intended."
  ],
  "avoid_when": [
-  "The design requires operating parameters outside 3.3V or 5V facets.",
-  "The target PCB layout cannot accommodate SMD or THT Converter footprints."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than Converter."
  ],
  "keywords": [
-  "ic",
-  "power",
   "converter",
-  "ic power converter",
-  "3.3v",
-  "5v",
-  "smd",
-  "through_hole",
-  "tht",
-  "dcdc",
-  "acdc",
-  "power converter",
   "dc",
+  "power",
+  "dcdc",
   "xp",
+  "5v",
   "3v",
   "isolated",
+  "tht",
   "voltage",
   "module",
   "output",
+  "ic",
   "input",
   "vdc",
   "sip"
@@ -76,7 +71,7 @@
    "A": 13,
    "B": 5
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -140,6 +135,6 @@
   "kicad-symbols/Converter_DCDC/TES1-0510",
   "kicad-symbols/Converter_DCDC/TME-0503S"
  ],
- "embedding_text": "ic-power-converter.converter.3v3.5v | IC Power Converter | This cluster includes 18 IC power converter parts supporting 3.3V and 5V facets in surface-mount and through-hole Converter footprints. | ic power converter ic power converter 3.3v 5v smd through_hole tht dcdc acdc power converter dc xp 3v isolated voltage module output input vdc sip | Converter | 3.3V 5V",
+ "embedding_text": "ic-power-converter.converter.3v3.5v | IC Power Converter | 18 ic power converter parts for 3.3V, 5V using Converter footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | converter dc power dcdc xp 5v 3v isolated tht voltage module output ic input vdc sip | Converter | 3.3V 5V",
  "class": "ic.power.converter"
 }

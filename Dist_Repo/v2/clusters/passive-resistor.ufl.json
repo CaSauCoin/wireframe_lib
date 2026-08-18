@@ -6,28 +6,23 @@
   "Passive",
   "Resistor"
  ],
- "description": "Cluster of surface-mount passive resistor components associated with UFL SMD male footprints.",
+ "description": "1 passive resistor parts using UFL footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Verify footprint compatibility with UFL SMD male land patterns.",
-  "Inspect component specifications and quality tier before board design.",
-  "Confirm pin-to-pad assignments and mounting requirements."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a UFL land pattern is intended."
  ],
  "avoid_when": [
-  "A standard chip resistor package or through-hole mounting is needed.",
-  "The application requires verified higher-tier parts with planner visibility.",
-  "The PCB layout does not use a UFL footprint."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than UFL."
  ],
  "keywords": [
-  "passive",
-  "resistor",
   "ufl",
   "smd",
   "male",
-  "ufl smd male",
-  "surface mount",
-  "passive resistor",
-  "passive.resistor",
-  "package ufl",
+  "passive",
+  "resistor",
   "surface",
   "mount",
   "pad",
@@ -54,12 +49,12 @@
   "tier_counts": {
    "C": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
   "matthiasbock-altium-libraries/UFL SMD MALE/UFL_SMD_MALE"
  ],
- "embedding_text": "passive-resistor.ufl | Passive Resistor | Cluster of surface-mount passive resistor components associated with UFL SMD male footprints. | passive resistor ufl smd male ufl smd male surface mount passive resistor passive.resistor package ufl surface mount pad mm pitch pins | UFL | ",
+ "embedding_text": "passive-resistor.ufl | Passive Resistor | 1 passive resistor parts using UFL footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | ufl smd male passive resistor surface mount pad mm pitch pins | UFL | ",
  "class": "passive.resistor"
 }

@@ -6,31 +6,21 @@
   "Passive",
   "Resistor"
  ],
- "description": "Cluster of 8 passive resistor parts in the CUI package family with SMD, through-hole, and unknown mounting types across Tier B and Tier C quality ratings.",
+ "description": "8 passive resistor parts using CUI footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select by matching specific footprints such as CMEJ-0415-42-P, CT-1205H-SMT-TR, or CMS series.",
-  "Choose between SMD and through-hole mounting options.",
-  "Prioritize Tier B parts from dist-legacy or celestial-altium-library sources."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a CUI land pattern is intended."
  ],
  "avoid_when": [
-  "A package family other than CUI is required.",
-  "A Tier A verified component is required.",
-  "Parts outside the passive resistor category are needed."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than CUI."
  ],
  "keywords": [
+  "cui",
   "passive",
   "resistor",
-  "cui",
-  "smd",
-  "through hole",
-  "cmej-0415-42-p",
-  "cms-15113-078sp",
-  "cms-16093-078sp",
-  "ct-1205h-smt-tr",
-  "cma-4544pf-w",
-  "cui devices",
-  "celestial-altium-library",
-  "dist-legacy",
   "cms",
   "078sp",
   "cmej",
@@ -41,7 +31,9 @@
   "tr",
   "cma",
   "4544pf",
-  "surface"
+  "surface",
+  "mount",
+  "pad"
  ],
  "facts": {
   "package_family": "CUI",
@@ -71,7 +63,7 @@
    "B": 3,
    "C": 5
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -109,6 +101,6 @@
   "celestial-altium-library/CUI CT-1205H-SMT-TR/CUI_CT-1205H-SMT-TR",
   "celestial-altium-library/CUI Devices CMA-4544PF-W/CUI_Devices_CMA-4544PF-W"
  ],
- "embedding_text": "passive-resistor.cui | Passive Resistor | Cluster of 8 passive resistor parts in the CUI package family with SMD, through-hole, and unknown mounting types across Tier B and Tier C quality ratings. | passive resistor cui smd through hole cmej-0415-42-p cms-15113-078sp cms-16093-078sp ct-1205h-smt-tr cma-4544pf-w cui devices celestial-altium-library dist-legacy cms 078sp cmej devices ct 1205h smt tr cma 4544pf surface | CUI | ",
+ "embedding_text": "passive-resistor.cui | Passive Resistor | 8 passive resistor parts using CUI footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | cui passive resistor cms 078sp cmej devices ct 1205h smt tr cma 4544pf surface mount pad | CUI | ",
  "class": "passive.resistor"
 }

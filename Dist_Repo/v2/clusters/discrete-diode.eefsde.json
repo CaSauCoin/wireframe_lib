@@ -6,28 +6,21 @@
   "Discrete",
   "Diode"
  ],
- "description": "Discrete diode cluster containing 1 tier C part in the EEFSDE package footprint family.",
+ "description": "1 discrete diode parts using EEFSDE footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when an EEFSDE package footprint is required.",
-  "Verify mounting requirements since the mount type is specified as unknown.",
-  "Confirm symbol and footprint mapping for this generated tier C entry."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a EEFSDE land pattern is intended."
  ],
  "avoid_when": [
-  "Avoid if a package footprint other than EEFSDE is required.",
-  "Avoid if planner-visible parts or higher quality tiers are required.",
-  "Avoid if mount configuration must be known prior to selection."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than EEFSDE."
  ],
  "keywords": [
   "eefsde",
   "discrete",
   "diode",
-  "discrete diode",
-  "eefsde package",
-  "eefsde footprint",
-  "discrete.diode",
-  "dist-legacy",
-  "tier c",
-  "unknown mount",
   "pad",
   "mm",
   "pitch",
@@ -52,12 +45,12 @@
   "tier_counts": {
    "C": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
   "dist-legacy/EEFSDE"
  ],
- "embedding_text": "discrete-diode.eefsde | Discrete Diode | Discrete diode cluster containing 1 tier C part in the EEFSDE package footprint family. | eefsde discrete diode discrete diode eefsde package eefsde footprint discrete.diode dist-legacy tier c unknown mount pad mm pitch pins | EEFSDE | ",
+ "embedding_text": "discrete-diode.eefsde | Discrete Diode | 1 discrete diode parts using EEFSDE footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | eefsde discrete diode pad mm pitch pins | EEFSDE | ",
  "class": "discrete.diode"
 }

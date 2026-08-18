@@ -6,44 +6,34 @@
   "Discrete",
   "Diode"
  ],
- "description": "Cluster of 26 discrete diode parts (D package family) tagged with 5V/6.5V facets, spanning SMC, SMA, SMB, SOD-123F, SOD-128, P600, PowerDI-123, and MicroSMP footprints, sourced from Alternate-KiCad-Library.",
+ "description": "26 discrete diode parts for 5V, 6.5V using D footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Match the exact footprint (SMC, SMA, SMB, SOD-123F, SOD-128, P600, PowerDI-123, MicroSMP) to your land pattern",
-  "Prefer tier A entries (24 of 26 parts) over tier B",
-  "Confirm SMD vs through-hole mount matches your board assembly process",
-  "Distinguish plain vs _TVS-suffixed footprint variants before committing"
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a D land pattern is intended."
  ],
  "avoid_when": [
-  "Design requires a package outside the D family",
-  "Electrical rating beyond the 5V/6.5V facets is needed but not confirmed on the chosen part",
-  "Symbol-footprint pairing is unverified or flagged for review",
-  "Only tier B parts match and higher-confidence data is required"
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than D."
  ],
  "keywords": [
   "diode",
-  "discrete diode",
-  "d package",
-  "5v",
-  "6.5v",
-  "smc",
-  "sma",
-  "smb",
-  "sod-123f",
-  "sod-128",
-  "p600",
-  "powerdi-123",
-  "microsmp",
-  "smd",
-  "through hole",
-  "alternate-kicad-library",
-  "tvs footprint",
-  "zener footprint",
   "tvs",
+  "5v",
   "unidirectional",
   "akl",
   "alternate",
   "kicad",
-  "library"
+  "library",
+  "discrete",
+  "smc",
+  "bidirectional",
+  "do",
+  "sod",
+  "5a",
+  "sma",
+  "smb"
  ],
  "facts": {
   "package_family": "D",
@@ -80,7 +70,7 @@
    "A": 24,
    "B": 2
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -152,6 +142,6 @@
   "Alternate-KiCad-Library/Diode_TVS_AKL/MSMP6.5A",
   "Alternate-KiCad-Library/Diode_TVS_AKL/TPSMA6L6.5A"
  ],
- "embedding_text": "discrete-diode.d.5v.6-5v | Discrete Diode | Cluster of 26 discrete diode parts (D package family) tagged with 5V/6.5V facets, spanning SMC, SMA, SMB, SOD-123F, SOD-128, P600, PowerDI-123, and MicroSMP footprints, sourced from Alternate-KiCad-Library. | diode discrete diode d package 5v 6.5v smc sma smb sod-123f sod-128 p600 powerdi-123 microsmp smd through hole alternate-kicad-library tvs footprint zener footprint tvs unidirectional akl alternate kicad library | D | 5V 6.5V",
+ "embedding_text": "discrete-diode.d.5v.6-5v | Discrete Diode | 26 discrete diode parts for 5V, 6.5V using D footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | diode tvs 5v unidirectional akl alternate kicad library discrete smc bidirectional do sod 5a sma smb | D | 5V 6.5V",
  "class": "discrete.diode"
 }

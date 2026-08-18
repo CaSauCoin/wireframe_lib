@@ -5,34 +5,22 @@
  "category_path": [
   "IC"
  ],
- "description": "Integrated circuit cluster of 18 parts utilizing SOP family footprints for surface-mount design.",
+ "description": "18 ic parts using SOP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Verify specific SOP footprint pin count and pitch for layout matching.",
-  "Prefer Tier B parts over Tier C entries for higher quality rating.",
-  "Confirm surface-mount package dimensions before board placement."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SOP land pattern is intended."
  ],
  "avoid_when": [
-  "A package family other than SOP or non-SMD mounting is required.",
-  "Only Tier A quality rated parts are acceptable for the application.",
-  "High planner visibility is needed, as only one part is planner visible."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SOP."
  ],
  "keywords": [
-  "ic",
   "sop",
-  "smd",
-  "surface mount",
-  "sop-8",
-  "sop-16",
-  "sop-20",
-  "sop-24",
-  "sop-32",
-  "1.27mm pitch",
-  "2.54mm pitch",
-  "sop footprint",
-  "integrated circuit",
-  "pfc161-s08b",
   "p1",
   "27mm",
+  "ic",
   "57x4",
   "pad",
   "mm",
@@ -40,7 +28,11 @@
   "pins",
   "pdf",
   "surface",
-  "mount"
+  "mount",
+  "package",
+  "pin",
+  "com",
+  "so"
  ],
  "facts": {
   "package_family": "SOP",
@@ -76,7 +68,7 @@
    "B": 1,
    "C": 17
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -108,6 +100,6 @@
   "dist-legacy/SOP-8-1EP_4.57x4.57mm_P1.27mm_EP4.57x4.45mm",
   "dist-legacy/SOP-8-1EP_4.57x4.57mm_P1.27mm_EP4.57x4.45mm_ThermalVias"
  ],
- "embedding_text": "ic.sop | IC | Integrated circuit cluster of 18 parts utilizing SOP family footprints for surface-mount design. | ic sop smd surface mount sop-8 sop-16 sop-20 sop-24 sop-32 1.27mm pitch 2.54mm pitch sop footprint integrated circuit pfc161-s08b p1 27mm 57x4 pad mm pitch pins pdf surface mount | SOP | ",
+ "embedding_text": "ic.sop | IC | 18 ic parts using SOP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | sop p1 27mm ic 57x4 pad mm pitch pins pdf surface mount package pin com so | SOP | ",
  "class": "ic"
 }

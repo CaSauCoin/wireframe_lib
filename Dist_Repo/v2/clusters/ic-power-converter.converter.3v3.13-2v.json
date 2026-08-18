@@ -7,32 +7,22 @@
   "Power",
   "Converter"
  ],
- "description": "Through-hole IC power converter cluster with 3.3V and 13.2V facets using the TRACO TRN3 single DCDC converter footprint.",
+ "description": "1 ic power converter parts for 3.3V, 13.2V using Converter footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Choose when designing for through-hole TRACO TRN3 single DCDC converter footprints.",
-  "Select after verifying compatibility with 3.3V and 13.2V operating facets.",
-  "Review tier B quality status and symbol pin allocations before board layout."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a Converter land pattern is intended."
  ],
  "avoid_when": [
-  "The design requires surface-mount packages instead of through-hole mounting.",
-  "The application requires land patterns other than TRACO TRN3 single converter footprints.",
-  "Operating voltage levels or ratings differ from the cluster's stated 3.3V and 13.2V facets."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than Converter."
  ],
  "keywords": [
-  "ic power converter",
-  "dcdc converter",
-  "traco",
-  "trn3",
-  "trn3-0510",
-  "3.3v",
-  "13.2v",
-  "through hole",
-  "tht",
-  "converter_dcdc_traco_trn3-xx1x_single_tht",
-  "kicad-symbols",
-  "power converter",
   "converter",
+  "trn3",
   "dcdc",
+  "traco",
   "3w",
   "dc",
   "2v",
@@ -40,9 +30,11 @@
   "output",
   "sip",
   "single",
+  "tht",
   "regulated",
   "input",
-  "fixed"
+  "fixed",
+  "voltage"
  ],
  "facts": {
   "package_family": "Converter",
@@ -66,7 +58,7 @@
   "tier_counts": {
    "B": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -81,6 +73,6 @@
  "part_ids": [
   "kicad-symbols/Converter_DCDC/TRN3-0510"
  ],
- "embedding_text": "ic-power-converter.converter.3v3.13-2v | IC Power Converter | Through-hole IC power converter cluster with 3.3V and 13.2V facets using the TRACO TRN3 single DCDC converter footprint. | ic power converter dcdc converter traco trn3 trn3-0510 3.3v 13.2v through hole tht converter_dcdc_traco_trn3-xx1x_single_tht kicad-symbols power converter converter dcdc 3w dc 2v 3v output sip single regulated input fixed | Converter | 3.3V 13.2V",
+ "embedding_text": "ic-power-converter.converter.3v3.13-2v | IC Power Converter | 1 ic power converter parts for 3.3V, 13.2V using Converter footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | converter trn3 dcdc traco 3w dc 2v 3v output sip single tht regulated input fixed voltage | Converter | 3.3V 13.2V",
  "class": "ic.power.converter"
 }

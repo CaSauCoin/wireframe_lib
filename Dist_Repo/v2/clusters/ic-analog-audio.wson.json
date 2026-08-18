@@ -7,31 +7,22 @@
   "Analog",
   "Audio"
  ],
- "description": "Analog audio integrated circuit cluster featuring surface-mount components in WSON packaging with WSON-10-1EP_4x3mm_P0.5mm_EP2.2x2mm footprints.",
+ "description": "1 ic analog audio parts using WSON footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when requiring an analog audio IC in an SMD WSON package.",
-  "Verify compatibility with the WSON-10-1EP_4x3mm_P0.5mm_EP2.2x2mm footprint pattern.",
-  "Check part quality tier B rating and KiCad symbol source specifications."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a WSON land pattern is intended."
  ],
  "avoid_when": [
-  "Avoid if the PCB design requires through-hole components or non-WSON packaging.",
-  "Avoid if package footprint requirements differ from WSON-10-1EP_4x3mm_P0.5mm_EP2.2x2mm.",
-  "Do not use when non-audio or digital-only integrated circuits are needed."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than WSON."
  ],
  "keywords": [
-  "ic",
-  "analog",
   "audio",
-  "analog audio",
   "wson",
-  "smd",
-  "lm4990ld",
-  "wson-10-1ep",
-  "kicad-symbols",
-  "wson-10-1ep_4x3mm_p0.5mm_ep2.2x2mm",
-  "amplifier_audio",
-  "ic.analog.audio",
   "amplifier",
+  "lm4990ld",
   "boomer",
   "watt",
   "power",
@@ -42,7 +33,8 @@
   "level",
   "1ep",
   "4x3mm",
-  "p0"
+  "p0",
+  "5mm"
  ],
  "facts": {
   "package_family": "WSON",
@@ -63,7 +55,7 @@
   "tier_counts": {
    "B": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -78,6 +70,6 @@
  "part_ids": [
   "kicad-symbols/Amplifier_Audio/LM4990LD"
  ],
- "embedding_text": "ic-analog-audio.wson | IC Analog Audio | Analog audio integrated circuit cluster featuring surface-mount components in WSON packaging with WSON-10-1EP_4x3mm_P0.5mm_EP2.2x2mm footprints. | ic analog audio analog audio wson smd lm4990ld wson-10-1ep kicad-symbols wson-10-1ep_4x3mm_p0.5mm_ep2.2x2mm amplifier_audio ic.analog.audio amplifier boomer watt power with selectable shutdown logic level 1ep 4x3mm p0 | WSON | ",
+ "embedding_text": "ic-analog-audio.wson | IC Analog Audio | 1 ic analog audio parts using WSON footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | audio wson amplifier lm4990ld boomer watt power with selectable shutdown logic level 1ep 4x3mm p0 5mm | WSON | ",
  "class": "ic.analog.audio"
 }

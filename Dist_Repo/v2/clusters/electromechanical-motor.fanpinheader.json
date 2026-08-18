@@ -6,40 +6,33 @@
   "Electromechanical",
   "Motor"
  ],
- "description": "Electromechanical fan and motor symbols using 1x03 and 1x04 vertical 2.54mm pitch through-hole FanPinHeader footprints.",
+ "description": "6 electromechanical motor parts using FanPinHeader footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Choose for 3-pin or 4-pin fan applications requiring vertical 2.54mm pitch FanPinHeader footprints.",
-  "Select between 1x03 and 1x04 pin configurations based on fan connectivity requirements such as CPU or chassis fan symbols.",
-  "Confirm through-hole mounting compatibility with vertical FanPinHeader land patterns."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a FanPinHeader land pattern is intended."
  ],
  "avoid_when": [
-  "The design requires surface-mount components instead of through-hole mounting.",
-  "The layout requires pin header pitch options other than 2.54mm.",
-  "The application requires package footprint styles other than vertical 1x03 or 1x04 FanPinHeader."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than FanPinHeader."
  ],
  "keywords": [
-  "fanpinheader",
-  "electromechanical",
-  "motor",
   "fan",
-  "fan_3pin",
-  "fan_4pin",
-  "cpu fan",
-  "tacho",
-  "2.54mm",
-  "vertical",
-  "through hole",
-  "1x03",
-  "1x04",
-  "pc chassis",
+  "motor",
   "pin",
+  "tacho",
+  "fanpinheader",
   "cpu",
   "pwm",
   "output",
   "connector",
   "p2",
   "54mm",
+  "vertical",
   "header",
+  "electromechanical",
+  "1x03",
   "input"
  ],
  "facts": {
@@ -62,7 +55,7 @@
   "tier_counts": {
    "A": 6
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -114,6 +107,6 @@
   "kicad-symbols/Motor/Fan_Tacho",
   "kicad-symbols/Motor/Fan_Tacho_PWM"
  ],
- "embedding_text": "electromechanical-motor.fanpinheader | Electromechanical Motor | Electromechanical fan and motor symbols using 1x03 and 1x04 vertical 2.54mm pitch through-hole FanPinHeader footprints. | fanpinheader electromechanical motor fan fan_3pin fan_4pin cpu fan tacho 2.54mm vertical through hole 1x03 1x04 pc chassis pin cpu pwm output connector p2 54mm header input | FanPinHeader | ",
+ "embedding_text": "electromechanical-motor.fanpinheader | Electromechanical Motor | 6 electromechanical motor parts using FanPinHeader footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | fan motor pin tacho fanpinheader cpu pwm output connector p2 54mm vertical header electromechanical 1x03 input | FanPinHeader | ",
  "class": "electromechanical.motor"
 }

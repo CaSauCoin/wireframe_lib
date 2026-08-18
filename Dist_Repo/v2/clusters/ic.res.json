@@ -5,28 +5,20 @@
  "category_path": [
   "IC"
  ],
- "description": "Integrated circuit cluster containing two tier-C parts in the IC category with RES package family footprints RES_0201 and RES_5931.",
+ "description": "2 ic parts using RES footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Selecting IC parts that use RES package family footprints such as RES_0201 or RES_5931.",
-  "Tier C legacy-sourced parts are acceptable for the design requirements.",
-  "Part details and land patterns require manual review given generated review status."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a RES land pattern is intended."
  ],
  "avoid_when": [
-  "The application requires parts rated higher than quality tier C.",
-  "Footprints other than RES_0201 or RES_5931 are required.",
-  "Parts with zero planner-visible count or unverified review status cannot be used."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than RES."
  ],
  "keywords": [
-  "ic",
   "res",
-  "ic.res",
-  "res_0201",
-  "res_5931",
-  "res package family",
-  "dist-legacy",
-  "tier c",
-  "generated review status",
-  "res footprint",
+  "ic",
   "pad",
   "mm",
   "pitch",
@@ -52,13 +44,13 @@
   "tier_counts": {
    "C": 2
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
   "dist-legacy/RES_0201",
   "dist-legacy/RES_5931"
  ],
- "embedding_text": "ic.res | IC | Integrated circuit cluster containing two tier-C parts in the IC category with RES package family footprints RES_0201 and RES_5931. | ic res ic.res res_0201 res_5931 res package family dist-legacy tier c generated review status res footprint pad mm pitch pins | RES | ",
+ "embedding_text": "ic.res | IC | 2 ic parts using RES footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | res ic pad mm pitch pins | RES | ",
  "class": "ic"
 }

@@ -6,42 +6,34 @@
   "IC",
   "Analog"
  ],
- "description": "Analog IC cluster containing surface-mount SPI devices in DFN packages with exposed pads, including ADC and DAC components.",
+ "description": "4 ic analog parts for SPI using DFN footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select for analog IC applications requiring an SPI serial interface.",
-  "Choose for SMD designs using 8-pin or 10-pin DFN packages with exposed pads.",
-  "Match footprint dimensions to layout requirements (3x2mm or 3x3mm DFN)."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a DFN land pattern is intended."
  ],
  "avoid_when": [
-  "The application requires through-hole components or non-DFN package families.",
-  "Interfaces other than SPI are required.",
-  "Exposed pad sizes or pin pitch do not match PCB footprint land patterns."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than DFN."
  ],
  "keywords": [
-  "ic",
-  "analog",
   "spi",
   "dfn",
-  "smd",
-  "adc",
-  "dac",
-  "dfn-8",
-  "dfn-10",
-  "ad7171",
-  "mcp4901",
-  "mcp4911",
-  "mcp4921",
-  "3x2mm",
-  "3x3mm",
-  "exposed pad",
+  "analog",
   "bit",
+  "dac",
   "interface",
   "1ep",
   "p0",
   "5mm",
   "ep1",
   "1ch",
-  "emc"
+  "ic",
+  "emc",
+  "converters",
+  "with",
+  "3x2mm"
  ],
  "facts": {
   "package_family": "DFN",
@@ -65,7 +57,7 @@
   "tier_counts": {
    "A": 4
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -107,6 +99,6 @@
   "kicad-symbols/Analog_DAC/MCP4911-EMC",
   "kicad-symbols/Analog_DAC/MCP4921-EMC"
  ],
- "embedding_text": "ic-analog.dfn.spi | IC Analog | Analog IC cluster containing surface-mount SPI devices in DFN packages with exposed pads, including ADC and DAC components. | ic analog spi dfn smd adc dac dfn-8 dfn-10 ad7171 mcp4901 mcp4911 mcp4921 3x2mm 3x3mm exposed pad bit interface 1ep p0 5mm ep1 1ch emc | DFN | SPI",
+ "embedding_text": "ic-analog.dfn.spi | IC Analog | 4 ic analog parts for SPI using DFN footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | spi dfn analog bit dac interface 1ep p0 5mm ep1 1ch ic emc converters with 3x2mm | DFN | SPI",
  "class": "ic.analog"
 }

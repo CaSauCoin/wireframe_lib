@@ -6,42 +6,34 @@
   "IC",
   "Sensor"
  ],
- "description": "Integrated circuit sensor components in surface-mount SOT-23 package options including SOT-23 and SOT-23-6 footprints.",
+ "description": "12 ic sensor parts using SOT-23 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when requiring surface-mount sensor ICs in SOT-23 or SOT-23-6 footprints.",
-  "Choose based on required sensor type such as touch or temperature sensing.",
-  "Verify the exact footprint variation matches PCB footprint requirements."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SOT-23 land pattern is intended."
  ],
  "avoid_when": [
-  "The design requires through-hole or non-SMD mounting.",
-  "The required footprint is not a SOT-23 or SOT-23-6 package.",
-  "The component needed is not a sensor IC."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SOT-23."
  ],
  "keywords": [
-  "ic sensor",
-  "sot-23",
-  "sot-23-6",
-  "smd",
-  "touch sensor",
-  "temperature sensor",
-  "at42qt1010-tshr",
-  "at42qt1011-tshr",
-  "at42qt1012-t",
-  "lm73",
-  "lm73-1",
-  "kicad-symbols",
   "sot",
   "sensor",
   "temperature",
   "to",
   "ic",
+  "smd",
   "touch",
   "thermistor",
   "key",
   "digital",
   "low",
   "power",
-  "analog"
+  "analog",
+  "accuracy",
+  "40c",
+  "in"
  ],
  "facts": {
   "package_family": "SOT-23",
@@ -63,7 +55,7 @@
   "tier_counts": {
    "A": 12
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -121,6 +113,6 @@
   "kicad-symbols/Sensor_Magnetic/SM353LT",
   "kicad-symbols/Sensor_Temperature/KTY82"
  ],
- "embedding_text": "ic-sensor.sot-23 | IC Sensor | Integrated circuit sensor components in surface-mount SOT-23 package options including SOT-23 and SOT-23-6 footprints. | ic sensor sot-23 sot-23-6 smd touch sensor temperature sensor at42qt1010-tshr at42qt1011-tshr at42qt1012-t lm73 lm73-1 kicad-symbols sot sensor temperature to ic touch thermistor key digital low power analog | SOT-23 | ",
+ "embedding_text": "ic-sensor.sot-23 | IC Sensor | 12 ic sensor parts using SOT-23 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | sot sensor temperature to ic smd touch thermistor key digital low power analog accuracy 40c in | SOT-23 | ",
  "class": "ic.sensor"
 }

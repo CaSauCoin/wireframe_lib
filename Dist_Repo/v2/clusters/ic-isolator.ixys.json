@@ -6,29 +6,20 @@
   "IC",
   "Isolator"
  ],
- "description": "Surface-mount IC isolator cluster containing two tier A parts in IXYS Flatpak-8 and SMD-8 footprints.",
+ "description": "2 ic isolator parts using IXYS footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when an SMD IC isolator in an IXYS Flatpak-8 or SMD-8 footprint is required.",
-  "Choose between LOC112P and LOC112S based on the specific IXYS package footprint variant."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a IXYS land pattern is intended."
  ],
  "avoid_when": [
-  "Through-hole mounting is required instead of SMD.",
-  "The board design requires package footprints other than IXYS Flatpak-8 or SMD-8."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than IXYS."
  ],
  "keywords": [
-  "ic",
-  "isolator",
   "ixys",
-  "smd",
-  "flatpak-8",
-  "smd-8",
-  "loc112p",
-  "loc112s",
-  "ic isolator",
-  "isolator analog",
-  "ixys isolator",
-  "6.3x9.7mm",
-  "p2.54mm",
+  "isolator",
   "flatpak",
   "analog",
   "isolated",
@@ -39,7 +30,10 @@
   "7mm",
   "p2",
   "54mm",
-  "dip"
+  "dip",
+  "littlefuse",
+  "ic",
+  "smd"
  ],
  "facts": {
   "package_family": "IXYS",
@@ -61,7 +55,7 @@
   "tier_counts": {
    "A": 2
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -85,6 +79,6 @@
   "kicad-symbols/Isolator_Analog/LOC112P",
   "kicad-symbols/Isolator_Analog/LOC112S"
  ],
- "embedding_text": "ic-isolator.ixys | IC Isolator | Surface-mount IC isolator cluster containing two tier A parts in IXYS Flatpak-8 and SMD-8 footprints. | ic isolator ixys smd flatpak-8 smd-8 loc112p loc112s ic isolator isolator analog ixys isolator 6.3x9.7mm p2.54mm flatpak analog isolated linear photocoupler wideband 3x9 7mm p2 54mm dip | IXYS | ",
+ "embedding_text": "ic-isolator.ixys | IC Isolator | 2 ic isolator parts using IXYS footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | ixys isolator flatpak analog isolated linear photocoupler wideband 3x9 7mm p2 54mm dip littlefuse ic smd | IXYS | ",
  "class": "ic.isolator"
 }

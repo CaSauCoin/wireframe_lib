@@ -7,42 +7,34 @@
   "Power",
   "Converter"
  ],
- "description": "Cluster of 57 9V power converter IC components supporting surface-mount and through-hole Converter footprints across AC-DC and DC-DC module configurations.",
+ "description": "57 ic power converter parts for 9V using Converter footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select based on whether an AC-DC or DC-DC power converter module footprint is required.",
-  "Verify mounting type requirement between surface-mount (smd) and through-hole (through_hole).",
-  "Prefer Tier A parts (52 available) with explicit footprint compatibility."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a Converter land pattern is intended."
  ],
  "avoid_when": [
-  "A package family other than Converter is required.",
-  "The circuit design requires a voltage facet other than 9V.",
-  "Exact electrical ratings, pinouts, or package dimensions are not confirmed."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than Converter."
  ],
  "keywords": [
-  "ic",
-  "power converter",
   "converter",
-  "9v",
-  "smd",
-  "through_hole",
-  "acdc",
-  "dcdc",
-  "power module",
-  "kicad-symbols",
-  "hi-link",
-  "xp power",
-  "traco",
-  "recom",
   "power",
   "dc",
+  "9v",
   "module",
   "xp",
   "tht",
+  "dcdc",
   "isolated",
   "voltage",
+  "acdc",
+  "ic",
   "output",
   "input",
-  "ac"
+  "ac",
+  "vdc"
  ],
  "facts": {
   "package_family": "Converter",
@@ -78,7 +70,7 @@
    "A": 52,
    "B": 5
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -181,6 +173,6 @@
   "kicad-symbols/Converter_DCDC/TMR-0523",
   "kicad-symbols/Converter_DCDC/TMR-0512"
  ],
- "embedding_text": "ic-power-converter.converter.9v | IC Power Converter | Cluster of 57 9V power converter IC components supporting surface-mount and through-hole Converter footprints across AC-DC and DC-DC module configurations. | ic power converter converter 9v smd through_hole acdc dcdc power module kicad-symbols hi-link xp power traco recom power dc module xp tht isolated voltage output input ac | Converter | 9V",
+ "embedding_text": "ic-power-converter.converter.9v | IC Power Converter | 57 ic power converter parts for 9V using Converter footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | converter power dc 9v module xp tht dcdc isolated voltage acdc ic output input ac vdc | Converter | 9V",
  "class": "ic.power.converter"
 }

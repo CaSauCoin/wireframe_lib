@@ -5,31 +5,24 @@
  "category_path": [
   "IC"
  ],
- "description": "Surface-mount IC cluster featuring an I2C interface in the Air package family with the Air_Quality_Module_IAQ-CORE_P footprint.",
+ "description": "1 ic parts for I2C using Air footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select for I2C IC designs requiring surface-mount (SMD) installation.",
-  "Verify compatibility with the Air_Quality_Module_IAQ-CORE_P footprint.",
-  "Choose when using parts from the Air package family such as IAQ-CORE_P."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a Air land pattern is intended."
  ],
  "avoid_when": [
-  "The design requires through-hole or non-SMD mounting.",
-  "The PCB layout requires a footprint other than Air_Quality_Module_IAQ-CORE_P.",
-  "The application does not use an I2C communication interface."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than Air."
  ],
  "keywords": [
-  "ic",
+  "iaq",
+  "sensors",
+  "core",
+  "gas",
   "i2c",
   "air",
-  "smd",
-  "iaq-core_p",
-  "air_quality_module_iaq-core_p",
-  "digikey-kicad-library",
-  "gas sensors",
-  "iaq",
-  "core",
-  "sensors",
-  "air quality module",
-  "gas",
   "dk",
   "mod",
   "pulsed",
@@ -37,7 +30,8 @@
   "quality",
   "module",
   "transducers",
-  "ams"
+  "ams",
+  "ic"
  ],
  "facts": {
   "package_family": "Air",
@@ -60,7 +54,7 @@
   "tier_counts": {
    "B": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -75,6 +69,6 @@
  "part_ids": [
   "digikey-kicad-library/dk_Gas-Sensors/IAQ-CORE_P"
  ],
- "embedding_text": "ic.air.i2c | IC | Surface-mount IC cluster featuring an I2C interface in the Air package family with the Air_Quality_Module_IAQ-CORE_P footprint. | ic i2c air smd iaq-core_p air_quality_module_iaq-core_p digikey-kicad-library gas sensors iaq core sensors air quality module gas dk mod pulsed mode quality module transducers ams | Air | I2C",
+ "embedding_text": "ic.air.i2c | IC | 1 ic parts for I2C using Air footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | iaq sensors core gas i2c air dk mod pulsed mode quality module transducers ams ic | Air | I2C",
  "class": "ic"
 }

@@ -6,28 +6,23 @@
   "IC",
   "Microcontroller"
  ],
- "description": "Surface-mount microcontroller IC cluster containing 687 parts in QFN packages from KiCad symbols.",
+ "description": "687 ic microcontroller parts using QFN footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Choose parts based on specific QFN footprint and exposed thermal pad dimensions.",
-  "Prefer tier A parts when higher quality classification is required.",
-  "Verify pin count and land pattern layout against project requirements."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a QFN land pattern is intended."
  ],
  "avoid_when": [
-  "Packages other than surface-mount QFN or VQFN are required.",
-  "Through-hole mounting or non-QFN lead styles are needed."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than QFN."
  ],
  "keywords": [
-  "ic",
+  "qfn",
   "microcontroller",
   "mcu",
-  "qfn",
-  "vqfn",
-  "smd",
-  "surface mount",
-  "ic.mcu",
-  "kicad-symbols",
-  "exposed pad",
   "flash",
+  "ic",
   "p0",
   "1ep",
   "nolead",
@@ -37,7 +32,8 @@
   "bit",
   "microchip",
   "cortex",
-  "m0"
+  "m0",
+  "vqfn"
  ],
  "facts": {
   "package_family": "QFN",
@@ -70,7 +66,7 @@
    "A": 282,
    "B": 405
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -803,6 +799,6 @@
   "kicad-symbols/MCU_Microchip_ATtiny/ATtiny85V-10M",
   "kicad-symbols/MCU_Parallax/P8X32A-M44"
  ],
- "embedding_text": "ic-mcu.qfn | IC Microcontroller | Surface-mount microcontroller IC cluster containing 687 parts in QFN packages from KiCad symbols. | ic microcontroller mcu qfn vqfn smd surface mount ic.mcu kicad-symbols exposed pad flash p0 1ep nolead 5mm arm sram bit microchip cortex m0 | QFN | ",
+ "embedding_text": "ic-mcu.qfn | IC Microcontroller | 687 ic microcontroller parts using QFN footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | qfn microcontroller mcu flash ic p0 1ep nolead 5mm arm sram bit microchip cortex m0 vqfn | QFN | ",
  "class": "ic.mcu"
 }

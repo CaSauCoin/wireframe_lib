@@ -5,42 +5,34 @@
  "category_path": [
   "IC"
  ],
- "description": "A cluster of 17 surface-mount ICs for USB and UART/serial interface applications provided in QFN package footprints.",
+ "description": "17 ic parts for USB, UART/serial using QFN footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select based on the exact QFN footprint variant required for PCB layout.",
-  "Check part quality tier and source library origin.",
-  "Verify footprint specifications across QFN, WQFN, and VFQFN variants."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a QFN land pattern is intended."
  ],
  "avoid_when": [
-  "The board layout requires packages other than QFN.",
-  "The design requires non-SMD or through-hole mounting.",
-  "The circuit does not involve USB or UART/serial interface functions."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than QFN."
  ],
  "keywords": [
   "usb",
   "uart",
-  "serial",
   "ic",
   "qfn",
-  "wqfn",
-  "vfqfn",
-  "smd",
-  "interface",
-  "ch342f",
-  "cp2104",
-  "ft230xq",
-  "ft232rq",
-  "cp2102",
-  "qfn24",
-  "qfn32",
+  "serial",
   "bridge",
   "to",
+  "interface",
   "qfn50",
   "in",
   "pin",
   "package",
   "pins",
-  "dual"
+  "qfn24",
+  "dual",
+  "controllers"
  ],
  "facts": {
   "package_family": "QFN",
@@ -79,7 +71,7 @@
    "B": 15,
    "C": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -142,6 +134,6 @@
   "chilaboard-altium-library/FT4232H-56Q_QFN56/FT4232H-56Q_QFN56",
   "digikey-kicad-library/dk_Interface-Controllers/CP2102-GMR_NRND"
  ],
- "embedding_text": "ic.qfn.usb.uart | IC | A cluster of 17 surface-mount ICs for USB and UART/serial interface applications provided in QFN package footprints. | usb uart serial ic qfn wqfn vfqfn smd interface ch342f cp2104 ft230xq ft232rq cp2102 qfn24 qfn32 bridge to qfn50 in pin package pins dual | QFN | USB UART/serial",
+ "embedding_text": "ic.qfn.usb.uart | IC | 17 ic parts for USB, UART/serial using QFN footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | usb uart ic qfn serial bridge to interface qfn50 in pin package pins qfn24 dual controllers | QFN | USB UART/serial",
  "class": "ic"
 }

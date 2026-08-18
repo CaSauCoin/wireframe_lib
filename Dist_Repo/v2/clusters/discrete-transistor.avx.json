@@ -6,28 +6,21 @@
   "Discrete",
   "Transistor"
  ],
- "description": "Discrete transistor component cluster containing 3 surface-mount parts in the AVX package family.",
+ "description": "3 discrete transistor parts using AVX footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Choose when requiring surface-mount discrete transistors in the AVX package family.",
-  "Verify exact footprint compatibility between AVX, AVX_M620720, and AVX 9296003202806.",
-  "Check part quality tiers, which consist of tier B and tier C parts."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a AVX land pattern is intended."
  ],
  "avoid_when": [
-  "The design requires package families other than AVX.",
-  "Through-hole components are required instead of surface mount.",
-  "Tier A verified parts are strictly required for the design."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than AVX."
  ],
  "keywords": [
   "avx",
   "transistor",
   "discrete",
-  "discrete transistor",
-  "avx_m620720",
-  "9296003202806",
-  "smd",
-  "discrete.transistor",
-  "dist-legacy",
-  "celestial-altium-library",
   "m620720",
   "pins",
   "three",
@@ -66,7 +59,7 @@
    "B": 1,
    "C": 2
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -83,6 +76,6 @@
   "dist-legacy/AVX_M620720",
   "celestial-altium-library/AVX 9296003202806/AVX_9296003202806"
  ],
- "embedding_text": "discrete-transistor.avx | Discrete Transistor | Discrete transistor component cluster containing 3 surface-mount parts in the AVX package family. | avx transistor discrete discrete transistor avx_m620720 9296003202806 smd discrete.transistor dist-legacy celestial-altium-library m620720 pins three pin surface mount pad mm pitch ism antenna component with | AVX | ",
+ "embedding_text": "discrete-transistor.avx | Discrete Transistor | 3 discrete transistor parts using AVX footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | avx transistor discrete m620720 pins three pin surface mount pad mm pitch ism antenna component with | AVX | ",
  "class": "discrete.transistor"
 }

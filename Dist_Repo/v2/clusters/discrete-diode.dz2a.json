@@ -6,28 +6,21 @@
   "Discrete",
   "Diode"
  ],
- "description": "Discrete diode cluster containing 1 tier C part using the DZ2A package family and footprint.",
+ "description": "1 discrete diode parts using DZ2A footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Use when a discrete diode with a DZ2A footprint is required.",
-  "Check part quality tier and source data before selection.",
-  "Verify compatibility with the DZ2A package family."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a DZ2A land pattern is intended."
  ],
  "avoid_when": [
-  "The design requires a footprint other than DZ2A.",
-  "Tier C parts are not acceptable for the design.",
-  "Planner-visible parts are required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than DZ2A."
  ],
  "keywords": [
   "dz2a",
   "discrete",
   "diode",
-  "discrete diode",
-  "discrete.diode",
-  "dz2a footprint",
-  "dz2a package",
-  "package family",
-  "tier c",
-  "dist-legacy",
   "pad",
   "mm",
   "pitch",
@@ -52,12 +45,12 @@
   "tier_counts": {
    "C": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
   "dist-legacy/DZ2A"
  ],
- "embedding_text": "discrete-diode.dz2a | Discrete Diode | Discrete diode cluster containing 1 tier C part using the DZ2A package family and footprint. | dz2a discrete diode discrete diode discrete.diode dz2a footprint dz2a package package family tier c dist-legacy pad mm pitch pins | DZ2A | ",
+ "embedding_text": "discrete-diode.dz2a | Discrete Diode | 1 discrete diode parts using DZ2A footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | dz2a discrete diode pad mm pitch pins | DZ2A | ",
  "class": "discrete.diode"
 }

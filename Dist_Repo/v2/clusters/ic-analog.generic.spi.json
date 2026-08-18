@@ -6,27 +6,23 @@
   "IC",
   "Analog"
  ],
- "description": "Analog IC cluster for SPI components with package chosen later, including KiCad symbol entries such as ADS1120-RVA.",
+ "description": "1 ic analog parts for SPI with package chosen later. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select an explicit package and footprint before PCB layout.",
-  "Verify part specifications, quality tier, and pinout against system requirements."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Select a footprint/package explicitly before placement."
  ],
  "avoid_when": [
-  "SPI communication is not used by the target application.",
-  "Fully pre-defined footprints and higher quality tiers are strictly required immediately."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review."
  ],
  "keywords": [
-  "ic",
   "analog",
   "spi",
   "adc",
+  "package",
   "ads1120",
   "rva",
-  "ads1120-rva",
-  "kicad-symbols",
-  "ic analog",
-  "package chosen later",
-  "package",
   "low",
   "power",
   "quad",
@@ -55,7 +51,7 @@
   "tier_counts": {
    "G": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -70,6 +66,6 @@
  "part_ids": [
   "kicad-symbols/Analog_ADC/ADS1120-RVA"
  ],
- "embedding_text": "ic-analog.generic.spi | IC Analog | Analog IC cluster for SPI components with package chosen later, including KiCad symbol entries such as ADS1120-RVA. | ic analog spi adc ads1120 rva ads1120-rva kicad-symbols ic analog package chosen later package low power quad input bit to digital converter integrated temperature | package chosen later | SPI",
+ "embedding_text": "ic-analog.generic.spi | IC Analog | 1 ic analog parts for SPI with package chosen later. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | analog spi adc package ads1120 rva low power quad input bit to digital converter integrated temperature | package chosen later | SPI",
  "class": "ic.analog"
 }

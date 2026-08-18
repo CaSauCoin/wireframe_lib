@@ -6,32 +6,23 @@
   "IC",
   "RF"
  ],
- "description": "Surface-mount RF IC cluster consisting of tier B parts such as ADL5541 and ADL5542 matching the Analog_LFCSP-8-1EP_3x3mm_P0.5mm_EP1.53x1.85mm footprint.",
+ "description": "2 ic rf parts using Analog footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when requiring surface-mount RF IC parts in an Analog LFCSP-8 footprint.",
-  "Choose between tier B parts ADL5541 and ADL5542 based on application needs.",
-  "Confirm board compatibility with footprint Analog_LFCSP-8-1EP_3x3mm_P0.5mm_EP1.53x1.85mm."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a Analog land pattern is intended."
  ],
  "avoid_when": [
-  "Avoid when the PCB design requires through-hole or non-SMD components.",
-  "Avoid if a package footprint other than Analog_LFCSP-8-1EP_3x3mm_P0.5mm_EP1.53x1.85mm is required.",
-  "Avoid when non-RF IC components or higher tier ratings are needed."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than Analog."
  ],
  "keywords": [
-  "ic",
   "rf",
-  "ic rf",
-  "smd",
-  "adl5541",
-  "adl5542",
-  "analog",
   "lfcsp",
-  "lfcsp-8",
-  "rf amplifier",
-  "tier b",
-  "kicad-symbols",
   "gain",
   "block",
+  "analog",
   "amplifier",
   "6000mhz",
   "if",
@@ -41,7 +32,8 @@
   "5mm",
   "ep1",
   "53x1",
-  "85mm"
+  "85mm",
+  "ic"
  ],
  "facts": {
   "package_family": "Analog",
@@ -62,7 +54,7 @@
   "tier_counts": {
    "B": 2
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -86,6 +78,6 @@
   "kicad-symbols/RF_Amplifier/ADL5541",
   "kicad-symbols/RF_Amplifier/ADL5542"
  ],
- "embedding_text": "ic-rf.analog | IC RF | Surface-mount RF IC cluster consisting of tier B parts such as ADL5541 and ADL5542 matching the Analog_LFCSP-8-1EP_3x3mm_P0.5mm_EP1.53x1.85mm footprint. | ic rf ic rf smd adl5541 adl5542 analog lfcsp lfcsp-8 rf amplifier tier b kicad-symbols gain block amplifier 6000mhz if 1ep 3x3mm p0 5mm ep1 53x1 85mm | Analog | ",
+ "embedding_text": "ic-rf.analog | IC RF | 2 ic rf parts using Analog footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | rf lfcsp gain block analog amplifier 6000mhz if 1ep 3x3mm p0 5mm ep1 53x1 85mm ic | Analog | ",
  "class": "ic.rf"
 }

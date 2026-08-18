@@ -6,32 +6,26 @@
   "Discrete",
   "Diode"
  ],
- "description": "Surface-mount discrete diode cluster featuring LL package family parts such as LL-34 footprint switching diodes from the Seeed OPL KiCad library.",
+ "description": "1 discrete diode parts using LL footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select for surface-mount discrete diode applications using LL or LL-34 footprints.",
-  "Check quality tier B rating and source library context for the part.",
-  "Verify land pattern dimensions and footprint compatibility before layout."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a LL land pattern is intended."
  ],
  "avoid_when": [
-  "Avoid when layout requires through-hole or non-LL package footprints.",
-  "Do not use if unstated electrical specifications or ratings must be guaranteed.",
-  "Avoid if a verified tier A component is strictly required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than LL."
  ],
  "keywords": [
-  "discrete diode",
   "diode",
   "ll",
-  "ll-34",
-  "smd",
-  "surface mount",
   "1n4148",
-  "switch diode",
-  "seeed",
-  "opl",
-  "kicad",
+  "smd",
   "discrete",
   "switching",
   "switch",
+  "opl",
   "semiconductor",
   "high",
   "speed",
@@ -60,7 +54,7 @@
   "tier_counts": {
    "B": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -75,6 +69,6 @@
  "part_ids": [
   "Seeed-OPL-Kicad-Library/OPL_Discrete_Semiconductor/SMD-DIODE-SWITCH-1N4148_LL-34_"
  ],
- "embedding_text": "discrete-diode.ll | Discrete Diode | Surface-mount discrete diode cluster featuring LL package family parts such as LL-34 footprint switching diodes from the Seeed OPL KiCad library. | discrete diode diode ll ll-34 smd surface mount 1n4148 switch diode seeed opl kicad discrete switching switch semiconductor high speed in surface mount package minimelf | LL | ",
+ "embedding_text": "discrete-diode.ll | Discrete Diode | 1 discrete diode parts using LL footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | diode ll 1n4148 smd discrete switching switch opl semiconductor high speed in surface mount package minimelf | LL | ",
  "class": "discrete.diode"
 }

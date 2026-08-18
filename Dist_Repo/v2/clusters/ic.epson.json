@@ -5,42 +5,34 @@
  "category_path": [
   "IC"
  ],
- "description": "IC cluster containing surface-mount components with EPSON package family footprints.",
+ "description": "1 ic parts using EPSON footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when surface-mount ICs in EPSON package family footprints are required.",
-  "Verify footprint compatibility with EPSON_CE-USON-10_USON-10_3.2x2.5mm_P0.7mm.",
-  "Check quality tier C status and source trust requirements before component selection."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a EPSON land pattern is intended."
  ],
  "avoid_when": [
-  "Do not use when the layout requires through-hole mounting or non-EPSON packages.",
-  "Avoid if quality tier C classification does not meet design standards.",
-  "Avoid when specific electrical properties or pin functions not listed in facts are required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than EPSON."
  ],
  "keywords": [
-  "ic",
-  "epson",
-  "smd",
-  "surface mount",
   "uson",
-  "uson-10",
-  "ce-uson-10",
-  "3.2x2.5mm",
-  "0.7mm pitch",
-  "p0.7mm",
-  "epson package",
-  "ic epson",
+  "epson",
   "7mm",
   "ce",
   "2x2",
   "5mm",
   "p0",
+  "ic",
   "rtc",
   "surface",
   "mount",
   "pad",
   "mm",
   "pitch",
-  "pins"
+  "pins",
+  "package"
  ],
  "facts": {
   "package_family": "EPSON",
@@ -61,12 +53,12 @@
   "tier_counts": {
    "C": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
   "dist-legacy/EPSON_CE-USON-10_USON-10_3.2x2.5mm_P0.7mm"
  ],
- "embedding_text": "ic.epson | IC | IC cluster containing surface-mount components with EPSON package family footprints. | ic epson smd surface mount uson uson-10 ce-uson-10 3.2x2.5mm 0.7mm pitch p0.7mm epson package ic epson 7mm ce 2x2 5mm p0 rtc surface mount pad mm pitch pins | EPSON | ",
+ "embedding_text": "ic.epson | IC | 1 ic parts using EPSON footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | uson epson 7mm ce 2x2 5mm p0 ic rtc surface mount pad mm pitch pins package | EPSON | ",
  "class": "ic"
 }

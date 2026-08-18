@@ -5,32 +5,24 @@
  "category_path": [
   "IC"
  ],
- "description": "Integrated circuit cluster containing TAITIEN footprint parts for through-hole and unspecified mounts from celestial-altium-library and dist-legacy sources.",
+ "description": "2 ic parts using TAITIEN footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when requiring IC components using TAITIEN or TAITIEN NI-10M-3560 footprint styles.",
-  "Verify mounting type as through-hole or unknown before placement.",
-  "Check quality tier B and C entry specifications and source details."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a TAITIEN land pattern is intended."
  ],
  "avoid_when": [
-  "The PCB layout requires surface-mount packages or non-TAITIEN footprints.",
-  "Design requires fully verified electrical limits, pinouts, or complete datasheets not present in cluster data.",
-  "Verified tier A component entries are strictly required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than TAITIEN."
  ],
  "keywords": [
   "taitien",
-  "ic",
-  "taitien ni-10m-3560",
-  "ni-10m-3560",
-  "through_hole",
-  "through hole ic",
-  "celestial-altium-library",
-  "dist-legacy",
-  "taitien footprint",
-  "taitien package",
   "ni",
   "10m",
   "voltage",
   "oscillator",
+  "ic",
   "controlled",
   "output",
   "rf",
@@ -65,7 +57,7 @@
    "B": 1,
    "C": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -81,6 +73,6 @@
   "dist-legacy/TAITIEN NI-10M-3560",
   "celestial-altium-library/TAITIEN NI-10M-3560/TAITIEN NI-10M-3560"
  ],
- "embedding_text": "ic.taitien | IC | Integrated circuit cluster containing TAITIEN footprint parts for through-hole and unspecified mounts from celestial-altium-library and dist-legacy sources. | taitien ic taitien ni-10m-3560 ni-10m-3560 through_hole through hole ic celestial-altium-library dist-legacy taitien footprint taitien package ni 10m voltage oscillator controlled output rf module featuring reference control input and vco | TAITIEN | ",
+ "embedding_text": "ic.taitien | IC | 2 ic parts using TAITIEN footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | taitien ni 10m voltage oscillator ic controlled output rf module featuring reference control input and vco | TAITIEN | ",
  "class": "ic"
 }

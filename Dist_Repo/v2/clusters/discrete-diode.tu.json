@@ -6,33 +6,26 @@
   "Discrete",
   "Diode"
  ],
- "description": "Discrete diode cluster containing 3 parts in the Tu package family with Tu, Tu-ceramic, and Tu-pico footprints.",
+ "description": "3 discrete diode parts using Tu footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when a discrete diode with a Tu, Tu-ceramic, or Tu-pico footprint is required.",
-  "Prefer the single tier B rated part over tier C options in this cluster.",
-  "Confirm land pattern requirements match the Tu package family."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a Tu land pattern is intended."
  ],
  "avoid_when": [
-  "The design requires a package family other than Tu.",
-  "Tier B or tier C quality parts do not meet project standards.",
-  "A known mounting style is required, as mount type is listed as unknown."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than Tu."
  ],
  "keywords": [
-  "discrete diode",
   "tu",
-  "tu-ceramic",
-  "tu-pico",
-  "discrete.diode",
-  "dist-legacy",
-  "tu_chong_set",
-  "tu footprint",
-  "chong",
-  "set",
-  "ceramic",
-  "pico",
   "diode",
   "discrete",
+  "ceramic",
+  "pico",
   "pins",
+  "chong",
+  "set",
   "two",
   "terminal",
   "anode",
@@ -64,7 +57,7 @@
    "B": 1,
    "C": 2
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -81,6 +74,6 @@
   "dist-legacy/Tu-ceramic",
   "dist-legacy/Tu-pico"
  ],
- "embedding_text": "discrete-diode.tu | Discrete Diode | Discrete diode cluster containing 3 parts in the Tu package family with Tu, Tu-ceramic, and Tu-pico footprints. | discrete diode tu tu-ceramic tu-pico discrete.diode dist-legacy tu_chong_set tu footprint chong set ceramic pico diode discrete pins two terminal anode cathode pad mm pitch component | Tu | ",
+ "embedding_text": "discrete-diode.tu | Discrete Diode | 3 discrete diode parts using Tu footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | tu diode discrete ceramic pico pins chong set two terminal anode cathode pad mm pitch component | Tu | ",
  "class": "discrete.diode"
 }

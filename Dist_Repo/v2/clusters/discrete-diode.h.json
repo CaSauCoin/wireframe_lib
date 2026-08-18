@@ -6,29 +6,21 @@
   "Discrete",
   "Diode"
  ],
- "description": "Discrete diode cluster containing one tier-C part in the H package family with the H-02A footprint.",
+ "description": "1 discrete diode parts using H footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Use when an H-02A footprint in the H package family is required.",
-  "Verify specific part details as mount type is listed as unknown.",
-  "Review part data carefully due to tier-C quality and legacy source status."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a H land pattern is intended."
  ],
  "avoid_when": [
-  "Avoid when board layout requires a footprint other than H-02A.",
-  "Avoid if planner-visible or higher quality tier parts are required.",
-  "Avoid if exact mounting specifications are required without further check."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than H."
  ],
  "keywords": [
+  "02a",
   "discrete",
   "diode",
-  "discrete diode",
-  "h package",
-  "h-02a",
-  "h-02a footprint",
-  "package family h",
-  "dist-legacy",
-  "tier-c",
-  "discrete.diode",
-  "02a",
   "pad",
   "mm",
   "pitch",
@@ -53,12 +45,12 @@
   "tier_counts": {
    "C": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
   "dist-legacy/H-02A"
  ],
- "embedding_text": "discrete-diode.h | Discrete Diode | Discrete diode cluster containing one tier-C part in the H package family with the H-02A footprint. | discrete diode discrete diode h package h-02a h-02a footprint package family h dist-legacy tier-c discrete.diode 02a pad mm pitch pins | H | ",
+ "embedding_text": "discrete-diode.h | Discrete Diode | 1 discrete diode parts using H footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | 02a discrete diode pad mm pitch pins | H | ",
  "class": "discrete.diode"
 }

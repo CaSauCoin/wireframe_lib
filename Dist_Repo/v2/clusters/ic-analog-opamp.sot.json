@@ -7,32 +7,20 @@
   "Analog",
   "Op-Amp"
  ],
- "description": "A cluster of 96 surface-mount analog operational amplifier ICs in SOT package footprints including SOT-353, SOT-363, SOT-553, and SOT-563.",
+ "description": "96 ic analog op-amp parts using SOT footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when an analog operational amplifier IC in a surface-mount SOT package family is required.",
-  "Choose the specific footprint variant among SOT-353, SOT-363, SOT-553, or SOT-563 based on layout requirements.",
-  "Verify part entries provided from sources such as Alternate-KiCad-Library or kicad-symbols."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SOT land pattern is intended."
  ],
  "avoid_when": [
-  "Through-hole mounting or non-SMD placement is required for the application.",
-  "The board layout requires package families other than SOT.",
-  "Components other than analog operational amplifiers are needed."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SOT."
  ],
  "keywords": [
-  "ic",
-  "analog",
-  "op-amp",
-  "operational amplifier",
   "sot",
-  "smd",
-  "sot-353",
-  "sc-70-5",
-  "sot-363",
-  "sc-70-6",
-  "sot-553",
-  "sot-563",
   "amplifier",
-  "surface mount",
   "operational",
   "sc",
   "rail",
@@ -40,9 +28,13 @@
   "cmos",
   "op",
   "amp",
+  "ic",
+  "analog",
   "to",
   "opamp",
-  "akl"
+  "akl",
+  "offset",
+  "alternate"
  ],
  "facts": {
   "package_family": "SOT",
@@ -67,7 +59,7 @@
   "tier_counts": {
    "A": 96
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -209,6 +201,6 @@
   "Alternate-KiCad-Library/Amplifier_Operational_AKL/TSV911AIDCK",
   "Alternate-KiCad-Library/Amplifier_Operational_AKL/TSZ121IC"
  ],
- "embedding_text": "ic-analog-opamp.sot | IC Analog Op-Amp | A cluster of 96 surface-mount analog operational amplifier ICs in SOT package footprints including SOT-353, SOT-363, SOT-553, and SOT-563. | ic analog op-amp operational amplifier sot smd sot-353 sc-70-5 sot-363 sc-70-6 sot-553 sot-563 amplifier surface mount operational sc rail rrio cmos op amp to opamp akl | SOT | ",
+ "embedding_text": "ic-analog-opamp.sot | IC Analog Op-Amp | 96 ic analog op-amp parts using SOT footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | sot amplifier operational sc rail rrio cmos op amp ic analog to opamp akl offset alternate | SOT | ",
  "class": "ic.analog.opamp"
 }

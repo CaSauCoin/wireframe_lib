@@ -5,33 +5,22 @@
  "category_path": [
   "Connector"
  ],
- "description": "A single-part connector cluster tagged 5V, currently represented by one tier-G PCI 32-bit bus symbol with no footprint or package assigned yet.",
+ "description": "1 connector parts for 5V with package chosen later. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Only one part available (tier G, score 77) — verify it matches your actual connector before use",
-  "No footprint is defined; select and assign a package/footprint explicitly before layout",
-  "Confirm the part is actually a PCI 32-bit 5V bus connector and not a generic placeholder"
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Select a footprint/package explicitly before placement."
  ],
  "avoid_when": [
-  "You need a footprint already paired with the symbol",
-  "You need a connector other than a PCI 32-bit bus type",
-  "The part's generated/unreviewed status is unacceptable for your workflow"
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review."
  ],
  "keywords": [
-  "connector",
   "5v",
   "pci",
-  "pci bus",
-  "32bit",
-  "32-bit",
-  "bus connector",
-  "expansion connector",
-  "kicad-symbols",
-  "no footprint",
-  "package chosen later",
-  "tier g",
-  "generated",
-  "bus_pci_32bit_5v",
+  "connector",
   "bus",
+  "32bit",
   "for",
   "cards",
   "package",
@@ -55,7 +44,7 @@
   "tier_counts": {
    "G": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -70,6 +59,6 @@
  "part_ids": [
   "kicad-symbols/Connector/Bus_PCI_32bit_5V"
  ],
- "embedding_text": "connector.generic.5v | Connector | A single-part connector cluster tagged 5V, currently represented by one tier-G PCI 32-bit bus symbol with no footprint or package assigned yet. | connector 5v pci pci bus 32bit 32-bit bus connector expansion connector kicad-symbols no footprint package chosen later tier g generated bus_pci_32bit_5v bus for cards package chosen later | package chosen later | 5V",
+ "embedding_text": "connector.generic.5v | Connector | 1 connector parts for 5V with package chosen later. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | 5v pci connector bus 32bit for cards package chosen later | package chosen later | 5V",
  "class": "connector"
 }

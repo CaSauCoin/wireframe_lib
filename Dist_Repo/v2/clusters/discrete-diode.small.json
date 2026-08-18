@@ -6,27 +6,22 @@
   "Discrete",
   "Diode"
  ],
- "description": "Discrete diode cluster containing 1 tier C part with a SMALL package family footprint.",
+ "description": "1 discrete diode parts using SMALL footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when a SMALL package family footprint such as SMALL-Conductor is required.",
-  "Verify part specifications given the tier C quality level.",
-  "Confirm mounting and land pattern suitability prior to board layout."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SMALL land pattern is intended."
  ],
  "avoid_when": [
-  "The PCB design requires a package family other than SMALL.",
-  "Unknown mount details or unvalidated tier C parts are not acceptable."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SMALL."
  ],
  "keywords": [
+  "small",
+  "conductor",
   "discrete",
   "diode",
-  "discrete diode",
-  "small",
-  "small-conductor",
-  "conductor",
-  "tier c",
-  "dist-legacy",
-  "discrete.diode",
-  "package small",
   "pad",
   "mm",
   "pitch",
@@ -51,12 +46,12 @@
   "tier_counts": {
    "C": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
   "dist-legacy/SMALL-Conductor"
  ],
- "embedding_text": "discrete-diode.small | Discrete Diode | Discrete diode cluster containing 1 tier C part with a SMALL package family footprint. | discrete diode discrete diode small small-conductor conductor tier c dist-legacy discrete.diode package small pad mm pitch pins | SMALL | ",
+ "embedding_text": "discrete-diode.small | Discrete Diode | 1 discrete diode parts using SMALL footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | small conductor discrete diode pad mm pitch pins | SMALL | ",
  "class": "discrete.diode"
 }

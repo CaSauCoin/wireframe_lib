@@ -7,40 +7,34 @@
   "Power",
   "Linear Regulator"
  ],
- "description": "Surface-mount LDO linear power regulator cluster containing 1 KiCad symbol part in a Linear_DE14MA footprint.",
+ "description": "1 ic power linear regulator parts for LDO using Linear footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select for surface-mount IC power linear LDO regulator applications.",
-  "Requires layout compatibility with the Linear_DE14MA footprint.",
-  "Check tier B rating and KiCad symbol source details for part selection."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a Linear land pattern is intended."
  ],
  "avoid_when": [
-  "The design requires through-hole mounting instead of SMD.",
-  "The PCB layout requires a footprint other than Linear_DE14MA.",
-  "A higher quality tier than tier B is required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than Linear."
  ],
  "keywords": [
-  "ic",
-  "power",
-  "linear regulator",
-  "ldo",
-  "smd",
-  "linear_de14ma",
-  "lt3032",
-  "kicad-symbols",
   "linear",
   "regulator",
-  "de14ma",
-  "tier b",
   "low",
   "noise",
   "dfn",
+  "ldo",
+  "lt3032",
   "150ma",
   "dual",
   "dropout",
   "positive",
   "negative",
   "adjustable",
-  "output"
+  "output",
+  "de14ma",
+  "ic"
  ],
  "facts": {
   "package_family": "Linear",
@@ -63,7 +57,7 @@
   "tier_counts": {
    "B": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -78,6 +72,6 @@
  "part_ids": [
   "kicad-symbols/Regulator_Linear/LT3032"
  ],
- "embedding_text": "ic-power-ldo.linear.ldo | IC Power Linear Regulator | Surface-mount LDO linear power regulator cluster containing 1 KiCad symbol part in a Linear_DE14MA footprint. | ic power linear regulator ldo smd linear_de14ma lt3032 kicad-symbols linear regulator de14ma tier b low noise dfn 150ma dual dropout positive negative adjustable output | Linear | LDO",
+ "embedding_text": "ic-power-ldo.linear.ldo | IC Power Linear Regulator | 1 ic power linear regulator parts for LDO using Linear footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | linear regulator low noise dfn ldo lt3032 150ma dual dropout positive negative adjustable output de14ma ic | Linear | LDO",
  "class": "ic.power.ldo"
 }

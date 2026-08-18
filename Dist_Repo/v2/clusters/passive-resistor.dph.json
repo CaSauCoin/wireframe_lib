@@ -6,40 +6,32 @@
   "Passive",
   "Resistor"
  ],
- "description": "Passive through-hole resistors in the DPH package family supporting footprints such as DPH_3MM, DPH_TO18, DPH_TO46, DPH_TO46R, DPH_2_BPW41, and DPH_2_BPW46.",
+ "description": "6 passive resistor parts using DPH footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select based on the specific DPH footprint variant required for the design.",
-  "Verify component parameters and land pattern compatibility before board layout.",
-  "Confirm that through-hole mounting is suitable for the assembly."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a DPH land pattern is intended."
  ],
  "avoid_when": [
-  "Surface-mount (SMD) components are required.",
-  "A package family other than DPH is needed.",
-  "Components with higher verified quality tiers or planner visibility are required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than DPH."
  ],
  "keywords": [
+  "dph",
   "passive",
   "resistor",
-  "through-hole",
-  "through hole",
-  "dph",
-  "dph_3mm",
-  "dph_to18",
-  "dph_to46",
-  "dph_to46r",
-  "dph_2_bpw41",
-  "dph_2_bpw46",
-  "bpw41",
-  "bpw46",
-  "to18",
-  "to46",
   "through",
   "hole",
   "pad",
   "mm",
   "pitch",
   "pins",
+  "bpw41",
+  "bpw46",
   "3mm",
+  "to18",
+  "to46",
   "to46r"
  ],
  "facts": {
@@ -66,7 +58,7 @@
   "tier_counts": {
    "C": 6
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
@@ -77,6 +69,6 @@
   "chilaboard-altium-library/DPH_TO46/DPH_TO46",
   "chilaboard-altium-library/DPH_TO46R/DPH_TO46R"
  ],
- "embedding_text": "passive-resistor.dph | Passive Resistor | Passive through-hole resistors in the DPH package family supporting footprints such as DPH_3MM, DPH_TO18, DPH_TO46, DPH_TO46R, DPH_2_BPW41, and DPH_2_BPW46. | passive resistor through-hole through hole dph dph_3mm dph_to18 dph_to46 dph_to46r dph_2_bpw41 dph_2_bpw46 bpw41 bpw46 to18 to46 through hole pad mm pitch pins 3mm to46r | DPH | ",
+ "embedding_text": "passive-resistor.dph | Passive Resistor | 6 passive resistor parts using DPH footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | dph passive resistor through hole pad mm pitch pins bpw41 bpw46 3mm to18 to46 to46r | DPH | ",
  "class": "passive.resistor"
 }

@@ -6,38 +6,31 @@
   "Passive",
   "Capacitor"
  ],
- "description": "Cluster of 16V SMD passive capacitor parts using AVX-C(2312) footprints from the Seeed OPL KiCad library.",
+ "description": "1 passive capacitor parts for 16V using AVX footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when requiring 16V SMD capacitors with AVX-C(2312) footprint compatibility.",
-  "Verify part specifications such as capacitance and ratings against circuit requirements.",
-  "Check footprint dimensions and tier B status prior to PCB layout commitment."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a AVX land pattern is intended."
  ],
  "avoid_when": [
-  "Operating voltages other than 16V are required.",
-  "Designs require through-hole mounting or footprints other than AVX-C(2312).",
-  "A tier A library qualification is mandatory."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than AVX."
  ],
  "keywords": [
-  "passive",
+  "avx",
   "capacitor",
-  "passive capacitor",
+  "tantalum",
   "16v",
   "smd",
-  "surface mount",
-  "avx",
-  "avx-c",
-  "avx-c(2312)",
-  "2312",
-  "tantalum",
   "100uf",
-  "seeed opl",
-  "kicad",
   "opl",
   "surface",
   "mount",
   "in",
   "an",
-  "package"
+  "package",
+  "passive"
  ],
  "facts": {
   "package_family": "AVX",
@@ -60,7 +53,7 @@
   "tier_counts": {
    "B": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -75,6 +68,6 @@
  "part_ids": [
   "Seeed-OPL-Kicad-Library/OPL_Capacitor/TANTALUM-SMD-100UF-16V_AVX-C_"
  ],
- "embedding_text": "passive-capacitor.avx.16v | Passive Capacitor | Cluster of 16V SMD passive capacitor parts using AVX-C(2312) footprints from the Seeed OPL KiCad library. | passive capacitor passive capacitor 16v smd surface mount avx avx-c avx-c(2312) 2312 tantalum 100uf seeed opl kicad opl surface mount in an package | AVX | 16V",
+ "embedding_text": "passive-capacitor.avx.16v | Passive Capacitor | 1 passive capacitor parts for 16V using AVX footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | avx capacitor tantalum 16v smd 100uf opl surface mount in an package passive | AVX | 16V",
  "class": "passive.capacitor"
 }

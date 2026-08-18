@@ -5,30 +5,20 @@
  "category_path": [
   "IC"
  ],
- "description": "Integrated circuit cluster containing 20 SMD parts in the XTL package family sourced from chilaboard-altium-library with tier B and tier C quality ratings.",
+ "description": "20 ic parts using XTL footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when needing surface-mount (SMD) IC components in XTL package family footprint variants.",
-  "Filter by specific XTL footprint land patterns such as XTL_6_7050, XTL_8_7050, or XTL_10_3725.",
-  "Prefer tier B parts when available over tier C parts."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a XTL land pattern is intended."
  ],
  "avoid_when": [
-  "The design requires through-hole mounting or non-SMD layout.",
-  "The board layout uses a non-XTL package family footprint.",
-  "Tier A rated component qualification is strictly required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than XTL."
  ],
  "keywords": [
-  "ic",
   "xtl",
-  "smd",
-  "surface mount",
-  "xtl_6_7050",
-  "xtl_8_7050",
-  "xtl_10_3725",
-  "xtl_6_9x14",
-  "package family xtl",
-  "chilaboard-altium-library",
-  "tier b",
-  "tier c",
+  "ic",
   "oscillator",
   "surface",
   "mount",
@@ -40,7 +30,9 @@
   "package",
   "crystal",
   "100mhz",
-  "mm"
+  "mm",
+  "pitch",
+  "pins"
  ],
  "facts": {
   "package_family": "XTL",
@@ -73,7 +65,7 @@
    "B": 9,
    "C": 11
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -139,6 +131,6 @@
   "chilaboard-altium-library/XTL_6_5032/XTL_6_5032",
   "chilaboard-altium-library/XTL_6_503225/XTL_6_503225"
  ],
- "embedding_text": "ic.xtl | IC | Integrated circuit cluster containing 20 SMD parts in the XTL package family sourced from chilaboard-altium-library with tier B and tier C quality ratings. | ic xtl smd surface mount xtl_6_7050 xtl_8_7050 xtl_10_3725 xtl_6_9x14 package family xtl chilaboard-altium-library tier b tier c oscillator surface mount osc differential pad clock output package crystal 100mhz mm | XTL | ",
+ "embedding_text": "ic.xtl | IC | 20 ic parts using XTL footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | xtl ic oscillator surface mount osc differential pad clock output package crystal 100mhz mm pitch pins | XTL | ",
  "class": "ic"
 }

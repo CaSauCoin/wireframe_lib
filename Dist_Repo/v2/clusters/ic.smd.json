@@ -5,42 +5,34 @@
  "category_path": [
   "IC"
  ],
- "description": "This cluster contains 7 IC parts in surface-mount (SMD) footprints, featuring 5 planner-visible parts across quality tiers B and C.",
+ "description": "7 ic parts using SMD footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when requiring surface-mount IC parts in footprint variants such as SMD-4, SMD-6, SMD-8, or SMD-14.",
-  "Filter parts based on quality tier (Tier B or C) and source library.",
-  "Choose for applications matching available sensor or optoisolator representative parts."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SMD land pattern is intended."
  ],
  "avoid_when": [
-  "The PCB design requires through-hole or non-SMD mounting.",
-  "Tier A quality verification is strictly required for the design.",
-  "The specific required IC footprint or pin configuration is not present in this cluster."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SMD."
  ],
  "keywords": [
-  "ic",
   "smd",
-  "surface mount",
-  "pressure sensor",
-  "temperature sensor",
-  "optoisolators",
-  "optical sensor",
-  "ms560702ba03-50",
-  "amg8833",
-  "ltv-356t",
-  "ltv-816s-ta1",
-  "qre1113gr",
-  "smd footprint",
-  "digikey-kicad-library",
+  "ic",
   "sensors",
   "output",
   "dk",
   "transistor",
   "transducers",
   "analog",
+  "optoisolators",
   "photovoltaic",
   "pressure",
   "sensor",
-  "temperature"
+  "temperature",
+  "and",
+  "digital",
+  "ltv"
  ],
  "facts": {
   "package_family": "SMD",
@@ -70,7 +62,7 @@
    "B": 5,
    "C": 2
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -123,6 +115,6 @@
   "dist-legacy/SMD-6",
   "dist-legacy/SMD-8"
  ],
- "embedding_text": "ic.smd | IC | This cluster contains 7 IC parts in surface-mount (SMD) footprints, featuring 5 planner-visible parts across quality tiers B and C. | ic smd surface mount pressure sensor temperature sensor optoisolators optical sensor ms560702ba03-50 amg8833 ltv-356t ltv-816s-ta1 qre1113gr smd footprint digikey-kicad-library sensors output dk transistor transducers analog photovoltaic pressure sensor temperature | SMD | ",
+ "embedding_text": "ic.smd | IC | 7 ic parts using SMD footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | smd ic sensors output dk transistor transducers analog optoisolators photovoltaic pressure sensor temperature and digital ltv | SMD | ",
  "class": "ic"
 }

@@ -5,33 +5,24 @@
  "category_path": [
   "IC"
  ],
- "description": "Cluster of 30V surface-mount integrated circuits in TO-252-4 packages from KiCad power management symbols.",
+ "description": "2 ic parts for 30V using TO footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Choosing 30V surface-mount ICs in TO-252-4 packages.",
-  "Selecting Tier A power management ICs such as BTS50080-1TEA or BTS50080-1TEB.",
-  "Requiring SMD TO package family components from KiCad symbols."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a TO land pattern is intended."
  ],
  "avoid_when": [
-  "Through-hole mounting is required instead of SMD.",
-  "Designs requiring package footprints other than TO-252-4.",
-  "Circuit voltage requirements differ from 30V."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than TO."
  ],
  "keywords": [
-  "ic",
-  "30v",
   "to",
-  "to-252-4",
-  "smd",
-  "power management",
-  "bts50080-1tea",
-  "bts50080-1teb",
-  "kicad-symbols",
-  "integrated circuit",
-  "bts50080",
-  "tier a",
   "power",
   "switch",
+  "30v",
   "dpak",
+  "bts50080",
   "management",
   "smart",
   "high",
@@ -40,7 +31,8 @@
   "single",
   "16mohm",
   "10a",
-  "to252"
+  "to252",
+  "infineon"
  ],
  "facts": {
   "package_family": "TO",
@@ -63,7 +55,7 @@
   "tier_counts": {
    "A": 2
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -87,6 +79,6 @@
   "kicad-symbols/Power_Management/BTS50080-1TEA",
   "kicad-symbols/Power_Management/BTS50080-1TEB"
  ],
- "embedding_text": "ic.to.30v | IC | Cluster of 30V surface-mount integrated circuits in TO-252-4 packages from KiCad power management symbols. | ic 30v to to-252-4 smd power management bts50080-1tea bts50080-1teb kicad-symbols integrated circuit bts50080 tier a power switch dpak management smart high side profet single 16mohm 10a to252 | TO | 30V",
+ "embedding_text": "ic.to.30v | IC | 2 ic parts for 30V using TO footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | to power switch 30v dpak bts50080 management smart high side profet single 16mohm 10a to252 infineon | TO | 30V",
  "class": "ic"
 }

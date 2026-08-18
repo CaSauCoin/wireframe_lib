@@ -6,32 +6,24 @@
   "IC",
   "Sensor"
  ],
- "description": "Cluster of 6 surface-mount I2C sensor ICs featuring 9V facets in a QFN package family with VQFN-16-1EP_3x3mm_P0.5mm_EP1.1x1.1mm footprint options.",
+ "description": "6 ic sensor parts for I2C, 9V using QFN footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when an SMD sensor IC with an I2C interface and 9V facet is required.",
-  "Choose when using the QFN package family with VQFN-16-1EP_3x3mm_P0.5mm_EP1.1x1.1mm footprint.",
-  "Use when tier B parts from kicad-symbols are suitable for the application."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a QFN land pattern is intended."
  ],
  "avoid_when": [
-  "The design requires through-hole mounting instead of surface-mount.",
-  "A package family other than QFN is needed for the PCB layout.",
-  "An interface or voltage rating non-compliant with I2C and 9V facets is required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than QFN."
  ],
  "keywords": [
-  "ic",
-  "sensor",
-  "ic sensor",
   "i2c",
-  "9v",
-  "qfn",
-  "smd",
   "vqfn",
-  "vqfn-16-1ep",
-  "pac1941x",
-  "pac1942x",
-  "pac1943x",
+  "sensor",
   "power",
   "monitor",
+  "9v",
   "energy",
   "channel",
   "side",
@@ -65,7 +57,7 @@
   "tier_counts": {
    "B": 6
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -117,6 +109,6 @@
   "kicad-symbols/Sensor_Energy/PAC1943x-x4MX",
   "kicad-symbols/Sensor_Energy/PAC1944x-x4MX"
  ],
- "embedding_text": "ic-sensor.qfn.i2c.9v | IC Sensor | Cluster of 6 surface-mount I2C sensor ICs featuring 9V facets in a QFN package family with VQFN-16-1EP_3x3mm_P0.5mm_EP1.1x1.1mm footprint options. | ic sensor ic sensor i2c 9v qfn smd vqfn vqfn-16-1ep pac1941x pac1942x pac1943x power monitor energy channel side 1ep 3x3mm p0 5mm ep1 1x1 1mm | QFN | I2C 9V",
+ "embedding_text": "ic-sensor.qfn.i2c.9v | IC Sensor | 6 ic sensor parts for I2C, 9V using QFN footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | i2c vqfn sensor power monitor 9v energy channel side 1ep 3x3mm p0 5mm ep1 1x1 1mm | QFN | I2C 9V",
  "class": "ic.sensor"
 }

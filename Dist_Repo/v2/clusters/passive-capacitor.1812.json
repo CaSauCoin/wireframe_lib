@@ -6,31 +6,23 @@
   "Passive",
   "Capacitor"
  ],
- "description": "Passive capacitor library cluster for components in the 1812 package family using 1812_4532 footprints.",
+ "description": "1 passive capacitor parts using 1812 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Verify footprint compatibility with the 1812_4532 land pattern.",
-  "Confirm electrical ratings and mounting details from part records.",
-  "Review available part data given the single legacy source Tier C entry."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a 1812 land pattern is intended."
  ],
  "avoid_when": [
-  "The layout requires a component package other than 1812.",
-  "A verified review status or higher quality tier is required.",
-  "Mounting specifications cannot be confirmed from available part facts."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than 1812."
  ],
  "keywords": [
-  "passive",
   "capacitor",
-  "passive.capacitor",
-  "1812",
-  "1812_4532",
-  "passive capacitor",
-  "footprint",
-  "package 1812",
-  "dist-legacy",
-  "tier c",
   "pcb",
   "land",
   "pattern",
+  "footprint",
   "bare",
   "for",
   "an",
@@ -38,7 +30,8 @@
   "surface",
   "mount",
   "package",
-  "smd"
+  "smd",
+  "passive"
  ],
  "facts": {
   "package_family": "1812",
@@ -59,12 +52,12 @@
   "tier_counts": {
    "C": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
   "dist-legacy/1812_4532 capacitor"
  ],
- "embedding_text": "passive-capacitor.1812 | Passive Capacitor | Passive capacitor library cluster for components in the 1812 package family using 1812_4532 footprints. | passive capacitor passive.capacitor 1812 1812_4532 passive capacitor footprint package 1812 dist-legacy tier c pcb land pattern bare for an metric surface mount package smd | 1812 | ",
+ "embedding_text": "passive-capacitor.1812 | Passive Capacitor | 1 passive capacitor parts using 1812 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | capacitor pcb land pattern footprint bare for an metric surface mount package smd passive | 1812 | ",
  "class": "passive.capacitor"
 }

@@ -5,42 +5,34 @@
  "category_path": [
   "IC"
  ],
- "description": "Cluster of 50 surface-mount 3.3V LDO IC parts across quality tiers A and B using SOT-23-5 and TSOT-23-5 footprints.",
+ "description": "50 ic parts for 3.3V, LDO using SOT-23-5 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select for surface-mount 3.3V LDO applications requiring SOT-23-5 or TSOT-23-5 footprints.",
-  "Prefer the 48 tier A parts for higher quality ratings across available KiCad libraries.",
-  "Verify specific footprint dimensions and land patterns before finalizing PCB layout."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SOT-23-5 land pattern is intended."
  ],
  "avoid_when": [
-  "The design requires a package family other than SOT-23-5 or TSOT-23-5.",
-  "The circuit requires a voltage specification other than 3.3V or a non-LDO topology.",
-  "Through-hole mounting is required instead of SMD."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SOT-23-5."
  ],
  "keywords": [
-  "ic",
-  "3.3v",
-  "ldo",
-  "sot-23-5",
-  "tsot-23-5",
-  "sot23-5",
-  "smd",
-  "low dropout",
-  "voltage regulator",
-  "lm4132xmf-3.3",
-  "adp7118aujz-3.3",
-  "ap2112k-3.3trg1",
-  "ap2121k-3.3trg1",
-  "ap2125k-3.3trg1",
   "sot",
   "3v",
   "regulator",
   "voltage",
+  "ldo",
   "low",
   "dropout",
   "enable",
+  "ic",
   "akl",
   "alternate",
-  "kicad"
+  "kicad",
+  "library",
+  "vreg",
+  "pmic",
+  "power"
  ],
  "facts": {
   "package_family": "SOT-23-5",
@@ -72,7 +64,7 @@
    "A": 48,
    "B": 2
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -168,6 +160,6 @@
   "JLCPCB-Kicad-Library/242517/LDO, 3.3V, 0.3A, (3)",
   "JLCPCB-Kicad-Library/176950/LDO, 3.3V, 0.2A, (1)"
  ],
- "embedding_text": "ic.sot-23-5.3v3.ldo | IC | Cluster of 50 surface-mount 3.3V LDO IC parts across quality tiers A and B using SOT-23-5 and TSOT-23-5 footprints. | ic 3.3v ldo sot-23-5 tsot-23-5 sot23-5 smd low dropout voltage regulator lm4132xmf-3.3 adp7118aujz-3.3 ap2112k-3.3trg1 ap2121k-3.3trg1 ap2125k-3.3trg1 sot 3v regulator voltage low dropout enable akl alternate kicad | SOT-23-5 | 3.3V LDO",
+ "embedding_text": "ic.sot-23-5.3v3.ldo | IC | 50 ic parts for 3.3V, LDO using SOT-23-5 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | sot 3v regulator voltage ldo low dropout enable ic akl alternate kicad library vreg pmic power | SOT-23-5 | 3.3V LDO",
  "class": "ic"
 }

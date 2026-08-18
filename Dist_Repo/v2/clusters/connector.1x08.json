@@ -5,41 +5,33 @@
  "category_path": [
   "Connector"
  ],
- "description": "1x08 single-row 2.54mm-pitch connector cluster with 5 SparkFun-KiCad-Libraries parts covering standard header, locking header, and vertical SMD socket footprints for through-hole or SMD mounting.",
+ "description": "5 connector parts using 1x08 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Match the exact footprint variant needed: standard P2.54mm header, locking header, or vertical SMD socket.",
-  "Pick smd or through_hole mounting per the assembly process for the board.",
-  "Prefer the tier A entry (Conn_01x08_P2.54mm, score 88) when no special locking or SMD socket feature is required.",
-  "Distinguish Pin1RightDown, Combined, and Passthru SMD socket variants by the exact footprint string before committing layout."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a 1x08 land pattern is intended."
  ],
  "avoid_when": [
-  "The design needs a pin count other than 8 or a pitch other than 2.54mm.",
-  "The required footprint variant (locking, SMD socket orientation, passthru) is not among the listed footprints.",
-  "Electrical ratings, pinout assignment, or manufacturer/datasheet data are needed, since these facts are not provided.",
-  "The part is only planner-visible in tier C with unverified footprint pairing and the design requires review-grade confidence."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than 1x08."
  ],
  "keywords": [
-  "connector",
-  "1x08",
-  "01x08",
-  "conn",
-  "2.54mm",
-  "p2.54mm",
-  "header",
-  "socket",
-  "smd",
-  "through hole",
-  "locking",
-  "vertical",
-  "pin1rightdown",
-  "passthru",
-  "combined",
-  "sparkfun",
-  "single row",
-  "8 pin",
   "54mm",
+  "connector",
   "p2",
+  "sparkfun",
+  "1x08",
+  "smd",
+  "socket",
+  "vertical",
+  "conn",
+  "01x08",
+  "pin1rightdown",
   "surface",
+  "locking",
+  "combined",
+  "passthru",
   "mounted"
  ],
  "facts": {
@@ -68,7 +60,7 @@
    "B": 1,
    "C": 3
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -95,6 +87,6 @@
   "SparkFun-KiCad-Libraries/SparkFun-Connector/Conn_01x08_P2.54mm_Socket_Vertical_SMD_Combined",
   "SparkFun-KiCad-Libraries/SparkFun-Connector/Conn_01x08_P2.54mm_Socket_Vertical_SMD_Pin1RightDown_Passthru"
  ],
- "embedding_text": "connector.1x08 | Connector | 1x08 single-row 2.54mm-pitch connector cluster with 5 SparkFun-KiCad-Libraries parts covering standard header, locking header, and vertical SMD socket footprints for through-hole or SMD mounting. | connector 1x08 01x08 conn 2.54mm p2.54mm header socket smd through hole locking vertical pin1rightdown passthru combined sparkfun single row 8 pin 54mm p2 surface mounted | 1x08 | ",
+ "embedding_text": "connector.1x08 | Connector | 5 connector parts using 1x08 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | 54mm connector p2 sparkfun 1x08 smd socket vertical conn 01x08 pin1rightdown surface locking combined passthru mounted | 1x08 | ",
  "class": "connector"
 }

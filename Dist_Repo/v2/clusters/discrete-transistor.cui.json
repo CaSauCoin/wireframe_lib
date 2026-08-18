@@ -6,32 +6,23 @@
   "Discrete",
   "Transistor"
  ],
- "description": "Discrete transistor component cluster containing 12 parts across SMD and through-hole CUI package footprints.",
+ "description": "12 discrete transistor parts using CUI footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Choose parts matching specific CUI footprint models like CSS-0575A-SMT-TR or PJ-028BH.",
-  "Select between SMD and through-hole mounting options based on PCB layout requirements.",
-  "Prioritize Tier B quality rated parts over Tier C entries."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a CUI land pattern is intended."
  ],
  "avoid_when": [
-  "The design requires non-CUI package footprints.",
-  "Tier A quality verification is mandatory for the application.",
-  "Mounting requirements are strictly defined but marked as unknown for the part."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than CUI."
  ],
  "keywords": [
-  "discrete",
-  "transistor",
   "cui",
-  "discrete transistor",
-  "smd",
-  "through_hole",
-  "css-0575a-smt-tr",
-  "pj-028bh",
-  "pj-068b-smt",
-  "pj-069b-smt",
-  "pj-102ah",
-  "rcj-04",
   "pj",
+  "transistor",
   "smt",
+  "discrete",
   "base",
   "collector",
   "emitter",
@@ -41,7 +32,8 @@
   "tr",
   "028bh",
   "068b",
-  "069b"
+  "069b",
+  "102ah"
  ],
  "facts": {
   "package_family": "CUI",
@@ -72,7 +64,7 @@
    "B": 6,
    "C": 6
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -130,6 +122,6 @@
   "celestial-altium-library/CUI PJ-102AH/CUI_PJ-102AH",
   "celestial-altium-library/CUI RCJ-04/CUI_RCJ-04"
  ],
- "embedding_text": "discrete-transistor.cui | Discrete Transistor | Discrete transistor component cluster containing 12 parts across SMD and through-hole CUI package footprints. | discrete transistor cui discrete transistor smd through_hole css-0575a-smt-tr pj-028bh pj-068b-smt pj-069b-smt pj-102ah rcj-04 pj smt base collector emitter pins css 0575a tr 028bh 068b 069b | CUI | ",
+ "embedding_text": "discrete-transistor.cui | Discrete Transistor | 12 discrete transistor parts using CUI footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | cui pj transistor smt discrete base collector emitter pins css 0575a tr 028bh 068b 069b 102ah | CUI | ",
  "class": "discrete.transistor"
 }

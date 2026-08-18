@@ -7,34 +7,21 @@
   "Driver",
   "Display"
  ],
- "description": "Surface-mount display driver IC cluster in the KCSC02 package family containing 10 parts from KiCad symbols.",
+ "description": "10 ic driver display parts using KCSC02 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when needing surface-mount display driver ICs in the KCSC02 package family.",
-  "Match layout requirements to specific KCSC02 footprints such as KCSC02-105, KCSC02-106, or KCSC02-107.",
-  "Prefer tier A parts over tier C parts within the cluster."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a KCSC02 land pattern is intended."
  ],
  "avoid_when": [
-  "Avoid when non-SMD or through-hole mounting is required.",
-  "Avoid if the board layout requires footprints outside the KCSC02 package family.",
-  "Avoid when components outside the display driver IC category are needed."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than KCSC02."
  ],
  "keywords": [
-  "ic",
-  "driver",
   "display",
-  "kcsc02",
-  "smd",
-  "kcsc02-105",
-  "kcsc02-106",
-  "kcsc02-107",
-  "kcsc02-123",
-  "kcsc02-136",
-  "kcsa02-105",
-  "kcsa02-106",
-  "kcsa02-107",
-  "kcsa02-123",
-  "kcsa02-136",
   "led",
+  "kcsc02",
   "digit",
   "segment",
   "super",
@@ -42,7 +29,12 @@
   "character",
   "one",
   "common",
-  "single"
+  "single",
+  "segement",
+  "ic",
+  "driver",
+  "orange",
+  "yellow"
  ],
  "facts": {
   "package_family": "KCSC02",
@@ -68,7 +60,7 @@
    "A": 5,
    "C": 5
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -124,6 +116,6 @@
   "kicad-symbols/Display_Character/KCSC02-123",
   "kicad-symbols/Display_Character/KCSC02-136"
  ],
- "embedding_text": "ic-driver-display.kcsc02 | IC Driver Display | Surface-mount display driver IC cluster in the KCSC02 package family containing 10 parts from KiCad symbols. | ic driver display kcsc02 smd kcsc02-105 kcsc02-106 kcsc02-107 kcsc02-123 kcsc02-136 kcsa02-105 kcsa02-106 kcsa02-107 kcsa02-123 kcsa02-136 led digit segment super bright character one common single | KCSC02 | ",
+ "embedding_text": "ic-driver-display.kcsc02 | IC Driver Display | 10 ic driver display parts using KCSC02 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | display led kcsc02 digit segment super bright character one common single segement ic driver orange yellow | KCSC02 | ",
  "class": "ic.driver.display"
 }

@@ -5,29 +5,20 @@
  "category_path": [
   "IC"
  ],
- "description": "Cluster of 250 IC components featuring TI package family footprints across surface-mount and through-hole mounting configurations.",
+ "description": "250 ic parts using TI footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Choose parts matching required mounting styles such as surface-mount (SMD) or through-hole.",
-  "Select entries with specific footprint requirements like TI_SO-PowerPAD-8 or TI_PTH footprint series.",
-  "Filter by quality tier, favoring Tier B parts over Tier C parts."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a TI land pattern is intended."
  ],
  "avoid_when": [
-  "Avoid when layout requires footprints outside the TI package family.",
-  "Avoid when mounting type is listed as unknown and cannot be verified.",
-  "Avoid if project requirements mandate Tier A quality parts."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than TI."
  ],
  "keywords": [
-  "ic",
   "ti",
-  "smd",
-  "through_hole",
-  "ti_so-powerpad-8",
-  "ti_ptd_efs_22",
-  "ti_pth_eut_6",
-  "ti_pth_eus_6",
-  "ti_pth_eat_11",
-  "celestial-altium-library",
-  "chilaboard-altium-library",
+  "ic",
   "pad",
   "pins",
   "pitch",
@@ -40,7 +31,8 @@
   "pth",
   "sop",
   "sot",
-  "ssop"
+  "ssop",
+  "vssop"
  ],
  "facts": {
   "package_family": "TI",
@@ -77,7 +69,7 @@
    "B": 11,
    "C": 239
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -373,6 +365,6 @@
   "celestial-altium-library/TI X2SON-6 DSF/TI_X2SON-6_DSF",
   "celestial-altium-library/Ti CFP-20 HKH0020A/Ti_CFP-20_HKH0020A"
  ],
- "embedding_text": "ic.ti | IC | Cluster of 250 IC components featuring TI package family footprints across surface-mount and through-hole mounting configurations. | ic ti smd through_hole ti_so-powerpad-8 ti_ptd_efs_22 ti_pth_eut_6 ti_pth_eus_6 ti_pth_eat_11 celestial-altium-library chilaboard-altium-library pad pins pitch mm surface mount vqfn vson wson pth sop sot ssop | TI | ",
+ "embedding_text": "ic.ti | IC | 250 ic parts using TI footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | ti ic pad pins pitch mm surface mount vqfn vson wson pth sop sot ssop vssop | TI | ",
  "class": "ic"
 }

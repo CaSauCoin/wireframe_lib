@@ -6,28 +6,19 @@
   "Power",
   "Power Rail"
  ],
- "description": "Generic 12V power rail schematic symbols, including +12V, -12V, and 12V variants from KiCad and SparkFun symbol libraries.",
+ "description": "3 power power rail parts for 12V with package chosen later. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select the symbol matching the required polarity (+12V, -12V, or generic 12V).",
-  "Choose between KiCad and SparkFun symbol library sources.",
-  "Assign a footprint or physical package later if required by the design workflow."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Select a footprint/package explicitly before placement."
  ],
  "avoid_when": [
-  "A voltage rail other than 12V is required.",
-  "A discrete physical component with a predefined footprint is needed instead of a schematic power rail symbol."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review."
  ],
  "keywords": [
-  "12v",
-  "+12v",
-  "-12v",
-  "power rail",
-  "power symbol",
   "power",
-  "schematic symbol",
-  "kicad power",
-  "sparkfun power",
-  "voltage rail",
-  "12v rail",
+  "12v",
   "global",
   "symbol",
   "creates",
@@ -59,7 +50,7 @@
   "tier_counts": {
    "G": 3
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -92,6 +83,6 @@
   "kicad-symbols/power/-12V",
   "SparkFun-KiCad-Libraries/SparkFun-PowerSymbol/12V"
  ],
- "embedding_text": "power-rail.generic.12v | Power Power Rail | Generic 12V power rail schematic symbols, including +12V, -12V, and 12V variants from KiCad and SparkFun symbol libraries. | 12v +12v -12v power rail power symbol power schematic symbol kicad power sparkfun power voltage rail 12v rail global symbol creates label with name rail package chosen later sparkfun powersymbol | package chosen later | 12V",
+ "embedding_text": "power-rail.generic.12v | Power Power Rail | 3 power power rail parts for 12V with package chosen later. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | power 12v global symbol creates label with name rail package chosen later sparkfun powersymbol | package chosen later | 12V",
  "class": "power.rail"
 }

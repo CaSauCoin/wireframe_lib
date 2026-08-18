@@ -7,42 +7,34 @@
   "Power",
   "Linear Regulator"
  ],
- "description": "Surface-mount 3V LDO linear regulator IC cluster containing 4 parts in DFN package footprints across quality tiers A and B.",
+ "description": "4 ic power linear regulator parts for LDO, 3V using DFN footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Choose based on required DFN footprint variant, such as DFN-10, DFN-8, or DFN-6.",
-  "Prefer Tier A parts over Tier B parts when available.",
-  "Match specific package land pattern details including exposed pad dimensions."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a DFN land pattern is intended."
  ],
  "avoid_when": [
-  "The design requires package families other than DFN or non-SMD mounting.",
-  "A regulator output voltage other than 3V is needed.",
-  "Linear low-dropout (LDO) regulation is not suitable for the application."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than DFN."
  ],
  "keywords": [
-  "ic",
-  "power",
-  "linear regulator",
-  "ldo",
-  "3v",
-  "dfn",
-  "smd",
-  "dfn-10",
-  "dfn-8",
-  "dfn-6",
-  "lt3011xdd",
-  "lt3014xdd",
-  "ldk130pu30r_dfn6",
-  "ap7370-30fdc",
-  "low dropout",
   "linear",
+  "dfn",
   "regulator",
   "low",
+  "ldo",
+  "3v",
   "dropout",
   "p0",
+  "ic",
+  "power",
   "fixed",
   "1ep",
   "ep1",
-  "output"
+  "output",
+  "positive",
+  "3x3mm"
  ],
  "facts": {
   "package_family": "DFN",
@@ -70,7 +62,7 @@
    "A": 2,
    "B": 2
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -112,6 +104,6 @@
   "kicad-symbols/Regulator_Linear/LDK130PU30R_DFN6",
   "kicad-symbols/Regulator_Linear/AP7370-30FDC"
  ],
- "embedding_text": "ic-power-ldo.dfn.ldo.3v | IC Power Linear Regulator | Surface-mount 3V LDO linear regulator IC cluster containing 4 parts in DFN package footprints across quality tiers A and B. | ic power linear regulator ldo 3v dfn smd dfn-10 dfn-8 dfn-6 lt3011xdd lt3014xdd ldk130pu30r_dfn6 ap7370-30fdc low dropout linear regulator low dropout p0 fixed 1ep ep1 output | DFN | LDO 3V",
+ "embedding_text": "ic-power-ldo.dfn.ldo.3v | IC Power Linear Regulator | 4 ic power linear regulator parts for LDO, 3V using DFN footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | linear dfn regulator low ldo 3v dropout p0 ic power fixed 1ep ep1 output positive 3x3mm | DFN | LDO 3V",
  "class": "ic.power.ldo"
 }

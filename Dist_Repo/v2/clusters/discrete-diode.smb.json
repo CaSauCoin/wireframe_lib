@@ -6,31 +6,22 @@
   "Discrete",
   "Diode"
  ],
- "description": "Discrete diode cluster in the SMB package family containing 4 parts from legacy distribution sources with footprint variants including SMB and SMB_Jack_Vertical.",
+ "description": "4 discrete diode parts using SMB footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when requiring a discrete diode in the SMB package family.",
-  "Verify whether standard SMB or SMB_Jack_Vertical footprint variants are needed.",
-  "Choose between available quality tier B and tier C parts based on project requirements."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SMB land pattern is intended."
  ],
  "avoid_when": [
-  "The layout requires package families other than SMB.",
-  "Tier A quality verified parts are required, as this cluster only contains tier B and tier C parts.",
-  "Land pattern requirements do not match SMB, SMB, or SMB_Jack_Vertical footprints."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SMB."
  ],
  "keywords": [
-  "discrete",
-  "diode",
   "smb",
-  "discrete diode",
-  "smb package",
-  "smb_jack_vertical",
-  "dist-legacy",
-  "discrete.diode",
-  "through_hole",
-  "403a-03",
-  "tier b",
-  "tier c",
+  "diode",
   "jack",
+  "discrete",
   "vertical",
   "pins",
   "403a",
@@ -41,7 +32,8 @@
   "and",
   "cathode",
   "in",
-  "an"
+  "an",
+  "surface"
  ],
  "facts": {
   "package_family": "SMB",
@@ -66,7 +58,7 @@
    "B": 2,
    "C": 2
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -92,6 +84,6 @@
   "dist-legacy/SMB",
   "dist-legacy/SMB_Jack_Vertical"
  ],
- "embedding_text": "discrete-diode.smb | Discrete Diode | Discrete diode cluster in the SMB package family containing 4 parts from legacy distribution sources with footprint variants including SMB and SMB_Jack_Vertical. | discrete diode smb discrete diode smb package smb_jack_vertical dist-legacy discrete.diode through_hole 403a-03 tier b tier c jack vertical pins 403a package duplicate with anode and cathode in an | SMB | ",
+ "embedding_text": "discrete-diode.smb | Discrete Diode | 4 discrete diode parts using SMB footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | smb diode jack discrete vertical pins 403a package duplicate with anode and cathode in an surface | SMB | ",
  "class": "discrete.diode"
 }

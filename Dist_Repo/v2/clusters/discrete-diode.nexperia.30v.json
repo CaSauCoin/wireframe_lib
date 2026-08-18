@@ -6,42 +6,34 @@
   "Discrete",
   "Diode"
  ],
- "description": "A cluster of 6 surface-mount 30V discrete diode symbols utilizing Nexperia CFP3 SOD-123W and CFP15 SOT-1289 footprints.",
+ "description": "6 discrete diode parts for 30V using Nexperia footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when requiring a surface-mount 30V discrete diode.",
-  "Choose between Nexperia CFP3_SOD-123W and CFP15_SOT-1289 footprint variants.",
-  "Prefer Tier A parts (4 available) over Tier B parts (2 available)."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a Nexperia land pattern is intended."
  ],
  "avoid_when": [
-  "The application requires a voltage rating other than 30V.",
-  "Through-hole mounting or non-SMD package design is required.",
-  "Footprints other than Nexperia CFP3_SOD-123W or CFP15_SOT-1289 are needed."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than Nexperia."
  ],
  "keywords": [
-  "discrete",
   "diode",
-  "discrete diode",
   "30v",
-  "nexperia",
-  "smd",
-  "cfp3",
-  "sod-123w",
-  "cfp15",
-  "sot-1289",
-  "pmeg3010ber",
-  "pmeg3010er",
-  "pmeg3020ber",
-  "pmeg3020er",
-  "pmeg030v030epd",
-  "kicad-symbols",
   "sod",
   "123w",
+  "nexperia",
+  "cfp3",
   "low",
   "vf",
   "mega",
   "schottky",
   "barrier",
-  "rectifier"
+  "rectifier",
+  "forward",
+  "voltage",
+  "discrete",
+  "sot"
  ],
  "facts": {
   "package_family": "Nexperia",
@@ -66,7 +58,7 @@
    "A": 4,
    "B": 2
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -118,6 +110,6 @@
   "kicad-symbols/Diode/PMEG030V030EPD",
   "kicad-symbols/Diode/PMEG030V050EPD"
  ],
- "embedding_text": "discrete-diode.nexperia.30v | Discrete Diode | A cluster of 6 surface-mount 30V discrete diode symbols utilizing Nexperia CFP3 SOD-123W and CFP15 SOT-1289 footprints. | discrete diode discrete diode 30v nexperia smd cfp3 sod-123w cfp15 sot-1289 pmeg3010ber pmeg3010er pmeg3020ber pmeg3020er pmeg030v030epd kicad-symbols sod 123w low vf mega schottky barrier rectifier | Nexperia | 30V",
+ "embedding_text": "discrete-diode.nexperia.30v | Discrete Diode | 6 discrete diode parts for 30V using Nexperia footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | diode 30v sod 123w nexperia cfp3 low vf mega schottky barrier rectifier forward voltage discrete sot | Nexperia | 30V",
  "class": "discrete.diode"
 }

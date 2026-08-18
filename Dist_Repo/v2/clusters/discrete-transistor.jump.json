@@ -6,29 +6,22 @@
   "Discrete",
   "Transistor"
  ],
- "description": "Discrete transistor cluster containing 1 tier C part associated with the Jump package family and Jump_3p footprint.",
+ "description": "1 discrete transistor parts using Jump footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when requiring a discrete transistor with a Jump or Jump_3p footprint.",
-  "Verify exact electrical ratings and pin mappings prior to PCB integration.",
-  "Check part quality tier and source data for project suitability."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a Jump land pattern is intended."
  ],
  "avoid_when": [
-  "The PCB design requires a package footprint other than Jump or Jump_3p.",
-  "Required electrical specifications or mounting details are missing.",
-  "Tier C quality level or generated review status does not meet project requirements."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than Jump."
  ],
  "keywords": [
+  "jump",
+  "3p",
   "discrete",
   "transistor",
-  "discrete transistor",
-  "jump",
-  "jump_3p",
-  "jump 3p",
-  "3p",
-  "discrete.transistor",
-  "package jump",
-  "tier c",
-  "dist-legacy",
   "pad",
   "mm",
   "pitch",
@@ -53,12 +46,12 @@
   "tier_counts": {
    "C": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
   "dist-legacy/Jump_3p"
  ],
- "embedding_text": "discrete-transistor.jump | Discrete Transistor | Discrete transistor cluster containing 1 tier C part associated with the Jump package family and Jump_3p footprint. | discrete transistor discrete transistor jump jump_3p jump 3p 3p discrete.transistor package jump tier c dist-legacy pad mm pitch pins | Jump | ",
+ "embedding_text": "discrete-transistor.jump | Discrete Transistor | 1 discrete transistor parts using Jump footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | jump 3p discrete transistor pad mm pitch pins | Jump | ",
  "class": "discrete.transistor"
 }

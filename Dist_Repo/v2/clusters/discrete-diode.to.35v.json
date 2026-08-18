@@ -6,44 +6,34 @@
   "Discrete",
   "Diode"
  ],
- "description": "Cluster of 49 tier-A discrete diode parts in the 35V facet using TO-family footprints (TO-220, TO-247, TO-263, TO-252, TO-262, TO-218, TO-3 variants) across smd and through-hole mounts.",
+ "description": "49 discrete diode parts for 35V using TO footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Match the exact TO footprint variant (e.g. TO-220-2_Vertical vs TO-220-3_Vertical_AKA) to the intended land pattern",
-  "Confirm pin arrangement (2-pin vs 3-pin, dual/common-cathode) matches the schematic symbol",
-  "Prefer tier A entries; all 49 parts in this cluster are currently tier A",
-  "Distinguish smd (TO-263, TO-252) from through-hole (TO-220, TO-247, TO-218, TO-3) mounting needs"
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a TO land pattern is intended."
  ],
  "avoid_when": [
-  "The design requires a package outside the TO family",
-  "The footprint variant (2-pin, 3-pin, tab/AKA suffix) is not confirmed against the actual land pattern",
-  "Electrical ratings beyond the 35V facet are needed but not documented for the chosen part",
-  "The symbol-footprint pairing has not been verified before layout"
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than TO."
  ],
  "keywords": [
-  "discrete diode",
-  "to package",
-  "35v",
-  "to-220",
-  "to-247",
-  "to-263",
-  "to-252",
-  "to-262",
-  "to-218",
-  "to-3",
-  "vertical",
-  "smd",
-  "through hole",
-  "aka footprint",
-  "dual diode",
-  "common cathode",
-  "kicad symbols",
-  "alternate kicad library",
   "to",
   "diode",
   "schottky",
+  "35v",
+  "vertical",
   "dual",
   "discrete",
-  "akl"
+  "akl",
+  "alternate",
+  "kicad",
+  "library",
+  "rm",
+  "common",
+  "cathode",
+  "commoncathode",
+  "d2pak"
  ],
  "facts": {
   "package_family": "TO",
@@ -79,7 +69,7 @@
   "tier_counts": {
    "A": 49
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -174,6 +164,6 @@
   "Alternate-KiCad-Library/Diode_Schottky_AKL/VS-MBRB1035",
   "Alternate-KiCad-Library/Diode_Schottky_AKL/VS-MBRB3035CT"
  ],
- "embedding_text": "discrete-diode.to.35v | Discrete Diode | Cluster of 49 tier-A discrete diode parts in the 35V facet using TO-family footprints (TO-220, TO-247, TO-263, TO-252, TO-262, TO-218, TO-3 variants) across smd and through-hole mounts. | discrete diode to package 35v to-220 to-247 to-263 to-252 to-262 to-218 to-3 vertical smd through hole aka footprint dual diode common cathode kicad symbols alternate kicad library to diode schottky dual discrete akl | TO | 35V",
+ "embedding_text": "discrete-diode.to.35v | Discrete Diode | 49 discrete diode parts for 35V using TO footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | to diode schottky 35v vertical dual discrete akl alternate kicad library rm common cathode commoncathode d2pak | TO | 35V",
  "class": "discrete.diode"
 }

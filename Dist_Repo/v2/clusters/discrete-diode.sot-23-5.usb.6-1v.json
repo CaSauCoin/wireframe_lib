@@ -6,33 +6,24 @@
   "Discrete",
   "Diode"
  ],
- "description": "Cluster of SMD discrete diode components in SOT-23-5 packaging suited for USB and 6.1V applications.",
+ "description": "1 discrete diode parts for USB, 6.1V using SOT-23-5 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when a surface-mount discrete diode in a SOT-23-5 footprint is required.",
-  "Verify part suitability for 6.1V USB applications.",
-  "Prefer Tier A symbols such as ESDA6V1SC5 from KiCad libraries."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SOT-23-5 land pattern is intended."
  ],
  "avoid_when": [
-  "Do not use if a footprint other than SOT-23-5 or non-SMD mounting is needed.",
-  "Avoid when application voltages or interfaces differ from 6.1V USB specs.",
-  "Do not use if detailed electrical parameters are not confirmed by component documentation."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SOT-23-5."
  ],
  "keywords": [
-  "discrete",
-  "diode",
-  "usb",
-  "6.1v",
-  "sot-23-5",
-  "smd",
-  "esda6v1sc5",
-  "kicad-symbols",
-  "power protection",
-  "discrete diode",
-  "sot-23",
-  "sot23-5",
   "sot",
   "protection",
+  "diode",
   "1v",
+  "usb",
+  "esda6v1sc5",
   "power",
   "quad",
   "tvs",
@@ -41,7 +32,8 @@
   "channels",
   "400w",
   "30kv",
-  "to"
+  "to",
+  "smd"
  ],
  "facts": {
   "package_family": "SOT-23-5",
@@ -65,7 +57,7 @@
   "tier_counts": {
    "A": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -80,6 +72,6 @@
  "part_ids": [
   "kicad-symbols/Power_Protection/ESDA6V1SC5"
  ],
- "embedding_text": "discrete-diode.sot-23-5.usb.6-1v | Discrete Diode | Cluster of SMD discrete diode components in SOT-23-5 packaging suited for USB and 6.1V applications. | discrete diode usb 6.1v sot-23-5 smd esda6v1sc5 kicad-symbols power protection discrete diode sot-23 sot23-5 sot protection 1v power quad tvs array standoff channels 400w 30kv to | SOT-23-5 | USB 6.1V",
+ "embedding_text": "discrete-diode.sot-23-5.usb.6-1v | Discrete Diode | 1 discrete diode parts for USB, 6.1V using SOT-23-5 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | sot protection diode 1v usb esda6v1sc5 power quad tvs array standoff channels 400w 30kv to smd | SOT-23-5 | USB 6.1V",
  "class": "discrete.diode"
 }

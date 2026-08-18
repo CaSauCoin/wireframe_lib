@@ -5,38 +5,29 @@
  "category_path": [
   "Connector"
  ],
- "description": "Cluster of 10 BUS-family connector parts covering PCI Express Mini, x1, x4, x8, and x16 footprints, sourced from kicad-symbols and dist-legacy, with 5 tier-B and 5 tier-C entries.",
+ "description": "10 connector parts using BUS footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Match the exact PCIe variant needed: Mini, x1, x4, x8, or x16",
-  "Prefer tier B entries over tier C when available",
-  "Confirm the footprint (BUS_PCIexpress_*) matches the intended PCB land pattern",
-  "Check source (kicad-symbols vs dist-legacy) for trust level"
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a BUS land pattern is intended."
  ],
  "avoid_when": [
-  "The board requires a connector footprint outside the BUS_PCIexpress family",
-  "Electrical, mechanical, or pinout specifics are needed but not stated for the part",
-  "A tier A or fully reviewed part is required and only tier B/C is available",
-  "The part is not in the planner-visible subset and review status is still 'generated'"
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than BUS."
  ],
  "keywords": [
   "bus",
   "connector",
-  "pci express",
-  "pcie",
+  "pciexpress",
   "pci",
   "express",
+  "pcie",
   "mini",
-  "pcie mini",
   "x1",
+  "x16",
   "x4",
   "x8",
-  "x16",
-  "edge connector",
-  "expansion slot",
-  "smd connector",
-  "kicad symbols",
-  "dist legacy",
-  "pciexpress",
   "pad",
   "mm",
   "pitch",
@@ -69,7 +60,7 @@
    "B": 5,
    "C": 5
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -125,6 +116,6 @@
   "dist-legacy/BUS_PCIexpress_x4",
   "dist-legacy/BUS_PCIexpress_x8"
  ],
- "embedding_text": "connector.bus | Connector | Cluster of 10 BUS-family connector parts covering PCI Express Mini, x1, x4, x8, and x16 footprints, sourced from kicad-symbols and dist-legacy, with 5 tier-B and 5 tier-C entries. | bus connector pci express pcie pci express mini pcie mini x1 x4 x8 x16 edge connector expansion slot smd connector kicad symbols dist legacy pciexpress pad mm pitch pins package | BUS | ",
+ "embedding_text": "connector.bus | Connector | 10 connector parts using BUS footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | bus connector pciexpress pci express pcie mini x1 x16 x4 x8 pad mm pitch pins package | BUS | ",
  "class": "connector"
 }

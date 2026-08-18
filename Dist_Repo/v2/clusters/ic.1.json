@@ -5,30 +5,19 @@
  "category_path": [
   "IC"
  ],
- "description": "Integrated circuit (IC) cluster of 32 tier-C parts in package family 1 supporting through-hole and unknown mount types across 12 footprints.",
+ "description": "32 ic parts using 1 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Verify footprint compatibility with package family 1.",
-  "Select entries based on source repository (francescosacco-hardwarelibrary or dist-legacy).",
-  "Confirm mounting requirements for through-hole or unknown mount types."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a 1 land pattern is intended."
  ],
  "avoid_when": [
-  "Planner-visible parts are required, as planner visible count is 0.",
-  "Tier A or Tier B quality tier parts are required (only tier C parts are present).",
-  "Package family 1 or listed footprints do not match board requirements."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than 1."
  ],
  "keywords": [
   "ic",
-  "integrated circuit",
-  "package family 1",
-  "through hole",
-  "through_hole",
-  "tier c",
-  "francescosacco-hardwarelibrary",
-  "dist-legacy",
-  "1-1734248-5",
-  "1-2199230-5",
-  "1-103741-0",
-  "1-103741-1",
   "pad",
   "mm",
   "pitch",
@@ -68,7 +57,7 @@
   "tier_counts": {
    "C": 32
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
@@ -105,6 +94,6 @@
   "francescosacco-hardwarelibrary/1-535541-8/1-535541-8",
   "francescosacco-hardwarelibrary/1-535541-9/1-535541-9"
  ],
- "embedding_text": "ic.1 | IC | Integrated circuit (IC) cluster of 32 tier-C parts in package family 1 supporting through-hole and unknown mount types across 12 footprints. | ic integrated circuit package family 1 through hole through_hole tier c francescosacco-hardwarelibrary dist-legacy 1-1734248-5 1-2199230-5 1-103741-0 1-103741-1 pad mm pitch pins through hole | 1 | ",
+ "embedding_text": "ic.1 | IC | 32 ic parts using 1 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | ic pad mm pitch pins through hole | 1 | ",
  "class": "ic"
 }

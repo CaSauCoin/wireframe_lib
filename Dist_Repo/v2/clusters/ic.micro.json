@@ -5,29 +5,21 @@
  "category_path": [
   "IC"
  ],
- "description": "Cluster of 1 IC part in the MICRO package family using MICRO footprints and legacy distribution source data.",
+ "description": "1 ic parts using MICRO footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Verify layout compatibility with the MICRO footprint and package family.",
-  "Review part details carefully as the cluster consists of a tier C entry.",
-  "Confirm mounting specifications since the mounting type is unknown."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a MICRO land pattern is intended."
  ],
  "avoid_when": [
-  "The PCB layout requires a package family or footprint other than MICRO.",
-  "Unverified or tier C component data is not acceptable for the design.",
-  "Known mounting style information is required before part selection."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than MICRO."
  ],
  "keywords": [
-  "ic",
   "micro",
-  "integrated circuit",
-  "micro footprint",
-  "micro package",
-  "package family micro",
-  "dist-legacy",
-  "tier c",
-  "legacy ic",
-  "unknown mount",
   "plugin",
+  "ic",
   "pad",
   "mm",
   "pitch",
@@ -52,12 +44,12 @@
   "tier_counts": {
    "C": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
   "dist-legacy/MICRO PLUGIN"
  ],
- "embedding_text": "ic.micro | IC | Cluster of 1 IC part in the MICRO package family using MICRO footprints and legacy distribution source data. | ic micro integrated circuit micro footprint micro package package family micro dist-legacy tier c legacy ic unknown mount plugin pad mm pitch pins | MICRO | ",
+ "embedding_text": "ic.micro | IC | 1 ic parts using MICRO footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | micro plugin ic pad mm pitch pins | MICRO | ",
  "class": "ic"
 }

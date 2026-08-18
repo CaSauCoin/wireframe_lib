@@ -5,28 +5,20 @@
  "category_path": [
   "IC"
  ],
- "description": "This IC cluster contains 3 tier-C parts associated with PLCC68A footprints including PLCC68A_L, PLCC68A_M, and PLCC68A_N from legacy distribution sources.",
+ "description": "3 ic parts using PLCC68A footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Verify compatibility with PLCC68A footprint variants PLCC68A_L, PLCC68A_M, or PLCC68A_N.",
-  "Note that all 3 entries are classified under quality tier C.",
-  "Confirm part details from legacy distribution sources before selecting."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a PLCC68A land pattern is intended."
  ],
  "avoid_when": [
-  "The board layout requires a package family other than PLCC68A.",
-  "Planner-visible entries or quality tiers higher than tier C are required.",
-  "Legacy distribution source records are insufficient for design requirements."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than PLCC68A."
  ],
  "keywords": [
-  "ic",
   "plcc68a",
-  "plcc68a_l",
-  "plcc68a_m",
-  "plcc68a_n",
-  "integrated circuit",
-  "tier c",
-  "dist-legacy",
-  "footprint",
-  "package family",
+  "ic",
   "pad",
   "mm",
   "pitch",
@@ -53,7 +45,7 @@
   "tier_counts": {
    "C": 3
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
@@ -61,6 +53,6 @@
   "dist-legacy/PLCC68A_M",
   "dist-legacy/PLCC68A_N"
  ],
- "embedding_text": "ic.plcc68a | IC | This IC cluster contains 3 tier-C parts associated with PLCC68A footprints including PLCC68A_L, PLCC68A_M, and PLCC68A_N from legacy distribution sources. | ic plcc68a plcc68a_l plcc68a_m plcc68a_n integrated circuit tier c dist-legacy footprint package family pad mm pitch pins | PLCC68A | ",
+ "embedding_text": "ic.plcc68a | IC | 3 ic parts using PLCC68A footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | plcc68a ic pad mm pitch pins | PLCC68A | ",
  "class": "ic"
 }

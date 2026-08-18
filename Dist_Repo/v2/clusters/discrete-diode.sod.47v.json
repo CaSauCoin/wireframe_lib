@@ -6,32 +6,28 @@
   "Discrete",
   "Diode"
  ],
- "description": "A cluster of 1 surface-mount discrete diode part in the SOD package family with a SOD-523 footprint from SparkFun KiCad Libraries.",
+ "description": "1 discrete diode parts for 47V using SOD footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Verify that a surface-mount SOD-523 footprint is required for your PCB layout.",
-  "Check electrical ratings including 0.5A and 20V parameters against circuit requirements.",
-  "Confirm suitability of quality tier B parts from SparkFun KiCad Libraries."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SOD land pattern is intended."
  ],
  "avoid_when": [
-  "The design requires a package footprint other than surface-mount SOD-523.",
-  "Through-hole mounting or package families other than SOD are required.",
-  "Project requirements require quality tiers higher than tier B."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SOD."
  ],
  "keywords": [
-  "discrete",
-  "diode",
-  "sod",
-  "sod-523",
-  "smd",
   "schottky",
   "sparkfun",
+  "diode",
   "47v",
-  "20v",
-  "0.5a",
-  "0.47v",
-  "discretesemi",
+  "sod",
   "5a",
-  "cdbu0520"
+  "20v",
+  "discretesemi",
+  "cdbu0520",
+  "discrete"
  ],
  "facts": {
   "package_family": "SOD",
@@ -54,7 +50,7 @@
   "tier_counts": {
    "B": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -69,6 +65,6 @@
  "part_ids": [
   "SparkFun-KiCad-Libraries/SparkFun-DiscreteSemi/D_Schottky_0.5A_20V_0.47V"
  ],
- "embedding_text": "discrete-diode.sod.47v | Discrete Diode | A cluster of 1 surface-mount discrete diode part in the SOD package family with a SOD-523 footprint from SparkFun KiCad Libraries. | discrete diode sod sod-523 smd schottky sparkfun 47v 20v 0.5a 0.47v discretesemi 5a cdbu0520 | SOD | 47V",
+ "embedding_text": "discrete-diode.sod.47v | Discrete Diode | 1 discrete diode parts for 47V using SOD footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | schottky sparkfun diode 47v sod 5a 20v discretesemi cdbu0520 discrete | SOD | 47V",
  "class": "discrete.diode"
 }

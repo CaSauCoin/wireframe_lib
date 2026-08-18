@@ -6,44 +6,34 @@
   "Discrete",
   "Diode"
  ],
- "description": "Zener diode cluster rated 8.7V (D_DO-35, D_SOD-123, D_SOD-323, D_SMB, D_SMC, D_MiniMELF, D_MicroMELF, 5W CASE-017AA footprints) with 9 parts, 8 tier A and 1 tier B, from Alternate-KiCad-Library.",
+ "description": "9 discrete diode parts for 8.7V using D footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Match footprint exactly to the intended PCB land pattern (SOD-123, SOD-323, SMB, SMC, MiniMELF, MicroMELF, or DO-35/5W axial).",
-  "Prefer tier A entries; only one tier B entry exists in this cluster.",
-  "Confirm 8.7V rating matches the required zener voltage for the design.",
-  "Verify pin-to-pad and polarity mapping against the chosen footprint before layout."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a D land pattern is intended."
  ],
  "avoid_when": [
-  "The design needs a zener voltage other than 8.7V.",
-  "The PCB footprint required is not one of the D-family footprints listed (SOD-123, SOD-323, SMB, SMC, MiniMELF, MicroMELF, DO-35, CASE-017AA).",
-  "The symbol-footprint pairing has not been confirmed and is flagged for review.",
-  "Through-hole axial mounting is unavailable but only SMD parts are usable, or vice versa."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than D."
  ],
  "keywords": [
   "diode",
-  "zener diode",
   "zener",
-  "8.7v",
-  "discrete diode",
-  "d package",
-  "sod-123",
-  "sod-323",
-  "smb",
-  "smc",
-  "minimelf",
-  "micromelf",
-  "do-35",
-  "5w zener",
-  "horizontal zener",
-  "alternate-kicad-library",
-  "akl",
-  "through hole",
-  "smd",
   "7v",
+  "akl",
   "alternate",
   "kicad",
   "library",
-  "discrete"
+  "discrete",
+  "sod",
+  "do",
+  "500mw",
+  "5w",
+  "horizontal",
+  "micromelf",
+  "smb",
+  "smc"
  ],
  "facts": {
   "package_family": "D",
@@ -75,7 +65,7 @@
    "A": 8,
    "B": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -130,6 +120,6 @@
   "Alternate-KiCad-Library/Diode_Zener_AKL/TZM5238",
   "Alternate-KiCad-Library/Diode_Zener_AKL/1N5345B"
  ],
- "embedding_text": "discrete-diode.d.8-7v | Discrete Diode | Zener diode cluster rated 8.7V (D_DO-35, D_SOD-123, D_SOD-323, D_SMB, D_SMC, D_MiniMELF, D_MicroMELF, 5W CASE-017AA footprints) with 9 parts, 8 tier A and 1 tier B, from Alternate-KiCad-Library. | diode zener diode zener 8.7v discrete diode d package sod-123 sod-323 smb smc minimelf micromelf do-35 5w zener horizontal zener alternate-kicad-library akl through hole smd 7v alternate kicad library discrete | D | 8.7V",
+ "embedding_text": "discrete-diode.d.8-7v | Discrete Diode | 9 discrete diode parts for 8.7V using D footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | diode zener 7v akl alternate kicad library discrete sod do 500mw 5w horizontal micromelf smb smc | D | 8.7V",
  "class": "discrete.diode"
 }

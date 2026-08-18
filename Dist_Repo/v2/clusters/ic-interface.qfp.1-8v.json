@@ -6,42 +6,34 @@
   "IC",
   "Interface"
  ],
- "description": "Interface IC cluster operating at 1.8V in TQFP-48 surface-mount packaging, including AD9951 and AD9954 parts.",
+ "description": "2 ic interface parts for 1.8V using QFP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when requiring 1.8V interface ICs in TQFP-48 surface-mount packages.",
-  "Choose for designs utilizing AD9951 or AD9954 interface components.",
-  "Verify compatibility with the TQFP-48-1EP 7x7mm footprint."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a QFP land pattern is intended."
  ],
  "avoid_when": [
-  "Avoid if non-QFP package families or through-hole mounts are required.",
-  "Avoid if operating voltage is not 1.8V.",
-  "Avoid when the target footprint is not TQFP-48-1EP."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than QFP."
  ],
  "keywords": [
-  "ic",
   "interface",
-  "1.8v",
-  "qfp",
-  "tqfp",
-  "tqfp-48",
-  "tqfp-48-1ep",
-  "smd",
-  "ad9951",
-  "ad9954",
-  "kicad",
-  "7x7mm",
-  "p0.5mm",
-  "ep3.5x3.5mm",
   "direct",
   "digital",
   "synthesizer",
   "8v",
+  "tqfp",
   "5mm",
+  "qfp",
   "bit",
   "with",
   "400msps",
   "dac",
-  "tqfp48"
+  "tqfp48",
+  "1ep",
+  "7x7mm",
+  "p0"
  ],
  "facts": {
   "package_family": "QFP",
@@ -64,7 +56,7 @@
   "tier_counts": {
    "A": 2
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -88,6 +80,6 @@
   "kicad-symbols/Interface/AD9951",
   "kicad-symbols/Interface/AD9954"
  ],
- "embedding_text": "ic-interface.qfp.1-8v | IC Interface | Interface IC cluster operating at 1.8V in TQFP-48 surface-mount packaging, including AD9951 and AD9954 parts. | ic interface 1.8v qfp tqfp tqfp-48 tqfp-48-1ep smd ad9951 ad9954 kicad 7x7mm p0.5mm ep3.5x3.5mm direct digital synthesizer 8v 5mm bit with 400msps dac tqfp48 | QFP | 1.8V",
+ "embedding_text": "ic-interface.qfp.1-8v | IC Interface | 2 ic interface parts for 1.8V using QFP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | interface direct digital synthesizer 8v tqfp 5mm qfp bit with 400msps dac tqfp48 1ep 7x7mm p0 | QFP | 1.8V",
  "class": "ic.interface"
 }

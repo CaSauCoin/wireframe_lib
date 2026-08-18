@@ -7,42 +7,34 @@
   "Power",
   "Linear Regulator"
  ],
- "description": "Surface-mount 2.85V LDO linear regulator ICs in the TO package family, featuring TO-252-2 and TO-252-3_TabPin2 footprints.",
+ "description": "2 ic power linear regulator parts for LDO, 2.85V using TO footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "A 2.85V fixed-output LDO linear regulator is required.",
-  "Surface-mount TO package land patterns (TO-252-2 or TO-252-3_TabPin2) are specified for the layout.",
-  "Selecting Tier A LDO components from KiCad symbol libraries."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a TO land pattern is intended."
  ],
  "avoid_when": [
-  "An output voltage other than 2.85V is required.",
-  "The design requires through-hole mounting or a non-TO package family.",
-  "A switching regulator topology is required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than TO."
  ],
  "keywords": [
-  "ic",
-  "power",
-  "linear regulator",
-  "ldo",
-  "2.85v",
   "to",
-  "to-252",
-  "to-252-2",
-  "to-252-3_tabpin2",
-  "smd",
-  "ams1117cd-2.85",
-  "ncp1117-2.85_to252",
-  "kicad-symbols",
   "regulator",
   "linear",
   "85v",
   "dpak",
+  "ldo",
   "fixed",
   "1a",
   "low",
   "positive",
   "output",
   "sot",
-  "ams1117cd"
+  "ic",
+  "power",
+  "ams1117cd",
+  "dropout"
  ],
  "facts": {
   "package_family": "TO",
@@ -67,7 +59,7 @@
   "tier_counts": {
    "A": 2
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -91,6 +83,6 @@
   "kicad-symbols/Regulator_Linear/AMS1117CD-2.85",
   "kicad-symbols/Regulator_Linear/NCP1117-2.85_TO252"
  ],
- "embedding_text": "ic-power-ldo.to.ldo.2-85v | IC Power Linear Regulator | Surface-mount 2.85V LDO linear regulator ICs in the TO package family, featuring TO-252-2 and TO-252-3_TabPin2 footprints. | ic power linear regulator ldo 2.85v to to-252 to-252-2 to-252-3_tabpin2 smd ams1117cd-2.85 ncp1117-2.85_to252 kicad-symbols regulator linear 85v dpak fixed 1a low positive output sot ams1117cd | TO | LDO 2.85V",
+ "embedding_text": "ic-power-ldo.to.ldo.2-85v | IC Power Linear Regulator | 2 ic power linear regulator parts for LDO, 2.85V using TO footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | to regulator linear 85v dpak ldo fixed 1a low positive output sot ic power ams1117cd dropout | TO | LDO 2.85V",
  "class": "ic.power.ldo"
 }

@@ -6,36 +6,28 @@
   "Discrete",
   "Diode"
  ],
- "description": "Discrete SMD diode cluster featuring 5V and 40V facets in the D package family using D_SMC(DO-214AB) footprints.",
+ "description": "1 discrete diode parts for 5V, 40V using D footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Choose when requiring an SMD diode with 5V and 40V facets.",
-  "Select for designs specifying a D_SMC(DO-214AB) footprint.",
-  "Use when a tier B part from JLCPCB-Kicad-Library is acceptable."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a D land pattern is intended."
  ],
  "avoid_when": [
-  "The design requires non-SMD mounting or footprints other than D_SMC(DO-214AB).",
-  "The required operating facets differ from 5V and 40V.",
-  "Application requirements require tier A component qualification."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than D."
  ],
  "keywords": [
-  "discrete diode",
-  "discrete.diode",
-  "diode",
-  "5v",
-  "40v",
-  "smd",
-  "d_smc(do-214ab)",
-  "do-214ab",
-  "smc",
-  "tvs-bi",
-  "smcj40ca",
   "tvs",
-  "jlcpcb-kicad-library",
+  "smc",
   "1000us",
+  "40v",
+  "5v",
   "do",
   "214ab",
   "esd",
   "bi",
+  "smcj40ca",
   "jlcpcb",
   "diodes",
   "5kw",
@@ -65,7 +57,7 @@
   "tier_counts": {
    "B": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -80,6 +72,6 @@
  "part_ids": [
   "JLCPCB-Kicad-Library/JLCPCB-Diodes/TVS-Bi,SMCJ40CA"
  ],
- "embedding_text": "discrete-diode.d.5v.40v | Discrete Diode | Discrete SMD diode cluster featuring 5V and 40V facets in the D package family using D_SMC(DO-214AB) footprints. | discrete diode discrete.diode diode 5v 40v smd d_smc(do-214ab) do-214ab smc tvs-bi smcj40ca tvs jlcpcb-kicad-library 1000us do 214ab esd bi jlcpcb diodes 5kw 1ua 3a 1v | D | 5V 40V",
+ "embedding_text": "discrete-diode.d.5v.40v | Discrete Diode | 1 discrete diode parts for 5V, 40V using D footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | tvs smc 1000us 40v 5v do 214ab esd bi smcj40ca jlcpcb diodes 5kw 1ua 3a 1v | D | 5V 40V",
  "class": "discrete.diode"
 }

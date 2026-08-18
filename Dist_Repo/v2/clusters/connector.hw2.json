@@ -5,32 +5,21 @@
  "category_path": [
   "Connector"
  ],
- "description": "SMD connector cluster using the HW2 package family, with 2 parts from Seeed-OPL-Kicad-Library in HW2-SMD-2.0-90D and HW2-SMD-1.0-90D footprints; all entries are tier C and generated (unreviewed).",
+ "description": "2 connector parts using HW2 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Match the exact footprint variant: HW2-SMD-2.0-90D vs HW2-SMD-1.0-90D",
-  "Confirm 90-degree SMD mounting orientation fits the layout",
-  "Only 2 parts available, both tier C from a single source (Seeed-OPL-Kicad-Library) — review before use"
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a HW2 land pattern is intended."
  ],
  "avoid_when": [
-  "A reviewed or higher-tier (A/B) part is required, since all entries here are tier C and review_status is generated",
-  "The design needs a through-hole or non-HW2 package",
-  "The pitch (2.0mm or 1.0mm) or 90-degree orientation does not match board requirements"
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than HW2."
  ],
  "keywords": [
+  "smd",
   "connector",
   "hw2",
-  "smd",
-  "surface mount",
-  "hw2-smd-2.0-90d",
-  "hw2-smd-1.0-90d",
-  "2.0mm pitch",
-  "1.0mm pitch",
-  "90 degree",
-  "right angle",
-  "seeed",
-  "opl kicad library",
-  "tier c",
-  "generated",
   "90d",
   "2p",
   "conn",
@@ -40,7 +29,10 @@
   "0mm",
   "opl",
   "surface",
-  "mount"
+  "mount",
+  "pad",
+  "mm",
+  "pitch"
  ],
  "facts": {
   "package_family": "HW2",
@@ -62,13 +54,13 @@
   "tier_counts": {
    "C": 2
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
   "Seeed-OPL-Kicad-Library/OPL_Connector/CONN-HEADER-SMD-PH-SIDE-_2P-2.0MM_",
   "Seeed-OPL-Kicad-Library/OPL_Connector/SMD-JST-2P-1.0-90D"
  ],
- "embedding_text": "connector.hw2 | Connector | SMD connector cluster using the HW2 package family, with 2 parts from Seeed-OPL-Kicad-Library in HW2-SMD-2.0-90D and HW2-SMD-1.0-90D footprints; all entries are tier C and generated (unreviewed). | connector hw2 smd surface mount hw2-smd-2.0-90d hw2-smd-1.0-90d 2.0mm pitch 1.0mm pitch 90 degree right angle seeed opl kicad library tier c generated 90d 2p conn header ph side 0mm opl surface mount | HW2 | ",
+ "embedding_text": "connector.hw2 | Connector | 2 connector parts using HW2 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | smd connector hw2 90d 2p conn header ph side 0mm opl surface mount pad mm pitch | HW2 | ",
  "class": "connector"
 }

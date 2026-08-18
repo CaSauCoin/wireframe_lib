@@ -6,44 +6,34 @@
   "Discrete",
   "Bridge Rectifier"
  ],
- "description": "Cluster of 90 discrete bridge rectifier parts rated 100V, spanning SMD and through-hole Diode-family footprints (e.g. GBJ, GBU, KBU, GBL, DFS, MBF, ABS, round D9.8mm); 61 tier A and 29 tier B entries.",
+ "description": "90 discrete bridge rectifier parts for 100V using Diode footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Match the exact footprint (e.g. GBJ vs GBU vs KBU vs round D9.8mm) to the intended PCB land pattern before selecting.",
-  "Prefer tier A entries when available; tier B entries have lower confidence scores.",
-  "Confirm mount type (SMD vs through-hole) matches the board assembly process.",
-  "Use the 100V facet only when the design's rated voltage aligns with this cluster."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a Diode land pattern is intended."
  ],
  "avoid_when": [
-  "The board requires a bridge rectifier footprint outside this Diode-family list.",
-  "A different voltage rating than 100V is needed.",
-  "Only tier B, lower-confidence matches are available and exact footprint/pinout cannot be confirmed.",
-  "The layout needs a package family other than Diode."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than Diode."
  ],
  "keywords": [
-  "bridge rectifier",
-  "diode bridge",
-  "100v",
-  "discrete",
-  "smd",
-  "through hole",
-  "gbj",
-  "gbu",
-  "kbu",
-  "gbl",
-  "dfs",
-  "mbf",
-  "abs package",
-  "round d9.8mm",
-  "vishay",
-  "diotec",
-  "alternate kicad library",
-  "akl",
   "bridge",
   "diode",
   "rectifier",
+  "100v",
+  "akl",
   "alternate",
   "kicad",
-  "library"
+  "library",
+  "discrete",
+  "tht",
+  "vishay",
+  "gbj",
+  "3mm",
+  "6x28",
+  "6x7",
+  "0mm"
  ],
  "facts": {
   "package_family": "Diode",
@@ -79,7 +69,7 @@
    "A": 61,
    "B": 29
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -215,6 +205,6 @@
   "Alternate-KiCad-Library/Diode_Bridge_AKL/MB1F",
   "Alternate-KiCad-Library/Diode_Bridge_AKL/MB1S"
  ],
- "embedding_text": "discrete-bridge.diode.100v | Discrete Bridge Rectifier | Cluster of 90 discrete bridge rectifier parts rated 100V, spanning SMD and through-hole Diode-family footprints (e.g. GBJ, GBU, KBU, GBL, DFS, MBF, ABS, round D9.8mm); 61 tier A and 29 tier B entries. | bridge rectifier diode bridge 100v discrete smd through hole gbj gbu kbu gbl dfs mbf abs package round d9.8mm vishay diotec alternate kicad library akl bridge diode rectifier alternate kicad library | Diode | 100V",
+ "embedding_text": "discrete-bridge.diode.100v | Discrete Bridge Rectifier | 90 discrete bridge rectifier parts for 100V using Diode footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | bridge diode rectifier 100v akl alternate kicad library discrete tht vishay gbj 3mm 6x28 6x7 0mm | Diode | 100V",
  "class": "discrete.bridge"
 }

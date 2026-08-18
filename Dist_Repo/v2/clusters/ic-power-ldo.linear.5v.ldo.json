@@ -7,39 +7,33 @@
   "Power",
   "Linear Regulator"
  ],
- "description": "5V LDO linear regulator cluster featuring SMD parts in the Linear_DE14MA footprint family, represented by tier B entry LT3032-5 from KiCad symbols.",
+ "description": "1 ic power linear regulator parts for 5V, LDO using Linear footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select for 5V LDO linear regulator applications requiring SMD mounting.",
-  "Ensure layout compatibility with the Linear_DE14MA footprint.",
-  "Choose when tier B parts like LT3032-5 meet design requirements."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a Linear land pattern is intended."
  ],
  "avoid_when": [
-  "Avoid if footprints other than Linear_DE14MA or non-SMD mounting are required.",
-  "Avoid when output voltages other than 5V or non-LDO regulators are needed.",
-  "Do not use if unstated electrical limits or package parameters must be verified."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than Linear."
  ],
  "keywords": [
-  "linear regulator",
-  "5v ldo",
-  "5v",
-  "ldo",
-  "smd",
-  "linear_de14ma",
-  "de14ma",
-  "lt3032-5",
-  "lt3032",
-  "ic power",
   "linear",
   "regulator",
   "low",
   "noise",
+  "5v",
   "dfn",
+  "ldo",
+  "lt3032",
   "150ma",
   "dual",
   "dropout",
   "positive",
   "negative",
   "output",
+  "de14ma",
   "ic"
  ],
  "facts": {
@@ -64,7 +58,7 @@
   "tier_counts": {
    "B": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -79,6 +73,6 @@
  "part_ids": [
   "kicad-symbols/Regulator_Linear/LT3032-5"
  ],
- "embedding_text": "ic-power-ldo.linear.5v.ldo | IC Power Linear Regulator | 5V LDO linear regulator cluster featuring SMD parts in the Linear_DE14MA footprint family, represented by tier B entry LT3032-5 from KiCad symbols. | linear regulator 5v ldo 5v ldo smd linear_de14ma de14ma lt3032-5 lt3032 ic power linear regulator low noise dfn 150ma dual dropout positive negative output ic | Linear | 5V LDO",
+ "embedding_text": "ic-power-ldo.linear.5v.ldo | IC Power Linear Regulator | 1 ic power linear regulator parts for 5V, LDO using Linear footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | linear regulator low noise 5v dfn ldo lt3032 150ma dual dropout positive negative output de14ma ic | Linear | 5V LDO",
  "class": "ic.power.ldo"
 }

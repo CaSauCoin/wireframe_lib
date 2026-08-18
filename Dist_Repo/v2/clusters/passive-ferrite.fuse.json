@@ -6,32 +6,21 @@
   "Passive",
   "Ferrite Bead"
  ],
- "description": "Cluster of 4 tier-B passive ferrite bead and filter parts from Alternate-KiCad-Library mapped to Fuse package footprints for SMD and through-hole mounting.",
+ "description": "4 passive ferrite bead parts using Fuse footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Match the required footprint such as Fuse_Littelfuse_TSM600, Fuse_SunFuse-6HP, or Fuse_Bourns_TBU-CA.",
-  "Select by component configuration including single bead, double bead, double separated, or LCL filter.",
-  "Verify whether SMD or through-hole mounting is required."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a Fuse land pattern is intended."
  ],
  "avoid_when": [
-  "The PCB design requires a standard ferrite package rather than a Fuse footprint.",
-  "A tier A component is strictly required.",
-  "The application requires parts from sources other than Alternate-KiCad-Library."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than Fuse."
  ],
  "keywords": [
-  "ferrite bead",
-  "passive ferrite",
-  "fuse",
-  "fuse_littelfuse_tsm600",
-  "fuse_sunfuse-6hp",
-  "fuse_bourns_tbu-ca",
-  "alternate-kicad-library",
-  "ferrite_filter_lcl",
-  "ferrite_bead_double",
-  "smd",
-  "through_hole",
-  "lcl filter",
   "ferrite",
   "bead",
+  "fuse",
   "double",
   "device",
   "akl",
@@ -41,7 +30,10 @@
   "emc",
   "passive",
   "littelfuse",
-  "tsm600"
+  "tsm600",
+  "dual",
+  "bourns",
+  "sunfuse"
  ],
  "facts": {
   "package_family": "Fuse",
@@ -65,7 +57,7 @@
   "tier_counts": {
    "B": 4
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -107,6 +99,6 @@
   "Alternate-KiCad-Library/Device_AKL/Ferrite_Bead_Double_Sep",
   "Alternate-KiCad-Library/Device_AKL/Ferrite_Filter_LCL"
  ],
- "embedding_text": "passive-ferrite.fuse | Passive Ferrite Bead | Cluster of 4 tier-B passive ferrite bead and filter parts from Alternate-KiCad-Library mapped to Fuse package footprints for SMD and through-hole mounting. | ferrite bead passive ferrite fuse fuse_littelfuse_tsm600 fuse_sunfuse-6hp fuse_bourns_tbu-ca alternate-kicad-library ferrite_filter_lcl ferrite_bead_double smd through_hole lcl filter ferrite bead double device akl alternate kicad library emc passive littelfuse tsm600 | Fuse | ",
+ "embedding_text": "passive-ferrite.fuse | Passive Ferrite Bead | 4 passive ferrite bead parts using Fuse footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | ferrite bead fuse double device akl alternate kicad library emc passive littelfuse tsm600 dual bourns sunfuse | Fuse | ",
  "class": "passive.ferrite"
 }

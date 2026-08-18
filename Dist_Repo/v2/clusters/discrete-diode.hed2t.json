@@ -6,28 +6,21 @@
   "Discrete",
   "Diode"
  ],
- "description": "Discrete diode cluster containing 1 tier C part in the HED2T package family.",
+ "description": "1 discrete diode parts using HED2T footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Verify footprint details for the HED2T land pattern.",
-  "Confirm mounting requirements as the mount type is listed as unknown.",
-  "Review part details given the tier C quality rating and generated review status."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a HED2T land pattern is intended."
  ],
  "avoid_when": [
-  "The board layout requires a package family other than HED2T.",
-  "Parts with quality tiers higher than C are required.",
-  "Planner-visible component validation is required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than HED2T."
  ],
  "keywords": [
   "hed2t",
   "discrete",
   "diode",
-  "discrete diode",
-  "hed2t footprint",
-  "hed2t package",
-  "tier c",
-  "dist-legacy",
-  "discrete.diode",
-  "hed2t diode",
   "pad",
   "mm",
   "pitch",
@@ -52,12 +45,12 @@
   "tier_counts": {
    "C": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
   "dist-legacy/HED2T"
  ],
- "embedding_text": "discrete-diode.hed2t | Discrete Diode | Discrete diode cluster containing 1 tier C part in the HED2T package family. | hed2t discrete diode discrete diode hed2t footprint hed2t package tier c dist-legacy discrete.diode hed2t diode pad mm pitch pins | HED2T | ",
+ "embedding_text": "discrete-diode.hed2t | Discrete Diode | 1 discrete diode parts using HED2T footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | hed2t discrete diode pad mm pitch pins | HED2T | ",
  "class": "discrete.diode"
 }

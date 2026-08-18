@@ -6,34 +6,25 @@
   "IC",
   "Power"
  ],
- "description": "Surface-mount 60V buck converter power ICs in TSSOP packaging, represented by LTC3892-1.",
+ "description": "1 ic power parts for buck, 60V using TSSOP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when designing 60V buck converter circuits using surface-mount TSSOP packages.",
-  "Verify compatibility with TSSOP-28-1EP thermal pad footprint specifications.",
-  "Check tier B quality status and symbol source mapping for LTC3892-1."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a TSSOP land pattern is intended."
  ],
  "avoid_when": [
-  "The design requires package families other than TSSOP or non-SMD mounting.",
-  "The application circuit does not use a 60V buck topology.",
-  "Full tier A quality rating or alternative package footprint is required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than TSSOP."
  ],
  "keywords": [
-  "ic power",
-  "buck",
-  "60v",
   "tssop",
-  "smd",
-  "tssop-28",
-  "tssop-28-1ep",
-  "ltc3892-1",
-  "regulator controller",
-  "kicad-symbols",
-  "power ic",
-  "step down",
   "regulator",
   "controller",
+  "60v",
   "dual",
   "dc",
+  "buck",
   "ltc3892",
   "phase",
   "synchronous",
@@ -41,7 +32,8 @@
   "down",
   "forced",
   "continuous",
-  "conduction"
+  "conduction",
+  "mode"
  ],
  "facts": {
   "package_family": "TSSOP",
@@ -65,7 +57,7 @@
   "tier_counts": {
    "B": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -80,6 +72,6 @@
  "part_ids": [
   "kicad-symbols/Regulator_Controller/LTC3892-1"
  ],
- "embedding_text": "ic-power.tssop.buck.60v | IC Power | Surface-mount 60V buck converter power ICs in TSSOP packaging, represented by LTC3892-1. | ic power buck 60v tssop smd tssop-28 tssop-28-1ep ltc3892-1 regulator controller kicad-symbols power ic step down regulator controller dual dc ltc3892 phase synchronous step down forced continuous conduction | TSSOP | buck 60V",
+ "embedding_text": "ic-power.tssop.buck.60v | IC Power | 1 ic power parts for buck, 60V using TSSOP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | tssop regulator controller 60v dual dc buck ltc3892 phase synchronous step down forced continuous conduction mode | TSSOP | buck 60V",
  "class": "ic.power"
 }

@@ -5,44 +5,34 @@
  "category_path": [
   "Connector"
  ],
- "description": "Heterogeneous connector cluster (18 parts, 12 footprints) spanning an IEC C14 power inlet, pitched terminal blocks, audio/BNC/DIN jacks, and pogo-pin connectors, mostly through-hole mount.",
+ "description": "18 connector parts using Conn footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Match the exact footprint (C14 receptacle, terminal block pitch, jack type, or pogo pin spacing) to the physical connector needed",
-  "Prefer the single tier A part (IEC_60320_C14_Receptacle) when a verified, higher-confidence entry is required",
-  "Confirm pin/position count and pitch from the footprint name before committing to layout",
-  "Check mount type per part since this cluster mixes through_hole with unspecified mounts"
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a Conn land pattern is intended."
  ],
  "avoid_when": [
-  "The needed connector type is not one of C14 inlet, terminal block, audio/BNC/DIN jack, or pogo pin",
-  "Only a tier C entry matches and its footprint/source has not been individually checked",
-  "Electrical ratings (voltage, current) are required but not stated on the chosen part",
-  "The design needs a package family other than Conn"
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than Conn."
  ],
  "keywords": [
   "conn",
   "connector",
-  "iec 60320",
-  "c14 receptacle",
-  "power inlet",
-  "terminal block",
-  "pogo pin",
-  "audio jack",
-  "bnc connector",
-  "din connector",
-  "right angle connector",
-  "through hole connector",
-  "pcb mount connector",
-  "2.54mm pitch",
-  "5.08mm pitch",
-  "1.27mm pitch",
-  "kicad connector",
-  "jlcpcb connector",
   "pogo",
   "jack",
   "ra",
   "5pos",
   "pwr",
-  "pad"
+  "pad",
+  "mm",
+  "pitch",
+  "pins",
+  "c14",
+  "din",
+  "4pin",
+  "27mmp",
+  "100in"
  ],
  "facts": {
   "package_family": "Conn",
@@ -79,7 +69,7 @@
    "B": 4,
    "C": 13
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -143,6 +133,6 @@
   "dist-legacy/CONN_PhoneMiniStereo",
   "dist-legacy/Conn_C14_Receptacle_RightAngle_Schurter_DD21.01xx"
  ],
- "embedding_text": "connector.conn | Connector | Heterogeneous connector cluster (18 parts, 12 footprints) spanning an IEC C14 power inlet, pitched terminal blocks, audio/BNC/DIN jacks, and pogo-pin connectors, mostly through-hole mount. | conn connector iec 60320 c14 receptacle power inlet terminal block pogo pin audio jack bnc connector din connector right angle connector through hole connector pcb mount connector 2.54mm pitch 5.08mm pitch 1.27mm pitch kicad connector jlcpcb connector pogo jack ra 5pos pwr pad | Conn | ",
+ "embedding_text": "connector.conn | Connector | 18 connector parts using Conn footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | conn connector pogo jack ra 5pos pwr pad mm pitch pins c14 din 4pin 27mmp 100in | Conn | ",
  "class": "connector"
 }

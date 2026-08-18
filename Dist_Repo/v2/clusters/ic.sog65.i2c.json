@@ -5,30 +5,21 @@
  "category_path": [
   "IC"
  ],
- "description": "This cluster contains 27 surface-mount I2C integrated circuit parts in SOG65 package footprints from the chilaboard-altium-library.",
+ "description": "27 ic parts for I2C using SOG65 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when an I2C integrated circuit with surface-mount SOG65 packaging is required.",
-  "Match layout requirements against available footprints like SOG65_8, SOG65_16, SOG65_20, or SOG65_28_W.",
-  "Confirm compatibility with tier B parts from the chilaboard-altium-library."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SOG65 land pattern is intended."
  ],
  "avoid_when": [
-  "Avoid if the design requires package styles other than SOG65.",
-  "Do not use when through-hole or non-surface-mount mounting is required.",
-  "Avoid if the application requires a communication interface other than I2C."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SOG65."
  ],
  "keywords": [
   "i2c",
   "ic",
   "sog65",
-  "smd",
-  "surface mount",
-  "integrated circuit",
-  "sog65_8",
-  "sog65_16",
-  "sog65_20",
-  "sog65_28_w",
-  "sog65_8_3",
-  "chilaboard-altium-library",
   "ssop8",
   "clock",
   "real",
@@ -40,7 +31,8 @@
   "interface",
   "an",
   "in",
-  "rtc"
+  "rtc",
+  "package"
  ],
  "facts": {
   "package_family": "SOG65",
@@ -68,7 +60,7 @@
   "tier_counts": {
    "B": 27
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -141,6 +133,6 @@
   "chilaboard-altium-library/TSC2007_TSSOP16/TSC2007_TSSOP16",
   "chilaboard-altium-library/PCA9536_SSOP8/PCA9536_SSOP8"
  ],
- "embedding_text": "ic.sog65.i2c | IC | This cluster contains 27 surface-mount I2C integrated circuit parts in SOG65 package footprints from the chilaboard-altium-library. | i2c ic sog65 smd surface mount integrated circuit sog65_8 sog65_16 sog65_20 sog65_28_w sog65_8_3 chilaboard-altium-library ssop8 clock real time pin and ssop sensor interface an in rtc | SOG65 | I2C",
+ "embedding_text": "ic.sog65.i2c | IC | 27 ic parts for I2C using SOG65 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | i2c ic sog65 ssop8 clock real time pin and ssop sensor interface an in rtc package | SOG65 | I2C",
  "class": "ic"
 }

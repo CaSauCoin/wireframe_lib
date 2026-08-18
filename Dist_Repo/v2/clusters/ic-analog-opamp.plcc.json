@@ -7,34 +7,21 @@
   "Analog",
   "Op-Amp"
  ],
- "description": "Analog operational amplifier ICs in the PLCC package family using PLCC-20_SMD-Socket surface-mount footprints from Alternate-KiCad-Library.",
+ "description": "4 ic analog op-amp parts using PLCC footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when requiring an operational amplifier IC with a PLCC-20_SMD-Socket footprint.",
-  "Choose among tier B surface-mount entries from Alternate-KiCad-Library.",
-  "Verify part selection against available entries OP467ARC, TLE2022MFKB, TLE2024AMFKB, or TLE2024MFKB."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a PLCC land pattern is intended."
  ],
  "avoid_when": [
-  "The PCB design requires footprints other than PLCC-20_SMD-Socket.",
-  "Through-hole mounting is required instead of surface-mount (SMD).",
-  "Parts outside the Alternate-KiCad-Library source or tier B rating are required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than PLCC."
  ],
  "keywords": [
-  "ic",
-  "analog",
-  "op-amp",
-  "opamp",
-  "operational amplifier",
-  "plcc",
-  "plcc-20_smd-socket",
-  "smd",
-  "alternate-kicad-library",
-  "op467arc",
-  "tle2022mfkb",
-  "tle2024amfkb",
-  "tle2024mfkb",
-  "tier b",
   "amplifier",
   "operational",
+  "plcc",
   "precision",
   "quad",
   "akl",
@@ -42,7 +29,12 @@
   "drift",
   "gbw",
   "alternate",
-  "kicad"
+  "kicad",
+  "library",
+  "smd",
+  "socket",
+  "smt",
+  "opamp"
  ],
  "facts": {
   "package_family": "PLCC",
@@ -63,7 +55,7 @@
   "tier_counts": {
    "B": 4
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -105,6 +97,6 @@
   "Alternate-KiCad-Library/Amplifier_Operational_AKL/TLE2024AMFKB",
   "Alternate-KiCad-Library/Amplifier_Operational_AKL/TLE2024MFKB"
  ],
- "embedding_text": "ic-analog-opamp.plcc | IC Analog Op-Amp | Analog operational amplifier ICs in the PLCC package family using PLCC-20_SMD-Socket surface-mount footprints from Alternate-KiCad-Library. | ic analog op-amp opamp operational amplifier plcc plcc-20_smd-socket smd alternate-kicad-library op467arc tle2022mfkb tle2024amfkb tle2024mfkb tier b amplifier operational precision quad akl offset drift gbw alternate kicad | PLCC | ",
+ "embedding_text": "ic-analog-opamp.plcc | IC Analog Op-Amp | 4 ic analog op-amp parts using PLCC footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | amplifier operational plcc precision quad akl offset drift gbw alternate kicad library smd socket smt opamp | PLCC | ",
  "class": "ic.analog.opamp"
 }

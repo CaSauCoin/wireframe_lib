@@ -6,38 +6,33 @@
   "IC",
   "Sensor"
  ],
- "description": "This cluster contains 3.3V sensor ICs in the ASAIR package family with through-hole mounting and an ASAIR_AM2302_P2.54mm_Vertical footprint.",
+ "description": "1 ic sensor parts for 3.3V using ASAIR footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Choose when requiring a 3.3V sensor IC in an ASAIR package family.",
-  "Verify requirements for through-hole mounting with an ASAIR_AM2302_P2.54mm_Vertical footprint.",
-  "Select when using part AM2302 from KiCad symbols library."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a ASAIR land pattern is intended."
  ],
  "avoid_when": [
-  "The PCB layout requires surface-mount technology instead of through-hole mounting.",
-  "Operating voltage requirements differ from 3.3V.",
-  "The design requires a footprint other than ASAIR_AM2302_P2.54mm_Vertical."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than ASAIR."
  ],
  "keywords": [
-  "ic",
-  "sensor",
-  "3.3v",
-  "asair",
   "am2302",
-  "through_hole",
-  "asair_am2302_p2.54mm_vertical",
-  "p2.54mm",
-  "vertical",
-  "kicad-symbols",
+  "sensor",
   "temperature",
   "and",
   "humidity",
   "module",
   "dht22",
+  "asair",
   "to",
   "0v",
   "p2",
   "54mm",
+  "vertical",
   "digital",
+  "ic",
   "3v"
  ],
  "facts": {
@@ -61,7 +56,7 @@
   "tier_counts": {
    "B": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -76,6 +71,6 @@
  "part_ids": [
   "kicad-symbols/Sensor/AM2302"
  ],
- "embedding_text": "ic-sensor.asair.3v3 | IC Sensor | This cluster contains 3.3V sensor ICs in the ASAIR package family with through-hole mounting and an ASAIR_AM2302_P2.54mm_Vertical footprint. | ic sensor 3.3v asair am2302 through_hole asair_am2302_p2.54mm_vertical p2.54mm vertical kicad-symbols temperature and humidity module dht22 to 0v p2 54mm digital 3v | ASAIR | 3.3V",
+ "embedding_text": "ic-sensor.asair.3v3 | IC Sensor | 1 ic sensor parts for 3.3V using ASAIR footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | am2302 sensor temperature and humidity module dht22 asair to 0v p2 54mm vertical digital ic 3v | ASAIR | 3.3V",
  "class": "ic.sensor"
 }

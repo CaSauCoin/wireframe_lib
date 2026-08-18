@@ -7,32 +7,22 @@
   "Power",
   "Linear Regulator"
  ],
- "description": "Surface-mount 16V LDO linear regulator ICs in VSON packaging.",
+ "description": "5 ic power linear regulator parts for LDO, 16V using VSON footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Designs requiring a 16V low dropout linear regulator.",
-  "Layouts specifying VSON-8-1EP surface-mount packaging.",
-  "Selecting tier B linear regulator parts from KiCad symbols."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a VSON land pattern is intended."
  ],
  "avoid_when": [
-  "Through-hole or non-SMD mounting is required.",
-  "The layout requires packaging other than VSON-8-1EP.",
-  "Voltage rating requirements differ from 16V."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than VSON."
  ],
  "keywords": [
-  "ic",
-  "power",
-  "linear regulator",
-  "ldo",
-  "16v",
-  "vson",
-  "smd",
-  "vson-8-1ep",
-  "3x3mm",
-  "p0.65mm",
-  "tlv767",
-  "kicad-symbols",
   "regulator",
   "linear",
+  "vson",
+  "16v",
   "1a",
   "precision",
   "voltage",
@@ -41,8 +31,10 @@
   "pin",
   "output",
   "1ep",
+  "3x3mm",
   "p0",
-  "65mm"
+  "65mm",
+  "ep1"
  ],
  "facts": {
   "package_family": "VSON",
@@ -66,7 +58,7 @@
   "tier_counts": {
    "B": 5
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -117,6 +109,6 @@
   "kicad-symbols/Regulator_Linear/TLV76780QWDRBxQ1",
   "kicad-symbols/Regulator_Linear/TLV76790QWDRBxQ1"
  ],
- "embedding_text": "ic-power-ldo.vson.ldo.16v | IC Power Linear Regulator | Surface-mount 16V LDO linear regulator ICs in VSON packaging. | ic power linear regulator ldo 16v vson smd vson-8-1ep 3x3mm p0.65mm tlv767 kicad-symbols regulator linear 1a precision voltage with enable pin output 1ep p0 65mm | VSON | LDO 16V",
+ "embedding_text": "ic-power-ldo.vson.ldo.16v | IC Power Linear Regulator | 5 ic power linear regulator parts for LDO, 16V using VSON footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | regulator linear vson 16v 1a precision voltage with enable pin output 1ep 3x3mm p0 65mm ep1 | VSON | LDO 16V",
  "class": "ic.power.ldo"
 }

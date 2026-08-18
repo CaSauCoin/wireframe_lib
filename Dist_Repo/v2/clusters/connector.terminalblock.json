@@ -5,44 +5,34 @@
  "category_path": [
   "Connector"
  ],
- "description": "Screw/pluggable terminal block connectors (Degson DG250-3.5, WAGO 236-148) with 3.50mm or 5.00mm through-hole 45-degree footprints and pin counts up to 45 or 48.",
+ "description": "18 connector parts using TerminalBlock footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Match required pin count to an exact footprint (e.g. 44P, 45P, or 48P).",
-  "Match required pitch: 3.50mm (Degson) or 5.00mm (WAGO).",
-  "Confirm pin-to-pad mapping and footprint courtyard before board layout.",
-  "All entries are tier B, generated status — verify against source data before use."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a TerminalBlock land pattern is intended."
  ],
  "avoid_when": [
-  "An SMD or non-terminal-block land pattern is required.",
-  "A pin count or pitch other than the listed footprints is needed.",
-  "Verified electrical ratings or manufacturer datasheet data are required and not present here.",
-  "A reviewed (non-generated) part is required for production sign-off."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than TerminalBlock."
  ],
  "keywords": [
   "connector",
-  "terminal block",
   "terminalblock",
-  "degson",
-  "dg250-3.5",
-  "wago",
-  "236-148",
-  "screw terminal",
-  "pluggable terminal",
-  "45 degree",
-  "through hole",
-  "tht",
-  "3.5mm pitch",
-  "5.0mm pitch",
-  "single row",
-  "conn_01x44",
-  "conn_01x45",
-  "kicad symbol",
   "45degree",
+  "degson",
   "dg250",
   "generic",
   "44p",
   "conn",
-  "single"
+  "single",
+  "row",
+  "script",
+  "generated",
+  "tht",
+  "terminal",
+  "block",
+  "pitch"
  ],
  "facts": {
   "package_family": "TerminalBlock",
@@ -65,7 +55,7 @@
   "tier_counts": {
    "B": 18
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -129,6 +119,6 @@
   "kicad-symbols/Connector/Conn_01x43_Pin",
   "kicad-symbols/Connector/Conn_01x43_Socket"
  ],
- "embedding_text": "connector.terminalblock | Connector | Screw/pluggable terminal block connectors (Degson DG250-3.5, WAGO 236-148) with 3.50mm or 5.00mm through-hole 45-degree footprints and pin counts up to 45 or 48. | connector terminal block terminalblock degson dg250-3.5 wago 236-148 screw terminal pluggable terminal 45 degree through hole tht 3.5mm pitch 5.0mm pitch single row conn_01x44 conn_01x45 kicad symbol 45degree dg250 generic 44p conn single | TerminalBlock | ",
+ "embedding_text": "connector.terminalblock | Connector | 18 connector parts using TerminalBlock footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | connector terminalblock 45degree degson dg250 generic 44p conn single row script generated tht terminal block pitch | TerminalBlock | ",
  "class": "connector"
 }

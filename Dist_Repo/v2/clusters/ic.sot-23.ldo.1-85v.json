@@ -5,30 +5,18 @@
  "category_path": [
   "IC"
  ],
- "description": "Cluster of surface-mount 1.85V LDO voltage regulator ICs in SOT-23 packages sourced from Alternate-KiCad-Library.",
+ "description": "3 ic parts for LDO, 1.85V using SOT-23 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when requiring a 1.85V LDO regulator in a surface-mount SOT-23 package.",
-  "Choose between available part entries AP7315-185SA, AP7315-185SR, and AP7354-185SA based on specific part numbers.",
-  "Confirm suitability of Tier A entries from the Alternate-KiCad-Library source."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SOT-23 land pattern is intended."
  ],
  "avoid_when": [
-  "Avoid when the design requires an output voltage other than 1.85V.",
-  "Avoid if the board layout requires a package family or footprint other than SOT-23.",
-  "Do not use for non-SMD or through-hole mounting requirements."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SOT-23."
  ],
  "keywords": [
-  "ic",
-  "ldo",
-  "1.85v",
-  "sot-23",
-  "sot23",
-  "smd",
-  "voltage regulator",
-  "alternate-kicad-library",
-  "ap7315-185sa",
-  "ap7315-185sr",
-  "ap7354-185sa",
-  "low dropout",
   "sot",
   "voltage",
   "regulator",
@@ -36,11 +24,15 @@
   "150ma",
   "low",
   "dropout",
+  "ldo",
   "akl",
   "alternate",
   "kicad",
   "library",
-  "vreg"
+  "vreg",
+  "pmic",
+  "power",
+  "supply"
  ],
  "facts": {
   "package_family": "SOT-23",
@@ -64,7 +56,7 @@
   "tier_counts": {
    "A": 3
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -97,6 +89,6 @@
   "Alternate-KiCad-Library/Voltage_Regulator_AKL/AP7315-185SR",
   "Alternate-KiCad-Library/Voltage_Regulator_AKL/AP7354-185SA"
  ],
- "embedding_text": "ic.sot-23.ldo.1-85v | IC | Cluster of surface-mount 1.85V LDO voltage regulator ICs in SOT-23 packages sourced from Alternate-KiCad-Library. | ic ldo 1.85v sot-23 sot23 smd voltage regulator alternate-kicad-library ap7315-185sa ap7315-185sr ap7354-185sa low dropout sot voltage regulator 85v 150ma low dropout akl alternate kicad library vreg | SOT-23 | LDO 1.85V",
+ "embedding_text": "ic.sot-23.ldo.1-85v | IC | 3 ic parts for LDO, 1.85V using SOT-23 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | sot voltage regulator 85v 150ma low dropout ldo akl alternate kicad library vreg pmic power supply | SOT-23 | LDO 1.85V",
  "class": "ic"
 }

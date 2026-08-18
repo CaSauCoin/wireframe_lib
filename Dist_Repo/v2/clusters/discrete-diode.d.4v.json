@@ -6,44 +6,34 @@
   "Discrete",
   "Diode"
  ],
- "description": "Cluster of 8 tier-A discrete diodes tagged 4V in the D package family from Alternate-KiCad-Library, covering SMD footprints (SOD-323, SOD-523, SOD-23, MiniMELF) and through-hole footprints (DO-34/SOD-68, DO-35/SOD-27).",
+ "description": "8 discrete diode parts for 4V using D footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Match the exact footprint (SOD-323, SOD-523, SOD-23, MiniMELF, DO-34/SOD-68, or DO-35/SOD-27) to your board layout",
-  "Choose SMD footprints for surface-mount assembly or the DO-34/DO-35 through-hole footprints for THT assembly",
-  "All 8 parts are tier A with score 100, sourced from Alternate-KiCad-Library",
-  "Confirm the part's own datasheet for voltage and current ratings beyond the 4V facet tag"
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a D land pattern is intended."
  ],
  "avoid_when": [
-  "The needed footprint is not one of D_SOD-323, D_SOD-523, D_SOD-23, D_MiniMELF, D_DO-34_SOD68_P7.62mm_Horizontal, or D_DO-35_SOD27_P7.62mm_Horizontal",
-  "A mount type (SMD vs through-hole) other than what the chosen footprint provides is required",
-  "Electrical requirements beyond the 4V facet are not confirmed by the specific part's datasheet",
-  "A package family other than D is required"
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than D."
  ],
  "keywords": [
   "diode",
-  "discrete diode",
-  "4v",
-  "d package",
-  "sod-323",
-  "sod-523",
-  "sod-23",
-  "minimelf",
-  "do-34",
-  "sod68",
-  "do-35",
-  "sod27",
-  "smd",
-  "through hole",
-  "akl",
-  "alternate kicad library",
   "schottky",
-  "tier a",
+  "4v",
   "sod",
   "do",
+  "akl",
   "alternate",
   "kicad",
   "library",
-  "discrete"
+  "discrete",
+  "30ma",
+  "62mm",
+  "horizontal",
+  "sod68",
+  "p7",
+  "series"
  ],
  "facts": {
   "package_family": "D",
@@ -72,7 +62,7 @@
   "tier_counts": {
    "A": 8
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -126,6 +116,6 @@
   "Alternate-KiCad-Library/Diode_Schottky_AKL/BAT15-03W",
   "Alternate-KiCad-Library/Diode_Schottky_AKL/TMMBAR19"
  ],
- "embedding_text": "discrete-diode.d.4v | Discrete Diode | Cluster of 8 tier-A discrete diodes tagged 4V in the D package family from Alternate-KiCad-Library, covering SMD footprints (SOD-323, SOD-523, SOD-23, MiniMELF) and through-hole footprints (DO-34/SOD-68, DO-35/SOD-27). | diode discrete diode 4v d package sod-323 sod-523 sod-23 minimelf do-34 sod68 do-35 sod27 smd through hole akl alternate kicad library schottky tier a sod do alternate kicad library discrete | D | 4V",
+ "embedding_text": "discrete-diode.d.4v | Discrete Diode | 8 discrete diode parts for 4V using D footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | diode schottky 4v sod do akl alternate kicad library discrete 30ma 62mm horizontal sod68 p7 series | D | 4V",
  "class": "discrete.diode"
 }

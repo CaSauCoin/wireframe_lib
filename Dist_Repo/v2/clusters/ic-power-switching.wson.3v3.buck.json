@@ -7,42 +7,34 @@
   "Power",
   "Switching Regulator"
  ],
- "description": "Surface-mount 3.3V buck switching regulator ICs in WSON packages with exposed thermal pad footprints.",
+ "description": "3 ic power switching regulator parts for 3.3V, buck using WSON footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select between WSON-8-1EP and WSON-10-1EP footprints as needed by layout.",
-  "Choose matching part numbers such as TPS62162DSG, TPS62172DSG, or TPS62177DQC.",
-  "Confirm suitability for surface-mount 3.3V buck regulator applications."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a WSON land pattern is intended."
  ],
  "avoid_when": [
-  "Layout requires packages other than WSON.",
-  "Application requires output voltages other than 3.3V.",
-  "Circuit design requires a regulator topology other than buck."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than WSON."
  ],
  "keywords": [
-  "ic",
-  "power",
-  "switching regulator",
-  "buck",
-  "3.3v",
   "wson",
-  "smd",
-  "wson-8-1ep",
-  "wson-10-1ep",
-  "tps62162dsg",
-  "tps62172dsg",
-  "tps62177dqc",
   "regulator",
   "switching",
   "step",
   "down",
   "3v",
   "dc",
+  "buck",
   "1ep",
   "thermalvias",
   "voltage",
   "converter",
   "with",
-  "fixed"
+  "fixed",
+  "output",
+  "input"
  ],
  "facts": {
   "package_family": "WSON",
@@ -67,7 +59,7 @@
   "tier_counts": {
    "A": 3
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -100,6 +92,6 @@
   "kicad-symbols/Regulator_Switching/TPS62172DSG",
   "kicad-symbols/Regulator_Switching/TPS62177DQC"
  ],
- "embedding_text": "ic-power-switching.wson.3v3.buck | IC Power Switching Regulator | Surface-mount 3.3V buck switching regulator ICs in WSON packages with exposed thermal pad footprints. | ic power switching regulator buck 3.3v wson smd wson-8-1ep wson-10-1ep tps62162dsg tps62172dsg tps62177dqc regulator switching step down 3v dc 1ep thermalvias voltage converter with fixed | WSON | 3.3V buck",
+ "embedding_text": "ic-power-switching.wson.3v3.buck | IC Power Switching Regulator | 3 ic power switching regulator parts for 3.3V, buck using WSON footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | wson regulator switching step down 3v dc buck 1ep thermalvias voltage converter with fixed output input | WSON | 3.3V buck",
  "class": "ic.power.switching"
 }

@@ -6,33 +6,23 @@
   "Passive",
   "Resistor"
  ],
- "description": "SMD passive resistor cluster supporting an I2C interface in Texas R-PDSO-G6 footprint packages.",
+ "description": "2 passive resistor parts for I2C using Texas footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select between TPL0401A-10-Q1 and TPL0401B-10-Q1 based on specific part requirements.",
-  "Confirm compatibility with the Texas_R-PDSO-G6 SMD footprint.",
-  "Verify required I2C interface support for the application."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a Texas land pattern is intended."
  ],
  "avoid_when": [
-  "An interface other than I2C is required.",
-  "A footprint other than Texas_R-PDSO-G6 is needed.",
-  "Through-hole mounting is required instead of SMD."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than Texas."
  ],
  "keywords": [
-  "passive resistor",
-  "resistor",
-  "i2c",
-  "texas",
-  "texas_r-pdso-g6",
-  "r-pdso-g6",
-  "smd",
-  "tpl0401a-10-q1",
-  "tpl0401b-10-q1",
-  "tpl0401",
-  "potentiometer_digital",
-  "kicad-symbols",
   "potentiometer",
   "digital",
+  "i2c",
   "sc",
+  "texas",
   "pdso",
   "g6",
   "q1",
@@ -41,7 +31,9 @@
   "channel",
   "interface",
   "pot",
-  "passive"
+  "passive",
+  "resistor",
+  "tpl0401a"
  ],
  "facts": {
   "package_family": "Texas",
@@ -64,7 +56,7 @@
   "tier_counts": {
    "A": 2
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -88,6 +80,6 @@
   "kicad-symbols/Potentiometer_Digital/TPL0401A-10-Q1",
   "kicad-symbols/Potentiometer_Digital/TPL0401B-10-Q1"
  ],
- "embedding_text": "passive-resistor.texas.i2c | Passive Resistor | SMD passive resistor cluster supporting an I2C interface in Texas R-PDSO-G6 footprint packages. | passive resistor resistor i2c texas texas_r-pdso-g6 r-pdso-g6 smd tpl0401a-10-q1 tpl0401b-10-q1 tpl0401 potentiometer_digital kicad-symbols potentiometer digital sc pdso g6 q1 taps single channel interface pot passive | Texas | I2C",
+ "embedding_text": "passive-resistor.texas.i2c | Passive Resistor | 2 passive resistor parts for I2C using Texas footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | potentiometer digital i2c sc texas pdso g6 q1 taps single channel interface pot passive resistor tpl0401a | Texas | I2C",
  "class": "passive.resistor"
 }

@@ -7,42 +7,34 @@
   "Power",
   "Linear Regulator"
  ],
- "description": "Surface-mount 1.8V low-dropout linear regulator ICs in SOIC packaging options.",
+ "description": "4 ic power linear regulator parts for LDO, 1.8V using SOIC footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when requiring a 1.8V LDO linear regulator in an SMD SOIC package.",
-  "Choose between standard SOIC-8 footprint or exposed pad SOIC-8-1EP footprint variant.",
-  "Verify part-specific details and thermal requirements for the selected SOIC footprint."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SOIC land pattern is intended."
  ],
  "avoid_when": [
-  "An output voltage other than 1.8V is required.",
-  "The board layout requires a package family other than SOIC.",
-  "A switching regulator or non-linear power circuit is needed."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SOIC."
  ],
  "keywords": [
-  "ic",
-  "power",
-  "linear regulator",
-  "ldo",
-  "1.8v",
-  "soic",
-  "soic-8",
-  "smd",
-  "soic-8-1ep",
-  "adp7142ardz-1.8",
-  "ams1117cs-1.8",
-  "tps77718",
-  "tps77818",
   "regulator",
+  "soic",
   "linear",
   "8v",
   "fixed",
+  "ldo",
   "positive",
   "so",
   "low",
   "dropout",
   "output",
   "9x4",
-  "9mm"
+  "9mm",
+  "p1",
+  "27mm",
+  "ic"
  ],
  "facts": {
   "package_family": "SOIC",
@@ -67,7 +59,7 @@
   "tier_counts": {
    "A": 4
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -109,6 +101,6 @@
   "kicad-symbols/Regulator_Linear/TPS77718_SO8",
   "kicad-symbols/Regulator_Linear/TPS77818_SO8"
  ],
- "embedding_text": "ic-power-ldo.soic.ldo.1-8v | IC Power Linear Regulator | Surface-mount 1.8V low-dropout linear regulator ICs in SOIC packaging options. | ic power linear regulator ldo 1.8v soic soic-8 smd soic-8-1ep adp7142ardz-1.8 ams1117cs-1.8 tps77718 tps77818 regulator linear 8v fixed positive so low dropout output 9x4 9mm | SOIC | LDO 1.8V",
+ "embedding_text": "ic-power-ldo.soic.ldo.1-8v | IC Power Linear Regulator | 4 ic power linear regulator parts for LDO, 1.8V using SOIC footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | regulator soic linear 8v fixed ldo positive so low dropout output 9x4 9mm p1 27mm ic | SOIC | LDO 1.8V",
  "class": "ic.power.ldo"
 }

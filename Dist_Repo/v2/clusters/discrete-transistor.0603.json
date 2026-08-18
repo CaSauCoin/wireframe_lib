@@ -6,28 +6,21 @@
   "Discrete",
   "Transistor"
  ],
- "description": "This cluster contains discrete transistor surface-mount components utilizing 0603 package family and ELF0603 footprints from the chilaboard-altium-library.",
+ "description": "1 discrete transistor parts using 0603 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when needing surface-mount discrete transistors with an 0603 or ELF0603 footprint.",
-  "Verify part specifications and tier C quality rating from the chilaboard-altium-library.",
-  "Confirm land pattern compatibility with the ELF0603 footprint."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a 0603 land pattern is intended."
  ],
  "avoid_when": [
-  "The PCB layout requires package families other than 0603.",
-  "The design requires non-SMD or through-hole mounting.",
-  "Components verified beyond generated review status or tier C are required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than 0603."
  ],
  "keywords": [
+  "elf0603",
   "discrete",
   "transistor",
-  "0603",
-  "elf0603",
-  "smd",
-  "surface mount",
-  "chilaboard-altium-library",
-  "discrete transistor",
-  "discrete.transistor",
-  "0603 footprint",
   "surface",
   "mount",
   "pad",
@@ -54,12 +47,12 @@
   "tier_counts": {
    "C": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
   "chilaboard-altium-library/ELF0603/ELF0603"
  ],
- "embedding_text": "discrete-transistor.0603 | Discrete Transistor | This cluster contains discrete transistor surface-mount components utilizing 0603 package family and ELF0603 footprints from the chilaboard-altium-library. | discrete transistor 0603 elf0603 smd surface mount chilaboard-altium-library discrete transistor discrete.transistor 0603 footprint surface mount pad mm pitch pins | 0603 | ",
+ "embedding_text": "discrete-transistor.0603 | Discrete Transistor | 1 discrete transistor parts using 0603 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | elf0603 discrete transistor surface mount pad mm pitch pins | 0603 | ",
  "class": "discrete.transistor"
 }

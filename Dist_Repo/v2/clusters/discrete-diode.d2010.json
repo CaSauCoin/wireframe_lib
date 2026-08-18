@@ -6,28 +6,21 @@
   "Discrete",
   "Diode"
  ],
- "description": "Discrete diode cluster containing 1 SMD part using the D2010 footprint from the chilaboard-altium-library.",
+ "description": "1 discrete diode parts using D2010 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when an SMD discrete diode with a D2010 footprint is required.",
-  "Verify component details for quality tier C entries before inclusion.",
-  "Check footprint compatibility with chilaboard-altium-library definitions."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a D2010 land pattern is intended."
  ],
  "avoid_when": [
-  "The PCB design requires a package footprint other than D2010.",
-  "Through-hole or non-SMD mounting is required.",
-  "A component with a quality tier higher than tier C is required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than D2010."
  ],
  "keywords": [
   "d2010",
   "discrete",
   "diode",
-  "discrete diode",
-  "smd",
-  "surface mount",
-  "d2010 footprint",
-  "package d2010",
-  "chilaboard-altium-library",
-  "tier c",
   "surface",
   "mount",
   "pad",
@@ -54,12 +47,12 @@
   "tier_counts": {
    "C": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
   "chilaboard-altium-library/D2010/D2010"
  ],
- "embedding_text": "discrete-diode.d2010 | Discrete Diode | Discrete diode cluster containing 1 SMD part using the D2010 footprint from the chilaboard-altium-library. | d2010 discrete diode discrete diode smd surface mount d2010 footprint package d2010 chilaboard-altium-library tier c surface mount pad mm pitch pins | D2010 | ",
+ "embedding_text": "discrete-diode.d2010 | Discrete Diode | 1 discrete diode parts using D2010 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | d2010 discrete diode surface mount pad mm pitch pins | D2010 | ",
  "class": "discrete.diode"
 }

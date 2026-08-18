@@ -6,44 +6,34 @@
   "Discrete",
   "Diode"
  ],
- "description": "Cluster of 7 tier-A, 27V-facet SMD diode parts (Zener-series part numbers) in SOT footprints (SOT-363_SC-70-6, SOT-89-3, SOT-223-3_TabPin2, SOT-323_SC-70), sourced from Alternate-KiCad-Library.",
+ "description": "7 discrete diode parts for 27V using SOT footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Match the exact SOT footprint variant (SOT-363, SOT-89-3, SOT-223-3, SOT-323) to the intended PCB land pattern",
-  "All 7 parts are tier A with score 100, so differentiate by footprint rather than quality tier",
-  "Confirm the 27V facet matches the required voltage before selecting a part",
-  "All entries originate from a single source (Alternate-KiCad-Library); verify against another source if independent confirmation is needed"
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SOT land pattern is intended."
  ],
  "avoid_when": [
-  "The design requires a package other than SOT (e.g. THT or a different SMD family)",
-  "The required voltage rating is not 27V",
-  "The symbol-footprint pairing has not been independently reviewed",
-  "A part is needed from a source other than Alternate-KiCad-Library"
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SOT."
  ],
  "keywords": [
   "diode",
-  "zener",
   "sot",
-  "sot-363",
-  "sot-89-3",
-  "sot-223-3",
-  "sot-323",
-  "sc-70",
+  "zener",
   "27v",
-  "smd",
-  "discrete",
-  "akl",
-  "alternate-kicad-library",
-  "bzv49",
-  "bzv90",
-  "bzx84",
-  "tier a",
-  "tabpin2",
   "sc",
   "dual",
   "independent",
+  "akl",
   "alternate",
   "kicad",
-  "library"
+  "library",
+  "discrete",
+  "200mw",
+  "bzv49",
+  "c27",
+  "bzv90"
  ],
  "facts": {
   "package_family": "SOT",
@@ -69,7 +59,7 @@
   "tier_counts": {
    "A": 7
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -122,6 +112,6 @@
   "Alternate-KiCad-Library/Diode_Zener_AKL/MMBZ5254BS",
   "Alternate-KiCad-Library/Diode_Zener_AKL/MMBZ5254BSs"
  ],
- "embedding_text": "discrete-diode.sot.27v | Discrete Diode | Cluster of 7 tier-A, 27V-facet SMD diode parts (Zener-series part numbers) in SOT footprints (SOT-363_SC-70-6, SOT-89-3, SOT-223-3_TabPin2, SOT-323_SC-70), sourced from Alternate-KiCad-Library. | diode zener sot sot-363 sot-89-3 sot-223-3 sot-323 sc-70 27v smd discrete akl alternate-kicad-library bzv49 bzv90 bzx84 tier a tabpin2 sc dual independent alternate kicad library | SOT | 27V",
+ "embedding_text": "discrete-diode.sot.27v | Discrete Diode | 7 discrete diode parts for 27V using SOT footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | diode sot zener 27v sc dual independent akl alternate kicad library discrete 200mw bzv49 c27 bzv90 | SOT | 27V",
  "class": "discrete.diode"
 }

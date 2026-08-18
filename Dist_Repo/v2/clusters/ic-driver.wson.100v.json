@@ -6,30 +6,21 @@
   "IC",
   "Driver"
  ],
- "description": "Surface-mount 100V driver ICs in WSON packages with 8-pin and 10-pin exposed pad footprints.",
+ "description": "3 ic driver parts for 100V using WSON footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select LM5106SD for a Tier A part using the WSON-10 footprint with thermal vias.",
-  "Choose LM5109ASD or LM5109BSD for WSON-8 footprint requirements.",
-  "Filter between 8-pin and 10-pin WSON package variants based on layout needs."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a WSON land pattern is intended."
  ],
  "avoid_when": [
-  "The board layout requires packages other than the WSON family.",
-  "Through-hole mounting is required instead of SMD.",
-  "Application requirements differ from 100V IC driver specifications."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than WSON."
  ],
  "keywords": [
-  "ic",
-  "driver",
-  "ic driver",
-  "100v",
   "wson",
-  "smd",
-  "lm5106sd",
-  "lm5109asd",
-  "lm5109bsd",
-  "wson-8-1ep",
-  "wson-10-1ep",
-  "kicad-symbols",
+  "driver",
+  "100v",
   "half",
   "bridge",
   "gate",
@@ -41,7 +32,8 @@
   "p0",
   "8mm",
   "ep2",
-  "6x3mm"
+  "6x3mm",
+  "nolead"
  ],
  "facts": {
   "package_family": "WSON",
@@ -66,7 +58,7 @@
    "A": 1,
    "B": 2
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -99,6 +91,6 @@
   "kicad-symbols/Driver_FET/LM5109ASD",
   "kicad-symbols/Driver_FET/LM5109BSD"
  ],
- "embedding_text": "ic-driver.wson.100v | IC Driver | Surface-mount 100V driver ICs in WSON packages with 8-pin and 10-pin exposed pad footprints. | ic driver ic driver 100v wson smd lm5106sd lm5109asd lm5109bsd wson-8-1ep wson-10-1ep kicad-symbols half bridge gate fet output current 1ep 4x4mm p0 8mm ep2 6x3mm | WSON | 100V",
+ "embedding_text": "ic-driver.wson.100v | IC Driver | 3 ic driver parts for 100V using WSON footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | wson driver 100v half bridge gate fet output current 1ep 4x4mm p0 8mm ep2 6x3mm nolead | WSON | 100V",
  "class": "ic.driver"
 }

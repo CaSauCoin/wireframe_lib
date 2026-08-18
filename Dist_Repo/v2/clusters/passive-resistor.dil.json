@@ -6,29 +6,22 @@
   "Passive",
   "Resistor"
  ],
- "description": "Passive through-hole resistors in the DIL package family utilizing DIL_2 or DIL_2S footprints.",
+ "description": "2 passive resistor parts using DIL footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when a through-hole DIL_2 or DIL_2S footprint is required.",
-  "Verify part electrical parameters against project requirements.",
-  "Review Tier C quality status and library source details prior to design commitment."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a DIL land pattern is intended."
  ],
  "avoid_when": [
-  "Surface-mount resistor packages are required.",
-  "The board layout requires footprints other than DIL_2 or DIL_2S.",
-  "Unreviewed Tier C library components cannot be accepted."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than DIL."
  ],
  "keywords": [
+  "dil",
+  "2s",
   "passive",
   "resistor",
-  "passive resistor",
-  "dil",
-  "dil_2",
-  "dil_2s",
-  "through_hole",
-  "through hole",
-  "dil resistor",
-  "passive.resistor",
-  "2s",
   "through",
   "hole",
   "pad",
@@ -56,13 +49,13 @@
   "tier_counts": {
    "C": 2
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
   "chilaboard-altium-library/DIL_2/DIL_2",
   "chilaboard-altium-library/DIL_2S/DIL_2S"
  ],
- "embedding_text": "passive-resistor.dil | Passive Resistor | Passive through-hole resistors in the DIL package family utilizing DIL_2 or DIL_2S footprints. | passive resistor passive resistor dil dil_2 dil_2s through_hole through hole dil resistor passive.resistor 2s through hole pad mm pitch pins | DIL | ",
+ "embedding_text": "passive-resistor.dil | Passive Resistor | 2 passive resistor parts using DIL footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | dil 2s passive resistor through hole pad mm pitch pins | DIL | ",
  "class": "passive.resistor"
 }

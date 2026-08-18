@@ -6,33 +6,24 @@
   "Discrete",
   "Diode"
  ],
- "description": "Discrete SMD 6V diode cluster containing 4 Tier A parts in SOT footprints such as SOT-323_SC-70 and SOT-363_SC-70-6.",
+ "description": "4 discrete diode parts for 6V using SOT footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select for 6V surface-mount diode applications requiring SOT-323_SC-70 or SOT-363_SC-70-6 footprints.",
-  "Choose specific part types based on application needs, such as capacitance, Zener, or TVS diodes.",
-  "Verify target footprint compatibility between SOT-323_SC-70 and SOT-363_SC-70-6."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SOT land pattern is intended."
  ],
  "avoid_when": [
-  "Do not use if through-hole or non-SMD mounting is required.",
-  "Avoid when layout requires package footprints other than SOT-323_SC-70 or SOT-363_SC-70-6.",
-  "Avoid if a voltage rating other than 6V is required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SOT."
  ],
  "keywords": [
-  "discrete diode",
+  "diode",
   "sot",
   "6v",
-  "smd",
-  "sot-323_sc-70",
-  "sot-363_sc-70-6",
-  "zener",
-  "tvs",
-  "capacitance diode",
-  "bby53-05w",
-  "mmbz5233bs",
-  "sp3002-04jtg",
-  "diode",
   "sc",
   "dual",
+  "zener",
   "akl",
   "alternate",
   "kicad",
@@ -40,6 +31,7 @@
   "discrete",
   "independent",
   "capacitance",
+  "tvs",
   "bby53",
   "05w"
  ],
@@ -65,7 +57,7 @@
   "tier_counts": {
    "A": 4
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -107,6 +99,6 @@
   "Alternate-KiCad-Library/Diode_Zener_AKL/MMBZ5233BSs",
   "Alternate-KiCad-Library/Diode_TVS_AKL/SP3002-04JTG"
  ],
- "embedding_text": "discrete-diode.sot.6v | Discrete Diode | Discrete SMD 6V diode cluster containing 4 Tier A parts in SOT footprints such as SOT-323_SC-70 and SOT-363_SC-70-6. | discrete diode sot 6v smd sot-323_sc-70 sot-363_sc-70-6 zener tvs capacitance diode bby53-05w mmbz5233bs sp3002-04jtg diode sc dual akl alternate kicad library discrete independent capacitance bby53 05w | SOT | 6V",
+ "embedding_text": "discrete-diode.sot.6v | Discrete Diode | 4 discrete diode parts for 6V using SOT footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | diode sot 6v sc dual zener akl alternate kicad library discrete independent capacitance tvs bby53 05w | SOT | 6V",
  "class": "discrete.diode"
 }

@@ -6,31 +6,25 @@
   "Discrete",
   "Transistor"
  ],
- "description": "Discrete transistor cluster with 2 tier C parts in the BNC package family featuring BNC_Conector and BNC_Win_364A2x95_Horizontal footprints.",
+ "description": "2 discrete transistor parts using BNC footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when requiring BNC package family footprints such as BNC_Conector or BNC_Win_364A2x95_Horizontal.",
-  "Verify part specifications for through-hole or unknown mounting.",
-  "Evaluate part suitability considering all parts belong to quality tier C."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a BNC land pattern is intended."
  ],
  "avoid_when": [
-  "The PCB layout requires packages other than the BNC family.",
-  "Higher quality tier components or planner-visible parts are required.",
-  "Through-hole mounting is incompatible with assembly requirements."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than BNC."
  ],
  "keywords": [
-  "discrete",
-  "transistor",
   "bnc",
-  "bnc_conector",
-  "bnc_win_364a2x95_horizontal",
-  "through_hole",
-  "discrete transistor",
-  "package family bnc",
   "horizontal",
   "conector",
-  "364a2x95",
-  "dist-legacy",
   "win",
+  "364a2x95",
+  "discrete",
+  "transistor",
   "pad",
   "mm",
   "pitch",
@@ -62,13 +56,13 @@
   "tier_counts": {
    "C": 2
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
   "dist-legacy/BNC_Conector",
   "dist-legacy/BNC_Win_364A2x95_Horizontal"
  ],
- "embedding_text": "discrete-transistor.bnc | Discrete Transistor | Discrete transistor cluster with 2 tier C parts in the BNC package family featuring BNC_Conector and BNC_Win_364A2x95_Horizontal footprints. | discrete transistor bnc bnc_conector bnc_win_364a2x95_horizontal through_hole discrete transistor package family bnc horizontal conector 364a2x95 dist-legacy win pad mm pitch pins dual isolated through hole package | BNC | ",
+ "embedding_text": "discrete-transistor.bnc | Discrete Transistor | 2 discrete transistor parts using BNC footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | bnc horizontal conector win 364a2x95 discrete transistor pad mm pitch pins dual isolated through hole package | BNC | ",
  "class": "discrete.transistor"
 }

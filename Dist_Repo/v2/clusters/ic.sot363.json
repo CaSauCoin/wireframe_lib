@@ -5,29 +5,20 @@
  "category_path": [
   "IC"
  ],
- "description": "Surface-mount IC components in the SOT363 package family using the SOT363_6 footprint.",
+ "description": "14 ic parts using SOT363 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select for surface-mount IC designs requiring a SOT363 package family part.",
-  "Verify land pattern compatibility with the SOT363_6 footprint.",
-  "Select when sourcing from chilaboard-altium-library at quality Tier-B."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SOT363 land pattern is intended."
  ],
  "avoid_when": [
-  "Do not use if surface-mount (SMD) mounting is not supported.",
-  "Avoid when the PCB layout requires a package footprint other than SOT363_6.",
-  "Avoid if non-IC component classes are required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SOT363."
  ],
  "keywords": [
   "sot363",
-  "sot363_6",
   "ic",
-  "smd",
-  "chilaboard-altium-library",
-  "surface mount",
-  "and_nc7sz11_sot363",
-  "and_sn74lvc1g11_sot363",
-  "mosn_dual_2n7002_sot363",
-  "mosn_dual_bss138dw_sc70",
-  "ina199a1_sc70",
   "sc70",
   "and",
   "in",
@@ -40,7 +31,8 @@
   "analog",
   "gate",
   "mosfet",
-  "current"
+  "current",
+  "amplifier"
  ],
  "facts": {
   "package_family": "SOT363",
@@ -61,7 +53,7 @@
   "tier_counts": {
    "B": 14
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -121,6 +113,6 @@
   "chilaboard-altium-library/TS5A3160_SC70/TS5A3160_SC70",
   "chilaboard-altium-library/TS5A4624_SC70/TS5A4624_SC70"
  ],
- "embedding_text": "ic.sot363 | IC | Surface-mount IC components in the SOT363 package family using the SOT363_6 footprint. | sot363 sot363_6 ic smd chilaboard-altium-library surface mount and_nc7sz11_sot363 and_sn74lvc1g11_sot363 mosn_dual_2n7002_sot363 mosn_dual_bss138dw_sc70 ina199a1_sc70 sc70 and in package pin sot dual switch sc analog gate mosfet current | SOT363 | ",
+ "embedding_text": "ic.sot363 | IC | 14 ic parts using SOT363 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | sot363 ic sc70 and in package pin sot dual switch sc analog gate mosfet current amplifier | SOT363 | ",
  "class": "ic"
 }

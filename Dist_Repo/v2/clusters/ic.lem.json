@@ -5,34 +5,21 @@
  "category_path": [
   "IC"
  ],
- "description": "Through-hole IC components in the LEM package family featuring footprints such as LV25-P, LA25-NP, HTFS, and HX series variants.",
+ "description": "16 ic parts using LEM footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "A through-hole IC in the LEM package family is required.",
-  "Selecting based on specific LEM footprint variants such as LV25-P, LA25-NP, HTFS, or HX series.",
-  "Matching PCB land patterns to supported LEM footprints."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a LEM land pattern is intended."
  ],
  "avoid_when": [
-  "Surface-mount packaging is required instead of through-hole.",
-  "The component package family needed is not LEM.",
-  "The required PCB footprint is not among the supported LEM land patterns."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than LEM."
  ],
  "keywords": [
-  "ic",
   "lem",
-  "through hole",
-  "lem_lv25-p",
-  "lem_la25-np",
-  "lem_htfs",
-  "lem_hx03-p-sp2",
-  "lem_hx05-p-sp2",
-  "lem_hx10-p-sp2",
-  "lem_hx15-p-sp2",
-  "lem_hx20-p-sp2",
-  "lem_hx25-p-sp2",
-  "lem_hx50-p-sp2",
-  "lem_hx05-np",
-  "lem_hx10-np",
   "sp2",
+  "ic",
   "current",
   "np",
   "hall",
@@ -40,7 +27,12 @@
   "through",
   "hole",
   "pad",
-  "mm"
+  "mm",
+  "pitch",
+  "pins",
+  "package",
+  "https",
+  "www"
  ],
  "facts": {
   "package_family": "LEM",
@@ -72,7 +64,7 @@
   "tier_counts": {
    "C": 16
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
@@ -93,6 +85,6 @@
   "dist-legacy/LEM_HX04-P",
   "dist-legacy/LEM_HX06-P"
  ],
- "embedding_text": "ic.lem | IC | Through-hole IC components in the LEM package family featuring footprints such as LV25-P, LA25-NP, HTFS, and HX series variants. | ic lem through hole lem_lv25-p lem_la25-np lem_htfs lem_hx03-p-sp2 lem_hx05-p-sp2 lem_hx10-p-sp2 lem_hx15-p-sp2 lem_hx20-p-sp2 lem_hx25-p-sp2 lem_hx50-p-sp2 lem_hx05-np lem_hx10-np sp2 current np hall transducer through hole pad mm | LEM | ",
+ "embedding_text": "ic.lem | IC | 16 ic parts using LEM footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | lem sp2 ic current np hall transducer through hole pad mm pitch pins package https www | LEM | ",
  "class": "ic"
 }

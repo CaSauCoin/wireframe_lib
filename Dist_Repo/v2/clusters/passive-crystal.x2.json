@@ -6,41 +6,34 @@
   "Passive",
   "Crystal / Resonator"
  ],
- "description": "A cluster of SMD passive crystal and resonator components in the X2 package family from the Seeed OPL KiCad library.",
+ "description": "4 passive crystal / resonator parts using X2 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Match the target frequency, load capacitance, and tolerance from available parts.",
-  "Select the specific X2 SMD footprint dimension required for the board layout.",
-  "Verify footprint pad dimensions and pinout prior to PCB design."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a X2 land pattern is intended."
  ],
  "avoid_when": [
-  "A through-hole or active oscillator package is required.",
-  "The layout requires a package footprint other than X2 SMD.",
-  "Only Tier A verified library components are permitted."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than X2."
  ],
  "keywords": [
-  "passive crystal",
-  "resonator",
-  "x2",
-  "smd",
   "crystal",
-  "quartz",
-  "seeed opl",
-  "32.768khz",
-  "12mhz",
-  "16mhz",
-  "passive",
-  "oscillator",
-  "surface mount",
+  "smd",
   "0x3",
   "2mm",
+  "x2",
+  "oscillator",
   "2x1",
+  "passive",
   "20ppm",
   "2p",
   "opl",
   "pf",
   "ppm",
   "surface",
-  "mount"
+  "mount",
+  "quartz"
  ],
  "facts": {
   "package_family": "X2",
@@ -63,7 +56,7 @@
   "tier_counts": {
    "B": 4
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -105,6 +98,6 @@
   "Seeed-OPL-Kicad-Library/OPL_Crystal_Oscillator/SMD-CRYSTAL-32.768KHZ-12.5PF-20PPM-90K_2P-L2.0X1.2MM_",
   "Seeed-OPL-Kicad-Library/OPL_Crystal_Oscillator/SMD-CRYSTAL-ABS07-32.768KHZ-7PF-20PPM-70K_2P-3.2X1.5MM_"
  ],
- "embedding_text": "passive-crystal.x2 | Passive Crystal / Resonator | A cluster of SMD passive crystal and resonator components in the X2 package family from the Seeed OPL KiCad library. | passive crystal resonator x2 smd crystal quartz seeed opl 32.768khz 12mhz 16mhz passive oscillator surface mount 0x3 2mm 2x1 20ppm 2p opl pf ppm surface mount | X2 | ",
+ "embedding_text": "passive-crystal.x2 | Passive Crystal / Resonator | 4 passive crystal / resonator parts using X2 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | crystal smd 0x3 2mm x2 oscillator 2x1 passive 20ppm 2p opl pf ppm surface mount quartz | X2 | ",
  "class": "passive.crystal"
 }

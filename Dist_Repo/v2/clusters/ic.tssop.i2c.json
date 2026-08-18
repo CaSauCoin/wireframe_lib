@@ -5,32 +5,22 @@
  "category_path": [
   "IC"
  ],
- "description": "Surface-mount I2C integrated circuits available in TSSOP package options including TSSOP-8, TSSOP-10, and TSSOP-16 footprints from SparkFun and JLCPCB libraries.",
+ "description": "6 ic parts for I2C using TSSOP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Choose based on required footprint: TSSOP-8, TSSOP-10, or TSSOP-16.",
-  "Select the specific IC function such as ADS1115 ADC or PCA-series devices.",
-  "Verify part selection against SparkFun or JLCPCB library source requirements."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a TSSOP land pattern is intended."
  ],
  "avoid_when": [
-  "Through-hole (THT) mounting is required instead of SMD.",
-  "The PCB layout requires package families other than TSSOP.",
-  "An interface protocol other than I2C is required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than TSSOP."
  ],
  "keywords": [
-  "ic",
   "tssop",
   "i2c",
-  "smd",
-  "tssop-8",
-  "tssop-10",
-  "tssop-16",
-  "ads1115",
-  "pca9534",
-  "pca9536",
-  "pca9554",
-  "pca9557",
   "sparkfun",
-  "jlcpcb",
+  "ic",
   "p0",
   "with",
   "smbus",
@@ -40,7 +30,9 @@
   "special",
   "function",
   "bus",
-  "port"
+  "port",
+  "65mm",
+  "expander"
  ],
  "facts": {
   "package_family": "TSSOP",
@@ -66,7 +58,7 @@
   "tier_counts": {
    "A": 6
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -118,6 +110,6 @@
   "SparkFun-KiCad-Libraries/SparkFun-IC-Special-Function/PCA9557PW",
   "SparkFun-KiCad-Libraries/SparkFun-IC-Special-Function/PCA9846"
  ],
- "embedding_text": "ic.tssop.i2c | IC | Surface-mount I2C integrated circuits available in TSSOP package options including TSSOP-8, TSSOP-10, and TSSOP-16 footprints from SparkFun and JLCPCB libraries. | ic tssop i2c smd tssop-8 tssop-10 tssop-16 ads1115 pca9534 pca9536 pca9554 pca9557 sparkfun jlcpcb p0 with smbus bit and so special function bus port | TSSOP | I2C",
+ "embedding_text": "ic.tssop.i2c | IC | 6 ic parts for I2C using TSSOP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | tssop i2c sparkfun ic p0 with smbus bit and so special function bus port 65mm expander | TSSOP | I2C",
  "class": "ic"
 }

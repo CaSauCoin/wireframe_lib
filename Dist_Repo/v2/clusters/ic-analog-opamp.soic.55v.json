@@ -7,42 +7,34 @@
   "Analog",
   "Op-Amp"
  ],
- "description": "Cluster of 55V analog operational amplifier ICs in surface-mount SOIC packages, featuring SOIC-8 and SOIC-14 footprints.",
+ "description": "4 ic analog op-amp parts for 55V using SOIC footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select SOIC-8 (3.9x4.9mm) or SOIC-14 (3.9x8.7mm) footprints depending on application layout.",
-  "Choose between ADA4522 series variants (ADA4522-1, ADA4522-2, ADA4522-4, ADA4522-4ARZ) based on package footprint.",
-  "Verify source library selection between KiCad Symbols and Alternate KiCad Library."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SOIC land pattern is intended."
  ],
  "avoid_when": [
-  "The layout requires package families other than surface-mount SOIC.",
-  "The application requires an operating voltage rating other than 55V.",
-  "Footprint pitch or dimensions differ from SOIC-8 (3.9x4.9mm) or SOIC-14 (3.9x8.7mm) at 1.27mm pitch."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SOIC."
  ],
  "keywords": [
-  "ic",
-  "analog",
-  "opamp",
-  "op-amp",
-  "operational amplifier",
-  "55v",
   "soic",
-  "smd",
-  "soic-8",
-  "soic-14",
-  "ada4522",
-  "ada4522-1",
-  "ada4522-2",
-  "ada4522-4",
-  "1.27mm",
   "operational",
   "amplifier",
+  "analog",
+  "ada4522",
   "zero",
   "so",
+  "55v",
   "gbw",
   "drift",
   "p1",
   "27mm",
-  "chopper"
+  "opamp",
+  "chopper",
+  "ic",
+  "op"
  ],
  "facts": {
   "package_family": "SOIC",
@@ -67,7 +59,7 @@
   "tier_counts": {
    "A": 4
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -109,6 +101,6 @@
   "kicad-symbols/Amplifier_Operational/ADA4522-4",
   "Alternate-KiCad-Library/Amplifier_Operational_AKL/ADA4522-4ARZ"
  ],
- "embedding_text": "ic-analog-opamp.soic.55v | IC Analog Op-Amp | Cluster of 55V analog operational amplifier ICs in surface-mount SOIC packages, featuring SOIC-8 and SOIC-14 footprints. | ic analog opamp op-amp operational amplifier 55v soic smd soic-8 soic-14 ada4522 ada4522-1 ada4522-2 ada4522-4 1.27mm operational amplifier zero so gbw drift p1 27mm chopper | SOIC | 55V",
+ "embedding_text": "ic-analog-opamp.soic.55v | IC Analog Op-Amp | 4 ic analog op-amp parts for 55V using SOIC footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | soic operational amplifier analog ada4522 zero so 55v gbw drift p1 27mm opamp chopper ic op | SOIC | 55V",
  "class": "ic.analog.opamp"
 }

@@ -7,42 +7,34 @@
   "Power",
   "Switching Regulator"
  ],
- "description": "3.3V buck switching power regulator IC cluster in TO package family with SMD and through-hole mounting options across 14 Tier-A KiCad symbol parts.",
+ "description": "14 ic power switching regulator parts for 3.3V, buck using TO footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when a 3.3V buck switching regulator in a TO package family is required.",
-  "Choose between surface-mount (TO-252-5, TO-263-5) and through-hole (TO-220-5) footprint options.",
-  "Verify specific footprint assignment for the target PCB design."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a TO land pattern is intended."
  ],
  "avoid_when": [
-  "The design requires a voltage other than 3.3V or a topology other than buck.",
-  "Packages outside the TO package family are needed.",
-  "Mounting requirements cannot be met by the available SMD or through-hole TO footprints."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than TO."
  ],
  "keywords": [
-  "ic",
-  "power",
-  "switching regulator",
-  "3.3v",
-  "buck",
   "to",
-  "smd",
-  "through hole",
-  "to-220-5",
-  "to-252-5",
-  "to-263-5",
-  "kicad-symbols",
-  "lm2575",
-  "gl2576",
-  "ape1707",
   "regulator",
   "3v",
   "switching",
+  "buck",
   "voltage",
   "step",
   "down",
   "3a",
+  "ic",
+  "power",
   "d2pak",
-  "dc"
+  "dc",
+  "vertical",
+  "tabpin3",
+  "7mm"
  ],
  "facts": {
   "package_family": "TO",
@@ -70,7 +62,7 @@
   "tier_counts": {
    "A": 14
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -130,6 +122,6 @@
   "kicad-symbols/Regulator_Switching/LM2596S-3.3",
   "kicad-symbols/Regulator_Switching/LM2596T-3.3"
  ],
- "embedding_text": "ic-power-switching.to.3v3.buck | IC Power Switching Regulator | 3.3V buck switching power regulator IC cluster in TO package family with SMD and through-hole mounting options across 14 Tier-A KiCad symbol parts. | ic power switching regulator 3.3v buck to smd through hole to-220-5 to-252-5 to-263-5 kicad-symbols lm2575 gl2576 ape1707 regulator 3v switching voltage step down 3a d2pak dc | TO | 3.3V buck",
+ "embedding_text": "ic-power-switching.to.3v3.buck | IC Power Switching Regulator | 14 ic power switching regulator parts for 3.3V, buck using TO footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | to regulator 3v switching buck voltage step down 3a ic power d2pak dc vertical tabpin3 7mm | TO | 3.3V buck",
  "class": "ic.power.switching"
 }

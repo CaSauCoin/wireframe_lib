@@ -6,30 +6,24 @@
   "Passive",
   "Resistor"
  ],
- "description": "Passive surface-mount resistor cluster containing three tier C parts with NDK NX3225GD, NX5032GA, and NX8045GB footprints from celestial-altium-library.",
+ "description": "3 passive resistor parts using NDK footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select based on exact NDK footprint compatibility: NX3225GD, NX5032GA, or NX8045GB.",
-  "Verify SMD land patterns and library specifications before PCB layout.",
-  "Assess suitability of tier C parts sourced from celestial-altium-library."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a NDK land pattern is intended."
  ],
  "avoid_when": [
-  "The design requires through-hole mounting or package families other than NDK.",
-  "The required footprint is not NX3225GD, NX5032GA, or NX8045GB.",
-  "Designs require planner-visible entries or tiers higher than tier C."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than NDK."
  ],
  "keywords": [
+  "ndk",
   "passive",
   "resistor",
-  "ndk",
-  "smd",
-  "surface mount",
   "nx3225gd",
   "nx5032ga",
   "nx8045gb",
-  "ndk nx3225gd",
-  "ndk nx5032ga",
-  "ndk nx8045gb",
-  "celestial-altium-library",
   "surface",
   "mount",
   "pad",
@@ -58,7 +52,7 @@
   "tier_counts": {
    "C": 3
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
@@ -66,6 +60,6 @@
   "celestial-altium-library/NDK NX5032GA/NDK_NX5032GA",
   "celestial-altium-library/NDK NX8045GB/NDK_NX8045GB"
  ],
- "embedding_text": "passive-resistor.ndk | Passive Resistor | Passive surface-mount resistor cluster containing three tier C parts with NDK NX3225GD, NX5032GA, and NX8045GB footprints from celestial-altium-library. | passive resistor ndk smd surface mount nx3225gd nx5032ga nx8045gb ndk nx3225gd ndk nx5032ga ndk nx8045gb celestial-altium-library surface mount pad mm pitch pins | NDK | ",
+ "embedding_text": "passive-resistor.ndk | Passive Resistor | 3 passive resistor parts using NDK footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | ndk passive resistor nx3225gd nx5032ga nx8045gb surface mount pad mm pitch pins | NDK | ",
  "class": "passive.resistor"
 }

@@ -7,33 +7,24 @@
   "Driver",
   "Display"
  ],
- "description": "Display IC driver cluster featuring 3 surface-mount boost parts in SOT-23-6 and TSOT-23-6 footprints.",
+ "description": "3 ic driver display parts for boost using SOT-23 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when needing an SMD display driver IC with boost topology in SOT-23 packaging.",
-  "Choose between SOT-23-6 and TSOT-23-6 footprint options based on board design requirements.",
-  "Verify part details across the tier A KiCad symbol entries."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SOT-23 land pattern is intended."
  ],
  "avoid_when": [
-  "The PCB design requires packages other than SOT-23-6 or TSOT-23-6.",
-  "The application requires topologies other than boost or non-display driver functionality."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SOT-23."
  ],
  "keywords": [
-  "ic driver display",
-  "display driver",
-  "boost driver",
-  "sot-23",
-  "sot-23-6",
-  "tsot-23-6",
-  "smd",
-  "ap3019aktr",
-  "ap3019akttr",
-  "zxsc400",
-  "kicad-symbols",
-  "boost",
   "sot",
   "driver",
   "led",
+  "boost",
   "to",
+  "smd",
   "ic",
   "display",
   "2mhz",
@@ -41,7 +32,9 @@
   "drivers",
   "with",
   "built",
-  "in"
+  "in",
+  "schottky",
+  "16vin"
  ],
  "facts": {
   "package_family": "SOT-23",
@@ -65,7 +58,7 @@
   "tier_counts": {
    "A": 3
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -98,6 +91,6 @@
   "kicad-symbols/Driver_LED/AP3019AKTTR",
   "kicad-symbols/Driver_LED/ZXSC400"
  ],
- "embedding_text": "ic-driver-display.sot-23.boost | IC Driver Display | Display IC driver cluster featuring 3 surface-mount boost parts in SOT-23-6 and TSOT-23-6 footprints. | ic driver display display driver boost driver sot-23 sot-23-6 tsot-23-6 smd ap3019aktr ap3019akttr zxsc400 kicad-symbols boost sot driver led to ic display 2mhz white drivers with built in | SOT-23 | boost",
+ "embedding_text": "ic-driver-display.sot-23.boost | IC Driver Display | 3 ic driver display parts for boost using SOT-23 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | sot driver led boost to smd ic display 2mhz white drivers with built in schottky 16vin | SOT-23 | boost",
  "class": "ic.driver.display"
 }

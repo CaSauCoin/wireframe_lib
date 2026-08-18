@@ -6,30 +6,21 @@
   "Discrete",
   "Transistor"
  ],
- "description": "Discrete transistor cluster containing 7 parts in the KNOWLES package family supporting SMD, through-hole, and unknown mount types.",
+ "description": "7 discrete transistor parts using KNOWLES footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Choose when requiring discrete transistors in the KNOWLES package family.",
-  "Select based on footprint variants such as SPU0410HR5H-PB, SPU0410LR5H-QB, SPV0842LR5H-1, or SPW2430HR5H-B.",
-  "Verify mounting type requirements, supporting SMD and through-hole configurations."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a KNOWLES land pattern is intended."
  ],
  "avoid_when": [
-  "Do not use if board layout requires package families other than KNOWLES.",
-  "Avoid if Tier A quality classification is strictly required.",
-  "Do not use if specific electrical ratings or datasheet parameters are needed but unstated."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than KNOWLES."
  ],
  "keywords": [
   "knowles",
-  "discrete transistor",
-  "discrete",
   "transistor",
-  "spu0410hr5h-pb",
-  "spu0410lr5h-qb",
-  "spv0842lr5h-1",
-  "spw2430hr5h-b",
-  "smd",
-  "through hole",
-  "knowles package",
-  "discrete.transistor",
+  "discrete",
   "spu0410hr5h",
   "pb",
   "spu0410lr5h",
@@ -41,7 +32,8 @@
   "pitch",
   "pins",
   "pin",
-  "bipolar"
+  "bipolar",
+  "junction"
  ],
  "facts": {
   "package_family": "KNOWLES",
@@ -70,7 +62,7 @@
    "B": 3,
    "C": 4
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -107,6 +99,6 @@
   "celestial-altium-library/KNOWLES SPV0842LR5H-1/KNOWLES_SPV0842LR5H-1",
   "celestial-altium-library/KNOWLES SPW2430HR5H-B/KNOWLES_SPW2430HR5H-B"
  ],
- "embedding_text": "discrete-transistor.knowles | Discrete Transistor | Discrete transistor cluster containing 7 parts in the KNOWLES package family supporting SMD, through-hole, and unknown mount types. | knowles discrete transistor discrete transistor spu0410hr5h-pb spu0410lr5h-qb spv0842lr5h-1 spw2430hr5h-b smd through hole knowles package discrete.transistor spu0410hr5h pb spu0410lr5h qb spv0842lr5h spw2430hr5h pad mm pitch pins pin bipolar | KNOWLES | ",
+ "embedding_text": "discrete-transistor.knowles | Discrete Transistor | 7 discrete transistor parts using KNOWLES footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | knowles transistor discrete spu0410hr5h pb spu0410lr5h qb spv0842lr5h spw2430hr5h pad mm pitch pins pin bipolar junction | KNOWLES | ",
  "class": "discrete.transistor"
 }

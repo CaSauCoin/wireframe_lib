@@ -6,31 +6,21 @@
   "IC",
   "Sensor"
  ],
- "description": "IC sensor cluster containing through-hole components using Siemens package family footprints, such as Siemens_SFH900.",
+ "description": "1 ic sensor parts using Siemens footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select for through-hole IC sensor designs requiring Siemens package family footprints.",
-  "Verify compatibility with the Siemens_SFH900 footprint pattern and pin configuration.",
-  "Prefer tier A entries with verified symbol-to-footprint pairings from KiCad symbol libraries."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a Siemens land pattern is intended."
  ],
  "avoid_when": [
-  "The PCB layout requires surface-mount components rather than through-hole mounting.",
-  "The design requires footprint packages other than Siemens or Siemens_SFH900.",
-  "The application requires electrical specifications or tolerances not documented by the selected part."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than Siemens."
  ],
  "keywords": [
-  "ic sensor",
-  "siemens",
   "sfh900",
-  "siemens_sfh900",
-  "through_hole",
-  "proximity sensor",
-  "optical sensor",
-  "photo interrupter",
-  "reflective sensor",
-  "object detector",
-  "reflex sensor",
-  "light sensor",
   "sensor",
+  "siemens",
   "proximity",
   "miniature",
   "light",
@@ -41,7 +31,9 @@
   "interrupter",
   "coupler",
   "object",
-  "detector"
+  "detector",
+  "reflective",
+  "optical"
  ],
  "facts": {
   "package_family": "Siemens",
@@ -62,7 +54,7 @@
   "tier_counts": {
    "A": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -77,6 +69,6 @@
  "part_ids": [
   "kicad-symbols/Sensor_Proximity/SFH900"
  ],
- "embedding_text": "ic-sensor.siemens | IC Sensor | IC sensor cluster containing through-hole components using Siemens package family footprints, such as Siemens_SFH900. | ic sensor siemens sfh900 siemens_sfh900 through_hole proximity sensor optical sensor photo interrupter reflective sensor object detector reflex sensor light sensor sensor proximity miniature light reflection switches reflex photo interrupter coupler object detector | Siemens | ",
+ "embedding_text": "ic-sensor.siemens | IC Sensor | 1 ic sensor parts using Siemens footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | sfh900 sensor siemens proximity miniature light reflection switches reflex photo interrupter coupler object detector reflective optical | Siemens | ",
  "class": "ic.sensor"
 }

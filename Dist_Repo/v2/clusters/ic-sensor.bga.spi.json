@@ -6,31 +6,24 @@
   "IC",
   "Sensor"
  ],
- "description": "IC sensor cluster containing surface-mount SPI devices in BGA packaging, such as DSBGA-5 footprint components like LM74CITP.",
+ "description": "1 ic sensor parts for SPI using BGA footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when needing surface-mount IC sensors with an SPI interface.",
-  "Use when targeting BGA package footprints, such as DSBGA-5.",
-  "Check part specifications against KiCad symbol entries and Tier B quality rating."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a BGA land pattern is intended."
  ],
  "avoid_when": [
-  "Do not use if an interface other than SPI is required.",
-  "Avoid if non-BGA or through-hole mounting is needed.",
-  "Avoid when strictly requiring Tier A certified library parts."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than BGA."
  ],
  "keywords": [
-  "ic",
   "sensor",
-  "spi",
-  "bga",
-  "dsbga",
-  "dsbga-5",
-  "smd",
-  "lm74citp",
-  "ic sensor",
-  "spi sensor",
-  "bga sensor",
-  "kicad",
   "temperature",
+  "spi",
+  "dsbga",
+  "bga",
+  "lm74citp",
   "bit",
   "plus",
   "sign",
@@ -63,7 +56,7 @@
   "tier_counts": {
    "B": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -78,6 +71,6 @@
  "part_ids": [
   "kicad-symbols/Sensor_Temperature/LM74CITP"
  ],
- "embedding_text": "ic-sensor.bga.spi | IC Sensor | IC sensor cluster containing surface-mount SPI devices in BGA packaging, such as DSBGA-5 footprint components like LM74CITP. | ic sensor spi bga dsbga dsbga-5 smd lm74citp ic sensor spi sensor bga sensor kicad temperature bit plus sign digital with microwire texas 5855x1 6365mm layout3x2 | BGA | SPI",
+ "embedding_text": "ic-sensor.bga.spi | IC Sensor | 1 ic sensor parts for SPI using BGA footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | sensor temperature spi dsbga bga lm74citp bit plus sign digital with microwire texas 5855x1 6365mm layout3x2 | BGA | SPI",
  "class": "ic.sensor"
 }

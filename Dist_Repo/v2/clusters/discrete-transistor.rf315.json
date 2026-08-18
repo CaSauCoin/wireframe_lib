@@ -6,30 +6,23 @@
   "Discrete",
   "Transistor"
  ],
- "description": "Discrete transistor cluster containing 1 part in quality tier C with RF315 package family and RF315-SEND-NOIC footprint.",
+ "description": "1 discrete transistor parts using RF315 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when requiring a discrete transistor with an RF315 package family or RF315-SEND-NOIC footprint.",
-  "Review the single tier C part from dist-legacy source data prior to selection.",
-  "Confirm pin mapping and mounting requirements independently as mount type is listed as unknown."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a RF315 land pattern is intended."
  ],
  "avoid_when": [
-  "Do not use if the board design requires a package footprint other than RF315-SEND-NOIC.",
-  "Avoid when parts verified above quality tier C or with planner visibility are required.",
-  "Avoid if specific electrical ratings, pinouts, or package dimensions are needed but unspecified."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than RF315."
  ],
  "keywords": [
   "rf315",
-  "rf315-send-noic",
-  "discrete",
-  "transistor",
-  "discrete transistor",
-  "discrete.transistor",
-  "package rf315",
-  "tier c",
-  "dist-legacy",
-  "send-noic",
   "send",
   "noic",
+  "discrete",
+  "transistor",
   "pad",
   "mm",
   "pitch",
@@ -54,12 +47,12 @@
   "tier_counts": {
    "C": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
   "dist-legacy/RF315-SEND-NOIC"
  ],
- "embedding_text": "discrete-transistor.rf315 | Discrete Transistor | Discrete transistor cluster containing 1 part in quality tier C with RF315 package family and RF315-SEND-NOIC footprint. | rf315 rf315-send-noic discrete transistor discrete transistor discrete.transistor package rf315 tier c dist-legacy send-noic send noic pad mm pitch pins | RF315 | ",
+ "embedding_text": "discrete-transistor.rf315 | Discrete Transistor | 1 discrete transistor parts using RF315 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | rf315 send noic discrete transistor pad mm pitch pins | RF315 | ",
  "class": "discrete.transistor"
 }

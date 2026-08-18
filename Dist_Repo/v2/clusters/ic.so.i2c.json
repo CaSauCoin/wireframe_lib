@@ -5,32 +5,22 @@
  "category_path": [
   "IC"
  ],
- "description": "Surface-mount I2C integrated circuits in the SO package family, featuring footprints such as SO-8, SO-14, SO-16_W, and SO-20_W across 35 catalog parts.",
+ "description": "35 ic parts for I2C using SO footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Targeting surface-mount ICs with an I2C communication interface.",
-  "Selecting parts in the SO package family with footprints like SO-8, SO-14, SO_16_W, or SO_20_W.",
-  "Choosing components categorized under Tier A or Tier B quality levels from Altium or KiCad libraries."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SO land pattern is intended."
  ],
  "avoid_when": [
-  "Through-hole mounting is required instead of surface-mount (SMD).",
-  "The design requires package families other than SO or non-I2C interfaces.",
-  "Required footprints fall outside the cluster's supported SO footprints."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SO."
  ],
  "keywords": [
-  "ic",
   "i2c",
   "so",
-  "smd",
-  "so-8",
-  "so_8",
-  "so_14",
-  "so_16_w",
-  "so_20_w",
-  "so_14_w5",
+  "ic",
   "sop8",
-  "sop20",
-  "surface mount",
-  "so package",
   "clock",
   "rtc",
   "real",
@@ -40,7 +30,9 @@
   "in",
   "package",
   "soic",
-  "and"
+  "and",
+  "interface",
+  "with"
  ],
  "facts": {
   "package_family": "SO",
@@ -70,7 +62,7 @@
    "A": 2,
    "B": 33
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -151,6 +143,6 @@
   "chilaboard-altium-library/PCA9534A_SOP16W/PCA9534A_SOP16W",
   "chilaboard-altium-library/RX-8581_SOP14/RX-8581_SOP14"
  ],
- "embedding_text": "ic.so.i2c | IC | Surface-mount I2C integrated circuits in the SO package family, featuring footprints such as SO-8, SO-14, SO-16_W, and SO-20_W across 35 catalog parts. | ic i2c so smd so-8 so_8 so_14 so_16_w so_20_w so_14_w5 sop8 sop20 surface mount so package clock rtc real time an pin in package soic and | SO | I2C",
+ "embedding_text": "ic.so.i2c | IC | 35 ic parts for I2C using SO footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | i2c so ic sop8 clock rtc real time an pin in package soic and interface with | SO | I2C",
  "class": "ic"
 }

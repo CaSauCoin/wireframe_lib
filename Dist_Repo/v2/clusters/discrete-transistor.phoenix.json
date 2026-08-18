@@ -6,28 +6,21 @@
   "Discrete",
   "Transistor"
  ],
- "description": "Cluster of 2 discrete transistor parts in quality tier C featuring Phoenix package footprints and through-hole or unknown mounting options.",
+ "description": "2 discrete transistor parts using Phoenix footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Require a discrete transistor utilizing Phoenix or Phoenix 1727023 footprints.",
-  "Select when through-hole or unspecified mounting options are acceptable.",
-  "Review entries sourced from dist-legacy or celestial-altium-library."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a Phoenix land pattern is intended."
  ],
  "avoid_when": [
-  "The PCB layout requires a package family other than Phoenix.",
-  "Quality tier C components with zero planner visibility are unacceptable.",
-  "A surface-mount package is required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than Phoenix."
  ],
  "keywords": [
-  "discrete transistor",
   "phoenix",
-  "phoenix 1727023",
   "discrete",
   "transistor",
-  "through hole",
-  "through_hole",
-  "dist-legacy",
-  "celestial-altium-library",
-  "tier c",
   "land",
   "pattern",
   "pin",
@@ -64,13 +57,13 @@
   "tier_counts": {
    "C": 2
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
   "dist-legacy/Phoenix 1727023",
   "celestial-altium-library/Phoenix 1727023/Phoenix_1727023"
  ],
- "embedding_text": "discrete-transistor.phoenix | Discrete Transistor | Cluster of 2 discrete transistor parts in quality tier C featuring Phoenix package footprints and through-hole or unknown mounting options. | discrete transistor phoenix phoenix 1727023 discrete transistor through hole through_hole dist-legacy celestial-altium-library tier c land pattern pin footprint 81mm pitch pcb for with through hole pad mm | Phoenix | ",
+ "embedding_text": "discrete-transistor.phoenix | Discrete Transistor | 2 discrete transistor parts using Phoenix footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | phoenix discrete transistor land pattern pin footprint 81mm pitch pcb for with through hole pad mm | Phoenix | ",
  "class": "discrete.transistor"
 }

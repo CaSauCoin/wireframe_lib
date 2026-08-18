@@ -6,30 +6,20 @@
   "Passive",
   "Inductor"
  ],
- "description": "Cluster of 30 passive surface-mount inductor parts utilizing 0402 package family footprints across various library sources.",
+ "description": "30 passive inductor parts using 0402 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Prioritize tier A or tier B parts from verified library sources.",
-  "Confirm the specific 0402 footprint variant matches your PCB layout.",
-  "Review package mounting compatibility for SMD placement."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a 0402 land pattern is intended."
  ],
  "avoid_when": [
-  "A package size other than 0402 is required.",
-  "Through-hole mounting is required instead of surface-mount.",
-  "Unverified tier C parts do not satisfy library standards."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than 0402."
  ],
  "keywords": [
-  "passive",
   "inductor",
-  "0402",
-  "smd",
-  "surface mount",
-  "1005metric",
-  "passive inductor",
-  "0402 inductor",
-  "l_0402",
-  "c_0402_1005metric",
-  "sparkfun",
-  "jlcpcb",
+  "passive",
   "pad",
   "surface",
   "mount",
@@ -37,10 +27,13 @@
   "pitch",
   "pins",
   "yuden",
+  "smd",
   "taiyo",
   "nr",
+  "1005metric",
   "package",
-  "0mm"
+  "0mm",
+  "sparkfun"
  ],
  "facts": {
   "package_family": "0402",
@@ -80,7 +73,7 @@
    "B": 5,
    "C": 21
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -156,6 +149,6 @@
   "dist-legacy/L_Taiyo-Yuden_NR-10050_9.8x10.0mm",
   "dist-legacy/L_Taiyo-Yuden_NR-10050_9.8x10.0mm_HandSoldering"
  ],
- "embedding_text": "passive-inductor.0402 | Passive Inductor | Cluster of 30 passive surface-mount inductor parts utilizing 0402 package family footprints across various library sources. | passive inductor 0402 smd surface mount 1005metric passive inductor 0402 inductor l_0402 c_0402_1005metric sparkfun jlcpcb pad surface mount mm pitch pins yuden taiyo nr package 0mm | 0402 | ",
+ "embedding_text": "passive-inductor.0402 | Passive Inductor | 30 passive inductor parts using 0402 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | inductor passive pad surface mount mm pitch pins yuden smd taiyo nr 1005metric package 0mm sparkfun | 0402 | ",
  "class": "passive.inductor"
 }

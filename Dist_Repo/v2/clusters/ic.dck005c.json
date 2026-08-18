@@ -5,27 +5,20 @@
  "category_path": [
   "IC"
  ],
- "description": "Integrated circuit (IC) cluster containing 1 tier C part with a DCK005C package footprint.",
+ "description": "1 ic parts using DCK005C footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Use when selecting IC components with a DCK005C package footprint.",
-  "Verify part specifications as mount type is listed as unknown.",
-  "Check pin-to-pad mapping and quality tier details before committing a design."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a DCK005C land pattern is intended."
  ],
  "avoid_when": [
-  "The target design requires a package family other than DCK005C.",
-  "Fully verified or tier A components are required.",
-  "Required electrical ratings or tolerances are not provided in the source entry."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than DCK005C."
  ],
  "keywords": [
   "dck005c",
   "ic",
-  "integrated circuit",
-  "dck005c footprint",
-  "package family dck005c",
-  "tier c",
-  "dist-legacy",
-  "dck005c package",
-  "ic cluster",
   "pad",
   "mm",
   "pitch",
@@ -50,12 +43,12 @@
   "tier_counts": {
    "C": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
   "dist-legacy/DCK005C"
  ],
- "embedding_text": "ic.dck005c | IC | Integrated circuit (IC) cluster containing 1 tier C part with a DCK005C package footprint. | dck005c ic integrated circuit dck005c footprint package family dck005c tier c dist-legacy dck005c package ic cluster pad mm pitch pins | DCK005C | ",
+ "embedding_text": "ic.dck005c | IC | 1 ic parts using DCK005C footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | dck005c ic pad mm pitch pins | DCK005C | ",
  "class": "ic"
 }

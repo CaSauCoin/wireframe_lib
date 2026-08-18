@@ -5,42 +5,34 @@
  "category_path": [
   "IC"
  ],
- "description": "This IC component cluster includes 47 tier-C parts featuring surface-mount and unknown mounts across Microchip footprints including USON, DFN, MSOP, and SC70.",
+ "description": "47 ic parts using MICROCHIP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Verify land pattern requirements against available USON, DFN, MSOP, SC70, and related Microchip footprints.",
-  "Check part suitability for tier C entries sourced from legacy distribution and celestial Altium libraries.",
-  "Confirm mounting specifications for surface-mount or unknown mount types."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a MICROCHIP land pattern is intended."
  ],
  "avoid_when": [
-  "Avoid when the layout requires footprint package families other than Microchip.",
-  "Avoid if tier C component quality classification is not accepted for the project.",
-  "Avoid when surface-mount or specified Microchip footprints do not fit board constraints."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than MICROCHIP."
  ],
  "keywords": [
-  "ic",
   "microchip",
-  "smd",
-  "uson",
-  "dfn",
-  "msop",
-  "sc70",
-  "bm83",
-  "rn4871",
-  "uson-10",
-  "dfn-10",
-  "dfn-8",
-  "msop-8",
-  "msop-10",
-  "sc70-5",
+  "ic",
   "mm",
   "pad",
   "pitch",
   "pins",
+  "msop",
+  "sc70",
   "5mm",
   "3x3mm",
   "surface",
   "mount",
-  "ms"
+  "dfn",
+  "ms",
+  "lt",
+  "uson"
  ],
  "facts": {
   "package_family": "MICROCHIP",
@@ -74,7 +66,7 @@
   "tier_counts": {
    "C": 47
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
@@ -126,6 +118,6 @@
   "dist-legacy/Microchip_8E-16",
   "celestial-altium-library/Microchip Micrel SOP-8 M/Microchip_Micrel_SOP-8_M"
  ],
- "embedding_text": "ic.microchip | IC | This IC component cluster includes 47 tier-C parts featuring surface-mount and unknown mounts across Microchip footprints including USON, DFN, MSOP, and SC70. | ic microchip smd uson dfn msop sc70 bm83 rn4871 uson-10 dfn-10 dfn-8 msop-8 msop-10 sc70-5 mm pad pitch pins 5mm 3x3mm surface mount ms | MICROCHIP | ",
+ "embedding_text": "ic.microchip | IC | 47 ic parts using MICROCHIP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | microchip ic mm pad pitch pins msop sc70 5mm 3x3mm surface mount dfn ms lt uson | MICROCHIP | ",
  "class": "ic"
 }

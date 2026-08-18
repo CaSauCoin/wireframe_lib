@@ -6,42 +6,34 @@
   "IC",
   "Power"
  ],
- "description": "Surface-mount power IC components in the TSSOP package family featuring TSSOP-8, TSSOP-16, and TSSOP-20 footprints.",
+ "description": "5 ic power parts using TSSOP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Power IC components requiring surface-mount TSSOP footprints.",
-  "Part selection matches regulator controllers such as TL494, TPS2375-1, UCC2895PW, UCC2897, or UCC3895PW.",
-  "Footprint requirements specify 8-pin, 16-pin, or 20-pin TSSOP packages."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a TSSOP land pattern is intended."
  ],
  "avoid_when": [
-  "The design requires through-hole or non-SMD component mounting.",
-  "A package family other than TSSOP is required.",
-  "The footprint pin count is not 8, 16, or 20 pins."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than TSSOP."
  ],
  "keywords": [
-  "ic",
-  "power",
   "tssop",
-  "smd",
-  "regulator controller",
-  "tl494",
-  "tps2375-1",
-  "ucc2895pw",
-  "ucc2897",
-  "ucc3895pw",
-  "tssop-8",
-  "tssop-16",
-  "tssop-20",
   "controller",
   "regulator",
   "p0",
   "65mm",
   "so",
+  "ic",
+  "power",
   "phase",
   "smps",
   "pwm",
   "advanced",
   "4x6",
-  "5mm"
+  "5mm",
+  "ieee802",
+  "3af"
  ],
  "facts": {
   "package_family": "TSSOP",
@@ -64,7 +56,7 @@
   "tier_counts": {
    "A": 5
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -115,6 +107,6 @@
   "kicad-symbols/Regulator_Controller/UCC2897",
   "kicad-symbols/Regulator_Controller/UCC3895PW"
  ],
- "embedding_text": "ic-power.tssop | IC Power | Surface-mount power IC components in the TSSOP package family featuring TSSOP-8, TSSOP-16, and TSSOP-20 footprints. | ic power tssop smd regulator controller tl494 tps2375-1 ucc2895pw ucc2897 ucc3895pw tssop-8 tssop-16 tssop-20 controller regulator p0 65mm so phase smps pwm advanced 4x6 5mm | TSSOP | ",
+ "embedding_text": "ic-power.tssop | IC Power | 5 ic power parts using TSSOP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | tssop controller regulator p0 65mm so ic power phase smps pwm advanced 4x6 5mm ieee802 3af | TSSOP | ",
  "class": "ic.power"
 }

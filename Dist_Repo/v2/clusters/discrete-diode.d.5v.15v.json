@@ -6,44 +6,34 @@
   "Discrete",
   "Diode"
  ],
- "description": "Cluster of 8 SMD TVS diode parts (bidirectional and unidirectional types) in D-family packages rated 5V/15V, spanning SOD-323, SOD-523, SMA, DFN1006-2L, and DFN1610-2L footprints, sourced from JLCPCB-Kicad-Library with 4 tier-A and 4 tier-B entries.",
+ "description": "8 discrete diode parts for 5V, 15V using D footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Match the exact D-family footprint (SOD-323, SOD-523, SMA, DFN1006-2L, or DFN1610-2L) to the layout",
-  "Prefer tier A parts (score 100) over tier B (score 92) when unsure",
-  "Confirm bidirectional (Bi) vs unidirectional (Uni) TVS type fits the protection topology",
-  "Verify 5V or 15V rating matches the line or signal voltage being protected"
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a D land pattern is intended."
  ],
  "avoid_when": [
-  "Required voltage is outside the 5V/15V facets covered by this cluster",
-  "A non-SMD or non-D-family footprint is required",
-  "A rectifier or general-purpose signal diode is needed instead of a TVS protection diode",
-  "The symbol-footprint pairing is unverified for the target board layout"
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than D."
  ],
  "keywords": [
-  "tvs diode",
-  "esd protection",
-  "surge protection",
-  "bidirectional tvs",
-  "unidirectional tvs",
-  "5v",
-  "15v",
-  "sod-323",
-  "sod-523",
-  "sma",
-  "dfn1006-2l",
-  "dfn1610-2l",
-  "smd diode",
-  "jlcpcb",
-  "discrete diode",
-  "d package",
-  "tier a",
   "esd",
   "tvs",
+  "5v",
+  "15v",
   "iec",
   "20us",
   "2l",
   "diode",
-  "dfn1006"
+  "dfn1006",
+  "jlcpcb",
+  "diodes",
+  "and",
+  "surge",
+  "protection",
+  "rohs",
+  "discrete"
  ],
  "facts": {
   "package_family": "D",
@@ -72,7 +62,7 @@
    "A": 4,
    "B": 4
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -126,6 +116,6 @@
   "JLCPCB-Kicad-Library/JLCPCB-Diodes/TVS-Bi,H4S5N10B",
   "JLCPCB-Kicad-Library/JLCPCB-Diodes/TVS-Uni,H5VH16U"
  ],
- "embedding_text": "discrete-diode.d.5v.15v | Discrete Diode | Cluster of 8 SMD TVS diode parts (bidirectional and unidirectional types) in D-family packages rated 5V/15V, spanning SOD-323, SOD-523, SMA, DFN1006-2L, and DFN1610-2L footprints, sourced from JLCPCB-Kicad-Library with 4 tier-A and 4 tier-B entries. | tvs diode esd protection surge protection bidirectional tvs unidirectional tvs 5v 15v sod-323 sod-523 sma dfn1006-2l dfn1610-2l smd diode jlcpcb discrete diode d package tier a esd tvs iec 20us 2l diode dfn1006 | D | 5V 15V",
+ "embedding_text": "discrete-diode.d.5v.15v | Discrete Diode | 8 discrete diode parts for 5V, 15V using D footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | esd tvs 5v 15v iec 20us 2l diode dfn1006 jlcpcb diodes and surge protection rohs discrete | D | 5V 15V",
  "class": "discrete.diode"
 }

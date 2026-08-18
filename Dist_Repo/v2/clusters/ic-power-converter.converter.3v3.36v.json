@@ -7,42 +7,34 @@
   "Power",
   "Converter"
  ],
- "description": "This cluster contains 7 through-hole IC power converter symbols with 3.3V and 36V facets using through-hole Converter footprints.",
+ "description": "7 ic power converter parts for 3.3V, 36V using Converter footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "A through-hole (THT) IC power converter is required.",
-  "Design requires parts matching the 3.3V or 36V facets.",
-  "Target layout uses a Converter package footprint."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a Converter land pattern is intended."
  ],
  "avoid_when": [
-  "Surface-mount (SMD) mounting is needed instead of through-hole.",
-  "The circuit requires a package family other than Converter.",
-  "Operating requirements differ from the specified 3.3V and 36V facets."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than Converter."
  ],
  "keywords": [
-  "ic power converter",
   "converter",
-  "3.3v",
-  "36v",
-  "through_hole",
-  "tht",
-  "power converter",
-  "kicad-symbols",
-  "thl30",
-  "tmr10",
-  "tri10",
-  "trn3",
-  "tec2",
   "dc",
   "dcdc",
   "traco",
+  "36v",
   "3v",
   "output",
+  "tht",
   "sip",
   "single",
   "regulated",
   "input",
   "fixed",
-  "voltage"
+  "voltage",
+  "isolation",
+  "isolated"
  ],
  "facts": {
   "package_family": "Converter",
@@ -71,7 +63,7 @@
   "tier_counts": {
    "B": 7
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -124,6 +116,6 @@
   "kicad-symbols/Converter_DCDC/TMR-2410",
   "kicad-symbols/Converter_DCDC/TMR2-2410WI"
  ],
- "embedding_text": "ic-power-converter.converter.3v3.36v | IC Power Converter | This cluster contains 7 through-hole IC power converter symbols with 3.3V and 36V facets using through-hole Converter footprints. | ic power converter converter 3.3v 36v through_hole tht power converter kicad-symbols thl30 tmr10 tri10 trn3 tec2 dc dcdc traco 3v output sip single regulated input fixed voltage | Converter | 3.3V 36V",
+ "embedding_text": "ic-power-converter.converter.3v3.36v | IC Power Converter | 7 ic power converter parts for 3.3V, 36V using Converter footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | converter dc dcdc traco 36v 3v output tht sip single regulated input fixed voltage isolation isolated | Converter | 3.3V 36V",
  "class": "ic.power.converter"
 }

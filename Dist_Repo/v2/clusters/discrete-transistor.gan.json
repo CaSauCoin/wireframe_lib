@@ -6,26 +6,20 @@
   "Discrete",
   "Transistor"
  ],
- "description": "Discrete surface-mount GaN transistor cluster featuring parts with GaN Systems GaNPX footprints.",
+ "description": "2 discrete transistor parts using GaN footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when designing with surface-mount discrete GaN transistors.",
-  "Check alignment with available GaN Systems GaNPX-3 or GaNPX-4 land patterns."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a GaN land pattern is intended."
  ],
  "avoid_when": [
-  "The PCB layout requires package types other than SMD GaN.",
-  "Unreviewed tier C entries are not permitted for the selection process."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than GaN."
  ],
  "keywords": [
-  "discrete",
-  "transistor",
   "gan",
   "ganpx",
-  "gan systems",
-  "smd",
-  "surface mount",
-  "ganpx-3",
-  "ganpx-4",
-  "discrete transistor",
   "systems",
   "6mm",
   "5x6",
@@ -33,6 +27,8 @@
   "93x0",
   "7x8",
   "4mm",
+  "discrete",
+  "transistor",
   "package",
   "gs66502b",
   "gs66508b",
@@ -59,13 +55,13 @@
   "tier_counts": {
    "C": 2
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
   "dist-legacy/GaN_Systems_GaNPX-3_5x6.6mm_Drain2.93x0.6mm",
   "dist-legacy/GaN_Systems_GaNPX-4_7x8.4mm"
  ],
- "embedding_text": "discrete-transistor.gan | Discrete Transistor | Discrete surface-mount GaN transistor cluster featuring parts with GaN Systems GaNPX footprints. | discrete transistor gan ganpx gan systems smd surface mount ganpx-3 ganpx-4 discrete transistor systems 6mm 5x6 drain2 93x0 7x8 4mm package gs66502b gs66508b surface mount | GaN | ",
+ "embedding_text": "discrete-transistor.gan | Discrete Transistor | 2 discrete transistor parts using GaN footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | gan ganpx systems 6mm 5x6 drain2 93x0 7x8 4mm discrete transistor package gs66502b gs66508b surface mount | GaN | ",
  "class": "discrete.transistor"
 }

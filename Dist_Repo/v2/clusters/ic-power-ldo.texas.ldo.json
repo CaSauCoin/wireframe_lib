@@ -7,33 +7,22 @@
   "Power",
   "Linear Regulator"
  ],
- "description": "Cluster of 5 surface-mount LDO linear regulator IC symbols using Texas footprint patterns.",
+ "description": "5 ic power linear regulator parts for LDO using Texas footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when SMD LDO linear power regulator symbols with Texas footprints are needed.",
-  "Choose among supported footprints including HTSOP-8-1EP, S-PDSO-N10, NDQ, and X2SON-4.",
-  "Prioritize Tier A parts such as LP38512MR-ADJ over Tier B alternatives."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a Texas land pattern is intended."
  ],
  "avoid_when": [
-  "Through-hole mounting is required.",
-  "Non-Texas package footprints or families are needed.",
-  "Power regulator components other than LDO linear regulators are required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than Texas."
  ],
  "keywords": [
-  "ic power linear regulator",
-  "ldo",
-  "texas",
-  "smd",
-  "htsop-8-1ep",
-  "s-pdso-n10",
-  "x2son-4",
-  "ndq",
-  "lp38512mr-adj",
-  "lp38512tj-adj",
-  "tps7a20xxxdqn",
-  "tps7a90",
-  "tps7a91",
   "regulator",
   "linear",
+  "texas",
+  "ldo",
   "voltage",
   "low",
   "ic",
@@ -42,7 +31,10 @@
   "pdso",
   "n10",
   "5a",
-  "dropout"
+  "dropout",
+  "htsop",
+  "noise",
+  "x2son"
  ],
  "facts": {
   "package_family": "Texas",
@@ -69,7 +61,7 @@
    "A": 1,
    "B": 4
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -120,6 +112,6 @@
   "kicad-symbols/Regulator_Linear/TPS7A90",
   "kicad-symbols/Regulator_Linear/TPS7A91"
  ],
- "embedding_text": "ic-power-ldo.texas.ldo | IC Power Linear Regulator | Cluster of 5 surface-mount LDO linear regulator IC symbols using Texas footprint patterns. | ic power linear regulator ldo texas smd htsop-8-1ep s-pdso-n10 x2son-4 ndq lp38512mr-adj lp38512tj-adj tps7a20xxxdqn tps7a90 tps7a91 regulator linear voltage low ic power output pdso n10 5a dropout | Texas | LDO",
+ "embedding_text": "ic-power-ldo.texas.ldo | IC Power Linear Regulator | 5 ic power linear regulator parts for LDO using Texas footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | regulator linear texas ldo voltage low ic power output pdso n10 5a dropout htsop noise x2son | Texas | LDO",
  "class": "ic.power.ldo"
 }

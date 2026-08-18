@@ -5,34 +5,25 @@
  "category_path": [
   "Connector"
  ],
- "description": "Connector cluster with a single through-hole part using the 4UCON_10156_2x40_P1.27mm_Socket_Horizontal footprint, sourced from dist-legacy and tier C.",
+ "description": "1 connector parts using 4UCON footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Only one part available; confirm it matches the required footprint before use",
-  "Verify the 2x40, 1.27mm pitch, through-hole socket footprint against your board layout",
-  "Check tier C and generated review status before committing to a design"
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a 4UCON land pattern is intended."
  ],
  "avoid_when": [
-  "A different pitch, pin count, or mount style than 2x40 P1.27mm through-hole socket is needed",
-  "Planner-visible or higher review-tier parts are required",
-  "Electrical ratings or pinout details are needed but not stated for this part"
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than 4UCON."
  ],
  "keywords": [
   "4ucon",
-  "10156",
   "socket",
   "2x40",
-  "80 position",
-  "1.27mm pitch",
-  "horizontal socket",
-  "through hole",
-  "connector",
-  "board to board",
-  "dist-legacy",
-  "tier c",
-  "generated",
   "p1",
   "27mm",
   "horizontal",
+  "connector",
   "through",
   "hole",
   "card",
@@ -40,7 +31,8 @@
   "with",
   "contacts",
   "pad",
-  "mm"
+  "mm",
+  "pitch"
  ],
  "facts": {
   "package_family": "4UCON",
@@ -61,12 +53,12 @@
   "tier_counts": {
    "C": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
   "dist-legacy/4UCON_10156_2x40_P1.27mm_Socket_Horizontal"
  ],
- "embedding_text": "connector.4ucon | Connector | Connector cluster with a single through-hole part using the 4UCON_10156_2x40_P1.27mm_Socket_Horizontal footprint, sourced from dist-legacy and tier C. | 4ucon 10156 socket 2x40 80 position 1.27mm pitch horizontal socket through hole connector board to board dist-legacy tier c generated p1 27mm horizontal through hole card edge with contacts pad mm | 4UCON | ",
+ "embedding_text": "connector.4ucon | Connector | 1 connector parts using 4UCON footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | 4ucon socket 2x40 p1 27mm horizontal connector through hole card edge with contacts pad mm pitch | 4UCON | ",
  "class": "connector"
 }

@@ -5,28 +5,20 @@
  "category_path": [
   "IC"
  ],
- "description": "Cluster of 1 IC component in the RT package family using the RT-5 footprint.",
+ "description": "1 ic parts using RT footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when an IC component using the RT-5 footprint is required.",
-  "Verify suitability for tier C quality parts sourced from dist-legacy.",
-  "Use when layout compatibility with the RT package family is intended."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a RT land pattern is intended."
  ],
  "avoid_when": [
-  "Do not use if the PCB layout requires a package footprint other than RT-5.",
-  "Avoid if higher quality tiers (such as tier A or B) are required.",
-  "Avoid when an explicitly specified mounting style is required rather than unknown mount."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than RT."
  ],
  "keywords": [
-  "ic",
   "rt",
-  "rt-5",
-  "integrated circuit",
-  "rt package family",
-  "rt-5 footprint",
-  "dist-legacy",
-  "tier c",
-  "ic component",
-  "unknown mount",
+  "ic",
   "pad",
   "mm",
   "pitch",
@@ -51,12 +43,12 @@
   "tier_counts": {
    "C": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
   "dist-legacy/RT-5"
  ],
- "embedding_text": "ic.rt | IC | Cluster of 1 IC component in the RT package family using the RT-5 footprint. | ic rt rt-5 integrated circuit rt package family rt-5 footprint dist-legacy tier c ic component unknown mount pad mm pitch pins | RT | ",
+ "embedding_text": "ic.rt | IC | 1 ic parts using RT footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | rt ic pad mm pitch pins | RT | ",
  "class": "ic"
 }

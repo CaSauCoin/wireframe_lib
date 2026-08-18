@@ -6,35 +6,30 @@
   "Discrete",
   "Diode"
  ],
- "description": "This cluster contains surface-mount 27V discrete diode components using the 1206 footprint.",
+ "description": "1 discrete diode parts for 27V using 1206 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Choose for designs requiring a 27V surface-mount discrete diode.",
-  "Verify layout compatibility with the D_1206_3216Metric land pattern.",
-  "Select when looking for Tier A parts from the Alternate-KiCad-Library source."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a 1206 land pattern is intended."
  ],
  "avoid_when": [
-  "The circuit requires a diode voltage rating other than 27V.",
-  "The PCB design requires a package footprint other than 1206.",
-  "Through-hole mounting is required rather than surface-mount (SMD)."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than 1206."
  ],
  "keywords": [
   "diode",
-  "discrete diode",
-  "27v",
-  "1206",
-  "smd",
-  "d_1206_3216metric",
-  "3216metric",
-  "cdz55c27",
   "zener",
-  "alternate-kicad-library",
+  "27v",
+  "cdz55c27",
   "akl",
-  "discrete",
   "500mw",
   "alternate",
   "kicad",
   "library",
-  "cdz55"
+  "3216metric",
+  "cdz55",
+  "discrete"
  ],
  "facts": {
   "package_family": "1206",
@@ -57,7 +52,7 @@
   "tier_counts": {
    "A": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -72,6 +67,6 @@
  "part_ids": [
   "Alternate-KiCad-Library/Diode_Zener_AKL/CDZ55C27"
  ],
- "embedding_text": "discrete-diode.1206.27v | Discrete Diode | This cluster contains surface-mount 27V discrete diode components using the 1206 footprint. | diode discrete diode 27v 1206 smd d_1206_3216metric 3216metric cdz55c27 zener alternate-kicad-library akl discrete 500mw alternate kicad library cdz55 | 1206 | 27V",
+ "embedding_text": "discrete-diode.1206.27v | Discrete Diode | 1 discrete diode parts for 27V using 1206 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | diode zener 27v cdz55c27 akl 500mw alternate kicad library 3216metric cdz55 discrete | 1206 | 27V",
  "class": "discrete.diode"
 }

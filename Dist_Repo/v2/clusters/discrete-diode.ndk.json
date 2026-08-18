@@ -6,32 +6,23 @@
   "Discrete",
   "Diode"
  ],
- "description": "A cluster of 3 tier B discrete diode components using the NDK footprint and NDK package family.",
+ "description": "3 discrete diode parts using NDK footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when requiring discrete diodes in an NDK package family.",
-  "Choose based on specific part numbers such as NX3225GD, NX5032GA, or NX8045GB.",
-  "Verify part suitability within the tier B quality designation."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a NDK land pattern is intended."
  ],
  "avoid_when": [
-  "A footprint or package family other than NDK is required.",
-  "Components outside the discrete diode class are needed.",
-  "Parts requiring higher quality tiers than tier B are specified."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than NDK."
  ],
  "keywords": [
-  "discrete diode",
   "ndk",
-  "discrete.diode",
-  "ndk footprint",
-  "nx3225gd",
-  "nx5032ga",
-  "nx8045gb",
-  "discrete",
   "diode",
-  "tier b",
-  "dist-legacy",
-  "package family ndk",
   "surface",
   "mount",
+  "nx3225gd",
   "component",
   "by",
   "in",
@@ -41,7 +32,8 @@
   "and",
   "cathode",
   "terminals",
-  "smd"
+  "smd",
+  "discrete"
  ],
  "facts": {
   "package_family": "NDK",
@@ -62,7 +54,7 @@
   "tier_counts": {
    "B": 3
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -95,6 +87,6 @@
   "dist-legacy/NDK NX5032GA",
   "dist-legacy/NDK NX8045GB"
  ],
- "embedding_text": "discrete-diode.ndk | Discrete Diode | A cluster of 3 tier B discrete diode components using the NDK footprint and NDK package family. | discrete diode ndk discrete.diode ndk footprint nx3225gd nx5032ga nx8045gb discrete diode tier b dist-legacy package family ndk surface mount component by in package with anode and cathode terminals smd | NDK | ",
+ "embedding_text": "discrete-diode.ndk | Discrete Diode | 3 discrete diode parts using NDK footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | ndk diode surface mount nx3225gd component by in package with anode and cathode terminals smd discrete | NDK | ",
  "class": "discrete.diode"
 }

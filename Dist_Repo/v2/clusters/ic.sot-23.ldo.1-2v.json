@@ -5,42 +5,34 @@
  "category_path": [
   "IC"
  ],
- "description": "Cluster of 18 surface-mount 1.2V LDO voltage regulator ICs with SOT-23 and SOT-23-6 footprints.",
+ "description": "18 ic parts for LDO, 1.2V using SOT-23 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when a fixed 1.2V low-dropout (LDO) regulator is needed.",
-  "Verify whether the design requires a standard SOT-23 or SOT-23-6 footprint.",
-  "Choose from 18 surface-mount Tier A parts sourced from Alternate-KiCad-Library."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SOT-23 land pattern is intended."
  ],
  "avoid_when": [
-  "The design requires an output voltage other than 1.2V.",
-  "The PCB layout requires through-hole mounting or non-SOT-23 packages.",
-  "A non-LDO regulator architecture is required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SOT-23."
  ],
  "keywords": [
-  "ic",
-  "ldo",
-  "1.2v",
-  "sot-23",
-  "sot-23-6",
-  "voltage regulator",
-  "low dropout",
-  "smd",
-  "surface mount",
-  "alternate-kicad-library",
-  "ap2120n",
-  "ap2121n",
-  "ap2127n",
-  "ap2138n",
   "sot",
   "voltage",
   "regulator",
   "2v",
   "low",
   "dropout",
+  "ldo",
   "akl",
   "alternate",
   "kicad",
-  "library"
+  "library",
+  "vreg",
+  "pmic",
+  "power",
+  "supply",
+  "terminal"
  ],
  "facts": {
   "package_family": "SOT-23",
@@ -65,7 +57,7 @@
   "tier_counts": {
    "A": 18
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -129,6 +121,6 @@
   "Alternate-KiCad-Library/Voltage_Regulator_AKL/MCP1702T-1202E-CB",
   "Alternate-KiCad-Library/Voltage_Regulator_AKL/MCP1703T-1202E-CB"
  ],
- "embedding_text": "ic.sot-23.ldo.1-2v | IC | Cluster of 18 surface-mount 1.2V LDO voltage regulator ICs with SOT-23 and SOT-23-6 footprints. | ic ldo 1.2v sot-23 sot-23-6 voltage regulator low dropout smd surface mount alternate-kicad-library ap2120n ap2121n ap2127n ap2138n sot voltage regulator 2v low dropout akl alternate kicad library | SOT-23 | LDO 1.2V",
+ "embedding_text": "ic.sot-23.ldo.1-2v | IC | 18 ic parts for LDO, 1.2V using SOT-23 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | sot voltage regulator 2v low dropout ldo akl alternate kicad library vreg pmic power supply terminal | SOT-23 | LDO 1.2V",
  "class": "ic"
 }

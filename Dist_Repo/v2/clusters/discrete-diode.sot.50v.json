@@ -6,44 +6,34 @@
   "Discrete",
   "Diode"
  ],
- "description": "Cluster of 9 SMD diode parts sharing a 50V facet, packaged in SOT footprints (SOT-223-3_TabPin2, SOT-323_SC-70, SOT-143), all sourced from Alternate-KiCad-Library with tier A quality and 'generated' review status.",
+ "description": "9 discrete diode parts for 50V using SOT footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Match the exact SOT footprint needed (SOT-223-3_TabPin2, SOT-323_SC-70, or SOT-143) to your land pattern",
-  "All 9 parts are tier A with quality score 100, so differentiate by part name and footprint",
-  "All parts come from a single source (Alternate-KiCad-Library)",
-  "Confirm part-specific electrical ratings beyond the shared 50V facet before committing"
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SOT land pattern is intended."
  ],
  "avoid_when": [
-  "The design needs a footprint outside SOT-223-3_TabPin2, SOT-323_SC-70, or SOT-143",
-  "A through-hole diode is required (this cluster is SMD only)",
-  "Electrical requirements beyond the 50V facet cannot be confirmed for the chosen part",
-  "review_status 'generated' has not yet been manually verified for production use"
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SOT."
  ],
  "keywords": [
   "diode",
-  "discrete diode",
   "sot",
-  "sot-223",
-  "sot-223-3",
-  "sot-323",
-  "sc-70",
-  "sot-143",
   "50v",
-  "smd",
-  "surface mount",
-  "alternate-kicad-library",
-  "akl",
-  "bar63",
-  "bas78a",
-  "bas79a",
-  "tabpin2",
-  "tier a",
   "dual",
+  "akl",
   "alternate",
   "kicad",
   "library",
   "discrete",
-  "sc"
+  "bar63",
+  "sc",
+  "common",
+  "cathode",
+  "1a",
+  "1us",
+  "tabpin2"
  ],
  "facts": {
   "package_family": "SOT",
@@ -68,7 +58,7 @@
   "tier_counts": {
    "A": 9
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -123,6 +113,6 @@
   "Alternate-KiCad-Library/Diode_TVS_AKL/DSL70",
   "Alternate-KiCad-Library/Diode_AKL/BGX50A"
  ],
- "embedding_text": "discrete-diode.sot.50v | Discrete Diode | Cluster of 9 SMD diode parts sharing a 50V facet, packaged in SOT footprints (SOT-223-3_TabPin2, SOT-323_SC-70, SOT-143), all sourced from Alternate-KiCad-Library with tier A quality and 'generated' review status. | diode discrete diode sot sot-223 sot-223-3 sot-323 sc-70 sot-143 50v smd surface mount alternate-kicad-library akl bar63 bas78a bas79a tabpin2 tier a dual alternate kicad library discrete sc | SOT | 50V",
+ "embedding_text": "discrete-diode.sot.50v | Discrete Diode | 9 discrete diode parts for 50V using SOT footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | diode sot 50v dual akl alternate kicad library discrete bar63 sc common cathode 1a 1us tabpin2 | SOT | 50V",
  "class": "discrete.diode"
 }

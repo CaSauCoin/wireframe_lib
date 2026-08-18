@@ -7,31 +7,19 @@
   "Analog",
   "Op-Amp"
  ],
- "description": "Cluster of 698 surface-mount analog operational amplifier ICs utilizing SOIC package footprints.",
+ "description": "698 ic analog op-amp parts using SOIC footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select by required SOIC package body size, pin count, and thermal pad configuration.",
-  "Prefer Tier A catalog entries with verified footprint assignments.",
-  "Confirm package lead pitch of 1.27mm matches target PCB layout requirements."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SOIC land pattern is intended."
  ],
  "avoid_when": [
-  "The layout requires packages other than SOIC (e.g. through-hole or non-SOIC surface-mount ICs).",
-  "Component mounting requires non-SMD soldering techniques."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SOIC."
  ],
  "keywords": [
   "soic",
-  "opamp",
-  "op amp",
-  "operational amplifier",
-  "analog ic",
-  "smd",
-  "soic-8",
-  "soic-14",
-  "soic-16",
-  "soic-20",
-  "1.27mm",
-  "ic.analog.opamp",
-  "exposed pad",
-  "soic-8-1ep",
   "amplifier",
   "operational",
   "so",
@@ -41,7 +29,12 @@
   "ic",
   "analog",
   "p1",
-  "27mm"
+  "27mm",
+  "opamp",
+  "rail",
+  "offset",
+  "akl",
+  "alternate"
  ],
  "facts": {
   "package_family": "SOIC",
@@ -74,7 +67,7 @@
    "A": 688,
    "B": 10
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -818,6 +811,6 @@
   "kicad-symbols/Amplifier_Instrumentation/AD8429ARZ",
   "kicad-symbols/Amplifier_Instrumentation/AD8429BRZ"
  ],
- "embedding_text": "ic-analog-opamp.soic | IC Analog Op-Amp | Cluster of 698 surface-mount analog operational amplifier ICs utilizing SOIC package footprints. | soic opamp op amp operational amplifier analog ic smd soic-8 soic-14 soic-16 soic-20 1.27mm ic.analog.opamp exposed pad soic-8-1ep amplifier operational so quad op amp ic analog p1 27mm | SOIC | ",
+ "embedding_text": "ic-analog-opamp.soic | IC Analog Op-Amp | 698 ic analog op-amp parts using SOIC footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | soic amplifier operational so quad op amp ic analog p1 27mm opamp rail offset akl alternate | SOIC | ",
  "class": "ic.analog.opamp"
 }

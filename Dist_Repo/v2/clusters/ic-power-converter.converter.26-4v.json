@@ -7,42 +7,34 @@
   "Power",
   "Converter"
  ],
- "description": "Cluster of 40 tier B IC power converter parts associated with 26.4V facets, supporting surface-mount and through-hole Converter footprints.",
+ "description": "40 ic power converter parts for 26.4V using Converter footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select between surface-mount (SMD) and through-hole (THT) mounting styles.",
-  "Match the specific footprint series such as TBA1, TES1, TRI1, or TME.",
-  "Choose between single and dual output footprint layout variants."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a Converter land pattern is intended."
  ],
  "avoid_when": [
-  "The board layout requires footprints other than the listed Converter DCDC patterns.",
-  "Mounting methods other than surface-mount or through-hole are required.",
-  "Components with tier A qualification are required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than Converter."
  ],
  "keywords": [
-  "ic",
-  "power",
   "converter",
-  "ic power converter",
-  "26.4v",
-  "smd",
-  "through_hole",
-  "tht",
+  "dc",
   "dcdc",
   "traco",
-  "tba1",
-  "tes1",
-  "kicad-symbols",
-  "dc",
   "4v",
   "output",
   "regulated",
   "1w",
+  "tht",
   "sip",
   "single",
   "unregulated",
   "input",
   "voltage",
-  "isolation"
+  "isolation",
+  "isolated"
  ],
  "facts": {
   "package_family": "Converter",
@@ -77,7 +69,7 @@
   "tier_counts": {
    "B": 40
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -163,6 +155,6 @@
   "kicad-symbols/Converter_DCDC/TRI1-2412SM",
   "kicad-symbols/Converter_DCDC/TRI1-2413SM"
  ],
- "embedding_text": "ic-power-converter.converter.26-4v | IC Power Converter | Cluster of 40 tier B IC power converter parts associated with 26.4V facets, supporting surface-mount and through-hole Converter footprints. | ic power converter ic power converter 26.4v smd through_hole tht dcdc traco tba1 tes1 kicad-symbols dc 4v output regulated 1w sip single unregulated input voltage isolation | Converter | 26.4V",
+ "embedding_text": "ic-power-converter.converter.26-4v | IC Power Converter | 40 ic power converter parts for 26.4V using Converter footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | converter dc dcdc traco 4v output regulated 1w tht sip single unregulated input voltage isolation isolated | Converter | 26.4V",
  "class": "ic.power.converter"
 }

@@ -5,35 +5,19 @@
  "category_path": [
   "Connector"
  ],
- "description": "Cluster of 8 through-hole BNC coaxial connector parts (6 tier B, 2 tier C, no tier A) spanning panel-mount vertical, right-angle, horizontal, and TE Connectivity footprints, mostly from kicad-symbols.",
+ "description": "8 connector parts using BNC footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Match the exact footprint needed (panel-mount vertical, RA, horizontal, or TE Connectivity 1478035/1478204) to the board layout",
-  "This cluster tops out at tier B — no tier A parts are present, so tier B is the best-quality option here",
-  "Cross-check source library (kicad-symbols, dist-legacy, SparkFun-KiCad-Libraries) for trust level",
-  "Review_status is 'generated', so verify the symbol-footprint pairing before committing to layout"
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a BNC land pattern is intended."
  ],
  "avoid_when": [
-  "A verified/reviewed (non-generated) part is required",
-  "The board needs an SMD or non-BNC connector package",
-  "Electrical ratings, pinout, or lifecycle data not present in these facts are required for the design",
-  "None of the listed footprints (PanelMountable_Vertical, Win_364A2x95_Horizontal, RA, TEConnectivity 1478035/1478204) fit the layout"
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than BNC."
  ],
  "keywords": [
   "bnc",
-  "bnc connector",
-  "coaxial connector",
-  "conn_coaxial",
-  "rf connector",
-  "panel mount",
-  "right angle",
-  "through hole connector",
-  "teconnectivity",
-  "vertical footprint",
-  "horizontal footprint",
-  "coax",
-  "kicad-symbols",
-  "pcb connector",
-  "connector cluster",
   "connector",
   "coaxial",
   "sma",
@@ -42,7 +26,13 @@
   "cinch",
   "rca",
   "lemo",
-  "vertical"
+  "teconnectivity",
+  "vertical",
+  "horizontal",
+  "conn",
+  "panelmountable",
+  "rf",
+  "pcb"
  ],
  "facts": {
   "package_family": "BNC",
@@ -70,7 +60,7 @@
    "B": 6,
    "C": 2
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -124,6 +114,6 @@
   "dist-legacy/BNC_TEConnectivity_1478035_Horizontal",
   "dist-legacy/BNC_TEConnectivity_1478204_Vertical"
  ],
- "embedding_text": "connector.bnc | Connector | Cluster of 8 through-hole BNC coaxial connector parts (6 tier B, 2 tier C, no tier A) spanning panel-mount vertical, right-angle, horizontal, and TE Connectivity footprints, mostly from kicad-symbols. | bnc bnc connector coaxial connector conn_coaxial rf connector panel mount right angle through hole connector teconnectivity vertical footprint horizontal footprint coax kicad-symbols pcb connector connector cluster connector coaxial sma smb smc cinch rca lemo vertical | BNC | ",
+ "embedding_text": "connector.bnc | Connector | 8 connector parts using BNC footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | bnc connector coaxial sma smb smc cinch rca lemo teconnectivity vertical horizontal conn panelmountable rf pcb | BNC | ",
  "class": "connector"
 }

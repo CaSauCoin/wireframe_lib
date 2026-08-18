@@ -7,42 +7,34 @@
   "Power",
   "Linear Regulator"
  ],
- "description": "Cluster of 3 surface-mount (SMD) 35V LDO power linear regulator ICs featuring SOT-223-3_TabPin2 and SOT-89-3 footprints.",
+ "description": "3 ic power linear regulator parts for LDO, 35V using SOT footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when requiring an SMD 35V LDO linear regulator in a SOT package family.",
-  "Choose based on footprint requirements for SOT-223-3_TabPin2 or SOT-89-3.",
-  "Use when selecting tier A parts such as LM317, LM317L, or LM337 variants."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SOT land pattern is intended."
  ],
  "avoid_when": [
-  "The board design requires through-hole components instead of SMD mounting.",
-  "The layout requires package footprints other than SOT-223-3_TabPin2 or SOT-89-3.",
-  "The application requires specifications other than a 35V LDO linear regulator."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SOT."
  ],
  "keywords": [
   "sot",
-  "ldo",
-  "35v",
-  "linear regulator",
-  "power ic",
-  "smd",
-  "sot-223-3_tabpin2",
-  "sot-89-3",
-  "lm317l_sot-89",
-  "lm317_sot-223",
-  "lm337_sot223",
-  "ic.power.ldo",
   "regulator",
   "linear",
+  "35v",
   "adjustable",
   "1a",
   "voltage",
   "ic",
   "power",
+  "ldo",
   "positive",
   "tabpin2",
   "cms",
   "negative",
-  "lm317l"
+  "lm317l",
+  "100ma"
  ],
  "facts": {
   "package_family": "SOT",
@@ -67,7 +59,7 @@
   "tier_counts": {
    "A": 3
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -100,6 +92,6 @@
   "kicad-symbols/Regulator_Linear/LM317_SOT-223",
   "kicad-symbols/Regulator_Linear/LM337_SOT223"
  ],
- "embedding_text": "ic-power-ldo.sot.ldo.35v | IC Power Linear Regulator | Cluster of 3 surface-mount (SMD) 35V LDO power linear regulator ICs featuring SOT-223-3_TabPin2 and SOT-89-3 footprints. | sot ldo 35v linear regulator power ic smd sot-223-3_tabpin2 sot-89-3 lm317l_sot-89 lm317_sot-223 lm337_sot223 ic.power.ldo regulator linear adjustable 1a voltage ic power positive tabpin2 cms negative lm317l | SOT | LDO 35V",
+ "embedding_text": "ic-power-ldo.sot.ldo.35v | IC Power Linear Regulator | 3 ic power linear regulator parts for LDO, 35V using SOT footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | sot regulator linear 35v adjustable 1a voltage ic power ldo positive tabpin2 cms negative lm317l 100ma | SOT | LDO 35V",
  "class": "ic.power.ldo"
 }

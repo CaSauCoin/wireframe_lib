@@ -5,34 +5,25 @@
  "category_path": [
   "IC"
  ],
- "description": "Cluster of 10 surface-mount 3V IC parts with tier-A quality using SOIC footprints including SOIC-8 and SOIC-16.",
+ "description": "10 ic parts for 3V using SOIC footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when requiring a 3V surface-mount IC in a SOIC package family.",
-  "Verify footprint dimensions matching SOIC-8 or SOIC-16 specifications.",
-  "Choose parts based on source library availability from KiCad Symbols or JLCPCB KiCad Library."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SOIC land pattern is intended."
  ],
  "avoid_when": [
-  "Through-hole mounting or non-SMD layout is required.",
-  "The board layout requires a package family other than SOIC.",
-  "Voltage requirements differ from 3V."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SOIC."
  ],
  "keywords": [
-  "ic",
   "soic",
   "3v",
-  "smd",
-  "surface mount",
-  "soic-8",
-  "soic-16",
-  "p1.27mm",
-  "integrated circuit",
-  "tier-a",
-  "kicad-symbols",
-  "jlcpcb-kicad-library",
   "reference",
   "voltage",
   "p1",
   "so",
+  "ic",
   "low",
   "9x4",
   "9mm",
@@ -40,7 +31,8 @@
   "noise",
   "analog",
   "filter",
-  "to"
+  "to",
+  "clock"
  ],
  "facts": {
   "package_family": "SOIC",
@@ -65,7 +57,7 @@
   "tier_counts": {
    "A": 10
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -121,6 +113,6 @@
   "JLCPCB-Kicad-Library/JLCPCB-Analog/Switch, CD4052BM96",
   "kicad-symbols/Reference_Voltage/ADR4530"
  ],
- "embedding_text": "ic.soic.3v | IC | Cluster of 10 surface-mount 3V IC parts with tier-A quality using SOIC footprints including SOIC-8 and SOIC-16. | ic soic 3v smd surface mount soic-8 soic-16 p1.27mm integrated circuit tier-a kicad-symbols jlcpcb-kicad-library reference voltage p1 so low 9x4 9mm 27mm noise analog filter to | SOIC | 3V",
+ "embedding_text": "ic.soic.3v | IC | 10 ic parts for 3V using SOIC footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | soic 3v reference voltage p1 so ic low 9x4 9mm 27mm noise analog filter to clock | SOIC | 3V",
  "class": "ic"
 }

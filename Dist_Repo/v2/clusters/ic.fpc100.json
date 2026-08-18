@@ -5,33 +5,26 @@
  "category_path": [
   "IC"
  ],
- "description": "Surface-mount IC cluster containing 2 library parts using FPC100 family footprints such as FPC100_15V and FPC100_6H.",
+ "description": "2 ic parts using FPC100 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Match the required footprint to FPC100_15V or FPC100_6H.",
-  "Choose parts based on quality tier and library source trust.",
-  "Ensure the design specifies surface-mount (smd) FPC100 mounting."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a FPC100 land pattern is intended."
  ],
  "avoid_when": [
-  "The PCB layout requires a package family other than FPC100.",
-  "Through-hole mounting is required instead of surface mount.",
-  "Tier A quality certification is strictly required for the design."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than FPC100."
  ],
  "keywords": [
-  "ic",
   "fpc100",
-  "fpc100_15v",
-  "fpc100_6h",
-  "smd",
-  "surface mount",
-  "chilaboard",
-  "chilaboard-altium-library",
-  "rpicam",
-  "rpicam_v1.3_fpc15",
   "6h",
+  "rpicam",
   "v1",
   "fpc15",
   "connector",
   "camera",
+  "ic",
   "fpc",
   "raspberry",
   "pi",
@@ -62,7 +55,7 @@
    "B": 1,
    "C": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -78,6 +71,6 @@
   "chilaboard-altium-library/RPICAM_V1.3_FPC15/RPICAM_V1.3_FPC15",
   "chilaboard-altium-library/FPC100_6H/FPC100_6H"
  ],
- "embedding_text": "ic.fpc100 | IC | Surface-mount IC cluster containing 2 library parts using FPC100 family footprints such as FPC100_15V and FPC100_6H. | ic fpc100 fpc100_15v fpc100_6h smd surface mount chilaboard chilaboard-altium-library rpicam rpicam_v1.3_fpc15 6h v1 fpc15 connector camera fpc raspberry pi pin interface for module 15v | FPC100 | ",
+ "embedding_text": "ic.fpc100 | IC | 2 ic parts using FPC100 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | fpc100 6h rpicam v1 fpc15 connector camera ic fpc raspberry pi pin interface for module 15v | FPC100 | ",
  "class": "ic"
 }

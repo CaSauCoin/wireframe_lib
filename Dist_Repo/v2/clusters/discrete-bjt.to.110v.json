@@ -6,44 +6,34 @@
   "Discrete",
   "BJT"
  ],
- "description": "Discrete through-hole BJT cluster tagged with a 110V facet in the TO package family, currently containing one tier A part (BFQ262A, TO-126-3_Vertical_ECB) from Alternate-KiCad-Library.",
+ "description": "1 discrete bjt parts for 110V using TO footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Confirm the TO-126-3_Vertical_ECB footprint matches your PCB land pattern exactly",
-  "Check that the 110V facet satisfies your circuit's voltage requirement",
-  "Prefer the tier A part (BFQ262A, score 100) when selecting",
-  "Verify source trust for the Alternate-KiCad-Library entry before committing"
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a TO land pattern is intended."
  ],
  "avoid_when": [
-  "The design needs a package outside the TO family",
-  "A surface-mount footprint is required instead of through-hole",
-  "Electrical or pinout requirements beyond the stated 110V facet are not confirmed by the part",
-  "The single available part does not match required specs and no alternate is present"
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than TO."
  ],
  "keywords": [
-  "discrete bjt",
-  "bjt",
-  "transistor",
-  "to package",
-  "to-126-3",
-  "to-126-3_vertical_ecb",
-  "vertical ecb",
-  "110v",
-  "through hole",
-  "bfq262a",
-  "alternate-kicad-library",
-  "tier a",
-  "akl",
-  "discrete transistor",
   "to",
+  "transistor",
+  "bfq262a",
+  "bjt",
   "npn",
+  "110v",
   "vertical",
+  "akl",
   "video",
   "400ma",
   "5w",
   "alternate",
   "kicad",
   "library",
-  "ecb"
+  "ecb",
+  "rm"
  ],
  "facts": {
   "package_family": "TO",
@@ -66,7 +56,7 @@
   "tier_counts": {
    "A": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -81,6 +71,6 @@
  "part_ids": [
   "Alternate-KiCad-Library/Transistor_BJT_AKL/BFQ262A"
  ],
- "embedding_text": "discrete-bjt.to.110v | Discrete BJT | Discrete through-hole BJT cluster tagged with a 110V facet in the TO package family, currently containing one tier A part (BFQ262A, TO-126-3_Vertical_ECB) from Alternate-KiCad-Library. | discrete bjt bjt transistor to package to-126-3 to-126-3_vertical_ecb vertical ecb 110v through hole bfq262a alternate-kicad-library tier a akl discrete transistor to npn vertical video 400ma 5w alternate kicad library ecb | TO | 110V",
+ "embedding_text": "discrete-bjt.to.110v | Discrete BJT | 1 discrete bjt parts for 110V using TO footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | to transistor bfq262a bjt npn 110v vertical akl video 400ma 5w alternate kicad library ecb rm | TO | 110V",
  "class": "discrete.bjt"
 }

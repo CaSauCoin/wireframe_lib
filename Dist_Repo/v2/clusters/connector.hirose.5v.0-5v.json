@@ -5,42 +5,34 @@
  "category_path": [
   "Connector"
  ],
- "description": "Cluster of 23 HIROSE-footprint board-to-board connectors, mostly DF12-series vertical 0.50mm-pitch parts spanning 2x05 to 2x30 position footprints; all 23 entries are tier C and none are planner-visible.",
+ "description": "23 connector parts for 5V, 0.5V using HIROSE footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Match the exact DF12 footprint string (e.g. DF12C3.0-14DS-0.5V, 2x07) to the required position count and pitch",
-  "Confirm vertical SMD mounting matches the intended board stack-up",
-  "Check part source (dist-legacy vs celestial-altium-library) for provenance/trust before use"
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a HIROSE land pattern is intended."
  ],
  "avoid_when": [
-  "A connector footprint other than HIROSE/DF12 is required",
-  "A planner-visible or higher-than-tier-C part is needed",
-  "Exact position count, pitch, or mounting style cannot be confirmed from the footprint name"
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than HIROSE."
  ],
  "keywords": [
   "hirose",
-  "df12",
-  "df12a",
-  "df12c",
-  "df12e",
-  "connector",
-  "board-to-board",
-  "0.5mm pitch",
-  "p0.50mm",
-  "vertical",
-  "smd",
-  "2x05",
-  "2x07",
-  "2x10",
-  "2x20",
-  "2x30",
-  "tier c",
-  "unreviewed",
   "5v",
+  "df12",
+  "vertical",
   "p0",
   "50mm",
+  "connector",
   "df12e3",
   "df12c3",
-  "pins"
+  "pins",
+  "pad",
+  "mm",
+  "pitch",
+  "df12e",
+  "surface",
+  "mount"
  ],
  "facts": {
   "package_family": "HIROSE",
@@ -78,7 +70,7 @@
   "tier_counts": {
    "C": 23
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
@@ -106,6 +98,6 @@
   "dist-legacy/Hirose_DF12_DF12E3.0-60DP-0.5V_2x30_P0.50mm_Vertical",
   "dist-legacy/Hirose_DF12_DF12E3.0-80DP-0.5V_2x40_P0.50mm_Vertical"
  ],
- "embedding_text": "connector.hirose.5v.0-5v | Connector | Cluster of 23 HIROSE-footprint board-to-board connectors, mostly DF12-series vertical 0.50mm-pitch parts spanning 2x05 to 2x30 position footprints; all 23 entries are tier C and none are planner-visible. | hirose df12 df12a df12c df12e connector board-to-board 0.5mm pitch p0.50mm vertical smd 2x05 2x07 2x10 2x20 2x30 tier c unreviewed 5v p0 50mm df12e3 df12c3 pins | HIROSE | 5V 0.5V",
+ "embedding_text": "connector.hirose.5v.0-5v | Connector | 23 connector parts for 5V, 0.5V using HIROSE footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | hirose 5v df12 vertical p0 50mm connector df12e3 df12c3 pins pad mm pitch df12e surface mount | HIROSE | 5V 0.5V",
  "class": "connector"
 }

@@ -6,44 +6,34 @@
   "Discrete",
   "Diode"
  ],
- "description": "37 discrete diode parts in the 58V/D cluster, covering SMA, SMB, SMC, SOD-123F, SOD-128, DO-15 and P600 footprints (including Zener and TVS variants) in SMD and through-hole mounts; mostly tier A, sourced mainly from Alternate-KiCad-Library.",
+ "description": "37 discrete diode parts for 58V using D footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Prefer tier A entries with an exact footprint match to the intended land pattern",
-  "Distinguish Zener-labeled footprints from TVS-labeled footprints before selecting",
-  "Match SMD vs through-hole mount to the target board assembly process",
-  "Check source trust (Alternate-KiCad-Library vs JLCPCB-Kicad-Library) and review status"
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a D land pattern is intended."
  ],
  "avoid_when": [
-  "Required voltage, current, or power rating beyond the 58V facet is not confirmed for the chosen part",
-  "The design needs a package outside the D family (SMA, SMB, SMC, SOD-123F, SOD-128, DO-15, P600)",
-  "Zener and TVS variants are not clearly distinguished for the application's protection vs regulation role",
-  "The symbol-footprint pairing is unverified or flagged for review"
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than D."
  ],
  "keywords": [
   "diode",
-  "discrete diode",
-  "58v",
-  "zener",
   "tvs",
-  "d package",
-  "smd",
-  "through hole",
-  "smc",
-  "smb",
-  "sma",
-  "sod-123f",
-  "sod-128",
-  "do-15",
-  "p600",
-  "alternate-kicad-library",
-  "jlcpcb-kicad-library",
-  "horizontal diode",
+  "58v",
   "unidirectional",
   "discrete",
   "akl",
   "alternate",
   "kicad",
-  "library"
+  "library",
+  "do",
+  "bidirectional",
+  "smc",
+  "p600",
+  "horizontal",
+  "smb",
+  "1mm"
  ],
  "facts": {
   "package_family": "D",
@@ -80,7 +70,7 @@
    "A": 35,
    "B": 2
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -163,6 +153,6 @@
   "Alternate-KiCad-Library/Diode_TVS_AKL/TPSMA6L58A",
   "JLCPCB-Kicad-Library/JLCPCB-Diodes/TVS-Uni,SMAJ58A"
  ],
- "embedding_text": "discrete-diode.d.58v | Discrete Diode | 37 discrete diode parts in the 58V/D cluster, covering SMA, SMB, SMC, SOD-123F, SOD-128, DO-15 and P600 footprints (including Zener and TVS variants) in SMD and through-hole mounts; mostly tier A, sourced mainly from Alternate-KiCad-Library. | diode discrete diode 58v zener tvs d package smd through hole smc smb sma sod-123f sod-128 do-15 p600 alternate-kicad-library jlcpcb-kicad-library horizontal diode unidirectional discrete akl alternate kicad library | D | 58V",
+ "embedding_text": "discrete-diode.d.58v | Discrete Diode | 37 discrete diode parts for 58V using D footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | diode tvs 58v unidirectional discrete akl alternate kicad library do bidirectional smc p600 horizontal smb 1mm | D | 58V",
  "class": "discrete.diode"
 }

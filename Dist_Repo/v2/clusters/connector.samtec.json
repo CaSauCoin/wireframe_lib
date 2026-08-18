@@ -5,44 +5,34 @@
  "category_path": [
   "Connector"
  ],
- "description": "Cluster of 535 Samtec-footprint connector parts (224 planner-visible) covering LSHM shielded high-density headers, FMC ASP-134602-01, MECF-60 edge, and SSW-x-03-T-S footprints, sourced from dist-legacy, kicad-symbols, and celestial-altium-library.",
+ "description": "535 connector parts using Samtec footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Match the exact Samtec footprint (LSHM row/pitch variant, FMC ASP-134602-01, MECF-60, or SSW-x) to the target mating connector",
-  "Prefer the 2 tier-A entries when available; most parts fall in tier B (222) or tier C (311)",
-  "Use planner_visible parts (224 of 535) as the primary candidate pool",
-  "Confirm required mount type (smd vs through_hole) since the cluster mixes both plus unspecified mounts"
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a Samtec land pattern is intended."
  ],
  "avoid_when": [
-  "The design needs a non-Samtec connector footprint or land pattern",
-  "Only a tier-C, unreviewed part matches and higher confidence is required",
-  "The footprint is unspecified or ambiguous (mount listed as unknown)",
-  "Electrical rating, pin count, or pitch is not confirmed by the specific footprint chosen"
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than Samtec."
  ],
  "keywords": [
   "samtec",
   "connector",
-  "lshm",
-  "shielded header",
-  "fmc connector",
-  "asp-134602-01",
-  "vita 57",
-  "mecf-60",
-  "edge connector",
-  "ssw",
-  "p0.50mm",
-  "p1.27mm",
-  "vertical connector",
-  "polarized edge",
-  "high density connector",
-  "board-to-board",
-  "smd connector",
-  "through hole connector",
   "socket",
   "dv",
   "xx",
   "row",
   "p0",
-  "p1"
+  "p1",
+  "vertical",
+  "shielded",
+  "8mm",
+  "mm",
+  "hsec8",
+  "conn",
+  "0mm",
+  "pin"
  ],
  "facts": {
   "package_family": "Samtec",
@@ -80,7 +70,7 @@
    "B": 222,
    "C": 311
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -661,6 +651,6 @@
   "celestial-altium-library/SAMTEC LSHM-120-02.5-L-DV-A-S/SAMTEC_LSHM-120-02.5-L-DV-A-S",
   "celestial-altium-library/SAMTEC LSHM-150-02.5-L-DV-A-S/SAMTEC_LSHM-150-02.5-L-DV-A-S"
  ],
- "embedding_text": "connector.samtec | Connector | Cluster of 535 Samtec-footprint connector parts (224 planner-visible) covering LSHM shielded high-density headers, FMC ASP-134602-01, MECF-60 edge, and SSW-x-03-T-S footprints, sourced from dist-legacy, kicad-symbols, and celestial-altium-library. | samtec connector lshm shielded header fmc connector asp-134602-01 vita 57 mecf-60 edge connector ssw p0.50mm p1.27mm vertical connector polarized edge high density connector board-to-board smd connector through hole connector socket dv xx row p0 p1 | Samtec | ",
+ "embedding_text": "connector.samtec | Connector | 535 connector parts using Samtec footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | samtec connector socket dv xx row p0 p1 vertical shielded 8mm mm hsec8 conn 0mm pin | Samtec | ",
  "class": "connector"
 }

@@ -5,28 +5,21 @@
  "category_path": [
   "IC"
  ],
- "description": "Integrated circuit cluster containing 2 legacy parts with tier C review status using HED2X5 package footprints.",
+ "description": "2 ic parts using HED2X5 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Verify footprint compatibility between HED2X5_CEN and Hed2X5 variants.",
-  "Confirm electrical specifications and pin mapping for tier C legacy entries.",
-  "Select when an IC using the HED2X5 package family is specified."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a HED2X5 land pattern is intended."
  ],
  "avoid_when": [
-  "The board layout requires a package family other than HED2X5.",
-  "Planner-visible parts or fully reviewed quality tiers are required.",
-  "The design requires known mounting specifications instead of unconfirmed mounts."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than HED2X5."
  ],
  "keywords": [
-  "ic",
   "hed2x5",
-  "hed2x5_cen",
-  "ic.hed2x5",
-  "integrated circuit",
-  "dist-legacy",
-  "tier c",
-  "hed2x5 footprint",
-  "package family hed2x5",
   "cen",
+  "ic",
   "pad",
   "mm",
   "pitch",
@@ -52,13 +45,13 @@
   "tier_counts": {
    "C": 2
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
   "dist-legacy/HED2X5_CEN",
   "dist-legacy/Hed2X5"
  ],
- "embedding_text": "ic.hed2x5 | IC | Integrated circuit cluster containing 2 legacy parts with tier C review status using HED2X5 package footprints. | ic hed2x5 hed2x5_cen ic.hed2x5 integrated circuit dist-legacy tier c hed2x5 footprint package family hed2x5 cen pad mm pitch pins | HED2X5 | ",
+ "embedding_text": "ic.hed2x5 | IC | 2 ic parts using HED2X5 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | hed2x5 cen ic pad mm pitch pins | HED2X5 | ",
  "class": "ic"
 }

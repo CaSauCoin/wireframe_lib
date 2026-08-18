@@ -7,42 +7,34 @@
   "Analog",
   "Audio"
  ],
- "description": "Surface-mount analog audio integrated circuits provided in SOIC package footprints including SOIC-8, SOIC-14W, and SOIC-16.",
+ "description": "7 ic analog audio parts using SOIC footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select based on the required SOIC pin count and footprint size, such as SOIC-8, SOIC-14W, or SOIC-16.",
-  "Verify compatibility with surface-mount (SMD) 1.27mm pitch layout requirements.",
-  "Choose specific parts present in this cluster including LM386, LM1877, PAM8403D, PAM8406D, or SSM2165."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SOIC land pattern is intended."
  ],
  "avoid_when": [
-  "A package family other than SOIC is required.",
-  "Through-hole mounting or non-SMD footprints are required.",
-  "Components outside the IC analog audio classification are required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SOIC."
  ],
  "keywords": [
-  "ic",
-  "analog audio",
-  "audio ic",
   "soic",
-  "soic-8",
-  "soic-16",
-  "soic-14w",
-  "smd",
-  "1.27mm",
-  "lm386",
-  "lm1877",
-  "pam8403d",
-  "pam8406d",
-  "ssm2165",
   "audio",
   "amplifier",
   "p1",
   "27mm",
   "so",
+  "ic",
   "analog",
   "class",
   "9mm",
   "9x4",
-  "power"
+  "power",
+  "stereo",
+  "ab",
+  "dip",
+  "filterless"
  ],
  "facts": {
   "package_family": "SOIC",
@@ -65,7 +57,7 @@
   "tier_counts": {
    "A": 7
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -118,6 +110,6 @@
   "kicad-symbols/Amplifier_Audio/SSM2211S",
   "kicad-symbols/Amplifier_Audio/TDA1308"
  ],
- "embedding_text": "ic-analog-audio.soic | IC Analog Audio | Surface-mount analog audio integrated circuits provided in SOIC package footprints including SOIC-8, SOIC-14W, and SOIC-16. | ic analog audio audio ic soic soic-8 soic-16 soic-14w smd 1.27mm lm386 lm1877 pam8403d pam8406d ssm2165 audio amplifier p1 27mm so analog class 9mm 9x4 power | SOIC | ",
+ "embedding_text": "ic-analog-audio.soic | IC Analog Audio | 7 ic analog audio parts using SOIC footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | soic audio amplifier p1 27mm so ic analog class 9mm 9x4 power stereo ab dip filterless | SOIC | ",
  "class": "ic.analog.audio"
 }

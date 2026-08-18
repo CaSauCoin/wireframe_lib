@@ -6,30 +6,19 @@
   "IC",
   "Power"
  ],
- "description": "Surface-mount power IC cluster containing tier A parts in SSOP-10_3.9x4.9mm_P1.00mm footprint packages including L4984D, L6564, and L6564T.",
+ "description": "3 ic power parts using SSOP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when surface-mount (SMD) power ICs in an SSOP package are needed.",
-  "Confirm requirement for the SSOP-10_3.9x4.9mm_P1.00mm footprint.",
-  "Choose from representative parts including L4984D, L6564, and L6564T."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SSOP land pattern is intended."
  ],
  "avoid_when": [
-  "Avoid when the layout requires a mounting type other than SMD.",
-  "Do not use if a footprint other than SSOP-10_3.9x4.9mm_P1.00mm is required.",
-  "Avoid if the design requires ICs outside the power IC category."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SSOP."
  ],
  "keywords": [
-  "ic",
-  "power",
   "ssop",
-  "ssop-10",
-  "smd",
-  "l4984d",
-  "l6564",
-  "l6564t",
-  "ic.power",
-  "regulator controller",
-  "3.9x4.9mm",
-  "p1.00mm",
   "controller",
   "pfc",
   "regulator",
@@ -38,9 +27,12 @@
   "p1",
   "00mm",
   "smps",
+  "ic",
+  "power",
   "pin",
   "transition",
   "mode",
+  "l4984d",
   "ccm"
  ],
  "facts": {
@@ -62,7 +54,7 @@
   "tier_counts": {
    "A": 3
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -95,6 +87,6 @@
   "kicad-symbols/Regulator_Controller/L6564",
   "kicad-symbols/Regulator_Controller/L6564T"
  ],
- "embedding_text": "ic-power.ssop | IC Power | Surface-mount power IC cluster containing tier A parts in SSOP-10_3.9x4.9mm_P1.00mm footprint packages including L4984D, L6564, and L6564T. | ic power ssop ssop-10 smd l4984d l6564 l6564t ic.power regulator controller 3.9x4.9mm p1.00mm controller pfc regulator 9x4 9mm p1 00mm smps pin transition mode ccm | SSOP | ",
+ "embedding_text": "ic-power.ssop | IC Power | 3 ic power parts using SSOP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | ssop controller pfc regulator 9x4 9mm p1 00mm smps ic power pin transition mode l4984d ccm | SSOP | ",
  "class": "ic.power"
 }

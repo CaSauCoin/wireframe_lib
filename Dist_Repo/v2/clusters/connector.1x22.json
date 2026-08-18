@@ -5,42 +5,34 @@
  "category_path": [
   "Connector"
  ],
- "description": "Through-hole connector cluster for the 1x22 package family, sourced from SparkFun-KiCad-Libraries with 2 parts covering standard 1x22 and 1x22_Locking footprints.",
+ "description": "2 connector parts using 1x22 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Match the exact footprint needed: 1x22 vs 1x22_Locking",
-  "Prefer the higher-tier, higher-score entry (e.g. Conn_01x22, tier B, score 80)",
-  "Confirm through-hole mounting suits the intended board design"
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a 1x22 land pattern is intended."
  ],
  "avoid_when": [
-  "A locking connector is required but only a plain 1x22 part is available, or vice versa",
-  "Surface-mount rather than through-hole mounting is needed",
-  "Electrical ratings or pinout for the chosen part are not documented"
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than 1x22."
  ],
  "keywords": [
+  "sparkfun",
   "connector",
   "1x22",
-  "conn_01x22",
-  "conn 01x22",
-  "sparkfun",
-  "through hole",
-  "pth",
   "locking",
-  "1x22_locking",
-  "22 pin",
-  "22 position",
-  "pin header",
-  "header connector",
-  "kicad",
-  "sparkfun-kicad-libraries",
-  "through-hole connector",
   "conn",
   "01x22",
+  "pth",
   "https",
   "web",
   "basic",
   "through",
   "hole",
-  "pad"
+  "pad",
+  "mm",
+  "pitch",
+  "pins"
  ],
  "facts": {
   "package_family": "1x22",
@@ -63,7 +55,7 @@
    "B": 1,
    "C": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -79,6 +71,6 @@
   "SparkFun-KiCad-Libraries/SparkFun-Connector/Conn_01x22",
   "SparkFun-KiCad-Libraries/SparkFun-Connector/Conn_01x22_Locking"
  ],
- "embedding_text": "connector.1x22 | Connector | Through-hole connector cluster for the 1x22 package family, sourced from SparkFun-KiCad-Libraries with 2 parts covering standard 1x22 and 1x22_Locking footprints. | connector 1x22 conn_01x22 conn 01x22 sparkfun through hole pth locking 1x22_locking 22 pin 22 position pin header header connector kicad sparkfun-kicad-libraries through-hole connector conn 01x22 https web basic through hole pad | 1x22 | ",
+ "embedding_text": "connector.1x22 | Connector | 2 connector parts using 1x22 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | sparkfun connector 1x22 locking conn 01x22 pth https web basic through hole pad mm pitch pins | 1x22 | ",
  "class": "connector"
 }

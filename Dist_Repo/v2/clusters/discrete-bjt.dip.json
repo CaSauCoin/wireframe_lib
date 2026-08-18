@@ -6,35 +6,27 @@
   "Discrete",
   "BJT"
  ],
- "description": "Discrete BJT transistor cluster in DIP-8 through-hole packages (DIP-8_W7.62mm_LongPads), containing two tier-A parts, STD830CP40 and STD830CP40-H, from the Alternate-KiCad-Library source.",
+ "description": "2 discrete bjt parts using DIP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Both available parts are tier A with an identical score of 100.",
-  "Confirm the footprint matches DIP-8_W7.62mm_LongPads exactly before use.",
-  "Distinguish STD830CP40 from STD830CP40-H by part name/variant suffix when picking one."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a DIP land pattern is intended."
  ],
  "avoid_when": [
-  "Design requires a surface-mount or non-DIP package.",
-  "Board layout cannot fit a through-hole DIP-8, 7.62mm long-pad footprint.",
-  "Cluster review status is 'generated', so verify part data before relying on it for production."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than DIP."
  ],
  "keywords": [
   "dip",
-  "dip-8",
-  "discrete bjt",
-  "bjt",
   "transistor",
-  "through hole",
   "std830cp40",
-  "std830cp40-h",
-  "akl",
-  "alternate-kicad-library",
-  "kicad library",
-  "7.62mm",
-  "longpads",
-  "tier a",
+  "bjt",
   "npn",
   "pnp",
   "62mm",
+  "longpads",
+  "akl",
   "array",
   "400v",
   "3a",
@@ -62,7 +54,7 @@
   "tier_counts": {
    "A": 2
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -86,6 +78,6 @@
   "Alternate-KiCad-Library/Transistor_BJT_AKL/STD830CP40",
   "Alternate-KiCad-Library/Transistor_BJT_AKL/STD830CP40-H"
  ],
- "embedding_text": "discrete-bjt.dip | Discrete BJT | Discrete BJT transistor cluster in DIP-8 through-hole packages (DIP-8_W7.62mm_LongPads), containing two tier-A parts, STD830CP40 and STD830CP40-H, from the Alternate-KiCad-Library source. | dip dip-8 discrete bjt bjt transistor through hole std830cp40 std830cp40-h akl alternate-kicad-library kicad library 7.62mm longpads tier a npn pnp 62mm array 400v 3a 3w alternate kicad library | DIP | ",
+ "embedding_text": "discrete-bjt.dip | Discrete BJT | 2 discrete bjt parts using DIP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | dip transistor std830cp40 bjt npn pnp 62mm longpads akl array 400v 3a 3w alternate kicad library | DIP | ",
  "class": "discrete.bjt"
 }

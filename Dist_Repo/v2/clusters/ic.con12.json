@@ -5,28 +5,20 @@
  "category_path": [
   "IC"
  ],
- "description": "IC cluster containing 1 tier C part using the con12 package family and con12_2 footprint.",
+ "description": "1 ic parts using con12 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Verify footprint compatibility with the con12_2 land pattern.",
-  "Check tier C quality level and dist-legacy source record.",
-  "Confirm package dimensions and pinout prior to PCB layout."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a con12 land pattern is intended."
  ],
  "avoid_when": [
-  "The layout requires a package family other than con12.",
-  "Planner-visible parts or higher quality tiers are required.",
-  "Electrical ratings or physical specifications are unverified."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than con12."
  ],
  "keywords": [
-  "ic",
   "con12",
-  "con12_2",
-  "footprint",
-  "package family",
-  "tier c",
-  "dist-legacy",
-  "unknown mount",
-  "con12 footprint",
-  "ic cluster",
+  "ic",
   "pad",
   "mm",
   "pitch",
@@ -51,12 +43,12 @@
   "tier_counts": {
    "C": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
   "dist-legacy/con12_2"
  ],
- "embedding_text": "ic.con12 | IC | IC cluster containing 1 tier C part using the con12 package family and con12_2 footprint. | ic con12 con12_2 footprint package family tier c dist-legacy unknown mount con12 footprint ic cluster pad mm pitch pins | con12 | ",
+ "embedding_text": "ic.con12 | IC | 1 ic parts using con12 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | con12 ic pad mm pitch pins | con12 | ",
  "class": "ic"
 }

@@ -6,32 +6,23 @@
   "Discrete",
   "Transistor"
  ],
- "description": "Cluster of 12 Tier-A discrete 100V transistors in a DIP through-hole package using the Vishay_HVM-DIP-3_W7.62mm footprint.",
+ "description": "12 discrete transistor parts for 100V using DIP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Use when a 100V discrete transistor in a DIP package is required.",
-  "Select for through-hole designs compatible with the Vishay_HVM-DIP-3_W7.62mm footprint.",
-  "Choose when sourcing Tier-A parts from Alternate-KiCad-Library."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a DIP land pattern is intended."
  ],
  "avoid_when": [
-  "Do not use if surface-mount (SMD) components are required.",
-  "Avoid when the PCB layout requires a footprint other than Vishay_HVM-DIP-3_W7.62mm.",
-  "Avoid if the design requires a package family other than DIP."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than DIP."
  ],
  "keywords": [
-  "discrete transistor",
-  "transistor",
-  "100v",
-  "dip",
-  "through hole",
-  "vishay_hvm-dip-3_w7.62mm",
-  "alternate-kicad-library",
-  "irfd110",
-  "irfd120",
-  "irfd9110",
-  "irfd9120",
-  "irld110",
   "mosfet",
+  "dip",
+  "transistor",
   "enchancement",
+  "100v",
   "vishay",
   "62mm",
   "akl",
@@ -41,7 +32,8 @@
   "kicad",
   "library",
   "hvm",
-  "w7"
+  "w7",
+  "tht"
  ],
  "facts": {
   "package_family": "DIP",
@@ -64,7 +56,7 @@
   "tier_counts": {
    "A": 12
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -122,6 +114,6 @@
   "Alternate-KiCad-Library/Transistor_MOSFET_AKL/SiHLD110",
   "Alternate-KiCad-Library/Transistor_MOSFET_AKL/SiHLD120"
  ],
- "embedding_text": "discrete-transistor.dip.100v | Discrete Transistor | Cluster of 12 Tier-A discrete 100V transistors in a DIP through-hole package using the Vishay_HVM-DIP-3_W7.62mm footprint. | discrete transistor transistor 100v dip through hole vishay_hvm-dip-3_w7.62mm alternate-kicad-library irfd110 irfd120 irfd9110 irfd9120 irld110 mosfet enchancement vishay 62mm akl mode 3w alternate kicad library hvm w7 | DIP | 100V",
+ "embedding_text": "discrete-transistor.dip.100v | Discrete Transistor | 12 discrete transistor parts for 100V using DIP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | mosfet dip transistor enchancement 100v vishay 62mm akl mode 3w alternate kicad library hvm w7 tht | DIP | 100V",
  "class": "discrete.transistor"
 }

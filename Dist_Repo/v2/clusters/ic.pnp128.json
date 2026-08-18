@@ -5,28 +5,20 @@
  "category_path": [
   "IC"
  ],
- "description": "Cluster of 3 integrated circuit components in the PNP128 package family supporting PNP128_L, PNP128_M, and PNP128_N footprints.",
+ "description": "3 ic parts using PNP128 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when using components in the PNP128 package family.",
-  "Choose between PNP128_L, PNP128_M, and PNP128_N footprint variants.",
-  "Verify part details manually as all components are quality tier C."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a PNP128 land pattern is intended."
  ],
  "avoid_when": [
-  "The design requires package footprints other than PNP128_L, PNP128_M, or PNP128_N.",
-  "High-tier verified parts or planner-visible components are required.",
-  "A defined mounting type is needed, as the mounting specification is unknown."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than PNP128."
  ],
  "keywords": [
   "pnp128",
   "ic",
-  "integrated circuit",
-  "pnp128_l",
-  "pnp128_m",
-  "pnp128_n",
-  "dist-legacy",
-  "tier c",
-  "pnp128 package",
-  "pnp128 footprint",
   "pad",
   "mm",
   "pitch",
@@ -53,7 +45,7 @@
   "tier_counts": {
    "C": 3
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
@@ -61,6 +53,6 @@
   "dist-legacy/PNP128_M",
   "dist-legacy/PNP128_N"
  ],
- "embedding_text": "ic.pnp128 | IC | Cluster of 3 integrated circuit components in the PNP128 package family supporting PNP128_L, PNP128_M, and PNP128_N footprints. | pnp128 ic integrated circuit pnp128_l pnp128_m pnp128_n dist-legacy tier c pnp128 package pnp128 footprint pad mm pitch pins | PNP128 | ",
+ "embedding_text": "ic.pnp128 | IC | 3 ic parts using PNP128 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | pnp128 ic pad mm pitch pins | PNP128 | ",
  "class": "ic"
 }

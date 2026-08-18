@@ -5,25 +5,20 @@
  "category_path": [
   "IC"
  ],
- "description": "IC cluster in the SW2 package family containing 3 tier C parts with footprints SW2-D1, SW2-D2, and SW2_D.",
+ "description": "3 ic parts using SW2 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Verify compatibility with SW2 package family footprints SW2-D1, SW2-D2, or SW2_D.",
-  "Check part specifications given all 3 entries are quality tier C with unknown mount type."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SW2 land pattern is intended."
  ],
  "avoid_when": [
-  "The design requires a package family other than SW2.",
-  "Verified planner-visible parts or tier A/B quality parts are required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SW2."
  ],
  "keywords": [
-  "ic",
   "sw2",
-  "sw2-d1",
-  "sw2-d2",
-  "sw2_d",
-  "package sw2",
-  "tier c",
-  "dist-legacy",
-  "ic sw2",
+  "ic",
   "d1",
   "d2",
   "pad",
@@ -52,7 +47,7 @@
   "tier_counts": {
    "C": 3
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
@@ -60,6 +55,6 @@
   "dist-legacy/SW2-D2",
   "dist-legacy/SW2_D"
  ],
- "embedding_text": "ic.sw2 | IC | IC cluster in the SW2 package family containing 3 tier C parts with footprints SW2-D1, SW2-D2, and SW2_D. | ic sw2 sw2-d1 sw2-d2 sw2_d package sw2 tier c dist-legacy ic sw2 d1 d2 pad mm pitch pins | SW2 | ",
+ "embedding_text": "ic.sw2 | IC | 3 ic parts using SW2 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | sw2 ic d1 d2 pad mm pitch pins | SW2 | ",
  "class": "ic"
 }

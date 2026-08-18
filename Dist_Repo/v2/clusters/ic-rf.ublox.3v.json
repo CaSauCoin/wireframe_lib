@@ -6,36 +6,31 @@
   "IC",
   "RF"
  ],
- "description": "RF IC cluster featuring 3V surface-mount components in ublox_LEA footprints from KiCad symbols.",
+ "description": "1 ic rf parts for 3V using ublox footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when a 3V surface-mount RF IC is required.",
-  "Choose for designs using the ublox_LEA footprint.",
-  "Verify part requirements against KiCad symbol LEA-M8F."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a ublox land pattern is intended."
  ],
  "avoid_when": [
-  "Avoid when non-SMD or through-hole mounting is required.",
-  "Avoid if the design requires a footprint other than ublox_LEA.",
-  "Avoid when operating voltages other than 3V are required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than ublox."
  ],
  "keywords": [
-  "ic",
-  "rf",
-  "ic rf",
-  "3v",
-  "ublox",
-  "ublox_lea",
   "lea",
-  "lea-m8f",
-  "smd",
-  "kicad-symbols",
+  "ublox",
   "gps",
+  "rf",
   "gnss",
   "module",
+  "3v",
   "m8f",
   "m8",
   "vcc",
   "to",
-  "6v"
+  "6v",
+  "ic"
  ],
  "facts": {
   "package_family": "ublox",
@@ -58,7 +53,7 @@
   "tier_counts": {
    "B": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -73,6 +68,6 @@
  "part_ids": [
   "kicad-symbols/RF_GPS/LEA-M8F"
  ],
- "embedding_text": "ic-rf.ublox.3v | IC RF | RF IC cluster featuring 3V surface-mount components in ublox_LEA footprints from KiCad symbols. | ic rf ic rf 3v ublox ublox_lea lea lea-m8f smd kicad-symbols gps gnss module m8f m8 vcc to 6v | ublox | 3V",
+ "embedding_text": "ic-rf.ublox.3v | IC RF | 1 ic rf parts for 3V using ublox footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | lea ublox gps rf gnss module 3v m8f m8 vcc to 6v ic | ublox | 3V",
  "class": "ic.rf"
 }

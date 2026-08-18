@@ -6,32 +6,25 @@
   "IC",
   "Memory"
  ],
- "description": "IC memory cluster featuring surface-mount BGA parts supporting 5V and 2.7V voltage facets.",
+ "description": "1 ic memory parts for 5V, 2.7V using BGA footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when requiring IC memory in a BGA package family.",
-  "Verify footprint match for Alliance_TFBGA-36_6x8mm_Layout6x8_P0.75mm.",
-  "Confirm design requirement aligns with 5V or 2.7V facets."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a BGA land pattern is intended."
  ],
  "avoid_when": [
-  "Avoid if non-BGA or through-hole mounting is required.",
-  "Avoid if operating voltage differs from 5V or 2.7V facets.",
-  "Avoid if the Alliance_TFBGA-36_6x8mm_Layout6x8_P0.75mm footprint is incompatible."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than BGA."
  ],
  "keywords": [
-  "ic memory",
-  "memory ic",
-  "bga",
-  "smd",
-  "5v",
-  "2.7v",
-  "as6c1008-xxb",
-  "as6c1008",
-  "tfbga",
-  "tfbga-36",
-  "alliance_tfbga-36_6x8mm_layout6x8_p0.75mm",
   "memory",
   "power",
   "7v",
+  "5v",
+  "tfbga",
+  "bga",
+  "as6c1008",
   "xxb",
   "ram",
   "mbit",
@@ -64,7 +57,7 @@
   "tier_counts": {
    "B": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -79,6 +72,6 @@
  "part_ids": [
   "kicad-symbols/Memory_RAM/AS6C1008-xxB"
  ],
- "embedding_text": "ic-memory.bga.5v.2-7v | IC Memory | IC memory cluster featuring surface-mount BGA parts supporting 5V and 2.7V voltage facets. | ic memory memory ic bga smd 5v 2.7v as6c1008-xxb as6c1008 tfbga tfbga-36 alliance_tfbga-36_6x8mm_layout6x8_p0.75mm memory power 7v xxb ram mbit 128k bit low cmos sram single | BGA | 5V 2.7V",
+ "embedding_text": "ic-memory.bga.5v.2-7v | IC Memory | 1 ic memory parts for 5V, 2.7V using BGA footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | memory power 7v 5v tfbga bga as6c1008 xxb ram mbit 128k bit low cmos sram single | BGA | 5V 2.7V",
  "class": "ic.memory"
 }

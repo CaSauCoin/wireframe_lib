@@ -5,28 +5,20 @@
  "category_path": [
   "IC"
  ],
- "description": "IC cluster containing 3 Tier C parts using HDR2X10 and HDR2X10_CEN footprints with unknown mount types.",
+ "description": "3 ic parts using HDR2X10 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Match design footprint requirements against HDR2X10 and HDR2X10_CEN land patterns.",
-  "Verify part specifications thoroughly as all entries are classified in Tier C.",
-  "Check mounting and package compatibility given unknown mount status."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a HDR2X10 land pattern is intended."
  ],
  "avoid_when": [
-  "The design requires footprints other than HDR2X10 or HDR2X10_CEN.",
-  "Tier C parts with unknown mount types are unacceptable for production standards.",
-  "Planner-visible components are required, as this cluster has a count of zero."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than HDR2X10."
  ],
  "keywords": [
-  "ic",
   "hdr2x10",
-  "hdr2x10_cen",
-  "hdr2x10 cen",
-  "ic hdr2x10",
-  "tier c",
-  "dist-legacy",
-  "package family hdr2x10",
-  "hdr2x10 footprint",
-  "ic component",
+  "ic",
   "cen",
   "duplicate",
   "pad",
@@ -55,7 +47,7 @@
   "tier_counts": {
    "C": 3
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
@@ -63,6 +55,6 @@
   "dist-legacy/HDR2X10 - duplicate1",
   "dist-legacy/HDR2X10_CEN"
  ],
- "embedding_text": "ic.hdr2x10 | IC | IC cluster containing 3 Tier C parts using HDR2X10 and HDR2X10_CEN footprints with unknown mount types. | ic hdr2x10 hdr2x10_cen hdr2x10 cen ic hdr2x10 tier c dist-legacy package family hdr2x10 hdr2x10 footprint ic component cen duplicate pad mm pitch pins duplicate1 | HDR2X10 | ",
+ "embedding_text": "ic.hdr2x10 | IC | 3 ic parts using HDR2X10 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | hdr2x10 ic cen duplicate pad mm pitch pins duplicate1 | HDR2X10 | ",
  "class": "ic"
 }

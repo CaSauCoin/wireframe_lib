@@ -5,27 +5,22 @@
  "category_path": [
   "IC"
  ],
- "description": "Integrated circuit cluster containing 2 parts in the USD package family with USD_DM3AT and USD_DM3CS footprints.",
+ "description": "2 ic parts using USD footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when requiring USD package family components.",
-  "Verify compatibility with USD_DM3AT or USD_DM3CS footprint patterns.",
-  "Confirm part specifications given tier C quality rating."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a USD land pattern is intended."
  ],
  "avoid_when": [
-  "The board design requires a package family other than USD.",
-  "Footprints other than USD_DM3AT or USD_DM3CS are required.",
-  "High-tier or planner-visible parts are specifically required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than USD."
  ],
  "keywords": [
-  "ic",
   "usd",
-  "usd_dm3at",
-  "usd_dm3cs",
   "dm3at",
   "dm3cs",
-  "usd package",
-  "usd footprint",
-  "integrated circuit",
+  "ic",
   "pad",
   "mm",
   "pitch",
@@ -51,13 +46,13 @@
   "tier_counts": {
    "C": 2
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
   "dist-legacy/USD_DM3AT",
   "dist-legacy/USD_DM3CS"
  ],
- "embedding_text": "ic.usd | IC | Integrated circuit cluster containing 2 parts in the USD package family with USD_DM3AT and USD_DM3CS footprints. | ic usd usd_dm3at usd_dm3cs dm3at dm3cs usd package usd footprint integrated circuit pad mm pitch pins | USD | ",
+ "embedding_text": "ic.usd | IC | 2 ic parts using USD footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | usd dm3at dm3cs ic pad mm pitch pins | USD | ",
  "class": "ic"
 }

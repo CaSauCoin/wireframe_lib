@@ -6,44 +6,34 @@
   "Discrete",
   "Bridge Rectifier"
  ],
- "description": "Cluster of 23 discrete 80V bridge rectifier parts using Diode-family footprints (round, DIL, SMD, and through-hole variants); 22 tier A and 1 tier B entries sourced from kicad-symbols and Alternate-KiCad-Library.",
+ "description": "23 discrete bridge rectifier parts for 80V using Diode footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Prefer tier A entries (22 of 23 parts) for symbol-footprint reliability",
-  "Match the exact footprint variant (e.g. Round D9.8mm, KBPC6, MicroDil) to your PCB land pattern",
-  "Confirm 80V rating meets your circuit's required reverse voltage margin",
-  "Check mount type (smd vs through_hole) against your assembly process"
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a Diode land pattern is intended."
  ],
  "avoid_when": [
-  "Design requires a voltage rating other than 80V",
-  "No footprint in this cluster matches the intended land pattern",
-  "Part is the single tier B entry and a tier A alternative fits your footprint",
-  "A non-Diode package family is required by the board layout"
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than Diode."
  ],
  "keywords": [
-  "bridge rectifier",
-  "diode bridge",
-  "80v",
-  "discrete",
-  "rectifier",
-  "diode",
-  "smd",
-  "through hole",
-  "round package",
-  "kbpc",
-  "so-dil-slim",
-  "microdil",
-  "kicad-symbols",
-  "alternate-kicad-library",
-  "b80c series",
-  "tier a",
-  "package footprint",
   "bridge",
+  "diode",
+  "rectifier",
+  "80v",
   "0mm",
+  "discrete",
   "akl",
   "alternate",
   "kicad",
   "library",
-  "diotec"
+  "diotec",
+  "so",
+  "dil",
+  "slim",
+  "vrms",
+  "if"
  ],
  "facts": {
   "package_family": "Diode",
@@ -78,7 +68,7 @@
    "A": 22,
    "B": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -147,6 +137,6 @@
   "kicad-symbols/Diode_Bridge/VS-KBPC802",
   "Alternate-KiCad-Library/Diode_Bridge_AKL/S40"
  ],
- "embedding_text": "discrete-bridge.diode.80v | Discrete Bridge Rectifier | Cluster of 23 discrete 80V bridge rectifier parts using Diode-family footprints (round, DIL, SMD, and through-hole variants); 22 tier A and 1 tier B entries sourced from kicad-symbols and Alternate-KiCad-Library. | bridge rectifier diode bridge 80v discrete rectifier diode smd through hole round package kbpc so-dil-slim microdil kicad-symbols alternate-kicad-library b80c series tier a package footprint bridge 0mm akl alternate kicad library diotec | Diode | 80V",
+ "embedding_text": "discrete-bridge.diode.80v | Discrete Bridge Rectifier | 23 discrete bridge rectifier parts for 80V using Diode footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | bridge diode rectifier 80v 0mm discrete akl alternate kicad library diotec so dil slim vrms if | Diode | 80V",
  "class": "discrete.bridge"
 }

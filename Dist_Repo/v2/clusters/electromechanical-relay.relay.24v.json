@@ -6,34 +6,23 @@
   "Electromechanical",
   "Relay"
  ],
- "description": "This cluster contains 19 electromechanical 24V relay components available in surface-mount and through-hole options across SPST, SPDT, and DPDT contact footprints.",
+ "description": "19 electromechanical relay parts for 24V using Relay footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "A 24V electromechanical relay is required with SMD or through-hole mounting.",
-  "Selecting from 19 parts available in SPST, SPDT, or DPDT footprint variants.",
-  "Matching specific footprints such as Kemet EC2/EE2, Panasonic ALFG, Hongfa JQC-3FF, or Schrack RT1."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a Relay land pattern is intended."
  ],
  "avoid_when": [
-  "A coil voltage other than 24V is required.",
-  "Solid-state or non-electromechanical switching is needed.",
-  "The layout requires a mounting style other than surface-mount or through-hole."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than Relay."
  ],
  "keywords": [
-  "electromechanical relay",
-  "24v relay",
   "relay",
-  "24v",
-  "smd",
-  "through hole",
-  "dpdt",
-  "spst",
-  "spdt",
-  "kemet ec2",
-  "kemet ee2",
-  "panasonic alfg",
-  "hongfa jqc-3ff",
-  "schrack rt1",
   "coil",
+  "dpdt",
   "double",
+  "24v",
   "signal",
   "kemet",
   "latching",
@@ -41,7 +30,10 @@
   "ee2",
   "ec2",
   "electromechanical",
-  "pole"
+  "smd",
+  "pole",
+  "single",
+  "spst"
  ],
  "facts": {
   "package_family": "Relay",
@@ -77,7 +69,7 @@
    "A": 13,
    "B": 6
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -142,6 +134,6 @@
   "kicad-symbols/Relay/Panasonic_ALFG2PF24",
   "kicad-symbols/Relay/Panasonic_ALFG2PF241"
  ],
- "embedding_text": "electromechanical-relay.relay.24v | Electromechanical Relay | This cluster contains 19 electromechanical 24V relay components available in surface-mount and through-hole options across SPST, SPDT, and DPDT contact footprints. | electromechanical relay 24v relay relay 24v smd through hole dpdt spst spdt kemet ec2 kemet ee2 panasonic alfg hongfa jqc-3ff schrack rt1 coil double signal kemet latching dc ee2 ec2 electromechanical pole | Relay | 24V",
+ "embedding_text": "electromechanical-relay.relay.24v | Electromechanical Relay | 19 electromechanical relay parts for 24V using Relay footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | relay coil dpdt double 24v signal kemet latching dc ee2 ec2 electromechanical smd pole single spst | Relay | 24V",
  "class": "electromechanical.relay"
 }

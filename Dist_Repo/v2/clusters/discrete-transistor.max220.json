@@ -6,28 +6,21 @@
   "Discrete",
   "Transistor"
  ],
- "description": "Discrete transistor cluster containing 1 tier C part associated with the MAX220 package family and MAX220 footprint.",
+ "description": "1 discrete transistor parts using MAX220 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Verify exact footprint and package dimensions for MAX220 before PCB design.",
-  "Check pinout and electrical ratings independently as this cluster contains tier C generated data.",
-  "Use when requiring a discrete transistor in a MAX220 footprint."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a MAX220 land pattern is intended."
  ],
  "avoid_when": [
-  "The PCB layout requires a package family or footprint other than MAX220.",
-  "Fully verified tier A or planner-visible parts are required.",
-  "The mounting type must be defined, as the cluster mount style is unknown."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than MAX220."
  ],
  "keywords": [
+  "max220",
   "discrete",
   "transistor",
-  "discrete transistor",
-  "max220",
-  "max220 footprint",
-  "max220 package",
-  "discrete.transistor",
-  "dist-legacy",
-  "tier c",
-  "generated review",
   "pad",
   "mm",
   "pitch",
@@ -52,12 +45,12 @@
   "tier_counts": {
    "C": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
   "dist-legacy/MAX220"
  ],
- "embedding_text": "discrete-transistor.max220 | Discrete Transistor | Discrete transistor cluster containing 1 tier C part associated with the MAX220 package family and MAX220 footprint. | discrete transistor discrete transistor max220 max220 footprint max220 package discrete.transistor dist-legacy tier c generated review pad mm pitch pins | MAX220 | ",
+ "embedding_text": "discrete-transistor.max220 | Discrete Transistor | 1 discrete transistor parts using MAX220 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | max220 discrete transistor pad mm pitch pins | MAX220 | ",
  "class": "discrete.transistor"
 }

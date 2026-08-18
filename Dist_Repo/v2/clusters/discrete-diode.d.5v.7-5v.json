@@ -6,44 +6,34 @@
   "Discrete",
   "Diode"
  ],
- "description": "Cluster of 139 D-package discrete diodes (zener and TVS types) rated 5V or 7.5V, covering SMD footprints (SMA, SMB, SMC, MELF, MiniMELF, SOD-123/123F/323) and through-hole footprints (DO-35, DO-41).",
+ "description": "139 discrete diode parts for 5V, 7.5V using D footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Match the exact footprint (e.g. D_SMB, D_SOD-123, D_MiniMELF) to your land pattern",
-  "Confirm whether the part is a zener or TVS diode from its name before use",
-  "Prefer tier A entries (131 of 139 parts, score 100)",
-  "Verify the 5V or 7.5V rating fits your circuit before selecting"
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a D land pattern is intended."
  ],
  "avoid_when": [
-  "The design needs a package outside this D-family footprint list",
-  "The required voltage is not 5V or 7.5V",
-  "Symbol-footprint pairing is unverified (review_status: generated)",
-  "The diode type (zener vs TVS) cannot be confirmed from the part name"
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than D."
  ],
  "keywords": [
   "diode",
+  "5v",
   "zener",
   "tvs",
   "discrete",
-  "5v",
-  "7.5v",
-  "d package",
-  "smd",
-  "through hole",
-  "sma",
-  "smb",
-  "smc",
-  "minimelf",
-  "melf",
-  "sod-123",
-  "sod-323",
-  "do-41",
-  "do-35",
-  "horizontal",
   "akl",
   "alternate",
   "kicad",
   "library",
-  "do"
+  "do",
+  "sod",
+  "horizontal",
+  "unidirectional",
+  "smb",
+  "sma",
+  "bidirectional"
  ],
  "facts": {
   "package_family": "D",
@@ -81,7 +71,7 @@
    "A": 131,
    "B": 8
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -266,6 +256,6 @@
   "Alternate-KiCad-Library/Diode_TVS_AKL/TPSMA6L7.5A",
   "Alternate-KiCad-Library/Diode_TVS_AKL/TPSMP7.5A"
  ],
- "embedding_text": "discrete-diode.d.5v.7-5v | Discrete Diode | Cluster of 139 D-package discrete diodes (zener and TVS types) rated 5V or 7.5V, covering SMD footprints (SMA, SMB, SMC, MELF, MiniMELF, SOD-123/123F/323) and through-hole footprints (DO-35, DO-41). | diode zener tvs discrete 5v 7.5v d package smd through hole sma smb smc minimelf melf sod-123 sod-323 do-41 do-35 horizontal akl alternate kicad library do | D | 5V 7.5V",
+ "embedding_text": "discrete-diode.d.5v.7-5v | Discrete Diode | 139 discrete diode parts for 5V, 7.5V using D footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | diode 5v zener tvs discrete akl alternate kicad library do sod horizontal unidirectional smb sma bidirectional | D | 5V 7.5V",
  "class": "discrete.diode"
 }

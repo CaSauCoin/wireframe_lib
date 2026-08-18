@@ -5,33 +5,28 @@
  "category_path": [
   "IC"
  ],
- "description": "Integrated circuit cluster containing two surface-mount parts with I2C interfaces and HDCX080 footprints.",
+ "description": "2 ic parts for I2C using HDCX080 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Selecting I2C ICs requiring an HDCX080 surface-mount footprint.",
-  "Choosing between HUM_HDC2080 and HUM_HDC1080 library entries.",
-  "Using tier B components sourced from chilaboard-altium-library."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a HDCX080 land pattern is intended."
  ],
  "avoid_when": [
-  "Designs requiring through-hole mounting or footprints other than HDCX080.",
-  "Applications needing communication protocols other than I2C.",
-  "Projects requiring verified tier A parts or specific unstated electrical parameters."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than HDCX080."
  ],
  "keywords": [
-  "ic",
-  "i2c",
-  "hdcx080",
-  "hum_hdc2080",
-  "hum_hdc1080",
-  "smd",
-  "chilaboard-altium-library",
-  "tier b",
-  "hdc2080",
-  "hdc1080",
   "sensor",
+  "i2c",
   "hum",
   "humidity",
   "temperature",
+  "hdcx080",
+  "hdc2080",
   "and",
+  "ic",
+  "hdc1080",
   "digital",
   "with",
   "interface",
@@ -60,7 +55,7 @@
   "tier_counts": {
    "B": 2
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -84,6 +79,6 @@
   "chilaboard-altium-library/HUM_HDC2080/HUM_HDC2080",
   "chilaboard-altium-library/HUM_HDC1080/HUM_HDC1080"
  ],
- "embedding_text": "ic.hdcx080.i2c | IC | Integrated circuit cluster containing two surface-mount parts with I2C interfaces and HDCX080 footprints. | ic i2c hdcx080 hum_hdc2080 hum_hdc1080 smd chilaboard-altium-library tier b hdc2080 hdc1080 sensor hum humidity temperature and digital with interface environmental address select | HDCX080 | I2C",
+ "embedding_text": "ic.hdcx080.i2c | IC | 2 ic parts for I2C using HDCX080 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | sensor i2c hum humidity temperature hdcx080 hdc2080 and ic hdc1080 digital with interface environmental address select | HDCX080 | I2C",
  "class": "ic"
 }

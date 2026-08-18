@@ -5,30 +5,20 @@
  "category_path": [
   "IC"
  ],
- "description": "Integrated circuit component cluster containing 22 through-hole parts using TMS250 family footprints from the chilaboard-altium-library source.",
+ "description": "22 ic parts using TMS250 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when requiring a through-hole IC component using a TMS250 package footprint.",
-  "Verify the specific footprint variant matching layout needs, such as TMS250_5 through TMS250_15 or TMS250_R_10.",
-  "Account for quality tier C classification and generated review status across all parts."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a TMS250 land pattern is intended."
  ],
  "avoid_when": [
-  "Surface mount (SMD) packaging is required instead of through-hole mounting.",
-  "The board layout requires package footprints outside the TMS250 family.",
-  "Planner-visible parts or quality tiers higher than tier C are required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than TMS250."
  ],
  "keywords": [
   "tms250",
   "ic",
-  "through hole",
-  "chilaboard altium library",
-  "tms250_5",
-  "tms250_6",
-  "tms250_7",
-  "tms250_8",
-  "tms250_10",
-  "tms250_15",
-  "tms250_r_10",
-  "through hole ic",
   "through",
   "hole",
   "pad",
@@ -66,7 +56,7 @@
   "tier_counts": {
    "C": 22
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
@@ -93,6 +83,6 @@
   "chilaboard-altium-library/TMS250_R_8/TMS250_R_8",
   "chilaboard-altium-library/TMS250_R_9/TMS250_R_9"
  ],
- "embedding_text": "ic.tms250 | IC | Integrated circuit component cluster containing 22 through-hole parts using TMS250 family footprints from the chilaboard-altium-library source. | tms250 ic through hole chilaboard altium library tms250_5 tms250_6 tms250_7 tms250_8 tms250_10 tms250_15 tms250_r_10 through hole ic through hole pad mm pitch pins | TMS250 | ",
+ "embedding_text": "ic.tms250 | IC | 22 ic parts using TMS250 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | tms250 ic through hole pad mm pitch pins | TMS250 | ",
  "class": "ic"
 }

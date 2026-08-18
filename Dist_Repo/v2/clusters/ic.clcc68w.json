@@ -5,28 +5,20 @@
  "category_path": [
   "IC"
  ],
- "description": "Integrated circuit cluster of 3 tier C parts in the CLCC68W package family using CLCC68W_L, CLCC68W_M, or CLCC68W_N footprints.",
+ "description": "3 ic parts using CLCC68W footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when requiring IC parts in the CLCC68W package family.",
-  "Match layout requirements to CLCC68W_L, CLCC68W_M, or CLCC68W_N footprints.",
-  "Review tier C source data and ratings before part selection."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a CLCC68W land pattern is intended."
  ],
  "avoid_when": [
-  "The design requires a package family other than CLCC68W.",
-  "None of the CLCC68W_L, CLCC68W_M, or CLCC68W_N footprints fit the board layout.",
-  "Planner-visible parts or higher quality tier parts are required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than CLCC68W."
  ],
  "keywords": [
   "clcc68w",
   "ic",
-  "clcc68w_l",
-  "clcc68w_m",
-  "clcc68w_n",
-  "integrated circuit",
-  "clcc",
-  "clcc 68w",
-  "package clcc68w",
-  "dist-legacy",
   "pad",
   "mm",
   "pitch",
@@ -53,7 +45,7 @@
   "tier_counts": {
    "C": 3
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
@@ -61,6 +53,6 @@
   "dist-legacy/CLCC68W_M",
   "dist-legacy/CLCC68W_N"
  ],
- "embedding_text": "ic.clcc68w | IC | Integrated circuit cluster of 3 tier C parts in the CLCC68W package family using CLCC68W_L, CLCC68W_M, or CLCC68W_N footprints. | clcc68w ic clcc68w_l clcc68w_m clcc68w_n integrated circuit clcc clcc 68w package clcc68w dist-legacy pad mm pitch pins | CLCC68W | ",
+ "embedding_text": "ic.clcc68w | IC | 3 ic parts using CLCC68W footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | clcc68w ic pad mm pitch pins | CLCC68W | ",
  "class": "ic"
 }

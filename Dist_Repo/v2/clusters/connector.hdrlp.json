@@ -5,36 +5,23 @@
  "category_path": [
   "Connector"
  ],
- "description": "Through-hole HDRLP connector cluster with male and female footprint variants in single-row 1, 1x3, 1x4, and 1x5 pin counts; all 8 parts are tier C, unreviewed, from the chilaboard-altium-library source.",
+ "description": "8 connector parts using HDRLP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Match male (HDRLP_M) vs female (HDRLP_F) footprint to the mating connector",
-  "Match exact pin count footprint: 1, 1x3, 1x4, or 1x5",
-  "All entries are tier C (generated, not manually reviewed) — verify footprint before layout",
-  "Confirm through-hole mounting fits the target board process"
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a HDRLP land pattern is intended."
  ],
  "avoid_when": [
-  "A pin count other than 1, 1x3, 1x4, or 1x5 is needed",
-  "Surface-mount rather than through-hole is required",
-  "A verified higher-tier (non-C) or reviewed part is required",
-  "Electrical ratings or pin function/pitch details are needed but not documented on the part"
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than HDRLP."
  ],
  "keywords": [
   "hdrlp",
   "connector",
-  "header",
-  "pin header",
-  "socket header",
-  "male connector",
-  "female connector",
-  "through hole",
   "1x3",
   "1x4",
   "1x5",
-  "single row",
-  "tier c",
-  "generated",
-  "chilaboard",
-  "altium library",
   "through",
   "hole",
   "pad",
@@ -68,7 +55,7 @@
   "tier_counts": {
    "C": 8
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
@@ -81,6 +68,6 @@
   "chilaboard-altium-library/HDRLP_M_1X4/HDRLP_M_1X4",
   "chilaboard-altium-library/HDRLP_M_1X5/HDRLP_M_1X5"
  ],
- "embedding_text": "connector.hdrlp | Connector | Through-hole HDRLP connector cluster with male and female footprint variants in single-row 1, 1x3, 1x4, and 1x5 pin counts; all 8 parts are tier C, unreviewed, from the chilaboard-altium-library source. | hdrlp connector header pin header socket header male connector female connector through hole 1x3 1x4 1x5 single row tier c generated chilaboard altium library through hole pad pins mm pitch | HDRLP | ",
+ "embedding_text": "connector.hdrlp | Connector | 8 connector parts using HDRLP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | hdrlp connector 1x3 1x4 1x5 through hole pad pins mm pitch | HDRLP | ",
  "class": "connector"
 }

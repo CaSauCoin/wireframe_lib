@@ -5,25 +5,26 @@
  "category_path": [
   "Connector"
  ],
- "description": "Cluster of 16 SMD HDRRS connector parts (male and female, single-row 1x2–1x5 and double-row 2x3–2x6 footprints) sourced from chilaboard-altium-library, all tier C and unreviewed.",
+ "description": "16 connector parts using HDRRS footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Match the exact footprint code (e.g. HDRRS_F_1X4 vs HDRRS_M_1X4) to gender and pin count needed.",
-  "Distinguish single-row (1xN) footprints from double-row (2xN) footprints before selecting.",
-  "All entries are tier C, generated, and not planner-visible — confirm against the source library before committing."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a HDRRS land pattern is intended."
  ],
  "avoid_when": [
-  "A reviewed or higher-tier (non-C) part is required.",
-  "The required pin count or gender is not among the listed HDRRS footprints.",
-  "A through-hole mount is needed, since only SMD variants are present."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than HDRRS."
  ],
  "keywords": [
   "hdrrs",
   "connector",
-  "header",
-  "smd",
-  "surface mount",
-  "male",
-  "female",
+  "surface",
+  "mount",
+  "pad",
+  "mm",
+  "pitch",
+  "pins",
   "1x2",
   "1x3",
   "1x4",
@@ -31,16 +32,7 @@
   "2x3",
   "2x4",
   "2x5",
-  "2x6",
-  "single row",
-  "double row",
-  "chilaboard",
-  "surface",
-  "mount",
-  "pad",
-  "mm",
-  "pitch",
-  "pins"
+  "2x6"
  ],
  "facts": {
   "package_family": "HDRRS",
@@ -72,7 +64,7 @@
   "tier_counts": {
    "C": 16
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
@@ -93,6 +85,6 @@
   "chilaboard-altium-library/HDRRS_M_2X5/HDRRS_M_2X5",
   "chilaboard-altium-library/HDRRS_M_2X6/HDRRS_M_2X6"
  ],
- "embedding_text": "connector.hdrrs | Connector | Cluster of 16 SMD HDRRS connector parts (male and female, single-row 1x2–1x5 and double-row 2x3–2x6 footprints) sourced from chilaboard-altium-library, all tier C and unreviewed. | hdrrs connector header smd surface mount male female 1x2 1x3 1x4 1x5 2x3 2x4 2x5 2x6 single row double row chilaboard surface mount pad mm pitch pins | HDRRS | ",
+ "embedding_text": "connector.hdrrs | Connector | 16 connector parts using HDRRS footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | hdrrs connector surface mount pad mm pitch pins 1x2 1x3 1x4 1x5 2x3 2x4 2x5 2x6 | HDRRS | ",
  "class": "connector"
 }

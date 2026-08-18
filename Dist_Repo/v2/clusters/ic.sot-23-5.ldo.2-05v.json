@@ -5,28 +5,18 @@
  "category_path": [
   "IC"
  ],
- "description": "This cluster contains surface-mount 2.05V LDO integrated circuit parts in a SOT-23-5 package.",
+ "description": "1 ic parts for LDO, 2.05V using SOT-23-5 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Choose when needing a 2.05V LDO IC in a surface-mount SOT-23-5 package.",
-  "Confirm pin assignments and electrical ratings against the specific part datasheet.",
-  "Verify compatibility with KiCad symbol libraries."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SOT-23-5 land pattern is intended."
  ],
  "avoid_when": [
-  "The design requires a voltage output other than 2.05V.",
-  "The PCB footprint requires a package other than SOT-23-5.",
-  "Through-hole mounting is required instead of surface mount."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SOT-23-5."
  ],
  "keywords": [
-  "ic",
-  "ldo",
-  "2.05v",
-  "sot-23-5",
-  "smd",
-  "integrated circuit",
-  "lm4132xmf-2.0",
-  "kicad-symbols",
-  "reference voltage",
-  "sot23",
   "sot",
   "reference",
   "voltage",
@@ -36,6 +26,9 @@
   "048v",
   "to",
   "lm4132xmf",
+  "smd",
+  "ic",
+  "ldo",
   "05v"
  ],
  "facts": {
@@ -60,7 +53,7 @@
   "tier_counts": {
    "A": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -75,6 +68,6 @@
  "part_ids": [
   "kicad-symbols/Reference_Voltage/LM4132xMF-2.0"
  ],
- "embedding_text": "ic.sot-23-5.ldo.2-05v | IC | This cluster contains surface-mount 2.05V LDO integrated circuit parts in a SOT-23-5 package. | ic ldo 2.05v sot-23-5 smd integrated circuit lm4132xmf-2.0 kicad-symbols reference voltage sot23 sot reference voltage precision low dropout 048v to lm4132xmf 05v | SOT-23-5 | LDO 2.05V",
+ "embedding_text": "ic.sot-23-5.ldo.2-05v | IC | 1 ic parts for LDO, 2.05V using SOT-23-5 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | sot reference voltage precision low dropout 048v to lm4132xmf smd ic ldo 05v | SOT-23-5 | LDO 2.05V",
  "class": "ic"
 }

@@ -6,30 +6,24 @@
   "Discrete",
   "FET"
  ],
- "description": "Discrete surface-mount FET cluster featuring 5V and 30V facets in SOT packages such as SOT-523 from KiCad symbols.",
+ "description": "1 discrete fet parts for 5V, 30V using SOT footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select for discrete SMD FET applications requiring 5V or 30V ratings.",
-  "Use when SOT package footprints such as SOT-523 are required.",
-  "Check part specifications for tier B entries from KiCad symbols."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SOT land pattern is intended."
  ],
  "avoid_when": [
-  "Avoid if the design requires non-SMD or non-SOT footprints.",
-  "Avoid when target circuit parameters fall outside 5V and 30V facets.",
-  "Do not use if components other than discrete FETs are needed."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SOT."
  ],
  "keywords": [
-  "discrete",
-  "fet",
   "sot",
-  "sot-523",
-  "5v",
+  "fet",
   "30v",
-  "smd",
+  "5v",
   "2sk3019",
-  "kicad-symbols",
   "transistor",
-  "discrete fet",
-  "tier b",
   "vds",
   "1a",
   "id",
@@ -63,7 +57,7 @@
   "tier_counts": {
    "B": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -78,6 +72,6 @@
  "part_ids": [
   "kicad-symbols/Transistor_FET/2SK3019"
  ],
- "embedding_text": "discrete-fet.sot.5v.30v | Discrete FET | Discrete surface-mount FET cluster featuring 5V and 30V facets in SOT packages such as SOT-523 from KiCad symbols. | discrete fet sot sot-523 5v 30v smd 2sk3019 kicad-symbols transistor discrete fet tier b vds 1a id rds on channel mosfet mcc micro commercial | SOT | 5V 30V",
+ "embedding_text": "discrete-fet.sot.5v.30v | Discrete FET | 1 discrete fet parts for 5V, 30V using SOT footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | sot fet 30v 5v 2sk3019 transistor vds 1a id rds on channel mosfet mcc micro commercial | SOT | 5V 30V",
  "class": "discrete.fet"
 }

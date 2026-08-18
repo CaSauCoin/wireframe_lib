@@ -6,31 +6,20 @@
   "IC",
   "Timing"
  ],
- "description": "Integrated circuit timing cluster of oscillator devices supporting surface-mount and through-hole mounting options across quality tiers A, B, and C.",
+ "description": "86 ic timing parts using Oscillator footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select based on mounting type requirement, supporting SMD or through-hole packages.",
-  "Filter by specific footprint geometry from manufacturers such as SeikoEpson, Fox, SiTime, Abracon, EuroQuartz, or Silicon Labs.",
-  "Choose parts according to desired quality tier (Tier A, B, or C)."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a Oscillator land pattern is intended."
  ],
  "avoid_when": [
-  "Avoid when non-oscillator timing ICs are required.",
-  "Avoid if the design requires mounting options other than SMD or through-hole.",
-  "Avoid when the target layout footprint is not present in the supported Oscillator package list."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than Oscillator."
  ],
  "keywords": [
   "oscillator",
-  "ic timing",
-  "ic.timing",
   "smd",
-  "through hole",
-  "seikoepson",
-  "fox",
-  "sitime",
-  "abracon",
-  "silicon labs",
-  "euroquartz",
-  "ft5hn",
-  "sg-210scd",
   "4pin",
   "ic",
   "timing",
@@ -38,10 +27,13 @@
   "clock",
   "2mm",
   "0mm",
+  "seikoepson",
   "package",
   "5mm",
   "sg",
-  "0x3"
+  "0x3",
+  "2x2",
+  "mm"
  ],
  "facts": {
   "package_family": "Oscillator",
@@ -77,7 +69,7 @@
    "B": 38,
    "C": 36
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -209,6 +201,6 @@
   "dist-legacy/Oscillator_SMD_SI570_SI571_HandSoldering",
   "dist-legacy/Oscillator_SMD_SiTime_SiT9121-6Pin_3.2x2.5mm"
  ],
- "embedding_text": "ic-timing.oscillator | IC Timing | Integrated circuit timing cluster of oscillator devices supporting surface-mount and through-hole mounting options across quality tiers A, B, and C. | oscillator ic timing ic.timing smd through hole seikoepson fox sitime abracon silicon labs euroquartz ft5hn sg-210scd 4pin ic timing crystal clock 2mm 0mm package 5mm sg 0x3 | Oscillator | ",
+ "embedding_text": "ic-timing.oscillator | IC Timing | 86 ic timing parts using Oscillator footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | oscillator smd 4pin ic timing crystal clock 2mm 0mm seikoepson package 5mm sg 0x3 2x2 mm | Oscillator | ",
  "class": "ic.timing"
 }

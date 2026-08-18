@@ -6,31 +6,21 @@
   "Passive",
   "Capacitor"
  ],
- "description": "Passive capacitor cluster containing 3 legacy-sourced parts with CP1.5 package family footprints (CP1.5_2.5, CP1.5_3.4, CP1.5_3.4N) assigned to quality tier C.",
+ "description": "3 passive capacitor parts using CP1.5 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select based on the specific footprint variant needed (CP1.5_2.5, CP1.5_3.4, or CP1.5_3.4N).",
-  "Verify part specifications independently as all entries are tier C with unknown mount type.",
-  "Review legacy source data prior to committing to a PCB design."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a CP1.5 land pattern is intended."
  ],
  "avoid_when": [
-  "The board layout requires a package family other than CP1.5.",
-  "Higher-tier verified parts with planner visibility are required.",
-  "A known, verified mounting type is strictly required from metadata."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than CP1.5."
  ],
  "keywords": [
+  "cp1",
   "passive",
   "capacitor",
-  "passive capacitor",
-  "cp1.5",
-  "cp1-5",
-  "cp1.5_2.5",
-  "cp1.5_3.4",
-  "cp1.5_3.4n",
-  "dist-legacy",
-  "tier c",
-  "footprint",
-  "package family cp1.5",
-  "cp1",
   "4n",
   "pad",
   "mm",
@@ -58,7 +48,7 @@
   "tier_counts": {
    "C": 3
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
@@ -66,6 +56,6 @@
   "dist-legacy/CP1.5_3.4",
   "dist-legacy/CP1.5_3.4N"
  ],
- "embedding_text": "passive-capacitor.cp1-5 | Passive Capacitor | Passive capacitor cluster containing 3 legacy-sourced parts with CP1.5 package family footprints (CP1.5_2.5, CP1.5_3.4, CP1.5_3.4N) assigned to quality tier C. | passive capacitor passive capacitor cp1.5 cp1-5 cp1.5_2.5 cp1.5_3.4 cp1.5_3.4n dist-legacy tier c footprint package family cp1.5 cp1 4n pad mm pitch pins | CP1.5 | ",
+ "embedding_text": "passive-capacitor.cp1-5 | Passive Capacitor | 3 passive capacitor parts using CP1.5 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | cp1 passive capacitor 4n pad mm pitch pins | CP1.5 | ",
  "class": "passive.capacitor"
 }

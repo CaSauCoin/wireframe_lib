@@ -6,44 +6,34 @@
   "Discrete",
   "Diode"
  ],
- "description": "Cluster of 82 discrete 62V diodes (zener and TVS types) using D-family footprints, spanning SMD packages (SMB, SMA, SMC, SMF, MELF, MicroMELF, MiniMELF) and through-hole packages (DO-41, DO-35, DO-201, DO-15).",
+ "description": "82 discrete diode parts for 62V using D footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Match the exact footprint (e.g. D_SMB, D_DO-41, D_MiniMELF) to the intended PCB land pattern",
-  "Confirm whether a zener or TVS diode type is needed; both appear in this cluster",
-  "Prefer tier A entries and verify the 62V rating fits the application",
-  "Check mount type (SMD vs through-hole) against board assembly process"
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a D land pattern is intended."
  ],
  "avoid_when": [
-  "A voltage rating other than 62V is required",
-  "A footprint outside the listed D-family packages is required",
-  "Zener and TVS diode types are not distinguished for the application",
-  "The symbol-footprint pairing is unverified or flagged for review"
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than D."
  ],
  "keywords": [
   "diode",
   "zener",
-  "tvs",
   "62v",
-  "discrete",
-  "d package",
-  "smb",
-  "sma",
-  "smc",
-  "smf",
-  "melf",
-  "micromelf",
-  "minimelf",
-  "do-41",
-  "do-35",
-  "do-201",
-  "do-15",
-  "through hole",
-  "smd",
-  "horizontal",
   "do",
+  "tvs",
+  "discrete",
   "akl",
   "alternate",
-  "kicad"
+  "kicad",
+  "library",
+  "horizontal",
+  "smb",
+  "sod",
+  "sma",
+  "melf",
+  "series"
  ],
  "facts": {
   "package_family": "D",
@@ -80,7 +70,7 @@
    "A": 77,
    "B": 5
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -208,6 +198,6 @@
   "Alternate-KiCad-Library/Diode_TVS_AKL/BZW03-D62",
   "Alternate-KiCad-Library/Diode_Zener_AKL/BZX884-C62"
  ],
- "embedding_text": "discrete-diode.d.62v | Discrete Diode | Cluster of 82 discrete 62V diodes (zener and TVS types) using D-family footprints, spanning SMD packages (SMB, SMA, SMC, SMF, MELF, MicroMELF, MiniMELF) and through-hole packages (DO-41, DO-35, DO-201, DO-15). | diode zener tvs 62v discrete d package smb sma smc smf melf micromelf minimelf do-41 do-35 do-201 do-15 through hole smd horizontal do akl alternate kicad | D | 62V",
+ "embedding_text": "discrete-diode.d.62v | Discrete Diode | 82 discrete diode parts for 62V using D footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | diode zener 62v do tvs discrete akl alternate kicad library horizontal smb sod sma melf series | D | 62V",
  "class": "discrete.diode"
 }

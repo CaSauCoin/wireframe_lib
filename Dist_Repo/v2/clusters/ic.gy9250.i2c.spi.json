@@ -5,31 +5,22 @@
  "category_path": [
   "IC"
  ],
- "description": "IC component cluster supporting I2C and SPI communication interfaces using a through-hole GY9250 footprint.",
+ "description": "1 ic parts for I2C, SPI using GY9250 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when using I2C or SPI serial communication interfaces.",
-  "Use when a through-hole mount GY9250 footprint is required.",
-  "Check part specifications from chilaboard-altium-library before committing to layout."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a GY9250 land pattern is intended."
  ],
  "avoid_when": [
-  "The PCB layout requires a surface-mount package rather than a through-hole GY9250 footprint.",
-  "Communication interfaces other than I2C or SPI are needed.",
-  "A non-GY9250 package footprint is required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than GY9250."
  ],
  "keywords": [
-  "ic",
-  "i2c",
-  "spi",
-  "gy9250",
-  "gy-9250",
-  "through_hole",
-  "through hole",
-  "chilaboard",
-  "altium library",
-  "chilaboard-altium-library",
-  "i2c spi",
-  "gy9250 footprint",
   "gy",
+  "spi",
+  "i2c",
+  "gy9250",
   "sensor",
   "module",
   "motion",
@@ -40,7 +31,8 @@
   "interfaces",
   "imu",
   "accelerometer",
-  "gyroscope"
+  "gyroscope",
+  "ic"
  ],
  "facts": {
   "package_family": "GY9250",
@@ -64,7 +56,7 @@
   "tier_counts": {
    "B": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -79,6 +71,6 @@
  "part_ids": [
   "chilaboard-altium-library/GY-9250/GY-9250"
  ],
- "embedding_text": "ic.gy9250.i2c.spi | IC | IC component cluster supporting I2C and SPI communication interfaces using a through-hole GY9250 footprint. | ic i2c spi gy9250 gy-9250 through_hole through hole chilaboard altium library chilaboard-altium-library i2c spi gy9250 footprint gy sensor module motion with and serial communication interfaces imu accelerometer gyroscope | GY9250 | I2C SPI",
+ "embedding_text": "ic.gy9250.i2c.spi | IC | 1 ic parts for I2C, SPI using GY9250 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | gy spi i2c gy9250 sensor module motion with and serial communication interfaces imu accelerometer gyroscope ic | GY9250 | I2C SPI",
  "class": "ic"
 }

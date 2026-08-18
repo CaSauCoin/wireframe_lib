@@ -6,28 +6,20 @@
   "Discrete",
   "Diode"
  ],
- "description": "Discrete SMD diode cluster rated for 5.25V within the SOT package family and SOT-666 footprint from Alternate-KiCad-Library.",
+ "description": "1 discrete diode parts for 5.25V using SOT footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select for surface-mount 5.25V diode applications requiring a SOT-666 footprint.",
-  "Verify compatibility with SOT package family land patterns.",
-  "Choose tier A rated part entries such as USBLC6-2P6 from Alternate-KiCad-Library."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SOT land pattern is intended."
  ],
  "avoid_when": [
-  "The PCB design requires footprints other than SOT-666 or SOT package family.",
-  "The required voltage rating is different from 5.25V.",
-  "Through-hole or non-SMD mounting is required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SOT."
  ],
  "keywords": [
-  "discrete",
   "diode",
-  "5.25v",
   "sot",
-  "sot-666",
-  "smd",
-  "usblc6-2p6",
-  "alternate-kicad-library",
-  "discrete diode",
-  "tier a",
   "tvs",
   "usblc6",
   "array",
@@ -40,7 +32,8 @@
   "connection",
   "alternate",
   "kicad",
-  "library"
+  "library",
+  "discrete"
  ],
  "facts": {
   "package_family": "SOT",
@@ -63,7 +56,7 @@
   "tier_counts": {
    "A": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -78,6 +71,6 @@
  "part_ids": [
   "Alternate-KiCad-Library/Diode_TVS_AKL/USBLC6-2P6"
  ],
- "embedding_text": "discrete-diode.sot.5-25v | Discrete Diode | Discrete SMD diode cluster rated for 5.25V within the SOT package family and SOT-666 footprint from Alternate-KiCad-Library. | discrete diode 5.25v sot sot-666 smd usblc6-2p6 alternate-kicad-library discrete diode tier a tvs usblc6 array 25v 2p6 akl protected lines positive connection alternate kicad library | SOT | 5.25V",
+ "embedding_text": "discrete-diode.sot.5-25v | Discrete Diode | 1 discrete diode parts for 5.25V using SOT footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | diode sot tvs usblc6 array 25v 2p6 akl protected lines positive connection alternate kicad library discrete | SOT | 5.25V",
  "class": "discrete.diode"
 }

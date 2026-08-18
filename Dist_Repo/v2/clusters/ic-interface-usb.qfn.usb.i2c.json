@@ -7,34 +7,25 @@
   "Interface",
   "USB"
  ],
- "description": "Cluster of 16 surface-mount USB interface ICs featuring USB, I2C, and SPI facets in QFN package variants.",
+ "description": "16 ic interface usb parts for USB, I2C, SPI using QFN footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select based on required interface facets among USB, I2C, and SPI.",
-  "Match the exact QFN footprint variant, pitch, and exposed pad dimensions.",
-  "Prioritize Tier A representative parts including AP33772SDKZ-xx-FA02, CP2615-xx-xM, FT201XQ, FT2232HPQ, and MCP2221AxML."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a QFN land pattern is intended."
  ],
  "avoid_when": [
-  "Designs requiring non-QFN package families.",
-  "Applications requiring through-hole mounting rather than SMD.",
-  "Projects needing interface types other than USB, I2C, or SPI."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than QFN."
  ],
  "keywords": [
   "usb",
   "interface",
   "i2c",
-  "spi",
   "qfn",
-  "smd",
-  "ic",
+  "spi",
   "wqfn",
-  "vqfn",
-  "uqfn",
-  "tqfn",
-  "ft201xq",
-  "ft2232hpq",
-  "mcp2221axml",
-  "cp2615-xx-xm",
-  "ap33772sdkz-xx-fa02",
+  "ic",
   "p0",
   "nolead",
   "5mm",
@@ -42,7 +33,8 @@
   "pd",
   "type",
   "controller",
-  "power"
+  "power",
+  "texas"
  ],
  "facts": {
   "package_family": "QFN",
@@ -79,7 +71,7 @@
    "A": 5,
    "B": 11
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -141,6 +133,6 @@
   "kicad-symbols/Interface_USB/TS3USBCA410",
   "kicad-symbols/Interface_USB/TS3USBCA420"
  ],
- "embedding_text": "ic-interface-usb.qfn.usb.i2c | IC Interface USB | Cluster of 16 surface-mount USB interface ICs featuring USB, I2C, and SPI facets in QFN package variants. | usb interface i2c spi qfn smd ic wqfn vqfn uqfn tqfn ft201xq ft2232hpq mcp2221axml cp2615-xx-xm ap33772sdkz-xx-fa02 p0 nolead 5mm 1ep pd type controller power | QFN | USB I2C SPI",
+ "embedding_text": "ic-interface-usb.qfn.usb.i2c | IC Interface USB | 16 ic interface usb parts for USB, I2C, SPI using QFN footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | usb interface i2c qfn spi wqfn ic p0 nolead 5mm 1ep pd type controller power texas | QFN | USB I2C SPI",
  "class": "ic.interface.usb"
 }

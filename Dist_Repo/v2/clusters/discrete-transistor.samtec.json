@@ -6,32 +6,22 @@
   "Discrete",
   "Transistor"
  ],
- "description": "A cluster of 5 discrete transistor parts utilizing SAMTEC family footprints supporting surface-mount and through-hole mounting.",
+ "description": "5 discrete transistor parts using SAMTEC footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when requiring discrete transistors with SAMTEC footprints such as HPM, UMPS, or UMPT series.",
-  "Verify whether the design requires surface-mount (smd) or through-hole footprint mounting.",
-  "Prefer the Tier B representative part SAMTEC SSW-103-03-T-S over Tier C entries."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SAMTEC land pattern is intended."
  ],
  "avoid_when": [
-  "Avoid when the layout requires standard transistor packages instead of SAMTEC footprints.",
-  "Do not use when electrical ratings or pinouts must be verified beyond the provided facts.",
-  "Avoid if quality tier B or C classifications do not meet project requirements."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SAMTEC."
  ],
  "keywords": [
-  "discrete transistor",
   "samtec",
-  "hpm",
-  "umps",
-  "umpt",
-  "ssw-103-03-t-s",
   "1x03",
-  "5.08mm pitch",
-  "2.0mm pitch",
-  "smd",
-  "through hole",
-  "socket",
-  "terminal",
   "xx",
+  "hpm",
   "08mm",
   "straight",
   "transistor",
@@ -40,6 +30,8 @@
   "0mm",
   "discrete",
   "power",
+  "socket",
+  "terminal",
   "through",
   "hole"
  ],
@@ -69,7 +61,7 @@
    "B": 1,
    "C": 4
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -88,6 +80,6 @@
   "dist-legacy/Samtec_UMPS-03-XX.X-X-V-S_1x03_P2.0mm_Socket",
   "dist-legacy/Samtec_UMPT-03-XX.X-X-V-S_1x03_P2.0mm_Terminal"
  ],
- "embedding_text": "discrete-transistor.samtec | Discrete Transistor | A cluster of 5 discrete transistor parts utilizing SAMTEC family footprints supporting surface-mount and through-hole mounting. | discrete transistor samtec hpm umps umpt ssw-103-03-t-s 1x03 5.08mm pitch 2.0mm pitch smd through hole socket terminal xx 08mm straight transistor pitch5 p2 0mm discrete power through hole | SAMTEC | ",
+ "embedding_text": "discrete-transistor.samtec | Discrete Transistor | 5 discrete transistor parts using SAMTEC footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | samtec 1x03 xx hpm 08mm straight transistor pitch5 p2 0mm discrete power socket terminal through hole | SAMTEC | ",
  "class": "discrete.transistor"
 }

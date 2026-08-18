@@ -6,39 +6,31 @@
   "IC",
   "Memory"
  ],
- "description": "Surface-mount memory IC cluster featuring SPI Flash and EEPROM devices in SOIC-8 (3.9x4.9mm, 1.27mm pitch) footprints with 2.5V and 5V support.",
+ "description": "2 ic memory parts for 5V, SPI, 2.5V using SOIC footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when requiring SMD SPI memory ICs (Flash or EEPROM) in a SOIC-8 footprint.",
-  "Choose for designs operating with 2.5V or 5V supply levels.",
-  "Verify matching with the SOIC-8_3.9x4.9mm_P1.27mm footprint."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SOIC land pattern is intended."
  ],
  "avoid_when": [
-  "Do not use if through-hole or non-SOIC packaging is required.",
-  "Avoid if an interface other than SPI is needed.",
-  "Avoid when non-memory ICs or unsupported voltage levels are required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SOIC."
  ],
  "keywords": [
-  "ic memory",
+  "5v",
   "soic",
-  "soic-8",
   "spi",
+  "memory",
   "eeprom",
   "flash",
-  "smd",
-  "2.5v",
-  "5v",
-  "at25sf081",
-  "m95256",
-  "1.27mm",
-  "3.9x4.9mm",
-  "memory ic",
-  "memory",
   "9x4",
   "9mm",
   "p1",
   "27mm",
   "so",
   "ic",
+  "at25sf081",
   "sshd",
   "mbit",
   "minimum"
@@ -66,7 +58,7 @@
   "tier_counts": {
    "A": 2
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -90,6 +82,6 @@
   "kicad-symbols/Memory_Flash/AT25SF081-SSHD-X",
   "kicad-symbols/Memory_EEPROM/M95256-WMN6P"
  ],
- "embedding_text": "ic-memory.soic.5v.spi | IC Memory | Surface-mount memory IC cluster featuring SPI Flash and EEPROM devices in SOIC-8 (3.9x4.9mm, 1.27mm pitch) footprints with 2.5V and 5V support. | ic memory soic soic-8 spi eeprom flash smd 2.5v 5v at25sf081 m95256 1.27mm 3.9x4.9mm memory ic memory 9x4 9mm p1 27mm so ic sshd mbit minimum | SOIC | 5V SPI 2.5V",
+ "embedding_text": "ic-memory.soic.5v.spi | IC Memory | 2 ic memory parts for 5V, SPI, 2.5V using SOIC footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | 5v soic spi memory eeprom flash 9x4 9mm p1 27mm so ic at25sf081 sshd mbit minimum | SOIC | 5V SPI 2.5V",
  "class": "ic.memory"
 }

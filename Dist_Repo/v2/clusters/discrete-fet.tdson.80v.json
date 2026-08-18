@@ -6,32 +6,21 @@
   "Discrete",
   "FET"
  ],
- "description": "A cluster of 15 surface-mount 80V discrete FET parts in the TDSON package family featuring the TDSON-8-1 footprint.",
+ "description": "15 discrete fet parts for 80V using TDSON footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when an 80V rated surface-mount discrete FET is required.",
-  "Verify footprint compatibility with TDSON-8-1 land patterns.",
-  "Choose from tier A parts available in the KiCad symbols library."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a TDSON land pattern is intended."
  ],
  "avoid_when": [
-  "The circuit requires a voltage rating other than 80V.",
-  "The PCB layout requires a package or footprint other than TDSON-8-1.",
-  "Through-hole mounting is required instead of surface mount."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than TDSON."
  ],
  "keywords": [
-  "discrete",
+  "tdson",
   "fet",
   "80v",
-  "tdson",
-  "tdson-8-1",
-  "smd",
-  "surface mount",
-  "discrete fet",
-  "bsc026n08ns5",
-  "bsc030n08ns5",
-  "bsc037n08ns5",
-  "bsc040n08ns5",
-  "bsc047n08ns3g",
-  "kicad",
   "mosfet",
   "power",
   "optimos",
@@ -40,8 +29,11 @@
   "vds",
   "channel",
   "ron",
+  "discrete",
   "qg",
-  "typ"
+  "typ",
+  "mos",
+  "pg"
  ],
  "facts": {
   "package_family": "TDSON",
@@ -64,7 +56,7 @@
   "tier_counts": {
    "A": 15
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -125,6 +117,6 @@
   "kicad-symbols/Transistor_FET/FDMS86350",
   "kicad-symbols/Transistor_FET/FDMS86350ET80"
  ],
- "embedding_text": "discrete-fet.tdson.80v | Discrete FET | A cluster of 15 surface-mount 80V discrete FET parts in the TDSON package family featuring the TDSON-8-1 footprint. | discrete fet 80v tdson tdson-8-1 smd surface mount discrete fet bsc026n08ns5 bsc030n08ns5 bsc037n08ns5 bsc040n08ns5 bsc047n08ns3g kicad mosfet power optimos transistor id vds channel ron qg typ | TDSON | 80V",
+ "embedding_text": "discrete-fet.tdson.80v | Discrete FET | 15 discrete fet parts for 80V using TDSON footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | tdson fet 80v mosfet power optimos transistor id vds channel ron discrete qg typ mos pg | TDSON | 80V",
  "class": "discrete.fet"
 }

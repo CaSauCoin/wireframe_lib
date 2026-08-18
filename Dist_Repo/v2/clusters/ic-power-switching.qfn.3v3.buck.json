@@ -7,42 +7,34 @@
   "Power",
   "Switching Regulator"
  ],
- "description": "Cluster of surface-mount 3.3V buck switching regulator ICs using QFN-16-1EP and VQFN-16-1EP footprints.",
+ "description": "4 ic power switching regulator parts for 3.3V, buck using QFN footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select between tier A (PAM2305BJE330) and tier B (TPS62132, TPS62142, TPS62152) quality options.",
-  "Match layout requirements for QFN-16 or VQFN-16 3x3mm footprints with exposed pads.",
-  "Verify thermal via requirement specified by VQFN-16-1EP footprint variants."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a QFN land pattern is intended."
  ],
  "avoid_when": [
-  "The design requires a voltage output other than 3.3V.",
-  "The circuit needs a non-buck regulator topology.",
-  "The PCB layout requires non-SMD or non-QFN package footprints."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than QFN."
  ],
  "keywords": [
-  "ic",
-  "power",
-  "switching regulator",
-  "buck",
-  "3.3v",
   "qfn",
-  "vqfn",
-  "smd",
-  "qfn-16-1ep",
-  "vqfn-16-1ep",
-  "pam2305bje330",
-  "tps62132",
-  "tps62142",
-  "tps62152",
-  "3x3mm",
   "regulator",
   "switching",
   "3v",
   "voltage",
   "step",
   "down",
+  "vqfn",
   "fixed",
   "output",
-  "converter"
+  "buck",
+  "converter",
+  "1ep",
+  "3x3mm",
+  "p0",
+  "5mm"
  ],
  "facts": {
   "package_family": "QFN",
@@ -68,7 +60,7 @@
    "A": 1,
    "B": 3
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -110,6 +102,6 @@
   "kicad-symbols/Regulator_Switching/TPS62142",
   "kicad-symbols/Regulator_Switching/TPS62152"
  ],
- "embedding_text": "ic-power-switching.qfn.3v3.buck | IC Power Switching Regulator | Cluster of surface-mount 3.3V buck switching regulator ICs using QFN-16-1EP and VQFN-16-1EP footprints. | ic power switching regulator buck 3.3v qfn vqfn smd qfn-16-1ep vqfn-16-1ep pam2305bje330 tps62132 tps62142 tps62152 3x3mm regulator switching 3v voltage step down fixed output converter | QFN | 3.3V buck",
+ "embedding_text": "ic-power-switching.qfn.3v3.buck | IC Power Switching Regulator | 4 ic power switching regulator parts for 3.3V, buck using QFN footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | qfn regulator switching 3v voltage step down vqfn fixed output buck converter 1ep 3x3mm p0 5mm | QFN | 3.3V buck",
  "class": "ic.power.switching"
 }

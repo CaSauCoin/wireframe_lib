@@ -6,42 +6,34 @@
   "Discrete",
   "Transistor"
  ],
- "description": "Surface-mount discrete transistor cluster containing 13 Tier A parts in TSSOP footprints with a 20V rating.",
+ "description": "13 discrete transistor parts for 20V using TSSOP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Designs require a 20V rated surface-mount discrete transistor.",
-  "Using TSSOP-8 package footprints like 4.4x3mm or 3x3mm with 0.65mm pitch.",
-  "Selecting Tier A parts from the Alternate-KiCad-Library source."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a TSSOP land pattern is intended."
  ],
  "avoid_when": [
-  "Applications require package families other than TSSOP.",
-  "Voltage requirements differ from 20V.",
-  "Through-hole mounting is required instead of SMD."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than TSSOP."
  ],
  "keywords": [
-  "discrete transistor",
   "tssop",
-  "20v",
-  "smd",
-  "tssop-8",
-  "alternate-kicad-library",
-  "discrete",
-  "transistor",
-  "tssop-8_4.4x3mm_p0.65mm",
-  "tssop-8_3x3mm_p0.65mm",
-  "ao8801a",
-  "ao8804",
-  "ao8810",
-  "ao8814",
-  "ao8820",
   "mosfet",
+  "transistor",
   "mos",
+  "20v",
   "enchancement",
   "dual",
   "akl",
   "alternate",
   "kicad",
   "library",
-  "p0"
+  "p0",
+  "65mm",
+  "emos",
+  "emosfet",
+  "discrete"
  ],
  "facts": {
   "package_family": "TSSOP",
@@ -65,7 +57,7 @@
   "tier_counts": {
    "A": 13
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -124,6 +116,6 @@
   "Alternate-KiCad-Library/Transistor_MOSFET_AKL/IRF7607",
   "Alternate-KiCad-Library/Transistor_MOSFET_AKL/Si6926ADQ"
  ],
- "embedding_text": "discrete-transistor.tssop.20v | Discrete Transistor | Surface-mount discrete transistor cluster containing 13 Tier A parts in TSSOP footprints with a 20V rating. | discrete transistor tssop 20v smd tssop-8 alternate-kicad-library discrete transistor tssop-8_4.4x3mm_p0.65mm tssop-8_3x3mm_p0.65mm ao8801a ao8804 ao8810 ao8814 ao8820 mosfet mos enchancement dual akl alternate kicad library p0 | TSSOP | 20V",
+ "embedding_text": "discrete-transistor.tssop.20v | Discrete Transistor | 13 discrete transistor parts for 20V using TSSOP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | tssop mosfet transistor mos 20v enchancement dual akl alternate kicad library p0 65mm emos emosfet discrete | TSSOP | 20V",
  "class": "discrete.transistor"
 }

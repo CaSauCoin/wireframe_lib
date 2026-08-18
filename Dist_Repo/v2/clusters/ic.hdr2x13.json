@@ -5,30 +5,22 @@
  "category_path": [
   "IC"
  ],
- "description": "Integrated circuit cluster containing tier-C parts using HDR2X13, HDR2X13_CEN, and HDR2X13_CEN_LP footprints.",
+ "description": "3 ic parts using HDR2X13 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Verify the required footprint among HDR2X13, HDR2X13_CEN, and HDR2X13_CEN_LP variants.",
-  "Choose when tier-C quality parts from legacy distributor sources are suitable.",
-  "Confirm mounting and pin specifications since mount type is listed as unknown."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a HDR2X13 land pattern is intended."
  ],
  "avoid_when": [
-  "Parts with quality tiers higher than tier-C are required.",
-  "The application requires planner-visible parts.",
-  "The board layout requires a footprint outside the HDR2X13 family."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than HDR2X13."
  ],
  "keywords": [
   "hdr2x13",
-  "ic",
-  "hdr2x13_cen",
-  "hdr2x13_cen_lp",
-  "package family hdr2x13",
-  "tier c",
-  "dist-legacy",
   "cen",
+  "ic",
   "lp",
-  "integrated circuit",
-  "footprints",
-  "unknown mount",
   "pad",
   "mm",
   "pitch",
@@ -55,7 +47,7 @@
   "tier_counts": {
    "C": 3
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
@@ -63,6 +55,6 @@
   "dist-legacy/HDR2X13_CEN",
   "dist-legacy/HDR2X13_CEN_LP"
  ],
- "embedding_text": "ic.hdr2x13 | IC | Integrated circuit cluster containing tier-C parts using HDR2X13, HDR2X13_CEN, and HDR2X13_CEN_LP footprints. | hdr2x13 ic hdr2x13_cen hdr2x13_cen_lp package family hdr2x13 tier c dist-legacy cen lp integrated circuit footprints unknown mount pad mm pitch pins | HDR2X13 | ",
+ "embedding_text": "ic.hdr2x13 | IC | 3 ic parts using HDR2X13 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | hdr2x13 cen ic lp pad mm pitch pins | HDR2X13 | ",
  "class": "ic"
 }

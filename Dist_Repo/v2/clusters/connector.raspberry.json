@@ -5,43 +5,33 @@
  "category_path": [
   "Connector"
  ],
- "description": "Raspberry Pi footprint connector cluster (3 parts, mostly tier B) offering bottom-entry, top-entry, and Zero-socketed through-hole mounting variants for shield-style boards.",
+ "description": "3 connector parts using Raspberry footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Match footprint exactly: shield bottom-entry, shield top-entry, or Pi Zero socketed THT face-down",
-  "Prefer tier B parts (2 of 3) over the single tier C entry",
-  "Confirm mount type (through_hole vs unknown) fits the intended assembly",
-  "Favor SparkFun-KiCad-Libraries sourced parts (2 of 3) over dist-legacy (1 of 3)"
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a Raspberry land pattern is intended."
  ],
  "avoid_when": [
-  "Required footprint is not one of the three listed Raspberry variants",
-  "Design needs surface-mount rather than through-hole mounting",
-  "Part's mount type is unknown and layout requires a confirmed mount",
-  "Only the single tier C part remains a candidate and higher confidence is needed"
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than Raspberry."
  ],
  "keywords": [
   "raspberry",
   "pi",
   "connector",
-  "shield",
-  "bottom entry",
-  "top entry",
+  "sparkfun",
   "zero",
+  "through",
   "socketed",
   "tht",
-  "face down",
-  "through hole",
-  "mounting holes",
-  "pass through",
-  "2x20",
-  "pth",
-  "smd",
-  "sparkfun",
-  "header",
-  "through",
   "facedown",
   "mountingholes",
+  "smd",
   "passthrough",
+  "2x20",
   "hole",
+  "pth",
   "pass"
  ],
  "facts": {
@@ -68,7 +58,7 @@
    "B": 2,
    "C": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -93,6 +83,6 @@
   "SparkFun-KiCad-Libraries/SparkFun-Connector/Raspberry_Pi_2x20_PTH_SMD_Pass_Through_Top_Mount",
   "dist-legacy/Raspberry_Pi_Zero_Socketed_THT_FaceDown_MountingHoles"
  ],
- "embedding_text": "connector.raspberry | Connector | Raspberry Pi footprint connector cluster (3 parts, mostly tier B) offering bottom-entry, top-entry, and Zero-socketed through-hole mounting variants for shield-style boards. | raspberry pi connector shield bottom entry top entry zero socketed tht face down through hole mounting holes pass through 2x20 pth smd sparkfun header through facedown mountingholes passthrough hole pass | Raspberry | ",
+ "embedding_text": "connector.raspberry | Connector | 3 connector parts using Raspberry footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | raspberry pi connector sparkfun zero through socketed tht facedown mountingholes smd passthrough 2x20 hole pth pass | Raspberry | ",
  "class": "connector"
 }

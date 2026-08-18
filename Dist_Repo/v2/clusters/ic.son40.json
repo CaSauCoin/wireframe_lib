@@ -5,33 +5,20 @@
  "category_path": [
   "IC"
  ],
- "description": "Integrated circuit cluster containing 10 surface-mount parts in the SON40 package family across 7 footprint variants.",
+ "description": "10 ic parts using SON40 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when requiring integrated circuits in the SON40 surface-mount package family.",
-  "Match the specific footprint variant such as SON40_10T_2020 or SON40_20_4020.",
-  "Filter by quality tier B or tier C requirements."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SON40 land pattern is intended."
  ],
  "avoid_when": [
-  "Through-hole mounting is required instead of surface-mount (SMD).",
-  "The board design requires a package family other than SON40.",
-  "A tier A quality component is strictly required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SON40."
  ],
  "keywords": [
   "son40",
   "ic",
-  "smd",
-  "surface mount",
-  "chilaboard-altium-library",
-  "son40_10t_2020",
-  "son40_20_4020",
-  "son40_10_2x2",
-  "son40_5_1714",
-  "son40_10_2020",
-  "son40_8_1812",
-  "son40_8t_1714",
-  "vreg_tps51206_son10",
-  "5pb1213_dfn10",
-  "txb0108_son20",
   "surface",
   "mount",
   "10t",
@@ -40,7 +27,12 @@
   "pitch",
   "pins",
   "clock",
-  "2x2"
+  "2x2",
+  "8t",
+  "tps51206",
+  "son10",
+  "voltage",
+  "regulator"
  ],
  "facts": {
   "package_family": "SON40",
@@ -68,7 +60,7 @@
    "B": 3,
    "C": 7
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -108,6 +100,6 @@
   "chilaboard-altium-library/SON40_8_1812/SON40_8_1812",
   "chilaboard-altium-library/SON40_8T_1714/SON40_8T_1714"
  ],
- "embedding_text": "ic.son40 | IC | Integrated circuit cluster containing 10 surface-mount parts in the SON40 package family across 7 footprint variants. | son40 ic smd surface mount chilaboard-altium-library son40_10t_2020 son40_20_4020 son40_10_2x2 son40_5_1714 son40_10_2020 son40_8_1812 son40_8t_1714 vreg_tps51206_son10 5pb1213_dfn10 txb0108_son20 surface mount 10t pad mm pitch pins clock 2x2 | SON40 | ",
+ "embedding_text": "ic.son40 | IC | 10 ic parts using SON40 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | son40 ic surface mount 10t pad mm pitch pins clock 2x2 8t tps51206 son10 voltage regulator | SON40 | ",
  "class": "ic"
 }

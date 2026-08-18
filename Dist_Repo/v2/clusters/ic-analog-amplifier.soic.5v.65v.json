@@ -7,33 +7,23 @@
   "Analog",
   "Amplifier"
  ],
- "description": "This cluster contains 5 surface-mount analog amplifier ICs in SOIC-8 packages associated with 5V and 65V ratings.",
+ "description": "5 ic analog amplifier parts for 5V, 65V using SOIC footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select for surface-mount analog amplifier ICs in SOIC-8 packages.",
-  "Choose when applications match 5V or 65V voltage specifications.",
-  "Select when Tier A KiCad symbols with SOIC-8_3.9x4.9mm_P1.27mm footprints are required."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SOIC land pattern is intended."
  ],
  "avoid_when": [
-  "The application requires through-hole mounting or packages other than SOIC.",
-  "The design requires footprint dimensions different from SOIC-8_3.9x4.9mm_P1.27mm.",
-  "Circuit voltage or amplifier requirements do not align with 5V or 65V ratings."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SOIC."
  ],
  "keywords": [
   "soic",
-  "soic-8",
-  "analog amplifier",
-  "ic.analog.amplifier",
-  "5v",
-  "65v",
-  "smd",
-  "ad8205",
-  "ad8206",
-  "ad8210",
-  "ad8215",
-  "ad8216",
   "amplifier",
-  "kicad-symbols",
   "current",
+  "65v",
+  "5v",
   "bandwidth",
   "gain",
   "vcc",
@@ -42,7 +32,9 @@
   "p1",
   "27mm",
   "so",
-  "hs"
+  "hs",
+  "linear",
+  "ic"
  ],
  "facts": {
   "package_family": "SOIC",
@@ -66,7 +58,7 @@
   "tier_counts": {
    "A": 5
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -117,6 +109,6 @@
   "kicad-symbols/Amplifier_Current/AD8215",
   "kicad-symbols/Amplifier_Current/AD8216"
  ],
- "embedding_text": "ic-analog-amplifier.soic.5v.65v | IC Analog Amplifier | This cluster contains 5 surface-mount analog amplifier ICs in SOIC-8 packages associated with 5V and 65V ratings. | soic soic-8 analog amplifier ic.analog.amplifier 5v 65v smd ad8205 ad8206 ad8210 ad8215 ad8216 amplifier kicad-symbols current bandwidth gain vcc 9x4 9mm p1 27mm so hs | SOIC | 5V 65V",
+ "embedding_text": "ic-analog-amplifier.soic.5v.65v | IC Analog Amplifier | 5 ic analog amplifier parts for 5V, 65V using SOIC footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | soic amplifier current 65v 5v bandwidth gain vcc 9x4 9mm p1 27mm so hs linear ic | SOIC | 5V 65V",
  "class": "ic.analog.amplifier"
 }

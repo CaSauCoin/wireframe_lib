@@ -6,38 +6,30 @@
   "IC",
   "Power"
  ],
- "description": "Power IC cluster for buck applications utilizing surface-mount QFN packaging, such as the WQFN-32-1EP_5x5mm_P0.5mm_EP3.1x3.1mm footprint.",
+ "description": "1 ic power parts for buck using QFN footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select for surface-mount buck regulator applications requiring QFN packaging.",
-  "Verify footprint requirements against WQFN-32-1EP_5x5mm_P0.5mm_EP3.1x3.1mm.",
-  "Review quality tier and symbol source details prior to component selection."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a QFN land pattern is intended."
  ],
  "avoid_when": [
-  "Through-hole mounting is required instead of SMD.",
-  "Package requirements specify footprints outside the QFN package family.",
-  "Power conversion topologies other than buck are required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than QFN."
  ],
  "keywords": [
-  "ic",
-  "power",
   "buck",
-  "qfn",
-  "smd",
   "wqfn",
-  "lm25119",
-  "kicad-symbols",
-  "wqfn-32-1ep",
-  "5x5mm",
-  "p0.5mm",
-  "ep3.1x3.1mm",
   "controller",
   "dual",
   "synchronous",
+  "lm25119",
   "regulator",
   "wide",
   "input",
   "range",
   "1ep",
+  "5x5mm",
   "p0",
   "5mm",
   "ep3",
@@ -64,7 +56,7 @@
   "tier_counts": {
    "B": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -79,6 +71,6 @@
  "part_ids": [
   "kicad-symbols/Regulator_Controller/LM25119"
  ],
- "embedding_text": "ic-power.qfn.buck | IC Power | Power IC cluster for buck applications utilizing surface-mount QFN packaging, such as the WQFN-32-1EP_5x5mm_P0.5mm_EP3.1x3.1mm footprint. | ic power buck qfn smd wqfn lm25119 kicad-symbols wqfn-32-1ep 5x5mm p0.5mm ep3.1x3.1mm controller dual synchronous regulator wide input range 1ep p0 5mm ep3 1x3 | QFN | buck",
+ "embedding_text": "ic-power.qfn.buck | IC Power | 1 ic power parts for buck using QFN footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | buck wqfn controller dual synchronous lm25119 regulator wide input range 1ep 5x5mm p0 5mm ep3 1x3 | QFN | buck",
  "class": "ic.power"
 }

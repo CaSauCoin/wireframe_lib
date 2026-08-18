@@ -6,44 +6,34 @@
   "Discrete",
   "Diode"
  ],
- "description": "Cluster of 60 discrete diode parts in the D package family with a 3.6V facet, spanning SMD and through-hole footprints such as SOD-323, MiniMELF, SMA, and DO-41/DO-35.",
+ "description": "60 discrete diode parts for 3.6V using D footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Prefer tier A entries (56 of 60 parts) with exact footprint matches",
-  "Match mount type: SMD footprints (SOD/SMA/MELF variants) vs through-hole (DO-35, DO-41)",
-  "Verify symbol-footprint pairing before committing to a PCB layout",
-  "Cross-check part source (kicad-symbols vs Alternate-KiCad-Library) for trust level"
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a D land pattern is intended."
  ],
  "avoid_when": [
-  "A voltage, current, or package requirement outside the stated 3.6V/D-family scope is needed",
-  "The symbol-footprint pairing is unverified or flagged for review",
-  "A non-D package footprint is required for the board layout",
-  "Only tier B parts remain and higher-confidence data is required"
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than D."
  ],
  "keywords": [
   "diode",
-  "discrete diode",
-  "3.6v",
-  "d package",
-  "sod-323",
-  "sod-123",
-  "sod-523",
-  "minimelf",
-  "micromelf",
-  "melf",
-  "sma diode",
-  "smf diode",
-  "do-35",
-  "do-41",
-  "horizontal zener footprint",
-  "smd diode",
-  "through hole diode",
-  "kicad symbols",
   "zener",
   "6v",
   "sod",
   "discrete",
   "akl",
-  "alternate"
+  "alternate",
+  "kicad",
+  "library",
+  "do",
+  "horizontal",
+  "500mw",
+  "c3v6",
+  "323f",
+  "minimelf",
+  "series"
  ],
  "facts": {
   "package_family": "D",
@@ -80,7 +70,7 @@
    "A": 56,
    "B": 4
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -186,6 +176,6 @@
   "Alternate-KiCad-Library/Diode_TVS_AKL/AOZ8831DT-03",
   "Alternate-KiCad-Library/Diode_Zener_AKL/BZX884-C3V6"
  ],
- "embedding_text": "discrete-diode.d.3-6v | Discrete Diode | Cluster of 60 discrete diode parts in the D package family with a 3.6V facet, spanning SMD and through-hole footprints such as SOD-323, MiniMELF, SMA, and DO-41/DO-35. | diode discrete diode 3.6v d package sod-323 sod-123 sod-523 minimelf micromelf melf sma diode smf diode do-35 do-41 horizontal zener footprint smd diode through hole diode kicad symbols zener 6v sod discrete akl alternate | D | 3.6V",
+ "embedding_text": "discrete-diode.d.3-6v | Discrete Diode | 60 discrete diode parts for 3.6V using D footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | diode zener 6v sod discrete akl alternate kicad library do horizontal 500mw c3v6 323f minimelf series | D | 3.6V",
  "class": "discrete.diode"
 }

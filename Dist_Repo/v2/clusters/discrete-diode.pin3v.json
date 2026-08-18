@@ -6,27 +6,21 @@
   "Discrete",
   "Diode"
  ],
- "description": "Cluster of 3 discrete diode parts using PIN3V or PIN3V_mini footprints with quality tiers B and C.",
+ "description": "3 discrete diode parts using PIN3V footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when a PIN3V or PIN3V_mini footprint is required.",
-  "Check part quality tier, with one tier B and two tier C parts available.",
-  "Verify part mounting specifications as mount type is specified as unknown."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a PIN3V land pattern is intended."
  ],
  "avoid_when": [
-  "Layout requires footprints other than PIN3V or PIN3V_mini.",
-  "Project requirements exclude tier B or tier C quality parts.",
-  "Explicit surface-mount or through-hole mount specifications are required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than PIN3V."
  ],
  "keywords": [
-  "discrete",
-  "diode",
-  "discrete diode",
   "pin3v",
-  "pin3v_mini",
-  "discrete.diode",
-  "dist-legacy",
-  "tier b",
-  "tier c",
+  "diode",
+  "discrete",
   "mini",
   "pitch",
   "duplicate",
@@ -62,7 +56,7 @@
    "B": 1,
    "C": 2
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -79,6 +73,6 @@
   "dist-legacy/PIN3V",
   "dist-legacy/PIN3V_mini"
  ],
- "embedding_text": "discrete-diode.pin3v | Discrete Diode | Cluster of 3 discrete diode parts using PIN3V or PIN3V_mini footprints with quality tiers B and C. | discrete diode discrete diode pin3v pin3v_mini discrete.diode dist-legacy tier b tier c mini pitch duplicate pad mm pins component with anode and cathode terminals in | PIN3V | ",
+ "embedding_text": "discrete-diode.pin3v | Discrete Diode | 3 discrete diode parts using PIN3V footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | pin3v diode discrete mini pitch duplicate pad mm pins component with anode and cathode terminals in | PIN3V | ",
  "class": "discrete.diode"
 }

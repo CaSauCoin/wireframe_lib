@@ -6,33 +6,26 @@
   "IC",
   "Sensor"
  ],
- "description": "Sensirion I2C 3.6V surface-mount humidity IC sensor cluster featuring SHT4x and SHTC3 parts in DFN-4 footprints.",
+ "description": "2 ic sensor parts for I2C, 3.6V using Sensirion footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when requiring an I2C sensor rated for 3.6V in surface-mount Sensirion DFN-4 footprints.",
-  "Choose SHT4x for the 1.5x1.5mm DFN-4 footprint without a central pad.",
-  "Choose SHTC3 for the 2x2mm DFN-4-1EP footprint with an exposed pad."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a Sensirion land pattern is intended."
  ],
  "avoid_when": [
-  "Do not use if through-hole mounting is required.",
-  "Avoid when non-I2C communication or operating voltages other than 3.6V are required.",
-  "Do not use if the board layout requires packages other than DFN-4."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than Sensirion."
  ],
  "keywords": [
   "sensirion",
-  "i2c",
-  "3.6v",
-  "ic sensor",
-  "smd",
-  "sht4x",
-  "shtc3",
-  "dfn-4",
-  "dfn-4-1ep",
-  "humidity",
-  "kicad-symbols",
   "sensor",
   "dfn",
+  "humidity",
+  "i2c",
   "6v",
   "digital",
+  "sht4x",
   "and",
   "temperature",
   "rh",
@@ -65,7 +58,7 @@
   "tier_counts": {
    "B": 2
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -89,6 +82,6 @@
   "kicad-symbols/Sensor_Humidity/SHT4x",
   "kicad-symbols/Sensor_Humidity/SHTC3"
  ],
- "embedding_text": "ic-sensor.sensirion.i2c.3-6v | IC Sensor | Sensirion I2C 3.6V surface-mount humidity IC sensor cluster featuring SHT4x and SHTC3 parts in DFN-4 footprints. | sensirion i2c 3.6v ic sensor smd sht4x shtc3 dfn-4 dfn-4-1ep humidity kicad-symbols sensor dfn 6v digital and temperature rh nolead environment environmental measurement ic | Sensirion | I2C 3.6V",
+ "embedding_text": "ic-sensor.sensirion.i2c.3-6v | IC Sensor | 2 ic sensor parts for I2C, 3.6V using Sensirion footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | sensirion sensor dfn humidity i2c 6v digital sht4x and temperature rh nolead environment environmental measurement ic | Sensirion | I2C 3.6V",
  "class": "ic.sensor"
 }

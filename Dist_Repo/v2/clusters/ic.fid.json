@@ -5,28 +5,21 @@
  "category_path": [
   "IC"
  ],
- "description": "Integrated circuit cluster utilizing the FID package family and FID_40X120D footprint.",
+ "description": "1 ic parts using FID footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Verify compatibility with the FID_40X120D footprint.",
-  "Confirm package family requirements match FID.",
-  "Check part quality tier and data sources prior to design integration."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a FID land pattern is intended."
  ],
  "avoid_when": [
-  "The PCB design requires a footprint other than FID_40X120D.",
-  "A package family other than FID is needed.",
-  "Verified tier A or tier B component entries are required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than FID."
  ],
  "keywords": [
   "fid",
-  "ic",
-  "fid_40x120d",
   "40x120d",
-  "fid package",
-  "package family fid",
-  "ic fid",
-  "fid footprint",
-  "ic component",
-  "fid_40x120d footprint",
+  "ic",
   "pad",
   "pins"
  ],
@@ -49,12 +42,12 @@
   "tier_counts": {
    "C": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
   "dist-legacy/FID_40X120D"
  ],
- "embedding_text": "ic.fid | IC | Integrated circuit cluster utilizing the FID package family and FID_40X120D footprint. | fid ic fid_40x120d 40x120d fid package package family fid ic fid fid footprint ic component fid_40x120d footprint pad pins | FID | ",
+ "embedding_text": "ic.fid | IC | 1 ic parts using FID footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | fid 40x120d ic pad pins | FID | ",
  "class": "ic"
 }

@@ -6,28 +6,21 @@
   "Discrete",
   "Diode"
  ],
- "description": "Discrete diode cluster in the OST package family featuring a tier B legacy component with an OST footprint.",
+ "description": "1 discrete diode parts using OST footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when designing with discrete diodes requiring an OST package family and footprint.",
-  "Confirm physical and electrical details as mount type is specified as unknown.",
-  "Evaluate part OST_OSTTC020162 from legacy distributor sources."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a OST land pattern is intended."
  ],
  "avoid_when": [
-  "Avoid when packages or footprints other than OST are needed.",
-  "Do not use if known mount details or specific electrical parameters are required upfront.",
-  "Avoid if higher quality tier parts (Tier A) are required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than OST."
  ],
  "keywords": [
-  "discrete",
-  "diode",
-  "discrete diode",
   "ost",
   "osttc020162",
-  "ost_osttc020162",
-  "ost footprint",
-  "ost package",
-  "dist-legacy",
-  "tier b",
+  "diode",
   "anode",
   "cathode",
   "by",
@@ -37,7 +30,8 @@
   "in",
   "0mm",
   "pitch",
-  "package"
+  "package",
+  "discrete"
  ],
  "facts": {
   "package_family": "OST",
@@ -58,7 +52,7 @@
   "tier_counts": {
    "B": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -73,6 +67,6 @@
  "part_ids": [
   "dist-legacy/OST OSTTC020162"
  ],
- "embedding_text": "discrete-diode.ost | Discrete Diode | Discrete diode cluster in the OST package family featuring a tier B legacy component with an OST footprint. | discrete diode discrete diode ost osttc020162 ost_osttc020162 ost footprint ost package dist-legacy tier b anode cathode by with and terminals in 0mm pitch package | OST | ",
+ "embedding_text": "discrete-diode.ost | Discrete Diode | 1 discrete diode parts using OST footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | ost osttc020162 diode anode cathode by with and terminals in 0mm pitch package discrete | OST | ",
  "class": "discrete.diode"
 }

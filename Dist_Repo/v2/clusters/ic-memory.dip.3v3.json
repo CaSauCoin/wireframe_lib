@@ -6,42 +6,34 @@
   "IC",
   "Memory"
  ],
- "description": "Memory IC cluster operating at 3.3V in through-hole DIP packaging with DIP-32 footprints.",
+ "description": "1 ic memory parts for 3.3V using DIP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when a 3.3V memory IC in a DIP package is required.",
-  "Verify compatibility with DIP-32_W15.24mm through-hole footprint.",
-  "Check tier A component quality and symbol source details."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a DIP land pattern is intended."
  ],
  "avoid_when": [
-  "Do not use if surface-mount packaging is required instead of DIP through-hole.",
-  "Avoid when operating voltages other than 3.3V are needed.",
-  "Do not use if the board design requires a footprint other than DIP-32_W15.24mm."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than DIP."
  ],
  "keywords": [
-  "ic",
-  "memory",
-  "3.3v",
-  "3v3",
   "dip",
-  "through_hole",
-  "through hole",
-  "dip-32",
-  "dip-32_w15.24mm",
-  "stk14c88-3",
-  "stk14c88",
-  "kicad-symbols",
-  "kicad",
-  "tier a",
-  "ic memory",
+  "memory",
   "3v",
   "24mm",
+  "stk14c88",
   "nvram",
   "kbit",
   "32k",
   "bit",
   "autostore",
   "nvsram",
-  "single"
+  "single",
+  "operation",
+  "45ns",
+  "soic",
+  "w15"
  ],
  "facts": {
   "package_family": "DIP",
@@ -64,7 +56,7 @@
   "tier_counts": {
    "A": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -79,6 +71,6 @@
  "part_ids": [
   "kicad-symbols/Memory_NVRAM/STK14C88-3"
  ],
- "embedding_text": "ic-memory.dip.3v3 | IC Memory | Memory IC cluster operating at 3.3V in through-hole DIP packaging with DIP-32 footprints. | ic memory 3.3v 3v3 dip through_hole through hole dip-32 dip-32_w15.24mm stk14c88-3 stk14c88 kicad-symbols kicad tier a ic memory 3v 24mm nvram kbit 32k bit autostore nvsram single | DIP | 3.3V",
+ "embedding_text": "ic-memory.dip.3v3 | IC Memory | 1 ic memory parts for 3.3V using DIP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | dip memory 3v 24mm stk14c88 nvram kbit 32k bit autostore nvsram single operation 45ns soic w15 | DIP | 3.3V",
  "class": "ic.memory"
 }

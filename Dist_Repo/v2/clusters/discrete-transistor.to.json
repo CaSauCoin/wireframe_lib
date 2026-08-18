@@ -6,42 +6,34 @@
   "Discrete",
   "Transistor"
  ],
- "description": "Discrete transistor component cluster containing 3,803 parts in TO family packages, supporting surface-mount and through-hole footprint variants.",
+ "description": "3803 discrete transistor parts using TO footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Filter for tier A parts for higher quality entries.",
-  "Select specific package variants such as TO-220, TO-247, TO-252, or TO-263.",
-  "Verify compatibility with surface-mount or through-hole mounting types."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a TO land pattern is intended."
  ],
  "avoid_when": [
-  "The design requires package families other than TO.",
-  "The footprint pattern does not match the available TO variants.",
-  "Mounting requirements are outside SMD or through-hole styles."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than TO."
  ],
  "keywords": [
-  "discrete",
-  "transistor",
-  "discrete transistor",
   "to",
-  "to package",
-  "to-220",
-  "to-247",
-  "to-252",
-  "to-263",
-  "to-251",
-  "to-262",
-  "to-268",
-  "to-3p",
-  "smd",
-  "through hole",
   "mosfet",
+  "transistor",
   "vertical",
   "enchancement",
+  "discrete",
   "akl",
   "alternate",
   "kicad",
   "library",
   "mos",
-  "rm"
+  "rm",
+  "mode",
+  "emos",
+  "emosfet",
+  "nmos"
  ],
  "facts": {
   "package_family": "TO",
@@ -82,7 +74,7 @@
    "B": 32,
    "C": 1079
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -3931,6 +3923,6 @@
   "Alternate-KiCad-Library/Thyristor_AKL/X0405M",
   "Alternate-KiCad-Library/Thyristor_AKL/X0405N"
  ],
- "embedding_text": "discrete-transistor.to | Discrete Transistor | Discrete transistor component cluster containing 3,803 parts in TO family packages, supporting surface-mount and through-hole footprint variants. | discrete transistor discrete transistor to to package to-220 to-247 to-252 to-263 to-251 to-262 to-268 to-3p smd through hole mosfet vertical enchancement akl alternate kicad library mos rm | TO | ",
+ "embedding_text": "discrete-transistor.to | Discrete Transistor | 3803 discrete transistor parts using TO footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | to mosfet transistor vertical enchancement discrete akl alternate kicad library mos rm mode emos emosfet nmos | TO | ",
  "class": "discrete.transistor"
 }

@@ -5,28 +5,20 @@
  "category_path": [
   "IC"
  ],
- "description": "IC cluster containing 2 parts in the KF8 package family with KF8-10 and KF8-5 footprints.",
+ "description": "2 ic parts using KF8 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Verify compatibility with KF8-10 or KF8-5 footprint variants.",
-  "Select when requiring parts in the KF8 package family under the IC category.",
-  "Note that all parts in this cluster are currently classified under quality tier C."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a KF8 land pattern is intended."
  ],
  "avoid_when": [
-  "The PCB layout requires a package family other than KF8.",
-  "Footprints other than KF8-10 or KF8-5 are needed.",
-  "Planner-visible parts are required, as the planner visible count is 0."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than KF8."
  ],
  "keywords": [
-  "ic",
   "kf8",
-  "kf8-10",
-  "kf8-5",
-  "package family kf8",
-  "integrated circuit",
-  "ic kf8",
-  "kf8 footprint",
-  "tier c",
-  "dist-legacy",
+  "ic",
   "pad",
   "mm",
   "pitch",
@@ -52,13 +44,13 @@
   "tier_counts": {
    "C": 2
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
   "dist-legacy/KF8-10",
   "dist-legacy/KF8-5"
  ],
- "embedding_text": "ic.kf8 | IC | IC cluster containing 2 parts in the KF8 package family with KF8-10 and KF8-5 footprints. | ic kf8 kf8-10 kf8-5 package family kf8 integrated circuit ic kf8 kf8 footprint tier c dist-legacy pad mm pitch pins | KF8 | ",
+ "embedding_text": "ic.kf8 | IC | 2 ic parts using KF8 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | kf8 ic pad mm pitch pins | KF8 | ",
  "class": "ic"
 }

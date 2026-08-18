@@ -6,34 +6,30 @@
   "IC",
   "Timing"
  ],
- "description": "Timing IC cluster containing 28 surface-mount parts across QFN and PQFN footprint packages.",
+ "description": "28 ic timing parts using QFN footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Require surface-mount timing ICs in QFN or PQFN footprints.",
-  "Select based on footprint requirements such as QFN-44, QFN-64, or PQFN oscillator packages.",
-  "Check part quality tier and source catalog details."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a QFN land pattern is intended."
  ],
  "avoid_when": [
-  "Designs requiring non-QFN packages or through-hole mounting.",
-  "Non-timing integrated circuits are required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than QFN."
  ],
  "keywords": [
+  "qfn",
+  "oscillator",
+  "pqfn",
+  "mems",
   "ic",
   "timing",
-  "ic.timing",
-  "qfn",
-  "pqfn",
-  "smd",
-  "oscillator",
-  "qfn-44",
-  "qfn-64",
-  "sit",
-  "si5342a-d",
-  "si5344a-d",
-  "mems",
   "jitter",
   "attenuator",
   "clock",
   "multiplier",
+  "smd",
+  "sit",
   "4pin",
   "5mm",
   "2mm",
@@ -66,7 +62,7 @@
    "B": 27,
    "C": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -140,6 +136,6 @@
   "kicad-symbols/Oscillator/SiT8008xx-8x-xxN",
   "dist-legacy/Oscillator_SMD_SiT_PQFN-4Pin_2.0x1.6mm"
  ],
- "embedding_text": "ic-timing.qfn | IC Timing | Timing IC cluster containing 28 surface-mount parts across QFN and PQFN footprint packages. | ic timing ic.timing qfn pqfn smd oscillator qfn-44 qfn-64 sit si5342a-d si5344a-d mems jitter attenuator clock multiplier 4pin 5mm 2mm sitime | QFN | ",
+ "embedding_text": "ic-timing.qfn | IC Timing | 28 ic timing parts using QFN footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | qfn oscillator pqfn mems ic timing jitter attenuator clock multiplier smd sit 4pin 5mm 2mm sitime | QFN | ",
  "class": "ic.timing"
 }

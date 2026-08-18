@@ -6,30 +6,21 @@
   "IC",
   "Analog"
  ],
- "description": "Analog IC component cluster for 3.3V surface-mount QFN applications, featuring two tier A entries with WQFN-20-1EP footprints.",
+ "description": "2 ic analog parts for 3.3V using QFN footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select for 3.3V analog IC applications requiring SMD QFN packaging.",
-  "Choose when using WQFN-20-1EP footprints like CBTL02043A or CBTL02043B.",
-  "Verify part specifications against requirements when using KiCad symbol sources."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a QFN land pattern is intended."
  ],
  "avoid_when": [
-  "Avoid when through-hole mounting or non-QFN packaging is required.",
-  "Avoid if the circuit supply voltage differs from 3.3V.",
-  "Avoid if specific component parameters required for design validation are absent."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than QFN."
  ],
  "keywords": [
-  "ic.analog",
-  "analog ic",
-  "3.3v",
-  "qfn",
-  "wqfn",
-  "smd",
-  "cbtl02043a",
-  "cbtl02043b",
-  "wqfn-20-1ep",
-  "kicad-symbols",
   "5mm",
   "switch",
+  "wqfn",
   "analog",
   "differential",
   "channel",
@@ -41,7 +32,8 @@
   "p0",
   "ep1x2",
   "9mm",
-  "multiplexer"
+  "multiplexer",
+  "demultiplexer"
  ],
  "facts": {
   "package_family": "QFN",
@@ -64,7 +56,7 @@
   "tier_counts": {
    "A": 2
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -88,6 +80,6 @@
   "kicad-symbols/Analog_Switch/CBTL02043A",
   "kicad-symbols/Analog_Switch/CBTL02043B"
  ],
- "embedding_text": "ic-analog.qfn.3v3 | IC Analog | Analog IC component cluster for 3.3V surface-mount QFN applications, featuring two tier A entries with WQFN-20-1EP footprints. | ic.analog analog ic 3.3v qfn wqfn smd cbtl02043a cbtl02043b wqfn-20-1ep kicad-symbols 5mm switch analog differential channel mux demux gbps 1ep 5x4 p0 ep1x2 9mm multiplexer | QFN | 3.3V",
+ "embedding_text": "ic-analog.qfn.3v3 | IC Analog | 2 ic analog parts for 3.3V using QFN footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | 5mm switch wqfn analog differential channel mux demux gbps 1ep 5x4 p0 ep1x2 9mm multiplexer demultiplexer | QFN | 3.3V",
  "class": "ic.analog"
 }

@@ -6,36 +6,30 @@
   "IC",
   "RF"
  ],
- "description": "RF IC cluster containing surface-mount parts in the MOD package family, featuring the MOD-nRF8001 footprint.",
+ "description": "1 ic rf parts using MOD footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when using surface-mount RF ICs in the MOD package family.",
-  "Verify compatibility with the MOD-nRF8001 footprint.",
-  "Confirm pin-to-pad mapping and part specifications before PCB layout."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a MOD land pattern is intended."
  ],
  "avoid_when": [
-  "The PCB design requires a package family other than MOD.",
-  "Through-hole mounting is required instead of SMD.",
-  "Required electrical specifications or pinouts are unspecified."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than MOD."
  ],
  "keywords": [
-  "ic",
-  "rf",
-  "ic rf",
-  "mod",
-  "smd",
-  "mod-nrf8001",
   "nrf8001",
-  "rf ic",
-  "kicad-symbols",
-  "package family mod",
+  "mod",
   "bluetooth",
+  "rf",
   "low",
   "energy",
   "module",
   "based",
   "on",
   "chipset",
-  "ble"
+  "ble",
+  "ic"
  ],
  "facts": {
   "package_family": "MOD",
@@ -56,12 +50,12 @@
   "tier_counts": {
    "C": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
   "kicad-symbols/RF_Bluetooth/MOD-nRF8001"
  ],
- "embedding_text": "ic-rf.mod | IC RF | RF IC cluster containing surface-mount parts in the MOD package family, featuring the MOD-nRF8001 footprint. | ic rf ic rf mod smd mod-nrf8001 nrf8001 rf ic kicad-symbols package family mod bluetooth low energy module based on chipset ble | MOD | ",
+ "embedding_text": "ic-rf.mod | IC RF | 1 ic rf parts using MOD footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | nrf8001 mod bluetooth rf low energy module based on chipset ble ic | MOD | ",
  "class": "ic.rf"
 }

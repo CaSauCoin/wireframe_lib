@@ -5,29 +5,21 @@
  "category_path": [
   "IC"
  ],
- "description": "This integrated circuit cluster consists of 2 tier-C parts utilizing RN8 and RN8_Dual footprints from dist-legacy sources.",
+ "description": "2 ic parts using RN8 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Verify whether the design requires the RN8 or RN8_Dual footprint.",
-  "Note that all 2 parts in this cluster are categorized under quality tier C.",
-  "Confirm compatibility with dist-legacy source data before part selection."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a RN8 land pattern is intended."
  ],
  "avoid_when": [
-  "The application requires planner-visible components, as planner_visible_count is 0.",
-  "A package family other than RN8 or RN8_Dual is required by the board layout.",
-  "Higher quality tier parts (such as Tier A or Tier B) are required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than RN8."
  ],
  "keywords": [
-  "ic",
   "rn8",
-  "rn8_dual",
-  "integrated circuit",
-  "dist-legacy",
-  "tier c",
-  "package family rn8",
-  "rn8 dual",
-  "unknown mount",
-  "generated status",
   "dual",
+  "ic",
   "duplicate",
   "pad",
   "mm",
@@ -54,13 +46,13 @@
   "tier_counts": {
    "C": 2
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
   "dist-legacy/RN8 - duplicate",
   "dist-legacy/RN8_Dual"
  ],
- "embedding_text": "ic.rn8 | IC | This integrated circuit cluster consists of 2 tier-C parts utilizing RN8 and RN8_Dual footprints from dist-legacy sources. | ic rn8 rn8_dual integrated circuit dist-legacy tier c package family rn8 rn8 dual unknown mount generated status dual duplicate pad mm pitch pins | RN8 | ",
+ "embedding_text": "ic.rn8 | IC | 2 ic parts using RN8 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | rn8 dual ic duplicate pad mm pitch pins | RN8 | ",
  "class": "ic"
 }

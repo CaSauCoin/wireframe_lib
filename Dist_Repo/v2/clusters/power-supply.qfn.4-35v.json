@@ -6,32 +6,22 @@
   "Power",
   "Power Supply"
  ],
- "description": "Power supply and battery management components specified for 4.35V in surface-mount QFN footprints.",
+ "description": "3 power power supply parts for 4.35V using QFN footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select based on the required specific QFN footprint variant such as QFN-20-1EP or VQFN-RHL-20.",
-  "Prioritize tier A parts such as MCP73871 variants over tier B entries.",
-  "Verify compatibility with 4.35V operating requirements."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a QFN land pattern is intended."
  ],
  "avoid_when": [
-  "The circuit requires a voltage other than 4.35V.",
-  "Through-hole mounting or a package family other than QFN is required.",
-  "A different pin count or land pattern geometry is needed."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than QFN."
  ],
  "keywords": [
   "power",
-  "power supply",
-  "4.35v",
-  "qfn",
-  "smd",
-  "battery management",
-  "mcp73871-3ca",
-  "mcp73871-3cc",
-  "bq51051brhl",
-  "qfn-20-1ep",
-  "vqfn-rhl-20",
-  "kicad-symbols",
   "battery",
   "35v",
+  "qfn",
   "management",
   "li",
   "5mm",
@@ -41,7 +31,9 @@
   "single",
   "cell",
   "ion",
-  "po"
+  "po",
+  "charge",
+  "controller"
  ],
  "facts": {
   "package_family": "QFN",
@@ -66,7 +58,7 @@
    "A": 2,
    "B": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -99,6 +91,6 @@
   "kicad-symbols/Battery_Management/MCP73871-3CC",
   "kicad-symbols/Battery_Management/BQ51051BRHL"
  ],
- "embedding_text": "power-supply.qfn.4-35v | Power Power Supply | Power supply and battery management components specified for 4.35V in surface-mount QFN footprints. | power power supply 4.35v qfn smd battery management mcp73871-3ca mcp73871-3cc bq51051brhl qfn-20-1ep vqfn-rhl-20 kicad-symbols battery 35v management li 5mm charger supply mcp73871 single cell ion po | QFN | 4.35V",
+ "embedding_text": "power-supply.qfn.4-35v | Power Power Supply | 3 power power supply parts for 4.35V using QFN footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | power battery 35v qfn management li 5mm charger supply mcp73871 single cell ion po charge controller | QFN | 4.35V",
  "class": "power.supply"
 }

@@ -6,33 +6,21 @@
   "IC",
   "Sensor"
  ],
- "description": "A cluster of 18 3.3V sensor IC components featuring Allegro package footprints in surface-mount and through-hole mounts.",
+ "description": "18 ic sensor parts for 3.3V using Allegro footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select for 3.3V sensor IC designs requiring Allegro package family footprints.",
-  "Choose between SMD and through-hole options such as QSOP-24, PSOF-7, CB_PFF, or CB_PSS.",
-  "Prefer tier A entries for higher quality tier representation."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a Allegro land pattern is intended."
  ],
  "avoid_when": [
-  "Avoid when the application supply voltage is not 3.3V.",
-  "Do not use if non-Allegro package family footprints are required.",
-  "Avoid if mounting requirements are neither surface-mount nor through-hole."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than Allegro."
  ],
  "keywords": [
-  "ic",
   "sensor",
-  "ic.sensor",
-  "3.3v",
-  "allegro",
-  "smd",
-  "through_hole",
-  "qsop-24",
-  "psof-7",
-  "cb_pff",
-  "cb_pss",
-  "acs709xlftr-10bb",
-  "acs726xlftr-20b",
-  "kicad-symbols",
   "current",
+  "allegro",
   "3v",
   "hall",
   "effect",
@@ -40,8 +28,12 @@
   "qsop",
   "monitor",
   "isolated",
+  "ic",
   "cb",
-  "psof"
+  "psof",
+  "pff",
+  "bidirectional",
+  "pss"
  ],
  "facts": {
   "package_family": "Allegro",
@@ -69,7 +61,7 @@
    "A": 6,
    "B": 12
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -133,6 +125,6 @@
   "kicad-symbols/Sensor_Current/ACS781xLRTR-150B",
   "kicad-symbols/Sensor_Current/ACS781xLRTR-150U"
  ],
- "embedding_text": "ic-sensor.allegro.3v3 | IC Sensor | A cluster of 18 3.3V sensor IC components featuring Allegro package footprints in surface-mount and through-hole mounts. | ic sensor ic.sensor 3.3v allegro smd through_hole qsop-24 psof-7 cb_pff cb_pss acs709xlftr-10bb acs726xlftr-20b kicad-symbols current 3v hall effect supply qsop monitor isolated cb psof | Allegro | 3.3V",
+ "embedding_text": "ic-sensor.allegro.3v3 | IC Sensor | 18 ic sensor parts for 3.3V using Allegro footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | sensor current allegro 3v hall effect supply qsop monitor isolated ic cb psof pff bidirectional pss | Allegro | 3.3V",
  "class": "ic.sensor"
 }

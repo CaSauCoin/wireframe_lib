@@ -6,33 +6,27 @@
   "IC",
   "Interface"
  ],
- "description": "Interface IC component cluster featuring surface-mount PLCC packages with PLCC-44 footprints.",
+ "description": "1 ic interface parts using PLCC footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when an interface IC in a surface-mount PLCC package is required.",
-  "Verify footprint compatibility with PLCC-44 land patterns.",
-  "Check symbol assignment and quality tier specifications before PCB layout."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a PLCC land pattern is intended."
  ],
  "avoid_when": [
-  "Avoid if the design requires package families other than PLCC.",
-  "Do not use when through-hole or non-SMD mounting is required.",
-  "Avoid if footprints other than PLCC-44 are needed."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than PLCC."
  ],
  "keywords": [
-  "ic",
-  "interface",
   "plcc",
-  "plcc-44",
-  "smd",
+  "interface",
   "82c55a",
-  "82c55a_plcc",
-  "ic interface",
-  "kicad-symbols",
-  "surface mount",
   "chmos",
   "programmable",
   "peripheral",
   "smt",
-  "ppi"
+  "ppi",
+  "ic"
  ],
  "facts": {
   "package_family": "PLCC",
@@ -53,7 +47,7 @@
   "tier_counts": {
    "B": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -68,6 +62,6 @@
  "part_ids": [
   "kicad-symbols/Interface/82C55A_PLCC"
  ],
- "embedding_text": "ic-interface.plcc | IC Interface | Interface IC component cluster featuring surface-mount PLCC packages with PLCC-44 footprints. | ic interface plcc plcc-44 smd 82c55a 82c55a_plcc ic interface kicad-symbols surface mount chmos programmable peripheral smt ppi | PLCC | ",
+ "embedding_text": "ic-interface.plcc | IC Interface | 1 ic interface parts using PLCC footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | plcc interface 82c55a chmos programmable peripheral smt ppi ic | PLCC | ",
  "class": "ic.interface"
 }

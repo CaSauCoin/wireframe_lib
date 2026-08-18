@@ -6,44 +6,34 @@
   "Discrete",
   "BJT"
  ],
- "description": "Cluster of 4 discrete BJT parts tagged 12V, using TO-family footprints (TO-18-3_EBC, TO-92_Inline_Wide, TO-92_Inline_Wide_EBC, TO-50-3_ShortPad-NoHole_BEC_Housing) in through-hole and SMD mounts, sourced from Alternate-KiCad-Library.",
+ "description": "4 discrete bjt parts for 12V using TO footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Prefer tier A entries (2N3546, 2SC2570A, ZTX510) over tier B (BFR91A) where equivalent",
-  "Match the exact footprint required: TO-18-3_EBC, TO-92_Inline_Wide, TO-92_Inline_Wide_EBC, or TO-50-3_ShortPad-NoHole_BEC_Housing",
-  "Confirm mount type needed (through_hole vs smd) before selecting",
-  "Verify the 12V facet aligns with the actual circuit requirement"
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a TO land pattern is intended."
  ],
  "avoid_when": [
-  "The design requires a package outside the TO family",
-  "The required voltage rating differs from the stated 12V facet",
-  "Review status is generated and part has not been verified against a datasheet",
-  "The exact footprint listed does not match the intended PCB land pattern"
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than TO."
  ],
  "keywords": [
-  "bjt",
-  "transistor",
-  "discrete bjt",
-  "to package",
-  "to-18",
-  "to-92",
-  "to-50",
-  "12v",
-  "through hole",
-  "smd",
-  "alternate kicad library",
-  "akl",
-  "2n3546",
-  "2sc2570a",
-  "ztx510",
-  "bfr91a",
-  "ebc footprint",
-  "tier a",
   "to",
+  "transistor",
+  "bjt",
+  "12v",
+  "akl",
   "pnp",
   "alternate",
   "kicad",
   "library",
-  "discrete"
+  "discrete",
+  "npn",
+  "sc",
+  "2n3546",
+  "200ma",
+  "ebc",
+  "2sc2570a"
  ],
  "facts": {
   "package_family": "TO",
@@ -71,7 +61,7 @@
    "A": 3,
    "B": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -113,6 +103,6 @@
   "Alternate-KiCad-Library/Transistor_BJT_AKL/ZTX510",
   "Alternate-KiCad-Library/Transistor_BJT_AKL/BFR91A"
  ],
- "embedding_text": "discrete-bjt.to.12v | Discrete BJT | Cluster of 4 discrete BJT parts tagged 12V, using TO-family footprints (TO-18-3_EBC, TO-92_Inline_Wide, TO-92_Inline_Wide_EBC, TO-50-3_ShortPad-NoHole_BEC_Housing) in through-hole and SMD mounts, sourced from Alternate-KiCad-Library. | bjt transistor discrete bjt to package to-18 to-92 to-50 12v through hole smd alternate kicad library akl 2n3546 2sc2570a ztx510 bfr91a ebc footprint tier a to pnp alternate kicad library discrete | TO | 12V",
+ "embedding_text": "discrete-bjt.to.12v | Discrete BJT | 4 discrete bjt parts for 12V using TO footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | to transistor bjt 12v akl pnp alternate kicad library discrete npn sc 2n3546 200ma ebc 2sc2570a | TO | 12V",
  "class": "discrete.bjt"
 }

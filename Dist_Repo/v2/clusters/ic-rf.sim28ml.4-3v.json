@@ -6,31 +6,21 @@
   "IC",
   "RF"
  ],
- "description": "RF integrated circuit cluster operating at 4.3V in surface-mount SIM28ML package footprints.",
+ "description": "1 ic rf parts for 4.3V using SIM28ML footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select for RF IC applications designed for 4.3V operation.",
-  "Use when a surface-mount SIM28ML footprint is specified.",
-  "Confirm exact electrical characteristics and pinouts before PCB layout."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SIM28ML land pattern is intended."
  ],
  "avoid_when": [
-  "The application requires operating voltages other than 4.3V.",
-  "The design requires non-SMD or through-hole packaging.",
-  "The PCB layout uses a footprint other than SIM28ML."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SIM28ML."
  ],
  "keywords": [
-  "ic",
-  "rf",
-  "4.3v",
-  "sim28ml",
-  "smd",
-  "rf ic",
-  "ic rf",
-  "kicad-symbols",
-  "surface mount",
-  "sim28ml footprint",
-  "4.3 v",
-  "integrated circuit",
   "gps",
+  "sim28ml",
+  "rf",
   "receiver",
   "3v",
   "standalone",
@@ -39,7 +29,9 @@
   "in",
   "lna",
   "165dbm",
-  "sensitivity"
+  "sensitivity",
+  "smd",
+  "ic"
  ],
  "facts": {
   "package_family": "SIM28ML",
@@ -62,12 +54,12 @@
   "tier_counts": {
    "C": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
   "kicad-symbols/RF_GPS/SIM28ML"
  ],
- "embedding_text": "ic-rf.sim28ml.4-3v | IC RF | RF integrated circuit cluster operating at 4.3V in surface-mount SIM28ML package footprints. | ic rf 4.3v sim28ml smd rf ic ic rf kicad-symbols surface mount sim28ml footprint 4.3 v integrated circuit gps receiver 3v standalone module built in lna 165dbm sensitivity | SIM28ML | 4.3V",
+ "embedding_text": "ic-rf.sim28ml.4-3v | IC RF | 1 ic rf parts for 4.3V using SIM28ML footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | gps sim28ml rf receiver 3v standalone module built in lna 165dbm sensitivity smd ic | SIM28ML | 4.3V",
  "class": "ic.rf"
 }

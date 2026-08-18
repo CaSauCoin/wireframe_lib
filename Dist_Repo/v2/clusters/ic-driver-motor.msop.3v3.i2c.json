@@ -7,33 +7,23 @@
   "Driver",
   "Motor"
  ],
- "description": "Motor driver IC cluster with 3.3V operating voltage and I2C communication in surface-mount MSOP-8 and MSOP-10 footprints.",
+ "description": "2 ic driver motor parts for 3.3V, I2C using MSOP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Choose between MSOP-8 (0.65mm pitch) and MSOP-10 (0.5mm pitch) options based on required pin count.",
-  "Select EMC2301-x-ACZL for MSOP-8 footprint or EMC2302-x-AIZL for MSOP-10 footprint.",
-  "Verify that 3.3V operating voltage and I2C interface fit the design requirement."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a MSOP land pattern is intended."
  ],
  "avoid_when": [
-  "The board layout requires a package family other than MSOP.",
-  "The application requires through-hole mounting instead of SMD.",
-  "The required bus interface is not I2C or operating voltage is not 3.3V."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than MSOP."
  ],
  "keywords": [
-  "ic driver motor",
-  "motor driver",
-  "3.3v",
-  "i2c",
   "msop",
-  "msop-8",
-  "msop-10",
-  "smd",
-  "emc2301-x-aczl",
-  "emc2302-x-aizl",
-  "emc2301",
-  "emc2302",
   "driver",
   "motor",
   "3v",
+  "i2c",
   "3x3mm",
   "p0",
   "rpm",
@@ -42,7 +32,9 @@
   "fan",
   "controller",
   "up",
-  "to"
+  "to",
+  "khz",
+  "power"
  ],
  "facts": {
   "package_family": "MSOP",
@@ -67,7 +59,7 @@
   "tier_counts": {
    "A": 2
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -91,6 +83,6 @@
   "kicad-symbols/Driver_Motor/EMC2301-x-ACZL",
   "kicad-symbols/Driver_Motor/EMC2302-x-AIZL"
  ],
- "embedding_text": "ic-driver-motor.msop.3v3.i2c | IC Driver Motor | Motor driver IC cluster with 3.3V operating voltage and I2C communication in surface-mount MSOP-8 and MSOP-10 footprints. | ic driver motor motor driver 3.3v i2c msop msop-8 msop-10 smd emc2301-x-aczl emc2302-x-aizl emc2301 emc2302 driver motor 3v 3x3mm p0 rpm based pwm fan controller up to | MSOP | 3.3V I2C",
+ "embedding_text": "ic-driver-motor.msop.3v3.i2c | IC Driver Motor | 2 ic driver motor parts for 3.3V, I2C using MSOP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | msop driver motor 3v i2c 3x3mm p0 rpm based pwm fan controller up to khz power | MSOP | 3.3V I2C",
  "class": "ic.driver.motor"
 }

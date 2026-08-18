@@ -6,29 +6,22 @@
   "Discrete",
   "Transistor"
  ],
- "description": "Discrete transistor library cluster containing 1 part in the TO254P package family using the TO254P-3N footprint.",
+ "description": "1 discrete transistor parts using TO254P footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when a discrete transistor in the TO254P package family is required.",
-  "Verify compatibility with the TO254P-3N footprint pattern.",
-  "Check quality tier C status and dist-legacy source metadata."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a TO254P land pattern is intended."
  ],
  "avoid_when": [
-  "The PCB layout requires a package or footprint other than TO254P-3N.",
-  "Planner-visible parts are required, as planner visible count is 0.",
-  "Quality tier A or B parts are required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than TO254P."
  ],
  "keywords": [
+  "to254p",
+  "3n",
   "discrete",
   "transistor",
-  "to254p",
-  "to254p-3n",
-  "discrete transistor",
-  "discrete.transistor",
-  "dist-legacy",
-  "tier c",
-  "to254p footprint",
-  "generated status",
-  "3n",
   "pad",
   "mm",
   "pitch",
@@ -53,12 +46,12 @@
   "tier_counts": {
    "C": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
   "dist-legacy/TO254P-3N"
  ],
- "embedding_text": "discrete-transistor.to254p | Discrete Transistor | Discrete transistor library cluster containing 1 part in the TO254P package family using the TO254P-3N footprint. | discrete transistor to254p to254p-3n discrete transistor discrete.transistor dist-legacy tier c to254p footprint generated status 3n pad mm pitch pins | TO254P | ",
+ "embedding_text": "discrete-transistor.to254p | Discrete Transistor | 1 discrete transistor parts using TO254P footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | to254p 3n discrete transistor pad mm pitch pins | TO254P | ",
  "class": "discrete.transistor"
 }

@@ -6,44 +6,34 @@
   "Discrete",
   "Diode"
  ],
- "description": "Discrete diodes rated 40V using D-family footprints (SMD and through-hole), spanning SMA/SMB/SMC/MELF/SOD/DO-35/DO-41/DO-201 land patterns for schematic and layout selection.",
+ "description": "278 discrete diode parts for 40V using D footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Match the exact footprint (e.g. SMA, SOD-123, SOD-323, MELF) to the intended land pattern before placement.",
-  "Prefer tier A entries with complete symbol-footprint pairing.",
-  "Confirm the part's actual voltage/current rating meets the design need, since 40V is only a cluster facet, not a per-part guarantee.",
-  "Distinguish Schottky-style parts (e.g. 1N5819, B140-E3) from general-purpose types by name if rectification behavior matters."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a D land pattern is intended."
  ],
  "avoid_when": [
-  "The design needs a voltage, current, or switching-speed rating not confirmed on the specific chosen part.",
-  "The board requires a footprint outside the listed D-family patterns (SMA, SMB, SMC, MELF, SOD variants, DO-35, DO-41, DO-201).",
-  "The symbol-footprint pairing is unverified or flagged for review.",
-  "A through-hole or SMD mount is required that doesn't match the chosen part's mount type."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than D."
  ],
  "keywords": [
   "diode",
-  "discrete diode",
-  "40v diode",
-  "d package diode",
-  "sma diode",
-  "smb diode",
-  "smc diode",
-  "sod-123",
-  "sod-323",
-  "sod-523",
-  "melf diode",
-  "minimelf",
-  "do-35",
-  "do-41",
-  "do-201",
-  "1n5819",
-  "schottky diode",
-  "through hole diode",
-  "smd diode",
   "schottky",
   "40v",
   "discrete",
   "sod",
-  "akl"
+  "akl",
+  "alternate",
+  "kicad",
+  "library",
+  "do",
+  "tvs",
+  "sma",
+  "horizontal",
+  "smb",
+  "smc",
+  "123f"
  ],
  "facts": {
   "package_family": "D",
@@ -81,7 +71,7 @@
    "A": 251,
    "B": 27
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -405,6 +395,6 @@
   "Alternate-KiCad-Library/Diode_TVS_AKL/TPSMA6L40A",
   "JLCPCB-Kicad-Library/JLCPCB-Diodes/Schottky,SS24F"
  ],
- "embedding_text": "discrete-diode.d.40v | Discrete Diode | Discrete diodes rated 40V using D-family footprints (SMD and through-hole), spanning SMA/SMB/SMC/MELF/SOD/DO-35/DO-41/DO-201 land patterns for schematic and layout selection. | diode discrete diode 40v diode d package diode sma diode smb diode smc diode sod-123 sod-323 sod-523 melf diode minimelf do-35 do-41 do-201 1n5819 schottky diode through hole diode smd diode schottky 40v discrete sod akl | D | 40V",
+ "embedding_text": "discrete-diode.d.40v | Discrete Diode | 278 discrete diode parts for 40V using D footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | diode schottky 40v discrete sod akl alternate kicad library do tvs sma horizontal smb smc 123f | D | 40V",
  "class": "discrete.diode"
 }

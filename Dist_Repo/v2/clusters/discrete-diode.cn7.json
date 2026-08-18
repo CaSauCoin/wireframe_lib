@@ -6,27 +6,21 @@
   "Discrete",
   "Diode"
  ],
- "description": "Cluster of 4 discrete diode parts utilizing CN7, CN7-B, CN7-N, or CN7-Y footprints with unknown mount specifications.",
+ "description": "4 discrete diode parts using CN7 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Verify exact footprint selection among CN7, CN7-B, CN7-N, and CN7-Y variants.",
-  "Confirm mounting requirements since mount type is listed as unknown.",
-  "Check part specifications given all entries are currently tier C quality."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a CN7 land pattern is intended."
  ],
  "avoid_when": [
-  "The layout requires a footprint or package family other than CN7.",
-  "Parts with confirmed mounting specifications are strictly required.",
-  "Tier C quality rating or generated review status is unacceptable for selection."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than CN7."
  ],
  "keywords": [
   "cn7",
   "discrete",
   "diode",
-  "discrete diode",
-  "cn7-b",
-  "cn7-n",
-  "cn7-y",
-  "tier c",
-  "dist-legacy",
   "pad",
   "mm",
   "pitch",
@@ -54,7 +48,7 @@
   "tier_counts": {
    "C": 4
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
@@ -63,6 +57,6 @@
   "dist-legacy/CN7-N",
   "dist-legacy/CN7-Y"
  ],
- "embedding_text": "discrete-diode.cn7 | Discrete Diode | Cluster of 4 discrete diode parts utilizing CN7, CN7-B, CN7-N, or CN7-Y footprints with unknown mount specifications. | cn7 discrete diode discrete diode cn7-b cn7-n cn7-y tier c dist-legacy pad mm pitch pins | CN7 | ",
+ "embedding_text": "discrete-diode.cn7 | Discrete Diode | 4 discrete diode parts using CN7 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | cn7 discrete diode pad mm pitch pins | CN7 | ",
  "class": "discrete.diode"
 }

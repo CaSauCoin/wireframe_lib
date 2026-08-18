@@ -6,42 +6,34 @@
   "IC",
   "Sensor"
  ],
- "description": "Through-hole IC sensor components utilizing Hamamatsu package footprints including Hamamatsu_C12880 and Hamamatsu_S13360-30CS.",
+ "description": "4 ic sensor parts using Hamamatsu footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when requiring a through-hole IC sensor in a Hamamatsu footprint.",
-  "Choose between Hamamatsu_C12880 and Hamamatsu_S13360-30CS footprints based on part selection.",
-  "Verify exact part footprint and pin assignment against design requirements."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a Hamamatsu land pattern is intended."
  ],
  "avoid_when": [
-  "Surface-mount (SMD) packaging is required instead of through-hole.",
-  "The PCB design requires footprint packages other than Hamamatsu.",
-  "Component selection requires quality tiers higher than Tier B."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than Hamamatsu."
  ],
  "keywords": [
   "hamamatsu",
-  "ic sensor",
-  "ic",
   "sensor",
-  "through_hole",
-  "through hole",
-  "hamamatsu_c12880",
-  "hamamatsu_s13360-30cs",
-  "c12880ma",
-  "s13360-3025cs",
-  "s13360-3050cs",
-  "s13360-3075cs",
-  "sensor_optical",
   "s13360",
   "pixel",
   "sipm",
   "optical",
   "opto",
+  "ic",
   "spectrometer",
   "multi",
   "photon",
   "counter",
   "with",
-  "pitch"
+  "pitch",
+  "30cs",
+  "mppc"
  ],
  "facts": {
   "package_family": "Hamamatsu",
@@ -63,7 +55,7 @@
   "tier_counts": {
    "B": 4
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -105,6 +97,6 @@
   "kicad-symbols/Sensor_Optical/S13360-3050CS",
   "kicad-symbols/Sensor_Optical/S13360-3075CS"
  ],
- "embedding_text": "ic-sensor.hamamatsu | IC Sensor | Through-hole IC sensor components utilizing Hamamatsu package footprints including Hamamatsu_C12880 and Hamamatsu_S13360-30CS. | hamamatsu ic sensor ic sensor through_hole through hole hamamatsu_c12880 hamamatsu_s13360-30cs c12880ma s13360-3025cs s13360-3050cs s13360-3075cs sensor_optical s13360 pixel sipm optical opto spectrometer multi photon counter with pitch | Hamamatsu | ",
+ "embedding_text": "ic-sensor.hamamatsu | IC Sensor | 4 ic sensor parts using Hamamatsu footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | hamamatsu sensor s13360 pixel sipm optical opto ic spectrometer multi photon counter with pitch 30cs mppc | Hamamatsu | ",
  "class": "ic.sensor"
 }

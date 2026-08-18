@@ -6,31 +6,19 @@
   "IC",
   "RF"
  ],
- "description": "A cluster of 4 surface-mount 3.3V RF IC parts in the ESP32 package family supporting footprints such as ESP32-S2-MINI-1, ESP32-S2-MINI-1U, ESP32-S3-WROOM-1, and ESP32-C6-MINI-1.",
+ "description": "4 ic rf parts for 3.3V using ESP32 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select by required ESP32 footprint variant, such as ESP32-S2-MINI-1 or ESP32-S3-WROOM-1.",
-  "Check quality tier preference between available Tier B and Tier C parts.",
-  "Confirm requirement for 3.3V supply and surface-mount (SMD) packaging."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a ESP32 land pattern is intended."
  ],
  "avoid_when": [
-  "Operating voltage is other than 3.3V.",
-  "Design requires through-hole mounting instead of SMD.",
-  "PCB footprint requirement falls outside the supported ESP32 package footprint list."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than ESP32."
  ],
  "keywords": [
   "esp32",
-  "ic rf",
-  "rf ic",
-  "3.3v",
-  "smd",
-  "esp32-s2-mini-1",
-  "esp32-s2-mini-1u",
-  "esp32-s3-wroom-1",
-  "esp32-c6-mini-1",
-  "esp32-s3-mini-1",
-  "esp32-s3-mini-1u",
-  "rf module",
-  "kicad-symbols",
   "rf",
   "s3",
   "module",
@@ -41,7 +29,11 @@
   "antenna",
   "espressif",
   "mini",
-  "soc"
+  "soc",
+  "11b",
+  "ble",
+  "bit",
+  "smd"
  ],
  "facts": {
   "package_family": "ESP32",
@@ -68,7 +60,7 @@
    "B": 2,
    "C": 2
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -94,6 +86,6 @@
   "kicad-symbols/RF_Module/ESP32-S3-WROOM-1",
   "kicad-symbols/RF_Module/ESP32-C6-MINI-1"
  ],
- "embedding_text": "ic-rf.esp32.3v3 | IC RF | A cluster of 4 surface-mount 3.3V RF IC parts in the ESP32 package family supporting footprints such as ESP32-S2-MINI-1, ESP32-S2-MINI-1U, ESP32-S3-WROOM-1, and ESP32-C6-MINI-1. | esp32 ic rf rf ic 3.3v smd esp32-s2-mini-1 esp32-s2-mini-1u esp32-s3-wroom-1 esp32-c6-mini-1 esp32-s3-mini-1 esp32-s3-mini-1u rf module kicad-symbols rf s3 module wi fi bluetooth 3v antenna espressif mini soc | ESP32 | 3.3V",
+ "embedding_text": "ic-rf.esp32.3v3 | IC RF | 4 ic rf parts for 3.3V using ESP32 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | esp32 rf s3 module wi fi bluetooth 3v antenna espressif mini soc 11b ble bit smd | ESP32 | 3.3V",
  "class": "ic.rf"
 }

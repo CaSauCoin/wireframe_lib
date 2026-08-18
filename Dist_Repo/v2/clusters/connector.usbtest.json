@@ -5,31 +5,20 @@
  "category_path": [
   "Connector"
  ],
- "description": "Connector cluster containing a single SMD part using the USBTEST footprint, sourced from the chilaboard-altium-library, tagged quality tier C with generated (unreviewed) metadata.",
+ "description": "1 connector parts using USBTEST footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Only one part exists in this cluster; confirm it is the intended entry before use.",
-  "Verify the USBTEST footprint matches your board's land pattern exactly.",
-  "Review status is 'generated', so manually check pin mapping before committing to layout."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a USBTEST land pattern is intended."
  ],
  "avoid_when": [
-  "A reviewed or higher-tier (A/B) part is required instead of tier C.",
-  "The design needs a footprint other than USBTEST.",
-  "Planner-visible parts are required, since this cluster has zero planner-visible entries."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than USBTEST."
  ],
  "keywords": [
   "usbtest",
   "connector",
-  "smd",
-  "surface mount",
-  "chilaboard",
-  "altium",
-  "footprint",
-  "single part",
-  "tier c",
-  "generated",
-  "unreviewed",
-  "usb",
-  "test connector",
   "surface",
   "mount",
   "pad",
@@ -56,12 +45,12 @@
   "tier_counts": {
    "C": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
   "chilaboard-altium-library/USBTEST/USBTEST"
  ],
- "embedding_text": "connector.usbtest | Connector | Connector cluster containing a single SMD part using the USBTEST footprint, sourced from the chilaboard-altium-library, tagged quality tier C with generated (unreviewed) metadata. | usbtest connector smd surface mount chilaboard altium footprint single part tier c generated unreviewed usb test connector surface mount pad mm pitch pins | USBTEST | ",
+ "embedding_text": "connector.usbtest | Connector | 1 connector parts using USBTEST footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | usbtest connector surface mount pad mm pitch pins | USBTEST | ",
  "class": "connector"
 }

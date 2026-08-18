@@ -6,28 +6,20 @@
   "Discrete",
   "Diode"
  ],
- "description": "Cluster of 3 tier-C discrete diode parts utilizing the RTD package family and RTD footprints.",
+ "description": "3 discrete diode parts using RTD footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Verify part compatibility with the RTD package family and RTD footprint.",
-  "Check component quality status and source data prior to selection.",
-  "Use when discrete diode parts in an RTD package are specified."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a RTD land pattern is intended."
  ],
  "avoid_when": [
-  "The board design requires package families or footprints other than RTD.",
-  "Tier-C parts with generated review status do not meet project requirements.",
-  "Specific mounting specifications are required beyond unknown mount type."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than RTD."
  ],
  "keywords": [
-  "discrete",
-  "diode",
   "rtd",
-  "package family",
   "footprint",
-  "discrete diode",
-  "rtd footprint",
-  "tier c",
-  "discrete.diode",
-  "rtd package",
   "land",
   "pattern",
   "bare",
@@ -62,7 +54,7 @@
   "tier_counts": {
    "C": 3
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
@@ -70,6 +62,6 @@
   "dist-legacy/RTD 0805_2012",
   "dist-legacy/RTD 1206_3216"
  ],
- "embedding_text": "discrete-diode.rtd | Discrete Diode | Cluster of 3 tier-C discrete diode parts utilizing the RTD package family and RTD footprints. | discrete diode rtd package family footprint discrete diode rtd footprint tier c discrete.diode rtd package land pattern bare surface mount metric with anode and cathode pins smd smt package | RTD | ",
+ "embedding_text": "discrete-diode.rtd | Discrete Diode | 3 discrete diode parts using RTD footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | rtd footprint land pattern bare surface mount metric with anode and cathode pins smd smt package | RTD | ",
  "class": "discrete.diode"
 }

@@ -5,42 +5,34 @@
  "category_path": [
   "IC"
  ],
- "description": "Cluster of 6 IC parts in tier C using MPS package family footprints including LGA-18, USON-6, and VSON-6.",
+ "description": "6 ic parts using MPS footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Verify specific footprint requirements such as LGA-18, USON-6, or VSON-6.",
-  "Check compatibility with tier C quality rating and source data.",
-  "Confirm suitability for surface-mount (SMD) packaging."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a MPS land pattern is intended."
  ],
  "avoid_when": [
-  "Layout requires package families outside the MPS footprint family.",
-  "Tier C component quality tier is not permitted.",
-  "Planner visibility is required as there are 0 planner visible parts."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than MPS."
  ],
  "keywords": [
-  "ic",
   "mps",
-  "lga-18",
-  "uson-6",
-  "vson-6",
-  "smd",
-  "tier c",
   "lga",
-  "uson",
-  "vson",
-  "12x12mm",
-  "1.2x1.6mm",
-  "1x1.5mm",
-  "p0.5mm",
   "5mm",
+  "ic",
   "p0",
   "12x12x4",
   "2mm",
+  "uson",
+  "vson",
   "pad",
   "mm",
   "pitch",
   "pins",
   "en",
-  "document"
+  "document",
+  "10ep"
  ],
  "facts": {
   "package_family": "MPS",
@@ -67,7 +59,7 @@
   "tier_counts": {
    "C": 6
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
@@ -78,6 +70,6 @@
   "dist-legacy/MPS_USON-6_1.2x1.6mm_P0.5mm",
   "dist-legacy/MPS_VSON-6_1x1.5mm_P0.5mm"
  ],
- "embedding_text": "ic.mps | IC | Cluster of 6 IC parts in tier C using MPS package family footprints including LGA-18, USON-6, and VSON-6. | ic mps lga-18 uson-6 vson-6 smd tier c lga uson vson 12x12mm 1.2x1.6mm 1x1.5mm p0.5mm 5mm p0 12x12x4 2mm pad mm pitch pins en document | MPS | ",
+ "embedding_text": "ic.mps | IC | 6 ic parts using MPS footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | mps lga 5mm ic p0 12x12x4 2mm uson vson pad mm pitch pins en document 10ep | MPS | ",
  "class": "ic"
 }

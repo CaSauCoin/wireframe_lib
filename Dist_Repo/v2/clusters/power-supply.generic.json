@@ -6,35 +6,30 @@
   "Power",
   "Power Supply"
  ],
- "description": "A cluster of 3 tier G power supply parts from dist-legacy representing battery holders with package chosen later.",
+ "description": "3 power power supply parts with package chosen later. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Verify the specific battery type such as 2xAA or 1x2032.",
-  "Confirm footprint and mounting details since package is chosen later.",
-  "Evaluate part quality requirements given all entries are tier G."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Select a footprint/package explicitly before placement."
  ],
  "avoid_when": [
-  "A predefined package or footprint is required immediately.",
-  "Higher quality tier parts than tier G are required.",
-  "A non-battery holder power supply component is needed."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review."
  ],
  "keywords": [
   "power",
-  "power supply",
-  "battery holder",
   "batteryholder",
   "mpd",
-  "bc12aapc",
-  "bc2003",
-  "bc2aapc",
   "2xaa",
-  "1x2032",
-  "tier g",
-  "dist-legacy",
   "supply",
+  "bc12aapc",
   "pins",
   "package",
   "chosen",
-  "later"
+  "later",
+  "bc2003",
+  "1x2032",
+  "bc2aapc"
  ],
  "facts": {
   "package_family": "package chosen later",
@@ -51,7 +46,7 @@
   "tier_counts": {
    "G": 3
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -84,6 +79,6 @@
   "dist-legacy/BatteryHolder_MPD_BC2003_1x2032",
   "dist-legacy/BatteryHolder_MPD_BC2AAPC_2xAA"
  ],
- "embedding_text": "power-supply.generic | Power Power Supply | A cluster of 3 tier G power supply parts from dist-legacy representing battery holders with package chosen later. | power power supply battery holder batteryholder mpd bc12aapc bc2003 bc2aapc 2xaa 1x2032 tier g dist-legacy supply pins package chosen later | package chosen later | ",
+ "embedding_text": "power-supply.generic | Power Power Supply | 3 power power supply parts with package chosen later. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | power batteryholder mpd 2xaa supply bc12aapc pins package chosen later bc2003 1x2032 bc2aapc | package chosen later | ",
  "class": "power.supply"
 }

@@ -5,34 +5,24 @@
  "category_path": [
   "IC"
  ],
- "description": "Integrated circuit cluster containing 2 surface-mount parts utilizing Nordic LGA footprints such as LGA-102-59EP and LGA-80-33EP.",
+ "description": "2 ic parts using Nordic footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when requiring surface-mount IC components with Nordic LGA footprints.",
-  "Choose based on the exact footprint required, such as LGA-102-59EP or LGA-80-33EP.",
-  "Confirm land pattern requirements and pitch for Nordic package variants."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a Nordic land pattern is intended."
  ],
  "avoid_when": [
-  "Through-hole mounting or non-SMD assembly is required.",
-  "The design requires package footprints other than the supported Nordic LGA patterns.",
-  "Footprint requirements differ from LGA-102-59EP or LGA-80-33EP."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than Nordic."
  ],
  "keywords": [
-  "ic",
+  "5mm",
   "nordic",
-  "smd",
-  "surface mount",
   "lga",
+  "p0",
   "nrf9160",
   "nrf9151",
-  "lga-102-59ep",
-  "lga-80-33ep",
-  "16.0x10.5mm",
-  "12.1x11.1mm",
-  "p0.5mm",
-  "nrf9160-sixx",
-  "nrf9151-laxx",
-  "5mm",
-  "p0",
   "sixx",
   "59ep",
   "0x10",
@@ -40,7 +30,9 @@
   "33ep",
   "1x11",
   "1mm",
-  "surface"
+  "ic",
+  "surface",
+  "mount"
  ],
  "facts": {
   "package_family": "Nordic",
@@ -62,13 +54,13 @@
   "tier_counts": {
    "C": 2
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
   "dist-legacy/Nordic_nRF9160-SIxx_LGA-102-59EP_16.0x10.5mm_P0.5mm",
   "dist-legacy/Nordic_nRF9151-LAxx_LGA-80-33EP_12.1x11.1mm_P0.5mm"
  ],
- "embedding_text": "ic.nordic | IC | Integrated circuit cluster containing 2 surface-mount parts utilizing Nordic LGA footprints such as LGA-102-59EP and LGA-80-33EP. | ic nordic smd surface mount lga nrf9160 nrf9151 lga-102-59ep lga-80-33ep 16.0x10.5mm 12.1x11.1mm p0.5mm nrf9160-sixx nrf9151-laxx 5mm p0 sixx 59ep 0x10 laxx 33ep 1x11 1mm surface | Nordic | ",
+ "embedding_text": "ic.nordic | IC | 2 ic parts using Nordic footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | 5mm nordic lga p0 nrf9160 nrf9151 sixx 59ep 0x10 laxx 33ep 1x11 1mm ic surface mount | Nordic | ",
  "class": "ic"
 }

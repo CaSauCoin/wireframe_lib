@@ -6,33 +6,21 @@
   "IC",
   "Sensor"
  ],
- "description": "Cluster of 2 surface-mount sensor ICs using Texas package family footprints including Texas_DQX002A and Texas_PWSON-N6.",
+ "description": "2 ic sensor parts using Texas footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when requiring surface-mount sensor ICs in Texas package footprints such as Texas_DQX002A or Texas_PWSON-N6.",
-  "Choose between specific parts including LMT01DQX temperature sensor or HDC1080 humidity sensor.",
-  "Verify footprint match against Texas_DQX002A or Texas_PWSON-N6 land patterns."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a Texas land pattern is intended."
  ],
  "avoid_when": [
-  "Avoid when board layout requires packages outside the Texas package family.",
-  "Avoid if surface-mount (SMD) mounting is not supported.",
-  "Avoid when footprints other than Texas_DQX002A or Texas_PWSON-N6 are required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than Texas."
  ],
  "keywords": [
-  "ic",
   "sensor",
-  "texas",
-  "smd",
-  "ic sensor",
-  "texas_dqx002a",
-  "texas_pwson-n6",
-  "lmt01dqx",
-  "hdc1080",
-  "temperature sensor",
-  "humidity sensor",
-  "tier b",
-  "dqx002a",
-  "pwson-n6",
   "temperature",
+  "texas",
   "digital",
   "humidity",
   "with",
@@ -40,8 +28,12 @@
   "count",
   "dqx",
   "wson",
+  "ic",
+  "lmt01dqx",
   "accurate",
-  "pin"
+  "pin",
+  "output",
+  "interface"
  ],
  "facts": {
   "package_family": "Texas",
@@ -63,7 +55,7 @@
   "tier_counts": {
    "B": 2
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -87,6 +79,6 @@
   "kicad-symbols/Sensor_Temperature/LMT01DQX",
   "kicad-symbols/Sensor_Humidity/HDC1080"
  ],
- "embedding_text": "ic-sensor.texas | IC Sensor | Cluster of 2 surface-mount sensor ICs using Texas package family footprints including Texas_DQX002A and Texas_PWSON-N6. | ic sensor texas smd ic sensor texas_dqx002a texas_pwson-n6 lmt01dqx hdc1080 temperature sensor humidity sensor tier b dqx002a pwson-n6 temperature digital humidity with pulse count dqx wson accurate pin | Texas | ",
+ "embedding_text": "ic-sensor.texas | IC Sensor | 2 ic sensor parts using Texas footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | sensor temperature texas digital humidity with pulse count dqx wson ic lmt01dqx accurate pin output interface | Texas | ",
  "class": "ic.sensor"
 }

@@ -7,42 +7,34 @@
   "Driver",
   "Display"
  ],
- "description": "Display driver IC cluster comprising 5 tier A surface-mount parts using the I2C interface across TSSOP package footprints.",
+ "description": "5 ic driver display parts for I2C using TSSOP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select according to required TSSOP pin count and body footprint such as TSSOP-14, TSSOP-16, TSSOP-20, or TSSOP-28.",
-  "Use when a surface-mount TSSOP package with 0.65mm lead pitch and I2C control is needed.",
-  "Choose among available KiCad parts: NCP5623DTBR2G, PCA9531PW, PCA9635, PCA9685PW, or TLC59108xPW."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a TSSOP land pattern is intended."
  ],
  "avoid_when": [
-  "Avoid when the application requires through-hole mounting instead of surface-mount TSSOP packages.",
-  "Avoid if control interfaces other than I2C are required.",
-  "Avoid if package lead pitches other than 0.65mm are needed."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than TSSOP."
  ],
  "keywords": [
-  "ic driver display",
   "tssop",
-  "i2c",
-  "smd",
-  "display driver",
-  "tssop-14",
-  "tssop-16",
-  "tssop-20",
-  "tssop-28",
-  "pca9685pw",
-  "pca9635",
-  "pca9531pw",
-  "tlc59108xpw",
-  "ncp5623dtbr2g",
-  "0.65mm pitch",
-  "kicad-symbols",
   "driver",
   "led",
+  "i2c",
   "pwm",
   "p0",
   "65mm",
   "so",
   "ic",
-  "display"
+  "display",
+  "rgb",
+  "bit",
+  "fm",
+  "bus",
+  "4x5mm",
+  "4x9"
  ],
  "facts": {
   "package_family": "TSSOP",
@@ -68,7 +60,7 @@
   "tier_counts": {
    "A": 5
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -119,6 +111,6 @@
   "kicad-symbols/Driver_LED/PCA9685PW",
   "kicad-symbols/Driver_LED/TLC59108xPW"
  ],
- "embedding_text": "ic-driver-display.tssop.i2c | IC Driver Display | Display driver IC cluster comprising 5 tier A surface-mount parts using the I2C interface across TSSOP package footprints. | ic driver display tssop i2c smd display driver tssop-14 tssop-16 tssop-20 tssop-28 pca9685pw pca9635 pca9531pw tlc59108xpw ncp5623dtbr2g 0.65mm pitch kicad-symbols driver led pwm p0 65mm so ic display | TSSOP | I2C",
+ "embedding_text": "ic-driver-display.tssop.i2c | IC Driver Display | 5 ic driver display parts for I2C using TSSOP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | tssop driver led i2c pwm p0 65mm so ic display rgb bit fm bus 4x5mm 4x9 | TSSOP | I2C",
  "class": "ic.driver.display"
 }

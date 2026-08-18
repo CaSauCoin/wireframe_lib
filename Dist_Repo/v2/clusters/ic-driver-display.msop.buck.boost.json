@@ -7,31 +7,23 @@
   "Driver",
   "Display"
  ],
- "description": "Display driver IC cluster featuring buck and boost topologies in surface-mount MSOP packaging.",
+ "description": "6 ic driver display parts for buck, boost using MSOP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Requires buck or boost topology display driver ICs in MSOP packaging.",
-  "Targeting surface-mount designs using MSOP-16-1EP footprints.",
-  "Selecting tier A parts such as LT3755xMSE or LT3756xMSE variants."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a MSOP land pattern is intended."
  ],
  "avoid_when": [
-  "Surface-mount MSOP packaging is not suitable for the PCB layout.",
-  "Topologies other than buck or boost are required.",
-  "Display driver IC functionality is not needed."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than MSOP."
  ],
  "keywords": [
-  "ic driver display",
   "msop",
-  "buck",
   "boost",
-  "smd",
-  "display driver",
-  "msop-16-1ep",
-  "lt3755xmse",
-  "lt3756xmse",
-  "ic",
-  "driver",
-  "display",
+  "buck",
   "led",
+  "driver",
   "dc",
   "vin",
   "vout",
@@ -66,7 +58,7 @@
   "tier_counts": {
    "A": 6
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -118,6 +110,6 @@
   "kicad-symbols/Driver_LED/LT3756xMSE-1",
   "kicad-symbols/Driver_LED/LT3756xMSE-2"
  ],
- "embedding_text": "ic-driver-display.msop.buck.boost | IC Driver Display | Display driver IC cluster featuring buck and boost topologies in surface-mount MSOP packaging. | ic driver display msop buck boost smd display driver msop-16-1ep lt3755xmse lt3756xmse ic driver display led dc vin vout controllers 1ep 3x4 039mm p0 5mm ep1 651x2 | MSOP | buck boost",
+ "embedding_text": "ic-driver-display.msop.buck.boost | IC Driver Display | 6 ic driver display parts for buck, boost using MSOP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | msop boost buck led driver dc vin vout controllers 1ep 3x4 039mm p0 5mm ep1 651x2 | MSOP | buck boost",
  "class": "ic.driver.display"
 }

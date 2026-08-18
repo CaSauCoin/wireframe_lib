@@ -5,30 +5,24 @@
  "category_path": [
   "IC"
  ],
- "description": "IC cluster containing 2 parts using PAD package family footprints including PAD_RND_1MM and PAD_SQ_2MM.",
+ "description": "2 ic parts using PAD footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Use when a PAD footprint such as PAD_RND_1MM or PAD_SQ_2MM is required.",
-  "Verify part specifications, footprint mapping, and tier C quality details before selection."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a PAD land pattern is intended."
  ],
  "avoid_when": [
-  "The layout requires package families other than PAD.",
-  "Unverified tier C parts or unknown mounting types are unacceptable for the design."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than PAD."
  ],
  "keywords": [
-  "ic",
   "pad",
-  "ic pad",
-  "package pad",
-  "pad_rnd_1mm",
-  "pad_sq_2mm",
-  "rnd 1mm",
-  "sq 2mm",
-  "tier c",
-  "dist legacy",
   "rnd",
   "1mm",
   "sq",
   "2mm",
+  "ic",
   "pins"
  ],
  "facts": {
@@ -51,13 +45,13 @@
   "tier_counts": {
    "C": 2
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
   "dist-legacy/PAD_RND_1MM",
   "dist-legacy/PAD_SQ_2MM"
  ],
- "embedding_text": "ic.pad | IC | IC cluster containing 2 parts using PAD package family footprints including PAD_RND_1MM and PAD_SQ_2MM. | ic pad ic pad package pad pad_rnd_1mm pad_sq_2mm rnd 1mm sq 2mm tier c dist legacy rnd 1mm sq 2mm pins | PAD | ",
+ "embedding_text": "ic.pad | IC | 2 ic parts using PAD footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | pad rnd 1mm sq 2mm ic pins | PAD | ",
  "class": "ic"
 }

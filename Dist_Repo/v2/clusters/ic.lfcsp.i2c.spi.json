@@ -5,31 +5,23 @@
  "category_path": [
   "IC"
  ],
- "description": "Integrated circuit cluster containing surface-mount components in LFCSP packages supporting I2C and SPI communication.",
+ "description": "2 ic parts for I2C, SPI using LFCSP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when designing surface-mount ICs requiring I2C or SPI control interfaces.",
-  "Choose when requiring 32-pin LFCSP packages with 5x5mm body and 0.5mm pitch.",
-  "Consider for designs using KiCad symbol entries like ADAU1361 or ADAU1761."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a LFCSP land pattern is intended."
  ],
  "avoid_when": [
-  "Avoid if the design requires through-hole components rather than surface-mount.",
-  "Avoid when packages other than LFCSP are required by board constraints.",
-  "Avoid if control interfaces other than I2C or SPI are required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than LFCSP."
  ],
  "keywords": [
-  "ic",
   "lfcsp",
+  "audio",
+  "5mm",
   "i2c",
   "spi",
-  "smd",
-  "audio",
-  "adau1361",
-  "adau1761",
-  "lfcsp-32-1ep",
-  "5x5mm",
-  "p0.5mm",
-  "thermalvias",
-  "5mm",
   "stereo",
   "low",
   "power",
@@ -64,7 +56,7 @@
   "tier_counts": {
    "B": 2
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -88,6 +80,6 @@
   "kicad-symbols/Audio/ADAU1361",
   "kicad-symbols/Audio/ADAU1761"
  ],
- "embedding_text": "ic.lfcsp.i2c.spi | IC | Integrated circuit cluster containing surface-mount components in LFCSP packages supporting I2C and SPI communication. | ic lfcsp i2c spi smd audio adau1361 adau1761 lfcsp-32-1ep 5x5mm p0.5mm thermalvias 5mm stereo low power khz bit codec with integrated pll vqfn 1ep | LFCSP | I2C SPI",
+ "embedding_text": "ic.lfcsp.i2c.spi | IC | 2 ic parts for I2C, SPI using LFCSP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | lfcsp audio 5mm i2c spi stereo low power khz bit codec with integrated pll vqfn 1ep | LFCSP | I2C SPI",
  "class": "ic"
 }

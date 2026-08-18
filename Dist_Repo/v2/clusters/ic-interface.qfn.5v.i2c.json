@@ -6,40 +6,32 @@
   "IC",
   "Interface"
  ],
- "description": "Surface-mount I2C interface ICs supporting 5V and 5.5V facets in QFN package footprint variants.",
+ "description": "4 ic interface parts for 5V, I2C, 5.5V using QFN footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select based on required QFN package variant, pin count, pitch, and exposed pad dimensions.",
-  "Prefer Tier A part PCAL6416AHF over Tier B options when higher quality tier ranking is required.",
-  "Verify compatibility with 5V or 5.5V I2C interface specifications."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a QFN land pattern is intended."
  ],
  "avoid_when": [
-  "The PCB layout requires package families other than QFN or non-SMD components.",
-  "The application requires operating voltages or interface protocols other than 5V, 5.5V, and I2C.",
-  "Surface-mount technology (SMD) is not supported by the target board assembly."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than QFN."
  ],
  "keywords": [
-  "ic",
+  "5v",
   "interface",
   "i2c",
-  "5v",
-  "5.5v",
-  "qfn",
-  "smd",
-  "hvqfn",
-  "vqfn",
-  "uqfn",
-  "pcal6416ahf",
-  "pca9506bs",
-  "pcal6408abs",
-  "pcal6408ahk",
   "expander",
   "io",
+  "qfn",
   "expansion",
   "gpio",
   "interrupt",
   "p0",
   "nolead",
   "twi",
+  "ic",
+  "hvqfn",
   "1ep",
   "5mm"
  ],
@@ -70,7 +62,7 @@
    "A": 1,
    "B": 3
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -112,6 +104,6 @@
   "kicad-symbols/Interface_Expansion/PCAL6408ABS",
   "kicad-symbols/Interface_Expansion/PCAL6408AHK"
  ],
- "embedding_text": "ic-interface.qfn.5v.i2c | IC Interface | Surface-mount I2C interface ICs supporting 5V and 5.5V facets in QFN package footprint variants. | ic interface i2c 5v 5.5v qfn smd hvqfn vqfn uqfn pcal6416ahf pca9506bs pcal6408abs pcal6408ahk expander io expansion gpio interrupt p0 nolead twi 1ep 5mm | QFN | 5V I2C 5.5V",
+ "embedding_text": "ic-interface.qfn.5v.i2c | IC Interface | 4 ic interface parts for 5V, I2C, 5.5V using QFN footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | 5v interface i2c expander io qfn expansion gpio interrupt p0 nolead twi ic hvqfn 1ep 5mm | QFN | 5V I2C 5.5V",
  "class": "ic.interface"
 }

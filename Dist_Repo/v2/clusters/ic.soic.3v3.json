@@ -5,42 +5,34 @@
  "category_path": [
   "IC"
  ],
- "description": "Integrated circuit cluster of 13 surface-mount parts featuring 3.3V functionality in SOIC footprint options including SOIC-8 and SOIC-8 with exposed pad.",
+ "description": "13 ic parts for 3.3V using SOIC footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when needing a 3.3V surface-mount IC in an 8-pin SOIC footprint.",
-  "Choose between standard SOIC-8 and exposed pad variants based on PCB land pattern requirements.",
-  "Prefer the 12 tier A parts over tier B entries in this cluster."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SOIC land pattern is intended."
  ],
  "avoid_when": [
-  "Avoid when the PCB layout requires a package family other than SOIC.",
-  "Do not use if through-hole mounting is required.",
-  "Avoid if non-3.3V operating voltage is required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SOIC."
  ],
  "keywords": [
-  "ic",
   "soic",
-  "soic-8",
-  "3.3v",
-  "smd",
-  "surface mount",
-  "reference voltage",
-  "lt1461",
-  "mcp1501",
-  "exposed pad",
-  "1.27mm pitch",
-  "3.9x4.9mm",
   "voltage",
   "3v",
   "so",
   "regulator",
   "reference",
   "100ma",
+  "ic",
   "9mm",
   "9x4",
   "p1",
   "27mm",
   "pmic",
-  "precision"
+  "precision",
+  "akl",
+  "alternate"
  ],
  "facts": {
   "package_family": "SOIC",
@@ -68,7 +60,7 @@
    "A": 12,
    "B": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -127,6 +119,6 @@
   "Alternate-KiCad-Library/Voltage_Regulator_AKL/TS78L03CS-RLG",
   "digikey-kicad-library/dk_PMIC-Voltage-Regulators-Linear/L4931ABD33-TR"
  ],
- "embedding_text": "ic.soic.3v3 | IC | Integrated circuit cluster of 13 surface-mount parts featuring 3.3V functionality in SOIC footprint options including SOIC-8 and SOIC-8 with exposed pad. | ic soic soic-8 3.3v smd surface mount reference voltage lt1461 mcp1501 exposed pad 1.27mm pitch 3.9x4.9mm voltage 3v so regulator reference 100ma 9mm 9x4 p1 27mm pmic precision | SOIC | 3.3V",
+ "embedding_text": "ic.soic.3v3 | IC | 13 ic parts for 3.3V using SOIC footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | soic voltage 3v so regulator reference 100ma ic 9mm 9x4 p1 27mm pmic precision akl alternate | SOIC | 3.3V",
  "class": "ic"
 }

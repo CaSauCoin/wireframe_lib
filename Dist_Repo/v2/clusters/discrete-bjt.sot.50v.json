@@ -6,43 +6,34 @@
   "Discrete",
   "BJT"
  ],
- "description": "Cluster of 403 SMD discrete BJT parts (294 tier A, 109 tier B) grouped by the 50V facet and SOT package family, spanning footprints from SOT-363/SC-70-6 to SOT-1123; auto-generated grouping, not individually reviewed.",
+ "description": "403 discrete bjt parts for 50V using SOT footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Prefer tier A entries and match the exact SOT footprint variant needed",
-  "Confirm source library (Alternate-KiCad-Library vs kicad-symbols) matches your trust requirements",
-  "Verify the part's actual voltage rating matches your design need beyond the 50V facet label"
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SOT land pattern is intended."
  ],
  "avoid_when": [
-  "A non-SOT package (e.g. TO-92, SOD) is required for the layout",
-  "The design needs a voltage rating outside the 50V facet",
-  "review_status is 'generated' and the symbol-footprint pairing has not been manually verified",
-  "A specific footprint variant in this list is not confirmed against the chosen part"
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SOT."
  ],
  "keywords": [
-  "discrete bjt",
-  "sot package",
-  "50v",
-  "smd transistor",
-  "sot-363",
-  "sot-323",
-  "sot-223",
-  "sot-416",
-  "sot-563",
-  "sot-666",
-  "sot-723",
-  "sot-883",
-  "sot-963",
-  "sot-1123",
-  "sc-70",
-  "kicad-symbols",
-  "alternate-kicad-library",
-  "tier a bjt",
   "sot",
   "transistor",
   "pre",
   "biased",
   "bjt",
-  "npn"
+  "50v",
+  "npn",
+  "pnp",
+  "sc",
+  "discrete",
+  "100ma",
+  "akl",
+  "alternate",
+  "kicad",
+  "library",
+  "brt"
  ],
  "facts": {
   "package_family": "SOT",
@@ -77,7 +68,7 @@
    "A": 294,
    "B": 109
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -526,6 +517,6 @@
   "Alternate-KiCad-Library/Transistor_BJT_Pre-Biased_AKL/PDTC144EE",
   "Alternate-KiCad-Library/Transistor_BJT_Pre-Biased_AKL/PDTC144EM"
  ],
- "embedding_text": "discrete-bjt.sot.50v | Discrete BJT | Cluster of 403 SMD discrete BJT parts (294 tier A, 109 tier B) grouped by the 50V facet and SOT package family, spanning footprints from SOT-363/SC-70-6 to SOT-1123; auto-generated grouping, not individually reviewed. | discrete bjt sot package 50v smd transistor sot-363 sot-323 sot-223 sot-416 sot-563 sot-666 sot-723 sot-883 sot-963 sot-1123 sc-70 kicad-symbols alternate-kicad-library tier a bjt sot transistor pre biased bjt npn | SOT | 50V",
+ "embedding_text": "discrete-bjt.sot.50v | Discrete BJT | 403 discrete bjt parts for 50V using SOT footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | sot transistor pre biased bjt 50v npn pnp sc discrete 100ma akl alternate kicad library brt | SOT | 50V",
  "class": "discrete.bjt"
 }

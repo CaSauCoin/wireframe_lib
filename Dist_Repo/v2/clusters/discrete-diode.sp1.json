@@ -6,28 +6,21 @@
   "Discrete",
   "Diode"
  ],
- "description": "Discrete diode cluster containing 1 quality tier C part using the SP1 package family and footprint.",
+ "description": "1 discrete diode parts using SP1 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when a discrete diode in an SP1 package family is required.",
-  "Review specifications for tier C parts before layout commitment.",
-  "Confirm compatibility with SP1 footprint land patterns."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SP1 land pattern is intended."
  ],
  "avoid_when": [
-  "The board layout requires a package family other than SP1.",
-  "Unreviewed quality tier C parts are not acceptable for the project.",
-  "The circuit requires a component class other than a discrete diode."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SP1."
  ],
  "keywords": [
-  "discrete diode",
+  "sp1",
   "discrete",
   "diode",
-  "sp1",
-  "sp1 footprint",
-  "sp1 package",
-  "discrete.diode",
-  "dist-legacy",
-  "tier c",
-  "package family sp1",
   "pad",
   "mm",
   "pitch",
@@ -52,12 +45,12 @@
   "tier_counts": {
    "C": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
   "dist-legacy/SP1"
  ],
- "embedding_text": "discrete-diode.sp1 | Discrete Diode | Discrete diode cluster containing 1 quality tier C part using the SP1 package family and footprint. | discrete diode discrete diode sp1 sp1 footprint sp1 package discrete.diode dist-legacy tier c package family sp1 pad mm pitch pins | SP1 | ",
+ "embedding_text": "discrete-diode.sp1 | Discrete Diode | 1 discrete diode parts using SP1 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | sp1 discrete diode pad mm pitch pins | SP1 | ",
  "class": "discrete.diode"
 }

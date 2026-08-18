@@ -6,28 +6,21 @@
   "Discrete",
   "Transistor"
  ],
- "description": "Discrete transistor cluster featuring through-hole MSTBF footprints such as MSTBF_3 from the chilaboard-altium-library source.",
+ "description": "1 discrete transistor parts using MSTBF footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when requiring a discrete transistor in a through-hole MSTBF package.",
-  "Verify compatibility with the MSTBF_3 footprint pattern.",
-  "Confirm pin assignments and ratings against part documentation before PCB design."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a MSTBF land pattern is intended."
  ],
  "avoid_when": [
-  "Do not use if the board design requires surface-mount components.",
-  "Avoid when the layout requires a package family other than MSTBF.",
-  "Avoid if specific electrical parameters are needed but not provided."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than MSTBF."
  ],
  "keywords": [
+  "mstbf",
   "discrete",
   "transistor",
-  "mstbf",
-  "mstbf_3",
-  "through_hole",
-  "through hole",
-  "discrete transistor",
-  "mstbf footprint",
-  "chilaboard-altium-library",
-  "package family",
   "through",
   "hole",
   "pad",
@@ -54,12 +47,12 @@
   "tier_counts": {
    "C": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
   "chilaboard-altium-library/MSTBF_3/MSTBF_3"
  ],
- "embedding_text": "discrete-transistor.mstbf | Discrete Transistor | Discrete transistor cluster featuring through-hole MSTBF footprints such as MSTBF_3 from the chilaboard-altium-library source. | discrete transistor mstbf mstbf_3 through_hole through hole discrete transistor mstbf footprint chilaboard-altium-library package family through hole pad mm pitch pins | MSTBF | ",
+ "embedding_text": "discrete-transistor.mstbf | Discrete Transistor | 1 discrete transistor parts using MSTBF footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | mstbf discrete transistor through hole pad mm pitch pins | MSTBF | ",
  "class": "discrete.transistor"
 }

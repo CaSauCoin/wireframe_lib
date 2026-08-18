@@ -5,42 +5,34 @@
  "category_path": [
   "IC"
  ],
- "description": "Cluster of 32 IC component entries associated with HARTING package footprints supporting surface-mount, through-hole, and unknown mounting types.",
+ "description": "32 ic parts using HARTING footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Verify mounting type compatibility such as surface-mount or through-hole.",
-  "Select based on exact footprint requirements including har-flexicon 2.54mm pitch options.",
-  "Note that all 32 parts in this cluster are categorized under quality tier C."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a HARTING land pattern is intended."
  ],
  "avoid_when": [
-  "The PCB design requires footprint packages other than HARTING.",
-  "Components with quality tier classifications higher than tier C are required.",
-  "Mounting specifications do not match surface-mount, through-hole, or unspecified mounts."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than HARTING."
  ],
  "keywords": [
-  "ic",
   "harting",
-  "har-flexicon",
-  "flexicon",
-  "2.54mm",
-  "smd",
-  "through_hole",
-  "vertical",
-  "horizontal",
-  "1x03-mp",
-  "1x04-mp",
-  "1x05-mp",
-  "1x06-mp",
-  "09061486901",
-  "tier c",
   "har",
+  "flexicon",
   "mp",
   "p2",
   "54mm",
+  "horizontal",
+  "ic",
+  "vertical",
   "connector",
   "pdf",
   "pad",
   "mm",
-  "pitch"
+  "pitch",
+  "pins",
+  "surface"
  ],
  "facts": {
   "package_family": "HARTING",
@@ -75,7 +67,7 @@
   "tier_counts": {
    "C": 32
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
@@ -112,6 +104,6 @@
   "dist-legacy/Harting_har-flexicon_14111213002xxx_1x12-MP_P2.54mm_Horizontal",
   "dist-legacy/Harting_har-flexicon_14111213010xxx_1x12-MP_P2.54mm_Horizontal"
  ],
- "embedding_text": "ic.harting | IC | Cluster of 32 IC component entries associated with HARTING package footprints supporting surface-mount, through-hole, and unknown mounting types. | ic harting har-flexicon flexicon 2.54mm smd through_hole vertical horizontal 1x03-mp 1x04-mp 1x05-mp 1x06-mp 09061486901 tier c har mp p2 54mm connector pdf pad mm pitch | HARTING | ",
+ "embedding_text": "ic.harting | IC | 32 ic parts using HARTING footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | harting har flexicon mp p2 54mm horizontal ic vertical connector pdf pad mm pitch pins surface | HARTING | ",
  "class": "ic"
 }

@@ -6,44 +6,34 @@
   "Discrete",
   "BJT"
  ],
- "description": "Cluster of 10 through-hole BJT transistors rated for the 35V facet, spanning TO-92, TO-39, and TO-5 packages, sourced from the Alternate-KiCad-Library.",
+ "description": "10 discrete bjt parts for 35V using TO footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Prefer tier A entries (BF506, BFY50) over tier B",
-  "Match the exact footprint: TO-92_Inline_Wide_CBE, TO-39-3_EBC, or TO-5-6_CBE-EBC",
-  "LM194H variants are TO-5-6_CBE-EBC and share identical tier/score",
-  "Confirm the 35V facet meets your circuit's voltage requirement"
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a TO land pattern is intended."
  ],
  "avoid_when": [
-  "Design requires a surface-mount package",
-  "Required voltage exceeds the 35V facet",
-  "Exact footprint (CBE vs EBC pinout) cannot be confirmed against the schematic symbol",
-  "A specific manufacturer or datasheet-verified part is mandated"
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than TO."
  ],
  "keywords": [
-  "bjt",
-  "transistor",
-  "discrete",
-  "to-92",
-  "to-39",
-  "to-5",
-  "35v",
-  "through hole",
-  "cbe",
-  "ebc",
-  "bf506",
-  "bfy50",
-  "lm194h",
-  "alternate-kicad-library",
-  "akl",
-  "to package",
   "to",
+  "transistor",
+  "bjt",
   "npn",
+  "35v",
   "dual",
+  "akl",
   "alternate",
   "kicad",
   "library",
+  "discrete",
+  "cbe",
+  "ebc",
   "matched",
-  "lm194"
+  "lm194",
+  "lm194h"
  ],
  "facts": {
   "package_family": "TO",
@@ -69,7 +59,7 @@
    "A": 2,
    "B": 8
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -125,6 +115,6 @@
   "Alternate-KiCad-Library/Transistor_BJT_AKL/LM394H-2",
   "Alternate-KiCad-Library/Transistor_BJT_AKL/LM394Hs"
  ],
- "embedding_text": "discrete-bjt.to.35v | Discrete BJT | Cluster of 10 through-hole BJT transistors rated for the 35V facet, spanning TO-92, TO-39, and TO-5 packages, sourced from the Alternate-KiCad-Library. | bjt transistor discrete to-92 to-39 to-5 35v through hole cbe ebc bf506 bfy50 lm194h alternate-kicad-library akl to package to npn dual alternate kicad library matched lm194 | TO | 35V",
+ "embedding_text": "discrete-bjt.to.35v | Discrete BJT | 10 discrete bjt parts for 35V using TO footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | to transistor bjt npn 35v dual akl alternate kicad library discrete cbe ebc matched lm194 lm194h | TO | 35V",
  "class": "discrete.bjt"
 }

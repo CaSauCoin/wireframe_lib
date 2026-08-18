@@ -6,16 +6,16 @@
   "IC",
   "RF"
  ],
- "description": "Cluster of surface-mount RF IC components in the Jadak package family utilizing Jadak_Thingmagic_M6e-Nano footprints.",
+ "description": "1 ic rf parts using Jadak footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when using surface-mount RF ICs requiring the Jadak_Thingmagic_M6e-Nano footprint.",
-  "Confirm compatibility with Jadak package family surface-mount land patterns.",
-  "Review tier C quality classification before using in design."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a Jadak land pattern is intended."
  ],
  "avoid_when": [
-  "Do not use if the design requires through-hole or non-SMD mounting.",
-  "Avoid when a footprint other than Jadak_Thingmagic_M6e-Nano is required.",
-  "Avoid if the board layout uses a package family other than Jadak."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than Jadak."
  ],
  "keywords": [
   "jadak",
@@ -23,13 +23,6 @@
   "m6e",
   "nano",
   "rf",
-  "ic",
-  "ic rf",
-  "smd",
-  "jadak_thingmagic_m6e-nano",
-  "kicad-symbols",
-  "rf ic",
-  "jadak package",
   "module",
   "rfid",
   "uhf",
@@ -38,7 +31,8 @@
   "27dbm",
   "edge",
   "pin",
-  "connections"
+  "connections",
+  "ic"
  ],
  "facts": {
   "package_family": "Jadak",
@@ -59,12 +53,12 @@
   "tier_counts": {
    "C": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
   "kicad-symbols/RF_Module/Jadak_Thingmagic_M6e-Nano"
  ],
- "embedding_text": "ic-rf.jadak | IC RF | Cluster of surface-mount RF IC components in the Jadak package family utilizing Jadak_Thingmagic_M6e-Nano footprints. | jadak thingmagic m6e nano rf ic ic rf smd jadak_thingmagic_m6e-nano kicad-symbols rf ic jadak package module rfid uhf antenna port 27dbm edge pin connections | Jadak | ",
+ "embedding_text": "ic-rf.jadak | IC RF | 1 ic rf parts using Jadak footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | jadak thingmagic m6e nano rf module rfid uhf antenna port 27dbm edge pin connections ic | Jadak | ",
  "class": "ic.rf"
 }

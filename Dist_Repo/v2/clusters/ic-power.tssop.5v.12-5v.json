@@ -6,32 +6,22 @@
   "IC",
   "Power"
  ],
- "description": "Cluster of 4 surface-mount power IC parts in TSSOP-8 (4.4x3mm, 0.65mm pitch) packages with 5V and 12.5V voltage facets.",
+ "description": "4 ic power parts for 5V, 12.5V using TSSOP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Choose when needing surface-mount power ICs in a TSSOP-8 package.",
-  "Select for designs requiring 5V or 12.5V voltage facets.",
-  "Compare specific parts including UCC3802, UCC3804, UCC3813-2, and UCC3813-4."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a TSSOP land pattern is intended."
  ],
  "avoid_when": [
-  "Avoid if the design requires non-SMD or non-TSSOP packaging.",
-  "Do not use if system requirements differ from 5V or 12.5V facets.",
-  "Avoid when requiring footprints other than TSSOP-8_4.4x3mm_P0.65mm."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than TSSOP."
  ],
  "keywords": [
-  "ic",
-  "power",
   "tssop",
-  "tssop-8",
-  "smd",
   "5v",
-  "12.5v",
-  "regulator controller",
-  "ucc3802",
-  "ucc3804",
-  "ucc3813-2",
-  "ucc3813-4",
-  "ic.power",
   "controller",
+  "power",
   "pwm",
   "regulator",
   "low",
@@ -41,7 +31,9 @@
   "duty",
   "cycle",
   "3v",
-  "uvlo"
+  "uvlo",
+  "dip",
+  "soic"
  ],
  "facts": {
   "package_family": "TSSOP",
@@ -65,7 +57,7 @@
   "tier_counts": {
    "A": 4
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -107,6 +99,6 @@
   "kicad-symbols/Regulator_Controller/UCC3813-2",
   "kicad-symbols/Regulator_Controller/UCC3813-4"
  ],
- "embedding_text": "ic-power.tssop.5v.12-5v | IC Power | Cluster of 4 surface-mount power IC parts in TSSOP-8 (4.4x3mm, 0.65mm pitch) packages with 5V and 12.5V voltage facets. | ic power tssop tssop-8 smd 5v 12.5v regulator controller ucc3802 ucc3804 ucc3813-2 ucc3813-4 ic.power controller pwm regulator low bicmos current mode duty cycle 3v uvlo | TSSOP | 5V 12.5V",
+ "embedding_text": "ic-power.tssop.5v.12-5v | IC Power | 4 ic power parts for 5V, 12.5V using TSSOP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | tssop 5v controller power pwm regulator low bicmos current mode duty cycle 3v uvlo dip soic | TSSOP | 5V 12.5V",
  "class": "ic.power"
 }

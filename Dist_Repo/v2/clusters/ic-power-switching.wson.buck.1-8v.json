@@ -7,42 +7,34 @@
   "Power",
   "Switching Regulator"
  ],
- "description": "Surface-mount 1.8V buck power switching regulator ICs in WSON packages matching WSON-8-1EP land patterns.",
+ "description": "2 ic power switching regulator parts for buck, 1.8V using WSON footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when requiring a 1.8V buck power switching regulator.",
-  "Use for surface-mount designs using WSON packaging.",
-  "Verify layout compatibility with WSON-8-1EP footprints."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a WSON land pattern is intended."
  ],
  "avoid_when": [
-  "The circuit topology is not a buck regulator or does not operate at 1.8V.",
-  "Through-hole mounting is required instead of SMD.",
-  "The board design requires a package type other than WSON."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than WSON."
  ],
  "keywords": [
-  "ic",
-  "power",
-  "switching regulator",
-  "buck",
-  "1.8v",
   "wson",
-  "smd",
-  "wson-8-1ep",
-  "tps62161dsg",
-  "tps62171dsg",
-  "step down",
-  "thermalvias",
   "regulator",
   "switching",
   "step",
   "down",
   "8v",
   "1ep",
+  "thermalvias",
   "dc",
+  "buck",
   "converter",
   "with",
   "dcs",
   "control",
-  "fixed"
+  "fixed",
+  "output"
  ],
  "facts": {
   "package_family": "WSON",
@@ -66,7 +58,7 @@
   "tier_counts": {
    "A": 2
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -90,6 +82,6 @@
   "kicad-symbols/Regulator_Switching/TPS62161DSG",
   "kicad-symbols/Regulator_Switching/TPS62171DSG"
  ],
- "embedding_text": "ic-power-switching.wson.buck.1-8v | IC Power Switching Regulator | Surface-mount 1.8V buck power switching regulator ICs in WSON packages matching WSON-8-1EP land patterns. | ic power switching regulator buck 1.8v wson smd wson-8-1ep tps62161dsg tps62171dsg step down thermalvias regulator switching step down 8v 1ep dc converter with dcs control fixed | WSON | buck 1.8V",
+ "embedding_text": "ic-power-switching.wson.buck.1-8v | IC Power Switching Regulator | 2 ic power switching regulator parts for buck, 1.8V using WSON footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | wson regulator switching step down 8v 1ep thermalvias dc buck converter with dcs control fixed output | WSON | buck 1.8V",
  "class": "ic.power.switching"
 }

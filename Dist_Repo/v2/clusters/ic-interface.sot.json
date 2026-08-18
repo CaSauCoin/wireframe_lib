@@ -6,30 +6,25 @@
   "IC",
   "Interface"
  ],
- "description": "Interface IC cluster featuring surface-mount components in SOT packages such as SOT-143.",
+ "description": "1 ic interface parts using SOT footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when requiring an interface IC in a surface-mount SOT package such as SOT-143.",
-  "Prefer tier A parts with exact SOT-143 footprint matches.",
-  "Use for SMD interface designs compatible with SOT package footprints."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SOT land pattern is intended."
  ],
  "avoid_when": [
-  "The board layout requires packages other than SOT.",
-  "Through-hole mounting is required instead of SMD.",
-  "Non-interface IC functionality is required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SOT."
  ],
  "keywords": [
   "sot",
-  "sot-143",
-  "ic",
   "interface",
-  "smd",
-  "surface mount",
-  "max6816",
   "switch",
   "debouncer",
+  "max6816",
   "single",
-  "ic interface",
-  "kicad"
+  "ic"
  ],
  "facts": {
   "package_family": "SOT",
@@ -50,7 +45,7 @@
   "tier_counts": {
    "A": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -65,6 +60,6 @@
  "part_ids": [
   "kicad-symbols/Interface/MAX6816"
  ],
- "embedding_text": "ic-interface.sot | IC Interface | Interface IC cluster featuring surface-mount components in SOT packages such as SOT-143. | sot sot-143 ic interface smd surface mount max6816 switch debouncer single ic interface kicad | SOT | ",
+ "embedding_text": "ic-interface.sot | IC Interface | 1 ic interface parts using SOT footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | sot interface switch debouncer max6816 single ic | SOT | ",
  "class": "ic.interface"
 }

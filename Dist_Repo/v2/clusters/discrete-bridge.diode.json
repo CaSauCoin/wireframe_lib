@@ -6,44 +6,34 @@
   "Discrete",
   "Bridge Rectifier"
  ],
- "description": "Cluster of 731 discrete bridge rectifier parts (diode package family) spanning GBJ, GBU, KBU, ABS, DFS, KBPC_W, SO-DIL-Slim, and round SMD/through-hole footprints; select by exact footprint match and tier.",
+ "description": "731 discrete bridge rectifier parts using Diode footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Prefer tier A parts (524 of 731) for higher-confidence footprint pairing",
-  "Match the exact footprint variant needed (e.g. GBJ, GBU, KBU, ABS, DFS, KBPC_W, round D9.8mm)",
-  "Confirm smd vs through_hole mount matches the board design",
-  "Cross-check source library (Alternate-KiCad-Library, kicad-symbols, dist-legacy) for trust level"
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a Diode land pattern is intended."
  ],
  "avoid_when": [
-  "Required footprint is not one of the listed Diode_Bridge variants",
-  "Part falls in tier C (only 3 available) or lacks a clear footprint match",
-  "Symbol-footprint pairing has not been reviewed (review_status is generated, not verified)",
-  "A non-diode-family bridge rectifier package is needed"
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than Diode."
  ],
  "keywords": [
-  "bridge rectifier",
-  "diode bridge",
-  "discrete",
-  "gbj",
-  "gbu",
-  "kbu",
-  "abs",
-  "dfs",
-  "kbpc_w",
-  "so-dil-slim",
-  "round diode bridge",
-  "smd",
-  "through hole",
-  "vishay",
-  "diotec",
-  "genesic",
-  "kicad-symbols",
-  "alternate-kicad-library",
   "bridge",
   "diode",
   "rectifier",
+  "discrete",
   "akl",
   "alternate",
-  "kicad"
+  "kicad",
+  "library",
+  "tht",
+  "vishay",
+  "0mm",
+  "gbj",
+  "phase",
+  "8mm",
+  "gbu",
+  "smd"
  ],
  "facts": {
   "package_family": "Diode",
@@ -80,7 +70,7 @@
    "B": 204,
    "C": 3
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -857,6 +847,6 @@
   "dist-legacy/Diode_Bridge_Round_D9.8mm",
   "dist-legacy/Diode_Bridge_Comchip_SCVB-L"
  ],
- "embedding_text": "discrete-bridge.diode | Discrete Bridge Rectifier | Cluster of 731 discrete bridge rectifier parts (diode package family) spanning GBJ, GBU, KBU, ABS, DFS, KBPC_W, SO-DIL-Slim, and round SMD/through-hole footprints; select by exact footprint match and tier. | bridge rectifier diode bridge discrete gbj gbu kbu abs dfs kbpc_w so-dil-slim round diode bridge smd through hole vishay diotec genesic kicad-symbols alternate-kicad-library bridge diode rectifier akl alternate kicad | Diode | ",
+ "embedding_text": "discrete-bridge.diode | Discrete Bridge Rectifier | 731 discrete bridge rectifier parts using Diode footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | bridge diode rectifier discrete akl alternate kicad library tht vishay 0mm gbj phase 8mm gbu smd | Diode | ",
  "class": "discrete.bridge"
 }

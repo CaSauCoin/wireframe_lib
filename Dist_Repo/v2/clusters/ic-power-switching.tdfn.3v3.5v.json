@@ -7,33 +7,23 @@
   "Power",
   "Switching Regulator"
  ],
- "description": "Cluster of surface-mount buck switching regulator ICs in TDFN packages for 3.3V and 5V power switching applications.",
+ "description": "2 ic power switching regulator parts for 3.3V, 5V, buck using TDFN footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when a surface-mount buck switching regulator in a TDFN package is needed for 3.3V or 5V rails.",
-  "Verify footprint compatibility with TDFN-10-1EP_2x3mm_P0.5mm_EP0.9x2mm.",
-  "Check part quality tier and source requirements prior to layout."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a TDFN land pattern is intended."
  ],
  "avoid_when": [
-  "The PCB design requires through-hole or non-TDFN packaging.",
-  "The circuit topology required is not a buck step-down regulator.",
-  "Voltage requirements differ from the 3.3V or 5V facets provided."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than TDFN."
  ],
  "keywords": [
-  "ic",
-  "power",
-  "switching regulator",
-  "buck",
-  "3.3v",
-  "5v",
-  "tdfn",
-  "smd",
-  "step-down",
-  "tdfn-10-1ep",
-  "max17501axtb",
-  "max17501extb",
-  "regulator",
   "dc",
+  "tdfn",
+  "regulator",
   "switching",
+  "5v",
   "3v",
   "step",
   "down",
@@ -42,7 +32,9 @@
   "high",
   "efficiency",
   "synchronous",
-  "converter"
+  "converter",
+  "mode",
+  "1ep"
  ],
  "facts": {
   "package_family": "TDFN",
@@ -67,7 +59,7 @@
   "tier_counts": {
    "B": 2
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -91,6 +83,6 @@
   "kicad-symbols/Regulator_Switching/MAX17501AxTB",
   "kicad-symbols/Regulator_Switching/MAX17501ExTB"
  ],
- "embedding_text": "ic-power-switching.tdfn.3v3.5v | IC Power Switching Regulator | Cluster of surface-mount buck switching regulator ICs in TDFN packages for 3.3V and 5V power switching applications. | ic power switching regulator buck 3.3v 5v tdfn smd step-down tdfn-10-1ep max17501axtb max17501extb regulator dc switching 3v step down 60vin 500ma high efficiency synchronous converter | TDFN | 3.3V 5V buck",
+ "embedding_text": "ic-power-switching.tdfn.3v3.5v | IC Power Switching Regulator | 2 ic power switching regulator parts for 3.3V, 5V, buck using TDFN footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | dc tdfn regulator switching 5v 3v step down 60vin 500ma high efficiency synchronous converter mode 1ep | TDFN | 3.3V 5V buck",
  "class": "ic.power.switching"
 }

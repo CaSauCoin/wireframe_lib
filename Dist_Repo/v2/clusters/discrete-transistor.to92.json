@@ -6,28 +6,21 @@
   "Discrete",
   "Transistor"
  ],
- "description": "Discrete transistor cluster containing two tier C parts using TO92 and TO92-132 footprints.",
+ "description": "2 discrete transistor parts using TO92 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when needing discrete transistors in TO92 or TO92-132 package footprints.",
-  "Check footprint compatibility between standard TO92 and TO92-132 variants.",
-  "Verify part specifications given the tier C quality rating."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a TO92 land pattern is intended."
  ],
  "avoid_when": [
-  "The design requires package types other than TO92 family footprints.",
-  "Parts with higher quality tiers or verified review status are required.",
-  "Specific surface-mount or through-hole mounting details are strictly needed."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than TO92."
  ],
  "keywords": [
+  "to92",
   "discrete",
   "transistor",
-  "discrete transistor",
-  "to92",
-  "to92-132",
-  "discrete.transistor",
-  "footprint",
-  "package family",
-  "tier c",
-  "dist-legacy",
   "pad",
   "mm",
   "pitch",
@@ -53,13 +46,13 @@
   "tier_counts": {
    "C": 2
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
   "dist-legacy/TO92",
   "dist-legacy/TO92-132"
  ],
- "embedding_text": "discrete-transistor.to92 | Discrete Transistor | Discrete transistor cluster containing two tier C parts using TO92 and TO92-132 footprints. | discrete transistor discrete transistor to92 to92-132 discrete.transistor footprint package family tier c dist-legacy pad mm pitch pins | TO92 | ",
+ "embedding_text": "discrete-transistor.to92 | Discrete Transistor | 2 discrete transistor parts using TO92 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | to92 discrete transistor pad mm pitch pins | TO92 | ",
  "class": "discrete.transistor"
 }

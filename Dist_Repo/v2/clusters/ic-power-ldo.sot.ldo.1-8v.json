@@ -7,42 +7,34 @@
   "Power",
   "Linear Regulator"
  ],
- "description": "Cluster of 20 surface-mount 1.8V LDO linear regulator ICs using SOT package footprints such as SOT-223, SOT-89, SOT-353, and SOT-343.",
+ "description": "20 ic power linear regulator parts for LDO, 1.8V using SOT footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Match the specific SOT footprint variant such as SOT-223, SOT-89, SOT-353, or SOT-343.",
-  "Prefer tier A parts over tier B parts.",
-  "Distinguish tab pin variants such as SOT-223-3_TabPin2 from standard SOT-223-3."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SOT land pattern is intended."
  ],
  "avoid_when": [
-  "An output voltage other than 1.8V is required.",
-  "Through-hole mounting is required instead of SMD.",
-  "A non-SOT package family is required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SOT."
  ],
  "keywords": [
-  "ic",
-  "power",
-  "linear regulator",
-  "ldo",
-  "1.8v",
   "sot",
-  "smd",
-  "sot-223",
-  "sot-89",
-  "sot-353",
-  "sot-343",
-  "ams1117",
-  "ap1117",
-  "tabpin2",
   "regulator",
   "linear",
+  "ldo",
   "8v",
   "fixed",
   "low",
+  "ic",
+  "power",
   "positive",
   "output",
   "dropout",
   "sc",
-  "cms"
+  "cms",
+  "voltage",
+  "tabpin2"
  ],
  "facts": {
   "package_family": "SOT",
@@ -72,7 +64,7 @@
    "A": 18,
    "B": 2
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -138,6 +130,6 @@
   "kicad-symbols/Regulator_Linear/TLV1117-18",
   "kicad-symbols/Regulator_Linear/LP38693MP-1.8"
  ],
- "embedding_text": "ic-power-ldo.sot.ldo.1-8v | IC Power Linear Regulator | Cluster of 20 surface-mount 1.8V LDO linear regulator ICs using SOT package footprints such as SOT-223, SOT-89, SOT-353, and SOT-343. | ic power linear regulator ldo 1.8v sot smd sot-223 sot-89 sot-353 sot-343 ams1117 ap1117 tabpin2 regulator linear 8v fixed low positive output dropout sc cms | SOT | LDO 1.8V",
+ "embedding_text": "ic-power-ldo.sot.ldo.1-8v | IC Power Linear Regulator | 20 ic power linear regulator parts for LDO, 1.8V using SOT footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | sot regulator linear ldo 8v fixed low ic power positive output dropout sc cms voltage tabpin2 | SOT | LDO 1.8V",
  "class": "ic.power.ldo"
 }

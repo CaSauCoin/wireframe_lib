@@ -6,42 +6,34 @@
   "Discrete",
   "FET"
  ],
- "description": "Discrete surface-mount FET cluster containing 8 Tier A parts with DirectFET package footprints including DirectFET_MZ and DirectFET_L8 sourced from KiCad symbols.",
+ "description": "8 discrete fet parts using DirectFET footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Designs requiring surface-mount discrete FETs in DirectFET footprints.",
-  "Projects needing Tier A KiCad symbols for DirectFET_MZ or DirectFET_L8 packages.",
-  "Selecting parts from the 8 available DirectFET transistor symbols."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a DirectFET land pattern is intended."
  ],
  "avoid_when": [
-  "Through-hole mounting or non-SMD package types are required.",
-  "Layouts requiring footprint packages other than DirectFET_MZ or DirectFET_L8.",
-  "Components outside the discrete FET category are needed."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than DirectFET."
  ],
  "keywords": [
   "directfet",
-  "discrete fet",
-  "smd",
-  "directfet_mz",
-  "directfet_l8",
-  "kicad-symbols",
-  "bsb165n15nz3",
-  "bsb280n15nz3",
-  "irf6641",
-  "irf6643",
-  "irf6775m",
-  "transistor_fet",
-  "discrete",
-  "fet",
   "mosfet",
   "mz",
+  "fet",
   "channel",
   "transistor",
   "id",
   "vds",
   "rds",
   "infineon",
+  "discrete",
   "l8",
-  "150v"
+  "150v",
+  "5mohm",
+  "200v",
+  "35a"
  ],
  "facts": {
   "package_family": "DirectFET",
@@ -63,7 +55,7 @@
   "tier_counts": {
    "A": 8
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -117,6 +109,6 @@
   "kicad-symbols/Transistor_FET/IRF7779L2",
   "kicad-symbols/Transistor_FET/IRF7799L2"
  ],
- "embedding_text": "discrete-fet.directfet | Discrete FET | Discrete surface-mount FET cluster containing 8 Tier A parts with DirectFET package footprints including DirectFET_MZ and DirectFET_L8 sourced from KiCad symbols. | directfet discrete fet smd directfet_mz directfet_l8 kicad-symbols bsb165n15nz3 bsb280n15nz3 irf6641 irf6643 irf6775m transistor_fet discrete fet mosfet mz channel transistor id vds rds infineon l8 150v | DirectFET | ",
+ "embedding_text": "discrete-fet.directfet | Discrete FET | 8 discrete fet parts using DirectFET footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | directfet mosfet mz fet channel transistor id vds rds infineon discrete l8 150v 5mohm 200v 35a | DirectFET | ",
  "class": "discrete.fet"
 }

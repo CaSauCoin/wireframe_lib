@@ -6,30 +6,21 @@
   "IC",
   "DSP"
  ],
- "description": "Cluster of surface-mount digital signal processor (DSP) integrated circuits in QFP package footprints including TQFP, LQFP, and PQFP variants.",
+ "description": "11 ic dsp parts using QFP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when requiring an SMD digital signal processor in a QFP package family footprint.",
-  "Choose based on the required footprint variant such as LQFP-48, TQFP-100, or PQFP-208.",
-  "Verify specific pitch and package dimensions for the target PCB layout."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a QFP land pattern is intended."
  ],
  "avoid_when": [
-  "A package family other than QFP is required for board layout.",
-  "Through-hole mounting is required instead of surface-mount."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than QFP."
  ],
  "keywords": [
-  "ic",
   "dsp",
   "qfp",
   "tqfp",
-  "lqfp",
-  "pqfp",
-  "smd",
-  "digital signal processor",
-  "adau1701",
-  "adau1702",
-  "dsp56301",
-  "dspic33",
-  "kicad-symbols",
   "bit",
   "digital",
   "signal",
@@ -37,7 +28,9 @@
   "microchip",
   "c48",
   "p0",
+  "ic",
   "flash",
+  "dspic33",
   "high",
   "performance",
   "40mips"
@@ -65,7 +58,7 @@
   "tier_counts": {
    "A": 11
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -122,6 +115,6 @@
   "kicad-symbols/DSP_Microchip_DSPIC33/DSPIC33FJ64MC710A",
   "kicad-symbols/DSP_Texas/TMS320LF2406PZ"
  ],
- "embedding_text": "ic-dsp.qfp | IC DSP | Cluster of surface-mount digital signal processor (DSP) integrated circuits in QFP package footprints including TQFP, LQFP, and PQFP variants. | ic dsp qfp tqfp lqfp pqfp smd digital signal processor adau1701 adau1702 dsp56301 dspic33 kicad-symbols bit digital signal controller microchip c48 p0 flash high performance 40mips | QFP | ",
+ "embedding_text": "ic-dsp.qfp | IC DSP | 11 ic dsp parts using QFP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | dsp qfp tqfp bit digital signal controller microchip c48 p0 ic flash dspic33 high performance 40mips | QFP | ",
  "class": "ic.dsp"
 }

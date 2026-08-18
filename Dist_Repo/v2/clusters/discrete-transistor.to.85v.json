@@ -6,42 +6,34 @@
   "Discrete",
   "Transistor"
  ],
- "description": "Discrete transistor component cluster containing 6 Tier-A 85V parts in TO package footprints, supporting surface-mount and through-hole mounting.",
+ "description": "6 discrete transistor parts for 85V using TO footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Selecting 85V discrete transistors in TO package footprints.",
-  "Choosing between surface-mount (TO-263-2) and through-hole (TO-220-3, TO-247-3) packages.",
-  "Selecting Tier-A parts sourced from Alternate-KiCad-Library."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a TO land pattern is intended."
  ],
  "avoid_when": [
-  "Designs requiring voltage ratings other than 85V.",
-  "Layouts requiring packages outside the TO footprint family.",
-  "Applications needing mounting types or footprints not provided by TO-220-3, TO-263-2, or TO-247-3."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than TO."
  ],
  "keywords": [
-  "discrete transistor",
-  "transistor",
-  "85v",
-  "to package",
-  "to-220",
-  "to-263",
-  "to-247",
-  "smd",
-  "through hole",
-  "to-220-3_vertical_gds",
-  "to-263-2",
-  "to-247-3_vertical_gds",
-  "dit195n08",
-  "ixta24p085t",
   "to",
   "mosfet",
+  "transistor",
   "enchancement",
+  "85v",
   "vertical",
   "akl",
   "mode",
   "alternate",
   "kicad",
   "library",
-  "mos"
+  "mos",
+  "emos",
+  "emosfet",
+  "discrete",
+  "pmosfet"
  ],
  "facts": {
   "package_family": "TO",
@@ -67,7 +59,7 @@
   "tier_counts": {
    "A": 6
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -119,6 +111,6 @@
   "Alternate-KiCad-Library/Transistor_MOSFET_AKL/IXTP24P085T",
   "Alternate-KiCad-Library/Transistor_MOSFET_AKL/IXTP96P085T"
  ],
- "embedding_text": "discrete-transistor.to.85v | Discrete Transistor | Discrete transistor component cluster containing 6 Tier-A 85V parts in TO package footprints, supporting surface-mount and through-hole mounting. | discrete transistor transistor 85v to package to-220 to-263 to-247 smd through hole to-220-3_vertical_gds to-263-2 to-247-3_vertical_gds dit195n08 ixta24p085t to mosfet enchancement vertical akl mode alternate kicad library mos | TO | 85V",
+ "embedding_text": "discrete-transistor.to.85v | Discrete Transistor | 6 discrete transistor parts for 85V using TO footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | to mosfet transistor enchancement 85v vertical akl mode alternate kicad library mos emos emosfet discrete pmosfet | TO | 85V",
  "class": "discrete.transistor"
 }

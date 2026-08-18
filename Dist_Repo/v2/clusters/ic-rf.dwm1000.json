@@ -6,31 +6,24 @@
   "IC",
   "RF"
  ],
- "description": "Surface-mount RF IC cluster utilizing the DWM1000 footprint.",
+ "description": "2 ic rf parts using DWM1000 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when an SMD RF IC with a DWM1000 footprint is required.",
-  "Prefer higher quality Tier A parts such as DWM3000.",
-  "Ensure compatibility with the DWM1000 package family land pattern."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a DWM1000 land pattern is intended."
  ],
  "avoid_when": [
-  "The board layout requires a footprint other than DWM1000.",
-  "Through-hole mounting is required instead of SMD.",
-  "Non-RF integrated circuits are required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than DWM1000."
  ],
  "keywords": [
-  "ic",
   "rf",
-  "ic.rf",
-  "dwm1000",
-  "dwm3000",
-  "rf ic",
-  "smd",
-  "surface mount",
-  "dwm1000 footprint",
-  "rf module",
   "module",
+  "dwm1000",
   "uwb",
   "ranging",
+  "dwm3000",
   "ultra",
   "wide",
   "band",
@@ -38,7 +31,8 @@
   "location",
   "capabilities",
   "decawave",
-  "qorvo"
+  "qorvo",
+  "ic"
  ],
  "facts": {
   "package_family": "DWM1000",
@@ -60,7 +54,7 @@
    "A": 1,
    "C": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -76,6 +70,6 @@
   "kicad-symbols/RF_Module/DWM3000",
   "kicad-symbols/RF_Module/DWM1000"
  ],
- "embedding_text": "ic-rf.dwm1000 | IC RF | Surface-mount RF IC cluster utilizing the DWM1000 footprint. | ic rf ic.rf dwm1000 dwm3000 rf ic smd surface mount dwm1000 footprint rf module module uwb ranging ultra wide band with location capabilities decawave qorvo | DWM1000 | ",
+ "embedding_text": "ic-rf.dwm1000 | IC RF | 2 ic rf parts using DWM1000 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | rf module dwm1000 uwb ranging dwm3000 ultra wide band with location capabilities decawave qorvo ic | DWM1000 | ",
  "class": "ic.rf"
 }

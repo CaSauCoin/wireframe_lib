@@ -6,39 +6,32 @@
   "Discrete",
   "Transistor"
  ],
- "description": "Cluster of discrete transistor library entries utilizing the MCCSEMI footprint and package family.",
+ "description": "1 discrete transistor parts using MCCSEMI footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Verify footprint geometry and pin assignments against target design requirements.",
-  "Confirm suitability of tier C quality parts prior to selection.",
-  "Use when an MCCSEMI footprint is required for the layout."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a MCCSEMI land pattern is intended."
  ],
  "avoid_when": [
-  "The layout requires a footprint family other than MCCSEMI.",
-  "Fully verified datasheets or high quality tiers are required.",
-  "Mounting specifications or electrical limits are unstated."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than MCCSEMI."
  ],
  "keywords": [
-  "discrete transistor",
-  "discrete",
-  "transistor",
   "mccsemi",
-  "mccsemi footprint",
-  "mccsemi package",
-  "tier c",
-  "dist-legacy",
-  "discrete.transistor",
-  "package family",
   "sot",
   "package",
   "land",
   "pattern",
+  "transistor",
   "bare",
   "with",
   "base",
   "collector",
   "and",
   "emitter",
-  "terminals"
+  "terminals",
+  "discrete"
  ],
  "facts": {
   "package_family": "MCCSEMI",
@@ -59,12 +52,12 @@
   "tier_counts": {
    "C": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
   "dist-legacy/MCCSEMI SOT-23-3"
  ],
- "embedding_text": "discrete-transistor.mccsemi | Discrete Transistor | Cluster of discrete transistor library entries utilizing the MCCSEMI footprint and package family. | discrete transistor discrete transistor mccsemi mccsemi footprint mccsemi package tier c dist-legacy discrete.transistor package family sot package land pattern bare with base collector and emitter terminals | MCCSEMI | ",
+ "embedding_text": "discrete-transistor.mccsemi | Discrete Transistor | 1 discrete transistor parts using MCCSEMI footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | mccsemi sot package land pattern transistor bare with base collector and emitter terminals discrete | MCCSEMI | ",
  "class": "discrete.transistor"
 }

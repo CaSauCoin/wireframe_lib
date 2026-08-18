@@ -7,32 +7,22 @@
   "Interface",
   "USB"
  ],
- "description": "Surface-mount USB interface IC cluster with 5 tier-A parts in SSOP package variants including 10-pin, 24-pin, and 28-pin footprints.",
+ "description": "5 ic interface usb parts for USB using SSOP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Match the required pin count and pitch (0.635mm, 0.65mm, or 1.0mm) to the SSOP footprint.",
-  "Confirm whether an exposed pad (1EP) footprint variant is required for the part.",
-  "Select the specific USB interface component among CH224K, FE1.1s, FT232RL, FT240XS, or MA8601."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SSOP land pattern is intended."
  ],
  "avoid_when": [
-  "The PCB design requires packages other than surface-mount SSOP.",
-  "Pin counts other than 10, 24, or 28 pins are required.",
-  "Non-USB interface IC functionality is required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SSOP."
  ],
  "keywords": [
-  "ic",
-  "interface",
   "usb",
   "ssop",
-  "smd",
-  "ch224k",
-  "fe1.1s",
-  "ft232rl",
-  "ft240xs",
-  "ma8601",
-  "ssop-10",
-  "ssop-24",
-  "ssop-28",
-  "kicad-symbols",
+  "interface",
+  "ic",
   "speed",
   "high",
   "port",
@@ -42,7 +32,9 @@
   "9mm",
   "635mm",
   "so",
-  "9x9"
+  "9x9",
+  "eeprom",
+  "usb2"
  ],
  "facts": {
   "package_family": "SSOP",
@@ -68,7 +60,7 @@
   "tier_counts": {
    "A": 5
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -119,6 +111,6 @@
   "kicad-symbols/Interface_USB/FT240XS",
   "kicad-symbols/Interface_USB/MA8601"
  ],
- "embedding_text": "ic-interface-usb.ssop.usb | IC Interface USB | Surface-mount USB interface IC cluster with 5 tier-A parts in SSOP package variants including 10-pin, 24-pin, and 28-pin footprints. | ic interface usb ssop smd ch224k fe1.1s ft232rl ft240xs ma8601 ssop-10 ssop-24 ssop-28 kicad-symbols speed high port hub p0 controller 9mm 635mm so 9x9 | SSOP | USB",
+ "embedding_text": "ic-interface-usb.ssop.usb | IC Interface USB | 5 ic interface usb parts for USB using SSOP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | usb ssop interface ic speed high port hub p0 controller 9mm 635mm so 9x9 eeprom usb2 | SSOP | USB",
  "class": "ic.interface.usb"
 }

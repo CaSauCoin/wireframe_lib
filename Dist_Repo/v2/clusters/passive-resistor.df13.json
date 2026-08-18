@@ -6,31 +6,22 @@
   "Passive",
   "Resistor"
  ],
- "description": "Cluster of 4 passive resistor library entries utilizing DF13 footprints in SMD and through-hole mounting configurations.",
+ "description": "4 passive resistor parts using DF13 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select according to the required footprint variant such as DF13_2P_DS, DF13_2P_DSA, DF13_2P_H, or DF13_2P_V.",
-  "Choose between surface-mount (smd) and through-hole mounting configurations.",
-  "Verify part parameters independently as all entries are currently tier C with generated review status."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a DF13 land pattern is intended."
  ],
  "avoid_when": [
-  "The board layout requires footprints or package families other than DF13.",
-  "Components other than passive resistors are required.",
-  "Designs require pre-verified tier A or planner-visible parts."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than DF13."
  ],
  "keywords": [
+  "df13",
+  "2p",
   "passive",
   "resistor",
-  "df13",
-  "smd",
-  "through_hole",
-  "df13_2p_ds",
-  "df13_2p_dsa",
-  "df13_2p_h",
-  "df13_2p_v",
-  "chilaboard-altium-library",
-  "passive resistor",
-  "df13 package",
-  "2p",
   "ds",
   "dsa",
   "pad",
@@ -65,7 +56,7 @@
   "tier_counts": {
    "C": 4
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
@@ -74,6 +65,6 @@
   "chilaboard-altium-library/DF13_2P_H/DF13_2P_H",
   "chilaboard-altium-library/DF13_2P_V/DF13_2P_V"
  ],
- "embedding_text": "passive-resistor.df13 | Passive Resistor | Cluster of 4 passive resistor library entries utilizing DF13 footprints in SMD and through-hole mounting configurations. | passive resistor df13 smd through_hole df13_2p_ds df13_2p_dsa df13_2p_h df13_2p_v chilaboard-altium-library passive resistor df13 package 2p ds dsa pad mm pitch pins through hole surface mount | DF13 | ",
+ "embedding_text": "passive-resistor.df13 | Passive Resistor | 4 passive resistor parts using DF13 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | df13 2p passive resistor ds dsa pad mm pitch pins through hole surface mount | DF13 | ",
  "class": "passive.resistor"
 }

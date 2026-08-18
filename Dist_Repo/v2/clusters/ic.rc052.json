@@ -5,28 +5,20 @@
  "category_path": [
   "IC"
  ],
- "description": "IC cluster containing 3 tier C parts using RC052 package family footprints RC052_L, RC052_M, and RC052_N.",
+ "description": "3 ic parts using RC052 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when an IC requiring the RC052 package family is needed.",
-  "Choose between RC052_L, RC052_M, or RC052_N footprint variants.",
-  "Verify compatibility with tier C parts from dist-legacy sources."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a RC052 land pattern is intended."
  ],
  "avoid_when": [
-  "The board layout requires a package family other than RC052.",
-  "Footprints RC052_L, RC052_M, or RC052_N do not fit design constraints.",
-  "Tier C quality level or legacy distributor sources are not permitted."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than RC052."
  ],
  "keywords": [
   "rc052",
   "ic",
-  "rc052_l",
-  "rc052_m",
-  "rc052_n",
-  "package family",
-  "dist-legacy",
-  "tier c",
-  "integrated circuit",
-  "rc052 footprint",
   "pad",
   "mm",
   "pitch",
@@ -53,7 +45,7 @@
   "tier_counts": {
    "C": 3
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
@@ -61,6 +53,6 @@
   "dist-legacy/RC052_M",
   "dist-legacy/RC052_N"
  ],
- "embedding_text": "ic.rc052 | IC | IC cluster containing 3 tier C parts using RC052 package family footprints RC052_L, RC052_M, and RC052_N. | rc052 ic rc052_l rc052_m rc052_n package family dist-legacy tier c integrated circuit rc052 footprint pad mm pitch pins | RC052 | ",
+ "embedding_text": "ic.rc052 | IC | 3 ic parts using RC052 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | rc052 ic pad mm pitch pins | RC052 | ",
  "class": "ic"
 }

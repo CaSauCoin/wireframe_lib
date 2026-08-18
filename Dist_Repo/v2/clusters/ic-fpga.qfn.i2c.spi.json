@@ -6,31 +6,24 @@
   "IC",
   "FPGA"
  ],
- "description": "Surface-mount FPGA IC cluster featuring I2C, SPI, and 1.71V facets in a QFN package family.",
+ "description": "1 ic fpga parts for I2C, SPI, 1.71V using QFN footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Confirm compatibility with 1.71V, I2C, and SPI facets.",
-  "Verify requirement for QFN SMD footprint such as Renesas UQFN-16 2x2mm P0.4mm.",
-  "Check tier B quality status and KiCad symbols library source."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a QFN land pattern is intended."
  ],
  "avoid_when": [
-  "The design requires package families other than QFN.",
-  "Through-hole mounting or non-SMD footprints are required.",
-  "Operating parameters or bus interfaces differ from 1.71V, I2C, or SPI."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than QFN."
  ],
  "keywords": [
-  "ic",
-  "fpga",
-  "qfn",
-  "i2c",
-  "spi",
-  "1.71v",
-  "smd",
   "renesas",
   "uqfn",
-  "uqfn-16",
-  "slg47011v",
-  "kicad",
   "71v",
+  "i2c",
+  "spi",
+  "slg47011v",
   "cpld",
   "greenpak",
   "programmable",
@@ -65,7 +58,7 @@
   "tier_counts": {
    "B": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -80,6 +73,6 @@
  "part_ids": [
   "kicad-symbols/CPLD_Renesas/SLG47011V"
  ],
- "embedding_text": "ic-fpga.qfn.i2c.spi | IC FPGA | Surface-mount FPGA IC cluster featuring I2C, SPI, and 1.71V facets in a QFN package family. | ic fpga qfn i2c spi 1.71v smd renesas uqfn uqfn-16 slg47011v kicad 71v cpld greenpak programmable mixed signal matrix bit sar adc gpio | QFN | I2C SPI 1.71V",
+ "embedding_text": "ic-fpga.qfn.i2c.spi | IC FPGA | 1 ic fpga parts for I2C, SPI, 1.71V using QFN footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | renesas uqfn 71v i2c spi slg47011v cpld greenpak programmable mixed signal matrix bit sar adc gpio | QFN | I2C SPI 1.71V",
  "class": "ic.fpga"
 }

@@ -5,28 +5,20 @@
  "category_path": [
   "IC"
  ],
- "description": "Integrated circuit cluster with DB15SS package footprints containing 1 tier C part sourced from dist-legacy.",
+ "description": "1 ic parts using DB15SS footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Verify DB15SS footprint requirements before assigning to a PCB layout.",
-  "Check part specifications carefully as this cluster contains tier C quality entries.",
-  "Use when a DB15SS package footprint is intended."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a DB15SS land pattern is intended."
  ],
  "avoid_when": [
-  "The PCB design requires a package footprint other than DB15SS.",
-  "Higher quality tiers than tier C are required for the design.",
-  "Electrical specs, pin assignments, or ratings are not provided."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than DB15SS."
  ],
  "keywords": [
   "db15ss",
   "ic",
-  "integrated circuit",
-  "db15ss package",
-  "db15ss footprint",
-  "tier c",
-  "dist-legacy",
-  "package family",
-  "unknown mount",
-  "component cluster",
   "pad",
   "mm",
   "pitch",
@@ -51,12 +43,12 @@
   "tier_counts": {
    "C": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
   "dist-legacy/DB15SS"
  ],
- "embedding_text": "ic.db15ss | IC | Integrated circuit cluster with DB15SS package footprints containing 1 tier C part sourced from dist-legacy. | db15ss ic integrated circuit db15ss package db15ss footprint tier c dist-legacy package family unknown mount component cluster pad mm pitch pins | DB15SS | ",
+ "embedding_text": "ic.db15ss | IC | 1 ic parts using DB15SS footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | db15ss ic pad mm pitch pins | DB15SS | ",
  "class": "ic"
 }

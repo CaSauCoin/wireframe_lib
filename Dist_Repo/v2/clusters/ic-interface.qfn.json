@@ -6,37 +6,29 @@
   "IC",
   "Interface"
  ],
- "description": "Cluster of 3 surface-mount interface ICs in QFN and VQFN packages from KiCad symbols.",
+ "description": "3 ic interface parts using QFN footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when requiring surface-mount (SMD) interface ICs in QFN or VQFN packaging.",
-  "Choose between 16-pin 3x3mm (0.5mm pitch) and 76-pin 9x9mm (0.4mm pitch) footprints.",
-  "Filter parts by Tier A or Tier B quality classifications."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a QFN land pattern is intended."
  ],
  "avoid_when": [
-  "Through-hole or non-SMD mounting is required.",
-  "Designs require package families other than QFN or VQFN.",
-  "The required footprint is not a 16-pin 3x3mm or 76-pin 9x9mm exposed pad layout."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than QFN."
  ],
  "keywords": [
-  "ic",
   "interface",
-  "ic interface",
   "qfn",
   "vqfn",
-  "smd",
-  "qfn-76",
-  "vqfn-16",
-  "9x9mm",
-  "3x3mm",
-  "p0.4mm",
-  "p0.5mm",
-  "kicad-symbols",
   "1ep",
   "p0",
   "nolead",
+  "ic",
   "two",
   "limiting",
   "amplifier",
+  "3x3mm",
   "5mm",
   "ep1",
   "sfp",
@@ -65,7 +57,7 @@
    "A": 1,
    "B": 2
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -98,6 +90,6 @@
   "kicad-symbols/Interface/ONET1191PRGT",
   "kicad-symbols/Interface/CDCLVP1102RGT"
  ],
- "embedding_text": "ic-interface.qfn | IC Interface | Cluster of 3 surface-mount interface ICs in QFN and VQFN packages from KiCad symbols. | ic interface ic interface qfn vqfn smd qfn-76 vqfn-16 9x9mm 3x3mm p0.4mm p0.5mm kicad-symbols 1ep p0 nolead two limiting amplifier 5mm ep1 sfp clock buffer | QFN | ",
+ "embedding_text": "ic-interface.qfn | IC Interface | 3 ic interface parts using QFN footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | interface qfn vqfn 1ep p0 nolead ic two limiting amplifier 3x3mm 5mm ep1 sfp clock buffer | QFN | ",
  "class": "ic.interface"
 }

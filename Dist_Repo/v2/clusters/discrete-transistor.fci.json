@@ -6,29 +6,22 @@
   "Discrete",
   "Transistor"
  ],
- "description": "Discrete transistor cluster containing two tier-C parts associated with FCI package footprints and through-hole or unknown mount types.",
+ "description": "2 discrete transistor parts using FCI footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Verify footprints such as FCI or FCI 06-381-3PIN for your layout.",
-  "Check mounting requirements against through-hole or unknown mount types.",
-  "Note that parts in this cluster have tier C quality with generated review status."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a FCI land pattern is intended."
  ],
  "avoid_when": [
-  "The board design requires a package family other than FCI.",
-  "The application requires quality tiers higher than tier C.",
-  "Surface-mount mounting is required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than FCI."
  ],
  "keywords": [
+  "fci",
+  "3pin",
   "discrete",
   "transistor",
-  "discrete transistor",
-  "fci",
-  "fci 06-381-3pin",
-  "through hole",
-  "package family fci",
-  "celestial altium library",
-  "dist legacy",
-  "tier c",
-  "3pin",
   "81mm",
   "pitch",
   "pin",
@@ -64,13 +57,13 @@
   "tier_counts": {
    "C": 2
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
   "dist-legacy/FCI 06-381-3PIN",
   "celestial-altium-library/FCI 06-381-3PIN/FCI_06-381-3PIN"
  ],
- "embedding_text": "discrete-transistor.fci | Discrete Transistor | Discrete transistor cluster containing two tier-C parts associated with FCI package footprints and through-hole or unknown mount types. | discrete transistor discrete transistor fci fci 06-381-3pin through hole package family fci celestial altium library dist legacy tier c 3pin 81mm pitch pin package land pattern bare component through hole pad mm | FCI | ",
+ "embedding_text": "discrete-transistor.fci | Discrete Transistor | 2 discrete transistor parts using FCI footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | fci 3pin discrete transistor 81mm pitch pin package land pattern bare component through hole pad mm | FCI | ",
  "class": "discrete.transistor"
 }

@@ -6,31 +6,20 @@
   "IC",
   "Isolator"
  ],
- "description": "Surface-mount IC isolator cluster in the SSO package family using the SSO-8_6.8x5.9mm_P1.27mm_Clearance8mm footprint.",
+ "description": "6 ic isolator parts using SSO footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when needing surface-mount (SMD) isolator ICs in an SSO package.",
-  "Use when requiring the SSO-8_6.8x5.9mm_P1.27mm_Clearance8mm footprint.",
-  "Choose for designs utilizing KiCad symbol parts such as ACPL-C790, ACPL-C79A, or ACPL-C870."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SSO land pattern is intended."
  ],
  "avoid_when": [
-  "Through-hole or non-SMD mounting is required.",
-  "The board layout requires a package family other than SSO.",
-  "The layout requires a footprint other than SSO-8_6.8x5.9mm_P1.27mm_Clearance8mm."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SSO."
  ],
  "keywords": [
-  "ic isolator",
-  "isolator",
-  "ic",
   "sso",
-  "smd",
-  "sso-8_6.8x5.9mm_p1.27mm_clearance8mm",
-  "acpl-c790",
-  "acpl-c79a",
-  "acpl-c79b",
-  "acpl-c870",
-  "acpl-c87a",
-  "isolator_analog",
-  "kicad-symbols",
+  "isolator",
   "acpl",
   "analog",
   "precision",
@@ -41,7 +30,10 @@
   "bandwidth",
   "8x5",
   "9mm",
-  "p1"
+  "p1",
+  "27mm",
+  "clearance8mm",
+  "stretched"
  ],
  "facts": {
   "package_family": "SSO",
@@ -62,7 +54,7 @@
   "tier_counts": {
    "A": 6
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -114,6 +106,6 @@
   "kicad-symbols/Isolator_Analog/ACPL-C87A",
   "kicad-symbols/Isolator_Analog/ACPL-C87B"
  ],
- "embedding_text": "ic-isolator.sso | IC Isolator | Surface-mount IC isolator cluster in the SSO package family using the SSO-8_6.8x5.9mm_P1.27mm_Clearance8mm footprint. | ic isolator isolator ic sso smd sso-8_6.8x5.9mm_p1.27mm_clearance8mm acpl-c790 acpl-c79a acpl-c79b acpl-c870 acpl-c87a isolator_analog kicad-symbols acpl analog precision isolation amplifer gain tolerance bandwidth 8x5 9mm p1 | SSO | ",
+ "embedding_text": "ic-isolator.sso | IC Isolator | 6 ic isolator parts using SSO footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | sso isolator acpl analog precision isolation amplifer gain tolerance bandwidth 8x5 9mm p1 27mm clearance8mm stretched | SSO | ",
  "class": "ic.isolator"
 }

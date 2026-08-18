@@ -6,28 +6,21 @@
   "Passive",
   "Resistor"
  ],
- "description": "Cluster of surface-mount passive resistors in the R0612 package family sourced from the chilaboard Altium library.",
+ "description": "1 passive resistor parts using R0612 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Verify footprint compatibility with target R0612 land patterns.",
-  "Check individual component electrical specifications and ratings.",
-  "Review quality tier and review status prior to PCB layout integration."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a R0612 land pattern is intended."
  ],
  "avoid_when": [
-  "A package family or footprint other than R0612 is required.",
-  "Through-hole mounting is required instead of surface mount.",
-  "Designs require components that have passed review beyond generated tier C status."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than R0612."
  ],
  "keywords": [
+  "r0612",
   "passive",
   "resistor",
-  "passive resistor",
-  "r0612",
-  "smd",
-  "surface mount",
-  "chilaboard",
-  "altium",
-  "footprint",
-  "package",
   "surface",
   "mount",
   "pad",
@@ -54,12 +47,12 @@
   "tier_counts": {
    "C": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
   "chilaboard-altium-library/R0612/R0612"
  ],
- "embedding_text": "passive-resistor.r0612 | Passive Resistor | Cluster of surface-mount passive resistors in the R0612 package family sourced from the chilaboard Altium library. | passive resistor passive resistor r0612 smd surface mount chilaboard altium footprint package surface mount pad mm pitch pins | R0612 | ",
+ "embedding_text": "passive-resistor.r0612 | Passive Resistor | 1 passive resistor parts using R0612 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | r0612 passive resistor surface mount pad mm pitch pins | R0612 | ",
  "class": "passive.resistor"
 }

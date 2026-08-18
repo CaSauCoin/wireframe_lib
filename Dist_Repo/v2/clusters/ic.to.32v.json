@@ -5,32 +5,24 @@
  "category_path": [
   "IC"
  ],
- "description": "Integrated circuit cluster of 32V surface-mount parts in TO package family using TO-263-4 footprints.",
+ "description": "3 ic parts for 32V using TO footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Targeting 32V rated surface-mount IC parts.",
-  "Requiring a TO package family with TO-263-4 footprint.",
-  "Selecting tier A KiCad power management parts like AUIR3313S, AUIR3314S, or AUIR3315S."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a TO land pattern is intended."
  ],
  "avoid_when": [
-  "Through-hole mounting is required instead of SMD.",
-  "The board layout requires a footprint other than TO-263-4.",
-  "The application requires ICs with voltage ratings other than 32V."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than TO."
  ],
  "keywords": [
-  "ic",
-  "32v",
   "to",
-  "smd",
-  "to-263-4",
-  "power management",
-  "auir3313s",
-  "auir3314s",
-  "auir3315s",
-  "kicad-symbols",
   "d2pak",
   "high",
   "side",
   "switch",
+  "32v",
   "power",
   "management",
   "programmable",
@@ -38,7 +30,9 @@
   "sense",
   "5l",
   "ddpak",
-  "sot"
+  "sot",
+  "ic",
+  "auir3313s"
  ],
  "facts": {
   "package_family": "TO",
@@ -61,7 +55,7 @@
   "tier_counts": {
    "A": 3
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -94,6 +88,6 @@
   "kicad-symbols/Power_Management/AUIR3314S",
   "kicad-symbols/Power_Management/AUIR3315S"
  ],
- "embedding_text": "ic.to.32v | IC | Integrated circuit cluster of 32V surface-mount parts in TO package family using TO-263-4 footprints. | ic 32v to smd to-263-4 power management auir3313s auir3314s auir3315s kicad-symbols d2pak high side switch power management programmable current sense 5l ddpak sot | TO | 32V",
+ "embedding_text": "ic.to.32v | IC | 3 ic parts for 32V using TO footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | to d2pak high side switch 32v power management programmable current sense 5l ddpak sot ic auir3313s | TO | 32V",
  "class": "ic"
 }

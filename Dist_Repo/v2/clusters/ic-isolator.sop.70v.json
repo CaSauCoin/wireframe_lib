@@ -6,33 +6,21 @@
   "IC",
   "Isolator"
  ],
- "description": "Cluster of 15 surface-mount 70V IC isolators in SOP package family with SOP-4 and SOP-16 footprints from KiCad symbols.",
+ "description": "15 ic isolator parts for 70V using SOP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select for surface-mount 70V isolator IC applications requiring an SOP package.",
-  "Choose matching footprint variants such as SOP-4 or SOP-16 with 1.27mm pitch.",
-  "Prioritize tier A parts including TCMT1100, TCMT1101, TCMT1102, TCMT1103, and TCMT1104."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SOP land pattern is intended."
  ],
  "avoid_when": [
-  "The design requires through-hole mounting instead of surface-mount.",
-  "The application requires a package family other than SOP.",
-  "A voltage rating other than 70V is required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SOP."
  ],
  "keywords": [
-  "ic",
-  "isolator",
-  "ic.isolator",
-  "70v",
   "sop",
-  "smd",
-  "sop-4",
-  "sop-16",
-  "1.27mm",
-  "kicad-symbols",
-  "tcmt1100",
-  "tcmt1101",
-  "tcmt1102",
-  "tcmt1103",
-  "tcmt1104",
+  "isolator",
+  "70v",
   "optocoupler",
   "dc",
   "vce",
@@ -41,7 +29,11 @@
   "27mm",
   "so",
   "npn",
-  "viso"
+  "ic",
+  "viso",
+  "3750v",
+  "rms",
+  "opto"
  ],
  "facts": {
   "package_family": "SOP",
@@ -67,7 +59,7 @@
    "A": 13,
    "B": 2
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -128,6 +120,6 @@
   "kicad-symbols/Isolator/TCMT4600",
   "kicad-symbols/Isolator/TCMT4606"
  ],
- "embedding_text": "ic-isolator.sop.70v | IC Isolator | Cluster of 15 surface-mount 70V IC isolators in SOP package family with SOP-4 and SOP-16 footprints from KiCad symbols. | ic isolator ic.isolator 70v sop smd sop-4 sop-16 1.27mm kicad-symbols tcmt1100 tcmt1101 tcmt1102 tcmt1103 tcmt1104 optocoupler dc vce ctr p1 27mm so npn viso | SOP | 70V",
+ "embedding_text": "ic-isolator.sop.70v | IC Isolator | 15 ic isolator parts for 70V using SOP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | sop isolator 70v optocoupler dc vce ctr p1 27mm so npn ic viso 3750v rms opto | SOP | 70V",
  "class": "ic.isolator"
 }

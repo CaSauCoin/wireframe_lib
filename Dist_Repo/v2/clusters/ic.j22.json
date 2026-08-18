@@ -5,30 +5,22 @@
  "category_path": [
   "IC"
  ],
- "description": "IC component cluster containing 2 tier C parts in the J22 package family utilizing J22-C2T and J22-D2T footprints.",
+ "description": "2 ic parts using J22 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when J22-C2T or J22-D2T footprint land patterns are required.",
-  "Check part specifications against dist-legacy source data.",
-  "Verify part mounting requirements as mounting style is listed as unknown."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a J22 land pattern is intended."
  ],
  "avoid_when": [
-  "The design requires package footprints other than J22-C2T or J22-D2T.",
-  "Tier C quality rating or zero planner visible parts do not meet project requirements.",
-  "Exact package mount type must be specified prior to part selection."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than J22."
  ],
  "keywords": [
-  "ic",
   "j22",
-  "j22-c2t",
-  "j22-d2t",
   "c2t",
   "d2t",
-  "package family j22",
-  "integrated circuit",
-  "dist-legacy",
-  "tier c",
-  "unknown mount",
-  "ic cluster",
+  "ic",
   "pad",
   "mm",
   "pitch",
@@ -54,13 +46,13 @@
   "tier_counts": {
    "C": 2
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
   "dist-legacy/J22-C2T",
   "dist-legacy/J22-D2T"
  ],
- "embedding_text": "ic.j22 | IC | IC component cluster containing 2 tier C parts in the J22 package family utilizing J22-C2T and J22-D2T footprints. | ic j22 j22-c2t j22-d2t c2t d2t package family j22 integrated circuit dist-legacy tier c unknown mount ic cluster pad mm pitch pins | J22 | ",
+ "embedding_text": "ic.j22 | IC | 2 ic parts using J22 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | j22 c2t d2t ic pad mm pitch pins | J22 | ",
  "class": "ic"
 }

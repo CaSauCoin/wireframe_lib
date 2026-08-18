@@ -5,31 +5,20 @@
  "category_path": [
   "IC"
  ],
- "description": "A cluster of 10 surface-mount 8V integrated circuit parts using SOIC-8 and SOIC-16W package footprints.",
+ "description": "10 ic parts for 8V using SOIC footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select between SOIC-8 (3.9x4.9mm) and SOIC-16W (7.5x10.3mm) footprint options.",
-  "Verify component function such as voltage regulator or filter.",
-  "Choose based on library source preference between Alternate-KiCad-Library and kicad-symbols."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SOIC land pattern is intended."
  ],
  "avoid_when": [
-  "Through-hole mounting is required instead of SMD.",
-  "A package family other than SOIC is needed.",
-  "The design requires non-8V rated IC components."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SOIC."
  ],
  "keywords": [
-  "ic",
   "soic",
   "8v",
-  "smd",
-  "soic-8",
-  "soic-16w",
-  "voltage regulator",
-  "filter",
-  "kicad-symbols",
-  "alternate-kicad-library",
-  "ltc1063xsw",
-  "di78l08dab",
-  "l78l08abd",
   "voltage",
   "regulator",
   "so",
@@ -37,10 +26,13 @@
   "supply",
   "p1",
   "27mm",
+  "ic",
   "akl",
   "alternate",
   "kicad",
-  "library"
+  "library",
+  "9x4",
+  "9mm"
  ],
  "facts": {
   "package_family": "SOIC",
@@ -65,7 +57,7 @@
   "tier_counts": {
    "A": 10
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -121,6 +113,6 @@
   "Alternate-KiCad-Library/Voltage_Regulator_AKL/NCV78L08ABDR2G",
   "Alternate-KiCad-Library/Voltage_Regulator_AKL/μA78L08ACD"
  ],
- "embedding_text": "ic.soic.8v | IC | A cluster of 10 surface-mount 8V integrated circuit parts using SOIC-8 and SOIC-16W package footprints. | ic soic 8v smd soic-8 soic-16w voltage regulator filter kicad-symbols alternate-kicad-library ltc1063xsw di78l08dab l78l08abd voltage regulator so 100ma supply p1 27mm akl alternate kicad library | SOIC | 8V",
+ "embedding_text": "ic.soic.8v | IC | 10 ic parts for 8V using SOIC footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | soic 8v voltage regulator so 100ma supply p1 27mm ic akl alternate kicad library 9x4 9mm | SOIC | 8V",
  "class": "ic"
 }

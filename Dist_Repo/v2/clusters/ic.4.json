@@ -5,30 +5,19 @@
  "category_path": [
   "IC"
  ],
- "description": "Integrated circuit cluster containing 3 parts across SMD and through-hole mounting options using 4-lead footprints such as 4-SMD_2.35x2.95mm.",
+ "description": "3 ic parts using 4 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Choose when needing a 4-lead IC package in SMD or through-hole mounting options.",
-  "Verify specific footprint matches such as 4-SMD_2.35x2.95mm, 4-103741-0, or 4-146256-0.",
-  "Check part quality tiering, which includes one tier B and two tier C entries."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a 4 land pattern is intended."
  ],
  "avoid_when": [
-  "The design requires a pin or pad count other than 4.",
-  "High-reliability tier A component qualification is strictly required.",
-  "Complete electrical ratings must be verified before part selection."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than 4."
  ],
  "keywords": [
   "ic",
-  "smd",
-  "through hole",
-  "4-smd",
-  "4-smd_2.35x2.95mm",
-  "4-103741-0",
-  "4-146256-0",
-  "optical sensors",
-  "ambient light",
-  "ir uv sensors",
-  "sfh_5711-2_3-z",
-  "integrated circuit",
   "sensors",
   "ambient",
   "optical",
@@ -40,7 +29,10 @@
   "mm",
   "pitch",
   "pins",
-  "sfh"
+  "sfh",
+  "dk",
+  "uv",
+  "sensor"
  ],
  "facts": {
   "package_family": "4",
@@ -66,7 +58,7 @@
    "B": 1,
    "C": 2
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -83,6 +75,6 @@
   "francescosacco-hardwarelibrary/4-103741-0/4-103741-0",
   "francescosacco-hardwarelibrary/4-146256-0/4-146256-0"
  ],
- "embedding_text": "ic.4 | IC | Integrated circuit cluster containing 3 parts across SMD and through-hole mounting options using 4-lead footprints such as 4-SMD_2.35x2.95mm. | ic smd through hole 4-smd 4-smd_2.35x2.95mm 4-103741-0 4-146256-0 optical sensors ambient light ir uv sensors sfh_5711-2_3-z integrated circuit sensors ambient optical light ir through hole pad mm pitch pins sfh | 4 | ",
+ "embedding_text": "ic.4 | IC | 3 ic parts using 4 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | ic sensors ambient optical light ir through hole pad mm pitch pins sfh dk uv sensor | 4 | ",
  "class": "ic"
 }

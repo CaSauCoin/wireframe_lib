@@ -5,29 +5,18 @@
  "category_path": [
   "IC"
  ],
- "description": "Integrated circuit cluster containing 10V surface-mount components in SOT-23 footprints from KiCad symbol sources.",
+ "description": "1 ic parts for 10V using SOT-23 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Choose when requiring 10V surface-mount integrated circuits in a SOT-23 footprint.",
-  "Verify SOT-23 land pattern compatibility with target PCB designs.",
-  "Select based on Tier A verified parts from KiCad symbol libraries."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SOT-23 land pattern is intended."
  ],
  "avoid_when": [
-  "The design requires package footprints other than SOT-23.",
-  "The application requires voltage ratings other than 10V.",
-  "Through-hole mounting is required rather than SMD."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SOT-23."
  ],
  "keywords": [
-  "ic",
-  "sot-23",
-  "10v",
-  "smd",
-  "surface mount",
-  "integrated circuit",
-  "kicad-symbols",
-  "lm4040dbz-10",
-  "reference voltage",
-  "sot-23 footprint",
-  "tier a",
   "sot",
   "reference",
   "voltage",
@@ -37,8 +26,11 @@
   "precision",
   "micropower",
   "to",
+  "smd",
   "diode",
-  "device"
+  "device",
+  "ic",
+  "10v"
  ],
  "facts": {
   "package_family": "SOT-23",
@@ -61,7 +53,7 @@
   "tier_counts": {
    "A": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -76,6 +68,6 @@
  "part_ids": [
   "kicad-symbols/Reference_Voltage/LM4040DBZ-10"
  ],
- "embedding_text": "ic.sot-23.10v | IC | Integrated circuit cluster containing 10V surface-mount components in SOT-23 footprints from KiCad symbol sources. | ic sot-23 10v smd surface mount integrated circuit kicad-symbols lm4040dbz-10 reference voltage sot-23 footprint tier a sot reference voltage shunt lm4040dbz 00v precision micropower to diode device | SOT-23 | 10V",
+ "embedding_text": "ic.sot-23.10v | IC | 1 ic parts for 10V using SOT-23 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | sot reference voltage shunt lm4040dbz 00v precision micropower to smd diode device ic 10v | SOT-23 | 10V",
  "class": "ic"
 }

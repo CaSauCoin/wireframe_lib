@@ -7,33 +7,23 @@
   "Power",
   "Linear Regulator"
  ],
- "description": "Cluster of surface-mount 10V LDO linear regulator ICs in the HTSOP package family using HTSOP-8-1EP footprints.",
+ "description": "3 ic power linear regulator parts for LDO, 10V using HTSOP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when requiring a 10V LDO linear regulator in an SMD HTSOP package family.",
-  "Confirm footprint compatibility with HTSOP-8-1EP_3.9x4.9mm_P1.27mm_EP2.4x3.2mm.",
-  "Choose among Tier A KiCad symbol parts such as BDJ0FC0WEFJ, BDJ0GA3WEFJ, or BDJ0GA5WEFJ."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a HTSOP land pattern is intended."
  ],
  "avoid_when": [
-  "The board design requires a package family other than HTSOP.",
-  "Through-hole mounting is required instead of surface mount.",
-  "The application requires non-10V or non-LDO power regulation."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than HTSOP."
  ],
  "keywords": [
-  "ic",
-  "power",
-  "linear regulator",
+  "regulator",
+  "htsop",
+  "linear",
   "ldo",
   "10v",
-  "htsop",
-  "smd",
-  "htsop-8-1ep",
-  "bdj0fc0wefj",
-  "bdj0ga3wefj",
-  "bdj0ga5wefj",
-  "kicad",
-  "kicad-symbols",
-  "regulator",
-  "linear",
   "with",
   "ovp",
   "tsp",
@@ -42,7 +32,9 @@
   "9mm",
   "p1",
   "27mm",
-  "ep2"
+  "ep2",
+  "4x3",
+  "2mm"
  ],
  "facts": {
   "package_family": "HTSOP",
@@ -66,7 +58,7 @@
   "tier_counts": {
    "A": 3
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -99,6 +91,6 @@
   "kicad-symbols/Regulator_Linear/BDJ0GA3WEFJ",
   "kicad-symbols/Regulator_Linear/BDJ0GA5WEFJ"
  ],
- "embedding_text": "ic-power-ldo.htsop.ldo.10v | IC Power Linear Regulator | Cluster of surface-mount 10V LDO linear regulator ICs in the HTSOP package family using HTSOP-8-1EP footprints. | ic power linear regulator ldo 10v htsop smd htsop-8-1ep bdj0fc0wefj bdj0ga3wefj bdj0ga5wefj kicad kicad-symbols regulator linear with ovp tsp 1ep 9x4 9mm p1 27mm ep2 | HTSOP | LDO 10V",
+ "embedding_text": "ic-power-ldo.htsop.ldo.10v | IC Power Linear Regulator | 3 ic power linear regulator parts for LDO, 10V using HTSOP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | regulator htsop linear ldo 10v with ovp tsp 1ep 9x4 9mm p1 27mm ep2 4x3 2mm | HTSOP | LDO 10V",
  "class": "ic.power.ldo"
 }

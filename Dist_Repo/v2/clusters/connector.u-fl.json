@@ -5,44 +5,34 @@
  "category_path": [
   "Connector"
  ],
- "description": "Cluster of 3 SMD U.FL RF connector parts (Hirose U.FL-R-SMT-1 and Molex MCRF 73412-0110 vertical footprints), all generated with tier C quality and none currently planner-visible.",
+ "description": "3 connector parts using U.FL footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Match the exact footprint variant (Hirose U.FL-R-SMT-1 vs Molex MCRF 73412-0110) to your PCB land pattern",
-  "Confirm SMD mounting is compatible with your board assembly process",
-  "Check source library (dist-legacy vs SparkFun-KiCad-Libraries) for trust and provenance",
-  "Review the symbol-footprint pairing manually since all entries are tier C and unreviewed"
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a U.FL land pattern is intended."
  ],
  "avoid_when": [
-  "A reviewed or higher-tier (A/B) part is required",
-  "The exact Hirose or Molex footprint variant cannot be confirmed against your layout",
-  "A non-U.FL or through-hole connector package is needed",
-  "Electrical ratings or pinout details are required but not documented for the part"
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than U.FL."
  ],
  "keywords": [
-  "u.fl",
-  "ufl",
+  "fl",
   "hirose",
-  "u.fl-r-smt-1",
+  "vertical",
+  "connector",
   "molex",
   "mcrf",
-  "73412-0110",
-  "vertical",
-  "smd",
-  "connector",
-  "rf connector",
-  "sparkfun",
-  "dist-legacy",
-  "tier c",
-  "generated",
-  "footprint",
-  "fl",
   "smt",
+  "sparkfun",
   "mount",
   "rf",
   "sma",
   "surface",
   "pad",
-  "mm"
+  "mm",
+  "pitch",
+  "pins"
  ],
  "facts": {
   "package_family": "U.FL",
@@ -66,7 +56,7 @@
   "tier_counts": {
    "C": 3
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
@@ -74,6 +64,6 @@
   "dist-legacy/U.FL_Hirose_U.FL-R-SMT-1_Vertical",
   "dist-legacy/U.FL_Molex_MCRF_73412-0110_Vertical"
  ],
- "embedding_text": "connector.u-fl | Connector | Cluster of 3 SMD U.FL RF connector parts (Hirose U.FL-R-SMT-1 and Molex MCRF 73412-0110 vertical footprints), all generated with tier C quality and none currently planner-visible. | u.fl ufl hirose u.fl-r-smt-1 molex mcrf 73412-0110 vertical smd connector rf connector sparkfun dist-legacy tier c generated footprint fl smt mount rf sma surface pad mm | U.FL | ",
+ "embedding_text": "connector.u-fl | Connector | 3 connector parts using U.FL footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | fl hirose vertical connector molex mcrf smt sparkfun mount rf sma surface pad mm pitch pins | U.FL | ",
  "class": "connector"
 }

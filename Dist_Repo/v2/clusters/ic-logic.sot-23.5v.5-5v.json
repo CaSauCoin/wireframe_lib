@@ -6,36 +6,31 @@
   "IC",
   "Logic"
  ],
- "description": "Surface-mount logic IC cluster for 5V and 5.5V facets in SOT-23 packaging, including SOT-23-6 footprints.",
+ "description": "1 ic logic parts for 5V, 5.5V using SOT-23 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Targeting surface-mount logic ICs with 5V or 5.5V facets.",
-  "Requiring SOT-23 packaging with a SOT-23-6 footprint.",
-  "Selecting tier A logic parts from KiCad symbols."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SOT-23 land pattern is intended."
  ],
  "avoid_when": [
-  "The design requires non-SMD or through-hole mounting.",
-  "Footprints other than SOT-23 or SOT-23-6 are required.",
-  "Logic IC voltage requirements differ from 5V or 5.5V facets."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SOT-23."
  ],
  "keywords": [
-  "ic",
-  "logic",
-  "sot-23",
-  "sot-23-6",
-  "smd",
-  "5v",
-  "5.5v",
-  "sn74lvc2g14dbv",
-  "kicad-symbols",
-  "tier a",
   "sot",
   "dual",
   "schmitt",
   "inverter",
   "to",
+  "5v",
+  "sn74lvc2g14dbv",
   "74xgxx",
   "vcc",
-  "from"
+  "from",
+  "smd",
+  "ic",
+  "logic"
  ],
  "facts": {
   "package_family": "SOT-23",
@@ -59,7 +54,7 @@
   "tier_counts": {
    "A": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -74,6 +69,6 @@
  "part_ids": [
   "kicad-symbols/74xGxx/SN74LVC2G14DBV"
  ],
- "embedding_text": "ic-logic.sot-23.5v.5-5v | IC Logic | Surface-mount logic IC cluster for 5V and 5.5V facets in SOT-23 packaging, including SOT-23-6 footprints. | ic logic sot-23 sot-23-6 smd 5v 5.5v sn74lvc2g14dbv kicad-symbols tier a sot dual schmitt inverter to 74xgxx vcc from | SOT-23 | 5V 5.5V",
+ "embedding_text": "ic-logic.sot-23.5v.5-5v | IC Logic | 1 ic logic parts for 5V, 5.5V using SOT-23 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | sot dual schmitt inverter to 5v sn74lvc2g14dbv 74xgxx vcc from smd ic logic | SOT-23 | 5V 5.5V",
  "class": "ic.logic"
 }

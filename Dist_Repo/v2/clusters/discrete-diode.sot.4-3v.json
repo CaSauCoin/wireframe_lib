@@ -6,42 +6,34 @@
   "Discrete",
   "Diode"
  ],
- "description": "Cluster of 8 tier-A SOT-package diode parts rated for the 4.3V facet, sourced from Alternate-KiCad-Library, spanning SOT-363/SC-70-6, SOT-323/SC-70, SOT-89-3, and SOT-223-3 SMD footprints.",
+ "description": "8 discrete diode parts for 4.3V using SOT footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Match the exact SOT footprint (SOT-363/SC-70-6, SOT-323/SC-70, SOT-89-3, SOT-223-3) to the intended PCB land pattern.",
-  "All 8 parts are tier A with score 100; differentiate primarily by footprint/package size since electrical detail is not itemized here.",
-  "Verify pin-to-pad mapping for the chosen SOT variant before committing to layout."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SOT land pattern is intended."
  ],
  "avoid_when": [
-  "A non-SOT package (e.g. axial, DO-214) is required.",
-  "A voltage rating other than the 4.3V facet is needed.",
-  "Review status is 'generated' — confirm part data independently before high-reliability use."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SOT."
  ],
  "keywords": [
   "diode",
   "sot",
-  "sot-363",
-  "sot-323",
-  "sot-89",
-  "sot-223",
-  "sc-70",
-  "4.3v",
-  "smd",
-  "discrete diode",
-  "alternate-kicad-library",
-  "akl",
-  "bzb784",
-  "bzv49",
-  "bzv90",
-  "bzx84",
-  "tier a",
-  "surface mount diode",
   "zener",
   "3v",
   "sc",
   "dual",
+  "akl",
   "alternate",
-  "kicad"
+  "kicad",
+  "library",
+  "discrete",
+  "independent",
+  "200mw",
+  "c4v3",
+  "bzb784",
+  "bzv49"
  ],
  "facts": {
   "package_family": "SOT",
@@ -67,7 +59,7 @@
   "tier_counts": {
    "A": 8
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -121,6 +113,6 @@
   "Alternate-KiCad-Library/Diode_Zener_AKL/MMBZ5229BS",
   "Alternate-KiCad-Library/Diode_Zener_AKL/MMBZ5229BSs"
  ],
- "embedding_text": "discrete-diode.sot.4-3v | Discrete Diode | Cluster of 8 tier-A SOT-package diode parts rated for the 4.3V facet, sourced from Alternate-KiCad-Library, spanning SOT-363/SC-70-6, SOT-323/SC-70, SOT-89-3, and SOT-223-3 SMD footprints. | diode sot sot-363 sot-323 sot-89 sot-223 sc-70 4.3v smd discrete diode alternate-kicad-library akl bzb784 bzv49 bzv90 bzx84 tier a surface mount diode zener 3v sc dual alternate kicad | SOT | 4.3V",
+ "embedding_text": "discrete-diode.sot.4-3v | Discrete Diode | 8 discrete diode parts for 4.3V using SOT footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | diode sot zener 3v sc dual akl alternate kicad library discrete independent 200mw c4v3 bzb784 bzv49 | SOT | 4.3V",
  "class": "discrete.diode"
 }

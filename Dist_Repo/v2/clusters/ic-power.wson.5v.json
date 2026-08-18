@@ -6,36 +6,32 @@
   "IC",
   "Power"
  ],
- "description": "Cluster of 5V surface-mount power ICs in WSON packages featuring Tier A parts LM2775DSG and TPS60151DRV.",
+ "description": "2 ic power parts for 5V using WSON footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when a 5V surface-mount power IC in a WSON package family is required.",
-  "Choose between WSON-8-1EP and WSON-6-1EP footprint options with thermal vias.",
-  "Use when selecting Tier A parts LM2775DSG or TPS60151DRV."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a WSON land pattern is intended."
  ],
  "avoid_when": [
-  "Do not use when board layout requires package families other than WSON.",
-  "Avoid if mounting method is not surface mount (SMD).",
-  "Avoid if target voltage facet is not 5V."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than WSON."
  ],
  "keywords": [
-  "ic",
-  "power",
-  "5v",
   "wson",
-  "smd",
-  "lm2775dsg",
-  "tps60151drv",
-  "regulator",
-  "switchedcapacitor",
-  "thermalvias",
-  "wson-8-1ep",
-  "wson-6-1ep",
+  "5v",
   "charge",
   "pump",
   "1ep",
+  "thermalvias",
+  "regulator",
+  "switchedcapacitor",
   "2x2mm",
   "p0",
   "6mm",
+  "ic",
+  "power",
+  "lm2775dsg",
   "200ma",
   "5mm"
  ],
@@ -61,7 +57,7 @@
   "tier_counts": {
    "A": 2
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -85,6 +81,6 @@
   "kicad-symbols/Regulator_SwitchedCapacitor/LM2775DSG",
   "kicad-symbols/Regulator_SwitchedCapacitor/TPS60151DRV"
  ],
- "embedding_text": "ic-power.wson.5v | IC Power | Cluster of 5V surface-mount power ICs in WSON packages featuring Tier A parts LM2775DSG and TPS60151DRV. | ic power 5v wson smd lm2775dsg tps60151drv regulator switchedcapacitor thermalvias wson-8-1ep wson-6-1ep charge pump 1ep 2x2mm p0 6mm 200ma 5mm | WSON | 5V",
+ "embedding_text": "ic-power.wson.5v | IC Power | 2 ic power parts for 5V using WSON footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | wson 5v charge pump 1ep thermalvias regulator switchedcapacitor 2x2mm p0 6mm ic power lm2775dsg 200ma 5mm | WSON | 5V",
  "class": "ic.power"
 }

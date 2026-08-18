@@ -6,30 +6,21 @@
   "Discrete",
   "Transistor"
  ],
- "description": "Discrete transistor library cluster of 4 parts featuring the KEYSTONE package family with through-hole mounting.",
+ "description": "4 discrete transistor parts using KEYSTONE footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Match exact footprint requirements such as KEYSTONE, KEYSTONE 1043, or KEYSTONE 2462.",
-  "Check part quality tier (Tier B or Tier C) and source library origin.",
-  "Confirm through-hole mounting suitability for the intended PCB design."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a KEYSTONE land pattern is intended."
  ],
  "avoid_when": [
-  "Surface mount technology or non-KEYSTONE footprints are needed.",
-  "Design guidelines strictly mandate Tier A quality parts.",
-  "Specific electrical parameters or datasheet details are required but not provided in cluster facts."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than KEYSTONE."
  ],
  "keywords": [
   "keystone",
   "transistor",
   "discrete",
-  "through hole",
-  "through_hole",
-  "keystone 1043",
-  "keystone 2462",
-  "keystone footprint",
-  "discrete transistor",
-  "discrete.transistor",
-  "dist-legacy",
-  "celestial-altium-library",
   "pin",
   "bipolar",
   "junction",
@@ -41,7 +32,8 @@
   "terminals",
   "in",
   "footprint",
-  "bjt"
+  "bjt",
+  "through"
  ],
  "facts": {
   "package_family": "KEYSTONE",
@@ -67,7 +59,7 @@
    "B": 2,
    "C": 2
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -93,6 +85,6 @@
   "celestial-altium-library/KEYSTONE 1043/KEYSTONE_1043",
   "celestial-altium-library/KEYSTONE 2462/KEYSTONE_2462"
  ],
- "embedding_text": "discrete-transistor.keystone | Discrete Transistor | Discrete transistor library cluster of 4 parts featuring the KEYSTONE package family with through-hole mounting. | keystone transistor discrete through hole through_hole keystone 1043 keystone 2462 keystone footprint discrete transistor discrete.transistor dist-legacy celestial-altium-library pin bipolar junction with base collector and emitter terminals in footprint bjt | KEYSTONE | ",
+ "embedding_text": "discrete-transistor.keystone | Discrete Transistor | 4 discrete transistor parts using KEYSTONE footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | keystone transistor discrete pin bipolar junction with base collector and emitter terminals in footprint bjt through | KEYSTONE | ",
  "class": "discrete.transistor"
 }

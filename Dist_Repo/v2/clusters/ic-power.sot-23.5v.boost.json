@@ -6,39 +6,34 @@
   "IC",
   "Power"
  ],
- "description": "SOT-23 SMD boost 5V power IC cluster containing 2 tier A parts with SOT-23-6 footprints from KiCad symbols.",
+ "description": "2 ic power parts for 5V, boost using SOT-23 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select for 5V boost power IC applications requiring SMD SOT-23-6 footprints.",
-  "Choose between tier A representative parts RT9361AxE and RT9361BxE depending on exact part variant requirements.",
-  "Use when sourcing verified tier A power ICs from KiCad symbols."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SOT-23 land pattern is intended."
  ],
  "avoid_when": [
-  "Do not use when the application requires output voltages or conversion topologies other than 5V boost.",
-  "Avoid if the PCB design specifies footprints other than SOT-23-6 or through-hole mounting.",
-  "Avoid when searching for parts outside the SOT-23 package family."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SOT-23."
  ],
  "keywords": [
-  "sot-23",
-  "sot-23-6",
-  "5v",
-  "boost",
-  "smd",
-  "ic power",
-  "power ic",
-  "ic",
-  "power",
-  "rt9361axe",
-  "rt9361bxe",
-  "kicad-symbols",
   "sot",
+  "boost",
   "switched",
   "capacitor",
+  "5v",
   "regulator",
   "switchedcapacitor",
   "fixed",
   "output",
   "to",
-  "110ma"
+  "smd",
+  "ic",
+  "power",
+  "rt9361axe",
+  "110ma",
+  "rt9361bxe"
  ],
  "facts": {
   "package_family": "SOT-23",
@@ -62,7 +57,7 @@
   "tier_counts": {
    "A": 2
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -86,6 +81,6 @@
   "kicad-symbols/Regulator_SwitchedCapacitor/RT9361AxE",
   "kicad-symbols/Regulator_SwitchedCapacitor/RT9361BxE"
  ],
- "embedding_text": "ic-power.sot-23.5v.boost | IC Power | SOT-23 SMD boost 5V power IC cluster containing 2 tier A parts with SOT-23-6 footprints from KiCad symbols. | sot-23 sot-23-6 5v boost smd ic power power ic ic power rt9361axe rt9361bxe kicad-symbols sot switched capacitor regulator switchedcapacitor fixed output to 110ma | SOT-23 | 5V boost",
+ "embedding_text": "ic-power.sot-23.5v.boost | IC Power | 2 ic power parts for 5V, boost using SOT-23 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | sot boost switched capacitor 5v regulator switchedcapacitor fixed output to smd ic power rt9361axe 110ma rt9361bxe | SOT-23 | 5V boost",
  "class": "ic.power"
 }

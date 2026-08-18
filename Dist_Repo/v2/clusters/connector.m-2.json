@@ -5,44 +5,30 @@
  "category_path": [
   "Connector"
  ],
- "description": "Cluster of 4 M.2 card-edge socket connectors (KiCad symbols) covering M.2_2230 key types A, B, E, and M; all entries are tier B with generated review status.",
+ "description": "4 connector parts using M.2 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Match the required key type (A, B, E, or M) to the exact footprint",
-  "Confirm footprint suffix (M.2_2230-xx-A/B/E/M) matches your card edge design",
-  "All 4 parts are tier B (no tier A alternatives in this cluster)",
-  "Bus_M.2_Socket_M has the lowest score (96) versus 100 for A/B/E variants"
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a M.2 land pattern is intended."
  ],
  "avoid_when": [
-  "The design needs a key type other than A, B, E, or M",
-  "A card length other than 2230 is required",
-  "Electrical ratings or pin mapping are not documented on the chosen part",
-  "The symbol-footprint pairing needs verification before layout (review_status is generated)"
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than M.2."
  ],
  "keywords": [
   "connector",
-  "m.2",
-  "m2",
   "socket",
-  "bus",
-  "card edge",
-  "key a",
-  "key b",
-  "key e",
-  "key m",
-  "2230",
-  "ngff",
-  "pcie",
-  "sata",
-  "sd",
-  "dp",
-  "kicad-symbols",
-  "edge connector",
   "xx",
+  "bus",
   "mechanical",
   "key",
   "pcbedge",
+  "m2",
   "ngnf",
-  "pci"
+  "pci",
+  "dp",
+  "sd"
  ],
  "facts": {
   "package_family": "M.2",
@@ -66,7 +52,7 @@
   "tier_counts": {
    "B": 4
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -108,6 +94,6 @@
   "kicad-symbols/Connector/Bus_M.2_Socket_E",
   "kicad-symbols/Connector/Bus_M.2_Socket_M"
  ],
- "embedding_text": "connector.m-2 | Connector | Cluster of 4 M.2 card-edge socket connectors (KiCad symbols) covering M.2_2230 key types A, B, E, and M; all entries are tier B with generated review status. | connector m.2 m2 socket bus card edge key a key b key e key m 2230 ngff pcie sata sd dp kicad-symbols edge connector xx mechanical key pcbedge ngnf pci | M.2 | ",
+ "embedding_text": "connector.m-2 | Connector | 4 connector parts using M.2 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | connector socket xx bus mechanical key pcbedge m2 ngnf pci dp sd | M.2 | ",
  "class": "connector"
 }

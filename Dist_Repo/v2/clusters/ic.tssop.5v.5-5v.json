@@ -5,30 +5,20 @@
  "category_path": [
   "IC"
  ],
- "description": "Surface-mount integrated circuit cluster operating at 5V to 5.5V in TSSOP packages, featuring 14-pin and 20-pin footprints across 3 library parts.",
+ "description": "3 ic parts for 5V, 5.5V using TSSOP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when designing for surface-mount IC applications requiring 5V or 5.5V operation.",
-  "Choose between TSSOP-14 and TSSOP-20 footprints depending on board layout and pin count.",
-  "Prioritize Tier A parts like STM8S003F3P6TR over Tier B entries when higher quality verification is needed."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a TSSOP land pattern is intended."
  ],
  "avoid_when": [
-  "Do not use if through-hole mounting is required instead of SMD.",
-  "Avoid when the design requires package styles other than TSSOP-14 or TSSOP-20.",
-  "Avoid when target operating voltages fall outside the 5V to 5.5V range."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than TSSOP."
  ],
  "keywords": [
-  "ic",
-  "tssop",
   "5v",
-  "5.5v",
-  "smd",
-  "tssop-14",
-  "tssop-20",
-  "stm8s003f3p6tr",
-  "pic16f15323-e/st",
-  "pic16f15324-i/st",
-  "jlcpcb-kicad-library",
-  "surface mount",
+  "tssop",
   "p0",
   "ram",
   "l5",
@@ -37,10 +27,12 @@
   "bl",
   "8bit",
   "flash",
+  "ic",
   "c637214",
   "16mhz",
   "st",
-  "32mhz"
+  "32mhz",
+  "footprint"
  ],
  "facts": {
   "package_family": "TSSOP",
@@ -66,7 +58,7 @@
    "A": 1,
    "B": 2
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -99,6 +91,6 @@
   "JLCPCB-Kicad-Library/637214/PIC16F15323-E/ST",
   "JLCPCB-Kicad-Library/637217/PIC16F15324-I/ST"
  ],
- "embedding_text": "ic.tssop.5v.5-5v | IC | Surface-mount integrated circuit cluster operating at 5V to 5.5V in TSSOP packages, featuring 14-pin and 20-pin footprints across 3 library parts. | ic tssop 5v 5.5v smd tssop-14 tssop-20 stm8s003f3p6tr pic16f15323-e/st pic16f15324-i/st jlcpcb-kicad-library surface mount p0 ram l5 w4 ls6 bl 8bit flash c637214 16mhz st 32mhz | TSSOP | 5V 5.5V",
+ "embedding_text": "ic.tssop.5v.5-5v | IC | 3 ic parts for 5V, 5.5V using TSSOP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | 5v tssop p0 ram l5 w4 ls6 bl 8bit flash ic c637214 16mhz st 32mhz footprint | TSSOP | 5V 5.5V",
  "class": "ic"
 }

@@ -6,31 +6,21 @@
   "Mechanical",
   "Jumper"
  ],
- "description": "Mechanical jumper cluster containing 7 tier C parts in the JP13 package family across multiple footprint variants sourced from legacy distribution data.",
+ "description": "7 mechanical jumper parts using JP13 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Match the specific JP13 footprint variant required by the layout, such as C1C, C1T, C2C, C2T, D1T, D2T, or D2C.",
-  "Verify footprint and mounting compatibility since mounting type is unrecorded.",
-  "Account for tier C quality status and legacy distribution sourcing."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a JP13 land pattern is intended."
  ],
  "avoid_when": [
-  "A package family or footprint other than JP13 is required.",
-  "Automated planner visibility is required, as planner visible count is zero.",
-  "Verified mounting types or quality tiers higher than tier C are required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than JP13."
  ],
  "keywords": [
-  "mechanical jumper",
   "jp13",
-  "jumper",
   "mechanical",
-  "jp13-c1c",
-  "jp13-c1t",
-  "jp13-c2c",
-  "jp13-c2t",
-  "jp13-d1t",
-  "jp13-d2t",
-  "jp13-d2c",
-  "dist-legacy",
-  "tier c",
+  "jumper",
   "pad",
   "mm",
   "pitch",
@@ -68,7 +58,7 @@
   "tier_counts": {
    "C": 7
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
@@ -80,6 +70,6 @@
   "dist-legacy/JP13-D2T",
   "dist-legacy/JP13-D2C"
  ],
- "embedding_text": "mechanical-jumper.jp13 | Mechanical Jumper | Mechanical jumper cluster containing 7 tier C parts in the JP13 package family across multiple footprint variants sourced from legacy distribution data. | mechanical jumper jp13 jumper mechanical jp13-c1c jp13-c1t jp13-c2c jp13-c2t jp13-d1t jp13-d2t jp13-d2c dist-legacy tier c pad mm pitch pins c1c c1t c2c c2t d1t d2t d2c | JP13 | ",
+ "embedding_text": "mechanical-jumper.jp13 | Mechanical Jumper | 7 mechanical jumper parts using JP13 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | jp13 mechanical jumper pad mm pitch pins c1c c1t c2c c2t d1t d2t d2c | JP13 | ",
  "class": "mechanical.jumper"
 }

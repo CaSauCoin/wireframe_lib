@@ -6,44 +6,34 @@
   "Discrete",
   "Diode"
  ],
- "description": "Cluster of 14 discrete 19V diodes (zener and TVS types) in D-family footprints, covering SOD-123, SOD-123F, MicroMELF, MiniMELF, and DO-15/DO-35 axial packages, mostly from Alternate-KiCad-Library.",
+ "description": "14 discrete diode parts for 19V using D footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Match the exact footprint (SOD-123, SOD-123F, DO-15, DO-35, MicroMELF, MiniMELF, or 5W axial) to the intended land pattern",
-  "Confirm whether the specific part is a zener or TVS diode before substituting one for the other",
-  "Prefer tier A entries (13 of 14 parts) over the single tier B entry",
-  "Note source library (Alternate-KiCad-Library vs JLCPCB-Kicad-Library) when weighing trust"
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a D land pattern is intended."
  ],
  "avoid_when": [
-  "The needed footprint is not one of the listed D-family patterns",
-  "A zener-specific or TVS-specific function is required and the part type is not confirmed",
-  "Only through-hole or only SMD mounting is acceptable and the candidate part's mount type is unverified",
-  "Symbol-footprint pairing has not been checked against the source datasheet"
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than D."
  ],
  "keywords": [
   "diode",
-  "zener diode",
-  "tvs diode",
-  "19v",
-  "discrete diode",
-  "d package family",
-  "sod-123",
-  "sod-123f",
-  "do-15",
-  "do-35",
-  "micromelf",
-  "minimelf",
-  "axial",
-  "horizontal",
-  "smd",
-  "through hole",
-  "alternate-kicad-library",
-  "jlcpcb-kicad-library",
   "zener",
+  "19v",
   "tvs",
   "do",
   "sod",
+  "horizontal",
   "discrete",
-  "akl"
+  "akl",
+  "alternate",
+  "kicad",
+  "library",
+  "6mm",
+  "16mm",
+  "series",
+  "axial"
  ],
  "facts": {
   "package_family": "D",
@@ -77,7 +67,7 @@
    "A": 13,
    "B": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -137,6 +127,6 @@
   "JLCPCB-Kicad-Library/JLCPCB-Diodes/Zener,MM1Z24",
   "Alternate-KiCad-Library/Diode_Zener_AKL/1N5356B"
  ],
- "embedding_text": "discrete-diode.d.19v | Discrete Diode | Cluster of 14 discrete 19V diodes (zener and TVS types) in D-family footprints, covering SOD-123, SOD-123F, MicroMELF, MiniMELF, and DO-15/DO-35 axial packages, mostly from Alternate-KiCad-Library. | diode zener diode tvs diode 19v discrete diode d package family sod-123 sod-123f do-15 do-35 micromelf minimelf axial horizontal smd through hole alternate-kicad-library jlcpcb-kicad-library zener tvs do sod discrete akl | D | 19V",
+ "embedding_text": "discrete-diode.d.19v | Discrete Diode | 14 discrete diode parts for 19V using D footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | diode zener 19v tvs do sod horizontal discrete akl alternate kicad library 6mm 16mm series axial | D | 19V",
  "class": "discrete.diode"
 }

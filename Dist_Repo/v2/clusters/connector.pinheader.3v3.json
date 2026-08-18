@@ -5,44 +5,34 @@
  "category_path": [
   "Connector"
  ],
- "description": "Single-part cluster of SMD pin headers labeled 3.3V, using a 2x01, 1.00mm-pitch vertical footprint (PinHeader_2x01_P1.00mm_Vertical_SMD); catalog entry is auto-generated, tier C, and not planner-visible.",
+ "description": "1 connector parts for 3.3V using PinHeader footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Only one part in this cluster; confirm it matches your exact layout needs before use",
-  "Verify footprint PinHeader_2x01_P1.00mm_Vertical_SMD against your PCB pad layout",
-  "Check the 3.3V facet against your actual circuit requirement, not just the label",
-  "Review status is 'generated' (unreviewed) and tier C — validate against the source before committing"
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a PinHeader land pattern is intended."
  ],
  "avoid_when": [
-  "A reviewed or higher-tier (A/B) part is required",
-  "The design needs a through-hole mount instead of SMD",
-  "A different pitch, pin count, or orientation than 2x01 1.00mm vertical is needed",
-  "Planner-visible parts are required (planner_visible_count is 0 for this cluster)"
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than PinHeader."
  ],
  "keywords": [
-  "pin header",
-  "pinheader",
-  "connector",
   "2x01",
-  "1.00mm pitch",
-  "vertical",
-  "smd",
-  "surface mount",
-  "3.3v",
-  "tier c",
-  "generated",
-  "single part",
-  "dist-legacy",
-  "header pins",
-  "pad",
-  "footprint",
   "00mm",
+  "pinheader",
+  "smd",
   "p1",
+  "vertical",
   "surface",
+  "connector",
   "pitch",
   "mounted",
   "pin",
   "header",
-  "double"
+  "double",
+  "mount",
+  "pad",
+  "mm"
  ],
  "facts": {
   "package_family": "PinHeader",
@@ -65,12 +55,12 @@
   "tier_counts": {
    "C": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
   "dist-legacy/PinHeader_2x01_P1.00mm_Vertical_SMD"
  ],
- "embedding_text": "connector.pinheader.3v3 | Connector | Single-part cluster of SMD pin headers labeled 3.3V, using a 2x01, 1.00mm-pitch vertical footprint (PinHeader_2x01_P1.00mm_Vertical_SMD); catalog entry is auto-generated, tier C, and not planner-visible. | pin header pinheader connector 2x01 1.00mm pitch vertical smd surface mount 3.3v tier c generated single part dist-legacy header pins pad footprint 00mm p1 surface pitch mounted pin header double | PinHeader | 3.3V",
+ "embedding_text": "connector.pinheader.3v3 | Connector | 1 connector parts for 3.3V using PinHeader footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | 2x01 00mm pinheader smd p1 vertical surface connector pitch mounted pin header double mount pad mm | PinHeader | 3.3V",
  "class": "connector"
 }

@@ -6,28 +6,19 @@
   "Discrete",
   "Diode"
  ],
- "description": "Discrete diode cluster containing parts using HED footprints and package family.",
+ "description": "1 discrete diode parts using HED footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Use when a discrete diode in an HED package footprint is required.",
-  "Verify footprint, pin mapping, and specifications before committing to design.",
-  "Review source trust and quality tier ratings for the selected entry."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a HED land pattern is intended."
  ],
  "avoid_when": [
-  "The PCB design requires a package family other than HED.",
-  "Required electrical ratings or package dimensions are unspecified.",
-  "Applications require components outside the discrete diode class."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than HED."
  ],
  "keywords": [
-  "discrete diode",
   "hed",
-  "hed package",
-  "hed footprint",
-  "discrete",
-  "diode",
-  "discrete.diode",
-  "package family hed",
-  "hed land pattern",
-  "dist-legacy",
   "package",
   "land",
   "pattern",
@@ -39,7 +30,9 @@
   "pitch",
   "footprint",
   "pad",
-  "0mm"
+  "0mm",
+  "discrete",
+  "diode"
  ],
  "facts": {
   "package_family": "HED",
@@ -60,12 +53,12 @@
   "tier_counts": {
    "C": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
   "dist-legacy/HED 2"
  ],
- "embedding_text": "discrete-diode.hed | Discrete Diode | Discrete diode cluster containing parts using HED footprints and package family. | discrete diode hed hed package hed footprint discrete diode discrete.diode package family hed hed land pattern dist-legacy package land pattern bare with pads and mm pitch footprint pad 0mm | HED | ",
+ "embedding_text": "discrete-diode.hed | Discrete Diode | 1 discrete diode parts using HED footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | hed package land pattern bare with pads and mm pitch footprint pad 0mm discrete diode | HED | ",
  "class": "discrete.diode"
 }

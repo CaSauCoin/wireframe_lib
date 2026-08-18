@@ -6,33 +6,23 @@
   "IC",
   "Power"
  ],
- "description": "Cluster of 3 tier A surface-mount power ICs featuring a 4V facet in SOIC-8_3.9x4.9mm_P1.27mm footprint.",
+ "description": "3 ic power parts for 4V using SOIC footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select for power IC applications requiring surface-mount SOIC packaging.",
-  "Choose between tier A representative parts NCP4308AD, NCP4308DD, and NCP4308QD.",
-  "Verify layout compatibility with the SOIC-8_3.9x4.9mm_P1.27mm footprint."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SOIC land pattern is intended."
  ],
  "avoid_when": [
-  "Through-hole mounting or non-SMD packaging is required.",
-  "The PCB design requires a footprint other than SOIC-8_3.9x4.9mm_P1.27mm.",
-  "The circuit requires power IC specifications other than 4V."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SOIC."
  ],
  "keywords": [
-  "ic",
-  "power",
-  "ic power",
   "soic",
-  "soic-8",
-  "4v",
-  "smd",
-  "ncp4308ad",
-  "ncp4308dd",
-  "ncp4308qd",
-  "regulator controller",
-  "kicad-symbols",
   "controller",
   "synchronous",
   "rectifier",
+  "4v",
   "regulator",
   "4a",
   "8a",
@@ -41,7 +31,9 @@
   "9mm",
   "p1",
   "27mm",
-  "so"
+  "so",
+  "ic",
+  "power"
  ],
  "facts": {
   "package_family": "SOIC",
@@ -64,7 +56,7 @@
   "tier_counts": {
    "A": 3
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -97,6 +89,6 @@
   "kicad-symbols/Regulator_Controller/NCP4308DD",
   "kicad-symbols/Regulator_Controller/NCP4308QD"
  ],
- "embedding_text": "ic-power.soic.4v | IC Power | Cluster of 3 tier A surface-mount power ICs featuring a 4V facet in SOIC-8_3.9x4.9mm_P1.27mm footprint. | ic power ic power soic soic-8 4v smd ncp4308ad ncp4308dd ncp4308qd regulator controller kicad-symbols controller synchronous rectifier regulator 4a 8a uvlo 9x4 9mm p1 27mm so | SOIC | 4V",
+ "embedding_text": "ic-power.soic.4v | IC Power | 3 ic power parts for 4V using SOIC footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | soic controller synchronous rectifier 4v regulator 4a 8a uvlo 9x4 9mm p1 27mm so ic power | SOIC | 4V",
  "class": "ic.power"
 }

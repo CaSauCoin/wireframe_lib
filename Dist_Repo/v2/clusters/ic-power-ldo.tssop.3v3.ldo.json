@@ -7,41 +7,34 @@
   "Power",
   "Linear Regulator"
  ],
- "description": "Surface-mount 3.3V low-dropout (LDO) linear regulator ICs in HTSSOP packages featuring exposed thermal pads and thermal vias.",
+ "description": "8 ic power linear regulator parts for 3.3V, LDO using TSSOP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when requiring a 3.3V SMD linear regulator in a TSSOP/HTSSOP package.",
-  "Choose between HTSSOP-20-1EP and HTSSOP-24-1EP footprint variations depending on the target part.",
-  "Verify exact footprint body dimensions and thermal pad pattern requirements."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a TSSOP land pattern is intended."
  ],
  "avoid_when": [
-  "The design requires non-SMD mounting or packages other than TSSOP/HTSSOP.",
-  "A regulator type other than an LDO linear regulator is required.",
-  "Operating voltages other than 3.3V are required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than TSSOP."
  ],
  "keywords": [
-  "ic",
-  "power",
-  "linear regulator",
-  "ldo",
-  "3.3v",
-  "tssop",
-  "htssop",
-  "smd",
-  "htssop-20-1ep",
-  "htssop-24-1ep",
-  "thermalvias",
   "regulator",
+  "htssop",
   "3v",
   "linear",
+  "ldo",
   "voltage",
   "dual",
+  "tssop",
   "low",
   "1ep",
   "4x6",
   "5mm",
   "p0",
   "65mm",
-  "ep3"
+  "ep3",
+  "thermalvias"
  ],
  "facts": {
   "package_family": "TSSOP",
@@ -66,7 +59,7 @@
   "tier_counts": {
    "A": 8
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -120,6 +113,6 @@
   "kicad-symbols/Regulator_Linear/TPS77733_HTSSOP20",
   "kicad-symbols/Regulator_Linear/TPS77833_HTSSOP20"
  ],
- "embedding_text": "ic-power-ldo.tssop.3v3.ldo | IC Power Linear Regulator | Surface-mount 3.3V low-dropout (LDO) linear regulator ICs in HTSSOP packages featuring exposed thermal pads and thermal vias. | ic power linear regulator ldo 3.3v tssop htssop smd htssop-20-1ep htssop-24-1ep thermalvias regulator 3v linear voltage dual low 1ep 4x6 5mm p0 65mm ep3 | TSSOP | 3.3V LDO",
+ "embedding_text": "ic-power-ldo.tssop.3v3.ldo | IC Power Linear Regulator | 8 ic power linear regulator parts for 3.3V, LDO using TSSOP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | regulator htssop 3v linear ldo voltage dual tssop low 1ep 4x6 5mm p0 65mm ep3 thermalvias | TSSOP | 3.3V LDO",
  "class": "ic.power.ldo"
 }

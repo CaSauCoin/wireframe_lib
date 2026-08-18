@@ -6,35 +6,28 @@
   "Power",
   "Power Supply"
  ],
- "description": "Surface-mount power supply cluster featuring USB, boost, and 6.2V facets in QFN packaging.",
+ "description": "1 power power supply parts for USB, boost, 6.2V using QFN footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Confirm compatibility with USB boost power supply requirements and 6.2V operation.",
-  "Verify the Texas RGE0024H VQFN-24 footprint matches PCB layout dimensions and pad requirements.",
-  "Check the BQ25886RGE part specifications for system design compatibility."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a QFN land pattern is intended."
  ],
  "avoid_when": [
-  "Design requires through-hole mounting or non-QFN package types.",
-  "Circuit operating requirements differ from USB boost 6.2V specifications.",
-  "Layout does not support the Texas RGE0024H VQFN-24 land pattern."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than QFN."
  ],
  "keywords": [
-  "power supply",
-  "usb",
   "boost",
-  "6.2v",
-  "qfn",
-  "vqfn",
-  "smd",
-  "bq25886rge",
-  "battery management",
-  "texas rge0024h",
-  "vqfn-24",
+  "usb",
   "2v",
+  "vqfn",
   "power",
   "battery",
   "management",
   "li",
   "texas",
+  "bq25886rge",
   "standalone",
   "cell",
   "ion",
@@ -65,7 +58,7 @@
   "tier_counts": {
    "A": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -80,6 +73,6 @@
  "part_ids": [
   "kicad-symbols/Battery_Management/BQ25886RGE"
  ],
- "embedding_text": "power-supply.qfn.usb.boost | Power Power Supply | Surface-mount power supply cluster featuring USB, boost, and 6.2V facets in QFN packaging. | power supply usb boost 6.2v qfn vqfn smd bq25886rge battery management texas rge0024h vqfn-24 2v power battery management li texas standalone cell ion polymer 2a mode | QFN | USB boost 6.2V",
+ "embedding_text": "power-supply.qfn.usb.boost | Power Power Supply | 1 power power supply parts for USB, boost, 6.2V using QFN footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | boost usb 2v vqfn power battery management li texas bq25886rge standalone cell ion polymer 2a mode | QFN | USB boost 6.2V",
  "class": "power.supply"
 }

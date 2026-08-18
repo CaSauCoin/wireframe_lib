@@ -5,33 +5,22 @@
  "category_path": [
   "IC"
  ],
- "description": "Integrated circuit cluster containing 6V surface-mount parts in SOT package family with SOT-89-3 footprint.",
+ "description": "6 ic parts for 6V using SOT footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when a 6V IC with an SMD SOT-89-3 footprint is needed.",
-  "Choose for designs requiring tier A parts from Alternate-KiCad-Library.",
-  "Use when SOT package family surface-mount components are required."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SOT land pattern is intended."
  ],
  "avoid_when": [
-  "Avoid if the circuit requires operating voltages other than 6V.",
-  "Do not use when non-SMD or through-hole mounting is required.",
-  "Avoid when footprints other than SOT-89-3 are specified."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SOT."
  ],
  "keywords": [
-  "ic",
   "sot",
-  "6v",
-  "smd",
-  "sot-89-3",
-  "alternate-kicad-library",
-  "voltage regulator",
-  "di78l06uab",
-  "di78m06uab",
-  "di79l06uab",
-  "l78l06abu",
-  "l78l06acu",
-  "tier a",
   "voltage",
   "regulator",
+  "6v",
   "100ma",
   "terminal",
   "akl",
@@ -40,7 +29,10 @@
   "library",
   "vreg",
   "pmic",
-  "power"
+  "power",
+  "supply",
+  "ic",
+  "78l06"
  ],
  "facts": {
   "package_family": "SOT",
@@ -63,7 +55,7 @@
   "tier_counts": {
    "A": 6
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -115,6 +107,6 @@
   "Alternate-KiCad-Library/Voltage_Regulator_AKL/L78L06ACU",
   "Alternate-KiCad-Library/Voltage_Regulator_AKL/μA78L06ACPK"
  ],
- "embedding_text": "ic.sot.6v | IC | Integrated circuit cluster containing 6V surface-mount parts in SOT package family with SOT-89-3 footprint. | ic sot 6v smd sot-89-3 alternate-kicad-library voltage regulator di78l06uab di78m06uab di79l06uab l78l06abu l78l06acu tier a voltage regulator 100ma terminal akl alternate kicad library vreg pmic power | SOT | 6V",
+ "embedding_text": "ic.sot.6v | IC | 6 ic parts for 6V using SOT footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | sot voltage regulator 6v 100ma terminal akl alternate kicad library vreg pmic power supply ic 78l06 | SOT | 6V",
  "class": "ic"
 }

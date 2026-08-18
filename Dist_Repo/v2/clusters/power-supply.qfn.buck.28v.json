@@ -6,31 +6,23 @@
   "Power",
   "Power Supply"
  ],
- "description": "Surface-mount 28V buck power supply components in QFN package footprints.",
+ "description": "2 power power supply parts for buck, 28V using QFN footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Match the required package footprint between 16-pin and 24-pin VQFN variants.",
-  "Verify land pattern dimensions and exposed pad layout against board requirements.",
-  "Select between available KiCad symbol entries such as BQ24610 and BQ24650."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a QFN land pattern is intended."
  ],
  "avoid_when": [
-  "The design requires non-SMD or through-hole mounting.",
-  "The application requires a package family other than QFN or VQFN.",
-  "Operating topology or voltage requirements differ from 28V buck."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than QFN."
  ],
  "keywords": [
-  "power supply",
   "buck",
-  "28v",
-  "qfn",
   "vqfn",
-  "smd",
-  "vqfn-24",
-  "vqfn-16",
-  "bq24610",
-  "bq24650",
-  "battery management",
   "power",
   "battery",
+  "28v",
   "nmos",
   "li",
   "ion",
@@ -66,7 +58,7 @@
   "tier_counts": {
    "B": 2
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -90,6 +82,6 @@
   "kicad-symbols/Battery_Management/BQ24610",
   "kicad-symbols/Battery_Management/BQ24650"
  ],
- "embedding_text": "power-supply.qfn.buck.28v | Power Power Supply | Surface-mount 28V buck power supply components in QFN package footprints. | power supply buck 28v qfn vqfn smd vqfn-24 vqfn-16 bq24610 bq24650 battery management power battery nmos li ion charger 5mm management 10a max voltage 600khz synchronous | QFN | buck 28V",
+ "embedding_text": "power-supply.qfn.buck.28v | Power Power Supply | 2 power power supply parts for buck, 28V using QFN footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | buck vqfn power battery 28v nmos li ion charger 5mm management 10a max voltage 600khz synchronous | QFN | buck 28V",
  "class": "power.supply"
 }

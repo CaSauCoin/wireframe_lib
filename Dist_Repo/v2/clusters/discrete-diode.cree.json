@@ -6,29 +6,21 @@
   "Discrete",
   "Diode"
  ],
- "description": "Discrete diode component cluster using CREE footprints, containing tier-B parts from legacy catalog sources.",
+ "description": "1 discrete diode parts using CREE footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when a discrete diode with a CREE footprint is required.",
-  "Check part specifications as mount type is listed as unknown.",
-  "Evaluate suitability for designs using tier B legacy catalog parts."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a CREE land pattern is intended."
  ],
  "avoid_when": [
-  "The design requires a package footprint other than CREE.",
-  "A strictly defined mounting type is required for PCB assembly.",
-  "Tier A or primary catalog parts are required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than CREE."
  ],
  "keywords": [
-  "discrete",
-  "diode",
   "cree",
-  "discrete diode",
-  "cree footprint",
-  "cree package",
-  "cree_j_2835",
-  "dist-legacy",
-  "tier b",
-  "discrete.diode",
   "led",
+  "diode",
   "series",
   "surface",
   "mount",
@@ -38,7 +30,8 @@
   "and",
   "cathode",
   "terminals",
-  "smd"
+  "smd",
+  "discrete"
  ],
  "facts": {
   "package_family": "CREE",
@@ -59,7 +52,7 @@
   "tier_counts": {
    "B": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -74,6 +67,6 @@
  "part_ids": [
   "dist-legacy/CREE J 2835"
  ],
- "embedding_text": "discrete-diode.cree | Discrete Diode | Discrete diode component cluster using CREE footprints, containing tier-B parts from legacy catalog sources. | discrete diode cree discrete diode cree footprint cree package cree_j_2835 dist-legacy tier b discrete.diode led series surface mount component with anode and cathode terminals smd | CREE | ",
+ "embedding_text": "discrete-diode.cree | Discrete Diode | 1 discrete diode parts using CREE footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | cree led diode series surface mount component with anode and cathode terminals smd discrete | CREE | ",
  "class": "discrete.diode"
 }

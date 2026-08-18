@@ -5,41 +5,34 @@
  "category_path": [
   "IC"
  ],
- "description": "Integrated circuit component cluster containing 40 surface-mount parts across AD package family variants including uSOP-8, DFN-12, and LFCSP footprints.",
+ "description": "40 ic parts using AD footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select for surface-mount IC applications using the AD package family.",
-  "Confirm the required footprint variant, such as uSOP-8, DFN-12, or various LFCSP sizes.",
-  "Check part specifications from dist-legacy or celestial-altium-library sources."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a AD land pattern is intended."
  ],
  "avoid_when": [
-  "A non-AD package family or through-hole footprint is required.",
-  "Parts with higher quality tiers than tier C are required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than AD."
  ],
  "keywords": [
-  "ic",
   "ad",
-  "smd",
-  "usop",
-  "usop-8",
-  "dfn",
-  "dfn-12",
   "lfcsp",
-  "lfcsp-10",
-  "lfcsp-16",
-  "lfcsp-24",
-  "lfcsp-32",
-  "lfcsp-40",
-  "lfcsp-64",
-  "surface mount",
-  "integrated circuit",
   "cp",
+  "ic",
   "pad",
   "mm",
   "pitch",
   "pins",
   "3x3mm",
   "3x3",
-  "5x5mm"
+  "5x5mm",
+  "surface",
+  "mount",
+  "soic",
+  "dfn",
+  "dd"
  ],
  "facts": {
   "package_family": "AD",
@@ -73,7 +66,7 @@
   "tier_counts": {
    "C": 40
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
@@ -118,6 +111,6 @@
   "celestial-altium-library/AD LFCSP-8 3x3MM CP-8-5/AD_LFCSP-8_3x3MM_CP-8-5",
   "celestial-altium-library/AD MSOP-12 4x3MM MSE/AD_MSOP-12_4x3MM_MSE"
  ],
- "embedding_text": "ic.ad | IC | Integrated circuit component cluster containing 40 surface-mount parts across AD package family variants including uSOP-8, DFN-12, and LFCSP footprints. | ic ad smd usop usop-8 dfn dfn-12 lfcsp lfcsp-10 lfcsp-16 lfcsp-24 lfcsp-32 lfcsp-40 lfcsp-64 surface mount integrated circuit cp pad mm pitch pins 3x3mm 3x3 5x5mm | AD | ",
+ "embedding_text": "ic.ad | IC | 40 ic parts using AD footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | ad lfcsp cp ic pad mm pitch pins 3x3mm 3x3 5x5mm surface mount soic dfn dd | AD | ",
  "class": "ic"
 }

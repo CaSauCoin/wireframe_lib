@@ -6,41 +6,34 @@
   "IC",
   "Memory"
  ],
- "description": "Surface-mount memory IC cluster containing 19 Tier A KiCad library parts in TSOP-I and TSOP-II packages.",
+ "description": "19 ic memory parts using TSOP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select parts based on memory type such as Flash or RAM.",
-  "Match required footprint to TSOP-I or TSOP-II package variants.",
-  "Verify exact pin count and lead pitch matching the footprint."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a TSOP land pattern is intended."
  ],
  "avoid_when": [
-  "The PCB layout requires package families other than TSOP.",
-  "Through-hole mounting is required instead of surface mount (SMD)."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than TSOP."
  ],
  "keywords": [
-  "ic",
-  "memory",
   "tsop",
-  "tsop-i",
-  "tsop-ii",
-  "smd",
-  "flash",
-  "ram",
-  "surface mount",
-  "tsop-i-48",
-  "tsop-ii-54",
-  "am29f400bx",
-  "as4c4m16sa",
-  "as6c1616",
-  "is42s16400j",
+  "memory",
   "ii",
   "dram",
+  "ram",
   "synchronous",
+  "ic",
   "p0",
   "8mm",
   "sdram",
   "2x10",
   "16mm",
-  "tsopii"
+  "tsopii",
+  "tsop2",
+  "bit",
+  "cmos"
  ],
  "facts": {
   "package_family": "TSOP",
@@ -65,7 +58,7 @@
   "tier_counts": {
    "A": 19
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -130,6 +123,6 @@
   "kicad-symbols/Memory_RAM/W9812G6KH-6I",
   "kicad-symbols/Memory_RAM/W9812G6KH-75"
  ],
- "embedding_text": "ic-memory.tsop | IC Memory | Surface-mount memory IC cluster containing 19 Tier A KiCad library parts in TSOP-I and TSOP-II packages. | ic memory tsop tsop-i tsop-ii smd flash ram surface mount tsop-i-48 tsop-ii-54 am29f400bx as4c4m16sa as6c1616 is42s16400j ii dram synchronous p0 8mm sdram 2x10 16mm tsopii | TSOP | ",
+ "embedding_text": "ic-memory.tsop | IC Memory | 19 ic memory parts using TSOP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | tsop memory ii dram ram synchronous ic p0 8mm sdram 2x10 16mm tsopii tsop2 bit cmos | TSOP | ",
  "class": "ic.memory"
 }

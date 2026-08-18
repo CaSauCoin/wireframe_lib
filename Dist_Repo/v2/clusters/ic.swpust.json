@@ -5,30 +5,24 @@
  "category_path": [
   "IC"
  ],
- "description": "Cluster of 3 through-hole IC parts using the SWPUST package family with DPDT and DPST LED footprint variants.",
+ "description": "3 ic parts using SWPUST footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when a through-hole IC in the SWPUST package family is required.",
-  "Select the specific footprint variant matching the PCB layout among SWPUST_DPDT_S, SWPUST_DPDT_S_7X7, or SWPUST_DPST_LED.",
-  "Verify part requirements acknowledging that all parts in this cluster are quality tier C."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SWPUST land pattern is intended."
  ],
  "avoid_when": [
-  "Mounting other than through-hole is required.",
-  "The design requires package footprints other than SWPUST DPDT or DPST LED variants.",
-  "Tier A or tier B quality parts are required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SWPUST."
  ],
  "keywords": [
-  "ic",
   "swpust",
-  "through hole",
-  "through_hole",
   "dpdt",
+  "ic",
+  "7x7",
   "dpst",
   "led",
-  "7x7",
-  "swpust_dpdt_s",
-  "swpust_dpdt_s_7x7",
-  "swpust_dpst_led",
-  "chilaboard-altium-library",
   "through",
   "hole",
   "pad",
@@ -57,7 +51,7 @@
   "tier_counts": {
    "C": 3
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
@@ -65,6 +59,6 @@
   "chilaboard-altium-library/SWPUST_DPDT_S_7X7/SWPUST_DPDT_S_7X7",
   "chilaboard-altium-library/SWPUST_DPST_LED/SWPUST_DPST_LED"
  ],
- "embedding_text": "ic.swpust | IC | Cluster of 3 through-hole IC parts using the SWPUST package family with DPDT and DPST LED footprint variants. | ic swpust through hole through_hole dpdt dpst led 7x7 swpust_dpdt_s swpust_dpdt_s_7x7 swpust_dpst_led chilaboard-altium-library through hole pad mm pitch pins | SWPUST | ",
+ "embedding_text": "ic.swpust | IC | 3 ic parts using SWPUST footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | swpust dpdt ic 7x7 dpst led through hole pad mm pitch pins | SWPUST | ",
  "class": "ic"
 }

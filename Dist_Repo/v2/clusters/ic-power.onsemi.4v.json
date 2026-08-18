@@ -6,40 +6,34 @@
   "IC",
   "Power"
  ],
- "description": "This cluster contains 2 surface-mount OnSemi power IC regulator controllers in DFN-8 2x2mm 0.5mm pitch footprints categorized under 4V power ICs.",
+ "description": "2 ic power parts for 4V using OnSemi footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Selecting surface-mount 4V power IC regulator controllers requiring an OnSemi DFN-8 2x2mm P0.5mm footprint.",
-  "Choosing between NCP4308AMT and NCP4308DMT parts from the KiCad Regulator_Controller symbol library.",
-  "Evaluating tier B quality power IC parts in surface-mount packaging."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a OnSemi land pattern is intended."
  ],
  "avoid_when": [
-  "The design requires through-hole mounting instead of surface-mount.",
-  "A footprint other than OnSemi DFN-8 2x2mm P0.5mm is required.",
-  "The application requires components outside the IC power category."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than OnSemi."
  ],
  "keywords": [
-  "ic",
-  "power",
-  "onsemi",
-  "4v",
-  "smd",
-  "dfn-8",
-  "2x2mm",
-  "p0.5mm",
-  "regulator",
   "controller",
-  "ncp4308amt",
-  "ncp4308dmt",
-  "regulator_controller",
   "synchronous",
   "rectifier",
+  "4v",
+  "onsemi",
   "dfn",
+  "regulator",
   "4a",
   "8a",
   "uvlo",
   "wdfn",
+  "2x2mm",
   "p0",
-  "5mm"
+  "5mm",
+  "ic",
+  "power"
  ],
  "facts": {
   "package_family": "OnSemi",
@@ -62,7 +56,7 @@
   "tier_counts": {
    "B": 2
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -86,6 +80,6 @@
   "kicad-symbols/Regulator_Controller/NCP4308AMT",
   "kicad-symbols/Regulator_Controller/NCP4308DMT"
  ],
- "embedding_text": "ic-power.onsemi.4v | IC Power | This cluster contains 2 surface-mount OnSemi power IC regulator controllers in DFN-8 2x2mm 0.5mm pitch footprints categorized under 4V power ICs. | ic power onsemi 4v smd dfn-8 2x2mm p0.5mm regulator controller ncp4308amt ncp4308dmt regulator_controller synchronous rectifier dfn 4a 8a uvlo wdfn p0 5mm | OnSemi | 4V",
+ "embedding_text": "ic-power.onsemi.4v | IC Power | 2 ic power parts for 4V using OnSemi footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | controller synchronous rectifier 4v onsemi dfn regulator 4a 8a uvlo wdfn 2x2mm p0 5mm ic power | OnSemi | 4V",
  "class": "ic.power"
 }

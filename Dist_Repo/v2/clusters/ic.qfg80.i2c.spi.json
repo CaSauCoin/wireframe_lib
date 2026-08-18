@@ -5,42 +5,34 @@
  "category_path": [
   "IC"
  ],
- "description": "Surface-mount IC cluster supporting I2C, SPI, and UART/serial interfaces across QFG80 package footprints including QFG80_32, QFG80_44, and QFG80_64.",
+ "description": "32 ic parts for I2C, SPI, UART/serial using QFG80 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when requiring surface-mount ICs with I2C, SPI, or UART/serial interfaces.",
-  "Match your layout requirement to QFG80_32, QFG80_44, or QFG80_64 footprints.",
-  "Evaluate part suitability among the 32 tier B entries from chilaboard-altium-library."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a QFG80 land pattern is intended."
  ],
  "avoid_when": [
-  "Avoid when the layout requires footprints other than QFG80_32, QFG80_44, or QFG80_64.",
-  "Avoid when through-hole components are required instead of SMD.",
-  "Avoid if interfaces beyond I2C, SPI, or UART/serial are needed."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than QFG80."
  ],
  "keywords": [
-  "ic",
-  "qfg80",
-  "i2c",
   "spi",
-  "uart/serial",
-  "smd",
-  "qfg80_32",
-  "qfg80_44",
-  "qfg80_64",
-  "chilaboard-altium-library",
-  "atmega1284p",
-  "atmega128a",
-  "atmega128l",
-  "atmega168a",
-  "atmega168pa",
+  "i2c",
   "microcontroller",
+  "qfg80",
   "uart",
   "adc",
+  "ic",
   "avr",
   "and",
   "serial",
   "qfn32",
   "mcu",
-  "in"
+  "in",
+  "bit",
+  "package",
+  "qfp32"
  ],
  "facts": {
   "package_family": "QFG80",
@@ -67,7 +59,7 @@
   "tier_counts": {
    "B": 32
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -145,6 +137,6 @@
   "chilaboard-altium-library/STM32G030K6T6_QFP32/STM32G030K6T6_QFP32",
   "chilaboard-altium-library/STM32F030K6T6_QFP32/STM32F030K6T6_QFP32"
  ],
- "embedding_text": "ic.qfg80.i2c.spi | IC | Surface-mount IC cluster supporting I2C, SPI, and UART/serial interfaces across QFG80 package footprints including QFG80_32, QFG80_44, and QFG80_64. | ic qfg80 i2c spi uart/serial smd qfg80_32 qfg80_44 qfg80_64 chilaboard-altium-library atmega1284p atmega128a atmega128l atmega168a atmega168pa microcontroller uart adc avr and serial qfn32 mcu in | QFG80 | I2C SPI UART/serial",
+ "embedding_text": "ic.qfg80.i2c.spi | IC | 32 ic parts for I2C, SPI, UART/serial using QFG80 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | spi i2c microcontroller qfg80 uart adc ic avr and serial qfn32 mcu in bit package qfp32 | QFG80 | I2C SPI UART/serial",
  "class": "ic"
 }

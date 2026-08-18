@@ -6,30 +6,23 @@
   "Passive",
   "Resistor"
  ],
- "description": "Cluster of SMD passive resistor and digital potentiometer components utilizing an I2C interface and LFCSP footprints.",
+ "description": "2 passive resistor parts for I2C using LFCSP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Verify match with the LFCSP-WD-10-1EP_3x3mm_P0.5mm_EP1.64x2.38mm footprint.",
-  "Choose between AD5272BCP and AD5274BCP representative parts based on design requirements.",
-  "Ensure compatibility with an I2C communication interface."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a LFCSP land pattern is intended."
  ],
  "avoid_when": [
-  "The circuit does not use an I2C interface.",
-  "A mounting method other than SMD is required.",
-  "The PCB layout requires a footprint other than LFCSP."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than LFCSP."
  ],
  "keywords": [
-  "passive",
+  "lfcsp",
+  "potentiometer",
+  "digital",
   "resistor",
   "i2c",
-  "lfcsp",
-  "smd",
-  "potentiometer",
-  "digital potentiometer",
-  "ad5272bcp",
-  "ad5274bcp",
-  "kicad-symbols",
-  "lfcsp-wd-10-1ep_3x3mm_p0.5mm_ep1.64x2.38mm",
-  "digital",
   "wd",
   "position",
   "tolerance",
@@ -63,7 +56,7 @@
   "tier_counts": {
    "A": 2
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -87,6 +80,6 @@
   "kicad-symbols/Potentiometer_Digital/AD5272BCP",
   "kicad-symbols/Potentiometer_Digital/AD5274BCP"
  ],
- "embedding_text": "passive-resistor.lfcsp.i2c | Passive Resistor | Cluster of SMD passive resistor and digital potentiometer components utilizing an I2C interface and LFCSP footprints. | passive resistor i2c lfcsp smd potentiometer digital potentiometer ad5272bcp ad5274bcp kicad-symbols lfcsp-wd-10-1ep_3x3mm_p0.5mm_ep1.64x2.38mm digital wd position tolerance interface 1ep 3x3mm p0 5mm ep1 64x2 38mm | LFCSP | I2C",
+ "embedding_text": "passive-resistor.lfcsp.i2c | Passive Resistor | 2 passive resistor parts for I2C using LFCSP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | lfcsp potentiometer digital resistor i2c wd position tolerance interface 1ep 3x3mm p0 5mm ep1 64x2 38mm | LFCSP | I2C",
  "class": "passive.resistor"
 }

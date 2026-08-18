@@ -5,31 +5,20 @@
  "category_path": [
   "IC"
  ],
- "description": "Component cluster containing 20 integrated circuit parts using SULLINS package family footprints with surface-mount and through-hole mounting options.",
+ "description": "20 ic parts using SULLINS footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Choose when requiring IC components formatted for SULLINS package family land patterns.",
-  "Verify specific footprint requirements including NPPN and SBH11 pattern series.",
-  "Check mounting style compatibility for surface-mount or through-hole designs."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SULLINS land pattern is intended."
  ],
  "avoid_when": [
-  "The PCB design requires footprint packages outside the SULLINS family.",
-  "Part selection depends on explicit electrical limits or datasheets not provided in the cluster facts."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SULLINS."
  ],
  "keywords": [
   "sullins",
   "ic",
-  "smd",
-  "through_hole",
-  "nppn051bfcn",
-  "nppn061bfcn",
-  "nppn061bfld-rc",
-  "nppn071bfcn",
-  "nppn081bfcn",
-  "nppn091bfcn",
-  "nppn101bfcn",
-  "nrpn091paen-rc",
-  "sbh11-nbpc-d10-st-bk",
-  "sbh11-pbpc-d17-st-bk",
   "pad",
   "mm",
   "pitch",
@@ -39,7 +28,11 @@
   "st",
   "bk",
   "through",
-  "hole"
+  "hole",
+  "nppn051bfcn",
+  "nppn061bfcn",
+  "nppn061bfld",
+  "nppn071bfcn"
  ],
  "facts": {
   "package_family": "SULLINS",
@@ -73,7 +66,7 @@
   "tier_counts": {
    "C": 20
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
@@ -98,6 +91,6 @@
   "celestial-altium-library/SULLINS SBH11-NBPC-D10-ST-BK/SULLINS_SBH11-NBPC-D10-ST-BK",
   "celestial-altium-library/SULLINS SBH11-PBPC-D17-ST-BK/SULLINS_SBH11-PBPC-D17-ST-BK"
  ],
- "embedding_text": "ic.sullins | IC | Component cluster containing 20 integrated circuit parts using SULLINS package family footprints with surface-mount and through-hole mounting options. | sullins ic smd through_hole nppn051bfcn nppn061bfcn nppn061bfld-rc nppn071bfcn nppn081bfcn nppn091bfcn nppn101bfcn nrpn091paen-rc sbh11-nbpc-d10-st-bk sbh11-pbpc-d17-st-bk pad mm pitch pins rc sbh11 st bk through hole | SULLINS | ",
+ "embedding_text": "ic.sullins | IC | 20 ic parts using SULLINS footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | sullins ic pad mm pitch pins rc sbh11 st bk through hole nppn051bfcn nppn061bfcn nppn061bfld nppn071bfcn | SULLINS | ",
  "class": "ic"
 }

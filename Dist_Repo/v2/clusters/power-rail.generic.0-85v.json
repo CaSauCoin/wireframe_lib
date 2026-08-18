@@ -6,28 +6,20 @@
   "Power",
   "Power Rail"
  ],
- "description": "Generic 0.85V power rail symbols for schematic power net definitions with package selection deferred.",
+ "description": "1 power power rail parts for 0.85V with package chosen later. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Use when representing a 0.85V power rail net in schematic capture.",
-  "Confirm schematic power symbol compatibility with SparkFun-KiCad-Libraries conventions.",
-  "Assign or select physical footprint and package details separately if required."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Select a footprint/package explicitly before placement."
  ],
  "avoid_when": [
-  "A rail voltage other than 0.85V is required.",
-  "A physical power component or regulator footprint is needed rather than a power net symbol."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review."
  ],
  "keywords": [
-  "power rail",
-  "0.85v",
-  "power symbol",
-  "sparkfun",
-  "kicad",
-  "schematic",
-  "generic",
-  "rail",
   "power",
-  "net symbol",
   "85v",
+  "sparkfun",
   "global",
   "powersymbol",
   "symbol",
@@ -35,6 +27,7 @@
   "label",
   "with",
   "name",
+  "rail",
   "package",
   "chosen",
   "later"
@@ -56,7 +49,7 @@
   "tier_counts": {
    "G": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -71,6 +64,6 @@
  "part_ids": [
   "SparkFun-KiCad-Libraries/SparkFun-PowerSymbol/0.85V"
  ],
- "embedding_text": "power-rail.generic.0-85v | Power Power Rail | Generic 0.85V power rail symbols for schematic power net definitions with package selection deferred. | power rail 0.85v power symbol sparkfun kicad schematic generic rail power net symbol 85v global powersymbol symbol creates label with name package chosen later | package chosen later | 0.85V",
+ "embedding_text": "power-rail.generic.0-85v | Power Power Rail | 1 power power rail parts for 0.85V with package chosen later. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | power 85v sparkfun global powersymbol symbol creates label with name rail package chosen later | package chosen later | 0.85V",
  "class": "power.rail"
 }

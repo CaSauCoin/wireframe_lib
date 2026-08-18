@@ -5,42 +5,34 @@
  "category_path": [
   "IC"
  ],
- "description": "Cluster of 38 Tier A 1.8V LDO IC parts in TO package family footprints with SMD and through-hole mounting options.",
+ "description": "38 ic parts for LDO, 1.8V using TO footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select the exact TO footprint such as TO-252-2, TO-263, TO-220, or TO-92.",
-  "Choose between surface-mount (SMD) and through-hole mounting configurations.",
-  "Verify specific part variant from Alternate-KiCad-Library for layout requirements."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a TO land pattern is intended."
  ],
  "avoid_when": [
-  "Output voltages other than 1.8V are required.",
-  "The design requires package families outside the TO package family.",
-  "Regulator types other than LDO ICs are needed."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than TO."
  ],
  "keywords": [
-  "ic",
-  "ldo",
-  "1.8v",
   "to",
-  "to-252-2",
-  "to-220-3",
-  "to-263-2",
-  "to-92",
-  "smd",
-  "through_hole",
-  "alternate-kicad-library",
-  "ap2114",
-  "ap7361",
-  "to package",
   "voltage",
   "regulator",
   "8v",
   "low",
   "dropout",
+  "ldo",
   "akl",
   "alternate",
   "kicad",
   "library",
-  "vreg"
+  "vreg",
+  "pmic",
+  "power",
+  "supply",
+  "ic"
  ],
  "facts": {
   "package_family": "TO",
@@ -71,7 +63,7 @@
   "tier_counts": {
    "A": 38
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -155,6 +147,6 @@
   "Alternate-KiCad-Library/Voltage_Regulator_AKL/MCP1702T-1802E-TO",
   "Alternate-KiCad-Library/Voltage_Regulator_AKL/ZLDO1117K18TC"
  ],
- "embedding_text": "ic.to.ldo.1-8v | IC | Cluster of 38 Tier A 1.8V LDO IC parts in TO package family footprints with SMD and through-hole mounting options. | ic ldo 1.8v to to-252-2 to-220-3 to-263-2 to-92 smd through_hole alternate-kicad-library ap2114 ap7361 to package voltage regulator 8v low dropout akl alternate kicad library vreg | TO | LDO 1.8V",
+ "embedding_text": "ic.to.ldo.1-8v | IC | 38 ic parts for LDO, 1.8V using TO footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | to voltage regulator 8v low dropout ldo akl alternate kicad library vreg pmic power supply ic | TO | LDO 1.8V",
  "class": "ic"
 }

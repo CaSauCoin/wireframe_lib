@@ -6,42 +6,34 @@
   "Discrete",
   "Transistor"
  ],
- "description": "Cluster of 6 discrete transistor parts using TI package family footprints including TI SOT-3 DRT and TI SOT-89 PK.",
+ "description": "6 discrete transistor parts using TI footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when requiring discrete transistors using TI footprints such as TI SOT-3 DRT or TI SOT-89 PK.",
-  "Verify mount requirements as mounts include SMD and unknown.",
-  "Note that all parts are Tier C quality with generated review status."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a TI land pattern is intended."
  ],
  "avoid_when": [
-  "Avoid when non-TI footprint packages are required.",
-  "Avoid when parts with higher than Tier C quality status are required.",
-  "Avoid when planner-visible components are needed."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than TI."
  ],
  "keywords": [
-  "discrete",
-  "transistor",
-  "discrete transistor",
   "ti",
-  "sot-3 drt",
-  "sot-89 pk",
-  "ti sot-3 drt",
-  "ti sot-89 pk",
-  "smd",
-  "tier c",
-  "dist-legacy",
-  "celestial-altium-library",
   "sot",
   "drt",
   "pk",
   "footprint",
   "land",
   "pattern",
+  "discrete",
+  "transistor",
   "dbz",
   "bare",
   "package",
   "and",
   "for",
-  "component"
+  "component",
+  "xfdfn"
  ],
  "facts": {
   "package_family": "TI",
@@ -66,7 +58,7 @@
   "tier_counts": {
    "C": 6
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
@@ -77,6 +69,6 @@
   "celestial-altium-library/TI SOT-3 DRT/TI_SOT-3_DRT",
   "celestial-altium-library/TI SOT-89 PK/TI_SOT-89_PK"
  ],
- "embedding_text": "discrete-transistor.ti | Discrete Transistor | Cluster of 6 discrete transistor parts using TI package family footprints including TI SOT-3 DRT and TI SOT-89 PK. | discrete transistor discrete transistor ti sot-3 drt sot-89 pk ti sot-3 drt ti sot-89 pk smd tier c dist-legacy celestial-altium-library sot drt pk footprint land pattern dbz bare package and for component | TI | ",
+ "embedding_text": "discrete-transistor.ti | Discrete Transistor | 6 discrete transistor parts using TI footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | ti sot drt pk footprint land pattern discrete transistor dbz bare package and for component xfdfn | TI | ",
  "class": "discrete.transistor"
 }

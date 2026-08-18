@@ -6,32 +6,23 @@
   "Power",
   "Power Supply"
  ],
- "description": "Surface-mount 4.5V power supply components in SOT-23-5 packages from KiCad symbol libraries.",
+ "description": "2 power power supply parts for 4.5V using SOT-23-5 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when designing for surface-mount 4.5V power supply circuits using SOT-23-5 footprints.",
-  "Choose between MCP73831-5-OT and MCP73832-5-OT based on your specific circuit requirements.",
-  "Verify KiCad symbol definitions against intended schematic requirements."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SOT-23-5 land pattern is intended."
  ],
  "avoid_when": [
-  "Designs requiring packages or footprints other than SOT-23-5.",
-  "Operating voltages or power supply specifications other than 4.5V are needed.",
-  "Through-hole mounting is required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SOT-23-5."
  ],
  "keywords": [
-  "power",
-  "power supply",
-  "4.5v",
-  "sot-23-5",
-  "smd",
-  "surface mount",
-  "battery management",
-  "mcp73831-5-ot",
-  "mcp73832-5-ot",
-  "kicad",
   "sot",
   "battery",
   "management",
   "li",
+  "power",
   "ot",
   "single",
   "cell",
@@ -41,7 +32,8 @@
   "controller",
   "50v",
   "status",
-  "output"
+  "output",
+  "in"
  ],
  "facts": {
   "package_family": "SOT-23-5",
@@ -64,7 +56,7 @@
   "tier_counts": {
    "A": 2
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -88,6 +80,6 @@
   "kicad-symbols/Battery_Management/MCP73831-5-OT",
   "kicad-symbols/Battery_Management/MCP73832-5-OT"
  ],
- "embedding_text": "power-supply.sot-23-5.4-5v | Power Power Supply | Surface-mount 4.5V power supply components in SOT-23-5 packages from KiCad symbol libraries. | power power supply 4.5v sot-23-5 smd surface mount battery management mcp73831-5-ot mcp73832-5-ot kicad sot battery management li ot single cell ion po charge controller 50v status output | SOT-23-5 | 4.5V",
+ "embedding_text": "power-supply.sot-23-5.4-5v | Power Power Supply | 2 power power supply parts for 4.5V using SOT-23-5 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | sot battery management li power ot single cell ion po charge controller 50v status output in | SOT-23-5 | 4.5V",
  "class": "power.supply"
 }

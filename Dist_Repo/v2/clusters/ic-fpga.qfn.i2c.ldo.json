@@ -6,33 +6,23 @@
   "IC",
   "FPGA"
  ],
- "description": "Cluster of 3 surface-mount FPGA IC parts featuring I2C and LDO in Renesas UQFN-20 2x3mm P0.4mm footprint packaging.",
+ "description": "3 ic fpga parts for I2C, LDO using QFN footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when requiring an FPGA IC with I2C and LDO functionality in a surface-mount QFN package.",
-  "Match designs using the Renesas UQFN-20 2x3mm P0.4mm footprint.",
-  "Choose between SLG46580, SLG46582, and SLG46583 based on specific part requirements."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a QFN land pattern is intended."
  ],
  "avoid_when": [
-  "Do not use when through-hole mounting or non-QFN packaging is required.",
-  "Avoid when the design does not require I2C or LDO integration.",
-  "Avoid if a footprint other than Renesas UQFN-20 2x3mm P0.4mm is needed."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than QFN."
  ],
  "keywords": [
-  "ic",
-  "fpga",
-  "cpld",
-  "i2c",
-  "ldo",
-  "qfn",
-  "uqfn",
-  "uqfn-20",
-  "smd",
   "renesas",
-  "slg46580",
-  "slg46582",
-  "slg46583",
-  "2x3mm",
-  "p0.4mm",
+  "uqfn",
+  "ldo",
+  "i2c",
+  "cpld",
   "greenpak",
   "programmable",
   "mixed",
@@ -41,7 +31,9 @@
   "with",
   "asynchronous",
   "state",
-  "machine"
+  "machine",
+  "2x3mm",
+  "p0"
  ],
  "facts": {
   "package_family": "QFN",
@@ -65,7 +57,7 @@
   "tier_counts": {
    "B": 3
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -98,6 +90,6 @@
   "kicad-symbols/CPLD_Renesas/SLG46582",
   "kicad-symbols/CPLD_Renesas/SLG46583"
  ],
- "embedding_text": "ic-fpga.qfn.i2c.ldo | IC FPGA | Cluster of 3 surface-mount FPGA IC parts featuring I2C and LDO in Renesas UQFN-20 2x3mm P0.4mm footprint packaging. | ic fpga cpld i2c ldo qfn uqfn uqfn-20 smd renesas slg46580 slg46582 slg46583 2x3mm p0.4mm greenpak programmable mixed signal matrix with asynchronous state machine | QFN | I2C LDO",
+ "embedding_text": "ic-fpga.qfn.i2c.ldo | IC FPGA | 3 ic fpga parts for I2C, LDO using QFN footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | renesas uqfn ldo i2c cpld greenpak programmable mixed signal matrix with asynchronous state machine 2x3mm p0 | QFN | I2C LDO",
  "class": "ic.fpga"
 }

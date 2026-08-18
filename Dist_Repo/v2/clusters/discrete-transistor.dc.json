@@ -6,29 +6,22 @@
   "Discrete",
   "Transistor"
  ],
- "description": "Discrete transistor cluster in the DC package family containing 2 parts associated with DC and DC-IN footprints.",
+ "description": "2 discrete transistor parts using DC footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when needing a discrete transistor with a DC or DC-IN footprint.",
-  "Compare part quality tiers, such as Tier B and Tier C, for selection.",
-  "Confirm whether the DC or DC-IN footprint variant matches board requirements."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a DC land pattern is intended."
  ],
  "avoid_when": [
-  "The design requires a footprint other than DC or DC-IN.",
-  "The layout needs a package family other than DC.",
-  "Components outside the discrete transistor classification are required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than DC."
  ],
  "keywords": [
-  "discrete transistor",
-  "discrete",
-  "transistor",
   "dc",
-  "dc-in",
-  "dc_in",
-  "dc in",
-  "package family dc",
-  "dc footprint",
-  "discrete.transistor",
   "in",
+  "transistor",
+  "discrete",
   "with",
   "base",
   "collector",
@@ -63,7 +56,7 @@
    "B": 1,
    "C": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -79,6 +72,6 @@
   "dist-legacy/DC IN",
   "dist-legacy/DC-IN"
  ],
- "embedding_text": "discrete-transistor.dc | Discrete Transistor | Discrete transistor cluster in the DC package family containing 2 parts associated with DC and DC-IN footprints. | discrete transistor discrete transistor dc dc-in dc_in dc in package family dc dc footprint discrete.transistor in with base collector emitter pins three pin symbol and paired footprint bjt | DC | ",
+ "embedding_text": "discrete-transistor.dc | Discrete Transistor | 2 discrete transistor parts using DC footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | dc in transistor discrete with base collector emitter pins three pin symbol and paired footprint bjt | DC | ",
  "class": "discrete.transistor"
 }

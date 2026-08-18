@@ -5,33 +5,21 @@
  "category_path": [
   "Connector"
  ],
- "description": "Connector cluster for SDCard-family parts using a through-hole SDCard_Micro footprint, currently containing 1 tier-C part from a single source and marked as generated/unreviewed.",
+ "description": "1 connector parts using SDCard footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Confirm the SDCard_Micro footprint matches the target card slot before use",
-  "Verify through-hole mounting fits the intended PCB layout",
-  "Only 1 part is available in this cluster; review it manually since it is tier C and unreviewed"
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SDCard land pattern is intended."
  ],
  "avoid_when": [
-  "A footprint other than SDCard_Micro is required",
-  "Surface-mount rather than through-hole mounting is needed",
-  "A reviewed or higher-tier (non-C) part is required",
-  "Electrical ratings or pinout are needed but not stated for this part"
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SDCard."
  ],
  "keywords": [
   "sdcard",
-  "sd card",
-  "micro sd",
-  "sdcard_micro",
-  "connector",
-  "through hole",
-  "card slot",
-  "memory card connector",
-  "tier c",
-  "generated",
-  "unreviewed",
-  "matthiasbock",
-  "altium libraries",
   "micro",
+  "connector",
   "through",
   "hole",
   "pad",
@@ -58,12 +46,12 @@
   "tier_counts": {
    "C": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
   "matthiasbock-altium-libraries/SDCard_Micro/SDCard_Micro"
  ],
- "embedding_text": "connector.sdcard | Connector | Connector cluster for SDCard-family parts using a through-hole SDCard_Micro footprint, currently containing 1 tier-C part from a single source and marked as generated/unreviewed. | sdcard sd card micro sd sdcard_micro connector through hole card slot memory card connector tier c generated unreviewed matthiasbock altium libraries micro through hole pad mm pitch pins | SDCard | ",
+ "embedding_text": "connector.sdcard | Connector | 1 connector parts using SDCard footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | sdcard micro connector through hole pad mm pitch pins | SDCard | ",
  "class": "connector"
 }

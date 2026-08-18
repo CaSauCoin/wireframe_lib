@@ -6,28 +6,22 @@
   "IC",
   "Memory"
  ],
- "description": "Memory IC component cluster featuring surface-mount SOT package family parts such as SOT-223 footprints.",
+ "description": "1 ic memory parts using SOT footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when surface-mount memory ICs in SOT package families are required.",
-  "Confirm footprint compatibility with SOT-223 land patterns.",
-  "Prefer tier A parts with explicit footprint and symbol mappings."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SOT land pattern is intended."
  ],
  "avoid_when": [
-  "Avoid when the board design requires non-SOT packages.",
-  "Avoid if surface-mount (SMD) packaging is not suitable for the PCB assembly.",
-  "Avoid if specific electrical parameters or limits are unverified."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SOT."
  ],
  "keywords": [
-  "ic",
-  "memory",
   "sot",
-  "sot-223",
-  "smd",
+  "memory",
   "ds2401z",
   "uniqueid",
-  "ic memory",
-  "sot memory",
-  "surface mount",
   "silicon",
   "serial",
   "number",
@@ -37,7 +31,8 @@
   "1wire",
   "maxim",
   "dallas",
-  "id"
+  "id",
+  "ic"
  ],
  "facts": {
   "package_family": "SOT",
@@ -58,7 +53,7 @@
   "tier_counts": {
    "A": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -73,6 +68,6 @@
  "part_ids": [
   "kicad-symbols/Memory_UniqueID/DS2401Z"
  ],
- "embedding_text": "ic-memory.sot | IC Memory | Memory IC component cluster featuring surface-mount SOT package family parts such as SOT-223 footprints. | ic memory sot sot-223 smd ds2401z uniqueid ic memory sot memory surface mount silicon serial number cms onewire wire 1wire maxim dallas id | SOT | ",
+ "embedding_text": "ic-memory.sot | IC Memory | 1 ic memory parts using SOT footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | sot memory ds2401z uniqueid silicon serial number cms onewire wire 1wire maxim dallas id ic | SOT | ",
  "class": "ic.memory"
 }

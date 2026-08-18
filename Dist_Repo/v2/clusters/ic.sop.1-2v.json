@@ -5,33 +5,24 @@
  "category_path": [
   "IC"
  ],
- "description": "Cluster of surface-mount IC parts operating at 1.2V in an SOP package family with SOP-4 footprint options.",
+ "description": "1 ic parts for 1.2V using SOP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select for surface-mount IC applications requiring 1.2V operation.",
-  "Choose when using the SOP-4 (4.4x2.6mm, 1.27mm pitch) footprint.",
-  "Use when sourcing from JLCPCB-Kicad-Library with tier A quality."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SOP land pattern is intended."
  ],
  "avoid_when": [
-  "Avoid if the design requires through-hole or non-SMD mounting.",
-  "Do not use if package requirements differ from SOP family.",
-  "Do not use when operating voltage is not 1.2V."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SOP."
  ],
  "keywords": [
-  "ic",
   "sop",
-  "1.2v",
-  "smd",
-  "sop-4",
-  "4.4x2.6mm",
-  "p1.27mm",
-  "jlcpcb",
-  "optocouplers",
-  "ltv-217-b-g",
-  "jlcpcb-kicad-library",
-  "sop-4_4.4x2.6mm_p1.27mm",
   "ltv",
   "2v",
   "50ma",
+  "jlcpcb",
+  "optocouplers",
   "200mw",
   "2us",
   "75kv",
@@ -40,7 +31,8 @@
   "8ma",
   "4ma",
   "6v",
-  "70v"
+  "70v",
+  "dc"
  ],
  "facts": {
   "package_family": "SOP",
@@ -63,7 +55,7 @@
   "tier_counts": {
    "A": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -78,6 +70,6 @@
  "part_ids": [
   "JLCPCB-Kicad-Library/JLCPCB-Optocouplers/LTV-217-B-G"
  ],
- "embedding_text": "ic.sop.1-2v | IC | Cluster of surface-mount IC parts operating at 1.2V in an SOP package family with SOP-4 footprint options. | ic sop 1.2v smd sop-4 4.4x2.6mm p1.27mm jlcpcb optocouplers ltv-217-b-g jlcpcb-kicad-library sop-4_4.4x2.6mm_p1.27mm ltv 2v 50ma 200mw 2us 75kv 3us 400mv 8ma 4ma 6v 70v | SOP | 1.2V",
+ "embedding_text": "ic.sop.1-2v | IC | 1 ic parts for 1.2V using SOP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | sop ltv 2v 50ma jlcpcb optocouplers 200mw 2us 75kv 3us 400mv 8ma 4ma 6v 70v dc | SOP | 1.2V",
  "class": "ic"
 }

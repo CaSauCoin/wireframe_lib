@@ -6,39 +6,32 @@
   "Discrete",
   "Transistor"
  ],
- "description": "Cluster of 3 SMD discrete transistor parts, including NMOS and PMOS components, rated for 10V in SOT-23 (Q_SOT-23) footprints.",
+ "description": "3 discrete transistor parts for 10V using SOT-23 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when requiring 10V discrete transistors in an SMD SOT-23 footprint.",
-  "Choose between NMOS (2N7002) and PMOS (HL2303, HL3401A) options.",
-  "Suitable for designs using Tier B components from the JLCPCB KiCad library."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SOT-23 land pattern is intended."
  ],
  "avoid_when": [
-  "Avoid when the board design requires a package other than SOT-23.",
-  "Do not use if voltage requirements differ from 10V.",
-  "Avoid when higher quality tier (Tier A) parts are required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SOT-23."
  ],
  "keywords": [
-  "discrete",
-  "transistor",
-  "transistors",
-  "10v",
-  "sot-23",
   "sot",
-  "smd",
-  "q_sot-23",
-  "nmos",
-  "pmos",
-  "2n7002",
-  "hl2303",
-  "hl3401a",
-  "jlcpcb",
-  "kicad",
+  "10v",
   "channel",
+  "jlcpcb",
+  "transistors",
   "mosfets",
   "rohs",
   "to",
+  "smd",
+  "discrete",
+  "transistor",
   "6v",
   "25pf",
+  "pmos",
   "30v",
   "350mw"
  ],
@@ -63,7 +56,7 @@
   "tier_counts": {
    "B": 3
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -96,6 +89,6 @@
   "JLCPCB-Kicad-Library/JLCPCB-Transistors/PMOS,HL2303",
   "JLCPCB-Kicad-Library/JLCPCB-Transistors/PMOS,HL3401A"
  ],
- "embedding_text": "discrete-transistor.sot-23.10v | Discrete Transistor | Cluster of 3 SMD discrete transistor parts, including NMOS and PMOS components, rated for 10V in SOT-23 (Q_SOT-23) footprints. | discrete transistor transistors 10v sot-23 sot smd q_sot-23 nmos pmos 2n7002 hl2303 hl3401a jlcpcb kicad channel mosfets rohs to 6v 25pf 30v 350mw | SOT-23 | 10V",
+ "embedding_text": "discrete-transistor.sot-23.10v | Discrete Transistor | 3 discrete transistor parts for 10V using SOT-23 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | sot 10v channel jlcpcb transistors mosfets rohs to smd discrete transistor 6v 25pf pmos 30v 350mw | SOT-23 | 10V",
  "class": "discrete.transistor"
 }

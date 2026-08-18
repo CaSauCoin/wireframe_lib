@@ -5,36 +5,19 @@
  "category_path": [
   "Connector"
  ],
- "description": "Cluster of 12 SMD microSD card connector parts spanning multiple microSD footprint variants (Hirose DM3D-SF, DM3AT, DM3BT, Molex 47219-2001, 104031-0811, and others) from mixed library sources; review status is generated.",
+ "description": "12 connector parts using microSD footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Prefer tier A parts (e.g. Micro_SD_Card_Det1/Det2/Det_Hirose_DM3AT) for higher-confidence matches",
-  "Match the exact footprint variant (Hirose DM3D-SF, DM3AT, DM3BT vs Molex 47219-2001, 104031-0811, or 2908-05WB-MG) to your intended land pattern",
-  "Cross-check source library (kicad-symbols, digikey-kicad-library, SparkFun-KiCad-Libraries, dist-legacy) for trust level",
-  "Verify symbol-footprint pairing since review_status is 'generated', not manually confirmed"
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a microSD land pattern is intended."
  ],
  "avoid_when": [
-  "The design requires a card-detect switch or pin configuration not confirmed in the part data",
-  "A specific footprint variant isn't matched exactly to the intended PCB land pattern",
-  "Only lower tier C parts are available and no electrical or mechanical confirmation exists",
-  "A mount type other than SMD is required"
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than microSD."
  ],
  "keywords": [
   "microsd",
-  "micro sd",
-  "sd card connector",
-  "card socket",
-  "smd connector",
-  "hirose dm3d-sf",
-  "hirose dm3at",
-  "hirose dm3bt",
-  "molex 47219-2001",
-  "molex 104031-0811",
-  "2908-05wb-mg",
-  "friction fit",
-  "card detect",
-  "microsd footprint",
-  "memory card connector",
-  "push-push connector",
   "sd",
   "connector",
   "hc",
@@ -42,7 +25,14 @@
   "hirose",
   "card",
   "sf",
-  "molex"
+  "molex",
+  "dm3d",
+  "pins",
+  "dm3at",
+  "pitch",
+  "socket",
+  "push",
+  "sparkfun"
  ],
  "facts": {
   "package_family": "microSD",
@@ -75,7 +65,7 @@
    "B": 4,
    "C": 5
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -133,6 +123,6 @@
   "dist-legacy/microSD_HC_Molex_104031-0811",
   "dist-legacy/microSD_HC_Molex_47219-2001"
  ],
- "embedding_text": "connector.microsd | Connector | Cluster of 12 SMD microSD card connector parts spanning multiple microSD footprint variants (Hirose DM3D-SF, DM3AT, DM3BT, Molex 47219-2001, 104031-0811, and others) from mixed library sources; review status is generated. | microsd micro sd sd card connector card socket smd connector hirose dm3d-sf hirose dm3at hirose dm3bt molex 47219-2001 molex 104031-0811 2908-05wb-mg friction fit card detect microsd footprint memory card connector push-push connector sd connector hc micro hirose card sf molex | microSD | ",
+ "embedding_text": "connector.microsd | Connector | 12 connector parts using microSD footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | microsd sd connector hc micro hirose card sf molex dm3d pins dm3at pitch socket push sparkfun | microSD | ",
  "class": "connector"
 }

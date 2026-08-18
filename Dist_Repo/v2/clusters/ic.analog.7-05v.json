@@ -5,33 +5,22 @@
  "category_path": [
   "IC"
  ],
- "description": "Analog IC cluster containing 2 tier A parts for 7.05V applications in SMD and through-hole packages with Analog LCC-8 and TO-46-4 footprints.",
+ "description": "2 ic parts for 7.05V using Analog footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Choose between surface-mount (ADR1399KEZ) and through-hole (ADR1399KHZ) mounting options.",
-  "Select the exact footprint required: Analog_LCC-8_5x5mm_P1.27mm or Analog_TO-46-4_ThermalShield.",
-  "Confirm 7.05V rating matches circuit requirements."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a Analog land pattern is intended."
  ],
  "avoid_when": [
-  "Operating voltages other than 7.05V are needed.",
-  "Packages other than Analog LCC-8 or TO-46-4 are required.",
-  "Non-IC component categories are specified."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than Analog."
  ],
  "keywords": [
-  "ic",
-  "7.05v",
-  "analog",
-  "smd",
-  "through_hole",
-  "adr1399kez",
-  "adr1399khz",
-  "analog_lcc-8_5x5mm_p1.27mm",
-  "analog_to-46-4_thermalshield",
-  "reference_voltage",
-  "kicad-symbols",
-  "tier a",
   "reference",
   "voltage",
   "zener",
+  "analog",
   "lcc",
   "to",
   "oven",
@@ -39,8 +28,11 @@
   "buried",
   "diode",
   "device",
+  "ic",
   "05v",
-  "5x5mm"
+  "adr1399kez",
+  "5x5mm",
+  "p1"
  ],
  "facts": {
   "package_family": "Analog",
@@ -65,7 +57,7 @@
   "tier_counts": {
    "A": 2
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -89,6 +81,6 @@
   "kicad-symbols/Reference_Voltage/ADR1399KEZ",
   "kicad-symbols/Reference_Voltage/ADR1399KHZ"
  ],
- "embedding_text": "ic.analog.7-05v | IC | Analog IC cluster containing 2 tier A parts for 7.05V applications in SMD and through-hole packages with Analog LCC-8 and TO-46-4 footprints. | ic 7.05v analog smd through_hole adr1399kez adr1399khz analog_lcc-8_5x5mm_p1.27mm analog_to-46-4_thermalshield reference_voltage kicad-symbols tier a reference voltage zener lcc to oven compensated buried diode device 05v 5x5mm | Analog | 7.05V",
+ "embedding_text": "ic.analog.7-05v | IC | 2 ic parts for 7.05V using Analog footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | reference voltage zener analog lcc to oven compensated buried diode device ic 05v adr1399kez 5x5mm p1 | Analog | 7.05V",
  "class": "ic"
 }

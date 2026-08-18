@@ -5,30 +5,20 @@
  "category_path": [
   "IC"
  ],
- "description": "Cluster of 6 tier-C IC parts using CAP package family footprints.",
+ "description": "6 ic parts using CAP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when an IC part with a CAP package family footprint is required.",
-  "Verify footprint compatibility with specific CAP footprint variants such as CAP_0201 or CAP_1210.",
-  "Confirm quality tier requirements as all current entries are tier C."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a CAP land pattern is intended."
  ],
  "avoid_when": [
-  "Avoid when planner-visible parts are required, as planner visible count is zero.",
-  "Avoid when footprints outside the CAP package family are needed.",
-  "Avoid if parts above tier C quality are strictly required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than CAP."
  ],
  "keywords": [
-  "ic",
   "cap",
-  "ic cap",
-  "cap package family",
-  "cap_ae_",
-  "cap-el-np-5mm",
-  "cap_0201",
-  "cap_1210",
-  "cap_ae_smd_d6mm3_h5m55",
-  "cap_alel_16x16.5",
-  "dist-legacy",
-  "tier c",
+  "ic",
   "ae",
   "smd",
   "mm",
@@ -40,7 +30,9 @@
   "pins",
   "d6mm3",
   "h5m55",
-  "alel"
+  "alel",
+  "16x16",
+  "d3"
  ],
  "facts": {
   "package_family": "CAP",
@@ -66,7 +58,7 @@
   "tier_counts": {
    "C": 6
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
@@ -77,6 +69,6 @@
   "dist-legacy/CAP_AE_SMD_D6MM3_H5M55",
   "dist-legacy/CAP_ALEL_16x16.5"
  ],
- "embedding_text": "ic.cap | IC | Cluster of 6 tier-C IC parts using CAP package family footprints. | ic cap ic cap cap package family cap_ae_ cap-el-np-5mm cap_0201 cap_1210 cap_ae_smd_d6mm3_h5m55 cap_alel_16x16.5 dist-legacy tier c ae smd mm el np 5mm pad pitch pins d6mm3 h5m55 alel | CAP | ",
+ "embedding_text": "ic.cap | IC | 6 ic parts using CAP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | cap ic ae smd mm el np 5mm pad pitch pins d6mm3 h5m55 alel 16x16 d3 | CAP | ",
  "class": "ic"
 }

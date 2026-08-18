@@ -6,35 +6,26 @@
   "Power",
   "Power Rail"
  ],
- "description": "Generic 10V schematic power rail symbols (+10V and -10V) for circuit power distribution with footprints unassigned.",
+ "description": "2 power power rail parts for 10V with package chosen later. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select between +10V and -10V power rail net symbols based on supply polarity.",
-  "Assign a footprint separately if physical layout or terminal connections are required.",
-  "Verify that the net name matches your schematic power rail naming conventions."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Select a footprint/package explicitly before placement."
  ],
  "avoid_when": [
-  "A physical component with a defined footprint and package is required.",
-  "Voltage rails other than positive or negative 10V are needed.",
-  "Active voltage regulation or power delivery ICs are required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review."
  ],
  "keywords": [
-  "power rail",
   "power",
-  "rail",
   "10v",
-  "+10v",
-  "-10v",
-  "10 volt",
-  "voltage rail",
-  "schematic symbol",
-  "supply rail",
-  "kicad power",
   "global",
   "symbol",
   "creates",
   "label",
   "with",
   "name",
+  "rail",
   "package",
   "chosen",
   "later"
@@ -56,7 +47,7 @@
   "tier_counts": {
    "G": 2
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -80,6 +71,6 @@
   "kicad-symbols/power/+10V",
   "kicad-symbols/power/-10V"
  ],
- "embedding_text": "power-rail.generic.10v | Power Power Rail | Generic 10V schematic power rail symbols (+10V and -10V) for circuit power distribution with footprints unassigned. | power rail power rail 10v +10v -10v 10 volt voltage rail schematic symbol supply rail kicad power global symbol creates label with name package chosen later | package chosen later | 10V",
+ "embedding_text": "power-rail.generic.10v | Power Power Rail | 2 power power rail parts for 10V with package chosen later. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | power 10v global symbol creates label with name rail package chosen later | package chosen later | 10V",
  "class": "power.rail"
 }

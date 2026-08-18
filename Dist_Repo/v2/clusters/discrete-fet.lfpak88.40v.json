@@ -6,42 +6,34 @@
   "Discrete",
   "FET"
  ],
- "description": "A cluster of 10 surface-mount 40V discrete FET components in the LFPAK88 package family from KiCad symbols.",
+ "description": "10 discrete fet parts for 40V using LFPAK88 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when requiring a surface-mount 40V discrete FET in an LFPAK88 footprint.",
-  "Choose between representative Tier A parts such as SQJQ100E, SQJQ100EL, or SQJQ140E.",
-  "Verify part specifications and symbol details against design requirements."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a LFPAK88 land pattern is intended."
  ],
  "avoid_when": [
-  "The PCB design requires a footprint or package family other than LFPAK88.",
-  "The application requires a voltage rating other than 40V.",
-  "Through-hole mounting is required instead of surface mount (SMD)."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than LFPAK88."
  ],
  "keywords": [
-  "discrete",
+  "lfpak88",
   "fet",
   "40v",
-  "lfpak88",
-  "smd",
-  "surface mount",
-  "kicad-symbols",
-  "sqjq100e",
-  "sqjq100el",
-  "sqjq140e",
-  "sqjq142e",
-  "sqjq144ae",
-  "transistor",
-  "discrete fet",
   "mosfet",
   "powerpak",
   "8x8l",
+  "transistor",
   "id",
   "vds",
   "channel",
   "trenchfet",
   "ron",
   "qqd",
-  "to"
+  "to",
+  "nexperia",
+  "vishay"
  ],
  "facts": {
   "package_family": "LFPAK88",
@@ -64,7 +56,7 @@
   "tier_counts": {
    "A": 10
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -120,6 +112,6 @@
   "kicad-symbols/Transistor_FET/SQJQ402E",
   "kicad-symbols/Transistor_FET/SQJQ404E"
  ],
- "embedding_text": "discrete-fet.lfpak88.40v | Discrete FET | A cluster of 10 surface-mount 40V discrete FET components in the LFPAK88 package family from KiCad symbols. | discrete fet 40v lfpak88 smd surface mount kicad-symbols sqjq100e sqjq100el sqjq140e sqjq142e sqjq144ae transistor discrete fet mosfet powerpak 8x8l id vds channel trenchfet ron qqd to | LFPAK88 | 40V",
+ "embedding_text": "discrete-fet.lfpak88.40v | Discrete FET | 10 discrete fet parts for 40V using LFPAK88 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | lfpak88 fet 40v mosfet powerpak 8x8l transistor id vds channel trenchfet ron qqd to nexperia vishay | LFPAK88 | 40V",
  "class": "discrete.fet"
 }

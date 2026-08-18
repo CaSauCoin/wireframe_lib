@@ -5,44 +5,34 @@
  "category_path": [
   "Connector"
  ],
- "description": "Single-pin (1x01) connector cluster with 4 SparkFun-sourced parts spanning through-hole (2.54mm, 6.5mm, 2.0mm pitch) and SMD (1x1mm) footprints.",
+ "description": "4 connector parts using 1x01 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Match the exact footprint pitch/size to the target land pattern (2.54mm, 2.0mm, 6.5mm, or SMD 1x1mm)",
-  "Choose through_hole vs smd mount type based on assembly process",
-  "Prefer the tier A entry (Conn_01x01_P2.54mm) when footprint requirements are flexible",
-  "Confirm symbol-footprint pairing before use since parts are auto-generated"
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a 1x01 land pattern is intended."
  ],
  "avoid_when": [
-  "The board requires a footprint pitch/size not listed among the 4 available variants",
-  "Electrical ratings (voltage, current) are needed but not stated by the selected part",
-  "A multi-pin connector is needed instead of a single-pin (1x01) connection",
-  "The symbol-footprint pairing has not been verified for the chosen part"
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than 1x01."
  ],
  "keywords": [
   "connector",
-  "1x01",
-  "01x01",
-  "single pin",
-  "single contact",
   "sparkfun",
-  "through hole",
-  "smd",
-  "p2.54mm",
-  "p2.0mm",
-  "6.5mm",
-  "1x1mm smd",
-  "pin header",
-  "conn_01x01",
-  "pth connector",
-  "smd connector",
+  "1x01",
   "pin",
   "conn",
+  "01x01",
   "p2",
   "0mm",
   "hole",
   "header",
+  "smd",
   "1x1mm",
-  "54mm"
+  "54mm",
+  "pth",
+  "5mm",
+  "large"
  ],
  "facts": {
   "package_family": "1x01",
@@ -68,7 +58,7 @@
    "A": 1,
    "B": 3
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -110,6 +100,6 @@
   "SparkFun-KiCad-Libraries/SparkFun-Connector/Conn_01x01_P2.0mm",
   "SparkFun-KiCad-Libraries/SparkFun-Connector/Conn_01x01_SMD_1x1mm"
  ],
- "embedding_text": "connector.1x01 | Connector | Single-pin (1x01) connector cluster with 4 SparkFun-sourced parts spanning through-hole (2.54mm, 6.5mm, 2.0mm pitch) and SMD (1x1mm) footprints. | connector 1x01 01x01 single pin single contact sparkfun through hole smd p2.54mm p2.0mm 6.5mm 1x1mm smd pin header conn_01x01 pth connector smd connector pin conn p2 0mm hole header 1x1mm 54mm | 1x01 | ",
+ "embedding_text": "connector.1x01 | Connector | 4 connector parts using 1x01 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | connector sparkfun 1x01 pin conn 01x01 p2 0mm hole header smd 1x1mm 54mm pth 5mm large | 1x01 | ",
  "class": "connector"
 }

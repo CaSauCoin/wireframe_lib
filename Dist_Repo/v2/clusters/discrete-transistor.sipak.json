@@ -6,29 +6,22 @@
   "Discrete",
   "Transistor"
  ],
- "description": "Discrete transistor cluster with through-hole mounting utilizing the SIPAK package family and vertical footprint.",
+ "description": "1 discrete transistor parts using SIPAK footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Use when a through-hole discrete transistor in a SIPAK package family is required.",
-  "Select if board design accommodates the SIPAK_Vertical footprint.",
-  "Verify part specifications and quality tier against design requirements."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SIPAK land pattern is intended."
  ],
  "avoid_when": [
-  "Avoid when surface-mount packaging or land patterns other than SIPAK are required.",
-  "Do not use if required electrical limits or specs are unstated for the part.",
-  "Avoid when planner-visible or higher quality tier parts are required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SIPAK."
  ],
  "keywords": [
   "sipak",
-  "discrete transistor",
-  "through hole",
-  "through_hole",
-  "sipak_vertical",
-  "sipak package",
+  "vertical",
   "discrete",
   "transistor",
-  "vertical footprint",
-  "discrete.transistor",
-  "vertical",
   "rm",
   "286mm",
   "through",
@@ -58,12 +51,12 @@
   "tier_counts": {
    "C": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
   "dist-legacy/SIPAK_Vertical"
  ],
- "embedding_text": "discrete-transistor.sipak | Discrete Transistor | Discrete transistor cluster with through-hole mounting utilizing the SIPAK package family and vertical footprint. | sipak discrete transistor through hole through_hole sipak_vertical sipak package discrete transistor vertical footprint discrete.transistor vertical rm 286mm through hole pad mm pitch pins package | SIPAK | ",
+ "embedding_text": "discrete-transistor.sipak | Discrete Transistor | 1 discrete transistor parts using SIPAK footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | sipak vertical discrete transistor rm 286mm through hole pad mm pitch pins package | SIPAK | ",
  "class": "discrete.transistor"
 }

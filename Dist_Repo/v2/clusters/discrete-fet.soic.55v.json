@@ -6,30 +6,21 @@
   "Discrete",
   "FET"
  ],
- "description": "Discrete FET cluster containing surface-mount 55V components in SOIC package family footprints.",
+ "description": "2 discrete fet parts for 55V using SOIC footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when needing a 55V surface-mount discrete FET.",
-  "Use when designing for a SOIC-8_3.9x4.9mm_P1.27mm footprint.",
-  "Choose when requiring KiCad symbol parts such as IRF7341PBF or IRF7343PBF."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SOIC land pattern is intended."
  ],
  "avoid_when": [
-  "Avoid when requiring non-SMD or through-hole mounting.",
-  "Avoid when layout requires a package family other than SOIC.",
-  "Avoid if the design needs voltage ratings other than 55V."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SOIC."
  ],
  "keywords": [
-  "discrete",
+  "soic",
   "fet",
   "55v",
-  "soic",
-  "smd",
-  "soic-8",
-  "irf7341pbf",
-  "irf7343pbf",
-  "discrete fet",
-  "kicad-symbols",
-  "transistor_fet",
-  "soic-8_3.9x4.9mm_p1.27mm",
   "channel",
   "dual",
   "mosfet",
@@ -40,7 +31,9 @@
   "9x4",
   "9mm",
   "p1",
-  "27mm"
+  "27mm",
+  "discrete",
+  "irf7341pbf"
  ],
  "facts": {
   "package_family": "SOIC",
@@ -63,7 +56,7 @@
   "tier_counts": {
    "A": 2
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -87,6 +80,6 @@
   "kicad-symbols/Transistor_FET/IRF7341PBF",
   "kicad-symbols/Transistor_FET/IRF7343PBF"
  ],
- "embedding_text": "discrete-fet.soic.55v | Discrete FET | Discrete FET cluster containing surface-mount 55V components in SOIC package family footprints. | discrete fet 55v soic smd soic-8 irf7341pbf irf7343pbf discrete fet kicad-symbols transistor_fet soic-8_3.9x4.9mm_p1.27mm channel dual mosfet hexfet so transistor id 9x4 9mm p1 27mm | SOIC | 55V",
+ "embedding_text": "discrete-fet.soic.55v | Discrete FET | 2 discrete fet parts for 55V using SOIC footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | soic fet 55v channel dual mosfet hexfet so transistor id 9x4 9mm p1 27mm discrete irf7341pbf | SOIC | 55V",
  "class": "discrete.fet"
 }

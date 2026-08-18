@@ -6,28 +6,21 @@
   "Passive",
   "Resistor"
  ],
- "description": "Through-hole passive resistor cluster using the RWW4W package family and footprint.",
+ "description": "1 passive resistor parts using RWW4W footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Verify that a through-hole RWW4W footprint is required for the design.",
-  "Check specific electrical ratings, as the cluster contains tier C entries.",
-  "Confirm package and footprint compatibility with chilaboard-altium-library definitions."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a RWW4W land pattern is intended."
  ],
  "avoid_when": [
-  "Surface-mount mounting or packages other than RWW4W are needed.",
-  "The design requires verified tier A or planner-visible parts.",
-  "Footprints other than RWW4W are required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than RWW4W."
  ],
  "keywords": [
+  "rww4w",
   "passive",
   "resistor",
-  "rww4w",
-  "through hole",
-  "through_hole",
-  "passive resistor",
-  "passive.resistor",
-  "rww4w footprint",
-  "chilaboard-altium-library",
-  "tier c",
   "through",
   "hole",
   "pad",
@@ -54,12 +47,12 @@
   "tier_counts": {
    "C": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
   "chilaboard-altium-library/RWW4W/RWW4W"
  ],
- "embedding_text": "passive-resistor.rww4w | Passive Resistor | Through-hole passive resistor cluster using the RWW4W package family and footprint. | passive resistor rww4w through hole through_hole passive resistor passive.resistor rww4w footprint chilaboard-altium-library tier c through hole pad mm pitch pins | RWW4W | ",
+ "embedding_text": "passive-resistor.rww4w | Passive Resistor | 1 passive resistor parts using RWW4W footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | rww4w passive resistor through hole pad mm pitch pins | RWW4W | ",
  "class": "passive.resistor"
 }

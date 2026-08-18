@@ -5,44 +5,34 @@
  "category_path": [
   "Connector"
  ],
- "description": "A 2x03 connector cluster with 3 SparkFun-sourced parts spanning SMD and through-hole mounts, including 2x03_NoSilk, 2x03_P2.00mm_NoSilk, and 2x03_P2.0mm_Header_Vertical_SMD_Pegs footprints.",
+ "description": "3 connector parts using 2x03 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Match the exact footprint variant (NoSilk, P2.00mm_NoSilk, or Vertical_SMD_Pegs) to your PCB land pattern",
-  "Confirm SMD vs through-hole mount matches your assembly process",
-  "AVR_ISP_PTH (tier B, score 100, 2x03_NoSilk) is the only planner-visible part in this cluster",
-  "Review parts are auto-generated; verify pinout and footprint pairing before use"
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a 2x03 land pattern is intended."
  ],
  "avoid_when": [
-  "The board requires a package other than 2x03",
-  "The mount type (SMD or through-hole) does not match your assembly capability",
-  "You need a footprint variant not listed among 2x03_NoSilk, 2x03_P2.00mm_NoSilk, or 2x03_P2.0mm_Header_Vertical_SMD_Pegs",
-  "Tier A verified parts are required and only tier B/C entries are available here"
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than 2x03."
  ],
  "keywords": [
   "connector",
   "2x03",
-  "02x03",
   "sparkfun",
-  "header",
-  "pin header",
-  "smd",
-  "through hole",
-  "p2.00mm",
-  "p2.0mm",
-  "nosilk",
-  "vertical header",
-  "smd pegs",
-  "avr isp",
-  "isp connector",
-  "6 pin connector",
-  "conn header",
-  "pth connector",
   "p2",
   "0mm",
+  "header",
   "pin",
+  "smd",
   "conn",
+  "02x03",
   "00mm",
-  "vertical"
+  "vertical",
+  "pegs",
+  "nosilk",
+  "through",
+  "hole"
  ],
  "facts": {
   "package_family": "2x03",
@@ -67,7 +57,7 @@
    "B": 1,
    "C": 2
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -84,6 +74,6 @@
   "SparkFun-KiCad-Libraries/SparkFun-Connector/Conn_02x03_P2.0mm",
   "SparkFun-KiCad-Libraries/SparkFun-Connector/Conn_02x03_P2.0mm_Header_Vertical_SMD_Pegs"
  ],
- "embedding_text": "connector.2x03 | Connector | A 2x03 connector cluster with 3 SparkFun-sourced parts spanning SMD and through-hole mounts, including 2x03_NoSilk, 2x03_P2.00mm_NoSilk, and 2x03_P2.0mm_Header_Vertical_SMD_Pegs footprints. | connector 2x03 02x03 sparkfun header pin header smd through hole p2.00mm p2.0mm nosilk vertical header smd pegs avr isp isp connector 6 pin connector conn header pth connector p2 0mm pin conn 00mm vertical | 2x03 | ",
+ "embedding_text": "connector.2x03 | Connector | 3 connector parts using 2x03 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | connector 2x03 sparkfun p2 0mm header pin smd conn 02x03 00mm vertical pegs nosilk through hole | 2x03 | ",
  "class": "connector"
 }

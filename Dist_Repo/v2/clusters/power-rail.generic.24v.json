@@ -6,35 +6,26 @@
   "Power",
   "Power Rail"
  ],
- "description": "Generic 24V power rail schematic symbols for positive (+24V) and negative (-24V) rails with unassigned footprints.",
+ "description": "2 power power rail parts for 24V with package chosen later. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select between positive (+24V) and negative (-24V) power rail symbols.",
-  "Verify polarity and net connectivity requirements in the schematic.",
-  "Assign a footprint or connector separately if board layout placement is required."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Select a footprint/package explicitly before placement."
  ],
  "avoid_when": [
-  "A rail voltage other than positive or negative 24V is required.",
-  "A physical discrete component or regulator with a fixed footprint is needed."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review."
  ],
  "keywords": [
-  "power rail",
-  "24v",
-  "+24v",
-  "-24v",
   "power",
-  "rail",
-  "power symbol",
-  "schematic symbol",
-  "kicad-symbols",
-  "positive 24v",
-  "negative 24v",
-  "generic",
+  "24v",
   "global",
   "symbol",
   "creates",
   "label",
   "with",
   "name",
+  "rail",
   "package",
   "chosen",
   "later"
@@ -56,7 +47,7 @@
   "tier_counts": {
    "G": 2
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -80,6 +71,6 @@
   "kicad-symbols/power/+24V",
   "kicad-symbols/power/-24V"
  ],
- "embedding_text": "power-rail.generic.24v | Power Power Rail | Generic 24V power rail schematic symbols for positive (+24V) and negative (-24V) rails with unassigned footprints. | power rail 24v +24v -24v power rail power symbol schematic symbol kicad-symbols positive 24v negative 24v generic global symbol creates label with name package chosen later | package chosen later | 24V",
+ "embedding_text": "power-rail.generic.24v | Power Power Rail | 2 power power rail parts for 24V with package chosen later. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | power 24v global symbol creates label with name rail package chosen later | package chosen later | 24V",
  "class": "power.rail"
 }

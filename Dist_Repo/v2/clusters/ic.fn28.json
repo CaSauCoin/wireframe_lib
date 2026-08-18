@@ -5,28 +5,20 @@
  "category_path": [
   "IC"
  ],
- "description": "IC cluster containing 3 quality tier C parts within the FN28 package family using FN28_L, FN28_M, or FN28_N footprints.",
+ "description": "3 ic parts using FN28 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Verify compatibility with FN28_L, FN28_M, or FN28_N footprint variants.",
-  "Confirm electrical ratings and pin definitions as all parts are quality tier C.",
-  "Check mounting requirements since mount type is classified as unknown."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a FN28 land pattern is intended."
  ],
  "avoid_when": [
-  "The PCB layout requires a package family other than FN28.",
-  "Footprint variants outside FN28_L, FN28_M, or FN28_N are needed.",
-  "Tier C parts with unknown mount specifications do not meet design rules."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than FN28."
  ],
  "keywords": [
-  "ic",
   "fn28",
-  "fn28_l",
-  "fn28_m",
-  "fn28_n",
-  "package family fn28",
-  "tier c",
-  "dist-legacy",
-  "ic fn28",
-  "fn28 footprint",
+  "ic",
   "pad",
   "mm",
   "pitch",
@@ -53,7 +45,7 @@
   "tier_counts": {
    "C": 3
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
@@ -61,6 +53,6 @@
   "dist-legacy/FN28_M",
   "dist-legacy/FN28_N"
  ],
- "embedding_text": "ic.fn28 | IC | IC cluster containing 3 quality tier C parts within the FN28 package family using FN28_L, FN28_M, or FN28_N footprints. | ic fn28 fn28_l fn28_m fn28_n package family fn28 tier c dist-legacy ic fn28 fn28 footprint pad mm pitch pins | FN28 | ",
+ "embedding_text": "ic.fn28 | IC | 3 ic parts using FN28 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | fn28 ic pad mm pitch pins | FN28 | ",
  "class": "ic"
 }

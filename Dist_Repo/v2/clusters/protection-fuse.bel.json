@@ -6,28 +6,22 @@
   "Protection",
   "Fuse"
  ],
- "description": "Protection fuse cluster containing 2 parts associated with BEL footprints from legacy distributor catalog sources.",
+ "description": "2 protection fuse parts using BEL footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select higher tier parts like Tier B BEL_FUSE_C1F when available.",
-  "Verify mounting type and electrical ratings against the specific part definition.",
-  "Confirm compatibility with BEL or Bel footprint requirements."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a BEL land pattern is intended."
  ],
  "avoid_when": [
-  "A package family or footprint other than BEL is required.",
-  "Unverified mounting specifications cannot be tolerated.",
-  "Only Tier A or fully reviewed parts are accepted."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than BEL."
  ],
  "keywords": [
   "bel",
   "fuse",
   "protection",
-  "protection fuse",
-  "protection.fuse",
   "c1f",
-  "bel_fuse_c1f",
-  "dist-legacy",
-  "bel footprint",
-  "bel package",
   "1x1t",
   "circuit",
   "two",
@@ -62,7 +56,7 @@
    "B": 1,
    "C": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -78,6 +72,6 @@
   "dist-legacy/BEL FUSE C1F",
   "dist-legacy/Bel Fuse - 0826-1X1T-32-F"
  ],
- "embedding_text": "protection-fuse.bel | Protection Fuse | Protection fuse cluster containing 2 parts associated with BEL footprints from legacy distributor catalog sources. | bel fuse protection protection fuse protection.fuse c1f bel_fuse_c1f dist-legacy bel footprint bel package 1x1t circuit two terminal surface mount for overcurrent pad mm pitch pins | BEL | ",
+ "embedding_text": "protection-fuse.bel | Protection Fuse | 2 protection fuse parts using BEL footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | bel fuse protection c1f 1x1t circuit two terminal surface mount for overcurrent pad mm pitch pins | BEL | ",
  "class": "protection.fuse"
 }

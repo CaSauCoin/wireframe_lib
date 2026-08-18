@@ -6,30 +6,21 @@
   "IC",
   "Interface"
  ],
- "description": "Cluster of 4 surface-mount SPI interface ICs using TSSOP-28-1EP footprints from KiCad symbols.",
+ "description": "4 ic interface parts for SPI using TSSOP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Selecting surface-mount SPI interface ICs with TSSOP-28-1EP footprints.",
-  "Choosing among MAX31910xUI, MAX31911xUI, MAX31912xUI, or MAX31913xUI parts.",
-  "Designing with tier B components sourced from KiCad symbols."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a TSSOP land pattern is intended."
  ],
  "avoid_when": [
-  "Through-hole mounting or non-SMD mounting is required.",
-  "An interface protocol other than SPI is needed.",
-  "Packages or footprints other than TSSOP-28-1EP are required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than TSSOP."
  ],
  "keywords": [
-  "ic",
+  "tssop",
   "interface",
   "spi",
-  "tssop",
-  "smd",
-  "tssop-28-1ep",
-  "max31910xui",
-  "max31911xui",
-  "max31912xui",
-  "max31913xui",
-  "kicad-symbols",
-  "interface_expansion",
   "digital",
   "input",
   "serializer",
@@ -41,7 +32,8 @@
   "1ep",
   "4x9",
   "p0",
-  "65mm"
+  "65mm",
+  "ep2"
  ],
  "facts": {
   "package_family": "TSSOP",
@@ -64,7 +56,7 @@
   "tier_counts": {
    "B": 4
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -106,6 +98,6 @@
   "kicad-symbols/Interface_Expansion/MAX31912xUI",
   "kicad-symbols/Interface_Expansion/MAX31913xUI"
  ],
- "embedding_text": "ic-interface.tssop.spi | IC Interface | Cluster of 4 surface-mount SPI interface ICs using TSSOP-28-1EP footprints from KiCad symbols. | ic interface spi tssop smd tssop-28-1ep max31910xui max31911xui max31912xui max31913xui kicad-symbols interface_expansion digital input serializer 7mm expansion industrial octal translator 1ep 4x9 p0 65mm | TSSOP | SPI",
+ "embedding_text": "ic-interface.tssop.spi | IC Interface | 4 ic interface parts for SPI using TSSOP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | tssop interface spi digital input serializer 7mm expansion industrial octal translator 1ep 4x9 p0 65mm ep2 | TSSOP | SPI",
  "class": "ic.interface"
 }

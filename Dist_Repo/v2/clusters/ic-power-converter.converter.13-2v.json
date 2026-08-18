@@ -7,42 +7,34 @@
   "Power",
   "Converter"
  ],
- "description": "This cluster contains 44 tier B 13.2V IC power converters in SMD and through-hole Converter footprint options.",
+ "description": "44 ic power converter parts for 13.2V using Converter footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when needing a 13.2V IC power converter available in SMD or through-hole mounting.",
-  "Match the design to specific single or dual TRACO DCDC converter footprints.",
-  "Verify part selection against KiCad symbol models and tier B quality ratings."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a Converter land pattern is intended."
  ],
  "avoid_when": [
-  "Avoid when operating voltages other than 13.2V are required.",
-  "Do not use if the layout cannot accommodate Converter family SMD or THT footprints.",
-  "Avoid if parts requiring tier A validation or alternative package types are needed."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than Converter."
  ],
  "keywords": [
-  "ic",
-  "power converter",
-  "13.2v",
   "converter",
-  "smd",
-  "through hole",
-  "tht",
+  "dc",
   "dcdc",
   "traco",
-  "single",
-  "dual",
-  "tba1",
-  "tes1",
-  "tme",
-  "trn3",
-  "tdu1",
-  "dc",
   "2v",
   "output",
   "regulated",
+  "tht",
   "sip",
   "1w",
+  "single",
   "input",
-  "voltage"
+  "voltage",
+  "isolation",
+  "isolated",
+  "ic"
  ],
  "facts": {
   "package_family": "Converter",
@@ -77,7 +69,7 @@
   "tier_counts": {
    "B": 44
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -167,6 +159,6 @@
   "kicad-symbols/Converter_DCDC/TRI1-1212SM",
   "kicad-symbols/Converter_DCDC/TRI1-1213SM"
  ],
- "embedding_text": "ic-power-converter.converter.13-2v | IC Power Converter | This cluster contains 44 tier B 13.2V IC power converters in SMD and through-hole Converter footprint options. | ic power converter 13.2v converter smd through hole tht dcdc traco single dual tba1 tes1 tme trn3 tdu1 dc 2v output regulated sip 1w input voltage | Converter | 13.2V",
+ "embedding_text": "ic-power-converter.converter.13-2v | IC Power Converter | 44 ic power converter parts for 13.2V using Converter footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | converter dc dcdc traco 2v output regulated tht sip 1w single input voltage isolation isolated ic | Converter | 13.2V",
  "class": "ic.power.converter"
 }

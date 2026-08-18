@@ -5,42 +5,29 @@
  "category_path": [
   "IC"
  ],
- "description": "IC cluster containing 24 parts in the PH package family with surface-mount and through-hole footprint variants from PH_5 to PH_16.",
+ "description": "24 ic parts using PH footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when requiring IC components in the PH package family.",
-  "Choose between surface-mount and through-hole mounting styles.",
-  "Match layout requirements against PH_5 through PH_16 footprints."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a PH land pattern is intended."
  ],
  "avoid_when": [
-  "The layout requires a package family other than PH.",
-  "Target footprints fall outside the PH_5 through PH_16 range.",
-  "The design cannot use surface-mount or through-hole mounting."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than PH."
  ],
  "keywords": [
-  "ic",
   "ph",
-  "ph package",
   "smd",
-  "surface mount",
-  "through hole",
-  "ph_5",
-  "ph_6",
-  "ph_7",
-  "ph_8",
-  "ph_9",
-  "ph_10",
-  "ph_11",
-  "ph_12",
-  "ph_13",
-  "ph_14",
-  "ph_15",
-  "ph_16",
+  "ic",
   "pad",
   "mm",
   "pitch",
   "pins",
   "through",
-  "hole"
+  "hole",
+  "surface",
+  "mount"
  ],
  "facts": {
   "package_family": "PH",
@@ -73,7 +60,7 @@
   "tier_counts": {
    "C": 24
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
@@ -102,6 +89,6 @@
   "chilaboard-altium-library/PH_R_SMD_8/PH_R_SMD_8",
   "chilaboard-altium-library/PH_R_SMD_9/PH_R_SMD_9"
  ],
- "embedding_text": "ic.ph | IC | IC cluster containing 24 parts in the PH package family with surface-mount and through-hole footprint variants from PH_5 to PH_16. | ic ph ph package smd surface mount through hole ph_5 ph_6 ph_7 ph_8 ph_9 ph_10 ph_11 ph_12 ph_13 ph_14 ph_15 ph_16 pad mm pitch pins through hole | PH | ",
+ "embedding_text": "ic.ph | IC | 24 ic parts using PH footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | ph smd ic pad mm pitch pins through hole surface mount | PH | ",
  "class": "ic"
 }

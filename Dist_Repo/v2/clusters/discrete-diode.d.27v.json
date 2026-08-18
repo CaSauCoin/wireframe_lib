@@ -6,44 +6,34 @@
   "Discrete",
   "Diode"
  ],
- "description": "Cluster of 117 discrete 27V diodes (zener and TVS types) in D-family footprints (SMA, SMB, SMC, MELF, SOD-123/323/523, DO-35, DO-41), covering SMD and through-hole mounts.",
+ "description": "117 discrete diode parts for 27V using D footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Match the exact D-family footprint needed (SMA, SMB, SMC, MELF, SOD-123/323/523, DO-35, DO-41).",
-  "Prefer tier A entries (111 of 117 parts, mostly score 100) over tier B.",
-  "Confirm whether a zener or TVS diode variant is required before choosing between similarly named parts.",
-  "Verify SMD vs through-hole mount matches the intended assembly process."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a D land pattern is intended."
  ],
  "avoid_when": [
-  "The required land pattern is not one of the listed D-family footprints.",
-  "The distinction between zener and TVS diode function is required but unconfirmed from the part name.",
-  "Only tier B or lower-confidence entries match the needed footprint.",
-  "A non-D package family is needed for the board layout."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than D."
  ],
  "keywords": [
   "diode",
   "zener",
-  "tvs",
   "27v",
   "discrete",
-  "d package",
-  "smd",
-  "through hole",
-  "sma",
-  "smb",
-  "smc",
-  "melf",
-  "sod-123",
-  "sod-323",
-  "sod-523",
-  "do-35",
-  "do-41",
-  "kicad",
   "akl",
   "alternate",
+  "kicad",
   "library",
+  "tvs",
   "do",
   "sod",
-  "horizontal"
+  "horizontal",
+  "smb",
+  "unidirectional",
+  "sma",
+  "series"
  ],
  "facts": {
   "package_family": "D",
@@ -80,7 +70,7 @@
    "A": 111,
    "B": 6
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -243,6 +233,6 @@
   "Alternate-KiCad-Library/Diode_Zener_AKL/BZX884-C27",
   "Alternate-KiCad-Library/Diode_TVS_AKL/TPSMP27A"
  ],
- "embedding_text": "discrete-diode.d.27v | Discrete Diode | Cluster of 117 discrete 27V diodes (zener and TVS types) in D-family footprints (SMA, SMB, SMC, MELF, SOD-123/323/523, DO-35, DO-41), covering SMD and through-hole mounts. | diode zener tvs 27v discrete d package smd through hole sma smb smc melf sod-123 sod-323 sod-523 do-35 do-41 kicad akl alternate library do sod horizontal | D | 27V",
+ "embedding_text": "discrete-diode.d.27v | Discrete Diode | 117 discrete diode parts for 27V using D footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | diode zener 27v discrete akl alternate kicad library tvs do sod horizontal smb unidirectional sma series | D | 27V",
  "class": "discrete.diode"
 }

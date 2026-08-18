@@ -5,28 +5,20 @@
  "category_path": [
   "IC"
  ],
- "description": "Integrated circuit component cluster containing a single tier C part using the TSH package family and TSH-3675 footprint.",
+ "description": "1 ic parts using TSH footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when designing for an IC utilizing the TSH package family or TSH-3675 footprint.",
-  "Verify footprint compatibility as mount type is listed as unknown.",
-  "Check suitability for tier C quality classification from dist-legacy source."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a TSH land pattern is intended."
  ],
  "avoid_when": [
-  "Avoid when the board layout requires a package family other than TSH.",
-  "Avoid if tier C quality status does not meet design requirements.",
-  "Avoid when verified mounting specifications are required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than TSH."
  ],
  "keywords": [
-  "ic",
   "tsh",
-  "tsh-3675",
-  "integrated circuit",
-  "tsh package",
-  "tsh footprint",
-  "tier c",
-  "dist-legacy",
-  "ic tsh",
-  "tsh land pattern",
+  "ic",
   "pad",
   "mm",
   "pitch",
@@ -51,12 +43,12 @@
   "tier_counts": {
    "C": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
   "dist-legacy/TSH-3675"
  ],
- "embedding_text": "ic.tsh | IC | Integrated circuit component cluster containing a single tier C part using the TSH package family and TSH-3675 footprint. | ic tsh tsh-3675 integrated circuit tsh package tsh footprint tier c dist-legacy ic tsh tsh land pattern pad mm pitch pins | TSH | ",
+ "embedding_text": "ic.tsh | IC | 1 ic parts using TSH footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | tsh ic pad mm pitch pins | TSH | ",
  "class": "ic"
 }

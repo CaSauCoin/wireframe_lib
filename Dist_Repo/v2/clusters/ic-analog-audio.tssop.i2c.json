@@ -7,33 +7,25 @@
   "Analog",
   "Audio"
  ],
- "description": "Analog audio IC cluster for I2C-controlled surface-mount devices in TSSOP packages such as TSSOP-28-1EP.",
+ "description": "1 ic analog audio parts for I2C using TSSOP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Designing for analog audio IC applications requiring an I2C control interface.",
-  "Using surface-mount TSSOP footprints such as TSSOP-28-1EP with thermal vias.",
-  "Selecting tier B parts like TAS5805MPWP from KiCad symbol libraries."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a TSSOP land pattern is intended."
  ],
  "avoid_when": [
-  "The design requires non-TSSOP package types or through-hole mounting.",
-  "An audio IC without an I2C control interface is required.",
-  "The layout cannot accommodate the TSSOP-28-1EP thermal pad footprint."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than TSSOP."
  ],
  "keywords": [
-  "ic",
-  "analog",
   "audio",
-  "analog audio",
   "tssop",
-  "i2c",
-  "smd",
-  "tas5805mpwp",
-  "tssop-28-1ep",
-  "amplifier_audio",
-  "kicad-symbols",
-  "tssop-28",
   "amplifier",
   "4x9",
   "7mm",
+  "i2c",
+  "tas5805mpwp",
   "23w",
   "stereo",
   "inductor",
@@ -65,7 +57,7 @@
   "tier_counts": {
    "B": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -80,6 +72,6 @@
  "part_ids": [
   "kicad-symbols/Amplifier_Audio/TAS5805MPWP"
  ],
- "embedding_text": "ic-analog-audio.tssop.i2c | IC Analog Audio | Analog audio IC cluster for I2C-controlled surface-mount devices in TSSOP packages such as TSSOP-28-1EP. | ic analog audio analog audio tssop i2c smd tas5805mpwp tssop-28-1ep amplifier_audio kicad-symbols tssop-28 amplifier 4x9 7mm 23w stereo inductor less digital input closed loop class | TSSOP | I2C",
+ "embedding_text": "ic-analog-audio.tssop.i2c | IC Analog Audio | 1 ic analog audio parts for I2C using TSSOP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | audio tssop amplifier 4x9 7mm i2c tas5805mpwp 23w stereo inductor less digital input closed loop class | TSSOP | I2C",
  "class": "ic.analog.audio"
 }

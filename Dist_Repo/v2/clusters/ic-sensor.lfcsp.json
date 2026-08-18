@@ -6,31 +6,23 @@
   "IC",
   "Sensor"
  ],
- "description": "Surface-mount IC sensor cluster containing components in LFCSP package footprints such as LFCSP-28-1EP_5x5mm_P0.5mm_EP3.14x3.14mm.",
+ "description": "1 ic sensor parts using LFCSP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when an SMD IC sensor component in an LFCSP package is needed.",
-  "Confirm footprint matching for LFCSP-28-1EP_5x5mm_P0.5mm_EP3.14x3.14mm.",
-  "Check part specifications and pin mapping for ADE7953xCP or similar tier B entries."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a LFCSP land pattern is intended."
  ],
  "avoid_when": [
-  "Designs requiring through-hole mounting instead of SMD.",
-  "Designs requiring package types other than LFCSP.",
-  "Layouts that do not match the 28-pin LFCSP footprint specification."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than LFCSP."
  ],
  "keywords": [
-  "ic",
-  "sensor",
-  "ic sensor",
   "lfcsp",
-  "smd",
-  "lfcsp-28",
-  "5x5mm",
-  "0.5mm pitch",
-  "ade7953xcp",
-  "kicad-symbols",
-  "lfcsp-28-1ep",
+  "sensor",
   "energy",
   "metering",
+  "ade7953xcp",
   "single",
   "phase",
   "multifunction",
@@ -39,6 +31,7 @@
   "current",
   "measurement",
   "1ep",
+  "5x5mm",
   "p0",
   "5mm"
  ],
@@ -61,7 +54,7 @@
   "tier_counts": {
    "B": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -76,6 +69,6 @@
  "part_ids": [
   "kicad-symbols/Sensor/ADE7953xCP"
  ],
- "embedding_text": "ic-sensor.lfcsp | IC Sensor | Surface-mount IC sensor cluster containing components in LFCSP package footprints such as LFCSP-28-1EP_5x5mm_P0.5mm_EP3.14x3.14mm. | ic sensor ic sensor lfcsp smd lfcsp-28 5x5mm 0.5mm pitch ade7953xcp kicad-symbols lfcsp-28-1ep energy metering single phase multifunction with neutral current measurement 1ep p0 5mm | LFCSP | ",
+ "embedding_text": "ic-sensor.lfcsp | IC Sensor | 1 ic sensor parts using LFCSP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | lfcsp sensor energy metering ade7953xcp single phase multifunction with neutral current measurement 1ep 5x5mm p0 5mm | LFCSP | ",
  "class": "ic.sensor"
 }

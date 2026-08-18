@@ -6,33 +6,21 @@
   "Passive",
   "Capacitor"
  ],
- "description": "Generic passive capacitor cluster containing 175 tier G symbols such as trimmers, variable capacitors, feedthroughs, and EMI filters with package selection deferred.",
+ "description": "175 passive capacitor parts with package chosen later. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when generic capacitor symbols such as trimmers, variable capacitors, feedthroughs, or EMI filters are needed.",
-  "Assign and verify footprint and package details separately since packaging is deferred.",
-  "Review the library source and part symbol score when choosing between generic entries."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Select a footprint/package explicitly before placement."
  ],
  "avoid_when": [
-  "A fully specified component with a predefined footprint or package is required upfront.",
-  "Higher tier ratings than tier G are required for design rule verification.",
-  "Specific manufacturer part numbers or predefined mounting geometries must be present in the symbol."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review."
  ],
  "keywords": [
-  "passive",
-  "capacitor",
-  "passive capacitor",
-  "generic capacitor",
-  "package chosen later",
-  "c_trim",
-  "c_variable",
-  "c_feedthrough",
-  "c_trim_differential",
-  "filter_emi_c",
-  "trimmer",
-  "feedthrough",
-  "emi filter",
   "cap",
   "smd",
+  "capacitor",
+  "passive",
   "mlcc",
   "package",
   "chosen",
@@ -41,7 +29,10 @@
   "thd",
   "el",
   "flm",
-  "50v"
+  "50v",
+  "tan",
+  "trimmer",
+  "400v"
  ],
  "facts": {
   "package_family": "package chosen later",
@@ -64,7 +55,7 @@
   "tier_counts": {
    "G": 175
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -285,6 +276,6 @@
   "Seeed-OPL-Kicad-Library/OPL_Capacitor/DIP-ALUMINUM-47UF-16V_D5-H7MM_",
   "celestial-altium-library/VARIABLE CAPACITOR/VARIABLE_CAPACITOR"
  ],
- "embedding_text": "passive-capacitor.generic | Passive Capacitor | Generic passive capacitor cluster containing 175 tier G symbols such as trimmers, variable capacitors, feedthroughs, and EMI filters with package selection deferred. | passive capacitor passive capacitor generic capacitor package chosen later c_trim c_variable c_feedthrough c_trim_differential filter_emi_c trimmer feedthrough emi filter cap smd mlcc package chosen later pins thd el flm 50v | package chosen later | ",
+ "embedding_text": "passive-capacitor.generic | Passive Capacitor | 175 passive capacitor parts with package chosen later. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | cap smd capacitor passive mlcc package chosen later pins thd el flm 50v tan trimmer 400v | package chosen later | ",
  "class": "passive.capacitor"
 }

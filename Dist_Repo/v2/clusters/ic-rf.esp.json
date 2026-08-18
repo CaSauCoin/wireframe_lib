@@ -6,34 +6,25 @@
   "IC",
   "RF"
  ],
- "description": "Cluster of 3 RF IC surface-mount parts using ESP footprints including ESP-12E and ESP-07.",
+ "description": "3 ic rf parts using ESP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Verify footprint compatibility with ESP-12E or ESP-07 land patterns.",
-  "Prefer tier A parts when selecting from KiCad symbol sources.",
-  "Confirm SMD mounting requirements for the targeted board layout."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a ESP land pattern is intended."
  ],
  "avoid_when": [
-  "The layout requires non-SMD mounting.",
-  "The application requires footprints other than ESP-12E or ESP-07.",
-  "Unstated electrical limits or pinout details must be verified independently."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than ESP."
  ],
  "keywords": [
-  "ic",
-  "rf",
-  "ic rf",
   "esp",
-  "esp-12e",
-  "esp-07",
-  "esp-12f",
-  "smd",
-  "rf module",
-  "kicad-symbols",
-  "package esp",
-  "rf ic",
   "module",
   "wi",
   "fi",
+  "rf",
   "12e",
+  "ic",
   "12f"
  ],
  "facts": {
@@ -57,7 +48,7 @@
    "A": 1,
    "C": 2
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -74,6 +65,6 @@
   "kicad-symbols/RF_Module/ESP-12E",
   "kicad-symbols/RF_Module/ESP-07"
  ],
- "embedding_text": "ic-rf.esp | IC RF | Cluster of 3 RF IC surface-mount parts using ESP footprints including ESP-12E and ESP-07. | ic rf ic rf esp esp-12e esp-07 esp-12f smd rf module kicad-symbols package esp rf ic module wi fi 12e 12f | ESP | ",
+ "embedding_text": "ic-rf.esp | IC RF | 3 ic rf parts using ESP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | esp module wi fi rf 12e ic 12f | ESP | ",
  "class": "ic.rf"
 }

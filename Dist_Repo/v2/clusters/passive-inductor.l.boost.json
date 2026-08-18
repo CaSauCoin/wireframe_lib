@@ -6,32 +6,25 @@
   "Passive",
   "Inductor"
  ],
- "description": "Surface-mount passive boost inductors in package family L compatible with Coilcraft LPS5030 and Wuerth WE-TPC-3816 footprints.",
+ "description": "2 passive inductor parts for boost using L footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Match specific footprint requirements for L_Coilcraft_LPS5030 or L_Wuerth_WE-TPC-3816.",
-  "Verify electrical ratings and application requirements for boost circuits.",
-  "Account for tier C quality status and legacy distributor source data."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a L land pattern is intended."
  ],
  "avoid_when": [
-  "The design requires through-hole mounting or a package family other than L.",
-  "Footprints other than Coilcraft LPS5030 or Wuerth WE-TPC-3816 are needed.",
-  "Unverified generated metadata or tier C quality components are unacceptable."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than L."
  ],
  "keywords": [
-  "passive",
-  "inductor",
-  "boost",
-  "smd",
-  "surface mount",
-  "package family l",
   "coilcraft",
   "lps5030",
+  "inductor",
   "wuerth",
-  "we-tpc-3816",
-  "tier c",
-  "dist-legacy",
   "we",
   "tpc",
+  "passive",
   "surface",
   "mount",
   "pad",
@@ -39,6 +32,7 @@
   "pitch",
   "pins",
   "package",
+  "smd",
   "pdf"
  ],
  "facts": {
@@ -63,13 +57,13 @@
   "tier_counts": {
    "C": 2
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
   "dist-legacy/L_Coilcraft_LPS5030",
   "dist-legacy/L_Wuerth_WE-TPC-3816"
  ],
- "embedding_text": "passive-inductor.l.boost | Passive Inductor | Surface-mount passive boost inductors in package family L compatible with Coilcraft LPS5030 and Wuerth WE-TPC-3816 footprints. | passive inductor boost smd surface mount package family l coilcraft lps5030 wuerth we-tpc-3816 tier c dist-legacy we tpc surface mount pad mm pitch pins package pdf | L | boost",
+ "embedding_text": "passive-inductor.l.boost | Passive Inductor | 2 passive inductor parts for boost using L footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | coilcraft lps5030 inductor wuerth we tpc passive surface mount pad mm pitch pins package smd pdf | L | boost",
  "class": "passive.inductor"
 }

@@ -6,36 +6,29 @@
   "IC",
   "Sensor"
  ],
- "description": "Surface-mount I2C temperature sensor ICs in SOT-563 packages from the KiCad symbol library.",
+ "description": "2 ic sensor parts for I2C using SOT footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when needing an I2C digital temperature sensor IC.",
-  "Use for designs specifying an SMD SOT-563 package footprint.",
-  "Choosing tier A representative parts such as TMP102xxDRL or TMP112xxDRL."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SOT land pattern is intended."
  ],
  "avoid_when": [
-  "A non-SOT or through-hole footprint is required.",
-  "An interface standard other than I2C is needed.",
-  "Non-temperature sensing components are required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SOT."
  ],
  "keywords": [
-  "ic",
-  "sensor",
-  "ic sensor",
-  "temperature sensor",
-  "i2c",
   "sot",
-  "sot-563",
-  "smd",
-  "tmp102xxdrl",
-  "tmp112xxdrl",
-  "kicad",
+  "sensor",
   "temperature",
+  "i2c",
   "digital",
   "smbus",
   "two",
   "wire",
   "interface",
   "to",
+  "smd",
   "jedec",
   "mo",
   "uaad",
@@ -63,7 +56,7 @@
   "tier_counts": {
    "A": 2
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -87,6 +80,6 @@
   "kicad-symbols/Sensor_Temperature/TMP102xxDRL",
   "kicad-symbols/Sensor_Temperature/TMP112xxDRL"
  ],
- "embedding_text": "ic-sensor.sot.i2c | IC Sensor | Surface-mount I2C temperature sensor ICs in SOT-563 packages from the KiCad symbol library. | ic sensor ic sensor temperature sensor i2c sot sot-563 smd tmp102xxdrl tmp112xxdrl kicad temperature digital smbus two wire interface to jedec mo uaad texas drl | SOT | I2C",
+ "embedding_text": "ic-sensor.sot.i2c | IC Sensor | 2 ic sensor parts for I2C using SOT footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | sot sensor temperature i2c digital smbus two wire interface to smd jedec mo uaad texas drl | SOT | I2C",
  "class": "ic.sensor"
 }

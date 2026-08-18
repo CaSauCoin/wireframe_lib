@@ -5,32 +5,21 @@
  "category_path": [
   "IC"
  ],
- "description": "A collection of 27 IC parts in the PCIE package family featuring SMD and through-hole mounting options across edge and slot footprints.",
+ "description": "27 ic parts using PCIE footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Match the required PCIe edge or slot footprint configuration, such as x1, x4, x8, x16, or mini slot.",
-  "Select between surface-mount (smd) and through-hole mounting options.",
-  "Prefer Tier B parts over Tier C entries when available in this cluster."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a PCIE land pattern is intended."
  ],
  "avoid_when": [
-  "The layout requires a non-PCIe package family or footprint.",
-  "Neither SMD nor through-hole PCIe footprint options fit the design."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than PCIE."
  ],
  "keywords": [
   "pcie",
-  "ic",
-  "smd",
-  "through_hole",
-  "pcie_x16_edge_lck",
-  "pcie_x8_edge",
-  "pcie_x1_edge",
-  "pcie_x4_edge",
-  "pcie_slot_mini",
-  "chilaboard-altium-library",
-  "pcie-064",
-  "pcie-164",
-  "ra",
-  "th",
   "edge",
+  "ic",
   "pins",
   "pad",
   "mm",
@@ -38,8 +27,12 @@
   "card",
   "x16",
   "ems2",
+  "ra",
+  "th",
   "x1",
-  "slot"
+  "slot",
+  "connector",
+  "surface"
  ],
  "facts": {
   "package_family": "PCIE",
@@ -73,7 +66,7 @@
    "B": 2,
    "C": 25
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -122,6 +115,6 @@
   "chilaboard-altium-library/PCIE-164-02-X-D-TH/PCIE-164-02-X-D-TH",
   "chilaboard-altium-library/PCIE_SLOT_MINI_L/PCIE_SLOT_MINI_L"
  ],
- "embedding_text": "ic.pcie | IC | A collection of 27 IC parts in the PCIE package family featuring SMD and through-hole mounting options across edge and slot footprints. | pcie ic smd through_hole pcie_x16_edge_lck pcie_x8_edge pcie_x1_edge pcie_x4_edge pcie_slot_mini chilaboard-altium-library pcie-064 pcie-164 ra th edge pins pad mm pitch card x16 ems2 x1 slot | PCIE | ",
+ "embedding_text": "ic.pcie | IC | 27 ic parts using PCIE footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | pcie edge ic pins pad mm pitch card x16 ems2 ra th x1 slot connector surface | PCIE | ",
  "class": "ic"
 }

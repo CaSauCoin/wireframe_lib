@@ -5,31 +5,22 @@
  "category_path": [
   "IC"
  ],
- "description": "IC component cluster featuring surface-mount (SMD) parts utilizing Sensirion package footprints including STS-30-DIS, STS21, and DFN-4 variants.",
+ "description": "4 ic parts using SENSIRION footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select for surface-mount (SMD) IC designs requiring Sensirion footprints such as STS-30-DIS, STS21, or DFN-4.",
-  "Check land pattern details like DFN-4 1.5x1.5mm or 2x2mm options against layout requirements.",
-  "Verify part source availability from celestial-altium-library or dist-legacy."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SENSIRION land pattern is intended."
  ],
  "avoid_when": [
-  "Avoid when the PCB assembly requires through-hole components instead of SMD.",
-  "Avoid if board layout requires footprints outside the Sensirion package family.",
-  "Avoid if parts with planner visibility or higher quality tiers than tier C are required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SENSIRION."
  ],
  "keywords": [
   "sensirion",
-  "ic",
-  "smd",
-  "sts-30-dis",
-  "sts21",
-  "dfn-4",
-  "sht4x",
-  "surface mount",
-  "sensirion dfn",
-  "celestial-altium-library",
-  "dist-legacy",
-  "package family sensirion",
   "dfn",
+  "ic",
+  "sht4x",
   "sts",
   "dis",
   "5x1",
@@ -37,6 +28,7 @@
   "p0",
   "8mm",
   "nocentralpad",
+  "sts21",
   "1ep",
   "2x2mm",
   "p1mm",
@@ -65,7 +57,7 @@
   "tier_counts": {
    "C": 4
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
@@ -74,6 +66,6 @@
   "celestial-altium-library/SENSIRION STS21/SENSIRION STS21",
   "dist-legacy/Sensirion_DFN-4-1EP_2x2mm_P1mm_EP0.7x1.6mm"
  ],
- "embedding_text": "ic.sensirion | IC | IC component cluster featuring surface-mount (SMD) parts utilizing Sensirion package footprints including STS-30-DIS, STS21, and DFN-4 variants. | sensirion ic smd sts-30-dis sts21 dfn-4 sht4x surface mount sensirion dfn celestial-altium-library dist-legacy package family sensirion dfn sts dis 5x1 5mm p0 8mm nocentralpad 1ep 2x2mm p1mm ep0 | SENSIRION | ",
+ "embedding_text": "ic.sensirion | IC | 4 ic parts using SENSIRION footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | sensirion dfn ic sht4x sts dis 5x1 5mm p0 8mm nocentralpad sts21 1ep 2x2mm p1mm ep0 | SENSIRION | ",
  "class": "ic"
 }

@@ -6,31 +6,28 @@
   "IC",
   "Timing"
  ],
- "description": "Timing IC component cluster featuring surface-mount PLCC package components, such as PLCC-28 footprint timer parts from KiCad symbols.",
+ "description": "1 ic timing parts using PLCC footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Choose for timing IC applications requiring surface-mount PLCC packages like PLCC-28.",
-  "Verify footprint compatibility and symbol pinout for KiCad-sourced tier B parts like 82C54_PLCC."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a PLCC land pattern is intended."
  ],
  "avoid_when": [
-  "The design requires packages other than PLCC or through-hole mounting.",
-  "Tier A reviewed components or explicit datasheet parameters are required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than PLCC."
  ],
  "keywords": [
-  "ic timing",
   "plcc",
-  "plcc-28",
-  "smd",
-  "82c54",
-  "82c54_plcc",
   "timer",
-  "ic",
-  "timing",
-  "kicad-symbols",
+  "82c54",
   "chmos",
   "programmable",
   "interval",
   "smt",
-  "counter"
+  "counter",
+  "ic",
+  "timing"
  ],
  "facts": {
   "package_family": "PLCC",
@@ -51,7 +48,7 @@
   "tier_counts": {
    "B": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -66,6 +63,6 @@
  "part_ids": [
   "kicad-symbols/Timer/82C54_PLCC"
  ],
- "embedding_text": "ic-timing.plcc | IC Timing | Timing IC component cluster featuring surface-mount PLCC package components, such as PLCC-28 footprint timer parts from KiCad symbols. | ic timing plcc plcc-28 smd 82c54 82c54_plcc timer ic timing kicad-symbols chmos programmable interval smt counter | PLCC | ",
+ "embedding_text": "ic-timing.plcc | IC Timing | 1 ic timing parts using PLCC footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | plcc timer 82c54 chmos programmable interval smt counter ic timing | PLCC | ",
  "class": "ic.timing"
 }

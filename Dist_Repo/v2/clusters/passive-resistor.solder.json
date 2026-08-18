@@ -6,27 +6,22 @@
   "Passive",
   "Resistor"
  ],
- "description": "Passive resistor library cluster containing surface-mount components with solder bridge footprints.",
+ "description": "1 passive resistor parts using Solder footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Verify suitability for SMD solder bridge footprints.",
-  "Check part metadata and Tier C review status.",
-  "Confirm that the design specifies the Solder package family."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a Solder land pattern is intended."
  ],
  "avoid_when": [
-  "A mounting type other than SMD is required.",
-  "The board layout requires packages outside the Solder family.",
-  "Standard discrete resistor packages are needed instead of solder bridges."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than Solder."
  ],
  "keywords": [
+  "solder",
+  "bridge",
   "passive",
   "resistor",
-  "passive resistor",
-  "solder",
-  "solder bridge",
-  "smd",
-  "surface mount",
-  "solder package",
-  "bridge",
   "surface",
   "mount",
   "pad",
@@ -53,12 +48,12 @@
   "tier_counts": {
    "C": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
   "matthiasbock-altium-libraries/Solder Bridge/Solder_Bridge"
  ],
- "embedding_text": "passive-resistor.solder | Passive Resistor | Passive resistor library cluster containing surface-mount components with solder bridge footprints. | passive resistor passive resistor solder solder bridge smd surface mount solder package bridge surface mount pad mm pitch pins | Solder | ",
+ "embedding_text": "passive-resistor.solder | Passive Resistor | 1 passive resistor parts using Solder footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | solder bridge passive resistor surface mount pad mm pitch pins | Solder | ",
  "class": "passive.resistor"
 }

@@ -5,44 +5,34 @@
  "category_path": [
   "Connector"
  ],
- "description": "JST-footprint connector cluster (763 parts) covering 1 to 6 pin variants at 1.20mm, 1.25mm, and 2.0mm pitch, in horizontal and vertical SMD or through-hole (PTH) styles; only 30 parts reach tier B, the rest are tier C.",
+ "description": "763 connector parts using JST footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Match exact pitch: 1.20mm, 1.25mm, or 2.0mm",
-  "Match mount type: SMD vs through-hole (PTH)",
-  "Match pin count and horizontal vs vertical orientation",
-  "Prefer the 30 tier B entries over the 733 tier C entries"
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a JST land pattern is intended."
  ],
  "avoid_when": [
-  "Needed pin count or pitch is not among the listed footprints",
-  "A locking/keyed JST variant is required but the footprint doesn't state locking",
-  "Only a tier C (generated, unreviewed) match is available and footprint hasn't been verified",
-  "A non-JST land pattern is required"
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than JST."
  ],
  "keywords": [
   "jst",
   "connector",
-  "1x01",
-  "1x02",
-  "1x03",
-  "1x04",
-  "1x05",
-  "1x06",
-  "p1.20mm",
-  "p1.25mm",
-  "p2.0mm",
-  "horizontal",
   "vertical",
-  "smd",
-  "through hole",
-  "pth",
-  "locking",
-  "mountingpin",
+  "horizontal",
   "p2",
   "50mm",
   "pdf",
   "p1",
   "1mp",
-  "xh"
+  "xh",
+  "ph",
+  "00mm",
+  "tb",
+  "pitch",
+  "mm",
+  "pad"
  ],
  "facts": {
   "package_family": "JST",
@@ -80,7 +70,7 @@
    "B": 30,
    "C": 733
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -889,6 +879,6 @@
   "dist-legacy/JST_ZH_S8B-ZR-SM4A-TF_1x08-1MP_P1.50mm_Horizontal",
   "dist-legacy/JST_ZH_S9B-ZR-SM4A-TF_1x09-1MP_P1.50mm_Horizontal"
  ],
- "embedding_text": "connector.jst | Connector | JST-footprint connector cluster (763 parts) covering 1 to 6 pin variants at 1.20mm, 1.25mm, and 2.0mm pitch, in horizontal and vertical SMD or through-hole (PTH) styles; only 30 parts reach tier B, the rest are tier C. | jst connector 1x01 1x02 1x03 1x04 1x05 1x06 p1.20mm p1.25mm p2.0mm horizontal vertical smd through hole pth locking mountingpin p2 50mm pdf p1 1mp xh | JST | ",
+ "embedding_text": "connector.jst | Connector | 763 connector parts using JST footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | jst connector vertical horizontal p2 50mm pdf p1 1mp xh ph 00mm tb pitch mm pad | JST | ",
  "class": "connector"
 }

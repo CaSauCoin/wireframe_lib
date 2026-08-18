@@ -6,33 +6,23 @@
   "Discrete",
   "Transistor"
  ],
- "description": "30V surface-mount discrete transistor cluster featuring Diodes footprints including PowerDI3333-8 and DFN1006-3 from Alternate-KiCad-Library.",
+ "description": "3 discrete transistor parts for 30V using Diodes footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select parts matching required footprint such as Diodes_PowerDI3333-8 or Diodes_DFN1006-3.",
-  "Prefer Tier A parts such as DMG7430LFG and DMP3036SFG over Tier B parts.",
-  "Ensure 30V SMD discrete transistor specifications fit application design constraints."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a Diodes land pattern is intended."
  ],
  "avoid_when": [
-  "Design requires non-SMD or through-hole transistor packages.",
-  "Operating voltage requirement differs from 30V.",
-  "Layout requires footprints outside of Diodes_PowerDI3333-8 or Diodes_DFN1006-3."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than Diodes."
  ],
  "keywords": [
-  "discrete",
+  "mosfet",
   "transistor",
+  "enchancement",
   "30v",
   "diodes",
-  "smd",
-  "powerdi3333-8",
-  "dfn1006-3",
-  "dmg7430lfg",
-  "dmp3036sfg",
-  "dmp32d4sfb",
-  "alternate-kicad-library",
-  "discrete transistor",
-  "diodes footprint",
-  "mosfet",
-  "enchancement",
   "powerdi3333",
   "akl",
   "mode",
@@ -41,7 +31,9 @@
   "library",
   "mos",
   "emos",
-  "emosfet"
+  "emosfet",
+  "discrete",
+  "dmg7430lfg"
  ],
  "facts": {
   "package_family": "Diodes",
@@ -66,7 +58,7 @@
    "A": 2,
    "B": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -99,6 +91,6 @@
   "Alternate-KiCad-Library/Transistor_MOSFET_AKL/DMP3036SFG",
   "Alternate-KiCad-Library/Transistor_MOSFET_AKL/DMP32D4SFB"
  ],
- "embedding_text": "discrete-transistor.diodes.30v | Discrete Transistor | 30V surface-mount discrete transistor cluster featuring Diodes footprints including PowerDI3333-8 and DFN1006-3 from Alternate-KiCad-Library. | discrete transistor 30v diodes smd powerdi3333-8 dfn1006-3 dmg7430lfg dmp3036sfg dmp32d4sfb alternate-kicad-library discrete transistor diodes footprint mosfet enchancement powerdi3333 akl mode alternate kicad library mos emos emosfet | Diodes | 30V",
+ "embedding_text": "discrete-transistor.diodes.30v | Discrete Transistor | 3 discrete transistor parts for 30V using Diodes footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | mosfet transistor enchancement 30v diodes powerdi3333 akl mode alternate kicad library mos emos emosfet discrete dmg7430lfg | Diodes | 30V",
  "class": "discrete.transistor"
 }

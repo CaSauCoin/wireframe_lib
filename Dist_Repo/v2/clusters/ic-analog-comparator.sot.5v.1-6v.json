@@ -7,33 +7,23 @@
   "Analog",
   "Comparator"
  ],
- "description": "Surface-mount analog comparator ICs in SOT packaging featuring 5V and 1.6V facets with SOT-353_SC-70-5 footprints.",
+ "description": "2 ic analog comparator parts for 5V, 1.6V using SOT footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when requiring an SMD analog comparator in a SOT-353_SC-70-5 footprint.",
-  "Verify application compatibility with 5V and 1.6V voltage facets.",
-  "Choose between TLV7041DCK and TLV7041SDCK tier A parts from KiCad symbols."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SOT land pattern is intended."
  ],
  "avoid_when": [
-  "The design requires through-hole components instead of SMD mounting.",
-  "The layout requires a footprint other than SOT-353_SC-70-5.",
-  "The circuit operating conditions differ from the specified 5V or 1.6V facets."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SOT."
  ],
  "keywords": [
-  "ic",
-  "analog comparator",
-  "comparator",
   "sot",
-  "sot-353",
-  "sc-70-5",
-  "sot-353_sc-70-5",
-  "5v",
-  "1.6v",
-  "smd",
-  "tlv7041dck",
-  "tlv7041sdck",
-  "kicad-symbols",
   "sc",
+  "comparator",
   "6v",
+  "5v",
   "single",
   "315na",
   "quiescent",
@@ -42,7 +32,9 @@
   "output",
   "pinout",
   "to",
-  "88a"
+  "smd",
+  "88a",
+  "cmp"
  ],
  "facts": {
   "package_family": "SOT",
@@ -66,7 +58,7 @@
   "tier_counts": {
    "A": 2
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -90,6 +82,6 @@
   "kicad-symbols/Comparator/TLV7041DCK",
   "kicad-symbols/Comparator/TLV7041SDCK"
  ],
- "embedding_text": "ic-analog-comparator.sot.5v.1-6v | IC Analog Comparator | Surface-mount analog comparator ICs in SOT packaging featuring 5V and 1.6V facets with SOT-353_SC-70-5 footprints. | ic analog comparator comparator sot sot-353 sc-70-5 sot-353_sc-70-5 5v 1.6v smd tlv7041dck tlv7041sdck kicad-symbols sc 6v single 315na quiescent open drain output pinout to 88a | SOT | 5V 1.6V",
+ "embedding_text": "ic-analog-comparator.sot.5v.1-6v | IC Analog Comparator | 2 ic analog comparator parts for 5V, 1.6V using SOT footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | sot sc comparator 6v 5v single 315na quiescent open drain output pinout to smd 88a cmp | SOT | 5V 1.6V",
  "class": "ic.analog.comparator"
 }

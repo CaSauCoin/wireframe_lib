@@ -6,32 +6,27 @@
   "Discrete",
   "FET"
  ],
- "description": "Cluster of discrete 60V surface-mount FET parts in SOT packages with SOT-223 footprints, including tier-A entries BTS4140N and NDT3055L.",
+ "description": "2 discrete fet parts for 60V using SOT footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Requires a discrete 60V FET in a surface-mount SOT package.",
-  "Choosing between SOT-223 and SOT-223-3_TabPin2 footprint variants.",
-  "Selecting tier-A KiCad symbol library components."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SOT land pattern is intended."
  ],
  "avoid_when": [
-  "The design requires a package family other than SOT.",
-  "Voltage rating required is different from 60V.",
-  "Through-hole mounting is required instead of surface mount."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SOT."
  ],
  "keywords": [
-  "discrete",
+  "sot",
   "fet",
   "60v",
-  "sot",
-  "sot-223",
-  "sot-223-3_tabpin2",
-  "smd",
-  "bts4140n",
-  "ndt3055l",
-  "kicad-symbols",
   "transistor",
   "cms",
   "mosfet",
+  "discrete",
   "channel",
+  "bts4140n",
   "other",
   "2a",
   "1ohm",
@@ -62,7 +57,7 @@
   "tier_counts": {
    "A": 2
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -86,6 +81,6 @@
   "kicad-symbols/Transistor_FET_Other/BTS4140N",
   "kicad-symbols/Transistor_FET/NDT3055L"
  ],
- "embedding_text": "discrete-fet.sot.60v | Discrete FET | Cluster of discrete 60V surface-mount FET parts in SOT packages with SOT-223 footprints, including tier-A entries BTS4140N and NDT3055L. | discrete fet 60v sot sot-223 sot-223-3_tabpin2 smd bts4140n ndt3055l kicad-symbols transistor cms mosfet channel other 2a 1ohm rds self protected high | SOT | 60V",
+ "embedding_text": "discrete-fet.sot.60v | Discrete FET | 2 discrete fet parts for 60V using SOT footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | sot fet 60v transistor cms mosfet discrete channel bts4140n other 2a 1ohm rds self protected high | SOT | 60V",
  "class": "discrete.fet"
 }

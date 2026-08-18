@@ -6,44 +6,34 @@
   "Connector",
   "Terminal Block"
  ],
- "description": "Cluster of 6 single-row through-hole screw terminal block connectors (GH package family) with footprints GH_5, GH_6, GH_7, GH_9, GH_11, and GH_12, all tier B, sourced from kicad-symbols.",
+ "description": "6 connector terminal block parts using GH footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Match the exact GH footprint (GH_5/6/7/9/11/12) to the required pin count",
-  "All entries are tier B — verify symbol-footprint pairing before use",
-  "Confirm through-hole mounting suits the target board",
-  "Check electrical ratings on the datasheet since none are stated here"
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a GH land pattern is intended."
  ],
  "avoid_when": [
-  "A surface-mount terminal block is needed instead of through-hole",
-  "A pin count other than 5, 6, 7, 9, 11, or 12 is required",
-  "Voltage, current, or pitch requirements are not confirmed by the datasheet",
-  "A non-GH land pattern is required for the layout"
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than GH."
  ],
  "keywords": [
-  "terminal block",
-  "screw terminal",
-  "connector",
-  "gh",
-  "gh_5",
-  "gh_6",
-  "gh_7",
-  "gh_9",
-  "gh_11",
-  "gh_12",
-  "through hole",
-  "single row",
-  "01x05",
-  "01x06",
-  "01x07",
-  "kicad",
-  "tier b",
-  "generated",
   "terminal",
   "screw",
+  "connector",
+  "gh",
   "generic",
   "single",
   "row",
-  "script"
+  "script",
+  "generated",
+  "kicad",
+  "library",
+  "utils",
+  "schlib",
+  "autogen",
+  "block",
+  "01x05"
  ],
  "facts": {
   "package_family": "GH",
@@ -69,7 +59,7 @@
   "tier_counts": {
    "B": 6
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -121,6 +111,6 @@
   "kicad-symbols/Connector/Screw_Terminal_01x11",
   "kicad-symbols/Connector/Screw_Terminal_01x12"
  ],
- "embedding_text": "connector-terminal-block.gh | Connector Terminal Block | Cluster of 6 single-row through-hole screw terminal block connectors (GH package family) with footprints GH_5, GH_6, GH_7, GH_9, GH_11, and GH_12, all tier B, sourced from kicad-symbols. | terminal block screw terminal connector gh gh_5 gh_6 gh_7 gh_9 gh_11 gh_12 through hole single row 01x05 01x06 01x07 kicad tier b generated terminal screw generic single row script | GH | ",
+ "embedding_text": "connector-terminal-block.gh | Connector Terminal Block | 6 connector terminal block parts using GH footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | terminal screw connector gh generic single row script generated kicad library utils schlib autogen block 01x05 | GH | ",
  "class": "connector.terminal_block"
 }

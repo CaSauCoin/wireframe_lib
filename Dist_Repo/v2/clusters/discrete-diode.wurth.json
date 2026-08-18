@@ -6,33 +6,23 @@
   "Discrete",
   "Diode"
  ],
- "description": "Discrete diode cluster of 58 parts associated with WURTH footprints and dist-legacy source.",
+ "description": "58 discrete diode parts using WURTH footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when requiring discrete diodes matching WURTH footprints.",
-  "Filter by available quality tiers, predominantly Tier B with one Tier C part.",
-  "Verify part numbers such as WE-ACHC series from the dist-legacy catalog."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a WURTH land pattern is intended."
  ],
  "avoid_when": [
-  "Avoid if the design requires explicit mounting type details, as mount is unknown.",
-  "Avoid when layout specifications require non-WURTH footprints or package families.",
-  "Avoid if Tier A component quality certification is required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than WURTH."
  ],
  "keywords": [
-  "discrete",
-  "diode",
-  "discrete diode",
   "wurth",
-  "we-achc",
-  "dist-legacy",
-  "tier b",
-  "tier c",
-  "wurth footprint",
-  "7449150023",
-  "7449150046",
-  "7449150079",
-  "7449150111",
   "we",
+  "diode",
   "pin",
+  "discrete",
   "two",
   "lqs",
   "in",
@@ -41,7 +31,9 @@
   "cathode",
   "with",
   "achc",
-  "package"
+  "package",
+  "component",
+  "and"
  ],
  "facts": {
   "package_family": "WURTH",
@@ -64,7 +56,7 @@
    "B": 57,
    "C": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -168,6 +160,6 @@
   "dist-legacy/Wurth 691322110002",
   "dist-legacy/WURTH 5040"
  ],
- "embedding_text": "discrete-diode.wurth | Discrete Diode | Discrete diode cluster of 58 parts associated with WURTH footprints and dist-legacy source. | discrete diode discrete diode wurth we-achc dist-legacy tier b tier c wurth footprint 7449150023 7449150046 7449150079 7449150111 we pin two lqs in mm anode cathode with achc package | WURTH | ",
+ "embedding_text": "discrete-diode.wurth | Discrete Diode | 58 discrete diode parts using WURTH footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | wurth we diode pin discrete two lqs in mm anode cathode with achc package component and | WURTH | ",
  "class": "discrete.diode"
 }

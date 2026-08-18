@@ -6,42 +6,34 @@
   "IC",
   "RF"
  ],
- "description": "Surface-mount RF IC cluster containing 12 parts across QFN, HVQFN, and VQFN package variants sourced from KiCad symbols.",
+ "description": "12 ic rf parts using QFN footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when requiring surface-mount RF integrated circuits in QFN package variants.",
-  "Choose based on specific QFN footprint dimensions, pin count, or thermal via requirements.",
-  "Filter by tier A quality parts such as CC2520, CMX901, SKY13380-350LF, Si4362, or nRF8001."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a QFN land pattern is intended."
  ],
  "avoid_when": [
-  "Avoid when through-hole or non-SMD mounting is required.",
-  "Avoid when board layout requires package families other than QFN, HVQFN, or VQFN.",
-  "Avoid if non-RF integrated circuits are required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than QFN."
  ],
  "keywords": [
-  "ic",
-  "rf",
   "qfn",
-  "hvqfn",
-  "vqfn",
-  "smd",
+  "rf",
+  "ic",
   "1ep",
-  "thermalvias",
-  "cc2520",
-  "cmx901",
-  "sky13380-350lf",
-  "si4362",
-  "nrf8001",
-  "rf ic",
-  "ic rf",
-  "bluetooth",
-  "zigbee",
   "p0",
   "5mm",
   "nolead",
   "nfc",
   "switch",
   "5x5mm",
-  "ep3"
+  "ep3",
+  "amplifier",
+  "high",
+  "hvqfn",
+  "thermalvias",
+  "3x3mm"
  ],
  "facts": {
   "package_family": "QFN",
@@ -73,7 +65,7 @@
    "A": 5,
    "B": 7
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -131,6 +123,6 @@
   "kicad-symbols/RF_NFC/ST25R3911B-AQW",
   "kicad-symbols/RF_Amplifier/MMZ09332BT1"
  ],
- "embedding_text": "ic-rf.qfn | IC RF | Surface-mount RF IC cluster containing 12 parts across QFN, HVQFN, and VQFN package variants sourced from KiCad symbols. | ic rf qfn hvqfn vqfn smd 1ep thermalvias cc2520 cmx901 sky13380-350lf si4362 nrf8001 rf ic ic rf bluetooth zigbee p0 5mm nolead nfc switch 5x5mm ep3 | QFN | ",
+ "embedding_text": "ic-rf.qfn | IC RF | 12 ic rf parts using QFN footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | qfn rf ic 1ep p0 5mm nolead nfc switch 5x5mm ep3 amplifier high hvqfn thermalvias 3x3mm | QFN | ",
  "class": "ic.rf"
 }

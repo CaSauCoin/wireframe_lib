@@ -7,42 +7,34 @@
   "Resistor",
   "Array"
  ],
- "description": "Passive resistor arrays and networks supporting through-hole and SMD mounting across SIP and R-series package footprints.",
+ "description": "173 passive resistor array parts using R footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Match the required resistor network configuration to the corresponding SIP pin footprint.",
-  "Verify whether through-hole or SMD mounting is required for the target layout.",
-  "Prioritize tier A parts from standard sources like kicad-symbols and Alternate-KiCad-Library."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a R land pattern is intended."
  ],
  "avoid_when": [
-  "A single discrete resistor is needed instead of a multi-resistor network.",
-  "The board layout requires package footprints outside the R and SIP array series.",
-  "An active component or non-resistor passive array is required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than R."
  ],
  "keywords": [
-  "resistor array",
-  "resistor network",
-  "passive",
-  "sip",
-  "r array",
-  "through hole",
-  "smd",
-  "r_network",
-  "bigpads",
-  "sip4",
-  "sip6",
-  "sip8",
-  "sip10",
-  "sip12",
   "resistor",
   "array",
   "network",
+  "sip",
+  "passive",
   "us",
   "bussed",
   "symbol",
   "star",
   "akl",
   "alternate",
-  "kicad"
+  "kicad",
+  "library",
+  "topology",
+  "isolated",
+  "bigpads"
  ],
  "facts": {
   "package_family": "R",
@@ -79,7 +71,7 @@
    "B": 8,
    "C": 13
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -298,6 +290,6 @@
   "dist-legacy/R_Array_Convex_8x0602",
   "dist-legacy/R_Array_Convex_4x0612"
  ],
- "embedding_text": "passive-resistor-array.r | Passive Resistor Array | Passive resistor arrays and networks supporting through-hole and SMD mounting across SIP and R-series package footprints. | resistor array resistor network passive sip r array through hole smd r_network bigpads sip4 sip6 sip8 sip10 sip12 resistor array network us bussed symbol star akl alternate kicad | R | ",
+ "embedding_text": "passive-resistor-array.r | Passive Resistor Array | 173 passive resistor array parts using R footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | resistor array network sip passive us bussed symbol star akl alternate kicad library topology isolated bigpads | R | ",
  "class": "passive.resistor.array"
 }

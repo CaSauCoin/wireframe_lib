@@ -6,43 +6,34 @@
   "Discrete",
   "Bridge Rectifier"
  ],
- "description": "Cluster of 56 discrete bridge rectifier parts sharing DIP-family footprints (DIP-4 and SDIP-4L variants) across kicad-symbols and Alternate-KiCad-Library sources, all currently tier A with generated review status.",
+ "description": "56 discrete bridge rectifier parts using DIP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Match the exact footprint variant: DIP-4 W7.62mm P5.08mm, DIP-4 W5.08mm P2.54mm, or OnSemi SDIP-4L",
-  "Confirm mount type (SMD vs through_hole) matches the intended assembly process",
-  "Cross-check source library (kicad-symbols vs Alternate-KiCad-Library) for trust preference",
-  "Verify pin-to-pad mapping before committing to a PCB layout"
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a DIP land pattern is intended."
  ],
  "avoid_when": [
-  "Required electrical ratings are not documented on the selected part",
-  "The target board needs a footprint outside the three listed DIP/SDIP variants",
-  "Review status must be verified rather than generated for the design"
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than DIP."
  ],
  "keywords": [
-  "bridge rectifier",
-  "discrete bridge",
-  "dip-4",
-  "sdip-4l",
-  "diode bridge",
-  "dip package",
-  "through hole",
-  "smd",
-  "w7.62mm",
-  "p5.08mm",
-  "w5.08mm",
-  "p2.54mm",
-  "onsemi",
-  "kicad-symbols",
-  "alternate-kicad-library",
-  "rectifier",
-  "discrete.bridge",
-  "tier a",
   "bridge",
   "diode",
   "dip",
+  "rectifier",
   "08mm",
   "62mm",
-  "discrete"
+  "discrete",
+  "dil",
+  "pdip",
+  "w7",
+  "p5",
+  "300mil",
+  "akl",
+  "tht",
+  "alternate",
+  "kicad"
  ],
  "facts": {
   "package_family": "DIP",
@@ -67,7 +58,7 @@
   "tier_counts": {
    "A": 56
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -169,6 +160,6 @@
   "Alternate-KiCad-Library/Diode_Bridge_AKL/EDF1CM",
   "Alternate-KiCad-Library/Diode_Bridge_AKL/EDF1DM"
  ],
- "embedding_text": "discrete-bridge.dip | Discrete Bridge Rectifier | Cluster of 56 discrete bridge rectifier parts sharing DIP-family footprints (DIP-4 and SDIP-4L variants) across kicad-symbols and Alternate-KiCad-Library sources, all currently tier A with generated review status. | bridge rectifier discrete bridge dip-4 sdip-4l diode bridge dip package through hole smd w7.62mm p5.08mm w5.08mm p2.54mm onsemi kicad-symbols alternate-kicad-library rectifier discrete.bridge tier a bridge diode dip 08mm 62mm discrete | DIP | ",
+ "embedding_text": "discrete-bridge.dip | Discrete Bridge Rectifier | 56 discrete bridge rectifier parts using DIP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | bridge diode dip rectifier 08mm 62mm discrete dil pdip w7 p5 300mil akl tht alternate kicad | DIP | ",
  "class": "discrete.bridge"
 }

@@ -6,34 +6,27 @@
   "IC",
   "Sensor"
  ],
- "description": "This cluster contains SMD BGA IC sensor components featuring an I2C interface and 28V rating.",
+ "description": "1 ic sensor parts for I2C, 28V using BGA footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select for IC sensor applications requiring an I2C bus interface.",
-  "Choose when designing for 28V operating facets and SMD BGA packages.",
-  "Verify footprint match with Texas_DSBGA-8_0.705x1.468mm_Layout2x4_P0.4mm."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a BGA land pattern is intended."
  ],
  "avoid_when": [
-  "Do not use when a non-BGA or through-hole footprint is required.",
-  "Avoid if the system requires a communication interface other than I2C.",
-  "Avoid if 28V facet rating is unsuitable for the target circuit."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than BGA."
  ],
  "keywords": [
-  "ic sensor",
-  "ic",
-  "sensor",
   "i2c",
-  "28v",
-  "bga",
-  "smd",
-  "dsbga-8",
-  "ina234axybj",
-  "kicad-symbols",
-  "sensor_energy",
-  "texas_dsbga-8_0.705x1.468mm_layout2x4_p0.4mm",
+  "sensor",
   "current",
   "voltage",
   "power",
+  "28v",
   "dsbga",
+  "bga",
+  "ina234axybj",
   "energy",
   "bidirectional",
   "monitor",
@@ -64,7 +57,7 @@
   "tier_counts": {
    "A": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -79,6 +72,6 @@
  "part_ids": [
   "kicad-symbols/Sensor_Energy/INA234AxYBJ"
  ],
- "embedding_text": "ic-sensor.bga.i2c.28v | IC Sensor | This cluster contains SMD BGA IC sensor components featuring an I2C interface and 28V rating. | ic sensor ic sensor i2c 28v bga smd dsbga-8 ina234axybj kicad-symbols sensor_energy texas_dsbga-8_0.705x1.468mm_layout2x4_p0.4mm current voltage power dsbga energy bidirectional monitor with interface texas 705x1 | BGA | I2C 28V",
+ "embedding_text": "ic-sensor.bga.i2c.28v | IC Sensor | 1 ic sensor parts for I2C, 28V using BGA footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | i2c sensor current voltage power 28v dsbga bga ina234axybj energy bidirectional monitor with interface texas 705x1 | BGA | I2C 28V",
  "class": "ic.sensor"
 }

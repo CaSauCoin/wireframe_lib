@@ -5,27 +5,20 @@
  "category_path": [
   "IC"
  ],
- "description": "IC component cluster containing 1 part in quality tier C using the MODULE6B footprint and package family.",
+ "description": "1 ic parts using MODULE6B footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Verify part details and land pattern layout for the MODULE6B package family.",
-  "Confirm suitability of tier C rated parts sourced from dist-legacy.",
-  "Check specific footprint specifications before committing to PCB design."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a MODULE6B land pattern is intended."
  ],
  "avoid_when": [
-  "The project requires a footprint family other than MODULE6B.",
-  "Quality tier C or unreviewed generated parts are prohibited by design rules.",
-  "Planner-visible IC components are strictly required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than MODULE6B."
  ],
  "keywords": [
-  "ic",
   "module6b",
-  "ic module6b",
-  "package module6b",
-  "footprint module6b",
-  "dist-legacy",
-  "tier c",
-  "generated review",
-  "unknown mount",
+  "ic",
   "pad",
   "mm",
   "pitch",
@@ -50,12 +43,12 @@
   "tier_counts": {
    "C": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
   "dist-legacy/MODULE6B"
  ],
- "embedding_text": "ic.module6b | IC | IC component cluster containing 1 part in quality tier C using the MODULE6B footprint and package family. | ic module6b ic module6b package module6b footprint module6b dist-legacy tier c generated review unknown mount pad mm pitch pins | MODULE6B | ",
+ "embedding_text": "ic.module6b | IC | 1 ic parts using MODULE6B footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | module6b ic pad mm pitch pins | MODULE6B | ",
  "class": "ic"
 }

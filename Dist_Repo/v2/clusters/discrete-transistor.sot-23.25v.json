@@ -6,39 +6,31 @@
   "Discrete",
   "Transistor"
  ],
- "description": "Cluster of 18 surface-mount 25V discrete transistors in SOT-23 and SOT-23-3 footprints across multiple KiCad libraries.",
+ "description": "18 discrete transistor parts for 25V using SOT-23 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when requiring a 25V rated discrete transistor in a SOT-23 or SOT-23-3 footprint.",
-  "Choose among 18 SMD parts available in quality tiers A and B.",
-  "Verify part source and footprint requirements before layout selection."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SOT-23 land pattern is intended."
  ],
  "avoid_when": [
-  "Application requires footprint packages other than SOT-23 or SOT-23-3.",
-  "Voltage rating requirement is not 25V.",
-  "Through-hole mounting is needed instead of SMD."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SOT-23."
  ],
  "keywords": [
-  "discrete",
+  "sot",
   "transistor",
   "25v",
-  "sot-23",
-  "sot-23-3",
-  "smd",
-  "discrete transistor",
-  "kicad",
-  "dmg301nu",
-  "fdv301n",
-  "fdv303n",
-  "fdv304p",
-  "irfml8244",
-  "sot",
   "jfet",
+  "discrete",
   "mosfet",
   "akl",
   "alternate",
+  "kicad",
   "library",
   "enchancement",
   "transistors",
+  "smd",
   "njfet",
   "npn",
   "single"
@@ -68,7 +60,7 @@
    "A": 15,
    "B": 3
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -132,6 +124,6 @@
   "Seeed-OPL-Kicad-Library/OPL_Discrete_Semiconductor/SMD-TRANSISTORS-NPN-25V-500MW-S8050_SOT-23_",
   "Seeed-OPL-Kicad-Library/OPL_Discrete_Semiconductor/SMD-TRANSISTORS-PNP-25V-500MA-S8550_SOT-23_"
  ],
- "embedding_text": "discrete-transistor.sot-23.25v | Discrete Transistor | Cluster of 18 surface-mount 25V discrete transistors in SOT-23 and SOT-23-3 footprints across multiple KiCad libraries. | discrete transistor 25v sot-23 sot-23-3 smd discrete transistor kicad dmg301nu fdv301n fdv303n fdv304p irfml8244 sot jfet mosfet akl alternate library enchancement transistors njfet npn single | SOT-23 | 25V",
+ "embedding_text": "discrete-transistor.sot-23.25v | Discrete Transistor | 18 discrete transistor parts for 25V using SOT-23 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | sot transistor 25v jfet discrete mosfet akl alternate kicad library enchancement transistors smd njfet npn single | SOT-23 | 25V",
  "class": "discrete.transistor"
 }

@@ -7,30 +7,21 @@
   "Power",
   "Converter"
  ],
- "description": "Cluster of 7 IC buck power converters with 1.8V output available in surface-mount and through-hole footprints.",
+ "description": "7 ic power converter parts for buck, 1.8V using Converter footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select based on mounting type, supporting both SMD and through-hole options.",
-  "Prefer Tier A representative part TSR_1-2418 over Tier B alternatives.",
-  "Verify footprint compatibility with Traco TSR or Murata MYRxP series."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a Converter land pattern is intended."
  ],
  "avoid_when": [
-  "Avoid when non-buck converter topologies are required.",
-  "Avoid when target output voltage differs from 1.8V.",
-  "Avoid if footprints outside the Converter DCDC package family are required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than Converter."
  ],
  "keywords": [
-  "ic",
-  "power converter",
-  "buck",
-  "1.8v",
-  "dcdc",
   "converter",
-  "smd",
-  "through hole",
+  "dcdc",
   "traco",
-  "murata",
-  "tsr",
-  "myrxp",
   "8v",
   "step",
   "down",
@@ -39,8 +30,10 @@
   "tht",
   "output",
   "to",
+  "buck",
   "tsr2",
   "input",
+  "ic",
   "power"
  ],
  "facts": {
@@ -72,7 +65,7 @@
    "A": 1,
    "B": 6
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -125,6 +118,6 @@
   "kicad-symbols/Converter_DCDC/TSR2-2418N",
   "kicad-symbols/Converter_DCDC/TSR3-2418N"
  ],
- "embedding_text": "ic-power-converter.converter.buck.1-8v | IC Power Converter | Cluster of 7 IC buck power converters with 1.8V output available in surface-mount and through-hole footprints. | ic power converter buck 1.8v dcdc converter smd through hole traco murata tsr myrxp 8v step down voltage regulator tht output to tsr2 input power | Converter | buck 1.8V",
+ "embedding_text": "ic-power-converter.converter.buck.1-8v | IC Power Converter | 7 ic power converter parts for buck, 1.8V using Converter footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | converter dcdc traco 8v step down voltage regulator tht output to buck tsr2 input ic power | Converter | buck 1.8V",
  "class": "ic.power.converter"
 }

@@ -6,28 +6,22 @@
   "Discrete",
   "Transistor"
  ],
- "description": "This cluster contains discrete transistor entries matching the LM1117 package family and LM1117-Hole footprint.",
+ "description": "1 discrete transistor parts using LM1117 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when a PCB design specifically requires an LM1117-Hole footprint.",
-  "Verify part pinout and electrical ratings before committing a board layout.",
-  "Note that the cluster consists of quality tier C parts with generated review status."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a LM1117 land pattern is intended."
  ],
  "avoid_when": [
-  "The PCB design requires a package footprint other than LM1117-Hole.",
-  "The project demands verified tier A or planner-visible parts.",
-  "Required electrical ratings or pin mappings are not specified for the part."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than LM1117."
  ],
  "keywords": [
   "lm1117",
-  "discrete transistor",
-  "lm1117-hole",
+  "hole",
   "discrete",
   "transistor",
-  "hole",
-  "discrete.transistor",
-  "lm1117 footprint",
-  "tier c",
-  "dist-legacy",
   "pad",
   "mm",
   "pitch",
@@ -52,12 +46,12 @@
   "tier_counts": {
    "C": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
   "dist-legacy/LM1117-Hole"
  ],
- "embedding_text": "discrete-transistor.lm1117 | Discrete Transistor | This cluster contains discrete transistor entries matching the LM1117 package family and LM1117-Hole footprint. | lm1117 discrete transistor lm1117-hole discrete transistor hole discrete.transistor lm1117 footprint tier c dist-legacy pad mm pitch pins | LM1117 | ",
+ "embedding_text": "discrete-transistor.lm1117 | Discrete Transistor | 1 discrete transistor parts using LM1117 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | lm1117 hole discrete transistor pad mm pitch pins | LM1117 | ",
  "class": "discrete.transistor"
 }

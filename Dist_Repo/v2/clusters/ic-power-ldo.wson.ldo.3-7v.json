@@ -7,30 +7,18 @@
   "Power",
   "Linear Regulator"
  ],
- "description": "Fixed 3.7V LDO linear regulator ICs in surface-mount WSON packages, including WSON-6_1.5x1.5mm_P0.5mm footprints.",
+ "description": "1 ic power linear regulator parts for LDO, 3.7V using WSON footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Requiring a 3.7V output LDO linear power regulator.",
-  "Designing for surface-mount WSON footprints such as WSON-6 (1.5x1.5mm, 0.5mm pitch).",
-  "Selecting Tier A symbol entries from KiCad libraries like TLV70237_WSON6."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a WSON land pattern is intended."
  ],
  "avoid_when": [
-  "Output voltages other than 3.7V are required.",
-  "Package requirements differ from SMD WSON footprint specifications.",
-  "Switching regulators or non-linear power converter topologies are needed."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than WSON."
  ],
  "keywords": [
-  "ic",
-  "power",
-  "linear regulator",
-  "ldo",
-  "3.7v",
-  "wson",
-  "wson-6",
-  "smd",
-  "tlv70237",
-  "kicad",
-  "wson-6_1.5x1.5mm_p0.5mm",
-  "low dropout",
   "regulator",
   "5mm",
   "wson6",
@@ -38,11 +26,15 @@
   "300ma",
   "fixed",
   "7v",
+  "wson",
   "5x1",
   "p0",
+  "ldo",
+  "tlv70237",
   "low",
   "dropout",
-  "voltage"
+  "voltage",
+  "output"
  ],
  "facts": {
   "package_family": "WSON",
@@ -66,7 +58,7 @@
   "tier_counts": {
    "A": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -81,6 +73,6 @@
  "part_ids": [
   "kicad-symbols/Regulator_Linear/TLV70237_WSON6"
  ],
- "embedding_text": "ic-power-ldo.wson.ldo.3-7v | IC Power Linear Regulator | Fixed 3.7V LDO linear regulator ICs in surface-mount WSON packages, including WSON-6_1.5x1.5mm_P0.5mm footprints. | ic power linear regulator ldo 3.7v wson wson-6 smd tlv70237 kicad wson-6_1.5x1.5mm_p0.5mm low dropout regulator 5mm wson6 linear 300ma fixed 7v 5x1 p0 low dropout voltage | WSON | LDO 3.7V",
+ "embedding_text": "ic-power-ldo.wson.ldo.3-7v | IC Power Linear Regulator | 1 ic power linear regulator parts for LDO, 3.7V using WSON footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | regulator 5mm wson6 linear 300ma fixed 7v wson 5x1 p0 ldo tlv70237 low dropout voltage output | WSON | LDO 3.7V",
  "class": "ic.power.ldo"
 }

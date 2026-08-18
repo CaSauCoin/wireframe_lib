@@ -6,28 +6,20 @@
   "Discrete",
   "Transistor"
  ],
- "description": "Discrete transistor cluster containing 9 tier-C parts available in SMD and through-hole BarrelJack package footprints.",
+ "description": "9 discrete transistor parts using BarrelJack footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when a discrete transistor part requires a BarrelJack package family footprint.",
-  "Verify whether SMD or through-hole mounting matches the target board layout.",
-  "Confirm the exact land pattern variant from available BarrelJack footprints."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a BarrelJack land pattern is intended."
  ],
  "avoid_when": [
-  "The board layout requires a standard transistor footprint rather than a BarrelJack package.",
-  "Higher quality tiers or planner-visible parts are required for the application.",
-  "Neither SMD nor through-hole BarrelJack footprints match board requirements."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than BarrelJack."
  ],
  "keywords": [
-  "discrete transistor",
   "barreljack",
-  "barrel jack",
-  "smd",
-  "through_hole",
   "horizontal",
-  "gct",
-  "cliff",
-  "cui",
-  "kycon",
   "wuerth",
   "discrete",
   "transistor",
@@ -35,6 +27,7 @@
   "5mm",
   "barrel",
   "smt",
+  "cui",
   "pj",
   "mm",
   "pad",
@@ -70,7 +63,7 @@
   "tier_counts": {
    "C": 9
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
@@ -84,6 +77,6 @@
   "dist-legacy/BarrelJack_Wuerth_694108106102_2.5x5.5mm",
   "dist-legacy/BarrelJack_Wuerth_6941xx301002"
  ],
- "embedding_text": "discrete-transistor.barreljack | Discrete Transistor | Discrete transistor cluster containing 9 tier-C parts available in SMD and through-hole BarrelJack package footprints. | discrete transistor barreljack barrel jack smd through_hole horizontal gct cliff cui kycon wuerth discrete transistor jack 5mm barrel smt pj mm pad pitch pins package | BarrelJack | ",
+ "embedding_text": "discrete-transistor.barreljack | Discrete Transistor | 9 discrete transistor parts using BarrelJack footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | barreljack horizontal wuerth discrete transistor jack 5mm barrel smt cui pj mm pad pitch pins package | BarrelJack | ",
  "class": "discrete.transistor"
 }

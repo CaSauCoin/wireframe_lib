@@ -6,28 +6,21 @@
   "Discrete",
   "Diode"
  ],
- "description": "Discrete diode cluster containing 1 part using the CN0.8 package family and footprint.",
+ "description": "1 discrete diode parts using CN0.8 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when requiring a discrete diode with a CN0.8 footprint.",
-  "Note that the cluster contains 1 tier C part from dist-legacy.",
-  "Verify mounting type and electrical specifications before PCB layout."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a CN0.8 land pattern is intended."
  ],
  "avoid_when": [
-  "A package or footprint other than CN0.8 is needed.",
-  "Planner-visible or higher quality tier parts are required.",
-  "Unverified mounting or unspecified electrical ratings are unacceptable."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than CN0.8."
  ],
  "keywords": [
+  "cn0",
   "discrete",
   "diode",
-  "discrete diode",
-  "cn0.8",
-  "cn0",
-  "cn0.8 footprint",
-  "cn0.8 package",
-  "package family cn0.8",
-  "tier c",
-  "dist-legacy",
   "pad",
   "mm",
   "pitch",
@@ -52,12 +45,12 @@
   "tier_counts": {
    "C": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
   "dist-legacy/CN0.8"
  ],
- "embedding_text": "discrete-diode.cn0-8 | Discrete Diode | Discrete diode cluster containing 1 part using the CN0.8 package family and footprint. | discrete diode discrete diode cn0.8 cn0 cn0.8 footprint cn0.8 package package family cn0.8 tier c dist-legacy pad mm pitch pins | CN0.8 | ",
+ "embedding_text": "discrete-diode.cn0-8 | Discrete Diode | 1 discrete diode parts using CN0.8 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | cn0 discrete diode pad mm pitch pins | CN0.8 | ",
  "class": "discrete.diode"
 }

@@ -6,32 +6,23 @@
   "IC",
   "Analog"
  ],
- "description": "Analog IC components in surface-mount TSSOP packages spanning 115 parts from libraries including Alternate-KiCad-Library and kicad-symbols.",
+ "description": "115 ic analog parts using TSSOP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when surface-mount TSSOP packaging is required.",
-  "Match the specific component against required pin count, pitch, and TSSOP footprint variant.",
-  "Prioritize entries with tier A quality ratings."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a TSSOP land pattern is intended."
  ],
  "avoid_when": [
-  "Through-hole or non-TSSOP package types are required.",
-  "The PCB design cannot accommodate surface-mount TSSOP footprints."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than TSSOP."
  ],
  "keywords": [
-  "ic",
-  "analog",
   "tssop",
-  "smd",
-  "adc",
-  "dac",
-  "ad5781xruz",
-  "ad5791xruz",
-  "ad7745",
-  "ad7746",
-  "ad7794",
-  "kicad-symbols",
-  "alternate-kicad-library",
+  "analog",
   "comparator",
   "p0",
+  "ic",
   "so",
   "65mm",
   "quad",
@@ -40,7 +31,9 @@
   "akl",
   "propagation",
   "delay",
-  "offset"
+  "offset",
+  "alternate",
+  "kicad"
  ],
  "facts": {
   "package_family": "TSSOP",
@@ -75,7 +68,7 @@
    "B": 2,
    "C": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -236,6 +229,6 @@
   "kicad-symbols/Analog_ADC/ADS1234IPW",
   "celestial-altium-library/ANALOG TSSOP-8 RU-8/ANALOG_TSSOP-8_RU-8"
  ],
- "embedding_text": "ic-analog.tssop | IC Analog | Analog IC components in surface-mount TSSOP packages spanning 115 parts from libraries including Alternate-KiCad-Library and kicad-symbols. | ic analog tssop smd adc dac ad5781xruz ad5791xruz ad7745 ad7746 ad7794 kicad-symbols alternate-kicad-library comparator p0 so 65mm quad open voltage akl propagation delay offset | TSSOP | ",
+ "embedding_text": "ic-analog.tssop | IC Analog | 115 ic analog parts using TSSOP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | tssop analog comparator p0 ic so 65mm quad open voltage akl propagation delay offset alternate kicad | TSSOP | ",
  "class": "ic.analog"
 }

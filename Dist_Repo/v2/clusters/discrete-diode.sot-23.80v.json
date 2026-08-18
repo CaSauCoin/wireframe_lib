@@ -6,42 +6,34 @@
   "Discrete",
   "Diode"
  ],
- "description": "Cluster of 22 tier-A discrete diode parts rated at 80V in SOT-23 SMD packages (SOT-23 and SOT-23-6 footprints), sourced entirely from Alternate-KiCad-Library with generated (unreviewed) metadata.",
+ "description": "22 discrete diode parts for 80V using SOT-23 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "All 22 parts are tier A with score 100, so differentiate by exact footprint: SOT-23 vs SOT-23-6.",
-  "Confirm the part's 80V rating matches the circuit's required voltage before selecting.",
-  "Check pin count and pad mapping, since SOT-23 (3-pin) and SOT-23-6 (6-pin) are not interchangeable."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SOT-23 land pattern is intended."
  ],
  "avoid_when": [
-  "The design requires a footprint other than SOT-23 or SOT-23-6.",
-  "Electrical specs such as current, switching speed, or polarity configuration must be confirmed beyond the stated 80V facet.",
-  "A verified/reviewed part is required — this cluster's review_status is 'generated', not reviewed."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SOT-23."
  ],
  "keywords": [
-  "sot-23",
-  "sot-23-6",
-  "discrete diode",
+  "sot",
   "diode",
   "80v",
-  "smd",
-  "surface mount",
-  "alternate-kicad-library",
   "akl",
-  "kicad library",
-  "tier a",
-  "discrete",
-  "diode package",
-  "generated metadata",
-  "sot",
   "alternate",
   "kicad",
   "library",
+  "discrete",
   "dual",
   "100ma",
   "4ns",
   "fast",
   "switching",
-  "series"
+  "series",
+  "common",
+  "cathode"
  ],
  "facts": {
   "package_family": "SOT-23",
@@ -65,7 +57,7 @@
   "tier_counts": {
    "A": 22
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -133,6 +125,6 @@
   "Alternate-KiCad-Library/Diode_AKL/KDS193",
   "Alternate-KiCad-Library/Diode_AKL/KDS226"
  ],
- "embedding_text": "discrete-diode.sot-23.80v | Discrete Diode | Cluster of 22 tier-A discrete diode parts rated at 80V in SOT-23 SMD packages (SOT-23 and SOT-23-6 footprints), sourced entirely from Alternate-KiCad-Library with generated (unreviewed) metadata. | sot-23 sot-23-6 discrete diode diode 80v smd surface mount alternate-kicad-library akl kicad library tier a discrete diode package generated metadata sot alternate kicad library dual 100ma 4ns fast switching series | SOT-23 | 80V",
+ "embedding_text": "discrete-diode.sot-23.80v | Discrete Diode | 22 discrete diode parts for 80V using SOT-23 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | sot diode 80v akl alternate kicad library discrete dual 100ma 4ns fast switching series common cathode | SOT-23 | 80V",
  "class": "discrete.diode"
 }

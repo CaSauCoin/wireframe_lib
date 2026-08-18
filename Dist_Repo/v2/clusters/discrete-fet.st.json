@@ -6,34 +6,28 @@
   "Discrete",
   "FET"
  ],
- "description": "Discrete FET cluster containing surface-mount parts in ST PowerFLAT HV footprints including ST_PowerFLAT_HV-5_8x8mm and ST_PowerFLAT_HV-8_5x6mm.",
+ "description": "2 discrete fet parts using ST footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when surface-mount discrete FETs in ST PowerFLAT HV footprints are required.",
-  "Choose between ST_PowerFLAT_HV-5_8x8mm and ST_PowerFLAT_HV-8_5x6mm footprint options.",
-  "Verify part requirements against representative components SCTL35N65G2V and SGT65R65AL."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a ST land pattern is intended."
  ],
  "avoid_when": [
-  "Avoid when through-hole mounting is required.",
-  "Avoid if footprints outside the ST PowerFLAT HV family are needed.",
-  "Avoid if parts rated above quality tier B are required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than ST."
  ],
  "keywords": [
-  "discrete fet",
   "st",
-  "smd",
-  "powerflat",
-  "st_powerflat_hv-5_8x8mm",
-  "st_powerflat_hv-8_5x6mm",
-  "sctl35n65g2v",
-  "sgt65r65al",
-  "kicad-symbols",
-  "discrete",
   "fet",
-  "transistor",
+  "powerflat",
   "hv",
+  "transistor",
   "mosfet",
   "typ",
+  "discrete",
   "mode",
+  "sctl35n65g2v",
   "silicon",
   "carbide",
   "power",
@@ -61,7 +55,7 @@
   "tier_counts": {
    "B": 2
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -85,6 +79,6 @@
   "kicad-symbols/Transistor_FET/SCTL35N65G2V",
   "kicad-symbols/Transistor_FET/SGT65R65AL"
  ],
- "embedding_text": "discrete-fet.st | Discrete FET | Discrete FET cluster containing surface-mount parts in ST PowerFLAT HV footprints including ST_PowerFLAT_HV-5_8x8mm and ST_PowerFLAT_HV-8_5x6mm. | discrete fet st smd powerflat st_powerflat_hv-5_8x8mm st_powerflat_hv-8_5x6mm sctl35n65g2v sgt65r65al kicad-symbols discrete fet transistor hv mosfet typ mode silicon carbide power 8x8mm powerflat8x8 channel | ST | ",
+ "embedding_text": "discrete-fet.st | Discrete FET | 2 discrete fet parts using ST footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | st fet powerflat hv transistor mosfet typ discrete mode sctl35n65g2v silicon carbide power 8x8mm powerflat8x8 channel | ST | ",
  "class": "discrete.fet"
 }

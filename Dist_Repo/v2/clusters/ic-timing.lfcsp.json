@@ -6,33 +6,19 @@
   "IC",
   "Timing"
  ],
- "description": "Surface-mount timing integrated circuits in LFCSP packages with exposed pads, including 20-pin, 24-pin, and 32-pin variants.",
+ "description": "7 ic timing parts using LFCSP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when surface-mount timing ICs in LFCSP packages are required.",
-  "Verify pin count (20, 24, or 32 pins) and package body size (4x4mm or 5x5mm).",
-  "Match the exposed pad dimensions (EP2.1x2.1mm, EP2.5x2.5mm, EP3.1x3.1mm, or EP3.25x3.25mm) to the footprint.",
-  "Check quality tier preference between Tier A and Tier B entries."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a LFCSP land pattern is intended."
  ],
  "avoid_when": [
-  "Through-hole mounting is required.",
-  "The board design requires a package family other than LFCSP.",
-  "A lead pitch other than 0.5mm is required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than LFCSP."
  ],
  "keywords": [
-  "ic timing",
   "lfcsp",
-  "smd",
-  "lfcsp-20",
-  "lfcsp-24",
-  "lfcsp-32",
-  "exposed pad",
-  "4x4mm",
-  "5x5mm",
-  "adf4002bcpz",
-  "ad9513",
-  "ad9514",
-  "ad9515",
-  "adf4158",
   "pll",
   "ic",
   "5mm",
@@ -42,7 +28,12 @@
   "timing",
   "clock",
   "distribution",
-  "fractional"
+  "fractional",
+  "nolead",
+  "5x5mm",
+  "ep3",
+  "1mm",
+  "outputs"
  ],
  "facts": {
   "package_family": "LFCSP",
@@ -67,7 +58,7 @@
    "A": 1,
    "B": 6
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -120,6 +111,6 @@
   "kicad-symbols/Timer_PLL/ADF4350",
   "kicad-symbols/Timer_PLL/ADF4351"
  ],
- "embedding_text": "ic-timing.lfcsp | IC Timing | Surface-mount timing integrated circuits in LFCSP packages with exposed pads, including 20-pin, 24-pin, and 32-pin variants. | ic timing lfcsp smd lfcsp-20 lfcsp-24 lfcsp-32 exposed pad 4x4mm 5x5mm adf4002bcpz ad9513 ad9514 ad9515 adf4158 pll ic 5mm timer 1ep p0 timing clock distribution fractional | LFCSP | ",
+ "embedding_text": "ic-timing.lfcsp | IC Timing | 7 ic timing parts using LFCSP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | lfcsp pll ic 5mm timer 1ep p0 timing clock distribution fractional nolead 5x5mm ep3 1mm outputs | LFCSP | ",
  "class": "ic.timing"
 }

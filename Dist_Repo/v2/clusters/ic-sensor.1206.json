@@ -6,36 +6,30 @@
   "IC",
   "Sensor"
  ],
- "description": "Surface-mount IC sensor cluster using the 1206 package family and LED-1206 footprints from KiCad symbols.",
+ "description": "1 ic sensor parts using 1206 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Use when designing a surface-mount IC sensor requiring a 1206 package family.",
-  "Confirm compatibility with the LED-1206 footprint.",
-  "Review tier B part details and KiCad symbol source specifications."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a 1206 land pattern is intended."
  ],
  "avoid_when": [
-  "The PCB layout requires a package family other than 1206.",
-  "Through-hole mounting or non-SMD assembly is required.",
-  "The LED-1206 footprint does not match the target component layout."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than 1206."
  ],
  "keywords": [
-  "ic",
   "sensor",
-  "ic sensor",
-  "1206",
-  "smd",
-  "led-1206",
-  "sfh2701",
-  "kicad-symbols",
-  "package family 1206",
-  "surface mount",
   "photodiode",
+  "sfh2701",
   "optical",
   "high",
   "speed",
   "pin",
+  "smd",
   "package",
   "led",
-  "opto"
+  "opto",
+  "ic"
  ],
  "facts": {
   "package_family": "1206",
@@ -56,7 +50,7 @@
   "tier_counts": {
    "B": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -71,6 +65,6 @@
  "part_ids": [
   "kicad-symbols/Sensor_Optical/SFH2701"
  ],
- "embedding_text": "ic-sensor.1206 | IC Sensor | Surface-mount IC sensor cluster using the 1206 package family and LED-1206 footprints from KiCad symbols. | ic sensor ic sensor 1206 smd led-1206 sfh2701 kicad-symbols package family 1206 surface mount photodiode optical high speed pin package led opto | 1206 | ",
+ "embedding_text": "ic-sensor.1206 | IC Sensor | 1 ic sensor parts using 1206 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | sensor photodiode sfh2701 optical high speed pin smd package led opto ic | 1206 | ",
  "class": "ic.sensor"
 }

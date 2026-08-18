@@ -5,28 +5,20 @@
  "category_path": [
   "IC"
  ],
- "description": "Cluster of 3 IC parts in the IND package family featuring through-hole and unknown mounting styles with tier B and C quality ratings.",
+ "description": "3 ic parts using IND footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Prefer the tier B entry with a higher quality score over tier C entries.",
-  "Verify compatibility with footprints IND-TH_4P-L9.0-W5.0-P3.50-D0.3-1, IND_1008, or IND_LQH5BPN101M38K.",
-  "Confirm mounting configuration fits through_hole or unknown mount types."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a IND land pattern is intended."
  ],
  "avoid_when": [
-  "The PCB design requires package families other than IND.",
-  "The project strictly requires tier A quality rated parts.",
-  "Mounting requirements exclude through_hole or unknown mount types."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than IND."
  ],
  "keywords": [
-  "ic",
   "ind",
-  "through_hole",
-  "transformer",
-  "zet632s-200m",
-  "ind_1008",
-  "ind_lqh5bpn101m38k",
-  "ind-th_4p-l9.0-w5.0-p3.50-d0.3-1",
-  "jlcpcb-kicad-library",
-  "dist-legacy",
+  "ic",
   "lqh5bpn101m38k",
   "inductors",
   "th",
@@ -39,7 +31,8 @@
   "pad",
   "mm",
   "pitch",
-  "pins"
+  "pins",
+  "transformer"
  ],
  "facts": {
   "package_family": "IND",
@@ -65,7 +58,7 @@
    "B": 1,
    "C": 2
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -82,6 +75,6 @@
   "dist-legacy/IND_1008",
   "dist-legacy/IND_LQH5BPN101M38K"
  ],
- "embedding_text": "ic.ind | IC | Cluster of 3 IC parts in the IND package family featuring through-hole and unknown mounting styles with tier B and C quality ratings. | ic ind through_hole transformer zet632s-200m ind_1008 ind_lqh5bpn101m38k ind-th_4p-l9.0-w5.0-p3.50-d0.3-1 jlcpcb-kicad-library dist-legacy lqh5bpn101m38k inductors th 4p l9 w5 p3 d0 c2943373 pad mm pitch pins | IND | ",
+ "embedding_text": "ic.ind | IC | 3 ic parts using IND footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | ind ic lqh5bpn101m38k inductors th 4p l9 w5 p3 d0 c2943373 pad mm pitch pins transformer | IND | ",
  "class": "ic"
 }

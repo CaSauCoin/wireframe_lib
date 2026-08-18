@@ -5,40 +5,33 @@
  "category_path": [
   "IC"
  ],
- "description": "Surface-mount GPS IC cluster featuring I2C and UART/serial communication interfaces in the GPS_MAX footprint family.",
+ "description": "8 ic parts for I2C, UART/serial using GPS footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Application requires surface-mount GPS ICs with I2C and UART/serial interfaces.",
-  "Design specifies the GPS_MAX footprint.",
-  "Tier B components from chilaboard-altium-library are acceptable."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a GPS land pattern is intended."
  ],
  "avoid_when": [
-  "Layout requires a footprint other than GPS_MAX.",
-  "Through-hole or non-SMD mounting is required.",
-  "Communication protocols other than I2C or UART/serial are needed."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than GPS."
  ],
  "keywords": [
-  "ic",
   "gps",
-  "i2c",
-  "uart",
-  "serial",
-  "smd",
-  "gps_max",
-  "gps_max-6g",
-  "gps_max-6q",
-  "gps_max-7c",
-  "gps_max-7q",
-  "gps_max-7w",
   "max",
   "module",
+  "uart",
   "receiver",
+  "i2c",
   "and",
   "timepulse",
+  "serial",
   "rf",
   "gnss",
   "input",
   "interfaces",
   "output",
+  "ic",
   "featuring"
  ],
  "facts": {
@@ -63,7 +56,7 @@
   "tier_counts": {
    "B": 8
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -117,6 +110,6 @@
   "chilaboard-altium-library/GPS_MAX-M8Q/GPS_MAX-M8Q",
   "chilaboard-altium-library/GPS_MAX-M8W/GPS_MAX-M8W"
  ],
- "embedding_text": "ic.gps.i2c.uart | IC | Surface-mount GPS IC cluster featuring I2C and UART/serial communication interfaces in the GPS_MAX footprint family. | ic gps i2c uart serial smd gps_max gps_max-6g gps_max-6q gps_max-7c gps_max-7q gps_max-7w max module receiver and timepulse rf gnss input interfaces output featuring | GPS | I2C UART/serial",
+ "embedding_text": "ic.gps.i2c.uart | IC | 8 ic parts for I2C, UART/serial using GPS footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | gps max module uart receiver i2c and timepulse serial rf gnss input interfaces output ic featuring | GPS | I2C UART/serial",
  "class": "ic"
 }

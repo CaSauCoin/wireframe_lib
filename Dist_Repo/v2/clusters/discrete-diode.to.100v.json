@@ -6,44 +6,34 @@
   "Discrete",
   "Diode"
  ],
- "description": "Cluster of 148 discrete diode parts rated 100V in TO-family packages (TO-220, TO-247, TO-252, TO-263, TO-262, TO-251 variants), spanning SMD and through-hole mounts, all tier A.",
+ "description": "148 discrete diode parts for 100V using TO footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Match the exact TO footprint variant (e.g. TO-220-2_Vertical_KA vs TO-220-3_Vertical_AKA) to the intended land pattern",
-  "Confirm SMD vs through-hole mount matches the board assembly process",
-  "Cross-check pin arrangement (A-K vs A-K-A) implied by footprint name before use",
-  "Most parts originate from Alternate-KiCad-Library; verify source trust if precision matters"
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a TO land pattern is intended."
  ],
  "avoid_when": [
-  "A voltage rating other than 100V is required",
-  "A non-TO package family is needed",
-  "The exact footprint variant is unknown or unconfirmed for the target PCB",
-  "Symbol-footprint pairing has not been verified against the chosen part"
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than TO."
  ],
  "keywords": [
-  "diode",
-  "discrete diode",
-  "to package",
-  "to-220",
-  "to-247",
-  "to-252",
-  "to-263",
-  "to-262",
-  "to-251",
-  "100v",
-  "100 volt",
-  "smd",
-  "through hole",
-  "vertical",
-  "akl",
-  "alternate kicad library",
-  "kicad symbols",
-  "tier a",
   "to",
+  "diode",
+  "100v",
   "schottky",
+  "vertical",
   "dual",
   "discrete",
+  "akl",
   "alternate",
-  "kicad"
+  "kicad",
+  "library",
+  "rm",
+  "commoncathode",
+  "common",
+  "cathode",
+  "220f"
  ],
  "facts": {
   "package_family": "TO",
@@ -79,7 +69,7 @@
   "tier_counts": {
    "A": 148
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -273,6 +263,6 @@
   "Alternate-KiCad-Library/Diode_Schottky_AKL/VS-8TQ100",
   "Alternate-KiCad-Library/Diode_Schottky_AKL/VS-8TQ100S"
  ],
- "embedding_text": "discrete-diode.to.100v | Discrete Diode | Cluster of 148 discrete diode parts rated 100V in TO-family packages (TO-220, TO-247, TO-252, TO-263, TO-262, TO-251 variants), spanning SMD and through-hole mounts, all tier A. | diode discrete diode to package to-220 to-247 to-252 to-263 to-262 to-251 100v 100 volt smd through hole vertical akl alternate kicad library kicad symbols tier a to schottky dual discrete alternate kicad | TO | 100V",
+ "embedding_text": "discrete-diode.to.100v | Discrete Diode | 148 discrete diode parts for 100V using TO footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | to diode 100v schottky vertical dual discrete akl alternate kicad library rm commoncathode common cathode 220f | TO | 100V",
  "class": "discrete.diode"
 }

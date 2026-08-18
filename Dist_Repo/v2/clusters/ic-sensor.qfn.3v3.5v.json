@@ -6,31 +6,25 @@
   "IC",
   "Sensor"
  ],
- "description": "SMD sensor IC cluster supporting 3.3V, 5V, and I2C in QFN packages including footprint QFN-16-1EP_3x3mm_P0.5mm_EP1.7x1.7mm.",
+ "description": "1 ic sensor parts for 3.3V, 5V, I2C using QFN footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select for surface-mount sensor ICs requiring 3.3V or 5V supply facets with an I2C interface.",
-  "Choose when requiring QFN footprints such as QFN-16-1EP_3x3mm_P0.5mm_EP1.7x1.7mm.",
-  "Use when selecting Tier A parts from KiCad symbols like MT6701QT."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a QFN land pattern is intended."
  ],
  "avoid_when": [
-  "The board design requires through-hole components rather than surface-mount (SMD).",
-  "The project requires packages other than the QFN package family.",
-  "The design requires supply voltages or communications interfaces not matching 3.3V, 5V, or I2C."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than QFN."
  ],
  "keywords": [
-  "ic",
   "sensor",
-  "ic.sensor",
   "qfn",
-  "smd",
-  "3.3v",
-  "5v",
-  "i2c",
-  "mt6701qt",
-  "qfn-16-1ep_3x3mm_p0.5mm_ep1.7x1.7mm",
-  "kicad-symbols",
   "magnetic",
   "hall",
+  "i2c",
+  "5v",
+  "mt6701qt",
   "based",
   "angle",
   "position",
@@ -64,7 +58,7 @@
   "tier_counts": {
    "A": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -79,6 +73,6 @@
  "part_ids": [
   "kicad-symbols/Sensor_Magnetic/MT6701QT"
  ],
- "embedding_text": "ic-sensor.qfn.3v3.5v | IC Sensor | SMD sensor IC cluster supporting 3.3V, 5V, and I2C in QFN packages including footprint QFN-16-1EP_3x3mm_P0.5mm_EP1.7x1.7mm. | ic sensor ic.sensor qfn smd 3.3v 5v i2c mt6701qt qfn-16-1ep_3x3mm_p0.5mm_ep1.7x1.7mm kicad-symbols magnetic hall based angle position encoder ssi abz uvw interfaces supply | QFN | 3.3V 5V I2C",
+ "embedding_text": "ic-sensor.qfn.3v3.5v | IC Sensor | 1 ic sensor parts for 3.3V, 5V, I2C using QFN footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | sensor qfn magnetic hall i2c 5v mt6701qt based angle position encoder ssi abz uvw interfaces supply | QFN | 3.3V 5V I2C",
  "class": "ic.sensor"
 }

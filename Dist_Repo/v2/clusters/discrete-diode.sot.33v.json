@@ -6,42 +6,34 @@
   "Discrete",
   "Diode"
  ],
- "description": "Cluster of 7 tier-A zener diodes (33V facet) in SOT SMD packages — SOT-363/SC-70-6, SOT-89-3, SOT-223-3_TabPin2, SOT-323/SC-70 — all sourced from Alternate-KiCad-Library.",
+ "description": "7 discrete diode parts for 33V using SOT footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Match the exact SOT footprint variant to the intended PCB land pattern before committing.",
-  "All 7 entries are tier A, score 100, from a single source (Alternate-KiCad-Library).",
-  "Distinguish by part name (BZV49-C33, BZV90-C33, BZX84C33/Ss/W) since footprint differs per name."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SOT land pattern is intended."
  ],
  "avoid_when": [
-  "A non-SOT package or through-hole footprint is required.",
-  "A facet voltage other than 33V is needed.",
-  "Electrical ratings beyond package/facet (current, power, tolerance) must be confirmed and are not given here."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SOT."
  ],
  "keywords": [
   "diode",
-  "zener diode",
-  "33v",
   "sot",
-  "sot-363",
-  "sot-89-3",
-  "sot-223-3",
-  "sot-323",
-  "sc-70",
-  "smd",
-  "discrete diode",
-  "bzv49-c33",
-  "bzv90-c33",
-  "bzx84c33",
-  "alternate-kicad-library",
-  "akl",
-  "tier a",
   "zener",
+  "33v",
   "sc",
   "dual",
   "independent",
+  "akl",
   "alternate",
   "kicad",
-  "library"
+  "library",
+  "discrete",
+  "200mw",
+  "bzv49",
+  "c33",
+  "bzv90"
  ],
  "facts": {
   "package_family": "SOT",
@@ -67,7 +59,7 @@
   "tier_counts": {
    "A": 7
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -120,6 +112,6 @@
   "Alternate-KiCad-Library/Diode_Zener_AKL/MMBZ5257BS",
   "Alternate-KiCad-Library/Diode_Zener_AKL/MMBZ5257BSs"
  ],
- "embedding_text": "discrete-diode.sot.33v | Discrete Diode | Cluster of 7 tier-A zener diodes (33V facet) in SOT SMD packages — SOT-363/SC-70-6, SOT-89-3, SOT-223-3_TabPin2, SOT-323/SC-70 — all sourced from Alternate-KiCad-Library. | diode zener diode 33v sot sot-363 sot-89-3 sot-223-3 sot-323 sc-70 smd discrete diode bzv49-c33 bzv90-c33 bzx84c33 alternate-kicad-library akl tier a zener sc dual independent alternate kicad library | SOT | 33V",
+ "embedding_text": "discrete-diode.sot.33v | Discrete Diode | 7 discrete diode parts for 33V using SOT footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | diode sot zener 33v sc dual independent akl alternate kicad library discrete 200mw bzv49 c33 bzv90 | SOT | 33V",
  "class": "discrete.diode"
 }

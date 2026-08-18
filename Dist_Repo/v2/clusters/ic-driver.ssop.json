@@ -6,30 +6,21 @@
   "IC",
   "Driver"
  ],
- "description": "Surface-mount driver IC cluster containing four tier A parts in SSOP-10 and SSOP-24 package footprints.",
+ "description": "4 ic driver parts using SSOP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when an SMD IC driver in an SSOP package family is needed.",
-  "Choose between SSOP-10 and SSOP-24 package footprints based on part requirements.",
-  "Verify part tier and footprint match design specifications."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SSOP land pattern is intended."
  ],
  "avoid_when": [
-  "Through-hole mounting or package families other than SSOP are required.",
-  "The target design requires a component class other than IC driver.",
-  "Land pattern requirements differ from the available SSOP-10 and SSOP-24 footprints."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SSOP."
  ],
  "keywords": [
-  "ic",
-  "driver",
-  "ic driver",
   "ssop",
-  "smd",
-  "ssop-10",
-  "ssop-24",
-  "fl5150mx",
-  "fl5160mx",
-  "ir2114s",
-  "ir2214s",
-  "ic.driver",
+  "driver",
+  "ic",
   "fet",
   "dimmer",
   "gate",
@@ -41,7 +32,8 @@
   "cut",
   "controller",
   "9x4",
-  "9mm"
+  "9mm",
+  "p1"
  ],
  "facts": {
   "package_family": "SSOP",
@@ -63,7 +55,7 @@
   "tier_counts": {
    "A": 4
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -105,6 +97,6 @@
   "kicad-symbols/Driver_FET/IR2114S",
   "kicad-symbols/Driver_FET/IR2214S"
  ],
- "embedding_text": "ic-driver.ssop | IC Driver | Surface-mount driver IC cluster containing four tier A parts in SSOP-10 and SSOP-24 package footprints. | ic driver ic driver ssop smd ssop-10 ssop-24 fl5150mx fl5160mx ir2114s ir2214s ic.driver fet dimmer gate igbt and mosfet ac phase cut controller 9x4 9mm | SSOP | ",
+ "embedding_text": "ic-driver.ssop | IC Driver | 4 ic driver parts using SSOP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | ssop driver ic fet dimmer gate igbt and mosfet ac phase cut controller 9x4 9mm p1 | SSOP | ",
  "class": "ic.driver"
 }

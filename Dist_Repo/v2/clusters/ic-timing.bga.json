@@ -6,32 +6,23 @@
   "IC",
   "Timing"
  ],
- "description": "Timing IC cluster in the BGA package family for surface-mount assembly, featuring tier B part LMC555xTP.",
+ "description": "1 ic timing parts using BGA footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when requiring a surface-mount timing IC in a BGA package family.",
-  "Confirm compatibility with the Texas_DSBGA-8_1.43x1.41mm_Layout3x3_P0.5mm footprint land pattern.",
-  "Evaluate quality tier B and source catalog requirements before design inclusion."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a BGA land pattern is intended."
  ],
  "avoid_when": [
-  "Do not use when the layout requires packages other than BGA.",
-  "Avoid if non-SMD or through-hole mounting is required.",
-  "Avoid if footprint Texas_DSBGA-8_1.43x1.41mm_Layout3x3_P0.5mm does not match layout specifications."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than BGA."
  ],
  "keywords": [
-  "ic timing",
-  "timing ic",
-  "bga",
-  "smd",
   "timer",
-  "lmc555xtp",
-  "dsbga-8",
-  "kicad-symbols",
-  "texas_dsbga-8_1.43x1.41mm_layout3x3_p0.5mm",
-  "ic",
-  "timing",
-  "bga package",
   "dsbga",
   "texas",
+  "bga",
+  "lmc555xtp",
   "cmos",
   "43x1",
   "41mm",
@@ -41,7 +32,8 @@
   "instruments",
   "yzp",
   "xbga",
-  "n8"
+  "n8",
+  "single"
  ],
  "facts": {
   "package_family": "BGA",
@@ -62,7 +54,7 @@
   "tier_counts": {
    "B": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -77,6 +69,6 @@
  "part_ids": [
   "kicad-symbols/Timer/LMC555xTP"
  ],
- "embedding_text": "ic-timing.bga | IC Timing | Timing IC cluster in the BGA package family for surface-mount assembly, featuring tier B part LMC555xTP. | ic timing timing ic bga smd timer lmc555xtp dsbga-8 kicad-symbols texas_dsbga-8_1.43x1.41mm_layout3x3_p0.5mm ic timing bga package dsbga texas cmos 43x1 41mm layout3x3 p0 5mm instruments yzp xbga n8 | BGA | ",
+ "embedding_text": "ic-timing.bga | IC Timing | 1 ic timing parts using BGA footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | timer dsbga texas bga lmc555xtp cmos 43x1 41mm layout3x3 p0 5mm instruments yzp xbga n8 single | BGA | ",
  "class": "ic.timing"
 }

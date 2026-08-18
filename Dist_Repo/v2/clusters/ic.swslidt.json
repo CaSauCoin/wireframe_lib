@@ -5,33 +5,27 @@
  "category_path": [
   "IC"
  ],
- "description": "Cluster of 4 through-hole IC parts using SWSLIDT footprints from chilaboard-altium-library.",
+ "description": "4 ic parts using SWSLIDT footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when through-hole mounting with a SWSLIDT footprint is required.",
-  "Match against footprints such as SWSLIDT_DP4T_S_20X8, SWSLIDT_DPDT_S_22F25G5, SWSLIDT_DPTT_S_15X6, or SWSLIDT_SPDT_R_13X4.",
-  "Choose when sourcing parts from chilaboard-altium-library."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SWSLIDT land pattern is intended."
  ],
  "avoid_when": [
-  "The design requires surface-mount components instead of through-hole mounting.",
-  "A package family other than SWSLIDT is required.",
-  "Planner-visible parts or tier A or B quality parts are required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SWSLIDT."
  ],
  "keywords": [
   "swslidt",
   "ic",
-  "through hole",
-  "swslidt_dp4t_s_20x8",
-  "swslidt_dpdt_s_22f25g5",
-  "swslidt_dptt_s_15x6",
-  "swslidt_spdt_r_13x4",
-  "chilaboard-altium-library",
   "dp4t",
-  "dpdt",
-  "dptt",
-  "spdt",
   "20x8",
+  "dpdt",
   "22f25g5",
+  "dptt",
   "15x6",
+  "spdt",
   "13x4",
   "through",
   "hole",
@@ -62,7 +56,7 @@
   "tier_counts": {
    "C": 4
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
@@ -71,6 +65,6 @@
   "chilaboard-altium-library/SWSLIDT_DPTT_S_15X6/SWSLIDT_DPTT_S_15X6",
   "chilaboard-altium-library/SWSLIDT_SPDT_R_13X4/SWSLIDT_SPDT_R_13X4"
  ],
- "embedding_text": "ic.swslidt | IC | Cluster of 4 through-hole IC parts using SWSLIDT footprints from chilaboard-altium-library. | swslidt ic through hole swslidt_dp4t_s_20x8 swslidt_dpdt_s_22f25g5 swslidt_dptt_s_15x6 swslidt_spdt_r_13x4 chilaboard-altium-library dp4t dpdt dptt spdt 20x8 22f25g5 15x6 13x4 through hole pad mm pitch pins | SWSLIDT | ",
+ "embedding_text": "ic.swslidt | IC | 4 ic parts using SWSLIDT footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | swslidt ic dp4t 20x8 dpdt 22f25g5 dptt 15x6 spdt 13x4 through hole pad mm pitch pins | SWSLIDT | ",
  "class": "ic"
 }

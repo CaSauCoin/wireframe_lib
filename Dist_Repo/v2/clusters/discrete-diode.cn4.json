@@ -6,28 +6,21 @@
   "Discrete",
   "Diode"
  ],
- "description": "Discrete diode cluster containing 3 parts in the CN4 package family with CN4 and CN4_1 footprint options.",
+ "description": "3 discrete diode parts using CN4 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Verify component footprint compatibility with CN4 or CN4_1 land patterns.",
-  "Review source trust and tier C quality classification for selected parts.",
-  "Confirm required part specifications within the 3 available entries."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a CN4 land pattern is intended."
  ],
  "avoid_when": [
-  "The application requires a package family other than CN4.",
-  "Footprints other than CN4 or CN4_1 are needed for layout.",
-  "Tier C generated library entries do not meet quality requirements."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than CN4."
  ],
  "keywords": [
   "cn4",
   "discrete",
   "diode",
-  "discrete diode",
-  "cn4_1",
-  "package family cn4",
-  "cn4 footprint",
-  "tier c",
-  "dist-legacy",
-  "discrete.diode",
   "pitch",
   "mm",
   "capacitor",
@@ -62,7 +55,7 @@
   "tier_counts": {
    "C": 3
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
@@ -70,6 +63,6 @@
   "dist-legacy/CN4",
   "dist-legacy/CN4_1"
  ],
- "embedding_text": "discrete-diode.cn4 | Discrete Diode | Discrete diode cluster containing 3 parts in the CN4 package family with CN4 and CN4_1 footprint options. | cn4 discrete diode discrete diode cn4_1 package family cn4 cn4 footprint tier c dist-legacy discrete.diode pitch mm capacitor duplicate land pattern pad pins bare pin through hole 03mm | CN4 | ",
+ "embedding_text": "discrete-diode.cn4 | Discrete Diode | 3 discrete diode parts using CN4 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | cn4 discrete diode pitch mm capacitor duplicate land pattern pad pins bare pin through hole 03mm | CN4 | ",
  "class": "discrete.diode"
 }

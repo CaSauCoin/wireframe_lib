@@ -5,30 +5,18 @@
  "category_path": [
   "IC"
  ],
- "description": "Cluster of 3.1V LDO integrated circuits in surface-mount SOT-23 packages, including AP7315-31SA and AP7315-31SR parts.",
+ "description": "2 ic parts for LDO, 3.1V using SOT-23 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Requires a 3.1V LDO voltage regulator IC.",
-  "Design specifies a surface-mount SOT-23 footprint.",
-  "Selecting between AP7315-31SA and AP7315-31SR variants."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SOT-23 land pattern is intended."
  ],
  "avoid_when": [
-  "Regulator output voltages other than 3.1V are required.",
-  "Non-LDO voltage regulator topologies are needed.",
-  "Package footprints other than surface-mount SOT-23 are required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SOT-23."
  ],
  "keywords": [
-  "ic",
-  "ldo",
-  "3.1v",
-  "sot-23",
-  "sot23",
-  "smd",
-  "ap7315",
-  "ap7315-31sa",
-  "ap7315-31sr",
-  "alternate-kicad-library",
-  "voltage regulator",
-  "3.1v ldo",
   "sot",
   "voltage",
   "regulator",
@@ -36,11 +24,15 @@
   "150ma",
   "low",
   "dropout",
+  "ldo",
+  "ap7315",
   "akl",
   "alternate",
   "kicad",
   "library",
-  "vreg"
+  "vreg",
+  "pmic",
+  "power"
  ],
  "facts": {
   "package_family": "SOT-23",
@@ -64,7 +56,7 @@
   "tier_counts": {
    "A": 2
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -88,6 +80,6 @@
   "Alternate-KiCad-Library/Voltage_Regulator_AKL/AP7315-31SA",
   "Alternate-KiCad-Library/Voltage_Regulator_AKL/AP7315-31SR"
  ],
- "embedding_text": "ic.sot-23.ldo.3-1v | IC | Cluster of 3.1V LDO integrated circuits in surface-mount SOT-23 packages, including AP7315-31SA and AP7315-31SR parts. | ic ldo 3.1v sot-23 sot23 smd ap7315 ap7315-31sa ap7315-31sr alternate-kicad-library voltage regulator 3.1v ldo sot voltage regulator 1v 150ma low dropout akl alternate kicad library vreg | SOT-23 | LDO 3.1V",
+ "embedding_text": "ic.sot-23.ldo.3-1v | IC | 2 ic parts for LDO, 3.1V using SOT-23 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | sot voltage regulator 1v 150ma low dropout ldo ap7315 akl alternate kicad library vreg pmic power | SOT-23 | LDO 3.1V",
  "class": "ic"
 }

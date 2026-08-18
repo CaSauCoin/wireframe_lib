@@ -6,30 +6,20 @@
   "IC",
   "Interface"
  ],
- "description": "Through-hole interface IC cluster in DIP-16 (W7.62mm) packages for 3.3V UART and serial applications, featuring 2 tier-A KiCad symbol parts.",
+ "description": "2 ic interface parts for 3.3V, UART/serial using DIP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select for through-hole 3.3V UART or serial interface designs requiring a DIP-16 W7.62mm footprint.",
-  "Verify pin-to-pad mapping and exact part specifications for AM26LS31CN or AM26LS31MJ.",
-  "Choose tier A KiCad symbol entries when matching DIP package requirements."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a DIP land pattern is intended."
  ],
  "avoid_when": [
-  "Surface-mount layouts or package families other than DIP-16 W7.62mm are required.",
-  "Operating voltages or interface protocols differ from 3.3V UART/serial."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than DIP."
  ],
  "keywords": [
-  "ic",
-  "interface",
-  "3.3v",
-  "uart",
-  "serial",
   "dip",
-  "dip-16",
-  "dip-16_w7.62mm",
-  "through_hole",
-  "tht",
-  "am26ls31cn",
-  "am26ls31mj",
-  "kicad-symbols",
+  "interface",
   "3v",
   "rs485",
   "62mm",
@@ -38,9 +28,12 @@
   "line",
   "drivers",
   "w7",
+  "tht",
   "dil",
   "pdip",
-  "54mm"
+  "54mm",
+  "300mil",
+  "driver"
  ],
  "facts": {
   "package_family": "DIP",
@@ -64,7 +57,7 @@
   "tier_counts": {
    "A": 2
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -88,6 +81,6 @@
   "kicad-symbols/Interface/AM26LS31CN",
   "kicad-symbols/Interface/AM26LS31MJ"
  ],
- "embedding_text": "ic-interface.dip.3v3.uart | IC Interface | Through-hole interface IC cluster in DIP-16 (W7.62mm) packages for 3.3V UART and serial applications, featuring 2 tier-A KiCad symbol parts. | ic interface 3.3v uart serial dip dip-16 dip-16_w7.62mm through_hole tht am26ls31cn am26ls31mj kicad-symbols 3v rs485 62mm 32mbps quad line drivers w7 dil pdip 54mm | DIP | 3.3V UART/serial",
+ "embedding_text": "ic-interface.dip.3v3.uart | IC Interface | 2 ic interface parts for 3.3V, UART/serial using DIP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | dip interface 3v rs485 62mm 32mbps quad line drivers w7 tht dil pdip 54mm 300mil driver | DIP | 3.3V UART/serial",
  "class": "ic.interface"
 }

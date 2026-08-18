@@ -6,33 +6,25 @@
   "IC",
   "Memory"
  ],
- "description": "Surface-mount memory IC cluster containing SPI interface 1.98V components in SOIC package footprint SOIC-8_3.9x4.9mm_P1.27mm.",
+ "description": "2 ic memory parts for SPI, 1.98V using SOIC footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Selecting a surface-mount memory IC requiring an SPI interface and 1.98V supply voltage.",
-  "Designing for a SOIC package with footprint SOIC-8_3.9x4.9mm_P1.27mm.",
-  "Choosing tier A components such as APS1604M-SQRx-SN or APS6404L-SQRx-SN."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SOIC land pattern is intended."
  ],
  "avoid_when": [
-  "The circuit requires an operating supply voltage other than 1.98V.",
-  "The system relies on a bus interface other than SPI.",
-  "The layout requires through-hole mounting or package styles other than SOIC."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SOIC."
  ],
  "keywords": [
-  "ic",
-  "memory",
-  "spi",
-  "1.98v",
   "soic",
-  "smd",
-  "soic-8_3.9x4.9mm_p1.27mm",
-  "aps1604m-sqrx-sn",
-  "aps6404l-sqrx-sn",
-  "ram",
-  "kicad-symbols",
-  "ic.memory",
+  "memory",
   "98v",
+  "spi",
   "sqrx",
   "sn",
+  "ram",
   "mbit",
   "bits",
   "serial",
@@ -65,7 +57,7 @@
   "tier_counts": {
    "A": 2
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -89,6 +81,6 @@
   "kicad-symbols/Memory_RAM/APS1604M-SQRx-SN",
   "kicad-symbols/Memory_RAM/APS6404L-SQRx-SN"
  ],
- "embedding_text": "ic-memory.soic.spi.1-98v | IC Memory | Surface-mount memory IC cluster containing SPI interface 1.98V components in SOIC package footprint SOIC-8_3.9x4.9mm_P1.27mm. | ic memory spi 1.98v soic smd soic-8_3.9x4.9mm_p1.27mm aps1604m-sqrx-sn aps6404l-sqrx-sn ram kicad-symbols ic.memory 98v sqrx sn mbit bits serial pseudo sram up to 144mhz supply | SOIC | SPI 1.98V",
+ "embedding_text": "ic-memory.soic.spi.1-98v | IC Memory | 2 ic memory parts for SPI, 1.98V using SOIC footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | soic memory 98v spi sqrx sn ram mbit bits serial pseudo sram up to 144mhz supply | SOIC | SPI 1.98V",
  "class": "ic.memory"
 }

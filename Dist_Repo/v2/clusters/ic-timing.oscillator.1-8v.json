@@ -6,32 +6,20 @@
   "IC",
   "Timing"
  ],
- "description": "Cluster of 4 SMD 1.8V IC timing oscillators, featuring XUX51, XUY51, XUX71, and XUY71 in JS6-6 and JU6-6 footprint options.",
+ "description": "4 ic timing parts for 1.8V using Oscillator footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Choose tier A parts XUX51 or XUY51 for JS6-6 footprint options.",
-  "Choose tier B parts XUX71 or XUY71 for JU6-6 footprint options.",
-  "Confirm land pattern matches either 5.0x3.2mm P1.27mm or 7.0x5.0mm P2.54mm footprints."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a Oscillator land pattern is intended."
  ],
  "avoid_when": [
-  "Operating supply voltage is not 1.8V.",
-  "Application requires non-SMD through-hole mounting.",
-  "Layout requires footprint packages other than JS6-6 or JU6-6."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than Oscillator."
  ],
  "keywords": [
-  "ic",
-  "timing",
   "oscillator",
-  "1.8v",
   "smd",
-  "xux51",
-  "xuy51",
-  "xux71",
-  "xuy71",
-  "js6-6",
-  "ju6-6",
-  "5.0x3.2mm",
-  "7.0x5.0mm",
-  "kicad-symbols",
   "8v",
   "low",
   "phase",
@@ -41,7 +29,11 @@
   "pll",
   "mhz",
   "complementary",
-  "output"
+  "output",
+  "idt",
+  "smt",
+  "crystal",
+  "otp"
  ],
  "facts": {
   "package_family": "Oscillator",
@@ -66,7 +58,7 @@
    "A": 2,
    "B": 2
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -108,6 +100,6 @@
   "kicad-symbols/Oscillator/XUX71",
   "kicad-symbols/Oscillator/XUY71"
  ],
- "embedding_text": "ic-timing.oscillator.1-8v | IC Timing | Cluster of 4 SMD 1.8V IC timing oscillators, featuring XUX51, XUY51, XUX71, and XUY71 in JS6-6 and JU6-6 footprint options. | ic timing oscillator 1.8v smd xux51 xuy51 xux71 xuy71 js6-6 ju6-6 5.0x3.2mm 7.0x5.0mm kicad-symbols 8v low phase noise quartz based pll mhz complementary output | Oscillator | 1.8V",
+ "embedding_text": "ic-timing.oscillator.1-8v | IC Timing | 4 ic timing parts for 1.8V using Oscillator footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | oscillator smd 8v low phase noise quartz based pll mhz complementary output idt smt crystal otp | Oscillator | 1.8V",
  "class": "ic.timing"
 }

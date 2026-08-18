@@ -5,26 +5,20 @@
  "category_path": [
   "IC"
  ],
- "description": "This IC cluster contains 1 tier C component using the DB50SLE package family and footprint.",
+ "description": "1 ic parts using DB50SLE footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Verify footprint dimensions and pin mapping for the DB50SLE package before layout.",
-  "Check component documentation for complete electrical ratings prior to selection.",
-  "Select when a DB50SLE package family footprint is specifically required."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a DB50SLE land pattern is intended."
  ],
  "avoid_when": [
-  "The design requires a package type other than DB50SLE.",
-  "Electrical specifications or pinout mappings are not verified for the target circuit."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than DB50SLE."
  ],
  "keywords": [
-  "ic",
   "db50sle",
-  "db50sle footprint",
-  "db50sle package",
-  "integrated circuit",
-  "tier c",
-  "dist-legacy",
-  "package family",
-  "ic cluster",
+  "ic",
   "pad",
   "mm",
   "pitch",
@@ -49,12 +43,12 @@
   "tier_counts": {
    "C": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
   "dist-legacy/DB50SLE"
  ],
- "embedding_text": "ic.db50sle | IC | This IC cluster contains 1 tier C component using the DB50SLE package family and footprint. | ic db50sle db50sle footprint db50sle package integrated circuit tier c dist-legacy package family ic cluster pad mm pitch pins | DB50SLE | ",
+ "embedding_text": "ic.db50sle | IC | 1 ic parts using DB50SLE footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | db50sle ic pad mm pitch pins | DB50SLE | ",
  "class": "ic"
 }

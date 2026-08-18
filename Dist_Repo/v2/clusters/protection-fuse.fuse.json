@@ -6,31 +6,22 @@
   "Protection",
   "Fuse"
  ],
- "description": "Cluster of 40 protection fuse components supporting SMD and through-hole mounting across Fuse and Bourns TBU-CA footprints.",
+ "description": "40 protection fuse parts using Fuse footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Match the specific footprint such as Fuse_SunFuse-6HP or Fuse_Bourns_TBU-CA to your layout.",
-  "Verify mounting type requirements between SMD and through-hole options.",
-  "Choose between standard and polarized fuse symbol variants based on schematic needs."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a Fuse land pattern is intended."
  ],
  "avoid_when": [
-  "The circuit requires protection components other than fuses.",
-  "The board layout requires footprints outside the supported Fuse package family.",
-  "Tier A verified components are strictly required, as all parts in this cluster are Tier B."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than Fuse."
  ],
  "keywords": [
   "fuse",
   "protection",
-  "protection fuse",
-  "smd",
-  "through hole",
-  "fuse_sunfuse-6hp",
-  "fuse_bourns_tbu-ca",
-  "polarized",
-  "fuse_polarized",
-  "sunfuse",
-  "bourns",
-  "tbu-ca",
   "tbu",
+  "bourns",
   "bidirectional",
   "high",
   "speed",
@@ -41,7 +32,8 @@
   "capacitance",
   "single",
   "https",
-  "www"
+  "www",
+  "com"
  ],
  "facts": {
   "package_family": "Fuse",
@@ -70,7 +62,7 @@
   "tier_counts": {
    "B": 40
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -156,6 +148,6 @@
   "kicad-symbols/Power_Protection/TBU-CA085-300-WH",
   "kicad-symbols/Power_Protection/TBU-CA085-500-WH"
  ],
- "embedding_text": "protection-fuse.fuse | Protection Fuse | Cluster of 40 protection fuse components supporting SMD and through-hole mounting across Fuse and Bourns TBU-CA footprints. | fuse protection protection fuse smd through hole fuse_sunfuse-6hp fuse_bourns_tbu-ca polarized fuse_polarized sunfuse bourns tbu-ca tbu bidirectional high speed ca wh power low capacitance single https www | Fuse | ",
+ "embedding_text": "protection-fuse.fuse | Protection Fuse | 40 protection fuse parts using Fuse footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | fuse protection tbu bourns bidirectional high speed ca wh power low capacitance single https www com | Fuse | ",
  "class": "protection.fuse"
 }

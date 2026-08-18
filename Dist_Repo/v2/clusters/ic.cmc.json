@@ -5,28 +5,20 @@
  "category_path": [
   "IC"
  ],
- "description": "Integrated circuit (IC) cluster containing 1 tier C part in the CMC package family using the CMC-2020 footprint.",
+ "description": "1 ic parts using CMC footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Verify component compatibility with the CMC-2020 footprint.",
-  "Check part details as the cluster contains 1 tier C part from dist-legacy.",
-  "Confirm application requirements when mounting type is unknown."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a CMC land pattern is intended."
  ],
  "avoid_when": [
-  "The board design requires a package footprint other than CMC-2020.",
-  "Planner-visible parts or higher quality tier parts are required.",
-  "A known mounting type is required for assembly."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than CMC."
  ],
  "keywords": [
   "cmc",
   "ic",
-  "cmc-2020",
-  "ic cmc",
-  "cmc package",
-  "tier c",
-  "dist-legacy",
-  "ic.cmc",
-  "cmc footprint",
-  "unknown mount",
   "pad",
   "mm",
   "pitch",
@@ -51,12 +43,12 @@
   "tier_counts": {
    "C": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
   "dist-legacy/CMC-2020"
  ],
- "embedding_text": "ic.cmc | IC | Integrated circuit (IC) cluster containing 1 tier C part in the CMC package family using the CMC-2020 footprint. | cmc ic cmc-2020 ic cmc cmc package tier c dist-legacy ic.cmc cmc footprint unknown mount pad mm pitch pins | CMC | ",
+ "embedding_text": "ic.cmc | IC | 1 ic parts using CMC footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | cmc ic pad mm pitch pins | CMC | ",
  "class": "ic"
 }

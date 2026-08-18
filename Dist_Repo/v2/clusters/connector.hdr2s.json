@@ -5,33 +5,24 @@
  "category_path": [
   "Connector"
  ],
- "description": "Cluster of 8 SMD connector parts in the HDR2S footprint family, spanning 2x2 through 2x5 pin configurations in male and female variants, all tier C with generated review status.",
+ "description": "8 connector parts using HDR2S footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Match the exact footprint (F or M, 2x2/2x3/2x4/2x5) to the intended land pattern.",
-  "All 8 parts are tier C and review_status is generated, so verify details before use.",
-  "Confirm SMD mounting matches the board's assembly process."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a HDR2S land pattern is intended."
  ],
  "avoid_when": [
-  "A through-hole mounted header is needed instead of SMD.",
-  "A verified or higher-tier (non-generated) part record is required.",
-  "The exact row/pin count (2x2, 2x3, 2x4, or 2x5) or gender (F/M) is not confirmed.",
-  "Electrical ratings, pinout, or dimensions must be confirmed but are not documented in this cluster."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than HDR2S."
  ],
  "keywords": [
   "hdr2s",
   "connector",
-  "header",
-  "smd",
-  "surface mount",
   "2x2",
   "2x3",
   "2x4",
   "2x5",
-  "male",
-  "female",
-  "chilaboard-altium-library",
-  "tier c",
-  "generated",
   "surface",
   "mount",
   "pad",
@@ -65,7 +56,7 @@
   "tier_counts": {
    "C": 8
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
@@ -78,6 +69,6 @@
   "chilaboard-altium-library/HDR2S_M_2X4/HDR2S_M_2X4",
   "chilaboard-altium-library/HDR2S_M_2X5/HDR2S_M_2X5"
  ],
- "embedding_text": "connector.hdr2s | Connector | Cluster of 8 SMD connector parts in the HDR2S footprint family, spanning 2x2 through 2x5 pin configurations in male and female variants, all tier C with generated review status. | hdr2s connector header smd surface mount 2x2 2x3 2x4 2x5 male female chilaboard-altium-library tier c generated surface mount pad mm pitch pins | HDR2S | ",
+ "embedding_text": "connector.hdr2s | Connector | 8 connector parts using HDR2S footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | hdr2s connector 2x2 2x3 2x4 2x5 surface mount pad mm pitch pins | HDR2S | ",
  "class": "connector"
 }

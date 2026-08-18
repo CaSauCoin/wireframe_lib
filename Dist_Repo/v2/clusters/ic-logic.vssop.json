@@ -6,34 +6,24 @@
   "IC",
   "Logic"
  ],
- "description": "Logic IC cluster containing 5 tier A surface-mount parts in VSSOP-8_2.3x2mm_P0.5mm packaging.",
+ "description": "5 ic logic parts using VSSOP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Require surface-mount logic ICs in VSSOP package family.",
-  "Selecting parts matching the VSSOP-8_2.3x2mm_P0.5mm footprint.",
-  "Choosing tier A logic IC entries from KiCad symbols."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a VSSOP land pattern is intended."
  ],
  "avoid_when": [
-  "Through-hole mounting or non-SMD footprints are required.",
-  "The PCB layout requires package footprints other than VSSOP-8_2.3x2mm_P0.5mm.",
-  "Non-logic IC components are required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than VSSOP."
  ],
  "keywords": [
-  "ic",
-  "logic",
   "vssop",
-  "vssop-8",
-  "vssop-8_2.3x2mm_p0.5mm",
-  "smd",
-  "leveltranslator",
-  "74lvc2t45dc",
-  "74lvch2t45dc",
-  "sn74lvc2t45dcur",
-  "txb0102dcu",
-  "txs0102dcu",
-  "ic.logic",
+  "logic",
   "level",
   "shifter",
   "translation",
+  "leveltranslator",
   "bit",
   "3x2mm",
   "p0",
@@ -41,7 +31,9 @@
   "so",
   "jedec",
   "mo",
-  "ca"
+  "ca",
+  "texas",
+  "dcu0008a"
  ],
  "facts": {
   "package_family": "VSSOP",
@@ -62,7 +54,7 @@
   "tier_counts": {
    "A": 5
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -113,6 +105,6 @@
   "kicad-symbols/Logic_LevelTranslator/TXB0102DCU",
   "kicad-symbols/Logic_LevelTranslator/TXS0102DCU"
  ],
- "embedding_text": "ic-logic.vssop | IC Logic | Logic IC cluster containing 5 tier A surface-mount parts in VSSOP-8_2.3x2mm_P0.5mm packaging. | ic logic vssop vssop-8 vssop-8_2.3x2mm_p0.5mm smd leveltranslator 74lvc2t45dc 74lvch2t45dc sn74lvc2t45dcur txb0102dcu txs0102dcu ic.logic level shifter translation bit 3x2mm p0 5mm so jedec mo ca | VSSOP | ",
+ "embedding_text": "ic-logic.vssop | IC Logic | 5 ic logic parts using VSSOP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | vssop logic level shifter translation leveltranslator bit 3x2mm p0 5mm so jedec mo ca texas dcu0008a | VSSOP | ",
  "class": "ic.logic"
 }

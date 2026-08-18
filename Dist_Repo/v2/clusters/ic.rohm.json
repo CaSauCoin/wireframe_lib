@@ -5,30 +5,20 @@
  "category_path": [
   "IC"
  ],
- "description": "Cluster of 14 integrated circuit parts featuring ROHM footprints for surface-mount and unspecified mounting styles in tier C quality.",
+ "description": "14 ic parts using ROHM footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when a ROHM package family footprint such as HRP7, MLGA, HTSOP, HTSSOP, or TSOP is required.",
-  "Check part specifications carefully, as all 14 entries are tier C quality.",
-  "Ensure compatibility with dist-legacy or celestial-altium-library component sources."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a ROHM land pattern is intended."
  ],
  "avoid_when": [
-  "The design requires footprints outside the ROHM package family.",
-  "Through-hole mounting is required for the part.",
-  "Verified high-tier (tier A or B) library parts are required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than ROHM."
  ],
  "keywords": [
   "rohm",
   "ic",
-  "integrated circuit",
-  "smd",
-  "hrp7",
-  "mlga010v020a",
-  "rpr-0521rs",
-  "rpr-0720",
-  "htsop-8",
-  "htssop-b28",
-  "sop-j11",
-  "tsop-54",
   "pad",
   "mm",
   "pitch",
@@ -40,7 +30,9 @@
   "htssop",
   "b28",
   "rgb",
-  "led"
+  "led",
+  "15mm",
+  "sop"
  ],
  "facts": {
   "package_family": "ROHM",
@@ -72,7 +64,7 @@
   "tier_counts": {
    "C": 14
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
@@ -91,6 +83,6 @@
   "celestial-altium-library/ROHM SOP-J11/ROHM_SOP-J11",
   "celestial-altium-library/ROHM TSOP-54 TYPE2 400MIL/ROHM_TSOP-54_TYPE2_400MIL"
  ],
- "embedding_text": "ic.rohm | IC | Cluster of 14 integrated circuit parts featuring ROHM footprints for surface-mount and unspecified mounting styles in tier C quality. | rohm ic integrated circuit smd hrp7 mlga010v020a rpr-0521rs rpr-0720 htsop-8 htssop-b28 sop-j11 tsop-54 pad mm pitch pins rpr surface mount htsop htssop b28 rgb led | ROHM | ",
+ "embedding_text": "ic.rohm | IC | 14 ic parts using ROHM footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | rohm ic pad mm pitch pins rpr surface mount htsop htssop b28 rgb led 15mm sop | ROHM | ",
  "class": "ic"
 }

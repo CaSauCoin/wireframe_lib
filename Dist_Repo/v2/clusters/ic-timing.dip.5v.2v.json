@@ -6,42 +6,34 @@
   "IC",
   "Timing"
  ],
- "description": "Timing IC cluster of through-hole DIP components containing 2 tier A parts in DIP-8_W7.62mm footprints with 5V and 2V facets.",
+ "description": "2 ic timing parts for 5V, 2V using DIP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when requiring a through-hole timing IC in a DIP-8_W7.62mm footprint.",
-  "Choose between tier A KiCad symbol parts DS1302+ and DS1302N+.",
-  "Use for timing IC designs specifying 5V or 2V facets."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a DIP land pattern is intended."
  ],
  "avoid_when": [
-  "Surface-mount components are required instead of through-hole DIP packages.",
-  "The PCB layout requires a footprint other than DIP-8_W7.62mm.",
-  "The circuit does not require a timing IC."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than DIP."
  ],
  "keywords": [
-  "ic",
-  "timing",
   "dip",
-  "dip-8",
-  "dip-8_w7.62mm",
-  "through_hole",
-  "5v",
-  "2v",
-  "ds1302+",
-  "ds1302n+",
-  "kicad-symbols",
-  "timer_rtc",
   "rtc",
   "trickle",
   "charge",
   "timekeeping",
   "chip",
   "to",
+  "5v",
   "62mm",
   "timer",
   "0v",
   "vcc",
   "w7",
-  "tht"
+  "tht",
+  "dil",
+  "pdip"
  ],
  "facts": {
   "package_family": "DIP",
@@ -65,7 +57,7 @@
   "tier_counts": {
    "A": 2
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -89,6 +81,6 @@
   "kicad-symbols/Timer_RTC/DS1302+",
   "kicad-symbols/Timer_RTC/DS1302N+"
  ],
- "embedding_text": "ic-timing.dip.5v.2v | IC Timing | Timing IC cluster of through-hole DIP components containing 2 tier A parts in DIP-8_W7.62mm footprints with 5V and 2V facets. | ic timing dip dip-8 dip-8_w7.62mm through_hole 5v 2v ds1302+ ds1302n+ kicad-symbols timer_rtc rtc trickle charge timekeeping chip to 62mm timer 0v vcc w7 tht | DIP | 5V 2V",
+ "embedding_text": "ic-timing.dip.5v.2v | IC Timing | 2 ic timing parts for 5V, 2V using DIP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | dip rtc trickle charge timekeeping chip to 5v 62mm timer 0v vcc w7 tht dil pdip | DIP | 5V 2V",
  "class": "ic.timing"
 }

@@ -6,37 +6,29 @@
   "IC",
   "RF"
  ],
- "description": "RF IC cluster containing surface-mount (SMD) parts in the Particle package family using the Particle_P1 footprint.",
+ "description": "1 ic rf parts using Particle footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select for surface-mount (SMD) RF IC designs requiring a Particle package family layout.",
-  "Ensure layout footprint matches the Particle_P1 land pattern specifications.",
-  "Check individual part documentation for exact pin assignments and electrical characteristics."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a Particle land pattern is intended."
  ],
  "avoid_when": [
-  "Do not use when through-hole mounting is required instead of SMD.",
-  "Avoid if the board design specifies package footprints other than Particle_P1.",
-  "Do not use when non-RF component classifications are required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than Particle."
  ],
  "keywords": [
-  "ic",
-  "rf",
-  "ic rf",
-  "rf ic",
   "particle",
-  "particle p1",
-  "particle_p1",
   "p1",
-  "smd",
-  "surface mount",
-  "kicad-symbols",
-  "kicad",
   "module",
+  "rf",
   "wi",
   "fi",
   "1mb",
   "flash",
   "128kb",
-  "ram"
+  "ram",
+  "ic"
  ],
  "facts": {
   "package_family": "Particle",
@@ -57,12 +49,12 @@
   "tier_counts": {
    "C": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
   "kicad-symbols/RF_Module/Particle_P1"
  ],
- "embedding_text": "ic-rf.particle | IC RF | RF IC cluster containing surface-mount (SMD) parts in the Particle package family using the Particle_P1 footprint. | ic rf ic rf rf ic particle particle p1 particle_p1 p1 smd surface mount kicad-symbols kicad module wi fi 1mb flash 128kb ram | Particle | ",
+ "embedding_text": "ic-rf.particle | IC RF | 1 ic rf parts using Particle footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | particle p1 module rf wi fi 1mb flash 128kb ram ic | Particle | ",
  "class": "ic.rf"
 }

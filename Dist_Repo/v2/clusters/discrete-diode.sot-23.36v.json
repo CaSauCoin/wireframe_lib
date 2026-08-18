@@ -6,44 +6,34 @@
   "Discrete",
   "Diode"
  ],
- "description": "Cluster of 9 SMD diode parts (mostly Zener/TVS types) rated 36V in SOT-23 packages, drawn mainly from Alternate-KiCad-Library (8 parts) plus one JLCPCB-Kicad-Library part; 8 tier-A, 1 tier-B, review status generated.",
+ "description": "9 discrete diode parts for 36V using SOT-23 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Prefer the 8 tier-A entries over the single tier-B entry",
-  "Confirm the specific diode function (zener/TVS/other) matches your circuit before picking a part",
-  "Match the exact footprint variant needed: SOT-23 vs SOT-23-3_L2.9-W1.5-P1.90-LS2.6-BR",
-  "Review status is 'generated' — verify against the source datasheet before committing"
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SOT-23 land pattern is intended."
  ],
  "avoid_when": [
-  "Design requires a voltage rating other than 36V",
-  "A package other than SOT-23 is required",
-  "The exact diode type (zener/TVS/switching) for the part isn't confirmed",
-  "Part's symbol-footprint pairing hasn't been verified beyond the generated status"
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SOT-23."
  ],
  "keywords": [
-  "sot-23",
+  "sot",
   "diode",
   "zener",
-  "tvs",
   "36v",
-  "discrete diode",
-  "smd",
-  "akl",
-  "alternate-kicad-library",
-  "jlcpcb-kicad-library",
-  "c36",
-  "bzx84-c36",
-  "az23c36",
-  "bzb84-b36",
-  "cdsot23-t36",
-  "tier a",
-  "generated",
-  "sot",
   "dual",
   "discrete",
+  "akl",
   "alternate",
   "kicad",
   "library",
-  "300mw"
+  "tvs",
+  "300mw",
+  "common",
+  "unidirectional",
+  "c36",
+  "anode"
  ],
  "facts": {
   "package_family": "SOT-23",
@@ -69,7 +59,7 @@
    "A": 8,
    "B": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -124,6 +114,6 @@
   "Alternate-KiCad-Library/Diode_TVS_AKL/SDC36",
   "JLCPCB-Kicad-Library/JLCPCB-Diode-Packages/TVS-Bi, H36VLT2B"
  ],
- "embedding_text": "discrete-diode.sot-23.36v | Discrete Diode | Cluster of 9 SMD diode parts (mostly Zener/TVS types) rated 36V in SOT-23 packages, drawn mainly from Alternate-KiCad-Library (8 parts) plus one JLCPCB-Kicad-Library part; 8 tier-A, 1 tier-B, review status generated. | sot-23 diode zener tvs 36v discrete diode smd akl alternate-kicad-library jlcpcb-kicad-library c36 bzx84-c36 az23c36 bzb84-b36 cdsot23-t36 tier a generated sot dual discrete alternate kicad library 300mw | SOT-23 | 36V",
+ "embedding_text": "discrete-diode.sot-23.36v | Discrete Diode | 9 discrete diode parts for 36V using SOT-23 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | sot diode zener 36v dual discrete akl alternate kicad library tvs 300mw common unidirectional c36 anode | SOT-23 | 36V",
  "class": "discrete.diode"
 }

@@ -5,30 +5,26 @@
  "category_path": [
   "IC"
  ],
- "description": "Integrated circuit cluster containing 4 tier-C parts with Littelfuse footprints for surface-mount and through-hole mounting.",
+ "description": "4 ic parts using LITTELFUSE footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Choose when working with IC parts utilizing Littelfuse package footprints.",
-  "Verify whether SMD or through-hole footprint variant is required.",
-  "Check part details directly as all existing parts are quality tier C."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a LITTELFUSE land pattern is intended."
  ],
  "avoid_when": [
-  "The PCB design requires packages other than Littelfuse footprints.",
-  "Planner-visible or tier A components are strictly required.",
-  "Mounting requirements (SMD vs through-hole) do not match available footprints."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than LITTELFUSE."
  ],
  "keywords": [
-  "ic",
   "littelfuse",
+  "package",
   "ixys",
   "dfn",
-  "dfn-8",
   "3x3",
-  "smd",
-  "through_hole",
+  "ic",
   "xbn2mm",
   "xn2mm",
-  "package",
-  "footprint",
   "pad",
   "mm",
   "pitch",
@@ -63,7 +59,7 @@
   "tier_counts": {
    "C": 4
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
@@ -72,6 +68,6 @@
   "dist-legacy/Littelfuse_Package_W_XN2MM",
   "celestial-altium-library/LITTELFUSE IXYS DFN-8 M 3X3/LITTELFUSE_IXYS_DFN-8_M_3X3"
  ],
- "embedding_text": "ic.littelfuse | IC | Integrated circuit cluster containing 4 tier-C parts with Littelfuse footprints for surface-mount and through-hole mounting. | ic littelfuse ixys dfn dfn-8 3x3 smd through_hole xbn2mm xn2mm package footprint pad mm pitch pins power igbt module pdf | LITTELFUSE | ",
+ "embedding_text": "ic.littelfuse | IC | 4 ic parts using LITTELFUSE footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | littelfuse package ixys dfn 3x3 ic xbn2mm xn2mm pad mm pitch pins power igbt module pdf | LITTELFUSE | ",
  "class": "ic"
 }

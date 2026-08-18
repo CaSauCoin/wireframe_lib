@@ -6,42 +6,34 @@
   "IC",
   "RF"
  ],
- "description": "Cluster of 11 surface-mount IC RF components featuring an SPI interface and HOPERF footprints including HOPERF_RFM9XW_SMD and HOPERF_RFM69HW.",
+ "description": "11 ic rf parts for SPI using HOPERF footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Choose when requiring surface-mount RF ICs with an SPI interface.",
-  "Select based on footprint compatibility with HOPERF_RFM9XW_SMD or HOPERF_RFM69HW.",
-  "Use when targeting HOPERF parts such as RFM69HCW, RFM69HW, RFM69W, or RFM95W series."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a HOPERF land pattern is intended."
  ],
  "avoid_when": [
-  "The application requires non-SMD or through-hole mounting.",
-  "The design requires a bus or control interface other than SPI.",
-  "The PCB layout requires footprints other than HOPERF_RFM9XW_SMD or HOPERF_RFM69HW."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than HOPERF."
  ],
  "keywords": [
-  "ic",
-  "rf",
-  "spi",
-  "hoperf",
-  "smd",
-  "ic.rf",
-  "hoperf_rfm9xw_smd",
-  "hoperf_rfm69hw",
-  "rfm69hcw",
-  "rfm69hw",
-  "rfm69w",
-  "rfm95w-868s2",
-  "rfm95w-915s2",
-  "kicad-symbols",
   "module",
   "transceiver",
   "low",
   "power",
   "long",
   "range",
+  "rf",
+  "spi",
+  "hoperf",
   "to",
+  "smd",
   "interface",
+  "ic",
   "mhz",
-  "dip"
+  "dip",
+  "rfm9xw"
  ],
  "facts": {
   "package_family": "HOPERF",
@@ -65,7 +57,7 @@
   "tier_counts": {
    "B": 11
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -122,6 +114,6 @@
   "kicad-symbols/RF_Module/RFM98W-315S2",
   "kicad-symbols/RF_Module/RFM98W-433S2"
  ],
- "embedding_text": "ic-rf.hoperf.spi | IC RF | Cluster of 11 surface-mount IC RF components featuring an SPI interface and HOPERF footprints including HOPERF_RFM9XW_SMD and HOPERF_RFM69HW. | ic rf spi hoperf smd ic.rf hoperf_rfm9xw_smd hoperf_rfm69hw rfm69hcw rfm69hw rfm69w rfm95w-868s2 rfm95w-915s2 kicad-symbols module transceiver low power long range to interface mhz dip | HOPERF | SPI",
+ "embedding_text": "ic-rf.hoperf.spi | IC RF | 11 ic rf parts for SPI using HOPERF footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | module transceiver low power long range rf spi hoperf to smd interface ic mhz dip rfm9xw | HOPERF | SPI",
  "class": "ic.rf"
 }

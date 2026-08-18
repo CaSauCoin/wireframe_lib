@@ -6,32 +6,30 @@
   "IC",
   "Microcontroller"
  ],
- "description": "IC microcontroller cluster containing a surface-mount Google Coral module using the Google_Coral_SMT_TPU_Module footprint from KiCad symbols.",
+ "description": "1 ic microcontroller parts using Google footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when using the surface-mount Google Coral MCU module in KiCad designs.",
-  "Confirm compatibility with the Google_Coral_SMT_TPU_Module footprint."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a Google land pattern is intended."
  ],
  "avoid_when": [
-  "Avoid when the PCB design requires a package footprint other than Google_Coral_SMT_TPU_Module.",
-  "Avoid when through-hole mounting or non-SMD component footprints are required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than Google."
  ],
  "keywords": [
   "google",
   "coral",
-  "google coral",
   "tpu",
   "module",
   "mcu",
-  "microcontroller",
-  "ic",
-  "smt",
-  "smd",
-  "kicad-symbols",
-  "google_coral_smt_tpu_module",
   "edge",
   "tops",
   "2w",
-  "lga"
+  "lga",
+  "smt",
+  "ic",
+  "microcontroller"
  ],
  "facts": {
   "package_family": "Google",
@@ -52,7 +50,7 @@
   "tier_counts": {
    "A": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -67,6 +65,6 @@
  "part_ids": [
   "kicad-symbols/MCU_Module/Google_Coral"
  ],
- "embedding_text": "ic-mcu.google | IC Microcontroller | IC microcontroller cluster containing a surface-mount Google Coral module using the Google_Coral_SMT_TPU_Module footprint from KiCad symbols. | google coral google coral tpu module mcu microcontroller ic smt smd kicad-symbols google_coral_smt_tpu_module edge tops 2w lga | Google | ",
+ "embedding_text": "ic-mcu.google | IC Microcontroller | 1 ic microcontroller parts using Google footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | google coral tpu module mcu edge tops 2w lga smt ic microcontroller | Google | ",
  "class": "ic.mcu"
 }

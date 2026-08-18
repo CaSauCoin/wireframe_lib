@@ -6,28 +6,22 @@
   "Passive",
   "Resistor"
  ],
- "description": "Through-hole passive resistor cluster using the TPTHD package family and TPTHD_CROCODILEx2 footprint.",
+ "description": "1 passive resistor parts using TPTHD footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Confirm through-hole mounting requirements match the board layout.",
-  "Verify part specifications and quality tier ratings before selection.",
-  "Check footprint compatibility for TPTHD_CROCODILEx2 land patterns."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a TPTHD land pattern is intended."
  ],
  "avoid_when": [
-  "A surface-mount or non-TPTHD resistor package is required.",
-  "The PCB layout does not use the TPTHD_CROCODILEx2 footprint.",
-  "Tier C or unreviewed generated library components are not permitted."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than TPTHD."
  ],
  "keywords": [
+  "tpthd",
+  "crocodilex2",
   "passive",
   "resistor",
-  "tpthd",
-  "tpthd_crocodilex2",
-  "through hole",
-  "through_hole",
-  "crocodilex2",
-  "chilaboard",
-  "chilaboard-altium-library",
-  "passive resistor",
   "through",
   "hole",
   "pad",
@@ -54,12 +48,12 @@
   "tier_counts": {
    "C": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
   "chilaboard-altium-library/TPTHD_CROCODILEx2/TPTHD_CROCODILEx2"
  ],
- "embedding_text": "passive-resistor.tpthd | Passive Resistor | Through-hole passive resistor cluster using the TPTHD package family and TPTHD_CROCODILEx2 footprint. | passive resistor tpthd tpthd_crocodilex2 through hole through_hole crocodilex2 chilaboard chilaboard-altium-library passive resistor through hole pad mm pitch pins | TPTHD | ",
+ "embedding_text": "passive-resistor.tpthd | Passive Resistor | 1 passive resistor parts using TPTHD footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | tpthd crocodilex2 passive resistor through hole pad mm pitch pins | TPTHD | ",
  "class": "passive.resistor"
 }

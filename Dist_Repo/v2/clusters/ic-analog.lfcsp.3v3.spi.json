@@ -6,42 +6,34 @@
   "IC",
   "Analog"
  ],
- "description": "Cluster of 5 surface-mount analog IC components in LFCSP packages featuring 3.3V operation and SPI interface support.",
+ "description": "5 ic analog parts for 3.3V, SPI using LFCSP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select based on exact footprint variant, such as 20-pin or 24-pin LFCSP options.",
-  "Verify requirement for SPI communications interface and 3.3V rail voltage.",
-  "Choose when surface-mount LFCSP packaging is required for the analog IC."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a LFCSP land pattern is intended."
  ],
  "avoid_when": [
-  "Through-hole or non-LFCSP package mounting is required.",
-  "The design requires non-SPI interfaces or operating voltages other than 3.3V.",
-  "Digital-only ICs or non-analog component functions are needed."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than LFCSP."
  ],
  "keywords": [
-  "ic analog",
   "lfcsp",
-  "3.3v",
-  "spi",
-  "smd",
-  "ad7298",
-  "ad7380-4",
-  "ad7386-4",
-  "ad7387-4",
-  "ad7388-4",
-  "lfcsp-24-1ep",
-  "lfcsp-20-1ep",
-  "analog_adc",
-  "4x4mm",
   "analog",
   "adc",
   "3v",
+  "spi",
   "5mm",
   "bit",
   "sar",
   "1ep",
+  "4x4mm",
   "p0",
   "nolead",
-  "ic"
+  "ic",
+  "input",
+  "quad",
+  "simultaneous"
  ],
  "facts": {
   "package_family": "LFCSP",
@@ -66,7 +58,7 @@
   "tier_counts": {
    "B": 5
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -117,6 +109,6 @@
   "kicad-symbols/Analog_ADC/AD7387-4",
   "kicad-symbols/Analog_ADC/AD7388-4"
  ],
- "embedding_text": "ic-analog.lfcsp.3v3.spi | IC Analog | Cluster of 5 surface-mount analog IC components in LFCSP packages featuring 3.3V operation and SPI interface support. | ic analog lfcsp 3.3v spi smd ad7298 ad7380-4 ad7386-4 ad7387-4 ad7388-4 lfcsp-24-1ep lfcsp-20-1ep analog_adc 4x4mm analog adc 3v 5mm bit sar 1ep p0 nolead ic | LFCSP | 3.3V SPI",
+ "embedding_text": "ic-analog.lfcsp.3v3.spi | IC Analog | 5 ic analog parts for 3.3V, SPI using LFCSP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | lfcsp analog adc 3v spi 5mm bit sar 1ep 4x4mm p0 nolead ic input quad simultaneous | LFCSP | 3.3V SPI",
  "class": "ic.analog"
 }

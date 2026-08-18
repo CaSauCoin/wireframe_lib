@@ -6,44 +6,34 @@
   "Discrete",
   "Diode"
  ],
- "description": "Cluster of 33 discrete 7V-rated diodes (Zener and TVS types) in D-family packages, covering SMC, SMA, SMB, SOD-123F, SOD-523, DO-15, and P600 footprints for SMD or through-hole mounting.",
+ "description": "33 discrete diode parts for 7V using D footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Match the exact footprint (SMC, SMA, SMB, SOD-123F, SOD-523, DO-15, P600) to your intended land pattern.",
-  "Distinguish Zener-suffixed footprints from TVS-suffixed footprints before selecting a part.",
-  "Prefer tier A entries (30 of 33 parts) over the 3 tier B entries.",
-  "Confirm SMD vs through-hole mount matches your assembly process."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a D land pattern is intended."
  ],
  "avoid_when": [
-  "A voltage rating other than 7V is required.",
-  "No D-family footprint (SMC/SMA/SMB/SOD-123F/SOD-523/DO-15/P600) fits the layout.",
-  "The design does not specify whether a Zener or TVS diode type is needed.",
-  "A tier B part is selected without verifying its footprint pairing."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than D."
  ],
  "keywords": [
   "diode",
-  "tvs diode",
-  "zener diode",
-  "7v",
-  "discrete diode",
-  "d package",
-  "smc footprint",
-  "sma footprint",
-  "smb footprint",
-  "sod-123f",
-  "sod-523",
-  "do-15",
-  "p600",
-  "smd",
-  "through hole",
-  "alternate kicad library",
-  "jlcpcb kicad library",
   "tvs",
+  "7v",
   "unidirectional",
   "discrete",
   "akl",
   "alternate",
   "kicad",
-  "library"
+  "library",
+  "do",
+  "bidirectional",
+  "smc",
+  "sod",
+  "0a",
+  "sma",
+  "horizontal"
  ],
  "facts": {
   "package_family": "D",
@@ -80,7 +70,7 @@
    "A": 30,
    "B": 3
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -159,6 +149,6 @@
   "Alternate-KiCad-Library/Diode_TVS_AKL/TPSMA6L7.0A",
   "JLCPCB-Kicad-Library/JLCPCB-Diodes/TVS-Bi,H7VN10B"
  ],
- "embedding_text": "discrete-diode.d.7v | Discrete Diode | Cluster of 33 discrete 7V-rated diodes (Zener and TVS types) in D-family packages, covering SMC, SMA, SMB, SOD-123F, SOD-523, DO-15, and P600 footprints for SMD or through-hole mounting. | diode tvs diode zener diode 7v discrete diode d package smc footprint sma footprint smb footprint sod-123f sod-523 do-15 p600 smd through hole alternate kicad library jlcpcb kicad library tvs unidirectional discrete akl alternate kicad library | D | 7V",
+ "embedding_text": "discrete-diode.d.7v | Discrete Diode | 33 discrete diode parts for 7V using D footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | diode tvs 7v unidirectional discrete akl alternate kicad library do bidirectional smc sod 0a sma horizontal | D | 7V",
  "class": "discrete.diode"
 }

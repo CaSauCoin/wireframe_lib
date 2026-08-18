@@ -6,30 +6,21 @@
   "IC",
   "Memory"
  ],
- "description": "Surface-mount memory IC cluster featuring SPI interface and 1.65V facets in WSON packages.",
+ "description": "2 ic memory parts for SPI, 1.65V using WSON footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select for surface-mount memory applications requiring an SPI interface and 1.65V operation.",
-  "Verify layout compatibility with the WSON-8-1EP_6x5mm_P1.27mm_EP3.4x4mm footprint.",
-  "Choose when Tier B KiCad symbol components are appropriate for the project."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a WSON land pattern is intended."
  ],
  "avoid_when": [
-  "Avoid when target designs require mounting types other than surface-mount.",
-  "Do not use if operating voltage requirements differ from 1.65V or non-SPI interfaces are needed.",
-  "Avoid when footprint requirements do not match WSON-8-1EP land patterns."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than WSON."
  ],
  "keywords": [
-  "ic",
+  "wson",
   "memory",
   "spi",
-  "1.65v",
-  "wson",
-  "smd",
-  "wson-8-1ep",
-  "6x5mm",
-  "p1.27mm",
-  "ep3.4x4mm",
-  "mx25r3235fznxx0",
-  "mx25r3235fznxx1",
   "flash",
   "65v",
   "mbit",
@@ -38,6 +29,7 @@
   "voltage",
   "serial",
   "1ep",
+  "6x5mm",
   "p1",
   "27mm",
   "ep3",
@@ -65,7 +57,7 @@
   "tier_counts": {
    "B": 2
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -89,6 +81,6 @@
   "kicad-symbols/Memory_Flash/MX25R3235FZNxx0",
   "kicad-symbols/Memory_Flash/MX25R3235FZNxx1"
  ],
- "embedding_text": "ic-memory.wson.spi.1-65v | IC Memory | Surface-mount memory IC cluster featuring SPI interface and 1.65V facets in WSON packages. | ic memory spi 1.65v wson smd wson-8-1ep 6x5mm p1.27mm ep3.4x4mm mx25r3235fznxx0 mx25r3235fznxx1 flash 65v mbit wide range voltage serial 1ep p1 27mm ep3 4x4mm | WSON | SPI 1.65V",
+ "embedding_text": "ic-memory.wson.spi.1-65v | IC Memory | 2 ic memory parts for SPI, 1.65V using WSON footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | wson memory spi flash 65v mbit wide range voltage serial 1ep 6x5mm p1 27mm ep3 4x4mm | WSON | SPI 1.65V",
  "class": "ic.memory"
 }

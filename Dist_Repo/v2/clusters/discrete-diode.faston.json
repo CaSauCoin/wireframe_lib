@@ -6,30 +6,20 @@
   "Discrete",
   "Diode"
  ],
- "description": "This cluster contains 1 discrete diode part using the Faston footprint and package family.",
+ "description": "1 discrete diode parts using Faston footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when a discrete diode with a Faston footprint is required.",
-  "Review the single tier B part entry from dist-legacy sources.",
-  "Verify footprint and mounting requirements as mount type is specified as unknown."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a Faston land pattern is intended."
  ],
  "avoid_when": [
-  "Do not use if the board layout requires a footprint or package family other than Faston.",
-  "Avoid if tier B quality status or dist-legacy source is unacceptable.",
-  "Avoid when a defined mount type (such as surface-mount or through-hole) is required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than Faston."
  ],
  "keywords": [
   "faston",
   "diode",
-  "discrete",
-  "discrete diode",
-  "discrete.diode",
-  "faston footprint",
-  "faston package",
-  "tier b",
-  "dist-legacy",
-  "faston_c.i.",
-  "faston c.i.",
-  "discrete diode faston",
   "two",
   "pin",
   "component",
@@ -40,7 +30,8 @@
   "terminals",
   "in",
   "footprint",
-  "rectifier"
+  "rectifier",
+  "discrete"
  ],
  "facts": {
   "package_family": "Faston",
@@ -61,7 +52,7 @@
   "tier_counts": {
    "B": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -76,6 +67,6 @@
  "part_ids": [
   "dist-legacy/Faston C.I."
  ],
- "embedding_text": "discrete-diode.faston | Discrete Diode | This cluster contains 1 discrete diode part using the Faston footprint and package family. | faston diode discrete discrete diode discrete.diode faston footprint faston package tier b dist-legacy faston_c.i. faston c.i. discrete diode faston two pin component with anode and cathode terminals in footprint rectifier | Faston | ",
+ "embedding_text": "discrete-diode.faston | Discrete Diode | 1 discrete diode parts using Faston footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | faston diode two pin component with anode and cathode terminals in footprint rectifier discrete | Faston | ",
  "class": "discrete.diode"
 }

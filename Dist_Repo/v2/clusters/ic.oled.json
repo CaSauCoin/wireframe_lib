@@ -5,34 +5,24 @@
  "category_path": [
   "IC"
  ],
- "description": "IC class cluster containing 6 OLED display part entries in SMD, through-hole, and unknown mounts across quality tiers B and C.",
+ "description": "6 ic parts using OLED footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select by exact footprint match such as folded OLED modules or SSD1306 display patterns.",
-  "Prefer Tier B representative parts over Tier C entries when choosing components.",
-  "Verify mount type compatibility among SMD, through-hole, or unknown options."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a OLED land pattern is intended."
  ],
  "avoid_when": [
-  "The design requires a display package family other than OLED.",
-  "Tier A component quality status is strictly required.",
-  "Electrical parameters, pinouts, or dimensions not listed in cluster facts are required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than OLED."
  ],
  "keywords": [
-  "ic",
   "oled",
   "ssd1306",
   "display",
   "sparkfun",
-  "chilaboard",
-  "smd",
-  "through_hole",
-  "128x64",
-  "128x128",
+  "ic",
   "spi",
-  "0.66in",
-  "1.3in",
-  "1.5in",
-  "folded",
-  "ic.oled",
   "view",
   "area",
   "pixels",
@@ -40,7 +30,9 @@
   "mm",
   "pitch",
   "pins",
-  "3in"
+  "3in",
+  "128x64",
+  "folded"
  ],
  "facts": {
   "package_family": "OLED",
@@ -70,7 +62,7 @@
    "B": 2,
    "C": 4
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -98,6 +90,6 @@
   "chilaboard-altium-library/OLED_SSD1306_2864/OLED_SSD1306_2864",
   "chilaboard-altium-library/OLED_SSD1306_64_SPI/OLED_SSD1306_64_SPI"
  ],
- "embedding_text": "ic.oled | IC | IC class cluster containing 6 OLED display part entries in SMD, through-hole, and unknown mounts across quality tiers B and C. | ic oled ssd1306 display sparkfun chilaboard smd through_hole 128x64 128x128 spi 0.66in 1.3in 1.5in folded ic.oled view area pixels pad mm pitch pins 3in | OLED | ",
+ "embedding_text": "ic.oled | IC | 6 ic parts using OLED footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | oled ssd1306 display sparkfun ic spi view area pixels pad mm pitch pins 3in 128x64 folded | OLED | ",
  "class": "ic"
 }

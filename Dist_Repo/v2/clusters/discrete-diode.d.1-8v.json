@@ -6,29 +6,19 @@
   "Discrete",
   "Diode"
  ],
- "description": "Cluster of 2 Tier A surface-mount 1.8V discrete diodes in package family D using D_SOD-123 footprints from Alternate-KiCad-Library.",
+ "description": "2 discrete diode parts for 1.8V using D footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when a surface-mount 1.8V discrete diode in D_SOD-123 footprint is needed.",
-  "Choose between Tier A parts DDZ9678 and MMSZ4678 from Alternate-KiCad-Library.",
-  "Ensure package family D land patterns match PCB requirements."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a D land pattern is intended."
  ],
  "avoid_when": [
-  "Avoid when the PCB design requires a footprint other than D_SOD-123.",
-  "Do not use when operating voltage requirements differ from 1.8V.",
-  "Avoid if non-SMD or through-hole mounting is required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than D."
  ],
  "keywords": [
-  "discrete",
   "diode",
-  "1.8v",
-  "smd",
-  "d_sod-123",
-  "package family d",
-  "alternate-kicad-library",
-  "ddz9678",
-  "mmsz4678",
-  "discrete diode",
-  "tier a",
   "zener",
   "sod",
   "8v",
@@ -37,7 +27,10 @@
   "alternate",
   "kicad",
   "library",
+  "discrete",
+  "ddz9678",
   "ddz",
+  "mmsz4678",
   "mmsz"
  ],
  "facts": {
@@ -61,7 +54,7 @@
   "tier_counts": {
    "A": 2
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -85,6 +78,6 @@
   "Alternate-KiCad-Library/Diode_Zener_AKL/DDZ9678",
   "Alternate-KiCad-Library/Diode_Zener_AKL/MMSZ4678"
  ],
- "embedding_text": "discrete-diode.d.1-8v | Discrete Diode | Cluster of 2 Tier A surface-mount 1.8V discrete diodes in package family D using D_SOD-123 footprints from Alternate-KiCad-Library. | discrete diode 1.8v smd d_sod-123 package family d alternate-kicad-library ddz9678 mmsz4678 discrete diode tier a zener sod 8v akl 500mw alternate kicad library ddz mmsz | D | 1.8V",
+ "embedding_text": "discrete-diode.d.1-8v | Discrete Diode | 2 discrete diode parts for 1.8V using D footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | diode zener sod 8v akl 500mw alternate kicad library discrete ddz9678 ddz mmsz4678 mmsz | D | 1.8V",
  "class": "discrete.diode"
 }

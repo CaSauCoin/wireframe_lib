@@ -6,38 +6,32 @@
   "IC",
   "Sensor"
  ],
- "description": "Cluster of surface-mount sensor ICs in SOT-23 packages associated with 5V and 2.5V facets.",
+ "description": "1 ic sensor parts for 5V, 2.5V using SOT-23 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select for surface-mount sensor IC applications requiring a SOT-23 footprint.",
-  "Verify component requirements against 5V and 2.5V facets.",
-  "Prefer tier A parts sourced from KiCad symbols."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SOT-23 land pattern is intended."
  ],
  "avoid_when": [
-  "The design requires a footprint package other than SOT-23.",
-  "Through-hole or non-SMD mounting is required.",
-  "Operating conditions are incompatible with 5V or 2.5V facets."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SOT-23."
  ],
  "keywords": [
-  "ic",
-  "sensor",
-  "ic.sensor",
-  "sot-23",
-  "5v",
-  "2.5v",
-  "smd",
-  "tc1047axnb",
-  "kicad-symbols",
-  "temperature",
-  "sensor_temperature",
-  "tier a",
   "sot",
   "to",
+  "5v",
+  "sensor",
+  "temperature",
+  "tc1047axnb",
   "precision",
   "voltage",
   "converter",
   "10mv",
   "max",
-  "analog"
+  "smd",
+  "analog",
+  "ic"
  ],
  "facts": {
   "package_family": "SOT-23",
@@ -61,7 +55,7 @@
   "tier_counts": {
    "A": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -76,6 +70,6 @@
  "part_ids": [
   "kicad-symbols/Sensor_Temperature/TC1047AxNB"
  ],
- "embedding_text": "ic-sensor.sot-23.5v.2-5v | IC Sensor | Cluster of surface-mount sensor ICs in SOT-23 packages associated with 5V and 2.5V facets. | ic sensor ic.sensor sot-23 5v 2.5v smd tc1047axnb kicad-symbols temperature sensor_temperature tier a sot to precision voltage converter 10mv max analog | SOT-23 | 5V 2.5V",
+ "embedding_text": "ic-sensor.sot-23.5v.2-5v | IC Sensor | 1 ic sensor parts for 5V, 2.5V using SOT-23 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | sot to 5v sensor temperature tc1047axnb precision voltage converter 10mv max smd analog ic | SOT-23 | 5V 2.5V",
  "class": "ic.sensor"
 }

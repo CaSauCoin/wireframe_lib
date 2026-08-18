@@ -6,32 +6,21 @@
   "Passive",
   "Resistor"
  ],
- "description": "Cluster of 8 surface-mount passive resistor parts across XAL5030 footprint variants.",
+ "description": "8 passive resistor parts using XAL5030 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select based on the specific XAL5030 footprint variant required for the design.",
-  "Verify part specifications since all entries in this cluster are tier C.",
-  "Confirm land pattern compatibility with the target SMD layout."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a XAL5030 land pattern is intended."
  ],
  "avoid_when": [
-  "A package family other than XAL5030 is required.",
-  "Through-hole mounting is needed instead of SMD.",
-  "Components outside the passive resistor category are required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than XAL5030."
  ],
  "keywords": [
   "xal5030",
   "passive",
   "resistor",
-  "smd",
-  "surface mount",
-  "xal5030-122me",
-  "xal5030-161me",
-  "xal5030-222me",
-  "xal5030-331me",
-  "xal5030-332me",
-  "xal5030-472me",
-  "xal5030-601me",
-  "xal5030-801me",
-  "francescosacco-hardwarelibrary",
   "surface",
   "mount",
   "pad",
@@ -41,7 +30,10 @@
   "122me",
   "161me",
   "222me",
-  "331me"
+  "331me",
+  "332me",
+  "472me",
+  "601me"
  ],
  "facts": {
   "package_family": "XAL5030",
@@ -69,7 +61,7 @@
   "tier_counts": {
    "C": 8
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
@@ -82,6 +74,6 @@
   "francescosacco-hardwarelibrary/XAL5030-601ME/XAL5030-601ME",
   "francescosacco-hardwarelibrary/XAL5030-801ME/XAL5030-801ME"
  ],
- "embedding_text": "passive-resistor.xal5030 | Passive Resistor | Cluster of 8 surface-mount passive resistor parts across XAL5030 footprint variants. | xal5030 passive resistor smd surface mount xal5030-122me xal5030-161me xal5030-222me xal5030-331me xal5030-332me xal5030-472me xal5030-601me xal5030-801me francescosacco-hardwarelibrary surface mount pad mm pitch pins 122me 161me 222me 331me | XAL5030 | ",
+ "embedding_text": "passive-resistor.xal5030 | Passive Resistor | 8 passive resistor parts using XAL5030 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | xal5030 passive resistor surface mount pad mm pitch pins 122me 161me 222me 331me 332me 472me 601me | XAL5030 | ",
  "class": "passive.resistor"
 }

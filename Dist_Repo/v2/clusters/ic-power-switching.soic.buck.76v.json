@@ -7,30 +7,21 @@
   "Power",
   "Switching Regulator"
  ],
- "description": "Cluster of Tier A surface-mount IC buck power switching regulators rated for 76V using the SOIC-8 footprint.",
+ "description": "2 ic power switching regulator parts for buck, 76V using SOIC footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Choose when requiring a 76V buck switching regulator in a surface-mount SOIC package.",
-  "Select between Tier A parts MAX5035DUSA and MAX5035EUSA based on part specific needs.",
-  "Ensure compatibility with the SOIC-8_3.9x4.9mm_P1.27mm footprint."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SOIC land pattern is intended."
  ],
  "avoid_when": [
-  "The application requires non-buck topology or operating parameters other than 76V.",
-  "A package type other than SOIC is required.",
-  "Through-hole mounting is required instead of SMD."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SOIC."
  ],
  "keywords": [
-  "ic",
-  "power",
-  "switching regulator",
-  "buck",
   "76v",
   "soic",
-  "soic-8",
-  "smd",
-  "max5035dusa",
-  "max5035eusa",
   "regulator",
-  "ic.power.switching",
   "switching",
   "1a",
   "step",
@@ -42,7 +33,8 @@
   "high",
   "efficiency",
   "output",
-  "voltage"
+  "voltage",
+  "vin"
  ],
  "facts": {
   "package_family": "SOIC",
@@ -66,7 +58,7 @@
   "tier_counts": {
    "A": 2
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -90,6 +82,6 @@
   "kicad-symbols/Regulator_Switching/MAX5035DUSA",
   "kicad-symbols/Regulator_Switching/MAX5035EUSA"
  ],
- "embedding_text": "ic-power-switching.soic.buck.76v | IC Power Switching Regulator | Cluster of Tier A surface-mount IC buck power switching regulators rated for 76V using the SOIC-8 footprint. | ic power switching regulator buck 76v soic soic-8 smd max5035dusa max5035eusa regulator ic.power.switching switching 1a step down dc converter adjustable so high efficiency output voltage | SOIC | buck 76V",
+ "embedding_text": "ic-power-switching.soic.buck.76v | IC Power Switching Regulator | 2 ic power switching regulator parts for buck, 76V using SOIC footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | 76v soic regulator switching 1a step down dc converter adjustable so high efficiency output voltage vin | SOIC | buck 76V",
  "class": "ic.power.switching"
 }

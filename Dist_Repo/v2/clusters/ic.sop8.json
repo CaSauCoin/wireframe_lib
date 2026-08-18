@@ -5,30 +5,20 @@
  "category_path": [
   "IC"
  ],
- "description": "Cluster of 3 tier-C IC parts in the SOP8 package family using SOP8_L, SOP8_M, or SOP8_N footprints.",
+ "description": "3 ic parts using SOP8 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Match against SOP8_L, SOP8_M, or SOP8_N footprints.",
-  "Select when a part in the SOP8 package family is required.",
-  "Account for tier-C quality rating and generated review status."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SOP8 land pattern is intended."
  ],
  "avoid_when": [
-  "A package family other than SOP8 is needed.",
-  "Parts with verified review status or higher quality tiers than tier C are required.",
-  "Footprint patterns other than SOP8_L, SOP8_M, or SOP8_N are required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SOP8."
  ],
  "keywords": [
-  "ic",
   "sop8",
-  "sop8_l",
-  "sop8_m",
-  "sop8_n",
-  "sop8 footprint",
-  "sop8 package",
-  "tier c",
-  "dist-legacy",
-  "generated",
-  "package family",
-  "integrated circuit",
+  "ic",
   "pad",
   "mm",
   "pitch",
@@ -55,7 +45,7 @@
   "tier_counts": {
    "C": 3
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
@@ -63,6 +53,6 @@
   "dist-legacy/SOP8_M",
   "dist-legacy/SOP8_N"
  ],
- "embedding_text": "ic.sop8 | IC | Cluster of 3 tier-C IC parts in the SOP8 package family using SOP8_L, SOP8_M, or SOP8_N footprints. | ic sop8 sop8_l sop8_m sop8_n sop8 footprint sop8 package tier c dist-legacy generated package family integrated circuit pad mm pitch pins | SOP8 | ",
+ "embedding_text": "ic.sop8 | IC | 3 ic parts using SOP8 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | sop8 ic pad mm pitch pins | SOP8 | ",
  "class": "ic"
 }

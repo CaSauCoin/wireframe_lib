@@ -5,32 +5,22 @@
  "category_path": [
   "IC"
  ],
- "description": "Cluster of 4 tier A surface-mount 18V IC parts in SOT packages using the SOT-89-3 footprint from Alternate-KiCad-Library.",
+ "description": "4 ic parts for 18V using SOT footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Choose when requiring a surface-mount 18V IC in a SOT-89-3 footprint.",
-  "Select based on specific part numbers such as L78L18ACU, DI78L18UAB, DI79L18UAB, or LR745N8.",
-  "Use when sourcing tier A parts from Alternate-KiCad-Library."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SOT land pattern is intended."
  ],
  "avoid_when": [
-  "A package footprint other than SOT-89-3 or non-SMD mounting is required.",
-  "The circuit design requires an operating voltage rating other than 18V.",
-  "Components outside the Alternate-KiCad-Library source are required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SOT."
  ],
  "keywords": [
-  "ic",
   "sot",
-  "sot-89-3",
-  "18v",
-  "smd",
-  "alternate-kicad-library",
-  "di78l18uab",
-  "di79l18uab",
-  "l78l18acu",
-  "lr745n8",
-  "tier a",
-  "ic.sot.18v",
   "voltage",
   "regulator",
+  "18v",
   "100ma",
   "terminal",
   "akl",
@@ -40,7 +30,9 @@
   "vreg",
   "pmic",
   "power",
-  "supply"
+  "supply",
+  "ic",
+  "78l18"
  ],
  "facts": {
   "package_family": "SOT",
@@ -63,7 +55,7 @@
   "tier_counts": {
    "A": 4
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -105,6 +97,6 @@
   "Alternate-KiCad-Library/Voltage_Regulator_AKL/L78L18ACU",
   "Alternate-KiCad-Library/Voltage_Regulator_AKL/LR745N8"
  ],
- "embedding_text": "ic.sot.18v | IC | Cluster of 4 tier A surface-mount 18V IC parts in SOT packages using the SOT-89-3 footprint from Alternate-KiCad-Library. | ic sot sot-89-3 18v smd alternate-kicad-library di78l18uab di79l18uab l78l18acu lr745n8 tier a ic.sot.18v voltage regulator 100ma terminal akl alternate kicad library vreg pmic power supply | SOT | 18V",
+ "embedding_text": "ic.sot.18v | IC | 4 ic parts for 18V using SOT footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | sot voltage regulator 18v 100ma terminal akl alternate kicad library vreg pmic power supply ic 78l18 | SOT | 18V",
  "class": "ic"
 }

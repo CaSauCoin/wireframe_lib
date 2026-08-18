@@ -6,32 +6,19 @@
   "Electromechanical",
   "Relay"
  ],
- "description": "Cluster of 56 electromechanical relay parts in the DIP package family supporting surface mount and through-hole mounting types.",
+ "description": "56 electromechanical relay parts using DIP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when needing DIP package footprints such as DIP-4, DIP-6, DIP-8, SMDIP-4, or StandexMeder DIP.",
-  "Choose between surface-mount (smd) and through-hole mounting types as required by board layout.",
-  "Prefer tier A parts, which constitute 54 of the 56 total parts in this cluster."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a DIP land pattern is intended."
  ],
  "avoid_when": [
-  "The PCB design requires footprint package families other than DIP.",
-  "Neither surface-mount nor through-hole DIP mounting options fit design specifications.",
-  "Tier C parts cannot be used when strict tier A quality verification is required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than DIP."
  ],
  "keywords": [
-  "electromechanical relay",
   "dip",
-  "smd",
-  "through_hole",
-  "dip-4",
-  "dip-6",
-  "dip-8",
-  "smdip-4",
-  "standexmeder",
-  "w7.62mm",
-  "kicad-symbols",
-  "aqh0213",
-  "aqh0223",
-  "aqh1213",
   "relay",
   "opto",
   "triac",
@@ -41,7 +28,12 @@
   "pdip",
   "54mm",
   "300mil",
-  "solidstate"
+  "solidstate",
+  "w7",
+  "random",
+  "phase",
+  "vdrm",
+  "ift"
  ],
  "facts": {
   "package_family": "DIP",
@@ -71,7 +63,7 @@
    "A": 54,
    "C": 2
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -173,6 +165,6 @@
   "dist-legacy/Relay_StandexMeder_DIP_HighProfile",
   "dist-legacy/Relay_StandexMeder_DIP_LowProfile"
  ],
- "embedding_text": "electromechanical-relay.dip | Electromechanical Relay | Cluster of 56 electromechanical relay parts in the DIP package family supporting surface mount and through-hole mounting types. | electromechanical relay dip smd through_hole dip-4 dip-6 dip-8 smdip-4 standexmeder w7.62mm kicad-symbols aqh0213 aqh0223 aqh1213 relay opto triac 62mm electromechanical dil pdip 54mm 300mil solidstate | DIP | ",
+ "embedding_text": "electromechanical-relay.dip | Electromechanical Relay | 56 electromechanical relay parts using DIP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | dip relay opto triac 62mm electromechanical dil pdip 54mm 300mil solidstate w7 random phase vdrm ift | DIP | ",
  "class": "electromechanical.relay"
 }

@@ -6,31 +6,22 @@
   "Discrete",
   "Transistor"
  ],
- "description": "Discrete transistor component cluster with 151 parts using SOT package footprints including SOT-223, SOT-89-3, SOT-363, SOT-523, and SOT-1123.",
+ "description": "151 discrete transistor parts using SOT footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select tier A parts for higher quality scoring.",
-  "Match the specific SOT footprint variant required by the layout, such as SOT-223 or SOT-89-3.",
-  "Verify part suitability for SMD mounting requirements."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SOT land pattern is intended."
  ],
  "avoid_when": [
-  "The PCB layout requires package families other than SOT.",
-  "Through-hole mounting is required instead of surface-mount.",
-  "A tier A part is required but only tier C options are available."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SOT."
  ],
  "keywords": [
-  "discrete transistor",
   "sot",
-  "sot-223",
-  "sot-89-3",
-  "sot-363",
-  "sot-523",
-  "sot-1123",
-  "smd",
   "mosfet",
-  "triac",
-  "thyristor",
-  "discrete",
   "transistor",
+  "discrete",
   "enchancement",
   "akl",
   "alternate",
@@ -40,6 +31,7 @@
   "tabpin2",
   "mos",
   "mode",
+  "triac",
   "nmos",
   "nmosfet"
  ],
@@ -79,7 +71,7 @@
    "A": 101,
    "C": 50
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -276,6 +268,6 @@
   "Alternate-KiCad-Library/Triac_AKL/Z0110MN",
   "Alternate-KiCad-Library/Triac_AKL/Z0110NN"
  ],
- "embedding_text": "discrete-transistor.sot | Discrete Transistor | Discrete transistor component cluster with 151 parts using SOT package footprints including SOT-223, SOT-89-3, SOT-363, SOT-523, and SOT-1123. | discrete transistor sot sot-223 sot-89-3 sot-363 sot-523 sot-1123 smd mosfet triac thyristor discrete transistor enchancement akl alternate kicad library cms tabpin2 mos mode nmos nmosfet | SOT | ",
+ "embedding_text": "discrete-transistor.sot | Discrete Transistor | 151 discrete transistor parts using SOT footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | sot mosfet transistor discrete enchancement akl alternate kicad library cms tabpin2 mos mode triac nmos nmosfet | SOT | ",
  "class": "discrete.transistor"
 }

@@ -5,32 +5,25 @@
  "category_path": [
   "IC"
  ],
- "description": "Cluster of 75 IC components using JAE package family footprints supporting surface-mount and through-hole mounting.",
+ "description": "75 ic parts using JAE footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Match board layout to specific JAE footprint variants such as FF08 (0.40mm pitch) or LY20 (2.00mm pitch).",
-  "Select between surface-mount (smd) and through-hole mount options.",
-  "Verify exact pin count and row orientation (horizontal vs vertical) required for the layout."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a JAE land pattern is intended."
  ],
  "avoid_when": [
-  "The design requires non-JAE footprints or package families.",
-  "Higher quality tier parts (Tier A or B) are required, as all parts are Tier C.",
-  "The footprint requires pitch or pin configurations outside the provided JAE footprint list."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than JAE."
  ],
  "keywords": [
-  "ic",
   "jae",
-  "smd",
-  "through_hole",
-  "ff08",
   "ly20",
-  "0.40mm",
-  "2.00mm",
-  "horizontal",
-  "vertical",
-  "2rows",
-  "tier c",
   "p2",
   "00mm",
+  "horizontal",
+  "ic",
+  "vertical",
   "p0",
   "dlt1",
   "dt1",
@@ -74,7 +67,7 @@
   "tier_counts": {
    "C": 75
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
@@ -154,6 +147,6 @@
   "dist-legacy/JAE_MM60-EZH039-Bx_BUS_PCI_Express_Holder",
   "dist-legacy/JAE_MM60-EZH059-Bx_BUS_PCI_Express_Holder"
  ],
- "embedding_text": "ic.jae | IC | Cluster of 75 IC components using JAE package family footprints supporting surface-mount and through-hole mounting. | ic jae smd through_hole ff08 ly20 0.40mm 2.00mm horizontal vertical 2rows tier c p2 00mm p0 dlt1 dt1 4mm connector wp7b r8000 1mp pitch | JAE | ",
+ "embedding_text": "ic.jae | IC | 75 ic parts using JAE footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | jae ly20 p2 00mm horizontal ic vertical p0 dlt1 dt1 4mm connector wp7b r8000 1mp pitch | JAE | ",
  "class": "ic"
 }

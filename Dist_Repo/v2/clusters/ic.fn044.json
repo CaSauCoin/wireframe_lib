@@ -5,28 +5,20 @@
  "category_path": [
   "IC"
  ],
- "description": "Cluster of 3 tier C IC parts associated with the FN044 package family and footprints FN044_L, FN044_M, and FN044_N.",
+ "description": "3 ic parts using FN044 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when requiring an IC part with FN044_L, FN044_M, or FN044_N footprint variants.",
-  "Verify mounting requirements since mount type is listed as unknown.",
-  "Confirm part specifications as all 3 parts are tier C from legacy distributor sources."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a FN044 land pattern is intended."
  ],
  "avoid_when": [
-  "The board layout requires a package family other than FN044.",
-  "Footprints other than FN044_L, FN044_M, or FN044_N are needed.",
-  "Parts from higher quality tiers than tier C are required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than FN044."
  ],
  "keywords": [
   "fn044",
   "ic",
-  "fn044_l",
-  "fn044_m",
-  "fn044_n",
-  "fn044 ic",
-  "ic fn044",
-  "fn044 footprint",
-  "tier c",
-  "dist-legacy",
   "pad",
   "mm",
   "pitch",
@@ -53,7 +45,7 @@
   "tier_counts": {
    "C": 3
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
@@ -61,6 +53,6 @@
   "dist-legacy/FN044_M",
   "dist-legacy/FN044_N"
  ],
- "embedding_text": "ic.fn044 | IC | Cluster of 3 tier C IC parts associated with the FN044 package family and footprints FN044_L, FN044_M, and FN044_N. | fn044 ic fn044_l fn044_m fn044_n fn044 ic ic fn044 fn044 footprint tier c dist-legacy pad mm pitch pins | FN044 | ",
+ "embedding_text": "ic.fn044 | IC | 3 ic parts using FN044 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | fn044 ic pad mm pitch pins | FN044 | ",
  "class": "ic"
 }

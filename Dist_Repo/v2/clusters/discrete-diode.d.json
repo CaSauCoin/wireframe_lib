@@ -6,44 +6,34 @@
   "Discrete",
   "Diode"
  ],
- "description": "SMD and through-hole discrete diodes (SMA, SMB, SMC, MELF, DO-41, DO-15, DO-201AD, SOD-123F, SOD-57, SOD-64, P600) covering rectifier and TVS-style axial/molded packages.",
+ "description": "2831 discrete diode parts using D footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Match the exact footprint (e.g. D_SMA, D_SMB, D_DO-41, D_SOD-123F) to the intended land pattern.",
-  "Prefer tier A parts with confirmed source and score 100.",
-  "Distinguish rectifier-style parts (1N series, DO-41/DO-15/DO-201) from TVS-style parts (1.5KE, 1.5SMC series) by name.",
-  "Confirm anode/cathode orientation and band marking before layout."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a D land pattern is intended."
  ],
  "avoid_when": [
-  "Required voltage, current, or power rating is not documented on the chosen part.",
-  "The footprint does not match the board's intended package (e.g. axial through-hole vs SMD).",
-  "The symbol-footprint pairing is unverified or flagged for review.",
-  "A non-diode function (e.g. transistor, integrated regulator) is needed instead of a discrete diode."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than D."
  ],
  "keywords": [
   "diode",
-  "discrete diode",
-  "rectifier",
-  "tvs diode",
-  "do-41",
-  "do-15",
-  "do-201ad",
-  "sod-123f",
-  "sod-57",
-  "sod-64",
-  "sma diode",
-  "smb diode",
-  "smc diode",
-  "melf diode",
-  "p600",
-  "axial diode",
-  "smd diode",
-  "through hole diode",
   "do",
   "discrete",
   "horizontal",
   "tvs",
   "alternate",
-  "kicad"
+  "kicad",
+  "library",
+  "akl",
+  "pitch",
+  "pin",
+  "axial",
+  "length",
+  "diameter",
+  "series",
+  "rectifier"
  ],
  "facts": {
   "package_family": "D",
@@ -84,7 +74,7 @@
    "B": 349,
    "C": 168
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -2961,6 +2951,6 @@
   "dist-legacy/D-28",
   "matthiasbock-altium-libraries/D-Sub 15/D-Sub_15"
  ],
- "embedding_text": "discrete-diode.d | Discrete Diode | SMD and through-hole discrete diodes (SMA, SMB, SMC, MELF, DO-41, DO-15, DO-201AD, SOD-123F, SOD-57, SOD-64, P600) covering rectifier and TVS-style axial/molded packages. | diode discrete diode rectifier tvs diode do-41 do-15 do-201ad sod-123f sod-57 sod-64 sma diode smb diode smc diode melf diode p600 axial diode smd diode through hole diode do discrete horizontal tvs alternate kicad | D | ",
+ "embedding_text": "discrete-diode.d | Discrete Diode | 2831 discrete diode parts using D footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | diode do discrete horizontal tvs alternate kicad library akl pitch pin axial length diameter series rectifier | D | ",
  "class": "discrete.diode"
 }

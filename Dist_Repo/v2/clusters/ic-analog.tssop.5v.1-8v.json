@@ -6,33 +6,25 @@
   "IC",
   "Analog"
  ],
- "description": "Analog IC cluster supporting 5V and 1.8V facets in surface-mount TSSOP packaging with TSSOP-16 footprint entries such as TMUX1574PW.",
+ "description": "1 ic analog parts for 5V, 1.8V using TSSOP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select for analog IC applications requiring 5V or 1.8V voltage facets.",
-  "Choose when using surface-mount TSSOP-16 footprints with 0.65mm pitch.",
-  "Verify part requirements against Tier A symbols such as TMUX1574PW."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a TSSOP land pattern is intended."
  ],
  "avoid_when": [
-  "The board layout requires packages or footprints other than TSSOP-16.",
-  "Through-hole mounting is required instead of SMD surface mounting.",
-  "Required supply levels differ from the 5V and 1.8V facets."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than TSSOP."
  ],
  "keywords": [
-  "ic",
-  "analog",
   "tssop",
-  "tssop-16",
-  "5v",
-  "1.8v",
-  "smd",
-  "tmux1574pw",
-  "analog switch",
-  "kicad-symbols",
-  "surface mount",
-  "tssop-16_4.4x5mm_p0.65mm",
+  "analog",
   "switch",
   "low",
   "8v",
+  "5v",
+  "tmux1574pw",
   "capacitance",
   "and",
   "resistance",
@@ -65,7 +57,7 @@
   "tier_counts": {
    "A": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -80,6 +72,6 @@
  "part_ids": [
   "kicad-symbols/Analog_Switch/TMUX1574PW"
  ],
- "embedding_text": "ic-analog.tssop.5v.1-8v | IC Analog | Analog IC cluster supporting 5V and 1.8V facets in surface-mount TSSOP packaging with TSSOP-16 footprint entries such as TMUX1574PW. | ic analog tssop tssop-16 5v 1.8v smd tmux1574pw analog switch kicad-symbols surface mount tssop-16_4.4x5mm_p0.65mm switch low 8v capacitance and resistance channel powered off protection with logic | TSSOP | 5V 1.8V",
+ "embedding_text": "ic-analog.tssop.5v.1-8v | IC Analog | 1 ic analog parts for 5V, 1.8V using TSSOP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | tssop analog switch low 8v 5v tmux1574pw capacitance and resistance channel powered off protection with logic | TSSOP | 5V 1.8V",
  "class": "ic.analog"
 }

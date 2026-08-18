@@ -7,33 +7,23 @@
   "Analog",
   "Amplifier"
  ],
- "description": "Cluster of 4 tier-A surface-mount analog amplifier ICs rated for 50V in SOIC-8 (3.9x4.9mm, 1.27mm pitch) footprints.",
+ "description": "4 ic analog amplifier parts for 50V using SOIC footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when a 50V analog amplifier IC in an SMD SOIC-8 package is required.",
-  "Choose between INA240A2D, INA241A3xD, INA241B3xD, and INA282 based on part specifications.",
-  "Confirm land pattern alignment with SOIC-8_3.9x4.9mm_P1.27mm."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SOIC land pattern is intended."
  ],
  "avoid_when": [
-  "Avoid if the design requires non-SMD or through-hole mounting.",
-  "Do not use if the board layout requires a footprint other than SOIC-8 3.9x4.9mm with 1.27mm pitch.",
-  "Avoid if circuit specifications differ from the 50V rating."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SOIC."
  ],
  "keywords": [
-  "ic",
-  "analog amplifier",
-  "50v",
   "soic",
-  "soic-8",
-  "smd",
-  "ina240a2d",
-  "ina241a3xd",
-  "ina241b3xd",
-  "ina282",
-  "3.9x4.9mm",
-  "p1.27mm",
   "current",
   "amplifier",
   "bidirectional",
+  "50v",
   "high",
   "low",
   "shunt",
@@ -42,7 +32,9 @@
   "9x4",
   "9mm",
   "p1",
-  "27mm"
+  "27mm",
+  "so",
+  "monitor"
  ],
  "facts": {
   "package_family": "SOIC",
@@ -65,7 +57,7 @@
   "tier_counts": {
    "A": 4
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -107,6 +99,6 @@
   "kicad-symbols/Amplifier_Current/INA241B3xD",
   "kicad-symbols/Amplifier_Current/INA282"
  ],
- "embedding_text": "ic-analog-amplifier.soic.50v | IC Analog Amplifier | Cluster of 4 tier-A surface-mount analog amplifier ICs rated for 50V in SOIC-8 (3.9x4.9mm, 1.27mm pitch) footprints. | ic analog amplifier 50v soic soic-8 smd ina240a2d ina241a3xd ina241b3xd ina282 3.9x4.9mm p1.27mm current amplifier bidirectional high low shunt zero drift 9x4 9mm p1 27mm | SOIC | 50V",
+ "embedding_text": "ic-analog-amplifier.soic.50v | IC Analog Amplifier | 4 ic analog amplifier parts for 50V using SOIC footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | soic current amplifier bidirectional 50v high low shunt zero drift 9x4 9mm p1 27mm so monitor | SOIC | 50V",
  "class": "ic.analog.amplifier"
 }

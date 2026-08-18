@@ -7,41 +7,34 @@
   "Interface",
   "Serial"
  ],
- "description": "Through-hole serial interface IC cluster containing 13 DIP parts including UART devices and line drivers.",
+ "description": "13 ic interface serial parts using DIP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select matching pin count and package width such as DIP-8, DIP-14, DIP-16, DIP-24, or DIP-40.",
-  "Check part quality tier, prioritizing Tier A entries.",
-  "Confirm serial interface function such as UART or line driver."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a DIP land pattern is intended."
  ],
  "avoid_when": [
-  "Surface-mount design requirements that cannot accommodate through-hole DIP components.",
-  "Applications requiring non-DIP package footprints."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than DIP."
  ],
  "keywords": [
   "dip",
   "interface",
-  "serial",
-  "ic",
-  "through_hole",
-  "uart",
-  "line driver",
-  "dip-8",
-  "dip-14",
-  "dip-16",
-  "dip-24",
-  "dip-40",
-  "el7242c",
-  "mc6850",
-  "sn65lbc176p",
   "62mm",
   "differential",
+  "serial",
+  "ic",
   "tht",
   "dil",
   "pdip",
   "54mm",
   "line",
   "w7",
-  "300mil"
+  "300mil",
+  "uart",
+  "linedriver",
+  "driver"
  ],
  "facts": {
   "package_family": "DIP",
@@ -68,7 +61,7 @@
    "B": 1,
    "C": 5
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -127,6 +120,6 @@
   "kicad-symbols/Interface_LineDriver/UA9638CP",
   "kicad-symbols/Interface_LineDriver/UA9638CPE4"
  ],
- "embedding_text": "ic-interface-serial.dip | IC Interface Serial | Through-hole serial interface IC cluster containing 13 DIP parts including UART devices and line drivers. | dip interface serial ic through_hole uart line driver dip-8 dip-14 dip-16 dip-24 dip-40 el7242c mc6850 sn65lbc176p 62mm differential tht dil pdip 54mm line w7 300mil | DIP | ",
+ "embedding_text": "ic-interface-serial.dip | IC Interface Serial | 13 ic interface serial parts using DIP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | dip interface 62mm differential serial ic tht dil pdip 54mm line w7 300mil uart linedriver driver | DIP | ",
  "class": "ic.interface.serial"
 }

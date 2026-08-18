@@ -5,30 +5,22 @@
  "category_path": [
   "IC"
  ],
- "description": "IC cluster for through-hole components utilizing 7SegmentLED footprints, such as 7SegmentLED_LTS6760_LTS6780.",
+ "description": "1 ic parts using 7SegmentLED footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Verify compatibility with the 7SegmentLED_LTS6760_LTS6780 through-hole footprint pattern.",
-  "Confirm pin allocation and electrical specs as this cluster contains quality tier C parts.",
-  "Ensure through-hole mounting is suitable for the target PCB design."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a 7SegmentLED land pattern is intended."
  ],
  "avoid_when": [
-  "Surface-mount assembly is required instead of through-hole mounting.",
-  "The design requires footprints other than 7SegmentLED_LTS6760_LTS6780.",
-  "Parts invisible to the planner or tier C quality entries are not permitted."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than 7SegmentLED."
  ],
  "keywords": [
-  "ic",
   "7segmentled",
-  "through hole",
-  "through_hole",
-  "7segmentled_lts6760_lts6780",
   "lts6760",
   "lts6780",
-  "segment display",
-  "optoelectronics",
-  "display ic",
-  "footprint",
-  "7 segment",
+  "ic",
   "through",
   "hole",
   "pad",
@@ -39,7 +31,8 @@
   "segment",
   "display",
   "lts67x0",
-  "http"
+  "http",
+  "optoelectronics"
  ],
  "facts": {
   "package_family": "7SegmentLED",
@@ -60,12 +53,12 @@
   "tier_counts": {
    "C": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
   "dist-legacy/7SegmentLED_LTS6760_LTS6780"
  ],
- "embedding_text": "ic.7segmentled | IC | IC cluster for through-hole components utilizing 7SegmentLED footprints, such as 7SegmentLED_LTS6760_LTS6780. | ic 7segmentled through hole through_hole 7segmentled_lts6760_lts6780 lts6760 lts6780 segment display optoelectronics display ic footprint 7 segment through hole pad mm pitch pins package segment display lts67x0 http | 7SegmentLED | ",
+ "embedding_text": "ic.7segmentled | IC | 1 ic parts using 7SegmentLED footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | 7segmentled lts6760 lts6780 ic through hole pad mm pitch pins package segment display lts67x0 http optoelectronics | 7SegmentLED | ",
  "class": "ic"
 }

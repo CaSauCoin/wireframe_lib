@@ -7,34 +7,22 @@
   "Analog",
   "Op-Amp"
  ],
- "description": "Cluster of 7 surface-mount analog op-amp IC parts with a 10V facet using SO package footprints.",
+ "description": "7 ic analog op-amp parts for 10V using SO footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when requiring SMD analog op-amp ICs in SO packages.",
-  "Verify layout compatibility with the SO-8_3.9x4.9mm_P1.27mm footprint.",
-  "Choose from Tier A rated parts sourced from Alternate-KiCad-Library."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SO land pattern is intended."
  ],
  "avoid_when": [
-  "Through-hole mounting is required instead of SMD.",
-  "The PCB layout requires a footprint family other than SO.",
-  "Components outside the IC Analog Op-Amp 10V classification are needed."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SO."
  ],
  "keywords": [
-  "ic",
-  "analog",
-  "op-amp",
-  "opamp",
-  "10v",
   "so",
-  "smd",
-  "so-8_3.9x4.9mm_p1.27mm",
-  "alternate-kicad-library",
-  "ad8129arz",
-  "lt1222cs8",
-  "lt1222is8",
-  "max4196esa",
-  "max4461tesa",
   "amplifier",
   "instrumentation",
+  "10v",
   "rail",
   "akl",
   "gain",
@@ -42,7 +30,11 @@
   "kicad",
   "library",
   "9x4",
-  "9mm"
+  "9mm",
+  "p1",
+  "27mm",
+  "ic",
+  "analog"
  ],
  "facts": {
   "package_family": "SO",
@@ -65,7 +57,7 @@
   "tier_counts": {
    "A": 7
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -118,6 +110,6 @@
   "Alternate-KiCad-Library/Amplifier_Instrumentation_AKL/MAX4462TESA",
   "Alternate-KiCad-Library/Amplifier_Instrumentation_AKL/MCP6N11T-010E-SN"
  ],
- "embedding_text": "ic-analog-opamp.so.10v | IC Analog Op-Amp | Cluster of 7 surface-mount analog op-amp IC parts with a 10V facet using SO package footprints. | ic analog op-amp opamp 10v so smd so-8_3.9x4.9mm_p1.27mm alternate-kicad-library ad8129arz lt1222cs8 lt1222is8 max4196esa max4461tesa amplifier instrumentation rail akl gain alternate kicad library 9x4 9mm | SO | 10V",
+ "embedding_text": "ic-analog-opamp.so.10v | IC Analog Op-Amp | 7 ic analog op-amp parts for 10V using SO footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | so amplifier instrumentation 10v rail akl gain alternate kicad library 9x4 9mm p1 27mm ic analog | SO | 10V",
  "class": "ic.analog.opamp"
 }

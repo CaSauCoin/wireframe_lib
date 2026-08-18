@@ -7,42 +7,34 @@
   "Interface",
   "CAN"
  ],
- "description": "Surface-mount CAN interface IC cluster featuring HVSON package parts using the HVSON-8-1EP_3x3mm_P0.65mm_EP1.6x2.4mm footprint.",
+ "description": "6 ic interface can parts for CAN using HVSON footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when requiring a surface-mount CAN interface IC in an HVSON package.",
-  "Verify part selection among representative numbers such as TJA1021xTK, TJA1042TK-3, TJA1049TK, or TJA1051TK-3.",
-  "Confirm board layout uses the HVSON-8-1EP_3x3mm_P0.65mm_EP1.6x2.4mm footprint."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a HVSON land pattern is intended."
  ],
  "avoid_when": [
-  "The PCB design requires non-SMD mounting or package families other than HVSON.",
-  "The required footprint differs from HVSON-8-1EP_3x3mm_P0.65mm_EP1.6x2.4mm.",
-  "Parts requiring quality tier A classification are mandated."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than HVSON."
  ],
  "keywords": [
-  "ic",
-  "interface",
   "can",
   "hvson",
-  "smd",
-  "hvson-8-1ep",
-  "3x3mm",
-  "p0.65mm",
-  "tja1021xtk",
-  "tja1042tk-3",
-  "tja1049tk",
-  "tja1051tk-3",
-  "kicad",
+  "interface",
   "lin",
   "transceiver",
   "vson",
   "dfn",
   "1ep",
+  "3x3mm",
   "p0",
   "65mm",
   "ep1",
   "6x2",
   "4mm",
-  "nolead"
+  "nolead",
+  "ic"
  ],
  "facts": {
   "package_family": "HVSON",
@@ -65,7 +57,7 @@
   "tier_counts": {
    "B": 6
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -117,6 +109,6 @@
   "kicad-symbols/Interface_CAN_LIN/TJA1051TK-3",
   "kicad-symbols/Interface_CAN_LIN/TJA1029TK"
  ],
- "embedding_text": "ic-interface-can.hvson.can | IC Interface CAN | Surface-mount CAN interface IC cluster featuring HVSON package parts using the HVSON-8-1EP_3x3mm_P0.65mm_EP1.6x2.4mm footprint. | ic interface can hvson smd hvson-8-1ep 3x3mm p0.65mm tja1021xtk tja1042tk-3 tja1049tk tja1051tk-3 kicad lin transceiver vson dfn 1ep p0 65mm ep1 6x2 4mm nolead | HVSON | CAN",
+ "embedding_text": "ic-interface-can.hvson.can | IC Interface CAN | 6 ic interface can parts for CAN using HVSON footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | can hvson interface lin transceiver vson dfn 1ep 3x3mm p0 65mm ep1 6x2 4mm nolead ic | HVSON | CAN",
  "class": "ic.interface.can"
 }

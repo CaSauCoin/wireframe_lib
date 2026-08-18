@@ -6,29 +6,23 @@
   "Passive",
   "Resistor"
  ],
- "description": "Passive resistor cluster containing through-hole parts with TABTERM package footprints including TABTERM_2P8 and TABTERM_6P35.",
+ "description": "2 passive resistor parts using TABTERM footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select the appropriate footprint variant between TABTERM_2P8 and TABTERM_6P35.",
-  "Verify compatibility with through-hole mounting requirements.",
-  "Review Tier C part details before committing to board layout."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a TABTERM land pattern is intended."
  ],
  "avoid_when": [
-  "Surface-mount (SMD) mounting is required instead of through-hole.",
-  "The layout requires a package family other than TABTERM.",
-  "The required footprint is neither TABTERM_2P8 nor TABTERM_6P35."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than TABTERM."
  ],
  "keywords": [
-  "passive",
-  "resistor",
-  "passive resistor",
   "tabterm",
-  "tabterm_2p8",
-  "tabterm_6p35",
   "2p8",
   "6p35",
-  "through_hole",
-  "through hole",
-  "chilaboard-altium-library",
+  "passive",
+  "resistor",
   "through",
   "hole",
   "pad",
@@ -56,13 +50,13 @@
   "tier_counts": {
    "C": 2
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
   "chilaboard-altium-library/TABTERM_2P8/TABTERM_2P8",
   "chilaboard-altium-library/TABTERM_6P35/TABTERM_6P35"
  ],
- "embedding_text": "passive-resistor.tabterm | Passive Resistor | Passive resistor cluster containing through-hole parts with TABTERM package footprints including TABTERM_2P8 and TABTERM_6P35. | passive resistor passive resistor tabterm tabterm_2p8 tabterm_6p35 2p8 6p35 through_hole through hole chilaboard-altium-library through hole pad mm pitch pins | TABTERM | ",
+ "embedding_text": "passive-resistor.tabterm | Passive Resistor | 2 passive resistor parts using TABTERM footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | tabterm 2p8 6p35 passive resistor through hole pad mm pitch pins | TABTERM | ",
  "class": "passive.resistor"
 }

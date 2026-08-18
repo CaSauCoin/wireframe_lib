@@ -7,42 +7,34 @@
   "Power",
   "Switching Regulator"
  ],
- "description": "Through-hole 12V buck switching regulator converter modules compatible with MeanWell NID30 and NID60 footprints.",
+ "description": "2 ic power switching regulator parts for buck, 12V using Converter footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when requiring a 12V buck switching regulator in a through-hole Converter footprint.",
-  "Choose between Converter_DCDC_MeanWell_NID30_THT and Converter_DCDC_MeanWell_NID60_THT footprint options.",
-  "Prefer tier A KiCad symbol entries for NID30S24-12 and NID60S24-12 parts."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a Converter land pattern is intended."
  ],
  "avoid_when": [
-  "The design requires surface-mount components instead of through-hole mounting.",
-  "A topology other than buck or an output voltage other than 12V is needed.",
-  "The PCB layout requires a footprint other than MeanWell NID30 or NID60 THT."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than Converter."
  ],
  "keywords": [
-  "ic",
-  "power switching",
-  "switching regulator",
-  "buck converter",
-  "12v",
-  "through hole",
-  "tht",
-  "meanwell",
-  "nid30",
-  "nid60",
-  "nid30s24-12",
-  "nid60s24-12",
-  "dcdc converter",
   "converter",
   "regulator",
   "switching",
   "step",
   "down",
   "module",
+  "12v",
   "voltage",
   "dc",
   "dcdc",
+  "meanwell",
   "fixed",
-  "output"
+  "output",
+  "250khz",
+  "53v",
+  "input"
  ],
  "facts": {
   "package_family": "Converter",
@@ -67,7 +59,7 @@
   "tier_counts": {
    "A": 2
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -91,6 +83,6 @@
   "kicad-symbols/Regulator_Switching/NID30S24-12",
   "kicad-symbols/Regulator_Switching/NID60S24-12"
  ],
- "embedding_text": "ic-power-switching.converter.buck.12v | IC Power Switching Regulator | Through-hole 12V buck switching regulator converter modules compatible with MeanWell NID30 and NID60 footprints. | ic power switching switching regulator buck converter 12v through hole tht meanwell nid30 nid60 nid30s24-12 nid60s24-12 dcdc converter converter regulator switching step down module voltage dc dcdc fixed output | Converter | buck 12V",
+ "embedding_text": "ic-power-switching.converter.buck.12v | IC Power Switching Regulator | 2 ic power switching regulator parts for buck, 12V using Converter footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | converter regulator switching step down module 12v voltage dc dcdc meanwell fixed output 250khz 53v input | Converter | buck 12V",
  "class": "ic.power.switching"
 }

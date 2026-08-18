@@ -6,30 +6,25 @@
   "Discrete",
   "Diode"
  ],
- "description": "Discrete diode cluster of 2 parts featuring Hamamatsu S13360-30CS and S14160-6050HS footprints for SMD and through-hole mounting.",
+ "description": "2 discrete diode parts using Hamamatsu footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Verify requirement for Hamamatsu S13360-30CS or S14160-6050HS footprints.",
-  "Select based on required mounting style: SMD or through-hole.",
-  "Confirm suitability of quality tier C parts before use."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a Hamamatsu land pattern is intended."
  ],
  "avoid_when": [
-  "The design requires a package family other than Hamamatsu.",
-  "Neither Hamamatsu S13360-30CS nor S14160-6050HS footprint matches the PCB layout.",
-  "Quality tier C components do not meet project requirements."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than Hamamatsu."
  ],
  "keywords": [
-  "discrete",
-  "diode",
-  "discrete diode",
   "hamamatsu",
-  "smd",
-  "through hole",
+  "s14160",
   "s13360",
   "30cs",
-  "s14160",
   "6050hs",
-  "s13360-30cs",
-  "s14160-6050hs",
+  "discrete",
+  "diode",
   "pitch",
   "sipm",
   "pad",
@@ -61,13 +56,13 @@
   "tier_counts": {
    "C": 2
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
   "dist-legacy/Hamamatsu_S13360-30CS",
   "dist-legacy/Hamamatsu_S14160-6050HS"
  ],
- "embedding_text": "discrete-diode.hamamatsu | Discrete Diode | Discrete diode cluster of 2 parts featuring Hamamatsu S13360-30CS and S14160-6050HS footprints for SMD and through-hole mounting. | discrete diode discrete diode hamamatsu smd through hole s13360 30cs s14160 6050hs s13360-30cs s14160-6050hs pitch sipm pad mm pins package mppc through hole | Hamamatsu | ",
+ "embedding_text": "discrete-diode.hamamatsu | Discrete Diode | 2 discrete diode parts using Hamamatsu footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | hamamatsu s14160 s13360 30cs 6050hs discrete diode pitch sipm pad mm pins package mppc through hole | Hamamatsu | ",
  "class": "discrete.diode"
 }

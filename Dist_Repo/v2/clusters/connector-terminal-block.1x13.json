@@ -6,37 +6,29 @@
   "Connector",
   "Terminal Block"
  ],
- "description": "Single-source cluster for a 1x13 through-hole screw terminal block, represented by one tier-B kicad-symbols part with a 1x13 footprint.",
+ "description": "1 connector terminal block parts using 1x13 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Confirm the design needs exactly 13 through-hole terminal positions in a single row.",
-  "Only one part is available (tier B, score 80); verify its footprint matches your board's land pattern.",
-  "Review status is 'generated', so confirm symbol-footprint pairing before use."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a 1x13 land pattern is intended."
  ],
  "avoid_when": [
-  "The design requires a footprint other than 1x13 or a different mount type than through_hole.",
-  "Electrical ratings (voltage, current, pitch) are needed but not stated by this part.",
-  "A reviewed/verified (non-generated) part is required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than 1x13."
  ],
  "keywords": [
-  "terminal block",
-  "screw terminal",
-  "connector",
-  "1x13",
-  "01x13",
-  "through hole",
-  "single row",
-  "13 position",
-  "13 pin",
-  "kicad",
-  "kicad-symbols",
-  "generic connector",
-  "generated",
   "terminal",
   "screw",
+  "connector",
+  "01x13",
+  "1x13",
   "generic",
   "single",
   "row",
   "script",
+  "generated",
+  "kicad",
   "library",
   "utils",
   "schlib",
@@ -62,7 +54,7 @@
   "tier_counts": {
    "B": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -77,6 +69,6 @@
  "part_ids": [
   "kicad-symbols/Connector/Screw_Terminal_01x13"
  ],
- "embedding_text": "connector-terminal-block.1x13 | Connector Terminal Block | Single-source cluster for a 1x13 through-hole screw terminal block, represented by one tier-B kicad-symbols part with a 1x13 footprint. | terminal block screw terminal connector 1x13 01x13 through hole single row 13 position 13 pin kicad kicad-symbols generic connector generated terminal screw generic single row script library utils schlib autogen sparkfun | 1x13 | ",
+ "embedding_text": "connector-terminal-block.1x13 | Connector Terminal Block | 1 connector terminal block parts using 1x13 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | terminal screw connector 01x13 1x13 generic single row script generated kicad library utils schlib autogen sparkfun | 1x13 | ",
  "class": "connector.terminal_block"
 }

@@ -6,32 +6,26 @@
   "Discrete",
   "Diode"
  ],
- "description": "Discrete SMD diode cluster for 3.3V applications utilizing QFN packaging with D_QFN_3.3x3.3mm_P0.65mm footprints.",
+ "description": "2 discrete diode parts for 3.3V using QFN footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Choose when requiring surface-mount discrete diodes in a QFN package.",
-  "Verify layout compatibility with the D_QFN_3.3x3.3mm_P0.65mm footprint.",
-  "Check part quality tiers (tier B and tier C) and source requirements."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a QFN land pattern is intended."
  ],
  "avoid_when": [
-  "The layout requires a non-QFN or through-hole footprint.",
-  "The application voltage differs from 3.3V.",
-  "A footprint other than D_QFN_3.3x3.3mm_P0.65mm is needed."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than QFN."
  ],
  "keywords": [
-  "discrete",
-  "diode",
-  "3.3v",
   "qfn",
-  "smd",
-  "surface mount",
-  "d_qfn_3.3x3.3mm_p0.65mm",
-  "c3d1p7060q",
-  "kicad-symbols",
-  "dist-legacy",
+  "diode",
   "3x3",
   "3mm",
   "p0",
   "65mm",
+  "discrete",
+  "c3d1p7060q",
   "sic",
   "3v",
   "600v",
@@ -64,7 +58,7 @@
    "B": 1,
    "C": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -80,6 +74,6 @@
   "kicad-symbols/Diode/C3D1P7060Q",
   "dist-legacy/D_QFN_3.3x3.3mm_P0.65mm"
  ],
- "embedding_text": "discrete-diode.qfn.3v3 | Discrete Diode | Discrete SMD diode cluster for 3.3V applications utilizing QFN packaging with D_QFN_3.3x3.3mm_P0.65mm footprints. | discrete diode 3.3v qfn smd surface mount d_qfn_3.3x3.3mm_p0.65mm c3d1p7060q kicad-symbols dist-legacy 3x3 3mm p0 65mm sic 3v 600v 7a schottky surface mount pad | QFN | 3.3V",
+ "embedding_text": "discrete-diode.qfn.3v3 | Discrete Diode | 2 discrete diode parts for 3.3V using QFN footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | qfn diode 3x3 3mm p0 65mm discrete c3d1p7060q sic 3v 600v 7a schottky surface mount pad | QFN | 3.3V",
  "class": "discrete.diode"
 }

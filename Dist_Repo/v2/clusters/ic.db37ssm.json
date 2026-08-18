@@ -5,28 +5,20 @@
  "category_path": [
   "IC"
  ],
- "description": "Integrated circuit cluster containing 1 part associated with the DB37SSM footprint family.",
+ "description": "1 ic parts using DB37SSM footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Use when a DB37SSM footprint is required for the component layout.",
-  "Verify package dimensions and pin assignments with datasheet specifications.",
-  "Review quality tier and source reliability before specifying the part."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a DB37SSM land pattern is intended."
  ],
  "avoid_when": [
-  "The PCB design requires a package family other than DB37SSM.",
-  "Required electrical characteristics, pinouts, or ratings are not documented.",
-  "Unverified symbol-to-footprint pairings cannot be tolerated."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than DB37SSM."
  ],
  "keywords": [
   "db37ssm",
   "ic",
-  "integrated circuit",
-  "db37ssm package",
-  "db37ssm footprint",
-  "footprint",
-  "package family",
-  "land pattern",
-  "eda component",
-  "ic cluster",
   "pad",
   "mm",
   "pitch",
@@ -51,12 +43,12 @@
   "tier_counts": {
    "C": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
   "dist-legacy/DB37SSM"
  ],
- "embedding_text": "ic.db37ssm | IC | Integrated circuit cluster containing 1 part associated with the DB37SSM footprint family. | db37ssm ic integrated circuit db37ssm package db37ssm footprint footprint package family land pattern eda component ic cluster pad mm pitch pins | DB37SSM | ",
+ "embedding_text": "ic.db37ssm | IC | 1 ic parts using DB37SSM footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | db37ssm ic pad mm pitch pins | DB37SSM | ",
  "class": "ic"
 }

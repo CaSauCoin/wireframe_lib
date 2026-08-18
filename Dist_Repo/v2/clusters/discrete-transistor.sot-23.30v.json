@@ -6,42 +6,34 @@
   "Discrete",
   "Transistor"
  ],
- "description": "Discrete transistor library cluster containing 99 surface-mount 30V parts utilizing SOT-23 family footprints.",
+ "description": "99 discrete transistor parts for 30V using SOT-23 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select based on exact footprint variant such as SOT-23, SOT-23-3, SOT-23-6, or Q_SOT-23.",
-  "Prefer Tier A parts (95 available) over Tier B or C parts.",
-  "Filter parts by source library including Alternate-KiCad-Library, DigiKey, JLCPCB, or Seeed OPL."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SOT-23 land pattern is intended."
  ],
  "avoid_when": [
-  "The design requires non-SMD mounting or packages other than SOT-23 family footprints.",
-  "Voltage requirements differ from the 30V facet.",
-  "The design requires components outside the discrete transistor class."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SOT-23."
  ],
  "keywords": [
-  "discrete transistor",
-  "sot-23",
-  "30v",
-  "smd",
-  "discrete",
-  "transistor",
-  "sot-23-3",
-  "sot-23-6",
-  "q_sot-23",
-  "alternate-kicad-library",
-  "digikey-kicad-library",
-  "jlcpcb-kicad-library",
-  "seeed-opl-kicad-library",
-  "ao3400a",
-  "ao3401a",
   "sot",
   "mosfet",
+  "transistor",
+  "30v",
   "enchancement",
+  "discrete",
   "akl",
   "alternate",
   "kicad",
   "library",
   "mode",
-  "mos"
+  "mos",
+  "emos",
+  "emosfet",
+  "nmosfet",
+  "nmos"
  ],
  "facts": {
   "package_family": "SOT-23",
@@ -72,7 +64,7 @@
    "B": 2,
    "C": 2
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -217,6 +209,6 @@
   "Alternate-KiCad-Library/Transistor_MOSFET_AKL/DMN3042L",
   "Alternate-KiCad-Library/Transistor_MOSFET_AKL/DMN3053L"
  ],
- "embedding_text": "discrete-transistor.sot-23.30v | Discrete Transistor | Discrete transistor library cluster containing 99 surface-mount 30V parts utilizing SOT-23 family footprints. | discrete transistor sot-23 30v smd discrete transistor sot-23-3 sot-23-6 q_sot-23 alternate-kicad-library digikey-kicad-library jlcpcb-kicad-library seeed-opl-kicad-library ao3400a ao3401a sot mosfet enchancement akl alternate kicad library mode mos | SOT-23 | 30V",
+ "embedding_text": "discrete-transistor.sot-23.30v | Discrete Transistor | 99 discrete transistor parts for 30V using SOT-23 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | sot mosfet transistor 30v enchancement discrete akl alternate kicad library mode mos emos emosfet nmosfet nmos | SOT-23 | 30V",
  "class": "discrete.transistor"
 }

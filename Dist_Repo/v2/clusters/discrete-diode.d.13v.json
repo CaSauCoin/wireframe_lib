@@ -6,44 +6,34 @@
   "Discrete",
   "Diode"
  ],
- "description": "Cluster of 147 discrete D-package diode parts tagged 13V, covering SMD and through-hole footprints (SMA, SMB, SMC, MELF, MiniMELF, SOD-123/123F/323/523, DO-35, DO-41) with zener- and TVS-style land patterns from three KiCad library sources.",
+ "description": "147 discrete diode parts for 13V using D footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Prefer tier A parts (139 of 147) with an exact footprint match to the intended D-package land pattern.",
-  "Match footprint to mounting style: SMA/SMB/SMC/MELF/SOD-xxx for SMD, DO-35/DO-41 for through-hole.",
-  "Cross-check zener vs TVS footprint suffix (e.g. _Zener vs _TVS) against the intended diode function.",
-  "Favor parts from kicad-symbols or JLCPCB-Kicad-Library when source trust matters over the larger Alternate-KiCad-Library set."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a D land pattern is intended."
  ],
  "avoid_when": [
-  "A package family other than D (e.g. SOT, DPAK) is required by the layout.",
-  "The design needs a documented voltage/current/speed rating beyond the 13V facet grouping.",
-  "review_status is 'generated' and the symbol-footprint pairing has not been manually verified.",
-  "Only tier B entries match the needed footprint and higher-confidence data is required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than D."
  ],
  "keywords": [
   "diode",
-  "discrete diode",
   "zener",
-  "tvs",
   "13v",
-  "d package",
-  "sma",
-  "smb",
-  "smc",
-  "melf",
-  "minimelf",
-  "sod-123",
-  "sod-323",
-  "sod-523",
-  "do-35",
-  "do-41",
-  "smd",
-  "through hole",
-  "kicad",
-  "alternate-kicad-library",
+  "tvs",
   "discrete",
   "akl",
   "alternate",
-  "library"
+  "kicad",
+  "library",
+  "do",
+  "sod",
+  "horizontal",
+  "unidirectional",
+  "smb",
+  "bidirectional",
+  "sma"
  ],
  "facts": {
   "package_family": "D",
@@ -81,7 +71,7 @@
    "A": 139,
    "B": 8
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -274,6 +264,6 @@
   "Alternate-KiCad-Library/Diode_TVS_AKL/TPSMA6L13A",
   "Alternate-KiCad-Library/Diode_TVS_AKL/TPSMP13A"
  ],
- "embedding_text": "discrete-diode.d.13v | Discrete Diode | Cluster of 147 discrete D-package diode parts tagged 13V, covering SMD and through-hole footprints (SMA, SMB, SMC, MELF, MiniMELF, SOD-123/123F/323/523, DO-35, DO-41) with zener- and TVS-style land patterns from three KiCad library sources. | diode discrete diode zener tvs 13v d package sma smb smc melf minimelf sod-123 sod-323 sod-523 do-35 do-41 smd through hole kicad alternate-kicad-library discrete akl alternate library | D | 13V",
+ "embedding_text": "discrete-diode.d.13v | Discrete Diode | 147 discrete diode parts for 13V using D footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | diode zener 13v tvs discrete akl alternate kicad library do sod horizontal unidirectional smb bidirectional sma | D | 13V",
  "class": "discrete.diode"
 }

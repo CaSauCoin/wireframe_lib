@@ -5,42 +5,34 @@
  "category_path": [
   "IC"
  ],
- "description": "Integrated circuit cluster of 66 parts utilizing the LFCSP package family across 12 footprint variants.",
+ "description": "66 ic parts using LFCSP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select based on exact LFCSP footprint parameters including pin count, pitch, and exposed pad dimensions.",
-  "Prefer higher quality tier parts (Tier A or B) available in the cluster.",
-  "Verify compatibility with surface-mount (smd) soldering requirements."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a LFCSP land pattern is intended."
  ],
  "avoid_when": [
-  "The PCB layout requires package families other than LFCSP.",
-  "Through-hole mounting is required instead of surface-mount technology.",
-  "The required footprint geometry does not match any of the listed LFCSP footprints."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than LFCSP."
  ],
  "keywords": [
-  "ic",
   "lfcsp",
-  "smd",
-  "surface mount",
-  "integrated circuit",
-  "package family lfcsp",
-  "lfcsp-16",
-  "lfcsp-32",
-  "lfcsp-40",
-  "lfcsp-24",
-  "lfcsp-8",
-  "lfcsp-6",
-  "lfcsp-vq",
-  "lfcsp-wd",
   "5mm",
   "p0",
   "1ep",
   "package",
+  "ic",
   "thermalvias",
   "pdf",
   "4x4mm",
   "3x3mm",
   "ep1",
-  "ep2"
+  "ep2",
+  "cp",
+  "pad",
+  "pitch",
+  "6mm"
  ],
  "facts": {
   "package_family": "LFCSP",
@@ -76,7 +68,7 @@
    "B": 4,
    "C": 59
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -188,6 +180,6 @@
   "dist-legacy/LFCSP-VQ-48-1EP_7x7mm_P0.5mm",
   "dist-legacy/LFCSP-WD-8-1EP_3x3mm_P0.65mm_EP1.6x2.44mm_ThermalVias"
  ],
- "embedding_text": "ic.lfcsp | IC | Integrated circuit cluster of 66 parts utilizing the LFCSP package family across 12 footprint variants. | ic lfcsp smd surface mount integrated circuit package family lfcsp lfcsp-16 lfcsp-32 lfcsp-40 lfcsp-24 lfcsp-8 lfcsp-6 lfcsp-vq lfcsp-wd 5mm p0 1ep package thermalvias pdf 4x4mm 3x3mm ep1 ep2 | LFCSP | ",
+ "embedding_text": "ic.lfcsp | IC | 66 ic parts using LFCSP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | lfcsp 5mm p0 1ep package ic thermalvias pdf 4x4mm 3x3mm ep1 ep2 cp pad pitch 6mm | LFCSP | ",
  "class": "ic"
 }

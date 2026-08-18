@@ -7,30 +7,21 @@
   "Driver",
   "Motor"
  ],
- "description": "Surface-mount motor driver IC cluster featuring Tier A parts in SO-8 packaging from KiCad symbols.",
+ "description": "2 ic driver motor parts using SO footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when needing surface-mount motor driver ICs in SO packages.",
-  "Choose when requiring Tier A parts with an SO-8 footprint.",
-  "Select for designs targeting CP2119L or CP3119M motor driver entries."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SO land pattern is intended."
  ],
  "avoid_when": [
-  "Through-hole mounting is required instead of surface mount.",
-  "The design requires package footprints other than SO-8.",
-  "Components outside the motor driver IC category are needed."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SO."
  ],
  "keywords": [
-  "ic",
   "driver",
-  "motor",
   "so",
-  "so-8",
-  "smd",
-  "cp2119l",
-  "cp3119m",
-  "kicad-symbols",
-  "motor driver",
-  "ic driver motor",
-  "surface mount",
+  "motor",
   "bridge",
   "brushed",
   "dc",
@@ -42,7 +33,8 @@
   "pwm",
   "9x4",
   "9mm",
-  "p1"
+  "p1",
+  "27mm"
  ],
  "facts": {
   "package_family": "SO",
@@ -63,7 +55,7 @@
   "tier_counts": {
    "A": 2
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -87,6 +79,6 @@
   "kicad-symbols/Driver_Motor/CP2119L",
   "kicad-symbols/Driver_Motor/CP3119M"
  ],
- "embedding_text": "ic-driver-motor.so | IC Driver Motor | Surface-mount motor driver IC cluster featuring Tier A parts in SO-8 packaging from KiCad symbols. | ic driver motor so so-8 smd cp2119l cp3119m kicad-symbols motor driver ic driver motor surface mount bridge brushed dc with current limit rdson 30khz pwm 9x4 9mm p1 | SO | ",
+ "embedding_text": "ic-driver-motor.so | IC Driver Motor | 2 ic driver motor parts using SO footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | driver so motor bridge brushed dc with current limit rdson 30khz pwm 9x4 9mm p1 27mm | SO | ",
  "class": "ic.driver.motor"
 }

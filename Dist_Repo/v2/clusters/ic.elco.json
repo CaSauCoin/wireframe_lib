@@ -5,28 +5,21 @@
  "category_path": [
   "IC"
  ],
- "description": "Integrated circuit component cluster containing 1 tier C entry using the elco package family and elco_kecil footprint.",
+ "description": "1 ic parts using elco footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Use when an IC component requiring an elco package family land pattern is specified.",
-  "Verify pin mapping and physical dimensions for the elco_kecil footprint.",
-  "Confirm suitability of tier C part quality and unknown mounting status."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a elco land pattern is intended."
  ],
  "avoid_when": [
-  "The layout requires a package family other than elco.",
-  "Unreviewed tier C quality or unknown mount type is unacceptable for the project.",
-  "Exact electrical parameters or verified datasheets are required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than elco."
  ],
  "keywords": [
-  "ic",
   "elco",
-  "elco_kecil",
   "kecil",
-  "integrated circuit",
-  "elco package family",
-  "elco footprint",
-  "tier c",
-  "dist-legacy",
-  "unknown mount",
+  "ic",
   "pad",
   "mm",
   "pitch",
@@ -51,12 +44,12 @@
   "tier_counts": {
    "C": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
   "dist-legacy/elco_kecil"
  ],
- "embedding_text": "ic.elco | IC | Integrated circuit component cluster containing 1 tier C entry using the elco package family and elco_kecil footprint. | ic elco elco_kecil kecil integrated circuit elco package family elco footprint tier c dist-legacy unknown mount pad mm pitch pins | elco | ",
+ "embedding_text": "ic.elco | IC | 1 ic parts using elco footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | elco kecil ic pad mm pitch pins | elco | ",
  "class": "ic"
 }

@@ -6,28 +6,21 @@
   "Discrete",
   "Diode"
  ],
- "description": "Discrete diode component cluster in the PH package family containing one tier C part with a PH-2 footprint.",
+ "description": "1 discrete diode parts using PH footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Confirm component parameters against legacy source data before design use.",
-  "Verify pin and pad layout compatibility with the PH-2 footprint.",
-  "Use when searching for discrete diodes within the PH package family."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a PH land pattern is intended."
  ],
  "avoid_when": [
-  "The design requires packages or footprints other than PH and PH-2.",
-  "Verified tier A or tier B component data is required.",
-  "Mounting style must be explicitly defined rather than unknown."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than PH."
  ],
  "keywords": [
   "ph",
-  "ph-2",
   "discrete",
   "diode",
-  "discrete diode",
-  "ph package family",
-  "ph-2 footprint",
-  "discrete.diode",
-  "dist-legacy",
-  "tier c",
   "pad",
   "mm",
   "pitch",
@@ -52,12 +45,12 @@
   "tier_counts": {
    "C": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
   "dist-legacy/PH-2"
  ],
- "embedding_text": "discrete-diode.ph | Discrete Diode | Discrete diode component cluster in the PH package family containing one tier C part with a PH-2 footprint. | ph ph-2 discrete diode discrete diode ph package family ph-2 footprint discrete.diode dist-legacy tier c pad mm pitch pins | PH | ",
+ "embedding_text": "discrete-diode.ph | Discrete Diode | 1 discrete diode parts using PH footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | ph discrete diode pad mm pitch pins | PH | ",
  "class": "discrete.diode"
 }

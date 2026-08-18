@@ -7,32 +7,18 @@
   "Power",
   "Switching Regulator"
  ],
- "description": "SMD 3.3V boost switching regulator IC cluster featuring tier A parts in SOT-23-6 and TSOT-23-6 package footprints from KiCad symbols.",
+ "description": "2 ic power switching regulator parts for 3.3V, boost using SOT-23 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when requiring a 3.3V boost switching regulator IC.",
-  "Choose between SOT-23-6 and TSOT-23-6 footprint variants.",
-  "Use when sourcing surface-mount (SMD) parts from KiCad symbols library."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SOT-23 land pattern is intended."
  ],
  "avoid_when": [
-  "A voltage output other than 3.3V or non-boost topology is required.",
-  "The board design requires through-hole mounting instead of SMD.",
-  "Footprints other than SOT-23-6 or TSOT-23-6 are needed."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SOT-23."
  ],
  "keywords": [
-  "ic",
-  "power switching regulator",
-  "switching regulator",
-  "boost regulator",
-  "3.3v boost",
-  "3.3v",
-  "boost",
-  "sot-23",
-  "sot-23-6",
-  "tsot-23-6",
-  "smd",
-  "aat1217ica-3.3",
-  "aat1217igu-3.3",
-  "kicad-symbols",
   "sot",
   "regulator",
   "switching",
@@ -42,7 +28,13 @@
   "tsot",
   "600ma",
   "2mhz",
-  "micropower"
+  "micropower",
+  "synchronous",
+  "converter",
+  "to",
+  "smd",
+  "ic",
+  "power"
  ],
  "facts": {
   "package_family": "SOT-23",
@@ -67,7 +59,7 @@
   "tier_counts": {
    "A": 2
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -91,6 +83,6 @@
   "kicad-symbols/Regulator_Switching/AAT1217ICA-3.3",
   "kicad-symbols/Regulator_Switching/AAT1217IGU-3.3"
  ],
- "embedding_text": "ic-power-switching.sot-23.3v3.boost | IC Power Switching Regulator | SMD 3.3V boost switching regulator IC cluster featuring tier A parts in SOT-23-6 and TSOT-23-6 package footprints from KiCad symbols. | ic power switching regulator switching regulator boost regulator 3.3v boost 3.3v boost sot-23 sot-23-6 tsot-23-6 smd aat1217ica-3.3 aat1217igu-3.3 kicad-symbols sot regulator switching 3v step up tsot 600ma 2mhz micropower | SOT-23 | 3.3V boost",
+ "embedding_text": "ic-power-switching.sot-23.3v3.boost | IC Power Switching Regulator | 2 ic power switching regulator parts for 3.3V, boost using SOT-23 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | sot regulator switching 3v step up tsot 600ma 2mhz micropower synchronous converter to smd ic power | SOT-23 | 3.3V boost",
  "class": "ic.power.switching"
 }

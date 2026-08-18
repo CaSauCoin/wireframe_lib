@@ -6,41 +6,34 @@
   "Passive",
   "Resistor"
  ],
- "description": "A cluster of 7 surface-mount passive resistor parts from the celestial-altium-library using TAIYO package footprints.",
+ "description": "7 passive resistor parts using TAIYO footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Verify the target footprint matches one of the 7 supported TAIYO SMD footprints such as NR, NRS, LSXND, or MAMK series.",
-  "Check footprint geometry and library specifications before layout implementation.",
-  "Select when surface-mount passive resistors with TAIYO package footprints are required."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a TAIYO land pattern is intended."
  ],
  "avoid_when": [
-  "Through-hole mounting or non-TAIYO package footprints are required.",
-  "The application requires components outside the passive resistor category.",
-  "Designs require footprints not listed among the 7 available TAIYO patterns."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than TAIYO."
  ],
  "keywords": [
-  "passive resistor",
-  "resistor",
   "taiyo",
-  "taiyo yuden",
-  "smd",
-  "surface mount",
-  "lsxnd4040",
-  "mamk2520t1r0m",
-  "nr4018",
-  "nr8040",
-  "nrs5030",
-  "nrs8030",
-  "nrs8040",
-  "celestial-altium-library",
   "yuden",
   "passive",
+  "resistor",
   "surface",
   "mount",
   "pad",
   "mm",
   "pitch",
   "pins",
-  "8h"
+  "lsxnd4040",
+  "8h",
+  "mamk2520t1r0m",
+  "nr4018",
+  "nr8040",
+  "nrs5030"
  ],
  "facts": {
   "package_family": "TAIYO",
@@ -67,7 +60,7 @@
   "tier_counts": {
    "C": 7
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
@@ -79,6 +72,6 @@
   "celestial-altium-library/TAIYO YUDEN NRS8030/TAIYO_YUDEN_NRS8030",
   "celestial-altium-library/TAIYO YUDEN NRS8040/TAIYO_YUDEN_NRS8040"
  ],
- "embedding_text": "passive-resistor.taiyo | Passive Resistor | A cluster of 7 surface-mount passive resistor parts from the celestial-altium-library using TAIYO package footprints. | passive resistor resistor taiyo taiyo yuden smd surface mount lsxnd4040 mamk2520t1r0m nr4018 nr8040 nrs5030 nrs8030 nrs8040 celestial-altium-library yuden passive surface mount pad mm pitch pins 8h | TAIYO | ",
+ "embedding_text": "passive-resistor.taiyo | Passive Resistor | 7 passive resistor parts using TAIYO footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | taiyo yuden passive resistor surface mount pad mm pitch pins lsxnd4040 8h mamk2520t1r0m nr4018 nr8040 nrs5030 | TAIYO | ",
  "class": "passive.resistor"
 }

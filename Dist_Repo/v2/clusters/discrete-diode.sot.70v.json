@@ -6,44 +6,34 @@
   "Discrete",
   "Diode"
  ],
- "description": "Cluster of 19 SOT-package discrete diodes (BAS70 series) in the 70V facet, covering SOT-323/SC-70, SOT-143, SOT-363/SC-70-6, SOT-666 and SOT-343/SC-70-4 SMD footprints, all sourced from Alternate-KiCad-Library and rated tier A.",
+ "description": "19 discrete diode parts for 70V using SOT footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "All 19 parts are tier A (score 100) from Alternate-KiCad-Library.",
-  "Match the exact footprint variant needed: SOT-323/SC-70, SOT-143, SOT-363/SC-70-6, SOT-666, or SOT-343/SC-70-4.",
-  "Check the BAS70 part suffix against the required diode configuration before selecting.",
-  "Review status is 'generated' — confirm against the datasheet before committing."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SOT land pattern is intended."
  ],
  "avoid_when": [
-  "A non-SOT package or a through-hole footprint is required.",
-  "The design requires a voltage rating other than 70V.",
-  "The exact SOT footprint variant cannot be confirmed against the PCB land pattern.",
-  "A verified (non-generated) review status is required at this design stage."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SOT."
  ],
  "keywords": [
   "diode",
   "sot",
-  "sc-70",
-  "sot-323",
-  "sot-143",
-  "sot-363",
-  "sot-666",
-  "sot-343",
-  "70v",
-  "smd",
-  "bas70",
   "schottky",
-  "discrete",
-  "alternate-kicad-library",
-  "tier a",
-  "generated",
+  "70v",
   "dual",
   "sc",
+  "bas70",
   "akl",
   "alternate",
   "kicad",
   "library",
+  "discrete",
   "independent",
-  "70ma"
+  "70ma",
+  "hsms",
+  "series"
  ],
  "facts": {
   "package_family": "SOT",
@@ -70,7 +60,7 @@
   "tier_counts": {
    "A": 19
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -135,6 +125,6 @@
   "Alternate-KiCad-Library/Diode_Schottky_AKL/HSMS-280F",
   "Alternate-KiCad-Library/Diode_Schottky_AKL/HSMS-2808"
  ],
- "embedding_text": "discrete-diode.sot.70v | Discrete Diode | Cluster of 19 SOT-package discrete diodes (BAS70 series) in the 70V facet, covering SOT-323/SC-70, SOT-143, SOT-363/SC-70-6, SOT-666 and SOT-343/SC-70-4 SMD footprints, all sourced from Alternate-KiCad-Library and rated tier A. | diode sot sc-70 sot-323 sot-143 sot-363 sot-666 sot-343 70v smd bas70 schottky discrete alternate-kicad-library tier a generated dual sc akl alternate kicad library independent 70ma | SOT | 70V",
+ "embedding_text": "discrete-diode.sot.70v | Discrete Diode | 19 discrete diode parts for 70V using SOT footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | diode sot schottky 70v dual sc bas70 akl alternate kicad library discrete independent 70ma hsms series | SOT | 70V",
  "class": "discrete.diode"
 }

@@ -6,44 +6,34 @@
   "Discrete",
   "Diode"
  ],
- "description": "Cluster of 8 SOT-package discrete diodes for the 13V facet, spanning SOT-363, SOT-323, SOT-89-3, and SOT-223-3 SMD footprints, all tier A.",
+ "description": "8 discrete diode parts for 13V using SOT footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Match the exact SOT footprint (SOT-363, SOT-323, SOT-89-3, SOT-223-3) to your land pattern",
-  "All 8 parts are tier A with score 100, so differentiate by footprint and source",
-  "Confirm the 13V facet matches your circuit's required rating before use",
-  "Verify symbol-to-footprint pairing prior to layout"
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SOT land pattern is intended."
  ],
  "avoid_when": [
-  "The design requires a non-SOT package",
-  "The 13V facet does not match the needed electrical rating",
-  "Through-hole mounting is required instead of SMD",
-  "Exact footprint (e.g. SOT-363 vs SOT-89-3) cannot be confirmed for the board"
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SOT."
  ],
  "keywords": [
   "diode",
-  "discrete diode",
   "sot",
-  "sot-363",
-  "sot-323",
-  "sot-89-3",
-  "sot-223-3",
-  "sc-70",
-  "13v",
-  "smd",
-  "alternate kicad library",
-  "akl",
-  "bzb784-c13",
-  "bzv49-c13",
-  "bzv90-c13",
-  "bzx84c13s",
-  "bzx84c13ss",
-  "tier a",
   "zener",
+  "13v",
   "sc",
   "dual",
+  "akl",
   "alternate",
   "kicad",
-  "library"
+  "library",
+  "discrete",
+  "independent",
+  "200mw",
+  "c13",
+  "bzb784",
+  "bzv49"
  ],
  "facts": {
   "package_family": "SOT",
@@ -69,7 +59,7 @@
   "tier_counts": {
    "A": 8
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -123,6 +113,6 @@
   "Alternate-KiCad-Library/Diode_Zener_AKL/MMBZ5243BS",
   "Alternate-KiCad-Library/Diode_Zener_AKL/MMBZ5243BSs"
  ],
- "embedding_text": "discrete-diode.sot.13v | Discrete Diode | Cluster of 8 SOT-package discrete diodes for the 13V facet, spanning SOT-363, SOT-323, SOT-89-3, and SOT-223-3 SMD footprints, all tier A. | diode discrete diode sot sot-363 sot-323 sot-89-3 sot-223-3 sc-70 13v smd alternate kicad library akl bzb784-c13 bzv49-c13 bzv90-c13 bzx84c13s bzx84c13ss tier a zener sc dual alternate kicad library | SOT | 13V",
+ "embedding_text": "discrete-diode.sot.13v | Discrete Diode | 8 discrete diode parts for 13V using SOT footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | diode sot zener 13v sc dual akl alternate kicad library discrete independent 200mw c13 bzb784 bzv49 | SOT | 13V",
  "class": "discrete.diode"
 }

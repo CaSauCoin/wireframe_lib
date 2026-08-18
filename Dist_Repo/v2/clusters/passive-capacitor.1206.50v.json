@@ -6,38 +6,34 @@
   "Passive",
   "Capacitor"
  ],
- "description": "Cluster of 7 surface-mount 50V passive capacitor parts using 1206 footprints from the JLCPCB KiCad library.",
+ "description": "7 passive capacitor parts for 50V using 1206 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select based on required capacitance value such as 10nF, 100nF, 1uF, 2.2uF, or 10uF.",
-  "Verify suitability for a 50V rating and SMD 1206 footprint.",
-  "Review component specifications as all parts in this cluster are Tier B."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a 1206 land pattern is intended."
  ],
  "avoid_when": [
-  "A voltage rating other than 50V is required.",
-  "The board layout requires a footprint other than SMD 1206.",
-  "A quality tier higher than Tier B is required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than 1206."
  ],
  "keywords": [
-  "passive",
-  "capacitor",
-  "50v",
-  "1206",
-  "c_1206",
-  "smd",
-  "jlcpcb",
-  "jlcpcb-kicad-library",
-  "100nf",
-  "10nf",
-  "10uf",
-  "1uf",
-  "2.2uf",
   "capacitors",
+  "50v",
+  "capacitor",
+  "jlcpcb",
   "multilayer",
   "ceramic",
   "mlcc",
+  "smd",
   "smt",
   "rohs",
-  "x7r"
+  "passive",
+  "x7r",
+  "100nf",
+  "10nf",
+  "10uf",
+  "1uf"
  ],
  "facts": {
   "package_family": "1206",
@@ -60,7 +56,7 @@
   "tier_counts": {
    "B": 7
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -113,6 +109,6 @@
   "JLCPCB-Kicad-Library/JLCPCB-Capacitors/1206,220nF",
   "JLCPCB-Kicad-Library/JLCPCB-Capacitors/1206,4.7uF"
  ],
- "embedding_text": "passive-capacitor.1206.50v | Passive Capacitor | Cluster of 7 surface-mount 50V passive capacitor parts using 1206 footprints from the JLCPCB KiCad library. | passive capacitor 50v 1206 c_1206 smd jlcpcb jlcpcb-kicad-library 100nf 10nf 10uf 1uf 2.2uf capacitors multilayer ceramic mlcc smt rohs x7r | 1206 | 50V",
+ "embedding_text": "passive-capacitor.1206.50v | Passive Capacitor | 7 passive capacitor parts for 50V using 1206 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | capacitors 50v capacitor jlcpcb multilayer ceramic mlcc smd smt rohs passive x7r 100nf 10nf 10uf 1uf | 1206 | 50V",
  "class": "passive.capacitor"
 }

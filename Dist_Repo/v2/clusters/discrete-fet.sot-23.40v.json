@@ -6,40 +6,33 @@
   "Discrete",
   "FET"
  ],
- "description": "A cluster of four tier A surface-mount discrete FET components featuring 40V ratings and SOT-23 footprints from KiCad symbols.",
+ "description": "4 discrete fet parts for 40V using SOT-23 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select for 40V surface-mount applications requiring a SOT-23 footprint.",
-  "Choose among tier A parts such as BSR56, BSR57, BSR58, or Si2319CDS.",
-  "Verify individual part parameters from KiCad symbol library source."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SOT-23 land pattern is intended."
  ],
  "avoid_when": [
-  "Do not use if a package family other than SOT-23 is needed.",
-  "Do not use if mounting requirement is not SMD.",
-  "Do not use when voltage ratings other than 40V are required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SOT-23."
  ],
  "keywords": [
-  "discrete fet",
-  "sot-23",
-  "40v",
-  "smd",
-  "fet",
-  "discrete",
-  "bsr56",
-  "bsr57",
-  "bsr58",
-  "si2319cds",
-  "kicad-symbols",
-  "transistor_fet",
   "sot",
+  "fet",
+  "40v",
   "channel",
   "transistor",
   "to",
+  "smd",
+  "discrete",
   "min",
   "max",
   "vgs",
   "off",
   "jfet",
   "mosfet",
+  "bsr56",
   "50ma"
  ],
  "facts": {
@@ -63,7 +56,7 @@
   "tier_counts": {
    "A": 4
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -105,6 +98,6 @@
   "kicad-symbols/Transistor_FET/BSR58",
   "kicad-symbols/Transistor_FET/Si2319CDS"
  ],
- "embedding_text": "discrete-fet.sot-23.40v | Discrete FET | A cluster of four tier A surface-mount discrete FET components featuring 40V ratings and SOT-23 footprints from KiCad symbols. | discrete fet sot-23 40v smd fet discrete bsr56 bsr57 bsr58 si2319cds kicad-symbols transistor_fet sot channel transistor to min max vgs off jfet mosfet 50ma | SOT-23 | 40V",
+ "embedding_text": "discrete-fet.sot-23.40v | Discrete FET | 4 discrete fet parts for 40V using SOT-23 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | sot fet 40v channel transistor to smd discrete min max vgs off jfet mosfet bsr56 50ma | SOT-23 | 40V",
  "class": "discrete.fet"
 }

@@ -5,28 +5,20 @@
  "category_path": [
   "IC"
  ],
- "description": "IC cluster containing 3 parts in the HQA100D package family using HQA100D_L, HQA100D_M, or HQA100D_N footprints.",
+ "description": "3 ic parts using HQA100D footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Verify compatibility with HQA100D_L, HQA100D_M, or HQA100D_N footprints.",
-  "Confirm mounting specifications, as mount type is currently listed as unknown.",
-  "Review tier C source data from legacy distributors before selection."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a HQA100D land pattern is intended."
  ],
  "avoid_when": [
-  "The board layout requires a package family other than HQA100D.",
-  "Higher quality tiers (such as tier A or B) are required for part selection.",
-  "Verified surface-mount or through-hole mounting classifications are required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than HQA100D."
  ],
  "keywords": [
-  "ic",
   "hqa100d",
-  "hqa100d_l",
-  "hqa100d_m",
-  "hqa100d_n",
-  "package family",
-  "integrated circuit",
-  "footprint",
-  "legacy distributor",
-  "tier c",
+  "ic",
   "pad",
   "mm",
   "pitch",
@@ -53,7 +45,7 @@
   "tier_counts": {
    "C": 3
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
@@ -61,6 +53,6 @@
   "dist-legacy/HQA100D_M",
   "dist-legacy/HQA100D_N"
  ],
- "embedding_text": "ic.hqa100d | IC | IC cluster containing 3 parts in the HQA100D package family using HQA100D_L, HQA100D_M, or HQA100D_N footprints. | ic hqa100d hqa100d_l hqa100d_m hqa100d_n package family integrated circuit footprint legacy distributor tier c pad mm pitch pins | HQA100D | ",
+ "embedding_text": "ic.hqa100d | IC | 3 ic parts using HQA100D footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | hqa100d ic pad mm pitch pins | HQA100D | ",
  "class": "ic"
 }

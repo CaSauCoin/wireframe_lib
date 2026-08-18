@@ -6,33 +6,26 @@
   "IC",
   "Sensor"
  ],
- "description": "IC sensor cluster featuring through-hole components in the MQ package family with MQ-6 footprints.",
+ "description": "1 ic sensor parts using MQ footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when requiring an IC sensor with a through-hole MQ family footprint such as MQ-6.",
-  "Verify exact pin assignments, dimensions, and electrical limits against part documentation.",
-  "Evaluate part suitability given tier C quality rating and KiCad symbol source."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a MQ land pattern is intended."
  ],
  "avoid_when": [
-  "Surface-mount designs or packages other than the MQ family are required.",
-  "The application requires planner-visible parts or higher quality tier components.",
-  "Specific pinouts or electrical specifications are missing or unverified."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than MQ."
  ],
  "keywords": [
-  "ic",
   "sensor",
-  "ic sensor",
-  "mq",
-  "mq-6",
-  "mq package",
-  "through hole",
-  "through-hole",
-  "kicad symbol",
-  "tier c",
   "gas",
+  "mq",
   "flammable",
   "semiconductor",
   "for",
-  "lpg"
+  "lpg",
+  "ic"
  ],
  "facts": {
   "package_family": "MQ",
@@ -53,12 +46,12 @@
   "tier_counts": {
    "C": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
   "kicad-symbols/Sensor_Gas/MQ-6"
  ],
- "embedding_text": "ic-sensor.mq | IC Sensor | IC sensor cluster featuring through-hole components in the MQ package family with MQ-6 footprints. | ic sensor ic sensor mq mq-6 mq package through hole through-hole kicad symbol tier c gas flammable semiconductor for lpg | MQ | ",
+ "embedding_text": "ic-sensor.mq | IC Sensor | 1 ic sensor parts using MQ footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | sensor gas mq flammable semiconductor for lpg ic | MQ | ",
  "class": "ic.sensor"
 }

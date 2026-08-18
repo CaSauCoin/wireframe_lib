@@ -5,32 +5,23 @@
  "category_path": [
   "IC"
  ],
- "description": "Cluster of 2 through-hole IC parts using the BBB package family and BBB footprints.",
+ "description": "2 ic parts using BBB footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when requiring a through-hole mount component with a BBB footprint.",
-  "Verify part quality tier and source library details before layout.",
-  "Ensure the design uses the BBB package family."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a BBB land pattern is intended."
  ],
  "avoid_when": [
-  "The layout requires surface-mount or non-through-hole mounting.",
-  "A package family or footprint other than BBB is required.",
-  "The design requires a part quality tier higher than tier B."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than BBB."
  ],
  "keywords": [
-  "ic",
   "bbb",
-  "bbb_hdr",
-  "through_hole",
-  "through hole",
-  "package bbb",
-  "bbb footprint",
-  "chilaboard",
-  "altium",
-  "library",
-  "hdr",
-  "chilaboard-altium-library",
   "header",
   "expansion",
+  "ic",
+  "hdr",
   "pin",
   "connector",
   "beaglebone",
@@ -40,7 +31,8 @@
   "interface",
   "for",
   "mainboard",
-  "cape"
+  "cape",
+  "through"
  ],
  "facts": {
   "package_family": "BBB",
@@ -62,7 +54,7 @@
    "B": 1,
    "C": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -78,6 +70,6 @@
   "chilaboard-altium-library/BBB_HDR/BBB_HDR",
   "chilaboard-altium-library/BBB/BBB"
  ],
- "embedding_text": "ic.bbb | IC | Cluster of 2 through-hole IC parts using the BBB package family and BBB footprints. | ic bbb bbb_hdr through_hole through hole package bbb bbb footprint chilaboard altium library hdr chilaboard-altium-library header expansion pin connector beaglebone black dual row interface for mainboard cape | BBB | ",
+ "embedding_text": "ic.bbb | IC | 2 ic parts using BBB footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | bbb header expansion ic hdr pin connector beaglebone black dual row interface for mainboard cape through | BBB | ",
  "class": "ic"
 }

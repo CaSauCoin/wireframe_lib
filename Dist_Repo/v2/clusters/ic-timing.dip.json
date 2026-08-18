@@ -6,33 +6,23 @@
   "IC",
   "Timing"
  ],
- "description": "Timing IC and oscillator cluster containing 39 through-hole parts in DIP packages ranging from 8-pin to 24-pin variants.",
+ "description": "39 ic timing parts using DIP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select for timing ICs or oscillators requiring through-hole mounting in DIP packages.",
-  "Choose parts matching target footprint specifications such as DIP-8, DIP-14, DIP-18, or DIP-24.",
-  "Prefer tier A entries from KiCad symbols over legacy tier C entries."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a DIP land pattern is intended."
  ],
  "avoid_when": [
-  "The layout requires surface-mount components.",
-  "Package footprints other than DIP are required for the design."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than DIP."
  ],
  "keywords": [
-  "ic",
-  "timing",
   "dip",
-  "through_hole",
   "oscillator",
   "timer",
-  "dip-8",
-  "dip-14",
-  "dip-18",
-  "dip-24",
-  "8253",
-  "8254",
-  "8284",
-  "82c54",
-  "aco-xxxmhz",
-  "w7.62mm",
+  "ic",
+  "timing",
   "62mm",
   "pdip",
   "clock",
@@ -40,7 +30,10 @@
   "tht",
   "dil",
   "54mm",
-  "w7"
+  "w7",
+  "300mil",
+  "package",
+  "style"
  ],
  "facts": {
   "package_family": "DIP",
@@ -70,7 +63,7 @@
    "A": 35,
    "C": 4
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -155,6 +148,6 @@
   "dist-legacy/Oscillator_DIP-14_LargePads",
   "dist-legacy/Oscillator_DIP-8_LargePads"
  ],
- "embedding_text": "ic-timing.dip | IC Timing | Timing IC and oscillator cluster containing 39 through-hole parts in DIP packages ranging from 8-pin to 24-pin variants. | ic timing dip through_hole oscillator timer dip-8 dip-14 dip-18 dip-24 8253 8254 8284 82c54 aco-xxxmhz w7.62mm 62mm pdip clock crystal tht dil 54mm w7 | DIP | ",
+ "embedding_text": "ic-timing.dip | IC Timing | 39 ic timing parts using DIP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | dip oscillator timer ic timing 62mm pdip clock crystal tht dil 54mm w7 300mil package style | DIP | ",
  "class": "ic.timing"
 }

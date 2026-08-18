@@ -6,33 +6,22 @@
   "Discrete",
   "Diode"
  ],
- "description": "Cluster of 13 tier-A discrete diodes (Schottky and Zener types present) rated in the 15V facet, packaged in SOT footprints (SOT-323_SC-70, SOT-363_SC-70-6, SOT-89-3, SOT-223-3_TabPin2), sourced from Alternate-KiCad-Library.",
+ "description": "13 discrete diode parts for 15V using SOT footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Confirm whether a Schottky or Zener type is needed before picking a specific part",
-  "Match the exact SOT footprint variant (SOT-323, SOT-363, SOT-89-3, or SOT-223-3) to the PCB land pattern",
-  "All 13 parts are tier A with score 100, so differentiate by part-specific ratings, not tier"
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SOT land pattern is intended."
  ],
  "avoid_when": [
-  "The design requires a voltage, current, or diode type not confirmed for the chosen part",
-  "The board layout needs a package outside the SOT family",
-  "Symbol-to-footprint pairing has not been verified against the actual part"
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SOT."
  ],
  "keywords": [
   "diode",
-  "discrete diode",
   "sot",
   "15v",
-  "schottky",
   "zener",
-  "sot-323",
-  "sc-70",
-  "sot-363",
-  "sc-70-6",
-  "sot-89-3",
-  "sot-223-3",
-  "smd diode",
-  "alternate-kicad-library",
-  "tier a",
   "sc",
   "dual",
   "akl",
@@ -40,8 +29,11 @@
   "kicad",
   "library",
   "discrete",
+  "schottky",
   "independent",
-  "200mw"
+  "200mw",
+  "30ma",
+  "common"
  ],
  "facts": {
   "package_family": "SOT",
@@ -67,7 +59,7 @@
   "tier_counts": {
    "A": 13
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -126,6 +118,6 @@
   "Alternate-KiCad-Library/Diode_Zener_AKL/MMBZ5245BSs",
   "Alternate-KiCad-Library/Diode_TVS_AKL/SMF15CT"
  ],
- "embedding_text": "discrete-diode.sot.15v | Discrete Diode | Cluster of 13 tier-A discrete diodes (Schottky and Zener types present) rated in the 15V facet, packaged in SOT footprints (SOT-323_SC-70, SOT-363_SC-70-6, SOT-89-3, SOT-223-3_TabPin2), sourced from Alternate-KiCad-Library. | diode discrete diode sot 15v schottky zener sot-323 sc-70 sot-363 sc-70-6 sot-89-3 sot-223-3 smd diode alternate-kicad-library tier a sc dual akl alternate kicad library discrete independent 200mw | SOT | 15V",
+ "embedding_text": "discrete-diode.sot.15v | Discrete Diode | 13 discrete diode parts for 15V using SOT footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | diode sot 15v zener sc dual akl alternate kicad library discrete schottky independent 200mw 30ma common | SOT | 15V",
  "class": "discrete.diode"
 }

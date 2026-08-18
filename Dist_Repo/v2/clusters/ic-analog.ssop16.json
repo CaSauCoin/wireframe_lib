@@ -6,41 +6,34 @@
   "IC",
   "Analog"
  ],
- "description": "Analog IC cluster containing 4 surface-mount parts in SSOP16 footprints from kicad-symbols, including LTC1664 variants.",
+ "description": "4 ic analog parts using SSOP16 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when an SSOP16 SMD footprint is required for an analog IC component.",
-  "Choose between LTC1664 variants (LTC1664CGN, LTC1664CN, LTC1664IGN, LTC1664IN) based on part number requirements.",
-  "Verify that tier B quality parts from kicad-symbols fit project requirements."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SSOP16 land pattern is intended."
  ],
  "avoid_when": [
-  "The PCB design requires packages other than SSOP16 or non-SMD mounting.",
-  "Parts require quality tier A classification or higher verification status.",
-  "The application requires a component other than LTC1664 series analog ICs."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SSOP16."
  ],
  "keywords": [
-  "ic",
-  "analog",
-  "ic.analog",
-  "ssop16",
-  "ssop",
-  "smd",
-  "kicad-symbols",
-  "analog_dac",
-  "ltc1664",
-  "ltc1664cgn",
-  "ltc1664cn",
-  "ltc1664ign",
-  "ltc1664in",
-  "tier b",
   "dac",
+  "analog",
   "quad",
   "micropower",
+  "ssop16",
   "bit",
   "10bit",
   "4ch",
+  "ic",
   "standard",
+  "ssop",
   "dip",
-  "industrial"
+  "industrial",
+  "ltc1664cgn",
+  "ltc1664cn",
+  "ltc1664ign"
  ],
  "facts": {
   "package_family": "SSOP16",
@@ -61,7 +54,7 @@
   "tier_counts": {
    "B": 4
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -103,6 +96,6 @@
   "kicad-symbols/Analog_DAC/LTC1664IGN",
   "kicad-symbols/Analog_DAC/LTC1664IN"
  ],
- "embedding_text": "ic-analog.ssop16 | IC Analog | Analog IC cluster containing 4 surface-mount parts in SSOP16 footprints from kicad-symbols, including LTC1664 variants. | ic analog ic.analog ssop16 ssop smd kicad-symbols analog_dac ltc1664 ltc1664cgn ltc1664cn ltc1664ign ltc1664in tier b dac quad micropower bit 10bit 4ch standard dip industrial | SSOP16 | ",
+ "embedding_text": "ic-analog.ssop16 | IC Analog | 4 ic analog parts using SSOP16 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | dac analog quad micropower ssop16 bit 10bit 4ch ic standard ssop dip industrial ltc1664cgn ltc1664cn ltc1664ign | SSOP16 | ",
  "class": "ic.analog"
 }

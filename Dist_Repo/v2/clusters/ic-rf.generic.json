@@ -6,31 +6,21 @@
   "IC",
   "RF"
  ],
- "description": "Generic RF IC cluster containing 4 KiCad symbol entries, including MC13192, MM002, iM880A, and iM880B, with package selection deferred.",
+ "description": "4 ic rf parts with package chosen later. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when requiring RF IC or module schematic symbols such as MC13192, MM002, iM880A, or iM880B.",
-  "Verify symbol details considering all 4 parts are rated at quality tier G.",
-  "Explicitly assign a footprint since package selection is deferred."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Select a footprint/package explicitly before placement."
  ],
  "avoid_when": [
-  "A pre-assigned footprint or package mount is required.",
-  "Parts rated higher than quality tier G are required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review."
  ],
  "keywords": [
-  "ic",
   "rf",
-  "ic rf",
-  "mc13192",
-  "mm002",
-  "im880a",
-  "im880b",
-  "kicad-symbols",
-  "rf_zigbee",
-  "rf_module",
-  "tier g",
-  "package chosen later",
   "module",
   "lora",
+  "ic",
   "package",
   "chosen",
   "later",
@@ -40,7 +30,9 @@
   "imst",
   "long",
   "range",
-  "radio"
+  "radio",
+  "mc13192",
+  "ghz"
  ],
  "facts": {
   "package_family": "package chosen later",
@@ -57,7 +49,7 @@
   "tier_counts": {
    "G": 4
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -99,6 +91,6 @@
   "kicad-symbols/RF_Module/iM880A",
   "kicad-symbols/RF_Module/iM880B"
  ],
- "embedding_text": "ic-rf.generic | IC RF | Generic RF IC cluster containing 4 KiCad symbol entries, including MC13192, MM002, iM880A, and iM880B, with package selection deferred. | ic rf ic rf mc13192 mm002 im880a im880b kicad-symbols rf_zigbee rf_module tier g package chosen later module lora package chosen later zigbee iot sigfox imst long range radio | package chosen later | ",
+ "embedding_text": "ic-rf.generic | IC RF | 4 ic rf parts with package chosen later. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | rf module lora ic package chosen later zigbee iot sigfox imst long range radio mc13192 ghz | package chosen later | ",
  "class": "ic.rf"
 }

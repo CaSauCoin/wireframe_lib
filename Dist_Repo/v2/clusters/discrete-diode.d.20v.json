@@ -6,44 +6,34 @@
   "Discrete",
   "Diode"
  ],
- "description": "Cluster of 282 discrete diode parts rated 20V in D-family footprints (SMA, SMB, SMC, MELF, MiniMELF, SOD-123/123F/323/323F, DO-35, DO-41), spanning SMD and through-hole mounts.",
+ "description": "282 discrete diode parts for 20V using D footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Match the exact footprint (e.g. D_SMA vs D_SOD-123 vs D_DO-41) to the intended land pattern",
-  "Prefer tier A entries (260 of 282 parts) for higher confidence",
-  "Confirm SMD vs through-hole mount fits the board assembly process",
-  "Cross-check source library (Alternate-KiCad-Library, kicad-symbols, JLCPCB-Kicad-Library) for trust level"
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a D land pattern is intended."
  ],
  "avoid_when": [
-  "A 20V rating is not confirmed sufficient for the target circuit",
-  "The board requires a footprint outside this D-family list",
-  "Symbol-to-footprint pairing is unverified or flagged for review",
-  "Part-specific electrical behavior (e.g. switching type) isn't confirmed from the datasheet"
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than D."
  ],
  "keywords": [
   "diode",
-  "discrete diode",
   "20v",
-  "d package",
-  "sma",
-  "smb",
-  "smc",
-  "melf",
-  "minimelf",
-  "sod-123",
-  "sod-123f",
-  "sod-323",
-  "sod-323f",
-  "do-35",
-  "do-41",
-  "smd diode",
-  "through hole diode",
-  "horizontal diode",
   "schottky",
   "zener",
   "discrete",
   "do",
   "akl",
-  "alternate"
+  "alternate",
+  "kicad",
+  "library",
+  "tvs",
+  "sod",
+  "horizontal",
+  "sma",
+  "smb",
+  "axial"
  ],
  "facts": {
   "package_family": "D",
@@ -81,7 +71,7 @@
    "A": 260,
    "B": 22
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -409,6 +399,6 @@
   "Alternate-KiCad-Library/Diode_Schottky_AKL/UPS120Ee3",
   "JLCPCB-Kicad-Library/JLCPCB-Diodes/TVS-Uni,H20VH16U"
  ],
- "embedding_text": "discrete-diode.d.20v | Discrete Diode | Cluster of 282 discrete diode parts rated 20V in D-family footprints (SMA, SMB, SMC, MELF, MiniMELF, SOD-123/123F/323/323F, DO-35, DO-41), spanning SMD and through-hole mounts. | diode discrete diode 20v d package sma smb smc melf minimelf sod-123 sod-123f sod-323 sod-323f do-35 do-41 smd diode through hole diode horizontal diode schottky zener discrete do akl alternate | D | 20V",
+ "embedding_text": "discrete-diode.d.20v | Discrete Diode | 282 discrete diode parts for 20V using D footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | diode 20v schottky zener discrete do akl alternate kicad library tvs sod horizontal sma smb axial | D | 20V",
  "class": "discrete.diode"
 }

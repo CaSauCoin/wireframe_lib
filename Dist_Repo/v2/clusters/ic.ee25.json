@@ -5,29 +5,21 @@
  "category_path": [
   "IC"
  ],
- "description": "Integrated circuit cluster containing one part in quality tier C using the EE25 package family footprint.",
+ "description": "1 ic parts using EE25 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when an integrated circuit requiring an EE25 package footprint is specified.",
-  "Verify EE25 land pattern parameters prior to PCB layout integration.",
-  "Evaluate part documentation given the single tier C legacy entry."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a EE25 land pattern is intended."
  ],
  "avoid_when": [
-  "The PCB design requires a footprint or package family other than EE25.",
-  "Higher quality tier parts or planner-visible inventory are mandatory.",
-  "Complete electrical specifications are missing or unverified."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than EE25."
  ],
  "keywords": [
-  "ic",
-  "integrated circuit",
   "ee25",
-  "ee25 package",
-  "ee25 footprint",
-  "ee25 land pattern",
-  "tier c",
-  "dist-legacy",
-  "ic cluster",
-  "component cluster",
   "duplicate",
+  "ic",
   "pad",
   "mm",
   "pitch",
@@ -52,12 +44,12 @@
   "tier_counts": {
    "C": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
   "dist-legacy/EE25 - duplicate"
  ],
- "embedding_text": "ic.ee25 | IC | Integrated circuit cluster containing one part in quality tier C using the EE25 package family footprint. | ic integrated circuit ee25 ee25 package ee25 footprint ee25 land pattern tier c dist-legacy ic cluster component cluster duplicate pad mm pitch pins | EE25 | ",
+ "embedding_text": "ic.ee25 | IC | 1 ic parts using EE25 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | ee25 duplicate ic pad mm pitch pins | EE25 | ",
  "class": "ic"
 }

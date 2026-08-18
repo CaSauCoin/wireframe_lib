@@ -5,29 +5,21 @@
  "category_path": [
   "Connector"
  ],
- "description": "Cluster of 3 connector parts sharing the Medium footprint family, sourced from dist-legacy, with mounting style unspecified and only 1 part currently planner-visible.",
+ "description": "3 connector parts using Medium footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Prefer the higher tier (B) entry over tier C entries when available",
-  "Confirm the exact footprint matches your PCB land pattern before use",
-  "Verify pin count and mounting style, as mount type is unspecified in the cluster data"
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a Medium land pattern is intended."
  ],
  "avoid_when": [
-  "The design requires a footprint other than Medium",
-  "A specific mounting style (THT/SMD) is required but not confirmed for the part",
-  "Only reviewed, non-generated parts are acceptable, since this cluster's review status is 'generated'"
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than Medium."
  ],
  "keywords": [
-  "connector",
   "medium",
   "header",
-  "medium footprint",
-  "dist-legacy",
-  "header 2",
-  "tier b",
-  "generated cluster",
-  "package family medium",
-  "connector medium",
-  "pin header",
+  "connector",
   "pitch",
   "pin",
   "mm",
@@ -61,7 +53,7 @@
    "B": 1,
    "C": 2
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -78,6 +70,6 @@
   "dist-legacy/Medium - Header 3",
   "dist-legacy/Medium - Header 4"
  ],
- "embedding_text": "connector.medium | Connector | Cluster of 3 connector parts sharing the Medium footprint family, sourced from dist-legacy, with mounting style unspecified and only 1 part currently planner-visible. | connector medium header medium footprint dist-legacy header 2 tier b generated cluster package family medium connector medium pin header pitch pin mm pad pins two with for circuit board interconnections 08mm | Medium | ",
+ "embedding_text": "connector.medium | Connector | 3 connector parts using Medium footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | medium header connector pitch pin mm pad pins two with for circuit board interconnections 08mm | Medium | ",
  "class": "connector"
 }

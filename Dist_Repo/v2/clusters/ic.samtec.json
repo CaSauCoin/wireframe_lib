@@ -5,31 +5,19 @@
  "category_path": [
   "IC"
  ],
- "description": "Integrated circuit component cluster containing 693 parts in the SAMTEC package family with surface-mount and through-hole variants.",
+ "description": "693 ic parts using SAMTEC footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Verify mounting type requirements such as surface-mount or through-hole.",
-  "Select based on footprint specification and pitch, such as 1.27mm or 5.08mm.",
-  "Check component quality tier, as the cluster consists mostly of tier C parts with select tier B entries."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SAMTEC land pattern is intended."
  ],
  "avoid_when": [
-  "The PCB layout requires a non-SAMTEC package family.",
-  "Mounting requirements fall outside surface-mount or through-hole.",
-  "Only high quality tier parts (tier A) are acceptable for the application."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SAMTEC."
  ],
  "keywords": [
-  "ic",
   "samtec",
-  "smd",
-  "through_hole",
-  "hpm",
-  "fmc",
-  "asp-134602-01",
-  "ssw-101-03-t-s",
-  "pitch 5.08mm",
-  "pitch 1.27mm",
-  "straight",
-  "vertical",
-  "dist-legacy",
   "hle",
   "dv",
   "horizontal",
@@ -37,10 +25,14 @@
   "p2",
   "54mm",
   "xxx",
+  "ic",
   "pins",
   "pdf",
   "suddendocs",
-  "com"
+  "com",
+  "prints",
+  "be",
+  "http"
  ],
  "facts": {
   "package_family": "SAMTEC",
@@ -75,7 +67,7 @@
    "B": 1,
    "C": 692
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -782,6 +774,6 @@
   "dist-legacy/Samtec_UMPT-10-XX.X-X-V-S-W_1x10-1MP_P2.0mm_Terminal_WeldTab",
   "dist-legacy/Samtec_UMPT-10-XX.X-X-V-S_1x10_P2.0mm_Terminal"
  ],
- "embedding_text": "ic.samtec | IC | Integrated circuit component cluster containing 693 parts in the SAMTEC package family with surface-mount and through-hole variants. | ic samtec smd through_hole hpm fmc asp-134602-01 ssw-101-03-t-s pitch 5.08mm pitch 1.27mm straight vertical dist-legacy hle dv horizontal xx p2 54mm xxx pins pdf suddendocs com | SAMTEC | ",
+ "embedding_text": "ic.samtec | IC | 693 ic parts using SAMTEC footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | samtec hle dv horizontal xx p2 54mm xxx ic pins pdf suddendocs com prints be http | SAMTEC | ",
  "class": "ic"
 }

@@ -6,42 +6,34 @@
   "IC",
   "Sensor"
  ],
- "description": "Surface-mount sensor IC cluster containing Tier A parts in SOT-23 packages rated for 3.3V and 5V applications.",
+ "description": "4 ic sensor parts for 3.3V, 5V using SOT-23 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when needing a surface-mount (SMD) sensor IC in a SOT-23 footprint.",
-  "Use for designs requiring 3.3V or 5V voltage facets.",
-  "Choose between DRV5055 variants available in Tier A KiCad symbols."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SOT-23 land pattern is intended."
  ],
  "avoid_when": [
-  "The design requires package footprints other than SOT-23.",
-  "Operating voltages other than 3.3V or 5V are required.",
-  "Through-hole mounting is required instead of SMD."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SOT-23."
  ],
  "keywords": [
-  "ic",
-  "sensor",
-  "ic sensor",
-  "sot-23",
-  "3.3v",
-  "5v",
-  "smd",
-  "kicad-symbols",
-  "tier a",
-  "drv5055",
-  "drv5055a1xdbzxq1",
-  "drv5055a2xdbzxq1",
   "sot",
+  "sensor",
   "mt",
+  "5v",
   "magnetic",
   "mv",
   "khz",
   "to",
+  "smd",
   "automotive",
   "ratiometric",
   "linear",
   "hall",
   "effect",
-  "aec"
+  "aec",
+  "q100"
  ],
  "facts": {
   "package_family": "SOT-23",
@@ -65,7 +57,7 @@
   "tier_counts": {
    "A": 4
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -107,6 +99,6 @@
   "kicad-symbols/Sensor_Magnetic/DRV5055A3xDBZxQ1",
   "kicad-symbols/Sensor_Magnetic/DRV5055A4xDBZxQ1"
  ],
- "embedding_text": "ic-sensor.sot-23.3v3.5v | IC Sensor | Surface-mount sensor IC cluster containing Tier A parts in SOT-23 packages rated for 3.3V and 5V applications. | ic sensor ic sensor sot-23 3.3v 5v smd kicad-symbols tier a drv5055 drv5055a1xdbzxq1 drv5055a2xdbzxq1 sot mt magnetic mv khz to automotive ratiometric linear hall effect aec | SOT-23 | 3.3V 5V",
+ "embedding_text": "ic-sensor.sot-23.3v3.5v | IC Sensor | 4 ic sensor parts for 3.3V, 5V using SOT-23 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | sot sensor mt 5v magnetic mv khz to smd automotive ratiometric linear hall effect aec q100 | SOT-23 | 3.3V 5V",
  "class": "ic.sensor"
 }

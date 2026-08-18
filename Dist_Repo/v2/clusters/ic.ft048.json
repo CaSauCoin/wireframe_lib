@@ -5,29 +5,20 @@
  "category_path": [
   "IC"
  ],
- "description": "IC cluster containing 3 tier-C parts matching the FT048 package family across FT048_L, FT048_M, and FT048_N footprints.",
+ "description": "3 ic parts using FT048 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when using FT048_L, FT048_M, or FT048_N land patterns.",
-  "Review tier-C part details and dist-legacy source data before selection.",
-  "Confirm pin and package requirements as mounting type is unknown."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a FT048 land pattern is intended."
  ],
  "avoid_when": [
-  "Layout requires a package family other than FT048.",
-  "Planner-visible parts are required for automated selection.",
-  "Parts with higher quality tier ratings than C are required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than FT048."
  ],
  "keywords": [
-  "ic",
   "ft048",
-  "ft048_l",
-  "ft048_m",
-  "ft048_n",
-  "package family ft048",
-  "tier c",
-  "dist-legacy",
-  "integrated circuit",
-  "ft048 package",
-  "ft048 footprint",
+  "ic",
   "pad",
   "mm",
   "pitch",
@@ -54,7 +45,7 @@
   "tier_counts": {
    "C": 3
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
@@ -62,6 +53,6 @@
   "dist-legacy/FT048_M",
   "dist-legacy/FT048_N"
  ],
- "embedding_text": "ic.ft048 | IC | IC cluster containing 3 tier-C parts matching the FT048 package family across FT048_L, FT048_M, and FT048_N footprints. | ic ft048 ft048_l ft048_m ft048_n package family ft048 tier c dist-legacy integrated circuit ft048 package ft048 footprint pad mm pitch pins | FT048 | ",
+ "embedding_text": "ic.ft048 | IC | 3 ic parts using FT048 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | ft048 ic pad mm pitch pins | FT048 | ",
  "class": "ic"
 }

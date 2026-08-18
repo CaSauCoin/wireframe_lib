@@ -6,28 +6,21 @@
   "Discrete",
   "Diode"
  ],
- "description": "Cluster of 2 discrete diode parts in SOD123F surface-mount footprints sourced from dist-legacy and celestial-altium-library.",
+ "description": "2 discrete diode parts using SOD123F footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Use when a surface-mount discrete diode in a SOD123F footprint is required.",
-  "Check individual part details, as parts are categorized under tier C quality.",
-  "Select between dist-legacy and celestial-altium-library source entries."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SOD123F land pattern is intended."
  ],
  "avoid_when": [
-  "The design requires a package family or footprint other than SOD123F.",
-  "Unverified tier C parts without specified electrical parameters are unsuitable.",
-  "Through-hole mounting or non-surface-mount diodes are needed."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SOD123F."
  ],
  "keywords": [
-  "discrete diode",
   "sod123f",
-  "sod123f footprint",
-  "sod123f package",
   "discrete",
   "diode",
-  "smd",
-  "surface mount",
-  "dist-legacy",
-  "celestial-altium-library",
   "pad",
   "mm",
   "pitch",
@@ -56,13 +49,13 @@
   "tier_counts": {
    "C": 2
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
   "dist-legacy/SOD123F",
   "celestial-altium-library/SOD123F/SOD123F"
  ],
- "embedding_text": "discrete-diode.sod123f | Discrete Diode | Cluster of 2 discrete diode parts in SOD123F surface-mount footprints sourced from dist-legacy and celestial-altium-library. | discrete diode sod123f sod123f footprint sod123f package discrete diode smd surface mount dist-legacy celestial-altium-library pad mm pitch pins surface mount | SOD123F | ",
+ "embedding_text": "discrete-diode.sod123f | Discrete Diode | 2 discrete diode parts using SOD123F footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | sod123f discrete diode pad mm pitch pins surface mount | SOD123F | ",
  "class": "discrete.diode"
 }

@@ -6,44 +6,34 @@
   "Connector",
   "Terminal Block"
  ],
- "description": "Single-row 14-position through-hole screw terminal block connector for KiCad, represented by one tier B part (Screw_Terminal_01x14).",
+ "description": "1 connector terminal block parts using 1x14 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Confirm the 1x14 footprint matches the intended PCB land pattern.",
-  "Only one tier B part is available in this cluster; verify it meets your requirements before use.",
-  "Check pin count (14) matches the wiring or terminal count needed.",
-  "Verify through-hole mounting is compatible with the board design."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a 1x14 land pattern is intended."
  ],
  "avoid_when": [
-  "The design requires a different pin count than 14.",
-  "Surface-mount rather than through-hole mounting is needed.",
-  "Electrical ratings (voltage, current) are required but not stated for this part.",
-  "A higher-trust or reviewed (non-generated) source is required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than 1x14."
  ],
  "keywords": [
-  "terminal block",
-  "screw terminal",
-  "connector",
-  "1x14",
-  "01x14",
-  "14 position",
-  "14 pin",
-  "single row",
-  "through hole",
-  "kicad",
-  "kicad-symbols",
-  "generic connector",
-  "screw_terminal_01x14",
-  "generated",
   "terminal",
   "screw",
+  "connector",
+  "01x14",
+  "1x14",
   "generic",
   "single",
   "row",
   "script",
+  "generated",
+  "kicad",
   "library",
   "utils",
   "schlib",
-  "autogen"
+  "autogen",
+  "sparkfun"
  ],
  "facts": {
   "package_family": "1x14",
@@ -64,7 +54,7 @@
   "tier_counts": {
    "B": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -79,6 +69,6 @@
  "part_ids": [
   "kicad-symbols/Connector/Screw_Terminal_01x14"
  ],
- "embedding_text": "connector-terminal-block.1x14 | Connector Terminal Block | Single-row 14-position through-hole screw terminal block connector for KiCad, represented by one tier B part (Screw_Terminal_01x14). | terminal block screw terminal connector 1x14 01x14 14 position 14 pin single row through hole kicad kicad-symbols generic connector screw_terminal_01x14 generated terminal screw generic single row script library utils schlib autogen | 1x14 | ",
+ "embedding_text": "connector-terminal-block.1x14 | Connector Terminal Block | 1 connector terminal block parts using 1x14 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | terminal screw connector 01x14 1x14 generic single row script generated kicad library utils schlib autogen sparkfun | 1x14 | ",
  "class": "connector.terminal_block"
 }

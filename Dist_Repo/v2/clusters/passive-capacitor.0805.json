@@ -6,34 +6,27 @@
   "Passive",
   "Capacitor"
  ],
- "description": "Cluster of 34 surface-mount passive capacitor library parts utilizing 0805 (2012 metric) footprint variants across KiCad and Altium sources.",
+ "description": "34 passive capacitor parts using 0805 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Filter for tier A parts when verified library entries are preferred.",
-  "Match the specific 0805 or 2012 metric footprint variant required by the layout.",
-  "Verify polarized versus non-polarized footprint variants such as EIA-2012."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a 0805 land pattern is intended."
  ],
  "avoid_when": [
-  "The PCB design requires a package size other than 0805 or 2012 metric.",
-  "Through-hole mounting is required.",
-  "A package footprint not present in the 0805 footprint variants is required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than 0805."
  ],
  "keywords": [
-  "passive",
   "capacitor",
-  "0805",
-  "2012",
-  "2012metric",
-  "smd",
-  "tantalum",
-  "kicad",
-  "altium",
-  "c_0805",
-  "eia-2012",
-  "surface mount",
+  "passive",
   "cap",
   "cp",
   "sparkfun",
+  "tantalum",
   "eia",
+  "smd",
+  "2012metric",
   "avx",
   "kemet",
   "pad",
@@ -80,7 +73,7 @@
    "A": 14,
    "C": 20
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -160,6 +153,6 @@
   "chilaboard-altium-library/C_TN_2012/C_TN_2012",
   "embedded-society-altium-libraries/GENERIC_MLCC_CAP_0805_IPC_MEDIU/GENERIC_MLCC_CAP_0805_IPC_MEDIU"
  ],
- "embedding_text": "passive-capacitor.0805 | Passive Capacitor | Cluster of 34 surface-mount passive capacitor library parts utilizing 0805 (2012 metric) footprint variants across KiCad and Altium sources. | passive capacitor 0805 2012 2012metric smd tantalum kicad altium c_0805 eia-2012 surface mount cap cp sparkfun eia avx kemet pad surface mount mm pitch | 0805 | ",
+ "embedding_text": "passive-capacitor.0805 | Passive Capacitor | 34 passive capacitor parts using 0805 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | capacitor passive cap cp sparkfun tantalum eia smd 2012metric avx kemet pad surface mount mm pitch | 0805 | ",
  "class": "passive.capacitor"
 }

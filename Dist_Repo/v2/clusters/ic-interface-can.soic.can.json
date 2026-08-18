@@ -7,42 +7,34 @@
   "Interface",
   "CAN"
  ],
- "description": "Surface-mount CAN interface IC components in SOIC packages, featuring 24 Tier A KiCad symbols across SOIC-8, SOIC-14, SOIC-16W, and SOIC-20W footprints.",
+ "description": "24 ic interface can parts for CAN using SOIC footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Match the required pin count and footprint variant, such as SOIC-8, SOIC-14, SOIC-16W, or SOIC-20W.",
-  "Confirm physical package dimensions and 1.27mm pitch fit board layout constraints.",
-  "Select specific CAN interface parts such as ISO1044BD, MCP2557FD-xSN, ISOW1044, or ADM3053 based on circuit requirements."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SOIC land pattern is intended."
  ],
  "avoid_when": [
-  "The layout requires a non-SOIC package family or non-SMD mounting.",
-  "Footprint pitch other than 1.27mm is needed.",
-  "The application requires interface types other than CAN."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SOIC."
  ],
  "keywords": [
   "can",
   "soic",
   "interface",
-  "ic",
-  "smd",
-  "soic-8",
-  "soic-14",
-  "soic-16w",
-  "soic-20w",
-  "can interface",
-  "adm3053",
-  "iso1044bd",
-  "mcp2557fd",
-  "isow1044",
-  "adm3057exrw",
-  "1.27mm pitch",
   "transceiver",
   "lin",
   "p1",
   "27mm",
   "so",
+  "ic",
   "high",
   "speed",
-  "isolated"
+  "isolated",
+  "9x4",
+  "9mm",
+  "fd",
+  "mode"
  ],
  "facts": {
   "package_family": "SOIC",
@@ -68,7 +60,7 @@
   "tier_counts": {
    "A": 24
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -138,6 +130,6 @@
   "kicad-symbols/Interface_CAN_LIN/TJA1052i-2",
   "kicad-symbols/Interface_CAN_LIN/TJA1052i-5"
  ],
- "embedding_text": "ic-interface-can.soic.can | IC Interface CAN | Surface-mount CAN interface IC components in SOIC packages, featuring 24 Tier A KiCad symbols across SOIC-8, SOIC-14, SOIC-16W, and SOIC-20W footprints. | can soic interface ic smd soic-8 soic-14 soic-16w soic-20w can interface adm3053 iso1044bd mcp2557fd isow1044 adm3057exrw 1.27mm pitch transceiver lin p1 27mm so high speed isolated | SOIC | CAN",
+ "embedding_text": "ic-interface-can.soic.can | IC Interface CAN | 24 ic interface can parts for CAN using SOIC footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | can soic interface transceiver lin p1 27mm so ic high speed isolated 9x4 9mm fd mode | SOIC | CAN",
  "class": "ic.interface.can"
 }

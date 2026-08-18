@@ -6,44 +6,34 @@
   "Discrete",
   "Diode"
  ],
- "description": "Cluster of 114 discrete diode parts in the D package family with a 39V facet, spanning SMD and through-hole footprints from SMA/SMB/MELF to DO-41/DO-35 zener and TVS variants.",
+ "description": "114 discrete diode parts for 39V using D footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Prefer tier A entries (108 of 114) with an exact footprint match",
-  "Match the specific footprint needed (e.g. D_SMA, D_SOD-123, D_DO-41_SOD81) before picking a part",
-  "Verify horizontal zener vs TVS footprint variant matches the intended diode type",
-  "Check source library (Alternate-KiCad-Library vs kicad-symbols) for trust and consistency"
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a D land pattern is intended."
  ],
  "avoid_when": [
-  "A voltage other than the 39V facet is required",
-  "The design needs a package outside the D family",
-  "Part review_status is only 'generated' and has not been manually verified",
-  "A tier B part is being used where a tier A alternative with the same footprint exists"
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than D."
  ],
  "keywords": [
   "diode",
-  "discrete diode",
   "zener",
-  "tvs",
   "39v",
-  "d package",
-  "sma",
-  "smb",
-  "smc",
-  "smf",
-  "minimelf",
-  "melf",
-  "sod-123",
-  "sod-323",
-  "sod-523",
-  "do-41",
-  "do-35",
-  "through hole",
-  "smd",
+  "tvs",
   "discrete",
   "akl",
   "alternate",
   "kicad",
-  "library"
+  "library",
+  "do",
+  "sod",
+  "horizontal",
+  "smb",
+  "unidirectional",
+  "sma",
+  "series"
  ],
  "facts": {
   "package_family": "D",
@@ -80,7 +70,7 @@
    "A": 108,
    "B": 6
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -240,6 +230,6 @@
   "Alternate-KiCad-Library/Diode_Zener_AKL/BZX884-C39",
   "Alternate-KiCad-Library/Diode_TVS_AKL/TPSMP39A"
  ],
- "embedding_text": "discrete-diode.d.39v | Discrete Diode | Cluster of 114 discrete diode parts in the D package family with a 39V facet, spanning SMD and through-hole footprints from SMA/SMB/MELF to DO-41/DO-35 zener and TVS variants. | diode discrete diode zener tvs 39v d package sma smb smc smf minimelf melf sod-123 sod-323 sod-523 do-41 do-35 through hole smd discrete akl alternate kicad library | D | 39V",
+ "embedding_text": "discrete-diode.d.39v | Discrete Diode | 114 discrete diode parts for 39V using D footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | diode zener 39v tvs discrete akl alternate kicad library do sod horizontal smb unidirectional sma series | D | 39V",
  "class": "discrete.diode"
 }

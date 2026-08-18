@@ -6,42 +6,34 @@
   "IC",
   "Microcontroller"
  ],
- "description": "Surface-mount IC microcontroller cluster featuring USB, I2C, and SPI peripherals across QFN package options.",
+ "description": "15 ic microcontroller parts for USB, I2C, SPI using QFN footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select based on required QFN footprint and pin count, such as 28, 32, 56, 60, or 80 pins.",
-  "Choose parts requiring USB, I2C, and SPI communication interfaces.",
-  "Filter by preferred quality tier (Tier A or Tier B)."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a QFN land pattern is intended."
  ],
  "avoid_when": [
-  "The application requires through-hole mounting or non-QFN packaging.",
-  "Interfaces other than USB, I2C, or SPI are strictly required.",
-  "Electrical limits or memory specifications must be verified beyond the provided facts."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than QFN."
  ],
  "keywords": [
-  "ic",
-  "mcu",
-  "microcontroller",
   "qfn",
-  "wqfn",
   "usb",
+  "microcontroller",
   "i2c",
+  "mcu",
   "spi",
-  "smd",
-  "qfn-32",
-  "qfn-56",
-  "qfn-60",
-  "qfn-80",
-  "qfn-28",
-  "c8051f381",
-  "c8051f383",
   "flash",
   "1ep",
   "p0",
+  "ic",
   "nolead",
   "uart",
   "adc",
   "ep3",
-  "4mm"
+  "4mm",
+  "ram"
  ],
  "facts": {
   "package_family": "QFN",
@@ -74,7 +66,7 @@
    "A": 9,
    "B": 6
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -135,6 +127,6 @@
   "kicad-symbols/MCU_RaspberryPi/RP2354A",
   "kicad-symbols/MCU_RaspberryPi/RP2354B"
  ],
- "embedding_text": "ic-mcu.qfn.usb.i2c | IC Microcontroller | Surface-mount IC microcontroller cluster featuring USB, I2C, and SPI peripherals across QFN package options. | ic mcu microcontroller qfn wqfn usb i2c spi smd qfn-32 qfn-56 qfn-60 qfn-80 qfn-28 c8051f381 c8051f383 flash 1ep p0 nolead uart adc ep3 4mm | QFN | USB I2C SPI",
+ "embedding_text": "ic-mcu.qfn.usb.i2c | IC Microcontroller | 15 ic microcontroller parts for USB, I2C, SPI using QFN footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | qfn usb microcontroller i2c mcu spi flash 1ep p0 ic nolead uart adc ep3 4mm ram | QFN | USB I2C SPI",
  "class": "ic.mcu"
 }

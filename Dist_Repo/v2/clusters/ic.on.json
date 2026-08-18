@@ -5,34 +5,21 @@
  "category_path": [
   "IC"
  ],
- "description": "Cluster of 17 IC parts with tier-C quality and generated review status, featuring surface-mount ON footprints such as SC70-5, SC70-6, SO-8, SOT-363, and H11L1SR2M.",
+ "description": "17 ic parts using ON footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Verify part suitability as all 17 entries are tier-C quality with generated review status.",
-  "Select based on specific footprint variants including SC70-5, SC70-6, SO-8, SOT-363, and H11L1SR2M.",
-  "Check source origin between dist-legacy (12 parts) and celestial-altium-library (5 parts)."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a ON land pattern is intended."
  ],
  "avoid_when": [
-  "Planner-visible parts are required, as planner visible count is 0.",
-  "Parts with quality tiers higher than tier C are required.",
-  "The layout requires footprints outside the listed ON package family."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than ON."
  ],
  "keywords": [
-  "ic",
   "on",
-  "on semi",
-  "on semiconductor",
-  "sc70-5",
-  "sc70-6",
-  "so-8",
-  "sot-363",
-  "h11l1sr2m",
-  "419ac-01",
-  "419ad-01",
-  "smd",
-  "tier-c",
-  "dist-legacy",
-  "celestial-altium-library",
   "semi",
+  "ic",
   "sot",
   "pad",
   "mm",
@@ -40,7 +27,12 @@
   "pins",
   "sc70",
   "semiconductor",
-  "419ac"
+  "h11l1sr2m",
+  "419ac",
+  "419ad",
+  "so",
+  "soic",
+  "tssop"
  ],
  "facts": {
   "package_family": "ON",
@@ -68,7 +60,7 @@
   "tier_counts": {
    "C": 17
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
@@ -90,6 +82,6 @@
   "celestial-altium-library/ON SEMI SO-8/ON_SEMI_SO-8",
   "celestial-altium-library/ON SEMI SOT-363/ON_SEMI_SOT-363"
  ],
- "embedding_text": "ic.on | IC | Cluster of 17 IC parts with tier-C quality and generated review status, featuring surface-mount ON footprints such as SC70-5, SC70-6, SO-8, SOT-363, and H11L1SR2M. | ic on on semi on semiconductor sc70-5 sc70-6 so-8 sot-363 h11l1sr2m 419ac-01 419ad-01 smd tier-c dist-legacy celestial-altium-library semi sot pad mm pitch pins sc70 semiconductor 419ac | ON | ",
+ "embedding_text": "ic.on | IC | 17 ic parts using ON footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | on semi ic sot pad mm pitch pins sc70 semiconductor h11l1sr2m 419ac 419ad so soic tssop | ON | ",
  "class": "ic"
 }

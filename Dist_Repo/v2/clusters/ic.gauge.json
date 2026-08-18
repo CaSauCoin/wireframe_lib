@@ -5,35 +5,34 @@
  "category_path": [
   "IC"
  ],
- "description": "IC component cluster containing 19 parts using Gauge package family footprints across 10mm and 100mm grid and standard layout types.",
+ "description": "19 ic parts using Gauge footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when board layout requires Gauge 10mm or 100mm footprints.",
-  "Choose between CopperTop and SilkScreenTop variants based on placement requirements.",
-  "Verify target footprint type matches Type 1, Type 2, Type 3, or Type 4 variants."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a Gauge land pattern is intended."
  ],
  "avoid_when": [
-  "Avoid when the PCB design requires IC packages other than Gauge footprints.",
-  "Do not use if planner-visible or higher quality tier parts are required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than Gauge."
  ],
  "keywords": [
-  "ic",
   "gauge",
   "coppertop",
-  "silkscreentop",
   "10mm",
-  "100mm",
-  "grid",
-  "type1",
-  "type2",
-  "type3",
-  "type4",
-  "gauge footprint",
-  "ic gauge",
+  "silkscreentop",
+  "ic",
   "massstab",
   "type",
+  "100mm",
+  "type1",
+  "type2",
   "50mm",
   "package",
-  "type5"
+  "type3",
+  "type4",
+  "type5",
+  "grid"
  ],
  "facts": {
   "package_family": "Gauge",
@@ -65,7 +64,7 @@
   "tier_counts": {
    "C": 19
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
@@ -89,6 +88,6 @@
   "dist-legacy/Gauge_50mm_Type2_CopperTop",
   "dist-legacy/Gauge_50mm_Type2_SilkScreenTop"
  ],
- "embedding_text": "ic.gauge | IC | IC component cluster containing 19 parts using Gauge package family footprints across 10mm and 100mm grid and standard layout types. | ic gauge coppertop silkscreentop 10mm 100mm grid type1 type2 type3 type4 gauge footprint ic gauge massstab type 50mm package type5 | Gauge | ",
+ "embedding_text": "ic.gauge | IC | 19 ic parts using Gauge footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | gauge coppertop 10mm silkscreentop ic massstab type 100mm type1 type2 50mm package type3 type4 type5 grid | Gauge | ",
  "class": "ic"
 }

@@ -6,32 +6,22 @@
   "Discrete",
   "Transistor"
  ],
- "description": "Cluster of 51 surface-mount Tier A discrete transistors rated for 20V in the SO package family using footprint SO-8_3.9x4.9mm_P1.27mm from Alternate-KiCad-Library.",
+ "description": "51 discrete transistor parts for 20V using SO footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Targeting 20V rated SMD discrete transistors in SO package family.",
-  "Requiring footprint SO-8_3.9x4.9mm_P1.27mm.",
-  "Selecting Tier A parts from Alternate-KiCad-Library."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SO land pattern is intended."
  ],
  "avoid_when": [
-  "Voltage rating other than 20V is required.",
-  "Footprints other than SO-8_3.9x4.9mm_P1.27mm are needed.",
-  "Through-hole mounting is required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SO."
  ],
  "keywords": [
-  "discrete",
+  "so",
+  "mosfet",
   "transistor",
   "20v",
-  "so",
-  "so-8",
-  "so-8_3.9x4.9mm_p1.27mm",
-  "smd",
-  "alternate-kicad-library",
-  "ao4402",
-  "ao4402g",
-  "ao4806",
-  "ao9926c",
-  "bso201sph",
-  "mosfet",
   "enchancement",
   "mos",
   "dual",
@@ -41,7 +31,9 @@
   "library",
   "9x4",
   "9mm",
-  "p1"
+  "p1",
+  "27mm",
+  "emos"
  ],
  "facts": {
   "package_family": "SO",
@@ -64,7 +56,7 @@
   "tier_counts": {
    "A": 51
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -161,6 +153,6 @@
   "Alternate-KiCad-Library/Transistor_MOSFET_AKL/TSM4424",
   "Alternate-KiCad-Library/Transistor_MOSFET_AKL/TSM9926D"
  ],
- "embedding_text": "discrete-transistor.so.20v | Discrete Transistor | Cluster of 51 surface-mount Tier A discrete transistors rated for 20V in the SO package family using footprint SO-8_3.9x4.9mm_P1.27mm from Alternate-KiCad-Library. | discrete transistor 20v so so-8 so-8_3.9x4.9mm_p1.27mm smd alternate-kicad-library ao4402 ao4402g ao4806 ao9926c bso201sph mosfet enchancement mos dual akl alternate kicad library 9x4 9mm p1 | SO | 20V",
+ "embedding_text": "discrete-transistor.so.20v | Discrete Transistor | 51 discrete transistor parts for 20V using SO footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | so mosfet transistor 20v enchancement mos dual akl alternate kicad library 9x4 9mm p1 27mm emos | SO | 20V",
  "class": "discrete.transistor"
 }

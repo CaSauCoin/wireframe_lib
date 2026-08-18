@@ -6,31 +6,24 @@
   "Discrete",
   "Diode"
  ],
- "description": "Discrete diode cluster containing 2 parts in the HDR package family with HDR_1X2_2.54MM and HDR_1X2_2.54MM_SHDR footprints.",
+ "description": "2 discrete diode parts using HDR footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when requiring a discrete diode associated with HDR package family footprints.",
-  "Choose if footprint compatibility with HDR_1X2_2.54MM or HDR_1X2_2.54MM_SHDR is required.",
-  "Verify part suitability given tier C quality classification and dist-legacy source."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a HDR land pattern is intended."
  ],
  "avoid_when": [
-  "Avoid if the design requires package footprints other than HDR_1X2_2.54MM or HDR_1X2_2.54MM_SHDR.",
-  "Do not use when planner-visible components are required.",
-  "Avoid when explicit electrical parameters or known mounting specifications are required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than HDR."
  ],
  "keywords": [
+  "hdr",
+  "1x2",
+  "54mm",
+  "shdr",
   "discrete",
   "diode",
-  "hdr",
-  "hdr_1x2_2.54mm",
-  "hdr_1x2_2.54mm_shdr",
-  "2.54mm",
-  "1x2",
-  "shdr",
-  "discrete diode",
-  "dist-legacy",
-  "tier c",
-  "package family hdr",
-  "54mm",
   "pad",
   "mm",
   "pitch",
@@ -56,13 +49,13 @@
   "tier_counts": {
    "C": 2
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
   "dist-legacy/HDR_1X2_2.54MM",
   "dist-legacy/HDR_1X2_2.54MM_SHDR"
  ],
- "embedding_text": "discrete-diode.hdr | Discrete Diode | Discrete diode cluster containing 2 parts in the HDR package family with HDR_1X2_2.54MM and HDR_1X2_2.54MM_SHDR footprints. | discrete diode hdr hdr_1x2_2.54mm hdr_1x2_2.54mm_shdr 2.54mm 1x2 shdr discrete diode dist-legacy tier c package family hdr 54mm pad mm pitch pins | HDR | ",
+ "embedding_text": "discrete-diode.hdr | Discrete Diode | 2 discrete diode parts using HDR footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | hdr 1x2 54mm shdr discrete diode pad mm pitch pins | HDR | ",
  "class": "discrete.diode"
 }

@@ -6,42 +6,34 @@
   "Discrete",
   "BJT"
  ],
- "description": "Cluster of 131 discrete BJT parts sharing the SOT-23 package family (SOT-23 and SOT-23-6 footprints), drawn from kicad-symbols and Alternate-KiCad-Library, for surface-mount designs.",
+ "description": "131 discrete bjt parts using SOT-23 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Prefer tier A parts (130 of 131 in this cluster)",
-  "Match exact footprint needed: SOT-23 (3-pin) vs SOT-23-6 (6-pin, e.g. DMMT5401)",
-  "Note source library (kicad-symbols vs Alternate-KiCad-Library) when checking trust"
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SOT-23 land pattern is intended."
  ],
  "avoid_when": [
-  "Board layout requires a package other than SOT-23 or SOT-23-6",
-  "Required electrical ratings are not stated on the candidate part",
-  "Schematic symbol pin count doesn't match the chosen footprint (3-pin vs 6-pin)"
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SOT-23."
  ],
  "keywords": [
-  "sot-23",
-  "sot-23-6",
-  "bjt",
+  "sot",
   "transistor",
-  "discrete",
+  "bjt",
+  "digital",
   "npn",
+  "discrete",
   "pnp",
   "smd",
-  "surface mount",
-  "kicad-symbols",
-  "alternate-kicad-library",
-  "dmmt5401",
-  "dta113t",
-  "dta113z",
-  "dta114e",
-  "dta114g",
-  "six-pin",
-  "three-pin",
-  "sot",
-  "digital",
   "to",
   "rohm",
   "akl",
-  "alternate"
+  "alternate",
+  "kicad",
+  "library",
+  "10k",
+  "high"
  ],
  "facts": {
   "package_family": "SOT-23",
@@ -65,7 +57,7 @@
    "A": 130,
    "C": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -242,6 +234,6 @@
   "Alternate-KiCad-Library/Transistor_BJT_AKL/PMBTA56",
   "Alternate-KiCad-Library/Transistor_BJT_AKL/FMMT560"
  ],
- "embedding_text": "discrete-bjt.sot-23 | Discrete BJT | Cluster of 131 discrete BJT parts sharing the SOT-23 package family (SOT-23 and SOT-23-6 footprints), drawn from kicad-symbols and Alternate-KiCad-Library, for surface-mount designs. | sot-23 sot-23-6 bjt transistor discrete npn pnp smd surface mount kicad-symbols alternate-kicad-library dmmt5401 dta113t dta113z dta114e dta114g six-pin three-pin sot digital to rohm akl alternate | SOT-23 | ",
+ "embedding_text": "discrete-bjt.sot-23 | Discrete BJT | 131 discrete bjt parts using SOT-23 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | sot transistor bjt digital npn discrete pnp smd to rohm akl alternate kicad library 10k high | SOT-23 | ",
  "class": "discrete.bjt"
 }

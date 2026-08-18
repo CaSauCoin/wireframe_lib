@@ -6,28 +6,21 @@
   "Discrete",
   "Transistor"
  ],
- "description": "Discrete transistor cluster containing parts utilizing the PIR package family and footprints.",
+ "description": "1 discrete transistor parts using PIR footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Use when discrete transistor parts with a PIR package footprint are required.",
-  "Verify part specifications, quality tier, and source reliability before selection.",
-  "Confirm compatibility with PIR land patterns and PCB layout requirements."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a PIR land pattern is intended."
  ],
  "avoid_when": [
-  "The design requires a package family or footprint other than PIR.",
-  "Specific electrical ratings, pinouts, or package dimensions are unverified.",
-  "Tier C quality rating or legacy source distribution is unsuitable for the project."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than PIR."
  ],
  "keywords": [
+  "pir",
   "discrete",
   "transistor",
-  "pir",
-  "pir package",
-  "pir footprint",
-  "discrete transistor",
-  "discrete.transistor",
-  "package family pir",
-  "dist-legacy",
-  "tier c",
   "pad",
   "mm",
   "pitch",
@@ -52,12 +45,12 @@
   "tier_counts": {
    "C": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
   "dist-legacy/PIR"
  ],
- "embedding_text": "discrete-transistor.pir | Discrete Transistor | Discrete transistor cluster containing parts utilizing the PIR package family and footprints. | discrete transistor pir pir package pir footprint discrete transistor discrete.transistor package family pir dist-legacy tier c pad mm pitch pins | PIR | ",
+ "embedding_text": "discrete-transistor.pir | Discrete Transistor | 1 discrete transistor parts using PIR footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | pir discrete transistor pad mm pitch pins | PIR | ",
  "class": "discrete.transistor"
 }

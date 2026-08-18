@@ -6,42 +6,34 @@
   "IC",
   "Power"
  ],
- "description": "Cluster of tier A through-hole power ICs in DIP-8_W7.62mm footprints associated with 5V, boost, and 1.5V facets.",
+ "description": "3 ic power parts for 5V, boost, 1.5V using DIP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select for through-hole power IC applications using a DIP-8_W7.62mm footprint.",
-  "Choose among tier A parts such as LTC1044, LTC660, or MAX1044.",
-  "Verify fit for designs requiring 5V, boost, or 1.5V power facets."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a DIP land pattern is intended."
  ],
  "avoid_when": [
-  "Surface-mount construction is required instead of DIP through-hole mounting.",
-  "The PCB layout requires a footprint other than DIP-8_W7.62mm.",
-  "Target design parameters differ from 5V, boost, or 1.5V facets."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than DIP."
  ],
  "keywords": [
-  "ic",
-  "power",
-  "dip",
-  "dip-8",
-  "dip-8_w7.62mm",
   "5v",
-  "1.5v",
-  "boost",
-  "through hole",
-  "switched capacitor",
-  "regulator",
-  "ltc1044",
-  "ltc660",
-  "max1044",
+  "dip",
   "switched",
   "capacitor",
   "voltage",
   "to",
   "62mm",
+  "boost",
   "converter",
   "monolithic",
   "cmos",
+  "regulator",
   "switchedcapacitor",
-  "supply"
+  "supply",
+  "w7",
+  "tht"
  ],
  "facts": {
   "package_family": "DIP",
@@ -66,7 +58,7 @@
   "tier_counts": {
    "A": 3
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -99,6 +91,6 @@
   "kicad-symbols/Regulator_SwitchedCapacitor/LTC660",
   "kicad-symbols/Regulator_SwitchedCapacitor/MAX1044"
  ],
- "embedding_text": "ic-power.dip.5v.boost | IC Power | Cluster of tier A through-hole power ICs in DIP-8_W7.62mm footprints associated with 5V, boost, and 1.5V facets. | ic power dip dip-8 dip-8_w7.62mm 5v 1.5v boost through hole switched capacitor regulator ltc1044 ltc660 max1044 switched capacitor voltage to 62mm converter monolithic cmos switchedcapacitor supply | DIP | 5V boost 1.5V",
+ "embedding_text": "ic-power.dip.5v.boost | IC Power | 3 ic power parts for 5V, boost, 1.5V using DIP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | 5v dip switched capacitor voltage to 62mm boost converter monolithic cmos regulator switchedcapacitor supply w7 tht | DIP | 5V boost 1.5V",
  "class": "ic.power"
 }

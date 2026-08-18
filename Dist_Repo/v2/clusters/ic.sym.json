@@ -5,31 +5,20 @@
  "category_path": [
   "IC"
  ],
- "description": "Integrated circuit component cluster containing 8 tier-C parts from chilaboard-altium-library associated with SYM family footprints.",
+ "description": "8 ic parts using SYM footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Targeting integrated circuit designs requiring SYM package family footprints.",
-  "Selecting parts from chilaboard-altium-library with tier-C quality status.",
-  "Matching specific footprints such as SYM_POWER, SYM_RESET, or audio-related SYM_A patterns."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SYM land pattern is intended."
  ],
  "avoid_when": [
-  "Planner-visible parts or higher quality tier entries are required.",
-  "The application requires a defined mounting style rather than unknown.",
-  "The board design uses package footprints outside the SYM footprint family."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SYM."
  ],
  "keywords": [
-  "ic",
   "sym",
-  "chilaboard-altium-library",
-  "sym_a_hdphone",
-  "sym_a_linein",
-  "sym_a_mic",
-  "sym_a_spk",
-  "sym_a_spk2",
-  "sym_power",
-  "sym_reset",
-  "sym_reset2",
-  "tier c",
-  "integrated circuit",
+  "ic",
   "hdphone",
   "linein",
   "mic",
@@ -65,7 +54,7 @@
   "tier_counts": {
    "C": 8
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
@@ -78,6 +67,6 @@
   "chilaboard-altium-library/SYM_RESET/SYM_RESET",
   "chilaboard-altium-library/SYM_RESET2/SYM_RESET2"
  ],
- "embedding_text": "ic.sym | IC | Integrated circuit component cluster containing 8 tier-C parts from chilaboard-altium-library associated with SYM family footprints. | ic sym chilaboard-altium-library sym_a_hdphone sym_a_linein sym_a_mic sym_a_spk sym_a_spk2 sym_power sym_reset sym_reset2 tier c integrated circuit hdphone linein mic spk spk2 power reset reset2 | SYM | ",
+ "embedding_text": "ic.sym | IC | 8 ic parts using SYM footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | sym ic hdphone linein mic spk spk2 power reset reset2 | SYM | ",
  "class": "ic"
 }

@@ -5,33 +5,25 @@
  "category_path": [
   "IC"
  ],
- "description": "IC component cluster containing 25 parts with SCMH package family footprints supporting surface-mount and through-hole mounting.",
+ "description": "25 ic parts using SCMH footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Use when selecting an IC part that requires SCMH package family footprints.",
-  "Choose when needing surface-mount or through-hole SCMH footprint options.",
-  "Verify specific footprint variant requirements such as M1P6, M2, M2P5, M3, or WOVIA."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SCMH land pattern is intended."
  ],
  "avoid_when": [
-  "The board layout requires a package family other than SCMH.",
-  "Planner-visible parts or quality tiers higher than tier C are required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SCMH."
  ],
  "keywords": [
-  "ic",
   "scmh",
-  "smd",
-  "surface mount",
-  "through hole",
-  "scmh_m1p6",
-  "scmh_m2",
-  "scmh_m2p5",
-  "scmh_m3",
-  "wovia",
-  "chilaboard-altium-library",
-  "scmh footprints",
+  "ic",
   "pad",
   "pins",
   "through",
   "hole",
+  "wovia",
   "m3",
   "m1p6",
   "m2",
@@ -39,7 +31,8 @@
   "m1p6ft",
   "m2f",
   "m2ft",
-  "m2p5f"
+  "m2p5f",
+  "m2p5ft"
  ],
  "facts": {
   "package_family": "SCMH",
@@ -72,7 +65,7 @@
   "tier_counts": {
    "C": 25
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
@@ -102,6 +95,6 @@
   "chilaboard-altium-library/SCMH_M6/SCMH_M6",
   "chilaboard-altium-library/SCMH_M6FT/SCMH_M6FT"
  ],
- "embedding_text": "ic.scmh | IC | IC component cluster containing 25 parts with SCMH package family footprints supporting surface-mount and through-hole mounting. | ic scmh smd surface mount through hole scmh_m1p6 scmh_m2 scmh_m2p5 scmh_m3 wovia chilaboard-altium-library scmh footprints pad pins through hole m3 m1p6 m2 m2p5 m1p6ft m2f m2ft m2p5f | SCMH | ",
+ "embedding_text": "ic.scmh | IC | 25 ic parts using SCMH footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | scmh ic pad pins through hole wovia m3 m1p6 m2 m2p5 m1p6ft m2f m2ft m2p5f m2p5ft | SCMH | ",
  "class": "ic"
 }

@@ -5,34 +5,24 @@
  "category_path": [
   "IC"
  ],
- "description": "IC cluster containing 2 Tier-B 5V DC-DC converter parts from digikey-kicad-library with 3-SIP module footprints.",
+ "description": "2 ic parts for 5V using 3 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select between V7805-1000 and V7805-500 based on part requirements.",
-  "Match layout to 3-SIP_Module_V7805-1000 or 3-SIP_Module_V7805-500 footprint.",
-  "Verify acceptance of Tier B quality tier parts."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a 3 land pattern is intended."
  ],
  "avoid_when": [
-  "Layout requires footprints other than 3-SIP_Module_V7805-1000 or 3-SIP_Module_V7805-500.",
-  "Application requires a voltage rating other than 5V.",
-  "Tier B parts do not meet project quality requirements."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than 3."
  ],
  "keywords": [
-  "ic",
-  "5v",
-  "v7805",
-  "v7805-1000",
-  "v7805-500",
-  "dc-dc converters",
-  "dc-dc",
-  "converter",
-  "3-sip",
-  "sip module",
-  "digikey-kicad-library",
-  "3-sip_module_v7805-1000",
-  "3-sip_module_v7805-500",
   "dc",
+  "v7805",
   "converters",
+  "5v",
   "dk",
+  "converter",
   "5w",
   "sip",
   "module",
@@ -40,7 +30,9 @@
   "supplies",
   "board",
   "mount",
-  "cui"
+  "cui",
+  "inc",
+  "ic"
  ],
  "facts": {
   "package_family": "3",
@@ -64,7 +56,7 @@
   "tier_counts": {
    "B": 2
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -88,6 +80,6 @@
   "digikey-kicad-library/dk_DC-DC-Converters/V7805-1000",
   "digikey-kicad-library/dk_DC-DC-Converters/V7805-500"
  ],
- "embedding_text": "ic.3.5v | IC | IC cluster containing 2 Tier-B 5V DC-DC converter parts from digikey-kicad-library with 3-SIP module footprints. | ic 5v v7805 v7805-1000 v7805-500 dc-dc converters dc-dc converter 3-sip sip module digikey-kicad-library 3-sip_module_v7805-1000 3-sip_module_v7805-500 dc converters dk 5w sip module power supplies board mount cui | 3 | 5V",
+ "embedding_text": "ic.3.5v | IC | 2 ic parts for 5V using 3 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | dc v7805 converters 5v dk converter 5w sip module power supplies board mount cui inc ic | 3 | 5V",
  "class": "ic"
 }

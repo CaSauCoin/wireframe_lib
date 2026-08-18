@@ -6,34 +6,21 @@
   "Discrete",
   "BJT"
  ],
- "description": "Cluster of 3 discrete BJT parts in SOIC packages (SOIC-8-N7 3.9x4.9mm P1.27mm and SOIC-14 3.9x8.7mm P1.27mm), all tier A from kicad-symbols with review_status 'generated'.",
+ "description": "3 discrete bjt parts using SOIC footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Match the exact footprint variant needed: SOIC-8-N7_3.9x4.9mm_P1.27mm (SSM2210, SSM2220) vs SOIC-14_3.9x8.7mm_P1.27mm (320S14-U)",
-  "All 3 parts are tier A, but review_status is 'generated' — verify against the datasheet before use",
-  "Only 3 candidates exist in this cluster; compare them directly rather than relying on tier/score alone"
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SOIC land pattern is intended."
  ],
  "avoid_when": [
-  "A non-SOIC package or land pattern is required",
-  "The design needs a reviewed/verified symbol-footprint pairing rather than 'generated' status",
-  "Pin count needed doesn't match the available footprints (8-pin vs 14-pin)"
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SOIC."
  ],
  "keywords": [
   "soic",
   "bjt",
-  "discrete bjt",
   "transistor",
-  "smd",
-  "soic-8",
-  "soic-14",
-  "soic-8-n7",
-  "3.9x4.9mm",
-  "3.9x8.7mm",
-  "p1.27mm",
-  "ssm2210",
-  "ssm2220",
-  "320s14-u",
-  "kicad-symbols",
-  "tier a",
   "dual",
   "audio",
   "matched",
@@ -41,7 +28,12 @@
   "p1",
   "27mm",
   "discrete",
-  "npn"
+  "npn",
+  "dip",
+  "n7",
+  "9x4",
+  "9mm",
+  "transistors"
  ],
  "facts": {
   "package_family": "SOIC",
@@ -63,7 +55,7 @@
   "tier_counts": {
    "A": 3
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -96,6 +88,6 @@
   "kicad-symbols/Transistor_BJT/SSM2220",
   "kicad-symbols/Transistor_BJT/320S14-U"
  ],
- "embedding_text": "discrete-bjt.soic | Discrete BJT | Cluster of 3 discrete BJT parts in SOIC packages (SOIC-8-N7 3.9x4.9mm P1.27mm and SOIC-14 3.9x8.7mm P1.27mm), all tier A from kicad-symbols with review_status 'generated'. | soic bjt discrete bjt transistor smd soic-8 soic-14 soic-8-n7 3.9x4.9mm 3.9x8.7mm p1.27mm ssm2210 ssm2220 320s14-u kicad-symbols tier a dual audio matched pnp p1 27mm discrete npn | SOIC | ",
+ "embedding_text": "discrete-bjt.soic | Discrete BJT | 3 discrete bjt parts using SOIC footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | soic bjt transistor dual audio matched pnp p1 27mm discrete npn dip n7 9x4 9mm transistors | SOIC | ",
  "class": "discrete.bjt"
 }

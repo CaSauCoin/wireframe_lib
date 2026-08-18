@@ -6,32 +6,27 @@
   "IC",
   "Analog"
  ],
- "description": "Cluster of 7 tier A surface-mount analog ICs with I2C interfaces in SOT-23 packaging utilizing SOT-23-6 footprints.",
+ "description": "7 ic analog parts for I2C using SOT-23 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select for surface-mount analog IC applications using an I2C interface.",
-  "Choose when requiring a SOT-23-6 footprint within the SOT-23 package family.",
-  "Select when looking for tier A KiCad symbol entries for ADC or DAC components."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SOT-23 land pattern is intended."
  ],
  "avoid_when": [
-  "Avoid when the circuit requires through-hole mounting instead of SMD.",
-  "Do not use if an interface other than I2C is required.",
-  "Avoid when package requirements call for footprints other than SOT-23-6."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SOT-23."
  ],
  "keywords": [
-  "ic",
-  "analog",
-  "ic analog",
-  "sot-23",
-  "sot-23-6",
-  "i2c",
-  "smd",
-  "adc",
-  "dac",
-  "kicad-symbols",
-  "tier a",
   "sot",
+  "i2c",
+  "analog",
+  "dac",
   "to",
   "bit",
+  "adc",
+  "smd",
+  "ic",
   "interface",
   "converter",
   "delta",
@@ -61,7 +56,7 @@
   "tier_counts": {
    "A": 7
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -114,6 +109,6 @@
   "kicad-symbols/Analog_ADC/MCP3425Axx-xCH",
   "kicad-symbols/Analog_DAC/MCP4725xxx-xCH"
  ],
- "embedding_text": "ic-analog.sot-23.i2c | IC Analog | Cluster of 7 tier A surface-mount analog ICs with I2C interfaces in SOT-23 packaging utilizing SOT-23-6 footprints. | ic analog ic analog sot-23 sot-23-6 i2c smd adc dac kicad-symbols tier a sot to bit interface converter delta sigma micropower with compatible | SOT-23 | I2C",
+ "embedding_text": "ic-analog.sot-23.i2c | IC Analog | 7 ic analog parts for I2C using SOT-23 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | sot i2c analog dac to bit adc smd ic interface converter delta sigma micropower with compatible | SOT-23 | I2C",
  "class": "ic.analog"
 }

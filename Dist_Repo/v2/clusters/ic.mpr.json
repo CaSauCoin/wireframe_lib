@@ -5,27 +5,21 @@
  "category_path": [
   "IC"
  ],
- "description": "EDA IC component cluster containing one part using the MPR package family and MPR-SMD-12 footprint.",
+ "description": "1 ic parts using MPR footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Verify compatibility with the MPR-SMD-12 footprint.",
-  "Check part specifications and unknown mounting type before selecting.",
-  "Review tier C quality level and dist-legacy source status."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a MPR land pattern is intended."
  ],
  "avoid_when": [
-  "The design requires footprints other than MPR-SMD-12.",
-  "Planner-visible or higher tier quality parts are required.",
-  "Exact mounting specification must be known prior to selection."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than MPR."
  ],
  "keywords": [
-  "ic",
   "mpr",
-  "mpr-smd-12",
   "smd",
-  "integrated circuit",
-  "package family mpr",
-  "tier c",
-  "dist-legacy",
-  "mpr footprint",
+  "ic",
   "pad",
   "mm",
   "pitch",
@@ -50,12 +44,12 @@
   "tier_counts": {
    "C": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
   "dist-legacy/MPR-SMD-12"
  ],
- "embedding_text": "ic.mpr | IC | EDA IC component cluster containing one part using the MPR package family and MPR-SMD-12 footprint. | ic mpr mpr-smd-12 smd integrated circuit package family mpr tier c dist-legacy mpr footprint pad mm pitch pins | MPR | ",
+ "embedding_text": "ic.mpr | IC | 1 ic parts using MPR footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | mpr smd ic pad mm pitch pins | MPR | ",
  "class": "ic"
 }

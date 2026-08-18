@@ -6,44 +6,34 @@
   "Discrete",
   "Diode"
  ],
- "description": "Cluster of discrete diode-class parts sharing 0603-family footprints, spanning signal diodes, a TVS diode, and several LED indicators; select by confirming exact device type and footprint rather than by cluster alone.",
+ "description": "32 discrete diode parts using 0603 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Confirm whether the candidate is a signal/rectifier diode, TVS, or LED — this cluster mixes all three under discrete.diode",
-  "Match the exact footprint (e.g. D_0603_1608Metric vs LED_0603 vs C_0603_1608Metric) to the intended PCB land pattern",
-  "Prefer tier A entries (score 100) with an explicit footprint over lower-tier or unverified entries",
-  "When scores tie, check source library trust (e.g. digikey-kicad-library vs dist-legacy) before choosing"
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a 0603 land pattern is intended."
  ],
  "avoid_when": [
-  "The design needs a package outside the 0603 footprint family",
-  "The required device type (rectifier, TVS, LED, etc.) cannot be confirmed for the specific part chosen",
-  "Electrical ratings such as voltage or current are not stated for the selected part",
-  "The symbol-footprint pairing is unverified or the part falls in the lower-quality tier (C) with generated review status"
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than 0603."
  ],
  "keywords": [
-  "discrete diode",
-  "led",
-  "tvs diode",
-  "signal diode",
-  "rectifier",
-  "indicator led",
-  "smd",
-  "0603",
-  "d0603",
-  "led_0603",
-  "led_dual0603",
-  "c_0603_1608metric",
-  "d_0603_1608metric",
-  "footprint",
-  "optoelectronics",
-  "surface mount",
-  "handsolder",
-  "dual led",
   "discrete",
   "diode",
+  "led",
+  "smd",
   "indication",
   "mm",
+  "optoelectronics",
+  "handsolder",
   "1608metric",
-  "clear"
+  "clear",
+  "nexperia",
+  "pad",
+  "pitch",
+  "inc",
+  "surface",
+  "mount"
  ],
  "facts": {
   "package_family": "0603",
@@ -84,7 +74,7 @@
    "B": 15,
    "C": 15
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -162,6 +152,6 @@
   "dist-legacy/Nexperia_DSN0603-2_0.6x0.3mm_P0.4mm",
   "dist-legacy/D_0603"
  ],
- "embedding_text": "discrete-diode.0603 | Discrete Diode | Cluster of discrete diode-class parts sharing 0603-family footprints, spanning signal diodes, a TVS diode, and several LED indicators; select by confirming exact device type and footprint rather than by cluster alone. | discrete diode led tvs diode signal diode rectifier indicator led smd 0603 d0603 led_0603 led_dual0603 c_0603_1608metric d_0603_1608metric footprint optoelectronics surface mount handsolder dual led discrete diode indication mm 1608metric clear | 0603 | ",
+ "embedding_text": "discrete-diode.0603 | Discrete Diode | 32 discrete diode parts using 0603 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | discrete diode led smd indication mm optoelectronics handsolder 1608metric clear nexperia pad pitch inc surface mount | 0603 | ",
  "class": "discrete.diode"
 }

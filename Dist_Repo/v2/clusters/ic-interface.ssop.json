@@ -6,28 +6,20 @@
   "IC",
   "Interface"
  ],
- "description": "Surface-mount interface IC cluster featuring SSOP-28 components including AD9850 and AD9851.",
+ "description": "2 ic interface parts using SSOP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Choose for interface IC applications using surface-mount SSOP packages.",
-  "Confirm layout compatibility with the SSOP-28_5.3x10.2mm_P0.65mm footprint.",
-  "Select between tier A parts AD9850 and AD9851 based on design needs."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SSOP land pattern is intended."
  ],
  "avoid_when": [
-  "Avoid when through-hole mounting is required instead of SMD.",
-  "Do not use if the board layout requires a footprint other than SSOP-28_5.3x10.2mm_P0.65mm.",
-  "Do not use when non-interface IC components are needed."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SSOP."
  ],
  "keywords": [
-  "ic",
-  "interface",
-  "ic interface",
   "ssop",
-  "ssop-28",
-  "smd",
-  "ad9850",
-  "ad9851",
-  "ssop-28_5.3x10.2mm_p0.65mm",
-  "kicad-symbols",
+  "interface",
   "dds",
   "synthesizer",
   "cmos",
@@ -39,6 +31,8 @@
   "so",
   "direct",
   "digital",
+  "ic",
+  "ad9850",
   "complete"
  ],
  "facts": {
@@ -60,7 +54,7 @@
   "tier_counts": {
    "A": 2
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -84,6 +78,6 @@
   "kicad-symbols/Interface/AD9850",
   "kicad-symbols/Interface/AD9851"
  ],
- "embedding_text": "ic-interface.ssop | IC Interface | Surface-mount interface IC cluster featuring SSOP-28 components including AD9850 and AD9851. | ic interface ic interface ssop ssop-28 smd ad9850 ad9851 ssop-28_5.3x10.2mm_p0.65mm kicad-symbols dds synthesizer cmos mhz 3x10 2mm p0 65mm so direct digital complete | SSOP | ",
+ "embedding_text": "ic-interface.ssop | IC Interface | 2 ic interface parts using SSOP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | ssop interface dds synthesizer cmos mhz 3x10 2mm p0 65mm so direct digital ic ad9850 complete | SSOP | ",
  "class": "ic.interface"
 }

@@ -5,34 +5,21 @@
  "category_path": [
   "Connector"
  ],
- "description": "Cluster of 11 generic Amphenol connector symbols (Conn_01x51 to Conn_01x60 MountingPin variants) paired with Amphenol F32Q 0.5mm-pitch horizontal footprints, all tier B and generated.",
+ "description": "11 connector parts using Amphenol footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Match the exact pin count to the required footprint (e.g. Conn_01x51 for F32Q...11051)",
-  "Confirm mount type needed: smd or through_hole",
-  "Verify the symbol-footprint pairing since all entries are auto-generated tier B"
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a Amphenol land pattern is intended."
  ],
  "avoid_when": [
-  "A verified tier A part with confirmed footprint pairing is required",
-  "The needed pin count is outside the 51-60 range covered here",
-  "A connector series or pitch other than Amphenol F32Q 0.5mm is needed"
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than Amphenol."
  ],
  "keywords": [
   "connector",
   "amphenol",
   "mountingpin",
-  "generic connector",
-  "conn 01x",
-  "single row header",
-  "f32q",
-  "1a7x1",
-  "0.5mm pitch",
-  "horizontal connector",
-  "mounting pin",
-  "smd connector",
-  "through hole connector",
-  "board connector",
-  "kicad generated",
-  "1x51 to 1x60",
   "generic",
   "pin",
   "conn",
@@ -40,7 +27,12 @@
   "mounting",
   "single",
   "row",
-  "script"
+  "script",
+  "generated",
+  "f32q",
+  "1a7x1",
+  "1mp",
+  "p0"
  ],
  "facts": {
   "package_family": "Amphenol",
@@ -71,7 +63,7 @@
   "tier_counts": {
    "B": 11
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -128,6 +120,6 @@
   "kicad-symbols/Connector/IEC61076-2_M8_A-coding_01x03_Plug_Shielded",
   "kicad-symbols/Connector/IEC61076-2_M8_A-coding_01x03_Receptacle_Shielded"
  ],
- "embedding_text": "connector.amphenol | Connector | Cluster of 11 generic Amphenol connector symbols (Conn_01x51 to Conn_01x60 MountingPin variants) paired with Amphenol F32Q 0.5mm-pitch horizontal footprints, all tier B and generated. | connector amphenol mountingpin generic connector conn 01x single row header f32q 1a7x1 0.5mm pitch horizontal connector mounting pin smd connector through hole connector board connector kicad generated 1x51 to 1x60 generic pin conn connectable mounting single row script | Amphenol | ",
+ "embedding_text": "connector.amphenol | Connector | 11 connector parts using Amphenol footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | connector amphenol mountingpin generic pin conn connectable mounting single row script generated f32q 1a7x1 1mp p0 | Amphenol | ",
  "class": "connector"
 }

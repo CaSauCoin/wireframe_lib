@@ -6,29 +6,20 @@
   "Passive",
   "Resistor"
  ],
- "description": "Passive resistor components in SMD MSOP packages, including digital potentiometer symbols compatible with the MSOP-8_3x3mm_P0.65mm footprint.",
+ "description": "2 passive resistor parts using MSOP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Verify part model requirements against the MSOP-8_3x3mm_P0.65mm footprint.",
-  "Confirm the application requires digital potentiometer functionality.",
-  "Verify pin-to-pad compatibility with the target MSOP footprint."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a MSOP land pattern is intended."
  ],
  "avoid_when": [
-  "The circuit requires conventional fixed passive resistors.",
-  "The PCB layout requires non-MSOP package sizes or through-hole mounting.",
-  "A footprint other than MSOP-8_3x3mm_P0.65mm is required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than MSOP."
  ],
  "keywords": [
-  "passive",
-  "resistor",
   "msop",
-  "msop-8",
-  "msop-8_3x3mm_p0.65mm",
-  "smd",
-  "digital potentiometer",
   "potentiometer",
-  "mcp4011",
-  "mcp4021",
-  "kicad-symbols",
   "digital",
   "xxxxms",
   "low",
@@ -40,7 +31,9 @@
   "so",
   "pot",
   "up",
-  "down"
+  "down",
+  "passive",
+  "resistor"
  ],
  "facts": {
   "package_family": "MSOP",
@@ -61,7 +54,7 @@
   "tier_counts": {
    "A": 2
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -85,6 +78,6 @@
   "kicad-symbols/Potentiometer_Digital/MCP4011-xxxxMS",
   "kicad-symbols/Potentiometer_Digital/MCP4021-xxxxMS"
  ],
- "embedding_text": "passive-resistor.msop | Passive Resistor | Passive resistor components in SMD MSOP packages, including digital potentiometer symbols compatible with the MSOP-8_3x3mm_P0.65mm footprint. | passive resistor msop msop-8 msop-8_3x3mm_p0.65mm smd digital potentiometer potentiometer mcp4011 mcp4021 kicad-symbols digital xxxxms low cost step 3x3mm p0 65mm so pot up down | MSOP | ",
+ "embedding_text": "passive-resistor.msop | Passive Resistor | 2 passive resistor parts using MSOP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | msop potentiometer digital xxxxms low cost step 3x3mm p0 65mm so pot up down passive resistor | MSOP | ",
  "class": "passive.resistor"
 }

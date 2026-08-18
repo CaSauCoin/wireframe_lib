@@ -6,40 +6,34 @@
   "IC",
   "Microcontroller"
  ],
- "description": "Surface-mount microcontroller IC cluster featuring USB, CAN, and 3.6V facets in QFN package footprints.",
+ "description": "3 ic microcontroller parts for USB, CAN, 3.6V using QFN footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select between QFN-64 (9x9mm, 0.5mm pitch) and WQFN-28 (4x4mm, 0.4mm pitch) footprints.",
-  "Prefer Tier A parts like PIC32MX575F256H or PIC32MX575F512H over Tier B parts.",
-  "Choose based on required footprint size and pin count."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a QFN land pattern is intended."
  ],
  "avoid_when": [
-  "Through-hole or non-SMD mounting is required.",
-  "Package types other than QFN or WQFN are required.",
-  "The application requires microcontrollers without USB, CAN, or 3.6V specs."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than QFN."
  ],
  "keywords": [
-  "ic",
-  "mcu",
-  "microcontroller",
   "qfn",
-  "wqfn",
   "usb",
   "can",
-  "3.6v",
-  "smd",
+  "mcu",
+  "microcontroller",
   "microchip",
   "pic32",
-  "wch",
-  "riscv",
-  "qfn-64",
-  "wqfn-28",
   "and",
   "6v",
   "64kb",
   "flash",
   "1ep",
   "p0",
-  "nolead"
+  "nolead",
+  "ic",
+  "wch"
  ],
  "facts": {
   "package_family": "QFN",
@@ -66,7 +60,7 @@
    "A": 2,
    "B": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -99,6 +93,6 @@
   "kicad-symbols/MCU_Microchip_PIC32/PIC32MX575F512H",
   "kicad-symbols/MCU_WCH_RiscV/CH32V203GxUx"
  ],
- "embedding_text": "ic-mcu.qfn.usb.can | IC Microcontroller | Surface-mount microcontroller IC cluster featuring USB, CAN, and 3.6V facets in QFN package footprints. | ic mcu microcontroller qfn wqfn usb can 3.6v smd microchip pic32 wch riscv qfn-64 wqfn-28 and 6v 64kb flash 1ep p0 nolead | QFN | USB CAN 3.6V",
+ "embedding_text": "ic-mcu.qfn.usb.can | IC Microcontroller | 3 ic microcontroller parts for USB, CAN, 3.6V using QFN footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | qfn usb can mcu microcontroller microchip pic32 and 6v 64kb flash 1ep p0 nolead ic wch | QFN | USB CAN 3.6V",
  "class": "ic.mcu"
 }

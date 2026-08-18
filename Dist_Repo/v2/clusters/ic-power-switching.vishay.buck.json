@@ -7,41 +7,34 @@
   "Power",
   "Switching Regulator"
  ],
- "description": "A cluster of 12 surface-mount buck switching regulator ICs from KiCad symbols utilizing the Vishay PowerPAK MLP44-24L footprint with thermal vias.",
+ "description": "12 ic power switching regulator parts for buck using Vishay footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select for surface-mount buck switching regulator applications requiring a Vishay PowerPAK MLP44-24L footprint with thermal vias.",
-  "Choose from tier A parts including SIC431A, SIC431B, SIC431C, SIC431D, or SIC437A from KiCad symbols."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a Vishay land pattern is intended."
  ],
  "avoid_when": [
-  "Do not use when through-hole or non-SMD mounting is required.",
-  "Avoid when the PCB layout requires footprints other than Vishay PowerPAK MLP44-24L with thermal vias.",
-  "Do not use for switching regulator topologies other than buck."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than Vishay."
  ],
  "keywords": [
-  "ic",
-  "power",
-  "switching regulator",
-  "buck",
-  "vishay",
-  "smd",
-  "powerpak",
-  "mlp44-24l",
-  "thermalvias",
-  "sic431a",
-  "sic431b",
-  "sic431c",
-  "sic431d",
-  "sic437a",
   "regulator",
+  "vishay",
   "switching",
   "dc",
+  "powerpak",
   "mlp44",
   "24l",
+  "buck",
   "step",
   "down",
   "300khz",
   "1mhz",
-  "24vin"
+  "24vin",
+  "6vout",
+  "thermalvias",
+  "siliconix"
  ],
  "facts": {
   "package_family": "Vishay",
@@ -64,7 +57,7 @@
   "tier_counts": {
    "A": 12
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -122,6 +115,6 @@
   "kicad-symbols/Regulator_Switching/SIC438C",
   "kicad-symbols/Regulator_Switching/SIC438D"
  ],
- "embedding_text": "ic-power-switching.vishay.buck | IC Power Switching Regulator | A cluster of 12 surface-mount buck switching regulator ICs from KiCad symbols utilizing the Vishay PowerPAK MLP44-24L footprint with thermal vias. | ic power switching regulator buck vishay smd powerpak mlp44-24l thermalvias sic431a sic431b sic431c sic431d sic437a regulator switching dc mlp44 24l step down 300khz 1mhz 24vin | Vishay | buck",
+ "embedding_text": "ic-power-switching.vishay.buck | IC Power Switching Regulator | 12 ic power switching regulator parts for buck using Vishay footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | regulator vishay switching dc powerpak mlp44 24l buck step down 300khz 1mhz 24vin 6vout thermalvias siliconix | Vishay | buck",
  "class": "ic.power.switching"
 }

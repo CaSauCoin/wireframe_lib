@@ -6,34 +6,22 @@
   "Discrete",
   "FET"
  ],
- "description": "Cluster of 5 surface-mount 20V discrete FET parts in the DirectFET package family, covering DirectFET_ST, DirectFET_MX, DirectFET_MD, and DirectFET_SA footprints.",
+ "description": "5 discrete fet parts for 20V using DirectFET footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select based on the required DirectFET footprint variant such as DirectFET_ST, DirectFET_MX, DirectFET_MD, or DirectFET_SA.",
-  "Prioritize Tier A parts (IRF6620, IRF6623, IRF6636) or Tier B parts (IRL6283M) over lower quality tiers.",
-  "Confirm that the 20V rating matches application requirements."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a DirectFET land pattern is intended."
  ],
  "avoid_when": [
-  "The application requires package families other than DirectFET.",
-  "Through-hole mounting is required instead of surface-mount (SMD).",
-  "Voltage ratings other than 20V are required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than DirectFET."
  ],
  "keywords": [
-  "discrete fet",
   "directfet",
-  "20v",
-  "smd",
-  "directfet_st",
-  "directfet_mx",
-  "directfet_md",
-  "directfet_sa",
-  "irf6620",
-  "irf6623",
-  "irf6636",
-  "irl6283m",
-  "kicad",
-  "transistor fet",
   "mosfet",
   "fet",
+  "20v",
   "channel",
   "st",
   "transistor",
@@ -41,7 +29,11 @@
   "vds",
   "rds",
   "infineon",
-  "discrete"
+  "discrete",
+  "hexfet",
+  "mx",
+  "md",
+  "sa"
  ],
  "facts": {
   "package_family": "DirectFET",
@@ -69,7 +61,7 @@
    "B": 1,
    "C": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -112,6 +104,6 @@
   "kicad-symbols/Transistor_FET/IRL6283M",
   "kicad-symbols/Transistor_FET/IRL6297SD"
  ],
- "embedding_text": "discrete-fet.directfet.20v | Discrete FET | Cluster of 5 surface-mount 20V discrete FET parts in the DirectFET package family, covering DirectFET_ST, DirectFET_MX, DirectFET_MD, and DirectFET_SA footprints. | discrete fet directfet 20v smd directfet_st directfet_mx directfet_md directfet_sa irf6620 irf6623 irf6636 irl6283m kicad transistor fet mosfet fet channel st transistor id vds rds infineon discrete | DirectFET | 20V",
+ "embedding_text": "discrete-fet.directfet.20v | Discrete FET | 5 discrete fet parts for 20V using DirectFET footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | directfet mosfet fet 20v channel st transistor id vds rds infineon discrete hexfet mx md sa | DirectFET | 20V",
  "class": "discrete.fet"
 }

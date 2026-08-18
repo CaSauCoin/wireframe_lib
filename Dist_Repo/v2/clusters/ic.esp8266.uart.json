@@ -5,42 +5,34 @@
  "category_path": [
   "IC"
  ],
- "description": "ESP8266 IC cluster containing 6 tier-B UART/serial parts supporting SMD and through-hole mounting across ESP8266 footprints.",
+ "description": "6 ic parts for UART/serial using ESP8266 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select based on the specific footprint variant such as ESP8266_ESP01 through ESP8266_ESP09.",
-  "Verify whether SMD or through-hole mounting is required for the layout.",
-  "Confirm compatibility with tier-B parts from the chilaboard-altium-library source."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a ESP8266 land pattern is intended."
  ],
  "avoid_when": [
-  "The PCB design requires a package family other than ESP8266.",
-  "Mounting options other than SMD or through-hole are required.",
-  "A tier-A verified component status is required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than ESP8266."
  ],
  "keywords": [
   "esp8266",
-  "uart",
-  "serial",
-  "ic",
-  "smd",
-  "through_hole",
-  "esp8266_esp01",
-  "esp8266_esp02",
-  "esp8266_esp04",
-  "esp8266_esp06",
-  "esp8266_esp07",
-  "esp8266_esp09",
-  "chilaboard-altium-library",
   "module",
   "esp",
+  "uart",
+  "serial",
   "wifi",
   "wi",
   "fi",
   "wireless",
+  "ic",
   "and",
   "with",
   "gpio",
   "microcontroller",
-  "transceiver"
+  "transceiver",
+  "interface"
  ],
  "facts": {
   "package_family": "ESP8266",
@@ -69,7 +61,7 @@
   "tier_counts": {
    "B": 6
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -121,6 +113,6 @@
   "chilaboard-altium-library/ESP8266_ESP-07/ESP8266_ESP-07",
   "chilaboard-altium-library/ESP8266_ESP-09/ESP8266_ESP-09"
  ],
- "embedding_text": "ic.esp8266.uart | IC | ESP8266 IC cluster containing 6 tier-B UART/serial parts supporting SMD and through-hole mounting across ESP8266 footprints. | esp8266 uart serial ic smd through_hole esp8266_esp01 esp8266_esp02 esp8266_esp04 esp8266_esp06 esp8266_esp07 esp8266_esp09 chilaboard-altium-library module esp wifi wi fi wireless and with gpio microcontroller transceiver | ESP8266 | UART/serial",
+ "embedding_text": "ic.esp8266.uart | IC | 6 ic parts for UART/serial using ESP8266 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | esp8266 module esp uart serial wifi wi fi wireless ic and with gpio microcontroller transceiver interface | ESP8266 | UART/serial",
  "class": "ic"
 }

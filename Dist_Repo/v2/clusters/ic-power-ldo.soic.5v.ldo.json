@@ -7,38 +7,31 @@
   "Power",
   "Linear Regulator"
  ],
- "description": "Surface-mount 5V LDO linear regulator IC cluster containing 23 Tier A parts in standard and exposed-pad SOIC-8 footprints.",
+ "description": "23 ic power linear regulator parts for 5V, LDO using SOIC footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select between standard SOIC-8 and SOIC-8-1EP exposed-pad surface-mount footprints.",
-  "Ensure the application requires a surface-mount 5V LDO linear regulator IC.",
-  "Choose among 23 Tier A symbols provided in the KiCad symbol source."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SOIC land pattern is intended."
  ],
  "avoid_when": [
-  "The PCB design requires package footprints other than SOIC-8 or SOIC-8-1EP.",
-  "Surface-mount (SMD) mounting is not intended for the design.",
-  "The circuit requires a non-5V or non-LDO power regulator."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SOIC."
  ],
  "keywords": [
-  "ic",
-  "power",
-  "linear regulator",
-  "ldo",
-  "5v",
-  "soic",
-  "soic-8",
-  "soic-8-1ep",
-  "smd",
-  "3.9x4.9mm",
-  "p1.27mm",
-  "kicad-symbols",
   "regulator",
+  "soic",
   "linear",
+  "5v",
   "so",
+  "ldo",
   "fixed",
   "9x4",
   "9mm",
   "p1",
   "27mm",
+  "ic",
+  "power",
   "output",
   "voltage",
   "positive"
@@ -66,7 +59,7 @@
   "tier_counts": {
    "A": 23
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -135,6 +128,6 @@
   "kicad-symbols/Regulator_Linear/TPS77815_SO8",
   "kicad-symbols/Regulator_Linear/TPS77825_SO8"
  ],
- "embedding_text": "ic-power-ldo.soic.5v.ldo | IC Power Linear Regulator | Surface-mount 5V LDO linear regulator IC cluster containing 23 Tier A parts in standard and exposed-pad SOIC-8 footprints. | ic power linear regulator ldo 5v soic soic-8 soic-8-1ep smd 3.9x4.9mm p1.27mm kicad-symbols regulator linear so fixed 9x4 9mm p1 27mm output voltage positive | SOIC | 5V LDO",
+ "embedding_text": "ic-power-ldo.soic.5v.ldo | IC Power Linear Regulator | 23 ic power linear regulator parts for 5V, LDO using SOIC footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | regulator soic linear 5v so ldo fixed 9x4 9mm p1 27mm ic power output voltage positive | SOIC | 5V LDO",
  "class": "ic.power.ldo"
 }

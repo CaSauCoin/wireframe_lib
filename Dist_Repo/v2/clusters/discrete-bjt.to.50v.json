@@ -6,44 +6,34 @@
   "Discrete",
   "BJT"
  ],
- "description": "Cluster of 44 discrete BJT transistors in the 50V facet, using TO-family footprints (TO-92, TO-39, TO-18, TO-220, TO-252) in both SMD and through-hole mounts, sourced from kicad-symbols and Alternate-KiCad-Library.",
+ "description": "44 discrete bjt parts for 50V using TO footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Prefer tier A entries (42 of 44 parts are tier A)",
-  "Match the exact TO-92/TO-39 pin ordering variant (ECB, EBC, CBE differ)",
-  "Confirm mount type (smd vs through_hole) matches the target board",
-  "Check source library (kicad-symbols vs Alternate-KiCad-Library) for trust level"
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a TO land pattern is intended."
  ],
  "avoid_when": [
-  "A voltage rating other than the 50V facet is required",
-  "A non-TO package family (e.g. SOT) is needed",
-  "The exact footprint pinout variant cannot be confirmed",
-  "Verified (non-generated) review status is required"
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than TO."
  ],
  "keywords": [
   "to",
   "transistor",
   "bjt",
-  "discrete",
   "50v",
-  "to-92",
-  "to-39",
-  "to-18",
-  "to-220",
-  "to-252",
   "npn",
-  "pnp",
-  "through hole",
-  "smd",
-  "kicad-symbols",
-  "alternate-kicad-library",
-  "inline",
-  "wide",
   "sc",
+  "discrete",
   "akl",
   "alternate",
   "kicad",
   "library",
-  "43a"
+  "inline",
+  "wide",
+  "pnp",
+  "43a",
+  "sot54"
  ],
  "facts": {
   "package_family": "TO",
@@ -80,7 +70,7 @@
    "A": 42,
    "B": 2
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -170,6 +160,6 @@
   "Alternate-KiCad-Library/Transistor_BJT_AKL/2SC3199",
   "Alternate-KiCad-Library/Transistor_BJT_AKL/2SC4131"
  ],
- "embedding_text": "discrete-bjt.to.50v | Discrete BJT | Cluster of 44 discrete BJT transistors in the 50V facet, using TO-family footprints (TO-92, TO-39, TO-18, TO-220, TO-252) in both SMD and through-hole mounts, sourced from kicad-symbols and Alternate-KiCad-Library. | to transistor bjt discrete 50v to-92 to-39 to-18 to-220 to-252 npn pnp through hole smd kicad-symbols alternate-kicad-library inline wide sc akl alternate kicad library 43a | TO | 50V",
+ "embedding_text": "discrete-bjt.to.50v | Discrete BJT | 44 discrete bjt parts for 50V using TO footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | to transistor bjt 50v npn sc discrete akl alternate kicad library inline wide pnp 43a sot54 | TO | 50V",
  "class": "discrete.bjt"
 }

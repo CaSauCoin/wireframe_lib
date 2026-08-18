@@ -7,31 +7,21 @@
   "Analog",
   "Op-Amp"
  ],
- "description": "Surface-mount analog operational and instrumentation amplifier ICs in DFN packages within the 1V facet classification.",
+ "description": "8 ic analog op-amp parts for 1V using DFN footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when requiring SMD DFN package footprints such as DFN-6, DFN-8, or DFN-14 with an exposed pad.",
-  "Choose parts based on 1V facet classification and specific footprint pitch and size requirements.",
-  "Verify part selection against Tier A entries from Alternate-KiCad-Library."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a DFN land pattern is intended."
  ],
  "avoid_when": [
-  "Through-hole mounting or non-DFN package families are required.",
-  "Layout requirements call for surface-mount packages other than DFN.",
-  "Applications require IC categories outside of analog op-amps."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than DFN."
  ],
  "keywords": [
-  "ic",
-  "analog",
-  "op-amp",
   "dfn",
-  "1v",
-  "smd",
-  "operational amplifier",
-  "instrumentation amplifier",
-  "dfn-6",
-  "dfn-8",
-  "dfn-14",
-  "alternate-kicad-library",
   "amplifier",
+  "1v",
   "rail",
   "instrumentation",
   "operational",
@@ -42,7 +32,9 @@
   "library",
   "1ep",
   "p0",
-  "ep1"
+  "ep1",
+  "ic",
+  "analog"
  ],
  "facts": {
   "package_family": "DFN",
@@ -69,7 +61,7 @@
   "tier_counts": {
    "A": 8
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -123,6 +115,6 @@
   "Alternate-KiCad-Library/Amplifier_Operational_AKL/LT1397CDE",
   "Alternate-KiCad-Library/Amplifier_Operational_AKL/LT1397HDE"
  ],
- "embedding_text": "ic-analog-opamp.dfn.1v | IC Analog Op-Amp | Surface-mount analog operational and instrumentation amplifier ICs in DFN packages within the 1V facet classification. | ic analog op-amp dfn 1v smd operational amplifier instrumentation amplifier dfn-6 dfn-8 dfn-14 alternate-kicad-library amplifier rail instrumentation operational akl offset alternate kicad library 1ep p0 ep1 | DFN | 1V",
+ "embedding_text": "ic-analog-opamp.dfn.1v | IC Analog Op-Amp | 8 ic analog op-amp parts for 1V using DFN footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | dfn amplifier 1v rail instrumentation operational akl offset alternate kicad library 1ep p0 ep1 ic analog | DFN | 1V",
  "class": "ic.analog.opamp"
 }

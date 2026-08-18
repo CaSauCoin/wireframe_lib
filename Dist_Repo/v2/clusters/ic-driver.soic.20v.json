@@ -6,31 +6,21 @@
   "IC",
   "Driver"
  ],
- "description": "Cluster of 4 tier A surface-mount 20V IC driver parts using the SOIC-28W_7.5x17.9mm_P1.27mm footprint.",
+ "description": "4 ic driver parts for 20V using SOIC footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select for 20V IC driver applications requiring surface-mount (SMD) mounting.",
-  "Verify component footprint compatibility with SOIC-28W_7.5x17.9mm_P1.27mm.",
-  "Choose from tier A parts including IR2133S, IR2135S, IR2233S, and IR2235S."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SOIC land pattern is intended."
  ],
  "avoid_when": [
-  "The design requires non-SMD or through-hole mounting.",
-  "The required package footprint is not SOIC-28W_7.5x17.9mm_P1.27mm.",
-  "Operating requirements differ from the 20V facet rating."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SOIC."
  ],
  "keywords": [
-  "ic driver",
-  "20v",
   "soic",
-  "smd",
-  "soic-28w",
-  "soic-28w_7.5x17.9mm_p1.27mm",
-  "ir2133s",
-  "ir2135s",
-  "ir2233s",
-  "ir2235s",
-  "driver_fet",
-  "ic",
   "driver",
+  "20v",
   "fet",
   "vout",
   "28w",
@@ -41,7 +31,9 @@
   "so",
   "phase",
   "gate",
-  "600v"
+  "ic",
+  "600v",
+  "1200v"
  ],
  "facts": {
   "package_family": "SOIC",
@@ -64,7 +56,7 @@
   "tier_counts": {
    "A": 4
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -106,6 +98,6 @@
   "kicad-symbols/Driver_FET/IR2233S",
   "kicad-symbols/Driver_FET/IR2235S"
  ],
- "embedding_text": "ic-driver.soic.20v | IC Driver | Cluster of 4 tier A surface-mount 20V IC driver parts using the SOIC-28W_7.5x17.9mm_P1.27mm footprint. | ic driver 20v soic smd soic-28w soic-28w_7.5x17.9mm_p1.27mm ir2133s ir2135s ir2233s ir2235s driver_fet ic driver fet vout 28w 5x17 9mm p1 27mm so phase gate 600v | SOIC | 20V",
+ "embedding_text": "ic-driver.soic.20v | IC Driver | 4 ic driver parts for 20V using SOIC footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | soic driver 20v fet vout 28w 5x17 9mm p1 27mm so phase gate ic 600v 1200v | SOIC | 20V",
  "class": "ic.driver"
 }

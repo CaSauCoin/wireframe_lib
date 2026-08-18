@@ -6,27 +6,21 @@
   "Discrete",
   "Transistor"
  ],
- "description": "Cluster of 3 tier-C discrete transistor parts using HDR1X3 and HDR1X3_WHITE footprints from legacy sources.",
+ "description": "3 discrete transistor parts using HDR1X3 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Use when discrete transistor parts with HDR1X3 or HDR1X3_WHITE land patterns are required.",
-  "Verify pin mapping and package details as all cluster parts are rated tier C.",
-  "Confirm compatibility with HDR1X3 footprint specifications."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a HDR1X3 land pattern is intended."
  ],
  "avoid_when": [
-  "The application requires planner-visible or higher-tier verified parts.",
-  "The PCB design requires a package footprint other than HDR1X3 or HDR1X3_WHITE."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than HDR1X3."
  ],
  "keywords": [
   "hdr1x3",
-  "hdr1x3_white",
-  "discrete transistor",
   "discrete",
   "transistor",
-  "tier c",
-  "dist-legacy",
-  "hdr1x3 footprint",
-  "package family",
-  "legacy distribution",
   "white",
   "mm",
   "pitch",
@@ -61,7 +55,7 @@
   "tier_counts": {
    "C": 3
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
@@ -69,6 +63,6 @@
   "dist-legacy/HDR1X3",
   "dist-legacy/HDR1X3_WHITE"
  ],
- "embedding_text": "discrete-transistor.hdr1x3 | Discrete Transistor | Cluster of 3 tier-C discrete transistor parts using HDR1X3 and HDR1X3_WHITE footprints from legacy sources. | hdr1x3 hdr1x3_white discrete transistor discrete transistor tier c dist-legacy hdr1x3 footprint package family legacy distribution white mm pitch 1x3 header land pattern pad pins bare package with pads | HDR1X3 | ",
+ "embedding_text": "discrete-transistor.hdr1x3 | Discrete Transistor | 3 discrete transistor parts using HDR1X3 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | hdr1x3 discrete transistor white mm pitch 1x3 header land pattern pad pins bare package with pads | HDR1X3 | ",
  "class": "discrete.transistor"
 }

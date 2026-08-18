@@ -7,32 +7,23 @@
   "Analog",
   "Amplifier"
  ],
- "description": "Cluster of surface-mount analog amplifier ICs in SOIC-8 packages associated with 5V and 45V voltage facets.",
+ "description": "2 ic analog amplifier parts for 5V, 45V using SOIC footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select for surface-mount analog amplifier designs requiring a SOIC-8 footprint.",
-  "Choose tier A parts from KiCad symbols such as AD8208 or AD8209.",
-  "Verify application requirements match the 5V and 45V facets."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SOIC land pattern is intended."
  ],
  "avoid_when": [
-  "Through-hole mounting is required instead of SMD.",
-  "The board layout requires packages other than SOIC-8_3.9x4.9mm_P1.27mm.",
-  "Voltage requirements differ from the specified 5V and 45V facets."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SOIC."
  ],
  "keywords": [
-  "ic",
-  "analog",
   "amplifier",
-  "analog amplifier",
   "soic",
-  "soic-8",
-  "5v",
-  "45v",
-  "smd",
-  "ad8208",
-  "ad8209",
-  "kicad-symbols",
-  "amplifier_current",
   "current",
+  "45v",
+  "5v",
   "high",
   "voltage",
   "precision",
@@ -42,7 +33,8 @@
   "gain",
   "bandwidth",
   "vcc",
-  "unidirectional"
+  "unidirectional",
+  "msop"
  ],
  "facts": {
   "package_family": "SOIC",
@@ -66,7 +58,7 @@
   "tier_counts": {
    "A": 2
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -90,6 +82,6 @@
   "kicad-symbols/Amplifier_Current/AD8208",
   "kicad-symbols/Amplifier_Current/AD8209"
  ],
- "embedding_text": "ic-analog-amplifier.soic.5v.45v | IC Analog Amplifier | Cluster of surface-mount analog amplifier ICs in SOIC-8 packages associated with 5V and 45V voltage facets. | ic analog amplifier analog amplifier soic soic-8 5v 45v smd ad8208 ad8209 kicad-symbols amplifier_current current high voltage precision difference 2v adjustable gain bandwidth vcc unidirectional | SOIC | 5V 45V",
+ "embedding_text": "ic-analog-amplifier.soic.5v.45v | IC Analog Amplifier | 2 ic analog amplifier parts for 5V, 45V using SOIC footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | amplifier soic current 45v 5v high voltage precision difference 2v adjustable gain bandwidth vcc unidirectional msop | SOIC | 5V 45V",
  "class": "ic.analog.amplifier"
 }

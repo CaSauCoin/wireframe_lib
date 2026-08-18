@@ -6,44 +6,34 @@
   "Discrete",
   "BJT"
  ],
- "description": "Cluster of 224 discrete BJT parts (216 tier A, 8 tier B) using TO-family footprints (TO-92, TO-126, TO-220, TO-247, TO-264, TO-3, TO-3P, TO-39) in through-hole and SMD mounts; select by exact footprint and pinout.",
+ "description": "224 discrete bjt parts using TO footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Match the exact TO footprint variant (e.g. TO-220-3_Vertical_BCE vs TO-247-3_Vertical_BCE vs TO-220-3_Vertical) to the intended land pattern.",
-  "Confirm pin ordering suffix (BCE, ECB, or EBC) against the schematic symbol before layout.",
-  "Prefer tier A parts (216 of 224) over tier B when available.",
-  "Note source library (Alternate-KiCad-Library: 204 parts, kicad-symbols: 20 parts) if provenance matters."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a TO land pattern is intended."
  ],
  "avoid_when": [
-  "The design requires a non-TO package family.",
-  "The exact pin ordering (BCE/ECB/EBC) for the chosen footprint cannot be confirmed.",
-  "Electrical ratings needed for the design are not stated on the selected part.",
-  "review_status is 'generated' and the part has not been manually verified."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than TO."
  ],
  "keywords": [
-  "bjt",
-  "transistor",
-  "discrete bjt",
-  "to package",
-  "to-92",
-  "to-126",
-  "to-220",
-  "to-247",
-  "to-264",
-  "to-3",
-  "to-3p",
-  "to-39",
-  "through hole",
-  "smd",
-  "bce pinout",
-  "ecb pinout",
-  "ebc pinout",
-  "vertical inline",
   "to",
+  "transistor",
+  "bjt",
   "npn",
   "vertical",
   "discrete",
   "akl",
-  "alternate"
+  "alternate",
+  "kicad",
+  "library",
+  "power",
+  "rm",
+  "pnp",
+  "bce",
+  "54mm",
+  "complementary"
  ],
  "facts": {
   "package_family": "TO",
@@ -78,7 +68,7 @@
    "A": 216,
    "B": 8
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -348,6 +338,6 @@
   "Alternate-KiCad-Library/Transistor_BJT_AKL/KSC5030F",
   "Alternate-KiCad-Library/Transistor_BJT_AKL/ST2310FX"
  ],
- "embedding_text": "discrete-bjt.to | Discrete BJT | Cluster of 224 discrete BJT parts (216 tier A, 8 tier B) using TO-family footprints (TO-92, TO-126, TO-220, TO-247, TO-264, TO-3, TO-3P, TO-39) in through-hole and SMD mounts; select by exact footprint and pinout. | bjt transistor discrete bjt to package to-92 to-126 to-220 to-247 to-264 to-3 to-3p to-39 through hole smd bce pinout ecb pinout ebc pinout vertical inline to npn vertical discrete akl alternate | TO | ",
+ "embedding_text": "discrete-bjt.to | Discrete BJT | 224 discrete bjt parts using TO footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | to transistor bjt npn vertical discrete akl alternate kicad library power rm pnp bce 54mm complementary | TO | ",
  "class": "discrete.bjt"
 }

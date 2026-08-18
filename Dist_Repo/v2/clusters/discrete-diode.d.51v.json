@@ -6,44 +6,34 @@
   "Discrete",
   "Diode"
  ],
- "description": "51V-rated diode parts (zener/TVS) available in D-family SMD and through-hole packages, sourced mainly from the Alternate-KiCad-Library with a few from kicad-symbols.",
+ "description": "122 discrete diode parts for 51V using D footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Match footprint exactly (e.g. D_SMA, D_SMB, D_MiniMELF, D_DO-41, D_SMC, D_DO-35, D_SOD-123F, D_MELF, D_P600) to the intended land pattern.",
-  "Prefer tier A entries; 116 of 122 parts are tier A.",
-  "Distinguish zener vs TVS variants by footprint suffix (_Zener vs _TVS) before substituting one for the other.",
-  "Confirm source library (Alternate-KiCad-Library vs kicad-symbols) matches your project's trusted library set."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a D land pattern is intended."
  ],
  "avoid_when": [
-  "The design needs a diode voltage rating other than 51V.",
-  "A package outside the D family (e.g. axial DO-15, DO-201AD, or SOT-23 diode) is required.",
-  "Zener and TVS footprint variants must not be mixed up for the application.",
-  "Symbol-footprint pairing is unverified or flagged for review."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than D."
  ],
  "keywords": [
   "diode",
   "51v",
   "zener",
   "tvs",
-  "discrete diode",
-  "d package",
-  "smb",
-  "sma",
-  "minimelf",
-  "melf",
-  "sod-123f",
-  "do-41",
-  "do-35",
-  "p600",
-  "horizontal zener",
-  "horizontal tvs",
-  "alternate-kicad-library",
-  "kicad-symbols",
-  "through hole diode",
-  "smd diode",
   "do",
   "discrete",
   "akl",
-  "alternate"
+  "alternate",
+  "kicad",
+  "library",
+  "horizontal",
+  "unidirectional",
+  "sod",
+  "smb",
+  "bidirectional",
+  "sma"
  ],
  "facts": {
   "package_family": "D",
@@ -80,7 +70,7 @@
    "A": 116,
    "B": 6
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -248,6 +238,6 @@
   "Alternate-KiCad-Library/Diode_Zener_AKL/BZX884-C51",
   "Alternate-KiCad-Library/Diode_TVS_AKL/TPSMA6L51A"
  ],
- "embedding_text": "discrete-diode.d.51v | Discrete Diode | 51V-rated diode parts (zener/TVS) available in D-family SMD and through-hole packages, sourced mainly from the Alternate-KiCad-Library with a few from kicad-symbols. | diode 51v zener tvs discrete diode d package smb sma minimelf melf sod-123f do-41 do-35 p600 horizontal zener horizontal tvs alternate-kicad-library kicad-symbols through hole diode smd diode do discrete akl alternate | D | 51V",
+ "embedding_text": "discrete-diode.d.51v | Discrete Diode | 122 discrete diode parts for 51V using D footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | diode 51v zener tvs do discrete akl alternate kicad library horizontal unidirectional sod smb bidirectional sma | D | 51V",
  "class": "discrete.diode"
 }

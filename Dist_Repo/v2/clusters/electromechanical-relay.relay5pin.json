@@ -6,29 +6,22 @@
   "Electromechanical",
   "Relay"
  ],
- "description": "Electromechanical relay cluster containing 1 tier C part associated with the RELAY5PIN package family and RELAY5PIN-10A footprint.",
+ "description": "1 electromechanical relay parts using RELAY5PIN footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Verify compatibility with the RELAY5PIN package family and RELAY5PIN-10A footprint.",
-  "Note that the cluster contains 1 part assigned to quality tier C from legacy distribution sources.",
-  "Confirm details prior to PCB layout as the review status is generated with zero planner-visible parts."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a RELAY5PIN land pattern is intended."
  ],
  "avoid_when": [
-  "The design requires a package family or footprint other than RELAY5PIN or RELAY5PIN-10A.",
-  "Application requirements necessitate higher quality tiers than tier C or planner-visible parts.",
-  "Unreviewed generated cluster entries without direct representative parts are unacceptable."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than RELAY5PIN."
  ],
  "keywords": [
+  "relay5pin",
+  "10a",
   "electromechanical",
   "relay",
-  "relay5pin",
-  "relay5pin-10a",
-  "electromechanical relay",
-  "electromechanical.relay",
-  "dist-legacy",
-  "tier c",
-  "5pin relay",
-  "relay5pin footprint",
-  "10a",
   "pad",
   "mm",
   "pitch",
@@ -53,12 +46,12 @@
   "tier_counts": {
    "C": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
   "dist-legacy/RELAY5PIN-10A"
  ],
- "embedding_text": "electromechanical-relay.relay5pin | Electromechanical Relay | Electromechanical relay cluster containing 1 tier C part associated with the RELAY5PIN package family and RELAY5PIN-10A footprint. | electromechanical relay relay5pin relay5pin-10a electromechanical relay electromechanical.relay dist-legacy tier c 5pin relay relay5pin footprint 10a pad mm pitch pins | RELAY5PIN | ",
+ "embedding_text": "electromechanical-relay.relay5pin | Electromechanical Relay | 1 electromechanical relay parts using RELAY5PIN footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | relay5pin 10a electromechanical relay pad mm pitch pins | RELAY5PIN | ",
  "class": "electromechanical.relay"
 }

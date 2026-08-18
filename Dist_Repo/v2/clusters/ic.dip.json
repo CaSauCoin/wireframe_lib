@@ -5,33 +5,20 @@
  "category_path": [
   "IC"
  ],
- "description": "Integrated circuit component cluster containing 552 parts in the DIP package family, supporting through-hole and surface-mount footprints.",
+ "description": "552 ic parts using DIP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when needing integrated circuits in the DIP package family.",
-  "Choose based on pin count and footprint variant, including DIP-8, DIP-14, DIP-16, DIP-20, or DIP-40.",
-  "Filter parts by quality tier, such as Tier A or Tier B entries."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a DIP land pattern is intended."
  ],
  "avoid_when": [
-  "Avoid when the PCB layout requires a package family other than DIP.",
-  "Do not use if surface-mount or through-hole DIP footprint specifications are not suitable."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than DIP."
  ],
  "keywords": [
-  "ic",
   "dip",
-  "integrated circuit",
-  "through_hole",
-  "smd",
-  "cdip14",
-  "dip-8",
-  "dip-14",
-  "dip-16",
-  "dip-20",
-  "dip-40",
-  "4013",
-  "4021",
-  "4027",
-  "4047",
-  "4056",
+  "ic",
   "62mm",
   "w7",
   "package",
@@ -39,7 +26,13 @@
   "pins",
   "longpads",
   "mm",
-  "pad"
+  "pad",
+  "pitch",
+  "hole",
+  "24mm",
+  "dil",
+  "pdip",
+  "54mm"
  ],
  "facts": {
   "package_family": "DIP",
@@ -84,7 +77,7 @@
    "B": 150,
    "C": 303
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -682,6 +675,6 @@
   "francescosacco-hardwarelibrary/PDIP20/PDIP20",
   "chilaboard-altium-library/DIP_16SMD/DIP_16SMD"
  ],
- "embedding_text": "ic.dip | IC | Integrated circuit component cluster containing 552 parts in the DIP package family, supporting through-hole and surface-mount footprints. | ic dip integrated circuit through_hole smd cdip14 dip-8 dip-14 dip-16 dip-20 dip-40 4013 4021 4027 4047 4056 62mm w7 package smdip pins longpads mm pad | DIP | ",
+ "embedding_text": "ic.dip | IC | 552 ic parts using DIP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | dip ic 62mm w7 package smdip pins longpads mm pad pitch hole 24mm dil pdip 54mm | DIP | ",
  "class": "ic"
 }

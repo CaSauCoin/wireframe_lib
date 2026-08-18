@@ -5,29 +5,21 @@
  "category_path": [
   "IC"
  ],
- "description": "Integrated circuit component cluster in the GHIM package family using the GHIM_9MM footprint.",
+ "description": "1 ic parts using GHIM footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when an IC component with a GHIM_9MM footprint is needed.",
-  "Verify layout compatibility with the GHIM package family.",
-  "Confirm suitability of tier C parts from legacy distribution sources."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a GHIM land pattern is intended."
  ],
  "avoid_when": [
-  "Avoid if the design requires a package family other than GHIM.",
-  "Do not use when footprints other than GHIM_9MM are specified.",
-  "Avoid if tier C parts or legacy distribution sources do not meet project quality requirements."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than GHIM."
  ],
  "keywords": [
-  "ic",
   "ghim",
-  "ghim_9mm",
   "9mm",
-  "ghim package",
-  "ghim footprint",
-  "integrated circuit",
-  "package family ghim",
-  "ic ghim",
-  "tier c",
-  "dist-legacy",
+  "ic",
   "pad",
   "pins"
  ],
@@ -50,12 +42,12 @@
   "tier_counts": {
    "C": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
   "dist-legacy/GHIM_9MM"
  ],
- "embedding_text": "ic.ghim | IC | Integrated circuit component cluster in the GHIM package family using the GHIM_9MM footprint. | ic ghim ghim_9mm 9mm ghim package ghim footprint integrated circuit package family ghim ic ghim tier c dist-legacy pad pins | GHIM | ",
+ "embedding_text": "ic.ghim | IC | 1 ic parts using GHIM footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | ghim 9mm ic pad pins | GHIM | ",
  "class": "ic"
 }

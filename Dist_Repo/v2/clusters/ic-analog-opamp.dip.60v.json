@@ -7,33 +7,24 @@
   "Analog",
   "Op-Amp"
  ],
- "description": "This cluster contains 2 tier-A 60V analog operational amplifier ICs in through-hole DIP packages using the DIP-8_W7.62mm_LongPads footprint.",
+ "description": "2 ic analog op-amp parts for 60V using DIP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when a 60V analog operational amplifier in a through-hole DIP package is required.",
-  "Choose between representative parts OPA551PA and OPA552PA.",
-  "Use when the PCB design targets the DIP-8_W7.62mm_LongPads footprint."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a DIP land pattern is intended."
  ],
  "avoid_when": [
-  "Avoid when surface-mount mounting is required instead of through-hole DIP.",
-  "Avoid if the design requires footprint patterns other than DIP-8_W7.62mm_LongPads.",
-  "Avoid when voltage requirements differ from 60V."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than DIP."
  ],
  "keywords": [
-  "ic",
-  "analog",
-  "opamp",
-  "operational amplifier",
-  "60v",
   "dip",
-  "through_hole",
-  "dip-8_w7.62mm_longpads",
-  "opa551pa",
-  "opa552pa",
-  "alternate-kicad-library",
   "amplifier",
   "operational",
   "power",
   "jfet",
+  "60v",
   "62mm",
   "longpads",
   "akl",
@@ -42,7 +33,8 @@
   "range",
   "3mv",
   "offset",
-  "gbw"
+  "gbw",
+  "alternate"
  ],
  "facts": {
   "package_family": "DIP",
@@ -65,7 +57,7 @@
   "tier_counts": {
    "A": 2
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -89,6 +81,6 @@
   "Alternate-KiCad-Library/Amplifier_Operational_AKL/OPA551PA",
   "Alternate-KiCad-Library/Amplifier_Operational_AKL/OPA552PA"
  ],
- "embedding_text": "ic-analog-opamp.dip.60v | IC Analog Op-Amp | This cluster contains 2 tier-A 60V analog operational amplifier ICs in through-hole DIP packages using the DIP-8_W7.62mm_LongPads footprint. | ic analog opamp operational amplifier 60v dip through_hole dip-8_w7.62mm_longpads opa551pa opa552pa alternate-kicad-library amplifier operational power jfet 62mm longpads akl supply voltage range 3mv offset gbw | DIP | 60V",
+ "embedding_text": "ic-analog-opamp.dip.60v | IC Analog Op-Amp | 2 ic analog op-amp parts for 60V using DIP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | dip amplifier operational power jfet 60v 62mm longpads akl supply voltage range 3mv offset gbw alternate | DIP | 60V",
  "class": "ic.analog.opamp"
 }

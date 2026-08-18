@@ -5,34 +5,25 @@
  "category_path": [
   "IC"
  ],
- "description": "Integrated circuit cluster containing surface-mount 9V ICs in MSOP-10_3x3mm_P0.5mm footprints, including tier-A parts LM5069MM-1 and LM5069MM-2.",
+ "description": "2 ic parts for 9V using MSOP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when requiring surface-mount ICs with a 9V facet classification.",
-  "Choose for applications specified for the MSOP-10_3x3mm_P0.5mm footprint.",
-  "Select between representative tier-A parts LM5069MM-1 and LM5069MM-2 based on design requirements."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a MSOP land pattern is intended."
  ],
  "avoid_when": [
-  "Avoid if the circuit layout requires a through-hole mount instead of surface-mount SMD.",
-  "Do not use if a package footprint other than MSOP-10_3x3mm_P0.5mm is required.",
-  "Avoid when designs require IC specifications outside the 9V MSOP category."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than MSOP."
  ],
  "keywords": [
-  "ic",
   "msop",
-  "msop-10",
-  "9v",
-  "smd",
-  "surface mount",
-  "lm5069mm-1",
-  "lm5069mm-2",
-  "lm5069mm",
-  "msop-10_3x3mm_p0.5mm",
-  "kicad-symbols",
-  "integrated circuit",
   "power",
+  "9v",
   "3x3mm",
   "p0",
   "5mm",
+  "lm5069mm",
   "management",
   "hot",
   "swap",
@@ -40,7 +31,8 @@
   "current",
   "controller",
   "with",
-  "limiting"
+  "limiting",
+  "on"
  ],
  "facts": {
   "package_family": "MSOP",
@@ -63,7 +55,7 @@
   "tier_counts": {
    "A": 2
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -87,6 +79,6 @@
   "kicad-symbols/Power_Management/LM5069MM-1",
   "kicad-symbols/Power_Management/LM5069MM-2"
  ],
- "embedding_text": "ic.msop.9v | IC | Integrated circuit cluster containing surface-mount 9V ICs in MSOP-10_3x3mm_P0.5mm footprints, including tier-A parts LM5069MM-1 and LM5069MM-2. | ic msop msop-10 9v smd surface mount lm5069mm-1 lm5069mm-2 lm5069mm msop-10_3x3mm_p0.5mm kicad-symbols integrated circuit power 3x3mm p0 5mm management hot swap inrush current controller with limiting | MSOP | 9V",
+ "embedding_text": "ic.msop.9v | IC | 2 ic parts for 9V using MSOP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | msop power 9v 3x3mm p0 5mm lm5069mm management hot swap inrush current controller with limiting on | MSOP | 9V",
  "class": "ic"
 }

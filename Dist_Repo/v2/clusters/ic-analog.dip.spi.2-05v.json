@@ -6,32 +6,22 @@
   "IC",
   "Analog"
  ],
- "description": "Cluster of 6 tier-A analog IC parts featuring SPI interface and 2.05V facets in through-hole DIP-8_W7.62mm footprints.",
+ "description": "6 ic analog parts for SPI, 2.05V using DIP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when designing through-hole PCBs requiring DIP-8_W7.62mm footprints.",
-  "Use when requiring analog parts with SPI interface and 2.05V facets.",
-  "Choose among Tier A KiCad symbols like MCP4801, MCP4802, or MCP4811."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a DIP land pattern is intended."
  ],
  "avoid_when": [
-  "Surface-mount (SMD/SMT) component mounting is required.",
-  "Package requirements differ from DIP-8_W7.62mm.",
-  "Non-SPI communication interfaces are required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than DIP."
  ],
  "keywords": [
-  "ic",
-  "analog",
   "spi",
-  "2.05v",
   "dip",
-  "dip-8",
-  "dip-8_w7.62mm",
-  "through_hole",
+  "analog",
   "dac",
-  "mcp4801",
-  "mcp4802",
-  "mcp4811",
-  "mcp4812",
-  "mcp4821",
   "bit",
   "reference",
   "62mm",
@@ -41,7 +31,9 @@
   "internal",
   "048v",
   "w7",
-  "tht"
+  "tht",
+  "dil",
+  "pdip"
  ],
  "facts": {
   "package_family": "DIP",
@@ -65,7 +57,7 @@
   "tier_counts": {
    "A": 6
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -117,6 +109,6 @@
   "kicad-symbols/Analog_DAC/MCP4821",
   "kicad-symbols/Analog_DAC/MCP4822"
  ],
- "embedding_text": "ic-analog.dip.spi.2-05v | IC Analog | Cluster of 6 tier-A analog IC parts featuring SPI interface and 2.05V facets in through-hole DIP-8_W7.62mm footprints. | ic analog spi 2.05v dip dip-8 dip-8_w7.62mm through_hole dac mcp4801 mcp4802 mcp4811 mcp4812 mcp4821 bit reference 62mm converters with interface internal 048v w7 tht | DIP | SPI 2.05V",
+ "embedding_text": "ic-analog.dip.spi.2-05v | IC Analog | 6 ic analog parts for SPI, 2.05V using DIP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | spi dip analog dac bit reference 62mm converters with interface internal 048v w7 tht dil pdip | DIP | SPI 2.05V",
  "class": "ic.analog"
 }

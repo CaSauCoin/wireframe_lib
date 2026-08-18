@@ -5,30 +5,19 @@
  "category_path": [
   "IC"
  ],
- "description": "Cluster of 11 tier-A surface-mount 4.1V IC parts in SOIC-8 (3.9x4.9mm, 1.27mm pitch) footprints.",
+ "description": "11 ic parts for 4.1V using SOIC footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Designs requiring a 4.1V surface-mount IC part.",
-  "Footprint requirements match SOIC-8 with 1.27mm pitch.",
-  "Selecting tier-A parts from KiCad symbols."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SOIC land pattern is intended."
  ],
  "avoid_when": [
-  "Operating voltage requirements differ from 4.1V.",
-  "Through-hole (THT) mounting is required instead of SMD.",
-  "Layout requires a footprint other than SOIC-8 3.9x4.9mm."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SOIC."
  ],
  "keywords": [
-  "ic",
   "soic",
-  "4.1v",
-  "smd",
-  "soic-8",
-  "reference voltage",
-  "soic-8_3.9x4.9mm_p1.27mm",
-  "adr444xrz",
-  "lt1461axs8-4",
-  "lt1461bxs8-4",
-  "lt1461cxs8-4",
-  "lt1461dxs8-4",
   "reference",
   "voltage",
   "so",
@@ -38,9 +27,12 @@
   "9mm",
   "p1",
   "27mm",
+  "ic",
   "1v",
   "noise",
-  "low"
+  "low",
+  "100ma",
+  "596v"
  ],
  "facts": {
   "package_family": "SOIC",
@@ -63,7 +55,7 @@
   "tier_counts": {
    "A": 11
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -120,6 +112,6 @@
   "kicad-symbols/Reference_Voltage/REF5040ID",
   "kicad-symbols/Reference_Voltage/ADR4540"
  ],
- "embedding_text": "ic.soic.4-1v | IC | Cluster of 11 tier-A surface-mount 4.1V IC parts in SOIC-8 (3.9x4.9mm, 1.27mm pitch) footprints. | ic soic 4.1v smd soic-8 reference voltage soic-8_3.9x4.9mm_p1.27mm adr444xrz lt1461axs8-4 lt1461bxs8-4 lt1461cxs8-4 lt1461dxs8-4 reference voltage so 096v precision 9x4 9mm p1 27mm 1v noise low | SOIC | 4.1V",
+ "embedding_text": "ic.soic.4-1v | IC | 11 ic parts for 4.1V using SOIC footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | soic reference voltage so 096v precision 9x4 9mm p1 27mm ic 1v noise low 100ma 596v | SOIC | 4.1V",
  "class": "ic"
 }

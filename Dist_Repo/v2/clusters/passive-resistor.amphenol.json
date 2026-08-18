@@ -6,31 +6,21 @@
   "Passive",
   "Resistor"
  ],
- "description": "Cluster of 6 passive resistor parts using AMPHENOL package family footprints with SMD, through-hole, or unspecified mounting types.",
+ "description": "6 passive resistor parts using AMPHENOL footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Verify exact footprint match such as AMPHENOL 031-5640, 901-10510-1, or 901-10510-2.",
-  "Check whether SMD or through-hole mounting is required.",
-  "Select based on available quality tier B or tier C entries."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a AMPHENOL land pattern is intended."
  ],
  "avoid_when": [
-  "A package family or footprint other than AMPHENOL is required.",
-  "Tier A verified parts are required, as this cluster only contains tier B and C entries.",
-  "The design requires a mounting type other than SMD or through-hole."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than AMPHENOL."
  ],
  "keywords": [
   "amphenol",
   "passive",
   "resistor",
-  "smd",
-  "through_hole",
-  "031-5640",
-  "901-10510-1",
-  "901-10510-2",
-  "passive resistor",
-  "amphenol footprint",
-  "tier b",
-  "dist-legacy",
-  "celestial-altium-library",
   "two",
   "pin",
   "mm",
@@ -41,7 +31,9 @@
   "pad",
   "pitch",
   "connector",
-  "surface"
+  "surface",
+  "mount",
+  "terminal"
  ],
  "facts": {
   "package_family": "AMPHENOL",
@@ -69,7 +61,7 @@
    "B": 3,
    "C": 3
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -105,6 +97,6 @@
   "celestial-altium-library/AMPHENOL 901-10510-1/AMPHENOL_901-10510-1",
   "celestial-altium-library/AMPHENOL 901-10510-2/AMPHENOL_901-10510-2"
  ],
- "embedding_text": "passive-resistor.amphenol | Passive Resistor | Cluster of 6 passive resistor parts using AMPHENOL package family footprints with SMD, through-hole, or unspecified mounting types. | amphenol passive resistor smd through_hole 031-5640 901-10510-1 901-10510-2 passive resistor amphenol footprint tier b dist-legacy celestial-altium-library two pin mm pins component in footprint pad pitch connector surface | AMPHENOL | ",
+ "embedding_text": "passive-resistor.amphenol | Passive Resistor | 6 passive resistor parts using AMPHENOL footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | amphenol passive resistor two pin mm pins component in footprint pad pitch connector surface mount terminal | AMPHENOL | ",
  "class": "passive.resistor"
 }

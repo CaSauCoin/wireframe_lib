@@ -6,31 +6,25 @@
   "Discrete",
   "Diode"
  ],
- "description": "Discrete diode cluster containing 16 through-hole parts mapped to MagneticBuzzer package footprints.",
+ "description": "16 discrete diode parts using MagneticBuzzer footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Verify the specific footprint match among through-hole MagneticBuzzer variants.",
-  "Check part quality tier and source data before design integration.",
-  "Confirm the board layout specifically requires a MagneticBuzzer footprint."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a MagneticBuzzer land pattern is intended."
  ],
  "avoid_when": [
-  "Surface mount technology is required instead of through-hole mounting.",
-  "The board layout requires a package family other than MagneticBuzzer.",
-  "Part details or electrical specifications are unverified."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than MagneticBuzzer."
  ],
  "keywords": [
+  "magneticbuzzer",
+  "starmicronics",
   "discrete",
   "diode",
-  "magneticbuzzer",
-  "through_hole",
-  "cui",
-  "kingstate",
-  "starmicronics",
-  "kobitone",
-  "pui",
+  "datasheet",
   "qmb",
   "hmb",
-  "qmx",
-  "datasheet",
   "through",
   "hole",
   "pad",
@@ -71,7 +65,7 @@
   "tier_counts": {
    "C": 16
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
@@ -92,6 +86,6 @@
   "dist-legacy/MagneticBuzzer_StarMicronics_TMX-F",
   "dist-legacy/MagneticBuzzer_StarMicronics_TMX-H"
  ],
- "embedding_text": "discrete-diode.magneticbuzzer | Discrete Diode | Discrete diode cluster containing 16 through-hole parts mapped to MagneticBuzzer package footprints. | discrete diode magneticbuzzer through_hole cui kingstate starmicronics kobitone pui qmb hmb qmx datasheet through hole pad mm pitch pins package pdf buzzer | MagneticBuzzer | ",
+ "embedding_text": "discrete-diode.magneticbuzzer | Discrete Diode | 16 discrete diode parts using MagneticBuzzer footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | magneticbuzzer starmicronics discrete diode datasheet qmb hmb through hole pad mm pitch pins package pdf buzzer | MagneticBuzzer | ",
  "class": "discrete.diode"
 }

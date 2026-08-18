@@ -7,41 +7,34 @@
   "Interface",
   "Ethernet"
  ],
- "description": "Ethernet interface integrated circuits surface-mounted in QFN package variants with exposed thermal pads, containing 17 KiCad symbol entries.",
+ "description": "17 ic interface ethernet parts using QFN footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when designing Ethernet interfaces using surface-mount QFN package family components.",
-  "Choose based on specific pin counts, pitch, body size, and exposed pad layout requirements.",
-  "Prefer tier A entries for higher quality reviewed parts."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a QFN land pattern is intended."
  ],
  "avoid_when": [
-  "Avoid when the design requires through-hole or non-QFN package configurations.",
-  "Do not use if Ethernet interface IC functionality is not required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than QFN."
  ],
  "keywords": [
   "qfn",
-  "vqfn",
-  "wqfn",
   "ethernet",
   "interface",
-  "ic",
-  "smd",
-  "kicad-symbols",
-  "enc28j60x-ml",
-  "ksz8081rna",
-  "ksz8081rnd",
-  "ksz9031rnxca",
-  "ksz9563rnx",
   "rmii",
   "phy",
   "1ep",
   "p0",
   "nolead",
+  "ic",
   "5mm",
   "with",
   "rgmii",
   "mii",
   "gigabit",
-  "switch"
+  "switch",
+  "eth"
  ],
  "facts": {
   "package_family": "QFN",
@@ -74,7 +67,7 @@
    "A": 8,
    "B": 9
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -137,6 +130,6 @@
   "kicad-symbols/Interface_Ethernet/W6100-Q",
   "kicad-symbols/Interface_Ethernet/WGI210AT"
  ],
- "embedding_text": "ic-interface-ethernet.qfn | IC Interface Ethernet | Ethernet interface integrated circuits surface-mounted in QFN package variants with exposed thermal pads, containing 17 KiCad symbol entries. | qfn vqfn wqfn ethernet interface ic smd kicad-symbols enc28j60x-ml ksz8081rna ksz8081rnd ksz9031rnxca ksz9563rnx rmii phy 1ep p0 nolead 5mm with rgmii mii gigabit switch | QFN | ",
+ "embedding_text": "ic-interface-ethernet.qfn | IC Interface Ethernet | 17 ic interface ethernet parts using QFN footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | qfn ethernet interface rmii phy 1ep p0 nolead ic 5mm with rgmii mii gigabit switch eth | QFN | ",
  "class": "ic.interface.ethernet"
 }

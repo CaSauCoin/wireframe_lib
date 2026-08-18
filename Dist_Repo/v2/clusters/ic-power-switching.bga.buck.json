@@ -7,33 +7,23 @@
   "Power",
   "Switching Regulator"
  ],
- "description": "Buck switching power regulator IC cluster in surface-mount BGA packaging with Tier A KiCad symbol entries.",
+ "description": "3 ic power switching regulator parts for buck using BGA footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when requiring a buck switching regulator in a surface-mount BGA package.",
-  "Verify footprint compatibility with Texas_DSBGA-6_0.757x1.01mm_Layout2x3_P0.35mm.",
-  "Choose between specific TPS62843x variants including TPS628436YKA, TPS628437YKA, and TPS628438YKA."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a BGA land pattern is intended."
  ],
  "avoid_when": [
-  "Avoid if a package family other than BGA is required.",
-  "Avoid when non-buck switching topologies are required.",
-  "Avoid if PCB assembly processes cannot support a 0.35mm pitch DSBGA package."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than BGA."
  ],
  "keywords": [
-  "ic",
-  "power switching",
-  "switching regulator",
-  "buck",
-  "bga",
-  "smd",
-  "texas dsbga-6",
-  "tps628436yka",
-  "tps628437yka",
-  "tps628438yka",
-  "kicad-symbols",
-  "regulator switching",
   "regulator",
   "switching",
+  "bga",
   "ti",
+  "buck",
   "600ma",
   "step",
   "down",
@@ -42,7 +32,9 @@
   "dcs",
   "control",
   "ultra",
-  "low"
+  "low",
+  "iq",
+  "vin"
  ],
  "facts": {
   "package_family": "BGA",
@@ -65,7 +57,7 @@
   "tier_counts": {
    "A": 3
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -98,6 +90,6 @@
   "kicad-symbols/Regulator_Switching/TPS628437YKA",
   "kicad-symbols/Regulator_Switching/TPS628438YKA"
  ],
- "embedding_text": "ic-power-switching.bga.buck | IC Power Switching Regulator | Buck switching power regulator IC cluster in surface-mount BGA packaging with Tier A KiCad symbol entries. | ic power switching switching regulator buck bga smd texas dsbga-6 tps628436yka tps628437yka tps628438yka kicad-symbols regulator switching regulator switching ti 600ma step down converter with dcs control ultra low | BGA | buck",
+ "embedding_text": "ic-power-switching.bga.buck | IC Power Switching Regulator | 3 ic power switching regulator parts for buck using BGA footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | regulator switching bga ti buck 600ma step down converter with dcs control ultra low iq vin | BGA | buck",
  "class": "ic.power.switching"
 }

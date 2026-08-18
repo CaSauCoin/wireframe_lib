@@ -6,42 +6,34 @@
   "Discrete",
   "FET"
  ],
- "description": "Cluster of 8 surface-mount discrete FET parts with a 100V rating in the DirectFET package family across DirectFET_MN, DirectFET_SH, DirectFET_L8, and DirectFET_SB footprints.",
+ "description": "8 discrete fet parts for 100V using DirectFET footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when requiring a 100V surface-mount discrete FET in a DirectFET package.",
-  "Match the specific DirectFET footprint variant such as DirectFET_MN, DirectFET_SH, DirectFET_L8, or DirectFET_SB.",
-  "Prefer tier A parts when choosing among KiCad symbol entries."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a DirectFET land pattern is intended."
  ],
  "avoid_when": [
-  "The board layout requires a package family other than DirectFET.",
-  "A voltage rating other than 100V or a non-surface-mount part is required.",
-  "The required footprint variant differs from DirectFET_MN, DirectFET_SH, DirectFET_L8, or DirectFET_SB."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than DirectFET."
  ],
  "keywords": [
-  "discrete",
-  "fet",
-  "discrete.fet",
-  "100v",
   "directfet",
-  "smd",
-  "directfet_mn",
-  "directfet_sh",
-  "directfet_l8",
-  "directfet_sb",
-  "bsb056n10nn3",
-  "irf6644",
-  "irf6655",
-  "irf6662",
-  "irf6665",
-  "kicad-symbols",
   "mosfet",
+  "fet",
+  "100v",
   "channel",
   "mn",
   "transistor",
   "id",
   "vds",
   "rds",
-  "infineon"
+  "infineon",
+  "discrete",
+  "sh",
+  "62mohm",
+  "l8",
+  "sb"
  ],
  "facts": {
   "package_family": "DirectFET",
@@ -68,7 +60,7 @@
    "A": 7,
    "B": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -122,6 +114,6 @@
   "kicad-symbols/Transistor_FET/IRF7769L1",
   "kicad-symbols/Transistor_FET/IRF7665S2"
  ],
- "embedding_text": "discrete-fet.directfet.100v | Discrete FET | Cluster of 8 surface-mount discrete FET parts with a 100V rating in the DirectFET package family across DirectFET_MN, DirectFET_SH, DirectFET_L8, and DirectFET_SB footprints. | discrete fet discrete.fet 100v directfet smd directfet_mn directfet_sh directfet_l8 directfet_sb bsb056n10nn3 irf6644 irf6655 irf6662 irf6665 kicad-symbols mosfet channel mn transistor id vds rds infineon | DirectFET | 100V",
+ "embedding_text": "discrete-fet.directfet.100v | Discrete FET | 8 discrete fet parts for 100V using DirectFET footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | directfet mosfet fet 100v channel mn transistor id vds rds infineon discrete sh 62mohm l8 sb | DirectFET | 100V",
  "class": "discrete.fet"
 }

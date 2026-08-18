@@ -6,42 +6,34 @@
   "IC",
   "Sensor"
  ],
- "description": "Honeywell IC sensor cluster containing 5 through-hole current and pressure sensor symbols using Honeywell_CSLW and Honeywell_ABPDAN footprints.",
+ "description": "5 ic sensor parts using Honeywell footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Require through-hole Honeywell current or pressure sensors.",
-  "Match layout requirements to Honeywell_CSLW or Honeywell_ABPDAN footprints.",
-  "Select for KiCad symbol library Tier-B Honeywell sensor parts."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a Honeywell land pattern is intended."
  ],
  "avoid_when": [
-  "Surface-mount (SMD) sensor packages are needed.",
-  "Footprints other than Honeywell_CSLW or Honeywell_ABPDAN are required.",
-  "Validated Tier-A parts are strictly required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than Honeywell."
  ],
  "keywords": [
-  "ic sensor",
-  "honeywell",
-  "through_hole",
-  "honeywell_cslw",
-  "honeywell_abpdan",
-  "cslw",
-  "abp",
-  "sensor_current",
-  "sensor_pressure",
-  "cslw6b1",
-  "cslw6b5",
-  "abpxxxxxxxxxa",
   "sensor",
   "current",
+  "honeywell",
   "miniature",
   "wired",
   "open",
   "loop",
   "ic",
   "sensors",
+  "cslw",
   "hall",
   "pressure",
   "to",
-  "psi"
+  "psi",
+  "cslw6b1",
+  "1a"
  ],
  "facts": {
   "package_family": "Honeywell",
@@ -63,7 +55,7 @@
   "tier_counts": {
    "B": 5
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -114,6 +106,6 @@
   "kicad-symbols/Sensor_Current/CSLW6B5",
   "kicad-symbols/Sensor_Pressure/ABPxxxxxxxxxA"
  ],
- "embedding_text": "ic-sensor.honeywell | IC Sensor | Honeywell IC sensor cluster containing 5 through-hole current and pressure sensor symbols using Honeywell_CSLW and Honeywell_ABPDAN footprints. | ic sensor honeywell through_hole honeywell_cslw honeywell_abpdan cslw abp sensor_current sensor_pressure cslw6b1 cslw6b5 abpxxxxxxxxxa sensor current miniature wired open loop ic sensors hall pressure to psi | Honeywell | ",
+ "embedding_text": "ic-sensor.honeywell | IC Sensor | 5 ic sensor parts using Honeywell footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | sensor current honeywell miniature wired open loop ic sensors cslw hall pressure to psi cslw6b1 1a | Honeywell | ",
  "class": "ic.sensor"
 }

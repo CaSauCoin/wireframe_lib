@@ -6,36 +6,22 @@
   "Discrete",
   "Diode"
  ],
- "description": "Discrete diode parts (TAIYO YUDEN inductor/ferrite series) mapped under a diode cluster using TAIYO footprints; pick by exact part name and footprint match, not by electrical rating since none is stated.",
+ "description": "8 discrete diode parts using TAIYO footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Match the exact TAIYO YUDEN part name (e.g. LSXND4040, MAMK2520T1R0M, NR1005, NR4018, NR8040) to your BOM entry",
-  "All 8 parts are tier B with score 90 — no tier A entries to prefer",
-  "Confirm the footprint is genuinely TAIYO before layout since mount type is unknown",
-  "Verify part identity carefully — series naming (LSXND, NR, MAMK) suggests these may not all be simple two-terminal diodes"
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a TAIYO land pattern is intended."
  ],
  "avoid_when": [
-  "No electrical rating (voltage, current, speed, tolerance) is available from cluster facts",
-  "The required footprint or mount type is not confirmed as TAIYO",
-  "You need a tier A or datasheet-verified part — only tier B generated entries exist here",
-  "Part identity is uncertain given the source is legacy distributor data only"
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than TAIYO."
  ],
  "keywords": [
   "taiyo",
-  "taiyo yuden",
   "diode",
-  "discrete diode",
-  "lsxnd4040",
-  "mamk2520t1r0m",
-  "nr1005",
-  "nr4018",
-  "nr8040",
-  "dist-legacy",
-  "tier b",
-  "package taiyo",
-  "footprint taiyo",
-  "discrete",
-  "unknown mount",
   "yuden",
+  "discrete",
   "two",
   "terminal",
   "component",
@@ -43,7 +29,11 @@
   "anode",
   "and",
   "cathode",
-  "pins"
+  "pins",
+  "pin",
+  "lsxnd4040",
+  "mamk2520t1r0m",
+  "nr1005"
  ],
  "facts": {
   "package_family": "TAIYO",
@@ -64,7 +54,7 @@
   "tier_counts": {
    "B": 8
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -118,6 +108,6 @@
   "dist-legacy/TAIYO YUDEN NRS8030",
   "dist-legacy/TAIYO YUDEN NRS8040"
  ],
- "embedding_text": "discrete-diode.taiyo | Discrete Diode | Discrete diode parts (TAIYO YUDEN inductor/ferrite series) mapped under a diode cluster using TAIYO footprints; pick by exact part name and footprint match, not by electrical rating since none is stated. | taiyo taiyo yuden diode discrete diode lsxnd4040 mamk2520t1r0m nr1005 nr4018 nr8040 dist-legacy tier b package taiyo footprint taiyo discrete unknown mount yuden two terminal component with anode and cathode pins | TAIYO | ",
+ "embedding_text": "discrete-diode.taiyo | Discrete Diode | 8 discrete diode parts using TAIYO footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | taiyo diode yuden discrete two terminal component with anode and cathode pins pin lsxnd4040 mamk2520t1r0m nr1005 | TAIYO | ",
  "class": "discrete.diode"
 }

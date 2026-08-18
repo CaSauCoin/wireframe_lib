@@ -6,29 +6,21 @@
   "Passive",
   "Resistor"
  ],
- "description": "Passive resistor cluster containing 3 tier C parts in the BTH2032 package family with SMD and through-hole footprints.",
+ "description": "3 passive resistor parts using BTH2032 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select based on whether SMD (BTH2032_SMD1, BTH2032_SMD2) or through-hole BTH2032 mounting is required.",
-  "Verify footprint geometry against the chilaboard-altium-library source entry.",
-  "Check part details given all entries are currently tier C quality."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a BTH2032 land pattern is intended."
  ],
  "avoid_when": [
-  "A package family other than BTH2032 is required.",
-  "Higher quality tier or planner-visible parts are strictly required.",
-  "Footprints other than BTH2032, BTH2032_SMD1, or BTH2032_SMD2 are needed."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than BTH2032."
  ],
  "keywords": [
   "bth2032",
-  "bth2032_smd1",
-  "bth2032_smd2",
   "passive",
   "resistor",
-  "passive resistor",
-  "smd",
-  "through_hole",
-  "through hole",
-  "chilaboard-altium-library",
-  "tier c",
   "smd2",
   "smd1",
   "pad",
@@ -62,7 +54,7 @@
   "tier_counts": {
    "C": 3
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
@@ -70,6 +62,6 @@
   "chilaboard-altium-library/BTH2032_SMD2/BTH2032_SMD2",
   "chilaboard-altium-library/BTH2032_SMD1/BTH2032_SMD1"
  ],
- "embedding_text": "passive-resistor.bth2032 | Passive Resistor | Passive resistor cluster containing 3 tier C parts in the BTH2032 package family with SMD and through-hole footprints. | bth2032 bth2032_smd1 bth2032_smd2 passive resistor passive resistor smd through_hole through hole chilaboard-altium-library tier c smd2 smd1 pad mm pitch pins surface mount through hole | BTH2032 | ",
+ "embedding_text": "passive-resistor.bth2032 | Passive Resistor | 3 passive resistor parts using BTH2032 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | bth2032 passive resistor smd2 smd1 pad mm pitch pins surface mount through hole | BTH2032 | ",
  "class": "passive.resistor"
 }

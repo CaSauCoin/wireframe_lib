@@ -6,18 +6,16 @@
   "Discrete",
   "Diode"
  ],
- "description": "Cluster of 156 discrete diode parts on the 33V facet using D-family footprints (SMA, SMB, SMC, MiniMELF, SOD-123/123F/323, DO-41, DO-35), including zener- and TVS-labeled footprint variants for SMD or through-hole mounting.",
+ "description": "156 discrete diode parts for 33V using D footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Match the exact footprint (SMA, SMB, SMC, MiniMELF, SOD-123/323, DO-41, DO-35) to the intended PCB land pattern",
-  "Prefer tier A parts (145 of 156, score 100) over tier B",
-  "Distinguish zener-footprint vs TVS-footprint variants by part name and footprint suffix before selecting",
-  "Confirm mount type (smd vs through_hole) matches the assembly process"
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a D land pattern is intended."
  ],
  "avoid_when": [
-  "Required footprint is outside the D family list (SMA/SMB/SMC/MELF/SOD/DO-41/DO-35)",
-  "Only a tier B entry is available and rating/datasheet cannot be confirmed",
-  "The design needs a voltage facet other than 33V",
-  "Symbol-footprint pairing needs verification (review_status is generated, not reviewed)"
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than D."
  ],
  "keywords": [
   "diode",
@@ -25,25 +23,17 @@
   "zener",
   "tvs",
   "discrete",
-  "d package",
-  "sma",
-  "smb",
-  "smc",
-  "minimelf",
-  "melf",
-  "sod-123",
-  "sod-323",
-  "sod-123f",
-  "do-41",
-  "do-35",
-  "smd",
-  "through hole",
   "akl",
   "do",
   "alternate",
   "kicad",
   "library",
-  "sod"
+  "sod",
+  "horizontal",
+  "unidirectional",
+  "bidirectional",
+  "sma",
+  "smb"
  ],
  "facts": {
   "package_family": "D",
@@ -81,7 +71,7 @@
    "A": 145,
    "B": 11
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -283,6 +273,6 @@
   "JLCPCB-Kicad-Library/JLCPCB-Diodes/TVS-Bi,SMCJ33CA",
   "JLCPCB-Kicad-Library/JLCPCB-Diodes/TVS-Bi,SMF33CA"
  ],
- "embedding_text": "discrete-diode.d.33v | Discrete Diode | Cluster of 156 discrete diode parts on the 33V facet using D-family footprints (SMA, SMB, SMC, MiniMELF, SOD-123/123F/323, DO-41, DO-35), including zener- and TVS-labeled footprint variants for SMD or through-hole mounting. | diode 33v zener tvs discrete d package sma smb smc minimelf melf sod-123 sod-323 sod-123f do-41 do-35 smd through hole akl do alternate kicad library sod | D | 33V",
+ "embedding_text": "discrete-diode.d.33v | Discrete Diode | 156 discrete diode parts for 33V using D footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | diode 33v zener tvs discrete akl do alternate kicad library sod horizontal unidirectional bidirectional sma smb | D | 33V",
  "class": "discrete.diode"
 }

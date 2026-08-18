@@ -5,44 +5,34 @@
  "category_path": [
   "Connector"
  ],
- "description": "Through-hole and SMD DIP-style sockets and connectors across 6 to 40 pin counts, spanning 7.62mm and 15.24mm row spacing.",
+ "description": "179 connector parts using DIP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Match pin count to the exact footprint (e.g. 6, 8, 14, 16, 18, 20, 24, 28, 32, 40).",
-  "Confirm row spacing: 7.62mm standard-width vs 15.24mm wide-body for the same pin count.",
-  "Prefer tier B entries over tier C for higher confidence in footprint accuracy.",
-  "Verify mount type (through-hole vs SMD) matches the intended board process."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a DIP land pattern is intended."
  ],
  "avoid_when": [
-  "The design needs a package other than DIP.",
-  "The required pin count has no matching footprint in this cluster.",
-  "Electrical ratings or lifecycle status are needed but not stated by the selected part.",
-  "The symbol-footprint pairing is unverified or flagged for review."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than DIP."
  ],
  "keywords": [
   "dip",
-  "dip socket",
-  "ic socket",
-  "through hole connector",
-  "smd socket",
-  "7.62mm",
-  "15.24mm",
-  "dip-6",
-  "dip-8",
-  "dip-14",
-  "dip-16",
-  "dip-18",
-  "dip-20",
-  "dip-24",
-  "dip-28",
-  "dip-32",
-  "dip-40",
-  "wide body dip",
-  "connector",
   "socket",
   "62mm",
   "longpads",
   "smdsocket",
-  "w7"
+  "connector",
+  "w7",
+  "package",
+  "hole",
+  "24mm",
+  "mm",
+  "smallpads",
+  "pad",
+  "pitch",
+  "pins",
+  "w15"
  ],
  "facts": {
   "package_family": "DIP",
@@ -79,7 +69,7 @@
    "B": 12,
    "C": 167
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -304,6 +294,6 @@
   "dist-legacy/DIP_Socket-40_W22.1mm_W22.86mm_W25.4mm_W27.94mm_W28.7mm_3M_240-3639-00-0602J",
   "dist-legacy/DIP_Socket-42_W11.9mm_W12.7mm_W15.24mm_W17.78mm_W18.5mm_3M_242-1281-00-0602J"
  ],
- "embedding_text": "connector.dip | Connector | Through-hole and SMD DIP-style sockets and connectors across 6 to 40 pin counts, spanning 7.62mm and 15.24mm row spacing. | dip dip socket ic socket through hole connector smd socket 7.62mm 15.24mm dip-6 dip-8 dip-14 dip-16 dip-18 dip-20 dip-24 dip-28 dip-32 dip-40 wide body dip connector socket 62mm longpads smdsocket w7 | DIP | ",
+ "embedding_text": "connector.dip | Connector | 179 connector parts using DIP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | dip socket 62mm longpads smdsocket connector w7 package hole 24mm mm smallpads pad pitch pins w15 | DIP | ",
  "class": "connector"
 }

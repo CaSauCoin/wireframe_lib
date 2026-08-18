@@ -6,28 +6,22 @@
   "Discrete",
   "Transistor"
  ],
- "description": "Discrete transistor cluster utilizing the surface-mount DZENLS package family and DZENLS_3_4X4 footprint.",
+ "description": "1 discrete transistor parts using DZENLS footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Use when designing with discrete transistors in a DZENLS package family.",
-  "Verify compatibility with the DZENLS_3_4X4 surface-mount footprint.",
-  "Confirm library source quality and pin mapping prior to PCB placement."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a DZENLS land pattern is intended."
  ],
  "avoid_when": [
-  "The design requires non-SMD or through-hole mounting.",
-  "A package family other than DZENLS is specified.",
-  "The required footprint differs from DZENLS_3_4X4."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than DZENLS."
  ],
  "keywords": [
+  "dzenls",
+  "4x4",
   "discrete",
   "transistor",
-  "dzenls",
-  "dzenls_3_4x4",
-  "smd",
-  "surface mount",
-  "discrete transistor",
-  "package dzenls",
-  "chilaboard altium library",
-  "4x4",
   "surface",
   "mount",
   "pad",
@@ -54,12 +48,12 @@
   "tier_counts": {
    "C": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
   "chilaboard-altium-library/DZENLS_3_4X4/DZENLS_3_4X4"
  ],
- "embedding_text": "discrete-transistor.dzenls | Discrete Transistor | Discrete transistor cluster utilizing the surface-mount DZENLS package family and DZENLS_3_4X4 footprint. | discrete transistor dzenls dzenls_3_4x4 smd surface mount discrete transistor package dzenls chilaboard altium library 4x4 surface mount pad mm pitch pins | DZENLS | ",
+ "embedding_text": "discrete-transistor.dzenls | Discrete Transistor | 1 discrete transistor parts using DZENLS footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | dzenls 4x4 discrete transistor surface mount pad mm pitch pins | DZENLS | ",
  "class": "discrete.transistor"
 }

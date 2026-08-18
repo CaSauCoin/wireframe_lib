@@ -6,36 +6,30 @@
   "Discrete",
   "Diode"
  ],
- "description": "This cluster contains SMD discrete diodes rated for 2.2V in 0603 surface-mount footprints such as D_0603_1608Metric from Alternate-KiCad-Library.",
+ "description": "1 discrete diode parts for 2.2V using 0603 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select for surface-mount 2.2V discrete diode applications requiring an 0603 footprint.",
-  "Verify requirement matches D_0603_1608Metric land pattern and tier A quality source.",
-  "Choose when sourcing from Alternate-KiCad-Library representative parts like CDZ55C2V2T."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a 0603 land pattern is intended."
  ],
  "avoid_when": [
-  "The design requires through-hole mounting or a package size other than 0603.",
-  "Voltage requirements differ from 2.2V.",
-  "Components outside the Alternate-KiCad-Library footprint specification are needed."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than 0603."
  ],
  "keywords": [
-  "discrete diode",
   "diode",
-  "2.2v",
-  "0603",
-  "smd",
-  "d_0603_1608metric",
-  "cdz55c2v2t",
-  "alternate-kicad-library",
-  "discrete",
-  "1608metric",
   "zener",
   "2v",
+  "cdz55c2v2t",
   "akl",
   "200mw",
   "alternate",
   "kicad",
   "library",
-  "cdz55t"
+  "1608metric",
+  "cdz55t",
+  "discrete"
  ],
  "facts": {
   "package_family": "0603",
@@ -58,7 +52,7 @@
   "tier_counts": {
    "A": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -73,6 +67,6 @@
  "part_ids": [
   "Alternate-KiCad-Library/Diode_Zener_AKL/CDZ55C2V2T"
  ],
- "embedding_text": "discrete-diode.0603.2-2v | Discrete Diode | This cluster contains SMD discrete diodes rated for 2.2V in 0603 surface-mount footprints such as D_0603_1608Metric from Alternate-KiCad-Library. | discrete diode diode 2.2v 0603 smd d_0603_1608metric cdz55c2v2t alternate-kicad-library discrete 1608metric zener 2v akl 200mw alternate kicad library cdz55t | 0603 | 2.2V",
+ "embedding_text": "discrete-diode.0603.2-2v | Discrete Diode | 1 discrete diode parts for 2.2V using 0603 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | diode zener 2v cdz55c2v2t akl 200mw alternate kicad library 1608metric cdz55t discrete | 0603 | 2.2V",
  "class": "discrete.diode"
 }

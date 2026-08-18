@@ -6,42 +6,34 @@
   "IC",
   "Analog"
  ],
- "description": "This cluster contains 9 surface-mount 3.3V analog IC parts featuring SPI interfaces in QFN package footprint TQFN-28-1EP_5x5mm_P0.5mm_EP3.25x3.25mm.",
+ "description": "9 ic analog parts for 3.3V, SPI using QFN footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when requiring 3.3V analog ICs with an SPI interface.",
-  "Verify compatibility with the TQFN-28-1EP_5x5mm_P0.5mm_EP3.25x3.25mm SMD footprint.",
-  "Choose among Tier B parts sourced from KiCad symbols."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a QFN land pattern is intended."
  ],
  "avoid_when": [
-  "The design requires a package family other than QFN.",
-  "An operating voltage other than 3.3V is required.",
-  "The circuit requires a communication interface other than SPI."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than QFN."
  ],
  "keywords": [
-  "ic",
-  "analog",
-  "ic.analog",
-  "3.3v",
-  "spi",
-  "qfn",
-  "smd",
-  "tqfn",
-  "tqfn-28-1ep_5x5mm_p0.5mm_ep3.25x3.25mm",
-  "kicad-symbols",
-  "max11120xti",
-  "max11121xti",
-  "max11122xti",
-  "max11123xti",
-  "max11124xti",
   "adc",
+  "analog",
   "bit",
+  "qfn",
+  "tqfn",
   "3v",
+  "spi",
   "channel",
   "5mhz",
   "full",
   "linear",
   "bandwidth",
-  "external"
+  "external",
+  "reference",
+  "high",
+  "speed"
  ],
  "facts": {
   "package_family": "QFN",
@@ -65,7 +57,7 @@
   "tier_counts": {
    "B": 9
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -120,6 +112,6 @@
   "kicad-symbols/Analog_ADC/MAX11127xTI",
   "kicad-symbols/Analog_ADC/MAX11128xTI"
  ],
- "embedding_text": "ic-analog.qfn.3v3.spi | IC Analog | This cluster contains 9 surface-mount 3.3V analog IC parts featuring SPI interfaces in QFN package footprint TQFN-28-1EP_5x5mm_P0.5mm_EP3.25x3.25mm. | ic analog ic.analog 3.3v spi qfn smd tqfn tqfn-28-1ep_5x5mm_p0.5mm_ep3.25x3.25mm kicad-symbols max11120xti max11121xti max11122xti max11123xti max11124xti adc bit 3v channel 5mhz full linear bandwidth external | QFN | 3.3V SPI",
+ "embedding_text": "ic-analog.qfn.3v3.spi | IC Analog | 9 ic analog parts for 3.3V, SPI using QFN footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | adc analog bit qfn tqfn 3v spi channel 5mhz full linear bandwidth external reference high speed | QFN | 3.3V SPI",
  "class": "ic.analog"
 }

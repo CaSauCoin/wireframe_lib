@@ -7,34 +7,26 @@
   "Interface",
   "Serial"
  ],
- "description": "Serial interface IC cluster featuring surface-mount QFN footprints supporting I2C, SPI, and UART/serial interfaces.",
+ "description": "5 ic interface serial parts for I2C, SPI, UART/serial using QFN footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select based on required serial interface protocol such as I2C, SPI, or UART/serial.",
-  "Choose the matching footprint variant among HVQFN-24, VQFN-32, or TQFN-48.",
-  "Prefer tier A parts like MAX14830 when available."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a QFN land pattern is intended."
  ],
  "avoid_when": [
-  "Through-hole components are required instead of surface-mount devices.",
-  "The target design requires package families other than QFN.",
-  "The application does not use I2C, SPI, or UART serial interfaces."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than QFN."
  ],
  "keywords": [
-  "ic",
+  "uart",
   "interface",
-  "serial",
   "i2c",
   "spi",
-  "uart",
-  "qfn",
-  "smd",
-  "hvqfn",
-  "vqfn",
-  "tqfn",
-  "max14830",
-  "sc16is750xbs",
-  "sc16is752ibs",
   "irda",
   "sir",
+  "serial",
+  "hvqfn",
   "5mm",
   "with",
   "fifos",
@@ -70,7 +62,7 @@
    "A": 1,
    "B": 4
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -121,6 +113,6 @@
   "kicad-symbols/Interface_UART/SC16IS760xBS",
   "kicad-symbols/Interface_UART/SC16IS762IBS"
  ],
- "embedding_text": "ic-interface-serial.qfn.i2c.spi | IC Interface Serial | Serial interface IC cluster featuring surface-mount QFN footprints supporting I2C, SPI, and UART/serial interfaces. | ic interface serial i2c spi uart qfn smd hvqfn vqfn tqfn max14830 sc16is750xbs sc16is752ibs irda sir 5mm with fifos built in support 1ep p0 | QFN | I2C SPI UART/serial",
+ "embedding_text": "ic-interface-serial.qfn.i2c.spi | IC Interface Serial | 5 ic interface serial parts for I2C, SPI, UART/serial using QFN footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | uart interface i2c spi irda sir serial hvqfn 5mm with fifos built in support 1ep p0 | QFN | I2C SPI UART/serial",
  "class": "ic.interface.serial"
 }

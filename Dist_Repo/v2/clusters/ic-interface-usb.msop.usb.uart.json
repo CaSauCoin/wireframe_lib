@@ -7,39 +7,34 @@
   "Interface",
   "USB"
  ],
- "description": "Surface-mount USB interface IC cluster in MSOP packaging supporting USB and UART/serial functions.",
+ "description": "2 ic interface usb parts for USB, UART/serial using MSOP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Require surface-mount USB and UART/serial interface ICs.",
-  "Target designs using the MSOP-10_3x3mm_P0.5mm footprint.",
-  "Select from Tier A representative parts CH340E or FSUSB42MUX."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a MSOP land pattern is intended."
  ],
  "avoid_when": [
-  "Through-hole mounting is required instead of SMD.",
-  "Footprints other than MSOP-10_3x3mm_P0.5mm are needed.",
-  "Interface functionality other than USB or UART/serial is required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than MSOP."
  ],
  "keywords": [
-  "ic",
-  "interface",
   "usb",
-  "uart",
-  "serial",
   "msop",
-  "msop-10",
-  "smd",
-  "ch340e",
-  "fsusb42mux",
-  "kicad-symbols",
-  "msop-10_3x3mm_p0.5mm",
+  "uart",
+  "interface",
+  "serial",
   "3x3mm",
   "p0",
   "5mm",
   "converter",
   "so",
   "tssop",
+  "ic",
   "high",
   "speed",
-  "switch"
+  "switch",
+  "ch340e"
  ],
  "facts": {
   "package_family": "MSOP",
@@ -63,7 +58,7 @@
   "tier_counts": {
    "A": 2
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -87,6 +82,6 @@
   "kicad-symbols/Interface_USB/CH340E",
   "kicad-symbols/Interface_USB/FSUSB42MUX"
  ],
- "embedding_text": "ic-interface-usb.msop.usb.uart | IC Interface USB | Surface-mount USB interface IC cluster in MSOP packaging supporting USB and UART/serial functions. | ic interface usb uart serial msop msop-10 smd ch340e fsusb42mux kicad-symbols msop-10_3x3mm_p0.5mm 3x3mm p0 5mm converter so tssop high speed switch | MSOP | USB UART/serial",
+ "embedding_text": "ic-interface-usb.msop.usb.uart | IC Interface USB | 2 ic interface usb parts for USB, UART/serial using MSOP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | usb msop uart interface serial 3x3mm p0 5mm converter so tssop ic high speed switch ch340e | MSOP | USB UART/serial",
  "class": "ic.interface.usb"
 }

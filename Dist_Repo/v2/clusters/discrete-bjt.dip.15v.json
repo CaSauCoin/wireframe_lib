@@ -6,43 +6,34 @@
   "Discrete",
   "BJT"
  ],
- "description": "Cluster of 6 discrete BJT parts in the 15V facet using DIP-14 through-hole footprints (DIP-14_W7.62mm and DIP-14_W7.62mm_LongPads), all tier A, sourced from Alternate-KiCad-Library.",
+ "description": "6 discrete bjt parts for 15V using DIP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Match the exact footprint variant (standard vs LongPads) to your board's pad layout",
-  "All 6 parts are tier A with score 100, so differentiate by part name/number",
-  "Confirm the 15V facet rating fits your circuit before selecting"
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a DIP land pattern is intended."
  ],
  "avoid_when": [
-  "Design needs a package other than 14-pin DIP through-hole",
-  "Pad style required doesn't match the available footprint (LongPads vs standard)",
-  "A voltage rating other than 15V is needed",
-  "A surface-mount part is required instead of through-hole"
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than DIP."
  ],
  "keywords": [
   "dip",
-  "dip-14",
-  "bjt",
   "transistor",
-  "discrete",
-  "through-hole",
-  "tht",
-  "15v",
-  "w7.62mm",
-  "longpads",
-  "ca3046",
-  "lm3046n",
-  "lm3086n",
-  "alternate-kicad-library",
-  "package-family-dip",
+  "bjt",
   "array",
+  "15v",
   "62mm",
+  "longpads",
   "akl",
   "5xnpn",
   "50ma",
   "alternate",
   "kicad",
   "library",
-  "w7"
+  "w7",
+  "tht",
+  "dil"
  ],
  "facts": {
   "package_family": "DIP",
@@ -66,7 +57,7 @@
   "tier_counts": {
    "A": 6
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -118,6 +109,6 @@
   "Alternate-KiCad-Library/Transistor_BJT_AKL/LM3086N",
   "Alternate-KiCad-Library/Transistor_BJT_AKL/LM3086Ns"
  ],
- "embedding_text": "discrete-bjt.dip.15v | Discrete BJT | Cluster of 6 discrete BJT parts in the 15V facet using DIP-14 through-hole footprints (DIP-14_W7.62mm and DIP-14_W7.62mm_LongPads), all tier A, sourced from Alternate-KiCad-Library. | dip dip-14 bjt transistor discrete through-hole tht 15v w7.62mm longpads ca3046 lm3046n lm3086n alternate-kicad-library package-family-dip array 62mm akl 5xnpn 50ma alternate kicad library w7 | DIP | 15V",
+ "embedding_text": "discrete-bjt.dip.15v | Discrete BJT | 6 discrete bjt parts for 15V using DIP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | dip transistor bjt array 15v 62mm longpads akl 5xnpn 50ma alternate kicad library w7 tht dil | DIP | 15V",
  "class": "discrete.bjt"
 }

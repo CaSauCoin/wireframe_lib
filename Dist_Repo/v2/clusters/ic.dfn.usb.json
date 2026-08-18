@@ -5,38 +5,31 @@
  "category_path": [
   "IC"
  ],
- "description": "This cluster contains surface-mount USB integrated circuits in exposed pad DFN packages, including 8-pin 3x3mm and 6-pin 2x2mm footprints.",
+ "description": "2 ic parts for USB using DFN footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when requiring surface-mount USB ICs in DFN-8 or DFN-6 packages with an exposed pad.",
-  "Choose between MAX8586 and NCP361MU based on target footprint dimensions and pin counts.",
-  "Verify compatibility with DFN 3x3mm or 2x2mm land patterns and exposed pad dimensions."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a DFN land pattern is intended."
  ],
  "avoid_when": [
-  "The PCB design requires through-hole components or packages other than DFN.",
-  "The application requires ICs outside of the USB functional category.",
-  "The required footprint does not match the DFN-8 3x3mm or DFN-6 2x2mm specifications."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than DFN."
  ],
  "keywords": [
-  "ic",
-  "usb",
   "dfn",
-  "smd",
-  "dfn-8",
-  "dfn-6",
-  "max8586",
-  "ncp361mu",
-  "3x3mm",
-  "2x2mm",
-  "exposed pad",
-  "1ep",
+  "usb",
   "protection",
   "power",
   "current",
   "limiting",
   "switch",
+  "1ep",
   "p0",
   "65mm",
+  "ic",
   "overvoltage",
+  "max8586",
   "management",
   "single",
   "2a"
@@ -63,7 +56,7 @@
   "tier_counts": {
    "A": 2
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -87,6 +80,6 @@
   "kicad-symbols/Power_Management/MAX8586",
   "kicad-symbols/Power_Protection/NCP361MU"
  ],
- "embedding_text": "ic.dfn.usb | IC | This cluster contains surface-mount USB integrated circuits in exposed pad DFN packages, including 8-pin 3x3mm and 6-pin 2x2mm footprints. | ic usb dfn smd dfn-8 dfn-6 max8586 ncp361mu 3x3mm 2x2mm exposed pad 1ep protection power current limiting switch p0 65mm overvoltage management single 2a | DFN | USB",
+ "embedding_text": "ic.dfn.usb | IC | 2 ic parts for USB using DFN footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | dfn usb protection power current limiting switch 1ep p0 65mm ic overvoltage max8586 management single 2a | DFN | USB",
  "class": "ic"
 }

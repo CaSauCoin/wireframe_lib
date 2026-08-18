@@ -7,41 +7,33 @@
   "Power",
   "Linear Regulator"
  ],
- "description": "Cluster of SMD 2.8V LDO linear regulator ICs in MLF packaging, featuring KiCad symbol entries such as MIC5356-MGYML and MIC5356-MMYML using an 8-pin MLF footprint with exposed thermal pad.",
+ "description": "2 ic power linear regulator parts for LDO, 2.8V using MLF footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when requiring a 2.8V LDO linear regulator in an SMD MLF package.",
-  "Choose for designs matching the MLF-8-1EP 3x3mm footprint with 0.65mm pitch and exposed pad.",
-  "Suitable when targeting KiCad linear regulator parts such as MIC5356-MGYML or MIC5356-MMYML."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a MLF land pattern is intended."
  ],
  "avoid_when": [
-  "Do not use if a non-MLF package or through-hole mounting is required.",
-  "Avoid if a regulated output voltage other than 2.8V is needed.",
-  "Avoid when the land pattern requires dimensions different from MLF-8-1EP 3x3mm."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than MLF."
  ],
  "keywords": [
-  "ic",
-  "power",
-  "linear regulator",
-  "ldo",
-  "2.8v",
-  "mlf",
-  "smd",
-  "mic5356-mgyml",
-  "mic5356-mmyml",
-  "mic5356",
-  "mlf-8-1ep",
-  "3x3mm",
   "regulator",
   "linear",
   "8v",
   "dfn",
+  "mlf",
   "dual",
   "500ma",
+  "ldo",
+  "mic5356",
   "cap",
   "low",
   "dropout",
   "micropower",
   "1ep",
+  "3x3mm",
   "p0"
  ],
  "facts": {
@@ -66,7 +58,7 @@
   "tier_counts": {
    "B": 2
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -90,6 +82,6 @@
   "kicad-symbols/Regulator_Linear/MIC5356-MGYML",
   "kicad-symbols/Regulator_Linear/MIC5356-MMYML"
  ],
- "embedding_text": "ic-power-ldo.mlf.ldo.2-8v | IC Power Linear Regulator | Cluster of SMD 2.8V LDO linear regulator ICs in MLF packaging, featuring KiCad symbol entries such as MIC5356-MGYML and MIC5356-MMYML using an 8-pin MLF footprint with exposed thermal pad. | ic power linear regulator ldo 2.8v mlf smd mic5356-mgyml mic5356-mmyml mic5356 mlf-8-1ep 3x3mm regulator linear 8v dfn dual 500ma cap low dropout micropower 1ep p0 | MLF | LDO 2.8V",
+ "embedding_text": "ic-power-ldo.mlf.ldo.2-8v | IC Power Linear Regulator | 2 ic power linear regulator parts for LDO, 2.8V using MLF footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | regulator linear 8v dfn mlf dual 500ma ldo mic5356 cap low dropout micropower 1ep 3x3mm p0 | MLF | LDO 2.8V",
  "class": "ic.power.ldo"
 }

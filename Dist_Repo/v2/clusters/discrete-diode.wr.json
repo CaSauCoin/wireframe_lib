@@ -6,30 +6,25 @@
   "Discrete",
   "Diode"
  ],
- "description": "Discrete diode cluster of surface-mount parts using WR package family horizontal and vertical MMCX footprints.",
+ "description": "2 discrete diode parts using WR footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Use when surface-mount discrete diodes compatible with WR MMCX footprints are required.",
-  "Select between horizontal and vertical WR MMCX footprint variants as required by board layout.",
-  "Verify part parameters and tier C quality status before footprint assignment."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a WR land pattern is intended."
  ],
  "avoid_when": [
-  "The design requires non-SMD or non-WR package family footprints.",
-  "Layout requires footprint styles other than horizontal or vertical MMCX land patterns.",
-  "Parts with verified tier A or B quality review status are required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than WR."
  ],
  "keywords": [
-  "discrete",
-  "diode",
   "wr",
   "mmcx",
-  "smd",
-  "surface mount",
   "wuerth",
   "horizontal",
   "vertical",
-  "discrete diode",
-  "wr footprint",
-  "mmcx footprint",
+  "discrete",
+  "diode",
   "surface",
   "mount",
   "pad",
@@ -60,13 +55,13 @@
   "tier_counts": {
    "C": 2
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
   "dist-legacy/WR-MMCX_Wuerth_66011102111302_Horizontal",
   "dist-legacy/WR-MMCX_Wuerth_66012102111404_Vertical"
  ],
- "embedding_text": "discrete-diode.wr | Discrete Diode | Discrete diode cluster of surface-mount parts using WR package family horizontal and vertical MMCX footprints. | discrete diode wr mmcx smd surface mount wuerth horizontal vertical discrete diode wr footprint mmcx footprint surface mount pad mm pitch pins package rth pcb | WR | ",
+ "embedding_text": "discrete-diode.wr | Discrete Diode | 2 discrete diode parts using WR footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | wr mmcx wuerth horizontal vertical discrete diode surface mount pad mm pitch pins package rth pcb | WR | ",
  "class": "discrete.diode"
 }

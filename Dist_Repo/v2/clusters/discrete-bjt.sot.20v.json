@@ -6,44 +6,34 @@
   "Discrete",
   "BJT"
  ],
- "description": "Cluster of 7 tier-A SMD BJT parts rated for the 20V facet, packaged in SOT-89-3, SOT-323/SC-70, or SOT-223-3 (TabPin2) footprints, sourced mainly from Alternate-KiCad-Library with one kicad-symbols entry.",
+ "description": "7 discrete bjt parts for 20V using SOT footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Match the exact footprint (SOT-89-3, SOT-323_SC-70, or SOT-223-3_TabPin2) to your PCB land pattern",
-  "All 7 parts are tier A with score 100, so differentiate by footprint and source library",
-  "Prefer kicad-symbols origin if minimizing dependence on the Alternate-KiCad-Library source",
-  "Confirm SMD mounting matches your assembly process"
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SOT land pattern is intended."
  ],
  "avoid_when": [
-  "Design requires a voltage rating other than 20V",
-  "A through-hole BJT package is needed instead of SMD",
-  "The exact footprint variant (SOT-89-3 vs SOT-323_SC-70 vs SOT-223-3_TabPin2) is not confirmed against the PCB layout",
-  "Part provenance must be limited to a single trusted source and mixed Alternate-KiCad-Library/kicad-symbols origins are unacceptable"
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SOT."
  ],
  "keywords": [
-  "bjt",
-  "discrete transistor",
   "sot",
-  "sot-89-3",
-  "sot-323",
-  "sc-70",
-  "sot-223-3",
-  "tabpin2",
-  "20v",
-  "smd",
-  "surface mount",
-  "kicad-symbols",
-  "alternate-kicad-library",
-  "2sc4213",
-  "2dd2098r",
-  "bc868",
-  "bc869",
-  "tier a",
   "transistor",
+  "bjt",
+  "20v",
   "npn",
   "discrete",
   "akl",
   "alternate",
-  "kicad"
+  "kicad",
+  "library",
+  "sc",
+  "2a",
+  "pnp",
+  "2sc4213",
+  "bc868",
+  "5w"
  ],
  "facts": {
   "package_family": "SOT",
@@ -69,7 +59,7 @@
   "tier_counts": {
    "A": 7
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -122,6 +112,6 @@
   "Alternate-KiCad-Library/Transistor_BJT_AKL/BCP68",
   "Alternate-KiCad-Library/Transistor_BJT_AKL/BCP69"
  ],
- "embedding_text": "discrete-bjt.sot.20v | Discrete BJT | Cluster of 7 tier-A SMD BJT parts rated for the 20V facet, packaged in SOT-89-3, SOT-323/SC-70, or SOT-223-3 (TabPin2) footprints, sourced mainly from Alternate-KiCad-Library with one kicad-symbols entry. | bjt discrete transistor sot sot-89-3 sot-323 sc-70 sot-223-3 tabpin2 20v smd surface mount kicad-symbols alternate-kicad-library 2sc4213 2dd2098r bc868 bc869 tier a transistor npn discrete akl alternate kicad | SOT | 20V",
+ "embedding_text": "discrete-bjt.sot.20v | Discrete BJT | 7 discrete bjt parts for 20V using SOT footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | sot transistor bjt 20v npn discrete akl alternate kicad library sc 2a pnp 2sc4213 bc868 5w | SOT | 20V",
  "class": "discrete.bjt"
 }

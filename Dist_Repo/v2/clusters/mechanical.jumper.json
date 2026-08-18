@@ -5,30 +5,20 @@
  "category_path": [
   "Mechanical"
  ],
- "description": "Surface-mount mechanical solder jumper footprints providing 2-pad and 3-pad normally open or trace-bridged configurations from SparkFun KiCad libraries.",
+ "description": "10 mechanical parts using Jumper footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select between 2-pad and 3-pad solder jumper configurations.",
-  "Choose normally open (NO) or trace-bridged (NC) initial connection states.",
-  "Select footprints with or without silkscreen markings (NoSilk options)."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a Jumper land pattern is intended."
  ],
  "avoid_when": [
-  "Through-hole mounting is required as only surface-mount options are available.",
-  "The PCB design requires component packages other than solder jumpers.",
-  "Switched or non-solder mechanical connections are needed."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than Jumper."
  ],
  "keywords": [
   "jumper",
-  "solder jumper",
-  "mechanical jumper",
-  "smd jumper",
   "sparkfun",
-  "2-pad jumper",
-  "3-pad jumper",
-  "normally open",
-  "normally closed",
-  "trace bridged",
-  "jumper trace",
-  "nosilk",
   "solder",
   "solderjumper",
   "pole",
@@ -40,7 +30,9 @@
   "nc",
   "trace",
   "spdt",
-  "silk"
+  "silk",
+  "nosilk",
+  "spst"
  ],
  "facts": {
   "package_family": "Jumper",
@@ -70,7 +62,7 @@
   "tier_counts": {
    "B": 10
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -126,6 +118,6 @@
   "SparkFun-KiCad-Libraries/SparkFun-Jumper/SolderJumper_3_Open",
   "SparkFun-KiCad-Libraries/SparkFun-Jumper/SolderJumper_3_Open_No_Silk"
  ],
- "embedding_text": "mechanical.jumper | Mechanical | Surface-mount mechanical solder jumper footprints providing 2-pad and 3-pad normally open or trace-bridged configurations from SparkFun KiCad libraries. | jumper solder jumper mechanical jumper smd jumper sparkfun 2-pad jumper 3-pad jumper normally open normally closed trace bridged jumper trace nosilk solder solderjumper pole mechanical no bridged open closed nc trace spdt silk | Jumper | ",
+ "embedding_text": "mechanical.jumper | Mechanical | 10 mechanical parts using Jumper footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | jumper sparkfun solder solderjumper pole mechanical no bridged open closed nc trace spdt silk nosilk spst | Jumper | ",
  "class": "mechanical"
 }

@@ -6,35 +6,24 @@
   "Discrete",
   "Transistor"
  ],
- "description": "Cluster of 25 surface-mount 25V discrete transistor parts from Alternate-KiCad-Library using Infineon PG-TDSON-8, PG_TSDSON-8_FL, and PG-TISON-8 footprints.",
+ "description": "25 discrete transistor parts for 25V using Infineon footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when needing a 25V surface-mount discrete transistor in an Infineon footprint.",
-  "Choose for designs using footprints such as Infineon_PG-TDSON-8, Infineon_PG_TSDSON-8_FL, or Infineon_PG-TISON-8.",
-  "Verify part specifications against tier B quality entries from Alternate-KiCad-Library like BSC009NE2LS."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a Infineon land pattern is intended."
  ],
  "avoid_when": [
-  "Avoid if through-hole mounting is required rather than SMD.",
-  "Do not use when requiring non-25V voltage ratings.",
-  "Avoid if footprints other than specified Infineon PG-TDSON or PG-TISON packages are needed.",
-  "Do not use if tier A quality verification is required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than Infineon."
  ],
  "keywords": [
-  "discrete transistor",
-  "25v",
-  "infineon",
-  "smd",
-  "alternate-kicad-library",
-  "pg-tdson-8",
-  "pg_tsdson-8_fl",
-  "pg-tison-8-2",
-  "pg-tison-8-4",
-  "bsc009ne2ls",
-  "bsc010ne2ls",
-  "tier b",
   "mosfet",
   "transistor",
+  "infineon",
   "tdson",
   "enchancement",
+  "25v",
   "mos",
   "akl",
   "mode",
@@ -42,7 +31,9 @@
   "kicad",
   "library",
   "pg",
-  "nmos"
+  "nmos",
+  "emos",
+  "emosfet"
  ],
  "facts": {
   "package_family": "Infineon",
@@ -68,7 +59,7 @@
   "tier_counts": {
    "B": 25
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -139,6 +130,6 @@
   "Alternate-KiCad-Library/Transistor_MOSFET_AKL/IRFH8201",
   "Alternate-KiCad-Library/Transistor_MOSFET_AKL/IRFH8202"
  ],
- "embedding_text": "discrete-transistor.infineon.25v | Discrete Transistor | Cluster of 25 surface-mount 25V discrete transistor parts from Alternate-KiCad-Library using Infineon PG-TDSON-8, PG_TSDSON-8_FL, and PG-TISON-8 footprints. | discrete transistor 25v infineon smd alternate-kicad-library pg-tdson-8 pg_tsdson-8_fl pg-tison-8-2 pg-tison-8-4 bsc009ne2ls bsc010ne2ls tier b mosfet transistor tdson enchancement mos akl mode alternate kicad library pg nmos | Infineon | 25V",
+ "embedding_text": "discrete-transistor.infineon.25v | Discrete Transistor | 25 discrete transistor parts for 25V using Infineon footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | mosfet transistor infineon tdson enchancement 25v mos akl mode alternate kicad library pg nmos emos emosfet | Infineon | 25V",
  "class": "discrete.transistor"
 }

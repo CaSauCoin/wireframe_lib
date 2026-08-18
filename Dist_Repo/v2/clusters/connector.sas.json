@@ -5,32 +5,23 @@
  "category_path": [
   "Connector"
  ],
- "description": "SAS connector cluster containing a single tier C, SMD part using the SAS-mini_TEConnectivity_1888174_Vertical footprint, sourced from dist-legacy and not currently planner-visible.",
+ "description": "1 connector parts using SAS footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Only one part is available; confirm it matches the SAS-mini vertical footprint exactly before use.",
-  "Part is tier C and not planner-visible, so verify its data manually.",
-  "Confirm SMD mounting is compatible with the intended assembly process."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SAS land pattern is intended."
  ],
  "avoid_when": [
-  "A higher-tier (A/B) or planner-visible part is required.",
-  "A footprint other than SAS-mini_TEConnectivity_1888174_Vertical is needed.",
-  "Electrical ratings, pinout, or lifecycle status must be confirmed, since none are provided here."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SAS."
  ],
  "keywords": [
   "sas",
-  "sas connector",
-  "sas-mini",
-  "teconnectivity",
-  "te connectivity",
-  "1888174",
-  "vertical",
-  "smd",
-  "surface mount",
-  "dist-legacy",
-  "tier c",
-  "generated",
-  "connector",
   "mini",
+  "teconnectivity",
+  "vertical",
+  "connector",
   "surface",
   "mount",
   "pad",
@@ -40,7 +31,8 @@
   "package",
   "36pin",
   "http",
-  "www"
+  "www",
+  "te"
  ],
  "facts": {
   "package_family": "SAS",
@@ -61,12 +53,12 @@
   "tier_counts": {
    "C": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
   "dist-legacy/SAS-mini_TEConnectivity_1888174_Vertical"
  ],
- "embedding_text": "connector.sas | Connector | SAS connector cluster containing a single tier C, SMD part using the SAS-mini_TEConnectivity_1888174_Vertical footprint, sourced from dist-legacy and not currently planner-visible. | sas sas connector sas-mini teconnectivity te connectivity 1888174 vertical smd surface mount dist-legacy tier c generated connector mini surface mount pad mm pitch pins package 36pin http www | SAS | ",
+ "embedding_text": "connector.sas | Connector | 1 connector parts using SAS footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | sas mini teconnectivity vertical connector surface mount pad mm pitch pins package 36pin http www te | SAS | ",
  "class": "connector"
 }

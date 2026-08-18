@@ -6,44 +6,34 @@
   "Discrete",
   "Diode"
  ],
- "description": "Cluster of 25 discrete diode parts sharing an 0805 package family, spanning multiple footprint variants; quality tiers are mixed (11 tier B, 14 tier C) and review status is generated, not verified.",
+ "description": "25 discrete diode parts using 0805 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Match the exact footprint variant (e.g. 0805, LED-0805) to the intended PCB land pattern",
-  "Prefer tier B entries over tier C when available",
-  "Cross-check source library (digikey-kicad-library, Seeed-OPL-Kicad-Library, chilaboard-altium-library, dist-legacy) for trust",
-  "Verify symbol-footprint pairing before use since review_status is 'generated'"
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a 0805 land pattern is intended."
  ],
  "avoid_when": [
-  "The board layout requires a package other than 0805",
-  "A specific footprint variant (fuse, capacitor-style, or star pad) is needed and not confirmed for the chosen part",
-  "Verified (non-generated) review status is required before committing to a PCB",
-  "Electrical ratings must be confirmed but are not stated in the available part data"
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than 0805."
  ],
  "keywords": [
-  "discrete diode",
-  "0805",
-  "smd diode",
-  "led",
-  "2012 metric",
-  "led-0805",
-  "d_0805",
-  "hand solder",
-  "fuse 0805",
-  "capc2012-star",
-  "resc2012-star",
-  "tier b",
-  "tier c",
-  "generated review",
-  "digikey kicad library",
-  "seeed opl kicad library",
-  "chilaboard altium library",
-  "surface mount diode",
   "discrete",
+  "led",
   "diode",
   "smd",
   "clear",
   "optoelectronics",
-  "2012metric"
+  "2012metric",
+  "indication",
+  "mm",
+  "pitch",
+  "pad",
+  "fuse",
+  "pins",
+  "handsolder",
+  "star",
+  "pad1"
  ],
  "facts": {
   "package_family": "0805",
@@ -80,7 +70,7 @@
    "B": 11,
    "C": 14
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -151,6 +141,6 @@
   "dist-legacy/SM-0805",
   "chilaboard-altium-library/D0805/D0805"
  ],
- "embedding_text": "discrete-diode.0805 | Discrete Diode | Cluster of 25 discrete diode parts sharing an 0805 package family, spanning multiple footprint variants; quality tiers are mixed (11 tier B, 14 tier C) and review status is generated, not verified. | discrete diode 0805 smd diode led 2012 metric led-0805 d_0805 hand solder fuse 0805 capc2012-star resc2012-star tier b tier c generated review digikey kicad library seeed opl kicad library chilaboard altium library surface mount diode discrete diode smd clear optoelectronics 2012metric | 0805 | ",
+ "embedding_text": "discrete-diode.0805 | Discrete Diode | 25 discrete diode parts using 0805 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | discrete led diode smd clear optoelectronics 2012metric indication mm pitch pad fuse pins handsolder star pad1 | 0805 | ",
  "class": "discrete.diode"
 }

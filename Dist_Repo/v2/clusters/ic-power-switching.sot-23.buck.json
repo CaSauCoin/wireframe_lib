@@ -7,42 +7,34 @@
   "Power",
   "Switching Regulator"
  ],
- "description": "Cluster of 8 surface-mount buck switching regulator ICs in the SOT-23 package family with TSOT-23-6 and SOT-23-6 footprints.",
+ "description": "8 ic power switching regulator parts for buck using SOT-23 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when requiring an SMD buck switching regulator in the SOT-23 package family.",
-  "Choose between TSOT-23-6 and SOT-23-6 footprint options based on PCB layout requirements.",
-  "Select from representative tier A parts such as AP3402, AP63200WU, AP63201WU, AP63205WU, or AP65111AWU."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SOT-23 land pattern is intended."
  ],
  "avoid_when": [
-  "Do not use if package footprints other than TSOT-23-6 or SOT-23-6 are required.",
-  "Avoid when non-SMD or through-hole mounting is required.",
-  "Do not use if a switching regulator topology other than buck is needed."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SOT-23."
  ],
  "keywords": [
-  "ic",
-  "power",
-  "switching regulator",
-  "buck",
-  "sot-23",
-  "tsot-23-6",
-  "sot-23-6",
-  "smd",
-  "kicad-symbols",
-  "ap3402",
-  "ap63200wu",
-  "ap63201wu",
-  "ap63205wu",
-  "ap65111awu",
   "dc",
+  "buck",
   "regulator",
   "tsot",
   "sot",
   "switching",
   "to",
+  "power",
   "voltage",
   "converter",
+  "smd",
+  "ic",
   "2a",
-  "output"
+  "output",
+  "step",
+  "down"
  ],
  "facts": {
   "package_family": "SOT-23",
@@ -66,7 +58,7 @@
   "tier_counts": {
    "A": 8
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -120,6 +112,6 @@
   "kicad-symbols/Regulator_Switching/LM2734Y",
   "kicad-symbols/Regulator_Switching/LMR51430"
  ],
- "embedding_text": "ic-power-switching.sot-23.buck | IC Power Switching Regulator | Cluster of 8 surface-mount buck switching regulator ICs in the SOT-23 package family with TSOT-23-6 and SOT-23-6 footprints. | ic power switching regulator buck sot-23 tsot-23-6 sot-23-6 smd kicad-symbols ap3402 ap63200wu ap63201wu ap63205wu ap65111awu dc regulator tsot sot switching to voltage converter 2a output | SOT-23 | buck",
+ "embedding_text": "ic-power-switching.sot-23.buck | IC Power Switching Regulator | 8 ic power switching regulator parts for buck using SOT-23 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | dc buck regulator tsot sot switching to power voltage converter smd ic 2a output step down | SOT-23 | buck",
  "class": "ic.power.switching"
 }

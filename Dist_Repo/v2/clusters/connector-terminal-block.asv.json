@@ -6,42 +6,34 @@
   "Connector",
   "Terminal Block"
  ],
- "description": "Terminal block connector cluster with a single tier-B part, Screw_Terminal_01x04, using an SMD-mounted ASV footprint from the kicad-symbols source.",
+ "description": "1 connector terminal block parts using ASV footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Only one part is available: Screw_Terminal_01x04 (tier B, score 80).",
-  "Confirm the ASV footprint matches your intended land pattern.",
-  "Verify the 1x04 pin count matches your design before use."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a ASV land pattern is intended."
  ],
  "avoid_when": [
-  "A footprint other than ASV is required.",
-  "A tier A or higher-confidence part is required; only tier B is available here.",
-  "Electrical ratings (voltage, current) are needed but are not stated for this part."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than ASV."
  ],
  "keywords": [
-  "terminal block",
-  "screw terminal",
-  "connector",
-  "asv",
-  "smd",
-  "01x04",
-  "1x04",
-  "screw_terminal_01x04",
-  "kicad",
-  "kicad-symbols",
-  "tier b",
-  "single row",
-  "four position",
-  "generic connector",
   "terminal",
   "screw",
+  "connector",
+  "01x04",
+  "asv",
   "generic",
   "single",
   "row",
   "script",
   "generated",
+  "kicad",
   "library",
   "utils",
-  "schlib"
+  "schlib",
+  "autogen",
+  "block"
  ],
  "facts": {
   "package_family": "ASV",
@@ -62,7 +54,7 @@
   "tier_counts": {
    "B": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -77,6 +69,6 @@
  "part_ids": [
   "kicad-symbols/Connector/Screw_Terminal_01x04"
  ],
- "embedding_text": "connector-terminal-block.asv | Connector Terminal Block | Terminal block connector cluster with a single tier-B part, Screw_Terminal_01x04, using an SMD-mounted ASV footprint from the kicad-symbols source. | terminal block screw terminal connector asv smd 01x04 1x04 screw_terminal_01x04 kicad kicad-symbols tier b single row four position generic connector terminal screw generic single row script generated library utils schlib | ASV | ",
+ "embedding_text": "connector-terminal-block.asv | Connector Terminal Block | 1 connector terminal block parts using ASV footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | terminal screw connector 01x04 asv generic single row script generated kicad library utils schlib autogen block | ASV | ",
  "class": "connector.terminal_block"
 }

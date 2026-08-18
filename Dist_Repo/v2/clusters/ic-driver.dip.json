@@ -6,33 +6,20 @@
   "IC",
   "Driver"
  ],
- "description": "Driver IC cluster containing 13 tier-A through-hole parts using DIP-8, DIP-14, and DIP-40 footprints.",
+ "description": "13 ic driver parts using DIP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Choose when requiring a through-hole driver IC in a DIP package.",
-  "Select based on required footprint such as DIP-8_W7.62mm, DIP-14_W7.62mm, or DIP-40_W15.24mm.",
-  "Verify the specific part number against circuit requirements."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a DIP land pattern is intended."
  ],
  "avoid_when": [
-  "Surface mount packaging is required instead of through-hole DIP.",
-  "The required footprint is not DIP-8, DIP-14, or DIP-40.",
-  "Non-driver IC components are needed."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than DIP."
  ],
  "keywords": [
-  "ic driver",
-  "driver ic",
-  "dip",
-  "through_hole",
-  "through hole",
-  "dip-8",
-  "dip-14",
-  "dip-40",
-  "hcpl-3120",
-  "ir2010",
-  "ir2110",
-  "ir2112",
-  "82720",
-  "kicad-symbols",
   "driver",
+  "dip",
   "62mm",
   "pdip",
   "tht",
@@ -41,7 +28,12 @@
   "ic",
   "fet",
   "w7",
-  "300mil"
+  "300mil",
+  "gate",
+  "high",
+  "and",
+  "low",
+  "side"
  ],
  "facts": {
   "package_family": "DIP",
@@ -64,7 +56,7 @@
   "tier_counts": {
    "A": 13
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -123,6 +115,6 @@
   "kicad-symbols/Driver_FET/TC4422",
   "kicad-symbols/Driver_FET/TLP250"
  ],
- "embedding_text": "ic-driver.dip | IC Driver | Driver IC cluster containing 13 tier-A through-hole parts using DIP-8, DIP-14, and DIP-40 footprints. | ic driver driver ic dip through_hole through hole dip-8 dip-14 dip-40 hcpl-3120 ir2010 ir2110 ir2112 82720 kicad-symbols driver 62mm pdip tht dil 54mm ic fet w7 300mil | DIP | ",
+ "embedding_text": "ic-driver.dip | IC Driver | 13 ic driver parts using DIP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | driver dip 62mm pdip tht dil 54mm ic fet w7 300mil gate high and low side | DIP | ",
  "class": "ic.driver"
 }

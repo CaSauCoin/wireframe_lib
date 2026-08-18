@@ -5,35 +5,27 @@
  "category_path": [
   "IC"
  ],
- "description": "Integrated circuit (IC) parts within the LINEAR package family featuring surface-mount LGA-133 land patterns.",
+ "description": "2 ic parts using LINEAR footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Selecting integrated circuits utilizing the LINEAR package family.",
-  "Requiring surface-mount (SMD) footprints such as LGA-133 15.0x15.0mm with 1.27mm pitch.",
-  "Evaluating parts from legacy distribution sources."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a LINEAR land pattern is intended."
  ],
  "avoid_when": [
-  "The design requires packages outside the LINEAR package family.",
-  "Surface-mount (SMD) mounting is incompatible with the target layout.",
-  "Parts with tier C quality status or zero planner visibility do not meet procurement rules."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than LINEAR."
  ],
  "keywords": [
-  "ic",
   "linear",
-  "linear package family",
-  "smd",
-  "surface mount",
-  "lga-133",
   "lga",
-  "15.0x15.0mm",
-  "layout12x12",
-  "p1.27mm",
-  "1.27mm pitch",
-  "linear footprint",
   "0x15",
   "0mm",
+  "layout12x12",
   "p1",
   "27mm",
   "tech",
+  "ic",
   "qfn",
   "ud",
   "pad",
@@ -63,13 +55,13 @@
   "tier_counts": {
    "C": 2
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
   "dist-legacy/LINEAR TECH QFN-16 UD",
   "dist-legacy/Linear_LGA-133_15.0x15.0mm_Layout12x12_P1.27mm"
  ],
- "embedding_text": "ic.linear | IC | Integrated circuit (IC) parts within the LINEAR package family featuring surface-mount LGA-133 land patterns. | ic linear linear package family smd surface mount lga-133 lga 15.0x15.0mm layout12x12 p1.27mm 1.27mm pitch linear footprint 0x15 0mm p1 27mm tech qfn ud pad mm pitch pins analog | LINEAR | ",
+ "embedding_text": "ic.linear | IC | 2 ic parts using LINEAR footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | linear lga 0x15 0mm layout12x12 p1 27mm tech ic qfn ud pad mm pitch pins analog | LINEAR | ",
  "class": "ic"
 }

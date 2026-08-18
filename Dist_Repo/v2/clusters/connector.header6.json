@@ -5,31 +5,20 @@
  "category_path": [
   "Connector"
  ],
- "description": "Connector cluster built around the Header6 footprint, containing a single tier C part sourced from dist-legacy with unrecorded mounting and a 'generated' (unreviewed) status.",
+ "description": "1 connector parts using Header6 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Only one part is present in this cluster, rated tier C.",
-  "Confirm the Header6 footprint matches your PCB land pattern before committing.",
-  "Mounting style is recorded as unknown; verify it independently."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a Header6 land pattern is intended."
  ],
  "avoid_when": [
-  "A reviewed, higher-trust (tier A/B) entry is required instead of this tier C, generated-status part.",
-  "Mounting style (through-hole vs. SMD) must be confirmed and cannot be assumed here.",
-  "A footprint other than Header6 is needed for the layout."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than Header6."
  ],
  "keywords": [
   "header6",
   "connector",
-  "header",
-  "pin header",
-  "6 position header",
-  "dist-legacy",
-  "tier c",
-  "generated status",
-  "unknown mount",
-  "single part",
-  "pcb header",
-  "header connector",
-  "low confidence part",
   "pad",
   "mm",
   "pitch",
@@ -54,12 +43,12 @@
   "tier_counts": {
    "C": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
   "dist-legacy/Header6"
  ],
- "embedding_text": "connector.header6 | Connector | Connector cluster built around the Header6 footprint, containing a single tier C part sourced from dist-legacy with unrecorded mounting and a 'generated' (unreviewed) status. | header6 connector header pin header 6 position header dist-legacy tier c generated status unknown mount single part pcb header header connector low confidence part pad mm pitch pins | Header6 | ",
+ "embedding_text": "connector.header6 | Connector | 1 connector parts using Header6 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | header6 connector pad mm pitch pins | Header6 | ",
  "class": "connector"
 }

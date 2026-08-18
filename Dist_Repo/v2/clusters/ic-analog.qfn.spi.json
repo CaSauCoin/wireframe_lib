@@ -6,42 +6,34 @@
   "IC",
   "Analog"
  ],
- "description": "Cluster of 5 surface-mount analog IC parts featuring SPI communication in QFN and WQFN footprint packages.",
+ "description": "5 ic analog parts for SPI using QFN footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select based on required pin count and footprint dimensions, such as 16-pin 4x4mm, 24-pin 4x4mm, or 64-pin 9x9mm QFN.",
-  "Verify requirement for an SPI interface in the analog IC design.",
-  "Choose between analog ADC and analog switch functionality."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a QFN land pattern is intended."
  ],
  "avoid_when": [
-  "The PCB design requires through-hole components or non-QFN packaging.",
-  "The application requires a non-SPI bus or interface.",
-  "Non-analog IC components are required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than QFN."
  ],
  "keywords": [
   "qfn",
-  "ic analog",
-  "spi",
-  "smd",
-  "wqfn",
-  "adc",
-  "analog switch",
-  "ad7779",
-  "ads8681rum",
-  "ads8685rum",
-  "ads8689rum",
-  "ts3a27518ertw",
-  "qfn-16",
-  "qfn-64",
-  "wqfn-24",
   "analog",
+  "adc",
+  "spi",
   "1ep",
   "p0",
   "nolead",
   "ic",
   "bit",
+  "wqfn",
   "65mm",
   "sar",
-  "4x4mm"
+  "4x4mm",
+  "ep2",
+  "high",
+  "speed"
  ],
  "facts": {
   "package_family": "QFN",
@@ -66,7 +58,7 @@
   "tier_counts": {
    "B": 5
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -117,6 +109,6 @@
   "kicad-symbols/Analog_ADC/ADS8689RUM",
   "kicad-symbols/Analog_Switch/TS3A27518ERTW"
  ],
- "embedding_text": "ic-analog.qfn.spi | IC Analog | Cluster of 5 surface-mount analog IC parts featuring SPI communication in QFN and WQFN footprint packages. | qfn ic analog spi smd wqfn adc analog switch ad7779 ads8681rum ads8685rum ads8689rum ts3a27518ertw qfn-16 qfn-64 wqfn-24 analog 1ep p0 nolead ic bit 65mm sar 4x4mm | QFN | SPI",
+ "embedding_text": "ic-analog.qfn.spi | IC Analog | 5 ic analog parts for SPI using QFN footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | qfn analog adc spi 1ep p0 nolead ic bit wqfn 65mm sar 4x4mm ep2 high speed | QFN | SPI",
  "class": "ic.analog"
 }

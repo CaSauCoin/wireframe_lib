@@ -6,34 +6,22 @@
   "Discrete",
   "Transistor"
  ],
- "description": "A collection of 40 surface-mount 30V discrete transistor components from Alternate-KiCad-Library utilizing SOT package footprints.",
+ "description": "40 discrete transistor parts for 30V using SOT footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select according to the specific SOT footprint variant needed, such as SOT-323, SOT-363, SOT-223, SOT-666, SOT-563, SOT-89, or SOT-416.",
-  "Prefer tier A quality parts over tier B parts.",
-  "Ensure surface-mount (SMD) mounting is required."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SOT land pattern is intended."
  ],
  "avoid_when": [
-  "Through-hole mounting is required rather than surface-mount.",
-  "The layout requires a non-SOT package footprint.",
-  "Voltage specifications other than 30V are needed."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SOT."
  ],
  "keywords": [
-  "discrete transistor",
   "sot",
-  "30v",
-  "smd",
-  "sot-323",
-  "sot-363",
-  "sot-223",
-  "sot-666",
-  "sot-563",
-  "sot-89",
-  "sot-416",
-  "sc-70",
-  "alternate-kicad-library",
-  "discrete",
-  "transistor",
   "mosfet",
+  "transistor",
+  "30v",
   "enchancement",
   "sc",
   "mos",
@@ -41,7 +29,11 @@
   "alternate",
   "kicad",
   "library",
-  "emos"
+  "emos",
+  "emosfet",
+  "discrete",
+  "mode",
+  "nmos"
  ],
  "facts": {
   "package_family": "SOT",
@@ -71,7 +63,7 @@
    "A": 39,
    "B": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -157,6 +149,6 @@
   "Alternate-KiCad-Library/Transistor_MOSFET_AKL/ZXMP3A16G",
   "Alternate-KiCad-Library/Transistor_MOSFET_AKL/SSM3K15AFS"
  ],
- "embedding_text": "discrete-transistor.sot.30v | Discrete Transistor | A collection of 40 surface-mount 30V discrete transistor components from Alternate-KiCad-Library utilizing SOT package footprints. | discrete transistor sot 30v smd sot-323 sot-363 sot-223 sot-666 sot-563 sot-89 sot-416 sc-70 alternate-kicad-library discrete transistor mosfet enchancement sc mos akl alternate kicad library emos | SOT | 30V",
+ "embedding_text": "discrete-transistor.sot.30v | Discrete Transistor | 40 discrete transistor parts for 30V using SOT footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | sot mosfet transistor 30v enchancement sc mos akl alternate kicad library emos emosfet discrete mode nmos | SOT | 30V",
  "class": "discrete.transistor"
 }

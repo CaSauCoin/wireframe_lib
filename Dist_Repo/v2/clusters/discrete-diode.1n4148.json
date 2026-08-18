@@ -6,27 +6,23 @@
   "Discrete",
   "Diode"
  ],
- "description": "Discrete diode cluster containing 2 tier-C parts associated with 1N4148_SMD and 1N4148_SMD1 footprint patterns.",
+ "description": "2 discrete diode parts using 1N4148 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when using 1N4148_SMD or 1N4148_SMD1 footprints for discrete diodes.",
-  "Verify part specifications as planner visible count is zero and review status is generated."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a 1N4148 land pattern is intended."
  ],
  "avoid_when": [
-  "Avoid if high quality tier parts are required instead of tier C entries.",
-  "Avoid when layout requires footprints other than 1N4148_SMD or 1N4148_SMD1."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than 1N4148."
  ],
  "keywords": [
-  "discrete diode",
   "1n4148",
-  "1n4148_smd",
-  "1n4148_smd1",
-  "discrete",
-  "diode",
-  "discrete.diode",
-  "dist-legacy",
-  "tier c",
   "smd",
   "smd1",
+  "discrete",
+  "diode",
   "pad",
   "mm",
   "pitch",
@@ -52,13 +48,13 @@
   "tier_counts": {
    "C": 2
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
   "dist-legacy/1N4148_SMD",
   "dist-legacy/1N4148_SMD1"
  ],
- "embedding_text": "discrete-diode.1n4148 | Discrete Diode | Discrete diode cluster containing 2 tier-C parts associated with 1N4148_SMD and 1N4148_SMD1 footprint patterns. | discrete diode 1n4148 1n4148_smd 1n4148_smd1 discrete diode discrete.diode dist-legacy tier c smd smd1 pad mm pitch pins | 1N4148 | ",
+ "embedding_text": "discrete-diode.1n4148 | Discrete Diode | 2 discrete diode parts using 1N4148 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | 1n4148 smd smd1 discrete diode pad mm pitch pins | 1N4148 | ",
  "class": "discrete.diode"
 }

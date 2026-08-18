@@ -5,31 +5,20 @@
  "category_path": [
   "IC"
  ],
- "description": "Surface-mount integrated circuit cluster containing 55 parts in the QFG50 package family across various pin-count footprint variants.",
+ "description": "55 ic parts using QFG50 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when surface-mount ICs using the QFG50 package family are required.",
-  "Verify the specific footprint variant such as QFG50_48, QFG50_64, QFG50_128, or QFG50_208.",
-  "Check part quality tier classification as parts are rated Tier B or C."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a QFG50 land pattern is intended."
  ],
  "avoid_when": [
-  "Through-hole mounting is required.",
-  "The board layout requires packages outside the QFG50 family.",
-  "Components with Tier A quality verification are required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than QFG50."
  ],
  "keywords": [
   "qfg50",
   "ic",
-  "smd",
-  "surface mount",
-  "integrated circuit",
-  "qfg50_48",
-  "qfg50_64",
-  "qfg50_128",
-  "qfg50_208",
-  "qfg50_144",
-  "qfg50_100",
-  "qfg50_80",
-  "chilaboard-altium-library",
   "ethernet",
   "qfp",
   "and",
@@ -40,7 +29,10 @@
   "transceiver",
   "phy",
   "qfp64",
-  "pins"
+  "pins",
+  "interface",
+  "with",
+  "adc"
  ],
  "facts": {
   "package_family": "QFG50",
@@ -73,7 +65,7 @@
    "B": 41,
    "C": 14
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -174,6 +166,6 @@
   "chilaboard-altium-library/QFG50_80T/QFG50_80T",
   "chilaboard-altium-library/QFG50_176/QFG50_176"
  ],
- "embedding_text": "ic.qfg50 | IC | Surface-mount integrated circuit cluster containing 55 parts in the QFG50 package family across various pin-count footprint variants. | qfg50 ic smd surface mount integrated circuit qfg50_48 qfg50_64 qfg50_128 qfg50_208 qfg50_144 qfg50_100 qfg50_80 chilaboard-altium-library ethernet qfp and in pin package qfp48 transceiver phy qfp64 pins | QFG50 | ",
+ "embedding_text": "ic.qfg50 | IC | 55 ic parts using QFG50 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | qfg50 ic ethernet qfp and in pin package qfp48 transceiver phy qfp64 pins interface with adc | QFG50 | ",
  "class": "ic"
 }

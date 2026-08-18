@@ -5,28 +5,20 @@
  "category_path": [
   "IC"
  ],
- "description": "Integrated circuit cluster containing 1 component using the Heptawatt package footprint.",
+ "description": "1 ic parts using Heptawatt footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when an IC component with a Heptawatt package footprint is required.",
-  "Verify package mounting, pin mapping, and footprint dimensions prior to board layout.",
-  "Review quality tier and source data completeness for the selected part."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a Heptawatt land pattern is intended."
  ],
  "avoid_when": [
-  "The board layout requires a footprint other than Heptawatt.",
-  "The design requires confirmed mounting specifications or quality tiers higher than tier C.",
-  "Required electrical ratings or datasheet details are not specified for the part."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than Heptawatt."
  ],
  "keywords": [
   "heptawatt",
   "ic",
-  "integrated circuit",
-  "heptawatt footprint",
-  "heptawatt package",
-  "ic cluster",
-  "dist-legacy",
-  "tier c",
-  "package family heptawatt",
-  "heptawatt ic",
   "pad",
   "mm",
   "pitch",
@@ -51,12 +43,12 @@
   "tier_counts": {
    "C": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
   "dist-legacy/Heptawatt H"
  ],
- "embedding_text": "ic.heptawatt | IC | Integrated circuit cluster containing 1 component using the Heptawatt package footprint. | heptawatt ic integrated circuit heptawatt footprint heptawatt package ic cluster dist-legacy tier c package family heptawatt heptawatt ic pad mm pitch pins | Heptawatt | ",
+ "embedding_text": "ic.heptawatt | IC | 1 ic parts using Heptawatt footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | heptawatt ic pad mm pitch pins | Heptawatt | ",
  "class": "ic"
 }

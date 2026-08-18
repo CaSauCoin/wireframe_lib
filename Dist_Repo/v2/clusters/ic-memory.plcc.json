@@ -6,38 +6,31 @@
   "IC",
   "Memory"
  ],
- "description": "Surface-mount IC memory component cluster in the PLCC package family, featuring PLCC-32 footprint options from KiCad symbols.",
+ "description": "1 ic memory parts using PLCC footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Choose when a surface-mount PLCC package footprint is required.",
-  "Verify compatibility with PLCC-32 (11.4x14.0mm, pitch 1.27mm) land patterns.",
-  "Check symbol pinout and footprint compatibility for part 27C512PLCC."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a PLCC land pattern is intended."
  ],
  "avoid_when": [
-  "Designs require through-hole mounting or non-PLCC package families.",
-  "The PCB layout requires footprint dimensions other than PLCC-32 (11.4x14.0mm, 1.27mm pitch).",
-  "Tier A quality rated memory components with verified datasheets are mandatory."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than PLCC."
  ],
  "keywords": [
   "plcc",
-  "ic memory",
-  "ic",
-  "memory",
-  "smd",
-  "plcc-32",
-  "27c512plcc",
-  "11.4x14.0mm",
-  "p1.27mm",
-  "kicad-symbols",
   "eprom",
-  "memory_eprom",
+  "memory",
   "otp",
+  "27c512plcc",
   "kibit",
   "4x14",
   "0mm",
   "p1",
   "27mm",
   "lcc",
-  "512kibit"
+  "512kibit",
+  "ic"
  ],
  "facts": {
   "package_family": "PLCC",
@@ -58,7 +51,7 @@
   "tier_counts": {
    "B": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -73,6 +66,6 @@
  "part_ids": [
   "kicad-symbols/Memory_EPROM/27C512PLCC"
  ],
- "embedding_text": "ic-memory.plcc | IC Memory | Surface-mount IC memory component cluster in the PLCC package family, featuring PLCC-32 footprint options from KiCad symbols. | plcc ic memory ic memory smd plcc-32 27c512plcc 11.4x14.0mm p1.27mm kicad-symbols eprom memory_eprom otp kibit 4x14 0mm p1 27mm lcc 512kibit | PLCC | ",
+ "embedding_text": "ic-memory.plcc | IC Memory | 1 ic memory parts using PLCC footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | plcc eprom memory otp 27c512plcc kibit 4x14 0mm p1 27mm lcc 512kibit ic | PLCC | ",
  "class": "ic.memory"
 }

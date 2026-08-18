@@ -6,30 +6,22 @@
   "Discrete",
   "Transistor"
  ],
- "description": "Discrete transistor library cluster containing 1 part using MICROCHIP footprints.",
+ "description": "1 discrete transistor parts using MICROCHIP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Use when a MICROCHIP package footprint is required for the layout.",
-  "Verify exact electrical ratings and pin mapping before committing to PCB design.",
-  "Check part quality tier and source documentation prior to selection."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a MICROCHIP land pattern is intended."
  ],
  "avoid_when": [
-  "The layout requires a footprint family other than MICROCHIP.",
-  "Required electrical ratings or operating limits are unspecified.",
-  "Symbol-to-footprint pairing is unverified or requires review."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than MICROCHIP."
  ],
  "keywords": [
   "microchip",
-  "transistor",
-  "discrete",
-  "discrete transistor",
-  "footprint",
-  "package",
-  "package family",
-  "land pattern",
-  "microchip footprint",
-  "dist-legacy",
   "sot",
   "nb",
+  "package",
   "land",
   "pattern",
   "bare",
@@ -37,7 +29,10 @@
   "body",
   "based",
   "on",
-  "specifications"
+  "specifications",
+  "footprint",
+  "discrete",
+  "transistor"
  ],
  "facts": {
   "package_family": "MICROCHIP",
@@ -58,12 +53,12 @@
   "tier_counts": {
    "C": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
   "dist-legacy/MICROCHIP SOT-23-3 NB"
  ],
- "embedding_text": "discrete-transistor.microchip | Discrete Transistor | Discrete transistor library cluster containing 1 part using MICROCHIP footprints. | microchip transistor discrete discrete transistor footprint package package family land pattern microchip footprint dist-legacy sot nb land pattern bare narrow body based on specifications | MICROCHIP | ",
+ "embedding_text": "discrete-transistor.microchip | Discrete Transistor | 1 discrete transistor parts using MICROCHIP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | microchip sot nb package land pattern bare narrow body based on specifications footprint discrete transistor | MICROCHIP | ",
  "class": "discrete.transistor"
 }

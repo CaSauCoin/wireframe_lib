@@ -6,36 +6,31 @@
   "Discrete",
   "Diode"
  ],
- "description": "Cluster of two tier B discrete diode components using EATON footprints, including EATON DR125 and EATON EXLA1V0707.",
+ "description": "2 discrete diode parts using EATON footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "A discrete diode with an EATON footprint is required.",
-  "Selecting between tier B parts such as EATON DR125 and EATON EXLA1V0707.",
-  "Tier B components from legacy distribution sources are acceptable."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a EATON land pattern is intended."
  ],
  "avoid_when": [
-  "The design requires a footprint family other than EATON.",
-  "Tier A quality parts are required.",
-  "Components with confirmed surface mount or through-hole mounting types are needed."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than EATON."
  ],
  "keywords": [
-  "discrete diode",
   "eaton",
   "diode",
-  "discrete",
   "dr125",
-  "exla1v0707",
-  "eaton dr125",
-  "eaton exla1v0707",
-  "tier b",
-  "eaton footprint",
   "two",
   "pin",
   "anode",
   "cathode",
+  "exla1v0707",
   "component",
   "with",
   "and",
-  "connections"
+  "connections",
+  "discrete"
  ],
  "facts": {
   "package_family": "EATON",
@@ -56,7 +51,7 @@
   "tier_counts": {
    "B": 2
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -80,6 +75,6 @@
   "dist-legacy/EATON DR125",
   "dist-legacy/EATON EXLA1V0707"
  ],
- "embedding_text": "discrete-diode.eaton | Discrete Diode | Cluster of two tier B discrete diode components using EATON footprints, including EATON DR125 and EATON EXLA1V0707. | discrete diode eaton diode discrete dr125 exla1v0707 eaton dr125 eaton exla1v0707 tier b eaton footprint two pin anode cathode component with and connections | EATON | ",
+ "embedding_text": "discrete-diode.eaton | Discrete Diode | 2 discrete diode parts using EATON footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | eaton diode dr125 two pin anode cathode exla1v0707 component with and connections discrete | EATON | ",
  "class": "discrete.diode"
 }

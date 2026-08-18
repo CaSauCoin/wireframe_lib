@@ -6,32 +6,21 @@
   "Discrete",
   "Diode"
  ],
- "description": "Cluster of 3 surface-mount discrete diodes in the D package family featuring 5V and 11.2V facets with D_SMA and D_SMC(DO-214AB) footprints.",
+ "description": "3 discrete diode parts for 5V, 11.2V using D footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select between D_SMA and D_SMC(DO-214AB) surface-mount footprints based on PCB layout requirements.",
-  "Prefer Tier A parts over Tier B parts when higher quality ranking is required.",
-  "Verify part selection against required 5V or 11.2V voltage facets."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a D land pattern is intended."
  ],
  "avoid_when": [
-  "Avoid when layout requires a package family other than D.",
-  "Avoid when footprints other than D_SMA or D_SMC(DO-214AB) are required.",
-  "Avoid when surface-mount (SMD) mounting is not supported."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than D."
  ],
  "keywords": [
-  "discrete diode",
-  "5v",
-  "11.2v",
-  "smd",
-  "d_sma",
-  "do-214ab",
-  "tvs-bi",
-  "5kp6.5ca",
-  "smbj6.5ca",
-  "smcj6.5ca",
-  "jlcpcb-kicad-library",
-  "d package",
   "tvs",
   "2v",
+  "5v",
   "esd",
   "diode",
   "do",
@@ -41,7 +30,10 @@
   "jlcpcb",
   "diodes",
   "bidirectional",
-  "iec"
+  "iec",
+  "and",
+  "surge",
+  "protection"
  ],
  "facts": {
   "package_family": "D",
@@ -67,7 +59,7 @@
    "A": 2,
    "B": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -100,6 +92,6 @@
   "JLCPCB-Kicad-Library/JLCPCB-Diodes/TVS-Bi,SMBJ6.5CA",
   "JLCPCB-Kicad-Library/JLCPCB-Diodes/TVS-Bi,SMCJ6.5CA"
  ],
- "embedding_text": "discrete-diode.d.5v.11-2v | Discrete Diode | Cluster of 3 surface-mount discrete diodes in the D package family featuring 5V and 11.2V facets with D_SMA and D_SMC(DO-214AB) footprints. | discrete diode 5v 11.2v smd d_sma do-214ab tvs-bi 5kp6.5ca smbj6.5ca smcj6.5ca jlcpcb-kicad-library d package tvs 2v esd diode do sma bi 5ca jlcpcb diodes bidirectional iec | D | 5V 11.2V",
+ "embedding_text": "discrete-diode.d.5v.11-2v | Discrete Diode | 3 discrete diode parts for 5V, 11.2V using D footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | tvs 2v 5v esd diode do sma bi 5ca jlcpcb diodes bidirectional iec and surge protection | D | 5V 11.2V",
  "class": "discrete.diode"
 }

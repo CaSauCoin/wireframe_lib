@@ -5,28 +5,20 @@
  "category_path": [
   "IC"
  ],
- "description": "IC cluster containing 1 part associated with the N022D footprint and package family.",
+ "description": "1 ic parts using N022D footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when requiring an IC part associated with the N022D footprint family.",
-  "Verify specific footprint definitions and pin mappings before PCB design.",
-  "Review quality tier C status and legacy distributor source data before selection."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a N022D land pattern is intended."
  ],
  "avoid_when": [
-  "Do not use if the PCB layout requires a footprint other than N022D.",
-  "Avoid when planner-visible or higher quality tier parts are required.",
-  "Avoid if complete electrical specifications or package dimensions are required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than N022D."
  ],
  "keywords": [
   "n022d",
   "ic",
-  "package family n022d",
-  "n022d footprint",
-  "dist-legacy",
-  "tier c",
-  "ic component",
-  "integrated circuit",
-  "n022d package",
-  "legacy source",
   "pad",
   "mm",
   "pitch",
@@ -51,12 +43,12 @@
   "tier_counts": {
    "C": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
   "dist-legacy/N022D"
  ],
- "embedding_text": "ic.n022d | IC | IC cluster containing 1 part associated with the N022D footprint and package family. | n022d ic package family n022d n022d footprint dist-legacy tier c ic component integrated circuit n022d package legacy source pad mm pitch pins | N022D | ",
+ "embedding_text": "ic.n022d | IC | 1 ic parts using N022D footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | n022d ic pad mm pitch pins | N022D | ",
  "class": "ic"
 }

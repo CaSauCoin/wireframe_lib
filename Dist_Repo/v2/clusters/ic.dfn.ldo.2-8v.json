@@ -5,34 +5,25 @@
  "category_path": [
   "IC"
  ],
- "description": "Surface-mount 2.8V LDO integrated circuit cluster in DFN packages containing 4 Tier A parts.",
+ "description": "4 ic parts for LDO, 2.8V using DFN footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when a 2.8V LDO regulator in a surface-mount DFN package is required.",
-  "Choose between DFN-6 and DFN-8 footprint variants based on board layout requirements.",
-  "Verify exact pinouts and parameters for specific part numbers before layout."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a DFN land pattern is intended."
  ],
  "avoid_when": [
-  "Do not use if a target output voltage other than 2.8V is required.",
-  "Avoid when package types other than surface-mount DFN are needed.",
-  "Avoid if required electrical limits or pin configurations are unspecified in the cluster data."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than DFN."
  ],
  "keywords": [
-  "ic",
-  "ldo",
-  "2.8v",
   "dfn",
-  "smd",
-  "voltage regulator",
-  "dfn-6",
-  "dfn-8",
-  "dfn-6-1ep",
-  "dfn-8-1ep",
-  "alternate-kicad-library",
   "voltage",
   "regulator",
   "8v",
   "low",
   "dropout",
+  "ldo",
   "akl",
   "alternate",
   "kicad",
@@ -40,7 +31,8 @@
   "1ep",
   "p0",
   "vreg",
-  "pmic"
+  "pmic",
+  "power"
  ],
  "facts": {
   "package_family": "DFN",
@@ -66,7 +58,7 @@
   "tier_counts": {
    "A": 4
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -108,6 +100,6 @@
   "Alternate-KiCad-Library/Voltage_Regulator_AKL/MCP1700T-2802E-MAY",
   "Alternate-KiCad-Library/Voltage_Regulator_AKL/MCP1703T-2802E-MC"
  ],
- "embedding_text": "ic.dfn.ldo.2-8v | IC | Surface-mount 2.8V LDO integrated circuit cluster in DFN packages containing 4 Tier A parts. | ic ldo 2.8v dfn smd voltage regulator dfn-6 dfn-8 dfn-6-1ep dfn-8-1ep alternate-kicad-library voltage regulator 8v low dropout akl alternate kicad library 1ep p0 vreg pmic | DFN | LDO 2.8V",
+ "embedding_text": "ic.dfn.ldo.2-8v | IC | 4 ic parts for LDO, 2.8V using DFN footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | dfn voltage regulator 8v low dropout ldo akl alternate kicad library 1ep p0 vreg pmic power | DFN | LDO 2.8V",
  "class": "ic"
 }

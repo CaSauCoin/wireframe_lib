@@ -7,42 +7,34 @@
   "Power",
   "Switching Regulator"
  ],
- "description": "Cluster of 4 surface-mount 3.3V boost switching regulator ICs in MSOP package family with 100V facet and MSOP-8 or MSOP-10 footprints.",
+ "description": "4 ic power switching regulator parts for 3.3V, boost, 100V using MSOP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when a surface-mount boost switching regulator in MSOP package family is required.",
-  "Choose between MSOP-8 (3x3mm, 0.65mm pitch) and MSOP-10 (3x3mm, 0.5mm pitch) footprint variants.",
-  "Verify selection among representative parts MCP1650x, MCP1651x, MCP1652x, or MCP1653x."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a MSOP land pattern is intended."
  ],
  "avoid_when": [
-  "The design requires through-hole mounting instead of SMD.",
-  "A package family other than MSOP is required.",
-  "Footprint requirements differ from MSOP-8 0.65mm pitch or MSOP-10 0.5mm pitch."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than MSOP."
  ],
  "keywords": [
-  "ic",
-  "power",
-  "switching regulator",
-  "boost",
-  "3.3v",
-  "100v",
   "msop",
-  "msop-8",
-  "msop-10",
-  "smd",
-  "3x3mm",
-  "p0.65mm",
-  "p0.5mm",
-  "mcp1650x-xmc",
-  "mcp1651x-xmc",
-  "mcp1652x-xmc",
-  "mcp1653x-xun",
+  "boost",
   "regulator",
   "switching",
   "controller",
+  "100v",
+  "power",
+  "3x3mm",
   "p0",
   "khz",
   "output",
-  "voltage"
+  "voltage",
+  "5w",
+  "so",
+  "ic",
+  "3v"
  ],
  "facts": {
   "package_family": "MSOP",
@@ -68,7 +60,7 @@
   "tier_counts": {
    "A": 4
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -110,6 +102,6 @@
   "kicad-symbols/Regulator_Switching/MCP1652x-xMC",
   "kicad-symbols/Regulator_Switching/MCP1653x-xUN"
  ],
- "embedding_text": "ic-power-switching.msop.3v3.boost | IC Power Switching Regulator | Cluster of 4 surface-mount 3.3V boost switching regulator ICs in MSOP package family with 100V facet and MSOP-8 or MSOP-10 footprints. | ic power switching regulator boost 3.3v 100v msop msop-8 msop-10 smd 3x3mm p0.65mm p0.5mm mcp1650x-xmc mcp1651x-xmc mcp1652x-xmc mcp1653x-xun regulator switching controller p0 khz output voltage | MSOP | 3.3V boost 100V",
+ "embedding_text": "ic-power-switching.msop.3v3.boost | IC Power Switching Regulator | 4 ic power switching regulator parts for 3.3V, boost, 100V using MSOP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | msop boost regulator switching controller 100v power 3x3mm p0 khz output voltage 5w so ic 3v | MSOP | 3.3V boost 100V",
  "class": "ic.power.switching"
 }

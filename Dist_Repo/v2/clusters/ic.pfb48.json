@@ -5,28 +5,20 @@
  "category_path": [
   "IC"
  ],
- "description": "IC cluster containing 3 parts in quality tier C using PFB48 footprint variants including PFB48_L, PFB48_M, and PFB48_N.",
+ "description": "3 ic parts using PFB48 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when requiring a PFB48 footprint variant such as PFB48_L, PFB48_M, or PFB48_N.",
-  "Verify part specifications carefully as all 3 entries are assigned to quality tier C.",
-  "Check individual part details since representative parts are not listed."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a PFB48 land pattern is intended."
  ],
  "avoid_when": [
-  "Avoid if layout requires a package family other than PFB48.",
-  "Do not use if planner-visible parts are required, as planner visible count is 0.",
-  "Avoid when higher quality tier parts (tier A or tier B) are required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than PFB48."
  ],
  "keywords": [
-  "ic",
   "pfb48",
-  "pfb48_l",
-  "pfb48_m",
-  "pfb48_n",
-  "tier c",
-  "dist-legacy",
-  "pfb48 footprint",
-  "pfb48 package",
-  "ic pfb48",
+  "ic",
   "pad",
   "mm",
   "pitch",
@@ -53,7 +45,7 @@
   "tier_counts": {
    "C": 3
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
@@ -61,6 +53,6 @@
   "dist-legacy/PFB48_M",
   "dist-legacy/PFB48_N"
  ],
- "embedding_text": "ic.pfb48 | IC | IC cluster containing 3 parts in quality tier C using PFB48 footprint variants including PFB48_L, PFB48_M, and PFB48_N. | ic pfb48 pfb48_l pfb48_m pfb48_n tier c dist-legacy pfb48 footprint pfb48 package ic pfb48 pad mm pitch pins | PFB48 | ",
+ "embedding_text": "ic.pfb48 | IC | 3 ic parts using PFB48 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | pfb48 ic pad mm pitch pins | PFB48 | ",
  "class": "ic"
 }

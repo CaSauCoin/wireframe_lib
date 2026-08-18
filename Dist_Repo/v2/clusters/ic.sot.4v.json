@@ -5,30 +5,19 @@
  "category_path": [
   "IC"
  ],
- "description": "Integrated circuit cluster featuring 4V surface-mount parts in SOT-143 footprints from KiCad symbol libraries.",
+ "description": "2 ic parts for 4V using SOT footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Choosing surface-mount 4V ICs using the SOT-143 footprint.",
-  "Selecting tier A parts such as CAT811JTBI-GT3 or MIC811JUY.",
-  "Using symbols sourced from the KiCad Power_Supervisor library."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SOT land pattern is intended."
  ],
  "avoid_when": [
-  "The design requires packages other than SOT or SOT-143.",
-  "Through-hole components are required instead of SMD mounting.",
-  "The application operates outside 4V IC specifications."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SOT."
  ],
  "keywords": [
-  "ic",
   "sot",
-  "sot-143",
-  "4v",
-  "smd",
-  "integrated circuit",
-  "power_supervisor",
-  "cat811jtbi-gt3",
-  "mic811juy",
-  "kicad-symbols",
-  "tier a",
-  "surface mount",
   "supervisor",
   "power",
   "reset",
@@ -36,8 +25,11 @@
   "manual",
   "threshold",
   "00v",
+  "ic",
+  "4v",
   "cat811jtbi",
-  "gt3"
+  "gt3",
+  "mic811juy"
  ],
  "facts": {
   "package_family": "SOT",
@@ -60,7 +52,7 @@
   "tier_counts": {
    "A": 2
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -84,6 +76,6 @@
   "kicad-symbols/Power_Supervisor/CAT811JTBI-GT3",
   "kicad-symbols/Power_Supervisor/MIC811JUY"
  ],
- "embedding_text": "ic.sot.4v | IC | Integrated circuit cluster featuring 4V surface-mount parts in SOT-143 footprints from KiCad symbol libraries. | ic sot sot-143 4v smd integrated circuit power_supervisor cat811jtbi-gt3 mic811juy kicad-symbols tier a surface mount supervisor power reset supply manual threshold 00v cat811jtbi gt3 | SOT | 4V",
+ "embedding_text": "ic.sot.4v | IC | 2 ic parts for 4V using SOT footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | sot supervisor power reset supply manual threshold 00v ic 4v cat811jtbi gt3 mic811juy | SOT | 4V",
  "class": "ic"
 }

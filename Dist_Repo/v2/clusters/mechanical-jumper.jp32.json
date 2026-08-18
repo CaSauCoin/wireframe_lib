@@ -6,31 +6,21 @@
   "Mechanical",
   "Jumper"
  ],
- "description": "A cluster of 16 legacy mechanical jumper parts supporting JP32 package footprint variants.",
+ "description": "16 mechanical jumper parts using JP32 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select based on the specific JP32 footprint variant required by the layout.",
-  "Verify pad layout and mounting requirements as mount style is unclassified.",
-  "Inspect entry details as all components are legacy tier C parts."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a JP32 land pattern is intended."
  ],
  "avoid_when": [
-  "The board design requires a package family other than JP32.",
-  "Specific footprint requirements are not satisfied by the listed JP32 variants.",
-  "Design rules prohibit using unreviewed tier C legacy parts."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than JP32."
  ],
  "keywords": [
   "jp32",
-  "mechanical jumper",
-  "jumper",
   "mechanical",
-  "package family jp32",
-  "jp32-c1c",
-  "jp32-c1t",
-  "jp32-c2c",
-  "jp32-c2t",
-  "jp32-d1c",
-  "jp32-d1t",
-  "jp32-d2c",
-  "jp32-d2t",
+  "jumper",
   "pad",
   "mm",
   "pitch",
@@ -41,7 +31,9 @@
   "c2t",
   "d1c",
   "d1t",
-  "d1t1"
+  "d1t1",
+  "d1t2",
+  "d1t3"
  ],
  "facts": {
   "package_family": "JP32",
@@ -73,7 +65,7 @@
   "tier_counts": {
    "C": 16
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
@@ -94,6 +86,6 @@
   "dist-legacy/JP32-D2T3",
   "dist-legacy/JP32-D2T4"
  ],
- "embedding_text": "mechanical-jumper.jp32 | Mechanical Jumper | A cluster of 16 legacy mechanical jumper parts supporting JP32 package footprint variants. | jp32 mechanical jumper jumper mechanical package family jp32 jp32-c1c jp32-c1t jp32-c2c jp32-c2t jp32-d1c jp32-d1t jp32-d2c jp32-d2t pad mm pitch pins c1c c1t c2c c2t d1c d1t d1t1 | JP32 | ",
+ "embedding_text": "mechanical-jumper.jp32 | Mechanical Jumper | 16 mechanical jumper parts using JP32 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | jp32 mechanical jumper pad mm pitch pins c1c c1t c2c c2t d1c d1t d1t1 d1t2 d1t3 | JP32 | ",
  "class": "mechanical.jumper"
 }

@@ -5,34 +5,29 @@
  "category_path": [
   "IC"
  ],
- "description": "Integrated circuit parts belonging to the AMS package family designed for surface-mount applications with LGA-10-1EP, OLGA12, TSL2550, or TSL25911FN footprint requirements.",
+ "description": "4 ic parts using AMS footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when requiring surface-mount (SMD) ICs in the AMS package family.",
-  "Verify exact footprint compatibility with LGA-10-1EP, OLGA12, TSL2550, or TSL25911FN land patterns.",
-  "Confirm part specifications and quality tier fit the design constraints."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a AMS land pattern is intended."
  ],
  "avoid_when": [
-  "Through-hole or non-SMD mounting is required.",
-  "The PCB design requires packages outside the AMS package family."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than AMS."
  ],
  "keywords": [
-  "ic",
   "ams",
-  "smd",
-  "surface mount",
-  "integrated circuit",
-  "lga-10-1ep",
-  "olga12",
-  "tsl2550",
-  "tsl25911fn",
-  "2.7x4mm",
-  "p0.6mm",
-  "ams package",
+  "ic",
   "lga",
+  "tsl2550",
   "1ep",
   "7x4mm",
   "p0",
   "6mm",
+  "smd",
+  "olga12",
+  "tsl25911fn",
   "surface",
   "mount",
   "pad",
@@ -61,7 +56,7 @@
   "tier_counts": {
    "C": 4
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
@@ -70,6 +65,6 @@
   "dist-legacy/AMS_OLGA12",
   "dist-legacy/AMS_TSL25911FN"
  ],
- "embedding_text": "ic.ams | IC | Integrated circuit parts belonging to the AMS package family designed for surface-mount applications with LGA-10-1EP, OLGA12, TSL2550, or TSL25911FN footprint requirements. | ic ams smd surface mount integrated circuit lga-10-1ep olga12 tsl2550 tsl25911fn 2.7x4mm p0.6mm ams package lga 1ep 7x4mm p0 6mm surface mount pad mm pitch | AMS | ",
+ "embedding_text": "ic.ams | IC | 4 ic parts using AMS footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | ams ic lga tsl2550 1ep 7x4mm p0 6mm smd olga12 tsl25911fn surface mount pad mm pitch | AMS | ",
  "class": "ic"
 }

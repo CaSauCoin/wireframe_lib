@@ -6,44 +6,34 @@
   "Discrete",
   "Diode"
  ],
- "description": "Cluster of 331 discrete diode parts on the 50V facet, sharing D-family footprints (MiniMELF, SMA, SMB, SMC, MELF, DO-15, DO-35, DO-41, DO-201AD, DO-7, SOD-123F) across SMD and through-hole mounts.",
+ "description": "331 discrete diode parts for 50V using D footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Match the exact D-family footprint (e.g. SMA, SMB, MELF, DO-41) to the intended PCB land pattern.",
-  "Prefer tier A entries (291 of 331 parts) for higher retrieval confidence.",
-  "Confirm the source library (mostly Alternate-KiCad-Library, some kicad-symbols/JLCPCB-Kicad-Library) fits project conventions.",
-  "Check whether the design needs SMD or through-hole mounting before picking a footprint."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a D land pattern is intended."
  ],
  "avoid_when": [
-  "The needed footprint is not one of the listed D-family patterns.",
-  "A voltage, current, or other electrical rating beyond the 50V facet must be confirmed and isn't stated here.",
-  "Only tier B matches are available and a higher-confidence part is required.",
-  "The assembly process (SMD vs through-hole) doesn't match the available mount for the chosen footprint."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than D."
  ],
  "keywords": [
   "diode",
-  "discrete diode",
-  "d package",
   "50v",
-  "minimelf",
-  "melf",
-  "sma diode",
-  "smb diode",
-  "smc diode",
-  "do-35",
-  "do-41",
-  "do-15",
-  "do-201ad",
-  "do-7",
-  "sod27",
-  "sod81",
-  "sod-123f",
-  "through hole diode",
   "do",
   "discrete",
   "horizontal",
   "akl",
   "alternate",
-  "kicad"
+  "kicad",
+  "library",
+  "schottky",
+  "rectifier",
+  "pin",
+  "axial",
+  "pitch",
+  "length",
+  "diameter"
  ],
  "facts": {
   "package_family": "D",
@@ -81,7 +71,7 @@
    "A": 291,
    "B": 40
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -458,6 +448,6 @@
   "Alternate-KiCad-Library/Diode_AKL/US2ABF",
   "Alternate-KiCad-Library/Diode_AKL/US2AF"
  ],
- "embedding_text": "discrete-diode.d.50v | Discrete Diode | Cluster of 331 discrete diode parts on the 50V facet, sharing D-family footprints (MiniMELF, SMA, SMB, SMC, MELF, DO-15, DO-35, DO-41, DO-201AD, DO-7, SOD-123F) across SMD and through-hole mounts. | diode discrete diode d package 50v minimelf melf sma diode smb diode smc diode do-35 do-41 do-15 do-201ad do-7 sod27 sod81 sod-123f through hole diode do discrete horizontal akl alternate kicad | D | 50V",
+ "embedding_text": "discrete-diode.d.50v | Discrete Diode | 331 discrete diode parts for 50V using D footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | diode 50v do discrete horizontal akl alternate kicad library schottky rectifier pin axial pitch length diameter | D | 50V",
  "class": "discrete.diode"
 }

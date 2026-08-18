@@ -6,38 +6,33 @@
   "Discrete",
   "FET"
  ],
- "description": "Discrete surface-mount FET cluster featuring a 30V rating and PowerPAK SO-8 Single footprint.",
+ "description": "1 discrete fet parts for 30V using PowerPAK footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when a surface-mount discrete FET rated for 30V is required.",
-  "Use when designing for a PowerPAK SO-8 Single footprint.",
-  "Verify symbol specifications for KiCad symbols entry Si7336ADP."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a PowerPAK land pattern is intended."
  ],
  "avoid_when": [
-  "Avoid if the PCB layout requires a footprint other than PowerPAK SO-8 Single.",
-  "Do not use when voltage requirements differ from 30V.",
-  "Avoid when non-SMD mounting is required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than PowerPAK."
  ],
  "keywords": [
-  "discrete",
+  "powerpak",
   "fet",
   "30v",
-  "powerpak",
-  "powerpak_so-8_single",
-  "so-8",
-  "smd",
-  "si7336adp",
-  "kicad-symbols",
-  "transistor",
-  "single",
-  "discrete fet",
   "so",
+  "single",
+  "si7336adp",
+  "transistor",
   "30a",
   "id",
   "vds",
   "4mohm",
   "ron",
   "channel",
-  "mosfet"
+  "mosfet",
+  "discrete"
  ],
  "facts": {
   "package_family": "PowerPAK",
@@ -60,7 +55,7 @@
   "tier_counts": {
    "B": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -75,6 +70,6 @@
  "part_ids": [
   "kicad-symbols/Transistor_FET/Si7336ADP"
  ],
- "embedding_text": "discrete-fet.powerpak.30v | Discrete FET | Discrete surface-mount FET cluster featuring a 30V rating and PowerPAK SO-8 Single footprint. | discrete fet 30v powerpak powerpak_so-8_single so-8 smd si7336adp kicad-symbols transistor single discrete fet so 30a id vds 4mohm ron channel mosfet | PowerPAK | 30V",
+ "embedding_text": "discrete-fet.powerpak.30v | Discrete FET | 1 discrete fet parts for 30V using PowerPAK footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | powerpak fet 30v so single si7336adp transistor 30a id vds 4mohm ron channel mosfet discrete | PowerPAK | 30V",
  "class": "discrete.fet"
 }

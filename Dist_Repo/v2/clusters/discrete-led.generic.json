@@ -6,26 +6,18 @@
   "Discrete",
   "LED"
  ],
- "description": "Generic cluster containing 64 tier G discrete LED parts with package chosen later.",
+ "description": "64 discrete led parts with package chosen later. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Explicitly assign a package family and footprint prior to PCB layout.",
-  "Check individual source library quality and footprint details before placement.",
-  "Identify specific LED variant such as RGB or thermal pad requirements."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Select a footprint/package explicitly before placement."
  ],
  "avoid_when": [
-  "A pre-assigned package or exact footprint is required upfront.",
-  "Higher quality tier parts are strictly required for the design."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review."
  ],
  "keywords": [
   "led",
-  "discrete led",
-  "discrete.led",
-  "rgb led",
-  "plcc",
-  "thermal pad",
-  "lumex",
-  "package chosen later",
-  "tier g",
   "discrete",
   "pins",
   "package",
@@ -33,10 +25,12 @@
   "later",
   "rgb",
   "plcc4",
+  "lumex",
   "5mm",
   "led7seg",
   "0mm",
   "9mm",
+  "plcc",
   "strip",
   "led5050rgb"
  ],
@@ -59,7 +53,7 @@
   "tier_counts": {
    "G": 64
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -169,6 +163,6 @@
   "chilaboard-altium-library/LEDBARX10/LEDBARX10",
   "chilaboard-altium-library/LEDDRV_ICNE2521_SOT89/LEDDRV_ICNE2521_SOT89"
  ],
- "embedding_text": "discrete-led.generic | Discrete LED | Generic cluster containing 64 tier G discrete LED parts with package chosen later. | led discrete led discrete.led rgb led plcc thermal pad lumex package chosen later tier g discrete pins package chosen later rgb plcc4 5mm led7seg 0mm 9mm strip led5050rgb | package chosen later | ",
+ "embedding_text": "discrete-led.generic | Discrete LED | 64 discrete led parts with package chosen later. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | led discrete pins package chosen later rgb plcc4 lumex 5mm led7seg 0mm 9mm plcc strip led5050rgb | package chosen later | ",
  "class": "discrete.led"
 }

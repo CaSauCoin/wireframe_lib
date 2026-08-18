@@ -6,41 +6,34 @@
   "Discrete",
   "BJT"
  ],
- "description": "Cluster of 8 tier-A discrete BJT parts in SOT-89-3 SMD packages rated for 32V, sourced from Alternate-KiCad-Library; distinguish entries by exact part suffix and footprint match.",
+ "description": "8 discrete bjt parts for 32V using SOT footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "All 8 entries are tier A with score 100 and share the SOT-89-3 footprint.",
-  "Distinguish between related part variants (e.g. 2DD1664, 2DD1664P, 2DD1664Q, 2DD1664R) by exact part number.",
-  "Confirm the SOT-89-3 land pattern matches the intended PCB footprint before use."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SOT land pattern is intended."
  ],
  "avoid_when": [
-  "The design requires a package other than SOT-89-3.",
-  "A required voltage, current, or other electrical rating beyond 32V is not confirmed for the selected part.",
-  "Pin-to-pad mapping cannot be verified for the specific part variant."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SOT."
  ],
  "keywords": [
   "sot",
-  "sot-89-3",
-  "sot89",
   "transistor",
   "bjt",
-  "discrete",
-  "32v",
-  "smd",
-  "akl",
-  "alternate-kicad-library",
-  "kicad",
-  "library",
-  "2dd1664",
-  "2dd1664p",
-  "2dd1664q",
-  "2dd1664r",
-  "2dd1766",
-  "tier a",
   "npn",
+  "32v",
+  "akl",
   "1w",
   "alternate",
+  "kicad",
+  "library",
+  "discrete",
+  "2dd1664",
+  "2dd1766",
   "1a",
-  "2a"
+  "2a",
+  "2dd1664p"
  ],
  "facts": {
   "package_family": "SOT",
@@ -63,7 +56,7 @@
   "tier_counts": {
    "A": 8
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -117,6 +110,6 @@
   "Alternate-KiCad-Library/Transistor_BJT_AKL/2DD1766Q",
   "Alternate-KiCad-Library/Transistor_BJT_AKL/2DD1766R"
  ],
- "embedding_text": "discrete-bjt.sot.32v | Discrete BJT | Cluster of 8 tier-A discrete BJT parts in SOT-89-3 SMD packages rated for 32V, sourced from Alternate-KiCad-Library; distinguish entries by exact part suffix and footprint match. | sot sot-89-3 sot89 transistor bjt discrete 32v smd akl alternate-kicad-library kicad library 2dd1664 2dd1664p 2dd1664q 2dd1664r 2dd1766 tier a npn 1w alternate 1a 2a | SOT | 32V",
+ "embedding_text": "discrete-bjt.sot.32v | Discrete BJT | 8 discrete bjt parts for 32V using SOT footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | sot transistor bjt npn 32v akl 1w alternate kicad library discrete 2dd1664 2dd1766 1a 2a 2dd1664p | SOT | 32V",
  "class": "discrete.bjt"
 }

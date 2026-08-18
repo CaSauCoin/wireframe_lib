@@ -7,32 +7,25 @@
   "Driver",
   "Display"
  ],
- "description": "Surface-mount display driver IC cluster with buck, boost, and 60V facets in TSSOP package footprints.",
+ "description": "2 ic driver display parts for buck, boost, 60V using TSSOP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select for display driver IC applications using buck or boost topology with 60V rating.",
-  "Choose based on required footprint between TSSOP-28-1EP and HTSSOP-20-1EP.",
-  "Confirm surface-mount TSSOP package family suitability."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a TSSOP land pattern is intended."
  ],
  "avoid_when": [
-  "The PCB layout requires through-hole or non-SMD component footprints.",
-  "The application requires a package family other than TSSOP or HTSSOP.",
-  "The circuit does not use buck or boost display driver IC topologies."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than TSSOP."
  ],
  "keywords": [
-  "ic",
   "driver",
-  "display",
-  "tssop",
-  "htssop",
+  "led",
   "buck",
   "boost",
+  "tssop",
   "60v",
-  "smd",
-  "lt8391xfe",
-  "tps92692pwp",
-  "tssop-28-1ep",
-  "htssop-20-1ep",
-  "led",
+  "htssop",
   "synchronous",
   "switch",
   "controller",
@@ -40,7 +33,8 @@
   "7mm",
   "p0",
   "65mm",
-  "so"
+  "so",
+  "ic"
  ],
  "facts": {
   "package_family": "TSSOP",
@@ -66,7 +60,7 @@
   "tier_counts": {
    "B": 2
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -90,6 +84,6 @@
   "kicad-symbols/Driver_LED/LT8391xFE",
   "kicad-symbols/Driver_LED/TPS92692PWP"
  ],
- "embedding_text": "ic-driver-display.tssop.buck.boost | IC Driver Display | Surface-mount display driver IC cluster with buck, boost, and 60V facets in TSSOP package footprints. | ic driver display tssop htssop buck boost 60v smd lt8391xfe tps92692pwp tssop-28-1ep htssop-20-1ep led synchronous switch controller 1ep 7mm p0 65mm so | TSSOP | buck boost 60V",
+ "embedding_text": "ic-driver-display.tssop.buck.boost | IC Driver Display | 2 ic driver display parts for buck, boost, 60V using TSSOP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | driver led buck boost tssop 60v htssop synchronous switch controller 1ep 7mm p0 65mm so ic | TSSOP | buck boost 60V",
  "class": "ic.driver.display"
 }

@@ -7,33 +7,27 @@
   "Driver",
   "Display"
  ],
- "description": "Display driver ICs featuring buck topology and 40V rating in SMD MSOP packages, such as AL8860MP with an MSOP-8-1EP footprint.",
+ "description": "1 ic driver display parts for buck, 40V using MSOP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when requiring a 40V buck display driver IC in an MSOP package family.",
-  "Choose for SMD designs matching the MSOP-8-1EP footprint.",
-  "Suitable when a Tier A verified KiCad symbol part like AL8860MP is needed."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a MSOP land pattern is intended."
  ],
  "avoid_when": [
-  "Avoid when the design requires a package family other than MSOP.",
-  "Do not use if through-hole mounting is required instead of SMD.",
-  "Avoid if non-buck topologies or voltage ratings other than 40V are specified."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than MSOP."
  ],
  "keywords": [
-  "ic",
   "driver",
-  "display",
+  "msop",
+  "led",
   "buck",
   "40v",
-  "msop",
-  "smd",
-  "al8860mp",
-  "msop-8-1ep",
-  "ic driver display",
-  "msop-8-1ep_3x3mm_p0.65mm_ep1.5x1.8mm",
-  "tier a",
-  "led",
   "constant",
   "current",
+  "ic",
+  "al8860mp",
   "5a",
   "1ep",
   "3x3mm",
@@ -64,7 +58,7 @@
   "tier_counts": {
    "A": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -79,6 +73,6 @@
  "part_ids": [
   "kicad-symbols/Driver_LED/AL8860MP"
  ],
- "embedding_text": "ic-driver-display.msop.buck.40v | IC Driver Display | Display driver ICs featuring buck topology and 40V rating in SMD MSOP packages, such as AL8860MP with an MSOP-8-1EP footprint. | ic driver display buck 40v msop smd al8860mp msop-8-1ep ic driver display msop-8-1ep_3x3mm_p0.65mm_ep1.5x1.8mm tier a led constant current 5a 1ep 3x3mm p0 65mm ep1 5x1 | MSOP | buck 40V",
+ "embedding_text": "ic-driver-display.msop.buck.40v | IC Driver Display | 1 ic driver display parts for buck, 40V using MSOP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | driver msop led buck 40v constant current ic al8860mp 5a 1ep 3x3mm p0 65mm ep1 5x1 | MSOP | buck 40V",
  "class": "ic.driver.display"
 }

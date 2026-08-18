@@ -6,34 +6,23 @@
   "IC",
   "Analog"
  ],
- "description": "Generic analog IC cluster containing 113 tier G parts from celestial-altium-library, Alternate-KiCad-Library, and kicad-symbols, with packages to be chosen later.",
+ "description": "113 ic analog parts with package chosen later. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select and assign an explicit footprint and package prior to layout.",
-  "Verify part specifications across sources including celestial-altium-library, Alternate-KiCad-Library, and kicad-symbols.",
-  "Confirm part details for tier G entries such as AD390 or AD558."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Select a footprint/package explicitly before placement."
  ],
  "avoid_when": [
-  "A predefined package or footprint is required immediately.",
-  "Parts must belong to higher quality tiers than tier G.",
-  "Pre-filtered mounts or specific analog sub-facets are needed upfront."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review."
  ],
  "keywords": [
-  "ic",
   "analog",
-  "ic.analog",
-  "generic",
-  "tier g",
-  "celestial-altium-library",
-  "alternate-kicad-library",
-  "kicad-symbols",
-  "ad390",
-  "ad558",
-  "ad775",
-  "analog dac",
-  "package chosen later",
+  "ic",
   "package",
   "chosen",
   "later",
+  "generic",
   "comparator",
   "pins",
   "dev",
@@ -41,7 +30,9 @@
   "akl",
   "symbol",
   "alternate",
-  "kicad"
+  "kicad",
+  "library",
+  "voltage"
  ],
  "facts": {
   "package_family": "package chosen later",
@@ -60,7 +51,7 @@
   "tier_counts": {
    "G": 113
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -219,6 +210,6 @@
   "celestial-altium-library/ANALOG DEV ADA4891-2ARZ R-8/ANALOG DEV ADA4891-2ARZ R-8",
   "celestial-altium-library/ANALOG DEV ADA4891-4WARUZ RU-14/ANALOG DEV ADA4891-4WARUZ RU-14"
  ],
- "embedding_text": "ic-analog.generic | IC Analog | Generic analog IC cluster containing 113 tier G parts from celestial-altium-library, Alternate-KiCad-Library, and kicad-symbols, with packages to be chosen later. | ic analog ic.analog generic tier g celestial-altium-library alternate-kicad-library kicad-symbols ad390 ad558 ad775 analog dac package chosen later package chosen later comparator pins dev cmp akl symbol alternate kicad | package chosen later | ",
+ "embedding_text": "ic-analog.generic | IC Analog | 113 ic analog parts with package chosen later. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | analog ic package chosen later generic comparator pins dev cmp akl symbol alternate kicad library voltage | package chosen later | ",
  "class": "ic.analog"
 }

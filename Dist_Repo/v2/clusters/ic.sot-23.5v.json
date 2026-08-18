@@ -5,42 +5,34 @@
  "category_path": [
   "IC"
  ],
- "description": "This cluster contains 11 surface-mount 5V integrated circuits in the SOT-23 package family.",
+ "description": "11 ic parts for 5V using SOT-23 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when requiring a surface-mount 5V IC in the SOT-23 package family.",
-  "Choose the specific footprint variant among SOT-23, SOT-23-6, SOT23-3, or TSOT-23-6.",
-  "Check part availability across KiCad Symbols, Alternate KiCad Library, and SparkFun KiCad Libraries."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SOT-23 land pattern is intended."
  ],
  "avoid_when": [
-  "Avoid when the design requires packages outside the SOT-23 family.",
-  "Avoid when surface-mount (SMD) mounting is not suitable.",
-  "Avoid when non-5V integrated circuits are required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SOT-23."
  ],
  "keywords": [
-  "ic",
-  "5v",
-  "sot-23",
-  "smd",
-  "sot-23-6",
-  "sot23-3",
-  "tsot-23-6",
-  "surface mount",
-  "lm5050-1",
-  "max6035xxur50",
-  "max6070aaut50+t",
-  "kicad-symbols",
   "sot",
   "voltage",
+  "5v",
   "reference",
   "precision",
+  "ic",
   "low",
   "noise",
   "high",
   "to",
+  "smd",
   "series",
   "initial",
   "accuracy",
-  "regulator"
+  "regulator",
+  "power"
  ],
  "facts": {
   "package_family": "SOT-23",
@@ -68,7 +60,7 @@
   "tier_counts": {
    "A": 11
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -125,6 +117,6 @@
   "Alternate-KiCad-Library/Voltage_Regulator_AKL/TS78L05CX-RFG",
   "Alternate-KiCad-Library/Voltage_Regulator_AKL/ZMR500FTA"
  ],
- "embedding_text": "ic.sot-23.5v | IC | This cluster contains 11 surface-mount 5V integrated circuits in the SOT-23 package family. | ic 5v sot-23 smd sot-23-6 sot23-3 tsot-23-6 surface mount lm5050-1 max6035xxur50 max6070aaut50+t kicad-symbols sot voltage reference precision low noise high to series initial accuracy regulator | SOT-23 | 5V",
+ "embedding_text": "ic.sot-23.5v | IC | 11 ic parts for 5V using SOT-23 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | sot voltage 5v reference precision ic low noise high to smd series initial accuracy regulator power | SOT-23 | 5V",
  "class": "ic"
 }

@@ -6,44 +6,34 @@
   "Discrete",
   "Diode"
  ],
- "description": "Cluster of 25 Schottky diode parts rated for 80V in TO-family footprints (TO-247, TO-263, TO-220, TO-252, TO-92S, TO-277B variants) with SMD and through-hole mounts, sourced from Alternate-KiCad-Library.",
+ "description": "25 discrete diode parts for 80V using TO footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Match the exact TO footprint variant (e.g. TO-247-3_Vertical_AKA vs TO-263-2) to the intended PCB land pattern.",
-  "Prefer tier A entries (23 of 25 parts) over the 2 tier B entries.",
-  "Confirm mount type, SMD or through-hole, matches the assembly process.",
-  "Check footprint suffixes (AKA, KA, TabPin1) for pin arrangement differences before committing a layout."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a TO land pattern is intended."
  ],
  "avoid_when": [
-  "The needed voltage, current, or speed rating is not covered by the 80V facet or stated by the selected part.",
-  "The board requires a package outside the TO family.",
-  "Only a tier B part fits and the footprint match is unverified.",
-  "Symbol-footprint pairing has not been reviewed (review_status is generated, not confirmed)."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than TO."
  ],
  "keywords": [
-  "to package",
+  "to",
   "diode",
   "schottky",
   "80v",
-  "to-247",
-  "to-263",
-  "to-220",
-  "to-252",
-  "to-92s",
-  "to-277b",
-  "smd",
-  "through hole",
-  "discrete diode",
-  "alternate kicad library",
-  "akl",
-  "vertical package",
-  "tabpin1",
-  "package family to",
-  "to",
   "dual",
   "vertical",
+  "akl",
   "alternate",
   "kicad",
-  "library"
+  "library",
+  "discrete",
+  "common",
+  "cathode",
+  "commoncathode",
+  "rm",
+  "d2pak"
  ],
  "facts": {
   "package_family": "TO",
@@ -78,7 +68,7 @@
    "A": 23,
    "B": 2
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -149,6 +139,6 @@
   "Alternate-KiCad-Library/Diode_AKL/1SS200",
   "Alternate-KiCad-Library/Diode_AKL/1SS201"
  ],
- "embedding_text": "discrete-diode.to.80v | Discrete Diode | Cluster of 25 Schottky diode parts rated for 80V in TO-family footprints (TO-247, TO-263, TO-220, TO-252, TO-92S, TO-277B variants) with SMD and through-hole mounts, sourced from Alternate-KiCad-Library. | to package diode schottky 80v to-247 to-263 to-220 to-252 to-92s to-277b smd through hole discrete diode alternate kicad library akl vertical package tabpin1 package family to to dual vertical alternate kicad library | TO | 80V",
+ "embedding_text": "discrete-diode.to.80v | Discrete Diode | 25 discrete diode parts for 80V using TO footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | to diode schottky 80v dual vertical akl alternate kicad library discrete common cathode commoncathode rm d2pak | TO | 80V",
  "class": "discrete.diode"
 }

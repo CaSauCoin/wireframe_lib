@@ -5,28 +5,20 @@
  "category_path": [
   "IC"
  ],
- "description": "Integrated circuit component cluster containing 2 parts associated with HDR5X2 footprints including HDR5X2_F and HDR5X2_M.",
+ "description": "2 ic parts using HDR5X2 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Verify compatibility with HDR5X2_F or HDR5X2_M footprint variants.",
-  "Evaluate part quality tier and source data before selection.",
-  "Ensure electrical specifications and pin definitions are suitable for the design."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a HDR5X2 land pattern is intended."
  ],
  "avoid_when": [
-  "The board layout requires a footprint other than HDR5X2.",
-  "Electrical ratings, pinouts, or tolerances are unspecified.",
-  "Parts with planner visibility or higher quality tier ratings are required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than HDR5X2."
  ],
  "keywords": [
-  "ic",
   "hdr5x2",
-  "hdr5x2_f",
-  "hdr5x2_m",
-  "integrated circuit",
-  "hdr5x2 footprint",
-  "hdr5x2 package",
-  "package family hdr5x2",
-  "ic component",
-  "tier c part",
+  "ic",
   "pad",
   "mm",
   "pitch",
@@ -52,13 +44,13 @@
   "tier_counts": {
    "C": 2
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
   "dist-legacy/HDR5X2_F",
   "dist-legacy/HDR5X2_M"
  ],
- "embedding_text": "ic.hdr5x2 | IC | Integrated circuit component cluster containing 2 parts associated with HDR5X2 footprints including HDR5X2_F and HDR5X2_M. | ic hdr5x2 hdr5x2_f hdr5x2_m integrated circuit hdr5x2 footprint hdr5x2 package package family hdr5x2 ic component tier c part pad mm pitch pins | HDR5X2 | ",
+ "embedding_text": "ic.hdr5x2 | IC | 2 ic parts using HDR5X2 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | hdr5x2 ic pad mm pitch pins | HDR5X2 | ",
  "class": "ic"
 }

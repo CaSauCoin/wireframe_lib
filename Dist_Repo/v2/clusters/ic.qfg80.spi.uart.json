@@ -5,42 +5,34 @@
  "category_path": [
   "IC"
  ],
- "description": "SMD integrated circuits in the QFG80 package family featuring SPI and UART/serial interfaces across QFG80_32, QFG80_44, and QFG80_64 footprints.",
+ "description": "6 ic parts for SPI, UART/serial using QFG80 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select based on the required footprint variant (QFG80_32, QFG80_44, or QFG80_64).",
-  "Choose when surface-mount (SMD) SPI or UART/serial ICs are needed.",
-  "Verify part selection against Chilaboard Altium library component options."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a QFG80 land pattern is intended."
  ],
  "avoid_when": [
-  "The board layout requires packaging outside the QFG80 family.",
-  "Through-hole or non-SMD mounting is required.",
-  "The design requires interfaces other than SPI or UART/serial."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than QFG80."
  ],
  "keywords": [
   "ic",
-  "smd",
   "spi",
   "uart",
-  "serial",
   "qfg80",
-  "qfg80_32",
-  "qfg80_44",
-  "qfg80_64",
-  "atmega169a",
-  "atmega48pa",
-  "atmega8",
-  "qt60166",
-  "qt60326",
   "touch",
   "controller",
   "and",
   "qfp44",
   "qfp",
+  "serial",
   "matrix",
   "microcontroller",
   "in",
   "pin",
-  "package"
+  "package",
+  "qfp32"
  ],
  "facts": {
   "package_family": "QFG80",
@@ -66,7 +58,7 @@
   "tier_counts": {
    "B": 6
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -118,6 +110,6 @@
   "chilaboard-altium-library/QT60326_QFP44/QT60326_QFP44",
   "chilaboard-altium-library/QT60486_QFP44/QT60486_QFP44"
  ],
- "embedding_text": "ic.qfg80.spi.uart | IC | SMD integrated circuits in the QFG80 package family featuring SPI and UART/serial interfaces across QFG80_32, QFG80_44, and QFG80_64 footprints. | ic smd spi uart serial qfg80 qfg80_32 qfg80_44 qfg80_64 atmega169a atmega48pa atmega8 qt60166 qt60326 touch controller and qfp44 qfp matrix microcontroller in pin package | QFG80 | SPI UART/serial",
+ "embedding_text": "ic.qfg80.spi.uart | IC | 6 ic parts for SPI, UART/serial using QFG80 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | ic spi uart qfg80 touch controller and qfp44 qfp serial matrix microcontroller in pin package qfp32 | QFG80 | SPI UART/serial",
  "class": "ic"
 }

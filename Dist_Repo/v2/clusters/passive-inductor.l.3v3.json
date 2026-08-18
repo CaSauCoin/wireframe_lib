@@ -6,32 +6,25 @@
   "Passive",
   "Inductor"
  ],
- "description": "Surface-mount passive inductor cluster associated with 3.3V applications and L package footprints including L_Cenker_CKCS5040, L_Murata_DEM3512C, and L_Murata_DEM3518C.",
+ "description": "3 passive inductor parts for 3.3V using L footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select for 3.3V surface-mount passive inductor applications.",
-  "Match against specific footprints: L_Cenker_CKCS5040, L_Murata_DEM3512C, or L_Murata_DEM3518C.",
-  "Verify part specifications prior to layout commitment as all entries are Tier C."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a L land pattern is intended."
  ],
  "avoid_when": [
-  "Through-hole mounting is required.",
-  "The design requires footprint families other than L.",
-  "Operating requirements do not align with the 3.3V facet."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than L."
  ],
  "keywords": [
-  "passive",
-  "inductor",
-  "3.3v",
-  "smd",
-  "surface mount",
-  "l",
-  "cenker",
   "murata",
-  "ckcs5040",
+  "inductor",
   "dem3512c",
   "dem3518c",
-  "l_cenker_ckcs5040",
-  "l_murata_dem3512c",
-  "l_murata_dem3518c",
+  "cenker",
+  "ckcs5040",
+  "passive",
   "surface",
   "mount",
   "pad",
@@ -65,7 +58,7 @@
   "tier_counts": {
    "C": 3
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
@@ -73,6 +66,6 @@
   "dist-legacy/L_Murata_DEM3512C",
   "dist-legacy/L_Murata_DEM3518C"
  ],
- "embedding_text": "passive-inductor.l.3v3 | Passive Inductor | Surface-mount passive inductor cluster associated with 3.3V applications and L package footprints including L_Cenker_CKCS5040, L_Murata_DEM3512C, and L_Murata_DEM3518C. | passive inductor 3.3v smd surface mount l cenker murata ckcs5040 dem3512c dem3518c l_cenker_ckcs5040 l_murata_dem3512c l_murata_dem3518c surface mount pad mm pitch pins package https www | L | 3.3V",
+ "embedding_text": "passive-inductor.l.3v3 | Passive Inductor | 3 passive inductor parts for 3.3V using L footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | murata inductor dem3512c dem3518c cenker ckcs5040 passive surface mount pad mm pitch pins package https www | L | 3.3V",
  "class": "passive.inductor"
 }

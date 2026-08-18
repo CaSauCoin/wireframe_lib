@@ -5,41 +5,34 @@
  "category_path": [
   "IC"
  ],
- "description": "Surface-mount IC cluster featuring four tier B parts for UART/serial applications in the AP625X package family using the AP625X_44_12X12 footprint.",
+ "description": "4 ic parts for UART/serial using AP625X footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when requiring an SMD IC for UART/serial applications.",
-  "Choose between AP6255, AP6256, AP6212, or AP6330 based on specific part requirements.",
-  "Verify compatibility with the AP625X_44_12X12 surface-mount footprint."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a AP625X land pattern is intended."
  ],
  "avoid_when": [
-  "Through-hole mounting is required instead of SMD.",
-  "The PCB layout requires a footprint other than AP625X_44_12X12.",
-  "Applications require non-serial interfaces or non-IC components."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than AP625X."
  ],
  "keywords": [
-  "ic",
-  "uart",
-  "serial",
-  "ap625x",
-  "smd",
-  "ap625x_44_12x12",
-  "ap6255",
-  "ap6256",
-  "ap6212",
-  "ap6330",
-  "chilaboard-altium-library",
-  "uart/serial",
   "module",
+  "uart",
   "bluetooth",
   "and",
   "sdio",
+  "ap625x",
   "wireless",
   "pcm",
   "wifi",
   "wi",
   "fi",
   "12x12",
-  "combo"
+  "ic",
+  "serial",
+  "combo",
+  "ap6330"
  ],
  "facts": {
   "package_family": "AP625X",
@@ -62,7 +55,7 @@
   "tier_counts": {
    "B": 4
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -104,6 +97,6 @@
   "chilaboard-altium-library/AP6212/AP6212",
   "chilaboard-altium-library/AP6330/AP6330"
  ],
- "embedding_text": "ic.ap625x.uart | IC | Surface-mount IC cluster featuring four tier B parts for UART/serial applications in the AP625X package family using the AP625X_44_12X12 footprint. | ic uart serial ap625x smd ap625x_44_12x12 ap6255 ap6256 ap6212 ap6330 chilaboard-altium-library uart/serial module bluetooth and sdio wireless pcm wifi wi fi 12x12 combo | AP625X | UART/serial",
+ "embedding_text": "ic.ap625x.uart | IC | 4 ic parts for UART/serial using AP625X footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | module uart bluetooth and sdio ap625x wireless pcm wifi wi fi 12x12 ic serial combo ap6330 | AP625X | UART/serial",
  "class": "ic"
 }

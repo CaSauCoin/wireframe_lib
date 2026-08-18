@@ -5,33 +5,24 @@
  "category_path": [
   "IC"
  ],
- "description": "Surface-mount 36V integrated circuit cluster in an HVSSOP footprint, containing tier-B component data from KiCad symbols.",
+ "description": "1 ic parts for 36V using HVSSOP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Designs requiring a 36V rated integrated circuit in an SMD HVSSOP package.",
-  "Targeting the HVSSOP-10-1EP_3x3mm_P0.5mm_EP1.83x1.89mm land pattern.",
-  "Accepting tier-B components sourced from KiCad symbols."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a HVSSOP land pattern is intended."
  ],
  "avoid_when": [
-  "The PCB layout requires a package family other than HVSSOP.",
-  "The design requires operating ratings other than 36V.",
-  "Through-hole mounting or non-SMD packages are required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than HVSSOP."
  ],
  "keywords": [
-  "ic",
-  "36v",
   "hvssop",
-  "smd",
-  "sn6507dgq",
-  "kicad-symbols",
-  "power management",
-  "integrated circuit",
-  "surface mount",
-  "hvssop-10-1ep",
-  "tier b",
-  "3x3mm",
   "power",
+  "36v",
   "transformer",
   "drivers",
+  "sn6507dgq",
   "management",
   "low",
   "noise",
@@ -40,7 +31,8 @@
   "spectrum",
   "push",
   "pull",
-  "for"
+  "for",
+  "isolated"
  ],
  "facts": {
   "package_family": "HVSSOP",
@@ -63,7 +55,7 @@
   "tier_counts": {
    "B": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -78,6 +70,6 @@
  "part_ids": [
   "kicad-symbols/Power_Management/SN6507DGQ"
  ],
- "embedding_text": "ic.hvssop.36v | IC | Surface-mount 36V integrated circuit cluster in an HVSSOP footprint, containing tier-B component data from KiCad symbols. | ic 36v hvssop smd sn6507dgq kicad-symbols power management integrated circuit surface mount hvssop-10-1ep tier b 3x3mm power transformer drivers management low noise 5a spread spectrum push pull for | HVSSOP | 36V",
+ "embedding_text": "ic.hvssop.36v | IC | 1 ic parts for 36V using HVSSOP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | hvssop power 36v transformer drivers sn6507dgq management low noise 5a spread spectrum push pull for isolated | HVSSOP | 36V",
  "class": "ic"
 }

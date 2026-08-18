@@ -6,42 +6,34 @@
   "IC",
   "RF"
  ],
- "description": "Cluster of 13 surface-mount (SMD) RF IC parts from KiCad symbols using Quectel footprints such as Quectel_BG95, Quectel_BC66, and Quectel_BC95.",
+ "description": "13 ic rf parts using Quectel footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when a surface-mount (SMD) RF IC with a Quectel footprint is required.",
-  "Choose the specific footprint variant such as Quectel_BG95, Quectel_BC66, Quectel_BC95, Quectel_L70-R, Quectel_L80-R, or Quectel_M95.",
-  "Match the part designation such as BC66, BC95, or BG95 variants from the 13 available KiCad symbol entries."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a Quectel land pattern is intended."
  ],
  "avoid_when": [
-  "A non-surface-mount (SMD) package or through-hole mounting is required.",
-  "The layout requires a footprint other than the specified Quectel footprints.",
-  "Parts outside the IC RF category class are needed."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than Quectel."
  ],
  "keywords": [
-  "ic",
-  "rf",
   "quectel",
-  "smd",
-  "bg95",
-  "bc66",
-  "bc95",
-  "l70-r",
-  "l80-r",
-  "m95",
-  "kicad",
-  "ic rf",
-  "surface mount",
-  "bg95-m1",
-  "bg95-m2",
-  "bg95-m3",
   "nb",
   "iot",
+  "rf",
   "gsm",
   "module",
+  "bg95",
   "cat",
   "m1",
   "nb2",
-  "at"
+  "ic",
+  "at",
+  "gnss",
+  "command",
+  "set",
+  "communication"
  ],
  "facts": {
   "package_family": "Quectel",
@@ -67,7 +59,7 @@
   "tier_counts": {
    "B": 13
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -126,6 +118,6 @@
   "kicad-symbols/RF_GPS/L80-R",
   "kicad-symbols/RF_GSM/M95"
  ],
- "embedding_text": "ic-rf.quectel | IC RF | Cluster of 13 surface-mount (SMD) RF IC parts from KiCad symbols using Quectel footprints such as Quectel_BG95, Quectel_BC66, and Quectel_BC95. | ic rf quectel smd bg95 bc66 bc95 l70-r l80-r m95 kicad ic rf surface mount bg95-m1 bg95-m2 bg95-m3 nb iot gsm module cat m1 nb2 at | Quectel | ",
+ "embedding_text": "ic-rf.quectel | IC RF | 13 ic rf parts using Quectel footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | quectel nb iot rf gsm module bg95 cat m1 nb2 ic at gnss command set communication | Quectel | ",
  "class": "ic.rf"
 }

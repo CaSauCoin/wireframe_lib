@@ -6,31 +6,20 @@
   "IC",
   "Interface"
  ],
- "description": "Cluster of 4 Tier A surface-mount UART/serial interface ICs in SOIC-16 (3.9x9.9mm, 1.27mm pitch) footprints.",
+ "description": "4 ic interface parts for UART/serial using SOIC footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select for surface-mount UART or serial interface IC applications using SOIC-16 packages.",
-  "Verify compatibility with the SOIC-16_3.9x9.9mm_P1.27mm footprint.",
-  "Choose from Tier A interface parts LTC1518, LTC1519, LTC1688, and LTC1689."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SOIC land pattern is intended."
  ],
  "avoid_when": [
-  "Layout requires non-SOIC packages or footprints other than SOIC-16 (3.9x9.9mm, 1.27mm pitch).",
-  "Through-hole or non-SMD mounting is required.",
-  "Interface types other than UART or serial are required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SOIC."
  ],
  "keywords": [
-  "ic",
-  "interface",
-  "uart",
-  "serial",
   "soic",
-  "soic-16",
-  "smd",
-  "3.9x9.9mm",
-  "p1.27mm",
-  "ltc1518",
-  "ltc1519",
-  "ltc1688",
-  "ltc1689",
+  "interface",
   "rs485",
   "quad",
   "9x9",
@@ -41,7 +30,10 @@
   "pin",
   "nsop",
   "d0016a",
-  "m2b"
+  "m2b",
+  "so16",
+  "sot109",
+  "751b"
  ],
  "facts": {
   "package_family": "SOIC",
@@ -64,7 +56,7 @@
   "tier_counts": {
    "A": 4
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -106,6 +98,6 @@
   "kicad-symbols/Interface/LTC1688",
   "kicad-symbols/Interface/LTC1689"
  ],
- "embedding_text": "ic-interface.soic.uart | IC Interface | Cluster of 4 Tier A surface-mount UART/serial interface ICs in SOIC-16 (3.9x9.9mm, 1.27mm pitch) footprints. | ic interface uart serial soic soic-16 smd 3.9x9.9mm p1.27mm ltc1518 ltc1519 ltc1688 ltc1689 rs485 quad 9x9 9mm p1 27mm so pin nsop d0016a m2b | SOIC | UART/serial",
+ "embedding_text": "ic-interface.soic.uart | IC Interface | 4 ic interface parts for UART/serial using SOIC footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | soic interface rs485 quad 9x9 9mm p1 27mm so pin nsop d0016a m2b so16 sot109 751b | SOIC | UART/serial",
  "class": "ic.interface"
 }

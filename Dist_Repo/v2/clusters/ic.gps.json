@@ -5,32 +5,22 @@
  "category_path": [
   "IC"
  ],
- "description": "Surface-mount GPS receiver IC cluster featuring footprints such as GPS_NEO, GPS_Module_CAM-M8C-0, GPS_GM22, GPS_MAX, and GPS_LEA across 9 parts.",
+ "description": "9 ic parts using GPS footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select based on specific footprint requirements such as GPS_NEO, GPS_Module_CAM-M8C-0, GPS_GM22, GPS_MAX, or GPS_LEA.",
-  "Verify part source between chilaboard-altium-library and digikey-kicad-library.",
-  "Choose among available Tier B and Tier C quality ratings."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a GPS land pattern is intended."
  ],
  "avoid_when": [
-  "The PCB design requires through-hole components rather than surface-mount (SMD).",
-  "The required footprint is not included among the supported GPS footprint patterns."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than GPS."
  ],
  "keywords": [
   "gps",
-  "ic",
-  "smd",
-  "gps receiver",
-  "rf receiver",
-  "gps_neo",
-  "gps_module_cam-m8c-0",
-  "gps_gm22",
-  "gps_max",
-  "gps_lea",
-  "cam-m8c-0-10",
-  "neo-6q",
-  "neo-m8m",
   "neo",
   "module",
+  "ic",
   "rf",
   "receiver",
   "gnss",
@@ -39,7 +29,10 @@
   "and",
   "gm22",
   "max",
-  "lea"
+  "lea",
+  "input",
+  "serial",
+  "interfaces"
  ],
  "facts": {
   "package_family": "GPS",
@@ -66,7 +59,7 @@
    "B": 5,
    "C": 4
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -121,6 +114,6 @@
   "chilaboard-altium-library/GPS_NEO/GPS_NEO",
   "chilaboard-altium-library/GPS_LEA/GPS_LEA"
  ],
- "embedding_text": "ic.gps | IC | Surface-mount GPS receiver IC cluster featuring footprints such as GPS_NEO, GPS_Module_CAM-M8C-0, GPS_GM22, GPS_MAX, and GPS_LEA across 9 parts. | gps ic smd gps receiver rf receiver gps_neo gps_module_cam-m8c-0 gps_gm22 gps_max gps_lea cam-m8c-0-10 neo-6q neo-m8m neo module rf receiver gnss surface mount and gm22 max lea | GPS | ",
+ "embedding_text": "ic.gps | IC | 9 ic parts using GPS footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | gps neo module ic rf receiver gnss surface mount and gm22 max lea input serial interfaces | GPS | ",
  "class": "ic"
 }

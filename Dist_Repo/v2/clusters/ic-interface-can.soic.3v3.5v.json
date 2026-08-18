@@ -7,42 +7,34 @@
   "Interface",
   "CAN"
  ],
- "description": "Surface-mount CAN interface ICs in SOIC-8 and SOIC-14 packages for 3.3V and 5V applications.",
+ "description": "3 ic interface can parts for 3.3V, 5V, CAN using SOIC footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select SOIC-8 (3.9x4.9mm) or SOIC-14 (3.9x8.7mm) footprint based on part pin count.",
-  "Verify operating voltage compatibility with 3.3V or 5V system requirements.",
-  "Confirm standard 1.27mm lead pitch matches PCB layout rules."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SOIC land pattern is intended."
  ],
  "avoid_when": [
-  "The PCB layout requires non-SOIC or through-hole packages.",
-  "The target design requires operating voltages outside 3.3V or 5V.",
-  "Footprints with a pitch other than 1.27mm are required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SOIC."
  ],
  "keywords": [
   "soic",
   "can",
-  "interface ic",
-  "can interface",
-  "3.3v",
-  "5v",
-  "smd",
-  "soic-8",
-  "soic-14",
-  "ltc2875",
-  "mcp2021a",
-  "mcp2022a",
-  "1.27mm pitch",
   "lin",
   "interface",
   "transceiver",
   "3v",
+  "5v",
   "regulator",
   "p1",
   "27mm",
   "so",
   "ic",
   "high",
-  "speed"
+  "speed",
+  "9x4",
+  "9mm"
  ],
  "facts": {
   "package_family": "SOIC",
@@ -68,7 +60,7 @@
   "tier_counts": {
    "A": 3
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -101,6 +93,6 @@
   "kicad-symbols/Interface_CAN_LIN/MCP2021A-xxxxSN",
   "kicad-symbols/Interface_CAN_LIN/MCP2022A-xxxxSL"
  ],
- "embedding_text": "ic-interface-can.soic.3v3.5v | IC Interface CAN | Surface-mount CAN interface ICs in SOIC-8 and SOIC-14 packages for 3.3V and 5V applications. | soic can interface ic can interface 3.3v 5v smd soic-8 soic-14 ltc2875 mcp2021a mcp2022a 1.27mm pitch lin interface transceiver 3v regulator p1 27mm so ic high speed | SOIC | 3.3V 5V CAN",
+ "embedding_text": "ic-interface-can.soic.3v3.5v | IC Interface CAN | 3 ic interface can parts for 3.3V, 5V, CAN using SOIC footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | soic can lin interface transceiver 3v 5v regulator p1 27mm so ic high speed 9x4 9mm | SOIC | 3.3V 5V CAN",
  "class": "ic.interface.can"
 }

@@ -6,28 +6,21 @@
   "Discrete",
   "Transistor"
  ],
- "description": "Discrete transistor cluster containing 1 tier C part associated with CONSMD2 footprints and legacy distribution sourcing.",
+ "description": "1 discrete transistor parts using CONSMD2 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Use when a discrete transistor with a CONSMD2 package footprint is required.",
-  "Verify footprint dimensions and pin mapping since mount type is unknown.",
-  "Review tier C quality classification and dist-legacy source before selection."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a CONSMD2 land pattern is intended."
  ],
  "avoid_when": [
-  "The design requires a footprint package other than CONSMD2.",
-  "Parts with verified mount specifications or higher quality tiers are required.",
-  "Legacy distributor data alone does not meet project verification standards."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than CONSMD2."
  ],
  "keywords": [
   "consmd2",
   "discrete",
   "transistor",
-  "discrete transistor",
-  "consmd2 footprint",
-  "consmd2 package",
-  "dist-legacy",
-  "tier c",
-  "discrete.transistor",
-  "package family consmd2",
   "pad",
   "mm",
   "pitch",
@@ -52,12 +45,12 @@
   "tier_counts": {
    "C": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
   "dist-legacy/CONSMD2"
  ],
- "embedding_text": "discrete-transistor.consmd2 | Discrete Transistor | Discrete transistor cluster containing 1 tier C part associated with CONSMD2 footprints and legacy distribution sourcing. | consmd2 discrete transistor discrete transistor consmd2 footprint consmd2 package dist-legacy tier c discrete.transistor package family consmd2 pad mm pitch pins | CONSMD2 | ",
+ "embedding_text": "discrete-transistor.consmd2 | Discrete Transistor | 1 discrete transistor parts using CONSMD2 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | consmd2 discrete transistor pad mm pitch pins | CONSMD2 | ",
  "class": "discrete.transistor"
 }

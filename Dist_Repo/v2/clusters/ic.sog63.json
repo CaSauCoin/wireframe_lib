@@ -5,34 +5,20 @@
  "category_path": [
   "IC"
  ],
- "description": "Integrated circuit cluster of 13 surface-mount parts using SOG63 package family footprints such as SOG63_16, SOG63_20, SOG63_24, SOG63_28, SOG63_48, SOG63_56, and SOG63_16T.",
+ "description": "13 ic parts using SOG63 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select based on the required footprint variant such as SOG63_16, SOG63_20, SOG63_24, SOG63_28, SOG63_48, SOG63_56, or SOG63_16T.",
-  "Check quality tier ratings, offering 4 tier B parts and 9 tier C parts.",
-  "Ensure compatibility with surface-mount (SMD) packaging."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SOG63 land pattern is intended."
  ],
  "avoid_when": [
-  "The design requires through-hole components rather than surface-mount (SMD).",
-  "The required footprint is outside the SOG63 package family.",
-  "The application specifically mandates a tier A quality part."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SOG63."
  ],
  "keywords": [
-  "ic",
   "sog63",
-  "smd",
-  "surface mount",
-  "sog63_16",
-  "sog63_20",
-  "sog63_24",
-  "sog63_28",
-  "sog63_48",
-  "sog63_56",
-  "sog63_16t",
-  "chilaboard-altium-library",
-  "iso7741_ssop16",
-  "idtqs3vh253_qsop16",
-  "ttp229-b_ssop28",
-  "ad8330_qsop16",
+  "ic",
   "surface",
   "mount",
   "pad",
@@ -40,7 +26,13 @@
   "pitch",
   "pins",
   "qsop24",
-  "pin"
+  "pin",
+  "qsop16",
+  "16t",
+  "isolator",
+  "in",
+  "package",
+  "ttp229"
  ],
  "facts": {
   "package_family": "SOG63",
@@ -68,7 +60,7 @@
    "B": 4,
    "C": 9
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -119,6 +111,6 @@
   "chilaboard-altium-library/SOG63_16T/SOG63_16T",
   "chilaboard-altium-library/SOG63_24/SOG63_24"
  ],
- "embedding_text": "ic.sog63 | IC | Integrated circuit cluster of 13 surface-mount parts using SOG63 package family footprints such as SOG63_16, SOG63_20, SOG63_24, SOG63_28, SOG63_48, SOG63_56, and SOG63_16T. | ic sog63 smd surface mount sog63_16 sog63_20 sog63_24 sog63_28 sog63_48 sog63_56 sog63_16t chilaboard-altium-library iso7741_ssop16 idtqs3vh253_qsop16 ttp229-b_ssop28 ad8330_qsop16 surface mount pad mm pitch pins qsop24 pin | SOG63 | ",
+ "embedding_text": "ic.sog63 | IC | 13 ic parts using SOG63 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | sog63 ic surface mount pad mm pitch pins qsop24 pin qsop16 16t isolator in package ttp229 | SOG63 | ",
  "class": "ic"
 }

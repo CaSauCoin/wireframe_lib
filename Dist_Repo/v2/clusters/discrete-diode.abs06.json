@@ -6,27 +6,21 @@
   "Discrete",
   "Diode"
  ],
- "description": "A cluster containing 1 discrete diode part associated with the ABS06 package family and footprint.",
+ "description": "1 discrete diode parts using ABS06 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Choose when requiring a discrete diode in an ABS06 package family and footprint.",
-  "Check part details and mounting requirements as mount type is marked unknown.",
-  "Evaluate part suitability considering the tier C quality classification."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a ABS06 land pattern is intended."
  ],
  "avoid_when": [
-  "The design requires a package other than ABS06.",
-  "A component type other than a discrete diode is required.",
-  "Tier C parts or dist-legacy sources are not acceptable for the application."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than ABS06."
  ],
  "keywords": [
   "abs06",
   "discrete",
   "diode",
-  "discrete diode",
-  "abs06 package",
-  "abs06 footprint",
-  "discrete.diode",
-  "tier c",
-  "dist-legacy",
   "pad",
   "mm",
   "pitch",
@@ -51,12 +45,12 @@
   "tier_counts": {
    "C": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
   "dist-legacy/ABS06"
  ],
- "embedding_text": "discrete-diode.abs06 | Discrete Diode | A cluster containing 1 discrete diode part associated with the ABS06 package family and footprint. | abs06 discrete diode discrete diode abs06 package abs06 footprint discrete.diode tier c dist-legacy pad mm pitch pins | ABS06 | ",
+ "embedding_text": "discrete-diode.abs06 | Discrete Diode | 1 discrete diode parts using ABS06 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | abs06 discrete diode pad mm pitch pins | ABS06 | ",
  "class": "discrete.diode"
 }

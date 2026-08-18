@@ -6,39 +6,32 @@
   "IC",
   "Memory"
  ],
- "description": "Memory IC cluster for 3.3V applications with package selection determined later, containing symbol entry IDT71V65903S from KiCad symbols.",
+ "description": "1 ic memory parts for 3.3V with package chosen later. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when a 3.3V memory IC symbol is needed with package chosen later.",
-  "Explicitly assign a footprint and package before PCB placement.",
-  "Verify part quality tier and source trust prior to committing to design."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Select a footprint/package explicitly before placement."
  ],
  "avoid_when": [
-  "Operating supply voltage differs from 3.3V.",
-  "A pre-defined footprint or physical package is required immediately.",
-  "Tier G review status or unverified symbol footprint pairing is unacceptable."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review."
  ],
  "keywords": [
-  "ic memory",
-  "memory ic",
-  "3.3v",
-  "ram",
-  "idt71v65903s",
-  "kicad-symbols",
-  "package chosen later",
-  "ic",
   "memory",
-  "tier g",
-  "synchronous",
-  "srams",
   "3v",
+  "idt71v65903s",
+  "ram",
   "pins",
   "bga",
   "high",
   "speed",
   "megabit",
+  "synchronous",
+  "srams",
   "512k",
   "or",
   "256k",
+  "ic",
   "package"
  ],
  "facts": {
@@ -58,7 +51,7 @@
   "tier_counts": {
    "G": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -73,6 +66,6 @@
  "part_ids": [
   "kicad-symbols/Memory_RAM/IDT71V65903S"
  ],
- "embedding_text": "ic-memory.generic.3v3 | IC Memory | Memory IC cluster for 3.3V applications with package selection determined later, containing symbol entry IDT71V65903S from KiCad symbols. | ic memory memory ic 3.3v ram idt71v65903s kicad-symbols package chosen later ic memory tier g synchronous srams 3v pins bga high speed megabit 512k or 256k package | package chosen later | 3.3V",
+ "embedding_text": "ic-memory.generic.3v3 | IC Memory | 1 ic memory parts for 3.3V with package chosen later. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | memory 3v idt71v65903s ram pins bga high speed megabit synchronous srams 512k or 256k ic package | package chosen later | 3.3V",
  "class": "ic.memory"
 }

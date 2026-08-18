@@ -6,38 +6,30 @@
   "Passive",
   "Resistor"
  ],
- "description": "A cluster of 3 surface-mount resistor and digital potentiometer components from KiCad symbols in TSSOP packages with 14, 16, or 20 pins.",
+ "description": "3 passive resistor parts using TSSOP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Match the required pin count and footprint such as TSSOP-14, TSSOP-16, or TSSOP-20.",
-  "Select based on specific digital potentiometer part numbers such as DS1267, DS1882E, or X9118.",
-  "Verify SMD pad pitch and body dimensions against the target PCB layout."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a TSSOP land pattern is intended."
  ],
  "avoid_when": [
-  "A package family other than TSSOP is required.",
-  "Through-hole mounting or non-SMD mounting is needed.",
-  "A pin count other than 14, 16, or 20 is required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than TSSOP."
  ],
  "keywords": [
-  "passive",
-  "resistor",
   "tssop",
   "potentiometer",
-  "digital potentiometer",
-  "smd",
-  "ds1267",
-  "ds1882e",
-  "x9118",
-  "tssop-14",
-  "tssop-16",
-  "tssop-20",
-  "kicad",
   "digital",
   "dual",
   "p0",
   "65mm",
   "so",
+  "passive",
+  "resistor",
   "steps",
   "4x5mm",
+  "ds1267",
   "serial",
   "4x6",
   "5mm",
@@ -64,7 +56,7 @@
   "tier_counts": {
    "A": 3
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -97,6 +89,6 @@
   "kicad-symbols/Potentiometer_Digital/DS1882E",
   "kicad-symbols/Potentiometer_Digital/X9118"
  ],
- "embedding_text": "passive-resistor.tssop | Passive Resistor | A cluster of 3 surface-mount resistor and digital potentiometer components from KiCad symbols in TSSOP packages with 14, 16, or 20 pins. | passive resistor tssop potentiometer digital potentiometer smd ds1267 ds1882e x9118 tssop-14 tssop-16 tssop-20 kicad digital dual p0 65mm so steps 4x5mm serial 4x6 5mm maxim | TSSOP | ",
+ "embedding_text": "passive-resistor.tssop | Passive Resistor | 3 passive resistor parts using TSSOP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | tssop potentiometer digital dual p0 65mm so passive resistor steps 4x5mm ds1267 serial 4x6 5mm maxim | TSSOP | ",
  "class": "passive.resistor"
 }

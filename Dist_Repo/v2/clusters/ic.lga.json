@@ -5,33 +5,22 @@
  "category_path": [
   "IC"
  ],
- "description": "Cluster of 12 integrated circuit parts utilizing Land Grid Array (LGA) surface-mount package footprints.",
+ "description": "12 ic parts using LGA footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when an integrated circuit requiring a Land Grid Array (LGA) surface-mount footprint is needed.",
-  "Match specific LGA footprint variants, pin counts, package sizes, and pin pitches to your PCB layout.",
-  "Prefer Tier B quality parts (such as BMP280 or VL6180XV0NR_1) over Tier C entries."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a LGA land pattern is intended."
  ],
  "avoid_when": [
-  "Avoid if the design requires non-LGA packages or through-hole mounting.",
-  "Avoid when the required footprint pin count or dimension is not present in the LGA footprint list.",
-  "Avoid if Tier C entries or unknown mount types fail to meet project standards."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than LGA."
  ],
  "keywords": [
   "lga",
-  "ic",
-  "land grid array",
-  "smd",
-  "surface mount",
-  "bmp280",
-  "vl6180",
-  "lga-8",
-  "lga-12",
-  "lga-14",
-  "lga-16",
-  "lga-24l",
-  "lga-28",
   "p0",
   "5mm",
+  "ic",
   "pitch",
   "8mm",
   "layoutborder3x4y",
@@ -40,7 +29,10 @@
   "pins",
   "3x3mm",
   "surface",
-  "mount"
+  "mount",
+  "package",
+  "sensors",
+  "com"
  ],
  "facts": {
   "package_family": "LGA",
@@ -75,7 +67,7 @@
    "B": 2,
    "C": 10
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -109,6 +101,6 @@
   "dist-legacy/LGA_CC-14-1_ADI",
   "dist-legacy/LGA-8_8x6.2mm_P1.27mm"
  ],
- "embedding_text": "ic.lga | IC | Cluster of 12 integrated circuit parts utilizing Land Grid Array (LGA) surface-mount package footprints. | lga ic land grid array smd surface mount bmp280 vl6180 lga-8 lga-12 lga-14 lga-16 lga-24l lga-28 p0 5mm pitch 8mm layoutborder3x4y pad mm pins 3x3mm surface mount | LGA | ",
+ "embedding_text": "ic.lga | IC | 12 ic parts using LGA footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | lga p0 5mm ic pitch 8mm layoutborder3x4y pad mm pins 3x3mm surface mount package sensors com | LGA | ",
  "class": "ic"
 }

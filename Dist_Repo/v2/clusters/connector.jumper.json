@@ -5,42 +5,34 @@
  "category_path": [
   "Connector"
  ],
- "description": "Cluster of 5 SMD jumper connectors from the digikey-kicad-library source, spanning Jumper_Micro-Miniature and Jumper_Tin footprints in various pitches; all parts are tier B with a score of 92.",
+ "description": "5 connector parts using Jumper footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Match the exact footprint (Micro-Miniature vs Tin, and pitch) to your PCB land pattern",
-  "All 5 parts are tier B with equal score (92); differentiate by footprint/pitch only",
-  "Confirm pitch (5.31mm, 5.375mm, 5.32mm, 5.38mm, or 10.9mm) matches your layout"
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a Jumper land pattern is intended."
  ],
  "avoid_when": [
-  "The design requires a non-Jumper connector package",
-  "A through-hole mount is needed (all parts here are smd)",
-  "Electrical ratings or pinout are required but not stated by the selected part"
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than Jumper."
  ],
  "keywords": [
   "jumper",
-  "jumper connector",
   "shunts",
   "jumpers",
-  "tin jumper",
-  "micro-miniature jumper",
-  "smd jumper",
-  "connector",
-  "digikey",
-  "p5.31mm",
-  "p5.375mm",
-  "p5.32mm",
-  "p5.38mm",
-  "p10.9mm",
-  "5100tr",
-  "5102tr",
-  "s1621-46r",
-  "s1731-46r",
   "tin",
   "dk",
   "connectors",
   "interconnects",
+  "connector",
   "p5",
-  "micro"
+  "micro",
+  "miniature",
+  "46r",
+  "smd",
+  "harwin",
+  "inc",
+  "smt"
  ],
  "facts": {
   "package_family": "Jumper",
@@ -65,7 +57,7 @@
   "tier_counts": {
    "B": 5
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -116,6 +108,6 @@
   "digikey-kicad-library/dk_Shunts-Jumpers/S1731-46R",
   "digikey-kicad-library/dk_Shunts-Jumpers/S1911-46R"
  ],
- "embedding_text": "connector.jumper | Connector | Cluster of 5 SMD jumper connectors from the digikey-kicad-library source, spanning Jumper_Micro-Miniature and Jumper_Tin footprints in various pitches; all parts are tier B with a score of 92. | jumper jumper connector shunts jumpers tin jumper micro-miniature jumper smd jumper connector digikey p5.31mm p5.375mm p5.32mm p5.38mm p10.9mm 5100tr 5102tr s1621-46r s1731-46r tin dk connectors interconnects p5 micro | Jumper | ",
+ "embedding_text": "connector.jumper | Connector | 5 connector parts using Jumper footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | jumper shunts jumpers tin dk connectors interconnects connector p5 micro miniature 46r smd harwin inc smt | Jumper | ",
  "class": "connector"
 }

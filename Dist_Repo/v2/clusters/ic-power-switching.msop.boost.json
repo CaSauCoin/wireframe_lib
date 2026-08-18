@@ -7,42 +7,34 @@
   "Power",
   "Switching Regulator"
  ],
- "description": "SMD boost switching regulator ICs packaged in MSOP footprints including standard and exposed-pad MSOP-8, MSOP-10, and MSOP-12 variants.",
+ "description": "5 ic power switching regulator parts for boost using MSOP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select by required pin count and footprint variant, such as MSOP-8, MSOP-10, or MSOP-12.",
-  "Choose exposed-pad (EP) footprints when thermal pad soldering is specified.",
-  "Match part selection to specific footprint pitch and dimensions like 0.5mm or 0.65mm pitch."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a MSOP land pattern is intended."
  ],
  "avoid_when": [
-  "The design requires package families other than MSOP.",
-  "The switching regulator topology needed is not boost.",
-  "Through-hole mounting is required instead of SMD."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than MSOP."
  ],
  "keywords": [
-  "ic",
-  "power",
-  "switching regulator",
-  "boost",
   "msop",
-  "smd",
-  "msop-8",
-  "msop-10",
-  "msop-12",
-  "lm5022mm",
-  "lt3580xms8e",
-  "lt3757aemse",
-  "ltc3105xms",
   "regulator",
+  "boost",
   "switching",
   "dc",
+  "power",
   "p0",
   "inverting",
   "and",
   "sepic",
   "3x3mm",
   "so",
+  "ic",
   "5mm",
-  "flyback"
+  "flyback",
+  "converter"
  ],
  "facts": {
   "package_family": "MSOP",
@@ -68,7 +60,7 @@
   "tier_counts": {
    "A": 5
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -119,6 +111,6 @@
   "kicad-symbols/Regulator_Switching/LT3757EMSE",
   "kicad-symbols/Regulator_Switching/LTC3105xMS"
  ],
- "embedding_text": "ic-power-switching.msop.boost | IC Power Switching Regulator | SMD boost switching regulator ICs packaged in MSOP footprints including standard and exposed-pad MSOP-8, MSOP-10, and MSOP-12 variants. | ic power switching regulator boost msop smd msop-8 msop-10 msop-12 lm5022mm lt3580xms8e lt3757aemse ltc3105xms regulator switching dc p0 inverting and sepic 3x3mm so 5mm flyback | MSOP | boost",
+ "embedding_text": "ic-power-switching.msop.boost | IC Power Switching Regulator | 5 ic power switching regulator parts for boost using MSOP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | msop regulator boost switching dc power p0 inverting and sepic 3x3mm so ic 5mm flyback converter | MSOP | boost",
  "class": "ic.power.switching"
 }

@@ -6,28 +6,21 @@
   "Discrete",
   "Diode"
  ],
- "description": "Discrete diode component cluster utilizing the HEDH package family and footprint.",
+ "description": "1 discrete diode parts using HEDH footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when requiring a discrete diode utilizing a HEDH footprint.",
-  "Verify component electrical ratings and package specifications before design commitment.",
-  "Confirm HEDH land pattern compatibility with layout requirements."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a HEDH land pattern is intended."
  ],
  "avoid_when": [
-  "The layout requires a package family other than HEDH.",
-  "Required electrical parameters or pinout details are unstated.",
-  "A discrete diode is not needed in the circuit design."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than HEDH."
  ],
  "keywords": [
   "hedh",
   "discrete",
   "diode",
-  "discrete diode",
-  "hedh footprint",
-  "hedh package",
-  "discrete.diode",
-  "package family",
-  "footprint",
-  "component",
   "pad",
   "mm",
   "pitch",
@@ -52,12 +45,12 @@
   "tier_counts": {
    "C": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
   "dist-legacy/HEDH"
  ],
- "embedding_text": "discrete-diode.hedh | Discrete Diode | Discrete diode component cluster utilizing the HEDH package family and footprint. | hedh discrete diode discrete diode hedh footprint hedh package discrete.diode package family footprint component pad mm pitch pins | HEDH | ",
+ "embedding_text": "discrete-diode.hedh | Discrete Diode | 1 discrete diode parts using HEDH footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | hedh discrete diode pad mm pitch pins | HEDH | ",
  "class": "discrete.diode"
 }

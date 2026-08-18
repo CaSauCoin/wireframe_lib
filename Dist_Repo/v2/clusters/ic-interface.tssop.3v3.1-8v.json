@@ -6,43 +6,34 @@
   "IC",
   "Interface"
  ],
- "description": "Surface-mount TSSOP interface IC cluster featuring 3.3V and 1.8V operating voltages with TSSOP-16_4.4x5mm_P0.65mm footprints.",
+ "description": "1 ic interface parts for 3.3V, 1.8V using TSSOP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when requiring an SMD interface IC in a TSSOP package family.",
-  "Verify compatibility with 3.3V or 1.8V operating voltage facets.",
-  "Ensure board layout supports the TSSOP-16_4.4x5mm_P0.65mm footprint.",
-  "Choose tier A entry 5PB1108PGxx when exact symbol and footprint pairing is needed."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a TSSOP land pattern is intended."
  ],
  "avoid_when": [
-  "Do not use if the board design requires through-hole or non-TSSOP mounting.",
-  "Avoid when operating voltages other than 3.3V or 1.8V are required.",
-  "Avoid if a footprint other than TSSOP-16_4.4x5mm_P0.65mm is specified."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than TSSOP."
  ],
  "keywords": [
-  "ic",
-  "interface",
   "tssop",
-  "tssop-16",
-  "smd",
-  "3.3v",
-  "1.8v",
-  "5pb1108pgxx",
-  "ic interface",
-  "tssop-16_4.4x5mm_p0.65mm",
-  "kicad-symbols",
-  "3v3",
+  "interface",
   "lvcmos",
   "clock",
   "buffer",
   "8v",
   "3v",
+  "5pb1108pgxx",
   "high",
   "performance",
   "to",
   "4x5mm",
   "p0",
   "65mm",
-  "so"
+  "so",
+  "jedec"
  ],
  "facts": {
   "package_family": "TSSOP",
@@ -66,7 +57,7 @@
   "tier_counts": {
    "A": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -81,6 +72,6 @@
  "part_ids": [
   "kicad-symbols/Interface/5PB1108PGxx"
  ],
- "embedding_text": "ic-interface.tssop.3v3.1-8v | IC Interface | Surface-mount TSSOP interface IC cluster featuring 3.3V and 1.8V operating voltages with TSSOP-16_4.4x5mm_P0.65mm footprints. | ic interface tssop tssop-16 smd 3.3v 1.8v 5pb1108pgxx ic interface tssop-16_4.4x5mm_p0.65mm kicad-symbols 3v3 lvcmos clock buffer 8v 3v high performance to 4x5mm p0 65mm so | TSSOP | 3.3V 1.8V",
+ "embedding_text": "ic-interface.tssop.3v3.1-8v | IC Interface | 1 ic interface parts for 3.3V, 1.8V using TSSOP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | tssop interface lvcmos clock buffer 8v 3v 5pb1108pgxx high performance to 4x5mm p0 65mm so jedec | TSSOP | 3.3V 1.8V",
  "class": "ic.interface"
 }

@@ -6,31 +6,23 @@
   "Discrete",
   "Diode"
  ],
- "description": "Discrete diode cluster featuring surface-mount 5V components in UFDFN packaging using UFDFN-10_2.5x1mm footprints.",
+ "description": "2 discrete diode parts for 5V using UFDFN footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Requiring 5V surface-mount discrete diodes in UFDFN packaging.",
-  "Designing for a UFDFN-10_2.5x1mm footprint.",
-  "Selecting Tier B parts from digikey-kicad-library sources."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a UFDFN land pattern is intended."
  ],
  "avoid_when": [
-  "Through-hole mounting is required instead of SMD.",
-  "The design requires package footprints other than UFDFN-10_2.5x1mm.",
-  "Operating voltage requirements differ from 5V."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than UFDFN."
  ],
  "keywords": [
-  "discrete diode",
+  "tvs",
+  "diodes",
   "diode",
   "5v",
   "ufdfn",
-  "ufdfn-10_2.5x1mm",
-  "smd",
-  "discrete",
-  "rclamp0524patct",
-  "rclamp0524p_tct_nrnd",
-  "digikey-kicad-library",
-  "tvs",
-  "circuit protection",
-  "diodes",
   "dk",
   "15v",
   "slp2510p8",
@@ -39,6 +31,8 @@
   "protection",
   "semtech",
   "corporation",
+  "discrete",
+  "rclamp0524patct",
   "rclamp0524p"
  ],
  "facts": {
@@ -62,7 +56,7 @@
   "tier_counts": {
    "B": 2
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -86,6 +80,6 @@
   "digikey-kicad-library/dk_TVS-Diodes/RCLAMP0524PATCT",
   "digikey-kicad-library/dk_TVS-Diodes/RCLAMP0524P_TCT_NRND"
  ],
- "embedding_text": "discrete-diode.ufdfn.5v | Discrete Diode | Discrete diode cluster featuring surface-mount 5V components in UFDFN packaging using UFDFN-10_2.5x1mm footprints. | discrete diode diode 5v ufdfn ufdfn-10_2.5x1mm smd discrete rclamp0524patct rclamp0524p_tct_nrnd digikey-kicad-library tvs circuit protection diodes dk 15v slp2510p8 5x1mm circuit protection semtech corporation rclamp0524p | UFDFN | 5V",
+ "embedding_text": "discrete-diode.ufdfn.5v | Discrete Diode | 2 discrete diode parts for 5V using UFDFN footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | tvs diodes diode 5v ufdfn dk 15v slp2510p8 5x1mm circuit protection semtech corporation discrete rclamp0524patct rclamp0524p | UFDFN | 5V",
  "class": "discrete.diode"
 }

@@ -7,29 +7,21 @@
   "Driver",
   "Display"
  ],
- "description": "Display driver IC cluster containing 4 through-hole parts using the D1X8K footprint.",
+ "description": "4 ic driver display parts using D1X8K footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when a through-hole IC display driver utilizing the D1X8K footprint is required.",
-  "Choose among D148K, D168K, D198K, or D1X8K-14BL according to specific project requirements."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a D1X8K land pattern is intended."
  ],
  "avoid_when": [
-  "Surface-mount (SMD) component mounting is required.",
-  "The board layout requires a footprint other than D1X8K."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than D1X8K."
  ],
  "keywords": [
-  "ic driver display",
-  "ic",
-  "driver",
   "display",
-  "d1x8k",
-  "through_hole",
-  "d148k",
-  "d168k",
-  "d198k",
-  "d1x8k-14bl",
-  "kicad-symbols",
-  "display driver",
   "segment",
+  "d1x8k",
   "digit",
   "led",
   "ultra",
@@ -40,7 +32,9 @@
   "low",
   "current",
   "common",
-  "cathode"
+  "cathode",
+  "single",
+  "ic"
  ],
  "facts": {
   "package_family": "D1X8K",
@@ -61,7 +55,7 @@
   "tier_counts": {
    "B": 4
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -103,6 +97,6 @@
   "kicad-symbols/Display_Character/D198K",
   "kicad-symbols/Display_Character/D1X8K-14BL"
  ],
- "embedding_text": "ic-driver-display.d1x8k | IC Driver Display | Display driver IC cluster containing 4 through-hole parts using the D1X8K footprint. | ic driver display ic driver display d1x8k through_hole d148k d168k d198k d1x8k-14bl kicad-symbols display driver segment digit led ultra bright red character one low current common cathode | D1X8K | ",
+ "embedding_text": "ic-driver-display.d1x8k | IC Driver Display | 4 ic driver display parts using D1X8K footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | display segment d1x8k digit led ultra bright red character one low current common cathode single ic | D1X8K | ",
  "class": "ic.driver.display"
 }

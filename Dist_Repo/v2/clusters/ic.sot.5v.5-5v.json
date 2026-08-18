@@ -5,31 +5,22 @@
  "category_path": [
   "IC"
  ],
- "description": "Surface-mount IC cluster of 17 parts featuring 5V and 5.5V facets in SOT package footprints such as SOT-363, SOT-753, SOT-353, and SOT-583-8.",
+ "description": "17 ic parts for 5V, 5.5V using SOT footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when requiring surface-mount IC components rated for 5V or 5.5V voltage facets.",
-  "Match the exact footprint requirements such as SOT-363, SOT-753, SOT-353, or SOT-583-8.",
-  "Select between available tier A and tier B quality parts based on project requirements."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SOT land pattern is intended."
  ],
  "avoid_when": [
-  "Through-hole or non-surface-mount package types are required.",
-  "Footprints outside the SOT package family are needed.",
-  "Operating voltage requirements are not 5V or 5.5V."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SOT."
  ],
  "keywords": [
-  "ic",
   "sot",
   "5v",
-  "5.5v",
-  "smd",
-  "sot-363",
-  "sot-753",
-  "sot-353",
-  "sot-583-8",
-  "sc-70-6",
-  "surface mount",
-  "integrated circuit",
   "sc",
+  "ic",
   "logic",
   "buffers",
   "drivers",
@@ -40,7 +31,8 @@
   "dk",
   "buf",
   "non",
-  "invert"
+  "invert",
+  "integrated"
  ],
  "facts": {
   "package_family": "SOT",
@@ -70,7 +62,7 @@
    "A": 8,
    "B": 9
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -133,6 +125,6 @@
   "digikey-kicad-library/dk_Logic-Buffers-Drivers-Receivers-Transceivers/SN74LVC1G07DCKR",
   "digikey-kicad-library/dk_Logic-Buffers-Drivers-Receivers-Transceivers/SN74LVC1G17DBVR"
  ],
- "embedding_text": "ic.sot.5v.5-5v | IC | Surface-mount IC cluster of 17 parts featuring 5V and 5.5V facets in SOT package footprints such as SOT-363, SOT-753, SOT-353, and SOT-583-8. | ic sot 5v 5.5v smd sot-363 sot-753 sot-353 sot-583-8 sc-70-6 surface mount integrated circuit sc logic buffers drivers receivers transceivers load power dk buf non invert | SOT | 5V 5.5V",
+ "embedding_text": "ic.sot.5v.5-5v | IC | 17 ic parts for 5V, 5.5V using SOT footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | sot 5v sc ic logic buffers drivers receivers transceivers load power dk buf non invert integrated | SOT | 5V 5.5V",
  "class": "ic"
 }

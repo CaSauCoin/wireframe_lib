@@ -7,41 +7,34 @@
   "Driver",
   "Display"
  ],
- "description": "Surface-mount display driver integrated circuits featuring SOIC package footprints including SOIC-8 and SOIC-24W.",
+ "description": "4 ic driver display parts using SOIC footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Match the required footprint to SOIC-8 (3.9x4.9mm) or SOIC-24W (7.5x15.4mm).",
-  "Confirm the design calls for surface-mount (SMD) display driver ICs.",
-  "Choose when using Tier A parts from KiCad symbol sources."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SOIC land pattern is intended."
  ],
  "avoid_when": [
-  "The layout requires through-hole components or package families other than SOIC.",
-  "Footprints other than 1.27mm pitch SOIC-8 or SOIC-24W are required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SOIC."
  ],
  "keywords": [
-  "ic",
   "driver",
-  "display",
-  "soic",
-  "smd",
-  "soic-8",
-  "soic-24w",
-  "display driver",
-  "ic.driver.display",
-  "hv9925sg-g",
-  "hv9972lg-g",
-  "max7219",
-  "tlc5973",
   "led",
+  "soic",
+  "display",
   "current",
   "lamp",
   "p1",
   "27mm",
   "so",
+  "ic",
   "9x4",
   "9mm",
   "programmable",
   "so8",
-  "high"
+  "high",
+  "voltage"
  ],
  "facts": {
   "package_family": "SOIC",
@@ -63,7 +56,7 @@
   "tier_counts": {
    "A": 4
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -105,6 +98,6 @@
   "kicad-symbols/Driver_LED/MAX7219",
   "kicad-symbols/Driver_LED/TLC5973"
  ],
- "embedding_text": "ic-driver-display.soic | IC Driver Display | Surface-mount display driver integrated circuits featuring SOIC package footprints including SOIC-8 and SOIC-24W. | ic driver display soic smd soic-8 soic-24w display driver ic.driver.display hv9925sg-g hv9972lg-g max7219 tlc5973 led current lamp p1 27mm so 9x4 9mm programmable so8 high | SOIC | ",
+ "embedding_text": "ic-driver-display.soic | IC Driver Display | 4 ic driver display parts using SOIC footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | driver led soic display current lamp p1 27mm so ic 9x4 9mm programmable so8 high voltage | SOIC | ",
  "class": "ic.driver.display"
 }

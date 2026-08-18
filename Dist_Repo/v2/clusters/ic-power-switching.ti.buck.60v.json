@@ -7,35 +7,28 @@
   "Power",
   "Switching Regulator"
  ],
- "description": "Texas Instruments SMD buck switching regulator IC cluster rated for 60V in a TI_SO-PowerPAD-8_ThermalVias footprint.",
+ "description": "1 ic power switching regulator parts for buck, 60V using TI footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Require a 60V buck switching regulator IC from TI.",
-  "Design specifies an SMD component with a TI_SO-PowerPAD-8_ThermalVias footprint.",
-  "Using tier B parts from KiCad symbol libraries."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a TI land pattern is intended."
  ],
  "avoid_when": [
-  "The design requires through-hole mounting or non-SMD packages.",
-  "The target board layout uses footprints other than TI_SO-PowerPAD-8_ThermalVias.",
-  "Regulator requirements call for topologies other than buck or ratings other than 60V."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than TI."
  ],
  "keywords": [
-  "ic",
-  "power",
-  "switching regulator",
-  "buck",
-  "60v",
-  "ti",
-  "smd",
-  "ti_so-powerpad-8_thermalvias",
-  "tps54360dda",
+  "dc",
   "regulator",
   "switching",
-  "kicad-symbols",
-  "dc",
   "step",
   "down",
+  "60v",
   "voltage",
+  "ti",
   "high",
+  "tps54360dda",
   "5a",
   "converter",
   "with",
@@ -65,7 +58,7 @@
   "tier_counts": {
    "B": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -80,6 +73,6 @@
  "part_ids": [
   "kicad-symbols/Regulator_Switching/TPS54360DDA"
  ],
- "embedding_text": "ic-power-switching.ti.buck.60v | IC Power Switching Regulator | Texas Instruments SMD buck switching regulator IC cluster rated for 60V in a TI_SO-PowerPAD-8_ThermalVias footprint. | ic power switching regulator buck 60v ti smd ti_so-powerpad-8_thermalvias tps54360dda regulator switching kicad-symbols dc step down voltage high 5a converter with eco mode input | TI | buck 60V",
+ "embedding_text": "ic-power-switching.ti.buck.60v | IC Power Switching Regulator | 1 ic power switching regulator parts for buck, 60V using TI footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | dc regulator switching step down 60v voltage ti high tps54360dda 5a converter with eco mode input | TI | buck 60V",
  "class": "ic.power.switching"
 }

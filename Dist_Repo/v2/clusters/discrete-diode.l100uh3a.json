@@ -6,28 +6,21 @@
   "Discrete",
   "Diode"
  ],
- "description": "Discrete diode cluster containing 1 tier C component using the L100uH3A footprint.",
+ "description": "1 discrete diode parts using L100uH3A footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Require a discrete diode matching the L100uH3A footprint.",
-  "Verify mounting type as mount metadata is listed as unknown.",
-  "Review quality requirements for tier C legacy distribution parts."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a L100uH3A land pattern is intended."
  ],
  "avoid_when": [
-  "The board layout requires a package other than L100uH3A.",
-  "Parts must be planner visible or rated above quality tier C.",
-  "Unknown mounting specifications are incompatible with design rules."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than L100uH3A."
  ],
  "keywords": [
+  "l100uh3a",
   "discrete",
   "diode",
-  "discrete diode",
-  "discrete.diode",
-  "l100uh3a",
-  "l100uh3a footprint",
-  "l100uh3a package",
-  "dist-legacy",
-  "tier c",
-  "unknown mount",
   "pad",
   "mm",
   "pitch",
@@ -52,12 +45,12 @@
   "tier_counts": {
    "C": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
   "dist-legacy/L100uH3A"
  ],
- "embedding_text": "discrete-diode.l100uh3a | Discrete Diode | Discrete diode cluster containing 1 tier C component using the L100uH3A footprint. | discrete diode discrete diode discrete.diode l100uh3a l100uh3a footprint l100uh3a package dist-legacy tier c unknown mount pad mm pitch pins | L100uH3A | ",
+ "embedding_text": "discrete-diode.l100uh3a | Discrete Diode | 1 discrete diode parts using L100uH3A footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | l100uh3a discrete diode pad mm pitch pins | L100uH3A | ",
  "class": "discrete.diode"
 }

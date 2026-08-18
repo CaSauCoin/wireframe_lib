@@ -6,40 +6,33 @@
   "Passive",
   "Resistor"
  ],
- "description": "Passive resistor cluster containing 116 parts in the 0402 package family across multiple SMD footprint variants and library sources.",
+ "description": "116 passive resistor parts using 0402 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Prioritize tier A parts with verified score ratings.",
-  "Verify the specific footprint requirement, such as discrete 0402, hand-solder pads, or array variants.",
-  "Check source library compatibility across KiCad and Altium formats."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a 0402 land pattern is intended."
  ],
  "avoid_when": [
-  "The board design requires a package family other than 0402.",
-  "Through-hole mounting is required.",
-  "The specific footprint needed is not among the supported 0402 footprint variants."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than 0402."
  ],
  "keywords": [
-  "passive",
   "resistor",
-  "0402",
-  "smd",
-  "r_0402",
-  "1005metric",
-  "r_0402_1005metric",
-  "r0402",
-  "r_01005_0402metric",
-  "res-smd-0402",
+  "passive",
   "sparkfun",
-  "kicad",
-  "altium",
   "res",
+  "smd",
   "surface",
   "mount",
+  "1005metric",
   "pad",
   "mm",
   "pitch",
   "pins",
   "murata",
   "16w",
+  "r0402",
   "package"
  ],
  "facts": {
@@ -84,7 +77,7 @@
    "B": 32,
    "C": 38
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -246,6 +239,6 @@
   "celestial-altium-library/TAIYO YUDEN NR1005/TAIYO_YUDEN_NR1005",
   "celestial-altium-library/YAGEO RES 0402_1005/YAGEO_RES_0402_1005"
  ],
- "embedding_text": "passive-resistor.0402 | Passive Resistor | Passive resistor cluster containing 116 parts in the 0402 package family across multiple SMD footprint variants and library sources. | passive resistor 0402 smd r_0402 1005metric r_0402_1005metric r0402 r_01005_0402metric res-smd-0402 sparkfun kicad altium res surface mount pad mm pitch pins murata 16w package | 0402 | ",
+ "embedding_text": "passive-resistor.0402 | Passive Resistor | 116 passive resistor parts using 0402 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | resistor passive sparkfun res smd surface mount 1005metric pad mm pitch pins murata 16w r0402 package | 0402 | ",
  "class": "passive.resistor"
 }

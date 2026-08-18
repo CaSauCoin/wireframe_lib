@@ -7,32 +7,20 @@
   "Driver",
   "Display"
  ],
- "description": "Surface-mount display driver IC cluster in the HDSM package family, containing Tier A KiCad parts including HDSM-441B, HDSM-443B, HDSM-541B, and HDSM-543B.",
+ "description": "4 ic driver display parts using HDSM footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when requiring SMD display driver ICs in the HDSM package family.",
-  "Targeting parts HDSM-441B, HDSM-443B, HDSM-541B, or HDSM-543B.",
-  "Matching HDSM-441B_HDSM-443B or HDSM-541B_HDSM-543B footprint land patterns."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a HDSM land pattern is intended."
  ],
  "avoid_when": [
-  "Designs requiring through-hole mounting or non-SMD packages.",
-  "Layouts specifying package footprints outside the HDSM family.",
-  "Applications needing display drivers other than the HDSM series parts."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than HDSM."
  ],
  "keywords": [
   "hdsm",
-  "ic",
-  "driver",
   "display",
-  "smd",
-  "ic.driver.display",
-  "hdsm-441b",
-  "hdsm-443b",
-  "hdsm-541b",
-  "hdsm-543b",
-  "hdsm-441b_hdsm-443b",
-  "hdsm-541b_hdsm-543b",
-  "kicad-symbols",
-  "display driver",
   "led",
   "segment",
   "blue",
@@ -40,9 +28,13 @@
   "character",
   "double",
   "common",
+  "smd",
   "mount",
   "443b",
-  "digit"
+  "digit",
+  "ic",
+  "driver",
+  "anode"
  ],
  "facts": {
   "package_family": "HDSM",
@@ -64,7 +56,7 @@
   "tier_counts": {
    "A": 4
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -106,6 +98,6 @@
   "kicad-symbols/Display_Character/HDSM-541B",
   "kicad-symbols/Display_Character/HDSM-543B"
  ],
- "embedding_text": "ic-driver-display.hdsm | IC Driver Display | Surface-mount display driver IC cluster in the HDSM package family, containing Tier A KiCad parts including HDSM-441B, HDSM-443B, HDSM-541B, and HDSM-543B. | hdsm ic driver display smd ic.driver.display hdsm-441b hdsm-443b hdsm-541b hdsm-543b hdsm-441b_hdsm-443b hdsm-541b_hdsm-543b kicad-symbols display driver led segment blue 441b character double common mount 443b digit | HDSM | ",
+ "embedding_text": "ic-driver-display.hdsm | IC Driver Display | 4 ic driver display parts using HDSM footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | hdsm display led segment blue 441b character double common smd mount 443b digit ic driver anode | HDSM | ",
  "class": "ic.driver.display"
 }

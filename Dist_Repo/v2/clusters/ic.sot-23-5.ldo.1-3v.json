@@ -5,30 +5,18 @@
  "category_path": [
   "IC"
  ],
- "description": "This cluster contains surface-mount 1.3V low dropout (LDO) voltage regulator ICs in SOT-23-5 packages.",
+ "description": "2 ic parts for LDO, 1.3V using SOT-23-5 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when requiring a 1.3V fixed low dropout regulator in an SMD SOT-23-5 package.",
-  "Choose between AP2121K-1.3TRG1 and AP7343D-13W5 based on part datasheets.",
-  "Ensure SOT-23-5 footprint match and tier A quality requirements."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SOT-23-5 land pattern is intended."
  ],
  "avoid_when": [
-  "The circuit requires a voltage output other than 1.3V.",
-  "A package type other than SOT-23-5 is required.",
-  "Through-hole mounting is required instead of SMD."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SOT-23-5."
  ],
  "keywords": [
-  "ic",
-  "ldo",
-  "1.3v",
-  "sot-23-5",
-  "smd",
-  "voltage regulator",
-  "low dropout",
-  "ap2121k-1.3trg1",
-  "ap7343d-13w5",
-  "alternate-kicad-library",
-  "sot23-5",
-  "vreg",
   "sot",
   "voltage",
   "regulator",
@@ -36,11 +24,15 @@
   "low",
   "dropout",
   "enable",
+  "ldo",
   "akl",
   "200ma",
   "with",
   "alternate",
-  "kicad"
+  "kicad",
+  "library",
+  "vreg",
+  "pmic"
  ],
  "facts": {
   "package_family": "SOT-23-5",
@@ -64,7 +56,7 @@
   "tier_counts": {
    "A": 2
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -88,6 +80,6 @@
   "Alternate-KiCad-Library/Voltage_Regulator_AKL/AP2121K-1.3TRG1",
   "Alternate-KiCad-Library/Voltage_Regulator_AKL/AP7343D-13W5"
  ],
- "embedding_text": "ic.sot-23-5.ldo.1-3v | IC | This cluster contains surface-mount 1.3V low dropout (LDO) voltage regulator ICs in SOT-23-5 packages. | ic ldo 1.3v sot-23-5 smd voltage regulator low dropout ap2121k-1.3trg1 ap7343d-13w5 alternate-kicad-library sot23-5 vreg sot voltage regulator 3v low dropout enable akl 200ma with alternate kicad | SOT-23-5 | LDO 1.3V",
+ "embedding_text": "ic.sot-23-5.ldo.1-3v | IC | 2 ic parts for LDO, 1.3V using SOT-23-5 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | sot voltage regulator 3v low dropout enable ldo akl 200ma with alternate kicad library vreg pmic | SOT-23-5 | LDO 1.3V",
  "class": "ic"
 }

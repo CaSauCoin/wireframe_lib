@@ -5,30 +5,22 @@
  "category_path": [
   "IC"
  ],
- "description": "Integrated circuit cluster under the IC category containing 1 tier-C part using the PERIPHERAL_BOARD_1SLOT footprint with PERIPHERAL package family.",
+ "description": "1 ic parts using PERIPHERAL footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Verify footprint compatibility for PERIPHERAL_BOARD_1SLOT.",
-  "Check part details and quality tier since entries are rated tier-C.",
-  "Use when an IC component with a PERIPHERAL package family is specified."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a PERIPHERAL land pattern is intended."
  ],
  "avoid_when": [
-  "The layout requires a footprint other than PERIPHERAL_BOARD_1SLOT.",
-  "The application requires verified planner-visible parts.",
-  "A package family other than PERIPHERAL is required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than PERIPHERAL."
  ],
  "keywords": [
-  "ic",
   "peripheral",
-  "ic peripheral",
-  "peripheral_board_1slot",
-  "peripheral board 1slot",
-  "peripheral package family",
-  "dist-legacy",
-  "tier-c",
-  "tier c",
-  "integrated circuit",
   "board",
-  "1slot"
+  "1slot",
+  "ic"
  ],
  "facts": {
   "package_family": "PERIPHERAL",
@@ -49,12 +41,12 @@
   "tier_counts": {
    "C": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
   "dist-legacy/PERIPHERAL_BOARD_1SLOT"
  ],
- "embedding_text": "ic.peripheral | IC | Integrated circuit cluster under the IC category containing 1 tier-C part using the PERIPHERAL_BOARD_1SLOT footprint with PERIPHERAL package family. | ic peripheral ic peripheral peripheral_board_1slot peripheral board 1slot peripheral package family dist-legacy tier-c tier c integrated circuit board 1slot | PERIPHERAL | ",
+ "embedding_text": "ic.peripheral | IC | 1 ic parts using PERIPHERAL footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | peripheral board 1slot ic | PERIPHERAL | ",
  "class": "ic"
 }

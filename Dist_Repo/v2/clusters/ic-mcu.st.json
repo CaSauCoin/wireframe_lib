@@ -6,41 +6,34 @@
   "IC",
   "Microcontroller"
  ],
- "description": "Cluster of 37 ST microcontroller ICs and module symbols featuring ST footprints such as WLCSP variants and Morpho connectors in SMD and through-hole mounts.",
+ "description": "37 ic microcontroller parts using ST footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when using ST microcontrollers or Nucleo modules using ST WLCSP or Morpho footprints.",
-  "Prefer tier A parts for standalone ST WLCSP microcontrollers such as STM32H5 or STM32U0 series.",
-  "Verify specified footprint layout and mount type (SMD or through-hole) against design requirements."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a ST land pattern is intended."
  ],
  "avoid_when": [
-  "The design requires non-ST microcontroller footprints or package families.",
-  "Footprint requirements do not match ST WLCSP or Morpho connector layouts.",
-  "The application uses microcontrollers outside of the ST package family."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than ST."
  ],
  "keywords": [
   "st",
   "mcu",
-  "ic",
-  "microcontroller",
-  "wlcsp",
-  "morpho",
-  "nucleo",
-  "stm32",
-  "stm32h5",
-  "stm32u0",
-  "smd",
-  "through_hole",
-  "stlink",
-  "nucleo144",
   "arm",
   "cortex",
   "flash",
   "ram",
+  "ic",
+  "microcontroller",
   "m33",
   "stm32u5",
   "stmicroelectronics",
   "gpio",
-  "csp"
+  "wlcsp",
+  "csp",
+  "nucleo",
+  "morpho"
  ],
  "facts": {
   "package_family": "ST",
@@ -73,7 +66,7 @@
    "A": 3,
    "B": 34
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -156,6 +149,6 @@
   "kicad-symbols/MCU_ST_STM32U5/STM32U5G9BJYxQ",
   "kicad-symbols/MCU_Module/NUCLEO64-F411RE"
  ],
- "embedding_text": "ic-mcu.st | IC Microcontroller | Cluster of 37 ST microcontroller ICs and module symbols featuring ST footprints such as WLCSP variants and Morpho connectors in SMD and through-hole mounts. | st mcu ic microcontroller wlcsp morpho nucleo stm32 stm32h5 stm32u0 smd through_hole stlink nucleo144 arm cortex flash ram m33 stm32u5 stmicroelectronics gpio csp | ST | ",
+ "embedding_text": "ic-mcu.st | IC Microcontroller | 37 ic microcontroller parts using ST footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | st mcu arm cortex flash ram ic microcontroller m33 stm32u5 stmicroelectronics gpio wlcsp csp nucleo morpho | ST | ",
  "class": "ic.mcu"
 }

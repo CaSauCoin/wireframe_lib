@@ -5,33 +5,27 @@
  "category_path": [
   "IC"
  ],
- "description": "Surface-mount IC components in the nanoSIM package family supporting CUI and GCT nanoSIM footprints.",
+ "description": "3 ic parts using nanoSIM footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Match layout requirements to supported CUI or GCT nanoSIM footprints such as NSIM-2-C or SIM8060.",
-  "Confirm pin assignments and land pattern dimensions against part documentation before PCB design.",
-  "Select for applications requiring surface-mount nanoSIM connectivity."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a nanoSIM land pattern is intended."
  ],
  "avoid_when": [
-  "The board layout requires a card socket or package format other than nanoSIM.",
-  "Through-hole or non-surface-mount assembly is needed.",
-  "Footprint requirements do not match CUI NSIM-2-C or GCT SIM8060 land patterns."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than nanoSIM."
  ],
  "keywords": [
   "nanosim",
-  "ic",
-  "smd",
-  "cui",
   "gct",
   "sim8060",
-  "nsim-2-c",
   "hinged",
-  "surface mount",
-  "nano sim",
-  "sim8060-6-0-14-00",
-  "sim8060-6-1-14-00",
   "nsim",
+  "ic",
   "nano",
   "sim",
+  "cui",
   "surface",
   "mount",
   "pad",
@@ -61,7 +55,7 @@
   "tier_counts": {
    "C": 3
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
@@ -69,6 +63,6 @@
   "dist-legacy/nanoSIM_GCT_SIM8060-6-0-14-00",
   "dist-legacy/nanoSIM_GCT_SIM8060-6-1-14-00"
  ],
- "embedding_text": "ic.nanosim | IC | Surface-mount IC components in the nanoSIM package family supporting CUI and GCT nanoSIM footprints. | nanosim ic smd cui gct sim8060 nsim-2-c hinged surface mount nano sim sim8060-6-0-14-00 sim8060-6-1-14-00 nsim nano sim surface mount pad mm pitch pins package | nanoSIM | ",
+ "embedding_text": "ic.nanosim | IC | 3 ic parts using nanoSIM footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | nanosim gct sim8060 hinged nsim ic nano sim cui surface mount pad mm pitch pins package | nanoSIM | ",
  "class": "ic"
 }

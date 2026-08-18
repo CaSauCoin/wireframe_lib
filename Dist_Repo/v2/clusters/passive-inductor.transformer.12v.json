@@ -6,37 +6,29 @@
   "Passive",
   "Inductor"
  ],
- "description": "Through-hole 12V passive inductor transformer parts with specific transformer footprints sourced from KiCad symbols.",
+ "description": "2 passive inductor parts for 12V using Transformer footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Match the required footprint to Transformer_Wuerth_750343373 or Transformer_Wuerth_760871131.",
-  "Confirm through-hole mounting matches the target board assembly process.",
-  "Verify the specific part symbol and 12V rating against application needs."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a Transformer land pattern is intended."
  ],
  "avoid_when": [
-  "Surface-mount (SMD) construction is required instead of through-hole.",
-  "The design requires footprints other than the supported transformer footprints.",
-  "Operating voltage or application requirements differ from 12V."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than Transformer."
  ],
  "keywords": [
-  "passive",
-  "inductor",
   "transformer",
   "12v",
-  "through hole",
-  "through-hole",
-  "wuerth",
-  "750343373",
-  "760871131",
-  "transformer_wuerth_750343373",
-  "transformer_wuerth_760871131",
-  "kicad-symbols",
-  "passive inductor",
   "flyback",
+  "wuerth",
   "dual",
   "secondary",
   "pcb",
   "primary",
   "1a",
+  "passive",
+  "inductor",
   "5a",
   "single",
   "aux",
@@ -65,7 +57,7 @@
   "tier_counts": {
    "B": 2
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -89,6 +81,6 @@
   "kicad-symbols/Transformer/Wuerth_750343373",
   "kicad-symbols/Transformer/Wuerth_760871131"
  ],
- "embedding_text": "passive-inductor.transformer.12v | Passive Inductor | Through-hole 12V passive inductor transformer parts with specific transformer footprints sourced from KiCad symbols. | passive inductor transformer 12v through hole through-hole wuerth 750343373 760871131 transformer_wuerth_750343373 transformer_wuerth_760871131 kicad-symbols passive inductor flyback dual secondary pcb primary 1a 5a single aux 60v 300khz | Transformer | 12V",
+ "embedding_text": "passive-inductor.transformer.12v | Passive Inductor | 2 passive inductor parts for 12V using Transformer footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | transformer 12v flyback wuerth dual secondary pcb primary 1a passive inductor 5a single aux 60v 300khz | Transformer | 12V",
  "class": "passive.inductor"
 }

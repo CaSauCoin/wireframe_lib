@@ -5,30 +5,25 @@
  "category_path": [
   "IC"
  ],
- "description": "Cluster of 3 surface-mount IC parts utilizing CFSensor package footprints including CFSensor_XGZP6859D_7x7mm, CFSensor_XGZP6897x, and CFSensor_XGZP6899x.",
+ "description": "3 ic parts using CFSensor footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when surface-mount IC components using CFSensor package footprints are required.",
-  "Verify compatibility with land patterns CFSensor_XGZP6859D_7x7mm, CFSensor_XGZP6897x, or CFSensor_XGZP6899x.",
-  "Check individual part specifications given that available entries are quality tier C."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a CFSensor land pattern is intended."
  ],
  "avoid_when": [
-  "The design requires package footprints other than the CFSensor family.",
-  "Through-hole mounting or non-SMD mounting is required.",
-  "Tier C quality entries do not meet project verification standards."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than CFSensor."
  ],
  "keywords": [
   "cfsensor",
-  "xgzp6859d_7x7mm",
   "xgzp6859d",
+  "ic",
+  "sensor",
+  "7x7mm",
   "xgzp6897x",
   "xgzp6899x",
-  "7x7mm",
-  "ic",
-  "smd",
-  "surface mount",
-  "cfsensor footprint",
-  "cfsensor package",
-  "sensor",
   "pressure",
   "port",
   "dia",
@@ -60,7 +55,7 @@
   "tier_counts": {
    "C": 3
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
@@ -68,6 +63,6 @@
   "dist-legacy/CFSensor_XGZP6897x",
   "dist-legacy/CFSensor_XGZP6899x"
  ],
- "embedding_text": "ic.cfsensor | IC | Cluster of 3 surface-mount IC parts utilizing CFSensor package footprints including CFSensor_XGZP6859D_7x7mm, CFSensor_XGZP6897x, and CFSensor_XGZP6899x. | cfsensor xgzp6859d_7x7mm xgzp6859d xgzp6897x xgzp6899x 7x7mm ic smd surface mount cfsensor footprint cfsensor package sensor pressure port dia generator surface mount pad mm pitch | CFSensor | ",
+ "embedding_text": "ic.cfsensor | IC | 3 ic parts using CFSensor footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | cfsensor xgzp6859d ic sensor 7x7mm xgzp6897x xgzp6899x pressure port dia generator surface mount pad mm pitch | CFSensor | ",
  "class": "ic"
 }

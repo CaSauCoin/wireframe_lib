@@ -6,31 +6,22 @@
   "Discrete",
   "FET"
  ],
- "description": "A cluster of surface-mount 35V discrete FET components in SOT-23 packages from KiCad symbols, including tier A parts MMBFJ111 and MMBFJ113.",
+ "description": "2 discrete fet parts for 35V using SOT-23 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when requiring a 35V surface-mount discrete FET in a SOT-23 footprint.",
-  "Choose between tier A KiCad symbol parts MMBFJ111 and MMBFJ113 based on specific design requirements.",
-  "Use when a surface-mount SOT-23 package family footprint is specified."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SOT-23 land pattern is intended."
  ],
  "avoid_when": [
-  "The design requires a package other than SOT-23.",
-  "The application requires voltage ratings or mounting styles other than 35V surface-mount.",
-  "Parts outside the provided MMBFJ111 or MMBFJ113 KiCad symbol library entries are needed."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SOT-23."
  ],
  "keywords": [
-  "discrete",
-  "fet",
-  "discrete fet",
-  "sot-23",
-  "sot23",
-  "35v",
-  "smd",
-  "mmbfj111",
-  "mmbfj113",
-  "kicad-symbols",
-  "transistor",
-  "tier a",
   "sot",
+  "fet",
+  "transistor",
+  "35v",
   "channel",
   "min",
   "max",
@@ -38,6 +29,9 @@
   "off",
   "jfet",
   "to",
+  "smd",
+  "discrete",
+  "mmbfj111",
   "20ma",
   "30mohm"
  ],
@@ -62,7 +56,7 @@
   "tier_counts": {
    "A": 2
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -86,6 +80,6 @@
   "kicad-symbols/Transistor_FET/MMBFJ111",
   "kicad-symbols/Transistor_FET/MMBFJ113"
  ],
- "embedding_text": "discrete-fet.sot-23.35v | Discrete FET | A cluster of surface-mount 35V discrete FET components in SOT-23 packages from KiCad symbols, including tier A parts MMBFJ111 and MMBFJ113. | discrete fet discrete fet sot-23 sot23 35v smd mmbfj111 mmbfj113 kicad-symbols transistor tier a sot channel min max vgs off jfet to 20ma 30mohm | SOT-23 | 35V",
+ "embedding_text": "discrete-fet.sot-23.35v | Discrete FET | 2 discrete fet parts for 35V using SOT-23 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | sot fet transistor 35v channel min max vgs off jfet to smd discrete mmbfj111 20ma 30mohm | SOT-23 | 35V",
  "class": "discrete.fet"
 }
