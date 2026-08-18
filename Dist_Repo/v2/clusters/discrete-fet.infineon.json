@@ -6,42 +6,34 @@
   "Discrete",
   "FET"
  ],
- "description": "This cluster contains 14 surface-mount discrete FET components sourced from KiCad symbols, all assigned to quality tier B and utilizing Infineon footprint packages.",
+ "description": "14 discrete fet parts using Infineon footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Choose when requiring surface-mount (SMD) discrete FET parts from the KiCad symbols library.",
-  "Select based on exact footprint requirements such as PG-HDSOP-10-1, PG-HSOF-8-3, PG-LSON-8-1, PG-DSO-20-85, PG-DSO-20-87, or PG-HSOF-8-2.",
-  "Note that all 14 parts in this cluster are categorized under quality tier B."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a Infineon land pattern is intended."
  ],
  "avoid_when": [
-  "The design requires through-hole or non-SMD mounting options.",
-  "A footprint outside the listed Infineon PG-HDSOP, PG-HSOF, PG-LSON, or PG-DSO footprint variants is required.",
-  "Quality tier A classification is strictly mandated for the component selection."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than Infineon."
  ],
  "keywords": [
-  "discrete fet",
-  "discrete",
-  "fet",
-  "infineon",
-  "smd",
-  "kicad-symbols",
-  "pg-hdsop-10-1",
-  "pg-hsof-8-3_thermalvias",
-  "pg-lson-8-1",
-  "pg-dso-20-85",
-  "pg-dso-20-87",
-  "pg-hsof-8-2",
   "mosfet",
+  "fet",
   "channel",
+  "infineon",
   "pg",
   "hdsop",
   "transistor",
   "id",
   "vds",
   "gan",
+  "discrete",
   "600v",
   "ddpak",
   "hsof",
-  "coolmos"
+  "coolmos",
+  "lson"
  ],
  "facts": {
   "package_family": "Infineon",
@@ -67,7 +59,7 @@
   "tier_counts": {
    "B": 14
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -127,6 +119,6 @@
   "kicad-symbols/Transistor_FET/IPDD60R190G7",
   "kicad-symbols/Transistor_FET/IPT60R055CM8"
  ],
- "embedding_text": "discrete-fet.infineon | Discrete FET | This cluster contains 14 surface-mount discrete FET components sourced from KiCad symbols, all assigned to quality tier B and utilizing Infineon footprint packages. | discrete fet discrete fet infineon smd kicad-symbols pg-hdsop-10-1 pg-hsof-8-3_thermalvias pg-lson-8-1 pg-dso-20-85 pg-dso-20-87 pg-hsof-8-2 mosfet channel pg hdsop transistor id vds gan 600v ddpak hsof coolmos | Infineon | ",
+ "embedding_text": "discrete-fet.infineon | Discrete FET | 14 discrete fet parts using Infineon footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | mosfet fet channel infineon pg hdsop transistor id vds gan discrete 600v ddpak hsof coolmos lson | Infineon | ",
  "class": "discrete.fet"
 }

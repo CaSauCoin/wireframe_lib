@@ -5,33 +5,22 @@
  "category_path": [
   "IC"
  ],
- "description": "Cluster of 3 surface-mount 24V IC parts in SOIC-8 footprints with 3.9x4.9mm dimensions and 1.27mm pitch from Alternate-KiCad-Library.",
+ "description": "3 ic parts for 24V using SOIC footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when requiring a surface-mount 24V IC component.",
-  "Use for designs requiring an SOIC-8 footprint with 1.27mm pitch.",
-  "Choose among tier-A parts including DI78L24DAB, L78L24CD, and TS78L24CS-RLG."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SOIC land pattern is intended."
  ],
  "avoid_when": [
-  "The design requires through-hole or non-SMD components.",
-  "The operating voltage specification is not 24V.",
-  "The PCB layout requires a package footprint other than SOIC-8_3.9x4.9mm_P1.27mm."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SOIC."
  ],
  "keywords": [
-  "ic",
-  "24v",
-  "soic",
-  "soic-8",
-  "smd",
-  "alternate-kicad-library",
-  "di78l24dab",
-  "l78l24cd",
-  "ts78l24cs-rlg",
-  "78l24",
-  "3.9x4.9mm",
-  "p1.27mm",
-  "voltage regulator",
   "voltage",
   "regulator",
+  "24v",
+  "soic",
   "so",
   "100ma",
   "akl",
@@ -40,7 +29,10 @@
   "library",
   "9x4",
   "9mm",
-  "p1"
+  "p1",
+  "27mm",
+  "78l24",
+  "vreg"
  ],
  "facts": {
   "package_family": "SOIC",
@@ -63,7 +55,7 @@
   "tier_counts": {
    "A": 3
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -96,6 +88,6 @@
   "Alternate-KiCad-Library/Voltage_Regulator_AKL/L78L24CD",
   "Alternate-KiCad-Library/Voltage_Regulator_AKL/TS78L24CS-RLG"
  ],
- "embedding_text": "ic.soic.24v | IC | Cluster of 3 surface-mount 24V IC parts in SOIC-8 footprints with 3.9x4.9mm dimensions and 1.27mm pitch from Alternate-KiCad-Library. | ic 24v soic soic-8 smd alternate-kicad-library di78l24dab l78l24cd ts78l24cs-rlg 78l24 3.9x4.9mm p1.27mm voltage regulator voltage regulator so 100ma akl alternate kicad library 9x4 9mm p1 | SOIC | 24V",
+ "embedding_text": "ic.soic.24v | IC | 3 ic parts for 24V using SOIC footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | voltage regulator 24v soic so 100ma akl alternate kicad library 9x4 9mm p1 27mm 78l24 vreg | SOIC | 24V",
  "class": "ic"
 }

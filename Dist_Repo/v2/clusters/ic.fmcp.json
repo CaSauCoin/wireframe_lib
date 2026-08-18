@@ -5,30 +5,21 @@
  "category_path": [
   "IC"
  ],
- "description": "Cluster of 6 surface-mount IC parts in the FMCP package family with footprints including FMCP_HSPCE_M, FMCP_HSPCE_F, FMCP_HSPC_F, and FMCP_HSPC_M.",
+ "description": "6 ic parts using FMCP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when requiring surface-mount ICs in the FMCP package family.",
-  "Match the required layout footprint (FMCP_HSPCE_M, FMCP_HSPCE_F, FMCP_HSPC_F, or FMCP_HSPC_M).",
-  "Review quality tier ratings (2 Tier B and 4 Tier C parts available)."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a FMCP land pattern is intended."
  ],
  "avoid_when": [
-  "The PCB layout requires non-SMD or through-hole mounting.",
-  "The design requires a package family other than FMCP.",
-  "Footprints other than the listed FMCP HSPC/HSPCE variants are required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than FMCP."
  ],
  "keywords": [
   "fmcp",
-  "ic",
-  "smd",
-  "fmcp_hspce_m",
-  "fmcp_hspce_f",
-  "fmcp_hspc_f",
-  "fmcp_hspc_m",
-  "seaf_80",
-  "seam_80",
-  "surface mount",
-  "chilaboard-altium-library",
   "hspce",
+  "ic",
   "hspc",
   "connector",
   "pitch",
@@ -40,7 +31,8 @@
   "pad",
   "pins",
   "seaf",
-  "array"
+  "array",
+  "smd"
  ],
  "facts": {
   "package_family": "FMCP",
@@ -65,7 +57,7 @@
    "B": 2,
    "C": 4
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -93,6 +85,6 @@
   "chilaboard-altium-library/FMCP_HSPC_F/FMCP_HSPC_F",
   "chilaboard-altium-library/FMCP_HSPC_M/FMCP_HSPC_M"
  ],
- "embedding_text": "ic.fmcp | IC | Cluster of 6 surface-mount IC parts in the FMCP package family with footprints including FMCP_HSPCE_M, FMCP_HSPCE_F, FMCP_HSPC_F, and FMCP_HSPC_M. | fmcp ic smd fmcp_hspce_m fmcp_hspce_f fmcp_hspc_f fmcp_hspc_m seaf_80 seam_80 surface mount chilaboard-altium-library hspce hspc connector pitch surface mount mm board mezzanine pad pins seaf array | FMCP | ",
+ "embedding_text": "ic.fmcp | IC | 6 ic parts using FMCP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | fmcp hspce ic hspc connector pitch surface mount mm board mezzanine pad pins seaf array smd | FMCP | ",
  "class": "ic"
 }

@@ -5,38 +5,33 @@
  "category_path": [
   "IC"
  ],
- "description": "Cluster of 11 IC parts featuring QORVO package family footprints, available in surface-mount configurations across quality tiers B and C.",
+ "description": "11 ic parts using QORVO footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Match exact part footprints such as SGL0622Z, TAT8804D1H, QPL9547, or DFN-8-1EP.",
-  "Evaluate quality tier requirements between the 3 tier B and 8 tier C available entries.",
-  "Verify part source compatibility between dist-legacy and celestial-altium-library."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a QORVO land pattern is intended."
  ],
  "avoid_when": [
-  "Tier A verified components are strictly required for the design.",
-  "The board layout requires packages outside the QORVO footprint family.",
-  "Surface-mount (SMD) packaging is incompatible with the target assembly process."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than QORVO."
  ],
  "keywords": [
   "qorvo",
   "ic",
-  "smd",
-  "footprint",
+  "rf",
   "sgl0622z",
   "tat8804d1h",
   "qpl9547",
   "rfsw6024",
-  "qpl9058",
-  "son-8",
-  "dfn-8-1ep",
-  "2x2mm",
-  "dist-legacy",
-  "rf",
   "pad",
   "mm",
   "pitch",
   "pins",
   "son",
+  "qpl9058",
   "dfn",
+  "2x2mm",
   "surface"
  ],
  "facts": {
@@ -67,7 +62,7 @@
    "B": 3,
    "C": 8
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -108,6 +103,6 @@
   "celestial-altium-library/QORVO SON-8 QPL9058/QORVO_SON-8_QPL9058",
   "dist-legacy/Qorvo_DFN-8-1EP_2x2mm_P0.5mm"
  ],
- "embedding_text": "ic.qorvo | IC | Cluster of 11 IC parts featuring QORVO package family footprints, available in surface-mount configurations across quality tiers B and C. | qorvo ic smd footprint sgl0622z tat8804d1h qpl9547 rfsw6024 qpl9058 son-8 dfn-8-1ep 2x2mm dist-legacy rf pad mm pitch pins son dfn surface | QORVO | ",
+ "embedding_text": "ic.qorvo | IC | 11 ic parts using QORVO footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | qorvo ic rf sgl0622z tat8804d1h qpl9547 rfsw6024 pad mm pitch pins son qpl9058 dfn 2x2mm surface | QORVO | ",
  "class": "ic"
 }

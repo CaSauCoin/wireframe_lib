@@ -7,42 +7,34 @@
   "Power",
   "Linear Regulator"
  ],
- "description": "Surface-mount SOT package cluster of 88 LDO linear regulator ICs featuring 5V and 5.5V facets across SOT-223, SOT-89, SOT-553, SOT-353, and SOT-343 footprints.",
+ "description": "88 ic power linear regulator parts for 5V, LDO, 5.5V using SOT footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Match the specific SOT footprint variant required by the PCB layout.",
-  "Prefer Tier A verified symbols when selecting components from this cluster.",
-  "Verify exact pin numbers and tab pinout for the selected SOT part."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SOT land pattern is intended."
  ],
  "avoid_when": [
-  "The board design requires through-hole or non-SOT component packaging.",
-  "A switching regulator or non-linear power converter is needed.",
-  "The required footprint is not among the supported SOT variants in this cluster."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SOT."
  ],
  "keywords": [
-  "ic",
-  "power",
-  "linear regulator",
-  "ldo",
   "sot",
-  "smd",
-  "5v",
-  "5.5v",
-  "sot-223",
-  "sot-89",
-  "sot-553",
-  "sot-353",
-  "sot-343",
-  "sc-70",
-  "ams1117",
-  "ap1117",
   "regulator",
+  "5v",
   "linear",
+  "ldo",
   "voltage",
   "to",
+  "ic",
+  "power",
   "sc",
   "fixed",
   "low",
-  "dropout"
+  "dropout",
+  "positive",
+  "output",
+  "smd"
  ],
  "facts": {
   "package_family": "SOT",
@@ -75,7 +67,7 @@
    "A": 81,
    "B": 7
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -209,6 +201,6 @@
   "kicad-symbols/Regulator_Linear/LP38693MP-2.5",
   "kicad-symbols/Regulator_Linear/MCP1804x-2502xMT"
  ],
- "embedding_text": "ic-power-ldo.sot.5v.ldo | IC Power Linear Regulator | Surface-mount SOT package cluster of 88 LDO linear regulator ICs featuring 5V and 5.5V facets across SOT-223, SOT-89, SOT-553, SOT-353, and SOT-343 footprints. | ic power linear regulator ldo sot smd 5v 5.5v sot-223 sot-89 sot-553 sot-353 sot-343 sc-70 ams1117 ap1117 regulator linear voltage to sc fixed low dropout | SOT | 5V LDO 5.5V",
+ "embedding_text": "ic-power-ldo.sot.5v.ldo | IC Power Linear Regulator | 88 ic power linear regulator parts for 5V, LDO, 5.5V using SOT footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | sot regulator 5v linear ldo voltage to ic power sc fixed low dropout positive output smd | SOT | 5V LDO 5.5V",
  "class": "ic.power.ldo"
 }

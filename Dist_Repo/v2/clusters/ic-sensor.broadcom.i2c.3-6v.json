@@ -6,31 +6,21 @@
   "IC",
   "Sensor"
  ],
- "description": "Cluster of 4 Broadcom SMD sensor ICs featuring an I2C interface and 3.6V rating in footprints including APDS-9160-003, APDS-9301, DFN-6, and LGA-8.",
+ "description": "4 ic sensor parts for I2C, 3.6V using Broadcom footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select based on specific footprint such as APDS-9160-003, APDS-9301, DFN-6, or LGA-8.",
-  "Require an I2C interface and 3.6V voltage rating.",
-  "Target surface-mount (SMD) layout requirements."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a Broadcom land pattern is intended."
  ],
  "avoid_when": [
-  "Interfaces other than I2C are required.",
-  "Operating voltage differs from 3.6V.",
-  "Through-hole mounting or non-Broadcom footprints are required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than Broadcom."
  ],
  "keywords": [
-  "broadcom",
-  "ic",
   "sensor",
+  "broadcom",
   "i2c",
-  "3.6v",
-  "smd",
-  "apds-9160-003",
-  "apds-9301",
-  "apds-9306",
-  "apds-9306-065",
-  "dfn-6",
-  "lga-8",
-  "2x2mm",
   "6v",
   "ambient",
   "light",
@@ -38,10 +28,12 @@
   "proximity",
   "interface",
   "lga",
+  "ic",
   "opto",
   "optical",
   "dfn",
-  "avago"
+  "avago",
+  "2x2mm"
  ],
  "facts": {
   "package_family": "Broadcom",
@@ -68,7 +60,7 @@
   "tier_counts": {
    "B": 4
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -110,6 +102,6 @@
   "kicad-symbols/Sensor_Optical/APDS-9306-065",
   "kicad-symbols/Sensor_Optical/APDS-9306"
  ],
- "embedding_text": "ic-sensor.broadcom.i2c.3-6v | IC Sensor | Cluster of 4 Broadcom SMD sensor ICs featuring an I2C interface and 3.6V rating in footprints including APDS-9160-003, APDS-9301, DFN-6, and LGA-8. | broadcom ic sensor i2c 3.6v smd apds-9160-003 apds-9301 apds-9306 apds-9306-065 dfn-6 lga-8 2x2mm 6v ambient light apds proximity interface lga opto optical dfn avago | Broadcom | I2C 3.6V",
+ "embedding_text": "ic-sensor.broadcom.i2c.3-6v | IC Sensor | 4 ic sensor parts for I2C, 3.6V using Broadcom footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | sensor broadcom i2c 6v ambient light apds proximity interface lga ic opto optical dfn avago 2x2mm | Broadcom | I2C 3.6V",
  "class": "ic.sensor"
 }

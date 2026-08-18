@@ -6,29 +6,22 @@
   "Discrete",
   "Transistor"
  ],
- "description": "Surface-mount discrete transistor cluster containing two tier C parts in the SON65 package family using SON65_4T_1010 and SON65_4T_1216 footprints.",
+ "description": "2 discrete transistor parts using SON65 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when requiring surface-mount discrete transistors using SON65 footprints.",
-  "Choose between SON65_4T_1010 and SON65_4T_1216 footprint options.",
-  "Verify acceptability of tier C parts from chilaboard-altium-library."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SON65 land pattern is intended."
  ],
  "avoid_when": [
-  "A package family other than SON65 is required.",
-  "Non-SMD or through-hole mounting is specified.",
-  "Quality tier C parts or non-planner-visible entries are unsuited for design requirements."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SON65."
  ],
  "keywords": [
   "son65",
-  "discrete transistor",
+  "4t",
   "discrete",
   "transistor",
-  "smd",
-  "surface mount",
-  "son65_4t_1010",
-  "son65_4t_1216",
-  "package family son65",
-  "chilaboard-altium-library",
-  "4t",
   "surface",
   "mount",
   "pad",
@@ -56,13 +49,13 @@
   "tier_counts": {
    "C": 2
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
   "chilaboard-altium-library/SON65_4T_1010/SON65_4T_1010",
   "chilaboard-altium-library/SON65_4T_1216/SON65_4T_1216"
  ],
- "embedding_text": "discrete-transistor.son65 | Discrete Transistor | Surface-mount discrete transistor cluster containing two tier C parts in the SON65 package family using SON65_4T_1010 and SON65_4T_1216 footprints. | son65 discrete transistor discrete transistor smd surface mount son65_4t_1010 son65_4t_1216 package family son65 chilaboard-altium-library 4t surface mount pad mm pitch pins | SON65 | ",
+ "embedding_text": "discrete-transistor.son65 | Discrete Transistor | 2 discrete transistor parts using SON65 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | son65 4t discrete transistor surface mount pad mm pitch pins | SON65 | ",
  "class": "discrete.transistor"
 }

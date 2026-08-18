@@ -6,32 +6,22 @@
   "IC",
   "Power"
  ],
- "description": "Power IC cluster containing 5 SMD 16V regulator controller parts in SOIC packages including SOIC-8, SOIC-14, and SOIC-16W footprints.",
+ "description": "5 ic power parts for 16V using SOIC footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select based on required SOIC footprint option (SOIC-8, SOIC-14, or SOIC-16W).",
-  "Verify compatibility with SMD mounting and 16V power IC classification.",
-  "Choose between UC3842 and UC3844 regulator controller part variants."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SOIC land pattern is intended."
  ],
  "avoid_when": [
-  "Through-hole or non-SOIC packages are required for the design.",
-  "The circuit requires power ICs outside the 16V classification.",
-  "Parts other than UC3842 or UC3844 regulator controllers are needed."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SOIC."
  ],
  "keywords": [
-  "ic",
-  "power",
-  "16v",
   "soic",
-  "smd",
-  "regulator controller",
-  "uc3842",
-  "uc3844",
-  "soic-8",
-  "soic-14",
-  "soic-16w",
-  "kicad-symbols",
   "controller",
   "pwm",
+  "16v",
   "regulator",
   "current",
   "mode",
@@ -41,7 +31,9 @@
   "10v",
   "uvlo",
   "p1",
-  "27mm"
+  "27mm",
+  "so",
+  "smps"
  ],
  "facts": {
   "package_family": "SOIC",
@@ -66,7 +58,7 @@
   "tier_counts": {
    "A": 5
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -117,6 +109,6 @@
   "kicad-symbols/Regulator_Controller/UC3844_SOIC14",
   "kicad-symbols/Regulator_Controller/UC3844_SOIC8"
  ],
- "embedding_text": "ic-power.soic.16v | IC Power | Power IC cluster containing 5 SMD 16V regulator controller parts in SOIC packages including SOIC-8, SOIC-14, and SOIC-16W footprints. | ic power 16v soic smd regulator controller uc3842 uc3844 soic-8 soic-14 soic-16w kicad-symbols controller pwm regulator current mode controllers duty cycle 10v uvlo p1 27mm | SOIC | 16V",
+ "embedding_text": "ic-power.soic.16v | IC Power | 5 ic power parts for 16V using SOIC footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | soic controller pwm 16v regulator current mode controllers duty cycle 10v uvlo p1 27mm so smps | SOIC | 16V",
  "class": "ic.power"
 }

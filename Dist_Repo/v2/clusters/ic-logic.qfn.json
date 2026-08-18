@@ -6,42 +6,34 @@
   "IC",
   "Logic"
  ],
- "description": "Logic IC component cluster containing 12 parts in the QFN package family with surface-mount and through-hole options across quality tiers A and B.",
+ "description": "12 ic logic parts using QFN footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Choose when requiring logic ICs in QFN package family footprints.",
-  "Filter by specific footprint variants such as DHVQFN14, QFN-16, QFN-20, or QFN-32.",
-  "Check part tier ratings (1 tier A, 11 tier B) and source library origin."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a QFN land pattern is intended."
  ],
  "avoid_when": [
-  "Avoid when the design requires package families other than QFN.",
-  "Avoid if the project requires components outside the ic.logic class.",
-  "Avoid if none of the available QFN footprints fit the target footprint requirement."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than QFN."
  ],
  "keywords": [
   "ic",
   "logic",
-  "ic logic",
   "qfn",
-  "dhvqfn14",
-  "wqfn",
-  "smd",
-  "through_hole",
-  "fxma108",
-  "ncn4555mn",
-  "a4984",
-  "74avc4t245",
-  "74ahc",
-  "level translator",
   "with",
   "in",
   "package",
   "qfn16",
   "level",
   "pin",
+  "dhvqfn14",
   "translator",
   "and",
   "5mm",
-  "multiplexer"
+  "74ahc",
+  "multiplexer",
+  "supply"
  ],
  "facts": {
   "package_family": "QFN",
@@ -74,7 +66,7 @@
    "A": 1,
    "B": 11
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -132,6 +124,6 @@
   "chilaboard-altium-library/74HCT4051_QFN16/74HCT4051_QFN16",
   "chilaboard-altium-library/74LVT126_SSOP14_QFN14/74LVT126_SSOP14_QFN14"
  ],
- "embedding_text": "ic-logic.qfn | IC Logic | Logic IC component cluster containing 12 parts in the QFN package family with surface-mount and through-hole options across quality tiers A and B. | ic logic ic logic qfn dhvqfn14 wqfn smd through_hole fxma108 ncn4555mn a4984 74avc4t245 74ahc level translator with in package qfn16 level pin translator and 5mm multiplexer | QFN | ",
+ "embedding_text": "ic-logic.qfn | IC Logic | 12 ic logic parts using QFN footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | ic logic qfn with in package qfn16 level pin dhvqfn14 translator and 5mm 74ahc multiplexer supply | QFN | ",
  "class": "ic.logic"
 }

@@ -5,34 +5,21 @@
  "category_path": [
   "Connector"
  ],
- "description": "Connector cluster of 6 parts sharing the BIG_Header footprint (package family BIG); mount type is unspecified, all parts sourced from dist-legacy, with one tier B and five tier C entries, review status generated.",
+ "description": "6 connector parts using BIG footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Prefer the tier B entry (BIG_Header 2, score 80) over the five tier C parts",
-  "Confirm the footprint is exactly BIG_Header before use",
-  "Verify mount style separately, since it is recorded as unknown",
-  "All parts trace to a single source (dist-legacy); check trust before committing"
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a BIG land pattern is intended."
  ],
  "avoid_when": [
-  "A specific mount style or land pattern other than BIG_Header is required",
-  "A part with reviewed (non-generated) status is required",
-  "Electrical ratings, pinout, or dimensions must be confirmed, since none are provided here",
-  "Only tier A parts are acceptable, since none exist in this cluster"
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than BIG."
  ],
  "keywords": [
   "big",
-  "connector",
   "header",
-  "big header",
-  "big_header",
-  "package family big",
-  "footprint",
-  "dist-legacy",
-  "tier b",
-  "tier c",
-  "generated",
-  "unknown mount",
-  "connector.big",
-  "header connector",
+  "connector",
   "pitch",
   "mm",
   "pad",
@@ -63,7 +50,7 @@
    "B": 1,
    "C": 5
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -83,6 +70,6 @@
   "dist-legacy/BIG_Header 8",
   "dist-legacy/BIG_Header 9"
  ],
- "embedding_text": "connector.big | Connector | Connector cluster of 6 parts sharing the BIG_Header footprint (package family BIG); mount type is unspecified, all parts sourced from dist-legacy, with one tier B and five tier C entries, review status generated. | big connector header big header big_header package family big footprint dist-legacy tier b tier c generated unknown mount connector.big header connector pitch mm pad pins pin two position with 08mm | BIG | ",
+ "embedding_text": "connector.big | Connector | 6 connector parts using BIG footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | big header connector pitch mm pad pins pin two position with 08mm | BIG | ",
  "class": "connector"
 }

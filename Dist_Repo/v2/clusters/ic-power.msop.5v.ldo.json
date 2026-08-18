@@ -6,34 +6,29 @@
   "IC",
   "Power"
  ],
- "description": "Surface-mount IC power cluster with 5V, LDO, and 4.5V facets using an MSOP-16-1EP footprint.",
+ "description": "1 ic power parts for 5V, LDO, 4.5V using MSOP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select for surface-mount IC power designs requiring MSOP packaging.",
-  "Verify fit with the MSOP-16-1EP footprint.",
-  "Check alignment with 5V, 4.5V, and LDO facets."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a MSOP land pattern is intended."
  ],
  "avoid_when": [
-  "The design requires through-hole mounting or non-MSOP packaging.",
-  "The board layout calls for a footprint other than MSOP-16-1EP.",
-  "Circuit requirements do not match 5V, 4.5V, or LDO facets."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than MSOP."
  ],
  "keywords": [
-  "ic",
-  "power",
-  "msop",
   "ldo",
+  "msop",
   "5v",
-  "4.5v",
-  "smd",
-  "msop-16-1ep",
-  "ltc3260xmse",
-  "regulator",
-  "switchedcapacitor",
   "supply",
   "inverting",
   "charge",
   "pump",
   "positive",
+  "ltc3260xmse",
+  "regulator",
+  "switchedcapacitor",
   "low",
   "noise",
   "dual",
@@ -63,7 +58,7 @@
   "tier_counts": {
    "A": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -78,6 +73,6 @@
  "part_ids": [
   "kicad-symbols/Regulator_SwitchedCapacitor/LTC3260xMSE"
  ],
- "embedding_text": "ic-power.msop.5v.ldo | IC Power | Surface-mount IC power cluster with 5V, LDO, and 4.5V facets using an MSOP-16-1EP footprint. | ic power msop ldo 5v 4.5v smd msop-16-1ep ltc3260xmse regulator switchedcapacitor supply inverting charge pump positive low noise dual with both | MSOP | 5V LDO 4.5V",
+ "embedding_text": "ic-power.msop.5v.ldo | IC Power | 1 ic power parts for 5V, LDO, 4.5V using MSOP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | ldo msop 5v supply inverting charge pump positive ltc3260xmse regulator switchedcapacitor low noise dual with both | MSOP | 5V LDO 4.5V",
  "class": "ic.power"
 }

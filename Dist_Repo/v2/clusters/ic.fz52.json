@@ -5,28 +5,20 @@
  "category_path": [
   "IC"
  ],
- "description": "IC cluster containing 3 parts in the FZ52 package family with FZ52_L, FZ52_M, and FZ52_N footprints.",
+ "description": "3 ic parts using FZ52 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when an IC requiring the FZ52 package family is needed.",
-  "Choose between FZ52_L, FZ52_M, and FZ52_N footprint variants.",
-  "Check individual part details among the 3 quality tier C entries."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a FZ52 land pattern is intended."
  ],
  "avoid_when": [
-  "The design requires footprints other than FZ52_L, FZ52_M, or FZ52_N.",
-  "Parts with planner visibility or quality tiers above tier C are required.",
-  "Specific mounting specifications are required prior to part evaluation."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than FZ52."
  ],
  "keywords": [
   "fz52",
   "ic",
-  "fz52_l",
-  "fz52_m",
-  "fz52_n",
-  "package family fz52",
-  "dist-legacy",
-  "tier c",
-  "ic cluster",
-  "fz52 land pattern",
   "pad",
   "mm",
   "pitch",
@@ -53,7 +45,7 @@
   "tier_counts": {
    "C": 3
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
@@ -61,6 +53,6 @@
   "dist-legacy/FZ52_M",
   "dist-legacy/FZ52_N"
  ],
- "embedding_text": "ic.fz52 | IC | IC cluster containing 3 parts in the FZ52 package family with FZ52_L, FZ52_M, and FZ52_N footprints. | fz52 ic fz52_l fz52_m fz52_n package family fz52 dist-legacy tier c ic cluster fz52 land pattern pad mm pitch pins | FZ52 | ",
+ "embedding_text": "ic.fz52 | IC | 3 ic parts using FZ52 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | fz52 ic pad mm pitch pins | FZ52 | ",
  "class": "ic"
 }

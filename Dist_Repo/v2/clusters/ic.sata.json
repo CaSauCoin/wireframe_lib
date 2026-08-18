@@ -5,42 +5,34 @@
  "category_path": [
   "IC"
  ],
- "description": "Integrated circuit cluster containing 6 parts using SATA package family footprints across SMD and through-hole mounting configurations.",
+ "description": "6 ic parts using SATA footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Match exact footprint requirements such as SATA 7-pin, 22-pin, or Amphenol 10029364-001LF land patterns.",
-  "Select between surface mount (SMD) and through-hole mounting styles.",
-  "Verify part suitability given quality tier C rating and source library origin."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SATA land pattern is intended."
  ],
  "avoid_when": [
-  "The PCB design requires package families other than SATA.",
-  "Planner-visible parts or high tier quality components are strictly required.",
-  "Specific electrical limits, pinouts, or package dimensions are required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SATA."
  ],
  "keywords": [
   "sata",
+  "st",
   "ic",
   "smd",
-  "through_hole",
-  "sata_22_st",
-  "sata_7_ra_smd",
-  "sata_7_st",
-  "sata_7_st_smd",
-  "sata_vertical",
-  "amphenol",
-  "10029364-001lf",
-  "chilaboard",
-  "dist-legacy",
-  "st",
   "pad",
   "mm",
   "pitch",
   "pins",
+  "amphenol",
   "ra",
   "001lf",
   "horizontal",
   "vertical",
   "surface",
-  "mount"
+  "mount",
+  "through"
  ],
  "facts": {
   "package_family": "SATA",
@@ -69,7 +61,7 @@
   "tier_counts": {
    "C": 6
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
@@ -80,6 +72,6 @@
   "dist-legacy/SATA_Amphenol_10029364-001LF_Horizontal",
   "dist-legacy/SATA_VERTICAL"
  ],
- "embedding_text": "ic.sata | IC | Integrated circuit cluster containing 6 parts using SATA package family footprints across SMD and through-hole mounting configurations. | sata ic smd through_hole sata_22_st sata_7_ra_smd sata_7_st sata_7_st_smd sata_vertical amphenol 10029364-001lf chilaboard dist-legacy st pad mm pitch pins ra 001lf horizontal vertical surface mount | SATA | ",
+ "embedding_text": "ic.sata | IC | 6 ic parts using SATA footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | sata st ic smd pad mm pitch pins amphenol ra 001lf horizontal vertical surface mount through | SATA | ",
  "class": "ic"
 }

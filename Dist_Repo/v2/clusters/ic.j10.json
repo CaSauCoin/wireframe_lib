@@ -5,30 +5,24 @@
  "category_path": [
   "IC"
  ],
- "description": "IC cluster containing 4 tier C parts in the J10 package family with footprints J10-C1T, J10-C2T, J10-D1T, and J10-D2T.",
+ "description": "4 ic parts using J10 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when a J10 footprint variant (J10-C1T, J10-C2T, J10-D1T, J10-D2T) is needed.",
-  "Verify part requirements against tier C quality classification and dist-legacy sourcing.",
-  "Confirm mounting parameters prior to selection as mount style is listed as unknown."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a J10 land pattern is intended."
  ],
  "avoid_when": [
-  "Avoid if the design requires a package family other than J10.",
-  "Avoid when tier C quality tier or legacy distribution sources are unacceptable.",
-  "Do not use if planner-visible parts or confirmed mount styles are required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than J10."
  ],
  "keywords": [
-  "ic",
   "j10",
-  "j10-c1t",
-  "j10-c2t",
-  "j10-d1t",
-  "j10-d2t",
+  "ic",
   "c1t",
   "c2t",
   "d1t",
   "d2t",
-  "tier c",
-  "dist-legacy",
   "pad",
   "mm",
   "pitch",
@@ -56,7 +50,7 @@
   "tier_counts": {
    "C": 4
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
@@ -65,6 +59,6 @@
   "dist-legacy/J10-D1T",
   "dist-legacy/J10-D2T"
  ],
- "embedding_text": "ic.j10 | IC | IC cluster containing 4 tier C parts in the J10 package family with footprints J10-C1T, J10-C2T, J10-D1T, and J10-D2T. | ic j10 j10-c1t j10-c2t j10-d1t j10-d2t c1t c2t d1t d2t tier c dist-legacy pad mm pitch pins | J10 | ",
+ "embedding_text": "ic.j10 | IC | 4 ic parts using J10 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | j10 ic c1t c2t d1t d2t pad mm pitch pins | J10 | ",
  "class": "ic"
 }

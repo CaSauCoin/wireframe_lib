@@ -7,42 +7,34 @@
   "Interface",
   "USB"
  ],
- "description": "Surface-mount USB to UART or serial interface ICs in SSOP packages, covering KiCad symbol library parts such as CH340, FT230, FT231, and MCP2200.",
+ "description": "8 ic interface usb parts for USB, UART/serial using SSOP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select based on specific SSOP pin count and footprint dimensions such as SSOP-10-1EP, SSOP-16, or SSOP-20.",
-  "Check lead pitch options including 0.635mm, 0.65mm, and 1.0mm.",
-  "Verify if an exposed pad (EP) design is required for the land pattern."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SSOP land pattern is intended."
  ],
  "avoid_when": [
-  "Through-hole (THT) mounting or package families other than SSOP are required.",
-  "Interfaces other than USB to UART/serial are needed.",
-  "Land pattern requirements differ from the specified SSOP package variants."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SSOP."
  ],
  "keywords": [
   "usb",
-  "uart",
-  "serial",
   "ssop",
+  "uart",
   "interface",
-  "ic",
-  "smd",
-  "ch340",
-  "ch340k",
-  "ch340t",
-  "ft230xs",
-  "ft231xs",
-  "mcp2200",
-  "ssop-20",
-  "ssop-16",
-  "ssop-10",
   "converter",
+  "serial",
+  "ic",
   "so",
   "p0",
   "to",
   "3x7",
   "2mm",
   "65mm",
-  "ss"
+  "ss",
+  "protocol",
+  "with"
  ],
  "facts": {
   "package_family": "SSOP",
@@ -69,7 +61,7 @@
   "tier_counts": {
    "A": 8
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -123,6 +115,6 @@
   "kicad-symbols/Interface_USB/MCP2200T-E-SS",
   "kicad-symbols/Interface_USB/MCP2200T-I-SS"
  ],
- "embedding_text": "ic-interface-usb.ssop.usb.uart | IC Interface USB | Surface-mount USB to UART or serial interface ICs in SSOP packages, covering KiCad symbol library parts such as CH340, FT230, FT231, and MCP2200. | usb uart serial ssop interface ic smd ch340 ch340k ch340t ft230xs ft231xs mcp2200 ssop-20 ssop-16 ssop-10 converter so p0 to 3x7 2mm 65mm ss | SSOP | USB UART/serial",
+ "embedding_text": "ic-interface-usb.ssop.usb.uart | IC Interface USB | 8 ic interface usb parts for USB, UART/serial using SSOP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | usb ssop uart interface converter serial ic so p0 to 3x7 2mm 65mm ss protocol with | SSOP | USB UART/serial",
  "class": "ic.interface.usb"
 }

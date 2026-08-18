@@ -5,31 +5,21 @@
  "category_path": [
   "IC"
  ],
- "description": "This cluster includes surface-mount IC parts associated with 5V and 12V ratings, featuring SOIC-8 footprints and DC-DC charge pump functionality.",
+ "description": "1 ic parts for 5V, 12V using SOIC footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when requiring an SMD integrated circuit in a SOIC package family.",
-  "Verify compatibility with 5V or 12V operating parameters.",
-  "Confirm layout compatibility with the SOIC-8 land pattern.",
-  "Review tier B quality status and source metadata before selection."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SOIC land pattern is intended."
  ],
  "avoid_when": [
-  "Avoid if the design requires package types other than SOIC.",
-  "Do not use if through-hole mounting is required.",
-  "Avoid if application voltages differ from the specified 5V and 12V facets."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SOIC."
  ],
  "keywords": [
-  "ic",
   "soic",
-  "soic-8",
-  "5v",
   "12v",
-  "smd",
-  "dc-dc",
-  "charge pump",
-  "jlcpcb",
-  "power",
-  "12vin",
-  "kicad",
+  "5v",
   "dc",
   "charge",
   "l5",
@@ -39,6 +29,9 @@
   "bl",
   "c7881",
   "pump",
+  "12vin",
+  "jlcpcb",
+  "power",
   "100ua"
  ],
  "facts": {
@@ -63,7 +56,7 @@
   "tier_counts": {
    "B": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -78,6 +71,6 @@
  "part_ids": [
   "JLCPCB-Kicad-Library/JLCPCB-Power/DC-DC, Charge Pump, 12VIN, "
  ],
- "embedding_text": "ic.soic.5v.12v | IC | This cluster includes surface-mount IC parts associated with 5V and 12V ratings, featuring SOIC-8 footprints and DC-DC charge pump functionality. | ic soic soic-8 5v 12v smd dc-dc charge pump jlcpcb power 12vin kicad dc charge l5 w4 p1 ls6 bl c7881 pump 100ua | SOIC | 5V 12V",
+ "embedding_text": "ic.soic.5v.12v | IC | 1 ic parts for 5V, 12V using SOIC footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | soic 12v 5v dc charge l5 w4 p1 ls6 bl c7881 pump 12vin jlcpcb power 100ua | SOIC | 5V 12V",
  "class": "ic"
 }

@@ -6,28 +6,21 @@
   "Passive",
   "Resistor"
  ],
- "description": "Cluster containing surface-mount passive resistors utilizing the R1210A footprint.",
+ "description": "1 passive resistor parts using R1210A footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Verify the footprint requirements match the R1210A land pattern.",
-  "Review electrical ratings and tolerances for specific application requirements.",
-  "Check source data and quality tier before finalizing PCB designs."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a R1210A land pattern is intended."
  ],
  "avoid_when": [
-  "The board layout requires through-hole or non-R1210A package footprints.",
-  "A package family other than R1210A is specified.",
-  "Unverified part parameters do not meet required circuit constraints."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than R1210A."
  ],
  "keywords": [
+  "r1210a",
   "passive",
   "resistor",
-  "r1210a",
-  "smd",
-  "surface mount",
-  "passive resistor",
-  "footprint r1210a",
-  "package family r1210a",
-  "chilaboard",
-  "altium",
   "surface",
   "mount",
   "pad",
@@ -54,12 +47,12 @@
   "tier_counts": {
    "C": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
   "chilaboard-altium-library/R1210A/R1210A"
  ],
- "embedding_text": "passive-resistor.r1210a | Passive Resistor | Cluster containing surface-mount passive resistors utilizing the R1210A footprint. | passive resistor r1210a smd surface mount passive resistor footprint r1210a package family r1210a chilaboard altium surface mount pad mm pitch pins | R1210A | ",
+ "embedding_text": "passive-resistor.r1210a | Passive Resistor | 1 passive resistor parts using R1210A footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | r1210a passive resistor surface mount pad mm pitch pins | R1210A | ",
  "class": "passive.resistor"
 }

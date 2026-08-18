@@ -6,42 +6,34 @@
   "IC",
   "Isolator"
  ],
- "description": "Integrated circuit isolator cluster containing 26 Tier-A KiCad symbols in DIP and SMDIP packages supporting through-hole and surface-mount.",
+ "description": "26 ic isolator parts using DIP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select for IC isolator applications requiring DIP or SMDIP packages.",
-  "Choose between through-hole and SMD mounting options.",
-  "Match exact footprint pin counts of 4, 6, 8, or 16 pins and body widths."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a DIP land pattern is intended."
  ],
  "avoid_when": [
-  "The design requires package families other than DIP or SMDIP.",
-  "Isolation capability is not needed for the IC component.",
-  "Layout requires footprint sizes or pin counts outside the provided DIP variants."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than DIP."
  ],
  "keywords": [
-  "ic",
-  "isolator",
   "dip",
-  "smdip",
-  "smd",
-  "through_hole",
-  "dip-4",
-  "dip-6",
-  "dip-8",
-  "dip-16",
-  "w7.62mm",
-  "w9.53mm",
-  "w10.16mm",
-  "hcpl-9000",
-  "hcpl2730",
-  "mid400",
-  "voa300",
+  "isolator",
   "62mm",
   "optocoupler",
   "dil",
   "pdip",
   "54mm",
+  "ic",
   "tht",
-  "w7"
+  "w7",
+  "300mil",
+  "high",
+  "dc",
+  "speed",
+  "npn",
+  "output"
  ],
  "facts": {
   "package_family": "DIP",
@@ -68,7 +60,7 @@
   "tier_counts": {
    "A": 26
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -140,6 +132,6 @@
   "kicad-symbols/Isolator/TLP627-2",
   "kicad-symbols/Isolator/TLP627-4"
  ],
- "embedding_text": "ic-isolator.dip | IC Isolator | Integrated circuit isolator cluster containing 26 Tier-A KiCad symbols in DIP and SMDIP packages supporting through-hole and surface-mount. | ic isolator dip smdip smd through_hole dip-4 dip-6 dip-8 dip-16 w7.62mm w9.53mm w10.16mm hcpl-9000 hcpl2730 mid400 voa300 62mm optocoupler dil pdip 54mm tht w7 | DIP | ",
+ "embedding_text": "ic-isolator.dip | IC Isolator | 26 ic isolator parts using DIP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | dip isolator 62mm optocoupler dil pdip 54mm ic tht w7 300mil high dc speed npn output | DIP | ",
  "class": "ic.isolator"
 }

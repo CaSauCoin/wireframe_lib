@@ -6,30 +6,21 @@
   "Passive",
   "Resistor"
  ],
- "description": "A cluster of 5 passive resistors from the chilaboard-altium-library in LTOR package footprints supporting surface-mount and through-hole mounting.",
+ "description": "5 passive resistor parts using LTOR footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select the specific LTOR footprint variant required by the layout, such as 15X6, 15X6B, 25X10, 25X10B, or 25X10SMD.",
-  "Verify the required mounting type, either surface-mount (smd) or through-hole.",
-  "Review part details given the tier C quality status from the chilaboard-altium-library source."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a LTOR land pattern is intended."
  ],
  "avoid_when": [
-  "The layout requires a package family other than LTOR.",
-  "Neither surface-mount nor through-hole LTOR footprints are acceptable for the board.",
-  "Tier C generated library parts do not meet project qualification requirements."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than LTOR."
  ],
  "keywords": [
   "ltor",
   "passive",
   "resistor",
-  "passive resistor",
-  "ltor_15x6",
-  "ltor_15x6b",
-  "ltor_25x10",
-  "ltor_25x10b",
-  "ltor_25x10smd",
-  "smd",
-  "through_hole",
-  "chilaboard-altium-library",
   "15x6",
   "pad",
   "mm",
@@ -41,7 +32,8 @@
   "25x10smd",
   "through",
   "hole",
-  "surface"
+  "surface",
+  "mount"
  ],
  "facts": {
   "package_family": "LTOR",
@@ -67,7 +59,7 @@
   "tier_counts": {
    "C": 5
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
@@ -77,6 +69,6 @@
   "chilaboard-altium-library/LTOR_25X10B/LTOR_25X10B",
   "chilaboard-altium-library/LTOR_25X10SMD/LTOR_25X10SMD"
  ],
- "embedding_text": "passive-resistor.ltor | Passive Resistor | A cluster of 5 passive resistors from the chilaboard-altium-library in LTOR package footprints supporting surface-mount and through-hole mounting. | ltor passive resistor passive resistor ltor_15x6 ltor_15x6b ltor_25x10 ltor_25x10b ltor_25x10smd smd through_hole chilaboard-altium-library 15x6 pad mm pitch pins 15x6b 25x10 25x10b 25x10smd through hole surface | LTOR | ",
+ "embedding_text": "passive-resistor.ltor | Passive Resistor | 5 passive resistor parts using LTOR footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | ltor passive resistor 15x6 pad mm pitch pins 15x6b 25x10 25x10b 25x10smd through hole surface mount | LTOR | ",
  "class": "passive.resistor"
 }

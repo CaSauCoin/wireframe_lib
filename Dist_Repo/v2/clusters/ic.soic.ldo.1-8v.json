@@ -5,32 +5,23 @@
  "category_path": [
   "IC"
  ],
- "description": "Surface-mount 1.8V LDO voltage regulator ICs in SOIC-8 packages with exposed pad footprints.",
+ "description": "8 ic parts for LDO, 1.8V using SOIC footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when a surface-mount 1.8V LDO regulator in a SOIC package is required.",
-  "Match specific exposed pad dimensions (EP2.41x3.3mm or EP2.29x2.29mm) to the PCB footprint layout.",
-  "Verify individual part number specifications and pinouts for your target schematic."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SOIC land pattern is intended."
  ],
  "avoid_when": [
-  "Output voltages other than 1.8V are required.",
-  "The board layout requires packages other than SOIC-8-1EP or non-SMD mounting.",
-  "A switching regulator or non-LDO topology is required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SOIC."
  ],
  "keywords": [
-  "ldo",
-  "1.8v",
-  "soic",
-  "soic-8",
-  "soic-8-1ep",
-  "voltage regulator",
-  "linear regulator",
-  "smd",
-  "surface mount",
-  "exposed pad",
-  "ic",
   "voltage",
   "regulator",
   "8v",
+  "soic",
+  "ldo",
   "so",
   "enable",
   "low",
@@ -40,7 +31,8 @@
   "kicad",
   "library",
   "1ep",
-  "9x4"
+  "9x4",
+  "9mm"
  ],
  "facts": {
   "package_family": "SOIC",
@@ -65,7 +57,7 @@
   "tier_counts": {
    "A": 8
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -119,6 +111,6 @@
   "Alternate-KiCad-Library/Voltage_Regulator_AKL/AP2114MP-1.8TRG1",
   "Alternate-KiCad-Library/Voltage_Regulator_AKL/AP7361-18SP"
  ],
- "embedding_text": "ic.soic.ldo.1-8v | IC | Surface-mount 1.8V LDO voltage regulator ICs in SOIC-8 packages with exposed pad footprints. | ldo 1.8v soic soic-8 soic-8-1ep voltage regulator linear regulator smd surface mount exposed pad ic voltage regulator 8v so enable low dropout akl alternate kicad library 1ep 9x4 | SOIC | LDO 1.8V",
+ "embedding_text": "ic.soic.ldo.1-8v | IC | 8 ic parts for LDO, 1.8V using SOIC footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | voltage regulator 8v soic ldo so enable low dropout akl alternate kicad library 1ep 9x4 9mm | SOIC | LDO 1.8V",
  "class": "ic"
 }

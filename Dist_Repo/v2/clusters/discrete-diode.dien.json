@@ -6,32 +6,21 @@
   "Discrete",
   "Diode"
  ],
- "description": "Cluster of 9 discrete diode parts sharing the DIEN footprint family, all from the dist-legacy source and rated tier B with a score of 90.",
+ "description": "9 discrete diode parts using DIEN footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Match the exact DIEN footprint variant needed (e.g. 0805, 1206, 10W, 1W tube, 1/4W)",
-  "All entries are tier B with equal score 90, so differentiate by footprint/size variant name",
-  "Confirm symbol-footprint pairing before use since review_status is 'generated'"
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a DIEN land pattern is intended."
  ],
  "avoid_when": [
-  "A specific electrical rating (voltage, current, speed) is required but not documented on the part",
-  "The board layout needs a footprint outside the DIEN family",
-  "A verified (non-generated) review status is required for the design"
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than DIEN."
  ],
  "keywords": [
   "dien",
-  "diode",
-  "discrete diode",
-  "discrete",
   "tro",
-  "footprint dien",
-  "0805",
-  "1206",
-  "10w",
-  "1w tube",
-  "1/4w",
-  "dist-legacy",
-  "tier b",
-  "package family dien",
+  "diode",
   "pin",
   "resistor",
   "anode",
@@ -39,9 +28,12 @@
   "tube",
   "two",
   "component",
+  "discrete",
   "2w",
   "with",
-  "and"
+  "and",
+  "footprint",
+  "power"
  ],
  "facts": {
   "package_family": "DIEN",
@@ -62,7 +54,7 @@
   "tier_counts": {
    "B": 9
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -117,6 +109,6 @@
   "dist-legacy/DIEN TRO 3W (tube)",
   "dist-legacy/DIEN TRO 5W"
  ],
- "embedding_text": "discrete-diode.dien | Discrete Diode | Cluster of 9 discrete diode parts sharing the DIEN footprint family, all from the dist-legacy source and rated tier B with a score of 90. | dien diode discrete diode discrete tro footprint dien 0805 1206 10w 1w tube 1/4w dist-legacy tier b package family dien pin resistor anode cathode tube two component 2w with and | DIEN | ",
+ "embedding_text": "discrete-diode.dien | Discrete Diode | 9 discrete diode parts using DIEN footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | dien tro diode pin resistor anode cathode tube two component discrete 2w with and footprint power | DIEN | ",
  "class": "discrete.diode"
 }

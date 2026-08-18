@@ -6,28 +6,21 @@
   "Discrete",
   "Diode"
  ],
- "description": "Discrete diode cluster containing 1 tier-C entry associated with Fuse5 footprints and unknown mounting.",
+ "description": "1 discrete diode parts using Fuse5 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Verify package dimensions and exact footprint for Fuse5 entries.",
-  "Check pin-to-pad mapping and electrical parameters before PCB layout.",
-  "Consider quality tier C status and legacy distribution sources."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a Fuse5 land pattern is intended."
  ],
  "avoid_when": [
-  "The PCB layout requires a package other than Fuse5.",
-  "Required electrical parameters or tolerances are not provided.",
-  "Tier-C entries with unknown mounting types are unsuitable for the design."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than Fuse5."
  ],
  "keywords": [
-  "discrete diode",
   "fuse5",
   "discrete",
   "diode",
-  "fuse5 package",
-  "fuse5 footprint",
-  "discrete.diode",
-  "tier c",
-  "dist-legacy",
-  "unknown mount",
   "pad",
   "mm",
   "pitch",
@@ -52,12 +45,12 @@
   "tier_counts": {
    "C": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
   "dist-legacy/Fuse5"
  ],
- "embedding_text": "discrete-diode.fuse5 | Discrete Diode | Discrete diode cluster containing 1 tier-C entry associated with Fuse5 footprints and unknown mounting. | discrete diode fuse5 discrete diode fuse5 package fuse5 footprint discrete.diode tier c dist-legacy unknown mount pad mm pitch pins | Fuse5 | ",
+ "embedding_text": "discrete-diode.fuse5 | Discrete Diode | 1 discrete diode parts using Fuse5 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | fuse5 discrete diode pad mm pitch pins | Fuse5 | ",
  "class": "discrete.diode"
 }

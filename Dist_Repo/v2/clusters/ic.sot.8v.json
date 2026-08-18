@@ -5,32 +5,22 @@
  "category_path": [
   "IC"
  ],
- "description": "A collection of 7 surface-mount 8V IC parts in SOT packages, available in SOT-89-3 and SOT-223-3_TabPin2 footprints.",
+ "description": "7 ic parts for 8V using SOT footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select based on required footprint: SOT-89-3 or SOT-223-3_TabPin2.",
-  "Use when an 8V surface-mount (SMD) IC component is needed.",
-  "Verify specific part numbers such as DI78L08UAB, L78L08ABU, or ZSR800GTA for exact symbol and footprint selection."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SOT land pattern is intended."
  ],
  "avoid_when": [
-  "The design requires through-hole mounting instead of SMD.",
-  "The circuit requires a voltage specification other than 8V.",
-  "A footprint other than SOT-89-3 or SOT-223-3_TabPin2 is required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SOT."
  ],
  "keywords": [
-  "ic",
   "sot",
-  "8v",
-  "smd",
-  "sot-89-3",
-  "sot-223-3_tabpin2",
-  "voltage regulator",
-  "alternate-kicad-library",
-  "di78l08uab",
-  "di79l08uab",
-  "l78l08abu",
-  "zsr800gta",
   "voltage",
   "regulator",
+  "8v",
   "100ma",
   "terminal",
   "akl",
@@ -40,7 +30,9 @@
   "vreg",
   "pmic",
   "power",
-  "supply"
+  "supply",
+  "ic",
+  "78l08"
  ],
  "facts": {
   "package_family": "SOT",
@@ -64,7 +56,7 @@
   "tier_counts": {
    "A": 7
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -117,6 +109,6 @@
   "Alternate-KiCad-Library/Voltage_Regulator_AKL/μA78L08ACPK",
   "Alternate-KiCad-Library/Voltage_Regulator_AKL/μA78M08CDCY"
  ],
- "embedding_text": "ic.sot.8v | IC | A collection of 7 surface-mount 8V IC parts in SOT packages, available in SOT-89-3 and SOT-223-3_TabPin2 footprints. | ic sot 8v smd sot-89-3 sot-223-3_tabpin2 voltage regulator alternate-kicad-library di78l08uab di79l08uab l78l08abu zsr800gta voltage regulator 100ma terminal akl alternate kicad library vreg pmic power supply | SOT | 8V",
+ "embedding_text": "ic.sot.8v | IC | 7 ic parts for 8V using SOT footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | sot voltage regulator 8v 100ma terminal akl alternate kicad library vreg pmic power supply ic 78l08 | SOT | 8V",
  "class": "ic"
 }

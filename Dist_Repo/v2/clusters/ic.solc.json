@@ -5,28 +5,21 @@
  "category_path": [
   "IC"
  ],
- "description": "Cluster of 2 integrated circuit parts in the SOLC package family utilizing surface-mount mounting and SOLC_15Q footprints.",
+ "description": "2 ic parts using SOLC footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Verify part suitability for the SOLC_15Q footprint and SOLC package family.",
-  "Check quality tier and source library data before committing to layout.",
-  "Confirm surface-mount (SMD) mounting compatibility with the target board assembly."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SOLC land pattern is intended."
  ],
  "avoid_when": [
-  "The board design requires a package family other than SOLC.",
-  "Surface-mount technology is not used in the layout.",
-  "Electrical specifications or pin definitions are unverified for the selected part."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SOLC."
  ],
  "keywords": [
   "solc",
-  "solc_15q",
-  "ic",
-  "smd",
-  "surface mount",
-  "chilaboard-altium-library",
-  "solc package",
-  "solc footprint",
   "15q",
-  "integrated circuit",
+  "ic",
   "surface",
   "mount",
   "pad",
@@ -53,13 +46,13 @@
   "tier_counts": {
    "C": 2
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
   "chilaboard-altium-library/SOLC-115-02/SOLC-115-02",
   "chilaboard-altium-library/SOLC_15Q/SOLC_15Q"
  ],
- "embedding_text": "ic.solc | IC | Cluster of 2 integrated circuit parts in the SOLC package family utilizing surface-mount mounting and SOLC_15Q footprints. | solc solc_15q ic smd surface mount chilaboard-altium-library solc package solc footprint 15q integrated circuit surface mount pad mm pitch pins | SOLC | ",
+ "embedding_text": "ic.solc | IC | 2 ic parts using SOLC footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | solc 15q ic surface mount pad mm pitch pins | SOLC | ",
  "class": "ic"
 }

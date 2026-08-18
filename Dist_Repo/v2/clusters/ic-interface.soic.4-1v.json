@@ -6,40 +6,34 @@
   "IC",
   "Interface"
  ],
- "description": "Interface IC cluster with a 4.1V rating in a surface-mount SOIC-8 footprint.",
+ "description": "1 ic interface parts for 4.1V using SOIC footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when needing a 4.1V interface IC in an SMD SOIC package.",
-  "Choose for designs requiring a SOIC-8 footprint with 1.27mm pitch.",
-  "Verify compatibility with Tier A KiCad interface symbols."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SOIC land pattern is intended."
  ],
  "avoid_when": [
-  "Avoid if the design requires non-SMD or through-hole mounting.",
-  "Do not use when layout requires packages other than SOIC.",
-  "Avoid if operating requirements differ from 4.1V interface specifications."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SOIC."
  ],
  "keywords": [
-  "ic",
-  "interface",
   "soic",
-  "soic-8",
-  "4.1v",
-  "smd",
-  "xtr116u",
-  "kicad-symbols",
-  "3.9x4.9mm",
-  "1.27mm",
-  "currentloop",
+  "interface",
   "20ma",
   "current",
   "loop",
   "transmitter",
   "so",
+  "xtr116u",
+  "currentloop",
   "vref",
   "096v",
   "9x4",
   "9mm",
   "p1",
-  "27mm"
+  "27mm",
+  "ic"
  ],
  "facts": {
   "package_family": "SOIC",
@@ -62,7 +56,7 @@
   "tier_counts": {
    "A": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -77,6 +71,6 @@
  "part_ids": [
   "kicad-symbols/Interface_CurrentLoop/XTR116U"
  ],
- "embedding_text": "ic-interface.soic.4-1v | IC Interface | Interface IC cluster with a 4.1V rating in a surface-mount SOIC-8 footprint. | ic interface soic soic-8 4.1v smd xtr116u kicad-symbols 3.9x4.9mm 1.27mm currentloop 20ma current loop transmitter so vref 096v 9x4 9mm p1 27mm | SOIC | 4.1V",
+ "embedding_text": "ic-interface.soic.4-1v | IC Interface | 1 ic interface parts for 4.1V using SOIC footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | soic interface 20ma current loop transmitter so xtr116u currentloop vref 096v 9x4 9mm p1 27mm ic | SOIC | 4.1V",
  "class": "ic.interface"
 }

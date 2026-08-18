@@ -7,31 +7,18 @@
   "Analog",
   "Op-Amp"
  ],
- "description": "Single-part cluster of surface-mount analog operational amplifiers in SOT-23-5 packaging rated for 35V.",
+ "description": "1 ic analog op-amp parts for 35V using SOT-23-5 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when requiring a 35V rated surface-mount analog operational amplifier in SOT-23-5.",
-  "Verify part THS4281DBV electrical ratings and pinouts against target circuit requirements.",
-  "Ensure SOT-23-5 land pattern compatibility on the PCB layout."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SOT-23-5 land pattern is intended."
  ],
  "avoid_when": [
-  "The circuit requires non-SMD or package footprints other than SOT-23-5.",
-  "Operating voltage requirements exceed 35V.",
-  "An analog operational amplifier component is not needed."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SOT-23-5."
  ],
  "keywords": [
-  "ic",
-  "analog",
-  "op-amp",
-  "opamp",
-  "operational amplifier",
-  "35v",
-  "sot-23-5",
-  "sot-23",
-  "smd",
-  "ths4281dbv",
-  "alternate-kicad-library",
-  "akl",
-  "surface mount",
   "sot",
   "amplifier",
   "operational",
@@ -39,10 +26,15 @@
   "rrio",
   "low",
   "power",
+  "35v",
   "rail",
+  "ths4281dbv",
+  "akl",
   "90mhz",
   "gbw",
-  "slew"
+  "slew",
+  "rate",
+  "5mv"
  ],
  "facts": {
   "package_family": "SOT-23-5",
@@ -65,7 +57,7 @@
   "tier_counts": {
    "A": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -80,6 +72,6 @@
  "part_ids": [
   "Alternate-KiCad-Library/Amplifier_Operational_AKL/THS4281DBV"
  ],
- "embedding_text": "ic-analog-opamp.sot-23-5.35v | IC Analog Op-Amp | Single-part cluster of surface-mount analog operational amplifiers in SOT-23-5 packaging rated for 35V. | ic analog op-amp opamp operational amplifier 35v sot-23-5 sot-23 smd ths4281dbv alternate-kicad-library akl surface mount sot amplifier operational fast rrio low power rail 90mhz gbw slew | SOT-23-5 | 35V",
+ "embedding_text": "ic-analog-opamp.sot-23-5.35v | IC Analog Op-Amp | 1 ic analog op-amp parts for 35V using SOT-23-5 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | sot amplifier operational fast rrio low power 35v rail ths4281dbv akl 90mhz gbw slew rate 5mv | SOT-23-5 | 35V",
  "class": "ic.analog.opamp"
 }

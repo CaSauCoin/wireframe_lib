@@ -6,42 +6,34 @@
   "IC",
   "Microcontroller"
  ],
- "description": "Cluster of 1278 surface-mount 3.6V microcontroller IC parts in QFP package family footprints, sourced from KiCad symbols.",
+ "description": "1278 ic microcontroller parts for 3.6V using QFP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Match required pin count, body size, and lead pitch among available LQFP and UFQFPN SMD footprints.",
-  "Filter by specific microcontroller part number or series from KiCad symbol sources.",
-  "Check component tier quality, preferring Tier A rated symbols."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a QFP land pattern is intended."
  ],
  "avoid_when": [
-  "The application requires through-hole mounting instead of surface-mount (SMD).",
-  "Operating voltage requirements are incompatible with 3.6V.",
-  "The design requires non-QFP package families or non-microcontroller ICs."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than QFP."
  ],
  "keywords": [
-  "ic",
-  "microcontroller",
-  "3.6v",
-  "qfp",
-  "lqfp",
-  "ufqfpn",
-  "smd",
-  "kicad",
-  "efm8",
-  "msp432",
-  "stm32",
-  "lqfp-100",
-  "lqfp-48",
-  "lqfp-32",
   "6v",
   "mcu",
   "arm",
   "cortex",
+  "qfp",
+  "lqfp",
   "c48",
+  "microcontroller",
   "st",
   "flash",
   "ram",
   "p0",
-  "mhz"
+  "ic",
+  "mhz",
+  "gpio",
+  "stmicroelectronics"
  ],
  "facts": {
   "package_family": "QFP",
@@ -75,7 +67,7 @@
    "A": 1271,
    "B": 7
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -1399,6 +1391,6 @@
   "kicad-symbols/MCU_ST_STM32L0/STM32L011F_3-4_Ux",
   "kicad-symbols/MCU_ST_STM32L0/STM32L021F4Ux"
  ],
- "embedding_text": "ic-mcu.qfp.3-6v | IC Microcontroller | Cluster of 1278 surface-mount 3.6V microcontroller IC parts in QFP package family footprints, sourced from KiCad symbols. | ic microcontroller 3.6v qfp lqfp ufqfpn smd kicad efm8 msp432 stm32 lqfp-100 lqfp-48 lqfp-32 6v mcu arm cortex c48 st flash ram p0 mhz | QFP | 3.6V",
+ "embedding_text": "ic-mcu.qfp.3-6v | IC Microcontroller | 1278 ic microcontroller parts for 3.6V using QFP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | 6v mcu arm cortex qfp lqfp c48 microcontroller st flash ram p0 ic mhz gpio stmicroelectronics | QFP | 3.6V",
  "class": "ic.mcu"
 }

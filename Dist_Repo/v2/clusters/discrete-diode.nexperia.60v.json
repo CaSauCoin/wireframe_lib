@@ -6,44 +6,34 @@
   "Discrete",
   "Diode"
  ],
- "description": "Cluster of 11 SMD discrete diode parts rated for the 60V facet, using Nexperia SOD-123W and SOT-1289 footprints; 8 of 11 entries are tier A, sourced from kicad-symbols, review_status generated.",
+ "description": "11 discrete diode parts for 60V using Nexperia footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Prefer tier A entries (8 of 11, score 100) over the 3 tier B entries.",
-  "Match the exact footprint needed: Nexperia_CFP3_SOD-123W or Nexperia_CFP15_SOT-1289.",
-  "Confirm the 60V facet matches your circuit's voltage requirement.",
-  "review_status is 'generated' — verify against the source symbol/datasheet before committing."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a Nexperia land pattern is intended."
  ],
  "avoid_when": [
-  "A voltage rating other than 60V is required.",
-  "The target footprint is not Nexperia_CFP3_SOD-123W or Nexperia_CFP15_SOT-1289.",
-  "A through-hole mount is needed (cluster is smd only).",
-  "A tier B part would be used without additional verification."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than Nexperia."
  ],
  "keywords": [
   "diode",
-  "discrete diode",
-  "60v",
-  "nexperia",
-  "smd",
-  "sod-123w",
-  "sot-1289",
-  "cfp3",
-  "cfp15",
-  "pmeg6010elr",
-  "pmeg6010er",
-  "pmeg6020aelr",
-  "pmeg6020elr",
-  "pmeg6020er",
-  "kicad-symbols",
-  "tier a",
-  "discrete.diode",
   "sod",
   "123w",
+  "60v",
+  "nexperia",
+  "cfp3",
   "low",
   "mega",
   "schottky",
   "barrier",
-  "rectifier"
+  "rectifier",
+  "discrete",
+  "sot",
+  "leakage",
+  "current",
+  "ir"
  ],
  "facts": {
   "package_family": "Nexperia",
@@ -68,7 +58,7 @@
    "A": 8,
    "B": 3
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -125,6 +115,6 @@
   "kicad-symbols/Diode/PMEG060V050EPD",
   "kicad-symbols/Diode/PMEG060V100EPD"
  ],
- "embedding_text": "discrete-diode.nexperia.60v | Discrete Diode | Cluster of 11 SMD discrete diode parts rated for the 60V facet, using Nexperia SOD-123W and SOT-1289 footprints; 8 of 11 entries are tier A, sourced from kicad-symbols, review_status generated. | diode discrete diode 60v nexperia smd sod-123w sot-1289 cfp3 cfp15 pmeg6010elr pmeg6010er pmeg6020aelr pmeg6020elr pmeg6020er kicad-symbols tier a discrete.diode sod 123w low mega schottky barrier rectifier | Nexperia | 60V",
+ "embedding_text": "discrete-diode.nexperia.60v | Discrete Diode | 11 discrete diode parts for 60V using Nexperia footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | diode sod 123w 60v nexperia cfp3 low mega schottky barrier rectifier discrete sot leakage current ir | Nexperia | 60V",
  "class": "discrete.diode"
 }

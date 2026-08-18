@@ -7,33 +7,24 @@
   "Driver",
   "Display"
  ],
- "description": "Display driver IC cluster featuring SMD parts in SOP packaging, including SOP-24_7.5x15.4mm_P1.27mm footprint parts such as IS31FL3218-GR from KiCad symbols.",
+ "description": "1 ic driver display parts using SOP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Selecting display driver ICs in SMD SOP package family.",
-  "Matching footprint SOP-24_7.5x15.4mm_P1.27mm for PCB design.",
-  "Utilizing display driver parts from KiCad symbols."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SOP land pattern is intended."
  ],
  "avoid_when": [
-  "Through-hole assembly or non-SOP packages are needed.",
-  "Package footprints other than SOP-24_7.5x15.4mm_P1.27mm are required.",
-  "Parts outside the ic.driver.display classification are specified."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SOP."
  ],
  "keywords": [
-  "ic",
-  "driver",
-  "display",
   "sop",
-  "smd",
-  "is31fl3218-gr",
-  "is31fl3218",
-  "sop-24",
-  "kicad-symbols",
-  "ic driver display",
-  "display driver",
-  "sop-24_7.5x15.4mm_p1.27mm",
+  "driver",
   "led",
   "matrix",
   "pwm",
+  "is31fl3218",
   "gr",
   "with",
   "bit",
@@ -41,7 +32,9 @@
   "4mm",
   "p1",
   "27mm",
-  "so"
+  "so",
+  "ic",
+  "display"
  ],
  "facts": {
   "package_family": "SOP",
@@ -62,7 +55,7 @@
   "tier_counts": {
    "B": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -77,6 +70,6 @@
  "part_ids": [
   "kicad-symbols/Driver_LED/IS31FL3218-GR"
  ],
- "embedding_text": "ic-driver-display.sop | IC Driver Display | Display driver IC cluster featuring SMD parts in SOP packaging, including SOP-24_7.5x15.4mm_P1.27mm footprint parts such as IS31FL3218-GR from KiCad symbols. | ic driver display sop smd is31fl3218-gr is31fl3218 sop-24 kicad-symbols ic driver display display driver sop-24_7.5x15.4mm_p1.27mm led matrix pwm gr with bit 5x15 4mm p1 27mm so | SOP | ",
+ "embedding_text": "ic-driver-display.sop | IC Driver Display | 1 ic driver display parts using SOP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | sop driver led matrix pwm is31fl3218 gr with bit 5x15 4mm p1 27mm so ic display | SOP | ",
  "class": "ic.driver.display"
 }

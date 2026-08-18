@@ -7,36 +7,28 @@
   "Interface",
   "USB"
  ],
- "description": "Surface-mount USB interface ICs supporting USB and SPI in SSOP package options including FT220XS, FT221XS, and MCP2210x-SS.",
+ "description": "3 ic interface usb parts for USB, SPI using SSOP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Choose when requiring a surface-mount USB interface IC with SPI in an SSOP package.",
-  "Select based on exact footprint dimensions and pin counts, such as SSOP-16 (0.635mm pitch) or SSOP-20 (0.635mm or 0.65mm pitch).",
-  "Select between supported parts FT220XS, FT221XS, and MCP2210x-SS based on project layout requirements."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SSOP land pattern is intended."
  ],
  "avoid_when": [
-  "Avoid when the design requires a package type other than SSOP or non-SMD mounting.",
-  "Avoid if interfaces other than USB and SPI are required.",
-  "Avoid when exact electrical specifications or pinouts are required but not provided in cluster facts."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SSOP."
  ],
  "keywords": [
-  "ic",
-  "interface",
   "usb",
-  "spi",
   "ssop",
-  "smd",
-  "ft220xs",
-  "ft221xs",
-  "mcp2210x-ss",
-  "ssop-16",
-  "ssop-20",
-  "usb interface",
-  "ic interface usb",
+  "spi",
+  "interface",
   "ft1248",
   "converter",
   "to",
   "bridge",
   "p0",
+  "ic",
   "full",
   "speed",
   "bit",
@@ -68,7 +60,7 @@
   "tier_counts": {
    "A": 3
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -101,6 +93,6 @@
   "kicad-symbols/Interface_USB/FT221XS",
   "kicad-symbols/Interface_USB/MCP2210x-SS"
  ],
- "embedding_text": "ic-interface-usb.ssop.usb.spi | IC Interface USB | Surface-mount USB interface ICs supporting USB and SPI in SSOP package options including FT220XS, FT221XS, and MCP2210x-SS. | ic interface usb spi ssop smd ft220xs ft221xs mcp2210x-ss ssop-16 ssop-20 usb interface ic interface usb ft1248 converter to bridge p0 full speed bit 635mm so ftdi | SSOP | USB SPI",
+ "embedding_text": "ic-interface-usb.ssop.usb.spi | IC Interface USB | 3 ic interface usb parts for USB, SPI using SSOP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | usb ssop spi interface ft1248 converter to bridge p0 ic full speed bit 635mm so ftdi | SSOP | USB SPI",
  "class": "ic.interface.usb"
 }

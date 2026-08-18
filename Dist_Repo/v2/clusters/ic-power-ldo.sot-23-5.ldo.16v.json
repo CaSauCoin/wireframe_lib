@@ -7,31 +7,25 @@
   "Power",
   "Linear Regulator"
  ],
- "description": "Cluster of 7 SMD Tier A 16V LDO linear regulator ICs in SOT-23-5 packages, including LP2985 series parts from KiCad symbols.",
+ "description": "7 ic power linear regulator parts for LDO, 16V using SOT-23-5 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when requiring a 16V LDO linear regulator in an SMD SOT-23-5 footprint.",
-  "Choose based on specific fixed output voltage requirements within the LP2985 series.",
-  "Prefer Tier A parts verified from KiCad symbol libraries."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SOT-23-5 land pattern is intended."
  ],
  "avoid_when": [
-  "The PCB design requires a footprint other than SOT-23-5.",
-  "The application requires a non-LDO regulator or non-16V rated component.",
-  "Through-hole mounting is required instead of SMD."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SOT-23-5."
  ],
  "keywords": [
-  "ic",
-  "power",
-  "linear regulator",
-  "ldo",
-  "16v",
-  "sot-23-5",
-  "smd",
-  "lp2985",
-  "regulator",
-  "kicad-symbols",
   "sot",
+  "regulator",
   "linear",
+  "16v",
   "low",
+  "ldo",
+  "lp2985",
   "150ma",
   "noise",
   "dropout",
@@ -39,7 +33,8 @@
   "shutdown",
   "output",
   "voltage",
-  "to"
+  "to",
+  "smd"
  ],
  "facts": {
   "package_family": "SOT-23-5",
@@ -63,7 +58,7 @@
   "tier_counts": {
    "A": 7
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -116,6 +111,6 @@
   "kicad-symbols/Regulator_Linear/LP2985-3.1",
   "kicad-symbols/Regulator_Linear/LP2985-5.0"
  ],
- "embedding_text": "ic-power-ldo.sot-23-5.ldo.16v | IC Power Linear Regulator | Cluster of 7 SMD Tier A 16V LDO linear regulator ICs in SOT-23-5 packages, including LP2985 series parts from KiCad symbols. | ic power linear regulator ldo 16v sot-23-5 smd lp2985 regulator kicad-symbols sot linear low 150ma noise dropout with shutdown output voltage to | SOT-23-5 | LDO 16V",
+ "embedding_text": "ic-power-ldo.sot-23-5.ldo.16v | IC Power Linear Regulator | 7 ic power linear regulator parts for LDO, 16V using SOT-23-5 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | sot regulator linear 16v low ldo lp2985 150ma noise dropout with shutdown output voltage to smd | SOT-23-5 | LDO 16V",
  "class": "ic.power.ldo"
 }

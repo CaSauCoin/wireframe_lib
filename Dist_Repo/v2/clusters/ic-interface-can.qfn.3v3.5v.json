@@ -7,31 +7,24 @@
   "Interface",
   "CAN"
  ],
- "description": "CAN interface IC cluster in surface-mount QFN packaging with Texas_RGY_R-PVQFN-N20_EP2.05x3.05mm footprint and 3.3V, 5V, and SPI facets.",
+ "description": "2 ic interface can parts for 3.3V, 5V, SPI using QFN footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Targeting CAN interface applications with 3.3V, 5V, and SPI requirements.",
-  "Requiring surface-mount QFN packaging with Texas_RGY_R-PVQFN-N20_EP2.05x3.05mm footprint.",
-  "Selecting tier A KiCad library parts such as TCAN4550RGY or TCAN4551RGYRQ1."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a QFN land pattern is intended."
  ],
  "avoid_when": [
-  "Package requirements differ from QFN or Texas_RGY_R-PVQFN-N20_EP2.05x3.05mm.",
-  "Circuit configuration does not support 3.3V, 5V, or SPI interfaces.",
-  "Through-hole mounting is required instead of SMD."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than QFN."
  ],
  "keywords": [
   "can",
-  "ic",
   "interface",
-  "qfn",
-  "3.3v",
+  "3v",
   "5v",
   "spi",
-  "smd",
-  "tcan4550rgy",
-  "tcan4551rgyrq1",
-  "texas_rgy_r-pvqfn-n20_ep2.05x3.05mm",
-  "ic.interface.can",
-  "3v",
+  "qfn",
   "lin",
   "fd",
   "controller",
@@ -66,7 +59,7 @@
   "tier_counts": {
    "A": 2
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -90,6 +83,6 @@
   "kicad-symbols/Interface_CAN_LIN/TCAN4550RGY",
   "kicad-symbols/Interface_CAN_LIN/TCAN4551RGYRQ1"
  ],
- "embedding_text": "ic-interface-can.qfn.3v3.5v | IC Interface CAN | CAN interface IC cluster in surface-mount QFN packaging with Texas_RGY_R-PVQFN-N20_EP2.05x3.05mm footprint and 3.3V, 5V, and SPI facets. | can ic interface qfn 3.3v 5v spi smd tcan4550rgy tcan4551rgyrq1 texas_rgy_r-pvqfn-n20_ep2.05x3.05mm ic.interface.can 3v lin fd controller with integrated transceiver 5mbps to supply vqfn | QFN | 3.3V 5V SPI",
+ "embedding_text": "ic-interface-can.qfn.3v3.5v | IC Interface CAN | 2 ic interface can parts for 3.3V, 5V, SPI using QFN footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | can interface 3v 5v spi qfn lin fd controller with integrated transceiver 5mbps to supply vqfn | QFN | 3.3V 5V SPI",
  "class": "ic.interface.can"
 }

@@ -5,32 +5,27 @@
  "category_path": [
   "IC"
  ],
- "description": "Surface-mount IC cluster providing USB and UART/serial interfaces in the QFG80 package family using QFG80_32 footprints.",
+ "description": "2 ic parts for USB, UART/serial using QFG80 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select for surface-mount designs requiring USB and UART/serial interface functions.",
-  "Verify compatibility with the QFG80_32 footprint and QFG80 package family.",
-  "Choose between available tier B parts FT232BL_QFP32 and FT232BM_QFP32."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a QFG80 land pattern is intended."
  ],
  "avoid_when": [
-  "A package family other than QFG80 or footprint other than QFG80_32 is required.",
-  "Through-hole or non-SMD mounting is needed.",
-  "Functionality other than USB and UART/serial IC interfaces is needed."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than QFG80."
  ],
  "keywords": [
-  "ic",
   "usb",
   "uart",
-  "serial",
-  "qfg80",
-  "qfg80_32",
-  "smd",
-  "ft232bl_qfp32",
-  "ft232bm_qfp32",
-  "chilaboard-altium-library",
-  "interface",
   "qfp32",
   "to",
   "bridge",
+  "ic",
+  "qfg80",
+  "serial",
+  "interface",
   "ft232bm",
   "ft232bl",
   "modem",
@@ -61,7 +56,7 @@
   "tier_counts": {
    "B": 2
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -85,6 +80,6 @@
   "chilaboard-altium-library/FT232BL_QFP32/FT232BL_QFP32",
   "chilaboard-altium-library/FT232BM_QFP32/FT232BM_QFP32"
  ],
- "embedding_text": "ic.qfg80.usb.uart | IC | Surface-mount IC cluster providing USB and UART/serial interfaces in the QFG80 package family using QFG80_32 footprints. | ic usb uart serial qfg80 qfg80_32 smd ft232bl_qfp32 ft232bm_qfp32 chilaboard-altium-library interface qfp32 to bridge ft232bm ft232bl modem control signals oscillator pins | QFG80 | USB UART/serial",
+ "embedding_text": "ic.qfg80.usb.uart | IC | 2 ic parts for USB, UART/serial using QFG80 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | usb uart qfp32 to bridge ic qfg80 serial interface ft232bm ft232bl modem control signals oscillator pins | QFG80 | USB UART/serial",
  "class": "ic"
 }

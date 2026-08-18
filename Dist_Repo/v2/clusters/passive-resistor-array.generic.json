@@ -7,33 +7,30 @@
   "Resistor",
   "Array"
  ],
- "description": "Generic passive resistor array cluster with package chosen later, covering concave and convex multi-resistor configurations.",
+ "description": "5 passive resistor array parts with package chosen later. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Match the required termination style such as concave or convex.",
-  "Select the intended array size such as 2x0402, 2x0603, 2x0606, or 2x1206.",
-  "Assign and verify the specific footprint before PCB layout."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Select a footprint/package explicitly before placement."
  ],
  "avoid_when": [
-  "A single discrete resistor is required instead of an array.",
-  "An exact pre-assigned footprint and verified part tier are required immediately."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review."
  ],
  "keywords": [
+  "array",
+  "convex",
   "passive",
   "resistor",
-  "array",
-  "resistor array",
-  "passive resistor array",
-  "convex",
-  "concave",
-  "2x0402",
   "2x0603",
-  "2x0606",
-  "2x1206",
-  "dist-legacy",
   "pins",
   "package",
   "chosen",
-  "later"
+  "later",
+  "concave",
+  "2x0402",
+  "2x0606",
+  "2x1206"
  ],
  "facts": {
   "package_family": "package chosen later",
@@ -50,7 +47,7 @@
   "tier_counts": {
    "G": 5
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -101,6 +98,6 @@
   "dist-legacy/R_Array_Convex_2x0606",
   "dist-legacy/R_Array_Convex_2x1206"
  ],
- "embedding_text": "passive-resistor-array.generic | Passive Resistor Array | Generic passive resistor array cluster with package chosen later, covering concave and convex multi-resistor configurations. | passive resistor array resistor array passive resistor array convex concave 2x0402 2x0603 2x0606 2x1206 dist-legacy pins package chosen later | package chosen later | ",
+ "embedding_text": "passive-resistor-array.generic | Passive Resistor Array | 5 passive resistor array parts with package chosen later. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | array convex passive resistor 2x0603 pins package chosen later concave 2x0402 2x0606 2x1206 | package chosen later | ",
  "class": "passive.resistor.array"
 }

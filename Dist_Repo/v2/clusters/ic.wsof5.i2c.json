@@ -5,30 +5,24 @@
  "category_path": [
   "IC"
  ],
- "description": "Integrated circuit components with I2C interfaces in surface-mount WSOF5 packages.",
+ "description": "1 ic parts for I2C using WSOF5 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when using surface-mount I2C ICs in a WSOF5 package.",
-  "Check part quality tier and source library trust before layout.",
-  "Verify footprint dimensions and pin mappings against design specs."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a WSOF5 land pattern is intended."
  ],
  "avoid_when": [
-  "The board layout requires a package family other than WSOF5.",
-  "An interface protocol other than I2C is required.",
-  "Surface-mount (SMD) components cannot be used."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than WSOF5."
  ],
  "keywords": [
+  "light",
+  "sensor",
+  "bh1721fvc",
   "ic",
   "i2c",
   "wsof5",
-  "smd",
-  "surface mount",
-  "integrated circuit",
-  "light_bh1721fvc",
-  "bh1721fvc",
-  "wsof",
-  "chilaboard",
-  "light",
-  "sensor",
   "ambient",
   "pin",
   "featuring",
@@ -36,6 +30,7 @@
   "and",
   "dvi",
   "in",
+  "wsof",
   "package"
  ],
  "facts": {
@@ -59,7 +54,7 @@
   "tier_counts": {
    "B": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -74,6 +69,6 @@
  "part_ids": [
   "chilaboard-altium-library/LIGHT_BH1721FVC/LIGHT_BH1721FVC"
  ],
- "embedding_text": "ic.wsof5.i2c | IC | Integrated circuit components with I2C interfaces in surface-mount WSOF5 packages. | ic i2c wsof5 smd surface mount integrated circuit light_bh1721fvc bh1721fvc wsof chilaboard light sensor ambient pin featuring interface and dvi in package | WSOF5 | I2C",
+ "embedding_text": "ic.wsof5.i2c | IC | 1 ic parts for I2C using WSOF5 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | light sensor bh1721fvc ic i2c wsof5 ambient pin featuring interface and dvi in wsof package | WSOF5 | I2C",
  "class": "ic"
 }

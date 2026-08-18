@@ -6,34 +6,22 @@
   "Discrete",
   "Transistor"
  ],
- "description": "Surface-mount 50V discrete transistor cluster containing 14 parts in SOT package family footprints including SOT-323, SOT-363, SOT-563, SOT-353, SOT-89-3, and SOT-523.",
+ "description": "14 discrete transistor parts for 50V using SOT footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select based on required SOT footprint variant such as SOT-323, SOT-363, SOT-563, SOT-353, SOT-89-3, or SOT-523.",
-  "Choose between JFET and MOSFET transistor types depending on design requirements.",
-  "Prefer Tier A quality parts (12 available) over Tier B parts (2 available)."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SOT land pattern is intended."
  ],
  "avoid_when": [
-  "The application requires through-hole mounting instead of surface mount.",
-  "The design requires package families other than SOT.",
-  "Voltage requirements differ from the 50V rating of this cluster."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SOT."
  ],
  "keywords": [
-  "discrete transistor",
   "sot",
-  "50v",
-  "smd",
-  "mosfet",
-  "jfet",
-  "sot-323",
-  "sot-363",
-  "sot-563",
-  "sot-353",
-  "sot-89-3",
-  "sot-523",
-  "sc-70",
-  "bss138w",
-  "2sk3320",
   "transistor",
+  "mosfet",
+  "50v",
   "enchancement",
   "sc",
   "discrete",
@@ -41,7 +29,11 @@
   "alternate",
   "kicad",
   "library",
-  "dual"
+  "dual",
+  "mos",
+  "emos",
+  "emosfet",
+  "mode"
  ],
  "facts": {
   "package_family": "SOT",
@@ -72,7 +64,7 @@
    "A": 12,
    "B": 2
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -132,6 +124,6 @@
   "digikey-kicad-library/dk_Transistors-FETs-MOSFETs-Arrays/BSS138DW-7-F",
   "Alternate-KiCad-Library/Transistor_MOSFET_AKL/DMN55D0UT"
  ],
- "embedding_text": "discrete-transistor.sot.50v | Discrete Transistor | Surface-mount 50V discrete transistor cluster containing 14 parts in SOT package family footprints including SOT-323, SOT-363, SOT-563, SOT-353, SOT-89-3, and SOT-523. | discrete transistor sot 50v smd mosfet jfet sot-323 sot-363 sot-563 sot-353 sot-89-3 sot-523 sc-70 bss138w 2sk3320 transistor enchancement sc discrete akl alternate kicad library dual | SOT | 50V",
+ "embedding_text": "discrete-transistor.sot.50v | Discrete Transistor | 14 discrete transistor parts for 50V using SOT footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | sot transistor mosfet 50v enchancement sc discrete akl alternate kicad library dual mos emos emosfet mode | SOT | 50V",
  "class": "discrete.transistor"
 }

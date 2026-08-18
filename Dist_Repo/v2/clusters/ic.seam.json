@@ -5,29 +5,21 @@
  "category_path": [
   "IC"
  ],
- "description": "IC cluster of 6 surface-mount parts using SEAM and SEAM_PLUS footprints from the chilaboard-altium-library.",
+ "description": "6 ic parts using SEAM footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select based on whether SEAM or SEAM_PLUS footprint is required.",
-  "Filter by tier B or tier C quality ratings from chilaboard-altium-library.",
-  "Use when surface-mount (SMD) packaging is specified."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SEAM land pattern is intended."
  ],
  "avoid_when": [
-  "Layout requires footprints other than SEAM or SEAM_PLUS.",
-  "Surface-mount (SMD) components are not suitable for the board design.",
-  "Parts from chilaboard-altium-library do not meet project sourcing criteria."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SEAM."
  ],
  "keywords": [
-  "ic",
   "seam",
-  "seam_plus",
-  "seam plus",
-  "smd",
-  "surface mount",
-  "chilaboard-altium-library",
-  "seam_cb",
-  "seam_plus_cb",
-  "integrated circuit",
   "connector",
+  "ic",
   "plus",
   "board",
   "high",
@@ -63,7 +55,7 @@
    "B": 2,
    "C": 4
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -91,6 +83,6 @@
   "chilaboard-altium-library/SEAM/SEAM",
   "chilaboard-altium-library/SEAM_PLUS/SEAM_PLUS"
  ],
- "embedding_text": "ic.seam | IC | IC cluster of 6 surface-mount parts using SEAM and SEAM_PLUS footprints from the chilaboard-altium-library. | ic seam seam_plus seam plus smd surface mount chilaboard-altium-library seam_cb seam_plus_cb integrated circuit connector plus board high surface mount cb density pad mm pitch pins pin to | SEAM | ",
+ "embedding_text": "ic.seam | IC | 6 ic parts using SEAM footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | seam connector ic plus board high surface mount cb density pad mm pitch pins pin to | SEAM | ",
  "class": "ic"
 }

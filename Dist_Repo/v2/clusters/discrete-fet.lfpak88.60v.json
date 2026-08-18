@@ -6,33 +6,25 @@
   "Discrete",
   "FET"
  ],
- "description": "Discrete 60V surface-mount field-effect transistor cluster containing 3 tier A KiCad symbol entries in LFPAK88 packages.",
+ "description": "3 discrete fet parts for 60V using LFPAK88 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when requiring a 60V discrete FET in an LFPAK88 package.",
-  "Choose from tier A entries including SQJQ160E, SQJQ160EL, and SQJQ466E.",
-  "Confirm compatibility with surface-mount LFPAK88 footprints."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a LFPAK88 land pattern is intended."
  ],
  "avoid_when": [
-  "Avoid when a voltage rating other than 60V is required.",
-  "Avoid if non-SMD or through-hole mounting is required.",
-  "Avoid when the PCB layout requires a footprint other than LFPAK88."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than LFPAK88."
  ],
  "keywords": [
-  "discrete fet",
+  "lfpak88",
   "fet",
   "60v",
-  "lfpak88",
-  "smd",
-  "transistor",
-  "sqjq160e",
-  "sqjq160el",
-  "sqjq466e",
-  "kicad-symbols",
-  "discrete",
-  "surface mount",
   "mosfet",
   "powerpak",
   "8x8l",
+  "transistor",
   "id",
   "vds",
   "channel",
@@ -64,7 +56,7 @@
   "tier_counts": {
    "A": 3
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -97,6 +89,6 @@
   "kicad-symbols/Transistor_FET/SQJQ160EL",
   "kicad-symbols/Transistor_FET/SQJQ466E"
  ],
- "embedding_text": "discrete-fet.lfpak88.60v | Discrete FET | Discrete 60V surface-mount field-effect transistor cluster containing 3 tier A KiCad symbol entries in LFPAK88 packages. | discrete fet fet 60v lfpak88 smd transistor sqjq160e sqjq160el sqjq466e kicad-symbols discrete surface mount mosfet powerpak 8x8l id vds channel trenchfet ron qqd to nexperia vishay | LFPAK88 | 60V",
+ "embedding_text": "discrete-fet.lfpak88.60v | Discrete FET | 3 discrete fet parts for 60V using LFPAK88 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | lfpak88 fet 60v mosfet powerpak 8x8l transistor id vds channel trenchfet ron qqd to nexperia vishay | LFPAK88 | 60V",
  "class": "discrete.fet"
 }

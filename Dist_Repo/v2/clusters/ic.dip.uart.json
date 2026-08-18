@@ -5,36 +5,28 @@
  "category_path": [
   "IC"
  ],
- "description": "Cluster of 8 integrated circuits for UART and serial interfaces in through-hole DIP packages including DIP-8, DIP-16, and DIP-40 footprints.",
+ "description": "8 ic parts for UART/serial using DIP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when designing through-hole circuits requiring DIP package UART or serial interface ICs.",
-  "Match the specific footprint variant such as DIP_8, DIP_16, DIP-16_W7.62mm, or DIP_40DW.",
-  "Prefer Tier A representative parts such as MAX3232CPE_ when available."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a DIP land pattern is intended."
  ],
  "avoid_when": [
-  "Surface-mount (SMT) packaging is required instead of DIP through-hole mounting.",
-  "The target application requires integrated circuits other than UART or serial interface components.",
-  "Specific voltage, pinout, or electrical ratings are required but missing from the part entry."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than DIP."
  ],
  "keywords": [
-  "ic",
-  "uart",
-  "serial",
   "dip",
-  "through_hole",
-  "dip_8",
-  "dip_16",
-  "dip_40dw",
-  "max3232",
-  "max485",
-  "adm485",
-  "ltc485",
-  "at89c51",
+  "ic",
   "transceiver",
   "rs",
+  "uart",
+  "serial",
   "dip8",
   "in",
   "package",
+  "max485",
   "pin",
   "interface",
   "dip16",
@@ -71,7 +63,7 @@
    "A": 1,
    "B": 7
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -125,6 +117,6 @@
   "chilaboard-altium-library/MAX485_DIP8/MAX485_DIP8",
   "chilaboard-altium-library/SP3232_DIP16/SP3232_DIP16"
  ],
- "embedding_text": "ic.dip.uart | IC | Cluster of 8 integrated circuits for UART and serial interfaces in through-hole DIP packages including DIP-8, DIP-16, and DIP-40 footprints. | ic uart serial dip through_hole dip_8 dip_16 dip_40dw max3232 max485 adm485 ltc485 at89c51 transceiver rs dip8 in package pin interface dip16 rs485 line driver | DIP | UART/serial",
+ "embedding_text": "ic.dip.uart | IC | 8 ic parts for UART/serial using DIP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | dip ic transceiver rs uart serial dip8 in package max485 pin interface dip16 rs485 line driver | DIP | UART/serial",
  "class": "ic"
 }

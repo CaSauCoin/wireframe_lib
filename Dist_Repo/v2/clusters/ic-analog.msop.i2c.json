@@ -6,34 +6,28 @@
   "IC",
   "Analog"
  ],
- "description": "Analog IC cluster containing 13 surface-mount I2C parts in MSOP-8 and MSOP-10 package footprints.",
+ "description": "13 ic analog parts for I2C using MSOP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select for analog IC applications requiring an I2C communication interface.",
-  "Match the board layout to MSOP-8 (0.65mm pitch) or MSOP-10 (0.5mm pitch) footprints.",
-  "Choose when using tier A surface-mount components from KiCad symbols."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a MSOP land pattern is intended."
  ],
  "avoid_when": [
-  "The PCB design requires a package family other than MSOP.",
-  "The application requires an interface protocol other than I2C.",
-  "Through-hole mounting is required instead of surface-mount."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than MSOP."
  ],
  "keywords": [
-  "ic",
+  "msop",
   "analog",
   "i2c",
-  "msop",
-  "smd",
-  "msop-8",
-  "msop-10",
-  "adc",
-  "dac",
-  "surface mount",
-  "analog ic",
-  "kicad",
   "bit",
   "3x3mm",
   "p0",
+  "adc",
   "so",
+  "ic",
+  "dac",
   "5mm",
   "digital",
   "converter",
@@ -63,7 +57,7 @@
   "tier_counts": {
    "A": 13
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -122,6 +116,6 @@
   "kicad-symbols/Analog_ADC/MCP3426Axx-xMS",
   "kicad-symbols/Analog_ADC/MCP3427x-xUN"
  ],
- "embedding_text": "ic-analog.msop.i2c | IC Analog | Analog IC cluster containing 13 surface-mount I2C parts in MSOP-8 and MSOP-10 package footprints. | ic analog i2c msop smd msop-8 msop-10 adc dac surface mount analog ic kicad bit 3x3mm p0 so 5mm digital converter reference to 65mm | MSOP | I2C",
+ "embedding_text": "ic-analog.msop.i2c | IC Analog | 13 ic analog parts for I2C using MSOP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | msop analog i2c bit 3x3mm p0 adc so ic dac 5mm digital converter reference to 65mm | MSOP | I2C",
  "class": "ic.analog"
 }

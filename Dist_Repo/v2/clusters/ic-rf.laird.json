@@ -6,34 +6,28 @@
   "IC",
   "RF"
  ],
- "description": "RF IC cluster containing surface-mount devices utilizing Laird footprints such as Laird_BL652.",
+ "description": "1 ic rf parts using Laird footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when an SMD RF IC component with a Laird footprint is required.",
-  "Verify footprint match against Laird_BL652 for the target board layout.",
-  "Check tier B quality tier ratings and symbol sources before selection."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a Laird land pattern is intended."
  ],
  "avoid_when": [
-  "A through-hole or non-SMD component is needed.",
-  "The design requires package footprints other than Laird.",
-  "Components outside of the RF IC category are required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than Laird."
  ],
  "keywords": [
-  "ic rf",
-  "rf ic",
-  "laird",
-  "bl652",
-  "laird_bl652",
-  "smd",
-  "ic",
-  "rf",
-  "rf_bluetooth",
-  "kicad-symbols",
   "bluetooth",
+  "bl652",
+  "rf",
+  "laird",
   "module",
   "ble",
   "nfc",
   "nordic",
-  "nrf52"
+  "nrf52",
+  "ic"
  ],
  "facts": {
   "package_family": "Laird",
@@ -54,7 +48,7 @@
   "tier_counts": {
    "B": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -69,6 +63,6 @@
  "part_ids": [
   "kicad-symbols/RF_Bluetooth/BL652"
  ],
- "embedding_text": "ic-rf.laird | IC RF | RF IC cluster containing surface-mount devices utilizing Laird footprints such as Laird_BL652. | ic rf rf ic laird bl652 laird_bl652 smd ic rf rf_bluetooth kicad-symbols bluetooth module ble nfc nordic nrf52 | Laird | ",
+ "embedding_text": "ic-rf.laird | IC RF | 1 ic rf parts using Laird footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | bluetooth bl652 rf laird module ble nfc nordic nrf52 ic | Laird | ",
  "class": "ic.rf"
 }

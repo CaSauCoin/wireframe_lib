@@ -5,28 +5,20 @@
  "category_path": [
   "IC"
  ],
- "description": "IC cluster containing 1 part using the DB25FS footprint and package family.",
+ "description": "1 ic parts using DB25FS footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Verify DB25FS footprint compatibility before PCB layout.",
-  "Confirm part specifications and parameters for tier C entries.",
-  "Use only when a DB25FS land pattern is intended."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a DB25FS land pattern is intended."
  ],
  "avoid_when": [
-  "The layout requires a package family other than DB25FS.",
-  "Strict quality tier A or planner-visible parts are required.",
-  "Required electrical specifications or ratings are absent."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than DB25FS."
  ],
  "keywords": [
   "db25fs",
   "ic",
-  "integrated circuit",
-  "db25fs footprint",
-  "db25fs package",
-  "package family",
-  "footprint",
-  "ic.db25fs",
-  "tier c",
-  "dist-legacy",
   "pad",
   "mm",
   "pitch",
@@ -51,12 +43,12 @@
   "tier_counts": {
    "C": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
   "dist-legacy/DB25FS"
  ],
- "embedding_text": "ic.db25fs | IC | IC cluster containing 1 part using the DB25FS footprint and package family. | db25fs ic integrated circuit db25fs footprint db25fs package package family footprint ic.db25fs tier c dist-legacy pad mm pitch pins | DB25FS | ",
+ "embedding_text": "ic.db25fs | IC | 1 ic parts using DB25FS footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | db25fs ic pad mm pitch pins | DB25FS | ",
  "class": "ic"
 }

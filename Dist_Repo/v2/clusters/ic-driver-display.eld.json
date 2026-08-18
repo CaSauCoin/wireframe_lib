@@ -7,30 +7,20 @@
   "Driver",
   "Display"
  ],
- "description": "Display driver IC cluster containing through-hole components in the ELD package family using ELD_426XXXX footprints.",
+ "description": "1 ic driver display parts using ELD footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when designing with through-hole display driver ICs in an ELD package family.",
-  "Verify compatibility with the ELD_426XXXX footprint pattern before layout.",
-  "Prefer Tier A entries with validated symbol and footprint references."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a ELD land pattern is intended."
  ],
  "avoid_when": [
-  "The design requires surface-mount packaging instead of through-hole mounting.",
-  "The PCB layout calls for a package family other than ELD or ELD_426XXXX.",
-  "Required electrical specifications or limits are not specified in the part facts."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than ELD."
  ],
  "keywords": [
   "eld",
-  "ic",
-  "driver",
   "display",
-  "through_hole",
-  "eld_426xxxx",
-  "eld-426sygwa",
-  "ic.driver.display",
-  "display driver",
-  "kicad-symbols",
-  "eld package",
-  "through hole",
   "segment",
   "led",
   "double",
@@ -42,7 +32,9 @@
   "common",
   "anode",
   "426xxxx",
-  "digit"
+  "digit",
+  "ic",
+  "driver"
  ],
  "facts": {
   "package_family": "ELD",
@@ -63,7 +55,7 @@
   "tier_counts": {
    "A": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -78,6 +70,6 @@
  "part_ids": [
   "kicad-symbols/Display_Character/ELD-426SYGWA"
  ],
- "embedding_text": "ic-driver-display.eld | IC Driver Display | Display driver IC cluster containing through-hole components in the ELD package family using ELD_426XXXX footprints. | eld ic driver display through_hole eld_426xxxx eld-426sygwa ic.driver.display display driver kicad-symbols eld package through hole segment led double brilliant yellow green 426sygwa character common anode 426xxxx digit | ELD | ",
+ "embedding_text": "ic-driver-display.eld | IC Driver Display | 1 ic driver display parts using ELD footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | eld display segment led double brilliant yellow green 426sygwa character common anode 426xxxx digit ic driver | ELD | ",
  "class": "ic.driver.display"
 }

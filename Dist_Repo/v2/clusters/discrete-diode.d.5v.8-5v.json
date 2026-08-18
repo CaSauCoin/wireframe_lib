@@ -6,44 +6,34 @@
   "Discrete",
   "Diode"
  ],
- "description": "Cluster of 30 discrete diode parts (TVS and Zener types) rated for 5V and 8.5V facets, spanning D-family SMD and through-hole footprints including SMC, SMA, SMB, SOD-123F, DO-15, P600, and PowerDI-123.",
+ "description": "30 discrete diode parts for 5V, 8.5V using D footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Match the exact footprint (e.g. D_SMC, D_SMA, D_SMB, D_SOD-123F, D_DO-15, D_P600, D_PowerDI-123) to the intended land pattern",
-  "Distinguish TVS-suffixed footprints from Zener-suffixed footprints before choosing a part",
-  "Prefer tier A entries (28 of 30 parts) over tier B for higher confidence",
-  "Confirm the 5V or 8.5V facet matches the required clamping/breakdown voltage"
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a D land pattern is intended."
  ],
  "avoid_when": [
-  "A voltage rating outside 5V or 8.5V is required",
-  "The board footprint does not match one of the listed D-family patterns",
-  "Mount type (smd vs through_hole) does not match the target assembly process",
-  "Part is tier B and a higher-confidence tier A alternative with the same footprint is available"
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than D."
  ],
  "keywords": [
   "diode",
-  "discrete diode",
-  "tvs diode",
-  "zener diode",
-  "5v",
-  "8.5v",
-  "d package",
-  "smc",
-  "sma",
-  "smb",
-  "sod-123f",
-  "do-15",
-  "p600",
-  "powerdi-123",
-  "smd",
-  "through hole",
-  "alternate kicad library",
-  "horizontal zener",
   "tvs",
+  "5v",
   "unidirectional",
   "akl",
   "alternate",
   "kicad",
-  "library"
+  "library",
+  "discrete",
+  "do",
+  "smc",
+  "bidirectional",
+  "sod",
+  "5a",
+  "sma",
+  "horizontal"
  ],
  "facts": {
   "package_family": "D",
@@ -80,7 +70,7 @@
    "A": 28,
    "B": 2
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -156,6 +146,6 @@
   "Alternate-KiCad-Library/Diode_TVS_AKL/MSMP8.5A",
   "Alternate-KiCad-Library/Diode_TVS_AKL/TPSMA6L8.5A"
  ],
- "embedding_text": "discrete-diode.d.5v.8-5v | Discrete Diode | Cluster of 30 discrete diode parts (TVS and Zener types) rated for 5V and 8.5V facets, spanning D-family SMD and through-hole footprints including SMC, SMA, SMB, SOD-123F, DO-15, P600, and PowerDI-123. | diode discrete diode tvs diode zener diode 5v 8.5v d package smc sma smb sod-123f do-15 p600 powerdi-123 smd through hole alternate kicad library horizontal zener tvs unidirectional akl alternate kicad library | D | 5V 8.5V",
+ "embedding_text": "discrete-diode.d.5v.8-5v | Discrete Diode | 30 discrete diode parts for 5V, 8.5V using D footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | diode tvs 5v unidirectional akl alternate kicad library discrete do smc bidirectional sod 5a sma horizontal | D | 5V 8.5V",
  "class": "discrete.diode"
 }

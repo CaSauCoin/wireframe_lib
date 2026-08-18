@@ -5,31 +5,21 @@
  "category_path": [
   "Mechanical"
  ],
- "description": "Mechanical component cluster containing 14 tier C parts using FIDUCIAL surface-mount footprints from legacy, KiCad, and SparkFun libraries.",
+ "description": "14 mechanical parts using FIDUCIAL footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Match the required fiducial pad diameter and mask opening from available footprints.",
-  "Choose between circular and cross-pattern FIDUCIAL footprint variants.",
-  "Verify part source compatibility across legacy, KiCad, and SparkFun libraries."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a FIDUCIAL land pattern is intended."
  ],
  "avoid_when": [
-  "Electrical functional components or active circuitry are required.",
-  "The board layout requires package families other than FIDUCIAL.",
-  "Tier C unreviewed parts are prohibited by project quality rules."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than FIDUCIAL."
  ],
  "keywords": [
-  "mechanical",
   "fiducial",
-  "smd",
-  "fiducial cross",
-  "surface mount",
-  "mask opening",
-  "fiducial footprint",
-  "kicad symbols",
-  "sparkfun",
-  "tier c",
-  "1mm mask2mm",
-  "0.5mm mask1mm",
   "5mm",
+  "mechanical",
   "mask2mm",
   "1mm",
   "75mm",
@@ -40,7 +30,9 @@
   "mount",
   "package",
   "copper",
-  "soldermask"
+  "soldermask",
+  "opening",
+  "mask3mm"
  ],
  "facts": {
   "package_family": "FIDUCIAL",
@@ -75,7 +67,7 @@
   "tier_counts": {
    "C": 14
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
@@ -94,6 +86,6 @@
   "dist-legacy/Fiducial_1mm_Mask3mm",
   "dist-legacy/Fiducial_Cross_1.5mm_Mask2mm"
  ],
- "embedding_text": "mechanical.fiducial | Mechanical | Mechanical component cluster containing 14 tier C parts using FIDUCIAL surface-mount footprints from legacy, KiCad, and SparkFun libraries. | mechanical fiducial smd fiducial cross surface mount mask opening fiducial footprint kicad symbols sparkfun tier c 1mm mask2mm 0.5mm mask1mm 5mm mask2mm 1mm 75mm bare cross mask1 surface mount package copper soldermask | FIDUCIAL | ",
+ "embedding_text": "mechanical.fiducial | Mechanical | 14 mechanical parts using FIDUCIAL footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | fiducial 5mm mechanical mask2mm 1mm 75mm bare cross mask1 surface mount package copper soldermask opening mask3mm | FIDUCIAL | ",
  "class": "mechanical"
 }

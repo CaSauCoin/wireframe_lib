@@ -6,44 +6,34 @@
   "Discrete",
   "Diode"
  ],
- "description": "Cluster of 30 discrete diode parts (Alternate-KiCad-Library) sharing the D package family and 8V facet, covering SMC, SMA, SMB, SOD-123F, SOD-323, DO-35 and P600 footprints across SMD and through-hole mounts.",
+ "description": "30 discrete diode parts for 8V using D footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Match the exact footprint (D_SMC, D_SMA, D_SMB, D_SOD-123F, D_SOD-323, D_DO-35, D_P600) to the intended land pattern.",
-  "Prefer tier A parts (27 of 30) over tier B for higher confidence.",
-  "Check whether the part is TVS, Zener, or Schottky variant via its name/footprint suffix (e.g. _TVS, Zener) before use.",
-  "Confirm SMD vs through-hole mount matches the target assembly process."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a D land pattern is intended."
  ],
  "avoid_when": [
-  "Required footprint is not one of the D-family footprints listed for this cluster.",
-  "Design requires a facet other than 8V.",
-  "Unverified data is unacceptable, since review_status is 'generated'.",
-  "Only tier B entries fit and higher-confidence tier A coverage is required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than D."
  ],
  "keywords": [
   "diode",
-  "discrete diode",
-  "tvs diode",
-  "zener diode",
-  "schottky diode",
-  "8v",
-  "d package",
-  "d_smc",
-  "d_sma",
-  "d_smb",
-  "d_sod-123f",
-  "d_sod-323",
-  "d_do-35",
-  "d_p600",
-  "smd",
-  "through hole",
-  "alternate kicad library",
-  "bidirectional tvs",
   "tvs",
+  "8v",
   "unidirectional",
   "akl",
   "alternate",
   "kicad",
-  "library"
+  "library",
+  "discrete",
+  "smc",
+  "bidirectional",
+  "sod",
+  "do",
+  "0a",
+  "sma",
+  "smb"
  ],
  "facts": {
   "package_family": "D",
@@ -79,7 +69,7 @@
    "A": 27,
    "B": 3
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -155,6 +145,6 @@
   "Alternate-KiCad-Library/Diode_TVS_AKL/MSMP8.0A",
   "Alternate-KiCad-Library/Diode_TVS_AKL/TPSMA6L8.0A"
  ],
- "embedding_text": "discrete-diode.d.8v | Discrete Diode | Cluster of 30 discrete diode parts (Alternate-KiCad-Library) sharing the D package family and 8V facet, covering SMC, SMA, SMB, SOD-123F, SOD-323, DO-35 and P600 footprints across SMD and through-hole mounts. | diode discrete diode tvs diode zener diode schottky diode 8v d package d_smc d_sma d_smb d_sod-123f d_sod-323 d_do-35 d_p600 smd through hole alternate kicad library bidirectional tvs tvs unidirectional akl alternate kicad library | D | 8V",
+ "embedding_text": "discrete-diode.d.8v | Discrete Diode | 30 discrete diode parts for 8V using D footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | diode tvs 8v unidirectional akl alternate kicad library discrete smc bidirectional sod do 0a sma smb | D | 8V",
  "class": "discrete.diode"
 }

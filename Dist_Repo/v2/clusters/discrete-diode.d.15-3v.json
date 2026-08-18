@@ -6,34 +6,22 @@
   "Discrete",
   "Diode"
  ],
- "description": "Discrete SMD diode cluster containing 2 tier-A parts categorized with 15.3V facet and D package family footprints D_SMA and D_SOD-323.",
+ "description": "2 discrete diode parts for 15.3V using D footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select between TVS bidirectional (P6SMB18CA) and Zener (BZT52C16S) diode types based on circuit function.",
-  "Choose between surface-mount footprints D_SMA and D_SOD-323 based on layout requirements.",
-  "Verify part compatibility with the 15.3V facet requirement."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a D land pattern is intended."
  ],
  "avoid_when": [
-  "Through-hole or non-SMD mounting is required.",
-  "Layout requires footprint packages other than D_SMA or D_SOD-323.",
-  "Application requires diode types or voltage ratings outside this 15.3V cluster."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than D."
  ],
  "keywords": [
-  "discrete",
-  "diode",
-  "discrete diode",
-  "15.3v",
-  "smd",
-  "d_sma",
-  "d_sod-323",
-  "tvs-bi",
-  "p6smb18ca",
-  "zener",
-  "bzt52c16s",
-  "jlcpcb-kicad-library",
-  "d package",
   "3v",
   "tvs",
   "diodes",
+  "diode",
   "sod",
   "jlcpcb",
   "1000us",
@@ -41,7 +29,11 @@
   "esd",
   "rohs",
   "sma",
-  "bi"
+  "discrete",
+  "zener",
+  "bi",
+  "p6smb18ca",
+  "9v"
  ],
  "facts": {
   "package_family": "D",
@@ -65,7 +57,7 @@
   "tier_counts": {
    "A": 2
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -89,6 +81,6 @@
   "JLCPCB-Kicad-Library/JLCPCB-Diodes/TVS-Bi,P6SMB18CA",
   "JLCPCB-Kicad-Library/JLCPCB-Diodes/Zener,BZT52C16S"
  ],
- "embedding_text": "discrete-diode.d.15-3v | Discrete Diode | Discrete SMD diode cluster containing 2 tier-A parts categorized with 15.3V facet and D package family footprints D_SMA and D_SOD-323. | discrete diode discrete diode 15.3v smd d_sma d_sod-323 tvs-bi p6smb18ca zener bzt52c16s jlcpcb-kicad-library d package 3v tvs diodes sod jlcpcb 1000us do esd rohs sma bi | D | 15.3V",
+ "embedding_text": "discrete-diode.d.15-3v | Discrete Diode | 2 discrete diode parts for 15.3V using D footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | 3v tvs diodes diode sod jlcpcb 1000us do esd rohs sma discrete zener bi p6smb18ca 9v | D | 15.3V",
  "class": "discrete.diode"
 }

@@ -7,31 +7,22 @@
   "Power",
   "Switching Regulator"
  ],
- "description": "Surface-mount buck power switching regulator ICs in WDFN-12-1EP footprints.",
+ "description": "2 ic power switching regulator parts for buck using WDFN footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when needing an SMD buck switching regulator in a WDFN package.",
-  "Verify compatibility with the WDFN-12-1EP footprint.",
-  "Check specific requirements for PAM2306AYPAA or PAM2306DYPAA."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a WDFN land pattern is intended."
  ],
  "avoid_when": [
-  "Topologies other than buck step-down switching are required.",
-  "Through-hole mounting or packages other than WDFN are needed.",
-  "Tier A certified components are required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than WDFN."
  ],
  "keywords": [
-  "ic",
-  "power",
-  "switching regulator",
-  "buck",
-  "wdfn",
-  "smd",
-  "wdfn-12-1ep",
-  "pam2306aypaa",
-  "pam2306dypaa",
-  "regulator",
-  "step-down",
-  "switching",
   "adj",
+  "wdfn",
+  "regulator",
+  "switching",
   "1a",
   "dual",
   "step",
@@ -42,7 +33,8 @@
   "converter",
   "5mhz",
   "dfn3x3",
-  "1ep"
+  "1ep",
+  "3x3mm"
  ],
  "facts": {
   "package_family": "WDFN",
@@ -65,7 +57,7 @@
   "tier_counts": {
    "B": 2
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -89,6 +81,6 @@
   "kicad-symbols/Regulator_Switching/PAM2306AYPAA",
   "kicad-symbols/Regulator_Switching/PAM2306DYPAA"
  ],
- "embedding_text": "ic-power-switching.wdfn.buck | IC Power Switching Regulator | Surface-mount buck power switching regulator ICs in WDFN-12-1EP footprints. | ic power switching regulator buck wdfn smd wdfn-12-1ep pam2306aypaa pam2306dypaa regulator step-down switching adj 1a dual step down dc out1 out2 converter 5mhz dfn3x3 1ep | WDFN | buck",
+ "embedding_text": "ic-power-switching.wdfn.buck | IC Power Switching Regulator | 2 ic power switching regulator parts for buck using WDFN footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | adj wdfn regulator switching 1a dual step down dc out1 out2 converter 5mhz dfn3x3 1ep 3x3mm | WDFN | buck",
  "class": "ic.power.switching"
 }

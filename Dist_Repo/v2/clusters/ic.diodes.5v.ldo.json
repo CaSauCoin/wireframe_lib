@@ -5,42 +5,34 @@
  "category_path": [
   "IC"
  ],
- "description": "This IC cluster contains 6 surface-mount 5V and 2.5V LDO regulator parts using the Diodes_SOT-89-5 footprint from Alternate-KiCad-Library.",
+ "description": "6 ic parts for 5V, LDO, 2.5V using Diodes footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when requiring a 5V or 2.5V LDO regulator in an SMD package.",
-  "Choose for designs utilizing the Diodes_SOT-89-5 footprint.",
-  "Verify part selection among available Tier B AP2112, AP2115, or AP7361 variants."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a Diodes land pattern is intended."
  ],
  "avoid_when": [
-  "Avoid when a footprint other than Diodes_SOT-89-5 is required.",
-  "Do not use if through-hole mounting is needed instead of SMD.",
-  "Avoid if component quality higher than Tier B is strictly required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than Diodes."
  ],
  "keywords": [
-  "ic",
-  "ldo",
   "5v",
-  "2.5v",
-  "smd",
-  "diodes_sot-89-5",
-  "diodes",
-  "voltage regulator",
-  "alternate-kicad-library",
-  "ap2112r5",
-  "ap2115r5",
-  "ap7361-15y",
   "voltage",
   "regulator",
   "sot",
   "low",
   "dropout",
   "enable",
+  "diodes",
+  "ldo",
   "1a",
   "akl",
   "with",
   "alternate",
   "kicad",
-  "library"
+  "library",
+  "vreg"
  ],
  "facts": {
   "package_family": "Diodes",
@@ -65,7 +57,7 @@
   "tier_counts": {
    "B": 6
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -117,6 +109,6 @@
   "Alternate-KiCad-Library/Voltage_Regulator_AKL/AP7361-15Y",
   "Alternate-KiCad-Library/Voltage_Regulator_AKL/AP7361-25Y"
  ],
- "embedding_text": "ic.diodes.5v.ldo | IC | This IC cluster contains 6 surface-mount 5V and 2.5V LDO regulator parts using the Diodes_SOT-89-5 footprint from Alternate-KiCad-Library. | ic ldo 5v 2.5v smd diodes_sot-89-5 diodes voltage regulator alternate-kicad-library ap2112r5 ap2115r5 ap7361-15y voltage regulator sot low dropout enable 1a akl with alternate kicad library | Diodes | 5V LDO 2.5V",
+ "embedding_text": "ic.diodes.5v.ldo | IC | 6 ic parts for 5V, LDO, 2.5V using Diodes footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | 5v voltage regulator sot low dropout enable diodes ldo 1a akl with alternate kicad library vreg | Diodes | 5V LDO 2.5V",
  "class": "ic"
 }

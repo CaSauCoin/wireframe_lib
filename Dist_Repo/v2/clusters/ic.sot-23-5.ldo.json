@@ -5,42 +5,34 @@
  "category_path": [
   "IC"
  ],
- "description": "A cluster of 38 surface-mount LDO IC parts using SOT-23-5, SOT23_5, or TSOT-23-5 footprints.",
+ "description": "38 ic parts for LDO using SOT-23-5 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Choose tier A parts (28 available) when higher quality tier ranking is preferred over tier B (10 available).",
-  "Match the specific PCB footprint variant among SOT-23-5, SOT23_5, and TSOT-23-5.",
-  "Select according to preferred component library source such as Alternate-KiCad-Library, chilaboard-altium-library, or Seeed-OPL-Kicad-Library."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SOT-23-5 land pattern is intended."
  ],
  "avoid_when": [
-  "Through-hole components are required instead of SMD mounting.",
-  "Footprints other than SOT-23-5, SOT23_5, or TSOT-23-5 are needed.",
-  "Non-LDO IC functions are required for the circuit design."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SOT-23-5."
  ],
  "keywords": [
-  "ic",
-  "ldo",
-  "sot-23-5",
-  "sot23_5",
-  "tsot-23-5",
-  "smd",
-  "voltage regulator",
-  "alternate-kicad-library",
-  "chilaboard-altium-library",
-  "seeed-opl-kicad-library",
-  "adp7118aujz",
-  "ap2127k-adjtrg1",
   "sot",
   "regulator",
   "voltage",
+  "ldo",
   "enable",
   "low",
   "dropout",
+  "ic",
   "vreg",
   "adjustable",
   "with",
   "sot23",
   "pmic",
-  "akl"
+  "akl",
+  "alternate",
+  "kicad"
  ],
  "facts": {
   "package_family": "SOT-23-5",
@@ -68,7 +60,7 @@
    "A": 28,
    "B": 10
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -152,6 +144,6 @@
   "chilaboard-altium-library/VREG_TLV71325_SOT23/VREG_TLV71325_SOT23",
   "chilaboard-altium-library/VREG_TLV74318_SOT23/VREG_TLV74318_SOT23"
  ],
- "embedding_text": "ic.sot-23-5.ldo | IC | A cluster of 38 surface-mount LDO IC parts using SOT-23-5, SOT23_5, or TSOT-23-5 footprints. | ic ldo sot-23-5 sot23_5 tsot-23-5 smd voltage regulator alternate-kicad-library chilaboard-altium-library seeed-opl-kicad-library adp7118aujz ap2127k-adjtrg1 sot regulator voltage enable low dropout vreg adjustable with sot23 pmic akl | SOT-23-5 | LDO",
+ "embedding_text": "ic.sot-23-5.ldo | IC | 38 ic parts for LDO using SOT-23-5 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | sot regulator voltage ldo enable low dropout ic vreg adjustable with sot23 pmic akl alternate kicad | SOT-23-5 | LDO",
  "class": "ic"
 }

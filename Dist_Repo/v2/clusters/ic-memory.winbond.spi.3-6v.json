@@ -6,32 +6,23 @@
   "IC",
   "Memory"
  ],
- "description": "Surface-mount memory IC cluster featuring 3.6V SPI parts in a Winbond USON-8-1EP footprint.",
+ "description": "2 ic memory parts for SPI, 3.6V using Winbond footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when requiring a 3.6V memory IC with an SPI interface.",
-  "Choose for surface-mount designs utilizing the USON-8-1EP footprint.",
-  "Select when requiring Tier A components such as APS1604M-3SQRx-ZR or APS6404L-3SQRx-ZR."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a Winbond land pattern is intended."
  ],
  "avoid_when": [
-  "Avoid when operating voltages other than 3.6V or non-SPI interfaces are required.",
-  "Do not use if the PCB layout requires a footprint other than USON-8-1EP.",
-  "Do not use if through-hole mounting is required instead of SMD."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than Winbond."
  ],
  "keywords": [
-  "ic memory",
   "memory",
-  "spi",
-  "3.6v",
-  "winbond",
-  "uson-8-1ep",
-  "smd",
-  "aps1604m-3sqrx-zr",
-  "aps6404l-3sqrx-zr",
-  "kicad-symbols",
-  "surface mount",
-  "ic",
   "uson",
+  "winbond",
   "6v",
+  "spi",
   "3sqrx",
   "zr",
   "ram",
@@ -41,7 +32,8 @@
   "pseudo",
   "sram",
   "up",
-  "to"
+  "to",
+  "133mhz"
  ],
  "facts": {
   "package_family": "Winbond",
@@ -65,7 +57,7 @@
   "tier_counts": {
    "A": 2
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -89,6 +81,6 @@
   "kicad-symbols/Memory_RAM/APS1604M-3SQRx-ZR",
   "kicad-symbols/Memory_RAM/APS6404L-3SQRx-ZR"
  ],
- "embedding_text": "ic-memory.winbond.spi.3-6v | IC Memory | Surface-mount memory IC cluster featuring 3.6V SPI parts in a Winbond USON-8-1EP footprint. | ic memory memory spi 3.6v winbond uson-8-1ep smd aps1604m-3sqrx-zr aps6404l-3sqrx-zr kicad-symbols surface mount ic uson 6v 3sqrx zr ram mbit bits serial pseudo sram up to | Winbond | SPI 3.6V",
+ "embedding_text": "ic-memory.winbond.spi.3-6v | IC Memory | 2 ic memory parts for SPI, 3.6V using Winbond footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | memory uson winbond 6v spi 3sqrx zr ram mbit bits serial pseudo sram up to 133mhz | Winbond | SPI 3.6V",
  "class": "ic.memory"
 }

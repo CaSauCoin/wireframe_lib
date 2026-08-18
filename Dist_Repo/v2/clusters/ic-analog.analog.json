@@ -6,37 +6,29 @@
   "IC",
   "Analog"
  ],
- "description": "Analog IC cluster containing 48 parts across SMD, through-hole, and unknown mounts with LFCSP, MSOP, LCC, and LGA footprint options.",
+ "description": "48 ic analog parts using Analog footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select tier A parts such as ADG658YCP for higher quality classification.",
-  "Check footprint options including LFCSP, MSOP, LGA, and LCC for pad pitch and exposed pad size.",
-  "Verify mount style between SMD, through-hole, or unspecified mount types."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a Analog land pattern is intended."
  ],
  "avoid_when": [
-  "Avoid if the design requires non-Analog package footprints.",
-  "Do not use if tier C quality rating is not acceptable for the project.",
-  "Avoid when exact electrical parameter specifications are needed but not provided in cluster facts."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than Analog."
  ],
  "keywords": [
-  "ic analog",
   "analog",
-  "adg658ycp",
-  "lfcsp",
-  "msop",
-  "lcc",
-  "lga",
-  "smd",
-  "through_hole",
-  "thermal vias",
-  "ks-4",
-  "1ep",
   "ic",
+  "msop",
   "pins",
   "pad",
   "mm",
   "pitch",
   "p0",
+  "lfcsp",
   "package",
+  "1ep",
   "devices",
   "dfn",
   "pdf",
@@ -78,7 +70,7 @@
    "A": 1,
    "C": 47
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -140,6 +132,6 @@
   "celestial-altium-library/ANALOG SO-8 R-8/ANALOG_SO-8_R-8",
   "celestial-altium-library/Analog MSOP-16EP/Analog_MSOP-16EP"
  ],
- "embedding_text": "ic-analog.analog | IC Analog | Analog IC cluster containing 48 parts across SMD, through-hole, and unknown mounts with LFCSP, MSOP, LCC, and LGA footprint options. | ic analog analog adg658ycp lfcsp msop lcc lga smd through_hole thermal vias ks-4 1ep ic pins pad mm pitch p0 package devices dfn pdf 4x4mm 65mm | Analog | ",
+ "embedding_text": "ic-analog.analog | IC Analog | 48 ic analog parts using Analog footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | analog ic msop pins pad mm pitch p0 lfcsp package 1ep devices dfn pdf 4x4mm 65mm | Analog | ",
  "class": "ic.analog"
 }

@@ -6,34 +6,20 @@
   "Power",
   "Power Supply"
  ],
- "description": "Surface-mount power supply and battery management ICs in DFN packages with exposed pads.",
+ "description": "4 power power supply parts using DFN footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Match the required pin count and exact DFN package dimensions such as DFN-8, DFN-10, DFN-12, or DFN-14.",
-  "Verify the exposed pad (EP) dimensions and PCB footprint landing pattern.",
-  "Prioritize Tier A parts for higher library quality verification."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a DFN land pattern is intended."
  ],
  "avoid_when": [
-  "A through-hole or non-DFN package is required by the board design.",
-  "Assembly processes cannot support surface-mount DFN packages with exposed pads.",
-  "The required power circuit function does not align with the available parts."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than DFN."
  ],
  "keywords": [
-  "power supply",
-  "battery management",
   "dfn",
-  "smd",
-  "surface mount",
-  "dfn-8",
-  "dfn-10",
-  "dfn-12",
-  "dfn-14",
-  "exposed pad",
   "power",
-  "ic",
-  "ltc4067ede",
-  "max17263xxte",
-  "mc34673",
-  "mcp73833",
   "battery",
   "management",
   "ion",
@@ -41,7 +27,13 @@
   "charger",
   "1ep",
   "p0",
-  "ep1"
+  "ep1",
+  "supply",
+  "5mm",
+  "charge",
+  "current",
+  "polymer",
+  "single"
  ],
  "facts": {
   "package_family": "DFN",
@@ -66,7 +58,7 @@
    "A": 3,
    "B": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -108,6 +100,6 @@
   "kicad-symbols/Battery_Management/MC34673",
   "kicad-symbols/Battery_Management/MCP73833-xxx-MF"
  ],
- "embedding_text": "power-supply.dfn | Power Power Supply | Surface-mount power supply and battery management ICs in DFN packages with exposed pads. | power supply battery management dfn smd surface mount dfn-8 dfn-10 dfn-12 dfn-14 exposed pad power ic ltc4067ede max17263xxte mc34673 mcp73833 battery management ion li charger 1ep p0 ep1 | DFN | ",
+ "embedding_text": "power-supply.dfn | Power Power Supply | 4 power power supply parts using DFN footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | dfn power battery management ion li charger 1ep p0 ep1 supply 5mm charge current polymer single | DFN | ",
  "class": "power.supply"
 }

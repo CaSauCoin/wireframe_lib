@@ -5,42 +5,34 @@
  "category_path": [
   "IC"
  ],
- "description": "Surface-mount integrated circuits in SOIC packages with 5V and 5.5V ratings supporting I2C communication, including memory modules and real-time clocks.",
+ "description": "4 ic parts for 5V, I2C, 5.5V using SOIC footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select based on required functionality, such as I2C memory capacity (2Kbit, 64Kbit, 256Kbit) or real-time clock features.",
-  "Verify footprint dimensions between SOIC-8 L4.9-W3.9 and SOIC-8 L5.0-W4.0 options.",
-  "Choose for surface-mount (SMD) applications operating with 5V or 5.5V I2C buses."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SOIC land pattern is intended."
  ],
  "avoid_when": [
-  "The design requires through-hole mounting or non-SOIC package styles.",
-  "Communication protocols other than I2C are needed.",
-  "Operating voltage requirements fall outside 5V or 5.5V ratings."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SOIC."
  ],
  "keywords": [
   "soic",
-  "soic-8",
-  "i2c",
   "5v",
-  "5.5v",
-  "smd",
-  "ic",
-  "memory",
-  "real time clock",
-  "256kbit",
-  "64kbit",
-  "2kbit",
-  "pcf8563t",
-  "jlcpcb",
+  "i2c",
   "p1",
   "ls6",
   "bl",
   "function",
+  "jlcpcb",
   "rohs",
   "l4",
   "w3",
   "footprint",
+  "ic",
   "l5",
-  "w4"
+  "w4",
+  "memory"
  ],
  "facts": {
   "package_family": "SOIC",
@@ -66,7 +58,7 @@
   "tier_counts": {
    "B": 4
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -108,6 +100,6 @@
   "JLCPCB-Kicad-Library/JLCPCB-Memory/64Kbit, I2C",
   "JLCPCB-Kicad-Library/JLCPCB-ICs/Real Time Clock, I2C, 0.3uA, PCF8563T/5,518"
  ],
- "embedding_text": "ic.soic.5v.i2c | IC | Surface-mount integrated circuits in SOIC packages with 5V and 5.5V ratings supporting I2C communication, including memory modules and real-time clocks. | soic soic-8 i2c 5v 5.5v smd ic memory real time clock 256kbit 64kbit 2kbit pcf8563t jlcpcb p1 ls6 bl function rohs l4 w3 footprint l5 w4 | SOIC | 5V I2C 5.5V",
+ "embedding_text": "ic.soic.5v.i2c | IC | 4 ic parts for 5V, I2C, 5.5V using SOIC footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | soic 5v i2c p1 ls6 bl function jlcpcb rohs l4 w3 footprint ic l5 w4 memory | SOIC | 5V I2C 5.5V",
  "class": "ic"
 }

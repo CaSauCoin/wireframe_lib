@@ -6,42 +6,34 @@
   "Mechanical",
   "Test Point"
  ],
- "description": "Mechanical test point components with surface-mount and through-hole mounting options across 62 total parts in the TestPoint package family.",
+ "description": "62 mechanical test point parts using TestPoint footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select between surface-mount (SMD) and through-hole mounting styles.",
-  "Match the footprint requirement to single pads, 2-pad pitch patterns, or bridge configurations.",
-  "Consider quality tiering, with 4 Tier B parts and 58 Tier C parts available."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a TestPoint land pattern is intended."
  ],
  "avoid_when": [
-  "Designs require package families other than TestPoint.",
-  "Tier A reviewed components are required, as only Tier B and Tier C parts are present.",
-  "Specific electrical parameters or limits are required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than TestPoint."
  ],
  "keywords": [
   "testpoint",
-  "mechanical test point",
-  "smd test point",
-  "through hole test point",
-  "testpoint footprint",
-  "bridge test point",
-  "2pad test point",
-  "mechanical",
-  "test point",
-  "sparkfun connector",
-  "surface mount",
-  "through hole",
   "test",
   "point",
   "0mm",
   "pad",
   "loop",
+  "mechanical",
   "hole",
   "drill1",
   "5mm",
   "diameter",
   "d2",
   "thtpad",
-  "pins"
+  "pins",
+  "package",
+  "wire"
  ],
  "facts": {
   "package_family": "TestPoint",
@@ -77,7 +69,7 @@
    "B": 4,
    "C": 58
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -177,6 +169,6 @@
   "dist-legacy/TestPoint_THTPad_D4.0mm_Drill2.0mm",
   "dist-legacy/TESTPOINT_ARRAY"
  ],
- "embedding_text": "mechanical-testpoint.testpoint | Mechanical Test Point | Mechanical test point components with surface-mount and through-hole mounting options across 62 total parts in the TestPoint package family. | testpoint mechanical test point smd test point through hole test point testpoint footprint bridge test point 2pad test point mechanical test point sparkfun connector surface mount through hole test point 0mm pad loop hole drill1 5mm diameter d2 thtpad pins | TestPoint | ",
+ "embedding_text": "mechanical-testpoint.testpoint | Mechanical Test Point | 62 mechanical test point parts using TestPoint footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | testpoint test point 0mm pad loop mechanical hole drill1 5mm diameter d2 thtpad pins package wire | TestPoint | ",
  "class": "mechanical.testpoint"
 }

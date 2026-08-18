@@ -6,32 +6,21 @@
   "Discrete",
   "LED"
  ],
- "description": "Discrete surface-mount LED cluster using 0805 package family footprints with 44 total parts across quality tiers A and C.",
+ "description": "44 discrete led parts using 0805 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Prefer Tier A parts with standard LED_0805_2012Metric footprints.",
-  "Select specific footprint names matching target colors like red, green, blue, yellow, orange, or white.",
-  "Filter by library source such as Alternate-KiCad-Library or celestial-altium-library."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a 0805 land pattern is intended."
  ],
  "avoid_when": [
-  "Package sizes other than 0805 are required.",
-  "Through-hole LED mounting is required instead of surface mount.",
-  "Components other than discrete LEDs are needed."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than 0805."
  ],
  "keywords": [
-  "discrete",
   "led",
-  "0805",
+  "discrete",
   "smd",
-  "2012metric",
-  "discrete.led",
-  "led_0805_2012metric",
-  "red led",
-  "green led",
-  "blue led",
-  "yellow led",
-  "orange led",
-  "white led",
-  "amber led",
   "pad",
   "mm",
   "pitch",
@@ -40,8 +29,11 @@
   "blue",
   "red",
   "yellow",
+  "2012metric",
   "surface",
-  "mount"
+  "mount",
+  "white",
+  "orange"
  ],
  "facts": {
   "package_family": "0805",
@@ -79,7 +71,7 @@
    "A": 11,
    "C": 33
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -169,6 +161,6 @@
   "dist-legacy/LED_0805_BLUE",
   "dist-legacy/LED_0805_GREEN"
  ],
- "embedding_text": "discrete-led.0805 | Discrete LED | Discrete surface-mount LED cluster using 0805 package family footprints with 44 total parts across quality tiers A and C. | discrete led 0805 smd 2012metric discrete.led led_0805_2012metric red led green led blue led yellow led orange led white led amber led pad mm pitch pins green blue red yellow surface mount | 0805 | ",
+ "embedding_text": "discrete-led.0805 | Discrete LED | 44 discrete led parts using 0805 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | led discrete smd pad mm pitch pins green blue red yellow 2012metric surface mount white orange | 0805 | ",
  "class": "discrete.led"
 }

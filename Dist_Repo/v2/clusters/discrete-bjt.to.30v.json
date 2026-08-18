@@ -6,42 +6,34 @@
   "Discrete",
   "BJT"
  ],
- "description": "Through-hole BJT cluster for the 30V facet, TO-family packages (TO-92, TO-18, TO-39, TO-72, TO-126, TO-220 variants), 61 parts drawn from two library sources.",
+ "description": "61 discrete bjt parts for 30V using TO footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Match the exact footprint variant (e.g., TO-92_Inline vs TO-92_Inline_Wide_ECB) before layout.",
-  "Prefer tier A parts (59 of 61) over the 2 tier B entries for higher confidence.",
-  "Verify pin ordering (EBC/ECB/CBE/BCE) since it differs by footprint within this cluster."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a TO land pattern is intended."
  ],
  "avoid_when": [
-  "The board requires a non-TO package (e.g., SMD).",
-  "The 30V facet does not match the required voltage rating for the design.",
-  "The symbol-footprint pin mapping for the chosen footprint variant hasn't been verified."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than TO."
  ],
  "keywords": [
   "to",
   "transistor",
   "bjt",
-  "discrete",
   "30v",
-  "through-hole",
-  "to-92",
-  "to-18",
-  "to-39",
-  "to-72",
-  "to-126",
-  "to-220",
-  "inline",
-  "ecb",
-  "ebc",
-  "cbe",
-  "bce",
-  "kicad",
   "npn",
   "sc",
+  "discrete",
+  "inline",
   "akl",
   "alternate",
+  "kicad",
   "library",
-  "43a"
+  "43a",
+  "sot54",
+  "pa33",
+  "wide"
  ],
  "facts": {
   "package_family": "TO",
@@ -76,7 +68,7 @@
    "A": 59,
    "B": 2
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -183,6 +175,6 @@
   "Alternate-KiCad-Library/Transistor_BJT_AKL/BF214",
   "Alternate-KiCad-Library/Transistor_BJT_AKL/BF215"
  ],
- "embedding_text": "discrete-bjt.to.30v | Discrete BJT | Through-hole BJT cluster for the 30V facet, TO-family packages (TO-92, TO-18, TO-39, TO-72, TO-126, TO-220 variants), 61 parts drawn from two library sources. | to transistor bjt discrete 30v through-hole to-92 to-18 to-39 to-72 to-126 to-220 inline ecb ebc cbe bce kicad npn sc akl alternate library 43a | TO | 30V",
+ "embedding_text": "discrete-bjt.to.30v | Discrete BJT | 61 discrete bjt parts for 30V using TO footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | to transistor bjt 30v npn sc discrete inline akl alternate kicad library 43a sot54 pa33 wide | TO | 30V",
  "class": "discrete.bjt"
 }

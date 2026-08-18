@@ -6,35 +6,27 @@
   "IC",
   "RF"
  ],
- "description": "Surface-mount RF IC module cluster in the E73 package family comprising E73-2G4M04S footprint variants such as E73-2G4M04S-52810 and E73-2G4M04S-52832.",
+ "description": "2 ic rf parts using E73 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select based on the specific part variant such as E73-2G4M04S-52810 or E73-2G4M04S-52832.",
-  "Verify compatibility with the E73-2G4M04S footprint and surface-mount (SMD) land pattern.",
-  "Confirm part suitability based on KiCad symbol mapping and quality tier B rating."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a E73 land pattern is intended."
  ],
  "avoid_when": [
-  "The board layout requires packages or footprints other than E73-2G4M04S.",
-  "The application requires non-RF components or through-hole mounting.",
-  "Higher quality tier parts than Tier B are required by project specifications."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than E73."
  ],
  "keywords": [
   "e73",
-  "ic",
-  "rf",
-  "ic rf",
-  "rf module",
-  "smd",
-  "e73-2g4m04s",
-  "e73-2g4m04s-52810",
-  "e73-2g4m04s-52832",
-  "2g4m04s",
-  "52810",
-  "52832",
   "ble5",
+  "2g4m04s",
+  "rf",
   "module",
   "ble",
   "nrf52832",
-  "nrf52810"
+  "nrf52810",
+  "ic"
  ],
  "facts": {
   "package_family": "E73",
@@ -55,7 +47,7 @@
   "tier_counts": {
    "B": 2
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -79,6 +71,6 @@
   "kicad-symbols/RF_Module/E73-2G4M04S-52810",
   "kicad-symbols/RF_Module/E73-2G4M04S-52832"
  ],
- "embedding_text": "ic-rf.e73 | IC RF | Surface-mount RF IC module cluster in the E73 package family comprising E73-2G4M04S footprint variants such as E73-2G4M04S-52810 and E73-2G4M04S-52832. | e73 ic rf ic rf rf module smd e73-2g4m04s e73-2g4m04s-52810 e73-2g4m04s-52832 2g4m04s 52810 52832 ble5 module ble nrf52832 nrf52810 | E73 | ",
+ "embedding_text": "ic-rf.e73 | IC RF | 2 ic rf parts using E73 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | e73 ble5 2g4m04s rf module ble nrf52832 nrf52810 ic | E73 | ",
  "class": "ic.rf"
 }

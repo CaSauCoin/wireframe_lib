@@ -6,43 +6,34 @@
   "Discrete",
   "BJT"
  ],
- "description": "Cluster of 52 SMD discrete BJT parts in the SC-59 footprint, rated for the 50V facet, all tier A and sourced from Alternate-KiCad-Library, including some pre-biased BJT parts.",
+ "description": "52 discrete bjt parts for 50V using SC footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "All 52 entries are tier A with a score of 100 and use the SC-59 footprint",
-  "Cluster mixes standard BJTs and pre-biased BJT parts (e.g. DTC114EKA) — confirm which type is needed before picking one",
-  "All parts come from a single source (Alternate-KiCad-Library); cross-check the part against its datasheet before committing"
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SC land pattern is intended."
  ],
  "avoid_when": [
-  "A voltage rating other than the 50V facet is required",
-  "A footprint other than SC-59 is required",
-  "review_status is 'generated' (not human-reviewed), so independent verification of the part is needed",
-  "A non-SMD (e.g. through-hole) mount is required"
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SC."
  ],
  "keywords": [
-  "discrete bjt",
-  "bjt",
-  "transistor",
   "sc",
-  "sc-59",
-  "sc59",
-  "sc package",
-  "50v",
-  "smd",
-  "surface mount",
-  "pre-biased",
-  "pre-biased transistor",
-  "alternate-kicad-library",
-  "kicad",
-  "akl",
-  "tier a",
-  "generated",
+  "transistor",
   "pre",
   "biased",
+  "bjt",
+  "50v",
   "npn",
+  "akl",
   "alternate",
+  "kicad",
   "library",
   "discrete",
-  "brt"
+  "brt",
+  "100ma",
+  "pnp",
+  "230mw"
  ],
  "facts": {
   "package_family": "SC",
@@ -65,7 +56,7 @@
   "tier_counts": {
    "A": 52
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -163,6 +154,6 @@
   "Alternate-KiCad-Library/Transistor_BJT_Pre-Biased_AKL/RN2410",
   "Alternate-KiCad-Library/Transistor_BJT_Pre-Biased_AKL/RN2411"
  ],
- "embedding_text": "discrete-bjt.sc.50v | Discrete BJT | Cluster of 52 SMD discrete BJT parts in the SC-59 footprint, rated for the 50V facet, all tier A and sourced from Alternate-KiCad-Library, including some pre-biased BJT parts. | discrete bjt bjt transistor sc sc-59 sc59 sc package 50v smd surface mount pre-biased pre-biased transistor alternate-kicad-library kicad akl tier a generated pre biased npn alternate library discrete brt | SC | 50V",
+ "embedding_text": "discrete-bjt.sc.50v | Discrete BJT | 52 discrete bjt parts for 50V using SC footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | sc transistor pre biased bjt 50v npn akl alternate kicad library discrete brt 100ma pnp 230mw | SC | 50V",
  "class": "discrete.bjt"
 }

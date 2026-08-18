@@ -6,34 +6,28 @@
   "Discrete",
   "Diode"
  ],
- "description": "Discrete diode cluster containing 2 parts associated with LAIRD footprints in quality tiers B and C.",
+ "description": "2 discrete diode parts using LAIRD footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when a discrete diode using a LAIRD footprint is required.",
-  "Verify part specifications, footprint dimensions, and pinout before PCB design.",
-  "Check part tier and review status for application suitability."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a LAIRD land pattern is intended."
  ],
  "avoid_when": [
-  "The design requires a package or footprint other than LAIRD.",
-  "Required electrical parameters or ratings are not specified for the part.",
-  "Unreviewed or lower tier parts do not meet project quality standards."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than LAIRD."
  ],
  "keywords": [
-  "discrete",
-  "diode",
-  "discrete diode",
-  "discrete.diode",
   "laird",
-  "laird footprint",
-  "laird package",
   "tys5040",
-  "laird_tys5040",
-  "dist-legacy",
+  "diode",
   "mgv1207",
   "surface",
   "mount",
   "with",
   "footprint",
   "smd",
+  "discrete",
   "land",
   "pattern",
   "package",
@@ -61,7 +55,7 @@
    "B": 1,
    "C": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -77,6 +71,6 @@
   "dist-legacy/LAIRD TYS5040",
   "dist-legacy/LAIRD MGV1207"
  ],
- "embedding_text": "discrete-diode.laird | Discrete Diode | Discrete diode cluster containing 2 parts associated with LAIRD footprints in quality tiers B and C. | discrete diode discrete diode discrete.diode laird laird footprint laird package tys5040 laird_tys5040 dist-legacy mgv1207 surface mount with footprint smd land pattern package labeled anode and | LAIRD | ",
+ "embedding_text": "discrete-diode.laird | Discrete Diode | 2 discrete diode parts using LAIRD footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | laird tys5040 diode mgv1207 surface mount with footprint smd discrete land pattern package labeled anode and | LAIRD | ",
  "class": "discrete.diode"
 }

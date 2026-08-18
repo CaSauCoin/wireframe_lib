@@ -6,31 +6,22 @@
   "Passive",
   "Resistor"
  ],
- "description": "A cluster of 6 surface-mount passive resistor parts associated with SWPBS package footprints from the chilaboard-altium-library.",
+ "description": "6 passive resistor parts using SWPBS footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Match the target board layout to one of the specific SWPBS footprint variants.",
-  "Verify part details and specifications independently, as all entries are currently Tier C.",
-  "Ensure the design uses surface-mount (SMD) assembly."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SWPBS land pattern is intended."
  ],
  "avoid_when": [
-  "The PCB design requires through-hole components.",
-  "A package family other than SWPBS is required.",
-  "Tier A or verified production-ready library parts are required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SWPBS."
  ],
  "keywords": [
   "swpbs",
+  "spst",
   "passive",
   "resistor",
-  "smd",
-  "surface mount",
-  "swpbs_spdt_r_evpak",
-  "swpbs_spst_2016",
-  "swpbs_spst_3x2x1",
-  "swpbs_spst_6x3x2",
-  "swpbs_spst_6x3x5",
-  "swpbs_spst_6x3x5_r",
-  "chilaboard-altium-library",
-  "spst",
   "6x3x5",
   "surface",
   "mount",
@@ -67,7 +58,7 @@
   "tier_counts": {
    "C": 6
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
@@ -78,6 +69,6 @@
   "chilaboard-altium-library/SWPBS_SPST_6X3X5/SWPBS_SPST_6X3X5",
   "chilaboard-altium-library/SWPBS_SPST_6X3X5_R/SWPBS_SPST_6X3X5_R"
  ],
- "embedding_text": "passive-resistor.swpbs | Passive Resistor | A cluster of 6 surface-mount passive resistor parts associated with SWPBS package footprints from the chilaboard-altium-library. | swpbs passive resistor smd surface mount swpbs_spdt_r_evpak swpbs_spst_2016 swpbs_spst_3x2x1 swpbs_spst_6x3x2 swpbs_spst_6x3x5 swpbs_spst_6x3x5_r chilaboard-altium-library spst 6x3x5 surface mount pad mm pitch pins spdt evpak 3x2x1 6x3x2 | SWPBS | ",
+ "embedding_text": "passive-resistor.swpbs | Passive Resistor | 6 passive resistor parts using SWPBS footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | swpbs spst passive resistor 6x3x5 surface mount pad mm pitch pins spdt evpak 3x2x1 6x3x2 | SWPBS | ",
  "class": "passive.resistor"
 }

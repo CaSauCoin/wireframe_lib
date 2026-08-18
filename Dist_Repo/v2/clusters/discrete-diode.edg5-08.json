@@ -6,28 +6,22 @@
   "Discrete",
   "Diode"
  ],
- "description": "Cluster of 1 discrete diode part utilizing the EDG5.08 package family and EDG5.08-2P footprint with quality tier C classification.",
+ "description": "1 discrete diode parts using EDG5.08 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Use when an EDG5.08 package family or EDG5.08-2P footprint is required for a discrete diode.",
-  "Check part specifications considering tier C quality status and single dist-legacy source.",
-  "Verify physical layout given that mounting type is listed as unknown."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a EDG5.08 land pattern is intended."
  ],
  "avoid_when": [
-  "Avoid if PCB layout requires a footprint other than EDG5.08-2P.",
-  "Avoid if parts classified under quality tier C or dist-legacy source are unacceptable.",
-  "Avoid when a planner visible component is required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than EDG5.08."
  ],
  "keywords": [
-  "discrete diode",
+  "edg5",
+  "2p",
   "discrete",
   "diode",
-  "edg5.08",
-  "edg5.08-2p",
-  "discrete.diode",
-  "dist-legacy",
-  "tier c",
-  "2p",
-  "edg5",
   "pad",
   "mm",
   "pitch",
@@ -52,12 +46,12 @@
   "tier_counts": {
    "C": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
   "dist-legacy/EDG5.08-2P"
  ],
- "embedding_text": "discrete-diode.edg5-08 | Discrete Diode | Cluster of 1 discrete diode part utilizing the EDG5.08 package family and EDG5.08-2P footprint with quality tier C classification. | discrete diode discrete diode edg5.08 edg5.08-2p discrete.diode dist-legacy tier c 2p edg5 pad mm pitch pins | EDG5.08 | ",
+ "embedding_text": "discrete-diode.edg5-08 | Discrete Diode | 1 discrete diode parts using EDG5.08 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | edg5 2p discrete diode pad mm pitch pins | EDG5.08 | ",
  "class": "discrete.diode"
 }

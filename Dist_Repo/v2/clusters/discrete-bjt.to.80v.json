@@ -6,44 +6,34 @@
   "Discrete",
   "BJT"
  ],
- "description": "Cluster of 111 discrete BJT parts rated for the 80V facet, packaged in TO-family footprints (TO-220, TO-126, TO-39, TO-3, TO-92, TO-252, TO-218, TO-247, TO-3PF variants), covering both SMD and through-hole mounts, sourced from kicad-symbols and Alternate-KiCad-Library.",
+ "description": "111 discrete bjt parts for 80V using TO footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Match the exact TO footprint and pin order (e.g., BCE vs ECB vs EBC vs BEC) before layout",
-  "Prefer tier A parts (109 of 111) for higher-confidence symbol-footprint pairing",
-  "Confirm mount type needed: SMD (e.g., TO-252-2) vs through-hole (TO-220/TO-126/TO-3/TO-92/TO-218/TO-247/TO-3PF)",
-  "Note source library (kicad-symbols vs Alternate-KiCad-Library) when weighing trust"
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a TO land pattern is intended."
  ],
  "avoid_when": [
-  "The needed voltage, current, gain, or other electrical rating is not stated for the selected part",
-  "The board requires a package outside the TO family",
-  "The symbol-footprint pairing is unverified (review_status is generated, not reviewed)",
-  "Only a tier B entry matches and a higher-confidence tier A match is required"
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than TO."
  ],
  "keywords": [
   "to",
   "transistor",
   "bjt",
   "80v",
-  "discrete",
-  "npn",
-  "pnp",
-  "to-220",
-  "to-126",
-  "to-39",
-  "to-3",
-  "to-92",
-  "to-252",
-  "to-218",
-  "to-247",
-  "to-3pf",
-  "smd",
-  "through_hole",
   "vertical",
+  "npn",
   "darlington",
+  "discrete",
   "akl",
   "alternate",
   "kicad",
-  "library"
+  "library",
+  "pnp",
+  "rm",
+  "54mm",
+  "power"
  ],
  "facts": {
   "package_family": "TO",
@@ -80,7 +70,7 @@
    "A": 109,
    "B": 2
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -237,6 +227,6 @@
   "Alternate-KiCad-Library/Transistor_BJT_Darlington_AKL/TIP141F",
   "Alternate-KiCad-Library/Transistor_BJT_Darlington_AKL/TIP146F"
  ],
- "embedding_text": "discrete-bjt.to.80v | Discrete BJT | Cluster of 111 discrete BJT parts rated for the 80V facet, packaged in TO-family footprints (TO-220, TO-126, TO-39, TO-3, TO-92, TO-252, TO-218, TO-247, TO-3PF variants), covering both SMD and through-hole mounts, sourced from kicad-symbols and Alternate-KiCad-Library. | to transistor bjt 80v discrete npn pnp to-220 to-126 to-39 to-3 to-92 to-252 to-218 to-247 to-3pf smd through_hole vertical darlington akl alternate kicad library | TO | 80V",
+ "embedding_text": "discrete-bjt.to.80v | Discrete BJT | 111 discrete bjt parts for 80V using TO footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | to transistor bjt 80v vertical npn darlington discrete akl alternate kicad library pnp rm 54mm power | TO | 80V",
  "class": "discrete.bjt"
 }

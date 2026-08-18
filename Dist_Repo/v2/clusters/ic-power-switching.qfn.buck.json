@@ -7,42 +7,34 @@
   "Power",
   "Switching Regulator"
  ],
- "description": "Cluster of 13 SMD IC power switching buck regulator parts using QFN package footprints from KiCad symbols.",
+ "description": "13 ic power switching regulator parts for buck using QFN footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Targeting SMD buck switching regulator ICs in QFN package footprints.",
-  "Preferring high tier quality parts such as ADP5054, PAM2305BJEADJ, or TPS51363.",
-  "Matching footprint specifications with exposed pad or thermal via variants in QFN, VQFN, or WQFN."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a QFN land pattern is intended."
  ],
  "avoid_when": [
-  "A non-QFN package or non-SMD mounting style is required.",
-  "A switching regulator topology other than buck is needed.",
-  "The component class is not an IC power switching regulator."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than QFN."
  ],
  "keywords": [
-  "ic",
-  "power",
-  "switching regulator",
-  "buck",
-  "qfn",
-  "smd",
-  "vqfn",
-  "wqfn",
-  "adp5054",
-  "pam2305bjeadj",
-  "tps51363",
-  "lm76002",
-  "lm76003",
-  "kicad-symbols",
   "switching",
   "regulator",
+  "qfn",
+  "buck",
+  "vqfn",
   "5mm",
   "step",
   "down",
   "texas",
   "p0",
+  "ic",
+  "power",
   "1ep",
   "nolead",
-  "voltage"
+  "voltage",
+  "wqfn"
  ],
  "facts": {
   "package_family": "QFN",
@@ -72,7 +64,7 @@
    "A": 3,
    "B": 10
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -131,6 +123,6 @@
   "kicad-symbols/Regulator_Switching/TPS62913",
   "kicad-symbols/Regulator_Switching/LT3514xUFD"
  ],
- "embedding_text": "ic-power-switching.qfn.buck | IC Power Switching Regulator | Cluster of 13 SMD IC power switching buck regulator parts using QFN package footprints from KiCad symbols. | ic power switching regulator buck qfn smd vqfn wqfn adp5054 pam2305bjeadj tps51363 lm76002 lm76003 kicad-symbols switching regulator 5mm step down texas p0 1ep nolead voltage | QFN | buck",
+ "embedding_text": "ic-power-switching.qfn.buck | IC Power Switching Regulator | 13 ic power switching regulator parts for buck using QFN footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | switching regulator qfn buck vqfn 5mm step down texas p0 ic power 1ep nolead voltage wqfn | QFN | buck",
  "class": "ic.power.switching"
 }

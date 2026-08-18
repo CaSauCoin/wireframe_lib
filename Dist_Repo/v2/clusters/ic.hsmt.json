@@ -5,28 +5,20 @@
  "category_path": [
   "IC"
  ],
- "description": "Integrated circuit (IC) cluster containing 1 tier C part using the HSMT package family and HSMT-8 footprint.",
+ "description": "1 ic parts using HSMT footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Verify compatibility with the HSMT package family and HSMT-8 footprint.",
-  "Review part details carefully as the cluster contains tier C quality data.",
-  "Confirm mounting requirements since the mount type is unspecified."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a HSMT land pattern is intended."
  ],
  "avoid_when": [
-  "The PCB layout requires a footprint or package family other than HSMT or HSMT-8.",
-  "Higher quality tier data (such as Tier A or B) is required for automated planning.",
-  "The design requires fully specified mounting type information."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than HSMT."
  ],
  "keywords": [
-  "ic",
-  "integrated circuit",
   "hsmt",
-  "hsmt-8",
-  "hsmt footprint",
-  "hsmt package",
-  "tier c",
-  "dist-legacy",
-  "package family hsmt",
-  "hsmt-8 footprint",
+  "ic",
   "pad",
   "mm",
   "pitch",
@@ -51,12 +43,12 @@
   "tier_counts": {
    "C": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
   "dist-legacy/HSMT-8"
  ],
- "embedding_text": "ic.hsmt | IC | Integrated circuit (IC) cluster containing 1 tier C part using the HSMT package family and HSMT-8 footprint. | ic integrated circuit hsmt hsmt-8 hsmt footprint hsmt package tier c dist-legacy package family hsmt hsmt-8 footprint pad mm pitch pins | HSMT | ",
+ "embedding_text": "ic.hsmt | IC | 1 ic parts using HSMT footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | hsmt ic pad mm pitch pins | HSMT | ",
  "class": "ic"
 }

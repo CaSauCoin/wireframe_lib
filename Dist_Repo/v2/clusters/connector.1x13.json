@@ -5,44 +5,34 @@
  "category_path": [
   "Connector"
  ],
- "description": "Through-hole 1x13 connector cluster with 2 parts (footprints 1x13 and 1x13_Locking) sourced from SparkFun-KiCad-Libraries; representative part Conn_01x13 is tier B, score 80.",
+ "description": "2 connector parts using 1x13 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Match the footprint variant (1x13 vs 1x13_Locking) to whether a locking connector is needed",
-  "Prefer the tier B entry (Conn_01x13, score 80) over the tier C entry when data quality matters",
-  "Confirm through_hole mounting fits the intended assembly process",
-  "Only 1 of 2 parts is planner-visible; check the other part's details before using it"
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a 1x13 land pattern is intended."
  ],
  "avoid_when": [
-  "The design requires a surface-mount connector instead of through-hole",
-  "A pin count other than 13 is needed",
-  "A locking connector is required but the selected part is the plain 1x13 footprint",
-  "The part is the tier C entry and its quality/review data is insufficient for the design"
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than 1x13."
  ],
  "keywords": [
+  "sparkfun",
   "connector",
   "1x13",
-  "01x13",
-  "conn_01x13",
-  "conn 01x13",
-  "1x13 locking",
-  "header",
-  "pin header",
-  "13 pin",
-  "13 position",
-  "through hole",
-  "pth",
-  "single row header",
-  "sparkfun",
-  "sparkfun-kicad-libraries",
-  "kicad connector",
   "locking",
   "conn",
+  "01x13",
+  "pth",
   "https",
   "web",
   "basic",
   "through",
   "hole",
-  "pad"
+  "pad",
+  "mm",
+  "pitch",
+  "pins"
  ],
  "facts": {
   "package_family": "1x13",
@@ -65,7 +55,7 @@
    "B": 1,
    "C": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -81,6 +71,6 @@
   "SparkFun-KiCad-Libraries/SparkFun-Connector/Conn_01x13",
   "SparkFun-KiCad-Libraries/SparkFun-Connector/Conn_01x13_Locking"
  ],
- "embedding_text": "connector.1x13 | Connector | Through-hole 1x13 connector cluster with 2 parts (footprints 1x13 and 1x13_Locking) sourced from SparkFun-KiCad-Libraries; representative part Conn_01x13 is tier B, score 80. | connector 1x13 01x13 conn_01x13 conn 01x13 1x13 locking header pin header 13 pin 13 position through hole pth single row header sparkfun sparkfun-kicad-libraries kicad connector locking conn https web basic through hole pad | 1x13 | ",
+ "embedding_text": "connector.1x13 | Connector | 2 connector parts using 1x13 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | sparkfun connector 1x13 locking conn 01x13 pth https web basic through hole pad mm pitch pins | 1x13 | ",
  "class": "connector"
 }

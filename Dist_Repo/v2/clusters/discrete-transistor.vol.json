@@ -6,32 +6,21 @@
   "Discrete",
   "Transistor"
  ],
- "description": "Discrete transistor cluster containing 9 quality tier-C parts with through-hole or unknown mounts using VOL footprints.",
+ "description": "9 discrete transistor parts using VOL footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when requiring VOL package family footprints such as VOL-S, VOL_9MM, or VOL_14MM.",
-  "Confirm compatibility with through-hole or unknown mount types.",
-  "Account for all 9 parts being classified under quality tier C with generated review status."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a VOL land pattern is intended."
  ],
  "avoid_when": [
-  "The layout requires surface-mount packages or non-VOL land patterns.",
-  "Parts require planner visibility, as planner visible count is 0.",
-  "Higher quality tier parts (Tier A or B) are required for the design."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than VOL."
  ],
  "keywords": [
   "vol",
   "discrete",
   "transistor",
-  "discrete.transistor",
-  "through_hole",
-  "vol-s",
-  "vol_1",
-  "vol_x1",
-  "vol_14mm",
-  "vol_3590s",
-  "vol_9mm",
-  "vol_pcbpanel",
-  "vol_r",
-  "vol_v",
   "pad",
   "mm",
   "pitch",
@@ -41,7 +30,8 @@
   "x1",
   "14mm",
   "3590s",
-  "9mm"
+  "9mm",
+  "pcbpanel"
  ],
  "facts": {
   "package_family": "VOL",
@@ -72,7 +62,7 @@
   "tier_counts": {
    "C": 9
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
@@ -86,6 +76,6 @@
   "chilaboard-altium-library/VOL_R/VOL_R",
   "chilaboard-altium-library/VOL_V/VOL_V"
  ],
- "embedding_text": "discrete-transistor.vol | Discrete Transistor | Discrete transistor cluster containing 9 quality tier-C parts with through-hole or unknown mounts using VOL footprints. | vol discrete transistor discrete.transistor through_hole vol-s vol_1 vol_x1 vol_14mm vol_3590s vol_9mm vol_pcbpanel vol_r vol_v pad mm pitch pins through hole x1 14mm 3590s 9mm | VOL | ",
+ "embedding_text": "discrete-transistor.vol | Discrete Transistor | 9 discrete transistor parts using VOL footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | vol discrete transistor pad mm pitch pins through hole x1 14mm 3590s 9mm pcbpanel | VOL | ",
  "class": "discrete.transistor"
 }

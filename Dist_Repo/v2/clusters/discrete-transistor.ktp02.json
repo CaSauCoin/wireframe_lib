@@ -6,28 +6,21 @@
   "Discrete",
   "Transistor"
  ],
- "description": "Discrete transistor cluster containing 1 tier C part using the KTP02 package family and footprint.",
+ "description": "1 discrete transistor parts using KTP02 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Verify footprint compatibility for the KTP02 package family.",
-  "Check pin mapping and electrical requirements before PCB layout.",
-  "Use when a discrete transistor in a KTP02 footprint is required."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a KTP02 land pattern is intended."
  ],
  "avoid_when": [
-  "The board layout requires a package other than KTP02.",
-  "Tier C quality rating or unverified specifications are unsuitable for the design.",
-  "Planner-visible parts with confirmed datasheets are strictly required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than KTP02."
  ],
  "keywords": [
   "ktp02",
-  "discrete transistor",
-  "ktp02 footprint",
-  "ktp02 package",
-  "discrete.transistor",
   "discrete",
   "transistor",
-  "tier c",
-  "dist-legacy",
-  "package family ktp02",
   "pad",
   "mm",
   "pitch",
@@ -52,12 +45,12 @@
   "tier_counts": {
    "C": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
   "dist-legacy/KTP02"
  ],
- "embedding_text": "discrete-transistor.ktp02 | Discrete Transistor | Discrete transistor cluster containing 1 tier C part using the KTP02 package family and footprint. | ktp02 discrete transistor ktp02 footprint ktp02 package discrete.transistor discrete transistor tier c dist-legacy package family ktp02 pad mm pitch pins | KTP02 | ",
+ "embedding_text": "discrete-transistor.ktp02 | Discrete Transistor | 1 discrete transistor parts using KTP02 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | ktp02 discrete transistor pad mm pitch pins | KTP02 | ",
  "class": "discrete.transistor"
 }

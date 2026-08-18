@@ -6,32 +6,21 @@
   "Mechanical",
   "Jumper"
  ],
- "description": "Mechanical jumper component cluster containing 12 tier C legacy parts using JP5 family footprints.",
+ "description": "12 mechanical jumper parts using JP5 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Verify the exact footprint variant required among JP5 options.",
-  "Select when using JP5 package family land patterns.",
-  "Consider tier C quality status of available parts."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a JP5 land pattern is intended."
  ],
  "avoid_when": [
-  "The board layout requires a footprint family other than JP5.",
-  "Planner-visible component entries are required.",
-  "Tier C quality level is unsuitable for the design."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than JP5."
  ],
  "keywords": [
   "jp5",
-  "mechanical jumper",
-  "jumper",
-  "jp5-c1c",
-  "jp5-c1t",
-  "jp5-c2c",
-  "jp5-c2t",
-  "jp5-d1c",
-  "jp5-d1t",
-  "jp5-d2t",
-  "jp5-d2c",
-  "tier c",
-  "dist-legacy",
   "mechanical",
+  "jumper",
   "pad",
   "mm",
   "pitch",
@@ -41,7 +30,9 @@
   "c2c",
   "c2t",
   "d1c",
-  "d1t"
+  "d1t",
+  "d2t",
+  "d2c"
  ],
  "facts": {
   "package_family": "JP5",
@@ -73,7 +64,7 @@
   "tier_counts": {
    "C": 12
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
@@ -90,6 +81,6 @@
   "dist-legacy/JP5_3",
   "dist-legacy/JP5-D2C"
  ],
- "embedding_text": "mechanical-jumper.jp5 | Mechanical Jumper | Mechanical jumper component cluster containing 12 tier C legacy parts using JP5 family footprints. | jp5 mechanical jumper jumper jp5-c1c jp5-c1t jp5-c2c jp5-c2t jp5-d1c jp5-d1t jp5-d2t jp5-d2c tier c dist-legacy mechanical pad mm pitch pins c1c c1t c2c c2t d1c d1t | JP5 | ",
+ "embedding_text": "mechanical-jumper.jp5 | Mechanical Jumper | 12 mechanical jumper parts using JP5 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | jp5 mechanical jumper pad mm pitch pins c1c c1t c2c c2t d1c d1t d2t d2c | JP5 | ",
  "class": "mechanical.jumper"
 }

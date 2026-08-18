@@ -6,37 +6,34 @@
   "Discrete",
   "Transistor"
  ],
- "description": "Cluster of 4 surface-mount 35V discrete transistors in SOT-23 packages from Alternate-KiCad-Library.",
+ "description": "4 discrete transistor parts for 35V using SOT-23 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when needing a 35V SMD discrete transistor in a SOT-23 footprint.",
-  "Choose when requiring tier A components from Alternate-KiCad-Library.",
-  "Verify specific parameters for parts such as MMBF4416A, MMBFJ111, MMBFJ112, or MMBFJ113."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SOT-23 land pattern is intended."
  ],
  "avoid_when": [
-  "The application requires a package family or footprint other than SOT-23.",
-  "The circuit requires a voltage rating other than 35V.",
-  "Through-hole mounting is required instead of surface mount (SMD)."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SOT-23."
  ],
  "keywords": [
-  "discrete",
+  "jfet",
+  "sot",
   "transistor",
   "35v",
-  "sot-23",
-  "sot",
-  "smd",
-  "jfet",
-  "alternate-kicad-library",
-  "mmbf4416a",
-  "mmbfj111",
-  "mmbfj112",
-  "mmbfj113",
   "akl",
   "alternate",
   "kicad",
   "library",
   "njfet",
+  "discrete",
   "350mw",
-  "5ma"
+  "mmbf4416a",
+  "5ma",
+  "mmbfj111",
+  "mmbfj112",
+  "mmbfj113"
  ],
  "facts": {
   "package_family": "SOT-23",
@@ -59,7 +56,7 @@
   "tier_counts": {
    "A": 4
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -101,6 +98,6 @@
   "Alternate-KiCad-Library/Transistor_JFET_AKL/MMBFJ112",
   "Alternate-KiCad-Library/Transistor_JFET_AKL/MMBFJ113"
  ],
- "embedding_text": "discrete-transistor.sot-23.35v | Discrete Transistor | Cluster of 4 surface-mount 35V discrete transistors in SOT-23 packages from Alternate-KiCad-Library. | discrete transistor 35v sot-23 sot smd jfet alternate-kicad-library mmbf4416a mmbfj111 mmbfj112 mmbfj113 akl alternate kicad library njfet 350mw 5ma | SOT-23 | 35V",
+ "embedding_text": "discrete-transistor.sot-23.35v | Discrete Transistor | 4 discrete transistor parts for 35V using SOT-23 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | jfet sot transistor 35v akl alternate kicad library njfet discrete 350mw mmbf4416a 5ma mmbfj111 mmbfj112 mmbfj113 | SOT-23 | 35V",
  "class": "discrete.transistor"
 }

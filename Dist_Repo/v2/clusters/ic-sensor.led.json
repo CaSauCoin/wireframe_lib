@@ -6,32 +6,19 @@
   "IC",
   "Sensor"
  ],
- "description": "Cluster of 14 IC sensor components utilizing LED package footprints with surface-mount and through-hole mounting options.",
+ "description": "14 ic sensor parts using LED footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when requiring IC sensor components in the LED package family.",
-  "Choose based on mounting type, supporting both surface-mount (smd) and through-hole footprints.",
-  "Filter parts by quality tier, which includes 13 Tier A and 1 Tier B components."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a LED land pattern is intended."
  ],
  "avoid_when": [
-  "Avoid when the design requires a package family other than LED.",
-  "Avoid when board requirements call for mounting styles or footprints outside the provided LED footprint options."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than LED."
  ],
  "keywords": [
-  "ic sensor",
   "led",
-  "ic.sensor",
-  "smd",
-  "through_hole",
-  "led_d3.0mm_clear",
-  "led_d5.0mm_clear",
-  "led_d5.0mm_irgrey",
-  "led_plcc-2_3.4x3.0mm_ka",
-  "kicad-symbols",
-  "bp103b",
-  "bp103bf",
-  "bpw40",
-  "bpw42",
-  "bpw85",
   "sensor",
   "npn",
   "phototransistor",
@@ -40,7 +27,13 @@
   "ic",
   "clear",
   "silicon",
-  "d3"
+  "d3",
+  "d5",
+  "ir",
+  "ica",
+  "pin",
+  "photodiode",
+  "plcc"
  ],
  "facts": {
   "package_family": "LED",
@@ -66,7 +59,7 @@
    "A": 13,
    "B": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -126,6 +119,6 @@
   "kicad-symbols/Sensor_Optical/TEPT4400",
   "kicad-symbols/Sensor_Optical/SFH320"
  ],
- "embedding_text": "ic-sensor.led | IC Sensor | Cluster of 14 IC sensor components utilizing LED package footprints with surface-mount and through-hole mounting options. | ic sensor led ic.sensor smd through_hole led_d3.0mm_clear led_d5.0mm_clear led_d5.0mm_irgrey led_plcc-2_3.4x3.0mm_ka kicad-symbols bp103b bp103bf bpw40 bpw42 bpw85 sensor npn phototransistor optical 0mm ic clear silicon d3 | LED | ",
+ "embedding_text": "ic-sensor.led | IC Sensor | 14 ic sensor parts using LED footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | led sensor npn phototransistor optical 0mm ic clear silicon d3 d5 ir ica pin photodiode plcc | LED | ",
  "class": "ic.sensor"
 }

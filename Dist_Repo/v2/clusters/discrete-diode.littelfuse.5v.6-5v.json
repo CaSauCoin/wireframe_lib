@@ -6,38 +6,33 @@
   "Discrete",
   "Diode"
  ],
- "description": "Discrete diode cluster containing surface-mount parts with 5V and 6.5V facets in the Littelfuse_PolyZen-LS footprint.",
+ "description": "2 discrete diode parts for 5V, 6.5V using Littelfuse footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when requiring an SMD discrete diode with 5V or 6.5V facets.",
-  "Verify layout compatibility with the Littelfuse_PolyZen-LS footprint.",
-  "Choose between ZEN065V130A24LS and ZEN065V230A16LS based on part requirements."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a Littelfuse land pattern is intended."
  ],
  "avoid_when": [
-  "Avoid when a footprint other than Littelfuse_PolyZen-LS is required.",
-  "Avoid if surface-mount (SMD) mounting is not suitable.",
-  "Avoid when operating requirements fall outside the 5V and 6.5V facets."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than Littelfuse."
  ],
  "keywords": [
-  "discrete diode",
   "diode",
-  "littelfuse",
-  "5v",
-  "6.5v",
-  "smd",
-  "littelfuse_polyzen-ls",
-  "polyzen",
-  "zen065v130a24ls",
-  "zen065v230a16ls",
-  "power_protection",
   "polymer",
   "zener",
+  "5v",
   "ls",
+  "littelfuse",
   "protected",
   "power",
   "protection",
   "30a",
+  "polyzen",
   "discrete",
+  "zen065v130a24ls",
   "24v",
+  "zen065v230a16ls",
   "16v"
  ],
  "facts": {
@@ -62,7 +57,7 @@
   "tier_counts": {
    "B": 2
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -86,6 +81,6 @@
   "kicad-symbols/Power_Protection/ZEN065V130A24LS",
   "kicad-symbols/Power_Protection/ZEN065V230A16LS"
  ],
- "embedding_text": "discrete-diode.littelfuse.5v.6-5v | Discrete Diode | Discrete diode cluster containing surface-mount parts with 5V and 6.5V facets in the Littelfuse_PolyZen-LS footprint. | discrete diode diode littelfuse 5v 6.5v smd littelfuse_polyzen-ls polyzen zen065v130a24ls zen065v230a16ls power_protection polymer zener ls protected power protection 30a discrete 24v 16v | Littelfuse | 5V 6.5V",
+ "embedding_text": "discrete-diode.littelfuse.5v.6-5v | Discrete Diode | 2 discrete diode parts for 5V, 6.5V using Littelfuse footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | diode polymer zener 5v ls littelfuse protected power protection 30a polyzen discrete zen065v130a24ls 24v zen065v230a16ls 16v | Littelfuse | 5V 6.5V",
  "class": "discrete.diode"
 }

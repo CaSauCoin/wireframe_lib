@@ -7,30 +7,19 @@
   "Driver",
   "Display"
  ],
- "description": "Display driver IC cluster featuring surface-mount SOT-23 package family parts with TSOT-23-6 footprints.",
+ "description": "2 ic driver display parts using SOT-23 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when designing surface-mount display driver circuits.",
-  "Use when a SOT-23 package family or TSOT-23-6 footprint is required.",
-  "Verify part selection against tier A KiCad symbol library specifications."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SOT-23 land pattern is intended."
  ],
  "avoid_when": [
-  "Do not use if through-hole mounting is required instead of SMD.",
-  "Avoid when the PCB layout requires footprints other than TSOT-23-6.",
-  "Do not use when components outside the display driver IC class are needed."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SOT-23."
  ],
  "keywords": [
-  "ic",
   "driver",
-  "display",
-  "sot-23",
-  "tsot-23-6",
-  "smd",
-  "display driver",
-  "ic driver display",
-  "lt3465",
-  "lt3465a",
-  "surface mount",
-  "kicad",
   "led",
   "tsot",
   "sot",
@@ -42,7 +31,10 @@
   "schottky",
   "thinsot",
   "to",
-  "switching"
+  "smd",
+  "switching",
+  "ic",
+  "display"
  ],
  "facts": {
   "package_family": "SOT-23",
@@ -63,7 +55,7 @@
   "tier_counts": {
    "A": 2
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -87,6 +79,6 @@
   "kicad-symbols/Driver_LED/LT3465",
   "kicad-symbols/Driver_LED/LT3465A"
  ],
- "embedding_text": "ic-driver-display.sot-23 | IC Driver Display | Display driver IC cluster featuring surface-mount SOT-23 package family parts with TSOT-23-6 footprints. | ic driver display sot-23 tsot-23-6 smd display driver ic driver display lt3465 lt3465a surface mount kicad led tsot sot in white drivers with built schottky thinsot to switching | SOT-23 | ",
+ "embedding_text": "ic-driver-display.sot-23 | IC Driver Display | 2 ic driver display parts using SOT-23 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | driver led tsot sot in white drivers with built schottky thinsot to smd switching ic display | SOT-23 | ",
  "class": "ic.driver.display"
 }

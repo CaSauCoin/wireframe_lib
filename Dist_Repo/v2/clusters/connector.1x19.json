@@ -5,36 +5,21 @@
  "category_path": [
   "Connector"
  ],
- "description": "1x19 through-hole pin header/socket connector cluster with 2 catalogued parts (1 planner-visible), sourced from SparkFun-KiCad-Libraries, offering standard and locking 1x19 footprint variants.",
+ "description": "2 connector parts using 1x19 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Choose the locking variant (1x19_Locking) when a positive-retention connection is needed",
-  "Confirm the exact footprint (1x19 vs 1x19_Locking) matches the intended land pattern before layout",
-  "Prefer the tier B representative part (Conn_01x19, score 80) over the tier C entry when no other differentiator is given",
-  "Verify pin count (19) matches the schematic net count"
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a 1x19 land pattern is intended."
  ],
  "avoid_when": [
-  "Required electrical ratings (voltage, current) are not stated by the selected part",
-  "The design needs a mount type other than through_hole",
-  "A locking mechanism is required but only the non-locking 1x19 footprint is available",
-  "The symbol-footprint pairing is unverified or flagged for review"
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than 1x19."
  ],
  "keywords": [
+  "sparkfun",
   "connector",
   "1x19",
-  "conn_01x19",
-  "conn 01x19",
-  "sparkfun",
-  "through hole",
-  "pth connector",
-  "locking connector",
-  "1x19 locking",
-  "19 pin header",
-  "19 position connector",
-  "pin header",
-  "box header",
-  "sparkfun-kiclib",
-  "generated cluster",
-  "tier b connector",
   "locking",
   "conn",
   "01x19",
@@ -42,7 +27,12 @@
   "https",
   "web",
   "basic",
-  "through"
+  "through",
+  "hole",
+  "pad",
+  "mm",
+  "pitch",
+  "pins"
  ],
  "facts": {
   "package_family": "1x19",
@@ -65,7 +55,7 @@
    "B": 1,
    "C": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -81,6 +71,6 @@
   "SparkFun-KiCad-Libraries/SparkFun-Connector/Conn_01x19",
   "SparkFun-KiCad-Libraries/SparkFun-Connector/Conn_01x19_Locking"
  ],
- "embedding_text": "connector.1x19 | Connector | 1x19 through-hole pin header/socket connector cluster with 2 catalogued parts (1 planner-visible), sourced from SparkFun-KiCad-Libraries, offering standard and locking 1x19 footprint variants. | connector 1x19 conn_01x19 conn 01x19 sparkfun through hole pth connector locking connector 1x19 locking 19 pin header 19 position connector pin header box header sparkfun-kiclib generated cluster tier b connector locking conn 01x19 pth https web basic through | 1x19 | ",
+ "embedding_text": "connector.1x19 | Connector | 2 connector parts using 1x19 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | sparkfun connector 1x19 locking conn 01x19 pth https web basic through hole pad mm pitch pins | 1x19 | ",
  "class": "connector"
 }

@@ -7,31 +7,25 @@
   "Driver",
   "Motor"
  ],
- "description": "Surface-mount 48V motor driver IC cluster in QFN packaging, including PAC5527QM.",
+ "description": "1 ic driver motor parts for 48V using QFN footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when requiring a 48V motor driver IC in a surface-mount QFN package.",
-  "Verify compatibility with the Qorvo TQFN66 6x6mm footprint.",
-  "Prefer Tier A part PAC5527QM from KiCad symbols."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a QFN land pattern is intended."
  ],
  "avoid_when": [
-  "The design requires through-hole mounting instead of SMD.",
-  "The application requires a package family other than QFN.",
-  "A voltage rating other than 48V is required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than QFN."
  ],
  "keywords": [
-  "ic",
   "driver",
   "motor",
   "48v",
   "qfn",
-  "smd",
-  "pac5527qm",
   "qorvo",
   "tqfn66",
-  "motor driver",
-  "ic driver motor",
-  "6x6mm",
-  "kicad-symbols",
+  "pac5527qm",
   "charge",
   "pump",
   "controller",
@@ -39,7 +33,8 @@
   "for",
   "bldc",
   "motors",
-  "1ep"
+  "1ep",
+  "6x6mm"
  ],
  "facts": {
   "package_family": "QFN",
@@ -62,7 +57,7 @@
   "tier_counts": {
    "A": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -77,6 +72,6 @@
  "part_ids": [
   "kicad-symbols/Driver_Motor/PAC5527QM"
  ],
- "embedding_text": "ic-driver-motor.qfn.48v | IC Driver Motor | Surface-mount 48V motor driver IC cluster in QFN packaging, including PAC5527QM. | ic driver motor 48v qfn smd pac5527qm qorvo tqfn66 motor driver ic driver motor 6x6mm kicad-symbols charge pump controller and for bldc motors 1ep | QFN | 48V",
+ "embedding_text": "ic-driver-motor.qfn.48v | IC Driver Motor | 1 ic driver motor parts for 48V using QFN footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | driver motor 48v qfn qorvo tqfn66 pac5527qm charge pump controller and for bldc motors 1ep 6x6mm | QFN | 48V",
  "class": "ic.driver.motor"
 }

@@ -6,44 +6,34 @@
   "Discrete",
   "Diode"
  ],
- "description": "SMD Schottky/general-purpose diodes rated 30V, packaged in SOT-family footprints (SOT-323, SOT-363, SOT-223-3, SOT-143, SOT-563, SOT-666, SOT-343, SOT-89-3, SOT-416).",
+ "description": "41 discrete diode parts for 30V using SOT footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Match the exact SOT footprint variant to the PCB land pattern before selecting.",
-  "Prefer tier A entries; only 1 of 41 parts is tier B.",
-  "Confirm the part's electrical ratings meet circuit needs beyond the 30V facet.",
-  "Cross-check source library (Alternate-KiCad-Library vs kicad-symbols) for symbol/footprint trust."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SOT land pattern is intended."
  ],
  "avoid_when": [
-  "The design needs a package outside the SOT family (e.g. DO-214, SOD-123).",
-  "Required voltage, current, or switching speed exceeds what the selected part states.",
-  "Symbol-footprint pairing is unverified or flagged for review.",
-  "A through-hole mount is required, since this cluster is SMD only."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SOT."
  ],
  "keywords": [
-  "diode",
   "sot",
-  "sot-323",
-  "sot-363",
-  "sot-223",
-  "sot-143",
-  "sot-563",
-  "sot-666",
-  "sot-343",
-  "sot-89",
-  "sot-416",
-  "30v",
-  "smd diode",
-  "discrete diode",
-  "sc-70",
-  "kicad diode",
-  "surface mount diode",
+  "diode",
   "schottky",
+  "30v",
   "sc",
   "dual",
   "discrete",
   "akl",
   "alternate",
-  "kicad"
+  "kicad",
+  "library",
+  "200ma",
+  "zener",
+  "independent",
+  "common",
+  "series"
  ],
  "facts": {
   "package_family": "SOT",
@@ -76,7 +66,7 @@
    "A": 40,
    "B": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -163,6 +153,6 @@
   "Alternate-KiCad-Library/Diode_Schottky_AKL/BAS3007A",
   "Alternate-KiCad-Library/Diode_AKL/1SS364"
  ],
- "embedding_text": "discrete-diode.sot.30v | Discrete Diode | SMD Schottky/general-purpose diodes rated 30V, packaged in SOT-family footprints (SOT-323, SOT-363, SOT-223-3, SOT-143, SOT-563, SOT-666, SOT-343, SOT-89-3, SOT-416). | diode sot sot-323 sot-363 sot-223 sot-143 sot-563 sot-666 sot-343 sot-89 sot-416 30v smd diode discrete diode sc-70 kicad diode surface mount diode schottky sc dual discrete akl alternate kicad | SOT | 30V",
+ "embedding_text": "discrete-diode.sot.30v | Discrete Diode | 41 discrete diode parts for 30V using SOT footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | sot diode schottky 30v sc dual discrete akl alternate kicad library 200ma zener independent common series | SOT | 30V",
  "class": "discrete.diode"
 }

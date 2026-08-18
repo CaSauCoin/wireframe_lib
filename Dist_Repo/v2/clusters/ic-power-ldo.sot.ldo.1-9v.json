@@ -7,42 +7,34 @@
   "Power",
   "Linear Regulator"
  ],
- "description": "SMD 1.9V low-dropout (LDO) linear voltage regulator ICs in SOT package family footprints including SOT-353_SC-70-5 and SOT-343_SC-70-4.",
+ "description": "3 ic power linear regulator parts for LDO, 1.9V using SOT footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when requiring a 1.9V LDO linear regulator in a surface-mount SOT package.",
-  "Choose between SOT-353_SC-70-5 and SOT-343_SC-70-4 footprint options.",
-  "Confirm specific footprint and symbol details prior to PCB layout."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SOT land pattern is intended."
  ],
  "avoid_when": [
-  "Do not use when an output voltage other than 1.9V is required.",
-  "Avoid if the design requires non-SMD mounting or packages outside the SOT family.",
-  "Avoid if specific electrical limits not provided in the cluster facts are required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SOT."
  ],
  "keywords": [
-  "ic",
-  "power",
-  "linear regulator",
-  "ldo",
-  "1.9v",
   "sot",
-  "smd",
-  "sot-353_sc-70-5",
-  "sot-343_sc-70-4",
-  "ape8865u4-19-hf-3",
-  "ape8865u5-19-hf-3",
-  "tps71519__sc70",
-  "low dropout",
-  "sc-70",
   "regulator",
   "sc",
   "linear",
   "9v",
+  "ldo",
   "fixed",
   "300ma",
   "voltage",
   "to",
   "low",
-  "hf"
+  "smd",
+  "ic",
+  "power",
+  "hf",
+  "dropout"
  ],
  "facts": {
   "package_family": "SOT",
@@ -67,7 +59,7 @@
   "tier_counts": {
    "A": 3
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -100,6 +92,6 @@
   "kicad-symbols/Regulator_Linear/APE8865U5-19-HF-3",
   "kicad-symbols/Regulator_Linear/TPS71519__SC70"
  ],
- "embedding_text": "ic-power-ldo.sot.ldo.1-9v | IC Power Linear Regulator | SMD 1.9V low-dropout (LDO) linear voltage regulator ICs in SOT package family footprints including SOT-353_SC-70-5 and SOT-343_SC-70-4. | ic power linear regulator ldo 1.9v sot smd sot-353_sc-70-5 sot-343_sc-70-4 ape8865u4-19-hf-3 ape8865u5-19-hf-3 tps71519__sc70 low dropout sc-70 regulator sc linear 9v fixed 300ma voltage to low hf | SOT | LDO 1.9V",
+ "embedding_text": "ic-power-ldo.sot.ldo.1-9v | IC Power Linear Regulator | 3 ic power linear regulator parts for LDO, 1.9V using SOT footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | sot regulator sc linear 9v ldo fixed 300ma voltage to low smd ic power hf dropout | SOT | LDO 1.9V",
  "class": "ic.power.ldo"
 }

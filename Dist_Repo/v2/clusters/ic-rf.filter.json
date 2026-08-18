@@ -6,32 +6,18 @@
   "IC",
   "RF"
  ],
- "description": "Surface-mount RF filter IC cluster containing 5 tier-B components available in SAW footprints.",
+ "description": "5 ic rf parts using Filter footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when requiring surface-mount (SMD) RF SAW filters.",
-  "Match design footprint requirements with Filter_SAW-8_3.8x3.8mm, Filter_SAW-6_3.8x3.8mm, or Filter_SAW_Epcos_DCC6C_3x3mm.",
-  "Verify compatibility with tier-B rated KiCad symbol parts."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a Filter land pattern is intended."
  ],
  "avoid_when": [
-  "Through-hole mounting or non-SMD layouts are required.",
-  "Package requirements differ from the supported SAW filter footprints.",
-  "Parts with quality tiers higher than tier-B are required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than Filter."
  ],
  "keywords": [
-  "ic rf",
-  "rf filter",
-  "saw filter",
-  "smd",
-  "filter_saw-8_3.8x3.8mm",
-  "filter_saw-6_3.8x3.8mm",
-  "filter_saw_epcos_dcc6c_3x3mm",
-  "b3715",
-  "sta0232a",
-  "sta1090ec",
-  "ta0232a",
-  "ta0970b",
-  "kicad-symbols",
-  "rf ic",
   "filter",
   "saw",
   "rf",
@@ -41,7 +27,13 @@
   "1090mhz",
   "8x3",
   "8mm",
-  "869mhz"
+  "b3715",
+  "869mhz",
+  "epcos",
+  "dcc6c",
+  "3x3mm",
+  "sta0232a",
+  "sta1090ec"
  ],
  "facts": {
   "package_family": "Filter",
@@ -64,7 +56,7 @@
   "tier_counts": {
    "B": 5
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -115,6 +107,6 @@
   "kicad-symbols/RF_Filter/TA0232A",
   "kicad-symbols/RF_Filter/TA0970B"
  ],
- "embedding_text": "ic-rf.filter | IC RF | Surface-mount RF filter IC cluster containing 5 tier-B components available in SAW footprints. | ic rf rf filter saw filter smd filter_saw-8_3.8x3.8mm filter_saw-6_3.8x3.8mm filter_saw_epcos_dcc6c_3x3mm b3715 sta0232a sta1090ec ta0232a ta0970b kicad-symbols rf ic filter saw rf bandpass pin ic 1090mhz 8x3 8mm 869mhz | Filter | ",
+ "embedding_text": "ic-rf.filter | IC RF | 5 ic rf parts using Filter footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | filter saw rf bandpass pin ic 1090mhz 8x3 8mm b3715 869mhz epcos dcc6c 3x3mm sta0232a sta1090ec | Filter | ",
  "class": "ic.rf"
 }

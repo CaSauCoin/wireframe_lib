@@ -7,31 +7,21 @@
   "Interface",
   "CAN"
  ],
- "description": "Surface-mount CAN interface IC cluster in DFN packages featuring 3 parts across quality tiers A and B from KiCad symbols.",
+ "description": "3 ic interface can parts for CAN using DFN footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select based on required pin count and footprint, such as DFN-8 or DFN-14.",
-  "Prefer tier A parts over tier B options when available.",
-  "Ensure compatibility with surface-mount DFN land patterns."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a DFN land pattern is intended."
  ],
  "avoid_when": [
-  "The board layout requires through-hole mounting or package families other than DFN.",
-  "An interface type other than CAN is required.",
-  "Footprint requirements differ from the available DFN-8-1EP or DFN-14-1EP options."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than DFN."
  ],
  "keywords": [
-  "ic",
-  "interface",
   "can",
   "dfn",
-  "smd",
-  "dfn-8",
-  "dfn-14",
-  "mcp2557fd-xmf",
-  "mcp2558fd-xmf",
-  "tja1043tk",
-  "kicad-symbols",
-  "can interface",
-  "dfn package",
+  "interface",
   "fd",
   "transceiver",
   "65mm",
@@ -41,8 +31,10 @@
   "1ep",
   "p0",
   "ep1",
+  "ic",
   "xmf",
-  "silent"
+  "silent",
+  "up"
  ],
  "facts": {
   "package_family": "DFN",
@@ -67,7 +59,7 @@
    "A": 2,
    "B": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -100,6 +92,6 @@
   "kicad-symbols/Interface_CAN_LIN/MCP2558FD-xMF",
   "kicad-symbols/Interface_CAN_LIN/TJA1043TK"
  ],
- "embedding_text": "ic-interface-can.dfn.can | IC Interface CAN | Surface-mount CAN interface IC cluster in DFN packages featuring 3 parts across quality tiers A and B from KiCad symbols. | ic interface can dfn smd dfn-8 dfn-14 mcp2557fd-xmf mcp2558fd-xmf tja1043tk kicad-symbols can interface dfn package fd transceiver 65mm lin with mode 1ep p0 ep1 xmf silent | DFN | CAN",
+ "embedding_text": "ic-interface-can.dfn.can | IC Interface CAN | 3 ic interface can parts for CAN using DFN footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | can dfn interface fd transceiver 65mm lin with mode 1ep p0 ep1 ic xmf silent up | DFN | CAN",
  "class": "ic.interface.can"
 }

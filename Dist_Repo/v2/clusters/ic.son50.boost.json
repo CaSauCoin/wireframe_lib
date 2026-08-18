@@ -5,32 +5,24 @@
  "category_path": [
   "IC"
  ],
- "description": "Surface-mount boost IC cluster containing 2 Tier B parts in the SON50 package family with the SON50_8T_2020 footprint.",
+ "description": "2 ic parts for boost using SON50 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when a surface-mount boost IC in a SON50 package is required.",
-  "Confirm compatibility with the SON50_8T_2020 footprint.",
-  "Evaluate Tier B parts including VREG_AOZ1084_DFN8 and VREG_MP3202_SON8."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SON50 land pattern is intended."
  ],
  "avoid_when": [
-  "The design requires a package family other than SON50.",
-  "A footprint other than SON50_8T_2020 is needed.",
-  "Boost IC functionality is not required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SON50."
  ],
  "keywords": [
+  "regulator",
+  "vreg",
+  "son50",
+  "voltage",
   "ic",
   "boost",
-  "son50",
-  "smd",
-  "son50_8t_2020",
-  "vreg_aoz1084_dfn8",
-  "vreg_mp3202_son8",
-  "chilaboard-altium-library",
-  "boost ic",
-  "son50 package",
-  "tier b",
-  "vreg",
-  "regulator",
-  "voltage",
   "switching",
   "aoz1084",
   "dfn8",
@@ -63,7 +55,7 @@
   "tier_counts": {
    "B": 2
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -87,6 +79,6 @@
   "chilaboard-altium-library/VREG_AOZ1084_DFN8/VREG_AOZ1084_DFN8",
   "chilaboard-altium-library/VREG_MP3202_SON8/VREG_MP3202_SON8"
  ],
- "embedding_text": "ic.son50.boost | IC | Surface-mount boost IC cluster containing 2 Tier B parts in the SON50 package family with the SON50_8T_2020 footprint. | ic boost son50 smd son50_8t_2020 vreg_aoz1084_dfn8 vreg_mp3202_son8 chilaboard-altium-library boost ic son50 package tier b vreg regulator voltage switching aoz1084 dfn8 featuring input feedback and in package 8t | SON50 | boost",
+ "embedding_text": "ic.son50.boost | IC | 2 ic parts for boost using SON50 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | regulator vreg son50 voltage ic boost switching aoz1084 dfn8 featuring input feedback and in package 8t | SON50 | boost",
  "class": "ic"
 }

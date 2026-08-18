@@ -7,42 +7,34 @@
   "Driver",
   "Display"
  ],
- "description": "Surface-mount display driver integrated circuits packaged in TSSOP and HTSSOP variants with pin counts ranging from 24 to 38.",
+ "description": "6 ic driver display parts using TSSOP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Match the required pin count (24, 28, 32, or 38 pins) and specific package footprint.",
-  "Check whether an exposed thermal pad (HTSSOP-1EP) is required by the footprint.",
-  "Prefer tier A quality representative parts like LED1642GWTTR, TLC5940PWP, TLC5947DAP, or TLC5951DAP."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a TSSOP land pattern is intended."
  ],
  "avoid_when": [
-  "The PCB layout requires package families other than TSSOP or HTSSOP.",
-  "Through-hole or non-SMD mounting is required.",
-  "Required electrical characteristics and pin functions cannot be verified from part documentation."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than TSSOP."
  ],
  "keywords": [
-  "display driver",
-  "led driver",
-  "ic driver display",
-  "tssop",
-  "htssop",
-  "smd",
-  "tssop-24",
-  "htssop-28",
-  "htssop-32",
-  "htssop-38",
-  "exposed pad",
-  "thermal vias",
-  "led1642gwttr",
-  "tlc5940pwp",
-  "tlc5947dap",
-  "tlc5951dap",
   "driver",
   "led",
+  "htssop",
+  "tssop",
   "pwm",
   "bit",
   "channel",
   "control",
   "p0",
-  "65mm"
+  "65mm",
+  "ic",
+  "display",
+  "with",
+  "1ep",
+  "texas",
+  "and"
  ],
  "facts": {
   "package_family": "TSSOP",
@@ -69,7 +61,7 @@
    "A": 4,
    "B": 2
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -121,6 +113,6 @@
   "kicad-symbols/Driver_LED/LED1642GWXTTR",
   "kicad-symbols/Driver_LED/TLC5949PWP"
  ],
- "embedding_text": "ic-driver-display.tssop | IC Driver Display | Surface-mount display driver integrated circuits packaged in TSSOP and HTSSOP variants with pin counts ranging from 24 to 38. | display driver led driver ic driver display tssop htssop smd tssop-24 htssop-28 htssop-32 htssop-38 exposed pad thermal vias led1642gwttr tlc5940pwp tlc5947dap tlc5951dap driver led pwm bit channel control p0 65mm | TSSOP | ",
+ "embedding_text": "ic-driver-display.tssop | IC Driver Display | 6 ic driver display parts using TSSOP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | driver led htssop tssop pwm bit channel control p0 65mm ic display with 1ep texas and | TSSOP | ",
  "class": "ic.driver.display"
 }

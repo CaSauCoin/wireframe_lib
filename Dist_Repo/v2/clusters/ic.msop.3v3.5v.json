@@ -5,30 +5,19 @@
  "category_path": [
   "IC"
  ],
- "description": "Cluster of surface-mount IC components in MSOP packaging using the MSOP-10_3x3mm_P0.5mm footprint with 3.3V, 5V, and 60V facets.",
+ "description": "2 ic parts for 3.3V, 5V, 60V using MSOP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when requiring surface-mount (SMD) ICs in an MSOP-10_3x3mm_P0.5mm footprint.",
-  "Choose when requiring components matching 3.3V, 5V, or 60V facets.",
-  "Suitable when KiCad Tier A parts such as MAX9611 or MAX9612 are needed."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a MSOP land pattern is intended."
  ],
  "avoid_when": [
-  "Do not use if the layout requires through-hole components instead of SMD.",
-  "Avoid if the design requires a footprint or package family other than MSOP-10_3x3mm_P0.5mm.",
-  "Avoid when voltage requirements differ from the 3.3V, 5V, or 60V facets."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than MSOP."
  ],
  "keywords": [
-  "ic",
   "msop",
-  "msop-10",
-  "msop-10_3x3mm_p0.5mm",
-  "smd",
-  "3.3v",
-  "5v",
-  "60v",
-  "max9611",
-  "max9612",
-  "kicad-symbols",
-  "tier a",
   "range",
   "power",
   "high",
@@ -36,11 +25,14 @@
   "with",
   "and",
   "to",
+  "60v",
   "common",
   "mode",
   "voltage",
+  "5v",
   "3v",
-  "3x3mm"
+  "3x3mm",
+  "p0"
  ],
  "facts": {
   "package_family": "MSOP",
@@ -65,7 +57,7 @@
   "tier_counts": {
    "A": 2
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -89,6 +81,6 @@
   "kicad-symbols/Power_Management/MAX9611",
   "kicad-symbols/Power_Management/MAX9612"
  ],
- "embedding_text": "ic.msop.3v3.5v | IC | Cluster of surface-mount IC components in MSOP packaging using the MSOP-10_3x3mm_P0.5mm footprint with 3.3V, 5V, and 60V facets. | ic msop msop-10 msop-10_3x3mm_p0.5mm smd 3.3v 5v 60v max9611 max9612 kicad-symbols tier a range power high current with and to common mode voltage 3v 3x3mm | MSOP | 3.3V 5V 60V",
+ "embedding_text": "ic.msop.3v3.5v | IC | 2 ic parts for 3.3V, 5V, 60V using MSOP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | msop range power high current with and to 60v common mode voltage 5v 3v 3x3mm p0 | MSOP | 3.3V 5V 60V",
  "class": "ic"
 }

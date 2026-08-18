@@ -6,44 +6,34 @@
   "Discrete",
   "Diode"
  ],
- "description": "Cluster of 9 Infineon SMD discrete diode parts (ESD131-B1-W0201 and IDDD0xG65C6 series) using PG-HDSOP-10-1 or SG-WLL-2-3 footprints; mostly tier B with one tier A entry, review status generated.",
+ "description": "9 discrete diode parts using Infineon footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Prefer the tier A entry (ESD131-B1-W0201) when the SG-WLL-2-3 footprint is required",
-  "IDDD0xG65C6 tier B parts (04/06/08/10 variants) share the PG-HDSOP-10-1 footprint",
-  "Match the exact footprint (PG-HDSOP-10-1 vs SG-WLL-2-3) to your intended land pattern",
-  "Review status is 'generated' — verify the symbol-footprint pairing before committing to layout"
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a Infineon land pattern is intended."
  ],
  "avoid_when": [
-  "You need a footprint other than PG-HDSOP-10-1 or SG-WLL-2-3",
-  "Electrical ratings for the target application are not confirmed from a datasheet",
-  "A verified (non-generated) review status is required",
-  "Through-hole mounting is needed — this cluster is SMD only"
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than Infineon."
  ],
  "keywords": [
   "diode",
-  "discrete",
-  "infineon",
-  "smd",
   "hdsop",
-  "wll",
-  "pg-hdsop-10-1",
-  "sg-wll-2-3",
-  "esd131",
-  "esd131-b1-w0201",
-  "iddd04g65c6",
-  "iddd06g65c6",
-  "iddd08g65c6",
-  "iddd10g65c6",
-  "b1",
-  "w0201",
-  "tier a",
-  "tier b",
+  "infineon",
   "pg",
   "ddpak",
   "sic",
+  "discrete",
   "650v",
   "schottky",
-  "coolsic"
+  "coolsic",
+  "wll",
+  "esd",
+  "sg",
+  "esd131",
+  "b1",
+  "w0201"
  ],
  "facts": {
   "package_family": "Infineon",
@@ -68,7 +58,7 @@
    "B": 7,
    "C": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -123,6 +113,6 @@
   "kicad-symbols/Diode/IDDD20G65C6",
   "dist-legacy/Infineon_PG-HDSOP-10-1"
  ],
- "embedding_text": "discrete-diode.infineon | Discrete Diode | Cluster of 9 Infineon SMD discrete diode parts (ESD131-B1-W0201 and IDDD0xG65C6 series) using PG-HDSOP-10-1 or SG-WLL-2-3 footprints; mostly tier B with one tier A entry, review status generated. | diode discrete infineon smd hdsop wll pg-hdsop-10-1 sg-wll-2-3 esd131 esd131-b1-w0201 iddd04g65c6 iddd06g65c6 iddd08g65c6 iddd10g65c6 b1 w0201 tier a tier b pg ddpak sic 650v schottky coolsic | Infineon | ",
+ "embedding_text": "discrete-diode.infineon | Discrete Diode | 9 discrete diode parts using Infineon footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | diode hdsop infineon pg ddpak sic discrete 650v schottky coolsic wll esd sg esd131 b1 w0201 | Infineon | ",
  "class": "discrete.diode"
 }

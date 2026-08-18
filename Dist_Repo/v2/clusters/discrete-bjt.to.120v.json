@@ -6,42 +6,34 @@
   "Discrete",
   "BJT"
  ],
- "description": "Cluster of 22 through-hole BJT transistors rated for the 120V facet, spanning TO-220-3, TO-3, TO-3P-3, TO-92, TO-39-3, and TO-66 footprints, sourced from the Alternate-KiCad-Library.",
+ "description": "22 discrete bjt parts for 120V using TO footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Match the exact footprint (TO-220-3, TO-3, TO-3P-3, TO-92, TO-39-3, or TO-66) to your PCB land pattern",
-  "Prefer tier A parts (21 of 22 entries) over the single tier B entry",
-  "Confirm pin order (EBC, ECB, or BCE varies by footprint) before layout"
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a TO land pattern is intended."
  ],
  "avoid_when": [
-  "Design requires a voltage rating other than the 120V facet",
-  "Board layout needs a surface-mount package, since all parts here are through-hole",
-  "Exact footprint variant (e.g. EBC vs ECB pin order) is unconfirmed for the chosen part"
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than TO."
  ],
  "keywords": [
-  "bjt",
-  "transistor",
-  "discrete",
-  "to-220",
-  "to-3",
-  "to-3p",
-  "to-92",
-  "to-39",
-  "to-66",
-  "through hole",
-  "120v",
-  "ebc",
-  "ecb",
-  "bce",
-  "alternate kicad library",
-  "vertical",
-  "inline wide",
   "to",
+  "transistor",
+  "bjt",
+  "120v",
   "darlington",
   "akl",
   "pnp",
   "alternate",
   "kicad",
-  "library"
+  "library",
+  "discrete",
+  "npn",
+  "vertical",
+  "3p",
+  "bce",
+  "rm"
  ],
  "facts": {
   "package_family": "TO",
@@ -71,7 +63,7 @@
    "A": 21,
    "B": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -139,6 +131,6 @@
   "Alternate-KiCad-Library/Transistor_BJT_Darlington_AKL/ZTX605",
   "Alternate-KiCad-Library/Transistor_BJT_AKL/2N6263"
  ],
- "embedding_text": "discrete-bjt.to.120v | Discrete BJT | Cluster of 22 through-hole BJT transistors rated for the 120V facet, spanning TO-220-3, TO-3, TO-3P-3, TO-92, TO-39-3, and TO-66 footprints, sourced from the Alternate-KiCad-Library. | bjt transistor discrete to-220 to-3 to-3p to-92 to-39 to-66 through hole 120v ebc ecb bce alternate kicad library vertical inline wide to darlington akl pnp alternate kicad library | TO | 120V",
+ "embedding_text": "discrete-bjt.to.120v | Discrete BJT | 22 discrete bjt parts for 120V using TO footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | to transistor bjt 120v darlington akl pnp alternate kicad library discrete npn vertical 3p bce rm | TO | 120V",
  "class": "discrete.bjt"
 }

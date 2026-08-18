@@ -6,33 +6,26 @@
   "Discrete",
   "Diode"
  ],
- "description": "Discrete diode cluster containing parts associated with ST footprints including SMB, SMC, and SMA package variants.",
+ "description": "3 discrete diode parts using ST footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when seeking discrete diodes mapped to ST footprint patterns.",
-  "Verify exact package dimensions and pinout prior to PCB layout.",
-  "Review component quality tier and source documentation before selection."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a ST land pattern is intended."
  ],
  "avoid_when": [
-  "The PCB layout requires footprints other than ST.",
-  "Specific electrical parameters or ratings are not provided for the component.",
-  "A verified mounting type or higher quality tier is mandatory."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than ST."
  ],
  "keywords": [
-  "discrete diode",
-  "st footprint",
-  "st package",
-  "do214aa",
-  "do214ab",
-  "do214ac",
-  "smb",
-  "smc",
-  "sma",
-  "diode",
-  "discrete",
   "st",
+  "diode",
   "anode",
   "cathode",
   "do",
+  "smb",
+  "smc",
+  "sma",
   "two",
   "pin",
   "with",
@@ -61,7 +54,7 @@
   "tier_counts": {
    "B": 3
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -94,6 +87,6 @@
   "dist-legacy/ST DO214AB SMC",
   "dist-legacy/ST DO214AC SMA"
  ],
- "embedding_text": "discrete-diode.st | Discrete Diode | Discrete diode cluster containing parts associated with ST footprints including SMB, SMC, and SMA package variants. | discrete diode st footprint st package do214aa do214ab do214ac smb smc sma diode discrete st anode cathode do two pin with and terminals in surface mount | ST | ",
+ "embedding_text": "discrete-diode.st | Discrete Diode | 3 discrete diode parts using ST footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | st diode anode cathode do smb smc sma two pin with and terminals in surface mount | ST | ",
  "class": "discrete.diode"
 }

@@ -6,34 +6,23 @@
   "IC",
   "Isolator"
  ],
- "description": "EDA component cluster containing 17 tier-A 35V IC isolators supporting surface mount and through-hole DIP and SMDIP footprints.",
+ "description": "17 ic isolator parts for 35V using DIP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select based on pin count (4, 8, 12, or 16 pins) and footprint width (7.62mm, 9.53mm, or 10.16mm).",
-  "Choose surface-mount (SMDIP) or through-hole (DIP) mounting style based on layout requirements.",
-  "Verify part selection against representative entries like EL817, LTV-814, LTV-817, LTV-817M, and LTV-817S."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a DIP land pattern is intended."
  ],
  "avoid_when": [
-  "The design requires package families other than DIP or SMDIP.",
-  "Voltage requirements differ from the specified 35V facet.",
-  "Non-isolated IC component functions are required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than DIP."
  ],
  "keywords": [
-  "ic isolator",
-  "isolator",
-  "35v",
   "dip",
-  "smdip",
-  "smd",
-  "through_hole",
-  "el817",
-  "ltv-814",
-  "ltv-817",
-  "dip-4",
-  "dip-8",
-  "dip-12",
-  "dip-16",
+  "isolator",
   "dc",
   "optocoupler",
+  "35v",
   "62mm",
   "vce",
   "dil",
@@ -41,7 +30,10 @@
   "54mm",
   "npn",
   "ic",
-  "ctr"
+  "ctr",
+  "tht",
+  "ltv",
+  "w7"
  ],
  "facts": {
   "package_family": "DIP",
@@ -74,7 +66,7 @@
   "tier_counts": {
    "A": 17
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -137,6 +129,6 @@
   "kicad-symbols/Isolator/PC837",
   "kicad-symbols/Isolator/PC847"
  ],
- "embedding_text": "ic-isolator.dip.35v | IC Isolator | EDA component cluster containing 17 tier-A 35V IC isolators supporting surface mount and through-hole DIP and SMDIP footprints. | ic isolator isolator 35v dip smdip smd through_hole el817 ltv-814 ltv-817 dip-4 dip-8 dip-12 dip-16 dc optocoupler 62mm vce dil pdip 54mm npn ic ctr | DIP | 35V",
+ "embedding_text": "ic-isolator.dip.35v | IC Isolator | 17 ic isolator parts for 35V using DIP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | dip isolator dc optocoupler 35v 62mm vce dil pdip 54mm npn ic ctr tht ltv w7 | DIP | 35V",
  "class": "ic.isolator"
 }

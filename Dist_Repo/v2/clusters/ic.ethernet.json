@@ -5,31 +5,21 @@
  "category_path": [
   "IC"
  ],
- "description": "Integrated circuit cluster containing 1 IC part categorized under Ethernet footprints with unknown mounting.",
+ "description": "1 ic parts using Ethernet footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Verify exact package dimensions and land pattern requirements for the Ethernet footprint.",
-  "Confirm mounting type and pin definitions as mount is specified as unknown.",
-  "Review source data and quality tier C specifications before design integration."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a Ethernet land pattern is intended."
  ],
  "avoid_when": [
-  "The design requires a known mounting type or specified package footprint other than Ethernet.",
-  "Higher tier certification or planner-visible verified parts are required.",
-  "Electrical parameters, pinouts, or datasheets are not confirmed for the single catalog entry."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than Ethernet."
  ],
  "keywords": [
   "ethernet",
-  "ic",
-  "integrated circuit",
-  "ethernet footprint",
-  "ethernet ic",
-  "package ethernet",
-  "dist-legacy",
-  "unknown mount",
-  "tier c",
-  "single part",
-  "land pattern",
-  "ic category",
   "duplicate",
+  "ic",
   "pad",
   "mm",
   "pitch",
@@ -54,12 +44,12 @@
   "tier_counts": {
    "C": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
   "dist-legacy/Ethernet - duplicate"
  ],
- "embedding_text": "ic.ethernet | IC | Integrated circuit cluster containing 1 IC part categorized under Ethernet footprints with unknown mounting. | ethernet ic integrated circuit ethernet footprint ethernet ic package ethernet dist-legacy unknown mount tier c single part land pattern ic category duplicate pad mm pitch pins | Ethernet | ",
+ "embedding_text": "ic.ethernet | IC | 1 ic parts using Ethernet footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | ethernet duplicate ic pad mm pitch pins | Ethernet | ",
  "class": "ic"
 }

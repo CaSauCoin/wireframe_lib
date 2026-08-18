@@ -6,37 +6,33 @@
   "IC",
   "Power"
  ],
- "description": "SMD power IC cluster for boost applications in a SOT-23-5 package, featuring tier A component data from KiCad symbols.",
+ "description": "1 ic power parts for boost using SOT-23-5 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when requiring a boost power IC in a surface-mount SOT-23-5 footprint.",
-  "Verify exact pinout, electrical ratings, and footprint mapping against the component datasheet.",
-  "Prefer tier A parts with confirmed symbol-to-footprint compatibility."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SOT-23-5 land pattern is intended."
  ],
  "avoid_when": [
-  "The PCB layout requires a footprint other than SOT-23-5.",
-  "The application does not use a boost converter topology.",
-  "Required electrical specifications or tolerances are not confirmed by the part datasheet."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SOT-23-5."
  ],
  "keywords": [
-  "ic",
-  "power",
+  "sot",
+  "controller",
   "boost",
-  "sot-23-5",
-  "smd",
+  "pfc",
+  "ic",
   "irs2505l",
   "regulator",
-  "controller",
-  "pfc",
-  "smps",
-  "kicad",
-  "ic power",
-  "sot",
   "and",
+  "smps",
   "control",
   "critical",
   "conduction",
   "mode",
   "to",
+  "smd",
   "crcm"
  ],
  "facts": {
@@ -60,7 +56,7 @@
   "tier_counts": {
    "A": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -75,6 +71,6 @@
  "part_ids": [
   "kicad-symbols/Regulator_Controller/IRS2505L"
  ],
- "embedding_text": "ic-power.sot-23-5.boost | IC Power | SMD power IC cluster for boost applications in a SOT-23-5 package, featuring tier A component data from KiCad symbols. | ic power boost sot-23-5 smd irs2505l regulator controller pfc smps kicad ic power sot and control critical conduction mode to crcm | SOT-23-5 | boost",
+ "embedding_text": "ic-power.sot-23-5.boost | IC Power | 1 ic power parts for boost using SOT-23-5 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | sot controller boost pfc ic irs2505l regulator and smps control critical conduction mode to smd crcm | SOT-23-5 | boost",
  "class": "ic.power"
 }

@@ -6,31 +6,23 @@
   "IC",
   "Sensor"
  ],
- "description": "Surface-mount sensor IC cluster featuring an I2C interface in the SSOP package family.",
+ "description": "1 ic sensor parts for I2C using SSOP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select for surface-mount I2C sensor IC designs using SSOP packages.",
-  "Verify compatibility with the SSOP-16_3.9x4.9mm_P0.635mm footprint.",
-  "Check that KiCad symbol and footprint definitions match design requirements."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SSOP land pattern is intended."
  ],
  "avoid_when": [
-  "The design requires through-hole mounting rather than SMD.",
-  "The circuit uses a communication interface other than I2C.",
-  "The PCB layout requires a package family other than SSOP."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SSOP."
  ],
  "keywords": [
-  "ic",
-  "sensor",
   "ssop",
-  "i2c",
-  "smd",
-  "max6654",
-  "ssop-16",
-  "kicad-symbols",
-  "ssop-16_3.9x4.9mm_p0.635mm",
-  "ic.sensor",
-  "ic sensor",
-  "surface mount",
+  "sensor",
   "temperature",
+  "i2c",
+  "max6654",
   "remote",
   "and",
   "local",
@@ -64,7 +56,7 @@
   "tier_counts": {
    "A": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -79,6 +71,6 @@
  "part_ids": [
   "kicad-symbols/Sensor_Temperature/MAX6654"
  ],
- "embedding_text": "ic-sensor.ssop.i2c | IC Sensor | Surface-mount sensor IC cluster featuring an I2C interface in the SSOP package family. | ic sensor ssop i2c smd max6654 ssop-16 kicad-symbols ssop-16_3.9x4.9mm_p0.635mm ic.sensor ic sensor surface mount temperature remote and local 9x4 9mm p0 635mm so nxp sot519 smbus | SSOP | I2C",
+ "embedding_text": "ic-sensor.ssop.i2c | IC Sensor | 1 ic sensor parts for I2C using SSOP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | ssop sensor temperature i2c max6654 remote and local 9x4 9mm p0 635mm so nxp sot519 smbus | SSOP | I2C",
  "class": "ic.sensor"
 }

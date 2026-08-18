@@ -7,42 +7,34 @@
   "Interface",
   "USB"
  ],
- "description": "Surface-mount USB interface ICs featuring USB and SPI support in QFN package options.",
+ "description": "4 ic interface usb parts for USB, SPI using QFN footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select based on the required QFN pin count and footprint variant.",
-  "Verify specific footprint dimensions and exposed pad sizes for the target QFN package.",
-  "Use when an SMD USB interface IC with SPI capability is required."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a QFN land pattern is intended."
  ],
  "avoid_when": [
-  "A package family other than QFN is required.",
-  "Surface-mount (SMD) mounting is not supported by the PCB layout.",
-  "Interfaces other than USB or SPI are required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than QFN."
  ],
  "keywords": [
   "usb",
-  "spi",
   "qfn",
-  "ic",
+  "spi",
   "interface",
-  "smd",
-  "ft220xq",
-  "ft221xq",
-  "gl3224-ony",
-  "mcp2210x-mq",
-  "qfn-16",
-  "qfn-20",
-  "qfn-48",
-  "surface mount",
   "ft1248",
   "1ep",
   "p0",
   "nolead",
   "converter",
+  "ic",
   "to",
   "bridge",
   "5mm",
   "memory",
-  "full"
+  "full",
+  "speed"
  ],
  "facts": {
   "package_family": "QFN",
@@ -69,7 +61,7 @@
   "tier_counts": {
    "A": 4
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -111,6 +103,6 @@
   "kicad-symbols/Interface_USB/GL3224-ONY",
   "kicad-symbols/Interface_USB/MCP2210x-MQ"
  ],
- "embedding_text": "ic-interface-usb.qfn.usb.spi | IC Interface USB | Surface-mount USB interface ICs featuring USB and SPI support in QFN package options. | usb spi qfn ic interface smd ft220xq ft221xq gl3224-ony mcp2210x-mq qfn-16 qfn-20 qfn-48 surface mount ft1248 1ep p0 nolead converter to bridge 5mm memory full | QFN | USB SPI",
+ "embedding_text": "ic-interface-usb.qfn.usb.spi | IC Interface USB | 4 ic interface usb parts for USB, SPI using QFN footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | usb qfn spi interface ft1248 1ep p0 nolead converter ic to bridge 5mm memory full speed | QFN | USB SPI",
  "class": "ic.interface.usb"
 }

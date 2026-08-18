@@ -6,30 +6,21 @@
   "Discrete",
   "Diode"
  ],
- "description": "A cluster of 18 discrete diode parts utilizing STRAP package footprints ranging from STRAP-10.16 to STRAP-24.13.",
+ "description": "18 discrete diode parts using STRAP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select based on the specific required STRAP footprint from STRAP-10.16 to STRAP-24.13.",
-  "Verify part specifications independently as all 18 entries are classified in quality tier C.",
-  "Confirm physical mounting requirements as the mount type is specified as unknown."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a STRAP land pattern is intended."
  ],
  "avoid_when": [
-  "The design requires a package family other than STRAP.",
-  "Tier C parts with zero planner visible count are excluded by project quality rules.",
-  "Definite surface-mount or through-hole mounting classifications are required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than STRAP."
  ],
  "keywords": [
+  "strap",
   "discrete",
   "diode",
-  "discrete diode",
-  "strap",
-  "strap package",
-  "strap footprint",
-  "strap-10.16",
-  "strap-12.7",
-  "strap-15.24",
-  "strap-24.13",
-  "tier c",
-  "unknown mount",
   "pad",
   "mm",
   "pitch",
@@ -65,7 +56,7 @@
   "tier_counts": {
    "C": 18
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
@@ -88,6 +79,6 @@
   "dist-legacy/STRAP-7.62",
   "dist-legacy/STRAP-8.89"
  ],
- "embedding_text": "discrete-diode.strap | Discrete Diode | A cluster of 18 discrete diode parts utilizing STRAP package footprints ranging from STRAP-10.16 to STRAP-24.13. | discrete diode discrete diode strap strap package strap footprint strap-10.16 strap-12.7 strap-15.24 strap-24.13 tier c unknown mount pad mm pitch pins | STRAP | ",
+ "embedding_text": "discrete-diode.strap | Discrete Diode | 18 discrete diode parts using STRAP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | strap discrete diode pad mm pitch pins | STRAP | ",
  "class": "discrete.diode"
 }

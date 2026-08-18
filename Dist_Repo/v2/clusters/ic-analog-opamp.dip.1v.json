@@ -7,42 +7,34 @@
   "Analog",
   "Op-Amp"
  ],
- "description": "This cluster contains 6 through-hole analog operational amplifier ICs with a 1V facet specification in DIP-8 and DIP-14 footprints from Alternate-KiCad-Library.",
+ "description": "6 ic analog op-amp parts for 1V using DIP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when requiring through-hole DIP-8 or DIP-14 W7.62mm LongPads footprints.",
-  "Choose for analog op-amp IC applications categorized with the 1V facet.",
-  "Select from tier A parts sourced from Alternate-KiCad-Library including AD629AN, AD629BN, INA117P, LT1223CN8, or LT1229CN8."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a DIP land pattern is intended."
  ],
  "avoid_when": [
-  "Surface-mount layout is required instead of DIP through-hole mounting.",
-  "The target PCB layout requires footprints other than DIP-8_W7.62mm_LongPads or DIP-14_W7.62mm_LongPads.",
-  "The application requires components outside the IC/Analog/Op-Amp classification."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than DIP."
  ],
  "keywords": [
-  "ic",
-  "analog",
-  "op-amp",
   "dip",
-  "1v",
-  "through_hole",
-  "dip-8",
-  "dip-14",
-  "w7.62mm",
-  "longpads",
-  "alternate-kicad-library",
-  "ad629an",
-  "ad629bn",
-  "ina117p",
-  "lt1223cn8",
-  "lt1229cn8",
   "amplifier",
+  "1v",
   "62mm",
+  "longpads",
   "difference",
   "voltage",
   "operational",
   "akl",
   "high",
-  "offset"
+  "offset",
+  "gain",
+  "alternate",
+  "kicad",
+  "library",
+  "w7"
  ],
  "facts": {
   "package_family": "DIP",
@@ -66,7 +58,7 @@
   "tier_counts": {
    "A": 6
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -118,6 +110,6 @@
   "Alternate-KiCad-Library/Amplifier_Operational_AKL/LT1229CN8",
   "Alternate-KiCad-Library/Amplifier_Operational_AKL/LT1230CN"
  ],
- "embedding_text": "ic-analog-opamp.dip.1v | IC Analog Op-Amp | This cluster contains 6 through-hole analog operational amplifier ICs with a 1V facet specification in DIP-8 and DIP-14 footprints from Alternate-KiCad-Library. | ic analog op-amp dip 1v through_hole dip-8 dip-14 w7.62mm longpads alternate-kicad-library ad629an ad629bn ina117p lt1223cn8 lt1229cn8 amplifier 62mm difference voltage operational akl high offset | DIP | 1V",
+ "embedding_text": "ic-analog-opamp.dip.1v | IC Analog Op-Amp | 6 ic analog op-amp parts for 1V using DIP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | dip amplifier 1v 62mm longpads difference voltage operational akl high offset gain alternate kicad library w7 | DIP | 1V",
  "class": "ic.analog.opamp"
 }

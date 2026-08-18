@@ -7,42 +7,34 @@
   "Power",
   "Converter"
  ],
- "description": "Cluster of 9 tier A through-hole 32V buck DC-DC power converters in the Converter package family using RECOM R-78 THT footprints.",
+ "description": "9 ic power converter parts for buck, 32V using Converter footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select by exact part number for required output rating, such as R-7812-0.5 or R-78B1.8-2.0.",
-  "Verify footprint compatibility with Converter_DCDC_RECOM_R-78B-2.0_THT or Converter_DCDC_RECOM_R-78E-0.5_THT.",
-  "Confirm through-hole mounting and 32V buck converter requirements."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a Converter land pattern is intended."
  ],
  "avoid_when": [
-  "Surface-mount (SMD) packaging is required instead of through-hole (THT).",
-  "A converter topology other than 32V buck is needed.",
-  "The PCB design requires footprint packages other than the supported Converter series."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than Converter."
  ],
  "keywords": [
-  "ic",
-  "power",
+  "dc",
   "converter",
-  "buck",
-  "32v",
-  "through hole",
-  "tht",
   "recom",
   "dcdc",
-  "r-78",
-  "r-78b",
-  "r-78e",
-  "r-7812",
-  "r-7815",
-  "kicad",
-  "dc",
   "step",
   "down",
   "regulator",
+  "32v",
+  "buck",
   "input",
   "fixed",
   "output",
   "voltage",
-  "lm78xx"
+  "lm78xx",
+  "replacement",
+  "to"
  ],
  "facts": {
   "package_family": "Converter",
@@ -67,7 +59,7 @@
   "tier_counts": {
    "A": 9
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -122,6 +114,6 @@
   "kicad-symbols/Converter_DCDC/R-78B5.0-2.0",
   "kicad-symbols/Converter_DCDC/R-78B9.0-2.0"
  ],
- "embedding_text": "ic-power-converter.converter.buck.32v | IC Power Converter | Cluster of 9 tier A through-hole 32V buck DC-DC power converters in the Converter package family using RECOM R-78 THT footprints. | ic power converter buck 32v through hole tht recom dcdc r-78 r-78b r-78e r-7812 r-7815 kicad dc step down regulator input fixed output voltage lm78xx | Converter | buck 32V",
+ "embedding_text": "ic-power-converter.converter.buck.32v | IC Power Converter | 9 ic power converter parts for buck, 32V using Converter footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | dc converter recom dcdc step down regulator 32v buck input fixed output voltage lm78xx replacement to | Converter | buck 32V",
  "class": "ic.power.converter"
 }

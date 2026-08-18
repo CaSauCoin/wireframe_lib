@@ -6,32 +6,24 @@
   "Power",
   "Power Supply"
  ],
- "description": "Surface-mount power supply ICs providing USB, buck, and LDO functions in QFN packages.",
+ "description": "4 power power supply parts for USB, buck, LDO using QFN footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select based on the required package size and pin count, such as QFN-20 or QFN-28 footprints.",
-  "Verify the specific combination of USB, buck regulator, and LDO capabilities needed for the circuit.",
-  "Check exposed pad dimensions and pin-to-pad assignments against the PCB design rules."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a QFN land pattern is intended."
  ],
  "avoid_when": [
-  "The board layout requires through-hole mounting or a package family other than QFN.",
-  "The application does not need USB, buck, or LDO power management features.",
-  "Higher quality tier verification is mandatory for the design."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than QFN."
  ],
  "keywords": [
-  "power supply",
   "qfn",
-  "usb",
-  "buck",
-  "ldo",
-  "smd",
-  "surface mount",
-  "battery management",
-  "ltc3553",
-  "ltc3555",
-  "qfn-20",
-  "qfn-28",
   "power",
+  "usb",
   "dc",
+  "ldo",
+  "buck",
   "battery",
   "management",
   "manager",
@@ -67,7 +59,7 @@
   "tier_counts": {
    "B": 4
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -109,6 +101,6 @@
   "kicad-symbols/Battery_Management/LTC3555-1",
   "kicad-symbols/Battery_Management/LTC3555-3"
  ],
- "embedding_text": "power-supply.qfn.usb.buck | Power Power Supply | Surface-mount power supply ICs providing USB, buck, and LDO functions in QFN packages. | power supply qfn usb buck ldo smd surface mount battery management ltc3553 ltc3555 qfn-20 qfn-28 power dc battery management manager float 1ep p0 65mm nolead pmic supply | QFN | USB buck LDO",
+ "embedding_text": "power-supply.qfn.usb.buck | Power Power Supply | 4 power power supply parts for USB, buck, LDO using QFN footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | qfn power usb dc ldo buck battery management manager float 1ep p0 65mm nolead pmic supply | QFN | USB buck LDO",
  "class": "power.supply"
 }

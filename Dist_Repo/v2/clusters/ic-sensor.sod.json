@@ -6,38 +6,30 @@
   "IC",
   "Sensor"
  ],
- "description": "This cluster contains through-hole IC temperature sensor parts in the SOD package family using the SOD-70_P2.54mm footprint.",
+ "description": "3 ic sensor parts using SOD footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when requiring a through-hole IC temperature sensor in the SOD package family.",
-  "Select when using the SOD-70_P2.54mm footprint.",
-  "Choose specific part entries such as KT100, KTY10, or KTY81 based on design needs."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SOD land pattern is intended."
  ],
  "avoid_when": [
-  "Avoid when surface-mount components are required instead of through-hole mounting.",
-  "Avoid when a footprint other than SOD-70_P2.54mm is needed.",
-  "Avoid when components other than IC temperature sensors are required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SOD."
  ],
  "keywords": [
-  "ic",
-  "sensor",
-  "ic sensor",
-  "temperature sensor",
-  "sod",
-  "sod-70",
-  "sod-70_p2.54mm",
-  "through_hole",
-  "through hole",
-  "kt100",
-  "kty10",
-  "kty81",
-  "2.54mm",
-  "kicad-symbols",
   "temperature",
+  "sod",
+  "sensor",
   "silicon",
   "sensors",
+  "kt100",
+  "kty10",
   "series",
   "p2",
-  "54mm"
+  "54mm",
+  "ic",
+  "kty81"
  ],
  "facts": {
   "package_family": "SOD",
@@ -58,7 +50,7 @@
   "tier_counts": {
    "A": 3
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -91,6 +83,6 @@
   "kicad-symbols/Sensor_Temperature/KTY10",
   "kicad-symbols/Sensor_Temperature/KTY81"
  ],
- "embedding_text": "ic-sensor.sod | IC Sensor | This cluster contains through-hole IC temperature sensor parts in the SOD package family using the SOD-70_P2.54mm footprint. | ic sensor ic sensor temperature sensor sod sod-70 sod-70_p2.54mm through_hole through hole kt100 kty10 kty81 2.54mm kicad-symbols temperature silicon sensors series p2 54mm | SOD | ",
+ "embedding_text": "ic-sensor.sod | IC Sensor | 3 ic sensor parts using SOD footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | temperature sod sensor silicon sensors kt100 kty10 series p2 54mm ic kty81 | SOD | ",
  "class": "ic.sensor"
 }

@@ -6,29 +6,20 @@
   "IC",
   "Sensor"
  ],
- "description": "Surface-mount IC sensor cluster containing SC package family components with SC-59 footprint support.",
+ "description": "1 ic sensor parts using SC footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when requiring surface-mount IC sensors in the SC package family.",
-  "Verify compatibility with the SC-59 land pattern and footprint.",
-  "Confirm Tier A quality status and library source details."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SC land pattern is intended."
  ],
  "avoid_when": [
-  "Avoid if through-hole mounting is required instead of SMD.",
-  "Do not use if the layout requires package families other than SC.",
-  "Avoid when board design requires footprints other than SC-59."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SC."
  ],
  "keywords": [
-  "ic",
-  "sensor",
-  "ic sensor",
   "sc",
-  "sc-59",
-  "smd",
-  "surface mount",
-  "ah1806-w",
-  "kicad symbols",
-  "magnetic sensor",
-  "tier a",
+  "sensor",
   "hall",
   "switch",
   "ah1806",
@@ -37,7 +28,8 @@
   "sensitivity",
   "micropower",
   "omnipolar",
-  "effect"
+  "effect",
+  "ic"
  ],
  "facts": {
   "package_family": "SC",
@@ -58,7 +50,7 @@
   "tier_counts": {
    "A": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -73,6 +65,6 @@
  "part_ids": [
   "kicad-symbols/Sensor_Magnetic/AH1806-W"
  ],
- "embedding_text": "ic-sensor.sc | IC Sensor | Surface-mount IC sensor cluster containing SC package family components with SC-59 footprint support. | ic sensor ic sensor sc sc-59 smd surface mount ah1806-w kicad symbols magnetic sensor tier a hall switch ah1806 magnetic high sensitivity micropower omnipolar effect | SC | ",
+ "embedding_text": "ic-sensor.sc | IC Sensor | 1 ic sensor parts using SC footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | sc sensor hall switch ah1806 magnetic high sensitivity micropower omnipolar effect ic | SC | ",
  "class": "ic.sensor"
 }

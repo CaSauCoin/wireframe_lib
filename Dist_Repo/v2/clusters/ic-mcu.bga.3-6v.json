@@ -6,33 +6,23 @@
   "IC",
   "Microcontroller"
  ],
- "description": "Cluster of 553 surface-mount 3.6V IC microcontrollers in BGA package variants including UFBGA, TFBGA, and LFBGA footprints sourced from KiCad symbols.",
+ "description": "553 ic microcontroller parts for 3.6V using BGA footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select for surface-mount microcontroller applications requiring a 3.6V rating and BGA packaging.",
-  "Verify specific BGA footprint variant, package dimensions, layout grid, and pitch (0.5mm, 0.65mm, or 0.8mm).",
-  "Prioritize 161 tier A parts over tier B parts for higher quality scoring."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a BGA land pattern is intended."
  ],
  "avoid_when": [
-  "Do not use if the design requires non-BGA packages or non-SMD mounting.",
-  "Avoid when operating voltage requirements differ from 3.6V.",
-  "Avoid when a component class other than IC microcontrollers is required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than BGA."
  ],
  "keywords": [
-  "ic",
-  "microcontroller",
   "mcu",
-  "3.6v",
-  "bga",
-  "smd",
-  "ufbga",
-  "tfbga",
-  "lfbga",
-  "stm32f100",
-  "stm32f1",
-  "kicad",
   "arm",
   "cortex",
   "6v",
+  "bga",
   "st",
   "stmicroelectronics",
   "flash",
@@ -40,7 +30,10 @@
   "mhz",
   "gpio",
   "p0",
-  "m4"
+  "ic",
+  "microcontroller",
+  "m4",
+  "ufbga"
  ],
  "facts": {
   "package_family": "BGA",
@@ -75,7 +68,7 @@
    "A": 161,
    "B": 392
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -674,6 +667,6 @@
   "kicad-symbols/MCU_ST_STM32WL/STM32WLE5JBIx",
   "kicad-symbols/MCU_ST_STM32WL/STM32WLE5JCIx"
  ],
- "embedding_text": "ic-mcu.bga.3-6v | IC Microcontroller | Cluster of 553 surface-mount 3.6V IC microcontrollers in BGA package variants including UFBGA, TFBGA, and LFBGA footprints sourced from KiCad symbols. | ic microcontroller mcu 3.6v bga smd ufbga tfbga lfbga stm32f100 stm32f1 kicad arm cortex 6v st stmicroelectronics flash ram mhz gpio p0 m4 | BGA | 3.6V",
+ "embedding_text": "ic-mcu.bga.3-6v | IC Microcontroller | 553 ic microcontroller parts for 3.6V using BGA footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | mcu arm cortex 6v bga st stmicroelectronics flash ram mhz gpio p0 ic microcontroller m4 ufbga | BGA | 3.6V",
  "class": "ic.mcu"
 }

@@ -5,33 +5,23 @@
  "category_path": [
   "IC"
  ],
- "description": "Surface-mount 3V LDO regulator IC cluster containing 8 parts in the SO package family across SO-8 footprints.",
+ "description": "8 ic parts for LDO, 3V using SO footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select between 3.9x4.9mm and 5.3x6.2mm SO-8 footprint dimensions.",
-  "Prefer Tier A rated parts over Tier B entries.",
-  "Confirm compatibility with 3V LDO regulator requirements."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SO land pattern is intended."
  ],
  "avoid_when": [
-  "The design requires package families other than SO.",
-  "Regulator voltage requirements differ from 3V LDO.",
-  "Through-hole mounting is required instead of SMD."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SO."
  ],
  "keywords": [
-  "ic",
-  "ldo",
-  "3v",
   "so",
-  "so-8",
-  "smd",
-  "voltage regulator",
-  "alternate-kicad-library",
-  "3.9x4.9mm",
-  "5.3x6.2mm",
-  "p1.27mm",
-  "adp3301",
-  "lt1763",
   "voltage",
   "regulator",
+  "3v",
+  "ldo",
   "low",
   "dropout",
   "akl",
@@ -40,7 +30,9 @@
   "library",
   "p1",
   "27mm",
-  "vreg"
+  "vreg",
+  "pmic",
+  "ic"
  ],
  "facts": {
   "package_family": "SO",
@@ -66,7 +58,7 @@
    "A": 7,
    "B": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -120,6 +112,6 @@
   "Alternate-KiCad-Library/Voltage_Regulator_AKL/MCP1726T-3002E-SN",
   "Alternate-KiCad-Library/Voltage_Regulator_AKL/LE30CD"
  ],
- "embedding_text": "ic.so.ldo.3v | IC | Surface-mount 3V LDO regulator IC cluster containing 8 parts in the SO package family across SO-8 footprints. | ic ldo 3v so so-8 smd voltage regulator alternate-kicad-library 3.9x4.9mm 5.3x6.2mm p1.27mm adp3301 lt1763 voltage regulator low dropout akl alternate kicad library p1 27mm vreg | SO | LDO 3V",
+ "embedding_text": "ic.so.ldo.3v | IC | 8 ic parts for LDO, 3V using SO footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | so voltage regulator 3v ldo low dropout akl alternate kicad library p1 27mm vreg pmic ic | SO | LDO 3V",
  "class": "ic"
 }

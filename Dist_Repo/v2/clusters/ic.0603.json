@@ -5,42 +5,34 @@
  "category_path": [
   "IC"
  ],
- "description": "Cluster ic.0603 contains 15 tier C SMD parts using 0603 package footprints sourced from dist-legacy and chilaboard-altium-library.",
+ "description": "15 ic parts using 0603 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when an SMD part with a 0603 package family footprint is required.",
-  "Check specific footprints such as CAPC0603X33N, RESC0603X28N, or RESC1608X55N.",
-  "Verify part specifications among the 15 tier C entries from dist-legacy or chilaboard-altium-library."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a 0603 land pattern is intended."
  ],
  "avoid_when": [
-  "Planner-visible parts are required, as planner_visible_count is 0.",
-  "Higher quality tier parts are required, as all 15 parts are tier C.",
-  "The design requires footprint packages other than 0603 variants."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than 0603."
  ],
  "keywords": [
   "ic",
-  "0603",
-  "smd",
-  "tier c",
-  "dist-legacy",
-  "chilaboard-altium-library",
-  "capc0603x33n",
-  "capc1608x90n",
-  "cap_0603",
-  "cap_tant_0603",
-  "fb_0603",
-  "ind_0603",
-  "mwsa0603s",
-  "resc0603x28n",
-  "resc1608x55n",
-  "res_0603",
   "pad",
   "mm",
   "pitch",
   "pins",
   "cap",
   "dioad1608w86l521d272",
+  "capc0603x33n",
+  "capc1608x90n",
   "tant",
-  "fb"
+  "fb",
+  "ind",
+  "mwsa0603s",
+  "resc0603x28n",
+  "resc1608x55n",
+  "res"
  ],
  "facts": {
   "package_family": "0603",
@@ -74,7 +66,7 @@
   "tier_counts": {
    "C": 15
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
@@ -94,6 +86,6 @@
   "chilaboard-altium-library/RP0603X4/RP0603X4",
   "chilaboard-altium-library/RP0603X8/RP0603X8"
  ],
- "embedding_text": "ic.0603 | IC | Cluster ic.0603 contains 15 tier C SMD parts using 0603 package footprints sourced from dist-legacy and chilaboard-altium-library. | ic 0603 smd tier c dist-legacy chilaboard-altium-library capc0603x33n capc1608x90n cap_0603 cap_tant_0603 fb_0603 ind_0603 mwsa0603s resc0603x28n resc1608x55n res_0603 pad mm pitch pins cap dioad1608w86l521d272 tant fb | 0603 | ",
+ "embedding_text": "ic.0603 | IC | 15 ic parts using 0603 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | ic pad mm pitch pins cap dioad1608w86l521d272 capc0603x33n capc1608x90n tant fb ind mwsa0603s resc0603x28n resc1608x55n res | 0603 | ",
  "class": "ic"
 }

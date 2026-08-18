@@ -7,33 +7,24 @@
   "Driver",
   "Display"
  ],
- "description": "Display driver IC cluster featuring surface-mount QFN footprints with 5V, 5.5V, and I2C facets.",
+ "description": "1 ic driver display parts for 5V, I2C, 5.5V using QFN footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Choose when an SMD display driver IC in a QFN package is required.",
-  "Verify compatibility with 5V, 5.5V, and I2C interface facets.",
-  "Confirm footprint match for UQFN-20-1EP_3x3mm_P0.4mm_EP1.7x1.7mm_ThermalVias."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a QFN land pattern is intended."
  ],
  "avoid_when": [
-  "Designs require non-QFN packaging or through-hole mounting.",
-  "Operating requirements do not align with 5V, 5.5V, or I2C specifications.",
-  "Strict Tier A quality classification is required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than QFN."
  ],
  "keywords": [
-  "ic",
   "driver",
-  "display",
-  "ic.driver.display",
-  "display driver",
-  "qfn",
-  "uqfn",
-  "smd",
-  "i2c",
   "5v",
-  "5.5v",
-  "ktd2061xxuac",
-  "uqfn-20",
-  "kicad-symbols",
+  "uqfn",
   "led",
+  "i2c",
+  "ktd2061xxuac",
   "channel",
   "12xrgb",
   "with",
@@ -42,7 +33,8 @@
   "vin",
   "23khz",
   "mux",
-  "frequency"
+  "frequency",
+  "1ep"
  ],
  "facts": {
   "package_family": "QFN",
@@ -67,7 +59,7 @@
   "tier_counts": {
    "B": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -82,6 +74,6 @@
  "part_ids": [
   "kicad-symbols/Driver_LED/KTD2061xxUAC"
  ],
- "embedding_text": "ic-driver-display.qfn.5v.i2c | IC Driver Display | Display driver IC cluster featuring surface-mount QFN footprints with 5V, 5.5V, and I2C facets. | ic driver display ic.driver.display display driver qfn uqfn smd i2c 5v 5.5v ktd2061xxuac uqfn-20 kicad-symbols led channel 12xrgb with control vcc vin 23khz mux frequency | QFN | 5V I2C 5.5V",
+ "embedding_text": "ic-driver-display.qfn.5v.i2c | IC Driver Display | 1 ic driver display parts for 5V, I2C, 5.5V using QFN footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | driver 5v uqfn led i2c ktd2061xxuac channel 12xrgb with control vcc vin 23khz mux frequency 1ep | QFN | 5V I2C 5.5V",
  "class": "ic.driver.display"
 }

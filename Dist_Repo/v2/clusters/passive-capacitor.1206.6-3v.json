@@ -6,32 +6,27 @@
   "Passive",
   "Capacitor"
  ],
- "description": "Passive surface-mount 6.3V capacitors in 1206 package footprints from JLCPCB and Seeed OPL libraries.",
+ "description": "2 passive capacitor parts for 6.3V using 1206 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Match the target footprint variant between C_1206 and C1206.",
-  "Select based on preferred library source between JLCPCB and Seeed OPL.",
-  "Verify required capacitance and dielectric tolerance against part specifications."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a 1206 land pattern is intended."
  ],
  "avoid_when": [
-  "The design requires a voltage rating other than 6.3V.",
-  "A package size other than 1206 is needed.",
-  "Through-hole mounting is required instead of SMD."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than 1206."
  ],
  "keywords": [
-  "passive",
   "capacitor",
-  "1206",
-  "6.3v",
-  "smd",
-  "c_1206",
-  "c1206",
-  "100uf",
-  "ceramic",
-  "x5r",
-  "jlcpcb",
-  "seeed opl",
   "3v",
+  "100uf",
+  "x5r",
+  "ceramic",
   "capacitors",
+  "smd",
+  "passive",
+  "jlcpcb",
   "multilayer",
   "mlcc",
   "smt",
@@ -63,7 +58,7 @@
   "tier_counts": {
    "B": 2
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -87,6 +82,6 @@
   "JLCPCB-Kicad-Library/JLCPCB-Capacitors/1206,100uF",
   "Seeed-OPL-Kicad-Library/OPL_Capacitor/CERAMIC-100UF-6.3V-20%-X5R_1206_"
  ],
- "embedding_text": "passive-capacitor.1206.6-3v | Passive Capacitor | Passive surface-mount 6.3V capacitors in 1206 package footprints from JLCPCB and Seeed OPL libraries. | passive capacitor 1206 6.3v smd c_1206 c1206 100uf ceramic x5r jlcpcb seeed opl 3v capacitors multilayer mlcc smt rohs opl in surface | 1206 | 6.3V",
+ "embedding_text": "passive-capacitor.1206.6-3v | Passive Capacitor | 2 passive capacitor parts for 6.3V using 1206 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | capacitor 3v 100uf x5r ceramic capacitors smd passive jlcpcb multilayer mlcc smt rohs opl in surface | 1206 | 6.3V",
  "class": "passive.capacitor"
 }

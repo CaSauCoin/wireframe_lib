@@ -5,42 +5,34 @@
  "category_path": [
   "IC"
  ],
- "description": "A collection of 25 surface-mount integrated circuits featuring SPI interface functionality in QFN package footprints.",
+ "description": "25 ic parts for SPI using QFN footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when needing surface-mount ICs with SPI functionality in QFN footprints.",
-  "Prefer Tier A parts like ESP32-PICO-V3 over Tier B parts for higher quality scoring.",
-  "Filter by specific footprint requirements such as QFN20, QFN28, QFN32, QFN48, QFN56, QFN64, or QFN68."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a QFN land pattern is intended."
  ],
  "avoid_when": [
-  "Avoid when the PCB design requires through-hole or non-QFN packaging.",
-  "Do not use if SPI interface functionality is not needed.",
-  "Avoid if part requirements strictly demand Tier A quality parts and ESP32-PICO-V3 is not applicable."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than QFN."
  ],
  "keywords": [
-  "ic",
   "spi",
   "qfn",
-  "smd",
-  "qfn50",
-  "qfn40",
-  "esp32-pico-v3",
-  "ads131m04",
-  "ft812",
-  "ft813",
-  "max2771eti+t",
-  "qfn-48",
-  "qfn56",
-  "qfn20",
-  "chilaboard",
-  "espressif",
+  "ic",
   "and",
+  "qfn50",
   "adc",
   "analog",
   "clock",
   "in",
   "package",
   "qfn64",
-  "to"
+  "to",
+  "digital",
+  "converter",
+  "interface",
+  "pin"
  ],
  "facts": {
   "package_family": "QFN",
@@ -74,7 +66,7 @@
    "A": 1,
    "B": 24
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -145,6 +137,6 @@
   "chilaboard-altium-library/AT42QT1245_QFN32/AT42QT1245_QFN32",
   "chilaboard-altium-library/ADS4226_QFN64/ADS4226_QFN64"
  ],
- "embedding_text": "ic.qfn.spi | IC | A collection of 25 surface-mount integrated circuits featuring SPI interface functionality in QFN package footprints. | ic spi qfn smd qfn50 qfn40 esp32-pico-v3 ads131m04 ft812 ft813 max2771eti+t qfn-48 qfn56 qfn20 chilaboard espressif and adc analog clock in package qfn64 to | QFN | SPI",
+ "embedding_text": "ic.qfn.spi | IC | 25 ic parts for SPI using QFN footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | spi qfn ic and qfn50 adc analog clock in package qfn64 to digital converter interface pin | QFN | SPI",
  "class": "ic"
 }

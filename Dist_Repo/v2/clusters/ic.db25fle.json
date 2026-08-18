@@ -5,28 +5,20 @@
  "category_path": [
   "IC"
  ],
- "description": "Cluster of IC parts using the DB25FLE footprint family.",
+ "description": "1 ic parts using DB25FLE footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when a DB25FLE footprint is required.",
-  "Verify part specifications, as electrical ratings are not detailed in cluster facts.",
-  "Confirm part suitability given tier C quality and generated review status."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a DB25FLE land pattern is intended."
  ],
  "avoid_when": [
-  "Avoid when the target layout requires a package family other than DB25FLE.",
-  "Do not use if fully documented electrical or physical dimensions are needed upfront.",
-  "Avoid if tier C or unverified parts are restricted."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than DB25FLE."
  ],
  "keywords": [
   "db25fle",
   "ic",
-  "integrated circuit",
-  "db25fle footprint",
-  "db25fle package",
-  "tier c",
-  "dist-legacy",
-  "unknown mount",
-  "generated review",
-  "package family",
   "pad",
   "mm",
   "pitch",
@@ -51,12 +43,12 @@
   "tier_counts": {
    "C": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
   "dist-legacy/DB25FLE"
  ],
- "embedding_text": "ic.db25fle | IC | Cluster of IC parts using the DB25FLE footprint family. | db25fle ic integrated circuit db25fle footprint db25fle package tier c dist-legacy unknown mount generated review package family pad mm pitch pins | DB25FLE | ",
+ "embedding_text": "ic.db25fle | IC | 1 ic parts using DB25FLE footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | db25fle ic pad mm pitch pins | DB25FLE | ",
  "class": "ic"
 }

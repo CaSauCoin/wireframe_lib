@@ -6,44 +6,34 @@
   "Discrete",
   "Diode"
  ],
- "description": "Cluster of 391 discrete diode parts in the D package family for a 30V facet, spanning SMD and through-hole footprints (SOD, SMA, SMB, SMC, MELF, DO-35 variants) across kicad-symbols, Alternate-KiCad-Library and JLCPCB-Kicad-Library.",
+ "description": "391 discrete diode parts for 30V using D footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Prefer tier A parts (354 of 391) for higher-confidence matches.",
-  "Match the exact D-family footprint (SOD-123/123F/323/323F/523, SMA/SMB/SMC, MELF/MiniMELF, DO-35) to your PCB land pattern.",
-  "Confirm smd vs through_hole mount matches your assembly process before selecting.",
-  "Verify the part name/source meets your actual voltage and current needs beyond the 30V facet."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a D land pattern is intended."
  ],
  "avoid_when": [
-  "The needed footprint is outside this D-family list (e.g. a different package altogether).",
-  "The required voltage is not 30V or is unstated for your application.",
-  "You need verified electrical specs, since review_status is 'generated' and not manually confirmed.",
-  "The board requires a mount type (smd/through_hole) not offered by the chosen part's footprint."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than D."
  ],
  "keywords": [
   "diode",
-  "discrete diode",
   "30v",
-  "d package",
-  "sod-123",
-  "sod-123f",
-  "sod-323",
-  "sod-323f",
-  "sod-523",
-  "sma",
-  "smb",
-  "smc",
-  "melf",
-  "minimelf",
-  "smafl",
-  "do-35",
-  "through hole",
-  "smd",
   "schottky",
   "discrete",
   "sod",
   "akl",
   "alternate",
-  "kicad"
+  "kicad",
+  "library",
+  "do",
+  "zener",
+  "tvs",
+  "horizontal",
+  "sma",
+  "123f",
+  "pin"
  ],
  "facts": {
   "package_family": "D",
@@ -81,7 +71,7 @@
    "A": 354,
    "B": 37
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -518,6 +508,6 @@
   "JLCPCB-Kicad-Library/JLCPCB-Diodes/TVS-Bi,SMF30CA",
   "JLCPCB-Kicad-Library/JLCPCB-Diodes/TVS-Bi,SMF30CA,(2)"
  ],
- "embedding_text": "discrete-diode.d.30v | Discrete Diode | Cluster of 391 discrete diode parts in the D package family for a 30V facet, spanning SMD and through-hole footprints (SOD, SMA, SMB, SMC, MELF, DO-35 variants) across kicad-symbols, Alternate-KiCad-Library and JLCPCB-Kicad-Library. | diode discrete diode 30v d package sod-123 sod-123f sod-323 sod-323f sod-523 sma smb smc melf minimelf smafl do-35 through hole smd schottky discrete sod akl alternate kicad | D | 30V",
+ "embedding_text": "discrete-diode.d.30v | Discrete Diode | 391 discrete diode parts for 30V using D footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | diode 30v schottky discrete sod akl alternate kicad library do zener tvs horizontal sma 123f pin | D | 30V",
  "class": "discrete.diode"
 }

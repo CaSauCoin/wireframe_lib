@@ -7,42 +7,34 @@
   "Power",
   "Linear Regulator"
  ],
- "description": "Surface-mount 1.6V low-dropout (LDO) linear regulator ICs in SOT-23-5 packages.",
+ "description": "4 ic power linear regulator parts for LDO, 1.6V using SOT-23-5 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Requires a 1.6V output LDO linear regulator.",
-  "Use when an SMD SOT-23-5 footprint is specified.",
-  "Confirm specific IC pinout and electrical parameters from individual datasheets."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SOT-23-5 land pattern is intended."
  ],
  "avoid_when": [
-  "Output voltages other than 1.6V are required.",
-  "The PCB layout requires a package family other than SOT-23-5.",
-  "Through-hole mounting or non-LDO regulator topology is needed."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SOT-23-5."
  ],
  "keywords": [
-  "ic",
-  "power",
-  "linear regulator",
-  "ldo",
-  "1.6v",
-  "sot-23-5",
-  "smd",
-  "low dropout",
-  "surface mount",
-  "ape8865y5-16-hf-3",
-  "tps72216",
-  "tps73616dbv",
-  "tps76316",
   "sot",
   "regulator",
   "linear",
   "6v",
+  "ldo",
   "low",
   "fixed",
+  "power",
   "voltage",
   "to",
+  "smd",
+  "ic",
   "dropout",
   "output",
-  "300ma"
+  "300ma",
+  "cap"
  ],
  "facts": {
   "package_family": "SOT-23-5",
@@ -66,7 +58,7 @@
   "tier_counts": {
    "A": 4
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -108,6 +100,6 @@
   "kicad-symbols/Regulator_Linear/TPS73616DBV",
   "kicad-symbols/Regulator_Linear/TPS76316"
  ],
- "embedding_text": "ic-power-ldo.sot-23-5.ldo.1-6v | IC Power Linear Regulator | Surface-mount 1.6V low-dropout (LDO) linear regulator ICs in SOT-23-5 packages. | ic power linear regulator ldo 1.6v sot-23-5 smd low dropout surface mount ape8865y5-16-hf-3 tps72216 tps73616dbv tps76316 sot regulator linear 6v low fixed voltage to dropout output 300ma | SOT-23-5 | LDO 1.6V",
+ "embedding_text": "ic-power-ldo.sot-23-5.ldo.1-6v | IC Power Linear Regulator | 4 ic power linear regulator parts for LDO, 1.6V using SOT-23-5 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | sot regulator linear 6v ldo low fixed power voltage to smd ic dropout output 300ma cap | SOT-23-5 | LDO 1.6V",
  "class": "ic.power.ldo"
 }

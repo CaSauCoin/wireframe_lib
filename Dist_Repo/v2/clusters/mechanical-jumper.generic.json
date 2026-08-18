@@ -6,29 +6,19 @@
   "Mechanical",
   "Jumper"
  ],
- "description": "A cluster of 35 generic mechanical jumper components across quality tiers G and C with package selection deferred and unassigned footprints.",
+ "description": "35 mechanical jumper parts with package chosen later. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Use when a generic mechanical jumper symbol is needed with package and footprint assignment deferred.",
-  "Select among parts from dist-legacy, kicad-symbols, or chilaboard-altium-library sources.",
-  "Assign and verify exact footprint and layout details before PCB finalization."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Select a footprint/package explicitly before placement."
  ],
  "avoid_when": [
-  "A predefined package or fixed footprint is required directly from the library.",
-  "Fully verified tier A parts or complete manufacturer datasheets are required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review."
  ],
  "keywords": [
-  "mechanical jumper",
   "jumper",
   "mechanical",
-  "package chosen later",
-  "generic jumper",
-  "dist-legacy",
-  "kicad-symbols",
-  "chilaboard",
-  "jp6-c1t",
-  "jp9-c1t",
-  "jp_4_tiny",
-  "jp10",
   "package",
   "chosen",
   "later",
@@ -40,7 +30,9 @@
   "jp8",
   "jp6",
   "c2t",
-  "c2c"
+  "c2c",
+  "jp9",
+  "jp10"
  ],
  "facts": {
   "package_family": "package chosen later",
@@ -60,7 +52,7 @@
    "C": 7,
    "G": 28
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -141,6 +133,6 @@
   "dist-legacy/JP9H",
   "chilaboard-altium-library/JP_4_TINY/JP_4_TINY"
  ],
- "embedding_text": "mechanical-jumper.generic | Mechanical Jumper | A cluster of 35 generic mechanical jumper components across quality tiers G and C with package selection deferred and unassigned footprints. | mechanical jumper jumper mechanical package chosen later generic jumper dist-legacy kicad-symbols chilaboard jp6-c1t jp9-c1t jp_4_tiny jp10 package chosen later pins jp4 jp7 jp2 c1t jp8 jp6 c2t c2c | package chosen later | ",
+ "embedding_text": "mechanical-jumper.generic | Mechanical Jumper | 35 mechanical jumper parts with package chosen later. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | jumper mechanical package chosen later pins jp4 jp7 jp2 c1t jp8 jp6 c2t c2c jp9 jp10 | package chosen later | ",
  "class": "mechanical.jumper"
 }

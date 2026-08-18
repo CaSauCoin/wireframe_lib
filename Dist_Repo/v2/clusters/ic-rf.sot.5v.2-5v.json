@@ -6,32 +6,21 @@
   "IC",
   "RF"
  ],
- "description": "RF IC cluster containing surface-mount RF amplifier parts in SOT-363_SC-70-6 footprints associated with 2.5V and 5V facets.",
+ "description": "2 ic rf parts for 5V, 2.5V using SOT footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Selecting surface-mount RF amplifier ICs matching 2.5V or 5V facets.",
-  "Designs requiring SOT package family parts with SOT-363_SC-70-6 footprints.",
-  "Choosing tier A RF IC parts from KiCad symbols."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SOT land pattern is intended."
  ],
  "avoid_when": [
-  "The design requires non-SMD through-hole mounting.",
-  "The layout requires packages other than the SOT package family or SOT-363_SC-70-6 footprint.",
-  "Applications operating outside 2.5V or 5V facet specifications."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SOT."
  ],
  "keywords": [
-  "ic",
-  "rf",
-  "ic.rf",
   "sot",
+  "rf",
   "5v",
-  "2.5v",
-  "smd",
-  "sot-363_sc-70-6",
-  "sot-363",
-  "sc-70-6",
-  "rf amplifier",
-  "bga2870",
-  "bga2874",
-  "kicad-symbols",
   "sc",
   "amplifier",
   "mmic",
@@ -39,9 +28,12 @@
   "dc",
   "2ghz",
   "to",
+  "smd",
   "us6",
   "umt6",
-  "mini6"
+  "mini6",
+  "tssop6",
+  "gain"
  ],
  "facts": {
   "package_family": "SOT",
@@ -65,7 +57,7 @@
   "tier_counts": {
    "A": 2
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -89,6 +81,6 @@
   "kicad-symbols/RF_Amplifier/BGA2870",
   "kicad-symbols/RF_Amplifier/BGA2874"
  ],
- "embedding_text": "ic-rf.sot.5v.2-5v | IC RF | RF IC cluster containing surface-mount RF amplifier parts in SOT-363_SC-70-6 footprints associated with 2.5V and 5V facets. | ic rf ic.rf sot 5v 2.5v smd sot-363_sc-70-6 sot-363 sc-70-6 rf amplifier bga2870 bga2874 kicad-symbols sc amplifier mmic wideband dc 2ghz to us6 umt6 mini6 | SOT | 5V 2.5V",
+ "embedding_text": "ic-rf.sot.5v.2-5v | IC RF | 2 ic rf parts for 5V, 2.5V using SOT footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | sot rf 5v sc amplifier mmic wideband dc 2ghz to smd us6 umt6 mini6 tssop6 gain | SOT | 5V 2.5V",
  "class": "ic.rf"
 }

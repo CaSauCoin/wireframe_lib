@@ -6,28 +6,21 @@
   "Discrete",
   "Diode"
  ],
- "description": "Discrete diode cluster containing 1 quality tier C part using the CNP package family and footprint.",
+ "description": "1 discrete diode parts using CNP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when a discrete diode in the CNP package family or footprint is needed.",
-  "Verify part parameters as the cluster consists of a single tier C part.",
-  "Confirm mounting requirements since the mount type is listed as unknown."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a CNP land pattern is intended."
  ],
  "avoid_when": [
-  "The design requires a package family or footprint other than CNP.",
-  "Higher quality tiers or human-reviewed entries are required.",
-  "Planner-visible entries are needed, as planner visible count is 0."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than CNP."
  ],
  "keywords": [
   "cnp",
   "discrete",
   "diode",
-  "discrete diode",
-  "cnp package",
-  "cnp footprint",
-  "discrete.diode",
-  "dist-legacy",
-  "tier c",
-  "quality tier c",
   "pad",
   "mm",
   "pitch",
@@ -52,12 +45,12 @@
   "tier_counts": {
    "C": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
   "dist-legacy/CNP"
  ],
- "embedding_text": "discrete-diode.cnp | Discrete Diode | Discrete diode cluster containing 1 quality tier C part using the CNP package family and footprint. | cnp discrete diode discrete diode cnp package cnp footprint discrete.diode dist-legacy tier c quality tier c pad mm pitch pins | CNP | ",
+ "embedding_text": "discrete-diode.cnp | Discrete Diode | 1 discrete diode parts using CNP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | cnp discrete diode pad mm pitch pins | CNP | ",
  "class": "discrete.diode"
 }

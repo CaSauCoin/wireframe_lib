@@ -6,27 +6,21 @@
   "Discrete",
   "Diode"
  ],
- "description": "Discrete diode cluster containing 3 tier-C parts associated with CN3 and CN3-B footprints.",
+ "description": "3 discrete diode parts using CN3 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when a CN3 or CN3-B footprint is required.",
-  "Verify part specifications, as electrical facets and mounting types are unstated.",
-  "Check source data and tier-C rating prior to selection."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a CN3 land pattern is intended."
  ],
  "avoid_when": [
-  "The PCB design requires a package family other than CN3.",
-  "Planner-visible or higher quality tier parts are required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than CN3."
  ],
  "keywords": [
+  "cn3",
   "discrete",
   "diode",
-  "discrete diode",
-  "cn3",
-  "cn3-b",
-  "discrete.diode",
-  "package family cn3",
-  "footprint cn3",
-  "footprint cn3-b",
-  "tier c",
   "pitch",
   "mm",
   "capacitor",
@@ -61,7 +55,7 @@
   "tier_counts": {
    "C": 3
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
@@ -69,6 +63,6 @@
   "dist-legacy/CN3",
   "dist-legacy/CN3-B"
  ],
- "embedding_text": "discrete-diode.cn3 | Discrete Diode | Discrete diode cluster containing 3 tier-C parts associated with CN3 and CN3-B footprints. | discrete diode discrete diode cn3 cn3-b discrete.diode package family cn3 footprint cn3 footprint cn3-b tier c pitch mm capacitor duplicate land pattern pad pins bare pin through hole 62mm | CN3 | ",
+ "embedding_text": "discrete-diode.cn3 | Discrete Diode | 3 discrete diode parts using CN3 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | cn3 discrete diode pitch mm capacitor duplicate land pattern pad pins bare pin through hole 62mm | CN3 | ",
  "class": "discrete.diode"
 }

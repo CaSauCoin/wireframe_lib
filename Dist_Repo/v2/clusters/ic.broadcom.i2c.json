@@ -5,32 +5,26 @@
  "category_path": [
   "IC"
  ],
- "description": "This cluster contains surface-mount integrated circuits (ICs) featuring an I2C interface and Broadcom APDS-9301 footprints.",
+ "description": "1 ic parts for I2C using Broadcom footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when requiring surface-mount (SMD) I2C ICs.",
-  "Verify land pattern compatibility with Broadcom APDS-9301 footprints.",
-  "Review component quality tier and sourcing details before PCB design commitment."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a Broadcom land pattern is intended."
  ],
  "avoid_when": [
-  "Through-hole mounting or non-SMD assembly is required.",
-  "The design requires a communication interface other than I2C.",
-  "The board layout cannot accept the Broadcom APDS-9301 package footprint."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than Broadcom."
  ],
  "keywords": [
   "broadcom",
-  "i2c",
-  "ic",
-  "smd",
-  "surface mount",
-  "apds-9301",
-  "broadcom_apds-9301",
-  "package",
-  "footprint",
-  "integrated circuit",
   "apds",
+  "ic",
+  "package",
   "ambient",
   "light",
   "sensor",
+  "i2c",
   "chipled",
   "docs",
   "surface",
@@ -61,12 +55,12 @@
   "tier_counts": {
    "C": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
   "dist-legacy/Broadcom_APDS-9301"
  ],
- "embedding_text": "ic.broadcom.i2c | IC | This cluster contains surface-mount integrated circuits (ICs) featuring an I2C interface and Broadcom APDS-9301 footprints. | broadcom i2c ic smd surface mount apds-9301 broadcom_apds-9301 package footprint integrated circuit apds ambient light sensor chipled docs surface mount pad mm pitch pins | Broadcom | I2C",
+ "embedding_text": "ic.broadcom.i2c | IC | 1 ic parts for I2C using Broadcom footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | broadcom apds ic package ambient light sensor i2c chipled docs surface mount pad mm pitch pins | Broadcom | I2C",
  "class": "ic"
 }

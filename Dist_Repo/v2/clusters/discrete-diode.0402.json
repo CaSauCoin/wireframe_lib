@@ -6,36 +6,30 @@
   "Discrete",
   "Diode"
  ],
- "description": "Cluster of 16 surface-mount discrete diode parts using 0402 package family footprints across quality tiers A, B, and C.",
+ "description": "16 discrete diode parts using 0402 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Prefer Tier A or Tier B parts when higher quality ranking is required.",
-  "Select based on exact footprint variants such as LED-0402, C_0402_1005Metric, or D_0402_1005Metric.",
-  "Use when surface-mount 0402 package family parts are needed."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a 0402 land pattern is intended."
  ],
  "avoid_when": [
-  "Layout requires package sizes or footprint families other than 0402.",
-  "Through-hole mounting is required instead of surface-mount.",
-  "Components other than discrete diodes are required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than 0402."
  ],
  "keywords": [
   "diode",
   "discrete",
-  "0402",
-  "smd",
   "1005metric",
-  "led-0402",
-  "tvs",
-  "led",
-  "c_0402_1005metric",
-  "d_0402_1005metric",
-  "d_01005_0402metric",
   "handsolder",
+  "smd",
   "pad0",
   "pad",
   "fuse",
   "mm",
   "pitch",
   "pins",
+  "led",
   "star",
   "0402metric",
   "77x0",
@@ -76,7 +70,7 @@
    "B": 2,
    "C": 13
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -122,6 +116,6 @@
   "dist-legacy/MouseBite-Slot-Jumper_01005",
   "dist-legacy/D_0402"
  ],
- "embedding_text": "discrete-diode.0402 | Discrete Diode | Cluster of 16 surface-mount discrete diode parts using 0402 package family footprints across quality tiers A, B, and C. | diode discrete 0402 smd 1005metric led-0402 tvs led c_0402_1005metric d_0402_1005metric d_01005_0402metric handsolder pad0 pad fuse mm pitch pins star 0402metric 77x0 64mm | 0402 | ",
+ "embedding_text": "discrete-diode.0402 | Discrete Diode | 16 discrete diode parts using 0402 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | diode discrete 1005metric handsolder smd pad0 pad fuse mm pitch pins led star 0402metric 77x0 64mm | 0402 | ",
  "class": "discrete.diode"
 }

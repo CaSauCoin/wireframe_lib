@@ -6,34 +6,25 @@
   "IC",
   "Analog"
  ],
- "description": "Analog IC cluster containing 87 surface-mount (SMD) parts in the MSOP package family across standard tier A footprint variants.",
+ "description": "87 ic analog parts using MSOP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Choose when requiring surface-mount (SMD) analog integrated circuits in MSOP packages.",
-  "Select based on footprint pitch (0.5mm or 0.65mm) and pin count (8, 10, or 16 pins).",
-  "Verify specific footprint requirements such as exposed pad dimensions (EP1.651x2.845mm)."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a MSOP land pattern is intended."
  ],
  "avoid_when": [
-  "The design requires through-hole or non-SMD mounting.",
-  "The required component footprint is not an MSOP package family variation.",
-  "The target design requires digital or non-analog IC components."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than MSOP."
  ],
  "keywords": [
-  "ic",
-  "analog",
   "msop",
-  "smd",
-  "msop-8",
-  "msop-10",
-  "msop-16-1ep",
-  "surface mount",
-  "p0.65mm",
-  "p0.5mm",
-  "3x3mm",
-  "kicad-symbols",
-  "alternate-kicad-library",
+  "analog",
   "comparator",
   "dual",
   "p0",
+  "3x3mm",
+  "ic",
   "so",
   "65mm",
   "akl",
@@ -41,7 +32,8 @@
   "delay",
   "offset",
   "alternate",
-  "kicad"
+  "kicad",
+  "library"
  ],
  "facts": {
   "package_family": "MSOP",
@@ -65,7 +57,7 @@
   "tier_counts": {
    "A": 87
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -198,6 +190,6 @@
   "kicad-symbols/Analog_Switch/MAX324CUA",
   "kicad-symbols/Analog_Switch/MAX325CUA"
  ],
- "embedding_text": "ic-analog.msop | IC Analog | Analog IC cluster containing 87 surface-mount (SMD) parts in the MSOP package family across standard tier A footprint variants. | ic analog msop smd msop-8 msop-10 msop-16-1ep surface mount p0.65mm p0.5mm 3x3mm kicad-symbols alternate-kicad-library comparator dual p0 so 65mm akl propagation delay offset alternate kicad | MSOP | ",
+ "embedding_text": "ic-analog.msop | IC Analog | 87 ic analog parts using MSOP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | msop analog comparator dual p0 3x3mm ic so 65mm akl propagation delay offset alternate kicad library | MSOP | ",
  "class": "ic.analog"
 }

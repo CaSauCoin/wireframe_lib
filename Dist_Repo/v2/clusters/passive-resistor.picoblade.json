@@ -6,28 +6,21 @@
   "Passive",
   "Resistor"
  ],
- "description": "Passive resistor cluster containing SMD parts with PICOBLADE package family footprints such as PICOBLADE_2.",
+ "description": "1 passive resistor parts using PICOBLADE footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Verify footprint compatibility with the PICOBLADE_2 land pattern.",
-  "Confirm electrical parameters and ratings prior to design integration.",
-  "Check library source details and part quality tier before selection."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a PICOBLADE land pattern is intended."
  ],
  "avoid_when": [
-  "A standard chip resistor package is required instead of PICOBLADE.",
-  "Through-hole mounting is needed rather than SMD.",
-  "Design rules require fully reviewed or higher-tier qualified components."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than PICOBLADE."
  ],
  "keywords": [
   "picoblade",
-  "picoblade_2",
   "passive",
   "resistor",
-  "passive resistor",
-  "smd",
-  "surface mount",
-  "chilaboard",
-  "footprint",
-  "package",
   "surface",
   "mount",
   "pad",
@@ -54,12 +47,12 @@
   "tier_counts": {
    "C": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
   "chilaboard-altium-library/PICOBLADE_2/PICOBLADE_2"
  ],
- "embedding_text": "passive-resistor.picoblade | Passive Resistor | Passive resistor cluster containing SMD parts with PICOBLADE package family footprints such as PICOBLADE_2. | picoblade picoblade_2 passive resistor passive resistor smd surface mount chilaboard footprint package surface mount pad mm pitch pins | PICOBLADE | ",
+ "embedding_text": "passive-resistor.picoblade | Passive Resistor | 1 passive resistor parts using PICOBLADE footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | picoblade passive resistor surface mount pad mm pitch pins | PICOBLADE | ",
  "class": "passive.resistor"
 }

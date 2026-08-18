@@ -5,33 +5,22 @@
  "category_path": [
   "IC"
  ],
- "description": "Surface-mount LDO integrated circuit cluster in MSOP packages containing 11 parts across 8-pin and 12-pin footprints from Alternate-KiCad-Library.",
+ "description": "11 ic parts for LDO using MSOP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when surface-mount LDO voltage regulators in MSOP packages are required.",
-  "Choose between standard MSOP-8, MSOP-8 with exposed pad, or MSOP-12 exposed pad footprints.",
-  "Filter by quality tier, favoring the 9 tier-A parts available from Alternate-KiCad-Library."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a MSOP land pattern is intended."
  ],
  "avoid_when": [
-  "Do not use when through-hole mounting is required.",
-  "Avoid when package family footprints other than MSOP are required.",
-  "Avoid if non-LDO integrated circuit functions are needed."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than MSOP."
  ],
  "keywords": [
   "msop",
-  "ldo",
-  "ic",
-  "surface mount",
-  "smd",
-  "msop-8",
-  "msop-12",
-  "voltage regulator",
-  "alternate-kicad-library",
-  "adp1720armz",
-  "lt1521cms8",
-  "lt1762ems8",
-  "lt1962ems8",
   "voltage",
   "regulator",
+  "ldo",
   "adjustable",
   "low",
   "dropout",
@@ -40,7 +29,10 @@
   "kicad",
   "library",
   "p0",
-  "65mm"
+  "65mm",
+  "so",
+  "vreg",
+  "pmic"
  ],
  "facts": {
   "package_family": "MSOP",
@@ -66,7 +58,7 @@
    "A": 9,
    "B": 2
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -123,6 +115,6 @@
   "Alternate-KiCad-Library/Voltage_Regulator_AKL/LT3015EMSE",
   "Alternate-KiCad-Library/Voltage_Regulator_AKL/LT3015IMSE"
  ],
- "embedding_text": "ic.msop.ldo | IC | Surface-mount LDO integrated circuit cluster in MSOP packages containing 11 parts across 8-pin and 12-pin footprints from Alternate-KiCad-Library. | msop ldo ic surface mount smd msop-8 msop-12 voltage regulator alternate-kicad-library adp1720armz lt1521cms8 lt1762ems8 lt1962ems8 voltage regulator adjustable low dropout akl alternate kicad library p0 65mm | MSOP | LDO",
+ "embedding_text": "ic.msop.ldo | IC | 11 ic parts for LDO using MSOP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | msop voltage regulator ldo adjustable low dropout akl alternate kicad library p0 65mm so vreg pmic | MSOP | LDO",
  "class": "ic"
 }

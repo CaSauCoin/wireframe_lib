@@ -6,35 +6,30 @@
   "Passive",
   "Inductor"
  ],
- "description": "Surface-mount coupled inductor and choke symbols for USB applications matching Choke_100MHz_USB footprints from KiCad symbol libraries.",
+ "description": "30 passive inductor parts for USB using Choke footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when designing USB circuits requiring SMD choke or coupled inductor symbols.",
-  "Verify the pin arrangement matches the specific coupled inductor variant.",
-  "Confirm compatibility with the Choke_100MHz_USB footprint."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a Choke land pattern is intended."
  ],
  "avoid_when": [
-  "Through-hole mounting or non-SMD packages are required.",
-  "The board layout requires a footprint other than Choke_100MHz_USB.",
-  "A standard single-winding inductor is needed instead of a coupled choke."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than Choke."
  ],
  "keywords": [
-  "passive",
-  "inductor",
-  "passive inductor",
   "choke",
-  "usb",
-  "smd",
-  "choke_100mhz_usb",
-  "l_coupled",
   "coupled",
-  "kicad",
-  "100mhz",
+  "inductor",
+  "usb",
   "device",
+  "100mhz",
   "sparkfun",
   "transformer",
   "coil",
   "reactor",
   "magnetic",
+  "passive",
   "small",
   "ferrite",
   "with",
@@ -61,7 +56,7 @@
   "tier_counts": {
    "B": 30
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -137,6 +132,6 @@
   "kicad-symbols/Device/L_Iron_Coupled_Small_1342",
   "kicad-symbols/Device/L_Iron_Coupled_Small_1423"
  ],
- "embedding_text": "passive-inductor.choke.usb | Passive Inductor | Surface-mount coupled inductor and choke symbols for USB applications matching Choke_100MHz_USB footprints from KiCad symbol libraries. | passive inductor passive inductor choke usb smd choke_100mhz_usb l_coupled coupled kicad 100mhz device sparkfun transformer coil reactor magnetic small ferrite with core | Choke | USB",
+ "embedding_text": "passive-inductor.choke.usb | Passive Inductor | 30 passive inductor parts for USB using Choke footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | choke coupled inductor usb device 100mhz sparkfun transformer coil reactor magnetic passive small ferrite with core | Choke | USB",
  "class": "passive.inductor"
 }

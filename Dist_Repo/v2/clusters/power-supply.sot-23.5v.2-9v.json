@@ -6,29 +6,20 @@
   "Power",
   "Power Supply"
  ],
- "description": "Surface-mount power supply components in the SOT-23 package family with TSOT-23-6 footprints, specified for 5V and 2.9V ratings.",
+ "description": "1 power power supply parts for 5V, 2.9V using SOT-23 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Verify compatibility with the TSOT-23-6 footprint and SMD mounting requirements.",
-  "Confirm circuit requirements match 5V and 2.9V voltage facets.",
-  "Select tier A verified parts such as TP4057 from KiCad symbol libraries."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SOT-23 land pattern is intended."
  ],
  "avoid_when": [
-  "The board design requires through-hole components or non-SOT-23 packages.",
-  "Operating voltage requirements fall outside the 5V and 2.9V specifications.",
-  "The target PCB layout cannot accommodate a 6-pin TSOT-23-6 land pattern."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SOT-23."
  ],
  "keywords": [
-  "power supply",
-  "power",
-  "sot-23",
-  "tsot-23-6",
-  "smd",
-  "5v",
-  "2.9v",
-  "tp4057",
-  "battery management",
-  "kicad-symbols",
   "constant",
+  "5v",
   "to",
   "tsot",
   "battery",
@@ -41,7 +32,8 @@
   "lithium",
   "ion",
   "9v",
-  "sot"
+  "sot",
+  "power"
  ],
  "facts": {
   "package_family": "SOT-23",
@@ -65,7 +57,7 @@
   "tier_counts": {
    "A": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -80,6 +72,6 @@
  "part_ids": [
   "kicad-symbols/Battery_Management/TP4057"
  ],
- "embedding_text": "power-supply.sot-23.5v.2-9v | Power Power Supply | Surface-mount power supply components in the SOT-23 package family with TSOT-23-6 footprints, specified for 5V and 2.9V ratings. | power supply power sot-23 tsot-23-6 smd 5v 2.9v tp4057 battery management kicad-symbols constant to tsot battery current voltage linear charger single cell lithium ion 9v sot | SOT-23 | 5V 2.9V",
+ "embedding_text": "power-supply.sot-23.5v.2-9v | Power Power Supply | 1 power power supply parts for 5V, 2.9V using SOT-23 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | constant 5v to tsot battery current voltage linear charger single cell lithium ion 9v sot power | SOT-23 | 5V 2.9V",
  "class": "power.supply"
 }

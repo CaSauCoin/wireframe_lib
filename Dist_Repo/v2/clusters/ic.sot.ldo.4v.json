@@ -5,42 +5,34 @@
  "category_path": [
   "IC"
  ],
- "description": "Surface-mount 4V low-dropout (LDO) regulator ICs in SOT package options including SOT-89-3, SOT-223-3_TabPin2, and SOT-353_SC-70-5.",
+ "description": "4 ic parts for LDO, 4V using SOT footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Match the required footprint among SOT-89-3, SOT-223-3_TabPin2, or SOT-353_SC-70-5.",
-  "Select when requiring a 4V low-dropout (LDO) surface-mount regulator IC.",
-  "Choose based on specific part numbers such as MCP1702T-4002E-MB, MCP1703T, or ZXCL400H5TA."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SOT land pattern is intended."
  ],
  "avoid_when": [
-  "Through-hole mounting is required instead of surface-mount (SMD).",
-  "The design requires an output voltage other than 4V or non-LDO regulation.",
-  "The PCB layout requires package footprints outside the SOT family."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SOT."
  ],
  "keywords": [
-  "ic",
-  "ldo",
-  "4v",
   "sot",
-  "smd",
-  "voltage regulator",
-  "low dropout",
-  "sot-89-3",
-  "sot-223-3",
-  "sot-353",
-  "sc-70-5",
-  "mcp1702t",
-  "mcp1703t",
-  "zxcl400h5ta",
   "voltage",
   "regulator",
+  "4v",
   "low",
   "dropout",
+  "ldo",
   "250ma",
   "terminal",
   "akl",
   "alternate",
   "kicad",
-  "library"
+  "library",
+  "vreg",
+  "pmic",
+  "power"
  ],
  "facts": {
   "package_family": "SOT",
@@ -66,7 +58,7 @@
   "tier_counts": {
    "A": 4
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -108,6 +100,6 @@
   "Alternate-KiCad-Library/Voltage_Regulator_AKL/MCP1703T-4002E-MB",
   "Alternate-KiCad-Library/Voltage_Regulator_AKL/ZXCL400H5TA"
  ],
- "embedding_text": "ic.sot.ldo.4v | IC | Surface-mount 4V low-dropout (LDO) regulator ICs in SOT package options including SOT-89-3, SOT-223-3_TabPin2, and SOT-353_SC-70-5. | ic ldo 4v sot smd voltage regulator low dropout sot-89-3 sot-223-3 sot-353 sc-70-5 mcp1702t mcp1703t zxcl400h5ta voltage regulator low dropout 250ma terminal akl alternate kicad library | SOT | LDO 4V",
+ "embedding_text": "ic.sot.ldo.4v | IC | 4 ic parts for LDO, 4V using SOT footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | sot voltage regulator 4v low dropout ldo 250ma terminal akl alternate kicad library vreg pmic power | SOT | LDO 4V",
  "class": "ic"
 }

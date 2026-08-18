@@ -5,34 +5,23 @@
  "category_path": [
   "Connector"
  ],
- "description": "Through-hole BT-family connector cluster with 2 parts (BT_CONN_XT30R, BT_CONN_XT30V footprints) from chilaboard-altium-library, both tier C and generated (not yet reviewed).",
+ "description": "2 connector parts using BT footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Match the exact footprint variant: BT_CONN_XT30R vs BT_CONN_XT30V",
-  "Confirm through-hole mounting fits the board layout",
-  "Verify pin-to-pad mapping before committing, since parts are tier C and generated",
-  "Check source trust (chilaboard-altium-library) before use"
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a BT land pattern is intended."
  ],
  "avoid_when": [
-  "A non-BT footprint or SMD mounting is required",
-  "Reviewed, higher-tier parts with confirmed pinout are needed",
-  "Electrical ratings must be verified but are not stated by the part",
-  "Symbol-footprint pairing has not been checked against the design"
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than BT."
  ],
  "keywords": [
   "bt",
-  "connector",
   "conn",
   "xt30r",
   "xt30v",
-  "bt_conn_xt30r",
-  "bt_conn_xt30v",
-  "through hole",
-  "through-hole",
-  "package family bt",
-  "chilaboard",
-  "altium library",
-  "tier c",
-  "generated",
+  "connector",
   "through",
   "hole",
   "pad",
@@ -60,13 +49,13 @@
   "tier_counts": {
    "C": 2
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
   "chilaboard-altium-library/BT_CONN_XT30R/BT_CONN_XT30R",
   "chilaboard-altium-library/BT_CONN_XT30V/BT_CONN_XT30V"
  ],
- "embedding_text": "connector.bt | Connector | Through-hole BT-family connector cluster with 2 parts (BT_CONN_XT30R, BT_CONN_XT30V footprints) from chilaboard-altium-library, both tier C and generated (not yet reviewed). | bt connector conn xt30r xt30v bt_conn_xt30r bt_conn_xt30v through hole through-hole package family bt chilaboard altium library tier c generated through hole pad mm pitch pins | BT | ",
+ "embedding_text": "connector.bt | Connector | 2 connector parts using BT footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | bt conn xt30r xt30v connector through hole pad mm pitch pins | BT | ",
  "class": "connector"
 }

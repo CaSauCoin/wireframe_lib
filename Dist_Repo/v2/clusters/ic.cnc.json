@@ -5,31 +5,21 @@
  "category_path": [
   "IC"
  ],
- "description": "IC component cluster in the CNC package family supporting surface-mount, through-hole, and unspecified mounting options.",
+ "description": "4 ic parts using CNC footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Confirm the exact footprint match such as CNC TECH 1002-021-01000 or CNC Tech 3221-10-0300-00.",
-  "Choose between surface-mount and through-hole mounting configurations as needed.",
-  "Evaluate part suitability considering tier C quality status and source provenance."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a CNC land pattern is intended."
  ],
  "avoid_when": [
-  "The target design requires a package family other than CNC.",
-  "Designs mandate higher quality tiers or planner-visible parts.",
-  "Unspecified mounting options are unverified for the intended design."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than CNC."
  ],
  "keywords": [
   "cnc",
-  "cnc tech",
-  "ic",
-  "integrated circuit",
-  "smd",
-  "surface mount",
-  "through hole",
-  "1002-021-01000",
-  "3221-10-0300-00",
-  "celestial-altium-library",
-  "dist-legacy",
-  "cnc package",
   "tech",
+  "ic",
   "pad",
   "mm",
   "pitch",
@@ -63,7 +53,7 @@
   "tier_counts": {
    "C": 4
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
@@ -72,6 +62,6 @@
   "celestial-altium-library/CNC TECH 1002-021-01000/CNC_TECH_1002-021-01000",
   "celestial-altium-library/CNC Tech 3221-10-0300-00/CNC_Tech_3221-10-0300-00"
  ],
- "embedding_text": "ic.cnc | IC | IC component cluster in the CNC package family supporting surface-mount, through-hole, and unspecified mounting options. | cnc cnc tech ic integrated circuit smd surface mount through hole 1002-021-01000 3221-10-0300-00 celestial-altium-library dist-legacy cnc package tech pad mm pitch pins through hole surface mount | CNC | ",
+ "embedding_text": "ic.cnc | IC | 4 ic parts using CNC footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | cnc tech ic pad mm pitch pins through hole surface mount | CNC | ",
  "class": "ic"
 }

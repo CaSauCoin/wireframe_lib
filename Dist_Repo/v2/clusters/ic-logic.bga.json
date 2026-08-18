@@ -6,33 +6,22 @@
   "IC",
   "Logic"
  ],
- "description": "Surface-mount BGA logic ICs from KiCad symbols featuring DSBGA-6 and DSBGA-8 footprints.",
+ "description": "5 ic logic parts using BGA footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select tier A parts for higher quality scoring when available.",
-  "Match the required pin count and footprint between DSBGA-6 and DSBGA-8 options.",
-  "Confirm surface-mount BGA packaging suits the board layout."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a BGA land pattern is intended."
  ],
  "avoid_when": [
-  "Through-hole or non-BGA packaging is required.",
-  "Footprints other than DSBGA-6 or DSBGA-8 are needed.",
-  "Components outside the logic IC category are required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than BGA."
  ],
  "keywords": [
-  "ic logic",
-  "bga",
   "dsbga",
-  "smd",
-  "logic",
-  "level translator",
-  "sn74lvc2t45yzp",
-  "txb0102yzp",
-  "txs0102yzp",
-  "txb0101yzp",
-  "txs0101yzp",
-  "dsbga-6",
-  "dsbga-8",
-  "kicad",
   "texas",
+  "logic",
+  "bga",
   "level",
   "voltage",
   "shifter",
@@ -41,7 +30,10 @@
   "translation",
   "and",
   "9x1",
-  "p0"
+  "p0",
+  "5mm",
+  "instruments",
+  "yzp"
  ],
  "facts": {
   "package_family": "BGA",
@@ -64,7 +56,7 @@
    "A": 3,
    "B": 2
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -115,6 +107,6 @@
   "kicad-symbols/Logic_LevelTranslator/TXB0101YZP",
   "kicad-symbols/Logic_LevelTranslator/TXS0101YZP"
  ],
- "embedding_text": "ic-logic.bga | IC Logic | Surface-mount BGA logic ICs from KiCad symbols featuring DSBGA-6 and DSBGA-8 footprints. | ic logic bga dsbga smd logic level translator sn74lvc2t45yzp txb0102yzp txs0102yzp txb0101yzp txs0101yzp dsbga-6 dsbga-8 kicad texas level voltage shifter leveltranslator bit translation and 9x1 p0 | BGA | ",
+ "embedding_text": "ic-logic.bga | IC Logic | 5 ic logic parts using BGA footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | dsbga texas logic bga level voltage shifter leveltranslator bit translation and 9x1 p0 5mm instruments yzp | BGA | ",
  "class": "ic.logic"
 }

@@ -7,42 +7,34 @@
   "Resistor",
   "Array"
  ],
- "description": "Passive resistor array components in dual in-line package (DIP) footprints for through-hole and surface-mount mounting.",
+ "description": "88 passive resistor array parts using DIP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Match the required pin count and DIP footprint such as DIP-8, DIP-14, DIP-16, DIP-18, or DIP-20.",
-  "Verify the internal resistor network configuration such as bussed connections.",
-  "Select based on mounting type between through-hole and SMD DIP footprints."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a DIP land pattern is intended."
  ],
  "avoid_when": [
-  "A single discrete resistor is required instead of a multi-resistor array.",
-  "The layout requires packages other than DIP footprints.",
-  "Specific electrical ratings or circuit topologies are not supported by the available DIP network parts."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than DIP."
  ],
  "keywords": [
-  "passive",
-  "resistor array",
-  "resistor network",
   "dip",
-  "dual in-line package",
-  "bussed",
-  "through hole",
-  "smd",
-  "dip-8",
-  "dip-14",
-  "dip-16",
-  "dip-18",
-  "dip-20",
   "resistor",
   "network",
   "isolated",
   "us",
+  "passive",
   "array",
   "parallel",
   "generic",
   "62mm",
   "longpads",
   "akl",
-  "symbol"
+  "symbol",
+  "alternate",
+  "kicad",
+  "library"
  ],
  "facts": {
   "package_family": "DIP",
@@ -77,7 +69,7 @@
    "A": 40,
    "B": 48
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -211,6 +203,6 @@
   "Alternate-KiCad-Library/Resistor_AKL/R_Pack_x9_Sep_Generic",
   "Alternate-KiCad-Library/Resistor_US_AKL/R_Pack_x9_Sep_Generic"
  ],
- "embedding_text": "passive-resistor-array.dip | Passive Resistor Array | Passive resistor array components in dual in-line package (DIP) footprints for through-hole and surface-mount mounting. | passive resistor array resistor network dip dual in-line package bussed through hole smd dip-8 dip-14 dip-16 dip-18 dip-20 resistor network isolated us array parallel generic 62mm longpads akl symbol | DIP | ",
+ "embedding_text": "passive-resistor-array.dip | Passive Resistor Array | 88 passive resistor array parts using DIP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | dip resistor network isolated us passive array parallel generic 62mm longpads akl symbol alternate kicad library | DIP | ",
  "class": "passive.resistor.array"
 }

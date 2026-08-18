@@ -6,44 +6,34 @@
   "Discrete",
   "Diode"
  ],
- "description": "Cluster of 23 SMD discrete diodes rated 75V in SOT-family footprints (e.g. SOT-143, SOT-323, SOT-363, SOT-523), sourced mainly from the Alternate-KiCad-Library.",
+ "description": "23 discrete diode parts for 75V using SOT footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Prefer tier A entries (17 of 23) for higher confidence",
-  "Match the exact SOT footprint variant (e.g. SOT-143 vs SOT-363_SC-70-6) to your PCB land pattern",
-  "Confirm 75V rating meets your circuit's actual voltage requirement",
-  "Note review_status is 'generated', so verify symbol-footprint pairing before use"
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SOT land pattern is intended."
  ],
  "avoid_when": [
-  "Required voltage exceeds 75V or the part's other electrical limits are unstated",
-  "Board layout needs a non-SOT package (e.g. DO-214, SOD, axial)",
-  "Through-hole mounting is needed, since all parts here are SMD",
-  "A tier B part is being used without independently checking its data"
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SOT."
  ],
  "keywords": [
-  "diode",
-  "discrete diode",
   "sot",
+  "diode",
   "75v",
-  "smd diode",
-  "sot-143",
-  "sot-323",
-  "sc-70",
-  "sot-363",
-  "sot-523",
-  "sot-343",
-  "sot-89-3",
-  "sot-223-3",
-  "sot-1123",
-  "alternate kicad library",
-  "jlcpcb kicad library",
-  "akl diode",
-  "surface mount diode",
   "discrete",
   "akl",
   "alternate",
   "kicad",
   "library",
-  "sc"
+  "sc",
+  "dual",
+  "small",
+  "signal",
+  "4ns",
+  "switching",
+  "fast",
+  "independent"
  ],
  "facts": {
   "package_family": "SOT",
@@ -76,7 +66,7 @@
    "A": 17,
    "B": 6
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -145,6 +135,6 @@
   "Alternate-KiCad-Library/Diode_AKL/NSD914F3T5G",
   "JLCPCB-Kicad-Library/2828435/Package, BAV99DW_KJG"
  ],
- "embedding_text": "discrete-diode.sot.75v | Discrete Diode | Cluster of 23 SMD discrete diodes rated 75V in SOT-family footprints (e.g. SOT-143, SOT-323, SOT-363, SOT-523), sourced mainly from the Alternate-KiCad-Library. | diode discrete diode sot 75v smd diode sot-143 sot-323 sc-70 sot-363 sot-523 sot-343 sot-89-3 sot-223-3 sot-1123 alternate kicad library jlcpcb kicad library akl diode surface mount diode discrete akl alternate kicad library sc | SOT | 75V",
+ "embedding_text": "discrete-diode.sot.75v | Discrete Diode | 23 discrete diode parts for 75V using SOT footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | sot diode 75v discrete akl alternate kicad library sc dual small signal 4ns switching fast independent | SOT | 75V",
  "class": "discrete.diode"
 }

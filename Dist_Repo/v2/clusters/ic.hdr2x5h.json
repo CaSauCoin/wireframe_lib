@@ -5,27 +5,20 @@
  "category_path": [
   "IC"
  ],
- "description": "IC cluster containing 1 tier C part associated with the HDR2X5H footprint family.",
+ "description": "1 ic parts using HDR2X5H footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Use when a component requiring an HDR2X5H footprint is specified.",
-  "Check exact footprint and part specifications prior to board layout.",
-  "Verify part suitability given the legacy source origin and tier C quality classification."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a HDR2X5H land pattern is intended."
  ],
  "avoid_when": [
-  "The design requires a package footprint other than HDR2X5H.",
-  "Fully verified footprint dimensions or electrical parameters are mandatory.",
-  "Tier A verified parts with documented pinouts are required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than HDR2X5H."
  ],
  "keywords": [
-  "ic",
   "hdr2x5h",
-  "hdr2x5h footprint",
-  "package family hdr2x5h",
-  "dist-legacy",
-  "tier c",
-  "unknown mount",
-  "ic category",
-  "component cluster",
+  "ic",
   "pad",
   "mm",
   "pitch",
@@ -50,12 +43,12 @@
   "tier_counts": {
    "C": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
   "dist-legacy/HDR2X5H"
  ],
- "embedding_text": "ic.hdr2x5h | IC | IC cluster containing 1 tier C part associated with the HDR2X5H footprint family. | ic hdr2x5h hdr2x5h footprint package family hdr2x5h dist-legacy tier c unknown mount ic category component cluster pad mm pitch pins | HDR2X5H | ",
+ "embedding_text": "ic.hdr2x5h | IC | 1 ic parts using HDR2X5H footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | hdr2x5h ic pad mm pitch pins | HDR2X5H | ",
  "class": "ic"
 }

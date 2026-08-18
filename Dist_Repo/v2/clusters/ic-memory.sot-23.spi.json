@@ -6,42 +6,34 @@
   "IC",
   "Memory"
  ],
- "description": "SPI memory IC cluster containing surface-mount EEPROM components in SOT23_6 packages from the chilaboard-altium-library source.",
+ "description": "3 ic memory parts for SPI using SOT-23 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when needing an SPI interface surface-mount EEPROM in a SOT23_6 footprint.",
-  "Choose when sourcing Tier B quality parts from chilaboard-altium-library.",
-  "Suitable for designs requiring 93AA46, 93AA56, or 93XX series SPI memory components."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SOT-23 land pattern is intended."
  ],
  "avoid_when": [
-  "Avoid if a package family other than SOT-23 or footprint other than SOT23_6 is required.",
-  "Avoid when memory interfaces other than SPI are needed.",
-  "Avoid if Tier A parts or sources outside chilaboard-altium-library are required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SOT-23."
  ],
  "keywords": [
-  "ic memory",
-  "spi memory",
   "eeprom",
-  "sot-23",
-  "sot23_6",
-  "smd",
-  "surface mount",
-  "93aa46",
-  "93aa56",
-  "93xx",
-  "chilaboard-altium-library",
-  "spi eeprom",
   "spi",
   "sot23",
   "memory",
   "serial",
   "ic",
   "sot",
+  "93aa56",
+  "93aa46",
   "in",
   "pin",
   "package",
   "with",
   "data",
-  "surface"
+  "surface",
+  "mount"
  ],
  "facts": {
   "package_family": "SOT-23",
@@ -64,7 +56,7 @@
   "tier_counts": {
    "B": 3
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -97,6 +89,6 @@
   "chilaboard-altium-library/EEPROM_SPI_93AA56_SOT23/EEPROM_SPI_93AA56_SOT23",
   "chilaboard-altium-library/EEPROM_SPI_93XX_SOT23/EEPROM_SPI_93XX_SOT23"
  ],
- "embedding_text": "ic-memory.sot-23.spi | IC Memory | SPI memory IC cluster containing surface-mount EEPROM components in SOT23_6 packages from the chilaboard-altium-library source. | ic memory spi memory eeprom sot-23 sot23_6 smd surface mount 93aa46 93aa56 93xx chilaboard-altium-library spi eeprom spi sot23 memory serial ic sot in pin package with data surface | SOT-23 | SPI",
+ "embedding_text": "ic-memory.sot-23.spi | IC Memory | 3 ic memory parts for SPI using SOT-23 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | eeprom spi sot23 memory serial ic sot 93aa56 93aa46 in pin package with data surface mount | SOT-23 | SPI",
  "class": "ic.memory"
 }

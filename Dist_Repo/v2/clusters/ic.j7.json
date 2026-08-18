@@ -5,28 +5,21 @@
  "category_path": [
   "IC"
  ],
- "description": "This IC cluster contains legacy parts in the J7 package family utilizing the J7-C2T footprint.",
+ "description": "1 ic parts using J7 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Verify part specifications and footprint mapping for Tier C legacy entries.",
-  "Use when a J7 or J7-C2T land pattern is required.",
-  "Check electrical ratings and package details prior to layout."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a J7 land pattern is intended."
  ],
  "avoid_when": [
-  "The design requires package families other than J7.",
-  "Electrical parameters or pinout details are unconfirmed.",
-  "Unverified legacy parts without full documentation cannot be used."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than J7."
  ],
  "keywords": [
-  "ic",
   "j7",
-  "j7-c2t",
   "c2t",
-  "j7 package",
-  "j7 footprint",
-  "integrated circuit",
-  "dist-legacy",
-  "tier c",
-  "package family j7",
+  "ic",
   "pad",
   "mm",
   "pitch",
@@ -51,12 +44,12 @@
   "tier_counts": {
    "C": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
   "dist-legacy/J7-C2T"
  ],
- "embedding_text": "ic.j7 | IC | This IC cluster contains legacy parts in the J7 package family utilizing the J7-C2T footprint. | ic j7 j7-c2t c2t j7 package j7 footprint integrated circuit dist-legacy tier c package family j7 pad mm pitch pins | J7 | ",
+ "embedding_text": "ic.j7 | IC | 1 ic parts using J7 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | j7 c2t ic pad mm pitch pins | J7 | ",
  "class": "ic"
 }

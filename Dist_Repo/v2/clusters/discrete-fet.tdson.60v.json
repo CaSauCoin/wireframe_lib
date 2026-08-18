@@ -6,31 +6,21 @@
   "Discrete",
   "FET"
  ],
- "description": "This cluster contains 11 Tier A surface-mount 60V discrete FET components using the TDSON-8-1 footprint from KiCad symbols.",
+ "description": "11 discrete fet parts for 60V using TDSON footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when requiring a surface-mount 60V discrete FET.",
-  "Choose when the PCB design uses the TDSON-8-1 footprint.",
-  "Use when selecting from Tier A KiCad symbol parts such as BSC028N06LS3 or CSD18531Q5A."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a TDSON land pattern is intended."
  ],
  "avoid_when": [
-  "A voltage rating other than 60V is required.",
-  "The application requires a package or footprint other than TDSON or TDSON-8-1.",
-  "Through-hole mounting is required instead of surface mount."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than TDSON."
  ],
  "keywords": [
-  "discrete",
-  "fet",
-  "discrete fet",
-  "60v",
   "tdson",
-  "tdson-8-1",
-  "smd",
-  "kicad-symbols",
-  "bsc028n06ls3",
-  "csd18531q5a",
-  "csd18532nq5b",
-  "csd18532q5b",
-  "csd18533q5a",
+  "fet",
+  "60v",
   "mosfet",
   "power",
   "nexfet",
@@ -39,9 +29,11 @@
   "vds",
   "channel",
   "ron",
+  "discrete",
   "son8",
   "5x6mm",
-  "qg"
+  "qg",
+  "typ"
  ],
  "facts": {
   "package_family": "TDSON",
@@ -64,7 +56,7 @@
   "tier_counts": {
    "A": 11
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -121,6 +113,6 @@
   "kicad-symbols/Transistor_FET/FDMS86550",
   "kicad-symbols/Transistor_FET/FDMS86550ET60"
  ],
- "embedding_text": "discrete-fet.tdson.60v | Discrete FET | This cluster contains 11 Tier A surface-mount 60V discrete FET components using the TDSON-8-1 footprint from KiCad symbols. | discrete fet discrete fet 60v tdson tdson-8-1 smd kicad-symbols bsc028n06ls3 csd18531q5a csd18532nq5b csd18532q5b csd18533q5a mosfet power nexfet transistor id vds channel ron son8 5x6mm qg | TDSON | 60V",
+ "embedding_text": "discrete-fet.tdson.60v | Discrete FET | 11 discrete fet parts for 60V using TDSON footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | tdson fet 60v mosfet power nexfet transistor id vds channel ron discrete son8 5x6mm qg typ | TDSON | 60V",
  "class": "discrete.fet"
 }

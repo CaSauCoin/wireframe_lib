@@ -5,42 +5,34 @@
  "category_path": [
   "IC"
  ],
- "description": "Cluster of 12 integrated circuit (IC) parts with TDK package footprints supporting surface-mount and through-hole mounting.",
+ "description": "12 ic parts using TDK footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when requiring IC components with TDK package footprints like T5838, ICS-40720, or ACM 2520-3P.",
-  "Verify quality tiers and source libraries, noting 1 tier B part and 11 tier C parts.",
-  "Match specific mounting requirements between SMD and through-hole footprint variants."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a TDK land pattern is intended."
  ],
  "avoid_when": [
-  "The board layout requires package families other than TDK.",
-  "Detailed pinouts, electrical ratings, or datasheet specs not present in cluster metadata are required.",
-  "Only tier A rated parts are acceptable for the design."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than TDK."
  ],
  "keywords": [
   "tdk",
-  "ic",
-  "integrated circuit",
-  "t5838",
-  "ics-40720",
-  "ics-40740",
-  "ics-40619",
-  "ics-40730",
-  "acm 2520-3p",
-  "smd",
-  "through hole",
-  "celestial altium library",
   "ics",
+  "ic",
   "pins",
   "pad",
   "mm",
   "pitch",
+  "t5838",
   "acm",
   "3p",
   "through",
   "hole",
   "pin",
   "integrated",
-  "circuit"
+  "circuit",
+  "select"
  ],
  "facts": {
   "package_family": "TDK",
@@ -71,7 +63,7 @@
    "B": 1,
    "C": 11
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -97,6 +89,6 @@
   "celestial-altium-library/TDK ICS-40619/TDK_ICS-40619",
   "celestial-altium-library/TDK ICS-40730/TDK_ICS-40730"
  ],
- "embedding_text": "ic.tdk | IC | Cluster of 12 integrated circuit (IC) parts with TDK package footprints supporting surface-mount and through-hole mounting. | tdk ic integrated circuit t5838 ics-40720 ics-40740 ics-40619 ics-40730 acm 2520-3p smd through hole celestial altium library ics pins pad mm pitch acm 3p through hole pin integrated circuit | TDK | ",
+ "embedding_text": "ic.tdk | IC | 12 ic parts using TDK footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | tdk ics ic pins pad mm pitch t5838 acm 3p through hole pin integrated circuit select | TDK | ",
  "class": "ic"
 }

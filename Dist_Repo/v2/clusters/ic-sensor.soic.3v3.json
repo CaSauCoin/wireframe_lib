@@ -6,42 +6,34 @@
   "IC",
   "Sensor"
  ],
- "description": "Cluster of 45 Tier A surface-mount 3.3V sensor IC parts in SOIC footprints sourced from KiCad symbols.",
+ "description": "45 ic sensor parts for 3.3V using SOIC footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when a surface-mount 3.3V sensor IC in a SOIC package is required.",
-  "Choose for designs using SOIC-8 or SOIC-16W footprints.",
-  "Use when selecting Tier A rated parts from the KiCad symbols library."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SOIC land pattern is intended."
  ],
  "avoid_when": [
-  "The layout requires through-hole components rather than SMD.",
-  "The design requires a package family other than SOIC.",
-  "The required operating voltage is not 3.3V."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SOIC."
  ],
  "keywords": [
-  "ic",
   "sensor",
-  "3.3v",
   "soic",
-  "smd",
-  "soic-8",
-  "soic-16w",
-  "kicad-symbols",
-  "acs710xlatr",
-  "ic.sensor",
-  "soic-8_3.9x4.9mm_p1.27mm",
-  "soic-16w_7.5x10.3mm_p1.27mm",
   "current",
   "3v",
   "hall",
   "effect",
   "16w",
+  "ic",
   "supply",
   "p1",
   "27mm",
   "so",
   "isolated",
   "monitor",
-  "bidirectional"
+  "bidirectional",
+  "5x10"
  ],
  "facts": {
   "package_family": "SOIC",
@@ -65,7 +57,7 @@
   "tier_counts": {
    "A": 45
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -156,6 +148,6 @@
   "kicad-symbols/Sensor_Current/MCA1101-5-3",
   "kicad-symbols/Sensor_Current/MCA1101-50-3"
  ],
- "embedding_text": "ic-sensor.soic.3v3 | IC Sensor | Cluster of 45 Tier A surface-mount 3.3V sensor IC parts in SOIC footprints sourced from KiCad symbols. | ic sensor 3.3v soic smd soic-8 soic-16w kicad-symbols acs710xlatr ic.sensor soic-8_3.9x4.9mm_p1.27mm soic-16w_7.5x10.3mm_p1.27mm current 3v hall effect 16w supply p1 27mm so isolated monitor bidirectional | SOIC | 3.3V",
+ "embedding_text": "ic-sensor.soic.3v3 | IC Sensor | 45 ic sensor parts for 3.3V using SOIC footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | sensor soic current 3v hall effect 16w ic supply p1 27mm so isolated monitor bidirectional 5x10 | SOIC | 3.3V",
  "class": "ic.sensor"
 }

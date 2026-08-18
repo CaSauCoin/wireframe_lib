@@ -5,34 +5,24 @@
  "category_path": [
   "IC"
  ],
- "description": "Cluster of 2 IC parts in the WEMOS package family with through-hole mounting, featuring WEMOS_D1_mini_light and WEMOS_C3_mini footprints.",
+ "description": "2 ic parts using WEMOS footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when a through-hole IC in the WEMOS package family is required.",
-  "Choose between WEMOS_D1_mini_light and WEMOS_C3_mini footprints based on PCB layout requirements.",
-  "Verify part suitability given tier C quality classification and generated review status."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a WEMOS land pattern is intended."
  ],
  "avoid_when": [
-  "The layout requires a package family other than WEMOS.",
-  "Through-hole mounting is not supported by the PCB assembly process.",
-  "The design requires footprints other than WEMOS_D1_mini_light or WEMOS_C3_mini."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than WEMOS."
  ],
  "keywords": [
   "wemos",
-  "ic",
-  "through_hole",
-  "through hole",
-  "wemos_d1_mini_light",
-  "wemos_c3_mini",
-  "d1 mini light",
-  "c3 mini",
-  "wemos mini",
-  "integrated circuit",
-  "tier c",
-  "dist-legacy",
   "mini",
   "d1",
   "c3",
   "light",
+  "ic",
   "mm",
   "https",
   "through",
@@ -40,7 +30,9 @@
   "pad",
   "pitch",
   "pins",
-  "package"
+  "package",
+  "pin",
+  "module"
  ],
  "facts": {
   "package_family": "WEMOS",
@@ -62,13 +54,13 @@
   "tier_counts": {
    "C": 2
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
   "dist-legacy/WEMOS_D1_mini_light",
   "dist-legacy/WEMOS_C3_mini"
  ],
- "embedding_text": "ic.wemos | IC | Cluster of 2 IC parts in the WEMOS package family with through-hole mounting, featuring WEMOS_D1_mini_light and WEMOS_C3_mini footprints. | wemos ic through_hole through hole wemos_d1_mini_light wemos_c3_mini d1 mini light c3 mini wemos mini integrated circuit tier c dist-legacy mini d1 c3 light mm https through hole pad pitch pins package | WEMOS | ",
+ "embedding_text": "ic.wemos | IC | 2 ic parts using WEMOS footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | wemos mini d1 c3 light ic mm https through hole pad pitch pins package pin module | WEMOS | ",
  "class": "ic"
 }

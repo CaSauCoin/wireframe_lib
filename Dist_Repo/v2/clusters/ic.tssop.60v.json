@@ -5,32 +5,21 @@
  "category_path": [
   "IC"
  ],
- "description": "Surface-mount 60V IC cluster containing 5 power management parts in HTSSOP-16-1EP and HTSSOP-20-1EP package options.",
+ "description": "5 ic parts for 60V using TSSOP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select based on footprint requirements between HTSSOP-16-1EP and HTSSOP-20-1EP.",
-  "Prefer tier A parts for higher quality rating.",
-  "Ensure compatibility with 0.65mm pitch SMD land patterns and thermal pads."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a TSSOP land pattern is intended."
  ],
  "avoid_when": [
-  "Through-hole or non-SMD mounting is required.",
-  "Package requirements differ from HTSSOP-16-1EP or HTSSOP-20-1EP footprint options.",
-  "A 60V rated IC is not specified for the design."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than TSSOP."
  ],
  "keywords": [
-  "ic",
-  "tssop",
+  "current",
   "htssop",
   "60v",
-  "smd",
-  "power management",
-  "htssop-16-1ep",
-  "htssop-20-1ep",
-  "tps26600pwp",
-  "tps26602pwp",
-  "tps26631pwp",
-  "tps26633pwp",
-  "tps26636pwp",
-  "current",
   "limiting",
   "efuse",
   "power",
@@ -40,7 +29,10 @@
   "management",
   "industrial",
   "overvoltage",
-  "active"
+  "active",
+  "with",
+  "1ep",
+  "p0"
  ],
  "facts": {
   "package_family": "TSSOP",
@@ -65,7 +57,7 @@
    "A": 2,
    "B": 3
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -116,6 +108,6 @@
   "kicad-symbols/Power_Management/TPS26633PWP",
   "kicad-symbols/Power_Management/TPS26636PWP"
  ],
- "embedding_text": "ic.tssop.60v | IC | Surface-mount 60V IC cluster containing 5 power management parts in HTSSOP-16-1EP and HTSSOP-20-1EP package options. | ic tssop htssop 60v smd power management htssop-16-1ep htssop-20-1ep tps26600pwp tps26602pwp tps26631pwp tps26633pwp tps26636pwp current limiting efuse power protection 4x6 5mm management industrial overvoltage active | TSSOP | 60V",
+ "embedding_text": "ic.tssop.60v | IC | 5 ic parts for 60V using TSSOP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | current htssop 60v limiting efuse power protection 4x6 5mm management industrial overvoltage active with 1ep p0 | TSSOP | 60V",
  "class": "ic"
 }

@@ -5,39 +5,34 @@
  "category_path": [
   "IC"
  ],
- "description": "IC cluster for I2C components with through-hole mounting in the HDR package family using HDR_F_1X10 footprints.",
+ "description": "1 ic parts for I2C using HDR footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select for I2C IC components using through-hole mounting.",
-  "Choose when an HDR_F_1X10 footprint is specified.",
-  "Verify part specifications for Tier B entries from chilaboard-altium-library."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a HDR land pattern is intended."
  ],
  "avoid_when": [
-  "Surface mount technology (SMT/SMD) is required.",
-  "Footprints other than HDR_F_1X10 are required.",
-  "Interfaces other than I2C are needed."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than HDR."
  ],
  "keywords": [
-  "ic",
-  "i2c",
-  "hdr",
-  "hdr_f_1x10",
-  "through_hole",
-  "sens_gy-80",
-  "gy-80",
   "sensor",
-  "module",
-  "accelerometer",
-  "magnetometer",
-  "pressure",
   "gy",
+  "module",
+  "i2c",
   "sens",
   "and",
+  "hdr",
   "multi",
   "featuring",
   "interface",
   "interrupt",
   "outputs",
-  "for"
+  "for",
+  "accelerometer",
+  "magnetometer",
+  "pressure"
  ],
  "facts": {
   "package_family": "HDR",
@@ -60,7 +55,7 @@
   "tier_counts": {
    "B": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -75,6 +70,6 @@
  "part_ids": [
   "chilaboard-altium-library/SENS_GY-80/SENS_GY-80"
  ],
- "embedding_text": "ic.hdr.i2c | IC | IC cluster for I2C components with through-hole mounting in the HDR package family using HDR_F_1X10 footprints. | ic i2c hdr hdr_f_1x10 through_hole sens_gy-80 gy-80 sensor module accelerometer magnetometer pressure gy sens and multi featuring interface interrupt outputs for | HDR | I2C",
+ "embedding_text": "ic.hdr.i2c | IC | 1 ic parts for I2C using HDR footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | sensor gy module i2c sens and hdr multi featuring interface interrupt outputs for accelerometer magnetometer pressure | HDR | I2C",
  "class": "ic"
 }

@@ -6,40 +6,34 @@
   "Discrete",
   "FET"
  ],
- "description": "Discrete surface-mount GaN FET cluster containing 3 KiCad symbol library tier B parts with GaNPX footprints.",
+ "description": "3 discrete fet parts using GaN footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when needing surface-mount GaN FET symbols with GaNPX footprints.",
-  "Choose among specific GaNPX-3 and GaNPX-4 footprint variations.",
-  "Verify fit for parts sourced from KiCad transistor symbol libraries."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a GaN land pattern is intended."
  ],
  "avoid_when": [
-  "Through-hole mounting or non-SMD design is required.",
-  "Packages other than the listed GaNPX footprints are required.",
-  "Parts higher than tier B quality rating are strictly required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than GaN."
  ],
  "keywords": [
-  "discrete",
-  "fet",
   "gan",
-  "smd",
-  "ganpx",
   "transistor",
-  "gs66502b",
-  "gs66504b",
-  "gs66508b",
-  "gan systems",
-  "kicad symbols",
-  "surface mount",
+  "fet",
   "bottom",
   "side",
   "cooled",
   "mode",
+  "ganpx",
   "id",
   "6mm",
   "px",
   "systems",
   "hemt",
-  "enhancement"
+  "enhancement",
+  "discrete",
+  "gs66502b"
  ],
  "facts": {
   "package_family": "GaN",
@@ -62,7 +56,7 @@
   "tier_counts": {
    "B": 3
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -95,6 +89,6 @@
   "kicad-symbols/Transistor_FET/GS66504B",
   "kicad-symbols/Transistor_FET/GS66508B"
  ],
- "embedding_text": "discrete-fet.gan | Discrete FET | Discrete surface-mount GaN FET cluster containing 3 KiCad symbol library tier B parts with GaNPX footprints. | discrete fet gan smd ganpx transistor gs66502b gs66504b gs66508b gan systems kicad symbols surface mount bottom side cooled mode id 6mm px systems hemt enhancement | GaN | ",
+ "embedding_text": "discrete-fet.gan | Discrete FET | 3 discrete fet parts using GaN footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | gan transistor fet bottom side cooled mode ganpx id 6mm px systems hemt enhancement discrete gs66502b | GaN | ",
  "class": "discrete.fet"
 }

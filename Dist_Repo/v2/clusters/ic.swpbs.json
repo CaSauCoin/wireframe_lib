@@ -5,28 +5,21 @@
  "category_path": [
   "IC"
  ],
- "description": "IC cluster in the SWPBS package family with surface-mount footprints including SWPBS_SPDT_6X6X4, SWPBS_SPDT_6X6X5TS, and SWPBS_SPDT_6X6X7TS.",
+ "description": "3 ic parts using SWPBS footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Match the layout requirement to the SWPBS package family.",
-  "Select based on the required footprint variant among SWPBS_SPDT_6X6X4, SWPBS_SPDT_6X6X5TS, or SWPBS_SPDT_6X6X7TS.",
-  "Verify acceptance of quality tier C components from chilaboard-altium-library."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SWPBS land pattern is intended."
  ],
  "avoid_when": [
-  "Avoid if a non-SMD or through-hole mounting type is required.",
-  "Avoid if the board layout requires a package family other than SWPBS.",
-  "Do not use if quality tier C parts or planner-invisible entries are not allowed."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SWPBS."
  ],
  "keywords": [
-  "ic",
   "swpbs",
-  "smd",
   "spdt",
-  "surface mount",
-  "swpbs_spdt_6x6x4",
-  "swpbs_spdt_6x6x5ts",
-  "swpbs_spdt_6x6x7ts",
-  "chilaboard-altium-library",
-  "tier c",
+  "ic",
   "6x6x4",
   "6x6x5ts",
   "6x6x7ts",
@@ -58,7 +51,7 @@
   "tier_counts": {
    "C": 3
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
@@ -66,6 +59,6 @@
   "chilaboard-altium-library/SWPBS_SPDT_6X6X5TS/SWPBS_SPDT_6X6X5TS",
   "chilaboard-altium-library/SWPBS_SPDT_6X6X7TS/SWPBS_SPDT_6X6X7TS"
  ],
- "embedding_text": "ic.swpbs | IC | IC cluster in the SWPBS package family with surface-mount footprints including SWPBS_SPDT_6X6X4, SWPBS_SPDT_6X6X5TS, and SWPBS_SPDT_6X6X7TS. | ic swpbs smd spdt surface mount swpbs_spdt_6x6x4 swpbs_spdt_6x6x5ts swpbs_spdt_6x6x7ts chilaboard-altium-library tier c 6x6x4 6x6x5ts 6x6x7ts surface mount pad mm pitch pins | SWPBS | ",
+ "embedding_text": "ic.swpbs | IC | 3 ic parts using SWPBS footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | swpbs spdt ic 6x6x4 6x6x5ts 6x6x7ts surface mount pad mm pitch pins | SWPBS | ",
  "class": "ic"
 }

@@ -6,34 +6,21 @@
   "Discrete",
   "Diode"
  ],
- "description": "Cluster of 6 surface-mount 100V discrete diodes featuring Nexperia CFP3 SOD-123W and CFP15 SOT-1289 footprints with Tier A and Tier B quality parts.",
+ "description": "6 discrete diode parts for 100V using Nexperia footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select based on footprint requirements between Nexperia CFP3 SOD-123W and CFP15 SOT-1289.",
-  "Prefer Tier A parts such as PMEG10010ELR, PMEG10020AELR, or PMEG10020ELR over Tier B parts.",
-  "Use when requiring a 100V surface-mount discrete diode from KiCad symbols."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a Nexperia land pattern is intended."
  ],
  "avoid_when": [
-  "Through-hole mounting is required instead of surface-mount (SMD).",
-  "Package footprints other than Nexperia CFP3 SOD-123W or CFP15 SOT-1289 are required.",
-  "Voltage ratings other than 100V are needed."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than Nexperia."
  ],
  "keywords": [
   "diode",
-  "discrete",
-  "discrete diode",
   "100v",
-  "smd",
   "nexperia",
-  "cfp3",
-  "sod-123w",
-  "cfp15",
-  "sot-1289",
-  "pmeg10010elr",
-  "pmeg10020aelr",
-  "pmeg10020elr",
-  "pmeg100v060elpd",
-  "pmeg100v080elpd",
-  "kicad",
   "sod",
   "123w",
   "sot",
@@ -41,7 +28,12 @@
   "leakage",
   "current",
   "mega",
-  "schottky"
+  "schottky",
+  "barrier",
+  "rectifier",
+  "cfp3",
+  "ir",
+  "discrete"
  ],
  "facts": {
   "package_family": "Nexperia",
@@ -66,7 +58,7 @@
    "A": 3,
    "B": 3
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -118,6 +110,6 @@
   "kicad-symbols/Diode/PMEG100V080ELPD",
   "kicad-symbols/Diode/PMEG100V100ELPD"
  ],
- "embedding_text": "discrete-diode.nexperia.100v | Discrete Diode | Cluster of 6 surface-mount 100V discrete diodes featuring Nexperia CFP3 SOD-123W and CFP15 SOT-1289 footprints with Tier A and Tier B quality parts. | diode discrete discrete diode 100v smd nexperia cfp3 sod-123w cfp15 sot-1289 pmeg10010elr pmeg10020aelr pmeg10020elr pmeg100v060elpd pmeg100v080elpd kicad sod 123w sot low leakage current mega schottky | Nexperia | 100V",
+ "embedding_text": "discrete-diode.nexperia.100v | Discrete Diode | 6 discrete diode parts for 100V using Nexperia footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | diode 100v nexperia sod 123w sot low leakage current mega schottky barrier rectifier cfp3 ir discrete | Nexperia | 100V",
  "class": "discrete.diode"
 }

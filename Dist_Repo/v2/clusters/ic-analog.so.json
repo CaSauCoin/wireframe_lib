@@ -6,33 +6,23 @@
   "IC",
   "Analog"
  ],
- "description": "Analog IC cluster containing 189 surface-mount parts in SO package footprints across quality tiers A and B.",
+ "description": "189 ic analog parts using SO footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when needing surface-mount analog ICs in SO footprints.",
-  "Check required footprint size such as SO-8, SO-14, SO-16, SO_18, or SO_24.",
-  "Filter by library source and tier A quality status."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SO land pattern is intended."
  ],
  "avoid_when": [
-  "Avoid if the design requires non-SO package families or through-hole mounting.",
-  "Avoid when specific package dimensions or pitch do not match the SO footprint variants in this cluster."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SO."
  ],
  "keywords": [
-  "ic",
-  "analog",
   "so",
-  "smd",
-  "so-8",
-  "so-14",
-  "so-16",
-  "so_18",
-  "so_24",
-  "p1.27mm",
-  "ltc1594cs",
-  "ad603ar",
-  "ad790jr",
-  "ad8015ar",
+  "analog",
   "comparator",
   "dual",
+  "ic",
   "akl",
   "alternate",
   "kicad",
@@ -40,7 +30,10 @@
   "p1",
   "27mm",
   "voltage",
-  "offset"
+  "offset",
+  "9x4",
+  "9mm",
+  "propagation"
  ],
  "facts": {
   "package_family": "SO",
@@ -68,7 +61,7 @@
    "A": 169,
    "B": 20
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -303,6 +296,6 @@
   "Alternate-KiCad-Library/Analog_Comparator_AKL/TLC3704CNS",
   "Alternate-KiCad-Library/Analog_Comparator_AKL/TLC374CNS"
  ],
- "embedding_text": "ic-analog.so | IC Analog | Analog IC cluster containing 189 surface-mount parts in SO package footprints across quality tiers A and B. | ic analog so smd so-8 so-14 so-16 so_18 so_24 p1.27mm ltc1594cs ad603ar ad790jr ad8015ar comparator dual akl alternate kicad library p1 27mm voltage offset | SO | ",
+ "embedding_text": "ic-analog.so | IC Analog | 189 ic analog parts using SO footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | so analog comparator dual ic akl alternate kicad library p1 27mm voltage offset 9x4 9mm propagation | SO | ",
  "class": "ic.analog"
 }

@@ -7,32 +7,22 @@
   "Analog",
   "Amplifier"
  ],
- "description": "Cluster of 4 surface-mount analog amplifier ICs rated for 76V in SOIC-8 footprints (3.9x4.9mm, 1.27mm pitch).",
+ "description": "4 ic analog amplifier parts for 76V using SOIC footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Choose when requiring an SMD analog amplifier IC with a 76V rating.",
-  "Use when designing for a SOIC-8 3.9x4.9mm P1.27mm footprint.",
-  "Select for tier A MAX4080S, MAX4080T, MAX4081S, or MAX4081T parts."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SOIC land pattern is intended."
  ],
  "avoid_when": [
-  "The design requires a package type other than SOIC-8 3.9x4.9mm P1.27mm.",
-  "Assembly requires through-hole components instead of SMD.",
-  "The required voltage rating is different from 76V."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SOIC."
  ],
  "keywords": [
-  "ic",
-  "analog",
-  "amplifier",
-  "76v",
   "soic",
-  "soic-8",
-  "smd",
-  "max4080s",
-  "max4080t",
-  "max4081s",
-  "max4081t",
-  "3.9x4.9mm",
-  "p1.27mm",
+  "amplifier",
   "current",
+  "76v",
   "sense",
   "high",
   "side",
@@ -42,7 +32,9 @@
   "gain",
   "umax",
   "9x4",
-  "9mm"
+  "9mm",
+  "p1",
+  "27mm"
  ],
  "facts": {
   "package_family": "SOIC",
@@ -65,7 +57,7 @@
   "tier_counts": {
    "A": 4
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -107,6 +99,6 @@
   "kicad-symbols/Amplifier_Current/MAX4081S",
   "kicad-symbols/Amplifier_Current/MAX4081T"
  ],
- "embedding_text": "ic-analog-amplifier.soic.76v | IC Analog Amplifier | Cluster of 4 surface-mount analog amplifier ICs rated for 76V in SOIC-8 footprints (3.9x4.9mm, 1.27mm pitch). | ic analog amplifier 76v soic soic-8 smd max4080s max4080t max4081s max4081t 3.9x4.9mm p1.27mm current sense high side amplifiers with voltage gain umax 9x4 9mm | SOIC | 76V",
+ "embedding_text": "ic-analog-amplifier.soic.76v | IC Analog Amplifier | 4 ic analog amplifier parts for 76V using SOIC footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | soic amplifier current 76v sense high side amplifiers with voltage gain umax 9x4 9mm p1 27mm | SOIC | 76V",
  "class": "ic.analog.amplifier"
 }

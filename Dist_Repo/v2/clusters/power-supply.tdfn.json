@@ -6,31 +6,22 @@
   "Power",
   "Power Supply"
  ],
- "description": "Surface-mount power supply components packaged in TDFN footprints, including 14-pin variants with an exposed pad.",
+ "description": "1 power power supply parts using TDFN footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Match PCB land pattern to the TDFN-14-1EP (3x3mm, 0.4mm pitch) footprint.",
-  "Verify pinout and power supply specifications for the specific part.",
-  "Ensure surface-mount assembly capabilities for 0.4mm pitch packages."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a TDFN land pattern is intended."
  ],
  "avoid_when": [
-  "Designs requiring through-hole mounting or non-TDFN packages.",
-  "Layouts that cannot accommodate 0.4mm pitch or exposed pad land patterns.",
-  "Applications requiring footprints other than TDFN-14-1EP."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than TDFN."
  ],
  "keywords": [
-  "power",
-  "power supply",
   "tdfn",
-  "smd",
-  "surface mount",
-  "tdfn-14-1ep",
-  "3x3mm",
-  "p0.4mm",
-  "max17261xxtd",
-  "battery management",
-  "kicad-symbols",
-  "exposed pad",
   "battery",
+  "power",
+  "max17261xxtd",
   "management",
   "multi",
   "cell",
@@ -41,6 +32,7 @@
   "m5",
   "ez",
   "1ep",
+  "3x3mm",
   "p0"
  ],
  "facts": {
@@ -62,7 +54,7 @@
   "tier_counts": {
    "B": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -77,6 +69,6 @@
  "part_ids": [
   "kicad-symbols/Battery_Management/MAX17261xxTD"
  ],
- "embedding_text": "power-supply.tdfn | Power Power Supply | Surface-mount power supply components packaged in TDFN footprints, including 14-pin variants with an exposed pad. | power power supply tdfn smd surface mount tdfn-14-1ep 3x3mm p0.4mm max17261xxtd battery management kicad-symbols exposed pad battery management multi cell fuel gauge with modelgauge m5 ez 1ep p0 | TDFN | ",
+ "embedding_text": "power-supply.tdfn | Power Power Supply | 1 power power supply parts using TDFN footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | tdfn battery power max17261xxtd management multi cell fuel gauge with modelgauge m5 ez 1ep 3x3mm p0 | TDFN | ",
  "class": "power.supply"
 }

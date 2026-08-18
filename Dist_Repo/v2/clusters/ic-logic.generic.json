@@ -6,41 +6,33 @@
   "IC",
   "Logic"
  ],
- "description": "Generic logic IC cluster containing 201 logic integrated circuit parts with package chosen later, including representative logic symbols such as 74LS244 and PAL24.",
+ "description": "201 ic logic parts with package chosen later. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Assign a specific package footprint explicitly prior to PCB layout.",
-  "Select parts based on required symbol source and quality tier.",
-  "Choose target logic IC part numbers such as 74LS139, 74LS244, or PAL24."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Select a footprint/package explicitly before placement."
  ],
  "avoid_when": [
-  "A part with a pre-defined package footprint or mount type is required.",
-  "The design requires quality tiers higher than tier G or tier C."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review."
  ],
  "keywords": [
-  "ic logic",
-  "logic ic",
-  "ic.logic",
-  "74ls139",
-  "74ls240",
-  "74ls241",
-  "74ls244",
-  "pal24",
-  "74xx",
-  "package chosen later",
-  "kicad-symbols",
-  "tier g",
   "logic",
   "ic",
   "package",
   "chosen",
   "later",
   "pins",
+  "74xx",
   "ieee",
   "type",
   "74ahc",
   "low",
   "74abt16245b",
-  "74abt244"
+  "74abt244",
+  "outputs",
+  "ttl",
+  "active"
  ],
  "facts": {
   "package_family": "package chosen later",
@@ -61,7 +53,7 @@
    "C": 51,
    "G": 150
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -308,6 +300,6 @@
   "francescosacco-hardwarelibrary/74AHC(T)2G125 Type 2/74AHC_T_2G125_Type_2",
   "chilaboard-altium-library/74LV1T126_X2SON/74LV1T126_X2SON"
  ],
- "embedding_text": "ic-logic.generic | IC Logic | Generic logic IC cluster containing 201 logic integrated circuit parts with package chosen later, including representative logic symbols such as 74LS244 and PAL24. | ic logic logic ic ic.logic 74ls139 74ls240 74ls241 74ls244 pal24 74xx package chosen later kicad-symbols tier g logic ic package chosen later pins ieee type 74ahc low 74abt16245b 74abt244 | package chosen later | ",
+ "embedding_text": "ic-logic.generic | IC Logic | 201 ic logic parts with package chosen later. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | logic ic package chosen later pins 74xx ieee type 74ahc low 74abt16245b 74abt244 outputs ttl active | package chosen later | ",
  "class": "ic.logic"
 }

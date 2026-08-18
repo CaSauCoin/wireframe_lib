@@ -5,28 +5,20 @@
  "category_path": [
   "IC"
  ],
- "description": "IC component cluster of 3 tier C parts using PCM144 package family footprints (PCM144_L, PCM144_M, PCM144_N) from dist-legacy sources.",
+ "description": "3 ic parts using PCM144 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select for designs requiring PCM144 package family footprints.",
-  "Choose between footprint variants PCM144_L, PCM144_M, and PCM144_N based on layout requirements.",
-  "Confirm pinouts and mounting parameters as parts are tier C with unknown mount state."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a PCM144 land pattern is intended."
  ],
  "avoid_when": [
-  "The layout requires a footprint outside the PCM144 family.",
-  "Higher quality tier parts or planner-visible parts are required.",
-  "Parts from sources other than dist-legacy are needed."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than PCM144."
  ],
  "keywords": [
   "pcm144",
   "ic",
-  "pcm144_l",
-  "pcm144_m",
-  "pcm144_n",
-  "dist-legacy",
-  "tier c",
-  "package family pcm144",
-  "pcm144 footprint",
-  "pcm144 package",
   "pad",
   "mm",
   "pitch",
@@ -53,7 +45,7 @@
   "tier_counts": {
    "C": 3
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
@@ -61,6 +53,6 @@
   "dist-legacy/PCM144_M",
   "dist-legacy/PCM144_N"
  ],
- "embedding_text": "ic.pcm144 | IC | IC component cluster of 3 tier C parts using PCM144 package family footprints (PCM144_L, PCM144_M, PCM144_N) from dist-legacy sources. | pcm144 ic pcm144_l pcm144_m pcm144_n dist-legacy tier c package family pcm144 pcm144 footprint pcm144 package pad mm pitch pins | PCM144 | ",
+ "embedding_text": "ic.pcm144 | IC | 3 ic parts using PCM144 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | pcm144 ic pad mm pitch pins | PCM144 | ",
  "class": "ic"
 }

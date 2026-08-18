@@ -6,31 +6,23 @@
   "IC",
   "RF"
  ],
- "description": "Surface-mount RF IC cluster featuring OnSemi SIP-38-6EP footprints with two tier A representative parts.",
+ "description": "2 ic rf parts using OnSemi footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when requiring surface-mount RF IC components in OnSemi SIP-38 packages.",
-  "Choose between AX-SIP-SFEU and AX-SIP-SFEU-API variants.",
-  "Confirm land pattern compatibility with OnSemi_SIP-38-6EP-9x7mm_P0.65mm_EP1.2x1.2mm."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a OnSemi land pattern is intended."
  ],
  "avoid_when": [
-  "Designs requiring through-hole mounting instead of SMD.",
-  "Layouts requiring packages other than OnSemi SIP-38-6EP.",
-  "Components outside the IC RF category are needed."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than OnSemi."
  ],
  "keywords": [
-  "ic",
-  "rf",
-  "ic rf",
-  "onsemi",
-  "smd",
-  "sip-38",
-  "ax-sip-sfeu",
-  "ax-sip-sfeu-api",
-  "rf module",
-  "surface mount",
   "sip",
+  "rf",
   "sigfox",
   "868mhz",
+  "onsemi",
   "ax",
   "sfeu",
   "module",
@@ -62,7 +54,7 @@
   "tier_counts": {
    "A": 2
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -86,6 +78,6 @@
   "kicad-symbols/RF_Module/AX-SIP-SFEU",
   "kicad-symbols/RF_Module/AX-SIP-SFEU-API"
  ],
- "embedding_text": "ic-rf.onsemi | IC RF | Surface-mount RF IC cluster featuring OnSemi SIP-38-6EP footprints with two tier A representative parts. | ic rf ic rf onsemi smd sip-38 ax-sip-sfeu ax-sip-sfeu-api rf module surface mount sip sigfox 868mhz ax sfeu module ultra low power or custom system in package | OnSemi | ",
+ "embedding_text": "ic-rf.onsemi | IC RF | 2 ic rf parts using OnSemi footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | sip rf sigfox 868mhz onsemi ax sfeu module ultra low power or custom system in package | OnSemi | ",
  "class": "ic.rf"
 }

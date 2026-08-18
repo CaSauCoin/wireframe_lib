@@ -6,37 +6,32 @@
   "Discrete",
   "LED"
  ],
- "description": "Cluster of 7 discrete LED parts in quality tier C using LED5MM package family footprints with through-hole mounting.",
+ "description": "7 discrete led parts using LED5MM footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when requiring a through-hole discrete LED in an LED5MM package family footprint.",
-  "Verify target color variant footprints including LED5MM_RED, LED5MM_GRN, LED5MM_BLU, LED5MM_YLW, or LED5MM_VIO.",
-  "Consider source provenance from chilaboard-altium-library or dist-legacy entries."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a LED5MM land pattern is intended."
  ],
  "avoid_when": [
-  "The board layout requires surface mount or a package family other than LED5MM.",
-  "Parts in quality tier C or with unreviewed generated status are prohibited for the application.",
-  "Planner-visible parts are required, as planner_visible_count is 0 for this cluster."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than LED5MM."
  ],
  "keywords": [
-  "discrete led",
   "led5mm",
   "discrete",
   "led",
-  "through hole",
-  "chilaboard altium library",
-  "dist legacy",
-  "tier c",
-  "red",
-  "grn",
-  "blu",
-  "ylw",
   "vio",
   "pad",
   "mm",
   "pitch",
   "pins",
   "through",
-  "hole"
+  "hole",
+  "blu",
+  "grn",
+  "red",
+  "ylw"
  ],
  "facts": {
   "package_family": "LED5MM",
@@ -65,7 +60,7 @@
   "tier_counts": {
    "C": 7
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
@@ -77,6 +72,6 @@
   "chilaboard-altium-library/LED5MM_VIO_R/LED5MM_VIO_R",
   "chilaboard-altium-library/LED5MM_YLW/LED5MM_YLW"
  ],
- "embedding_text": "discrete-led.led5mm | Discrete LED | Cluster of 7 discrete LED parts in quality tier C using LED5MM package family footprints with through-hole mounting. | discrete led led5mm discrete led through hole chilaboard altium library dist legacy tier c red grn blu ylw vio pad mm pitch pins through hole | LED5MM | ",
+ "embedding_text": "discrete-led.led5mm | Discrete LED | 7 discrete led parts using LED5MM footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | led5mm discrete led vio pad mm pitch pins through hole blu grn red ylw | LED5MM | ",
  "class": "discrete.led"
 }

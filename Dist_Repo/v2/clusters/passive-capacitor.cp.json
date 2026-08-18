@@ -6,35 +6,29 @@
   "Passive",
   "Capacitor"
  ],
- "description": "Cluster of 619 passive capacitor library entries in the CP package family supporting surface-mount and through-hole configurations.",
+ "description": "619 passive capacitor parts using CP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select based on specific CP footprint style such as axial, radial, or SMD electrolytic.",
-  "Filter by required mounting configuration between SMD and through-hole.",
-  "Prioritize tier A library entries from trusted sources."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a CP land pattern is intended."
  ],
  "avoid_when": [
-  "A package family other than CP is required by the PCB layout.",
-  "Non-polarized capacitor symbols or alternative footprint standards are needed.",
-  "Required electrical ratings or tolerances are not specified in the selected part record."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than CP."
  ],
  "keywords": [
-  "passive",
-  "capacitor",
   "cp",
-  "c_polarized",
-  "polarized",
-  "smd",
-  "through_hole",
-  "axial",
-  "radial",
-  "electrolytic",
-  "tantal",
-  "cp package",
+  "capacitor",
   "0mm",
+  "electrolytic",
   "00mm",
+  "radial",
+  "axial",
   "pitch",
   "diameter",
   "horizontal",
+  "passive",
   "us",
   "50mm",
   "tht",
@@ -78,7 +72,7 @@
    "B": 78,
    "C": 251
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -743,6 +737,6 @@
   "dist-legacy/CP_EIA-7260-15_AVX-R_HandSolder",
   "dist-legacy/CP_EIA-7260-38_AVX-R_HandSolder"
  ],
- "embedding_text": "passive-capacitor.cp | Passive Capacitor | Cluster of 619 passive capacitor library entries in the CP package family supporting surface-mount and through-hole configurations. | passive capacitor cp c_polarized polarized smd through_hole axial radial electrolytic tantal cp package 0mm 00mm pitch diameter horizontal us 50mm tht pin series | CP | ",
+ "embedding_text": "passive-capacitor.cp | Passive Capacitor | 619 passive capacitor parts using CP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | cp capacitor 0mm electrolytic 00mm radial axial pitch diameter horizontal passive us 50mm tht pin series | CP | ",
  "class": "passive.capacitor"
 }

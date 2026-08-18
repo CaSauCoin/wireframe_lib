@@ -5,32 +5,25 @@
  "category_path": [
   "IC"
  ],
- "description": "IC cluster featuring surface-mount LCC package components with LCC-36 footprint options.",
+ "description": "1 ic parts using LCC footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select for surface-mount (SMD) IC designs requiring LCC packaging.",
-  "Verify layout compatibility with the LCC-36 footprint.",
-  "Check part quality tier and source documentation prior to board layout."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a LCC land pattern is intended."
  ],
  "avoid_when": [
-  "Through-hole mounting is required instead of SMD.",
-  "The PCB layout requires package footprints other than LCC-36.",
-  "Components outside the LCC package family are needed."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than LCC."
  ],
  "keywords": [
-  "ic",
-  "lcc",
-  "lcc-36",
-  "smd",
   "hmc6343",
-  "sparkfun",
-  "sensor",
-  "package",
-  "footprint",
-  "surface mount",
-  "integrated circuit",
   "compass",
+  "sparkfun",
   "for",
+  "lcc",
   "qwiic",
+  "sensor",
   "is",
   "fully",
   "integrated",
@@ -60,7 +53,7 @@
   "tier_counts": {
    "B": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -75,6 +68,6 @@
  "part_ids": [
   "SparkFun-KiCad-Libraries/SparkFun-Sensor/HMC6343"
  ],
- "embedding_text": "ic.lcc | IC | IC cluster featuring surface-mount LCC package components with LCC-36 footprint options. | ic lcc lcc-36 smd hmc6343 sparkfun sensor package footprint surface mount integrated circuit compass for qwiic is fully integrated module that includes firmware heading computation | LCC | ",
+ "embedding_text": "ic.lcc | IC | 1 ic parts using LCC footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | hmc6343 compass sparkfun for lcc qwiic sensor is fully integrated module that includes firmware heading computation | LCC | ",
  "class": "ic"
 }

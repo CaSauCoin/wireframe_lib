@@ -5,28 +5,20 @@
  "category_path": [
   "IC"
  ],
- "description": "Cluster of 2 integrated circuit parts in the IDC26 package family associated with IDC26-B and IDC26-S footprints.",
+ "description": "2 ic parts using IDC26 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when an IC requiring an IDC26-B or IDC26-S footprint is needed.",
-  "Verify part details as all entries in this cluster are tier C quality.",
-  "Check compatibility with dist-legacy source data."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a IDC26 land pattern is intended."
  ],
  "avoid_when": [
-  "The design requires a footprint other than IDC26-B or IDC26-S.",
-  "Parts rated higher than quality tier C are required.",
-  "Planner-visible components are required as none are available."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than IDC26."
  ],
  "keywords": [
   "idc26",
   "ic",
-  "idc26-b",
-  "idc26-s",
-  "integrated circuit",
-  "tier c",
-  "dist-legacy",
-  "idc26 footprint",
-  "idc26 package",
-  "ic idc26",
   "pad",
   "mm",
   "pitch",
@@ -52,13 +44,13 @@
   "tier_counts": {
    "C": 2
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
   "dist-legacy/IDC26-B",
   "dist-legacy/IDC26-S"
  ],
- "embedding_text": "ic.idc26 | IC | Cluster of 2 integrated circuit parts in the IDC26 package family associated with IDC26-B and IDC26-S footprints. | idc26 ic idc26-b idc26-s integrated circuit tier c dist-legacy idc26 footprint idc26 package ic idc26 pad mm pitch pins | IDC26 | ",
+ "embedding_text": "ic.idc26 | IC | 2 ic parts using IDC26 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | idc26 ic pad mm pitch pins | IDC26 | ",
  "class": "ic"
 }

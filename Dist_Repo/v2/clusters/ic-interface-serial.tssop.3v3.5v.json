@@ -7,33 +7,28 @@
   "Interface",
   "Serial"
  ],
- "description": "Serial interface IC cluster containing surface-mount UART/serial components operating at 3.3V and 5V in TSSOP footprints.",
+ "description": "1 ic interface serial parts for 3.3V, 5V, UART/serial using TSSOP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Choose when needing a 3.3V or 5V UART/serial interface IC.",
-  "Select for surface-mount designs compatible with TSSOP-20_4.4x6.5mm_P0.65mm footprints.",
-  "Use when selecting tier A components from KiCad symbol sources such as AZ75232G."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a TSSOP land pattern is intended."
  ],
  "avoid_when": [
-  "The design requires non-SMD mounting or package footprints other than TSSOP.",
-  "The application voltage is outside 3.3V or 5V.",
-  "The circuit requires non-serial or non-UART interface ICs."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than TSSOP."
  ],
  "keywords": [
-  "ic",
-  "interface",
-  "serial",
-  "uart",
   "tssop",
-  "tssop-20",
-  "3.3v",
-  "5v",
-  "smd",
-  "az75232g",
-  "kicad-symbols",
-  "tssop-20_4.4x6.5mm_p0.65mm",
+  "interface",
+  "uart",
   "rs232",
+  "ic",
   "3v",
+  "5v",
   "supply",
+  "serial",
+  "az75232g",
   "drivers",
   "receivers",
   "vcc",
@@ -64,7 +59,7 @@
   "tier_counts": {
    "A": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -79,6 +74,6 @@
  "part_ids": [
   "kicad-symbols/Interface_UART/AZ75232G"
  ],
- "embedding_text": "ic-interface-serial.tssop.3v3.5v | IC Interface Serial | Serial interface IC cluster containing surface-mount UART/serial components operating at 3.3V and 5V in TSSOP footprints. | ic interface serial uart tssop tssop-20 3.3v 5v smd az75232g kicad-symbols tssop-20_4.4x6.5mm_p0.65mm rs232 3v supply drivers receivers vcc bipolar vdd vss | TSSOP | 3.3V 5V UART/serial",
+ "embedding_text": "ic-interface-serial.tssop.3v3.5v | IC Interface Serial | 1 ic interface serial parts for 3.3V, 5V, UART/serial using TSSOP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | tssop interface uart rs232 ic 3v 5v supply serial az75232g drivers receivers vcc bipolar vdd vss | TSSOP | 3.3V 5V UART/serial",
  "class": "ic.interface.serial"
 }

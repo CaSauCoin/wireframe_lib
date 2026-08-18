@@ -6,28 +6,18 @@
   "Protection",
   "Fuse"
  ],
- "description": "Generic dual protection fuse schematic symbols from the Alternate-KiCad-Library with footprints and packages to be assigned later.",
+ "description": "2 protection fuse parts with package chosen later. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select between combined double-fuse or separated double-fuse symbol variants.",
-  "Assign an explicit footprint and package before PCB routing.",
-  "Confirm required current and voltage ratings independently since parts are tier G generic symbols."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Select a footprint/package explicitly before placement."
  ],
  "avoid_when": [
-  "A single-circuit fuse symbol is required instead of dual-fuse configurations.",
-  "A fully specified part with a predefined footprint and verified datasheet is needed.",
-  "Designs mandate higher-tier verified library components."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review."
  ],
  "keywords": [
-  "protection",
   "fuse",
-  "dual fuse",
-  "double fuse",
-  "fuse double",
-  "fuse double separated",
-  "generic fuse",
-  "alternate-kicad-library",
-  "device akl",
-  "package chosen later",
   "dual",
   "double",
   "device",
@@ -35,6 +25,7 @@
   "alternate",
   "kicad",
   "library",
+  "protection",
   "package",
   "chosen",
   "later",
@@ -55,7 +46,7 @@
   "tier_counts": {
    "G": 2
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -79,6 +70,6 @@
   "Alternate-KiCad-Library/Device_AKL/Fuse_Double",
   "Alternate-KiCad-Library/Device_AKL/Fuse_Double_Separated"
  ],
- "embedding_text": "protection-fuse.generic | Protection Fuse | Generic dual protection fuse schematic symbols from the Alternate-KiCad-Library with footprints and packages to be assigned later. | protection fuse dual fuse double fuse fuse double fuse double separated generic fuse alternate-kicad-library device akl package chosen later dual double device akl alternate kicad library package chosen later separated | package chosen later | ",
+ "embedding_text": "protection-fuse.generic | Protection Fuse | 2 protection fuse parts with package chosen later. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | fuse dual double device akl alternate kicad library protection package chosen later separated | package chosen later | ",
  "class": "protection.fuse"
 }

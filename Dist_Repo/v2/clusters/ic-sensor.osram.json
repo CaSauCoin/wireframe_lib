@@ -6,42 +6,34 @@
   "IC",
   "Sensor"
  ],
- "description": "Cluster of 16 IC sensor parts using Osram package family footprints with SMD and through-hole mounting options.",
+ "description": "16 ic sensor parts using Osram footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when using Osram package family footprints such as Osram_SFH205 or Osram_LPT80A.",
-  "Choose between SMD and through-hole mounting options based on board design requirements.",
-  "Filter by quality tier to prefer tier A parts."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a Osram land pattern is intended."
  ],
  "avoid_when": [
-  "Do not use when requiring footprints outside the Osram package family.",
-  "Avoid if mounting requirements differ from SMD or through-hole.",
-  "Avoid when non-sensor component classes are required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than Osram."
  ],
  "keywords": [
-  "ic",
   "sensor",
   "osram",
-  "ic sensor",
-  "smd",
-  "through_hole",
-  "lpt80a",
-  "sfh205",
-  "sfh205f",
-  "sfh205fa",
-  "sfh206k",
-  "sfh225",
-  "sfh225fa",
-  "bp104-smd",
   "photodiode",
   "pin",
+  "smd",
+  "ic",
   "opto",
   "optical",
   "silicon",
   "reflective",
   "interrupter",
   "rm2",
+  "sfh205",
   "photo",
-  "coupler"
+  "coupler",
+  "phototransistor"
  ],
  "facts": {
   "package_family": "Osram",
@@ -72,7 +64,7 @@
    "A": 10,
    "B": 6
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -134,6 +126,6 @@
   "kicad-symbols/Sensor_Optical/BPW82",
   "kicad-symbols/Sensor_Optical/SFH2400"
  ],
- "embedding_text": "ic-sensor.osram | IC Sensor | Cluster of 16 IC sensor parts using Osram package family footprints with SMD and through-hole mounting options. | ic sensor osram ic sensor smd through_hole lpt80a sfh205 sfh205f sfh205fa sfh206k sfh225 sfh225fa bp104-smd photodiode pin opto optical silicon reflective interrupter rm2 photo coupler | Osram | ",
+ "embedding_text": "ic-sensor.osram | IC Sensor | 16 ic sensor parts using Osram footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | sensor osram photodiode pin smd ic opto optical silicon reflective interrupter rm2 sfh205 photo coupler phototransistor | Osram | ",
  "class": "ic.sensor"
 }

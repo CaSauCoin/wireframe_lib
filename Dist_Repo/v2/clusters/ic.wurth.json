@@ -5,30 +5,20 @@
  "category_path": [
   "IC"
  ],
- "description": "A cluster of 59 IC parts associated with Wurth package family footprints, supporting SMD, through-hole, and unknown mount types across dist-legacy and celestial-altium-library sources.",
+ "description": "59 ic parts using Wurth footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when looking for IC parts formatted with Wurth package family footprints.",
-  "Choose based on required mount type such as surface mount (SMD) or through-hole.",
-  "Filter by library source (dist-legacy or celestial-altium-library) and quality tier B or C."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a Wurth land pattern is intended."
  ],
  "avoid_when": [
-  "Avoid when layout requirements specify package footprints outside the Wurth family.",
-  "Do not use if mounting configurations other than SMD or through-hole are needed.",
-  "Avoid if tier B or C quality levels do not fulfill project requirements."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than Wurth."
  ],
  "keywords": [
   "wurth",
   "ic",
-  "smd",
-  "through_hole",
-  "dist-legacy",
-  "celestial-altium-library",
-  "693043020611",
-  "685119134923",
-  "74984104401",
-  "74650173",
-  "74650174",
-  "hdmi",
   "pad",
   "mm",
   "pins",
@@ -40,7 +30,9 @@
   "hole",
   "pin",
   "single",
-  "slsu"
+  "slsu",
+  "terminal",
+  "with"
  ],
  "facts": {
   "package_family": "Wurth",
@@ -76,7 +68,7 @@
    "B": 7,
    "C": 52
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -181,6 +173,6 @@
   "celestial-altium-library/Wurth 691322110008/Wurth_691322110008",
   "celestial-altium-library/Wurth 691322110012/Wurth_691322110012"
  ],
- "embedding_text": "ic.wurth | IC | A cluster of 59 IC parts associated with Wurth package family footprints, supporting SMD, through-hole, and unknown mount types across dist-legacy and celestial-altium-library sources. | wurth ic smd through_hole dist-legacy celestial-altium-library 693043020611 685119134923 74984104401 74650173 74650174 hdmi pad mm pins pitch we phd ws through hole pin single slsu | Wurth | ",
+ "embedding_text": "ic.wurth | IC | 59 ic parts using Wurth footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | wurth ic pad mm pins pitch we phd ws through hole pin single slsu terminal with | Wurth | ",
  "class": "ic"
 }

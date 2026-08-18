@@ -6,44 +6,34 @@
   "Discrete",
   "Diode"
  ],
- "description": "Cluster of 76 discrete diode parts rated 3.3V in the D package family, spanning SMD footprints (SOD-523/323/123/923/323F/123F, MELF, MiniMELF, MicroMELF, SMA) and through-hole DO-35/DO-41 zener footprints; mostly sourced from Alternate-KiCad-Library.",
+ "description": "76 discrete diode parts for 3.3V using D footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Match the exact footprint (SOD/MELF/DO-35/DO-41 variant) to the intended PCB land pattern.",
-  "Prefer tier A entries (70 of 76 parts) for higher-confidence data.",
-  "Confirm mount type (SMD vs through-hole) matches the design before committing.",
-  "Note source library origin (kicad-symbols, Alternate-KiCad-Library, JLCPCB-Kicad-Library) when weighing trust."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a D land pattern is intended."
  ],
  "avoid_when": [
-  "The design requires a footprint outside this D-family list (SOD/MELF/DO-35/DO-41 variants).",
-  "A diode voltage rating other than 3.3V is needed.",
-  "Only tier B entries match the required footprint and a higher-confidence part is needed.",
-  "Electrical specs beyond the 3.3V facet (current, speed, tolerance, lifecycle) must be confirmed but are not provided here."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than D."
  ],
  "keywords": [
   "diode",
   "zener",
-  "3.3v",
-  "3v3",
-  "discrete diode",
-  "sod-523",
-  "sod-323",
-  "sod-123",
-  "sod-923",
-  "sod-323f",
-  "sod-123f",
-  "minimelf",
-  "micromelf",
-  "melf",
-  "sma",
-  "do-35",
-  "do-41",
-  "through hole",
-  "smd",
-  "package d",
   "3v",
   "sod",
   "discrete",
-  "alternate"
+  "alternate",
+  "kicad",
+  "library",
+  "akl",
+  "tvs",
+  "do",
+  "unidirectional",
+  "horizontal",
+  "500mw",
+  "323f",
+  "c3v3"
  ],
  "facts": {
   "package_family": "D",
@@ -81,7 +71,7 @@
    "A": 70,
    "B": 6
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -203,6 +193,6 @@
   "Alternate-KiCad-Library/Diode_TVS_AKL/SM2T3V3A",
   "JLCPCB-Kicad-Library/JLCPCB-Diodes/TVS-Bi,SMF3.3CA"
  ],
- "embedding_text": "discrete-diode.d.3v3 | Discrete Diode | Cluster of 76 discrete diode parts rated 3.3V in the D package family, spanning SMD footprints (SOD-523/323/123/923/323F/123F, MELF, MiniMELF, MicroMELF, SMA) and through-hole DO-35/DO-41 zener footprints; mostly sourced from Alternate-KiCad-Library. | diode zener 3.3v 3v3 discrete diode sod-523 sod-323 sod-123 sod-923 sod-323f sod-123f minimelf micromelf melf sma do-35 do-41 through hole smd package d 3v sod discrete alternate | D | 3.3V",
+ "embedding_text": "discrete-diode.d.3v3 | Discrete Diode | 76 discrete diode parts for 3.3V using D footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | diode zener 3v sod discrete alternate kicad library akl tvs do unidirectional horizontal 500mw 323f c3v3 | D | 3.3V",
  "class": "discrete.diode"
 }

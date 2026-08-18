@@ -7,42 +7,34 @@
   "Power",
   "Linear Regulator"
  ],
- "description": "Cluster of 19 SMD LDO linear regulator ICs in WSON package variants sourced from KiCad symbols.",
+ "description": "19 ic power linear regulator parts for 5V, LDO, 2.5V using WSON footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when requiring an SMD LDO linear regulator in a WSON package.",
-  "Choose based on specific footprint dimensions such as WSON-6 or WSON-8 variants.",
-  "Prioritize tier A parts for higher quality ratings in this cluster."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a WSON land pattern is intended."
  ],
  "avoid_when": [
-  "Through-hole mounting is required instead of SMD.",
-  "Layout requires a package family other than WSON.",
-  "A switching regulator is needed instead of a linear LDO regulator."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than WSON."
  ],
  "keywords": [
-  "ic",
-  "power",
-  "linear regulator",
-  "ldo",
-  "wson",
-  "smd",
-  "5v",
-  "2.5v",
-  "wson-6",
-  "wson-8",
-  "lp5912",
-  "tlv700",
-  "tlv702",
-  "kicad-symbols",
   "regulator",
+  "wson",
   "linear",
+  "5v",
+  "ldo",
   "low",
   "p0",
   "fixed",
   "output",
+  "ic",
+  "power",
   "1ep",
   "200ma",
   "wson6",
-  "5mm"
+  "5mm",
+  "nolead"
  ],
  "facts": {
   "package_family": "WSON",
@@ -73,7 +65,7 @@
    "A": 9,
    "B": 10
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -138,6 +130,6 @@
   "kicad-symbols/Regulator_Linear/LP3982ILD-2.5",
   "kicad-symbols/Regulator_Linear/LP38691SD-2.5"
  ],
- "embedding_text": "ic-power-ldo.wson.5v.ldo | IC Power Linear Regulator | Cluster of 19 SMD LDO linear regulator ICs in WSON package variants sourced from KiCad symbols. | ic power linear regulator ldo wson smd 5v 2.5v wson-6 wson-8 lp5912 tlv700 tlv702 kicad-symbols regulator linear low p0 fixed output 1ep 200ma wson6 5mm | WSON | 5V LDO 2.5V",
+ "embedding_text": "ic-power-ldo.wson.5v.ldo | IC Power Linear Regulator | 19 ic power linear regulator parts for 5V, LDO, 2.5V using WSON footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | regulator wson linear 5v ldo low p0 fixed output ic power 1ep 200ma wson6 5mm nolead | WSON | 5V LDO 2.5V",
  "class": "ic.power.ldo"
 }

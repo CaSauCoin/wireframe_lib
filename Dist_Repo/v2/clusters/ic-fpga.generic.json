@@ -6,32 +6,20 @@
   "IC",
   "FPGA"
  ],
- "description": "Generic IC FPGA cluster containing 234 KiCad symbol library parts with package chosen later across quality tiers G and C.",
+ "description": "234 ic fpga parts with package chosen later. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select an explicit footprint and package prior to PCB placement.",
-  "Prioritize planner-visible tier G parts over tier C parts.",
-  "Confirm symbol source details for KiCad library parts."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Select a footprint/package explicitly before placement."
  ],
  "avoid_when": [
-  "A specific footprint or package family must be defined up front.",
-  "Unreviewed tier C parts are unacceptable for the application.",
-  "Parts from sources other than KiCad symbol libraries are required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review."
  ],
  "keywords": [
   "fpga",
-  "ic fpga",
-  "ic.fpga",
-  "kicad-symbols",
-  "package chosen later",
-  "altera",
-  "xilinx",
-  "cpld",
-  "ep1210",
-  "ep1810",
-  "ep320",
-  "ep600",
-  "xc2s100tq144",
   "ic",
+  "xilinx",
   "package",
   "chosen",
   "later",
@@ -41,7 +29,10 @@
   "lx",
   "lxt",
   "virtex5",
-  "virtex7"
+  "virtex7",
+  "fgg484",
+  "virtex6",
+  "artix7"
  ],
  "facts": {
   "package_family": "package chosen later",
@@ -59,7 +50,7 @@
    "C": 16,
    "G": 218
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -339,6 +330,6 @@
   "kicad-symbols/CPLD_Xilinx/XC95144PQ100",
   "kicad-symbols/FPGA_Xilinx/XC4005-PG156"
  ],
- "embedding_text": "ic-fpga.generic | IC FPGA | Generic IC FPGA cluster containing 234 KiCad symbol library parts with package chosen later across quality tiers G and C. | fpga ic fpga ic.fpga kicad-symbols package chosen later altera xilinx cpld ep1210 ep1810 ep320 ep600 xc2s100tq144 ic package chosen later virtex spartan spartan6 lx lxt virtex5 virtex7 | package chosen later | ",
+ "embedding_text": "ic-fpga.generic | IC FPGA | 234 ic fpga parts with package chosen later. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | fpga ic xilinx package chosen later virtex spartan spartan6 lx lxt virtex5 virtex7 fgg484 virtex6 artix7 | package chosen later | ",
  "class": "ic.fpga"
 }

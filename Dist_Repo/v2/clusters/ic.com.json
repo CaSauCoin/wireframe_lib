@@ -5,24 +5,21 @@
  "category_path": [
   "IC"
  ],
- "description": "This IC cluster contains 1 part in the COM package family using COM footprints.",
+ "description": "1 ic parts using COM footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Use when a COM package footprint is intended.",
-  "Check footprint dimensions and pin-to-pad mapping before PCB design.",
-  "Verify part quality tier and source data completeness."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a COM land pattern is intended."
  ],
  "avoid_when": [
-  "The PCB layout requires a package family other than COM.",
-  "Exact symbol-to-footprint pin mapping is unverified.",
-  "The application requires verified tier-A or planner-visible components."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than COM."
  ],
  "keywords": [
   "com",
-  "ic",
-  "integrated circuit",
-  "com package",
-  "com footprint",
   "37female",
+  "ic",
   "pad",
   "mm",
   "pitch",
@@ -47,12 +44,12 @@
   "tier_counts": {
    "C": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
   "dist-legacy/COM 37FEMALE"
  ],
- "embedding_text": "ic.com | IC | This IC cluster contains 1 part in the COM package family using COM footprints. | com ic integrated circuit com package com footprint 37female pad mm pitch pins | COM | ",
+ "embedding_text": "ic.com | IC | 1 ic parts using COM footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | com 37female ic pad mm pitch pins | COM | ",
  "class": "ic"
 }

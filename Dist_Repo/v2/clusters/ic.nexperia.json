@@ -5,42 +5,34 @@
  "category_path": [
   "IC"
  ],
- "description": "Integrated circuit cluster of 12 surface-mount parts featuring Nexperia HUSON and WLCSP footprint options.",
+ "description": "12 ic parts using Nexperia footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Match target footprint to available HUSON-8, HUSON-12, HUSON-16, or WLCSP-15 options.",
-  "Prioritize tier A parts among the 12 SMD entries in this cluster.",
-  "Verify Nexperia footprint dimensions against PCB layout design rules."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a Nexperia land pattern is intended."
  ],
  "avoid_when": [
-  "Designs requiring through-hole mounting instead of surface mount.",
-  "Layouts requiring non-Nexperia package footprints.",
-  "Applications needing parts outside the IC category."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than Nexperia."
  ],
  "keywords": [
   "nexperia",
-  "ic",
-  "smd",
-  "huson",
-  "wlcsp",
-  "huson-8",
-  "huson-12",
-  "huson-16",
-  "wlcsp-15",
-  "power_protection",
-  "ip4251cz8-4-ttl",
-  "ip4252cz12",
-  "ip4252cz16",
-  "ip4252cz8",
   "uson",
   "p0",
+  "huson",
   "protection",
   "4mm",
   "1ep",
   "ep0",
   "esd",
+  "ic",
   "emi",
   "8mm",
-  "35x1"
+  "35x1",
+  "7mm",
+  "4x1",
+  "2mm"
  ],
  "facts": {
   "package_family": "Nexperia",
@@ -67,7 +59,7 @@
    "B": 1,
    "C": 4
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -125,6 +117,6 @@
   "dist-legacy/Nexperia_HUSON-8_USON-8-1EP_1.35x1.7mm_P0.4mm_EP0.4x1.2mm",
   "dist-legacy/Nexperia_WLCSP-15_2.37x1.17mm_Layout6x3_P0.4mmP0.8mm"
  ],
- "embedding_text": "ic.nexperia | IC | Integrated circuit cluster of 12 surface-mount parts featuring Nexperia HUSON and WLCSP footprint options. | nexperia ic smd huson wlcsp huson-8 huson-12 huson-16 wlcsp-15 power_protection ip4251cz8-4-ttl ip4252cz12 ip4252cz16 ip4252cz8 uson p0 protection 4mm 1ep ep0 esd emi 8mm 35x1 | Nexperia | ",
+ "embedding_text": "ic.nexperia | IC | 12 ic parts using Nexperia footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | nexperia uson p0 huson protection 4mm 1ep ep0 esd ic emi 8mm 35x1 7mm 4x1 2mm | Nexperia | ",
  "class": "ic"
 }

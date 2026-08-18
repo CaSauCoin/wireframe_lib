@@ -5,42 +5,34 @@
  "category_path": [
   "IC"
  ],
- "description": "Integrated circuit cluster for buck converter applications featuring surface-mount DFN-12 packages with 3x3mm body size and 0.5mm pitch.",
+ "description": "2 ic parts for buck using DFN footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Verify land pattern compatibility with 12-pin 3x3mm DFN footprints featuring an exposed pad.",
-  "Select variants based on layout requirements for thermal vias under the exposed pad.",
-  "Note that parts in this cluster are classified under quality tier C."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a DFN land pattern is intended."
  ],
  "avoid_when": [
-  "The board layout requires a package family other than DFN.",
-  "The application requires components verified higher than quality tier C.",
-  "Through-hole mounting or non-buck converter topologies are required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than DFN."
  ],
  "keywords": [
-  "ic",
-  "buck",
-  "dfn",
-  "smd",
-  "surface mount",
-  "dfn-12",
-  "dfn-12-1ep",
-  "3x3mm",
-  "0.5mm pitch",
-  "thermal vias",
-  "exposed pad",
-  "buck ic",
-  "dfn buck",
   "5mm",
+  "dfn",
   "1ep",
+  "3x3mm",
   "p0",
   "ep1",
   "6x2",
   "thermalvias",
+  "ic",
+  "buck",
   "surface",
   "mount",
   "pad",
   "mm",
-  "pitch"
+  "pitch",
+  "pins"
  ],
  "facts": {
   "package_family": "DFN",
@@ -64,13 +56,13 @@
   "tier_counts": {
    "C": 2
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
   "dist-legacy/DFN-12-1EP_3x3mm_P0.5mm_EP1.6x2.5mm_ThermalVias",
   "dist-legacy/DFN-12-1EP_3x3mm_P0.5mm_EP1.6x2.5mm"
  ],
- "embedding_text": "ic.dfn.buck | IC | Integrated circuit cluster for buck converter applications featuring surface-mount DFN-12 packages with 3x3mm body size and 0.5mm pitch. | ic buck dfn smd surface mount dfn-12 dfn-12-1ep 3x3mm 0.5mm pitch thermal vias exposed pad buck ic dfn buck 5mm 1ep p0 ep1 6x2 thermalvias surface mount pad mm pitch | DFN | buck",
+ "embedding_text": "ic.dfn.buck | IC | 2 ic parts for buck using DFN footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | 5mm dfn 1ep 3x3mm p0 ep1 6x2 thermalvias ic buck surface mount pad mm pitch pins | DFN | buck",
  "class": "ic"
 }

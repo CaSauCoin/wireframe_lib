@@ -6,42 +6,34 @@
   "Discrete",
   "Transistor"
  ],
- "description": "Discrete transistor cluster containing 51 through-hole parts using SolderWire 1x03 footprints.",
+ "description": "51 discrete transistor parts using SolderWire footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when discrete transistor connections require 1x03 through-hole SolderWire footprints.",
-  "Choose the specific footprint variant based on wire area, pitch, and thermal relief requirements.",
-  "Verify footprint parameters including pad pitch and drill diameter against design requirements."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SolderWire land pattern is intended."
  ],
  "avoid_when": [
-  "Surface-mount transistor packages are required instead of through-hole mounting.",
-  "The design requires pin count or footprint configurations other than 1x03 SolderWire.",
-  "Tier A or B quality parts are required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SolderWire."
  ],
  "keywords": [
-  "discrete transistor",
   "solderwire",
-  "through_hole",
-  "through hole",
   "1x03",
-  "discrete",
-  "transistor",
-  "relief",
-  "0.1sqmm",
-  "0.127sqmm",
-  "0.15sqmm",
-  "0.25sqmm",
-  "tier c",
-  "dist-legacy",
   "diameter",
+  "relief",
   "4mm",
   "5sqmm",
+  "discrete",
+  "transistor",
   "mm",
   "wire",
   "times",
   "outer",
   "7mm",
   "d0",
-  "9mm"
+  "9mm",
+  "8mm"
  ],
  "facts": {
   "package_family": "SolderWire",
@@ -73,7 +65,7 @@
   "tier_counts": {
    "C": 51
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
@@ -129,6 +121,6 @@
   "dist-legacy/SolderWire-6sqmm_1x03_P14mm_D3.5mm_OD7mm_Relief",
   "dist-legacy/SolderWire-6sqmm_1x03_P14mm_D3.5mm_OD7mm_Relief2x"
  ],
- "embedding_text": "discrete-transistor.solderwire | Discrete Transistor | Discrete transistor cluster containing 51 through-hole parts using SolderWire 1x03 footprints. | discrete transistor solderwire through_hole through hole 1x03 discrete transistor relief 0.1sqmm 0.127sqmm 0.15sqmm 0.25sqmm tier c dist-legacy diameter 4mm 5sqmm mm wire times outer 7mm d0 9mm | SolderWire | ",
+ "embedding_text": "discrete-transistor.solderwire | Discrete Transistor | 51 discrete transistor parts using SolderWire footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | solderwire 1x03 diameter relief 4mm 5sqmm discrete transistor mm wire times outer 7mm d0 9mm 8mm | SolderWire | ",
  "class": "discrete.transistor"
 }

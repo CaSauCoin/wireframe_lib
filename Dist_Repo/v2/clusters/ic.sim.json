@@ -5,33 +5,21 @@
  "category_path": [
   "IC"
  ],
- "description": "IC component cluster containing 16 parts in the Sim package family with SMD and unknown mount options across mini and micro SIM footprints.",
+ "description": "16 ic parts using Sim footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select by required footprint variant such as mini SIM, micro SIM, or card push options.",
-  "Choose between Tier B (6 parts) and Tier C (10 parts) quality tiers.",
-  "Verify part source between chilaboard-altium-library and dist-legacy entries."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a Sim land pattern is intended."
  ],
  "avoid_when": [
-  "The PCB design requires a package family other than Sim.",
-  "Tier A quality parts are required for the application.",
-  "The required footprint is not listed among the cluster's supported Sim footprints."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than Sim."
  ],
  "keywords": [
-  "ic",
   "sim",
-  "smd",
-  "sim_mini_gct",
-  "sim_mini_6",
-  "sim_mini_6jt",
-  "sim_micro_gct",
-  "sim_holder",
-  "sim_micro_6",
-  "sim_card_push",
-  "sim_smd",
-  "mini sim",
-  "micro sim",
-  "chilaboard-altium-library",
   "mini",
+  "ic",
   "card",
   "holder",
   "connector",
@@ -40,7 +28,11 @@
   "surface",
   "mount",
   "pins",
-  "socket"
+  "socket",
+  "pad",
+  "mm",
+  "pitch",
+  "smd"
  ],
  "facts": {
   "package_family": "Sim",
@@ -74,7 +66,7 @@
    "B": 6,
    "C": 10
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -136,6 +128,6 @@
   "dist-legacy/SIM_HOLDER_2",
   "dist-legacy/SIM_SMD"
  ],
- "embedding_text": "ic.sim | IC | IC component cluster containing 16 parts in the Sim package family with SMD and unknown mount options across mini and micro SIM footprints. | ic sim smd sim_mini_gct sim_mini_6 sim_mini_6jt sim_micro_gct sim_holder sim_micro_6 sim_card_push sim_smd mini sim micro sim chilaboard-altium-library mini card holder connector gct micro surface mount pins socket | Sim | ",
+ "embedding_text": "ic.sim | IC | 16 ic parts using Sim footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | sim mini ic card holder connector gct micro surface mount pins socket pad mm pitch smd | Sim | ",
  "class": "ic"
 }

@@ -6,44 +6,34 @@
   "Discrete",
   "Diode"
  ],
- "description": "Cluster of 61 discrete TO-package diode parts rated for the 40V facet, sourced from Alternate-KiCad-Library, spanning SMD and through-hole TO footprints such as TO-220, TO-263, TO-252, TO-247, TO-277B, TO-269AA, and TO-218 variants.",
+ "description": "61 discrete diode parts for 40V using TO footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Prefer tier A entries (60 of 61 parts) over the single tier B entry",
-  "Match the exact footprint variant needed (e.g. TO-220-3_Vertical_AKA vs TO-220-2_Vertical_KA vs TO-252-2_TabPin1)",
-  "Confirm whether SMD (TO-263, TO-252, TO-277B, TO-269AA) or through-hole (TO-220, TO-247, TO-218) mounting is required",
-  "Verify part is scoped to the 40V facet before use"
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a TO land pattern is intended."
  ],
  "avoid_when": [
-  "A TO package family is not suitable for the target layout",
-  "The needed footprint variant is not among the listed TO footprints",
-  "Review status is a concern, since these entries are marked generated rather than manually verified",
-  "Electrical requirements beyond the 40V facet are not confirmed for the specific part"
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than TO."
  ],
  "keywords": [
-  "discrete diode",
-  "to package",
-  "40v",
-  "to-220",
-  "to-263",
-  "to-252",
-  "to-247",
-  "to-277b",
-  "to-269aa",
-  "to-218",
-  "smd",
-  "through hole",
-  "vertical",
-  "tabpin1",
-  "alternate kicad library",
-  "akl",
-  "tier a",
-  "diode cluster",
   "to",
   "diode",
   "schottky",
+  "40v",
   "dual",
+  "vertical",
+  "akl",
   "alternate",
-  "kicad"
+  "kicad",
+  "library",
+  "discrete",
+  "common",
+  "cathode",
+  "rm",
+  "commoncathode",
+  "d2pak"
  ],
  "facts": {
   "package_family": "TO",
@@ -79,7 +69,7 @@
    "A": 60,
    "B": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -186,6 +176,6 @@
   "Alternate-KiCad-Library/Diode_TVS_AKL/RBO40-40T",
   "Alternate-KiCad-Library/Diode_Schottky_AKL/1SS293"
  ],
- "embedding_text": "discrete-diode.to.40v | Discrete Diode | Cluster of 61 discrete TO-package diode parts rated for the 40V facet, sourced from Alternate-KiCad-Library, spanning SMD and through-hole TO footprints such as TO-220, TO-263, TO-252, TO-247, TO-277B, TO-269AA, and TO-218 variants. | discrete diode to package 40v to-220 to-263 to-252 to-247 to-277b to-269aa to-218 smd through hole vertical tabpin1 alternate kicad library akl tier a diode cluster to diode schottky dual alternate kicad | TO | 40V",
+ "embedding_text": "discrete-diode.to.40v | Discrete Diode | 61 discrete diode parts for 40V using TO footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | to diode schottky 40v dual vertical akl alternate kicad library discrete common cathode rm commoncathode d2pak | TO | 40V",
  "class": "discrete.diode"
 }

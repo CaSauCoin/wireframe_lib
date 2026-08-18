@@ -6,30 +6,21 @@
   "IC",
   "Isolator"
  ],
- "description": "Surface-mount SPI digital isolator ICs in an SSOP-20 footprint package.",
+ "description": "3 ic isolator parts for SPI using SSOP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "An SMD IC isolator supporting SPI interface communication is required.",
-  "The PCB design uses an SSOP-20 footprint.",
-  "Selecting tier A parts such as ADuM3151, ADuM3152, or ADuM3153."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SSOP land pattern is intended."
  ],
  "avoid_when": [
-  "The layout requires a footprint other than SSOP-20.",
-  "The design requires through-hole or non-SMD mounting.",
-  "An isolator interface other than SPI is needed."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SSOP."
  ],
  "keywords": [
-  "ic",
-  "isolator",
-  "ic isolator",
-  "spi",
   "ssop",
-  "ssop-20",
-  "smd",
-  "adum3151",
-  "adum3152",
-  "adum3153",
-  "spi isolator",
-  "digital isolator",
+  "isolator",
+  "spi",
   "channel",
   "75kv",
   "reverse",
@@ -39,7 +30,10 @@
   "65mm",
   "so",
   "isolated",
-  "channels"
+  "ic",
+  "channels",
+  "adum3151",
+  "adum3152"
  ],
  "facts": {
   "package_family": "SSOP",
@@ -62,7 +56,7 @@
   "tier_counts": {
    "A": 3
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -95,6 +89,6 @@
   "kicad-symbols/Isolator/ADuM3152",
   "kicad-symbols/Isolator/ADuM3153"
  ],
- "embedding_text": "ic-isolator.ssop.spi | IC Isolator | Surface-mount SPI digital isolator ICs in an SSOP-20 footprint package. | ic isolator ic isolator spi ssop ssop-20 smd adum3151 adum3152 adum3153 spi isolator digital isolator channel 75kv reverse 3x7 2mm p0 65mm so isolated channels | SSOP | SPI",
+ "embedding_text": "ic-isolator.ssop.spi | IC Isolator | 3 ic isolator parts for SPI using SSOP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | ssop isolator spi channel 75kv reverse 3x7 2mm p0 65mm so isolated ic channels adum3151 adum3152 | SSOP | SPI",
  "class": "ic.isolator"
 }

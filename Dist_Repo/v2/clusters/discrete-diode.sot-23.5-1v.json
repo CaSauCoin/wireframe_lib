@@ -6,30 +6,19 @@
   "Discrete",
   "Diode"
  ],
- "description": "A cluster of 6 surface-mount 5.1V discrete diode parts in SOT-23 footprints from Alternate-KiCad-Library.",
+ "description": "6 discrete diode parts for 5.1V using SOT-23 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Require a 5.1V surface-mount discrete diode in a SOT-23 footprint.",
-  "Selecting among tier A parts from Alternate-KiCad-Library.",
-  "Using SOT-23 package family land patterns."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SOT-23 land pattern is intended."
  ],
  "avoid_when": [
-  "Voltage rating required is different from 5.1V.",
-  "Package or footprint required is not SOT-23.",
-  "Through-hole mount is required instead of SMD."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SOT-23."
  ],
  "keywords": [
-  "discrete diode",
   "diode",
-  "5.1v",
-  "sot-23",
-  "sot23",
-  "smd",
-  "alternate-kicad-library",
-  "2bzx84-c5v1",
-  "az23c5v1",
-  "bzb84-b5v1",
-  "bzx84-c5v1",
-  "dz23-c5v1",
   "sot",
   "zener",
   "1v",
@@ -41,7 +30,10 @@
   "discrete",
   "300mw",
   "common",
-  "c5v1"
+  "c5v1",
+  "anode",
+  "commonanode",
+  "2bzx84"
  ],
  "facts": {
   "package_family": "SOT-23",
@@ -64,7 +56,7 @@
   "tier_counts": {
    "A": 6
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -116,6 +108,6 @@
   "Alternate-KiCad-Library/Diode_Zener_AKL/DZ23-C5V1",
   "Alternate-KiCad-Library/Diode_Zener_AKL/MMBZ5231"
  ],
- "embedding_text": "discrete-diode.sot-23.5-1v | Discrete Diode | A cluster of 6 surface-mount 5.1V discrete diode parts in SOT-23 footprints from Alternate-KiCad-Library. | discrete diode diode 5.1v sot-23 sot23 smd alternate-kicad-library 2bzx84-c5v1 az23c5v1 bzb84-b5v1 bzx84-c5v1 dz23-c5v1 sot zener 1v dual akl alternate kicad library discrete 300mw common c5v1 | SOT-23 | 5.1V",
+ "embedding_text": "discrete-diode.sot-23.5-1v | Discrete Diode | 6 discrete diode parts for 5.1V using SOT-23 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | diode sot zener 1v dual akl alternate kicad library discrete 300mw common c5v1 anode commonanode 2bzx84 | SOT-23 | 5.1V",
  "class": "discrete.diode"
 }

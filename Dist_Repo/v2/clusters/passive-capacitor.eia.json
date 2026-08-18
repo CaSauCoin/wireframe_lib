@@ -6,32 +6,27 @@
   "Passive",
   "Capacitor"
  ],
- "description": "Passive SMD capacitor cluster featuring EIA package family components, including EIA-3528 footprints from the SparkFun KiCad library.",
+ "description": "1 passive capacitor parts using EIA footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when an SMD passive capacitor with an EIA footprint such as EIA-3528 is required.",
-  "Verify specified capacitance, voltage rating, and tolerance against design requirements.",
-  "Review quality tier and source library before committing to board layout."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a EIA land pattern is intended."
  ],
  "avoid_when": [
-  "The design requires through-hole mounting or a non-EIA package family.",
-  "A footprint other than EIA-3528 is required.",
-  "Required electrical ratings or component tolerances are not specified."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than EIA."
  ],
  "keywords": [
-  "passive",
   "capacitor",
-  "eia",
-  "eia-3528",
-  "3528",
-  "smd",
   "sparkfun",
-  "sparkfun-kicad-libraries",
+  "tantalum",
+  "eia",
   "47uf",
   "10v",
-  "passive.capacitor",
-  "tantalum",
   "polarized",
-  "cap"
+  "cap",
+  "passive"
  ],
  "facts": {
   "package_family": "EIA",
@@ -52,7 +47,7 @@
   "tier_counts": {
    "B": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -67,6 +62,6 @@
  "part_ids": [
   "SparkFun-KiCad-Libraries/SparkFun-Capacitor/47uF_3528_10V_10%"
  ],
- "embedding_text": "passive-capacitor.eia | Passive Capacitor | Passive SMD capacitor cluster featuring EIA package family components, including EIA-3528 footprints from the SparkFun KiCad library. | passive capacitor eia eia-3528 3528 smd sparkfun sparkfun-kicad-libraries 47uf 10v passive.capacitor tantalum polarized cap | EIA | ",
+ "embedding_text": "passive-capacitor.eia | Passive Capacitor | 1 passive capacitor parts using EIA footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | capacitor sparkfun tantalum eia 47uf 10v polarized cap passive | EIA | ",
  "class": "passive.capacitor"
 }

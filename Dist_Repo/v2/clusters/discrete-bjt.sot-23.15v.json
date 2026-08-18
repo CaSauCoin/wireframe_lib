@@ -6,44 +6,34 @@
   "Discrete",
   "BJT"
  ],
- "description": "Cluster of 7 SMD discrete BJT parts sharing the 15V facet and SOT-23 footprint, all tier A with generated review status.",
+ "description": "7 discrete bjt parts for 15V using SOT-23 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "All 7 parts are tier A (score 100); differentiate by exact part number and source",
-  "Confirm SOT-23 footprint matches your intended land pattern",
-  "Cross-check source (Alternate-KiCad-Library vs kicad-symbols) against your trusted library policy",
-  "Verify actual voltage/current ratings from the part's own datasheet, not the cluster facet alone"
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SOT-23 land pattern is intended."
  ],
  "avoid_when": [
-  "Design requires a package other than SOT-23",
-  "Required electrical ratings are not confirmed on the specific part's datasheet",
-  "Review status must be verified/curated rather than generated",
-  "A through-hole or non-SMD mount is needed"
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SOT-23."
  ],
  "keywords": [
-  "bjt",
-  "discrete transistor",
-  "sot-23",
-  "smd",
-  "15v",
-  "bft92",
-  "bfr92p",
-  "bfs17p",
-  "fmmt617",
-  "mmbt2369",
-  "kicad-symbols",
-  "alternate-kicad-library",
-  "tier a",
-  "transistor_bjt",
-  "sot23 footprint",
-  "surface mount transistor",
   "sot",
   "transistor",
+  "bjt",
+  "15v",
   "npn",
   "discrete",
   "akl",
   "alternate",
   "kicad",
-  "library"
+  "library",
+  "rf",
+  "5ghz",
+  "200ma",
+  "bfr92p",
+  "280mw",
+  "bfs17p"
  ],
  "facts": {
   "package_family": "SOT-23",
@@ -67,7 +57,7 @@
   "tier_counts": {
    "A": 7
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -120,6 +110,6 @@
   "Alternate-KiCad-Library/Transistor_BJT_AKL/MMBT2369A",
   "Alternate-KiCad-Library/Transistor_BJT_AKL/PMBT2369"
  ],
- "embedding_text": "discrete-bjt.sot-23.15v | Discrete BJT | Cluster of 7 SMD discrete BJT parts sharing the 15V facet and SOT-23 footprint, all tier A with generated review status. | bjt discrete transistor sot-23 smd 15v bft92 bfr92p bfs17p fmmt617 mmbt2369 kicad-symbols alternate-kicad-library tier a transistor_bjt sot23 footprint surface mount transistor sot transistor npn discrete akl alternate kicad library | SOT-23 | 15V",
+ "embedding_text": "discrete-bjt.sot-23.15v | Discrete BJT | 7 discrete bjt parts for 15V using SOT-23 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | sot transistor bjt 15v npn discrete akl alternate kicad library rf 5ghz 200ma bfr92p 280mw bfs17p | SOT-23 | 15V",
  "class": "discrete.bjt"
 }

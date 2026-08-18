@@ -5,30 +5,19 @@
  "category_path": [
   "IC"
  ],
- "description": "Surface-mount integrated circuit cluster featuring VSO package footprints, including VSO-40 and VSO-56.",
+ "description": "2 ic parts using VSO footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Verify target layout matches SMD VSO footprints such as VSO-40 or VSO-56.",
-  "Confirm pitch requirements of 0.762mm or 0.75mm.",
-  "Review specific part details and tier quality before placement."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a VSO land pattern is intended."
  ],
  "avoid_when": [
-  "The application requires through-hole or non-SMD mounting.",
-  "The board layout requires package families other than VSO.",
-  "Required electrical specifications are not specified in the part entry."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than VSO."
  ],
  "keywords": [
   "vso",
-  "vso-40",
-  "vso-56",
-  "ic",
-  "integrated circuit",
-  "smd",
-  "surface mount",
-  "0.762mm pitch",
-  "0.75mm pitch",
-  "7.6x15.4mm",
-  "11.1x21.5mm",
-  "vso package",
   "p0",
   "6x15",
   "4mm",
@@ -36,11 +25,14 @@
   "1x21",
   "5mm",
   "75mm",
+  "ic",
   "package",
   "ssop",
   "pdf",
   "surface",
-  "mount"
+  "mount",
+  "pad",
+  "mm"
  ],
  "facts": {
   "package_family": "VSO",
@@ -62,13 +54,13 @@
   "tier_counts": {
    "C": 2
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
   "dist-legacy/VSO-40_7.6x15.4mm_P0.762mm",
   "dist-legacy/VSO-56_11.1x21.5mm_P0.75mm"
  ],
- "embedding_text": "ic.vso | IC | Surface-mount integrated circuit cluster featuring VSO package footprints, including VSO-40 and VSO-56. | vso vso-40 vso-56 ic integrated circuit smd surface mount 0.762mm pitch 0.75mm pitch 7.6x15.4mm 11.1x21.5mm vso package p0 6x15 4mm 762mm 1x21 5mm 75mm package ssop pdf surface mount | VSO | ",
+ "embedding_text": "ic.vso | IC | 2 ic parts using VSO footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | vso p0 6x15 4mm 762mm 1x21 5mm 75mm ic package ssop pdf surface mount pad mm | VSO | ",
  "class": "ic"
 }

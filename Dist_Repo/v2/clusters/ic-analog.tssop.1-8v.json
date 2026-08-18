@@ -6,32 +6,23 @@
   "IC",
   "Analog"
  ],
- "description": "Surface-mount 1.8V analog ICs in TSSOP packaging, including TSSOP-16 footprints from KiCad symbol sources.",
+ "description": "1 ic analog parts for 1.8V using TSSOP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select for 1.8V analog IC applications requiring surface-mount TSSOP packaging.",
-  "Ensure PCB footprint compatibility with TSSOP-16 (4.4x5mm, 0.65mm lead pitch).",
-  "Use when looking for Tier A quality parts such as TMUX4051PW."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a TSSOP land pattern is intended."
  ],
  "avoid_when": [
-  "The design requires through-hole or non-TSSOP component packaging.",
-  "Operating voltage requirements differ from 1.8V.",
-  "The board layout does not accommodate TSSOP-16 footprints."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than TSSOP."
  ],
  "keywords": [
   "tssop",
-  "tssop-16",
   "analog",
-  "ic",
-  "1.8v",
-  "smd",
-  "tmux4051pw",
-  "analog switch",
-  "ic.analog",
-  "kicad-symbols",
-  "tier a",
-  "surface mount",
   "8v",
   "texas",
+  "tmux4051pw",
   "switch",
   "cmos",
   "single",
@@ -41,7 +32,8 @@
   "compatible",
   "60ohm",
   "ron",
-  "typ"
+  "typ",
+  "24v"
  ],
  "facts": {
   "package_family": "TSSOP",
@@ -64,7 +56,7 @@
   "tier_counts": {
    "A": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -79,6 +71,6 @@
  "part_ids": [
   "kicad-symbols/Analog_Switch/TMUX4051PW"
  ],
- "embedding_text": "ic-analog.tssop.1-8v | IC Analog | Surface-mount 1.8V analog ICs in TSSOP packaging, including TSSOP-16 footprints from KiCad symbol sources. | tssop tssop-16 analog ic 1.8v smd tmux4051pw analog switch ic.analog kicad-symbols tier a surface mount 8v texas switch cmos single multiplexer demultiplexer logic compatible 60ohm ron typ | TSSOP | 1.8V",
+ "embedding_text": "ic-analog.tssop.1-8v | IC Analog | 1 ic analog parts for 1.8V using TSSOP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | tssop analog 8v texas tmux4051pw switch cmos single multiplexer demultiplexer logic compatible 60ohm ron typ 24v | TSSOP | 1.8V",
  "class": "ic.analog"
 }

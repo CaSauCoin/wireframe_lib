@@ -6,32 +6,25 @@
   "IC",
   "Driver"
  ],
- "description": "IC driver cluster containing Tier A surface-mount (SMD) parts using WSON footprints, such as WSON-8-1EP_2x2mm_P0.5mm_EP0.9x1.6mm.",
+ "description": "1 ic driver parts using WSON footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Selecting surface-mount (SMD) driver IC parts in WSON packages.",
-  "Matching board layout to the WSON-8-1EP_2x2mm_P0.5mm_EP0.9x1.6mm footprint.",
-  "Utilizing Tier A component entries sourced from kicad-symbols."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a WSON land pattern is intended."
  ],
  "avoid_when": [
-  "The design requires through-hole or non-SMD mounting.",
-  "The board layout requires package footprints other than WSON.",
-  "Components other than driver ICs are needed."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than WSON."
  ],
  "keywords": [
-  "ic",
   "driver",
-  "ic driver",
   "wson",
-  "smd",
-  "wson-8-1ep_2x2mm_p0.5mm_ep0.9x1.6mm",
-  "lm2105dsg",
-  "kicad-symbols",
-  "surface mount",
-  "wson-8",
   "1ep",
   "half",
   "bridge",
   "bootstrap",
+  "lm2105dsg",
   "fet",
   "with",
   "uvlo",
@@ -61,7 +54,7 @@
   "tier_counts": {
    "A": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -76,6 +69,6 @@
  "part_ids": [
   "kicad-symbols/Driver_FET/LM2105DSG"
  ],
- "embedding_text": "ic-driver.wson | IC Driver | IC driver cluster containing Tier A surface-mount (SMD) parts using WSON footprints, such as WSON-8-1EP_2x2mm_P0.5mm_EP0.9x1.6mm. | ic driver ic driver wson smd wson-8-1ep_2x2mm_p0.5mm_ep0.9x1.6mm lm2105dsg kicad-symbols surface mount wson-8 1ep half bridge bootstrap fet with uvlo and integrated diode 2x2mm p0 5mm | WSON | ",
+ "embedding_text": "ic-driver.wson | IC Driver | 1 ic driver parts using WSON footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | driver wson 1ep half bridge bootstrap lm2105dsg fet with uvlo and integrated diode 2x2mm p0 5mm | WSON | ",
  "class": "ic.driver"
 }

@@ -6,28 +6,19 @@
   "IC",
   "Analog"
  ],
- "description": "Analog IC cluster with SMD parts using OnSemi footprints such as OnSemi_UDFN-8_1.2x1.8mm_P0.4mm from Alternate-KiCad-Library.",
+ "description": "1 ic analog parts using OnSemi footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Selecting surface-mount analog ICs using OnSemi footprints such as OnSemi_UDFN-8_1.2x1.8mm_P0.4mm.",
-  "Using parts from Alternate-KiCad-Library with Tier B quality status.",
-  "Designs requiring SMD mounting in OnSemi package family footprints."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a OnSemi land pattern is intended."
  ],
  "avoid_when": [
-  "Through-hole mounting or non-SMD packages are required.",
-  "The PCB layout requires packages outside the OnSemi package family.",
-  "Tier A verified parts are strictly required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than OnSemi."
  ],
  "keywords": [
-  "ic",
   "analog",
-  "onsemi",
-  "smd",
-  "onsemi_udfn-8_1.2x1.8mm_p0.4mm",
-  "lmv393mutag",
-  "alternate-kicad-library",
-  "analog comparator",
-  "udfn-8",
-  "tier b",
   "comparator",
   "udfn",
   "dual",
@@ -35,6 +26,8 @@
   "power",
   "open",
   "drain",
+  "onsemi",
+  "lmv393mutag",
   "akl",
   "with",
   "output",
@@ -61,7 +54,7 @@
   "tier_counts": {
    "B": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -76,6 +69,6 @@
  "part_ids": [
   "Alternate-KiCad-Library/Analog_Comparator_AKL/LMV393MUTAG"
  ],
- "embedding_text": "ic-analog.onsemi | IC Analog | Analog IC cluster with SMD parts using OnSemi footprints such as OnSemi_UDFN-8_1.2x1.8mm_P0.4mm from Alternate-KiCad-Library. | ic analog onsemi smd onsemi_udfn-8_1.2x1.8mm_p0.4mm lmv393mutag alternate-kicad-library analog comparator udfn-8 tier b comparator udfn dual low power open drain akl with output 900ns propagation delay | OnSemi | ",
+ "embedding_text": "ic-analog.onsemi | IC Analog | 1 ic analog parts using OnSemi footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | analog comparator udfn dual low power open drain onsemi lmv393mutag akl with output 900ns propagation delay | OnSemi | ",
  "class": "ic.analog"
 }

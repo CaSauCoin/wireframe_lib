@@ -6,35 +6,28 @@
   "IC",
   "FPGA"
  ],
- "description": "Cluster of 5 surface-mount FPGA and CPLD ICs in PLCC packages including PLCC-44, PLCC-68, and PLCC-84 footprints.",
+ "description": "5 ic fpga parts using PLCC footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Match required package footprint to PLCC-44, PLCC-68, or PLCC-84.",
-  "Confirm surface-mount (SMD) PLCC land pattern compatibility.",
-  "Check specific part symbol and pin count requirements."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a PLCC land pattern is intended."
  ],
  "avoid_when": [
-  "The design requires non-PLCC package footprints.",
-  "Through-hole mounting is required instead of SMD.",
-  "Footprint requirements differ from PLCC-44, PLCC-68, or PLCC-84."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than PLCC."
  ],
  "keywords": [
-  "ic",
-  "fpga",
-  "cpld",
   "plcc",
-  "smd",
-  "plcc-44",
-  "plcc-68",
-  "plcc-84",
-  "xc9536xl",
+  "fpga",
   "xc9572xl",
-  "act1020pl44",
-  "act1020pl68",
-  "act1225pl84",
+  "xc9536xl",
+  "cpld",
   "actel",
   "p1",
   "27mm",
   "lcc",
+  "ic",
   "xilinx",
   "6x16",
   "6mm",
@@ -63,7 +56,7 @@
   "tier_counts": {
    "B": 5
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -114,6 +107,6 @@
   "kicad-symbols/FPGA_Microsemi/ACT1020PL68",
   "kicad-symbols/FPGA_Microsemi/ACT1225PL84"
  ],
- "embedding_text": "ic-fpga.plcc | IC FPGA | Cluster of 5 surface-mount FPGA and CPLD ICs in PLCC packages including PLCC-44, PLCC-68, and PLCC-84 footprints. | ic fpga cpld plcc smd plcc-44 plcc-68 plcc-84 xc9536xl xc9572xl act1020pl44 act1020pl68 act1225pl84 actel p1 27mm lcc xilinx 6x16 6mm microsemi act1 xxpcx44 | PLCC | ",
+ "embedding_text": "ic-fpga.plcc | IC FPGA | 5 ic fpga parts using PLCC footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | plcc fpga xc9572xl xc9536xl cpld actel p1 27mm lcc ic xilinx 6x16 6mm microsemi act1 xxpcx44 | PLCC | ",
  "class": "ic.fpga"
 }

@@ -6,28 +6,21 @@
   "Discrete",
   "Diode"
  ],
- "description": "Discrete diode cluster containing 1 tier-C part associated with the R5WD package family and footprint.",
+ "description": "1 discrete diode parts using R5WD footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when a discrete diode with an R5WD footprint is required.",
-  "Verify electrical ratings and footprint compatibility for tier-C data.",
-  "Check symbol-to-footprint pin mapping prior to PCB layout."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a R5WD land pattern is intended."
  ],
  "avoid_when": [
-  "The design requires a footprint family other than R5WD.",
-  "Only planner-visible or higher quality tier parts are acceptable.",
-  "Electrical parameters or mounting specifications are unknown or unverified."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than R5WD."
  ],
  "keywords": [
+  "r5wd",
   "discrete",
   "diode",
-  "r5wd",
-  "discrete diode",
-  "r5wd footprint",
-  "package family r5wd",
-  "discrete.diode",
-  "tier c",
-  "dist legacy",
-  "tier-c diode",
   "pad",
   "mm",
   "pitch",
@@ -52,12 +45,12 @@
   "tier_counts": {
    "C": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
   "dist-legacy/R5WD"
  ],
- "embedding_text": "discrete-diode.r5wd | Discrete Diode | Discrete diode cluster containing 1 tier-C part associated with the R5WD package family and footprint. | discrete diode r5wd discrete diode r5wd footprint package family r5wd discrete.diode tier c dist legacy tier-c diode pad mm pitch pins | R5WD | ",
+ "embedding_text": "discrete-diode.r5wd | Discrete Diode | 1 discrete diode parts using R5WD footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | r5wd discrete diode pad mm pitch pins | R5WD | ",
  "class": "discrete.diode"
 }

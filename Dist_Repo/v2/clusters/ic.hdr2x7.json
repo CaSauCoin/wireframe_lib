@@ -5,28 +5,20 @@
  "category_path": [
   "IC"
  ],
- "description": "Integrated circuit cluster containing 3 tier C parts using HDR2X7 and HDR2X7_CEN footprints.",
+ "description": "3 ic parts using HDR2X7 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when board layout requires HDR2X7 or HDR2X7_CEN footprints.",
-  "Verify footprint variant and pin-to-pad mappings against official documentation.",
-  "Confirm tier C part quality meets project requirements."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a HDR2X7 land pattern is intended."
  ],
  "avoid_when": [
-  "The design requires a footprint other than HDR2X7 or HDR2X7_CEN.",
-  "Tier C quality ratings do not meet library reliability standards.",
-  "Required electrical ratings, dimensions, or pinouts are unverified."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than HDR2X7."
  ],
  "keywords": [
   "hdr2x7",
-  "hdr2x7_cen",
   "ic",
-  "integrated circuit",
-  "footprint",
-  "package family",
-  "tier c",
-  "dist-legacy",
-  "hdr",
-  "land pattern",
   "cen",
   "duplicate",
   "pad",
@@ -54,7 +46,7 @@
   "tier_counts": {
    "C": 3
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
@@ -62,6 +54,6 @@
   "dist-legacy/HDR2X7",
   "dist-legacy/HDR2X7_CEN"
  ],
- "embedding_text": "ic.hdr2x7 | IC | Integrated circuit cluster containing 3 tier C parts using HDR2X7 and HDR2X7_CEN footprints. | hdr2x7 hdr2x7_cen ic integrated circuit footprint package family tier c dist-legacy hdr land pattern cen duplicate pad mm pitch pins | HDR2X7 | ",
+ "embedding_text": "ic.hdr2x7 | IC | 3 ic parts using HDR2X7 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | hdr2x7 ic cen duplicate pad mm pitch pins | HDR2X7 | ",
  "class": "ic"
 }

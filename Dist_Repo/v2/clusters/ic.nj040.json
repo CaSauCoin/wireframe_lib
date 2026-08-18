@@ -5,28 +5,20 @@
  "category_path": [
   "IC"
  ],
- "description": "IC component cluster containing 1 tier-C part using the NJ040 footprint and package family.",
+ "description": "1 ic parts using NJ040 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Use when a design specifically requires an IC in the NJ040 package family.",
-  "Verify tier C part details and footprint compatibility prior to board design.",
-  "Check pin-to-pad mappings manually since mount details are unknown."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a NJ040 land pattern is intended."
  ],
  "avoid_when": [
-  "The board design requires a footprint other than NJ040.",
-  "Only fully verified or higher-tier parts are acceptable.",
-  "Exact pinouts and electrical ratings are required but unstated in cluster data."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than NJ040."
  ],
  "keywords": [
-  "ic",
   "nj040",
-  "nj040 footprint",
-  "nj040 package",
-  "integrated circuit",
-  "tier c",
-  "ic.nj040",
-  "dist-legacy",
-  "unknown mount",
-  "package family nj040",
+  "ic",
   "pad",
   "mm",
   "pitch",
@@ -51,12 +43,12 @@
   "tier_counts": {
    "C": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
   "dist-legacy/NJ040"
  ],
- "embedding_text": "ic.nj040 | IC | IC component cluster containing 1 tier-C part using the NJ040 footprint and package family. | ic nj040 nj040 footprint nj040 package integrated circuit tier c ic.nj040 dist-legacy unknown mount package family nj040 pad mm pitch pins | NJ040 | ",
+ "embedding_text": "ic.nj040 | IC | 1 ic parts using NJ040 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | nj040 ic pad mm pitch pins | NJ040 | ",
  "class": "ic"
 }

@@ -6,44 +6,34 @@
   "Discrete",
   "Diode"
  ],
- "description": "Cluster of 76 discrete diode parts (73 tier A, 3 tier B) using D-family footprints (SMA, SMB, SMC, MELF, SOD-123F, DO-41, DO-201, P600) for a 110V facet, mixing Zener- and TVS-labeled footprint variants, sourced from Alternate-KiCad-Library.",
+ "description": "76 discrete diode parts for 110V using D footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Match the exact D-family footprint (SMA/SMB/SMC/MELF/SOD-123F/DO-41/DO-201/P600) to the intended PCB land pattern.",
-  "Note whether the footprint is labeled Zener or TVS before selecting, since both are present in this cluster.",
-  "Prefer tier A parts (73 of 76) over the 3 tier B parts.",
-  "Confirm mount type (smd vs through_hole) matches the target board."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a D land pattern is intended."
  ],
  "avoid_when": [
-  "The needed rating isn't the 110V facet this cluster is tagged with.",
-  "The board requires a footprint outside the D package family.",
-  "Zener vs TVS behavior matters and the part's footprint label doesn't clearly indicate which.",
-  "Review status other than 'generated' data quality is required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than D."
  ],
  "keywords": [
   "diode",
-  "discrete diode",
   "tvs",
-  "zener",
   "110v",
-  "d package",
-  "sma",
-  "smb",
-  "smc",
-  "melf",
-  "sod-123f",
-  "do-41",
-  "do-201",
-  "p600",
-  "horizontal",
-  "smd",
-  "through hole",
-  "alternate-kicad-library",
+  "zener",
   "do",
   "akl",
   "alternate",
   "kicad",
   "library",
-  "discrete"
+  "discrete",
+  "horizontal",
+  "unidirectional",
+  "smb",
+  "bidirectional",
+  "sma",
+  "smc"
  ],
  "facts": {
   "package_family": "D",
@@ -79,7 +69,7 @@
    "A": 73,
    "B": 3
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -201,6 +191,6 @@
   "Alternate-KiCad-Library/Diode_TVS_AKL/BZW03-C110",
   "Alternate-KiCad-Library/Diode_TVS_AKL/BZW03-D110"
  ],
- "embedding_text": "discrete-diode.d.110v | Discrete Diode | Cluster of 76 discrete diode parts (73 tier A, 3 tier B) using D-family footprints (SMA, SMB, SMC, MELF, SOD-123F, DO-41, DO-201, P600) for a 110V facet, mixing Zener- and TVS-labeled footprint variants, sourced from Alternate-KiCad-Library. | diode discrete diode tvs zener 110v d package sma smb smc melf sod-123f do-41 do-201 p600 horizontal smd through hole alternate-kicad-library do akl alternate kicad library discrete | D | 110V",
+ "embedding_text": "discrete-diode.d.110v | Discrete Diode | 76 discrete diode parts for 110V using D footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | diode tvs 110v zener do akl alternate kicad library discrete horizontal unidirectional smb bidirectional sma smc | D | 110V",
  "class": "discrete.diode"
 }

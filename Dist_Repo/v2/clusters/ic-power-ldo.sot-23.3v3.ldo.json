@@ -7,35 +7,29 @@
   "Power",
   "Linear Regulator"
  ],
- "description": "Cluster of 3.3V LDO linear regulator ICs in surface-mount SOT-23 packages.",
+ "description": "12 ic power linear regulator parts for 3.3V, LDO using SOT-23 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select for 3.3V LDO linear regulator designs requiring surface-mount SOT-23 footprints.",
-  "Use when selecting Tier A quality IC parts from KiCad symbol sources.",
-  "Choose when standard SOT-23 package family mounting is specified."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SOT-23 land pattern is intended."
  ],
  "avoid_when": [
-  "A fixed output voltage other than 3.3V is required.",
-  "The PCB layout requires non-SOT-23 footprints or through-hole mounting.",
-  "A switching regulator or non-LDO power IC topology is needed."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SOT-23."
  ],
  "keywords": [
-  "ic",
-  "power",
-  "linear regulator",
-  "ldo",
-  "3.3v",
-  "sot-23",
-  "smd",
-  "kicad-symbols",
-  "regulator",
-  "linear",
-  "tier a",
-  "3v3",
   "sot",
+  "regulator",
+  "ldo",
+  "linear",
   "3v",
   "low",
   "fixed",
   "to",
+  "smd",
+  "ic",
+  "power",
   "output",
   "voltage",
   "dropout",
@@ -64,7 +58,7 @@
   "tier_counts": {
    "A": 12
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -122,6 +116,6 @@
   "kicad-symbols/Regulator_Linear/MCP1799x-330xxTT",
   "kicad-symbols/Regulator_Linear/TPS7A0533PDBZ"
  ],
- "embedding_text": "ic-power-ldo.sot-23.3v3.ldo | IC Power Linear Regulator | Cluster of 3.3V LDO linear regulator ICs in surface-mount SOT-23 packages. | ic power linear regulator ldo 3.3v sot-23 smd kicad-symbols regulator linear tier a 3v3 sot 3v low fixed to output voltage dropout positive 300ma | SOT-23 | 3.3V LDO",
+ "embedding_text": "ic-power-ldo.sot-23.3v3.ldo | IC Power Linear Regulator | 12 ic power linear regulator parts for 3.3V, LDO using SOT-23 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | sot regulator ldo linear 3v low fixed to smd ic power output voltage dropout positive 300ma | SOT-23 | 3.3V LDO",
  "class": "ic.power.ldo"
 }

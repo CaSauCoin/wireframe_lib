@@ -6,28 +6,18 @@
   "Power",
   "Power Supply"
  ],
- "description": "SMD power supply components rated for 30V operation in SOT-23 and SOT-23-6 packages.",
+ "description": "1 power power supply parts for 30V using SOT-23 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Verify the target circuit requires a 30V-rated power supply component.",
-  "Ensure compatibility with SOT-23 or SOT-23-6 surface-mount footprints.",
-  "Check part specifications and KiCad symbol mappings prior to PCB layout."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SOT-23 land pattern is intended."
  ],
  "avoid_when": [
-  "Voltage ratings other than 30V are needed.",
-  "The PCB layout requires packages other than SOT-23 or SOT-23-6.",
-  "Through-hole mounting is required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SOT-23."
  ],
  "keywords": [
-  "power",
-  "power supply",
-  "30v",
-  "sot-23",
-  "sot-23-6",
-  "sot23",
-  "smd",
-  "bq21040dbv",
-  "battery management",
-  "kicad",
   "sot",
   "battery",
   "management",
@@ -35,7 +25,10 @@
   "li",
   "charge",
   "to",
+  "30v",
   "input",
+  "power",
+  "bq21040dbv",
   "single",
   "8a",
   "ion",
@@ -63,7 +56,7 @@
   "tier_counts": {
    "A": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -78,6 +71,6 @@
  "part_ids": [
   "kicad-symbols/Battery_Management/BQ21040DBV"
  ],
- "embedding_text": "power-supply.sot-23.30v | Power Power Supply | SMD power supply components rated for 30V operation in SOT-23 and SOT-23-6 packages. | power power supply 30v sot-23 sot-23-6 sot23 smd bq21040dbv battery management kicad sot battery management cell li charge to input single 8a ion po linear | SOT-23 | 30V",
+ "embedding_text": "power-supply.sot-23.30v | Power Power Supply | 1 power power supply parts for 30V using SOT-23 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | sot battery management cell li charge to 30v input power bq21040dbv single 8a ion po linear | SOT-23 | 30V",
  "class": "power.supply"
 }

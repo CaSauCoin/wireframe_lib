@@ -6,33 +6,24 @@
   "IC",
   "Analog"
  ],
- "description": "Analog IC cluster featuring SPI interface and 1.2V facets in surface-mount TSSOP packaging, including TSSOP-20_4.4x6.5mm_P0.65mm footprints.",
+ "description": "1 ic analog parts for SPI, 1.2V using TSSOP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when requiring surface-mount analog ICs with an SPI interface and 1.2V operation.",
-  "Verify footprint compatibility for TSSOP-20 (4.4x6.5mm, 0.65mm pitch) land patterns.",
-  "Confirm part suitability against representative entry ADS131M04xPW."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a TSSOP land pattern is intended."
  ],
  "avoid_when": [
-  "The PCB design requires a package family other than TSSOP.",
-  "The application does not use an SPI interface or 1.2V operating specification.",
-  "Through-hole or non-SMD component mounting is required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than TSSOP."
  ],
  "keywords": [
-  "ic",
-  "ic.analog",
-  "analog ic",
   "tssop",
-  "tssop-20",
-  "spi",
-  "1.2v",
-  "smd",
-  "ads131m04xpw",
-  "kicad-symbols",
-  "surface mount",
-  "adc",
-  "tssop-20_4.4x6.5mm_p0.65mm",
   "analog",
+  "adc",
+  "spi",
   "2v",
+  "ads131m04xpw",
   "channel",
   "bit",
   "simultaneous",
@@ -41,7 +32,8 @@
   "sigma",
   "64ksps",
   "pga",
-  "interface"
+  "interface",
+  "integrated"
  ],
  "facts": {
   "package_family": "TSSOP",
@@ -65,7 +57,7 @@
   "tier_counts": {
    "A": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -80,6 +72,6 @@
  "part_ids": [
   "kicad-symbols/Analog_ADC/ADS131M04xPW"
  ],
- "embedding_text": "ic-analog.tssop.spi.1-2v | IC Analog | Analog IC cluster featuring SPI interface and 1.2V facets in surface-mount TSSOP packaging, including TSSOP-20_4.4x6.5mm_P0.65mm footprints. | ic ic.analog analog ic tssop tssop-20 spi 1.2v smd ads131m04xpw kicad-symbols surface mount adc tssop-20_4.4x6.5mm_p0.65mm analog 2v channel bit simultaneous sampling delta sigma 64ksps pga interface | TSSOP | SPI 1.2V",
+ "embedding_text": "ic-analog.tssop.spi.1-2v | IC Analog | 1 ic analog parts for SPI, 1.2V using TSSOP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | tssop analog adc spi 2v ads131m04xpw channel bit simultaneous sampling delta sigma 64ksps pga interface integrated | TSSOP | SPI 1.2V",
  "class": "ic.analog"
 }

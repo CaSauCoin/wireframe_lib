@@ -6,33 +6,23 @@
   "IC",
   "DSP"
  ],
- "description": "Digital signal processor (DSP) integrated circuits available in surface-mount QFN packages including 44-pin and 64-pin footprints.",
+ "description": "11 ic dsp parts using QFN footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select based on footprint requirements, such as QFN-44-1EP (8x8mm) or QFN-64-1EP (9x9mm).",
-  "Choose specific DSP part numbers from the dsPIC33FJ family.",
-  "Verify SMD mounting compatibility and exposed pad dimensions."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a QFN land pattern is intended."
  ],
  "avoid_when": [
-  "Designs requiring through-hole mounting or non-QFN packages.",
-  "Non-DSP integrated circuit applications.",
-  "Layout requirements outside of QFN-44 and QFN-64 footprint specifications."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than QFN."
  ],
  "keywords": [
   "qfn",
   "dsp",
-  "ic",
-  "smd",
-  "dspic33",
-  "dspic33fj",
-  "qfn-44",
-  "qfn-64",
-  "surface mount",
-  "digital signal processor",
-  "ic dsp",
-  "qfn-44-1ep",
-  "qfn-64-1ep",
   "microchip",
   "bit",
+  "dspic33",
   "40mips",
   "flash",
   "sram",
@@ -41,7 +31,9 @@
   "nolead",
   "digital",
   "signal",
-  "controller"
+  "controller",
+  "ic",
+  "8x8mm"
  ],
  "facts": {
   "package_family": "QFN",
@@ -63,7 +55,7 @@
   "tier_counts": {
    "B": 11
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -120,6 +112,6 @@
   "kicad-symbols/DSP_Microchip_DSPIC33/DSPIC33FJ64MC204",
   "kicad-symbols/DSP_Microchip_DSPIC33/DSPIC33FJ64MC804"
  ],
- "embedding_text": "ic-dsp.qfn | IC DSP | Digital signal processor (DSP) integrated circuits available in surface-mount QFN packages including 44-pin and 64-pin footprints. | qfn dsp ic smd dspic33 dspic33fj qfn-44 qfn-64 surface mount digital signal processor ic dsp qfn-44-1ep qfn-64-1ep microchip bit 40mips flash sram 1ep p0 nolead digital signal controller | QFN | ",
+ "embedding_text": "ic-dsp.qfn | IC DSP | 11 ic dsp parts using QFN footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | qfn dsp microchip bit dspic33 40mips flash sram 1ep p0 nolead digital signal controller ic 8x8mm | QFN | ",
  "class": "ic.dsp"
 }

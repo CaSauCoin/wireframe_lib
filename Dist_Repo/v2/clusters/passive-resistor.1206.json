@@ -6,30 +6,20 @@
   "Passive",
   "Resistor"
  ],
- "description": "Cluster of 46 passive resistor parts in the 1206 package family with surface-mount footprints across multiple EDA libraries.",
+ "description": "46 passive resistor parts using 1206 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Prioritize tier A entries with high scores and standard R_1206_3216Metric footprints.",
-  "Select based on the required footprint variant and source library compatibility.",
-  "Confirm the specific footprint matches your target PCB land pattern."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a 1206 land pattern is intended."
  ],
  "avoid_when": [
-  "The design requires a package family other than 1206.",
-  "A through-hole component is required rather than surface-mount.",
-  "The target CAD environment does not match the available source library footprints."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than 1206."
  ],
  "keywords": [
   "resistor",
-  "passive resistor",
-  "1206",
-  "r_1206",
-  "r_1206_3216metric",
-  "smd",
-  "surface mount",
   "passive",
-  "3216",
-  "kicad",
-  "altium",
-  "chip resistor",
   "surface",
   "mount",
   "res",
@@ -41,7 +31,9 @@
   "jlcpcb",
   "resistors",
   "200v",
-  "250mw"
+  "250mw",
+  "thick",
+  "film"
  ],
  "facts": {
   "package_family": "1206",
@@ -84,7 +76,7 @@
    "B": 20,
    "C": 22
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -176,6 +168,6 @@
   "celestial-altium-library/STACKPOLE CSR1206/STACKPOLE_CSR1206",
   "celestial-altium-library/YAGEO RES 1206_3216/YAGEO_RES_1206_3216"
  ],
- "embedding_text": "passive-resistor.1206 | Passive Resistor | Cluster of 46 passive resistor parts in the 1206 package family with surface-mount footprints across multiple EDA libraries. | resistor passive resistor 1206 r_1206 r_1206_3216metric smd surface mount passive 3216 kicad altium chip resistor surface mount res chip pad mm pitch pins jlcpcb resistors 200v 250mw | 1206 | ",
+ "embedding_text": "passive-resistor.1206 | Passive Resistor | 46 passive resistor parts using 1206 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | resistor passive surface mount res chip pad mm pitch pins jlcpcb resistors 200v 250mw thick film | 1206 | ",
  "class": "passive.resistor"
 }

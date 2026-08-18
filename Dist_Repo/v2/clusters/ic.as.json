@@ -5,27 +5,19 @@
  "category_path": [
   "IC"
  ],
- "description": "Integrated circuit cluster containing surface-mount parts in the AS package family using the AS-MLV-P2_9.1x9.1mm footprint.",
+ "description": "1 ic parts using AS footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Verify compatibility with the AS-MLV-P2_9.1x9.1mm footprint.",
-  "Select for surface-mount IC applications using the AS package family.",
-  "Confirm quality tier B requirements for the digikey-kicad-library entry."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a AS land pattern is intended."
  ],
  "avoid_when": [
-  "Do not use if the layout requires a package other than AS.",
-  "Avoid when surface-mount (SMD) mounting is not supported.",
-  "Avoid if required electrical ratings or pinouts are not specified in the part facts."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than AS."
  ],
  "keywords": [
-  "ic",
   "as",
-  "as-mlv-p2",
-  "as-mlv-p2_9.1x9.1mm",
-  "smd",
-  "digikey-kicad-library",
-  "gas sensors",
-  "9.1x9.1mm",
-  "tier b",
   "gas",
   "sensors",
   "mlv",
@@ -39,7 +31,8 @@
   "1x9",
   "1mm",
   "transducers",
-  "ams"
+  "ams",
+  "ic"
  ],
  "facts": {
   "package_family": "AS",
@@ -60,7 +53,7 @@
   "tier_counts": {
    "B": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -75,6 +68,6 @@
  "part_ids": [
   "digikey-kicad-library/dk_Gas-Sensors/AS-MLV-P2"
  ],
- "embedding_text": "ic.as | IC | Integrated circuit cluster containing surface-mount parts in the AS package family using the AS-MLV-P2_9.1x9.1mm footprint. | ic as as-mlv-p2 as-mlv-p2_9.1x9.1mm smd digikey-kicad-library gas sensors 9.1x9.1mm tier b gas sensors mlv p2 dk mod mems sensor voc to39 1x9 1mm transducers ams | AS | ",
+ "embedding_text": "ic.as | IC | 1 ic parts using AS footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | as gas sensors mlv p2 dk mod mems sensor voc to39 1x9 1mm transducers ams ic | AS | ",
  "class": "ic"
 }

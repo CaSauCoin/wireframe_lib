@@ -7,32 +7,23 @@
   "Driver",
   "Display"
  ],
- "description": "SMD display driver IC cluster featuring 5V and 5.5V ratings with I2C control in DFN package.",
+ "description": "2 ic driver display parts for 5V, I2C, 5.5V using DFN footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when an SMD display driver IC with an I2C interface is required.",
-  "Match with designs calling for the DFN-8-1EP_1.5x1.5mm_P0.4mm_EP0.7x1.2mm footprint.",
-  "Verify application suitability for Tier B KiCad symbol components."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a DFN land pattern is intended."
  ],
  "avoid_when": [
-  "Do not use when non-SMD or non-DFN packages are required.",
-  "Avoid if interface protocols other than I2C are needed.",
-  "Avoid if voltage specifications differ from the 5V and 5.5V ratings."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than DFN."
  ],
  "keywords": [
-  "ic driver display",
-  "display driver",
   "dfn",
-  "smd",
-  "i2c",
-  "5v",
-  "5.5v",
-  "dfn-8",
-  "ktd2026",
-  "ktd2027",
-  "kicad-symbols",
-  "driver_led",
   "driver",
+  "5v",
   "led",
+  "i2c",
   "channel",
   "constant",
   "current",
@@ -42,7 +33,8 @@
   "vin",
   "1ep",
   "5x1",
-  "5mm"
+  "5mm",
+  "p0"
  ],
  "facts": {
   "package_family": "DFN",
@@ -67,7 +59,7 @@
   "tier_counts": {
    "B": 2
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -91,6 +83,6 @@
   "kicad-symbols/Driver_LED/KTD2026",
   "kicad-symbols/Driver_LED/KTD2027"
  ],
- "embedding_text": "ic-driver-display.dfn.5v.i2c | IC Driver Display | SMD display driver IC cluster featuring 5V and 5.5V ratings with I2C control in DFN package. | ic driver display display driver dfn smd i2c 5v 5.5v dfn-8 ktd2026 ktd2027 kicad-symbols driver_led driver led channel constant current linear interface 24maout vin 1ep 5x1 5mm | DFN | 5V I2C 5.5V",
+ "embedding_text": "ic-driver-display.dfn.5v.i2c | IC Driver Display | 2 ic driver display parts for 5V, I2C, 5.5V using DFN footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | dfn driver 5v led i2c channel constant current linear interface 24maout vin 1ep 5x1 5mm p0 | DFN | 5V I2C 5.5V",
  "class": "ic.driver.display"
 }

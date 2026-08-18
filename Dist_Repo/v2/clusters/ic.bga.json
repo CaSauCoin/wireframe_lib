@@ -5,30 +5,20 @@
  "category_path": [
   "IC"
  ],
- "description": "Integrated circuit cluster containing 392 parts using BGA package footprints with surface-mount options across quality tiers A, B, and C.",
+ "description": "392 ic parts using BGA footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Prefer tier A or tier B parts for higher quality verification ratings.",
-  "Match specific BGA footprint requirements including pitch, layout, and package dimensions.",
-  "Verify part source library and footprint compatibility prior to component selection."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a BGA land pattern is intended."
  ],
  "avoid_when": [
-  "The design requires packages other than BGA.",
-  "Through-hole mounting or non-SMD footprints are required.",
-  "Electrical ratings, pinouts, or detailed parameters not included in facts are needed."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than BGA."
  ],
  "keywords": [
   "bga",
   "ic",
-  "integrated circuit",
-  "smd",
-  "surface mount",
-  "mapbga",
-  "bga80",
-  "bga100",
-  "bga64",
-  "bga-64",
-  "ball grid array",
-  "microstar junior",
   "p0",
   "pitch",
   "5mm",
@@ -40,7 +30,9 @@
   "surface",
   "mount",
   "package",
-  "tfbga"
+  "tfbga",
+  "bga80",
+  "ball"
  ],
  "facts": {
   "package_family": "BGA",
@@ -80,7 +72,7 @@
    "B": 78,
    "C": 311
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -518,6 +510,6 @@
   "chilaboard-altium-library/BGA50_24_3X3/BGA50_24_3X3",
   "chilaboard-altium-library/BGA50_8_1909/BGA50_8_1909"
  ],
- "embedding_text": "ic.bga | IC | Integrated circuit cluster containing 392 parts using BGA package footprints with surface-mount options across quality tiers A, B, and C. | bga ic integrated circuit smd surface mount mapbga bga80 bga100 bga64 bga-64 ball grid array microstar junior p0 pitch 5mm pad pins 0mm mm 8mm surface mount package tfbga | BGA | ",
+ "embedding_text": "ic.bga | IC | 392 ic parts using BGA footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | bga ic p0 pitch 5mm pad pins 0mm mm 8mm surface mount package tfbga bga80 ball | BGA | ",
  "class": "ic"
 }

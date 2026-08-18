@@ -5,30 +5,21 @@
  "category_path": [
   "IC"
  ],
- "description": "Surface-mount USB IC cluster containing three tier A parts in the USON-10_2.5x1.0mm_P0.5mm footprint.",
+ "description": "3 ic parts for USB using USON footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when requiring surface-mount USB ICs in a USON package.",
-  "Choose when searching for tier A parts including TPD4E05U06DQA, TPD4EUSB30, or TPD4E02B04DQA.",
-  "Verify requirements match the USON-10_2.5x1.0mm_P0.5mm footprint."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a USON land pattern is intended."
  ],
  "avoid_when": [
-  "Avoid if the design requires packages other than USON.",
-  "Do not use when through-hole mounting is required.",
-  "Avoid if the required footprint is not USON-10_2.5x1.0mm_P0.5mm."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than USON."
  ],
  "keywords": [
-  "ic",
-  "usb",
   "uson",
-  "smd",
-  "uson-10",
-  "uson-10_2.5x1.0mm_p0.5mm",
-  "tpd4e05u06dqa",
-  "tpd4eusb30",
-  "tpd4e02b04dqa",
-  "power protection",
-  "kicad-symbols",
   "protection",
+  "usb",
   "esd",
   "5x1",
   "0mm",
@@ -38,6 +29,7 @@
   "for",
   "p0",
   "pitch",
+  "ic",
   "super",
   "speed",
   "interface"
@@ -63,7 +55,7 @@
   "tier_counts": {
    "A": 3
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -96,6 +88,6 @@
   "kicad-symbols/Power_Protection/TPD4EUSB30",
   "kicad-symbols/Power_Protection/TPD4E02B04DQA"
  ],
- "embedding_text": "ic.uson.usb | IC | Surface-mount USB IC cluster containing three tier A parts in the USON-10_2.5x1.0mm_P0.5mm footprint. | ic usb uson smd uson-10 uson-10_2.5x1.0mm_p0.5mm tpd4e05u06dqa tpd4eusb30 tpd4e02b04dqa power protection kicad-symbols protection esd 5x1 0mm 5mm power channel for p0 pitch super speed interface | USON | USB",
+ "embedding_text": "ic.uson.usb | IC | 3 ic parts for USB using USON footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | uson protection usb esd 5x1 0mm 5mm power channel for p0 pitch ic super speed interface | USON | USB",
  "class": "ic"
 }

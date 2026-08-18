@@ -5,44 +5,34 @@
  "category_path": [
   "Connector"
  ],
- "description": "Cluster of 216 IDC box-header connector parts on 2.54mm-pitch footprints (2-row latch and non-latch, vertical/horizontal, through-hole and SMD variants); select by exact footprint match and part tier.",
+ "description": "216 connector parts using IDC footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Match footprint exactly (pin count, latch vs non-latch, vertical vs horizontal, SMD vs through-hole)",
-  "Prefer tier A parts (8 available) with verified symbol-footprint pairing over tier C entries",
-  "Confirm 2.54mm pin pitch and row count (2x03 through 2x32) fit the target header/cable",
-  "Check source trust (kicad-symbols vs dist-legacy vs JLCPCB) alongside tier when scores tie"
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a IDC land pattern is intended."
  ],
  "avoid_when": [
-  "Required pin count, latch style, or orientation is not among the listed footprints",
-  "Board needs a mounting type (SMD vs through-hole) not matching the chosen footprint",
-  "The symbol-footprint pairing is unverified or flagged for review",
-  "A pin pitch other than 2.54mm is required"
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than IDC."
  ],
  "keywords": [
   "idc",
-  "idc header",
-  "box header",
-  "2.54mm pitch",
-  "latch header",
-  "vertical header",
-  "horizontal header",
-  "through hole connector",
-  "smd header",
-  "2x03",
-  "2x05",
-  "2x07",
-  "2x08",
-  "2x10",
-  "2x13",
-  "2x32",
-  "avr isp",
-  "jtag connector",
   "54mm",
   "header",
   "p2",
   "vertical",
   "through",
-  "hole"
+  "hole",
+  "connector",
+  "double",
+  "pitch",
+  "1mp",
+  "5mm",
+  "row",
+  "latch",
+  "horizontal",
+  "tht"
  ],
  "facts": {
   "package_family": "IDC",
@@ -79,7 +69,7 @@
    "B": 26,
    "C": 182
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -341,6 +331,6 @@
   "dist-legacy/IDC-Header_2x32_P2.54mm_Latch_Horizontal",
   "dist-legacy/IDC-Header_2x32_P2.54mm_Latch_Vertical"
  ],
- "embedding_text": "connector.idc | Connector | Cluster of 216 IDC box-header connector parts on 2.54mm-pitch footprints (2-row latch and non-latch, vertical/horizontal, through-hole and SMD variants); select by exact footprint match and part tier. | idc idc header box header 2.54mm pitch latch header vertical header horizontal header through hole connector smd header 2x03 2x05 2x07 2x08 2x10 2x13 2x32 avr isp jtag connector 54mm header p2 vertical through hole | IDC | ",
+ "embedding_text": "connector.idc | Connector | 216 connector parts using IDC footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | idc 54mm header p2 vertical through hole connector double pitch 1mp 5mm row latch horizontal tht | IDC | ",
  "class": "connector"
 }

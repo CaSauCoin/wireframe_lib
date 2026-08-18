@@ -6,42 +6,34 @@
   "IC",
   "Analog"
  ],
- "description": "Surface-mount analog integrated circuits in LFCSP packages, including DAC, ADC, and analog switch components.",
+ "description": "6 ic analog parts using LFCSP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select based on required analog function such as DAC, ADC, or analog switch.",
-  "Verify the specific LFCSP pin count, lead pitch, and exposed pad dimensions.",
-  "Check quality tier classification between tier A and tier B parts."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a LFCSP land pattern is intended."
  ],
  "avoid_when": [
-  "The PCB design requires through-hole mounting rather than SMD.",
-  "The board layout specifies a package family other than LFCSP.",
-  "The circuit requires non-analog IC components."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than LFCSP."
  ],
  "keywords": [
   "lfcsp",
-  "ic",
   "analog",
-  "smd",
-  "dac",
-  "adc",
   "switch",
   "1ep",
-  "analog switch",
-  "analog dac",
-  "analog adc",
-  "ad9106bcp",
-  "adg758cpz",
-  "adg884xcp",
-  "ad9142",
-  "ad7682bcp",
   "p0",
   "5mm",
+  "ic",
+  "dac",
   "nolead",
   "channel",
   "cmos",
   "bit",
   "4x4mm",
-  "ep2"
+  "ep2",
+  "wd",
+  "devices"
  ],
  "facts": {
   "package_family": "LFCSP",
@@ -68,7 +60,7 @@
    "A": 3,
    "B": 3
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -120,6 +112,6 @@
   "kicad-symbols/Analog_ADC/AD7682BCP",
   "kicad-symbols/Analog_Switch/ADG633YCP"
  ],
- "embedding_text": "ic-analog.lfcsp | IC Analog | Surface-mount analog integrated circuits in LFCSP packages, including DAC, ADC, and analog switch components. | lfcsp ic analog smd dac adc switch 1ep analog switch analog dac analog adc ad9106bcp adg758cpz adg884xcp ad9142 ad7682bcp p0 5mm nolead channel cmos bit 4x4mm ep2 | LFCSP | ",
+ "embedding_text": "ic-analog.lfcsp | IC Analog | 6 ic analog parts using LFCSP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | lfcsp analog switch 1ep p0 5mm ic dac nolead channel cmos bit 4x4mm ep2 wd devices | LFCSP | ",
  "class": "ic.analog"
 }

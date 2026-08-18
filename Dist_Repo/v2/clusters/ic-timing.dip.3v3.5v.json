@@ -6,30 +6,21 @@
   "IC",
   "Timing"
  ],
- "description": "Through-hole timing ICs in DIP packages compatible with 3.3V and 5V supply facets and Oscillator_DIP-14 footprints.",
+ "description": "2 ic timing parts for 3.3V, 5V using DIP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Confirm supply voltage matches 3.3V or 5V facets.",
-  "Verify PCB layout accommodates through-hole mounting with an Oscillator_DIP-14 footprint.",
-  "Select between specific timing part numbers such as GTXO-S14T or GTXO-S14V."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a DIP land pattern is intended."
  ],
  "avoid_when": [
-  "Surface-mount packaging is required instead of through-hole DIP.",
-  "The circuit requires supply voltages other than 3.3V or 5V.",
-  "The board layout requires a footprint other than Oscillator_DIP-14."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than DIP."
  ],
  "keywords": [
-  "ic",
-  "timing",
-  "timing ic",
-  "dip",
-  "through hole",
-  "3.3v",
-  "5v",
-  "oscillator_dip-14",
   "oscillator",
-  "gtxo-s14t",
-  "gtxo-s14v",
-  "kicad-symbols",
+  "5v",
+  "dip",
   "gtxo",
   "stratum",
   "sinewave",
@@ -40,6 +31,8 @@
   "package",
   "crystal",
   "clock",
+  "ic",
+  "timing",
   "3v"
  ],
  "facts": {
@@ -64,7 +57,7 @@
   "tier_counts": {
    "A": 2
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -88,6 +81,6 @@
   "kicad-symbols/Oscillator/GTXO-S14T",
   "kicad-symbols/Oscillator/GTXO-S14V"
  ],
- "embedding_text": "ic-timing.dip.3v3.5v | IC Timing | Through-hole timing ICs in DIP packages compatible with 3.3V and 5V supply facets and Oscillator_DIP-14 footprints. | ic timing timing ic dip through hole 3.3v 5v oscillator_dip-14 oscillator gtxo-s14t gtxo-s14v kicad-symbols gtxo stratum sinewave tcxo dip14 style metal package crystal clock 3v | DIP | 3.3V 5V",
+ "embedding_text": "ic-timing.dip.3v3.5v | IC Timing | 2 ic timing parts for 3.3V, 5V using DIP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | oscillator 5v dip gtxo stratum sinewave tcxo dip14 style metal package crystal clock ic timing 3v | DIP | 3.3V 5V",
  "class": "ic.timing"
 }

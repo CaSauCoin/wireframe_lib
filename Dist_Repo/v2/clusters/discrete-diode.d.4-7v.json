@@ -6,43 +6,34 @@
   "Discrete",
   "Diode"
  ],
- "description": "Cluster of 62 discrete diode parts (60 tier A, 2 tier B) sharing package family D and a 4.7V facet, spanning SMD and through-hole footprints including SOD-123/323/523, SMA, MELF/MiniMELF/MicroMELF, and DO-35/DO-41 zener-labeled patterns.",
+ "description": "62 discrete diode parts for 4.7V using D footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Match the exact footprint (SOD-123/323/523, SMA, MELF, MiniMELF, DO-35/DO-41) to your PCB land pattern",
-  "Prefer tier A entries (60 of 62 parts) over the 2 tier B entries",
-  "Confirm the 4.7V facet matches your circuit's required rating",
-  "Pick SMD or through-hole mount based on your assembly process"
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a D land pattern is intended."
  ],
  "avoid_when": [
-  "The required voltage differs from the 4.7V facet",
-  "Your board layout needs a footprint outside this D-family list",
-  "Only a tier B or unreviewed entry fits and the dataset is still review_status=generated"
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than D."
  ],
  "keywords": [
   "diode",
   "zener",
-  "4.7v",
-  "4v7",
-  "package d",
-  "sod-123",
-  "sod-323",
-  "sod-523",
-  "sma diode",
-  "melf",
-  "minimelf",
-  "micromelf",
-  "do-41",
-  "do-35",
-  "smd diode",
-  "through hole diode",
-  "discrete diode",
-  "horizontal zener",
   "7v",
   "sod",
   "discrete",
   "akl",
   "alternate",
-  "kicad"
+  "kicad",
+  "library",
+  "do",
+  "horizontal",
+  "500mw",
+  "minimelf",
+  "c4v7",
+  "series",
+  "axial"
  ],
  "facts": {
   "package_family": "D",
@@ -79,7 +70,7 @@
    "A": 60,
    "B": 2
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -187,6 +178,6 @@
   "Alternate-KiCad-Library/Diode_Zener_AKL/1N5337B",
   "Alternate-KiCad-Library/Diode_Zener_AKL/BZX884-C4V7"
  ],
- "embedding_text": "discrete-diode.d.4-7v | Discrete Diode | Cluster of 62 discrete diode parts (60 tier A, 2 tier B) sharing package family D and a 4.7V facet, spanning SMD and through-hole footprints including SOD-123/323/523, SMA, MELF/MiniMELF/MicroMELF, and DO-35/DO-41 zener-labeled patterns. | diode zener 4.7v 4v7 package d sod-123 sod-323 sod-523 sma diode melf minimelf micromelf do-41 do-35 smd diode through hole diode discrete diode horizontal zener 7v sod discrete akl alternate kicad | D | 4.7V",
+ "embedding_text": "discrete-diode.d.4-7v | Discrete Diode | 62 discrete diode parts for 4.7V using D footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | diode zener 7v sod discrete akl alternate kicad library do horizontal 500mw minimelf c4v7 series axial | D | 4.7V",
  "class": "discrete.diode"
 }

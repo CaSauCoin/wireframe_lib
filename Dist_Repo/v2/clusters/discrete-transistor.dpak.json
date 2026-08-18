@@ -6,28 +6,21 @@
   "Discrete",
   "Transistor"
  ],
- "description": "Discrete transistor component cluster featuring surface-mount (SMD) mounting in the DPAK package family with DPAK_3 footprints.",
+ "description": "1 discrete transistor parts using DPAK footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Use when a surface-mount (SMD) discrete transistor in a DPAK package is required.",
-  "Verify footprint layout compatibility with DPAK_3.",
-  "Check part specifications from the chilaboard-altium-library source."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a DPAK land pattern is intended."
  ],
  "avoid_when": [
-  "Avoid when through-hole mounting is required instead of SMD.",
-  "Avoid when the design requires a package family other than DPAK.",
-  "Avoid if the PCB land pattern requires a footprint other than DPAK_3."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than DPAK."
  ],
  "keywords": [
   "dpak",
-  "dpak_3",
   "discrete",
   "transistor",
-  "discrete transistor",
-  "smd",
-  "smd transistor",
-  "discrete.transistor",
-  "chilaboard-altium-library",
-  "dpak footprint",
   "surface",
   "mount",
   "pad",
@@ -54,12 +47,12 @@
   "tier_counts": {
    "C": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
   "chilaboard-altium-library/DPAK_3/DPAK_3"
  ],
- "embedding_text": "discrete-transistor.dpak | Discrete Transistor | Discrete transistor component cluster featuring surface-mount (SMD) mounting in the DPAK package family with DPAK_3 footprints. | dpak dpak_3 discrete transistor discrete transistor smd smd transistor discrete.transistor chilaboard-altium-library dpak footprint surface mount pad mm pitch pins | DPAK | ",
+ "embedding_text": "discrete-transistor.dpak | Discrete Transistor | 1 discrete transistor parts using DPAK footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | dpak discrete transistor surface mount pad mm pitch pins | DPAK | ",
  "class": "discrete.transistor"
 }

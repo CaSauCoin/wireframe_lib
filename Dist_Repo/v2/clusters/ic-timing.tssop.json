@@ -6,34 +6,28 @@
   "IC",
   "Timing"
  ],
- "description": "Timing IC cluster featuring surface-mount parts in TSSOP-14 and TSSOP-16 packages.",
+ "description": "2 ic timing parts using TSSOP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when requiring timing ICs in surface-mount TSSOP packaging.",
-  "Choose between 14-pin and 16-pin TSSOP footprint options.",
-  "Verify land pattern dimensions against layout requirements."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a TSSOP land pattern is intended."
  ],
  "avoid_when": [
-  "Avoid if non-TSSOP or through-hole packaging is required.",
-  "Do not use when package pin counts other than TSSOP-14 or TSSOP-16 are needed.",
-  "Avoid if SMD mounting is not supported by the PCB design."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than TSSOP."
  ],
  "keywords": [
-  "ic timing",
   "tssop",
-  "smd",
-  "ic",
-  "timing",
-  "tssop-16",
-  "tssop-14",
-  "adf4002bruz",
-  "tlc555xpw",
-  "kicad-symbols",
   "timer",
   "4x5mm",
   "p0",
   "65mm",
   "so",
+  "ic",
+  "timing",
   "single",
+  "adf4002bruz",
   "pll",
   "400mhz",
   "bandwidth",
@@ -61,7 +55,7 @@
   "tier_counts": {
    "A": 2
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -85,6 +79,6 @@
   "kicad-symbols/Timer_PLL/ADF4002BRUZ",
   "kicad-symbols/Timer/TLC555xPW"
  ],
- "embedding_text": "ic-timing.tssop | IC Timing | Timing IC cluster featuring surface-mount parts in TSSOP-14 and TSSOP-16 packages. | ic timing tssop smd ic timing tssop-16 tssop-14 adf4002bruz tlc555xpw kicad-symbols timer 4x5mm p0 65mm so single pll 400mhz bandwidth frequency synthesizer jedec | TSSOP | ",
+ "embedding_text": "ic-timing.tssop | IC Timing | 2 ic timing parts using TSSOP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | tssop timer 4x5mm p0 65mm so ic timing single adf4002bruz pll 400mhz bandwidth frequency synthesizer jedec | TSSOP | ",
  "class": "ic.timing"
 }

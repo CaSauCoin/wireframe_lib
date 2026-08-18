@@ -6,28 +6,21 @@
   "Discrete",
   "Diode"
  ],
- "description": "Discrete diode cluster containing a single tier-C part associated with the RA25 package family and footprint.",
+ "description": "1 discrete diode parts using RA25 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Use when an RA25 footprint or package family is required.",
-  "Verify electrical ratings, pinouts, and package details against part documentation.",
-  "Check part quality tier and source trust before committing to layout."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a RA25 land pattern is intended."
  ],
  "avoid_when": [
-  "The PCB design requires a package other than RA25.",
-  "Required electrical ratings, pin mappings, or physical dimensions are unspecified.",
-  "Generated tier-C library entries are not accepted for the design."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than RA25."
  ],
  "keywords": [
   "ra25",
   "discrete",
   "diode",
-  "discrete diode",
-  "ra25 footprint",
-  "ra25 package",
-  "discrete.diode",
-  "package family ra25",
-  "dist-legacy",
-  "tier c",
   "pad",
   "mm",
   "pitch",
@@ -52,12 +45,12 @@
   "tier_counts": {
    "C": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
   "dist-legacy/RA25"
  ],
- "embedding_text": "discrete-diode.ra25 | Discrete Diode | Discrete diode cluster containing a single tier-C part associated with the RA25 package family and footprint. | ra25 discrete diode discrete diode ra25 footprint ra25 package discrete.diode package family ra25 dist-legacy tier c pad mm pitch pins | RA25 | ",
+ "embedding_text": "discrete-diode.ra25 | Discrete Diode | 1 discrete diode parts using RA25 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | ra25 discrete diode pad mm pitch pins | RA25 | ",
  "class": "discrete.diode"
 }

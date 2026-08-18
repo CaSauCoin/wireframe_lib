@@ -5,31 +5,24 @@
  "category_path": [
   "IC"
  ],
- "description": "Integrated circuit component cluster containing parts in USON package family options with surface-mount footprints.",
+ "description": "2 ic parts using USON footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Verify footprint dimensions matching USON-20 2x4mm (0.4mm pitch) or USON-8 2x3mm.",
-  "Confirm mounting requirements for surface-mount USON packages.",
-  "Check component specifications and source documentation for tier C entries."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a USON land pattern is intended."
  ],
  "avoid_when": [
-  "The PCB design requires packages other than USON.",
-  "Surface-mount (SMD) packaging cannot be used.",
-  "Target footprints differ from USON-20 2x4mm or USON-8 2x3mm land patterns."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than USON."
  ],
  "keywords": [
-  "ic",
   "uson",
-  "uson-20",
-  "uson-8",
-  "smd",
-  "surface mount",
   "2x4mm",
-  "2x3mm",
-  "0.4mm pitch",
-  "package family uson",
-  "integrated circuit",
   "4mm",
   "p0",
+  "2x3mm",
+  "ic",
   "pitch",
   "pad",
   "mm",
@@ -62,13 +55,13 @@
   "tier_counts": {
    "C": 2
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
   "dist-legacy/USON-20_2x4mm_P0.4mm",
   "dist-legacy/USON-8-2X3MM"
  ],
- "embedding_text": "ic.uson | IC | Integrated circuit component cluster containing parts in USON package family options with surface-mount footprints. | ic uson uson-20 uson-8 smd surface mount 2x4mm 2x3mm 0.4mm pitch package family uson integrated circuit 4mm p0 pitch pad mm pins surface mount package http www ti | USON | ",
+ "embedding_text": "ic.uson | IC | 2 ic parts using USON footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | uson 2x4mm 4mm p0 2x3mm ic pitch pad mm pins surface mount package http www ti | USON | ",
  "class": "ic"
 }

@@ -7,29 +7,20 @@
   "Analog",
   "Amplifier"
  ],
- "description": "This cluster contains surface-mount analog amplifier ICs using the VSSOP-8_3x3mm_P0.65mm footprint.",
+ "description": "3 ic analog amplifier parts using VSSOP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Choose when requiring a surface-mount analog amplifier in a VSSOP package.",
-  "Verify compatibility with the VSSOP-8_3x3mm_P0.65mm land pattern.",
-  "Select from Tier A parts such as INA225, INA241A5xDGK, or INA241B5xDGK."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a VSSOP land pattern is intended."
  ],
  "avoid_when": [
-  "The PCB design requires a package family other than VSSOP.",
-  "Through-hole mounting is required instead of SMD.",
-  "The layout requires a footprint other than VSSOP-8_3x3mm_P0.65mm."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than VSSOP."
  ],
  "keywords": [
-  "ic",
-  "analog",
-  "amplifier",
   "vssop",
-  "smd",
-  "vssop-8_3x3mm_p0.65mm",
-  "ina225",
-  "ina241a5xdgk",
-  "ina241b5xdgk",
-  "3x3mm",
-  "p0.65mm",
+  "amplifier",
   "current",
   "bidirectional",
   "sense",
@@ -37,6 +28,7 @@
   "low",
   "with",
   "gain",
+  "3x3mm",
   "p0",
   "65mm",
   "so",
@@ -63,7 +55,7 @@
   "tier_counts": {
    "A": 3
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -96,6 +88,6 @@
   "kicad-symbols/Amplifier_Current/INA241A5xDGK",
   "kicad-symbols/Amplifier_Current/INA241B5xDGK"
  ],
- "embedding_text": "ic-analog-amplifier.vssop | IC Analog Amplifier | This cluster contains surface-mount analog amplifier ICs using the VSSOP-8_3x3mm_P0.65mm footprint. | ic analog amplifier vssop smd vssop-8_3x3mm_p0.65mm ina225 ina241a5xdgk ina241b5xdgk 3x3mm p0.65mm current bidirectional sense high low with gain p0 65mm so jedec mo aa | VSSOP | ",
+ "embedding_text": "ic-analog-amplifier.vssop | IC Analog Amplifier | 3 ic analog amplifier parts using VSSOP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | vssop amplifier current bidirectional sense high low with gain 3x3mm p0 65mm so jedec mo aa | VSSOP | ",
  "class": "ic.analog.amplifier"
 }

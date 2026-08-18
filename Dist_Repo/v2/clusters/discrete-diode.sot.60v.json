@@ -6,42 +6,34 @@
   "Discrete",
   "Diode"
  ],
- "description": "Discrete diodes in SOT-family SMD footprints (SOT-223, SOT-143, SOT-666, SOT-223-3_TabPin2) for 60V-class designs, 8 tier-A parts sourced from Alternate-KiCad-Library.",
+ "description": "8 discrete diode parts for 60V using SOT footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Match the exact footprint (SOT-223, SOT-143, SOT-666, or SOT-223-3_TabPin2) to your PCB land pattern.",
-  "All 8 parts are tier A with score 100 from Alternate-KiCad-Library; differentiate by specific part name.",
-  "Check whether the part is a Schottky type (e.g. 20CJQ060, BAT160A/C) or a standard diode (e.g. BAS56, BAS56s) before substituting."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SOT land pattern is intended."
  ],
  "avoid_when": [
-  "A footprint other than SOT-223, SOT-143, SOT-666, or SOT-223-3_TabPin2 is required.",
-  "The needed voltage, current, or diode type is not confirmed for the selected part.",
-  "A through-hole or non-SOT SMD package (e.g. DO-214, SMA, axial) is needed."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SOT."
  ],
  "keywords": [
   "diode",
-  "discrete diode",
   "sot",
-  "sot-223",
-  "sot-143",
-  "sot-666",
-  "sot-223-3_tabpin2",
   "schottky",
   "60v",
-  "smd",
-  "alternate-kicad-library",
-  "akl",
-  "20cjq060",
-  "bas56",
-  "bas56s",
-  "bat160a",
-  "bat160c",
-  "tier a",
   "dual",
+  "akl",
   "alternate",
   "kicad",
   "library",
   "discrete",
-  "cms"
+  "cms",
+  "200ma",
+  "independent",
+  "common",
+  "bas56",
+  "1a"
  ],
  "facts": {
   "package_family": "SOT",
@@ -67,7 +59,7 @@
   "tier_counts": {
    "A": 8
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -121,6 +113,6 @@
   "Alternate-KiCad-Library/Diode_Schottky_AKL/PMEG6002TV",
   "Alternate-KiCad-Library/Diode_Schottky_AKL/PMEG6002TVs"
  ],
- "embedding_text": "discrete-diode.sot.60v | Discrete Diode | Discrete diodes in SOT-family SMD footprints (SOT-223, SOT-143, SOT-666, SOT-223-3_TabPin2) for 60V-class designs, 8 tier-A parts sourced from Alternate-KiCad-Library. | diode discrete diode sot sot-223 sot-143 sot-666 sot-223-3_tabpin2 schottky 60v smd alternate-kicad-library akl 20cjq060 bas56 bas56s bat160a bat160c tier a dual alternate kicad library discrete cms | SOT | 60V",
+ "embedding_text": "discrete-diode.sot.60v | Discrete Diode | 8 discrete diode parts for 60V using SOT footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | diode sot schottky 60v dual akl alternate kicad library discrete cms 200ma independent common bas56 1a | SOT | 60V",
  "class": "discrete.diode"
 }

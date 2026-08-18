@@ -6,30 +6,21 @@
   "Discrete",
   "Transistor"
  ],
- "description": "Discrete transistor cluster in the XT32 package family featuring the XT32-3 footprint with 1 tier C part from legacy distribution sources.",
+ "description": "1 discrete transistor parts using XT32 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when an XT32 package family component with an XT32-3 footprint is needed.",
-  "Check part details and specifications for the single tier C part in this cluster.",
-  "Verify compatibility given the unknown mount classification and generated review status."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a XT32 land pattern is intended."
  ],
  "avoid_when": [
-  "The design requires a package family other than XT32 or a footprint other than XT32-3.",
-  "Tier C parts or dist-legacy source entries are not acceptable for the project.",
-  "A defined mounting type is required instead of unknown."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than XT32."
  ],
  "keywords": [
   "xt32",
-  "xt32-3",
   "discrete",
   "transistor",
-  "discrete transistor",
-  "xt32 package",
-  "xt32-3 footprint",
-  "package family xt32",
-  "tier c",
-  "dist-legacy",
-  "unknown mount",
-  "generated review",
   "pad",
   "mm",
   "pitch",
@@ -54,12 +45,12 @@
   "tier_counts": {
    "C": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
   "dist-legacy/XT32-3"
  ],
- "embedding_text": "discrete-transistor.xt32 | Discrete Transistor | Discrete transistor cluster in the XT32 package family featuring the XT32-3 footprint with 1 tier C part from legacy distribution sources. | xt32 xt32-3 discrete transistor discrete transistor xt32 package xt32-3 footprint package family xt32 tier c dist-legacy unknown mount generated review pad mm pitch pins | XT32 | ",
+ "embedding_text": "discrete-transistor.xt32 | Discrete Transistor | 1 discrete transistor parts using XT32 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | xt32 discrete transistor pad mm pitch pins | XT32 | ",
  "class": "discrete.transistor"
 }

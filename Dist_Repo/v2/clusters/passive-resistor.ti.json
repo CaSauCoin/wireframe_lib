@@ -6,28 +6,23 @@
   "Passive",
   "Resistor"
  ],
- "description": "Cluster of one SMD passive resistor part utilizing the TI X1SON DPY footprint from the Celestial Altium Library.",
+ "description": "1 passive resistor parts using TI footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Verify layout compatibility with the TI X1SON DPY footprint.",
-  "Inspect component details given the Tier C quality rating and generated review status.",
-  "Confirm source data from the Celestial Altium Library prior to use."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a TI land pattern is intended."
  ],
  "avoid_when": [
-  "Designs requiring through-hole or alternative SMD footprints.",
-  "Projects requiring planner-visible or Tier A verified components.",
-  "Layouts incompatible with the TI X1SON DPY package."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than TI."
  ],
  "keywords": [
-  "passive",
-  "resistor",
-  "passive resistor",
-  "smd",
   "ti",
   "x1son",
   "dpy",
-  "x1son dpy",
-  "ti - x1son dpy",
-  "celestial-altium-library",
+  "passive",
+  "resistor",
   "surface",
   "mount",
   "pad",
@@ -54,12 +49,12 @@
   "tier_counts": {
    "C": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
   "celestial-altium-library/TI - X1SON DPY/TI_-_X1SON_DPY"
  ],
- "embedding_text": "passive-resistor.ti | Passive Resistor | Cluster of one SMD passive resistor part utilizing the TI X1SON DPY footprint from the Celestial Altium Library. | passive resistor passive resistor smd ti x1son dpy x1son dpy ti - x1son dpy celestial-altium-library surface mount pad mm pitch pins | TI | ",
+ "embedding_text": "passive-resistor.ti | Passive Resistor | 1 passive resistor parts using TI footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | ti x1son dpy passive resistor surface mount pad mm pitch pins | TI | ",
  "class": "passive.resistor"
 }

@@ -6,35 +6,27 @@
   "Discrete",
   "Diode"
  ],
- "description": "Discrete diode cluster containing 3 parts in the CUON package family using CUON and cuon_cam_dan footprints.",
+ "description": "3 discrete diode parts using CUON footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when requiring a discrete diode with a CUON package family footprint.",
-  "Prefer tier B parts like CUON_CAM and CUON_CAM_200mil over tier C entries.",
-  "Verify footprint matching between CUON and cuon_cam_dan options."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a CUON land pattern is intended."
  ],
  "avoid_when": [
-  "The PCB layout requires a package family other than CUON.",
-  "A component class other than discrete diode is required.",
-  "Specific electrical parameters or mount types must be confirmed before part assignment."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than CUON."
  ],
  "keywords": [
-  "discrete diode",
-  "discrete",
-  "diode",
   "cuon",
-  "cuon_cam",
-  "cuon_cam_200mil",
-  "cuon_cam_dan",
-  "package cuon",
-  "footprint cuon",
-  "dist-legacy",
-  "tier b",
   "cam",
+  "diode",
   "dan",
   "pin",
   "anode",
   "cathode",
   "inductor",
+  "discrete",
   "pins",
   "two",
   "schematic",
@@ -64,7 +56,7 @@
    "B": 2,
    "C": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -89,6 +81,6 @@
   "dist-legacy/CUON CAM 200mil",
   "dist-legacy/cuon_cam_dan"
  ],
- "embedding_text": "discrete-diode.cuon | Discrete Diode | Discrete diode cluster containing 3 parts in the CUON package family using CUON and cuon_cam_dan footprints. | discrete diode discrete diode cuon cuon_cam cuon_cam_200mil cuon_cam_dan package cuon footprint cuon dist-legacy tier b cam dan pin anode cathode inductor pins two schematic symbol with and mapped | CUON | ",
+ "embedding_text": "discrete-diode.cuon | Discrete Diode | 3 discrete diode parts using CUON footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | cuon cam diode dan pin anode cathode inductor discrete pins two schematic symbol with and mapped | CUON | ",
  "class": "discrete.diode"
 }

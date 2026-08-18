@@ -6,31 +6,22 @@
   "Discrete",
   "Diode"
  ],
- "description": "Cluster of 4 discrete diode parts in the NetTie package family featuring SMD and through-hole footprints in tier C quality.",
+ "description": "4 discrete diode parts using NetTie footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Match required pad size for SMD (0.5mm, 2.0mm) or THT (0.3mm, 1.0mm) NetTie footprints.",
-  "Select between SMD and through-hole mount options.",
-  "Account for tier C quality status across all 4 parts in this cluster."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a NetTie land pattern is intended."
  ],
  "avoid_when": [
-  "A package family other than NetTie is required.",
-  "Tier A or Tier B quality parts are required.",
-  "Planner-visible parts are needed."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than NetTie."
  ],
  "keywords": [
-  "discrete diode",
   "nettie",
-  "discrete.diode",
   "smd",
-  "tht",
-  "through_hole",
-  "nettie-2",
-  "pad0.5mm",
-  "pad2.0mm",
-  "pad0.3mm",
-  "pad1.0mm",
-  "tier c",
   "0mm",
+  "tht",
   "pad0",
   "discrete",
   "diode",
@@ -41,7 +32,8 @@
   "pad2",
   "pad1",
   "pad",
-  "mm"
+  "mm",
+  "pitch"
  ],
  "facts": {
   "package_family": "NetTie",
@@ -66,7 +58,7 @@
   "tier_counts": {
    "C": 4
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
@@ -75,6 +67,6 @@
   "dist-legacy/NetTie-2_THT_Pad0.3mm",
   "dist-legacy/NetTie-2_THT_Pad1.0mm"
  ],
- "embedding_text": "discrete-diode.nettie | Discrete Diode | Cluster of 4 discrete diode parts in the NetTie package family featuring SMD and through-hole footprints in tier C quality. | discrete diode nettie discrete.diode smd tht through_hole nettie-2 pad0.5mm pad2.0mm pad0.3mm pad1.0mm tier c 0mm pad0 discrete diode net tie 5mm 3mm pad2 pad1 pad mm | NetTie | ",
+ "embedding_text": "discrete-diode.nettie | Discrete Diode | 4 discrete diode parts using NetTie footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | nettie smd 0mm tht pad0 discrete diode net tie 5mm 3mm pad2 pad1 pad mm pitch | NetTie | ",
  "class": "discrete.diode"
 }

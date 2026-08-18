@@ -6,41 +6,33 @@
   "IC",
   "Interface"
  ],
- "description": "Interface IC cluster in SOT-23-5 packages containing surface-mount KiCad symbol entries such as DS90LV011A and SN65LVDS1DBV.",
+ "description": "4 ic interface parts using SOT-23-5 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when an interface IC in a surface-mount SOT-23-5 package is required.",
-  "Choose between specific parts such as DS90LV011A, SN65LVDS1DBV, SN65LVDS2DBV, or SN65LVDT2DBV based on application needs.",
-  "Use when integrating tier A KiCad symbol definitions matching SOT-23-5 footprints."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SOT-23-5 land pattern is intended."
  ],
  "avoid_when": [
-  "A footprint or package family other than SOT-23-5 is required.",
-  "Through-hole mounting or non-interface component classes are needed.",
-  "Specific electrical requirements or pinouts are unverified for the selected part."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SOT-23-5."
  ],
  "keywords": [
-  "ic",
-  "interface",
-  "sot-23-5",
-  "sot-23",
-  "smd",
-  "surface mount",
-  "kicad",
-  "ds90lv011a",
-  "sn65lvds1dbv",
-  "sn65lvds2dbv",
-  "sn65lvdt2dbv",
-  "interface ic",
   "sot",
+  "interface",
   "lvds",
   "high",
   "speed",
   "differential",
   "driver",
   "to",
+  "smd",
+  "ic",
   "receiver",
   "line",
   "630mbps",
   "ti",
+  "ds90lv011a",
   "single"
  ],
  "facts": {
@@ -62,7 +54,7 @@
   "tier_counts": {
    "A": 4
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -104,6 +96,6 @@
   "kicad-symbols/Interface/SN65LVDS2DBV",
   "kicad-symbols/Interface/SN65LVDT2DBV"
  ],
- "embedding_text": "ic-interface.sot-23-5 | IC Interface | Interface IC cluster in SOT-23-5 packages containing surface-mount KiCad symbol entries such as DS90LV011A and SN65LVDS1DBV. | ic interface sot-23-5 sot-23 smd surface mount kicad ds90lv011a sn65lvds1dbv sn65lvds2dbv sn65lvdt2dbv interface ic sot lvds high speed differential driver to receiver line 630mbps ti single | SOT-23-5 | ",
+ "embedding_text": "ic-interface.sot-23-5 | IC Interface | 4 ic interface parts using SOT-23-5 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | sot interface lvds high speed differential driver to smd ic receiver line 630mbps ti ds90lv011a single | SOT-23-5 | ",
  "class": "ic.interface"
 }

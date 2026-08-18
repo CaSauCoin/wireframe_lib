@@ -7,41 +7,34 @@
   "Power",
   "Converter"
  ],
- "description": "Cluster of 3 through-hole buck IC power converter parts rated for 18V using Murata NCS1SxxxxSC and RECOM R-78E-0.5 THT footprints.",
+ "description": "3 ic power converter parts for buck, 18V using Converter footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select for 18V buck IC power converter applications requiring through-hole mounting.",
-  "Match target footprints to Converter_DCDC_Murata_NCS1SxxxxSC_THT or Converter_DCDC_RECOM_R-78E-0.5_THT.",
-  "Choose from tier A parts including NCS1S1205SC, NCS1S1212SC, and R-781.8-1.0."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a Converter land pattern is intended."
  ],
  "avoid_when": [
-  "Surface-mount (SMD) mounting is required instead of through-hole.",
-  "The design requires converter topologies other than buck or ratings other than 18V.",
-  "The PCB layout requires packages other than the supported Murata or RECOM THT footprints."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than Converter."
  ],
  "keywords": [
-  "ic",
-  "power converter",
-  "buck",
-  "18v",
-  "through_hole",
-  "tht",
   "converter",
-  "dcdc",
-  "ncs1s1205sc",
-  "ncs1s1212sc",
-  "r-781.8-1.0",
-  "murata",
-  "recom",
-  "converter_dcdc",
   "dc",
+  "dcdc",
+  "18v",
+  "murata",
   "input",
   "voltage",
   "isolated",
   "ncs1sxxxxsc",
   "step",
   "down",
+  "buck",
   "output",
-  "sip"
+  "sip",
+  "tht",
+  "ic"
  ],
  "facts": {
   "package_family": "Converter",
@@ -66,7 +59,7 @@
   "tier_counts": {
    "A": 3
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -99,6 +92,6 @@
   "kicad-symbols/Converter_DCDC/NCS1S1212SC",
   "kicad-symbols/Converter_DCDC/R-781.8-1.0"
  ],
- "embedding_text": "ic-power-converter.converter.buck.18v | IC Power Converter | Cluster of 3 through-hole buck IC power converter parts rated for 18V using Murata NCS1SxxxxSC and RECOM R-78E-0.5 THT footprints. | ic power converter buck 18v through_hole tht converter dcdc ncs1s1205sc ncs1s1212sc r-781.8-1.0 murata recom converter_dcdc dc input voltage isolated ncs1sxxxxsc step down output sip | Converter | buck 18V",
+ "embedding_text": "ic-power-converter.converter.buck.18v | IC Power Converter | 3 ic power converter parts for buck, 18V using Converter footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | converter dc dcdc 18v murata input voltage isolated ncs1sxxxxsc step down buck output sip tht ic | Converter | buck 18V",
  "class": "ic.power.converter"
 }

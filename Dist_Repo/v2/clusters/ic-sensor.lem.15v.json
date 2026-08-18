@@ -6,42 +6,34 @@
   "IC",
   "Sensor"
  ],
- "description": "This cluster contains 17 sensor IC parts featuring a 15V facet and through-hole LEM package footprints from KiCad symbols.",
+ "description": "17 ic sensor parts for 15V using LEM footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when requiring a 15V sensor IC in a through-hole LEM footprint.",
-  "Choose between Tier A (4 parts) and Tier B (13 parts) quality classifications.",
-  "Match the required footprint variant such as LEM_LA25-P, LEM_LA25-NP, or LEM_HX series."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a LEM land pattern is intended."
  ],
  "avoid_when": [
-  "Do not use if surface-mount components are required instead of through-hole.",
-  "Avoid when a package family other than LEM is needed.",
-  "Avoid if voltage requirements differ from 15V."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than LEM."
  ],
  "keywords": [
-  "ic",
-  "sensor",
-  "ic sensor",
-  "lem",
-  "15v",
-  "through_hole",
-  "kicad-symbols",
-  "sensor_current",
-  "la25-p",
-  "la25-np",
-  "la100-p",
-  "la55-p",
-  "hx03-p-sp2",
-  "hx05-np",
-  "hx10-np",
-  "hx15-np",
   "current",
   "transducer",
+  "lem",
+  "sensor",
+  "15v",
+  "ic",
   "sp2",
   "hall",
   "bipolar",
   "np",
   "unipolar",
-  "la25"
+  "la25",
+  "hx05",
+  "hx10",
+  "hx15",
+  "25a"
  ],
  "facts": {
   "package_family": "LEM",
@@ -76,7 +68,7 @@
    "A": 4,
    "B": 13
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -139,6 +131,6 @@
   "kicad-symbols/Sensor_Current/HX04-P",
   "kicad-symbols/Sensor_Current/HX06-P"
  ],
- "embedding_text": "ic-sensor.lem.15v | IC Sensor | This cluster contains 17 sensor IC parts featuring a 15V facet and through-hole LEM package footprints from KiCad symbols. | ic sensor ic sensor lem 15v through_hole kicad-symbols sensor_current la25-p la25-np la100-p la55-p hx03-p-sp2 hx05-np hx10-np hx15-np current transducer sp2 hall bipolar np unipolar la25 | LEM | 15V",
+ "embedding_text": "ic-sensor.lem.15v | IC Sensor | 17 ic sensor parts for 15V using LEM footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | current transducer lem sensor 15v ic sp2 hall bipolar np unipolar la25 hx05 hx10 hx15 25a | LEM | 15V",
  "class": "ic.sensor"
 }

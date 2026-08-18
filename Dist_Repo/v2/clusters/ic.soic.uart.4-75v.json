@@ -5,32 +5,20 @@
  "category_path": [
   "IC"
  ],
- "description": "Cluster of surface-mount 4.75V UART and RS485/422 serial transceiver ICs in SOIC-8 packaging.",
+ "description": "2 ic parts for UART/serial, 4.75V using SOIC footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select for surface-mount RS485/RS422 or UART serial interface designs requiring 4.75V operation.",
-  "Verify layout compatibility with footprint SOIC-8_L5.0-W4.0-P1.27-LS6.0-BL.",
-  "Suitable for 10Mbps transceiver applications sourced from JLCPCB-Kicad-Library."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SOIC land pattern is intended."
  ],
  "avoid_when": [
-  "Designs requiring through-hole mounting or packages other than SOIC-8.",
-  "Applications operating outside the 4.75V rating.",
-  "Projects requiring Tier A components."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SOIC."
  ],
  "keywords": [
-  "ic",
   "soic",
-  "soic-8",
-  "uart",
-  "serial",
   "transceiver",
-  "rs485",
-  "rs422",
-  "4.75v",
-  "10mbps",
-  "smd",
-  "sn75176bdr",
-  "sp485een-l/tr",
-  "jlcpcb",
   "75v",
   "rs",
   "l5",
@@ -38,9 +26,13 @@
   "p1",
   "ls6",
   "bl",
+  "10mbps",
+  "rs485",
+  "jlcpcb",
   "interface",
   "25v",
-  "ics"
+  "ics",
+  "rohs"
  ],
  "facts": {
   "package_family": "SOIC",
@@ -64,7 +56,7 @@
   "tier_counts": {
    "B": 2
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -88,6 +80,6 @@
   "JLCPCB-Kicad-Library/JLCPCB-Interface/Transceiver, RS485/422, 10Mbps, SN75176BDR",
   "JLCPCB-Kicad-Library/JLCPCB-Interface/Transceiver, RS485/422, 10Mbps, SP485EEN-L/TR"
  ],
- "embedding_text": "ic.soic.uart.4-75v | IC | Cluster of surface-mount 4.75V UART and RS485/422 serial transceiver ICs in SOIC-8 packaging. | ic soic soic-8 uart serial transceiver rs485 rs422 4.75v 10mbps smd sn75176bdr sp485een-l/tr jlcpcb 75v rs l5 w4 p1 ls6 bl interface 25v ics | SOIC | UART/serial 4.75V",
+ "embedding_text": "ic.soic.uart.4-75v | IC | 2 ic parts for UART/serial, 4.75V using SOIC footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | soic transceiver 75v rs l5 w4 p1 ls6 bl 10mbps rs485 jlcpcb interface 25v ics rohs | SOIC | UART/serial 4.75V",
  "class": "ic"
 }

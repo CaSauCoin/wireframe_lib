@@ -7,29 +7,19 @@
   "Analog",
   "Op-Amp"
  ],
- "description": "Analog operational amplifier IC cluster containing surface-mount parts in TSOP-5 footprints.",
+ "description": "4 ic analog op-amp parts using TSOP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when a surface-mount (SMD) analog operational amplifier is required.",
-  "Use when board layout specifies a TSOP-5 footprint."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a TSOP land pattern is intended."
  ],
  "avoid_when": [
-  "Avoid when through-hole mounting is required.",
-  "Avoid if package requirements differ from TSOP-5."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than TSOP."
  ],
  "keywords": [
-  "ic",
-  "analog",
-  "op-amp",
-  "opamp",
-  "operational amplifier",
   "tsop",
-  "tsop-5",
-  "smd",
-  "lmv321isn3t1g",
-  "lmv321sn3t1g",
-  "ncs20071sn2t1g",
-  "ncv20071sn2t1g",
-  "alternate-kicad-library",
   "amplifier",
   "operational",
   "rail",
@@ -40,7 +30,11 @@
   "gbw",
   "alternate",
   "kicad",
-  "library"
+  "library",
+  "65x3",
+  "05mm",
+  "p0",
+  "95mm"
  ],
  "facts": {
   "package_family": "TSOP",
@@ -61,7 +55,7 @@
   "tier_counts": {
    "A": 4
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -103,6 +97,6 @@
   "Alternate-KiCad-Library/Amplifier_Operational_AKL/NCS20071SN2T1G",
   "Alternate-KiCad-Library/Amplifier_Operational_AKL/NCV20071SN2T1G"
  ],
- "embedding_text": "ic-analog-opamp.tsop | IC Analog Op-Amp | Analog operational amplifier IC cluster containing surface-mount parts in TSOP-5 footprints. | ic analog op-amp opamp operational amplifier tsop tsop-5 smd lmv321isn3t1g lmv321sn3t1g ncs20071sn2t1g ncv20071sn2t1g alternate-kicad-library amplifier operational rail to akl cmos offset gbw alternate kicad library | TSOP | ",
+ "embedding_text": "ic-analog-opamp.tsop | IC Analog Op-Amp | 4 ic analog op-amp parts using TSOP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | tsop amplifier operational rail to akl cmos offset gbw alternate kicad library 65x3 05mm p0 95mm | TSOP | ",
  "class": "ic.analog.opamp"
 }

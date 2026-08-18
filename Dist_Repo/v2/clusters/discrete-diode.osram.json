@@ -6,31 +6,25 @@
   "Discrete",
   "Diode"
  ],
- "description": "Discrete diode cluster containing 7 parts with OSRAM package family footprints supporting surface-mount and through-hole mounting styles.",
+ "description": "7 discrete diode parts using OSRAM footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when requiring discrete diodes with OSRAM package family footprints.",
-  "Verify the specific footprint match such as BP104-SMD, BPW82, DIL2, SFH2201, or SFH3710.",
-  "Choose based on required mount type between SMD and through-hole."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a OSRAM land pattern is intended."
  ],
  "avoid_when": [
-  "The board design requires package footprints outside the OSRAM family.",
-  "The application requires tier A quality parts, as this cluster only contains tier B and C parts."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than OSRAM."
  ],
  "keywords": [
-  "discrete",
-  "diode",
   "osram",
+  "diode",
   "smd",
-  "through hole",
-  "bp104",
-  "bpw82",
-  "sfh2201",
-  "sfh3710",
-  "sfh4641",
-  "dil2",
-  "smartdil",
+  "discrete",
   "photodiode",
   "package",
+  "bpw82",
   "sfh",
   "pad",
   "mm",
@@ -38,7 +32,8 @@
   "pins",
   "plastic",
   "3x4",
-  "65mm"
+  "65mm",
+  "bp104"
  ],
  "facts": {
   "package_family": "OSRAM",
@@ -68,7 +63,7 @@
    "B": 1,
    "C": 6
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -89,6 +84,6 @@
   "dist-legacy/Osram_SFH3710",
   "dist-legacy/Osram_SMD-SmartDIL"
  ],
- "embedding_text": "discrete-diode.osram | Discrete Diode | Discrete diode cluster containing 7 parts with OSRAM package family footprints supporting surface-mount and through-hole mounting styles. | discrete diode osram smd through hole bp104 bpw82 sfh2201 sfh3710 sfh4641 dil2 smartdil photodiode package sfh pad mm pitch pins plastic 3x4 65mm | OSRAM | ",
+ "embedding_text": "discrete-diode.osram | Discrete Diode | 7 discrete diode parts using OSRAM footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | osram diode smd discrete photodiode package bpw82 sfh pad mm pitch pins plastic 3x4 65mm bp104 | OSRAM | ",
  "class": "discrete.diode"
 }

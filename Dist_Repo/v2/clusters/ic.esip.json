@@ -5,28 +5,19 @@
  "category_path": [
   "IC"
  ],
- "description": "Integrated circuit cluster featuring through-hole ESIP package footprints, including ESIP-7C_L10.1-W2.0-P2.54-TL.",
+ "description": "1 ic parts using ESIP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Verify that a through-hole ESIP footprint matching ESIP-7C_L10.1-W2.0-P2.54-TL is required.",
-  "Check part quality tier B and AC-DC 132kHz component suitability.",
-  "Confirm symbol and land pattern compatibility before finalizing PCB layout."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a ESIP land pattern is intended."
  ],
  "avoid_when": [
-  "Surface-mount mounting or non-ESIP packages are required.",
-  "The target design requires footprints other than ESIP-7C_L10.1-W2.0-P2.54-TL.",
-  "Required electrical specifications are not confirmed by the part datasheet."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than ESIP."
  ],
  "keywords": [
-  "ic",
   "esip",
-  "esip-7c",
-  "through_hole",
-  "through hole",
-  "ac-dc",
-  "132khz",
-  "jlcpcb-kicad-library",
-  "esip-7c_l10.1-w2.0-p2.54-tl",
-  "sip",
   "7c",
   "l10",
   "w2",
@@ -35,10 +26,13 @@
   "c394180",
   "ac",
   "dc",
+  "132khz",
+  "sip",
   "specialty",
   "logic",
   "rohs",
-  "footprint"
+  "footprint",
+  "ic"
  ],
  "facts": {
   "package_family": "ESIP",
@@ -59,7 +53,7 @@
   "tier_counts": {
    "B": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -74,6 +68,6 @@
  "part_ids": [
   "JLCPCB-Kicad-Library/394180/AC-DC, 132kHz"
  ],
- "embedding_text": "ic.esip | IC | Integrated circuit cluster featuring through-hole ESIP package footprints, including ESIP-7C_L10.1-W2.0-P2.54-TL. | ic esip esip-7c through_hole through hole ac-dc 132khz jlcpcb-kicad-library esip-7c_l10.1-w2.0-p2.54-tl sip 7c l10 w2 p2 tl c394180 ac dc specialty logic rohs footprint | ESIP | ",
+ "embedding_text": "ic.esip | IC | 1 ic parts using ESIP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | esip 7c l10 w2 p2 tl c394180 ac dc 132khz sip specialty logic rohs footprint ic | ESIP | ",
  "class": "ic"
 }

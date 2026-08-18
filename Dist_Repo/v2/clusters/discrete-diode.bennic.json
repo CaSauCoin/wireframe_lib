@@ -6,28 +6,21 @@
   "Discrete",
   "Diode"
  ],
- "description": "Cluster of discrete diode parts using the Bennic package family and footprint.",
+ "description": "1 discrete diode parts using Bennic footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Choose when a discrete diode with a Bennic footprint is required.",
-  "Verify mounting type and package details as mount type is listed as unknown.",
-  "Note the cluster contains 1 tier C part with generated review status."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a Bennic land pattern is intended."
  ],
  "avoid_when": [
-  "Avoid when a package family other than Bennic is required.",
-  "Avoid when planner-visible or higher-tier verified parts are required.",
-  "Avoid when components other than discrete diodes are needed."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than Bennic."
  ],
  "keywords": [
   "bennic",
   "discrete",
   "diode",
-  "discrete diode",
-  "bennic footprint",
-  "bennic package",
-  "discrete.diode",
-  "dist-legacy",
-  "tier c",
-  "footprint bennic",
   "pad",
   "mm",
   "pitch",
@@ -52,12 +45,12 @@
   "tier_counts": {
    "C": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
   "dist-legacy/Bennic"
  ],
- "embedding_text": "discrete-diode.bennic | Discrete Diode | Cluster of discrete diode parts using the Bennic package family and footprint. | bennic discrete diode discrete diode bennic footprint bennic package discrete.diode dist-legacy tier c footprint bennic pad mm pitch pins | Bennic | ",
+ "embedding_text": "discrete-diode.bennic | Discrete Diode | 1 discrete diode parts using Bennic footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | bennic discrete diode pad mm pitch pins | Bennic | ",
  "class": "discrete.diode"
 }

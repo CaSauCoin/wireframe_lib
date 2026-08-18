@@ -6,34 +6,24 @@
   "Discrete",
   "Transistor"
  ],
- "description": "A collection of 65 surface-mount 60V discrete transistors across SOT footprint variants including SOT-223, SOT-363, and SOT-323.",
+ "description": "65 discrete transistor parts for 60V using SOT footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Match the precise footprint variant needed for the layout, such as SOT-363, SOT-323, or SOT-223.",
-  "Filter by tier preference between the 57 Tier A and 8 Tier B parts in the cluster.",
-  "Choose between Alternate-KiCad-Library and digikey-kicad-library source libraries."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SOT land pattern is intended."
  ],
  "avoid_when": [
-  "The layout requires package families other than SOT or non-SMD mounting.",
-  "Voltage requirements differ from the 60V facet rating.",
-  "A part class other than discrete transistors is needed."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SOT."
  ],
  "keywords": [
-  "discrete transistor",
-  "transistor",
   "sot",
-  "60v",
-  "smd",
-  "sot-223",
-  "sot-363",
-  "sot-323",
-  "sot-89",
-  "sot-563",
-  "sot-666",
-  "2n7002",
-  "discrete",
-  "sc-70",
   "mosfet",
+  "transistor",
+  "60v",
   "enchancement",
+  "discrete",
   "mos",
   "akl",
   "alternate",
@@ -41,7 +31,9 @@
   "library",
   "nmos",
   "emos",
-  "emosfet"
+  "emosfet",
+  "mode",
+  "nmosfet"
  ],
  "facts": {
   "package_family": "SOT",
@@ -76,7 +68,7 @@
    "A": 57,
    "B": 8
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -187,6 +179,6 @@
   "Alternate-KiCad-Library/Transistor_MOSFET_AKL/SSM3K72KFS",
   "Alternate-KiCad-Library/Transistor_MOSFET_AKL/Si1022R"
  ],
- "embedding_text": "discrete-transistor.sot.60v | Discrete Transistor | A collection of 65 surface-mount 60V discrete transistors across SOT footprint variants including SOT-223, SOT-363, and SOT-323. | discrete transistor transistor sot 60v smd sot-223 sot-363 sot-323 sot-89 sot-563 sot-666 2n7002 discrete sc-70 mosfet enchancement mos akl alternate kicad library nmos emos emosfet | SOT | 60V",
+ "embedding_text": "discrete-transistor.sot.60v | Discrete Transistor | 65 discrete transistor parts for 60V using SOT footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | sot mosfet transistor 60v enchancement discrete mos akl alternate kicad library nmos emos emosfet mode nmosfet | SOT | 60V",
  "class": "discrete.transistor"
 }

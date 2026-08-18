@@ -5,28 +5,20 @@
  "category_path": [
   "IC"
  ],
- "description": "IC component cluster containing 1 tier C part associated with the J040 package family and footprint.",
+ "description": "1 ic parts using J040 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Verify compatibility with the J040 package family and land pattern.",
-  "Review quality requirements as this cluster consists of a single tier C part from a legacy distributor source.",
-  "Confirm physical dimensions and footprint details prior to board layout."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a J040 land pattern is intended."
  ],
  "avoid_when": [
-  "The PCB design requires a footprint or package family other than J040.",
-  "Application requirements demand verified tier A components or planner-visible parts.",
-  "Known mounting type specifications (surface mount or through-hole) are strictly required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than J040."
  ],
  "keywords": [
   "j040",
   "ic",
-  "integrated circuit",
-  "j040 footprint",
-  "j040 package",
-  "package family j040",
-  "tier c",
-  "dist-legacy",
-  "unknown mount",
-  "land pattern",
   "pad",
   "mm",
   "pitch",
@@ -51,12 +43,12 @@
   "tier_counts": {
    "C": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
   "dist-legacy/J040"
  ],
- "embedding_text": "ic.j040 | IC | IC component cluster containing 1 tier C part associated with the J040 package family and footprint. | j040 ic integrated circuit j040 footprint j040 package package family j040 tier c dist-legacy unknown mount land pattern pad mm pitch pins | J040 | ",
+ "embedding_text": "ic.j040 | IC | 1 ic parts using J040 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | j040 ic pad mm pitch pins | J040 | ",
  "class": "ic"
 }

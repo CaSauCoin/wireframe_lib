@@ -6,42 +6,34 @@
   "IC",
   "Logic"
  ],
- "description": "Cluster of 22 surface-mount logic IC parts in the TSSOP package family, featuring footprints ranging from TSSOP-8 to TSSOP-56.",
+ "description": "22 ic logic parts using TSSOP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select based on required TSSOP pin count, body dimensions, and lead pitch.",
-  "Prefer Tier A parts, which constitute 21 of the 22 parts in this cluster.",
-  "Verify exact footprint compatibility among TSSOP variants."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a TSSOP land pattern is intended."
  ],
  "avoid_when": [
-  "Through-hole mounting is required instead of surface-mount (SMD).",
-  "The PCB layout requires package families other than TSSOP.",
-  "Components outside the logic IC category are required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than TSSOP."
  ],
  "keywords": [
-  "ic",
-  "logic",
   "tssop",
-  "smd",
-  "ic.logic",
-  "tssop-8",
-  "tssop-14",
-  "tssop-16",
-  "tssop-20",
-  "tssop-24",
-  "tssop-48",
-  "tssop-56",
-  "74ahc244",
-  "74ahct244",
-  "74cb3q16210dgg",
-  "74cb3q16210dgv",
-  "74cb3t16210dgg",
+  "logic",
   "bit",
+  "ic",
   "p0",
   "so",
   "bus",
   "fet",
   "switch",
-  "74xx"
+  "74xx",
+  "5mm",
+  "bidirectional",
+  "buffer",
+  "with",
+  "65mm",
+  "state"
  ],
  "facts": {
   "package_family": "TSSOP",
@@ -74,7 +66,7 @@
    "A": 21,
    "B": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -142,6 +134,6 @@
   "kicad-symbols/74xx/74AHCV17APW",
   "francescosacco-hardwarelibrary/74ABT04/74ABT04"
  ],
- "embedding_text": "ic-logic.tssop | IC Logic | Cluster of 22 surface-mount logic IC parts in the TSSOP package family, featuring footprints ranging from TSSOP-8 to TSSOP-56. | ic logic tssop smd ic.logic tssop-8 tssop-14 tssop-16 tssop-20 tssop-24 tssop-48 tssop-56 74ahc244 74ahct244 74cb3q16210dgg 74cb3q16210dgv 74cb3t16210dgg bit p0 so bus fet switch 74xx | TSSOP | ",
+ "embedding_text": "ic-logic.tssop | IC Logic | 22 ic logic parts using TSSOP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | tssop logic bit ic p0 so bus fet switch 74xx 5mm bidirectional buffer with 65mm state | TSSOP | ",
  "class": "ic.logic"
 }

@@ -6,32 +6,21 @@
   "IC",
   "Power"
  ],
- "description": "Power IC cluster containing four tier-A surface-mount parts in TSSOP-8 footprints associated with 4.1V applications.",
+ "description": "4 ic power parts for 4.1V using TSSOP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when requiring a surface-mount power IC in a TSSOP-8 footprint.",
-  "Choose for designs specifying a 4.1V facet requirement.",
-  "Suitable when selecting UCC3803, UCC3805, or UCC3813 regulator controller variants."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a TSSOP land pattern is intended."
  ],
  "avoid_when": [
-  "Through-hole or non-TSSOP packages are required for the layout.",
-  "Operating requirements fall outside the 4.1V facet classification.",
-  "Footprints other than TSSOP-8_4.4x3mm_P0.65mm are needed."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than TSSOP."
  ],
  "keywords": [
-  "ic",
-  "power",
   "tssop",
-  "tssop-8",
-  "smd",
-  "4.1v",
-  "regulator controller",
-  "ucc3803",
-  "ucc3805",
-  "ucc3813-3",
-  "ucc3813-5",
-  "ic power",
-  "kicad",
   "controller",
+  "power",
   "pwm",
   "1v",
   "regulator",
@@ -41,7 +30,10 @@
   "mode",
   "duty",
   "cycle",
-  "6v"
+  "6v",
+  "uvlo",
+  "dip",
+  "soic"
  ],
  "facts": {
   "package_family": "TSSOP",
@@ -64,7 +56,7 @@
   "tier_counts": {
    "A": 4
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -106,6 +98,6 @@
   "kicad-symbols/Regulator_Controller/UCC3813-3",
   "kicad-symbols/Regulator_Controller/UCC3813-5"
  ],
- "embedding_text": "ic-power.tssop.4-1v | IC Power | Power IC cluster containing four tier-A surface-mount parts in TSSOP-8 footprints associated with 4.1V applications. | ic power tssop tssop-8 smd 4.1v regulator controller ucc3803 ucc3805 ucc3813-3 ucc3813-5 ic power kicad controller pwm 1v regulator low bicmos current mode duty cycle 6v | TSSOP | 4.1V",
+ "embedding_text": "ic-power.tssop.4-1v | IC Power | 4 ic power parts for 4.1V using TSSOP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | tssop controller power pwm 1v regulator low bicmos current mode duty cycle 6v uvlo dip soic | TSSOP | 4.1V",
  "class": "ic.power"
 }

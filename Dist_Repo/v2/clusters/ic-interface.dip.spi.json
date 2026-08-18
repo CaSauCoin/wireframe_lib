@@ -6,31 +6,22 @@
   "IC",
   "Interface"
  ],
- "description": "Through-hole SPI interface ICs in DIP footprints, including DIP-28_W7.62mm packages.",
+ "description": "2 ic interface parts for SPI using DIP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when an SPI interface IC with through-hole mounting is required.",
-  "Choose for designs requiring a DIP package such as DIP-28_W7.62mm.",
-  "Verify part variant requirements from KiCad symbol sources."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a DIP land pattern is intended."
  ],
  "avoid_when": [
-  "Avoid if surface-mount assembly is required instead of through-hole DIP.",
-  "Do not use when an interface protocol other than SPI is required.",
-  "Avoid if package footprints other than DIP are needed."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than DIP."
  ],
  "keywords": [
-  "ic",
-  "interface",
-  "spi",
   "dip",
-  "through_hole",
-  "dip-28_w7.62mm",
-  "dip-28",
-  "mcp23s17x-x-sp",
-  "mcp23s18x-x-sp",
-  "kicad-symbols",
-  "ic interface",
-  "spi interface",
+  "interface",
   "expander",
+  "spi",
   "62mm",
   "sp",
   "expansion",
@@ -41,7 +32,8 @@
   "dil",
   "pdip",
   "54mm",
-  "300mil"
+  "300mil",
+  "microchip"
  ],
  "facts": {
   "package_family": "DIP",
@@ -64,7 +56,7 @@
   "tier_counts": {
    "A": 2
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -88,6 +80,6 @@
   "kicad-symbols/Interface_Expansion/MCP23S17x-x-SP",
   "kicad-symbols/Interface_Expansion/MCP23S18x-x-SP"
  ],
- "embedding_text": "ic-interface.dip.spi | IC Interface | Through-hole SPI interface ICs in DIP footprints, including DIP-28_W7.62mm packages. | ic interface spi dip through_hole dip-28_w7.62mm dip-28 mcp23s17x-x-sp mcp23s18x-x-sp kicad-symbols ic interface spi interface expander 62mm sp expansion bit pull w7 tht dil pdip 54mm 300mil | DIP | SPI",
+ "embedding_text": "ic-interface.dip.spi | IC Interface | 2 ic interface parts for SPI using DIP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | dip interface expander spi 62mm sp expansion bit pull w7 tht dil pdip 54mm 300mil microchip | DIP | SPI",
  "class": "ic.interface"
 }

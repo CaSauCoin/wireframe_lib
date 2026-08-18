@@ -5,34 +5,19 @@
  "category_path": [
   "IC"
  ],
- "description": "This cluster contains 27 integrated circuit parts in the S package family utilizing S-18, S-128, S-160, and S-208 footprints across L, M, and N density levels.",
+ "description": "27 ic parts using S footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when requiring an IC with an S package family land pattern.",
-  "Verify the targeted density level variant (L, M, or N) matches board fabrication capabilities.",
-  "Ensure parts with Tier C quality status and unknown mount types meet project requirements."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a S land pattern is intended."
  ],
  "avoid_when": [
-  "Avoid when the PCB design requires package families other than S.",
-  "Avoid if Tier C quality rating or unknown mount specifications are unsuitable.",
-  "Do not use if precise pinout or electrical limits must be pre-verified."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than S."
  ],
  "keywords": [
   "ic",
-  "integrated circuit",
-  "package family s",
-  "s-18_l",
-  "s-18_m",
-  "s-18_n",
-  "s-128_l",
-  "s-128_m",
-  "s-128_n",
-  "s-160_l",
-  "s-160_m",
-  "s-160_n",
-  "s-208_l",
-  "s-208_m",
-  "s-208_n",
-  "tier c",
   "pad",
   "mm",
   "pitch",
@@ -69,7 +54,7 @@
   "tier_counts": {
    "C": 27
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
@@ -101,6 +86,6 @@
   "dist-legacy/S-80_M",
   "dist-legacy/S-80_N"
  ],
- "embedding_text": "ic.s | IC | This cluster contains 27 integrated circuit parts in the S package family utilizing S-18, S-128, S-160, and S-208 footprints across L, M, and N density levels. | ic integrated circuit package family s s-18_l s-18_m s-18_n s-128_l s-128_m s-128_n s-160_l s-160_m s-160_n s-208_l s-208_m s-208_n tier c pad mm pitch pins 80a | S | ",
+ "embedding_text": "ic.s | IC | 27 ic parts using S footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | ic pad mm pitch pins 80a | S | ",
  "class": "ic"
 }

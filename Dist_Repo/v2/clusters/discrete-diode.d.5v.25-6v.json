@@ -6,42 +6,34 @@
   "Discrete",
   "Diode"
  ],
- "description": "Surface-mount discrete TVS diode cluster of 2 Tier A parts with 5V and 25.6V facets using D_SMA footprints.",
+ "description": "2 discrete diode parts for 5V, 25.6V using D footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select between unidirectional (P6SMB30A) and bidirectional (P6SMB30CA) TVS configurations.",
-  "Verify compatibility with 5V and 25.6V voltage facets.",
-  "Use when surface-mount D_SMA footprints are required."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a D land pattern is intended."
  ],
  "avoid_when": [
-  "The layout requires packages or land patterns other than D_SMA.",
-  "Through-hole mounting is required instead of SMD.",
-  "Voltage requirements differ from the specified 5V and 25.6V facets."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than D."
  ],
  "keywords": [
-  "discrete diode",
-  "tvs diode",
-  "smd",
-  "d_sma",
-  "5v",
-  "25.6v",
-  "p6smb30a",
-  "p6smb30ca",
-  "tvs-uni",
-  "tvs-bi",
-  "jlcpcb",
-  "discrete",
   "tvs",
   "1000us",
   "6v",
+  "5v",
   "do",
   "esd",
   "sma",
   "diode",
+  "jlcpcb",
   "diodes",
   "5a",
   "4v",
   "5ua",
-  "600w"
+  "600w",
+  "iec",
+  "214aa"
  ],
  "facts": {
   "package_family": "D",
@@ -65,7 +57,7 @@
   "tier_counts": {
    "A": 2
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -89,6 +81,6 @@
   "JLCPCB-Kicad-Library/JLCPCB-Diodes/TVS-Bi,P6SMB30CA",
   "JLCPCB-Kicad-Library/JLCPCB-Diodes/TVS-Uni,P6SMB30A"
  ],
- "embedding_text": "discrete-diode.d.5v.25-6v | Discrete Diode | Surface-mount discrete TVS diode cluster of 2 Tier A parts with 5V and 25.6V facets using D_SMA footprints. | discrete diode tvs diode smd d_sma 5v 25.6v p6smb30a p6smb30ca tvs-uni tvs-bi jlcpcb discrete tvs 1000us 6v do esd sma diode diodes 5a 4v 5ua 600w | D | 5V 25.6V",
+ "embedding_text": "discrete-diode.d.5v.25-6v | Discrete Diode | 2 discrete diode parts for 5V, 25.6V using D footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | tvs 1000us 6v 5v do esd sma diode jlcpcb diodes 5a 4v 5ua 600w iec 214aa | D | 5V 25.6V",
  "class": "discrete.diode"
 }

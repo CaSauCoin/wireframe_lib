@@ -6,32 +6,21 @@
   "Discrete",
   "Diode"
  ],
- "description": "Discrete surface-mount diode cluster featuring 5V and 1.5V ratings in D_MiniMELF and D_SOD-323 package footprints.",
+ "description": "2 discrete diode parts for 5V, 1.5V using D footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select based on required voltage rating of 5V or 1.5V.",
-  "Choose between D_MiniMELF and D_SOD-323 SMD footprints.",
-  "Verify source compatibility with Alternate-KiCad-Library or JLCPCB-Kicad-Library."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a D land pattern is intended."
  ],
  "avoid_when": [
-  "Through-hole mounting is required.",
-  "Target design requires footprints other than D_MiniMELF or D_SOD-323.",
-  "Voltage ratings other than 5V or 1.5V are required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than D."
  ],
  "keywords": [
-  "discrete diode",
   "5v",
-  "1.5v",
-  "smd",
-  "d_minimelf",
-  "d_sod-323",
-  "minimelf",
-  "sod-323",
-  "zener",
-  "ll1.5",
-  "mm3z5v1b",
-  "jlcpcb",
-  "kicad",
   "diode",
+  "zener",
   "sod",
   "ll1",
   "melf",
@@ -39,8 +28,12 @@
   "diodes",
   "akl",
   "alternate",
+  "kicad",
   "library",
-  "mini"
+  "minimelf",
+  "mini",
+  "mm3z5v1b",
+  "jlcpcb"
  ],
  "facts": {
   "package_family": "D",
@@ -66,7 +59,7 @@
   "tier_counts": {
    "A": 2
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -90,6 +83,6 @@
   "Alternate-KiCad-Library/Diode_Zener_AKL/LL1.5",
   "JLCPCB-Kicad-Library/JLCPCB-Diodes/Zener,MM3Z5V1B"
  ],
- "embedding_text": "discrete-diode.d.5v.1-5v | Discrete Diode | Discrete surface-mount diode cluster featuring 5V and 1.5V ratings in D_MiniMELF and D_SOD-323 package footprints. | discrete diode 5v 1.5v smd d_minimelf d_sod-323 minimelf sod-323 zener ll1.5 mm3z5v1b jlcpcb kicad diode sod ll1 melf discrete diodes akl alternate library mini | D | 5V 1.5V",
+ "embedding_text": "discrete-diode.d.5v.1-5v | Discrete Diode | 2 discrete diode parts for 5V, 1.5V using D footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | 5v diode zener sod ll1 melf discrete diodes akl alternate kicad library minimelf mini mm3z5v1b jlcpcb | D | 5V 1.5V",
  "class": "discrete.diode"
 }

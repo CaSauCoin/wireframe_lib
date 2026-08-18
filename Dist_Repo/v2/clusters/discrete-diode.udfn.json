@@ -6,34 +6,25 @@
   "Discrete",
   "Diode"
  ],
- "description": "Discrete diode cluster containing surface-mount components in the UDFN package family matching UDFN-9_1.0x3.8mm_P0.5mm footprints.",
+ "description": "1 discrete diode parts using UDFN footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when a surface-mount discrete diode in a UDFN package family is required.",
-  "Verify compatibility with the UDFN-9_1.0x3.8mm_P0.5mm land pattern.",
-  "Check part details and electrical ratings carefully as review status is generated and quality tier is C."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a UDFN land pattern is intended."
  ],
  "avoid_when": [
-  "Avoid when the PCB layout requires through-hole or non-UDFN package footprints.",
-  "Avoid if required electrical parameters, pinouts, or ratings are not specified.",
-  "Avoid if planner-visible or higher quality tier parts are required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than UDFN."
  ],
  "keywords": [
-  "discrete diode",
   "udfn",
-  "smd",
-  "surface mount",
-  "udfn-9",
-  "1.0x3.8mm",
-  "p0.5mm",
-  "discrete.diode",
-  "diode",
-  "discrete",
-  "udfn-9_1.0x3.8mm_p0.5mm",
-  "udfn package",
   "0x3",
   "8mm",
   "p0",
   "5mm",
+  "discrete",
+  "diode",
   "package",
   "surface",
   "mount",
@@ -41,7 +32,8 @@
   "mm",
   "pitch",
   "pins",
-  "pin"
+  "pin",
+  "ref"
  ],
  "facts": {
   "package_family": "UDFN",
@@ -62,12 +54,12 @@
   "tier_counts": {
    "C": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
   "dist-legacy/UDFN-9_1.0x3.8mm_P0.5mm"
  ],
- "embedding_text": "discrete-diode.udfn | Discrete Diode | Discrete diode cluster containing surface-mount components in the UDFN package family matching UDFN-9_1.0x3.8mm_P0.5mm footprints. | discrete diode udfn smd surface mount udfn-9 1.0x3.8mm p0.5mm discrete.diode diode discrete udfn-9_1.0x3.8mm_p0.5mm udfn package 0x3 8mm p0 5mm package surface mount pad mm pitch pins pin | UDFN | ",
+ "embedding_text": "discrete-diode.udfn | Discrete Diode | 1 discrete diode parts using UDFN footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | udfn 0x3 8mm p0 5mm discrete diode package surface mount pad mm pitch pins pin ref | UDFN | ",
  "class": "discrete.diode"
 }

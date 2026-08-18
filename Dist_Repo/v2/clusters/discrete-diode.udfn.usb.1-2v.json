@@ -6,34 +6,24 @@
   "Discrete",
   "Diode"
  ],
- "description": "Surface-mount discrete diode cluster for 1.2V USB applications featuring UDFN footprint UDFN-9_1.0x3.8mm_P0.5mm.",
+ "description": "1 discrete diode parts for USB, 1.2V using UDFN footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select for surface-mount discrete diode requirements in USB 1.2V applications.",
-  "Use when board layout uses the UDFN-9_1.0x3.8mm_P0.5mm footprint.",
-  "Choose when requiring Tier A parts sourced from KiCad symbols."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a UDFN land pattern is intended."
  ],
  "avoid_when": [
-  "Avoid if the application requires non-SMD mounting or non-UDFN package footprints.",
-  "Do not use if target operating parameters differ from USB 1.2V.",
-  "Avoid if the land pattern does not match UDFN-9_1.0x3.8mm_P0.5mm."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than UDFN."
  ],
  "keywords": [
-  "discrete diode",
   "udfn",
-  "usb",
-  "1.2v",
-  "smd",
-  "udfn-9_1.0x3.8mm_p0.5mm",
-  "kicad-symbols",
-  "we-tvs-824014881",
-  "power protection",
-  "tier a",
-  "surface mount",
-  "discrete",
   "tvs",
   "protection",
   "diode",
   "2v",
+  "usb",
   "we",
   "power",
   "obsolete",
@@ -41,7 +31,9 @@
   "array",
   "standoff",
   "channels",
-  "0x3"
+  "0x3",
+  "8mm",
+  "p0"
  ],
  "facts": {
   "package_family": "UDFN",
@@ -65,7 +57,7 @@
   "tier_counts": {
    "A": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -80,6 +72,6 @@
  "part_ids": [
   "kicad-symbols/Power_Protection/WE-TVS-824014881"
  ],
- "embedding_text": "discrete-diode.udfn.usb.1-2v | Discrete Diode | Surface-mount discrete diode cluster for 1.2V USB applications featuring UDFN footprint UDFN-9_1.0x3.8mm_P0.5mm. | discrete diode udfn usb 1.2v smd udfn-9_1.0x3.8mm_p0.5mm kicad-symbols we-tvs-824014881 power protection tier a surface mount discrete tvs protection diode 2v we power obsolete eol array standoff channels 0x3 | UDFN | USB 1.2V",
+ "embedding_text": "discrete-diode.udfn.usb.1-2v | Discrete Diode | 1 discrete diode parts for USB, 1.2V using UDFN footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | udfn tvs protection diode 2v usb we power obsolete eol array standoff channels 0x3 8mm p0 | UDFN | USB 1.2V",
  "class": "discrete.diode"
 }

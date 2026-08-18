@@ -7,31 +7,22 @@
   "Power",
   "Switching Regulator"
  ],
- "description": "Surface-mount 5V and 5.5V boost switching regulator ICs in WSON package options including WSON-6-1EP and WSON-8-1EP footprints.",
+ "description": "8 ic power switching regulator parts for 5V, boost, 5.5V using WSON footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when designing 5V or 5.5V SMD boost switching regulator circuits.",
-  "Choose based on required WSON-6-1EP or WSON-8-1EP footprint matching.",
-  "Verify specific part model for exact application requirements."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a WSON land pattern is intended."
  ],
  "avoid_when": [
-  "Avoid if the design requires buck or non-boost voltage conversion.",
-  "Avoid when surface-mount WSON footprints are not compatible with layout.",
-  "Avoid if target voltage ratings differ from 5V or 5.5V boost specifications."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than WSON."
  ],
  "keywords": [
-  "ic",
-  "power",
-  "switching regulator",
-  "boost",
-  "5v",
-  "5.5v",
   "wson",
-  "smd",
-  "wson-6-1ep",
-  "wson-8-1ep",
-  "2x2mm",
-  "kicad-symbols",
+  "5v",
   "switching",
+  "boost",
   "regulator",
   "converter",
   "voltage",
@@ -39,8 +30,11 @@
   "1ep",
   "input",
   "current",
+  "2x2mm",
   "p0",
-  "6mm"
+  "6mm",
+  "ic",
+  "power"
  ],
  "facts": {
   "package_family": "WSON",
@@ -66,7 +60,7 @@
   "tier_counts": {
    "A": 8
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -120,6 +114,6 @@
   "kicad-symbols/Regulator_Switching/TPS61099DRV",
   "kicad-symbols/Regulator_Switching/TPS61252DSG"
  ],
- "embedding_text": "ic-power-switching.wson.5v.boost | IC Power Switching Regulator | Surface-mount 5V and 5.5V boost switching regulator ICs in WSON package options including WSON-6-1EP and WSON-8-1EP footprints. | ic power switching regulator boost 5v 5.5v wson smd wson-6-1ep wson-8-1ep 2x2mm kicad-symbols switching regulator converter voltage dc 1ep input current p0 6mm | WSON | 5V boost 5.5V",
+ "embedding_text": "ic-power-switching.wson.5v.boost | IC Power Switching Regulator | 8 ic power switching regulator parts for 5V, boost, 5.5V using WSON footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | wson 5v switching boost regulator converter voltage dc 1ep input current 2x2mm p0 6mm ic power | WSON | 5V boost 5.5V",
  "class": "ic.power.switching"
 }

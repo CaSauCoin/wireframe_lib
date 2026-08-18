@@ -5,31 +5,19 @@
  "category_path": [
   "IC"
  ],
- "description": "Surface-mount integrated circuit cluster in VSON package variants featuring 8-pin, 10-pin, and 14-pin footprints with exposed pads and optional thermal vias.",
+ "description": "10 ic parts using VSON footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Verify exact pin count (8, 10, or 14 pin) and pitch (0.5mm or 0.65mm).",
-  "Match thermal pad dimensions and check whether thermal vias are required.",
-  "Prefer Tier A entries like TPS3430WDRC when fully verified parts are needed."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a VSON land pattern is intended."
  ],
  "avoid_when": [
-  "The target design requires through-hole mounting rather than SMD.",
-  "The required board footprint is outside the VSON package family.",
-  "A different pin count, pin pitch, or exposed thermal pad dimension is required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than VSON."
  ],
  "keywords": [
   "vson",
-  "smd",
-  "ic",
-  "vson-8",
-  "vson-10",
-  "vson-14",
-  "exposed pad",
-  "thermal vias",
-  "0.5mm pitch",
-  "0.65mm pitch",
-  "tps3430wdrc",
-  "power supervisor",
-  "vson package",
   "p0",
   "1ep",
   "ep1",
@@ -37,10 +25,14 @@
   "5mm",
   "65x2",
   "4mm",
+  "ic",
   "thermalvias",
   "65mm",
   "pitch",
-  "package"
+  "package",
+  "2x2mm",
+  "3x4",
+  "45mm"
  ],
  "facts": {
   "package_family": "VSON",
@@ -71,7 +63,7 @@
    "A": 1,
    "C": 9
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -95,6 +87,6 @@
   "dist-legacy/VSON-8-1EP_3x3mm_P0.65mm_EP1.65x2.4mm_ThermalVias",
   "dist-legacy/VSON-8_1.5x2mm_P0.5mm"
  ],
- "embedding_text": "ic.vson | IC | Surface-mount integrated circuit cluster in VSON package variants featuring 8-pin, 10-pin, and 14-pin footprints with exposed pads and optional thermal vias. | vson smd ic vson-8 vson-10 vson-14 exposed pad thermal vias 0.5mm pitch 0.65mm pitch tps3430wdrc power supervisor vson package p0 1ep ep1 3x3mm 5mm 65x2 4mm thermalvias 65mm pitch package | VSON | ",
+ "embedding_text": "ic.vson | IC | 10 ic parts using VSON footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | vson p0 1ep ep1 3x3mm 5mm 65x2 4mm ic thermalvias 65mm pitch package 2x2mm 3x4 45mm | VSON | ",
  "class": "ic"
 }

@@ -6,40 +6,32 @@
   "Discrete",
   "BJT"
  ],
- "description": "Cluster of 40V-rated discrete BJT parts using SuperSOT-6 SMD footprints, currently represented by a single tier A KiCad symbol (FMB3946).",
+ "description": "1 discrete bjt parts for 40V using SuperSOT footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Only one representative part (FMB3946, tier A, score 100) is currently in this cluster",
-  "Confirm the SuperSOT-6 footprint matches your intended land pattern",
-  "Verify pin-to-pad mapping against the symbol before layout since only one source contributed this cluster"
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SuperSOT land pattern is intended."
  ],
  "avoid_when": [
-  "The design requires a voltage rating other than the 40V facet",
-  "A footprint other than SuperSOT-6 or a non-SMD mount is needed",
-  "The symbol-footprint pairing has not been reviewed or confirmed"
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SuperSOT."
  ],
  "keywords": [
-  "bjt",
-  "discrete bjt",
   "supersot",
-  "supersot-6",
-  "40v",
-  "smd",
-  "surface mount",
-  "fmb3946",
   "transistor",
-  "kicad-symbols",
-  "transistor_bjt",
-  "discrete",
-  "package family",
-  "tier a",
+  "bjt",
+  "40v",
   "npn",
   "pnp",
+  "fmb3946",
   "200ma",
   "ic",
   "vce",
   "dual",
   "transistors",
-  "ssot"
+  "ssot",
+  "discrete"
  ],
  "facts": {
   "package_family": "SuperSOT",
@@ -62,7 +54,7 @@
   "tier_counts": {
    "A": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -77,6 +69,6 @@
  "part_ids": [
   "kicad-symbols/Transistor_BJT/FMB3946"
  ],
- "embedding_text": "discrete-bjt.supersot.40v | Discrete BJT | Cluster of 40V-rated discrete BJT parts using SuperSOT-6 SMD footprints, currently represented by a single tier A KiCad symbol (FMB3946). | bjt discrete bjt supersot supersot-6 40v smd surface mount fmb3946 transistor kicad-symbols transistor_bjt discrete package family tier a npn pnp 200ma ic vce dual transistors ssot | SuperSOT | 40V",
+ "embedding_text": "discrete-bjt.supersot.40v | Discrete BJT | 1 discrete bjt parts for 40V using SuperSOT footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | supersot transistor bjt 40v npn pnp fmb3946 200ma ic vce dual transistors ssot discrete | SuperSOT | 40V",
  "class": "discrete.bjt"
 }

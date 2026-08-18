@@ -6,42 +6,34 @@
   "Discrete",
   "BJT"
  ],
- "description": "Discrete BJT parts in DIP-8 package (35V facet, LongPads footprint) sourced from the Alternate KiCad Library, all tier A.",
+ "description": "4 discrete bjt parts for 35V using DIP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "All 4 entries share the same DIP-8_W7.62mm_LongPads footprint and tier A score of 100",
-  "Differentiate by exact part id/name (LM394N, LM394N-1, LM394N-2, LM394Ns) rather than rating, since no distinguishing electrical facts are given",
-  "Confirm footprint pad spacing matches your board's DIP-8 land pattern before use"
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a DIP land pattern is intended."
  ],
  "avoid_when": [
-  "The design requires a footprint other than DIP-8_W7.62mm_LongPads",
-  "Electrical parameters beyond the 35V facet are needed and not confirmed from the datasheet",
-  "A surface-mount or non-through-hole package is required"
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than DIP."
  ],
  "keywords": [
-  "discrete bjt",
-  "bjt",
-  "dip-8",
   "dip",
-  "35v",
-  "through hole",
-  "tht",
-  "longpads",
-  "w7.62mm",
-  "lm394n",
-  "lm394n-1",
-  "lm394n-2",
-  "lm394ns",
-  "alternate-kicad-library",
-  "akl",
-  "tier a",
   "transistor",
+  "bjt",
   "dual",
   "npn",
+  "35v",
   "62mm",
+  "longpads",
+  "akl",
   "matched",
   "alternate",
   "kicad",
-  "library"
+  "library",
+  "w7",
+  "tht",
+  "dil"
  ],
  "facts": {
   "package_family": "DIP",
@@ -64,7 +56,7 @@
   "tier_counts": {
    "A": 4
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -106,6 +98,6 @@
   "Alternate-KiCad-Library/Transistor_BJT_AKL/LM394N-2",
   "Alternate-KiCad-Library/Transistor_BJT_AKL/LM394Ns"
  ],
- "embedding_text": "discrete-bjt.dip.35v | Discrete BJT | Discrete BJT parts in DIP-8 package (35V facet, LongPads footprint) sourced from the Alternate KiCad Library, all tier A. | discrete bjt bjt dip-8 dip 35v through hole tht longpads w7.62mm lm394n lm394n-1 lm394n-2 lm394ns alternate-kicad-library akl tier a transistor dual npn 62mm matched alternate kicad library | DIP | 35V",
+ "embedding_text": "discrete-bjt.dip.35v | Discrete BJT | 4 discrete bjt parts for 35V using DIP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | dip transistor bjt dual npn 35v 62mm longpads akl matched alternate kicad library w7 tht dil | DIP | 35V",
  "class": "discrete.bjt"
 }

@@ -6,36 +6,29 @@
   "Discrete",
   "Transistor"
  ],
- "description": "Discrete transistor component cluster containing 11 parts with Jack family footprints supporting SMD and through-hole mounting.",
+ "description": "11 discrete transistor parts using Jack footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when needing discrete transistor parts with Jack package family footprints.",
-  "Check mounting requirements between surface-mount (SMD) and through-hole options.",
-  "Consider quality tier availability, which includes 1 tier B part and 10 tier C parts."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a Jack land pattern is intended."
  ],
  "avoid_when": [
-  "Avoid when the layout requires a package family other than Jack.",
-  "Avoid if tier B or tier C quality ratings are insufficient for requirements.",
-  "Do not use if unlisted electrical ratings or datasheet parameters are required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than Jack."
  ],
  "keywords": [
-  "discrete transistor",
   "jack",
-  "smd",
-  "through hole",
-  "cui",
-  "lumberg",
-  "qingpu",
-  "switronic",
-  "3.5mm",
-  "jack_phone_3",
-  "discrete",
-  "transistor",
   "5mm",
   "horizontal",
+  "cui",
   "sj1",
+  "transistor",
+  "discrete",
   "trs",
   "through",
   "hole",
+  "lumberg",
   "mm",
   "pitch",
   "audio",
@@ -74,7 +67,7 @@
    "B": 1,
    "C": 10
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -99,6 +92,6 @@
   "dist-legacy/Jack_3.5mm_QingPu_WQP-PJ398SM_Vertical_CircularHoles",
   "dist-legacy/Jack_3.5mm_Switronic_ST-005-G_horizontal"
  ],
- "embedding_text": "discrete-transistor.jack | Discrete Transistor | Discrete transistor component cluster containing 11 parts with Jack family footprints supporting SMD and through-hole mounting. | discrete transistor jack smd through hole cui lumberg qingpu switronic 3.5mm jack_phone_3 discrete transistor 5mm horizontal sj1 trs through hole mm pitch audio 3533ng circularholes | Jack | ",
+ "embedding_text": "discrete-transistor.jack | Discrete Transistor | 11 discrete transistor parts using Jack footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | jack 5mm horizontal cui sj1 transistor discrete trs through hole lumberg mm pitch audio 3533ng circularholes | Jack | ",
  "class": "discrete.transistor"
 }

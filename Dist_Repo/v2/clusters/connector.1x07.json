@@ -5,44 +5,34 @@
  "category_path": [
   "Connector"
  ],
- "description": "Connector — 1x07 (0.1in and 2.0mm pitch pin headers/sockets in through-hole and SMD mounts) from SparkFun-KiCad-Libraries, used for single-row 7-position board interconnects.",
+ "description": "4 connector parts using 1x07 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Match footprint pitch and mount exactly: 1x07_P2.54mm (THT), 1x07_P2.54mm_Locking, or 1x07_P2.0mm_Socket_Vertical (PTH or SMD).",
-  "Prefer the tier A entry (Conn_01x07_P2.54mm, score 88) when a standard 0.1in header is acceptable.",
-  "Use the locking variant only if the design requires a retention/locking connector body.",
-  "Confirm SMD vs through-hole mounting matches the intended assembly process."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a 1x07 land pattern is intended."
  ],
  "avoid_when": [
-  "The design needs a pin count other than 7.",
-  "The required pitch is not 2.54mm or 2.0mm.",
-  "Electrical current/voltage rating is needed but not stated by the selected part.",
-  "The symbol-footprint pairing is unverified or flagged for review."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than 1x07."
  ],
  "keywords": [
-  "connector",
-  "1x07",
-  "01x07",
-  "conn_01x07",
-  "pin header",
-  "socket connector",
-  "p2.54mm",
-  "p2.0mm",
-  "2.54mm pitch",
-  "2.0mm pitch",
-  "locking connector",
-  "through hole connector",
-  "smd connector",
-  "vertical socket",
-  "7 position connector",
-  "single row header",
-  "sparkfun connector",
-  "pth socket",
   "sparkfun",
+  "connector",
   "p2",
+  "1x07",
   "54mm",
   "conn",
+  "01x07",
   "locking",
-  "pth"
+  "pth",
+  "0mm",
+  "socket",
+  "vertical",
+  "2mm",
+  "pitch",
+  "smd",
+  "pos"
  ],
  "facts": {
   "package_family": "1x07",
@@ -69,7 +59,7 @@
    "B": 2,
    "C": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -103,6 +93,6 @@
   "SparkFun-KiCad-Libraries/SparkFun-Connector/Conn_01x07_P2.0mm_Socket_Vertical_SMD_Pin1RightUp",
   "SparkFun-KiCad-Libraries/SparkFun-Connector/Conn_01x07_P2.54mm_Locking"
  ],
- "embedding_text": "connector.1x07 | Connector | Connector — 1x07 (0.1in and 2.0mm pitch pin headers/sockets in through-hole and SMD mounts) from SparkFun-KiCad-Libraries, used for single-row 7-position board interconnects. | connector 1x07 01x07 conn_01x07 pin header socket connector p2.54mm p2.0mm 2.54mm pitch 2.0mm pitch locking connector through hole connector smd connector vertical socket 7 position connector single row header sparkfun connector pth socket sparkfun p2 54mm conn locking pth | 1x07 | ",
+ "embedding_text": "connector.1x07 | Connector | 4 connector parts using 1x07 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | sparkfun connector p2 1x07 54mm conn 01x07 locking pth 0mm socket vertical 2mm pitch smd pos | 1x07 | ",
  "class": "connector"
 }

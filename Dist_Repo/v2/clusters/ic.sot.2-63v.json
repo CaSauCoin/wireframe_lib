@@ -5,36 +5,28 @@
  "category_path": [
   "IC"
  ],
- "description": "Cluster of 4 surface-mount IC parts for 2.63V operation in SOT footprint options including SOT-143 and SOT-143-4.",
+ "description": "4 ic parts for 2.63V using SOT footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when a 2.63V surface-mount IC in a SOT package family is required.",
-  "Choose between Tier A KiCad Power Supervisor symbols and Tier B JLCPCB library parts.",
-  "Verify compatibility with target footprints SOT-143 or SOT-143-4_L2.9-W1.3-P1.92-LS2.4-BL."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SOT land pattern is intended."
  ],
  "avoid_when": [
-  "Avoid if the circuit requires an operating voltage other than 2.63V.",
-  "Avoid if surface-mount (SMD) mounting is not supported by the design.",
-  "Avoid when the PCB layout requires package footprints outside the SOT family."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SOT."
  ],
  "keywords": [
-  "ic",
   "sot",
-  "sot-143",
-  "2.63v",
-  "smd",
-  "power supervisor",
-  "reset",
-  "cat811rtbi-gt3",
-  "max811reus-t",
-  "mic811ruy",
-  "sot-143-4",
-  "140ms",
   "supervisor",
+  "reset",
   "63v",
   "power",
+  "ic",
   "supply",
   "manual",
   "threshold",
+  "140ms",
   "l2",
   "w1",
   "p1",
@@ -66,7 +58,7 @@
    "A": 3,
    "B": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -108,6 +100,6 @@
   "kicad-symbols/Power_Supervisor/MIC811RUY",
   "JLCPCB-Kicad-Library/145632/Reset, 2.63V, 140ms, (2)"
  ],
- "embedding_text": "ic.sot.2-63v | IC | Cluster of 4 surface-mount IC parts for 2.63V operation in SOT footprint options including SOT-143 and SOT-143-4. | ic sot sot-143 2.63v smd power supervisor reset cat811rtbi-gt3 max811reus-t mic811ruy sot-143-4 140ms supervisor 63v power supply manual threshold l2 w1 p1 ls2 bl c145632 | SOT | 2.63V",
+ "embedding_text": "ic.sot.2-63v | IC | 4 ic parts for 2.63V using SOT footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | sot supervisor reset 63v power ic supply manual threshold 140ms l2 w1 p1 ls2 bl c145632 | SOT | 2.63V",
  "class": "ic"
 }

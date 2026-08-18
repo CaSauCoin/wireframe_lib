@@ -7,32 +7,20 @@
   "Analog",
   "Op-Amp"
  ],
- "description": "Surface-mount 2.8V analog operational amplifier IC cluster featuring SOIC-8 and SOIC-14 footprints from KiCad symbols.",
+ "description": "2 ic analog op-amp parts for 2.8V using SOIC footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select SOIC-8 footprint for NCS20072D or SOIC-14 for NCS20074D.",
-  "Use when requiring surface-mount 2.8V analog operational amplifiers.",
-  "Choose based on required SOIC pin count and body size."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SOIC land pattern is intended."
  ],
  "avoid_when": [
-  "The design requires non-SOIC package families or through-hole mounting.",
-  "Applications require operating voltages other than 2.8V.",
-  "A footprint other than SOIC-8 3.9x4.9mm or SOIC-14 3.9x8.7mm is required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SOIC."
  ],
  "keywords": [
-  "ic",
-  "analog",
-  "opamp",
-  "op-amp",
-  "operational amplifier",
-  "2.8v",
-  "soic",
-  "soic-8",
-  "soic-14",
-  "smd",
-  "ncs20072d",
-  "ncs20074d",
-  "kicad-symbols",
   "rail",
+  "soic",
   "8v",
   "to",
   "output",
@@ -42,7 +30,11 @@
   "p1",
   "27mm",
   "so",
-  "vfa"
+  "opamp",
+  "vfa",
+  "ic",
+  "analog",
+  "op"
  ],
  "facts": {
   "package_family": "SOIC",
@@ -66,7 +58,7 @@
   "tier_counts": {
    "A": 2
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -90,6 +82,6 @@
   "kicad-symbols/Amplifier_Operational/NCS20072D",
   "kicad-symbols/Amplifier_Operational/NCS20074D"
  ],
- "embedding_text": "ic-analog-opamp.soic.2-8v | IC Analog Op-Amp | Surface-mount 2.8V analog operational amplifier IC cluster featuring SOIC-8 and SOIC-14 footprints from KiCad symbols. | ic analog opamp op-amp operational amplifier 2.8v soic soic-8 soic-14 smd ncs20072d ncs20074d kicad-symbols rail 8v to output amplifier operational dual p1 27mm so vfa | SOIC | 2.8V",
+ "embedding_text": "ic-analog-opamp.soic.2-8v | IC Analog Op-Amp | 2 ic analog op-amp parts for 2.8V using SOIC footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | rail soic 8v to output amplifier operational dual p1 27mm so opamp vfa ic analog op | SOIC | 2.8V",
  "class": "ic.analog.opamp"
 }

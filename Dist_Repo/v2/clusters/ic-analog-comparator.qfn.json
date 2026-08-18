@@ -7,31 +7,20 @@
   "Analog",
   "Comparator"
  ],
- "description": "Surface-mount analog comparator ICs in QFN package variants including 12-pin 3x3mm and 32-pin WQFN 5x5mm exposed-pad footprints.",
+ "description": "3 ic analog comparator parts using QFN footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select for surface-mount IC analog comparators packaged in QFN footprint options.",
-  "Match layout requirements to specific QFN or WQFN pin counts and exposed pad dimensions.",
-  "Verify part quality tier and footprint compatibility prior to design integration."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a QFN land pattern is intended."
  ],
  "avoid_when": [
-  "A through-hole or non-QFN package layout is required.",
-  "Specific electrical limits not detailed in the cluster facts must be verified.",
-  "Footprint requirements differ from the specified 12-pin or 32-pin QFN pattern variants."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than QFN."
  ],
  "keywords": [
-  "ic",
-  "analog",
   "comparator",
   "qfn",
-  "wqfn",
-  "smd",
-  "surface mount",
-  "qfn-12-1ep",
-  "wqfn-32-1ep",
-  "ltc6752xud-3",
-  "ltc6754xud",
-  "lmh7324",
-  "exposed pad",
   "rail",
   "single",
   "1ep",
@@ -39,6 +28,9 @@
   "5mm",
   "high",
   "speed",
+  "ic",
+  "analog",
+  "wqfn",
   "to",
   "cmos",
   "3x3mm",
@@ -65,7 +57,7 @@
    "A": 2,
    "B": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -98,6 +90,6 @@
   "kicad-symbols/Comparator/LTC6754xUD",
   "kicad-symbols/Comparator/LMH7324"
  ],
- "embedding_text": "ic-analog-comparator.qfn | IC Analog Comparator | Surface-mount analog comparator ICs in QFN package variants including 12-pin 3x3mm and 32-pin WQFN 5x5mm exposed-pad footprints. | ic analog comparator qfn wqfn smd surface mount qfn-12-1ep wqfn-32-1ep ltc6752xud-3 ltc6754xud lmh7324 exposed pad rail single 1ep p0 5mm high speed to cmos 3x3mm ep1 | QFN | ",
+ "embedding_text": "ic-analog-comparator.qfn | IC Analog Comparator | 3 ic analog comparator parts using QFN footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | comparator qfn rail single 1ep p0 5mm high speed ic analog wqfn to cmos 3x3mm ep1 | QFN | ",
  "class": "ic.analog.comparator"
 }

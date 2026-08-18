@@ -5,30 +5,20 @@
  "category_path": [
   "IC"
  ],
- "description": "EDA IC component cluster containing 7 parts with SMA package family footprints and through-hole or unknown mounting options.",
+ "description": "7 ic parts using SMA footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when requiring IC parts within the SMA package family.",
-  "Verify specific footprint requirements including right-angle, vertical, or end-launch variants.",
-  "Check part quality tier (tier B or tier C) and source provenance."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SMA land pattern is intended."
  ],
  "avoid_when": [
-  "Do not use when the PCB layout requires footprint families other than SMA.",
-  "Avoid if higher tier quality parts than tier B or C are required.",
-  "Avoid if through-hole or unknown mounting types are unsuitable for the design."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SMA."
  ],
  "keywords": [
-  "ic",
   "sma",
-  "sma package",
-  "through hole",
-  "sma-endlaunch",
-  "sma-ra",
-  "sma-ra2",
-  "sma-v",
-  "mmcx",
-  "ssmc",
-  "dist-legacy",
-  "chilaboard",
+  "ic",
   "endlaunch",
   "pad",
   "mm",
@@ -36,6 +26,8 @@
   "pins",
   "ra",
   "ra2",
+  "mmcx",
+  "ssmc",
   "single",
   "pin",
   "component",
@@ -70,7 +62,7 @@
    "B": 1,
    "C": 6
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -91,6 +83,6 @@
   "dist-legacy/SMA_ENDLAUNCH",
   "chilaboard-altium-library/SMA_MMCX_SSMC/SMA_MMCX_SSMC"
  ],
- "embedding_text": "ic.sma | IC | EDA IC component cluster containing 7 parts with SMA package family footprints and through-hole or unknown mounting options. | ic sma sma package through hole sma-endlaunch sma-ra sma-ra2 sma-v mmcx ssmc dist-legacy chilaboard endlaunch pad mm pitch pins ra ra2 single pin component or terminal | SMA | ",
+ "embedding_text": "ic.sma | IC | 7 ic parts using SMA footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | sma ic endlaunch pad mm pitch pins ra ra2 mmcx ssmc single pin component or terminal | SMA | ",
  "class": "ic"
 }

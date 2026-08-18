@@ -6,43 +6,34 @@
   "Discrete",
   "Diode"
  ],
- "description": "A cluster of 3 surface-mount discrete diodes with a 1.7V specification, using D_SMA and D_SMAF footprints in package family D from the JLCPCB KiCad library.",
+ "description": "3 discrete diode parts for 1.7V using D footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Choose between D_SMA and D_SMAF surface-mount footprints.",
-  "Select between Tier A parts (ES2J, US1M) and Tier B part (ES2JF).",
-  "Use when requiring a discrete SMD diode in package family D with 1.7V specification."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a D land pattern is intended."
  ],
  "avoid_when": [
-  "The design requires through-hole mounting instead of SMD.",
-  "The design requires footprints other than D_SMA or D_SMAF.",
-  "A voltage specification other than 1.7V is required.",
-  "The board layout requires a package family other than D."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than D."
  ],
  "keywords": [
-  "discrete diode",
-  "diode",
-  "discrete",
-  "1.7v",
-  "smd",
-  "d_sma",
-  "d_smaf",
-  "package family d",
-  "jlcpcb",
   "recovery",
-  "es2j",
-  "us1m",
-  "es2jf",
   "diodes",
   "7v",
   "sma",
+  "diode",
   "2a",
   "600v",
   "do",
   "214ac",
+  "jlcpcb",
   "independent",
   "fast",
   "high",
-  "efficiency"
+  "efficiency",
+  "rohs",
+  "discrete"
  ],
  "facts": {
   "package_family": "D",
@@ -67,7 +58,7 @@
    "A": 2,
    "B": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -100,6 +91,6 @@
   "JLCPCB-Kicad-Library/JLCPCB-Diodes/Recovery,US1M,(2)",
   "JLCPCB-Kicad-Library/JLCPCB-Diodes/Recovery,ES2JF"
  ],
- "embedding_text": "discrete-diode.d.1-7v | Discrete Diode | A cluster of 3 surface-mount discrete diodes with a 1.7V specification, using D_SMA and D_SMAF footprints in package family D from the JLCPCB KiCad library. | discrete diode diode discrete 1.7v smd d_sma d_smaf package family d jlcpcb recovery es2j us1m es2jf diodes 7v sma 2a 600v do 214ac independent fast high efficiency | D | 1.7V",
+ "embedding_text": "discrete-diode.d.1-7v | Discrete Diode | 3 discrete diode parts for 1.7V using D footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | recovery diodes 7v sma diode 2a 600v do 214ac jlcpcb independent fast high efficiency rohs discrete | D | 1.7V",
  "class": "discrete.diode"
 }

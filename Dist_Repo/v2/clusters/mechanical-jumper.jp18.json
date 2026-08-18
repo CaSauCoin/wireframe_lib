@@ -6,31 +6,21 @@
   "Mechanical",
   "Jumper"
  ],
- "description": "Mechanical jumper cluster containing 8 tier C parts across JP18 package footprints including JP18-C1C, JP18-C1T, JP18-C2C, JP18-C2T, JP18-D1C, JP18-D1T, JP18-D2C, and JP18-D2T.",
+ "description": "8 mechanical jumper parts using JP18 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select based on the required JP18 footprint variant (C1C, C1T, C2C, C2T, D1C, D1T, D2C, or D2T).",
-  "Verify compatibility with tier C generated library parts from legacy distributor sources.",
-  "Ensure a mechanical jumper component in the JP18 package family is required for the layout."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a JP18 land pattern is intended."
  ],
  "avoid_when": [
-  "The design requires footprints outside the supported JP18 footprint variants.",
-  "Parts designated as tier C or generated review status are not acceptable for the project.",
-  "A non-mechanical jumper component or non-JP18 package is required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than JP18."
  ],
  "keywords": [
-  "mechanical jumper",
   "jp18",
-  "jumper",
   "mechanical",
-  "mechanical.jumper",
-  "jp18-c1c",
-  "jp18-c1t",
-  "jp18-c2c",
-  "jp18-c2t",
-  "jp18-d1c",
-  "jp18-d1t",
-  "jp18-d2c",
-  "jp18-d2t",
+  "jumper",
   "pad",
   "mm",
   "pitch",
@@ -41,7 +31,8 @@
   "c2t",
   "d1c",
   "d1t",
-  "d2c"
+  "d2c",
+  "d2t"
  ],
  "facts": {
   "package_family": "JP18",
@@ -69,7 +60,7 @@
   "tier_counts": {
    "C": 8
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
@@ -82,6 +73,6 @@
   "dist-legacy/JP18-D2C",
   "dist-legacy/JP18-D2T"
  ],
- "embedding_text": "mechanical-jumper.jp18 | Mechanical Jumper | Mechanical jumper cluster containing 8 tier C parts across JP18 package footprints including JP18-C1C, JP18-C1T, JP18-C2C, JP18-C2T, JP18-D1C, JP18-D1T, JP18-D2C, and JP18-D2T. | mechanical jumper jp18 jumper mechanical mechanical.jumper jp18-c1c jp18-c1t jp18-c2c jp18-c2t jp18-d1c jp18-d1t jp18-d2c jp18-d2t pad mm pitch pins c1c c1t c2c c2t d1c d1t d2c | JP18 | ",
+ "embedding_text": "mechanical-jumper.jp18 | Mechanical Jumper | 8 mechanical jumper parts using JP18 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | jp18 mechanical jumper pad mm pitch pins c1c c1t c2c c2t d1c d1t d2c d2t | JP18 | ",
  "class": "mechanical.jumper"
 }

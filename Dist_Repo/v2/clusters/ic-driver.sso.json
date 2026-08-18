@@ -6,30 +6,20 @@
   "IC",
   "Driver"
  ],
- "description": "Surface-mount IC driver cluster in the SSO package family, featuring SSO-6 footprints with 1.27mm pitch.",
+ "description": "2 ic driver parts using SSO footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Choose based on required footprint clearance (7mm or 8mm).",
-  "Verify compatibility with SSO-6 surface-mount (SMD) land patterns.",
-  "Select between parts ACPL-P343 and ACPL-W343."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SSO land pattern is intended."
  ],
  "avoid_when": [
-  "Designs requiring through-hole mounting instead of SMD.",
-  "Layouts requiring package families other than SSO.",
-  "Applications needing non-SSO-6 footprint packages or non-1.27mm pitch."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SSO."
  ],
  "keywords": [
-  "ic driver",
   "driver",
   "sso",
-  "sso-6",
-  "smd",
-  "acpl-p343",
-  "acpl-w343",
-  "driver_fet",
-  "p1.27mm",
-  "clearance7mm",
-  "clearance8mm",
-  "ic.driver",
   "optocoupler",
   "acpl",
   "fet",
@@ -41,7 +31,9 @@
   "propagation",
   "delay",
   "200ns",
-  "8x4"
+  "8x4",
+  "6mm",
+  "p1"
  ],
  "facts": {
   "package_family": "SSO",
@@ -63,7 +55,7 @@
   "tier_counts": {
    "A": 2
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -87,6 +79,6 @@
   "kicad-symbols/Driver_FET/ACPL-P343",
   "kicad-symbols/Driver_FET/ACPL-W343"
  ],
- "embedding_text": "ic-driver.sso | IC Driver | Surface-mount IC driver cluster in the SSO package family, featuring SSO-6 footprints with 1.27mm pitch. | ic driver driver sso sso-6 smd acpl-p343 acpl-w343 driver_fet p1.27mm clearance7mm clearance8mm ic.driver optocoupler acpl fet gate drive output current 0a propagation delay 200ns 8x4 | SSO | ",
+ "embedding_text": "ic-driver.sso | IC Driver | 2 ic driver parts using SSO footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | driver sso optocoupler acpl fet gate drive output current 0a propagation delay 200ns 8x4 6mm p1 | SSO | ",
  "class": "ic.driver"
 }

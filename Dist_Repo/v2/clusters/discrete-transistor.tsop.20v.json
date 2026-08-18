@@ -6,33 +6,22 @@
   "Discrete",
   "Transistor"
  ],
- "description": "A collection of 24 surface-mount discrete transistors rated for 20V using TSOP footprints from Alternate-KiCad-Library.",
+ "description": "24 discrete transistor parts for 20V using TSOP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Designs require a 20V surface-mount discrete transistor.",
-  "Using the TSOP-6_1.65x3.05mm_P0.95mm land pattern.",
-  "Selecting tier A components from Alternate-KiCad-Library."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a TSOP land pattern is intended."
  ],
  "avoid_when": [
-  "Through-hole mounting is required instead of SMD.",
-  "The circuit requires a voltage rating other than 20V.",
-  "The board layout requires a footprint other than TSOP-6."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than TSOP."
  ],
  "keywords": [
-  "discrete",
-  "transistor",
-  "discrete transistor",
-  "20v",
   "tsop",
-  "tsop-6",
-  "smd",
-  "alternate-kicad-library",
-  "ao6404",
-  "ao6409",
-  "ao6409a",
-  "ao6415",
-  "ao6604",
-  "tsop-6_1.65x3.05mm_p0.95mm",
   "mosfet",
+  "transistor",
+  "20v",
   "enchancement",
   "mos",
   "akl",
@@ -41,7 +30,10 @@
   "library",
   "65x3",
   "05mm",
-  "p0"
+  "p0",
+  "95mm",
+  "jedec",
+  "mo"
  ],
  "facts": {
   "package_family": "TSOP",
@@ -64,7 +56,7 @@
   "tier_counts": {
    "A": 24
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -134,6 +126,6 @@
   "Alternate-KiCad-Library/Transistor_MOSFET_AKL/Si3443DDV",
   "Alternate-KiCad-Library/Transistor_MOSFET_AKL/Si3585CDV"
  ],
- "embedding_text": "discrete-transistor.tsop.20v | Discrete Transistor | A collection of 24 surface-mount discrete transistors rated for 20V using TSOP footprints from Alternate-KiCad-Library. | discrete transistor discrete transistor 20v tsop tsop-6 smd alternate-kicad-library ao6404 ao6409 ao6409a ao6415 ao6604 tsop-6_1.65x3.05mm_p0.95mm mosfet enchancement mos akl alternate kicad library 65x3 05mm p0 | TSOP | 20V",
+ "embedding_text": "discrete-transistor.tsop.20v | Discrete Transistor | 24 discrete transistor parts for 20V using TSOP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | tsop mosfet transistor 20v enchancement mos akl alternate kicad library 65x3 05mm p0 95mm jedec mo | TSOP | 20V",
  "class": "discrete.transistor"
 }

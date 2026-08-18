@@ -5,40 +5,34 @@
  "category_path": [
   "IC"
  ],
- "description": "Surface-mount USB IC cluster featuring 5 tier-B parts in QFG80_32 and QFG80_44 footprints from the chilaboard-altium-library.",
+ "description": "5 ic parts for USB using QFG80 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select between QFG80_32 and QFG80_44 footprint variants.",
-  "Choose part based on specific model variant such as ATMEGA8U2, ATMEGA16U2, ATMEGA16U4, ATMEGA32U2, or ATMEGA32U4.",
-  "Verify SMD surface-mount footprint match for QFG80 package family."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a QFG80 land pattern is intended."
  ],
  "avoid_when": [
-  "Layout requires a package family other than QFG80.",
-  "Design requires through-hole or non-surface-mount components.",
-  "Target footprint requires pin counts or packages other than QFG80_32 or QFG80_44."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than QFG80."
  ],
  "keywords": [
-  "ic",
   "usb",
-  "qfg80",
-  "qfg80_32",
-  "qfg80_44",
-  "smd",
-  "chilaboard-altium-library",
-  "atmega16u2",
-  "atmega16u4",
-  "atmega32u2",
-  "atmega32u4",
-  "atmega8u2",
-  "qfp32",
-  "qfp44",
   "microcontroller",
+  "qfg80",
+  "ic",
+  "qfp32",
   "qfp",
   "mcu",
   "bit",
+  "qfp44",
   "and",
   "in",
   "pin",
-  "package"
+  "package",
+  "atmega32u4",
+  "atmega8u2",
+  "atmega16u2"
  ],
  "facts": {
   "package_family": "QFG80",
@@ -62,7 +56,7 @@
   "tier_counts": {
    "B": 5
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -113,6 +107,6 @@
   "chilaboard-altium-library/ATMEGA32U4_QFP44/ATMEGA32U4_QFP44",
   "chilaboard-altium-library/ATMEGA8U2_QFP32/ATMEGA8U2_QFP32"
  ],
- "embedding_text": "ic.qfg80.usb | IC | Surface-mount USB IC cluster featuring 5 tier-B parts in QFG80_32 and QFG80_44 footprints from the chilaboard-altium-library. | ic usb qfg80 qfg80_32 qfg80_44 smd chilaboard-altium-library atmega16u2 atmega16u4 atmega32u2 atmega32u4 atmega8u2 qfp32 qfp44 microcontroller qfp mcu bit and in pin package | QFG80 | USB",
+ "embedding_text": "ic.qfg80.usb | IC | 5 ic parts for USB using QFG80 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | usb microcontroller qfg80 ic qfp32 qfp mcu bit qfp44 and in pin package atmega32u4 atmega8u2 atmega16u2 | QFG80 | USB",
  "class": "ic"
 }

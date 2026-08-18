@@ -5,30 +5,23 @@
  "category_path": [
   "IC"
  ],
- "description": "IC component cluster containing 2 tier-C parts in the XSON package family using XSON-8-4x4-EP and XSON-6-SOT1202 footprints.",
+ "description": "2 ic parts using XSON footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Choose when requiring an IC part in the XSON package family.",
-  "Select when using footprints XSON-8-4x4-EP or XSON-6-SOT1202.",
-  "Verify part suitability given the unknown mounting type and tier C quality rating."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a XSON land pattern is intended."
  ],
  "avoid_when": [
-  "Avoid when the PCB design requires package families other than XSON.",
-  "Do not use if higher quality tier parts than tier C are strictly required.",
-  "Avoid when footprint requirements differ from XSON-8-4x4-EP or XSON-6-SOT1202."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than XSON."
  ],
  "keywords": [
   "xson",
-  "ic",
-  "xson-8-4x4-ep",
-  "xson-6-sot1202",
-  "sot1202",
   "4x4",
   "ep",
-  "dist-legacy",
-  "tier c",
-  "ic xson",
-  "xson-8",
-  "xson-6",
+  "sot1202",
+  "ic",
   "pad",
   "mm",
   "pitch",
@@ -54,13 +47,13 @@
   "tier_counts": {
    "C": 2
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
   "dist-legacy/XSON-8-4x4-EP",
   "dist-legacy/XSON-6-SOT1202"
  ],
- "embedding_text": "ic.xson | IC | IC component cluster containing 2 tier-C parts in the XSON package family using XSON-8-4x4-EP and XSON-6-SOT1202 footprints. | xson ic xson-8-4x4-ep xson-6-sot1202 sot1202 4x4 ep dist-legacy tier c ic xson xson-8 xson-6 pad mm pitch pins | XSON | ",
+ "embedding_text": "ic.xson | IC | 2 ic parts using XSON footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | xson 4x4 ep sot1202 ic pad mm pitch pins | XSON | ",
  "class": "ic"
 }

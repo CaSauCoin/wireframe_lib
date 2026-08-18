@@ -6,44 +6,34 @@
   "Discrete",
   "Diode"
  ],
- "description": "Cluster of 38 discrete diode parts sharing the D package family and a 35V facet, covering through-hole footprints (DO-35, DO-34, P600) and SMD footprints (SOD-323, SOD-23, SOD-123, SOD-523, SOD-323F, SC-80, SMA, MicroMELF, MiniMELF).",
+ "description": "38 discrete diode parts for 35V using D footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Match the exact footprint (e.g., SOD-323 vs SOD-123 vs DO-35) to the intended land pattern before committing",
-  "Prefer tier A parts (37 of 38 in this cluster) over the single tier B entry",
-  "Confirm mount type (through_hole vs smd) fits the assembly process for the board",
-  "Note source library trust: most entries (36) come from Alternate-KiCad-Library, 2 from kicad-symbols"
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a D land pattern is intended."
  ],
  "avoid_when": [
-  "The design needs a package outside this D-family footprint list",
-  "The required rating does not match the 35V facet stated for this cluster",
-  "The exact footprint variant (e.g., SOD-523 vs SOD-323F vs MicroMELF vs MiniMELF) has not been verified against the pad layout",
-  "Mount type (through_hole vs smd) is unconfirmed for the target board"
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than D."
  ],
  "keywords": [
   "diode",
-  "discrete diode",
-  "d package",
   "35v",
-  "do-35",
-  "do-34",
-  "sod-23",
-  "sod-123",
-  "sod-323",
-  "sod-323f",
-  "sod-523",
-  "sc-80",
-  "sma",
-  "p600",
-  "micromelf",
-  "minimelf",
-  "through hole",
-  "smd",
   "do",
   "sod",
   "discrete",
   "akl",
   "alternate",
-  "kicad"
+  "kicad",
+  "library",
+  "horizontal",
+  "62mm",
+  "switching",
+  "100ma",
+  "sod27",
+  "band",
+  "pin"
  ],
  "facts": {
   "package_family": "D",
@@ -80,7 +70,7 @@
    "A": 37,
    "B": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -164,6 +154,6 @@
   "Alternate-KiCad-Library/Diode_AKL/HSU277",
   "Alternate-KiCad-Library/Diode_AKL/BAY67"
  ],
- "embedding_text": "discrete-diode.d.35v | Discrete Diode | Cluster of 38 discrete diode parts sharing the D package family and a 35V facet, covering through-hole footprints (DO-35, DO-34, P600) and SMD footprints (SOD-323, SOD-23, SOD-123, SOD-523, SOD-323F, SC-80, SMA, MicroMELF, MiniMELF). | diode discrete diode d package 35v do-35 do-34 sod-23 sod-123 sod-323 sod-323f sod-523 sc-80 sma p600 micromelf minimelf through hole smd do sod discrete akl alternate kicad | D | 35V",
+ "embedding_text": "discrete-diode.d.35v | Discrete Diode | 38 discrete diode parts for 35V using D footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | diode 35v do sod discrete akl alternate kicad library horizontal 62mm switching 100ma sod27 band pin | D | 35V",
  "class": "discrete.diode"
 }

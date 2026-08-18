@@ -6,44 +6,34 @@
   "Discrete",
   "Diode"
  ],
- "description": "Cluster of 135 discrete diodes in TO packages rated for the 45V facet, covering 12 footprint variants (SMD: TO-263, TO-252; through-hole: TO-220, TO-247, TO-218, TO-262, TO-277B, TO-39), mostly from Alternate-KiCad-Library.",
+ "description": "135 discrete diode parts for 45V using TO footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Match the exact TO footprint variant (e.g. TO-220-2_Vertical_KA vs TO-220-3_Vertical_AKA) before committing to a PCB.",
-  "Prefer tier A entries; 134 of 135 parts in this cluster are tier A, only 1 is tier B.",
-  "Confirm the 45V facet matches your required reverse voltage, since it is the only electrical rating stated for the cluster.",
-  "Check whether the part is SMD or through-hole mount to match the intended assembly process."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a TO land pattern is intended."
  ],
  "avoid_when": [
-  "The design needs a package outside the TO family.",
-  "The required voltage rating differs from the 45V facet.",
-  "The symbol-footprint pairing comes from a low-count source (kicad-symbols or JLCPCB-Kicad-Library each contribute only 1 part) and is unverified.",
-  "Exact pin mapping (A/K orientation) for the chosen TO footprint is not confirmed."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than TO."
  ],
  "keywords": [
-  "to package diode",
-  "discrete diode",
-  "45v",
-  "to-263",
-  "to-220",
-  "to-247",
-  "to-252",
-  "to-218",
-  "to-262",
-  "to-277b",
-  "to-39",
-  "smd diode",
-  "through hole diode",
-  "vertical akl",
-  "alternate-kicad-library",
-  "kicad-symbols",
-  "jlcpcb-kicad-library",
-  "schottky",
   "to",
   "diode",
+  "schottky",
+  "45v",
   "vertical",
   "dual",
   "discrete",
-  "akl"
+  "akl",
+  "alternate",
+  "kicad",
+  "library",
+  "rm",
+  "common",
+  "cathode",
+  "commoncathode",
+  "d2pak"
  ],
  "facts": {
   "package_family": "TO",
@@ -81,7 +71,7 @@
    "A": 134,
    "B": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -262,6 +252,6 @@
   "Alternate-KiCad-Library/Diode_Schottky_AKL/VS-MBRB3045CT",
   "JLCPCB-Kicad-Library/2843728/Schottky, MBR2045CT_C2843728"
  ],
- "embedding_text": "discrete-diode.to.45v | Discrete Diode | Cluster of 135 discrete diodes in TO packages rated for the 45V facet, covering 12 footprint variants (SMD: TO-263, TO-252; through-hole: TO-220, TO-247, TO-218, TO-262, TO-277B, TO-39), mostly from Alternate-KiCad-Library. | to package diode discrete diode 45v to-263 to-220 to-247 to-252 to-218 to-262 to-277b to-39 smd diode through hole diode vertical akl alternate-kicad-library kicad-symbols jlcpcb-kicad-library schottky to diode vertical dual discrete akl | TO | 45V",
+ "embedding_text": "discrete-diode.to.45v | Discrete Diode | 135 discrete diode parts for 45V using TO footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | to diode schottky 45v vertical dual discrete akl alternate kicad library rm common cathode commoncathode d2pak | TO | 45V",
  "class": "discrete.diode"
 }

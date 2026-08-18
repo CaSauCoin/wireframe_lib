@@ -6,34 +6,27 @@
   "Discrete",
   "FET"
  ],
- "description": "Discrete surface-mount FET cluster rated for 60V in a VSON-8 3.3x3.3mm P0.65mm NexFET footprint.",
+ "description": "1 discrete fet parts for 60V using VSON footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when requiring a 60V discrete FET in a VSON package.",
-  "Use for surface-mount designs matching the VSON-8_3.3x3.3mm_P0.65mm_NexFET footprint.",
-  "Choose when selecting tier A parts from KiCad symbols."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a VSON land pattern is intended."
  ],
  "avoid_when": [
-  "Do not use when requiring non-SMD or through-hole mounting.",
-  "Avoid if the PCB land pattern requires a package family other than VSON.",
-  "Avoid if voltage requirements differ from 60V."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than VSON."
  ],
  "keywords": [
-  "discrete fet",
+  "vson",
+  "nexfet",
   "fet",
   "60v",
-  "vson",
-  "vson-8",
-  "smd",
-  "csd18543q3a",
-  "nexfet",
-  "3.3x3.3mm",
-  "p0.65mm",
-  "kicad-symbols",
-  "discrete",
   "power",
   "mosfet",
   "3x3",
   "3mm",
+  "csd18543q3a",
   "transistor",
   "35a",
   "id",
@@ -63,7 +56,7 @@
   "tier_counts": {
    "A": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -78,6 +71,6 @@
  "part_ids": [
   "kicad-symbols/Transistor_FET/CSD18543Q3A"
  ],
- "embedding_text": "discrete-fet.vson.60v | Discrete FET | Discrete surface-mount FET cluster rated for 60V in a VSON-8 3.3x3.3mm P0.65mm NexFET footprint. | discrete fet fet 60v vson vson-8 smd csd18543q3a nexfet 3.3x3.3mm p0.65mm kicad-symbols discrete power mosfet 3x3 3mm transistor 35a id vds channel 1mohm ron | VSON | 60V",
+ "embedding_text": "discrete-fet.vson.60v | Discrete FET | 1 discrete fet parts for 60V using VSON footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | vson nexfet fet 60v power mosfet 3x3 3mm csd18543q3a transistor 35a id vds channel 1mohm ron | VSON | 60V",
  "class": "discrete.fet"
 }

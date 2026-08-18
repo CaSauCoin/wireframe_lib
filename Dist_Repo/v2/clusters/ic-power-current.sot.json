@@ -7,28 +7,20 @@
   "Power",
   "Current"
  ],
- "description": "Cluster of surface-mount power current ICs in the SOT package family featuring tier A parts including HV100K5-G and HV101K5-G with SOT-223-3_TabPin2 footprints.",
+ "description": "2 ic power current parts using SOT footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Designs requiring surface-mount power current ICs in SOT package family.",
-  "Applications calling for tier A parts such as HV100K5-G or HV101K5-G.",
-  "Projects using the SOT-223-3_TabPin2 footprint."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SOT land pattern is intended."
  ],
  "avoid_when": [
-  "Layout requires a package family other than SOT.",
-  "Mounting requirements call for through-hole instead of SMD.",
-  "Footprint requirements differ from SOT-223-3_TabPin2."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SOT."
  ],
  "keywords": [
-  "ic",
-  "power",
   "current",
   "sot",
-  "smd",
-  "sot-223-3_tabpin2",
-  "hv100k5-g",
-  "hv101k5-g",
-  "ic.power.current",
-  "kicad-symbols",
   "hot",
   "swap",
   "limiter",
@@ -37,6 +29,8 @@
   "sot223",
   "tabpin2",
   "cms",
+  "ic",
+  "power",
   "hv100k5",
   "hv101k5"
  ],
@@ -59,7 +53,7 @@
   "tier_counts": {
    "A": 2
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -83,6 +77,6 @@
   "kicad-symbols/Regulator_Current/HV100K5-G",
   "kicad-symbols/Regulator_Current/HV101K5-G"
  ],
- "embedding_text": "ic-power-current.sot | IC Power Current | Cluster of surface-mount power current ICs in the SOT package family featuring tier A parts including HV100K5-G and HV101K5-G with SOT-223-3_TabPin2 footprints. | ic power current sot smd sot-223-3_tabpin2 hv100k5-g hv101k5-g ic.power.current kicad-symbols hot swap limiter regulator controller sot223 tabpin2 cms hv100k5 hv101k5 | SOT | ",
+ "embedding_text": "ic-power-current.sot | IC Power Current | 2 ic power current parts using SOT footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | current sot hot swap limiter regulator controller sot223 tabpin2 cms ic power hv100k5 hv101k5 | SOT | ",
  "class": "ic.power.current"
 }

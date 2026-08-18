@@ -6,44 +6,34 @@
   "Discrete",
   "BJT"
  ],
- "description": "Cluster of 13 discrete BJT parts tagged for the 12V facet, packaged in SOT-family SMD footprints (SOT-323_SC-70, SOT-223-3_TabPin2, SOT-143, SOT-343_SC-70-4, SOT-416, SOT-723), mostly sourced from Alternate-KiCad-Library.",
+ "description": "13 discrete bjt parts for 12V using SOT footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Prefer tier A entries (10 of 13 parts) for higher confidence.",
-  "Match the exact SOT footprint variant required by the board (e.g. SOT-323_SC-70 vs SOT-223-3_TabPin2).",
-  "Confirm the specific part is documented for the 12V facet before use.",
-  "Note source split: 12 parts from Alternate-KiCad-Library, 1 from kicad-symbols."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SOT land pattern is intended."
  ],
  "avoid_when": [
-  "The design needs a package outside the SOT family.",
-  "A voltage other than 12V is required and not confirmed for the chosen part.",
-  "Only a tier B or C entry matches and higher-confidence data is needed.",
-  "The footprint-to-symbol pairing for the specific SOT variant is unverified."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SOT."
  ],
  "keywords": [
-  "discrete bjt",
-  "bjt transistor",
-  "sot package",
-  "smd transistor",
-  "12v",
-  "sot-323",
-  "sc-70",
-  "sot-223-3",
-  "sot-143",
-  "sot-343",
-  "sot-416",
-  "sot-723",
-  "alternate-kicad-library",
-  "kicad-symbols",
-  "tier a part",
-  "surface mount transistor",
   "sot",
   "transistor",
   "bjt",
+  "12v",
   "npn",
   "discrete",
   "akl",
   "alternate",
-  "kicad"
+  "kicad",
+  "library",
+  "sc",
+  "rf",
+  "pnp",
+  "6ghz",
+  "5ghz",
+  "80ma"
  ],
  "facts": {
   "package_family": "SOT",
@@ -74,7 +64,7 @@
    "B": 2,
    "C": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -133,6 +123,6 @@
   "Alternate-KiCad-Library/Transistor_BJT_AKL/2SA2030",
   "kicad-symbols/Transistor_BJT/PBSS301PZ"
  ],
- "embedding_text": "discrete-bjt.sot.12v | Discrete BJT | Cluster of 13 discrete BJT parts tagged for the 12V facet, packaged in SOT-family SMD footprints (SOT-323_SC-70, SOT-223-3_TabPin2, SOT-143, SOT-343_SC-70-4, SOT-416, SOT-723), mostly sourced from Alternate-KiCad-Library. | discrete bjt bjt transistor sot package smd transistor 12v sot-323 sc-70 sot-223-3 sot-143 sot-343 sot-416 sot-723 alternate-kicad-library kicad-symbols tier a part surface mount transistor sot transistor bjt npn discrete akl alternate kicad | SOT | 12V",
+ "embedding_text": "discrete-bjt.sot.12v | Discrete BJT | 13 discrete bjt parts for 12V using SOT footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | sot transistor bjt 12v npn discrete akl alternate kicad library sc rf pnp 6ghz 5ghz 80ma | SOT | 12V",
  "class": "discrete.bjt"
 }

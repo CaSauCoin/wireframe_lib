@@ -6,32 +6,24 @@
   "Discrete",
   "FET"
  ],
- "description": "Discrete FET cluster containing 8 parts in the SOT package family with SMD and through-hole footprint options.",
+ "description": "8 discrete fet parts using SOT footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Match the required SOT package footprint such as SOT-223, SOT-143, SOT-89-3, SOT-353, or SOT-227.",
-  "Select between SMD and through-hole mounting options.",
-  "Prefer Tier A parts over Tier B parts from the available KiCad entries."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SOT land pattern is intended."
  ],
  "avoid_when": [
-  "The application requires a package family other than SOT.",
-  "Mounting requirements fall outside of SMD or through-hole options.",
-  "The 8 available KiCad symbol entries do not contain the needed part."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SOT."
  ],
  "keywords": [
-  "discrete fet",
   "sot",
   "fet",
-  "discrete",
-  "sot-223",
-  "sot-143",
-  "sot-89-3",
-  "sot-353",
-  "sot-227",
-  "smd",
-  "through_hole",
-  "transistor",
   "channel",
   "mosfet",
+  "transistor",
+  "discrete",
   "low",
   "vds",
   "cms",
@@ -69,7 +61,7 @@
    "A": 7,
    "B": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -123,6 +115,6 @@
   "kicad-symbols/Transistor_FET/JFE150DCK",
   "kicad-symbols/Transistor_FET/STE40NC60"
  ],
- "embedding_text": "discrete-fet.sot | Discrete FET | Discrete FET cluster containing 8 parts in the SOT package family with SMD and through-hole footprint options. | discrete fet sot fet discrete sot-223 sot-143 sot-89-3 sot-353 sot-227 smd through_hole transistor channel mosfet low vds cms sc id other current obsolete mode gate | SOT | ",
+ "embedding_text": "discrete-fet.sot | Discrete FET | 8 discrete fet parts using SOT footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | sot fet channel mosfet transistor discrete low vds cms sc id other current obsolete mode gate | SOT | ",
  "class": "discrete.fet"
 }

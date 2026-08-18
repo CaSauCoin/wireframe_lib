@@ -6,44 +6,34 @@
   "Discrete",
   "Bridge Rectifier"
  ],
- "description": "Cluster of 88 discrete bridge rectifier diodes rated 50V, sourced from Alternate-KiCad-Library, spanning 12 distinct SMD and through-hole Diode Bridge footprints (e.g. GBJ, GBU, KBU, GBL, MBF, DFS, ABS, round).",
+ "description": "88 discrete bridge rectifier parts for 50V using Diode footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Match the exact footprint variant (e.g. GBJ, GBU, KBU, GBL, ABS, round) to the intended PCB land pattern",
-  "Prefer tier A entries (59 of 88 parts) for higher confidence",
-  "Confirm mount type (smd vs through_hole) matches the board design",
-  "Verify pin-to-pad mapping before committing to a layout"
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a Diode land pattern is intended."
  ],
  "avoid_when": [
-  "Required voltage rating exceeds 50V or is otherwise unstated by the chosen part",
-  "The board needs a footprint not in this cluster's footprint list",
-  "The symbol-footprint pairing is unverified or flagged for review",
-  "A single discrete diode (not a bridge rectifier) is needed"
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than Diode."
  ],
  "keywords": [
-  "bridge rectifier",
-  "discrete diode",
-  "50v",
-  "diode bridge",
-  "gbj",
-  "gbu",
-  "kbu",
-  "gbl",
-  "mbf",
-  "dfs",
-  "abs diotec",
-  "round d9.8mm",
-  "smd",
-  "through hole",
-  "alternate kicad library",
-  "akl",
-  "vishay",
-  "full wave rectifier",
   "bridge",
   "diode",
   "rectifier",
+  "50v",
+  "akl",
   "alternate",
   "kicad",
-  "library"
+  "library",
+  "discrete",
+  "tht",
+  "vishay",
+  "gbj",
+  "3mm",
+  "6x28",
+  "6x7",
+  "0mm"
  ],
  "facts": {
   "package_family": "Diode",
@@ -79,7 +69,7 @@
    "A": 59,
    "B": 29
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -213,6 +203,6 @@
   "Alternate-KiCad-Library/Diode_Bridge_AKL/MB05F",
   "Alternate-KiCad-Library/Diode_Bridge_AKL/MB05S"
  ],
- "embedding_text": "discrete-bridge.diode.50v | Discrete Bridge Rectifier | Cluster of 88 discrete bridge rectifier diodes rated 50V, sourced from Alternate-KiCad-Library, spanning 12 distinct SMD and through-hole Diode Bridge footprints (e.g. GBJ, GBU, KBU, GBL, MBF, DFS, ABS, round). | bridge rectifier discrete diode 50v diode bridge gbj gbu kbu gbl mbf dfs abs diotec round d9.8mm smd through hole alternate kicad library akl vishay full wave rectifier bridge diode rectifier alternate kicad library | Diode | 50V",
+ "embedding_text": "discrete-bridge.diode.50v | Discrete Bridge Rectifier | 88 discrete bridge rectifier parts for 50V using Diode footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | bridge diode rectifier 50v akl alternate kicad library discrete tht vishay gbj 3mm 6x28 6x7 0mm | Diode | 50V",
  "class": "discrete.bridge"
 }

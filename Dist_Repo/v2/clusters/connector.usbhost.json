@@ -5,31 +5,20 @@
  "category_path": [
   "Connector"
  ],
- "description": "USB host connector cluster with a single tier-C part using the USBHOST footprint, mount type unrecorded, sourced from dist-legacy and not yet planner-visible.",
+ "description": "1 connector parts using USBHOST footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Only one part available; verify it against your actual footprint and mount requirements before use",
-  "Confirm exact USBHOST footprint match against your PCB land pattern",
-  "Check review_status is 'generated' — not yet reviewed or promoted to a higher tier"
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a USBHOST land pattern is intended."
  ],
  "avoid_when": [
-  "A specific mount type (SMD/THT) must be confirmed and it is currently unknown",
-  "A reviewed or higher-trust-tier part is required",
-  "The design needs a connector footprint other than USBHOST",
-  "Planner visibility or vetted sourcing is required"
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than USBHOST."
  ],
  "keywords": [
   "usbhost",
-  "usb host",
   "connector",
-  "usb connector",
-  "footprint usbhost",
-  "tier c",
-  "generated",
-  "dist-legacy",
-  "unreviewed",
-  "single part",
-  "unknown mount",
-  "usb",
   "pad",
   "mm",
   "pitch",
@@ -54,12 +43,12 @@
   "tier_counts": {
    "C": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
   "dist-legacy/USBHOST"
  ],
- "embedding_text": "connector.usbhost | Connector | USB host connector cluster with a single tier-C part using the USBHOST footprint, mount type unrecorded, sourced from dist-legacy and not yet planner-visible. | usbhost usb host connector usb connector footprint usbhost tier c generated dist-legacy unreviewed single part unknown mount usb pad mm pitch pins | USBHOST | ",
+ "embedding_text": "connector.usbhost | Connector | 1 connector parts using USBHOST footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | usbhost connector pad mm pitch pins | USBHOST | ",
  "class": "connector"
 }

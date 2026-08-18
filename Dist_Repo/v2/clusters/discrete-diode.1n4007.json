@@ -6,29 +6,22 @@
   "Discrete",
   "Diode"
  ],
- "description": "Cluster of 2 tier-C discrete diode parts with 1N4007 and 1N4007_SMD footprint options.",
+ "description": "2 discrete diode parts using 1N4007 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Verify whether standard 1N4007 or 1N4007_SMD footprint is required.",
-  "Select when quality tier C parts from legacy distributor sources are acceptable.",
-  "Confirm physical footprint compatibility with 1N4007 package family specifications."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a 1N4007 land pattern is intended."
  ],
  "avoid_when": [
-  "Layout requires package footprint options other than 1N4007 or 1N4007_SMD.",
-  "Project guidelines prohibit parts classified under quality tier C.",
-  "Mounting type must be explicitly defined rather than unknown."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than 1N4007."
  ],
  "keywords": [
   "1n4007",
-  "1n4007_smd",
+  "smd",
   "discrete",
   "diode",
-  "discrete diode",
-  "discrete.diode",
-  "tier c",
-  "dist-legacy",
-  "package 1n4007",
-  "1n4007 footprint",
-  "smd",
   "pad",
   "mm",
   "pitch",
@@ -54,13 +47,13 @@
   "tier_counts": {
    "C": 2
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
   "dist-legacy/1N4007",
   "dist-legacy/1N4007_SMD"
  ],
- "embedding_text": "discrete-diode.1n4007 | Discrete Diode | Cluster of 2 tier-C discrete diode parts with 1N4007 and 1N4007_SMD footprint options. | 1n4007 1n4007_smd discrete diode discrete diode discrete.diode tier c dist-legacy package 1n4007 1n4007 footprint smd pad mm pitch pins | 1N4007 | ",
+ "embedding_text": "discrete-diode.1n4007 | Discrete Diode | 2 discrete diode parts using 1N4007 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | 1n4007 smd discrete diode pad mm pitch pins | 1N4007 | ",
  "class": "discrete.diode"
 }

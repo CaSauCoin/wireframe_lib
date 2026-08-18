@@ -6,33 +6,24 @@
   "Passive",
   "Resistor"
  ],
- "description": "Passive resistor cluster containing 30 tier-C parts across legacy and celestial libraries using RES package family footprint variants with SMD or unknown mounting.",
+ "description": "30 passive resistor parts using RES footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Match the specific RES footprint variant required for the layout.",
-  "Verify mounting configuration between SMD and unconfirmed mount types.",
-  "Review part specifications carefully as all entries are tier C quality."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a RES land pattern is intended."
  ],
  "avoid_when": [
-  "A package family or footprint other than RES is required.",
-  "The application requires verified quality tiers above tier C or planner visibility.",
-  "Confirmed through-hole mounting is required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than RES."
  ],
  "keywords": [
-  "passive",
-  "resistor",
   "res",
-  "smd",
-  "passive.resistor",
-  "res-1w",
-  "res-1_2w",
-  "res-1_4w",
-  "res-1_8w",
-  "res_1_4",
-  "res-1wd",
-  "res-1_4wd",
-  "res-1_8wd",
+  "resistor",
+  "passive",
   "mm",
   "pitch",
+  "smd",
   "pad",
   "pins",
   "1w",
@@ -41,7 +32,8 @@
   "8w",
   "4w",
   "5w",
-  "10w"
+  "10w",
+  "long"
  ],
  "facts": {
   "package_family": "RES",
@@ -75,7 +67,7 @@
   "tier_counts": {
    "C": 30
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
@@ -110,6 +102,6 @@
   "celestial-altium-library/RES 1210_3225/RES_1210_3225",
   "celestial-altium-library/RES 2512_6432/RES_2512_6432"
  ],
- "embedding_text": "passive-resistor.res | Passive Resistor | Passive resistor cluster containing 30 tier-C parts across legacy and celestial libraries using RES package family footprint variants with SMD or unknown mounting. | passive resistor res smd passive.resistor res-1w res-1_2w res-1_4w res-1_8w res_1_4 res-1wd res-1_4wd res-1_8wd mm pitch pad pins 1w 2w small 8w 4w 5w 10w | RES | ",
+ "embedding_text": "passive-resistor.res | Passive Resistor | 30 passive resistor parts using RES footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | res resistor passive mm pitch smd pad pins 1w 2w small 8w 4w 5w 10w long | RES | ",
  "class": "passive.resistor"
 }

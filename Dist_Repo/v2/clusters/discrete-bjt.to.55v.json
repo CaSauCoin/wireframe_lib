@@ -6,44 +6,34 @@
   "Discrete",
   "BJT"
  ],
- "description": "Through-hole 55V discrete BJTs in TO-family packages (TO-218-3_Vertical, TO-3_BEC, TO-66_BEC); 5 parts from kicad-symbols and Alternate-KiCad-Library, 3 tier A and 2 tier B.",
+ "description": "5 discrete bjt parts for 55V using TO footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Match footprint exactly: TO-218-3_Vertical, TO-3_BEC, or TO-66_BEC",
-  "Prefer tier A entries (BD249, BD250, MJ2955) over tier B (2N3054, 2N3054A)",
-  "Confirm the 55V facet meets your circuit's voltage requirement",
-  "Note source library (kicad-symbols vs Alternate-KiCad-Library) for trust/review status"
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a TO land pattern is intended."
  ],
  "avoid_when": [
-  "A surface-mount package is required (all parts here are through_hole)",
-  "The required voltage rating exceeds or differs from the 55V facet",
-  "A TO footprint other than TO-218-3_Vertical, TO-3_BEC, or TO-66_BEC is needed",
-  "Only tier A parts are acceptable and the footprint only matches tier B entries"
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than TO."
  ],
  "keywords": [
   "to",
   "transistor",
   "bjt",
-  "discrete bjt",
   "55v",
-  "through hole",
-  "to-218-3",
-  "to-3",
-  "to-66",
-  "bd249",
-  "bd250",
-  "mj2955",
-  "2n3054",
-  "2n3054a",
-  "power transistor",
-  "kicad-symbols",
-  "alternate-kicad-library",
-  "bec",
   "power",
   "npn",
   "discrete",
   "sot",
   "vertical",
-  "pnp"
+  "pnp",
+  "akl",
+  "alternate",
+  "kicad",
+  "library",
+  "bec",
+  "25a"
  ],
  "facts": {
   "package_family": "TO",
@@ -70,7 +60,7 @@
    "A": 3,
    "B": 2
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -121,6 +111,6 @@
   "Alternate-KiCad-Library/Transistor_BJT_AKL/2N3054",
   "Alternate-KiCad-Library/Transistor_BJT_AKL/2N3054A"
  ],
- "embedding_text": "discrete-bjt.to.55v | Discrete BJT | Through-hole 55V discrete BJTs in TO-family packages (TO-218-3_Vertical, TO-3_BEC, TO-66_BEC); 5 parts from kicad-symbols and Alternate-KiCad-Library, 3 tier A and 2 tier B. | to transistor bjt discrete bjt 55v through hole to-218-3 to-3 to-66 bd249 bd250 mj2955 2n3054 2n3054a power transistor kicad-symbols alternate-kicad-library bec power npn discrete sot vertical pnp | TO | 55V",
+ "embedding_text": "discrete-bjt.to.55v | Discrete BJT | 5 discrete bjt parts for 55V using TO footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | to transistor bjt 55v power npn discrete sot vertical pnp akl alternate kicad library bec 25a | TO | 55V",
  "class": "discrete.bjt"
 }

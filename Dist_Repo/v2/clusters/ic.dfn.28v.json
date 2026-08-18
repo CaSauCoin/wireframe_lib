@@ -5,31 +5,21 @@
  "category_path": [
   "IC"
  ],
- "description": "Integrated circuit cluster of 5 tier B surface-mount 28V parts utilizing the DFN-6-1EP_2x1.6mm_P0.5mm_EP1.15x1.3mm footprint.",
+ "description": "5 ic parts for 28V using DFN footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Choose when needing a 28V surface-mount IC in a DFN package.",
-  "Confirm compatibility with the DFN-6-1EP_2x1.6mm_P0.5mm_EP1.15x1.3mm footprint.",
-  "Select from tier B KiCad power protection symbols such as NCP349MN variants."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a DFN land pattern is intended."
  ],
  "avoid_when": [
-  "The design requires through-hole mounting instead of SMD.",
-  "A package family other than DFN is needed.",
-  "The required footprint differs from DFN-6-1EP_2x1.6mm_P0.5mm_EP1.15x1.3mm."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than DFN."
  ],
  "keywords": [
-  "ic",
-  "28v",
   "dfn",
-  "smd",
-  "power protection",
-  "ncp349mn",
-  "ncp349mnae",
-  "ncp349mnam",
-  "ncp349mnbg",
-  "ncp349mnbk",
-  "dfn-6-1ep_2x1.6mm_p0.5mm_ep1.15x1.3mm",
-  "kicad-symbols",
   "protection",
+  "28v",
   "overvoltage",
   "power",
   "positive",
@@ -40,7 +30,9 @@
   "p0",
   "5mm",
   "ep1",
-  "15x1"
+  "15x1",
+  "3mm",
+  "nolead"
  ],
  "facts": {
   "package_family": "DFN",
@@ -63,7 +55,7 @@
   "tier_counts": {
    "B": 5
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -114,6 +106,6 @@
   "kicad-symbols/Power_Protection/NCP349MNBG",
   "kicad-symbols/Power_Protection/NCP349MNBK"
  ],
- "embedding_text": "ic.dfn.28v | IC | Integrated circuit cluster of 5 tier B surface-mount 28V parts utilizing the DFN-6-1EP_2x1.6mm_P0.5mm_EP1.15x1.3mm footprint. | ic 28v dfn smd power protection ncp349mn ncp349mnae ncp349mnam ncp349mnbg ncp349mnbk dfn-6-1ep_2x1.6mm_p0.5mm_ep1.15x1.3mm kicad-symbols protection overvoltage power positive controller 1ep 2x1 6mm p0 5mm ep1 15x1 | DFN | 28V",
+ "embedding_text": "ic.dfn.28v | IC | 5 ic parts for 28V using DFN footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | dfn protection 28v overvoltage power positive controller 1ep 2x1 6mm p0 5mm ep1 15x1 3mm nolead | DFN | 28V",
  "class": "ic"
 }

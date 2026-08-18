@@ -6,43 +6,34 @@
   "Discrete",
   "BJT"
  ],
- "description": "Cluster of ROHM-footprint discrete BJTs rated 50V, currently containing one SMD part (IMH3A) in a SOT-457 clockwise-pin-numbering footprint, sourced from KiCad symbols with generated review status.",
+ "description": "1 discrete bjt parts for 50V using ROHM footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Only one candidate part (IMH3A, tier B, score 100) is currently in this cluster.",
-  "Confirm the footprint matches ROHM SOT-457 clockwise pin numbering before use.",
-  "Review status is 'generated' — verify against a datasheet before committing to a design."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a ROHM land pattern is intended."
  ],
  "avoid_when": [
-  "A voltage rating other than 50V is required.",
-  "A footprint other than ROHM_SOT-457_ClockwisePinNumbering is needed.",
-  "Verified/reviewed (non-generated) part data is required.",
-  "Multiple part options or alternate sources need to be compared (only 1 part is available)."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than ROHM."
  ],
  "keywords": [
-  "bjt",
-  "discrete bjt",
-  "rohm",
-  "50v",
-  "sot-457",
-  "sot457",
-  "clockwise pin numbering",
-  "imh3a",
-  "smd",
-  "transistor",
-  "kicad-symbols",
-  "tier b",
-  "generated",
-  "rohm footprint",
   "sot",
+  "rohm",
+  "transistor",
+  "bjt",
+  "50v",
   "dual",
   "npn",
+  "imh3a",
   "1a",
   "ic",
   "vce",
   "input",
   "resistor",
   "transistors",
-  "clockwisepinnumbering"
+  "clockwisepinnumbering",
+  "sc"
  ],
  "facts": {
   "package_family": "ROHM",
@@ -65,7 +56,7 @@
   "tier_counts": {
    "B": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -80,6 +71,6 @@
  "part_ids": [
   "kicad-symbols/Transistor_BJT/IMH3A"
  ],
- "embedding_text": "discrete-bjt.rohm.50v | Discrete BJT | Cluster of ROHM-footprint discrete BJTs rated 50V, currently containing one SMD part (IMH3A) in a SOT-457 clockwise-pin-numbering footprint, sourced from KiCad symbols with generated review status. | bjt discrete bjt rohm 50v sot-457 sot457 clockwise pin numbering imh3a smd transistor kicad-symbols tier b generated rohm footprint sot dual npn 1a ic vce input resistor transistors clockwisepinnumbering | ROHM | 50V",
+ "embedding_text": "discrete-bjt.rohm.50v | Discrete BJT | 1 discrete bjt parts for 50V using ROHM footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | sot rohm transistor bjt 50v dual npn imh3a 1a ic vce input resistor transistors clockwisepinnumbering sc | ROHM | 50V",
  "class": "discrete.bjt"
 }

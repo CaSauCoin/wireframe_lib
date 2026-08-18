@@ -6,42 +6,34 @@
   "IC",
   "Sensor"
  ],
- "description": "A cluster of 24 5V IC sensor components in the LEM package family supporting SMD and through-hole mounting.",
+ "description": "24 ic sensor parts for 5V using LEM footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when requiring 5V IC sensors with LEM family footprints such as LEM_HO8-NP or LEM_LTSR-NP.",
-  "Choose between surface-mount (smd) and through-hole (through_hole) mounting types based on layout requirements.",
-  "Filter by tier preferences among the 6 Tier A and 18 Tier B options available."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a LEM land pattern is intended."
  ],
  "avoid_when": [
-  "Avoid when the design requires a supply voltage other than 5V.",
-  "Avoid if the PCB layout requires footprints outside the LEM package family.",
-  "Avoid when components other than IC sensors are needed."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than LEM."
  ],
  "keywords": [
-  "ic",
-  "sensor",
-  "ic sensor",
-  "5v",
-  "lem",
-  "smd",
-  "through_hole",
-  "kicad-symbols",
-  "lem_cksr",
-  "lem_ho8-np",
-  "lem_ltsr-np",
-  "lem_htfs",
-  "lem_ho40-np",
-  "lem_ho8-nsm",
   "current",
+  "lem",
   "transducer",
+  "sensor",
+  "5v",
   "np",
   "unipolar",
+  "ic",
   "cksr",
   "hall",
   "effect",
   "tht",
   "ho8",
-  "htfs"
+  "htfs",
+  "output",
+  "primary"
  ],
  "facts": {
   "package_family": "LEM",
@@ -71,7 +63,7 @@
    "A": 6,
    "B": 18
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -141,6 +133,6 @@
   "kicad-symbols/Sensor_Current/HTFS600-P",
   "kicad-symbols/Sensor_Current/HTFS800-P"
  ],
- "embedding_text": "ic-sensor.lem.5v | IC Sensor | A cluster of 24 5V IC sensor components in the LEM package family supporting SMD and through-hole mounting. | ic sensor ic sensor 5v lem smd through_hole kicad-symbols lem_cksr lem_ho8-np lem_ltsr-np lem_htfs lem_ho40-np lem_ho8-nsm current transducer np unipolar cksr hall effect tht ho8 htfs | LEM | 5V",
+ "embedding_text": "ic-sensor.lem.5v | IC Sensor | 24 ic sensor parts for 5V using LEM footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | current lem transducer sensor 5v np unipolar ic cksr hall effect tht ho8 htfs output primary | LEM | 5V",
  "class": "ic.sensor"
 }

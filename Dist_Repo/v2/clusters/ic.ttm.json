@@ -5,28 +5,22 @@
  "category_path": [
   "IC"
  ],
- "description": "Integrated circuit cluster containing 4 surface-mount parts using TTM package family footprints.",
+ "description": "4 ic parts using TTM footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Choose based on specific TTM footprint variants required by the design.",
-  "Verify part tier ratings as entries are split between tier B and tier C.",
-  "Confirm compatibility with surface-mount (SMD) packaging."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a TTM land pattern is intended."
  ],
  "avoid_when": [
-  "The layout requires a footprint or package family other than TTM.",
-  "Surface-mount (SMD) technology cannot be used in the target assembly.",
-  "Application requirements necessitate tier A quality parts."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than TTM."
  ],
  "keywords": [
-  "ic",
   "ttm",
-  "smd",
-  "surface mount",
   "bd3150l50100ahf",
   "pd2635l5050s2hf2",
-  "ttm bd3150l50100ahf",
-  "ttm pd2635l5050s2hf2",
-  "celestial-altium-library",
-  "dist-legacy",
+  "ic",
   "surface",
   "mount",
   "balun",
@@ -64,7 +58,7 @@
    "B": 1,
    "C": 3
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -82,6 +76,6 @@
   "celestial-altium-library/TTM PD2635L5050S2HF2/TTM PD2635L5050S2HF2",
   "celestial-altium-library/TTM BD3150L50100AHF/TTM BD3150L50100AHF"
  ],
- "embedding_text": "ic.ttm | IC | Integrated circuit cluster containing 4 surface-mount parts using TTM package family footprints. | ic ttm smd surface mount bd3150l50100ahf pd2635l5050s2hf2 ttm bd3150l50100ahf ttm pd2635l5050s2hf2 celestial-altium-library dist-legacy surface mount balun pad mm pitch pins pin balanced to unbalanced rf | TTM | ",
+ "embedding_text": "ic.ttm | IC | 4 ic parts using TTM footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | ttm bd3150l50100ahf pd2635l5050s2hf2 ic surface mount balun pad mm pitch pins pin balanced to unbalanced rf | TTM | ",
  "class": "ic"
 }

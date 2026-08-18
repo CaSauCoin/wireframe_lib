@@ -7,34 +7,24 @@
   "Power",
   "Switching Regulator"
  ],
- "description": "Cluster of 13 tier A 5V buck switching regulator ICs in TO package family options with SMD and through-hole footprints.",
+ "description": "13 ic power switching regulator parts for 5V, buck using TO footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when requiring a 5V buck switching regulator in a TO package.",
-  "Choose between SMD (TO-252, TO-263) and through-hole (TO-220) mounting types.",
-  "Match specific pin configuration such as 5-pin or 7-pin tab variants."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a TO land pattern is intended."
  ],
  "avoid_when": [
-  "The application requires output voltages other than 5V or non-buck topologies.",
-  "The PCB design requires footprint families other than TO.",
-  "Neither SMD nor through-hole TO land patterns are suitable for the layout."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than TO."
  ],
  "keywords": [
-  "ic power switching",
-  "switching regulator",
-  "5v buck",
-  "buck regulator",
-  "to package",
-  "to-220",
-  "to-252",
-  "to-263",
-  "smd",
-  "through-hole",
-  "5v",
-  "buck",
   "to",
   "regulator",
+  "5v",
   "switching",
   "voltage",
+  "buck",
   "step",
   "down",
   "3a",
@@ -42,7 +32,9 @@
   "d2pak",
   "ic",
   "power",
-  "vertical"
+  "vertical",
+  "tabpin3",
+  "ddpak"
  ],
  "facts": {
   "package_family": "TO",
@@ -71,7 +63,7 @@
   "tier_counts": {
    "A": 13
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -130,6 +122,6 @@
   "kicad-symbols/Regulator_Switching/LM2596S-5",
   "kicad-symbols/Regulator_Switching/LM2596T-5"
  ],
- "embedding_text": "ic-power-switching.to.5v.buck | IC Power Switching Regulator | Cluster of 13 tier A 5V buck switching regulator ICs in TO package family options with SMD and through-hole footprints. | ic power switching switching regulator 5v buck buck regulator to package to-220 to-252 to-263 smd through-hole 5v buck to regulator switching voltage step down 3a dc d2pak ic power vertical | TO | 5V buck",
+ "embedding_text": "ic-power-switching.to.5v.buck | IC Power Switching Regulator | 13 ic power switching regulator parts for 5V, buck using TO footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | to regulator 5v switching voltage buck step down 3a dc d2pak ic power vertical tabpin3 ddpak | TO | 5V buck",
  "class": "ic.power.switching"
 }

@@ -6,44 +6,34 @@
   "Discrete",
   "Diode"
  ],
- "description": "Cluster of 35 discrete diode parts (Zener and TVS types) in D-family footprints for a 6V facet, covering SMD packages (SOD-123F, SOD-323, SOD-523, SC-80, SMB, SMC) and through-hole packages (DO-35, DO-201, P600).",
+ "description": "35 discrete diode parts for 6V using D footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Match the exact footprint (SOD, SC-80, SMB, SMC, DO-35, DO-201, P600) to the PCB land pattern",
-  "Confirm whether a Zener or TVS diode type is required for the application",
-  "Prefer tier A entries (32 of 35 parts are tier A) for higher quality confidence",
-  "Choose SMD or through-hole mount based on the assembly process"
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a D land pattern is intended."
  ],
  "avoid_when": [
-  "Required footprint is not one of this cluster's listed D-family patterns",
-  "A voltage facet other than 6V is needed",
-  "Zener vs TVS diode type has not been confirmed for the design",
-  "Part is tier B and lacks the same verification as tier A entries"
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than D."
  ],
  "keywords": [
   "diode",
-  "zener",
   "tvs",
   "6v",
-  "discrete diode",
-  "d package",
-  "sod-123f",
-  "sod-323",
-  "sod-523",
-  "sc-80",
-  "smb",
-  "smc",
-  "do-35",
-  "do-201",
-  "p600",
-  "smd",
-  "through hole",
-  "horizontal zener",
   "unidirectional",
   "akl",
   "alternate",
   "kicad",
   "library",
-  "discrete"
+  "discrete",
+  "sod",
+  "zener",
+  "smc",
+  "do",
+  "bidirectional",
+  "smb",
+  "123f"
  ],
  "facts": {
   "package_family": "D",
@@ -79,7 +69,7 @@
    "A": 32,
    "B": 3
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -160,6 +150,6 @@
   "Alternate-KiCad-Library/Diode_TVS_AKL/MSMP6.0A",
   "Alternate-KiCad-Library/Diode_TVS_AKL/TPSMA6L6.0A"
  ],
- "embedding_text": "discrete-diode.d.6v | Discrete Diode | Cluster of 35 discrete diode parts (Zener and TVS types) in D-family footprints for a 6V facet, covering SMD packages (SOD-123F, SOD-323, SOD-523, SC-80, SMB, SMC) and through-hole packages (DO-35, DO-201, P600). | diode zener tvs 6v discrete diode d package sod-123f sod-323 sod-523 sc-80 smb smc do-35 do-201 p600 smd through hole horizontal zener unidirectional akl alternate kicad library discrete | D | 6V",
+ "embedding_text": "discrete-diode.d.6v | Discrete Diode | 35 discrete diode parts for 6V using D footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | diode tvs 6v unidirectional akl alternate kicad library discrete sod zener smc do bidirectional smb 123f | D | 6V",
  "class": "discrete.diode"
 }

@@ -5,38 +5,28 @@
  "category_path": [
   "Connector"
  ],
- "description": "RJ11 modular connector cluster spanning 4P4C, 6P2C, 6P4C, and 6P6C pin counts in right-angle and straight orientations, with both through-hole and SMD footprints; 15 parts from two library sources, review status generated.",
+ "description": "15 connector parts using RJ11 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Match the exact footprint code (e.g. RJ11_6P4C_RA_TU) to the intended pin count, orientation, and mount",
-  "Confirm through_hole vs smd mount matches the PCB process",
-  "Prefer tier B entries over tier C when available",
-  "Distinguish right-angle (RA, with TD/TU variants) from straight (ST) body styles before layout"
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a RJ11 land pattern is intended."
  ],
  "avoid_when": [
-  "The required pin count (4P4C/6P2C/6P4C/6P6C) is not confirmed",
-  "Only tier C, generated-review parts are available and higher confidence is needed",
-  "The board needs a connector footprint other than RJ11",
-  "Mount type (SMD vs through-hole) is not yet decided for the layout"
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than RJ11."
  ],
  "keywords": [
   "rj11",
+  "ra",
   "connector",
+  "tu",
   "4p4c",
   "6p2c",
+  "td",
+  "st",
   "6p4c",
   "6p6c",
-  "right angle",
-  "ra",
-  "straight",
-  "st",
-  "through hole",
-  "smd",
-  "modular connector",
-  "phone jack",
-  "telecom connector",
-  "tu",
-  "td",
-  "shielded",
   "pad",
   "mm",
   "pitch",
@@ -76,7 +66,7 @@
    "B": 4,
    "C": 11
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -129,6 +119,6 @@
   "chilaboard-altium-library/RJ11_6P6C_ST/RJ11_6P6C_ST",
   "chilaboard-altium-library/RJ11_4P4C_SMD/RJ11_4P4C_SMD"
  ],
- "embedding_text": "connector.rj11 | Connector | RJ11 modular connector cluster spanning 4P4C, 6P2C, 6P4C, and 6P6C pin counts in right-angle and straight orientations, with both through-hole and SMD footprints; 15 parts from two library sources, review status generated. | rj11 connector 4p4c 6p2c 6p4c 6p6c right angle ra straight st through hole smd modular connector phone jack telecom connector tu td shielded pad mm pitch pins through hole | RJ11 | ",
+ "embedding_text": "connector.rj11 | Connector | 15 connector parts using RJ11 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | rj11 ra connector tu 4p4c 6p2c td st 6p4c 6p6c pad mm pitch pins through hole | RJ11 | ",
  "class": "connector"
 }

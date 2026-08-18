@@ -6,41 +6,34 @@
   "IC",
   "Microcontroller"
  ],
- "description": "Surface-mount microcontroller IC cluster containing 17 parts supporting QFN footprints with I2C, SPI, and CAN interface facets.",
+ "description": "17 ic microcontroller parts for I2C, SPI, CAN using QFN footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select based on required interface facets such as I2C, SPI, or CAN.",
-  "Choose the specific QFN footprint variant needed for the design.",
-  "Prefer Tier A parts over Tier B parts when higher quality ranking is desired."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a QFN land pattern is intended."
  ],
  "avoid_when": [
-  "Through-hole assembly or non-SMD mounting is required.",
-  "A package family other than QFN is required.",
-  "The application requires components other than microcontroller ICs."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than QFN."
  ],
  "keywords": [
-  "ic",
   "microcontroller",
-  "mcu",
   "qfn",
   "i2c",
   "spi",
-  "can",
-  "smd",
-  "uqfn",
-  "ch32v005d6u6",
-  "pic18f25k80",
-  "pic18f26k80",
-  "pic18lf26k80",
-  "efm8bb10f2a",
   "qfn20",
   "flash",
+  "can",
   "pic18",
+  "mcu",
   "siliconlabs",
   "to",
   "ram",
   "1ep",
   "p0",
-  "adc"
+  "adc",
+  "ic"
  ],
  "facts": {
   "package_family": "QFN",
@@ -69,7 +62,7 @@
    "A": 4,
    "B": 13
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -132,6 +125,6 @@
   "kicad-symbols/MCU_Microchip_PIC18/PIC18LF45K80-IML",
   "kicad-symbols/MCU_Microchip_PIC18/PIC18LF46K80-IML"
  ],
- "embedding_text": "ic-mcu.qfn.i2c.spi | IC Microcontroller | Surface-mount microcontroller IC cluster containing 17 parts supporting QFN footprints with I2C, SPI, and CAN interface facets. | ic microcontroller mcu qfn i2c spi can smd uqfn ch32v005d6u6 pic18f25k80 pic18f26k80 pic18lf26k80 efm8bb10f2a qfn20 flash pic18 siliconlabs to ram 1ep p0 adc | QFN | I2C SPI CAN",
+ "embedding_text": "ic-mcu.qfn.i2c.spi | IC Microcontroller | 17 ic microcontroller parts for I2C, SPI, CAN using QFN footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | microcontroller qfn i2c spi qfn20 flash can pic18 mcu siliconlabs to ram 1ep p0 adc ic | QFN | I2C SPI CAN",
  "class": "ic.mcu"
 }

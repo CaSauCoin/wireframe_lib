@@ -6,42 +6,34 @@
   "IC",
   "Memory"
  ],
- "description": "Surface-mount memory IC cluster featuring I2C communication in TSSOP-8 footprints with 8 tier A parts from KiCad symbols.",
+ "description": "8 ic memory parts for I2C using TSSOP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when an SMD I2C memory IC in a TSSOP-8 package is required.",
-  "Choose from 8 tier A parts including AT24CS01-XHM through AT24CS16-XHM.",
-  "Verify footprint compatibility with TSSOP-8_4.4x3mm_P0.65mm."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a TSSOP land pattern is intended."
  ],
  "avoid_when": [
-  "A package family other than TSSOP or footprint other than TSSOP-8_4.4x3mm_P0.65mm is needed.",
-  "Through-hole mounting or non-SMD layout is required.",
-  "An interface protocol other than I2C is required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than TSSOP."
  ],
  "keywords": [
-  "ic",
-  "memory",
-  "i2c",
   "tssop",
-  "smd",
-  "tssop-8",
-  "tssop-8_4.4x3mm_p0.65mm",
-  "at24cs01-xhm",
-  "at24cs02-xhm",
-  "at24cs04-xhm",
-  "at24cs08-xhm",
-  "at24cs16-xhm",
-  "kicad-symbols",
-  "ic.memory",
   "eeprom",
+  "i2c",
+  "memory",
   "serial",
   "4x3mm",
   "p0",
   "65mm",
   "so",
+  "ic",
   "xhm",
   "with",
   "unique",
-  "number"
+  "number",
+  "tssop8",
+  "nonvolatile"
  ],
  "facts": {
   "package_family": "TSSOP",
@@ -64,7 +56,7 @@
   "tier_counts": {
    "A": 8
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -118,6 +110,6 @@
   "kicad-symbols/Memory_EEPROM/AT24CS64-XHM",
   "kicad-symbols/Memory_EEPROM/CAT24M01Y"
  ],
- "embedding_text": "ic-memory.tssop.i2c | IC Memory | Surface-mount memory IC cluster featuring I2C communication in TSSOP-8 footprints with 8 tier A parts from KiCad symbols. | ic memory i2c tssop smd tssop-8 tssop-8_4.4x3mm_p0.65mm at24cs01-xhm at24cs02-xhm at24cs04-xhm at24cs08-xhm at24cs16-xhm kicad-symbols ic.memory eeprom serial 4x3mm p0 65mm so xhm with unique number | TSSOP | I2C",
+ "embedding_text": "ic-memory.tssop.i2c | IC Memory | 8 ic memory parts for I2C using TSSOP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | tssop eeprom i2c memory serial 4x3mm p0 65mm so ic xhm with unique number tssop8 nonvolatile | TSSOP | I2C",
  "class": "ic.memory"
 }

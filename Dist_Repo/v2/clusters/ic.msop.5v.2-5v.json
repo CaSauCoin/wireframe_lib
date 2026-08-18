@@ -5,32 +5,20 @@
  "category_path": [
   "IC"
  ],
- "description": "Surface-mount IC cluster of 5 tier A voltage reference parts with 5V and 2.5V facets in the MSOP-8_3x3mm_P0.65mm footprint.",
+ "description": "5 ic parts for 5V, 2.5V using MSOP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Choose when needing surface-mount (SMD) ICs with an MSOP-8_3x3mm_P0.65mm footprint.",
-  "Select for applications requiring 5V or 2.5V facet specifications.",
-  "Use when looking for tier A voltage reference symbols from KiCad libraries."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a MSOP land pattern is intended."
  ],
  "avoid_when": [
-  "Through-hole mounting or package families other than MSOP are required.",
-  "The design requires footprints other than MSOP-8_3x3mm_P0.65mm.",
-  "The component requires voltage rating facets other than 5V or 2.5V."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than MSOP."
  ],
  "keywords": [
-  "ic",
   "msop",
-  "msop-8_3x3mm_p0.65mm",
   "5v",
-  "2.5v",
-  "smd",
-  "reference voltage",
-  "adr421armz",
-  "adr441armz",
-  "lt1634bcms8-2.5",
-  "ref5025adgk",
-  "ref5025idgk",
-  "kicad-symbols",
-  "tier a",
   "reference",
   "voltage",
   "low",
@@ -39,8 +27,12 @@
   "p0",
   "65mm",
   "so",
+  "ic",
   "precision",
-  "ultraprecision"
+  "ultraprecision",
+  "micropower",
+  "10ma",
+  "adr421armz"
  ],
  "facts": {
   "package_family": "MSOP",
@@ -64,7 +56,7 @@
   "tier_counts": {
    "A": 5
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -115,6 +107,6 @@
   "kicad-symbols/Reference_Voltage/REF5025ADGK",
   "kicad-symbols/Reference_Voltage/REF5025IDGK"
  ],
- "embedding_text": "ic.msop.5v.2-5v | IC | Surface-mount IC cluster of 5 tier A voltage reference parts with 5V and 2.5V facets in the MSOP-8_3x3mm_P0.65mm footprint. | ic msop msop-8_3x3mm_p0.65mm 5v 2.5v smd reference voltage adr421armz adr441armz lt1634bcms8-2.5 ref5025adgk ref5025idgk kicad-symbols tier a reference voltage low noise 3x3mm p0 65mm so precision ultraprecision | MSOP | 5V 2.5V",
+ "embedding_text": "ic.msop.5v.2-5v | IC | 5 ic parts for 5V, 2.5V using MSOP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | msop 5v reference voltage low noise 3x3mm p0 65mm so ic precision ultraprecision micropower 10ma adr421armz | MSOP | 5V 2.5V",
  "class": "ic"
 }

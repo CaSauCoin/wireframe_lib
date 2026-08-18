@@ -5,28 +5,20 @@
  "category_path": [
   "IC"
  ],
- "description": "This cluster contains one IC part associated with the J020D package family and footprint.",
+ "description": "1 ic parts using J020D footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Verify component requirements match the J020D footprint.",
-  "Check part specifics as mounting method is listed as unknown.",
-  "Evaluate applicability given the cluster contains a single Tier C entry."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a J020D land pattern is intended."
  ],
  "avoid_when": [
-  "The board layout requires a footprint other than J020D.",
-  "The project requires planner-visible parts or higher quality tiers.",
-  "Explicit mounting specifications are required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than J020D."
  ],
  "keywords": [
-  "ic",
   "j020d",
-  "package j020d",
-  "j020d footprint",
-  "tier c",
-  "integrated circuit",
-  "dist-legacy",
-  "unknown mount",
-  "j020d package",
-  "single entry",
+  "ic",
   "pad",
   "mm",
   "pitch",
@@ -51,12 +43,12 @@
   "tier_counts": {
    "C": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
   "dist-legacy/J020D"
  ],
- "embedding_text": "ic.j020d | IC | This cluster contains one IC part associated with the J020D package family and footprint. | ic j020d package j020d j020d footprint tier c integrated circuit dist-legacy unknown mount j020d package single entry pad mm pitch pins | J020D | ",
+ "embedding_text": "ic.j020d | IC | 1 ic parts using J020D footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | j020d ic pad mm pitch pins | J020D | ",
  "class": "ic"
 }

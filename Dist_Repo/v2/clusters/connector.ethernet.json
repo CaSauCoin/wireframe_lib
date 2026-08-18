@@ -5,44 +5,34 @@
  "category_path": [
   "Connector"
  ],
- "description": "Cluster of 3 tier-B Ethernet jack connectors from the DigiKey KiCad library, covering plain and magnetics-integrated RJ45 footprints (54602-908LF, ARJC02-111008B, RJLSE4208101T); pick by exact footprint match.",
+ "description": "3 connector parts using Ethernet footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Match the exact footprint needed: Ethernet_Jack_54602-908LF, Ethernet_Jack_ARJC02-111008B, or Ethernet_Jack_RJLSE4208101T",
-  "ARJC02-111008B is sourced from a Jacks-With-Magnetics category; the other two are plain jacks",
-  "All three parts are tier B with score 80 — no tier A entry exists in this cluster",
-  "Confirm SMD mounting matches your board assembly process"
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a Ethernet land pattern is intended."
  ],
  "avoid_when": [
-  "A tier A or higher-confidence part is required",
-  "You cannot confirm whether integrated magnetics are needed for your design",
-  "Electrical rating or pinout details aren't documented for the specific footprint chosen",
-  "Board layout needs a footprint other than the three listed Ethernet jack patterns"
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than Ethernet."
  ],
  "keywords": [
-  "connector",
-  "ethernet",
-  "rj45",
-  "jack",
-  "modular connector",
-  "jacks",
-  "magnetics",
-  "jacks with magnetics",
-  "8p8c",
-  "digikey",
-  "kicad library",
-  "54602-908lf",
-  "arjc02-111008b",
-  "rjlse4208101t",
-  "smd",
-  "network jack",
   "connectors",
   "modular",
+  "jacks",
+  "ethernet",
+  "jack",
   "dk",
   "conn",
   "interconnects",
+  "connector",
   "908lf",
   "mod",
-  "unshld"
+  "8p8c",
+  "unshld",
+  "amphenol",
+  "icc",
+  "arjc02"
  ],
  "facts": {
   "package_family": "Ethernet",
@@ -66,7 +56,7 @@
   "tier_counts": {
    "B": 3
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -99,6 +89,6 @@
   "digikey-kicad-library/dk_Modular-Connectors-Jacks-With-Magnetics/ARJC02-111008B",
   "digikey-kicad-library/dk_Modular-Connectors-Jacks/RJLSE4208101T"
  ],
- "embedding_text": "connector.ethernet | Connector | Cluster of 3 tier-B Ethernet jack connectors from the DigiKey KiCad library, covering plain and magnetics-integrated RJ45 footprints (54602-908LF, ARJC02-111008B, RJLSE4208101T); pick by exact footprint match. | connector ethernet rj45 jack modular connector jacks magnetics jacks with magnetics 8p8c digikey kicad library 54602-908lf arjc02-111008b rjlse4208101t smd network jack connectors modular dk conn interconnects 908lf mod unshld | Ethernet | ",
+ "embedding_text": "connector.ethernet | Connector | 3 connector parts using Ethernet footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | connectors modular jacks ethernet jack dk conn interconnects connector 908lf mod 8p8c unshld amphenol icc arjc02 | Ethernet | ",
  "class": "connector"
 }

@@ -5,28 +5,20 @@
  "category_path": [
   "IC"
  ],
- "description": "IC cluster containing 3 parts in the STK672 package family supporting through-hole mounting and footprints including STK672-040-E, STK672-080, and STK672-080-E.",
+ "description": "3 ic parts using STK672 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when requiring ICs in the STK672 package family with through-hole mounting.",
-  "Match target PCB footprint to STK672-040-E, STK672-080, or STK672-080-E.",
-  "Verify part specifications since all 3 entries are quality tier C."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a STK672 land pattern is intended."
  ],
  "avoid_when": [
-  "Surface-mount packaging is required instead of through-hole mounting.",
-  "The layout requires a footprint other than STK672-040-E, STK672-080, or STK672-080-E.",
-  "Unverified tier C parts are not acceptable for the design."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than STK672."
  ],
  "keywords": [
   "stk672",
   "ic",
-  "through hole",
-  "stk672-040-e",
-  "stk672-080",
-  "stk672-080-e",
-  "stk672 package",
-  "integrated circuit",
-  "through hole ic",
-  "stk672 footprint",
   "sip",
   "pad",
   "mm",
@@ -64,7 +56,7 @@
   "tier_counts": {
    "C": 3
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
@@ -72,6 +64,6 @@
   "dist-legacy/STK672-080",
   "dist-legacy/STK672-080-E"
  ],
- "embedding_text": "ic.stk672 | IC | IC cluster containing 3 parts in the STK672 package family supporting through-hole mounting and footprints including STK672-040-E, STK672-080, and STK672-080-E. | stk672 ic through hole stk672-040-e stk672-080 stk672-080-e stk672 package integrated circuit through hole ic stk672 footprint sip pad mm pitch pins through hole package http www onsemi com pub link | STK672 | ",
+ "embedding_text": "ic.stk672 | IC | 3 ic parts using STK672 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | stk672 ic sip pad mm pitch pins through hole package http www onsemi com pub link | STK672 | ",
  "class": "ic"
 }

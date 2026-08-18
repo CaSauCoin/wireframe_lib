@@ -6,28 +6,20 @@
   "Passive",
   "Resistor"
  ],
- "description": "Passive resistor cluster containing 14 tier-B parts from the Seeed OPL KiCad library with PR-D2.3XL6.5MM and PR-D1.8_L3.3MM footprints.",
+ "description": "14 passive resistor parts using PR footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Match the required footprint to either PR-D2.3XL6.5MM or PR-D1.8_L3.3MM.",
-  "Select the appropriate part based on resistance value and power rating in the part name.",
-  "Confirm package details from the Seeed-OPL-Kicad-Library source before layout."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a PR land pattern is intended."
  ],
  "avoid_when": [
-  "The board layout requires a footprint other than PR-D2.3XL6.5MM or PR-D1.8_L3.3MM.",
-  "A package family other than PR is needed.",
-  "Higher quality tiers than Tier B parts are required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than PR."
  ],
  "keywords": [
-  "passive",
   "resistor",
-  "passive resistor",
   "pr",
-  "pr-d2.3xl6.5mm",
-  "pr-d1.8_l3.3mm",
-  "seeed-opl-kicad-library",
-  "opl",
-  "dip-res",
-  "tier b",
   "4w",
   "5mm",
   "through",
@@ -37,6 +29,8 @@
   "dip",
   "axial",
   "res",
+  "passive",
+  "opl",
   "in",
   "3x6",
   "package"
@@ -61,7 +55,7 @@
   "tier_counts": {
    "B": 14
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -121,6 +115,6 @@
   "Seeed-OPL-Kicad-Library/OPL_Resistor/DIP-RES-47R-5%-1_4W_PR-D2.3XL6.5MM_",
   "Seeed-OPL-Kicad-Library/OPL_Resistor/DIP-RES-680R-5%-1_4W_PR-D2.3XL6.5MM_"
  ],
- "embedding_text": "passive-resistor.pr | Passive Resistor | Passive resistor cluster containing 14 tier-B parts from the Seeed OPL KiCad library with PR-D2.3XL6.5MM and PR-D1.8_L3.3MM footprints. | passive resistor passive resistor pr pr-d2.3xl6.5mm pr-d1.8_l3.3mm seeed-opl-kicad-library opl dip-res tier b 4w 5mm through hole d2 3xl6 dip axial res in 3x6 package | PR | ",
+ "embedding_text": "passive-resistor.pr | Passive Resistor | 14 passive resistor parts using PR footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | resistor pr 4w 5mm through hole d2 3xl6 dip axial res passive opl in 3x6 package | PR | ",
  "class": "passive.resistor"
 }

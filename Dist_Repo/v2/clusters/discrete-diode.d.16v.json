@@ -6,44 +6,34 @@
   "Discrete",
   "Diode"
  ],
- "description": "Cluster of 147 discrete diodes in D-family footprints (SMA, SMB, SMC, MELF, MiniMELF, SOD-123/123F/323/523, DO-35, DO-41) tagged with a 16V facet, including zener and TVS variants, sourced mainly from Alternate-KiCad-Library.",
+ "description": "147 discrete diode parts for 16V using D footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Match the exact D-family footprint (SMA, SMB, SMC, MELF, SOD-xxx, DO-35/41) to the intended land pattern.",
-  "Confirm whether a zener or TVS part is needed — representative parts include both types under the same 16V facet.",
-  "Prefer tier A entries; 137 of 147 parts are tier A vs 10 tier B.",
-  "Weigh source trust — most parts come from Alternate-KiCad-Library (142), a smaller set from kicad-symbols (3) and JLCPCB-Kicad-Library (2)."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a D land pattern is intended."
  ],
  "avoid_when": [
-  "The needed voltage, current, power, or tolerance rating isn't explicitly confirmed for the chosen part.",
-  "The board requires a footprint outside the listed D-family options.",
-  "Symbol-footprint pairing must be pre-verified — review_status for this cluster is 'generated', not manually reviewed.",
-  "A specific diode type (zener vs TVS vs general-purpose) is required but not yet confirmed for the selected entry."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than D."
  ],
  "keywords": [
   "diode",
   "16v",
   "zener",
   "tvs",
-  "discrete diode",
-  "d package",
-  "sma",
-  "smb",
-  "smc",
-  "melf",
-  "minimelf",
-  "sod-123",
-  "sod-323",
-  "sod-523",
-  "do-35",
-  "do-41",
-  "kicad",
-  "alternate-kicad-library",
   "discrete",
   "akl",
   "alternate",
+  "kicad",
   "library",
   "do",
-  "sod"
+  "sod",
+  "unidirectional",
+  "horizontal",
+  "sma",
+  "smb",
+  "bidirectional"
  ],
  "facts": {
   "package_family": "D",
@@ -81,7 +71,7 @@
    "A": 137,
    "B": 10
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -274,6 +264,6 @@
   "Alternate-KiCad-Library/Diode_TVS_AKL/TPSMP16A",
   "JLCPCB-Kicad-Library/JLCPCB-Diodes/TVS-Bi,SMAJ16CA"
  ],
- "embedding_text": "discrete-diode.d.16v | Discrete Diode | Cluster of 147 discrete diodes in D-family footprints (SMA, SMB, SMC, MELF, MiniMELF, SOD-123/123F/323/523, DO-35, DO-41) tagged with a 16V facet, including zener and TVS variants, sourced mainly from Alternate-KiCad-Library. | diode 16v zener tvs discrete diode d package sma smb smc melf minimelf sod-123 sod-323 sod-523 do-35 do-41 kicad alternate-kicad-library discrete akl alternate library do sod | D | 16V",
+ "embedding_text": "discrete-diode.d.16v | Discrete Diode | 147 discrete diode parts for 16V using D footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | diode 16v zener tvs discrete akl alternate kicad library do sod unidirectional horizontal sma smb bidirectional | D | 16V",
  "class": "discrete.diode"
 }

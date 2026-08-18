@@ -6,28 +6,21 @@
   "Discrete",
   "Diode"
  ],
- "description": "Discrete diode cluster containing 1 entry associated with HDR1X2H footprints.",
+ "description": "1 discrete diode parts using HDR1X2H footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Use only when a HDR1X2H footprint is intended for the discrete diode.",
-  "Verify pin-to-pad mapping and package dimensions before board layout.",
-  "Evaluate entry quality tier and source trust before selection."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a HDR1X2H land pattern is intended."
  ],
  "avoid_when": [
-  "The layout requires a footprint other than HDR1X2H.",
-  "Required electrical parameters or ratings are unstated.",
-  "The symbol-footprint mapping is unverified or flagged for review."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than HDR1X2H."
  ],
  "keywords": [
   "hdr1x2h",
-  "discrete diode",
   "discrete",
   "diode",
-  "hdr1x2h footprint",
-  "tier c",
-  "dist-legacy",
-  "discrete.diode",
-  "hdr1x2h package",
-  "discrete diode hdr1x2h",
   "pad",
   "mm",
   "pitch",
@@ -52,12 +45,12 @@
   "tier_counts": {
    "C": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
   "dist-legacy/HDR1X2H"
  ],
- "embedding_text": "discrete-diode.hdr1x2h | Discrete Diode | Discrete diode cluster containing 1 entry associated with HDR1X2H footprints. | hdr1x2h discrete diode discrete diode hdr1x2h footprint tier c dist-legacy discrete.diode hdr1x2h package discrete diode hdr1x2h pad mm pitch pins | HDR1X2H | ",
+ "embedding_text": "discrete-diode.hdr1x2h | Discrete Diode | 1 discrete diode parts using HDR1X2H footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | hdr1x2h discrete diode pad mm pitch pins | HDR1X2H | ",
  "class": "discrete.diode"
 }

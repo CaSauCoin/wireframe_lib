@@ -6,44 +6,34 @@
   "Discrete",
   "BJT"
  ],
- "description": "Cluster of 41 SOT-package discrete BJT parts tagged with a 30V facet, spanning SOT-323/SC-70, SOT-143, SOT-223-3, SOT-89-3, and SOT-363/SC-70-6 footprints, sourced from Alternate-KiCad-Library and kicad-symbols.",
+ "description": "41 discrete bjt parts for 30V using SOT footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Match the exact SOT footprint variant needed (e.g. SOT-323_SC-70 vs SOT-143 vs SOT-89-3) before selecting a part.",
-  "All 41 parts are tier A with score 100, so narrow by footprint and source library rather than tier.",
-  "Confirm the part's stated voltage rating aligns with the 30V facet for your design.",
-  "Check symbol-footprint pairing against the datasheet since review_status is 'generated'."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SOT land pattern is intended."
  ],
  "avoid_when": [
-  "The design requires a voltage, current, or gain rating not documented on the specific part.",
-  "A non-SOT package (e.g. TO-92, SOD) is required by the board layout.",
-  "The exact footprint variant (pad pitch/pin count) cannot be confirmed against the PCB land pattern.",
-  "Verified, human-reviewed metadata is required instead of generated review_status."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SOT."
  ],
  "keywords": [
-  "bjt",
-  "discrete transistor",
-  "sot package",
-  "30v",
-  "sot-323",
-  "sc-70",
-  "sot-143",
-  "sot-223",
-  "sot-89",
-  "sot-363",
-  "sc-70-6",
-  "smd transistor",
-  "kicad-symbols",
-  "alternate-kicad-library",
-  "bc848w",
-  "bc849w",
-  "bc858w",
-  "bcv61",
   "sot",
   "transistor",
+  "bjt",
+  "30v",
   "sc",
   "pnp",
   "discrete",
-  "npn"
+  "npn",
+  "akl",
+  "alternate",
+  "kicad",
+  "library",
+  "100ma",
+  "to",
+  "complementary",
+  "200mw"
  ],
  "facts": {
   "package_family": "SOT",
@@ -71,7 +61,7 @@
   "tier_counts": {
    "A": 41
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -158,6 +148,6 @@
   "Alternate-KiCad-Library/Transistor_BJT_Darlington_AKL/PZTA64",
   "Alternate-KiCad-Library/Transistor_BJT_Darlington_AKL/PZTA65"
  ],
- "embedding_text": "discrete-bjt.sot.30v | Discrete BJT | Cluster of 41 SOT-package discrete BJT parts tagged with a 30V facet, spanning SOT-323/SC-70, SOT-143, SOT-223-3, SOT-89-3, and SOT-363/SC-70-6 footprints, sourced from Alternate-KiCad-Library and kicad-symbols. | bjt discrete transistor sot package 30v sot-323 sc-70 sot-143 sot-223 sot-89 sot-363 sc-70-6 smd transistor kicad-symbols alternate-kicad-library bc848w bc849w bc858w bcv61 sot transistor sc pnp discrete npn | SOT | 30V",
+ "embedding_text": "discrete-bjt.sot.30v | Discrete BJT | 41 discrete bjt parts for 30V using SOT footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | sot transistor bjt 30v sc pnp discrete npn akl alternate kicad library 100ma to complementary 200mw | SOT | 30V",
  "class": "discrete.bjt"
 }

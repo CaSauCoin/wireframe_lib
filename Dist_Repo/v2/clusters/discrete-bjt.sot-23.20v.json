@@ -6,42 +6,33 @@
   "Discrete",
   "BJT"
  ],
- "description": "Cluster of 5 tier-A discrete BJTs rated 20V in a SOT-23 SMD footprint, all sourced from Alternate-KiCad-Library, for selecting a general-purpose small-signal transistor by footprint and voltage facet.",
+ "description": "5 discrete bjt parts for 20V using SOT-23 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "All 5 parts are tier A with score 100 and exact SOT-23 footprint",
-  "Confirm the 20V facet meets the circuit's voltage requirement",
-  "All entries come from a single source: Alternate-KiCad-Library",
-  "Distinguish parts by name (BFS20, FMMT718, PBSS4120T, ZXTN25020DFH, ZXTP25020CFH) since detailed electrical specs are not listed here"
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SOT-23 land pattern is intended."
  ],
  "avoid_when": [
-  "The design requires a package other than SOT-23",
-  "The required voltage rating exceeds or is not confirmed as 20V",
-  "Specific electrical parameters, pinout, or lifecycle status beyond package and voltage facet must be verified from a datasheet first"
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SOT-23."
  ],
  "keywords": [
-  "discrete bjt",
-  "bjt",
-  "transistor",
-  "sot-23",
-  "20v",
-  "smd",
-  "alternate-kicad-library",
-  "akl",
-  "kicad library",
-  "bfs20",
-  "fmmt718",
-  "pbss4120t",
-  "zxtn25020dfh",
-  "zxtp25020cfh",
-  "tier a",
-  "discrete",
   "sot",
+  "transistor",
+  "bjt",
+  "20v",
   "npn",
+  "akl",
   "alternate",
   "kicad",
   "library",
+  "discrete",
   "pnp",
+  "bfs20",
+  "fmmt718",
   "5a",
+  "zxtn25020dfh",
   "730mw"
  ],
  "facts": {
@@ -65,7 +56,7 @@
   "tier_counts": {
    "A": 5
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -116,6 +107,6 @@
   "Alternate-KiCad-Library/Transistor_BJT_AKL/ZXTN25020DFH",
   "Alternate-KiCad-Library/Transistor_BJT_AKL/ZXTP25020CFH"
  ],
- "embedding_text": "discrete-bjt.sot-23.20v | Discrete BJT | Cluster of 5 tier-A discrete BJTs rated 20V in a SOT-23 SMD footprint, all sourced from Alternate-KiCad-Library, for selecting a general-purpose small-signal transistor by footprint and voltage facet. | discrete bjt bjt transistor sot-23 20v smd alternate-kicad-library akl kicad library bfs20 fmmt718 pbss4120t zxtn25020dfh zxtp25020cfh tier a discrete sot npn alternate kicad library pnp 5a 730mw | SOT-23 | 20V",
+ "embedding_text": "discrete-bjt.sot-23.20v | Discrete BJT | 5 discrete bjt parts for 20V using SOT-23 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | sot transistor bjt 20v npn akl alternate kicad library discrete pnp bfs20 fmmt718 5a zxtn25020dfh 730mw | SOT-23 | 20V",
  "class": "discrete.bjt"
 }

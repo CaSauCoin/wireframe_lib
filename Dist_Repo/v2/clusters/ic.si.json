@@ -5,42 +5,34 @@
  "category_path": [
   "IC"
  ],
- "description": "Integrated circuit components using SI package family footprints including SI Labs WF111 variants with surface-mount or unknown mounting options.",
+ "description": "10 ic parts using SI footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select for integrated circuit parts using SI package family land patterns.",
-  "Check footprint compatibility for SI Labs WF111A, WF111E, or WF111N variants.",
-  "Verify part sourcing from dist-legacy or celestial-altium-library catalog entries."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SI land pattern is intended."
  ],
  "avoid_when": [
-  "The PCB design requires footprint packages outside the SI family.",
-  "The application requires parts classified above quality tier C.",
-  "Through-hole mounting or explicit non-SMD package configurations are required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SI."
  ],
  "keywords": [
-  "ic",
   "si",
-  "ic.si",
-  "si package",
-  "smd",
-  "si labs",
-  "wf111a",
-  "wf111e",
-  "wf111n",
-  "si labs wf111a",
-  "si labs wf111e",
-  "si labs wf111n",
-  "dist-legacy",
-  "celestial-altium-library",
-  "tier c",
   "labs",
+  "ic",
   "pad",
   "mm",
   "pitch",
   "pins",
   "qfn",
+  "wf111a",
+  "wf111e",
+  "wf111n",
   "5x5",
   "9x9mm",
-  "soic"
+  "soic",
+  "wide",
+  "surface"
  ],
  "facts": {
   "package_family": "SI",
@@ -66,7 +58,7 @@
   "tier_counts": {
    "C": 10
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
@@ -81,6 +73,6 @@
   "celestial-altium-library/SI LABS WF111E/SI LABS WF111E",
   "celestial-altium-library/SI LABS WF111N/SI LABS WF111N"
  ],
- "embedding_text": "ic.si | IC | Integrated circuit components using SI package family footprints including SI Labs WF111 variants with surface-mount or unknown mounting options. | ic si ic.si si package smd si labs wf111a wf111e wf111n si labs wf111a si labs wf111e si labs wf111n dist-legacy celestial-altium-library tier c labs pad mm pitch pins qfn 5x5 9x9mm soic | SI | ",
+ "embedding_text": "ic.si | IC | 10 ic parts using SI footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | si labs ic pad mm pitch pins qfn wf111a wf111e wf111n 5x5 9x9mm soic wide surface | SI | ",
  "class": "ic"
 }

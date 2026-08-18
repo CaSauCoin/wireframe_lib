@@ -6,34 +6,22 @@
   "Discrete",
   "FET"
  ],
- "description": "Discrete surface-mount 60V FET cluster containing 6 parts across DirectFET footprints including DirectFET_MN, DirectFET_ME, DirectFET_MZ, and DirectFET_L6.",
+ "description": "6 discrete fet parts for 60V using DirectFET footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select based on required DirectFET footprint variant such as DirectFET_MN, DirectFET_ME, DirectFET_MZ, or DirectFET_L6.",
-  "Choose between 5 tier A parts and 1 tier B part based on quality requirements.",
-  "Ensure SMD mounting and 60V rating align with project specifications."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a DirectFET land pattern is intended."
  ],
  "avoid_when": [
-  "The design requires package families other than DirectFET.",
-  "Through-hole or non-SMD mounting is required.",
-  "Target operating voltage differs from 60V."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than DirectFET."
  ],
  "keywords": [
-  "discrete fet",
   "directfet",
-  "60v",
-  "smd",
-  "discrete",
-  "fet",
-  "directfet_mn",
-  "directfet_me",
-  "directfet_mz",
-  "directfet_l6",
-  "bsb028n06nn3",
-  "irf60dm206",
-  "irf6648",
-  "irf6674",
-  "irf7580m",
   "mosfet",
+  "fet",
+  "60v",
   "channel",
   "transistor",
   "id",
@@ -41,7 +29,11 @@
   "rds",
   "mn",
   "infineon",
-  "me"
+  "discrete",
+  "me",
+  "mz",
+  "l6",
+  "bsb028n06nn3"
  ],
  "facts": {
   "package_family": "DirectFET",
@@ -68,7 +60,7 @@
    "A": 5,
    "B": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -120,6 +112,6 @@
   "kicad-symbols/Transistor_FET/IRF7580M",
   "kicad-symbols/Transistor_FET/IRF7748L1"
  ],
- "embedding_text": "discrete-fet.directfet.60v | Discrete FET | Discrete surface-mount 60V FET cluster containing 6 parts across DirectFET footprints including DirectFET_MN, DirectFET_ME, DirectFET_MZ, and DirectFET_L6. | discrete fet directfet 60v smd discrete fet directfet_mn directfet_me directfet_mz directfet_l6 bsb028n06nn3 irf60dm206 irf6648 irf6674 irf7580m mosfet channel transistor id vds rds mn infineon me | DirectFET | 60V",
+ "embedding_text": "discrete-fet.directfet.60v | Discrete FET | 6 discrete fet parts for 60V using DirectFET footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | directfet mosfet fet 60v channel transistor id vds rds mn infineon discrete me mz l6 bsb028n06nn3 | DirectFET | 60V",
  "class": "discrete.fet"
 }

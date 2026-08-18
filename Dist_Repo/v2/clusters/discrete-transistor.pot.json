@@ -6,39 +6,33 @@
   "Discrete",
   "Transistor"
  ],
- "description": "EDA library cluster containing 31 discrete transistor parts under the POT package family, available in surface-mount, through-hole, and unknown mounting configurations.",
+ "description": "31 discrete transistor parts using POT footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when requiring discrete transistor parts in POT family footprints.",
-  "Filter by tier B and tier C parts across surface-mount or through-hole mounts.",
-  "Verify exact footprint variant such as POT-SOP, POT_3296W, or POT_3306F."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a POT land pattern is intended."
  ],
  "avoid_when": [
-  "Avoid if the design requires package families other than POT.",
-  "Do not use if tier A component verification is strictly required.",
-  "Avoid when surface-mount or through-hole POT footprints are incompatible with board constraints."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than POT."
  ],
  "keywords": [
-  "discrete transistor",
   "pot",
-  "discrete",
   "transistor",
-  "smd",
-  "through hole",
-  "pot-sop",
-  "pot_3296w",
-  "pot_3306f",
-  "trimpot",
-  "bourns",
-  "murata",
-  "panasonic",
+  "discrete",
   "pitch",
   "pad",
   "mm",
   "pins",
+  "trimpot",
   "through",
   "hole",
+  "bourns",
+  "panasonic",
   "3296w",
   "tc33",
+  "murata",
   "pva2"
  ],
  "facts": {
@@ -76,7 +70,7 @@
    "B": 6,
    "C": 25
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -153,6 +147,6 @@
   "celestial-altium-library/POT Panasonic EVM/POT_Panasonic_EVM",
   "chilaboard-altium-library/POT_V10MM/POT_V10MM"
  ],
- "embedding_text": "discrete-transistor.pot | Discrete Transistor | EDA library cluster containing 31 discrete transistor parts under the POT package family, available in surface-mount, through-hole, and unknown mounting configurations. | discrete transistor pot discrete transistor smd through hole pot-sop pot_3296w pot_3306f trimpot bourns murata panasonic pitch pad mm pins through hole 3296w tc33 pva2 | POT | ",
+ "embedding_text": "discrete-transistor.pot | Discrete Transistor | 31 discrete transistor parts using POT footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | pot transistor discrete pitch pad mm pins trimpot through hole bourns panasonic 3296w tc33 murata pva2 | POT | ",
  "class": "discrete.transistor"
 }

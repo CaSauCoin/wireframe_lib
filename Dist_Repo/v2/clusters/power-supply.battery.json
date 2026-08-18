@@ -6,30 +6,21 @@
   "Power",
   "Power Supply"
  ],
- "description": "Cluster of 11 power supply battery parts featuring through-hole and coin-cell Battery package family footprints.",
+ "description": "11 power power supply parts using Battery footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Match the specific battery model footprint, such as CR2032 or CR1220 variants.",
-  "Choose based on horizontal or vertical through-hole mounting orientation.",
-  "Verify hole spacing and physical pin-to-pad alignment for the target cell or holder."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a Battery land pattern is intended."
  ],
  "avoid_when": [
-  "The application requires a power source package family other than Battery.",
-  "Surface mount battery clips or non-through-hole mounting is required.",
-  "Required electrical ratings or specifications are unconfirmed."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than Battery."
  ],
  "keywords": [
   "battery",
-  "power supply",
-  "coin cell",
-  "through hole",
-  "cr2032",
-  "cr2025",
-  "cr1220",
-  "cr2450",
-  "cr1632",
-  "vertical",
-  "horizontal",
   "panasonic",
+  "vertical",
   "circularholes",
   "power",
   "vcn",
@@ -41,7 +32,8 @@
   "through",
   "hole",
   "pad",
-  "mm"
+  "mm",
+  "pitch"
  ],
  "facts": {
   "package_family": "Battery",
@@ -73,7 +65,7 @@
   "tier_counts": {
    "C": 11
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
@@ -89,6 +81,6 @@
   "dist-legacy/Battery_Panasonic_CR3032-VCN_Vertical_CircularHoles",
   "dist-legacy/Battery_CR1225"
  ],
- "embedding_text": "power-supply.battery | Power Power Supply | Cluster of 11 power supply battery parts featuring through-hole and coin-cell Battery package family footprints. | battery power supply coin cell through hole cr2032 cr2025 cr1220 cr2450 cr1632 vertical horizontal panasonic circularholes power vcn supply cr package coin cell through hole pad mm | Battery | ",
+ "embedding_text": "power-supply.battery | Power Power Supply | 11 power power supply parts using Battery footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | battery panasonic vertical circularholes power vcn supply cr package coin cell through hole pad mm pitch | Battery | ",
  "class": "power.supply"
 }

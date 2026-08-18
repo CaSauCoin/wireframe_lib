@@ -7,30 +7,22 @@
   "Interface",
   "Ethernet"
  ],
- "description": "Cluster of 7 surface-mount USB Ethernet interface ICs in QFN-56 and QFN-64 packages.",
+ "description": "7 ic interface ethernet parts for USB using QFN footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Requires QFN-56 (8x8mm) or QFN-64 (9x9mm) surface-mount footprints.",
-  "Select for Ethernet interface IC designs requiring a USB facet.",
-  "Verify part selection against LAN7500 or LAN9512/9513 series parts."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a QFN land pattern is intended."
  ],
  "avoid_when": [
-  "The design requires package families other than QFN or through-hole mounting.",
-  "An Ethernet interface without a USB facet is required.",
-  "Component selection strictly mandates Tier A quality ratings."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than QFN."
  ],
  "keywords": [
-  "ic",
-  "interface",
   "ethernet",
-  "usb",
   "qfn",
-  "smd",
-  "qfn-56",
-  "qfn-64",
-  "lan7500",
-  "lan9512",
-  "lan9513",
-  "ethernet interface ic",
+  "usb",
+  "interface",
   "hub",
   "to",
   "controller",
@@ -38,6 +30,7 @@
   "p0",
   "5mm",
   "nolead",
+  "ic",
   "with",
   "an",
   "integrated",
@@ -65,7 +58,7 @@
   "tier_counts": {
    "B": 7
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -118,6 +111,6 @@
   "kicad-symbols/Interface_Ethernet/LAN9514",
   "kicad-symbols/Interface_Ethernet/LAN9514i"
  ],
- "embedding_text": "ic-interface-ethernet.qfn.usb | IC Interface Ethernet | Cluster of 7 surface-mount USB Ethernet interface ICs in QFN-56 and QFN-64 packages. | ic interface ethernet usb qfn smd qfn-56 qfn-64 lan7500 lan9512 lan9513 ethernet interface ic hub to controller 1ep p0 5mm nolead with an integrated 9x9mm | QFN | USB",
+ "embedding_text": "ic-interface-ethernet.qfn.usb | IC Interface Ethernet | 7 ic interface ethernet parts for USB using QFN footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | ethernet qfn usb interface hub to controller 1ep p0 5mm nolead ic with an integrated 9x9mm | QFN | USB",
  "class": "ic.interface.ethernet"
 }

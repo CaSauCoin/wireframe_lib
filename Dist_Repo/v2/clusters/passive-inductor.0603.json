@@ -6,37 +6,34 @@
   "Passive",
   "Inductor"
  ],
- "description": "Cluster of 29 passive inductor and ferrite parts associated with the 0603 package family across SMD and unknown mount types.",
+ "description": "29 passive inductor parts using 0603 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Prioritize tier A entries among the 29 available parts for higher quality scores.",
-  "Select the appropriate footprint variant such as standard 1608Metric or hand-solder pads.",
-  "Verify source library and mounting specifications before finalizing part selection."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a 0603 land pattern is intended."
  ],
  "avoid_when": [
-  "A package family other than 0603 is required for the PCB layout.",
-  "The application requires components outside of the passive inductor class.",
-  "Surface mount (SMD) footprints are incompatible with the design."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than 0603."
  ],
  "keywords": [
-  "passive",
   "inductor",
-  "0603",
-  "smd",
-  "ferrite",
-  "1608metric",
-  "0603metric",
-  "handsolder",
-  "coil",
-  "passive.inductor",
-  "sparkfun",
-  "changjiang",
+  "passive",
   "pad",
   "surface",
   "mount",
   "mm",
   "pitch",
   "pins",
-  "package"
+  "sparkfun",
+  "changjiang",
+  "ferrite",
+  "1608metric",
+  "coil",
+  "package",
+  "handsolder",
+  "smd"
  ],
  "facts": {
   "package_family": "0603",
@@ -76,7 +73,7 @@
    "B": 4,
    "C": 19
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -151,6 +148,6 @@
   "chilaboard-altium-library/L0603E/L0603E",
   "chilaboard-altium-library/L0603OLD/L0603OLD"
  ],
- "embedding_text": "passive-inductor.0603 | Passive Inductor | Cluster of 29 passive inductor and ferrite parts associated with the 0603 package family across SMD and unknown mount types. | passive inductor 0603 smd ferrite 1608metric 0603metric handsolder coil passive.inductor sparkfun changjiang pad surface mount mm pitch pins package | 0603 | ",
+ "embedding_text": "passive-inductor.0603 | Passive Inductor | 29 passive inductor parts using 0603 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | inductor passive pad surface mount mm pitch pins sparkfun changjiang ferrite 1608metric coil package handsolder smd | 0603 | ",
  "class": "passive.inductor"
 }

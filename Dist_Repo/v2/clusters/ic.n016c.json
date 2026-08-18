@@ -5,28 +5,20 @@
  "category_path": [
   "IC"
  ],
- "description": "IC component cluster using the N016C footprint and package family, containing 1 tier C part from dist-legacy sources.",
+ "description": "1 ic parts using N016C footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Use when an N016C footprint and package family are required.",
-  "Review tier C parts for exact electrical and footprint specifications.",
-  "Verify mounting details as mount type is listed as unknown."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a N016C land pattern is intended."
  ],
  "avoid_when": [
-  "The PCB layout requires a footprint or package family other than N016C.",
-  "Unverified tier C parts are not permitted in design rules.",
-  "Exact mounting specifications are required prior to part selection."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than N016C."
  ],
  "keywords": [
   "n016c",
   "ic",
-  "integrated circuit",
-  "n016c footprint",
-  "n016c package",
-  "package family",
-  "tier c",
-  "dist-legacy",
-  "unknown mount",
-  "footprint",
   "pad",
   "mm",
   "pitch",
@@ -51,12 +43,12 @@
   "tier_counts": {
    "C": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
   "dist-legacy/N016C"
  ],
- "embedding_text": "ic.n016c | IC | IC component cluster using the N016C footprint and package family, containing 1 tier C part from dist-legacy sources. | n016c ic integrated circuit n016c footprint n016c package package family tier c dist-legacy unknown mount footprint pad mm pitch pins | N016C | ",
+ "embedding_text": "ic.n016c | IC | 1 ic parts using N016C footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | n016c ic pad mm pitch pins | N016C | ",
  "class": "ic"
 }

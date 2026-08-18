@@ -5,36 +5,28 @@
  "category_path": [
   "IC"
  ],
- "description": "Integrated circuit cluster containing 8 parts with FCI package footprints and through-hole or unknown mount types.",
+ "description": "8 ic parts using FCI footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Verify the exact pin count variant such as 5PIN, 6PIN, 7PIN, or 8PIN.",
-  "Ensure compatibility with FCI through-hole package footprints.",
-  "Note that all parts in this cluster are currently classified as quality tier C."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a FCI land pattern is intended."
  ],
  "avoid_when": [
-  "The board design requires surface-mount packages.",
-  "A package family other than FCI is needed.",
-  "Verified high-tier (Tier A or B) parts are required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than FCI."
  ],
  "keywords": [
   "fci",
   "ic",
-  "integrated circuit",
-  "through hole",
-  "fci 06-381-5pin",
-  "fci 06-381-6pin",
-  "fci 06-381-7pin",
-  "fci 06-381-8pin",
   "5pin",
-  "6pin",
-  "7pin",
-  "8pin",
-  "tier c",
-  "celestial altium library",
   "pad",
   "mm",
   "pitch",
   "pins",
+  "6pin",
+  "7pin",
+  "8pin",
   "through",
   "hole"
  ],
@@ -63,7 +55,7 @@
   "tier_counts": {
    "C": 8
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
@@ -76,6 +68,6 @@
   "celestial-altium-library/FCI 06-381-7PIN/FCI 06-381-7PIN",
   "celestial-altium-library/FCI 06-381-8PIN/FCI 06-381-8PIN"
  ],
- "embedding_text": "ic.fci | IC | Integrated circuit cluster containing 8 parts with FCI package footprints and through-hole or unknown mount types. | fci ic integrated circuit through hole fci 06-381-5pin fci 06-381-6pin fci 06-381-7pin fci 06-381-8pin 5pin 6pin 7pin 8pin tier c celestial altium library pad mm pitch pins through hole | FCI | ",
+ "embedding_text": "ic.fci | IC | 8 ic parts using FCI footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | fci ic 5pin pad mm pitch pins 6pin 7pin 8pin through hole | FCI | ",
  "class": "ic"
 }

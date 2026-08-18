@@ -7,32 +7,22 @@
   "Interface",
   "CAN"
  ],
- "description": "Surface-mount CAN interface IC cluster featuring SPI and CAN facets in DFN-14 package footprints.",
+ "description": "3 ic interface can parts for SPI, CAN using DFN footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when needing a CAN interface IC with SPI support.",
-  "Choose when designing for surface-mount DFN-14 footprints.",
-  "Select from available representative parts including MCP2517FD-xJHA, TJA1145TK, or TJA1145TK-FD."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a DFN land pattern is intended."
  ],
  "avoid_when": [
-  "Do not use when through-hole mounting is required instead of SMD DFN.",
-  "Avoid if the design requires non-CAN interface IC functionality.",
-  "Avoid when packages or footprints other than DFN-14 are specified."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than DFN."
  ],
  "keywords": [
-  "ic",
-  "interface",
   "can",
-  "spi",
   "dfn",
-  "smd",
-  "dfn-14",
-  "dfn-14-1ep",
-  "mcp2517fd",
-  "tja1145",
-  "tja1145tk",
-  "mcp2517fd-xjha",
-  "tja1145tk-fd",
-  "ic interface can",
+  "interface",
+  "spi",
   "fd",
   "65mm",
   "vdfn",
@@ -42,7 +32,9 @@
   "partial",
   "networking",
   "lin",
-  "1ep"
+  "1ep",
+  "3x4",
+  "5mm"
  ],
  "facts": {
   "package_family": "DFN",
@@ -66,7 +58,7 @@
   "tier_counts": {
    "B": 3
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -99,6 +91,6 @@
   "kicad-symbols/Interface_CAN_LIN/TJA1145TK",
   "kicad-symbols/Interface_CAN_LIN/TJA1145TK-FD"
  ],
- "embedding_text": "ic-interface-can.dfn.spi.can | IC Interface CAN | Surface-mount CAN interface IC cluster featuring SPI and CAN facets in DFN-14 package footprints. | ic interface can spi dfn smd dfn-14 dfn-14-1ep mcp2517fd tja1145 tja1145tk mcp2517fd-xjha tja1145tk-fd ic interface can fd 65mm vdfn high speed transceiver partial networking lin 1ep | DFN | SPI CAN",
+ "embedding_text": "ic-interface-can.dfn.spi.can | IC Interface CAN | 3 ic interface can parts for SPI, CAN using DFN footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | can dfn interface spi fd 65mm vdfn high speed transceiver partial networking lin 1ep 3x4 5mm | DFN | SPI CAN",
  "class": "ic.interface.can"
 }

@@ -7,31 +7,19 @@
   "Power",
   "Converter"
  ],
- "description": "Cluster of 4 surface-mount BGA IC power converter parts for buck converter applications, sourced from KiCad symbols across quality tiers A and B.",
+ "description": "4 ic power converter parts for buck using BGA footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Prefer Tier A parts like LTM4626, LTM4638, or LTM4657 over Tier B entries.",
-  "Choose between BGA-49 (6.25x6.25mm, 0.8mm pitch) and BGA-133 (15.0x15.0mm, 1.27mm pitch) footprints.",
-  "Verify symbol and footprint assignment for your specific buck converter requirements."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a BGA land pattern is intended."
  ],
  "avoid_when": [
-  "A non-BGA package family or through-hole footprint is required.",
-  "The application requires a power converter topology other than buck.",
-  "The layout cannot accommodate 0.8mm or 1.27mm pitch BGA land patterns."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than BGA."
  ],
  "keywords": [
-  "ic power converter",
-  "buck converter",
   "bga",
-  "smd",
-  "ltm4626",
-  "ltm4638",
-  "ltm4657",
-  "ltm4637xy",
-  "kicad symbols",
-  "bga-49",
-  "bga-133",
-  "power converter",
-  "step down",
   "converter",
   "dc",
   "umodule",
@@ -42,7 +30,11 @@
   "step",
   "down",
   "ic",
-  "power"
+  "power",
+  "devices",
+  "20vin",
+  "25x6",
+  "25mm"
  ],
  "facts": {
   "package_family": "BGA",
@@ -67,7 +59,7 @@
    "A": 3,
    "B": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -109,6 +101,6 @@
   "kicad-symbols/Converter_DCDC/LTM4657",
   "kicad-symbols/Converter_DCDC/LTM4637xY"
  ],
- "embedding_text": "ic-power-converter.bga.buck | IC Power Converter | Cluster of 4 surface-mount BGA IC power converter parts for buck converter applications, sourced from KiCad symbols across quality tiers A and B. | ic power converter buck converter bga smd ltm4626 ltm4638 ltm4657 ltm4637xy kicad symbols bga-49 bga-133 power converter step down converter dc umodule regulator buck analog dcdc step down ic power | BGA | buck",
+ "embedding_text": "ic-power-converter.bga.buck | IC Power Converter | 4 ic power converter parts for buck using BGA footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | bga converter dc umodule regulator buck analog dcdc step down ic power devices 20vin 25x6 25mm | BGA | buck",
  "class": "ic.power.converter"
 }

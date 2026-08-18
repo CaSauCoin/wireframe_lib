@@ -5,37 +5,31 @@
  "category_path": [
   "IC"
  ],
- "description": "Surface-mount integrated circuit components in the VSOF5 package family.",
+ "description": "2 ic parts using VSOF5 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when a surface-mount VSOF5 footprint is required for the design.",
-  "Choose between available part series including BD48xxFVE and BD49xxFVE.",
-  "Confirm exact symbol pin mapping and ratings prior to board layout."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a VSOF5 land pattern is intended."
  ],
  "avoid_when": [
-  "The design requires a package type other than VSOF5.",
-  "Through-hole mounting is specified instead of surface-mount.",
-  "Target electrical specifications or functional requirements are not satisfied."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than VSOF5."
  ],
  "keywords": [
-  "ic",
   "vsof5",
-  "smd",
-  "surface mount",
-  "integrated circuit",
-  "bd48xxfve",
-  "bd49xxfve",
-  "power management",
-  "vsof5 package",
-  "vsof5 footprint",
   "cmos",
   "voltage",
   "detector",
+  "ic",
   "power",
   "management",
   "standard",
   "open",
   "drain",
-  "output"
+  "output",
+  "bd48xxfve",
+  "bd49xxfve"
  ],
  "facts": {
   "package_family": "VSOF5",
@@ -56,7 +50,7 @@
   "tier_counts": {
    "A": 2
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -80,6 +74,6 @@
   "kicad-symbols/Power_Management/BD48xxFVE",
   "kicad-symbols/Power_Management/BD49xxFVE"
  ],
- "embedding_text": "ic.vsof5 | IC | Surface-mount integrated circuit components in the VSOF5 package family. | ic vsof5 smd surface mount integrated circuit bd48xxfve bd49xxfve power management vsof5 package vsof5 footprint cmos voltage detector power management standard open drain output | VSOF5 | ",
+ "embedding_text": "ic.vsof5 | IC | 2 ic parts using VSOF5 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | vsof5 cmos voltage detector ic power management standard open drain output bd48xxfve bd49xxfve | VSOF5 | ",
  "class": "ic"
 }

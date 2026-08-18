@@ -7,42 +7,34 @@
   "Power",
   "Converter"
  ],
- "description": "Through-hole 36V buck power converter IC cluster containing 15 parts with Converter footprints sourced from KiCad symbols.",
+ "description": "15 ic power converter parts for buck, 36V using Converter footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select based on required footprint orientation, such as vertical or horizontal through-hole mounting.",
-  "Choose between tier A and tier B parts based on quality tier preferences.",
-  "Verify part compatibility with specific Converter DCDC land patterns like Murata, Recom, or XP Power."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a Converter land pattern is intended."
  ],
  "avoid_when": [
-  "Surface-mount (SMD) components are required rather than through-hole mounting.",
-  "The circuit design requires a power converter topology other than buck or a rating other than 36V.",
-  "The PCB design uses package families other than through-hole Converter DCDC footprints."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than Converter."
  ],
  "keywords": [
-  "ic",
-  "power converter",
-  "buck",
-  "36v",
   "converter",
-  "through_hole",
-  "tht",
-  "dcdc",
-  "murata",
-  "recom",
-  "xp power",
-  "vertical",
-  "horizontal",
-  "oki-78sr",
-  "ncs1s",
-  "jtd",
   "dc",
+  "dcdc",
   "isolated",
+  "36v",
   "input",
   "voltage",
   "power",
   "step",
   "down",
-  "output"
+  "output",
+  "ic",
+  "buck",
+  "module",
+  "isolation",
+  "dip"
  ],
  "facts": {
   "package_family": "Converter",
@@ -71,7 +63,7 @@
    "A": 4,
    "B": 11
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -132,6 +124,6 @@
   "kicad-symbols/Converter_DCDC/RPA60-2415SFW",
   "kicad-symbols/Converter_DCDC/RPA60-2424SFW"
  ],
- "embedding_text": "ic-power-converter.converter.buck.36v | IC Power Converter | Through-hole 36V buck power converter IC cluster containing 15 parts with Converter footprints sourced from KiCad symbols. | ic power converter buck 36v converter through_hole tht dcdc murata recom xp power vertical horizontal oki-78sr ncs1s jtd dc isolated input voltage power step down output | Converter | buck 36V",
+ "embedding_text": "ic-power-converter.converter.buck.36v | IC Power Converter | 15 ic power converter parts for buck, 36V using Converter footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | converter dc dcdc isolated 36v input voltage power step down output ic buck module isolation dip | Converter | buck 36V",
  "class": "ic.power.converter"
 }

@@ -6,32 +6,23 @@
   "Discrete",
   "Transistor"
  ],
- "description": "Cluster of 3 tier-A 100V discrete surface-mount transistors in TSOP-6 (1.65x3.05mm, P0.95mm) footprints.",
+ "description": "3 discrete transistor parts for 100V using TSOP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Requires a 100V rated discrete transistor.",
-  "Targeting surface-mount designs using TSOP-6 (1.65x3.05mm, P0.95mm) footprints.",
-  "Selecting tier-A parts from Alternate-KiCad-Library such as BSL296SN, BSL372SN, or BSL373SN."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a TSOP land pattern is intended."
  ],
  "avoid_when": [
-  "The circuit requires a voltage rating other than 100V.",
-  "Through-hole mounting is required instead of SMD.",
-  "The design requires footprints other than TSOP-6."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than TSOP."
  ],
  "keywords": [
-  "discrete transistor",
-  "transistor",
-  "tsop",
-  "tsop-6",
-  "100v",
-  "smd",
-  "bsl296sn",
-  "bsl372sn",
-  "bsl373sn",
-  "alternate-kicad-library",
-  "discrete",
-  "1.65x3.05mm",
   "mosfet",
+  "tsop",
+  "transistor",
   "enchancement",
+  "100v",
   "akl",
   "mode",
   "2w",
@@ -41,7 +32,8 @@
   "65x3",
   "05mm",
   "p0",
-  "95mm"
+  "95mm",
+  "jedec"
  ],
  "facts": {
   "package_family": "TSOP",
@@ -64,7 +56,7 @@
   "tier_counts": {
    "A": 3
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -97,6 +89,6 @@
   "Alternate-KiCad-Library/Transistor_MOSFET_AKL/BSL372SN",
   "Alternate-KiCad-Library/Transistor_MOSFET_AKL/BSL373SN"
  ],
- "embedding_text": "discrete-transistor.tsop.100v | Discrete Transistor | Cluster of 3 tier-A 100V discrete surface-mount transistors in TSOP-6 (1.65x3.05mm, P0.95mm) footprints. | discrete transistor transistor tsop tsop-6 100v smd bsl296sn bsl372sn bsl373sn alternate-kicad-library discrete 1.65x3.05mm mosfet enchancement akl mode 2w alternate kicad library 65x3 05mm p0 95mm | TSOP | 100V",
+ "embedding_text": "discrete-transistor.tsop.100v | Discrete Transistor | 3 discrete transistor parts for 100V using TSOP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | mosfet tsop transistor enchancement 100v akl mode 2w alternate kicad library 65x3 05mm p0 95mm jedec | TSOP | 100V",
  "class": "discrete.transistor"
 }

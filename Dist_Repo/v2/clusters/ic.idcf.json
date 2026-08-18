@@ -5,30 +5,23 @@
  "category_path": [
   "IC"
  ],
- "description": "Integrated circuit cluster with three through-hole parts in the IDCF package family featuring IDCF_2X17, IDCF_2X20, and IDCF_2X25 footprints.",
+ "description": "3 ic parts using IDCF footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select based on the required footprint configuration: IDCF_2X17, IDCF_2X20, or IDCF_2X25.",
-  "Verify through-hole mounting compatibility for the target PCB design.",
-  "Note that parts in this cluster are tier C quality from the chilaboard-altium-library."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a IDCF land pattern is intended."
  ],
  "avoid_when": [
-  "The PCB design requires surface-mount technology instead of through-hole mounting.",
-  "A package family other than IDCF is needed.",
-  "Footprints other than IDCF_2X17, IDCF_2X20, or IDCF_2X25 are required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than IDCF."
  ],
  "keywords": [
-  "ic",
   "idcf",
-  "idcf package",
-  "through hole",
-  "through-hole",
-  "idcf_2x17",
-  "idcf_2x20",
-  "idcf_2x25",
+  "ic",
   "2x17",
   "2x20",
   "2x25",
-  "chilaboard",
   "through",
   "hole",
   "pad",
@@ -57,7 +50,7 @@
   "tier_counts": {
    "C": 3
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
@@ -65,6 +58,6 @@
   "chilaboard-altium-library/IDCF_2X20/IDCF_2X20",
   "chilaboard-altium-library/IDCF_2X25/IDCF_2X25"
  ],
- "embedding_text": "ic.idcf | IC | Integrated circuit cluster with three through-hole parts in the IDCF package family featuring IDCF_2X17, IDCF_2X20, and IDCF_2X25 footprints. | ic idcf idcf package through hole through-hole idcf_2x17 idcf_2x20 idcf_2x25 2x17 2x20 2x25 chilaboard through hole pad mm pitch pins | IDCF | ",
+ "embedding_text": "ic.idcf | IC | 3 ic parts using IDCF footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | idcf ic 2x17 2x20 2x25 through hole pad mm pitch pins | IDCF | ",
  "class": "ic"
 }

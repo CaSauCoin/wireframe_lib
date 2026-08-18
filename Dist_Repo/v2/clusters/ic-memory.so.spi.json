@@ -6,30 +6,24 @@
   "IC",
   "Memory"
  ],
- "description": "Surface-mount memory ICs featuring SPI interface in the SO package family with SO_8 footprints.",
+ "description": "8 ic memory parts for SPI using SO footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when requiring an SMD SPI memory IC in an SO_8 footprint.",
-  "Choose when using parts from the SO package family with SPI interface.",
-  "Verify required part selection among available tier B parts."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SO land pattern is intended."
  ],
  "avoid_when": [
-  "Do not use if the board design requires a package family other than SO.",
-  "Avoid when non-SMD or through-hole mounting is required.",
-  "Avoid if a memory interface other than SPI is required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SO."
  ],
  "keywords": [
-  "ic",
-  "memory",
-  "spi",
-  "so",
-  "so_8",
-  "sop8",
-  "smd",
   "eeprom",
-  "ic memory",
-  "spi memory",
-  "so package",
-  "surface mount",
+  "spi",
+  "memory",
+  "sop8",
+  "ic",
+  "so",
   "serial",
   "pin",
   "in",
@@ -62,7 +56,7 @@
   "tier_counts": {
    "B": 8
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -116,6 +110,6 @@
   "chilaboard-altium-library/EEPROM_SPI_AT93C46_SOP8/EEPROM_SPI_AT93C46_SOP8",
   "chilaboard-altium-library/EEPROM_SPI_RM25C512_SOP8/EEPROM_SPI_RM25C512_SOP8"
  ],
- "embedding_text": "ic-memory.so.spi | IC Memory | Surface-mount memory ICs featuring SPI interface in the SO package family with SO_8 footprints. | ic memory spi so so_8 sop8 smd eeprom ic memory spi memory so package surface mount serial pin in sop package and an with write protect | SO | SPI",
+ "embedding_text": "ic-memory.so.spi | IC Memory | 8 ic memory parts for SPI using SO footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | eeprom spi memory sop8 ic so serial pin in sop package and an with write protect | SO | SPI",
  "class": "ic.memory"
 }

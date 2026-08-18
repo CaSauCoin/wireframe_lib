@@ -6,30 +6,22 @@
   "Discrete",
   "Transistor"
  ],
- "description": "Discrete transistor cluster containing 3 surface-mount parts in the BZ package family with footprints BZ_SMD_S12, BZ_SMD_S5, and BZ_SMD_S8.",
+ "description": "3 discrete transistor parts using BZ footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when surface-mount discrete transistors in the BZ package family are required.",
-  "Choose between BZ_SMD_S12, BZ_SMD_S5, and BZ_SMD_S8 footprints.",
-  "Verify tier C entries sourced from chilaboard-altium-library prior to use."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a BZ land pattern is intended."
  ],
  "avoid_when": [
-  "Avoid when the board layout requires non-BZ packages or through-hole components.",
-  "Avoid if footprints other than BZ_SMD_S12, BZ_SMD_S5, or BZ_SMD_S8 are required.",
-  "Avoid if tier A or B quality parts are required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than BZ."
  ],
  "keywords": [
   "bz",
   "smd",
   "discrete",
   "transistor",
-  "discrete transistor",
-  "surface mount",
-  "bz_smd_s12",
-  "bz_smd_s5",
-  "bz_smd_s8",
-  "chilaboard-altium-library",
-  "bz package",
-  "tier c",
   "s12",
   "s5",
   "s8",
@@ -61,7 +53,7 @@
   "tier_counts": {
    "C": 3
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
@@ -69,6 +61,6 @@
   "chilaboard-altium-library/BZ_SMD_S5/BZ_SMD_S5",
   "chilaboard-altium-library/BZ_SMD_S8/BZ_SMD_S8"
  ],
- "embedding_text": "discrete-transistor.bz | Discrete Transistor | Discrete transistor cluster containing 3 surface-mount parts in the BZ package family with footprints BZ_SMD_S12, BZ_SMD_S5, and BZ_SMD_S8. | bz smd discrete transistor discrete transistor surface mount bz_smd_s12 bz_smd_s5 bz_smd_s8 chilaboard-altium-library bz package tier c s12 s5 s8 surface mount pad mm pitch pins | BZ | ",
+ "embedding_text": "discrete-transistor.bz | Discrete Transistor | 3 discrete transistor parts using BZ footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | bz smd discrete transistor s12 s5 s8 surface mount pad mm pitch pins | BZ | ",
  "class": "discrete.transistor"
 }

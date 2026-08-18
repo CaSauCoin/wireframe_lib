@@ -6,41 +6,31 @@
   "Discrete",
   "BJT"
  ],
- "description": "Cluster of 4 tier-A through-hole discrete BJTs rated for the 70V facet, using TO-220-3_Vertical_BCE or TO-218-3_Vertical footprints, sourced from kicad-symbols and Alternate-KiCad-Library.",
+ "description": "4 discrete bjt parts for 70V using TO footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Match the exact footprint needed: TO-220-3_Vertical_BCE or TO-218-3_Vertical",
-  "All 4 parts are tier A with score 100; differentiate by part number and source library",
-  "Confirm the 70V facet rating satisfies the circuit's voltage requirement before selecting",
-  "Verify through-hole mounting is compatible with the target board assembly"
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a TO land pattern is intended."
  ],
  "avoid_when": [
-  "Design requires a surface-mount or non-TO package",
-  "Circuit voltage requirement exceeds what the 70V facet covers",
-  "Footprint-symbol pairing has not been verified before layout",
-  "A different package family than TO-220-3_Vertical_BCE or TO-218-3_Vertical is needed"
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than TO."
  ],
  "keywords": [
   "to",
-  "to-220",
-  "to-218",
   "transistor",
   "bjt",
-  "discrete",
   "70v",
-  "through hole",
   "vertical",
-  "bd249a",
-  "bd250a",
-  "2n6107",
-  "2n6292",
-  "kicad-symbols",
-  "alternate-kicad-library",
-  "tier a",
   "power",
   "pnp",
   "rm",
+  "discrete",
   "npn",
   "sot",
+  "2n6107",
+  "2n6292",
   "akl",
   "7a",
   "40w"
@@ -68,7 +58,7 @@
   "tier_counts": {
    "A": 4
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -110,6 +100,6 @@
   "kicad-symbols/Transistor_BJT/BD249A",
   "kicad-symbols/Transistor_BJT/BD250A"
  ],
- "embedding_text": "discrete-bjt.to.70v | Discrete BJT | Cluster of 4 tier-A through-hole discrete BJTs rated for the 70V facet, using TO-220-3_Vertical_BCE or TO-218-3_Vertical footprints, sourced from kicad-symbols and Alternate-KiCad-Library. | to to-220 to-218 transistor bjt discrete 70v through hole vertical bd249a bd250a 2n6107 2n6292 kicad-symbols alternate-kicad-library tier a power pnp rm npn sot akl 7a 40w | TO | 70V",
+ "embedding_text": "discrete-bjt.to.70v | Discrete BJT | 4 discrete bjt parts for 70V using TO footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | to transistor bjt 70v vertical power pnp rm discrete npn sot 2n6107 2n6292 akl 7a 40w | TO | 70V",
  "class": "discrete.bjt"
 }

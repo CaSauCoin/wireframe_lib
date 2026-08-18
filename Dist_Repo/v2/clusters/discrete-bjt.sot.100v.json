@@ -6,44 +6,34 @@
   "Discrete",
   "BJT"
  ],
- "description": "Cluster of 7 tier-A discrete BJT parts sourced from Alternate-KiCad-Library, grouped under the 100V facet and offered in SOT-223-3, SOT-323/SC-70, and SOT-89-3 SMD footprints.",
+ "description": "7 discrete bjt parts for 100V using SOT footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "All 7 parts are tier A with score 100 — differentiate by exact footprint needed (SOT-223-3_TabPin2, SOT-323_SC-70, or SOT-89-3)",
-  "Confirm the 100V facet matches your actual voltage requirement before selecting",
-  "Verify pin-to-pad mapping against the chosen footprint before finalizing PCB layout",
-  "All parts originate from a single source (Alternate-KiCad-Library) — cross-check against a datasheet if independent verification is needed"
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SOT land pattern is intended."
  ],
  "avoid_when": [
-  "Required voltage, current, gain, or switching characteristics are not explicitly stated by the part",
-  "A through-hole or non-SOT package is needed for the board layout",
-  "Symbol-footprint pairing has not been confirmed for the specific part chosen",
-  "Sourcing from a library other than Alternate-KiCad-Library is required"
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SOT."
  ],
  "keywords": [
   "sot",
   "transistor",
   "bjt",
   "100v",
-  "smd",
-  "akl",
-  "alternate-kicad-library",
-  "sot-223-3",
-  "sot-323",
-  "sc-70",
-  "sot-89-3",
-  "tabpin2",
-  "discrete",
-  "2sa1587",
-  "2sc4117",
-  "bdp954",
-  "fzt653",
-  "pzta29",
   "npn",
+  "akl",
   "alternate",
   "kicad",
   "library",
+  "discrete",
   "pnp",
-  "sc"
+  "sc",
+  "tabpin2",
+  "cms",
+  "2sa1587",
+  "2sc4117"
  ],
  "facts": {
   "package_family": "SOT",
@@ -68,7 +58,7 @@
   "tier_counts": {
    "A": 7
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -121,6 +111,6 @@
   "Alternate-KiCad-Library/Transistor_BJT_AKL/ZXTN2011G",
   "Alternate-KiCad-Library/Transistor_BJT_AKL/ZXTN2011Z"
  ],
- "embedding_text": "discrete-bjt.sot.100v | Discrete BJT | Cluster of 7 tier-A discrete BJT parts sourced from Alternate-KiCad-Library, grouped under the 100V facet and offered in SOT-223-3, SOT-323/SC-70, and SOT-89-3 SMD footprints. | sot transistor bjt 100v smd akl alternate-kicad-library sot-223-3 sot-323 sc-70 sot-89-3 tabpin2 discrete 2sa1587 2sc4117 bdp954 fzt653 pzta29 npn alternate kicad library pnp sc | SOT | 100V",
+ "embedding_text": "discrete-bjt.sot.100v | Discrete BJT | 7 discrete bjt parts for 100V using SOT footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | sot transistor bjt 100v npn akl alternate kicad library discrete pnp sc tabpin2 cms 2sa1587 2sc4117 | SOT | 100V",
  "class": "discrete.bjt"
 }

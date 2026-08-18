@@ -6,41 +6,33 @@
   "IC",
   "Analog"
  ],
- "description": "Analog IC cluster featuring SPI communication and surface-mount TSSOP packages across 14 Tier A KiCad library parts.",
+ "description": "14 ic analog parts for SPI using TSSOP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Require an analog IC with an SPI communication interface.",
-  "Target surface-mount TSSOP package footprint variants such as TSSOP-10, TSSOP-16, TSSOP-20, TSSOP-24, or TSSOP-38.",
-  "Select parts verified under Tier A quality from KiCad symbol sources, including ADC and DAC components."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a TSSOP land pattern is intended."
  ],
  "avoid_when": [
-  "Designs requiring through-hole mounting or package families other than TSSOP.",
-  "Applications requiring interfaces other than SPI.",
-  "Designs that do not use surface-mount analog ICs."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than TSSOP."
  ],
  "keywords": [
-  "ic",
-  "analog",
-  "spi",
   "tssop",
-  "smd",
-  "adc",
-  "dac",
-  "tssop-16",
-  "tssop-10",
-  "tssop-20",
-  "tssop-24",
-  "tssop-38",
-  "kicad-symbols",
-  "analog ic",
+  "spi",
+  "analog",
   "p0",
+  "adc",
   "5mm",
   "so",
   "texas",
+  "ic",
   "bit",
   "vssop",
   "3x3mm",
   "with",
   "nxp",
+  "dac",
   "65mm"
  ],
  "facts": {
@@ -68,7 +60,7 @@
   "tier_counts": {
    "A": 14
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -128,6 +120,6 @@
   "kicad-symbols/Analog/PGA113",
   "kicad-symbols/Analog_Switch/TS3A27518EPW"
  ],
- "embedding_text": "ic-analog.tssop.spi | IC Analog | Analog IC cluster featuring SPI communication and surface-mount TSSOP packages across 14 Tier A KiCad library parts. | ic analog spi tssop smd adc dac tssop-16 tssop-10 tssop-20 tssop-24 tssop-38 kicad-symbols analog ic p0 5mm so texas bit vssop 3x3mm with nxp 65mm | TSSOP | SPI",
+ "embedding_text": "ic-analog.tssop.spi | IC Analog | 14 ic analog parts for SPI using TSSOP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | tssop spi analog p0 adc 5mm so texas ic bit vssop 3x3mm with nxp dac 65mm | TSSOP | SPI",
  "class": "ic.analog"
 }

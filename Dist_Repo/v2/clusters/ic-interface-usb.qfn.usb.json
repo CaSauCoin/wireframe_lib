@@ -7,30 +7,20 @@
   "Interface",
   "USB"
  ],
- "description": "A collection of 35 surface-mount USB interface ICs using QFN package family footprints, featuring parts such as AP33771, CH334F, CP2112, FT240XQ, and FT601Q.",
+ "description": "35 ic interface usb parts for USB using QFN footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when a surface-mount USB interface IC in a QFN package footprint is required.",
-  "Verify specific footprint dimensions, lead pitch, and exposed pad size for the target part.",
-  "Consider quality tiers, with 16 Tier A and 19 Tier B parts in KiCad symbols."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a QFN land pattern is intended."
  ],
  "avoid_when": [
-  "The design requires through-hole or non-QFN package footprints.",
-  "A non-USB interface component is needed."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than QFN."
  ],
  "keywords": [
   "usb",
   "qfn",
-  "ic interface usb",
-  "smd",
-  "interface ic",
-  "ap33771",
-  "ch334f",
-  "cp2112",
-  "ft240xq",
-  "ft601q",
-  "uqfn",
-  "wqfn",
-  "kicad-symbols",
   "interface",
   "ic",
   "p0",
@@ -41,7 +31,10 @@
   "pd",
   "controller",
   "speed",
-  "type"
+  "type",
+  "ep2",
+  "4x4mm",
+  "with"
  ],
  "facts": {
   "package_family": "QFN",
@@ -76,7 +69,7 @@
    "A": 16,
    "B": 19
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -157,6 +150,6 @@
   "kicad-symbols/Interface_USB/CH236D",
   "kicad-symbols/Interface_USB/HD3SS6126"
  ],
- "embedding_text": "ic-interface-usb.qfn.usb | IC Interface USB | A collection of 35 surface-mount USB interface ICs using QFN package family footprints, featuring parts such as AP33771, CH334F, CP2112, FT240XQ, and FT601Q. | usb qfn ic interface usb smd interface ic ap33771 ch334f cp2112 ft240xq ft601q uqfn wqfn kicad-symbols interface ic p0 nolead 1ep 5mm texas pd controller speed type | QFN | USB",
+ "embedding_text": "ic-interface-usb.qfn.usb | IC Interface USB | 35 ic interface usb parts for USB using QFN footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | usb qfn interface ic p0 nolead 1ep 5mm texas pd controller speed type ep2 4x4mm with | QFN | USB",
  "class": "ic.interface.usb"
 }

@@ -7,34 +7,26 @@
   "Analog",
   "Amplifier"
  ],
- "description": "This cluster contains 7 Tier-A surface-mount analog amplifier ICs in SOT-23-5 packages, including buffer and current-sense amplifiers.",
+ "description": "7 ic analog amplifier parts using SOT-23-5 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when needing a surface-mount analog amplifier IC in a SOT-23-5 package.",
-  "Choose between specific function types such as buffer (BUF602) or current-sensing (INA293 series).",
-  "Ensure layout compatibility with standard SOT-23-5 land patterns."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SOT-23-5 land pattern is intended."
  ],
  "avoid_when": [
-  "The design requires package footprints other than SOT-23-5 or through-hole mounting.",
-  "The circuit requires component classes other than analog amplifiers.",
-  "The specific amplifier function or required specs are not covered by the available parts."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SOT-23-5."
  ],
  "keywords": [
-  "ic",
-  "analog",
-  "amplifier",
-  "sot-23-5",
-  "smd",
-  "surface mount",
-  "kicad",
-  "buffer",
-  "current sense",
-  "buf602",
-  "ina293",
-  "tier a",
   "sot",
+  "amplifier",
   "current",
   "to",
   "high",
+  "smd",
+  "ic",
+  "analog",
   "shunt",
   "low",
   "khz",
@@ -63,7 +55,7 @@
   "tier_counts": {
    "A": 7
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -116,6 +108,6 @@
   "kicad-symbols/Amplifier_Current/ZXCT1010",
   "kicad-symbols/Amplifier_Current/ZXCT1110"
  ],
- "embedding_text": "ic-analog-amplifier.sot-23-5 | IC Analog Amplifier | This cluster contains 7 Tier-A surface-mount analog amplifier ICs in SOT-23-5 packages, including buffer and current-sense amplifiers. | ic analog amplifier sot-23-5 smd surface mount kicad buffer current sense buf602 ina293 tier a sot current to high shunt low khz bandwidth sense gain highside lowside | SOT-23-5 | ",
+ "embedding_text": "ic-analog-amplifier.sot-23-5 | IC Analog Amplifier | 7 ic analog amplifier parts using SOT-23-5 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | sot amplifier current to high smd ic analog shunt low khz bandwidth sense gain highside lowside | SOT-23-5 | ",
  "class": "ic.analog.amplifier"
 }

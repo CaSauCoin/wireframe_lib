@@ -6,28 +6,21 @@
   "Discrete",
   "Diode"
  ],
- "description": "Discrete diode cluster in the R1W package family containing 1 tier C part using R1W footprints.",
+ "description": "1 discrete diode parts using R1W footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when a discrete diode with an R1W footprint is specified.",
-  "Verify component footprint compatibility and quality tier status prior to PCB layout.",
-  "Evaluate part suitability using available package family and source data."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a R1W land pattern is intended."
  ],
  "avoid_when": [
-  "The design requires a package family or footprint other than R1W.",
-  "Specific electrical limits, pinouts, or mounting details not provided in the cluster facts are required.",
-  "Quality tier C or generated review status is not acceptable for the design."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than R1W."
  ],
  "keywords": [
+  "r1w",
   "discrete",
   "diode",
-  "discrete diode",
-  "r1w",
-  "r1w package",
-  "r1w footprint",
-  "discrete.diode",
-  "dist-legacy",
-  "tier c",
-  "package family r1w",
   "pad",
   "mm",
   "pitch",
@@ -52,12 +45,12 @@
   "tier_counts": {
    "C": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
   "dist-legacy/R1W"
  ],
- "embedding_text": "discrete-diode.r1w | Discrete Diode | Discrete diode cluster in the R1W package family containing 1 tier C part using R1W footprints. | discrete diode discrete diode r1w r1w package r1w footprint discrete.diode dist-legacy tier c package family r1w pad mm pitch pins | R1W | ",
+ "embedding_text": "discrete-diode.r1w | Discrete Diode | 1 discrete diode parts using R1W footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | r1w discrete diode pad mm pitch pins | R1W | ",
  "class": "discrete.diode"
 }

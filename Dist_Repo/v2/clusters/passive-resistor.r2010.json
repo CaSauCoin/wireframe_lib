@@ -6,28 +6,21 @@
   "Passive",
   "Resistor"
  ],
- "description": "Passive SMD resistor cluster containing 1 part in the R2010 package family from the chilaboard-altium-library source.",
+ "description": "1 passive resistor parts using R2010 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Verify design requirements specify an SMD R2010 footprint.",
-  "Confirm electrical parameters and part ratings against project needs.",
-  "Review source data and quality tier prior to PCB placement."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a R2010 land pattern is intended."
  ],
  "avoid_when": [
-  "The design requires a footprint or package family other than R2010.",
-  "Through-hole mounting is required instead of surface mount (SMD).",
-  "Unverified or tier C library entries are not permitted by project guidelines."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than R2010."
  ],
  "keywords": [
+  "r2010",
   "passive",
   "resistor",
-  "r2010",
-  "smd",
-  "surface mount",
-  "passive resistor",
-  "r2010 footprint",
-  "r2010 package",
-  "chilaboard-altium-library",
-  "passive.resistor",
   "surface",
   "mount",
   "pad",
@@ -54,12 +47,12 @@
   "tier_counts": {
    "C": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
   "chilaboard-altium-library/R2010/R2010"
  ],
- "embedding_text": "passive-resistor.r2010 | Passive Resistor | Passive SMD resistor cluster containing 1 part in the R2010 package family from the chilaboard-altium-library source. | passive resistor r2010 smd surface mount passive resistor r2010 footprint r2010 package chilaboard-altium-library passive.resistor surface mount pad mm pitch pins | R2010 | ",
+ "embedding_text": "passive-resistor.r2010 | Passive Resistor | 1 passive resistor parts using R2010 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | r2010 passive resistor surface mount pad mm pitch pins | R2010 | ",
  "class": "passive.resistor"
 }

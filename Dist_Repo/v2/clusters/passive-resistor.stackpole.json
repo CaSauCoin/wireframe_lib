@@ -6,36 +6,33 @@
   "Passive",
   "Resistor"
  ],
- "description": "Cluster of 6 surface-mount passive resistors utilizing STACKPOLE footprints from the celestial-altium-library source.",
+ "description": "6 passive resistor parts using STACKPOLE footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Match the target footprint among STACKPOLE CSM2512, CSR1210, CSR2010, CSR2512, CSRN2010, or CSRN2512.",
-  "Select when an SMD passive resistor in the STACKPOLE package family is required.",
-  "Verify part specifications and geometry since all entries are tier C quality."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a STACKPOLE land pattern is intended."
  ],
  "avoid_when": [
-  "A through-hole or non-SMD mounting configuration is required.",
-  "The design requires footprints outside the STACKPOLE package family.",
-  "Unreviewed tier C quality parts are unacceptable for the design."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than STACKPOLE."
  ],
  "keywords": [
+  "stackpole",
   "passive",
   "resistor",
-  "stackpole",
-  "smd",
-  "surface mount",
-  "csm2512",
-  "csr1210",
-  "csr2010",
-  "csr2512",
-  "csrn2010",
-  "csrn2512",
-  "celestial-altium-library",
   "surface",
   "mount",
   "pad",
   "mm",
   "pitch",
-  "pins"
+  "pins",
+  "csm2512",
+  "csr1210",
+  "csr2010",
+  "csr2512",
+  "csrn2010",
+  "csrn2512"
  ],
  "facts": {
   "package_family": "STACKPOLE",
@@ -61,7 +58,7 @@
   "tier_counts": {
    "C": 6
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
@@ -72,6 +69,6 @@
   "celestial-altium-library/STACKPOLE CSRN2010/STACKPOLE_CSRN2010",
   "celestial-altium-library/STACKPOLE CSRN2512/STACKPOLE_CSRN2512"
  ],
- "embedding_text": "passive-resistor.stackpole | Passive Resistor | Cluster of 6 surface-mount passive resistors utilizing STACKPOLE footprints from the celestial-altium-library source. | passive resistor stackpole smd surface mount csm2512 csr1210 csr2010 csr2512 csrn2010 csrn2512 celestial-altium-library surface mount pad mm pitch pins | STACKPOLE | ",
+ "embedding_text": "passive-resistor.stackpole | Passive Resistor | 6 passive resistor parts using STACKPOLE footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | stackpole passive resistor surface mount pad mm pitch pins csm2512 csr1210 csr2010 csr2512 csrn2010 csrn2512 | STACKPOLE | ",
  "class": "passive.resistor"
 }

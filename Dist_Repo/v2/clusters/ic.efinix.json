@@ -5,36 +5,29 @@
  "category_path": [
   "IC"
  ],
- "description": "Integrated circuit cluster containing 2 surface-mount parts using Efinix WLCSP-64 and WLCSP-80 package footprints.",
+ "description": "2 ic parts using Efinix footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when needing surface-mount ICs in Efinix WLCSP-64 or WLCSP-80 footprints.",
-  "Verify compatibility with 0.4mm pitch ball layout patterns.",
-  "Confirm suitability of quality tier C dist-legacy parts."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a Efinix land pattern is intended."
  ],
  "avoid_when": [
-  "Through-hole mounting is required for the application.",
-  "The PCB design requires a package footprint other than Efinix WLCSP-64 or WLCSP-80.",
-  "Higher quality tiers or planner-visible parts are needed."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than Efinix."
  ],
  "keywords": [
-  "ic",
-  "efinix",
-  "smd",
   "wlcsp",
-  "wlcsp-64",
-  "wlcsp-80",
-  "0.4mm",
-  "layout8x8",
-  "layout10x8",
-  "dist-legacy",
-  "tier c",
-  "surface mount",
+  "efinix",
   "4mm",
   "p0",
   "5353x3",
   "3753mm",
   "4567x3",
   "5569mm",
+  "layout8x8",
+  "layout10x8",
+  "ic",
   "pad",
   "pitch",
   "ball",
@@ -61,13 +54,13 @@
   "tier_counts": {
    "C": 2
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
   "dist-legacy/Efinix_WLCSP-64_3.5353x3.3753mm_Layout8x8_P0.4mm",
   "dist-legacy/Efinix_WLCSP-80_4.4567x3.5569mm_Layout10x8_P0.4mm"
  ],
- "embedding_text": "ic.efinix | IC | Integrated circuit cluster containing 2 surface-mount parts using Efinix WLCSP-64 and WLCSP-80 package footprints. | ic efinix smd wlcsp wlcsp-64 wlcsp-80 0.4mm layout8x8 layout10x8 dist-legacy tier c surface mount 4mm p0 5353x3 3753mm 4567x3 5569mm pad pitch ball page surface | Efinix | ",
+ "embedding_text": "ic.efinix | IC | 2 ic parts using Efinix footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | wlcsp efinix 4mm p0 5353x3 3753mm 4567x3 5569mm layout8x8 layout10x8 ic pad pitch ball page surface | Efinix | ",
  "class": "ic"
 }

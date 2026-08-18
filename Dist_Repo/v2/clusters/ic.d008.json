@@ -5,28 +5,20 @@
  "category_path": [
   "IC"
  ],
- "description": "Integrated circuit component cluster containing 3 tier C parts using D008 package family footprints including D008_L, D008_M, and D008_N variants.",
+ "description": "3 ic parts using D008 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Verify compatibility with D008_L, D008_M, or D008_N footprint variants.",
-  "Select when requiring an IC component in the D008 package family.",
-  "Review part specifications as all cluster entries are classified under tier C."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a D008 land pattern is intended."
  ],
  "avoid_when": [
-  "The board layout requires a package family other than D008.",
-  "Parts with quality tiers higher than tier C are required.",
-  "Land patterns other than D008_L, D008_M, or D008_N are needed."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than D008."
  ],
  "keywords": [
-  "ic",
   "d008",
-  "d008_l",
-  "d008_m",
-  "d008_n",
-  "package family d008",
-  "tier c",
-  "integrated circuit",
-  "dist-legacy",
-  "d008 footprint",
+  "ic",
   "pad",
   "mm",
   "pitch",
@@ -53,7 +45,7 @@
   "tier_counts": {
    "C": 3
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
@@ -61,6 +53,6 @@
   "dist-legacy/D008_M",
   "dist-legacy/D008_N"
  ],
- "embedding_text": "ic.d008 | IC | Integrated circuit component cluster containing 3 tier C parts using D008 package family footprints including D008_L, D008_M, and D008_N variants. | ic d008 d008_l d008_m d008_n package family d008 tier c integrated circuit dist-legacy d008 footprint pad mm pitch pins | D008 | ",
+ "embedding_text": "ic.d008 | IC | 3 ic parts using D008 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | d008 ic pad mm pitch pins | D008 | ",
  "class": "ic"
 }

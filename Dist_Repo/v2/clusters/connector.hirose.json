@@ -5,44 +5,34 @@
  "category_path": [
   "Connector"
  ],
- "description": "Cluster of 482 connector parts sharing Hirose land patterns (e.g. DF40, FX10A, FH26 series), spanning SMD, through-hole and unknown mount types; select by exact footprint and quality tier.",
+ "description": "482 connector parts using Hirose footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Match the exact Hirose footprint (e.g. DF40B/DF40C/FX10A/FH26 variant) to the intended land pattern before committing.",
-  "Prefer tier A entries; most parts fall in tier B or C with only generated (unreviewed) metadata.",
-  "Confirm mount type (SMD vs through-hole) since the cluster mixes both, plus some unknown.",
-  "Check part source (kicad-symbols, dist-legacy, celestial-altium-library) for trust level."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a Hirose land pattern is intended."
  ],
  "avoid_when": [
-  "The design requires a non-Hirose footprint or connector family.",
-  "Electrical ratings, pinout, or lifecycle data are needed but not present on the candidate part.",
-  "A verified/reviewed part is required — review_status for this cluster is 'generated', not human-reviewed.",
-  "Mount type in the target design doesn't match the part's listed mount (smd/through_hole/unknown)."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than Hirose."
  ],
  "keywords": [
   "hirose",
   "connector",
-  "df40",
-  "df40b",
-  "df40c",
-  "fx10a",
-  "fh26",
-  "fh12",
-  "0.4mm pitch",
-  "0.5mm pitch",
-  "0.3mm pitch",
-  "smd connector",
-  "through hole connector",
-  "board to board",
-  "mounting pin",
-  "2 row connector",
-  "kicad symbol",
-  "altium library",
   "p0",
   "row",
   "1mp",
   "pin",
   "board",
-  "horizontal"
+  "horizontal",
+  "4mm",
+  "conn",
+  "4v",
+  "pins",
+  "en",
+  "generic",
+  "mountingpin",
+  "pitch"
  ],
  "facts": {
   "package_family": "Hirose",
@@ -80,7 +70,7 @@
    "B": 195,
    "C": 265
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -608,6 +598,6 @@
   "dist-legacy/Hirose_FX8-90S-SV_2x45_P0.6mm",
   "celestial-altium-library/Hirose MDF7-5S-2.54DSA/Hirose_MDF7-5S-2.54DSA"
  ],
- "embedding_text": "connector.hirose | Connector | Cluster of 482 connector parts sharing Hirose land patterns (e.g. DF40, FX10A, FH26 series), spanning SMD, through-hole and unknown mount types; select by exact footprint and quality tier. | hirose connector df40 df40b df40c fx10a fh26 fh12 0.4mm pitch 0.5mm pitch 0.3mm pitch smd connector through hole connector board to board mounting pin 2 row connector kicad symbol altium library p0 row 1mp pin board horizontal | Hirose | ",
+ "embedding_text": "connector.hirose | Connector | 482 connector parts using Hirose footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | hirose connector p0 row 1mp pin board horizontal 4mm conn 4v pins en generic mountingpin pitch | Hirose | ",
  "class": "connector"
 }

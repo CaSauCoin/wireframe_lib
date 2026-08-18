@@ -6,42 +6,34 @@
   "Discrete",
   "FET"
  ],
- "description": "A collection of 20 Tier A surface-mount 30V discrete FET components using DirectFET package variants including DirectFET_MX, DirectFET_SQ, DirectFET_MT, DirectFET_MP, and DirectFET_ST.",
+ "description": "20 discrete fet parts for 30V using DirectFET footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Match the required DirectFET footprint package variant such as MX, SQ, MT, MP, or ST.",
-  "Choose when designing for a surface-mount 30V discrete FET component.",
-  "Select specific part numbers such as IRF6617, IRF6618, IRF6621, IRF6631, or IRF6635 based on package footprint."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a DirectFET land pattern is intended."
  ],
  "avoid_when": [
-  "The circuit design requires a voltage rating other than 30V.",
-  "The PCB layout requires package footprints other than DirectFET.",
-  "Through-hole mounting or non-SMD components are required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than DirectFET."
  ],
  "keywords": [
-  "discrete fet",
   "directfet",
-  "30v",
-  "smd",
-  "directfet_mx",
-  "directfet_sq",
-  "directfet_mt",
-  "directfet_mp",
-  "directfet_st",
-  "transistor_fet",
-  "irf6617",
-  "irf6618",
-  "irf6621",
-  "irf6631",
-  "irf6635",
   "mosfet",
   "fet",
+  "30v",
   "channel",
   "mx",
   "transistor",
   "id",
   "vds",
   "rds",
-  "infineon"
+  "infineon",
+  "discrete",
+  "sq",
+  "mt",
+  "mp",
+  "5mohm"
  ],
  "facts": {
   "package_family": "DirectFET",
@@ -68,7 +60,7 @@
   "tier_counts": {
    "A": 20
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -134,6 +126,6 @@
   "kicad-symbols/Transistor_FET/IRF8327S",
   "kicad-symbols/Transistor_FET/IRF9383M"
  ],
- "embedding_text": "discrete-fet.directfet.30v | Discrete FET | A collection of 20 Tier A surface-mount 30V discrete FET components using DirectFET package variants including DirectFET_MX, DirectFET_SQ, DirectFET_MT, DirectFET_MP, and DirectFET_ST. | discrete fet directfet 30v smd directfet_mx directfet_sq directfet_mt directfet_mp directfet_st transistor_fet irf6617 irf6618 irf6621 irf6631 irf6635 mosfet fet channel mx transistor id vds rds infineon | DirectFET | 30V",
+ "embedding_text": "discrete-fet.directfet.30v | Discrete FET | 20 discrete fet parts for 30V using DirectFET footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | directfet mosfet fet 30v channel mx transistor id vds rds infineon discrete sq mt mp 5mohm | DirectFET | 30V",
  "class": "discrete.fet"
 }

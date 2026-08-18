@@ -6,44 +6,34 @@
   "Discrete",
   "Diode"
  ],
- "description": "Cluster of 90 discrete diode parts in SOT-family footprints (SOT-363, SOT-223, SOT-353, SOT-143, SOT-323, SOT-666, SOT-886, SOT-416, SOT-665, and variants), spanning SMD and through-hole mounts; select by exact footprint and tier.",
+ "description": "90 discrete diode parts using SOT footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Match the exact SOT footprint variant (e.g. SOT-363_SC-70-6 vs SOT-323_SC-70) to the intended land pattern",
-  "Prefer tier A parts (59 of 90) which have the highest confidence score",
-  "Cross-check source library (kicad-symbols, Alternate-KiCad-Library, JLCPCB-Kicad-Library, etc.) for trust level",
-  "Confirm mount type (smd or through_hole) matches the board assembly process"
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SOT land pattern is intended."
  ],
  "avoid_when": [
-  "The design requires a package outside the SOT family",
-  "Only tier C or unreviewed (review_status: generated) entries match the needed footprint",
-  "The exact footprint variant is not confirmed against the datasheet land pattern",
-  "Electrical ratings are not specified by the chosen part"
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SOT."
  ],
  "keywords": [
   "sot",
   "diode",
-  "discrete diode",
-  "sc-70",
-  "sot-363",
-  "sot-223",
-  "sot-353",
-  "sot-143",
-  "sot-323",
-  "sot-666",
-  "sot-886",
-  "sot-416",
-  "sot-665",
-  "smd diode",
-  "through hole diode",
-  "kicad diode",
-  "diode footprint",
-  "small outline transistor package",
   "sc",
   "discrete",
   "dual",
   "to",
   "smd",
-  "common"
+  "common",
+  "array",
+  "schottky",
+  "triac",
+  "akl",
+  "alternate",
+  "kicad",
+  "library",
+  "independent"
  ],
  "facts": {
   "package_family": "SOT",
@@ -83,7 +73,7 @@
    "B": 17,
    "C": 14
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -219,6 +209,6 @@
   "dist-legacy/SOT-886",
   "dist-legacy/SOT-227"
  ],
- "embedding_text": "discrete-diode.sot | Discrete Diode | Cluster of 90 discrete diode parts in SOT-family footprints (SOT-363, SOT-223, SOT-353, SOT-143, SOT-323, SOT-666, SOT-886, SOT-416, SOT-665, and variants), spanning SMD and through-hole mounts; select by exact footprint and tier. | sot diode discrete diode sc-70 sot-363 sot-223 sot-353 sot-143 sot-323 sot-666 sot-886 sot-416 sot-665 smd diode through hole diode kicad diode diode footprint small outline transistor package sc discrete dual to smd common | SOT | ",
+ "embedding_text": "discrete-diode.sot | Discrete Diode | 90 discrete diode parts using SOT footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | sot diode sc discrete dual to smd common array schottky triac akl alternate kicad library independent | SOT | ",
  "class": "discrete.diode"
 }

@@ -7,36 +7,30 @@
   "Analog",
   "Amplifier"
  ],
- "description": "A cluster of 4 surface-mount analog amplifier ICs rated for 50V using SOT-353_SC-70-5 and SOT-363_SC-70-6 footprints.",
+ "description": "4 ic analog amplifier parts for 50V using SOT footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select between SOT-353_SC-70-5 and SOT-363_SC-70-6 footprint options.",
-  "Verify target application compatibility with 50V rated SMD analog amplifiers.",
-  "Evaluate specific part entries such as INA280A2xDCK, INA290A2xDCK, NCS213, and NCV213."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SOT land pattern is intended."
  ],
  "avoid_when": [
-  "The circuit requires a package family other than SOT.",
-  "The required layout uses footprints other than SOT-353_SC-70-5 or SOT-363_SC-70-6.",
-  "Through-hole or non-SMD mounting is required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SOT."
  ],
  "keywords": [
-  "ic",
-  "analog",
-  "amplifier",
-  "50v",
   "sot",
-  "smd",
-  "sot-353_sc-70-5",
-  "sot-363_sc-70-6",
-  "ina280a2xdck",
-  "ina290a2xdck",
-  "ncs213",
-  "ncv213",
   "sc",
+  "amplifier",
   "current",
   "to",
   "monitor",
   "shunt",
+  "50v",
   "gain",
+  "smd",
+  "ic",
+  "analog",
   "sense",
   "common",
   "mode",
@@ -64,7 +58,7 @@
   "tier_counts": {
    "A": 4
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -106,6 +100,6 @@
   "kicad-symbols/Amplifier_Current/NCS213",
   "kicad-symbols/Amplifier_Current/NCV213"
  ],
- "embedding_text": "ic-analog-amplifier.sot.50v | IC Analog Amplifier | A cluster of 4 surface-mount analog amplifier ICs rated for 50V using SOT-353_SC-70-5 and SOT-363_SC-70-6 footprints. | ic analog amplifier 50v sot smd sot-353_sc-70-5 sot-363_sc-70-6 ina280a2xdck ina290a2xdck ncs213 ncv213 sc current to monitor shunt gain sense common mode mhz | SOT | 50V",
+ "embedding_text": "ic-analog-amplifier.sot.50v | IC Analog Amplifier | 4 ic analog amplifier parts for 50V using SOT footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | sot sc amplifier current to monitor shunt 50v gain smd ic analog sense common mode mhz | SOT | 50V",
  "class": "ic.analog.amplifier"
 }

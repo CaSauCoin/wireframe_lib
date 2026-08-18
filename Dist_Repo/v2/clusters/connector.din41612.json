@@ -5,44 +5,34 @@
  "category_path": [
   "Connector"
  ],
- "description": "Cluster of 33 DIN41612 THT connector symbols spanning multiple row/pin configurations and vertical male/female footprints for backplane and card-edge style connections.",
+ "description": "33 connector parts using DIN41612 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Match the exact footprint (e.g. R 1x32, R 3x32, B3 2x5, D 2x8, Q 2x32, Q3 2x10, M-invers) to the intended PCB land pattern",
-  "Confirm male vs. female orientation matches the mating connector",
-  "Verify row/pin count (1x32, 2x5, 2x8, 2x10, 2x32, 3x32) against the required signal count",
-  "All entries are tier B and generated; review symbol-footprint pairing before layout"
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a DIN41612 land pattern is intended."
  ],
  "avoid_when": [
-  "A non-DIN41612 connector package or land pattern is required",
-  "SMD or non-vertical mounting is needed",
-  "Electrical ratings (current, voltage) or manufacturer datasheet confirmation are required and not stated here",
-  "A specific row/pin arrangement other than those listed footprints is needed"
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than DIN41612."
  ],
  "keywords": [
   "connector",
   "din41612",
-  "din 41612",
   "din",
-  "iec 60603",
-  "backplane connector",
-  "eurocard connector",
   "vertical",
-  "through hole",
   "tht",
-  "male connector",
-  "female connector",
-  "2x5",
-  "2x8",
-  "2x10",
-  "2x32",
-  "1x32",
-  "3x32",
-  "multi-row header",
-  "kicad symbol",
   "iec",
   "row",
   "script",
-  "generated"
+  "generated",
+  "kicad",
+  "library",
+  "utils",
+  "schlib",
+  "autogen",
+  "double",
+  "male"
  ],
  "facts": {
   "package_family": "DIN41612",
@@ -70,7 +60,7 @@
   "tier_counts": {
    "B": 33
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -149,6 +139,6 @@
   "kicad-symbols/Connector/DIN-7_CenterPin7",
   "kicad-symbols/Connector/DIN-8"
  ],
- "embedding_text": "connector.din41612 | Connector | Cluster of 33 DIN41612 THT connector symbols spanning multiple row/pin configurations and vertical male/female footprints for backplane and card-edge style connections. | connector din41612 din 41612 din iec 60603 backplane connector eurocard connector vertical through hole tht male connector female connector 2x5 2x8 2x10 2x32 1x32 3x32 multi-row header kicad symbol iec row script generated | DIN41612 | ",
+ "embedding_text": "connector.din41612 | Connector | 33 connector parts using DIN41612 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | connector din41612 din vertical tht iec row script generated kicad library utils schlib autogen double male | DIN41612 | ",
  "class": "connector"
 }

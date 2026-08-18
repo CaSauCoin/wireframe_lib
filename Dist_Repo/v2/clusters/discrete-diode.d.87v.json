@@ -6,31 +6,24 @@
   "Discrete",
   "Diode"
  ],
- "description": "A cluster of 2 tier-A discrete diode parts rated for 87V, available in surface-mount (SOD-123) and through-hole (DO-35) package options from Alternate-KiCad-Library.",
+ "description": "2 discrete diode parts for 87V using D footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select based on mounting type: SMD (MMSZ5269 in SOD-123) or through-hole (1N5269B in DO-35).",
-  "Use when an 87V discrete diode is required from Alternate-KiCad-Library.",
-  "Verify compatibility with footprints D_SOD-123 or D_DO-35_SOD27_P7.62mm_Horizontal_Zener."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a D land pattern is intended."
  ],
  "avoid_when": [
-  "The design requires a diode voltage rating other than 87V.",
-  "The PCB layout specifies packages other than SOD-123 or DO-35.",
-  "Parts from sources other than Alternate-KiCad-Library are required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than D."
  ],
  "keywords": [
-  "discrete diode",
-  "87v",
-  "zener",
-  "smd",
-  "through hole",
-  "sod-123",
-  "do-35",
-  "1n5269b",
-  "mmsz5269",
-  "alternate-kicad-library",
   "diode",
+  "zener",
+  "87v",
   "do",
   "sod",
+  "1n5269b",
   "akl",
   "500mw",
   "alternate",
@@ -65,7 +58,7 @@
   "tier_counts": {
    "A": 2
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -89,6 +82,6 @@
   "Alternate-KiCad-Library/Diode_Zener_AKL/1N5269B",
   "Alternate-KiCad-Library/Diode_Zener_AKL/MMSZ5269"
  ],
- "embedding_text": "discrete-diode.d.87v | Discrete Diode | A cluster of 2 tier-A discrete diode parts rated for 87V, available in surface-mount (SOD-123) and through-hole (DO-35) package options from Alternate-KiCad-Library. | discrete diode 87v zener smd through hole sod-123 do-35 1n5269b mmsz5269 alternate-kicad-library diode do sod akl 500mw alternate kicad library sod27 62mm horizontal discrete p7 | D | 87V",
+ "embedding_text": "discrete-diode.d.87v | Discrete Diode | 2 discrete diode parts for 87V using D footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | diode zener 87v do sod 1n5269b akl 500mw alternate kicad library sod27 62mm horizontal discrete p7 | D | 87V",
  "class": "discrete.diode"
 }

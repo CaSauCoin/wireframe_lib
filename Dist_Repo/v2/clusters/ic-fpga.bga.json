@@ -6,42 +6,34 @@
   "IC",
   "FPGA"
  ],
- "description": "A cluster of 17 surface-mount FPGA IC components using BGA packages with ball counts from 68 to 484.",
+ "description": "17 ic fpga parts using BGA footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Match the required ball count, pitch, and package dimensions to available BGA footprints.",
-  "Prefer tier A rated parts with verified KiCad symbol sources.",
-  "Ensure surface-mount (SMD) assembly capabilities for BGA packages."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a BGA land pattern is intended."
  ],
  "avoid_when": [
-  "The design requires through-hole or non-SMD mounting.",
-  "A package family other than BGA is needed.",
-  "Footprint specifications or ball pitches outside the provided BGA variants are required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than BGA."
  ],
  "keywords": [
-  "ic",
-  "fpga",
-  "ic fpga",
   "bga",
-  "smd",
-  "surface mount",
-  "bga-256",
-  "bga-324",
-  "bga-100",
-  "bga-484",
-  "epm1270",
-  "epm2210",
-  "epm240",
-  "kicad-symbols",
   "altera",
   "cpld",
   "max2",
+  "fpga",
   "0mm",
   "mbga",
+  "ic",
   "with",
   "le",
   "ball0",
   "5mm",
-  "pad0"
+  "pad0",
+  "nsmd",
+  "p0",
+  "3mm"
  ],
  "facts": {
   "package_family": "BGA",
@@ -71,7 +63,7 @@
    "A": 16,
    "B": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -134,6 +126,6 @@
   "kicad-symbols/FPGA_Microsemi/M2GL090T-FG484",
   "kicad-symbols/FPGA_CologneChip_GateMate/CCGM1A1"
  ],
- "embedding_text": "ic-fpga.bga | IC FPGA | A cluster of 17 surface-mount FPGA IC components using BGA packages with ball counts from 68 to 484. | ic fpga ic fpga bga smd surface mount bga-256 bga-324 bga-100 bga-484 epm1270 epm2210 epm240 kicad-symbols altera cpld max2 0mm mbga with le ball0 5mm pad0 | BGA | ",
+ "embedding_text": "ic-fpga.bga | IC FPGA | 17 ic fpga parts using BGA footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | bga altera cpld max2 fpga 0mm mbga ic with le ball0 5mm pad0 nsmd p0 3mm | BGA | ",
  "class": "ic.fpga"
 }

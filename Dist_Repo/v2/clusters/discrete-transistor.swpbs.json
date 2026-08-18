@@ -6,30 +6,24 @@
   "Discrete",
   "Transistor"
  ],
- "description": "A cluster of 2 surface-mount discrete transistor parts in the SWPBS package family, featuring SWPBS_SPDT_R_EVPAE and SWPBS_SPDT_R_SKRTLA footprints.",
+ "description": "2 discrete transistor parts using SWPBS footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when requiring surface-mount discrete transistors in the SWPBS package family.",
-  "Verify compatibility with SWPBS_SPDT_R_EVPAE or SWPBS_SPDT_R_SKRTLA footprint variants.",
-  "Review part details considering the tier C quality level."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SWPBS land pattern is intended."
  ],
  "avoid_when": [
-  "The board layout requires a package family other than SWPBS.",
-  "Surface-mount (SMD) components are not used.",
-  "Tier C quality level does not satisfy project requirements."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SWPBS."
  ],
  "keywords": [
-  "discrete",
-  "transistor",
   "swpbs",
-  "smd",
-  "surface mount",
-  "swpbs_spdt_r_evpae",
-  "swpbs_spdt_r_skrtla",
-  "chilaboard-altium-library",
   "spdt",
   "evpae",
   "skrtla",
-  "discrete transistor",
+  "discrete",
+  "transistor",
   "surface",
   "mount",
   "pad",
@@ -57,13 +51,13 @@
   "tier_counts": {
    "C": 2
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
   "chilaboard-altium-library/SWPBS_SPDT_R_EVPAE/SWPBS_SPDT_R_EVPAE",
   "chilaboard-altium-library/SWPBS_SPDT_R_SKRTLA/SWPBS_SPDT_R_SKRTLA"
  ],
- "embedding_text": "discrete-transistor.swpbs | Discrete Transistor | A cluster of 2 surface-mount discrete transistor parts in the SWPBS package family, featuring SWPBS_SPDT_R_EVPAE and SWPBS_SPDT_R_SKRTLA footprints. | discrete transistor swpbs smd surface mount swpbs_spdt_r_evpae swpbs_spdt_r_skrtla chilaboard-altium-library spdt evpae skrtla discrete transistor surface mount pad mm pitch pins | SWPBS | ",
+ "embedding_text": "discrete-transistor.swpbs | Discrete Transistor | 2 discrete transistor parts using SWPBS footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | swpbs spdt evpae skrtla discrete transistor surface mount pad mm pitch pins | SWPBS | ",
  "class": "discrete.transistor"
 }

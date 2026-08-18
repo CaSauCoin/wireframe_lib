@@ -6,30 +6,21 @@
   "Discrete",
   "Diode"
  ],
- "description": "Discrete diode cluster containing 1 tier-C part utilizing the HED2A footprint family and legacy distribution data.",
+ "description": "1 discrete diode parts using HED2A footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Use when a discrete diode requiring an HED2A footprint is needed.",
-  "Verify electrical ratings and pin-to-pad mappings against specific component data.",
-  "Confirm tier C quality status and legacy distribution source details."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a HED2A land pattern is intended."
  ],
  "avoid_when": [
-  "The PCB design requires a footprint other than HED2A.",
-  "High-tier catalog components (Tier A or B) or planner-visible parts are required.",
-  "Specific mounting methods or electrical limits must be pre-validated at the cluster level."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than HED2A."
  ],
  "keywords": [
   "hed2a",
   "discrete",
   "diode",
-  "discrete diode",
-  "hed2a footprint",
-  "hed2a package",
-  "discrete.diode",
-  "tier c",
-  "dist-legacy",
-  "package family",
-  "diode component",
-  "land pattern",
   "pad",
   "mm",
   "pitch",
@@ -54,12 +45,12 @@
   "tier_counts": {
    "C": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
   "dist-legacy/HED2A"
  ],
- "embedding_text": "discrete-diode.hed2a | Discrete Diode | Discrete diode cluster containing 1 tier-C part utilizing the HED2A footprint family and legacy distribution data. | hed2a discrete diode discrete diode hed2a footprint hed2a package discrete.diode tier c dist-legacy package family diode component land pattern pad mm pitch pins | HED2A | ",
+ "embedding_text": "discrete-diode.hed2a | Discrete Diode | 1 discrete diode parts using HED2A footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | hed2a discrete diode pad mm pitch pins | HED2A | ",
  "class": "discrete.diode"
 }

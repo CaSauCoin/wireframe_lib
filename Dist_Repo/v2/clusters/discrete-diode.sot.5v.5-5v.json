@@ -6,44 +6,34 @@
   "Discrete",
   "Diode"
  ],
- "description": "13 SMD discrete diode parts tagged 5V/5.5V in SOT packages (SOT-143, SOT-363/SC-70-6, SOT-563, SOT-353/SC-70-5, SOT-963, SOT-553, SOT-3, SOT-143-4), mostly from a TVS diode array library.",
+ "description": "13 discrete diode parts for 5V, 5.5V using SOT footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Match the 5V or 5.5V facet to the required signal/line voltage",
-  "Match the exact SOT footprint variant to the intended PCB land pattern",
-  "Prefer tier A parts (11 of 13) over the 2 tier B parts",
-  "Check source library (10 Alternate-KiCad-Library vs 3 digikey-kicad-library) for trust level"
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SOT land pattern is intended."
  ],
  "avoid_when": [
-  "The needed footprint is not one of the listed SOT variants",
-  "Specific electrical limits or clamping behavior aren't confirmed on the chosen part",
-  "A non-SOT package is required for the board layout",
-  "Review status is only 'generated' and the pairing hasn't been verified"
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SOT."
  ],
  "keywords": [
   "diode",
-  "discrete diode",
   "sot",
-  "sot-143",
-  "sot-363",
-  "sc-70-6",
-  "sot-563",
-  "sot-353",
-  "sc-70-5",
-  "sot-963",
-  "sot-553",
-  "sot-3",
-  "sot-143-4",
   "5v",
-  "5.5v",
-  "smd",
-  "tvs array",
-  "alternate-kicad-library",
   "tvs",
   "array",
   "discrete",
   "akl",
   "alternate",
-  "kicad"
+  "kicad",
+  "library",
+  "sc",
+  "unidirectional",
+  "sp1001",
+  "diodes",
+  "protected",
+  "lines"
  ],
  "facts": {
   "package_family": "SOT",
@@ -76,7 +66,7 @@
    "A": 11,
    "B": 2
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -135,6 +125,6 @@
   "digikey-kicad-library/dk_TVS-Diodes/TPD2EUSB30DRTR",
   "digikey-kicad-library/dk_TVS-Diodes/SP0503BAHTG"
  ],
- "embedding_text": "discrete-diode.sot.5v.5-5v | Discrete Diode | 13 SMD discrete diode parts tagged 5V/5.5V in SOT packages (SOT-143, SOT-363/SC-70-6, SOT-563, SOT-353/SC-70-5, SOT-963, SOT-553, SOT-3, SOT-143-4), mostly from a TVS diode array library. | diode discrete diode sot sot-143 sot-363 sc-70-6 sot-563 sot-353 sc-70-5 sot-963 sot-553 sot-3 sot-143-4 5v 5.5v smd tvs array alternate-kicad-library tvs array discrete akl alternate kicad | SOT | 5V 5.5V",
+ "embedding_text": "discrete-diode.sot.5v.5-5v | Discrete Diode | 13 discrete diode parts for 5V, 5.5V using SOT footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | diode sot 5v tvs array discrete akl alternate kicad library sc unidirectional sp1001 diodes protected lines | SOT | 5V 5.5V",
  "class": "discrete.diode"
 }

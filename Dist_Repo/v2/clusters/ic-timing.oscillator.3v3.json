@@ -6,34 +6,26 @@
   "IC",
   "Timing"
  ],
- "description": "Surface-mount 3.3V timing oscillator IC cluster comprising 7 parts across tier A and B quality levels, available in SMD oscillator footprints from Abracon and IDT.",
+ "description": "7 ic timing parts for 3.3V using Oscillator footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select based on required SMD footprint package size such as 2.5x2.0mm, 3.2x2.5mm, 5.0x3.2mm, 7.0x5.0mm, or 7.0x5.1mm.",
-  "Prefer tier A parts such as ASV-xxxMHz, XUX53, or XUY53 over tier B parts.",
-  "Verify compatibility with 3.3V supply facet and SMD mounting."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a Oscillator land pattern is intended."
  ],
  "avoid_when": [
-  "Operating voltage requirement is not 3.3V.",
-  "Through-hole or non-SMD mounting is required.",
-  "The layout requires footprint packages other than the supported Abracon and IDT oscillator land patterns."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than Oscillator."
  ],
  "keywords": [
-  "ic",
-  "timing",
   "oscillator",
-  "3.3v",
   "smd",
-  "abracon",
-  "idt",
-  "asv-xxxmhz",
-  "xux53",
-  "xuy53",
-  "asdmb-xxxmhz",
-  "ase-xxxmhz",
-  "ic.timing",
   "3v",
   "crystal",
+  "ic",
+  "timing",
   "clock",
+  "abracon",
   "smt",
   "low",
   "phase",
@@ -69,7 +61,7 @@
    "A": 3,
    "B": 4
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -122,6 +114,6 @@
   "kicad-symbols/Oscillator/XUX73",
   "kicad-symbols/Oscillator/XUY73"
  ],
- "embedding_text": "ic-timing.oscillator.3v3 | IC Timing | Surface-mount 3.3V timing oscillator IC cluster comprising 7 parts across tier A and B quality levels, available in SMD oscillator footprints from Abracon and IDT. | ic timing oscillator 3.3v smd abracon idt asv-xxxmhz xux53 xuy53 asdmb-xxxmhz ase-xxxmhz ic.timing 3v crystal clock smt low phase noise quartz based pll mhz | Oscillator | 3.3V",
+ "embedding_text": "ic-timing.oscillator.3v3 | IC Timing | 7 ic timing parts for 3.3V using Oscillator footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | oscillator smd 3v crystal ic timing clock abracon smt low phase noise quartz based pll mhz | Oscillator | 3.3V",
  "class": "ic.timing"
 }

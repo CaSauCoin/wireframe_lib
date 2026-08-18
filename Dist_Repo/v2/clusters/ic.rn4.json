@@ -5,26 +5,20 @@
  "category_path": [
   "IC"
  ],
- "description": "This IC cluster contains 2 quality tier C parts using the RN4 footprint.",
+ "description": "2 ic parts using RN4 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Verify part specifications and footprint compatibility with RN4.",
-  "Check part details as all entries in this cluster are quality tier C.",
-  "Confirm required pinouts and electrical parameters for the application."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a RN4 land pattern is intended."
  ],
  "avoid_when": [
-  "The design requires a package family or land pattern other than RN4.",
-  "Only verified tier A or planner-visible parts are acceptable.",
-  "Electrical specifications or footprint dimensions are not provided."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than RN4."
  ],
  "keywords": [
   "rn4",
   "ic",
-  "rn4 footprint",
-  "package family rn4",
-  "integrated circuit",
-  "tier c",
-  "dist-legacy",
-  "unknown mount",
   "duplicate",
   "pad",
   "mm",
@@ -50,13 +44,13 @@
   "tier_counts": {
    "C": 2
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
   "dist-legacy/RN4 - duplicate",
   "dist-legacy/RN4"
  ],
- "embedding_text": "ic.rn4 | IC | This IC cluster contains 2 quality tier C parts using the RN4 footprint. | rn4 ic rn4 footprint package family rn4 integrated circuit tier c dist-legacy unknown mount duplicate pad mm pitch pins | RN4 | ",
+ "embedding_text": "ic.rn4 | IC | 2 ic parts using RN4 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | rn4 ic duplicate pad mm pitch pins | RN4 | ",
  "class": "ic"
 }

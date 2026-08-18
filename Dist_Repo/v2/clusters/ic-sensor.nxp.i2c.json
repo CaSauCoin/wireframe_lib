@@ -6,42 +6,34 @@
   "IC",
   "Sensor"
  ],
- "description": "NXP I2C sensor IC cluster featuring SMD parts in LGA-8 package footprints such as MPL3115A2.",
+ "description": "1 ic sensor parts for I2C using NXP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Choosing NXP sensor ICs using the I2C communication interface.",
-  "Targeting SMD assembly with NXP_LGA-8_3x5mm_P1.25mm_H1.1mm footprint.",
-  "Selecting Tier B parts sourced from KiCad symbol library."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a NXP land pattern is intended."
  ],
  "avoid_when": [
-  "The design requires communication protocols other than I2C.",
-  "Surface mount (SMD) LGA-8 land pattern is not supported.",
-  "Non-NXP package footprints are required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than NXP."
  ],
  "keywords": [
-  "ic",
   "sensor",
-  "nxp",
-  "i2c",
-  "smd",
-  "lga-8",
-  "mpl3115a2",
-  "3x5mm",
-  "p1.25mm",
-  "h1.1mm",
-  "kicad-symbols",
-  "ic.sensor",
-  "pressure sensor",
-  "surface mount",
   "pressure",
   "lga",
+  "nxp",
+  "i2c",
   "altimetry",
+  "mpl3115a2",
   "precision",
   "with",
+  "3x5mm",
   "p1",
   "25mm",
   "h1",
   "1mm",
-  "nolead"
+  "nolead",
+  "ic"
  ],
  "facts": {
   "package_family": "NXP",
@@ -64,7 +56,7 @@
   "tier_counts": {
    "B": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -79,6 +71,6 @@
  "part_ids": [
   "kicad-symbols/Sensor_Pressure/MPL3115A2"
  ],
- "embedding_text": "ic-sensor.nxp.i2c | IC Sensor | NXP I2C sensor IC cluster featuring SMD parts in LGA-8 package footprints such as MPL3115A2. | ic sensor nxp i2c smd lga-8 mpl3115a2 3x5mm p1.25mm h1.1mm kicad-symbols ic.sensor pressure sensor surface mount pressure lga altimetry precision with p1 25mm h1 1mm nolead | NXP | I2C",
+ "embedding_text": "ic-sensor.nxp.i2c | IC Sensor | 1 ic sensor parts for I2C using NXP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | sensor pressure lga nxp i2c altimetry mpl3115a2 precision with 3x5mm p1 25mm h1 1mm nolead ic | NXP | I2C",
  "class": "ic.sensor"
 }

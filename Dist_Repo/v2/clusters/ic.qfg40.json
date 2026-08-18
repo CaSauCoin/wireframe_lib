@@ -5,33 +5,21 @@
  "category_path": [
   "IC"
  ],
- "description": "Integrated circuit cluster containing 8 surface-mount parts in the QFG40 package family across footprints including QFG40_128, QFG40_128T, QFG40_80T, and QFG40_64_S640.",
+ "description": "8 ic parts using QFG40 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when requiring surface-mount ICs in the QFG40 package family.",
-  "Match the required component footprint to QFG40_128, QFG40_128T, QFG40_80T, or QFG40_64_S640.",
-  "Verify part quality tier (Tier B or Tier C) according to design requirements."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a QFG40 land pattern is intended."
  ],
  "avoid_when": [
-  "The PCB design requires through-hole or non-SMD packages.",
-  "The required package family is not QFG40.",
-  "The footprint required is not listed among the QFG40 footprint variants."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than QFG40."
  ],
  "keywords": [
   "qfg40",
   "ic",
-  "smd",
-  "surface mount",
-  "qfg40_128t",
-  "qfg40_128",
-  "qfg40_80t",
-  "qfg40_64_s640",
-  "ax88180",
-  "pi3hdx414",
-  "v3s",
-  "d1s",
   "qfp128",
-  "qfp80",
-  "chilaboard",
   "processor",
   "128t",
   "qfp",
@@ -39,8 +27,12 @@
   "controller",
   "and",
   "s640",
+  "ax88180",
   "in",
-  "pin"
+  "pin",
+  "package",
+  "surface",
+  "mount"
  ],
  "facts": {
   "package_family": "QFG40",
@@ -65,7 +57,7 @@
    "B": 4,
    "C": 4
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -111,6 +103,6 @@
   "chilaboard-altium-library/QFG40_128T/QFG40_128T",
   "chilaboard-altium-library/QFG40_64_S640/QFG40_64_S640"
  ],
- "embedding_text": "ic.qfg40 | IC | Integrated circuit cluster containing 8 surface-mount parts in the QFG40 package family across footprints including QFG40_128, QFG40_128T, QFG40_80T, and QFG40_64_S640. | qfg40 ic smd surface mount qfg40_128t qfg40_128 qfg40_80t qfg40_64_s640 ax88180 pi3hdx414 v3s d1s qfp128 qfp80 chilaboard processor 128t qfp 80t controller and s640 in pin | QFG40 | ",
+ "embedding_text": "ic.qfg40 | IC | 8 ic parts using QFG40 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | qfg40 ic qfp128 processor 128t qfp 80t controller and s640 ax88180 in pin package surface mount | QFG40 | ",
  "class": "ic"
 }

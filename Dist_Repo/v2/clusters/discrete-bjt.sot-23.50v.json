@@ -6,42 +6,34 @@
   "Discrete",
   "BJT"
  ],
- "description": "Cluster of 118 tier-A discrete BJT parts (50V facet) with SOT-23 or SOT-23-6 SMD footprints, sourced from the Alternate-KiCad-Library pre-biased transistor series.",
+ "description": "118 discrete bjt parts for 50V using SOT-23 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "All 118 parts are tier A with score 100; differentiate by exact part number (e.g. BCR108, BCR116, BCR129).",
-  "Confirm whether the design needs the 3-pin SOT-23 or 6-pin SOT-23-6 footprint before selecting.",
-  "Every part in this cluster comes from the Alternate-KiCad-Library pre-biased transistor family."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SOT-23 land pattern is intended."
  ],
  "avoid_when": [
-  "The design requires a package other than SOT-23 or SOT-23-6.",
-  "A through-hole mount is needed; this cluster is SMD only.",
-  "A part outside the Alternate-KiCad-Library pre-biased series is required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SOT-23."
  ],
  "keywords": [
-  "sot-23",
-  "sot-23-6",
-  "bjt",
-  "discrete transistor",
-  "pre-biased",
-  "50v",
-  "smd",
-  "alternate-kicad-library",
-  "akl",
-  "bcr series",
-  "tier a",
-  "discrete.bjt",
-  "kicad library",
-  "generated cluster",
   "sot",
   "transistor",
   "pre",
   "biased",
+  "bjt",
+  "50v",
   "npn",
+  "akl",
   "alternate",
   "kicad",
   "library",
   "discrete",
-  "brt"
+  "brt",
+  "100ma",
+  "pnp",
+  "200mw"
  ],
  "facts": {
   "package_family": "SOT-23",
@@ -65,7 +57,7 @@
   "tier_counts": {
    "A": 118
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -229,6 +221,6 @@
   "Alternate-KiCad-Library/Transistor_BJT_AKL/ZXTN2031F",
   "Alternate-KiCad-Library/Transistor_BJT_AKL/ZXTN25050DFH"
  ],
- "embedding_text": "discrete-bjt.sot-23.50v | Discrete BJT | Cluster of 118 tier-A discrete BJT parts (50V facet) with SOT-23 or SOT-23-6 SMD footprints, sourced from the Alternate-KiCad-Library pre-biased transistor series. | sot-23 sot-23-6 bjt discrete transistor pre-biased 50v smd alternate-kicad-library akl bcr series tier a discrete.bjt kicad library generated cluster sot transistor pre biased npn alternate kicad library discrete brt | SOT-23 | 50V",
+ "embedding_text": "discrete-bjt.sot-23.50v | Discrete BJT | 118 discrete bjt parts for 50V using SOT-23 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | sot transistor pre biased bjt 50v npn akl alternate kicad library discrete brt 100ma pnp 200mw | SOT-23 | 50V",
  "class": "discrete.bjt"
 }

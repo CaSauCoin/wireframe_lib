@@ -5,42 +5,34 @@
  "category_path": [
   "IC"
  ],
- "description": "Integrated circuit cluster containing 25 surface-mount 3V LDO parts with SOT-23, TSOT-23-6, and SOT-23-3 variant footprints.",
+ "description": "25 ic parts for LDO, 3V using SOT-23 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select based on footprint requirements, including standard SOT-23, TSOT-23-6, or specific SOT-23-3 land patterns.",
-  "Prefer tier A parts when selecting from the 25 available entries.",
-  "Verify library source origin such as Alternate-KiCad-Library, kicad-symbols, or JLCPCB-Kicad-Library."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SOT-23 land pattern is intended."
  ],
  "avoid_when": [
-  "Through-hole assembly is required instead of surface-mount (SMD).",
-  "The design requires a package family other than SOT-23.",
-  "A voltage specification other than 3V or a non-LDO IC topology is required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SOT-23."
  ],
  "keywords": [
-  "ic",
-  "ldo",
-  "3v",
-  "sot-23",
-  "tsot-23-6",
-  "sot-23-3",
-  "smd",
-  "voltage regulator",
-  "reference voltage",
-  "alternate-kicad-library",
-  "kicad-symbols",
-  "jlcpcb-kicad-library",
-  "tier a",
   "sot",
   "voltage",
+  "3v",
   "regulator",
+  "ldo",
   "low",
   "dropout",
   "terminal",
+  "ic",
   "akl",
   "alternate",
   "kicad",
   "library",
-  "vreg"
+  "vreg",
+  "pmic",
+  "power"
  ],
  "facts": {
   "package_family": "SOT-23",
@@ -69,7 +61,7 @@
    "A": 24,
    "B": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -140,6 +132,6 @@
   "Alternate-KiCad-Library/Voltage_Regulator_AKL/MCP1703T-3002E-CB",
   "JLCPCB-Kicad-Library/2829400/LDO, 3V, 0.3A"
  ],
- "embedding_text": "ic.sot-23.ldo.3v | IC | Integrated circuit cluster containing 25 surface-mount 3V LDO parts with SOT-23, TSOT-23-6, and SOT-23-3 variant footprints. | ic ldo 3v sot-23 tsot-23-6 sot-23-3 smd voltage regulator reference voltage alternate-kicad-library kicad-symbols jlcpcb-kicad-library tier a sot voltage regulator low dropout terminal akl alternate kicad library vreg | SOT-23 | LDO 3V",
+ "embedding_text": "ic.sot-23.ldo.3v | IC | 25 ic parts for LDO, 3V using SOT-23 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | sot voltage 3v regulator ldo low dropout terminal ic akl alternate kicad library vreg pmic power | SOT-23 | LDO 3V",
  "class": "ic"
 }

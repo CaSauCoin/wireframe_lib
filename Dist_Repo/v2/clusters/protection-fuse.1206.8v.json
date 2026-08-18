@@ -6,29 +6,25 @@
   "Protection",
   "Fuse"
  ],
- "description": "Surface-mount 8V protection fuse parts in the 1206 package family using F1206 footprints.",
+ "description": "1 protection fuse parts for 8V using 1206 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Verify required current rating and electrical compatibility with 8V operation.",
-  "Confirm PCB land pattern matches the 1206 or F1206 surface-mount footprint.",
-  "Check part quality tier and source library details before finalizing layout."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a 1206 land pattern is intended."
  ],
  "avoid_when": [
-  "Circuit operating voltage exceeds the 8V rating.",
-  "Design requires a package size or footprint other than 1206 / F1206.",
-  "Through-hole mounting is needed rather than surface mount."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than 1206."
  ],
  "keywords": [
+  "pptc",
+  "8v",
   "protection",
   "fuse",
-  "8v",
-  "1206",
-  "f1206",
-  "smd",
-  "surface mount",
-  "pptc",
-  "circuit protection",
   "1000ma",
   "resettable",
+  "smd",
   "opl",
   "circuit",
   "ma",
@@ -36,6 +32,7 @@
   "mount",
   "in",
   "package",
+  "f1206",
   "polyfuse"
  ],
  "facts": {
@@ -59,7 +56,7 @@
   "tier_counts": {
    "B": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -74,6 +71,6 @@
  "part_ids": [
   "Seeed-OPL-Kicad-Library/OPL_Circuit_Protection/SMD-PPTC-1000MA-8V_1206_"
  ],
- "embedding_text": "protection-fuse.1206.8v | Protection Fuse | Surface-mount 8V protection fuse parts in the 1206 package family using F1206 footprints. | protection fuse 8v 1206 f1206 smd surface mount pptc circuit protection 1000ma resettable opl circuit ma surface mount in package polyfuse | 1206 | 8V",
+ "embedding_text": "protection-fuse.1206.8v | Protection Fuse | 1 protection fuse parts for 8V using 1206 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | pptc 8v protection fuse 1000ma resettable smd opl circuit ma surface mount in package f1206 polyfuse | 1206 | 8V",
  "class": "protection.fuse"
 }

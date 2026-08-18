@@ -7,36 +7,30 @@
   "Power",
   "Linear Regulator"
  ],
- "description": "Cluster of 7 surface-mount 2.6V low-dropout (LDO) linear regulator ICs in SOT-23-5 and TSOT-23-5 footprints from KiCad symbols.",
+ "description": "7 ic power linear regulator parts for LDO, 2.6V using SOT-23-5 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when requiring a 2.6V LDO linear regulator IC in SOT-23-5 or TSOT-23-5 footprint.",
-  "Choose between SOT-23-5 and TSOT-23-5 footprint variants based on specific PCB package requirements.",
-  "Verify individual part specifications and pinout mapping against datasheet before design integration."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SOT-23-5 land pattern is intended."
  ],
  "avoid_when": [
-  "A non-2.6V output voltage or non-LDO regulator topology is required.",
-  "The board design requires package types other than SOT-23-5 or TSOT-23-5.",
-  "Through-hole mounting is required instead of surface-mount (SMD)."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SOT-23-5."
  ],
  "keywords": [
-  "ic",
-  "power",
-  "linear regulator",
-  "ldo",
-  "2.6v",
-  "sot-23-5",
-  "tsot-23-5",
-  "smd",
-  "voltage regulator",
-  "kicad-symbols",
   "sot",
   "regulator",
   "6v",
   "linear",
+  "ldo",
   "low",
   "fixed",
   "dropout",
   "to",
+  "smd",
+  "ic",
+  "power",
   "150ma",
   "voltage",
   "output",
@@ -65,7 +59,7 @@
   "tier_counts": {
    "A": 7
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -118,6 +112,6 @@
   "kicad-symbols/Regulator_Linear/TC2015-2.6VxCTTR",
   "kicad-symbols/Regulator_Linear/TC2185-2.6VxCTTR"
  ],
- "embedding_text": "ic-power-ldo.sot-23-5.ldo.2-6v | IC Power Linear Regulator | Cluster of 7 surface-mount 2.6V low-dropout (LDO) linear regulator ICs in SOT-23-5 and TSOT-23-5 footprints from KiCad symbols. | ic power linear regulator ldo 2.6v sot-23-5 tsot-23-5 smd voltage regulator kicad-symbols sot regulator 6v linear low fixed dropout to 150ma voltage output positive | SOT-23-5 | LDO 2.6V",
+ "embedding_text": "ic-power-ldo.sot-23-5.ldo.2-6v | IC Power Linear Regulator | 7 ic power linear regulator parts for LDO, 2.6V using SOT-23-5 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | sot regulator 6v linear ldo low fixed dropout to smd ic power 150ma voltage output positive | SOT-23-5 | LDO 2.6V",
  "class": "ic.power.ldo"
 }

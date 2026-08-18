@@ -5,28 +5,20 @@
  "category_path": [
   "IC"
  ],
- "description": "Integrated circuit cluster containing 1 tier C part using the TSOC6 package family footprint.",
+ "description": "1 ic parts using TSOC6 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Use when an integrated circuit in a TSOC6 package footprint is required.",
-  "Check part details for the single tier C part from dist-legacy source.",
-  "Confirm suitability given that zero planner-visible parts are present."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a TSOC6 land pattern is intended."
  ],
  "avoid_when": [
-  "The circuit design requires a package family other than TSOC6.",
-  "Parts from quality tier C or dist-legacy sources are not permitted.",
-  "The design requires planner-visible components."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than TSOC6."
  ],
  "keywords": [
   "tsoc6",
   "ic",
-  "integrated circuit",
-  "tsoc6 package",
-  "tsoc6 footprint",
-  "tier c",
-  "dist-legacy",
-  "tsoc",
-  "ic cluster",
-  "tsoc6 ic",
   "pad",
   "mm",
   "pitch",
@@ -51,12 +43,12 @@
   "tier_counts": {
    "C": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
   "dist-legacy/TSOC6"
  ],
- "embedding_text": "ic.tsoc6 | IC | Integrated circuit cluster containing 1 tier C part using the TSOC6 package family footprint. | tsoc6 ic integrated circuit tsoc6 package tsoc6 footprint tier c dist-legacy tsoc ic cluster tsoc6 ic pad mm pitch pins | TSOC6 | ",
+ "embedding_text": "ic.tsoc6 | IC | 1 ic parts using TSOC6 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | tsoc6 ic pad mm pitch pins | TSOC6 | ",
  "class": "ic"
 }

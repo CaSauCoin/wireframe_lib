@@ -6,36 +6,30 @@
   "Passive",
   "Capacitor"
  ],
- "description": "Passive capacitor cluster containing 2 legacy parts associated with the TANTALUM package family and footprints.",
+ "description": "2 passive capacitor parts using TANTALUM footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Verify part specifications and mounting type directly against source records.",
-  "Confirm board land pattern matches the TANTALUM package family.",
-  "Account for tier C quality status and dist-legacy source data."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a TANTALUM land pattern is intended."
  ],
  "avoid_when": [
-  "A package family other than TANTALUM is required.",
-  "Planner-visible or higher quality tier parts are required.",
-  "Mounting details and component ratings cannot be validated."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than TANTALUM."
  ],
  "keywords": [
-  "passive",
-  "capacitor",
-  "passive capacitor",
-  "passive.capacitor",
   "tantalum",
-  "tantalum footprint",
-  "package family tantalum",
-  "dist-legacy",
-  "tier c",
   "case",
   "cap",
   "land",
   "pattern",
+  "capacitor",
   "bare",
   "package",
   "for",
   "capacitors",
   "footprint",
+  "passive",
   "with",
   "mm",
   "body",
@@ -61,13 +55,13 @@
   "tier_counts": {
    "C": 2
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
   "dist-legacy/TANTALUM CAP CASE A",
   "dist-legacy/Tantalum Cap Case D"
  ],
- "embedding_text": "passive-capacitor.tantalum | Passive Capacitor | Passive capacitor cluster containing 2 legacy parts associated with the TANTALUM package family and footprints. | passive capacitor passive capacitor passive.capacitor tantalum tantalum footprint package family tantalum dist-legacy tier c case cap land pattern bare package for capacitors footprint with mm body smd | TANTALUM | ",
+ "embedding_text": "passive-capacitor.tantalum | Passive Capacitor | 2 passive capacitor parts using TANTALUM footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | tantalum case cap land pattern capacitor bare package for capacitors footprint passive with mm body smd | TANTALUM | ",
  "class": "passive.capacitor"
 }

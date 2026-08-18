@@ -6,35 +6,26 @@
   "Power",
   "Power Rail"
  ],
- "description": "Generic power rail schematic symbols for 5V and 7.5V power nets from KiCad symbols with footprints or packages assigned later.",
+ "description": "1 power power rail parts for 5V, 7.5V with package chosen later. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when placing a 5V or 7.5V power rail symbol in a schematic.",
-  "Verify the specific net voltage label matches schematic design requirements.",
-  "Assign a footprint or package explicitly if physical PCB layout is required."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Select a footprint/package explicitly before placement."
  ],
  "avoid_when": [
-  "A physical part with a defined footprint and package is required.",
-  "Power rail voltages other than 5V or 7.5V are needed.",
-  "Active power conversion or voltage regulator ICs are required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review."
  ],
  "keywords": [
   "power",
-  "power rail",
-  "power.rail",
   "5v",
-  "7.5v",
-  "+7.5v",
-  "rail",
-  "schematic symbol",
-  "kicad-symbols",
-  "generic",
-  "voltage rail",
   "global",
   "symbol",
   "creates",
   "label",
   "with",
   "name",
+  "rail",
   "package",
   "chosen",
   "later"
@@ -57,7 +48,7 @@
   "tier_counts": {
    "G": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -72,6 +63,6 @@
  "part_ids": [
   "kicad-symbols/power/+7.5V"
  ],
- "embedding_text": "power-rail.generic.5v.7-5v | Power Power Rail | Generic power rail schematic symbols for 5V and 7.5V power nets from KiCad symbols with footprints or packages assigned later. | power power rail power.rail 5v 7.5v +7.5v rail schematic symbol kicad-symbols generic voltage rail global symbol creates label with name package chosen later | package chosen later | 5V 7.5V",
+ "embedding_text": "power-rail.generic.5v.7-5v | Power Power Rail | 1 power power rail parts for 5V, 7.5V with package chosen later. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | power 5v global symbol creates label with name rail package chosen later | package chosen later | 5V 7.5V",
  "class": "power.rail"
 }

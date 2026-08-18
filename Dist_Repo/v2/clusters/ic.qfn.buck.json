@@ -5,31 +5,22 @@
  "category_path": [
   "IC"
  ],
- "description": "Cluster of 34 surface-mount buck IC components in QFN packages, all rated at quality tier B across 12 package footprints.",
+ "description": "34 ic parts for buck using QFN footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Match the required pin-count and land pattern against the 12 QFN footprint options.",
-  "Select specific representative part numbers such as MP4410GQ-Z, AXP203, EA3036C, or TPS62130 variants.",
-  "Choose according to source library preference between chilaboard-altium-library and digikey-kicad-library."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a QFN land pattern is intended."
  ],
  "avoid_when": [
-  "The design requires through-hole mounting or a package family other than QFN.",
-  "Circuit topologies other than buck regulators are needed.",
-  "Quality tier A parts are required, as all parts in this cluster are tier B with generated review status."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than QFN."
  ],
  "keywords": [
-  "ic",
+  "regulator",
   "buck",
   "qfn",
-  "smd",
-  "surface mount",
-  "mp4410gq-z",
-  "axp203",
-  "ea3036c",
-  "tps62130",
-  "tps62130a",
-  "chilaboard-altium-library",
-  "digikey-kicad-library",
-  "regulator",
+  "ic",
   "vreg",
   "dc",
   "switching",
@@ -40,7 +31,8 @@
   "package",
   "converter",
   "power",
-  "and"
+  "and",
+  "pin"
  ],
  "facts": {
   "package_family": "QFN",
@@ -75,7 +67,7 @@
   "tier_counts": {
    "B": 34
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -155,6 +147,6 @@
   "chilaboard-altium-library/VREG_LMR33630B_VQFNHR12/VREG_LMR33630B_VQFNHR12",
   "chilaboard-altium-library/VREG_LMR33630C_VQFNHR12/VREG_LMR33630C_VQFNHR12"
  ],
- "embedding_text": "ic.qfn.buck | IC | Cluster of 34 surface-mount buck IC components in QFN packages, all rated at quality tier B across 12 package footprints. | ic buck qfn smd surface mount mp4410gq-z axp203 ea3036c tps62130 tps62130a chilaboard-altium-library digikey-kicad-library regulator vreg dc switching step down voltage in package converter power and | QFN | buck",
+ "embedding_text": "ic.qfn.buck | IC | 34 ic parts for buck using QFN footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | regulator buck qfn ic vreg dc switching step down voltage in package converter power and pin | QFN | buck",
  "class": "ic"
 }

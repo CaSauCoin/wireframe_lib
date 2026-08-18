@@ -6,44 +6,34 @@
   "Discrete",
   "Transistor"
  ],
- "description": "A cluster of 13 surface-mount discrete transistors with SOT-23 and SOT-23-3 footprints featuring a 50V facet rating.",
+ "description": "13 discrete transistor parts for 50V using SOT-23 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select between SOT-23 and SOT-23-3 footprint options as required by board layout.",
-  "Choose from 12 tier A and 1 tier B quality-ranked entries.",
-  "Verify source library origin among Alternate-KiCad-Library, digikey-kicad-library, or Seeed-OPL-Kicad-Library.",
-  "Select specific part models such as BSS138, BSS84, BSN20, BSS138L, or BSS84AK."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SOT-23 land pattern is intended."
  ],
  "avoid_when": [
-  "Designs requiring a package family other than SOT-23.",
-  "Applications needing through-hole mounting instead of SMD.",
-  "Requirements for voltage ratings other than 50V.",
-  "Projects requiring components outside the discrete transistor class."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SOT-23."
  ],
  "keywords": [
-  "discrete",
-  "transistor",
-  "50v",
-  "sot-23",
-  "sot-23-3",
-  "smd",
-  "discrete transistor",
-  "bss138",
-  "bss84",
-  "bsn20",
-  "bss138l",
-  "bss84ak",
-  "kicad",
-  "digikey",
   "sot",
   "mosfet",
+  "transistor",
+  "50v",
+  "discrete",
   "enchancement",
   "akl",
   "mode",
   "alternate",
+  "kicad",
   "library",
   "mos",
   "emos",
-  "emosfet"
+  "emosfet",
+  "transistors",
+  "fets"
  ],
  "facts": {
   "package_family": "SOT-23",
@@ -70,7 +60,7 @@
    "A": 12,
    "B": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -129,6 +119,6 @@
   "Alternate-KiCad-Library/Transistor_MOSFET_AKL/MMFTN20",
   "Seeed-OPL-Kicad-Library/OPL_Discrete_Semiconductor/SMD-MOSFET-N-CH-50V-200MA-BSS138W-7-F_SOT-23_"
  ],
- "embedding_text": "discrete-transistor.sot-23.50v | Discrete Transistor | A cluster of 13 surface-mount discrete transistors with SOT-23 and SOT-23-3 footprints featuring a 50V facet rating. | discrete transistor 50v sot-23 sot-23-3 smd discrete transistor bss138 bss84 bsn20 bss138l bss84ak kicad digikey sot mosfet enchancement akl mode alternate library mos emos emosfet | SOT-23 | 50V",
+ "embedding_text": "discrete-transistor.sot-23.50v | Discrete Transistor | 13 discrete transistor parts for 50V using SOT-23 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | sot mosfet transistor 50v discrete enchancement akl mode alternate kicad library mos emos emosfet transistors fets | SOT-23 | 50V",
  "class": "discrete.transistor"
 }

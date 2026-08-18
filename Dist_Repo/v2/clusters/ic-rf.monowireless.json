@@ -6,37 +6,32 @@
   "IC",
   "RF"
  ],
- "description": "Cluster of surface-mount (SMD) RF ICs in the MonoWireless package family, including parts MW-R-WX and TWE-L-WX using the MonoWireless_TWE-L-WX footprint.",
+ "description": "2 ic rf parts using MonoWireless footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when using MonoWireless surface-mount (SMD) RF IC components.",
-  "Requires the MonoWireless_TWE-L-WX PCB footprint.",
-  "Choose between representative tier A parts MW-R-WX and TWE-L-WX."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a MonoWireless land pattern is intended."
  ],
  "avoid_when": [
-  "Do not use if through-hole mounting is required instead of SMD.",
-  "Avoid when a footprint other than MonoWireless_TWE-L-WX is required.",
-  "Avoid if non-RF integrated circuits are needed."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than MonoWireless."
  ],
  "keywords": [
-  "ic",
-  "rf",
-  "ic rf",
-  "monowireless",
-  "smd",
-  "monowireless_twe-l-wx",
-  "mw-r-wx",
-  "twe-l-wx",
-  "twe",
   "wx",
-  "mw",
+  "twe",
+  "rf",
+  "monowireless",
   "zigbee",
-  "rf ic",
   "nxp",
   "jn5164",
   "jn5169",
   "breakout",
   "module",
-  "twelite"
+  "smd",
+  "twelite",
+  "ic",
+  "mw"
  ],
  "facts": {
   "package_family": "MonoWireless",
@@ -57,7 +52,7 @@
   "tier_counts": {
    "A": 2
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -81,6 +76,6 @@
   "kicad-symbols/RF_ZigBee/MW-R-WX",
   "kicad-symbols/RF_ZigBee/TWE-L-WX"
  ],
- "embedding_text": "ic-rf.monowireless | IC RF | Cluster of surface-mount (SMD) RF ICs in the MonoWireless package family, including parts MW-R-WX and TWE-L-WX using the MonoWireless_TWE-L-WX footprint. | ic rf ic rf monowireless smd monowireless_twe-l-wx mw-r-wx twe-l-wx twe wx mw zigbee rf ic nxp jn5164 jn5169 breakout module twelite | MonoWireless | ",
+ "embedding_text": "ic-rf.monowireless | IC RF | 2 ic rf parts using MonoWireless footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | wx twe rf monowireless zigbee nxp jn5164 jn5169 breakout module smd twelite ic mw | MonoWireless | ",
  "class": "ic.rf"
 }

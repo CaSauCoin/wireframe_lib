@@ -6,28 +6,21 @@
   "Discrete",
   "Diode"
  ],
- "description": "Discrete diode cluster containing 1 tier B part associated with the Everlight footprint.",
+ "description": "1 discrete diode parts using Everlight footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Use when a discrete diode with an Everlight footprint is required.",
-  "Verify part specifications for tier B entry dist-legacy/Everlight PD15-22.",
-  "Confirm land pattern compatibility with the Everlight footprint."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a Everlight land pattern is intended."
  ],
  "avoid_when": [
-  "The design requires a package footprint other than Everlight.",
-  "Tier A reviewed quality tier parts are required.",
-  "Mounting requirements cannot accommodate unknown mount types."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than Everlight."
  ],
  "keywords": [
-  "discrete",
-  "diode",
   "everlight",
-  "pd15-22",
+  "diode",
   "pd15",
-  "everlight pd15-22",
-  "discrete diode",
-  "everlight footprint",
-  "dist-legacy",
-  "tier b",
   "surface",
   "mount",
   "with",
@@ -35,7 +28,8 @@
   "and",
   "cathode",
   "pins",
-  "smd"
+  "smd",
+  "discrete"
  ],
  "facts": {
   "package_family": "Everlight",
@@ -56,7 +50,7 @@
   "tier_counts": {
    "B": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -71,6 +65,6 @@
  "part_ids": [
   "dist-legacy/Everlight PD15-22"
  ],
- "embedding_text": "discrete-diode.everlight | Discrete Diode | Discrete diode cluster containing 1 tier B part associated with the Everlight footprint. | discrete diode everlight pd15-22 pd15 everlight pd15-22 discrete diode everlight footprint dist-legacy tier b surface mount with anode and cathode pins smd | Everlight | ",
+ "embedding_text": "discrete-diode.everlight | Discrete Diode | 1 discrete diode parts using Everlight footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | everlight diode pd15 surface mount with anode and cathode pins smd discrete | Everlight | ",
  "class": "discrete.diode"
 }

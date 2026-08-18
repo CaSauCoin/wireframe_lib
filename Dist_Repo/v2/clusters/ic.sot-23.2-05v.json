@@ -5,29 +5,18 @@
  "category_path": [
   "IC"
  ],
- "description": "Surface-mount IC cluster featuring 2.05V rated components in SOT-23 and SOT-23-6 package footprints.",
+ "description": "10 ic parts for 2.05V using SOT-23 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when needing a 2.05V rated integrated circuit in an SMD SOT-23 package.",
-  "Choose between SOT-23 and SOT-23-6 footprints depending on circuit requirements.",
-  "Verify specific part specifications and pin configurations for candidate parts."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SOT-23 land pattern is intended."
  ],
  "avoid_when": [
-  "The design requires voltage ratings other than 2.05V.",
-  "Through-hole mounting or footprints outside SOT-23 and SOT-23-6 are needed."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SOT-23."
  ],
  "keywords": [
-  "ic",
-  "sot-23",
-  "sot-23-6",
-  "2.05v",
-  "smd",
-  "integrated circuit",
-  "lm4040dbz-2.0",
-  "max6070aaut21+t",
-  "max6070baut21+t",
-  "max6071aaut21+t",
-  "reference voltage",
-  "kicad-symbols",
   "sot",
   "reference",
   "voltage",
@@ -35,11 +24,15 @@
   "048v",
   "low",
   "to",
+  "smd",
+  "ic",
   "05v",
   "noise",
   "high",
   "series",
-  "initial"
+  "initial",
+  "accuracy",
+  "micropower"
  ],
  "facts": {
   "package_family": "SOT-23",
@@ -63,7 +56,7 @@
   "tier_counts": {
    "A": 10
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -119,6 +112,6 @@
   "kicad-symbols/Reference_Voltage/REF3220AMDBVREP",
   "kicad-symbols/Reference_Voltage/REF35205QDBVR"
  ],
- "embedding_text": "ic.sot-23.2-05v | IC | Surface-mount IC cluster featuring 2.05V rated components in SOT-23 and SOT-23-6 package footprints. | ic sot-23 sot-23-6 2.05v smd integrated circuit lm4040dbz-2.0 max6070aaut21+t max6070baut21+t max6071aaut21+t reference voltage kicad-symbols sot reference voltage precision 048v low to 05v noise high series initial | SOT-23 | 2.05V",
+ "embedding_text": "ic.sot-23.2-05v | IC | 10 ic parts for 2.05V using SOT-23 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | sot reference voltage precision 048v low to smd ic 05v noise high series initial accuracy micropower | SOT-23 | 2.05V",
  "class": "ic"
 }

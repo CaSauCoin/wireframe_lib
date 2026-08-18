@@ -6,42 +6,34 @@
   "IC",
   "Power"
  ],
- "description": "Power IC cluster containing 16 through-hole components in the DIP package family, including DIP-8_W7.62mm and DIP-20_W7.62mm_LongPads footprints.",
+ "description": "16 ic power parts using DIP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when requiring a through-hole power IC in a DIP package family.",
-  "Verify footprint compatibility with DIP-8_W7.62mm or DIP-20_W7.62mm_LongPads.",
-  "Choose based on specific regulator controller part series such as NCP1200 or NCP1203."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a DIP land pattern is intended."
  ],
  "avoid_when": [
-  "Surface mount (SMD) assembly is required instead of through-hole.",
-  "The board design requires package families other than DIP.",
-  "The needed footprint differs from DIP-8_W7.62mm or DIP-20_W7.62mm_LongPads."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than DIP."
  ],
  "keywords": [
-  "ic",
-  "power",
   "dip",
-  "ic power",
-  "through_hole",
-  "dip-8_w7.62mm",
-  "dip-20_w7.62mm_longpads",
-  "regulator",
   "controller",
-  "ncp1200",
-  "ncp1203",
-  "kicad-symbols",
-  "dip-8",
-  "dip-20",
   "62mm",
   "pdip",
   "ac",
   "dc",
+  "power",
+  "regulator",
   "w7",
   "tht",
   "dil",
   "54mm",
   "300mil",
-  "pwm"
+  "ic",
+  "pwm",
+  "current"
  ],
  "facts": {
   "package_family": "DIP",
@@ -63,7 +55,7 @@
   "tier_counts": {
    "A": 16
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -125,6 +117,6 @@
   "kicad-symbols/Regulator_Controller/UCC3808N",
   "kicad-symbols/Regulator_Controller/UCC3895N"
  ],
- "embedding_text": "ic-power.dip | IC Power | Power IC cluster containing 16 through-hole components in the DIP package family, including DIP-8_W7.62mm and DIP-20_W7.62mm_LongPads footprints. | ic power dip ic power through_hole dip-8_w7.62mm dip-20_w7.62mm_longpads regulator controller ncp1200 ncp1203 kicad-symbols dip-8 dip-20 62mm pdip ac dc w7 tht dil 54mm 300mil pwm | DIP | ",
+ "embedding_text": "ic-power.dip | IC Power | 16 ic power parts using DIP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | dip controller 62mm pdip ac dc power regulator w7 tht dil 54mm 300mil ic pwm current | DIP | ",
  "class": "ic.power"
 }

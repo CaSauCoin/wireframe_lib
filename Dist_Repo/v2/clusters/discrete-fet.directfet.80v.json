@@ -6,41 +6,33 @@
   "Discrete",
   "FET"
  ],
- "description": "Cluster of 4 tier-A surface-mount 80V discrete FET components in DirectFET_MN and DirectFET_MP package footprints.",
+ "description": "4 discrete fet parts for 80V using DirectFET footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Match the target board footprint to DirectFET_MN or DirectFET_MP land patterns.",
-  "Select among representative tier-A parts including BSB044N08NN3, BSB104N08NP3, IRF6646, or IRF6668.",
-  "Verify application compatibility with the 80V rating."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a DirectFET land pattern is intended."
  ],
  "avoid_when": [
-  "The application requires a voltage rating other than 80V.",
-  "The layout requires a footprint other than DirectFET_MN or DirectFET_MP.",
-  "Through-hole mounting is required instead of surface-mount (SMD)."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than DirectFET."
  ],
  "keywords": [
-  "discrete fet",
-  "fet",
-  "discrete",
-  "80v",
   "directfet",
-  "smd",
-  "directfet_mn",
-  "directfet_mp",
-  "bsb044n08nn3",
-  "bsb104n08np3",
-  "irf6646",
-  "irf6668",
-  "kicad-symbols",
-  "transistor",
   "mosfet",
   "mn",
+  "fet",
+  "80v",
   "channel",
+  "transistor",
   "id",
   "vds",
   "rds",
   "infineon",
+  "discrete",
   "mp",
   "4mohm",
+  "bsb044n08nn3",
   "90a"
  ],
  "facts": {
@@ -65,7 +57,7 @@
   "tier_counts": {
    "A": 4
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -107,6 +99,6 @@
   "kicad-symbols/Transistor_FET/IRF6646",
   "kicad-symbols/Transistor_FET/IRF6668"
  ],
- "embedding_text": "discrete-fet.directfet.80v | Discrete FET | Cluster of 4 tier-A surface-mount 80V discrete FET components in DirectFET_MN and DirectFET_MP package footprints. | discrete fet fet discrete 80v directfet smd directfet_mn directfet_mp bsb044n08nn3 bsb104n08np3 irf6646 irf6668 kicad-symbols transistor mosfet mn channel id vds rds infineon mp 4mohm 90a | DirectFET | 80V",
+ "embedding_text": "discrete-fet.directfet.80v | Discrete FET | 4 discrete fet parts for 80V using DirectFET footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | directfet mosfet mn fet 80v channel transistor id vds rds infineon discrete mp 4mohm bsb044n08nn3 90a | DirectFET | 80V",
  "class": "discrete.fet"
 }

@@ -6,29 +6,23 @@
   "IC",
   "Interface"
  ],
- "description": "SMD I2C interface IC components in the SOT-23 package family, featuring SOT-23-6 footprints from KiCad symbol libraries.",
+ "description": "1 ic interface parts for I2C using SOT-23 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when an I2C interface IC in an SMD SOT-23 footprint is required.",
-  "Confirm layout compatibility with SOT-23-6 land patterns.",
-  "Check part quality tier and library source availability."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SOT-23 land pattern is intended."
  ],
  "avoid_when": [
-  "The design requires through-hole mounting instead of SMD.",
-  "The board layout requires package families other than SOT-23.",
-  "Non-I2C interface ICs are needed."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SOT-23."
  ],
  "keywords": [
-  "ic",
+  "sot",
   "interface",
   "i2c",
-  "sot-23",
-  "sot-23-6",
-  "smd",
-  "ds2484r",
-  "kicad-symbols",
-  "interface expansion",
-  "sot",
   "to",
+  "ds2484r",
   "expansion",
   "wire",
   "bridge",
@@ -62,7 +56,7 @@
   "tier_counts": {
    "A": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -77,6 +71,6 @@
  "part_ids": [
   "kicad-symbols/Interface_Expansion/DS2484R"
  ],
- "embedding_text": "ic-interface.sot-23.i2c | IC Interface | SMD I2C interface IC components in the SOT-23 package family, featuring SOT-23-6 footprints from KiCad symbol libraries. | ic interface i2c sot-23 sot-23-6 smd ds2484r kicad-symbols interface expansion sot to expansion wire bridge single channel master device adjustable timing and sleep | SOT-23 | I2C",
+ "embedding_text": "ic-interface.sot-23.i2c | IC Interface | 1 ic interface parts for I2C using SOT-23 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | sot interface i2c to ds2484r expansion wire bridge single channel master device adjustable timing and sleep | SOT-23 | I2C",
  "class": "ic.interface"
 }

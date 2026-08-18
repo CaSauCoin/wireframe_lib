@@ -6,44 +6,34 @@
   "Discrete",
   "Diode"
  ],
- "description": "Cluster of 14 discrete diode parts (7 planner-visible, tiers B/C) spanning DIODE-family footprints including bridge rectifier, zener, power, and general-purpose land patterns; select by exact footprint match.",
+ "description": "14 discrete diode parts using DIODE footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Match the exact footprint variant needed (bridge GBJ, zener, power, or general DIODE)",
-  "Prefer tier B entries; no tier A entries exist in this cluster",
-  "Confirm symbol-footprint pairing before use since review_status is generated",
-  "Check source origin (dist-legacy vs kicad-symbols) for trust level"
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a DIODE land pattern is intended."
  ],
  "avoid_when": [
-  "A specific voltage, current, or switching-speed rating is required but not stated by the part",
-  "The board needs a footprint outside the listed DIODE_* or Diode_Bridge_GBJ set",
-  "A verified (non-generated) review status is required",
-  "Pin/pad mapping has not been confirmed against the chosen footprint"
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than DIODE."
  ],
  "keywords": [
   "diode",
-  "discrete diode",
-  "bridge rectifier",
-  "diode bridge gbj",
-  "zener diode",
-  "zener smd",
-  "power diode",
-  "high speed diode",
-  "nominal diode",
-  "through hole diode",
-  "dist-legacy",
-  "kicad-symbols",
-  "diode footprint",
-  "rectifier",
-  "device library",
-  "tier b diode",
   "discrete",
   "bridge",
   "5a",
+  "rectifier",
   "ve",
   "ac",
   "gbj",
   "pow",
-  "zener"
+  "zener",
+  "1a",
+  "pad",
+  "mm",
+  "pitch",
+  "pins",
+  "device"
  ],
  "facts": {
   "package_family": "DIODE",
@@ -75,7 +65,7 @@
    "B": 7,
    "C": 7
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -135,6 +125,6 @@
   "dist-legacy/DIODE_ZENER_SMD",
   "dist-legacy/Diode"
  ],
- "embedding_text": "discrete-diode.diode | Discrete Diode | Cluster of 14 discrete diode parts (7 planner-visible, tiers B/C) spanning DIODE-family footprints including bridge rectifier, zener, power, and general-purpose land patterns; select by exact footprint match. | diode discrete diode bridge rectifier diode bridge gbj zener diode zener smd power diode high speed diode nominal diode through hole diode dist-legacy kicad-symbols diode footprint rectifier device library tier b diode discrete bridge 5a ve ac gbj pow zener | DIODE | ",
+ "embedding_text": "discrete-diode.diode | Discrete Diode | 14 discrete diode parts using DIODE footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | diode discrete bridge 5a rectifier ve ac gbj pow zener 1a pad mm pitch pins device | DIODE | ",
  "class": "discrete.diode"
 }

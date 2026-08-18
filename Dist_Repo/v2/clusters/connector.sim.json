@@ -5,44 +5,34 @@
  "category_path": [
   "Connector"
  ],
- "description": "SMD SIM card connector cluster (5 parts, footprints SIM_473080001, SIM_Nano_5045200691, SIM_MINI_8_MOLEX, SIM_MINI_MOLEX1/2) from Chilaboard Altium and Digikey KiCad sources; metadata is auto-generated and unreviewed.",
+ "description": "5 connector parts using SIM footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Match the exact footprint needed: SIM_473080001, SIM_Nano_5045200691, SIM_MINI_8_MOLEX, SIM_MINI_MOLEX1, or SIM_MINI_MOLEX2.",
-  "Prefer tier B entries over tier C (cluster has 2 tier B, 3 tier C parts).",
-  "Confirm the part's SMD mount type matches the intended board footprint.",
-  "review_status is 'generated', so verify part details before committing to a design."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SIM land pattern is intended."
  ],
  "avoid_when": [
-  "The board requires a mount type other than SMD.",
-  "None of the five listed SIM footprints match the intended land pattern.",
-  "A reviewed/verified part is required, since this cluster's review_status is 'generated'.",
-  "Exact electrical ratings, package dimensions, or pinout are needed but are not present in this cluster's facts."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SIM."
  ],
  "keywords": [
   "sim",
-  "sim card",
-  "sim connector",
-  "sim socket",
-  "connector",
-  "smd",
-  "surface mount",
-  "sim mini",
-  "sim nano",
-  "molex",
-  "sim_473080001",
-  "sim_nano_5045200691",
-  "sim_mini_8_molex",
-  "sim_mini_molex1",
-  "sim_mini_molex2",
-  "chilaboard",
-  "digikey",
-  "kicad",
   "mini",
+  "connector",
+  "molex",
   "connectors",
   "card",
   "molex1",
   "molex2",
-  "memory"
+  "memory",
+  "sockets",
+  "surface",
+  "mount",
+  "pad",
+  "mm",
+  "pitch",
+  "pins"
  ],
  "facts": {
   "package_family": "SIM",
@@ -69,7 +59,7 @@
    "B": 2,
    "C": 3
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -96,6 +86,6 @@
   "chilaboard-altium-library/SIM_MINI_MOLEX1/SIM_MINI_MOLEX1",
   "chilaboard-altium-library/SIM_MINI_MOLEX2/SIM_MINI_MOLEX2"
  ],
- "embedding_text": "connector.sim | Connector | SMD SIM card connector cluster (5 parts, footprints SIM_473080001, SIM_Nano_5045200691, SIM_MINI_8_MOLEX, SIM_MINI_MOLEX1/2) from Chilaboard Altium and Digikey KiCad sources; metadata is auto-generated and unreviewed. | sim sim card sim connector sim socket connector smd surface mount sim mini sim nano molex sim_473080001 sim_nano_5045200691 sim_mini_8_molex sim_mini_molex1 sim_mini_molex2 chilaboard digikey kicad mini connectors card molex1 molex2 memory | SIM | ",
+ "embedding_text": "connector.sim | Connector | 5 connector parts using SIM footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | sim mini connector molex connectors card molex1 molex2 memory sockets surface mount pad mm pitch pins | SIM | ",
  "class": "connector"
 }

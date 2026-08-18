@@ -7,32 +7,22 @@
   "Power",
   "Switching Regulator"
  ],
- "description": "This cluster contains tier A surface-mount switching regulator ICs in the SOT-23 package family using TSOT-23-6 footprints with 5V and 2.5V facets.",
+ "description": "2 ic power switching regulator parts for 5V, 2.5V using SOT-23 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when needing a surface-mount switching regulator in a TSOT-23-6 footprint.",
-  "Choose for designs requiring 5V or 2.5V switching regulator ICs.",
-  "Verify part specifications and pin mapping for LT3483AxS6 or LT3483xS6."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SOT-23 land pattern is intended."
  ],
  "avoid_when": [
-  "Do not use when through-hole components are required.",
-  "Avoid if the PCB design requires package footprints other than TSOT-23-6.",
-  "Avoid when target voltage requirements differ from the specified 5V and 2.5V facets."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SOT-23."
  ],
  "keywords": [
-  "ic",
-  "power",
-  "switching regulator",
-  "sot-23",
-  "tsot-23-6",
   "5v",
-  "2.5v",
-  "smd",
-  "lt3483axs6",
-  "lt3483xs6",
-  "regulator",
-  "surface mount",
   "to",
   "tsot",
+  "regulator",
   "switching",
   "inverting",
   "dc",
@@ -42,7 +32,9 @@
   "with",
   "integrated",
   "schottky",
-  "16v"
+  "16v",
+  "input",
+  "down"
  ],
  "facts": {
   "package_family": "SOT-23",
@@ -66,7 +58,7 @@
   "tier_counts": {
    "A": 2
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -90,6 +82,6 @@
   "kicad-symbols/Regulator_Switching/LT3483AxS6",
   "kicad-symbols/Regulator_Switching/LT3483xS6"
  ],
- "embedding_text": "ic-power-switching.sot-23.5v.2-5v | IC Power Switching Regulator | This cluster contains tier A surface-mount switching regulator ICs in the SOT-23 package family using TSOT-23-6 footprints with 5V and 2.5V facets. | ic power switching regulator sot-23 tsot-23-6 5v 2.5v smd lt3483axs6 lt3483xs6 regulator surface mount to tsot switching inverting dc converter sot micropower with integrated schottky 16v | SOT-23 | 5V 2.5V",
+ "embedding_text": "ic-power-switching.sot-23.5v.2-5v | IC Power Switching Regulator | 2 ic power switching regulator parts for 5V, 2.5V using SOT-23 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | 5v to tsot regulator switching inverting dc converter sot micropower with integrated schottky 16v input down | SOT-23 | 5V 2.5V",
  "class": "ic.power.switching"
 }

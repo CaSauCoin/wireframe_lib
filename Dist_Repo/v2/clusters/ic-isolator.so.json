@@ -6,42 +6,34 @@
   "IC",
   "Isolator"
  ],
- "description": "Surface-mount IC isolator component cluster containing 9 KiCad symbol parts across SO-4, SO-5-6, and SO-6L package footprints.",
+ "description": "9 ic isolator parts using SO footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when needing surface-mount IC isolators in the SO package family.",
-  "Choose based on specific footprint requirements: SO-4, SO-5-6, or SO-6L.",
-  "Verify exact footprint requirements against representative parts such as TLP2310, TLP2703, TLP2745, TLP2748, or TLP2761."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SO land pattern is intended."
  ],
  "avoid_when": [
-  "Do not use when through-hole mounting is required.",
-  "Avoid if the design requires package families other than SO.",
-  "Avoid if land pattern dimensions differ from the provided SO-4, SO-5-6, or SO-6L footprints."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SO."
  ],
  "keywords": [
-  "ic",
-  "isolator",
-  "ic isolator",
   "so",
-  "smd",
-  "so-4",
-  "so-5-6",
-  "so-6l",
-  "tlp2310",
-  "tlp2703",
-  "tlp2745",
-  "tlp2748",
-  "tlp2761",
-  "kicad-symbols",
+  "isolator",
   "6l",
   "inverting",
   "photocouple",
   "output",
   "push",
   "pull",
+  "ic",
   "kvrms",
   "p1",
   "27mm",
-  "mbps"
+  "mbps",
+  "vdd",
+  "10x3",
+  "84mm"
  ],
  "facts": {
   "package_family": "SO",
@@ -64,7 +56,7 @@
   "tier_counts": {
    "A": 9
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -119,6 +111,6 @@
   "kicad-symbols/Isolator/TLP2770",
   "kicad-symbols/Isolator/LTV-352T"
  ],
- "embedding_text": "ic-isolator.so | IC Isolator | Surface-mount IC isolator component cluster containing 9 KiCad symbol parts across SO-4, SO-5-6, and SO-6L package footprints. | ic isolator ic isolator so smd so-4 so-5-6 so-6l tlp2310 tlp2703 tlp2745 tlp2748 tlp2761 kicad-symbols 6l inverting photocouple output push pull kvrms p1 27mm mbps | SO | ",
+ "embedding_text": "ic-isolator.so | IC Isolator | 9 ic isolator parts using SO footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | so isolator 6l inverting photocouple output push pull ic kvrms p1 27mm mbps vdd 10x3 84mm | SO | ",
  "class": "ic.isolator"
 }

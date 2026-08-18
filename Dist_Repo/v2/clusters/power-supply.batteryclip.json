@@ -6,33 +6,26 @@
   "Power",
   "Power Supply"
  ],
- "description": "Through-hole battery clip components supporting Keystone 54 D16-19mm footprints for power supply applications.",
+ "description": "1 power power supply parts using BatteryClip footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Match PCB land pattern to the Keystone 54 D16-19mm battery clip footprint.",
-  "Verify physical cell diameter compatibility (16mm to 19mm) and through-hole layout.",
-  "Review legacy catalog data and tier C quality rating prior to design integration."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a BatteryClip land pattern is intended."
  ],
  "avoid_when": [
-  "Surface-mount (SMD) battery holders or clips are required.",
-  "The design requires battery cell sizes outside the 16-19mm range or a different footprint geometry.",
-  "A package family other than BatteryClip is required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than BatteryClip."
  ],
  "keywords": [
   "batteryclip",
-  "battery clip",
-  "power supply",
-  "through hole",
-  "through_hole",
-  "keystone 54",
   "keystone",
-  "d16-19mm",
   "d16",
   "19mm",
-  "battery",
   "power",
-  "batteryclip_keystone_54_d16-19mm",
   "supply",
   "mm",
+  "battery",
   "clip",
   "product",
   "through",
@@ -61,12 +54,12 @@
   "tier_counts": {
    "C": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
   "dist-legacy/BatteryClip_Keystone_54_D16-19mm"
  ],
- "embedding_text": "power-supply.batteryclip | Power Power Supply | Through-hole battery clip components supporting Keystone 54 D16-19mm footprints for power supply applications. | batteryclip battery clip power supply through hole through_hole keystone 54 keystone d16-19mm d16 19mm battery power batteryclip_keystone_54_d16-19mm supply mm clip product through hole pad pitch pins package | BatteryClip | ",
+ "embedding_text": "power-supply.batteryclip | Power Power Supply | 1 power power supply parts using BatteryClip footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | batteryclip keystone d16 19mm power supply mm battery clip product through hole pad pitch pins package | BatteryClip | ",
  "class": "power.supply"
 }

@@ -6,32 +6,22 @@
   "IC",
   "Microcontroller"
  ],
- "description": "Cluster of surface-mount microcontroller IC parts using the STC_SOP-16_3.9x9.9mm_P1.27mm footprint.",
+ "description": "7 ic microcontroller parts using STC footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when a surface-mount microcontroller IC matching the STC_SOP-16_3.9x9.9mm_P1.27mm footprint is required.",
-  "Verify part numbers and symbol definitions across the available Tier B entries.",
-  "Confirm board layout requires an STC SOP-16 package footprint."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a STC land pattern is intended."
  ],
  "avoid_when": [
-  "Do not use when through-hole mounting is required.",
-  "Avoid when the design requires a footprint other than STC_SOP-16_3.9x9.9mm_P1.27mm.",
-  "Avoid if unstated electrical parameters or specific pinout functions are required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than STC."
  ],
  "keywords": [
   "stc",
-  "ic",
+  "sop",
   "mcu",
   "microcontroller",
-  "smd",
-  "sop-16",
-  "sop16",
-  "stc_sop-16_3.9x9.9mm_p1.27mm",
-  "ch32v003axmx",
-  "iap15w205s-35x-sop16",
-  "irc15w207s-35x-sop16",
-  "stc15w201s-35x-sop16",
-  "stc15w202s-35x-sop16",
-  "sop",
   "the",
   "based",
   "on",
@@ -41,7 +31,9 @@
   "p1",
   "27mm",
   "so",
-  "35x"
+  "ic",
+  "35x",
+  "sop16"
  ],
  "facts": {
   "package_family": "STC",
@@ -62,7 +54,7 @@
   "tier_counts": {
    "B": 7
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -115,6 +107,6 @@
   "kicad-symbols/MCU_STC/STC15W203S-35x-SOP16",
   "kicad-symbols/MCU_STC/STC15W204S-35x-SOP16"
  ],
- "embedding_text": "ic-mcu.stc | IC Microcontroller | Cluster of surface-mount microcontroller IC parts using the STC_SOP-16_3.9x9.9mm_P1.27mm footprint. | stc ic mcu microcontroller smd sop-16 sop16 stc_sop-16_3.9x9.9mm_p1.27mm ch32v003axmx iap15w205s-35x-sop16 irc15w207s-35x-sop16 stc15w201s-35x-sop16 stc15w202s-35x-sop16 sop the based on architecture 9x9 9mm p1 27mm so 35x | STC | ",
+ "embedding_text": "ic-mcu.stc | IC Microcontroller | 7 ic microcontroller parts using STC footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | stc sop mcu microcontroller the based on architecture 9x9 9mm p1 27mm so ic 35x sop16 | STC | ",
  "class": "ic.mcu"
 }

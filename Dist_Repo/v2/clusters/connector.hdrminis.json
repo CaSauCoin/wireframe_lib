@@ -5,27 +5,26 @@
  "category_path": [
   "Connector"
  ],
- "description": "Cluster of 100 SMD board-to-board connector parts using HDRMINIS footprints in male and female variants from 1x2 up to 1x20 pins, all currently tier C with unreviewed quality.",
+ "description": "100 connector parts using HDRMINIS footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Match exact footprint variant (e.g. HDRMINIS_F_1X12) and pin count to the mating connector",
-  "Confirm male (M) vs female (F) gender matches the mating half",
-  "All 100 parts are tier C and generated/unreviewed — verify details before use",
-  "Confirm SMD mounting matches the intended board process"
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a HDRMINIS land pattern is intended."
  ],
  "avoid_when": [
-  "A verified tier A/B part with confirmed electrical ratings is required",
-  "The design needs a pin count or gender not listed in the available footprints",
-  "Through-hole mounting is required instead of SMD",
-  "A non-HDRMINIS land pattern or package is needed"
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than HDRMINIS."
  ],
  "keywords": [
   "hdrminis",
   "connector",
-  "smd",
-  "surface mount",
-  "header",
-  "male",
-  "female",
+  "surface",
+  "mount",
+  "pad",
+  "mm",
+  "pitch",
+  "pins",
   "1x2",
   "1x11",
   "1x12",
@@ -33,16 +32,7 @@
   "1x14",
   "1x15",
   "1x16",
-  "1x17",
-  "1x18",
-  "1x19",
-  "1x20",
-  "surface",
-  "mount",
-  "pad",
-  "mm",
-  "pitch",
-  "pins"
+  "1x17"
  ],
  "facts": {
   "package_family": "HDRMINIS",
@@ -74,7 +64,7 @@
   "tier_counts": {
    "C": 100
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
@@ -179,6 +169,6 @@
   "chilaboard-altium-library/HDRMINIS_M_2X5/HDRMINIS_M_2X5",
   "chilaboard-altium-library/HDRMINIS_M_2X6/HDRMINIS_M_2X6"
  ],
- "embedding_text": "connector.hdrminis | Connector | Cluster of 100 SMD board-to-board connector parts using HDRMINIS footprints in male and female variants from 1x2 up to 1x20 pins, all currently tier C with unreviewed quality. | hdrminis connector smd surface mount header male female 1x2 1x11 1x12 1x13 1x14 1x15 1x16 1x17 1x18 1x19 1x20 surface mount pad mm pitch pins | HDRMINIS | ",
+ "embedding_text": "connector.hdrminis | Connector | 100 connector parts using HDRMINIS footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | hdrminis connector surface mount pad mm pitch pins 1x2 1x11 1x12 1x13 1x14 1x15 1x16 1x17 | HDRMINIS | ",
  "class": "connector"
 }

@@ -6,37 +6,30 @@
   "IC",
   "Sensor"
  ],
- "description": "Surface-mount sensor ICs using MSOP packages with I2C interfaces, available in MSOP-8 and MSOP-10 footprint options.",
+ "description": "4 ic sensor parts for I2C using MSOP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when an I2C sensor IC in an SMD MSOP package is required.",
-  "Choose between MSOP-10 with 0.5mm pitch and MSOP-8 with 0.65mm pitch footprints.",
-  "Confirm specific sensor part numbers such as LTC2990, LTC4151xMS, MCP9804_MSOP, or MCP9808_MSOP."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a MSOP land pattern is intended."
  ],
  "avoid_when": [
-  "Designs requiring through-hole mounting or packages other than MSOP.",
-  "Communication protocols other than I2C are specified.",
-  "Footprint requirements differ from MSOP-8 (3x3mm, 0.65mm pitch) or MSOP-10 (3x3mm, 0.5mm pitch)."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than MSOP."
  ],
  "keywords": [
-  "ic",
+  "msop",
   "sensor",
   "i2c",
-  "msop",
-  "smd",
-  "msop-8",
-  "msop-10",
-  "3x3mm",
-  "ltc2990",
-  "ltc4151xms",
-  "mcp9804_msop",
-  "mcp9808_msop",
   "temperature",
+  "3x3mm",
   "p0",
   "voltage",
   "current",
   "monitor",
   "5mm",
   "so",
+  "ic",
   "and",
   "tssop",
   "typical",
@@ -64,7 +57,7 @@
   "tier_counts": {
    "A": 4
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -106,6 +99,6 @@
   "kicad-symbols/Sensor_Temperature/MCP9804_MSOP",
   "kicad-symbols/Sensor_Temperature/MCP9808_MSOP"
  ],
- "embedding_text": "ic-sensor.msop.i2c | IC Sensor | Surface-mount sensor ICs using MSOP packages with I2C interfaces, available in MSOP-8 and MSOP-10 footprint options. | ic sensor i2c msop smd msop-8 msop-10 3x3mm ltc2990 ltc4151xms mcp9804_msop mcp9808_msop temperature p0 voltage current monitor 5mm so and tssop typical maximum | MSOP | I2C",
+ "embedding_text": "ic-sensor.msop.i2c | IC Sensor | 4 ic sensor parts for I2C using MSOP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | msop sensor i2c temperature 3x3mm p0 voltage current monitor 5mm so ic and tssop typical maximum | MSOP | I2C",
  "class": "ic.sensor"
 }

@@ -5,30 +5,20 @@
  "category_path": [
   "IC"
  ],
- "description": "Integrated circuit component cluster containing surface-mount parts in the QFG65 package family across 52-pin, 80-pin, and 100-pin footprints.",
+ "description": "5 ic parts using QFG65 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when using surface-mount ICs in the QFG65 package family.",
-  "Match the specific footprint variant among QFG65_52, QFG65_52T, QFG65_80, QFG65_100, or QFG65_100T.",
-  "Verify part suitability from the chilaboard-altium-library source."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a QFG65 land pattern is intended."
  ],
  "avoid_when": [
-  "The PCB design requires through-hole components or packages other than QFG65.",
-  "The required footprint is not QFG65_52, QFG65_52T, QFG65_80, QFG65_100, or QFG65_100T.",
-  "Tier C quality rating is insufficient for design requirements."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than QFG65."
  ],
  "keywords": [
   "qfg65",
   "ic",
-  "integrated circuit",
-  "smd",
-  "surface mount",
-  "qfg65_100",
-  "qfg65_100t",
-  "qfg65_52",
-  "qfg65_52t",
-  "qfg65_80",
-  "chilaboard-altium-library",
-  "qfg65 package",
   "surface",
   "mount",
   "pad",
@@ -61,7 +51,7 @@
   "tier_counts": {
    "C": 5
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
@@ -71,6 +61,6 @@
   "chilaboard-altium-library/QFG65_52T/QFG65_52T",
   "chilaboard-altium-library/QFG65_80/QFG65_80"
  ],
- "embedding_text": "ic.qfg65 | IC | Integrated circuit component cluster containing surface-mount parts in the QFG65 package family across 52-pin, 80-pin, and 100-pin footprints. | qfg65 ic integrated circuit smd surface mount qfg65_100 qfg65_100t qfg65_52 qfg65_52t qfg65_80 chilaboard-altium-library qfg65 package surface mount pad mm pitch pins 100t 52t | QFG65 | ",
+ "embedding_text": "ic.qfg65 | IC | 5 ic parts using QFG65 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | qfg65 ic surface mount pad mm pitch pins 100t 52t | QFG65 | ",
  "class": "ic"
 }

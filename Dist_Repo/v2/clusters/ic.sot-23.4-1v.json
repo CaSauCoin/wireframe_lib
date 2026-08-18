@@ -5,28 +5,18 @@
  "category_path": [
   "IC"
  ],
- "description": "Integrated circuit cluster containing 12 surface-mount 4.1V parts in SOT-23 and SOT-23-6 package footprints.",
+ "description": "12 ic parts for 4.1V using SOT-23 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when requiring a 4.1V surface-mount IC in a SOT-23 or SOT-23-6 package.",
-  "Choose between SOT-23 and SOT-23-6 footprints depending on part requirements.",
-  "Confirm pin layout and symbol data from KiCad symbol library sources."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SOT-23 land pattern is intended."
  ],
  "avoid_when": [
-  "Avoid if operating voltage requires a value other than 4.1V.",
-  "Avoid when board layout requires through-hole or non-SOT-23 footprints.",
-  "Do not use if non-SMD components are required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SOT-23."
  ],
  "keywords": [
-  "ic",
-  "4.1v",
-  "sot-23",
-  "sot-23-6",
-  "smd",
-  "kicad-symbols",
-  "reference voltage",
-  "lm4040",
-  "max6070",
-  "tier a",
   "sot",
   "reference",
   "voltage",
@@ -34,6 +24,8 @@
   "096v",
   "low",
   "to",
+  "smd",
+  "ic",
   "1v",
   "noise",
   "high",
@@ -64,7 +56,7 @@
   "tier_counts": {
    "A": 12
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -122,6 +114,6 @@
   "kicad-symbols/Reference_Voltage/REF3240AMDBVREP",
   "kicad-symbols/Reference_Voltage/REF35409QDBVR"
  ],
- "embedding_text": "ic.sot-23.4-1v | IC | Integrated circuit cluster containing 12 surface-mount 4.1V parts in SOT-23 and SOT-23-6 package footprints. | ic 4.1v sot-23 sot-23-6 smd kicad-symbols reference voltage lm4040 max6070 tier a sot reference voltage precision 096v low to 1v noise high series initial accuracy micropower | SOT-23 | 4.1V",
+ "embedding_text": "ic.sot-23.4-1v | IC | 12 ic parts for 4.1V using SOT-23 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | sot reference voltage precision 096v low to smd ic 1v noise high series initial accuracy micropower | SOT-23 | 4.1V",
  "class": "ic"
 }

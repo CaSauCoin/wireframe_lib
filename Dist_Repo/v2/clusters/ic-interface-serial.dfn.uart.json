@@ -7,42 +7,34 @@
   "Interface",
   "Serial"
  ],
- "description": "Cluster of 12 surface-mount UART and serial interface ICs in DFN-8, DFN-10, and DFN-14 packages with exposed pads.",
+ "description": "12 ic interface serial parts for UART/serial using DFN footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Match required pin count (8, 10, or 14 pins) and pitch (0.4mm or 0.5mm) for the DFN footprint.",
-  "Verify exact exposed pad (EP) dimensions against PCB land pattern requirements.",
-  "Select high-tier parts such as LTC2850xDD, LTC2851xDD, or LTC2852xDD."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a DFN land pattern is intended."
  ],
  "avoid_when": [
-  "Designs requiring through-hole mounting or non-DFN surface-mount package families.",
-  "Applications requiring interfaces other than UART or serial.",
-  "Layouts incompatible with 0.4mm or 0.5mm lead pitch DFN footprints."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than DFN."
  ],
  "keywords": [
-  "ic",
-  "interface",
-  "serial",
-  "uart",
   "dfn",
-  "smd",
-  "dfn-8",
-  "dfn-10",
-  "dfn-14",
-  "1ep",
-  "3x3mm",
-  "p0.5mm",
-  "p0.4mm",
-  "ltc2850xdd",
-  "ltc2851xdd",
-  "ltc2852xdd",
+  "interface",
+  "uart",
   "transceiver",
+  "serial",
   "duplex",
   "rs",
   "rs485",
   "full",
+  "1ep",
+  "3x3mm",
   "p0",
   "ep1",
-  "5mm"
+  "ic",
+  "5mm",
+  "rs422"
  ],
  "facts": {
   "package_family": "DFN",
@@ -69,7 +61,7 @@
    "A": 11,
    "B": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -127,6 +119,6 @@
   "kicad-symbols/Interface_UART/MAX13433EETD",
   "kicad-symbols/Interface_UART/STR485"
  ],
- "embedding_text": "ic-interface-serial.dfn.uart | IC Interface Serial | Cluster of 12 surface-mount UART and serial interface ICs in DFN-8, DFN-10, and DFN-14 packages with exposed pads. | ic interface serial uart dfn smd dfn-8 dfn-10 dfn-14 1ep 3x3mm p0.5mm p0.4mm ltc2850xdd ltc2851xdd ltc2852xdd transceiver duplex rs rs485 full p0 ep1 5mm | DFN | UART/serial",
+ "embedding_text": "ic-interface-serial.dfn.uart | IC Interface Serial | 12 ic interface serial parts for UART/serial using DFN footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | dfn interface uart transceiver serial duplex rs rs485 full 1ep 3x3mm p0 ep1 ic 5mm rs422 | DFN | UART/serial",
  "class": "ic.interface.serial"
 }

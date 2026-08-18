@@ -6,31 +6,25 @@
   "IC",
   "Driver"
  ],
- "description": "Integrated circuit driver cluster containing surface-mount BGA parts sourced from KiCad libraries.",
+ "description": "1 ic driver parts using BGA footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Application requires an IC driver in a BGA package family.",
-  "Designs using surface-mount technology with DSBGA footprint patterns.",
-  "Targeting KiCad symbol library components."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a BGA land pattern is intended."
  ],
  "avoid_when": [
-  "The board design requires a package type other than BGA.",
-  "Components other than IC drivers are needed.",
-  "Through-hole mounting is required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than BGA."
  ],
  "keywords": [
-  "ic driver",
   "driver",
-  "bga",
-  "smd",
-  "dsbga",
-  "lmg1020yff",
-  "kicad-symbols",
-  "ic",
-  "driver_fet",
-  "surface mount",
   "low",
   "side",
   "gan",
+  "dsbga",
+  "bga",
+  "lmg1020yff",
   "fet",
   "and",
   "mosfet",
@@ -60,7 +54,7 @@
   "tier_counts": {
    "B": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -75,6 +69,6 @@
  "part_ids": [
   "kicad-symbols/Driver_FET/LMG1020YFF"
  ],
- "embedding_text": "ic-driver.bga | IC Driver | Integrated circuit driver cluster containing surface-mount BGA parts sourced from KiCad libraries. | ic driver driver bga smd dsbga lmg1020yff kicad-symbols ic driver_fet surface mount low side gan fet and mosfet for ns pulse width texas 855x1 | BGA | ",
+ "embedding_text": "ic-driver.bga | IC Driver | 1 ic driver parts using BGA footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | driver low side gan dsbga bga lmg1020yff fet and mosfet for ns pulse width texas 855x1 | BGA | ",
  "class": "ic.driver"
 }

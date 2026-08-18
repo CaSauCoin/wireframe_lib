@@ -6,32 +6,23 @@
   "IC",
   "RF"
  ],
- "description": "Generic RF IC cluster containing 5 symbol entries with UART/serial communication interfaces and deferred package selection.",
+ "description": "5 ic rf parts for UART/serial with package chosen later. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Confirm the part meets required RF protocol and serial interface needs.",
-  "Explicitly assign a package footprint before PCB layout since footprints are deferred.",
-  "Evaluate KiCad symbol definitions and tier G quality status."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Select a footprint/package explicitly before placement."
  ],
  "avoid_when": [
-  "An exact predefined package footprint is required within the symbol.",
-  "RF interfaces other than UART or serial are needed.",
-  "Validated footprint pairings or higher quality tiers are required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review."
  ],
  "keywords": [
-  "ic",
+  "bluetooth",
   "rf",
   "uart",
-  "serial",
-  "ic rf",
-  "bluetooth",
-  "wifi",
-  "kicad-symbols",
-  "bm78spps5mc2",
-  "bm78spps5nc2",
-  "btm112",
-  "btm222",
-  "hf-a11-smt",
   "spp",
+  "ic",
+  "serial",
   "package",
   "chosen",
   "later",
@@ -39,6 +30,7 @@
   "class",
   "bt",
   "l2cap",
+  "wifi",
   "dual",
   "mode"
  ],
@@ -59,7 +51,7 @@
   "tier_counts": {
    "G": 5
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -110,6 +102,6 @@
   "kicad-symbols/RF_Bluetooth/BTM222",
   "kicad-symbols/RF_WiFi/HF-A11-SMT"
  ],
- "embedding_text": "ic-rf.generic.uart | IC RF | Generic RF IC cluster containing 5 symbol entries with UART/serial communication interfaces and deferred package selection. | ic rf uart serial ic rf bluetooth wifi kicad-symbols bm78spps5mc2 bm78spps5nc2 btm112 btm222 hf-a11-smt spp package chosen later module class bt l2cap dual mode | package chosen later | UART/serial",
+ "embedding_text": "ic-rf.generic.uart | IC RF | 5 ic rf parts for UART/serial with package chosen later. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | bluetooth rf uart spp ic serial package chosen later module class bt l2cap wifi dual mode | package chosen later | UART/serial",
  "class": "ic.rf"
 }

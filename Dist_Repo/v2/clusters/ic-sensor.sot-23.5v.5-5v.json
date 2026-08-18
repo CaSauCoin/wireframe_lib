@@ -6,42 +6,34 @@
   "IC",
   "Sensor"
  ],
- "description": "Cluster of surface-mount sensor ICs in the SOT-23 package family (SOT-23W footprint) operating at 5V and 5.5V across 4 tier A KiCad parts.",
+ "description": "4 ic sensor parts for 5V, 5.5V using SOT-23 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select for surface-mount sensor IC designs requiring SOT-23W footprints.",
-  "Confirm operating supply voltage matches the 5V or 5.5V rating.",
-  "Choose from tier A magnetic sensor parts like A1308xLHxx, A1309xLHxx, or A3214xLH."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SOT-23 land pattern is intended."
  ],
  "avoid_when": [
-  "The design requires through-hole or non-SMD mounting.",
-  "The required footprint or package family is not SOT-23 / SOT-23W.",
-  "The required operating voltage is outside the 5V to 5.5V range."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SOT-23."
  ],
  "keywords": [
-  "ic",
-  "sensor",
-  "ic sensor",
-  "sot-23",
-  "sot-23w",
-  "smd",
-  "5v",
-  "5.5v",
-  "sensor_magnetic",
-  "magnetic sensor",
-  "a1308xlhxx",
-  "a1309xlhxx",
-  "a3214xlh",
   "sot",
+  "5v",
   "23w",
+  "sensor",
   "magnetic",
   "hall",
   "effect",
   "supply",
+  "ic",
   "linear",
   "ics",
   "with",
   "analog",
-  "output"
+  "output",
+  "mv",
+  "ratiometric"
  ],
  "facts": {
   "package_family": "SOT-23",
@@ -65,7 +57,7 @@
   "tier_counts": {
    "A": 4
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -107,6 +99,6 @@
   "kicad-symbols/Sensor_Magnetic/A1309xLHxx-9",
   "kicad-symbols/Sensor_Magnetic/A3214xLH"
  ],
- "embedding_text": "ic-sensor.sot-23.5v.5-5v | IC Sensor | Cluster of surface-mount sensor ICs in the SOT-23 package family (SOT-23W footprint) operating at 5V and 5.5V across 4 tier A KiCad parts. | ic sensor ic sensor sot-23 sot-23w smd 5v 5.5v sensor_magnetic magnetic sensor a1308xlhxx a1309xlhxx a3214xlh sot 23w magnetic hall effect supply linear ics with analog output | SOT-23 | 5V 5.5V",
+ "embedding_text": "ic-sensor.sot-23.5v.5-5v | IC Sensor | 4 ic sensor parts for 5V, 5.5V using SOT-23 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | sot 5v 23w sensor magnetic hall effect supply ic linear ics with analog output mv ratiometric | SOT-23 | 5V 5.5V",
  "class": "ic.sensor"
 }

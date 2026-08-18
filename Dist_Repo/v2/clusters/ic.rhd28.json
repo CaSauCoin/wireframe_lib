@@ -5,28 +5,20 @@
  "category_path": [
   "IC"
  ],
- "description": "Integrated circuit cluster with 3 tier-C parts using RHD28 package family footprints RHD28_L, RHD28_M, and RHD28_N.",
+ "description": "3 ic parts using RHD28 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when requiring an IC part compatible with RHD28 package family footprints.",
-  "Choose between footprint density variants RHD28_L, RHD28_M, or RHD28_N.",
-  "Verify part specifications as all 3 parts are tier C with unknown mount type."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a RHD28 land pattern is intended."
  ],
  "avoid_when": [
-  "Avoid if the design requires package footprints other than RHD28_L, RHD28_M, or RHD28_N.",
-  "Avoid if high-tier reviewed or planner-visible parts are strictly required.",
-  "Avoid when specific mounting style or electrical parameters must be pre-verified."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than RHD28."
  ],
  "keywords": [
   "rhd28",
   "ic",
-  "rhd28_l",
-  "rhd28_m",
-  "rhd28_n",
-  "package family rhd28",
-  "integrated circuit",
-  "tier c",
-  "dist-legacy",
-  "rhd28 package",
   "pad",
   "mm",
   "pitch",
@@ -53,7 +45,7 @@
   "tier_counts": {
    "C": 3
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
@@ -61,6 +53,6 @@
   "dist-legacy/RHD28_M",
   "dist-legacy/RHD28_N"
  ],
- "embedding_text": "ic.rhd28 | IC | Integrated circuit cluster with 3 tier-C parts using RHD28 package family footprints RHD28_L, RHD28_M, and RHD28_N. | rhd28 ic rhd28_l rhd28_m rhd28_n package family rhd28 integrated circuit tier c dist-legacy rhd28 package pad mm pitch pins | RHD28 | ",
+ "embedding_text": "ic.rhd28 | IC | 3 ic parts using RHD28 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | rhd28 ic pad mm pitch pins | RHD28 | ",
  "class": "ic"
 }

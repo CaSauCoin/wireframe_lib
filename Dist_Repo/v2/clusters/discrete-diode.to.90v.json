@@ -6,41 +6,34 @@
   "Discrete",
   "Diode"
  ],
- "description": "Cluster of 15 tier-A discrete diode parts rated 90V in TO-family packages (TO-220, TO-220F, TO-263, TO-247 variants), all sourced from the Alternate-KiCad-Library Schottky diode set; metadata status is generated/unreviewed.",
+ "description": "15 discrete diode parts for 90V using TO footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Confirm SMD (TO-263) vs through-hole (TO-220/TO-247) mount matches the assembly process.",
-  "All 15 parts are tier A with score 100 from a single source (Alternate-KiCad-Library); differentiate by footprint and any part-specific data outside this cluster's facts."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a TO land pattern is intended."
  ],
  "avoid_when": [
-  "The required voltage rating differs from 90V or isn't confirmed by the selected part's own data.",
-  "A non-TO package family is needed for the design.",
-  "Review status is 'generated' (unreviewed) and the part hasn't been manually verified before committing to a layout."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than TO."
  ],
  "keywords": [
   "to",
-  "to-220",
-  "to-220f",
-  "to-263",
-  "to-247",
   "diode",
   "schottky",
   "90v",
-  "smd",
-  "through hole",
-  "discrete diode",
-  "alternate-kicad-library",
-  "akl",
   "vertical",
-  "tier a",
-  "package family to",
-  "generated metadata",
   "dual",
+  "akl",
   "alternate",
   "kicad",
   "library",
   "discrete",
   "rm",
-  "220f"
+  "220f",
+  "common",
+  "cathode",
+  "commoncathode"
  ],
  "facts": {
   "package_family": "TO",
@@ -70,7 +63,7 @@
   "tier_counts": {
    "A": 15
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -131,6 +124,6 @@
   "Alternate-KiCad-Library/Diode_Schottky_AKL/SBT1090",
   "Alternate-KiCad-Library/Diode_Schottky_AKL/VS-30CPQ090"
  ],
- "embedding_text": "discrete-diode.to.90v | Discrete Diode | Cluster of 15 tier-A discrete diode parts rated 90V in TO-family packages (TO-220, TO-220F, TO-263, TO-247 variants), all sourced from the Alternate-KiCad-Library Schottky diode set; metadata status is generated/unreviewed. | to to-220 to-220f to-263 to-247 diode schottky 90v smd through hole discrete diode alternate-kicad-library akl vertical tier a package family to generated metadata dual alternate kicad library discrete rm 220f | TO | 90V",
+ "embedding_text": "discrete-diode.to.90v | Discrete Diode | 15 discrete diode parts for 90V using TO footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | to diode schottky 90v vertical dual akl alternate kicad library discrete rm 220f common cathode commoncathode | TO | 90V",
  "class": "discrete.diode"
 }

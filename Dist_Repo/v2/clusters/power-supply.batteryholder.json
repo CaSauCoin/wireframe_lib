@@ -6,31 +6,20 @@
   "Power",
   "Power Supply"
  ],
- "description": "Power supply component cluster containing 35 battery holders supporting SMD and through-hole mounting for various Keystone cell footprints.",
+ "description": "35 power power supply parts using BatteryHolder footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Match the specific Keystone footprint to the target battery cell size and count.",
-  "Select between SMD and through-hole mounting configurations based on PCB assembly requirements.",
-  "Verify the land pattern and physical mechanical footprint before finalizing board layout."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a BatteryHolder land pattern is intended."
  ],
  "avoid_when": [
-  "The PCB design requires a package type other than a BatteryHolder footprint.",
-  "The application requires an active power supply circuit rather than a passive battery holder.",
-  "The required mounting style is neither surface mount (SMD) nor through-hole."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than BatteryHolder."
  ],
  "keywords": [
   "batteryholder",
-  "battery holder",
-  "power supply",
   "keystone",
-  "smd",
-  "through hole",
-  "1x18650",
-  "1x2032",
-  "1x2430",
-  "2xaa",
-  "1xaaa",
-  "2xaaa",
-  "3xaaa",
   "power",
   "supply",
   "battery",
@@ -41,7 +30,10 @@
   "pitch",
   "holder",
   "www",
-  "com"
+  "com",
+  "pdf",
+  "1x2032",
+  "product"
  ],
  "facts": {
   "package_family": "BatteryHolder",
@@ -74,7 +66,7 @@
   "tier_counts": {
    "C": 35
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
@@ -114,6 +106,6 @@
   "dist-legacy/BatteryHolder_Keystone_2993",
   "dist-legacy/BatteryHolder_Keystone_590"
  ],
- "embedding_text": "power-supply.batteryholder | Power Power Supply | Power supply component cluster containing 35 battery holders supporting SMD and through-hole mounting for various Keystone cell footprints. | batteryholder battery holder power supply keystone smd through hole 1x18650 1x2032 1x2430 2xaa 1xaaa 2xaaa 3xaaa power supply battery pad pins package mm pitch holder www com | BatteryHolder | ",
+ "embedding_text": "power-supply.batteryholder | Power Power Supply | 35 power power supply parts using BatteryHolder footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | batteryholder keystone power supply battery pad pins package mm pitch holder www com pdf 1x2032 product | BatteryHolder | ",
  "class": "power.supply"
 }

@@ -7,38 +7,31 @@
   "Driver",
   "Display"
  ],
- "description": "Through-hole 3.3V I2C display driver ICs in the NHD package family supporting NHD-C0220BiZ footprint variants.",
+ "description": "2 ic driver display parts for 3.3V, I2C using NHD footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when requiring a 3.3V display driver IC with an I2C interface.",
-  "Choose between NHD-C0220BiZ and NHD-C0220BiZ-FSRGB footprint variants based on board design requirements.",
-  "Use for through-hole NHD package footprint implementations."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a NHD land pattern is intended."
  ],
  "avoid_when": [
-  "Applications requiring interfaces other than I2C or voltages other than 3.3V.",
-  "Designs requiring surface-mount packages instead of through-hole mounting.",
-  "PCB layouts requiring footprints other than NHD-C0220BiZ or NHD-C0220BiZ-FSRGB."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than NHD."
  ],
  "keywords": [
-  "ic driver display",
-  "display driver",
-  "3.3v",
-  "i2c",
   "nhd",
-  "through_hole",
-  "nhd-c0220biz",
-  "nhd-c0220biz-fsrgb",
   "c0220biz",
-  "c0220biz-fsrgb",
-  "ic",
-  "driver",
-  "display",
   "lcd",
+  "display",
   "character",
+  "i2c",
   "3v",
   "backlight",
   "fsrgb",
   "rgb",
   "20x2",
+  "ic",
+  "driver",
   "alphanumeric",
   "10pin",
   "blue"
@@ -66,7 +59,7 @@
   "tier_counts": {
    "B": 2
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -90,6 +83,6 @@
   "kicad-symbols/Display_Character/NHD-C0220BIZ",
   "kicad-symbols/Display_Character/NHD-C0220BIZ-FSRGB"
  ],
- "embedding_text": "ic-driver-display.nhd.3v3.i2c | IC Driver Display | Through-hole 3.3V I2C display driver ICs in the NHD package family supporting NHD-C0220BiZ footprint variants. | ic driver display display driver 3.3v i2c nhd through_hole nhd-c0220biz nhd-c0220biz-fsrgb c0220biz c0220biz-fsrgb ic driver display lcd character 3v backlight fsrgb rgb 20x2 alphanumeric 10pin blue | NHD | 3.3V I2C",
+ "embedding_text": "ic-driver-display.nhd.3v3.i2c | IC Driver Display | 2 ic driver display parts for 3.3V, I2C using NHD footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | nhd c0220biz lcd display character i2c 3v backlight fsrgb rgb 20x2 ic driver alphanumeric 10pin blue | NHD | 3.3V I2C",
  "class": "ic.driver.display"
 }

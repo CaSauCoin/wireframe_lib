@@ -5,44 +5,34 @@
  "category_path": [
   "Connector"
  ],
- "description": "DSUB connector cluster (74 parts) covering DB9, DB15, DB25, and DB37 socket and pin variants, including standard edge-mount P2.77mm footprints and high-density horizontal footprints, across smd, through-hole, and unknown mount types.",
+ "description": "74 connector parts using DSUB footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Match pin count and DSUB size exactly: DB9, DB15, DB25, or DB37",
-  "Distinguish socket vs. pin (plug) footprint variants before placement",
-  "Check for standard edge-mount P2.77mm vs. high-density (HD) horizontal footprint",
-  "Confirm mount type (smd, through_hole, or unknown) matches the board process"
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a DSUB land pattern is intended."
  ],
  "avoid_when": [
-  "The board requires a connector family other than DSUB",
-  "The needed mount type (smd vs. through_hole) is not confirmed for the chosen part",
-  "Only a tier C or unreviewed part matches, and footprint pairing is not verified",
-  "A high-density (HD) DSUB footprint is needed but only a standard P2.77mm variant is available"
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than DSUB."
  ],
  "keywords": [
-  "dsub",
-  "d-sub",
-  "connector",
   "socket",
-  "pins",
-  "db9",
-  "db15",
-  "db25",
-  "db37",
-  "edgemount",
-  "edge mount",
-  "p2.77mm",
-  "high density",
-  "hd connector",
-  "through hole",
-  "smd",
-  "mounting holes",
-  "horizontal socket",
+  "dsub",
+  "connector",
   "p2",
   "horizontal",
   "77x2",
   "pin",
   "84mm",
-  "pitch"
+  "pitch",
+  "mounting",
+  "sub",
+  "housed",
+  "holes",
+  "distance",
+  "pcb",
+  "offset"
  ],
  "facts": {
   "package_family": "DSUB",
@@ -79,7 +69,7 @@
    "B": 22,
    "C": 52
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -199,6 +189,6 @@
   "dist-legacy/DSUB-37_Socket_EdgeMount_P2.77mm",
   "dist-legacy/DSUB-9_Socket_EdgeMount_P2.77mm"
  ],
- "embedding_text": "connector.dsub | Connector | DSUB connector cluster (74 parts) covering DB9, DB15, DB25, and DB37 socket and pin variants, including standard edge-mount P2.77mm footprints and high-density horizontal footprints, across smd, through-hole, and unknown mount types. | dsub d-sub connector socket pins db9 db15 db25 db37 edgemount edge mount p2.77mm high density hd connector through hole smd mounting holes horizontal socket p2 horizontal 77x2 pin 84mm pitch | DSUB | ",
+ "embedding_text": "connector.dsub | Connector | 74 connector parts using DSUB footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | socket dsub connector p2 horizontal 77x2 pin 84mm pitch mounting sub housed holes distance pcb offset | DSUB | ",
  "class": "connector"
 }

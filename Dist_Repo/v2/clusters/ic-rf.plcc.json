@@ -6,29 +6,22 @@
   "IC",
   "RF"
  ],
- "description": "RF integrated circuit cluster in PLCC packaging containing surface-mount components such as the AD831AP in a PLCC-20 footprint.",
+ "description": "1 ic rf parts using PLCC footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when surface-mount RF ICs in PLCC packages are required.",
-  "Verify PLCC-20 footprint compatibility with the layout.",
-  "Check part quality tier and source metadata before placement."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a PLCC land pattern is intended."
  ],
  "avoid_when": [
-  "The PCB layout requires package footprints other than PLCC.",
-  "Through-hole mounting is required instead of surface mount.",
-  "Required electrical specifications are unverified for the selected part."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than PLCC."
  ],
  "keywords": [
-  "ic",
-  "rf",
   "plcc",
-  "plcc-20",
-  "smd",
-  "surface mount",
-  "rf ic",
-  "ad831ap",
+  "rf",
   "mixer",
-  "rf mixer",
-  "kicad-symbols",
+  "ad831ap",
   "doubly",
   "balanced",
   "monolithic",
@@ -61,7 +54,7 @@
   "tier_counts": {
    "B": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -76,6 +69,6 @@
  "part_ids": [
   "kicad-symbols/RF_Mixer/AD831AP"
  ],
- "embedding_text": "ic-rf.plcc | IC RF | RF integrated circuit cluster in PLCC packaging containing surface-mount components such as the AD831AP in a PLCC-20 footprint. | ic rf plcc plcc-20 smd surface mount rf ic ad831ap mixer rf mixer kicad-symbols doubly balanced monolithic mhz bw dbm ip3 lna and lo driver smt | PLCC | ",
+ "embedding_text": "ic-rf.plcc | IC RF | 1 ic rf parts using PLCC footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | plcc rf mixer ad831ap doubly balanced monolithic mhz bw dbm ip3 lna and lo driver smt | PLCC | ",
  "class": "ic.rf"
 }

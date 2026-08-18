@@ -5,28 +5,20 @@
  "category_path": [
   "IC"
  ],
- "description": "Integrated circuit component cluster containing 1 part using the HDR6 package family footprint.",
+ "description": "1 ic parts using HDR6 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Verify land pattern compatibility with the HDR6 package family.",
-  "Confirm component specifications and pin details before PCB layout.",
-  "Check quality tier classification for tier C entries."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a HDR6 land pattern is intended."
  ],
  "avoid_when": [
-  "The board design requires a package footprint other than HDR6.",
-  "Tier C quality parts do not satisfy project sourcing rules.",
-  "Pinout or component details are not verified for the target application."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than HDR6."
  ],
  "keywords": [
   "hdr6",
   "ic",
-  "integrated circuit",
-  "hdr6 package",
-  "hdr6 footprint",
-  "package family hdr6",
-  "tier c",
-  "dist-legacy",
-  "hdr6 ic",
-  "ic class",
   "pad",
   "mm",
   "pitch",
@@ -51,12 +43,12 @@
   "tier_counts": {
    "C": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
   "dist-legacy/HDR6"
  ],
- "embedding_text": "ic.hdr6 | IC | Integrated circuit component cluster containing 1 part using the HDR6 package family footprint. | hdr6 ic integrated circuit hdr6 package hdr6 footprint package family hdr6 tier c dist-legacy hdr6 ic ic class pad mm pitch pins | HDR6 | ",
+ "embedding_text": "ic.hdr6 | IC | 1 ic parts using HDR6 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | hdr6 ic pad mm pitch pins | HDR6 | ",
  "class": "ic"
 }

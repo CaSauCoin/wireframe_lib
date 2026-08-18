@@ -5,28 +5,20 @@
  "category_path": [
   "IC"
  ],
- "description": "IC cluster containing 1 tier C part using the RFHA1000 footprint from legacy distribution sources.",
+ "description": "1 ic parts using RFHA1000 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Verify RFHA1000 footprint compatibility before layout.",
-  "Check electrical specifications as this cluster contains a single tier C part.",
-  "Use when an IC with an RFHA1000 package family footprint is required."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a RFHA1000 land pattern is intended."
  ],
  "avoid_when": [
-  "The design requires a footprint other than RFHA1000.",
-  "Tier C legacy parts without verified specifications do not meet project requirements.",
-  "Specific mounting specifications are required, as mounting type is unknown."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than RFHA1000."
  ],
  "keywords": [
   "rfha1000",
   "ic",
-  "integrated circuit",
-  "rfha1000 footprint",
-  "rfha1000 package",
-  "package family rfha1000",
-  "tier c",
-  "dist legacy",
-  "legacy source",
-  "unknown mount",
   "pad",
   "mm",
   "pitch",
@@ -51,12 +43,12 @@
   "tier_counts": {
    "C": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
   "dist-legacy/RFHA1000"
  ],
- "embedding_text": "ic.rfha1000 | IC | IC cluster containing 1 tier C part using the RFHA1000 footprint from legacy distribution sources. | rfha1000 ic integrated circuit rfha1000 footprint rfha1000 package package family rfha1000 tier c dist legacy legacy source unknown mount pad mm pitch pins | RFHA1000 | ",
+ "embedding_text": "ic.rfha1000 | IC | 1 ic parts using RFHA1000 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | rfha1000 ic pad mm pitch pins | RFHA1000 | ",
  "class": "ic"
 }

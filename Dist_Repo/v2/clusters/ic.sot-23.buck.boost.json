@@ -5,32 +5,27 @@
  "category_path": [
   "IC"
  ],
- "description": "Integrated circuit cluster containing surface-mount buck and boost IC parts in SOT-23 packages with SOT23_6 footprints.",
+ "description": "1 ic parts for buck, boost using SOT-23 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when needing SMD buck or boost ICs in a SOT-23 package family.",
-  "Confirm the SOT23_6 footprint matching your board layout requirements.",
-  "Evaluate part quality tier and source data for design verification."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SOT-23 land pattern is intended."
  ],
  "avoid_when": [
-  "Design requires a package family other than SOT-23 or footprint other than SOT23_6.",
-  "Application requires IC functionality other than buck or boost.",
-  "Through-hole mounting is required instead of surface-mount (SMD)."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SOT-23."
  ],
  "keywords": [
-  "ic",
-  "sot-23",
   "sot23",
-  "sot23_6",
-  "buck",
-  "boost",
-  "smd",
+  "regulator",
   "vreg",
   "ap63201",
-  "regulator",
-  "chilaboard",
-  "voltage regulator",
   "voltage",
+  "ic",
+  "boost",
   "sot",
+  "buck",
   "dc",
   "with",
   "enable",
@@ -61,7 +56,7 @@
   "tier_counts": {
    "B": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -76,6 +71,6 @@
  "part_ids": [
   "chilaboard-altium-library/VREG_AP63201_SOT23-6/VREG_AP63201_SOT23-6"
  ],
- "embedding_text": "ic.sot-23.buck.boost | IC | Integrated circuit cluster containing surface-mount buck and boost IC parts in SOT-23 packages with SOT23_6 footprints. | ic sot-23 sot23 sot23_6 buck boost smd vreg ap63201 regulator chilaboard voltage regulator voltage sot dc with enable feedback and switch pins | SOT-23 | buck boost",
+ "embedding_text": "ic.sot-23.buck.boost | IC | 1 ic parts for buck, boost using SOT-23 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | sot23 regulator vreg ap63201 voltage ic boost sot buck dc with enable feedback and switch pins | SOT-23 | buck boost",
  "class": "ic"
 }

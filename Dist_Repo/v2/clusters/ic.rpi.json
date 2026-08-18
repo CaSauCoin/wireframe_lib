@@ -5,28 +5,20 @@
  "category_path": [
   "IC"
  ],
- "description": "Through-hole IC component cluster containing 3 parts in the RPI package family with RPI_3, RPI_Z, and RPI_ZC footprints.",
+ "description": "3 ic parts using RPI footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when requiring a through-hole IC part in the RPI package family.",
-  "Verify the specific footprint variant among RPI_3, RPI_Z, and RPI_ZC.",
-  "Confirm suitability of quality tier C parts from chilaboard-altium-library."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a RPI land pattern is intended."
  ],
  "avoid_when": [
-  "Surface mount packaging is required for the layout.",
-  "A package family other than RPI is needed.",
-  "The required footprint is not RPI_3, RPI_Z, or RPI_ZC."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than RPI."
  ],
  "keywords": [
-  "ic",
   "rpi",
-  "through hole",
-  "rpi_3",
-  "rpi_z",
-  "rpi_zc",
-  "rpi package",
-  "rpi footprint",
-  "integrated circuit",
-  "through hole ic",
+  "ic",
   "zc",
   "through",
   "hole",
@@ -56,7 +48,7 @@
   "tier_counts": {
    "C": 3
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
@@ -64,6 +56,6 @@
   "chilaboard-altium-library/RPI_Z/RPI_Z",
   "chilaboard-altium-library/RPI_ZC/RPI_ZC"
  ],
- "embedding_text": "ic.rpi | IC | Through-hole IC component cluster containing 3 parts in the RPI package family with RPI_3, RPI_Z, and RPI_ZC footprints. | ic rpi through hole rpi_3 rpi_z rpi_zc rpi package rpi footprint integrated circuit through hole ic zc through hole pad mm pitch pins | RPI | ",
+ "embedding_text": "ic.rpi | IC | 3 ic parts using RPI footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | rpi ic zc through hole pad mm pitch pins | RPI | ",
  "class": "ic"
 }

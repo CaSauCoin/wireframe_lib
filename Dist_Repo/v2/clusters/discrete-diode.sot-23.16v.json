@@ -6,42 +6,34 @@
   "Discrete",
   "Diode"
  ],
- "description": "Cluster of 6 surface-mount 16V discrete diode parts in SOT-23 footprints from the Alternate-KiCad-Library.",
+ "description": "6 discrete diode parts for 16V using SOT-23 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when requiring a 16V discrete diode in an SMD SOT-23 footprint.",
-  "Choose from Tier A representative parts including BZX84-C16, AZ23C16, 2BZX84-C16, BZB84-B16, and DZ23-C16.",
-  "Use when sourcing components from the Alternate-KiCad-Library."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SOT-23 land pattern is intended."
  ],
  "avoid_when": [
-  "A voltage rating other than 16V is required.",
-  "The board layout requires a footprint or package family other than SOT-23.",
-  "Through-hole mounting is required instead of surface mount (SMD)."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SOT-23."
  ],
  "keywords": [
   "diode",
-  "discrete",
-  "discrete diode",
-  "16v",
-  "sot-23",
-  "smd",
-  "surface mount",
-  "alternate-kicad-library",
-  "kicad",
-  "bzx84-c16",
-  "az23c16",
-  "2bzx84-c16",
-  "bzb84-b16",
-  "dz23-c16",
-  "diode_zener_akl",
   "sot",
   "zener",
+  "16v",
   "dual",
   "akl",
   "alternate",
+  "kicad",
   "library",
+  "discrete",
   "300mw",
   "common",
-  "c16"
+  "c16",
+  "anode",
+  "commonanode",
+  "2bzx84"
  ],
  "facts": {
   "package_family": "SOT-23",
@@ -64,7 +56,7 @@
   "tier_counts": {
    "A": 6
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -116,6 +108,6 @@
   "Alternate-KiCad-Library/Diode_Zener_AKL/DZ23-C16",
   "Alternate-KiCad-Library/Diode_Zener_AKL/MMBZ5246"
  ],
- "embedding_text": "discrete-diode.sot-23.16v | Discrete Diode | Cluster of 6 surface-mount 16V discrete diode parts in SOT-23 footprints from the Alternate-KiCad-Library. | diode discrete discrete diode 16v sot-23 smd surface mount alternate-kicad-library kicad bzx84-c16 az23c16 2bzx84-c16 bzb84-b16 dz23-c16 diode_zener_akl sot zener dual akl alternate library 300mw common c16 | SOT-23 | 16V",
+ "embedding_text": "discrete-diode.sot-23.16v | Discrete Diode | 6 discrete diode parts for 16V using SOT-23 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | diode sot zener 16v dual akl alternate kicad library discrete 300mw common c16 anode commonanode 2bzx84 | SOT-23 | 16V",
  "class": "discrete.diode"
 }

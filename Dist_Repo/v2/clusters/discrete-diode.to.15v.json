@@ -6,43 +6,34 @@
   "Discrete",
   "Diode"
  ],
- "description": "Cluster of 13 tier-A discrete diodes (Zener and Schottky types) in the 15V facet, spanning TO-family footprints (TO-18, TO-126, TO-220, TO-247, TO-263) in both SMD and through-hole mounts, sourced entirely from Alternate-KiCad-Library; metadata is auto-generated, not manually reviewed.",
+ "description": "13 discrete diode parts for 15V using TO footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Confirm whether the candidate part is a Zener or Schottky type, since this cluster mixes both under the same 15V facet",
-  "Check mount type (SMD vs through-hole) against your assembly process before selecting",
-  "All 13 parts are tier A with score 100, but review_status is 'generated', so verify against the source library"
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a TO land pattern is intended."
  ],
  "avoid_when": [
-  "The needed footprint is not one of the listed TO variants",
-  "Electrical ratings beyond the 15V facet (current, power, forward voltage) must be confirmed and are not documented here",
-  "A manually verified/reviewed part is required, since review_status is 'generated'",
-  "The design requires a non-TO package family"
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than TO."
  ],
  "keywords": [
   "diode",
-  "zener diode",
-  "schottky diode",
-  "to package",
-  "to-18",
-  "to-126",
-  "to-220",
-  "to-247",
-  "to-263",
-  "15v",
-  "through hole",
-  "smd",
-  "discrete diode",
-  "alternate-kicad-library",
-  "akl",
-  "vertical package",
-  "tabpin1",
-  "generated metadata",
   "to",
   "schottky",
+  "15v",
   "vertical",
   "zener",
+  "akl",
   "alternate",
-  "kicad"
+  "kicad",
+  "library",
+  "discrete",
+  "dual",
+  "rm",
+  "common",
+  "cathode",
+  "aka"
  ],
  "facts": {
   "package_family": "TO",
@@ -71,7 +62,7 @@
   "tier_counts": {
    "A": 13
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -130,6 +121,6 @@
   "Alternate-KiCad-Library/Diode_Schottky_AKL/STPS40L15CT",
   "Alternate-KiCad-Library/Diode_Schottky_AKL/STPS40L15CW"
  ],
- "embedding_text": "discrete-diode.to.15v | Discrete Diode | Cluster of 13 tier-A discrete diodes (Zener and Schottky types) in the 15V facet, spanning TO-family footprints (TO-18, TO-126, TO-220, TO-247, TO-263) in both SMD and through-hole mounts, sourced entirely from Alternate-KiCad-Library; metadata is auto-generated, not manually reviewed. | diode zener diode schottky diode to package to-18 to-126 to-220 to-247 to-263 15v through hole smd discrete diode alternate-kicad-library akl vertical package tabpin1 generated metadata to schottky vertical zener alternate kicad | TO | 15V",
+ "embedding_text": "discrete-diode.to.15v | Discrete Diode | 13 discrete diode parts for 15V using TO footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | diode to schottky 15v vertical zener akl alternate kicad library discrete dual rm common cathode aka | TO | 15V",
  "class": "discrete.diode"
 }

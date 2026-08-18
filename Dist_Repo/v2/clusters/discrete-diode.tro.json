@@ -6,29 +6,21 @@
   "Discrete",
   "Diode"
  ],
- "description": "Discrete diode cluster containing 1 tier-B part with a TRO footprint.",
+ "description": "1 discrete diode parts using TRO footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Use when a discrete diode with a TRO footprint is required.",
-  "Verify part specifications and footprint dimensions prior to layout.",
-  "Check tier-B source details for the TRO_2W component entry."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a TRO land pattern is intended."
  ],
  "avoid_when": [
-  "A footprint other than TRO is required for the layout.",
-  "Electrical limits or datasheet specifications are not provided in the entry.",
-  "Verified tier-A parts with complete datasheet claims are strictly required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than TRO."
  ],
  "keywords": [
-  "discrete",
-  "diode",
   "tro",
-  "tro_2w",
-  "tro 2w",
-  "discrete diode",
-  "tro footprint",
-  "dist-legacy",
-  "tier b",
-  "tro package",
   "2w",
+  "diode",
   "anode",
   "cathode",
   "two",
@@ -38,7 +30,8 @@
   "with",
   "and",
   "terminals",
-  "axial"
+  "axial",
+  "discrete"
  ],
  "facts": {
   "package_family": "TRO",
@@ -59,7 +52,7 @@
   "tier_counts": {
    "B": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -74,6 +67,6 @@
  "part_ids": [
   "dist-legacy/TRO 2W"
  ],
- "embedding_text": "discrete-diode.tro | Discrete Diode | Discrete diode cluster containing 1 tier-B part with a TRO footprint. | discrete diode tro tro_2w tro 2w discrete diode tro footprint dist-legacy tier b tro package 2w anode cathode two watt in package with and terminals axial | TRO | ",
+ "embedding_text": "discrete-diode.tro | Discrete Diode | 1 discrete diode parts using TRO footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | tro 2w diode anode cathode two watt in package with and terminals axial discrete | TRO | ",
  "class": "discrete.diode"
 }

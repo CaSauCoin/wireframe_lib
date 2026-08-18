@@ -6,36 +6,30 @@
   "Discrete",
   "Transistor"
  ],
- "description": "A cluster of 14 discrete transistor parts associated with TE footprints in SMD, through-hole, or unknown mounting styles.",
+ "description": "14 discrete transistor parts using TE footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select based on required mounting style such as SMD or through-hole.",
-  "Verify the specific TE footprint variant, pin pitch, and orientation.",
-  "Check part quality tier (Tier B or Tier C) and source library origin."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a TE land pattern is intended."
  ],
  "avoid_when": [
-  "The board layout requires a package outside the TE family.",
-  "Tier A verified parts are strictly required.",
-  "Electrical specifications or pinout details are needed but not provided in the cluster data."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than TE."
  ],
  "keywords": [
-  "discrete",
-  "transistor",
   "te",
-  "smd",
-  "through-hole",
-  "mate-n-lok",
-  "horizontal",
-  "vertical",
+  "transistor",
+  "discrete",
   "1x03",
-  "pitch",
-  "p108",
-  "4.0mm",
-  "3.96mm",
-  "4.14mm",
   "pins",
+  "p108",
   "p4",
   "mate",
   "lok",
+  "vertical",
+  "horizontal",
+  "pitch",
   "14mm",
   "nc6",
   "pad",
@@ -73,7 +67,7 @@
    "B": 4,
    "C": 10
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -125,6 +119,6 @@
   "dist-legacy/TE_MATE-N-LOK_1-770967-x_1x03_P4.14mm_Horizontal",
   "celestial-altium-library/TE NC6-P108-03/TE_NC6-P108-03"
  ],
- "embedding_text": "discrete-transistor.te | Discrete Transistor | A cluster of 14 discrete transistor parts associated with TE footprints in SMD, through-hole, or unknown mounting styles. | discrete transistor te smd through-hole mate-n-lok horizontal vertical 1x03 pitch p108 4.0mm 3.96mm 4.14mm pins p4 mate lok 14mm nc6 pad mm | TE | ",
+ "embedding_text": "discrete-transistor.te | Discrete Transistor | 14 discrete transistor parts using TE footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | te transistor discrete 1x03 pins p108 p4 mate lok vertical horizontal pitch 14mm nc6 pad mm | TE | ",
  "class": "discrete.transistor"
 }

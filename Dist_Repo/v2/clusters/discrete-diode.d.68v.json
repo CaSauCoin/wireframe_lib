@@ -6,44 +6,34 @@
   "Discrete",
   "Diode"
  ],
- "description": "Cluster of 91 discrete diode parts rated 68V in D-family footprints, spanning zener (e.g. BZV55B68) and TVS (e.g. 1.5KE68A) types across SMB, SMA, MiniMELF, MELF, SMC, and DO-series through-hole packages.",
+ "description": "91 discrete diode parts for 68V using D footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Confirm zener vs TVS part type from part name/path before selecting",
-  "Match exact footprint (e.g. D_SMB, D_MiniMELF, D_DO-41) to your board layout",
-  "Prefer tier A entries (86 of 91 parts) for higher confidence",
-  "Verify source library (Alternate-KiCad-Library or kicad-symbols) matches your project conventions"
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a D land pattern is intended."
  ],
  "avoid_when": [
-  "Required voltage other than 68V is needed",
-  "A footprint outside the D family is required",
-  "Part type (zener vs TVS) cannot be confirmed from the name",
-  "Only tier B entries match and higher-confidence data is required"
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than D."
  ],
  "keywords": [
   "diode",
-  "zener diode",
-  "tvs diode",
-  "68v",
-  "discrete diode",
-  "d package",
-  "smb",
-  "sma",
-  "minimelf",
-  "melf",
-  "smc",
-  "do-41",
-  "do-35",
-  "do-201",
-  "do-15",
-  "sod81",
-  "sod27",
-  "through hole diode",
-  "smd diode",
   "zener",
+  "68v",
   "tvs",
   "do",
   "discrete",
-  "akl"
+  "akl",
+  "alternate",
+  "kicad",
+  "library",
+  "horizontal",
+  "smb",
+  "unidirectional",
+  "sma",
+  "sod",
+  "series"
  ],
  "facts": {
   "package_family": "D",
@@ -80,7 +70,7 @@
    "A": 86,
    "B": 5
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -217,6 +207,6 @@
   "Alternate-KiCad-Library/Diode_TVS_AKL/BZW03-D68",
   "Alternate-KiCad-Library/Diode_Zener_AKL/BZX884-C68"
  ],
- "embedding_text": "discrete-diode.d.68v | Discrete Diode | Cluster of 91 discrete diode parts rated 68V in D-family footprints, spanning zener (e.g. BZV55B68) and TVS (e.g. 1.5KE68A) types across SMB, SMA, MiniMELF, MELF, SMC, and DO-series through-hole packages. | diode zener diode tvs diode 68v discrete diode d package smb sma minimelf melf smc do-41 do-35 do-201 do-15 sod81 sod27 through hole diode smd diode zener tvs do discrete akl | D | 68V",
+ "embedding_text": "discrete-diode.d.68v | Discrete Diode | 91 discrete diode parts for 68V using D footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | diode zener 68v tvs do discrete akl alternate kicad library horizontal smb unidirectional sma sod series | D | 68V",
  "class": "discrete.diode"
 }

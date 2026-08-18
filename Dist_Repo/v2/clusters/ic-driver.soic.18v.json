@@ -6,31 +6,21 @@
   "IC",
   "Driver"
  ],
- "description": "Surface-mount IC driver cluster comprising 10 Tier-A parts with 18V specifications and SOIC-8_3.9x4.9mm_P1.27mm footprints.",
+ "description": "10 ic driver parts for 18V using SOIC footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when requiring an SMD IC driver with 18V facet specifications.",
-  "Confirm target PCB footprint matches SOIC-8_3.9x4.9mm_P1.27mm.",
-  "Choose among 10 Tier-A parts sourced from KiCad symbols."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SOIC land pattern is intended."
  ],
  "avoid_when": [
-  "Avoid if the design requires non-SMD or through-hole mounting.",
-  "Do not use when package footprint requirements differ from SOIC-8_3.9x4.9mm_P1.27mm.",
-  "Avoid if voltage requirements differ from 18V IC driver specifications."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SOIC."
  ],
  "keywords": [
-  "ic driver",
   "soic",
-  "18v",
-  "smd",
-  "soic-8",
-  "ic.driver",
-  "fan3121xmx",
-  "fan3122xmx",
-  "fan3268",
-  "max626xsa",
-  "max627xsa",
-  "kicad-symbols",
   "driver",
+  "18v",
   "fet",
   "9x4",
   "9mm",
@@ -41,7 +31,9 @@
   "supply",
   "drivers",
   "mosfet",
-  "dual"
+  "dual",
+  "high",
+  "speed"
  ],
  "facts": {
   "package_family": "SOIC",
@@ -64,7 +56,7 @@
   "tier_counts": {
    "A": 10
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -120,6 +112,6 @@
   "kicad-symbols/Driver_FET/TC4427xOA",
   "kicad-symbols/Driver_FET/TC4428xOA"
  ],
- "embedding_text": "ic-driver.soic.18v | IC Driver | Surface-mount IC driver cluster comprising 10 Tier-A parts with 18V specifications and SOIC-8_3.9x4.9mm_P1.27mm footprints. | ic driver soic 18v smd soic-8 ic.driver fan3121xmx fan3122xmx fan3268 max626xsa max627xsa kicad-symbols driver fet 9x4 9mm p1 27mm so ic supply drivers mosfet dual | SOIC | 18V",
+ "embedding_text": "ic-driver.soic.18v | IC Driver | 10 ic driver parts for 18V using SOIC footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | soic driver 18v fet 9x4 9mm p1 27mm so ic supply drivers mosfet dual high speed | SOIC | 18V",
  "class": "ic.driver"
 }

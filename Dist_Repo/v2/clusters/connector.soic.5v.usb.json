@@ -5,31 +5,23 @@
  "category_path": [
   "Connector"
  ],
- "description": "Single-part cluster of 5V/USB-facet connectors in a SOIC-8 (3.9x4.9mm, 1.27mm pitch) SMD footprint, represented by tier A part USB6B1.",
+ "description": "1 connector parts for 5V, USB using SOIC footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Only one part available (USB6B1, tier A, score 100) — verify it fits before use",
-  "Confirm the SOIC-8_3.9x4.9mm_P1.27mm footprint matches your board's land pattern",
-  "Check pin mapping against your schematic before committing to layout"
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SOIC land pattern is intended."
  ],
  "avoid_when": [
-  "Design requires a footprint other than SOIC-8_3.9x4.9mm_P1.27mm",
-  "Through-hole mounting is needed instead of SMD",
-  "Cluster metadata is marked 'generated' and has not been reviewed — confirm before production use"
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SOIC."
  ],
  "keywords": [
-  "connector",
   "soic",
-  "soic-8",
+  "protection",
   "5v",
   "usb",
   "usb6b1",
-  "smd",
-  "3.9x4.9mm",
-  "p1.27mm",
-  "kicad-symbols",
-  "power_protection",
-  "tier a",
-  "protection",
   "power",
   "data",
   "line",
@@ -38,7 +30,8 @@
   "p1",
   "27mm",
   "so",
-  "esd"
+  "esd",
+  "connector"
  ],
  "facts": {
   "package_family": "SOIC",
@@ -62,7 +55,7 @@
   "tier_counts": {
    "A": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -77,6 +70,6 @@
  "part_ids": [
   "kicad-symbols/Power_Protection/USB6B1"
  ],
- "embedding_text": "connector.soic.5v.usb | Connector | Single-part cluster of 5V/USB-facet connectors in a SOIC-8 (3.9x4.9mm, 1.27mm pitch) SMD footprint, represented by tier A part USB6B1. | connector soic soic-8 5v usb usb6b1 smd 3.9x4.9mm p1.27mm kicad-symbols power_protection tier a protection power data line 9x4 9mm p1 27mm so esd | SOIC | 5V USB",
+ "embedding_text": "connector.soic.5v.usb | Connector | 1 connector parts for 5V, USB using SOIC footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | soic protection 5v usb usb6b1 power data line 9x4 9mm p1 27mm so esd connector | SOIC | 5V USB",
  "class": "connector"
 }

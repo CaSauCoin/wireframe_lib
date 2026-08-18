@@ -6,30 +6,21 @@
   "Passive",
   "Resistor"
  ],
- "description": "Cluster of 5 through-hole passive resistor parts in the MOV package family featuring footprints such as MOV_5D, MOV_7D, MOV_10D, and MOV_20D from chilaboard-altium-library.",
+ "description": "5 passive resistor parts using MOV footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select the required footprint variant from MOV_, MOV_5D, MOV_7D, MOV_10D, or MOV_20D.",
-  "Verify compatibility with through-hole mounting specifications.",
-  "Account for tier C quality classification and generated review status."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a MOV land pattern is intended."
  ],
  "avoid_when": [
-  "Surface-mount components are required instead of through-hole mounting.",
-  "The board layout requires a package family other than MOV.",
-  "Planner-visible or tier A qualified parts are required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than MOV."
  ],
  "keywords": [
   "mov",
   "passive",
   "resistor",
-  "passive.resistor",
-  "through_hole",
-  "through hole",
-  "mov_",
-  "mov_5d",
-  "mov_7d",
-  "mov_10d",
-  "mov_20d",
-  "chilaboard-altium-library",
   "through",
   "hole",
   "pad",
@@ -64,7 +55,7 @@
   "tier_counts": {
    "C": 5
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
@@ -74,6 +65,6 @@
   "chilaboard-altium-library/MOV_5D/MOV_5D",
   "chilaboard-altium-library/MOV_7D/MOV_7D"
  ],
- "embedding_text": "passive-resistor.mov | Passive Resistor | Cluster of 5 through-hole passive resistor parts in the MOV package family featuring footprints such as MOV_5D, MOV_7D, MOV_10D, and MOV_20D from chilaboard-altium-library. | mov passive resistor passive.resistor through_hole through hole mov_ mov_5d mov_7d mov_10d mov_20d chilaboard-altium-library through hole pad mm pitch pins 10d 20d 5d 7d | MOV | ",
+ "embedding_text": "passive-resistor.mov | Passive Resistor | 5 passive resistor parts using MOV footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | mov passive resistor through hole pad mm pitch pins 10d 20d 5d 7d | MOV | ",
  "class": "passive.resistor"
 }

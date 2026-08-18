@@ -6,42 +6,34 @@
   "IC",
   "Memory"
  ],
- "description": "Memory IC cluster containing 16 through-hole 5V parts using DIP footprints ranging from DIP-16 to DIP-32.",
+ "description": "16 ic memory parts for 5V using DIP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Match pin count and row width to specified DIP footprint variants.",
-  "Verify application requires 5V supply through-hole memory ICs.",
-  "Prefer tier A quality components within the 16 available parts."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a DIP land pattern is intended."
  ],
  "avoid_when": [
-  "Surface-mount (SMD) packaging is required instead of through-hole.",
-  "Operating voltage other than 5V is required.",
-  "Package format other than DIP is required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than DIP."
  ],
  "keywords": [
-  "ic",
+  "dip",
   "memory",
   "5v",
-  "dip",
-  "through_hole",
-  "dip-16",
-  "dip-24",
-  "dip-28",
-  "dip-32",
-  "hm50256p",
-  "km28c64a",
-  "km28c65a",
-  "hm628128",
   "ram",
   "24mm",
   "dil",
   "pdip",
   "54mm",
+  "ic",
   "tht",
   "bit",
   "obsolete",
   "62mm",
   "access",
-  "time"
+  "time",
+  "supply"
  ],
  "facts": {
   "package_family": "DIP",
@@ -71,7 +63,7 @@
    "A": 15,
    "B": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -133,6 +125,6 @@
   "kicad-symbols/Memory_RAM/uPD4364CX",
   "kicad-symbols/Memory_RAM/M48Zx2"
  ],
- "embedding_text": "ic-memory.dip.5v | IC Memory | Memory IC cluster containing 16 through-hole 5V parts using DIP footprints ranging from DIP-16 to DIP-32. | ic memory 5v dip through_hole dip-16 dip-24 dip-28 dip-32 hm50256p km28c64a km28c65a hm628128 ram 24mm dil pdip 54mm tht bit obsolete 62mm access time | DIP | 5V",
+ "embedding_text": "ic-memory.dip.5v | IC Memory | 16 ic memory parts for 5V using DIP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | dip memory 5v ram 24mm dil pdip 54mm ic tht bit obsolete 62mm access time supply | DIP | 5V",
  "class": "ic.memory"
 }

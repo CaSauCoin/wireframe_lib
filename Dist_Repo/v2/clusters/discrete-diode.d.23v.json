@@ -6,33 +6,22 @@
   "Discrete",
   "Diode"
  ],
- "description": "Discrete diode cluster with 5 Tier-A 23V parts in package family D, providing SMD and through-hole options across SOD-323 and DO-15 footprints.",
+ "description": "5 discrete diode parts for 23V using D footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Choose SOD-323 footprint for SMD applications such as BAT20J.",
-  "Select DO-15 horizontal footprints for through-hole TVS diodes like BZW04 and BZW06.",
-  "Verify specific DO-15 footprint variants according to TVS or Zener pin placement."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a D land pattern is intended."
  ],
  "avoid_when": [
-  "Voltage requirements differ from 23V.",
-  "Package families other than D are required for the layout.",
-  "Footprints outside of SMD SOD-323 or through-hole horizontal DO-15 are needed."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than D."
  ],
  "keywords": [
-  "discrete diode",
-  "23v",
   "diode",
-  "sod-323",
-  "do-15",
   "tvs",
-  "schottky",
-  "bat20j",
-  "bzw04",
-  "bzw06",
-  "smd",
-  "through-hole",
-  "discrete",
-  "alternate-kicad-library",
   "do",
+  "23v",
   "16mm",
   "horizontal",
   "6mm",
@@ -40,8 +29,11 @@
   "alternate",
   "kicad",
   "library",
+  "discrete",
+  "bzw04",
   "unidirectional",
-  "p10"
+  "p10",
+  "series"
  ],
  "facts": {
   "package_family": "D",
@@ -67,7 +59,7 @@
   "tier_counts": {
    "A": 5
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -118,6 +110,6 @@
   "Alternate-KiCad-Library/Diode_TVS_AKL/BZW06-23",
   "Alternate-KiCad-Library/Diode_TVS_AKL/BZW06-23B"
  ],
- "embedding_text": "discrete-diode.d.23v | Discrete Diode | Discrete diode cluster with 5 Tier-A 23V parts in package family D, providing SMD and through-hole options across SOD-323 and DO-15 footprints. | discrete diode 23v diode sod-323 do-15 tvs schottky bat20j bzw04 bzw06 smd through-hole discrete alternate-kicad-library do 16mm horizontal 6mm akl alternate kicad library unidirectional p10 | D | 23V",
+ "embedding_text": "discrete-diode.d.23v | Discrete Diode | 5 discrete diode parts for 23V using D footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | diode tvs do 23v 16mm horizontal 6mm akl alternate kicad library discrete bzw04 unidirectional p10 series | D | 23V",
  "class": "discrete.diode"
 }

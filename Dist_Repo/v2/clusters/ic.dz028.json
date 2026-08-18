@@ -5,28 +5,20 @@
  "category_path": [
   "IC"
  ],
- "description": "Integrated circuit component cluster containing 1 tier C part associated with the DZ028 package family and footprint.",
+ "description": "1 ic parts using DZ028 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Verify exact package dimensions and land pattern compatibility for the DZ028 footprint.",
-  "Check symbol-to-footprint pin mappings and electrical parameters prior to PCB layout.",
-  "Evaluate part quality tier and sourcing verification, as only tier C legacy data is available."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a DZ028 land pattern is intended."
  ],
  "avoid_when": [
-  "The PCB layout requires a package type other than DZ028.",
-  "Required electrical parameters, pinouts, or datasheets are not verified for the part.",
-  "Application requirements dictate planner-visible or higher tier verified components."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than DZ028."
  ],
  "keywords": [
-  "ic",
   "dz028",
-  "dz028 package",
-  "dz028 footprint",
-  "integrated circuit",
-  "tier c",
-  "dist-legacy",
-  "unknown mount",
-  "ic cluster",
-  "ic dz028",
+  "ic",
   "pad",
   "mm",
   "pitch",
@@ -51,12 +43,12 @@
   "tier_counts": {
    "C": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
   "dist-legacy/DZ028"
  ],
- "embedding_text": "ic.dz028 | IC | Integrated circuit component cluster containing 1 tier C part associated with the DZ028 package family and footprint. | ic dz028 dz028 package dz028 footprint integrated circuit tier c dist-legacy unknown mount ic cluster ic dz028 pad mm pitch pins | DZ028 | ",
+ "embedding_text": "ic.dz028 | IC | 1 ic parts using DZ028 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | dz028 ic pad mm pitch pins | DZ028 | ",
  "class": "ic"
 }

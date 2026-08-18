@@ -6,29 +6,23 @@
   "Discrete",
   "Transistor"
  ],
- "description": "Discrete surface-mount transistor cluster rated for 25V in the SO package family with SO-8 footprint compatibility.",
+ "description": "1 discrete transistor parts for 25V using SO footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when requiring a 25V surface-mount discrete transistor in an SO package.",
-  "Verify footprint compatibility with SO-8_3.9x4.9mm_P1.27mm.",
-  "Choose when using Tier A parts from the Alternate-KiCad-Library."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SO land pattern is intended."
  ],
  "avoid_when": [
-  "Operating conditions require voltage ratings other than 25V.",
-  "The PCB design requires through-hole components rather than SMD.",
-  "The footprint or package requirement differs from the SO family."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SO."
  ],
  "keywords": [
-  "discrete transistor",
   "so",
-  "25v",
-  "smd",
-  "so-8",
-  "irf7105",
-  "so-8_3.9x4.9mm_p1.27mm",
-  "alternate-kicad-library",
   "transistor",
-  "discrete",
   "mosfet",
+  "irf7105",
+  "25v",
   "mos",
   "np",
   "akl",
@@ -62,7 +56,7 @@
   "tier_counts": {
    "A": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -77,6 +71,6 @@
  "part_ids": [
   "Alternate-KiCad-Library/Transistor_MOSFET_AKL/IRF7105"
  ],
- "embedding_text": "discrete-transistor.so.25v | Discrete Transistor | Discrete surface-mount transistor cluster rated for 25V in the SO package family with SO-8 footprint compatibility. | discrete transistor so 25v smd so-8 irf7105 so-8_3.9x4.9mm_p1.27mm alternate-kicad-library transistor discrete mosfet mos np akl nmos pmos array 3a 2w alternate kicad library | SO | 25V",
+ "embedding_text": "discrete-transistor.so.25v | Discrete Transistor | 1 discrete transistor parts for 25V using SO footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | so transistor mosfet irf7105 25v mos np akl nmos pmos array 3a 2w alternate kicad library | SO | 25V",
  "class": "discrete.transistor"
 }

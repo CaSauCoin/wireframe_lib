@@ -6,33 +6,24 @@
   "Discrete",
   "Diode"
  ],
- "description": "Discrete diode cluster containing 14 parts in the Vishay package family with SMD and unknown mounts.",
+ "description": "14 discrete diode parts using VISHAY footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when requiring discrete diodes with Vishay footprints like SMP DO-220AA or Vishay_SMPA.",
-  "Choose based on footprint matching within the Vishay package family.",
-  "Filter between Tier B (11 parts) and Tier C (3 parts) quality ratings."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a VISHAY land pattern is intended."
  ],
  "avoid_when": [
-  "Avoid when package footprints outside the Vishay package family are required.",
-  "Avoid if mounts other than SMD or unknown are required.",
-  "Avoid when Tier A quality classification is required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than VISHAY."
  ],
  "keywords": [
-  "discrete",
-  "diode",
   "vishay",
-  "smd",
-  "smp do-220aa",
-  "vishay_smpa",
-  "discrete.diode",
-  "do-220aa",
-  "celestial-altium-library",
-  "dist-legacy",
-  "tier b",
-  "tier c",
+  "diode",
   "wslf2512",
   "anode",
   "cathode",
+  "discrete",
   "package",
   "mm",
   "pin",
@@ -41,7 +32,8 @@
   "do",
   "pins",
   "in",
-  "smp"
+  "smp",
+  "220aa"
  ],
  "facts": {
   "package_family": "VISHAY",
@@ -68,7 +60,7 @@
    "B": 11,
    "C": 3
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -128,6 +120,6 @@
   "celestial-altium-library/VISHAY SMP DO-220AA/VISHAY_SMP_DO-220AA",
   "dist-legacy/Vishay_SMPA"
  ],
- "embedding_text": "discrete-diode.vishay | Discrete Diode | Discrete diode cluster containing 14 parts in the Vishay package family with SMD and unknown mounts. | discrete diode vishay smd smp do-220aa vishay_smpa discrete.diode do-220aa celestial-altium-library dist-legacy tier b tier c wslf2512 anode cathode package mm pin with and do pins in smp | VISHAY | ",
+ "embedding_text": "discrete-diode.vishay | Discrete Diode | 14 discrete diode parts using VISHAY footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | vishay diode wslf2512 anode cathode discrete package mm pin with and do pins in smp 220aa | VISHAY | ",
  "class": "discrete.diode"
 }

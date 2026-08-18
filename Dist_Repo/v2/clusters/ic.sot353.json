@@ -5,31 +5,20 @@
  "category_path": [
   "IC"
  ],
- "description": "Integrated circuit cluster of 8 surface-mount parts in the SOT353 package family using SOT353_5 footprints.",
+ "description": "8 ic parts using SOT353 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when needing surface-mount integrated circuits in SOT353 packaging with SOT353_5 footprints.",
-  "Evaluate parts based on quality tier ratings, which consist of 7 tier B and 1 tier C entries.",
-  "Confirm specific part specifications and footprints from the chilaboard-altium-library source."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SOT353 land pattern is intended."
  ],
  "avoid_when": [
-  "Do not use when the board design requires through-hole components instead of surface-mount.",
-  "Avoid if the design requires a footprint or package family other than SOT353 or SOT353_5.",
-  "Avoid if tier A quality-rated components are strictly required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SOT353."
  ],
  "keywords": [
   "sot353",
-  "sot353_5",
   "ic",
-  "integrated circuit",
-  "smd",
-  "surface mount",
-  "chilaboard-altium-library",
-  "sn74lvc1g125",
-  "sn74ahc1g125",
-  "nc7sp125p5x",
-  "nc7sz08",
-  "nc7sz66",
-  "package family",
   "buffer",
   "logic",
   "single",
@@ -40,7 +29,10 @@
   "state",
   "and",
   "with",
-  "output"
+  "output",
+  "bus",
+  "gate",
+  "surface"
  ],
  "facts": {
   "package_family": "SOT353",
@@ -62,7 +54,7 @@
    "B": 7,
    "C": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -116,6 +108,6 @@
   "chilaboard-altium-library/SN74LVC1G07_SOT353/SN74LVC1G07_SOT353",
   "chilaboard-altium-library/SOT353_5/SOT353_5"
  ],
- "embedding_text": "ic.sot353 | IC | Integrated circuit cluster of 8 surface-mount parts in the SOT353 package family using SOT353_5 footprints. | sot353 sot353_5 ic integrated circuit smd surface mount chilaboard-altium-library sn74lvc1g125 sn74ahc1g125 nc7sp125p5x nc7sz08 nc7sz66 package family buffer logic single in sot package pin state and with output | SOT353 | ",
+ "embedding_text": "ic.sot353 | IC | 8 ic parts using SOT353 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | sot353 ic buffer logic single in sot package pin state and with output bus gate surface | SOT353 | ",
  "class": "ic"
 }

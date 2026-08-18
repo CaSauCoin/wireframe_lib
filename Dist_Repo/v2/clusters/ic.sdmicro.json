@@ -5,30 +5,20 @@
  "category_path": [
   "IC"
  ],
- "description": "Surface-mount IC component cluster containing 5 parts using SDMICRO package footprints including SDMICRO_AT, SDMICRO_DM3AT, SDMICRO_DM3CS, SDMICRO_GCT, and SDMICRO_TE.",
+ "description": "5 ic parts using SDMICRO footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Choose when requiring surface-mount IC parts with an SDMICRO package family footprint.",
-  "Match the required board footprint to variants such as SDMICRO_AT, SDMICRO_DM3AT, SDMICRO_DM3CS, SDMICRO_GCT, or SDMICRO_TE.",
-  "Confirm pinout and symbol mapping against project requirements."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SDMICRO land pattern is intended."
  ],
  "avoid_when": [
-  "The design requires a package family other than SDMICRO.",
-  "Through-hole mounting or non-SMD footprints are required.",
-  "The specific SDMICRO footprint variant needed is not included in this cluster."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SDMICRO."
  ],
  "keywords": [
   "sdmicro",
   "ic",
-  "smd",
-  "surface mount",
-  "sdmicro_at",
-  "sdmicro_dm3at",
-  "sdmicro_dm3cs",
-  "sdmicro_gct",
-  "sdmicro_te",
-  "chilaboard-altium-library",
-  "package sdmicro",
-  "ic sdmicro",
   "at",
   "surface",
   "mount",
@@ -64,7 +54,7 @@
   "tier_counts": {
    "C": 5
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
@@ -74,6 +64,6 @@
   "chilaboard-altium-library/SDMICRO_GCT/SDMICRO_GCT",
   "chilaboard-altium-library/SDMICRO_TE/SDMICRO_TE"
  ],
- "embedding_text": "ic.sdmicro | IC | Surface-mount IC component cluster containing 5 parts using SDMICRO package footprints including SDMICRO_AT, SDMICRO_DM3AT, SDMICRO_DM3CS, SDMICRO_GCT, and SDMICRO_TE. | sdmicro ic smd surface mount sdmicro_at sdmicro_dm3at sdmicro_dm3cs sdmicro_gct sdmicro_te chilaboard-altium-library package sdmicro ic sdmicro at surface mount pad mm pitch pins dm3at dm3cs gct te | SDMICRO | ",
+ "embedding_text": "ic.sdmicro | IC | 5 ic parts using SDMICRO footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | sdmicro ic at surface mount pad mm pitch pins dm3at dm3cs gct te | SDMICRO | ",
  "class": "ic"
 }

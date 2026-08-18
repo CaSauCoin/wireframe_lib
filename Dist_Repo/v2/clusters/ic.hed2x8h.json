@@ -5,28 +5,20 @@
  "category_path": [
   "IC"
  ],
- "description": "Integrated circuit cluster containing 1 tier C part using the HED2X8H footprint and package family.",
+ "description": "1 ic parts using HED2X8H footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Use when an IC component requiring a HED2X8H land pattern is specified.",
-  "Verify component mounting details as mount type is recorded as unknown.",
-  "Ensure compatibility with tier C quality parts sourced from legacy distribution."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a HED2X8H land pattern is intended."
  ],
  "avoid_when": [
-  "The board layout requires a footprint or package family other than HED2X8H.",
-  "The application requires verified mounting specifications rather than unknown mount status.",
-  "Higher quality tier classification or planner-visible parts are required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than HED2X8H."
  ],
  "keywords": [
-  "ic",
   "hed2x8h",
-  "ic hed2x8h",
-  "hed2x8h footprint",
-  "hed2x8h package",
-  "package family hed2x8h",
-  "tier c",
-  "dist-legacy",
-  "unknown mount",
-  "integrated circuit",
+  "ic",
   "pad",
   "mm",
   "pitch",
@@ -51,12 +43,12 @@
   "tier_counts": {
    "C": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
   "dist-legacy/HED2X8H"
  ],
- "embedding_text": "ic.hed2x8h | IC | Integrated circuit cluster containing 1 tier C part using the HED2X8H footprint and package family. | ic hed2x8h ic hed2x8h hed2x8h footprint hed2x8h package package family hed2x8h tier c dist-legacy unknown mount integrated circuit pad mm pitch pins | HED2X8H | ",
+ "embedding_text": "ic.hed2x8h | IC | 1 ic parts using HED2X8H footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | hed2x8h ic pad mm pitch pins | HED2X8H | ",
  "class": "ic"
 }

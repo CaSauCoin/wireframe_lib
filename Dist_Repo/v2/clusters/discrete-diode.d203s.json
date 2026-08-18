@@ -6,28 +6,21 @@
   "Discrete",
   "Diode"
  ],
- "description": "Discrete diode cluster containing 1 part associated with the D203S footprint and package family.",
+ "description": "1 discrete diode parts using D203S footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when layout requires a D203S footprint or package family.",
-  "Check part details, pin mapping, and footprint compatibility before committing to a PCB.",
-  "Review source trust and quality tier attributes."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a D203S land pattern is intended."
  ],
  "avoid_when": [
-  "The target layout requires a package family other than D203S.",
-  "Electrical parameters, ratings, or pinouts are not fully specified for the part.",
-  "Tier C quality status does not satisfy project requirements."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than D203S."
  ],
  "keywords": [
+  "d203s",
   "discrete",
   "diode",
-  "discrete diode",
-  "d203s",
-  "d203s package",
-  "d203s footprint",
-  "discrete.diode",
-  "tier c",
-  "dist-legacy",
-  "package family",
   "pad",
   "mm",
   "pitch",
@@ -52,12 +45,12 @@
   "tier_counts": {
    "C": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
   "dist-legacy/D203S"
  ],
- "embedding_text": "discrete-diode.d203s | Discrete Diode | Discrete diode cluster containing 1 part associated with the D203S footprint and package family. | discrete diode discrete diode d203s d203s package d203s footprint discrete.diode tier c dist-legacy package family pad mm pitch pins | D203S | ",
+ "embedding_text": "discrete-diode.d203s | Discrete Diode | 1 discrete diode parts using D203S footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | d203s discrete diode pad mm pitch pins | D203S | ",
  "class": "discrete.diode"
 }

@@ -5,34 +5,27 @@
  "category_path": [
   "IC"
  ],
- "description": "Surface-mount buck regulator ICs in the SON80 package family, supporting SON80_10T_4040 and SON80_14T_5060 footprints.",
+ "description": "9 ic parts for buck using SON80 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when requiring a surface-mount buck converter IC in a SON80 package family.",
-  "Choose between SON80_10T_4040 and SON80_14T_5060 footprint variations.",
-  "Verify selection among Tier B components from chilaboard-altium-library."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SON80 land pattern is intended."
  ],
  "avoid_when": [
-  "Avoid when board layout requires package families other than SON80.",
-  "Do not use if through-hole mounting or non-buck regulator topologies are required.",
-  "Avoid if footprints other than SON80_10T_4040 or SON80_14T_5060 are needed."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SON80."
  ],
  "keywords": [
-  "ic",
-  "buck",
-  "son80",
-  "smd",
-  "son80_10t_4040",
-  "son80_14t_5060",
-  "wson10",
-  "son10",
-  "vreg",
-  "chilaboard-altium-library",
-  "tier b",
-  "buck ic",
   "regulator",
+  "vreg",
+  "ic",
+  "son80",
+  "buck",
   "step",
   "down",
   "switching",
+  "wson10",
   "wson",
   "voltage",
   "in",
@@ -63,7 +56,7 @@
   "tier_counts": {
    "B": 9
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -118,6 +111,6 @@
   "chilaboard-altium-library/VREG_LM2677_SON14/VREG_LM2677_SON14",
   "chilaboard-altium-library/VREG_LM2678_SON14/VREG_LM2678_SON14"
  ],
- "embedding_text": "ic.son80.buck | IC | Surface-mount buck regulator ICs in the SON80 package family, supporting SON80_10T_4040 and SON80_14T_5060 footprints. | ic buck son80 smd son80_10t_4040 son80_14t_5060 wson10 son10 vreg chilaboard-altium-library tier b buck ic regulator step down switching wson voltage in package and 10t power | SON80 | buck",
+ "embedding_text": "ic.son80.buck | IC | 9 ic parts for buck using SON80 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | regulator vreg ic son80 buck step down switching wson10 wson voltage in package and 10t power | SON80 | buck",
  "class": "ic"
 }

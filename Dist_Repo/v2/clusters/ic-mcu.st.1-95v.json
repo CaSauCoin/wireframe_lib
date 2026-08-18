@@ -6,42 +6,34 @@
   "IC",
   "Microcontroller"
  ],
- "description": "Cluster of 7 surface-mount ST microcontroller ICs operating at 1.95V in WLCSP footprints from KiCad symbols.",
+ "description": "7 ic microcontroller parts for 1.95V using ST footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select based on exact WLCSP footprint requirements ranging from 25 to 66 pins.",
-  "Prefer Tier A representative parts such as STM32F038E6Yx or STM32F058T8Yx over Tier B parts.",
-  "Verify compatibility with SMD mounting and 1.95V operation."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a ST land pattern is intended."
  ],
  "avoid_when": [
-  "Through-hole mounting or non-SMD designs are required.",
-  "The design requires non-WLCSP package footprints or non-ST package families.",
-  "Operating voltage requirements differ from 1.95V."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than ST."
  ],
  "keywords": [
-  "ic",
-  "microcontroller",
-  "1.95v",
   "st",
-  "smd",
-  "wlcsp",
-  "wlcsp-25",
-  "wlcsp-36",
-  "wlcsp-49",
-  "wlcsp-64",
-  "wlcsp-66",
-  "stm32f0",
-  "stm32f038e6yx",
-  "stm32f058t8yx",
-  "kicad-symbols",
   "mcu",
   "arm",
   "cortex",
   "95v",
+  "stm32f0",
   "m0",
   "stmicroelectronics",
   "flash",
   "ram",
-  "mhz"
+  "mhz",
+  "gpio",
+  "wlcsp",
+  "csp",
+  "ic",
+  "microcontroller"
  ],
  "facts": {
   "package_family": "ST",
@@ -71,7 +63,7 @@
    "A": 2,
    "B": 5
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -124,6 +116,6 @@
   "kicad-symbols/MCU_ST_STM32F3/STM32F318C8Yx",
   "kicad-symbols/MCU_ST_STM32F3/STM32F378RCYx"
  ],
- "embedding_text": "ic-mcu.st.1-95v | IC Microcontroller | Cluster of 7 surface-mount ST microcontroller ICs operating at 1.95V in WLCSP footprints from KiCad symbols. | ic microcontroller 1.95v st smd wlcsp wlcsp-25 wlcsp-36 wlcsp-49 wlcsp-64 wlcsp-66 stm32f0 stm32f038e6yx stm32f058t8yx kicad-symbols mcu arm cortex 95v m0 stmicroelectronics flash ram mhz | ST | 1.95V",
+ "embedding_text": "ic-mcu.st.1-95v | IC Microcontroller | 7 ic microcontroller parts for 1.95V using ST footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | st mcu arm cortex 95v stm32f0 m0 stmicroelectronics flash ram mhz gpio wlcsp csp ic microcontroller | ST | 1.95V",
  "class": "ic.mcu"
 }

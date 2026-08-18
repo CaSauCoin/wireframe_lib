@@ -6,42 +6,34 @@
   "IC",
   "Interface"
  ],
- "description": "Surface-mount I2C interface integrated circuits packaged in SSOP footprints ranging from 8 to 28 pins.",
+ "description": "16 ic interface parts for I2C using SSOP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Choose based on required SSOP pin count between 8 and 28 pins.",
-  "Verify specific footprint body dimensions and lead pitch (0.65mm or 0.635mm).",
-  "Select for surface-mount I2C interface applications requiring SSOP packaging."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SSOP land pattern is intended."
  ],
  "avoid_when": [
-  "Through-hole mounting or non-SMD assembly is required.",
-  "Component package styles other than SSOP are needed.",
-  "Interface protocols other than I2C are required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SSOP."
  ],
  "keywords": [
-  "ic",
+  "ssop",
   "interface",
   "i2c",
-  "ssop",
-  "smd",
-  "surface mount",
-  "ssop-8",
-  "ssop-16",
-  "ssop-20",
-  "ssop-24",
-  "ssop-28",
-  "pca9306",
-  "mcp23008",
-  "mcp23017",
-  "mcp23018",
-  "ltc4314",
   "expander",
   "p0",
+  "ic",
   "65mm",
   "expansion",
   "so",
   "bit",
   "port",
-  "smbus"
+  "smbus",
+  "2mm",
+  "3x8",
+  "and",
+  "interrupts"
  ],
  "facts": {
   "package_family": "SSOP",
@@ -71,7 +63,7 @@
   "tier_counts": {
    "A": 16
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -133,6 +125,6 @@
   "kicad-symbols/Interface_Expansion/TCA9555DBR",
   "kicad-symbols/Interface_Expansion/TCA9555DBT"
  ],
- "embedding_text": "ic-interface.ssop.i2c | IC Interface | Surface-mount I2C interface integrated circuits packaged in SSOP footprints ranging from 8 to 28 pins. | ic interface i2c ssop smd surface mount ssop-8 ssop-16 ssop-20 ssop-24 ssop-28 pca9306 mcp23008 mcp23017 mcp23018 ltc4314 expander p0 65mm expansion so bit port smbus | SSOP | I2C",
+ "embedding_text": "ic-interface.ssop.i2c | IC Interface | 16 ic interface parts for I2C using SSOP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | ssop interface i2c expander p0 ic 65mm expansion so bit port smbus 2mm 3x8 and interrupts | SSOP | I2C",
  "class": "ic.interface"
 }

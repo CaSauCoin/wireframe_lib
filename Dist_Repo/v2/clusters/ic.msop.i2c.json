@@ -5,28 +5,20 @@
  "category_path": [
   "IC"
  ],
- "description": "Integrated circuit cluster containing surface-mount I2C interface components in MSOP package footprints.",
+ "description": "1 ic parts for I2C using MSOP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select for I2C integrated circuits requiring surface-mount MSOP packaging.",
-  "Verify footprint compatibility with MSOP-8 land patterns.",
-  "Check source availability in the JLCPCB-Kicad-Library."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a MSOP land pattern is intended."
  ],
  "avoid_when": [
-  "The PCB layout requires non-MSOP packages or through-hole mounting.",
-  "A communication interface other than I2C is required.",
-  "Tier A quality status is strictly required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than MSOP."
  ],
  "keywords": [
-  "ic",
-  "i2c",
   "msop",
-  "msop-8",
-  "smd",
-  "surface mount",
-  "real time clock",
-  "mcp79400-i/ms",
-  "clock",
-  "jlcpcb-kicad-library",
+  "i2c",
   "real",
   "time",
   "l3",
@@ -34,6 +26,7 @@
   "p0",
   "ls4",
   "bl",
+  "clock",
   "2ua",
   "mcp79400",
   "ms",
@@ -62,7 +55,7 @@
   "tier_counts": {
    "B": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -77,6 +70,6 @@
  "part_ids": [
   "JLCPCB-Kicad-Library/636421/Real Time Clock, I2C, 1.2uA, MCP79400-I/MS"
  ],
- "embedding_text": "ic.msop.i2c | IC | Integrated circuit cluster containing surface-mount I2C interface components in MSOP package footprints. | ic i2c msop msop-8 smd surface mount real time clock mcp79400-i/ms clock jlcpcb-kicad-library real time l3 w3 p0 ls4 bl 2ua mcp79400 ms clocks rohs footprint | MSOP | I2C",
+ "embedding_text": "ic.msop.i2c | IC | 1 ic parts for I2C using MSOP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | msop i2c real time l3 w3 p0 ls4 bl clock 2ua mcp79400 ms clocks rohs footprint | MSOP | I2C",
  "class": "ic"
 }

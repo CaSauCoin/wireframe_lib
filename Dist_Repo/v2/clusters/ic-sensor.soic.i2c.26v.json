@@ -6,31 +6,23 @@
   "IC",
   "Sensor"
  ],
- "description": "Cluster of surface-mount I2C sensor ICs in SOIC-8 footprints rated for 26V applications, featuring Tier A parts INA219AxD and INA219BxD.",
+ "description": "2 ic sensor parts for I2C, 26V using SOIC footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when requiring an I2C sensor IC in a surface-mount SOIC package.",
-  "Verify footprint compatibility with SOIC-8_3.9x4.9mm_P1.27mm.",
-  "Choose between Tier A variants INA219AxD and INA219BxD based on part specifications."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SOIC land pattern is intended."
  ],
  "avoid_when": [
-  "Avoid if the design requires non-SOIC packages or through-hole mounting.",
-  "Do not use when an interface other than I2C is required.",
-  "Avoid if operating voltage requirements exceed 26V."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SOIC."
  ],
  "keywords": [
-  "ic",
-  "sensor",
-  "i2c",
-  "26v",
   "soic",
-  "soic-8",
-  "smd",
-  "ina219axd",
-  "ina219bxd",
-  "sensor ic",
-  "surface mount",
-  "kicad",
+  "i2c",
+  "sensor",
   "current",
+  "26v",
   "energy",
   "zero",
   "drift",
@@ -65,7 +57,7 @@
   "tier_counts": {
    "A": 2
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -89,6 +81,6 @@
   "kicad-symbols/Sensor_Energy/INA219AxD",
   "kicad-symbols/Sensor_Energy/INA219BxD"
  ],
- "embedding_text": "ic-sensor.soic.i2c.26v | IC Sensor | Cluster of surface-mount I2C sensor ICs in SOIC-8 footprints rated for 26V applications, featuring Tier A parts INA219AxD and INA219BxD. | ic sensor i2c 26v soic soic-8 smd ina219axd ina219bxd sensor ic surface mount kicad current energy zero drift bidirectional power monitor with interface 9x4 9mm p1 | SOIC | I2C 26V",
+ "embedding_text": "ic-sensor.soic.i2c.26v | IC Sensor | 2 ic sensor parts for I2C, 26V using SOIC footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | soic i2c sensor current 26v energy zero drift bidirectional power monitor with interface 9x4 9mm p1 | SOIC | I2C 26V",
  "class": "ic.sensor"
 }

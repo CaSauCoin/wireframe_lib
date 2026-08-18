@@ -6,44 +6,34 @@
   "Discrete",
   "Diode"
  ],
- "description": "SMD switching/rectifier diodes rated 100V in SOT-family packages (SOT-23/SC-70 variants, SOT-143, SOT-223, SOT-666/883), spanning single, dual, and tab-pin configurations.",
+ "description": "25 discrete diode parts for 100V using SOT footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Match the exact SOT footprint variant (e.g., SOT-323_SC-70 vs SOT-363_SC-70-6) to the PCB land pattern.",
-  "Prefer tier A parts; tier B parts have lower confidence.",
-  "Confirm the part's actual current/speed rating against your circuit need before use, as only the 100V facet is confirmed here.",
-  "Use single-diode vs dual-diode (SC-70-5/6) packages based on pin count required."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SOT land pattern is intended."
  ],
  "avoid_when": [
-  "Design requires a through-hole diode package.",
-  "Required voltage rating exceeds 100V.",
-  "Exact footprint (pad pitch/pin count) cannot be confirmed for the chosen part.",
-  "A tier B or unreviewed entry is the only match and traceability is required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SOT."
  ],
  "keywords": [
-  "sot diode 100v",
-  "sot-23 diode",
-  "sc-70 diode",
-  "sot-143 diode",
-  "sot-223 diode",
-  "sot-363 dual diode",
-  "sot-666 diode",
-  "sot-883 diode",
-  "smd diode 100v",
-  "discrete diode sot package",
-  "bas16w",
-  "bav70",
-  "20cjq100",
-  "bas16vv",
-  "dual diode sc-70-6",
-  "tab pin diode sot-223",
-  "kicad diode symbol",
-  "100v smd diode",
   "sot",
   "diode",
   "100v",
   "discrete",
   "sc",
-  "akl"
+  "akl",
+  "dual",
+  "alternate",
+  "kicad",
+  "library",
+  "switching",
+  "small",
+  "signal",
+  "common",
+  "cathode",
+  "fast"
  ],
  "facts": {
   "package_family": "SOT",
@@ -75,7 +65,7 @@
    "A": 20,
    "B": 5
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -146,6 +136,6 @@
   "Alternate-KiCad-Library/Diode_AKL/BAV70T",
   "Alternate-KiCad-Library/Diode_AKL/BAS16T"
  ],
- "embedding_text": "discrete-diode.sot.100v | Discrete Diode | SMD switching/rectifier diodes rated 100V in SOT-family packages (SOT-23/SC-70 variants, SOT-143, SOT-223, SOT-666/883), spanning single, dual, and tab-pin configurations. | sot diode 100v sot-23 diode sc-70 diode sot-143 diode sot-223 diode sot-363 dual diode sot-666 diode sot-883 diode smd diode 100v discrete diode sot package bas16w bav70 20cjq100 bas16vv dual diode sc-70-6 tab pin diode sot-223 kicad diode symbol 100v smd diode sot diode 100v discrete sc akl | SOT | 100V",
+ "embedding_text": "discrete-diode.sot.100v | Discrete Diode | 25 discrete diode parts for 100V using SOT footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | sot diode 100v discrete sc akl dual alternate kicad library switching small signal common cathode fast | SOT | 100V",
  "class": "discrete.diode"
 }

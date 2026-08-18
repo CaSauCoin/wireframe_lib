@@ -6,42 +6,34 @@
   "Discrete",
   "BJT"
  ],
- "description": "Cluster of 32 SOT-23 discrete BJT parts under the 30V facet, all tier A, sourced from Alternate-KiCad-Library and kicad-symbols.",
+ "description": "32 discrete bjt parts for 30V using SOT-23 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "All 32 candidates are tier A; distinguish by exact part number and source library.",
-  "Confirm the 30V facet matches your circuit's voltage requirement.",
-  "Verify the SOT-23 footprint matches the intended PCB land pattern."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SOT-23 land pattern is intended."
  ],
  "avoid_when": [
-  "Design requires a package other than SOT-23.",
-  "Circuit voltage requirement differs from the 30V facet.",
-  "SMD mounting is not compatible with the target board assembly."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SOT-23."
  ],
  "keywords": [
-  "sot-23",
-  "bjt",
-  "transistor",
-  "discrete transistor",
-  "30v",
-  "smd",
-  "surface mount",
-  "kicad-symbols",
-  "alternate-kicad-library",
-  "bc848",
-  "bc849",
-  "bc858",
-  "bc859",
-  "tier a",
-  "discrete bjt",
-  "sot-23 footprint",
   "sot",
+  "transistor",
+  "bjt",
+  "30v",
   "npn",
   "discrete",
   "akl",
   "alternate",
   "kicad",
   "library",
-  "pnp"
+  "pnp",
+  "darlington",
+  "250mw",
+  "to",
+  "100ma",
+  "complementary"
  ],
  "facts": {
   "package_family": "SOT-23",
@@ -65,7 +57,7 @@
   "tier_counts": {
    "A": 32
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -143,6 +135,6 @@
   "Alternate-KiCad-Library/Transistor_BJT_Darlington_AKL/PMBTA14",
   "Alternate-KiCad-Library/Transistor_BJT_Darlington_AKL/PMBTA64"
  ],
- "embedding_text": "discrete-bjt.sot-23.30v | Discrete BJT | Cluster of 32 SOT-23 discrete BJT parts under the 30V facet, all tier A, sourced from Alternate-KiCad-Library and kicad-symbols. | sot-23 bjt transistor discrete transistor 30v smd surface mount kicad-symbols alternate-kicad-library bc848 bc849 bc858 bc859 tier a discrete bjt sot-23 footprint sot npn discrete akl alternate kicad library pnp | SOT-23 | 30V",
+ "embedding_text": "discrete-bjt.sot-23.30v | Discrete BJT | 32 discrete bjt parts for 30V using SOT-23 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | sot transistor bjt 30v npn discrete akl alternate kicad library pnp darlington 250mw to 100ma complementary | SOT-23 | 30V",
  "class": "discrete.bjt"
 }

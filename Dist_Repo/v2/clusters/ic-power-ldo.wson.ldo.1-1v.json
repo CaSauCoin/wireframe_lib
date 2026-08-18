@@ -7,33 +7,21 @@
   "Power",
   "Linear Regulator"
  ],
- "description": "Surface-mount 1.1V LDO linear regulator cluster in a WSON package family featuring tier-A part LP5912-1.1DRV with a WSON-6-1EP thermal via footprint.",
+ "description": "1 ic power linear regulator parts for LDO, 1.1V using WSON footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when requiring a fixed 1.1V LDO linear regulator in an SMD WSON package.",
-  "Choose for designs utilizing the WSON-6-1EP_2x2mm_P0.65mm_EP1x1.6mm_ThermalVias footprint.",
-  "Suitable when selecting a tier-A part sourced from KiCad symbols."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a WSON land pattern is intended."
  ],
  "avoid_when": [
-  "Do not use if an output voltage other than 1.1V is required.",
-  "Avoid if non-SMD mounting or a package family other than WSON is needed.",
-  "Do not use if the board layout cannot accommodate the specific WSON-6-1EP footprint."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than WSON."
  ],
  "keywords": [
-  "ic",
-  "power",
-  "linear regulator",
-  "ldo",
-  "1.1v",
   "wson",
-  "smd",
-  "wson-6-1ep",
-  "lp5912-1.1drv",
-  "kicad-symbols",
-  "2x2mm",
-  "p0.65mm",
-  "ep1x1.6mm",
-  "thermalvias",
   "low",
+  "ldo",
   "regulator",
   "linear",
   "noise",
@@ -42,7 +30,11 @@
   "1drv",
   "ma",
   "ultra",
-  "iq"
+  "iq",
+  "1ep",
+  "2x2mm",
+  "p0",
+  "65mm"
  ],
  "facts": {
   "package_family": "WSON",
@@ -66,7 +58,7 @@
   "tier_counts": {
    "A": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -81,6 +73,6 @@
  "part_ids": [
   "kicad-symbols/Regulator_Linear/LP5912-1.1DRV"
  ],
- "embedding_text": "ic-power-ldo.wson.ldo.1-1v | IC Power Linear Regulator | Surface-mount 1.1V LDO linear regulator cluster in a WSON package family featuring tier-A part LP5912-1.1DRV with a WSON-6-1EP thermal via footprint. | ic power linear regulator ldo 1.1v wson smd wson-6-1ep lp5912-1.1drv kicad-symbols 2x2mm p0.65mm ep1x1.6mm thermalvias low regulator linear noise 1v lp5912 1drv ma ultra iq | WSON | LDO 1.1V",
+ "embedding_text": "ic-power-ldo.wson.ldo.1-1v | IC Power Linear Regulator | 1 ic power linear regulator parts for LDO, 1.1V using WSON footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | wson low ldo regulator linear noise 1v lp5912 1drv ma ultra iq 1ep 2x2mm p0 65mm | WSON | LDO 1.1V",
  "class": "ic.power.ldo"
 }

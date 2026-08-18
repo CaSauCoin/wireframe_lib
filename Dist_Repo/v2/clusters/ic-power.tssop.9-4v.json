@@ -6,30 +6,22 @@
   "IC",
   "Power"
  ],
- "description": "Cluster of surface-mount power ICs in TSSOP packaging, associated with 9.4V ratings and TSSOP-8_4.4x3mm_P0.65mm footprints.",
+ "description": "2 ic power parts for 9.4V using TSSOP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when requiring surface-mount (SMD) power ICs in TSSOP packaging.",
-  "Verify compatibility with TSSOP-8_4.4x3mm_P0.65mm footprint requirements.",
-  "Choose when using 9.4V power IC components such as UCC3801 or UCC3813-1."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a TSSOP land pattern is intended."
  ],
  "avoid_when": [
-  "Do not use if through-hole mounting or non-SMD mounting is required.",
-  "Avoid when the design requires package families other than TSSOP.",
-  "Avoid if the board layout does not support the TSSOP-8_4.4x3mm_P0.65mm footprint."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than TSSOP."
  ],
  "keywords": [
-  "ic",
-  "power",
   "tssop",
-  "9.4v",
-  "smd",
-  "tssop-8_4.4x3mm_p0.65mm",
-  "ucc3801",
-  "ucc3813-1",
-  "regulator controller",
-  "kicad-symbols",
   "4v",
   "controller",
+  "power",
   "pwm",
   "regulator",
   "low",
@@ -64,7 +56,7 @@
   "tier_counts": {
    "A": 2
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -88,6 +80,6 @@
   "kicad-symbols/Regulator_Controller/UCC3801",
   "kicad-symbols/Regulator_Controller/UCC3813-1"
  ],
- "embedding_text": "ic-power.tssop.9-4v | IC Power | Cluster of surface-mount power ICs in TSSOP packaging, associated with 9.4V ratings and TSSOP-8_4.4x3mm_P0.65mm footprints. | ic power tssop 9.4v smd tssop-8_4.4x3mm_p0.65mm ucc3801 ucc3813-1 regulator controller kicad-symbols 4v controller pwm regulator low bicmos current mode duty cycle uvlo dip soic 4x3mm | TSSOP | 9.4V",
+ "embedding_text": "ic-power.tssop.9-4v | IC Power | 2 ic power parts for 9.4V using TSSOP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | tssop 4v controller power pwm regulator low bicmos current mode duty cycle uvlo dip soic 4x3mm | TSSOP | 9.4V",
  "class": "ic.power"
 }

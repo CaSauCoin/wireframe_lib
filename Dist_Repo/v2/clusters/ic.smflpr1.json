@@ -5,28 +5,20 @@
  "category_path": [
   "IC"
  ],
- "description": "IC component cluster with a single tier C part utilizing the SMFLPR1-2.5 footprint.",
+ "description": "1 ic parts using SMFLPR1 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Confirm the board layout requires the SMFLPR1-2.5 footprint.",
-  "Verify part specifications since this entry has a tier C quality rating and generated review status.",
-  "Check source data for dist-legacy origin."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SMFLPR1 land pattern is intended."
  ],
  "avoid_when": [
-  "The PCB design requires a package footprint other than SMFLPR1-2.5.",
-  "Planner-visible or higher quality tier parts are required.",
-  "Exact mounting specifications are required prior to part selection."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SMFLPR1."
  ],
  "keywords": [
-  "ic",
-  "integrated circuit",
   "smflpr1",
-  "smflpr1-2.5",
-  "tier c",
-  "dist-legacy",
-  "generated",
-  "unknown mount",
-  "package smflpr1",
-  "eda cluster",
+  "ic",
   "pad",
   "pins"
  ],
@@ -49,12 +41,12 @@
   "tier_counts": {
    "C": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
   "dist-legacy/SMFLPR1-2.5"
  ],
- "embedding_text": "ic.smflpr1 | IC | IC component cluster with a single tier C part utilizing the SMFLPR1-2.5 footprint. | ic integrated circuit smflpr1 smflpr1-2.5 tier c dist-legacy generated unknown mount package smflpr1 eda cluster pad pins | SMFLPR1 | ",
+ "embedding_text": "ic.smflpr1 | IC | 1 ic parts using SMFLPR1 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | smflpr1 ic pad pins | SMFLPR1 | ",
  "class": "ic"
 }

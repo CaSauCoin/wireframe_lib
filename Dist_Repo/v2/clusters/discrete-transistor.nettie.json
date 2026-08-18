@@ -6,36 +6,32 @@
   "Discrete",
   "Transistor"
  ],
- "description": "Cluster of 4 discrete transistor parts featuring NetTie package family footprints in surface-mount and through-hole options.",
+ "description": "4 discrete transistor parts using NetTie footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Choose between surface-mount (SMD) and through-hole (THT) mounting options.",
-  "Match the required NetTie-3 footprint pad size ranging from 0.3mm to 2.0mm."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a NetTie land pattern is intended."
  ],
  "avoid_when": [
-  "A package family other than NetTie is required by the PCB design.",
-  "Footprints outside the provided NetTie-3 SMD and THT pad sizes are needed.",
-  "Parts with quality ratings higher than tier C are required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than NetTie."
  ],
  "keywords": [
+  "nettie",
+  "smd",
+  "0mm",
+  "tht",
+  "pad0",
   "discrete",
   "transistor",
-  "nettie",
-  "nettie-3",
-  "smd",
-  "tht",
-  "through-hole",
-  "pad",
-  "surface mount",
-  "discrete transistor",
-  "nettie footprint",
-  "0mm",
-  "pad0",
   "net",
   "tie",
   "5mm",
   "3mm",
   "pad2",
   "pad1",
+  "pad",
   "mm",
   "pitch"
  ],
@@ -62,7 +58,7 @@
   "tier_counts": {
    "C": 4
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
@@ -71,6 +67,6 @@
   "dist-legacy/NetTie-3_THT_Pad0.3mm",
   "dist-legacy/NetTie-3_THT_Pad1.0mm"
  ],
- "embedding_text": "discrete-transistor.nettie | Discrete Transistor | Cluster of 4 discrete transistor parts featuring NetTie package family footprints in surface-mount and through-hole options. | discrete transistor nettie nettie-3 smd tht through-hole pad surface mount discrete transistor nettie footprint 0mm pad0 net tie 5mm 3mm pad2 pad1 mm pitch | NetTie | ",
+ "embedding_text": "discrete-transistor.nettie | Discrete Transistor | 4 discrete transistor parts using NetTie footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | nettie smd 0mm tht pad0 discrete transistor net tie 5mm 3mm pad2 pad1 pad mm pitch | NetTie | ",
  "class": "discrete.transistor"
 }

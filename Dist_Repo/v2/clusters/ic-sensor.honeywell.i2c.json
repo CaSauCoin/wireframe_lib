@@ -6,32 +6,25 @@
   "IC",
   "Sensor"
  ],
- "description": "I2C sensor cluster containing through-hole Honeywell components using the Honeywell_ABPDAN footprint.",
+ "description": "1 ic sensor parts for I2C using Honeywell footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select for I2C digital sensor applications using Honeywell through-hole packaging.",
-  "Verify PCB footprint compatibility with the Honeywell_ABPDAN land pattern.",
-  "Choose when tier B representative part ABPxxxxxxxxx0 fits component requirements."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a Honeywell land pattern is intended."
  ],
  "avoid_when": [
-  "Avoid if surface-mount packaging or an interface other than I2C is required.",
-  "Do not use if the PCB design requires footprints other than Honeywell_ABPDAN.",
-  "Avoid when tier A catalog verification or non-Honeywell sensor components are specified."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than Honeywell."
  ],
  "keywords": [
-  "ic",
   "sensor",
-  "ic.sensor",
-  "honeywell",
-  "i2c",
-  "through_hole",
-  "honeywell_abpdan",
-  "abpxxxxxxxxx0",
-  "sensor_pressure",
   "pressure",
-  "abp",
-  "digital",
   "to",
+  "honeywell",
   "psi",
+  "i2c",
+  "abpxxxxxxxxx0",
   "basic",
   "board",
   "mount",
@@ -39,7 +32,8 @@
   "mbar",
   "bar",
   "kpa",
-  "mpa"
+  "mpa",
+  "digital"
  ],
  "facts": {
   "package_family": "Honeywell",
@@ -62,7 +56,7 @@
   "tier_counts": {
    "B": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -77,6 +71,6 @@
  "part_ids": [
   "kicad-symbols/Sensor_Pressure/ABPxxxxxxxxx0"
  ],
- "embedding_text": "ic-sensor.honeywell.i2c | IC Sensor | I2C sensor cluster containing through-hole Honeywell components using the Honeywell_ABPDAN footprint. | ic sensor ic.sensor honeywell i2c through_hole honeywell_abpdan abpxxxxxxxxx0 sensor_pressure pressure abp digital to psi basic board mount absolute mbar bar kpa mpa | Honeywell | I2C",
+ "embedding_text": "ic-sensor.honeywell.i2c | IC Sensor | 1 ic sensor parts for I2C using Honeywell footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | sensor pressure to honeywell psi i2c abpxxxxxxxxx0 basic board mount absolute mbar bar kpa mpa digital | Honeywell | I2C",
  "class": "ic.sensor"
 }

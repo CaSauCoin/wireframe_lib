@@ -6,30 +6,21 @@
   "IC",
   "RF"
  ],
- "description": "Surface-mount RF IC cluster containing 6 parts in DFN-8-1EP packages across 2x2mm, 3x2mm, and 3x3mm footprint sizes.",
+ "description": "6 ic rf parts using DFN footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Verify the specific DFN-8-1EP footprint body and exposed pad dimensions.",
-  "Select based on required RF function such as amplifier, mixer, or NFC tag.",
-  "Prefer tier A parts when available over tier B parts."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a DFN land pattern is intended."
  ],
  "avoid_when": [
-  "Designs require package families other than DFN.",
-  "Through-hole mounting is required instead of SMD.",
-  "Pin counts other than 8 pins or non-exposed pad footprints are needed."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than DFN."
  ],
  "keywords": [
   "dfn",
   "rf",
   "ic",
-  "dfn-8-1ep",
-  "smd",
-  "rf ic",
-  "rf mixer",
-  "rf amplifier",
-  "rf nfc",
-  "lt5560",
-  "sgl0622z",
-  "st25dv",
   "nfc",
   "1ep",
   "p0",
@@ -41,7 +32,8 @@
   "gain",
   "block",
   "ier8c3",
-  "dynamic"
+  "dynamic",
+  "rfid"
  ],
  "facts": {
   "package_family": "DFN",
@@ -66,7 +58,7 @@
    "A": 2,
    "B": 4
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -118,6 +110,6 @@
   "kicad-symbols/RF_NFC/ST25DV64K-IER8C3",
   "kicad-symbols/RF_Amplifier/QPL9547"
  ],
- "embedding_text": "ic-rf.dfn | IC RF | Surface-mount RF IC cluster containing 6 parts in DFN-8-1EP packages across 2x2mm, 3x2mm, and 3x3mm footprint sizes. | dfn rf ic dfn-8-1ep smd rf ic rf mixer rf amplifier rf nfc lt5560 sgl0622z st25dv nfc 1ep p0 5mm tag ep1 mixer amplifier gain block ier8c3 dynamic | DFN | ",
+ "embedding_text": "ic-rf.dfn | IC RF | 6 ic rf parts using DFN footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | dfn rf ic nfc 1ep p0 5mm tag ep1 mixer amplifier gain block ier8c3 dynamic rfid | DFN | ",
  "class": "ic.rf"
 }

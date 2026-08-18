@@ -5,35 +5,29 @@
  "category_path": [
   "IC"
  ],
- "description": "SMD integrated circuits in the SO package family supporting I2C, SPI, and UART/serial communication with SO_14 and SO_20_W footprints.",
+ "description": "2 ic parts for I2C, SPI, UART/serial using SO footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when requiring SMD ICs with I2C, SPI, or UART/serial interfaces in SO packaging.",
-  "Choose between SO_14 and SO_20_W footprint options based on board design needs.",
-  "Suitable when selecting tier B parts from the chilaboard-altium-library source."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SO land pattern is intended."
  ],
  "avoid_when": [
-  "The PCB design requires surface mount packages other than SO, or non-SMD mounting.",
-  "Footprint requirements differ from SO_14 or SO_20_W.",
-  "Interfaces other than I2C, SPI, or UART/serial are needed."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SO."
  ],
  "keywords": [
-  "ic",
-  "so",
-  "smd",
-  "i2c",
   "spi",
-  "uart",
-  "serial",
-  "so_14",
-  "so_20_w",
-  "attiny44a",
-  "attiny2313a",
-  "attiny44a_sop14",
-  "attiny2313a_sop20w",
-  "chilaboard-altium-library",
+  "i2c",
   "microcontroller",
+  "so",
+  "uart",
+  "attiny44a",
   "sop14",
+  "serial",
   "pin",
+  "ic",
+  "attiny2313a",
   "with",
   "analog",
   "and",
@@ -64,7 +58,7 @@
   "tier_counts": {
    "B": 2
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -88,6 +82,6 @@
   "chilaboard-altium-library/ATTINY44A_SOP14/ATTINY44A_SOP14",
   "chilaboard-altium-library/ATTINY2313A_SOP20W/ATTINY2313A_SOP20W"
  ],
- "embedding_text": "ic.so.i2c.spi | IC | SMD integrated circuits in the SO package family supporting I2C, SPI, and UART/serial communication with SO_14 and SO_20_W footprints. | ic so smd i2c spi uart serial so_14 so_20_w attiny44a attiny2313a attiny44a_sop14 attiny2313a_sop20w chilaboard-altium-library microcontroller sop14 pin with analog and in package | SO | I2C SPI UART/serial",
+ "embedding_text": "ic.so.i2c.spi | IC | 2 ic parts for I2C, SPI, UART/serial using SO footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | spi i2c microcontroller so uart attiny44a sop14 serial pin ic attiny2313a with analog and in package | SO | I2C SPI UART/serial",
  "class": "ic"
 }

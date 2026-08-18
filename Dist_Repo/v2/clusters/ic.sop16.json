@@ -5,30 +5,23 @@
  "category_path": [
   "IC"
  ],
- "description": "Integrated circuit (IC) cluster featuring surface-mount SOP16 package components with SOP16-1.27-10.0X5.0MM footprints.",
+ "description": "1 ic parts using SOP16 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when an SMD IC in a SOP16 package is required.",
-  "Verify footprint dimensions match SOP16-1.27-10.0X5.0MM.",
-  "Check part tier ratings and source quality metadata before selection."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SOP16 land pattern is intended."
  ],
  "avoid_when": [
-  "The layout requires package families or footprints other than SOP16.",
-  "Through-hole or non-SMD mounting is specified.",
-  "Unstated electrical ratings, pinouts, or tolerances are required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SOP16."
  ],
  "keywords": [
-  "ic",
   "sop16",
-  "smd",
-  "sop16-1.27-10.0x5.0mm",
-  "tm2291",
-  "optical-tm2291",
-  "sensor-transducer",
-  "seeed-opl-kicad-library",
-  "sop",
-  "surface mount",
   "optical",
+  "tm2291",
   "sensor",
+  "ic",
   "0x5",
   "10x5mm",
   "opl",
@@ -37,6 +30,7 @@
   "in",
   "pin",
   "mm",
+  "sop",
   "package",
   "0mm"
  ],
@@ -59,7 +53,7 @@
   "tier_counts": {
    "B": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -74,6 +68,6 @@
  "part_ids": [
   "Seeed-OPL-Kicad-Library/OPL_Sensor-Transducer/OPTICAL-TM2291_SOP16-10X5MM_"
  ],
- "embedding_text": "ic.sop16 | IC | Integrated circuit (IC) cluster featuring surface-mount SOP16 package components with SOP16-1.27-10.0X5.0MM footprints. | ic sop16 smd sop16-1.27-10.0x5.0mm tm2291 optical-tm2291 sensor-transducer seeed-opl-kicad-library sop surface mount optical sensor 0x5 10x5mm opl transducer controller in pin mm package 0mm | SOP16 | ",
+ "embedding_text": "ic.sop16 | IC | 1 ic parts using SOP16 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | sop16 optical tm2291 sensor ic 0x5 10x5mm opl transducer controller in pin mm sop package 0mm | SOP16 | ",
  "class": "ic"
 }

@@ -5,28 +5,20 @@
  "category_path": [
   "IC"
  ],
- "description": "IC cluster containing 1 tier C part using the CPME3W package family and footprint.",
+ "description": "1 ic parts using CPME3W footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Use when an IC component requiring a CPME3W footprint is needed.",
-  "Verify pin-to-pad mappings and mounting details prior to board placement.",
-  "Confirm electrical parameters as part data is currently unreviewed tier C."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a CPME3W land pattern is intended."
  ],
  "avoid_when": [
-  "The PCB design requires a footprint other than CPME3W.",
-  "Fully verified, planner-visible parts or higher quality tiers are required.",
-  "Specific electrical ratings or package dimensions are needed but unstated."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than CPME3W."
  ],
  "keywords": [
   "cpme3w",
   "ic",
-  "integrated circuit",
-  "cpme3w package",
-  "cpme3w footprint",
-  "tier c",
-  "dist-legacy",
-  "unknown mount",
-  "package family",
-  "land pattern",
   "pad",
   "mm",
   "pitch",
@@ -51,12 +43,12 @@
   "tier_counts": {
    "C": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
   "dist-legacy/CPME3W"
  ],
- "embedding_text": "ic.cpme3w | IC | IC cluster containing 1 tier C part using the CPME3W package family and footprint. | cpme3w ic integrated circuit cpme3w package cpme3w footprint tier c dist-legacy unknown mount package family land pattern pad mm pitch pins | CPME3W | ",
+ "embedding_text": "ic.cpme3w | IC | 1 ic parts using CPME3W footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | cpme3w ic pad mm pitch pins | CPME3W | ",
  "class": "ic"
 }

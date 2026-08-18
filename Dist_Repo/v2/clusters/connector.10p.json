@@ -5,35 +5,24 @@
  "category_path": [
   "Connector"
  ],
- "description": "Cluster of 2 connector parts sharing the 10P package family and a 10P PCB header board-mount footprint; all entries are tier C and generated, with no planner-visible parts.",
+ "description": "2 connector parts using 10P footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Verify exact footprint match (10P_PCB_HEADER_BRD_MNT) before use",
-  "Confirm pin count and pinout against your schematic, not assumed",
-  "Check source trust (currently dist-legacy only) before committing"
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a 10P land pattern is intended."
  ],
  "avoid_when": [
-  "A verified, higher-tier or reviewed part is required",
-  "Mount type must be confirmed (mount is currently unknown)",
-  "The design needs a footprint other than 10P_PCB_HEADER_BRD_MNT",
-  "Planner-visible or datasheet-backed parts are required"
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than 10P."
  ],
  "keywords": [
-  "connector",
   "10p",
-  "10 pin",
-  "pcb header",
-  "board mount",
-  "header connector",
-  "10p_pcb_header_brd_mnt",
-  "brd mnt",
-  "tier c",
-  "generated",
-  "dist-legacy",
-  "package family 10p",
   "pcb",
   "header",
   "brd",
   "mnt",
+  "connector",
   "duplic",
   "pad",
   "mm",
@@ -59,13 +48,13 @@
   "tier_counts": {
    "C": 2
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
   "dist-legacy/10P_PCB_HEADER_BRD_MNT - duplic",
   "dist-legacy/10P_PCB_HEADER_BRD_MNT"
  ],
- "embedding_text": "connector.10p | Connector | Cluster of 2 connector parts sharing the 10P package family and a 10P PCB header board-mount footprint; all entries are tier C and generated, with no planner-visible parts. | connector 10p 10 pin pcb header board mount header connector 10p_pcb_header_brd_mnt brd mnt tier c generated dist-legacy package family 10p pcb header brd mnt duplic pad mm pitch pins | 10P | ",
+ "embedding_text": "connector.10p | Connector | 2 connector parts using 10P footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | 10p pcb header brd mnt connector duplic pad mm pitch pins | 10P | ",
  "class": "connector"
 }

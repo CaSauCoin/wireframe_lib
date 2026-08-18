@@ -6,42 +6,34 @@
   "Passive",
   "Inductor"
  ],
- "description": "A cluster of 22 surface-mount passive inductor components from KiCad symbols utilizing Pulse package footprints.",
+ "description": "22 passive inductor parts using Pulse footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Match the required Pulse SMD footprint variant such as PA2005NL, PA2006NL, or PA2007NL.",
-  "Select by specific part identifier among available entries such as P0544NL or P0926NL.",
-  "Verify layout compatibility with the specified Pulse footprint geometry."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a Pulse land pattern is intended."
  ],
  "avoid_when": [
-  "The board layout requires through-hole mounting rather than SMD.",
-  "A package family other than Pulse is required.",
-  "Components with Tier A qualification status are strictly required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than Pulse."
  ],
  "keywords": [
-  "passive",
-  "inductor",
   "pulse",
-  "smd",
-  "kicad-symbols",
-  "p0544nl",
-  "p0926nl",
-  "pa0173nl",
-  "pa0184nl",
-  "pa0185nl",
-  "pa2005nl",
-  "pa2006nl",
-  "pa2007nl",
-  "pa2001nl",
-  "pa3493nl",
   "transformer",
   "smt",
   "gate",
   "drive",
+  "passive",
+  "inductor",
   "pa2002nl",
   "pa2008nl",
   "pa2009nl",
+  "p0544nl",
+  "pa0184nl",
   "pa0297nl",
-  "pa0510nl"
+  "pa0510nl",
+  "pa2005nl",
+  "pa2007nl"
  ],
  "facts": {
   "package_family": "Pulse",
@@ -71,7 +63,7 @@
   "tier_counts": {
    "B": 22
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -139,6 +131,6 @@
   "kicad-symbols/Transformer/PA1323NL",
   "kicad-symbols/Transformer/PA2777NL"
  ],
- "embedding_text": "passive-inductor.pulse | Passive Inductor | A cluster of 22 surface-mount passive inductor components from KiCad symbols utilizing Pulse package footprints. | passive inductor pulse smd kicad-symbols p0544nl p0926nl pa0173nl pa0184nl pa0185nl pa2005nl pa2006nl pa2007nl pa2001nl pa3493nl transformer smt gate drive pa2002nl pa2008nl pa2009nl pa0297nl pa0510nl | Pulse | ",
+ "embedding_text": "passive-inductor.pulse | Passive Inductor | 22 passive inductor parts using Pulse footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | pulse transformer smt gate drive passive inductor pa2002nl pa2008nl pa2009nl p0544nl pa0184nl pa0297nl pa0510nl pa2005nl pa2007nl | Pulse | ",
  "class": "passive.inductor"
 }

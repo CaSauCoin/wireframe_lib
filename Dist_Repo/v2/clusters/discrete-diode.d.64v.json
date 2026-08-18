@@ -6,44 +6,34 @@
   "Discrete",
   "Diode"
  ],
- "description": "35 discrete diode parts for the 64V facet using D-family footprints (SMC, SMA, SMB, SOD-123F, SOD-128, DO-15, P600) in SMD and through-hole variants, sourced entirely from Alternate-KiCad-Library, mostly tier A.",
+ "description": "35 discrete diode parts for 64V using D footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Match exact footprint (SMC, SMA, SMB, DO-15, P600, SOD-123F, SOD-128) to the board land pattern.",
-  "Prefer tier A entries (34 of 35 parts) for higher confidence.",
-  "Confirm SMD vs through-hole mount matches the design.",
-  "Distinguish TVS-labeled footprints from Zener-labeled footprints before substituting."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a D land pattern is intended."
  ],
  "avoid_when": [
-  "Required footprint is outside the D family listed here.",
-  "Part is tier B without further verification.",
-  "TVS and Zener footprint variants must not be interchanged for the application.",
-  "Verification beyond a single source (Alternate-KiCad-Library) is required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than D."
  ],
  "keywords": [
   "diode",
   "tvs",
-  "zener",
   "64v",
-  "d package",
-  "smc",
-  "sma",
-  "smb",
-  "sod-123f",
-  "sod-128",
-  "do-15",
-  "p600",
-  "smd",
-  "through hole",
-  "discrete diode",
-  "alternate-kicad-library",
-  "horizontal",
-  "tier a",
   "unidirectional",
   "akl",
   "alternate",
   "kicad",
   "library",
-  "discrete"
+  "discrete",
+  "bidirectional",
+  "p600",
+  "horizontal",
+  "do",
+  "smc",
+  "1mm",
+  "sod"
  ],
  "facts": {
   "package_family": "D",
@@ -79,7 +69,7 @@
    "A": 34,
    "B": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -160,6 +150,6 @@
   "Alternate-KiCad-Library/Diode_TVS_AKL/TPSMF4L64A",
   "Alternate-KiCad-Library/Diode_TVS_AKL/TPSMA6L64A"
  ],
- "embedding_text": "discrete-diode.d.64v | Discrete Diode | 35 discrete diode parts for the 64V facet using D-family footprints (SMC, SMA, SMB, SOD-123F, SOD-128, DO-15, P600) in SMD and through-hole variants, sourced entirely from Alternate-KiCad-Library, mostly tier A. | diode tvs zener 64v d package smc sma smb sod-123f sod-128 do-15 p600 smd through hole discrete diode alternate-kicad-library horizontal tier a unidirectional akl alternate kicad library discrete | D | 64V",
+ "embedding_text": "discrete-diode.d.64v | Discrete Diode | 35 discrete diode parts for 64V using D footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | diode tvs 64v unidirectional akl alternate kicad library discrete bidirectional p600 horizontal do smc 1mm sod | D | 64V",
  "class": "discrete.diode"
 }

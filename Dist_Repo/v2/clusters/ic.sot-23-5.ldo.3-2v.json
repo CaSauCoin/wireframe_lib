@@ -5,31 +5,18 @@
  "category_path": [
   "IC"
  ],
- "description": "Cluster of 5 tier-A surface-mount 3.2V LDO voltage regulator ICs in SOT-23-5 footprints from the Alternate-KiCad-Library source.",
+ "description": "5 ic parts for LDO, 3.2V using SOT-23-5 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when requiring a 3.2V low-dropout voltage regulator in a surface-mount SOT-23-5 footprint.",
-  "Choose among tier-A parts from Alternate-KiCad-Library such as AP2121K-3.2TRG1, AP7315, or AP7343 variants.",
-  "Verify part-specific parameters across the 5 available cluster entries."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SOT-23-5 land pattern is intended."
  ],
  "avoid_when": [
-  "Avoid when the design requires a footprint or package family other than SOT-23-5.",
-  "Avoid if an output voltage other than 3.2V or non-LDO regulator topology is required.",
-  "Avoid for through-hole mounting applications."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SOT-23-5."
  ],
  "keywords": [
-  "ldo",
-  "3.2v",
-  "sot-23-5",
-  "voltage regulator",
-  "ic",
-  "smd",
-  "ap2121k-3.2trg1",
-  "ap7315-32w5",
-  "ap7315d-32w5",
-  "ap7343-32w5",
-  "ap7343d-32w5",
-  "alternate-kicad-library",
-  "low dropout",
   "sot",
   "voltage",
   "regulator",
@@ -37,10 +24,15 @@
   "low",
   "dropout",
   "enable",
+  "ldo",
   "akl",
   "with",
   "alternate",
-  "kicad"
+  "kicad",
+  "library",
+  "vreg",
+  "pmic",
+  "power"
  ],
  "facts": {
   "package_family": "SOT-23-5",
@@ -64,7 +56,7 @@
   "tier_counts": {
    "A": 5
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -115,6 +107,6 @@
   "Alternate-KiCad-Library/Voltage_Regulator_AKL/AP7343-32W5",
   "Alternate-KiCad-Library/Voltage_Regulator_AKL/AP7343D-32W5"
  ],
- "embedding_text": "ic.sot-23-5.ldo.3-2v | IC | Cluster of 5 tier-A surface-mount 3.2V LDO voltage regulator ICs in SOT-23-5 footprints from the Alternate-KiCad-Library source. | ldo 3.2v sot-23-5 voltage regulator ic smd ap2121k-3.2trg1 ap7315-32w5 ap7315d-32w5 ap7343-32w5 ap7343d-32w5 alternate-kicad-library low dropout sot voltage regulator 2v low dropout enable akl with alternate kicad | SOT-23-5 | LDO 3.2V",
+ "embedding_text": "ic.sot-23-5.ldo.3-2v | IC | 5 ic parts for LDO, 3.2V using SOT-23-5 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | sot voltage regulator 2v low dropout enable ldo akl with alternate kicad library vreg pmic power | SOT-23-5 | LDO 3.2V",
  "class": "ic"
 }

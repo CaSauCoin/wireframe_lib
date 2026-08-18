@@ -6,44 +6,34 @@
   "Discrete",
   "Diode"
  ],
- "description": "Discrete diode cluster (BAS116, BAV170, BAV199, BAW156, BZB84-B75 among 19 parts) rated 75V in SOT-23 SMD footprint, sourced mainly from Alternate-KiCad-Library with one JLCPCB-Kicad-Library entry; 18 tier-A and 1 tier-B parts.",
+ "description": "19 discrete diode parts for 75V using SOT-23 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Match the required 75V rating and confirm it against the specific part's own datasheet.",
-  "Prefer tier A parts; verify footprint is exactly SOT-23 or SOT-23-3_L2.9-W1.3-P1.90-LS2.4-BR before layout.",
-  "Cross-check pin/pad mapping since this cluster includes both single and dual/common-cathode diode variants.",
-  "Favor Alternate-KiCad-Library entries given their larger representation, but confirm source trust for the JLCPCB entry."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SOT-23 land pattern is intended."
  ],
  "avoid_when": [
-  "The design needs a voltage rating other than 75V.",
-  "A footprint other than SOT-23 is required.",
-  "The symbol-footprint pairing or electrical parameters are not confirmed for the chosen part.",
-  "A through-hole diode is needed instead of SMD."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SOT-23."
  ],
  "keywords": [
-  "sot-23",
+  "sot",
   "diode",
   "75v",
-  "discrete diode",
-  "smd diode",
-  "bas116",
-  "bav170",
-  "bav199",
-  "baw156",
-  "bzb84-b75",
-  "alternate-kicad-library",
-  "jlcpcb-kicad-library",
-  "dual diode",
-  "zener",
-  "switching diode",
-  "small signal diode",
-  "tier a",
-  "sot",
   "dual",
   "discrete",
   "akl",
   "alternate",
   "kicad",
-  "library"
+  "library",
+  "switching",
+  "small",
+  "signal",
+  "fast",
+  "4ns",
+  "common",
+  "cathode"
  ],
  "facts": {
   "package_family": "SOT-23",
@@ -69,7 +59,7 @@
    "A": 18,
    "B": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -134,6 +124,6 @@
   "Alternate-KiCad-Library/Diode_AKL/MMBD914",
   "JLCPCB-Kicad-Library/2898685/Switching, BAV70_C2898685"
  ],
- "embedding_text": "discrete-diode.sot-23.75v | Discrete Diode | Discrete diode cluster (BAS116, BAV170, BAV199, BAW156, BZB84-B75 among 19 parts) rated 75V in SOT-23 SMD footprint, sourced mainly from Alternate-KiCad-Library with one JLCPCB-Kicad-Library entry; 18 tier-A and 1 tier-B parts. | sot-23 diode 75v discrete diode smd diode bas116 bav170 bav199 baw156 bzb84-b75 alternate-kicad-library jlcpcb-kicad-library dual diode zener switching diode small signal diode tier a sot dual discrete akl alternate kicad library | SOT-23 | 75V",
+ "embedding_text": "discrete-diode.sot-23.75v | Discrete Diode | 19 discrete diode parts for 75V using SOT-23 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | sot diode 75v dual discrete akl alternate kicad library switching small signal fast 4ns common cathode | SOT-23 | 75V",
  "class": "discrete.diode"
 }

@@ -7,42 +7,34 @@
   "Power",
   "Linear Regulator"
  ],
- "description": "Cluster of surface-mount 7V low-dropout (LDO) linear regulator ICs in SOT-23 packaging from KiCad symbol sources.",
+ "description": "2 ic power linear regulator parts for LDO, 7V using SOT-23 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when needing a 7V LDO linear regulator IC in a surface-mount design.",
-  "Use for designs specifying a standard SOT-23 footprint.",
-  "Choose between tier A parts AP7381-70SA-7 and AP7384-70SA based on specific part requirements."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SOT-23 land pattern is intended."
  ],
  "avoid_when": [
-  "The board layout requires a package family other than SOT-23.",
-  "Through-hole mounting or non-SMD footprints are required.",
-  "The circuit requires voltage ratings or regulator topologies other than 7V LDO linear regulation."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SOT-23."
  ],
  "keywords": [
-  "ic",
-  "power",
-  "linear regulator",
-  "ldo",
-  "7v",
-  "sot-23",
-  "smd",
-  "ap7381-70sa-7",
-  "ap7384-70sa",
-  "kicad-symbols",
-  "voltage regulator",
-  "low dropout",
   "sot",
   "regulator",
   "linear",
   "voltage",
+  "ldo",
   "fixed",
+  "7v",
   "70sa",
   "low",
   "dropout",
   "output",
   "wide",
   "input",
-  "range"
+  "range",
+  "40v",
+  "to"
  ],
  "facts": {
   "package_family": "SOT-23",
@@ -66,7 +58,7 @@
   "tier_counts": {
    "A": 2
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -90,6 +82,6 @@
   "kicad-symbols/Regulator_Linear/AP7381-70SA-7",
   "kicad-symbols/Regulator_Linear/AP7384-70SA"
  ],
- "embedding_text": "ic-power-ldo.sot-23.ldo.7v | IC Power Linear Regulator | Cluster of surface-mount 7V low-dropout (LDO) linear regulator ICs in SOT-23 packaging from KiCad symbol sources. | ic power linear regulator ldo 7v sot-23 smd ap7381-70sa-7 ap7384-70sa kicad-symbols voltage regulator low dropout sot regulator linear voltage fixed 70sa low dropout output wide input range | SOT-23 | LDO 7V",
+ "embedding_text": "ic-power-ldo.sot-23.ldo.7v | IC Power Linear Regulator | 2 ic power linear regulator parts for LDO, 7V using SOT-23 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | sot regulator linear voltage ldo fixed 7v 70sa low dropout output wide input range 40v to | SOT-23 | LDO 7V",
  "class": "ic.power.ldo"
 }

@@ -5,32 +5,24 @@
  "category_path": [
   "IC"
  ],
- "description": "Surface-mount USB and UART/serial interface ICs in the QFG50 package family with QFG50_48 and QFG50_64 footprints.",
+ "description": "4 ic parts for USB, UART/serial using QFG50 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select based on required footprint, either QFG50_48 or QFG50_64.",
-  "Use when requiring surface-mount USB and UART/serial interface ICs.",
-  "Verify specific part model requirements such as FT2232, FT232, or FT4232 variants."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a QFG50 land pattern is intended."
  ],
  "avoid_when": [
-  "The PCB layout requires package footprints other than QFG50_48 or QFG50_64.",
-  "Through-hole or non-surface-mount component mounting is required.",
-  "The application does not involve USB and UART/serial interfaces."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than QFG50."
  ],
  "keywords": [
-  "ic",
   "usb",
   "uart",
-  "serial",
+  "ic",
   "qfg50",
-  "qfg50_48",
-  "qfg50_64",
-  "smd",
   "interface",
-  "ft2232d",
-  "ft2232hl",
-  "ft232hl",
-  "ft4232hl",
-  "usb uart",
+  "serial",
   "to",
   "qfp",
   "dual",
@@ -39,7 +31,8 @@
   "and",
   "fifo",
   "bridge",
-  "qfp64"
+  "qfp64",
+  "ft2232d"
  ],
  "facts": {
   "package_family": "QFG50",
@@ -64,7 +57,7 @@
   "tier_counts": {
    "B": 4
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -106,6 +99,6 @@
   "chilaboard-altium-library/FT232HL_QFP48/FT232HL_QFP48",
   "chilaboard-altium-library/FT4232HL_QFP64/FT4232HL_QFP64"
  ],
- "embedding_text": "ic.qfg50.usb.uart | IC | Surface-mount USB and UART/serial interface ICs in the QFG50 package family with QFG50_48 and QFG50_64 footprints. | ic usb uart serial qfg50 qfg50_48 qfg50_64 smd interface ft2232d ft2232hl ft232hl ft4232hl usb uart to qfp dual controller qfp48 and fifo bridge qfp64 | QFG50 | USB UART/serial",
+ "embedding_text": "ic.qfg50.usb.uart | IC | 4 ic parts for USB, UART/serial using QFG50 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | usb uart ic qfg50 interface serial to qfp dual controller qfp48 and fifo bridge qfp64 ft2232d | QFG50 | USB UART/serial",
  "class": "ic"
 }

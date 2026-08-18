@@ -6,29 +6,22 @@
   "Passive",
   "Crystal / Resonator"
  ],
- "description": "Cluster of 8 passive crystal and resonator parts in the XTAL package family across multiple legacy XTAL footprint variants.",
+ "description": "8 passive crystal / resonator parts using XTAL footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Match the specific footprint variant such as XTAL_3225, XTAL_2520, XTAL_2016, or XTAL_3215-2.",
-  "Verify component mounting and dimensions since the mount type is listed as unknown.",
-  "Note that all entries are tier C quality originating from legacy distribution data."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a XTAL land pattern is intended."
  ],
  "avoid_when": [
-  "The layout requires a footprint or package family other than XTAL.",
-  "The design requires verified planner-visible parts or quality tiers higher than tier C.",
-  "Active oscillators or non-passive resonators are required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than XTAL."
  ],
  "keywords": [
   "xtal",
   "passive",
   "crystal",
   "resonator",
-  "passive crystal",
-  "xtal_3225",
-  "xtal_2520",
-  "xtal_2016",
-  "xtal_3215-2",
-  "xtal_dan",
-  "xtal_cam_dan",
   "dan",
   "pad",
   "mm",
@@ -62,7 +55,7 @@
   "tier_counts": {
    "C": 8
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
@@ -75,6 +68,6 @@
   "dist-legacy/XTAL_2016",
   "dist-legacy/XTAL_2520"
  ],
- "embedding_text": "passive-crystal.xtal | Passive Crystal / Resonator | Cluster of 8 passive crystal and resonator parts in the XTAL package family across multiple legacy XTAL footprint variants. | xtal passive crystal resonator passive crystal xtal_3225 xtal_2520 xtal_2016 xtal_3215-2 xtal_dan xtal_cam_dan dan pad mm pitch pins cam | XTAL | ",
+ "embedding_text": "passive-crystal.xtal | Passive Crystal / Resonator | 8 passive crystal / resonator parts using XTAL footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | xtal passive crystal resonator dan pad mm pitch pins cam | XTAL | ",
  "class": "passive.crystal"
 }

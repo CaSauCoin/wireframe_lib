@@ -6,42 +6,34 @@
   "Discrete",
   "Diode"
  ],
- "description": "Cluster of 8 tier-A 5.1V zener diodes in SOT footprints (SOT-363/SC-70-6, SOT-323/SC-70, SOT-89-3, SOT-223-3 TabPin2) from the Alternate-KiCad-Library source.",
+ "description": "8 discrete diode parts for 5.1V using SOT footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Pick the entry whose footprint matches your intended SOT land pattern",
-  "All 8 parts are tier A with score 100, so differentiate by footprint/package size",
-  "Confirm the 5.1V zener rating fits your circuit before committing"
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SOT land pattern is intended."
  ],
  "avoid_when": [
-  "Design requires a non-SOT package",
-  "A non-zener or different voltage diode is needed",
-  "Exact pin-to-pad mapping for the chosen footprint hasn't been verified"
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SOT."
  ],
  "keywords": [
   "diode",
-  "zener",
-  "5.1v",
-  "c5v1",
   "sot",
-  "sot-363",
-  "sot-323",
-  "sot-89-3",
-  "sot-223-3",
-  "sc-70",
-  "smd",
-  "discrete",
-  "bzb784",
-  "bzv49",
-  "bzv90",
-  "bzx84",
-  "alternate-kicad-library",
-  "tier a",
+  "zener",
   "1v",
   "sc",
   "dual",
   "akl",
   "alternate",
-  "kicad"
+  "kicad",
+  "library",
+  "discrete",
+  "independent",
+  "200mw",
+  "c5v1",
+  "bzb784",
+  "bzv49"
  ],
  "facts": {
   "package_family": "SOT",
@@ -67,7 +59,7 @@
   "tier_counts": {
    "A": 8
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -121,6 +113,6 @@
   "Alternate-KiCad-Library/Diode_Zener_AKL/MMBZ5231BS",
   "Alternate-KiCad-Library/Diode_Zener_AKL/MMBZ5231BSs"
  ],
- "embedding_text": "discrete-diode.sot.5-1v | Discrete Diode | Cluster of 8 tier-A 5.1V zener diodes in SOT footprints (SOT-363/SC-70-6, SOT-323/SC-70, SOT-89-3, SOT-223-3 TabPin2) from the Alternate-KiCad-Library source. | diode zener 5.1v c5v1 sot sot-363 sot-323 sot-89-3 sot-223-3 sc-70 smd discrete bzb784 bzv49 bzv90 bzx84 alternate-kicad-library tier a 1v sc dual akl alternate kicad | SOT | 5.1V",
+ "embedding_text": "discrete-diode.sot.5-1v | Discrete Diode | 8 discrete diode parts for 5.1V using SOT footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | diode sot zener 1v sc dual akl alternate kicad library discrete independent 200mw c5v1 bzb784 bzv49 | SOT | 5.1V",
  "class": "discrete.diode"
 }

@@ -6,44 +6,34 @@
   "Discrete",
   "Bridge Rectifier"
  ],
- "description": "Cluster of 4 tier-A discrete bridge rectifier parts rated 20V, using Diode-family footprints (Vishay KBPC1, Vishay KBPC6, Diotec SO-DIL-Slim) available in SMD and through-hole mounts.",
+ "description": "4 discrete bridge rectifier parts for 20V using Diode footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Match the exact footprint (KBPC1, KBPC6, or SO-DIL-Slim) to the intended PCB land pattern.",
-  "Pick SMD or through-hole mount based on the assembly process for the board.",
-  "All 4 parts are tier A with score 88, so differentiate by footprint and source library rather than tier.",
-  "3 of 4 parts come from kicad-symbols and 1 from Alternate-KiCad-Library; note the source when checking trust."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a Diode land pattern is intended."
  ],
  "avoid_when": [
-  "The design requires a voltage rating other than 20V.",
-  "A bridge rectifier package outside the Diode footprint family (KBPC1, KBPC6, SO-DIL-Slim) is needed.",
-  "The symbol-to-footprint mapping has not been verified against the actual PCB land pattern.",
-  "Current, surge, or other electrical ratings not listed in these facts must be confirmed before use."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than Diode."
  ],
  "keywords": [
-  "bridge rectifier",
-  "discrete bridge",
-  "diode",
-  "20v",
-  "kbpc1",
-  "kbpc6",
-  "so-dil-slim",
-  "vishay",
-  "diotec",
-  "smd",
-  "through hole",
-  "vs-kbpc1005",
-  "vs-kbpc6005",
-  "vs-kbpc8005",
-  "cs10s",
-  "single phase rectifier",
   "bridge",
+  "diode",
   "rectifier",
+  "20v",
   "discrete",
+  "kbpc6",
   "vs",
   "single",
   "phase",
   "vrms",
-  "0a"
+  "0a",
+  "if",
+  "package",
+  "vishay",
+  "acdc",
+  "cs10s"
  ],
  "facts": {
   "package_family": "Diode",
@@ -70,7 +60,7 @@
   "tier_counts": {
    "A": 4
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -112,6 +102,6 @@
   "kicad-symbols/Diode_Bridge/VS-KBPC6005",
   "kicad-symbols/Diode_Bridge/VS-KBPC8005"
  ],
- "embedding_text": "discrete-bridge.diode.20v | Discrete Bridge Rectifier | Cluster of 4 tier-A discrete bridge rectifier parts rated 20V, using Diode-family footprints (Vishay KBPC1, Vishay KBPC6, Diotec SO-DIL-Slim) available in SMD and through-hole mounts. | bridge rectifier discrete bridge diode 20v kbpc1 kbpc6 so-dil-slim vishay diotec smd through hole vs-kbpc1005 vs-kbpc6005 vs-kbpc8005 cs10s single phase rectifier bridge rectifier discrete vs single phase vrms 0a | Diode | 20V",
+ "embedding_text": "discrete-bridge.diode.20v | Discrete Bridge Rectifier | 4 discrete bridge rectifier parts for 20V using Diode footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | bridge diode rectifier 20v discrete kbpc6 vs single phase vrms 0a if package vishay acdc cs10s | Diode | 20V",
  "class": "discrete.bridge"
 }

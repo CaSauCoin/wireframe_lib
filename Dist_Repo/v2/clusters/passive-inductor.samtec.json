@@ -6,30 +6,21 @@
   "Passive",
   "Inductor"
  ],
- "description": "Passive inductor components utilizing surface-mount Samtec T1M terminal footprints in horizontal and vertical latch configurations.",
+ "description": "4 passive inductor parts using Samtec footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select based on the required pin count of 1x02 or 1x03.",
-  "Choose between horizontal (SH) and vertical (SV) terminal orientations.",
-  "Confirm compatibility with 1.0mm pitch Samtec T1M latch footprints."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a Samtec land pattern is intended."
  ],
  "avoid_when": [
-  "Through-hole mounting is required instead of surface mount.",
-  "The layout requires pin counts other than 2 or 3 positions.",
-  "A package family other than Samtec T1M is required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than Samtec."
  ],
  "keywords": [
-  "passive",
-  "inductor",
   "samtec",
-  "smd",
-  "surface mount",
-  "t1m",
   "terminal",
-  "horizontal latch",
-  "vertical latch",
-  "1.0mm pitch",
-  "1x02",
-  "1x03",
+  "t1m",
   "latch",
   "1mp",
   "p1",
@@ -37,7 +28,11 @@
   "horizontal",
   "vertical",
   "sh",
+  "1x02",
   "sv",
+  "1x03",
+  "passive",
+  "inductor",
   "mm"
  ],
  "facts": {
@@ -62,7 +57,7 @@
   "tier_counts": {
    "C": 4
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
@@ -71,6 +66,6 @@
   "dist-legacy/Samtec_T1M-03-X-SH-L_1x03-1MP_P1.0mm_Terminal_Horizontal_Latch",
   "dist-legacy/Samtec_T1M-03-X-SV-L_1x03-1MP_P1.0mm_Terminal_Vertical_Latch"
  ],
- "embedding_text": "passive-inductor.samtec | Passive Inductor | Passive inductor components utilizing surface-mount Samtec T1M terminal footprints in horizontal and vertical latch configurations. | passive inductor samtec smd surface mount t1m terminal horizontal latch vertical latch 1.0mm pitch 1x02 1x03 latch 1mp p1 0mm horizontal vertical sh sv mm | Samtec | ",
+ "embedding_text": "passive-inductor.samtec | Passive Inductor | 4 passive inductor parts using Samtec footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | samtec terminal t1m latch 1mp p1 0mm horizontal vertical sh 1x02 sv 1x03 passive inductor mm | Samtec | ",
  "class": "passive.inductor"
 }

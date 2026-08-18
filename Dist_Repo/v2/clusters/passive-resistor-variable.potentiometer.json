@@ -7,35 +7,30 @@
   "Resistor",
   "Variable"
  ],
- "description": "Through-hole variable resistor potentiometer symbols from KiCad supporting single, dual, and mounting-pin configurations.",
+ "description": "9 passive resistor variable parts using Potentiometer footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select single, dual, or separate channel variants based on schematic requirements.",
-  "Choose variants with mounting pins if mechanical PCB retention is required.",
-  "Verify target footprint compatibility with packages such as TT P0915N or Alps RK097."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a Potentiometer land pattern is intended."
  ],
  "avoid_when": [
-  "Surface-mount (SMD) mounting is required instead of through-hole.",
-  "Fixed-value resistors or non-potentiometer passive components are needed.",
-  "The required potentiometer package does not match through-hole footprint options."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than Potentiometer."
  ],
  "keywords": [
   "potentiometer",
-  "variable resistor",
-  "through hole",
-  "passive",
   "resistor",
-  "dual potentiometer",
-  "mounting pin",
-  "kicad",
-  "p0915n",
-  "rk097",
-  "alps",
-  "tt",
   "variable",
+  "tt",
+  "p0915n",
   "dual",
   "device",
+  "passive",
   "vertical",
   "single",
+  "alps",
+  "rk097",
   "horizontal",
   "trim",
   "us",
@@ -61,7 +56,7 @@
   "tier_counts": {
    "B": 9
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -116,6 +111,6 @@
   "kicad-symbols/Device/R_Potentiometer_Trim_US",
   "kicad-symbols/Device/R_Potentiometer_US"
  ],
- "embedding_text": "passive-resistor-variable.potentiometer | Passive Resistor Variable | Through-hole variable resistor potentiometer symbols from KiCad supporting single, dual, and mounting-pin configurations. | potentiometer variable resistor through hole passive resistor dual potentiometer mounting pin kicad p0915n rk097 alps tt variable dual device vertical single horizontal trim us mountingpin | Potentiometer | ",
+ "embedding_text": "passive-resistor-variable.potentiometer | Passive Resistor Variable | 9 passive resistor variable parts using Potentiometer footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | potentiometer resistor variable tt p0915n dual device passive vertical single alps rk097 horizontal trim us mountingpin | Potentiometer | ",
  "class": "passive.resistor.variable"
 }

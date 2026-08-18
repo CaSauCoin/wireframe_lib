@@ -6,44 +6,34 @@
   "Discrete",
   "Diode"
  ],
- "description": "Discrete diode cluster rated 82V (D package family, class discrete.diode) covering 65 zener/TVS parts across SMD footprints (SMA, SMB, SMC, SMF, MELF, MiniMELF) and through-hole footprints (DO-15, DO-41/SOD-81, DO-201, SOD-64), all sourced from Alternate-KiCad-Library.",
+ "description": "65 discrete diode parts for 82V using D footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Match the exact footprint (e.g. D_SMB vs D_DO-201_...Zener) to the intended PCB land pattern.",
-  "Distinguish zener-suffixed vs TVS-suffixed footprints (e.g. D_SMB vs D_SMB_TVS) for the correct diode function.",
-  "Prefer tier A entries (61 of 65 parts) over tier B for higher-confidence matches.",
-  "Confirm mount type (smd vs through_hole) fits the assembly process before committing."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a D land pattern is intended."
  ],
  "avoid_when": [
-  "The design requires a voltage rating other than 82V.",
-  "The needed footprint is not one of the listed D-family variants (SMA/SMB/SMC/SMF/MELF/MiniMELF/DO-15/DO-41/DO-201/SOD-64).",
-  "The zener-vs-TVS role of the part cannot be confirmed from the footprint/name.",
-  "Only tier B or review-flagged entries match, and higher-confidence data is required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than D."
  ],
  "keywords": [
   "diode",
   "zener",
-  "tvs",
   "82v",
-  "d package",
-  "smb",
-  "sma",
-  "smc",
-  "smf",
-  "melf",
-  "minimelf",
-  "do-41",
-  "sod81",
-  "do-15",
-  "do-201",
-  "sod-64",
-  "through hole",
-  "smd",
-  "alternate-kicad-library",
-  "discrete diode",
+  "tvs",
   "do",
   "akl",
   "alternate",
-  "kicad"
+  "kicad",
+  "library",
+  "discrete",
+  "horizontal",
+  "smb",
+  "sma",
+  "unidirectional",
+  "series",
+  "axial"
  ],
  "facts": {
   "package_family": "D",
@@ -79,7 +69,7 @@
    "A": 61,
    "B": 4
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -190,6 +180,6 @@
   "Alternate-KiCad-Library/Diode_TVS_AKL/BZW03-C82",
   "Alternate-KiCad-Library/Diode_TVS_AKL/BZW03-D82"
  ],
- "embedding_text": "discrete-diode.d.82v | Discrete Diode | Discrete diode cluster rated 82V (D package family, class discrete.diode) covering 65 zener/TVS parts across SMD footprints (SMA, SMB, SMC, SMF, MELF, MiniMELF) and through-hole footprints (DO-15, DO-41/SOD-81, DO-201, SOD-64), all sourced from Alternate-KiCad-Library. | diode zener tvs 82v d package smb sma smc smf melf minimelf do-41 sod81 do-15 do-201 sod-64 through hole smd alternate-kicad-library discrete diode do akl alternate kicad | D | 82V",
+ "embedding_text": "discrete-diode.d.82v | Discrete Diode | 65 discrete diode parts for 82V using D footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | diode zener 82v tvs do akl alternate kicad library discrete horizontal smb sma unidirectional series axial | D | 82V",
  "class": "discrete.diode"
 }

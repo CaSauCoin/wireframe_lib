@@ -6,33 +6,23 @@
   "IC",
   "Interface"
  ],
- "description": "Cluster of 2 SMD IC interface parts supporting I2C, SPI, and 3.6V operation in a TSSOP-16 footprint.",
+ "description": "2 ic interface parts for I2C, SPI, 3.6V using TSSOP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when requiring an SMD IC interface component supporting I2C and SPI at 3.6V.",
-  "Use when the PCB layout requires a TSSOP-16 (4.4x5mm, 0.65mm pitch) footprint.",
-  "Choose between Tier A representative parts SC18IS604PW and SC18IS606PW."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a TSSOP land pattern is intended."
  ],
  "avoid_when": [
-  "The board layout requires a package family or footprint other than TSSOP-16.",
-  "Through-hole mounting is required instead of surface mount (SMD).",
-  "Operating requirements fall outside of I2C, SPI, or 3.6V facets."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than TSSOP."
  ],
  "keywords": [
-  "ic interface",
   "tssop",
-  "tssop-16",
-  "i2c",
-  "spi",
-  "3.6v",
-  "smd",
-  "sc18is604pw",
-  "sc18is606pw",
-  "4.4x5mm",
-  "p0.65mm",
-  "interface expansion",
-  "kicad-symbols",
   "interface",
+  "spi",
   "to",
+  "i2c",
   "6v",
   "nxp",
   "bridge",
@@ -41,7 +31,9 @@
   "4x5mm",
   "p0",
   "65mm",
-  "so"
+  "so",
+  "jedec",
+  "mo"
  ],
  "facts": {
   "package_family": "TSSOP",
@@ -66,7 +58,7 @@
   "tier_counts": {
    "A": 2
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -90,6 +82,6 @@
   "kicad-symbols/Interface_Expansion/SC18IS604PW",
   "kicad-symbols/Interface_Expansion/SC18IS606PW"
  ],
- "embedding_text": "ic-interface.tssop.i2c.spi | IC Interface | Cluster of 2 SMD IC interface parts supporting I2C, SPI, and 3.6V operation in a TSSOP-16 footprint. | ic interface tssop tssop-16 i2c spi 3.6v smd sc18is604pw sc18is606pw 4.4x5mm p0.65mm interface expansion kicad-symbols interface to 6v nxp bridge expansion supply 4x5mm p0 65mm so | TSSOP | I2C SPI 3.6V",
+ "embedding_text": "ic-interface.tssop.i2c.spi | IC Interface | 2 ic interface parts for I2C, SPI, 3.6V using TSSOP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | tssop interface spi to i2c 6v nxp bridge expansion supply 4x5mm p0 65mm so jedec mo | TSSOP | I2C SPI 3.6V",
  "class": "ic.interface"
 }

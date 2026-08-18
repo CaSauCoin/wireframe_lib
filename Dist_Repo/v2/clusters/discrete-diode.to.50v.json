@@ -6,44 +6,34 @@
   "Discrete",
   "Diode"
  ],
- "description": "Cluster of 88 discrete diode parts under the 50V facet, packaged in TO-family footprints (TO-220, TO-247, TO-263, TO-252, TO-277, TO-92 variants) with both SMD and through-hole mounting, sourced from Alternate-KiCad-Library.",
+ "description": "88 discrete diode parts for 50V using TO footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Match the exact TO footprint variant (e.g. TO-220-3_Vertical_AKA vs TO-263-2) to the intended PCB land pattern.",
-  "Confirm mount type (SMD vs through-hole) fits the assembly process before selecting.",
-  "All 88 parts are tier A but review_status is 'generated' — verify against a datasheet before committing.",
-  "Narrow by specific footprint since 12 distinct TO variants are grouped in this cluster."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a TO land pattern is intended."
  ],
  "avoid_when": [
-  "The design requires a non-TO package (e.g. axial, SOD, SOT).",
-  "The needed rating differs from the 50V facet stated for this cluster.",
-  "Symbol-to-footprint pairing must be pre-verified rather than 'generated' review status.",
-  "Coverage from a single source (Alternate-KiCad-Library) is insufficient for the design."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than TO."
  ],
  "keywords": [
   "to",
   "diode",
-  "discrete",
   "50v",
-  "to-220",
-  "to-220-2",
-  "to-220-3",
-  "to-247",
-  "to-263",
-  "to-252",
-  "to-277",
-  "to-92",
-  "smd",
-  "through_hole",
-  "vertical",
-  "alternate-kicad-library",
-  "tier a",
-  "generated",
   "schottky",
+  "vertical",
   "akl",
   "alternate",
   "kicad",
   "library",
-  "dual"
+  "discrete",
+  "dual",
+  "rm",
+  "commoncathode",
+  "common",
+  "cathode",
+  "rectifier"
  ],
  "facts": {
   "package_family": "TO",
@@ -78,7 +68,7 @@
   "tier_counts": {
    "A": 88
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -212,6 +202,6 @@
   "Alternate-KiCad-Library/Diode_Schottky_AKL/VS-30CPQ050",
   "Alternate-KiCad-Library/Diode_Schottky_AKL/VS-30CTQ050"
  ],
- "embedding_text": "discrete-diode.to.50v | Discrete Diode | Cluster of 88 discrete diode parts under the 50V facet, packaged in TO-family footprints (TO-220, TO-247, TO-263, TO-252, TO-277, TO-92 variants) with both SMD and through-hole mounting, sourced from Alternate-KiCad-Library. | to diode discrete 50v to-220 to-220-2 to-220-3 to-247 to-263 to-252 to-277 to-92 smd through_hole vertical alternate-kicad-library tier a generated schottky akl alternate kicad library dual | TO | 50V",
+ "embedding_text": "discrete-diode.to.50v | Discrete Diode | 88 discrete diode parts for 50V using TO footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | to diode 50v schottky vertical akl alternate kicad library discrete dual rm commoncathode common cathode rectifier | TO | 50V",
  "class": "discrete.diode"
 }

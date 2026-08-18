@@ -6,28 +6,22 @@
   "Discrete",
   "Transistor"
  ],
- "description": "Discrete transistor cluster containing 1 quality tier C part using the SPEAKER package family and SPEAKER_4R_50_60 footprint.",
+ "description": "1 discrete transistor parts using SPEAKER footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Use when a SPEAKER package family or SPEAKER_4R_50_60 footprint is intended.",
-  "Confirm part specifications and pin mapping prior to PCB design.",
-  "Check source reliability as the part is sourced from dist-legacy with tier C quality."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SPEAKER land pattern is intended."
  ],
  "avoid_when": [
-  "The layout requires a package family other than SPEAKER.",
-  "Higher quality tier or planner-visible parts are needed.",
-  "Pinout mapping or mounting requirements are unspecified."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SPEAKER."
  ],
  "keywords": [
+  "speaker",
+  "4r",
   "discrete",
   "transistor",
-  "discrete transistor",
-  "speaker",
-  "speaker_4r_50_60",
-  "speaker footprint",
-  "speaker package",
-  "dist-legacy",
-  "tier c",
-  "4r",
   "pad",
   "mm",
   "pitch",
@@ -52,12 +46,12 @@
   "tier_counts": {
    "C": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
   "dist-legacy/SPEAKER_4R_50_60"
  ],
- "embedding_text": "discrete-transistor.speaker | Discrete Transistor | Discrete transistor cluster containing 1 quality tier C part using the SPEAKER package family and SPEAKER_4R_50_60 footprint. | discrete transistor discrete transistor speaker speaker_4r_50_60 speaker footprint speaker package dist-legacy tier c 4r pad mm pitch pins | SPEAKER | ",
+ "embedding_text": "discrete-transistor.speaker | Discrete Transistor | 1 discrete transistor parts using SPEAKER footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | speaker 4r discrete transistor pad mm pitch pins | SPEAKER | ",
  "class": "discrete.transistor"
 }

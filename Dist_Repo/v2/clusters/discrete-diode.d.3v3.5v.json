@@ -6,37 +6,29 @@
   "Discrete",
   "Diode"
  ],
- "description": "Surface-mount discrete diode cluster of 5 parts covering 3.3V and 5V facets across D_SMA, D_SOD-123, D_SOD-523, and D_DFN1006-2L footprints.",
+ "description": "5 discrete diode parts for 3.3V, 5V using D footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select based on required diode type, such as TVS (unidirectional or bidirectional) or Zener.",
-  "Choose between D_SMA, D_SOD-123, D_SOD-523, and D_DFN1006-2L surface-mount footprints.",
-  "Prefer tier A parts over tier B parts for higher quality score."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a D land pattern is intended."
  ],
  "avoid_when": [
-  "Through-hole mounting is required.",
-  "Packages outside of D_SMA, D_SOD-123, D_SOD-523, or D_DFN1006-2L are needed.",
-  "Voltage requirements do not match the 3.3V or 5V facets."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than D."
  ],
  "keywords": [
-  "discrete",
-  "diode",
-  "discrete diode",
-  "3.3v",
-  "5v",
-  "smd",
-  "d_sma",
-  "d_sod-123",
-  "d_sod-523",
-  "d_dfn1006-2l",
   "tvs",
-  "zener",
-  "jlcpcb",
   "3v",
+  "5v",
   "esd",
+  "diode",
   "diodes",
   "iec",
+  "jlcpcb",
   "sod",
   "rohs",
+  "discrete",
   "20us",
   "and",
   "surge",
@@ -69,7 +61,7 @@
    "A": 4,
    "B": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -120,6 +112,6 @@
   "JLCPCB-Kicad-Library/JLCPCB-Diodes/Zener,MM1Z3V3",
   "JLCPCB-Kicad-Library/JLCPCB-Diodes/TVS-Bi,H3V3L10B"
  ],
- "embedding_text": "discrete-diode.d.3v3.5v | Discrete Diode | Surface-mount discrete diode cluster of 5 parts covering 3.3V and 5V facets across D_SMA, D_SOD-123, D_SOD-523, and D_DFN1006-2L footprints. | discrete diode discrete diode 3.3v 5v smd d_sma d_sod-123 d_sod-523 d_dfn1006-2l tvs zener jlcpcb 3v esd diodes iec sod rohs 20us and surge protection 1000us | D | 3.3V 5V",
+ "embedding_text": "discrete-diode.d.3v3.5v | Discrete Diode | 5 discrete diode parts for 3.3V, 5V using D footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | tvs 3v 5v esd diode diodes iec jlcpcb sod rohs discrete 20us and surge protection 1000us | D | 3.3V 5V",
  "class": "discrete.diode"
 }

@@ -6,42 +6,34 @@
   "IC",
   "Analog"
  ],
- "description": "Analog IC cluster containing surface-mount analog switch components in SOT-353_SC-70-5 footprints associated with 5V and 1.08V facets.",
+ "description": "2 ic analog parts for 5V, 1.08V using SOT footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when requiring surface-mount analog ICs in SOT-353_SC-70-5 footprints.",
-  "Choose when operating parameters align with 5V or 1.08V facet tags.",
-  "Use when looking for analog switch components such as TMUX1101DCK or TMUX1102DCK."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SOT land pattern is intended."
  ],
  "avoid_when": [
-  "Avoid if the design requires through-hole or non-SMD mounting styles.",
-  "Avoid when package requirements differ from the SOT-353_SC-70-5 footprint.",
-  "Do not use if non-analog IC functional classes are required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SOT."
  ],
  "keywords": [
-  "ic",
-  "analog",
-  "ic.analog",
   "sot",
-  "sot-353",
-  "sc-70-5",
-  "sot-353_sc-70-5",
-  "smd",
-  "5v",
-  "1.08v",
-  "tmux1101dck",
-  "tmux1102dck",
-  "analog switch",
+  "analog",
   "sc",
   "switch",
   "spst",
   "08v",
   "to",
+  "5v",
   "supply",
   "3pa",
   "leakage",
   "current",
   "normally",
-  "8ohm"
+  "8ohm",
+  "ron",
+  "smd"
  ],
  "facts": {
   "package_family": "SOT",
@@ -65,7 +57,7 @@
   "tier_counts": {
    "A": 2
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -89,6 +81,6 @@
   "kicad-symbols/Analog_Switch/TMUX1101DCK",
   "kicad-symbols/Analog_Switch/TMUX1102DCK"
  ],
- "embedding_text": "ic-analog.sot.5v.1-08v | IC Analog | Analog IC cluster containing surface-mount analog switch components in SOT-353_SC-70-5 footprints associated with 5V and 1.08V facets. | ic analog ic.analog sot sot-353 sc-70-5 sot-353_sc-70-5 smd 5v 1.08v tmux1101dck tmux1102dck analog switch sc switch spst 08v to supply 3pa leakage current normally 8ohm | SOT | 5V 1.08V",
+ "embedding_text": "ic-analog.sot.5v.1-08v | IC Analog | 2 ic analog parts for 5V, 1.08V using SOT footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | sot analog sc switch spst 08v to 5v supply 3pa leakage current normally 8ohm ron smd | SOT | 5V 1.08V",
  "class": "ic.analog"
 }

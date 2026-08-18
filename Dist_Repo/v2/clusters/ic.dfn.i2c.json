@@ -5,32 +5,22 @@
  "category_path": [
   "IC"
  ],
- "description": "A cluster of 7 surface-mount ICs supporting I2C in DFN footprints across quality tiers A and B.",
+ "description": "7 ic parts for I2C using DFN footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Prefer tier A parts from KiCad symbols over tier B parts.",
-  "Match the specific footprint among DFN-8 3x2mm, DFN-10 2x2mm, and DFN-10 3x3mm.",
-  "Verify part status when considering obsolete tier B components."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a DFN land pattern is intended."
  ],
  "avoid_when": [
-  "A package family other than DFN is required.",
-  "An interface protocol other than I2C is needed.",
-  "Through-hole mounting is required instead of surface-mount."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than DFN."
  ],
  "keywords": [
-  "ic",
   "dfn",
   "i2c",
-  "smd",
-  "dfn-8",
-  "dfn-10",
-  "atecc508a",
-  "atecc608a",
-  "atecc608b",
-  "mag3110fcr1",
-  "mma7660fcr1",
-  "kicad-symbols",
-  "digikey-kicad-library",
   "sensors",
+  "ic",
   "cryptographic",
   "5mm",
   "motion",
@@ -40,7 +30,9 @@
   "transducers",
   "nxp",
   "usa",
-  "inc"
+  "inc",
+  "mahda",
+  "security"
  ],
  "facts": {
   "package_family": "DFN",
@@ -67,7 +59,7 @@
    "A": 3,
    "B": 4
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -120,6 +112,6 @@
   "digikey-kicad-library/dk_Motion-Sensors-Accelerometers/MMA8652FCR1",
   "digikey-kicad-library/dk_Motion-Sensors-Accelerometers/MMA8653FCR1"
  ],
- "embedding_text": "ic.dfn.i2c | IC | A cluster of 7 surface-mount ICs supporting I2C in DFN footprints across quality tiers A and B. | ic dfn i2c smd dfn-8 dfn-10 atecc508a atecc608a atecc608b mag3110fcr1 mma7660fcr1 kicad-symbols digikey-kicad-library sensors cryptographic 5mm motion accelerometers dk 10dfn transducers nxp usa inc | DFN | I2C",
+ "embedding_text": "ic.dfn.i2c | IC | 7 ic parts for I2C using DFN footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | dfn i2c sensors ic cryptographic 5mm motion accelerometers dk 10dfn transducers nxp usa inc mahda security | DFN | I2C",
  "class": "ic"
 }

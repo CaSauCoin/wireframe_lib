@@ -6,34 +6,26 @@
   "Power",
   "Power Rail"
  ],
- "description": "Power rail schematic symbols for +15V and -15V supply nets with package and footprint chosen later.",
+ "description": "2 power power rail parts for 15V with package chosen later. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select +15V or -15V based on the required supply polarity.",
-  "Assign an explicit footprint or package when required for board layout."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Select a footprint/package explicitly before placement."
  ],
  "avoid_when": [
-  "A rail voltage other than +15V or -15V is required.",
-  "A physical component with a fixed footprint or package is needed."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review."
  ],
  "keywords": [
   "power",
-  "power rail",
   "15v",
-  "+15v",
-  "-15v",
-  "positive 15v",
-  "negative 15v",
-  "rail",
-  "supply",
-  "kicad-symbols",
-  "power symbol",
-  "voltage rail",
   "global",
   "symbol",
   "creates",
   "label",
   "with",
   "name",
+  "rail",
   "package",
   "chosen",
   "later"
@@ -55,7 +47,7 @@
   "tier_counts": {
    "G": 2
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -79,6 +71,6 @@
   "kicad-symbols/power/+15V",
   "kicad-symbols/power/-15V"
  ],
- "embedding_text": "power-rail.generic.15v | Power Power Rail | Power rail schematic symbols for +15V and -15V supply nets with package and footprint chosen later. | power power rail 15v +15v -15v positive 15v negative 15v rail supply kicad-symbols power symbol voltage rail global symbol creates label with name package chosen later | package chosen later | 15V",
+ "embedding_text": "power-rail.generic.15v | Power Power Rail | 2 power power rail parts for 15V with package chosen later. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | power 15v global symbol creates label with name rail package chosen later | package chosen later | 15V",
  "class": "power.rail"
 }

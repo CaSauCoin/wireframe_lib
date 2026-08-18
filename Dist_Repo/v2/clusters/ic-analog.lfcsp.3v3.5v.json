@@ -6,34 +6,25 @@
   "IC",
   "Analog"
  ],
- "description": "Analog IC cluster featuring surface-mount 3.3V and 5V components in 32-pin LFCSP packages with exposed pads.",
+ "description": "2 ic analog parts for 3.3V, 5V using LFCSP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when designing for 3.3V or 5V analog IC applications requiring an LFCSP package.",
-  "Verify landing pattern compatibility with the 5x5mm LFCSP-32 footprint and exposed pad.",
-  "Confirm part specifications and symbol pinouts for representative parts such as ADG1207BCPZ or ADG1607xCP."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a LFCSP land pattern is intended."
  ],
  "avoid_when": [
-  "The board layout requires through-hole components or packages other than LFCSP.",
-  "Operating voltage requirements fall outside 3.3V or 5V.",
-  "The PCB footprint requires pitch or dimensions differing from LFCSP-32-1EP 5x5mm."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than LFCSP."
  ],
  "keywords": [
-  "ic analog",
-  "lfcsp",
-  "smd",
-  "3.3v",
-  "5v",
-  "lfcsp-32",
-  "5x5mm",
-  "adg1207bcpz",
-  "adg1607xcp",
-  "analog switch",
-  "1ep",
-  "surface mount",
   "analog",
+  "lfcsp",
+  "5v",
   "switch",
   "3v",
   "multiplexer",
+  "5x5mm",
   "differential",
   "channel",
   "12v",
@@ -41,7 +32,8 @@
   "icmos",
   "ohm",
   "ron",
-  "mhz"
+  "mhz",
+  "1ep"
  ],
  "facts": {
   "package_family": "LFCSP",
@@ -65,7 +57,7 @@
   "tier_counts": {
    "B": 2
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -89,6 +81,6 @@
   "kicad-symbols/Analog_Switch/ADG1207BCPZ",
   "kicad-symbols/Analog_Switch/ADG1607xCP"
  ],
- "embedding_text": "ic-analog.lfcsp.3v3.5v | IC Analog | Analog IC cluster featuring surface-mount 3.3V and 5V components in 32-pin LFCSP packages with exposed pads. | ic analog lfcsp smd 3.3v 5v lfcsp-32 5x5mm adg1207bcpz adg1607xcp analog switch 1ep surface mount analog switch 3v multiplexer differential channel 12v and icmos ohm ron mhz | LFCSP | 3.3V 5V",
+ "embedding_text": "ic-analog.lfcsp.3v3.5v | IC Analog | 2 ic analog parts for 3.3V, 5V using LFCSP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | analog lfcsp 5v switch 3v multiplexer 5x5mm differential channel 12v and icmos ohm ron mhz 1ep | LFCSP | 3.3V 5V",
  "class": "ic.analog"
 }

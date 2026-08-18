@@ -6,34 +6,25 @@
   "Discrete",
   "FET"
  ],
- "description": "Discrete surface-mount 30V FET cluster featuring Texas_DQK footprint parts from KiCad symbols.",
+ "description": "1 discrete fet parts for 30V using Texas footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select for surface-mount discrete FET applications requiring a 30V rating.",
-  "Use when requiring the Texas_DQK footprint or Texas package family.",
-  "Verify compatibility with Tier A KiCad parts such as CSD17313Q2."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a Texas land pattern is intended."
  ],
  "avoid_when": [
-  "The layout requires a footprint other than Texas_DQK.",
-  "The circuit requires a voltage rating other than 30V.",
-  "The application requires through-hole or non-SMD mounting."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than Texas."
  ],
  "keywords": [
-  "discrete",
+  "texas",
   "fet",
   "30v",
-  "texas",
-  "smd",
-  "texas_dqk",
-  "dqk",
-  "csd17313q2",
-  "kicad",
-  "kicad-symbols",
-  "surface mount",
-  "transistor_fet",
-  "discrete.fet",
   "nexfet",
   "power",
   "mosfet",
+  "csd17313q2",
   "transistor",
   "5a",
   "id",
@@ -41,7 +32,8 @@
   "channel",
   "24mohm",
   "ron",
-  "son"
+  "son",
+  "dqk"
  ],
  "facts": {
   "package_family": "Texas",
@@ -64,7 +56,7 @@
   "tier_counts": {
    "A": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -79,6 +71,6 @@
  "part_ids": [
   "kicad-symbols/Transistor_FET/CSD17313Q2"
  ],
- "embedding_text": "discrete-fet.texas.30v | Discrete FET | Discrete surface-mount 30V FET cluster featuring Texas_DQK footprint parts from KiCad symbols. | discrete fet 30v texas smd texas_dqk dqk csd17313q2 kicad kicad-symbols surface mount transistor_fet discrete.fet nexfet power mosfet transistor 5a id vds channel 24mohm ron son | Texas | 30V",
+ "embedding_text": "discrete-fet.texas.30v | Discrete FET | 1 discrete fet parts for 30V using Texas footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | texas fet 30v nexfet power mosfet csd17313q2 transistor 5a id vds channel 24mohm ron son dqk | Texas | 30V",
  "class": "discrete.fet"
 }

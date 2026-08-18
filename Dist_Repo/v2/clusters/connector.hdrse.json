@@ -5,25 +5,26 @@
  "category_path": [
   "Connector"
  ],
- "description": "SMD header connector cluster (HDRSE) spanning male and female footprints from 1x2 to 2x6 pin layouts; all 20 parts are tier C with generated (unreviewed) metadata.",
+ "description": "20 connector parts using HDRSE footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Match the exact footprint code (e.g. HDRSE_F_2X3) to the required pin count and row count.",
-  "Pick the M (male) or F (female) footprint variant based on the mating connector.",
-  "Confirm SMD mounting is appropriate for the target board before use."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a HDRSE land pattern is intended."
  ],
  "avoid_when": [
-  "A through-hole mounted connector is needed — only SMD footprints are available here.",
-  "The needed pin count/row layout is not among the listed footprints.",
-  "A reviewed or higher-quality-tier part is required, since all entries here are tier C and generated."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than HDRSE."
  ],
  "keywords": [
   "hdrse",
   "connector",
-  "header",
-  "smd",
-  "surface mount",
-  "male",
-  "female",
+  "surface",
+  "mount",
+  "pad",
+  "pins",
+  "mm",
+  "pitch",
   "1x2",
   "2x1",
   "1x3",
@@ -31,16 +32,7 @@
   "1x5",
   "2x2",
   "2x3",
-  "2x4",
-  "2x5",
-  "2x6",
-  "pin header",
-  "surface",
-  "mount",
-  "pad",
-  "pins",
-  "mm",
-  "pitch"
+  "2x4"
  ],
  "facts": {
   "package_family": "HDRSE",
@@ -72,7 +64,7 @@
   "tier_counts": {
    "C": 20
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
@@ -97,6 +89,6 @@
   "chilaboard-altium-library/HDRSE_M_2X5/HDRSE_M_2X5",
   "chilaboard-altium-library/HDRSE_M_2X6/HDRSE_M_2X6"
  ],
- "embedding_text": "connector.hdrse | Connector | SMD header connector cluster (HDRSE) spanning male and female footprints from 1x2 to 2x6 pin layouts; all 20 parts are tier C with generated (unreviewed) metadata. | hdrse connector header smd surface mount male female 1x2 2x1 1x3 1x4 1x5 2x2 2x3 2x4 2x5 2x6 pin header surface mount pad pins mm pitch | HDRSE | ",
+ "embedding_text": "connector.hdrse | Connector | 20 connector parts using HDRSE footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | hdrse connector surface mount pad pins mm pitch 1x2 2x1 1x3 1x4 1x5 2x2 2x3 2x4 | HDRSE | ",
  "class": "connector"
 }

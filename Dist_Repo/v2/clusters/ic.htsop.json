@@ -5,30 +5,19 @@
  "category_path": [
   "IC"
  ],
- "description": "Surface-mount IC cluster featuring HTSOP package parts and HTSOP-8-1EP footprints with thermal vias.",
+ "description": "1 ic parts using HTSOP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when an SMD IC using an HTSOP package family is required.",
-  "Verify footprint compatibility with HTSOP-8-1EP pad dimensions and thermal via layout.",
-  "Check part quality tier and data accuracy before committing to layout."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a HTSOP land pattern is intended."
  ],
  "avoid_when": [
-  "The target design requires a non-HTSOP package or through-hole mounting.",
-  "The specific HTSOP footprint dimensions or thermal pad requirements do not match.",
-  "Symbol-to-footprint mappings or electrical ratings remain unverified."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than HTSOP."
  ],
  "keywords": [
-  "ic",
   "htsop",
-  "htsop-8-1ep",
-  "smd",
-  "thermalvias",
-  "p1.27mm",
-  "ep2.4x3.2mm",
-  "3.9x4.9mm",
-  "integrated circuit",
-  "surface mount",
-  "htsop package",
-  "dist-legacy",
   "1ep",
   "9x4",
   "9mm",
@@ -37,10 +26,13 @@
   "ep2",
   "4x3",
   "2mm",
+  "thermalvias",
+  "ic",
   "pdf",
   "surface",
   "mount",
-  "pad"
+  "pad",
+  "mm"
  ],
  "facts": {
   "package_family": "HTSOP",
@@ -61,12 +53,12 @@
   "tier_counts": {
    "C": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
   "dist-legacy/HTSOP-8-1EP_3.9x4.9mm_P1.27mm_EP2.4x3.2mm_ThermalVias"
  ],
- "embedding_text": "ic.htsop | IC | Surface-mount IC cluster featuring HTSOP package parts and HTSOP-8-1EP footprints with thermal vias. | ic htsop htsop-8-1ep smd thermalvias p1.27mm ep2.4x3.2mm 3.9x4.9mm integrated circuit surface mount htsop package dist-legacy 1ep 9x4 9mm p1 27mm ep2 4x3 2mm pdf surface mount pad | HTSOP | ",
+ "embedding_text": "ic.htsop | IC | 1 ic parts using HTSOP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | htsop 1ep 9x4 9mm p1 27mm ep2 4x3 2mm thermalvias ic pdf surface mount pad mm | HTSOP | ",
  "class": "ic"
 }

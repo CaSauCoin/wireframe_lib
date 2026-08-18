@@ -6,44 +6,34 @@
   "Discrete",
   "BJT"
  ],
- "description": "Cluster of 5 tier-A through-hole discrete BJTs rated for the 90V facet, packaged in TO-3_BEC or TO-218-3_Vertical footprints, sourced from kicad-symbols and Alternate-KiCad-Library.",
+ "description": "5 discrete bjt parts for 90V using TO footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "All 5 parts are tier A with score 100, so differentiate by exact footprint match",
-  "Choose TO-218-3_Vertical for BD249B/BD250B or TO-3_BEC for 2N5038/MJ11030/MJ4502",
-  "Confirm the 90V facet meets your circuit's voltage requirement before selecting",
-  "Check source library (kicad-symbols vs Alternate-KiCad-Library) for consistency with rest of design"
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a TO land pattern is intended."
  ],
  "avoid_when": [
-  "Design requires a footprint other than TO-3_BEC or TO-218-3_Vertical",
-  "A surface-mount package is needed instead of through_hole mounting",
-  "Required voltage rating exceeds the 90V facet covered by this cluster",
-  "Part electrical specs beyond voltage are not confirmed against the datasheet"
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than TO."
  ],
  "keywords": [
-  "bjt",
-  "discrete bjt",
-  "to package",
-  "to-3",
-  "to-218",
-  "to-3_bec",
-  "to-218-3_vertical",
-  "90v",
-  "through hole",
-  "transistor",
-  "power transistor",
-  "bd249b",
-  "bd250b",
-  "2n5038",
-  "mj11030",
-  "mj4502",
-  "kicad-symbols",
-  "alternate-kicad-library",
   "to",
+  "transistor",
+  "bjt",
+  "90v",
   "npn",
   "power",
   "discrete",
   "sot",
-  "vertical"
+  "vertical",
+  "pnp",
+  "akl",
+  "alternate",
+  "kicad",
+  "library",
+  "bec",
+  "tr"
  ],
  "facts": {
   "package_family": "TO",
@@ -68,7 +58,7 @@
   "tier_counts": {
    "A": 5
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -119,6 +109,6 @@
   "Alternate-KiCad-Library/Transistor_BJT_Darlington_AKL/MJ11030",
   "Alternate-KiCad-Library/Transistor_BJT_AKL/MJ4502"
  ],
- "embedding_text": "discrete-bjt.to.90v | Discrete BJT | Cluster of 5 tier-A through-hole discrete BJTs rated for the 90V facet, packaged in TO-3_BEC or TO-218-3_Vertical footprints, sourced from kicad-symbols and Alternate-KiCad-Library. | bjt discrete bjt to package to-3 to-218 to-3_bec to-218-3_vertical 90v through hole transistor power transistor bd249b bd250b 2n5038 mj11030 mj4502 kicad-symbols alternate-kicad-library to npn power discrete sot vertical | TO | 90V",
+ "embedding_text": "discrete-bjt.to.90v | Discrete BJT | 5 discrete bjt parts for 90V using TO footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | to transistor bjt 90v npn power discrete sot vertical pnp akl alternate kicad library bec tr | TO | 90V",
  "class": "discrete.bjt"
 }

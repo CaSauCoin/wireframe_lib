@@ -6,33 +6,23 @@
   "Discrete",
   "Transistor"
  ],
- "description": "Discrete surface-mount transistor cluster with 4V rating in Q_SOT-23 footprint, featuring NPN and PNP parts from JLCPCB KiCad library.",
+ "description": "2 discrete transistor parts for 4V using SOT-23 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Requirements call for SMD SOT-23 or Q_SOT-23 footprint discrete transistors.",
-  "Selecting 4V rated NPN (MMBTA06) or PNP (MMBTA56) transistors.",
-  "Using tier B components from the JLCPCB KiCad library."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SOT-23 land pattern is intended."
  ],
  "avoid_when": [
-  "Through-hole mounting is required instead of SMD.",
-  "Package footprint other than SOT-23 or Q_SOT-23 is needed.",
-  "Tier A certified parts are required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SOT-23."
  ],
  "keywords": [
-  "discrete",
-  "transistor",
+  "sot",
   "4v",
-  "sot-23",
-  "sot23",
-  "q_sot-23",
-  "smd",
   "npn",
   "pnp",
-  "mmbta06",
-  "mmbta56",
   "jlcpcb",
-  "kicad",
-  "jlcpcb-kicad-library",
-  "sot",
   "transistors",
   "100na",
   "500ma",
@@ -40,7 +30,10 @@
   "bipolar",
   "bjt",
   "rohs",
-  "to"
+  "to",
+  "smd",
+  "discrete",
+  "transistor"
  ],
  "facts": {
   "package_family": "SOT-23",
@@ -63,7 +56,7 @@
   "tier_counts": {
    "B": 2
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -87,6 +80,6 @@
   "JLCPCB-Kicad-Library/JLCPCB-Transistors/NPN,MMBTA06",
   "JLCPCB-Kicad-Library/JLCPCB-Transistors/PNP,MMBTA56"
  ],
- "embedding_text": "discrete-transistor.sot-23.4v | Discrete Transistor | Discrete surface-mount transistor cluster with 4V rating in Q_SOT-23 footprint, featuring NPN and PNP parts from JLCPCB KiCad library. | discrete transistor 4v sot-23 sot23 q_sot-23 smd npn pnp mmbta06 mmbta56 jlcpcb kicad jlcpcb-kicad-library sot transistors 100na 500ma 80v bipolar bjt rohs to | SOT-23 | 4V",
+ "embedding_text": "discrete-transistor.sot-23.4v | Discrete Transistor | 2 discrete transistor parts for 4V using SOT-23 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | sot 4v npn pnp jlcpcb transistors 100na 500ma 80v bipolar bjt rohs to smd discrete transistor | SOT-23 | 4V",
  "class": "discrete.transistor"
 }

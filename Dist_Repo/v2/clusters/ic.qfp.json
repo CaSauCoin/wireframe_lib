@@ -5,40 +5,32 @@
  "category_path": [
   "IC"
  ],
- "description": "Integrated circuit cluster containing 277 surface-mount parts in QFP package variations including LQFP and TQFP footprints.",
+ "description": "277 ic parts using QFP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select based on exact QFP package variant, pin pitch, and package body dimensions.",
-  "Prefer tier A and tier B parts with higher quality verification scores.",
-  "Verify land pattern footprint details and symbol alignment prior to PCB placement."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a QFP land pattern is intended."
  ],
  "avoid_when": [
-  "The design requires package families other than QFP.",
-  "Through-hole mounting or non-SMD packages are required.",
-  "Required electrical specifications or functional ratings are not provided."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than QFP."
  ],
  "keywords": [
   "ic",
-  "qfp",
-  "lqfp",
-  "tqfp",
-  "smd",
-  "surface mount",
-  "integrated circuit",
-  "package",
-  "footprint",
-  "7x7mm",
-  "14x14mm",
-  "10x10mm",
-  "p0.5mm",
-  "p0.8mm",
   "p0",
+  "lqfp",
+  "qfp",
   "5mm",
+  "tqfp",
   "pad",
   "pins",
   "pitch",
   "mm",
   "1ep",
   "pqfp",
+  "package",
+  "10x10mm",
   "surface",
   "mount"
  ],
@@ -82,7 +74,7 @@
    "B": 18,
    "C": 253
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -405,6 +397,6 @@
   "celestial-altium-library/VLSI LQFP-48 7x7MM/VLSI_LQFP-48_7x7MM",
   "matthiasbock-altium-libraries/TQFP-144/TQFP-144"
  ],
- "embedding_text": "ic.qfp | IC | Integrated circuit cluster containing 277 surface-mount parts in QFP package variations including LQFP and TQFP footprints. | ic qfp lqfp tqfp smd surface mount integrated circuit package footprint 7x7mm 14x14mm 10x10mm p0.5mm p0.8mm p0 5mm pad pins pitch mm 1ep pqfp surface mount | QFP | ",
+ "embedding_text": "ic.qfp | IC | 277 ic parts using QFP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | ic p0 lqfp qfp 5mm tqfp pad pins pitch mm 1ep pqfp package 10x10mm surface mount | QFP | ",
  "class": "ic"
 }

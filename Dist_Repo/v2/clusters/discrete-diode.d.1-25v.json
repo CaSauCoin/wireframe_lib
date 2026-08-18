@@ -6,32 +6,18 @@
   "Discrete",
   "Diode"
  ],
- "description": "A cluster of 5 tier A surface-mount discrete switching diode parts rated at 1.25V in package family D with SOD-123, SOD-323, and SOD-523 footprints from JLCPCB-Kicad-Library.",
+ "description": "5 discrete diode parts for 1.25V using D footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when requiring a surface-mount 1.25V discrete diode with a D package family footprint.",
-  "Choose between D_SOD-123, D_SOD-323, or D_SOD-523 footprints based on layout requirements.",
-  "All 5 available parts belong to quality tier A from JLCPCB-Kicad-Library."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a D land pattern is intended."
  ],
  "avoid_when": [
-  "Avoid when the design requires through-hole mounting instead of SMD.",
-  "Avoid if layout requires a package family other than D or footprints other than SOD-123, SOD-323, or SOD-523.",
-  "Avoid if the circuit requires a diode voltage rating other than 1.25V."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than D."
  ],
  "keywords": [
-  "discrete diode",
-  "1.25v",
-  "smd",
-  "switching diode",
-  "d_sod-123",
-  "d_sod-323",
-  "d_sod-523",
-  "sod-123",
-  "sod-323",
-  "sod-523",
-  "1n4148w",
-  "1n4148ws",
-  "1n4148wt",
-  "jlcpcb-kicad-library",
   "sod",
   "switching",
   "diodes",
@@ -41,7 +27,13 @@
   "jlcpcb",
   "100v",
   "4ns",
-  "independent"
+  "independent",
+  "rohs",
+  "discrete",
+  "1ua",
+  "75v",
+  "2a",
+  "1n4148ws"
  ],
  "facts": {
   "package_family": "D",
@@ -66,7 +58,7 @@
   "tier_counts": {
    "A": 5
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -117,6 +109,6 @@
   "JLCPCB-Kicad-Library/JLCPCB-Diodes/Switching,1N4148WS,(3)",
   "JLCPCB-Kicad-Library/JLCPCB-Diodes/Switching,1N4148WT"
  ],
- "embedding_text": "discrete-diode.d.1-25v | Discrete Diode | A cluster of 5 tier A surface-mount discrete switching diode parts rated at 1.25V in package family D with SOD-123, SOD-323, and SOD-523 footprints from JLCPCB-Kicad-Library. | discrete diode 1.25v smd switching diode d_sod-123 d_sod-323 d_sod-523 sod-123 sod-323 sod-523 1n4148w 1n4148ws 1n4148wt jlcpcb-kicad-library sod switching diodes 25v 150ma diode jlcpcb 100v 4ns independent | D | 1.25V",
+ "embedding_text": "discrete-diode.d.1-25v | Discrete Diode | 5 discrete diode parts for 1.25V using D footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | sod switching diodes 25v 150ma diode jlcpcb 100v 4ns independent rohs discrete 1ua 75v 2a 1n4148ws | D | 1.25V",
  "class": "discrete.diode"
 }

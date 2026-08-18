@@ -5,33 +5,19 @@
  "category_path": [
   "IC"
  ],
- "description": "Integrated circuit cluster featuring surface-mount HSOP footprints with exposed pads, thermal vias, and slug options across 8 to 54 pin variants.",
+ "description": "12 ic parts using HSOP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Match the exact HSOP footprint variant, including pin count, lead pitch, and body size.",
-  "Verify thermal pad requirements such as slug orientation (SlugUp or SlugDown) and thermal via options.",
-  "Confirm surface-mount land pattern compatibility for the selected part."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a HSOP land pattern is intended."
  ],
  "avoid_when": [
-  "The layout requires a through-hole or non-HSOP IC package.",
-  "The design requires a pin count, pitch, or pad layout not present in the available HSOP footprints.",
-  "Electrical specifications or verified datasheets are mandatory for selection."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than HSOP."
  ],
  "keywords": [
-  "ic",
   "hsop",
-  "smd",
-  "surface mount",
-  "exposed pad",
-  "slugdown",
-  "slugup",
-  "thermal vias",
-  "hsop-8",
-  "hsop-20",
-  "hsop-32",
-  "hsop-36",
-  "hsop-54",
-  "0.65mm pitch",
-  "1.27mm pitch",
   "9mm",
   "1ep",
   "27mm",
@@ -39,8 +25,14 @@
   "p1",
   "65mm",
   "p0",
+  "ic",
   "pitch",
-  "9x4"
+  "9x4",
+  "ep2",
+  "thermalvias",
+  "slugdown",
+  "www",
+  "com"
  ],
  "facts": {
   "package_family": "HSOP",
@@ -72,7 +64,7 @@
   "tier_counts": {
    "C": 12
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
@@ -89,6 +81,6 @@
   "dist-legacy/HSOP-54-1EP_7.5x17.9mm_P0.65mm_EP4.6x4.6mm",
   "dist-legacy/HSOP-8-1EP_3.9x4.9mm_P1.27mm_EP2.3x2.3mm_ThermalVias"
  ],
- "embedding_text": "ic.hsop | IC | Integrated circuit cluster featuring surface-mount HSOP footprints with exposed pads, thermal vias, and slug options across 8 to 54 pin variants. | ic hsop smd surface mount exposed pad slugdown slugup thermal vias hsop-8 hsop-20 hsop-32 hsop-36 hsop-54 0.65mm pitch 1.27mm pitch 9mm 1ep 27mm 0x15 p1 65mm p0 pitch 9x4 | HSOP | ",
+ "embedding_text": "ic.hsop | IC | 12 ic parts using HSOP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | hsop 9mm 1ep 27mm 0x15 p1 65mm p0 ic pitch 9x4 ep2 thermalvias slugdown www com | HSOP | ",
  "class": "ic"
 }

@@ -7,32 +7,24 @@
   "Power",
   "Linear Regulator"
  ],
- "description": "Cluster of surface-mount 55V LDO power linear regulator ICs in SOT-23 footprints.",
+ "description": "2 ic power linear regulator parts for LDO, 55V using SOT-23 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select for 55V LDO linear regulator ICs in SOT-23 surface-mount footprints.",
-  "Choose between MCP1792x-4102xCB and MCP1792x-5002xCB variants.",
-  "Verify part ratings and footprint details against project requirements."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SOT-23 land pattern is intended."
  ],
  "avoid_when": [
-  "The circuit requires a package footprint other than SOT-23.",
-  "The design needs a non-LDO regulator or a voltage rating other than 55V.",
-  "Through-hole mounting or non-SMD assembly is required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SOT-23."
  ],
  "keywords": [
-  "sot-23",
-  "ldo",
-  "55v",
-  "linear regulator",
-  "ic power ldo",
-  "smd",
-  "power ic",
-  "mcp1792x-4102xcb",
-  "mcp1792x-5002xcb",
-  "mcp1792x",
-  "kicad-symbols",
   "sot",
   "regulator",
   "linear",
+  "ldo",
+  "55v",
+  "mcp1792x",
   "100ma",
   "low",
   "quiscent",
@@ -40,6 +32,7 @@
   "input",
   "output",
   "to",
+  "smd",
   "ic",
   "power"
  ],
@@ -65,7 +58,7 @@
   "tier_counts": {
    "A": 2
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -89,6 +82,6 @@
   "kicad-symbols/Regulator_Linear/MCP1792x-4102xCB",
   "kicad-symbols/Regulator_Linear/MCP1792x-5002xCB"
  ],
- "embedding_text": "ic-power-ldo.sot-23.ldo.55v | IC Power Linear Regulator | Cluster of surface-mount 55V LDO power linear regulator ICs in SOT-23 footprints. | sot-23 ldo 55v linear regulator ic power ldo smd power ic mcp1792x-4102xcb mcp1792x-5002xcb mcp1792x kicad-symbols sot regulator linear 100ma low quiscent current input output to ic power | SOT-23 | LDO 55V",
+ "embedding_text": "ic-power-ldo.sot-23.ldo.55v | IC Power Linear Regulator | 2 ic power linear regulator parts for LDO, 55V using SOT-23 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | sot regulator linear ldo 55v mcp1792x 100ma low quiscent current input output to smd ic power | SOT-23 | LDO 55V",
  "class": "ic.power.ldo"
 }

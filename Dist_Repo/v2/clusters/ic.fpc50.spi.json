@@ -5,38 +5,32 @@
  "category_path": [
   "IC"
  ],
- "description": "Surface-mount IC cluster for SPI interfaces featuring FPC50_50 and FPC50_40 footprints within the FPC50 package family.",
+ "description": "2 ic parts for SPI using FPC50 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Choose between FPC50_50 and FPC50_40 surface-mount footprint options.",
-  "Verify target board layout matches FPC50 package family specifications.",
-  "Review tier B part entries from chilaboard-altium-library."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a FPC50 land pattern is intended."
  ],
  "avoid_when": [
-  "The design requires a package family other than FPC50.",
-  "Through-hole mounting is required instead of SMD.",
-  "An interface other than SPI is needed."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than FPC50."
  ],
  "keywords": [
-  "ic",
-  "spi",
-  "fpc50",
-  "fpc50_50",
-  "fpc50_40",
-  "smd",
-  "surface mount",
-  "lcdtft",
-  "dbidpi",
-  "fpc50p",
-  "4inch480x4",
-  "chilaboard",
   "display",
   "lcd",
+  "lcdtft",
+  "dbidpi",
+  "4inch480x4",
   "interface",
   "tft",
   "rgb",
+  "spi",
+  "fpc50",
   "fpc",
   "module",
   "dpi",
+  "fpc50p",
   "data",
   "control"
  ],
@@ -62,7 +56,7 @@
   "tier_counts": {
    "B": 2
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -86,6 +80,6 @@
   "chilaboard-altium-library/LCDTFT_DBIDPI_FPC50P_4INCH480X4/LCDTFT_DBIDPI_FPC50P_4INCH480X4",
   "chilaboard-altium-library/LCDTFT_DBIDPI_FPC40P_4INCH480X4/LCDTFT_DBIDPI_FPC40P_4INCH480X4"
  ],
- "embedding_text": "ic.fpc50.spi | IC | Surface-mount IC cluster for SPI interfaces featuring FPC50_50 and FPC50_40 footprints within the FPC50 package family. | ic spi fpc50 fpc50_50 fpc50_40 smd surface mount lcdtft dbidpi fpc50p 4inch480x4 chilaboard display lcd interface tft rgb fpc module dpi data control | FPC50 | SPI",
+ "embedding_text": "ic.fpc50.spi | IC | 2 ic parts for SPI using FPC50 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | display lcd lcdtft dbidpi 4inch480x4 interface tft rgb spi fpc50 fpc module dpi fpc50p data control | FPC50 | SPI",
  "class": "ic"
 }

@@ -5,30 +5,21 @@
  "category_path": [
   "IC"
  ],
- "description": "Integrated circuit cluster in the SD package family containing 11 tier C parts with surface-mount and through-hole footprints.",
+ "description": "11 ic parts using SD footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when requiring an IC part in an SD package family footprint.",
-  "Verify mounting type support for surface-mount (smd) or through-hole layouts.",
-  "Match specific footprint variants such as Kyocera, TE, or 16mm slot depth designs."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SD land pattern is intended."
  ],
  "avoid_when": [
-  "The PCB layout requires package families other than SD.",
-  "Surface-mount or through-hole SD footprints do not match the required component land pattern.",
-  "Unverified tier C parts without full datasheet details are unacceptable for the application."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SD."
  ],
  "keywords": [
-  "ic",
   "sd",
-  "sd package",
-  "smd",
-  "through hole",
   "kyocera",
-  "te",
-  "sd card",
-  "16mm slot depth",
-  "chilaboard",
-  "dist legacy",
-  "sd-mch2b",
+  "ic",
   "card",
   "pad",
   "mm",
@@ -40,7 +31,8 @@
   "package",
   "type",
   "device",
-  "16mm"
+  "16mm",
+  "te"
  ],
  "facts": {
   "package_family": "SD",
@@ -74,7 +66,7 @@
   "tier_counts": {
    "C": 11
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
@@ -90,6 +82,6 @@
   "chilaboard-altium-library/SD_TE1/SD_TE1",
   "dist-legacy/SD_TE_2041021"
  ],
- "embedding_text": "ic.sd | IC | Integrated circuit cluster in the SD package family containing 11 tier C parts with surface-mount and through-hole footprints. | ic sd sd package smd through hole kyocera te sd card 16mm slot depth chilaboard dist legacy sd-mch2b card pad mm pitch pins pdf mount surface package type device 16mm | SD | ",
+ "embedding_text": "ic.sd | IC | 11 ic parts using SD footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | sd kyocera ic card pad mm pitch pins pdf mount surface package type device 16mm te | SD | ",
  "class": "ic"
 }

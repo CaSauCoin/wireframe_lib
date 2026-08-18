@@ -6,27 +6,20 @@
   "Discrete",
   "Diode"
  ],
- "description": "Discrete diode component cluster containing 1 tier B part using the AVX footprint and package family.",
+ "description": "1 discrete diode parts using AVX footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when a discrete diode with an AVX footprint is needed.",
-  "Check part specifications for tier B entries from dist-legacy.",
-  "Ensure compatibility with the AVX package family."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a AVX land pattern is intended."
  ],
  "avoid_when": [
-  "Avoid when a footprint other than AVX is required by the PCB layout.",
-  "Avoid if tier B quality level is insufficient for the application.",
-  "Do not use if components outside the discrete diode class are needed."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than AVX."
  ],
  "keywords": [
   "avx",
   "diode",
-  "discrete",
-  "discrete diode",
-  "avx footprint",
-  "avx package",
-  "discrete.diode",
-  "dist-legacy",
-  "tier b",
   "two",
   "pin",
   "anode",
@@ -34,7 +27,8 @@
   "component",
   "with",
   "and",
-  "pins"
+  "pins",
+  "discrete"
  ],
  "facts": {
   "package_family": "AVX",
@@ -55,7 +49,7 @@
   "tier_counts": {
    "B": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -70,6 +64,6 @@
  "part_ids": [
   "dist-legacy/AVX 9296002202806"
  ],
- "embedding_text": "discrete-diode.avx | Discrete Diode | Discrete diode component cluster containing 1 tier B part using the AVX footprint and package family. | avx diode discrete discrete diode avx footprint avx package discrete.diode dist-legacy tier b two pin anode cathode component with and pins | AVX | ",
+ "embedding_text": "discrete-diode.avx | Discrete Diode | 1 discrete diode parts using AVX footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | avx diode two pin anode cathode component with and pins discrete | AVX | ",
  "class": "discrete.diode"
 }

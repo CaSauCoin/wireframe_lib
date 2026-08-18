@@ -5,27 +5,20 @@
  "category_path": [
   "IC"
  ],
- "description": "Integrated circuit cluster containing a tier-C part associated with the VO20 package family and footprint.",
+ "description": "1 ic parts using VO20 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Use when a component in the VO20 package family is required for the design.",
-  "Verify footprint dimensions, pin mapping, and land pattern compatibility before board layout.",
-  "Check part specifications and documentation availability for tier-C entries."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a VO20 land pattern is intended."
  ],
  "avoid_when": [
-  "Do not use if the board design requires a package type other than VO20.",
-  "Avoid when required electrical parameters or pinouts are not documented.",
-  "Do not use if planner-visible or higher-tier reviewed parts are strictly required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than VO20."
  ],
  "keywords": [
   "vo20",
   "ic",
-  "integrated circuit",
-  "vo20 package",
-  "vo20 footprint",
-  "dist-legacy",
-  "tier c",
-  "vo20 land pattern",
-  "package family vo20",
   "pad",
   "mm",
   "pitch",
@@ -50,12 +43,12 @@
   "tier_counts": {
    "C": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
   "dist-legacy/VO20"
  ],
- "embedding_text": "ic.vo20 | IC | Integrated circuit cluster containing a tier-C part associated with the VO20 package family and footprint. | vo20 ic integrated circuit vo20 package vo20 footprint dist-legacy tier c vo20 land pattern package family vo20 pad mm pitch pins | VO20 | ",
+ "embedding_text": "ic.vo20 | IC | 1 ic parts using VO20 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | vo20 ic pad mm pitch pins | VO20 | ",
  "class": "ic"
 }

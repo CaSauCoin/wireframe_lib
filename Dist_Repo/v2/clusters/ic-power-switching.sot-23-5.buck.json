@@ -7,42 +7,34 @@
   "Power",
   "Switching Regulator"
  ],
- "description": "This cluster includes 7 tier-A surface-mount buck switching regulator ICs using SOT-23-5 and TSOT-23-5 footprints.",
+ "description": "7 ic power switching regulator parts for buck using SOT-23-5 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when a surface-mount buck switching regulator IC is required.",
-  "Choose between SOT-23-5 and TSOT-23-5 footprint options based on PCB requirements.",
-  "Confirm compatibility with available tier-A KiCad symbol parts."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SOT-23-5 land pattern is intended."
  ],
  "avoid_when": [
-  "The application requires a non-buck regulator topology.",
-  "A package other than SOT-23-5 or TSOT-23-5 is needed.",
-  "Through-hole mounting is required instead of surface-mount."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SOT-23-5."
  ],
  "keywords": [
-  "ic",
-  "power",
-  "switching regulator",
-  "buck",
-  "sot-23-5",
-  "tsot-23-5",
-  "smd",
-  "kicad",
-  "ltc3406b-2es5",
-  "ltc3406es5",
-  "ncp1529a",
-  "pam2301caabadj",
-  "pam2305aabadj",
+  "sot",
   "regulator",
   "switching",
-  "sot",
   "step",
   "down",
   "tsot",
+  "buck",
   "to",
   "output",
   "voltage",
+  "smd",
+  "ic",
+  "power",
   "adjustable",
-  "converter"
+  "converter",
+  "dc"
  ],
  "facts": {
   "package_family": "SOT-23-5",
@@ -66,7 +58,7 @@
   "tier_counts": {
    "A": 7
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -119,6 +111,6 @@
   "kicad-symbols/Regulator_Switching/TLV62565DBVx",
   "kicad-symbols/Regulator_Switching/TLV62566DBVx"
  ],
- "embedding_text": "ic-power-switching.sot-23-5.buck | IC Power Switching Regulator | This cluster includes 7 tier-A surface-mount buck switching regulator ICs using SOT-23-5 and TSOT-23-5 footprints. | ic power switching regulator buck sot-23-5 tsot-23-5 smd kicad ltc3406b-2es5 ltc3406es5 ncp1529a pam2301caabadj pam2305aabadj regulator switching sot step down tsot to output voltage adjustable converter | SOT-23-5 | buck",
+ "embedding_text": "ic-power-switching.sot-23-5.buck | IC Power Switching Regulator | 7 ic power switching regulator parts for buck using SOT-23-5 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | sot regulator switching step down tsot buck to output voltage smd ic power adjustable converter dc | SOT-23-5 | buck",
  "class": "ic.power.switching"
 }

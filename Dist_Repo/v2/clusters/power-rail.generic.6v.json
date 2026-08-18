@@ -6,27 +6,19 @@
   "Power",
   "Power Rail"
  ],
- "description": "Generic +6V and -6V power rail symbols from KiCad libraries for schematic power net labeling with footprints assigned later.",
+ "description": "2 power power rail parts for 6V with package chosen later. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select between +6V and -6V symbols based on the required voltage polarity.",
-  "Assign footprint and package details explicitly if required for physical layout.",
-  "Verify the power symbol connects to the intended 6V power net."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Select a footprint/package explicitly before placement."
  ],
  "avoid_when": [
-  "Voltages other than +6V or -6V are required.",
-  "A physical component or voltage regulator is needed rather than a schematic power rail symbol."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review."
  ],
  "keywords": [
   "power",
-  "power rail",
   "6v",
-  "+6v",
-  "-6v",
-  "voltage rail",
-  "power symbol",
-  "schematic label",
-  "kicad-symbols",
-  "power.rail",
   "global",
   "symbol",
   "creates",
@@ -55,7 +47,7 @@
   "tier_counts": {
    "G": 2
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -79,6 +71,6 @@
   "kicad-symbols/power/+6V",
   "kicad-symbols/power/-6V"
  ],
- "embedding_text": "power-rail.generic.6v | Power Power Rail | Generic +6V and -6V power rail symbols from KiCad libraries for schematic power net labeling with footprints assigned later. | power power rail 6v +6v -6v voltage rail power symbol schematic label kicad-symbols power.rail global symbol creates label with name rail package chosen later | package chosen later | 6V",
+ "embedding_text": "power-rail.generic.6v | Power Power Rail | 2 power power rail parts for 6V with package chosen later. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | power 6v global symbol creates label with name rail package chosen later | package chosen later | 6V",
  "class": "power.rail"
 }

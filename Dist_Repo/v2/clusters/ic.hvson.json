@@ -5,42 +5,34 @@
  "category_path": [
   "IC"
  ],
- "description": "Integrated circuit cluster containing surface-mount HVSON parts with 8-pin exposed-pad land patterns.",
+ "description": "2 ic parts using HVSON footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when an SMD IC in an 8-pin HVSON package with an exposed pad is required.",
-  "Choose between 3x3mm (0.65mm pitch) and 4x4mm (0.8mm pitch) footprint options.",
-  "Verify part specifications and footprint compatibility before selection."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a HVSON land pattern is intended."
  ],
  "avoid_when": [
-  "The board layout requires through-hole mounting or package types other than HVSON.",
-  "Footprints with pin counts other than 8 or without an exposed pad are required.",
-  "Tier C quality tier parts are not acceptable for the design."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than HVSON."
  ],
  "keywords": [
-  "ic",
   "hvson",
-  "smd",
-  "surface mount",
-  "hvson-8-1ep",
-  "3x3mm",
-  "4x4mm",
-  "p0.65mm",
-  "p0.8mm",
-  "ep1.6x2.4mm",
-  "ep2.2x3.1mm",
-  "exposed pad",
-  "8-pin",
   "1ep",
   "p0",
+  "3x3mm",
   "65mm",
   "ep1",
   "6x2",
   "4mm",
+  "4x4mm",
   "8mm",
   "ep2",
   "2x3",
   "1mm",
-  "surface"
+  "ic",
+  "surface",
+  "mount"
  ],
  "facts": {
   "package_family": "HVSON",
@@ -62,13 +54,13 @@
   "tier_counts": {
    "C": 2
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
   "dist-legacy/HVSON-8-1EP_3x3mm_P0.65mm_EP1.6x2.4mm",
   "dist-legacy/HVSON-8-1EP_4x4mm_P0.8mm_EP2.2x3.1mm"
  ],
- "embedding_text": "ic.hvson | IC | Integrated circuit cluster containing surface-mount HVSON parts with 8-pin exposed-pad land patterns. | ic hvson smd surface mount hvson-8-1ep 3x3mm 4x4mm p0.65mm p0.8mm ep1.6x2.4mm ep2.2x3.1mm exposed pad 8-pin 1ep p0 65mm ep1 6x2 4mm 8mm ep2 2x3 1mm surface | HVSON | ",
+ "embedding_text": "ic.hvson | IC | 2 ic parts using HVSON footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | hvson 1ep p0 3x3mm 65mm ep1 6x2 4mm 4x4mm 8mm ep2 2x3 1mm ic surface mount | HVSON | ",
  "class": "ic"
 }

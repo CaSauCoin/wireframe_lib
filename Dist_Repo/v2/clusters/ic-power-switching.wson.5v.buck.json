@@ -7,33 +7,23 @@
   "Power",
   "Switching Regulator"
  ],
- "description": "Surface-mount 5V buck and boost switching regulator IC cluster in WSON packages with 6-pin and 10-pin footprints.",
+ "description": "3 ic power switching regulator parts for 5V, buck, boost using WSON footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select between WSON-10 (2.5x2.5mm, 0.5mm pitch) and WSON-6 (3x3mm, 0.95mm pitch) package footprints.",
-  "Prefer tier A parts such as TPS63030DSK or TPS63900 over tier B parts.",
-  "Choose the WSON-10 footprint variant with ThermalVias when thermal via layout is needed."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a WSON land pattern is intended."
  ],
  "avoid_when": [
-  "Designs requiring packages other than SMD WSON footprints.",
-  "Applications requiring footprint pin counts or dimensions outside WSON-6 3x3mm or WSON-10 2.5x2.5mm.",
-  "Projects requiring switching regulator facets other than 5V, buck, or boost."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than WSON."
  ],
  "keywords": [
   "wson",
-  "switching regulator",
+  "regulator",
   "buck",
   "boost",
   "5v",
-  "smd",
-  "ic",
-  "power switching",
-  "wson-10",
-  "wson-6",
-  "tps63030dsk",
-  "tps63900",
-  "lmr10510ysd",
-  "thermalvias",
-  "regulator",
   "switching",
   "voltage",
   "converter",
@@ -41,8 +31,10 @@
   "5mm",
   "1ep",
   "p0",
+  "ic",
   "power",
-  "input"
+  "input",
+  "1a"
  ],
  "facts": {
   "package_family": "WSON",
@@ -70,7 +62,7 @@
    "A": 2,
    "B": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -103,6 +95,6 @@
   "kicad-symbols/Regulator_Switching/TPS63900",
   "kicad-symbols/Regulator_Switching/LMR10510YSD"
  ],
- "embedding_text": "ic-power-switching.wson.5v.buck | IC Power Switching Regulator | Surface-mount 5V buck and boost switching regulator IC cluster in WSON packages with 6-pin and 10-pin footprints. | wson switching regulator buck boost 5v smd ic power switching wson-10 wson-6 tps63030dsk tps63900 lmr10510ysd thermalvias regulator switching voltage converter adjustable 5mm 1ep p0 power input | WSON | 5V buck boost",
+ "embedding_text": "ic-power-switching.wson.5v.buck | IC Power Switching Regulator | 3 ic power switching regulator parts for 5V, buck, boost using WSON footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | wson regulator buck boost 5v switching voltage converter adjustable 5mm 1ep p0 ic power input 1a | WSON | 5V buck boost",
  "class": "ic.power.switching"
 }

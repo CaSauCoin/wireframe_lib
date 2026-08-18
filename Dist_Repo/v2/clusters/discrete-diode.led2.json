@@ -6,44 +6,34 @@
   "Discrete",
   "Diode"
  ],
- "description": "Cluster of 8 through-hole LED indicator parts (blue, green, red, white) from the Seeed OPL library using 2-pin LED2 land patterns in 3mm or 5mm lead spacing.",
+ "description": "8 discrete diode parts using LED2 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Match the exact LED2 footprint variant: D3.0MM or D5.0MM",
-  "Confirm the emitted color needed (blue, green, red, white) from the part name",
-  "All parts are tier B with score 72 from a single source; verify against your own datasheet before use",
-  "Check 2-pin DIP orientation and pad mapping before layout"
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a LED2 land pattern is intended."
  ],
  "avoid_when": [
-  "The design requires an SMD LED footprint instead of through-hole LED2",
-  "A specific forward voltage, current rating, or luminous intensity must be verified and is not documented here",
-  "A LED color other than blue, green, red, or white is required",
-  "Multi-pin or RGB LED packages are needed instead of a simple 2-pin LED"
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than LED2."
  ],
  "keywords": [
   "led",
-  "led2",
-  "dip led",
-  "through hole led",
-  "2 pin led",
-  "d3.0mm",
-  "d5.0mm",
-  "3mm led",
-  "5mm led",
-  "discrete diode",
-  "optoelectronics",
-  "seeed opl",
-  "blue led",
-  "green led",
-  "red led",
-  "white led",
-  "indicator led",
-  "light emitting diode",
   "dip",
   "through",
   "hole",
   "diode",
+  "led2",
   "5mm",
-  "2p"
+  "2p",
+  "opl",
+  "optoelectronics",
+  "light",
+  "emitting",
+  "0mm",
+  "discrete",
+  "green",
+  "red"
  ],
  "facts": {
   "package_family": "LED2",
@@ -65,7 +55,7 @@
   "tier_counts": {
    "B": 8
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -119,6 +109,6 @@
   "Seeed-OPL-Kicad-Library/OPL_Optoelectronics/DIP-LED-VAPOROUS-RGB_2P-D5MM_",
   "Seeed-OPL-Kicad-Library/OPL_Optoelectronics/DIP-LED-YELLOW-YELLOW_2P-D5MM_"
  ],
- "embedding_text": "discrete-diode.led2 | Discrete Diode | Cluster of 8 through-hole LED indicator parts (blue, green, red, white) from the Seeed OPL library using 2-pin LED2 land patterns in 3mm or 5mm lead spacing. | led led2 dip led through hole led 2 pin led d3.0mm d5.0mm 3mm led 5mm led discrete diode optoelectronics seeed opl blue led green led red led white led indicator led light emitting diode dip through hole diode 5mm 2p | LED2 | ",
+ "embedding_text": "discrete-diode.led2 | Discrete Diode | 8 discrete diode parts using LED2 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | led dip through hole diode led2 5mm 2p opl optoelectronics light emitting 0mm discrete green red | LED2 | ",
  "class": "discrete.diode"
 }

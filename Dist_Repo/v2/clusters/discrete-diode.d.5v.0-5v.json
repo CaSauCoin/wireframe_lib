@@ -6,38 +6,31 @@
   "Discrete",
   "Diode"
  ],
- "description": "Discrete SMD diode cluster featuring 5V and 0.5V facets in a D package family with a D_MELF_TVS footprint.",
+ "description": "1 discrete diode parts for 5V, 0.5V using D footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select for surface-mount discrete diode applications requiring a D package family and D_MELF_TVS footprint.",
-  "Verify 5V and 0.5V facets match design requirements.",
-  "Check tier A part SDA2AK from Alternate-KiCad-Library for exact footprint suitability."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a D land pattern is intended."
  ],
  "avoid_when": [
-  "Through-hole mounting or packages other than package family D are required.",
-  "Design specifications require ratings outside 5V and 0.5V.",
-  "Footprints other than D_MELF_TVS are needed."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than D."
  ],
  "keywords": [
-  "discrete diode",
-  "discrete",
   "diode",
-  "smd",
-  "d_melf_tvs",
+  "tvs",
   "melf",
   "5v",
-  "0.5v",
-  "sda2ak",
-  "package d",
-  "alternate-kicad-library",
-  "tier a",
-  "tvs",
   "bidirectional",
+  "sda2ak",
   "akl",
   "300w",
   "alternate",
   "kicad",
   "library",
-  "sdaxak"
+  "sdaxak",
+  "discrete"
  ],
  "facts": {
   "package_family": "D",
@@ -61,7 +54,7 @@
   "tier_counts": {
    "A": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -76,6 +69,6 @@
  "part_ids": [
   "Alternate-KiCad-Library/Diode_TVS_AKL/SDA2AK"
  ],
- "embedding_text": "discrete-diode.d.5v.0-5v | Discrete Diode | Discrete SMD diode cluster featuring 5V and 0.5V facets in a D package family with a D_MELF_TVS footprint. | discrete diode discrete diode smd d_melf_tvs melf 5v 0.5v sda2ak package d alternate-kicad-library tier a tvs bidirectional akl 300w alternate kicad library sdaxak | D | 5V 0.5V",
+ "embedding_text": "discrete-diode.d.5v.0-5v | Discrete Diode | 1 discrete diode parts for 5V, 0.5V using D footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | diode tvs melf 5v bidirectional sda2ak akl 300w alternate kicad library sdaxak discrete | D | 5V 0.5V",
  "class": "discrete.diode"
 }

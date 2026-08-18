@@ -6,41 +6,34 @@
   "IC",
   "Interface"
  ],
- "description": "Interface IC components in through-hole DIP package family options including DIP-16, DIP-20, DIP-28, DIP-40, and DIP-48 footprints.",
+ "description": "29 ic interface parts using DIP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select based on required DIP footprint pin count and body width such as DIP-16, DIP-20, DIP-28, DIP-40, or DIP-48.",
-  "Check quality tier classification, with 28 tier A entries available in this cluster.",
-  "Ensure through-hole mounting is compatible with board layout design constraints."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a DIP land pattern is intended."
  ],
  "avoid_when": [
-  "Surface-mount packaging is required instead of through-hole DIP assembly.",
-  "The required part package is not one of the available DIP footprints."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than DIP."
  ],
  "keywords": [
-  "ic",
-  "interface",
   "dip",
-  "through_hole",
-  "dip-16",
-  "dip-20",
-  "dip-28",
-  "dip-40",
-  "dip-48",
-  "kicad-symbols",
-  "6821",
-  "6822",
-  "68230",
-  "8237",
-  "8255",
+  "interface",
   "24mm",
   "pdip",
+  "ic",
   "tht",
   "dil",
   "54mm",
   "w15",
   "600mil",
   "controller",
-  "floppy"
+  "floppy",
+  "programmable",
+  "disk",
+  "peripheral",
+  "direct"
  ],
  "facts": {
   "package_family": "DIP",
@@ -66,7 +59,7 @@
    "A": 28,
    "B": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -141,6 +134,6 @@
   "kicad-symbols/Interface/Z84C20",
   "kicad-symbols/Interface_Telecom/FX614"
  ],
- "embedding_text": "ic-interface.dip | IC Interface | Interface IC components in through-hole DIP package family options including DIP-16, DIP-20, DIP-28, DIP-40, and DIP-48 footprints. | ic interface dip through_hole dip-16 dip-20 dip-28 dip-40 dip-48 kicad-symbols 6821 6822 68230 8237 8255 24mm pdip tht dil 54mm w15 600mil controller floppy | DIP | ",
+ "embedding_text": "ic-interface.dip | IC Interface | 29 ic interface parts using DIP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | dip interface 24mm pdip ic tht dil 54mm w15 600mil controller floppy programmable disk peripheral direct | DIP | ",
  "class": "ic.interface"
 }

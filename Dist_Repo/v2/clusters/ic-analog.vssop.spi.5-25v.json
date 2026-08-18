@@ -6,32 +6,24 @@
   "IC",
   "Analog"
  ],
- "description": "Cluster of 9 tier-A analog IC parts featuring SPI interface and 5.25V rating in surface-mount VSSOP packaging.",
+ "description": "9 ic analog parts for SPI, 5.25V using VSSOP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "The design requires an analog IC with an SPI interface and 5.25V rating.",
-  "The layout specifies a VSSOP surface-mount footprint, such as VSSOP-8_3x3mm_P0.65mm."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a VSSOP land pattern is intended."
  ],
  "avoid_when": [
-  "The layout requires a package family other than VSSOP or a non-SMD mount type.",
-  "The application requires non-SPI interfaces or operating parameters incompatible with 5.25V."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than VSSOP."
  ],
  "keywords": [
-  "ic",
-  "analog",
-  "ic.analog",
-  "spi",
-  "5.25v",
   "vssop",
-  "smd",
-  "vssop-8_3x3mm_p0.65mm",
+  "analog",
   "adc",
-  "adc082s021",
-  "adc082s051",
-  "adc082s101",
-  "adc102s021",
-  "adc102s051",
   "texas",
   "25v",
+  "spi",
   "channel",
   "ksps",
   "bit",
@@ -39,7 +31,9 @@
   "tssop",
   "msop",
   "3x3mm",
-  "p0"
+  "p0",
+  "65mm",
+  "so"
  ],
  "facts": {
   "package_family": "VSSOP",
@@ -63,7 +57,7 @@
   "tier_counts": {
    "A": 9
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -118,6 +112,6 @@
   "kicad-symbols/Analog_ADC/ADC122S051",
   "kicad-symbols/Analog_ADC/ADC122S101"
  ],
- "embedding_text": "ic-analog.vssop.spi.5-25v | IC Analog | Cluster of 9 tier-A analog IC parts featuring SPI interface and 5.25V rating in surface-mount VSSOP packaging. | ic analog ic.analog spi 5.25v vssop smd vssop-8_3x3mm_p0.65mm adc adc082s021 adc082s051 adc082s101 adc102s021 adc102s051 texas 25v channel ksps bit supply tssop msop 3x3mm p0 | VSSOP | SPI 5.25V",
+ "embedding_text": "ic-analog.vssop.spi.5-25v | IC Analog | 9 ic analog parts for SPI, 5.25V using VSSOP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | vssop analog adc texas 25v spi channel ksps bit supply tssop msop 3x3mm p0 65mm so | VSSOP | SPI 5.25V",
  "class": "ic.analog"
 }

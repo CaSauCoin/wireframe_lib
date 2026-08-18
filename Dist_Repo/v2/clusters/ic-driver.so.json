@@ -6,34 +6,23 @@
   "IC",
   "Driver"
  ],
- "description": "This cluster provides surface-mount IC driver components in SO packaging, featuring tier A parts like the L6491 in a SO-14_3.9x8.65mm_P1.27mm footprint.",
+ "description": "1 ic driver parts using SO footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when needing surface-mount IC drivers in SO package footprints.",
-  "Prefer tier A parts such as the L6491 from KiCad symbol sources.",
-  "Confirm part electrical specifications in datasheets before committing layout."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SO land pattern is intended."
  ],
  "avoid_when": [
-  "The board design requires package families other than SO.",
-  "Through-hole mounting is required instead of SMD.",
-  "The circuit requires non-driver IC functions."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SO."
  ],
  "keywords": [
-  "ic driver",
-  "driver ic",
-  "ic",
-  "driver",
   "so",
-  "so-14",
-  "smd",
-  "l6491",
-  "driver_fet",
-  "fet driver",
-  "so-14_3.9x8.65mm_p1.27mm",
-  "3.9x8.65mm",
-  "p1.27mm",
-  "kicad-symbols",
+  "driver",
   "fet",
   "high",
+  "l6491",
   "voltage",
   "and",
   "low",
@@ -41,7 +30,9 @@
   "gate",
   "9x8",
   "65mm",
-  "p1"
+  "p1",
+  "27mm",
+  "ic"
  ],
  "facts": {
   "package_family": "SO",
@@ -62,7 +53,7 @@
   "tier_counts": {
    "A": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -77,6 +68,6 @@
  "part_ids": [
   "kicad-symbols/Driver_FET/L6491"
  ],
- "embedding_text": "ic-driver.so | IC Driver | This cluster provides surface-mount IC driver components in SO packaging, featuring tier A parts like the L6491 in a SO-14_3.9x8.65mm_P1.27mm footprint. | ic driver driver ic ic driver so so-14 smd l6491 driver_fet fet driver so-14_3.9x8.65mm_p1.27mm 3.9x8.65mm p1.27mm kicad-symbols fet high voltage and low side gate 9x8 65mm p1 | SO | ",
+ "embedding_text": "ic-driver.so | IC Driver | 1 ic driver parts using SO footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | so driver fet high l6491 voltage and low side gate 9x8 65mm p1 27mm ic | SO | ",
  "class": "ic.driver"
 }

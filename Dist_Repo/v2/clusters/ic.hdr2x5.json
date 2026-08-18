@@ -5,29 +5,20 @@
  "category_path": [
   "IC"
  ],
- "description": "Cluster of 5 IC parts in the HDR2X5 package family supporting HDR2X5, HDR2X5_CEN, and HDR2X5_LP footprints.",
+ "description": "5 ic parts using HDR2X5 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Choose when requiring IC parts with HDR2X5, HDR2X5_CEN, or HDR2X5_LP footprints.",
-  "Select the specific footprint variant (HDR2X5, HDR2X5_CEN, or HDR2X5_LP) needed for the PCB layout.",
-  "Verify part details prior to use as all 5 entries are quality tier C."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a HDR2X5 land pattern is intended."
  ],
  "avoid_when": [
-  "The PCB layout requires a footprint other than HDR2X5, HDR2X5_CEN, or HDR2X5_LP.",
-  "Higher quality tier parts (Tier A or B) are required, as all parts are Tier C.",
-  "Planner-visible parts are required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than HDR2X5."
  ],
  "keywords": [
-  "ic",
   "hdr2x5",
-  "hdr2x5_cen",
-  "hdr2x5_lp",
-  "hdr2x5 footprint",
-  "hdr2x5 package",
-  "ic hdr2x5",
-  "dist-legacy",
-  "tier c",
-  "hdr2x5 cen",
-  "hdr2x5 lp",
+  "ic",
   "pad",
   "mm",
   "pitch",
@@ -58,7 +49,7 @@
   "tier_counts": {
    "C": 5
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
@@ -68,6 +59,6 @@
   "dist-legacy/HDR2X5_CEN",
   "dist-legacy/HDR2X5_LP"
  ],
- "embedding_text": "ic.hdr2x5 | IC | Cluster of 5 IC parts in the HDR2X5 package family supporting HDR2X5, HDR2X5_CEN, and HDR2X5_LP footprints. | ic hdr2x5 hdr2x5_cen hdr2x5_lp hdr2x5 footprint hdr2x5 package ic hdr2x5 dist-legacy tier c hdr2x5 cen hdr2x5 lp pad mm pitch pins cen lp duplicate smd | HDR2X5 | ",
+ "embedding_text": "ic.hdr2x5 | IC | 5 ic parts using HDR2X5 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | hdr2x5 ic pad mm pitch pins cen lp duplicate smd | HDR2X5 | ",
  "class": "ic"
 }

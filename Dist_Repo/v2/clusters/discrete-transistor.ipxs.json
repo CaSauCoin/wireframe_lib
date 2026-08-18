@@ -6,29 +6,21 @@
   "Discrete",
   "Transistor"
  ],
- "description": "Cluster of discrete transistor components using the IPXS footprint and package family, containing 1 entry rated at quality tier C.",
+ "description": "1 discrete transistor parts using IPXS footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when a discrete transistor requiring an IPXS footprint and package family is needed.",
-  "Verify part details considering the quality tier C rating and generated review status.",
-  "Check compatibility with dist-legacy source entries and exact footprint mapping."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a IPXS land pattern is intended."
  ],
  "avoid_when": [
-  "The PCB design requires a footprint or package family other than IPXS.",
-  "Components with higher quality tiers or validated review status are required.",
-  "Planner-visible components are required, as this cluster has zero planner-visible parts."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than IPXS."
  ],
  "keywords": [
-  "discrete transistor",
   "ipxs",
   "discrete",
   "transistor",
-  "ipxs footprint",
-  "package family ipxs",
-  "tier c",
-  "discrete.transistor",
-  "generated review",
-  "dist-legacy",
-  "ipxs package",
   "pad",
   "mm",
   "pitch",
@@ -53,12 +45,12 @@
   "tier_counts": {
    "C": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
   "dist-legacy/IPXS"
  ],
- "embedding_text": "discrete-transistor.ipxs | Discrete Transistor | Cluster of discrete transistor components using the IPXS footprint and package family, containing 1 entry rated at quality tier C. | discrete transistor ipxs discrete transistor ipxs footprint package family ipxs tier c discrete.transistor generated review dist-legacy ipxs package pad mm pitch pins | IPXS | ",
+ "embedding_text": "discrete-transistor.ipxs | Discrete Transistor | 1 discrete transistor parts using IPXS footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | ipxs discrete transistor pad mm pitch pins | IPXS | ",
  "class": "discrete.transistor"
 }

@@ -5,33 +5,20 @@
  "category_path": [
   "IC"
  ],
- "description": "Cluster of 9 IC parts using SOL package footprints including SOL-16, SOL-18, and SOL-20 variants.",
+ "description": "9 ic parts using SOL footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when an IC requires a SOL package footprint with 16, 18, or 20 pins.",
-  "Choose between density variants L, M, or N based on board layout needs.",
-  "Verify tier C quality status before selecting parts from this cluster."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SOL land pattern is intended."
  ],
  "avoid_when": [
-  "The PCB design requires a package type other than SOL.",
-  "Pin counts other than 16, 18, or 20 are required.",
-  "Parts require planner visibility or quality tiers higher than tier C."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SOL."
  ],
  "keywords": [
   "sol",
   "ic",
-  "integrated circuit",
-  "sol-16",
-  "sol-18",
-  "sol-20",
-  "sol-16_l",
-  "sol-16_m",
-  "sol-16_n",
-  "sol-18_l",
-  "sol-18_m",
-  "sol-18_n",
-  "sol-20_l",
-  "sol-20_m",
-  "sol-20_n",
   "pad",
   "mm",
   "pitch",
@@ -64,7 +51,7 @@
   "tier_counts": {
    "C": 9
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
@@ -78,6 +65,6 @@
   "dist-legacy/SOL-20_M",
   "dist-legacy/SOL-20_N"
  ],
- "embedding_text": "ic.sol | IC | Cluster of 9 IC parts using SOL package footprints including SOL-16, SOL-18, and SOL-20 variants. | sol ic integrated circuit sol-16 sol-18 sol-20 sol-16_l sol-16_m sol-16_n sol-18_l sol-18_m sol-18_n sol-20_l sol-20_m sol-20_n pad mm pitch pins | SOL | ",
+ "embedding_text": "ic.sol | IC | 9 ic parts using SOL footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | sol ic pad mm pitch pins | SOL | ",
  "class": "ic"
 }

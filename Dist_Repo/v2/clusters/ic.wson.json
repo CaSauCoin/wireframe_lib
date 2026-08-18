@@ -5,32 +5,23 @@
  "category_path": [
   "IC"
  ],
- "description": "Integrated circuit cluster of 32 surface-mount parts using WSON package footprints, including standard and exposed-pad variants with pin counts from 6 to 14.",
+ "description": "32 ic parts using WSON footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when a surface-mount WSON footprint variant is required for the layout.",
-  "Check body size, pin count, and exposed pad or thermal via footprint requirements.",
-  "Verify part quality tier ratings, such as Tier B or Tier C entries."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a WSON land pattern is intended."
  ],
  "avoid_when": [
-  "The PCB layout requires non-WSON IC packages.",
-  "Through-hole mounting is required instead of surface-mount technology.",
-  "Required footprint dimensions, pin counts, or thermal pad configurations are not matched by the available entries."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than WSON."
  ],
  "keywords": [
-  "ic",
   "wson",
-  "smd",
-  "wson-8",
-  "wson-10",
-  "wson-14",
-  "wson-6",
-  "exposed pad",
   "1ep",
-  "thermal vias",
-  "surface mount",
-  "drv8837dsgr",
   "5mm",
   "p0",
+  "ic",
   "ep1",
   "thermalvias",
   "4x4mm",
@@ -40,7 +31,8 @@
   "2x2mm",
   "mm",
   "pad",
-  "pins"
+  "pins",
+  "8mm"
  ],
  "facts": {
   "package_family": "WSON",
@@ -75,7 +67,7 @@
    "B": 1,
    "C": 31
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -121,6 +113,6 @@
   "dist-legacy/WSON-8-1EP_4x4mm_P0.8mm_EP2.2x3mm_ThermalVias",
   "dist-legacy/WSON-8-1EP_4x4mm_P0.8mm_EP2.6x3mm_ThermalVias"
  ],
- "embedding_text": "ic.wson | IC | Integrated circuit cluster of 32 surface-mount parts using WSON package footprints, including standard and exposed-pad variants with pin counts from 6 to 14. | ic wson smd wson-8 wson-10 wson-14 wson-6 exposed pad 1ep thermal vias surface mount drv8837dsgr 5mm p0 ep1 thermalvias 4x4mm ep2 3x3mm pitch 2x2mm mm pad pins | WSON | ",
+ "embedding_text": "ic.wson | IC | 32 ic parts using WSON footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | wson 1ep 5mm p0 ic ep1 thermalvias 4x4mm ep2 3x3mm pitch 2x2mm mm pad pins 8mm | WSON | ",
  "class": "ic"
 }

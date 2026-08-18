@@ -6,31 +6,22 @@
   "Discrete",
   "Diode"
  ],
- "description": "Discrete diode cluster containing 2 tier-C parts using C5mm footprints from legacy distributor sources.",
+ "description": "2 discrete diode parts using C5mm footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when a discrete diode requiring a C5mm footprint is specified.",
-  "Verify part details as all entries in this cluster are quality tier C.",
-  "Confirm compatibility with dist-legacy source data."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a C5mm land pattern is intended."
  ],
  "avoid_when": [
-  "The PCB design requires a footprint or package family other than C5mm.",
-  "Higher quality tier parts than tier C are required.",
-  "Planner-visible components are required, as visible count is zero."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than C5mm."
  ],
  "keywords": [
+  "c5mm",
+  "mm",
   "discrete",
   "diode",
-  "discrete diode",
-  "c5mm",
-  "c5mm footprint",
-  "c5mm package",
-  "discrete.diode",
-  "tier c",
-  "dist-legacy",
-  "package family c5mm",
-  "discrete-diode.c5mm",
-  "generated review",
-  "mm",
   "nam",
   "footprint",
   "land",
@@ -41,7 +32,8 @@
   "for",
   "leaded",
   "component",
-  "with"
+  "with",
+  "5mm"
  ],
  "facts": {
   "package_family": "C5mm",
@@ -62,13 +54,13 @@
   "tier_counts": {
    "C": 2
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
   "dist-legacy/C5mm - NAM",
   "dist-legacy/C5mm"
  ],
- "embedding_text": "discrete-diode.c5mm | Discrete Diode | Discrete diode cluster containing 2 tier-C parts using C5mm footprints from legacy distributor sources. | discrete diode discrete diode c5mm c5mm footprint c5mm package discrete.diode tier c dist-legacy package family c5mm discrete-diode.c5mm generated review mm nam footprint land pattern radial pitch bare for leaded component with | C5mm | ",
+ "embedding_text": "discrete-diode.c5mm | Discrete Diode | 2 discrete diode parts using C5mm footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | c5mm mm discrete diode nam footprint land pattern radial pitch bare for leaded component with 5mm | C5mm | ",
  "class": "discrete.diode"
 }

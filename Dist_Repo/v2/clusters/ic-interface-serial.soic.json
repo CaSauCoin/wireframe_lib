@@ -7,30 +7,20 @@
   "Interface",
   "Serial"
  ],
- "description": "Serial interface IC cluster containing 11 surface-mount parts in SOIC-8 and SOIC-16 footprints from KiCad symbols.",
+ "description": "11 ic interface serial parts using SOIC footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Choose for surface-mount serial interface applications requiring SOIC footprints.",
-  "Select between SOIC-8 (3.9x4.9mm) and SOIC-16 (3.9x9.9mm) footprint variants with 1.27mm pitch.",
-  "Filter by quality tier, favoring Tier A parts over Tier C entries."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SOIC land pattern is intended."
  ],
  "avoid_when": [
-  "The design requires through-hole or non-SMD mounting.",
-  "Packages other than SOIC are needed for the layout.",
-  "Footprint requirements differ from SOIC-8 or SOIC-16 with 1.27mm pitch."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SOIC."
  ],
  "keywords": [
   "soic",
   "interface",
-  "serial",
-  "ic",
-  "smd",
-  "soic-8",
-  "soic-16",
-  "1.27mm pitch",
-  "kicad-symbols",
-  "ds89c21",
-  "sn65lbc176d",
-  "sn75lbc176d",
   "differential",
   "line",
   "driver",
@@ -38,6 +28,8 @@
   "p1",
   "27mm",
   "so",
+  "ic",
+  "serial",
   "9x4",
   "dual",
   "high",
@@ -65,7 +57,7 @@
    "A": 5,
    "C": 6
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -122,6 +114,6 @@
   "kicad-symbols/Interface_LineDriver/UA9638CDR",
   "kicad-symbols/Interface_LineDriver/UA9638CDRG4"
  ],
- "embedding_text": "ic-interface-serial.soic | IC Interface Serial | Serial interface IC cluster containing 11 surface-mount parts in SOIC-8 and SOIC-16 footprints from KiCad symbols. | soic interface serial ic smd soic-8 soic-16 1.27mm pitch kicad-symbols ds89c21 sn65lbc176d sn75lbc176d differential line driver 9mm p1 27mm so 9x4 dual high speed bus | SOIC | ",
+ "embedding_text": "ic-interface-serial.soic | IC Interface Serial | 11 ic interface serial parts using SOIC footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | soic interface differential line driver 9mm p1 27mm so ic serial 9x4 dual high speed bus | SOIC | ",
  "class": "ic.interface.serial"
 }

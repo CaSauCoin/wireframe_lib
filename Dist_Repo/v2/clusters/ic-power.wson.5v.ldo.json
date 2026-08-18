@@ -6,32 +6,23 @@
   "IC",
   "Power"
  ],
- "description": "Surface-mount 5V LDO power IC cluster in the WSON package family featuring KiCad symbol entries such as LM27762.",
+ "description": "1 ic power parts for 5V, LDO using WSON footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when requiring a surface-mount 5V LDO power IC in a WSON package.",
-  "Verify footprint details for WSON-12-1EP_3x2mm_P0.5mm_EP1x2.65_ThermalVias.",
-  "Confirm suitability of Tier B KiCad symbol source entries."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a WSON land pattern is intended."
  ],
  "avoid_when": [
-  "The layout requires packages other than WSON or surface-mount.",
-  "Target designs fall outside the 5V LDO power IC category.",
-  "Specific electrical ratings or pinouts omitted from facts require pre-verification."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than WSON."
  ],
  "keywords": [
-  "ic",
-  "power",
   "5v",
-  "ldo",
   "wson",
-  "smd",
-  "lm27762",
-  "wson-12",
-  "power ic",
-  "kicad-symbols",
-  "regulator",
-  "surface mount",
   "with",
   "and",
+  "ldo",
   "to",
   "low",
   "noise",
@@ -40,7 +31,9 @@
   "pump",
   "both",
   "positive",
-  "negative"
+  "negative",
+  "lm27762",
+  "regulator"
  ],
  "facts": {
   "package_family": "WSON",
@@ -64,7 +57,7 @@
   "tier_counts": {
    "B": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -79,6 +72,6 @@
  "part_ids": [
   "kicad-symbols/Regulator_SwitchedCapacitor/LM27762"
  ],
- "embedding_text": "ic-power.wson.5v.ldo | IC Power | Surface-mount 5V LDO power IC cluster in the WSON package family featuring KiCad symbol entries such as LM27762. | ic power 5v ldo wson smd lm27762 wson-12 power ic kicad-symbols regulator surface mount with and to low noise inverting charge pump both positive negative | WSON | 5V LDO",
+ "embedding_text": "ic-power.wson.5v.ldo | IC Power | 1 ic power parts for 5V, LDO using WSON footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | 5v wson with and ldo to low noise inverting charge pump both positive negative lm27762 regulator | WSON | 5V LDO",
  "class": "ic.power"
 }

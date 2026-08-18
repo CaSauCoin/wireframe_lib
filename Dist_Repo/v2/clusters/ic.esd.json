@@ -5,30 +5,22 @@
  "category_path": [
   "IC"
  ],
- "description": "Cluster of 7 tier-C IC parts using ESD logo and warning silkscreen footprints.",
+ "description": "7 ic parts using ESD footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Choose when board layout calls for ESD logo or warning silkscreen footprints.",
-  "Select the specific footprint matching required silkscreen dimensions.",
-  "Verify part applicability given tier-C quality status and unknown mount types."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a ESD land pattern is intended."
  ],
  "avoid_when": [
-  "Active functional IC components are required instead of ESD marking footprints.",
-  "Planner-visible parts or high quality tiers (A or B) are required.",
-  "Specific surface-mount or through-hole mounting details are needed."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than ESD."
  ],
  "keywords": [
   "esd",
-  "ic",
-  "silkscreen",
   "logo",
-  "warning",
-  "esd logo",
-  "esd warning",
-  "esd-logo",
-  "esd_warning0",
-  "dist-legacy",
-  "chilaboard",
-  "silkscreen footprint",
+  "silkscreen",
+  "ic",
   "package",
   "electrostatic",
   "discharge",
@@ -66,7 +58,7 @@
   "tier_counts": {
    "C": 7
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
@@ -78,6 +70,6 @@
   "dist-legacy/ESD-Logo_8.9x8mm_SilkScreen",
   "chilaboard-altium-library/ESD_WARNING0/ESD_WARNING0"
  ],
- "embedding_text": "ic.esd | IC | Cluster of 7 tier-C IC parts using ESD logo and warning silkscreen footprints. | esd ic silkscreen logo warning esd logo esd warning esd-logo esd_warning0 dist-legacy chilaboard silkscreen footprint package electrostatic discharge 2x12mm 22x20mm 33x30mm 1x40mm 6x6mm 9x8mm warning0 | ESD | ",
+ "embedding_text": "ic.esd | IC | 7 ic parts using ESD footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | esd logo silkscreen ic package electrostatic discharge 2x12mm 22x20mm 33x30mm 1x40mm 6x6mm 9x8mm warning0 | ESD | ",
  "class": "ic"
 }

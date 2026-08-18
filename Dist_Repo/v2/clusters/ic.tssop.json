@@ -5,33 +5,21 @@
  "category_path": [
   "IC"
  ],
- "description": "Integrated circuit cluster of 248 surface-mount (SMD) parts utilizing TSSOP package footprints across pin counts ranging from 8 to 30.",
+ "description": "248 ic parts using TSSOP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select based on required TSSOP pin count, package body dimensions, and lead pitch.",
-  "Prefer Tier A or Tier B parts with verified library sources and footprint data.",
-  "Confirm surface-mount (SMD) mounting and land pattern compatibility for the chosen part."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a TSSOP land pattern is intended."
  ],
  "avoid_when": [
-  "The circuit design requires a package family other than TSSOP.",
-  "Through-hole mounting or non-surface-mount package is required.",
-  "Required pin count or lead pitch is not offered within the available TSSOP footprints."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than TSSOP."
  ],
  "keywords": [
-  "ic",
   "tssop",
-  "integrated circuit",
-  "smd",
-  "surface mount",
-  "tssop-8",
-  "tssop-10",
-  "tssop-14",
-  "tssop-16",
-  "tssop-20",
-  "tssop-24",
-  "tssop-28",
-  "tssop-30",
-  "0.65mm pitch",
   "p0",
+  "ic",
   "htssop",
   "65mm",
   "5mm",
@@ -40,7 +28,11 @@
   "pad",
   "mm",
   "4x9",
-  "pitch"
+  "pitch",
+  "pins",
+  "package",
+  "ep3",
+  "surface"
  ],
  "facts": {
   "package_family": "TSSOP",
@@ -83,7 +75,7 @@
    "B": 42,
    "C": 172
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -377,6 +369,6 @@
   "dist-legacy/Texas_PWP0028V_TSSOP-28-1EP_4.4x9.7mm_P0.65mm_EP3.4x9.7mm_Mask2.94x5.62mm",
   "dist-legacy/Texas_PWP0028V_TSSOP-28-1EP_4.4x9.7mm_P0.65mm_EP3.4x9.7mm_Mask2.94x5.62mm_ThermalVias"
  ],
- "embedding_text": "ic.tssop | IC | Integrated circuit cluster of 248 surface-mount (SMD) parts utilizing TSSOP package footprints across pin counts ranging from 8 to 30. | ic tssop integrated circuit smd surface mount tssop-8 tssop-10 tssop-14 tssop-16 tssop-20 tssop-24 tssop-28 tssop-30 0.65mm pitch p0 htssop 65mm 5mm 1ep 7mm pad mm 4x9 pitch | TSSOP | ",
+ "embedding_text": "ic.tssop | IC | 248 ic parts using TSSOP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | tssop p0 ic htssop 65mm 5mm 1ep 7mm pad mm 4x9 pitch pins package ep3 surface | TSSOP | ",
  "class": "ic"
 }

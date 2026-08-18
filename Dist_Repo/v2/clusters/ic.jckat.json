@@ -5,30 +5,20 @@
  "category_path": [
   "IC"
  ],
- "description": "IC cluster containing 8 through-hole parts using JCKAT package family footprints from the chilaboard-altium-library source.",
+ "description": "8 ic parts using JCKAT footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when a through-hole IC component using a JCKAT package footprint is required.",
-  "Choose the exact JCKAT footprint variant matching your board requirements.",
-  "Check component suitability considering all 8 parts are Quality Tier C."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a JCKAT land pattern is intended."
  ],
  "avoid_when": [
-  "The design requires surface-mount (SMD) components instead of through-hole.",
-  "The layout specifies a package family other than JCKAT.",
-  "Parts with quality ratings higher than Tier C are required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than JCKAT."
  ],
  "keywords": [
   "jckat",
   "ic",
-  "through-hole",
-  "chilaboard-altium-library",
-  "jckat_pjs05lbh",
-  "jckat_sj3535",
-  "jckat_sj3535blu",
-  "jckat_sj3535grn",
-  "jckat_sj3535pnk",
-  "jckat_tsh3675",
-  "jckat_sj43514",
-  "jckat_stx3100",
   "through",
   "hole",
   "pad",
@@ -40,7 +30,9 @@
   "sj3535blu",
   "sj3535grn",
   "sj3535pnk",
-  "tsh3675"
+  "tsh3675",
+  "sj43514",
+  "stx3100"
  ],
  "facts": {
   "package_family": "JCKAT",
@@ -68,7 +60,7 @@
   "tier_counts": {
    "C": 8
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
@@ -81,6 +73,6 @@
   "chilaboard-altium-library/JCKAT_SJ43514/JCKAT_SJ43514",
   "chilaboard-altium-library/JCKAT_STX3100/JCKAT_STX3100"
  ],
- "embedding_text": "ic.jckat | IC | IC cluster containing 8 through-hole parts using JCKAT package family footprints from the chilaboard-altium-library source. | jckat ic through-hole chilaboard-altium-library jckat_pjs05lbh jckat_sj3535 jckat_sj3535blu jckat_sj3535grn jckat_sj3535pnk jckat_tsh3675 jckat_sj43514 jckat_stx3100 through hole pad mm pitch pins pjs05lbh sj3535 sj3535blu sj3535grn sj3535pnk tsh3675 | JCKAT | ",
+ "embedding_text": "ic.jckat | IC | 8 ic parts using JCKAT footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | jckat ic through hole pad mm pitch pins pjs05lbh sj3535 sj3535blu sj3535grn sj3535pnk tsh3675 sj43514 stx3100 | JCKAT | ",
  "class": "ic"
 }

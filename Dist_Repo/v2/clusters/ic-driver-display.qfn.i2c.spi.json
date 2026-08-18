@@ -7,32 +7,25 @@
   "Driver",
   "Display"
  ],
- "description": "Display driver IC cluster supporting I2C, SPI, and 24V facets in surface-mount QFN footprints such as HVQFN-24-1EP.",
+ "description": "1 ic driver display parts for I2C, SPI, 24V using QFN footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Selecting display driver ICs requiring I2C, SPI, or 24V facets.",
-  "Designing for SMD assemblies using QFN footprints like HVQFN-24-1EP_4x4mm_P0.5mm_EP2.5x2.5mm.",
-  "Sourcing Tier B display driver components from KiCad symbols."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a QFN land pattern is intended."
  ],
  "avoid_when": [
-  "Through-hole mounting or non-QFN package footprints are required.",
-  "Applications require interfaces or voltage ratings other than I2C, SPI, and 24V.",
-  "Higher quality tier parts such as Tier A are strictly required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than QFN."
  ],
  "keywords": [
-  "ic",
   "driver",
-  "display",
-  "ic driver display",
-  "i2c",
-  "spi",
-  "24v",
-  "qfn",
   "hvqfn",
-  "smd",
-  "hvqfn-24-1ep",
-  "ic-htg",
-  "kicad-symbols",
+  "ic",
   "adc",
+  "spi",
+  "i2c",
+  "24v",
   "5mm",
   "htg",
   "led",
@@ -66,7 +59,7 @@
   "tier_counts": {
    "B": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -81,6 +74,6 @@
  "part_ids": [
   "kicad-symbols/Driver_LED/iC-HTG"
  ],
- "embedding_text": "ic-driver-display.qfn.i2c.spi | IC Driver Display | Display driver IC cluster supporting I2C, SPI, and 24V facets in surface-mount QFN footprints such as HVQFN-24-1EP. | ic driver display ic driver display i2c spi 24v qfn hvqfn smd hvqfn-24-1ep ic-htg kicad-symbols adc 5mm htg led cw power laser diode external transistor | QFN | I2C SPI 24V",
+ "embedding_text": "ic-driver-display.qfn.i2c.spi | IC Driver Display | 1 ic driver display parts for I2C, SPI, 24V using QFN footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | driver hvqfn ic adc spi i2c 24v 5mm htg led cw power laser diode external transistor | QFN | I2C SPI 24V",
  "class": "ic.driver.display"
 }

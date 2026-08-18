@@ -5,28 +5,19 @@
  "category_path": [
   "IC"
  ],
- "description": "SMD integrated circuit cluster containing 3.08V power supervisor parts in the SOT package family with SOT-143 footprint.",
+ "description": "3 ic parts for 3.08V using SOT footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when requiring a 3.08V voltage facet in an SMD design.",
-  "Use when a SOT package family component with a SOT-143 footprint is required.",
-  "Choose among tier A entries such as CAT811TTBI-GT3, MAX811TEUS-T, or MIC811TUY."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SOT land pattern is intended."
  ],
  "avoid_when": [
-  "A package or footprint other than SOT-143 is required.",
-  "The circuit requires a voltage facet other than 3.08V.",
-  "Through-hole assembly is required instead of SMD mounting."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SOT."
  ],
  "keywords": [
-  "ic",
   "sot",
-  "sot-143",
-  "3.08v",
-  "smd",
-  "power supervisor",
-  "cat811ttbi-gt3",
-  "max811teus-t",
-  "mic811tuy",
-  "kicad-symbols",
   "supervisor",
   "power",
   "reset",
@@ -34,9 +25,11 @@
   "supply",
   "manual",
   "threshold",
+  "ic",
   "cat811ttbi",
   "gt3",
-  "max811teus"
+  "max811teus",
+  "mic811tuy"
  ],
  "facts": {
   "package_family": "SOT",
@@ -59,7 +52,7 @@
   "tier_counts": {
    "A": 3
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -92,6 +85,6 @@
   "kicad-symbols/Power_Supervisor/MAX811TEUS-T",
   "kicad-symbols/Power_Supervisor/MIC811TUY"
  ],
- "embedding_text": "ic.sot.3-08v | IC | SMD integrated circuit cluster containing 3.08V power supervisor parts in the SOT package family with SOT-143 footprint. | ic sot sot-143 3.08v smd power supervisor cat811ttbi-gt3 max811teus-t mic811tuy kicad-symbols supervisor power reset 08v supply manual threshold cat811ttbi gt3 max811teus | SOT | 3.08V",
+ "embedding_text": "ic.sot.3-08v | IC | 3 ic parts for 3.08V using SOT footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | sot supervisor power reset 08v supply manual threshold ic cat811ttbi gt3 max811teus mic811tuy | SOT | 3.08V",
  "class": "ic"
 }

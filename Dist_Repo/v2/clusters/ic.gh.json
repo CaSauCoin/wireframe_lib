@@ -5,33 +5,21 @@
  "category_path": [
   "IC"
  ],
- "description": "Integrated circuit cluster with 48 tier C parts in the GH package family offering surface-mount and through-hole options from the chilaboard-altium-library.",
+ "description": "48 ic parts using GH footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Choose based on required mounting method, either smd or through_hole.",
-  "Select the exact footprint variant from GH_5 through GH_16.",
-  "Check part suitability for tier C quality entries sourced from chilaboard-altium-library."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a GH land pattern is intended."
  ],
  "avoid_when": [
-  "The design requires a package family other than GH.",
-  "Mounting requirements are not surface-mount (smd) or through-hole.",
-  "Quality tier C components do not meet project requirements."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than GH."
  ],
  "keywords": [
-  "ic",
   "gh",
   "smd",
-  "through_hole",
-  "chilaboard-altium-library",
-  "gh_5",
-  "gh_6",
-  "gh_7",
-  "gh_8",
-  "gh_9",
-  "gh_10",
-  "gh_11",
-  "gh_12",
-  "gh_13",
-  "gh_14",
+  "ic",
   "pad",
   "mm",
   "pitch",
@@ -72,7 +60,7 @@
   "tier_counts": {
    "C": 48
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
@@ -125,6 +113,6 @@
   "chilaboard-altium-library/GH_SMD_8/GH_SMD_8",
   "chilaboard-altium-library/GH_SMD_9/GH_SMD_9"
  ],
- "embedding_text": "ic.gh | IC | Integrated circuit cluster with 48 tier C parts in the GH package family offering surface-mount and through-hole options from the chilaboard-altium-library. | ic gh smd through_hole chilaboard-altium-library gh_5 gh_6 gh_7 gh_8 gh_9 gh_10 gh_11 gh_12 gh_13 gh_14 pad mm pitch pins through hole surface mount | GH | ",
+ "embedding_text": "ic.gh | IC | 48 ic parts using GH footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | gh smd ic pad mm pitch pins through hole surface mount | GH | ",
  "class": "ic"
 }

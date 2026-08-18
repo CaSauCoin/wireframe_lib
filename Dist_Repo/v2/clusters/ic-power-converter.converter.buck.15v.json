@@ -7,39 +7,33 @@
   "Power",
   "Converter"
  ],
- "description": "This cluster contains 8 15V buck IC power converters in the Converter package family available in surface-mount (SMD) and through-hole (THT) mounting configurations.",
+ "description": "8 ic power converter parts for buck, 15V using Converter footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select based on mounting style, supporting surface-mount (SMD) and through-hole (THT) footprints.",
-  "Prefer higher quality tier parts, such as Tier A part TSR_1-24150 over Tier B options.",
-  "Match the specific DCDC converter footprint among TRACO and RECOM package variants."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a Converter land pattern is intended."
  ],
  "avoid_when": [
-  "The application requires a power topology other than buck or a target voltage other than 15V.",
-  "The PCB design requires a package family other than DCDC Converter.",
-  "Neither surface-mount nor through-hole Converter footprints fit the application."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than Converter."
  ],
  "keywords": [
-  "ic",
-  "power converter",
-  "buck",
-  "15v",
   "converter",
   "dcdc",
-  "smd",
-  "through_hole",
-  "tht",
   "traco",
-  "recom",
-  "tsr",
-  "rpm",
+  "15v",
   "voltage",
   "regulator",
   "step",
   "down",
+  "tht",
   "tsr0",
+  "buck",
   "power",
   "output",
   "input",
+  "ic",
   "tsr2"
  ],
  "facts": {
@@ -72,7 +66,7 @@
    "A": 1,
    "B": 7
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -126,6 +120,6 @@
   "kicad-symbols/Converter_DCDC/TSR2-24150N",
   "kicad-symbols/Converter_DCDC/TSR3-24150N"
  ],
- "embedding_text": "ic-power-converter.converter.buck.15v | IC Power Converter | This cluster contains 8 15V buck IC power converters in the Converter package family available in surface-mount (SMD) and through-hole (THT) mounting configurations. | ic power converter buck 15v converter dcdc smd through_hole tht traco recom tsr rpm voltage regulator step down tsr0 power output input tsr2 | Converter | buck 15V",
+ "embedding_text": "ic-power-converter.converter.buck.15v | IC Power Converter | 8 ic power converter parts for buck, 15V using Converter footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | converter dcdc traco 15v voltage regulator step down tht tsr0 buck power output input ic tsr2 | Converter | buck 15V",
  "class": "ic.power.converter"
 }

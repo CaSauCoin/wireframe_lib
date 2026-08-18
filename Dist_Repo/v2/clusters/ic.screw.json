@@ -5,35 +5,26 @@
  "category_path": [
   "IC"
  ],
- "description": "IC cluster containing 3 tier C parts in the Screw package family with SMD and unknown mounting types across M3, M4, and generic 2.0x3.0mm silkscreen footprints.",
+ "description": "3 ic parts using Screw footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Choose when an IC component with a Screw package family land pattern is required.",
-  "Verify pad footprint requirement among Screw M3, Screw M4, or generic 2.0x3.0mm silkscreen options.",
-  "Check mounting requirements for SMD or unknown mount variants in this cluster."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a Screw land pattern is intended."
  ],
  "avoid_when": [
-  "A package family other than Screw is required for the layout.",
-  "Verified higher quality tier parts or planner-visible parts are needed.",
-  "SMD or unclassified mounting types do not meet board layout constraints."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than Screw."
  ],
  "keywords": [
-  "ic",
   "screw",
-  "screw m3",
-  "screw m4",
-  "smd",
-  "surface mount",
-  "footprint screw",
-  "package screw",
-  "2.0x3.0mm",
-  "silkscreen",
-  "tier c",
-  "matthiasbock-altium-libraries",
+  "ic",
   "m3",
   "m4",
   "generic",
   "0x3",
   "0mm",
+  "silkscreen",
   "surface",
   "mount",
   "pad",
@@ -65,7 +56,7 @@
   "tier_counts": {
    "C": 3
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
@@ -73,6 +64,6 @@
   "matthiasbock-altium-libraries/Screw M4/Screw_M4",
   "dist-legacy/Screw_Generic_2.0x3.0mm_SilkScreen"
  ],
- "embedding_text": "ic.screw | IC | IC cluster containing 3 tier C parts in the Screw package family with SMD and unknown mounting types across M3, M4, and generic 2.0x3.0mm silkscreen footprints. | ic screw screw m3 screw m4 smd surface mount footprint screw package screw 2.0x3.0mm silkscreen tier c matthiasbock-altium-libraries m3 m4 generic 0x3 0mm surface mount pad pins mounting symbol package | Screw | ",
+ "embedding_text": "ic.screw | IC | 3 ic parts using Screw footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | screw ic m3 m4 generic 0x3 0mm silkscreen surface mount pad pins mounting symbol package | Screw | ",
  "class": "ic"
 }

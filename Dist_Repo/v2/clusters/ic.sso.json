@@ -5,33 +5,23 @@
  "category_path": [
   "IC"
  ],
- "description": "Integrated circuit cluster containing 8 tier-C parts in the SSO package family with surface-mount footprints.",
+ "description": "8 ic parts using SSO footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when looking for integrated circuits in SSO package footprints such as SSO-6, SSO-8, or SSO-G20.",
-  "Verify specific pin pitch options including 0.65mm, 1.27mm, and 2.54mm alongside required clearance.",
-  "Note that all 8 parts in this cluster are currently classified under quality tier C."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SSO land pattern is intended."
  ],
  "avoid_when": [
-  "The target design requires a package family other than SSO.",
-  "Through-hole assembly is required instead of surface-mount.",
-  "Parts with quality tiers higher than tier C are required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SSO."
  ],
  "keywords": [
-  "ic",
   "sso",
-  "smd",
-  "surface mount",
-  "sso-6",
-  "sso-8",
-  "sso-g20",
-  "1.27mm",
-  "2.54mm",
-  "0.65mm",
-  "clearance",
-  "tier c",
   "p1",
   "27mm",
   "stretched",
+  "ic",
   "clearance8mm",
   "so",
   "pitch",
@@ -40,7 +30,9 @@
   "type",
   "true",
   "8x5",
-  "9mm"
+  "9mm",
+  "8x4",
+  "6mm"
  ],
  "facts": {
   "package_family": "SSO",
@@ -69,7 +61,7 @@
   "tier_counts": {
    "C": 8
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
@@ -82,6 +74,6 @@
   "dist-legacy/SSO-8_9.6x6.3mm_P1.27mm_Clearance10.5mm",
   "dist-legacy/SSO-G20_P.65"
  ],
- "embedding_text": "ic.sso | IC | Integrated circuit cluster containing 8 tier-C parts in the SSO package family with surface-mount footprints. | ic sso smd surface mount sso-6 sso-8 sso-g20 1.27mm 2.54mm 0.65mm clearance tier c p1 27mm stretched clearance8mm so pitch application content type true 8x5 9mm | SSO | ",
+ "embedding_text": "ic.sso | IC | 8 ic parts using SSO footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | sso p1 27mm stretched ic clearance8mm so pitch application content type true 8x5 9mm 8x4 6mm | SSO | ",
  "class": "ic"
 }

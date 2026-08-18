@@ -6,31 +6,19 @@
   "IC",
   "RF"
  ],
- "description": "Surface-mount RF IC cluster comprising 12 Tier-B parts including RF mixers and RF filters with Mini package family footprints.",
+ "description": "12 ic rf parts using Mini footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when designing surface-mount RF circuits requiring mixers or filters.",
-  "Choose based on the exact Mini-Circuits footprint land pattern specified for the layout.",
-  "Verify part compatibility within the 12 Tier-B symbols available in the cluster."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a Mini land pattern is intended."
  ],
  "avoid_when": [
-  "The design requires through-hole mounting instead of SMD.",
-  "The target PCB layout uses footprints other than the Mini package family land patterns.",
-  "Components outside of RF mixers and RF filters are required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than Mini."
  ],
  "keywords": [
-  "ic rf",
-  "rf ic",
   "mini",
-  "mini-circuits",
-  "smd",
-  "rf mixer",
-  "rf filter",
-  "landpattern",
-  "ade-6",
-  "adex-10",
-  "bpf-a355",
-  "lpf-b0r3",
-  "rbp-280",
   "circuits",
   "filter",
   "rf",
@@ -41,7 +29,11 @@
   "landpatternpl",
   "pl",
   "ohm",
-  "hf1139"
+  "hf1139",
+  "mixer",
+  "cd542",
+  "pass",
+  "low"
  ],
  "facts": {
   "package_family": "Mini",
@@ -69,7 +61,7 @@
   "tier_counts": {
    "B": 12
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -127,6 +119,6 @@
   "kicad-symbols/RF_Filter/SXBP-202",
   "kicad-symbols/RF_Filter/SXBP-27R5"
  ],
- "embedding_text": "ic-rf.mini | IC RF | Surface-mount RF IC cluster comprising 12 Tier-B parts including RF mixers and RF filters with Mini package family footprints. | ic rf rf ic mini mini-circuits smd rf mixer rf filter landpattern ade-6 adex-10 bpf-a355 lpf-b0r3 rbp-280 circuits filter rf bandpass to mhz ic landpatternpl pl ohm hf1139 | Mini | ",
+ "embedding_text": "ic-rf.mini | IC RF | 12 ic rf parts using Mini footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | mini circuits filter rf bandpass to mhz ic landpatternpl pl ohm hf1139 mixer cd542 pass low | Mini | ",
  "class": "ic.rf"
 }

@@ -6,28 +6,21 @@
   "Discrete",
   "Transistor"
  ],
- "description": "Discrete transistor cluster containing one component in the POT4MM package family with a POT4MM-2 footprint.",
+ "description": "1 discrete transistor parts using POT4MM footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when a discrete transistor in a POT4MM package family is required.",
-  "Verify compatibility with the POT4MM-2 footprint.",
-  "Check tier C quality classification and review status before selection."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a POT4MM land pattern is intended."
  ],
  "avoid_when": [
-  "The circuit design requires a package family other than POT4MM.",
-  "The layout demands a footprint different from POT4MM-2.",
-  "Planner-visible or higher quality tier components are required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than POT4MM."
  ],
  "keywords": [
-  "discrete transistor",
+  "pot4mm",
   "discrete",
   "transistor",
-  "pot4mm",
-  "pot4mm-2",
-  "pot4mm package",
-  "discrete.transistor",
-  "pot4mm footprint",
-  "tier c",
-  "dist-legacy",
   "pad",
   "mm",
   "pitch",
@@ -52,12 +45,12 @@
   "tier_counts": {
    "C": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
   "dist-legacy/POT4MM-2"
  ],
- "embedding_text": "discrete-transistor.pot4mm | Discrete Transistor | Discrete transistor cluster containing one component in the POT4MM package family with a POT4MM-2 footprint. | discrete transistor discrete transistor pot4mm pot4mm-2 pot4mm package discrete.transistor pot4mm footprint tier c dist-legacy pad mm pitch pins | POT4MM | ",
+ "embedding_text": "discrete-transistor.pot4mm | Discrete Transistor | 1 discrete transistor parts using POT4MM footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | pot4mm discrete transistor pad mm pitch pins | POT4MM | ",
  "class": "discrete.transistor"
 }

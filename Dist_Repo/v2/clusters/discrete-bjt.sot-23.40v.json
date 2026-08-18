@@ -6,42 +6,34 @@
   "Discrete",
   "BJT"
  ],
- "description": "Cluster of 23 tier-A discrete BJT parts (NPN and PNP) rated 40V in SOT-23 SMD packages, sourced from kicad-symbols and Alternate-KiCad-Library.",
+ "description": "23 discrete bjt parts for 40V using SOT-23 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "All 23 members are tier A with score 100, so differentiate by exact part (e.g. MMBT2222A, MMBT3904, MMBT3906, PMBT2222A, BF840) and polarity (NPN vs PNP)",
-  "Confirm SOT-23 footprint matches your land pattern before use",
-  "Cross-check source library (kicad-symbols vs Alternate-KiCad-Library) if provenance trust matters"
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SOT-23 land pattern is intended."
  ],
  "avoid_when": [
-  "A voltage rating above 40V is required",
-  "A package other than SOT-23 is needed",
-  "Through-hole mounting is required instead of SMD"
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SOT-23."
  ],
  "keywords": [
+  "sot",
+  "transistor",
   "bjt",
-  "discrete bjt",
-  "sot-23",
-  "sot23",
   "40v",
   "npn",
-  "pnp",
-  "transistor",
-  "smd",
-  "surface mount",
-  "kicad-symbols",
-  "alternate-kicad-library",
-  "mmbt2222a",
-  "mmbt3904",
-  "mmbt3906",
-  "pmbt2222a",
-  "bf840",
-  "sot",
   "discrete",
+  "pnp",
   "akl",
   "alternate",
   "kicad",
   "library",
-  "600ma"
+  "600ma",
+  "250mw",
+  "350mw",
+  "to",
+  "200ma"
  ],
  "facts": {
   "package_family": "SOT-23",
@@ -65,7 +57,7 @@
   "tier_counts": {
    "A": 23
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -134,6 +126,6 @@
   "Alternate-KiCad-Library/Transistor_BJT_AKL/PMBT3904",
   "Alternate-KiCad-Library/Transistor_BJT_AKL/PMBT3906"
  ],
- "embedding_text": "discrete-bjt.sot-23.40v | Discrete BJT | Cluster of 23 tier-A discrete BJT parts (NPN and PNP) rated 40V in SOT-23 SMD packages, sourced from kicad-symbols and Alternate-KiCad-Library. | bjt discrete bjt sot-23 sot23 40v npn pnp transistor smd surface mount kicad-symbols alternate-kicad-library mmbt2222a mmbt3904 mmbt3906 pmbt2222a bf840 sot discrete akl alternate kicad library 600ma | SOT-23 | 40V",
+ "embedding_text": "discrete-bjt.sot-23.40v | Discrete BJT | 23 discrete bjt parts for 40V using SOT-23 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | sot transistor bjt 40v npn discrete pnp akl alternate kicad library 600ma 250mw 350mw to 200ma | SOT-23 | 40V",
  "class": "discrete.bjt"
 }

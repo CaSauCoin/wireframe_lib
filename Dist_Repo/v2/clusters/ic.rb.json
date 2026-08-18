@@ -5,28 +5,20 @@
  "category_path": [
   "IC"
  ],
- "description": "Integrated circuit cluster with 3 tier-C parts in the RB package family supporting RB-24_L, RB-24_M, and RB-24_N footprints.",
+ "description": "3 ic parts using RB footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when needing IC parts within the RB package family.",
-  "Choose between RB-24 footprint variations including RB-24_L, RB-24_M, and RB-24_N.",
-  "Verify adequacy of tier-C legacy distribution source entries."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a RB land pattern is intended."
  ],
  "avoid_when": [
-  "Do not use when layout requires a package family other than RB.",
-  "Avoid if tier-C quality level or generated review status is insufficient.",
-  "Avoid when mounting type must be defined beyond unknown."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than RB."
  ],
  "keywords": [
-  "ic",
   "rb",
-  "ic rb",
-  "rb-24",
-  "rb-24_l",
-  "rb-24_m",
-  "rb-24_n",
-  "package family rb",
-  "dist-legacy",
-  "tier c",
+  "ic",
   "pad",
   "mm",
   "pitch",
@@ -53,7 +45,7 @@
   "tier_counts": {
    "C": 3
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
@@ -61,6 +53,6 @@
   "dist-legacy/RB-24_M",
   "dist-legacy/RB-24_N"
  ],
- "embedding_text": "ic.rb | IC | Integrated circuit cluster with 3 tier-C parts in the RB package family supporting RB-24_L, RB-24_M, and RB-24_N footprints. | ic rb ic rb rb-24 rb-24_l rb-24_m rb-24_n package family rb dist-legacy tier c pad mm pitch pins | RB | ",
+ "embedding_text": "ic.rb | IC | 3 ic parts using RB footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | rb ic pad mm pitch pins | RB | ",
  "class": "ic"
 }

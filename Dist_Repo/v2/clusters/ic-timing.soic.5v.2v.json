@@ -6,42 +6,34 @@
   "IC",
   "Timing"
  ],
- "description": "Cluster of surface-mount timing ICs in 8-pin SOIC packages associated with 5V and 2V facets.",
+ "description": "4 ic timing parts for 5V, 2V using SOIC footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select the required SOIC-8 package footprint variant (5.3x5.3mm or 3.9x4.9mm body).",
-  "Match the required part variant among DS1302S+, DS1302SN+, DS1302Z+, or DS1302ZN+.",
-  "Verify compatibility with 5V and 2V facet specifications."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SOIC land pattern is intended."
  ],
  "avoid_when": [
-  "A package family other than SOIC or through-hole mounting is required.",
-  "The circuit requires operating parameters outside the 2V or 5V facets.",
-  "The design requires footprint pitches other than 1.27mm."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SOIC."
  ],
  "keywords": [
-  "ic timing",
-  "timing ic",
-  "rtc",
-  "timer_rtc",
   "soic",
-  "soic-8",
-  "smd",
-  "5v",
-  "2v",
-  "ds1302",
-  "ds1302s+",
-  "ds1302z+",
-  "ds1302sn+",
-  "ds1302zn+",
-  "p1.27mm",
+  "rtc",
   "trickle",
   "charge",
   "timekeeping",
   "chip",
   "to",
+  "5v",
   "so",
   "sop",
   "timer",
-  "0v"
+  "0v",
+  "vcc",
+  "mil",
+  "p1",
+  "27mm"
  ],
  "facts": {
   "package_family": "SOIC",
@@ -66,7 +58,7 @@
   "tier_counts": {
    "A": 4
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -108,6 +100,6 @@
   "kicad-symbols/Timer_RTC/DS1302Z+",
   "kicad-symbols/Timer_RTC/DS1302ZN+"
  ],
- "embedding_text": "ic-timing.soic.5v.2v | IC Timing | Cluster of surface-mount timing ICs in 8-pin SOIC packages associated with 5V and 2V facets. | ic timing timing ic rtc timer_rtc soic soic-8 smd 5v 2v ds1302 ds1302s+ ds1302z+ ds1302sn+ ds1302zn+ p1.27mm trickle charge timekeeping chip to so sop timer 0v | SOIC | 5V 2V",
+ "embedding_text": "ic-timing.soic.5v.2v | IC Timing | 4 ic timing parts for 5V, 2V using SOIC footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | soic rtc trickle charge timekeeping chip to 5v so sop timer 0v vcc mil p1 27mm | SOIC | 5V 2V",
  "class": "ic.timing"
 }

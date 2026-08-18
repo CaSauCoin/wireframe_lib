@@ -7,38 +7,31 @@
   "Power",
   "Switching Regulator"
  ],
- "description": "Cluster of 80V buck switching regulator ICs in surface-mount MSOP packages, including MSOP-8 and MSOP-10 footprint options.",
+ "description": "3 ic power switching regulator parts for buck, 80V using MSOP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when an 80V buck switching regulator in an MSOP surface-mount package is required.",
-  "Choose between MSOP-8 (0.65mm pitch) and MSOP-10 (0.5mm pitch) package footprints.",
-  "Verify compatibility with specific representative parts like LM5006MM, LM5007MM, or LM5009MM."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a MSOP land pattern is intended."
  ],
  "avoid_when": [
-  "The circuit design requires a converter topology other than buck.",
-  "The PCB layout demands a package family other than surface-mount MSOP.",
-  "Voltage requirements exceed the 80V rating."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than MSOP."
  ],
  "keywords": [
-  "ic",
-  "power",
-  "switching regulator",
-  "buck",
-  "80v",
-  "msop",
-  "msop-8",
-  "msop-10",
-  "smd",
-  "lm5006mm",
-  "lm5007mm",
-  "lm5009mm",
   "regulator",
   "switching",
+  "msop",
+  "80v",
+  "buck",
   "3x3mm",
   "p0",
   "voltage",
   "step",
   "down",
   "so",
+  "ic",
+  "power",
   "constant",
   "on",
   "time"
@@ -66,7 +59,7 @@
   "tier_counts": {
    "A": 3
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -99,6 +92,6 @@
   "kicad-symbols/Regulator_Switching/LM5007MM",
   "kicad-symbols/Regulator_Switching/LM5009MM"
  ],
- "embedding_text": "ic-power-switching.msop.buck.80v | IC Power Switching Regulator | Cluster of 80V buck switching regulator ICs in surface-mount MSOP packages, including MSOP-8 and MSOP-10 footprint options. | ic power switching regulator buck 80v msop msop-8 msop-10 smd lm5006mm lm5007mm lm5009mm regulator switching 3x3mm p0 voltage step down so constant on time | MSOP | buck 80V",
+ "embedding_text": "ic-power-switching.msop.buck.80v | IC Power Switching Regulator | 3 ic power switching regulator parts for buck, 80V using MSOP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | regulator switching msop 80v buck 3x3mm p0 voltage step down so ic power constant on time | MSOP | buck 80V",
  "class": "ic.power.switching"
 }

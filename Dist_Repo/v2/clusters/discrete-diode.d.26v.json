@@ -6,44 +6,34 @@
   "Discrete",
   "Diode"
  ],
- "description": "Cluster of 38 discrete D-package diode parts tagged with a 26V facet, spanning SMC, SMA, SMB, DO-15, P600, SOD-123F and PowerDI-123 footprints in SMD and through-hole mounts, with representative entries drawn from the TVS series.",
+ "description": "38 discrete diode parts for 26V using D footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Match the exact footprint (SMC, SMA, SMB, DO-15, P600, SOD-123F, or PowerDI-123) to the intended PCB land pattern.",
-  "Prefer tier A entries (36 of 38 parts) over the 2 tier B entries.",
-  "Confirm SMD vs through-hole mount fits the assembly process before selecting.",
-  "Verify the 26V facet matches the voltage rating required by the design."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a D land pattern is intended."
  ],
  "avoid_when": [
-  "The specific electrical rating (voltage, current, power) is not confirmed by the individual part, not just the cluster facet.",
-  "The needed PCB footprint is not one of the D-family patterns listed for this cluster.",
-  "The design requires a package family other than D.",
-  "Only a tier B or unverified-source entry is available and higher confidence is required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than D."
  ],
  "keywords": [
   "diode",
-  "discrete diode",
   "tvs",
   "26v",
-  "d package",
-  "smc",
-  "sma",
-  "smb",
-  "do-15",
-  "p600",
-  "sod-123f",
-  "powerdi-123",
-  "zener",
-  "horizontal",
-  "smd",
-  "through hole",
-  "alternate-kicad-library",
-  "jlcpcb-kicad-library",
   "unidirectional",
   "discrete",
   "akl",
   "alternate",
   "kicad",
-  "library"
+  "library",
+  "do",
+  "bidirectional",
+  "smc",
+  "horizontal",
+  "p600",
+  "sod",
+  "1mm"
  ],
  "facts": {
   "package_family": "D",
@@ -80,7 +70,7 @@
    "A": 36,
    "B": 2
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -164,6 +154,6 @@
   "Alternate-KiCad-Library/Diode_TVS_AKL/TPSMA6L26A",
   "JLCPCB-Kicad-Library/JLCPCB-Diodes/TVS-Bi,SMF26CA"
  ],
- "embedding_text": "discrete-diode.d.26v | Discrete Diode | Cluster of 38 discrete D-package diode parts tagged with a 26V facet, spanning SMC, SMA, SMB, DO-15, P600, SOD-123F and PowerDI-123 footprints in SMD and through-hole mounts, with representative entries drawn from the TVS series. | diode discrete diode tvs 26v d package smc sma smb do-15 p600 sod-123f powerdi-123 zener horizontal smd through hole alternate-kicad-library jlcpcb-kicad-library unidirectional discrete akl alternate kicad library | D | 26V",
+ "embedding_text": "discrete-diode.d.26v | Discrete Diode | 38 discrete diode parts for 26V using D footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | diode tvs 26v unidirectional discrete akl alternate kicad library do bidirectional smc horizontal p600 sod 1mm | D | 26V",
  "class": "discrete.diode"
 }

@@ -6,42 +6,34 @@
   "Discrete",
   "LED"
  ],
- "description": "Through-hole discrete LED cluster containing 95 parts using the LED3BI footprint.",
+ "description": "95 discrete led parts using LED3BI footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when a through-hole discrete LED with a LED3BI footprint is required.",
-  "Verify specific pin configurations such as dual anode/cathode pinouts (AAK, AKA, KAK, KKA).",
-  "Review quality tiering as the cluster consists of 94 Tier B parts and 1 Tier C part."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a LED3BI land pattern is intended."
  ],
  "avoid_when": [
-  "Surface-mount (SMD) components are required for the PCB design.",
-  "The board layout requires a footprint other than LED3BI.",
-  "Only Tier A parts are acceptable for the project."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than LED3BI."
  ],
  "keywords": [
-  "discrete",
   "led",
-  "led3bi",
-  "through_hole",
-  "alternate-kicad-library",
-  "kicad-symbols",
-  "chilaboard-altium-library",
-  "dual led",
-  "led_dual_aak",
-  "led_dual_aka",
-  "led_dual_kak",
-  "led_pad",
   "generic",
+  "led3bi",
   "common",
   "dual",
   "indicator",
   "white",
+  "discrete",
   "blue",
   "green",
   "red",
   "yellow",
   "akl",
   "symbol",
-  "alternate"
+  "alternate",
+  "kicad"
  ],
  "facts": {
   "package_family": "LED3BI",
@@ -65,7 +57,7 @@
    "B": 94,
    "C": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -206,6 +198,6 @@
   "kicad-symbols/Device/LED_Series_Pad",
   "chilaboard-altium-library/LED3BI/LED3BI"
  ],
- "embedding_text": "discrete-led.led3bi | Discrete LED | Through-hole discrete LED cluster containing 95 parts using the LED3BI footprint. | discrete led led3bi through_hole alternate-kicad-library kicad-symbols chilaboard-altium-library dual led led_dual_aak led_dual_aka led_dual_kak led_pad generic common dual indicator white blue green red yellow akl symbol alternate | LED3BI | ",
+ "embedding_text": "discrete-led.led3bi | Discrete LED | 95 discrete led parts using LED3BI footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | led generic led3bi common dual indicator white discrete blue green red yellow akl symbol alternate kicad | LED3BI | ",
  "class": "discrete.led"
 }

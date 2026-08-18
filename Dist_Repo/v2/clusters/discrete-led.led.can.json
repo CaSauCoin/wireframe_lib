@@ -6,30 +6,18 @@
   "Discrete",
   "LED"
  ],
- "description": "Discrete through-hole LED cluster under the CAN facet utilizing rectangular LED package footprints.",
+ "description": "1 discrete led parts for CAN using LED footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select for through-hole discrete LED designs utilizing rectangular LED footprints.",
-  "Verify pin-to-pad mapping and footprint dimensions for LED_Rectangular_W7.62mm_H4.55mm_P5.08mm_R3.",
-  "Check part quality tier and source availability before finalizing board layout."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a LED land pattern is intended."
  ],
  "avoid_when": [
-  "Surface mount technology (SMT) is required instead of through-hole mounting.",
-  "The layout requires package families other than standard LED package footprints.",
-  "Required electrical parameters or verified datasheet ratings are missing."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than LED."
  ],
  "keywords": [
-  "discrete led",
-  "can",
-  "through hole",
-  "led package",
-  "rectangular led",
-  "w7.62mm",
-  "h4.55mm",
-  "p5.08mm",
-  "r3",
-  "through_hole",
-  "5.08mm pitch",
-  "tier c",
   "led",
   "62mm",
   "rectangular",
@@ -38,10 +26,14 @@
   "55mm",
   "p5",
   "08mm",
+  "r3",
   "discrete",
+  "can",
   "through",
   "hole",
-  "pad"
+  "pad",
+  "mm",
+  "pitch"
  ],
  "facts": {
   "package_family": "LED",
@@ -64,12 +56,12 @@
   "tier_counts": {
    "C": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
   "dist-legacy/LED_Rectangular_W7.62mm_H4.55mm_P5.08mm_R3"
  ],
- "embedding_text": "discrete-led.led.can | Discrete LED | Discrete through-hole LED cluster under the CAN facet utilizing rectangular LED package footprints. | discrete led can through hole led package rectangular led w7.62mm h4.55mm p5.08mm r3 through_hole 5.08mm pitch tier c led 62mm rectangular w7 h4 55mm p5 08mm discrete through hole pad | LED | CAN",
+ "embedding_text": "discrete-led.led.can | Discrete LED | 1 discrete led parts for CAN using LED footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | led 62mm rectangular w7 h4 55mm p5 08mm r3 discrete can through hole pad mm pitch | LED | CAN",
  "class": "discrete.led"
 }

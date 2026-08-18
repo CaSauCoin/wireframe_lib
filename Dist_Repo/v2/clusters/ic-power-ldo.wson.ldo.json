@@ -7,32 +7,22 @@
   "Power",
   "Linear Regulator"
  ],
- "description": "Surface-mount IC power linear regulator (LDO) cluster in WSON packages containing 12 parts from KiCad symbols across quality tiers A and B.",
+ "description": "12 ic power linear regulator parts for LDO using WSON footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Choose when requiring a surface-mount LDO linear regulator in WSON package format.",
-  "Check specific footprint variants including WSON-6 and WSON-8 with exposed thermal pads.",
-  "Filter by quality tier A or B based on library requirements."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a WSON land pattern is intended."
  ],
  "avoid_when": [
-  "Do not use when package types other than WSON are required.",
-  "Avoid when non-LDO or non-linear power regulator topologies are specified.",
-  "Do not use when through-hole mounting is required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than WSON."
  ],
  "keywords": [
   "wson",
-  "ldo",
-  "linear regulator",
-  "ic power",
-  "smd",
-  "wson-6",
-  "wson-8",
-  "wson-6-1ep",
-  "wson-8-1ep",
-  "kicad-symbols",
-  "lp5912",
-  "tlv711",
   "regulator",
   "linear",
+  "ldo",
   "low",
   "5mm",
   "p0",
@@ -42,7 +32,9 @@
   "dropout",
   "1ep",
   "nolead",
-  "0v"
+  "0v",
+  "dual",
+  "5x1"
  ],
  "facts": {
   "package_family": "WSON",
@@ -72,7 +64,7 @@
    "A": 6,
    "B": 6
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -130,6 +122,6 @@
   "kicad-symbols/Regulator_Linear/LP3982ILD-ADJ",
   "kicad-symbols/Regulator_Linear/LP38691SD-5.0"
  ],
- "embedding_text": "ic-power-ldo.wson.ldo | IC Power Linear Regulator | Surface-mount IC power linear regulator (LDO) cluster in WSON packages containing 12 parts from KiCad symbols across quality tiers A and B. | wson ldo linear regulator ic power smd wson-6 wson-8 wson-6-1ep wson-8-1ep kicad-symbols lp5912 tlv711 regulator linear low 5mm p0 ic power output dropout 1ep nolead 0v | WSON | LDO",
+ "embedding_text": "ic-power-ldo.wson.ldo | IC Power Linear Regulator | 12 ic power linear regulator parts for LDO using WSON footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | wson regulator linear ldo low 5mm p0 ic power output dropout 1ep nolead 0v dual 5x1 | WSON | LDO",
  "class": "ic.power.ldo"
 }

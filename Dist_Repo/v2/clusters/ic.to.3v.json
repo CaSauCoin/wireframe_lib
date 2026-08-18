@@ -5,42 +5,34 @@
  "category_path": [
   "IC"
  ],
- "description": "Cluster of 3V IC components in TO package family supporting SMD and through-hole mounts across TO-92_Inline, TO-263-3_TabPin2, and TO-263-5_TabPin3 footprints.",
+ "description": "3 ic parts for 3V using TO footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when needing 3V IC parts in the TO package family.",
-  "Choose between through-hole (TO-92_Inline) and surface-mount (TO-263) options.",
-  "Match part selection to specific footprints like TO-92_Inline, TO-263-3_TabPin2, or TO-263-5_TabPin3."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a TO land pattern is intended."
  ],
  "avoid_when": [
-  "Do not use if the board design requires package families other than TO.",
-  "Avoid when required footprints differ from TO-92_Inline, TO-263-3_TabPin2, or TO-263-5_TabPin3.",
-  "Avoid if mounting requirements are incompatible with SMD or through-hole TO packages."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than TO."
  ],
  "keywords": [
-  "ic",
-  "3v",
   "to",
-  "to-92_inline",
-  "to-263-3_tabpin2",
-  "to-263-5_tabpin3",
-  "smd",
-  "through_hole",
-  "lm4040lp-3",
-  "mcp1790t-3002e-eb",
-  "mcp1791t-3002e-et",
-  "kicad-symbols",
-  "alternate-kicad-library",
   "voltage",
+  "3v",
   "regulator",
   "70ma",
   "high",
   "d2pak",
   "reference",
+  "ic",
   "shunt",
   "sc",
   "3002e",
   "akl",
-  "input"
+  "input",
+  "alternate",
+  "kicad"
  ],
  "facts": {
   "package_family": "TO",
@@ -67,7 +59,7 @@
   "tier_counts": {
    "A": 3
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -100,6 +92,6 @@
   "Alternate-KiCad-Library/Voltage_Regulator_AKL/MCP1790T-3002E-EB",
   "Alternate-KiCad-Library/Voltage_Regulator_AKL/MCP1791T-3002E-ET"
  ],
- "embedding_text": "ic.to.3v | IC | Cluster of 3V IC components in TO package family supporting SMD and through-hole mounts across TO-92_Inline, TO-263-3_TabPin2, and TO-263-5_TabPin3 footprints. | ic 3v to to-92_inline to-263-3_tabpin2 to-263-5_tabpin3 smd through_hole lm4040lp-3 mcp1790t-3002e-eb mcp1791t-3002e-et kicad-symbols alternate-kicad-library voltage regulator 70ma high d2pak reference shunt sc 3002e akl input | TO | 3V",
+ "embedding_text": "ic.to.3v | IC | 3 ic parts for 3V using TO footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | to voltage 3v regulator 70ma high d2pak reference ic shunt sc 3002e akl input alternate kicad | TO | 3V",
  "class": "ic"
 }

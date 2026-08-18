@@ -6,38 +6,32 @@
   "Discrete",
   "Diode"
  ],
- "description": "Discrete diode cluster containing parts with COTO package family and footprint specifications.",
+ "description": "1 discrete diode parts using COTO footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when discrete diode parts with COTO footprints are required.",
-  "Check mounting details because mount type is listed as unknown.",
-  "Review tier B quality cataloging from dist-legacy sources."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a COTO land pattern is intended."
  ],
  "avoid_when": [
-  "The design requires a package family or footprint other than COTO.",
-  "Explicitly defined mounting types are required by board layout rules.",
-  "Parts outside of dist-legacy catalog sources are required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than COTO."
  ],
  "keywords": [
-  "discrete",
-  "diode",
-  "discrete.diode",
   "coto",
-  "coto technology",
-  "ct10",
-  "ct10 g1",
-  "coto footprint",
-  "dist-legacy",
-  "tier b",
   "technology",
+  "ct10",
   "g1",
   "pin",
   "component",
+  "diode",
   "two",
   "with",
   "anode",
   "and",
   "cathode",
-  "terminals"
+  "terminals",
+  "discrete"
  ],
  "facts": {
   "package_family": "COTO",
@@ -58,7 +52,7 @@
   "tier_counts": {
    "B": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -73,6 +67,6 @@
  "part_ids": [
   "dist-legacy/COTO TECHNOLOGY - CT10 G1"
  ],
- "embedding_text": "discrete-diode.coto | Discrete Diode | Discrete diode cluster containing parts with COTO package family and footprint specifications. | discrete diode discrete.diode coto coto technology ct10 ct10 g1 coto footprint dist-legacy tier b technology g1 pin component two with anode and cathode terminals | COTO | ",
+ "embedding_text": "discrete-diode.coto | Discrete Diode | 1 discrete diode parts using COTO footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | coto technology ct10 g1 pin component diode two with anode and cathode terminals discrete | COTO | ",
  "class": "discrete.diode"
 }

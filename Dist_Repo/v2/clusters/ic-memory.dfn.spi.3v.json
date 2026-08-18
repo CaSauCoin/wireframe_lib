@@ -6,32 +6,24 @@
   "IC",
   "Memory"
  ],
- "description": "This cluster covers surface-mount 3V SPI memory ICs in DFN packages, such as footprint DFN-S-8-1EP_6x5mm_P1.27mm.",
+ "description": "1 ic memory parts for SPI, 3V using DFN footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select for 3V memory applications requiring an SPI bus interface.",
-  "Verify compatibility with the DFN-S-8-1EP_6x5mm_P1.27mm surface-mount land pattern.",
-  "Check that Tier A quality and KiCad symbol coverage meet project standards."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a DFN land pattern is intended."
  ],
  "avoid_when": [
-  "Avoid if the system operates at voltages other than 3V.",
-  "Do not use when a non-SPI memory interface is required.",
-  "Avoid if the PCB layout requires through-hole or non-DFN packages."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than DFN."
  ],
  "keywords": [
-  "ic memory",
-  "spi",
-  "3v",
-  "dfn",
-  "smd",
   "memory",
-  "dfn-s-8-1ep_6x5mm_p1.27mm",
-  "m25px32-vmp",
-  "kicad-symbols",
-  "spi memory",
-  "3v memory",
-  "dfn memory",
+  "dfn",
   "flash",
+  "3v",
   "serial",
+  "spi",
   "m25px32",
   "vmp",
   "32mb",
@@ -65,7 +57,7 @@
   "tier_counts": {
    "A": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -80,6 +72,6 @@
  "part_ids": [
   "kicad-symbols/Memory_Flash/M25PX32-VMP"
  ],
- "embedding_text": "ic-memory.dfn.spi.3v | IC Memory | This cluster covers surface-mount 3V SPI memory ICs in DFN packages, such as footprint DFN-S-8-1EP_6x5mm_P1.27mm. | ic memory spi 3v dfn smd memory dfn-s-8-1ep_6x5mm_p1.27mm m25px32-vmp kicad-symbols spi memory 3v memory dfn memory flash serial m25px32 vmp 32mb dual 4kb subsector erase with mhz bus | DFN | SPI 3V",
+ "embedding_text": "ic-memory.dfn.spi.3v | IC Memory | 1 ic memory parts for SPI, 3V using DFN footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | memory dfn flash 3v serial spi m25px32 vmp 32mb dual 4kb subsector erase with mhz bus | DFN | SPI 3V",
  "class": "ic.memory"
 }

@@ -6,39 +6,33 @@
   "Discrete",
   "Transistor"
  ],
- "description": "Cluster of 11 discrete transistor parts using NEXPERIA package footprints such as DFN2020, LFPAK33, and MLPAK33 with SMD mounts.",
+ "description": "11 discrete transistor parts using NEXPERIA footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Match the required footprint variant such as DFN2020, LFPAK33 (SOT1210), or MLPAK33 (SOT8002-1).",
-  "Prefer higher quality Tier B parts over Tier C entries when available.",
-  "Verify source provenance between dist-legacy and celestial-altium-library footprints."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a NEXPERIA land pattern is intended."
  ],
  "avoid_when": [
-  "The PCB layout requires non-SMD or through-hole mounting.",
-  "A package footprint family other than NEXPERIA is required.",
-  "The project mandates Tier A quality verified components."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than NEXPERIA."
  ],
  "keywords": [
   "nexperia",
-  "discrete transistor",
-  "transistor",
-  "smd",
-  "dfn2020",
-  "dfn2020m-6",
-  "dfn2020md-6",
   "sot1220",
-  "sot1210",
-  "lfpak33",
-  "mlpak33",
-  "sot8002-1",
-  "discrete",
-  "surface mount",
+  "transistor",
   "dfn2020md",
+  "discrete",
   "surface",
   "mount",
   "dfn2020m",
+  "lfpak33",
+  "sot1210",
+  "mlpak33",
   "sot8002",
   "pins",
   "pad",
+  "smd",
   "land"
  ],
  "facts": {
@@ -68,7 +62,7 @@
    "B": 3,
    "C": 8
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -109,6 +103,6 @@
   "celestial-altium-library/NEXPERIA LFPAK33 SOT1210/NEXPERIA_LFPAK33_SOT1210",
   "celestial-altium-library/NEXPERIA MLPAK33 SOT8002-1/NEXPERIA_MLPAK33_SOT8002-1"
  ],
- "embedding_text": "discrete-transistor.nexperia | Discrete Transistor | Cluster of 11 discrete transistor parts using NEXPERIA package footprints such as DFN2020, LFPAK33, and MLPAK33 with SMD mounts. | nexperia discrete transistor transistor smd dfn2020 dfn2020m-6 dfn2020md-6 sot1220 sot1210 lfpak33 mlpak33 sot8002-1 discrete surface mount dfn2020md surface mount dfn2020m sot8002 pins pad land | NEXPERIA | ",
+ "embedding_text": "discrete-transistor.nexperia | Discrete Transistor | 11 discrete transistor parts using NEXPERIA footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | nexperia sot1220 transistor dfn2020md discrete surface mount dfn2020m lfpak33 sot1210 mlpak33 sot8002 pins pad smd land | NEXPERIA | ",
  "class": "discrete.transistor"
 }

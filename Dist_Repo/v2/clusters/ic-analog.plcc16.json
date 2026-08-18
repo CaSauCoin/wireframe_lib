@@ -6,35 +6,30 @@
   "IC",
   "Analog"
  ],
- "description": "Analog IC cluster containing tier B surface-mount components in PLCC16 packaging using the PLCC16-0.5-3X3MM footprint.",
+ "description": "2 ic analog parts using PLCC16 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when requiring an analog IC in an SMD PLCC16 package.",
-  "Verify board footprint compatibility with PLCC16-0.5-3X3MM.",
-  "Choose between tier B components such as AD7533JP and AD7533KP."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a PLCC16 land pattern is intended."
  ],
  "avoid_when": [
-  "The PCB design requires through-hole components instead of SMD.",
-  "The board layout uses a footprint other than PLCC16-0.5-3X3MM.",
-  "Parts outside the PLCC16 package family are required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than PLCC16."
  ],
  "keywords": [
-  "ic",
-  "analog",
-  "ic analog",
-  "plcc16",
-  "plcc",
-  "smd",
-  "plcc16-0.5-3x3mm",
-  "ad7533jp",
-  "ad7533kp",
-  "analog_dac",
-  "kicad-symbols",
   "dac",
+  "analog",
   "10bit",
+  "plcc16",
   "multiplying",
   "channel",
+  "plcc",
   "3x3mm",
-  "1ch"
+  "1ch",
+  "ic",
+  "ad7533jp",
+  "ad7533kp"
  ],
  "facts": {
   "package_family": "PLCC16",
@@ -55,7 +50,7 @@
   "tier_counts": {
    "B": 2
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -79,6 +74,6 @@
   "kicad-symbols/Analog_DAC/AD7533JP",
   "kicad-symbols/Analog_DAC/AD7533KP"
  ],
- "embedding_text": "ic-analog.plcc16 | IC Analog | Analog IC cluster containing tier B surface-mount components in PLCC16 packaging using the PLCC16-0.5-3X3MM footprint. | ic analog ic analog plcc16 plcc smd plcc16-0.5-3x3mm ad7533jp ad7533kp analog_dac kicad-symbols dac 10bit multiplying channel 3x3mm 1ch | PLCC16 | ",
+ "embedding_text": "ic-analog.plcc16 | IC Analog | 2 ic analog parts using PLCC16 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | dac analog 10bit plcc16 multiplying channel plcc 3x3mm 1ch ic ad7533jp ad7533kp | PLCC16 | ",
  "class": "ic.analog"
 }

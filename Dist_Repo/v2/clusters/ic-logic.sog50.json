@@ -6,32 +6,26 @@
   "IC",
   "Logic"
  ],
- "description": "Surface-mount logic IC components in the SOG50 package family using the SOG50_8 footprint.",
+ "description": "2 ic logic parts using SOG50 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when requiring SMD logic ICs in the SOG50 package family.",
-  "Verify part compatibility with the SOG50_8 footprint.",
-  "Confirm suitability of Tier B parts from the chilaboard-altium-library source."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SOG50 land pattern is intended."
  ],
  "avoid_when": [
-  "Avoid if the board layout requires a footprint other than SOG50_8.",
-  "Avoid when through-hole mounting is required.",
-  "Avoid if package requirements differ from SOG50."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SOG50."
  ],
  "keywords": [
   "ic",
   "logic",
-  "ic.logic",
-  "sog50",
-  "sog50_8",
-  "smd",
-  "74avc2t45",
-  "74avc2t45_vssop8",
-  "74lvch2t45",
-  "74lvch2t45_vssop8",
   "vssop8",
-  "chilaboard-altium-library",
   "transceiver",
   "vssop",
+  "sog50",
+  "74lvch2t45",
+  "74avc2t45",
   "level",
   "translator",
   "bit",
@@ -60,7 +54,7 @@
   "tier_counts": {
    "B": 2
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -84,6 +78,6 @@
   "chilaboard-altium-library/74AVC2T45_VSSOP8/74AVC2T45_VSSOP8",
   "chilaboard-altium-library/74LVCH2T45_VSSOP8/74LVCH2T45_VSSOP8"
  ],
- "embedding_text": "ic-logic.sog50 | IC Logic | Surface-mount logic IC components in the SOG50 package family using the SOG50_8 footprint. | ic logic ic.logic sog50 sog50_8 smd 74avc2t45 74avc2t45_vssop8 74lvch2t45 74lvch2t45_vssop8 vssop8 chilaboard-altium-library transceiver vssop level translator bit dual in an pin package | SOG50 | ",
+ "embedding_text": "ic-logic.sog50 | IC Logic | 2 ic logic parts using SOG50 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | ic logic vssop8 transceiver vssop sog50 74lvch2t45 74avc2t45 level translator bit dual in an pin package | SOG50 | ",
  "class": "ic.logic"
 }

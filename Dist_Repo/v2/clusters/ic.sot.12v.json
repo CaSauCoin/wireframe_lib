@@ -5,33 +5,22 @@
  "category_path": [
   "IC"
  ],
- "description": "Cluster of 10 Tier-A surface-mount IC parts rated for 12V applications, formatted for SOT-89-3 and SOT-223-3_TabPin2 footprints.",
+ "description": "10 ic parts for 12V using SOT footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select based on exact footprint requirements such as SOT-89-3 or SOT-223-3_TabPin2.",
-  "Verify the specific 12V IC part model required by your schematic.",
-  "Ensure the component matches surface-mount (SMD) layout specifications."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SOT land pattern is intended."
  ],
  "avoid_when": [
-  "Designs requiring through-hole mounting rather than surface-mount (SMD).",
-  "Circuits requiring package footprints other than SOT-89-3 or SOT-223-3_TabPin2.",
-  "Applications that operate at voltage specifications other than 12V."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SOT."
  ],
  "keywords": [
-  "ic",
-  "12v",
   "sot",
-  "smd",
-  "sot-89-3",
-  "sot-223-3_tabpin2",
-  "alternate-kicad-library",
-  "voltage regulator",
-  "as78l12rtr-g1",
-  "di78l12uab",
-  "di79l12uab",
-  "l78l12abu",
-  "l78l12acu",
   "voltage",
   "regulator",
+  "12v",
   "100ma",
   "akl",
   "alternate",
@@ -40,7 +29,10 @@
   "vreg",
   "pmic",
   "power",
-  "supply"
+  "supply",
+  "ic",
+  "terminal",
+  "78l12"
  ],
  "facts": {
   "package_family": "SOT",
@@ -64,7 +56,7 @@
   "tier_counts": {
    "A": 10
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -120,6 +112,6 @@
   "Alternate-KiCad-Library/Voltage_Regulator_AKL/ZSR1200GTA",
   "Alternate-KiCad-Library/Voltage_Regulator_AKL/μA78L12ACPK"
  ],
- "embedding_text": "ic.sot.12v | IC | Cluster of 10 Tier-A surface-mount IC parts rated for 12V applications, formatted for SOT-89-3 and SOT-223-3_TabPin2 footprints. | ic 12v sot smd sot-89-3 sot-223-3_tabpin2 alternate-kicad-library voltage regulator as78l12rtr-g1 di78l12uab di79l12uab l78l12abu l78l12acu voltage regulator 100ma akl alternate kicad library vreg pmic power supply | SOT | 12V",
+ "embedding_text": "ic.sot.12v | IC | 10 ic parts for 12V using SOT footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | sot voltage regulator 12v 100ma akl alternate kicad library vreg pmic power supply ic terminal 78l12 | SOT | 12V",
  "class": "ic"
 }

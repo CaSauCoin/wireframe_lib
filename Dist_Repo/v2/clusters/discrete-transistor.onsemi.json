@@ -6,33 +6,28 @@
   "Discrete",
   "Transistor"
  ],
- "description": "A cluster of 6 discrete transistor parts utilizing ONSEMI footprints, including DPAK and DFNW packages, with surface-mount or unspecified mounting styles.",
+ "description": "6 discrete transistor parts using ONSEMI footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Matching discrete transistor designs requiring ONSEMI package footprints like DPAK or DFNW 5x6.",
-  "Selecting surface-mount (SMD) discrete transistors from tier B or C library entries.",
-  "Using parts sourced from dist-legacy or celestial-altium-library."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a ONSEMI land pattern is intended."
  ],
  "avoid_when": [
-  "The layout requires package footprints other than ONSEMI land patterns.",
-  "Components outside of the discrete transistor category are needed.",
-  "Through-hole mounting is strictly required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than ONSEMI."
  ],
  "keywords": [
-  "discrete",
-  "transistor",
   "onsemi",
   "dpak",
-  "dfnw",
-  "smd",
+  "transistor",
+  "case",
   "fdd390n15alz",
-  "case-507bd",
+  "discrete",
+  "dfnw",
+  "507bd",
   "369c",
   "5x6",
-  "discrete transistor",
-  "onsemi dpak",
-  "dfnw 5x6",
-  "case",
-  "507bd",
   "package",
   "pins",
   "on",
@@ -66,7 +61,7 @@
    "B": 2,
    "C": 4
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -94,6 +89,6 @@
   "celestial-altium-library/ONSEMI DPAK FDD390N15ALZ/ONSEMI_DPAK_FDD390N15ALZ",
   "celestial-altium-library/onsemi DFNW 5x6 CASE-507BD/onsemi_DFNW_5x6_CASE-507BD"
  ],
- "embedding_text": "discrete-transistor.onsemi | Discrete Transistor | A cluster of 6 discrete transistor parts utilizing ONSEMI footprints, including DPAK and DFNW packages, with surface-mount or unspecified mounting styles. | discrete transistor onsemi dpak dfnw smd fdd390n15alz case-507bd 369c 5x6 discrete transistor onsemi dpak dfnw 5x6 case 507bd package pins on surface mount pad | ONSEMI | ",
+ "embedding_text": "discrete-transistor.onsemi | Discrete Transistor | 6 discrete transistor parts using ONSEMI footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | onsemi dpak transistor case fdd390n15alz discrete dfnw 507bd 369c 5x6 package pins on surface mount pad | ONSEMI | ",
  "class": "discrete.transistor"
 }

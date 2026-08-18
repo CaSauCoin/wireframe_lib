@@ -7,42 +7,34 @@
   "Power",
   "Linear Regulator"
  ],
- "description": "Cluster of 36 surface-mount 1.8V LDO linear regulator ICs featuring SOT-23-5 and TSOT-23-5 footprints from KiCad symbols.",
+ "description": "36 ic power linear regulator parts for LDO, 1.8V using SOT-23-5 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when requiring a 1.8V fixed LDO linear regulator in SOT-23-5 or TSOT-23-5 footprint.",
-  "Verify whether SOT-23-5 or TSOT-23-5 footprint matches the specific PCB layout requirements.",
-  "Choose from 36 Tier-A entries supplied by KiCad symbols."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SOT-23-5 land pattern is intended."
  ],
  "avoid_when": [
-  "The required output voltage is different from 1.8V.",
-  "The layout requires a footprint other than SOT-23-5 or TSOT-23-5.",
-  "Surface-mount (SMD) component mounting is not used."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SOT-23-5."
  ],
  "keywords": [
-  "ic",
-  "power",
-  "linear regulator",
-  "ldo",
-  "1.8v",
-  "sot-23-5",
-  "tsot-23-5",
-  "smd",
-  "linear",
-  "regulator",
-  "kicad-symbols",
-  "adp7142aujz-1.8",
-  "adp7182aujz-1.8",
-  "ap131-18",
-  "ap2204k-1.8",
-  "ape8865y5-18-hf-3",
   "sot",
+  "regulator",
+  "linear",
+  "ldo",
   "8v",
   "low",
   "fixed",
+  "power",
   "to",
+  "smd",
+  "ic",
   "output",
   "dropout",
-  "voltage"
+  "voltage",
+  "positive",
+  "150ma"
  ],
  "facts": {
   "package_family": "SOT-23-5",
@@ -67,7 +59,7 @@
   "tier_counts": {
    "A": 36
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -149,6 +141,6 @@
   "kicad-symbols/Regulator_Linear/TPS79318-EP",
   "kicad-symbols/Regulator_Linear/TPS7A0518PDBV"
  ],
- "embedding_text": "ic-power-ldo.sot-23-5.ldo.1-8v | IC Power Linear Regulator | Cluster of 36 surface-mount 1.8V LDO linear regulator ICs featuring SOT-23-5 and TSOT-23-5 footprints from KiCad symbols. | ic power linear regulator ldo 1.8v sot-23-5 tsot-23-5 smd linear regulator kicad-symbols adp7142aujz-1.8 adp7182aujz-1.8 ap131-18 ap2204k-1.8 ape8865y5-18-hf-3 sot 8v low fixed to output dropout voltage | SOT-23-5 | LDO 1.8V",
+ "embedding_text": "ic-power-ldo.sot-23-5.ldo.1-8v | IC Power Linear Regulator | 36 ic power linear regulator parts for LDO, 1.8V using SOT-23-5 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | sot regulator linear ldo 8v low fixed power to smd ic output dropout voltage positive 150ma | SOT-23-5 | LDO 1.8V",
  "class": "ic.power.ldo"
 }

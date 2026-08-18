@@ -6,30 +6,22 @@
   "IC",
   "Driver"
  ],
- "description": "IC driver component cluster for surface-mount 8V devices in SOT-23 and SOT-23-6 packages.",
+ "description": "1 ic driver parts for 8V using SOT-23 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when an 8V IC driver in an SMD SOT-23 or SOT-23-6 footprint is required.",
-  "Choose for applications requiring tier A driver IC symbols.",
-  "Verify component compatibility with SOT-23-6 surface-mount land patterns."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SOT-23 land pattern is intended."
  ],
  "avoid_when": [
-  "Avoid when package footprints other than SOT-23 or SOT-23-6 are required.",
-  "Do not use if the design requires non-SMD or through-hole mounting.",
-  "Avoid if operating voltage requirements differ from 8V."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SOT-23."
  ],
  "keywords": [
-  "ic driver",
-  "driver",
-  "ic",
-  "sot-23",
-  "sot-23-6",
-  "8v",
-  "smd",
-  "1edn8550b",
-  "kicad-symbols",
-  "surface mount",
-  "tier a",
   "sot",
+  "driver",
+  "8v",
+  "1edn8550b",
   "fet",
   "single",
   "channel",
@@ -40,7 +32,8 @@
   "inputs",
   "uvlo",
   "8a",
-  "to"
+  "to",
+  "smd"
  ],
  "facts": {
   "package_family": "SOT-23",
@@ -63,7 +56,7 @@
   "tier_counts": {
    "A": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -78,6 +71,6 @@
  "part_ids": [
   "kicad-symbols/Driver_FET/1EDN8550B"
  ],
- "embedding_text": "ic-driver.sot-23.8v | IC Driver | IC driver component cluster for surface-mount 8V devices in SOT-23 and SOT-23-6 packages. | ic driver driver ic sot-23 sot-23-6 8v smd 1edn8550b kicad-symbols surface mount tier a sot fet single channel eicedriver with true differential inputs uvlo 8a to | SOT-23 | 8V",
+ "embedding_text": "ic-driver.sot-23.8v | IC Driver | 1 ic driver parts for 8V using SOT-23 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | sot driver 8v 1edn8550b fet single channel eicedriver with true differential inputs uvlo 8a to smd | SOT-23 | 8V",
  "class": "ic.driver"
 }

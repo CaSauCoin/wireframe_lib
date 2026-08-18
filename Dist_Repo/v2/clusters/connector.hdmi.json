@@ -5,44 +5,34 @@
  "category_path": [
   "Connector"
  ],
- "description": "HDMI connector cluster (19 parts) covering Type A, Mini, and Micro footprints in SMD, through-hole, and unknown mount styles, including manufacturer-specific variants from Amphenol, Molex, Kycon, and Contact Technology.",
+ "description": "19 connector parts using HDMI footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Match the exact HDMI variant footprint needed (Type A, Mini, Micro, or manufacturer-specific)",
-  "Prefer the 3 tier B parts (score 100, HDMI_A_19P_SMD footprint) over the 16 tier C parts",
-  "Confirm required mount style: smd, through_hole, or unknown",
-  "Cross-check source library (kicad-symbols, dist-legacy, chilaboard-altium-library, SparkFun) for trust level"
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a HDMI land pattern is intended."
  ],
  "avoid_when": [
-  "The board needs a non-HDMI connector footprint",
-  "The exact HDMI variant (A vs Mini vs Micro) cannot be confirmed",
-  "Only tier C parts are available and footprint pairing is unverified",
-  "Mount type must be known but is listed as unknown"
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than HDMI."
  ],
  "keywords": [
   "hdmi",
-  "hdmi connector",
-  "hdmi type a",
-  "hdmi mini",
-  "hdmi micro",
-  "smd",
-  "through hole",
-  "molex",
-  "amphenol",
-  "kycon",
-  "contact technology",
-  "19 pin",
-  "right angle",
-  "horizontal",
-  "vertical",
-  "kicad symbols",
   "connector",
   "micro",
+  "molex",
   "pitch",
   "type",
+  "horizontal",
   "pad",
   "mm",
   "pins",
-  "right"
+  "smd",
+  "right",
+  "angle",
+  "sd",
+  "surface",
+  "mount"
  ],
  "facts": {
   "package_family": "HDMI",
@@ -80,7 +70,7 @@
    "B": 3,
    "C": 16
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -129,6 +119,6 @@
   "dist-legacy/HDMI_Micro-D_Molex_46765-1xxx",
   "dist-legacy/HDMI_Micro-D_Molex_46765-2xxx"
  ],
- "embedding_text": "connector.hdmi | Connector | HDMI connector cluster (19 parts) covering Type A, Mini, and Micro footprints in SMD, through-hole, and unknown mount styles, including manufacturer-specific variants from Amphenol, Molex, Kycon, and Contact Technology. | hdmi hdmi connector hdmi type a hdmi mini hdmi micro smd through hole molex amphenol kycon contact technology 19 pin right angle horizontal vertical kicad symbols connector micro pitch type pad mm pins right | HDMI | ",
+ "embedding_text": "connector.hdmi | Connector | 19 connector parts using HDMI footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | hdmi connector micro molex pitch type horizontal pad mm pins smd right angle sd surface mount | HDMI | ",
  "class": "connector"
 }

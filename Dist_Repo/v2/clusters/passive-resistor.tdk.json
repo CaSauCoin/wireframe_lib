@@ -6,38 +6,33 @@
   "Passive",
   "Resistor"
  ],
- "description": "Passive surface-mount resistor cluster containing 18 Tier C parts with TDK footprints sourced from the celestial-altium-library.",
+ "description": "18 passive resistor parts using TDK footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Match the required footprint to TDK land patterns such as CKG57N, SLF, SPM, or VLCF series.",
-  "Verify individual part parameters and ratings since all entries are Tier C records.",
-  "Confirm SMD mounting compatibility with your board assembly."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a TDK land pattern is intended."
  ],
  "avoid_when": [
-  "Through-hole mounting or non-TDK footprints are required.",
-  "The application requires verified Tier A or B parts rather than unreviewed Tier C entries.",
-  "Components other than passive resistors are needed."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than TDK."
  ],
  "keywords": [
   "tdk",
   "passive",
   "resistor",
-  "smd",
-  "surface mount",
-  "ckg57n",
-  "slf10145",
-  "slf12555",
-  "spm3012",
-  "spm6530",
-  "vlcf4024-2",
-  "celestial-altium-library",
   "surface",
   "mount",
   "pad",
   "mm",
   "pitch",
   "pins",
+  "spm3012",
   "lr",
+  "ckg57n",
+  "slf10145",
   "slf10165",
+  "slf12555",
   "slf12565"
  ],
  "facts": {
@@ -70,7 +65,7 @@
   "tier_counts": {
    "C": 18
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
@@ -93,6 +88,6 @@
   "celestial-altium-library/TDK VLS252010CX/TDK_VLS252010CX",
   "celestial-altium-library/TDK VLS252010HBX-1/TDK_VLS252010HBX-1"
  ],
- "embedding_text": "passive-resistor.tdk | Passive Resistor | Passive surface-mount resistor cluster containing 18 Tier C parts with TDK footprints sourced from the celestial-altium-library. | tdk passive resistor smd surface mount ckg57n slf10145 slf12555 spm3012 spm6530 vlcf4024-2 celestial-altium-library surface mount pad mm pitch pins lr slf10165 slf12565 | TDK | ",
+ "embedding_text": "passive-resistor.tdk | Passive Resistor | 18 passive resistor parts using TDK footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | tdk passive resistor surface mount pad mm pitch pins spm3012 lr ckg57n slf10145 slf10165 slf12555 slf12565 | TDK | ",
  "class": "passive.resistor"
 }

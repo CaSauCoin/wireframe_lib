@@ -5,30 +5,21 @@
  "category_path": [
   "IC"
  ],
- "description": "Cluster of surface-mount ICs featuring an SPI interface across SO package family footprints including SO-8, SO_8, SO_8_W, SO_20_W, and SO_28_W.",
+ "description": "33 ic parts for SPI using SO footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when an SPI interface IC is needed in an SMD SO package family footprint.",
-  "Choose based on required footprint variants, such as SO_8, SO-8, SO_8_W, SO_20_W, or SO_28_W.",
-  "Consider quality tiers (Tier A vs. Tier B) and source libraries during part selection."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SO land pattern is intended."
  ],
  "avoid_when": [
-  "The design requires a package family other than SO.",
-  "A through-hole or non-SMD mounting type is required.",
-  "The component requires a non-SPI communication interface."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SO."
  ],
  "keywords": [
-  "ic",
   "spi",
   "so",
-  "smd",
-  "so_8",
-  "so-8",
-  "so_8_w",
-  "so_20_w",
-  "so_28_w",
-  "integrated circuit",
-  "surface mount",
-  "so package",
+  "ic",
   "memory",
   "flash",
   "in",
@@ -40,7 +31,8 @@
   "serial",
   "with",
   "so8w",
-  "interface"
+  "interface",
+  "sop"
  ],
  "facts": {
   "package_family": "SO",
@@ -69,7 +61,7 @@
    "A": 1,
    "B": 32
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -148,6 +140,6 @@
   "chilaboard-altium-library/W25Q64FW_SO8W/W25Q64FW_SO8W",
   "chilaboard-altium-library/W25Q64JV_SO8W/W25Q64JV_SO8W"
  ],
- "embedding_text": "ic.so.spi | IC | Cluster of surface-mount ICs featuring an SPI interface across SO package family footprints including SO-8, SO_8, SO_8_W, SO_20_W, and SO_28_W. | ic spi so smd so_8 so-8 so_8_w so_20_w so_28_w integrated circuit surface mount so package memory flash in package sop8 pin soic an serial with so8w interface | SO | SPI",
+ "embedding_text": "ic.so.spi | IC | 33 ic parts for SPI using SO footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | spi so ic memory flash in package sop8 pin soic an serial with so8w interface sop | SO | SPI",
  "class": "ic"
 }

@@ -6,32 +6,25 @@
   "IC",
   "Interface"
  ],
- "description": "Surface-mount IC interface cluster featuring I2C communication with 5V and 5.5V ratings in a SOIC-24W_7.5x15.4mm_P1.27mm package footprint.",
+ "description": "1 ic interface parts for 5V, I2C, 5.5V using SOIC footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when requiring an IC interface device with I2C support.",
-  "Verify compatibility with SOIC package family and SOIC-24W_7.5x15.4mm_P1.27mm SMD footprint.",
-  "Ensure system voltage targets match 5V or 5.5V facets."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SOIC land pattern is intended."
  ],
  "avoid_when": [
-  "Application requires a package other than SOIC or SMD surface mounting.",
-  "Design operates outside 5V or 5.5V voltage facets.",
-  "Interface bus protocol other than I2C is needed."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SOIC."
  ],
  "keywords": [
-  "ic",
-  "interface",
-  "ic interface",
   "soic",
-  "soic-24w",
   "i2c",
   "5v",
-  "5.5v",
-  "smd",
-  "pca9555d",
-  "kicad-symbols",
-  "soic-24w_7.5x15.4mm_p1.27mm",
+  "interface",
   "io",
   "expander",
+  "pca9555d",
   "expansion",
   "gpio",
   "400khz",
@@ -65,7 +58,7 @@
   "tier_counts": {
    "A": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -80,6 +73,6 @@
  "part_ids": [
   "kicad-symbols/Interface_Expansion/PCA9555D"
  ],
- "embedding_text": "ic-interface.soic.5v.i2c | IC Interface | Surface-mount IC interface cluster featuring I2C communication with 5V and 5.5V ratings in a SOIC-24W_7.5x15.4mm_P1.27mm package footprint. | ic interface ic interface soic soic-24w i2c 5v 5.5v smd pca9555d kicad-symbols soic-24w_7.5x15.4mm_p1.27mm io expander expansion gpio 400khz interrupt 24w 5x15 4mm p1 27mm | SOIC | 5V I2C 5.5V",
+ "embedding_text": "ic-interface.soic.5v.i2c | IC Interface | 1 ic interface parts for 5V, I2C, 5.5V using SOIC footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | soic i2c 5v interface io expander pca9555d expansion gpio 400khz interrupt 24w 5x15 4mm p1 27mm | SOIC | 5V I2C 5.5V",
  "class": "ic.interface"
 }

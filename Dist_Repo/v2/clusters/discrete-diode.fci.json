@@ -6,28 +6,19 @@
   "Discrete",
   "Diode"
  ],
- "description": "Discrete diode cluster containing 1 tier C part with FCI footprints.",
+ "description": "1 discrete diode parts using FCI footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when an FCI package family footprint is needed for a discrete diode.",
-  "Verify pinouts, package dimensions, and mounting requirements independently.",
-  "Check suitability of tier C generated quality data prior to layout."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a FCI land pattern is intended."
  ],
  "avoid_when": [
-  "The PCB layout requires footprint packages outside the FCI family.",
-  "A confirmed mount type is required, as current mount data is unknown.",
-  "Unreviewed tier C part data does not meet project verification standards."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than FCI."
  ],
  "keywords": [
   "fci",
-  "discrete",
-  "diode",
-  "discrete diode",
-  "fci footprint",
-  "fci package",
-  "tier c",
-  "dist-legacy",
-  "discrete.diode",
-  "package family fci",
   "2pin",
   "81mm",
   "pin",
@@ -36,7 +27,9 @@
   "pattern",
   "bare",
   "pitch",
-  "component"
+  "component",
+  "discrete",
+  "diode"
  ],
  "facts": {
   "package_family": "FCI",
@@ -57,12 +50,12 @@
   "tier_counts": {
    "C": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
   "dist-legacy/FCI 06-381-2PIN"
  ],
- "embedding_text": "discrete-diode.fci | Discrete Diode | Discrete diode cluster containing 1 tier C part with FCI footprints. | fci discrete diode discrete diode fci footprint fci package tier c dist-legacy discrete.diode package family fci 2pin 81mm pin package land pattern bare pitch component | FCI | ",
+ "embedding_text": "discrete-diode.fci | Discrete Diode | 1 discrete diode parts using FCI footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | fci 2pin 81mm pin package land pattern bare pitch component discrete diode | FCI | ",
  "class": "discrete.diode"
 }

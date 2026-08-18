@@ -6,28 +6,21 @@
   "Discrete",
   "Transistor"
  ],
- "description": "Discrete transistor cluster containing 2 parts associated with Everlight and Everlight 1414_3535 footprints.",
+ "description": "2 discrete transistor parts using Everlight footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Use when requiring a discrete transistor with an Everlight or Everlight 1414_3535 footprint.",
-  "Verify footprint and surface-mount compatibility for the intended layout.",
-  "Review tier C quality classification and generated status prior to use."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a Everlight land pattern is intended."
  ],
  "avoid_when": [
-  "The PCB design requires footprints other than Everlight or Everlight 1414_3535.",
-  "Higher quality tier parts than tier C are required.",
-  "Planner-visible parts are needed for the design."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than Everlight."
  ],
  "keywords": [
-  "discrete transistor",
   "everlight",
-  "everlight 1414_3535",
-  "discrete.transistor",
-  "smd",
-  "surface mount",
   "transistor",
   "discrete",
-  "footprint",
-  "tier c",
   "surface",
   "mount",
   "package",
@@ -37,6 +30,8 @@
   "bare",
   "with",
   "layout",
+  "smd",
+  "footprint",
   "pad",
   "mm"
  ],
@@ -62,13 +57,13 @@
   "tier_counts": {
    "C": 2
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
   "dist-legacy/Everlight 1414_3535",
   "celestial-altium-library/Everlight 1414_3535/Everlight_1414_3535"
  ],
- "embedding_text": "discrete-transistor.everlight | Discrete Transistor | Discrete transistor cluster containing 2 parts associated with Everlight and Everlight 1414_3535 footprints. | discrete transistor everlight everlight 1414_3535 discrete.transistor smd surface mount transistor discrete footprint tier c surface mount package land pattern pin bare with layout pad mm | Everlight | ",
+ "embedding_text": "discrete-transistor.everlight | Discrete Transistor | 2 discrete transistor parts using Everlight footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | everlight transistor discrete surface mount package land pattern pin bare with layout smd footprint pad mm | Everlight | ",
  "class": "discrete.transistor"
 }

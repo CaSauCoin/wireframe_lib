@@ -5,27 +5,20 @@
  "category_path": [
   "IC"
  ],
- "description": "IC cluster containing 3 tier-C parts associated with WN100 package family and WN100_L, WN100_M, and WN100_N footprints.",
+ "description": "3 ic parts using WN100 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Use when a footprint of WN100_L, WN100_M, or WN100_N is required.",
-  "Verify part specifications for tier C legacy distribution entries.",
-  "Ensure compatibility with WN100 package family."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a WN100 land pattern is intended."
  ],
  "avoid_when": [
-  "The board layout requires a footprint other than WN100_L, WN100_M, or WN100_N.",
-  "Higher quality tier parts than tier C are required.",
-  "A known mounting style is required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than WN100."
  ],
  "keywords": [
-  "ic",
   "wn100",
-  "wn100_l",
-  "wn100_m",
-  "wn100_n",
-  "integrated circuit",
-  "wn100 package",
-  "tier c",
-  "dist-legacy",
+  "ic",
   "pad",
   "mm",
   "pitch",
@@ -52,7 +45,7 @@
   "tier_counts": {
    "C": 3
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
@@ -60,6 +53,6 @@
   "dist-legacy/WN100_M",
   "dist-legacy/WN100_N"
  ],
- "embedding_text": "ic.wn100 | IC | IC cluster containing 3 tier-C parts associated with WN100 package family and WN100_L, WN100_M, and WN100_N footprints. | ic wn100 wn100_l wn100_m wn100_n integrated circuit wn100 package tier c dist-legacy pad mm pitch pins | WN100 | ",
+ "embedding_text": "ic.wn100 | IC | 3 ic parts using WN100 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | wn100 ic pad mm pitch pins | WN100 | ",
  "class": "ic"
 }

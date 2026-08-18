@@ -6,34 +6,22 @@
   "Passive",
   "Resistor"
  ],
- "description": "A cluster of 8 surface-mount passive resistor parts featuring I2C interfaces in TSSOP-14, TSSOP-16, and TSSOP-20 footprints.",
+ "description": "8 passive resistor parts for I2C using TSSOP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select based on the required pin count (14, 16, or 20 pins) and TSSOP footprint dimensions.",
-  "Verify compatibility with I2C control interface requirements.",
-  "Match the specific part model such as AD5253, AD5254, AD5280, AD5282, or MCP4431."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a TSSOP land pattern is intended."
  ],
  "avoid_when": [
-  "The PCB design requires through-hole mounting instead of SMD.",
-  "A control interface other than I2C is required.",
-  "The design requires package footprints other than TSSOP-14, TSSOP-16, or TSSOP-20."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than TSSOP."
  ],
  "keywords": [
   "tssop",
-  "i2c",
-  "passive resistor",
-  "digital potentiometer",
-  "smd",
-  "tssop-14",
-  "tssop-16",
-  "tssop-20",
-  "ad5253",
-  "ad5254",
-  "ad5280",
-  "ad5282",
-  "mcp4431",
-  "kicad-symbols",
   "potentiometer",
   "digital",
+  "i2c",
   "p0",
   "65mm",
   "so",
@@ -41,7 +29,11 @@
   "resistor",
   "4x6",
   "5mm",
-  "st"
+  "st",
+  "position",
+  "output",
+  "interface",
+  "xxxx"
  ],
  "facts": {
   "package_family": "TSSOP",
@@ -66,7 +58,7 @@
   "tier_counts": {
    "A": 8
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -120,6 +112,6 @@
   "kicad-symbols/Potentiometer_Digital/MCP4451-xxxx-ST",
   "kicad-symbols/Potentiometer_Digital/MCP4461-xxxx-ST"
  ],
- "embedding_text": "passive-resistor.tssop.i2c | Passive Resistor | A cluster of 8 surface-mount passive resistor parts featuring I2C interfaces in TSSOP-14, TSSOP-16, and TSSOP-20 footprints. | tssop i2c passive resistor digital potentiometer smd tssop-14 tssop-16 tssop-20 ad5253 ad5254 ad5280 ad5282 mcp4431 kicad-symbols potentiometer digital p0 65mm so passive resistor 4x6 5mm st | TSSOP | I2C",
+ "embedding_text": "passive-resistor.tssop.i2c | Passive Resistor | 8 passive resistor parts for I2C using TSSOP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | tssop potentiometer digital i2c p0 65mm so passive resistor 4x6 5mm st position output interface xxxx | TSSOP | I2C",
  "class": "passive.resistor"
 }

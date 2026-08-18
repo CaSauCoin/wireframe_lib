@@ -6,32 +6,20 @@
   "IC",
   "Sensor"
  ],
- "description": "Cluster of 3 Tier A IC temperature sensor parts in package family D offering SMD and through-hole mounting with D_DO-34_SOD68_P7.62mm_Horizontal and D_MiniMELF footprints.",
+ "description": "3 ic sensor parts using D footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when seeking IC temperature sensor parts in the D package family.",
-  "Choose between surface-mount (SMD) and through-hole mounting types.",
-  "Select between KTY83, KTY84, or KTY85 parts based on required footprint style."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a D land pattern is intended."
  ],
  "avoid_when": [
-  "Do not use if the board design requires package families other than D.",
-  "Avoid when neither SMD nor through-hole D footprints are suitable.",
-  "Avoid if parts other than KTY83, KTY84, or KTY85 sensor ICs are needed."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than D."
  ],
  "keywords": [
-  "ic sensor",
-  "sensor",
-  "ic",
-  "temperature sensor",
-  "d_minimelf",
-  "d_do-34_sod68_p7.62mm_horizontal",
-  "smd",
-  "through_hole",
-  "kty83",
-  "kty84",
-  "kty85",
-  "package family d",
-  "kicad-symbols",
   "temperature",
+  "sensor",
   "silicon",
   "sod68",
   "series",
@@ -41,7 +29,11 @@
   "62mm",
   "horizontal",
   "polarized",
-  "p7"
+  "ic",
+  "kty83",
+  "p7",
+  "axial",
+  "pin"
  ],
  "facts": {
   "package_family": "D",
@@ -64,7 +56,7 @@
   "tier_counts": {
    "A": 3
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -97,6 +89,6 @@
   "kicad-symbols/Sensor_Temperature/KTY84",
   "kicad-symbols/Sensor_Temperature/KTY85"
  ],
- "embedding_text": "ic-sensor.d | IC Sensor | Cluster of 3 Tier A IC temperature sensor parts in package family D offering SMD and through-hole mounting with D_DO-34_SOD68_P7.62mm_Horizontal and D_MiniMELF footprints. | ic sensor sensor ic temperature sensor d_minimelf d_do-34_sod68_p7.62mm_horizontal smd through_hole kty83 kty84 kty85 package family d kicad-symbols temperature silicon sod68 series diode sensors do 62mm horizontal polarized p7 | D | ",
+ "embedding_text": "ic-sensor.d | IC Sensor | 3 ic sensor parts using D footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | temperature sensor silicon sod68 series diode sensors do 62mm horizontal polarized ic kty83 p7 axial pin | D | ",
  "class": "ic.sensor"
 }

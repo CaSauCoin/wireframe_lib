@@ -6,30 +6,21 @@
   "Passive",
   "Resistor"
  ],
- "description": "Through-hole passive resistor cluster containing 5 tier C parts across LT package family footprints including LT_AX025, LT_AX04, LT_C10, LT_C6, and LT_C7.",
+ "description": "5 passive resistor parts using LT footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select based on the required LT footprint variant such as LT_AX025, LT_AX04, LT_C10, LT_C6, or LT_C7.",
-  "Verify through-hole mounting compatibility with your board design.",
-  "Inspect part details directly as all entries are tier C with generated review status."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a LT land pattern is intended."
  ],
  "avoid_when": [
-  "Surface-mount (SMD) components are required instead of through-hole.",
-  "The board layout requires packages or footprints outside the LT family.",
-  "Pre-verified or higher quality tier parts (Tier A or B) are strictly required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than LT."
  ],
  "keywords": [
+  "lt",
   "passive",
   "resistor",
-  "passive.resistor",
-  "lt",
-  "through_hole",
-  "through-hole",
-  "lt_ax025",
-  "lt_ax04",
-  "lt_c10",
-  "lt_c6",
-  "lt_c7",
-  "chilaboard-altium-library",
   "ax025",
   "through",
   "hole",
@@ -65,7 +56,7 @@
   "tier_counts": {
    "C": 5
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
@@ -75,6 +66,6 @@
   "chilaboard-altium-library/LT_C6/LT_C6",
   "chilaboard-altium-library/LT_C7/LT_C7"
  ],
- "embedding_text": "passive-resistor.lt | Passive Resistor | Through-hole passive resistor cluster containing 5 tier C parts across LT package family footprints including LT_AX025, LT_AX04, LT_C10, LT_C6, and LT_C7. | passive resistor passive.resistor lt through_hole through-hole lt_ax025 lt_ax04 lt_c10 lt_c6 lt_c7 chilaboard-altium-library ax025 through hole pad mm pitch pins ax04 c10 c6 c7 | LT | ",
+ "embedding_text": "passive-resistor.lt | Passive Resistor | 5 passive resistor parts using LT footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | lt passive resistor ax025 through hole pad mm pitch pins ax04 c10 c6 c7 | LT | ",
  "class": "passive.resistor"
 }

@@ -6,28 +6,20 @@
   "IC",
   "RF"
  ],
- "description": "RF IC cluster containing surface-mount components in the Garmin package family specified for 3.6V operation.",
+ "description": "1 ic rf parts for 3.6V using Garmin footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select for 3.6V surface-mount RF IC applications.",
-  "Use when requiring the Garmin package family.",
-  "Verify footprint match for Garmin_M8-35_9.8x14.0mm_Layout6x6_P1.5mm."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a Garmin land pattern is intended."
  ],
  "avoid_when": [
-  "The application requires an operating voltage other than 3.6V.",
-  "A package family other than Garmin is needed.",
-  "Through-hole mounting is required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than Garmin."
  ],
  "keywords": [
-  "ic",
   "rf",
   "garmin",
-  "3.6v",
-  "smd",
-  "d52mxxm8",
-  "ic.rf",
-  "kicad-symbols",
-  "garmin_m8-35_9.8x14.0mm_layout6x6_p1.5mm",
-  "rf ic",
   "module",
   "soc",
   "6v",
@@ -40,7 +32,8 @@
   "nrf52",
   "canada",
   "dynastream",
-  "nordic"
+  "nordic",
+  "d52mxxm8"
  ],
  "facts": {
   "package_family": "Garmin",
@@ -63,7 +56,7 @@
   "tier_counts": {
    "B": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -78,6 +71,6 @@
  "part_ids": [
   "kicad-symbols/RF_Module/D52MxxM8"
  ],
- "embedding_text": "ic-rf.garmin.3-6v | IC RF | RF IC cluster containing surface-mount components in the Garmin package family specified for 3.6V operation. | ic rf garmin 3.6v smd d52mxxm8 ic.rf kicad-symbols garmin_m8-35_9.8x14.0mm_layout6x6_p1.5mm rf ic module soc 6v m8 radio ant bluetooth ble d52 nrf52 canada dynastream nordic | Garmin | 3.6V",
+ "embedding_text": "ic-rf.garmin.3-6v | IC RF | 1 ic rf parts for 3.6V using Garmin footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | rf garmin module soc 6v m8 radio ant bluetooth ble d52 nrf52 canada dynastream nordic d52mxxm8 | Garmin | 3.6V",
  "class": "ic.rf"
 }

@@ -6,32 +6,21 @@
   "IC",
   "Logic"
  ],
- "description": "Surface-mount logic IC cluster for 3.6V operation in QFN package family with Texas_R-PUQFN-N12 footprint, including level translator parts TXB0304RUT and TXBN0304RUT.",
+ "description": "2 ic logic parts for 3.6V using QFN footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when designing with 3.6V surface-mount logic or level translator ICs requiring a QFN package.",
-  "Confirm compatibility with the Texas_R-PUQFN-N12 footprint land pattern.",
-  "Choose between TXB0304RUT and TXBN0304RUT based on specific level translator part requirements."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a QFN land pattern is intended."
  ],
  "avoid_when": [
-  "The design requires through-hole mounting or a package family other than QFN.",
-  "Operating voltages other than 3.6V are required.",
-  "The PCB layout does not support the Texas_R-PUQFN-N12 footprint."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than QFN."
  ],
  "keywords": [
-  "ic.logic",
-  "logic ic",
-  "3.6v",
-  "qfn",
-  "smd",
-  "texas_r-puqfn-n12",
-  "puqfn",
-  "txb0304rut",
-  "txbn0304rut",
-  "level translator",
-  "logic level translator",
-  "kicad-symbols",
   "6v",
   "texas",
+  "puqfn",
   "logic",
   "level",
   "n12",
@@ -41,7 +30,10 @@
   "voltage",
   "translator",
   "auto",
-  "direction"
+  "direction",
+  "sensing",
+  "aport",
+  "bport"
  ],
  "facts": {
   "package_family": "QFN",
@@ -64,7 +56,7 @@
   "tier_counts": {
    "A": 2
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -88,6 +80,6 @@
   "kicad-symbols/Logic_LevelTranslator/TXB0304RUT",
   "kicad-symbols/Logic_LevelTranslator/TXBN0304RUT"
  ],
- "embedding_text": "ic-logic.qfn.3-6v | IC Logic | Surface-mount logic IC cluster for 3.6V operation in QFN package family with Texas_R-PUQFN-N12 footprint, including level translator parts TXB0304RUT and TXBN0304RUT. | ic.logic logic ic 3.6v qfn smd texas_r-puqfn-n12 puqfn txb0304rut txbn0304rut level translator logic level translator kicad-symbols 6v texas logic level n12 leveltranslator bit bidirectional voltage translator auto direction | QFN | 3.6V",
+ "embedding_text": "ic-logic.qfn.3-6v | IC Logic | 2 ic logic parts for 3.6V using QFN footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | 6v texas puqfn logic level n12 leveltranslator bit bidirectional voltage translator auto direction sensing aport bport | QFN | 3.6V",
  "class": "ic.logic"
 }

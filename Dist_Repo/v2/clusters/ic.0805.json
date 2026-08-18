@@ -5,31 +5,19 @@
  "category_path": [
   "IC"
  ],
- "description": "Cluster of 18 integrated circuit parts utilizing 0805 package family footprints with surface-mount termination.",
+ "description": "18 ic parts using 0805 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select based on specific footprint pattern such as Anaren_0805_2012Metric-6, CAPC2012, or RES_0805.",
-  "Filter parts by quality tier, which includes 3 tier B parts and 15 tier C parts.",
-  "Confirm surface-mount (smd) land pattern compatibility for the PCB design."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a 0805 land pattern is intended."
  ],
  "avoid_when": [
-  "The design requires package sizes other than 0805.",
-  "Tier A quality parts are strictly required.",
-  "Surface-mount (smd) footprints are not suitable for the target board assembly."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than 0805."
  ],
  "keywords": [
   "ic",
-  "0805",
-  "smd",
-  "2012metric",
-  "anaren_0805_2012metric-6",
-  "capc2012x135n",
-  "capc2012x140n",
-  "capc2012x145n",
-  "res_0805",
-  "fb_0805",
-  "resc2012x65n",
-  "dc4759j5020ahf-1",
-  "pd4859j5050s2hf",
   "pad",
   "pins",
   "mm",
@@ -37,6 +25,10 @@
   "anaren",
   "rf",
   "coupler",
+  "2012metric",
+  "capc2012x135n",
+  "capc2012x140n",
+  "capc2012x145n",
   "capc2012x70n",
   "capc2012x94n",
   "capc2012x95n",
@@ -76,7 +68,7 @@
    "B": 3,
    "C": 15
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -124,6 +116,6 @@
   "dist-legacy/WE-CNSW_0805",
   "dist-legacy/Anaren_0805_2012Metric-6"
  ],
- "embedding_text": "ic.0805 | IC | Cluster of 18 integrated circuit parts utilizing 0805 package family footprints with surface-mount termination. | ic 0805 smd 2012metric anaren_0805_2012metric-6 capc2012x135n capc2012x140n capc2012x145n res_0805 fb_0805 resc2012x65n dc4759j5020ahf-1 pd4859j5050s2hf pad pins mm pitch anaren rf coupler capc2012x70n capc2012x94n capc2012x95n ckst252012 | 0805 | ",
+ "embedding_text": "ic.0805 | IC | 18 ic parts using 0805 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | ic pad pins mm pitch anaren rf coupler 2012metric capc2012x135n capc2012x140n capc2012x145n capc2012x70n capc2012x94n capc2012x95n ckst252012 | 0805 | ",
  "class": "ic"
 }

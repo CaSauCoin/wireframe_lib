@@ -6,30 +6,22 @@
   "Passive",
   "Capacitor"
  ],
- "description": "Cluster of 620 passive capacitor parts featuring SMD and unknown mounting types with CAP, CAP-ALU-SMD, and 1210 footprint variants.",
+ "description": "620 passive capacitor parts using CAP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Verify footprint compatibility with CAP, CAP-ALU-SMD, or 1210 variants.",
-  "Prioritize tier B parts over tier C entries for higher library quality.",
-  "Confirm mounting compatibility between SMD and unspecified mount types."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a CAP land pattern is intended."
  ],
  "avoid_when": [
-  "A package family or footprint other than CAP is required.",
-  "Through-hole mounting is strictly required.",
-  "A tier A verified part is required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than CAP."
  ],
  "keywords": [
-  "passive",
-  "capacitor",
   "cap",
-  "smd",
-  "cap-alu-smd",
-  "surface mount",
-  "passive capacitor",
-  "1210",
-  "0402",
-  "0201",
-  "01005",
+  "capacitor",
   "alsmd",
+  "passive",
   "mm",
   "elec",
   "3mm",
@@ -39,6 +31,7 @@
   "aluminum",
   "5mm",
   "electrolytic",
+  "smd",
   "pitch",
   "30mm"
  ],
@@ -75,7 +68,7 @@
    "B": 267,
    "C": 353
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -741,6 +734,6 @@
   "celestial-altium-library/CAP POL 1411_3528/CAP_POL_1411_3528",
   "celestial-altium-library/CAP POL 2917_7343/CAP_POL_2917_7343"
  ],
- "embedding_text": "passive-capacitor.cap | Passive Capacitor | Cluster of 620 passive capacitor parts featuring SMD and unknown mounting types with CAP, CAP-ALU-SMD, and 1210 footprint variants. | passive capacitor cap smd cap-alu-smd surface mount passive capacitor 1210 0402 0201 01005 alsmd mm elec 3mm poly surface mount aluminum 5mm electrolytic pitch 30mm | CAP | ",
+ "embedding_text": "passive-capacitor.cap | Passive Capacitor | 620 passive capacitor parts using CAP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | cap capacitor alsmd passive mm elec 3mm poly surface mount aluminum 5mm electrolytic smd pitch 30mm | CAP | ",
  "class": "passive.capacitor"
 }

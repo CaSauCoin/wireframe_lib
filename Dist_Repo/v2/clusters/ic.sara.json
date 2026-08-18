@@ -5,31 +5,21 @@
  "category_path": [
   "IC"
  ],
- "description": "IC component cluster containing 1 tier C part with a SARA-XX footprint in the SARA package family.",
+ "description": "1 ic parts using SARA footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Verify footprint compatibility with SARA-XX land patterns.",
-  "Check part details for the tier C entry from dist-legacy.",
-  "Confirm mounting parameters since mount type is listed as unknown."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SARA land pattern is intended."
  ],
  "avoid_when": [
-  "The design requires a package footprint other than SARA-XX.",
-  "Tier C quality tier or unknown mounting specifications are unsuitable for the application.",
-  "A planner-visible part or verified review status is required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SARA."
  ],
  "keywords": [
   "sara",
-  "sara-xx",
-  "ic",
-  "ic sara",
-  "sara package",
-  "sara footprint",
-  "sara-xx footprint",
-  "package family sara",
-  "dist-legacy",
-  "tier c",
-  "unknown mount",
-  "generated status",
   "xx",
+  "ic",
   "pad",
   "mm",
   "pitch",
@@ -54,12 +44,12 @@
   "tier_counts": {
    "C": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
   "dist-legacy/SARA-XX"
  ],
- "embedding_text": "ic.sara | IC | IC component cluster containing 1 tier C part with a SARA-XX footprint in the SARA package family. | sara sara-xx ic ic sara sara package sara footprint sara-xx footprint package family sara dist-legacy tier c unknown mount generated status xx pad mm pitch pins | SARA | ",
+ "embedding_text": "ic.sara | IC | 1 ic parts using SARA footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | sara xx ic pad mm pitch pins | SARA | ",
  "class": "ic"
 }

@@ -5,42 +5,34 @@
  "category_path": [
   "Connector"
  ],
- "description": "Cluster of 25 USB connector parts (Type-A, Type-B, Mini-B, Micro-B, Micro-AB) covering SMD, through-hole, and unspecified mount footprints; all entries are currently tier C (generated, unreviewed).",
+ "description": "25 connector parts using USB footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Match the exact USB footprint variant (A, B, Mini-B, Micro-B, Micro-AB) to the required connector",
-  "Confirm mount type (SMD vs through-hole) matches the board build",
-  "Cross-check part details independently since all entries are tier C with no representative parts listed"
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a USB land pattern is intended."
  ],
  "avoid_when": [
-  "A verified or higher-tier part is required and only tier C entries exist here",
-  "The exact footprint or pin mapping cannot be confirmed from available data",
-  "Electrical ratings for the target USB interface are needed but not stated by the part"
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than USB."
  ],
  "keywords": [
   "usb",
-  "usb connector",
-  "usb type a",
-  "usb type b",
-  "usb mini-b",
-  "usb micro-b",
-  "usb micro-ab",
-  "usb 3.0",
-  "smd",
-  "through hole",
-  "molex",
-  "fci",
-  "tyco",
-  "montaje",
   "connector",
-  "tier c",
   "ra",
+  "smd",
   "pad",
   "mm",
   "pitch",
   "pins",
   "mini",
   "rec",
-  "thd"
+  "thd",
+  "micro",
+  "plg",
+  "montaje",
+  "molex",
+  "through"
  ],
  "facts": {
   "package_family": "USB",
@@ -75,7 +67,7 @@
   "tier_counts": {
    "C": 25
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
@@ -105,6 +97,6 @@
   "chilaboard-altium-library/USB_MINI_B5_SMD/USB_MINI_B5_SMD",
   "chilaboard-altium-library/USB_MINI_B5_THD/USB_MINI_B5_THD"
  ],
- "embedding_text": "connector.usb | Connector | Cluster of 25 USB connector parts (Type-A, Type-B, Mini-B, Micro-B, Micro-AB) covering SMD, through-hole, and unspecified mount footprints; all entries are currently tier C (generated, unreviewed). | usb usb connector usb type a usb type b usb mini-b usb micro-b usb micro-ab usb 3.0 smd through hole molex fci tyco montaje connector tier c ra pad mm pitch pins mini rec thd | USB | ",
+ "embedding_text": "connector.usb | Connector | 25 connector parts using USB footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | usb connector ra smd pad mm pitch pins mini rec thd micro plg montaje molex through | USB | ",
  "class": "connector"
 }

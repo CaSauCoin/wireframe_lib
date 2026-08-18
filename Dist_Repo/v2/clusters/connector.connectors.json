@@ -5,32 +5,20 @@
  "category_path": [
   "Connector"
  ],
- "description": "Generic connector cluster with 4 tier-C, review-generated parts spanning four distinct Connectors footprints (4, 16, 20, and 24 positions), all sourced from dist-legacy with no planner-visible or representative entries.",
+ "description": "4 connector parts using Connectors footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Match the required pin/position count to the exact footprint: Connectors-4, -16, -20, or -24",
-  "All 4 parts are tier C and status 'generated' — verify pinout and pitch against a datasheet before use",
-  "No representative or planner-visible parts exist in this cluster, so manually confirm the chosen entry"
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a Connectors land pattern is intended."
  ],
  "avoid_when": [
-  "The needed pin/position count doesn't match 4, 16, 20, or 24",
-  "A verified (non-generated, higher-tier) part is required",
-  "The mounting style must be known in advance (mount is unspecified/unknown for all entries)"
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than Connectors."
  ],
  "keywords": [
-  "connector",
   "connectors",
-  "generic connector",
-  "connectors-4",
-  "connectors-16",
-  "connectors-20",
-  "connectors-24",
-  "4 position",
-  "16 position",
-  "20 position",
-  "24 position",
-  "dist-legacy",
-  "tier c",
-  "generated part",
+  "connector",
   "pad",
   "mm",
   "pitch",
@@ -58,7 +46,7 @@
   "tier_counts": {
    "C": 4
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
@@ -67,6 +55,6 @@
   "dist-legacy/Connectors-24",
   "dist-legacy/Connectors-4"
  ],
- "embedding_text": "connector.connectors | Connector | Generic connector cluster with 4 tier-C, review-generated parts spanning four distinct Connectors footprints (4, 16, 20, and 24 positions), all sourced from dist-legacy with no planner-visible or representative entries. | connector connectors generic connector connectors-4 connectors-16 connectors-20 connectors-24 4 position 16 position 20 position 24 position dist-legacy tier c generated part pad mm pitch pins | Connectors | ",
+ "embedding_text": "connector.connectors | Connector | 4 connector parts using Connectors footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | connectors connector pad mm pitch pins | Connectors | ",
  "class": "connector"
 }

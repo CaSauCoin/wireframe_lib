@@ -6,28 +6,20 @@
   "Electromechanical",
   "Relay"
  ],
- "description": "Electromechanical relay cluster containing 2 surface-mount parts in the SO package family with SO-4_4.4x4.3mm_P2.54mm footprint support.",
+ "description": "2 electromechanical relay parts using SO footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when requiring surface-mount electromechanical relays in an SO package.",
-  "Confirm board layout match with the SO-4_4.4x4.3mm_P2.54mm footprint.",
-  "Choose between Tier A parts AQY280S and AQY284S."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SO land pattern is intended."
  ],
  "avoid_when": [
-  "Through-hole mounting is required instead of surface mount.",
-  "The layout requires package families other than SO.",
-  "Footprints other than SO-4_4.4x4.3mm_P2.54mm are needed."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SO."
  ],
  "keywords": [
-  "electromechanical",
-  "relay",
   "so",
-  "smd",
-  "so-4",
-  "aqy280s",
-  "aqy284s",
-  "so-4_4.4x4.3mm_p2.54mm",
-  "electromechanical relay",
-  "so package",
+  "relay",
   "mosfet",
   "solidstate",
   "solid",
@@ -40,7 +32,8 @@
   "soic",
   "output",
   "photorelay",
-  "form"
+  "form",
+  "electromechanical"
  ],
  "facts": {
   "package_family": "SO",
@@ -61,7 +54,7 @@
   "tier_counts": {
    "A": 2
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -85,6 +78,6 @@
   "kicad-symbols/Relay_SolidState/AQY280S",
   "kicad-symbols/Relay_SolidState/AQY284S"
  ],
- "embedding_text": "electromechanical-relay.so | Electromechanical Relay | Electromechanical relay cluster containing 2 surface-mount parts in the SO package family with SO-4_4.4x4.3mm_P2.54mm footprint support. | electromechanical relay so smd so-4 aqy280s aqy284s so-4_4.4x4.3mm_p2.54mm electromechanical relay so package mosfet solidstate solid state photo 4x4 3mm p2 54mm soic output photorelay form | SO | ",
+ "embedding_text": "electromechanical-relay.so | Electromechanical Relay | 2 electromechanical relay parts using SO footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | so relay mosfet solidstate solid state photo 4x4 3mm p2 54mm soic output photorelay form electromechanical | SO | ",
  "class": "electromechanical.relay"
 }

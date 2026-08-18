@@ -5,28 +5,20 @@
  "category_path": [
   "IC"
  ],
- "description": "Integrated circuit cluster containing one tier C part using the DB50FSW footprint and package family.",
+ "description": "1 ic parts using DB50FSW footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Use only when the PCB design requires a DB50FSW footprint.",
-  "Verify tier C part details and source data prior to PCB layout.",
-  "Confirm land pattern and pin mapping given the unknown mounting type."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a DB50FSW land pattern is intended."
  ],
  "avoid_when": [
-  "The layout requires a package family other than DB50FSW.",
-  "Tier C quality tier parts without verified specs are not acceptable.",
-  "Exact electrical parameters or pinout configurations are not confirmed."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than DB50FSW."
  ],
  "keywords": [
   "db50fsw",
   "ic",
-  "integrated circuit",
-  "db50fsw footprint",
-  "db50fsw package",
-  "package family db50fsw",
-  "tier c",
-  "dist-legacy",
-  "unknown mount",
-  "land pattern",
   "pad",
   "mm",
   "pitch",
@@ -51,12 +43,12 @@
   "tier_counts": {
    "C": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
   "dist-legacy/DB50FSW"
  ],
- "embedding_text": "ic.db50fsw | IC | Integrated circuit cluster containing one tier C part using the DB50FSW footprint and package family. | db50fsw ic integrated circuit db50fsw footprint db50fsw package package family db50fsw tier c dist-legacy unknown mount land pattern pad mm pitch pins | DB50FSW | ",
+ "embedding_text": "ic.db50fsw | IC | 1 ic parts using DB50FSW footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | db50fsw ic pad mm pitch pins | DB50FSW | ",
  "class": "ic"
 }

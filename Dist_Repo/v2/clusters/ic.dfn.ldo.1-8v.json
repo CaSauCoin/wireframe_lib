@@ -5,33 +5,23 @@
  "category_path": [
   "IC"
  ],
- "description": "Cluster of 24 surface-mount 1.8V LDO voltage regulator ICs available in DFN packages.",
+ "description": "24 ic parts for LDO, 1.8V using DFN footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when needing a 1.8V surface-mount LDO regulator in a DFN package.",
-  "Check exact DFN footprint variant and exposed pad dimensions for the target part.",
-  "Prefer tier A parts over tier B entries when evaluating options."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a DFN land pattern is intended."
  ],
  "avoid_when": [
-  "Do not use if a package type other than DFN is required.",
-  "Avoid when a regulated voltage other than 1.8V is needed.",
-  "Avoid if non-SMD or through-hole mounting is required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than DFN."
  ],
  "keywords": [
-  "ic",
-  "ldo",
-  "1.8v",
   "dfn",
-  "smd",
-  "voltage regulator",
-  "dfn-8-1ep",
-  "dfn-6-1ep",
-  "dfn-12-1ep",
-  "dfn-16-1ep",
-  "alternate-kicad-library",
-  "linear regulator",
   "voltage",
   "8v",
   "regulator",
+  "ldo",
   "low",
   "dropout",
   "akl",
@@ -40,7 +30,9 @@
   "library",
   "1ep",
   "p0",
-  "5mm"
+  "5mm",
+  "vreg",
+  "pmic"
  ],
  "facts": {
   "package_family": "DFN",
@@ -72,7 +64,7 @@
    "A": 21,
    "B": 3
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -142,6 +134,6 @@
   "Alternate-KiCad-Library/Voltage_Regulator_AKL/AP7332-1828FM",
   "Alternate-KiCad-Library/Voltage_Regulator_AKL/AP7332-1830FM"
  ],
- "embedding_text": "ic.dfn.ldo.1-8v | IC | Cluster of 24 surface-mount 1.8V LDO voltage regulator ICs available in DFN packages. | ic ldo 1.8v dfn smd voltage regulator dfn-8-1ep dfn-6-1ep dfn-12-1ep dfn-16-1ep alternate-kicad-library linear regulator voltage 8v regulator low dropout akl alternate kicad library 1ep p0 5mm | DFN | LDO 1.8V",
+ "embedding_text": "ic.dfn.ldo.1-8v | IC | 24 ic parts for LDO, 1.8V using DFN footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | dfn voltage 8v regulator ldo low dropout akl alternate kicad library 1ep p0 5mm vreg pmic | DFN | LDO 1.8V",
  "class": "ic"
 }

@@ -6,42 +6,34 @@
   "Discrete",
   "FET"
  ],
- "description": "Discrete FET component cluster containing 695 surface-mount and through-hole parts in TO packages across quality tiers A, B, and C.",
+ "description": "695 discrete fet parts using TO footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select based on required mounting style such as surface-mount or through-hole.",
-  "Choose specific TO package footprint options like TO-220, TO-247, TO-252, or TO-263.",
-  "Prefer higher quality tier entries such as Tier A parts."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a TO land pattern is intended."
  ],
  "avoid_when": [
-  "The board design requires package families other than TO.",
-  "The circuit design does not require a discrete FET.",
-  "Neither surface-mount nor through-hole TO footprint variants fit layout constraints."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than TO."
  ],
  "keywords": [
-  "discrete",
-  "fet",
-  "discrete fet",
   "to",
-  "to package",
-  "smd",
-  "through-hole",
-  "to-220",
-  "to-247",
-  "to-252",
-  "to-263",
-  "to-268",
-  "to-264",
-  "to-92",
-  "kicad",
   "igbt",
   "transistor",
   "vertical",
+  "fet",
+  "discrete",
   "akl",
   "alternate",
+  "kicad",
   "library",
   "rm",
   "gce",
-  "45mm"
+  "45mm",
+  "600v",
+  "650v",
+  "d2pak"
  ],
  "facts": {
   "package_family": "TO",
@@ -77,7 +69,7 @@
    "B": 3,
    "C": 650
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -818,6 +810,6 @@
   "Alternate-KiCad-Library/Transistor_IGBT_AKL/STGWT60V60DF",
   "Alternate-KiCad-Library/Transistor_IGBT_AKL/IXXQ30N60B3M"
  ],
- "embedding_text": "discrete-fet.to | Discrete FET | Discrete FET component cluster containing 695 surface-mount and through-hole parts in TO packages across quality tiers A, B, and C. | discrete fet discrete fet to to package smd through-hole to-220 to-247 to-252 to-263 to-268 to-264 to-92 kicad igbt transistor vertical akl alternate library rm gce 45mm | TO | ",
+ "embedding_text": "discrete-fet.to | Discrete FET | 695 discrete fet parts using TO footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | to igbt transistor vertical fet discrete akl alternate kicad library rm gce 45mm 600v 650v d2pak | TO | ",
  "class": "discrete.fet"
 }

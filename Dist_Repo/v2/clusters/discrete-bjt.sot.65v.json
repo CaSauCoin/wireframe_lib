@@ -6,36 +6,22 @@
   "Discrete",
   "BJT"
  ],
- "description": "Cluster of 38 SMD BJTs rated for the 65V facet, packaged in SOT footprints (SOT-363/SC-70-6, SOT-323/SC-70, SOT-416), sourced from kicad-symbols and Alternate-KiCad-Library.",
+ "description": "38 discrete bjt parts for 65V using SOT footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Match the exact footprint needed: SOT-363_SC-70-6, SOT-323_SC-70, or SOT-416",
-  "Prefer tier A parts (35 of 38 in this cluster) over tier B",
-  "Verify the 65V facet satisfies your circuit's voltage requirement",
-  "Check the part's source (kicad-symbols vs Alternate-KiCad-Library) if provenance matters"
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SOT land pattern is intended."
  ],
  "avoid_when": [
-  "Circuit requires a voltage rating not covered by the 65V facet",
-  "PCB layout needs a footprint other than SOT-363_SC-70-6, SOT-323_SC-70, or SOT-416",
-  "A through-hole or non-SOT package is required",
-  "Symbol-footprint pairing needs verified review beyond the current generated status"
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SOT."
  ],
  "keywords": [
-  "bjt",
-  "transistor",
-  "discrete bjt",
   "sot",
-  "sot-363",
-  "sc-70-6",
-  "sot-323",
-  "sc-70",
-  "sot-416",
+  "transistor",
+  "bjt",
   "65v",
-  "smd",
-  "surface mount",
-  "kicad-symbols",
-  "alternate-kicad-library",
-  "tier a",
-  "sot package",
   "sc",
   "pnp",
   "npn",
@@ -43,7 +29,11 @@
   "discrete",
   "100ma",
   "akl",
-  "alternate"
+  "alternate",
+  "kicad",
+  "library",
+  "to",
+  "matched"
  ],
  "facts": {
   "package_family": "SOT",
@@ -70,7 +60,7 @@
    "A": 35,
    "B": 3
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -154,6 +144,6 @@
   "Alternate-KiCad-Library/Transistor_BJT_AKL/BC846BT",
   "Alternate-KiCad-Library/Transistor_BJT_AKL/BC846T"
  ],
- "embedding_text": "discrete-bjt.sot.65v | Discrete BJT | Cluster of 38 SMD BJTs rated for the 65V facet, packaged in SOT footprints (SOT-363/SC-70-6, SOT-323/SC-70, SOT-416), sourced from kicad-symbols and Alternate-KiCad-Library. | bjt transistor discrete bjt sot sot-363 sc-70-6 sot-323 sc-70 sot-416 65v smd surface mount kicad-symbols alternate-kicad-library tier a sot package sc pnp npn dual discrete 100ma akl alternate | SOT | 65V",
+ "embedding_text": "discrete-bjt.sot.65v | Discrete BJT | 38 discrete bjt parts for 65V using SOT footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | sot transistor bjt 65v sc pnp npn dual discrete 100ma akl alternate kicad library to matched | SOT | 65V",
  "class": "discrete.bjt"
 }

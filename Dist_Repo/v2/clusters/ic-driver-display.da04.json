@@ -7,30 +7,20 @@
   "Driver",
   "Display"
  ],
- "description": "Display driver IC cluster featuring 7 through-hole components within the DA04 package family.",
+ "description": "7 ic driver display parts using DA04 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select based on specific DA04 footprint variants such as DA04-11SURKWA or DA04-11CGKWA.",
-  "Prefer tier A components for higher quality scoring.",
-  "Confirm compatibility with through-hole mounting requirements."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a DA04 land pattern is intended."
  ],
  "avoid_when": [
-  "Surface-mount assembly is required instead of through-hole mounting.",
-  "The design requires footprint or package families other than DA04."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than DA04."
  ],
  "keywords": [
-  "ic",
-  "driver",
   "display",
-  "ic.driver.display",
   "da04",
-  "through_hole",
-  "da04-11surkwa",
-  "da04-11cgkwa",
-  "da04-11sekwa",
-  "da04-11sykwa",
-  "da04-11ewa",
-  "da04-11gwa",
-  "da04-11srwa",
   "segment",
   "led",
   "character",
@@ -39,9 +29,12 @@
   "anode",
   "dubble",
   "digit",
+  "ic",
+  "driver",
   "red",
   "super",
-  "bright"
+  "bright",
+  "11surkwa"
  ],
  "facts": {
   "package_family": "DA04",
@@ -66,7 +59,7 @@
    "A": 3,
    "C": 4
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -103,6 +96,6 @@
   "kicad-symbols/Display_Character/DA04-11SURKWA",
   "kicad-symbols/Display_Character/DA04-11SYKWA"
  ],
- "embedding_text": "ic-driver-display.da04 | IC Driver Display | Display driver IC cluster featuring 7 through-hole components within the DA04 package family. | ic driver display ic.driver.display da04 through_hole da04-11surkwa da04-11cgkwa da04-11sekwa da04-11sykwa da04-11ewa da04-11gwa da04-11srwa segment led character double common anode dubble digit red super bright | DA04 | ",
+ "embedding_text": "ic-driver-display.da04 | IC Driver Display | 7 ic driver display parts using DA04 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | display da04 segment led character double common anode dubble digit ic driver red super bright 11surkwa | DA04 | ",
  "class": "ic.driver.display"
 }

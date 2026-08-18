@@ -6,28 +6,21 @@
   "Discrete",
   "Diode"
  ],
- "description": "Discrete diode cluster containing 1 tier C part using the SMAJ package family and footprint.",
+ "description": "1 discrete diode parts using SMAJ footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Confirm the target PCB design requires an SMAJ package family and footprint.",
-  "Verify electrical ratings independently as specific parameters are not listed.",
-  "Review quality tier C status and legacy source origin before selection."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SMAJ land pattern is intended."
  ],
  "avoid_when": [
-  "The PCB design requires a package family or footprint other than SMAJ.",
-  "Required electrical parameters or ratings must be fully specified in cluster facts.",
-  "Tier C generated quality status does not meet design standards."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SMAJ."
  ],
  "keywords": [
   "smaj",
   "discrete",
   "diode",
-  "discrete diode",
-  "smaj footprint",
-  "smaj package",
-  "discrete.diode",
-  "tier c",
-  "dist-legacy",
-  "generated status",
   "pad",
   "mm",
   "pitch",
@@ -52,12 +45,12 @@
   "tier_counts": {
    "C": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
   "dist-legacy/SMAJ"
  ],
- "embedding_text": "discrete-diode.smaj | Discrete Diode | Discrete diode cluster containing 1 tier C part using the SMAJ package family and footprint. | smaj discrete diode discrete diode smaj footprint smaj package discrete.diode tier c dist-legacy generated status pad mm pitch pins | SMAJ | ",
+ "embedding_text": "discrete-diode.smaj | Discrete Diode | 1 discrete diode parts using SMAJ footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | smaj discrete diode pad mm pitch pins | SMAJ | ",
  "class": "discrete.diode"
 }

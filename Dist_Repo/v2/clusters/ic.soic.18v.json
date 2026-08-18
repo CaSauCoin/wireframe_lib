@@ -5,42 +5,34 @@
  "category_path": [
   "IC"
  ],
- "description": "Surface-mount integrated circuit cluster containing 4 parts in SOIC-8 packages associated with 18V, available across quality tiers A and B.",
+ "description": "4 ic parts for 18V using SOIC footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select parts according to functional type such as voltage regulator, comparator, or op-amp.",
-  "Match the required footprint dimension and 1.27mm pitch for the SOIC-8 package.",
-  "Choose between Tier A and Tier B quality tiers based on library source preferences."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SOIC land pattern is intended."
  ],
  "avoid_when": [
-  "The design requires through-hole components instead of surface-mount devices.",
-  "A package family other than SOIC-8 is required for the layout.",
-  "Operation requires voltage ratings other than the specified 18V facet."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SOIC."
  ],
  "keywords": [
-  "ic",
   "soic",
-  "soic-8",
   "18v",
-  "smd",
-  "voltage regulator",
-  "comparator",
-  "op-amp",
-  "lm393dr2g",
-  "op07cdr",
-  "di78l18dab",
-  "l78l18cd",
-  "1.27mm",
-  "jlcpcb",
-  "kicad",
   "voltage",
   "regulator",
   "p1",
   "so",
   "100ma",
+  "ic",
   "ls6",
   "bl",
   "3v",
-  "akl"
+  "akl",
+  "alternate",
+  "kicad",
+  "library",
+  "9x4"
  ],
  "facts": {
   "package_family": "SOIC",
@@ -67,7 +59,7 @@
    "A": 2,
    "B": 2
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -109,6 +101,6 @@
   "JLCPCB-Kicad-Library/JLCPCB-Analog/Comparator, LM393DR2G",
   "JLCPCB-Kicad-Library/JLCPCB-Analog/Op-Amp, OP07CDR"
  ],
- "embedding_text": "ic.soic.18v | IC | Surface-mount integrated circuit cluster containing 4 parts in SOIC-8 packages associated with 18V, available across quality tiers A and B. | ic soic soic-8 18v smd voltage regulator comparator op-amp lm393dr2g op07cdr di78l18dab l78l18cd 1.27mm jlcpcb kicad voltage regulator p1 so 100ma ls6 bl 3v akl | SOIC | 18V",
+ "embedding_text": "ic.soic.18v | IC | 4 ic parts for 18V using SOIC footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | soic 18v voltage regulator p1 so 100ma ic ls6 bl 3v akl alternate kicad library 9x4 | SOIC | 18V",
  "class": "ic"
 }

@@ -6,33 +6,26 @@
   "Power",
   "Power Supply"
  ],
- "description": "Cluster of surface-mount buck power supply components in QFN packages associated with 5V and 5.5V facets.",
+ "description": "2 power power supply parts for 5V, buck, 5.5V using QFN footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when designing a buck power supply circuit associated with 5V or 5.5V facets.",
-  "Choose between LTC4001 and LTC4001-1 part entries based on application needs.",
-  "Verify compatibility with the QFN-16-1EP_4x4mm_P0.65mm_EP2.15x2.15mm SMD footprint."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a QFN land pattern is intended."
  ],
  "avoid_when": [
-  "The design requires through-hole mounting or packages other than QFN.",
-  "The application does not use 5V or 5.5V buck power supply configurations.",
-  "A footprint other than QFN-16-1EP_4x4mm_P0.65mm_EP2.15x2.15mm is needed."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than QFN."
  ],
  "keywords": [
-  "power supply",
-  "power",
-  "buck",
-  "5v",
-  "5.5v",
   "qfn",
-  "smd",
-  "ltc4001",
-  "ltc4001-1",
-  "qfn-16-1ep",
-  "battery management",
-  "kicad",
+  "5v",
+  "buck",
   "li",
   "ion",
   "charger",
+  "power",
+  "ltc4001",
   "battery",
   "management",
   "single",
@@ -65,7 +58,7 @@
   "tier_counts": {
    "A": 2
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -89,6 +82,6 @@
   "kicad-symbols/Battery_Management/LTC4001",
   "kicad-symbols/Battery_Management/LTC4001-1"
  ],
- "embedding_text": "power-supply.qfn.5v.buck | Power Power Supply | Cluster of surface-mount buck power supply components in QFN packages associated with 5V and 5.5V facets. | power supply power buck 5v 5.5v qfn smd ltc4001 ltc4001-1 qfn-16-1ep battery management kicad li ion charger battery management single cell programmable synchronous 2a input | QFN | 5V buck 5.5V",
+ "embedding_text": "power-supply.qfn.5v.buck | Power Power Supply | 2 power power supply parts for 5V, buck, 5.5V using QFN footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | qfn 5v buck li ion charger power ltc4001 battery management single cell programmable synchronous 2a input | QFN | 5V buck 5.5V",
  "class": "power.supply"
 }

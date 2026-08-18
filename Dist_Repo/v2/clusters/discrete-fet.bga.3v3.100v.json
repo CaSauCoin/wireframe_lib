@@ -6,34 +6,25 @@
   "Discrete",
   "FET"
  ],
- "description": "Discrete FET cluster containing 1 SMD part rated for 3.3V and 100V in a BGA package with footprint EPC_BGA-4_0.9x0.9mm_Layout2x2_P0.45mm.",
+ "description": "1 discrete fet parts for 3.3V, 100V using BGA footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select for SMD discrete FET applications specifying 3.3V and 100V facets.",
-  "Verify PCB compatibility with footprint EPC_BGA-4_0.9x0.9mm_Layout2x2_P0.45mm.",
-  "Suitable when tier B quality parts from KiCad symbols are acceptable."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a BGA land pattern is intended."
  ],
  "avoid_when": [
-  "Do not use when non-BGA packages or through-hole mounting is required.",
-  "Avoid if target voltage facets differ from 3.3V and 100V.",
-  "Avoid if footprint EPC_BGA-4_0.9x0.9mm_Layout2x2_P0.45mm does not match layout constraints."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than BGA."
  ],
  "keywords": [
-  "discrete fet",
-  "discrete",
-  "fet",
   "bga",
-  "smd",
-  "3.3v",
-  "100v",
-  "epc2038",
-  "kicad-symbols",
-  "epc_bga-4_0.9x0.9mm_layout2x2_p0.45mm",
-  "transistor_fet",
-  "bga package",
   "epc",
   "transistor",
+  "fet",
   "9x0",
   "9mm",
+  "epc2038",
   "mode",
   "gan",
   "rdson",
@@ -41,7 +32,8 @@
   "5a",
   "id",
   "integrated",
-  "reverse"
+  "reverse",
+  "gate"
  ],
  "facts": {
   "package_family": "BGA",
@@ -65,7 +57,7 @@
   "tier_counts": {
    "B": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -80,6 +72,6 @@
  "part_ids": [
   "kicad-symbols/Transistor_FET/EPC2038"
  ],
- "embedding_text": "discrete-fet.bga.3v3.100v | Discrete FET | Discrete FET cluster containing 1 SMD part rated for 3.3V and 100V in a BGA package with footprint EPC_BGA-4_0.9x0.9mm_Layout2x2_P0.45mm. | discrete fet discrete fet bga smd 3.3v 100v epc2038 kicad-symbols epc_bga-4_0.9x0.9mm_layout2x2_p0.45mm transistor_fet bga package epc transistor 9x0 9mm mode gan rdson ohm 5a id integrated reverse | BGA | 3.3V 100V",
+ "embedding_text": "discrete-fet.bga.3v3.100v | Discrete FET | 1 discrete fet parts for 3.3V, 100V using BGA footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | bga epc transistor fet 9x0 9mm epc2038 mode gan rdson ohm 5a id integrated reverse gate | BGA | 3.3V 100V",
  "class": "discrete.fet"
 }

@@ -5,33 +5,22 @@
  "category_path": [
   "IC"
  ],
- "description": "Integrated circuit cluster of 19 parts using Vishay package footprints, covering surface-mount, through-hole, and unspecified mounting styles.",
+ "description": "19 ic parts using Vishay footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Verify target footprint matches available variants such as PowerPAK, TSOP-5, TSOP-6, or VDMx10A1.",
-  "Confirm mounting requirement corresponds to surface-mount or through-hole options.",
-  "Evaluate quality tiers and source libraries before selection."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a Vishay land pattern is intended."
  ],
  "avoid_when": [
-  "The board layout requires a non-Vishay footprint or package family.",
-  "Specific pinouts or electrical parameters are not documented for the candidate entry.",
-  "Only high quality-tier parts with full verification are acceptable."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than Vishay."
  ],
  "keywords": [
-  "ic",
   "vishay",
   "powerpak",
-  "tsop-5",
-  "tsop-6",
-  "vdmx10a1",
-  "cny70",
-  "mlp44-24l",
-  "mlp55-27l",
-  "1212-8 dual",
-  "mo-193c",
-  "smd",
-  "through hole",
-  "thermalvias",
   "mlp55",
+  "ic",
   "27l",
   "pad",
   "mm",
@@ -40,7 +29,10 @@
   "tsop",
   "mo",
   "193c",
-  "mlp44"
+  "mlp44",
+  "24l",
+  "thermalvias",
+  "surface"
  ],
  "facts": {
   "package_family": "Vishay",
@@ -77,7 +69,7 @@
    "B": 1,
    "C": 18
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -110,6 +102,6 @@
   "dist-legacy/Vishay_PowerPAK_MLP55-27L_ThermalVias",
   "dist-legacy/Vishay_PowerPAK_SC70-6L_Dual"
  ],
- "embedding_text": "ic.vishay | IC | Integrated circuit cluster of 19 parts using Vishay package footprints, covering surface-mount, through-hole, and unspecified mounting styles. | ic vishay powerpak tsop-5 tsop-6 vdmx10a1 cny70 mlp44-24l mlp55-27l 1212-8 dual mo-193c smd through hole thermalvias mlp55 27l pad mm pitch pins tsop mo 193c mlp44 | Vishay | ",
+ "embedding_text": "ic.vishay | IC | 19 ic parts using Vishay footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | vishay powerpak mlp55 ic 27l pad mm pitch pins tsop mo 193c mlp44 24l thermalvias surface | Vishay | ",
  "class": "ic"
 }

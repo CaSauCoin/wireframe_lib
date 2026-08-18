@@ -5,34 +5,23 @@
  "category_path": [
   "IC"
  ],
- "description": "Cluster of 24 surface-mount 1.2V low-dropout (LDO) regulator ICs using SOT-23-5 and TSOT-23-5 footprints from Alternate-KiCad-Library.",
+ "description": "24 ic parts for LDO, 1.2V using SOT-23-5 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when requiring a surface-mount 1.2V low-dropout regulator IC.",
-  "Choose parts matching SOT-23-5 or TSOT-23-5 footprint requirements.",
-  "Verify tier A entries sourced from Alternate-KiCad-Library."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SOT-23-5 land pattern is intended."
  ],
  "avoid_when": [
-  "A fixed output voltage other than 1.2V is required.",
-  "The design requires a footprint other than SOT-23-5 or TSOT-23-5.",
-  "Through-hole mounting or non-SMD assembly is specified."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SOT-23-5."
  ],
  "keywords": [
-  "ldo",
-  "1.2v",
-  "sot-23-5",
-  "tsot-23-5",
-  "smd",
-  "low dropout",
-  "voltage regulator",
-  "ic",
-  "alternate-kicad-library",
-  "ap2112k-1.2trg1",
-  "ap2121k-1.2trg1",
-  "ap2127k-1.2trg1",
   "sot",
   "voltage",
   "regulator",
   "2v",
+  "ldo",
   "low",
   "dropout",
   "enable",
@@ -40,7 +29,10 @@
   "alternate",
   "kicad",
   "library",
-  "vreg"
+  "vreg",
+  "pmic",
+  "ic",
+  "with"
  ],
  "facts": {
   "package_family": "SOT-23-5",
@@ -65,7 +57,7 @@
   "tier_counts": {
    "A": 24
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -135,6 +127,6 @@
   "Alternate-KiCad-Library/Voltage_Regulator_AKL/AP7370-12WR",
   "Alternate-KiCad-Library/Voltage_Regulator_AKL/AP7370-12WW"
  ],
- "embedding_text": "ic.sot-23-5.ldo.1-2v | IC | Cluster of 24 surface-mount 1.2V low-dropout (LDO) regulator ICs using SOT-23-5 and TSOT-23-5 footprints from Alternate-KiCad-Library. | ldo 1.2v sot-23-5 tsot-23-5 smd low dropout voltage regulator ic alternate-kicad-library ap2112k-1.2trg1 ap2121k-1.2trg1 ap2127k-1.2trg1 sot voltage regulator 2v low dropout enable akl alternate kicad library vreg | SOT-23-5 | LDO 1.2V",
+ "embedding_text": "ic.sot-23-5.ldo.1-2v | IC | 24 ic parts for LDO, 1.2V using SOT-23-5 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | sot voltage regulator 2v ldo low dropout enable akl alternate kicad library vreg pmic ic with | SOT-23-5 | LDO 1.2V",
  "class": "ic"
 }

@@ -5,30 +5,20 @@
  "category_path": [
   "IC"
  ],
- "description": "Integrated circuit parts utilizing surface-mount SOG65 package family footprints from the chilaboard-altium-library source.",
+ "description": "136 ic parts using SOG65 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Match the required footprint variant within the SOG65 package family.",
-  "Check part quality tier ratings such as Tier B or Tier C.",
-  "Confirm surface-mount (smd) mounting compatibility."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SOG65 land pattern is intended."
  ],
  "avoid_when": [
-  "The PCB layout requires non-SMD or through-hole components.",
-  "The design requires a package family other than SOG65.",
-  "A footprint outside the defined SOG65 variants is required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SOG65."
  ],
  "keywords": [
-  "ic",
   "sog65",
-  "smd",
-  "surface mount",
-  "package family",
-  "chilaboard-altium-library",
-  "sog65_16",
-  "sog65_20",
-  "sog65_24",
-  "sog65_28",
-  "sog65_8",
-  "sog65_14",
+  "ic",
   "in",
   "package",
   "pin",
@@ -40,7 +30,9 @@
   "ssop16",
   "mm",
   "pitch",
-  "tssop16"
+  "tssop16",
+  "ssop",
+  "with"
  ],
  "facts": {
   "package_family": "SOG65",
@@ -73,7 +65,7 @@
    "B": 80,
    "C": 56
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -255,6 +247,6 @@
   "chilaboard-altium-library/SOG65_36_W/SOG65_36_W",
   "chilaboard-altium-library/SOG65_38_W/SOG65_38_W"
  ],
- "embedding_text": "ic.sog65 | IC | Integrated circuit parts utilizing surface-mount SOG65 package family footprints from the chilaboard-altium-library source. | ic sog65 smd surface mount package family chilaboard-altium-library sog65_16 sog65_20 sog65_24 sog65_28 sog65_8 sog65_14 in package pin and surface mount pins pad ssop16 mm pitch tssop16 | SOG65 | ",
+ "embedding_text": "ic.sog65 | IC | 136 ic parts using SOG65 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | sog65 ic in package pin and surface mount pins pad ssop16 mm pitch tssop16 ssop with | SOG65 | ",
  "class": "ic"
 }

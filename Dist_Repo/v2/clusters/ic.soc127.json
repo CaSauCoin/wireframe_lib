@@ -5,29 +5,21 @@
  "category_path": [
   "IC"
  ],
- "description": "IC component cluster with 2 surface-mount parts in the SOC127 package family using SOC127_6 or SOC127_6A footprints.",
+ "description": "2 ic parts using SOC127 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Choose entries requiring SOC127_6 or SOC127_6A surface-mount land patterns.",
-  "Review source data from the chilaboard-altium-library repository.",
-  "Confirm pin and footprint details for tier C generated components."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SOC127 land pattern is intended."
  ],
  "avoid_when": [
-  "The layout requires packages outside the SOC127 package family.",
-  "Through-hole mounting is required instead of surface mount.",
-  "The design requires footprints other than SOC127_6 or SOC127_6A."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SOC127."
  ],
  "keywords": [
-  "ic",
   "soc127",
-  "soc127_6",
-  "soc127_6a",
-  "smd",
-  "surface mount",
-  "chilaboard-altium-library",
-  "tier c",
-  "integrated circuit",
-  "soc127 footprint",
   "6a",
+  "ic",
   "surface",
   "mount",
   "pad",
@@ -55,13 +47,13 @@
   "tier_counts": {
    "C": 2
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
   "chilaboard-altium-library/SOC127_6/SOC127_6",
   "chilaboard-altium-library/SOC127_6A/SOC127_6A"
  ],
- "embedding_text": "ic.soc127 | IC | IC component cluster with 2 surface-mount parts in the SOC127 package family using SOC127_6 or SOC127_6A footprints. | ic soc127 soc127_6 soc127_6a smd surface mount chilaboard-altium-library tier c integrated circuit soc127 footprint 6a surface mount pad mm pitch pins | SOC127 | ",
+ "embedding_text": "ic.soc127 | IC | 2 ic parts using SOC127 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | soc127 6a ic surface mount pad mm pitch pins | SOC127 | ",
  "class": "ic"
 }

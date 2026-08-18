@@ -6,36 +6,23 @@
   "Discrete",
   "Diode"
  ],
- "description": "Nexperia 45V Schottky discrete diode cluster (10 SMD parts, SOT-1289 CFP15 footprint); select by exact voltage/current rating and confirmed footprint match, avoid for other package or voltage/current requirements.",
+ "description": "10 discrete diode parts for 45V using Nexperia footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Match exact part number to required voltage/current rating stated in its name",
-  "Confirm Nexperia_CFP15_SOT-1289 footprint fits the intended land pattern",
-  "All 10 parts are tier B — verify electrical specs against the actual datasheet before use",
-  "Distinguish similarly named parts (e.g. T050 vs T100 vs T150 suffixes) carefully"
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a Nexperia land pattern is intended."
  ],
  "avoid_when": [
-  "Design requires a footprint other than Nexperia_CFP15_SOT-1289",
-  "Required voltage or current rating is not confirmed from the part name/datasheet",
-  "Through-hole mounting is needed instead of SMD",
-  "Symbol-footprint pairing has not been verified for the chosen part"
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than Nexperia."
  ],
  "keywords": [
   "diode",
-  "discrete diode",
-  "nexperia",
-  "45v",
-  "sot-1289",
-  "cfp15",
-  "smd diode",
-  "pmeg045",
-  "pmeg series",
-  "nexperia diode",
-  "discrete",
-  "diode cluster",
-  "kicad-symbols diode",
-  "surface mount diode",
-  "45 volt diode",
   "sot",
+  "45v",
+  "nexperia",
+  "cfp15",
   "low",
   "vf",
   "mega",
@@ -43,7 +30,10 @@
   "barrier",
   "rectifier",
   "forward",
-  "voltage"
+  "voltage",
+  "discrete",
+  "trench",
+  "10a"
  ],
  "facts": {
   "package_family": "Nexperia",
@@ -66,7 +56,7 @@
   "tier_counts": {
    "B": 10
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -122,6 +112,6 @@
   "kicad-symbols/Diode/PMEG45T15EPD",
   "kicad-symbols/Diode/PMEG45U10EPD"
  ],
- "embedding_text": "discrete-diode.nexperia.45v | Discrete Diode | Nexperia 45V Schottky discrete diode cluster (10 SMD parts, SOT-1289 CFP15 footprint); select by exact voltage/current rating and confirmed footprint match, avoid for other package or voltage/current requirements. | diode discrete diode nexperia 45v sot-1289 cfp15 smd diode pmeg045 pmeg series nexperia diode discrete diode cluster kicad-symbols diode surface mount diode 45 volt diode sot low vf mega schottky barrier rectifier forward voltage | Nexperia | 45V",
+ "embedding_text": "discrete-diode.nexperia.45v | Discrete Diode | 10 discrete diode parts for 45V using Nexperia footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | diode sot 45v nexperia cfp15 low vf mega schottky barrier rectifier forward voltage discrete trench 10a | Nexperia | 45V",
  "class": "discrete.diode"
 }

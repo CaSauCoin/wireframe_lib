@@ -6,42 +6,34 @@
   "IC",
   "Analog"
  ],
- "description": "Analog integrated circuit cluster of 7 surface-mount BGA components, featuring DSBGA and BGA footprints including analog switch devices.",
+ "description": "7 ic analog parts using BGA footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when requiring surface-mount analog ICs in BGA or DSBGA package footprints.",
-  "Prefer higher-rated Tier A or Tier B parts such as TS3A24159YZP or TS5A3159AYZPR.",
-  "Match design requirements against the specific footprint grid layout and pitch sizes ranging from 0.5mm to 1.27mm."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a BGA land pattern is intended."
  ],
  "avoid_when": [
-  "The board layout requires through-hole or non-BGA packages.",
-  "The required BGA grid layout or pin count is not present among the listed footprints.",
-  "More than two planner-visible parts or Tier A/B entries are required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than BGA."
  ],
  "keywords": [
-  "ic",
   "analog",
-  "ic.analog",
   "bga",
-  "dsbga",
-  "smd",
-  "surface mount",
-  "analog switch",
-  "ts3a24159yzp",
-  "ts5a3159ayzpr",
-  "dsbga-10",
-  "dsbga-6",
-  "bga-209",
-  "bga-49",
-  "bga-77",
-  "bga-28",
-  "bga-165",
   "8mm",
   "p0",
   "package",
+  "ic",
   "25mm",
   "pitch",
   "pdf",
-  "p1"
+  "p1",
+  "0mm",
+  "pad",
+  "ltc",
+  "switch",
+  "https",
+  "www"
  ],
  "facts": {
   "package_family": "BGA",
@@ -71,7 +63,7 @@
    "B": 1,
    "C": 5
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -100,6 +92,6 @@
   "dist-legacy/Analog_BGA-28_4x6.25mm_Layout4x7_P0.8mm",
   "dist-legacy/Analog_BGA-165_11.9x16mm_Layout11x15_P1.0mm"
  ],
- "embedding_text": "ic-analog.bga | IC Analog | Analog integrated circuit cluster of 7 surface-mount BGA components, featuring DSBGA and BGA footprints including analog switch devices. | ic analog ic.analog bga dsbga smd surface mount analog switch ts3a24159yzp ts5a3159ayzpr dsbga-10 dsbga-6 bga-209 bga-49 bga-77 bga-28 bga-165 8mm p0 package 25mm pitch pdf p1 | BGA | ",
+ "embedding_text": "ic-analog.bga | IC Analog | 7 ic analog parts using BGA footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | analog bga 8mm p0 package ic 25mm pitch pdf p1 0mm pad ltc switch https www | BGA | ",
  "class": "ic.analog"
 }

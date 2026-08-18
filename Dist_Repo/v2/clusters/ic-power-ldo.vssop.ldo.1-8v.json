@@ -7,34 +7,24 @@
   "Power",
   "Linear Regulator"
  ],
- "description": "Single-part cluster of surface-mount 1.8V LDO linear regulators in VSSOP packages using the VSSOP-8_3x3mm_P0.65mm footprint.",
+ "description": "1 ic power linear regulator parts for LDO, 1.8V using VSSOP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when requiring a 1.8V fixed LDO linear regulator in an SMD VSSOP package.",
-  "Verify layout compatibility with the VSSOP-8_3x3mm_P0.65mm footprint.",
-  "Choose for designs utilizing tier A KiCad library parts like LP3982IMM-1.8."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a VSSOP land pattern is intended."
  ],
  "avoid_when": [
-  "Do not use if an output voltage other than 1.8V is required.",
-  "Avoid when the PCB layout requires a footprint other than VSSOP-8_3x3mm_P0.65mm.",
-  "Avoid if surface-mount (SMD) mounting is not supported."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than VSSOP."
  ],
  "keywords": [
-  "ic",
-  "power",
-  "linear regulator",
-  "ldo",
-  "1.8v",
-  "vssop",
-  "vssop-8",
-  "smd",
-  "vssop-8_3x3mm_p0.65mm",
-  "lp3982imm-1.8",
-  "lp3982imm",
-  "kicad-symbols",
   "regulator",
+  "vssop",
   "linear",
   "8v",
   "low",
+  "lp3982imm",
   "300ma",
   "micropower",
   "ultra",
@@ -42,7 +32,9 @@
   "noise",
   "cmos",
   "3x3mm",
-  "p0"
+  "p0",
+  "65mm",
+  "so"
  ],
  "facts": {
   "package_family": "VSSOP",
@@ -66,7 +58,7 @@
   "tier_counts": {
    "A": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -81,6 +73,6 @@
  "part_ids": [
   "kicad-symbols/Regulator_Linear/LP3982IMM-1.8"
  ],
- "embedding_text": "ic-power-ldo.vssop.ldo.1-8v | IC Power Linear Regulator | Single-part cluster of surface-mount 1.8V LDO linear regulators in VSSOP packages using the VSSOP-8_3x3mm_P0.65mm footprint. | ic power linear regulator ldo 1.8v vssop vssop-8 smd vssop-8_3x3mm_p0.65mm lp3982imm-1.8 lp3982imm kicad-symbols regulator linear 8v low 300ma micropower ultra dropout noise cmos 3x3mm p0 | VSSOP | LDO 1.8V",
+ "embedding_text": "ic-power-ldo.vssop.ldo.1-8v | IC Power Linear Regulator | 1 ic power linear regulator parts for LDO, 1.8V using VSSOP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | regulator vssop linear 8v low lp3982imm 300ma micropower ultra dropout noise cmos 3x3mm p0 65mm so | VSSOP | LDO 1.8V",
  "class": "ic.power.ldo"
 }

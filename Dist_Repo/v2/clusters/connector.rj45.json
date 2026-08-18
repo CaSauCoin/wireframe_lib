@@ -5,44 +5,34 @@
  "category_path": [
   "Connector"
  ],
- "description": "RJ45 connector cluster of 107 parts spanning 12 footprint variants (horizontal, vertical, SMD/through-hole/unknown mount); only 1 tier-A part, with 38 tier-B and 68 tier-C, and review_status is generated, not manually verified.",
+ "description": "107 connector parts using RJ45 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Prefer the tier-A entry (RJ45_JK0654219, footprint RJ45_Pulse_JK0654219NL_Horizontal, score 100) when no exact alternative is required.",
-  "Match the exact footprint string (e.g. horizontal vs vertical, specific vendor code) to your intended land pattern before layout.",
-  "Confirm mount type (smd, through_hole, or unknown) against your assembly process, since all three occur in this cluster.",
-  "Treat tier-B/C picks as lower-confidence since most parts (68 of 107) are tier C."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a RJ45 land pattern is intended."
  ],
  "avoid_when": [
-  "Electrical ratings, dimensions, or pinout for the chosen part are not documented — none are provided in this cluster's facts.",
-  "A confirmed, manually reviewed part record is required — review_status here is 'generated'.",
-  "The board needs a footprint outside this cluster's listed RJ45 variants.",
-  "Mount type (smd/through_hole) can't be confirmed and must match the assembly process."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than RJ45."
  ],
  "keywords": [
   "rj45",
   "connector",
-  "ethernet",
-  "ethernet jack",
-  "8p8c",
   "horizontal",
-  "vertical",
-  "smd",
-  "through hole",
-  "network connector",
-  "socket",
-  "pulse",
-  "bel",
-  "kycon",
-  "halo",
-  "amphenol",
-  "wuerth",
-  "ude",
+  "8p8c",
   "through",
   "hole",
   "pad",
   "mm",
   "pitch",
-  "pins"
+  "pins",
+  "ra",
+  "rj",
+  "ethernet",
+  "socket",
+  "amphenol",
+  "shielded"
  ],
  "facts": {
   "package_family": "RJ45",
@@ -83,7 +73,7 @@
    "B": 38,
    "C": 68
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -236,6 +226,6 @@
   "dist-legacy/RJ45_Wuerth_7499111446_Horizontal",
   "dist-legacy/RJ45_Wuerth_7499151120_Horizontal"
  ],
- "embedding_text": "connector.rj45 | Connector | RJ45 connector cluster of 107 parts spanning 12 footprint variants (horizontal, vertical, SMD/through-hole/unknown mount); only 1 tier-A part, with 38 tier-B and 68 tier-C, and review_status is generated, not manually verified. | rj45 connector ethernet ethernet jack 8p8c horizontal vertical smd through hole network connector socket pulse bel kycon halo amphenol wuerth ude through hole pad mm pitch pins | RJ45 | ",
+ "embedding_text": "connector.rj45 | Connector | 107 connector parts using RJ45 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | rj45 connector horizontal 8p8c through hole pad mm pitch pins ra rj ethernet socket amphenol shielded | RJ45 | ",
  "class": "connector"
 }

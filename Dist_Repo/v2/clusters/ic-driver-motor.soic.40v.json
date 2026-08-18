@@ -7,32 +7,24 @@
   "Driver",
   "Motor"
  ],
- "description": "This cluster contains 3 surface-mount 40V motor driver ICs in SOIC-8 exposed pad packages.",
+ "description": "3 ic driver motor parts for 40V using SOIC footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when requiring a 40V motor driver IC in an SMD SOIC package family.",
-  "Verify compatibility with the SOIC-8-1EP footprint with an exposed pad.",
-  "Choose among available tier B KiCad symbol parts including A4950E, A4950K, and A4953_LJ."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SOIC land pattern is intended."
  ],
  "avoid_when": [
-  "Avoid if the PCB layout requires a non-SOIC package or non-SMD mounting.",
-  "Do not use if operating requirements differ from 40V motor driver specifications.",
-  "Avoid when quality ratings higher than tier B are required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SOIC."
  ],
  "keywords": [
-  "ic",
+  "soic",
   "driver",
   "motor",
-  "motor driver",
-  "40v",
-  "soic",
-  "smd",
-  "soic-8-1ep",
-  "a4950e",
-  "a4950k",
-  "a4953_lj",
-  "kicad-symbols",
   "bridge",
   "full",
+  "40v",
   "dmos",
   "pwm",
   "1ep",
@@ -65,7 +57,7 @@
   "tier_counts": {
    "B": 3
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -98,6 +90,6 @@
   "kicad-symbols/Driver_Motor/A4950K",
   "kicad-symbols/Driver_Motor/A4953_LJ"
  ],
- "embedding_text": "ic-driver-motor.soic.40v | IC Driver Motor | This cluster contains 3 surface-mount 40V motor driver ICs in SOIC-8 exposed pad packages. | ic driver motor motor driver 40v soic smd soic-8-1ep a4950e a4950k a4953_lj kicad-symbols bridge full dmos pwm 1ep 9x4 9mm p1 27mm ep2 41x3 3mm | SOIC | 40V",
+ "embedding_text": "ic-driver-motor.soic.40v | IC Driver Motor | 3 ic driver motor parts for 40V using SOIC footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | soic driver motor bridge full 40v dmos pwm 1ep 9x4 9mm p1 27mm ep2 41x3 3mm | SOIC | 40V",
  "class": "ic.driver.motor"
 }

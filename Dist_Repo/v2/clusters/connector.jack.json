@@ -5,44 +5,34 @@
  "category_path": [
   "Connector"
  ],
- "description": "Cluster of 230 audio jack connector parts spanning XLR, speakON, 3.5 mm and 6.35 mm footprints in SMD and through-hole, vertical or horizontal mount; all entries are tier B and machine-generated.",
+ "description": "230 connector parts using Jack footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Match the exact footprint (XLR, speakON, 3.5mm, 6.35mm) to your board layout",
-  "Confirm vertical vs horizontal orientation fits available panel/board space",
-  "Check mount type (SMD vs through-hole) against your assembly process",
-  "All parts are tier B (generated) — verify symbol-footprint pairing before use"
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a Jack land pattern is intended."
  ],
  "avoid_when": [
-  "Exact electrical ratings or pinout for the specific connector are not confirmed",
-  "A tier A, datasheet-verified part is required instead",
-  "The needed connector style (XLR/speakON/3.5mm/6.35mm) isn't among the listed footprints",
-  "Symbol-to-footprint mapping cannot be verified before PCB commitment"
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than Jack."
  ],
  "keywords": [
   "connector",
   "jack",
-  "audio jack",
-  "xlr",
-  "speakon",
   "neutrik",
-  "3.5mm",
-  "6.35mm",
-  "phone jack",
-  "headphone jack",
-  "speaker connector",
+  "xlr",
+  "audio",
+  "receptacle",
   "vertical",
   "horizontal",
-  "smd",
-  "through hole",
-  "receptacle",
-  "panel mount",
-  "pcb connector",
-  "audio",
   "pcb",
   "pole",
   "series",
   "mount",
-  "and"
+  "and",
+  "ground",
+  "35mm",
+  "shell"
  ],
  "facts": {
   "package_family": "Jack",
@@ -75,7 +65,7 @@
   "tier_counts": {
    "B": 230
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -351,6 +341,6 @@
   "kicad-symbols/Connector_Audio/XLR3_AudioJack2_Combo",
   "kicad-symbols/Connector_Audio/XLR3_AudioJack3_Combo_Switch"
  ],
- "embedding_text": "connector.jack | Connector | Cluster of 230 audio jack connector parts spanning XLR, speakON, 3.5 mm and 6.35 mm footprints in SMD and through-hole, vertical or horizontal mount; all entries are tier B and machine-generated. | connector jack audio jack xlr speakon neutrik 3.5mm 6.35mm phone jack headphone jack speaker connector vertical horizontal smd through hole receptacle panel mount pcb connector audio pcb pole series mount and | Jack | ",
+ "embedding_text": "connector.jack | Connector | 230 connector parts using Jack footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | connector jack neutrik xlr audio receptacle vertical horizontal pcb pole series mount and ground 35mm shell | Jack | ",
  "class": "connector"
 }

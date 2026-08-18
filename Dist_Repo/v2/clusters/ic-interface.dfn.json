@@ -6,28 +6,20 @@
   "IC",
   "Interface"
  ],
- "description": "Surface-mount interface IC cluster containing 5 DFN-packaged parts across DFN-8-1EP and DFN-12-1EP footprints.",
+ "description": "5 ic interface parts using DFN footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select between 8-pin (DFN-8-1EP) and 12-pin (DFN-12-1EP) footprint options.",
-  "Prefer tier A entries such as LTC6957xDD series variants.",
-  "Verify specific exposed pad dimensions for the targeted DFN footprint."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a DFN land pattern is intended."
  ],
  "avoid_when": [
-  "Through-hole mounting is required instead of SMD.",
-  "The design requires package families other than DFN.",
-  "Parts outside the IC interface class are needed."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than DFN."
  ],
  "keywords": [
-  "ic",
-  "interface",
   "dfn",
-  "smd",
-  "dfn-12-1ep",
-  "dfn-8-1ep",
-  "ltc6957xdd",
-  "nb3n551mn",
-  "ic.interface",
-  "kicad-symbols",
+  "interface",
   "converter",
   "buffer",
   "clock",
@@ -36,6 +28,8 @@
   "1ep",
   "p0",
   "nolead",
+  "ic",
+  "ltc6957xdd",
   "noise",
   "dual",
   "output",
@@ -62,7 +56,7 @@
    "A": 4,
    "B": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -113,6 +107,6 @@
   "kicad-symbols/Interface/LTC6957xDD-4",
   "kicad-symbols/Interface/NB3N551MN"
  ],
- "embedding_text": "ic-interface.dfn | IC Interface | Surface-mount interface IC cluster containing 5 DFN-packaged parts across DFN-8-1EP and DFN-12-1EP footprints. | ic interface dfn smd dfn-12-1ep dfn-8-1ep ltc6957xdd nb3n551mn ic.interface kicad-symbols converter buffer clock low phase 1ep p0 nolead noise dual output driver | DFN | ",
+ "embedding_text": "ic-interface.dfn | IC Interface | 5 ic interface parts using DFN footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | dfn interface converter buffer clock low phase 1ep p0 nolead ic ltc6957xdd noise dual output driver | DFN | ",
  "class": "ic.interface"
 }

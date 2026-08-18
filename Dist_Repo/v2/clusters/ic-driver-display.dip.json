@@ -7,42 +7,34 @@
   "Driver",
   "Display"
  ],
- "description": "Display IC driver components in through-hole DIP packages, including DIP-8, DIP-16, DIP-18, and DIP-28 footprints.",
+ "description": "6 ic driver display parts using DIP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select based on the required DIP pin count, such as DIP-8, DIP-16, DIP-18, or DIP-28.",
-  "Choose when through-hole mounting is required for display driver ICs.",
-  "Verify specific part footprint compatibility with DIP-8_W7.62mm, DIP-16_W7.62mm, DIP-18_W7.62mm, or DIP-28_W7.62mm."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a DIP land pattern is intended."
  ],
  "avoid_when": [
-  "Avoid when surface-mount packaging is required instead of through-hole DIP.",
-  "Do not use if the design requires a package family other than DIP.",
-  "Avoid when footprint requirements differ from the available DIP-8, DIP-16, DIP-18, or DIP-28 options."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than DIP."
  ],
  "keywords": [
-  "ic",
   "driver",
-  "display",
   "dip",
-  "through_hole",
-  "dip-8_w7.62mm",
-  "dip-16_w7.62mm",
-  "dip-18_w7.62mm",
-  "dip-28_w7.62mm",
-  "lm3914n",
-  "mc14495p",
-  "tlc5916",
-  "tlc5917",
-  "tlc5940nt",
-  "driver_led",
-  "kicad-symbols",
   "led",
   "62mm",
+  "display",
   "w7",
   "tht",
   "dil",
   "pdip",
   "54mm",
-  "300mil"
+  "300mil",
+  "ic",
+  "channel",
+  "constant",
+  "current",
+  "pwm"
  ],
  "facts": {
   "package_family": "DIP",
@@ -66,7 +58,7 @@
   "tier_counts": {
    "A": 6
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -118,6 +110,6 @@
   "kicad-symbols/Driver_LED/TLC5940NT",
   "kicad-symbols/Driver_LED/WS2811"
  ],
- "embedding_text": "ic-driver-display.dip | IC Driver Display | Display IC driver components in through-hole DIP packages, including DIP-8, DIP-16, DIP-18, and DIP-28 footprints. | ic driver display dip through_hole dip-8_w7.62mm dip-16_w7.62mm dip-18_w7.62mm dip-28_w7.62mm lm3914n mc14495p tlc5916 tlc5917 tlc5940nt driver_led kicad-symbols led 62mm w7 tht dil pdip 54mm 300mil | DIP | ",
+ "embedding_text": "ic-driver-display.dip | IC Driver Display | 6 ic driver display parts using DIP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | driver dip led 62mm display w7 tht dil pdip 54mm 300mil ic channel constant current pwm | DIP | ",
  "class": "ic.driver.display"
 }

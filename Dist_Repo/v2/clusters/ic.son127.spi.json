@@ -5,32 +5,23 @@
  "category_path": [
   "IC"
  ],
- "description": "Surface-mount SPI IC cluster containing 20 tier B parts in the SON127 package family with SON127_8T_5060 and SON127_8T_6080 footprints.",
+ "description": "20 ic parts for SPI using SON127 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Choose between SON127_8T_5060 and SON127_8T_6080 footprint options.",
-  "Verify part specifications for SPI communication compatibility.",
-  "Note that all 20 available parts are tier B quality."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SON127 land pattern is intended."
  ],
  "avoid_when": [
-  "A package family other than SON127 is required.",
-  "Through-hole mounting is needed instead of SMD.",
-  "Footprint geometries other than SON127_8T_5060 or SON127_8T_6080 are specified."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SON127."
  ],
  "keywords": [
-  "ic",
   "spi",
-  "son127",
-  "smd",
-  "son127_8t_5060",
-  "son127_8t_6080",
-  "chilaboard-altium-library",
-  "at25sf128_son8n",
-  "at25sl128_son8n",
-  "at45db641e_wson8",
-  "gd25lq128_son8n",
-  "is25lp128_son8n",
   "flash",
   "memory",
+  "ic",
+  "son127",
   "wson8",
   "son8n",
   "quad",
@@ -40,7 +31,8 @@
   "serial",
   "an",
   "nor",
-  "pad"
+  "pad",
+  "son"
  ],
  "facts": {
   "package_family": "SON127",
@@ -64,7 +56,7 @@
   "tier_counts": {
    "B": 20
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -130,6 +122,6 @@
   "chilaboard-altium-library/W25Q128JW_SON8N/W25Q128JW_SON8N",
   "chilaboard-altium-library/W25Q16JV_SON8N/W25Q16JV_SON8N"
  ],
- "embedding_text": "ic.son127.spi | IC | Surface-mount SPI IC cluster containing 20 tier B parts in the SON127 package family with SON127_8T_5060 and SON127_8T_6080 footprints. | ic spi son127 smd son127_8t_5060 son127_8t_6080 chilaboard-altium-library at25sf128_son8n at25sl128_son8n at45db641e_wson8 gd25lq128_son8n is25lp128_son8n flash memory wson8 son8n quad in package 8t serial an nor pad | SON127 | SPI",
+ "embedding_text": "ic.son127.spi | IC | 20 ic parts for SPI using SON127 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | spi flash memory ic son127 wson8 son8n quad in package 8t serial an nor pad son | SON127 | SPI",
  "class": "ic"
 }

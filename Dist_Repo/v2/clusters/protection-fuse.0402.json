@@ -6,31 +6,22 @@
   "Protection",
   "Fuse"
  ],
- "description": "Surface-mount 0402 protection fuse cluster containing KiCad symbol entries for resettable polyfuses with PTC 0402_1005 footprints.",
+ "description": "2 protection fuse parts using 0402 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when an SMD 0402 or PTC 0402_1005 footprint is required for protection.",
-  "Choose between standard and small KiCad symbol variants based on schematic density.",
-  "Verify part-specific electrical ratings and hold/trip currents against design requirements."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a 0402 land pattern is intended."
  ],
  "avoid_when": [
-  "Designs requiring through-hole mounting or package families other than 0402.",
-  "Applications needing one-time fuses rather than resettable PTC devices.",
-  "Circuits strictly requiring pre-verified tier A library assets."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than 0402."
  ],
  "keywords": [
-  "0402",
   "fuse",
-  "kicad-symbols",
   "polyfuse",
-  "polyfuse_small",
-  "protection",
-  "protection fuse",
-  "ptc",
-  "ptc 0402_1005",
-  "resettable fuse",
-  "smd",
-  "surface mount",
   "resettable",
+  "ptc",
   "device",
   "polymeric",
   "positive",
@@ -38,6 +29,7 @@
   "coefficient",
   "pptc",
   "polyswitch",
+  "protection",
   "small",
   "symbol"
  ],
@@ -60,7 +52,7 @@
   "tier_counts": {
    "B": 2
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -84,6 +76,6 @@
   "kicad-symbols/Device/Polyfuse",
   "kicad-symbols/Device/Polyfuse_Small"
  ],
- "embedding_text": "protection-fuse.0402 | Protection Fuse | Surface-mount 0402 protection fuse cluster containing KiCad symbol entries for resettable polyfuses with PTC 0402_1005 footprints. | 0402 fuse kicad-symbols polyfuse polyfuse_small protection protection fuse ptc ptc 0402_1005 resettable fuse smd surface mount resettable device polymeric positive temperature coefficient pptc polyswitch small symbol | 0402 | ",
+ "embedding_text": "protection-fuse.0402 | Protection Fuse | 2 protection fuse parts using 0402 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | fuse polyfuse resettable ptc device polymeric positive temperature coefficient pptc polyswitch protection small symbol | 0402 | ",
  "class": "protection.fuse"
 }

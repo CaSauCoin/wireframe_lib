@@ -5,42 +5,34 @@
  "category_path": [
   "IC"
  ],
- "description": "Cluster of 5 surface-mount USB ICs using Texas footprints such as Texas_DRT-3, Texas_R-PUSON-N14, Texas_DPY0002A_0.6x1mm_P0.65mm, and Texas_S-PWSON-N10.",
+ "description": "5 ic parts for USB using Texas footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Prefer tier A rated parts like TPD2EUSB30, TPD2EUSB30A, or TPD6E05U06RVZ.",
-  "Match required SMD land patterns against footprints such as Texas_DRT-3 or Texas_S-PWSON-N10.",
-  "Choose TPD1E05U06DPY or TPD4S014 when tier B quality selection is acceptable."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a Texas land pattern is intended."
  ],
  "avoid_when": [
-  "The design requires non-SMD or through-hole mounting.",
-  "Land patterns other than the listed Texas footprints are required.",
-  "Components outside the KiCad Power_Protection USB IC symbols are needed."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than Texas."
  ],
  "keywords": [
-  "ic",
+  "protection",
   "usb",
   "texas",
-  "smd",
-  "power_protection",
-  "tpd2eusb30",
-  "tpd2eusb30a",
-  "tpd6e05u06rvz",
-  "tpd1e05u06dpy",
-  "tpd4s014",
-  "texas_drt-3",
-  "texas_r-puson-n14",
-  "texas_dpy0002a_0.6x1mm_p0.65mm",
-  "texas_s-pwson-n10",
-  "protection",
   "esd",
   "drt",
   "power",
   "for",
+  "ic",
   "channel",
   "super",
   "speed",
   "interface",
-  "1x0"
+  "1x0",
+  "8mm",
+  "pitch",
+  "7mm"
  ],
  "facts": {
   "package_family": "Texas",
@@ -67,7 +59,7 @@
    "A": 3,
    "B": 2
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -118,6 +110,6 @@
   "kicad-symbols/Power_Protection/TPD1E05U06DPY",
   "kicad-symbols/Power_Protection/TPD4S014"
  ],
- "embedding_text": "ic.texas.usb | IC | Cluster of 5 surface-mount USB ICs using Texas footprints such as Texas_DRT-3, Texas_R-PUSON-N14, Texas_DPY0002A_0.6x1mm_P0.65mm, and Texas_S-PWSON-N10. | ic usb texas smd power_protection tpd2eusb30 tpd2eusb30a tpd6e05u06rvz tpd1e05u06dpy tpd4s014 texas_drt-3 texas_r-puson-n14 texas_dpy0002a_0.6x1mm_p0.65mm texas_s-pwson-n10 protection esd drt power for channel super speed interface 1x0 | Texas | USB",
+ "embedding_text": "ic.texas.usb | IC | 5 ic parts for USB using Texas footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | protection usb texas esd drt power for ic channel super speed interface 1x0 8mm pitch 7mm | Texas | USB",
  "class": "ic"
 }

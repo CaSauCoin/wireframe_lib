@@ -5,27 +5,20 @@
  "category_path": [
   "IC"
  ],
- "description": "Cluster containing IC parts using the DB014 package family and footprint.",
+ "description": "1 ic parts using DB014 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Verify electrical parameters and footprint compatibility prior to board design.",
-  "Confirm pin-to-pad mapping and package outline against part documentation.",
-  "Use when a DB014 footprint is specified for the layout."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a DB014 land pattern is intended."
  ],
  "avoid_when": [
-  "The PCB design requires a package type other than DB014.",
-  "Required electrical specifications, pinout, or tolerances are unspecified.",
-  "Tier C or unverified library components are not permitted."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than DB014."
  ],
  "keywords": [
   "db014",
   "ic",
-  "db014 package",
-  "db014 footprint",
-  "package family db014",
-  "integrated circuit",
-  "db014 land pattern",
-  "tier c ic",
-  "dist-legacy",
   "pad",
   "mm",
   "pitch",
@@ -50,12 +43,12 @@
   "tier_counts": {
    "C": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
   "dist-legacy/DB014"
  ],
- "embedding_text": "ic.db014 | IC | Cluster containing IC parts using the DB014 package family and footprint. | db014 ic db014 package db014 footprint package family db014 integrated circuit db014 land pattern tier c ic dist-legacy pad mm pitch pins | DB014 | ",
+ "embedding_text": "ic.db014 | IC | 1 ic parts using DB014 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | db014 ic pad mm pitch pins | DB014 | ",
  "class": "ic"
 }

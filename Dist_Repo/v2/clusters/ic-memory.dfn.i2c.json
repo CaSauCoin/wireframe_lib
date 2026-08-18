@@ -6,33 +6,23 @@
   "IC",
   "Memory"
  ],
- "description": "Surface-mount I2C memory IC cluster containing 7 tier A parts in DFN packaging.",
+ "description": "7 ic memory parts for I2C using DFN footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when an I2C memory IC in a DFN package is required.",
-  "Verify compatibility with the DFN-8-1EP_3x2mm_P0.5mm_EP1.3x1.5mm footprint.",
-  "Choose part variant from the AT24CS series based on application needs."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a DFN land pattern is intended."
  ],
  "avoid_when": [
-  "The design requires a communication interface other than I2C.",
-  "The PCB layout requires package styles other than DFN.",
-  "Through-hole mounting is required instead of surface-mount (SMD)."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than DFN."
  ],
  "keywords": [
-  "ic",
   "memory",
-  "ic memory",
-  "i2c",
-  "dfn",
-  "smd",
   "eeprom",
-  "at24cs",
-  "at24cs01",
-  "at24cs02",
-  "at24cs04",
-  "at24cs08",
-  "at24cs16",
-  "dfn-8-1ep",
+  "i2c",
   "serial",
+  "dfn",
   "5mm",
   "mahm",
   "with",
@@ -41,7 +31,9 @@
   "udfn8",
   "1ep",
   "3x2mm",
-  "p0"
+  "p0",
+  "ep1",
+  "3x1"
  ],
  "facts": {
   "package_family": "DFN",
@@ -64,7 +56,7 @@
   "tier_counts": {
    "A": 7
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -117,6 +109,6 @@
   "kicad-symbols/Memory_EEPROM/AT24CS32-MAHM",
   "kicad-symbols/Memory_EEPROM/AT24CS64-MAHM"
  ],
- "embedding_text": "ic-memory.dfn.i2c | IC Memory | Surface-mount I2C memory IC cluster containing 7 tier A parts in DFN packaging. | ic memory ic memory i2c dfn smd eeprom at24cs at24cs01 at24cs02 at24cs04 at24cs08 at24cs16 dfn-8-1ep serial 5mm mahm with unique number udfn8 1ep 3x2mm p0 | DFN | I2C",
+ "embedding_text": "ic-memory.dfn.i2c | IC Memory | 7 ic memory parts for I2C using DFN footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | memory eeprom i2c serial dfn 5mm mahm with unique number udfn8 1ep 3x2mm p0 ep1 3x1 | DFN | I2C",
  "class": "ic.memory"
 }

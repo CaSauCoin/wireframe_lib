@@ -7,42 +7,34 @@
   "Power",
   "Switching Regulator"
  ],
- "description": "This cluster contains SMD 5V boost IC switching regulators in SOT package family footprints such as SOT-363_SC-70-6.",
+ "description": "1 ic power switching regulator parts for 5V, boost using SOT footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when requiring a 5V boost switching regulator IC in a SOT footprint.",
-  "Use when designing for surface-mount (SMD) assembly with SOT-363_SC-70-6 footprint requirements.",
-  "Verify tier A status and footprint compatibility for LTC3525-5 or related symbols."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SOT land pattern is intended."
  ],
  "avoid_when": [
-  "Do not use if the design requires a package family other than SOT.",
-  "Avoid when non-boost topologies or output voltages other than 5V are needed.",
-  "Avoid if through-hole mounting is required instead of SMD."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SOT."
  ],
  "keywords": [
-  "ic",
-  "power",
-  "switching regulator",
-  "boost",
-  "5v",
   "sot",
-  "sot-363_sc-70-6",
-  "sc-70-6",
-  "sot-363",
-  "smd",
-  "ltc3525-5",
-  "ltc3525",
-  "kicad-symbols",
   "dc",
   "sc",
   "regulator",
   "switching",
   "fixed",
+  "5v",
   "synchronous",
   "step",
   "up",
+  "boost",
+  "ltc3525",
   "400ma",
   "micropower",
-  "converter"
+  "converter",
+  "with"
  ],
  "facts": {
   "package_family": "SOT",
@@ -66,7 +58,7 @@
   "tier_counts": {
    "A": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -81,6 +73,6 @@
  "part_ids": [
   "kicad-symbols/Regulator_Switching/LTC3525-5"
  ],
- "embedding_text": "ic-power-switching.sot.5v.boost | IC Power Switching Regulator | This cluster contains SMD 5V boost IC switching regulators in SOT package family footprints such as SOT-363_SC-70-6. | ic power switching regulator boost 5v sot sot-363_sc-70-6 sc-70-6 sot-363 smd ltc3525-5 ltc3525 kicad-symbols dc sc regulator switching fixed synchronous step up 400ma micropower converter | SOT | 5V boost",
+ "embedding_text": "ic-power-switching.sot.5v.boost | IC Power Switching Regulator | 1 ic power switching regulator parts for 5V, boost using SOT footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | sot dc sc regulator switching fixed 5v synchronous step up boost ltc3525 400ma micropower converter with | SOT | 5V boost",
  "class": "ic.power.switching"
 }

@@ -7,42 +7,34 @@
   "Analog",
   "Comparator"
  ],
- "description": "This cluster contains 8 tier-A surface-mount IC analog comparators operating at 1.8V in SOT-23-5 packages, including LMV7271, LMV7275, and MCP6561 variants.",
+ "description": "8 ic analog comparator parts for 1.8V using SOT-23-5 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when needing a 1.8V analog comparator in a SOT-23-5 surface-mount package.",
-  "Choose among tier-A representative parts like LMV7271, LMV7275, or MCP6561 series options.",
-  "Verify compatibility with KiCad symbol requirements and SOT-23-5 footprint."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SOT-23-5 land pattern is intended."
  ],
  "avoid_when": [
-  "Do not use when the PCB design requires a package footprint other than SOT-23-5.",
-  "Avoid if the design requires operating voltages outside 1.8V.",
-  "Do not use when surface-mount (SMD) assembly is not used."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SOT-23-5."
  ],
  "keywords": [
-  "ic",
-  "analog",
-  "comparator",
-  "analog comparator",
-  "1.8v",
-  "sot-23-5",
-  "smd",
-  "lmv7271",
-  "lmv7275",
-  "mcp6561-ot",
-  "mcp6561r",
-  "mcp6561u",
-  "kicad-symbols",
   "sot",
+  "comparator",
   "8v",
   "to",
   "single",
   "low",
   "power",
   "output",
+  "smd",
   "cmp",
+  "ic",
+  "analog",
   "rail",
   "push",
-  "pull"
+  "pull",
+  "open"
  ],
  "facts": {
   "package_family": "SOT-23-5",
@@ -65,7 +57,7 @@
   "tier_counts": {
    "A": 8
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -119,6 +111,6 @@
   "kicad-symbols/Comparator/MCP6566R",
   "kicad-symbols/Comparator/MCP6566U"
  ],
- "embedding_text": "ic-analog-comparator.sot-23-5.1-8v | IC Analog Comparator | This cluster contains 8 tier-A surface-mount IC analog comparators operating at 1.8V in SOT-23-5 packages, including LMV7271, LMV7275, and MCP6561 variants. | ic analog comparator analog comparator 1.8v sot-23-5 smd lmv7271 lmv7275 mcp6561-ot mcp6561r mcp6561u kicad-symbols sot 8v to single low power output cmp rail push pull | SOT-23-5 | 1.8V",
+ "embedding_text": "ic-analog-comparator.sot-23-5.1-8v | IC Analog Comparator | 8 ic analog comparator parts for 1.8V using SOT-23-5 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | sot comparator 8v to single low power output smd cmp ic analog rail push pull open | SOT-23-5 | 1.8V",
  "class": "ic.analog.comparator"
 }

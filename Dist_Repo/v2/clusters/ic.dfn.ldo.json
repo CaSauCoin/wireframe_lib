@@ -5,34 +5,22 @@
  "category_path": [
   "IC"
  ],
- "description": "This cluster contains 20 surface-mount LDO ICs in DFN packages sourced from Alternate-KiCad-Library.",
+ "description": "20 ic parts for LDO using DFN footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Match the required DFN footprint variant, body size, and lead pitch.",
-  "Prefer Tier A parts over Tier B parts when selecting entries.",
-  "Ensure surface-mount (SMD) mounting compatibility."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a DFN land pattern is intended."
  ],
  "avoid_when": [
-  "Through-hole or non-SMD component mounting is required.",
-  "The board layout requires a package family other than DFN.",
-  "The required part footprint is not among the supported DFN variants."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than DFN."
  ],
  "keywords": [
-  "ic",
-  "ldo",
   "dfn",
-  "smd",
-  "voltage regulator",
-  "alternate-kicad-library",
-  "dfn-8-1ep",
-  "dfn-6-1ep",
-  "dfn-12-1ep",
-  "dfn-16-1ep",
-  "adm7151acpz-02",
-  "adp7118acpzn",
-  "ap7362-ha",
-  "ap7362a-ha",
   "voltage",
   "regulator",
+  "ldo",
   "adjustable",
   "low",
   "dropout",
@@ -40,7 +28,11 @@
   "akl",
   "alternate",
   "kicad",
-  "library"
+  "library",
+  "1ep",
+  "p0",
+  "vreg",
+  "pmic"
  ],
  "facts": {
   "package_family": "DFN",
@@ -71,7 +63,7 @@
    "A": 19,
    "B": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -137,6 +129,6 @@
   "Alternate-KiCad-Library/Voltage_Regulator_AKL/MCP1726T-ADJE-MF",
   "Alternate-KiCad-Library/Voltage_Regulator_AKL/LD1086PUR"
  ],
- "embedding_text": "ic.dfn.ldo | IC | This cluster contains 20 surface-mount LDO ICs in DFN packages sourced from Alternate-KiCad-Library. | ic ldo dfn smd voltage regulator alternate-kicad-library dfn-8-1ep dfn-6-1ep dfn-12-1ep dfn-16-1ep adm7151acpz-02 adp7118acpzn ap7362-ha ap7362a-ha voltage regulator adjustable low dropout enable akl alternate kicad library | DFN | LDO",
+ "embedding_text": "ic.dfn.ldo | IC | 20 ic parts for LDO using DFN footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | dfn voltage regulator ldo adjustable low dropout enable akl alternate kicad library 1ep p0 vreg pmic | DFN | LDO",
  "class": "ic"
 }

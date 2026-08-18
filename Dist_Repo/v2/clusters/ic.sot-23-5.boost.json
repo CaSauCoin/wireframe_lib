@@ -5,40 +5,33 @@
  "category_path": [
   "IC"
  ],
- "description": "Cluster of 4 surface-mount boost IC parts in SOT-23-5 footprints from Chilaboard Altium and SparkFun KiCad libraries.",
+ "description": "4 ic parts for boost using SOT-23-5 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when requiring a surface-mount boost IC in a SOT-23-5 or SOT23_5 footprint.",
-  "Prefer tier A parts like AP3012 over tier B parts like FAN5333, LM2733, or TPS61040.",
-  "Choose based on library source preference between SparkFun KiCad and Chilaboard Altium."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SOT-23-5 land pattern is intended."
  ],
  "avoid_when": [
-  "The board layout requires a footprint other than SOT-23-5 or SOT23_5.",
-  "The circuit requires a non-boost converter function.",
-  "Through-hole mounting is required instead of surface-mount (SMD)."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SOT-23-5."
  ],
  "keywords": [
-  "ic",
-  "boost",
-  "sot-23-5",
-  "sot23-5",
-  "sot23_5",
-  "smd",
-  "ap3012",
-  "fan5333",
-  "lm2733",
-  "tps61040",
-  "sparkfun",
-  "chilaboard",
-  "vreg",
   "sot23",
   "regulator",
+  "ic",
   "sot",
+  "boost",
   "voltage",
+  "vreg",
   "dc",
   "converter",
   "switching",
+  "lm2733",
+  "sparkfun",
   "step",
   "up",
+  "fan5333",
   "in"
  ],
  "facts": {
@@ -65,7 +58,7 @@
    "A": 1,
    "B": 3
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -107,6 +100,6 @@
   "chilaboard-altium-library/VREG_LM2733_SOT23/VREG_LM2733_SOT23",
   "chilaboard-altium-library/VREG_TPS61040_SOT23/VREG_TPS61040_SOT23"
  ],
- "embedding_text": "ic.sot-23-5.boost | IC | Cluster of 4 surface-mount boost IC parts in SOT-23-5 footprints from Chilaboard Altium and SparkFun KiCad libraries. | ic boost sot-23-5 sot23-5 sot23_5 smd ap3012 fan5333 lm2733 tps61040 sparkfun chilaboard vreg sot23 regulator sot voltage dc converter switching step up in | SOT-23-5 | boost",
+ "embedding_text": "ic.sot-23-5.boost | IC | 4 ic parts for boost using SOT-23-5 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | sot23 regulator ic sot boost voltage vreg dc converter switching lm2733 sparkfun step up fan5333 in | SOT-23-5 | boost",
  "class": "ic"
 }

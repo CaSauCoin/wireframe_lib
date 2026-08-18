@@ -6,33 +6,19 @@
   "IC",
   "Microcontroller"
  ],
- "description": "Cluster of 205 surface-mount 3.6V ST microcontroller ICs from KiCad symbols, featuring WLCSP footprints across Tier A (14) and Tier B (191) parts.",
+ "description": "205 ic microcontroller parts for 3.6V using ST footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when requiring a 3.6V surface-mount ST microcontroller IC in a WLCSP footprint.",
-  "Prefer Tier A parts (14 available) over Tier B parts (191 available) for higher quality rating.",
-  "Match the specific WLCSP pin count and die footprint required for your board layout."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a ST land pattern is intended."
  ],
  "avoid_when": [
-  "Avoid when the application requires mounting styles other than surface mount (smd).",
-  "Do not use if target operating voltage differs from 3.6V.",
-  "Avoid if footprints other than ST WLCSP packages are required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than ST."
  ],
  "keywords": [
-  "ic",
-  "microcontroller",
   "st",
-  "3.6v",
-  "smd",
-  "wlcsp",
-  "kicad-symbols",
-  "stm32f0",
-  "stm32f4",
-  "stm32f031e6yx",
-  "stm32f051t8yx",
-  "stm32f410t8yx",
-  "ic.mcu",
-  "tier a",
-  "tier b",
   "mcu",
   "6v",
   "arm",
@@ -41,7 +27,13 @@
   "stmicroelectronics",
   "flash",
   "ram",
-  "gpio"
+  "gpio",
+  "wlcsp",
+  "csp",
+  "ic",
+  "microcontroller",
+  "mhz",
+  "stm32l4"
  ],
  "facts": {
   "package_family": "ST",
@@ -76,7 +68,7 @@
    "A": 14,
    "B": 191
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -327,6 +319,6 @@
   "kicad-symbols/MCU_ST_STM32WB/STM32WBA55HEFx",
   "kicad-symbols/MCU_ST_STM32WB/STM32WBA55HGFx"
  ],
- "embedding_text": "ic-mcu.st.3-6v | IC Microcontroller | Cluster of 205 surface-mount 3.6V ST microcontroller ICs from KiCad symbols, featuring WLCSP footprints across Tier A (14) and Tier B (191) parts. | ic microcontroller st 3.6v smd wlcsp kicad-symbols stm32f0 stm32f4 stm32f031e6yx stm32f051t8yx stm32f410t8yx ic.mcu tier a tier b mcu 6v arm cortex m4 stmicroelectronics flash ram gpio | ST | 3.6V",
+ "embedding_text": "ic-mcu.st.3-6v | IC Microcontroller | 205 ic microcontroller parts for 3.6V using ST footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | st mcu 6v arm cortex m4 stmicroelectronics flash ram gpio wlcsp csp ic microcontroller mhz stm32l4 | ST | 3.6V",
  "class": "ic.mcu"
 }

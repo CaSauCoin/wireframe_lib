@@ -6,37 +6,32 @@
   "Passive",
   "Capacitor"
  ],
- "description": "Cluster of 2 SMD passive capacitor parts rated for 10V using 0402 footprints from the JLCPCB KiCad library.",
+ "description": "2 passive capacitor parts for 10V using 0402 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select between available capacitance values of 4.7uF and 470nF.",
-  "Confirm the circuit operating voltage is compatible with a 10V rating.",
-  "Verify layout compatibility with the C_0402 SMD footprint."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a 0402 land pattern is intended."
  ],
  "avoid_when": [
-  "Circuit voltage requirements exceed or differ from 10V.",
-  "The PCB design requires a footprint or package other than 0402 / C_0402.",
-  "A capacitance value other than 4.7uF or 470nF is needed."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than 0402."
  ],
  "keywords": [
-  "passive",
-  "capacitor",
   "capacitors",
-  "passive capacitor",
   "10v",
-  "0402",
-  "c_0402",
-  "smd",
-  "4.7uf",
-  "470nf",
-  "jlcpcb",
-  "jlcpcb-kicad-library",
+  "capacitor",
   "7uf",
+  "jlcpcb",
   "x5r",
   "multilayer",
   "ceramic",
   "mlcc",
+  "smd",
   "smt",
-  "rohs"
+  "rohs",
+  "passive",
+  "470nf"
  ],
  "facts": {
   "package_family": "0402",
@@ -59,7 +54,7 @@
   "tier_counts": {
    "B": 2
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -83,6 +78,6 @@
   "JLCPCB-Kicad-Library/JLCPCB-Capacitors/0402,4.7uF",
   "JLCPCB-Kicad-Library/JLCPCB-Capacitors/0402,470nF"
  ],
- "embedding_text": "passive-capacitor.0402.10v | Passive Capacitor | Cluster of 2 SMD passive capacitor parts rated for 10V using 0402 footprints from the JLCPCB KiCad library. | passive capacitor capacitors passive capacitor 10v 0402 c_0402 smd 4.7uf 470nf jlcpcb jlcpcb-kicad-library 7uf x5r multilayer ceramic mlcc smt rohs | 0402 | 10V",
+ "embedding_text": "passive-capacitor.0402.10v | Passive Capacitor | 2 passive capacitor parts for 10V using 0402 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | capacitors 10v capacitor 7uf jlcpcb x5r multilayer ceramic mlcc smd smt rohs passive 470nf | 0402 | 10V",
  "class": "passive.capacitor"
 }

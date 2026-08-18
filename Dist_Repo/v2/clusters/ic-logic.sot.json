@@ -6,42 +6,34 @@
   "IC",
   "Logic"
  ],
- "description": "Surface-mount logic IC cluster containing 109 parts across SOT footprints including SOT-353, SOT-363, SOT-563, SOT-89, and SOT-553.",
+ "description": "109 ic logic parts using SOT footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select based on the specific SOT footprint variant required for the layout.",
-  "Prioritize Tier A parts when higher quality tier classification is preferred.",
-  "Choose parts based on library source availability between KiCad Symbols and JLCPCB."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SOT land pattern is intended."
  ],
  "avoid_when": [
-  "Through-hole mounting is required for the application.",
-  "The board design requires package families other than SOT.",
-  "Integrated circuits outside the logic class are required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SOT."
  ],
  "keywords": [
-  "ic",
-  "logic",
   "sot",
-  "smd",
-  "sot-353",
-  "sot-363",
-  "sot-563",
-  "sot-89",
-  "sot-553",
-  "sc-70-5",
-  "sc-70-6",
-  "74ahc",
-  "74lv",
-  "nc7sz",
-  "sn74aup",
-  "sn74lv",
   "cmos",
   "single",
   "gate",
+  "logic",
+  "ic",
   "74xgxx",
   "voltage",
   "low",
   "lvc",
-  "sc"
+  "sc",
+  "not",
+  "state",
+  "buffer",
+  "tri",
+  "dual"
  ],
  "facts": {
   "package_family": "SOT",
@@ -70,7 +62,7 @@
    "A": 18,
    "B": 91
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -225,6 +217,6 @@
   "kicad-symbols/74xGxx/74LVC2G34",
   "kicad-symbols/74xGxx/74LVC2GU04"
  ],
- "embedding_text": "ic-logic.sot | IC Logic | Surface-mount logic IC cluster containing 109 parts across SOT footprints including SOT-353, SOT-363, SOT-563, SOT-89, and SOT-553. | ic logic sot smd sot-353 sot-363 sot-563 sot-89 sot-553 sc-70-5 sc-70-6 74ahc 74lv nc7sz sn74aup sn74lv cmos single gate 74xgxx voltage low lvc sc | SOT | ",
+ "embedding_text": "ic-logic.sot | IC Logic | 109 ic logic parts using SOT footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | sot cmos single gate logic ic 74xgxx voltage low lvc sc not state buffer tri dual | SOT | ",
  "class": "ic.logic"
 }

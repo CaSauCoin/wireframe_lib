@@ -6,31 +6,25 @@
   "Discrete",
   "Transistor"
  ],
- "description": "Discrete transistor cluster containing 2 tier C parts mapped to POWER package family footprints including POWER_JACK_5.5_2.1MM_NS and POWER_JACK_SMD.",
+ "description": "2 discrete transistor parts using POWER footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Verify footprint compatibility with POWER_JACK_5.5_2.1MM_NS or POWER_JACK_SMD land patterns.",
-  "Review documentation and part quality as all parts in this cluster are tier C.",
-  "Confirm pin mapping and symbol alignment before committing to a PCB design."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a POWER land pattern is intended."
  ],
  "avoid_when": [
-  "The board layout requires a footprint other than POWER_JACK_SMD or POWER_JACK_5.5_2.1MM_NS.",
-  "Unverified tier C parts are disallowed by project requirements.",
-  "Explicit electrical parameter limits or datasheet specifications are mandatory."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than POWER."
  ],
  "keywords": [
-  "discrete transistor",
-  "discrete",
-  "transistor",
   "power",
-  "power jack",
-  "power_jack_smd",
-  "power_jack_5.5_2.1mm_ns",
-  "smd",
-  "tier c",
-  "dist-legacy",
   "jack",
   "1mm",
   "ns",
+  "smd",
+  "discrete",
+  "transistor",
   "pad",
   "mm",
   "pitch",
@@ -56,13 +50,13 @@
   "tier_counts": {
    "C": 2
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
   "dist-legacy/POWER_JACK_5.5_2.1MM_NS",
   "dist-legacy/POWER_JACK_SMD"
  ],
- "embedding_text": "discrete-transistor.power | Discrete Transistor | Discrete transistor cluster containing 2 tier C parts mapped to POWER package family footprints including POWER_JACK_5.5_2.1MM_NS and POWER_JACK_SMD. | discrete transistor discrete transistor power power jack power_jack_smd power_jack_5.5_2.1mm_ns smd tier c dist-legacy jack 1mm ns pad mm pitch pins | POWER | ",
+ "embedding_text": "discrete-transistor.power | Discrete Transistor | 2 discrete transistor parts using POWER footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | power jack 1mm ns smd discrete transistor pad mm pitch pins | POWER | ",
  "class": "discrete.transistor"
 }

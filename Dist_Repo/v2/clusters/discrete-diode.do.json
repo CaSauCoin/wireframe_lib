@@ -6,42 +6,34 @@
   "Discrete",
   "Diode"
  ],
- "description": "A collection of 12 discrete diode parts featuring DO family footprints, supporting surface-mount and through-hole mounting styles across quality tiers B and C.",
+ "description": "12 discrete diode parts using DO footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select based on required mounting style, such as surface-mount (SMD) or through-hole.",
-  "Choose specific package footprints including DO-41, DO-214AC, DO-219AD, DO-35, DO-15, or DO-201AD.",
-  "Filter parts by quality tier (tier B or C) and source library."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a DO land pattern is intended."
  ],
  "avoid_when": [
-  "The design requires package families other than DO.",
-  "Tier A quality verification is strictly required, as this cluster only contains tier B and C parts.",
-  "Components other than discrete single diodes are required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than DO."
  ],
  "keywords": [
-  "discrete",
-  "diode",
   "do",
-  "do-41",
-  "do-214ac",
-  "do-219ad",
-  "do-35",
-  "do-15",
-  "do-201ad",
-  "microsmp",
-  "smd",
-  "through hole",
-  "1n4004",
-  "1n4007",
-  "s1g",
-  "discrete diode",
-  "do package",
+  "diode",
+  "discrete",
   "219ad",
+  "microsmp",
   "diodes",
   "1a",
   "rectifiers",
   "single",
   "pad",
-  "mm"
+  "mm",
+  "pitch",
+  "pins",
+  "semiconductor",
+  "214ac",
+  "201ad"
  ],
  "facts": {
   "package_family": "DO",
@@ -76,7 +68,7 @@
    "B": 5,
    "C": 7
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -134,6 +126,6 @@
   "francescosacco-hardwarelibrary/DO-41/DO-41",
   "matthiasbock-altium-libraries/DO-41/DO-41"
  ],
- "embedding_text": "discrete-diode.do | Discrete Diode | A collection of 12 discrete diode parts featuring DO family footprints, supporting surface-mount and through-hole mounting styles across quality tiers B and C. | discrete diode do do-41 do-214ac do-219ad do-35 do-15 do-201ad microsmp smd through hole 1n4004 1n4007 s1g discrete diode do package 219ad diodes 1a rectifiers single pad mm | DO | ",
+ "embedding_text": "discrete-diode.do | Discrete Diode | 12 discrete diode parts using DO footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | do diode discrete 219ad microsmp diodes 1a rectifiers single pad mm pitch pins semiconductor 214ac 201ad | DO | ",
  "class": "discrete.diode"
 }

@@ -6,30 +6,22 @@
   "Discrete",
   "Diode"
  ],
- "description": "Discrete diode cluster containing 2 parts associated with the Fuse1 package family and Fuse1 or FUSE1_1 footprints.",
+ "description": "2 discrete diode parts using Fuse1 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Choose when a discrete diode using Fuse1 or FUSE1_1 footprints is needed.",
-  "Prefer the tier B entry over tier C when selecting by part quality tier.",
-  "Verify compatibility between Fuse1 and FUSE1_1 footprint options."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a Fuse1 land pattern is intended."
  ],
  "avoid_when": [
-  "The PCB layout requires a footprint other than Fuse1 or FUSE1_1.",
-  "A component category other than discrete diode is required.",
-  "Only quality tier A components are acceptable."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than Fuse1."
  ],
  "keywords": [
-  "discrete",
-  "diode",
-  "discrete diode",
   "fuse1",
-  "fuse1_1",
-  "discrete.diode",
-  "dist-legacy",
-  "footprint",
-  "package family",
+  "diode",
+  "discrete",
   "duplicate",
-  "tier b",
-  "tier c",
   "two",
   "pin",
   "component",
@@ -39,6 +31,7 @@
   "cathode",
   "terminals",
   "in",
+  "footprint",
   "semiconductor",
   "rectifier"
  ],
@@ -63,7 +56,7 @@
    "B": 1,
    "C": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -79,6 +72,6 @@
   "dist-legacy/Fuse1 - duplicate",
   "dist-legacy/FUSE1_1"
  ],
- "embedding_text": "discrete-diode.fuse1 | Discrete Diode | Discrete diode cluster containing 2 parts associated with the Fuse1 package family and Fuse1 or FUSE1_1 footprints. | discrete diode discrete diode fuse1 fuse1_1 discrete.diode dist-legacy footprint package family duplicate tier b tier c two pin component with anode and cathode terminals in semiconductor rectifier | Fuse1 | ",
+ "embedding_text": "discrete-diode.fuse1 | Discrete Diode | 2 discrete diode parts using Fuse1 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | fuse1 diode discrete duplicate two pin component with anode and cathode terminals in footprint semiconductor rectifier | Fuse1 | ",
  "class": "discrete.diode"
 }

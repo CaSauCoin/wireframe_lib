@@ -5,31 +5,22 @@
  "category_path": [
   "IC"
  ],
- "description": "Through-hole integrated circuit component cluster in the BNX002 package family using the BNX002 footprint.",
+ "description": "4 ic parts using BNX002 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when requiring a through-hole IC in the BNX002 package family.",
-  "Choose among variants BNX002-01, BNX003-01, or BNX005-01 based on specific part requirements.",
-  "Verify part quality tier and source data from chilaboard-altium-library."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a BNX002 land pattern is intended."
  ],
  "avoid_when": [
-  "Surface-mount footprint or non-BNX002 package family is required.",
-  "Electrical characteristics not provided in the cluster facts must be verified before selection."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than BNX002."
  ],
  "keywords": [
-  "ic",
   "bnx002",
-  "bnx002-01",
-  "bnx003-01",
-  "bnx005-01",
-  "through_hole",
-  "through hole",
-  "chilaboard-altium-library",
-  "package bnx002",
-  "footprint bnx002",
-  "ic bnx002",
-  "integrated circuit",
   "filter",
   "emi",
+  "ic",
   "block",
   "power",
   "through",
@@ -39,7 +30,9 @@
   "bnx003",
   "ground",
   "bnx005",
-  "suppression"
+  "suppression",
+  "module",
+  "in"
  ],
  "facts": {
   "package_family": "BNX002",
@@ -61,7 +54,7 @@
    "B": 3,
    "C": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -95,6 +88,6 @@
   "chilaboard-altium-library/BNX005-01/BNX005-01",
   "chilaboard-altium-library/BNX002/BNX002"
  ],
- "embedding_text": "ic.bnx002 | IC | Through-hole integrated circuit component cluster in the BNX002 package family using the BNX002 footprint. | ic bnx002 bnx002-01 bnx003-01 bnx005-01 through_hole through hole chilaboard-altium-library package bnx002 footprint bnx002 ic bnx002 integrated circuit filter emi block power through hole noise line bnx003 ground bnx005 suppression | BNX002 | ",
+ "embedding_text": "ic.bnx002 | IC | 4 ic parts using BNX002 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | bnx002 filter emi ic block power through hole noise line bnx003 ground bnx005 suppression module in | BNX002 | ",
  "class": "ic"
 }

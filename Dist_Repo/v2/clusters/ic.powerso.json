@@ -5,31 +5,20 @@
  "category_path": [
   "IC"
  ],
- "description": "Integrated circuit cluster containing 4 surface-mount tier C parts across PowerSO footprint variants including PowerSO-10_L, PowerSO-10_M, PowerSO-10_N, and POWERSO_10T_W.",
+ "description": "4 ic parts using PowerSO footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when an IC part in a PowerSO package footprint is required.",
-  "Match the layout requirement to PowerSO-10_L, PowerSO-10_M, PowerSO-10_N, or POWERSO_10T_W footprint variants.",
-  "Consider that all entries in this cluster are categorized as quality tier C."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a PowerSO land pattern is intended."
  ],
  "avoid_when": [
-  "The board layout requires a package family other than PowerSO.",
-  "Through-hole mounting is required for the component.",
-  "Parts rated above quality tier C are required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than PowerSO."
  ],
  "keywords": [
-  "ic",
   "powerso",
-  "powerso-10",
-  "powerso-10_l",
-  "powerso-10_m",
-  "powerso-10_n",
-  "powerso_10t_w",
-  "smd",
-  "surface mount",
-  "tier c",
-  "integrated circuit",
-  "dist-legacy",
-  "chilaboard-altium-library",
+  "ic",
   "10t",
   "pad",
   "mm",
@@ -62,7 +51,7 @@
   "tier_counts": {
    "C": 4
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
@@ -71,6 +60,6 @@
   "dist-legacy/PowerSO-10_N",
   "chilaboard-altium-library/POWERSO_10T_W/POWERSO_10T_W"
  ],
- "embedding_text": "ic.powerso | IC | Integrated circuit cluster containing 4 surface-mount tier C parts across PowerSO footprint variants including PowerSO-10_L, PowerSO-10_M, PowerSO-10_N, and POWERSO_10T_W. | ic powerso powerso-10 powerso-10_l powerso-10_m powerso-10_n powerso_10t_w smd surface mount tier c integrated circuit dist-legacy chilaboard-altium-library 10t pad mm pitch pins surface mount | PowerSO | ",
+ "embedding_text": "ic.powerso | IC | 4 ic parts using PowerSO footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | powerso ic 10t pad mm pitch pins surface mount | PowerSO | ",
  "class": "ic"
 }

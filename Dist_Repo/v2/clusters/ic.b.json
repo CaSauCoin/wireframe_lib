@@ -5,28 +5,19 @@
  "category_path": [
   "IC"
  ],
- "description": "This IC cluster contains 1 integrated circuit part in package family B using the B-169 footprint.",
+ "description": "1 ic parts using B footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when package family B with footprint B-169 is required.",
-  "Verify mounting and pin specifications, as mount type is classified as unknown.",
-  "Consider part quality tier C and dist-legacy source before selection."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a B land pattern is intended."
  ],
  "avoid_when": [
-  "The layout requires a package family or footprint other than B-169.",
-  "Design standards require verified mounting information rather than unknown.",
-  "Tier C quality or unreviewed generated parts are not permitted."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than B."
  ],
  "keywords": [
   "ic",
-  "integrated circuit",
-  "package family b",
-  "b-169",
-  "b-169 footprint",
-  "package b",
-  "tier c",
-  "dist-legacy",
-  "generated review",
-  "unknown mount",
   "pad",
   "mm",
   "pitch",
@@ -51,12 +42,12 @@
   "tier_counts": {
    "C": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
   "dist-legacy/B-169"
  ],
- "embedding_text": "ic.b | IC | This IC cluster contains 1 integrated circuit part in package family B using the B-169 footprint. | ic integrated circuit package family b b-169 b-169 footprint package b tier c dist-legacy generated review unknown mount pad mm pitch pins | B | ",
+ "embedding_text": "ic.b | IC | 1 ic parts using B footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | ic pad mm pitch pins | B | ",
  "class": "ic"
 }

@@ -6,30 +6,22 @@
   "Discrete",
   "Transistor"
  ],
- "description": "Discrete transistor cluster utilizing XH package family footprints, supporting surface-mount and through-hole mounting options.",
+ "description": "3 discrete transistor parts using XH footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when using XH package family footprints such as XH_3, XH_R_3, or XH_R_SMD_3.",
-  "Choose based on surface-mount (smd) or through-hole mounting requirements.",
-  "Verify footprint layout against source library data."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a XH land pattern is intended."
  ],
  "avoid_when": [
-  "Avoid if the PCB layout requires a package family other than XH.",
-  "Avoid when footprints other than XH_3, XH_R_3, or XH_R_SMD_3 are needed.",
-  "Do not use if neither surface-mount nor through-hole XH footprints are compatible."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than XH."
  ],
  "keywords": [
+  "xh",
   "discrete",
   "transistor",
-  "discrete transistor",
-  "xh",
-  "xh package",
   "smd",
-  "through hole",
-  "through_hole",
-  "xh_3",
-  "xh_r_3",
-  "xh_r_smd_3",
-  "chilaboard-altium-library",
   "pad",
   "mm",
   "pitch",
@@ -61,7 +53,7 @@
   "tier_counts": {
    "C": 3
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
@@ -69,6 +61,6 @@
   "chilaboard-altium-library/XH_R_3/XH_R_3",
   "chilaboard-altium-library/XH_R_SMD_3/XH_R_SMD_3"
  ],
- "embedding_text": "discrete-transistor.xh | Discrete Transistor | Discrete transistor cluster utilizing XH package family footprints, supporting surface-mount and through-hole mounting options. | discrete transistor discrete transistor xh xh package smd through hole through_hole xh_3 xh_r_3 xh_r_smd_3 chilaboard-altium-library pad mm pitch pins through hole surface mount | XH | ",
+ "embedding_text": "discrete-transistor.xh | Discrete Transistor | 3 discrete transistor parts using XH footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | xh discrete transistor smd pad mm pitch pins through hole surface mount | XH | ",
  "class": "discrete.transistor"
 }

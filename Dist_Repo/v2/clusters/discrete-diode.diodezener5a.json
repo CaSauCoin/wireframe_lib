@@ -6,26 +6,21 @@
   "Discrete",
   "Diode"
  ],
- "description": "Cluster of discrete diode parts using the DiodeZener5A footprint family with quality tier C data.",
+ "description": "1 discrete diode parts using DiodeZener5A footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Use when a part in the DiodeZener5A package family is needed.",
-  "Check footprint dimensions and pin mapping before PCB layout.",
-  "Evaluate quality tier and source trust when selecting a part."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a DiodeZener5A land pattern is intended."
  ],
  "avoid_when": [
-  "The design requires a footprint package other than DiodeZener5A.",
-  "Electrical ratings or tolerances are not specified in the part entry."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than DiodeZener5A."
  ],
  "keywords": [
   "diodezener5a",
   "discrete",
   "diode",
-  "discrete diode",
-  "diodezener5a footprint",
-  "diodezener5a package",
-  "dist-legacy",
-  "tier c",
-  "discrete.diode",
   "pad",
   "mm",
   "pitch",
@@ -50,12 +45,12 @@
   "tier_counts": {
    "C": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
   "dist-legacy/DiodeZener5A"
  ],
- "embedding_text": "discrete-diode.diodezener5a | Discrete Diode | Cluster of discrete diode parts using the DiodeZener5A footprint family with quality tier C data. | diodezener5a discrete diode discrete diode diodezener5a footprint diodezener5a package dist-legacy tier c discrete.diode pad mm pitch pins | DiodeZener5A | ",
+ "embedding_text": "discrete-diode.diodezener5a | Discrete Diode | 1 discrete diode parts using DiodeZener5A footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | diodezener5a discrete diode pad mm pitch pins | DiodeZener5A | ",
  "class": "discrete.diode"
 }

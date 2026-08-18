@@ -6,29 +6,21 @@
   "Discrete",
   "Transistor"
  ],
- "description": "Discrete transistor cluster containing 12 parts in the WURTH package family supporting SMD and through-hole mounting.",
+ "description": "12 discrete transistor parts using WURTH footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when needing discrete transistors with WURTH family footprints.",
-  "Choose between SMD and through-hole mounting options.",
-  "Verify specific footprint names such as WE-HCF, WE-PHD, or WPME-FDSM SIP-3."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a WURTH land pattern is intended."
  ],
  "avoid_when": [
-  "Avoid if non-WURTH package footprints are required.",
-  "Avoid if higher quality tier entries than tier B or C are required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than WURTH."
  ],
  "keywords": [
-  "discrete transistor",
   "wurth",
-  "discrete",
   "transistor",
-  "smd",
-  "through_hole",
-  "we-hcf",
-  "we-phd",
-  "wpme-fdsm",
-  "sip-3",
-  "dist-legacy",
-  "celestial-altium-library",
+  "discrete",
   "sip",
   "we",
   "wpme",
@@ -40,7 +32,8 @@
   "pins",
   "mm",
   "hcf",
-  "5mm"
+  "5mm",
+  "phd"
  ],
  "facts": {
   "package_family": "WURTH",
@@ -72,7 +65,7 @@
    "B": 6,
    "C": 6
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -130,6 +123,6 @@
   "celestial-altium-library/WURTH WPME-FDSM SIP-3 173950x78/WURTH_WPME-FDSM_SIP-3_173950x78",
   "celestial-altium-library/Wurth 691322110003/Wurth_691322110003"
  ],
- "embedding_text": "discrete-transistor.wurth | Discrete Transistor | Discrete transistor cluster containing 12 parts in the WURTH package family supporting SMD and through-hole mounting. | discrete transistor wurth discrete transistor smd through_hole we-hcf we-phd wpme-fdsm sip-3 dist-legacy celestial-altium-library sip we wpme fdsm pin base collector emitter pins mm hcf 5mm | WURTH | ",
+ "embedding_text": "discrete-transistor.wurth | Discrete Transistor | 12 discrete transistor parts using WURTH footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | wurth transistor discrete sip we wpme fdsm pin base collector emitter pins mm hcf 5mm phd | WURTH | ",
  "class": "discrete.transistor"
 }

@@ -7,32 +7,21 @@
   "Analog",
   "Op-Amp"
  ],
- "description": "SOP-packaged analog operational amplifier IC cluster containing surface-mount parts with SOP-8_3.9x4.9mm_P1.27mm footprints.",
+ "description": "2 ic analog op-amp parts using SOP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when requiring an analog op-amp in an SMD SOP package family.",
-  "Choose between AD797AR and AD797BR variants matching the SOP-8 footprint.",
-  "Verify tier A quality rating and library source compatibility."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SOP land pattern is intended."
  ],
  "avoid_when": [
-  "The design requires through-hole mounting instead of SMD.",
-  "The PCB layout requires a package family other than SOP.",
-  "Required electrical parameters or tolerances are not documented in the cluster facts."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SOP."
  ],
  "keywords": [
-  "ic",
-  "analog",
-  "opamp",
-  "op-amp",
-  "operational amplifier",
-  "sop",
-  "sop-8",
-  "smd",
-  "surface mount",
-  "ad797ar",
-  "ad797br",
-  "alternate-kicad-library",
   "amplifier",
   "operational",
+  "sop",
   "so",
   "noise",
   "akl",
@@ -42,7 +31,10 @@
   "2nv",
   "hz",
   "50nvp",
-  "110db"
+  "110db",
+  "thd",
+  "110mhz",
+  "bandwidth"
  ],
  "facts": {
   "package_family": "SOP",
@@ -63,7 +55,7 @@
   "tier_counts": {
    "A": 2
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -87,6 +79,6 @@
   "Alternate-KiCad-Library/Amplifier_Operational_AKL/AD797AR",
   "Alternate-KiCad-Library/Amplifier_Operational_AKL/AD797BR"
  ],
- "embedding_text": "ic-analog-opamp.sop | IC Analog Op-Amp | SOP-packaged analog operational amplifier IC cluster containing surface-mount parts with SOP-8_3.9x4.9mm_P1.27mm footprints. | ic analog opamp op-amp operational amplifier sop sop-8 smd surface mount ad797ar ad797br alternate-kicad-library amplifier operational so noise akl ultralow distortion and 2nv hz 50nvp 110db | SOP | ",
+ "embedding_text": "ic-analog-opamp.sop | IC Analog Op-Amp | 2 ic analog op-amp parts using SOP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | amplifier operational sop so noise akl ultralow distortion and 2nv hz 50nvp 110db thd 110mhz bandwidth | SOP | ",
  "class": "ic.analog.opamp"
 }

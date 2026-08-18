@@ -5,42 +5,34 @@
  "category_path": [
   "IC"
  ],
- "description": "Integrated circuit cluster of four 5V and 5.5V parts in DIP packages, supporting DIP-8_W7.62mm and DIP-14_W3mm footprints for through-hole mounting.",
+ "description": "4 ic parts for 5V, 5.5V using DIP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select for 5V or 5.5V IC designs using DIP packaging.",
-  "Choose based on footprint requirements for DIP-8_W7.62mm or DIP-14_W3mm.",
-  "Prioritize tier A parts from kicad-symbols over tier B options."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a DIP land pattern is intended."
  ],
  "avoid_when": [
-  "Avoid when board layout requires surface-mount packages instead of DIP.",
-  "Do not use if required operating voltage is not 5V or 5.5V.",
-  "Avoid if footprints other than DIP-8_W7.62mm or DIP-14_W3mm are required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than DIP."
  ],
  "keywords": [
-  "ic",
   "dip",
   "5v",
-  "5.5v",
-  "through_hole",
-  "dip-8_w7.62mm",
-  "dip-14_w3mm",
-  "max690xpa",
-  "max692xpa",
-  "max694xpa",
-  "sn74ahct125n",
-  "kicad-symbols",
-  "digikey-kicad-library",
   "power",
   "supervisor",
   "reset",
   "timeout",
   "62mm",
+  "ic",
   "microprocessor",
   "supervisory",
   "circuit",
   "battery",
   "backup",
-  "switching"
+  "switching",
+  "fail",
+  "comparator"
  ],
  "facts": {
   "package_family": "DIP",
@@ -68,7 +60,7 @@
    "A": 3,
    "B": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -110,6 +102,6 @@
   "kicad-symbols/Power_Supervisor/MAX694xPA",
   "digikey-kicad-library/dk_Logic-Buffers-Drivers-Receivers-Transceivers/SN74AHCT125N"
  ],
- "embedding_text": "ic.dip.5v.5-5v | IC | Integrated circuit cluster of four 5V and 5.5V parts in DIP packages, supporting DIP-8_W7.62mm and DIP-14_W3mm footprints for through-hole mounting. | ic dip 5v 5.5v through_hole dip-8_w7.62mm dip-14_w3mm max690xpa max692xpa max694xpa sn74ahct125n kicad-symbols digikey-kicad-library power supervisor reset timeout 62mm microprocessor supervisory circuit battery backup switching | DIP | 5V 5.5V",
+ "embedding_text": "ic.dip.5v.5-5v | IC | 4 ic parts for 5V, 5.5V using DIP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | dip 5v power supervisor reset timeout 62mm ic microprocessor supervisory circuit battery backup switching fail comparator | DIP | 5V 5.5V",
  "class": "ic"
 }

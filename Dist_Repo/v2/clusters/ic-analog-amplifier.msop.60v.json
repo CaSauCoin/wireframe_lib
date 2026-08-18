@@ -7,38 +7,33 @@
   "Analog",
   "Amplifier"
  ],
- "description": "Surface-mount 60V analog IC amplifier cluster in MSOP packaging, containing Tier-A KiCad parts matching the MSOP-8_3x3mm_P0.65mm footprint.",
+ "description": "2 ic analog amplifier parts for 60V using MSOP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select for 60V analog IC amplifier applications requiring surface-mount MSOP packaging.",
-  "Confirm compatibility with the MSOP-8_3x3mm_P0.65mm footprint.",
-  "Choose between Tier-A symbols LTC6102xMS8 and LTC6102xMS8-1 based on part requirements."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a MSOP land pattern is intended."
  ],
  "avoid_when": [
-  "The design requires through-hole mounting instead of SMD.",
-  "The PCB layout requires a footprint other than MSOP-8_3x3mm_P0.65mm.",
-  "The application circuit operating requirements differ from the 60V rating."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than MSOP."
  ],
  "keywords": [
-  "ic",
-  "analog",
   "amplifier",
-  "60v",
   "msop",
-  "smd",
-  "msop-8_3x3mm_p0.65mm",
-  "ltc6102xms8",
-  "ltc6102xms8-1",
-  "kicad-symbols",
-  "amplifier_current",
   "current",
   "sense",
+  "60v",
+  "ltc6102xms8",
   "precision",
   "zero",
   "drift",
   "3x3mm",
   "p0",
   "65mm",
-  "so"
+  "so",
+  "ic",
+  "analog"
  ],
  "facts": {
   "package_family": "MSOP",
@@ -61,7 +56,7 @@
   "tier_counts": {
    "A": 2
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -85,6 +80,6 @@
   "kicad-symbols/Amplifier_Current/LTC6102xMS8",
   "kicad-symbols/Amplifier_Current/LTC6102xMS8-1"
  ],
- "embedding_text": "ic-analog-amplifier.msop.60v | IC Analog Amplifier | Surface-mount 60V analog IC amplifier cluster in MSOP packaging, containing Tier-A KiCad parts matching the MSOP-8_3x3mm_P0.65mm footprint. | ic analog amplifier 60v msop smd msop-8_3x3mm_p0.65mm ltc6102xms8 ltc6102xms8-1 kicad-symbols amplifier_current current sense precision zero drift 3x3mm p0 65mm so | MSOP | 60V",
+ "embedding_text": "ic-analog-amplifier.msop.60v | IC Analog Amplifier | 2 ic analog amplifier parts for 60V using MSOP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | amplifier msop current sense 60v ltc6102xms8 precision zero drift 3x3mm p0 65mm so ic analog | MSOP | 60V",
  "class": "ic.analog.amplifier"
 }

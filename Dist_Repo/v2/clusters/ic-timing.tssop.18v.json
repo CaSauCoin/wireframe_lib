@@ -6,29 +6,21 @@
   "IC",
   "Timing"
  ],
- "description": "Cluster of surface-mount 18V timing ICs in TSSOP-14 packages, including MC14541BDT and NLV14541BDT.",
+ "description": "2 ic timing parts for 18V using TSSOP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when an 18V timing IC in a surface-mount TSSOP package is required.",
-  "Verify fit with TSSOP-14_4.4x5mm_P0.65mm footprint requirements.",
-  "Choose between tier A parts MC14541BDT and NLV14541BDT."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a TSSOP land pattern is intended."
  ],
  "avoid_when": [
-  "Avoid if the PCB design requires through-hole components or non-TSSOP packages.",
-  "Do not use when circuit requirements differ from 18V timing ICs."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than TSSOP."
  ],
  "keywords": [
-  "ic timing",
-  "timing ic",
   "tssop",
-  "tssop-14",
-  "18v",
-  "smd",
-  "mc14541bdt",
-  "nlv14541bdt",
   "timer",
-  "4.4x5mm",
-  "0.65mm",
-  "ic.timing",
+  "18v",
   "programmable",
   "4x5mm",
   "p0",
@@ -37,6 +29,8 @@
   "cmos",
   "ic",
   "timing",
+  "mc14541bdt",
+  "nlv14541bdt",
   "aec",
   "q100"
  ],
@@ -61,7 +55,7 @@
   "tier_counts": {
    "A": 2
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -85,6 +79,6 @@
   "kicad-symbols/Timer/MC14541BDT",
   "kicad-symbols/Timer/NLV14541BDT"
  ],
- "embedding_text": "ic-timing.tssop.18v | IC Timing | Cluster of surface-mount 18V timing ICs in TSSOP-14 packages, including MC14541BDT and NLV14541BDT. | ic timing timing ic tssop tssop-14 18v smd mc14541bdt nlv14541bdt timer 4.4x5mm 0.65mm ic.timing programmable 4x5mm p0 65mm so cmos ic timing aec q100 | TSSOP | 18V",
+ "embedding_text": "ic-timing.tssop.18v | IC Timing | 2 ic timing parts for 18V using TSSOP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | tssop timer 18v programmable 4x5mm p0 65mm so cmos ic timing mc14541bdt nlv14541bdt aec q100 | TSSOP | 18V",
  "class": "ic.timing"
 }

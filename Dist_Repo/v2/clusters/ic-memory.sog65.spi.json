@@ -6,37 +6,34 @@
   "IC",
   "Memory"
  ],
- "description": "Surface-mount memory IC cluster featuring an SPI interface in the SOG65 package family with SOG65_8 footprints.",
+ "description": "4 ic memory parts for SPI using SOG65 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when requiring surface-mount memory ICs with an SPI interface.",
-  "Choose for designs requiring the SOG65_8 footprint within the SOG65 package family.",
-  "Verify part selection against specific memory requirements among tier B entries."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SOG65 land pattern is intended."
  ],
  "avoid_when": [
-  "Do not use if through-hole or non-SMD mounting is required.",
-  "Avoid when a memory communication interface other than SPI is needed.",
-  "Do not use if the layout requires package footprints other than SOG65_8."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SOG65."
  ],
  "keywords": [
   "spi",
   "eeprom",
   "memory",
-  "ic memory",
-  "sog65",
-  "sog65_8",
-  "smd",
   "ssop8",
-  "cat25512",
-  "cat93c46",
-  "m95512",
-  "rm25c512",
+  "sog65",
   "ic",
   "in",
   "an",
   "pin",
   "package",
   "serial",
-  "ssop"
+  "cat25512",
+  "ssop",
+  "cat93c46",
+  "m95512",
+  "rm25c512"
  ],
  "facts": {
   "package_family": "SOG65",
@@ -59,7 +56,7 @@
   "tier_counts": {
    "B": 4
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -101,6 +98,6 @@
   "chilaboard-altium-library/EEPROM_SPI_M95512_SSOP8/EEPROM_SPI_M95512_SSOP8",
   "chilaboard-altium-library/EEPROM_SPI_RM25C512_SSOP8/EEPROM_SPI_RM25C512_SSOP8"
  ],
- "embedding_text": "ic-memory.sog65.spi | IC Memory | Surface-mount memory IC cluster featuring an SPI interface in the SOG65 package family with SOG65_8 footprints. | spi eeprom memory ic memory sog65 sog65_8 smd ssop8 cat25512 cat93c46 m95512 rm25c512 ic in an pin package serial ssop | SOG65 | SPI",
+ "embedding_text": "ic-memory.sog65.spi | IC Memory | 4 ic memory parts for SPI using SOG65 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | spi eeprom memory ssop8 sog65 ic in an pin package serial cat25512 ssop cat93c46 m95512 rm25c512 | SOG65 | SPI",
  "class": "ic.memory"
 }

@@ -5,34 +5,23 @@
  "category_path": [
   "IC"
  ],
- "description": "Integrated circuit cluster containing tier-A surface-mount components for 5V and 1.8V applications in SOT-23-5 packages.",
+ "description": "4 ic parts for 5V, 1.8V using SOT-23-5 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when requiring a surface-mount IC in a SOT-23-5 package.",
-  "Choose when circuit specifications match 5V and 1.8V voltage facets.",
-  "Select between MIC2090 and MIC2091 variants based on project needs."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SOT-23-5 land pattern is intended."
  ],
  "avoid_when": [
-  "Avoid if a package footprint other than SOT-23-5 is required.",
-  "Do not use if through-hole mounting is specified.",
-  "Avoid when operating voltages differ from 5V or 1.8V."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SOT-23-5."
  ],
  "keywords": [
-  "ic",
-  "sot-23-5",
-  "smd",
-  "5v",
-  "1.8v",
-  "power management",
-  "mic2090",
-  "mic2091",
-  "mic2090-1ym5",
-  "mic2090-2ym5",
-  "mic2091-1ym5",
-  "mic2091-2ym5",
   "sot",
   "power",
   "distribution",
   "8v",
+  "5v",
   "current",
   "limit",
   "management",
@@ -40,7 +29,10 @@
   "channel",
   "high",
   "side",
-  "switch"
+  "switch",
+  "790mohm",
+  "ron",
+  "ma"
  ],
  "facts": {
   "package_family": "SOT-23-5",
@@ -64,7 +56,7 @@
   "tier_counts": {
    "A": 4
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -106,6 +98,6 @@
   "kicad-symbols/Power_Management/MIC2091-1YM5",
   "kicad-symbols/Power_Management/MIC2091-2YM5"
  ],
- "embedding_text": "ic.sot-23-5.5v.1-8v | IC | Integrated circuit cluster containing tier-A surface-mount components for 5V and 1.8V applications in SOT-23-5 packages. | ic sot-23-5 smd 5v 1.8v power management mic2090 mic2091 mic2090-1ym5 mic2090-2ym5 mic2091-1ym5 mic2091-2ym5 sot power distribution 8v current limit management single channel high side switch | SOT-23-5 | 5V 1.8V",
+ "embedding_text": "ic.sot-23-5.5v.1-8v | IC | 4 ic parts for 5V, 1.8V using SOT-23-5 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | sot power distribution 8v 5v current limit management single channel high side switch 790mohm ron ma | SOT-23-5 | 5V 1.8V",
  "class": "ic"
 }

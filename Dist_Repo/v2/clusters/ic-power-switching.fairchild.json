@@ -7,31 +7,19 @@
   "Power",
   "Switching Regulator"
  ],
- "description": "Fairchild IC power switching regulator cluster containing 7 Tier-B parts in Fairchild_TO-220F-6L and Fairchild_LSOP-8 footprints for surface-mount and through-hole mounting.",
+ "description": "7 ic power switching regulator parts using Fairchild footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when needing an IC power switching regulator in Fairchild_LSOP-8 or Fairchild_TO-220F-6L footprints.",
-  "Choose between SMD and through-hole mount types depending on design requirements.",
-  "Verify model selection against representative parts like FSDH321L, FSDL321L, FSL136MRT, or FSQ0565 variants."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a Fairchild land pattern is intended."
  ],
  "avoid_when": [
-  "The design requires footprints other than Fairchild_LSOP-8 or Fairchild_TO-220F-6L.",
-  "Mounting method is neither surface-mount nor through-hole.",
-  "Parts needed are outside the IC power switching regulator classification."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than Fairchild."
  ],
  "keywords": [
-  "ic",
-  "power",
-  "switching regulator",
   "fairchild",
-  "lsop-8",
-  "to-220f-6l",
-  "smd",
-  "through_hole",
-  "fsdh321l",
-  "fsdl321l",
-  "fsl136mrt",
-  "fsq0565rqldtu",
-  "fsq0565rqwdtu",
   "to",
   "220f",
   "6l",
@@ -42,7 +30,11 @@
   "ac",
   "dc",
   "quasi",
-  "resonant"
+  "resonant",
+  "80w",
+  "ic",
+  "power",
+  "67khz"
  ],
  "facts": {
   "package_family": "Fairchild",
@@ -65,7 +57,7 @@
   "tier_counts": {
    "B": 7
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -118,6 +110,6 @@
   "kicad-symbols/Regulator_Switching/FSQ0565RSLDTU",
   "kicad-symbols/Regulator_Switching/FSQ0565RSWDTU"
  ],
- "embedding_text": "ic-power-switching.fairchild | IC Power Switching Regulator | Fairchild IC power switching regulator cluster containing 7 Tier-B parts in Fairchild_TO-220F-6L and Fairchild_LSOP-8 footprints for surface-mount and through-hole mounting. | ic power switching regulator fairchild lsop-8 to-220f-6l smd through_hole fsdh321l fsdl321l fsl136mrt fsq0565rqldtu fsq0565rqwdtu to 220f 6l regulator switching smps controller ac dc quasi resonant | Fairchild | ",
+ "embedding_text": "ic-power-switching.fairchild | IC Power Switching Regulator | 7 ic power switching regulator parts using Fairchild footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | fairchild to 220f 6l regulator switching smps controller ac dc quasi resonant 80w ic power 67khz | Fairchild | ",
  "class": "ic.power.switching"
 }

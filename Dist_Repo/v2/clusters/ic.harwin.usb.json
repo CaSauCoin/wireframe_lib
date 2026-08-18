@@ -5,31 +5,26 @@
  "category_path": [
   "IC"
  ],
- "description": "This cluster contains 1 IC component entry for USB applications using Harwin package family footprints.",
+ "description": "1 ic parts for USB using Harwin footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Use when a USB IC with a Harwin land pattern is required.",
-  "Verify footprint details and pin mappings prior to PCB layout.",
-  "Check tier C quality classification and source metadata before selection."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a Harwin land pattern is intended."
  ],
  "avoid_when": [
-  "The board layout requires a package family other than Harwin.",
-  "The application requires higher quality tier verified components.",
-  "Required electrical ratings or datasheet details are unspecified."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than Harwin."
  ],
  "keywords": [
   "harwin",
   "usb",
-  "ic",
-  "integrated circuit",
-  "footprint",
-  "package",
-  "tier c",
-  "dist-legacy",
   "m701",
+  "ic",
   "pad",
-  "pins",
+  "mm",
   "pitch",
-  "mm"
+  "pins"
  ],
  "facts": {
   "package_family": "Harwin",
@@ -52,12 +47,12 @@
   "tier_counts": {
    "C": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
   "dist-legacy/Harwin USB M701-370442"
  ],
- "embedding_text": "ic.harwin.usb | IC | This cluster contains 1 IC component entry for USB applications using Harwin package family footprints. | harwin usb ic integrated circuit footprint package tier c dist-legacy m701 pad pins pitch mm | Harwin | USB",
+ "embedding_text": "ic.harwin.usb | IC | 1 ic parts for USB using Harwin footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | harwin usb m701 ic pad mm pitch pins | Harwin | USB",
  "class": "ic"
 }

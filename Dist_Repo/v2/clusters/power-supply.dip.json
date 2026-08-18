@@ -6,31 +6,22 @@
   "Power",
   "Power Supply"
  ],
- "description": "Through-hole power supply and battery management ICs in the DIP package family using DIP-16_W7.62mm footprints.",
+ "description": "7 power power supply parts using DIP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select for through-hole designs requiring DIP-16_W7.62mm footprints.",
-  "Match specific battery management or power supply requirements to part numbers such as BQ2003 or MAX712/MAX713.",
-  "Verify pin assignments and footprint dimensions against your PCB layout."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a DIP land pattern is intended."
  ],
  "avoid_when": [
-  "Surface-mount (SMT) packaging is required.",
-  "A footprint or pin count other than DIP-16_W7.62mm is needed.",
-  "The design requires non-DIP power supply devices."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than DIP."
  ],
  "keywords": [
-  "power supply",
   "dip",
-  "through_hole",
-  "dip-16",
-  "dip-16_w7.62mm",
-  "battery management",
-  "bq2003",
-  "max712",
-  "max713",
-  "power",
-  "kicad-symbols",
   "battery",
   "62mm",
+  "power",
   "pdip",
   "management",
   "charger",
@@ -41,7 +32,8 @@
   "300mil",
   "nickel",
   "supply",
-  "fast"
+  "fast",
+  "charge"
  ],
  "facts": {
   "package_family": "DIP",
@@ -62,7 +54,7 @@
   "tier_counts": {
    "A": 7
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -115,6 +107,6 @@
   "kicad-symbols/Battery_Management/MAX713EPE",
   "kicad-symbols/Battery_Management/MAX713MJE"
  ],
- "embedding_text": "power-supply.dip | Power Power Supply | Through-hole power supply and battery management ICs in the DIP package family using DIP-16_W7.62mm footprints. | power supply dip through_hole dip-16 dip-16_w7.62mm battery management bq2003 max712 max713 power kicad-symbols battery 62mm pdip management charger w7 tht dil 54mm 300mil nickel supply fast | DIP | ",
+ "embedding_text": "power-supply.dip | Power Power Supply | 7 power power supply parts using DIP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | dip battery 62mm power pdip management charger w7 tht dil 54mm 300mil nickel supply fast charge | DIP | ",
  "class": "power.supply"
 }

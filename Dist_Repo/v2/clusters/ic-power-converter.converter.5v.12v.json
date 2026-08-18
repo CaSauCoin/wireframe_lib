@@ -7,41 +7,34 @@
   "Power",
   "Converter"
  ],
- "description": "Through-hole power converter IC cluster with 5V and 12V facets containing 21 parts across Converter_DCDC and Converter_ACDC footprints.",
+ "description": "21 ic power converter parts for 5V, 12V using Converter footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select for through-hole designs requiring 5V or 12V power converter ICs.",
-  "Prefer Tier A parts (15 available) over Tier B parts (6 available).",
-  "Ensure compatibility with the specific Converter_DCDC or Converter_ACDC THT footprint."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a Converter land pattern is intended."
  ],
  "avoid_when": [
-  "Surface-mount (SMD) mounting is required.",
-  "Designs require voltage facets other than 5V or 12V.",
-  "Package land patterns outside the specified THT converter footprints are required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than Converter."
  ],
  "keywords": [
-  "ic power converter",
-  "power converter",
   "converter",
-  "5v",
-  "12v",
-  "through_hole",
-  "tht",
-  "dcdc",
-  "acdc",
-  "kicad-symbols",
-  "xp power",
-  "murata",
-  "traco",
   "dc",
   "power",
   "xp",
+  "12v",
+  "5v",
+  "dcdc",
   "isolated",
+  "tht",
   "module",
   "voltage",
   "ic",
   "output",
   "vdc",
-  "input"
+  "input",
+  "murata"
  ],
  "facts": {
   "package_family": "Converter",
@@ -77,7 +70,7 @@
    "A": 15,
    "B": 6
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -144,6 +137,6 @@
   "kicad-symbols/Converter_DCDC/MGJ2D122003SC",
   "kicad-symbols/Converter_DCDC/MGJ2D122005SC"
  ],
- "embedding_text": "ic-power-converter.converter.5v.12v | IC Power Converter | Through-hole power converter IC cluster with 5V and 12V facets containing 21 parts across Converter_DCDC and Converter_ACDC footprints. | ic power converter power converter converter 5v 12v through_hole tht dcdc acdc kicad-symbols xp power murata traco dc power xp isolated module voltage ic output vdc input | Converter | 5V 12V",
+ "embedding_text": "ic-power-converter.converter.5v.12v | IC Power Converter | 21 ic power converter parts for 5V, 12V using Converter footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | converter dc power xp 12v 5v dcdc isolated tht module voltage ic output vdc input murata | Converter | 5V 12V",
  "class": "ic.power.converter"
 }

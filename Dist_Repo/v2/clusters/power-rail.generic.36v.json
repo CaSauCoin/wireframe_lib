@@ -6,36 +6,26 @@
   "Power",
   "Power Rail"
  ],
- "description": "Generic 36V schematic power rail symbols including +36V and -36V from the KiCad symbol library with package and footprint assigned later.",
+ "description": "2 power power rail parts for 36V with package chosen later. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select +36V or -36V based on the required schematic rail polarity.",
-  "Assign a physical footprint and package explicitly if required for the board layout.",
-  "Verify the power rail symbol matches the intended schematic net name."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Select a footprint/package explicitly before placement."
  ],
  "avoid_when": [
-  "A rail voltage other than positive or negative 36V is needed.",
-  "A physical power supply component or regulator IC is required instead of a schematic power symbol.",
-  "Predefined footprint attachments are required at the symbol level."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review."
  ],
  "keywords": [
-  "power rail",
-  "36v",
-  "+36v",
-  "-36v",
-  "power symbol",
-  "schematic symbol",
-  "kicad",
-  "generic power",
-  "voltage rail",
   "power",
-  "rail",
-  "36v rail",
+  "36v",
   "global",
   "symbol",
   "creates",
   "label",
   "with",
   "name",
+  "rail",
   "package",
   "chosen",
   "later"
@@ -57,7 +47,7 @@
   "tier_counts": {
    "G": 2
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -81,6 +71,6 @@
   "kicad-symbols/power/+36V",
   "kicad-symbols/power/-36V"
  ],
- "embedding_text": "power-rail.generic.36v | Power Power Rail | Generic 36V schematic power rail symbols including +36V and -36V from the KiCad symbol library with package and footprint assigned later. | power rail 36v +36v -36v power symbol schematic symbol kicad generic power voltage rail power rail 36v rail global symbol creates label with name package chosen later | package chosen later | 36V",
+ "embedding_text": "power-rail.generic.36v | Power Power Rail | 2 power power rail parts for 36V with package chosen later. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | power 36v global symbol creates label with name rail package chosen later | package chosen later | 36V",
  "class": "power.rail"
 }

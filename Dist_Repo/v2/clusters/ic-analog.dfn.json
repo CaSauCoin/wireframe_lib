@@ -6,27 +6,19 @@
   "IC",
   "Analog"
  ],
- "description": "Surface-mount analog IC cluster containing 44 parts in DFN package footprints sourced from KiCad libraries.",
+ "description": "44 ic analog parts using DFN footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when needing surface-mount analog ICs in DFN footprints.",
-  "Filter parts by quality tier requirements, with 33 tier A and 11 tier B parts available.",
-  "Match specific DFN footprint variants such as DFN-8, DFN-10, DFN-16, or DFN-24."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a DFN land pattern is intended."
  ],
  "avoid_when": [
-  "Avoid when board designs require through-hole or non-DFN package footprints.",
-  "Avoid when surface-mount (SMD) soldering process is not available."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than DFN."
  ],
  "keywords": [
   "dfn",
-  "ic analog",
-  "analog ic",
-  "smd",
-  "surface mount",
-  "analog switch",
-  "analog adc",
-  "analog comparator",
-  "kicad-symbols",
-  "alternate-kicad-library",
   "analog",
   "comparator",
   "hysteresis",
@@ -40,7 +32,8 @@
   "1ep",
   "akl",
   "propagation",
-  "delay"
+  "delay",
+  "alternate"
  ],
  "facts": {
   "package_family": "DFN",
@@ -72,7 +65,7 @@
    "A": 33,
    "B": 11
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -162,6 +155,6 @@
   "Alternate-KiCad-Library/Analog_Comparator_AKL/LM393Q",
   "Alternate-KiCad-Library/Analog_Comparator_AKL/TS331IQ"
  ],
- "embedding_text": "ic-analog.dfn | IC Analog | Surface-mount analog IC cluster containing 44 parts in DFN package footprints sourced from KiCad libraries. | dfn ic analog analog ic smd surface mount analog switch analog adc analog comparator kicad-symbols alternate-kicad-library analog comparator hysteresis built in reference 5mm dual p0 ic 1ep akl propagation delay | DFN | ",
+ "embedding_text": "ic-analog.dfn | IC Analog | 44 ic analog parts using DFN footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | dfn analog comparator hysteresis built in reference 5mm dual p0 ic 1ep akl propagation delay alternate | DFN | ",
  "class": "ic.analog"
 }

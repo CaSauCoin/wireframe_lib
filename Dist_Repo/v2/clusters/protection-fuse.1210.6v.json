@@ -6,37 +6,29 @@
   "Protection",
   "Fuse"
  ],
- "description": "Surface-mount 6V protection fuses in 1210 footprints from KiCad library sources.",
+ "description": "1 protection fuse parts for 6V using 1210 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when designing 6V overcurrent protection circuits requiring an SMD 1210 footprint.",
-  "Verify specific hold and trip current ratings from part identifiers such as 2.0A/4.0A.",
-  "Confirm land pattern compatibility with the 1210 surface-mount package."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a 1210 land pattern is intended."
  ],
  "avoid_when": [
-  "Circuit operating voltages exceed 6V.",
-  "Through-hole mounting or package footprints other than 1210 are required.",
-  "Non-fuse protection or different current ratings are needed."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than 1210."
  ],
  "keywords": [
-  "protection",
   "fuse",
-  "6v",
-  "1210",
-  "smd",
-  "surface mount",
-  "protection fuse",
   "sparkfun",
-  "kicad",
-  "overcurrent",
-  "2.0a",
-  "4.0a",
+  "6v",
   "0a",
   "resettable",
   "2a",
   "ptc",
   "pptc",
   "polyfuse",
-  "polyswitch"
+  "polyswitch",
+  "protection"
  ],
  "facts": {
   "package_family": "1210",
@@ -59,7 +51,7 @@
   "tier_counts": {
    "A": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -74,6 +66,6 @@
  "part_ids": [
   "SparkFun-KiCad-Libraries/SparkFun-Fuse/Fuse 6V/2.0A/4.0A"
  ],
- "embedding_text": "protection-fuse.1210.6v | Protection Fuse | Surface-mount 6V protection fuses in 1210 footprints from KiCad library sources. | protection fuse 6v 1210 smd surface mount protection fuse sparkfun kicad overcurrent 2.0a 4.0a 0a resettable 2a ptc pptc polyfuse polyswitch | 1210 | 6V",
+ "embedding_text": "protection-fuse.1210.6v | Protection Fuse | 1 protection fuse parts for 6V using 1210 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | fuse sparkfun 6v 0a resettable 2a ptc pptc polyfuse polyswitch protection | 1210 | 6V",
  "class": "protection.fuse"
 }

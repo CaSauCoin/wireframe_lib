@@ -6,31 +6,20 @@
   "Discrete",
   "Transistor"
  ],
- "description": "Discrete transistor component cluster featuring SO package family footprints including SO-8_3.9x4.9mm_P1.27mm and SO-G3 for surface-mount designs.",
+ "description": "15 discrete transistor parts using SO footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when requiring surface-mount discrete transistors in SO package footprints.",
-  "Choose tier A parts sourced from Alternate-KiCad-Library.",
-  "Confirm target footprint match with SO-8_3.9x4.9mm_P1.27mm or SO-G3."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SO land pattern is intended."
  ],
  "avoid_when": [
-  "Designs require package families other than SO.",
-  "Through-hole mounting is required instead of SMD.",
-  "Tier C rated parts are unacceptable for the application."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SO."
  ],
  "keywords": [
-  "discrete transistor",
   "so",
-  "so-8",
-  "so-g3",
-  "smd",
-  "discrete.transistor",
   "mosfet",
-  "alternate-kicad-library",
-  "fds2572",
-  "fds2582",
-  "fds2672",
-  "fds2734",
-  "fqs4901",
   "transistor",
   "enchancement",
   "mos",
@@ -41,7 +30,10 @@
   "library",
   "9x4",
   "9mm",
-  "p1"
+  "p1",
+  "27mm",
+  "emos",
+  "emosfet"
  ],
  "facts": {
   "package_family": "SO",
@@ -66,7 +58,7 @@
    "A": 14,
    "C": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -127,6 +119,6 @@
   "Alternate-KiCad-Library/Transistor_MOSFET_AKL/Si4490DY",
   "dist-legacy/SO-G3"
  ],
- "embedding_text": "discrete-transistor.so | Discrete Transistor | Discrete transistor component cluster featuring SO package family footprints including SO-8_3.9x4.9mm_P1.27mm and SO-G3 for surface-mount designs. | discrete transistor so so-8 so-g3 smd discrete.transistor mosfet alternate-kicad-library fds2572 fds2582 fds2672 fds2734 fqs4901 transistor enchancement mos discrete akl alternate kicad library 9x4 9mm p1 | SO | ",
+ "embedding_text": "discrete-transistor.so | Discrete Transistor | 15 discrete transistor parts using SO footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | so mosfet transistor enchancement mos discrete akl alternate kicad library 9x4 9mm p1 27mm emos emosfet | SO | ",
  "class": "discrete.transistor"
 }

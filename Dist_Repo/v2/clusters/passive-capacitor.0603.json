@@ -6,35 +6,28 @@
   "Passive",
   "Capacitor"
  ],
- "description": "Cluster of 61 passive SMD capacitor library parts matching 0603 package family footprints across KiCad and Altium libraries.",
+ "description": "61 passive capacitor parts using 0603 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Prioritize the 38 tier A parts for higher scoring library entries.",
-  "Match the specific footprint variant such as standard SMD or hand-solder pad layouts.",
-  "Verify whether polarized tantalum or general capacitor footprints are required."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a 0603 land pattern is intended."
  ],
  "avoid_when": [
-  "A through-hole or non-0603 package footprint is required.",
-  "Tier C unverified parts do not meet library reliability standards.",
-  "The required mounting type is not SMD."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than 0603."
  ],
  "keywords": [
-  "passive",
   "capacitor",
-  "0603",
-  "1608metric",
-  "smd",
-  "tantalum",
-  "eia-1608",
-  "c0603",
-  "c_0603",
-  "kicad",
-  "altium",
-  "surface mount",
   "sparkfun",
+  "passive",
   "cap",
+  "1608metric",
   "avx",
   "unpolarized",
+  "smd",
   "cp",
+  "tantalum",
   "eia",
   "pad",
   "surface",
@@ -80,7 +73,7 @@
    "A": 38,
    "C": 23
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -187,6 +180,6 @@
   "matthiasbock-altium-libraries/C 0603 _ 1608/C_0603___1608",
   "embedded-society-altium-libraries/GENERIC_MLCC_CAP_0603_IPC_MEDIU/GENERIC_MLCC_CAP_0603_IPC_MEDIU"
  ],
- "embedding_text": "passive-capacitor.0603 | Passive Capacitor | Cluster of 61 passive SMD capacitor library parts matching 0603 package family footprints across KiCad and Altium libraries. | passive capacitor 0603 1608metric smd tantalum eia-1608 c0603 c_0603 kicad altium surface mount sparkfun cap avx unpolarized cp eia pad surface mount mm pitch | 0603 | ",
+ "embedding_text": "passive-capacitor.0603 | Passive Capacitor | 61 passive capacitor parts using 0603 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | capacitor sparkfun passive cap 1608metric avx unpolarized smd cp tantalum eia pad surface mount mm pitch | 0603 | ",
  "class": "passive.capacitor"
 }

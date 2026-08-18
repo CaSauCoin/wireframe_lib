@@ -5,29 +5,21 @@
  "category_path": [
   "IC"
  ],
- "description": "Integrated circuit cluster containing 1 tier C part associated with the NanoBoard1 package family and NanoBoard1_LOGO footprint.",
+ "description": "1 ic parts using NanoBoard1 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Verify compatibility with the NanoBoard1 package family and NanoBoard1_LOGO footprint.",
-  "Note that this cluster contains 1 tier C part sourced from dist-legacy.",
-  "Confirm mounting specifications as the mount type is listed as unknown."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a NanoBoard1 land pattern is intended."
  ],
  "avoid_when": [
-  "The PCB layout requires a package family or footprint other than NanoBoard1.",
-  "Planner-visible parts are required, as planner visible count is zero.",
-  "Parts with review status beyond generated or with higher tier ratings are required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than NanoBoard1."
  ],
  "keywords": [
-  "ic",
-  "integrated circuit",
   "nanoboard1",
-  "nanoboard1_logo",
-  "logo footprint",
-  "nanoboard1 package",
-  "dist-legacy",
-  "tier c",
-  "unknown mount",
-  "generated review",
-  "logo"
+  "logo",
+  "ic"
  ],
  "facts": {
   "package_family": "NanoBoard1",
@@ -48,12 +40,12 @@
   "tier_counts": {
    "C": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
   "dist-legacy/NanoBoard1_LOGO"
  ],
- "embedding_text": "ic.nanoboard1 | IC | Integrated circuit cluster containing 1 tier C part associated with the NanoBoard1 package family and NanoBoard1_LOGO footprint. | ic integrated circuit nanoboard1 nanoboard1_logo logo footprint nanoboard1 package dist-legacy tier c unknown mount generated review logo | NanoBoard1 | ",
+ "embedding_text": "ic.nanoboard1 | IC | 1 ic parts using NanoBoard1 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | nanoboard1 logo ic | NanoBoard1 | ",
  "class": "ic"
 }

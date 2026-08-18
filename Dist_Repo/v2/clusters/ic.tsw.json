@@ -5,28 +5,21 @@
  "category_path": [
   "IC"
  ],
- "description": "IC component cluster with 2 tier C parts using TSW package family footprints including TSW-107-07-G-T and TSW-108-08-G-T-RA.",
+ "description": "2 ic parts using TSW footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when requiring TSW package family footprints such as TSW-107-07-G-T or TSW-108-08-G-T-RA.",
-  "Verify part specifications as all 2 parts belong to quality tier C.",
-  "Check mounting details prior to design commitment since mount type is recorded as unknown."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a TSW land pattern is intended."
  ],
  "avoid_when": [
-  "Avoid when the application requires package families other than TSW.",
-  "Avoid if unverified tier C components with zero planner visible count are unsuitable."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than TSW."
  ],
  "keywords": [
   "tsw",
-  "ic",
-  "tsw-107-07-g-t",
-  "tsw-108-08-g-t-ra",
-  "tsw package",
-  "tier c",
-  "dist-legacy",
-  "unknown mount",
-  "generated review status",
-  "ic class",
   "ra",
+  "ic",
   "pad",
   "mm",
   "pitch",
@@ -52,13 +45,13 @@
   "tier_counts": {
    "C": 2
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
   "dist-legacy/TSW-107-07-G-T",
   "dist-legacy/TSW-108-08-G-T-RA"
  ],
- "embedding_text": "ic.tsw | IC | IC component cluster with 2 tier C parts using TSW package family footprints including TSW-107-07-G-T and TSW-108-08-G-T-RA. | tsw ic tsw-107-07-g-t tsw-108-08-g-t-ra tsw package tier c dist-legacy unknown mount generated review status ic class ra pad mm pitch pins | TSW | ",
+ "embedding_text": "ic.tsw | IC | 2 ic parts using TSW footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | tsw ra ic pad mm pitch pins | TSW | ",
  "class": "ic"
 }

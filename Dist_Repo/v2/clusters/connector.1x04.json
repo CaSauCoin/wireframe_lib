@@ -5,44 +5,34 @@
  "category_path": [
   "Connector"
  ],
- "description": "Cluster of 3 SparkFun 1x04-footprint connector parts (2.54mm pitch) including standard through-hole, horizontal SMD header, and locking header variants; one tier A and two tier B entries.",
+ "description": "3 connector parts using 1x04 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Prefer the tier A entry (Conn_01x04_P2.54mm, score 88) unless a specific mounting style is required",
-  "Match footprint exactly: standard THT, horizontal SMD header, or locking header",
-  "Confirm mount type (through_hole vs unknown) fits the assembly process",
-  "Verify symbol-footprint pairing before committing to a PCB layout"
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a 1x04 land pattern is intended."
  ],
  "avoid_when": [
-  "Design requires a pin count other than 4",
-  "Electrical rating (voltage/current) is not specified and must be verified elsewhere",
-  "A locking or SMD variant is needed but the standard THT part was selected by default",
-  "The board needs a footprint other than 1x04_P2.54mm variants"
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than 1x04."
  ],
  "keywords": [
   "connector",
-  "1x04",
-  "01x04",
-  "conn_01x04",
-  "p2.54mm",
-  "2.54mm pitch",
-  "header",
-  "pin header",
-  "through hole",
-  "smd header",
-  "horizontal smd",
-  "locking header",
   "sparkfun",
-  "4 pin connector",
-  "4-position header",
-  "pcb connector",
   "p2",
   "54mm",
+  "1x04",
   "conn",
+  "01x04",
   "pth",
   "smd",
   "locking",
+  "header",
   "horizontal",
-  "right"
+  "right",
+  "angle",
+  "pin",
+  "male"
  ],
  "facts": {
   "package_family": "1x04",
@@ -67,7 +57,7 @@
    "A": 1,
    "B": 2
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -100,6 +90,6 @@
   "SparkFun-KiCad-Libraries/SparkFun-Connector/Conn_01x04_P2.54mm_Header_Horizontal_SMD",
   "SparkFun-KiCad-Libraries/SparkFun-Connector/Conn_01x04_P2.54mm_Locking"
  ],
- "embedding_text": "connector.1x04 | Connector | Cluster of 3 SparkFun 1x04-footprint connector parts (2.54mm pitch) including standard through-hole, horizontal SMD header, and locking header variants; one tier A and two tier B entries. | connector 1x04 01x04 conn_01x04 p2.54mm 2.54mm pitch header pin header through hole smd header horizontal smd locking header sparkfun 4 pin connector 4-position header pcb connector p2 54mm conn pth smd locking horizontal right | 1x04 | ",
+ "embedding_text": "connector.1x04 | Connector | 3 connector parts using 1x04 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | connector sparkfun p2 54mm 1x04 conn 01x04 pth smd locking header horizontal right angle pin male | 1x04 | ",
  "class": "connector"
 }

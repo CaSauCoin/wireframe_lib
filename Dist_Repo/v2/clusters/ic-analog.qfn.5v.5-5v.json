@@ -6,33 +6,24 @@
   "IC",
   "Analog"
  ],
- "description": "Analog IC cluster comprising SMD components in DHVQFN-16-1EP footprints rated for 5V and 5.5V operation.",
+ "description": "2 ic analog parts for 5V, 5.5V using QFN footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Designing for SMD analog ICs using QFN / DHVQFN-16-1EP footprints.",
-  "Operating within 5V or 5.5V supply voltage facets.",
-  "Selecting parts from the KiCad symbols catalog such as NMUX1308BQ or NMUX1309BQ."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a QFN land pattern is intended."
  ],
  "avoid_when": [
-  "The design requires packages other than QFN / DHVQFN-16-1EP.",
-  "Through-hole mounting or non-SMD layout is required.",
-  "Voltages outside the 5V to 5.5V range are specified."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than QFN."
  ],
  "keywords": [
-  "ic",
   "analog",
-  "ic.analog",
-  "qfn",
-  "dhvqfn",
-  "dhvqfn-16-1ep",
-  "smd",
   "5v",
-  "5.5v",
-  "nmux1308bq",
-  "nmux1309bq",
-  "analog switch",
-  "kicad-symbols",
+  "dhvqfn",
   "switch",
   "5mm",
+  "nmux1308bq",
   "channel",
   "multiplexer",
   "and",
@@ -41,7 +32,8 @@
   "injection",
   "current",
   "control",
-  "supply"
+  "supply",
+  "voltage"
  ],
  "facts": {
   "package_family": "QFN",
@@ -65,7 +57,7 @@
   "tier_counts": {
    "B": 2
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -89,6 +81,6 @@
   "kicad-symbols/Analog_Switch/NMUX1308BQ",
   "kicad-symbols/Analog_Switch/NMUX1309BQ"
  ],
- "embedding_text": "ic-analog.qfn.5v.5-5v | IC Analog | Analog IC cluster comprising SMD components in DHVQFN-16-1EP footprints rated for 5V and 5.5V operation. | ic analog ic.analog qfn dhvqfn dhvqfn-16-1ep smd 5v 5.5v nmux1308bq nmux1309bq analog switch kicad-symbols switch 5mm channel multiplexer and demultiplexer with injection current control supply | QFN | 5V 5.5V",
+ "embedding_text": "ic-analog.qfn.5v.5-5v | IC Analog | 2 ic analog parts for 5V, 5.5V using QFN footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | analog 5v dhvqfn switch 5mm nmux1308bq channel multiplexer and demultiplexer with injection current control supply voltage | QFN | 5V 5.5V",
  "class": "ic.analog"
 }

@@ -7,30 +7,19 @@
   "Analog",
   "Op-Amp"
  ],
- "description": "Surface-mount analog operational amplifier IC cluster containing 379 Tier-A parts across various TSSOP footprints ranging from 8 to 20 pins.",
+ "description": "379 ic analog op-amp parts using TSSOP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select based on required TSSOP pin count and lead pitch (0.5mm or 0.65mm).",
-  "Determine if an exposed pad (EP) footprint variant is required.",
-  "Verify exact footprint compatibility among TSSOP-8, TSSOP-10, TSSOP-14, TSSOP-16, and TSSOP-20 options."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a TSSOP land pattern is intended."
  ],
  "avoid_when": [
-  "Through-hole or non-SMD mounting is required.",
-  "The PCB layout requires a package family other than TSSOP.",
-  "Pin count or package dimensions differ from the listed TSSOP footprint variants."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than TSSOP."
  ],
  "keywords": [
   "tssop",
-  "opamp",
-  "op-amp",
-  "operational amplifier",
-  "analog ic",
-  "smd",
-  "tssop-8",
-  "tssop-10",
-  "tssop-14",
-  "tssop-16",
-  "tssop-20",
-  "exposed pad",
   "amplifier",
   "operational",
   "rail",
@@ -39,10 +28,13 @@
   "p0",
   "op",
   "amp",
+  "opamp",
   "ic",
   "analog",
   "65mm",
-  "so"
+  "so",
+  "offset",
+  "akl"
  ],
  "facts": {
   "package_family": "TSSOP",
@@ -69,7 +61,7 @@
   "tier_counts": {
    "A": 379
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -494,6 +486,6 @@
   "Alternate-KiCad-Library/Amplifier_Operational_AKL/MCP619-E-ST",
   "Alternate-KiCad-Library/Amplifier_Operational_AKL/MCP619-I-ST"
  ],
- "embedding_text": "ic-analog-opamp.tssop | IC Analog Op-Amp | Surface-mount analog operational amplifier IC cluster containing 379 Tier-A parts across various TSSOP footprints ranging from 8 to 20 pins. | tssop opamp op-amp operational amplifier analog ic smd tssop-8 tssop-10 tssop-14 tssop-16 tssop-20 exposed pad amplifier operational rail quad cmos p0 op amp ic analog 65mm so | TSSOP | ",
+ "embedding_text": "ic-analog-opamp.tssop | IC Analog Op-Amp | 379 ic analog op-amp parts using TSSOP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | tssop amplifier operational rail quad cmos p0 op amp opamp ic analog 65mm so offset akl | TSSOP | ",
  "class": "ic.analog.opamp"
 }

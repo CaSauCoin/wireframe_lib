@@ -6,33 +6,22 @@
   "IC",
   "Sensor"
  ],
- "description": "Cluster of SMD I2C sensor ICs in SOIC packaging with SOIC-8 footprints (3.9x4.9mm, 1.27mm pitch), including magnetic and temperature sensors.",
+ "description": "4 ic sensor parts for I2C using SOIC footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select for surface-mount sensor ICs using an I2C communication interface.",
-  "Choose when using SOIC-8 land patterns with 1.27mm pitch and 3.9x4.9mm body size.",
-  "Use for temperature sensing (LM75B, LM92CIM, TMP411) or magnetic sensing (AS5510-DSO)."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SOIC land pattern is intended."
  ],
  "avoid_when": [
-  "The board design requires through-hole components or non-SOIC packages.",
-  "The sensor interface must be non-I2C, such as SPI or analog.",
-  "A footprint other than SOIC-8_3.9x4.9mm_P1.27mm is needed."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SOIC."
  ],
  "keywords": [
-  "ic sensor",
   "sensor",
-  "i2c",
   "soic",
-  "soic-8",
-  "smd",
-  "surface mount",
-  "temperature sensor",
-  "magnetic sensor",
-  "as5510-dso",
-  "lm75b",
-  "lm92cim",
-  "tmp411",
-  "1.27mm pitch",
   "temperature",
+  "i2c",
   "9x4",
   "9mm",
   "p1",
@@ -41,7 +30,10 @@
   "ic",
   "and",
   "digital",
-  "thermal"
+  "thermal",
+  "with",
+  "remote",
+  "local"
  ],
  "facts": {
   "package_family": "SOIC",
@@ -64,7 +56,7 @@
   "tier_counts": {
    "A": 4
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -106,6 +98,6 @@
   "kicad-symbols/Sensor_Temperature/LM92CIM",
   "kicad-symbols/Sensor_Temperature/TMP411"
  ],
- "embedding_text": "ic-sensor.soic.i2c | IC Sensor | Cluster of SMD I2C sensor ICs in SOIC packaging with SOIC-8 footprints (3.9x4.9mm, 1.27mm pitch), including magnetic and temperature sensors. | ic sensor sensor i2c soic soic-8 smd surface mount temperature sensor magnetic sensor as5510-dso lm75b lm92cim tmp411 1.27mm pitch temperature 9x4 9mm p1 27mm so ic and digital thermal | SOIC | I2C",
+ "embedding_text": "ic-sensor.soic.i2c | IC Sensor | 4 ic sensor parts for I2C using SOIC footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | sensor soic temperature i2c 9x4 9mm p1 27mm so ic and digital thermal with remote local | SOIC | I2C",
  "class": "ic.sensor"
 }

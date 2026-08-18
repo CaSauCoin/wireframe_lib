@@ -7,42 +7,34 @@
   "Driver",
   "Display"
  ],
- "description": "This IC display driver cluster contains 14 through-hole components utilizing HDSP family footprints including HDSP-A151, HDSP-7401, HDSP-7507, HDSP-7801, HDSP-7807, and HDSP-A401.",
+ "description": "14 ic driver display parts using HDSP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select tier A parts (8 available) over tier C parts (6 available).",
-  "Match the required footprint variant such as HDSP-A151, HDSP-7401, HDSP-7507, HDSP-7801, HDSP-7807, or HDSP-A401.",
-  "Confirm through-hole mounting compatibility for the PCB layout."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a HDSP land pattern is intended."
  ],
  "avoid_when": [
-  "Surface-mount (SMD) components are required instead of through-hole mounting.",
-  "The PCB layout requires package families other than HDSP.",
-  "Components outside the IC Driver Display classification are needed."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than HDSP."
  ],
  "keywords": [
   "hdsp",
-  "ic driver display",
-  "ic",
-  "driver",
   "display",
-  "through hole",
-  "hdsp-a151",
-  "hdsp-7401",
-  "hdsp-7507",
-  "hdsp-7801",
-  "hdsp-7807",
-  "hdsp-a401",
-  "hdsp-7403",
-  "hdsp-7501",
-  "hdsp-7503",
-  "hdsp-7508",
-  "hdsp-7803",
   "segment",
   "one",
   "digit",
   "common",
   "character",
   "led",
-  "red"
+  "ic",
+  "driver",
+  "red",
+  "high",
+  "efficiency",
+  "anode",
+  "overflow",
+  "green"
  ],
  "facts": {
   "package_family": "HDSP",
@@ -69,7 +61,7 @@
    "A": 8,
    "C": 6
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -129,6 +121,6 @@
   "kicad-symbols/Display_Character/HDSP-7507",
   "kicad-symbols/Display_Character/HDSP-7807"
  ],
- "embedding_text": "ic-driver-display.hdsp | IC Driver Display | This IC display driver cluster contains 14 through-hole components utilizing HDSP family footprints including HDSP-A151, HDSP-7401, HDSP-7507, HDSP-7801, HDSP-7807, and HDSP-A401. | hdsp ic driver display ic driver display through hole hdsp-a151 hdsp-7401 hdsp-7507 hdsp-7801 hdsp-7807 hdsp-a401 hdsp-7403 hdsp-7501 hdsp-7503 hdsp-7508 hdsp-7803 segment one digit common character led red | HDSP | ",
+ "embedding_text": "ic-driver-display.hdsp | IC Driver Display | 14 ic driver display parts using HDSP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | hdsp display segment one digit common character led ic driver red high efficiency anode overflow green | HDSP | ",
  "class": "ic.driver.display"
 }

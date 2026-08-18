@@ -5,37 +5,31 @@
  "category_path": [
   "IC"
  ],
- "description": "Cluster of 64 IC parts for 3.3V LDO devices in the SOT package family, supporting SMD and through-hole mounting.",
+ "description": "64 ic parts for 3.3V, LDO using SOT footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select based on specific footprint requirements such as SOT-223, SOT-89, or SOT-353 variants.",
-  "Choose between SMD and through-hole mounting options.",
-  "Filter by quality tier (Tier A or Tier B) and source library."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SOT land pattern is intended."
  ],
  "avoid_when": [
-  "Target designs require a non-3.3V output or non-LDO functionality.",
-  "The PCB footprint requirement is not a SOT package family variant.",
-  "Mounting or package specifications fall outside the provided SOT cluster footprints."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SOT."
  ],
  "keywords": [
-  "ic",
-  "3.3v",
-  "ldo",
   "sot",
-  "smd",
-  "through_hole",
-  "sot-223",
-  "sot-89",
-  "sot-353",
-  "voltage",
-  "regulator",
-  "kicad",
   "3v",
+  "regulator",
+  "voltage",
+  "ldo",
   "low",
   "dropout",
+  "ic",
   "pmic",
   "power",
   "akl",
   "alternate",
+  "kicad",
   "library",
   "vreg",
   "supply"
@@ -74,7 +68,7 @@
    "A": 57,
    "B": 7
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -184,6 +178,6 @@
   "Seeed-OPL-Kicad-Library/OPL_Integrated_Circuit/PMIC-CJT1117-3.3_SOT223_",
   "Seeed-OPL-Kicad-Library/OPL_Integrated_Circuit/PMIC-CJA1117B-3.3_SOT-89_"
  ],
- "embedding_text": "ic.sot.3v3.ldo | IC | Cluster of 64 IC parts for 3.3V LDO devices in the SOT package family, supporting SMD and through-hole mounting. | ic 3.3v ldo sot smd through_hole sot-223 sot-89 sot-353 voltage regulator kicad 3v low dropout pmic power akl alternate library vreg supply | SOT | 3.3V LDO",
+ "embedding_text": "ic.sot.3v3.ldo | IC | 64 ic parts for 3.3V, LDO using SOT footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | sot 3v regulator voltage ldo low dropout ic pmic power akl alternate kicad library vreg supply | SOT | 3.3V LDO",
  "class": "ic"
 }

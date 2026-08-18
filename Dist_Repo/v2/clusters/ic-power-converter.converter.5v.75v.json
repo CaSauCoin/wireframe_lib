@@ -7,42 +7,34 @@
   "Power",
   "Converter"
  ],
- "description": "Cluster of 18 through-hole IC power converter parts associated with 5V and 75V facets using Converter footprints from KiCad symbols.",
+ "description": "18 ic power converter parts for 5V, 75V using Converter footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Require through-hole mounting for IC power converters.",
-  "Select based on specific DCDC converter footprint matching such as THL, THN, TMR, TRN, or TEC series.",
-  "Verify part details as all 18 entries are quality tier B."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a Converter land pattern is intended."
  ],
  "avoid_when": [
-  "Surface-mount design is required instead of through-hole mounting.",
-  "Land patterns outside the specified Converter package family are required.",
-  "Strict Tier A quality classification is required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than Converter."
  ],
  "keywords": [
-  "ic",
-  "power converter",
-  "dcdc converter",
-  "through hole",
-  "tht",
-  "5v",
-  "75v",
   "converter",
-  "kicad symbols",
-  "traco",
-  "thl30",
-  "thl40",
-  "thn10",
-  "tmr10",
-  "trn3",
   "dc",
   "dcdc",
+  "traco",
+  "75v",
+  "5v",
   "output",
+  "tht",
   "sip",
   "regulated",
   "input",
   "fixed",
   "voltage",
-  "isolation"
+  "isolation",
+  "isolated",
+  "ic"
  ],
  "facts": {
   "package_family": "Converter",
@@ -75,7 +67,7 @@
   "tier_counts": {
    "B": 18
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -139,6 +131,6 @@
   "kicad-symbols/Converter_DCDC/TMR2-4811WI",
   "kicad-symbols/Converter_DCDC/TMR4-4811WI"
  ],
- "embedding_text": "ic-power-converter.converter.5v.75v | IC Power Converter | Cluster of 18 through-hole IC power converter parts associated with 5V and 75V facets using Converter footprints from KiCad symbols. | ic power converter dcdc converter through hole tht 5v 75v converter kicad symbols traco thl30 thl40 thn10 tmr10 trn3 dc dcdc output sip regulated input fixed voltage isolation | Converter | 5V 75V",
+ "embedding_text": "ic-power-converter.converter.5v.75v | IC Power Converter | 18 ic power converter parts for 5V, 75V using Converter footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | converter dc dcdc traco 75v 5v output tht sip regulated input fixed voltage isolation isolated ic | Converter | 5V 75V",
  "class": "ic.power.converter"
 }

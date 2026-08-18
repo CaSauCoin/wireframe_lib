@@ -6,44 +6,34 @@
   "Discrete",
   "Diode"
  ],
- "description": "Cluster of 40 discrete 14V diodes (TVS and Zener types) in D-family footprints spanning SMD (SMC, SMB, SMA, SOD-123, SOD-123F) and through-hole (DO-15, DO-35, P600) land patterns.",
+ "description": "40 discrete diode parts for 14V using D footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Confirm whether the design needs a TVS or a Zener diode — this cluster mixes both under the same 14V/D grouping",
-  "Match the exact footprint variant (e.g. D_SMC vs D_SMC_TVS, D_SMA vs D_SMA_TVS) to the intended land pattern",
-  "Prefer tier A entries (37 of 40 parts) for higher confidence; only 3 parts are tier B",
-  "Choose SMD footprints (SMC/SMB/SMA/SOD-123/SOD-123F) or through-hole footprints (DO-15/DO-35/P600) based on board mounting requirements"
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a D land pattern is intended."
  ],
  "avoid_when": [
-  "The circuit needs a diode type other than TVS or Zener (e.g. rectifier or Schottky)",
-  "A voltage rating other than 14V is required",
-  "The required footprint/land pattern is not one of the listed D-family variants",
-  "Symbol-footprint pairing is unverified, since review_status is 'generated' and not manually confirmed"
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than D."
  ],
  "keywords": [
   "diode",
   "tvs",
-  "zener",
   "14v",
-  "d package",
-  "discrete diode",
-  "smc",
-  "smb",
-  "sma",
-  "sod-123",
-  "sod-123f",
-  "do-15",
-  "do-35",
-  "p600",
-  "smd diode",
-  "through hole diode",
-  "alternate kicad library",
   "akl",
   "alternate",
   "kicad",
   "library",
   "discrete",
   "unidirectional",
-  "do"
+  "do",
+  "zener",
+  "bidirectional",
+  "smc",
+  "sod",
+  "horizontal",
+  "sma"
  ],
  "facts": {
   "package_family": "D",
@@ -79,7 +69,7 @@
    "A": 37,
    "B": 3
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -165,6 +155,6 @@
   "Alternate-KiCad-Library/Diode_TVS_AKL/MSMP14A",
   "Alternate-KiCad-Library/Diode_TVS_AKL/TPSMA6L14A"
  ],
- "embedding_text": "discrete-diode.d.14v | Discrete Diode | Cluster of 40 discrete 14V diodes (TVS and Zener types) in D-family footprints spanning SMD (SMC, SMB, SMA, SOD-123, SOD-123F) and through-hole (DO-15, DO-35, P600) land patterns. | diode tvs zener 14v d package discrete diode smc smb sma sod-123 sod-123f do-15 do-35 p600 smd diode through hole diode alternate kicad library akl alternate kicad library discrete unidirectional do | D | 14V",
+ "embedding_text": "discrete-diode.d.14v | Discrete Diode | 40 discrete diode parts for 14V using D footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | diode tvs 14v akl alternate kicad library discrete unidirectional do zener bidirectional smc sod horizontal sma | D | 14V",
  "class": "discrete.diode"
 }

@@ -6,44 +6,34 @@
   "Discrete",
   "BJT"
  ],
- "description": "SMD discrete BJT cluster in the 40V facet, spanning SOT-363/SC-70-6, SOT-323/SC-70, SOT-89-3, and SOT-223-3 footprints across 53 parts (51 tier A, 2 tier C).",
+ "description": "53 discrete bjt parts for 40V using SOT footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Match the exact footprint (SOT-363, SOT-323, SOT-89, or SOT-223) to the intended PCB land pattern.",
-  "Prefer tier A entries (51 of 53) over the 2 tier C entries.",
-  "Confirm the 40V facet actually covers your circuit's required voltage before committing.",
-  "Note source library (kicad-symbols vs Alternate-KiCad-Library) when judging symbol/footprint trust."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SOT land pattern is intended."
  ],
  "avoid_when": [
-  "Circuit requires a voltage rating above the 40V facet.",
-  "Layout needs a package outside SOT-363, SOT-323, SOT-89, or SOT-223.",
-  "Only tier C parts match and footprint mapping is unverified.",
-  "Metadata review_status is 'generated' and the design needs manually verified data."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SOT."
  ],
  "keywords": [
-  "bjt",
-  "discrete bjt",
-  "transistor",
   "sot",
-  "sot-363",
-  "sot-323",
-  "sot-89",
-  "sot-223",
-  "sc-70",
+  "transistor",
+  "bjt",
   "40v",
-  "smd",
-  "surface mount",
-  "kicad-symbols",
-  "alternate-kicad-library",
-  "tier a",
-  "tabpin2",
-  "generated cluster",
   "sc",
   "npn",
   "pnp",
   "discrete",
   "dual",
   "200ma",
-  "akl"
+  "akl",
+  "alternate",
+  "kicad",
+  "library",
+  "ic",
+  "vce"
  ],
  "facts": {
   "package_family": "SOT",
@@ -71,7 +61,7 @@
    "A": 51,
    "C": 2
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -170,6 +160,6 @@
   "kicad-symbols/Transistor_BJT/PZT3904",
   "kicad-symbols/Transistor_BJT/PZT3906"
  ],
- "embedding_text": "discrete-bjt.sot.40v | Discrete BJT | SMD discrete BJT cluster in the 40V facet, spanning SOT-363/SC-70-6, SOT-323/SC-70, SOT-89-3, and SOT-223-3 footprints across 53 parts (51 tier A, 2 tier C). | bjt discrete bjt transistor sot sot-363 sot-323 sot-89 sot-223 sc-70 40v smd surface mount kicad-symbols alternate-kicad-library tier a tabpin2 generated cluster sc npn pnp discrete dual 200ma akl | SOT | 40V",
+ "embedding_text": "discrete-bjt.sot.40v | Discrete BJT | 53 discrete bjt parts for 40V using SOT footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | sot transistor bjt 40v sc npn pnp discrete dual 200ma akl alternate kicad library ic vce | SOT | 40V",
  "class": "discrete.bjt"
 }

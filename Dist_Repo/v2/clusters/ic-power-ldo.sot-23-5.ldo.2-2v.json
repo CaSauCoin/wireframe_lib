@@ -7,30 +7,21 @@
   "Power",
   "Linear Regulator"
  ],
- "description": "Surface-mount 2.2V LDO linear regulator ICs in SOT-23-5 packages.",
+ "description": "2 ic power linear regulator parts for LDO, 2.2V using SOT-23-5 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when requiring a 2.2V fixed LDO linear regulator in a surface-mount SOT-23-5 footprint.",
-  "Choose between available Tier A parts such as APE8865Y5-22-HF-3 and TPS7A0522PDBV.",
-  "Verify part pinouts and detailed ratings against component datasheets before completing board layout."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SOT-23-5 land pattern is intended."
  ],
  "avoid_when": [
-  "Output voltages other than 2.2V are required.",
-  "The layout requires a package family other than SOT-23-5.",
-  "Through-hole mounting or non-linear regulator topologies are required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SOT-23-5."
  ],
  "keywords": [
-  "sot-23-5",
-  "ldo",
-  "linear regulator",
-  "2.2v",
-  "smd",
-  "ic power",
-  "ic power linear regulator",
-  "ape8865y5-22-hf-3",
-  "tps7a0522pdbv",
-  "regulator",
-  "kicad-symbols",
   "sot",
+  "regulator",
+  "ldo",
   "linear",
   "2v",
   "low",
@@ -38,6 +29,7 @@
   "fixed",
   "output",
   "to",
+  "smd",
   "ic",
   "power",
   "iq",
@@ -66,7 +58,7 @@
   "tier_counts": {
    "A": 2
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -90,6 +82,6 @@
   "kicad-symbols/Regulator_Linear/APE8865Y5-22-HF-3",
   "kicad-symbols/Regulator_Linear/TPS7A0522PDBV"
  ],
- "embedding_text": "ic-power-ldo.sot-23-5.ldo.2-2v | IC Power Linear Regulator | Surface-mount 2.2V LDO linear regulator ICs in SOT-23-5 packages. | sot-23-5 ldo linear regulator 2.2v smd ic power ic power linear regulator ape8865y5-22-hf-3 tps7a0522pdbv regulator kicad-symbols sot linear 2v low 300ma fixed output to ic power iq ape8865y5 hf | SOT-23-5 | LDO 2.2V",
+ "embedding_text": "ic-power-ldo.sot-23-5.ldo.2-2v | IC Power Linear Regulator | 2 ic power linear regulator parts for LDO, 2.2V using SOT-23-5 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | sot regulator ldo linear 2v low 300ma fixed output to smd ic power iq ape8865y5 hf | SOT-23-5 | LDO 2.2V",
  "class": "ic.power.ldo"
 }

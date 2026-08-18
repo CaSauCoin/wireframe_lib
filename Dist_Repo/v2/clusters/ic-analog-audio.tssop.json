@@ -7,42 +7,34 @@
   "Analog",
   "Audio"
  ],
- "description": "Surface-mount analog audio IC cluster featuring TSSOP footprint variants including TSSOP-8, TSSOP-10, and HTSSOP-44.",
+ "description": "4 ic analog audio parts using TSSOP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Match the required package footprint, such as TSSOP-8, TSSOP-10, or HTSSOP-44.",
-  "Prefer Tier A quality parts like LM4810, LM4811, or LM4990MM.",
-  "Verify pad pitch and dimensions for surface-mount TSSOP assembly."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a TSSOP land pattern is intended."
  ],
  "avoid_when": [
-  "The layout requires through-hole mounting or package families other than TSSOP.",
-  "Required electrical parameters or pin functions are not provided in the component facts.",
-  "The application requires non-SMD component footprints."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than TSSOP."
  ],
  "keywords": [
-  "analog audio",
-  "tssop",
-  "htssop",
-  "smd",
-  "ic",
-  "tssop-8",
-  "tssop-10",
-  "htssop-44",
-  "lm4810",
-  "lm4811",
-  "lm4990mm",
-  "tpa3251",
-  "analog",
-  "audio amplifier",
   "amplifier",
   "audio",
+  "tssop",
   "p0",
   "vssop",
   "3x3mm",
+  "analog",
   "headphone",
+  "ic",
   "boomer",
   "with",
   "shutdown",
-  "5mm"
+  "5mm",
+  "texas",
+  "class",
+  "htssop"
  ],
  "facts": {
   "package_family": "TSSOP",
@@ -66,7 +58,7 @@
    "A": 3,
    "B": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -108,6 +100,6 @@
   "kicad-symbols/Amplifier_Audio/LM4990MM",
   "kicad-symbols/Amplifier_Audio/TPA3251"
  ],
- "embedding_text": "ic-analog-audio.tssop | IC Analog Audio | Surface-mount analog audio IC cluster featuring TSSOP footprint variants including TSSOP-8, TSSOP-10, and HTSSOP-44. | analog audio tssop htssop smd ic tssop-8 tssop-10 htssop-44 lm4810 lm4811 lm4990mm tpa3251 analog audio amplifier amplifier audio p0 vssop 3x3mm headphone boomer with shutdown 5mm | TSSOP | ",
+ "embedding_text": "ic-analog-audio.tssop | IC Analog Audio | 4 ic analog audio parts using TSSOP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | amplifier audio tssop p0 vssop 3x3mm analog headphone ic boomer with shutdown 5mm texas class htssop | TSSOP | ",
  "class": "ic.analog.audio"
 }

@@ -6,29 +6,21 @@
   "Passive",
   "Capacitor"
  ],
- "description": "Passive capacitor cluster containing 5 legacy parts in the CP1 package family across footprints including CP1_2, CP1_2.5, CP1_2.5_SM, CP1_2N, and CP1_3.0.",
+ "description": "5 passive capacitor parts using CP1 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select based on the required specific footprint variant such as CP1_2, CP1_2.5, CP1_2.5_SM, CP1_2N, or CP1_3.0.",
-  "Verify part mounting style and specifications independently as mounting metadata is unknown.",
-  "Review quality tier C entries from dist-legacy source before design inclusion."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a CP1 land pattern is intended."
  ],
  "avoid_when": [
-  "A package family other than CP1 is required by the PCB design.",
-  "The application requires verified planner-visible or higher quality tier parts.",
-  "Footprints outside the CP1 variant list are needed."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than CP1."
  ],
  "keywords": [
+  "cp1",
   "passive",
   "capacitor",
-  "cp1",
-  "cp1_2",
-  "cp1_2.5",
-  "cp1_2.5_sm",
-  "cp1_2n",
-  "cp1_3.0",
-  "passive capacitor",
-  "dist-legacy",
-  "passive.capacitor",
   "pad",
   "mm",
   "pitch",
@@ -59,7 +51,7 @@
   "tier_counts": {
    "C": 5
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
@@ -69,6 +61,6 @@
   "dist-legacy/CP1_2N",
   "dist-legacy/CP1_3.0"
  ],
- "embedding_text": "passive-capacitor.cp1 | Passive Capacitor | Passive capacitor cluster containing 5 legacy parts in the CP1 package family across footprints including CP1_2, CP1_2.5, CP1_2.5_SM, CP1_2N, and CP1_3.0. | passive capacitor cp1 cp1_2 cp1_2.5 cp1_2.5_sm cp1_2n cp1_3.0 passive capacitor dist-legacy passive.capacitor pad mm pitch pins sm 2n | CP1 | ",
+ "embedding_text": "passive-capacitor.cp1 | Passive Capacitor | 5 passive capacitor parts using CP1 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | cp1 passive capacitor pad mm pitch pins sm 2n | CP1 | ",
  "class": "passive.capacitor"
 }

@@ -6,37 +6,30 @@
   "IC",
   "Memory"
  ],
- "description": "Surface-mount memory IC cluster featuring 3.3V, 5V, and SPI interface in a WSON package.",
+ "description": "1 ic memory parts for 3.3V, 5V, SPI using WSON footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Designs requiring an SPI memory IC operating at 3.3V or 5V.",
-  "Layouts specifying surface-mount WSON footprint WSON-8-1EP_6x5mm_P1.27mm_EP3.4x4mm.",
-  "Projects using KiCad symbols library components."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a WSON land pattern is intended."
  ],
  "avoid_when": [
-  "The board layout requires a package style other than WSON SMD.",
-  "The system uses a memory interface other than SPI.",
-  "Voltage requirements differ from 3.3V or 5V."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than WSON."
  ],
  "keywords": [
-  "ic",
-  "memory",
-  "spi",
-  "3.3v",
-  "5v",
-  "wson",
-  "smd",
-  "wson-8-1ep",
-  "sst26vf064bxx",
-  "sst26vf064b",
-  "kicad-symbols",
-  "memory ic",
-  "spi memory",
   "mf",
+  "memory",
+  "5v",
+  "spi",
+  "wson",
   "104i",
   "flash",
   "3v",
+  "sst26vf064b",
   "sst26vf064bt",
   "104v",
+  "sst26vf064bxx",
   "xxxx",
   "mbit",
   "minimum",
@@ -65,7 +58,7 @@
   "tier_counts": {
    "B": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -80,6 +73,6 @@
  "part_ids": [
   "kicad-symbols/Memory_Flash/SST26VF064Bxx-xxxx-MF"
  ],
- "embedding_text": "ic-memory.wson.3v3.5v | IC Memory | Surface-mount memory IC cluster featuring 3.3V, 5V, and SPI interface in a WSON package. | ic memory spi 3.3v 5v wson smd wson-8-1ep sst26vf064bxx sst26vf064b kicad-symbols memory ic spi memory mf 104i flash 3v sst26vf064bt 104v xxxx mbit minimum serial | WSON | 3.3V 5V SPI",
+ "embedding_text": "ic-memory.wson.3v3.5v | IC Memory | 1 ic memory parts for 3.3V, 5V, SPI using WSON footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | mf memory 5v spi wson 104i flash 3v sst26vf064b sst26vf064bt 104v sst26vf064bxx xxxx mbit minimum serial | WSON | 3.3V 5V SPI",
  "class": "ic.memory"
 }

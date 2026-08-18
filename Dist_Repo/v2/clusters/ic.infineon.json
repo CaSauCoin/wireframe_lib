@@ -5,42 +5,34 @@
  "category_path": [
   "IC"
  ],
- "description": "Integrated circuit component cluster containing 57 parts using Infineon footprint variants in surface-mount and through-hole configurations across quality tiers B and C.",
+ "description": "57 ic parts using Infineon footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select tier B parts like TLE8102SG, TLE8104E, or ITS5215 for higher quality ranking over tier C entries.",
-  "Match the required footprint variant such as PG-DSO, MLPQ, PG-TSNP, PG-TSDSO, or AG-ECONO2.",
-  "Verify mount type requirements between surface-mount and through-hole options."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a Infineon land pattern is intended."
  ],
  "avoid_when": [
-  "Avoid when tier A quality verified parts are required, as this cluster contains only tier B and C entries.",
-  "Avoid when the PCB design requires non-Infineon package footprints.",
-  "Avoid when part data indicates an unknown mount type for a strict layout requirement."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than Infineon."
  ],
  "keywords": [
   "infineon",
-  "ic",
-  "integrated circuit",
-  "pg-dso",
-  "mlpq",
-  "pg-tsnp",
-  "pg-tsdso",
-  "ag-econo2",
-  "smd",
-  "through hole",
-  "tle8102sg",
-  "tle8104e",
-  "its5215",
-  "power management",
-  "thermalvias",
   "pg",
   "dso",
+  "ic",
   "pad",
   "pitch",
   "mm",
   "pins",
   "tison",
   "surface",
-  "mount"
+  "mount",
+  "package",
+  "thermalvias",
+  "mlpq",
+  "https",
+  "www"
  ],
  "facts": {
   "package_family": "Infineon",
@@ -77,7 +69,7 @@
    "B": 3,
    "C": 54
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -164,6 +156,6 @@
   "dist-legacy/Infineon_PG-TISON-8-4",
   "dist-legacy/Infineon_PG-TISON-8-5"
  ],
- "embedding_text": "ic.infineon | IC | Integrated circuit component cluster containing 57 parts using Infineon footprint variants in surface-mount and through-hole configurations across quality tiers B and C. | infineon ic integrated circuit pg-dso mlpq pg-tsnp pg-tsdso ag-econo2 smd through hole tle8102sg tle8104e its5215 power management thermalvias pg dso pad pitch mm pins tison surface mount | Infineon | ",
+ "embedding_text": "ic.infineon | IC | 57 ic parts using Infineon footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | infineon pg dso ic pad pitch mm pins tison surface mount package thermalvias mlpq https www | Infineon | ",
  "class": "ic"
 }

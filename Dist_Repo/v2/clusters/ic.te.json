@@ -5,33 +5,24 @@
  "category_path": [
   "IC"
  ],
- "description": "Cluster of 212 IC parts using TE package family footprints with surface-mount and through-hole mounting options.",
+ "description": "212 ic parts using TE footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Match the required mounting style such as surface-mount (SMD) or through-hole.",
-  "Verify the specific TE footprint variant, pitch, and pin configuration.",
-  "Confirm part quality tier since the majority of parts are Tier C."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a TE land pattern is intended."
  ],
  "avoid_when": [
-  "The PCB design requires standard IC packages other than the TE package family.",
-  "Fully verified Tier A parts are required for the application.",
-  "The specific TE footprint variant needed is not included in this cluster."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than TE."
  ],
  "keywords": [
-  "ic",
   "te",
-  "te package",
-  "smd",
-  "through hole",
   "horizontal",
-  "mate-n-lok",
-  "ms5837",
-  "hpp845e031r4",
-  "1.0mm pitch",
-  "4.0mm pitch",
-  "integrated circuit",
   "0mm",
   "1mp",
   "p1",
+  "ic",
   "vertical",
   "pitch",
   "5mm",
@@ -40,7 +31,8 @@
   "fpc",
   "pad",
   "mm",
-  "connector"
+  "connector",
+  "package"
  ],
  "facts": {
   "package_family": "TE",
@@ -76,7 +68,7 @@
    "B": 1,
    "C": 211
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -302,6 +294,6 @@
   "dist-legacy/TE_Micro-MaTch_215079-6_2x03_P1.27mm_Vertical",
   "dist-legacy/TE_Micro-MaTch_215079-8_2x04_P1.27mm_Vertical"
  ],
- "embedding_text": "ic.te | IC | Cluster of 212 IC parts using TE package family footprints with surface-mount and through-hole mounting options. | ic te te package smd through hole horizontal mate-n-lok ms5837 hpp845e031r4 1.0mm pitch 4.0mm pitch integrated circuit 0mm 1mp p1 vertical pitch 5mm pins p0 fpc pad mm connector | TE | ",
+ "embedding_text": "ic.te | IC | 212 ic parts using TE footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | te horizontal 0mm 1mp p1 ic vertical pitch 5mm pins p0 fpc pad mm connector package | TE | ",
  "class": "ic"
 }

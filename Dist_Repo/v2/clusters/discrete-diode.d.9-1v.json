@@ -6,44 +6,34 @@
   "Discrete",
   "Diode"
  ],
- "description": "Cluster of 109 discrete D-package diodes (zener and TVS types) sharing the 9.1V facet, spanning SMA, SMB, MiniMELF, MELF, SOD-123/323/523 and DO-41/DO-35 footprints in SMD or through-hole mount.",
+ "description": "109 discrete diode parts for 9.1V using D footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Confirm whether the specific part is a zener or a TVS device before selecting",
-  "Match the exact footprint (SMA, SMB, MiniMELF, MELF, SOD-123/323/523, DO-41, DO-35) to the intended PCB land pattern",
-  "Prefer tier A entries — 103 of 109 parts are tier A, 6 are tier B",
-  "Confirm SMD vs through-hole mount matches the assembly process"
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a D land pattern is intended."
  ],
  "avoid_when": [
-  "The required diode type (zener vs TVS) is not confirmed for the chosen part",
-  "The board layout needs a footprint not listed for this cluster",
-  "The symbol-footprint pairing is unverified or flagged for review",
-  "A specific mount type (SMD or through-hole) is required but not matched by the chosen footprint"
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than D."
  ],
  "keywords": [
   "diode",
   "zener",
-  "tvs",
-  "9.1v",
-  "discrete diode",
-  "d package",
-  "sma",
-  "smb",
-  "minimelf",
-  "melf",
-  "sod-123",
-  "sod-323",
-  "sod-523",
-  "do-41",
-  "do-35",
-  "axial",
-  "surface mount",
-  "through hole",
   "1v",
   "discrete",
   "akl",
   "do",
   "alternate",
-  "kicad"
+  "kicad",
+  "library",
+  "sod",
+  "tvs",
+  "horizontal",
+  "smb",
+  "sma",
+  "series",
+  "axial"
  ],
  "facts": {
   "package_family": "D",
@@ -80,7 +70,7 @@
    "A": 103,
    "B": 6
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -235,6 +225,6 @@
   "Alternate-KiCad-Library/Diode_Zener_AKL/BZX884-C9V1",
   "Alternate-KiCad-Library/Diode_TVS_AKL/TPSMP9.1A"
  ],
- "embedding_text": "discrete-diode.d.9-1v | Discrete Diode | Cluster of 109 discrete D-package diodes (zener and TVS types) sharing the 9.1V facet, spanning SMA, SMB, MiniMELF, MELF, SOD-123/323/523 and DO-41/DO-35 footprints in SMD or through-hole mount. | diode zener tvs 9.1v discrete diode d package sma smb minimelf melf sod-123 sod-323 sod-523 do-41 do-35 axial surface mount through hole 1v discrete akl do alternate kicad | D | 9.1V",
+ "embedding_text": "discrete-diode.d.9-1v | Discrete Diode | 109 discrete diode parts for 9.1V using D footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | diode zener 1v discrete akl do alternate kicad library sod tvs horizontal smb sma series axial | D | 9.1V",
  "class": "discrete.diode"
 }

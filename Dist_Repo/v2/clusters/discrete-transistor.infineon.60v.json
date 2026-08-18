@@ -6,42 +6,34 @@
   "Discrete",
   "Transistor"
  ],
- "description": "Cluster of 49 SMD discrete 60V transistors from Alternate-KiCad-Library utilizing Infineon package footprints including PG-TDSON-8, PG-TSDSON-8, and PG-HSOF-8-1.",
+ "description": "49 discrete transistor parts for 60V using Infineon footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when a 60V surface-mount discrete transistor is required.",
-  "Match specific PCB land patterns to Infineon footprints like PG-TDSON-8, PG-TSDSON-8, or PG-HSOF-8-1.",
-  "Consider quality tiering, with 1 Tier A part (IPT007N06L) and 48 Tier B parts available."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a Infineon land pattern is intended."
  ],
  "avoid_when": [
-  "Through-hole assembly is required rather than surface-mount (SMD).",
-  "Voltage requirements differ from 60V.",
-  "Packages outside the specified Infineon footprint family are needed."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than Infineon."
  ],
  "keywords": [
-  "discrete transistor",
-  "60v",
-  "infineon",
-  "smd",
-  "pg-tdson-8",
-  "pg-tsdson-8",
-  "pg-hsof-8-1",
-  "alternate-kicad-library",
-  "ipt007n06l",
-  "aon6160",
-  "aon6162",
-  "aon6242",
-  "aon6260",
-  "transistor",
   "mosfet",
+  "transistor",
+  "infineon",
   "tdson",
   "enchancement",
+  "60v",
   "mos",
   "akl",
   "mode",
   "alternate",
   "kicad",
   "library",
-  "pg"
+  "pg",
+  "emos",
+  "emosfet",
+  "discrete"
  ],
  "facts": {
   "package_family": "Infineon",
@@ -70,7 +62,7 @@
    "A": 1,
    "B": 48
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -165,6 +157,6 @@
   "Alternate-KiCad-Library/Transistor_MOSFET_AKL/TPH4R606NH",
   "Alternate-KiCad-Library/Transistor_MOSFET_AKL/TPW1R306PL"
  ],
- "embedding_text": "discrete-transistor.infineon.60v | Discrete Transistor | Cluster of 49 SMD discrete 60V transistors from Alternate-KiCad-Library utilizing Infineon package footprints including PG-TDSON-8, PG-TSDSON-8, and PG-HSOF-8-1. | discrete transistor 60v infineon smd pg-tdson-8 pg-tsdson-8 pg-hsof-8-1 alternate-kicad-library ipt007n06l aon6160 aon6162 aon6242 aon6260 transistor mosfet tdson enchancement mos akl mode alternate kicad library pg | Infineon | 60V",
+ "embedding_text": "discrete-transistor.infineon.60v | Discrete Transistor | 49 discrete transistor parts for 60V using Infineon footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | mosfet transistor infineon tdson enchancement 60v mos akl mode alternate kicad library pg emos emosfet discrete | Infineon | 60V",
  "class": "discrete.transistor"
 }

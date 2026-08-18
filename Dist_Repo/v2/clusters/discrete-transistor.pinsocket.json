@@ -6,37 +6,28 @@
   "Discrete",
   "Transistor"
  ],
- "description": "Discrete transistor cluster containing 14 tier-C parts using 1x03 PinSocket footprints in SMD and through-hole mount options.",
+ "description": "14 discrete transistor parts using PinSocket footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select matching pitch (1.00mm, 1.27mm, 2.00mm, or 2.54mm) for the layout.",
-  "Verify mount style between SMD and through-hole options.",
-  "Confirm vertical or horizontal PinSocket orientation.",
-  "Note that all 14 parts in this cluster are quality tier C."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a PinSocket land pattern is intended."
  ],
  "avoid_when": [
-  "Layout requires a package family other than PinSocket.",
-  "Higher quality tier parts (tier A or B) are required.",
-  "Footprint configuration requires a pin count other than 1x03."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than PinSocket."
  ],
  "keywords": [
-  "discrete transistor",
-  "pinsocket",
   "1x03",
-  "smd",
-  "through_hole",
+  "pinsocket",
   "vertical",
-  "horizontal",
-  "1.00mm pitch",
-  "1.27mm pitch",
-  "2.00mm pitch",
-  "2.54mm pitch",
-  "tier c",
-  "discrete",
-  "transistor",
   "00mm",
+  "smd",
   "p2",
   "p1",
   "socket",
+  "discrete",
+  "transistor",
   "pitch",
   "strip",
   "single",
@@ -75,7 +66,7 @@
   "tier_counts": {
    "C": 14
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
@@ -94,6 +85,6 @@
   "dist-legacy/PinSocket_1x03_P2.54mm_Vertical_SMD_Pin1Left",
   "dist-legacy/PinSocket_1x03_P2.54mm_Vertical_SMD_Pin1Right"
  ],
- "embedding_text": "discrete-transistor.pinsocket | Discrete Transistor | Discrete transistor cluster containing 14 tier-C parts using 1x03 PinSocket footprints in SMD and through-hole mount options. | discrete transistor pinsocket 1x03 smd through_hole vertical horizontal 1.00mm pitch 1.27mm pitch 2.00mm pitch 2.54mm pitch tier c discrete transistor 00mm p2 p1 socket pitch strip single row 54mm surface | PinSocket | ",
+ "embedding_text": "discrete-transistor.pinsocket | Discrete Transistor | 14 discrete transistor parts using PinSocket footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | 1x03 pinsocket vertical 00mm smd p2 p1 socket discrete transistor pitch strip single row 54mm surface | PinSocket | ",
  "class": "discrete.transistor"
 }

@@ -6,32 +6,26 @@
   "Power",
   "Power Rail"
  ],
- "description": "Generic 4V power rail schematic symbols from kicad-symbols for power rail connections with package chosen later.",
+ "description": "1 power power rail parts for 4V with package chosen later. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Use when placing a 4V power rail symbol in a schematic.",
-  "Assign the physical footprint and package later if required for PCB layout.",
-  "Verify source compatibility with KiCad power symbol conventions."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Select a footprint/package explicitly before placement."
  ],
  "avoid_when": [
-  "The circuit requires a rail voltage other than 4V.",
-  "A physical component with a predefined footprint or package is required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review."
  ],
  "keywords": [
-  "4v",
-  "+4v",
   "power",
-  "power rail",
-  "rail",
-  "power.rail",
-  "kicad-symbols",
-  "generic",
-  "package chosen later",
-  "symbol",
+  "4v",
   "global",
+  "symbol",
   "creates",
   "label",
   "with",
   "name",
+  "rail",
   "package",
   "chosen",
   "later"
@@ -53,7 +47,7 @@
   "tier_counts": {
    "G": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -68,6 +62,6 @@
  "part_ids": [
   "kicad-symbols/power/+4V"
  ],
- "embedding_text": "power-rail.generic.4v | Power Power Rail | Generic 4V power rail schematic symbols from kicad-symbols for power rail connections with package chosen later. | 4v +4v power power rail rail power.rail kicad-symbols generic package chosen later symbol global creates label with name package chosen later | package chosen later | 4V",
+ "embedding_text": "power-rail.generic.4v | Power Power Rail | 1 power power rail parts for 4V with package chosen later. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | power 4v global symbol creates label with name rail package chosen later | package chosen later | 4V",
  "class": "power.rail"
 }

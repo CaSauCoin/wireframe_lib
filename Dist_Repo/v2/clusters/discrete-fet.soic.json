@@ -6,32 +6,24 @@
   "Discrete",
   "FET"
  ],
- "description": "Discrete FET library cluster containing surface-mount devices in the SOIC package family with SOIC-8 footprints.",
+ "description": "2 discrete fet parts using SOIC footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Selecting surface-mount (SMD) discrete field-effect transistors.",
-  "Targeting parts in the SOIC package family with SOIC-8 footprints.",
-  "Choosing Tier A quality parts from KiCad symbol sources."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SOIC land pattern is intended."
  ],
  "avoid_when": [
-  "Through-hole or non-SMD mounting is required.",
-  "The board design requires package families other than SOIC.",
-  "Components outside the discrete FET category are needed."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SOIC."
  ],
  "keywords": [
   "soic",
   "fet",
-  "discrete",
-  "smd",
-  "transistor",
-  "soic-8",
-  "discrete fet",
-  "fds2734",
-  "jfe2140d",
-  "kicad-symbols",
-  "surface mount",
-  "field effect transistor",
   "channel",
+  "discrete",
   "low",
+  "transistor",
   "mosfet",
   "9x4",
   "9mm",
@@ -62,7 +54,7 @@
   "tier_counts": {
    "A": 2
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -86,6 +78,6 @@
   "kicad-symbols/Transistor_FET/FDS2734",
   "kicad-symbols/Transistor_FET/JFE2140D"
  ],
- "embedding_text": "discrete-fet.soic | Discrete FET | Discrete FET library cluster containing surface-mount devices in the SOIC package family with SOIC-8 footprints. | soic fet discrete smd transistor soic-8 discrete fet fds2734 jfe2140d kicad-symbols surface mount field effect transistor channel low mosfet 9x4 9mm p1 27mm so noise matched dual jfet | SOIC | ",
+ "embedding_text": "discrete-fet.soic | Discrete FET | 2 discrete fet parts using SOIC footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | soic fet channel discrete low transistor mosfet 9x4 9mm p1 27mm so noise matched dual jfet | SOIC | ",
  "class": "discrete.fet"
 }

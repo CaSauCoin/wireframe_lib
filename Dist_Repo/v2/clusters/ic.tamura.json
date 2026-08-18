@@ -5,30 +5,23 @@
  "category_path": [
   "IC"
  ],
- "description": "Cluster of 4 tier-C IC parts using TAMURA footprints including TAMURA-3FD-3XX and TAMURA-3FD-4XX.",
+ "description": "4 ic parts using TAMURA footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when requiring TAMURA-3FD-3XX or TAMURA-3FD-4XX footprints.",
-  "Review part specifications carefully as all 4 entries are tier C.",
-  "Verify footprint dimensions and pin configuration before PCB integration."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a TAMURA land pattern is intended."
  ],
  "avoid_when": [
-  "A package footprint other than TAMURA-3FD-3XX or TAMURA-3FD-4XX is needed.",
-  "Planner-visible or higher quality tier parts are required.",
-  "Known mounting type details are required directly from cluster data."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than TAMURA."
  ],
  "keywords": [
-  "ic",
   "tamura",
-  "tamura-3fd-3xx",
-  "tamura-3fd-4xx",
   "3fd",
   "3xx",
   "4xx",
-  "3fd-3xx",
-  "3fd-4xx",
-  "tier c",
-  "dist-legacy",
-  "tamura footprint",
+  "ic",
   "duplicate",
   "pad",
   "mm",
@@ -55,7 +48,7 @@
   "tier_counts": {
    "C": 4
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
@@ -64,6 +57,6 @@
   "dist-legacy/TAMURA-3FD-3XX",
   "dist-legacy/TAMURA-3FD-4XX"
  ],
- "embedding_text": "ic.tamura | IC | Cluster of 4 tier-C IC parts using TAMURA footprints including TAMURA-3FD-3XX and TAMURA-3FD-4XX. | ic tamura tamura-3fd-3xx tamura-3fd-4xx 3fd 3xx 4xx 3fd-3xx 3fd-4xx tier c dist-legacy tamura footprint duplicate pad mm pitch pins | TAMURA | ",
+ "embedding_text": "ic.tamura | IC | 4 ic parts using TAMURA footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | tamura 3fd 3xx 4xx ic duplicate pad mm pitch pins | TAMURA | ",
  "class": "ic"
 }

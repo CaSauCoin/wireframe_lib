@@ -5,34 +5,27 @@
  "category_path": [
   "IC"
  ],
- "description": "Integrated circuit cluster containing 3 surface-mount 80V parts in EPC_QFN-13-3EP_3.5x5mm_P0.5mm packages from KiCad power management symbols.",
+ "description": "3 ic parts for 80V using QFN footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Requires an 80V surface-mount IC.",
-  "Compatible with the EPC_QFN-13-3EP_3.5x5mm_P0.5mm footprint.",
-  "Selecting between tier B parts EPC23102, EPC23103, or EPC23104."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a QFN land pattern is intended."
  ],
  "avoid_when": [
-  "Through-hole mounting is required instead of SMD.",
-  "The design requires a package other than EPC_QFN-13-3EP_3.5x5mm_P0.5mm.",
-  "Operating requirements do not match an 80V IC component."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than QFN."
  ],
  "keywords": [
-  "ic",
-  "80v",
   "qfn",
-  "smd",
-  "epc23102",
-  "epc23103",
-  "epc23104",
-  "power management",
-  "kicad-symbols",
-  "epc_qfn-13-3ep_3.5x5mm_p0.5mm",
-  "tier b",
-  "surface mount",
   "power",
   "stage",
   "epc",
   "3ep",
+  "ic",
+  "epc23102",
+  "epc23103",
+  "epc23104",
   "management",
   "gan",
   "half",
@@ -62,7 +55,7 @@
   "tier_counts": {
    "B": 3
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -95,6 +88,6 @@
   "kicad-symbols/Power_Management/EPC23103",
   "kicad-symbols/Power_Management/EPC23104"
  ],
- "embedding_text": "ic.qfn.80v | IC | Integrated circuit cluster containing 3 surface-mount 80V parts in EPC_QFN-13-3EP_3.5x5mm_P0.5mm packages from KiCad power management symbols. | ic 80v qfn smd epc23102 epc23103 epc23104 power management kicad-symbols epc_qfn-13-3ep_3.5x5mm_p0.5mm tier b surface mount power stage epc 3ep management gan half bridge with integrated gate | QFN | 80V",
+ "embedding_text": "ic.qfn.80v | IC | 3 ic parts for 80V using QFN footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | qfn power stage epc 3ep ic epc23102 epc23103 epc23104 management gan half bridge with integrated gate | QFN | 80V",
  "class": "ic"
 }

@@ -5,33 +5,23 @@
  "category_path": [
   "IC"
  ],
- "description": "Integrated circuit cluster of 47 surface-mount parts using MSOP package footprints with 8, 10, 12, or 16 pins and 1EP options.",
+ "description": "47 ic parts using MSOP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select based on pin count, pin pitch, body dimensions, and exposed pad (1EP) requirements.",
-  "Filter by component category such as power management, reference voltage, or RF.",
-  "Prefer higher quality tier parts (Tier A or B) with matching footprint definitions."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a MSOP land pattern is intended."
  ],
  "avoid_when": [
-  "Through-hole mounting is required for the design.",
-  "The layout requires a non-MSOP package family.",
-  "Required pin count is outside the available 8 to 16 pin range."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than MSOP."
  ],
  "keywords": [
-  "ic",
   "msop",
-  "smd",
-  "msop-8",
-  "msop-10",
-  "msop-12",
-  "msop-16",
-  "1ep",
-  "0.5mm pitch",
-  "0.65mm pitch",
-  "power management",
-  "reference voltage",
-  "rf",
   "p0",
+  "1ep",
   "3x3mm",
+  "ic",
   "ep1",
   "65mm",
   "5mm",
@@ -40,7 +30,9 @@
   "so",
   "pad",
   "mm",
-  "pitch"
+  "pitch",
+  "pins",
+  "pdf"
  ],
  "facts": {
   "package_family": "MSOP",
@@ -79,7 +71,7 @@
    "B": 15,
    "C": 24
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -172,6 +164,6 @@
   "dist-legacy/MSOP-10-1EP_3x3mm_P0.5mm_EP1.73x1.98mm_ThermalVias",
   "dist-legacy/MSOP-10-1EP_3x3mm_P0.5mm_EP2.2x3.1mm_Mask1.83x1.89mm"
  ],
- "embedding_text": "ic.msop | IC | Integrated circuit cluster of 47 surface-mount parts using MSOP package footprints with 8, 10, 12, or 16 pins and 1EP options. | ic msop smd msop-8 msop-10 msop-12 msop-16 1ep 0.5mm pitch 0.65mm pitch power management reference voltage rf p0 3x3mm ep1 65mm 5mm thermalvias package so pad mm pitch | MSOP | ",
+ "embedding_text": "ic.msop | IC | 47 ic parts using MSOP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | msop p0 1ep 3x3mm ic ep1 65mm 5mm thermalvias package so pad mm pitch pins pdf | MSOP | ",
  "class": "ic"
 }

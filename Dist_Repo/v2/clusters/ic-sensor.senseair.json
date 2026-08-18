@@ -6,42 +6,34 @@
   "IC",
   "Sensor"
  ],
- "description": "IC sensor component cluster containing 6 through-hole parts in the Senseair package family using the Senseair_S8_Up footprint.",
+ "description": "6 ic sensor parts using Senseair footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when requiring a through-hole IC sensor compatible with the Senseair_S8_Up footprint.",
-  "Choose among tier B parts including 004-0-0010, 004-0-0013, 004-0-0050, 004-0-0053, and 004-0-0071.",
-  "Confirm through-hole mounting compatibility for the intended design."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a Senseair land pattern is intended."
  ],
  "avoid_when": [
-  "Surface-mount (SMD) packaging is required instead of through-hole mounting.",
-  "The target PCB layout requires a footprint other than Senseair_S8_Up.",
-  "Tier A or fully reviewed tier parts are strictly required for the design."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than Senseair."
  ],
  "keywords": [
-  "ic",
   "sensor",
-  "ic sensor",
-  "senseair",
-  "senseair_s8_up",
-  "through_hole",
-  "through hole",
-  "sensor_gas",
-  "kicad-symbols",
-  "004-0-0010",
-  "004-0-0013",
-  "004-0-0050",
-  "004-0-0053",
-  "004-0-0071",
   "gas",
   "co2",
   "pwm",
   "modbus",
+  "senseair",
   "s8",
   "1khz",
   "output",
   "tht",
   "up",
-  "ppm"
+  "ic",
+  "ppm",
+  "commercial",
+  "by",
+  "volume"
  ],
  "facts": {
   "package_family": "Senseair",
@@ -62,7 +54,7 @@
   "tier_counts": {
    "B": 6
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -114,6 +106,6 @@
   "kicad-symbols/Sensor_Gas/004-0-0071",
   "kicad-symbols/Sensor_Gas/004-0-0075"
  ],
- "embedding_text": "ic-sensor.senseair | IC Sensor | IC sensor component cluster containing 6 through-hole parts in the Senseair package family using the Senseair_S8_Up footprint. | ic sensor ic sensor senseair senseair_s8_up through_hole through hole sensor_gas kicad-symbols 004-0-0010 004-0-0013 004-0-0050 004-0-0053 004-0-0071 gas co2 pwm modbus s8 1khz output tht up ppm | Senseair | ",
+ "embedding_text": "ic-sensor.senseair | IC Sensor | 6 ic sensor parts using Senseair footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | sensor gas co2 pwm modbus senseair s8 1khz output tht up ic ppm commercial by volume | Senseair | ",
  "class": "ic.sensor"
 }

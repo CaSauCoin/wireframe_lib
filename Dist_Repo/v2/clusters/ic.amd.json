@@ -5,32 +5,24 @@
  "category_path": [
   "IC"
  ],
- "description": "Integrated circuit parts cluster using AMD package family footprints and legacy distributor sources.",
+ "description": "1 ic parts using AMD footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Verify exact AMD footprint details for the intended board layout.",
-  "Check part quality tier and source information prior to selection.",
-  "Confirm mounting requirements since mount type is listed as unknown."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a AMD land pattern is intended."
  ],
  "avoid_when": [
-  "The design requires a footprint or package family other than AMD.",
-  "Planner-visible or verified high-tier parts are required.",
-  "Specific surface-mount or through-hole mounting metadata is mandatory."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than AMD."
  ],
  "keywords": [
-  "ic",
   "amd",
-  "integrated circuit",
-  "amd package",
-  "amd footprint",
-  "package family amd",
-  "dist-legacy",
-  "tier c",
-  "unknown mount",
-  "ic cluster",
   "xilinx",
   "fcbga",
   "ffg900",
   "31x",
+  "ic",
   "pad",
   "mm",
   "pitch",
@@ -55,12 +47,12 @@
   "tier_counts": {
    "C": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
   "dist-legacy/AMD XILINX FCBGA-900 FFG900 31X"
  ],
- "embedding_text": "ic.amd | IC | Integrated circuit parts cluster using AMD package family footprints and legacy distributor sources. | ic amd integrated circuit amd package amd footprint package family amd dist-legacy tier c unknown mount ic cluster xilinx fcbga ffg900 31x pad mm pitch pins | AMD | ",
+ "embedding_text": "ic.amd | IC | 1 ic parts using AMD footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | amd xilinx fcbga ffg900 31x ic pad mm pitch pins | AMD | ",
  "class": "ic"
 }

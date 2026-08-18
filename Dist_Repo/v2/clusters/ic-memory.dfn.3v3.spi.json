@@ -6,34 +6,24 @@
   "IC",
   "Memory"
  ],
- "description": "This cluster contains 2 surface-mount 3.3V SPI memory ICs in DFN-S-8-1EP_6x5mm_P1.27mm footprints.",
+ "description": "2 ic memory parts for 3.3V, SPI using DFN footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when requiring a 3.3V surface-mount memory IC with an SPI interface.",
-  "Choose for designs requiring a DFN-S-8-1EP_6x5mm_P1.27mm footprint.",
-  "Verify compatibility with representative parts MR20H40 or MR25H40."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a DFN land pattern is intended."
  ],
  "avoid_when": [
-  "Avoid if the design requires an interface other than SPI.",
-  "Do not use if the operating voltage is not 3.3V.",
-  "Avoid if a package family other than DFN is required.",
-  "Do not use when through-hole mounting is required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than DFN."
  ],
  "keywords": [
-  "ic",
-  "memory",
-  "3.3v",
-  "spi",
   "dfn",
-  "smd",
-  "dfn-s-8-1ep_6x5mm_p1.27mm",
-  "mr20h40",
-  "mr25h40",
-  "nvram",
-  "memory ic",
-  "3.3v memory",
-  "spi memory",
+  "memory",
+  "spi",
   "mram",
   "3v",
+  "nvram",
   "4mb",
   "with",
   "interface",
@@ -41,7 +31,9 @@
   "6x5mm",
   "p1",
   "27mm",
-  "eeprom"
+  "eeprom",
+  "ic",
+  "mr20h40"
  ],
  "facts": {
   "package_family": "DFN",
@@ -65,7 +57,7 @@
   "tier_counts": {
    "A": 2
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -89,6 +81,6 @@
   "kicad-symbols/Memory_NVRAM/MR20H40",
   "kicad-symbols/Memory_NVRAM/MR25H40"
  ],
- "embedding_text": "ic-memory.dfn.3v3.spi | IC Memory | This cluster contains 2 surface-mount 3.3V SPI memory ICs in DFN-S-8-1EP_6x5mm_P1.27mm footprints. | ic memory 3.3v spi dfn smd dfn-s-8-1ep_6x5mm_p1.27mm mr20h40 mr25h40 nvram memory ic 3.3v memory spi memory mram 3v 4mb with interface 1ep 6x5mm p1 27mm eeprom | DFN | 3.3V SPI",
+ "embedding_text": "ic-memory.dfn.3v3.spi | IC Memory | 2 ic memory parts for 3.3V, SPI using DFN footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | dfn memory spi mram 3v nvram 4mb with interface 1ep 6x5mm p1 27mm eeprom ic mr20h40 | DFN | 3.3V SPI",
  "class": "ic.memory"
 }

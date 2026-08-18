@@ -6,28 +6,21 @@
   "Passive",
   "Resistor"
  ],
- "description": "Through-hole passive resistor cluster using the CR100 footprint and package family.",
+ "description": "1 passive resistor parts using CR100 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Verify that a through-hole CR100 footprint matches the intended board layout.",
-  "Confirm electrical ratings and package compatibility against the source library.",
-  "Review part quality and verification status prior to PCB commit."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a CR100 land pattern is intended."
  ],
  "avoid_when": [
-  "Surface-mount assembly is required instead of through-hole mounting.",
-  "The board layout requires a footprint or package family other than CR100.",
-  "Designs mandate verified quality tiers higher than Tier C."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than CR100."
  ],
  "keywords": [
+  "cr100",
   "passive",
   "resistor",
-  "cr100",
-  "through hole",
-  "through-hole",
-  "cr100 footprint",
-  "passive resistor",
-  "package family cr100",
-  "tier c",
-  "francescosacco-hardwarelibrary",
   "through",
   "hole",
   "pad",
@@ -54,12 +47,12 @@
   "tier_counts": {
    "C": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
   "francescosacco-hardwarelibrary/CR100/CR100"
  ],
- "embedding_text": "passive-resistor.cr100 | Passive Resistor | Through-hole passive resistor cluster using the CR100 footprint and package family. | passive resistor cr100 through hole through-hole cr100 footprint passive resistor package family cr100 tier c francescosacco-hardwarelibrary through hole pad mm pitch pins | CR100 | ",
+ "embedding_text": "passive-resistor.cr100 | Passive Resistor | 1 passive resistor parts using CR100 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | cr100 passive resistor through hole pad mm pitch pins | CR100 | ",
  "class": "passive.resistor"
 }

@@ -6,42 +6,34 @@
   "Discrete",
   "Diode"
  ],
- "description": "A cluster of 6 surface-mount discrete diode parts associated with 5V, 5.5V, and CAN facets in SOT package footprints.",
+ "description": "6 discrete diode parts for 5V, CAN, 5.5V using SOT footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select parts based on specific footprint requirements such as SOT-323_SC-70, SOT-353_SC-70-5, SOT-553, or SOT-523.",
-  "Filter parts by quality tier preferences (5 Tier A parts and 1 Tier B part available).",
-  "Choose parts targeting 5V, 5.5V, or CAN application facets."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SOT land pattern is intended."
  ],
  "avoid_when": [
-  "The design requires a non-SOT package family or through-hole mounting.",
-  "The design requires diode specifications other than 5V, 5.5V, or CAN.",
-  "Footprints other than SOT-323_SC-70, SOT-353_SC-70-5, SOT-553, or SOT-523 are needed."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SOT."
  ],
  "keywords": [
-  "discrete diode",
-  "sot",
-  "smd",
-  "5v",
-  "5.5v",
-  "can",
-  "sot-323_sc-70",
-  "sot-353_sc-70-5",
-  "sot-553",
-  "sot-523",
-  "esdcan02-2bwy",
-  "sp0502bajt",
-  "sp1001-02jtg",
-  "sp1001-04jtg",
-  "alternate-kicad-library",
   "diode",
+  "sot",
   "tvs",
+  "5v",
   "dual",
+  "can",
   "unidirectional",
   "sc",
   "akl",
   "alternate",
   "kicad",
-  "library"
+  "library",
+  "discrete",
+  "sp1001",
+  "be",
+  "used"
  ],
  "facts": {
   "package_family": "SOT",
@@ -70,7 +62,7 @@
    "A": 5,
    "B": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -122,6 +114,6 @@
   "Alternate-KiCad-Library/Diode_TVS_AKL/SP1001-04XTG",
   "Alternate-KiCad-Library/Diode_TVS_AKL/RClamp0502B"
  ],
- "embedding_text": "discrete-diode.sot.5v.can | Discrete Diode | A cluster of 6 surface-mount discrete diode parts associated with 5V, 5.5V, and CAN facets in SOT package footprints. | discrete diode sot smd 5v 5.5v can sot-323_sc-70 sot-353_sc-70-5 sot-553 sot-523 esdcan02-2bwy sp0502bajt sp1001-02jtg sp1001-04jtg alternate-kicad-library diode tvs dual unidirectional sc akl alternate kicad library | SOT | 5V CAN 5.5V",
+ "embedding_text": "discrete-diode.sot.5v.can | Discrete Diode | 6 discrete diode parts for 5V, CAN, 5.5V using SOT footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | diode sot tvs 5v dual can unidirectional sc akl alternate kicad library discrete sp1001 be used | SOT | 5V CAN 5.5V",
  "class": "discrete.diode"
 }

@@ -6,42 +6,34 @@
   "Passive",
   "Crystal / Resonator"
  ],
- "description": "Cluster of 3 SMD passive crystal and resonator parts rated for 1.62V in the OSC package family.",
+ "description": "3 passive crystal / resonator parts for 1.62V using OSC footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select based on target frequency such as 7MHz, 16MHz, or 36MHz.",
-  "Match the required footprint, such as OSC-SMD_4P-L3.2-W2.5-BL or OSC-SMD_4P-L5.0-W3.2-BL-1.",
-  "Verify part details and land pattern against the JLCPCB KiCad library."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a OSC land pattern is intended."
  ],
  "avoid_when": [
-  "The circuit requires an operating voltage other than 1.62V.",
-  "The PCB design requires a package family other than SMD OSC.",
-  "Through-hole mounting is required instead of SMD."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than OSC."
  ],
  "keywords": [
-  "passive",
-  "crystal",
-  "resonator",
-  "oscillator",
-  "1.62v",
-  "osc",
-  "smd",
-  "osc-smd_4p-l3.2-w2.5-bl",
-  "osc-smd_4p-l5.0-w3.2-bl-1",
-  "16mhz",
-  "36mhz",
-  "7mhz",
-  "jlcpcb-kicad-library",
   "4p",
+  "osc",
   "62v",
+  "crystal",
+  "smd",
   "bl",
   "l3",
   "w2",
+  "oscillator",
   "63v",
   "20ppm",
   "10ma",
   "30ppm",
   "cmos",
-  "oscillators"
+  "oscillators",
+  "rohs"
  ],
  "facts": {
   "package_family": "OSC",
@@ -65,7 +57,7 @@
   "tier_counts": {
    "B": 3
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -98,6 +90,6 @@
   "JLCPCB-Kicad-Library/2901586/Oscillator, 36MHz",
   "JLCPCB-Kicad-Library/2901519/Oscillator, 7MHz"
  ],
- "embedding_text": "passive-crystal.osc.1-62v | Passive Crystal / Resonator | Cluster of 3 SMD passive crystal and resonator parts rated for 1.62V in the OSC package family. | passive crystal resonator oscillator 1.62v osc smd osc-smd_4p-l3.2-w2.5-bl osc-smd_4p-l5.0-w3.2-bl-1 16mhz 36mhz 7mhz jlcpcb-kicad-library 4p 62v bl l3 w2 63v 20ppm 10ma 30ppm cmos oscillators | OSC | 1.62V",
+ "embedding_text": "passive-crystal.osc.1-62v | Passive Crystal / Resonator | 3 passive crystal / resonator parts for 1.62V using OSC footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | 4p osc 62v crystal smd bl l3 w2 oscillator 63v 20ppm 10ma 30ppm cmos oscillators rohs | OSC | 1.62V",
  "class": "passive.crystal"
 }

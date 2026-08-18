@@ -6,32 +6,20 @@
   "IC",
   "Microcontroller"
  ],
- "description": "Cluster of 8 surface-mount 1.95V IC microcontroller parts in QFN packages with 28, 32, and 48-pin footprint options.",
+ "description": "8 ic microcontroller parts for 1.95V using QFN footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select by required footprint variant: QFN-28, QFN-32-1EP, or QFN-48-1EP.",
-  "Prefer tier A parts such as STM32F038K6Ux or STM32F318K8Ux over tier B entries.",
-  "Match exposed pad dimensions like EP3.45x3.45mm or EP5.6x5.6mm to layout requirements."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a QFN land pattern is intended."
  ],
  "avoid_when": [
-  "The design requires package families other than QFN.",
-  "The target operating voltage is not 1.95V.",
-  "Surface-mount technology (SMD) cannot be used."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than QFN."
  ],
  "keywords": [
-  "ic",
-  "microcontroller",
-  "mcu",
   "qfn",
-  "smd",
-  "1.95v",
-  "kicad-symbols",
-  "qfn-28",
-  "qfn-32",
-  "qfn-48",
-  "stm32f038k6ux",
-  "stm32f318k8ux",
-  "stm32f038g6ux",
-  "stm32f048c6ux",
+  "mcu",
   "arm",
   "cortex",
   "95v",
@@ -41,7 +29,11 @@
   "stmicroelectronics",
   "flash",
   "ram",
-  "mhz"
+  "mhz",
+  "gpio",
+  "p0",
+  "5mm",
+  "nolead"
  ],
  "facts": {
   "package_family": "QFN",
@@ -67,7 +59,7 @@
    "A": 2,
    "B": 6
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -121,6 +113,6 @@
   "kicad-symbols/MCU_ST_STM32F0/STM32F078CBUx",
   "kicad-symbols/MCU_ST_STM32F0/STM32F098CCUx"
  ],
- "embedding_text": "ic-mcu.qfn.1-95v | IC Microcontroller | Cluster of 8 surface-mount 1.95V IC microcontroller parts in QFN packages with 28, 32, and 48-pin footprint options. | ic microcontroller mcu qfn smd 1.95v kicad-symbols qfn-28 qfn-32 qfn-48 stm32f038k6ux stm32f318k8ux stm32f038g6ux stm32f048c6ux arm cortex 95v stm32f0 m0 st stmicroelectronics flash ram mhz | QFN | 1.95V",
+ "embedding_text": "ic-mcu.qfn.1-95v | IC Microcontroller | 8 ic microcontroller parts for 1.95V using QFN footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | qfn mcu arm cortex 95v stm32f0 m0 st stmicroelectronics flash ram mhz gpio p0 5mm nolead | QFN | 1.95V",
  "class": "ic.mcu"
 }

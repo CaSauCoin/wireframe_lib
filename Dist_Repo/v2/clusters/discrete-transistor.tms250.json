@@ -6,28 +6,21 @@
   "Discrete",
   "Transistor"
  ],
- "description": "Discrete transistor cluster containing 2 through-hole parts using TMS250_3 and TMS250_R_3 footprints from the chilaboard-altium-library.",
+ "description": "2 discrete transistor parts using TMS250 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Use when through-hole mounting with TMS250_3 or TMS250_R_3 footprint variants is required.",
-  "Check footprint choice between TMS250_3 and TMS250_R_3 for board layout compatibility.",
-  "Review parts sourced from chilaboard-altium-library assigned to quality tier C."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a TMS250 land pattern is intended."
  ],
  "avoid_when": [
-  "Surface-mount (SMD) packaging or footprints other than TMS250 are required.",
-  "Higher quality tiers or planner-visible parts are needed.",
-  "Components outside the discrete transistor class are required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than TMS250."
  ],
  "keywords": [
-  "discrete transistor",
+  "tms250",
   "discrete",
   "transistor",
-  "tms250",
-  "tms250_3",
-  "tms250_r_3",
-  "through_hole",
-  "through hole",
-  "chilaboard-altium-library",
-  "tier c",
   "through",
   "hole",
   "pad",
@@ -55,13 +48,13 @@
   "tier_counts": {
    "C": 2
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
   "chilaboard-altium-library/TMS250_3/TMS250_3",
   "chilaboard-altium-library/TMS250_R_3/TMS250_R_3"
  ],
- "embedding_text": "discrete-transistor.tms250 | Discrete Transistor | Discrete transistor cluster containing 2 through-hole parts using TMS250_3 and TMS250_R_3 footprints from the chilaboard-altium-library. | discrete transistor discrete transistor tms250 tms250_3 tms250_r_3 through_hole through hole chilaboard-altium-library tier c through hole pad mm pitch pins | TMS250 | ",
+ "embedding_text": "discrete-transistor.tms250 | Discrete Transistor | 2 discrete transistor parts using TMS250 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | tms250 discrete transistor through hole pad mm pitch pins | TMS250 | ",
  "class": "discrete.transistor"
 }

@@ -5,42 +5,34 @@
  "category_path": [
   "Connector"
  ],
- "description": "Cluster of 11 SMD header connector parts in the HDRS package family, covering single-row footprints from 1x2 to 1x10 and dual-row footprints from 2x3 to 2x6; all parts are tier C with review_status 'generated'.",
+ "description": "11 connector parts using HDRS footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Match the exact footprint (e.g. HDRS_M_1X4, HDRS_M_2X5) to the required pin count and row layout.",
-  "Confirm the target design accepts an SMD-mounted header before selecting a part.",
-  "All 11 parts are tier C with review_status 'generated' — verify part data before relying on it."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a HDRS land pattern is intended."
  ],
  "avoid_when": [
-  "A through-hole (non-SMD) header is required.",
-  "A footprint outside the listed HDRS_M_* set is needed.",
-  "Reviewed, higher-tier (A/B) part data is required instead of generated tier C entries."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than HDRS."
  ],
  "keywords": [
   "hdrs",
   "connector",
-  "header",
-  "smd",
-  "surface mount",
-  "1x2",
-  "1x3",
-  "1x4",
-  "1x5",
-  "1x6",
-  "1x10",
-  "2x3",
-  "2x4",
-  "2x5",
-  "2x6",
-  "single row",
-  "dual row",
-  "male header",
   "surface",
   "mount",
   "pad",
   "mm",
   "pitch",
-  "pins"
+  "pins",
+  "2x5",
+  "1x2",
+  "1x10",
+  "1x3",
+  "1x4",
+  "1x5",
+  "1x6",
+  "2x3"
  ],
  "facts": {
   "package_family": "HDRS",
@@ -71,7 +63,7 @@
   "tier_counts": {
    "C": 11
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
@@ -87,6 +79,6 @@
   "chilaboard-altium-library/HDRS_M_2X5_C/HDRS_M_2X5_C",
   "chilaboard-altium-library/HDRS_M_2X6/HDRS_M_2X6"
  ],
- "embedding_text": "connector.hdrs | Connector | Cluster of 11 SMD header connector parts in the HDRS package family, covering single-row footprints from 1x2 to 1x10 and dual-row footprints from 2x3 to 2x6; all parts are tier C with review_status 'generated'. | hdrs connector header smd surface mount 1x2 1x3 1x4 1x5 1x6 1x10 2x3 2x4 2x5 2x6 single row dual row male header surface mount pad mm pitch pins | HDRS | ",
+ "embedding_text": "connector.hdrs | Connector | 11 connector parts using HDRS footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | hdrs connector surface mount pad mm pitch pins 2x5 1x2 1x10 1x3 1x4 1x5 1x6 2x3 | HDRS | ",
  "class": "connector"
 }

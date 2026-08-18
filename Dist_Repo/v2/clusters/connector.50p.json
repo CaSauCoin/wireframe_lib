@@ -5,36 +5,24 @@
  "category_path": [
   "Connector"
  ],
- "description": "Cluster of 2 connector parts sharing the 50P_PCB_SOCKET_BRD_MNT footprint under the 50P package family; all entries are tier C and unreviewed (generated status), with mount type unknown.",
+ "description": "2 connector parts using 50P footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Confirm the exact footprint matches 50P_PCB_SOCKET_BRD_MNT before use.",
-  "Manually verify mount type since it is recorded as unknown.",
-  "Both parts are tier C from a legacy source; review before relying on them."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a 50P land pattern is intended."
  ],
  "avoid_when": [
-  "A reviewed or higher-tier (non-C) part is required.",
-  "Mount type (e.g. THT vs SMD) must be confirmed and cannot be verified from this data.",
-  "Planner visibility is required; this cluster has 0 planner-visible parts.",
-  "A footprint other than 50P_PCB_SOCKET_BRD_MNT is needed."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than 50P."
  ],
  "keywords": [
   "50p",
-  "connector",
-  "socket",
-  "pcb socket",
-  "brd mnt",
-  "board mount",
-  "50p_pcb_socket_brd_mnt",
-  "tier c",
-  "generated",
-  "unreviewed",
-  "dist-legacy",
-  "legacy source",
-  "package family 50p",
-  "unknown mount",
   "pcb",
+  "socket",
   "brd",
   "mnt",
+  "connector",
   "duplic",
   "pad",
   "mm",
@@ -60,13 +48,13 @@
   "tier_counts": {
    "C": 2
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
   "dist-legacy/50P_PCB_SOCKET_BRD_MNT - duplic",
   "dist-legacy/50P_PCB_SOCKET_BRD_MNT"
  ],
- "embedding_text": "connector.50p | Connector | Cluster of 2 connector parts sharing the 50P_PCB_SOCKET_BRD_MNT footprint under the 50P package family; all entries are tier C and unreviewed (generated status), with mount type unknown. | 50p connector socket pcb socket brd mnt board mount 50p_pcb_socket_brd_mnt tier c generated unreviewed dist-legacy legacy source package family 50p unknown mount pcb brd mnt duplic pad mm pitch pins | 50P | ",
+ "embedding_text": "connector.50p | Connector | 2 connector parts using 50P footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | 50p pcb socket brd mnt connector duplic pad mm pitch pins | 50P | ",
  "class": "connector"
 }

@@ -6,42 +6,34 @@
   "Discrete",
   "Diode"
  ],
- "description": "Cluster of 8 tier-A SOT-23 discrete diode parts tagged for CAN and 24V use, all sourced from the Alternate-KiCad-Library with generated (unreviewed) metadata.",
+ "description": "8 discrete diode parts for CAN, 24V using SOT-23 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "All 8 entries are tier A from a single source (Alternate-KiCad-Library); compare part names for the closest match to your CAN/24V requirement",
-  "Confirm the exact SOT-23 footprint variant against your PCB land pattern before committing",
-  "Metadata review_status is 'generated', so verify symbol-footprint pairing independently"
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SOT-23 land pattern is intended."
  ],
  "avoid_when": [
-  "The design needs a footprint other than SOT-23",
-  "You cannot independently confirm the part meets your voltage/current requirement, since only the CAN/24V facet tags are provided here",
-  "Verified, human-reviewed part data is required, since this cluster's review_status is 'generated'"
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SOT-23."
  ],
  "keywords": [
   "diode",
-  "discrete diode",
-  "sot-23",
-  "sot23",
-  "can",
-  "can bus",
-  "24v",
-  "tvs",
-  "smd",
-  "surface mount",
-  "alternate-kicad-library",
-  "akl",
-  "protection diode",
-  "esd24ca",
-  "esd24vs2u",
-  "gsot24c",
-  "pesd1can",
-  "cdsot23-t24c",
   "sot",
+  "tvs",
   "dual",
+  "can",
+  "24v",
   "unidirectional",
+  "akl",
   "alternate",
   "kicad",
-  "library"
+  "library",
+  "discrete",
+  "be",
+  "used",
+  "as",
+  "1xbidirectional"
  ],
  "facts": {
   "package_family": "SOT-23",
@@ -65,7 +57,7 @@
   "tier_counts": {
    "A": 8
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -119,6 +111,6 @@
   "Alternate-KiCad-Library/Diode_TVS_AKL/PESD2CAN",
   "Alternate-KiCad-Library/Diode_TVS_AKL/SM24"
  ],
- "embedding_text": "discrete-diode.sot-23.can.24v | Discrete Diode | Cluster of 8 tier-A SOT-23 discrete diode parts tagged for CAN and 24V use, all sourced from the Alternate-KiCad-Library with generated (unreviewed) metadata. | diode discrete diode sot-23 sot23 can can bus 24v tvs smd surface mount alternate-kicad-library akl protection diode esd24ca esd24vs2u gsot24c pesd1can cdsot23-t24c sot dual unidirectional alternate kicad library | SOT-23 | CAN 24V",
+ "embedding_text": "discrete-diode.sot-23.can.24v | Discrete Diode | 8 discrete diode parts for CAN, 24V using SOT-23 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | diode sot tvs dual can 24v unidirectional akl alternate kicad library discrete be used as 1xbidirectional | SOT-23 | CAN 24V",
  "class": "discrete.diode"
 }

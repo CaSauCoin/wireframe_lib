@@ -6,43 +6,34 @@
   "Discrete",
   "Diode"
  ],
- "description": "Cluster of 27 discrete diode parts in the D package family at the 9V facet, spanning SMD and through-hole footprints (SMC, SMA, SMB, SOD-123/123F/128, PowerDI-123, P600) including both plain and TVS-suffixed land patterns.",
+ "description": "27 discrete diode parts for 9V using D footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Prefer tier A entries (25 of 27 parts) over the 2 tier B entries",
-  "Match the exact footprint variant, including whether it is TVS-suffixed (e.g. D_SMC vs D_SMC_TVS)",
-  "Confirm SMD vs through-hole mount matches the intended board assembly",
-  "Favor parts from the higher-count Alternate-KiCad-Library source unless the single JLCPCB-Kicad-Library part fits better"
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a D land pattern is intended."
  ],
  "avoid_when": [
-  "A package outside the D family is needed",
-  "The TVS vs non-TVS footprint distinction matters and is not confirmed for the chosen part",
-  "A tier B entry is selected without further review"
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than D."
  ],
  "keywords": [
   "diode",
-  "discrete diode",
-  "9v",
-  "d package",
   "tvs",
-  "zener",
-  "smc",
-  "sma",
-  "smb",
-  "sod-123",
-  "sod-123f",
-  "sod-128",
-  "powerdi-123",
-  "p600",
-  "through hole",
-  "smd",
-  "alternate kicad library",
-  "jlcpcb kicad library",
+  "9v",
   "unidirectional",
   "discrete",
   "akl",
   "alternate",
   "kicad",
-  "library"
+  "library",
+  "smc",
+  "bidirectional",
+  "sod",
+  "do",
+  "0a",
+  "sma",
+  "smb"
  ],
  "facts": {
   "package_family": "D",
@@ -79,7 +70,7 @@
    "A": 25,
    "B": 2
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -152,6 +143,6 @@
   "Alternate-KiCad-Library/Diode_TVS_AKL/MSMP9.0A",
   "Alternate-KiCad-Library/Diode_TVS_AKL/TPSMA6L9.0A"
  ],
- "embedding_text": "discrete-diode.d.9v | Discrete Diode | Cluster of 27 discrete diode parts in the D package family at the 9V facet, spanning SMD and through-hole footprints (SMC, SMA, SMB, SOD-123/123F/128, PowerDI-123, P600) including both plain and TVS-suffixed land patterns. | diode discrete diode 9v d package tvs zener smc sma smb sod-123 sod-123f sod-128 powerdi-123 p600 through hole smd alternate kicad library jlcpcb kicad library unidirectional discrete akl alternate kicad library | D | 9V",
+ "embedding_text": "discrete-diode.d.9v | Discrete Diode | 27 discrete diode parts for 9V using D footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | diode tvs 9v unidirectional discrete akl alternate kicad library smc bidirectional sod do 0a sma smb | D | 9V",
  "class": "discrete.diode"
 }

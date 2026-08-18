@@ -6,34 +6,27 @@
   "IC",
   "Sensor"
  ],
- "description": "IC sensor cluster featuring through-hole mounting in the LuminOX package family, utilizing the LuminOX_LOX-O2 footprint sourced from KiCad symbols.",
+ "description": "1 ic sensor parts using LuminOX footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Use when a through-hole IC sensor in a LuminOX package is required.",
-  "Verify footprint compatibility with the LuminOX_LOX-O2 land pattern.",
-  "Check part tier and symbol mapping before finalizing PCB placement."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a LuminOX land pattern is intended."
  ],
  "avoid_when": [
-  "The layout requires a surface-mount package instead of through-hole.",
-  "The design requires a package footprint other than LuminOX_LOX-O2.",
-  "Higher quality tier verification or planner-visible parts are required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than LuminOX."
  ],
  "keywords": [
-  "ic",
-  "sensor",
-  "ic sensor",
   "luminox",
-  "lox",
-  "lox-o2",
-  "luminox_lox-o2",
-  "through_hole",
-  "through hole",
-  "kicad",
-  "kicad-symbols",
   "o2",
-  "gas",
+  "sensor",
+  "lox",
   "sst",
+  "gas",
   "luminescence",
-  "based"
+  "based",
+  "ic"
  ],
  "facts": {
   "package_family": "LuminOX",
@@ -54,12 +47,12 @@
   "tier_counts": {
    "C": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
   "kicad-symbols/Sensor_Gas/LuminOX_LOX-O2"
  ],
- "embedding_text": "ic-sensor.luminox | IC Sensor | IC sensor cluster featuring through-hole mounting in the LuminOX package family, utilizing the LuminOX_LOX-O2 footprint sourced from KiCad symbols. | ic sensor ic sensor luminox lox lox-o2 luminox_lox-o2 through_hole through hole kicad kicad-symbols o2 gas sst luminescence based | LuminOX | ",
+ "embedding_text": "ic-sensor.luminox | IC Sensor | 1 ic sensor parts using LuminOX footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | luminox o2 sensor lox sst gas luminescence based ic | LuminOX | ",
  "class": "ic.sensor"
 }

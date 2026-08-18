@@ -6,44 +6,34 @@
   "Discrete",
   "Diode"
  ],
- "description": "Cluster of 58 discrete diode parts rated 70V using D-family footprints (DO-35/SOD27, SOD-123/123F/323/523, SMA/SMB/SMC, MELF, P600 zener/TVS variants), covering both SMD and through-hole mounts.",
+ "description": "58 discrete diode parts for 70V using D footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Match the exact footprint (DO-35, SOD-123/323/523, SMA/SMB/SMC, MELF, or P600) to the intended land pattern.",
-  "Prefer tier A entries (56 of 58 parts, most scoring 100) for a verified symbol-footprint pairing.",
-  "Confirm SMD vs through-hole mount fits the assembly process.",
-  "Note that P600 footprints include zener and TVS variants, not just standard rectifier forms."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a D land pattern is intended."
  ],
  "avoid_when": [
-  "The part's electrical rating beyond the 70V facet is not confirmed for the application.",
-  "The board requires a footprint outside the D family (DO-35, SOD variants, SMA/SMB/SMC, MELF, P600).",
-  "The symbol-footprint pairing is unverified or flagged for review.",
-  "A specific diode type (rectifier, zener, TVS, schottky) is required but not confirmed for the chosen part."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than D."
  ],
  "keywords": [
   "diode",
   "70v",
-  "discrete diode",
-  "d package",
-  "do-35",
-  "sod27",
-  "sod-123",
-  "sod-123f",
-  "sod-323",
-  "sod-523",
-  "sma",
-  "smb",
-  "smc",
-  "melf",
-  "p600",
-  "zener",
   "tvs",
-  "through hole",
-  "smd",
-  "kicad",
   "do",
   "schottky",
   "discrete",
-  "akl"
+  "akl",
+  "alternate",
+  "kicad",
+  "library",
+  "horizontal",
+  "sod",
+  "unidirectional",
+  "bidirectional",
+  "smc",
+  "p600"
  ],
  "facts": {
   "package_family": "D",
@@ -80,7 +70,7 @@
    "A": 56,
    "B": 2
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -184,6 +174,6 @@
   "Alternate-KiCad-Library/Diode_Schottky_AKL/BAS70L",
   "Alternate-KiCad-Library/Diode_TVS_AKL/TPSMA6L70A"
  ],
- "embedding_text": "discrete-diode.d.70v | Discrete Diode | Cluster of 58 discrete diode parts rated 70V using D-family footprints (DO-35/SOD27, SOD-123/123F/323/523, SMA/SMB/SMC, MELF, P600 zener/TVS variants), covering both SMD and through-hole mounts. | diode 70v discrete diode d package do-35 sod27 sod-123 sod-123f sod-323 sod-523 sma smb smc melf p600 zener tvs through hole smd kicad do schottky discrete akl | D | 70V",
+ "embedding_text": "discrete-diode.d.70v | Discrete Diode | 58 discrete diode parts for 70V using D footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | diode 70v tvs do schottky discrete akl alternate kicad library horizontal sod unidirectional bidirectional smc p600 | D | 70V",
  "class": "discrete.diode"
 }

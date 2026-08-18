@@ -6,34 +6,23 @@
   "IC",
   "Timing"
  ],
- "description": "Surface-mount timing IC cluster featuring 3 tier-A parts in VSSOP-8_3x3mm_P0.65mm footprints, including LM555xMM, LMC555xMM, and TLC555xPS.",
+ "description": "3 ic timing parts using VSSOP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when surface-mount (SMD) timing ICs in VSSOP package footprint are required.",
-  "Choose between representative timer IC variants including LM555xMM, LMC555xMM, and TLC555xPS.",
-  "Verify compatibility with the VSSOP-8_3x3mm_P0.65mm footprint."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a VSSOP land pattern is intended."
  ],
  "avoid_when": [
-  "Through-hole or non-VSSOP packaging is required for the layout.",
-  "A footprint other than VSSOP-8_3x3mm_P0.65mm is needed.",
-  "Components outside the IC timing category are required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than VSSOP."
  ],
  "keywords": [
-  "ic",
-  "timing",
   "vssop",
-  "vssop-8",
-  "vssop-8_3x3mm_p0.65mm",
-  "smd",
   "timer",
-  "lm555xmm",
-  "lmc555xmm",
-  "tlc555xps",
-  "ic.timing",
-  "ic timing",
-  "3x3mm",
-  "p0.65mm",
   "single",
   "compatible",
+  "3x3mm",
   "p0",
   "65mm",
   "so",
@@ -41,7 +30,10 @@
   "mo",
   "aa",
   "texas",
-  "dgk0008a"
+  "dgk0008a",
+  "ic",
+  "timing",
+  "lm555xmm"
  ],
  "facts": {
   "package_family": "VSSOP",
@@ -62,7 +54,7 @@
   "tier_counts": {
    "A": 3
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -95,6 +87,6 @@
   "kicad-symbols/Timer/LMC555xMM",
   "kicad-symbols/Timer/TLC555xPS"
  ],
- "embedding_text": "ic-timing.vssop | IC Timing | Surface-mount timing IC cluster featuring 3 tier-A parts in VSSOP-8_3x3mm_P0.65mm footprints, including LM555xMM, LMC555xMM, and TLC555xPS. | ic timing vssop vssop-8 vssop-8_3x3mm_p0.65mm smd timer lm555xmm lmc555xmm tlc555xps ic.timing ic timing 3x3mm p0.65mm single compatible p0 65mm so jedec mo aa texas dgk0008a | VSSOP | ",
+ "embedding_text": "ic-timing.vssop | IC Timing | 3 ic timing parts using VSSOP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | vssop timer single compatible 3x3mm p0 65mm so jedec mo aa texas dgk0008a ic timing lm555xmm | VSSOP | ",
  "class": "ic.timing"
 }

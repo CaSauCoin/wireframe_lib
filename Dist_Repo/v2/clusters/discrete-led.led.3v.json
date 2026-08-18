@@ -6,30 +6,24 @@
   "Discrete",
   "LED"
  ],
- "description": "Discrete 3V surface-mount LED cluster containing 3 parts across KiCad symbol and legacy sources, featuring high-density and high-intensity XHP50 footprints.",
+ "description": "3 discrete led parts for 3V using LED footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when requiring a 3V surface-mount discrete LED with Cree XHP50 footprints.",
-  "Choose between HighDensity and HighIntensity footprint variants based on PCB design requirements.",
-  "Prefer tier A entries over tier C parts for planner-visible component selection."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a LED land pattern is intended."
  ],
  "avoid_when": [
-  "Do not use when through-hole mounting is required instead of SMD.",
-  "Avoid when a non-3V operating voltage or package family other than LED is needed.",
-  "Avoid if Cree XHP50 land patterns do not match design requirements."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than LED."
  ],
  "keywords": [
-  "discrete",
   "led",
-  "3v",
-  "smd",
-  "surface mount",
-  "cree",
   "xhp50",
+  "3v",
+  "cree",
   "highdensity",
-  "highintensity",
-  "discrete led",
-  "cree xhp50",
-  "kicad",
+  "discrete",
   "xlamp",
   "high",
   "leds",
@@ -37,6 +31,7 @@
   "parallel",
   "density",
   "diode",
+  "highintensity",
   "intensity",
   "surface"
  ],
@@ -64,7 +59,7 @@
    "A": 2,
    "C": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -89,6 +84,6 @@
   "kicad-symbols/LED/LED_Cree_XHP50_3V_HighIntensity",
   "dist-legacy/LED_Cree-XHP50_3V_HighDensity"
  ],
- "embedding_text": "discrete-led.led.3v | Discrete LED | Discrete 3V surface-mount LED cluster containing 3 parts across KiCad symbol and legacy sources, featuring high-density and high-intensity XHP50 footprints. | discrete led 3v smd surface mount cree xhp50 highdensity highintensity discrete led cree xhp50 kicad xlamp high leds in parallel density diode intensity surface | LED | 3V",
+ "embedding_text": "discrete-led.led.3v | Discrete LED | 3 discrete led parts for 3V using LED footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | led xhp50 3v cree highdensity discrete xlamp high leds in parallel density diode highintensity intensity surface | LED | 3V",
  "class": "discrete.led"
 }

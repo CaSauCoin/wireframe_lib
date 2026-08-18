@@ -7,37 +7,29 @@
   "Interface",
   "CAN"
  ],
- "description": "CAN interface IC cluster containing 4 surface-mount parts featuring SPI and CAN facets in SOIC-14 and SOIC-18W packages.",
+ "description": "4 ic interface can parts for SPI, CAN using SOIC footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when requiring surface-mount CAN interface ICs with SPI and CAN facets.",
-  "Choose between SOIC-14 (3.9x8.7mm, 1.27mm pitch) and SOIC-18W (7.5x11.6mm, 1.27mm pitch) footprints.",
-  "Suitable for applications requiring Tier A components from KiCad symbols."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SOIC land pattern is intended."
  ],
  "avoid_when": [
-  "Avoid when the design requires packages other than SOIC-14 or SOIC-18W.",
-  "Avoid if surface-mount (SMD) packaging is not compatible with the assembly process.",
-  "Avoid when SPI or CAN interface facets are not needed."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SOIC."
  ],
  "keywords": [
-  "ic",
-  "interface",
   "can",
-  "spi",
   "soic",
-  "smd",
-  "soic-14",
-  "soic-18w",
-  "mcp2515-xso",
-  "mcp2517fd-xsl",
-  "tja1145t",
-  "tja1145t-fd",
-  "kicad-symbols",
+  "interface",
+  "spi",
   "fd",
   "lin",
   "controller",
   "p1",
   "27mm",
   "so",
+  "ic",
   "high",
   "speed",
   "transceiver",
@@ -67,7 +59,7 @@
   "tier_counts": {
    "A": 4
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -109,6 +101,6 @@
   "kicad-symbols/Interface_CAN_LIN/TJA1145T",
   "kicad-symbols/Interface_CAN_LIN/TJA1145T-FD"
  ],
- "embedding_text": "ic-interface-can.soic.spi.can | IC Interface CAN | CAN interface IC cluster containing 4 surface-mount parts featuring SPI and CAN facets in SOIC-14 and SOIC-18W packages. | ic interface can spi soic smd soic-14 soic-18w mcp2515-xso mcp2517fd-xsl tja1145t tja1145t-fd kicad-symbols fd lin controller p1 27mm so high speed transceiver partial networking | SOIC | SPI CAN",
+ "embedding_text": "ic-interface-can.soic.spi.can | IC Interface CAN | 4 ic interface can parts for SPI, CAN using SOIC footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | can soic interface spi fd lin controller p1 27mm so ic high speed transceiver partial networking | SOIC | SPI CAN",
  "class": "ic.interface.can"
 }

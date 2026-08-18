@@ -5,31 +5,23 @@
  "category_path": [
   "IC"
  ],
- "description": "Cluster of 1 IC component using the LATTICE footprint and package family with tier C quality and unknown mount type.",
+ "description": "1 ic parts using LATTICE footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Verify compatibility with the LATTICE footprint and package family.",
-  "Check component data given its tier C quality status and legacy source.",
-  "Confirm physical mounting requirements as the mount type is unknown."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a LATTICE land pattern is intended."
  ],
  "avoid_when": [
-  "The design requires package footprints other than LATTICE.",
-  "Planner-visible parts are required, as planner visible count is zero.",
-  "Tier C generated parts from legacy sources do not meet project quality standards."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than LATTICE."
  ],
  "keywords": [
-  "ic",
   "lattice",
-  "ic lattice",
-  "lattice package",
-  "lattice footprint",
-  "package family lattice",
-  "dist-legacy",
-  "tier c",
-  "unknown mount",
-  "generated status",
   "qfn",
   "10x10",
   "mo",
+  "ic",
   "pad",
   "mm",
   "pitch",
@@ -54,12 +46,12 @@
   "tier_counts": {
    "C": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
   "dist-legacy/LATTICE QFN-72 10X10 MO-220"
  ],
- "embedding_text": "ic.lattice | IC | Cluster of 1 IC component using the LATTICE footprint and package family with tier C quality and unknown mount type. | ic lattice ic lattice lattice package lattice footprint package family lattice dist-legacy tier c unknown mount generated status qfn 10x10 mo pad mm pitch pins | LATTICE | ",
+ "embedding_text": "ic.lattice | IC | 1 ic parts using LATTICE footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | lattice qfn 10x10 mo ic pad mm pitch pins | LATTICE | ",
  "class": "ic"
 }

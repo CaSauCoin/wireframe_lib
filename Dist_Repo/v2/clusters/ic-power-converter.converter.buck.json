@@ -7,39 +7,33 @@
   "Power",
   "Converter"
  ],
- "description": "Cluster of 6 tier C buck IC power converter parts supporting SMD and through-hole mounting with RECOM and TRACO DCDC converter footprints.",
+ "description": "6 ic power converter parts for buck using Converter footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select based on surface-mount (SMD) or through-hole (THT) mounting requirements.",
-  "Match specific DCDC footprint variants from RECOM or TRACO package families.",
-  "Note that all parts in this cluster are categorized under quality tier C."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a Converter land pattern is intended."
  ],
  "avoid_when": [
-  "A non-buck converter topology is required.",
-  "The PCB design requires a package outside the Converter family footprints.",
-  "Verified high-tier (Tier A or Tier B) component status is mandatory."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than Converter."
  ],
  "keywords": [
-  "ic",
-  "power converter",
-  "buck",
   "converter",
-  "dcdc",
   "recom",
-  "traco",
-  "smd",
-  "through hole",
+  "dcdc",
   "tht",
-  "r-78hb",
-  "r-78s",
-  "tsr0.5",
   "power",
   "pitch",
+  "ic",
   "pdf",
+  "buck",
   "package",
   "dc",
   "tsr0",
   "sip",
   "54mm",
+  "traco",
   "78hb"
  ],
  "facts": {
@@ -69,7 +63,7 @@
   "tier_counts": {
    "C": 6
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
@@ -80,6 +74,6 @@
   "dist-legacy/Converter_DCDC_RECOM_R5xxxDA_THT",
   "dist-legacy/Converter_DCDC_RECOM_R5xxxPA_THT"
  ],
- "embedding_text": "ic-power-converter.converter.buck | IC Power Converter | Cluster of 6 tier C buck IC power converter parts supporting SMD and through-hole mounting with RECOM and TRACO DCDC converter footprints. | ic power converter buck converter dcdc recom traco smd through hole tht r-78hb r-78s tsr0.5 power pitch pdf package dc tsr0 sip 54mm 78hb | Converter | buck",
+ "embedding_text": "ic-power-converter.converter.buck | IC Power Converter | 6 ic power converter parts for buck using Converter footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | converter recom dcdc tht power pitch ic pdf buck package dc tsr0 sip 54mm traco 78hb | Converter | buck",
  "class": "ic.power.converter"
 }

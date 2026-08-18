@@ -7,33 +7,23 @@
   "Power",
   "Switching Regulator"
  ],
- "description": "Cluster of 5 surface-mount switching regulator ICs in DFN packages featuring 5V, 2V, and boost facets.",
+ "description": "5 ic power switching regulator parts for 5V, boost, 2V using DFN footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Choose between Tier A (MCP1640 series) and Tier B (MIC2253) parts.",
-  "Select based on required footprint: DFN-8 (3x2mm) or DFN-12 (3x3mm).",
-  "Ensure package requirements match SMD DFN mounting."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a DFN land pattern is intended."
  ],
  "avoid_when": [
-  "Designs requiring through-hole mounting instead of SMD.",
-  "Applications needing non-DFN package families.",
-  "Footprint requirements other than DFN-8-1EP or DFN-12-1EP."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than DFN."
  ],
  "keywords": [
-  "ic",
-  "power",
-  "switching regulator",
-  "boost",
   "dfn",
-  "smd",
-  "5v",
-  "2v",
-  "dfn-8",
-  "dfn-12",
-  "mcp1640",
-  "mic2253",
-  "surface mount",
   "regulator",
+  "boost",
   "switching",
+  "5v",
   "adjustable",
   "dc",
   "output",
@@ -41,7 +31,10 @@
   "1ep",
   "p0",
   "ep1",
-  "up"
+  "up",
+  "ic",
+  "power",
+  "2v"
  ],
  "facts": {
   "package_family": "DFN",
@@ -68,7 +61,7 @@
    "A": 4,
    "B": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -119,6 +112,6 @@
   "kicad-symbols/Regulator_Switching/MCP1640x-xMC",
   "kicad-symbols/Regulator_Switching/MIC2253"
  ],
- "embedding_text": "ic-power-switching.dfn.5v.boost | IC Power Switching Regulator | Cluster of 5 surface-mount switching regulator ICs in DFN packages featuring 5V, 2V, and boost facets. | ic power switching regulator boost dfn smd 5v 2v dfn-8 dfn-12 mcp1640 mic2253 surface mount regulator switching adjustable dc output 5mm 1ep p0 ep1 up | DFN | 5V boost 2V",
+ "embedding_text": "ic-power-switching.dfn.5v.boost | IC Power Switching Regulator | 5 ic power switching regulator parts for 5V, boost, 2V using DFN footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | dfn regulator boost switching 5v adjustable dc output 5mm 1ep p0 ep1 up ic power 2v | DFN | 5V boost 2V",
  "class": "ic.power.switching"
 }

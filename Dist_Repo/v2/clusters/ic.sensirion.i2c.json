@@ -5,28 +5,23 @@
  "category_path": [
   "IC"
  ],
- "description": "Sensirion I2C integrated circuit cluster containing two tier B parts using SENSIRION footprints.",
+ "description": "2 ic parts for I2C using SENSIRION footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when requiring an I2C interface integrated circuit with a SENSIRION footprint.",
-  "Choose between representative parts STS21 and STS-30-DIS.",
-  "Verify exact specifications as mounting style is listed as unknown."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SENSIRION land pattern is intended."
  ],
  "avoid_when": [
-  "Avoid if a non-I2C communication interface is required.",
-  "Avoid if the board layout requires a package family other than SENSIRION.",
-  "Avoid if tier A verified components are strictly required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SENSIRION."
  ],
  "keywords": [
   "sensirion",
   "i2c",
-  "ic",
-  "integrated circuit",
   "sts21",
-  "sts-30-dis",
+  "ic",
   "sts",
-  "sensirion footprint",
-  "i2c ic",
-  "dist-legacy",
   "dis",
   "sda",
   "scl",
@@ -60,7 +55,7 @@
   "tier_counts": {
    "B": 2
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -84,6 +79,6 @@
   "dist-legacy/SENSIRION STS21",
   "dist-legacy/SENSIRION STS-30-DIS"
  ],
- "embedding_text": "ic.sensirion.i2c | IC | Sensirion I2C integrated circuit cluster containing two tier B parts using SENSIRION footprints. | sensirion i2c ic integrated circuit sts21 sts-30-dis sts sensirion footprint i2c ic dist-legacy dis sda scl integrated circuit interface with and pins sensor featuring | SENSIRION | I2C",
+ "embedding_text": "ic.sensirion.i2c | IC | 2 ic parts for I2C using SENSIRION footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | sensirion i2c sts21 ic sts dis sda scl integrated circuit interface with and pins sensor featuring | SENSIRION | I2C",
  "class": "ic"
 }

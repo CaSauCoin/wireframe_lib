@@ -7,34 +7,23 @@
   "Analog",
   "Amplifier"
  ],
- "description": "Surface-mount 100V IC analog amplifier cluster in the SOIC package family containing tier A parts with SOIC-8_3.9x4.9mm_P1.27mm footprints.",
+ "description": "4 ic analog amplifier parts for 100V using SOIC footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when a 100V SMD analog amplifier IC in a SOIC package is needed.",
-  "Verify PCB footprint compatibility with SOIC-8_3.9x4.9mm_P1.27mm.",
-  "Choose from tier A parts including INA240A3D, INA241A4xD, INA241B4xD, and INA286."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SOIC land pattern is intended."
  ],
  "avoid_when": [
-  "The design requires non-SMD or through-hole mounting.",
-  "The PCB layout requires a footprint other than SOIC-8_3.9x4.9mm_P1.27mm.",
-  "Components outside the 100V analog amplifier class are required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SOIC."
  ],
  "keywords": [
-  "ic",
-  "analog",
-  "amplifier",
-  "100v",
   "soic",
-  "smd",
-  "soic-8",
-  "soic-8_3.9x4.9mm_p1.27mm",
-  "kicad-symbols",
-  "ina240a3d",
-  "ina241a4xd",
-  "ina241b4xd",
-  "ina286",
-  "tier a",
   "current",
+  "amplifier",
   "bidirectional",
+  "100v",
   "high",
   "low",
   "shunt",
@@ -42,7 +31,10 @@
   "drift",
   "9x4",
   "9mm",
-  "p1"
+  "p1",
+  "27mm",
+  "so",
+  "monitor"
  ],
  "facts": {
   "package_family": "SOIC",
@@ -65,7 +57,7 @@
   "tier_counts": {
    "A": 4
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -107,6 +99,6 @@
   "kicad-symbols/Amplifier_Current/INA241B4xD",
   "kicad-symbols/Amplifier_Current/INA286"
  ],
- "embedding_text": "ic-analog-amplifier.soic.100v | IC Analog Amplifier | Surface-mount 100V IC analog amplifier cluster in the SOIC package family containing tier A parts with SOIC-8_3.9x4.9mm_P1.27mm footprints. | ic analog amplifier 100v soic smd soic-8 soic-8_3.9x4.9mm_p1.27mm kicad-symbols ina240a3d ina241a4xd ina241b4xd ina286 tier a current bidirectional high low shunt zero drift 9x4 9mm p1 | SOIC | 100V",
+ "embedding_text": "ic-analog-amplifier.soic.100v | IC Analog Amplifier | 4 ic analog amplifier parts for 100V using SOIC footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | soic current amplifier bidirectional 100v high low shunt zero drift 9x4 9mm p1 27mm so monitor | SOIC | 100V",
  "class": "ic.analog.amplifier"
 }

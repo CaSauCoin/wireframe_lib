@@ -5,44 +5,34 @@
  "category_path": [
   "Connector"
  ],
- "description": "Cluster of 6 single-row 1x05 pin connector parts (SparkFun-KiCad-Libraries) spanning 2.54mm and 2.0mm pitch, PTH and SMD sockets, headers, locking, and castellated footprints.",
+ "description": "6 connector parts using 1x05 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Match the exact footprint (e.g. 1x05_P2.54mm vs 1x05_P2.0mm_Socket_Vertical_PTH) to your PCB land pattern",
-  "Prefer the tier A entry (Conn_01x05_P2.54mm) unless a specific pitch, socket, locking, or castellated variant is required",
-  "Confirm mount type (SMD vs through_hole) matches your assembly process",
-  "Verify pin1 orientation for the SMD vertical socket variant (Pin1RightDown)"
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a 1x05 land pattern is intended."
  ],
  "avoid_when": [
-  "Board requires a pin count other than 5",
-  "Required pitch is not 2.54mm or 2.0mm",
-  "Design needs a dual-row or non-1x05 package family",
-  "Symbol-footprint pairing is unverified or flagged for review"
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than 1x05."
  ],
  "keywords": [
   "connector",
-  "1x05",
-  "01x05",
   "sparkfun",
-  "header",
-  "pin header",
-  "socket",
-  "p2.54mm",
-  "p2.0mm",
-  "2.54mm pitch",
-  "2.0mm pitch",
-  "pth",
-  "smd",
-  "through hole",
-  "locking connector",
-  "castellated",
-  "vertical socket",
-  "single row",
   "p2",
+  "1x05",
   "54mm",
+  "pth",
   "conn",
+  "01x05",
+  "socket",
   "2mm",
   "0mm",
-  "vertical"
+  "vertical",
+  "pin",
+  "smd",
+  "castellated",
+  "pitch"
  ],
  "facts": {
   "package_family": "1x05",
@@ -71,7 +61,7 @@
    "B": 4,
    "C": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -123,6 +113,6 @@
   "SparkFun-KiCad-Libraries/SparkFun-Connector/Conn_01x05_P2.54mm_Socket_PTH",
   "SparkFun-KiCad-Libraries/SparkFun-Connector/Conn_01x05_P2.54mm_Castellated"
  ],
- "embedding_text": "connector.1x05 | Connector | Cluster of 6 single-row 1x05 pin connector parts (SparkFun-KiCad-Libraries) spanning 2.54mm and 2.0mm pitch, PTH and SMD sockets, headers, locking, and castellated footprints. | connector 1x05 01x05 sparkfun header pin header socket p2.54mm p2.0mm 2.54mm pitch 2.0mm pitch pth smd through hole locking connector castellated vertical socket single row p2 54mm conn 2mm 0mm vertical | 1x05 | ",
+ "embedding_text": "connector.1x05 | Connector | 6 connector parts using 1x05 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | connector sparkfun p2 1x05 54mm pth conn 01x05 socket 2mm 0mm vertical pin smd castellated pitch | 1x05 | ",
  "class": "connector"
 }

@@ -6,33 +6,24 @@
   "Discrete",
   "Transistor"
  ],
- "description": "A cluster of 5 discrete transistor parts in the NIDEC package family available in SMD and through-hole mounts.",
+ "description": "5 discrete transistor parts using NIDEC footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when a NIDEC package family footprint is required for discrete transistors.",
-  "Check specific footprint variants including NIDEC COPAL CJS-GULLWING, CJS-J LEAD, and CF-LD-1DC6-AR2W.",
-  "Choose between SMD, through-hole, or unspecified mounting types."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a NIDEC land pattern is intended."
  ],
  "avoid_when": [
-  "Designs requiring footprints outside the NIDEC package family.",
-  "Applications that strictly require Tier A quality parts.",
-  "Projects that do not require discrete transistors."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than NIDEC."
  ],
  "keywords": [
   "nidec",
-  "discrete transistor",
-  "discrete",
-  "transistor",
-  "nidec copal",
-  "cjs-gullwing",
-  "cjs-j lead",
-  "cf-ld-1dc6-ar2w",
-  "smd",
-  "through hole",
-  "celestial-altium-library",
-  "dist-legacy",
   "copal",
   "cjs",
   "gullwing",
+  "discrete",
+  "transistor",
   "lead",
   "cf",
   "ld",
@@ -41,7 +32,8 @@
   "pin",
   "surface",
   "mount",
-  "pad"
+  "pad",
+  "mm"
  ],
  "facts": {
   "package_family": "NIDEC",
@@ -69,7 +61,7 @@
    "B": 2,
    "C": 3
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -96,6 +88,6 @@
   "celestial-altium-library/NIDEC COPAL CJS-J LEAD/NIDEC_COPAL_CJS-J_LEAD",
   "celestial-altium-library/NIDEC COPAL CF-LD-1DC6-AR2W/NIDEC_COPAL_CF-LD-1DC6-AR2W"
  ],
- "embedding_text": "discrete-transistor.nidec | Discrete Transistor | A cluster of 5 discrete transistor parts in the NIDEC package family available in SMD and through-hole mounts. | nidec discrete transistor discrete transistor nidec copal cjs-gullwing cjs-j lead cf-ld-1dc6-ar2w smd through hole celestial-altium-library dist-legacy copal cjs gullwing lead cf ld 1dc6 ar2w pin surface mount pad | NIDEC | ",
+ "embedding_text": "discrete-transistor.nidec | Discrete Transistor | 5 discrete transistor parts using NIDEC footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | nidec copal cjs gullwing discrete transistor lead cf ld 1dc6 ar2w pin surface mount pad mm | NIDEC | ",
  "class": "discrete.transistor"
 }

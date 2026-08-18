@@ -6,44 +6,34 @@
   "Discrete",
   "Diode"
  ],
- "description": "Cluster of 21 tier-A discrete diode parts rated 100V in the SOT-23 SMD footprint, sourced from the Alternate-KiCad-Library and kicad-symbols libraries.",
+ "description": "21 discrete diode parts for 100V using SOT-23 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "All 21 entries are tier A; differentiate by exact part number rather than tier or score.",
-  "Confirm the SOT-23 footprint matches your intended PCB land pattern.",
-  "Check the source library (Alternate-KiCad-Library vs kicad-symbols) for symbol/footprint consistency.",
-  "Verify the 100V rating and any other electrical specs against the part's datasheet before use."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SOT-23 land pattern is intended."
  ],
  "avoid_when": [
-  "The design requires a package other than SOT-23.",
-  "The application needs a voltage rating other than 100V.",
-  "Electrical characteristics beyond voltage (current, speed, polarity, pinout) are not confirmed for the chosen part.",
-  "A verified, reviewed symbol-footprint pairing is required and this cluster is marked generated."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SOT-23."
  ],
  "keywords": [
-  "sot-23",
-  "sot23",
-  "diode",
-  "discrete diode",
-  "100v",
-  "smd",
-  "surface mount",
-  "kicad",
-  "kicad-symbols",
-  "alternate-kicad-library",
-  "bav70",
-  "1ss221",
-  "bar14",
-  "bar15",
-  "bar16",
-  "tier a",
-  "discrete",
   "sot",
+  "diode",
+  "100v",
   "dual",
+  "discrete",
   "akl",
   "alternate",
+  "kicad",
   "library",
   "4ns",
-  "switching"
+  "switching",
+  "series",
+  "fast",
+  "small",
+  "signal",
+  "200ma"
  ],
  "facts": {
   "package_family": "SOT-23",
@@ -67,7 +57,7 @@
   "tier_counts": {
    "A": 21
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -134,6 +124,6 @@
   "Alternate-KiCad-Library/Diode_AKL/SMBD7000",
   "Alternate-KiCad-Library/Diode_AKL/SMBD914"
  ],
- "embedding_text": "discrete-diode.sot-23.100v | Discrete Diode | Cluster of 21 tier-A discrete diode parts rated 100V in the SOT-23 SMD footprint, sourced from the Alternate-KiCad-Library and kicad-symbols libraries. | sot-23 sot23 diode discrete diode 100v smd surface mount kicad kicad-symbols alternate-kicad-library bav70 1ss221 bar14 bar15 bar16 tier a discrete sot dual akl alternate library 4ns switching | SOT-23 | 100V",
+ "embedding_text": "discrete-diode.sot-23.100v | Discrete Diode | 21 discrete diode parts for 100V using SOT-23 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | sot diode 100v dual discrete akl alternate kicad library 4ns switching series fast small signal 200ma | SOT-23 | 100V",
  "class": "discrete.diode"
 }

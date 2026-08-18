@@ -6,36 +6,31 @@
   "Discrete",
   "FET"
  ],
- "description": "Discrete surface-mount FET cluster featuring 30V rated parts in SOT footprints including SOT-353_SC-70-5 and SOT-323_SC-70.",
+ "description": "2 discrete fet parts for 30V using SOT footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when requiring a 30V surface-mount discrete FET.",
-  "Choose based on footprint requirements such as SOT-353_SC-70-5 or SOT-323_SC-70.",
-  "Select between specific parts like DMN32D2LDF and Si1308EDL."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SOT land pattern is intended."
  ],
  "avoid_when": [
-  "The design requires package families other than SOT surface-mount.",
-  "A voltage rating other than 30V is required.",
-  "Through-hole mounting or non-FET discrete components are needed."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SOT."
  ],
  "keywords": [
-  "discrete",
+  "sot",
+  "sc",
   "fet",
   "30v",
-  "sot",
-  "smd",
-  "sot-353_sc-70-5",
-  "sot-323_sc-70",
-  "dmn32d2ldf",
-  "si1308edl",
-  "sc-70",
-  "kicad-symbols",
-  "sc",
   "channel",
   "mosfet",
   "transistor",
   "id",
   "vds",
   "to",
+  "smd",
+  "discrete",
+  "dmn32d2ldf",
   "common",
   "source",
   "dual"
@@ -62,7 +57,7 @@
   "tier_counts": {
    "A": 2
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -86,6 +81,6 @@
   "kicad-symbols/Transistor_FET/DMN32D2LDF",
   "kicad-symbols/Transistor_FET/Si1308EDL"
  ],
- "embedding_text": "discrete-fet.sot.30v | Discrete FET | Discrete surface-mount FET cluster featuring 30V rated parts in SOT footprints including SOT-353_SC-70-5 and SOT-323_SC-70. | discrete fet 30v sot smd sot-353_sc-70-5 sot-323_sc-70 dmn32d2ldf si1308edl sc-70 kicad-symbols sc channel mosfet transistor id vds to common source dual | SOT | 30V",
+ "embedding_text": "discrete-fet.sot.30v | Discrete FET | 2 discrete fet parts for 30V using SOT footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | sot sc fet 30v channel mosfet transistor id vds to smd discrete dmn32d2ldf common source dual | SOT | 30V",
  "class": "discrete.fet"
 }

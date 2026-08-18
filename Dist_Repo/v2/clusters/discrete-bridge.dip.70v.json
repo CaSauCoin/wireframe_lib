@@ -6,43 +6,34 @@
   "Discrete",
   "Bridge Rectifier"
  ],
- "description": "Cluster of 3 tier-A discrete bridge rectifier parts rated for the 70V facet, available in DIP-4 and OnSemi SDIP-4L footprints for through-hole or SMD mounting.",
+ "description": "3 discrete bridge rectifier parts for 70V using DIP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "All 3 parts are tier A with score 88; differentiate by exact footprint match",
-  "Choose Diode_Bridge_DIP-4_W7.62mm_P5.08mm for through-hole DIP layout",
-  "Choose Diode_Bridge_OnSemi_SDIP-4L for the SMD variant (DF01S, DF01S1)",
-  "Confirm footprint pad pattern and pitch match your PCB land pattern before committing"
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a DIP land pattern is intended."
  ],
  "avoid_when": [
-  "Required voltage rating exceeds the 70V facet of this cluster",
-  "Design needs a package other than DIP or SDIP-4L",
-  "Current, surge, or forward-voltage limits are not confirmed from the actual part data"
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than DIP."
  ],
  "keywords": [
-  "bridge rectifier",
-  "discrete bridge",
-  "diode bridge",
-  "70v",
-  "dip",
-  "dip-4",
-  "sdip-4l",
-  "onsemi",
-  "df01m",
-  "df01s",
-  "df01s1",
-  "through hole",
-  "smd",
-  "w7.62mm",
-  "p5.08mm",
-  "kicad symbols",
-  "discrete",
-  "rectifier",
   "bridge",
   "diode",
+  "rectifier",
+  "70v",
+  "dip",
+  "onsemi",
   "sdip",
   "4l",
   "vrms",
-  "if"
+  "if",
+  "acdc",
+  "discrete",
+  "0a",
+  "62mm",
+  "08mm",
+  "smdip"
  ],
  "facts": {
   "package_family": "DIP",
@@ -67,7 +58,7 @@
   "tier_counts": {
    "A": 3
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -100,6 +91,6 @@
   "kicad-symbols/Diode_Bridge/DF01S",
   "kicad-symbols/Diode_Bridge/DF01S1"
  ],
- "embedding_text": "discrete-bridge.dip.70v | Discrete Bridge Rectifier | Cluster of 3 tier-A discrete bridge rectifier parts rated for the 70V facet, available in DIP-4 and OnSemi SDIP-4L footprints for through-hole or SMD mounting. | bridge rectifier discrete bridge diode bridge 70v dip dip-4 sdip-4l onsemi df01m df01s df01s1 through hole smd w7.62mm p5.08mm kicad symbols discrete rectifier bridge diode sdip 4l vrms if | DIP | 70V",
+ "embedding_text": "discrete-bridge.dip.70v | Discrete Bridge Rectifier | 3 discrete bridge rectifier parts for 70V using DIP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | bridge diode rectifier 70v dip onsemi sdip 4l vrms if acdc discrete 0a 62mm 08mm smdip | DIP | 70V",
  "class": "discrete.bridge"
 }

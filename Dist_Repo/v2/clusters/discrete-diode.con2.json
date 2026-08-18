@@ -6,29 +6,21 @@
   "Discrete",
   "Diode"
  ],
- "description": "Cluster of 3 discrete diode parts associated with CON2 and CON2_BIG footprints.",
+ "description": "3 discrete diode parts using CON2 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when a discrete diode requiring a CON2 or CON2_BIG footprint is needed.",
-  "Verify part quality tier ratings, which include tier B and tier C entries.",
-  "Confirm part footprint suitability for the target design."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a CON2 land pattern is intended."
  ],
  "avoid_when": [
-  "The board layout requires a footprint other than CON2 or CON2_BIG.",
-  "Components outside the discrete diode class are required.",
-  "Quality tier B or C entries are unsuitable for the design."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than CON2."
  ],
  "keywords": [
   "con2",
-  "con2_big",
   "diode",
   "discrete",
-  "discrete diode",
-  "discrete.diode",
-  "dist-legacy",
-  "tier b",
-  "tier c",
-  "con2 footprint",
-  "con2_big footprint",
   "big",
   "mm",
   "pitch",
@@ -64,7 +56,7 @@
    "B": 1,
    "C": 2
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -81,6 +73,6 @@
   "dist-legacy/CON2",
   "dist-legacy/CON2_BIG"
  ],
- "embedding_text": "discrete-diode.con2 | Discrete Diode | Cluster of 3 discrete diode parts associated with CON2 and CON2_BIG footprints. | con2 con2_big diode discrete discrete diode discrete.diode dist-legacy tier b tier c con2 footprint con2_big footprint big mm pitch duplicate pin anode cathode pad pins two with and terminals | CON2 | ",
+ "embedding_text": "discrete-diode.con2 | Discrete Diode | 3 discrete diode parts using CON2 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | con2 diode discrete big mm pitch duplicate pin anode cathode pad pins two with and terminals | CON2 | ",
  "class": "discrete.diode"
 }

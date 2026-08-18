@@ -5,28 +5,20 @@
  "category_path": [
   "IC"
  ],
- "description": "Integrated circuit cluster containing 3 parts in the PLCC28 package family across PLCC28_L, PLCC28_M, and PLCC28_N footprints.",
+ "description": "3 ic parts using PLCC28 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Verify target layout compatibility with PLCC28_L, PLCC28_M, or PLCC28_N footprints.",
-  "Evaluate part data since all entries belong to quality tier C.",
-  "Confirm requirement for the PLCC28 package family."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a PLCC28 land pattern is intended."
  ],
  "avoid_when": [
-  "The layout requires a package family other than PLCC28.",
-  "Footprints PLCC28_L, PLCC28_M, and PLCC28_N are incompatible with the PCB design.",
-  "Tier C legacy library entries do not meet quality requirements."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than PLCC28."
  ],
  "keywords": [
-  "ic",
   "plcc28",
-  "plcc",
-  "plcc28_l",
-  "plcc28_m",
-  "plcc28_n",
-  "dist-legacy",
-  "tier c",
-  "ic plcc28",
-  "package family plcc28",
+  "ic",
   "pad",
   "mm",
   "pitch",
@@ -53,7 +45,7 @@
   "tier_counts": {
    "C": 3
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
@@ -61,6 +53,6 @@
   "dist-legacy/PLCC28_M",
   "dist-legacy/PLCC28_N"
  ],
- "embedding_text": "ic.plcc28 | IC | Integrated circuit cluster containing 3 parts in the PLCC28 package family across PLCC28_L, PLCC28_M, and PLCC28_N footprints. | ic plcc28 plcc plcc28_l plcc28_m plcc28_n dist-legacy tier c ic plcc28 package family plcc28 pad mm pitch pins | PLCC28 | ",
+ "embedding_text": "ic.plcc28 | IC | 3 ic parts using PLCC28 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | plcc28 ic pad mm pitch pins | PLCC28 | ",
  "class": "ic"
 }

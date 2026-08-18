@@ -6,32 +6,20 @@
   "IC",
   "Logic"
  ],
- "description": "Surface-mount logic IC cluster for 5V applications in TSSOP package options including TSSOP-20 and TSSOP-48 footprints.",
+ "description": "3 ic logic parts for 5V using TSSOP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when designing surface-mount 5V logic circuits requiring TSSOP packaging.",
-  "Choose based on required pin count and footprint, such as TSSOP-20 (0.65mm pitch) or TSSOP-48 (0.5mm pitch).",
-  "Verify part selection against representative Tier A parts such as LSF0108PW, MC74LCX16245DT, or SN74LVC245APW."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a TSSOP land pattern is intended."
  ],
  "avoid_when": [
-  "The design requires through-hole mounting rather than SMD TSSOP footprints.",
-  "The PCB footprint requirement differs from TSSOP-20 or TSSOP-48 packaging.",
-  "The application requires non-logic IC components."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than TSSOP."
  ],
  "keywords": [
-  "ic logic",
-  "5v",
   "tssop",
-  "tssop-20",
-  "tssop-48",
-  "smd",
-  "ic.logic",
-  "lsf0108pw",
-  "mc74lcx16245dt",
-  "sn74lvc245apw",
-  "kicad-symbols",
-  "0.65mm pitch",
-  "0.5mm pitch",
-  "logic ic",
+  "5v",
   "logic",
   "5mm",
   "bit",
@@ -41,7 +29,11 @@
   "so",
   "ic",
   "transceiver",
-  "leveltranslator"
+  "leveltranslator",
+  "4x6",
+  "65mm",
+  "with",
+  "tolerant"
  ],
  "facts": {
   "package_family": "TSSOP",
@@ -65,7 +57,7 @@
   "tier_counts": {
    "A": 3
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -98,6 +90,6 @@
   "kicad-symbols/74xx/MC74LCX16245DT",
   "kicad-symbols/Logic_LevelTranslator/SN74LVC245APW"
  ],
- "embedding_text": "ic-logic.tssop.5v | IC Logic | Surface-mount logic IC cluster for 5V applications in TSSOP package options including TSSOP-20 and TSSOP-48 footprints. | ic logic 5v tssop tssop-20 tssop-48 smd ic.logic lsf0108pw mc74lcx16245dt sn74lvc245apw kicad-symbols 0.65mm pitch 0.5mm pitch logic ic logic 5mm bit bidirectional voltage p0 so ic transceiver leveltranslator | TSSOP | 5V",
+ "embedding_text": "ic-logic.tssop.5v | IC Logic | 3 ic logic parts for 5V using TSSOP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | tssop 5v logic 5mm bit bidirectional voltage p0 so ic transceiver leveltranslator 4x6 65mm with tolerant | TSSOP | 5V",
  "class": "ic.logic"
 }

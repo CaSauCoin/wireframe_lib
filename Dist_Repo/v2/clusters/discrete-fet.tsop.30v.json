@@ -6,33 +6,24 @@
   "Discrete",
   "FET"
  ],
- "description": "Discrete 30V surface-mount FET cluster featuring TSOP-6_1.65x3.05mm_P0.95mm footprint components.",
+ "description": "2 discrete fet parts for 30V using TSOP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when requiring a 30V discrete FET in a surface-mount package.",
-  "Choose for layouts matching TSOP-6 1.65x3.05mm with 0.95mm pitch footprints.",
-  "Use when selecting tier A KiCad FET parts such as IRFTS9342PBF or Si3456DDV."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a TSOP land pattern is intended."
  ],
  "avoid_when": [
-  "Avoid if non-SMD or through-hole mounting is required.",
-  "Do not use if a voltage rating other than 30V is specified.",
-  "Avoid when board layout requires a footprint other than TSOP-6_1.65x3.05mm_P0.95mm."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than TSOP."
  ],
  "keywords": [
-  "discrete",
+  "tsop",
   "fet",
   "30v",
-  "tsop",
-  "tsop-6",
-  "smd",
-  "surface mount",
-  "transistor",
-  "irfts9342pbf",
-  "si3456ddv",
-  "kicad-symbols",
-  "1.65x3.05mm",
-  "p0.95mm",
   "channel",
   "mosfet",
+  "transistor",
   "id",
   "vds",
   "hexfet",
@@ -41,7 +32,8 @@
   "p0",
   "95mm",
   "jedec",
-  "mo"
+  "mo",
+  "193c"
  ],
  "facts": {
   "package_family": "TSOP",
@@ -64,7 +56,7 @@
   "tier_counts": {
    "A": 2
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -88,6 +80,6 @@
   "kicad-symbols/Transistor_FET/IRFTS9342PBF",
   "kicad-symbols/Transistor_FET/Si3456DDV"
  ],
- "embedding_text": "discrete-fet.tsop.30v | Discrete FET | Discrete 30V surface-mount FET cluster featuring TSOP-6_1.65x3.05mm_P0.95mm footprint components. | discrete fet 30v tsop tsop-6 smd surface mount transistor irfts9342pbf si3456ddv kicad-symbols 1.65x3.05mm p0.95mm channel mosfet id vds hexfet 65x3 05mm p0 95mm jedec mo | TSOP | 30V",
+ "embedding_text": "discrete-fet.tsop.30v | Discrete FET | 2 discrete fet parts for 30V using TSOP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | tsop fet 30v channel mosfet transistor id vds hexfet 65x3 05mm p0 95mm jedec mo 193c | TSOP | 30V",
  "class": "discrete.fet"
 }

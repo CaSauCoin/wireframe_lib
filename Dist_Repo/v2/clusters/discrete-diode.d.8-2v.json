@@ -6,44 +6,34 @@
   "Discrete",
   "Diode"
  ],
- "description": "Discrete diode cluster rated 8.2V, mixing zener and TVS types across D-family footprints (SOD, SMA, SMB, SMF, MELF, DO-41/DO-35) in SMD and through-hole mounts; 110 parts, mostly tier A.",
+ "description": "110 discrete diode parts for 8.2V using D footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Confirm whether a zener (voltage reference) or TVS (transient protection) function is needed before picking a part.",
-  "Match the exact footprint (e.g., SOD-123, SMA, SMB, DO-41) to the PCB land pattern.",
-  "Prefer tier A entries with a verified symbol-footprint pairing.",
-  "Pick SMD vs through-hole variant based on the assembly process."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a D land pattern is intended."
  ],
  "avoid_when": [
-  "The circuit needs a voltage, power, or tolerance rating not confirmed on the chosen part.",
-  "The board layout requires a footprint outside the D package family.",
-  "It is unclear whether zener or TVS behavior is required for the design.",
-  "The symbol-footprint pairing is unverified or flagged for review."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than D."
  ],
  "keywords": [
   "diode",
-  "zener diode",
-  "tvs diode",
-  "8.2v",
-  "discrete diode",
-  "sod-123",
-  "sod-323",
-  "sod-523",
-  "sma package",
-  "smb package",
-  "smf package",
-  "melf",
-  "minimelf",
-  "do-41",
-  "do-35",
-  "smd",
-  "through hole",
-  "d package family",
   "zener",
   "2v",
   "discrete",
   "akl",
   "do",
-  "alternate"
+  "alternate",
+  "kicad",
+  "library",
+  "sod",
+  "tvs",
+  "horizontal",
+  "smb",
+  "sma",
+  "series",
+  "axial"
  ],
  "facts": {
   "package_family": "D",
@@ -80,7 +70,7 @@
    "A": 104,
    "B": 6
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -236,6 +226,6 @@
   "Alternate-KiCad-Library/Diode_Zener_AKL/BZX884-C8V2",
   "Alternate-KiCad-Library/Diode_TVS_AKL/TPSMP8.2A"
  ],
- "embedding_text": "discrete-diode.d.8-2v | Discrete Diode | Discrete diode cluster rated 8.2V, mixing zener and TVS types across D-family footprints (SOD, SMA, SMB, SMF, MELF, DO-41/DO-35) in SMD and through-hole mounts; 110 parts, mostly tier A. | diode zener diode tvs diode 8.2v discrete diode sod-123 sod-323 sod-523 sma package smb package smf package melf minimelf do-41 do-35 smd through hole d package family zener 2v discrete akl do alternate | D | 8.2V",
+ "embedding_text": "discrete-diode.d.8-2v | Discrete Diode | 110 discrete diode parts for 8.2V using D footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | diode zener 2v discrete akl do alternate kicad library sod tvs horizontal smb sma series axial | D | 8.2V",
  "class": "discrete.diode"
 }

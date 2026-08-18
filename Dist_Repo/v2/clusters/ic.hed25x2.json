@@ -5,27 +5,20 @@
  "category_path": [
   "IC"
  ],
- "description": "IC cluster containing 1 tier C part using the HED25X2 footprint and package family.",
+ "description": "1 ic parts using HED25X2 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Use when a component requires a HED25X2 footprint.",
-  "Verify part parameters and tier C status before selection.",
-  "Confirm symbol-to-footprint pin mapping for your schematic."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a HED25X2 land pattern is intended."
  ],
  "avoid_when": [
-  "The target design requires a package family other than HED25X2.",
-  "Higher quality tier parts than tier C are required.",
-  "Electrical ratings, pinouts, or exact mounting types are not specified."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than HED25X2."
  ],
  "keywords": [
-  "ic",
   "hed25x2",
-  "hed25x2 footprint",
-  "package family hed25x2",
-  "tier c",
-  "dist-legacy",
-  "integrated circuit",
-  "hed25x2 package",
-  "ic cluster",
+  "ic",
   "pad",
   "mm",
   "pitch",
@@ -50,12 +43,12 @@
   "tier_counts": {
    "C": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
   "dist-legacy/HED25X2"
  ],
- "embedding_text": "ic.hed25x2 | IC | IC cluster containing 1 tier C part using the HED25X2 footprint and package family. | ic hed25x2 hed25x2 footprint package family hed25x2 tier c dist-legacy integrated circuit hed25x2 package ic cluster pad mm pitch pins | HED25X2 | ",
+ "embedding_text": "ic.hed25x2 | IC | 1 ic parts using HED25X2 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | hed25x2 ic pad mm pitch pins | HED25X2 | ",
  "class": "ic"
 }

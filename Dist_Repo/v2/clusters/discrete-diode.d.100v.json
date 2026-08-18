@@ -6,44 +6,34 @@
   "Discrete",
   "Diode"
  ],
- "description": "Cluster of 433 discrete diode parts in the 100V facet using D-family footprints (SMA, SMB, MiniMELF, MELF, SMC, DO-15, DO-35, SOD-123F, P600, DO-41, DO-201AD) in SMD or through-hole mounts.",
+ "description": "433 discrete diode parts for 100V using D footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Prefer tier A parts (382 of 433) for higher confidence matches",
-  "Match the exact D-family footprint required by the board layout (e.g. DO-41 vs DO-35 vs SMA)",
-  "Cross-check source trust: Alternate-KiCad-Library, kicad-symbols, or JLCPCB-Kicad-Library",
-  "Confirm mount type (smd or through_hole) matches the intended assembly process"
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a D land pattern is intended."
  ],
  "avoid_when": [
-  "The design needs a footprint outside this D-family list (e.g. DO-214, SOT-23)",
-  "A specific electrical rating beyond the 100V facet must be verified and is not confirmed on the chosen part",
-  "The part falls in tier B and higher-confidence tier A alternatives exist for the same footprint",
-  "Symbol-to-footprint pairing has not been verified for the selected entry"
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than D."
  ],
  "keywords": [
   "diode",
-  "discrete diode",
   "100v",
-  "d package",
-  "do-41",
-  "do-35",
-  "do-15",
-  "do-201ad",
-  "sod-81",
-  "sod-27",
-  "sod-123f",
-  "sma",
-  "smb",
-  "smc",
-  "melf",
-  "minimelf",
-  "p600",
-  "through hole",
-  "smd",
-  "kicad",
   "do",
   "discrete",
   "akl",
-  "alternate"
+  "alternate",
+  "kicad",
+  "library",
+  "horizontal",
+  "schottky",
+  "rectifier",
+  "tvs",
+  "axial",
+  "pin",
+  "pitch",
+  "length"
  ],
  "facts": {
   "package_family": "D",
@@ -81,7 +71,7 @@
    "A": 382,
    "B": 51
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -560,6 +550,6 @@
   "Alternate-KiCad-Library/Diode_AKL/US2BBF",
   "Alternate-KiCad-Library/Diode_AKL/US2BF"
  ],
- "embedding_text": "discrete-diode.d.100v | Discrete Diode | Cluster of 433 discrete diode parts in the 100V facet using D-family footprints (SMA, SMB, MiniMELF, MELF, SMC, DO-15, DO-35, SOD-123F, P600, DO-41, DO-201AD) in SMD or through-hole mounts. | diode discrete diode 100v d package do-41 do-35 do-15 do-201ad sod-81 sod-27 sod-123f sma smb smc melf minimelf p600 through hole smd kicad do discrete akl alternate | D | 100V",
+ "embedding_text": "discrete-diode.d.100v | Discrete Diode | 433 discrete diode parts for 100V using D footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | diode 100v do discrete akl alternate kicad library horizontal schottky rectifier tvs axial pin pitch length | D | 100V",
  "class": "discrete.diode"
 }

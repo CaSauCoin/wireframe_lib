@@ -5,34 +5,23 @@
  "category_path": [
   "IC"
  ],
- "description": "This cluster contains 7 Tier-A 3V LDO ICs in TO package family footprints with SMD and through-hole mounting options.",
+ "description": "7 ic parts for LDO, 3V using TO footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select based on required mounting style, supporting both SMD and through-hole options.",
-  "Choose the specific TO footprint variant needed, such as TO-252-2, TO-263-5, TO-220-5, or TO-92.",
-  "Verify pinout and footprint compatibility for the chosen TO package variant."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a TO land pattern is intended."
  ],
  "avoid_when": [
-  "The design requires a voltage regulator other than a 3V LDO.",
-  "The board layout requires a package family other than TO.",
-  "Footprint requirements do not match TO-252, TO-263, TO-220, or TO-92."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than TO."
  ],
  "keywords": [
-  "ic",
-  "ldo",
-  "3v",
   "to",
-  "voltage regulator",
-  "to-252-2",
-  "to-263-5",
-  "to-220-5",
-  "to-92",
-  "smd",
-  "through hole",
-  "ap2213d-3.0trg1",
-  "lt3015eq-3",
-  "lt3015et-3",
   "voltage",
   "regulator",
+  "3v",
+  "ldo",
   "low",
   "dropout",
   "5a",
@@ -40,7 +29,10 @@
   "akl",
   "alternate",
   "kicad",
-  "library"
+  "library",
+  "vreg",
+  "pmic",
+  "ic"
  ],
  "facts": {
   "package_family": "TO",
@@ -68,7 +60,7 @@
   "tier_counts": {
    "A": 7
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -121,6 +113,6 @@
   "Alternate-KiCad-Library/Voltage_Regulator_AKL/MCP1700T-3002E-TO",
   "Alternate-KiCad-Library/Voltage_Regulator_AKL/MCP1702T-3002E-TO"
  ],
- "embedding_text": "ic.to.ldo.3v | IC | This cluster contains 7 Tier-A 3V LDO ICs in TO package family footprints with SMD and through-hole mounting options. | ic ldo 3v to voltage regulator to-252-2 to-263-5 to-220-5 to-92 smd through hole ap2213d-3.0trg1 lt3015eq-3 lt3015et-3 voltage regulator low dropout 5a negative akl alternate kicad library | TO | LDO 3V",
+ "embedding_text": "ic.to.ldo.3v | IC | 7 ic parts for LDO, 3V using TO footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | to voltage regulator 3v ldo low dropout 5a negative akl alternate kicad library vreg pmic ic | TO | LDO 3V",
  "class": "ic"
 }

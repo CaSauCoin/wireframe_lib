@@ -6,31 +6,22 @@
   "IC",
   "RF"
  ],
- "description": "Surface-mount RF integrated circuits in the SOT package family featuring SOT-89-3 and SOT-363_SC-70-6 footprints.",
+ "description": "59 ic rf parts using SOT footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select for surface-mount RF integrated circuits requiring SOT package family components.",
-  "Choose when the PCB design requires SOT-89-3 or SOT-363_SC-70-6 footprints.",
-  "Verify required RF component function such as RF switches in SOT packaging."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SOT land pattern is intended."
  ],
  "avoid_when": [
-  "Avoid when the design requires through-hole mounting instead of surface mount.",
-  "Avoid when package requirements call for footprints other than SOT-89-3 or SOT-363_SC-70-6.",
-  "Avoid if non-RF integrated circuits or discrete components are needed."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SOT."
  ],
  "keywords": [
-  "ic",
-  "rf",
-  "ic rf",
   "sot",
-  "smd",
-  "sot-89-3",
-  "sot-363_sc-70-6",
-  "sot-363",
-  "sc-70-6",
-  "rf switch",
-  "surface mount",
-  "kicad-symbols",
+  "rf",
   "amplifier",
+  "ic",
   "dc",
   "gain",
   "block",
@@ -41,7 +32,8 @@
   "low",
   "noise",
   "4000mhz",
-  "to"
+  "to",
+  "gaas"
  ],
  "facts": {
   "package_family": "SOT",
@@ -63,7 +55,7 @@
   "tier_counts": {
    "A": 59
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -168,6 +160,6 @@
   "kicad-symbols/RF_Amplifier/PHA-23LN",
   "kicad-symbols/RF_Amplifier/SPF5189Z"
  ],
- "embedding_text": "ic-rf.sot | IC RF | Surface-mount RF integrated circuits in the SOT package family featuring SOT-89-3 and SOT-363_SC-70-6 footprints. | ic rf ic rf sot smd sot-89-3 sot-363_sc-70-6 sot-363 sc-70-6 rf switch surface mount kicad-symbols amplifier dc gain block sc switch gali spdt low noise 4000mhz to | SOT | ",
+ "embedding_text": "ic-rf.sot | IC RF | 59 ic rf parts using SOT footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | sot rf amplifier ic dc gain block sc switch gali spdt low noise 4000mhz to gaas | SOT | ",
  "class": "ic.rf"
 }

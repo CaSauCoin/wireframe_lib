@@ -6,28 +6,21 @@
   "Discrete",
   "Transistor"
  ],
- "description": "Discrete transistor cluster containing one part associated with the TO220VW footprint family in quality tier C.",
+ "description": "1 discrete transistor parts using TO220VW footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Verify compatibility with the TO220VW footprint.",
-  "Check part details, as this cluster contains a single tier C entry from legacy distribution sources.",
-  "Confirm symbol-to-footprint mapping, as the review status is generated."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a TO220VW land pattern is intended."
  ],
  "avoid_when": [
-  "The design requires a package family other than TO220VW.",
-  "Planner-visible components are required, as planner visible count is zero.",
-  "Unreviewed or tier C quality parts are not permitted."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than TO220VW."
  ],
  "keywords": [
   "to220vw",
-  "discrete transistor",
   "discrete",
   "transistor",
-  "discrete.transistor",
-  "to220vw footprint",
-  "to220vw package",
-  "tier c",
-  "dist-legacy",
-  "generated",
   "pad",
   "mm",
   "pitch",
@@ -52,12 +45,12 @@
   "tier_counts": {
    "C": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
   "dist-legacy/TO220VW"
  ],
- "embedding_text": "discrete-transistor.to220vw | Discrete Transistor | Discrete transistor cluster containing one part associated with the TO220VW footprint family in quality tier C. | to220vw discrete transistor discrete transistor discrete.transistor to220vw footprint to220vw package tier c dist-legacy generated pad mm pitch pins | TO220VW | ",
+ "embedding_text": "discrete-transistor.to220vw | Discrete Transistor | 1 discrete transistor parts using TO220VW footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | to220vw discrete transistor pad mm pitch pins | TO220VW | ",
  "class": "discrete.transistor"
 }

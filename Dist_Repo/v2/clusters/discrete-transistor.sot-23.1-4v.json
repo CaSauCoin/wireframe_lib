@@ -6,33 +6,24 @@
   "Discrete",
   "Transistor"
  ],
- "description": "Discrete SMD transistor cluster featuring 1.4V rated components in SOT-23 packages with Q_SOT-23 footprint.",
+ "description": "1 discrete transistor parts for 1.4V using SOT-23 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when an SMD discrete transistor in a SOT-23 package is required.",
-  "Use when a 1.4V facet rating and Q_SOT-23 footprint match circuit specifications.",
-  "Choose when sourcing parts from the JLCPCB KiCad library."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SOT-23 land pattern is intended."
  ],
  "avoid_when": [
-  "The design requires non-SMD or through-hole components.",
-  "A package or footprint other than SOT-23 or Q_SOT-23 is needed.",
-  "Operating voltage requirements differ from 1.4V."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SOT-23."
  ],
  "keywords": [
-  "discrete transistor",
-  "sot-23",
-  "sot23",
-  "1.4v",
-  "smd",
-  "q_sot-23",
-  "jlcpcb",
-  "nmos",
-  "hl3400a",
-  "transistor",
-  "discrete",
-  "jlcpcb-kicad-library",
   "sot",
   "channel",
   "4v",
+  "nmos",
+  "hl3400a",
+  "jlcpcb",
   "transistors",
   "05nf",
   "30v",
@@ -41,7 +32,8 @@
   "10v",
   "8a",
   "77pf",
-  "99pf"
+  "99pf",
+  "mosfets"
  ],
  "facts": {
   "package_family": "SOT-23",
@@ -64,7 +56,7 @@
   "tier_counts": {
    "B": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -79,6 +71,6 @@
  "part_ids": [
   "JLCPCB-Kicad-Library/JLCPCB-Transistors/NMOS,HL3400A"
  ],
- "embedding_text": "discrete-transistor.sot-23.1-4v | Discrete Transistor | Discrete SMD transistor cluster featuring 1.4V rated components in SOT-23 packages with Q_SOT-23 footprint. | discrete transistor sot-23 sot23 1.4v smd q_sot-23 jlcpcb nmos hl3400a transistor discrete jlcpcb-kicad-library sot channel 4v transistors 05nf 30v 350mw 35m 10v 8a 77pf 99pf | SOT-23 | 1.4V",
+ "embedding_text": "discrete-transistor.sot-23.1-4v | Discrete Transistor | 1 discrete transistor parts for 1.4V using SOT-23 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | sot channel 4v nmos hl3400a jlcpcb transistors 05nf 30v 350mw 35m 10v 8a 77pf 99pf mosfets | SOT-23 | 1.4V",
  "class": "discrete.transistor"
 }

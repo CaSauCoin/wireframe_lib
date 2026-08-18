@@ -5,28 +5,20 @@
  "category_path": [
   "IC"
  ],
- "description": "Integrated circuit cluster containing a single tier C entry in the BC package family with a BC-160 footprint.",
+ "description": "1 ic parts using BC footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when a part in the BC package family with a BC-160 footprint is required.",
-  "Verify footprint dimensions and pin mappings before committing to a PCB design.",
-  "Confirm part details for the single tier C entry from dist-legacy."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a BC land pattern is intended."
  ],
  "avoid_when": [
-  "The layout requires a package family other than BC or footprint other than BC-160.",
-  "A high-tier (tier A or B) part or planner-visible component is required.",
-  "Complete mounting specifications or verified electrical parameters are needed."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than BC."
  ],
  "keywords": [
-  "ic",
   "bc",
-  "bc-160",
-  "integrated circuit",
-  "bc package",
-  "bc footprint",
-  "dist-legacy",
-  "tier c",
-  "bc package family",
-  "ic cluster",
+  "ic",
   "pad",
   "mm",
   "pitch",
@@ -51,12 +43,12 @@
   "tier_counts": {
    "C": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
   "dist-legacy/BC-160"
  ],
- "embedding_text": "ic.bc | IC | Integrated circuit cluster containing a single tier C entry in the BC package family with a BC-160 footprint. | ic bc bc-160 integrated circuit bc package bc footprint dist-legacy tier c bc package family ic cluster pad mm pitch pins | BC | ",
+ "embedding_text": "ic.bc | IC | 1 ic parts using BC footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | bc ic pad mm pitch pins | BC | ",
  "class": "ic"
 }

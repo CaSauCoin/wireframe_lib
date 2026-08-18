@@ -7,31 +7,20 @@
   "Analog",
   "Amplifier"
  ],
- "description": "Surface-mount analog amplifier ICs in TSSOP package options including TSSOP-8, TSSOP-14, and TSSOP-20 footprints.",
+ "description": "3 ic analog amplifier parts using TSSOP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when requiring a surface-mount (SMD) analog amplifier IC in a TSSOP package.",
-  "Match the required component footprint to TSSOP-8, TSSOP-14, or TSSOP-20.",
-  "Verify exact part suitability against library symbol and quality tier information."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a TSSOP land pattern is intended."
  ],
  "avoid_when": [
-  "The PCB design requires through-hole mounting or package families other than TSSOP.",
-  "Required footprints differ from the available TSSOP-8, TSSOP-14, or TSSOP-20 land patterns.",
-  "A non-amplifier or digital IC function is needed."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than TSSOP."
  ],
  "keywords": [
-  "ic",
-  "analog",
-  "amplifier",
   "tssop",
-  "smd",
-  "tssop-8",
-  "tssop-14",
-  "tssop-20",
-  "p0.65mm",
-  "ina240a4pw",
-  "ina253",
-  "ths7374",
-  "ic.analog.amplifier",
+  "amplifier",
   "current",
   "bidirectional",
   "high",
@@ -40,9 +29,12 @@
   "65mm",
   "so",
   "shunt",
+  "ic",
+  "analog",
   "video",
   "zero",
-  "drift"
+  "drift",
+  "with"
  ],
  "facts": {
   "package_family": "TSSOP",
@@ -65,7 +57,7 @@
   "tier_counts": {
    "A": 3
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -98,6 +90,6 @@
   "kicad-symbols/Amplifier_Current/INA253",
   "kicad-symbols/Amplifier_Video/THS7374"
  ],
- "embedding_text": "ic-analog-amplifier.tssop | IC Analog Amplifier | Surface-mount analog amplifier ICs in TSSOP package options including TSSOP-8, TSSOP-14, and TSSOP-20 footprints. | ic analog amplifier tssop smd tssop-8 tssop-14 tssop-20 p0.65mm ina240a4pw ina253 ths7374 ic.analog.amplifier current bidirectional high low p0 65mm so shunt video zero drift | TSSOP | ",
+ "embedding_text": "ic-analog-amplifier.tssop | IC Analog Amplifier | 3 ic analog amplifier parts using TSSOP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | tssop amplifier current bidirectional high low p0 65mm so shunt ic analog video zero drift with | TSSOP | ",
  "class": "ic.analog.amplifier"
 }

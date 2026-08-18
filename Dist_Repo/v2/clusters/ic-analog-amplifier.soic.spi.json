@@ -7,33 +7,23 @@
   "Analog",
   "Amplifier"
  ],
- "description": "Surface-mount analog amplifier ICs with SPI interface in SOIC-14 and SOIC-16 package footprints.",
+ "description": "4 ic analog amplifier parts for SPI using SOIC footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select between SOIC-14 (3.9x8.7mm) and SOIC-16 (3.9x9.9mm) package footprints.",
-  "Ensure compatibility with an SPI control interface.",
-  "Verify SMD surface-mount soldering requirements."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SOIC land pattern is intended."
  ],
  "avoid_when": [
-  "Design requires packages other than SOIC-14 or SOIC-16.",
-  "Interface does not use SPI.",
-  "Through-hole mounting is required instead of SMD."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SOIC."
  ],
  "keywords": [
-  "ic",
-  "analog",
   "amplifier",
-  "spi",
-  "soic",
-  "smd",
-  "soic-14",
-  "soic-16",
-  "mcp6s26t-e-sl",
-  "mcp6s26t-i-sl",
-  "mcp6s28t-e-sl",
-  "mcp6s28t-i-sl",
-  "alternate-kicad-library",
   "programmable",
   "gain",
+  "spi",
+  "soic",
   "so",
   "sl",
   "akl",
@@ -42,7 +32,9 @@
   "offset",
   "alternate",
   "kicad",
-  "library"
+  "library",
+  "p1",
+  "27mm"
  ],
  "facts": {
   "package_family": "SOIC",
@@ -66,7 +58,7 @@
   "tier_counts": {
    "A": 4
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -108,6 +100,6 @@
   "Alternate-KiCad-Library/Amplifier_Programmable_AKL/MCP6S28T-E-SL",
   "Alternate-KiCad-Library/Amplifier_Programmable_AKL/MCP6S28T-I-SL"
  ],
- "embedding_text": "ic-analog-amplifier.soic.spi | IC Analog Amplifier | Surface-mount analog amplifier ICs with SPI interface in SOIC-14 and SOIC-16 package footprints. | ic analog amplifier spi soic smd soic-14 soic-16 mcp6s26t-e-sl mcp6s26t-i-sl mcp6s28t-e-sl mcp6s28t-i-sl alternate-kicad-library programmable gain so sl akl interface error offset alternate kicad library | SOIC | SPI",
+ "embedding_text": "ic-analog-amplifier.soic.spi | IC Analog Amplifier | 4 ic analog amplifier parts for SPI using SOIC footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | amplifier programmable gain spi soic so sl akl interface error offset alternate kicad library p1 27mm | SOIC | SPI",
  "class": "ic.analog.amplifier"
 }

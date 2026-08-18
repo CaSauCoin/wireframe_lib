@@ -7,39 +7,31 @@
   "Power",
   "Converter"
  ],
- "description": "A cluster of 10 through-hole 5.1V power converter IC symbols using Converter package footprints.",
+ "description": "10 ic power converter parts for 5.1V using Converter footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select based on whether AC/DC or DC/DC power conversion is required.",
-  "Choose the specific footprint series matching the target package layout, such as TEL12, TEN10, TEN20, TEN40, THN10, or TMPW25.",
-  "Use when a 5.1V through-hole power converter symbol is specified."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a Converter land pattern is intended."
  ],
  "avoid_when": [
-  "Surface-mount (SMD) component packaging is required.",
-  "The design requires a voltage facet other than 5.1V.",
-  "A non-through-hole or non-Converter footprint is needed."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than Converter."
  ],
  "keywords": [
-  "ic",
-  "power converter",
-  "5.1v",
   "converter",
-  "through_hole",
-  "tht",
-  "dcdc",
-  "acdc",
-  "traco",
-  "tel12",
-  "ten10",
-  "ten20",
-  "ten40",
-  "thn10",
   "dc",
+  "traco",
+  "dcdc",
   "1v",
+  "tht",
   "output",
   "voltage",
   "isolated",
   "power",
   "fixed",
+  "ic",
+  "tel12",
   "module",
   "12w",
   "input"
@@ -70,7 +62,7 @@
   "tier_counts": {
    "B": 10
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -126,6 +118,6 @@
   "kicad-symbols/Converter_DCDC/TEL12-4811WI",
   "kicad-symbols/Converter_DCDC/TEN10-11011WIRH"
  ],
- "embedding_text": "ic-power-converter.converter.5-1v | IC Power Converter | A cluster of 10 through-hole 5.1V power converter IC symbols using Converter package footprints. | ic power converter 5.1v converter through_hole tht dcdc acdc traco tel12 ten10 ten20 ten40 thn10 dc 1v output voltage isolated power fixed module 12w input | Converter | 5.1V",
+ "embedding_text": "ic-power-converter.converter.5-1v | IC Power Converter | 10 ic power converter parts for 5.1V using Converter footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | converter dc traco dcdc 1v tht output voltage isolated power fixed ic tel12 module 12w input | Converter | 5.1V",
  "class": "ic.power.converter"
 }

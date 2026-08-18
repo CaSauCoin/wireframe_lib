@@ -6,32 +6,22 @@
   "IC",
   "Analog"
  ],
- "description": "Analog IC cluster containing 6 Tier A 3V through-hole parts in DIP-8_W7.62mm footprint, including DG417LDJ, DG418LDJ, and DG419LDJ analog switch components.",
+ "description": "6 ic analog parts for 3V using DIP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select for 3V analog IC applications requiring DIP-8_W7.62mm through-hole footprint.",
-  "Choose when using Tier A analog switch components such as DG417LDJ, DG418LDJ, or DG419LDJ.",
-  "Use when KiCad symbol library DIP through-hole parts are needed."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a DIP land pattern is intended."
  ],
  "avoid_when": [
-  "Avoid when surface-mount (SMD) packaging is required.",
-  "Do not use if a package footprint other than DIP-8_W7.62mm is needed.",
-  "Avoid when operating requirements fall outside 3V analog IC specifications."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than DIP."
  ],
  "keywords": [
-  "ic",
   "analog",
-  "analog switch",
-  "3v",
   "dip",
-  "dip-8",
-  "dip-8_w7.62mm",
-  "through_hole",
-  "dg417ldj",
-  "dg418ldj",
-  "dg419ldj",
-  "maxim",
-  "kicad-symbols",
   "switch",
+  "3v",
   "cmos",
   "62mm",
   "single",
@@ -41,7 +31,9 @@
   "ron",
   "vlogic",
   "w7",
-  "tht"
+  "tht",
+  "dil",
+  "pdip"
  ],
  "facts": {
   "package_family": "DIP",
@@ -64,7 +56,7 @@
   "tier_counts": {
    "A": 6
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -116,6 +108,6 @@
   "kicad-symbols/Analog_Switch/DG418LDJ_Maxim",
   "kicad-symbols/Analog_Switch/DG419LDJ_Maxim"
  ],
- "embedding_text": "ic-analog.dip.3v | IC Analog | Analog IC cluster containing 6 Tier A 3V through-hole parts in DIP-8_W7.62mm footprint, including DG417LDJ, DG418LDJ, and DG419LDJ analog switch components. | ic analog analog switch 3v dip dip-8 dip-8_w7.62mm through_hole dg417ldj dg418ldj dg419ldj maxim kicad-symbols switch cmos 62mm single logic compatible 35ohm ron vlogic w7 tht | DIP | 3V",
+ "embedding_text": "ic-analog.dip.3v | IC Analog | 6 ic analog parts for 3V using DIP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | analog dip switch 3v cmos 62mm single logic compatible 35ohm ron vlogic w7 tht dil pdip | DIP | 3V",
  "class": "ic.analog"
 }

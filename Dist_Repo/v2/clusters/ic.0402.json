@@ -5,42 +5,34 @@
  "category_path": [
   "IC"
  ],
- "description": "IC class cluster containing 18 tier-C parts associated with 0402 package family footprints across SMD, through-hole, and unknown mounting types.",
+ "description": "18 ic parts using 0402 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when looking for IC class parts associated with 0402 footprint variants.",
-  "Verify specific mounting configuration, footprint pattern, and source library.",
-  "Check part specifications given all 18 entries are currently tier C quality."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a 0402 land pattern is intended."
  ],
  "avoid_when": [
-  "Avoid if design requires planner-visible parts, as planner visible count is zero.",
-  "Avoid when packages outside the 0402 footprint family are required.",
-  "Avoid if higher quality tier ratings are strictly required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than 0402."
  ],
  "keywords": [
   "ic",
-  "0402",
-  "package 0402",
-  "smd",
-  "through_hole",
-  "tier c",
-  "dist-legacy",
-  "chilaboard-altium-library",
   "harwin",
-  "gecko",
-  "amphenol",
-  "murata",
-  "cap_0402",
-  "res_0402",
-  "fb_0402",
-  "ind_0402",
   "g125",
+  "gecko",
   "vertical",
   "pins",
   "pitch",
   "25mm",
   "2x05",
   "p1",
-  "pad"
+  "pad",
+  "mm",
+  "amphenol",
+  "5mm",
+  "1a7x1",
+  "1x05"
  ],
  "facts": {
   "package_family": "0402",
@@ -75,7 +67,7 @@
   "tier_counts": {
    "C": 18
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
@@ -98,6 +90,6 @@
   "chilaboard-altium-library/RP0402X4A/RP0402X4A",
   "chilaboard-altium-library/RP0402X8/RP0402X8"
  ],
- "embedding_text": "ic.0402 | IC | IC class cluster containing 18 tier-C parts associated with 0402 package family footprints across SMD, through-hole, and unknown mounting types. | ic 0402 package 0402 smd through_hole tier c dist-legacy chilaboard-altium-library harwin gecko amphenol murata cap_0402 res_0402 fb_0402 ind_0402 g125 vertical pins pitch 25mm 2x05 p1 pad | 0402 | ",
+ "embedding_text": "ic.0402 | IC | 18 ic parts using 0402 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | ic harwin g125 gecko vertical pins pitch 25mm 2x05 p1 pad mm amphenol 5mm 1a7x1 1x05 | 0402 | ",
  "class": "ic"
 }

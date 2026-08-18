@@ -5,29 +5,19 @@
  "category_path": [
   "IC"
  ],
- "description": "Surface-mount 2.93V IC components in the SOT package family with SOT-143 footprints, featuring 3 tier-A KiCad symbol parts.",
+ "description": "3 ic parts for 2.93V using SOT footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select for surface-mount IC applications requiring 2.93V operation.",
-  "Choose when a SOT-143 footprint in the SOT package family is required.",
-  "Verify specific part selection among CAT811STBI-GT3, MAX811SEUS-T, or MIC811SUY."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SOT land pattern is intended."
  ],
  "avoid_when": [
-  "The design requires a footprint other than SOT-143.",
-  "The required voltage specification is not 2.93V.",
-  "Surface-mount (SMD) packaging is not suitable for the PCB assembly."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SOT."
  ],
  "keywords": [
-  "ic",
   "sot",
-  "sot-143",
-  "2.93v",
-  "smd",
-  "power_supervisor",
-  "cat811stbi-gt3",
-  "max811seus-t",
-  "mic811suy",
-  "kicad-symbols",
-  "tier a",
   "supervisor",
   "power",
   "reset",
@@ -35,9 +25,11 @@
   "supply",
   "manual",
   "threshold",
+  "ic",
   "cat811stbi",
   "gt3",
-  "max811seus"
+  "max811seus",
+  "mic811suy"
  ],
  "facts": {
   "package_family": "SOT",
@@ -60,7 +52,7 @@
   "tier_counts": {
    "A": 3
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -93,6 +85,6 @@
   "kicad-symbols/Power_Supervisor/MAX811SEUS-T",
   "kicad-symbols/Power_Supervisor/MIC811SUY"
  ],
- "embedding_text": "ic.sot.2-93v | IC | Surface-mount 2.93V IC components in the SOT package family with SOT-143 footprints, featuring 3 tier-A KiCad symbol parts. | ic sot sot-143 2.93v smd power_supervisor cat811stbi-gt3 max811seus-t mic811suy kicad-symbols tier a supervisor power reset 93v supply manual threshold cat811stbi gt3 max811seus | SOT | 2.93V",
+ "embedding_text": "ic.sot.2-93v | IC | 3 ic parts for 2.93V using SOT footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | sot supervisor power reset 93v supply manual threshold ic cat811stbi gt3 max811seus mic811suy | SOT | 2.93V",
  "class": "ic"
 }

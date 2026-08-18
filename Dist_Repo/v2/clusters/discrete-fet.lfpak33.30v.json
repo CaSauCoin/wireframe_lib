@@ -6,30 +6,21 @@
   "Discrete",
   "FET"
  ],
- "description": "Discrete FET cluster containing 4 tier A surface-mount parts rated for 30V in the LFPAK33 package.",
+ "description": "4 discrete fet parts for 30V using LFPAK33 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when a discrete 30V rated FET in an LFPAK33 footprint is needed.",
-  "Choose among tier A SMD parts such as BUK9M10-30EX, BUK9M17-30EX, BUK9M5R2-30EX, or BUK9M6R6-30EX.",
-  "Ensure package footprint LFPAK33 matches the intended PCB land pattern."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a LFPAK33 land pattern is intended."
  ],
  "avoid_when": [
-  "A voltage rating other than 30V is required.",
-  "The design requires a package footprint other than LFPAK33.",
-  "Through-hole mounting is required instead of surface-mount (SMD)."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than LFPAK33."
  ],
  "keywords": [
   "lfpak33",
-  "30v",
-  "discrete fet",
   "fet",
-  "smd",
-  "discrete",
-  "buk9m10-30ex",
-  "buk9m17-30ex",
-  "buk9m5r2-30ex",
-  "buk9m6r6-30ex",
-  "tier a",
-  "kicad-symbols",
+  "30v",
   "mosfet",
   "30ex",
   "transistor",
@@ -41,7 +32,8 @@
   "qqd",
   "to",
   "sot",
-  "power"
+  "power",
+  "mos"
  ],
  "facts": {
   "package_family": "LFPAK33",
@@ -64,7 +56,7 @@
   "tier_counts": {
    "A": 4
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -106,6 +98,6 @@
   "kicad-symbols/Transistor_FET/BUK9M5R2-30EX",
   "kicad-symbols/Transistor_FET/BUK9M6R6-30EX"
  ],
- "embedding_text": "discrete-fet.lfpak33.30v | Discrete FET | Discrete FET cluster containing 4 tier A surface-mount parts rated for 30V in the LFPAK33 package. | lfpak33 30v discrete fet fet smd discrete buk9m10-30ex buk9m17-30ex buk9m5r2-30ex buk9m6r6-30ex tier a kicad-symbols mosfet 30ex transistor id vds channel trenchmos ron qqd to sot power | LFPAK33 | 30V",
+ "embedding_text": "discrete-fet.lfpak33.30v | Discrete FET | 4 discrete fet parts for 30V using LFPAK33 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | lfpak33 fet 30v mosfet 30ex transistor id vds channel trenchmos ron qqd to sot power mos | LFPAK33 | 30V",
  "class": "discrete.fet"
 }

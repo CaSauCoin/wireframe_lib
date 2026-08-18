@@ -6,32 +6,21 @@
   "Passive",
   "Inductor"
  ],
- "description": "Passive inductor cluster containing 113 transformer components in surface-mount and through-hole packages.",
+ "description": "113 passive inductor parts using Transformer footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Match the required footprint variant such as Breve TEZ, Coilcraft CST, or Ethernet and microphone packages.",
-  "Verify the mounting type between surface-mount (SMD) and through-hole options.",
-  "Prioritize tier A parts from verified library sources."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a Transformer land pattern is intended."
  ],
  "avoid_when": [
-  "The application requires single-winding inductors rather than transformer packages.",
-  "The target board layout does not support Transformer package family footprints.",
-  "The mounting configuration is critical and the part mount type is unknown."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than Transformer."
  ],
  "keywords": [
   "transformer",
-  "passive inductor",
-  "inductor",
-  "smd",
-  "through hole",
-  "ethernet transformer",
-  "microphone transformer",
-  "coilcraft",
-  "breve",
-  "lundahl",
-  "halo",
-  "tez",
-  "cst",
   "passive",
+  "inductor",
   "chk",
   "nf",
   "etal",
@@ -41,7 +30,10 @@
   "pins",
   "package",
   "ethernet",
-  "pcb"
+  "smd",
+  "pcb",
+  "trafo",
+  "horizontal"
  ],
  "facts": {
   "package_family": "Transformer",
@@ -78,7 +70,7 @@
    "B": 18,
    "C": 75
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -237,6 +229,6 @@
   "dist-legacy/Transformer_Zeming_ZMPT101K",
   "dist-legacy/Transformer_MiniCircuits_AT224-1A"
  ],
- "embedding_text": "passive-inductor.transformer | Passive Inductor | Passive inductor cluster containing 113 transformer components in surface-mount and through-hole packages. | transformer passive inductor inductor smd through hole ethernet transformer microphone transformer coilcraft breve lundahl halo tez cst passive chk nf etal pitch mm pad pins package ethernet pcb | Transformer | ",
+ "embedding_text": "passive-inductor.transformer | Passive Inductor | 113 passive inductor parts using Transformer footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | transformer passive inductor chk nf etal pitch mm pad pins package ethernet smd pcb trafo horizontal | Transformer | ",
  "class": "passive.inductor"
 }

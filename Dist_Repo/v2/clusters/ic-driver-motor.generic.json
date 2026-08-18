@@ -7,34 +7,23 @@
   "Driver",
   "Motor"
  ],
- "description": "Generic motor driver IC cluster containing 8 parts from KiCad symbols with quality tier G and package chosen later.",
+ "description": "8 ic driver motor parts with package chosen later. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when a generic motor driver IC symbol from KiCad symbols is needed.",
-  "Assign an explicit footprint and package prior to layout as package is chosen later.",
-  "Choose among SLA7070MPRT series representative parts based on specific project needs."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Select a footprint/package explicitly before placement."
  ],
  "avoid_when": [
-  "A pre-defined footprint or package family is required upfront.",
-  "Parts rated above quality tier G are strictly required.",
-  "Pre-validated electrical limits or thermal specs are needed directly in the cluster metadata."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review."
  ],
  "keywords": [
-  "ic",
   "driver",
   "motor",
-  "ic driver motor",
-  "generic motor driver",
-  "kicad symbols",
-  "package chosen later",
-  "sla7070mprt",
-  "sla7071mprt",
-  "sla7072mprt",
-  "sla7073mprt",
-  "sla7075mprt",
-  "tier g",
   "stepper",
   "unipolar",
   "phase",
+  "ic",
   "package",
   "chosen",
   "later",
@@ -42,7 +31,9 @@
   "and",
   "half",
   "step",
-  "microstep"
+  "microstep",
+  "1a",
+  "5a"
  ],
  "facts": {
   "package_family": "package chosen later",
@@ -59,7 +50,7 @@
   "tier_counts": {
    "G": 8
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -113,6 +104,6 @@
   "kicad-symbols/Driver_Motor/SLA7077MPRT",
   "kicad-symbols/Driver_Motor/SLA7078MPRT"
  ],
- "embedding_text": "ic-driver-motor.generic | IC Driver Motor | Generic motor driver IC cluster containing 8 parts from KiCad symbols with quality tier G and package chosen later. | ic driver motor ic driver motor generic motor driver kicad symbols package chosen later sla7070mprt sla7071mprt sla7072mprt sla7073mprt sla7075mprt tier g stepper unipolar phase package chosen later full and half step microstep | package chosen later | ",
+ "embedding_text": "ic-driver-motor.generic | IC Driver Motor | 8 ic driver motor parts with package chosen later. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | driver motor stepper unipolar phase ic package chosen later full and half step microstep 1a 5a | package chosen later | ",
  "class": "ic.driver.motor"
 }

@@ -5,32 +5,22 @@
  "category_path": [
   "IC"
  ],
- "description": "Cluster of surface-mount 9V integrated circuits in the SOT package family using the SOT-89-3 footprint.",
+ "description": "6 ic parts for 9V using SOT footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when requiring a surface-mount 9V IC in the SOT package family.",
-  "Choose when PCB layout specifies a SOT-89-3 footprint.",
-  "Select from tier A parts provided by Alternate-KiCad-Library."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SOT land pattern is intended."
  ],
  "avoid_when": [
-  "Avoid when the layout requires a package footprint other than SOT-89-3.",
-  "Do not use if non-SMD or through-hole mounting is required.",
-  "Avoid if operating voltage criteria differ from 9V."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SOT."
  ],
  "keywords": [
-  "ic",
   "sot",
-  "sot-89-3",
-  "9v",
-  "smd",
-  "voltage regulator",
-  "di78l09uab",
-  "di79l09uab",
-  "l78l09abu",
-  "l78l09acu",
-  "ts78l09acy-rmg",
-  "alternate-kicad-library",
   "voltage",
   "regulator",
+  "9v",
   "100ma",
   "akl",
   "terminal",
@@ -40,7 +30,9 @@
   "vreg",
   "pmic",
   "power",
-  "supply"
+  "supply",
+  "ic",
+  "78l09"
  ],
  "facts": {
   "package_family": "SOT",
@@ -63,7 +55,7 @@
   "tier_counts": {
    "A": 6
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -115,6 +107,6 @@
   "Alternate-KiCad-Library/Voltage_Regulator_AKL/TS78L09ACY-RMG",
   "Alternate-KiCad-Library/Voltage_Regulator_AKL/μA78L09ACPK"
  ],
- "embedding_text": "ic.sot.9v | IC | Cluster of surface-mount 9V integrated circuits in the SOT package family using the SOT-89-3 footprint. | ic sot sot-89-3 9v smd voltage regulator di78l09uab di79l09uab l78l09abu l78l09acu ts78l09acy-rmg alternate-kicad-library voltage regulator 100ma akl terminal alternate kicad library vreg pmic power supply | SOT | 9V",
+ "embedding_text": "ic.sot.9v | IC | 6 ic parts for 9V using SOT footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | sot voltage regulator 9v 100ma akl terminal alternate kicad library vreg pmic power supply ic 78l09 | SOT | 9V",
  "class": "ic"
 }

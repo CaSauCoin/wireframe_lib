@@ -6,36 +6,20 @@
   "Discrete",
   "Diode"
  ],
- "description": "Cluster of 54 discrete diode parts sharing a SOT-23 package family, spanning SOT-23-3 and SOT-23-6 footprint variants across multiple KiCad and Altium library sources.",
+ "description": "54 discrete diode parts using SOT-23 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Prefer tier A entries (43 of 54) for higher-confidence symbol-footprint pairing",
-  "Match the exact footprint variant needed (e.g. SOT-23-3 vs SOT-23-6) before placement",
-  "Cross-check source library (kicad-symbols, JLCPCB, Alternate-KiCad-Library, celestial-altium, digikey) against your project's trusted libraries",
-  "Verify the specific part's ratings and pinout against its own symbol/datasheet, not this cluster summary"
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SOT-23 land pattern is intended."
  ],
  "avoid_when": [
-  "The design requires a package outside the SOT-23 family",
-  "A 6-pin SOT-23-6 footprint is needed but only a 3-pin variant part is selected, or vice versa",
-  "The part falls in tier B or C and pairing has not been manually reviewed",
-  "Electrical ratings or pinout are not confirmed from the individual part's own data"
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SOT-23."
  ],
  "keywords": [
-  "diode",
-  "discrete diode",
-  "sot-23",
-  "sot23",
-  "sot-23-3",
-  "sot-23-6",
-  "smd diode",
-  "surface mount diode",
-  "d_sot-23",
-  "kicad diode",
-  "jlcpcb diode",
-  "altium diode",
-  "discrete.diode",
-  "diode package",
-  "small outline transistor diode",
   "sot",
+  "diode",
   "discrete",
   "dual",
   "akl",
@@ -43,7 +27,13 @@
   "kicad",
   "library",
   "schottky",
-  "diodes"
+  "diodes",
+  "series",
+  "200ma",
+  "200v",
+  "common",
+  "smd",
+  "small"
  ],
  "facts": {
   "package_family": "SOT-23",
@@ -79,7 +69,7 @@
    "B": 8,
    "C": 3
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -179,6 +169,6 @@
   "celestial-altium-library/DIODES SOT-23-3/DIODES_SOT-23-3",
   "celestial-altium-library/DIODES SOT-23-3 N/DIODES_SOT-23-3_N"
  ],
- "embedding_text": "discrete-diode.sot-23 | Discrete Diode | Cluster of 54 discrete diode parts sharing a SOT-23 package family, spanning SOT-23-3 and SOT-23-6 footprint variants across multiple KiCad and Altium library sources. | diode discrete diode sot-23 sot23 sot-23-3 sot-23-6 smd diode surface mount diode d_sot-23 kicad diode jlcpcb diode altium diode discrete.diode diode package small outline transistor diode sot discrete dual akl alternate kicad library schottky diodes | SOT-23 | ",
+ "embedding_text": "discrete-diode.sot-23 | Discrete Diode | 54 discrete diode parts using SOT-23 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | sot diode discrete dual akl alternate kicad library schottky diodes series 200ma 200v common smd small | SOT-23 | ",
  "class": "discrete.diode"
 }

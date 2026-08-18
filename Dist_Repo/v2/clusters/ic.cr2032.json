@@ -5,28 +5,20 @@
  "category_path": [
   "IC"
  ],
- "description": "An IC category component cluster comprising 1 tier C part associated with the CR2032 package family and footprint.",
+ "description": "1 ic parts using CR2032 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when requiring a component with a CR2032 footprint or package family.",
-  "Verify individual part details as the cluster consists of a tier C entry.",
-  "Check source compatibility when referencing legacy distributor data."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a CR2032 land pattern is intended."
  ],
  "avoid_when": [
-  "The design requires package families or footprints other than CR2032.",
-  "Planner-visible parts are required for automated selection.",
-  "Higher quality tier classification (such as Tier A or B) is required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than CR2032."
  ],
  "keywords": [
-  "ic",
   "cr2032",
-  "cr2032 footprint",
-  "cr2032 package",
-  "package family cr2032",
-  "tier c",
-  "dist-legacy",
-  "integrated circuit",
-  "cr2032 ic",
-  "tier c ic",
+  "ic",
   "pad",
   "mm",
   "pitch",
@@ -51,12 +43,12 @@
   "tier_counts": {
    "C": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
   "dist-legacy/CR2032"
  ],
- "embedding_text": "ic.cr2032 | IC | An IC category component cluster comprising 1 tier C part associated with the CR2032 package family and footprint. | ic cr2032 cr2032 footprint cr2032 package package family cr2032 tier c dist-legacy integrated circuit cr2032 ic tier c ic pad mm pitch pins | CR2032 | ",
+ "embedding_text": "ic.cr2032 | IC | 1 ic parts using CR2032 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | cr2032 ic pad mm pitch pins | CR2032 | ",
  "class": "ic"
 }

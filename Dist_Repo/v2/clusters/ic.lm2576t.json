@@ -5,26 +5,20 @@
  "category_path": [
   "IC"
  ],
- "description": "Integrated circuit cluster containing one tier C part using the LM2576t footprint.",
+ "description": "1 ic parts using LM2576t footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Verify exact footprint dimensions and pin-to-pad mapping before PCB layout.",
-  "Check required electrical parameters as part data comes from legacy distribution sources.",
-  "Select only if the design specifically requires the LM2576t land pattern."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a LM2576t land pattern is intended."
  ],
  "avoid_when": [
-  "The target PCB layout requires a package type other than LM2576t.",
-  "Application requirements mandate tier A or tier B verified parts.",
-  "Definite mounting type information is required before part selection."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than LM2576t."
  ],
  "keywords": [
   "lm2576t",
   "ic",
-  "integrated circuit",
-  "lm2576t footprint",
-  "lm2576t package",
-  "dist-legacy",
-  "tier c",
-  "ic cluster",
   "pad",
   "mm",
   "pitch",
@@ -49,12 +43,12 @@
   "tier_counts": {
    "C": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
   "dist-legacy/LM2576t"
  ],
- "embedding_text": "ic.lm2576t | IC | Integrated circuit cluster containing one tier C part using the LM2576t footprint. | lm2576t ic integrated circuit lm2576t footprint lm2576t package dist-legacy tier c ic cluster pad mm pitch pins | LM2576t | ",
+ "embedding_text": "ic.lm2576t | IC | 1 ic parts using LM2576t footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | lm2576t ic pad mm pitch pins | LM2576t | ",
  "class": "ic"
 }

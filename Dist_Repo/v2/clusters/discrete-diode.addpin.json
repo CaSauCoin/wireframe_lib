@@ -6,28 +6,21 @@
   "Discrete",
   "Diode"
  ],
- "description": "Discrete diode cluster in the AddPin package family using AddPin footprints, containing one tier C part from dist-legacy.",
+ "description": "1 discrete diode parts using AddPin footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Use when a discrete diode in the AddPin package family or footprint is needed.",
-  "Verify part specifications and footprint mapping for tier C entries.",
-  "Check mount requirements since the cluster mount type is unknown."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a AddPin land pattern is intended."
  ],
  "avoid_when": [
-  "The application requires a package or footprint other than AddPin.",
-  "Unreviewed tier C quality parts are not permitted.",
-  "Planner-visible parts are required, as the planner visible count is zero."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than AddPin."
  ],
  "keywords": [
+  "addpin",
   "discrete",
   "diode",
-  "discrete diode",
-  "addpin",
-  "addpin package",
-  "addpin footprint",
-  "dist-legacy",
-  "tier c",
-  "discrete.diode",
-  "unknown mount",
   "pad",
   "mm",
   "pitch",
@@ -52,12 +45,12 @@
   "tier_counts": {
    "C": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
   "dist-legacy/AddPin"
  ],
- "embedding_text": "discrete-diode.addpin | Discrete Diode | Discrete diode cluster in the AddPin package family using AddPin footprints, containing one tier C part from dist-legacy. | discrete diode discrete diode addpin addpin package addpin footprint dist-legacy tier c discrete.diode unknown mount pad mm pitch pins | AddPin | ",
+ "embedding_text": "discrete-diode.addpin | Discrete Diode | 1 discrete diode parts using AddPin footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | addpin discrete diode pad mm pitch pins | AddPin | ",
  "class": "discrete.diode"
 }

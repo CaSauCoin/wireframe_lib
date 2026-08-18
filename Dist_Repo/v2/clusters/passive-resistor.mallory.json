@@ -6,30 +6,24 @@
   "Passive",
   "Resistor"
  ],
- "description": "Cluster of passive resistor library entries associated with Mallory footprints and through-hole or unspecified mounting.",
+ "description": "2 passive resistor parts using Mallory footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Match the PCB layout to Mallory or Mallory PMOF-9745P-39UQ footprint definitions.",
-  "Verify mounting style when through-hole or unknown mounting is listed.",
-  "Select the Tier B representative part when higher library quality is preferred over Tier C."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a Mallory land pattern is intended."
  ],
  "avoid_when": [
-  "A standard surface-mount or non-Mallory package is required.",
-  "Designs prohibit unverified Tier B or Tier C library components."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than Mallory."
  ],
  "keywords": [
-  "passive",
-  "resistor",
-  "passive resistor",
   "mallory",
-  "pmof-9745p-39uq",
-  "through hole",
-  "through_hole",
-  "celestial-altium-library",
-  "dist-legacy",
-  "mallory pmof-9745p-39uq",
   "pmof",
   "9745p",
   "39uq",
+  "passive",
+  "resistor",
   "electret",
   "microphone",
   "component",
@@ -64,7 +58,7 @@
    "B": 1,
    "C": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -80,6 +74,6 @@
   "dist-legacy/Mallory PMOF-9745P-39UQ",
   "celestial-altium-library/Mallory PMOF-9745P-39UQ/Mallory_PMOF-9745P-39UQ"
  ],
- "embedding_text": "passive-resistor.mallory | Passive Resistor | Cluster of passive resistor library entries associated with Mallory footprints and through-hole or unspecified mounting. | passive resistor passive resistor mallory pmof-9745p-39uq through hole through_hole celestial-altium-library dist-legacy mallory pmof-9745p-39uq pmof 9745p 39uq electret microphone component two terminal condenser manufactured by mic audio | Mallory | ",
+ "embedding_text": "passive-resistor.mallory | Passive Resistor | 2 passive resistor parts using Mallory footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | mallory pmof 9745p 39uq passive resistor electret microphone component two terminal condenser manufactured by mic audio | Mallory | ",
  "class": "passive.resistor"
 }

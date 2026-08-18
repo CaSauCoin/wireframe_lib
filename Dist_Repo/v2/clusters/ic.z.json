@@ -5,33 +5,19 @@
  "category_path": [
   "IC"
  ],
- "description": "Integrated circuit cluster in package family Z with 9 parts using Z-8, Z-16, and Z-16A footprint variants.",
+ "description": "9 ic parts using Z footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Choose when requiring an IC in package family Z with Z-8, Z-16, or Z-16A footprints.",
-  "Verify the specific footprint variant suffix (L, M, or N) needed for the layout.",
-  "Confirm compatibility given quality tier C classification and unknown mounting specifications."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a Z land pattern is intended."
  ],
  "avoid_when": [
-  "The PCB layout requires a package family other than Z.",
-  "Footprints outside of Z-8, Z-16, or Z-16A variants are needed.",
-  "Quality tier C components or unknown mount specifications are not acceptable."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than Z."
  ],
  "keywords": [
   "ic",
-  "package family z",
-  "z package",
-  "z-8",
-  "z-16",
-  "z-16a",
-  "z-8_l",
-  "z-8_m",
-  "z-8_n",
-  "z-16_l",
-  "z-16_m",
-  "z-16_n",
-  "z-16a_l",
-  "z-16a_m",
-  "z-16a_n",
   "16a",
   "pad",
   "mm",
@@ -65,7 +51,7 @@
   "tier_counts": {
    "C": 9
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
@@ -79,6 +65,6 @@
   "dist-legacy/Z-8_M",
   "dist-legacy/Z-8_N"
  ],
- "embedding_text": "ic.z | IC | Integrated circuit cluster in package family Z with 9 parts using Z-8, Z-16, and Z-16A footprint variants. | ic package family z z package z-8 z-16 z-16a z-8_l z-8_m z-8_n z-16_l z-16_m z-16_n z-16a_l z-16a_m z-16a_n 16a pad mm pitch pins | Z | ",
+ "embedding_text": "ic.z | IC | 9 ic parts using Z footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | ic 16a pad mm pitch pins | Z | ",
  "class": "ic"
 }

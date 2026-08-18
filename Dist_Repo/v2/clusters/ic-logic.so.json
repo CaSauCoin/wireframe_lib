@@ -6,33 +6,21 @@
   "IC",
   "Logic"
  ],
- "description": "Surface-mount logic IC cluster with 10 parts in the SO package family, including footprints SO_16, SO_20_W, SO-14_3.9x8.65mm_P1.27mm, and SO_16_7W530H.",
+ "description": "10 ic logic parts using SO footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when requiring SMD logic ICs in SO package footprints.",
-  "Choose among SO_16, SO_20_W, SO-14_3.9x8.65mm_P1.27mm, or SO_16_7W530H footprint variants.",
-  "Prioritize tier A parts like 74HCT74 over tier B parts when available."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SO land pattern is intended."
  ],
  "avoid_when": [
-  "The board design requires through-hole mounting rather than SMD.",
-  "The component layout requires non-SO package families.",
-  "Components outside the logic IC category are required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SO."
  ],
  "keywords": [
+  "so",
   "ic",
   "logic",
-  "so",
-  "smd",
-  "so_16",
-  "so_20_w",
-  "so-14",
-  "so_16_7w530h",
-  "74hct74",
-  "74ac244",
-  "74ac245",
-  "74hc4017",
-  "74hc4051",
-  "chilaboard-altium-library",
-  "kicad-symbols",
   "sop16",
   "in",
   "and",
@@ -41,7 +29,11 @@
   "pin",
   "so20w",
   "counter",
-  "sop"
+  "sop",
+  "outputs",
+  "channel",
+  "analog",
+  "shift"
  ],
  "facts": {
   "package_family": "SO",
@@ -67,7 +59,7 @@
    "A": 1,
    "B": 9
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -123,6 +115,6 @@
   "chilaboard-altium-library/74HCT595_SOP16/74HCT595_SOP16",
   "chilaboard-altium-library/749010013_SO16/749010013_SO16"
  ],
- "embedding_text": "ic-logic.so | IC Logic | Surface-mount logic IC cluster with 10 parts in the SO package family, including footprints SO_16, SO_20_W, SO-14_3.9x8.65mm_P1.27mm, and SO_16_7W530H. | ic logic so smd so_16 so_20_w so-14 so_16_7w530h 74hct74 74ac244 74ac245 74hc4017 74hc4051 chilaboard-altium-library kicad-symbols sop16 in and package with pin so20w counter sop | SO | ",
+ "embedding_text": "ic-logic.so | IC Logic | 10 ic logic parts using SO footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | so ic logic sop16 in and package with pin so20w counter sop outputs channel analog shift | SO | ",
  "class": "ic.logic"
 }

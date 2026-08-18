@@ -5,29 +5,19 @@
  "category_path": [
   "IC"
  ],
- "description": "Surface-mount IC cluster containing 3 tier A parts with a 4.38V rating in SOT-143 package footprints.",
+ "description": "3 ic parts for 4.38V using SOT footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when requiring a 4.38V rated surface-mount IC.",
-  "Verify requirement for SOT-143 package footprint.",
-  "Choose among tier A parts CAT811MTBI-GT3, MAX811MEUS-T, or MIC811MUY."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SOT land pattern is intended."
  ],
  "avoid_when": [
-  "The design requires a voltage rating other than 4.38V.",
-  "A footprint other than SOT-143 is required.",
-  "Through-hole mounting is needed instead of SMD."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SOT."
  ],
  "keywords": [
-  "ic",
   "sot",
-  "sot-143",
-  "4.38v",
-  "smd",
-  "power supervisor",
-  "power_supervisor",
-  "cat811mtbi-gt3",
-  "max811meus-t",
-  "mic811muy",
-  "kicad-symbols",
   "supervisor",
   "power",
   "reset",
@@ -35,9 +25,11 @@
   "supply",
   "manual",
   "threshold",
+  "ic",
   "cat811mtbi",
   "gt3",
-  "max811meus"
+  "max811meus",
+  "mic811muy"
  ],
  "facts": {
   "package_family": "SOT",
@@ -60,7 +52,7 @@
   "tier_counts": {
    "A": 3
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -93,6 +85,6 @@
   "kicad-symbols/Power_Supervisor/MAX811MEUS-T",
   "kicad-symbols/Power_Supervisor/MIC811MUY"
  ],
- "embedding_text": "ic.sot.4-38v | IC | Surface-mount IC cluster containing 3 tier A parts with a 4.38V rating in SOT-143 package footprints. | ic sot sot-143 4.38v smd power supervisor power_supervisor cat811mtbi-gt3 max811meus-t mic811muy kicad-symbols supervisor power reset 38v supply manual threshold cat811mtbi gt3 max811meus | SOT | 4.38V",
+ "embedding_text": "ic.sot.4-38v | IC | 3 ic parts for 4.38V using SOT footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | sot supervisor power reset 38v supply manual threshold ic cat811mtbi gt3 max811meus mic811muy | SOT | 4.38V",
  "class": "ic"
 }

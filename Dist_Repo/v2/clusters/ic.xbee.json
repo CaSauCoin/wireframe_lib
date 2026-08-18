@@ -5,32 +5,27 @@
  "category_path": [
   "IC"
  ],
- "description": "Integrated circuit cluster containing 5 parts in the XBEE package family supporting surface-mount and through-hole footprints.",
+ "description": "5 ic parts using XBEE footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select parts using specific footprint variants such as XBEE, Xbee, or XBEE_SMD.",
-  "Verify mounting requirement between surface-mount and through-hole options.",
-  "Check entry quality tiering, with 1 tier B part and 4 tier C parts in the cluster."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a XBEE land pattern is intended."
  ],
  "avoid_when": [
-  "The board layout requires a package family other than XBEE.",
-  "A higher quality tier such as tier A is required.",
-  "Unverified footprint mappings or unstated electrical limits cannot be accepted."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than XBEE."
  ],
  "keywords": [
   "xbee",
   "ic",
   "smd",
-  "through_hole",
-  "xbee_smd",
-  "xb24capit",
   "zigbee",
-  "surface mount",
-  "through hole",
-  "xbee footprint",
   "pad",
   "mm",
   "pitch",
   "pins",
+  "xb24capit",
   "module",
   "pro",
   "wifi",
@@ -64,7 +59,7 @@
    "B": 1,
    "C": 4
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -83,6 +78,6 @@
   "chilaboard-altium-library/XBEE/XBEE",
   "chilaboard-altium-library/XBEE_SMD/XBEE_SMD"
  ],
- "embedding_text": "ic.xbee | IC | Integrated circuit cluster containing 5 parts in the XBEE package family supporting surface-mount and through-hole footprints. | xbee ic smd through_hole xbee_smd xb24capit zigbee surface mount through hole xbee footprint pad mm pitch pins module pro wifi wireless rf through hole | XBEE | ",
+ "embedding_text": "ic.xbee | IC | 5 ic parts using XBEE footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | xbee ic smd zigbee pad mm pitch pins xb24capit module pro wifi wireless rf through hole | XBEE | ",
  "class": "ic"
 }

@@ -6,31 +6,22 @@
   "Passive",
   "Resistor"
  ],
- "description": "Cluster of 15 through-hole passive resistor and digital potentiometer components with SPI interfaces in DIP packages.",
+ "description": "15 passive resistor parts for SPI using DIP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Verify the required footprint between DIP-8_W7.62mm and DIP-14_W7.62mm.",
-  "Select the desired part model from the available tier A KiCad symbols.",
-  "Confirm that through-hole DIP mounting matches the target board layout."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a DIP land pattern is intended."
  ],
  "avoid_when": [
-  "Surface mount (SMD) packaging is required instead of through-hole DIP.",
-  "The design requires a communication protocol other than SPI.",
-  "The target PCB requires a footprint other than DIP-8_W7.62mm or DIP-14_W7.62mm."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than DIP."
  ],
  "keywords": [
   "dip",
-  "spi",
-  "through-hole",
-  "passive",
-  "resistor",
-  "digital potentiometer",
-  "potentiometer",
-  "dip-8",
-  "dip-14",
-  "dip-8_w7.62mm",
-  "dip-14_w7.62mm",
-  "kicad-symbols",
   "digital",
+  "potentiometer",
+  "spi",
   "62mm",
   "pdip",
   "w7",
@@ -38,6 +29,8 @@
   "dil",
   "54mm",
   "300mil",
+  "passive",
+  "resistor",
   "interface",
   "taps",
   "kohm"
@@ -64,7 +57,7 @@
   "tier_counts": {
    "A": 15
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -125,6 +118,6 @@
   "kicad-symbols/Potentiometer_Digital/MCP42100",
   "kicad-symbols/Potentiometer_Digital/MCP4251-xxxx-P"
  ],
- "embedding_text": "passive-resistor.dip.spi | Passive Resistor | Cluster of 15 through-hole passive resistor and digital potentiometer components with SPI interfaces in DIP packages. | dip spi through-hole passive resistor digital potentiometer potentiometer dip-8 dip-14 dip-8_w7.62mm dip-14_w7.62mm kicad-symbols digital 62mm pdip w7 tht dil 54mm 300mil interface taps kohm | DIP | SPI",
+ "embedding_text": "passive-resistor.dip.spi | Passive Resistor | 15 passive resistor parts for SPI using DIP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | dip digital potentiometer spi 62mm pdip w7 tht dil 54mm 300mil passive resistor interface taps kohm | DIP | SPI",
  "class": "passive.resistor"
 }

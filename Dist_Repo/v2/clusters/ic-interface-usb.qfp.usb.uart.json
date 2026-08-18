@@ -7,42 +7,34 @@
   "Interface",
   "USB"
  ],
- "description": "Surface-mount USB interface ICs supporting USB and UART/serial functionality in QFP package footprints.",
+ "description": "5 ic interface usb parts for USB, UART/serial using QFP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select according to required footprint variant such as LQFP-32, LQFP-48, or LQFP-64.",
-  "Verify required pin pitch (0.5mm or 0.8mm) and package body dimensions.",
-  "Choose when designing surface-mount USB to UART/serial interface circuits."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a QFP land pattern is intended."
  ],
  "avoid_when": [
-  "Through-hole mounting is required.",
-  "The design requires package families other than QFP.",
-  "Non-USB or non-UART/serial interface standards are needed."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than QFP."
  ],
  "keywords": [
   "usb",
-  "uart",
-  "serial",
-  "interface ic",
-  "qfp",
-  "lqfp-32",
-  "lqfp-48",
-  "lqfp-64",
-  "smd",
-  "ch344q",
-  "ft2232d",
-  "ft2232hl",
-  "ft232bm",
-  "xr21b1424",
   "lqfp",
+  "uart",
   "c48",
   "interface",
+  "qfp",
   "fifo",
+  "serial",
   "p0",
   "ic",
   "quad",
   "5mm",
   "case",
-  "double"
+  "double",
+  "channel",
+  "7x7mm"
  ],
  "facts": {
   "package_family": "QFP",
@@ -68,7 +60,7 @@
   "tier_counts": {
    "A": 5
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -119,6 +111,6 @@
   "kicad-symbols/Interface_USB/FT232BM",
   "kicad-symbols/Interface_USB/XR21B1424"
  ],
- "embedding_text": "ic-interface-usb.qfp.usb.uart | IC Interface USB | Surface-mount USB interface ICs supporting USB and UART/serial functionality in QFP package footprints. | usb uart serial interface ic qfp lqfp-32 lqfp-48 lqfp-64 smd ch344q ft2232d ft2232hl ft232bm xr21b1424 lqfp c48 interface fifo p0 ic quad 5mm case double | QFP | USB UART/serial",
+ "embedding_text": "ic-interface-usb.qfp.usb.uart | IC Interface USB | 5 ic interface usb parts for USB, UART/serial using QFP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | usb lqfp uart c48 interface qfp fifo serial p0 ic quad 5mm case double channel 7x7mm | QFP | USB UART/serial",
  "class": "ic.interface.usb"
 }

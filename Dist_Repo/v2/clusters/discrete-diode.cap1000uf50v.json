@@ -6,27 +6,21 @@
   "Discrete",
   "Diode"
  ],
- "description": "Discrete diode cluster matching the CAP1000uF50V package family footprint.",
+ "description": "1 discrete diode parts using CAP1000uF50V footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Use when the design specifies a CAP1000uF50V package footprint.",
-  "Verify electrical ratings and specs against project requirements.",
-  "Check symbol-to-pad pin assignments before design commit."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a CAP1000uF50V land pattern is intended."
  ],
  "avoid_when": [
-  "Layout requires a package family other than CAP1000uF50V.",
-  "Required electrical ratings or tolerances are not documented.",
-  "Design rules require higher quality tier validation than tier C."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than CAP1000uF50V."
  ],
  "keywords": [
-  "discrete diode",
-  "discrete.diode",
+  "cap1000uf50v",
   "discrete",
   "diode",
-  "cap1000uf50v",
-  "package family",
-  "footprint",
-  "dist-legacy",
-  "tier c",
   "pad",
   "mm",
   "pitch",
@@ -51,12 +45,12 @@
   "tier_counts": {
    "C": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
   "dist-legacy/CAP1000uF50V"
  ],
- "embedding_text": "discrete-diode.cap1000uf50v | Discrete Diode | Discrete diode cluster matching the CAP1000uF50V package family footprint. | discrete diode discrete.diode discrete diode cap1000uf50v package family footprint dist-legacy tier c pad mm pitch pins | CAP1000uF50V | ",
+ "embedding_text": "discrete-diode.cap1000uf50v | Discrete Diode | 1 discrete diode parts using CAP1000uF50V footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | cap1000uf50v discrete diode pad mm pitch pins | CAP1000uF50V | ",
  "class": "discrete.diode"
 }

@@ -6,43 +6,34 @@
   "Discrete",
   "Diode"
  ],
- "description": "Cluster of 7 SOT-23 discrete diode parts (zener-type per source library) spanning 5V and 7.5V facets, all tier A, footprints SOT-23/D_SOT-23.",
+ "description": "7 discrete diode parts for 5V, 7.5V using SOT-23 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Match the required voltage facet (5V or 7.5V) to the exact part rating",
-  "Confirm footprint as SOT-23 or D_SOT-23 before layout",
-  "All 7 parts are tier A; differentiate by source library and exact part name",
-  "Cross-check source (Alternate-KiCad-Library or JLCPCB-Kicad-Library) for trust preference"
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SOT-23 land pattern is intended."
  ],
  "avoid_when": [
-  "A voltage rating other than 5V or 7.5V is required",
-  "A package other than SOT-23 is needed for the board layout",
-  "Electrical parameters beyond voltage (current, power, tolerance) must be verified and are not stated here"
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SOT-23."
  ],
  "keywords": [
-  "diode",
-  "sot-23",
-  "d_sot-23",
-  "discrete diode",
-  "zener",
-  "5v",
-  "7.5v",
-  "smd diode",
-  "akl",
-  "alternate-kicad-library",
-  "jlcpcb-kicad-library",
-  "tier a",
-  "sot23 footprint",
-  "small signal diode",
   "sot",
+  "diode",
+  "5v",
+  "zener",
   "dual",
   "discrete",
+  "akl",
   "300mw",
   "alternate",
   "kicad",
   "library",
   "common",
   "c7v5",
-  "anode"
+  "anode",
+  "commonanode",
+  "2bzx84"
  ],
  "facts": {
   "package_family": "SOT-23",
@@ -68,7 +59,7 @@
   "tier_counts": {
    "A": 7
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -121,6 +112,6 @@
   "Alternate-KiCad-Library/Diode_Zener_AKL/MMBZ5236",
   "JLCPCB-Kicad-Library/JLCPCB-Diodes/Zener,BZX84C7V5"
  ],
- "embedding_text": "discrete-diode.sot-23.5v.7-5v | Discrete Diode | Cluster of 7 SOT-23 discrete diode parts (zener-type per source library) spanning 5V and 7.5V facets, all tier A, footprints SOT-23/D_SOT-23. | diode sot-23 d_sot-23 discrete diode zener 5v 7.5v smd diode akl alternate-kicad-library jlcpcb-kicad-library tier a sot23 footprint small signal diode sot dual discrete 300mw alternate kicad library common c7v5 anode | SOT-23 | 5V 7.5V",
+ "embedding_text": "discrete-diode.sot-23.5v.7-5v | Discrete Diode | 7 discrete diode parts for 5V, 7.5V using SOT-23 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | sot diode 5v zener dual discrete akl 300mw alternate kicad library common c7v5 anode commonanode 2bzx84 | SOT-23 | 5V 7.5V",
  "class": "discrete.diode"
 }

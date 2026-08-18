@@ -6,31 +6,22 @@
   "Discrete",
   "Diode"
  ],
- "description": "Cluster of 6 surface-mount 27V discrete diode parts in SOT-23 packaging from Alternate-KiCad-Library.",
+ "description": "6 discrete diode parts for 27V using SOT-23 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when requiring a 27V discrete diode in a surface-mount SOT-23 package.",
-  "Choose from Tier A rated parts sourced from Alternate-KiCad-Library.",
-  "Verify requirements against specific part entries like BZX84-C27 or AZ23C27."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SOT-23 land pattern is intended."
  ],
  "avoid_when": [
-  "The design requires a package family other than SOT-23.",
-  "A voltage rating other than 27V is needed.",
-  "Through-hole mounting is required instead of surface-mount (SMD)."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SOT-23."
  ],
  "keywords": [
-  "discrete diode",
   "diode",
-  "27v",
-  "sot-23",
-  "smd",
-  "zener",
-  "alternate-kicad-library",
-  "bzx84-c27",
-  "az23c27",
-  "bzb84-b27",
-  "dz23-c27",
-  "2bzx84-c27",
   "sot",
+  "zener",
+  "27v",
   "dual",
   "akl",
   "alternate",
@@ -41,7 +32,8 @@
   "common",
   "c27",
   "anode",
-  "commonanode"
+  "commonanode",
+  "2bzx84"
  ],
  "facts": {
   "package_family": "SOT-23",
@@ -64,7 +56,7 @@
   "tier_counts": {
    "A": 6
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -116,6 +108,6 @@
   "Alternate-KiCad-Library/Diode_Zener_AKL/DZ23-C27",
   "Alternate-KiCad-Library/Diode_Zener_AKL/MMBZ5254"
  ],
- "embedding_text": "discrete-diode.sot-23.27v | Discrete Diode | Cluster of 6 surface-mount 27V discrete diode parts in SOT-23 packaging from Alternate-KiCad-Library. | discrete diode diode 27v sot-23 smd zener alternate-kicad-library bzx84-c27 az23c27 bzb84-b27 dz23-c27 2bzx84-c27 sot dual akl alternate kicad library discrete 300mw common c27 anode commonanode | SOT-23 | 27V",
+ "embedding_text": "discrete-diode.sot-23.27v | Discrete Diode | 6 discrete diode parts for 27V using SOT-23 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | diode sot zener 27v dual akl alternate kicad library discrete 300mw common c27 anode commonanode 2bzx84 | SOT-23 | 27V",
  "class": "discrete.diode"
 }

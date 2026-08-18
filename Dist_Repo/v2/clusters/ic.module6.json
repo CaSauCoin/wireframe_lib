@@ -5,28 +5,20 @@
  "category_path": [
   "IC"
  ],
- "description": "Integrated circuit cluster containing one tier C part utilizing the MODULE6 package family and footprint.",
+ "description": "1 ic parts using MODULE6 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when board layout requires a MODULE6 package footprint.",
-  "Verify part details and land pattern since planner visibility is zero.",
-  "Confirm pin assignments and mounting style before PCB commitment."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a MODULE6 land pattern is intended."
  ],
  "avoid_when": [
-  "The board layout requires a package type other than MODULE6.",
-  "High-tier reviewed parts with complete datasheet ratings are required.",
-  "Mounting type cannot remain unknown for the target design."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than MODULE6."
  ],
  "keywords": [
-  "ic",
   "module6",
-  "integrated circuit",
-  "module6 footprint",
-  "module6 package",
-  "package family",
-  "tier c",
-  "dist-legacy",
-  "unknown mount",
-  "ic module6",
+  "ic",
   "pad",
   "mm",
   "pitch",
@@ -51,12 +43,12 @@
   "tier_counts": {
    "C": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
   "dist-legacy/MODULE6"
  ],
- "embedding_text": "ic.module6 | IC | Integrated circuit cluster containing one tier C part utilizing the MODULE6 package family and footprint. | ic module6 integrated circuit module6 footprint module6 package package family tier c dist-legacy unknown mount ic module6 pad mm pitch pins | MODULE6 | ",
+ "embedding_text": "ic.module6 | IC | 1 ic parts using MODULE6 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | module6 ic pad mm pitch pins | MODULE6 | ",
  "class": "ic"
 }

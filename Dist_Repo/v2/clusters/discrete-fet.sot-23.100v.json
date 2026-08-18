@@ -6,41 +6,34 @@
   "Discrete",
   "FET"
  ],
- "description": "This cluster contains 5 surface-mount (SMD) 100V discrete FET parts in SOT-23 footprints from KiCad symbols, including BSS123, DMN10H220L, DMN10H700S, ZVN3310F, and ZXMN10A07F.",
+ "description": "5 discrete fet parts for 100V using SOT-23 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when requiring a 100V discrete FET in an SMD SOT-23 footprint.",
-  "Choose from Tier A KiCad parts such as BSS123, DMN10H220L, DMN10H700S, ZVN3310F, or ZXMN10A07F.",
-  "Verify SOT-23 package footprint compatibility with the PCB layout."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SOT-23 land pattern is intended."
  ],
  "avoid_when": [
-  "The board layout requires a footprint other than SOT-23.",
-  "The design requires non-SMD mounting.",
-  "The circuit requires non-100V discrete FET components."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SOT-23."
  ],
  "keywords": [
-  "discrete",
+  "sot",
   "fet",
   "100v",
-  "sot-23",
-  "sot23",
-  "smd",
-  "kicad",
-  "bss123",
-  "dmn10h220l",
-  "dmn10h700s",
-  "zvn3310f",
-  "zxmn10a07f",
-  "discrete fet",
-  "100v fet",
-  "sot",
   "channel",
   "mosfet",
   "transistor",
   "id",
   "vds",
   "to",
+  "smd",
+  "discrete",
+  "bss123",
   "17a",
-  "6a"
+  "dmn10h220l",
+  "6a",
+  "dmn10h700s"
  ],
  "facts": {
   "package_family": "SOT-23",
@@ -63,7 +56,7 @@
   "tier_counts": {
    "A": 5
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -114,6 +107,6 @@
   "kicad-symbols/Transistor_FET/ZVN3310F",
   "kicad-symbols/Transistor_FET/ZXMN10A07F"
  ],
- "embedding_text": "discrete-fet.sot-23.100v | Discrete FET | This cluster contains 5 surface-mount (SMD) 100V discrete FET parts in SOT-23 footprints from KiCad symbols, including BSS123, DMN10H220L, DMN10H700S, ZVN3310F, and ZXMN10A07F. | discrete fet 100v sot-23 sot23 smd kicad bss123 dmn10h220l dmn10h700s zvn3310f zxmn10a07f discrete fet 100v fet sot channel mosfet transistor id vds to 17a 6a | SOT-23 | 100V",
+ "embedding_text": "discrete-fet.sot-23.100v | Discrete FET | 5 discrete fet parts for 100V using SOT-23 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | sot fet 100v channel mosfet transistor id vds to smd discrete bss123 17a dmn10h220l 6a dmn10h700s | SOT-23 | 100V",
  "class": "discrete.fet"
 }

@@ -6,30 +6,23 @@
   "Passive",
   "Resistor"
  ],
- "description": "Cluster of 2 passive resistor library entries associated with NEXPERIA and NEXPERIA SOT-223 BZV90 footprints across SMD and unknown mount types.",
+ "description": "2 passive resistor parts using NEXPERIA footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Verify footprint compatibility with NEXPERIA or NEXPERIA SOT-223 BZV90 land patterns.",
-  "Check part quality tiers, as available entries are rated tier B and tier C.",
-  "Confirm source requirements between dist-legacy and celestial-altium-library."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a NEXPERIA land pattern is intended."
  ],
  "avoid_when": [
-  "The layout requires standard discrete chip resistor packages rather than NEXPERIA footprints.",
-  "A tier A verified part is strictly required.",
-  "Through-hole mounting is required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than NEXPERIA."
  ],
  "keywords": [
+  "nexperia",
+  "sot",
+  "bzv90",
   "passive",
   "resistor",
-  "passive resistor",
-  "nexperia",
-  "sot-223",
-  "sot-223 bzv90",
-  "bzv90",
-  "smd",
-  "surface mount",
-  "dist-legacy",
-  "celestial-altium-library",
-  "sot",
   "pin",
   "component",
   "surface",
@@ -37,6 +30,7 @@
   "series",
   "in",
   "package",
+  "smd",
   "pad",
   "mm",
   "pitch"
@@ -64,7 +58,7 @@
    "B": 1,
    "C": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -80,6 +74,6 @@
   "dist-legacy/NEXPERIA SOT-223 BZV90",
   "celestial-altium-library/NEXPERIA SOT-223 BZV90/NEXPERIA_SOT-223_BZV90"
  ],
- "embedding_text": "passive-resistor.nexperia | Passive Resistor | Cluster of 2 passive resistor library entries associated with NEXPERIA and NEXPERIA SOT-223 BZV90 footprints across SMD and unknown mount types. | passive resistor passive resistor nexperia sot-223 sot-223 bzv90 bzv90 smd surface mount dist-legacy celestial-altium-library sot pin component surface mount series in package pad mm pitch | NEXPERIA | ",
+ "embedding_text": "passive-resistor.nexperia | Passive Resistor | 2 passive resistor parts using NEXPERIA footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | nexperia sot bzv90 passive resistor pin component surface mount series in package smd pad mm pitch | NEXPERIA | ",
  "class": "passive.resistor"
 }

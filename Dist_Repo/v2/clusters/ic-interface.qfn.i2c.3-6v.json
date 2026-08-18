@@ -6,39 +6,32 @@
   "IC",
   "Interface"
  ],
- "description": "Surface-mount I2C interface ICs operating at 3.6V available in QFN package footprint options.",
+ "description": "2 ic interface parts for I2C, 3.6V using QFN footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Choose when requiring a 3.6V I2C interface IC in surface-mount QFN packaging.",
-  "Select between Tier A and Tier B options based on component quality tier requirements.",
-  "Verify target PCB footprint matches available options such as QFN-24-1EP or UQFN-16."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a QFN land pattern is intended."
  ],
  "avoid_when": [
-  "Avoid when the PCB layout requires packages other than QFN or UQFN.",
-  "Do not use if the operating voltage specification differs from 3.6V.",
-  "Do not use if a non-I2C interface protocol is required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than QFN."
  ],
  "keywords": [
-  "ic",
-  "interface",
-  "i2c",
-  "3.6v",
   "qfn",
-  "uqfn",
-  "smd",
-  "stmpe1600",
-  "tcal6408rsv",
-  "qfn-24-1ep",
-  "uqfn-16",
-  "kicad-symbols",
+  "interface",
   "expander",
+  "i2c",
   "6v",
   "io",
   "gpio",
+  "uqfn",
   "expansion",
   "interrupt",
   "p0",
   "6mm",
   "nolead",
+  "ic",
   "fast",
   "mode"
  ],
@@ -66,7 +59,7 @@
    "A": 1,
    "B": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -90,6 +83,6 @@
   "kicad-symbols/Interface_Expansion/STMPE1600",
   "kicad-symbols/Interface_Expansion/TCAL6408RSV"
  ],
- "embedding_text": "ic-interface.qfn.i2c.3-6v | IC Interface | Surface-mount I2C interface ICs operating at 3.6V available in QFN package footprint options. | ic interface i2c 3.6v qfn uqfn smd stmpe1600 tcal6408rsv qfn-24-1ep uqfn-16 kicad-symbols expander 6v io gpio expansion interrupt p0 6mm nolead fast mode | QFN | I2C 3.6V",
+ "embedding_text": "ic-interface.qfn.i2c.3-6v | IC Interface | 2 ic interface parts for I2C, 3.6V using QFN footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | qfn interface expander i2c 6v io gpio uqfn expansion interrupt p0 6mm nolead ic fast mode | QFN | I2C 3.6V",
  "class": "ic.interface"
 }

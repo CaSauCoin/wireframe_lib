@@ -6,44 +6,34 @@
   "Discrete",
   "Diode"
  ],
- "description": "Cluster of 131 discrete D-package diode parts rated 43V, spanning zener and TVS footprint variants (SMA, SMB, SMC, MELF, MiniMELF, SOD-123, SOD-123F, DO-35, DO-41, P600), mostly sourced from Alternate-KiCad-Library.",
+ "description": "131 discrete diode parts for 43V using D footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Match the exact footprint (SMA, SMB, SMC, MELF, MiniMELF, SOD-123, SOD-123F, DO-35, DO-41, P600) to the intended PCB land pattern",
-  "Prefer tier A entries — 124 of 131 parts are tier A, 7 are tier B",
-  "Confirm zener vs TVS function from the part name and footprint suffix before substitution",
-  "Check that the 43V rating matches the circuit requirement"
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a D land pattern is intended."
  ],
  "avoid_when": [
-  "The required package is not one of this cluster's listed D footprints",
-  "The circuit needs a diode voltage rating other than 43V",
-  "A zener and a TVS diode are being treated as interchangeable for the application",
-  "Only a lower-confidence tier B entry is available and the pairing needs review"
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than D."
  ],
  "keywords": [
   "diode",
+  "43v",
   "zener",
   "tvs",
-  "43v",
-  "discrete diode",
-  "sma",
-  "smb",
-  "smc",
-  "melf",
-  "minimelf",
-  "sod-123",
-  "sod-123f",
-  "do-35",
-  "do-41",
-  "p600",
-  "surface mount diode",
-  "through hole diode",
-  "alternate-kicad-library",
   "discrete",
   "akl",
   "alternate",
   "kicad",
   "library",
-  "do"
+  "do",
+  "horizontal",
+  "sod",
+  "unidirectional",
+  "smb",
+  "bidirectional",
+  "sma"
  ],
  "facts": {
   "package_family": "D",
@@ -80,7 +70,7 @@
    "A": 124,
    "B": 7
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -257,6 +247,6 @@
   "Alternate-KiCad-Library/Diode_TVS_AKL/TPSMA6L43A",
   "Alternate-KiCad-Library/Diode_TVS_AKL/TPSMP43A"
  ],
- "embedding_text": "discrete-diode.d.43v | Discrete Diode | Cluster of 131 discrete D-package diode parts rated 43V, spanning zener and TVS footprint variants (SMA, SMB, SMC, MELF, MiniMELF, SOD-123, SOD-123F, DO-35, DO-41, P600), mostly sourced from Alternate-KiCad-Library. | diode zener tvs 43v discrete diode sma smb smc melf minimelf sod-123 sod-123f do-35 do-41 p600 surface mount diode through hole diode alternate-kicad-library discrete akl alternate kicad library do | D | 43V",
+ "embedding_text": "discrete-diode.d.43v | Discrete Diode | 131 discrete diode parts for 43V using D footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | diode 43v zener tvs discrete akl alternate kicad library do horizontal sod unidirectional smb bidirectional sma | D | 43V",
  "class": "discrete.diode"
 }

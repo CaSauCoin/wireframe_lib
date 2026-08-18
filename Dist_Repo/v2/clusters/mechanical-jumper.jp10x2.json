@@ -6,29 +6,21 @@
   "Mechanical",
   "Jumper"
  ],
- "description": "Mechanical jumper cluster consisting of 4 tier C parts using the JP10X2 package family footprints.",
+ "description": "4 mechanical jumper parts using JP10X2 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when a mechanical jumper using the JP10X2 footprint family is required.",
-  "Verify compatibility with footprint variants JP10X2, JP10X2_1, JP10X2_2, or JP10X2_3.",
-  "Confirm quality requirements accept tier C parts from dist-legacy sources."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a JP10X2 land pattern is intended."
  ],
  "avoid_when": [
-  "Layout requires a package family other than JP10X2.",
-  "Quality requirements prohibit tier C parts or unreviewed planner entries.",
-  "Specific mounting details or unstated electrical ratings are required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than JP10X2."
  ],
  "keywords": [
-  "mechanical jumper",
   "jp10x2",
-  "jp10x2_1",
-  "jp10x2_2",
-  "jp10x2_3",
   "mechanical",
   "jumper",
-  "mechanical.jumper",
-  "dist-legacy",
-  "tier c",
-  "jp10x2 footprint",
   "pad",
   "mm",
   "pitch",
@@ -56,7 +48,7 @@
   "tier_counts": {
    "C": 4
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
@@ -65,6 +57,6 @@
   "dist-legacy/JP10X2_3",
   "dist-legacy/JP10X2"
  ],
- "embedding_text": "mechanical-jumper.jp10x2 | Mechanical Jumper | Mechanical jumper cluster consisting of 4 tier C parts using the JP10X2 package family footprints. | mechanical jumper jp10x2 jp10x2_1 jp10x2_2 jp10x2_3 mechanical jumper mechanical.jumper dist-legacy tier c jp10x2 footprint pad mm pitch pins | JP10X2 | ",
+ "embedding_text": "mechanical-jumper.jp10x2 | Mechanical Jumper | 4 mechanical jumper parts using JP10X2 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | jp10x2 mechanical jumper pad mm pitch pins | JP10X2 | ",
  "class": "mechanical.jumper"
 }

@@ -6,44 +6,34 @@
   "Discrete",
   "BJT"
  ],
- "description": "Cluster of 4 tier-A through-hole BJTs (BD435, BD436) tagged for the 32V facet, packaged in TO-126-3, sourced from kicad-symbols and Alternate-KiCad-Library.",
+ "description": "4 discrete bjt parts for 32V using TO footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "All 4 parts are tier A with score 100, so differentiate by footprint and source",
-  "Match footprint exactly: TO-126-3_Vertical vs TO-126-3_Vertical_ECB",
-  "BD435 and BD436 each appear once in kicad-symbols and once in Alternate-KiCad-Library",
-  "All parts share through_hole mounting in the TO package family"
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a TO land pattern is intended."
  ],
  "avoid_when": [
-  "Design requires a footprint other than TO-126-3_Vertical or its ECB variant",
-  "Application needs surface-mount rather than through-hole mounting",
-  "Required voltage facet differs from 32V",
-  "A part outside BD435/BD436 is needed"
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than TO."
  ],
  "keywords": [
-  "bjt",
-  "transistor",
-  "to-126",
-  "to-126-3",
-  "to package",
-  "bd435",
-  "bd436",
-  "through hole",
-  "vertical",
-  "ecb",
-  "32v",
-  "discrete bjt",
-  "kicad-symbols",
-  "alternate-kicad-library",
-  "tier a",
   "to",
+  "transistor",
+  "bjt",
+  "32v",
+  "vertical",
   "power",
+  "bd435",
   "4a",
   "npn",
   "rm",
   "discrete",
+  "bd436",
   "pnp",
   "ic",
-  "vce"
+  "vce",
+  "28mm"
  ],
  "facts": {
   "package_family": "TO",
@@ -68,7 +58,7 @@
   "tier_counts": {
    "A": 4
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -110,6 +100,6 @@
   "kicad-symbols/Transistor_BJT/BD436",
   "Alternate-KiCad-Library/Transistor_BJT_AKL/BD436"
  ],
- "embedding_text": "discrete-bjt.to.32v | Discrete BJT | Cluster of 4 tier-A through-hole BJTs (BD435, BD436) tagged for the 32V facet, packaged in TO-126-3, sourced from kicad-symbols and Alternate-KiCad-Library. | bjt transistor to-126 to-126-3 to package bd435 bd436 through hole vertical ecb 32v discrete bjt kicad-symbols alternate-kicad-library tier a to power 4a npn rm discrete pnp ic vce | TO | 32V",
+ "embedding_text": "discrete-bjt.to.32v | Discrete BJT | 4 discrete bjt parts for 32V using TO footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | to transistor bjt 32v vertical power bd435 4a npn rm discrete bd436 pnp ic vce 28mm | TO | 32V",
  "class": "discrete.bjt"
 }

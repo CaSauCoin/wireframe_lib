@@ -6,33 +6,22 @@
   "IC",
   "Memory"
  ],
- "description": "Surface-mount SPI memory ICs rated for 3.6V in WSON-8 footprints, available in 6x5mm and 8x6mm package options.",
+ "description": "4 ic memory parts for SPI, 3.6V using WSON footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select based on required package footprint dimensions, either 6x5mm or 8x6mm WSON-8.",
-  "Prefer tier A parts such as W25Q128JVP, W25Q32JVZP, or W25X20CLZP over tier B options.",
-  "Ensure system compatibility with SPI interface and 3.6V rating."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a WSON land pattern is intended."
  ],
  "avoid_when": [
-  "The board design requires package families other than WSON or through-hole mounting.",
-  "The target circuit operates at a voltage rating other than 3.6V or uses a non-SPI interface.",
-  "Footprint dimensions other than WSON-8-1EP 6x5mm or 8x6mm are required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than WSON."
  ],
  "keywords": [
-  "ic",
   "memory",
-  "ic memory",
-  "spi",
-  "3.6v",
   "wson",
-  "wson-8",
-  "smd",
-  "6x5mm",
-  "8x6mm",
-  "w25q128jvp",
-  "w25q32jvzp",
-  "w25x20clzp",
-  "w25q128jve",
   "flash",
+  "spi",
   "6v",
   "serial",
   "standard",
@@ -41,7 +30,10 @@
   "p1",
   "27mm",
   "ep3",
-  "4x4"
+  "4x4",
+  "3mm",
+  "nolead",
+  "ic"
  ],
  "facts": {
   "package_family": "WSON",
@@ -67,7 +59,7 @@
    "A": 3,
    "B": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -109,6 +101,6 @@
   "kicad-symbols/Memory_Flash/W25X20CLZP",
   "kicad-symbols/Memory_Flash/W25Q128JVE"
  ],
- "embedding_text": "ic-memory.wson.spi.3-6v | IC Memory | Surface-mount SPI memory ICs rated for 3.6V in WSON-8 footprints, available in 6x5mm and 8x6mm package options. | ic memory ic memory spi 3.6v wson wson-8 smd 6x5mm 8x6mm w25q128jvp w25q32jvzp w25x20clzp w25q128jve flash 6v serial standard dual 1ep p1 27mm ep3 4x4 | WSON | SPI 3.6V",
+ "embedding_text": "ic-memory.wson.spi.3-6v | IC Memory | 4 ic memory parts for SPI, 3.6V using WSON footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | memory wson flash spi 6v serial standard dual 1ep p1 27mm ep3 4x4 3mm nolead ic | WSON | SPI 3.6V",
  "class": "ic.memory"
 }

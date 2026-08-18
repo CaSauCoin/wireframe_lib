@@ -5,35 +5,22 @@
  "category_path": [
   "Connector"
  ],
- "description": "Through-hole AC connector cluster containing a single tier-C, generated-status part using the AC_SKT_CEF_MP footprint, sourced from one library with no planner-visible entries.",
+ "description": "1 connector parts using AC footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Only one part exists in this cluster; verify it fits before use.",
-  "Confirm the AC_SKT_CEF_MP footprint matches your PCB land pattern exactly.",
-  "Confirm through-hole mounting is compatible with your assembly process."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a AC land pattern is intended."
  ],
  "avoid_when": [
-  "A verified or higher-tier (non-C) part is required.",
-  "The design needs a footprint other than AC_SKT_CEF_MP.",
-  "A surface-mount connector is needed instead of through-hole.",
-  "Planner-visible or reviewed parts are required, since none exist here."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than AC."
  ],
  "keywords": [
-  "ac connector",
-  "connector ac",
-  "ac_skt_cef_mp",
+  "ac",
   "skt",
   "cef",
   "mp",
-  "through hole",
-  "tht",
-  "single source",
-  "chilaboard",
-  "altium library",
-  "tier c",
-  "generated status",
-  "unverified part",
-  "one part cluster",
-  "ac",
   "connector",
   "through",
   "hole",
@@ -61,12 +48,12 @@
   "tier_counts": {
    "C": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
   "chilaboard-altium-library/AC_SKT_CEF_MP/AC_SKT_CEF_MP"
  ],
- "embedding_text": "connector.ac | Connector | Through-hole AC connector cluster containing a single tier-C, generated-status part using the AC_SKT_CEF_MP footprint, sourced from one library with no planner-visible entries. | ac connector connector ac ac_skt_cef_mp skt cef mp through hole tht single source chilaboard altium library tier c generated status unverified part one part cluster ac connector through hole pad mm pitch pins | AC | ",
+ "embedding_text": "connector.ac | Connector | 1 connector parts using AC footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | ac skt cef mp connector through hole pad mm pitch pins | AC | ",
  "class": "connector"
 }

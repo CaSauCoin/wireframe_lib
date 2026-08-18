@@ -6,28 +6,21 @@
   "Discrete",
   "Diode"
  ],
- "description": "Discrete diode cluster containing 1 tier C entry using the RA20 package family and footprint.",
+ "description": "1 discrete diode parts using RA20 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Use when a discrete diode with an RA20 footprint is required.",
-  "Confirm exact footprint parameters and pin mapping before committing to layout.",
-  "Check component documentation and source trust for tier C entries."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a RA20 land pattern is intended."
  ],
  "avoid_when": [
-  "The layout requires a footprint family other than RA20.",
-  "Required electrical parameters, speed, or voltage limits are not specified.",
-  "Unreviewed or tier C quality entries are prohibited for the design."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than RA20."
  ],
  "keywords": [
   "ra20",
   "discrete",
   "diode",
-  "discrete diode",
-  "discrete.diode",
-  "ra20 package",
-  "ra20 footprint",
-  "dist-legacy",
-  "tier c",
-  "generated",
   "pad",
   "mm",
   "pitch",
@@ -52,12 +45,12 @@
   "tier_counts": {
    "C": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
   "dist-legacy/RA20"
  ],
- "embedding_text": "discrete-diode.ra20 | Discrete Diode | Discrete diode cluster containing 1 tier C entry using the RA20 package family and footprint. | ra20 discrete diode discrete diode discrete.diode ra20 package ra20 footprint dist-legacy tier c generated pad mm pitch pins | RA20 | ",
+ "embedding_text": "discrete-diode.ra20 | Discrete Diode | 1 discrete diode parts using RA20 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | ra20 discrete diode pad mm pitch pins | RA20 | ",
  "class": "discrete.diode"
 }

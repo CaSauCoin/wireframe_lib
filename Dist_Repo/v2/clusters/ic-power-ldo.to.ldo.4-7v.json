@@ -7,42 +7,34 @@
   "Power",
   "Linear Regulator"
  ],
- "description": "Cluster of 4.7V LDO linear regulator ICs in TO package family supporting surface-mount (TO-252-2) and through-hole (TO-220-3_Vertical) footprints.",
+ "description": "2 ic power linear regulator parts for LDO, 4.7V using TO footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select TO-220-3_Vertical for through-hole mounting or TO-252-2 for surface-mount designs.",
-  "Choose between SMD and through-hole variants based on board assembly requirements.",
-  "Confirm part selection matches the required 4.7V LDO rating."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a TO land pattern is intended."
  ],
  "avoid_when": [
-  "Designs requiring output voltages other than 4.7V.",
-  "Layouts requiring packages outside the TO package family.",
-  "Applications needing switching regulators or non-LDO topologies."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than TO."
  ],
  "keywords": [
-  "ic",
-  "power",
-  "linear regulator",
-  "ldo",
-  "4.7v",
   "to",
-  "to-220-3_vertical",
-  "to-252-2",
-  "smd",
-  "through_hole",
-  "lf47",
-  "lf47_to220",
-  "lf47_to252",
-  "kicad-symbols",
   "regulator",
   "linear",
   "voltage",
   "7v",
+  "ldo",
   "dpak",
+  "lf47",
   "low",
   "drop",
   "io",
   "up",
-  "500ma"
+  "500ma",
+  "fixed",
+  "vo",
+  "vertical"
  ],
  "facts": {
   "package_family": "TO",
@@ -68,7 +60,7 @@
   "tier_counts": {
    "A": 2
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -92,6 +84,6 @@
   "kicad-symbols/Regulator_Linear/LF47_TO220",
   "kicad-symbols/Regulator_Linear/LF47_TO252"
  ],
- "embedding_text": "ic-power-ldo.to.ldo.4-7v | IC Power Linear Regulator | Cluster of 4.7V LDO linear regulator ICs in TO package family supporting surface-mount (TO-252-2) and through-hole (TO-220-3_Vertical) footprints. | ic power linear regulator ldo 4.7v to to-220-3_vertical to-252-2 smd through_hole lf47 lf47_to220 lf47_to252 kicad-symbols regulator linear voltage 7v dpak low drop io up 500ma | TO | LDO 4.7V",
+ "embedding_text": "ic-power-ldo.to.ldo.4-7v | IC Power Linear Regulator | 2 ic power linear regulator parts for LDO, 4.7V using TO footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | to regulator linear voltage 7v ldo dpak lf47 low drop io up 500ma fixed vo vertical | TO | LDO 4.7V",
  "class": "ic.power.ldo"
 }

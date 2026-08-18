@@ -6,29 +6,22 @@
   "Discrete",
   "Diode"
  ],
- "description": "Discrete diode cluster containing 2 tier-C parts using C10mm footprints.",
+ "description": "2 discrete diode parts using C10mm footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Verify land pattern compatibility with the C10mm package footprint.",
-  "Review part specifications carefully as all entries are quality tier C.",
-  "Confirm pin-to-pad mapping and mounting requirements before PCB layout."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a C10mm land pattern is intended."
  ],
  "avoid_when": [
-  "The board layout requires a package family other than C10mm.",
-  "Parts with tier A or tier B quality ratings are required.",
-  "Planner-visible parts are required for selection."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than C10mm."
  ],
  "keywords": [
   "c10mm",
-  "discrete diode",
+  "mm",
   "discrete",
   "diode",
-  "c10mm footprint",
-  "c10mm package",
-  "tier c",
-  "discrete.diode",
-  "dist-legacy",
-  "component cluster",
-  "mm",
   "nam",
   "footprint",
   "land",
@@ -61,13 +54,13 @@
   "tier_counts": {
    "C": 2
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
   "dist-legacy/C10mm - NAM",
   "dist-legacy/C10mm"
  ],
- "embedding_text": "discrete-diode.c10mm | Discrete Diode | Discrete diode cluster containing 2 tier-C parts using C10mm footprints. | c10mm discrete diode discrete diode c10mm footprint c10mm package tier c discrete.diode dist-legacy component cluster mm nam footprint land pattern radial pitch bare for leaded component with 10mm | C10mm | ",
+ "embedding_text": "discrete-diode.c10mm | Discrete Diode | 2 discrete diode parts using C10mm footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | c10mm mm discrete diode nam footprint land pattern radial pitch bare for leaded component with 10mm | C10mm | ",
  "class": "discrete.diode"
 }

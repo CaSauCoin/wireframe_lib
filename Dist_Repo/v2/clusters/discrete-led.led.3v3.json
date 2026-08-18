@@ -6,36 +6,29 @@
   "Discrete",
   "LED"
  ],
- "description": "Discrete 3.3V surface-mount LED cluster containing 2 tier-C parts with PLCC4 5.0x5.0mm footprints.",
+ "description": "2 discrete led parts for 3.3V using LED footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when requiring a 3.3V surface-mount discrete LED.",
-  "Match design requirements against PLCC4 5.0x5.0mm P3.2mm footprints.",
-  "Verify part source details and tier C quality status prior to PCB layout."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a LED land pattern is intended."
  ],
  "avoid_when": [
-  "Do not use when through-hole or non-SMD mounting is required.",
-  "Avoid if the application requires an operating voltage other than 3.3V.",
-  "Do not use if a footprint package other than PLCC4 5.0x5.0mm is needed."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than LED."
  ],
  "keywords": [
-  "discrete",
   "led",
-  "3.3v",
-  "smd",
-  "surface mount",
-  "plcc4",
-  "ws2812b",
-  "liteon",
-  "ltst-e563c",
-  "5.0x5.0mm",
-  "p3.2mm",
-  "discrete led",
   "0mm",
+  "plcc4",
   "0x5",
   "p3",
   "2mm",
+  "ws2812b",
+  "liteon",
   "ltst",
   "e563c",
+  "discrete",
   "rgb",
   "surface",
   "mount",
@@ -64,13 +57,13 @@
   "tier_counts": {
    "C": 2
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
   "dist-legacy/LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm",
   "dist-legacy/LED_LiteOn_LTST-E563C_PLCC4_5.0x5.0mm_P3.2mm"
  ],
- "embedding_text": "discrete-led.led.3v3 | Discrete LED | Discrete 3.3V surface-mount LED cluster containing 2 tier-C parts with PLCC4 5.0x5.0mm footprints. | discrete led 3.3v smd surface mount plcc4 ws2812b liteon ltst-e563c 5.0x5.0mm p3.2mm discrete led 0mm 0x5 p3 2mm ltst e563c rgb surface mount pad mm | LED | 3.3V",
+ "embedding_text": "discrete-led.led.3v3 | Discrete LED | 2 discrete led parts for 3.3V using LED footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | led 0mm plcc4 0x5 p3 2mm ws2812b liteon ltst e563c discrete rgb surface mount pad mm | LED | 3.3V",
  "class": "discrete.led"
 }

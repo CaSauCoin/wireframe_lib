@@ -6,32 +6,21 @@
   "IC",
   "Analog"
  ],
- "description": "Surface-mount analog IC cluster featuring an I2C interface and 4.1V rating in a 16-pin QSOP footprint.",
+ "description": "2 ic analog parts for I2C, 4.1V using QSOP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Requires an analog IC with an I2C interface and 4.1V specification.",
-  "Uses a surface-mount QSOP-16 footprint with 0.635mm pitch.",
-  "Selecting between Tier A parts such as MAX11614 and MAX11616."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a QSOP land pattern is intended."
  ],
  "avoid_when": [
-  "The layout requires a footprint or package family other than QSOP-16.",
-  "The circuit requires a communication interface other than I2C.",
-  "Operating requirements differ from the specified 4.1V rating."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than QSOP."
  ],
  "keywords": [
   "qsop",
-  "qsop-16",
-  "i2c",
-  "4.1v",
-  "ic.analog",
-  "analog ic",
   "adc",
-  "max11614",
-  "max11616",
-  "smd",
-  "kicad-symbols",
-  "3.9x4.9mm",
-  "p0.635mm",
-  "surface mount",
+  "i2c",
   "analog",
   "channel",
   "single",
@@ -41,7 +30,10 @@
   "bit",
   "096v",
   "internal",
-  "reference"
+  "reference",
+  "package",
+  "9x4",
+  "9mm"
  ],
  "facts": {
   "package_family": "QSOP",
@@ -65,7 +57,7 @@
   "tier_counts": {
    "A": 2
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -89,6 +81,6 @@
   "kicad-symbols/Analog_ADC/MAX11614",
   "kicad-symbols/Analog_ADC/MAX11616"
  ],
- "embedding_text": "ic-analog.qsop.i2c.4-1v | IC Analog | Surface-mount analog IC cluster featuring an I2C interface and 4.1V rating in a 16-pin QSOP footprint. | qsop qsop-16 i2c 4.1v ic.analog analog ic adc max11614 max11616 smd kicad-symbols 3.9x4.9mm p0.635mm surface mount analog channel single ended or differential bit 096v internal reference | QSOP | I2C 4.1V",
+ "embedding_text": "ic-analog.qsop.i2c.4-1v | IC Analog | 2 ic analog parts for I2C, 4.1V using QSOP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | qsop adc i2c analog channel single ended or differential bit 096v internal reference package 9x4 9mm | QSOP | I2C 4.1V",
  "class": "ic.analog"
 }

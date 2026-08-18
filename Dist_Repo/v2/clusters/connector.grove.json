@@ -5,44 +5,34 @@
  "category_path": [
   "Connector"
  ],
- "description": "Cluster of 4 GROVE-family (HW4) connector footprints from Seeed-OPL-Kicad-Library, covering SMD and through-hole mounts in straight and 90-degree orientations; all entries are tier C and generated, none planner-visible.",
+ "description": "4 connector parts using GROVE footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Match mount type: smd vs through_hole footprint variant.",
-  "Match orientation: straight (GROVE-HW4-2.0) vs 90-degree (GROVE-HW4-2.0-90D).",
-  "Confirm the exact footprint name (SMD or non-SMD, 90D or not) fits the board layout.",
-  "All 4 parts are tier C generated entries from a single source; verify before committing."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a GROVE land pattern is intended."
  ],
  "avoid_when": [
-  "A planner-visible or higher-tier (A/B) verified part is required.",
-  "A connector footprint or pitch outside the GROVE HW4 2.0 family is needed.",
-  "Electrical ratings, pinout, or manufacturer data are required beyond footprint/mount info.",
-  "Only through-hole is acceptable but SMD is selected, or vice versa, without checking the footprint."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than GROVE."
  ],
  "keywords": [
   "grove",
   "connector",
-  "hw4",
-  "seeed",
-  "opl",
-  "seeed-opl-kicad-library",
-  "smd",
-  "through hole",
-  "90 degree",
-  "right angle",
-  "straight",
-  "2.0mm pitch",
-  "footprint",
-  "kicad",
-  "generated",
-  "tier c",
   "90d",
+  "hw4",
+  "smd",
   "dip",
   "4p",
+  "opl",
   "pad",
   "mm",
   "pitch",
   "pins",
-  "2p"
+  "2p",
+  "through",
+  "hole",
+  "surface"
  ],
  "facts": {
   "package_family": "GROVE",
@@ -67,7 +57,7 @@
   "tier_counts": {
    "C": 4
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
@@ -76,6 +66,6 @@
   "Seeed-OPL-Kicad-Library/OPL_Connector/GROVE-CONNECTOR-SMD-90D_4+2P-2.0_",
   "Seeed-OPL-Kicad-Library/OPL_Connector/GROVE-CONNECTOR-SMD_4+2P-2.0_"
  ],
- "embedding_text": "connector.grove | Connector | Cluster of 4 GROVE-family (HW4) connector footprints from Seeed-OPL-Kicad-Library, covering SMD and through-hole mounts in straight and 90-degree orientations; all entries are tier C and generated, none planner-visible. | grove connector hw4 seeed opl seeed-opl-kicad-library smd through hole 90 degree right angle straight 2.0mm pitch footprint kicad generated tier c 90d dip 4p pad mm pitch pins 2p | GROVE | ",
+ "embedding_text": "connector.grove | Connector | 4 connector parts using GROVE footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | grove connector 90d hw4 smd dip 4p opl pad mm pitch pins 2p through hole surface | GROVE | ",
  "class": "connector"
 }

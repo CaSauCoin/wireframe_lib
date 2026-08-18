@@ -5,30 +5,20 @@
  "category_path": [
   "IC"
  ],
- "description": "Integrated circuit cluster containing 1 tier C part using the GHC196 footprint and package family from dist-legacy sources.",
+ "description": "1 ic parts using GHC196 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when a GHC196 footprint and package family are required.",
-  "Verify part specifications as mount type is currently listed as unknown.",
-  "Evaluate suitability given the tier C quality rating and dist-legacy source."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a GHC196 land pattern is intended."
  ],
  "avoid_when": [
-  "The board layout requires a package footprint other than GHC196.",
-  "The application requires verified mounting details or higher quality tiers than tier C.",
-  "Planner-visible component status is required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than GHC196."
  ],
  "keywords": [
   "ghc196",
   "ic",
-  "integrated circuit",
-  "ghc196 footprint",
-  "ghc196 package",
-  "package family ghc196",
-  "dist-legacy",
-  "tier c",
-  "unknown mount",
-  "ic ghc196",
-  "tier c ic",
-  "ic cluster",
   "pad",
   "mm",
   "pitch",
@@ -53,12 +43,12 @@
   "tier_counts": {
    "C": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
   "dist-legacy/GHC196"
  ],
- "embedding_text": "ic.ghc196 | IC | Integrated circuit cluster containing 1 tier C part using the GHC196 footprint and package family from dist-legacy sources. | ghc196 ic integrated circuit ghc196 footprint ghc196 package package family ghc196 dist-legacy tier c unknown mount ic ghc196 tier c ic ic cluster pad mm pitch pins | GHC196 | ",
+ "embedding_text": "ic.ghc196 | IC | 1 ic parts using GHC196 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | ghc196 ic pad mm pitch pins | GHC196 | ",
  "class": "ic"
 }

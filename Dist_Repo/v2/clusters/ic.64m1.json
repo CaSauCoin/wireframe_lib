@@ -5,28 +5,20 @@
  "category_path": [
   "IC"
  ],
- "description": "Integrated circuit cluster containing three parts in the 64M1 package family using 64M1_L, 64M1_M, or 64M1_N footprints.",
+ "description": "3 ic parts using 64M1 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when requiring an IC part in the 64M1 package family.",
-  "Choose when using footprints 64M1_L, 64M1_M, or 64M1_N.",
-  "Verify mounting requirements prior to selection as mount status is listed as unknown."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a 64M1 land pattern is intended."
  ],
  "avoid_when": [
-  "Avoid when the board layout requires a package family other than 64M1.",
-  "Do not use if footprints 64M1_L, 64M1_M, or 64M1_N are incompatible with the design.",
-  "Avoid if parts visible to the planner or higher quality tier components are required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than 64M1."
  ],
  "keywords": [
-  "ic",
   "64m1",
-  "64m1_l",
-  "64m1_m",
-  "64m1_n",
-  "package family",
-  "integrated circuit",
-  "dist-legacy",
-  "tier c",
-  "64m1 footprint",
+  "ic",
   "pad",
   "mm",
   "pitch",
@@ -53,7 +45,7 @@
   "tier_counts": {
    "C": 3
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
@@ -61,6 +53,6 @@
   "dist-legacy/64M1_M",
   "dist-legacy/64M1_N"
  ],
- "embedding_text": "ic.64m1 | IC | Integrated circuit cluster containing three parts in the 64M1 package family using 64M1_L, 64M1_M, or 64M1_N footprints. | ic 64m1 64m1_l 64m1_m 64m1_n package family integrated circuit dist-legacy tier c 64m1 footprint pad mm pitch pins | 64M1 | ",
+ "embedding_text": "ic.64m1 | IC | 3 ic parts using 64M1 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | 64m1 ic pad mm pitch pins | 64M1 | ",
  "class": "ic"
 }

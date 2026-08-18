@@ -5,32 +5,22 @@
  "category_path": [
   "IC"
  ],
- "description": "SMD IC cluster containing a boost DC-DC converter supporting 1.8-6V input, 0.4A, and 28V output in an SOT-23-5 package.",
+ "description": "1 ic parts for boost, 28V using SOT-23-5 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Requires a boost DC-DC converter supporting 1.8-6V input and 28V output.",
-  "Target design uses an SMD SOT-23-5 package.",
-  "Acceptable to use Tier B parts from JLCPCB-Kicad-Library."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SOT-23-5 land pattern is intended."
  ],
  "avoid_when": [
-  "Input voltage is outside 1.8-6V or required output exceeds 28V.",
-  "Required load current exceeds 0.4A.",
-  "Layout requires through-hole components or footprints other than SOT-23-5."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SOT-23-5."
  ],
  "keywords": [
-  "ic",
-  "dc-dc",
-  "boost",
-  "28v",
-  "sot-23-5",
-  "smd",
-  "1.8-6vin",
-  "0.4a",
-  "28v-vout",
-  "boost regulator",
-  "jlcpcb-kicad-library",
-  "sot-23-5_l3.0-w1.7-p0.95-ls2.8-bl",
   "dc",
+  "boost",
   "sot",
+  "28v",
   "l3",
   "w1",
   "p0",
@@ -40,7 +30,9 @@
   "4a",
   "vout",
   "tj",
-  "8v"
+  "8v",
+  "6v",
+  "1mhz"
  ],
  "facts": {
   "package_family": "SOT-23-5",
@@ -64,7 +56,7 @@
   "tier_counts": {
    "B": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -79,6 +71,6 @@
  "part_ids": [
   "JLCPCB-Kicad-Library/7722/DC-DC, Boost, 1.8-6VIN, 0.4A, 28V-VOUT"
  ],
- "embedding_text": "ic.sot-23-5.boost.28v | IC | SMD IC cluster containing a boost DC-DC converter supporting 1.8-6V input, 0.4A, and 28V output in an SOT-23-5 package. | ic dc-dc boost 28v sot-23-5 smd 1.8-6vin 0.4a 28v-vout boost regulator jlcpcb-kicad-library sot-23-5_l3.0-w1.7-p0.95-ls2.8-bl dc sot l3 w1 p0 ls2 bl 6vin 4a vout tj 8v | SOT-23-5 | boost 28V",
+ "embedding_text": "ic.sot-23-5.boost.28v | IC | 1 ic parts for boost, 28V using SOT-23-5 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | dc boost sot 28v l3 w1 p0 ls2 bl 6vin 4a vout tj 8v 6v 1mhz | SOT-23-5 | boost 28V",
  "class": "ic"
 }

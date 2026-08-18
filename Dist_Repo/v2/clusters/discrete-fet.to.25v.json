@@ -6,37 +6,33 @@
   "Discrete",
   "FET"
  ],
- "description": "A cluster of 1 through-hole discrete FET part rated for 25V in a TO-92 footprint from KiCad symbols.",
+ "description": "1 discrete fet parts for 25V using TO footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select for through-hole designs requiring a 25V discrete FET in a TO-92 footprint.",
-  "Choose when requiring tier A part 2N3819 from KiCad symbols.",
-  "Confirm layout compatibility with through-hole TO-92 packaging."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a TO land pattern is intended."
  ],
  "avoid_when": [
-  "The design requires surface-mount packaging instead of through-hole.",
-  "The application requires footprints other than TO-92.",
-  "Operating conditions require voltage ratings exceeding 25V."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than TO."
  ],
  "keywords": [
-  "discrete fet",
-  "25v",
-  "to-92",
-  "2n3819",
-  "through_hole",
+  "transistor",
   "to",
   "fet",
-  "transistor",
-  "discrete",
-  "jfet",
-  "tier a",
+  "25v",
   "channel",
+  "jfet",
   "sc",
+  "2n3819",
   "20ma",
   "id",
   "vgs",
   "43a",
   "sot54",
-  "pa33"
+  "pa33",
+  "discrete"
  ],
  "facts": {
   "package_family": "TO",
@@ -59,7 +55,7 @@
   "tier_counts": {
    "A": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -74,6 +70,6 @@
  "part_ids": [
   "kicad-symbols/Transistor_FET/2N3819"
  ],
- "embedding_text": "discrete-fet.to.25v | Discrete FET | A cluster of 1 through-hole discrete FET part rated for 25V in a TO-92 footprint from KiCad symbols. | discrete fet 25v to-92 2n3819 through_hole to fet transistor discrete jfet tier a channel sc 20ma id vgs 43a sot54 pa33 | TO | 25V",
+ "embedding_text": "discrete-fet.to.25v | Discrete FET | 1 discrete fet parts for 25V using TO footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | transistor to fet 25v channel jfet sc 2n3819 20ma id vgs 43a sot54 pa33 discrete | TO | 25V",
  "class": "discrete.fet"
 }

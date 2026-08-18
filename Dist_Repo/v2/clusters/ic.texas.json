@@ -5,33 +5,21 @@
  "category_path": [
   "IC"
  ],
- "description": "Integrated circuit cluster containing 55 surface-mount parts across Texas package family footprints including PWSON, PUSON, X2SON, WSON, HTSOP, and PDSO.",
+ "description": "55 ic parts using Texas footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select for surface-mount IC designs using Texas package family footprints.",
-  "Prefer Tier A or Tier B parts such as TPD6F003, TPD3F303DPV, TPS3831, or TPS3839DQN from kicad-symbols.",
-  "Match specific footprint requirements such as X2SON-4, WSON-10, PUSON-8, or HTSOP-8."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a Texas land pattern is intended."
  ],
  "avoid_when": [
-  "Through-hole (THT) mounting is required for the design.",
-  "The design requires non-Texas package footprints.",
-  "Unverified Tier C legacy parts must be excluded from selection."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than Texas."
  ],
  "keywords": [
-  "ic",
   "texas",
-  "smd",
-  "tpd6f003",
-  "tpd3f303dpv",
-  "tps3831",
-  "tps3839dqn",
-  "x2son",
-  "wson",
-  "puson",
-  "pwson",
-  "htsop",
-  "vson",
-  "pdso",
   "p0",
+  "ic",
   "1ep",
   "thermalvias",
   "65mm",
@@ -40,7 +28,11 @@
   "ti",
   "9mm",
   "ep0",
-  "package"
+  "package",
+  "www",
+  "com",
+  "lit",
+  "wson"
  ],
  "facts": {
   "package_family": "Texas",
@@ -75,7 +67,7 @@
    "B": 3,
    "C": 51
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -168,6 +160,6 @@
   "dist-legacy/Texas_X2SON-4-1EP_1.1x1.4mm_P0.5mm_EP0.8x0.6mm",
   "dist-legacy/Texas_X2SON-4-1EP_1.1x1.4mm_P0.5mm_EP0.8x0.6mm_ThermalVias"
  ],
- "embedding_text": "ic.texas | IC | Integrated circuit cluster containing 55 surface-mount parts across Texas package family footprints including PWSON, PUSON, X2SON, WSON, HTSOP, and PDSO. | ic texas smd tpd6f003 tpd3f303dpv tps3831 tps3839dqn x2son wson puson pwson htsop vson pdso p0 1ep thermalvias 65mm 5mm pitch ti 9mm ep0 package | Texas | ",
+ "embedding_text": "ic.texas | IC | 55 ic parts using Texas footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | texas p0 ic 1ep thermalvias 65mm 5mm pitch ti 9mm ep0 package www com lit wson | Texas | ",
  "class": "ic"
 }

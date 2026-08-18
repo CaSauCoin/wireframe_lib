@@ -5,26 +5,20 @@
  "category_path": [
   "IC"
  ],
- "description": "IC component cluster containing 1 part associated with the DB9SLW package family and footprint.",
+ "description": "1 ic parts using DB9SLW footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when requiring an IC part using the DB9SLW package footprint.",
-  "Verify exact footprint compatibility and pin assignment prior to PCB design.",
-  "Review quality tier C rating and legacy distribution source."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a DB9SLW land pattern is intended."
  ],
  "avoid_when": [
-  "Avoid if the board layout requires a footprint other than DB9SLW.",
-  "Do not use when planner-visible or higher quality tier parts are required.",
-  "Avoid if specific electrical ratings or defined mounting types are required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than DB9SLW."
  ],
  "keywords": [
   "db9slw",
   "ic",
-  "db9slw footprint",
-  "db9slw package",
-  "db9slw ic",
-  "integrated circuit",
-  "tier c",
-  "dist-legacy",
   "pad",
   "mm",
   "pitch",
@@ -49,12 +43,12 @@
   "tier_counts": {
    "C": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
   "dist-legacy/DB9SLW"
  ],
- "embedding_text": "ic.db9slw | IC | IC component cluster containing 1 part associated with the DB9SLW package family and footprint. | db9slw ic db9slw footprint db9slw package db9slw ic integrated circuit tier c dist-legacy pad mm pitch pins | DB9SLW | ",
+ "embedding_text": "ic.db9slw | IC | 1 ic parts using DB9SLW footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | db9slw ic pad mm pitch pins | DB9SLW | ",
  "class": "ic"
 }

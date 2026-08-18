@@ -6,34 +6,26 @@
   "IC",
   "Analog"
  ],
- "description": "Analog IC cluster featuring 40V surface-mount components in SO packaging with SO-8 footprints.",
+ "description": "1 ic analog parts for 40V using SO footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Choose for analog IC applications requiring a 40V rating and SMD mounting.",
-  "Match layout requirements against the SO-8_3.9x4.9mm_P1.27mm footprint.",
-  "Select tier A parts such as LM311D from the Alternate-KiCad-Library."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SO land pattern is intended."
  ],
  "avoid_when": [
-  "Avoid if non-SO packages or non-SMD mounting types are required.",
-  "Do not use when circuit operating parameters do not match the 40V facet rating.",
-  "Avoid if footprints other than SO-8_3.9x4.9mm_P1.27mm are needed."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SO."
  ],
  "keywords": [
-  "ic",
-  "analog",
-  "40v",
   "so",
-  "smd",
-  "so-8",
-  "lm311d",
-  "ic.analog",
-  "so-8_3.9x4.9mm_p1.27mm",
-  "alternate-kicad-library",
-  "analog comparator",
-  "surface mount",
+  "analog",
   "comparator",
   "voltage",
   "open",
   "collector",
+  "40v",
+  "lm311d",
   "akl",
   "with",
   "high",
@@ -64,7 +56,7 @@
   "tier_counts": {
    "A": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -79,6 +71,6 @@
  "part_ids": [
   "Alternate-KiCad-Library/Analog_Comparator_AKL/LM311D"
  ],
- "embedding_text": "ic-analog.so.40v | IC Analog | Analog IC cluster featuring 40V surface-mount components in SO packaging with SO-8 footprints. | ic analog 40v so smd so-8 lm311d ic.analog so-8_3.9x4.9mm_p1.27mm alternate-kicad-library analog comparator surface mount comparator voltage open collector akl with high ouptput 200ns propagation delay 5mv | SO | 40V",
+ "embedding_text": "ic-analog.so.40v | IC Analog | 1 ic analog parts for 40V using SO footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | so analog comparator voltage open collector 40v lm311d akl with high ouptput 200ns propagation delay 5mv | SO | 40V",
  "class": "ic.analog"
 }

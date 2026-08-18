@@ -7,34 +7,24 @@
   "Driver",
   "Display"
  ],
- "description": "Display driver IC cluster containing SMD SOIC parts with 5V and 20V facets in SOIC-16 and SOIC-24W footprints.",
+ "description": "3 ic driver display parts for 5V, 20V using SOIC footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select between SOIC-16 and SOIC-24W footprints based on required package dimensions and lead count.",
-  "Verify compatibility with 5V and 20V operating facets.",
-  "Choose STP08CP05M for SOIC-16 or STP16CP05M/STP16CPC26M for SOIC-24W package requirements."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SOIC land pattern is intended."
  ],
  "avoid_when": [
-  "The design requires through-hole mounting rather than SMD.",
-  "The layout requires package families other than SOIC.",
-  "Operating parameters or layout constraints do not align with 5V/20V facets or SOIC-16/SOIC-24W footprints."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SOIC."
  ],
  "keywords": [
-  "ic",
-  "driver",
-  "display",
   "soic",
-  "smd",
-  "5v",
-  "20v",
-  "soic-16",
-  "soic-24w",
-  "stp08cp05m",
-  "stp16cp05m",
-  "stp16cpc26m",
-  "display driver",
-  "p1.27mm",
+  "driver",
   "led",
   "current",
+  "20v",
+  "5v",
   "bit",
   "constant",
   "sink",
@@ -42,7 +32,9 @@
   "driving",
   "capability",
   "power",
-  "supply"
+  "supply",
+  "p1",
+  "27mm"
  ],
  "facts": {
   "package_family": "SOIC",
@@ -67,7 +59,7 @@
   "tier_counts": {
    "A": 3
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -100,6 +92,6 @@
   "kicad-symbols/Driver_LED/STP16CP05M",
   "kicad-symbols/Driver_LED/STP16CPC26M"
  ],
- "embedding_text": "ic-driver-display.soic.5v.20v | IC Driver Display | Display driver IC cluster containing SMD SOIC parts with 5V and 20V facets in SOIC-16 and SOIC-24W footprints. | ic driver display soic smd 5v 20v soic-16 soic-24w stp08cp05m stp16cp05m stp16cpc26m display driver p1.27mm led current bit constant sink output driving capability power supply | SOIC | 5V 20V",
+ "embedding_text": "ic-driver-display.soic.5v.20v | IC Driver Display | 3 ic driver display parts for 5V, 20V using SOIC footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | soic driver led current 20v 5v bit constant sink output driving capability power supply p1 27mm | SOIC | 5V 20V",
  "class": "ic.driver.display"
 }

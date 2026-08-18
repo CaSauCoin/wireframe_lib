@@ -5,34 +5,27 @@
  "category_path": [
   "IC"
  ],
- "description": "IC cluster containing 4 parts in the Kodenshi package family with SMD and through-hole mounting options using Kodenshi_LG206D, Kodenshi_LG206L, Kodenshi_SG105, or Kodenshi_SG105F footprints.",
+ "description": "4 ic parts using Kodenshi footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Require one of the specific Kodenshi footprints: LG206D, LG206L, SG105, or SG105F.",
-  "Select based on the target mounting style, either surface mount (SMD) or through-hole.",
-  "Verify part metadata manually as all 4 parts are classified under tier C quality."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a Kodenshi land pattern is intended."
  ],
  "avoid_when": [
-  "The design requires package footprints other than Kodenshi LG206D, LG206L, SG105, or SG105F.",
-  "Parts with quality tiers higher than tier C or planner-visible parts are required.",
-  "Mounting requirements differ from SMD or through-hole."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than Kodenshi."
  ],
  "keywords": [
   "kodenshi",
   "ic",
+  "pdf",
   "lg206d",
+  "package",
+  "photointerrupter",
   "lg206l",
   "sg105",
   "sg105f",
-  "smd",
-  "through_hole",
-  "through hole",
-  "kodenshi_lg206d",
-  "kodenshi_lg206l",
-  "kodenshi_sg105",
-  "kodenshi_sg105f",
-  "pdf",
-  "package",
-  "photointerrupter",
   "pad",
   "mm",
   "pitch",
@@ -64,7 +57,7 @@
   "tier_counts": {
    "C": 4
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
@@ -73,6 +66,6 @@
   "dist-legacy/Kodenshi_SG105",
   "dist-legacy/Kodenshi_SG105F"
  ],
- "embedding_text": "ic.kodenshi | IC | IC cluster containing 4 parts in the Kodenshi package family with SMD and through-hole mounting options using Kodenshi_LG206D, Kodenshi_LG206L, Kodenshi_SG105, or Kodenshi_SG105F footprints. | kodenshi ic lg206d lg206l sg105 sg105f smd through_hole through hole kodenshi_lg206d kodenshi_lg206l kodenshi_sg105 kodenshi_sg105f pdf package photointerrupter pad mm pitch pins http co jp | Kodenshi | ",
+ "embedding_text": "ic.kodenshi | IC | 4 ic parts using Kodenshi footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | kodenshi ic pdf lg206d package photointerrupter lg206l sg105 sg105f pad mm pitch pins http co jp | Kodenshi | ",
  "class": "ic"
 }

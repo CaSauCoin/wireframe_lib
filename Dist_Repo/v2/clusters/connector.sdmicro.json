@@ -5,32 +5,22 @@
  "category_path": [
   "Connector"
  ],
- "description": "SDMICRO connector cluster with 2 SMD parts across two footprint variants (SDMICRO_MOLEX104031, SDMICRO_MOLEX105162), all tier C and generated review status.",
+ "description": "2 connector parts using SDMICRO footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Match the exact footprint variant: MOLEX104031 vs MOLEX105162",
-  "Verify pin-to-pad mapping manually since parts are tier C and review_status is generated",
-  "Confirm source trust (chilaboard-altium-library) before use in production"
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SDMICRO land pattern is intended."
  ],
  "avoid_when": [
-  "Exact footprint (MOLEX104031 vs MOLEX105162) cannot be confirmed",
-  "A verified, non-generated (higher tier) part is required",
-  "The design needs a connector package other than SDMICRO",
-  "Electrical ratings or pinout must be confirmed but are not documented in this cluster"
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SDMICRO."
  ],
  "keywords": [
   "sdmicro",
-  "sd micro",
-  "microsd",
-  "sd card connector",
   "molex104031",
   "molex105162",
-  "molex",
   "connector",
-  "card slot",
-  "memory card connector",
-  "smd",
-  "surface mount",
-  "chilaboard",
   "surface",
   "mount",
   "pad",
@@ -58,13 +48,13 @@
   "tier_counts": {
    "C": 2
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
   "chilaboard-altium-library/SDMICRO_MOLEX104031/SDMICRO_MOLEX104031",
   "chilaboard-altium-library/SDMICRO_MOLEX105162/SDMICRO_MOLEX105162"
  ],
- "embedding_text": "connector.sdmicro | Connector | SDMICRO connector cluster with 2 SMD parts across two footprint variants (SDMICRO_MOLEX104031, SDMICRO_MOLEX105162), all tier C and generated review status. | sdmicro sd micro microsd sd card connector molex104031 molex105162 molex connector card slot memory card connector smd surface mount chilaboard surface mount pad mm pitch pins | SDMICRO | ",
+ "embedding_text": "connector.sdmicro | Connector | 2 connector parts using SDMICRO footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | sdmicro molex104031 molex105162 connector surface mount pad mm pitch pins | SDMICRO | ",
  "class": "connector"
 }

@@ -6,29 +6,22 @@
   "Discrete",
   "Transistor"
  ],
- "description": "Discrete transistor cluster containing surface-mount components with Kingbright package footprints such as Kingbright_KPS-3227.",
+ "description": "1 discrete transistor parts using Kingbright footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when surface-mount discrete transistors matching Kingbright footprints like Kingbright_KPS-3227 are required.",
-  "Verify component pinout, land pattern dimensions, and electrical ratings against part datasheets.",
-  "Check quality tier and review status before layout integration."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a Kingbright land pattern is intended."
  ],
  "avoid_when": [
-  "Do not use if through-hole mounting is required.",
-  "Avoid when footprints other than Kingbright or Kingbright_KPS-3227 are needed.",
-  "Avoid when verified tier-A or planner-visible parts are required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than Kingbright."
  ],
  "keywords": [
+  "kingbright",
+  "kps",
   "discrete",
   "transistor",
-  "discrete transistor",
-  "kingbright",
-  "kingbright_kps-3227",
-  "kps-3227",
-  "smd",
-  "surface mount",
-  "footprint",
-  "package",
-  "kps",
   "light",
   "sensor",
   "surface",
@@ -37,6 +30,7 @@
   "mm",
   "pitch",
   "pins",
+  "package",
   "2mmx2",
   "7mm",
   "https"
@@ -60,12 +54,12 @@
   "tier_counts": {
    "C": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
   "dist-legacy/Kingbright_KPS-3227"
  ],
- "embedding_text": "discrete-transistor.kingbright | Discrete Transistor | Discrete transistor cluster containing surface-mount components with Kingbright package footprints such as Kingbright_KPS-3227. | discrete transistor discrete transistor kingbright kingbright_kps-3227 kps-3227 smd surface mount footprint package kps light sensor surface mount pad mm pitch pins 2mmx2 7mm https | Kingbright | ",
+ "embedding_text": "discrete-transistor.kingbright | Discrete Transistor | 1 discrete transistor parts using Kingbright footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | kingbright kps discrete transistor light sensor surface mount pad mm pitch pins package 2mmx2 7mm https | Kingbright | ",
  "class": "discrete.transistor"
 }

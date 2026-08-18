@@ -5,29 +5,21 @@
  "category_path": [
   "IC"
  ],
- "description": "Cluster of 3 tier-C integrated circuit parts in the MH package family using MH footprints.",
+ "description": "3 ic parts using MH footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Verify specific footprint match among MH_5.2MMD_2.7MMD, MH_5MMD_2.2MMD, and MH_7.4MMD_3.2MMD.",
-  "Check individual part details and datasheets as parts are tier C with generated review status.",
-  "Use when designing with components requiring the MH package family."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a MH land pattern is intended."
  ],
  "avoid_when": [
-  "The layout requires package families other than MH.",
-  "Verified high-tier parts are required, as all parts in this cluster are tier C.",
-  "Planner-visible parts are required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than MH."
  ],
  "keywords": [
-  "ic",
   "mh",
-  "integrated circuit",
-  "mh package family",
-  "mh_5.2mmd_2.7mmd",
-  "mh_5mmd_2.2mmd",
-  "mh_7.4mmd_3.2mmd",
-  "tier c",
-  "dist-legacy",
-  "mh footprint",
   "2mmd",
+  "ic",
   "7mmd",
   "5mmd",
   "4mmd",
@@ -55,7 +47,7 @@
   "tier_counts": {
    "C": 3
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
@@ -63,6 +55,6 @@
   "dist-legacy/MH_5MMD_2.2MMD",
   "dist-legacy/MH_7.4MMD_3.2MMD"
  ],
- "embedding_text": "ic.mh | IC | Cluster of 3 tier-C integrated circuit parts in the MH package family using MH footprints. | ic mh integrated circuit mh package family mh_5.2mmd_2.7mmd mh_5mmd_2.2mmd mh_7.4mmd_3.2mmd tier c dist-legacy mh footprint 2mmd 7mmd 5mmd 4mmd pad pins | MH | ",
+ "embedding_text": "ic.mh | IC | 3 ic parts using MH footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | mh 2mmd ic 7mmd 5mmd 4mmd pad pins | MH | ",
  "class": "ic"
 }

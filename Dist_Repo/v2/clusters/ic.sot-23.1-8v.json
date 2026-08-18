@@ -5,30 +5,18 @@
  "category_path": [
   "IC"
  ],
- "description": "Integrated circuit cluster containing 7 surface-mount 1.8V parts in SOT-23 packaging with SOT-23-6 footprints.",
+ "description": "7 ic parts for 1.8V using SOT-23 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Target design requires a 1.8V integrated circuit.",
-  "PCB layout uses surface-mount SOT-23 packaging or SOT-23-6 footprint.",
-  "Choosing Tier A parts sourced from KiCad symbols."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SOT-23 land pattern is intended."
  ],
  "avoid_when": [
-  "The circuit design requires an operating voltage other than 1.8V.",
-  "The board layout calls for through-hole mounting or non-SOT-23 footprints.",
-  "Parts outside the KiCad symbol library are required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SOT-23."
  ],
  "keywords": [
-  "ic",
-  "1.8v",
-  "sot-23",
-  "sot-23-6",
-  "smd",
-  "kicad-symbols",
-  "max6070aaut18",
-  "max6070aaut18v",
-  "max6070baut18",
-  "max6071aaut18",
-  "max6071baut18",
-  "reference voltage",
   "sot",
   "reference",
   "voltage",
@@ -37,10 +25,14 @@
   "low",
   "noise",
   "to",
+  "smd",
+  "ic",
   "high",
   "series",
   "initial",
-  "accuracy"
+  "accuracy",
+  "max6070aaut18",
+  "max6070aaut18v"
  ],
  "facts": {
   "package_family": "SOT-23",
@@ -63,7 +55,7 @@
   "tier_counts": {
    "A": 7
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -116,6 +108,6 @@
   "kicad-symbols/Reference_Voltage/MCP1501-18xCH",
   "kicad-symbols/Reference_Voltage/REF35180QDBVR"
  ],
- "embedding_text": "ic.sot-23.1-8v | IC | Integrated circuit cluster containing 7 surface-mount 1.8V parts in SOT-23 packaging with SOT-23-6 footprints. | ic 1.8v sot-23 sot-23-6 smd kicad-symbols max6070aaut18 max6070aaut18v max6070baut18 max6071aaut18 max6071baut18 reference voltage sot reference voltage 8v precision low noise to high series initial accuracy | SOT-23 | 1.8V",
+ "embedding_text": "ic.sot-23.1-8v | IC | 7 ic parts for 1.8V using SOT-23 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | sot reference voltage 8v precision low noise to smd ic high series initial accuracy max6070aaut18 max6070aaut18v | SOT-23 | 1.8V",
  "class": "ic"
 }

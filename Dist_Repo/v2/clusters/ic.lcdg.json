@@ -5,33 +5,23 @@
  "category_path": [
   "IC"
  ],
- "description": "Integrated circuit cluster in the LCDG package family featuring surface-mount and through-hole footprint options.",
+ "description": "9 ic parts using LCDG footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when requiring an IC with an LCDG package family footprint.",
-  "Verify mounting type preference between surface-mount and through-hole variants.",
-  "Match specific footprint requirements such as 84X48, 128X64, 240X128, or 240X64.",
-  "Prefer higher quality tier entries with verified library details."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a LCDG land pattern is intended."
  ],
  "avoid_when": [
-  "Do not use if the PCB layout requires a package family other than LCDG.",
-  "Avoid when component mounting requires non-smd and non-through-hole formats.",
-  "Avoid if tier C entries lack needed details for design verification."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than LCDG."
  ],
  "keywords": [
-  "ic",
   "lcdg",
-  "smd",
-  "through hole",
+  "ic",
+  "1p5",
   "84x48",
   "128x64",
-  "240x128",
-  "240x64y",
-  "lcdg_1p5_84x48",
-  "lcdg_128x64d",
-  "lcdg_128x64_blu",
-  "lcdg_128x64_grn",
-  "chilaboard",
-  "1p5",
   "pad",
   "mm",
   "pitch",
@@ -41,7 +31,8 @@
   "lcd",
   "128x64d",
   "blu",
-  "grn"
+  "grn",
+  "84x48h1"
  ],
  "facts": {
   "package_family": "LCDG",
@@ -71,7 +62,7 @@
    "B": 1,
    "C": 8
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -94,6 +85,6 @@
   "chilaboard-altium-library/LCDG_240X128/LCDG_240X128",
   "chilaboard-altium-library/LCDG_240X64Y/LCDG_240X64Y"
  ],
- "embedding_text": "ic.lcdg | IC | Integrated circuit cluster in the LCDG package family featuring surface-mount and through-hole footprint options. | ic lcdg smd through hole 84x48 128x64 240x128 240x64y lcdg_1p5_84x48 lcdg_128x64d lcdg_128x64_blu lcdg_128x64_grn chilaboard 1p5 pad mm pitch pins through hole lcd 128x64d blu grn | LCDG | ",
+ "embedding_text": "ic.lcdg | IC | 9 ic parts using LCDG footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | lcdg ic 1p5 84x48 128x64 pad mm pitch pins through hole lcd 128x64d blu grn 84x48h1 | LCDG | ",
  "class": "ic"
 }

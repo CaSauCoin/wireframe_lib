@@ -7,42 +7,34 @@
   "Power",
   "Linear Regulator"
  ],
- "description": "Cluster of 11 surface-mount LDO 2.8V linear regulator ICs in SOT package family footprints such as SOT-89-3, SOT-223-3, SOT-343, and SOT-353.",
+ "description": "11 ic power linear regulator parts for LDO, 2.8V using SOT footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when a 2.8V LDO linear regulator in a surface-mount SOT package is required.",
-  "Choose based on the specific SOT footprint variant, such as SOT-89-3, SOT-223-3, SOT-343, or SOT-353.",
-  "Prefer tier A entries within the cluster for higher quality scoring."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SOT land pattern is intended."
  ],
  "avoid_when": [
-  "The design requires an output voltage other than 2.8V.",
-  "A regulator topology other than an LDO linear regulator is needed.",
-  "The board layout requires a non-SOT package family or through-hole mounting."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SOT."
  ],
  "keywords": [
-  "ic",
-  "power",
-  "linear regulator",
-  "ldo",
-  "2.8v",
   "sot",
-  "smd",
-  "sot-89-3",
-  "sot-223-3",
-  "sot-353",
-  "sot-343",
-  "sc-70-4",
-  "sc-70-5",
-  "kicad-symbols",
   "regulator",
   "linear",
+  "ldo",
   "8v",
   "fixed",
   "low",
   "positive",
+  "ic",
+  "power",
   "sc",
   "output",
   "dropout",
-  "voltage"
+  "voltage",
+  "to",
+  "300ma"
  ],
  "facts": {
   "package_family": "SOT",
@@ -71,7 +63,7 @@
    "A": 10,
    "B": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -128,6 +120,6 @@
   "kicad-symbols/Regulator_Linear/TLV70028_SOT353",
   "kicad-symbols/Regulator_Linear/TC1262-28"
  ],
- "embedding_text": "ic-power-ldo.sot.ldo.2-8v | IC Power Linear Regulator | Cluster of 11 surface-mount LDO 2.8V linear regulator ICs in SOT package family footprints such as SOT-89-3, SOT-223-3, SOT-343, and SOT-353. | ic power linear regulator ldo 2.8v sot smd sot-89-3 sot-223-3 sot-353 sot-343 sc-70-4 sc-70-5 kicad-symbols regulator linear 8v fixed low positive sc output dropout voltage | SOT | LDO 2.8V",
+ "embedding_text": "ic-power-ldo.sot.ldo.2-8v | IC Power Linear Regulator | 11 ic power linear regulator parts for LDO, 2.8V using SOT footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | sot regulator linear ldo 8v fixed low positive ic power sc output dropout voltage to 300ma | SOT | LDO 2.8V",
  "class": "ic.power.ldo"
 }

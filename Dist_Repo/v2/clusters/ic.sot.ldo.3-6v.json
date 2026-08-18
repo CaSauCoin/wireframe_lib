@@ -5,34 +5,25 @@
  "category_path": [
   "IC"
  ],
- "description": "Cluster of 6 surface-mount 3.6V LDO voltage regulator ICs in the SOT package family, available in SOT-89-3 and SOT-223-3_TabPin2 footprints.",
+ "description": "6 ic parts for LDO, 3.6V using SOT footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select based on footprint requirement, either SOT-89-3 or SOT-223-3_TabPin2.",
-  "Use when requiring a 3.6V LDO voltage regulator IC in a surface-mount package.",
-  "Verify specific part selection from Alternate-KiCad-Library tier A entries."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SOT land pattern is intended."
  ],
  "avoid_when": [
-  "The design requires an output voltage other than 3.6V.",
-  "Packages other than SOT-89-3 or SOT-223-3_TabPin2 are needed.",
-  "Through-hole mounting is required instead of SMD."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SOT."
  ],
  "keywords": [
-  "ic",
-  "ldo",
-  "3.6v",
   "sot",
-  "smd",
-  "voltage regulator",
-  "low dropout",
-  "sot-89-3",
-  "sot-223-3_tabpin2",
-  "alternate-kicad-library",
-  "surface mount",
-  "regulator",
   "voltage",
+  "regulator",
   "6v",
   "low",
   "dropout",
+  "ldo",
   "akl",
   "250ma",
   "alternate",
@@ -40,7 +31,8 @@
   "library",
   "vreg",
   "pmic",
-  "power"
+  "power",
+  "supply"
  ],
  "facts": {
   "package_family": "SOT",
@@ -65,7 +57,7 @@
   "tier_counts": {
    "A": 6
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -117,6 +109,6 @@
   "Alternate-KiCad-Library/Voltage_Regulator_AKL/MCP1703T-3602E-DB",
   "Alternate-KiCad-Library/Voltage_Regulator_AKL/MCP1703T-3602E-MB"
  ],
- "embedding_text": "ic.sot.ldo.3-6v | IC | Cluster of 6 surface-mount 3.6V LDO voltage regulator ICs in the SOT package family, available in SOT-89-3 and SOT-223-3_TabPin2 footprints. | ic ldo 3.6v sot smd voltage regulator low dropout sot-89-3 sot-223-3_tabpin2 alternate-kicad-library surface mount regulator voltage 6v low dropout akl 250ma alternate kicad library vreg pmic power | SOT | LDO 3.6V",
+ "embedding_text": "ic.sot.ldo.3-6v | IC | 6 ic parts for LDO, 3.6V using SOT footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | sot voltage regulator 6v low dropout ldo akl 250ma alternate kicad library vreg pmic power supply | SOT | LDO 3.6V",
  "class": "ic"
 }

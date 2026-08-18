@@ -7,42 +7,34 @@
   "Analog",
   "Op-Amp"
  ],
- "description": "Surface-mount 15V analog operational amplifier IC cluster featuring 3 KiCad symbol parts in SOIC-8, SOIC-14, and SOIC-16W footprints with 1.27mm pitch.",
+ "description": "3 ic analog op-amp parts for 15V using SOIC footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select based on required SOIC pin count and body dimensions, such as SOIC-8, SOIC-14, or SOIC-16W.",
-  "Verify that 15V voltage rating and surface-mount (SMD) configuration match target application requirements.",
-  "Confirm part matching against representative parts OPA551U, LTC1151CSW, or TLV9054xD."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SOIC land pattern is intended."
  ],
  "avoid_when": [
-  "Through-hole (THT) mounting or package families other than SOIC are required.",
-  "The layout requires pin counts other than 8, 14, or 16.",
-  "Footprint pitch requirements differ from 1.27mm."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SOIC."
  ],
  "keywords": [
-  "ic",
-  "analog",
-  "op-amp",
-  "opamp",
-  "operational amplifier",
-  "15v",
   "soic",
-  "soic-8",
-  "soic-14",
-  "soic-16w",
-  "smd",
-  "1.27mm",
-  "opa551u",
-  "ltc1151csw",
-  "tlv9054xd",
-  "kicad-symbols",
   "operational",
+  "15v",
   "amplifier",
   "p1",
   "27mm",
   "so",
+  "opamp",
+  "ic",
+  "analog",
   "op",
   "amp",
-  "high"
+  "high",
+  "slew",
+  "rate",
+  "us"
  ],
  "facts": {
   "package_family": "SOIC",
@@ -67,7 +59,7 @@
   "tier_counts": {
    "A": 3
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -100,6 +92,6 @@
   "kicad-symbols/Amplifier_Operational/LTC1151CSW",
   "kicad-symbols/Amplifier_Operational/TLV9054xD"
  ],
- "embedding_text": "ic-analog-opamp.soic.15v | IC Analog Op-Amp | Surface-mount 15V analog operational amplifier IC cluster featuring 3 KiCad symbol parts in SOIC-8, SOIC-14, and SOIC-16W footprints with 1.27mm pitch. | ic analog op-amp opamp operational amplifier 15v soic soic-8 soic-14 soic-16w smd 1.27mm opa551u ltc1151csw tlv9054xd kicad-symbols operational amplifier p1 27mm so op amp high | SOIC | 15V",
+ "embedding_text": "ic-analog-opamp.soic.15v | IC Analog Op-Amp | 3 ic analog op-amp parts for 15V using SOIC footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | soic operational 15v amplifier p1 27mm so opamp ic analog op amp high slew rate us | SOIC | 15V",
  "class": "ic.analog.opamp"
 }

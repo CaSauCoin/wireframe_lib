@@ -7,33 +7,23 @@
   "Power",
   "Switching Regulator"
  ],
- "description": "Cluster of 5 surface-mount buck switching regulator ICs for 4.2V applications in SOT-23 and TSOT-23-6 footprints.",
+ "description": "5 ic power switching regulator parts for buck, 4.2V using SOT-23 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when requiring a buck switching regulator IC in a SOT-23 package family.",
-  "Verify compatibility for 4.2V step-down regulator applications.",
-  "Ensure the board layout matches TSOT-23-6 surface-mount footprints."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SOT-23 land pattern is intended."
  ],
  "avoid_when": [
-  "Application requires a regulator topology other than buck.",
-  "Package requirements differ from SOT-23 or TSOT-23-6 footprints.",
-  "Design requires through-hole mounting instead of SMD."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SOT-23."
  ],
  "keywords": [
-  "ic",
-  "power",
-  "switching regulator",
+  "dc",
   "buck",
-  "4.2v",
-  "sot-23",
-  "tsot-23-6",
-  "smd",
+  "tsot",
   "regulator",
   "switching",
-  "ap62150wu",
-  "ap62250wu",
-  "ap62300wu",
-  "dc",
-  "tsot",
   "2v",
   "voltage",
   "sot",
@@ -42,7 +32,9 @@
   "18v",
   "input",
   "8v",
-  "7v"
+  "7v",
+  "adjustable",
+  "output"
  ],
  "facts": {
   "package_family": "SOT-23",
@@ -66,7 +58,7 @@
   "tier_counts": {
    "A": 5
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -117,6 +109,6 @@
   "kicad-symbols/Regulator_Switching/AP62300WU",
   "kicad-symbols/Regulator_Switching/AP62301WU"
  ],
- "embedding_text": "ic-power-switching.sot-23.buck.4-2v | IC Power Switching Regulator | Cluster of 5 surface-mount buck switching regulator ICs for 4.2V applications in SOT-23 and TSOT-23-6 footprints. | ic power switching regulator buck 4.2v sot-23 tsot-23-6 smd regulator switching ap62150wu ap62250wu ap62300wu dc tsot 2v voltage sot 3a converter 18v input 8v 7v | SOT-23 | buck 4.2V",
+ "embedding_text": "ic-power-switching.sot-23.buck.4-2v | IC Power Switching Regulator | 5 ic power switching regulator parts for buck, 4.2V using SOT-23 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | dc buck tsot regulator switching 2v voltage sot 3a converter 18v input 8v 7v adjustable output | SOT-23 | buck 4.2V",
  "class": "ic.power.switching"
 }

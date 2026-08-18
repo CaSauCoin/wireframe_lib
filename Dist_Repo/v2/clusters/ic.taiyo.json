@@ -5,31 +5,24 @@
  "category_path": [
   "IC"
  ],
- "description": "Integrated circuit cluster containing 3 parts in quality tier C utilizing TAIYO surface-mount footprints including Taiyo-Yuden EYSGJNZWY and TAIYO YUDEN SMD-5 1.4x1mm.",
+ "description": "3 ic parts using TAIYO footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Verify exact land pattern requirements against TAIYO footprint variants.",
-  "Select when surface-mount parts using TAIYO package family footprints are required.",
-  "Review tier C quality classification prior to design integration."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a TAIYO land pattern is intended."
  ],
  "avoid_when": [
-  "The board layout requires a package family other than TAIYO.",
-  "Through-hole mounting is required instead of surface mount.",
-  "Tier C quality level does not meet project verification requirements."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than TAIYO."
  ],
  "keywords": [
-  "ic",
   "taiyo",
   "yuden",
-  "taiyo yuden",
-  "eysgjnzwy",
   "smd",
-  "smd-5",
-  "1.4x1mm",
-  "surface mount",
-  "package",
-  "footprint",
-  "taiyo-yuden_eysgjnzwy",
   "4x1mm",
+  "ic",
+  "eysgjnzwy",
   "pad",
   "mm",
   "pitch",
@@ -38,7 +31,8 @@
   "surface",
   "mount",
   "nrf51822",
-  "bluetooth"
+  "bluetooth",
+  "package"
  ],
  "facts": {
   "package_family": "TAIYO",
@@ -63,7 +57,7 @@
   "tier_counts": {
    "C": 3
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
@@ -71,6 +65,6 @@
   "dist-legacy/Taiyo-Yuden_EYSGJNZWY",
   "celestial-altium-library/TAIYO YUDEN SMD-5 1.4x1mm/TAIYO_YUDEN_SMD-5_1.4x1mm"
  ],
- "embedding_text": "ic.taiyo | IC | Integrated circuit cluster containing 3 parts in quality tier C utilizing TAIYO surface-mount footprints including Taiyo-Yuden EYSGJNZWY and TAIYO YUDEN SMD-5 1.4x1mm. | ic taiyo yuden taiyo yuden eysgjnzwy smd smd-5 1.4x1mm surface mount package footprint taiyo-yuden_eysgjnzwy 4x1mm pad mm pitch pins module surface mount nrf51822 bluetooth | TAIYO | ",
+ "embedding_text": "ic.taiyo | IC | 3 ic parts using TAIYO footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | taiyo yuden smd 4x1mm ic eysgjnzwy pad mm pitch pins module surface mount nrf51822 bluetooth package | TAIYO | ",
  "class": "ic"
 }

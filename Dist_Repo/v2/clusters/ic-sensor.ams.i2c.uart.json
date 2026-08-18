@@ -6,41 +6,34 @@
   "IC",
   "Sensor"
  ],
- "description": "Surface-mount AMS optical sensor IC cluster featuring I2C and UART/serial interfaces in an LGA-20 footprint.",
+ "description": "3 ic sensor parts for I2C, UART/serial using AMS footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Selecting an AMS optical sensor IC with I2C or UART/serial interface.",
-  "Matching the SMD AMS LGA-20 (4.7x4.5mm, 0.65mm pitch) footprint.",
-  "Choosing between representative parts AS7261, AS7262, and AS7263."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a AMS land pattern is intended."
  ],
  "avoid_when": [
-  "Through-hole mounting or package footprints other than LGA-20 are required.",
-  "Communication interfaces other than I2C or UART/serial are needed."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than AMS."
  ],
  "keywords": [
-  "ams",
-  "ic sensor",
-  "optical sensor",
-  "i2c",
-  "uart",
-  "serial",
-  "smd",
-  "lga-20",
-  "as7261",
-  "as7262",
-  "as7263",
-  "4.7x4.5mm",
-  "p0.65mm",
   "spectral",
+  "ams",
   "sensor",
   "channel",
   "id",
   "lga",
+  "i2c",
+  "uart",
   "optical",
   "sensing",
   "engine",
   "7x4",
   "5mm",
-  "p0"
+  "p0",
+  "65mm",
+  "device"
  ],
  "facts": {
   "package_family": "AMS",
@@ -64,7 +57,7 @@
   "tier_counts": {
    "A": 3
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -97,6 +90,6 @@
   "kicad-symbols/Sensor_Optical/AS7262",
   "kicad-symbols/Sensor_Optical/AS7263"
  ],
- "embedding_text": "ic-sensor.ams.i2c.uart | IC Sensor | Surface-mount AMS optical sensor IC cluster featuring I2C and UART/serial interfaces in an LGA-20 footprint. | ams ic sensor optical sensor i2c uart serial smd lga-20 as7261 as7262 as7263 4.7x4.5mm p0.65mm spectral sensor channel id lga optical sensing engine 7x4 5mm p0 | AMS | I2C UART/serial",
+ "embedding_text": "ic-sensor.ams.i2c.uart | IC Sensor | 3 ic sensor parts for I2C, UART/serial using AMS footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | spectral ams sensor channel id lga i2c uart optical sensing engine 7x4 5mm p0 65mm device | AMS | I2C UART/serial",
  "class": "ic.sensor"
 }

@@ -7,31 +7,21 @@
   "Analog",
   "Op-Amp"
  ],
- "description": "EDA component cluster of 2 surface-mount analog op-amp ICs using MSOP-8 (3x3mm, 0.65mm pitch) footprints with a 0.2V facet rating.",
+ "description": "2 ic analog op-amp parts for 0.2V using MSOP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when requiring a surface-mount analog op-amp in an MSOP-8 footprint.",
-  "Choose between AD8275ARMZ and AD8275BRMZ parts from Alternate-KiCad-Library.",
-  "Verify part fit for MSOP-8_3x3mm_P0.65mm layout requirements."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a MSOP land pattern is intended."
  ],
  "avoid_when": [
-  "The PCB design requires a package family other than MSOP.",
-  "Through-hole mounting is required instead of SMD.",
-  "Components outside the IC analog op-amp category are needed."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than MSOP."
  ],
  "keywords": [
-  "ic",
-  "analog",
-  "op-amp",
-  "0.2v",
   "msop",
-  "msop-8",
-  "smd",
-  "ad8275armz",
-  "ad8275brmz",
-  "alternate-kicad-library",
   "amplifier",
   "difference",
-  "3x3mm",
   "adc",
   "driver",
   "2v",
@@ -42,7 +32,9 @@
   "bandwicth",
   "gain",
   "alternate",
-  "kicad"
+  "kicad",
+  "library",
+  "3x3mm"
  ],
  "facts": {
   "package_family": "MSOP",
@@ -65,7 +57,7 @@
   "tier_counts": {
    "A": 2
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -89,6 +81,6 @@
   "Alternate-KiCad-Library/Amplifier_Difference_AKL/AD8275ARMZ",
   "Alternate-KiCad-Library/Amplifier_Difference_AKL/AD8275BRMZ"
  ],
- "embedding_text": "ic-analog-opamp.msop.0-2v | IC Analog Op-Amp | EDA component cluster of 2 surface-mount analog op-amp ICs using MSOP-8 (3x3mm, 0.65mm pitch) footprints with a 0.2V facet rating. | ic analog op-amp 0.2v msop msop-8 smd ad8275armz ad8275brmz alternate-kicad-library amplifier difference 3x3mm adc driver 2v akl bit performance 15mhz bandwicth gain alternate kicad | MSOP | 0.2V",
+ "embedding_text": "ic-analog-opamp.msop.0-2v | IC Analog Op-Amp | 2 ic analog op-amp parts for 0.2V using MSOP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | msop amplifier difference adc driver 2v akl bit performance 15mhz bandwicth gain alternate kicad library 3x3mm | MSOP | 0.2V",
  "class": "ic.analog.opamp"
 }

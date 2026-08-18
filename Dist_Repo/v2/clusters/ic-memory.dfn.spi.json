@@ -6,32 +6,22 @@
   "IC",
   "Memory"
  ],
- "description": "Cluster of 4 surface-mount memory ICs with SPI interface in a DFN package family utilizing the DFN-8-1EP_3x2mm_P0.5mm_EP1.75x1.45mm footprint.",
+ "description": "4 ic memory parts for SPI using DFN footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when requiring an SPI memory IC in a surface-mount DFN package.",
-  "Verify compatibility with footprint DFN-8-1EP_3x2mm_P0.5mm_EP1.75x1.45mm.",
-  "Choose among Tier A parts like 25LCxxx-MC, AT25xxx-MA, BR25xxx-NUX, or CAT250xxx-HU4."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a DFN land pattern is intended."
  ],
  "avoid_when": [
-  "Avoid if the design requires non-DFN packages or non-SMD mounting.",
-  "Do not use if a communication interface other than SPI is required.",
-  "Avoid when the targeted footprint differs from DFN-8-1EP_3x2mm_P0.5mm_EP1.75x1.45mm."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than DFN."
  ],
  "keywords": [
-  "ic",
   "memory",
+  "eeprom",
   "spi",
   "dfn",
-  "smd",
-  "surface mount",
-  "dfn-8",
-  "eeprom",
-  "25lcxxx-mc",
-  "at25xxx-ma",
-  "br25xxx-nux",
-  "cat250xxx-hu4",
-  "kicad-symbols",
-  "dfn-8-1ep_3x2mm_p0.5mm_ep1.75x1.45mm",
   "serial",
   "dfn8",
   "1ep",
@@ -41,7 +31,9 @@
   "ep1",
   "75x1",
   "45mm",
-  "semiconductor"
+  "ic",
+  "semiconductor",
+  "25lcxxx"
  ],
  "facts": {
   "package_family": "DFN",
@@ -64,7 +56,7 @@
   "tier_counts": {
    "A": 4
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -106,6 +98,6 @@
   "kicad-symbols/Memory_EEPROM/BR25xxx-NUX",
   "kicad-symbols/Memory_EEPROM/CAT250xxx-HU4"
  ],
- "embedding_text": "ic-memory.dfn.spi | IC Memory | Cluster of 4 surface-mount memory ICs with SPI interface in a DFN package family utilizing the DFN-8-1EP_3x2mm_P0.5mm_EP1.75x1.45mm footprint. | ic memory spi dfn smd surface mount dfn-8 eeprom 25lcxxx-mc at25xxx-ma br25xxx-nux cat250xxx-hu4 kicad-symbols dfn-8-1ep_3x2mm_p0.5mm_ep1.75x1.45mm serial dfn8 1ep 3x2mm p0 5mm ep1 75x1 45mm semiconductor | DFN | SPI",
+ "embedding_text": "ic-memory.dfn.spi | IC Memory | 4 ic memory parts for SPI using DFN footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | memory eeprom spi dfn serial dfn8 1ep 3x2mm p0 5mm ep1 75x1 45mm ic semiconductor 25lcxxx | DFN | SPI",
  "class": "ic.memory"
 }

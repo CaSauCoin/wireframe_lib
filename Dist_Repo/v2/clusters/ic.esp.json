@@ -5,29 +5,20 @@
  "category_path": [
   "IC"
  ],
- "description": "IC cluster containing 7 parts with ESP package footprints including ESP-12E, ESP-07, ESP-WROOM-02, and ESP-01 for surface-mount and through-hole designs.",
+ "description": "7 ic parts using ESP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when requiring ESP family module footprints such as ESP-12E, ESP-07, or ESP-WROOM-02.",
-  "Prefer higher quality tier parts like tier A entries from JLCPCB-Kicad-Library over tier C entries.",
-  "Verify exact footprint pattern and mount type for the chosen module."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a ESP land pattern is intended."
  ],
  "avoid_when": [
-  "Do not use if board layout requires package footprints outside the ESP package family.",
-  "Avoid when surface-mount or through-hole ESP footprints are not suitable for the design."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than ESP."
  ],
  "keywords": [
   "esp",
   "ic",
-  "esp-12e",
-  "esp-07",
-  "esp-wroom-02",
-  "esp-01",
-  "esp_12",
-  "esp-12f",
-  "smd",
-  "through_hole",
-  "mcu",
-  "jlcpcb",
   "module",
   "wi",
   "fi",
@@ -39,7 +30,9 @@
   "pins",
   "package",
   "com",
-  "esp8266"
+  "esp8266",
+  "pdf",
+  "surface"
  ],
  "facts": {
   "package_family": "ESP",
@@ -69,7 +62,7 @@
    "A": 1,
    "C": 6
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -90,6 +83,6 @@
   "dist-legacy/ESP-12E",
   "dist-legacy/ESP-01"
  ],
- "embedding_text": "ic.esp | IC | IC cluster containing 7 parts with ESP package footprints including ESP-12E, ESP-07, ESP-WROOM-02, and ESP-01 for surface-mount and through-hole designs. | esp ic esp-12e esp-07 esp-wroom-02 esp-01 esp_12 esp-12f smd through_hole mcu jlcpcb module wi fi wroom 12e pad mm pitch pins package com esp8266 | ESP | ",
+ "embedding_text": "ic.esp | IC | 7 ic parts using ESP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | esp ic module wi fi wroom 12e pad mm pitch pins package com esp8266 pdf surface | ESP | ",
  "class": "ic"
 }

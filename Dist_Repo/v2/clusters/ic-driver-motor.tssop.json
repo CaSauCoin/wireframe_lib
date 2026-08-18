@@ -7,41 +7,34 @@
   "Driver",
   "Motor"
  ],
- "description": "Motor driver integrated circuits packaged in surface-mount TSSOP and HTSSOP footprint variants.",
+ "description": "8 ic driver motor parts using TSSOP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when surface-mount motor driver ICs in TSSOP or HTSSOP packages are required.",
-  "Verify specific footprint needs, such as exposed pad dimensions and thermal via layouts.",
-  "Choose based on required quality tier and footprint matching."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a TSSOP land pattern is intended."
  ],
  "avoid_when": [
-  "Through-hole mounting or non-TSSOP package footprints are required.",
-  "Exposed pad or thermal via patterns do not match the target PCB footprint layout."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than TSSOP."
  ],
  "keywords": [
-  "ic",
   "driver",
   "motor",
   "tssop",
-  "htssop",
-  "smd",
-  "tssop-16",
-  "htssop-16-1ep",
-  "exposed pad",
-  "thermal vias",
-  "drv8833pw",
-  "drv8847pwr",
-  "drv8848",
-  "a4954",
-  "drv8800pwp",
   "bridge",
   "4x5mm",
   "dual",
   "p0",
   "65mm",
+  "ic",
+  "htssop",
   "texas",
   "1ep",
   "so",
-  "ep3"
+  "ep3",
+  "thermalvias",
+  "ssop"
  ],
  "facts": {
   "package_family": "TSSOP",
@@ -67,7 +60,7 @@
    "A": 3,
    "B": 5
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -121,6 +114,6 @@
   "kicad-symbols/Driver_Motor/DRV8833PWP",
   "kicad-symbols/Driver_Motor/DRV8847PWP"
  ],
- "embedding_text": "ic-driver-motor.tssop | IC Driver Motor | Motor driver integrated circuits packaged in surface-mount TSSOP and HTSSOP footprint variants. | ic driver motor tssop htssop smd tssop-16 htssop-16-1ep exposed pad thermal vias drv8833pw drv8847pwr drv8848 a4954 drv8800pwp bridge 4x5mm dual p0 65mm texas 1ep so ep3 | TSSOP | ",
+ "embedding_text": "ic-driver-motor.tssop | IC Driver Motor | 8 ic driver motor parts using TSSOP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | driver motor tssop bridge 4x5mm dual p0 65mm ic htssop texas 1ep so ep3 thermalvias ssop | TSSOP | ",
  "class": "ic.driver.motor"
 }

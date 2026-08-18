@@ -5,43 +5,33 @@
  "category_path": [
   "Connector"
  ],
- "description": "A generated cluster of 10 USB connector parts (e.g. USB3_B, USB3_B_Micro, USB-A-RA) sourced from kicad-symbols, celestial-altium-library, matthiasbock-altium-libraries and dist-legacy, with package/footprint left unassigned and no tier-A entries.",
+ "description": "10 connector parts for USB with package chosen later. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Only tier C and tier G parts are present (7 C, 3 G); review each candidate before use since none reached tier A",
-  "Package family is unassigned ('package chosen later') and no footprints are listed, so footprint must be selected and verified separately",
-  "Only 3 of 10 parts are planner-visible; check representative parts (USB3_B, USB3_B_Micro, USB-A-RA) as known entry points",
-  "Compare source library (kicad-symbols vs celestial-altium-library vs matthiasbock-altium-libraries vs dist-legacy) for trust level"
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Select a footprint/package explicitly before placement."
  ],
  "avoid_when": [
-  "An exact footprint/package match is required and cannot be confirmed, since no footprints are recorded on this cluster",
-  "A tier-A, review-passed part is required, since this cluster's parts are only tier C or G and status is 'generated'",
-  "Electrical ratings, pinout, or datasheet details must be verified from the part record, not assumed from the cluster name"
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review."
  ],
  "keywords": [
   "usb",
-  "usb connector",
   "connector",
-  "usb3",
-  "usb3_b",
-  "usb3_b_micro",
-  "usb-a-ra",
-  "usb type b",
-  "usb micro",
-  "usb type a",
-  "right angle",
-  "kicad-symbols",
-  "celestial-altium-library",
-  "matthiasbock-altium-libraries",
-  "dist-legacy",
-  "generated cluster",
-  "package chosen later",
   "type",
   "package",
   "chosen",
   "later",
   "pins",
   "micro",
-  "simple"
+  "simple",
+  "wuerth",
+  "socket",
+  "horizontal",
+  "tht",
+  "ra",
+  "usb3",
+  "universal"
  ],
  "facts": {
   "package_family": "package chosen later",
@@ -64,7 +54,7 @@
    "C": 7,
    "G": 3
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -104,6 +94,6 @@
   "kicad-symbols/Connector/USB3_B_Micro",
   "dist-legacy/USB-A-RA"
  ],
- "embedding_text": "connector.generic.usb | Connector | A generated cluster of 10 USB connector parts (e.g. USB3_B, USB3_B_Micro, USB-A-RA) sourced from kicad-symbols, celestial-altium-library, matthiasbock-altium-libraries and dist-legacy, with package/footprint left unassigned and no tier-A entries. | usb usb connector connector usb3 usb3_b usb3_b_micro usb-a-ra usb type b usb micro usb type a right angle kicad-symbols celestial-altium-library matthiasbock-altium-libraries dist-legacy generated cluster package chosen later type package chosen later pins micro simple | package chosen later | USB",
+ "embedding_text": "connector.generic.usb | Connector | 10 connector parts for USB with package chosen later. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | usb connector type package chosen later pins micro simple wuerth socket horizontal tht ra usb3 universal | package chosen later | USB",
  "class": "connector"
 }

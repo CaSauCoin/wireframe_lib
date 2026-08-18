@@ -5,30 +5,21 @@
  "category_path": [
   "IC"
  ],
- "description": "IC cluster of 5 parts in the LCD package family featuring through-hole and unknown mount options.",
+ "description": "5 ic parts using LCD footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when matching footprints such as LCD_16x2, LCD_16x2_I2C, LCD-016N002L, or LCD_TFT_2.0in_Waveshare_Outline.",
-  "Check mount compatibility for through_hole or unknown mount types.",
-  "Note that all 5 parts are categorized under tier C quality."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a LCD land pattern is intended."
  ],
  "avoid_when": [
-  "The design requires planner-visible parts as the count is 0.",
-  "A mounting style other than through_hole or unknown is needed.",
-  "Footprints outside the LCD package family are required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than LCD."
  ],
  "keywords": [
-  "ic",
   "lcd",
-  "through_hole",
-  "lcd_16x2",
-  "lcd_16x2_i2c",
-  "lcd-016n002l",
-  "lcd_tft_2.0in_waveshare_outline",
-  "dist-legacy",
-  "sparkfun-kicad-libraries",
-  "tier c",
-  "ic — lcd",
   "16x2",
+  "ic",
   "016n002l",
   "i2c",
   "tft",
@@ -40,7 +31,8 @@
   "sparkfun",
   "capacitive",
   "character",
-  "0in"
+  "0in",
+  "touch"
  ],
  "facts": {
   "package_family": "LCD",
@@ -67,7 +59,7 @@
   "tier_counts": {
    "C": 5
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
@@ -77,6 +69,6 @@
   "dist-legacy/LCD_16x2",
   "SparkFun-KiCad-Libraries/SparkFun-Display/LCD_TFT_2.0in-CapTouch"
  ],
- "embedding_text": "ic.lcd | IC | IC cluster of 5 parts in the LCD package family featuring through-hole and unknown mount options. | ic lcd through_hole lcd_16x2 lcd_16x2_i2c lcd-016n002l lcd_tft_2.0in_waveshare_outline dist-legacy sparkfun-kicad-libraries tier c ic — lcd 16x2 016n002l i2c tft pad mm pitch pins duplicate sparkfun capacitive character 0in | LCD | ",
+ "embedding_text": "ic.lcd | IC | 5 ic parts using LCD footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | lcd 16x2 ic 016n002l i2c tft pad mm pitch pins duplicate sparkfun capacitive character 0in touch | LCD | ",
  "class": "ic"
 }

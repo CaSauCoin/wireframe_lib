@@ -5,33 +5,21 @@
  "category_path": [
   "IC"
  ],
- "description": "Integrated circuit cluster containing 43 parts in SSOP packages across 10-pin to 28-pin footprints for surface-mount designs.",
+ "description": "43 ic parts using SSOP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when needing an IC in a shrink small outline package (SSOP) surface-mount footprint.",
-  "Match required pin count, body width, and lead pitch such as 0.635mm, 0.65mm, or 1.0mm.",
-  "Prefer tier A entries with verified symbol sources and explicit footprint parameters."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SSOP land pattern is intended."
  ],
  "avoid_when": [
-  "Avoid when layout requires packages other than SSOP or requires through-hole assembly.",
-  "Avoid if the required pin count or lead pitch does not match available SSOP footprints.",
-  "Avoid when specific electrical requirements or pinouts are not specified by the library part."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SSOP."
  ],
  "keywords": [
-  "ic",
   "ssop",
-  "surface mount",
-  "smd",
-  "ssop-10",
-  "ssop-14",
-  "ssop-16",
-  "ssop-20",
-  "ssop-24",
-  "ssop-28",
-  "0.65mm pitch",
-  "0.635mm pitch",
-  "1.0mm pitch",
-  "shrink small outline package",
   "p0",
+  "ic",
   "65mm",
   "2mm",
   "package",
@@ -40,7 +28,11 @@
   "pitch",
   "mm",
   "635mm",
-  "so"
+  "so",
+  "9x4",
+  "pad",
+  "pins",
+  "8mm"
  ],
  "facts": {
   "package_family": "SSOP",
@@ -79,7 +71,7 @@
    "B": 4,
    "C": 22
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -168,6 +160,6 @@
   "dist-legacy/SSOP-40_8.8x17.5mm_P0.8mm",
   "dist-legacy/SSOP-8_5.3x3mm_P0.65mm"
  ],
- "embedding_text": "ic.ssop | IC | Integrated circuit cluster containing 43 parts in SSOP packages across 10-pin to 28-pin footprints for surface-mount designs. | ic ssop surface mount smd ssop-10 ssop-14 ssop-16 ssop-20 ssop-24 ssop-28 0.65mm pitch 0.635mm pitch 1.0mm pitch shrink small outline package p0 65mm 2mm package audio 9mm pitch mm 635mm so | SSOP | ",
+ "embedding_text": "ic.ssop | IC | 43 ic parts using SSOP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | ssop p0 ic 65mm 2mm package audio 9mm pitch mm 635mm so 9x4 pad pins 8mm | SSOP | ",
  "class": "ic"
 }

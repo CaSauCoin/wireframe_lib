@@ -5,34 +5,23 @@
  "category_path": [
   "IC"
  ],
- "description": "Cluster of 47 surface-mount 5V IC parts using SOIC footprints such as SOIC-8, SOIC-16W, and SOIC-8-1EP across 46 tier A and 1 tier B entries.",
+ "description": "47 ic parts for 5V using SOIC footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select based on exact SOIC footprint variant, such as standard SOIC-8, SOIC-16W, or exposed pad SOIC-8-1EP.",
-  "Choose tier A parts when verified library entries are preferred.",
-  "Match required IC function, such as reference voltage, against specific part numbers like ADR445xRZ or LT1461."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SOIC land pattern is intended."
  ],
  "avoid_when": [
-  "The PCB design requires through-hole or non-SMD mounting.",
-  "The layout requires package families other than SOIC.",
-  "The circuit operates at operating voltages other than 5V."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SOIC."
  ],
  "keywords": [
-  "ic",
   "soic",
   "5v",
-  "smd",
-  "surface mount",
-  "soic-8",
-  "soic-16w",
-  "soic-8-1ep",
-  "reference voltage",
-  "adr445xrz",
-  "lt1461",
-  "1.27mm",
-  "kicad",
-  "exposed pad",
   "voltage",
   "so",
+  "ic",
   "supply",
   "p1",
   "27mm",
@@ -40,7 +29,10 @@
   "9mm",
   "reference",
   "9x4",
-  "filter"
+  "filter",
+  "to",
+  "clock",
+  "100ma"
  ],
  "facts": {
   "package_family": "SOIC",
@@ -69,7 +61,7 @@
    "A": 46,
    "B": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -162,6 +154,6 @@
   "Alternate-KiCad-Library/Voltage_Regulator_AKL/μA78L05CD",
   "digikey-kicad-library/dk_PMIC-Voltage-Regulators-Linear/L4931ABD50-TR"
  ],
- "embedding_text": "ic.soic.5v | IC | Cluster of 47 surface-mount 5V IC parts using SOIC footprints such as SOIC-8, SOIC-16W, and SOIC-8-1EP across 46 tier A and 1 tier B entries. | ic soic 5v smd surface mount soic-8 soic-16w soic-8-1ep reference voltage adr445xrz lt1461 1.27mm kicad exposed pad voltage so supply p1 27mm regulator 9mm reference 9x4 filter | SOIC | 5V",
+ "embedding_text": "ic.soic.5v | IC | 47 ic parts for 5V using SOIC footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | soic 5v voltage so ic supply p1 27mm regulator 9mm reference 9x4 filter to clock 100ma | SOIC | 5V",
  "class": "ic"
 }

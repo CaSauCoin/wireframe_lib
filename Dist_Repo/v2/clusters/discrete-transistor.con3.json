@@ -6,28 +6,21 @@
   "Discrete",
   "Transistor"
  ],
- "description": "Cluster of 3 discrete transistor parts in the CON3 package family using CON3 and CON3_BIG footprints.",
+ "description": "3 discrete transistor parts using CON3 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when layout requires a discrete transistor in a CON3 or CON3_BIG footprint.",
-  "Check part quality tier, with one tier B part and two tier C parts available.",
-  "Verify part source from dist-legacy library."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a CON3 land pattern is intended."
  ],
  "avoid_when": [
-  "Avoid when the PCB layout requires a package family other than CON3.",
-  "Avoid if footprints other than CON3 or CON3_BIG are needed.",
-  "Avoid if higher quality tier parts than tier B are strictly required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than CON3."
  ],
  "keywords": [
-  "discrete",
-  "transistor",
   "con3",
-  "con3_big",
-  "discrete transistor",
-  "con3 footprint",
-  "con3_big footprint",
-  "dist-legacy",
-  "discrete.transistor",
-  "package family con3",
+  "transistor",
+  "discrete",
   "big",
   "mm",
   "pitch",
@@ -63,7 +56,7 @@
    "B": 1,
    "C": 2
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -80,6 +73,6 @@
   "dist-legacy/CON3",
   "dist-legacy/CON3_BIG"
  ],
- "embedding_text": "discrete-transistor.con3 | Discrete Transistor | Cluster of 3 discrete transistor parts in the CON3 package family using CON3 and CON3_BIG footprints. | discrete transistor con3 con3_big discrete transistor con3 footprint con3_big footprint dist-legacy discrete.transistor package family con3 big mm pitch duplicate pin bipolar pad pins three junction with base collector | CON3 | ",
+ "embedding_text": "discrete-transistor.con3 | Discrete Transistor | 3 discrete transistor parts using CON3 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | con3 transistor discrete big mm pitch duplicate pin bipolar pad pins three junction with base collector | CON3 | ",
  "class": "discrete.transistor"
 }

@@ -6,30 +6,19 @@
   "Discrete",
   "Diode"
  ],
- "description": "Cluster of 6 surface-mount 4.7V discrete diodes using SOT-23 footprints from Alternate-KiCad-Library.",
+ "description": "6 discrete diode parts for 4.7V using SOT-23 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select for surface-mount designs requiring a 4.7V discrete diode in a SOT-23 footprint.",
-  "Choose when sourcing tier A components from Alternate-KiCad-Library.",
-  "Confirm specific part ratings and pinout configurations prior to PCB layout."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SOT-23 land pattern is intended."
  ],
  "avoid_when": [
-  "Avoid when a package family or footprint other than SOT-23 is required.",
-  "Do not use if target operating voltage differs from 4.7V.",
-  "Avoid for through-hole or non-SMD mounting requirements."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SOT-23."
  ],
  "keywords": [
-  "discrete diode",
-  "4.7v",
-  "sot-23",
-  "smd",
-  "discrete",
   "diode",
-  "bzx84-c4v7",
-  "az23c4v7",
-  "dz23-c4v7",
-  "bzb84-b4v7",
-  "2bzx84-c4v7",
-  "alternate-kicad-library",
   "sot",
   "zener",
   "7v",
@@ -38,10 +27,13 @@
   "alternate",
   "kicad",
   "library",
+  "discrete",
   "300mw",
   "common",
   "c4v7",
-  "anode"
+  "anode",
+  "commonanode",
+  "2bzx84"
  ],
  "facts": {
   "package_family": "SOT-23",
@@ -64,7 +56,7 @@
   "tier_counts": {
    "A": 6
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -116,6 +108,6 @@
   "Alternate-KiCad-Library/Diode_Zener_AKL/DZ23-C4V7",
   "Alternate-KiCad-Library/Diode_Zener_AKL/MMBZ5230"
  ],
- "embedding_text": "discrete-diode.sot-23.4-7v | Discrete Diode | Cluster of 6 surface-mount 4.7V discrete diodes using SOT-23 footprints from Alternate-KiCad-Library. | discrete diode 4.7v sot-23 smd discrete diode bzx84-c4v7 az23c4v7 dz23-c4v7 bzb84-b4v7 2bzx84-c4v7 alternate-kicad-library sot zener 7v dual akl alternate kicad library 300mw common c4v7 anode | SOT-23 | 4.7V",
+ "embedding_text": "discrete-diode.sot-23.4-7v | Discrete Diode | 6 discrete diode parts for 4.7V using SOT-23 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | diode sot zener 7v dual akl alternate kicad library discrete 300mw common c4v7 anode commonanode 2bzx84 | SOT-23 | 4.7V",
  "class": "discrete.diode"
 }

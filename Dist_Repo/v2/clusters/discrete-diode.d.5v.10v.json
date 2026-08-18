@@ -6,44 +6,34 @@
   "Discrete",
   "Diode"
  ],
- "description": "TVS diode and Zener diode parts rated at 5V/10V in D-family SMD packages (SOD-323, SOD-523, SOD-123, DFN1006-2L, DFN1610-2L), sourced from JLCPCB-Kicad-Library.",
+ "description": "8 discrete diode parts for 5V, 10V using D footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Match footprint exactly (SOD-123/-323/-523 vs DFN1006/1610-2L) to the PCB land pattern.",
-  "Prefer tier A entries (score 100) over tier B (score 92) when footprint and voltage both fit.",
-  "Confirm whether a TVS-Bi (bidirectional) or Zener function is needed for the application.",
-  "Verify the 5V or 10V facet matches the required clamping or reference voltage."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a D land pattern is intended."
  ],
  "avoid_when": [
-  "The application requires a voltage rating outside 5V/10V.",
-  "A non-D package family is required by the board layout.",
-  "The design needs a unidirectional TVS but only bidirectional (TVS-Bi) parts are available in this cluster.",
-  "The symbol-footprint pairing is unverified or flagged for review."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than D."
  ],
  "keywords": [
-  "diode",
-  "discrete diode",
-  "tvs diode",
-  "tvs-bi",
-  "zener diode",
+  "esd",
   "5v",
   "10v",
-  "sod-123",
-  "sod-323",
-  "sod-523",
-  "dfn1006-2l",
-  "dfn1610-2l",
-  "smd diode",
-  "jlcpcb",
-  "d package",
-  "bidirectional tvs",
-  "mmsz5240b",
-  "esd",
   "2l",
   "tvs",
   "iec",
   "20us",
   "dfn1006",
-  "diodes"
+  "diodes",
+  "diode",
+  "jlcpcb",
+  "sod",
+  "rohs",
+  "discrete",
+  "and",
+  "surge"
  ],
  "facts": {
   "package_family": "D",
@@ -72,7 +62,7 @@
    "A": 3,
    "B": 5
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -126,6 +116,6 @@
   "JLCPCB-Kicad-Library/JLCPCB-Diodes/TVS-Bi,H5VU10BB",
   "JLCPCB-Kicad-Library/JLCPCB-Diodes/TVS-Uni,H10VH16U"
  ],
- "embedding_text": "discrete-diode.d.5v.10v | Discrete Diode | TVS diode and Zener diode parts rated at 5V/10V in D-family SMD packages (SOD-323, SOD-523, SOD-123, DFN1006-2L, DFN1610-2L), sourced from JLCPCB-Kicad-Library. | diode discrete diode tvs diode tvs-bi zener diode 5v 10v sod-123 sod-323 sod-523 dfn1006-2l dfn1610-2l smd diode jlcpcb d package bidirectional tvs mmsz5240b esd 2l tvs iec 20us dfn1006 diodes | D | 5V 10V",
+ "embedding_text": "discrete-diode.d.5v.10v | Discrete Diode | 8 discrete diode parts for 5V, 10V using D footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | esd 5v 10v 2l tvs iec 20us dfn1006 diodes diode jlcpcb sod rohs discrete and surge | D | 5V 10V",
  "class": "discrete.diode"
 }

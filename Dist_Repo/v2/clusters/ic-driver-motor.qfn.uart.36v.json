@@ -7,42 +7,34 @@
   "Driver",
   "Motor"
  ],
- "description": "Motor driver IC cluster for 36V applications featuring UART/serial interface in SMD QFN and TQFN packages.",
+ "description": "3 ic driver motor parts for UART/serial, 36V using QFN footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Require 36V operating voltage and UART/serial control interface.",
-  "Select between QFN-28 and TQFN-32 package variants.",
-  "Verify surface-mount footprint matching 5x5mm body size and 0.5mm pitch."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a QFN land pattern is intended."
  ],
  "avoid_when": [
-  "The application requires mounting styles other than surface-mount QFN.",
-  "The design requires operating voltages other than 36V.",
-  "Control interfaces other than UART or serial are required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than QFN."
  ],
  "keywords": [
-  "ic",
   "driver",
-  "motor driver",
-  "uart",
-  "serial",
-  "36v",
-  "qfn",
-  "tqfn",
-  "smd",
-  "qfn-28",
-  "tqfn-32",
-  "tmc2208-la",
-  "tmc2224-la",
-  "tmc2202-wa",
   "motor",
   "standalone",
   "stepper",
+  "36v",
+  "uart",
+  "qfn",
+  "tqfn",
   "for",
   "two",
   "phase",
   "bipolar",
   "2a",
   "internal",
-  "fets"
+  "fets",
+  "1ep"
  ],
  "facts": {
   "package_family": "QFN",
@@ -67,7 +59,7 @@
   "tier_counts": {
    "B": 3
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -100,6 +92,6 @@
   "kicad-symbols/Driver_Motor/TMC2224-LA",
   "kicad-symbols/Driver_Motor/TMC2202-WA"
  ],
- "embedding_text": "ic-driver-motor.qfn.uart.36v | IC Driver Motor | Motor driver IC cluster for 36V applications featuring UART/serial interface in SMD QFN and TQFN packages. | ic driver motor driver uart serial 36v qfn tqfn smd qfn-28 tqfn-32 tmc2208-la tmc2224-la tmc2202-wa motor standalone stepper for two phase bipolar 2a internal fets | QFN | UART/serial 36V",
+ "embedding_text": "ic-driver-motor.qfn.uart.36v | IC Driver Motor | 3 ic driver motor parts for UART/serial, 36V using QFN footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | driver motor standalone stepper 36v uart qfn tqfn for two phase bipolar 2a internal fets 1ep | QFN | UART/serial 36V",
  "class": "ic.driver.motor"
 }

@@ -6,34 +6,20 @@
   "Discrete",
   "Transistor"
  ],
- "description": "Discrete transistor cluster containing 14 parts across SMD and unknown mounts using Q package family footprints including Q_SOT-89, Q-8, Q-14, Q-16, Q-18, Q-20, and Q-24W.",
+ "description": "14 discrete transistor parts using Q footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Match the required footprint from available variants like Q_SOT-89, Q-8, Q-14, or Q-24W.",
-  "Prefer tier B parts from JLCPCB-Kicad-Library over tier C legacy entries.",
-  "Check mounting requirements between surface mount (smd) and unknown mount options."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a Q land pattern is intended."
  ],
  "avoid_when": [
-  "The layout requires package families or footprints other than Q family footprints.",
-  "Tier A quality classification is strictly required.",
-  "Through-hole mounting is required for the application."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than Q."
  ],
  "keywords": [
   "discrete",
   "transistor",
-  "discrete transistor",
-  "q package",
-  "q footprint",
-  "q_sot-89",
-  "q-8",
-  "q-14",
-  "q-16",
-  "q-18",
-  "q-20",
-  "q-24w",
-  "smd",
-  "jlcpcb",
-  "2sc4672",
-  "2sa1013",
   "pad",
   "mm",
   "pitch",
@@ -41,7 +27,13 @@
   "14a",
   "24w",
   "sot",
-  "transistors"
+  "jlcpcb",
+  "transistors",
+  "nan",
+  "l4",
+  "w2",
+  "p1",
+  "ls4"
  ],
  "facts": {
   "package_family": "Q",
@@ -76,7 +68,7 @@
    "B": 2,
    "C": 12
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -112,6 +104,6 @@
   "dist-legacy/Q-8_B",
   "dist-legacy/Q-8_D"
  ],
- "embedding_text": "discrete-transistor.q | Discrete Transistor | Discrete transistor cluster containing 14 parts across SMD and unknown mounts using Q package family footprints including Q_SOT-89, Q-8, Q-14, Q-16, Q-18, Q-20, and Q-24W. | discrete transistor discrete transistor q package q footprint q_sot-89 q-8 q-14 q-16 q-18 q-20 q-24w smd jlcpcb 2sc4672 2sa1013 pad mm pitch pins 14a 24w sot transistors | Q | ",
+ "embedding_text": "discrete-transistor.q | Discrete Transistor | 14 discrete transistor parts using Q footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | discrete transistor pad mm pitch pins 14a 24w sot jlcpcb transistors nan l4 w2 p1 ls4 | Q | ",
  "class": "discrete.transistor"
 }

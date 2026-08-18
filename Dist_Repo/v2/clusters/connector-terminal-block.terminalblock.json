@@ -6,43 +6,34 @@
   "Connector",
   "Terminal Block"
  ],
- "description": "Terminal block connector footprints (Phoenix MKDS, MPT, PT, PTSM series) for board-to-wire wiring using screw/spring-cage clamp connections at 2.54–5.08mm pin pitches.",
+ "description": "625 connector terminal block parts using TerminalBlock footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Match the exact footprint pitch and pin count (2.54mm, 3.5mm, 5.0mm, or 5.08mm; 1x02 or 1x03) to the intended PCB land pattern.",
-  "Match mount style to the board process: through_hole for wave/hand soldering, smd for reflow-mounted variants like PTSM.",
-  "Prefer tier B entries; tier C entries have lower confidence and should be checked against the actual footprint before use."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a TerminalBlock land pattern is intended."
  ],
  "avoid_when": [
-  "The required wire current, voltage, or wire gauge rating is not stated by the selected part.",
-  "The desired pitch or pin count has no matching footprint in this list.",
-  "A different connector family (pluggable, header, or wire-to-board style) is needed instead of a fixed screw/clamp terminal block.",
-  "The symbol-footprint pairing is unverified or flagged for review."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than TerminalBlock."
  ],
  "keywords": [
-  "terminal block",
   "terminalblock",
-  "phoenix contact",
-  "mkds",
-  "mpt",
-  "pt series",
-  "ptsm",
-  "screw terminal",
-  "wire connector",
-  "horizontal terminal block",
-  "vertical terminal block",
-  "pitch 2.54mm",
-  "pitch 3.5mm",
-  "pitch 5.0mm",
-  "pitch 5.08mm",
-  "1x02",
-  "1x03",
-  "through hole connector",
-  "smd terminal block",
   "terminal",
   "block",
   "pitch",
   "pad",
-  "horizontal"
+  "horizontal",
+  "00mm",
+  "45degree",
+  "connector",
+  "p5",
+  "5mm",
+  "pins",
+  "size",
+  "wago",
+  "drill",
+  "diameter"
  ],
  "facts": {
   "package_family": "TerminalBlock",
@@ -76,7 +67,7 @@
    "B": 14,
    "C": 611
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -747,6 +738,6 @@
   "dist-legacy/TerminalBlock_Xinya_XY308-2.54-8P_1x08_P2.54mm_Horizontal",
   "dist-legacy/TerminalBlock_Xinya_XY308-2.54-9P_1x09_P2.54mm_Horizontal"
  ],
- "embedding_text": "connector-terminal-block.terminalblock | Connector Terminal Block | Terminal block connector footprints (Phoenix MKDS, MPT, PT, PTSM series) for board-to-wire wiring using screw/spring-cage clamp connections at 2.54–5.08mm pin pitches. | terminal block terminalblock phoenix contact mkds mpt pt series ptsm screw terminal wire connector horizontal terminal block vertical terminal block pitch 2.54mm pitch 3.5mm pitch 5.0mm pitch 5.08mm 1x02 1x03 through hole connector smd terminal block terminal block pitch pad horizontal | TerminalBlock | ",
+ "embedding_text": "connector-terminal-block.terminalblock | Connector Terminal Block | 625 connector terminal block parts using TerminalBlock footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | terminalblock terminal block pitch pad horizontal 00mm 45degree connector p5 5mm pins size wago drill diameter | TerminalBlock | ",
  "class": "connector.terminal_block"
 }

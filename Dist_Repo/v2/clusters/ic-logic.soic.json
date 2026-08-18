@@ -6,41 +6,34 @@
   "IC",
   "Logic"
  ],
- "description": "Logic IC components available in surface-mount SOIC package footprints ranging from 8 to 24 pins, including 74xx series devices.",
+ "description": "24 ic logic parts using SOIC footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when surface-mount SOIC package footprints such as SOIC-8, SOIC-14, SOIC-16, or SOIC-24W are required.",
-  "Choose based on required logic device numbers such as 74HC164, 74HC192, 74HC193, 74HC4024, or 74154.",
-  "Filter by preferred quality tier or library source such as KiCad symbols."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SOIC land pattern is intended."
  ],
  "avoid_when": [
-  "The layout requires non-SOIC packages or through-hole mounting.",
-  "Components outside the IC logic category are required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SOIC."
  ],
  "keywords": [
   "soic",
   "logic",
   "ic",
-  "smd",
-  "surface mount",
-  "74xx",
-  "74hc164",
-  "74hc192",
-  "74hc193",
-  "74hc4024",
-  "74154",
-  "soic-8",
-  "soic-14",
-  "soic-16",
-  "soic-24w",
   "p1",
   "27mm",
   "so",
+  "74xx",
   "bit",
   "counter",
   "pin",
   "ttl",
   "hex",
-  "9mm"
+  "9mm",
+  "9x8",
+  "7mm",
+  "9x9"
  ],
  "facts": {
   "package_family": "SOIC",
@@ -70,7 +63,7 @@
    "A": 21,
    "B": 3
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -140,6 +133,6 @@
   "matthiasbock-altium-libraries/74HC4050D/74HC4050D",
   "matthiasbock-altium-libraries/74HCT238D/74HCT238D"
  ],
- "embedding_text": "ic-logic.soic | IC Logic | Logic IC components available in surface-mount SOIC package footprints ranging from 8 to 24 pins, including 74xx series devices. | soic logic ic smd surface mount 74xx 74hc164 74hc192 74hc193 74hc4024 74154 soic-8 soic-14 soic-16 soic-24w p1 27mm so bit counter pin ttl hex 9mm | SOIC | ",
+ "embedding_text": "ic-logic.soic | IC Logic | 24 ic logic parts using SOIC footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | soic logic ic p1 27mm so 74xx bit counter pin ttl hex 9mm 9x8 7mm 9x9 | SOIC | ",
  "class": "ic.logic"
 }

@@ -5,27 +5,20 @@
  "category_path": [
   "IC"
  ],
- "description": "This cluster contains 2 IC class parts assigned to quality tier C that use the CABLE package family and footprint.",
+ "description": "2 ic parts using CABLE footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Verify part details as all parts in this cluster are in quality tier C.",
-  "Ensure the design requires an IC using the CABLE package family and footprint.",
-  "Confirm application requirements given that the mount type is listed as unknown."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a CABLE land pattern is intended."
  ],
  "avoid_when": [
-  "The board layout requires a package family or footprint other than CABLE.",
-  "Quality tier C parts do not meet project requirements.",
-  "A known mounting style is required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than CABLE."
  ],
  "keywords": [
-  "ic",
   "cable",
-  "ic cable",
-  "cable footprint",
-  "cable package",
-  "package family cable",
-  "tier c",
-  "dist-legacy",
-  "unknown mount",
+  "ic",
   "pad",
   "mm",
   "pitch",
@@ -50,13 +43,13 @@
   "tier_counts": {
    "C": 2
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
   "dist-legacy/CABLE 10",
   "dist-legacy/CABLE 20"
  ],
- "embedding_text": "ic.cable | IC | This cluster contains 2 IC class parts assigned to quality tier C that use the CABLE package family and footprint. | ic cable ic cable cable footprint cable package package family cable tier c dist-legacy unknown mount pad mm pitch pins | CABLE | ",
+ "embedding_text": "ic.cable | IC | 2 ic parts using CABLE footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | cable ic pad mm pitch pins | CABLE | ",
  "class": "ic"
 }

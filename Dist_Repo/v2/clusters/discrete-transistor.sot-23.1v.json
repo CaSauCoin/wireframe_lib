@@ -6,30 +6,23 @@
   "Discrete",
   "Transistor"
  ],
- "description": "Discrete transistor cluster containing SMD 1V components in SOT-23 packages with Q_SOT-23 footprints.",
+ "description": "1 discrete transistor parts for 1V using SOT-23 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Use when designing SMD circuits requiring SOT-23 package family and Q_SOT-23 footprints.",
-  "Verify part specifications against the 1V discrete transistor facet.",
-  "Check source data from JLCPCB-Kicad-Library and tier B quality rating."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SOT-23 land pattern is intended."
  ],
  "avoid_when": [
-  "The board design requires through-hole components rather than SMD.",
-  "A package footprint other than SOT-23 or Q_SOT-23 is needed.",
-  "Voltage requirements differ from the specified 1V facet."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SOT-23."
  ],
  "keywords": [
-  "discrete transistor",
-  "sot-23",
-  "1v",
-  "smd",
-  "q_sot-23",
-  "mmbt2222a",
-  "npn",
-  "jlcpcb",
-  "kicad library",
-  "discrete",
-  "transistor",
   "sot",
+  "npn",
+  "1v",
+  "mmbt2222a",
+  "jlcpcb",
   "transistors",
   "100na",
   "300mhz",
@@ -63,7 +56,7 @@
   "tier_counts": {
    "B": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -78,6 +71,6 @@
  "part_ids": [
   "JLCPCB-Kicad-Library/JLCPCB-Transistors/NPN,MMBT2222A"
  ],
- "embedding_text": "discrete-transistor.sot-23.1v | Discrete Transistor | Discrete transistor cluster containing SMD 1V components in SOT-23 packages with Q_SOT-23 footprints. | discrete transistor sot-23 1v smd q_sot-23 mmbt2222a npn jlcpcb kicad library discrete transistor sot transistors 100na 300mhz 300mw 40v 600ma 6v bipolar bjt rohs to | SOT-23 | 1V",
+ "embedding_text": "discrete-transistor.sot-23.1v | Discrete Transistor | 1 discrete transistor parts for 1V using SOT-23 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | sot npn 1v mmbt2222a jlcpcb transistors 100na 300mhz 300mw 40v 600ma 6v bipolar bjt rohs to | SOT-23 | 1V",
  "class": "discrete.transistor"
 }

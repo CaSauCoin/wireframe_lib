@@ -7,34 +7,25 @@
   "Analog",
   "Amplifier"
  ],
- "description": "This cluster contains 2 surface-mount 20V analog amplifier IC parts in the VSSOP package family utilizing the VSSOP-8_3x3mm_P0.65mm footprint.",
+ "description": "2 ic analog amplifier parts for 20V using VSSOP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when a 20V rated surface-mount analog amplifier in a VSSOP package is required.",
-  "Confirm compatibility with the VSSOP-8_3x3mm_P0.65mm footprint.",
-  "Choose between available tier A entries INA241A2xDGK and INA241B2xDGK."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a VSSOP land pattern is intended."
  ],
  "avoid_when": [
-  "The board layout requires a footprint other than VSSOP-8_3x3mm_P0.65mm.",
-  "Through-hole mounting is required instead of surface-mount.",
-  "The design requires an IC specification outside the 20V analog amplifier category."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than VSSOP."
  ],
  "keywords": [
-  "ic",
-  "analog",
-  "amplifier",
-  "20v",
   "vssop",
-  "smd",
-  "vssop-8_3x3mm_p0.65mm",
-  "ina241a2xdgk",
-  "ina241b2xdgk",
-  "kicad-symbols",
-  "analog amplifier",
-  "vssop-8",
+  "amplifier",
   "current",
   "high",
   "low",
   "bidirectional",
+  "20v",
   "and",
   "side",
   "zero",
@@ -42,7 +33,8 @@
   "sense",
   "with",
   "enhanced",
-  "pwm"
+  "pwm",
+  "rejection"
  ],
  "facts": {
   "package_family": "VSSOP",
@@ -65,7 +57,7 @@
   "tier_counts": {
    "A": 2
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -89,6 +81,6 @@
   "kicad-symbols/Amplifier_Current/INA241A2xDGK",
   "kicad-symbols/Amplifier_Current/INA241B2xDGK"
  ],
- "embedding_text": "ic-analog-amplifier.vssop.20v | IC Analog Amplifier | This cluster contains 2 surface-mount 20V analog amplifier IC parts in the VSSOP package family utilizing the VSSOP-8_3x3mm_P0.65mm footprint. | ic analog amplifier 20v vssop smd vssop-8_3x3mm_p0.65mm ina241a2xdgk ina241b2xdgk kicad-symbols analog amplifier vssop-8 current high low bidirectional and side zero drift sense with enhanced pwm | VSSOP | 20V",
+ "embedding_text": "ic-analog-amplifier.vssop.20v | IC Analog Amplifier | 2 ic analog amplifier parts for 20V using VSSOP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | vssop amplifier current high low bidirectional 20v and side zero drift sense with enhanced pwm rejection | VSSOP | 20V",
  "class": "ic.analog.amplifier"
 }

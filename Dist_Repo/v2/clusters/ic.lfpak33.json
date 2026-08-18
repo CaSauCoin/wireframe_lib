@@ -5,38 +5,33 @@
  "category_path": [
   "IC"
  ],
- "description": "Integrated circuit cluster containing 4 surface-mount parts in the LFPAK33 package family using the LFPAK33_4 footprint.",
+ "description": "4 ic parts using LFPAK33 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when surface-mount IC parts in the LFPAK33 package family with LFPAK33_4 footprints are required.",
-  "Choose entries based on quality tiers B and C from chilaboard-altium-library.",
-  "Review representative parts such as FDMC8321, IRFH3707, or NVTFS4823."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a LFPAK33 land pattern is intended."
  ],
  "avoid_when": [
-  "The design requires through-hole mounting instead of SMD.",
-  "The required footprint is not LFPAK33_4 or package family is not LFPAK33.",
-  "Components from sources other than chilaboard-altium-library are required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than LFPAK33."
  ],
  "keywords": [
-  "ic",
-  "lfpak33",
-  "lfpak33_4",
-  "smd",
   "lfpak",
-  "chilaboard-altium-library",
-  "fdmc8321",
-  "irfh3707",
-  "nvtfs4823",
-  "mosn",
-  "surface mount",
-  "integrated circuit",
+  "lfpak33",
   "mosfet",
+  "mosn",
   "channel",
+  "ic",
   "power",
+  "nvtfs4823",
   "transistor",
   "in",
   "surface",
   "mount",
   "package",
+  "irfh3707",
+  "fdmc8321",
   "pad"
  ],
  "facts": {
@@ -59,7 +54,7 @@
    "B": 3,
    "C": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -93,6 +88,6 @@
   "chilaboard-altium-library/MOSN_NVTFS4823_LFPAK/MOSN_NVTFS4823_LFPAK",
   "chilaboard-altium-library/LFPAK33_4/LFPAK33_4"
  ],
- "embedding_text": "ic.lfpak33 | IC | Integrated circuit cluster containing 4 surface-mount parts in the LFPAK33 package family using the LFPAK33_4 footprint. | ic lfpak33 lfpak33_4 smd lfpak chilaboard-altium-library fdmc8321 irfh3707 nvtfs4823 mosn surface mount integrated circuit mosfet channel power transistor in surface mount package pad | LFPAK33 | ",
+ "embedding_text": "ic.lfpak33 | IC | 4 ic parts using LFPAK33 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | lfpak lfpak33 mosfet mosn channel ic power nvtfs4823 transistor in surface mount package irfh3707 fdmc8321 pad | LFPAK33 | ",
  "class": "ic"
 }

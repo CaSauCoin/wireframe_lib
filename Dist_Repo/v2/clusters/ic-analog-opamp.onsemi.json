@@ -7,29 +7,18 @@
   "Analog",
   "Op-Amp"
  ],
- "description": "Surface-mount analog operational amplifier IC cluster featuring OnSemi UDFN-8 1.2x1.8mm P0.4mm footprint parts.",
+ "description": "1 ic analog op-amp parts using OnSemi footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when an SMD IC analog op-amp in an OnSemi UDFN-8 1.2x1.8mm P0.4mm footprint is required.",
-  "Verify footprint dimensions and pinout mapping for layout compatibility.",
-  "Check part specification and tier B quality rating for the LMV358MUTAG entry."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a OnSemi land pattern is intended."
  ],
  "avoid_when": [
-  "Avoid if the design requires package footprints other than OnSemi UDFN-8 1.2x1.8mm P0.4mm.",
-  "Avoid when non-SMD or through-hole mounting is required.",
-  "Avoid if required electrical parameters are not stated in the part source data."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than OnSemi."
  ],
  "keywords": [
-  "ic",
-  "analog",
-  "op-amp",
-  "operational amplifier",
-  "onsemi",
-  "smd",
-  "udfn-8",
-  "1.2x1.8mm",
-  "p0.4mm",
-  "lmv358mutag",
-  "alternate-kicad-library",
   "rail",
   "amplifier",
   "operational",
@@ -37,12 +26,15 @@
   "dfn",
   "cmos",
   "to",
+  "onsemi",
   "udfn",
+  "lmv358mutag",
   "akl",
   "9mv",
   "offset",
   "1mhz",
-  "gbw"
+  "gbw",
+  "alternate"
  ],
  "facts": {
   "package_family": "OnSemi",
@@ -63,7 +55,7 @@
   "tier_counts": {
    "B": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -78,6 +70,6 @@
  "part_ids": [
   "Alternate-KiCad-Library/Amplifier_Operational_AKL/LMV358MUTAG"
  ],
- "embedding_text": "ic-analog-opamp.onsemi | IC Analog Op-Amp | Surface-mount analog operational amplifier IC cluster featuring OnSemi UDFN-8 1.2x1.8mm P0.4mm footprint parts. | ic analog op-amp operational amplifier onsemi smd udfn-8 1.2x1.8mm p0.4mm lmv358mutag alternate-kicad-library rail amplifier operational dual dfn cmos to udfn akl 9mv offset 1mhz gbw | OnSemi | ",
+ "embedding_text": "ic-analog-opamp.onsemi | IC Analog Op-Amp | 1 ic analog op-amp parts using OnSemi footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | rail amplifier operational dual dfn cmos to onsemi udfn lmv358mutag akl 9mv offset 1mhz gbw alternate | OnSemi | ",
  "class": "ic.analog.opamp"
 }

@@ -5,42 +5,34 @@
  "category_path": [
   "IC"
  ],
- "description": "Surface-mount UART and serial interface IC cluster in the SOG65 package family featuring 14 tier-B parts across SOG65_8_3, SOG65_16, SOG65_16_W, and SOG65_20_W footprints.",
+ "description": "14 ic parts for UART/serial using SOG65 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select according to the required SOG65 footprint variant: SOG65_8_3, SOG65_16, SOG65_16_W, or SOG65_20_W.",
-  "Choose when designing surface-mount (SMD) circuits requiring UART or serial interface ICs.",
-  "Verify compatibility with tier-B parts sourced from the chilaboard-altium-library."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SOG65 land pattern is intended."
  ],
  "avoid_when": [
-  "The design requires package footprints other than SOG65 family variants.",
-  "Through-hole mounting is required rather than surface mount (SMD).",
-  "The circuit requires non-UART/serial IC functions."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SOG65."
  ],
  "keywords": [
-  "ic",
-  "uart",
-  "serial",
-  "sog65",
-  "smd",
-  "sog65_8_3",
-  "sog65_16",
-  "sog65_16_w",
-  "sog65_20_w",
-  "max3221",
-  "max3223",
-  "max3232",
-  "sn65hvd1477",
-  "chilaboard",
   "transceiver",
+  "sog65",
+  "ic",
   "rs",
+  "serial",
   "ssop16",
+  "uart",
   "driver",
   "msop8",
   "and",
   "in",
   "package",
   "charge",
-  "pump"
+  "pump",
+  "with",
+  "pin"
  ],
  "facts": {
   "package_family": "SOG65",
@@ -66,7 +58,7 @@
   "tier_counts": {
    "B": 14
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -126,6 +118,6 @@
   "chilaboard-altium-library/SN65HVD72_MSOP8/SN65HVD72_MSOP8",
   "chilaboard-altium-library/SN65HVD75_MSOP8/SN65HVD75_MSOP8"
  ],
- "embedding_text": "ic.sog65.uart | IC | Surface-mount UART and serial interface IC cluster in the SOG65 package family featuring 14 tier-B parts across SOG65_8_3, SOG65_16, SOG65_16_W, and SOG65_20_W footprints. | ic uart serial sog65 smd sog65_8_3 sog65_16 sog65_16_w sog65_20_w max3221 max3223 max3232 sn65hvd1477 chilaboard transceiver rs ssop16 driver msop8 and in package charge pump | SOG65 | UART/serial",
+ "embedding_text": "ic.sog65.uart | IC | 14 ic parts for UART/serial using SOG65 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | transceiver sog65 ic rs serial ssop16 uart driver msop8 and in package charge pump with pin | SOG65 | UART/serial",
  "class": "ic"
 }

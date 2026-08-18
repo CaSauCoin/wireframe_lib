@@ -5,31 +5,22 @@
  "category_path": [
   "IC"
  ],
- "description": "IC component cluster containing 2 parts in the Onion package family supporting surface mount and through-hole footprint options such as Onion_Omega2S and Onion_Omega2+.",
+ "description": "2 ic parts using Onion footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Confirm board design compatibility with Onion_Omega2S or Onion_Omega2+ footprints.",
-  "Choose based on required mounting style between SMD and through-hole.",
-  "Evaluate tier C quality status and legacy distribution source availability."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a Onion land pattern is intended."
  ],
  "avoid_when": [
-  "The board layout requires packages outside the Onion package family.",
-  "Footprint requirements differ from Onion_Omega2S or Onion_Omega2+.",
-  "Tier C quality classification is unsuited for the application requirements."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than Onion."
  ],
  "keywords": [
-  "ic",
   "onion",
-  "omega2s",
-  "omega2+",
-  "onion_omega2s",
-  "onion_omega2+",
-  "smd",
-  "through_hole",
-  "package family",
-  "footprint",
-  "tier c",
-  "dist-legacy",
   "omega2",
+  "omega2s",
+  "ic",
   "pad",
   "mm",
   "pitch",
@@ -40,7 +31,8 @@
   "module",
   "surface",
   "mount",
-  "github"
+  "github",
+  "com"
  ],
  "facts": {
   "package_family": "Onion",
@@ -63,13 +55,13 @@
   "tier_counts": {
    "C": 2
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
   "dist-legacy/Onion_Omega2S",
   "dist-legacy/Onion_Omega2+"
  ],
- "embedding_text": "ic.onion | IC | IC component cluster containing 2 parts in the Onion package family supporting surface mount and through-hole footprint options such as Onion_Omega2S and Onion_Omega2+. | ic onion omega2s omega2+ onion_omega2s onion_omega2+ smd through_hole package family footprint tier c dist-legacy omega2 pad mm pitch pins package https omega module surface mount github | Onion | ",
+ "embedding_text": "ic.onion | IC | 2 ic parts using Onion footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | onion omega2 omega2s ic pad mm pitch pins package https omega module surface mount github com | Onion | ",
  "class": "ic"
 }

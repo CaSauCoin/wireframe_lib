@@ -5,33 +5,25 @@
  "category_path": [
   "IC"
  ],
- "description": "Integrated circuit cluster of 21 tier A surface-mount USB parts in SOT-23-5 footprints from KiCad symbols.",
+ "description": "21 ic parts for USB using SOT-23-5 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select for USB integrated circuit applications using SOT-23-5 packages.",
-  "Choose when requiring surface-mount (SMD) parts with tier A KiCad symbols.",
-  "Verify individual part selection within the power management category."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SOT-23-5 land pattern is intended."
  ],
  "avoid_when": [
-  "Avoid when the board layout requires footprints other than SOT-23-5.",
-  "Do not use if through-hole mounting is required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SOT-23-5."
  ],
  "keywords": [
-  "ic",
-  "usb",
-  "sot-23-5",
-  "smd",
-  "surface mount",
-  "power management",
-  "kicad-symbols",
-  "aat4610bigv-1-t1",
-  "aat4610bigv-t1",
-  "aat4616igv-1-t1",
-  "aat4616igv-t1",
-  "ap2161w",
   "sot",
+  "usb",
   "power",
   "management",
   "to",
+  "smd",
+  "ic",
   "current",
   "limited",
   "switch",
@@ -39,7 +31,8 @@
   "active",
   "single",
   "channel",
-  "high"
+  "high",
+  "low"
  ],
  "facts": {
   "package_family": "SOT-23-5",
@@ -62,7 +55,7 @@
   "tier_counts": {
    "A": 21
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -129,6 +122,6 @@
   "kicad-symbols/Power_Management/TPS2065CDBVx-2",
   "kicad-symbols/Power_Management/TPS2069CDBV"
  ],
- "embedding_text": "ic.sot-23-5.usb | IC | Integrated circuit cluster of 21 tier A surface-mount USB parts in SOT-23-5 footprints from KiCad symbols. | ic usb sot-23-5 smd surface mount power management kicad-symbols aat4610bigv-1-t1 aat4610bigv-t1 aat4616igv-1-t1 aat4616igv-t1 ap2161w sot power management to current limited switch limit active single channel high | SOT-23-5 | USB",
+ "embedding_text": "ic.sot-23-5.usb | IC | 21 ic parts for USB using SOT-23-5 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | sot usb power management to smd ic current limited switch limit active single channel high low | SOT-23-5 | USB",
  "class": "ic"
 }

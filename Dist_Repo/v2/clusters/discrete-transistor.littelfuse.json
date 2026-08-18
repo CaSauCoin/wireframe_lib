@@ -6,42 +6,34 @@
   "Discrete",
   "Transistor"
  ],
- "description": "A cluster of 9 through-hole discrete transistor parts from KiCad symbols using Littelfuse package footprints.",
+ "description": "9 discrete transistor parts using Littelfuse footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Designs requiring through-hole discrete transistors.",
-  "Layouts specifying Littelfuse package footprints such as H_XBN2MM, W_XBN2MM, H_XN2MM, or W_XN2MM.",
-  "Selection of tier B components from the KiCad Transistor_Power_Module library."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a Littelfuse land pattern is intended."
  ],
  "avoid_when": [
-  "Surface-mount (SMD) component placement is required.",
-  "The PCB layout requires non-Littelfuse footprints.",
-  "Components other than discrete transistors are needed."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than Littelfuse."
  ],
  "keywords": [
-  "discrete transistor",
-  "transistor",
-  "discrete",
-  "littelfuse",
-  "through_hole",
-  "through hole",
-  "littelfuse_package_h_xbn2mm",
-  "littelfuse_package_w_xbn2mm",
-  "littelfuse_package_w_xn2mm",
-  "littelfuse_package_h_xn2mm",
-  "mg1215h-xbn2mm",
-  "mg1225h-xbn2mm",
-  "mg1240h-xbn2mm",
-  "mg1250w-xbn2mm",
-  "mg1275w-xbn2mm",
-  "transistor_power_module",
-  "kicad-symbols",
   "module",
   "diode",
+  "transistor",
   "power",
   "package",
+  "littelfuse",
   "igbt",
   "xbn2mm",
-  "xn2mm"
+  "xn2mm",
+  "rectifier",
+  "1200v",
+  "phase",
+  "freewheeling",
+  "5k",
+  "ntc",
+  "trench"
  ],
  "facts": {
   "package_family": "Littelfuse",
@@ -65,7 +57,7 @@
   "tier_counts": {
    "B": 9
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -120,6 +112,6 @@
   "kicad-symbols/Transistor_Power_Module/MG1250H-XN2MM",
   "kicad-symbols/Transistor_Power_Module/MG1275W-XN2MM"
  ],
- "embedding_text": "discrete-transistor.littelfuse | Discrete Transistor | A cluster of 9 through-hole discrete transistor parts from KiCad symbols using Littelfuse package footprints. | discrete transistor transistor discrete littelfuse through_hole through hole littelfuse_package_h_xbn2mm littelfuse_package_w_xbn2mm littelfuse_package_w_xn2mm littelfuse_package_h_xn2mm mg1215h-xbn2mm mg1225h-xbn2mm mg1240h-xbn2mm mg1250w-xbn2mm mg1275w-xbn2mm transistor_power_module kicad-symbols module diode power package igbt xbn2mm xn2mm | Littelfuse | ",
+ "embedding_text": "discrete-transistor.littelfuse | Discrete Transistor | 9 discrete transistor parts using Littelfuse footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | module diode transistor power package littelfuse igbt xbn2mm xn2mm rectifier 1200v phase freewheeling 5k ntc trench | Littelfuse | ",
  "class": "discrete.transistor"
 }

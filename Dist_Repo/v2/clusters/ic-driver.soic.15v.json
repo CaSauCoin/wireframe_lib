@@ -6,32 +6,21 @@
   "IC",
   "Driver"
  ],
- "description": "This cluster contains 4 surface-mount 15V IC driver parts in SOIC-8 (3.9x4.9mm, 1.27mm pitch) footprints from KiCad symbols, including EL7202CS, EL7212CS, EL7222CS, and ICL7667xBA.",
+ "description": "4 ic driver parts for 15V using SOIC footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when requiring a surface-mount 15V IC driver in a SOIC-8 footprint.",
-  "Choose among tier A representative parts including EL7202CS, EL7212CS, EL7222CS, and ICL7667xBA.",
-  "Verify board alignment with the SOIC-8_3.9x4.9mm_P1.27mm footprint."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SOIC land pattern is intended."
  ],
  "avoid_when": [
-  "Avoid if the design requires through-hole mounting instead of SMD.",
-  "Avoid if a package footprint other than SOIC-8_3.9x4.9mm_P1.27mm is needed.",
-  "Avoid if the application requires an IC other than a 15V driver."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SOIC."
  ],
  "keywords": [
-  "ic driver",
-  "driver ic",
-  "15v",
-  "soic",
-  "soic-8",
-  "smd",
-  "el7202cs",
-  "el7212cs",
-  "el7222cs",
-  "icl7667xba",
-  "kicad-symbols",
-  "3.9x4.9mm",
-  "p1.27mm",
   "driver",
+  "soic",
+  "15v",
   "clock",
   "fet",
   "dual",
@@ -41,7 +30,10 @@
   "9mm",
   "p1",
   "27mm",
-  "so"
+  "so",
+  "intersil",
+  "buffer",
+  "ic"
  ],
  "facts": {
   "package_family": "SOIC",
@@ -64,7 +56,7 @@
   "tier_counts": {
    "A": 4
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -106,6 +98,6 @@
   "kicad-symbols/Driver_FET/EL7222CS",
   "kicad-symbols/Driver_FET/ICL7667xBA"
  ],
- "embedding_text": "ic-driver.soic.15v | IC Driver | This cluster contains 4 surface-mount 15V IC driver parts in SOIC-8 (3.9x4.9mm, 1.27mm pitch) footprints from KiCad symbols, including EL7202CS, EL7212CS, EL7222CS, and ICL7667xBA. | ic driver driver ic 15v soic soic-8 smd el7202cs el7212cs el7222cs icl7667xba kicad-symbols 3.9x4.9mm p1.27mm driver clock fet dual power mosfet 9x4 9mm p1 27mm so | SOIC | 15V",
+ "embedding_text": "ic-driver.soic.15v | IC Driver | 4 ic driver parts for 15V using SOIC footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | driver soic 15v clock fet dual power mosfet 9x4 9mm p1 27mm so intersil buffer ic | SOIC | 15V",
  "class": "ic.driver"
 }

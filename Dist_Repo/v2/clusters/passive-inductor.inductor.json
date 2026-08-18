@@ -6,31 +6,23 @@
   "Passive",
   "Inductor"
  ],
- "description": "Passive inductor cluster containing 9 parts with SMD and unspecified mountings across footprints from SparkFun, KiCad, DigiKey, and legacy libraries.",
+ "description": "9 passive inductor parts using Inductor footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Verify required footprint such as Inductor_4x4mm, 4.7x4.7mm, 2.5x3.2mm, or 13R106C.",
-  "Confirm mounting type suitability where parts are listed as SMD or unknown mount.",
-  "Select among Tier B and Tier C rated entries from KiCad, SparkFun, Digi-Key, or dist-legacy sources."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a Inductor land pattern is intended."
  ],
  "avoid_when": [
-  "A Tier A rated part is strictly required.",
-  "The PCB layout requires guaranteed through-hole mounting rather than SMD or unknown mount.",
-  "The target footprint is not among the supported Inductor package family footprints."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than Inductor."
  ],
  "keywords": [
-  "passive",
   "inductor",
-  "smd",
-  "inductor_4x4mm",
-  "inductor_4.7x4.7mm",
-  "inductor_2.5x3.2mm",
-  "13r106c",
+  "passive",
   "sparkfun",
-  "kicad-symbols",
-  "digikey",
-  "electromagneticactor",
-  "l_trim",
   "coil",
+  "smd",
   "nr10050",
   "choke",
   "reactor",
@@ -38,6 +30,7 @@
   "fixed",
   "inductors",
   "power",
+  "13r106c",
   "3x6",
   "6mm",
   "device"
@@ -72,7 +65,7 @@
    "B": 8,
    "C": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -127,6 +120,6 @@
   "dist-legacy/INDUCTOR NR10050",
   "dist-legacy/Inductor_SMD"
  ],
- "embedding_text": "passive-inductor.inductor | Passive Inductor | Passive inductor cluster containing 9 parts with SMD and unspecified mountings across footprints from SparkFun, KiCad, DigiKey, and legacy libraries. | passive inductor smd inductor_4x4mm inductor_4.7x4.7mm inductor_2.5x3.2mm 13r106c sparkfun kicad-symbols digikey electromagneticactor l_trim coil nr10050 choke reactor magnetic fixed inductors power 3x6 6mm device | Inductor | ",
+ "embedding_text": "passive-inductor.inductor | Passive Inductor | 9 passive inductor parts using Inductor footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | inductor passive sparkfun coil smd nr10050 choke reactor magnetic fixed inductors power 13r106c 3x6 6mm device | Inductor | ",
  "class": "passive.inductor"
 }

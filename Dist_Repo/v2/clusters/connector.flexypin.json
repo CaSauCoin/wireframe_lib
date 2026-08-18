@@ -5,44 +5,34 @@
  "category_path": [
   "Connector"
  ],
- "description": "Through-hole single-row connector cluster built around the FlexyPin_1x47_P1.27mm footprint, with 7 tier-B parts sourced from kicad-symbols and SparkFun-KiCad-Libraries.",
+ "description": "7 connector parts using FlexyPin footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Match exact pin count needed (e.g. 01x47 vs 01x46) to avoid unused or missing pads",
-  "Choose Pin or Socket variant based on required mating gender",
-  "Confirm the part's footprint is FlexyPin_1x47_P1.27mm before layout",
-  "All entries are tier B and marked as generated/unreviewed, so verify sourcing"
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a FlexyPin land pattern is intended."
  ],
  "avoid_when": [
-  "A surface-mount connector is required instead of through_hole",
-  "A pitch other than 1.27mm is needed",
-  "A reviewed (non-generated) part with verified electrical ratings is required",
-  "The design needs more than 47 or fewer than 46 positions"
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than FlexyPin."
  ],
  "keywords": [
   "connector",
   "flexypin",
-  "flexy",
-  "pin",
-  "socket",
-  "through hole",
-  "single row",
-  "p1.27mm",
-  "1.27mm pitch",
-  "conn_01x47",
-  "conn_01x46",
-  "01x47",
-  "01x46",
   "sparkfun",
-  "kicad-symbols",
-  "generic connector",
-  "generated",
+  "pin",
   "generic",
   "p1",
   "27mm",
+  "flexy",
   "conn",
+  "01x47",
   "1x47",
   "single",
-  "row"
+  "row",
+  "script",
+  "generated",
+  "01x46"
  ],
  "facts": {
   "package_family": "FlexyPin",
@@ -64,7 +54,7 @@
   "tier_counts": {
    "B": 7
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -117,6 +107,6 @@
   "kicad-symbols/Connector/Conn_01x46_Pin",
   "kicad-symbols/Connector/Conn_01x46_Socket"
  ],
- "embedding_text": "connector.flexypin | Connector | Through-hole single-row connector cluster built around the FlexyPin_1x47_P1.27mm footprint, with 7 tier-B parts sourced from kicad-symbols and SparkFun-KiCad-Libraries. | connector flexypin flexy pin socket through hole single row p1.27mm 1.27mm pitch conn_01x47 conn_01x46 01x47 01x46 sparkfun kicad-symbols generic connector generated generic p1 27mm conn 1x47 single row | FlexyPin | ",
+ "embedding_text": "connector.flexypin | Connector | 7 connector parts using FlexyPin footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | connector flexypin sparkfun pin generic p1 27mm flexy conn 01x47 1x47 single row script generated 01x46 | FlexyPin | ",
  "class": "connector"
 }

@@ -6,34 +6,25 @@
   "Discrete",
   "Diode"
  ],
- "description": "A cluster of 4 surface-mount discrete diode parts rated for 5.25V using SOT-23 package footprints (SOT-23-6 and SOT23-6L) across quality tiers A and B.",
+ "description": "4 discrete diode parts for 5.25V using SOT-23 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Prefer Tier A parts with a score of 100 over Tier B options.",
-  "Choose based on the required footprint: SOT-23-6 or SOT23-6L.",
-  "Select between USBLC6-2SC6 and USBLC6-4SC6 part variants."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SOT-23 land pattern is intended."
  ],
  "avoid_when": [
-  "The design requires a footprint other than SOT-23-6 or SOT23-6L.",
-  "The required operating voltage is not 5.25V.",
-  "Through-hole mounting is needed instead of surface-mount (SMD)."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SOT-23."
  ],
  "keywords": [
-  "discrete",
   "diode",
-  "5.25v",
-  "sot-23",
-  "smd",
-  "sot-23-6",
-  "sot23-6l",
-  "usblc6-2sc6",
-  "usblc6-4sc6",
   "tvs",
-  "alternate-kicad-library",
-  "digikey-kicad-library",
   "sot",
   "25v",
   "usblc6",
   "array",
+  "discrete",
   "diodes",
   "sot23",
   "2sc6",
@@ -41,7 +32,8 @@
   "protected",
   "lines",
   "alternate",
-  "kicad"
+  "kicad",
+  "library"
  ],
  "facts": {
   "package_family": "SOT-23",
@@ -67,7 +59,7 @@
    "A": 2,
    "B": 2
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -109,6 +101,6 @@
   "digikey-kicad-library/dk_TVS-Diodes/USBLC6-2SC6",
   "digikey-kicad-library/dk_TVS-Diodes/USBLC6-4SC6"
  ],
- "embedding_text": "discrete-diode.sot-23.5-25v | Discrete Diode | A cluster of 4 surface-mount discrete diode parts rated for 5.25V using SOT-23 package footprints (SOT-23-6 and SOT23-6L) across quality tiers A and B. | discrete diode 5.25v sot-23 smd sot-23-6 sot23-6l usblc6-2sc6 usblc6-4sc6 tvs alternate-kicad-library digikey-kicad-library sot 25v usblc6 array diodes sot23 2sc6 akl protected lines alternate kicad | SOT-23 | 5.25V",
+ "embedding_text": "discrete-diode.sot-23.5-25v | Discrete Diode | 4 discrete diode parts for 5.25V using SOT-23 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | diode tvs sot 25v usblc6 array discrete diodes sot23 2sc6 akl protected lines alternate kicad library | SOT-23 | 5.25V",
  "class": "discrete.diode"
 }

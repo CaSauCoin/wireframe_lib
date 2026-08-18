@@ -6,34 +6,24 @@
   "Discrete",
   "Diode"
  ],
- "description": "Cluster of 65 discrete diode parts in the Fuse package family with SMD and through-hole mounting options.",
+ "description": "65 discrete diode parts using Fuse footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when requiring a discrete diode configured with a Fuse family land pattern.",
-  "Choose based on required mount type, supporting both SMD and through-hole footprints.",
-  "Verify part suitability carefully as all 65 parts in this cluster are categorized under quality tier C."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a Fuse land pattern is intended."
  ],
  "avoid_when": [
-  "Avoid when the PCB layout requires a standard diode package family rather than a Fuse footprint.",
-  "Do not use if higher quality tier parts (Tier A or B) or planner-visible parts are required.",
-  "Avoid if specific package land patterns outside the listed SMD metric and BelFuse footprints are needed."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than Fuse."
  ],
  "keywords": [
-  "discrete",
-  "diode",
-  "discrete diode",
   "fuse",
-  "fuse footprint",
-  "smd",
-  "through_hole",
-  "belfuse",
-  "1210",
-  "1812",
-  "2010",
-  "2512",
-  "2920",
-  "handsolder",
   "bourns",
   "mf",
+  "discrete",
+  "diode",
+  "belfuse",
   "ptc",
   "pad",
   "mm",
@@ -41,7 +31,9 @@
   "pitch",
   "pins",
   "package",
-  "resettable"
+  "resettable",
+  "littelfuse",
+  "www"
  ],
  "facts": {
   "package_family": "Fuse",
@@ -74,7 +66,7 @@
   "tier_counts": {
    "C": 65
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
@@ -144,6 +136,6 @@
   "dist-legacy/Fuse_Schurter_UMZ250",
   "dist-legacy/Fuse_SunFuse-6HP"
  ],
- "embedding_text": "discrete-diode.fuse | Discrete Diode | Cluster of 65 discrete diode parts in the Fuse package family with SMD and through-hole mounting options. | discrete diode discrete diode fuse fuse footprint smd through_hole belfuse 1210 1812 2010 2512 2920 handsolder bourns mf ptc pad mm pdf pitch pins package resettable | Fuse | ",
+ "embedding_text": "discrete-diode.fuse | Discrete Diode | 65 discrete diode parts using Fuse footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | fuse bourns mf discrete diode belfuse ptc pad mm pdf pitch pins package resettable littelfuse www | Fuse | ",
  "class": "discrete.diode"
 }

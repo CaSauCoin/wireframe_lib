@@ -5,42 +5,34 @@
  "category_path": [
   "IC"
  ],
- "description": "Cluster of 249 integrated circuit components featuring small-outline package footprints such as SO-8, SO-14, SO-16, and SO-20 for surface-mount assembly.",
+ "description": "249 ic parts using SO footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select based on the required SO footprint variant such as SO_8, SO_14, or SO_16.",
-  "Prefer parts from higher quality tiers such as tier A or tier B.",
-  "Verify compatibility with surface-mount (smd) layout requirements."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SO land pattern is intended."
  ],
  "avoid_when": [
-  "The design requires through-hole or non-SMD component mounting.",
-  "The layout specifies package families other than SO small-outline footprints.",
-  "Non-IC components or discrete passive packages are required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SO."
  ],
  "keywords": [
-  "ic",
   "so",
-  "soic",
-  "so-8",
-  "so-14",
-  "so-16",
-  "so-20",
-  "so-24",
-  "smd",
-  "surface mount",
-  "small outline",
-  "integrated circuit",
-  "package",
-  "footprint",
+  "ic",
   "sop8",
+  "package",
   "pin",
   "in",
   "pins",
   "sop",
   "and",
+  "soic",
   "voltage",
   "pad",
   "mm",
-  "pitch"
+  "pitch",
+  "with",
+  "surface"
  ],
  "facts": {
   "package_family": "SO",
@@ -79,7 +71,7 @@
    "B": 147,
    "C": 85
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -374,6 +366,6 @@
   "chilaboard-altium-library/SO_8A/SO_8A",
   "chilaboard-altium-library/SO_8_SPIFLASH/SO_8_SPIFLASH"
  ],
- "embedding_text": "ic.so | IC | Cluster of 249 integrated circuit components featuring small-outline package footprints such as SO-8, SO-14, SO-16, and SO-20 for surface-mount assembly. | ic so soic so-8 so-14 so-16 so-20 so-24 smd surface mount small outline integrated circuit package footprint sop8 pin in pins sop and voltage pad mm pitch | SO | ",
+ "embedding_text": "ic.so | IC | 249 ic parts using SO footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | so ic sop8 package pin in pins sop and soic voltage pad mm pitch with surface | SO | ",
  "class": "ic"
 }

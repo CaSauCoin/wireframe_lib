@@ -6,42 +6,34 @@
   "IC",
   "Analog"
  ],
- "description": "Analog IC cluster containing 52 surface-mount components in SOT-23 package family footprints including SOT-23-6 and SOT-23-8.",
+ "description": "52 ic analog parts using SOT-23 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when designing with surface-mount analog ICs in SOT-23 package variants.",
-  "Check required footprint style between SOT-23-6 and SOT-23-8.",
-  "Filter for tier A parts for higher quality tier representation."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SOT-23 land pattern is intended."
  ],
  "avoid_when": [
-  "Designs requiring through-hole mounting instead of SMD.",
-  "Packages outside the SOT-23 family are needed.",
-  "Non-analog IC categories are required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SOT-23."
  ],
  "keywords": [
-  "sot-23",
-  "sot-23-6",
-  "sot-23-8",
-  "ic",
-  "analog",
-  "ic analog",
-  "smd",
-  "surface mount",
-  "ads1110",
-  "dac7513_dcn",
-  "lm2903biddf",
-  "lm393biddf",
-  "lmv761mf",
   "sot",
+  "analog",
   "comparator",
   "hysteresis",
   "built",
   "in",
   "reference",
   "dual",
+  "ic",
   "akl",
   "propagation",
   "delay",
-  "alternate"
+  "alternate",
+  "kicad",
+  "library",
+  "voltage"
  ],
  "facts": {
   "package_family": "SOT-23",
@@ -67,7 +59,7 @@
    "A": 51,
    "C": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -165,6 +157,6 @@
   "kicad-symbols/Analog_Switch/TS5A3160DBV",
   "celestial-altium-library/ANALOG SOT-23-8 RJ-8/ANALOG_SOT-23-8_RJ-8"
  ],
- "embedding_text": "ic-analog.sot-23 | IC Analog | Analog IC cluster containing 52 surface-mount components in SOT-23 package family footprints including SOT-23-6 and SOT-23-8. | sot-23 sot-23-6 sot-23-8 ic analog ic analog smd surface mount ads1110 dac7513_dcn lm2903biddf lm393biddf lmv761mf sot comparator hysteresis built in reference dual akl propagation delay alternate | SOT-23 | ",
+ "embedding_text": "ic-analog.sot-23 | IC Analog | 52 ic analog parts using SOT-23 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | sot analog comparator hysteresis built in reference dual ic akl propagation delay alternate kicad library voltage | SOT-23 | ",
  "class": "ic.analog"
 }

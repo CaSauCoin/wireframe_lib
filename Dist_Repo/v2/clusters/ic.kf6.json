@@ -5,28 +5,20 @@
  "category_path": [
   "IC"
  ],
- "description": "Integrated circuit component cluster utilizing the KF6 package family with KF6-10 and KF6-5 footprints across two quality tier C parts.",
+ "description": "2 ic parts using KF6 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when requiring IC components in the KF6 package family.",
-  "Choose between KF6-10 and KF6-5 footprint variants.",
-  "Verify part specifications for tier C entries with unknown mount types."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a KF6 land pattern is intended."
  ],
  "avoid_when": [
-  "The design requires a package family other than KF6.",
-  "Land patterns other than KF6-10 or KF6-5 are required.",
-  "Tier C parts without planner visibility do not meet qualification standards."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than KF6."
  ],
  "keywords": [
   "kf6",
   "ic",
-  "kf6-10",
-  "kf6-5",
-  "integrated circuit",
-  "kf6 package",
-  "kf6 footprint",
-  "dist-legacy",
-  "package family kf6",
-  "tier c",
   "pad",
   "mm",
   "pitch",
@@ -52,13 +44,13 @@
   "tier_counts": {
    "C": 2
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
   "dist-legacy/KF6-10",
   "dist-legacy/KF6-5"
  ],
- "embedding_text": "ic.kf6 | IC | Integrated circuit component cluster utilizing the KF6 package family with KF6-10 and KF6-5 footprints across two quality tier C parts. | kf6 ic kf6-10 kf6-5 integrated circuit kf6 package kf6 footprint dist-legacy package family kf6 tier c pad mm pitch pins | KF6 | ",
+ "embedding_text": "ic.kf6 | IC | 2 ic parts using KF6 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | kf6 ic pad mm pitch pins | KF6 | ",
  "class": "ic"
 }

@@ -6,31 +6,22 @@
   "Discrete",
   "Diode"
  ],
- "description": "Cluster of surface-mount discrete diodes with 5V or 5.5V ratings in DFN package footprints.",
+ "description": "3 discrete diode parts for 5V, 5.5V using DFN footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select surface-mount discrete diodes rated for 5V or 5.5V.",
-  "Choose between standard DFN-6 and exposed-pad DFN-6-1EP footprints.",
-  "Select tier A parts from the Alternate-KiCad-Library source."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a DFN land pattern is intended."
  ],
  "avoid_when": [
-  "The PCB layout requires package families other than DFN.",
-  "Non-SMD or through-hole mounting is required.",
-  "Target circuit voltage is outside 5V or 5.5V."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than DFN."
  ],
  "keywords": [
-  "discrete",
   "diode",
   "dfn",
-  "dfn-6",
-  "dfn-6-1ep",
-  "5v",
-  "5.5v",
-  "smd",
-  "aoz8001di",
-  "aoz8002dil",
-  "aoz8102di",
-  "alternate-kicad-library",
   "tvs",
+  "5v",
   "array",
   "6x1",
   "6mm",
@@ -41,7 +32,8 @@
   "kicad",
   "library",
   "p0",
-  "5mm"
+  "5mm",
+  "bidirectional"
  ],
  "facts": {
   "package_family": "DFN",
@@ -66,7 +58,7 @@
   "tier_counts": {
    "A": 3
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -99,6 +91,6 @@
   "Alternate-KiCad-Library/Diode_TVS_AKL/AOZ8002DIL",
   "Alternate-KiCad-Library/Diode_TVS_AKL/AOZ8102DI"
  ],
- "embedding_text": "discrete-diode.dfn.5v.5-5v | Discrete Diode | Cluster of surface-mount discrete diodes with 5V or 5.5V ratings in DFN package footprints. | discrete diode dfn dfn-6 dfn-6-1ep 5v 5.5v smd aoz8001di aoz8002dil aoz8102di alternate-kicad-library tvs array 6x1 6mm akl protected lines alternate kicad library p0 5mm | DFN | 5V 5.5V",
+ "embedding_text": "discrete-diode.dfn.5v.5-5v | Discrete Diode | 3 discrete diode parts for 5V, 5.5V using DFN footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | diode dfn tvs 5v array 6x1 6mm akl protected lines alternate kicad library p0 5mm bidirectional | DFN | 5V 5.5V",
  "class": "discrete.diode"
 }

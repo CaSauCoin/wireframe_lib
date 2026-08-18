@@ -6,33 +6,21 @@
   "IC",
   "Driver"
  ],
- "description": "A cluster of 8 surface-mount 100V IC driver parts in SOIC package footprints including standard SOIC-8 and exposed-pad SOIC-8-1EP variants.",
+ "description": "8 ic driver parts for 100V using SOIC footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Choose when requiring a 100V IC driver in an SMD SOIC package.",
-  "Select between standard SOIC-8 and thermal exposed-pad SOIC-8-1EP footprints based on PCB layout requirements.",
-  "Prefer Tier A parts, which comprise 6 of the 8 available cluster entries."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SOIC land pattern is intended."
  ],
  "avoid_when": [
-  "Avoid if the circuit requires a non-100V rated driver.",
-  "Avoid when packages other than SOIC or non-SMD mountings are needed.",
-  "Avoid if footprint land pattern requirements do not match SOIC-8 pitch or body dimensions."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SOIC."
  ],
  "keywords": [
-  "ic driver",
-  "100v",
   "soic",
-  "soic-8",
-  "soic-8-1ep",
-  "smd",
-  "driver ic",
-  "fet driver",
-  "hip2100",
-  "hip2101",
-  "ir2085s",
-  "lm5109ama",
-  "lm5109bma",
-  "ic.driver",
   "driver",
+  "100v",
   "half",
   "bridge",
   "gate",
@@ -41,7 +29,11 @@
   "9x4",
   "9mm",
   "p1",
-  "27mm"
+  "27mm",
+  "so",
+  "ic",
+  "output",
+  "current"
  ],
  "facts": {
   "package_family": "SOIC",
@@ -66,7 +58,7 @@
    "A": 6,
    "B": 2
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -120,6 +112,6 @@
   "kicad-symbols/Driver_FET/HIP2100_EPSOIC",
   "kicad-symbols/Driver_FET/HIP2101_EPSOIC"
  ],
- "embedding_text": "ic-driver.soic.100v | IC Driver | A cluster of 8 surface-mount 100V IC driver parts in SOIC package footprints including standard SOIC-8 and exposed-pad SOIC-8-1EP variants. | ic driver 100v soic soic-8 soic-8-1ep smd driver ic fet driver hip2100 hip2101 ir2085s lm5109ama lm5109bma ic.driver driver half bridge gate fet 0a 9x4 9mm p1 27mm | SOIC | 100V",
+ "embedding_text": "ic-driver.soic.100v | IC Driver | 8 ic driver parts for 100V using SOIC footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | soic driver 100v half bridge gate fet 0a 9x4 9mm p1 27mm so ic output current | SOIC | 100V",
  "class": "ic.driver"
 }

@@ -6,33 +6,25 @@
   "IC",
   "Analog"
  ],
- "description": "Analog integrated circuits in through-hole TO package family footprints including TO-99-8 and TO-100-10.",
+ "description": "7 ic analog parts using TO footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when requiring through-hole analog ICs in TO package family footprints.",
-  "Choose based on specific footprint requirements such as TO-99-8 or TO-100-10.",
-  "Verify part selection across Alternate-KiCad-Library and kicad-symbols sources."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a TO land pattern is intended."
  ],
  "avoid_when": [
-  "Surface mount design is required instead of through-hole mounting.",
-  "Footprints other than TO-99-8 or TO-100-10 are needed."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than TO."
  ],
  "keywords": [
-  "ic",
-  "analog",
   "to",
-  "through_hole",
-  "to-99-8",
-  "to-100-10",
-  "lf398h",
-  "lf198ah",
-  "lf198h",
-  "lm361h",
-  "alternate-kicad-library",
-  "kicad-symbols",
+  "analog",
   "comparator",
   "sample",
   "and",
   "hold",
+  "ic",
   "akl",
   "offset",
   "alternate",
@@ -40,7 +32,8 @@
   "library",
   "complementary",
   "amplifier",
-  "settling"
+  "settling",
+  "ch"
  ],
  "facts": {
   "package_family": "TO",
@@ -63,7 +56,7 @@
   "tier_counts": {
    "B": 7
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -116,6 +109,6 @@
   "Alternate-KiCad-Library/Analog_Comparator_AKL/LM119H",
   "Alternate-KiCad-Library/Analog_Comparator_AKL/LM160H"
  ],
- "embedding_text": "ic-analog.to | IC Analog | Analog integrated circuits in through-hole TO package family footprints including TO-99-8 and TO-100-10. | ic analog to through_hole to-99-8 to-100-10 lf398h lf198ah lf198h lm361h alternate-kicad-library kicad-symbols comparator sample and hold akl offset alternate kicad library complementary amplifier settling | TO | ",
+ "embedding_text": "ic-analog.to | IC Analog | 7 ic analog parts using TO footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | to analog comparator sample and hold ic akl offset alternate kicad library complementary amplifier settling ch | TO | ",
  "class": "ic.analog"
 }

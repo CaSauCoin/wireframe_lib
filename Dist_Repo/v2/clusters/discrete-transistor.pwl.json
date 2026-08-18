@@ -6,26 +6,19 @@
   "Discrete",
   "Transistor"
  ],
- "description": "Discrete transistor cluster containing through-hole parts in the PWL package family with PWL_3 footprint support.",
+ "description": "1 discrete transistor parts using PWL footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Choose when needing a through-hole discrete transistor in the PWL package family.",
-  "Verify compatibility with the PWL_3 footprint.",
-  "Check chilaboard-altium-library source and tier C quality status."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a PWL land pattern is intended."
  ],
  "avoid_when": [
-  "Do not use when surface-mount components or package families other than PWL are needed.",
-  "Avoid if a footprint other than PWL_3 is required.",
-  "Avoid when tier C quality or generated review status is insufficient."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than PWL."
  ],
  "keywords": [
-  "discrete transistor",
-  "discrete.transistor",
   "pwl",
-  "pwl_3",
-  "pwl package family",
-  "through hole",
-  "through_hole",
-  "chilaboard-altium-library",
   "discrete",
   "transistor",
   "through",
@@ -54,12 +47,12 @@
   "tier_counts": {
    "C": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
   "chilaboard-altium-library/PWL_3/PWL_3"
  ],
- "embedding_text": "discrete-transistor.pwl | Discrete Transistor | Discrete transistor cluster containing through-hole parts in the PWL package family with PWL_3 footprint support. | discrete transistor discrete.transistor pwl pwl_3 pwl package family through hole through_hole chilaboard-altium-library discrete transistor through hole pad mm pitch pins | PWL | ",
+ "embedding_text": "discrete-transistor.pwl | Discrete Transistor | 1 discrete transistor parts using PWL footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | pwl discrete transistor through hole pad mm pitch pins | PWL | ",
  "class": "discrete.transistor"
 }

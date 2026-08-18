@@ -5,30 +5,20 @@
  "category_path": [
   "IC"
  ],
- "description": "Integrated circuit cluster containing 51 surface-mount (SMD) parts in the SOG50 package family from the chilaboard-altium-library source.",
+ "description": "51 ic parts using SOG50 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when an SMD IC component using the SOG50 package family is required.",
-  "Choose based on the exact footprint variant and pin count, such as SOG50_10, SOG50_38, or SOG50_40.",
-  "Filter by quality tier B or C depending on project requirements."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SOG50 land pattern is intended."
  ],
  "avoid_when": [
-  "Designs requiring non-SMD or through-hole component mounting.",
-  "Layouts requiring a package family other than SOG50.",
-  "Projects requiring tier A quality parts."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SOG50."
  ],
  "keywords": [
-  "ic",
   "sog50",
-  "smd",
-  "surface mount",
-  "sog50_10",
-  "sog50_38",
-  "sog50_40",
-  "sog50_48",
-  "sog50_56",
-  "chilaboard-altium-library",
-  "package family sog50",
-  "sog50 footprints",
+  "ic",
   "surface",
   "mount",
   "memory",
@@ -40,7 +30,9 @@
   "pad",
   "and",
   "mm",
-  "pitch"
+  "pitch",
+  "tsop48",
+  "lvds"
  ],
  "facts": {
   "package_family": "SOG50",
@@ -73,7 +65,7 @@
    "B": 30,
    "C": 21
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -170,6 +162,6 @@
   "chilaboard-altium-library/SOG50_50/SOG50_50",
   "chilaboard-altium-library/SOG50_64/SOG50_64"
  ],
- "embedding_text": "ic.sog50 | IC | Integrated circuit cluster containing 51 surface-mount (SMD) parts in the SOG50 package family from the chilaboard-altium-library source. | ic sog50 smd surface mount sog50_10 sog50_38 sog50_40 sog50_48 sog50_56 chilaboard-altium-library package family sog50 sog50 footprints surface mount memory in package pin parallel pins pad and mm pitch | SOG50 | ",
+ "embedding_text": "ic.sog50 | IC | 51 ic parts using SOG50 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | sog50 ic surface mount memory in package pin parallel pins pad and mm pitch tsop48 lvds | SOG50 | ",
  "class": "ic"
 }

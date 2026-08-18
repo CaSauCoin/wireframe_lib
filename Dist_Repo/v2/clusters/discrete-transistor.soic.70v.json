@@ -6,42 +6,34 @@
   "Discrete",
   "Transistor"
  ],
- "description": "Discrete transistor cluster containing 70V surface-mount parts in SOIC footprints, including SOIC-8_3.9x4.9mm_P1.27mm.",
+ "description": "1 discrete transistor parts for 70V using SOIC footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when requiring a 70V surface-mount discrete transistor.",
-  "Check compatibility with the SOIC-8_3.9x4.9mm_P1.27mm footprint.",
-  "Verify part requirements against tier A KiCad symbol entries."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SOIC land pattern is intended."
  ],
  "avoid_when": [
-  "The circuit design requires a voltage rating other than 70V.",
-  "The PCB footprint requirement differs from SOIC-8_3.9x4.9mm_P1.27mm.",
-  "Through-hole mounting or package families other than SOIC are needed."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SOIC."
  ],
  "keywords": [
-  "discrete transistor",
-  "discrete",
-  "transistor",
-  "70v",
-  "soic",
-  "soic-8",
-  "smd",
-  "ips7091gpbf",
-  "soic-8_3.9x4.9mm_p1.27mm",
-  "3.9x4.9mm",
-  "p1.27mm",
-  "kicad-symbols",
   "power",
+  "soic",
+  "70v",
   "intelligent",
   "switch",
   "high",
   "side",
+  "ips7091gpbf",
   "management",
   "5a",
   "d2",
   "pak",
   "5pin",
   "9x4",
-  "9mm"
+  "9mm",
+  "p1"
  ],
  "facts": {
   "package_family": "SOIC",
@@ -64,7 +56,7 @@
   "tier_counts": {
    "A": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -79,6 +71,6 @@
  "part_ids": [
   "kicad-symbols/Power_Management/IPS7091GPBF"
  ],
- "embedding_text": "discrete-transistor.soic.70v | Discrete Transistor | Discrete transistor cluster containing 70V surface-mount parts in SOIC footprints, including SOIC-8_3.9x4.9mm_P1.27mm. | discrete transistor discrete transistor 70v soic soic-8 smd ips7091gpbf soic-8_3.9x4.9mm_p1.27mm 3.9x4.9mm p1.27mm kicad-symbols power intelligent switch high side management 5a d2 pak 5pin 9x4 9mm | SOIC | 70V",
+ "embedding_text": "discrete-transistor.soic.70v | Discrete Transistor | 1 discrete transistor parts for 70V using SOIC footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | power soic 70v intelligent switch high side ips7091gpbf management 5a d2 pak 5pin 9x4 9mm p1 | SOIC | 70V",
  "class": "discrete.transistor"
 }

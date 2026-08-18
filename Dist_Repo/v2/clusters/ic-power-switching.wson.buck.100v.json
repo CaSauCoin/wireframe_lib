@@ -7,41 +7,34 @@
   "Power",
   "Switching Regulator"
  ],
- "description": "Surface-mount 100V buck switching regulator ICs in WSON packages with footprints such as WSON-8-1EP 4x4mm P0.8mm, including LM5008SD and LM5017SD.",
+ "description": "2 ic power switching regulator parts for buck, 100V using WSON footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Verify requirement for a surface-mount 100V buck switching regulator IC.",
-  "Select based on specific exposed pad dimensions, such as EP2.6x3mm or EP1.98x3mm.",
-  "Match target footprint to WSON-8-1EP 4x4mm P0.8mm land patterns for LM5008SD or LM5017SD."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a WSON land pattern is intended."
  ],
  "avoid_when": [
-  "The design requires a package family other than surface-mount WSON.",
-  "The application requires non-buck topology or operating specs differing from 100V.",
-  "The PCB land pattern requires exposed pad dimensions other than EP2.6x3mm or EP1.98x3mm."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than WSON."
  ],
  "keywords": [
-  "ic",
-  "power switching regulator",
-  "buck",
-  "100v",
-  "wson",
-  "smd",
-  "wson-8-1ep",
-  "4x4mm",
-  "p0.8mm",
-  "lm5008sd",
-  "lm5017sd",
-  "kicad-symbols",
   "regulator",
   "switching",
+  "wson",
+  "100v",
   "step",
   "down",
   "voltage",
   "high",
   "1ep",
+  "4x4mm",
   "p0",
   "8mm",
   "nolead",
-  "power"
+  "ic",
+  "power",
+  "buck"
  ],
  "facts": {
   "package_family": "WSON",
@@ -66,7 +59,7 @@
   "tier_counts": {
    "B": 2
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -90,6 +83,6 @@
   "kicad-symbols/Regulator_Switching/LM5008SD",
   "kicad-symbols/Regulator_Switching/LM5017SD"
  ],
- "embedding_text": "ic-power-switching.wson.buck.100v | IC Power Switching Regulator | Surface-mount 100V buck switching regulator ICs in WSON packages with footprints such as WSON-8-1EP 4x4mm P0.8mm, including LM5008SD and LM5017SD. | ic power switching regulator buck 100v wson smd wson-8-1ep 4x4mm p0.8mm lm5008sd lm5017sd kicad-symbols regulator switching step down voltage high 1ep p0 8mm nolead power | WSON | buck 100V",
+ "embedding_text": "ic-power-switching.wson.buck.100v | IC Power Switching Regulator | 2 ic power switching regulator parts for buck, 100V using WSON footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | regulator switching wson 100v step down voltage high 1ep 4x4mm p0 8mm nolead ic power buck | WSON | buck 100V",
  "class": "ic.power.switching"
 }

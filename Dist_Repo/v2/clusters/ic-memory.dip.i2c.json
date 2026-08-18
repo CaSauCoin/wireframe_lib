@@ -6,31 +6,21 @@
   "IC",
   "Memory"
  ],
- "description": "Cluster of 17 memory IC parts using the I2C interface in through-hole DIP packages.",
+ "description": "17 ic memory parts for I2C using DIP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select for through-hole memory IC applications using an I2C interface.",
-  "Verify compatibility with DIP-8_W7.62mm or DIP_8 footprints.",
-  "Prefer Tier A parts from kicad-symbols or chilaboard-altium-library."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a DIP land pattern is intended."
  ],
  "avoid_when": [
-  "Surface-mount packaging is required instead of DIP through-hole.",
-  "The application requires a bus or interface protocol other than I2C."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than DIP."
  ],
  "keywords": [
-  "ic memory",
-  "i2c",
   "dip",
-  "through_hole",
-  "dip-8_w7.62mm",
-  "dip_8",
   "eeprom",
-  "24lc00",
-  "24lc01",
-  "24lc02",
-  "24lc04",
-  "24lc08",
-  "kicad-symbols",
-  "chilaboard-altium-library",
+  "i2c",
   "memory",
   "serial",
   "62mm",
@@ -40,7 +30,10 @@
   "dil",
   "pdip",
   "54mm",
-  "300mil"
+  "300mil",
+  "soic",
+  "tssop",
+  "dfn"
  ],
  "facts": {
   "package_family": "DIP",
@@ -66,7 +59,7 @@
    "A": 15,
    "B": 2
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -129,6 +122,6 @@
   "chilaboard-altium-library/EEPROM_I2C_AT24C256_DIP8/EEPROM_I2C_AT24C256_DIP8",
   "chilaboard-altium-library/EEPROM_I2C_CAT24C64_DIP8/EEPROM_I2C_CAT24C64_DIP8"
  ],
- "embedding_text": "ic-memory.dip.i2c | IC Memory | Cluster of 17 memory IC parts using the I2C interface in through-hole DIP packages. | ic memory i2c dip through_hole dip-8_w7.62mm dip_8 eeprom 24lc00 24lc01 24lc02 24lc04 24lc08 kicad-symbols chilaboard-altium-library memory serial 62mm ic w7 tht dil pdip 54mm 300mil | DIP | I2C",
+ "embedding_text": "ic-memory.dip.i2c | IC Memory | 17 ic memory parts for I2C using DIP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | dip eeprom i2c memory serial 62mm ic w7 tht dil pdip 54mm 300mil soic tssop dfn | DIP | I2C",
  "class": "ic.memory"
 }

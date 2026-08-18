@@ -6,39 +6,33 @@
   "Passive",
   "Crystal / Resonator"
  ],
- "description": "Surface-mount passive crystal and resonator components in OSC package footprints sourced from the JLCPCB KiCad library.",
+ "description": "4 passive crystal / resonator parts using OSC footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Match the required frequency and load capacitance to the specific part.",
-  "Verify footprint compatibility with OSC-SMD land patterns such as 3.2x2.5mm or 5.0x3.2mm.",
-  "Confirm pad count and pin assignments match the target crystal layout."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a OSC land pattern is intended."
  ],
  "avoid_when": [
-  "Through-hole mounting is required.",
-  "An active oscillator circuit is needed rather than a passive crystal or resonator.",
-  "The PCB design requires a package other than OSC SMD footprints."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than OSC."
  ],
  "keywords": [
-  "passive",
   "crystal",
-  "resonator",
   "osc",
-  "osc-smd",
-  "smd",
-  "surface mount",
-  "jlcpcb",
-  "kicad",
-  "passive crystal",
-  "frequency",
-  "load capacitance",
   "4p",
+  "smd",
   "crystals",
   "l3",
   "w2",
   "bl",
+  "jlcpcb",
   "10ppm",
   "20ppm",
   "rohs",
   "footprint",
+  "passive",
+  "resonator",
   "oscillator"
  ],
  "facts": {
@@ -62,7 +56,7 @@
   "tier_counts": {
    "B": 4
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -104,6 +98,6 @@
   "JLCPCB-Kicad-Library/JLCPCB-Extended/Crystal, 40MHz, 15pF",
   "JLCPCB-Kicad-Library/JLCPCB-Crystals/Crystal, 11MHz, 20pF"
  ],
- "embedding_text": "passive-crystal.osc | Passive Crystal / Resonator | Surface-mount passive crystal and resonator components in OSC package footprints sourced from the JLCPCB KiCad library. | passive crystal resonator osc osc-smd smd surface mount jlcpcb kicad passive crystal frequency load capacitance 4p crystals l3 w2 bl 10ppm 20ppm rohs footprint oscillator | OSC | ",
+ "embedding_text": "passive-crystal.osc | Passive Crystal / Resonator | 4 passive crystal / resonator parts using OSC footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | crystal osc 4p smd crystals l3 w2 bl jlcpcb 10ppm 20ppm rohs footprint passive resonator oscillator | OSC | ",
  "class": "passive.crystal"
 }

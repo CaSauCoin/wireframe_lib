@@ -5,28 +5,20 @@
  "category_path": [
   "IC"
  ],
- "description": "Integrated circuit cluster containing one tier-C part utilizing the COM9C package family.",
+ "description": "1 ic parts using COM9C footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Verify part specifications as this entry has tier C quality and generated review status.",
-  "Ensure compatibility with the COM9C package footprint before layout.",
-  "Check source details for legacy distribution data."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a COM9C land pattern is intended."
  ],
  "avoid_when": [
-  "Designs require packages other than COM9C.",
-  "Higher quality tiers (tier A or tier B) are mandatory.",
-  "Planner-visible parts are strictly required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than COM9C."
  ],
  "keywords": [
   "com9c",
   "ic",
-  "integrated circuit",
-  "com9c package",
-  "com9c footprint",
-  "tier c",
-  "dist-legacy",
-  "package family",
-  "generated review",
-  "ic cluster",
   "pad",
   "mm",
   "pitch",
@@ -51,12 +43,12 @@
   "tier_counts": {
    "C": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
   "dist-legacy/COM9C"
  ],
- "embedding_text": "ic.com9c | IC | Integrated circuit cluster containing one tier-C part utilizing the COM9C package family. | com9c ic integrated circuit com9c package com9c footprint tier c dist-legacy package family generated review ic cluster pad mm pitch pins | COM9C | ",
+ "embedding_text": "ic.com9c | IC | 1 ic parts using COM9C footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | com9c ic pad mm pitch pins | COM9C | ",
  "class": "ic"
 }

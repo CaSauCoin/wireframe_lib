@@ -6,39 +6,32 @@
   "Discrete",
   "Diode"
  ],
- "description": "Discrete SMD diode cluster featuring 22.8V rated parts in package family D, with D_SOD-323 footprint entries from the JLCPCB KiCad library.",
+ "description": "1 discrete diode parts for 22.8V using D footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when requiring surface-mount (SMD) discrete diodes in D_SOD-323 footprints.",
-  "Use for designs specified for 22.8V rated diode applications.",
-  "Choose for Tier A parts sourced from JLCPCB-Kicad-Library such as BZT52C24S."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a D land pattern is intended."
  ],
  "avoid_when": [
-  "Through-hole mounting or non-SMD footprints are required.",
-  "The layout demands a package family other than D or a footprint other than D_SOD-323.",
-  "Circuit requirements differ from a 22.8V voltage facet."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than D."
  ],
  "keywords": [
-  "discrete",
-  "diode",
-  "discrete diode",
-  "22.8v",
-  "smd",
-  "d_sod-323",
-  "sod-323",
-  "bzt52c24s",
-  "zener",
-  "jlcpcb",
-  "jlcpcb-kicad-library",
-  "package d",
   "sod",
+  "zener",
   "diodes",
   "8v",
+  "bzt52c24s",
+  "jlcpcb",
   "independent",
   "100na",
   "200mw",
   "6v",
   "24v",
-  "rohs"
+  "rohs",
+  "discrete",
+  "diode"
  ],
  "facts": {
   "package_family": "D",
@@ -61,7 +54,7 @@
   "tier_counts": {
    "A": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -76,6 +69,6 @@
  "part_ids": [
   "JLCPCB-Kicad-Library/JLCPCB-Diodes/Zener,BZT52C24S"
  ],
- "embedding_text": "discrete-diode.d.22-8v | Discrete Diode | Discrete SMD diode cluster featuring 22.8V rated parts in package family D, with D_SOD-323 footprint entries from the JLCPCB KiCad library. | discrete diode discrete diode 22.8v smd d_sod-323 sod-323 bzt52c24s zener jlcpcb jlcpcb-kicad-library package d sod diodes 8v independent 100na 200mw 6v 24v rohs | D | 22.8V",
+ "embedding_text": "discrete-diode.d.22-8v | Discrete Diode | 1 discrete diode parts for 22.8V using D footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | sod zener diodes 8v bzt52c24s jlcpcb independent 100na 200mw 6v 24v rohs discrete diode | D | 22.8V",
  "class": "discrete.diode"
 }

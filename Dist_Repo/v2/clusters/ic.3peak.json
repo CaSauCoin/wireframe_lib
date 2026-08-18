@@ -5,42 +5,34 @@
  "category_path": [
   "IC"
  ],
- "description": "Cluster of 14 integrated circuit parts in quality tier C featuring 3PEAK surface-mount footprints including DFN4x4-10, MSOP-8, SOT353-5, SOP-14, and SOP-8.",
+ "description": "14 ic parts using 3PEAK footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when requiring IC parts matching 3PEAK footprints such as SOP-8, SOP-14, MSOP-8, SOT353-5, or DFN4x4-10.",
-  "Verify footprint dimensions and pin mappings for tier C generated parts before PCB layout.",
-  "Filter between dist-legacy (9 parts) and celestial-altium-library (5 parts) sources."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a 3PEAK land pattern is intended."
  ],
  "avoid_when": [
-  "Parts with a quality tier higher than tier C are required.",
-  "The PCB design requires planner-visible components.",
-  "Layout requires package footprint families other than 3PEAK or non-SMD mounting."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than 3PEAK."
  ],
  "keywords": [
   "3peak",
   "ic",
-  "smd",
-  "dfn4x4-10-a",
-  "msop-8-a",
-  "sot353-5-a",
-  "sop-14-a",
-  "sop-8-a",
-  "df9",
-  "msop8",
-  "sc5",
-  "sop14",
-  "sop8",
-  "so2",
-  "vs1",
-  "tier c",
   "sop",
   "pad",
   "mm",
   "pitch",
   "pins",
+  "df9",
   "dfn4x4",
+  "msop8",
+  "vs1",
   "msop",
-  "sot353"
+  "sc5",
+  "sot353",
+  "sop14",
+  "so2"
  ],
  "facts": {
   "package_family": "3PEAK",
@@ -68,7 +60,7 @@
   "tier_counts": {
    "C": 14
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
@@ -87,6 +79,6 @@
   "celestial-altium-library/3PEAK SOP14 SO2 SOP-14-A/3PEAK_SOP14_SO2_SOP-14-A",
   "celestial-altium-library/3PEAK SOP8 SO1 SOP-8-A/3PEAK_SOP8_SO1_SOP-8-A"
  ],
- "embedding_text": "ic.3peak | IC | Cluster of 14 integrated circuit parts in quality tier C featuring 3PEAK surface-mount footprints including DFN4x4-10, MSOP-8, SOT353-5, SOP-14, and SOP-8. | 3peak ic smd dfn4x4-10-a msop-8-a sot353-5-a sop-14-a sop-8-a df9 msop8 sc5 sop14 sop8 so2 vs1 tier c sop pad mm pitch pins dfn4x4 msop sot353 | 3PEAK | ",
+ "embedding_text": "ic.3peak | IC | 14 ic parts using 3PEAK footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | 3peak ic sop pad mm pitch pins df9 dfn4x4 msop8 vs1 msop sc5 sot353 sop14 so2 | 3PEAK | ",
  "class": "ic"
 }

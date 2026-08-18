@@ -6,33 +6,22 @@
   "Discrete",
   "Diode"
  ],
- "description": "Cluster of 7 surface-mount 36V discrete diode parts in SOT package footprints from Alternate-KiCad-Library.",
+ "description": "7 discrete diode parts for 36V using SOT footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Match required footprint variant among SOT-363_SC-70-6, SOT-89-3, SOT-223-3_TabPin2, or SOT-323_SC-70.",
-  "Select specific part designation such as BZV49-C36, BZV90-C36, BZX84C36S, or BZX84C36W.",
-  "Verify compatibility with 36V rating and surface-mount footprint."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SOT land pattern is intended."
  ],
  "avoid_when": [
-  "The design requires non-SOT package family footprints.",
-  "Surface-mount (SMD) mounting is not supported by the PCB layout.",
-  "The circuit requires a voltage rating other than 36V."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SOT."
  ],
  "keywords": [
-  "discrete",
   "diode",
   "sot",
-  "36v",
-  "smd",
-  "sot-363_sc-70-6",
-  "sot-89-3",
-  "sot-223-3_tabpin2",
-  "sot-323_sc-70",
-  "bzv49-c36",
-  "bzv90-c36",
-  "bzx84c36s",
-  "bzx84c36w",
-  "alternate-kicad-library",
   "zener",
+  "36v",
   "sc",
   "dual",
   "independent",
@@ -40,8 +29,11 @@
   "alternate",
   "kicad",
   "library",
+  "discrete",
   "200mw",
-  "bzv49"
+  "bzv49",
+  "c36",
+  "bzv90"
  ],
  "facts": {
   "package_family": "SOT",
@@ -67,7 +59,7 @@
   "tier_counts": {
    "A": 7
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -120,6 +112,6 @@
   "Alternate-KiCad-Library/Diode_Zener_AKL/MMBZ5258BS",
   "Alternate-KiCad-Library/Diode_Zener_AKL/MMBZ5258BSs"
  ],
- "embedding_text": "discrete-diode.sot.36v | Discrete Diode | Cluster of 7 surface-mount 36V discrete diode parts in SOT package footprints from Alternate-KiCad-Library. | discrete diode sot 36v smd sot-363_sc-70-6 sot-89-3 sot-223-3_tabpin2 sot-323_sc-70 bzv49-c36 bzv90-c36 bzx84c36s bzx84c36w alternate-kicad-library zener sc dual independent akl alternate kicad library 200mw bzv49 | SOT | 36V",
+ "embedding_text": "discrete-diode.sot.36v | Discrete Diode | 7 discrete diode parts for 36V using SOT footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | diode sot zener 36v sc dual independent akl alternate kicad library discrete 200mw bzv49 c36 bzv90 | SOT | 36V",
  "class": "discrete.diode"
 }

@@ -6,30 +6,20 @@
   "Power",
   "Power Supply"
  ],
- "description": "Surface-mount power supply components in 24-lead LFCSP packages with 0.5mm pitch and exposed pads.",
+ "description": "2 power power supply parts using LFCSP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Confirm compatibility with the LFCSP-24-1EP (4x4mm, 0.5mm pitch) footprint and exposed pad dimensions.",
-  "Check part ratings and specific functionality against design requirements.",
-  "Verify pinout and footprint matching for KiCad symbol library entries."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a LFCSP land pattern is intended."
  ],
  "avoid_when": [
-  "The design requires through-hole mounting or a package family other than LFCSP.",
-  "A footprint with a different pin count, body size, or lead pitch is needed.",
-  "The circuit does not involve power supply or battery management functions."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than LFCSP."
  ],
  "keywords": [
-  "power",
-  "power supply",
   "lfcsp",
-  "lfcsp-24",
-  "smd",
-  "surface mount",
-  "adp5091",
-  "adp5092",
-  "battery management",
-  "4x4mm",
-  "0.5mm pitch",
-  "exposed pad",
+  "power",
   "management",
   "energy",
   "harvester",
@@ -41,7 +31,9 @@
   "and",
   "charge",
   "1ep",
-  "p0"
+  "4x4mm",
+  "p0",
+  "5mm"
  ],
  "facts": {
   "package_family": "LFCSP",
@@ -62,7 +54,7 @@
   "tier_counts": {
    "A": 2
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -86,6 +78,6 @@
   "kicad-symbols/Battery_Management/ADP5091",
   "kicad-symbols/Battery_Management/ADP5092"
  ],
- "embedding_text": "power-supply.lfcsp | Power Power Supply | Surface-mount power supply components in 24-lead LFCSP packages with 0.5mm pitch and exposed pads. | power power supply lfcsp lfcsp-24 smd surface mount adp5091 adp5092 battery management 4x4mm 0.5mm pitch exposed pad management energy harvester battery ultralow pmus with mppt and charge 1ep p0 | LFCSP | ",
+ "embedding_text": "power-supply.lfcsp | Power Power Supply | 2 power power supply parts using LFCSP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | lfcsp power management energy harvester battery ultralow pmus with mppt and charge 1ep 4x4mm p0 5mm | LFCSP | ",
  "class": "power.supply"
 }

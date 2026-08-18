@@ -5,28 +5,20 @@
  "category_path": [
   "IC"
  ],
- "description": "IC cluster containing 1 tier-C component using the HED6T package family and footprint.",
+ "description": "1 ic parts using HED6T footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when an IC in the HED6T package family is required.",
-  "Verify footprint details and part specifications since the quality tier is C.",
-  "Confirm pin mapping and electrical parameters before PCB layout commitment."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a HED6T land pattern is intended."
  ],
  "avoid_when": [
-  "The board design requires a package family other than HED6T.",
-  "Required electrical ratings or datasheet specifications are unconfirmed.",
-  "A component category other than IC is required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than HED6T."
  ],
  "keywords": [
-  "ic",
   "hed6t",
-  "hed6t package",
-  "hed6t footprint",
-  "integrated circuit",
-  "tier c",
-  "dist-legacy",
-  "package family hed6t",
-  "ic cluster",
-  "hed6t land pattern",
+  "ic",
   "pad",
   "mm",
   "pitch",
@@ -51,12 +43,12 @@
   "tier_counts": {
    "C": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
   "dist-legacy/HED6T"
  ],
- "embedding_text": "ic.hed6t | IC | IC cluster containing 1 tier-C component using the HED6T package family and footprint. | ic hed6t hed6t package hed6t footprint integrated circuit tier c dist-legacy package family hed6t ic cluster hed6t land pattern pad mm pitch pins | HED6T | ",
+ "embedding_text": "ic.hed6t | IC | 1 ic parts using HED6T footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | hed6t ic pad mm pitch pins | HED6T | ",
  "class": "ic"
 }

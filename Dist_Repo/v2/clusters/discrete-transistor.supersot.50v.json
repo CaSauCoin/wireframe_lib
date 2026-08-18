@@ -6,38 +6,34 @@
   "Discrete",
   "Transistor"
  ],
- "description": "Discrete surface-mount 50V transistor cluster featuring SuperSOT-6 footprints from the Alternate-KiCad-Library.",
+ "description": "1 discrete transistor parts for 50V using SuperSOT footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when needing a 50V discrete transistor in a surface-mount SuperSOT package.",
-  "Confirm compatibility with the SuperSOT-6 footprint and SMD land pattern.",
-  "Check part specifications and quality tier before finalizing layout."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SuperSOT land pattern is intended."
  ],
  "avoid_when": [
-  "The design requires package types other than SuperSOT or SuperSOT-6.",
-  "The circuit requires non-SMD or through-hole mounting.",
-  "Voltage requirements differ from the specified 50V rating."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SuperSOT."
  ],
  "keywords": [
   "supersot",
-  "supersot-6",
   "transistor",
-  "discrete",
-  "50v",
-  "smd",
-  "ndc7002n",
-  "alternate",
-  "kicad",
-  "library",
-  "ssot",
-  "discrete.transistor",
   "mosfet",
+  "ndc7002n",
   "dual",
   "nmos",
   "enchancement",
+  "50v",
   "akl",
   "mode",
   "510ma",
-  "960mw"
+  "960mw",
+  "alternate",
+  "kicad",
+  "library",
+  "ssot"
  ],
  "facts": {
   "package_family": "SuperSOT",
@@ -60,7 +56,7 @@
   "tier_counts": {
    "A": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -75,6 +71,6 @@
  "part_ids": [
   "Alternate-KiCad-Library/Transistor_MOSFET_AKL/NDC7002N"
  ],
- "embedding_text": "discrete-transistor.supersot.50v | Discrete Transistor | Discrete surface-mount 50V transistor cluster featuring SuperSOT-6 footprints from the Alternate-KiCad-Library. | supersot supersot-6 transistor discrete 50v smd ndc7002n alternate kicad library ssot discrete.transistor mosfet dual nmos enchancement akl mode 510ma 960mw | SuperSOT | 50V",
+ "embedding_text": "discrete-transistor.supersot.50v | Discrete Transistor | 1 discrete transistor parts for 50V using SuperSOT footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | supersot transistor mosfet ndc7002n dual nmos enchancement 50v akl mode 510ma 960mw alternate kicad library ssot | SuperSOT | 50V",
  "class": "discrete.transistor"
 }

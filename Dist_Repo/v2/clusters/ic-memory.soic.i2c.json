@@ -6,31 +6,21 @@
   "IC",
   "Memory"
  ],
- "description": "Surface-mount memory ICs featuring an I2C interface in SOIC package footprints.",
+ "description": "11 ic memory parts for I2C using SOIC footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when needing surface-mount memory ICs with an I2C interface.",
-  "Choose between SOIC-8 3.9x4.9mm and 5.3x5.3mm footprints with 1.27mm pitch.",
-  "Verify footprint and part selection against tier A KiCad library symbols."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SOIC land pattern is intended."
  ],
  "avoid_when": [
-  "Avoid when non-I2C memory interfaces are required.",
-  "Avoid if the board design requires non-SOIC packages or through-hole mounting.",
-  "Avoid when SMD SOIC footprint dimensions do not match target PCB specs."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SOIC."
  ],
  "keywords": [
   "soic",
-  "i2c",
-  "ic memory",
-  "memory ic",
-  "smd",
-  "soic-8",
-  "1.27mm pitch",
   "eeprom",
-  "24aa025e-sn",
-  "24aa02e-sn",
-  "at24cs01-sshm",
-  "at24cs02-sshm",
-  "at24cs04-sshm",
+  "i2c",
   "memory",
   "serial",
   "so",
@@ -41,7 +31,9 @@
   "9mm",
   "with",
   "sshm",
-  "unique"
+  "unique",
+  "number",
+  "so8"
  ],
  "facts": {
   "package_family": "SOIC",
@@ -65,7 +57,7 @@
   "tier_counts": {
    "A": 11
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -122,6 +114,6 @@
   "kicad-symbols/Memory_EEPROM/CAT24M01W",
   "kicad-symbols/Memory_EEPROM/CAT24M01X"
  ],
- "embedding_text": "ic-memory.soic.i2c | IC Memory | Surface-mount memory ICs featuring an I2C interface in SOIC package footprints. | soic i2c ic memory memory ic smd soic-8 1.27mm pitch eeprom 24aa025e-sn 24aa02e-sn at24cs01-sshm at24cs02-sshm at24cs04-sshm memory serial so p1 27mm ic 9x4 9mm with sshm unique | SOIC | I2C",
+ "embedding_text": "ic-memory.soic.i2c | IC Memory | 11 ic memory parts for I2C using SOIC footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | soic eeprom i2c memory serial so p1 27mm ic 9x4 9mm with sshm unique number so8 | SOIC | I2C",
  "class": "ic.memory"
 }

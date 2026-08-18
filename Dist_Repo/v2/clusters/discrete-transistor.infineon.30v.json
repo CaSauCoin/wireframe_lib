@@ -6,31 +6,22 @@
   "Discrete",
   "Transistor"
  ],
- "description": "A cluster of 180 surface-mount 30V discrete transistor parts from the Alternate-KiCad-Library featuring Infineon package footprints.",
+ "description": "180 discrete transistor parts for 30V using Infineon footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when requiring a 30V rated SMD discrete transistor.",
-  "Choose based on specific Infineon package footprints such as PG-TDSON-8, PG-TISON-8, or PG-HSOF-8-1.",
-  "Consider quality tier requirements, where 1 part is Tier A and 179 are Tier B."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a Infineon land pattern is intended."
  ],
  "avoid_when": [
-  "Designs require through-hole mounting instead of surface-mount.",
-  "Operating voltage requirements differ from 30V.",
-  "Land pattern requirements call for non-Infineon package footprints."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than Infineon."
  ],
  "keywords": [
-  "discrete",
+  "mosfet",
   "transistor",
   "infineon",
   "30v",
-  "smd",
-  "pg-tdson-8",
-  "pg-tsdson-8",
-  "pg-tison-8",
-  "pg-hsof-8-1",
-  "alternate-kicad-library",
-  "ipt004n03l",
-  "aoe6930",
-  "mosfet",
   "enchancement",
   "tdson",
   "mos",
@@ -41,6 +32,7 @@
   "pg",
   "emos",
   "emosfet",
+  "discrete",
   "mode"
  ],
  "facts": {
@@ -72,7 +64,7 @@
    "A": 1,
    "B": 179
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -298,6 +290,6 @@
   "Alternate-KiCad-Library/Transistor_MOSFET_AKL/TPN6R003NL",
   "Alternate-KiCad-Library/Transistor_MOSFET_AKL/TPN8R903NL"
  ],
- "embedding_text": "discrete-transistor.infineon.30v | Discrete Transistor | A cluster of 180 surface-mount 30V discrete transistor parts from the Alternate-KiCad-Library featuring Infineon package footprints. | discrete transistor infineon 30v smd pg-tdson-8 pg-tsdson-8 pg-tison-8 pg-hsof-8-1 alternate-kicad-library ipt004n03l aoe6930 mosfet enchancement tdson mos akl alternate kicad library pg emos emosfet mode | Infineon | 30V",
+ "embedding_text": "discrete-transistor.infineon.30v | Discrete Transistor | 180 discrete transistor parts for 30V using Infineon footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | mosfet transistor infineon 30v enchancement tdson mos akl alternate kicad library pg emos emosfet discrete mode | Infineon | 30V",
  "class": "discrete.transistor"
 }

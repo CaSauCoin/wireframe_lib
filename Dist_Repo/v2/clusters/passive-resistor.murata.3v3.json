@@ -6,28 +6,22 @@
   "Passive",
   "Resistor"
  ],
- "description": "Passive SMD resistor cluster associated with 3.3V operation and the MURATA GRM32E footprint from celestial-altium-library.",
+ "description": "1 passive resistor parts for 3.3V using MURATA footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Verify compatibility with the MURATA GRM32E SMD footprint.",
-  "Confirm 3.3V circuit requirement matches the part facet.",
-  "Review Tier C quality and source data from celestial-altium-library."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a MURATA land pattern is intended."
  ],
  "avoid_when": [
-  "A footprint other than MURATA GRM32E is required.",
-  "Through-hole mounting is needed instead of SMD.",
-  "Unreviewed or Tier C component data is not acceptable for the design."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than MURATA."
  ],
  "keywords": [
-  "passive",
-  "resistor",
   "murata",
   "grm32e",
-  "3.3v",
-  "smd",
-  "surface mount",
-  "celestial-altium-library",
-  "passive resistor",
-  "tier c",
+  "passive",
+  "resistor",
   "surface",
   "mount",
   "pad",
@@ -57,12 +51,12 @@
   "tier_counts": {
    "C": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
   "celestial-altium-library/MURATA - GRM32E/MURATA_-_GRM32E"
  ],
- "embedding_text": "passive-resistor.murata.3v3 | Passive Resistor | Passive SMD resistor cluster associated with 3.3V operation and the MURATA GRM32E footprint from celestial-altium-library. | passive resistor murata grm32e 3.3v smd surface mount celestial-altium-library passive resistor tier c surface mount pad mm pitch pins 3v | MURATA | 3.3V",
+ "embedding_text": "passive-resistor.murata.3v3 | Passive Resistor | 1 passive resistor parts for 3.3V using MURATA footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | murata grm32e passive resistor surface mount pad mm pitch pins 3v | MURATA | 3.3V",
  "class": "passive.resistor"
 }

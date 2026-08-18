@@ -7,32 +7,23 @@
   "Analog",
   "Amplifier"
  ],
- "description": "Surface-mount 42V analog amplifier IC cluster in SOT-23-6 footprint backed by tier A KiCad symbol data.",
+ "description": "1 ic analog amplifier parts for 42V using SOT-23 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select for 42V analog amplifier circuit designs needing SOT-23-6 SMD footprints.",
-  "Use when leveraging tier A KiCad symbol library components like LMP8640.",
-  "Confirm layout compatibility with the SOT-23 package family."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SOT-23 land pattern is intended."
  ],
  "avoid_when": [
-  "The design requires non-SMD or through-hole component mounting.",
-  "The PCB layout requires package styles other than SOT-23 or SOT-23-6.",
-  "The circuit operates outside the specified 42V rating or requires non-amplifier IC functions."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SOT-23."
  ],
  "keywords": [
-  "ic",
-  "analog",
-  "amplifier",
-  "42v",
-  "sot-23",
-  "sot-23-6",
-  "smd",
-  "lmp8640",
-  "kicad",
-  "kicad-symbols",
-  "analog amplifier",
-  "surface mount",
   "sot",
   "current",
+  "amplifier",
+  "42v",
+  "lmp8640",
   "precision",
   "high",
   "voltage",
@@ -40,6 +31,7 @@
   "amplifiers",
   "76v",
   "to",
+  "smd",
   "monitor",
   "shunt",
   "sensor"
@@ -65,7 +57,7 @@
   "tier_counts": {
    "A": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -80,6 +72,6 @@
  "part_ids": [
   "kicad-symbols/Amplifier_Current/LMP8640"
  ],
- "embedding_text": "ic-analog-amplifier.sot-23.42v | IC Analog Amplifier | Surface-mount 42V analog amplifier IC cluster in SOT-23-6 footprint backed by tier A KiCad symbol data. | ic analog amplifier 42v sot-23 sot-23-6 smd lmp8640 kicad kicad-symbols analog amplifier surface mount sot current precision high voltage sense amplifiers 76v to monitor shunt sensor | SOT-23 | 42V",
+ "embedding_text": "ic-analog-amplifier.sot-23.42v | IC Analog Amplifier | 1 ic analog amplifier parts for 42V using SOT-23 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | sot current amplifier 42v lmp8640 precision high voltage sense amplifiers 76v to smd monitor shunt sensor | SOT-23 | 42V",
  "class": "ic.analog.amplifier"
 }

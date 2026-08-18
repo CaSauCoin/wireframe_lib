@@ -5,44 +5,34 @@
  "category_path": [
   "Connector"
  ],
- "description": "Cluster of 3 SparkFun 1x20 connector parts (1 tier B, 2 tier C) spanning through-hole, locking, and SMD 1x20 footprint variants; review status is generated, not manually verified.",
+ "description": "3 connector parts using 1x20 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Match the exact footprint variant needed: standard 1x20, 1x20_Locking, or 1x20_SMD_Pin1RightUp",
-  "Prefer the tier B entry (Conn_01x20, score 80) over the two tier C entries when unspecified",
-  "Confirm through-hole vs SMD mount matches the board design",
-  "Verify footprint pairing since review_status is generated"
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a 1x20 land pattern is intended."
  ],
  "avoid_when": [
-  "A locking or SMD variant is required but the selected part uses a different footprint",
-  "Electrical ratings or pinout are needed but not stated for the part",
-  "A footprint other than 1x20 is required",
-  "Manually verified (non-generated) library data is required"
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than 1x20."
  ],
  "keywords": [
   "connector",
-  "conn_01x20",
-  "1x20",
-  "01x20",
   "sparkfun",
-  "locking connector",
-  "smd connector",
-  "through hole connector",
-  "pin1rightup",
-  "header",
-  "pin header",
-  "20 pin",
-  "single row",
-  "generated",
-  "kicad library",
+  "1x20",
   "conn",
+  "01x20",
   "locking",
   "smd",
+  "pin1rightup",
   "pth",
   "pad",
   "mm",
   "pitch",
   "pins",
-  "https"
+  "https",
+  "web",
+  "surface"
  ],
  "facts": {
   "package_family": "1x20",
@@ -67,7 +57,7 @@
    "B": 1,
    "C": 2
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -84,6 +74,6 @@
   "SparkFun-KiCad-Libraries/SparkFun-Connector/Conn_01x20_Locking",
   "SparkFun-KiCad-Libraries/SparkFun-Connector/Conn_01x20_SMD_Pin1RightUp"
  ],
- "embedding_text": "connector.1x20 | Connector | Cluster of 3 SparkFun 1x20 connector parts (1 tier B, 2 tier C) spanning through-hole, locking, and SMD 1x20 footprint variants; review status is generated, not manually verified. | connector conn_01x20 1x20 01x20 sparkfun locking connector smd connector through hole connector pin1rightup header pin header 20 pin single row generated kicad library conn locking smd pth pad mm pitch pins https | 1x20 | ",
+ "embedding_text": "connector.1x20 | Connector | 3 connector parts using 1x20 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | connector sparkfun 1x20 conn 01x20 locking smd pin1rightup pth pad mm pitch pins https web surface | 1x20 | ",
  "class": "connector"
 }

@@ -5,30 +5,21 @@
  "category_path": [
   "IC"
  ],
- "description": "Surface-mount I2C integrated circuit cluster in a VSSOP8 package (VSSOP8_SOT765-1), including tier A parts such as PCA9306.",
+ "description": "1 ic parts for I2C using VSSOP8 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Requires a surface-mount VSSOP8 or VSSOP8_SOT765-1 footprint.",
-  "Select when requiring an I2C integrated circuit in VSSOP8 packaging.",
-  "Utilize when looking for tier A components such as PCA9306."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a VSSOP8 land pattern is intended."
  ],
  "avoid_when": [
-  "The board layout requires through-hole components instead of SMD.",
-  "A package footprint other than VSSOP8 or VSSOP8_SOT765-1 is required.",
-  "The design does not use an I2C bus interface."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than VSSOP8."
  ],
  "keywords": [
-  "ic",
-  "i2c",
-  "vssop8",
-  "smd",
-  "vssop8_sot765-1",
-  "sot765-1",
-  "sot765",
-  "pca9306",
   "sparkfun",
-  "integrated circuit",
-  "surface mount",
-  "tier a",
+  "i2c",
+  "ic",
   "dual",
   "bidirectional",
   "bus",
@@ -36,9 +27,12 @@
   "voltage",
   "level",
   "translator",
+  "vssop8",
+  "pca9306",
   "special",
   "function",
-  "and"
+  "and",
+  "sot765"
  ],
  "facts": {
   "package_family": "VSSOP8",
@@ -61,7 +55,7 @@
   "tier_counts": {
    "A": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -76,6 +70,6 @@
  "part_ids": [
   "SparkFun-KiCad-Libraries/SparkFun-IC-Special-Function/PCA9306"
  ],
- "embedding_text": "ic.vssop8.i2c | IC | Surface-mount I2C integrated circuit cluster in a VSSOP8 package (VSSOP8_SOT765-1), including tier A parts such as PCA9306. | ic i2c vssop8 smd vssop8_sot765-1 sot765-1 sot765 pca9306 sparkfun integrated circuit surface mount tier a dual bidirectional bus smbus voltage level translator special function and | VSSOP8 | I2C",
+ "embedding_text": "ic.vssop8.i2c | IC | 1 ic parts for I2C using VSSOP8 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | sparkfun i2c ic dual bidirectional bus smbus voltage level translator vssop8 pca9306 special function and sot765 | VSSOP8 | I2C",
  "class": "ic"
 }

@@ -6,42 +6,34 @@
   "Discrete",
   "FET"
  ],
- "description": "A cluster of 40V discrete SMD FETs in the TDSON package family utilizing the TDSON-8-1 footprint.",
+ "description": "7 discrete fet parts for 40V using TDSON footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when requiring a 40V discrete FET for surface-mount assembly.",
-  "Choose for layouts matching the TDSON-8-1 footprint.",
-  "Use when sourcing discrete FET components from KiCad symbols."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a TDSON land pattern is intended."
  ],
  "avoid_when": [
-  "Avoid if a voltage rating other than 40V is required.",
-  "Do not use when through-hole mounting is needed.",
-  "Avoid if the board layout requires a package footprint other than TDSON-8-1."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than TDSON."
  ],
  "keywords": [
-  "discrete fet",
-  "discrete",
+  "tdson",
+  "mosfet",
   "fet",
   "40v",
-  "tdson",
-  "tdson-8-1",
-  "smd",
-  "transistor",
-  "kicad-symbols",
-  "csd18501q5a",
-  "csd18502q5b",
-  "csd18503q5a",
-  "csd18504q5a",
-  "csd18509q5b",
-  "mosfet",
   "nexfet",
   "power",
+  "transistor",
   "id",
   "vds",
   "channel",
   "ron",
   "son8",
   "5x6mm",
-  "qg"
+  "discrete",
+  "qg",
+  "typ"
  ],
  "facts": {
   "package_family": "TDSON",
@@ -64,7 +56,7 @@
   "tier_counts": {
    "A": 7
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -117,6 +109,6 @@
   "kicad-symbols/Transistor_FET/FDMS8350L",
   "kicad-symbols/Transistor_FET/FDMS8350LET40"
  ],
- "embedding_text": "discrete-fet.tdson.40v | Discrete FET | A cluster of 40V discrete SMD FETs in the TDSON package family utilizing the TDSON-8-1 footprint. | discrete fet discrete fet 40v tdson tdson-8-1 smd transistor kicad-symbols csd18501q5a csd18502q5b csd18503q5a csd18504q5a csd18509q5b mosfet nexfet power id vds channel ron son8 5x6mm qg | TDSON | 40V",
+ "embedding_text": "discrete-fet.tdson.40v | Discrete FET | 7 discrete fet parts for 40V using TDSON footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | tdson mosfet fet 40v nexfet power transistor id vds channel ron son8 5x6mm discrete qg typ | TDSON | 40V",
  "class": "discrete.fet"
 }

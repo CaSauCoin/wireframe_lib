@@ -6,33 +6,28 @@
   "Power",
   "Power Supply"
  ],
- "description": "Surface-mount power supply components featuring 3.3V, I2C interface, and LDO regulation in QFP packaging.",
+ "description": "1 power power supply parts for 3.3V, I2C, LDO using QFP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Verify footprint compatibility with TQFP-48 (7x7mm, 0.5mm pitch) land patterns.",
-  "Confirm design requirements for 3.3V operation, I2C interface, and LDO functionality.",
-  "Review symbol and footprint definitions from KiCad library sources."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a QFP land pattern is intended."
  ],
  "avoid_when": [
-  "The board layout requires through-hole or non-QFP package types.",
-  "The circuit does not utilize 3.3V, I2C, or LDO features.",
-  "A package footprint other than TQFP-48 is required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than QFP."
  ],
  "keywords": [
-  "power supply",
-  "3.3v",
-  "i2c",
-  "ldo",
-  "qfp",
-  "tqfp",
-  "tqfp-48",
-  "smd",
-  "bq7695202pfbr",
-  "battery management",
-  "power",
   "battery",
+  "i2c",
+  "tqfp",
   "management",
   "lithium",
+  "ldo",
+  "qfp",
   "li",
+  "power",
+  "bq7695202pfbr",
   "monitor",
   "cells",
   "integrated",
@@ -63,7 +58,7 @@
   "tier_counts": {
    "A": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -78,6 +73,6 @@
  "part_ids": [
   "kicad-symbols/Battery_Management/BQ7695202PFBR"
  ],
- "embedding_text": "power-supply.qfp.3v3.i2c | Power Power Supply | Surface-mount power supply components featuring 3.3V, I2C interface, and LDO regulation in QFP packaging. | power supply 3.3v i2c ldo qfp tqfp tqfp-48 smd bq7695202pfbr battery management power battery management lithium li monitor cells integrated balancing interface with | QFP | 3.3V I2C LDO",
+ "embedding_text": "power-supply.qfp.3v3.i2c | Power Power Supply | 1 power power supply parts for 3.3V, I2C, LDO using QFP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | battery i2c tqfp management lithium ldo qfp li power bq7695202pfbr monitor cells integrated balancing interface with | QFP | 3.3V I2C LDO",
  "class": "power.supply"
 }

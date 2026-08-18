@@ -6,30 +6,20 @@
   "IC",
   "Interface"
  ],
- "description": "IC interface components in the SFP package family using through-hole mounting and the SFP_20 footprint from KiCad symbols.",
+ "description": "2 ic interface parts using SFP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when using the SFP package family with an SFP_20 footprint.",
-  "Use when designing through-hole IC interface connections.",
-  "Check part specifications for SFP or SFP+ interface symbols."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SFP land pattern is intended."
  ],
  "avoid_when": [
-  "The layout requires a footprint other than SFP_20.",
-  "The design uses surface mount or non-through-hole mounting.",
-  "A package family other than SFP is required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SFP."
  ],
  "keywords": [
-  "ic",
-  "interface",
   "sfp",
-  "sfp+",
-  "sfp_20",
-  "through_hole",
-  "through hole",
-  "package sfp",
-  "kicad-symbols",
-  "interface optical",
-  "ic interface",
-  "sfp interface",
+  "interface",
   "optical",
   "serial",
   "transceiver",
@@ -41,7 +31,9 @@
   "pluggable",
   "module",
   "gbit",
-  "to"
+  "to",
+  "data",
+  "agnostic"
  ],
  "facts": {
   "package_family": "SFP",
@@ -62,7 +54,7 @@
   "tier_counts": {
    "B": 2
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -86,6 +78,6 @@
   "kicad-symbols/Interface_Optical/SFP",
   "kicad-symbols/Interface_Optical/SFP+"
  ],
- "embedding_text": "ic-interface.sfp | IC Interface | IC interface components in the SFP package family using through-hole mounting and the SFP_20 footprint from KiCad symbols. | ic interface sfp sfp+ sfp_20 through_hole through hole package sfp kicad-symbols interface optical ic interface sfp interface optical serial transceiver connector for small form factor pluggable module gbit to | SFP | ",
+ "embedding_text": "ic-interface.sfp | IC Interface | 2 ic interface parts using SFP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | sfp interface optical serial transceiver connector for small form factor pluggable module gbit to data agnostic | SFP | ",
  "class": "ic.interface"
 }

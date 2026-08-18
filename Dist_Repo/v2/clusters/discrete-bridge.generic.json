@@ -6,43 +6,33 @@
   "Discrete",
   "Bridge Rectifier"
  ],
- "description": "Generic discrete bridge rectifier cluster of 26 tier-G parts sourced from dist-legacy and Alternate-KiCad-Library; package/footprint is not yet assigned and must be selected explicitly.",
+ "description": "26 discrete bridge rectifier parts with package chosen later. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Match the current rating shown in the part name (e.g. 2A, 3A) to circuit needs",
-  "If the part name encodes package dimensions (e.g. 15.1x15.1x6.3mm), confirm they fit the intended footprint",
-  "All entries are tier G (generated, unreviewed) with no footprint set — verify against a datasheet before use",
-  "Prefer dist-legacy vs Alternate-KiCad-Library based on your source-trust policy"
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Select a footprint/package explicitly before placement."
  ],
  "avoid_when": [
-  "A specific footprint/package has not yet been chosen for the design",
-  "The required current or voltage rating cannot be confirmed from the part name or a datasheet",
-  "A reviewed, higher-tier part is required instead of a generated tier-G entry"
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review."
  ],
  "keywords": [
-  "bridge rectifier",
-  "diode bridge",
-  "discrete",
-  "generic",
-  "package chosen later",
-  "tier g",
-  "dist-legacy",
-  "alternate-kicad-library",
-  "unreviewed",
-  "generated",
-  "2a",
-  "3a",
-  "15.1x15.1x6.3mm",
-  "15.2x15.2x6.3mm",
-  "15.7x15.7x6.3mm",
-  "p10.9mm",
-  "p10.8mm",
-  "rectifier diode",
   "bridge",
   "diode",
   "rectifier",
+  "discrete",
   "package",
   "chosen",
-  "later"
+  "later",
+  "pins",
+  "generic",
+  "3mm",
+  "vishay",
+  "p10",
+  "8mm",
+  "9mm",
+  "7x6",
+  "kbpc"
  ],
  "facts": {
   "package_family": "package chosen later",
@@ -60,7 +50,7 @@
   "tier_counts": {
    "G": 26
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -132,6 +122,6 @@
   "Alternate-KiCad-Library/Diode_Bridge_AKL/D_Bridge_Protected_Generic_-ACxAC+",
   "Alternate-KiCad-Library/Diode_Bridge_AKL/D_Bridge_Schottky_Generic_+-ACAC"
  ],
- "embedding_text": "discrete-bridge.generic | Discrete Bridge Rectifier | Generic discrete bridge rectifier cluster of 26 tier-G parts sourced from dist-legacy and Alternate-KiCad-Library; package/footprint is not yet assigned and must be selected explicitly. | bridge rectifier diode bridge discrete generic package chosen later tier g dist-legacy alternate-kicad-library unreviewed generated 2a 3a 15.1x15.1x6.3mm 15.2x15.2x6.3mm 15.7x15.7x6.3mm p10.9mm p10.8mm rectifier diode bridge diode rectifier package chosen later | package chosen later | ",
+ "embedding_text": "discrete-bridge.generic | Discrete Bridge Rectifier | 26 discrete bridge rectifier parts with package chosen later. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | bridge diode rectifier discrete package chosen later pins generic 3mm vishay p10 8mm 9mm 7x6 kbpc | package chosen later | ",
  "class": "discrete.bridge"
 }

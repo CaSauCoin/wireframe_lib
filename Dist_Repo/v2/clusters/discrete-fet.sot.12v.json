@@ -6,37 +6,31 @@
   "Discrete",
   "FET"
  ],
- "description": "Discrete 12V FET components in surface-mount SOT packages, including SOT-363_SC-70-6 footprints from KiCad symbols.",
+ "description": "1 discrete fet parts for 12V using SOT footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select for surface-mount discrete FET applications requiring a 12V rating.",
-  "Verify footprint compatibility with SOT-363_SC-70-6 land patterns.",
-  "Prefer tier A parts from KiCad symbol sources."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SOT land pattern is intended."
  ],
  "avoid_when": [
-  "The design requires through-hole mounting instead of SMD.",
-  "The application requires voltage ratings other than 12V.",
-  "The PCB layout requires packages outside the SOT family."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SOT."
  ],
  "keywords": [
-  "discrete",
+  "sot",
+  "sc",
   "fet",
   "12v",
-  "sot",
-  "smd",
-  "sot-363",
-  "sc-70-6",
-  "sot-363_sc-70-6",
-  "si1442dh",
-  "transistor",
-  "surface mount",
-  "kicad",
-  "sc",
   "trenchfet",
   "channel",
   "power",
   "mosfet",
+  "si1442dh",
+  "transistor",
   "vds",
   "to",
+  "smd",
   "us6",
   "umt6",
   "mini6"
@@ -62,7 +56,7 @@
   "tier_counts": {
    "A": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -77,6 +71,6 @@
  "part_ids": [
   "kicad-symbols/Transistor_FET/Si1442DH"
  ],
- "embedding_text": "discrete-fet.sot.12v | Discrete FET | Discrete 12V FET components in surface-mount SOT packages, including SOT-363_SC-70-6 footprints from KiCad symbols. | discrete fet 12v sot smd sot-363 sc-70-6 sot-363_sc-70-6 si1442dh transistor surface mount kicad sc trenchfet channel power mosfet vds to us6 umt6 mini6 | SOT | 12V",
+ "embedding_text": "discrete-fet.sot.12v | Discrete FET | 1 discrete fet parts for 12V using SOT footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | sot sc fet 12v trenchfet channel power mosfet si1442dh transistor vds to smd us6 umt6 mini6 | SOT | 12V",
  "class": "discrete.fet"
 }

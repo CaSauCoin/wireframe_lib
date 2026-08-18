@@ -6,29 +6,22 @@
   "Discrete",
   "Diode"
  ],
- "description": "Discrete diode cluster associated with the CELL package family and CELL_HOLDER footprint.",
+ "description": "1 discrete diode parts using CELL footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select for discrete diode applications using the CELL package family.",
-  "Verify compatibility with the CELL_HOLDER footprint.",
-  "Review tier C quality status and legacy source details before use."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a CELL land pattern is intended."
  ],
  "avoid_when": [
-  "A package family other than CELL is required for the layout.",
-  "Footprints other than CELL_HOLDER are needed.",
-  "Tier C or planner-invisible parts are excluded by design rules."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than CELL."
  ],
  "keywords": [
+  "cell",
+  "holder",
   "discrete",
   "diode",
-  "cell",
-  "cell_holder",
-  "cell holder",
-  "discrete diode",
-  "cell package",
-  "cell footprint",
-  "tier c",
-  "dist-legacy",
-  "holder",
   "pad",
   "mm",
   "pitch",
@@ -53,12 +46,12 @@
   "tier_counts": {
    "C": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
   "dist-legacy/CELL_HOLDER"
  ],
- "embedding_text": "discrete-diode.cell | Discrete Diode | Discrete diode cluster associated with the CELL package family and CELL_HOLDER footprint. | discrete diode cell cell_holder cell holder discrete diode cell package cell footprint tier c dist-legacy holder pad mm pitch pins | CELL | ",
+ "embedding_text": "discrete-diode.cell | Discrete Diode | 1 discrete diode parts using CELL footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | cell holder discrete diode pad mm pitch pins | CELL | ",
  "class": "discrete.diode"
 }

@@ -6,42 +6,34 @@
   "Discrete",
   "Diode"
  ],
- "description": "A cluster of 3 surface-mount discrete TVS diodes featuring a 103V facet rating in package family D with D_SMA and D_SMC(DO-214AB) footprints.",
+ "description": "3 discrete diode parts for 103V using D footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select between unidirectional (SMBJ64A) and bidirectional (5.0SMDJ64CA, SMDJ64CA) TVS diode options.",
-  "Choose based on footprint compatibility with D_SMA or D_SMC(DO-214AB).",
-  "Prefer Tier A parts over Tier B parts when available."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a D land pattern is intended."
  ],
  "avoid_when": [
-  "Through-hole mounting is required instead of surface-mount (SMD).",
-  "Land pattern requirements differ from D_SMA or D_SMC(DO-214AB) footprints.",
-  "Package family D is not suitable for the PCB layout."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than D."
  ],
  "keywords": [
-  "discrete diode",
-  "103v",
-  "d_sma",
-  "d_smc(do-214ab)",
-  "tvs-uni",
-  "tvs-bi",
-  "smbj64a",
-  "smdj64ca",
-  "5.0smdj64ca",
-  "smd",
-  "jlcpcb-kicad-library",
-  "discrete",
-  "diode",
   "tvs",
+  "103v",
   "do",
   "esd",
   "smc",
+  "diode",
   "214ab",
   "jlcpcb",
   "diodes",
   "64v",
   "iec",
   "and",
-  "surge"
+  "surge",
+  "protection",
+  "rohs",
+  "discrete"
  ],
  "facts": {
   "package_family": "D",
@@ -66,7 +58,7 @@
    "A": 1,
    "B": 2
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -99,6 +91,6 @@
   "JLCPCB-Kicad-Library/JLCPCB-Diodes/TVS-Bi,5.0SMDJ64CA",
   "JLCPCB-Kicad-Library/JLCPCB-Diodes/TVS-Bi,SMDJ64CA"
  ],
- "embedding_text": "discrete-diode.d.103v | Discrete Diode | A cluster of 3 surface-mount discrete TVS diodes featuring a 103V facet rating in package family D with D_SMA and D_SMC(DO-214AB) footprints. | discrete diode 103v d_sma d_smc(do-214ab) tvs-uni tvs-bi smbj64a smdj64ca 5.0smdj64ca smd jlcpcb-kicad-library discrete diode tvs do esd smc 214ab jlcpcb diodes 64v iec and surge | D | 103V",
+ "embedding_text": "discrete-diode.d.103v | Discrete Diode | 3 discrete diode parts for 103V using D footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | tvs 103v do esd smc diode 214ab jlcpcb diodes 64v iec and surge protection rohs discrete | D | 103V",
  "class": "discrete.diode"
 }

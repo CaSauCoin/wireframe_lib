@@ -6,28 +6,21 @@
   "Discrete",
   "Transistor"
  ],
- "description": "Discrete transistor cluster containing one tier-B part using the SERIES footprint.",
+ "description": "1 discrete transistor parts using SERIES footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Use when a discrete transistor requiring a SERIES footprint is needed.",
-  "Verify the tier-B quality rating and dist-legacy source before selection.",
-  "Confirm compatibility with part SERIES_P2W or SERIES land pattern."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SERIES land pattern is intended."
  ],
  "avoid_when": [
-  "The board layout requires a footprint other than SERIES.",
-  "Specific electrical limits, package dimensions, or pinouts are unverified.",
-  "Tier-A quality parts with complete datasheet verification are required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SERIES."
  ],
  "keywords": [
-  "discrete transistor",
   "series",
-  "series footprint",
-  "series_p2w",
-  "dist-legacy",
-  "discrete",
-  "transistor",
-  "tier b",
   "p2w",
-  "discrete.transistor",
+  "transistor",
   "pin",
   "three",
   "component",
@@ -37,7 +30,8 @@
   "and",
   "emitter",
   "terminals",
-  "bjt"
+  "bjt",
+  "discrete"
  ],
  "facts": {
   "package_family": "SERIES",
@@ -58,7 +52,7 @@
   "tier_counts": {
    "B": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -73,6 +67,6 @@
  "part_ids": [
   "dist-legacy/SERIES P2W"
  ],
- "embedding_text": "discrete-transistor.series | Discrete Transistor | Discrete transistor cluster containing one tier-B part using the SERIES footprint. | discrete transistor series series footprint series_p2w dist-legacy discrete transistor tier b p2w discrete.transistor pin three component with base collector and emitter terminals bjt | SERIES | ",
+ "embedding_text": "discrete-transistor.series | Discrete Transistor | 1 discrete transistor parts using SERIES footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | series p2w transistor pin three component with base collector and emitter terminals bjt discrete | SERIES | ",
  "class": "discrete.transistor"
 }

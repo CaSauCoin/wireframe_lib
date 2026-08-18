@@ -6,30 +6,19 @@
   "IC",
   "Power"
  ],
- "description": "Power IC cluster containing 8.4V regulator controller components in through-hole DIP-8_W7.62mm packages, including UC3843_DIP8 and UC3845_DIP8.",
+ "description": "2 ic power parts for 8.4V using DIP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when requiring an 8.4V power regulator controller in a through-hole package.",
-  "Choose for designs matching the DIP-8_W7.62mm footprint.",
-  "Select between representative parts like UC3843_DIP8 and UC3845_DIP8 based on specific application needs."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a DIP land pattern is intended."
  ],
  "avoid_when": [
-  "Avoid if surface-mount (SMD) components are required.",
-  "Do not use when the PCB layout requires a package footprint other than DIP-8_W7.62mm.",
-  "Avoid if an 8.4V power regulator controller is not suitable for the circuit."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than DIP."
  ],
  "keywords": [
-  "ic",
-  "power",
-  "8.4v",
   "dip",
-  "through_hole",
-  "dip-8",
-  "dip-8_w7.62mm",
-  "regulator controller",
-  "uc3843",
-  "uc3845",
-  "uc3843_dip8",
-  "uc3845_dip8",
   "controller",
   "pwm",
   "4v",
@@ -41,7 +30,10 @@
   "mode",
   "controllers",
   "duty",
-  "cycle"
+  "cycle",
+  "6v",
+  "uvlo",
+  "w7"
  ],
  "facts": {
   "package_family": "DIP",
@@ -64,7 +56,7 @@
   "tier_counts": {
    "A": 2
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -88,6 +80,6 @@
   "kicad-symbols/Regulator_Controller/UC3843_DIP8",
   "kicad-symbols/Regulator_Controller/UC3845_DIP8"
  ],
- "embedding_text": "ic-power.dip.8-4v | IC Power | Power IC cluster containing 8.4V regulator controller components in through-hole DIP-8_W7.62mm packages, including UC3843_DIP8 and UC3845_DIP8. | ic power 8.4v dip through_hole dip-8 dip-8_w7.62mm regulator controller uc3843 uc3845 uc3843_dip8 uc3845_dip8 controller pwm 4v pdip 62mm dip8 regulator current mode controllers duty cycle | DIP | 8.4V",
+ "embedding_text": "ic-power.dip.8-4v | IC Power | 2 ic power parts for 8.4V using DIP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | dip controller pwm 4v pdip 62mm dip8 regulator current mode controllers duty cycle 6v uvlo w7 | DIP | 8.4V",
  "class": "ic.power"
 }

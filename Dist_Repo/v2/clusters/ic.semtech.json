@@ -5,28 +5,21 @@
  "category_path": [
   "IC"
  ],
- "description": "This cluster includes 3 IC parts using SEMTECH footprints such as SEMTECH SLP2510P8 for surface-mount designs.",
+ "description": "3 ic parts using SEMTECH footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Verify compatibility with SEMTECH land patterns including SEMTECH SLP2510P8.",
-  "Check mounting requirements for SMD or unspecified mount types.",
-  "Confirm source data from dist-legacy or celestial-altium-library."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SEMTECH land pattern is intended."
  ],
  "avoid_when": [
-  "The layout requires packages outside the SEMTECH footprint family.",
-  "Through-hole or non-surface-mount packaging is required.",
-  "Parts with quality tiers higher than tier C or planner visibility are required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SEMTECH."
  ],
  "keywords": [
   "semtech",
-  "ic",
   "slp2510p8",
-  "semtech slp2510p8",
-  "smd",
-  "semtech footprint",
-  "semtech package",
-  "dist legacy",
-  "celestial altium library",
-  "ic semtech",
+  "ic",
   "pad",
   "mm",
   "pitch",
@@ -59,7 +52,7 @@
   "tier_counts": {
    "C": 3
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
@@ -67,6 +60,6 @@
   "dist-legacy/Semtech QFN-16 3x3MM",
   "celestial-altium-library/SEMTECH SLP2510P8/SEMTECH_SLP2510P8"
  ],
- "embedding_text": "ic.semtech | IC | This cluster includes 3 IC parts using SEMTECH footprints such as SEMTECH SLP2510P8 for surface-mount designs. | semtech ic slp2510p8 semtech slp2510p8 smd semtech footprint semtech package dist legacy celestial altium library ic semtech pad mm pitch pins qfn 3x3mm surface mount | SEMTECH | ",
+ "embedding_text": "ic.semtech | IC | 3 ic parts using SEMTECH footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | semtech slp2510p8 ic pad mm pitch pins qfn 3x3mm surface mount | SEMTECH | ",
  "class": "ic"
 }

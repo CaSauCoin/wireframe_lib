@@ -6,29 +6,22 @@
   "Discrete",
   "Diode"
  ],
- "description": "Discrete diode cluster containing one tier C part with a 10uF_10V footprint from dist-legacy.",
+ "description": "1 discrete diode parts using 10uF footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Confirm the board layout uses a 10uF_10V footprint pattern.",
-  "Verify part specifications prior to use as specific electrical limits are not provided.",
-  "Use when tier C generated parts from dist-legacy sources are acceptable."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a 10uF land pattern is intended."
  ],
  "avoid_when": [
-  "The target design requires a package or footprint other than 10uF_10V.",
-  "Tier C quality tier or unreviewed generated status is unacceptable.",
-  "Exact pinouts, ratings, or package dimensions must be pre-verified."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than 10uF."
  ],
  "keywords": [
-  "discrete",
-  "diode",
-  "discrete diode",
   "10uf",
   "10v",
-  "10uf_10v",
-  "discrete.diode",
-  "dist-legacy",
-  "tier c",
-  "footprint 10uf_10v",
-  "package 10uf",
+  "discrete",
+  "diode",
   "pad",
   "mm",
   "pitch",
@@ -53,12 +46,12 @@
   "tier_counts": {
    "C": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
   "dist-legacy/10uF_10V"
  ],
- "embedding_text": "discrete-diode.10uf | Discrete Diode | Discrete diode cluster containing one tier C part with a 10uF_10V footprint from dist-legacy. | discrete diode discrete diode 10uf 10v 10uf_10v discrete.diode dist-legacy tier c footprint 10uf_10v package 10uf pad mm pitch pins | 10uF | ",
+ "embedding_text": "discrete-diode.10uf | Discrete Diode | 1 discrete diode parts using 10uF footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | 10uf 10v discrete diode pad mm pitch pins | 10uF | ",
  "class": "discrete.diode"
 }

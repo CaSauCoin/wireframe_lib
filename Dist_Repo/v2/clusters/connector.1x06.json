@@ -5,44 +5,34 @@
  "category_path": [
   "Connector"
  ],
- "description": "Cluster of 7 single-row 1x06 connector parts (2.54mm pitch family) from SparkFun-KiCad-Libraries, spanning through-hole and SMD header/socket footprint variants including a locking option.",
+ "description": "7 connector parts using 1x06 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Match the exact footprint variant (through-hole vs SMD header vs SMD socket vs locking) to your board's land pattern",
-  "Distinguish horizontal vs vertical SMD socket orientation and pin1 placement before layout",
-  "Prefer tier B entries; only one part is tier C in this cluster",
-  "Confirm source is SparkFun-KiCad-Libraries if provenance matters"
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a 1x06 land pattern is intended."
  ],
  "avoid_when": [
-  "Board requires a pin count other than 6 or a pitch other than 2.54mm",
-  "A specific mount type (SMD vs through-hole) or orientation isn't confirmed against the target footprint",
-  "Electrical ratings, pinout, or lifecycle/manufacturer data are required but not stated by the selected part",
-  "The part is the sole tier C entry and a higher-quality tier is needed"
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than 1x06."
  ],
  "keywords": [
   "connector",
-  "1x06",
-  "01x06",
-  "conn_01x06",
   "sparkfun",
-  "2.54mm",
-  "p2.54mm",
-  "single row",
-  "header",
-  "socket",
-  "smd",
-  "through hole",
-  "horizontal",
-  "vertical",
-  "locking",
-  "pin1rightdown",
-  "6 pin",
-  "pin header",
   "54mm",
+  "1x06",
+  "smd",
   "p2",
+  "socket",
+  "01x06",
   "conn",
+  "vertical",
   "right",
+  "locking",
+  "horizontal",
   "single",
-  "row"
+  "row",
+  "pin1rightdown"
  ],
  "facts": {
   "package_family": "1x06",
@@ -71,7 +61,7 @@
    "B": 6,
    "C": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -124,6 +114,6 @@
   "SparkFun-KiCad-Libraries/SparkFun-Connector/Conn_01x06_P2.54mm_Socket_Vertical_SMD_Pin1RightDown_Passthru",
   "SparkFun-KiCad-Libraries/SparkFun-Connector/Conn_01x06_P2.54mm_Locking"
  ],
- "embedding_text": "connector.1x06 | Connector | Cluster of 7 single-row 1x06 connector parts (2.54mm pitch family) from SparkFun-KiCad-Libraries, spanning through-hole and SMD header/socket footprint variants including a locking option. | connector 1x06 01x06 conn_01x06 sparkfun 2.54mm p2.54mm single row header socket smd through hole horizontal vertical locking pin1rightdown 6 pin pin header 54mm p2 conn right single row | 1x06 | ",
+ "embedding_text": "connector.1x06 | Connector | 7 connector parts using 1x06 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | connector sparkfun 54mm 1x06 smd p2 socket 01x06 conn vertical right locking horizontal single row pin1rightdown | 1x06 | ",
  "class": "connector"
 }

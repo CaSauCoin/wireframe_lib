@@ -5,26 +5,20 @@
  "category_path": [
   "IC"
  ],
- "description": "Cluster of 3 tier C IC parts associated with the FZ68 package family and footprints FZ68_L, FZ68_M, and FZ68_N.",
+ "description": "3 ic parts using FZ68 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when a footprint from the FZ68 family (FZ68_L, FZ68_M, FZ68_N) is required.",
-  "Verify suitability of tier C parts from dist-legacy sources."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a FZ68 land pattern is intended."
  ],
  "avoid_when": [
-  "Do not use if the design requires a package family other than FZ68.",
-  "Avoid when tier C quality parts or unverified mount specifications are not permitted."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than FZ68."
  ],
  "keywords": [
   "fz68",
   "ic",
-  "fz68_l",
-  "fz68_m",
-  "fz68_n",
-  "fz68 footprint",
-  "fz68 package",
-  "package family fz68",
-  "tier c",
-  "dist-legacy",
   "pad",
   "mm",
   "pitch",
@@ -51,7 +45,7 @@
   "tier_counts": {
    "C": 3
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
@@ -59,6 +53,6 @@
   "dist-legacy/FZ68_M",
   "dist-legacy/FZ68_N"
  ],
- "embedding_text": "ic.fz68 | IC | Cluster of 3 tier C IC parts associated with the FZ68 package family and footprints FZ68_L, FZ68_M, and FZ68_N. | fz68 ic fz68_l fz68_m fz68_n fz68 footprint fz68 package package family fz68 tier c dist-legacy pad mm pitch pins | FZ68 | ",
+ "embedding_text": "ic.fz68 | IC | 3 ic parts using FZ68 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | fz68 ic pad mm pitch pins | FZ68 | ",
  "class": "ic"
 }

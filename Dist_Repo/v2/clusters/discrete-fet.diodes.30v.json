@@ -6,36 +6,28 @@
   "Discrete",
   "FET"
  ],
- "description": "Cluster of 3 SMD discrete FET parts with a 30V rating using Diodes PowerDI3333-8 and UDFN2020-6_Type-F footprints from KiCad symbols.",
+ "description": "3 discrete fet parts for 30V using Diodes footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when needing a 30V rated surface-mount discrete FET.",
-  "Verify layout compatibility with Diodes_PowerDI3333-8 or Diodes_UDFN2020-6_Type-F footprints.",
-  "Prioritize Tier A parts such as DMN3008SFG or DMP3013SFV."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a Diodes land pattern is intended."
  ],
  "avoid_when": [
-  "The application requires through-hole components instead of SMD.",
-  "The circuit requires voltage ratings other than 30V.",
-  "The PCB footprint requires package families other than Diodes."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than Diodes."
  ],
  "keywords": [
-  "discrete",
   "fet",
-  "mosfet",
   "30v",
   "diodes",
-  "smd",
-  "powerdi3333-8",
-  "udfn2020-6_type-f",
-  "dmn3008sfg",
-  "dmp3013sfv",
-  "12n03m",
-  "kicad-symbols",
-  "transistor",
-  "discrete fet",
   "channel",
+  "mosfet",
+  "transistor",
   "powerdi3333",
   "id",
   "vds",
+  "discrete",
   "power",
   "ron",
   "qg",
@@ -66,7 +58,7 @@
    "A": 2,
    "B": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -99,6 +91,6 @@
   "kicad-symbols/Transistor_FET/DMP3013SFV",
   "kicad-symbols/Transistor_FET/12N03M"
  ],
- "embedding_text": "discrete-fet.diodes.30v | Discrete FET | Cluster of 3 SMD discrete FET parts with a 30V rating using Diodes PowerDI3333-8 and UDFN2020-6_Type-F footprints from KiCad symbols. | discrete fet mosfet 30v diodes smd powerdi3333-8 udfn2020-6_type-f dmn3008sfg dmp3013sfv 12n03m kicad-symbols transistor discrete fet channel powerdi3333 id vds power ron qg typ powerdi 12a | Diodes | 30V",
+ "embedding_text": "discrete-fet.diodes.30v | Discrete FET | 3 discrete fet parts for 30V using Diodes footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | fet 30v diodes channel mosfet transistor powerdi3333 id vds discrete power ron qg typ powerdi 12a | Diodes | 30V",
  "class": "discrete.fet"
 }

@@ -7,34 +7,22 @@
   "Analog",
   "Amplifier"
  ],
- "description": "A cluster of 3 tier-A SMD IC analog amplifier parts in MSOP-8 packages matching 5V and 1.5V voltage facets.",
+ "description": "3 ic analog amplifier parts for 5V, 1.5V using MSOP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when an SMD IC analog amplifier in an MSOP-8 footprint is required.",
-  "Choose among LTC1992 variant parts (LTC1992CMS8, LTC1992HMS8, LTC1992IMS8).",
-  "Use for designs matching 5V and 1.5V operating voltage facets."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a MSOP land pattern is intended."
  ],
  "avoid_when": [
-  "The PCB layout requires through-hole components or packages other than MSOP-8.",
-  "The application target voltages differ from 5V or 1.5V facets.",
-  "Components from sources other than Alternate-KiCad-Library are required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than MSOP."
  ],
  "keywords": [
-  "ic",
-  "analog",
   "amplifier",
   "msop",
-  "msop-8",
-  "smd",
-  "5v",
-  "1.5v",
-  "ltc1992",
-  "ltc1992cms8",
-  "ltc1992hms8",
-  "ltc1992ims8",
-  "alternate-kicad-library",
-  "3x3mm",
-  "p0.65mm",
   "differential",
+  "5v",
   "driver",
   "akl",
   "5mhz",
@@ -42,7 +30,11 @@
   "slew",
   "rate",
   "offset",
-  "alternate"
+  "alternate",
+  "kicad",
+  "library",
+  "3x3mm",
+  "p0"
  ],
  "facts": {
   "package_family": "MSOP",
@@ -66,7 +58,7 @@
   "tier_counts": {
    "A": 3
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -99,6 +91,6 @@
   "Alternate-KiCad-Library/Amplifier_Differential_AKL/LTC1992HMS8",
   "Alternate-KiCad-Library/Amplifier_Differential_AKL/LTC1992IMS8"
  ],
- "embedding_text": "ic-analog-amplifier.msop.5v.1-5v | IC Analog Amplifier | A cluster of 3 tier-A SMD IC analog amplifier parts in MSOP-8 packages matching 5V and 1.5V voltage facets. | ic analog amplifier msop msop-8 smd 5v 1.5v ltc1992 ltc1992cms8 ltc1992hms8 ltc1992ims8 alternate-kicad-library 3x3mm p0.65mm differential driver akl 5mhz bandwidth slew rate offset alternate | MSOP | 5V 1.5V",
+ "embedding_text": "ic-analog-amplifier.msop.5v.1-5v | IC Analog Amplifier | 3 ic analog amplifier parts for 5V, 1.5V using MSOP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | amplifier msop differential 5v driver akl 5mhz bandwidth slew rate offset alternate kicad library 3x3mm p0 | MSOP | 5V 1.5V",
  "class": "ic.analog.amplifier"
 }

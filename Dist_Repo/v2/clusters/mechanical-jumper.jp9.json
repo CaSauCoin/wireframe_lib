@@ -6,32 +6,21 @@
   "Mechanical",
   "Jumper"
  ],
- "description": "A cluster of 9 mechanical jumper parts in the JP9 package family with various JP9 footprint designations.",
+ "description": "9 mechanical jumper parts using JP9 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select based on the specific JP9 footprint variant required by the PCB layout.",
-  "Verify land pattern match against designated variants like JP9-C1C, JP9-C2T, or JP9-D1C.",
-  "Review legacy source data as all included parts are rated tier C."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a JP9 land pattern is intended."
  ],
  "avoid_when": [
-  "The board layout requires a footprint or package family other than JP9.",
-  "A part class other than a mechanical jumper is required.",
-  "Designs mandate verified tier A or planner-visible parts."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than JP9."
  ],
  "keywords": [
-  "mechanical jumper",
   "jp9",
-  "jumper",
   "mechanical",
-  "jp9-c1c",
-  "jp9-c2t",
-  "jp9-d1c",
-  "jp9-d1t",
-  "jp9-d2c",
-  "jp9-d2t",
-  "jp9-c2c",
-  "jp9_1",
-  "jp9_2",
-  "jp9 footprint",
+  "jumper",
   "pad",
   "mm",
   "pitch",
@@ -41,7 +30,8 @@
   "d1c",
   "d1t",
   "d2c",
-  "d2t"
+  "d2t",
+  "c2c"
  ],
  "facts": {
   "package_family": "JP9",
@@ -70,7 +60,7 @@
   "tier_counts": {
    "C": 9
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
@@ -84,6 +74,6 @@
   "dist-legacy/JP9_2",
   "dist-legacy/JP9-C2C"
  ],
- "embedding_text": "mechanical-jumper.jp9 | Mechanical Jumper | A cluster of 9 mechanical jumper parts in the JP9 package family with various JP9 footprint designations. | mechanical jumper jp9 jumper mechanical jp9-c1c jp9-c2t jp9-d1c jp9-d1t jp9-d2c jp9-d2t jp9-c2c jp9_1 jp9_2 jp9 footprint pad mm pitch pins c1c c2t d1c d1t d2c d2t | JP9 | ",
+ "embedding_text": "mechanical-jumper.jp9 | Mechanical Jumper | 9 mechanical jumper parts using JP9 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | jp9 mechanical jumper pad mm pitch pins c1c c2t d1c d1t d2c d2t c2c | JP9 | ",
  "class": "mechanical.jumper"
 }

@@ -5,42 +5,34 @@
  "category_path": [
   "IC"
  ],
- "description": "Cluster of 4 surface-mount IC reference voltage parts in SOIC-8 (3.9x4.9mm, 1.27mm pitch) footprints associated with 5V and 3V facets.",
+ "description": "4 ic parts for 5V, 3V using SOIC footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Choose when requiring surface-mount ICs in a SOIC-8 footprint (3.9x4.9mm, 1.27mm pitch).",
-  "Select for application requirements matching 5V or 3V facets.",
-  "Select when Tier A KiCad LT1461 reference voltage parts are desired."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SOIC land pattern is intended."
  ],
  "avoid_when": [
-  "Avoid when board layout requires a package family other than SOIC.",
-  "Avoid if through-hole or non-SMD mounting is required.",
-  "Do not use if operating parameters are outside 5V or 3V facets."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SOIC."
  ],
  "keywords": [
-  "ic",
   "soic",
-  "soic-8",
-  "smd",
-  "5v",
-  "3v",
-  "reference voltage",
-  "lt1461",
-  "lt1461axs8-3",
-  "lt1461bxs8-3",
-  "lt1461cxs8-3",
-  "lt1461dxs8-3",
-  "3.9x4.9mm",
-  "p1.27mm",
-  "kicad-symbols",
   "reference",
   "voltage",
+  "3v",
+  "5v",
   "100ma",
   "20v",
   "vin",
   "9x4",
   "9mm",
   "p1",
-  "27mm"
+  "27mm",
+  "so",
+  "precision",
+  "ic",
+  "lt1461axs8"
  ],
  "facts": {
   "package_family": "SOIC",
@@ -64,7 +56,7 @@
   "tier_counts": {
    "A": 4
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -106,6 +98,6 @@
   "kicad-symbols/Reference_Voltage/LT1461CxS8-3",
   "kicad-symbols/Reference_Voltage/LT1461DxS8-3"
  ],
- "embedding_text": "ic.soic.5v.3v | IC | Cluster of 4 surface-mount IC reference voltage parts in SOIC-8 (3.9x4.9mm, 1.27mm pitch) footprints associated with 5V and 3V facets. | ic soic soic-8 smd 5v 3v reference voltage lt1461 lt1461axs8-3 lt1461bxs8-3 lt1461cxs8-3 lt1461dxs8-3 3.9x4.9mm p1.27mm kicad-symbols reference voltage 100ma 20v vin 9x4 9mm p1 27mm | SOIC | 5V 3V",
+ "embedding_text": "ic.soic.5v.3v | IC | 4 ic parts for 5V, 3V using SOIC footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | soic reference voltage 3v 5v 100ma 20v vin 9x4 9mm p1 27mm so precision ic lt1461axs8 | SOIC | 5V 3V",
  "class": "ic"
 }

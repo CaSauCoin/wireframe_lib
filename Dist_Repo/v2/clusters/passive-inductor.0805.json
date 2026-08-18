@@ -6,30 +6,20 @@
   "Passive",
   "Inductor"
  ],
- "description": "Cluster of 42 passive inductor parts in the 0805 package family across SMD, through-hole, and unknown mounting types.",
+ "description": "42 passive inductor parts using 0805 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Prefer higher quality entries such as tier A and tier B parts.",
-  "Verify the specific 0805 footprint variant matches your PCB layout requirements.",
-  "Check the mount type to ensure compatibility with SMD or through-hole assembly."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a 0805 land pattern is intended."
  ],
  "avoid_when": [
-  "A package family other than 0805 is required by the design.",
-  "Components other than passive inductors are needed.",
-  "The required footprint variant is not available in this cluster."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than 0805."
  ],
  "keywords": [
-  "passive",
   "inductor",
-  "passive inductor",
-  "0805",
-  "smd",
-  "through_hole",
-  "l_0805",
-  "c_0805_2012metric",
-  "2012metric",
-  "ferrite",
-  "sparkfun",
-  "jlcpcb",
+  "passive",
   "changjiang",
   "surface",
   "mount",
@@ -41,7 +31,9 @@
   "wuerth",
   "com",
   "we",
-  "pmci"
+  "pmci",
+  "2012metric",
+  "smd"
  ],
  "facts": {
   "package_family": "0805",
@@ -82,7 +74,7 @@
    "B": 10,
    "C": 28
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -170,6 +162,6 @@
   "chilaboard-altium-library/L0805E/L0805E",
   "dist-legacy/L_Coilcraft_0805HQ_2012Metric"
  ],
- "embedding_text": "passive-inductor.0805 | Passive Inductor | Cluster of 42 passive inductor parts in the 0805 package family across SMD, through-hole, and unknown mounting types. | passive inductor passive inductor 0805 smd through_hole l_0805 c_0805_2012metric 2012metric ferrite sparkfun jlcpcb changjiang surface mount pad mm pitch pins package wuerth com we pmci | 0805 | ",
+ "embedding_text": "passive-inductor.0805 | Passive Inductor | 42 passive inductor parts using 0805 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | inductor passive changjiang surface mount pad mm pitch pins package wuerth com we pmci 2012metric smd | 0805 | ",
  "class": "passive.inductor"
 }

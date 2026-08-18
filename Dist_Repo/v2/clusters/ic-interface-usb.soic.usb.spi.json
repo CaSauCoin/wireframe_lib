@@ -7,31 +7,25 @@
   "Interface",
   "USB"
  ],
- "description": "SMD USB interface IC cluster supporting USB and SPI functions in a SOIC package family with SOIC-20W footprints.",
+ "description": "1 ic interface usb parts for USB, SPI using SOIC footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Choose for SMD designs requiring USB and SPI interface integration in a SOIC package.",
-  "Confirm land pattern alignment with SOIC-20W (7.5x12.8mm, P1.27mm) footprint specifications.",
-  "Select when utilizing KiCad symbol library parts such as MCP2210x-SO."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SOIC land pattern is intended."
  ],
  "avoid_when": [
-  "The layout demands through-hole mounting or package families other than SOIC.",
-  "Protocols outside of USB and SPI are required for the interface.",
-  "Exact electrical parameters or pinouts are needed but not provided in the cluster definition."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SOIC."
  ],
  "keywords": [
   "usb",
-  "spi",
   "soic",
-  "soic-20w",
-  "smd",
-  "interface ic",
-  "ic interface usb",
-  "mcp2210x",
-  "mcp2210x-so",
-  "kicad-symbols",
+  "spi",
   "so",
   "interface",
   "converter",
+  "mcp2210x",
   "to",
   "protocol",
   "with",
@@ -64,7 +58,7 @@
   "tier_counts": {
    "A": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -79,6 +73,6 @@
  "part_ids": [
   "kicad-symbols/Interface_USB/MCP2210x-SO"
  ],
- "embedding_text": "ic-interface-usb.soic.usb.spi | IC Interface USB | SMD USB interface IC cluster supporting USB and SPI functions in a SOIC package family with SOIC-20W footprints. | usb spi soic soic-20w smd interface ic ic interface usb mcp2210x mcp2210x-so kicad-symbols so interface converter to protocol with gpio 20w 5x12 8mm p1 27mm | SOIC | USB SPI",
+ "embedding_text": "ic-interface-usb.soic.usb.spi | IC Interface USB | 1 ic interface usb parts for USB, SPI using SOIC footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | usb soic spi so interface converter mcp2210x to protocol with gpio 20w 5x12 8mm p1 27mm | SOIC | USB SPI",
  "class": "ic.interface.usb"
 }

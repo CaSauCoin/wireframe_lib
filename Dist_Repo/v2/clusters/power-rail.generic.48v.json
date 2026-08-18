@@ -6,31 +6,19 @@
   "Power",
   "Power Rail"
  ],
- "description": "Generic +48V and -48V schematic power rail symbols from KiCad libraries with package and footprint assigned later.",
+ "description": "2 power power rail parts for 48V with package chosen later. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select between positive (+48V) and negative (-48V) polarity symbols based on net requirements.",
-  "Assign physical footprints and package models downstream during PCB layout.",
-  "Verify quality tier ratings and symbol library sources prior to schematic capture."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Select a footprint/package explicitly before placement."
  ],
  "avoid_when": [
-  "The design requires voltages other than positive or negative 48V.",
-  "Physical connector, regulator, or IC footprints are needed rather than schematic power rail symbols.",
-  "Pre-assigned PCB footprint associations are required directly on the symbol."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review."
  ],
  "keywords": [
-  "power rail",
-  "48v",
-  "+48v",
-  "-48v",
-  "power symbol",
-  "schematic symbol",
-  "kicad",
-  "voltage rail",
-  "generic power",
-  "positive 48v",
-  "negative 48v",
-  "power.rail",
   "power",
+  "48v",
   "global",
   "symbol",
   "creates",
@@ -59,7 +47,7 @@
   "tier_counts": {
    "G": 2
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -83,6 +71,6 @@
   "kicad-symbols/power/+48V",
   "kicad-symbols/power/-48V"
  ],
- "embedding_text": "power-rail.generic.48v | Power Power Rail | Generic +48V and -48V schematic power rail symbols from KiCad libraries with package and footprint assigned later. | power rail 48v +48v -48v power symbol schematic symbol kicad voltage rail generic power positive 48v negative 48v power.rail power global symbol creates label with name rail package chosen later | package chosen later | 48V",
+ "embedding_text": "power-rail.generic.48v | Power Power Rail | 2 power power rail parts for 48V with package chosen later. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | power 48v global symbol creates label with name rail package chosen later | package chosen later | 48V",
  "class": "power.rail"
 }

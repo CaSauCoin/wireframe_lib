@@ -6,30 +6,20 @@
   "Electromechanical",
   "Relay"
  ],
- "description": "Electromechanical relay cluster of 8 surface-mount (SMD) Tier A parts in SOP package family with SOP-4_3.8x4.1mm_P2.54mm footprints.",
+ "description": "8 electromechanical relay parts using SOP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when surface-mount (SMD) relay components in SOP packaging are required.",
-  "Select for PCB designs requiring SOP-4_3.8x4.1mm_P2.54mm footprints.",
-  "Select when choosing from Tier A quality KiCad symbol entries."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SOP land pattern is intended."
  ],
  "avoid_when": [
-  "Avoid when non-SMD or through-hole mounting is required.",
-  "Avoid when PCB layout specifies packaging other than SOP."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SOP."
  ],
  "keywords": [
-  "electromechanical relay",
   "relay",
   "sop",
-  "smd",
-  "sop-4",
-  "sop-4_3.8x4.1mm_p2.54mm",
-  "electromechanical",
-  "kicad-symbols",
-  "cpc1010n",
-  "cpc1025n",
-  "cpc1030n",
-  "cpc1035n",
-  "cpc1125n",
   "form",
   "mosfet",
   "so",
@@ -40,7 +30,10 @@
   "ac",
   "dc",
   "8x4",
-  "1mm"
+  "1mm",
+  "p2",
+  "54mm",
+  "output"
  ],
  "facts": {
   "package_family": "SOP",
@@ -61,7 +54,7 @@
   "tier_counts": {
    "A": 8
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -115,6 +108,6 @@
   "kicad-symbols/Relay_SolidState/CPC1135N",
   "kicad-symbols/Relay_SolidState/CPC1150N"
  ],
- "embedding_text": "electromechanical-relay.sop | Electromechanical Relay | Electromechanical relay cluster of 8 surface-mount (SMD) Tier A parts in SOP package family with SOP-4_3.8x4.1mm_P2.54mm footprints. | electromechanical relay relay sop smd sop-4 sop-4_3.8x4.1mm_p2.54mm electromechanical kicad-symbols cpc1010n cpc1025n cpc1030n cpc1035n cpc1125n form mosfet so solidstate solid state photo ac dc 8x4 1mm | SOP | ",
+ "embedding_text": "electromechanical-relay.sop | Electromechanical Relay | 8 electromechanical relay parts using SOP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | relay sop form mosfet so solidstate solid state photo ac dc 8x4 1mm p2 54mm output | SOP | ",
  "class": "electromechanical.relay"
 }

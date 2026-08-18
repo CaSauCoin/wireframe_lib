@@ -6,44 +6,34 @@
   "Discrete",
   "Diode"
  ],
- "description": "Cluster of 14 SMD discrete diode parts rated for the 5V facet in SOT-family footprints (SOT-143, SOT-353, SOT-363, SOT-523, SOT-665, SOT-666, SOT-883, SOT-886), sourced from Alternate-KiCad-Library; mostly TVS-style protection diodes (PESD5V0 series).",
+ "description": "14 discrete diode parts for 5V using SOT footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Match the exact SOT footprint variant (e.g. SOT-666 vs SOT-886) to the intended PCB land pattern",
-  "Prefer tier A entries — 12 of 14 parts in this cluster are tier A, 2 are tier B",
-  "Confirm the 5V facet matches the circuit's required voltage before committing",
-  "Distinguish plain diode vs TVS/protection-type parts (e.g. PESD-series names) by intended use"
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SOT land pattern is intended."
  ],
  "avoid_when": [
-  "Required voltage, current, speed, or tolerance is not explicitly stated by the chosen part",
-  "Needed footprint is not one of the listed SOT variants (SOT-143/353/363/523/665/666/883/886)",
-  "Symbol-footprint pairing needs verification — review_status is 'generated', not manually reviewed",
-  "A non-SMD or non-SOT mount/package is required"
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SOT."
  ],
  "keywords": [
   "diode",
-  "discrete diode",
   "sot",
-  "sot-143",
-  "sot-353",
-  "sot-363",
-  "sot-523",
-  "sot-665",
-  "sot-666",
-  "sot-883",
-  "sot-886",
-  "5v",
   "tvs",
-  "esd protection",
-  "pesd",
-  "smd diode",
-  "alternate kicad library",
-  "akl",
+  "5v",
   "array",
+  "akl",
   "alternate",
   "kicad",
   "library",
   "discrete",
-  "sc"
+  "sc",
+  "unidirectional",
+  "protected",
+  "lines",
+  "pesd",
+  "5xunidirectional"
  ],
  "facts": {
   "package_family": "SOT",
@@ -74,7 +64,7 @@
    "A": 12,
    "B": 2
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -134,6 +124,6 @@
   "Alternate-KiCad-Library/Diode_TVS_AKL/D5V0L2B3T",
   "Alternate-KiCad-Library/Diode_TVS_AKL/DI5315-02F"
  ],
- "embedding_text": "discrete-diode.sot.5v | Discrete Diode | Cluster of 14 SMD discrete diode parts rated for the 5V facet in SOT-family footprints (SOT-143, SOT-353, SOT-363, SOT-523, SOT-665, SOT-666, SOT-883, SOT-886), sourced from Alternate-KiCad-Library; mostly TVS-style protection diodes (PESD5V0 series). | diode discrete diode sot sot-143 sot-353 sot-363 sot-523 sot-665 sot-666 sot-883 sot-886 5v tvs esd protection pesd smd diode alternate kicad library akl array alternate kicad library discrete sc | SOT | 5V",
+ "embedding_text": "discrete-diode.sot.5v | Discrete Diode | 14 discrete diode parts for 5V using SOT footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | diode sot tvs 5v array akl alternate kicad library discrete sc unidirectional protected lines pesd 5xunidirectional | SOT | 5V",
  "class": "discrete.diode"
 }

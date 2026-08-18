@@ -5,28 +5,20 @@
  "category_path": [
   "IC"
  ],
- "description": "Integrated circuit cluster for CANBus package family parts utilizing CANBus footprints.",
+ "description": "1 ic parts using CANBus footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when a part in the CANBus package family with a CANBus footprint is required.",
-  "Verify footprint parameters and part data prior to layout commitment.",
-  "Check source trust and specifications for tier C entries."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a CANBus land pattern is intended."
  ],
  "avoid_when": [
-  "The PCB design requires a package family other than CANBus.",
-  "Higher quality tier classification or explicit mount information is required.",
-  "Parts must be visible to the planner."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than CANBus."
  ],
  "keywords": [
-  "ic",
   "canbus",
-  "canbus package",
-  "canbus footprint",
-  "integrated circuit",
-  "tier c",
-  "dist-legacy",
-  "package family",
-  "ic.canbus",
-  "footprints",
+  "ic",
   "pad",
   "mm",
   "pitch",
@@ -51,12 +43,12 @@
   "tier_counts": {
    "C": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
   "dist-legacy/CANBus"
  ],
- "embedding_text": "ic.canbus | IC | Integrated circuit cluster for CANBus package family parts utilizing CANBus footprints. | ic canbus canbus package canbus footprint integrated circuit tier c dist-legacy package family ic.canbus footprints pad mm pitch pins | CANBus | ",
+ "embedding_text": "ic.canbus | IC | 1 ic parts using CANBus footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | canbus ic pad mm pitch pins | CANBus | ",
  "class": "ic"
 }

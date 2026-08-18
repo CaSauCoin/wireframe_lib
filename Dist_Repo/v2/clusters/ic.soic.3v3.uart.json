@@ -5,31 +5,21 @@
  "category_path": [
   "IC"
  ],
- "description": "Surface-mount 3.3V UART/serial IC cluster in an 8-pin SOIC footprint featuring an RS485/422 transceiver.",
+ "description": "1 ic parts for 3.3V, UART/serial using SOIC footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when requiring a 3.3V UART or RS485/422 serial transceiver IC.",
-  "Verify compatibility with the SOIC-8_L5.0-W4.0-P1.27-LS6.0-BL footprint.",
-  "Confirm Tier B quality rating and JLCPCB library availability."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SOIC land pattern is intended."
  ],
  "avoid_when": [
-  "Do not use if the design requires an operating voltage other than 3.3V.",
-  "Avoid when non-SOIC packages or through-hole mounting are required.",
-  "Avoid if communication protocols other than UART, RS485, or RS422 are needed."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SOIC."
  ],
  "keywords": [
   "soic",
-  "soic-8",
-  "3.3v",
-  "uart",
-  "serial",
-  "rs485",
-  "rs422",
   "transceiver",
   "10mbps",
-  "sp3485en-l/tr",
-  "smd",
-  "jlcpcb",
-  "ic",
   "3v",
   "rs",
   "l5",
@@ -37,8 +27,10 @@
   "p1",
   "ls6",
   "bl",
+  "rs485",
   "sp3485en",
   "tr",
+  "jlcpcb",
   "interface",
   "2ma"
  ],
@@ -64,7 +56,7 @@
   "tier_counts": {
    "B": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -79,6 +71,6 @@
  "part_ids": [
   "JLCPCB-Kicad-Library/JLCPCB-Interface/Transceiver, RS485/422, 10Mbps, SP3485EN-L/TR"
  ],
- "embedding_text": "ic.soic.3v3.uart | IC | Surface-mount 3.3V UART/serial IC cluster in an 8-pin SOIC footprint featuring an RS485/422 transceiver. | soic soic-8 3.3v uart serial rs485 rs422 transceiver 10mbps sp3485en-l/tr smd jlcpcb ic 3v rs l5 w4 p1 ls6 bl sp3485en tr interface 2ma | SOIC | 3.3V UART/serial",
+ "embedding_text": "ic.soic.3v3.uart | IC | 1 ic parts for 3.3V, UART/serial using SOIC footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | soic transceiver 10mbps 3v rs l5 w4 p1 ls6 bl rs485 sp3485en tr jlcpcb interface 2ma | SOIC | 3.3V UART/serial",
  "class": "ic"
 }

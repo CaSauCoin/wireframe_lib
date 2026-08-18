@@ -5,30 +5,20 @@
  "category_path": [
   "IC"
  ],
- "description": "Cluster of 7 through-hole IC parts in the TO220 package family featuring footprints such as TO220_5, TO220_5B, TO220_5_T05D, TO220_7, and TO220_7B.",
+ "description": "7 ic parts using TO220 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Prefer Tier B parts over Tier C parts for higher quality scoring.",
-  "Match the target PCB layout with the specific footprint variant such as TO220_5 or TO220_7.",
-  "Confirm through-hole mounting suitability for the target design."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a TO220 land pattern is intended."
  ],
  "avoid_when": [
-  "The PCB layout requires surface-mount components rather than through-hole.",
-  "A package family other than TO220 is required.",
-  "Tier A quality rated parts are required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than TO220."
  ],
  "keywords": [
-  "ic",
   "to220",
-  "through_hole",
-  "through hole",
-  "to220_5",
-  "to220_5b",
-  "to220_5_t05d",
-  "to220_7",
-  "to220_7b",
-  "chilaboard-altium-library",
-  "vreg_lm2576hvt-adjto220",
-  "vreg_lm2577t-adj_to220",
+  "ic",
   "regulator",
   "pins",
   "through",
@@ -40,7 +30,9 @@
   "t05d",
   "7b",
   "vreg",
-  "adjustable"
+  "adjustable",
+  "voltage",
+  "to"
  ],
  "facts": {
   "package_family": "TO220",
@@ -66,7 +58,7 @@
    "B": 2,
    "C": 5
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -95,6 +87,6 @@
   "chilaboard-altium-library/TO220_7/TO220_7",
   "chilaboard-altium-library/TO220_7B/TO220_7B"
  ],
- "embedding_text": "ic.to220 | IC | Cluster of 7 through-hole IC parts in the TO220 package family featuring footprints such as TO220_5, TO220_5B, TO220_5_T05D, TO220_7, and TO220_7B. | ic to220 through_hole through hole to220_5 to220_5b to220_5_t05d to220_7 to220_7b chilaboard-altium-library vreg_lm2576hvt-adjto220 vreg_lm2577t-adj_to220 regulator pins through hole pad mm pitch 5b t05d 7b vreg adjustable | TO220 | ",
+ "embedding_text": "ic.to220 | IC | 7 ic parts using TO220 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | to220 ic regulator pins through hole pad mm pitch 5b t05d 7b vreg adjustable voltage to | TO220 | ",
  "class": "ic"
 }

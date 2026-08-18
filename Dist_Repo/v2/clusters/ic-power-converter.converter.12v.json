@@ -7,38 +7,32 @@
   "Power",
   "Converter"
  ],
- "description": "This cluster contains 144 12V IC power converter components supporting surface-mount and through-hole converter footprints.",
+ "description": "144 ic power converter parts for 12V using Converter footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Requiring a 12V IC power converter in surface-mount (SMD) or through-hole (THT) mounting.",
-  "Selecting between tier A and tier B converter parts from KiCad symbols.",
-  "Matching DCDC or ACDC converter footprint styles and package land patterns."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a Converter land pattern is intended."
  ],
  "avoid_when": [
-  "The design requires a voltage facet other than 12V.",
-  "Neither surface-mount nor through-hole converter footprints fit the layout requirements.",
-  "A non-converter power IC package or non-converter category component is needed."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than Converter."
  ],
  "keywords": [
-  "ic",
-  "power converter",
-  "12v",
   "converter",
-  "smd",
-  "through_hole",
-  "tht",
-  "dcdc",
-  "acdc",
-  "kicad-symbols",
-  "power ic",
-  "12v converter",
   "dc",
   "power",
+  "12v",
+  "dcdc",
+  "tht",
   "isolated",
   "module",
   "voltage",
   "xp",
   "output",
   "traco",
+  "ic",
+  "acdc",
   "input",
   "ac"
  ],
@@ -76,7 +70,7 @@
    "A": 90,
    "B": 54
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -266,6 +260,6 @@
   "kicad-symbols/Converter_ACDC/TMPW10-112",
   "kicad-symbols/Converter_ACDC/TMPW5-112"
  ],
- "embedding_text": "ic-power-converter.converter.12v | IC Power Converter | This cluster contains 144 12V IC power converter components supporting surface-mount and through-hole converter footprints. | ic power converter 12v converter smd through_hole tht dcdc acdc kicad-symbols power ic 12v converter dc power isolated module voltage xp output traco input ac | Converter | 12V",
+ "embedding_text": "ic-power-converter.converter.12v | IC Power Converter | 144 ic power converter parts for 12V using Converter footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | converter dc power 12v dcdc tht isolated module voltage xp output traco ic acdc input ac | Converter | 12V",
  "class": "ic.power.converter"
 }

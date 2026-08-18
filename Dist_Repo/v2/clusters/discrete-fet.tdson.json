@@ -6,37 +6,30 @@
   "Discrete",
   "FET"
  ],
- "description": "Discrete FET cluster containing surface-mount transistor components in TDSON-8-1 footprints sourced from KiCad symbol libraries.",
+ "description": "3 discrete fet parts using TDSON footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select for surface-mount discrete FET applications requiring TDSON-8-1 footprints.",
-  "Choose when using KiCad symbol library components with tier A quality parts.",
-  "Verify part specifications and pin configuration against target circuit requirements."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a TDSON land pattern is intended."
  ],
  "avoid_when": [
-  "The board layout requires packages or footprints other than TDSON-8-1.",
-  "The design requires through-hole or non-SMD transistor mounting."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than TDSON."
  ],
  "keywords": [
-  "discrete fet",
-  "fet",
-  "transistor",
   "tdson",
-  "tdson-8-1",
-  "smd",
-  "surface mount",
-  "kicad-symbols",
-  "bsc13dn30nsfd",
-  "fdms86255",
-  "fdms86255et150",
-  "discrete",
   "mosfet",
+  "fet",
   "shielded",
   "gate",
   "powertrench",
+  "transistor",
   "id",
   "vds",
   "channel",
   "ron",
+  "discrete",
   "power",
   "10a",
   "150v",
@@ -61,7 +54,7 @@
   "tier_counts": {
    "A": 3
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -94,6 +87,6 @@
   "kicad-symbols/Transistor_FET/FDMS86255",
   "kicad-symbols/Transistor_FET/FDMS86255ET150"
  ],
- "embedding_text": "discrete-fet.tdson | Discrete FET | Discrete FET cluster containing surface-mount transistor components in TDSON-8-1 footprints sourced from KiCad symbol libraries. | discrete fet fet transistor tdson tdson-8-1 smd surface mount kicad-symbols bsc13dn30nsfd fdms86255 fdms86255et150 discrete mosfet shielded gate powertrench id vds channel ron power 10a 150v 4mohm | TDSON | ",
+ "embedding_text": "discrete-fet.tdson | Discrete FET | 3 discrete fet parts using TDSON footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | tdson mosfet fet shielded gate powertrench transistor id vds channel ron discrete power 10a 150v 4mohm | TDSON | ",
  "class": "discrete.fet"
 }

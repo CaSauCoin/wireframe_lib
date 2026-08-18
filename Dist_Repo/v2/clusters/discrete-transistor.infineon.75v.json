@@ -6,34 +6,24 @@
   "Discrete",
   "Transistor"
  ],
- "description": "A cluster of 4 surface-mount 75V discrete transistors associated with Infineon using the Infineon_PG-TDSON-8 footprint from Alternate-KiCad-Library.",
+ "description": "4 discrete transistor parts for 75V using Infineon footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when requiring a 75V discrete transistor in an SMD package.",
-  "Choose for board layouts using the Infineon_PG-TDSON-8 footprint.",
-  "Verify part selection among tier B options including AUIRFN7107, BSC036NE7NS3G, BSC042NE7NS3G, or IRFH5007."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a Infineon land pattern is intended."
  ],
  "avoid_when": [
-  "Avoid when board mounting requires through-hole components instead of SMD.",
-  "Do not use if a footprint other than Infineon_PG-TDSON-8 is needed.",
-  "Avoid if circuit operating specifications require ratings other than 75V."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than Infineon."
  ],
  "keywords": [
-  "discrete transistor",
-  "infineon",
-  "75v",
-  "smd",
-  "infineon_pg-tdson-8",
-  "pg-tdson-8",
-  "alternate-kicad-library",
-  "auirfn7107",
-  "bsc036ne7ns3g",
-  "bsc042ne7ns3g",
-  "irfh5007",
-  "transistor",
-  "discrete",
   "mosfet",
+  "transistor",
   "tdson",
+  "infineon",
   "enchancement",
+  "75v",
   "mos",
   "akl",
   "mode",
@@ -41,7 +31,9 @@
   "kicad",
   "library",
   "pg",
-  "5x6mm"
+  "5x6mm",
+  "npmosfet",
+  "nmos"
  ],
  "facts": {
   "package_family": "Infineon",
@@ -64,7 +56,7 @@
   "tier_counts": {
    "B": 4
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -106,6 +98,6 @@
   "Alternate-KiCad-Library/Transistor_MOSFET_AKL/BSC042NE7NS3G",
   "Alternate-KiCad-Library/Transistor_MOSFET_AKL/IRFH5007"
  ],
- "embedding_text": "discrete-transistor.infineon.75v | Discrete Transistor | A cluster of 4 surface-mount 75V discrete transistors associated with Infineon using the Infineon_PG-TDSON-8 footprint from Alternate-KiCad-Library. | discrete transistor infineon 75v smd infineon_pg-tdson-8 pg-tdson-8 alternate-kicad-library auirfn7107 bsc036ne7ns3g bsc042ne7ns3g irfh5007 transistor discrete mosfet tdson enchancement mos akl mode alternate kicad library pg 5x6mm | Infineon | 75V",
+ "embedding_text": "discrete-transistor.infineon.75v | Discrete Transistor | 4 discrete transistor parts for 75V using Infineon footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | mosfet transistor tdson infineon enchancement 75v mos akl mode alternate kicad library pg 5x6mm npmosfet nmos | Infineon | 75V",
  "class": "discrete.transistor"
 }

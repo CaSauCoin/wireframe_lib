@@ -6,34 +6,27 @@
   "IC",
   "Sensor"
  ],
- "description": "Surface-mount sensor ICs featuring an I2C interface in WLP packages, such as WLP-4_0.86x0.86mm_P0.4mm.",
+ "description": "1 ic sensor parts for I2C using WLP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select for applications requiring an I2C sensor IC in a WLP footprint.",
-  "Verify layout compatibility with the WLP-4_0.86x0.86mm_P0.4mm SMD land pattern.",
-  "Prefer Tier A entries with exact symbol and footprint matches."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a WLP land pattern is intended."
  ],
  "avoid_when": [
-  "The PCB design requires packages other than WLP or non-SMD mounting.",
-  "A communication interface other than I2C is required.",
-  "Required electrical ratings or operating limits are missing from the entry."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than WLP."
  ],
  "keywords": [
-  "ic",
+  "wlp",
   "sensor",
   "i2c",
-  "wlp",
-  "smd",
-  "wlp-4",
-  "mmc5633njl",
   "magnetic",
-  "ic.sensor",
-  "0.86x0.86mm",
-  "0.4mm pitch",
-  "kicad-symbols",
   "axis",
   "amr",
   "magnetometer",
   "i3c",
+  "mmc5633njl",
   "interface",
   "2mg",
   "rms",
@@ -63,7 +56,7 @@
   "tier_counts": {
    "A": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -78,6 +71,6 @@
  "part_ids": [
   "kicad-symbols/Sensor_Magnetic/MMC5633NJL"
  ],
- "embedding_text": "ic-sensor.wlp.i2c | IC Sensor | Surface-mount sensor ICs featuring an I2C interface in WLP packages, such as WLP-4_0.86x0.86mm_P0.4mm. | ic sensor i2c wlp smd wlp-4 mmc5633njl magnetic ic.sensor 0.86x0.86mm 0.4mm pitch kicad-symbols axis amr magnetometer i3c interface 2mg rms 86x0 86mm p0 4mm | WLP | I2C",
+ "embedding_text": "ic-sensor.wlp.i2c | IC Sensor | 1 ic sensor parts for I2C using WLP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | wlp sensor i2c magnetic axis amr magnetometer i3c mmc5633njl interface 2mg rms 86x0 86mm p0 4mm | WLP | I2C",
  "class": "ic.sensor"
 }

@@ -5,32 +5,21 @@
  "category_path": [
   "IC"
  ],
- "description": "Integrated circuits featuring an SPI interface in surface-mount SOIC package footprints.",
+ "description": "9 ic parts for SPI using SOIC footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when requiring an integrated circuit with an SPI interface in a surface-mount SOIC package.",
-  "Verify footprint compatibility with target SOIC variants such as SOIC-8, SOIC-16W, or SOIC-28W.",
-  "Choose parts based on quality tier rating and library source."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SOIC land pattern is intended."
  ],
  "avoid_when": [
-  "Do not use if the design requires non-SOIC packages or through-hole mounting.",
-  "Avoid when an interface standard other than SPI is required.",
-  "Avoid if the required footprint size or pin layout does not match the available SOIC variants."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SOIC."
  ],
  "keywords": [
-  "ic",
-  "spi",
   "soic",
-  "smd",
-  "surface mount",
-  "integrated circuit",
-  "soic-8",
-  "soic-16w",
-  "soic-28w",
-  "soic-20",
-  "ataes132a-sh",
-  "pga2310ua",
-  "pga4311",
-  "at25sf041-sshd-t",
+  "spi",
+  "ic",
   "memory",
   "p1",
   "audio",
@@ -40,7 +29,10 @@
   "control",
   "5db",
   "flash",
-  "9mm"
+  "9mm",
+  "interface",
+  "to",
+  "16w"
  ],
  "facts": {
   "package_family": "SOIC",
@@ -76,7 +68,7 @@
    "A": 3,
    "B": 6
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -131,6 +123,6 @@
   "digikey-kicad-library/dk_Clock-Timing-Real-Time-Clocks/DS3234SN_",
   "matthiasbock-altium-libraries/Si8902/Si8902"
  ],
- "embedding_text": "ic.soic.spi | IC | Integrated circuits featuring an SPI interface in surface-mount SOIC package footprints. | ic spi soic smd surface mount integrated circuit soic-8 soic-16w soic-28w soic-20 ataes132a-sh pga2310ua pga4311 at25sf041-sshd-t memory p1 audio 27mm so volume control 5db flash 9mm | SOIC | SPI",
+ "embedding_text": "ic.soic.spi | IC | 9 ic parts for SPI using SOIC footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | soic spi ic memory p1 audio 27mm so volume control 5db flash 9mm interface to 16w | SOIC | SPI",
  "class": "ic"
 }

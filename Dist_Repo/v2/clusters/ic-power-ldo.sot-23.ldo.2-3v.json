@@ -7,42 +7,34 @@
   "Power",
   "Linear Regulator"
  ],
- "description": "This cluster contains 3 surface-mount (SMD) 2.3V LDO linear regulator ICs in SOT-23 packages from KiCad symbols.",
+ "description": "3 ic power linear regulator parts for LDO, 2.3V using SOT-23 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Require a 2.3V LDO linear regulator IC.",
-  "Select for surface-mount designs requiring a SOT-23 footprint.",
-  "Choose among Tier A KiCad symbol entries such as APE8865N-23-HF-3 variants."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SOT-23 land pattern is intended."
  ],
  "avoid_when": [
-  "The design requires an output voltage other than 2.3V.",
-  "A footprint or package family other than SOT-23 is needed.",
-  "Through-hole mounting is required instead of SMD."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SOT-23."
  ],
  "keywords": [
-  "ic",
-  "power",
-  "linear regulator",
-  "ldo",
-  "2.3v",
-  "sot-23",
-  "smd",
-  "regulator",
-  "kicad",
-  "ape8865n-23-hf-3",
-  "ape8865nl-23-hf-3",
-  "ape8865nr-23-hf-3",
   "sot",
+  "regulator",
   "linear",
   "300ma",
   "fixed",
   "3v",
+  "ldo",
   "hf",
   "low",
   "dropout",
   "voltage",
   "output",
   "to",
-  "positive"
+  "smd",
+  "positive",
+  "ic"
  ],
  "facts": {
   "package_family": "SOT-23",
@@ -66,7 +58,7 @@
   "tier_counts": {
    "A": 3
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -99,6 +91,6 @@
   "kicad-symbols/Regulator_Linear/APE8865NL-23-HF-3",
   "kicad-symbols/Regulator_Linear/APE8865NR-23-HF-3"
  ],
- "embedding_text": "ic-power-ldo.sot-23.ldo.2-3v | IC Power Linear Regulator | This cluster contains 3 surface-mount (SMD) 2.3V LDO linear regulator ICs in SOT-23 packages from KiCad symbols. | ic power linear regulator ldo 2.3v sot-23 smd regulator kicad ape8865n-23-hf-3 ape8865nl-23-hf-3 ape8865nr-23-hf-3 sot linear 300ma fixed 3v hf low dropout voltage output to positive | SOT-23 | LDO 2.3V",
+ "embedding_text": "ic-power-ldo.sot-23.ldo.2-3v | IC Power Linear Regulator | 3 ic power linear regulator parts for LDO, 2.3V using SOT-23 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | sot regulator linear 300ma fixed 3v ldo hf low dropout voltage output to smd positive ic | SOT-23 | LDO 2.3V",
  "class": "ic.power.ldo"
 }

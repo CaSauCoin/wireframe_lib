@@ -5,35 +5,24 @@
  "category_path": [
   "Connector"
  ],
- "description": "Connector cluster for RJ25 through-hole parts, currently containing a single tier-C entry with the RJ25_Wayconn_MJEA-660X1_Horizontal footprint and no planner-visible parts.",
+ "description": "1 connector parts using RJ25 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Only one part is available, in tier C with generated (unreviewed) status",
-  "Confirm the RJ25_Wayconn_MJEA-660X1_Horizontal footprint matches your board layout",
-  "Verify through-hole mounting fits your assembly process",
-  "Cross-check the part against the dist-legacy source before committing"
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a RJ25 land pattern is intended."
  ],
  "avoid_when": [
-  "A reviewed or higher-tier (non-C) part is required",
-  "A footprint other than RJ25_Wayconn_MJEA-660X1_Horizontal is needed",
-  "Surface-mount rather than through-hole mounting is required",
-  "Planner-visible or verified parts are required, since none exist in this cluster"
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than RJ25."
  ],
  "keywords": [
   "rj25",
-  "connector",
   "wayconn",
-  "mjea-660x1",
   "mjea",
   "660x1",
   "horizontal",
-  "through hole",
-  "th connector",
-  "modular connector",
-  "tier c",
-  "generated",
-  "dist-legacy",
-  "footprint",
-  "package family rj25",
+  "connector",
   "6p6c",
   "through",
   "hole",
@@ -42,7 +31,8 @@
   "pitch",
   "pins",
   "package",
-  "socket"
+  "socket",
+  "degrees"
  ],
  "facts": {
   "package_family": "RJ25",
@@ -63,12 +53,12 @@
   "tier_counts": {
    "C": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
   "dist-legacy/RJ25_Wayconn_MJEA-660X1_Horizontal"
  ],
- "embedding_text": "connector.rj25 | Connector | Connector cluster for RJ25 through-hole parts, currently containing a single tier-C entry with the RJ25_Wayconn_MJEA-660X1_Horizontal footprint and no planner-visible parts. | rj25 connector wayconn mjea-660x1 mjea 660x1 horizontal through hole th connector modular connector tier c generated dist-legacy footprint package family rj25 6p6c through hole pad mm pitch pins package socket | RJ25 | ",
+ "embedding_text": "connector.rj25 | Connector | 1 connector parts using RJ25 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | rj25 wayconn mjea 660x1 horizontal connector 6p6c through hole pad mm pitch pins package socket degrees | RJ25 | ",
  "class": "connector"
 }

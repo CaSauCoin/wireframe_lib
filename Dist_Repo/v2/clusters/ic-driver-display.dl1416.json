@@ -7,28 +7,23 @@
   "Driver",
   "Display"
  ],
- "description": "Display driver IC cluster containing through-hole parts using the DL1416 package family and footprint from KiCad symbol sources.",
+ "description": "1 ic driver display parts using DL1416 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when a through-hole display driver IC in a DL1416 package family is required.",
-  "Verify part symbols originating from KiCad symbol sources for specific design needs."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a DL1416 land pattern is intended."
  ],
  "avoid_when": [
-  "Layout requires surface-mount components or footprints other than DL1416.",
-  "Designs require high-tier quality parts (Tier A or Tier B) rather than Tier C."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than DL1416."
  ],
  "keywords": [
-  "ic",
-  "driver",
   "display",
-  "ic driver display",
   "dl1416",
-  "through hole",
-  "through_hole",
-  "kicad",
-  "kicad-symbols",
-  "dl1416 package",
   "segment",
   "alphanumeric",
+  "driver",
   "character",
   "digit",
   "plus",
@@ -36,7 +31,8 @@
   "intelligent",
   "with",
   "memory",
-  "decoder"
+  "decoder",
+  "ic"
  ],
  "facts": {
   "package_family": "DL1416",
@@ -57,12 +53,12 @@
   "tier_counts": {
    "C": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
   "kicad-symbols/Display_Character/DL1416"
  ],
- "embedding_text": "ic-driver-display.dl1416 | IC Driver Display | Display driver IC cluster containing through-hole parts using the DL1416 package family and footprint from KiCad symbol sources. | ic driver display ic driver display dl1416 through hole through_hole kicad kicad-symbols dl1416 package segment alphanumeric character digit plus decimal intelligent with memory decoder | DL1416 | ",
+ "embedding_text": "ic-driver-display.dl1416 | IC Driver Display | 1 ic driver display parts using DL1416 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | display dl1416 segment alphanumeric driver character digit plus decimal intelligent with memory decoder ic | DL1416 | ",
  "class": "ic.driver.display"
 }

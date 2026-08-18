@@ -7,40 +7,34 @@
   "Power",
   "Linear Regulator"
  ],
- "description": "Cluster of surface-mount 2.1V LDO linear regulator ICs in SOT package options including SOT-343_SC-70-4 and SOT-353_SC-70-5.",
+ "description": "2 ic power linear regulator parts for LDO, 2.1V using SOT footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select based on required footprint: SOT-343_SC-70-4 or SOT-353_SC-70-5.",
-  "Verify target pin count and footprint layout compatibility."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SOT land pattern is intended."
  ],
  "avoid_when": [
-  "An output voltage other than 2.1V is required.",
-  "The PCB design requires packages outside the surface-mount SOT family."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SOT."
  ],
  "keywords": [
-  "ldo",
-  "2.1v",
-  "linear regulator",
   "sot",
-  "smd",
-  "sot-343_sc-70-4",
-  "sot-353_sc-70-5",
-  "ape8865u4-21-hf-3",
-  "ape8865u5-21-hf-3",
-  "ic power linear regulator",
-  "sc-70-4",
-  "sc-70-5",
   "regulator",
   "sc",
   "linear",
   "300ma",
   "fixed",
   "1v",
+  "ldo",
   "hf",
   "low",
   "dropout",
   "voltage",
   "output",
-  "to"
+  "to",
+  "smd",
+  "positive"
  ],
  "facts": {
   "package_family": "SOT",
@@ -65,7 +59,7 @@
   "tier_counts": {
    "A": 2
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -89,6 +83,6 @@
   "kicad-symbols/Regulator_Linear/APE8865U4-21-HF-3",
   "kicad-symbols/Regulator_Linear/APE8865U5-21-HF-3"
  ],
- "embedding_text": "ic-power-ldo.sot.ldo.2-1v | IC Power Linear Regulator | Cluster of surface-mount 2.1V LDO linear regulator ICs in SOT package options including SOT-343_SC-70-4 and SOT-353_SC-70-5. | ldo 2.1v linear regulator sot smd sot-343_sc-70-4 sot-353_sc-70-5 ape8865u4-21-hf-3 ape8865u5-21-hf-3 ic power linear regulator sc-70-4 sc-70-5 regulator sc linear 300ma fixed 1v hf low dropout voltage output to | SOT | LDO 2.1V",
+ "embedding_text": "ic-power-ldo.sot.ldo.2-1v | IC Power Linear Regulator | 2 ic power linear regulator parts for LDO, 2.1V using SOT footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | sot regulator sc linear 300ma fixed 1v ldo hf low dropout voltage output to smd positive | SOT | LDO 2.1V",
  "class": "ic.power.ldo"
 }

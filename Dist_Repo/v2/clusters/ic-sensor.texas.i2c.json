@@ -6,36 +6,32 @@
   "IC",
   "Sensor"
  ],
- "description": "Surface-mount I2C sensor IC cluster with Texas footprints, featuring HDC2080 humidity and TMP110D temperature parts from KiCad symbols.",
+ "description": "2 ic sensor parts for I2C using Texas footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select HDC2080 for tier A humidity sensing in a Texas_S-PWSON-N6-HDC2080 footprint.",
-  "Select TMP110D for tier B temperature sensing in a Texas_X2SON-5 footprint.",
-  "Choose when an I2C surface-mount sensor with Texas package family footprints is needed."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a Texas land pattern is intended."
  ],
  "avoid_when": [
-  "Non-I2C interfaces such as SPI or analog outputs are required.",
-  "Through-hole mounting is required instead of SMD surface mounting.",
-  "Package footprints outside the Texas package family are needed."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than Texas."
  ],
  "keywords": [
-  "ic sensor",
-  "i2c",
-  "smd",
-  "texas",
-  "hdc2080",
-  "tmp110d",
-  "humidity",
-  "temperature",
-  "pwson",
-  "x2son",
-  "kicad symbols",
   "sensor",
+  "temperature",
+  "i2c",
+  "humidity",
+  "texas",
   "digital",
+  "x2son",
+  "hdc2080",
   "ic",
   "smbus",
   "low",
   "power",
   "and",
+  "pwson",
   "n6",
   "iic"
  ],
@@ -62,7 +58,7 @@
    "A": 1,
    "B": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -86,6 +82,6 @@
   "kicad-symbols/Sensor_Humidity/HDC2080",
   "kicad-symbols/Sensor_Temperature/TMP110D"
  ],
- "embedding_text": "ic-sensor.texas.i2c | IC Sensor | Surface-mount I2C sensor IC cluster with Texas footprints, featuring HDC2080 humidity and TMP110D temperature parts from KiCad symbols. | ic sensor i2c smd texas hdc2080 tmp110d humidity temperature pwson x2son kicad symbols sensor digital ic smbus low power and n6 iic | Texas | I2C",
+ "embedding_text": "ic-sensor.texas.i2c | IC Sensor | 2 ic sensor parts for I2C using Texas footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | sensor temperature i2c humidity texas digital x2son hdc2080 ic smbus low power and pwson n6 iic | Texas | I2C",
  "class": "ic.sensor"
 }

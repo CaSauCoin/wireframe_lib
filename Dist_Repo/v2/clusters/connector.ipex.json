@@ -5,32 +5,22 @@
  "category_path": [
   "Connector"
  ],
- "description": "Single-part cluster for IPEX/U.FL RF coaxial connectors using the IPEX-SMD_BWIPX-1-001E SMD footprint, sourced from the JLCPCB-Kicad-Library at tier B.",
+ "description": "1 connector parts using IPEX footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Confirm the board footprint matches IPEX-SMD_BWIPX-1-001E exactly",
-  "Only one representative part is available (tier B, score 100)",
-  "Verify SMD land pattern fits the intended PCB layout"
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a IPEX land pattern is intended."
  ],
  "avoid_when": [
-  "A non-IPEX RF connector footprint is required",
-  "Electrical ratings or frequency limits must be verified but are not stated here",
-  "A tier A or datasheet-backed part is required and none is available in this cluster"
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than IPEX."
  ],
  "keywords": [
   "connector",
   "ipex",
-  "u.fl",
-  "ufl",
-  "rf connector",
-  "coaxial",
-  "smd",
-  "bwipx",
-  "ipex-smd_bwipx-1-001e",
-  "rf",
-  "jlcpcb",
-  "antenna connector",
-  "coax",
   "fl",
+  "coaxial",
   "bnc",
   "sma",
   "smb",
@@ -38,7 +28,11 @@
   "cinch",
   "rca",
   "lemo",
-  "001e"
+  "smd",
+  "bwipx",
+  "001e",
+  "rf",
+  "jlcpcb"
  ],
  "facts": {
   "package_family": "IPEX",
@@ -59,7 +53,7 @@
   "tier_counts": {
    "B": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -74,6 +68,6 @@
  "part_ids": [
   "JLCPCB-Kicad-Library/JLCPCB-Extended/RF, Connector, U.FL"
  ],
- "embedding_text": "connector.ipex | Connector | Single-part cluster for IPEX/U.FL RF coaxial connectors using the IPEX-SMD_BWIPX-1-001E SMD footprint, sourced from the JLCPCB-Kicad-Library at tier B. | connector ipex u.fl ufl rf connector coaxial smd bwipx ipex-smd_bwipx-1-001e rf jlcpcb antenna connector coax fl bnc sma smb smc cinch rca lemo 001e | IPEX | ",
+ "embedding_text": "connector.ipex | Connector | 1 connector parts using IPEX footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | connector ipex fl coaxial bnc sma smb smc cinch rca lemo smd bwipx 001e rf jlcpcb | IPEX | ",
  "class": "connector"
 }

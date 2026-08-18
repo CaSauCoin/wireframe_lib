@@ -5,25 +5,21 @@
  "category_path": [
   "IC"
  ],
- "description": "Cluster containing 1 USB integrated circuit component using the TE package family.",
+ "description": "1 ic parts for USB using TE footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Verify compatibility with TE package family land patterns.",
-  "Check exact footprint and electrical details before specifying the part."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a TE land pattern is intended."
  ],
  "avoid_when": [
-  "Avoid when the design requires a package family other than TE.",
-  "Avoid if unknown mounting type or tier C quality classification is unsuitable."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than TE."
  ],
  "keywords": [
-  "ic",
-  "usb",
   "te",
-  "usb ic",
-  "te package",
-  "te footprint",
-  "integrated circuit",
-  "tier c",
-  "dist-legacy",
+  "usb",
+  "ic",
   "pad",
   "mm",
   "pitch",
@@ -50,12 +46,12 @@
   "tier_counts": {
    "C": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
   "dist-legacy/TE USB-C 2129691-1"
  ],
- "embedding_text": "ic.te.usb | IC | Cluster containing 1 USB integrated circuit component using the TE package family. | ic usb te usb ic te package te footprint integrated circuit tier c dist-legacy pad mm pitch pins | TE | USB",
+ "embedding_text": "ic.te.usb | IC | 1 ic parts for USB using TE footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | te usb ic pad mm pitch pins | TE | USB",
  "class": "ic"
 }

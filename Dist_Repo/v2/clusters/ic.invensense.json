@@ -5,29 +5,22 @@
  "category_path": [
   "IC"
  ],
- "description": "Cluster of 3 IC parts utilizing INVENSENSE package family footprints including INVENSENSE and INVENSENSE LGA-16 3x3 with SMD or unknown mounting.",
+ "description": "3 ic parts using INVENSENSE footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when an IC requiring an INVENSENSE or INVENSENSE LGA-16 3x3 footprint is needed.",
-  "Verify exact footprint compatibility and mount type (SMD or unknown) before placement.",
-  "Check source data from dist-legacy or celestial-altium-library as all entries are tier C."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a INVENSENSE land pattern is intended."
  ],
  "avoid_when": [
-  "The PCB layout requires package footprints other than INVENSENSE or INVENSENSE LGA-16 3x3.",
-  "Higher quality tier parts (Tier A or B) are required for the design.",
-  "Through-hole mounting is required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than INVENSENSE."
  ],
  "keywords": [
-  "ic",
   "invensense",
-  "lga-16",
-  "3x3",
-  "smd",
-  "invensense lga-16 3x3",
-  "dist-legacy",
-  "celestial-altium-library",
-  "tier c",
-  "unknown mount",
   "lga",
+  "3x3",
+  "ic",
   "pad",
   "mm",
   "pitch",
@@ -59,7 +52,7 @@
   "tier_counts": {
    "C": 3
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
@@ -67,6 +60,6 @@
   "dist-legacy/INVENSENSE QFN-24 3x3mm",
   "celestial-altium-library/INVENSENSE LGA-16 3x3/INVENSENSE_LGA-16_3x3"
  ],
- "embedding_text": "ic.invensense | IC | Cluster of 3 IC parts utilizing INVENSENSE package family footprints including INVENSENSE and INVENSENSE LGA-16 3x3 with SMD or unknown mounting. | ic invensense lga-16 3x3 smd invensense lga-16 3x3 dist-legacy celestial-altium-library tier c unknown mount lga pad mm pitch pins qfn 3x3mm surface mount | INVENSENSE | ",
+ "embedding_text": "ic.invensense | IC | 3 ic parts using INVENSENSE footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | invensense lga 3x3 ic pad mm pitch pins qfn 3x3mm surface mount | INVENSENSE | ",
  "class": "ic"
 }

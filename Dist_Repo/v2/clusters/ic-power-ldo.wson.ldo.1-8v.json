@@ -7,33 +7,28 @@
   "Power",
   "Linear Regulator"
  ],
- "description": "A cluster of 9 surface-mount 1.8V LDO linear regulator ICs in WSON package footprints.",
+ "description": "9 ic power linear regulator parts for LDO, 1.8V using WSON footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when a fixed 1.8V LDO linear regulator in a WSON package is needed.",
-  "Match the specific WSON footprint size, pin count, and thermal pad configuration to the PCB design.",
-  "Prioritize tier A parts when higher quality classification is preferred."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a WSON land pattern is intended."
  ],
  "avoid_when": [
-  "Do not use when an output voltage other than 1.8V is required.",
-  "Avoid if the PCB layout requires a package family other than surface-mount WSON.",
-  "Do not use if a switching regulator or non-linear power topology is needed."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than WSON."
  ],
  "keywords": [
-  "ic",
-  "power",
-  "linear regulator",
-  "ldo",
-  "1.8v",
-  "wson",
-  "smd",
-  "wson-6",
-  "wson-8",
   "regulator",
+  "wson",
   "linear",
   "8v",
+  "ldo",
   "low",
   "p0",
   "output",
+  "ic",
+  "power",
   "fixed",
   "1ep",
   "wson6",
@@ -69,7 +64,7 @@
    "A": 5,
    "B": 4
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -124,6 +119,6 @@
   "kicad-symbols/Regulator_Linear/LP3982ILD-1.8",
   "kicad-symbols/Regulator_Linear/LP38691SD-1.8"
  ],
- "embedding_text": "ic-power-ldo.wson.ldo.1-8v | IC Power Linear Regulator | A cluster of 9 surface-mount 1.8V LDO linear regulator ICs in WSON package footprints. | ic power linear regulator ldo 1.8v wson smd wson-6 wson-8 regulator linear 8v low p0 output fixed 1ep wson6 dropout voltage 5mm | WSON | LDO 1.8V",
+ "embedding_text": "ic-power-ldo.wson.ldo.1-8v | IC Power Linear Regulator | 9 ic power linear regulator parts for LDO, 1.8V using WSON footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | regulator wson linear 8v ldo low p0 output ic power fixed 1ep wson6 dropout voltage 5mm | WSON | LDO 1.8V",
  "class": "ic.power.ldo"
 }

@@ -6,28 +6,22 @@
   "Discrete",
   "Transistor"
  ],
- "description": "Discrete transistor cluster containing 1 part associated with the Cilindrical package family and Cilindrical-H-SMD footprint.",
+ "description": "1 discrete transistor parts using Cilindrical footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Verify the Cilindrical-H-SMD footprint against design specifications.",
-  "Check quality tier (Tier C) and legacy distributor source reliability before selection.",
-  "Use when a discrete transistor in a Cilindrical package family is required."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a Cilindrical land pattern is intended."
  ],
  "avoid_when": [
-  "The layout requires a footprint other than Cilindrical-H-SMD.",
-  "Unverified or Tier C parts are not acceptable for your design.",
-  "Electrical ratings, pinouts, or package dimensions are unspecified."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than Cilindrical."
  ],
  "keywords": [
+  "cilindrical",
+  "smd",
   "discrete",
   "transistor",
-  "discrete transistor",
-  "cilindrical",
-  "cilindrical-h-smd",
-  "smd",
-  "footprint",
-  "package family",
-  "tier c",
-  "dist-legacy",
   "pad",
   "mm",
   "pitch",
@@ -52,12 +46,12 @@
   "tier_counts": {
    "C": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
   "dist-legacy/Cilindrical-H-SMD"
  ],
- "embedding_text": "discrete-transistor.cilindrical | Discrete Transistor | Discrete transistor cluster containing 1 part associated with the Cilindrical package family and Cilindrical-H-SMD footprint. | discrete transistor discrete transistor cilindrical cilindrical-h-smd smd footprint package family tier c dist-legacy pad mm pitch pins | Cilindrical | ",
+ "embedding_text": "discrete-transistor.cilindrical | Discrete Transistor | 1 discrete transistor parts using Cilindrical footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | cilindrical smd discrete transistor pad mm pitch pins | Cilindrical | ",
  "class": "discrete.transistor"
 }

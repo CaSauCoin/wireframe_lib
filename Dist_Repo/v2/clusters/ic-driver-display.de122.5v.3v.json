@@ -7,34 +7,26 @@
   "Driver",
   "Display"
  ],
- "description": "Display driver IC cluster containing through-hole component entries using DE122 footprint patterns associated with 3V and 5V facets.",
+ "description": "1 ic driver display parts for 5V, 3V using DE122 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "A display driver IC in a through-hole DE122 footprint family is needed.",
-  "Target application aligns with 3V or 5V operating facets.",
-  "Compatibility with KiCad symbols source library is required."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a DE122 land pattern is intended."
  ],
  "avoid_when": [
-  "Surface-mount assembly is required rather than through-hole mounting.",
-  "Footprint requirement differs from the DE122 package family.",
-  "Operating voltage facets other than 3V or 5V are needed."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than DE122."
  ],
  "keywords": [
-  "ic",
-  "driver",
-  "display",
-  "ic driver display",
-  "de122",
-  "5v",
-  "3v",
-  "through_hole",
-  "through hole",
-  "de122-xx-xx",
-  "kicad-symbols",
-  "tier c",
   "xx",
+  "de122",
+  "display",
   "segment",
   "lcd",
   "digit",
+  "3v",
+  "5v",
   "character",
   "reflective",
   "standard",
@@ -66,12 +58,12 @@
   "tier_counts": {
    "C": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
   "kicad-symbols/Display_Character/DE122-XX-XX"
  ],
- "embedding_text": "ic-driver-display.de122.5v.3v | IC Driver Display | Display driver IC cluster containing through-hole component entries using DE122 footprint patterns associated with 3V and 5V facets. | ic driver display ic driver display de122 5v 3v through_hole through hole de122-xx-xx kicad-symbols tier c xx segment lcd digit character reflective standard pin length 35mm to vdd | DE122 | 5V 3V",
+ "embedding_text": "ic-driver-display.de122.5v.3v | IC Driver Display | 1 ic driver display parts for 5V, 3V using DE122 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | xx de122 display segment lcd digit 3v 5v character reflective standard pin length 35mm to vdd | DE122 | 5V 3V",
  "class": "ic.driver.display"
 }

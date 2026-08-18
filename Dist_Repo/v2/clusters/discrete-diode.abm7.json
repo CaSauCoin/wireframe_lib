@@ -6,29 +6,22 @@
   "Discrete",
   "Diode"
  ],
- "description": "Discrete diode cluster with 1 tier C part using the ABM7 package family and ABM7_V1_1 footprint.",
+ "description": "1 discrete diode parts using ABM7 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Verify compatibility with the ABM7_V1_1 footprint for your design.",
-  "Check part specifications since the cluster contains a single tier C entry.",
-  "Confirm land pattern requirements for the ABM7 package family."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a ABM7 land pattern is intended."
  ],
  "avoid_when": [
-  "The design requires a package family other than ABM7.",
-  "Higher quality tier parts (Tier A or B) are required.",
-  "Planner-visible parts are needed for automated selection."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than ABM7."
  ],
  "keywords": [
-  "discrete diode",
   "abm7",
-  "discrete.diode",
-  "abm7_v1_1",
+  "v1",
   "discrete",
   "diode",
-  "dist-legacy",
-  "tier c",
-  "abm7 footprint",
-  "package family abm7",
-  "v1",
   "pad",
   "mm",
   "pitch",
@@ -53,12 +46,12 @@
   "tier_counts": {
    "C": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
   "dist-legacy/ABM7_V1_1"
  ],
- "embedding_text": "discrete-diode.abm7 | Discrete Diode | Discrete diode cluster with 1 tier C part using the ABM7 package family and ABM7_V1_1 footprint. | discrete diode abm7 discrete.diode abm7_v1_1 discrete diode dist-legacy tier c abm7 footprint package family abm7 v1 pad mm pitch pins | ABM7 | ",
+ "embedding_text": "discrete-diode.abm7 | Discrete Diode | 1 discrete diode parts using ABM7 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | abm7 v1 discrete diode pad mm pitch pins | ABM7 | ",
  "class": "discrete.diode"
 }

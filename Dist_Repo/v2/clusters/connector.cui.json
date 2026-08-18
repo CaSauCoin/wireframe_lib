@@ -5,35 +5,21 @@
  "category_path": [
   "Connector"
  ],
- "description": "Cluster of 4 through-hole CUI connector parts (CUI_PD-30 and CUI_PD-30S footprints); all entries are currently tier C with generated, unreviewed metadata.",
+ "description": "4 connector parts using CUI footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Confirm exact footprint match: CUI_PD-30 vs CUI_PD-30S",
-  "Verify through-hole mounting suits the target board",
-  "Review symbol-footprint pairing manually since all parts are tier C and generated",
-  "No representative parts are listed, so inspect each candidate individually"
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a CUI land pattern is intended."
  ],
  "avoid_when": [
-  "A reviewed or higher-tier (A/B) connector part is required",
-  "Surface-mount rather than through-hole mounting is needed",
-  "A footprint other than CUI_PD-30 or CUI_PD-30S is required",
-  "Verified electrical ratings or pinout data are needed before selection"
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than CUI."
  ],
  "keywords": [
+  "pd",
   "cui",
   "connector",
-  "pd-30",
-  "pd-30s",
-  "cui_pd-30",
-  "cui_pd-30s",
-  "through hole",
-  "through_hole",
-  "tier c",
-  "generated",
-  "unreviewed",
-  "power connector",
-  "kicad-symbols",
-  "dist-legacy",
-  "pd",
   "30s",
   "pin",
   "din",
@@ -42,7 +28,11 @@
   "through",
   "hole",
   "pad",
-  "mm"
+  "mm",
+  "pitch",
+  "pins",
+  "package",
+  "http"
  ],
  "facts": {
   "package_family": "CUI",
@@ -65,7 +55,7 @@
   "tier_counts": {
    "C": 4
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
@@ -74,6 +64,6 @@
   "dist-legacy/CUI_PD-30",
   "dist-legacy/CUI_PD-30S"
  ],
- "embedding_text": "connector.cui | Connector | Cluster of 4 through-hole CUI connector parts (CUI_PD-30 and CUI_PD-30S footprints); all entries are currently tier C with generated, unreviewed metadata. | cui connector pd-30 pd-30s cui_pd-30 cui_pd-30s through hole through_hole tier c generated unreviewed power connector kicad-symbols dist-legacy pd 30s pin din power shielded through hole pad mm | CUI | ",
+ "embedding_text": "connector.cui | Connector | 4 connector parts using CUI footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | pd cui connector 30s pin din power shielded through hole pad mm pitch pins package http | CUI | ",
  "class": "connector"
 }

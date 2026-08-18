@@ -6,28 +6,20 @@
   "IC",
   "Interface"
  ],
- "description": "Generic IC interface cluster containing two parts from KiCad symbols with package chosen later.",
+ "description": "2 ic interface parts with package chosen later. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Explicitly select and assign a footprint/package before PCB placement.",
-  "Verify specific part ratings and pin-to-pad mappings as all entries are tier G.",
-  "Choose between interface parts 68681 and 68901_PLCC based on design requirements."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Select a footprint/package explicitly before placement."
  ],
  "avoid_when": [
-  "A pre-assigned, validated PCB footprint or package is required.",
-  "Fully verified tier A parts with explicit datasheet links are mandatory."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review."
  ],
  "keywords": [
-  "ic",
   "interface",
-  "ic interface",
-  "generic",
-  "kicad-symbols",
-  "package chosen later",
-  "68681",
-  "68901_plcc",
-  "plcc",
-  "tier g",
   "mpro",
+  "ic",
   "package",
   "chosen",
   "later",
@@ -39,6 +31,7 @@
   "with",
   "parallel",
   "port",
+  "plcc",
   "multi"
  ],
  "facts": {
@@ -56,7 +49,7 @@
   "tier_counts": {
    "G": 2
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -80,6 +73,6 @@
   "kicad-symbols/Interface/68681",
   "kicad-symbols/Interface/68901_PLCC"
  ],
- "embedding_text": "ic-interface.generic | IC Interface | Generic IC interface cluster containing two parts from KiCad symbols with package chosen later. | ic interface ic interface generic kicad-symbols package chosen later 68681 68901_plcc plcc tier g mpro package chosen later dual universal asynchronous receiver transmitter with parallel port multi | package chosen later | ",
+ "embedding_text": "ic-interface.generic | IC Interface | 2 ic interface parts with package chosen later. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | interface mpro ic package chosen later dual universal asynchronous receiver transmitter with parallel port plcc multi | package chosen later | ",
  "class": "ic.interface"
 }

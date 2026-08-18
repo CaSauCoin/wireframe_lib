@@ -5,27 +5,20 @@
  "category_path": [
   "IC"
  ],
- "description": "IC cluster containing 1 part using the MDS15FLA footprint family from legacy distribution data.",
+ "description": "1 ic parts using MDS15FLA footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Use when searching for parts using the MDS15FLA footprint family.",
-  "Verify land pattern mapping and dimensions prior to committing to PCB layout.",
-  "Check part details independently as detailed electrical parameters are unlisted."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a MDS15FLA land pattern is intended."
  ],
  "avoid_when": [
-  "The board design requires a package footprint other than MDS15FLA.",
-  "Explicit electrical ratings, datasheets, or verified pinouts are required.",
-  "Selection requires planner-visible or high-tier validated components."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than MDS15FLA."
  ],
  "keywords": [
   "mds15fla",
   "ic",
-  "integrated circuit",
-  "mds15fla footprint",
-  "mds15fla package",
-  "tier c",
-  "dist-legacy",
-  "legacy source",
-  "unknown mount",
   "pad",
   "mm",
   "pitch",
@@ -50,12 +43,12 @@
   "tier_counts": {
    "C": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
   "dist-legacy/MDS15FLA"
  ],
- "embedding_text": "ic.mds15fla | IC | IC cluster containing 1 part using the MDS15FLA footprint family from legacy distribution data. | mds15fla ic integrated circuit mds15fla footprint mds15fla package tier c dist-legacy legacy source unknown mount pad mm pitch pins | MDS15FLA | ",
+ "embedding_text": "ic.mds15fla | IC | 1 ic parts using MDS15FLA footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | mds15fla ic pad mm pitch pins | MDS15FLA | ",
  "class": "ic"
 }

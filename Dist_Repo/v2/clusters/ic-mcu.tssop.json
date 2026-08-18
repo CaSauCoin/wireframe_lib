@@ -6,34 +6,23 @@
   "IC",
   "Microcontroller"
  ],
- "description": "Cluster of 203 surface-mount microcontroller integrated circuits provided in TSSOP package footprints.",
+ "description": "203 ic microcontroller parts using TSSOP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "A surface-mount microcontroller IC in a TSSOP package family footprint is needed.",
-  "Matching pin count and dimensions for footprints like TSSOP-8, TSSOP-14, TSSOP-16, TSSOP-20, TSSOP-24, TSSOP-28, or TSSOP-38.",
-  "Selecting verified KiCad symbol components in the ic.mcu class."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a TSSOP land pattern is intended."
  ],
  "avoid_when": [
-  "The design requires package families other than TSSOP.",
-  "Through-hole or non-surface-mount (non-SMD) mounting is required.",
-  "Parts outside the microcontroller IC category are needed."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than TSSOP."
  ],
  "keywords": [
-  "ic",
-  "microcontroller",
-  "mcu",
   "tssop",
-  "smd",
-  "surface mount",
-  "kicad",
-  "tssop-8",
-  "tssop-14",
-  "tssop-16",
-  "tssop-20",
-  "tssop-24",
-  "tssop-28",
-  "tssop-38",
-  "attiny",
+  "microcontroller",
   "msp430",
+  "mcu",
+  "ic",
   "flash",
   "p0",
   "65mm",
@@ -41,7 +30,10 @@
   "bit",
   "ram",
   "texas",
-  "ti"
+  "ti",
+  "mixed",
+  "signal",
+  "256b"
  ],
  "facts": {
   "package_family": "TSSOP",
@@ -70,7 +62,7 @@
    "A": 201,
    "B": 2
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -319,6 +311,6 @@
   "kicad-symbols/MCU_Microchip_PIC16/PIC16C505-IST",
   "kicad-symbols/MCU_Microchip_PIC16/PIC16F505-IST"
  ],
- "embedding_text": "ic-mcu.tssop | IC Microcontroller | Cluster of 203 surface-mount microcontroller integrated circuits provided in TSSOP package footprints. | ic microcontroller mcu tssop smd surface mount kicad tssop-8 tssop-14 tssop-16 tssop-20 tssop-24 tssop-28 tssop-38 attiny msp430 flash p0 65mm so bit ram texas ti | TSSOP | ",
+ "embedding_text": "ic-mcu.tssop | IC Microcontroller | 203 ic microcontroller parts using TSSOP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | tssop microcontroller msp430 mcu ic flash p0 65mm so bit ram texas ti mixed signal 256b | TSSOP | ",
  "class": "ic.mcu"
 }

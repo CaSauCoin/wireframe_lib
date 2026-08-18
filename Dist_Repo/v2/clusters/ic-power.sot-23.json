@@ -6,40 +6,33 @@
   "IC",
   "Power"
  ],
- "description": "Surface-mount power IC cluster in the SOT-23 package family utilizing SOT-23-6 footprints for power components including LTC1754, UCC24630DBV, and UCC24636DBV.",
+ "description": "3 ic power parts using SOT-23 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select for surface-mount power IC designs requiring SOT-23-6 footprints.",
-  "Verify exact part requirements against LTC1754, UCC24630DBV, or UCC24636DBV.",
-  "Use when standard SOT-23 package family power management components are specified."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SOT-23 land pattern is intended."
  ],
  "avoid_when": [
-  "Through-hole mounting or non-SMD assembly is required.",
-  "The PCB design requires footprint options other than SOT-23-6.",
-  "Components outside the SOT-23 package family are needed."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SOT-23."
  ],
  "keywords": [
-  "ic",
-  "power",
-  "ic.power",
-  "sot-23",
-  "sot-23-6",
-  "smd",
-  "surface mount",
-  "ltc1754",
-  "ucc24630dbv",
-  "ucc24636dbv",
-  "kicad-symbols",
-  "power ic",
   "sot",
   "controller",
   "synchronous",
   "rectifier",
   "regulator",
   "to",
+  "smd",
+  "ic",
+  "power",
   "charge",
   "pump",
+  "ltc1754",
   "switchedcapacitor",
   "40ma",
+  "ucc24630dbv",
   "200khz"
  ],
  "facts": {
@@ -61,7 +54,7 @@
   "tier_counts": {
    "A": 3
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -94,6 +87,6 @@
   "kicad-symbols/Regulator_Controller/UCC24630DBV",
   "kicad-symbols/Regulator_Controller/UCC24636DBV"
  ],
- "embedding_text": "ic-power.sot-23 | IC Power | Surface-mount power IC cluster in the SOT-23 package family utilizing SOT-23-6 footprints for power components including LTC1754, UCC24630DBV, and UCC24636DBV. | ic power ic.power sot-23 sot-23-6 smd surface mount ltc1754 ucc24630dbv ucc24636dbv kicad-symbols power ic sot controller synchronous rectifier regulator to charge pump switchedcapacitor 40ma 200khz | SOT-23 | ",
+ "embedding_text": "ic-power.sot-23 | IC Power | 3 ic power parts using SOT-23 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | sot controller synchronous rectifier regulator to smd ic power charge pump ltc1754 switchedcapacitor 40ma ucc24630dbv 200khz | SOT-23 | ",
  "class": "ic.power"
 }

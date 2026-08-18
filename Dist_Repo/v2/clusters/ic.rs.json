@@ -5,28 +5,20 @@
  "category_path": [
   "IC"
  ],
- "description": "Integrated circuit component cluster in the RS package family containing 2 tier C parts across RS-20 and RS-28 footprints.",
+ "description": "2 ic parts using RS footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when needing IC parts utilizing RS-20 or RS-28 land patterns.",
-  "Verify part specifications and footprint compatibility as all parts are in quality tier C.",
-  "Confirm physical mounting details as the mount type is marked unknown."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a RS land pattern is intended."
  ],
  "avoid_when": [
-  "The design requires footprints other than RS-20 or RS-28.",
-  "The board layout calls for a package family other than RS.",
-  "Planner-visible or higher quality tier (Tier A/B) parts are required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than RS."
  ],
  "keywords": [
-  "ic",
   "rs",
-  "rs-20",
-  "rs-28",
-  "ic rs",
-  "rs package",
-  "integrated circuit",
-  "dist-legacy",
-  "tier c",
-  "package family",
+  "ic",
   "pad",
   "mm",
   "pitch",
@@ -52,13 +44,13 @@
   "tier_counts": {
    "C": 2
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
   "dist-legacy/RS-20",
   "dist-legacy/RS-28"
  ],
- "embedding_text": "ic.rs | IC | Integrated circuit component cluster in the RS package family containing 2 tier C parts across RS-20 and RS-28 footprints. | ic rs rs-20 rs-28 ic rs rs package integrated circuit dist-legacy tier c package family pad mm pitch pins | RS | ",
+ "embedding_text": "ic.rs | IC | 2 ic parts using RS footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | rs ic pad mm pitch pins | RS | ",
  "class": "ic"
 }

@@ -6,28 +6,22 @@
   "Discrete",
   "Transistor"
  ],
- "description": "Discrete transistor cluster containing 1 part in the TRAN package family utilizing the TRAN-LOWPOWER footprint.",
+ "description": "1 discrete transistor parts using TRAN footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select for discrete transistor applications requiring the TRAN package family.",
-  "Choose when the layout specifies a TRAN-LOWPOWER footprint.",
-  "Review Tier C quality rating and generated review status before choosing."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a TRAN land pattern is intended."
  ],
  "avoid_when": [
-  "Avoid when board layout requires a package family other than TRAN or footprint other than TRAN-LOWPOWER.",
-  "Do not use if parts with higher quality tier ratings or planner visibility are required.",
-  "Avoid when requiring components from sources other than dist-legacy."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than TRAN."
  ],
  "keywords": [
+  "tran",
+  "lowpower",
   "discrete",
   "transistor",
-  "discrete transistor",
-  "tran",
-  "tran-lowpower",
-  "lowpower",
-  "package family tran",
-  "discrete.transistor",
-  "dist-legacy",
-  "tier c",
   "pad",
   "mm",
   "pitch",
@@ -52,12 +46,12 @@
   "tier_counts": {
    "C": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
   "dist-legacy/TRAN-LOWPOWER"
  ],
- "embedding_text": "discrete-transistor.tran | Discrete Transistor | Discrete transistor cluster containing 1 part in the TRAN package family utilizing the TRAN-LOWPOWER footprint. | discrete transistor discrete transistor tran tran-lowpower lowpower package family tran discrete.transistor dist-legacy tier c pad mm pitch pins | TRAN | ",
+ "embedding_text": "discrete-transistor.tran | Discrete Transistor | 1 discrete transistor parts using TRAN footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | tran lowpower discrete transistor pad mm pitch pins | TRAN | ",
  "class": "discrete.transistor"
 }

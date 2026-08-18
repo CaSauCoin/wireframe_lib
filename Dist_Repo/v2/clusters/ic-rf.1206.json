@@ -6,42 +6,34 @@
   "IC",
   "RF"
  ],
- "description": "Surface-mount RF IC components in 1206 package footprints, featuring 186 tier A parts sourced from KiCad symbols.",
+ "description": "186 ic rf parts using 1206 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when requiring SMD RF IC components using 1206 package footprints.",
-  "Match your PCB layout to specific FV1206 footprint variants such as Filter_Mini-Circuits_FV1206 or numbered variants.",
-  "Verify exact part requirements among the 186 available tier A KiCad symbol entries."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a 1206 land pattern is intended."
  ],
  "avoid_when": [
-  "Do not use if through-hole mounting is required instead of surface-mount.",
-  "Avoid when the design requires package footprints other than 1206.",
-  "Avoid if the component class needed is not an RF IC."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than 1206."
  ],
  "keywords": [
-  "ic",
-  "rf",
-  "ic rf",
-  "1206",
-  "smd",
-  "fv1206",
-  "filter_mini-circuits_fv1206",
-  "kicad-symbols",
-  "bfcn-1445",
-  "bfcn-1525",
-  "bfcn-152w-75",
-  "bfcn-1560",
-  "bfcn-1575",
   "filter",
   "mini",
   "circuits",
+  "rf",
   "pass",
+  "fv1206",
   "ohm",
   "passive",
+  "smd",
+  "ic",
   "low",
   "high",
   "band",
   "lfcn",
-  "hfcn"
+  "hfcn",
+  "dc"
  ],
  "facts": {
   "package_family": "1206",
@@ -67,7 +59,7 @@
   "tier_counts": {
    "A": 186
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -299,6 +291,6 @@
   "kicad-symbols/RF_Filter/LFCN-9170",
   "kicad-symbols/RF_Filter/LFCN-95"
  ],
- "embedding_text": "ic-rf.1206 | IC RF | Surface-mount RF IC components in 1206 package footprints, featuring 186 tier A parts sourced from KiCad symbols. | ic rf ic rf 1206 smd fv1206 filter_mini-circuits_fv1206 kicad-symbols bfcn-1445 bfcn-1525 bfcn-152w-75 bfcn-1560 bfcn-1575 filter mini circuits pass ohm passive low high band lfcn hfcn | 1206 | ",
+ "embedding_text": "ic-rf.1206 | IC RF | 186 ic rf parts using 1206 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | filter mini circuits rf pass fv1206 ohm passive smd ic low high band lfcn hfcn dc | 1206 | ",
  "class": "ic.rf"
 }

@@ -6,32 +6,24 @@
   "Passive",
   "Resistor"
  ],
- "description": "Cluster of 94 passive resistor library parts using WURTH package family footprints with SMD, through-hole, and unknown mounting types.",
+ "description": "94 passive resistor parts using WURTH footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Verify the specific footprint match such as WURTH, SMP, MMCX, 5040, or 74655095.",
-  "Prioritize tier B parts from dist-legacy over tier C entries for better quality scores.",
-  "Confirm mounting configuration between SMD and through-hole variants."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a WURTH land pattern is intended."
  ],
  "avoid_when": [
-  "A package footprint outside the WURTH family is required.",
-  "The design requires verified tier A parts, as only tier B and C are available.",
-  "Parts with unknown mounting specifications cannot be verified."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than WURTH."
  ],
  "keywords": [
+  "wurth",
+  "we",
   "passive",
   "resistor",
-  "wurth",
-  "smd",
-  "through_hole",
-  "mmcx",
-  "smp",
-  "5040",
-  "74655095",
-  "dist-legacy",
-  "celestial-altium-library",
-  "passive resistor",
-  "we",
   "mm",
+  "smp",
   "pitch",
   "pad",
   "pins",
@@ -40,7 +32,8 @@
   "lqs",
   "hci",
   "connector",
-  "achc"
+  "achc",
+  "mmcx"
  ],
  "facts": {
   "package_family": "WURTH",
@@ -76,7 +69,7 @@
    "B": 18,
    "C": 76
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -216,6 +209,6 @@
   "celestial-altium-library/Wurth 74650094/Wurth_74650094",
   "celestial-altium-library/Wurth MMCX 66011002111501/Wurth_MMCX_66011002111501"
  ],
- "embedding_text": "passive-resistor.wurth | Passive Resistor | Cluster of 94 passive resistor library parts using WURTH package family footprints with SMD, through-hole, and unknown mounting types. | passive resistor wurth smd through_hole mmcx smp 5040 74655095 dist-legacy celestial-altium-library passive resistor we mm pitch pad pins surface mount lqs hci connector achc | WURTH | ",
+ "embedding_text": "passive-resistor.wurth | Passive Resistor | 94 passive resistor parts using WURTH footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | wurth we passive resistor mm smp pitch pad pins surface mount lqs hci connector achc mmcx | WURTH | ",
  "class": "passive.resistor"
 }

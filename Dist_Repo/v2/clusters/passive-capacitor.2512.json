@@ -6,27 +6,19 @@
   "Passive",
   "Capacitor"
  ],
- "description": "Cluster of passive capacitor components associated with the 2512 package family and 2512_6332 footprint.",
+ "description": "1 passive capacitor parts using 2512 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when the PCB layout requires a 2512 package family or 2512_6332 footprint.",
-  "Verify electrical specifications and mounting requirements for the specific part.",
-  "Review quality tier and source data for design qualification."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a 2512 land pattern is intended."
  ],
  "avoid_when": [
-  "The layout requires a footprint or package family other than 2512.",
-  "Tier C or generated entries do not meet design quality standards."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than 2512."
  ],
  "keywords": [
-  "passive",
   "capacitor",
-  "passive capacitor",
-  "passive.capacitor",
-  "2512",
-  "2512_6332",
-  "2512 package",
-  "2512 footprint",
-  "passive-capacitor.2512",
-  "dist-legacy",
   "pcb",
   "land",
   "pattern",
@@ -37,7 +29,8 @@
   "surface",
   "mount",
   "package",
-  "smd"
+  "smd",
+  "passive"
  ],
  "facts": {
   "package_family": "2512",
@@ -58,12 +51,12 @@
   "tier_counts": {
    "C": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
   "dist-legacy/2512_6332 capacitor"
  ],
- "embedding_text": "passive-capacitor.2512 | Passive Capacitor | Cluster of passive capacitor components associated with the 2512 package family and 2512_6332 footprint. | passive capacitor passive capacitor passive.capacitor 2512 2512_6332 2512 package 2512 footprint passive-capacitor.2512 dist-legacy pcb land pattern footprint bare for metric surface mount package smd | 2512 | ",
+ "embedding_text": "passive-capacitor.2512 | Passive Capacitor | 1 passive capacitor parts using 2512 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | capacitor pcb land pattern footprint bare for metric surface mount package smd passive | 2512 | ",
  "class": "passive.capacitor"
 }

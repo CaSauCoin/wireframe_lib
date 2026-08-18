@@ -6,42 +6,34 @@
   "Discrete",
   "Diode"
  ],
- "description": "Cluster of 9 discrete 6.8V diode parts (Zener_AKL library naming) in SMD SOT packages — SOT-363, SOT-323, SOT-89-3, SOT-223-3, SOT-353 — sourced from Alternate-KiCad-Library, all tier A.",
+ "description": "9 discrete diode parts for 6.8V using SOT footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Match the exact SOT footprint variant (SOT-363/SOT-323/SOT-89-3/SOT-223-3/SOT-353) to your intended PCB land pattern.",
-  "All 9 candidates are tier A from Alternate-KiCad-Library; differentiate by part name and footprint only.",
-  "Confirm the 6.8V facet matches the voltage your circuit requires before committing."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SOT land pattern is intended."
  ],
  "avoid_when": [
-  "The design needs a non-SOT package (e.g. axial, DO-214, larger SMD).",
-  "The required voltage is not 6.8V.",
-  "The footprint-to-pad mapping has not been verified against a datasheet."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SOT."
  ],
  "keywords": [
   "diode",
-  "zener",
   "sot",
-  "sot-363",
-  "sot-323",
-  "sot-89-3",
-  "sot-223-3",
-  "sot-353",
-  "sc-70",
-  "6.8v",
-  "6v8",
-  "smd",
-  "discrete",
-  "akl",
-  "alternate-kicad-library",
-  "bzb784",
-  "bzv49",
-  "bzv90",
-  "bzx84",
+  "zener",
   "8v",
   "sc",
   "dual",
+  "akl",
   "alternate",
-  "kicad"
+  "kicad",
+  "library",
+  "discrete",
+  "independent",
+  "200mw",
+  "c6v8",
+  "tvs",
+  "bzb784"
  ],
  "facts": {
   "package_family": "SOT",
@@ -68,7 +60,7 @@
   "tier_counts": {
    "A": 9
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -123,6 +115,6 @@
   "Alternate-KiCad-Library/Diode_Zener_AKL/MMBZ5235BS",
   "Alternate-KiCad-Library/Diode_Zener_AKL/MMBZ5235BSs"
  ],
- "embedding_text": "discrete-diode.sot.6-8v | Discrete Diode | Cluster of 9 discrete 6.8V diode parts (Zener_AKL library naming) in SMD SOT packages — SOT-363, SOT-323, SOT-89-3, SOT-223-3, SOT-353 — sourced from Alternate-KiCad-Library, all tier A. | diode zener sot sot-363 sot-323 sot-89-3 sot-223-3 sot-353 sc-70 6.8v 6v8 smd discrete akl alternate-kicad-library bzb784 bzv49 bzv90 bzx84 8v sc dual alternate kicad | SOT | 6.8V",
+ "embedding_text": "discrete-diode.sot.6-8v | Discrete Diode | 9 discrete diode parts for 6.8V using SOT footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | diode sot zener 8v sc dual akl alternate kicad library discrete independent 200mw c6v8 tvs bzb784 | SOT | 6.8V",
  "class": "discrete.diode"
 }

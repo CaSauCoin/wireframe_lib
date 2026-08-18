@@ -6,42 +6,34 @@
   "Discrete",
   "BJT"
  ],
- "description": "SOT-23 SMD discrete BJT cluster tagged 32V, comprising 11 tier-A parts (e.g., BCW29, BCW30, BCW31) sourced from the Alternate-KiCad-Library.",
+ "description": "11 discrete bjt parts for 32V using SOT-23 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "All 11 parts are tier A with score 100; differentiate by exact part number (e.g., BCW29 vs BCW30).",
-  "Confirm the SOT-23 footprint matches your intended PCB land pattern.",
-  "Verify polarity, pinout, and electrical ratings from the specific part's own data, not from cluster-level metadata."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SOT-23 land pattern is intended."
  ],
  "avoid_when": [
-  "The required voltage rating differs from the 32V facet.",
-  "The design needs a package other than SOT-23.",
-  "Part-specific electrical specs or pinout are unknown or unverified for the chosen entry."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SOT-23."
  ],
  "keywords": [
-  "sot-23",
-  "bjt",
-  "transistor",
-  "discrete",
-  "32v",
-  "smd",
-  "bcw29",
-  "bcw30",
-  "bcw31",
-  "bcw32",
-  "bcw33",
-  "alternate-kicad-library",
-  "tier a",
-  "sot23 footprint",
-  "discrete.bjt",
-  "kicad library",
   "sot",
+  "transistor",
+  "bjt",
+  "32v",
   "npn",
   "akl",
   "alternate",
   "kicad",
   "library",
+  "discrete",
   "100ma",
-  "250mw"
+  "250mw",
+  "pnp",
+  "bcw60",
+  "bcw29",
+  "bcw31"
  ],
  "facts": {
   "package_family": "SOT-23",
@@ -64,7 +56,7 @@
   "tier_counts": {
    "A": 11
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -121,6 +113,6 @@
   "Alternate-KiCad-Library/Transistor_BJT_AKL/BCW61",
   "Alternate-KiCad-Library/Transistor_BJT_AKL/BCW67"
  ],
- "embedding_text": "discrete-bjt.sot-23.32v | Discrete BJT | SOT-23 SMD discrete BJT cluster tagged 32V, comprising 11 tier-A parts (e.g., BCW29, BCW30, BCW31) sourced from the Alternate-KiCad-Library. | sot-23 bjt transistor discrete 32v smd bcw29 bcw30 bcw31 bcw32 bcw33 alternate-kicad-library tier a sot23 footprint discrete.bjt kicad library sot npn akl alternate kicad library 100ma 250mw | SOT-23 | 32V",
+ "embedding_text": "discrete-bjt.sot-23.32v | Discrete BJT | 11 discrete bjt parts for 32V using SOT-23 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | sot transistor bjt 32v npn akl alternate kicad library discrete 100ma 250mw pnp bcw60 bcw29 bcw31 | SOT-23 | 32V",
  "class": "discrete.bjt"
 }

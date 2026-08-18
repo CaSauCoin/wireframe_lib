@@ -6,26 +6,20 @@
   "IC",
   "Sensor"
  ],
- "description": "Surface-mount sensor IC cluster featuring SSOP-20 and SSOP-28 footprints with 0.65mm pitch.",
+ "description": "2 ic sensor parts using SSOP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when requiring a surface-mount sensor IC in an SSOP package family.",
-  "Choose between SSOP-20 (5.3x7.2mm) and SSOP-28 (5.3x10.2mm) footprints with 0.65mm pitch."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SSOP land pattern is intended."
  ],
  "avoid_when": [
-  "Avoid if the design requires package families other than SSOP.",
-  "Do not use when through-hole mounting or footprints other than SSOP-20 or SSOP-28 are required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SSOP."
  ],
  "keywords": [
-  "ic",
-  "sensor",
   "ssop",
-  "smd",
-  "ssop-20",
-  "ssop-28",
-  "ade7763xrs",
-  "atm90e26-yu",
-  "ic sensor",
-  "0.65mm pitch",
+  "sensor",
   "energy",
   "metering",
   "single",
@@ -35,7 +29,9 @@
   "p0",
   "65mm",
   "so",
+  "ic",
   "wire",
+  "ade7763xrs",
   "active",
   "apparent"
  ],
@@ -59,7 +55,7 @@
   "tier_counts": {
    "A": 2
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -83,6 +79,6 @@
   "kicad-symbols/Sensor/ADE7763xRS",
   "kicad-symbols/Sensor_Energy/ATM90E26-YU"
  ],
- "embedding_text": "ic-sensor.ssop | IC Sensor | Surface-mount sensor IC cluster featuring SSOP-20 and SSOP-28 footprints with 0.65mm pitch. | ic sensor ssop smd ssop-20 ssop-28 ade7763xrs atm90e26-yu ic sensor 0.65mm pitch energy metering single phase and 2mm p0 65mm so wire active apparent | SSOP | ",
+ "embedding_text": "ic-sensor.ssop | IC Sensor | 2 ic sensor parts using SSOP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | ssop sensor energy metering single phase and 2mm p0 65mm so ic wire ade7763xrs active apparent | SSOP | ",
  "class": "ic.sensor"
 }

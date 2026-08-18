@@ -6,32 +6,26 @@
   "Passive",
   "Crystal / Resonator"
  ],
- "description": "Passive crystal and resonator components in surface-mount 0805 (2012 metric, 2-pin) packages.",
+ "description": "3 passive crystal / resonator parts using 0805 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when an SMD 0805 (2012 metric) 2-pin crystal footprint is required.",
-  "Choose between standard and hand-soldering footprint variants based on assembly needs.",
-  "Verify part quality tier and library source among available cluster entries."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a 0805 land pattern is intended."
  ],
  "avoid_when": [
-  "The design requires through-hole mounting or package sizes other than 0805.",
-  "The circuit requires an active oscillator or a 4-pin footprint rather than a 2-pin passive crystal.",
-  "A part with a higher quality tier than Tier B or C is required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than 0805."
  ],
  "keywords": [
-  "passive",
   "crystal",
-  "resonator",
-  "0805",
-  "2012",
   "smd",
-  "surface mount",
-  "2pin",
-  "2.0x1.2mm",
-  "handsoldering",
-  "crystal_smd_2012-2pin_2.0x1.2mm",
-  "smd2012-2",
   "2mm",
   "0x1",
+  "2pin",
+  "resonator",
+  "passive",
+  "handsoldering",
   "package",
   "pdf",
   "quartz",
@@ -63,7 +57,7 @@
    "B": 1,
    "C": 2
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -80,6 +74,6 @@
   "dist-legacy/Crystal_SMD_2012-2Pin_2.0x1.2mm",
   "dist-legacy/Crystal_SMD_2012-2Pin_2.0x1.2mm_HandSoldering"
  ],
- "embedding_text": "passive-crystal.0805 | Passive Crystal / Resonator | Passive crystal and resonator components in surface-mount 0805 (2012 metric, 2-pin) packages. | passive crystal resonator 0805 2012 smd surface mount 2pin 2.0x1.2mm handsoldering crystal_smd_2012-2pin_2.0x1.2mm smd2012-2 2mm 0x1 package pdf quartz surface mount pad mm pitch | 0805 | ",
+ "embedding_text": "passive-crystal.0805 | Passive Crystal / Resonator | 3 passive crystal / resonator parts using 0805 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | crystal smd 2mm 0x1 2pin resonator passive handsoldering package pdf quartz surface mount pad mm pitch | 0805 | ",
  "class": "passive.crystal"
 }

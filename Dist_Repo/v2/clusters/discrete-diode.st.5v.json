@@ -6,30 +6,23 @@
   "Discrete",
   "Diode"
  ],
- "description": "Single-part discrete SMD diode cluster rated for 5V operation, utilizing the ST package family with an ST_D_SMC footprint.",
+ "description": "1 discrete diode parts for 5V using ST footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Choose when a 5V surface-mount discrete diode with an ST_D_SMC footprint is needed.",
-  "Verify footprint compatibility with ST package land patterns.",
-  "Use for tier A catalog requirements from KiCad symbols source."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a ST land pattern is intended."
  ],
  "avoid_when": [
-  "The design requires a footprint other than ST_D_SMC.",
-  "Through-hole mounting or a non-SMD component is required.",
-  "Operating voltage requirement is not 5V."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than ST."
  ],
  "keywords": [
   "diode",
-  "discrete diode",
   "5v",
-  "st",
-  "smd",
-  "st_d_smc",
-  "sm5908",
-  "kicad-symbols",
-  "surface mount",
-  "discrete",
   "smc",
-  "tier a",
+  "st",
+  "sm5908",
   "1500w",
   "unidirectional",
   "tvs",
@@ -63,7 +56,7 @@
   "tier_counts": {
    "A": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -78,6 +71,6 @@
  "part_ids": [
   "kicad-symbols/Diode/SM5908"
  ],
- "embedding_text": "discrete-diode.st.5v | Discrete Diode | Single-part discrete SMD diode cluster rated for 5V operation, utilizing the ST package family with an ST_D_SMC footprint. | diode discrete diode 5v st smd st_d_smc sm5908 kicad-symbols surface mount discrete smc tier a 1500w unidirectional tvs vrm irm at vbr 6v mdc marking do | ST | 5V",
+ "embedding_text": "discrete-diode.st.5v | Discrete Diode | 1 discrete diode parts for 5V using ST footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | diode 5v smc st sm5908 1500w unidirectional tvs vrm irm at vbr 6v mdc marking do | ST | 5V",
  "class": "discrete.diode"
 }

@@ -6,32 +6,24 @@
   "IC",
   "Driver"
  ],
- "description": "Surface-mount 80V IC driver cluster featuring pSemi CSP-16 footprint parts including PE29101 and PE29102.",
+ "description": "2 ic driver parts for 80V using pSemi footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when an SMD 80V IC driver in a pSemi CSP-16 package is required.",
-  "Choose between representative parts PE29101 and PE29102 based on specific design requirements.",
-  "Verify footprint compatibility with pSemi_CSP-16_1.64x2.04mm_P0.4mm."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a pSemi land pattern is intended."
  ],
  "avoid_when": [
-  "Do not use if through-hole mounting is required instead of SMD.",
-  "Avoid when the target layout requires a footprint other than pSemi_CSP-16_1.64x2.04mm_P0.4mm.",
-  "Avoid if an IC driver rating other than 80V is specified."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than pSemi."
  ],
  "keywords": [
-  "ic driver",
   "driver",
-  "80v",
-  "psemi",
-  "smd",
-  "pe29101",
-  "pe29102",
-  "csp-16",
-  "psemi_csp-16_1.64x2.04mm_p0.4mm",
-  "ic.driver",
-  "kicad-symbols",
   "csp",
+  "psemi",
   "fet",
   "0a",
+  "80v",
   "output",
   "ultracmos",
   "high",
@@ -64,7 +56,7 @@
   "tier_counts": {
    "B": 2
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -88,6 +80,6 @@
   "kicad-symbols/Driver_FET/PE29101",
   "kicad-symbols/Driver_FET/PE29102"
  ],
- "embedding_text": "ic-driver.psemi.80v | IC Driver | Surface-mount 80V IC driver cluster featuring pSemi CSP-16 footprint parts including PE29101 and PE29102. | ic driver driver 80v psemi smd pe29101 pe29102 csp-16 psemi_csp-16_1.64x2.04mm_p0.4mm ic.driver kicad-symbols csp fet 0a output ultracmos high speed mhz current half bridge 64x2 04mm | pSemi | 80V",
+ "embedding_text": "ic-driver.psemi.80v | IC Driver | 2 ic driver parts for 80V using pSemi footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | driver csp psemi fet 0a 80v output ultracmos high speed mhz current half bridge 64x2 04mm | pSemi | 80V",
  "class": "ic.driver"
 }

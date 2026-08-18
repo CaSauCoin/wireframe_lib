@@ -6,29 +6,23 @@
   "Discrete",
   "Transistor"
  ],
- "description": "Discrete transistor cluster containing 1 through-hole part using the Osram_LPT80A footprint.",
+ "description": "1 discrete transistor parts using Osram footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "A through-hole discrete transistor is required.",
-  "The board design uses the Osram package family or Osram_LPT80A footprint.",
-  "The tier C part sourced from dist-legacy is acceptable."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a Osram land pattern is intended."
  ],
  "avoid_when": [
-  "Surface-mount (SMD) mounting is required.",
-  "The board layout requires a footprint other than Osram_LPT80A.",
-  "Parts above quality tier C or planner-visible entries are required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than Osram."
  ],
  "keywords": [
-  "discrete transistor",
   "osram",
-  "osram_lpt80a",
   "lpt80a",
-  "through hole",
-  "through_hole",
+  "package",
   "discrete",
   "transistor",
-  "dist-legacy",
-  "tier c",
-  "package",
   "phototransistor",
   "sidelooker",
   "rm2",
@@ -58,12 +52,12 @@
   "tier_counts": {
    "C": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
   "dist-legacy/Osram_LPT80A"
  ],
- "embedding_text": "discrete-transistor.osram | Discrete Transistor | Discrete transistor cluster containing 1 through-hole part using the Osram_LPT80A footprint. | discrete transistor osram osram_lpt80a lpt80a through hole through_hole discrete transistor dist-legacy tier c package phototransistor sidelooker rm2 through hole pad mm pitch pins | Osram | ",
+ "embedding_text": "discrete-transistor.osram | Discrete Transistor | 1 discrete transistor parts using Osram footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | osram lpt80a package discrete transistor phototransistor sidelooker rm2 through hole pad mm pitch pins | Osram | ",
  "class": "discrete.transistor"
 }

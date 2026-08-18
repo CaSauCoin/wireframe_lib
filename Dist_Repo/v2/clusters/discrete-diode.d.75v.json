@@ -6,44 +6,34 @@
   "Discrete",
   "Diode"
  ],
- "description": "Cluster of 173 discrete diodes in the D package family tagged 75V, spanning SMD footprints (SOD-123/323/523, SMA/SMB/SMC) and through-hole footprints (MiniMELF, DO-35, DO-41), mainly sourced from Alternate-KiCad-Library.",
+ "description": "173 discrete diode parts for 75V using D footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Match the exact footprint (e.g. SOD-123 vs SOD-323 vs SMA/SMB/SMC) to the intended PCB land pattern.",
-  "Prefer tier A parts (165 of 173) over the 8 tier B parts.",
-  "Distinguish standard, TVS, and Zener footprint variants (D_SMB_TVS, D_SMC_TVS, D_DO-41_SOD81_..._Zener) since they serve different circuit roles.",
-  "Check which source library the part comes from (kicad-symbols, Alternate-KiCad-Library, JLCPCB-Kicad-Library) for provenance."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a D land pattern is intended."
  ],
  "avoid_when": [
-  "A package outside this D-family footprint list is required.",
-  "A voltage rating other than the 75V facet is needed and not confirmed on the specific part.",
-  "A TVS or Zener function is required but the selected footprint isn't one of the TVS/Zener variants.",
-  "review_status is 'generated' and the part-to-footprint pairing hasn't been verified against a datasheet."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than D."
  ],
  "keywords": [
   "diode",
   "75v",
-  "discrete diode",
-  "d package",
-  "sod-123",
-  "sod-323",
-  "sod-523",
-  "sod-123f",
-  "sma",
-  "smb",
-  "smc",
-  "minimelf",
-  "do-35",
-  "do-41",
-  "zener",
   "tvs",
-  "through hole",
-  "smd",
+  "zener",
   "do",
   "discrete",
   "akl",
   "alternate",
   "kicad",
-  "library"
+  "library",
+  "sod",
+  "horizontal",
+  "unidirectional",
+  "smb",
+  "axial",
+  "pin"
  ],
  "facts": {
   "package_family": "D",
@@ -81,7 +71,7 @@
    "A": 165,
    "B": 8
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -300,6 +290,6 @@
   "Alternate-KiCad-Library/Diode_TVS_AKL/TPSMA6L75A",
   "JLCPCB-Kicad-Library/JLCPCB-Diodes/TVS-Bi,5.0SMDJ75CA"
  ],
- "embedding_text": "discrete-diode.d.75v | Discrete Diode | Cluster of 173 discrete diodes in the D package family tagged 75V, spanning SMD footprints (SOD-123/323/523, SMA/SMB/SMC) and through-hole footprints (MiniMELF, DO-35, DO-41), mainly sourced from Alternate-KiCad-Library. | diode 75v discrete diode d package sod-123 sod-323 sod-523 sod-123f sma smb smc minimelf do-35 do-41 zener tvs through hole smd do discrete akl alternate kicad library | D | 75V",
+ "embedding_text": "discrete-diode.d.75v | Discrete Diode | 173 discrete diode parts for 75V using D footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | diode 75v tvs zener do discrete akl alternate kicad library sod horizontal unidirectional smb axial pin | D | 75V",
  "class": "discrete.diode"
 }

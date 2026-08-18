@@ -6,31 +6,24 @@
   "IC",
   "Logic"
  ],
- "description": "Logic IC cluster containing surface-mount SOP package devices, including SOP-4 and SOP-8 footprints from the JLCPCB KiCad library.",
+ "description": "4 ic logic parts using SOP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select based on specific SOP footprint requirements such as SOP-4 or SOP-8.",
-  "Prefer higher quality tier A parts when selecting representative components.",
-  "Ensure compatibility with surface-mount (SMD) assembly processes."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SOP land pattern is intended."
  ],
  "avoid_when": [
-  "Through-hole mounting is required instead of surface-mount (SMD).",
-  "Package types other than SOP are needed for the PCB design."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SOP."
  ],
  "keywords": [
-  "ic",
-  "logic",
   "sop",
-  "smd",
-  "sop-4",
-  "sop-8",
-  "jlcpcb-kicad-library",
-  "phototransistor",
-  "transistor",
-  "moc223m",
-  "el357n",
-  "icpl-356-50ceaxw",
   "l4",
   "p1",
+  "ic",
+  "logic",
+  "transistor",
   "w2",
   "ls7",
   "tl",
@@ -64,7 +57,7 @@
    "A": 1,
    "B": 3
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -106,6 +99,6 @@
   "JLCPCB-Kicad-Library/42381015/Phototransistor, 2.7khz, EL357N(B)(TA)-G(2)",
   "JLCPCB-Kicad-Library/42379244/Phototransistor, 2.7khz, EL357N(C)(TA)-G"
  ],
- "embedding_text": "ic-logic.sop | IC Logic | Logic IC cluster containing surface-mount SOP package devices, including SOP-4 and SOP-8 footprints from the JLCPCB KiCad library. | ic logic sop smd sop-4 sop-8 jlcpcb-kicad-library phototransistor transistor moc223m el357n icpl-356-50ceaxw l4 p1 w2 ls7 tl 54mm photovoltaic output optoisolators rohs footprint icpl | SOP | ",
+ "embedding_text": "ic-logic.sop | IC Logic | 4 ic logic parts using SOP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | sop l4 p1 ic logic transistor w2 ls7 tl 54mm photovoltaic output optoisolators rohs footprint icpl | SOP | ",
  "class": "ic.logic"
 }

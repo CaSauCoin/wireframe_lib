@@ -6,34 +6,25 @@
   "IC",
   "Sensor"
  ],
- "description": "Sensor IC cluster in surface-mount SO package supporting 3.3V, 5V, and I2C interfaces, represented by part MT6701CT.",
+ "description": "1 ic sensor parts for 3.3V, 5V, I2C using SO footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when needing a 3.3V or 5V surface-mount sensor IC with an I2C interface.",
-  "Use for PCB designs specifying an SO-8 3.9x4.9mm 1.27mm pitch footprint.",
-  "Verify design suitability with tier A representative part MT6701CT."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SO land pattern is intended."
  ],
  "avoid_when": [
-  "Avoid if the design requires through-hole mounting instead of SMD.",
-  "Avoid if operating supply voltages other than 3.3V or 5V are required.",
-  "Avoid when a package family or footprint other than SO / SO-8 is needed.",
-  "Avoid if communication interfaces other than I2C are required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SO."
  ],
  "keywords": [
-  "ic sensor",
-  "sensor ic",
-  "3.3v",
-  "5v",
-  "i2c",
-  "so",
-  "so-8",
-  "smd",
-  "mt6701ct",
-  "magnetic sensor",
-  "kicad-symbols",
-  "so-8_3.9x4.9mm_p1.27mm",
   "sensor",
+  "so",
   "magnetic",
   "hall",
+  "i2c",
+  "5v",
+  "mt6701ct",
   "based",
   "angle",
   "position",
@@ -67,7 +58,7 @@
   "tier_counts": {
    "A": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -82,6 +73,6 @@
  "part_ids": [
   "kicad-symbols/Sensor_Magnetic/MT6701CT"
  ],
- "embedding_text": "ic-sensor.so.3v3.5v | IC Sensor | Sensor IC cluster in surface-mount SO package supporting 3.3V, 5V, and I2C interfaces, represented by part MT6701CT. | ic sensor sensor ic 3.3v 5v i2c so so-8 smd mt6701ct magnetic sensor kicad-symbols so-8_3.9x4.9mm_p1.27mm sensor magnetic hall based angle position encoder ssi abz uvw interfaces supply | SO | 3.3V 5V I2C",
+ "embedding_text": "ic-sensor.so.3v3.5v | IC Sensor | 1 ic sensor parts for 3.3V, 5V, I2C using SO footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | sensor so magnetic hall i2c 5v mt6701ct based angle position encoder ssi abz uvw interfaces supply | SO | 3.3V 5V I2C",
  "class": "ic.sensor"
 }

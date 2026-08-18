@@ -6,27 +6,21 @@
   "Discrete",
   "Transistor"
  ],
- "description": "A cluster of discrete transistor components associated with the HED3T package family and footprint.",
+ "description": "1 discrete transistor parts using HED3T footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Use when a design specifically requires a discrete transistor in a HED3T footprint.",
-  "Verify pin-to-pad assignments and package details against project requirements.",
-  "Confirm part ratings and source data prior to board layout."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a HED3T land pattern is intended."
  ],
  "avoid_when": [
-  "The board layout requires a package family other than HED3T.",
-  "Required electrical specifications or pinouts are unspecified for the part.",
-  "Unverified or generated tier parts are not permitted."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than HED3T."
  ],
  "keywords": [
   "hed3t",
-  "discrete transistor",
-  "transistor",
   "discrete",
-  "hed3t footprint",
-  "hed3t package",
-  "discrete.transistor",
-  "transistor cluster",
-  "hed3t land pattern",
+  "transistor",
   "pad",
   "mm",
   "pitch",
@@ -51,12 +45,12 @@
   "tier_counts": {
    "C": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
   "dist-legacy/HED3T"
  ],
- "embedding_text": "discrete-transistor.hed3t | Discrete Transistor | A cluster of discrete transistor components associated with the HED3T package family and footprint. | hed3t discrete transistor transistor discrete hed3t footprint hed3t package discrete.transistor transistor cluster hed3t land pattern pad mm pitch pins | HED3T | ",
+ "embedding_text": "discrete-transistor.hed3t | Discrete Transistor | 1 discrete transistor parts using HED3T footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | hed3t discrete transistor pad mm pitch pins | HED3T | ",
  "class": "discrete.transistor"
 }

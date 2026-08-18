@@ -5,27 +5,20 @@
  "category_path": [
   "IC"
  ],
- "description": "IC cluster containing 1 tier C part associated with the MDS9FLA package family and footprint.",
+ "description": "1 ic parts using MDS9FLA footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Use when an MDS9FLA package family or footprint is required.",
-  "Check part specifications for the single tier C entry from dist-legacy.",
-  "Verify mounting details as the mount type is listed as unknown."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a MDS9FLA land pattern is intended."
  ],
  "avoid_when": [
-  "The PCB design requires a package family or footprint other than MDS9FLA.",
-  "Parts with planner visibility or quality tiers higher than C are needed."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than MDS9FLA."
  ],
  "keywords": [
   "mds9fla",
   "ic",
-  "mds9fla package",
-  "mds9fla footprint",
-  "dist-legacy",
-  "tier c",
-  "unknown mount",
-  "review status generated",
-  "planner visible count 0",
-  "ic category",
   "pad",
   "mm",
   "pitch",
@@ -50,12 +43,12 @@
   "tier_counts": {
    "C": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
   "dist-legacy/MDS9FLA"
  ],
- "embedding_text": "ic.mds9fla | IC | IC cluster containing 1 tier C part associated with the MDS9FLA package family and footprint. | mds9fla ic mds9fla package mds9fla footprint dist-legacy tier c unknown mount review status generated planner visible count 0 ic category pad mm pitch pins | MDS9FLA | ",
+ "embedding_text": "ic.mds9fla | IC | 1 ic parts using MDS9FLA footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | mds9fla ic pad mm pitch pins | MDS9FLA | ",
  "class": "ic"
 }

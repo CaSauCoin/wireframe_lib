@@ -5,32 +5,20 @@
  "category_path": [
   "IC"
  ],
- "description": "Cluster of 30 integrated circuit parts utilizing Skyworks footprints, available in surface-mount packaging across quality tiers B and C.",
+ "description": "30 ic parts using SKYWORKS footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Prefer tier B parts such as SKY13414-485LF or SKY13446-374LF over tier C parts.",
-  "Select entries with specific footprint matches like DFN, MLPD, or MCM packaging.",
-  "Verify compatibility between dist-legacy and celestial-altium-library sources."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SKYWORKS land pattern is intended."
  ],
  "avoid_when": [
-  "The layout requires a footprint family other than Skyworks.",
-  "Only through-hole mounting is supported by the board design.",
-  "The project requires tier A qualified components."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SKYWORKS."
  ],
  "keywords": [
   "skyworks",
   "ic",
-  "smd",
-  "dfn-6",
-  "dfn-8",
-  "mcm-12",
-  "mlpd-6",
-  "sky13414-485lf",
-  "sky13446-374lf",
-  "sky13351-378lf",
-  "sky13575_639lf",
-  "sky65404-31",
-  "dist-legacy",
-  "celestial-altium-library",
   "pins",
   "pad",
   "mm",
@@ -40,7 +28,11 @@
   "5mm",
   "mlpd",
   "tdfn",
-  "surface"
+  "surface",
+  "mount",
+  "374lf",
+  "qfn",
+  "sky13414"
  ],
  "facts": {
   "package_family": "SKYWORKS",
@@ -75,7 +67,7 @@
    "B": 2,
    "C": 28
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -127,6 +119,6 @@
   "celestial-altium-library/SKYWORKS TDFN-14 3x3MM/SKYWORKS_TDFN-14_3x3MM",
   "celestial-altium-library/SKYWORKS XFDFN-6 1x1mm/SKYWORKS_XFDFN-6_1x1mm"
  ],
- "embedding_text": "ic.skyworks | IC | Cluster of 30 integrated circuit parts utilizing Skyworks footprints, available in surface-mount packaging across quality tiers B and C. | skyworks ic smd dfn-6 dfn-8 mcm-12 mlpd-6 sky13414-485lf sky13446-374lf sky13351-378lf sky13575_639lf sky65404-31 dist-legacy celestial-altium-library pins pad mm pitch 1x1mm dfn 5mm mlpd tdfn surface | SKYWORKS | ",
+ "embedding_text": "ic.skyworks | IC | 30 ic parts using SKYWORKS footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | skyworks ic pins pad mm pitch 1x1mm dfn 5mm mlpd tdfn surface mount 374lf qfn sky13414 | SKYWORKS | ",
  "class": "ic"
 }

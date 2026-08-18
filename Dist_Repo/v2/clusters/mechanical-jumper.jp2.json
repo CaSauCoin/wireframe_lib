@@ -6,30 +6,21 @@
   "Mechanical",
   "Jumper"
  ],
- "description": "Cluster of 8 legacy mechanical jumper parts associated with the JP2 package family and related footprints.",
+ "description": "8 mechanical jumper parts using JP2 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select based on the required footprint variant such as JP2, JP2-CLOSED, JP2-C1C, or JP2-D1C.",
-  "Verify footprint geometry and pad layout against design requirements prior to board layout.",
-  "Evaluate Tier C legacy distributor records for project suitability."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a JP2 land pattern is intended."
  ],
  "avoid_when": [
-  "The board layout requires a package family other than JP2.",
-  "Unverified Tier C legacy parts are not accepted for the design.",
-  "A defined mounting method is strictly required instead of unknown mounting."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than JP2."
  ],
  "keywords": [
-  "mechanical jumper",
   "jp2",
-  "jp2-c1c",
-  "jp2-c1t",
-  "jp2-closed",
-  "jp2-d1c",
-  "jp2-d1t",
-  "jp2_1",
-  "jp2_2",
-  "jumper",
   "mechanical",
-  "package family jp2",
+  "jumper",
   "pad",
   "mm",
   "pitch",
@@ -66,7 +57,7 @@
   "tier_counts": {
    "C": 8
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
@@ -79,6 +70,6 @@
   "dist-legacy/JP2_1",
   "dist-legacy/JP2_2"
  ],
- "embedding_text": "mechanical-jumper.jp2 | Mechanical Jumper | Cluster of 8 legacy mechanical jumper parts associated with the JP2 package family and related footprints. | mechanical jumper jp2 jp2-c1c jp2-c1t jp2-closed jp2-d1c jp2-d1t jp2_1 jp2_2 jumper mechanical package family jp2 pad mm pitch pins c1c c1t closed d1c d1t | JP2 | ",
+ "embedding_text": "mechanical-jumper.jp2 | Mechanical Jumper | 8 mechanical jumper parts using JP2 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | jp2 mechanical jumper pad mm pitch pins c1c c1t closed d1c d1t | JP2 | ",
  "class": "mechanical.jumper"
 }

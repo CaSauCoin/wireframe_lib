@@ -5,30 +5,18 @@
  "category_path": [
   "IC"
  ],
- "description": "Cluster of 5 surface-mount 1.2V LDO integrated circuits in the Diodes_SOT-89-5 footprint from Alternate-KiCad-Library.",
+ "description": "5 ic parts for LDO, 1.2V using Diodes footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when requiring a 1.2V low dropout (LDO) regulator IC.",
-  "Choose when using an SMD layout compatible with the Diodes_SOT-89-5 footprint.",
-  "Verify part selection among AP2112, AP2115, and AP7361 series variants."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a Diodes land pattern is intended."
  ],
  "avoid_when": [
-  "Do not use if an output voltage other than 1.2V is required.",
-  "Avoid when non-SMD or through-hole mounting is required.",
-  "Avoid if the board layout requires a footprint other than Diodes_SOT-89-5."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than Diodes."
  ],
  "keywords": [
-  "ic",
-  "ldo",
-  "1.2v",
-  "voltage regulator",
-  "smd",
-  "diodes_sot-89-5",
-  "sot-89-5",
-  "diodes",
-  "alternate-kicad-library",
-  "ap2112r5",
-  "ap2115r5",
-  "ap7361-12y",
   "voltage",
   "regulator",
   "sot",
@@ -36,11 +24,15 @@
   "low",
   "dropout",
   "enable",
+  "diodes",
+  "ldo",
   "1a",
   "akl",
   "with",
   "alternate",
-  "kicad"
+  "kicad",
+  "library",
+  "vreg"
  ],
  "facts": {
   "package_family": "Diodes",
@@ -64,7 +56,7 @@
   "tier_counts": {
    "B": 5
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -115,6 +107,6 @@
   "Alternate-KiCad-Library/Voltage_Regulator_AKL/AP2115R5A-1.2TRG1",
   "Alternate-KiCad-Library/Voltage_Regulator_AKL/AP7361-12Y"
  ],
- "embedding_text": "ic.diodes.ldo.1-2v | IC | Cluster of 5 surface-mount 1.2V LDO integrated circuits in the Diodes_SOT-89-5 footprint from Alternate-KiCad-Library. | ic ldo 1.2v voltage regulator smd diodes_sot-89-5 sot-89-5 diodes alternate-kicad-library ap2112r5 ap2115r5 ap7361-12y voltage regulator sot 2v low dropout enable 1a akl with alternate kicad | Diodes | LDO 1.2V",
+ "embedding_text": "ic.diodes.ldo.1-2v | IC | 5 ic parts for LDO, 1.2V using Diodes footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | voltage regulator sot 2v low dropout enable diodes ldo 1a akl with alternate kicad library vreg | Diodes | LDO 1.2V",
  "class": "ic"
 }

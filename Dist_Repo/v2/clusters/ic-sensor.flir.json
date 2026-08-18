@@ -6,36 +6,30 @@
   "IC",
   "Sensor"
  ],
- "description": "IC sensor cluster featuring SMD parts such as Flir_LEPTON using the FLIR_Lepton_Socket_1050281001 footprint.",
+ "description": "1 ic sensor parts using FLIR footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when requiring SMD sensor ICs compatible with the FLIR_Lepton_Socket_1050281001 footprint.",
-  "Verify tier B quality rating and KiCad symbol integration for Flir_LEPTON.",
-  "Confirm layout compatibility with the FLIR package family."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a FLIR land pattern is intended."
  ],
  "avoid_when": [
-  "Do not use if the design requires non-SMD or through-hole mounting.",
-  "Avoid when the board layout requires a package family other than FLIR.",
-  "Avoid if the FLIR_Lepton_Socket_1050281001 footprint is not supported."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than FLIR."
  ],
  "keywords": [
-  "ic",
-  "sensor",
   "flir",
   "lepton",
-  "flir_lepton",
-  "flir_lepton_socket_1050281001",
-  "smd",
-  "ic.sensor",
-  "kicad-symbols",
-  "optical",
-  "socket",
-  "ic sensor",
+  "sensor",
   "lwir",
   "camera",
+  "optical",
   "to",
   "14um",
   "80x60",
-  "pixel"
+  "pixel",
+  "socket",
+  "ic"
  ],
  "facts": {
   "package_family": "FLIR",
@@ -56,7 +50,7 @@
   "tier_counts": {
    "B": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -71,6 +65,6 @@
  "part_ids": [
   "kicad-symbols/Sensor_Optical/Flir_LEPTON"
  ],
- "embedding_text": "ic-sensor.flir | IC Sensor | IC sensor cluster featuring SMD parts such as Flir_LEPTON using the FLIR_Lepton_Socket_1050281001 footprint. | ic sensor flir lepton flir_lepton flir_lepton_socket_1050281001 smd ic.sensor kicad-symbols optical socket ic sensor lwir camera to 14um 80x60 pixel | FLIR | ",
+ "embedding_text": "ic-sensor.flir | IC Sensor | 1 ic sensor parts using FLIR footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | flir lepton sensor lwir camera optical to 14um 80x60 pixel socket ic | FLIR | ",
  "class": "ic.sensor"
 }

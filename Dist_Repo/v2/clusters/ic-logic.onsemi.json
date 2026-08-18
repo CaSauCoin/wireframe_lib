@@ -6,32 +6,25 @@
   "IC",
   "Logic"
  ],
- "description": "Surface-mount logic IC cluster featuring OnSemi UDFN-8 footprint parts such as NLSV2T244MU from KiCad symbols.",
+ "description": "1 ic logic parts using OnSemi footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when requiring SMD logic ICs in an OnSemi UDFN-8 footprint.",
-  "Verify compatibility with the OnSemi_UDFN-8_1.2x1.8mm_P0.4mm package.",
-  "Check component details against tier B quality rating."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a OnSemi land pattern is intended."
  ],
  "avoid_when": [
-  "Avoid when non-SMD or through-hole mounting is required.",
-  "Avoid if the design requires packages other than OnSemi_UDFN-8_1.2x1.8mm_P0.4mm.",
-  "Avoid if tier A component certification is strictly required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than OnSemi."
  ],
  "keywords": [
-  "ic",
+  "dual",
+  "udfn",
   "logic",
+  "level",
   "onsemi",
   "nlsv2t244mu",
-  "smd",
-  "udfn",
-  "udfn-8",
   "leveltranslator",
-  "onsemi_udfn-8_1.2x1.8mm_p0.4mm",
-  "kicad-symbols",
-  "logic_leveltranslator",
-  "ic logic",
-  "dual",
-  "level",
   "bit",
   "supply",
   "non",
@@ -61,7 +54,7 @@
   "tier_counts": {
    "B": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -76,6 +69,6 @@
  "part_ids": [
   "kicad-symbols/Logic_LevelTranslator/NLSV2T244MU"
  ],
- "embedding_text": "ic-logic.onsemi | IC Logic | Surface-mount logic IC cluster featuring OnSemi UDFN-8 footprint parts such as NLSV2T244MU from KiCad symbols. | ic logic onsemi nlsv2t244mu smd udfn udfn-8 leveltranslator onsemi_udfn-8_1.2x1.8mm_p0.4mm kicad-symbols logic_leveltranslator ic logic dual level bit supply non inverting translator output enable 2x1 8mm | OnSemi | ",
+ "embedding_text": "ic-logic.onsemi | IC Logic | 1 ic logic parts using OnSemi footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | dual udfn logic level onsemi nlsv2t244mu leveltranslator bit supply non inverting translator output enable 2x1 8mm | OnSemi | ",
  "class": "ic.logic"
 }

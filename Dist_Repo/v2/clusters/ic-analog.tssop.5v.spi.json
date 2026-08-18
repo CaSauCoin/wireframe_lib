@@ -6,32 +6,23 @@
   "IC",
   "Analog"
  ],
- "description": "Cluster of 8 tier-A surface-mount analog IC components featuring 5V, 10V, and SPI facets in TSSOP packages.",
+ "description": "8 ic analog parts for 5V, SPI, 10V using TSSOP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when an SMD analog IC with 5V, 10V, and SPI facets is required.",
-  "Match board layout requirements to available TSSOP-14, TSSOP-16, TSSOP-20, or TSSOP-24 footprints.",
-  "Use when tier-A KiCad symbol library components are preferred."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a TSSOP land pattern is intended."
  ],
  "avoid_when": [
-  "Avoid when the layout requires packages other than TSSOP or non-SMD mounting.",
-  "Avoid when required interface or voltage parameters differ from 5V, 10V, or SPI facets.",
-  "Do not use if footprint pin counts outside 14, 16, 20, or 24 pins are required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than TSSOP."
  ],
  "keywords": [
-  "ic.analog",
   "tssop",
-  "5v",
-  "10v",
-  "spi",
-  "smd",
-  "tssop-14",
-  "tssop-16",
-  "tssop-20",
-  "tssop-24",
-  "0.65mm pitch",
-  "kicad-symbols",
   "analog",
+  "5v",
   "adc",
+  "spi",
   "input",
   "bipolar",
   "bit",
@@ -39,6 +30,7 @@
   "65mm",
   "so",
   "ic",
+  "10v",
   "channel",
   "software",
   "selectable"
@@ -69,7 +61,7 @@
   "tier_counts": {
    "A": 8
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -123,6 +115,6 @@
   "kicad-symbols/Analog_ADC/AD7329",
   "kicad-symbols/Analog_Switch/ADG1414BRU"
  ],
- "embedding_text": "ic-analog.tssop.5v.spi | IC Analog | Cluster of 8 tier-A surface-mount analog IC components featuring 5V, 10V, and SPI facets in TSSOP packages. | ic.analog tssop 5v 10v spi smd tssop-14 tssop-16 tssop-20 tssop-24 0.65mm pitch kicad-symbols analog adc input bipolar bit p0 65mm so ic channel software selectable | TSSOP | 5V SPI 10V",
+ "embedding_text": "ic-analog.tssop.5v.spi | IC Analog | 8 ic analog parts for 5V, SPI, 10V using TSSOP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | tssop analog 5v adc spi input bipolar bit p0 65mm so ic 10v channel software selectable | TSSOP | 5V SPI 10V",
  "class": "ic.analog"
 }

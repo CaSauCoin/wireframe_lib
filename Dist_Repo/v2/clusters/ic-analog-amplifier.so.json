@@ -7,30 +7,20 @@
   "Analog",
   "Amplifier"
  ],
- "description": "Surface-mount analog amplifier ICs in SO packaging utilizing the SO-8_3.9x4.9mm_P1.27mm footprint.",
+ "description": "5 ic analog amplifier parts using SO footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when requiring surface-mount (SMD) analog amplifier ICs in SO packaging.",
-  "Choose parts matching the SO-8_3.9x4.9mm_P1.27mm footprint.",
-  "Verify compatibility with Alternate-KiCad-Library parts such as AD8132ARZ, AD8137YRZ, AD8138ARZ, or LMH6550MA."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SO land pattern is intended."
  ],
  "avoid_when": [
-  "Do not use if through-hole or non-SMD mounting is required.",
-  "Avoid when the PCB design requires a footprint other than SO-8_3.9x4.9mm_P1.27mm.",
-  "Do not use when requiring non-SO package families."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SO."
  ],
  "keywords": [
-  "ic",
-  "analog",
-  "amplifier",
   "so",
-  "smd",
-  "so-8",
-  "so-8_3.9x4.9mm_p1.27mm",
-  "alternate-kicad-library",
-  "ad8132arz",
-  "ad8137yrz",
-  "ad8138arz",
-  "lmh6550ma",
+  "amplifier",
   "differential",
   "driver",
   "akl",
@@ -42,7 +32,9 @@
   "library",
   "9x4",
   "9mm",
-  "p1"
+  "p1",
+  "27mm",
+  "ic"
  ],
  "facts": {
   "package_family": "SO",
@@ -63,7 +55,7 @@
   "tier_counts": {
    "A": 5
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -114,6 +106,6 @@
   "Alternate-KiCad-Library/Amplifier_Differential_AKL/AD8138ARZ",
   "Alternate-KiCad-Library/Amplifier_Differential_AKL/LMH6550MA"
  ],
- "embedding_text": "ic-analog-amplifier.so | IC Analog Amplifier | Surface-mount analog amplifier ICs in SO packaging utilizing the SO-8_3.9x4.9mm_P1.27mm footprint. | ic analog amplifier so smd so-8 so-8_3.9x4.9mm_p1.27mm alternate-kicad-library ad8132arz ad8137yrz ad8138arz lmh6550ma differential driver akl bandwidth slew rate alternate kicad library 9x4 9mm p1 | SO | ",
+ "embedding_text": "ic-analog-amplifier.so | IC Analog Amplifier | 5 ic analog amplifier parts using SO footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | so amplifier differential driver akl bandwidth slew rate alternate kicad library 9x4 9mm p1 27mm ic | SO | ",
  "class": "ic.analog.amplifier"
 }

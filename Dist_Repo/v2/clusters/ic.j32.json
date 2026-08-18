@@ -5,27 +5,22 @@
  "category_path": [
   "IC"
  ],
- "description": "Cluster of 2 integrated circuit parts in the J32 package family using J32-C1T or J32-D1T footprints.",
+ "description": "2 ic parts using J32 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Verify required layout matches J32-C1T or J32-D1T footprints.",
-  "Select when using IC parts in the J32 package family.",
-  "Account for tier C quality status and unknown mounting."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a J32 land pattern is intended."
  ],
  "avoid_when": [
-  "The PCB design requires a package family other than J32.",
-  "Land pattern requirements do not match J32-C1T or J32-D1T footprints."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than J32."
  ],
  "keywords": [
   "j32",
-  "j32-c1t",
-  "j32-d1t",
-  "ic",
-  "integrated circuit",
-  "j32 package",
   "c1t",
   "d1t",
-  "tier c",
-  "dist-legacy",
+  "ic",
   "pad",
   "mm",
   "pitch",
@@ -51,13 +46,13 @@
   "tier_counts": {
    "C": 2
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
   "dist-legacy/J32-C1T",
   "dist-legacy/J32-D1T"
  ],
- "embedding_text": "ic.j32 | IC | Cluster of 2 integrated circuit parts in the J32 package family using J32-C1T or J32-D1T footprints. | j32 j32-c1t j32-d1t ic integrated circuit j32 package c1t d1t tier c dist-legacy pad mm pitch pins | J32 | ",
+ "embedding_text": "ic.j32 | IC | 2 ic parts using J32 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | j32 c1t d1t ic pad mm pitch pins | J32 | ",
  "class": "ic"
 }

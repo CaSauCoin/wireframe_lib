@@ -5,28 +5,20 @@
  "category_path": [
   "IC"
  ],
- "description": "Integrated circuit cluster containing 2 surface-mount parts in the XSON6 package family with XSON6 1.00 and XSON6 1.45 footprints.",
+ "description": "2 ic parts using XSON6 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Verify specific footprint variant, such as XSON6 1.00 or XSON6 1.45, before layout.",
-  "Check part quality tier and source requirements prior to selection.",
-  "Use when an integrated circuit in an XSON6 surface-mount package is required."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a XSON6 land pattern is intended."
  ],
  "avoid_when": [
-  "The design requires a package type other than XSON6.",
-  "Through-hole mounting is required instead of surface-mount (SMD).",
-  "Tier C parts without planner visibility do not meet qualification standards."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than XSON6."
  ],
  "keywords": [
-  "ic",
   "xson6",
-  "xson6 1.00",
-  "xson6 1.45",
-  "smd",
-  "surface mount",
-  "integrated circuit",
-  "package family",
-  "footprint",
-  "francescosacco-hardwarelibrary",
+  "ic",
   "surface",
   "mount",
   "pad",
@@ -54,13 +46,13 @@
   "tier_counts": {
    "C": 2
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
   "francescosacco-hardwarelibrary/XSON6 1.00/XSON6_1.00",
   "francescosacco-hardwarelibrary/XSON6 1.45/XSON6_1.45"
  ],
- "embedding_text": "ic.xson6 | IC | Integrated circuit cluster containing 2 surface-mount parts in the XSON6 package family with XSON6 1.00 and XSON6 1.45 footprints. | ic xson6 xson6 1.00 xson6 1.45 smd surface mount integrated circuit package family footprint francescosacco-hardwarelibrary surface mount pad mm pitch pins | XSON6 | ",
+ "embedding_text": "ic.xson6 | IC | 2 ic parts using XSON6 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | xson6 ic surface mount pad mm pitch pins | XSON6 | ",
  "class": "ic"
 }

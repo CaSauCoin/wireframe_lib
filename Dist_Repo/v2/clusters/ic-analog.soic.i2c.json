@@ -6,33 +6,22 @@
   "IC",
   "Analog"
  ],
- "description": "Analog IC cluster featuring I2C communication available in surface-mount SOIC-8 and SOIC-14 footprints.",
+ "description": "4 ic analog parts for I2C using SOIC footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select based on footprint requirements for SOIC-8 or SOIC-14 packages.",
-  "Choose when requiring surface-mount (SMD) analog ICs with I2C interfaces.",
-  "Verify part selection against specified tier A quality status and KiCad symbol sources."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SOIC land pattern is intended."
  ],
  "avoid_when": [
-  "The PCB layout requires non-SOIC packages or through-hole mounting.",
-  "Interfaces other than I2C are required by the circuit.",
-  "Footprint dimensions or pin counts differ from SOIC-8 or SOIC-14 specifications."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SOIC."
  ],
  "keywords": [
   "soic",
-  "soic-8",
-  "soic-14",
-  "i2c",
-  "analog",
-  "ic",
-  "smd",
-  "analog ic",
-  "surface mount",
-  "p1.27mm",
-  "mcp3422axx-xsn",
-  "mcp3424x-xsl",
-  "mcp3426axx-xsn",
-  "mcp3428x-xsl",
   "adc",
+  "analog",
+  "i2c",
   "bit",
   "reference",
   "delta",
@@ -41,7 +30,10 @@
   "converter",
   "interface",
   "p1",
-  "27mm"
+  "27mm",
+  "so",
+  "ic",
+  "xsn"
  ],
  "facts": {
   "package_family": "SOIC",
@@ -65,7 +57,7 @@
   "tier_counts": {
    "A": 4
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -107,6 +99,6 @@
   "kicad-symbols/Analog_ADC/MCP3426Axx-xSN",
   "kicad-symbols/Analog_ADC/MCP3428x-xSL"
  ],
- "embedding_text": "ic-analog.soic.i2c | IC Analog | Analog IC cluster featuring I2C communication available in surface-mount SOIC-8 and SOIC-14 footprints. | soic soic-8 soic-14 i2c analog ic smd analog ic surface mount p1.27mm mcp3422axx-xsn mcp3424x-xsl mcp3426axx-xsn mcp3428x-xsl adc bit reference delta sigma channel converter interface p1 27mm | SOIC | I2C",
+ "embedding_text": "ic-analog.soic.i2c | IC Analog | 4 ic analog parts for I2C using SOIC footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | soic adc analog i2c bit reference delta sigma channel converter interface p1 27mm so ic xsn | SOIC | I2C",
  "class": "ic.analog"
 }

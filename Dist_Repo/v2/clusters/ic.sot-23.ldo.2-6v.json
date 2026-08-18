@@ -5,31 +5,18 @@
  "category_path": [
   "IC"
  ],
- "description": "Integrated circuit cluster containing two tier A SMD 2.6V low-dropout (LDO) regulators in SOT-23 footprints from Alternate-KiCad-Library.",
+ "description": "2 ic parts for LDO, 2.6V using SOT-23 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Choose for applications requiring a 2.6V LDO voltage regulator in an SMD SOT-23 package.",
-  "Select between representative tier A parts AP7315-26SA and AP7315-26SR.",
-  "Confirm SOT-23 footprint compatibility with board layout requirements."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SOT-23 land pattern is intended."
  ],
  "avoid_when": [
-  "A fixed output voltage other than 2.6V is required.",
-  "The design requires a footprint or package family other than SOT-23.",
-  "Through-hole component mounting is required instead of SMD."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SOT-23."
  ],
  "keywords": [
-  "ldo",
-  "2.6v",
-  "sot-23",
-  "sot23",
-  "smd",
-  "ic",
-  "ap7315-26sa",
-  "ap7315-26sr",
-  "ap7315",
-  "voltage regulator",
-  "alternate-kicad-library",
-  "kicad",
-  "tier a",
   "sot",
   "voltage",
   "regulator",
@@ -37,10 +24,15 @@
   "150ma",
   "low",
   "dropout",
+  "ldo",
+  "ap7315",
   "akl",
   "alternate",
+  "kicad",
   "library",
-  "vreg"
+  "vreg",
+  "pmic",
+  "power"
  ],
  "facts": {
   "package_family": "SOT-23",
@@ -64,7 +56,7 @@
   "tier_counts": {
    "A": 2
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -88,6 +80,6 @@
   "Alternate-KiCad-Library/Voltage_Regulator_AKL/AP7315-26SA",
   "Alternate-KiCad-Library/Voltage_Regulator_AKL/AP7315-26SR"
  ],
- "embedding_text": "ic.sot-23.ldo.2-6v | IC | Integrated circuit cluster containing two tier A SMD 2.6V low-dropout (LDO) regulators in SOT-23 footprints from Alternate-KiCad-Library. | ldo 2.6v sot-23 sot23 smd ic ap7315-26sa ap7315-26sr ap7315 voltage regulator alternate-kicad-library kicad tier a sot voltage regulator 6v 150ma low dropout akl alternate library vreg | SOT-23 | LDO 2.6V",
+ "embedding_text": "ic.sot-23.ldo.2-6v | IC | 2 ic parts for LDO, 2.6V using SOT-23 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | sot voltage regulator 6v 150ma low dropout ldo ap7315 akl alternate kicad library vreg pmic power | SOT-23 | LDO 2.6V",
  "class": "ic"
 }

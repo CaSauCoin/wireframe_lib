@@ -6,32 +6,22 @@
   "IC",
   "Interface"
  ],
- "description": "TSSOP surface-mount I2C interface IC cluster featuring 3 tier A parts with 5V and 5.5V ratings across 16-pin and 24-pin package options.",
+ "description": "3 ic interface parts for 5V, I2C, 5.5V using TSSOP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when requiring SMD I2C interface ICs rated for 5V or 5.5V.",
-  "Choose between TSSOP-16 (4.4x5mm) and TSSOP-24 (4.4x7.8mm) footprint options with 0.65mm pitch.",
-  "Pick from representative parts PCA9555PW, PCAL6408APW, or PCAL6416APW."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a TSSOP land pattern is intended."
  ],
  "avoid_when": [
-  "Through-hole mounting or non-SMD assembly is required.",
-  "The design requires footprint packages other than TSSOP-16 or TSSOP-24.",
-  "Operating voltage or interface requirements differ from 5V/5.5V and I2C."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than TSSOP."
  ],
  "keywords": [
-  "ic",
-  "interface",
   "tssop",
-  "i2c",
   "5v",
-  "5.5v",
-  "smd",
-  "tssop-16",
-  "tssop-24",
-  "pca9555pw",
-  "pcal6408apw",
-  "pcal6416apw",
-  "kicad-symbols",
-  "0.65mm",
+  "i2c",
+  "interface",
   "expander",
   "io",
   "expansion",
@@ -41,7 +31,9 @@
   "65mm",
   "so",
   "twi",
-  "400khz"
+  "ic",
+  "400khz",
+  "4x7"
  ],
  "facts": {
   "package_family": "TSSOP",
@@ -67,7 +59,7 @@
   "tier_counts": {
    "A": 3
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -100,6 +92,6 @@
   "kicad-symbols/Interface_Expansion/PCAL6408APW",
   "kicad-symbols/Interface_Expansion/PCAL6416APW"
  ],
- "embedding_text": "ic-interface.tssop.5v.i2c | IC Interface | TSSOP surface-mount I2C interface IC cluster featuring 3 tier A parts with 5V and 5.5V ratings across 16-pin and 24-pin package options. | ic interface tssop i2c 5v 5.5v smd tssop-16 tssop-24 pca9555pw pcal6408apw pcal6416apw kicad-symbols 0.65mm expander io expansion gpio interrupt p0 65mm so twi 400khz | TSSOP | 5V I2C 5.5V",
+ "embedding_text": "ic-interface.tssop.5v.i2c | IC Interface | 3 ic interface parts for 5V, I2C, 5.5V using TSSOP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | tssop 5v i2c interface expander io expansion gpio interrupt p0 65mm so twi ic 400khz 4x7 | TSSOP | 5V I2C 5.5V",
  "class": "ic.interface"
 }

@@ -6,30 +6,21 @@
   "Discrete",
   "FET"
  ],
- "description": "Discrete surface-mount FET component cluster rated for 80V in an LFPAK88 footprint, providing 3 tier A KiCad symbol parts including SQJQ184E, SQJQ186E, and SQJQ480E.",
+ "description": "3 discrete fet parts for 80V using LFPAK88 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when an 80V rated discrete FET in an SMD LFPAK88 package is required.",
-  "Choose from tier A parts including SQJQ184E, SQJQ186E, and SQJQ480E from KiCad symbols.",
-  "Confirm that the target PCB layout matches the LFPAK88 footprint."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a LFPAK88 land pattern is intended."
  ],
  "avoid_when": [
-  "Applications require operating voltages other than 80V.",
-  "The design specifies a package or footprint other than LFPAK88.",
-  "Surface-mount (SMD) packaging is not suitable for the design."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than LFPAK88."
  ],
  "keywords": [
-  "discrete fet",
+  "lfpak88",
   "fet",
   "80v",
-  "lfpak88",
-  "smd",
-  "discrete",
-  "kicad-symbols",
-  "sqjq184e",
-  "sqjq186e",
-  "sqjq480e",
-  "transistor_fet",
-  "tier a",
   "mosfet",
   "powerpak",
   "8x8l",
@@ -41,7 +32,8 @@
   "ron",
   "qqd",
   "to",
-  "nexperia"
+  "nexperia",
+  "vishay"
  ],
  "facts": {
   "package_family": "LFPAK88",
@@ -64,7 +56,7 @@
   "tier_counts": {
    "A": 3
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -97,6 +89,6 @@
   "kicad-symbols/Transistor_FET/SQJQ186E",
   "kicad-symbols/Transistor_FET/SQJQ480E"
  ],
- "embedding_text": "discrete-fet.lfpak88.80v | Discrete FET | Discrete surface-mount FET component cluster rated for 80V in an LFPAK88 footprint, providing 3 tier A KiCad symbol parts including SQJQ184E, SQJQ186E, and SQJQ480E. | discrete fet fet 80v lfpak88 smd discrete kicad-symbols sqjq184e sqjq186e sqjq480e transistor_fet tier a mosfet powerpak 8x8l transistor id vds channel trenchfet ron qqd to nexperia | LFPAK88 | 80V",
+ "embedding_text": "discrete-fet.lfpak88.80v | Discrete FET | 3 discrete fet parts for 80V using LFPAK88 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | lfpak88 fet 80v mosfet powerpak 8x8l transistor id vds channel trenchfet ron qqd to nexperia vishay | LFPAK88 | 80V",
  "class": "discrete.fet"
 }

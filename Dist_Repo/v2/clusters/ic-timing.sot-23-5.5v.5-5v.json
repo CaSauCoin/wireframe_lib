@@ -6,42 +6,34 @@
   "IC",
   "Timing"
  ],
- "description": "Cluster of 4 surface-mount timing ICs rated for 5V and 5.5V operation in SOT-23-5 and TSOT-23-5 packages.",
+ "description": "4 ic timing parts for 5V, 5.5V using SOT-23-5 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when a 5V or 5.5V rated timing IC is required in a surface-mount package.",
-  "Choose for layout designs requiring a SOT-23-5 or TSOT-23-5 footprint.",
-  "Select from tier A representative parts including LTC6905xS5 variants."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SOT-23-5 land pattern is intended."
  ],
  "avoid_when": [
-  "The application requires through-hole mounting instead of SMD.",
-  "The PCB footprint requirement is not SOT-23-5 or TSOT-23-5.",
-  "Operating voltage requirements are outside 5V to 5.5V."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SOT-23-5."
  ],
  "keywords": [
-  "ic",
-  "timing",
-  "ic timing",
-  "5v",
-  "5.5v",
-  "sot-23-5",
-  "tsot-23-5",
-  "smd",
-  "ltc6905xs5",
-  "ltc6905xs5-100",
-  "ltc6905xs5-133",
-  "ltc6905xs5-80",
-  "ltc6905xs5-96",
-  "surface mount",
   "oscillator",
+  "5v",
   "tsot",
   "fixed",
   "frequency",
   "silicon",
   "sot",
+  "ltc6905xs5",
   "precision",
   "to",
+  "smd",
   "divider",
-  "100mhz"
+  "ic",
+  "timing",
+  "100mhz",
+  "133mhz"
  ],
  "facts": {
   "package_family": "SOT-23-5",
@@ -65,7 +57,7 @@
   "tier_counts": {
    "A": 4
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -107,6 +99,6 @@
   "kicad-symbols/Oscillator/LTC6905xS5-80",
   "kicad-symbols/Oscillator/LTC6905xS5-96"
  ],
- "embedding_text": "ic-timing.sot-23-5.5v.5-5v | IC Timing | Cluster of 4 surface-mount timing ICs rated for 5V and 5.5V operation in SOT-23-5 and TSOT-23-5 packages. | ic timing ic timing 5v 5.5v sot-23-5 tsot-23-5 smd ltc6905xs5 ltc6905xs5-100 ltc6905xs5-133 ltc6905xs5-80 ltc6905xs5-96 surface mount oscillator tsot fixed frequency silicon sot precision to divider 100mhz | SOT-23-5 | 5V 5.5V",
+ "embedding_text": "ic-timing.sot-23-5.5v.5-5v | IC Timing | 4 ic timing parts for 5V, 5.5V using SOT-23-5 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | oscillator 5v tsot fixed frequency silicon sot ltc6905xs5 precision to smd divider ic timing 100mhz 133mhz | SOT-23-5 | 5V 5.5V",
  "class": "ic.timing"
 }

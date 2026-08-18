@@ -6,28 +6,21 @@
   "Discrete",
   "Transistor"
  ],
- "description": "Discrete transistor cluster containing one quality tier C part using the TO220V footprint.",
+ "description": "1 discrete transistor parts using TO220V footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Use when a discrete transistor using a TO220V footprint is needed.",
-  "Check pin mapping and package dimensions for the single tier C part.",
-  "Confirm layout compatibility where mount type is marked unknown."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a TO220V land pattern is intended."
  ],
  "avoid_when": [
-  "Designs requiring a package family or footprint other than TO220V.",
-  "Applications requiring parts with planner visibility.",
-  "Projects where tier C quality status or unknown mounting is unsuitable."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than TO220V."
  ],
  "keywords": [
   "to220v",
   "discrete",
   "transistor",
-  "discrete transistor",
-  "discrete.transistor",
-  "to220v footprint",
-  "to220v package",
-  "tier c",
-  "dist-legacy",
-  "to220v land pattern",
   "pad",
   "mm",
   "pitch",
@@ -52,12 +45,12 @@
   "tier_counts": {
    "C": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
   "dist-legacy/TO220V"
  ],
- "embedding_text": "discrete-transistor.to220v | Discrete Transistor | Discrete transistor cluster containing one quality tier C part using the TO220V footprint. | to220v discrete transistor discrete transistor discrete.transistor to220v footprint to220v package tier c dist-legacy to220v land pattern pad mm pitch pins | TO220V | ",
+ "embedding_text": "discrete-transistor.to220v | Discrete Transistor | 1 discrete transistor parts using TO220V footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | to220v discrete transistor pad mm pitch pins | TO220V | ",
  "class": "discrete.transistor"
 }

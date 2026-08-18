@@ -6,44 +6,34 @@
   "Discrete",
   "Diode"
  ],
- "description": "Cluster of 13 discrete diode parts (zener, TVS, and dual variants) rated 12V in SOT-23 SMD footprints, sourced from Alternate-KiCad-Library, JLCPCB-Kicad-Library, and digikey-kicad-library.",
+ "description": "13 discrete diode parts for 12V using SOT-23 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Prefer tier A entries (10 of 13 parts) with matching exact footprint variant",
-  "Confirm whether the part is zener, TVS, or dual type before substitution",
-  "Match the exact SOT-23 footprint variant (pad pitch/size differs across the 4 listed footprints)",
-  "Cross-check source library trust level (Alternate-KiCad-Library, JLCPCB-Kicad-Library, digikey-kicad-library)"
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SOT-23 land pattern is intended."
  ],
  "avoid_when": [
-  "Required voltage, current, or diode type (zener vs TVS vs dual) is not confirmed by the specific part",
-  "Design requires a package other than SOT-23",
-  "Symbol-footprint pairing has not been verified against the exact footprint variant needed",
-  "A tier B part is being used without checking why it scored lower"
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SOT-23."
  ],
  "keywords": [
-  "diode",
-  "sot-23",
-  "12v",
-  "zener",
-  "tvs",
-  "discrete diode",
-  "smd diode",
-  "dual diode",
-  "akl",
-  "alternate-kicad-library",
-  "jlcpcb-kicad-library",
-  "digikey-kicad-library",
-  "sot23-3",
-  "surface mount diode",
-  "esd protection",
-  "voltage clamp",
   "sot",
+  "diode",
+  "12v",
+  "tvs",
+  "zener",
   "discrete",
   "dual",
+  "akl",
   "alternate",
   "kicad",
   "library",
   "esd",
-  "20us"
+  "20us",
+  "iec",
+  "w1",
+  "ls2"
  ],
  "facts": {
   "package_family": "SOT-23",
@@ -72,7 +62,7 @@
    "A": 10,
    "B": 3
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -131,6 +121,6 @@
   "JLCPCB-Kicad-Library/JLCPCB-Diode-Packages/TVS-Uni, H12VNT2U",
   "JLCPCB-Kicad-Library/JLCPCB-Diode-Packages/TVS-Bi, H8VNT2B"
  ],
- "embedding_text": "discrete-diode.sot-23.12v | Discrete Diode | Cluster of 13 discrete diode parts (zener, TVS, and dual variants) rated 12V in SOT-23 SMD footprints, sourced from Alternate-KiCad-Library, JLCPCB-Kicad-Library, and digikey-kicad-library. | diode sot-23 12v zener tvs discrete diode smd diode dual diode akl alternate-kicad-library jlcpcb-kicad-library digikey-kicad-library sot23-3 surface mount diode esd protection voltage clamp sot discrete dual alternate kicad library esd 20us | SOT-23 | 12V",
+ "embedding_text": "discrete-diode.sot-23.12v | Discrete Diode | 13 discrete diode parts for 12V using SOT-23 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | sot diode 12v tvs zener discrete dual akl alternate kicad library esd 20us iec w1 ls2 | SOT-23 | 12V",
  "class": "discrete.diode"
 }

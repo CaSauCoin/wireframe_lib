@@ -6,29 +6,23 @@
   "Passive",
   "Resistor"
  ],
- "description": "Passive resistor cluster containing SMD components associated with LAIRD footprints including MGV1207 and TYS5040.",
+ "description": "2 passive resistor parts using LAIRD footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Identify the exact required footprint such as LAIRD MGV1207 or LAIRD TYS5040.",
-  "Confirm compatibility with SMD mounting and review status.",
-  "Evaluate suitability for tier C library entries."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a LAIRD land pattern is intended."
  ],
  "avoid_when": [
-  "A non-SMD mount or different package family is needed.",
-  "The PCB layout requires footprints other than LAIRD MGV1207 or TYS5040.",
-  "Components must have a verified tier A or tier B quality rating."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than LAIRD."
  ],
  "keywords": [
-  "passive",
-  "resistor",
   "laird",
-  "smd",
-  "surface mount",
   "mgv1207",
   "tys5040",
-  "laird mgv1207",
-  "laird tys5040",
-  "passive resistor",
-  "celestial-altium-library",
+  "passive",
+  "resistor",
   "surface",
   "mount",
   "pad",
@@ -56,13 +50,13 @@
   "tier_counts": {
    "C": 2
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
   "celestial-altium-library/LAIRD MGV1207/LAIRD_MGV1207",
   "celestial-altium-library/LAIRD TYS5040/LAIRD_TYS5040"
  ],
- "embedding_text": "passive-resistor.laird | Passive Resistor | Passive resistor cluster containing SMD components associated with LAIRD footprints including MGV1207 and TYS5040. | passive resistor laird smd surface mount mgv1207 tys5040 laird mgv1207 laird tys5040 passive resistor celestial-altium-library surface mount pad mm pitch pins | LAIRD | ",
+ "embedding_text": "passive-resistor.laird | Passive Resistor | 2 passive resistor parts using LAIRD footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | laird mgv1207 tys5040 passive resistor surface mount pad mm pitch pins | LAIRD | ",
  "class": "passive.resistor"
 }

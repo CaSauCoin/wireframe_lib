@@ -6,28 +6,21 @@
   "Discrete",
   "Diode"
  ],
- "description": "Discrete diode cluster containing 1 tier C part associated with the SMC package family and footprint.",
+ "description": "1 discrete diode parts using SMC footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Use when looking for a discrete diode in an SMC package family or footprint.",
-  "Verify part parameters and land pattern details prior to board placement.",
-  "Check entry suitability as the cluster contains 1 generated tier C part."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SMC land pattern is intended."
  ],
  "avoid_when": [
-  "The PCB layout requires a package footprint other than SMC.",
-  "Unreviewed or tier C library entries are restricted.",
-  "Fully defined mounting specifications are required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SMC."
  ],
  "keywords": [
   "smc",
   "discrete",
   "diode",
-  "discrete diode",
-  "smc footprint",
-  "smc package",
-  "discrete.diode",
-  "tier c",
-  "dist-legacy",
-  "smc diode",
   "pad",
   "mm",
   "pitch",
@@ -52,12 +45,12 @@
   "tier_counts": {
    "C": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
   "dist-legacy/SMC"
  ],
- "embedding_text": "discrete-diode.smc | Discrete Diode | Discrete diode cluster containing 1 tier C part associated with the SMC package family and footprint. | smc discrete diode discrete diode smc footprint smc package discrete.diode tier c dist-legacy smc diode pad mm pitch pins | SMC | ",
+ "embedding_text": "discrete-diode.smc | Discrete Diode | 1 discrete diode parts using SMC footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | smc discrete diode pad mm pitch pins | SMC | ",
  "class": "discrete.diode"
 }

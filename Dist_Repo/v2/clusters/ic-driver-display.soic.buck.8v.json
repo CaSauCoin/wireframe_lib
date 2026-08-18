@@ -7,33 +7,25 @@
   "Driver",
   "Display"
  ],
- "description": "Display driver IC cluster featuring SMD buck topology and 8V facet in SOIC package options including SOIC-8 and SOIC-16 footprints.",
+ "description": "2 ic driver display parts for buck, 8V using SOIC footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when requiring an SMD display driver IC with buck topology and 8V rating.",
-  "Choose between SOIC-8 (3.9x4.9mm) and SOIC-16 (3.9x9.9mm) footprints with 1.27mm pitch.",
-  "Verify part requirements against tier A representative parts HV9961LG-G or HV9961NG-G."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SOIC land pattern is intended."
  ],
  "avoid_when": [
-  "The application requires through-hole components instead of SMD.",
-  "A footprint other than SOIC-8 or SOIC-16 is required.",
-  "The circuit requires non-buck topology or specifications different from 8V display driver ICs."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SOIC."
  ],
  "keywords": [
-  "ic",
   "driver",
-  "display",
-  "display driver",
-  "buck",
-  "8v",
   "soic",
-  "soic-8",
-  "soic-16",
-  "smd",
-  "hv9961lg-g",
-  "hv9961ng-g",
   "led",
+  "buck",
   "lamp",
   "average",
+  "8v",
   "mode",
   "constant",
   "current",
@@ -67,7 +59,7 @@
   "tier_counts": {
    "A": 2
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -91,6 +83,6 @@
   "kicad-symbols/Driver_LED/HV9961LG-G",
   "kicad-symbols/Driver_LED/HV9961NG-G"
  ],
- "embedding_text": "ic-driver-display.soic.buck.8v | IC Driver Display | Display driver IC cluster featuring SMD buck topology and 8V facet in SOIC package options including SOIC-8 and SOIC-16 footprints. | ic driver display display driver buck 8v soic soic-8 soic-16 smd hv9961lg-g hv9961ng-g led lamp average mode constant current 450v 9mm p1 27mm so high | SOIC | buck 8V",
+ "embedding_text": "ic-driver-display.soic.buck.8v | IC Driver Display | 2 ic driver display parts for buck, 8V using SOIC footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | driver soic led buck lamp average 8v mode constant current 450v 9mm p1 27mm so high | SOIC | buck 8V",
  "class": "ic.driver.display"
 }

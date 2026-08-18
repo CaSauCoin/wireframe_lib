@@ -6,34 +6,28 @@
   "IC",
   "Memory"
  ],
- "description": "Cluster of 11 surface-mount memory IC parts using I2C serial communication and SOT-23-5 footprints.",
+ "description": "11 ic memory parts for I2C using SOT-23-5 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Prefer Tier A parts (8 available) over Tier B parts (3 available) for higher quality tier representation.",
-  "Select when requiring an SMD memory IC with an I2C interface in a SOT-23-5 footprint.",
-  "Verify footprint compatibility between SOT-23-5 and SOT23_5 land patterns."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SOT-23-5 land pattern is intended."
  ],
  "avoid_when": [
-  "Designs require non-I2C communication interfaces or package families other than SOT-23-5.",
-  "Through-hole mounting is required instead of surface-mount (SMD).",
-  "Specific memory capacity or electrical parameters are needed but not specified in the part entry."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SOT-23-5."
  ],
  "keywords": [
-  "ic",
-  "memory",
-  "i2c",
-  "sot-23-5",
-  "sot23_5",
-  "smd",
-  "eeprom",
-  "surface mount",
-  "kicad",
-  "altium",
-  "serial memory",
   "sot",
+  "eeprom",
+  "i2c",
+  "memory",
   "serial",
+  "ic",
   "sot23",
   "with",
   "to",
+  "smd",
   "stum",
   "unique",
   "number",
@@ -65,7 +59,7 @@
    "A": 8,
    "B": 3
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -122,6 +116,6 @@
   "chilaboard-altium-library/EEPROM_I2C_CAT24C256_SOT23/EEPROM_I2C_CAT24C256_SOT23",
   "chilaboard-altium-library/EEPROM_I2C_24AA00_SOT23/EEPROM_I2C_24AA00_SOT23"
  ],
- "embedding_text": "ic-memory.sot-23-5.i2c | IC Memory | Cluster of 11 surface-mount memory IC parts using I2C serial communication and SOT-23-5 footprints. | ic memory i2c sot-23-5 sot23_5 smd eeprom surface mount kicad altium serial memory sot serial sot23 with to stum unique number nonvolatile pin 2kb | SOT-23-5 | I2C",
+ "embedding_text": "ic-memory.sot-23-5.i2c | IC Memory | 11 ic memory parts for I2C using SOT-23-5 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | sot eeprom i2c memory serial ic sot23 with to smd stum unique number nonvolatile pin 2kb | SOT-23-5 | I2C",
  "class": "ic.memory"
 }

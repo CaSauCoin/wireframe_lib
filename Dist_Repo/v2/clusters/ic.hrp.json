@@ -5,32 +5,23 @@
  "category_path": [
   "IC"
  ],
- "description": "Cluster of 3 surface-mount IC components in the HRP package family using HRP_7 footprints.",
+ "description": "3 ic parts using HRP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Use when surface-mount IC components requiring an HRP_7 footprint are specified.",
-  "Select based on exact footprint compatibility and component quality tier.",
-  "Verify part numbers such as VREG_BD90620_HRP7 or VREG_BD90640_HRP7 against project needs."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a HRP land pattern is intended."
  ],
  "avoid_when": [
-  "The PCB design requires a package family other than HRP.",
-  "Through-hole mounting or non-HRP_7 footprints are required.",
-  "Required electrical parameters or ratings are unverified in the library entry."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than HRP."
  ],
  "keywords": [
   "hrp",
   "ic",
-  "hrp_7",
-  "hrp7",
-  "smd",
-  "surface mount",
-  "vreg_bd90620_hrp7",
-  "vreg_bd90640_hrp7",
-  "integrated circuit",
-  "chilaboard-altium-library",
-  "hrp package",
-  "ic cluster",
   "vreg",
   "regulator",
+  "hrp7",
   "voltage",
   "switching",
   "bd90620",
@@ -40,7 +31,8 @@
   "and",
   "pins",
   "in",
-  "surface"
+  "surface",
+  "mount"
  ],
  "facts": {
   "package_family": "HRP",
@@ -62,7 +54,7 @@
    "B": 2,
    "C": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -87,6 +79,6 @@
   "chilaboard-altium-library/VREG_BD90640_HRP7/VREG_BD90640_HRP7",
   "chilaboard-altium-library/HRP_7/HRP_7"
  ],
- "embedding_text": "ic.hrp | IC | Cluster of 3 surface-mount IC components in the HRP package family using HRP_7 footprints. | hrp ic hrp_7 hrp7 smd surface mount vreg_bd90620_hrp7 vreg_bd90640_hrp7 integrated circuit chilaboard-altium-library hrp package ic cluster vreg regulator voltage switching bd90620 bd90640 enable feedback and pins in surface | HRP | ",
+ "embedding_text": "ic.hrp | IC | 3 ic parts using HRP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | hrp ic vreg regulator hrp7 voltage switching bd90620 bd90640 enable feedback and pins in surface mount | HRP | ",
  "class": "ic"
 }

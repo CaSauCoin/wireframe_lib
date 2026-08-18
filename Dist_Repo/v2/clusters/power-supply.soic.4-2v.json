@@ -6,42 +6,34 @@
   "Power",
   "Power Supply"
  ],
- "description": "Surface-mount 4.2V power supply components in SOIC package families, including SOIC-8 with exposed pad footprints.",
+ "description": "1 power power supply parts for 4.2V using SOIC footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Target designs requiring 4.2V surface-mount power supply components.",
-  "Verify compatibility with the SOIC-8-1EP footprint and exposed thermal pad land pattern.",
-  "Check part quality tier and symbol definitions from the source library."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SOIC land pattern is intended."
  ],
  "avoid_when": [
-  "Designs require package families other than SOIC or non-SMD mounting.",
-  "Operating voltage requirements differ from 4.2V.",
-  "The board layout cannot accommodate an exposed pad footprint."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SOIC."
  ],
  "keywords": [
-  "power",
-  "power supply",
-  "4.2v",
   "soic",
-  "soic-8",
-  "soic-8-1ep",
-  "smd",
-  "surface mount",
-  "tp4056-42-esop8",
-  "battery management",
-  "kicad-symbols",
-  "thermal vias",
   "battery",
   "li",
   "ion",
   "2v",
   "lithium",
+  "power",
   "tp4056",
   "esop8",
   "management",
   "1a",
   "standalone",
   "linear",
-  "lipo"
+  "lipo",
+  "single",
+  "cell"
  ],
  "facts": {
   "package_family": "SOIC",
@@ -64,7 +56,7 @@
   "tier_counts": {
    "B": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -79,6 +71,6 @@
  "part_ids": [
   "kicad-symbols/Battery_Management/TP4056-42-ESOP8"
  ],
- "embedding_text": "power-supply.soic.4-2v | Power Power Supply | Surface-mount 4.2V power supply components in SOIC package families, including SOIC-8 with exposed pad footprints. | power power supply 4.2v soic soic-8 soic-8-1ep smd surface mount tp4056-42-esop8 battery management kicad-symbols thermal vias battery li ion 2v lithium tp4056 esop8 management 1a standalone linear lipo | SOIC | 4.2V",
+ "embedding_text": "power-supply.soic.4-2v | Power Power Supply | 1 power power supply parts for 4.2V using SOIC footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | soic battery li ion 2v lithium power tp4056 esop8 management 1a standalone linear lipo single cell | SOIC | 4.2V",
  "class": "power.supply"
 }

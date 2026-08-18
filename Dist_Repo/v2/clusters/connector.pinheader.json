@@ -5,44 +5,34 @@
  "category_path": [
   "Connector"
  ],
- "description": "Cluster of 1381 generic dual-row pin header connector parts spanning PinHeader_2x02 through 2x13 footprints at 1.00mm pitch, vertical orientation, mixed smd/through_hole/unknown mounting.",
+ "description": "1381 connector parts using PinHeader footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Match the exact 2xNN pin count and PinHeader_2x_P1.00mm_Vertical footprint needed",
-  "Prefer tier A entries (238 of 1381) for higher-confidence symbol-footprint pairing",
-  "Confirm mount type (smd vs through_hole) since the cluster mixes both plus unknown",
-  "Cross-check source library (kicad-symbols, digikey-kicad-library, or dist-legacy) for trust level"
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a PinHeader land pattern is intended."
  ],
  "avoid_when": [
-  "A pitch other than 1.00mm or a non-vertical orientation is required",
-  "Mount type must be confirmed and the candidate part lists it as unknown",
-  "A single-row (1xNN) header is needed instead of a dual-row 2xNN header",
-  "Electrical ratings or pin mapping are required but not stated by the selected part"
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than PinHeader."
  ],
  "keywords": [
   "pinheader",
-  "pin header",
-  "connector",
-  "dual row",
-  "2x02",
-  "2x13",
-  "1.00mm pitch",
-  "vertical",
-  "through hole",
-  "smd",
-  "generic connector",
-  "header pins",
-  "board to board",
-  "conn 02x",
-  "kicad connector",
-  "jumper header",
-  "pin socket mate",
-  "0.1 inch equivalent",
   "00mm",
+  "vertical",
   "pin",
+  "connector",
   "p1",
+  "smd",
   "p2",
   "row",
-  "header"
+  "header",
+  "pitch",
+  "through",
+  "hole",
+  "54mm",
+  "27mm",
+  "horizontal"
  ],
  "facts": {
   "package_family": "PinHeader",
@@ -80,7 +70,7 @@
    "B": 32,
    "C": 1111
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -1507,6 +1497,6 @@
   "dist-legacy/PinHeader_2x40_P2.54mm_Vertical",
   "dist-legacy/PinHeader_2x40_P2.54mm_Vertical_SMD"
  ],
- "embedding_text": "connector.pinheader | Connector | Cluster of 1381 generic dual-row pin header connector parts spanning PinHeader_2x02 through 2x13 footprints at 1.00mm pitch, vertical orientation, mixed smd/through_hole/unknown mounting. | pinheader pin header connector dual row 2x02 2x13 1.00mm pitch vertical through hole smd generic connector header pins board to board conn 02x kicad connector jumper header pin socket mate 0.1 inch equivalent 00mm pin p1 p2 row header | PinHeader | ",
+ "embedding_text": "connector.pinheader | Connector | 1381 connector parts using PinHeader footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | pinheader 00mm vertical pin connector p1 smd p2 row header pitch through hole 54mm 27mm horizontal | PinHeader | ",
  "class": "connector"
 }

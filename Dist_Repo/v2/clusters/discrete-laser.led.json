@@ -6,29 +6,18 @@
   "Discrete",
   "Laser"
  ],
- "description": "Discrete laser diode cluster supporting through-hole mounting with an LED_D5.0mm footprint.",
+ "description": "1 discrete laser parts using LED footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when a discrete laser component with a through-hole LED_D5.0mm footprint is required.",
-  "Check pin-to-pad layout and physical dimensions against design requirements.",
-  "Prefer tier A entries with validated symbol and footprint data."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a LED land pattern is intended."
  ],
  "avoid_when": [
-  "The design requires surface-mount (SMD) packaging.",
-  "A footprint other than LED_D5.0mm is needed.",
-  "The application requires non-laser optical components."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than LED."
  ],
  "keywords": [
-  "discrete laser",
-  "laser diode",
-  "diode laser",
-  "led_d5.0mm",
-  "through_hole",
-  "through hole",
-  "spl_pl90",
-  "kicad-symbols",
-  "led package",
-  "5.0mm led",
-  "discrete",
   "laser",
   "led",
   "diode",
@@ -41,7 +30,10 @@
   "25w",
   "peak",
   "power",
-  "d5"
+  "d5",
+  "0mm",
+  "opto",
+  "laserdiode"
  ],
  "facts": {
   "package_family": "LED",
@@ -62,7 +54,7 @@
   "tier_counts": {
    "A": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -77,6 +69,6 @@
  "part_ids": [
   "kicad-symbols/Diode_Laser/SPL_PL90"
  ],
- "embedding_text": "discrete-laser.led | Discrete Laser | Discrete laser diode cluster supporting through-hole mounting with an LED_D5.0mm footprint. | discrete laser laser diode diode laser led_d5.0mm through_hole through hole spl_pl90 kicad-symbols led package 5.0mm led discrete laser led diode spl pl90 pulsed in plastic package 25w peak power d5 | LED | ",
+ "embedding_text": "discrete-laser.led | Discrete Laser | 1 discrete laser parts using LED footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | laser led diode spl pl90 pulsed in plastic package 25w peak power d5 0mm opto laserdiode | LED | ",
  "class": "discrete.laser"
 }

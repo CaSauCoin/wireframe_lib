@@ -5,28 +5,21 @@
  "category_path": [
   "IC"
  ],
- "description": "IC cluster containing through-hole parts using a Header 2.00 2x10 footprint.",
+ "description": "2 ic parts using Header footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when requiring a through-hole Header 2.00 2x10 footprint.",
-  "Choose between Core51822 left and Core51822 right variants.",
-  "Verify suitability of tier B components from matthiasbock-altium-libraries."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a Header land pattern is intended."
  ],
  "avoid_when": [
-  "Surface-mount (SMT) packaging is required instead of through-hole.",
-  "The PCB layout requires a footprint other than Header 2.00 2x10.",
-  "Components rated above Tier B quality are required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than Header."
  ],
  "keywords": [
-  "ic",
   "header",
-  "through_hole",
-  "through hole",
-  "header 2.00 2x10",
-  "2x10",
   "core51822",
-  "core51822 left",
-  "core51822 right",
-  "matthiasbock-altium-libraries",
+  "2x10",
   "module",
   "breakout",
   "interface",
@@ -37,6 +30,7 @@
   "0mm",
   "pitch",
   "pin",
+  "ic",
   "providing",
   "and"
  ],
@@ -59,7 +53,7 @@
   "tier_counts": {
    "B": 2
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -83,6 +77,6 @@
   "matthiasbock-altium-libraries/Core51822 right/Core51822 right",
   "matthiasbock-altium-libraries/Core51822 left/Core51822 left"
  ],
- "embedding_text": "ic.header | IC | IC cluster containing through-hole parts using a Header 2.00 2x10 footprint. | ic header through_hole through hole header 2.00 2x10 2x10 core51822 core51822 left core51822 right matthiasbock-altium-libraries module breakout interface left right gpio swd 0mm pitch pin providing and | Header | ",
+ "embedding_text": "ic.header | IC | 2 ic parts using Header footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | header core51822 2x10 module breakout interface left right gpio swd 0mm pitch pin ic providing and | Header | ",
  "class": "ic"
 }

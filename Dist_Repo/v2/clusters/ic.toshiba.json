@@ -5,30 +5,20 @@
  "category_path": [
   "IC"
  ],
- "description": "Integrated circuit cluster containing 12 tier C parts with Toshiba package family footprints supporting surface-mount and through-hole mounting.",
+ "description": "12 ic parts using TOSHIBA footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Verify exact Toshiba footprint variant such as SMV SOT-25, SO-6, TLP185, WCSP-4, TORX, or TOTX.",
-  "Select based on mounting requirements, including surface-mount and through-hole options.",
-  "Confirm component parameters and pinout details for tier C library entries."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a TOSHIBA land pattern is intended."
  ],
  "avoid_when": [
-  "The layout requires a non-Toshiba package footprint.",
-  "Higher quality tier parts (Tier A or B) are strictly required for design verification.",
-  "Target design requirements demand verified electrical ratings not specified in the entry."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than TOSHIBA."
  ],
  "keywords": [
   "toshiba",
   "ic",
-  "integrated circuit",
-  "smd",
-  "through hole",
-  "smv",
-  "sot-25",
-  "sc-74a",
-  "so-6",
-  "tlp185",
-  "wcsp-4",
-  "torx",
   "pad",
   "mm",
   "pitch",
@@ -37,10 +27,12 @@
   "torx173",
   "torx193",
   "torx194",
+  "smv",
   "sot",
   "sc",
   "74a",
-  "so"
+  "so",
+  "4l1"
  ],
  "facts": {
   "package_family": "TOSHIBA",
@@ -70,7 +62,7 @@
   "tier_counts": {
    "C": 12
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
@@ -87,6 +79,6 @@
   "dist-legacy/Toshiba_TORX170_TORX173_TORX193_TORX194",
   "dist-legacy/Toshiba_TOTX170_TOTX173_TOTX193_TOTX194"
  ],
- "embedding_text": "ic.toshiba | IC | Integrated circuit cluster containing 12 tier C parts with Toshiba package family footprints supporting surface-mount and through-hole mounting. | toshiba ic integrated circuit smd through hole smv sot-25 sc-74a so-6 tlp185 wcsp-4 torx pad mm pitch pins torx170 torx173 torx193 torx194 sot sc 74a so | TOSHIBA | ",
+ "embedding_text": "ic.toshiba | IC | 12 ic parts using TOSHIBA footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | toshiba ic pad mm pitch pins torx170 torx173 torx193 torx194 smv sot sc 74a so 4l1 | TOSHIBA | ",
  "class": "ic"
 }

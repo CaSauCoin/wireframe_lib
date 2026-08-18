@@ -6,43 +6,34 @@
   "Discrete",
   "Diode"
  ],
- "description": "Discrete diode cluster (Zener-family parts) in SOT-23 SMD package with a 3V facet, sourced entirely from the Alternate-KiCad-Library.",
+ "description": "8 discrete diode parts for 3V using SOT-23 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Prefer tier A entries with exact SOT-23 footprint match",
-  "Confirm symbol-footprint pairing before layout",
-  "Check specific part naming (e.g. Zener suffix) against required diode type",
-  "Verify pinout against chosen part before committing a PCB"
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SOT-23 land pattern is intended."
  ],
  "avoid_when": [
-  "Required diode type, voltage, current, or tolerance is not confirmed by the specific part",
-  "Board layout needs a package other than SOT-23",
-  "Symbol-footprint pairing is unverified or flagged for review"
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SOT-23."
  ],
  "keywords": [
   "diode",
-  "sot-23",
+  "sot",
   "zener",
   "3v",
-  "3v0",
-  "smd",
-  "akl",
-  "alternate kicad library",
-  "discrete diode",
-  "bzx84",
-  "az23",
-  "bzb84",
-  "dz23",
-  "2bzx84",
-  "voltage reference",
-  "small signal diode",
-  "sot",
   "dual",
+  "akl",
   "alternate",
   "kicad",
   "library",
   "discrete",
   "schottky",
-  "300mw"
+  "300mw",
+  "common",
+  "series",
+  "c3v0",
+  "anode"
  ],
  "facts": {
   "package_family": "SOT-23",
@@ -65,7 +56,7 @@
   "tier_counts": {
    "A": 8
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -119,6 +110,6 @@
   "Alternate-KiCad-Library/Diode_Schottky_AKL/HSM276SR",
   "Alternate-KiCad-Library/Diode_Zener_AKL/MMBZ5225"
  ],
- "embedding_text": "discrete-diode.sot-23.3v | Discrete Diode | Discrete diode cluster (Zener-family parts) in SOT-23 SMD package with a 3V facet, sourced entirely from the Alternate-KiCad-Library. | diode sot-23 zener 3v 3v0 smd akl alternate kicad library discrete diode bzx84 az23 bzb84 dz23 2bzx84 voltage reference small signal diode sot dual alternate kicad library discrete schottky 300mw | SOT-23 | 3V",
+ "embedding_text": "discrete-diode.sot-23.3v | Discrete Diode | 8 discrete diode parts for 3V using SOT-23 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | diode sot zener 3v dual akl alternate kicad library discrete schottky 300mw common series c3v0 anode | SOT-23 | 3V",
  "class": "discrete.diode"
 }

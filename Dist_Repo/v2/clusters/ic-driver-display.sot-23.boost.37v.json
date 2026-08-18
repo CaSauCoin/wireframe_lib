@@ -7,33 +7,22 @@
   "Driver",
   "Display"
  ],
- "description": "Display driver IC cluster featuring 37V boost functionality in surface-mount SOT-23-6 and TSOT-23-6 footprints.",
+ "description": "2 ic driver display parts for boost, 37V using SOT-23 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select based on footprint requirement between SOT-23-6 and TSOT-23-6.",
-  "Choose DIO5661ST6 for SOT-23-6 or DIO5661TST6 for TSOT-23-6 footprint.",
-  "Confirm suitability for surface-mount 37V boost display driver applications."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SOT-23 land pattern is intended."
  ],
  "avoid_when": [
-  "The design requires a package family other than SOT-23.",
-  "The application does not use a 37V boost topology.",
-  "Through-hole mounting or footprints other than SOT-23-6 or TSOT-23-6 are required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SOT-23."
  ],
  "keywords": [
-  "ic driver display",
-  "display driver",
-  "boost driver",
-  "37v",
-  "sot-23",
-  "sot-23-6",
-  "tsot-23-6",
-  "smd",
-  "dio5661st6",
-  "dio5661tst6",
-  "boost",
-  "driver ic",
   "driver",
   "led",
   "sot",
+  "37v",
   "step",
   "up",
   "with",
@@ -42,7 +31,10 @@
   "3a",
   "iout",
   "max",
-  "to"
+  "to",
+  "smd",
+  "single",
+  "ic"
  ],
  "facts": {
   "package_family": "SOT-23",
@@ -67,7 +59,7 @@
   "tier_counts": {
    "A": 2
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -91,6 +83,6 @@
   "kicad-symbols/Driver_LED/DIO5661ST6",
   "kicad-symbols/Driver_LED/DIO5661TST6"
  ],
- "embedding_text": "ic-driver-display.sot-23.boost.37v | IC Driver Display | Display driver IC cluster featuring 37V boost functionality in surface-mount SOT-23-6 and TSOT-23-6 footprints. | ic driver display display driver boost driver 37v sot-23 sot-23-6 tsot-23-6 smd dio5661st6 dio5661tst6 boost driver ic driver led sot step up with pwm 5vin 3a iout max to | SOT-23 | boost 37V",
+ "embedding_text": "ic-driver-display.sot-23.boost.37v | IC Driver Display | 2 ic driver display parts for boost, 37V using SOT-23 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | driver led sot 37v step up with pwm 5vin 3a iout max to smd single ic | SOT-23 | boost 37V",
  "class": "ic.driver.display"
 }

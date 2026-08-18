@@ -6,28 +6,21 @@
   "Discrete",
   "Diode"
  ],
- "description": "Discrete diode cluster containing 1 tier B part associated with the KF20A package family and KF20A_300V footprint.",
+ "description": "1 discrete diode parts using KF20A footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Verify compatibility with the KF20A_300V footprint.",
-  "Check electrical requirements against the single tier B part in this cluster.",
-  "Use when a discrete diode in the KF20A package family is required."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a KF20A land pattern is intended."
  ],
  "avoid_when": [
-  "The PCB design requires a package family other than KF20A.",
-  "A tier A component or fully specified datasheet is required.",
-  "The footprint KF20A_300V does not match the target land pattern."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than KF20A."
  ],
  "keywords": [
-  "discrete diode",
-  "discrete",
-  "diode",
   "kf20a",
-  "kf20a_300v",
   "300v",
-  "dist-legacy",
-  "tier b",
-  "discrete.diode",
-  "kf20a footprint",
+  "diode",
   "anode",
   "cathode",
   "pin",
@@ -35,7 +28,8 @@
   "and",
   "terminals",
   "in",
-  "footprint"
+  "footprint",
+  "discrete"
  ],
  "facts": {
   "package_family": "KF20A",
@@ -56,7 +50,7 @@
   "tier_counts": {
    "B": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -71,6 +65,6 @@
  "part_ids": [
   "dist-legacy/KF20A_300V x 2"
  ],
- "embedding_text": "discrete-diode.kf20a | Discrete Diode | Discrete diode cluster containing 1 tier B part associated with the KF20A package family and KF20A_300V footprint. | discrete diode discrete diode kf20a kf20a_300v 300v dist-legacy tier b discrete.diode kf20a footprint anode cathode pin with and terminals in footprint | KF20A | ",
+ "embedding_text": "discrete-diode.kf20a | Discrete Diode | 1 discrete diode parts using KF20A footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | kf20a 300v diode anode cathode pin with and terminals in footprint discrete | KF20A | ",
  "class": "discrete.diode"
 }

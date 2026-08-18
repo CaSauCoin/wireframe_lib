@@ -6,36 +6,30 @@
   "Discrete",
   "Diode"
  ],
- "description": "Discrete diode cluster of surface-mount parts utilizing SOIC package family footprints.",
+ "description": "2 discrete diode parts using SOIC footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Selecting surface-mount discrete diodes in SOIC packages.",
-  "Verifying footprint compatibility with SOIC-4 or SOIC-8 package footprints.",
-  "Requiring surface-mount land patterns within the SOIC package family."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SOIC land pattern is intended."
  ],
  "avoid_when": [
-  "The design requires package families other than SOIC.",
-  "Through-hole mounting is required instead of surface-mount.",
-  "Components outside the discrete diode category are required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SOIC."
  ],
  "keywords": [
-  "discrete diode",
   "soic",
-  "soic-4",
-  "soic-8",
-  "smd",
-  "surface mount",
-  "discrete",
-  "diode",
-  "diodes",
   "onsemi",
   "751ep",
+  "diodes",
   "ap02002",
   "dmp6110ss",
-  "soic package",
   "9x4",
   "725mm",
   "p2",
   "54mm",
+  "discrete",
+  "diode",
   "surface",
   "mount",
   "pad",
@@ -62,13 +56,13 @@
   "tier_counts": {
    "C": 2
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
   "celestial-altium-library/DIODES SOIC-8 AP02002 DMP6110SS/DIODES_SOIC-8_AP02002_DMP6110SS",
   "dist-legacy/OnSemi_751EP_SOIC-4_3.9x4.725mm_P2.54mm"
  ],
- "embedding_text": "discrete-diode.soic | Discrete Diode | Discrete diode cluster of surface-mount parts utilizing SOIC package family footprints. | discrete diode soic soic-4 soic-8 smd surface mount discrete diode diodes onsemi 751ep ap02002 dmp6110ss soic package 9x4 725mm p2 54mm surface mount pad mm | SOIC | ",
+ "embedding_text": "discrete-diode.soic | Discrete Diode | 2 discrete diode parts using SOIC footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | soic onsemi 751ep diodes ap02002 dmp6110ss 9x4 725mm p2 54mm discrete diode surface mount pad mm | SOIC | ",
  "class": "discrete.diode"
 }

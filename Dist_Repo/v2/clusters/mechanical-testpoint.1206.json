@@ -6,28 +6,18 @@
   "Mechanical",
   "Test Point"
  ],
- "description": "Surface-mount mechanical test point cluster featuring 1206 package family parts with PROBE_PAD_1206 footprints.",
+ "description": "1 mechanical test point parts using 1206 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Use when requiring surface-mount (smd) test points in a 1206 package family.",
-  "Select for designs using the PROBE_PAD_1206 footprint.",
-  "Check source library metadata and quality tier ratings."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a 1206 land pattern is intended."
  ],
  "avoid_when": [
-  "Layout requires a package family or footprint other than 1206 or PROBE_PAD_1206.",
-  "Through-hole mounting is required instead of SMD.",
-  "Unstated electrical ratings or specific datasheet parameters must be guaranteed."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than 1206."
  ],
  "keywords": [
-  "mechanical test point",
-  "test point",
-  "1206",
-  "probe_pad_1206",
-  "probe pad",
-  "smd",
-  "surface mount",
-  "mechanical",
-  "rcw-0c",
-  "digikey-kicad-library",
   "test",
   "points",
   "point",
@@ -41,7 +31,9 @@
   "and",
   "measurement",
   "connectivity",
-  "amp"
+  "amp",
+  "connectors",
+  "mechanical"
  ],
  "facts": {
   "package_family": "1206",
@@ -62,7 +54,7 @@
   "tier_counts": {
    "B": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -77,6 +69,6 @@
  "part_ids": [
   "digikey-kicad-library/dk_Test-Points/RCW-0C"
  ],
- "embedding_text": "mechanical-testpoint.1206 | Mechanical Test Point | Surface-mount mechanical test point cluster featuring 1206 package family parts with PROBE_PAD_1206 footprints. | mechanical test point test point 1206 probe_pad_1206 probe pad smd surface mount mechanical rcw-0c digikey-kicad-library test points point rcw 0c dk pc natural probe pad and measurement connectivity amp | 1206 | ",
+ "embedding_text": "mechanical-testpoint.1206 | Mechanical Test Point | 1 mechanical test point parts using 1206 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | test points point rcw 0c dk pc natural probe pad and measurement connectivity amp connectors mechanical | 1206 | ",
  "class": "mechanical.testpoint"
 }

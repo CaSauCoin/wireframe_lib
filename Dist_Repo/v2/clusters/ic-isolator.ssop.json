@@ -6,42 +6,34 @@
   "IC",
   "Isolator"
  ],
- "description": "Surface-mount IC isolator cluster containing 16 parts in SSOP packages from KiCad symbol libraries.",
+ "description": "16 ic isolator parts using SSOP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Match the required lead count and footprint dimensions, such as SSOP-4, SSOP-16, SSOP-20, or SSOP-24.",
-  "Prefer Tier A parts within the 16 available KiCad isolator symbols.",
-  "Confirm surface-mount (SMD) mounting compatibility."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SSOP land pattern is intended."
  ],
  "avoid_when": [
-  "Through-hole or non-SSOP surface-mount packages are required.",
-  "The target footprint is not among the supported SSOP-4, SSOP-16, SSOP-20, or SSOP-24 variants.",
-  "Specific isolation or electrical requirements are not confirmed in the part specification."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SSOP."
  ],
  "keywords": [
   "ssop",
-  "ic isolator",
   "isolator",
-  "smd",
-  "surface mount",
-  "ssop-16",
-  "ssop-20",
-  "ssop-24",
-  "ssop-4",
-  "kicad symbols",
-  "ic",
-  "adn4650",
-  "adn4651",
-  "adn4652",
-  "adum5211",
-  "adum5410",
   "channel",
   "digital",
   "so",
+  "ic",
   "p0",
   "high",
   "dc",
   "default",
-  "speed"
+  "speed",
+  "robust",
+  "emc",
+  "reinforced",
+  "six",
+  "9x4"
  ],
  "facts": {
   "package_family": "SSOP",
@@ -66,7 +58,7 @@
    "A": 15,
    "B": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -128,6 +120,6 @@
   "kicad-symbols/Isolator/ISO7763FDBQ",
   "kicad-symbols/Isolator/VOS618A"
  ],
- "embedding_text": "ic-isolator.ssop | IC Isolator | Surface-mount IC isolator cluster containing 16 parts in SSOP packages from KiCad symbol libraries. | ssop ic isolator isolator smd surface mount ssop-16 ssop-20 ssop-24 ssop-4 kicad symbols ic adn4650 adn4651 adn4652 adum5211 adum5410 channel digital so p0 high dc default speed | SSOP | ",
+ "embedding_text": "ic-isolator.ssop | IC Isolator | 16 ic isolator parts using SSOP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | ssop isolator channel digital so ic p0 high dc default speed robust emc reinforced six 9x4 | SSOP | ",
  "class": "ic.isolator"
 }

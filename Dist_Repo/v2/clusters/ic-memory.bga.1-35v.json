@@ -6,42 +6,34 @@
   "IC",
   "Memory"
  ],
- "description": "Cluster of 3 tier B surface-mount 1.35V memory ICs using FBGA-96 footprints with 0.8mm pitch.",
+ "description": "3 ic memory parts for 1.35V using BGA footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Match the required body dimensions among 9x14mm, 8x14mm, or 7.5x13.5mm FBGA-96 footprints.",
-  "Select based on exact part number variants such as MT41K256M16HA, MT41K256M16LY, or MT41K256M16TW.",
-  "Confirm 1.35V supply voltage and surface-mount BGA assembly requirements."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a BGA land pattern is intended."
  ],
  "avoid_when": [
-  "The design requires through-hole mounting or non-BGA packages.",
-  "The operating supply voltage requirement is different from 1.35V.",
-  "The PCB layout requires a footprint other than FBGA-96 with 0.8mm pitch."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than BGA."
  ],
  "keywords": [
-  "ic memory",
-  "1.35v",
-  "bga",
-  "fbga-96",
-  "smd",
-  "micron",
-  "mt41k256m16ha",
-  "mt41k256m16ly",
-  "mt41k256m16tw",
-  "0.8mm pitch",
-  "tier b",
-  "memory ic",
-  "fbga",
   "memory",
   "ddr3l",
   "35v",
   "voltage",
+  "fbga",
+  "micron",
+  "bga",
   "ram",
   "32m",
   "bit",
   "banks",
   "gbit",
   "mb",
-  "sdram"
+  "sdram",
+  "nominal",
+  "supply"
  ],
  "facts": {
   "package_family": "BGA",
@@ -66,7 +58,7 @@
   "tier_counts": {
    "B": 3
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -99,6 +91,6 @@
   "kicad-symbols/Memory_RAM/MT41K256M16LY",
   "kicad-symbols/Memory_RAM/MT41K256M16TW"
  ],
- "embedding_text": "ic-memory.bga.1-35v | IC Memory | Cluster of 3 tier B surface-mount 1.35V memory ICs using FBGA-96 footprints with 0.8mm pitch. | ic memory 1.35v bga fbga-96 smd micron mt41k256m16ha mt41k256m16ly mt41k256m16tw 0.8mm pitch tier b memory ic fbga memory ddr3l 35v voltage ram 32m bit banks gbit mb sdram | BGA | 1.35V",
+ "embedding_text": "ic-memory.bga.1-35v | IC Memory | 3 ic memory parts for 1.35V using BGA footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | memory ddr3l 35v voltage fbga micron bga ram 32m bit banks gbit mb sdram nominal supply | BGA | 1.35V",
  "class": "ic.memory"
 }

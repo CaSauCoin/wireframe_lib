@@ -5,35 +5,28 @@
  "category_path": [
   "IC"
  ],
- "description": "Surface-mount IC cluster in QFP packaging featuring I2C, SPI, and UART/serial communication interfaces.",
+ "description": "2 ic parts for I2C, SPI, UART/serial using QFP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select based on the required QFP footprint, such as TQFP32-0.8-7X7MM or TQFP100-0.5-14X14MM.",
-  "Verify requirement for surface-mount (SMD) QFP package parts.",
-  "Use when I2C, SPI, or UART/serial communication interfaces are required."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a QFP land pattern is intended."
  ],
  "avoid_when": [
-  "Through-hole or non-SMD mounting is required for the layout.",
-  "Package families other than QFP are needed.",
-  "The application requires communication protocols other than I2C, SPI, or UART/serial."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than QFP."
  ],
  "keywords": [
-  "ic",
-  "qfp",
-  "smd",
-  "i2c",
-  "spi",
-  "uart",
-  "serial",
-  "tqfp",
-  "tqfp32",
-  "tqfp100",
   "mcu",
-  "atmega2560",
-  "atmega328p",
-  "tqfp32-0.8-7x7mm",
-  "tqfp100-0.5-14x14mm",
   "microcontroller",
+  "spi",
+  "i2c",
+  "uart",
+  "tqfp",
   "package",
+  "ic",
+  "atmega2560",
+  "tqfp100",
   "16au",
   "opl",
   "integrated",
@@ -65,7 +58,7 @@
   "tier_counts": {
    "B": 2
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -89,6 +82,6 @@
   "Seeed-OPL-Kicad-Library/OPL_Integrated_Circuit/MCU-ATMEGA2560-16AU_TQFP100_",
   "Seeed-OPL-Kicad-Library/OPL_Integrated_Circuit/MCU-ATMEGA328P-AU_TQFP32_"
  ],
- "embedding_text": "ic.qfp.i2c.spi | IC | Surface-mount IC cluster in QFP packaging featuring I2C, SPI, and UART/serial communication interfaces. | ic qfp smd i2c spi uart serial tqfp tqfp32 tqfp100 mcu atmega2560 atmega328p tqfp32-0.8-7x7mm tqfp100-0.5-14x14mm microcontroller package 16au opl integrated circuit featuring adc | QFP | I2C SPI UART/serial",
+ "embedding_text": "ic.qfp.i2c.spi | IC | 2 ic parts for I2C, SPI, UART/serial using QFP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | mcu microcontroller spi i2c uart tqfp package ic atmega2560 tqfp100 16au opl integrated circuit featuring adc | QFP | I2C SPI UART/serial",
  "class": "ic"
 }

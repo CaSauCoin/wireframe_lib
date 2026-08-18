@@ -6,35 +6,28 @@
   "Passive",
   "Resistor"
  ],
- "description": "Cluster of 172 passive resistor components associated with 0603 package footprints, including standard SMD resistors and multi-element resistor arrays.",
+ "description": "172 passive resistor parts using 0603 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select parts with exact footprint matches such as R_0603_1608Metric or designated hand-soldering pads.",
-  "Verify whether the component is a single discrete resistor or a multi-resistor array.",
-  "Prioritize tier A entries with confirmed quality scores."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a 0603 land pattern is intended."
  ],
  "avoid_when": [
-  "The board layout requires through-hole mounting or package footprints other than 0603.",
-  "The application cannot accommodate the specific pad geometry or mounting type of the selected part."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than 0603."
  ],
  "keywords": [
-  "passive resistor",
-  "0603",
   "resistor",
   "passive",
-  "smd",
-  "1608metric",
-  "r0603",
-  "resistor array",
-  "surface mount",
-  "r_0603_1608metric",
-  "handsolder",
   "sparkfun",
-  "seeed opl",
-  "kicad",
   "res",
+  "smd",
   "10w",
   "surface",
   "mount",
+  "1608metric",
+  "r0603",
   "package",
   "opl",
   "in",
@@ -84,7 +77,7 @@
    "B": 60,
    "C": 44
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -302,6 +295,6 @@
   "celestial-altium-library/YAGEO RES 0201_0603/YAGEO_RES_0201_0603",
   "celestial-altium-library/YAGEO RES 0603_1608/YAGEO_RES_0603_1608"
  ],
- "embedding_text": "passive-resistor.0603 | Passive Resistor | Cluster of 172 passive resistor components associated with 0603 package footprints, including standard SMD resistors and multi-element resistor arrays. | passive resistor 0603 resistor passive smd 1608metric r0603 resistor array surface mount r_0603_1608metric handsolder sparkfun seeed opl kicad res 10w surface mount package opl in an pad mm | 0603 | ",
+ "embedding_text": "passive-resistor.0603 | Passive Resistor | 172 passive resistor parts using 0603 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | resistor passive sparkfun res smd 10w surface mount 1608metric r0603 package opl in an pad mm | 0603 | ",
  "class": "passive.resistor"
 }

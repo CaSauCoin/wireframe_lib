@@ -6,34 +6,25 @@
   "IC",
   "Interface"
  ],
- "description": "Surface-mount 3.3V interface IC cluster in TSSOP packages, including TSSOP-8 and TSSOP-14 footprints.",
+ "description": "3 ic interface parts for 3.3V using TSSOP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when designing for a 3.3V surface-mount interface IC in a TSSOP package.",
-  "Match specific layout requirements for TSSOP-8 or TSSOP-14 footprints.",
-  "Verify part selection for specific devices like FIN1019MTC, MC100EPT22DT, or MC100LVELT22DT."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a TSSOP land pattern is intended."
  ],
  "avoid_when": [
-  "The design requires packages other than TSSOP or mounting methods other than SMD.",
-  "Operating voltages other than 3.3V are required.",
-  "Non-interface IC component classes are needed."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than TSSOP."
  ],
  "keywords": [
-  "ic",
-  "interface",
-  "3.3v",
   "tssop",
-  "smd",
-  "tssop-8",
-  "tssop-14",
-  "fin1019mtc",
-  "mc100ept22dt",
-  "mc100lvelt22dt",
-  "ic interface",
-  "p0.65mm",
+  "interface",
   "3v",
   "differential",
   "p0",
   "65mm",
+  "ic",
   "lvds",
   "driver",
   "receiver",
@@ -41,7 +32,8 @@
   "lvttl",
   "lvcmos",
   "to",
-  "lvpecl"
+  "lvpecl",
+  "translator"
  ],
  "facts": {
   "package_family": "TSSOP",
@@ -65,7 +57,7 @@
   "tier_counts": {
    "A": 3
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -98,6 +90,6 @@
   "kicad-symbols/Interface/MC100EPT22DT",
   "kicad-symbols/Interface/MC100LVELT22DT"
  ],
- "embedding_text": "ic-interface.tssop.3v3 | IC Interface | Surface-mount 3.3V interface IC cluster in TSSOP packages, including TSSOP-8 and TSSOP-14 footprints. | ic interface 3.3v tssop smd tssop-8 tssop-14 fin1019mtc mc100ept22dt mc100lvelt22dt ic interface p0.65mm 3v differential p0 65mm lvds driver receiver dual lvttl lvcmos to lvpecl | TSSOP | 3.3V",
+ "embedding_text": "ic-interface.tssop.3v3 | IC Interface | 3 ic interface parts for 3.3V using TSSOP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | tssop interface 3v differential p0 65mm ic lvds driver receiver dual lvttl lvcmos to lvpecl translator | TSSOP | 3.3V",
  "class": "ic.interface"
 }

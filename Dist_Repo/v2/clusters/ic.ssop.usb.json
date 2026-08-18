@@ -5,29 +5,22 @@
  "category_path": [
   "IC"
  ],
- "description": "Surface-mount USB IC cluster containing KiCad symbol parts in SSOP-28 footprints.",
+ "description": "1 ic parts for USB using SSOP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when requiring a USB IC in an SSOP package.",
-  "Verify component footprint compatibility with SSOP-28_5.3x10.2mm_P0.65mm.",
-  "Confirm tier A KiCad symbol data matches target schematic requirements."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SSOP land pattern is intended."
  ],
  "avoid_when": [
-  "The board layout requires packages other than SSOP.",
-  "Through-hole mounting is required instead of SMD.",
-  "The component footprint differs from SSOP-28_5.3x10.2mm_P0.65mm."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SSOP."
  ],
  "keywords": [
-  "ic",
-  "usb",
   "ssop",
-  "smd",
-  "ssop-28",
-  "pcm2902",
-  "kicad-symbols",
-  "usb ic",
-  "surface mount",
-  "ssop-28_5.3x10.2mm_p0.65mm",
   "audio",
+  "usb",
+  "pcm2902",
   "stereo",
   "codec",
   "with",
@@ -62,7 +55,7 @@
   "tier_counts": {
    "A": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -77,6 +70,6 @@
  "part_ids": [
   "kicad-symbols/Audio/PCM2902"
  ],
- "embedding_text": "ic.ssop.usb | IC | Surface-mount USB IC cluster containing KiCad symbol parts in SSOP-28 footprints. | ic usb ssop smd ssop-28 pcm2902 kicad-symbols usb ic surface mount ssop-28_5.3x10.2mm_p0.65mm audio stereo codec with interface analog input output and pdif 3x10 2mm p0 | SSOP | USB",
+ "embedding_text": "ic.ssop.usb | IC | 1 ic parts for USB using SSOP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | ssop audio usb pcm2902 stereo codec with interface analog input output and pdif 3x10 2mm p0 | SSOP | USB",
  "class": "ic"
 }

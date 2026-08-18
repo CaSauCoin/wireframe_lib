@@ -6,33 +6,24 @@
   "Discrete",
   "Diode"
  ],
- "description": "Cluster of 12 discrete diode parts utilizing TE package footprints with surface-mount, through-hole, or unspecified mount options.",
+ "description": "12 discrete diode parts using TE footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when discrete diodes with TE package footprints are required.",
-  "Match footprint orientation (vertical or horizontal) and pin pitch (2.00mm, 3.96mm, 4.0mm, or 4.14mm).",
-  "Filter parts by mounting style (SMD or through-hole) and quality tier (Tier B or C)."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a TE land pattern is intended."
  ],
  "avoid_when": [
-  "The design requires footprint packages other than the TE family.",
-  "Tier A quality rated parts are mandatory for component selection.",
-  "The application requires pin pitches other than 2.00mm, 3.96mm, 4.0mm, or 4.14mm."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than TE."
  ],
  "keywords": [
-  "discrete diode",
+  "te",
+  "1x02",
   "diode",
   "discrete",
-  "te",
-  "te package",
-  "smd",
-  "through hole",
   "vertical",
   "horizontal",
-  "mate-n-lok",
-  "1x02",
-  "2.00mm pitch",
-  "3.96mm pitch",
-  "4.0mm pitch",
-  "4.14mm pitch",
   "p4",
   "mate",
   "lok",
@@ -41,7 +32,8 @@
   "00mm",
   "14mm",
   "anode",
-  "cathode"
+  "cathode",
+  "package"
  ],
  "facts": {
   "package_family": "TE",
@@ -71,7 +63,7 @@
    "B": 4,
    "C": 8
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -121,6 +113,6 @@
   "dist-legacy/TE_MATE-N-LOK_1-770866-x_1x02_P4.14mm_Vertical",
   "dist-legacy/TE_MATE-N-LOK_1-770966-x_1x02_P4.14mm_Horizontal"
  ],
- "embedding_text": "discrete-diode.te | Discrete Diode | Cluster of 12 discrete diode parts utilizing TE package footprints with surface-mount, through-hole, or unspecified mount options. | discrete diode diode discrete te te package smd through hole vertical horizontal mate-n-lok 1x02 2.00mm pitch 3.96mm pitch 4.0mm pitch 4.14mm pitch p4 mate lok pins p2 00mm 14mm anode cathode | TE | ",
+ "embedding_text": "discrete-diode.te | Discrete Diode | 12 discrete diode parts using TE footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | te 1x02 diode discrete vertical horizontal p4 mate lok pins p2 00mm 14mm anode cathode package | TE | ",
  "class": "discrete.diode"
 }

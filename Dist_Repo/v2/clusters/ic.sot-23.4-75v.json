@@ -5,30 +5,20 @@
  "category_path": [
   "IC"
  ],
- "description": "Integrated circuit cluster featuring 4.75V rated components in SMD SOT-23 packages, including Tier A power supervisor parts from KiCad symbols.",
+ "description": "2 ic parts for 4.75V using SOT-23 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when requiring a 4.75V rated IC in an SMD SOT-23 package.",
-  "Choose between Tier A power supervisor components such as MCP100-475D and MCP101-475D.",
-  "Confirm part specifications and KiCad symbol requirements before placement."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SOT-23 land pattern is intended."
  ],
  "avoid_when": [
-  "The board design requires package types other than SOT-23.",
-  "Voltage requirements differ from the 4.75V rating.",
-  "Through-hole mounting is required instead of SMD."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SOT-23."
  ],
  "keywords": [
-  "ic",
-  "sot-23",
-  "4.75v",
-  "smd",
-  "power supervisor",
-  "mcp100-475d",
-  "mcp101-475d",
-  "kicad-symbols",
-  "tier a",
-  "supervisor",
-  "integrated circuit",
   "sot",
+  "supervisor",
   "reset",
   "75v",
   "475d",
@@ -39,8 +29,10 @@
   "active",
   "output",
   "to",
+  "smd",
   "push",
-  "pull"
+  "pull",
+  "ic"
  ],
  "facts": {
   "package_family": "SOT-23",
@@ -63,7 +55,7 @@
   "tier_counts": {
    "A": 2
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -87,6 +79,6 @@
   "kicad-symbols/Power_Supervisor/MCP100-475D",
   "kicad-symbols/Power_Supervisor/MCP101-475D"
  ],
- "embedding_text": "ic.sot-23.4-75v | IC | Integrated circuit cluster featuring 4.75V rated components in SMD SOT-23 packages, including Tier A power supervisor parts from KiCad symbols. | ic sot-23 4.75v smd power supervisor mcp100-475d mcp101-475d kicad-symbols tier a supervisor integrated circuit sot reset 75v 475d power microcontroller monitor threshold active output to push pull | SOT-23 | 4.75V",
+ "embedding_text": "ic.sot-23.4-75v | IC | 2 ic parts for 4.75V using SOT-23 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | sot supervisor reset 75v 475d power microcontroller monitor threshold active output to smd push pull ic | SOT-23 | 4.75V",
  "class": "ic"
 }

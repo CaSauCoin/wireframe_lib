@@ -5,34 +5,24 @@
  "category_path": [
   "IC"
  ],
- "description": "IC cluster containing 2 surface-mount parts using HDSM package family footprints.",
+ "description": "2 ic parts using HDSM footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when a surface-mount HDSM package footprint is required.",
-  "Verify compatibility with HDSM-441B_HDSM-443B or HDSM-541B_HDSM-543B footprints.",
-  "Confirm suitability given tier C quality and generated review status."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a HDSM land pattern is intended."
  ],
  "avoid_when": [
-  "The design requires non-SMD or through-hole mounting.",
-  "The layout requires footprints outside the HDSM package family.",
-  "Higher quality tier parts than tier C are required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than HDSM."
  ],
  "keywords": [
   "hdsm",
-  "ic",
-  "smd",
-  "surface mount",
-  "hdsm-441b",
-  "hdsm-443b",
-  "hdsm-541b",
-  "hdsm-543b",
-  "package family",
-  "tier c",
-  "dist-legacy",
-  "footprint",
   "441b",
   "443b",
   "541b",
   "543b",
+  "ic",
   "digit",
   "blue",
   "led",
@@ -40,7 +30,9 @@
   "right",
   "hand",
   "decimal",
-  "surface"
+  "surface",
+  "mount",
+  "pad"
  ],
  "facts": {
   "package_family": "HDSM",
@@ -62,13 +54,13 @@
   "tier_counts": {
    "C": 2
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
   "dist-legacy/HDSM-441B_HDSM-443B",
   "dist-legacy/HDSM-541B_HDSM-543B"
  ],
- "embedding_text": "ic.hdsm | IC | IC cluster containing 2 surface-mount parts using HDSM package family footprints. | hdsm ic smd surface mount hdsm-441b hdsm-443b hdsm-541b hdsm-543b package family tier c dist-legacy footprint 441b 443b 541b 543b digit blue led docs right hand decimal surface | HDSM | ",
+ "embedding_text": "ic.hdsm | IC | 2 ic parts using HDSM footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | hdsm 441b 443b 541b 543b ic digit blue led docs right hand decimal surface mount pad | HDSM | ",
  "class": "ic"
 }

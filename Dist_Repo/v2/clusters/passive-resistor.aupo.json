@@ -6,31 +6,25 @@
   "Passive",
   "Resistor"
  ],
- "description": "Through-hole passive resistor cluster containing AUPO package family parts with AUPO_P-4F bend footprint variants.",
+ "description": "3 passive resistor parts using AUPO footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select based on the specific footprint variant among AUPO_P-4F_BEND2, BEND3, or BEND4.",
-  "Verify part suitability for through-hole mounting applications.",
-  "Review component specifications sourced from chilaboard-altium-library."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a AUPO land pattern is intended."
  ],
  "avoid_when": [
-  "Surface-mount (SMD) resistor mounting is required.",
-  "The board layout requires a package family other than AUPO.",
-  "Components outside the passive resistor class are needed."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than AUPO."
  ],
  "keywords": [
   "aupo",
+  "4f",
+  "passive",
   "resistor",
-  "passive resistor",
-  "through_hole",
-  "aupo_p-4f_bend2",
-  "aupo_p-4f_bend3",
-  "aupo_p-4f_bend4",
-  "p-4f",
   "bend2",
   "bend3",
   "bend4",
-  "4f",
-  "passive",
   "through",
   "hole",
   "pad",
@@ -59,7 +53,7 @@
   "tier_counts": {
    "C": 3
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
@@ -67,6 +61,6 @@
   "chilaboard-altium-library/AUPO_P-4F_BEND3/AUPO_P-4F_BEND3",
   "chilaboard-altium-library/AUPO_P-4F_BEND4/AUPO_P-4F_BEND4"
  ],
- "embedding_text": "passive-resistor.aupo | Passive Resistor | Through-hole passive resistor cluster containing AUPO package family parts with AUPO_P-4F bend footprint variants. | aupo resistor passive resistor through_hole aupo_p-4f_bend2 aupo_p-4f_bend3 aupo_p-4f_bend4 p-4f bend2 bend3 bend4 4f passive through hole pad mm pitch pins | AUPO | ",
+ "embedding_text": "passive-resistor.aupo | Passive Resistor | 3 passive resistor parts using AUPO footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | aupo 4f passive resistor bend2 bend3 bend4 through hole pad mm pitch pins | AUPO | ",
  "class": "passive.resistor"
 }

@@ -5,30 +5,20 @@
  "category_path": [
   "IC"
  ],
- "description": "Integrated circuit (IC) cluster containing 1 tier C part associated with the DBV005 package family and footprint.",
+ "description": "1 ic parts using DBV005 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when an integrated circuit using the DBV005 package footprint is required.",
-  "Review component specifications carefully as this cluster currently contains tier C entries.",
-  "Verify exact package dimensions and pin assignments prior to finalizing PCB layout."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a DBV005 land pattern is intended."
  ],
  "avoid_when": [
-  "The PCB design requires a package type other than DBV005.",
-  "Fully verified, planner-visible, or high-tier components are required.",
-  "Electrical limits or mechanical details are missing and cannot be verified."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than DBV005."
  ],
  "keywords": [
-  "ic",
   "dbv005",
-  "dbv005 package",
-  "dbv005 footprint",
-  "package family dbv005",
-  "integrated circuit",
-  "ic dbv005",
-  "tier c",
-  "dist-legacy",
-  "generated status",
-  "ic cluster",
-  "dbv005 ic",
+  "ic",
   "pad",
   "mm",
   "pitch",
@@ -53,12 +43,12 @@
   "tier_counts": {
    "C": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
   "dist-legacy/DBV005"
  ],
- "embedding_text": "ic.dbv005 | IC | Integrated circuit (IC) cluster containing 1 tier C part associated with the DBV005 package family and footprint. | ic dbv005 dbv005 package dbv005 footprint package family dbv005 integrated circuit ic dbv005 tier c dist-legacy generated status ic cluster dbv005 ic pad mm pitch pins | DBV005 | ",
+ "embedding_text": "ic.dbv005 | IC | 1 ic parts using DBV005 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | dbv005 ic pad mm pitch pins | DBV005 | ",
  "class": "ic"
 }

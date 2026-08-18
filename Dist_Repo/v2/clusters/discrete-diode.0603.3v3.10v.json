@@ -6,42 +6,34 @@
   "Discrete",
   "Diode"
  ],
- "description": "Discrete surface-mount diode cluster in an 0603 package family featuring 3.3V and 10V rating facets with a D_DFN0603-2L footprint.",
+ "description": "1 discrete diode parts for 3.3V, 10V using 0603 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Targeting discrete surface-mount diodes with 3.3V or 10V ratings.",
-  "Requiring an 0603 package family with a D_DFN0603-2L footprint.",
-  "Selecting tier B parts sourced from the JLCPCB KiCad library."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a 0603 land pattern is intended."
  ],
  "avoid_when": [
-  "The design requires through-hole mounting rather than SMD.",
-  "The layout requires a package other than 0603 or a footprint other than D_DFN0603-2L.",
-  "Voltage ratings other than 3.3V or 10V are specified."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than 0603."
  ],
  "keywords": [
-  "discrete diode",
-  "diode",
-  "0603",
-  "3.3v",
-  "10v",
-  "smd",
-  "d_dfn0603-2l",
-  "dfn0603",
-  "tvs-bi,h3v3l06b",
-  "h3v3l06b",
-  "jlcpcb-kicad-library",
-  "tier b",
   "esd",
+  "dfn0603",
   "tvs",
+  "10v",
   "3v",
   "20us",
   "iec",
   "2l",
   "bi",
+  "h3v3l06b",
   "jlcpcb",
   "diodes",
   "12pf",
   "200na",
-  "6v"
+  "6v",
+  "80w"
  ],
  "facts": {
   "package_family": "0603",
@@ -65,7 +57,7 @@
   "tier_counts": {
    "B": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -80,6 +72,6 @@
  "part_ids": [
   "JLCPCB-Kicad-Library/JLCPCB-Diodes/TVS-Bi,H3V3L06B"
  ],
- "embedding_text": "discrete-diode.0603.3v3.10v | Discrete Diode | Discrete surface-mount diode cluster in an 0603 package family featuring 3.3V and 10V rating facets with a D_DFN0603-2L footprint. | discrete diode diode 0603 3.3v 10v smd d_dfn0603-2l dfn0603 tvs-bi,h3v3l06b h3v3l06b jlcpcb-kicad-library tier b esd tvs 3v 20us iec 2l bi jlcpcb diodes 12pf 200na 6v | 0603 | 3.3V 10V",
+ "embedding_text": "discrete-diode.0603.3v3.10v | Discrete Diode | 1 discrete diode parts for 3.3V, 10V using 0603 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | esd dfn0603 tvs 10v 3v 20us iec 2l bi h3v3l06b jlcpcb diodes 12pf 200na 6v 80w | 0603 | 3.3V 10V",
  "class": "discrete.diode"
 }

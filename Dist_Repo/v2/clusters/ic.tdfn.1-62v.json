@@ -5,30 +5,19 @@
  "category_path": [
   "IC"
  ],
- "description": "Surface-mount integrated circuit cluster operating at 1.62V featuring TDFN footprints such as TDFN-6_L2.0-W1.3-P0.40-TR and including clock fanout buffers.",
+ "description": "1 ic parts for 1.62V using TDFN footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when needing a 1.62V IC in an SMD TDFN package.",
-  "Verify suitability for clock fanout buffer applications such as PL133-27GC-R.",
-  "Ensure compatibility with the TDFN-6_L2.0-W1.3-P0.40-TR footprint.",
-  "Note the tier B quality status from JLCPCB-Kicad-Library."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a TDFN land pattern is intended."
  ],
  "avoid_when": [
-  "Designs requiring operating voltages other than 1.62V.",
-  "Layouts requiring package types or mounting other than SMD TDFN.",
-  "Applications requiring higher quality tier parts than tier B."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than TDFN."
  ],
  "keywords": [
-  "ic",
   "tdfn",
-  "1.62v",
-  "smd",
-  "clock fanout buffer",
-  "pl133-27gc-r",
-  "tdfn-6_l2.0-w1.3-p0.40-tr",
-  "tdfn-6",
-  "jlcpcb-kicad-library",
-  "fanout buffer",
-  "clock buffer",
   "clock",
   "62v",
   "l2",
@@ -41,7 +30,9 @@
   "pl133",
   "27gc",
   "63v",
-  "150mhz"
+  "150mhz",
+  "3x2",
+  "buffers"
  ],
  "facts": {
   "package_family": "TDFN",
@@ -64,7 +55,7 @@
   "tier_counts": {
    "B": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -79,6 +70,6 @@
  "part_ids": [
   "JLCPCB-Kicad-Library/626276/Clock Fanout Buffer, PL133-27GC-R"
  ],
- "embedding_text": "ic.tdfn.1-62v | IC | Surface-mount integrated circuit cluster operating at 1.62V featuring TDFN footprints such as TDFN-6_L2.0-W1.3-P0.40-TR and including clock fanout buffers. | ic tdfn 1.62v smd clock fanout buffer pl133-27gc-r tdfn-6_l2.0-w1.3-p0.40-tr tdfn-6 jlcpcb-kicad-library fanout buffer clock buffer clock 62v l2 w1 p0 tr c626276 fanout buffer pl133 27gc 63v 150mhz | TDFN | 1.62V",
+ "embedding_text": "ic.tdfn.1-62v | IC | 1 ic parts for 1.62V using TDFN footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | tdfn clock 62v l2 w1 p0 tr c626276 fanout buffer pl133 27gc 63v 150mhz 3x2 buffers | TDFN | 1.62V",
  "class": "ic"
 }

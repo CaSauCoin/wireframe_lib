@@ -6,29 +6,23 @@
   "Passive",
   "Resistor"
  ],
- "description": "Cluster of SMD passive resistors utilizing Knowles JR and Knowles JZ footprints from the celestial-altium-library.",
+ "description": "2 passive resistor parts using Knowles footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select between Knowles JR and Knowles JZ surface-mount footprints.",
-  "Verify compatibility with tier C library parts.",
-  "Confirm SMD mounting requirements."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a Knowles land pattern is intended."
  ],
  "avoid_when": [
-  "Designs require through-hole mounting instead of SMD.",
-  "A package family or footprint other than Knowles JR or Knowles JZ is required.",
-  "Quality tier C parts are not acceptable for the design."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than Knowles."
  ],
  "keywords": [
   "knowles",
-  "passive resistor",
-  "resistor",
-  "passive",
-  "smd",
-  "surface mount",
-  "knowles jr",
-  "knowles jz",
   "jr",
   "jz",
-  "celestial-altium-library",
+  "passive",
+  "resistor",
   "surface",
   "mount",
   "pad",
@@ -56,13 +50,13 @@
   "tier_counts": {
    "C": 2
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
   "celestial-altium-library/Knowles JR/Knowles_JR",
   "celestial-altium-library/Knowles JZ/Knowles_JZ"
  ],
- "embedding_text": "passive-resistor.knowles | Passive Resistor | Cluster of SMD passive resistors utilizing Knowles JR and Knowles JZ footprints from the celestial-altium-library. | knowles passive resistor resistor passive smd surface mount knowles jr knowles jz jr jz celestial-altium-library surface mount pad mm pitch pins | Knowles | ",
+ "embedding_text": "passive-resistor.knowles | Passive Resistor | 2 passive resistor parts using Knowles footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | knowles jr jz passive resistor surface mount pad mm pitch pins | Knowles | ",
  "class": "passive.resistor"
 }

@@ -6,31 +6,24 @@
   "IC",
   "Logic"
  ],
- "description": "Logic IC cluster featuring surface-mount XSON8 package footprints and logic integrated circuit parts such as 74AHC(T)2G125 Type 1.",
+ "description": "1 ic logic parts using XSON8 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when requiring logic IC parts in an XSON8 SMD package.",
-  "Verify footprint details and tier B quality status prior to layout.",
-  "Confirm pin-to-pad compatibility for XSON8 surface-mount footprints."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a XSON8 land pattern is intended."
  ],
  "avoid_when": [
-  "The board design requires a package footprint other than XSON8.",
-  "Surface-mount (SMD) packaging is not suitable for the assembly process.",
-  "Required electrical specifications or tolerance details are not provided."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than XSON8."
  ],
  "keywords": [
-  "ic",
+  "buffer",
   "logic",
-  "ic.logic",
+  "ic",
   "xson8",
-  "smd",
-  "logic ic",
   "74ahc",
   "2g125",
-  "74ahc2g125",
-  "74ahct2g125",
-  "74ahc(t)2g125",
-  "francescosacco-hardwarelibrary",
-  "buffer",
   "type",
   "state",
   "dual",
@@ -38,7 +31,9 @@
   "an",
   "pin",
   "xson",
-  "package"
+  "package",
+  "74ahc2g125",
+  "74ahct2g125"
  ],
  "facts": {
   "package_family": "XSON8",
@@ -59,7 +54,7 @@
   "tier_counts": {
    "B": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -74,6 +69,6 @@
  "part_ids": [
   "francescosacco-hardwarelibrary/74AHC(T)2G125 Type 1/74AHC(T)2G125 Type 1"
  ],
- "embedding_text": "ic-logic.xson8 | IC Logic | Logic IC cluster featuring surface-mount XSON8 package footprints and logic integrated circuit parts such as 74AHC(T)2G125 Type 1. | ic logic ic.logic xson8 smd logic ic 74ahc 2g125 74ahc2g125 74ahct2g125 74ahc(t)2g125 francescosacco-hardwarelibrary buffer type state dual in an pin xson package | XSON8 | ",
+ "embedding_text": "ic-logic.xson8 | IC Logic | 1 ic logic parts using XSON8 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | buffer logic ic xson8 74ahc 2g125 type state dual in an pin xson package 74ahc2g125 74ahct2g125 | XSON8 | ",
  "class": "ic.logic"
 }

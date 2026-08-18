@@ -6,41 +6,32 @@
   "Discrete",
   "BJT"
  ],
- "description": "Cluster of 49 discrete BJT parts in TO-family packages (TO-92, TO-18, TO-220, TO-252, TO-50 variants) tagged with the 25V facet, spanning SMD and through-hole mounts.",
+ "description": "49 discrete bjt parts for 25V using TO footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Prefer tier A entries (48 of 49 parts are tier A) with an exact footprint match",
-  "Match the specific TO footprint variant (e.g. TO-92_Inline vs TO-92_Inline_Wide_ECB) to the intended land pattern before layout",
-  "Confirm SMD vs through-hole mount matches the target assembly process",
-  "Weigh source trust — most entries come from Alternate-KiCad-Library, a minority from kicad-symbols"
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a TO land pattern is intended."
  ],
  "avoid_when": [
-  "Required electrical ratings beyond the 25V facet are not stated by the selected part",
-  "The symbol-footprint pairing is guessed or flagged for review",
-  "The board needs a package outside the TO family",
-  "The needed mount type (SMD or through-hole) isn't confirmed for the chosen footprint"
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than TO."
  ],
  "keywords": [
   "to",
   "transistor",
   "bjt",
   "25v",
-  "discrete",
-  "npn",
-  "pnp",
-  "to-92",
-  "to-18",
-  "to-220",
-  "to-252",
-  "to-50",
-  "smd",
-  "through hole",
-  "inline",
-  "wide",
-  "kicad",
-  "akl",
   "sc",
+  "pnp",
+  "discrete",
+  "akl",
   "alternate",
+  "kicad",
   "library",
+  "inline",
+  "npn",
+  "wide",
   "43a",
   "sot54"
  ],
@@ -79,7 +70,7 @@
    "A": 48,
    "B": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -174,6 +165,6 @@
   "Alternate-KiCad-Library/Transistor_BJT_AKL/ZTX749",
   "Alternate-KiCad-Library/Transistor_BJT_AKL/BF479"
  ],
- "embedding_text": "discrete-bjt.to.25v | Discrete BJT | Cluster of 49 discrete BJT parts in TO-family packages (TO-92, TO-18, TO-220, TO-252, TO-50 variants) tagged with the 25V facet, spanning SMD and through-hole mounts. | to transistor bjt 25v discrete npn pnp to-92 to-18 to-220 to-252 to-50 smd through hole inline wide kicad akl sc alternate library 43a sot54 | TO | 25V",
+ "embedding_text": "discrete-bjt.to.25v | Discrete BJT | 49 discrete bjt parts for 25V using TO footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | to transistor bjt 25v sc pnp discrete akl alternate kicad library inline npn wide 43a sot54 | TO | 25V",
  "class": "discrete.bjt"
 }

@@ -5,42 +5,34 @@
  "category_path": [
   "Connector"
  ],
- "description": "Cluster of 4 through-hole terminal block connectors spanning pitches from 2.5mm to 9.5mm, including 3-way variants, sourced from Digikey, SparkFun, and Altium libraries.",
+ "description": "4 connector parts using Terminal footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Match the exact footprint (pitch and way count) to the PCB layout",
-  "Prefer tier B entries over tier C for higher confidence",
-  "Confirm through-hole mounting fits the intended assembly process"
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a Terminal land pattern is intended."
  ],
  "avoid_when": [
-  "The design requires a mount type other than through_hole",
-  "The required pitch or way count is not among the listed footprints",
-  "Only tier C parts remain and a verified footprint match is needed"
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than Terminal."
  ],
  "keywords": [
-  "terminal block",
-  "connector",
-  "through hole",
-  "5mm pitch",
-  "9.5mm",
-  "2.5mm",
-  "3way",
-  "barrier terminal",
-  "wire to board",
-  "screw terminal",
-  "pcb mount connector",
-  "digikey",
-  "sparkfun",
-  "altium library",
   "terminal",
   "5mm",
   "block",
+  "3way",
+  "connector",
   "barrier",
+  "sparkfun",
   "blocks",
   "wire",
   "board",
   "position",
   "through",
-  "hole"
+  "hole",
+  "pad",
+  "mm",
+  "pitch"
  ],
  "facts": {
   "package_family": "Terminal",
@@ -68,7 +60,7 @@
    "B": 2,
    "C": 2
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -94,6 +86,6 @@
   "embedded-society-altium-libraries/TERMINAL_BLOCK_2.5MM_3WAY/TERMINAL_BLOCK_2.5MM_3WAY",
   "embedded-society-altium-libraries/TERMINAL_BLOCK_5mm_3way/TERMINAL_BLOCK_5mm_3way"
  ],
- "embedding_text": "connector.terminal | Connector | Cluster of 4 through-hole terminal block connectors spanning pitches from 2.5mm to 9.5mm, including 3-way variants, sourced from Digikey, SparkFun, and Altium libraries. | terminal block connector through hole 5mm pitch 9.5mm 2.5mm 3way barrier terminal wire to board screw terminal pcb mount connector digikey sparkfun altium library terminal 5mm block barrier blocks wire board position through hole | Terminal | ",
+ "embedding_text": "connector.terminal | Connector | 4 connector parts using Terminal footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | terminal 5mm block 3way connector barrier sparkfun blocks wire board position through hole pad mm pitch | Terminal | ",
  "class": "connector"
 }

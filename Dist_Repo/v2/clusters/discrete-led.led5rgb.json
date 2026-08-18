@@ -6,34 +6,24 @@
   "Discrete",
   "LED"
  ],
- "description": "Discrete RGB LED cluster containing 92 through-hole parts using LED5RGB footprints from KiCad symbols and Alternate-KiCad-Library.",
+ "description": "92 discrete led parts using LED5RGB footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Verify specific RGB pin order variants such as ABGR, ABRG, AGBR, AGRB, or ARBG to match component pinout.",
-  "Select when requiring a through-hole discrete RGB LED with an LED5RGB footprint.",
-  "Choose entries based on library source between kicad-symbols and Alternate-KiCad-Library."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a LED5RGB land pattern is intended."
  ],
  "avoid_when": [
-  "Do not use if surface-mount packaging or a footprint other than LED5RGB is required.",
-  "Avoid when single-color or non-RGB discrete LEDs are needed.",
-  "Do not use if tier A rated entries are required, as all parts in this cluster are tier B."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than LED5RGB."
  ],
  "keywords": [
   "led",
-  "discrete",
-  "discrete led",
   "led5rgb",
   "rgb",
-  "through_hole",
-  "through hole",
-  "kicad-symbols",
-  "alternate-kicad-library",
-  "led_abgr",
-  "led_abrg",
-  "led_agbr",
-  "led_agrb",
-  "led_arbg",
   "generic",
   "dual",
+  "discrete",
   "indicator",
   "blue",
   "red",
@@ -41,7 +31,9 @@
   "diode",
   "device",
   "akl",
-  "alternate"
+  "alternate",
+  "kicad",
+  "library"
  ],
  "facts": {
   "package_family": "LED5RGB",
@@ -63,7 +55,7 @@
   "tier_counts": {
    "B": 92
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -201,6 +193,6 @@
   "kicad-symbols/Device/LED_RKBG",
   "kicad-symbols/Device/LED_RKGB"
  ],
- "embedding_text": "discrete-led.led5rgb | Discrete LED | Discrete RGB LED cluster containing 92 through-hole parts using LED5RGB footprints from KiCad symbols and Alternate-KiCad-Library. | led discrete discrete led led5rgb rgb through_hole through hole kicad-symbols alternate-kicad-library led_abgr led_abrg led_agbr led_agrb led_arbg generic dual indicator blue red green diode device akl alternate | LED5RGB | ",
+ "embedding_text": "discrete-led.led5rgb | Discrete LED | 92 discrete led parts using LED5RGB footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | led led5rgb rgb generic dual discrete indicator blue red green diode device akl alternate kicad library | LED5RGB | ",
  "class": "discrete.led"
 }

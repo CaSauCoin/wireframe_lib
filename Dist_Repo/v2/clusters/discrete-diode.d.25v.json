@@ -6,44 +6,34 @@
   "Discrete",
   "Diode"
  ],
- "description": "Cluster of 23 discrete diodes in D-family footprints (DO-35, DO-7, DO-34, MiniMELF, MicroMELF, SOD-123, SOD-523, SOD-23, SMA, plus Zener DO-35 variant) tagged with the 25V facet, spanning SMD and through-hole mounts; 19 parts are tier A.",
+ "description": "23 discrete diode parts for 25V using D footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Match the exact D footprint variant (DO-35, DO-7, DO-34, MELF, SOD-123/523/23, SMA) to the intended land pattern",
-  "Distinguish the standard D_DO-35 footprint from the D_DO-35_..._Zener variant before selecting",
-  "Prefer tier A entries (19 of 23 parts) over tier B",
-  "Confirm SMD vs through-hole mount matches the assembly process"
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a D land pattern is intended."
  ],
  "avoid_when": [
-  "The needed footprint is not one of the listed D-family variants",
-  "A part outside the 25V facet is required",
-  "Zener-type behavior is needed but a non-Zener D_DO-35 footprint part would be picked",
-  "The symbol-footprint pairing has not been manually verified beyond review_status: generated"
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than D."
  ],
  "keywords": [
   "diode",
-  "discrete diode",
-  "d package",
-  "do-35",
-  "do-7",
-  "do-34",
-  "minimelf",
-  "micromelf",
-  "sod-123",
-  "sod-523",
-  "sod-23",
-  "sma diode",
-  "zener",
   "25v",
-  "through hole",
-  "smd",
-  "axial diode",
-  "kicad-symbols",
   "do",
   "horizontal",
   "discrete",
   "akl",
   "alternate",
-  "kicad"
+  "kicad",
+  "library",
+  "62mm",
+  "zener",
+  "sod27",
+  "axial",
+  "pin",
+  "pitch",
+  "length"
  ],
  "facts": {
   "package_family": "D",
@@ -79,7 +69,7 @@
    "A": 19,
    "B": 4
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -148,6 +138,6 @@
   "Alternate-KiCad-Library/Diode_AKL/BAY60",
   "Alternate-KiCad-Library/Diode_AKL/BAY93"
  ],
- "embedding_text": "discrete-diode.d.25v | Discrete Diode | Cluster of 23 discrete diodes in D-family footprints (DO-35, DO-7, DO-34, MiniMELF, MicroMELF, SOD-123, SOD-523, SOD-23, SMA, plus Zener DO-35 variant) tagged with the 25V facet, spanning SMD and through-hole mounts; 19 parts are tier A. | diode discrete diode d package do-35 do-7 do-34 minimelf micromelf sod-123 sod-523 sod-23 sma diode zener 25v through hole smd axial diode kicad-symbols do horizontal discrete akl alternate kicad | D | 25V",
+ "embedding_text": "discrete-diode.d.25v | Discrete Diode | 23 discrete diode parts for 25V using D footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | diode 25v do horizontal discrete akl alternate kicad library 62mm zener sod27 axial pin pitch length | D | 25V",
  "class": "discrete.diode"
 }

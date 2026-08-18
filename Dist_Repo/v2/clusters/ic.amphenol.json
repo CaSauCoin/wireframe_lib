@@ -5,42 +5,34 @@
  "category_path": [
   "IC"
  ],
- "description": "Integrated circuit cluster containing 136 parts with Amphenol footprints across SMD and through-hole mounting styles.",
+ "description": "136 ic parts using AMPHENOL footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Verify exact Amphenol footprint match including pitch and mounting type.",
-  "Select parts based on source availability from dist-legacy or celestial-altium-library.",
-  "Check quality tier ratings, as 1 part is tier B and 135 parts are tier C."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a AMPHENOL land pattern is intended."
  ],
  "avoid_when": [
-  "The board layout requires a footprint other than the listed Amphenol land patterns.",
-  "High quality tier parts are required, as 135 of 136 parts are tier C.",
-  "Mounting requirements do not match SMD or through-hole."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than AMPHENOL."
  ],
  "keywords": [
   "amphenol",
-  "ic",
-  "smd",
-  "through_hole",
-  "rjmg201k2",
-  "rjhse",
-  "gsb416445chr",
-  "54601-906wplf",
-  "10018783-11200tlf",
-  "f32q",
-  "p0.5mm",
-  "horizontal",
-  "celestial-altium-library",
-  "dist-legacy",
   "5mm",
   "1a7x1",
   "1mp",
   "p0",
+  "horizontal",
+  "f32q",
   "f32r",
+  "ic",
   "pitch",
   "pad",
   "mm",
   "pins",
-  "icc"
+  "icc",
+  "connector",
+  "mount"
  ],
  "facts": {
   "package_family": "AMPHENOL",
@@ -76,7 +68,7 @@
    "B": 1,
    "C": 135
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -226,6 +218,6 @@
   "celestial-altium-library/Amphenol RJCSE538001/Amphenol_RJCSE538001",
   "celestial-altium-library/Amphenol RJLSE4238101T/Amphenol_RJLSE4238101T"
  ],
- "embedding_text": "ic.amphenol | IC | Integrated circuit cluster containing 136 parts with Amphenol footprints across SMD and through-hole mounting styles. | amphenol ic smd through_hole rjmg201k2 rjhse gsb416445chr 54601-906wplf 10018783-11200tlf f32q p0.5mm horizontal celestial-altium-library dist-legacy 5mm 1a7x1 1mp p0 f32r pitch pad mm pins icc | AMPHENOL | ",
+ "embedding_text": "ic.amphenol | IC | 136 ic parts using AMPHENOL footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | amphenol 5mm 1a7x1 1mp p0 horizontal f32q f32r ic pitch pad mm pins icc connector mount | AMPHENOL | ",
  "class": "ic"
 }

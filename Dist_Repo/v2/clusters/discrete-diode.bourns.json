@@ -6,32 +6,25 @@
   "Discrete",
   "Diode"
  ],
- "description": "Discrete diode cluster containing 10 parts with BOURNS footprint designations, including 6 planner-visible tier B entries.",
+ "description": "10 discrete diode parts using BOURNS footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Prefer the 6 tier B parts over tier C entries.",
-  "Verify part compatibility with BOURNS or Bourns footprint names.",
-  "Check representative part numbers such as SRP4020T, SRP5030T, SRR1280, SRR6028, or DO214AC SMA."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a BOURNS land pattern is intended."
  ],
  "avoid_when": [
-  "Tier A quality components are strictly required.",
-  "The PCB layout requires a footprint other than BOURNS or Bourns.",
-  "A verified mounting style is required, as mounts are marked unknown."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than BOURNS."
  ],
  "keywords": [
-  "discrete",
-  "diode",
   "bourns",
-  "discrete diode",
-  "dist-legacy",
-  "srp4020t",
-  "srp5030t",
-  "srr1280",
-  "srr6028",
-  "do214ac sma",
+  "diode",
   "package",
   "pin",
   "surface",
   "mount",
+  "discrete",
   "land",
   "pattern",
   "footprint",
@@ -63,7 +56,7 @@
    "B": 6,
    "C": 4
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -119,6 +112,6 @@
   "dist-legacy/BOURNS SRN4018",
   "dist-legacy/BOURNS SRN8040"
  ],
- "embedding_text": "discrete-diode.bourns | Discrete Diode | Discrete diode cluster containing 10 parts with BOURNS footprint designations, including 6 planner-visible tier B entries. | discrete diode bourns discrete diode dist-legacy srp4020t srp5030t srr1280 srr6028 do214ac sma package pin surface mount land pattern footprint in two smd by with pitch | BOURNS | ",
+ "embedding_text": "discrete-diode.bourns | Discrete Diode | 10 discrete diode parts using BOURNS footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | bourns diode package pin surface mount discrete land pattern footprint in two smd by with pitch | BOURNS | ",
  "class": "discrete.diode"
 }

@@ -6,31 +6,22 @@
   "Passive",
   "Capacitor"
  ],
- "description": "Cluster of 6 Tier-B passive capacitor parts from legacy distribution sources using MURATA footprints.",
+ "description": "6 passive capacitor parts using MURATA footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select by specific part model such as GCM31M, GRM319, GRM31A, GRM31B, or GRM31C.",
-  "Verify footprint details and component ratings before committing to a design.",
-  "Review dist-legacy part entries to ensure suitability for project needs."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a MURATA land pattern is intended."
  ],
  "avoid_when": [
-  "The design requires verified Tier A components or confirmed mount type specifications.",
-  "A footprint or package family other than MURATA is required.",
-  "Required specifications cannot be confirmed from the legacy source records."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than MURATA."
  ],
  "keywords": [
   "murata",
-  "passive",
   "capacitor",
-  "passive capacitor",
-  "dist-legacy",
-  "tier b",
-  "gcm31m",
-  "grm319",
-  "grm31a",
-  "grm31b",
-  "grm31c",
-  "1206_3216",
   "cap",
+  "passive",
   "series",
   "two",
   "terminal",
@@ -39,7 +30,10 @@
   "surface",
   "mount",
   "package",
-  "smd"
+  "smd",
+  "gcm31m",
+  "grm319",
+  "grm31a"
  ],
  "facts": {
   "package_family": "MURATA",
@@ -60,7 +54,7 @@
   "tier_counts": {
    "B": 6
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -112,6 +106,6 @@
   "dist-legacy/MURATA CAP GRM31C 1206_3216",
   "dist-legacy/MURATA CAP GRM31M 1206_3216"
  ],
- "embedding_text": "passive-capacitor.murata | Passive Capacitor | Cluster of 6 Tier-B passive capacitor parts from legacy distribution sources using MURATA footprints. | murata passive capacitor passive capacitor dist-legacy tier b gcm31m grm319 grm31a grm31b grm31c 1206_3216 cap series two terminal in metric surface mount package smd | MURATA | ",
+ "embedding_text": "passive-capacitor.murata | Passive Capacitor | 6 passive capacitor parts using MURATA footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | murata capacitor cap passive series two terminal in metric surface mount package smd gcm31m grm319 grm31a | MURATA | ",
  "class": "passive.capacitor"
 }

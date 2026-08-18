@@ -7,42 +7,34 @@
   "Power",
   "Linear Regulator"
  ],
- "description": "Cluster of 6 surface-mount 5V and 5.5V low-dropout linear regulator ICs in TSSOP packages using HTSSOP-20 footprints with exposed pads.",
+ "description": "6 ic power linear regulator parts for 5V, LDO, 5.5V using TSSOP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select for 5V or 5.5V LDO linear regulator applications requiring SMD mounting.",
-  "Use when PCB layout requires an HTSSOP-20-1EP footprint with thermal vias.",
-  "Verify part selection across available TPS777 and TPS778 variants."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a TSSOP land pattern is intended."
  ],
  "avoid_when": [
-  "Avoid if the design requires a package other than TSSOP or HTSSOP-20.",
-  "Avoid when through-hole or non-SMD mounting is required.",
-  "Avoid if application requirements fall outside 5V or 5.5V LDO ratings."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than TSSOP."
  ],
  "keywords": [
-  "ic",
-  "power",
-  "linear regulator",
-  "ldo",
-  "5v",
-  "5.5v",
-  "tssop",
-  "htssop-20",
-  "htssop-20-1ep",
-  "smd",
-  "tps77701",
-  "tps77715",
-  "tps77801",
   "regulator",
+  "5v",
   "htssop20",
   "linear",
   "750ma",
   "htssop",
   "4x6",
   "5mm",
+  "ldo",
   "fixed",
   "fast",
   "transient",
-  "low"
+  "low",
+  "dropout",
+  "voltage",
+  "output"
  ],
  "facts": {
   "package_family": "TSSOP",
@@ -67,7 +59,7 @@
   "tier_counts": {
    "A": 6
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -119,6 +111,6 @@
   "kicad-symbols/Regulator_Linear/TPS77815_HTSSOP20",
   "kicad-symbols/Regulator_Linear/TPS77825_HTSSOP20"
  ],
- "embedding_text": "ic-power-ldo.tssop.5v.ldo | IC Power Linear Regulator | Cluster of 6 surface-mount 5V and 5.5V low-dropout linear regulator ICs in TSSOP packages using HTSSOP-20 footprints with exposed pads. | ic power linear regulator ldo 5v 5.5v tssop htssop-20 htssop-20-1ep smd tps77701 tps77715 tps77801 regulator htssop20 linear 750ma htssop 4x6 5mm fixed fast transient low | TSSOP | 5V LDO 5.5V",
+ "embedding_text": "ic-power-ldo.tssop.5v.ldo | IC Power Linear Regulator | 6 ic power linear regulator parts for 5V, LDO, 5.5V using TSSOP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | regulator 5v htssop20 linear 750ma htssop 4x6 5mm ldo fixed fast transient low dropout voltage output | TSSOP | 5V LDO 5.5V",
  "class": "ic.power.ldo"
 }

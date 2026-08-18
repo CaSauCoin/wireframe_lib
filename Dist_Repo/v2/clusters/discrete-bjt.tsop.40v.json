@@ -6,42 +6,34 @@
   "Discrete",
   "BJT"
  ],
- "description": "Cluster of 3 tier-A discrete BJT parts sharing the 40V facet, packaged in TSOP-6 (1.65x3.05mm, 0.95mm pitch) SMD footprint, all sourced from Alternate-KiCad-Library.",
+ "description": "3 discrete bjt parts for 40V using TSOP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "All 3 entries are tier A with score 100; differentiate by exact part suffix (base, -H, s).",
-  "Confirm the TSOP-6_1.65x3.05mm_P0.95mm footprint matches the intended board land pattern.",
-  "Check that the 40V facet meets the circuit's voltage margin requirement."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a TSOP land pattern is intended."
  ],
  "avoid_when": [
-  "The design needs a package other than TSOP-6.",
-  "The circuit's voltage requirement exceeds or is not covered by the 40V facet.",
-  "Differences between the base/-H/s part suffixes have not been verified for the application."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than TSOP."
  ],
  "keywords": [
   "tsop",
-  "tsop-6",
   "transistor",
   "bjt",
-  "discrete bjt",
-  "40v",
-  "smd",
-  "pbss4240dpn",
-  "pbss4240dpn-h",
-  "pbss4240dpns",
-  "alternate-kicad-library",
-  "akl",
-  "tier a",
-  "1.65x3.05mm",
-  "0.95mm pitch",
-  "footprint",
   "npn",
   "pnp",
+  "40v",
+  "pbss4240dpn",
+  "akl",
   "array",
   "1a",
   "370mw",
   "alternate",
   "kicad",
-  "library"
+  "library",
+  "65x3",
+  "05mm"
  ],
  "facts": {
   "package_family": "TSOP",
@@ -64,7 +56,7 @@
   "tier_counts": {
    "A": 3
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -97,6 +89,6 @@
   "Alternate-KiCad-Library/Transistor_BJT_AKL/PBSS4240DPN-H",
   "Alternate-KiCad-Library/Transistor_BJT_AKL/PBSS4240DPNs"
  ],
- "embedding_text": "discrete-bjt.tsop.40v | Discrete BJT | Cluster of 3 tier-A discrete BJT parts sharing the 40V facet, packaged in TSOP-6 (1.65x3.05mm, 0.95mm pitch) SMD footprint, all sourced from Alternate-KiCad-Library. | tsop tsop-6 transistor bjt discrete bjt 40v smd pbss4240dpn pbss4240dpn-h pbss4240dpns alternate-kicad-library akl tier a 1.65x3.05mm 0.95mm pitch footprint npn pnp array 1a 370mw alternate kicad library | TSOP | 40V",
+ "embedding_text": "discrete-bjt.tsop.40v | Discrete BJT | 3 discrete bjt parts for 40V using TSOP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | tsop transistor bjt npn pnp 40v pbss4240dpn akl array 1a 370mw alternate kicad library 65x3 05mm | TSOP | 40V",
  "class": "discrete.bjt"
 }

@@ -7,36 +7,28 @@
   "Interface",
   "Serial"
  ],
- "description": "Surface-mount serial interface ICs for 3V and 5V UART/serial applications in SOT-23-6 and SOT-23-8 footprints.",
+ "description": "5 ic interface serial parts for 5V, UART/serial, 3V using SOT-23 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select based on required package pin count between SOT-23-6 and SOT-23-8 footprints.",
-  "Confirm operating voltage compatibility with 3V or 5V serial interface designs.",
-  "Verify specific part compatibility among Tier A options like ISL3281ExHZ, MAX3284E, or THVD8000."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SOT-23 land pattern is intended."
  ],
  "avoid_when": [
-  "The PCB layout requires non-SMD mounting or package types outside the SOT-23 family.",
-  "The circuit requires footprints other than SOT-23-6 or SOT-23-8.",
-  "The application requires non-serial or non-UART interface protocols."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SOT-23."
  ],
  "keywords": [
-  "ic",
-  "interface",
-  "serial",
-  "uart",
-  "sot-23",
-  "sot-23-6",
-  "sot-23-8",
-  "smd",
-  "5v",
-  "3v",
-  "isl3281exhz",
-  "isl3283exhz",
-  "isl3284exhz",
-  "max3284e",
-  "thvd8000",
   "sot",
+  "interface",
+  "uart",
   "to",
+  "5v",
+  "serial",
   "transceiver",
+  "3v",
+  "smd",
+  "ic",
   "rs",
   "rs485",
   "receiver",
@@ -68,7 +60,7 @@
   "tier_counts": {
    "A": 5
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -119,6 +111,6 @@
   "kicad-symbols/Interface_UART/MAX3284E",
   "kicad-symbols/Interface_UART/THVD8000"
  ],
- "embedding_text": "ic-interface-serial.sot-23.5v.uart | IC Interface Serial | Surface-mount serial interface ICs for 3V and 5V UART/serial applications in SOT-23-6 and SOT-23-8 footprints. | ic interface serial uart sot-23 sot-23-6 sot-23-8 smd 5v 3v isl3281exhz isl3283exhz isl3284exhz max3284e thvd8000 sot to transceiver rs rs485 receiver rs422 20mbps 0v | SOT-23 | 5V UART/serial 3V",
+ "embedding_text": "ic-interface-serial.sot-23.5v.uart | IC Interface Serial | 5 ic interface serial parts for 5V, UART/serial, 3V using SOT-23 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | sot interface uart to 5v serial transceiver 3v smd ic rs rs485 receiver rs422 20mbps 0v | SOT-23 | 5V UART/serial 3V",
  "class": "ic.interface.serial"
 }

@@ -5,29 +5,22 @@
  "category_path": [
   "IC"
  ],
- "description": "Cluster of 9 surface-mount IC parts associated with 5V and 5.5V facets across SOIC package footprints.",
+ "description": "9 ic parts for 5V, 5.5V using SOIC footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select based on the required SOIC footprint variant and pin count.",
-  "Filter by preferred library source such as KiCad symbols or JLCPCB library.",
-  "Prioritize Tier A rated parts within the cluster."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SOIC land pattern is intended."
  ],
  "avoid_when": [
-  "The PCB layout requires non-SOIC packages or through-hole components.",
-  "The circuit requires voltages other than the 5V or 5.5V facets."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SOIC."
  ],
  "keywords": [
-  "ic",
   "soic",
-  "smd",
   "5v",
-  "5.5v",
-  "soic-8",
-  "soic-20w",
-  "soic-24",
-  "soic-28w",
-  "p1.27mm",
-  "surface mount",
   "power",
+  "ic",
   "p1",
   "reset",
   "so",
@@ -70,7 +63,7 @@
    "A": 7,
    "B": 2
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -125,6 +118,6 @@
   "digikey-kicad-library/dk_PMIC-Motor-Drivers-Controllers/A3967SLBTR-T",
   "JLCPCB-Kicad-Library/627741/Switch, x2, 1.3A, 2.7-5.5V"
  ],
- "embedding_text": "ic.soic.5v.5-5v | IC | Cluster of 9 surface-mount IC parts associated with 5V and 5.5V facets across SOIC package footprints. | ic soic smd 5v 5.5v soic-8 soic-20w soic-24 soic-28w p1.27mm surface mount power p1 reset so supervisor 27mm 9mm 9x4 microprocessor supervisory circuit battery backup | SOIC | 5V 5.5V",
+ "embedding_text": "ic.soic.5v.5-5v | IC | 9 ic parts for 5V, 5.5V using SOIC footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | soic 5v power ic p1 reset so supervisor 27mm 9mm 9x4 microprocessor supervisory circuit battery backup | SOIC | 5V 5.5V",
  "class": "ic"
 }

@@ -6,44 +6,34 @@
   "Discrete",
   "BJT"
  ],
- "description": "Cluster of 5 tier-A discrete BJT parts in SOT-23 SMD packages tagged 100V, sourced from Alternate-KiCad-Library; includes one part named as a Darlington type.",
+ "description": "5 discrete bjt parts for 100V using SOT-23 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "All 5 entries are tier A with score 100; differentiate by part name/id.",
-  "Confirm exact SOT-23 footprint match before layout.",
-  "FMMT634 is grouped under a Darlington library path; verify it matches the intended BJT topology.",
-  "Cross-check source trust (single source: Alternate-KiCad-Library) against your project's library policy."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SOT-23 land pattern is intended."
  ],
  "avoid_when": [
-  "Design requires a package other than SOT-23.",
-  "Electrical requirements (current, gain, power) beyond the 100V facet are not confirmed by available part data.",
-  "Symbol-footprint pairing has not been independently verified.",
-  "A part sourced from a library other than Alternate-KiCad-Library is required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SOT-23."
  ],
  "keywords": [
-  "sot-23",
-  "bjt",
-  "transistor",
-  "discrete bjt",
-  "100v",
-  "smd",
-  "akl",
-  "alternate-kicad-library",
-  "bss63",
-  "fmmt593",
-  "fmmt634",
-  "pbss8110t",
-  "zxtn25100dfh",
-  "darlington",
-  "tier a",
-  "generated cluster",
   "sot",
+  "transistor",
+  "bjt",
+  "100v",
   "npn",
+  "akl",
   "alternate",
   "kicad",
   "library",
   "discrete",
   "pnp",
-  "1a"
+  "darlington",
+  "bss63",
+  "fmmt593",
+  "1a",
+  "fmmt634"
  ],
  "facts": {
   "package_family": "SOT-23",
@@ -66,7 +56,7 @@
   "tier_counts": {
    "A": 5
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -117,6 +107,6 @@
   "Alternate-KiCad-Library/Transistor_BJT_AKL/PBSS8110T",
   "Alternate-KiCad-Library/Transistor_BJT_AKL/ZXTN25100DFH"
  ],
- "embedding_text": "discrete-bjt.sot-23.100v | Discrete BJT | Cluster of 5 tier-A discrete BJT parts in SOT-23 SMD packages tagged 100V, sourced from Alternate-KiCad-Library; includes one part named as a Darlington type. | sot-23 bjt transistor discrete bjt 100v smd akl alternate-kicad-library bss63 fmmt593 fmmt634 pbss8110t zxtn25100dfh darlington tier a generated cluster sot npn alternate kicad library discrete pnp 1a | SOT-23 | 100V",
+ "embedding_text": "discrete-bjt.sot-23.100v | Discrete BJT | 5 discrete bjt parts for 100V using SOT-23 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | sot transistor bjt 100v npn akl alternate kicad library discrete pnp darlington bss63 fmmt593 1a fmmt634 | SOT-23 | 100V",
  "class": "discrete.bjt"
 }

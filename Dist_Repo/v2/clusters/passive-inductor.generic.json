@@ -6,28 +6,19 @@
   "Passive",
   "Inductor"
  ],
- "description": "Generic passive inductor cluster containing 127 parts across KiCad, Altium, and legacy libraries with package and footprint selection deferred.",
+ "description": "127 passive inductor parts with package chosen later. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Use for schematic capture when footprint and package assignment will be selected later.",
-  "Select by core representation such as standard, ferrite, or iron inductor symbols.",
-  "Review library source and quality tier among tier G and tier C entries."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Select a footprint/package explicitly before placement."
  ],
  "avoid_when": [
-  "A pre-assigned footprint or specific package dimension is required immediately for layout.",
-  "A fully qualified manufacturer part with specific electrical ratings is needed.",
-  "A verified tier A component is strictly required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review."
  ],
  "keywords": [
   "inductor",
   "passive",
-  "passive inductor",
-  "generic inductor",
-  "ferrite",
-  "iron",
-  "l_ferrite",
-  "l_iron",
-  "package chosen later",
-  "kicad symbols",
   "package",
   "chosen",
   "later",
@@ -63,7 +54,7 @@
    "C": 18,
    "G": 109
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -236,6 +227,6 @@
   "dist-legacy/Transformer_Toroid_Horizontal_D18.0mm",
   "dist-legacy/Transformer_Toroid_Horizontal_D9.0mm_Amidon-T30"
  ],
- "embedding_text": "passive-inductor.generic | Passive Inductor | Generic passive inductor cluster containing 127 parts across KiCad, Altium, and legacy libraries with package and footprint selection deferred. | inductor passive passive inductor generic inductor ferrite iron l_ferrite l_iron package chosen later kicad symbols package chosen later pins 0mm commonmode toroid choke transformer schaffner commonmodechoke vertical 00mm bourns | package chosen later | ",
+ "embedding_text": "passive-inductor.generic | Passive Inductor | 127 passive inductor parts with package chosen later. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | inductor passive package chosen later pins 0mm commonmode toroid choke transformer schaffner commonmodechoke vertical 00mm bourns | package chosen later | ",
  "class": "passive.inductor"
 }

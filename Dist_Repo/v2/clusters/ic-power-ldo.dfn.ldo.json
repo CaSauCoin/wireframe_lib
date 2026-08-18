@@ -7,42 +7,34 @@
   "Power",
   "Linear Regulator"
  ],
- "description": "A cluster of 5 surface-mount LDO linear regulator ICs in DFN packages from KiCad symbols, spanning quality tiers A and B.",
+ "description": "5 ic power linear regulator parts for LDO using DFN footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Match specific DFN footprint requirements, such as DFN-6, DFN-8, or DFN-10.",
-  "Filter by part quality tier (Tier A or Tier B).",
-  "Select specific models like LT3045xDD, LT3080xDD, NCP133AMX100TCG, LDK130-ADJ_DFN6, or AP7370-50FDC."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a DFN land pattern is intended."
  ],
  "avoid_when": [
-  "Through-hole component mounting is required.",
-  "The design requires package families other than DFN.",
-  "Linear regulator or LDO functionality is not needed."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than DFN."
  ],
  "keywords": [
-  "ic",
-  "power",
-  "linear regulator",
-  "ldo",
   "dfn",
-  "smd",
-  "lt3045xdd",
-  "lt3080xdd",
-  "ncp133amx100tcg",
-  "ldk130-adj_dfn6",
-  "ap7370-50fdc",
-  "dfn-10-1ep",
-  "dfn-8-1ep",
-  "dfn-6-1ep",
   "linear",
   "regulator",
   "low",
+  "ldo",
   "p0",
+  "ic",
+  "power",
   "adjustable",
   "noise",
   "1ep",
   "ep1",
   "nolead",
-  "dropout"
+  "dropout",
+  "output",
+  "positive"
  ],
  "facts": {
   "package_family": "DFN",
@@ -70,7 +62,7 @@
    "A": 2,
    "B": 3
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -121,6 +113,6 @@
   "kicad-symbols/Regulator_Linear/LDK130-ADJ_DFN6",
   "kicad-symbols/Regulator_Linear/AP7370-50FDC"
  ],
- "embedding_text": "ic-power-ldo.dfn.ldo | IC Power Linear Regulator | A cluster of 5 surface-mount LDO linear regulator ICs in DFN packages from KiCad symbols, spanning quality tiers A and B. | ic power linear regulator ldo dfn smd lt3045xdd lt3080xdd ncp133amx100tcg ldk130-adj_dfn6 ap7370-50fdc dfn-10-1ep dfn-8-1ep dfn-6-1ep linear regulator low p0 adjustable noise 1ep ep1 nolead dropout | DFN | LDO",
+ "embedding_text": "ic-power-ldo.dfn.ldo | IC Power Linear Regulator | 5 ic power linear regulator parts for LDO using DFN footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | dfn linear regulator low ldo p0 ic power adjustable noise 1ep ep1 nolead dropout output positive | DFN | LDO",
  "class": "ic.power.ldo"
 }

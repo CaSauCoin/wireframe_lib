@@ -6,32 +6,23 @@
   "Discrete",
   "Diode"
  ],
- "description": "Discrete diode cluster containing 2 surface-mount parts using SMF package family and SMF or SMF DO-219AB footprints.",
+ "description": "2 discrete diode parts using SMF footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when an SMF or SMF DO-219AB surface-mount footprint is required.",
-  "Check part quality tier (Tier B or Tier C) and source library.",
-  "Verify footprint details against target discrete diode layout requirements."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SMF land pattern is intended."
  ],
  "avoid_when": [
-  "The design requires non-SMD mounting or a package family other than SMF.",
-  "Footprint requirements differ from SMF or SMF DO-219AB.",
-  "Parts with higher quality tiers than Tier B are required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SMF."
  ],
  "keywords": [
   "smf",
-  "do-219ab",
-  "smf do-219ab",
-  "diode",
-  "discrete diode",
-  "discrete",
-  "smd",
-  "surface mount",
-  "discrete.diode",
-  "tier b",
-  "celestial-altium-library",
-  "dist-legacy",
   "do",
   "219ab",
+  "diode",
+  "discrete",
   "pins",
   "surface",
   "mount",
@@ -41,7 +32,8 @@
   "cathode",
   "in",
   "an",
-  "package"
+  "package",
+  "smd"
  ],
  "facts": {
   "package_family": "SMF",
@@ -66,7 +58,7 @@
    "B": 1,
    "C": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -82,6 +74,6 @@
   "dist-legacy/SMF DO-219AB",
   "celestial-altium-library/SMF DO-219AB/SMF_DO-219AB"
  ],
- "embedding_text": "discrete-diode.smf | Discrete Diode | Discrete diode cluster containing 2 surface-mount parts using SMF package family and SMF or SMF DO-219AB footprints. | smf do-219ab smf do-219ab diode discrete diode discrete smd surface mount discrete.diode tier b celestial-altium-library dist-legacy do 219ab pins surface mount with anode and cathode in an package | SMF | ",
+ "embedding_text": "discrete-diode.smf | Discrete Diode | 2 discrete diode parts using SMF footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | smf do 219ab diode discrete pins surface mount with anode and cathode in an package smd | SMF | ",
  "class": "discrete.diode"
 }

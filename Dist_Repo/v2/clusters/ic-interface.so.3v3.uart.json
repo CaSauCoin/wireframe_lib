@@ -6,30 +6,23 @@
   "IC",
   "Interface"
  ],
- "description": "Surface-mount 3.3V UART/serial interface IC cluster in the SO package family containing representative part AM26LS31xNS.",
+ "description": "1 ic interface parts for 3.3V, UART/serial using SO footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when requiring a 3.3V UART or serial interface IC in an SO package.",
-  "Verify footprint compatibility with the SO-16_5.3x10.2mm_P1.27mm land pattern.",
-  "Check symbol assignment and quality tier for the selected part."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SO land pattern is intended."
  ],
  "avoid_when": [
-  "The board layout requires a package other than SO or a through-hole mount.",
-  "The target application requires non-3.3V operating voltage or a non-UART/serial interface.",
-  "Required electrical specifications or tolerance details are not provided by the part entry."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SO."
  ],
  "keywords": [
-  "ic interface",
-  "3.3v",
-  "uart",
-  "serial",
   "so",
-  "smd",
-  "am26ls31xns",
-  "so-16_5.3x10.2mm_p1.27mm",
   "interface",
-  "ic",
   "3v",
   "rs485",
+  "am26ls31xns",
   "32mbps",
   "quad",
   "line",
@@ -64,7 +57,7 @@
   "tier_counts": {
    "B": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -79,6 +72,6 @@
  "part_ids": [
   "kicad-symbols/Interface/AM26LS31xNS"
  ],
- "embedding_text": "ic-interface.so.3v3.uart | IC Interface | Surface-mount 3.3V UART/serial interface IC cluster in the SO package family containing representative part AM26LS31xNS. | ic interface 3.3v uart serial so smd am26ls31xns so-16_5.3x10.2mm_p1.27mm interface ic 3v rs485 32mbps quad line drivers 3x10 2mm p1 27mm driver rs422 differential | SO | 3.3V UART/serial",
+ "embedding_text": "ic-interface.so.3v3.uart | IC Interface | 1 ic interface parts for 3.3V, UART/serial using SO footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | so interface 3v rs485 am26ls31xns 32mbps quad line drivers 3x10 2mm p1 27mm driver rs422 differential | SO | 3.3V UART/serial",
  "class": "ic.interface"
 }

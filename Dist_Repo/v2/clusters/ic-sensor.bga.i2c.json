@@ -6,32 +6,25 @@
   "IC",
   "Sensor"
  ],
- "description": "I2C temperature sensor ICs in surface-mount BGA packages using DSBGA-6 footprints.",
+ "description": "2 ic sensor parts for I2C using BGA footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Selecting I2C temperature sensor ICs in surface-mount BGA packages.",
-  "Targeting Texas DSBGA-6 0.95x1.488mm 0.4mm pitch footprints.",
-  "Using TMP117xxYBG or TMP119AIYBGR sensor components."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a BGA land pattern is intended."
  ],
  "avoid_when": [
-  "The design requires non-BGA or through-hole packages.",
-  "Interfaces other than I2C are required.",
-  "A non-temperature sensor IC is required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than BGA."
  ],
  "keywords": [
-  "ic",
   "sensor",
-  "temperature sensor",
-  "i2c",
-  "bga",
-  "dsbga",
-  "dsbga-6",
-  "smd",
-  "tmp117xxybg",
-  "tmp119aiybgr",
-  "texas dsbga-6",
   "temperature",
+  "i2c",
   "digital",
   "smbus",
+  "dsbga",
+  "bga",
   "with",
   "interface",
   "texas",
@@ -39,7 +32,8 @@
   "488mm",
   "layout2x3",
   "p0",
-  "4mm"
+  "4mm",
+  "ic"
  ],
  "facts": {
   "package_family": "BGA",
@@ -62,7 +56,7 @@
   "tier_counts": {
    "B": 2
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -86,6 +80,6 @@
   "kicad-symbols/Sensor_Temperature/TMP117xxYBG",
   "kicad-symbols/Sensor_Temperature/TMP119AIYBGR"
  ],
- "embedding_text": "ic-sensor.bga.i2c | IC Sensor | I2C temperature sensor ICs in surface-mount BGA packages using DSBGA-6 footprints. | ic sensor temperature sensor i2c bga dsbga dsbga-6 smd tmp117xxybg tmp119aiybgr texas dsbga-6 temperature digital smbus with interface texas 95x1 488mm layout2x3 p0 4mm | BGA | I2C",
+ "embedding_text": "ic-sensor.bga.i2c | IC Sensor | 2 ic sensor parts for I2C using BGA footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | sensor temperature i2c digital smbus dsbga bga with interface texas 95x1 488mm layout2x3 p0 4mm ic | BGA | I2C",
  "class": "ic.sensor"
 }

@@ -6,28 +6,20 @@
   "Passive",
   "Resistor"
  ],
- "description": "Cluster of surface-mount passive resistors in the 1808 package family featuring standard, polarized, and semiconductor footprints.",
+ "description": "3 passive resistor parts using 1808 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Verify whether the design requires a standard 1808, 1808 Polarized, or 1808 Semiconductor footprint variant.",
-  "Confirm part details and library footprint definitions prior to layout, noting all parts are tier C.",
-  "Choose when an SMD 1808 package footprint is specifically required."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a 1808 land pattern is intended."
  ],
  "avoid_when": [
-  "The board layout requires a package size other than 1808 or a through-hole mount.",
-  "Components other than passive resistors are needed.",
-  "Designs require pre-verified tier A or planner-visible parts."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than 1808."
  ],
  "keywords": [
   "passive",
   "resistor",
-  "1808",
-  "smd",
-  "surface mount",
-  "passive.resistor",
-  "1808 polarized",
-  "1808 semiconductor",
-  "passive resistor",
-  "francescosacco-hardwarelibrary",
   "polarized",
   "semiconductor",
   "surface",
@@ -58,7 +50,7 @@
   "tier_counts": {
    "C": 3
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
@@ -66,6 +58,6 @@
   "francescosacco-hardwarelibrary/1808 Polarized/1808_Polarized",
   "francescosacco-hardwarelibrary/1808 Semiconductor/1808_Semiconductor"
  ],
- "embedding_text": "passive-resistor.1808 | Passive Resistor | Cluster of surface-mount passive resistors in the 1808 package family featuring standard, polarized, and semiconductor footprints. | passive resistor 1808 smd surface mount passive.resistor 1808 polarized 1808 semiconductor passive resistor francescosacco-hardwarelibrary polarized semiconductor surface mount pad mm pitch pins | 1808 | ",
+ "embedding_text": "passive-resistor.1808 | Passive Resistor | 3 passive resistor parts using 1808 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | passive resistor polarized semiconductor surface mount pad mm pitch pins | 1808 | ",
  "class": "passive.resistor"
 }

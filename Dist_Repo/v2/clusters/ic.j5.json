@@ -5,28 +5,22 @@
  "category_path": [
   "IC"
  ],
- "description": "This cluster contains 2 integrated circuit parts in the J5 package family with unknown mount type and J5-C2T or J5-D2T footprints.",
+ "description": "2 ic parts using J5 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Verify compatibility with J5-C2T or J5-D2T footprint land patterns.",
-  "Evaluate part suitability given that all entries are quality tier C.",
-  "Confirm physical mounting requirements as the mount type is unknown."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a J5 land pattern is intended."
  ],
  "avoid_when": [
-  "The PCB design requires footprints other than J5-C2T or J5-D2T.",
-  "Parts with planner visibility or higher quality tier ratings are required.",
-  "Assembly rules require a defined surface or through-hole mount type."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than J5."
  ],
  "keywords": [
-  "ic",
   "j5",
-  "j5-c2t",
-  "j5-d2t",
   "c2t",
   "d2t",
-  "integrated circuit",
-  "package family j5",
-  "tier c",
-  "dist-legacy",
+  "ic",
   "pad",
   "mm",
   "pitch",
@@ -52,13 +46,13 @@
   "tier_counts": {
    "C": 2
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
   "dist-legacy/J5-C2T",
   "dist-legacy/J5-D2T"
  ],
- "embedding_text": "ic.j5 | IC | This cluster contains 2 integrated circuit parts in the J5 package family with unknown mount type and J5-C2T or J5-D2T footprints. | ic j5 j5-c2t j5-d2t c2t d2t integrated circuit package family j5 tier c dist-legacy pad mm pitch pins | J5 | ",
+ "embedding_text": "ic.j5 | IC | 2 ic parts using J5 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | j5 c2t d2t ic pad mm pitch pins | J5 | ",
  "class": "ic"
 }

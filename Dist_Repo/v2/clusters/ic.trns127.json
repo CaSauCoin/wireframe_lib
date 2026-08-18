@@ -5,29 +5,20 @@
  "category_path": [
   "IC"
  ],
- "description": "IC component cluster containing 9 surface-mount (SMD) parts using TRNS127 package family footprints from the chilaboard-altium-library.",
+ "description": "9 ic parts using TRNS127 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when requiring surface-mount (SMD) integrated circuit components with TRNS127 footprint variants.",
-  "Verify footprint compatibility with specific variants such as TRNS127_6_S380CW, TRNS127_6T_5X5, or TRNS127_6_350X310.",
-  "Note that parts in this cluster originate from chilaboard-altium-library and are classified under quality tier C."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a TRNS127 land pattern is intended."
  ],
  "avoid_when": [
-  "Through-hole mounting is required.",
-  "The board layout requires a package family other than TRNS127.",
-  "Components with planner visibility or quality tier ratings above tier C are required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than TRNS127."
  ],
  "keywords": [
-  "ic",
   "trns127",
-  "smd",
-  "surface mount",
-  "chilaboard-altium-library",
-  "trns127_6_s380cw",
-  "trns127_6t_5x5",
-  "trns127_6_350x310",
-  "trns127_6_5x5",
-  "trns127_6_s380",
-  "tier c",
+  "ic",
   "s380cw",
   "5x5",
   "tcm1",
@@ -40,7 +31,8 @@
   "63ax",
   "6t",
   "350x310",
-  "s380"
+  "s380",
+  "83x"
  ],
  "facts": {
   "package_family": "TRNS127",
@@ -65,7 +57,7 @@
   "tier_counts": {
    "C": 9
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
@@ -79,6 +71,6 @@
   "chilaboard-altium-library/TRNS127_6_S380/TRNS127_6_S380",
   "chilaboard-altium-library/TRNS127_6_S380CW/TRNS127_6_S380CW"
  ],
- "embedding_text": "ic.trns127 | IC | IC component cluster containing 9 surface-mount (SMD) parts using TRNS127 package family footprints from the chilaboard-altium-library. | ic trns127 smd surface mount chilaboard-altium-library trns127_6_s380cw trns127_6t_5x5 trns127_6_350x310 trns127_6_5x5 trns127_6_s380 tier c s380cw 5x5 tcm1 surface mount pad mm pitch pins 63ax 6t 350x310 s380 | TRNS127 | ",
+ "embedding_text": "ic.trns127 | IC | 9 ic parts using TRNS127 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | trns127 ic s380cw 5x5 tcm1 surface mount pad mm pitch pins 63ax 6t 350x310 s380 83x | TRNS127 | ",
  "class": "ic"
 }

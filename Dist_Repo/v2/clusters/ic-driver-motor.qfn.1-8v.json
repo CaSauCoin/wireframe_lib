@@ -7,33 +7,23 @@
   "Driver",
   "Motor"
  ],
- "description": "Surface-mount motor driver IC cluster for 1.8V applications in QFN packages, featuring VQFN-16-1EP footprints across four Tier B KiCad symbol entries.",
+ "description": "4 ic driver motor parts for 1.8V using QFN footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when requiring a 1.8V surface-mount motor driver IC.",
-  "Choose for board layouts requiring a QFN or VQFN-16-1EP footprint.",
-  "Select from STSPIN220, STSPIN230, STSPIN233, and STSPIN240 part options."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a QFN land pattern is intended."
  ],
  "avoid_when": [
-  "Do not use if the layout requires non-QFN or through-hole packaging.",
-  "Avoid when operating voltages other than 1.8V are required.",
-  "Avoid if Tier A quality verified components are required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than QFN."
  ],
  "keywords": [
-  "ic",
   "driver",
   "motor",
-  "ic driver motor",
-  "1.8v",
+  "8v",
   "qfn",
   "vqfn",
-  "vqfn-16-1ep",
-  "smd",
-  "stspin220",
-  "stspin230",
-  "stspin233",
-  "stspin240",
-  "kicad-symbols",
-  "8v",
   "phase",
   "low",
   "voltage",
@@ -42,7 +32,9 @@
   "input",
   "3arms",
   "output",
-  "rdson"
+  "rdson",
+  "per",
+  "typical"
  ],
  "facts": {
   "package_family": "QFN",
@@ -65,7 +57,7 @@
   "tier_counts": {
    "B": 4
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -107,6 +99,6 @@
   "kicad-symbols/Driver_Motor/STSPIN233",
   "kicad-symbols/Driver_Motor/STSPIN240"
  ],
- "embedding_text": "ic-driver-motor.qfn.1-8v | IC Driver Motor | Surface-mount motor driver IC cluster for 1.8V applications in QFN packages, featuring VQFN-16-1EP footprints across four Tier B KiCad symbol entries. | ic driver motor ic driver motor 1.8v qfn vqfn vqfn-16-1ep smd stspin220 stspin230 stspin233 stspin240 kicad-symbols 8v phase low voltage to 10v input 3arms output rdson | QFN | 1.8V",
+ "embedding_text": "ic-driver-motor.qfn.1-8v | IC Driver Motor | 4 ic driver motor parts for 1.8V using QFN footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | driver motor 8v qfn vqfn phase low voltage to 10v input 3arms output rdson per typical | QFN | 1.8V",
  "class": "ic.driver.motor"
 }

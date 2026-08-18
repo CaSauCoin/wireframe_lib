@@ -5,42 +5,34 @@
  "category_path": [
   "IC"
  ],
- "description": "IC component cluster featuring 9 tier C parts using BreakLine package family footprints with 0.5mm hole diameter and 0.85mm or 1.7mm pitch.",
+ "description": "9 ic parts using BreakLine footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select based on required hole count and pitch among BreakLine footprints from 1h to 11h.",
-  "Verify compatibility with tier C quality parts sourced from legacy distribution.",
-  "Choose when a BreakLine package footprint with 0.5mm hole diameter is needed."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a BreakLine land pattern is intended."
  ],
  "avoid_when": [
-  "Avoid when the PCB layout requires a package family other than BreakLine.",
-  "Avoid if parts higher than quality tier C are required.",
-  "Avoid when planner-visible components are required, as visible count is zero."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than BreakLine."
  ],
  "keywords": [
-  "ic",
   "breakline",
-  "ic breakline",
-  "breakline footprint",
-  "d0.5mm",
-  "p0.85mm",
-  "p1.7mm",
-  "11h",
-  "1h",
-  "2h",
-  "3h",
-  "5h",
-  "7h",
-  "9h",
-  "tier c",
   "5mm",
   "d0",
   "85mm",
   "p0",
+  "ic",
   "break",
   "line",
   "7mm",
+  "2h",
   "p1",
-  "package"
+  "3h",
+  "package",
+  "mousebite",
+  "edge",
+  "stamp"
  ],
  "facts": {
   "package_family": "BreakLine",
@@ -69,7 +61,7 @@
   "tier_counts": {
    "C": 9
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
@@ -83,6 +75,6 @@
   "dist-legacy/BreakLine_7h_D0.5mm_P0.85mm",
   "dist-legacy/BreakLine_9h_D0.5mm_P0.85mm"
  ],
- "embedding_text": "ic.breakline | IC | IC component cluster featuring 9 tier C parts using BreakLine package family footprints with 0.5mm hole diameter and 0.85mm or 1.7mm pitch. | ic breakline ic breakline breakline footprint d0.5mm p0.85mm p1.7mm 11h 1h 2h 3h 5h 7h 9h tier c 5mm d0 85mm p0 break line 7mm p1 package | BreakLine | ",
+ "embedding_text": "ic.breakline | IC | 9 ic parts using BreakLine footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | breakline 5mm d0 85mm p0 ic break line 7mm 2h p1 3h package mousebite edge stamp | BreakLine | ",
  "class": "ic"
 }

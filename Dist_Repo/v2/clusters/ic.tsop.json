@@ -5,34 +5,22 @@
  "category_path": [
   "IC"
  ],
- "description": "Integrated circuit cluster containing 31 SMD parts in TSOP package variants including TSOP-5, TSOP-6, TSOP-14, TSOP-24, TSOP-28, TSOP-32, TSOP-44, and TSOP-48 footprints.",
+ "description": "31 ic parts using TSOP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select based on required pin count and TSOP footprint dimensions such as pitch and body size.",
-  "Prefer Tier A or Tier B parts for verified library symbols and footprints.",
-  "Confirm surface mount (SMD) packaging compatibility with your target PCB layout."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a TSOP land pattern is intended."
  ],
  "avoid_when": [
-  "The design requires through-hole mounting or non-TSOP component packaging.",
-  "The exact TSOP pin count, body size, or lead pitch is not supported by available footprints.",
-  "Using Tier C parts without verifying pinout and footprint compatibility."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than TSOP."
  ],
  "keywords": [
-  "ic",
   "tsop",
-  "smd",
-  "tsop-5",
-  "tsop-6",
-  "tsop-14",
-  "tsop-24",
-  "tsop-28",
-  "tsop-32",
-  "tsop-44",
-  "tsop-48",
-  "tsop-i",
-  "tsop-ii",
-  "surface mount",
   "p0",
   "5mm",
+  "ic",
   "pins",
   "package",
   "pad",
@@ -40,7 +28,11 @@
   "pitch",
   "mount",
   "surface",
-  "www"
+  "www",
+  "jedec",
+  "mo",
+  "pin",
+  "so"
  ],
  "facts": {
   "package_family": "TSOP",
@@ -77,7 +69,7 @@
    "B": 1,
    "C": 26
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -154,6 +146,6 @@
   "dist-legacy/TSOP-I-56_18.4x14mm_P0.5mm",
   "dist-legacy/TSOP-II-40-44_10.16x18.37mm_P0.8mm"
  ],
- "embedding_text": "ic.tsop | IC | Integrated circuit cluster containing 31 SMD parts in TSOP package variants including TSOP-5, TSOP-6, TSOP-14, TSOP-24, TSOP-28, TSOP-32, TSOP-44, and TSOP-48 footprints. | ic tsop smd tsop-5 tsop-6 tsop-14 tsop-24 tsop-28 tsop-32 tsop-44 tsop-48 tsop-i tsop-ii surface mount p0 5mm pins package pad mm pitch mount surface www | TSOP | ",
+ "embedding_text": "ic.tsop | IC | 31 ic parts using TSOP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | tsop p0 5mm ic pins package pad mm pitch mount surface www jedec mo pin so | TSOP | ",
  "class": "ic"
 }

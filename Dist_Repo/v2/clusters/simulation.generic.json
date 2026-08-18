@@ -5,32 +5,23 @@
  "category_path": [
   "Simulation"
  ],
- "description": "A collection of 26 generic SPICE simulation symbols from KiCad without assigned physical footprints.",
+ "description": "26 simulation parts with package chosen later. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Use for SPICE circuit modeling and schematic simulation.",
-  "Select based on the required simulation element such as controlled sources, switches, or generic opamps.",
-  "Assign a physical footprint and real component specifications separately if transitioning to PCB layout."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Select a footprint/package explicitly before placement."
  ],
  "avoid_when": [
-  "A physical hardware component with manufacturer specifications and assigned footprint is required.",
-  "Direct PCB layout without assigning real physical footprints and packages."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review."
  ],
  "keywords": [
   "simulation",
   "spice",
-  "simulation_spice",
-  "bsource",
-  "esource",
-  "gsource",
-  "switch",
-  "opamp",
-  "generic",
-  "source",
-  "kicad-symbols",
-  "circuit simulation",
   "package",
   "chosen",
   "later",
+  "source",
   "voltage",
   "current",
   "for",
@@ -39,7 +30,8 @@
   "frequency",
   "noise",
   "dependent",
-  "controlled"
+  "controlled",
+  "symbol"
  ],
  "facts": {
   "package_family": "package chosen later",
@@ -56,7 +48,7 @@
   "tier_counts": {
    "G": 26
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -128,6 +120,6 @@
   "kicad-symbols/Simulation_SPICE/VTRRANDOM",
   "kicad-symbols/Simulation_SPICE/TLINE"
  ],
- "embedding_text": "simulation.generic | Simulation | A collection of 26 generic SPICE simulation symbols from KiCad without assigned physical footprints. | simulation spice simulation_spice bsource esource gsource switch opamp generic source kicad-symbols circuit simulation package chosen later voltage current for only modulated frequency noise dependent controlled | package chosen later | ",
+ "embedding_text": "simulation.generic | Simulation | 26 simulation parts with package chosen later. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | simulation spice package chosen later source voltage current for only modulated frequency noise dependent controlled symbol | package chosen later | ",
  "class": "simulation"
 }

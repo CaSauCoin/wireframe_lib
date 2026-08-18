@@ -5,31 +5,20 @@
  "category_path": [
   "IC"
  ],
- "description": "Integrated circuit (IC) component cluster featuring 9 tier C parts in the QTO package family across QTO-220 footprints.",
+ "description": "9 ic parts using QTO footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when an IC requiring a QTO package family footprint is needed.",
-  "Match the exact QTO footprint variant such as QTO-220-5 or QTO-220N.",
-  "Verify part details as all entries in this cluster are quality tier C."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a QTO land pattern is intended."
  ],
  "avoid_when": [
-  "The board layout requires a package family other than QTO.",
-  "Planner-visible parts or quality tiers higher than C are required.",
-  "Definite mounting specifications are required without prior verification."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than QTO."
  ],
  "keywords": [
-  "ic",
   "qto",
-  "qto-220",
-  "qto-220-5",
-  "qto-220-5-1",
-  "qto-220-5-1h1",
-  "qto-220-5-1h2",
-  "qto-220-5-1n",
-  "qto-220h1",
-  "qto-220h2",
-  "qto-220n",
-  "qto-220n2",
-  "integrated circuit",
+  "ic",
   "pad",
   "mm",
   "pitch",
@@ -69,7 +58,7 @@
   "tier_counts": {
    "C": 9
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
@@ -83,6 +72,6 @@
   "dist-legacy/QTO-220N",
   "dist-legacy/QTO-220N2"
  ],
- "embedding_text": "ic.qto | IC | Integrated circuit (IC) component cluster featuring 9 tier C parts in the QTO package family across QTO-220 footprints. | ic qto qto-220 qto-220-5 qto-220-5-1 qto-220-5-1h1 qto-220-5-1h2 qto-220-5-1n qto-220h1 qto-220h2 qto-220n qto-220n2 integrated circuit pad mm pitch pins 1h1 1h2 1n 220h1 220h2 220n 220n2 | QTO | ",
+ "embedding_text": "ic.qto | IC | 9 ic parts using QTO footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | qto ic pad mm pitch pins 1h1 1h2 1n 220h1 220h2 220n 220n2 | QTO | ",
  "class": "ic"
 }

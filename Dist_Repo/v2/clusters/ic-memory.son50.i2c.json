@@ -6,38 +6,31 @@
   "IC",
   "Memory"
  ],
- "description": "Surface-mount I2C EEPROM memory ICs in the SON50 package family using the SON50_8T_2030 footprint.",
+ "description": "5 ic memory parts for I2C using SON50 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when requiring an SMD I2C EEPROM memory IC in a SON50 package.",
-  "Choose among specific part options like 24AA32, 24FC64, M24256, M24512, or M24C02.",
-  "Ensure PCB layout compatibility with the SON50_8T_2030 footprint."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SON50 land pattern is intended."
  ],
  "avoid_when": [
-  "Do not use if a footprint or package family other than SON50_8T_2030 is required.",
-  "Do not use if a bus interface other than I2C is needed.",
-  "Avoid when through-hole mounting is required instead of SMD."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SON50."
  ],
  "keywords": [
-  "ic",
-  "memory",
   "i2c",
   "eeprom",
-  "son50",
-  "son50_8t_2030",
   "dfn8",
-  "smd",
-  "ic.memory",
-  "24aa32",
-  "24fc64",
-  "m24256",
-  "m24512",
-  "m24c02",
+  "memory",
+  "ic",
+  "son50",
   "in",
   "an",
   "package",
   "8t",
   "pin",
   "dfn",
+  "24aa32",
   "address",
   "write",
   "and"
@@ -63,7 +56,7 @@
   "tier_counts": {
    "B": 5
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -114,6 +107,6 @@
   "chilaboard-altium-library/EEPROM_I2C_M24512_DFN8/EEPROM_I2C_M24512_DFN8",
   "chilaboard-altium-library/EEPROM_I2C_M24C02_DFN8/EEPROM_I2C_M24C02_DFN8"
  ],
- "embedding_text": "ic-memory.son50.i2c | IC Memory | Surface-mount I2C EEPROM memory ICs in the SON50 package family using the SON50_8T_2030 footprint. | ic memory i2c eeprom son50 son50_8t_2030 dfn8 smd ic.memory 24aa32 24fc64 m24256 m24512 m24c02 in an package 8t pin dfn address write and | SON50 | I2C",
+ "embedding_text": "ic-memory.son50.i2c | IC Memory | 5 ic memory parts for I2C using SON50 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | i2c eeprom dfn8 memory ic son50 in an package 8t pin dfn 24aa32 address write and | SON50 | I2C",
  "class": "ic.memory"
 }

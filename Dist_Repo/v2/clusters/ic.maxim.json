@@ -5,30 +5,21 @@
  "category_path": [
   "IC"
  ],
- "description": "Integrated circuit cluster of 39 tier-C parts with surface-mount and unknown mounting using MAXIM package footprints including TDFN, WLP, WSON, WLCSP, OLGA, and MSOP.",
+ "description": "39 ic parts using MAXIM footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Verify land pattern requirements against listed MAXIM footprints such as TDFN, WLP, WSON, OLGA, WLCSP, or MSOP uMAX.",
-  "Select when surface-mount (SMD) packaging is required.",
-  "Check source data from celestial-altium-library or dist-legacy entries."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a MAXIM land pattern is intended."
  ],
  "avoid_when": [
-  "The PCB layout requires package footprints outside the MAXIM footprint family.",
-  "Through-hole mounting is strictly required.",
-  "Tier C parts require review before selection in production designs."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than MAXIM."
  ],
  "keywords": [
-  "ic",
   "maxim",
   "tdfn",
-  "wlp",
-  "wson",
-  "wlcsp",
-  "olga",
-  "msop",
-  "umax",
-  "smd",
-  "surface mount",
-  "footprint",
+  "ic",
   "p0",
   "3x3mm",
   "pitch",
@@ -36,6 +27,7 @@
   "mm",
   "pins",
   "5mm",
+  "wlp",
   "1ep",
   "ep1",
   "package",
@@ -74,7 +66,7 @@
   "tier_counts": {
    "C": 39
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
@@ -118,6 +110,6 @@
   "dist-legacy/Maxim_TDFN-12-1EP_3x3mm_P0.5mm_EP1.7x2.5mm",
   "dist-legacy/Maxim_TDFN-6-1EP_3x3mm_P0.95mm_EP1.5x2.3mm"
  ],
- "embedding_text": "ic.maxim | IC | Integrated circuit cluster of 39 tier-C parts with surface-mount and unknown mounting using MAXIM package footprints including TDFN, WLP, WSON, WLCSP, OLGA, and MSOP. | ic maxim tdfn wlp wson wlcsp olga msop umax smd surface mount footprint p0 3x3mm pitch pad mm pins 5mm 1ep ep1 package surface mount | MAXIM | ",
+ "embedding_text": "ic.maxim | IC | 39 ic parts using MAXIM footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | maxim tdfn ic p0 3x3mm pitch pad mm pins 5mm wlp 1ep ep1 package surface mount | MAXIM | ",
  "class": "ic"
 }

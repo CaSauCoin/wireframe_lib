@@ -6,32 +6,22 @@
   "IC",
   "Logic"
  ],
- "description": "Logic IC cluster of two 10V parts in SOT packaging featuring Darlington and pre-biased NPN+PNP transistors with SMD and through-hole mounting options.",
+ "description": "2 ic logic parts for 10V using SOT footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when needing 10V logic components in SOT packaging.",
-  "Choose between single-channel Darlington (BSP52T3G) and pre-biased NPN+PNP (MUN5330DW1T1G) configurations.",
-  "Verify matching SOT-223-3 or SOT-363 footprint dimensions."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SOT land pattern is intended."
  ],
  "avoid_when": [
-  "Avoid if the application requires operational ratings outside 10V.",
-  "Do not use if footprints other than SOT-223-3 or SOT-363 are required.",
-  "Avoid when tier A parts or non-SOT package families are required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SOT."
  ],
  "keywords": [
-  "ic logic",
   "sot",
   "10v",
-  "darlington",
-  "bsp52t3g",
   "npn",
-  "pnp",
-  "pre-biased",
-  "mun5330dw1t1g",
-  "sot-223-3",
-  "sot-363",
-  "smd",
-  "through_hole",
-  "transistor",
+  "darlington",
   "transistors",
   "rohs",
   "l6",
@@ -41,7 +31,9 @@
   "br",
   "footprint",
   "ic",
-  "logic"
+  "logic",
+  "pnp",
+  "pre"
  ],
  "facts": {
   "package_family": "SOT",
@@ -66,7 +58,7 @@
   "tier_counts": {
    "B": 2
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -90,6 +82,6 @@
   "JLCPCB-Kicad-Library/463680/Darlington Transistor, 1 Channel, BSP52T3G",
   "JLCPCB-Kicad-Library/463100/NPN + PNP, Pre Biased, MUN5330DW1T1G"
  ],
- "embedding_text": "ic-logic.sot.10v | IC Logic | Logic IC cluster of two 10V parts in SOT packaging featuring Darlington and pre-biased NPN+PNP transistors with SMD and through-hole mounting options. | ic logic sot 10v darlington bsp52t3g npn pnp pre-biased mun5330dw1t1g sot-223-3 sot-363 smd through_hole transistor transistors rohs l6 w3 p2 ls7 br footprint ic logic | SOT | 10V",
+ "embedding_text": "ic-logic.sot.10v | IC Logic | 2 ic logic parts for 10V using SOT footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | sot 10v npn darlington transistors rohs l6 w3 p2 ls7 br footprint ic logic pnp pre | SOT | 10V",
  "class": "ic.logic"
 }

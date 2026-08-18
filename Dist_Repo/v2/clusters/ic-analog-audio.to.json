@@ -7,42 +7,34 @@
   "Analog",
   "Audio"
  ],
- "description": "Analog audio integrated circuits in TO package options (including TO-220 and TO-263) supporting surface-mount and through-hole designs.",
+ "description": "24 ic analog audio parts using TO footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select based on mounting style (SMD or through-hole).",
-  "Match specific TO-220 or TO-263 pin counts and lead pitch requirements.",
-  "Prefer tier A parts for higher quality ratings."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a TO land pattern is intended."
  ],
  "avoid_when": [
-  "The design requires non-TO package footprints.",
-  "Digital audio or non-analog IC functions are required.",
-  "Mounting requirements do not accept SMD or through-hole TO packages."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than TO."
  ],
  "keywords": [
-  "ic",
-  "analog audio",
   "to",
-  "to-220",
-  "to-263",
-  "smd",
-  "through_hole",
-  "staggerodd",
-  "lm1875",
-  "lm3886",
-  "lm4752ts",
-  "lm4755ts",
-  "lm4950ts",
   "audio",
   "amplifier",
   "vertical",
+  "ic",
   "analog",
+  "staggerodd",
   "rm",
   "staggered",
   "type",
   "power",
   "7mm",
   "08mm",
-  "multiwatt"
+  "multiwatt",
+  "lead4",
+  "58mm"
  ],
  "facts": {
   "package_family": "TO",
@@ -72,7 +64,7 @@
    "A": 15,
    "B": 9
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -142,6 +134,6 @@
   "kicad-symbols/Amplifier_Audio/TDA7297",
   "kicad-symbols/Amplifier_Audio/TDA7266M"
  ],
- "embedding_text": "ic-analog-audio.to | IC Analog Audio | Analog audio integrated circuits in TO package options (including TO-220 and TO-263) supporting surface-mount and through-hole designs. | ic analog audio to to-220 to-263 smd through_hole staggerodd lm1875 lm3886 lm4752ts lm4755ts lm4950ts audio amplifier vertical analog rm staggered type power 7mm 08mm multiwatt | TO | ",
+ "embedding_text": "ic-analog-audio.to | IC Analog Audio | 24 ic analog audio parts using TO footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | to audio amplifier vertical ic analog staggerodd rm staggered type power 7mm 08mm multiwatt lead4 58mm | TO | ",
  "class": "ic.analog.audio"
 }

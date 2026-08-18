@@ -5,29 +5,21 @@
  "category_path": [
   "IC"
  ],
- "description": "Integrated circuit component cluster containing one quality tier C part associated with the KFS2 package family and KFS2-M3 footprint.",
+ "description": "1 ic parts using KFS2 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when a component in the KFS2 package family with a KFS2-M3 footprint is required.",
-  "Verify mounting and mechanical specifications before layout as the mount type is listed as unknown.",
-  "Confirm suitability for applications accepting quality tier C legacy distributor entries."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a KFS2 land pattern is intended."
  ],
  "avoid_when": [
-  "The board layout requires a package family other than KFS2.",
-  "Footprints other than KFS2-M3 are required.",
-  "Quality tier C parts or unverified mount specifications do not meet design constraints."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than KFS2."
  ],
  "keywords": [
-  "ic",
   "kfs2",
-  "kfs2-m3",
-  "kfs2 package",
-  "kfs2 footprint",
-  "integrated circuit",
-  "tier c",
-  "dist-legacy",
-  "kfs2 m3",
-  "ic kfs2",
   "m3",
+  "ic",
   "pad",
   "pins"
  ],
@@ -50,12 +42,12 @@
   "tier_counts": {
    "C": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
   "dist-legacy/KFS2-M3"
  ],
- "embedding_text": "ic.kfs2 | IC | Integrated circuit component cluster containing one quality tier C part associated with the KFS2 package family and KFS2-M3 footprint. | ic kfs2 kfs2-m3 kfs2 package kfs2 footprint integrated circuit tier c dist-legacy kfs2 m3 ic kfs2 m3 pad pins | KFS2 | ",
+ "embedding_text": "ic.kfs2 | IC | 1 ic parts using KFS2 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | kfs2 m3 ic pad pins | KFS2 | ",
  "class": "ic"
 }

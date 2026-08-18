@@ -5,43 +5,33 @@
  "category_path": [
   "Connector"
  ],
- "description": "Cluster of 10 Tag-Connect style connector parts (TC2030, TC2050, TC2070 footprints, 2x03/2x05/2x07, 1.27mm pitch) for ARM SWD/debug programming interfaces; all entries are tier B or C, review status generated.",
+ "description": "10 connector parts using Tag footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Match the exact Tag-Connect footprint variant (TC2030, TC2050, or TC2070) to the required pin count",
-  "Choose between FP (full/retention pattern), NL (no-legs), and NL-with-bottom-clip variants based on board mounting need",
-  "No tier A entries exist in this cluster; all parts are tier B or C",
-  "Confirm ARM SWD pin mapping matches your target MCU before use"
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a Tag land pattern is intended."
  ],
  "avoid_when": [
-  "A tier A or manufacturer-verified part is required",
-  "The board layout needs a connector footprint other than Tag-Connect",
-  "The required pad count or pitch doesn't match the available 2x03/2x05/2x07 at 1.27mm variants",
-  "A reviewed (non-generated) part record is required"
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than Tag."
  ],
  "keywords": [
   "tag",
-  "tag-connect",
-  "tag connect",
-  "idc",
-  "swd",
-  "arm swd",
-  "programming",
-  "debug connector",
-  "header",
-  "tc2030",
-  "tc2050",
-  "tc2070",
-  "1.27mm",
-  "vertical",
-  "connector",
-  "fp",
-  "nl",
-  "pogo pin",
   "connect",
+  "idc",
   "p1",
   "27mm",
+  "vertical",
+  "connector",
+  "tc2050",
   "pins",
+  "fp",
+  "nl",
   "2x05",
+  "programming",
+  "header",
+  "tc2030",
   "pogo"
  ],
  "facts": {
@@ -70,7 +60,7 @@
    "B": 5,
    "C": 5
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -126,6 +116,6 @@
   "dist-legacy/Tag-Connect_TC2050-IDC-NL_2x05_P1.27mm_Vertical_with_bottom_clip",
   "dist-legacy/Tag-Connect_TC2070-IDC-FP_2x07_P1.27mm_Vertical"
  ],
- "embedding_text": "connector.tag | Connector | Cluster of 10 Tag-Connect style connector parts (TC2030, TC2050, TC2070 footprints, 2x03/2x05/2x07, 1.27mm pitch) for ARM SWD/debug programming interfaces; all entries are tier B or C, review status generated. | tag tag-connect tag connect idc swd arm swd programming debug connector header tc2030 tc2050 tc2070 1.27mm vertical connector fp nl pogo pin connect p1 27mm pins 2x05 pogo | Tag | ",
+ "embedding_text": "connector.tag | Connector | 10 connector parts using Tag footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | tag connect idc p1 27mm vertical connector tc2050 pins fp nl 2x05 programming header tc2030 pogo | Tag | ",
  "class": "connector"
 }

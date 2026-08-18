@@ -7,30 +7,23 @@
   "Interface",
   "CAN"
  ],
- "description": "Surface-mount CAN interface ICs with SPI functionality available in 28-pin QFN and VQFN packages.",
+ "description": "2 ic interface can parts for SPI, CAN using QFN footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when requiring a surface-mount CAN interface IC with SPI.",
-  "Choose between QFN-28 6x6mm (0.65mm pitch) and VQFN-28 5x5mm (0.5mm pitch) footprints.",
-  "Prefer Tier A parts like MCP25625x-x-ML over Tier B options."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a QFN land pattern is intended."
  ],
  "avoid_when": [
-  "Through-hole mounting or package families other than QFN are required.",
-  "Interfaces other than CAN and SPI are required.",
-  "Required electrical specifications and ratings are not explicitly verified."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than QFN."
  ],
  "keywords": [
-  "ic",
-  "interface",
   "can",
+  "interface",
   "spi",
-  "qfn",
   "vqfn",
-  "smd",
-  "ic.interface.can",
-  "mcp25625x-x-ml",
-  "mcp251863t-e-9px",
-  "qfn-28-1ep",
-  "vqfn-28-1ep",
+  "qfn",
   "ml",
   "controller",
   "transceiver",
@@ -40,6 +33,7 @@
   "p0",
   "25mm",
   "nolead",
+  "ic",
   "fd"
  ],
  "facts": {
@@ -66,7 +60,7 @@
    "A": 1,
    "B": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -90,6 +84,6 @@
   "kicad-symbols/Interface_CAN_LIN/MCP25625x-x-ML",
   "kicad-symbols/Interface_CAN_LIN/MCP251863T-E-9PX"
  ],
- "embedding_text": "ic-interface-can.qfn.spi.can | IC Interface CAN | Surface-mount CAN interface ICs with SPI functionality available in 28-pin QFN and VQFN packages. | ic interface can spi qfn vqfn smd ic.interface.can mcp25625x-x-ml mcp251863t-e-9px qfn-28-1ep vqfn-28-1ep ml controller transceiver lin with 1ep p0 25mm nolead fd | QFN | SPI CAN",
+ "embedding_text": "ic-interface-can.qfn.spi.can | IC Interface CAN | 2 ic interface can parts for SPI, CAN using QFN footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | can interface spi vqfn qfn ml controller transceiver lin with 1ep p0 25mm nolead ic fd | QFN | SPI CAN",
  "class": "ic.interface.can"
 }

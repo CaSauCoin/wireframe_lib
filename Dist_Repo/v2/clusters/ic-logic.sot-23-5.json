@@ -6,29 +6,18 @@
   "IC",
   "Logic"
  ],
- "description": "Cluster of 29 logic IC components in SMD SOT-23-5 footprints from KiCad symbols and JLCPCB library sources.",
+ "description": "29 ic logic parts using SOT-23-5 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when designing with surface-mount (SMD) logic ICs in SOT-23-5 packages.",
-  "Prefer Tier A parts available in KiCad symbol libraries for validated symbol definitions.",
-  "Verify specific footprint assignment such as standard SOT-23-5 or SOT-23-5_L2.9-W1.6-P0.95-LS2.8-BR."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SOT-23-5 land pattern is intended."
  ],
  "avoid_when": [
-  "Designs require through-hole mounting or package families other than SOT-23-5.",
-  "Components outside the IC logic category are required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SOT-23-5."
  ],
  "keywords": [
-  "ic logic",
-  "logic ic",
-  "sot-23-5",
-  "smd",
-  "ic.logic",
-  "74xgxx",
-  "nc7sz125m5x",
-  "sn74lv1t125dbv",
-  "sn74lv1t34dbv",
-  "74ahc1g14",
-  "74ahct1g14",
-  "kicad-symbols",
   "sot",
   "single",
   "gate",
@@ -36,11 +25,15 @@
   "logic",
   "ic",
   "to",
+  "smd",
+  "74xgxx",
   "low",
   "voltage",
   "lvc",
   "schmitt",
-  "not"
+  "not",
+  "buffer",
+  "buff"
  ],
  "facts": {
   "package_family": "SOT-23-5",
@@ -64,7 +57,7 @@
    "A": 28,
    "B": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -139,6 +132,6 @@
   "kicad-symbols/74xGxx/SN74LVC1G14DBV",
   "JLCPCB-Kicad-Library/476385/Op-Amp, CBM8091AST5"
  ],
- "embedding_text": "ic-logic.sot-23-5 | IC Logic | Cluster of 29 logic IC components in SMD SOT-23-5 footprints from KiCad symbols and JLCPCB library sources. | ic logic logic ic sot-23-5 smd ic.logic 74xgxx nc7sz125m5x sn74lv1t125dbv sn74lv1t34dbv 74ahc1g14 74ahct1g14 kicad-symbols sot single gate cmos logic ic to low voltage lvc schmitt not | SOT-23-5 | ",
+ "embedding_text": "ic-logic.sot-23-5 | IC Logic | 29 ic logic parts using SOT-23-5 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | sot single gate cmos logic ic to smd 74xgxx low voltage lvc schmitt not buffer buff | SOT-23-5 | ",
  "class": "ic.logic"
 }

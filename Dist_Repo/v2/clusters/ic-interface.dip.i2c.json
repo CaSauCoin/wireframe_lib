@@ -6,42 +6,34 @@
   "IC",
   "Interface"
  ],
- "description": "Through-hole I2C interface integrated circuits in DIP packages, containing 8 parts from KiCad symbols across footprints including DIP-8, DIP-16, DIP-18, DIP-20, and DIP-28.",
+ "description": "8 ic interface parts for I2C using DIP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select based on the required DIP footprint variant, such as DIP-8, DIP-16, DIP-18, DIP-20, or DIP-28.",
-  "Prefer Tier A rated parts over Tier B parts when available.",
-  "Check part specifications from the KiCad symbols library."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a DIP land pattern is intended."
  ],
  "avoid_when": [
-  "Surface-mount assembly or non-through-hole mounting is required.",
-  "Package families other than DIP are needed.",
-  "Interface protocols other than I2C are required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than DIP."
  ],
  "keywords": [
-  "ic",
+  "dip",
   "interface",
   "i2c",
-  "dip",
-  "through_hole",
-  "dip-8",
-  "dip-16",
-  "dip-18",
-  "dip-20",
-  "dip-28",
-  "mcp23008",
-  "mcp23017",
-  "mcp23018",
-  "pcf8574",
-  "kicad-symbols",
   "expander",
   "62mm",
   "expansion",
+  "ic",
   "pdip",
   "bit",
   "w7",
   "tht",
   "dil",
-  "54mm"
+  "54mm",
+  "300mil",
+  "port",
+  "bus"
  ],
  "facts": {
   "package_family": "DIP",
@@ -70,7 +62,7 @@
    "A": 5,
    "B": 3
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -124,6 +116,6 @@
   "kicad-symbols/Interface_Expansion/PCF8584",
   "kicad-symbols/Interface_Expansion/PCF8591"
  ],
- "embedding_text": "ic-interface.dip.i2c | IC Interface | Through-hole I2C interface integrated circuits in DIP packages, containing 8 parts from KiCad symbols across footprints including DIP-8, DIP-16, DIP-18, DIP-20, and DIP-28. | ic interface i2c dip through_hole dip-8 dip-16 dip-18 dip-20 dip-28 mcp23008 mcp23017 mcp23018 pcf8574 kicad-symbols expander 62mm expansion pdip bit w7 tht dil 54mm | DIP | I2C",
+ "embedding_text": "ic-interface.dip.i2c | IC Interface | 8 ic interface parts for I2C using DIP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | dip interface i2c expander 62mm expansion ic pdip bit w7 tht dil 54mm 300mil port bus | DIP | I2C",
  "class": "ic.interface"
 }

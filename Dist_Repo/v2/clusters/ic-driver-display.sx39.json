@@ -7,40 +7,32 @@
   "Driver",
   "Display"
  ],
- "description": "Display driver IC cluster containing 16 through-hole parts using Sx39-1xxxxx footprints from KiCad symbols.",
+ "description": "16 ic driver display parts using Sx39 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when requiring a through-hole display driver part in an Sx39 package.",
-  "Verify compatibility with the Sx39-1xxxxx footprint.",
-  "Choose based on specific part designation such as SA39-11 or SA39-12 variants."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a Sx39 land pattern is intended."
  ],
  "avoid_when": [
-  "Do not use if surface-mount (SMD) mounting is required.",
-  "Avoid when the design requires a footprint other than Sx39-1xxxxx.",
-  "Do not use if the application requires non-display driver IC functionality."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than Sx39."
  ],
  "keywords": [
-  "ic",
-  "driver",
   "display",
-  "sx39",
-  "sx39-1xxxxx",
-  "through hole",
-  "through_hole",
-  "display character",
-  "sa39",
-  "sa39-11ewa",
-  "sa39-11gwa",
-  "sa39-11srwa",
-  "sa39-12ewa",
   "segment",
+  "sa39",
   "sc39",
   "digit",
+  "sx39",
   "led",
   "character",
   "single",
   "common",
   "1xxxxx",
   "one",
+  "ic",
+  "driver",
   "red",
   "anode"
  ],
@@ -63,7 +55,7 @@
   "tier_counts": {
    "B": 16
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -125,6 +117,6 @@
   "kicad-symbols/Display_Character/SC39-12SRWA",
   "kicad-symbols/Display_Character/SC39-12YWA"
  ],
- "embedding_text": "ic-driver-display.sx39 | IC Driver Display | Display driver IC cluster containing 16 through-hole parts using Sx39-1xxxxx footprints from KiCad symbols. | ic driver display sx39 sx39-1xxxxx through hole through_hole display character sa39 sa39-11ewa sa39-11gwa sa39-11srwa sa39-12ewa segment sc39 digit led character single common 1xxxxx one red anode | Sx39 | ",
+ "embedding_text": "ic-driver-display.sx39 | IC Driver Display | 16 ic driver display parts using Sx39 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | display segment sa39 sc39 digit sx39 led character single common 1xxxxx one ic driver red anode | Sx39 | ",
  "class": "ic.driver.display"
 }

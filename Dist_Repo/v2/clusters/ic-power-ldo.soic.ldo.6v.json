@@ -7,42 +7,34 @@
   "Power",
   "Linear Regulator"
  ],
- "description": "Surface-mount 6V low-dropout (LDO) linear regulator IC cluster containing 6 Tier A parts in SOIC-8 (3.9x4.9mm, 1.27mm pitch) footprints.",
+ "description": "6 ic power linear regulator parts for LDO, 6V using SOIC footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select for 6V low-dropout (LDO) surface-mount linear regulator requirements.",
-  "Choose when requiring an SMD package in the SOIC-8 3.9x4.9mm P1.27mm footprint.",
-  "Select when choosing among Tier A MCP1727 series parts."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SOIC land pattern is intended."
  ],
  "avoid_when": [
-  "Do not use if the design requires through-hole mounting instead of SMD.",
-  "Avoid when package footprints other than SOIC-8 (3.9x4.9mm, 1.27mm pitch) are needed.",
-  "Avoid if non-LDO or non-6V power linear regulators are required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SOIC."
  ],
  "keywords": [
-  "ic",
-  "power",
-  "linear regulator",
-  "ldo",
-  "6v",
-  "soic",
-  "soic-8",
-  "smd",
-  "soic-8_3.9x4.9mm_p1.27mm",
-  "mcp1727",
-  "mcp1727-0802xsn",
-  "mcp1727-5002xsn",
-  "kicad-symbols",
   "regulator",
   "low",
+  "soic",
+  "ldo",
   "linear",
   "voltage",
   "quiescent",
   "current",
+  "6v",
   "fixed",
+  "mcp1727",
   "5a",
   "input",
   "output",
-  "330mv"
+  "330mv",
+  "dropout"
  ],
  "facts": {
   "package_family": "SOIC",
@@ -66,7 +58,7 @@
   "tier_counts": {
    "A": 6
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -118,6 +110,6 @@
   "kicad-symbols/Regulator_Linear/MCP1727-5002xSN",
   "kicad-symbols/Regulator_Linear/MCP1727-ADJxSN"
  ],
- "embedding_text": "ic-power-ldo.soic.ldo.6v | IC Power Linear Regulator | Surface-mount 6V low-dropout (LDO) linear regulator IC cluster containing 6 Tier A parts in SOIC-8 (3.9x4.9mm, 1.27mm pitch) footprints. | ic power linear regulator ldo 6v soic soic-8 smd soic-8_3.9x4.9mm_p1.27mm mcp1727 mcp1727-0802xsn mcp1727-5002xsn kicad-symbols regulator low linear voltage quiescent current fixed 5a input output 330mv | SOIC | LDO 6V",
+ "embedding_text": "ic-power-ldo.soic.ldo.6v | IC Power Linear Regulator | 6 ic power linear regulator parts for LDO, 6V using SOIC footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | regulator low soic ldo linear voltage quiescent current 6v fixed mcp1727 5a input output 330mv dropout | SOIC | LDO 6V",
  "class": "ic.power.ldo"
 }

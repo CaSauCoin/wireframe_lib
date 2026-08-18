@@ -5,33 +5,22 @@
  "category_path": [
   "IC"
  ],
- "description": "Surface-mount 24V integrated circuits in the SOT package family featuring SOT-89-3 footprints from Alternate-KiCad-Library.",
+ "description": "3 ic parts for 24V using SOT footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Requires surface-mount (SMD) components in a SOT-89-3 footprint.",
-  "Needs 24V IC components sourced from Alternate-KiCad-Library.",
-  "Choosing among tier A parts such as DI78L24UAB, DI79L24UAB, or L78L24ACU."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SOT land pattern is intended."
  ],
  "avoid_when": [
-  "The circuit requires through-hole mounting instead of SMD.",
-  "A package family other than SOT or footprint other than SOT-89-3 is needed.",
-  "The component voltage requirement is not 24V."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SOT."
  ],
  "keywords": [
-  "ic",
-  "24v",
   "sot",
-  "sot-89-3",
-  "smd",
-  "di78l24uab",
-  "di79l24uab",
-  "l78l24acu",
-  "alternate-kicad-library",
-  "voltage_regulator_akl",
-  "tier a",
-  "24v ic",
-  "sot-89-3 footprint",
   "voltage",
   "regulator",
+  "24v",
   "100ma",
   "terminal",
   "akl",
@@ -40,7 +29,10 @@
   "library",
   "vreg",
   "pmic",
-  "power"
+  "power",
+  "supply",
+  "ic",
+  "78l24"
  ],
  "facts": {
   "package_family": "SOT",
@@ -63,7 +55,7 @@
   "tier_counts": {
    "A": 3
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -96,6 +88,6 @@
   "Alternate-KiCad-Library/Voltage_Regulator_AKL/DI79L24UAB",
   "Alternate-KiCad-Library/Voltage_Regulator_AKL/L78L24ACU"
  ],
- "embedding_text": "ic.sot.24v | IC | Surface-mount 24V integrated circuits in the SOT package family featuring SOT-89-3 footprints from Alternate-KiCad-Library. | ic 24v sot sot-89-3 smd di78l24uab di79l24uab l78l24acu alternate-kicad-library voltage_regulator_akl tier a 24v ic sot-89-3 footprint voltage regulator 100ma terminal akl alternate kicad library vreg pmic power | SOT | 24V",
+ "embedding_text": "ic.sot.24v | IC | 3 ic parts for 24V using SOT footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | sot voltage regulator 24v 100ma terminal akl alternate kicad library vreg pmic power supply ic 78l24 | SOT | 24V",
  "class": "ic"
 }

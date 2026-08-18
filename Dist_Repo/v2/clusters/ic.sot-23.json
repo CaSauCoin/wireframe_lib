@@ -5,42 +5,34 @@
  "category_path": [
   "IC"
  ],
- "description": "Integrated circuit components in the SOT-23 package family, supporting surface-mount footprints including 3-pin, 6-pin, 8-pin, TSOT-23, and wide variants across quality tiers A, B, and C.",
+ "description": "137 ic parts using SOT-23 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Match the required footprint variant, such as SOT-23-3, SOT-23-6, SOT-23-8, or TSOT-23.",
-  "Filter by quality tier preference among available tier A, B, and C entries.",
-  "Verify the footprint source and surface-mount (SMD) land pattern compatibility."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SOT-23 land pattern is intended."
  ],
  "avoid_when": [
-  "The component package required is not part of the SOT-23 or TSOT-23 footprint family.",
-  "Surface-mount (SMD) assembly is not used.",
-  "The required part is outside the IC component class."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SOT-23."
  ],
  "keywords": [
-  "ic",
-  "sot-23",
-  "sot23",
-  "tsot-23",
-  "sot-23-3",
-  "sot-23-6",
-  "sot-23-8",
-  "smd",
-  "surface mount",
-  "sot-23w",
-  "tsot-23-6",
-  "tsot-23-8",
   "sot",
+  "ic",
+  "sot23",
   "voltage",
   "power",
   "supervisor",
   "to",
   "and",
   "package",
+  "smd",
   "reset",
   "pins",
   "pin",
   "tsot",
-  "in"
+  "in",
+  "output"
  ],
  "facts": {
   "package_family": "SOT-23",
@@ -84,7 +76,7 @@
    "B": 45,
    "C": 31
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -267,6 +259,6 @@
   "celestial-altium-library/TI SOT-23-8 DDF/TI_SOT-23-8_DDF",
   "celestial-altium-library/TI TSOT-23-6/TI_TSOT-23-6"
  ],
- "embedding_text": "ic.sot-23 | IC | Integrated circuit components in the SOT-23 package family, supporting surface-mount footprints including 3-pin, 6-pin, 8-pin, TSOT-23, and wide variants across quality tiers A, B, and C. | ic sot-23 sot23 tsot-23 sot-23-3 sot-23-6 sot-23-8 smd surface mount sot-23w tsot-23-6 tsot-23-8 sot voltage power supervisor to and package reset pins pin tsot in | SOT-23 | ",
+ "embedding_text": "ic.sot-23 | IC | 137 ic parts using SOT-23 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | sot ic sot23 voltage power supervisor to and package smd reset pins pin tsot in output | SOT-23 | ",
  "class": "ic"
 }

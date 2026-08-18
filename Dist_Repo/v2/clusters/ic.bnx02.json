@@ -5,30 +5,22 @@
  "category_path": [
   "IC"
  ],
- "description": "Surface-mount IC cluster containing 2 parts in the BNX02 package family from the chilaboard-altium-library source.",
+ "description": "2 ic parts using BNX02 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select for designs requiring surface-mount components with a BNX02 footprint.",
-  "Verify tier quality and source details, as available parts are rated tier B and tier C.",
-  "Confirm symbol-to-footprint mapping before placing BNX02 components in PCB layout."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a BNX02 land pattern is intended."
  ],
  "avoid_when": [
-  "The design requires through-hole mounting instead of SMD.",
-  "The PCB layout requires a package family or footprint other than BNX02.",
-  "Specific electrical ratings or datasheet parameters missing from the cluster facts are required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than BNX02."
  ],
  "keywords": [
   "bnx02",
-  "ic",
-  "smd",
-  "bnx02 footprint",
-  "bnx02 package",
-  "bnx023-01",
-  "bnx023",
-  "surface mount",
-  "chilaboard-altium-library",
-  "tier b",
-  "tier c",
   "filter",
+  "bnx023",
+  "ic",
   "surface",
   "mount",
   "emi",
@@ -39,7 +31,8 @@
   "block",
   "for",
   "dc",
-  "filtering"
+  "filtering",
+  "smd"
  ],
  "facts": {
   "package_family": "BNX02",
@@ -61,7 +54,7 @@
    "B": 1,
    "C": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -77,6 +70,6 @@
   "chilaboard-altium-library/BNX023-01/BNX023-01",
   "chilaboard-altium-library/BNX02/BNX02"
  ],
- "embedding_text": "ic.bnx02 | IC | Surface-mount IC cluster containing 2 parts in the BNX02 package family from the chilaboard-altium-library source. | bnx02 ic smd bnx02 footprint bnx02 package bnx023-01 bnx023 surface mount chilaboard-altium-library tier b tier c filter surface mount emi suppression power line noise block for dc filtering | BNX02 | ",
+ "embedding_text": "ic.bnx02 | IC | 2 ic parts using BNX02 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | bnx02 filter bnx023 ic surface mount emi suppression power line noise block for dc filtering smd | BNX02 | ",
  "class": "ic"
 }

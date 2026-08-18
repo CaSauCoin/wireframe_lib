@@ -6,33 +6,25 @@
   "Discrete",
   "Diode"
  ],
- "description": "Discrete SMD diode cluster for 5.3V CAN bus applications in an SOT-23 package footprint.",
+ "description": "1 discrete diode parts for CAN, 5.3V using SOT-23 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Choose when requiring a discrete SMD diode with 5.3V and CAN bus facets in an SOT-23 package.",
-  "Prefer tier A parts such as ESDA5V3L from the Alternate-KiCad-Library source.",
-  "Ensure the design uses a standard surface-mount SOT-23 footprint."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SOT-23 land pattern is intended."
  ],
  "avoid_when": [
-  "The layout requires a footprint or package family other than SOT-23.",
-  "The design calls for through-hole mounting rather than SMD.",
-  "The circuit requires operating ratings or facets other than 5.3V or CAN bus."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SOT-23."
  ],
  "keywords": [
-  "discrete diode",
   "diode",
-  "sot-23",
-  "sot23",
-  "smd",
-  "can",
-  "5.3v",
-  "esda5v3l",
-  "tvs",
-  "alternate-kicad-library",
-  "kicad",
-  "discrete",
   "sot",
+  "tvs",
+  "esda5v3l",
   "dual",
   "unidirectional",
+  "can",
   "3v",
   "akl",
   "be",
@@ -40,7 +32,8 @@
   "as",
   "1xbidirectional",
   "300w",
-  "alternate"
+  "alternate",
+  "kicad"
  ],
  "facts": {
   "package_family": "SOT-23",
@@ -64,7 +57,7 @@
   "tier_counts": {
    "A": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -79,6 +72,6 @@
  "part_ids": [
   "Alternate-KiCad-Library/Diode_TVS_AKL/ESDA5V3L"
  ],
- "embedding_text": "discrete-diode.sot-23.can.5-3v | Discrete Diode | Discrete SMD diode cluster for 5.3V CAN bus applications in an SOT-23 package footprint. | discrete diode diode sot-23 sot23 smd can 5.3v esda5v3l tvs alternate-kicad-library kicad discrete sot dual unidirectional 3v akl be used as 1xbidirectional 300w alternate | SOT-23 | CAN 5.3V",
+ "embedding_text": "discrete-diode.sot-23.can.5-3v | Discrete Diode | 1 discrete diode parts for CAN, 5.3V using SOT-23 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | diode sot tvs esda5v3l dual unidirectional can 3v akl be used as 1xbidirectional 300w alternate kicad | SOT-23 | CAN 5.3V",
  "class": "discrete.diode"
 }

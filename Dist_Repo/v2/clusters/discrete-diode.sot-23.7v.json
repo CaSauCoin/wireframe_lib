@@ -6,44 +6,34 @@
   "Discrete",
   "Diode"
  ],
- "description": "Cluster of 7 tier-A discrete diode parts for the 7V facet, packaged in SOT-23 (SOT-23 / SOT-23-3 footprints, SMD), sourced from KiCad and Alternate-KiCad-Library.",
+ "description": "7 discrete diode parts for 7V using SOT-23 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "All 7 parts are tier A with score 100; differentiate by exact part number and source library.",
-  "Confirm whether your land pattern is SOT-23 or SOT-23-3 before committing footprint.",
-  "Verify the specific part's datasheet for voltage/current ratings beyond the stated 7V facet.",
-  "Favor a source library you trust when multiple entries tie on tier and score."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SOT-23 land pattern is intended."
  ],
  "avoid_when": [
-  "The board needs a footprint other than SOT-23 / SOT-23-3.",
-  "The 7V facet does not match your required voltage rating.",
-  "Through-hole mounting is required (this cluster is SMD only).",
-  "The symbol-footprint pairing has not been verified for your use case (review status: generated)."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SOT-23."
  ],
  "keywords": [
-  "sot-23",
-  "sot23",
-  "sot-23-3",
-  "diode",
-  "discrete diode",
-  "7v",
-  "smd",
-  "surface mount",
-  "kicad",
-  "kicad-symbols",
-  "alternate-kicad-library",
-  "digikey-kicad-library",
-  "sm712",
-  "mmbd101",
-  "mmbd352",
-  "mmbd353",
-  "mmbd354",
-  "tier a",
   "sot",
+  "diode",
   "schottky",
+  "7v",
   "dual",
   "discrete",
   "akl",
-  "alternate"
+  "alternate",
+  "kicad",
+  "library",
+  "tvs",
+  "series",
+  "sm712",
+  "diodes",
+  "12v",
+  "sot23"
  ],
  "facts": {
   "package_family": "SOT-23",
@@ -69,7 +59,7 @@
   "tier_counts": {
    "A": 7
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -122,6 +112,6 @@
   "Alternate-KiCad-Library/Diode_Schottky_AKL/MMBD355",
   "kicad-symbols/Diode/SM712_SOT23"
  ],
- "embedding_text": "discrete-diode.sot-23.7v | Discrete Diode | Cluster of 7 tier-A discrete diode parts for the 7V facet, packaged in SOT-23 (SOT-23 / SOT-23-3 footprints, SMD), sourced from KiCad and Alternate-KiCad-Library. | sot-23 sot23 sot-23-3 diode discrete diode 7v smd surface mount kicad kicad-symbols alternate-kicad-library digikey-kicad-library sm712 mmbd101 mmbd352 mmbd353 mmbd354 tier a sot schottky dual discrete akl alternate | SOT-23 | 7V",
+ "embedding_text": "discrete-diode.sot-23.7v | Discrete Diode | 7 discrete diode parts for 7V using SOT-23 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | sot diode schottky 7v dual discrete akl alternate kicad library tvs series sm712 diodes 12v sot23 | SOT-23 | 7V",
  "class": "discrete.diode"
 }

@@ -6,31 +6,22 @@
   "Discrete",
   "Transistor"
  ],
- "description": "Discrete surface-mount transistor cluster containing 42 tier A parts with a 60V rating using SO package footprints such as SO-8_3.9x4.9mm_P1.27mm.",
+ "description": "42 discrete transistor parts for 60V using SO footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when needing a 60V discrete transistor in a surface-mount SO package.",
-  "Choose for designs targeting the SO-8_3.9x4.9mm_P1.27mm footprint.",
-  "Pick from 42 tier A parts provided by Alternate-KiCad-Library."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SO land pattern is intended."
  ],
  "avoid_when": [
-  "The design requires non-SO package families or through-hole mounting.",
-  "A voltage rating other than 60V is specified for the circuit.",
-  "Components outside of the Alternate-KiCad-Library source are required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SO."
  ],
  "keywords": [
-  "discrete transistor",
-  "transistor",
-  "discrete",
-  "60v",
   "so",
-  "so-8",
-  "so-8_3.9x4.9mm_p1.27mm",
-  "smd",
-  "alternate-kicad-library",
-  "ao4262e",
-  "ao4264e",
-  "ao4421",
   "mosfet",
+  "transistor",
+  "60v",
   "mos",
   "enchancement",
   "akl",
@@ -41,7 +32,8 @@
   "9mm",
   "p1",
   "27mm",
-  "emos"
+  "emos",
+  "emosfet"
  ],
  "facts": {
   "package_family": "SO",
@@ -64,7 +56,7 @@
   "tier_counts": {
    "A": 42
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -152,6 +144,6 @@
   "Alternate-KiCad-Library/Transistor_MOSFET_AKL/ZXMN6A11DN8",
   "Alternate-KiCad-Library/Transistor_MOSFET_AKL/ZXMP6A18DN8"
  ],
- "embedding_text": "discrete-transistor.so.60v | Discrete Transistor | Discrete surface-mount transistor cluster containing 42 tier A parts with a 60V rating using SO package footprints such as SO-8_3.9x4.9mm_P1.27mm. | discrete transistor transistor discrete 60v so so-8 so-8_3.9x4.9mm_p1.27mm smd alternate-kicad-library ao4262e ao4264e ao4421 mosfet mos enchancement akl alternate kicad library 9x4 9mm p1 27mm emos | SO | 60V",
+ "embedding_text": "discrete-transistor.so.60v | Discrete Transistor | 42 discrete transistor parts for 60V using SO footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | so mosfet transistor 60v mos enchancement akl alternate kicad library 9x4 9mm p1 27mm emos emosfet | SO | 60V",
  "class": "discrete.transistor"
 }

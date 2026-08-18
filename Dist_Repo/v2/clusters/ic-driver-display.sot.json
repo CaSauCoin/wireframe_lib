@@ -7,40 +7,33 @@
   "Driver",
   "Display"
  ],
- "description": "Display driver IC cluster containing 3 surface-mount parts in the SOT package family using SOT-89-3 footprints.",
+ "description": "3 ic driver display parts using SOT footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Require a surface-mount display driver IC in an SOT-89-3 footprint.",
-  "Select from tier A parts such as HV9921N8-G, HV9922N8-G, or HV9923N8-G.",
-  "Confirm layout compatibility with the SOT package family land pattern."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SOT land pattern is intended."
  ],
  "avoid_when": [
-  "Through-hole mounting or non-SMD assembly is required.",
-  "The design requires footprint packages other than SOT-89-3.",
-  "Application requires IC functionality other than display driver."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SOT."
  ],
  "keywords": [
-  "ic",
   "driver",
-  "display",
-  "ic driver display",
-  "sot",
-  "sot-89-3",
-  "sot89",
-  "smd",
-  "hv9921n8-g",
-  "hv9922n8-g",
-  "hv9923n8-g",
-  "hv9921n8",
-  "hv9922n8",
-  "hv9923n8",
   "led",
+  "sot",
   "3pin",
   "constant",
   "current",
+  "sot89",
   "cc",
   "high",
   "voltage",
+  "ic",
+  "display",
+  "hv9921n8",
   "20ma",
+  "hv9922n8",
   "50ma"
  ],
  "facts": {
@@ -62,7 +55,7 @@
   "tier_counts": {
    "A": 3
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -95,6 +88,6 @@
   "kicad-symbols/Driver_LED/HV9922N8-G",
   "kicad-symbols/Driver_LED/HV9923N8-G"
  ],
- "embedding_text": "ic-driver-display.sot | IC Driver Display | Display driver IC cluster containing 3 surface-mount parts in the SOT package family using SOT-89-3 footprints. | ic driver display ic driver display sot sot-89-3 sot89 smd hv9921n8-g hv9922n8-g hv9923n8-g hv9921n8 hv9922n8 hv9923n8 led 3pin constant current cc high voltage 20ma 50ma | SOT | ",
+ "embedding_text": "ic-driver-display.sot | IC Driver Display | 3 ic driver display parts using SOT footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | driver led sot 3pin constant current sot89 cc high voltage ic display hv9921n8 20ma hv9922n8 50ma | SOT | ",
  "class": "ic.driver.display"
 }

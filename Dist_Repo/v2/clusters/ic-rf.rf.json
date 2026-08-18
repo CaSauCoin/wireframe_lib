@@ -6,30 +6,20 @@
   "IC",
   "RF"
  ],
- "description": "RF IC cluster containing 6 surface-mount and through-hole parts using RF footprints such as RF_ETRXB, RF_HMR, RF_SIM20, RF_ANAREN_A11, RF_ANAREN_A25, and RF_HMT.",
+ "description": "6 ic rf parts using RF footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Match PCB requirements to specific RF footprints like RF_ETRXB, RF_HMR, RF_SIM20, RF_ANAREN_A11, RF_ANAREN_A25, or RF_HMT.",
-  "Select based on mounting type preference between surface-mount (smd) and through-hole.",
-  "Verify part requirements against Tier C quality status from chilaboard-altium-library."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a RF land pattern is intended."
  ],
  "avoid_when": [
-  "The layout requires package families other than RF footprints.",
-  "The application mandates parts rated above quality Tier C.",
-  "Mounting options other than SMD or through-hole are required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than RF."
  ],
  "keywords": [
   "rf",
   "ic",
-  "ic rf",
-  "rf_etrxb",
-  "rf_hmr",
-  "rf_sim20",
-  "rf_anaren_a11",
-  "rf_anaren_a25",
-  "rf_hmt",
-  "smd",
-  "through_hole",
-  "chilaboard-altium-library",
   "anaren",
   "pad",
   "mm",
@@ -41,7 +31,9 @@
   "a11",
   "a25",
   "hmt",
-  "through"
+  "through",
+  "hole",
+  "surface"
  ],
  "facts": {
   "package_family": "RF",
@@ -68,7 +60,7 @@
   "tier_counts": {
    "C": 6
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
@@ -79,6 +71,6 @@
   "chilaboard-altium-library/RF_ANAREN_A25/RF_ANAREN_A25",
   "chilaboard-altium-library/RF_HMT/RF_HMT"
  ],
- "embedding_text": "ic-rf.rf | IC RF | RF IC cluster containing 6 surface-mount and through-hole parts using RF footprints such as RF_ETRXB, RF_HMR, RF_SIM20, RF_ANAREN_A11, RF_ANAREN_A25, and RF_HMT. | rf ic ic rf rf_etrxb rf_hmr rf_sim20 rf_anaren_a11 rf_anaren_a25 rf_hmt smd through_hole chilaboard-altium-library anaren pad mm pitch pins etrxb hmr sim20 a11 a25 hmt through | RF | ",
+ "embedding_text": "ic-rf.rf | IC RF | 6 ic rf parts using RF footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | rf ic anaren pad mm pitch pins etrxb hmr sim20 a11 a25 hmt through hole surface | RF | ",
  "class": "ic.rf"
 }

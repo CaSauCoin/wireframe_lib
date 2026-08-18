@@ -6,32 +6,23 @@
   "IC",
   "RF"
  ],
- "description": "RF integrated circuit cluster featuring surface-mount SOT-23 package family and SOT-23-6 footprints sourced from KiCad symbols.",
+ "description": "1 ic rf parts using SOT-23 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select for surface-mount RF IC applications requiring SOT-23 package footprint.",
-  "Verify SOT-23-6 footprint compatibility with layout specifications.",
-  "Choose when using tier A RF IC symbols from KiCad symbol libraries."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SOT-23 land pattern is intended."
  ],
  "avoid_when": [
-  "Do not use when through-hole mounting is required.",
-  "Do not use if the board design requires a package other than SOT-23 or SOT-23-6.",
-  "Avoid when non-RF integrated circuits are required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SOT-23."
  ],
  "keywords": [
-  "ic",
-  "rf",
-  "ic rf",
-  "sot-23",
-  "sot-23-6",
-  "smd",
-  "surface mount",
-  "kicad",
-  "kicad symbols",
-  "maswss0179",
-  "rf switch",
   "sot",
+  "rf",
   "switch",
   "spdt",
+  "maswss0179",
   "macom",
   "gaas",
   "dc",
@@ -39,7 +30,9 @@
   "22db",
   "loss",
   "isolation",
-  "to"
+  "to",
+  "smd",
+  "ic"
  ],
  "facts": {
   "package_family": "SOT-23",
@@ -60,7 +53,7 @@
   "tier_counts": {
    "A": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -75,6 +68,6 @@
  "part_ids": [
   "kicad-symbols/RF_Switch/MASWSS0179"
  ],
- "embedding_text": "ic-rf.sot-23 | IC RF | RF integrated circuit cluster featuring surface-mount SOT-23 package family and SOT-23-6 footprints sourced from KiCad symbols. | ic rf ic rf sot-23 sot-23-6 smd surface mount kicad kicad symbols maswss0179 rf switch sot switch spdt macom gaas dc 2ghz 22db loss isolation to | SOT-23 | ",
+ "embedding_text": "ic-rf.sot-23 | IC RF | 1 ic rf parts using SOT-23 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | sot rf switch spdt maswss0179 macom gaas dc 2ghz 22db loss isolation to smd ic | SOT-23 | ",
  "class": "ic.rf"
 }

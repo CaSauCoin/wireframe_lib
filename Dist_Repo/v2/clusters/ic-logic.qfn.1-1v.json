@@ -6,31 +6,26 @@
   "IC",
   "Logic"
  ],
- "description": "Cluster of 1.1V logic ICs in surface-mount QFN packages from KiCad symbols, including part TXS02612RTW.",
+ "description": "1 ic logic parts for 1.1V using QFN footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when requiring a 1.1V surface-mount logic IC.",
-  "Verify compatibility with WQFN-24-1EP footprint (4x4mm, 0.5mm pitch).",
-  "Check Tier B component quality specifications prior to PCB commitment."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a QFN land pattern is intended."
  ],
  "avoid_when": [
-  "Design requires non-QFN package footprints or through-hole mounting.",
-  "Target operating voltage is not 1.1V.",
-  "Strict Tier A component verification is mandated."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than QFN."
  ],
  "keywords": [
-  "ic logic",
   "logic",
-  "1.1v",
-  "qfn",
-  "wqfn",
-  "wqfn-24-1ep",
-  "smd",
-  "txs02612rtw",
-  "kicad-symbols",
-  "leveltranslator",
   "sdio",
   "level",
   "1v",
+  "qfn",
+  "wqfn",
+  "txs02612rtw",
+  "leveltranslator",
   "port",
   "expander",
   "with",
@@ -61,7 +56,7 @@
   "tier_counts": {
    "B": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -76,6 +71,6 @@
  "part_ids": [
   "kicad-symbols/Logic_LevelTranslator/TXS02612RTW"
  ],
- "embedding_text": "ic-logic.qfn.1-1v | IC Logic | Cluster of 1.1V logic ICs in surface-mount QFN packages from KiCad symbols, including part TXS02612RTW. | ic logic logic 1.1v qfn wqfn wqfn-24-1ep smd txs02612rtw kicad-symbols leveltranslator sdio level 1v port expander with voltage translation demultiplexer multiplexer to | QFN | 1.1V",
+ "embedding_text": "ic-logic.qfn.1-1v | IC Logic | 1 ic logic parts for 1.1V using QFN footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | logic sdio level 1v qfn wqfn txs02612rtw leveltranslator port expander with voltage translation demultiplexer multiplexer to | QFN | 1.1V",
  "class": "ic.logic"
 }

@@ -6,42 +6,34 @@
   "IC",
   "Sensor"
  ],
- "description": "Surface-mount IC sensors in LGA packaging featuring an I2C communication interface.",
+ "description": "4 ic sensor parts for I2C using LGA footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Choose when requiring an SMD sensor IC with an I2C interface in an LGA package.",
-  "Select based on package footprint requirements such as LGA-16 3x3mm or LGA-14 3x5mm.",
-  "Verify part selection for specific motion or magnetic sensor requirements."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a LGA land pattern is intended."
  ],
  "avoid_when": [
-  "The PCB design requires package types other than LGA or non-SMD mounting.",
-  "A communication interface other than I2C is required.",
-  "The target device is not an IC sensor."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than LGA."
  ],
  "keywords": [
-  "ic",
+  "lga",
   "sensor",
   "i2c",
-  "lga",
-  "smd",
-  "lga-16",
-  "lga-14",
-  "3x3mm",
-  "3x5mm",
-  "magnetic sensor",
-  "motion sensor",
-  "ist8308",
-  "ist8310",
-  "mmc5883ma",
   "magnetic",
   "3d",
   "magnetometer",
   "p0",
+  "ic",
   "interface",
+  "3x3mm",
   "5mm",
   "land",
   "grid",
   "array",
-  "magnet"
+  "magnet",
+  "field"
  ],
  "facts": {
   "package_family": "LGA",
@@ -65,7 +57,7 @@
   "tier_counts": {
    "A": 4
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -107,6 +99,6 @@
   "kicad-symbols/Sensor_Motion/LSM303DLHC",
   "kicad-symbols/Sensor_Magnetic/MMC5883MA"
  ],
- "embedding_text": "ic-sensor.lga.i2c | IC Sensor | Surface-mount IC sensors in LGA packaging featuring an I2C communication interface. | ic sensor i2c lga smd lga-16 lga-14 3x3mm 3x5mm magnetic sensor motion sensor ist8308 ist8310 mmc5883ma magnetic 3d magnetometer p0 interface 5mm land grid array magnet | LGA | I2C",
+ "embedding_text": "ic-sensor.lga.i2c | IC Sensor | 4 ic sensor parts for I2C using LGA footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | lga sensor i2c magnetic 3d magnetometer p0 ic interface 3x3mm 5mm land grid array magnet field | LGA | I2C",
  "class": "ic.sensor"
 }

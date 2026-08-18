@@ -5,44 +5,33 @@
  "category_path": [
   "Connector"
  ],
- "description": "RJ9 connectors: 4P4C/RJ10/RJ22 handset-cord jacks, 8 through-hole parts, single footprint, all tier B.",
+ "description": "8 connector parts using RJ9 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Match connector name (4P4C, RJ10, RJ22) to the plug/cable actually used.",
-  "Check shielded vs unshielded variant if EMI shielding is required.",
-  "All entries are tier B — verify pin count and mapping since no tier A datasheet-backed part is available.",
-  "Confirm the RJ9_Evercom_5301-440xxx_Horizontal footprint matches your board's land pattern before layout."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a RJ9 land pattern is intended."
  ],
  "avoid_when": [
-  "An RJ connector size other than 4P4C/RJ9/RJ10/RJ22 is needed.",
-  "Surface-mount or vertical orientation is required instead of through-hole horizontal.",
-  "Electrical ratings (voltage, current) or pinout must be confirmed and are not documented in this cluster.",
-  "A datasheet-verified or higher-trust (tier A) part is required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than RJ9."
  ],
  "keywords": [
   "connector",
   "rj9",
-  "rj10",
-  "rj22",
   "4p4c",
-  "4p4c shielded",
-  "rj connector",
-  "handset jack",
-  "telephone handset connector",
-  "modular connector",
-  "through hole connector",
-  "horizontal connector",
-  "evercom",
-  "5301-440xxx",
-  "shielded connector",
-  "phone cord jack",
-  "tier b connector",
-  "kicad connector",
   "rj",
   "positions",
   "connected",
+  "evercom",
   "440xxx",
   "horizontal",
-  "tab"
+  "tab",
+  "down",
+  "socket",
+  "shielded",
+  "rj10",
+  "rj22"
  ],
  "facts": {
   "package_family": "RJ9",
@@ -63,7 +52,7 @@
   "tier_counts": {
    "B": 8
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -117,6 +106,6 @@
   "kicad-symbols/Connector/RJ9",
   "kicad-symbols/Connector/RJ9_Shielded"
  ],
- "embedding_text": "connector.rj9 | Connector | RJ9 connectors: 4P4C/RJ10/RJ22 handset-cord jacks, 8 through-hole parts, single footprint, all tier B. | connector rj9 rj10 rj22 4p4c 4p4c shielded rj connector handset jack telephone handset connector modular connector through hole connector horizontal connector evercom 5301-440xxx shielded connector phone cord jack tier b connector kicad connector rj positions connected 440xxx horizontal tab | RJ9 | ",
+ "embedding_text": "connector.rj9 | Connector | 8 connector parts using RJ9 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | connector rj9 4p4c rj positions connected evercom 440xxx horizontal tab down socket shielded rj10 rj22 | RJ9 | ",
  "class": "connector"
 }

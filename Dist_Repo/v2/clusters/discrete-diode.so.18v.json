@@ -6,32 +6,24 @@
   "Discrete",
   "Diode"
  ],
- "description": "Cluster of 18V surface-mount discrete diodes in the SO package family, using SO-8_3.9x4.9mm_P1.27mm footprints from Alternate-KiCad-Library.",
+ "description": "2 discrete diode parts for 18V using SO footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Requires an 18V discrete diode in an SMD mount.",
-  "Targeting SO package family with SO-8_3.9x4.9mm_P1.27mm footprint.",
-  "Selecting Tier A parts such as DA108S1 or DA112S1 from Alternate-KiCad-Library."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SO land pattern is intended."
  ],
  "avoid_when": [
-  "The design requires non-SMD or non-SO package formats.",
-  "The application voltage is not 18V.",
-  "Footprint requirements differ from SO-8_3.9x4.9mm_P1.27mm."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SO."
  ],
  "keywords": [
-  "discrete",
-  "diode",
-  "18v",
   "so",
-  "smd",
-  "so-8",
-  "so-8_3.9x4.9mm_p1.27mm",
-  "da108s1",
-  "da112s1",
-  "alternate-kicad-library",
-  "discrete diode",
-  "so package",
+  "diode",
   "tvs",
   "array",
+  "18v",
+  "da108s1",
   "akl",
   "protection",
   "protected",
@@ -64,7 +56,7 @@
   "tier_counts": {
    "A": 2
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -88,6 +80,6 @@
   "Alternate-KiCad-Library/Diode_TVS_AKL/DA108S1",
   "Alternate-KiCad-Library/Diode_TVS_AKL/DA112S1"
  ],
- "embedding_text": "discrete-diode.so.18v | Discrete Diode | Cluster of 18V surface-mount discrete diodes in the SO package family, using SO-8_3.9x4.9mm_P1.27mm footprints from Alternate-KiCad-Library. | discrete diode 18v so smd so-8 so-8_3.9x4.9mm_p1.27mm da108s1 da112s1 alternate-kicad-library discrete diode so package tvs array akl protection protected lines up to 12a alternate kicad library | SO | 18V",
+ "embedding_text": "discrete-diode.so.18v | Discrete Diode | 2 discrete diode parts for 18V using SO footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | so diode tvs array 18v da108s1 akl protection protected lines up to 12a alternate kicad library | SO | 18V",
  "class": "discrete.diode"
 }

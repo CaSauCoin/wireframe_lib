@@ -6,27 +6,21 @@
   "Discrete",
   "Diode"
  ],
- "description": "Cluster of discrete diode components using Photoresistor footprints, containing one tier C entry.",
+ "description": "1 discrete diode parts using Photoresistor footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Use when a Photoresistor footprint land pattern is needed.",
-  "Verify electrical ratings and physical package specs before layout.",
-  "Check pin mapping and data source quality for tier C entries."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a Photoresistor land pattern is intended."
  ],
  "avoid_when": [
-  "The circuit layout requires a footprint other than Photoresistor.",
-  "Required electrical parameters or tolerances are unstated.",
-  "Symbol to footprint mapping is unverified."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than Photoresistor."
  ],
  "keywords": [
   "photoresistor",
   "discrete",
   "diode",
-  "discrete diode",
-  "photoresistor footprint",
-  "photoresistor package",
-  "tier c",
-  "discrete.diode",
-  "dist-legacy",
   "pad",
   "mm",
   "pitch",
@@ -51,12 +45,12 @@
   "tier_counts": {
    "C": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
   "dist-legacy/Photoresistor"
  ],
- "embedding_text": "discrete-diode.photoresistor | Discrete Diode | Cluster of discrete diode components using Photoresistor footprints, containing one tier C entry. | photoresistor discrete diode discrete diode photoresistor footprint photoresistor package tier c discrete.diode dist-legacy pad mm pitch pins | Photoresistor | ",
+ "embedding_text": "discrete-diode.photoresistor | Discrete Diode | 1 discrete diode parts using Photoresistor footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | photoresistor discrete diode pad mm pitch pins | Photoresistor | ",
  "class": "discrete.diode"
 }

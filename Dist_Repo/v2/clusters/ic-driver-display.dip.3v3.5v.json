@@ -7,42 +7,34 @@
   "Driver",
   "Display"
  ],
- "description": "Display driver IC cluster containing 10 through-hole DIP parts supporting 3.3V, 5V, and I2C operating conditions.",
+ "description": "10 ic driver display parts for 3.3V, 5V, I2C using DIP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Choose when requiring through-hole DIP packaging for display driver ICs.",
-  "Select based on target footprint compatibility, such as EA-eDIP128B-XXX, EA_eDIP160-XXX, or EA_eDIPTFT32-XXX.",
-  "Verify compatibility with 3.3V or 5V supply and I2C communication interface."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a DIP land pattern is intended."
  ],
  "avoid_when": [
-  "Surface-mount packaging is required rather than DIP through-hole mounting.",
-  "Operating voltages or communication protocols other than 3.3V, 5V, and I2C are needed.",
-  "The target PCB design requires footprints outside the EA-eDIP footprint family."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than DIP."
  ],
  "keywords": [
-  "ic driver display",
-  "display driver",
-  "dip",
-  "through_hole",
-  "3.3v",
-  "5v",
-  "i2c",
-  "ea-edip128b-xxx",
-  "ea_edip160-xxx",
-  "ea_ediptft32-xxx",
-  "ea_edip128b-6lw",
-  "ea_edip160b-7lw",
-  "kicad-symbols",
   "display",
+  "i2c",
   "lcd",
   "graphic",
   "ea",
   "led",
   "backlight",
   "3v",
+  "5v",
   "with",
   "graphical",
   "rs",
-  "or"
+  "or",
+  "spi",
+  "vdd",
+  "xxx"
  ],
  "facts": {
   "package_family": "DIP",
@@ -69,7 +61,7 @@
   "tier_counts": {
    "A": 10
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -125,6 +117,6 @@
   "kicad-symbols/Display_Graphic/EA_eDIPTFT32-A",
   "kicad-symbols/Display_Graphic/EA_eDIPTFT32-ATP"
  ],
- "embedding_text": "ic-driver-display.dip.3v3.5v | IC Driver Display | Display driver IC cluster containing 10 through-hole DIP parts supporting 3.3V, 5V, and I2C operating conditions. | ic driver display display driver dip through_hole 3.3v 5v i2c ea-edip128b-xxx ea_edip160-xxx ea_ediptft32-xxx ea_edip128b-6lw ea_edip160b-7lw kicad-symbols display lcd graphic ea led backlight 3v with graphical rs or | DIP | 3.3V 5V I2C",
+ "embedding_text": "ic-driver-display.dip.3v3.5v | IC Driver Display | 10 ic driver display parts for 3.3V, 5V, I2C using DIP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | display i2c lcd graphic ea led backlight 3v 5v with graphical rs or spi vdd xxx | DIP | 3.3V 5V I2C",
  "class": "ic.driver.display"
 }

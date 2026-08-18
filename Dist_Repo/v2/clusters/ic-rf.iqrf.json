@@ -6,30 +6,19 @@
   "IC",
   "RF"
  ],
- "description": "RF IC cluster consisting of surface-mount components in the IQRF package family utilizing the IQRF_TRx2DA_KON-SIM-01 footprint.",
+ "description": "6 ic rf parts using IQRF footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select for RF IC applications requiring surface-mount IQRF package components.",
-  "Verify footprint layout match for IQRF_TRx2DA_KON-SIM-01.",
-  "Compare specific part numbers such as DCTR-52DA, DCTR-52DAT, TR-52DA, TR-52DAT, and TR-72DA."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a IQRF land pattern is intended."
  ],
  "avoid_when": [
-  "The layout requires a footprint other than IQRF_TRx2DA_KON-SIM-01.",
-  "Through-hole or non-SMD mounting is required.",
-  "The design requires non-RF IC components or non-IQRF package families."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than IQRF."
  ],
  "keywords": [
-  "ic rf",
   "iqrf",
-  "smd",
-  "iqrf_trx2da_kon-sim-01",
-  "dctr-52da",
-  "dctr-52dat",
-  "tr-52da",
-  "tr-52dat",
-  "tr-72da",
-  "rf module",
-  "kicad-symbols",
-  "ic",
   "rf",
   "transceiver",
   "pcb",
@@ -41,7 +30,10 @@
   "fsk",
   "module",
   "with",
-  "thermometer"
+  "ic",
+  "thermometer",
+  "data",
+  "controlled"
  ],
  "facts": {
   "package_family": "IQRF",
@@ -62,7 +54,7 @@
   "tier_counts": {
    "B": 6
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -114,6 +106,6 @@
   "kicad-symbols/RF_Module/TR-72DA",
   "kicad-symbols/RF_Module/TR-72DAT"
  ],
- "embedding_text": "ic-rf.iqrf | IC RF | RF IC cluster consisting of surface-mount components in the IQRF package family utilizing the IQRF_TRx2DA_KON-SIM-01 footprint. | ic rf iqrf smd iqrf_trx2da_kon-sim-01 dctr-52da dctr-52dat tr-52da tr-52dat tr-72da rf module kicad-symbols ic rf transceiver pcb antenna modulation trx2da kon sim fsk module with thermometer | IQRF | ",
+ "embedding_text": "ic-rf.iqrf | IC RF | 6 ic rf parts using IQRF footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | iqrf rf transceiver pcb antenna modulation trx2da kon sim fsk module with ic thermometer data controlled | IQRF | ",
  "class": "ic.rf"
 }

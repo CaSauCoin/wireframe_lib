@@ -5,33 +5,23 @@
  "category_path": [
   "IC"
  ],
- "description": "Integrated circuit cluster containing 3 through-hole single in-line package (SIP) parts with 2.54mm pitch 8-pin and 9-pin footprints.",
+ "description": "3 ic parts using SIP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select for designs requiring a through-hole single in-line package (SIP) with 2.54mm pitch.",
-  "Verify exact footprint dimensions (19x3mm, 21.54x3mm, or 22.3x3mm) and pin count (8 or 9).",
-  "Confirm symbol-to-footprint pin mapping and quality tier before PCB layout."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SIP land pattern is intended."
  ],
  "avoid_when": [
-  "Surface-mount assembly is required.",
-  "The board layout requires a package family other than SIP.",
-  "The design requires pin pitch other than 2.54mm."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SIP."
  ],
  "keywords": [
-  "ic",
   "sip",
-  "single in-line package",
-  "through-hole",
-  "through hole",
-  "sip-8",
-  "sip-9",
-  "2.54mm pitch",
-  "p2.54mm",
-  "19x3mm",
-  "22.3x3mm",
-  "21.54x3mm",
-  "ic sip",
   "p2",
   "54mm",
+  "ic",
+  "19x3mm",
   "3x3mm",
   "54x3mm",
   "package",
@@ -40,7 +30,9 @@
   "hole",
   "pad",
   "mm",
-  "pitch"
+  "pitch",
+  "pins",
+  "pin"
  ],
  "facts": {
   "package_family": "SIP",
@@ -63,7 +55,7 @@
   "tier_counts": {
    "C": 3
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
@@ -71,6 +63,6 @@
   "dist-legacy/SIP-9_22.3x3mm_P2.54mm",
   "dist-legacy/SIP-9_21.54x3mm_P2.54mm"
  ],
- "embedding_text": "ic.sip | IC | Integrated circuit cluster containing 3 through-hole single in-line package (SIP) parts with 2.54mm pitch 8-pin and 9-pin footprints. | ic sip single in-line package through-hole through hole sip-8 sip-9 2.54mm pitch p2.54mm 19x3mm 22.3x3mm 21.54x3mm ic sip p2 54mm 3x3mm 54x3mm package sip8 through hole pad mm pitch | SIP | ",
+ "embedding_text": "ic.sip | IC | 3 ic parts using SIP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | sip p2 54mm ic 19x3mm 3x3mm 54x3mm package sip8 through hole pad mm pitch pins pin | SIP | ",
  "class": "ic"
 }

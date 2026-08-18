@@ -5,29 +5,20 @@
  "category_path": [
   "IC"
  ],
- "description": "IC cluster containing 1 tier C part in the N014 package family with an N014 footprint.",
+ "description": "1 ic parts using N014 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Use when an N014 package family part and footprint are specified.",
-  "Check part specifications and pin mapping against official documentation.",
-  "Note the tier C status and dist-legacy source before selecting."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a N014 land pattern is intended."
  ],
  "avoid_when": [
-  "The design requires a package family or footprint other than N014.",
-  "Higher tier (tier A or B) qualified IC components are required.",
-  "Exact electrical ratings or mounting details must be confirmed upfront in the library."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than N014."
  ],
  "keywords": [
-  "ic",
   "n014",
-  "ic n014",
-  "n014 footprint",
-  "package family n014",
-  "tier c",
-  "dist-legacy",
-  "footprint",
-  "package family",
-  "unknown mount",
-  "generated",
+  "ic",
   "pad",
   "mm",
   "pitch",
@@ -52,12 +43,12 @@
   "tier_counts": {
    "C": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
   "dist-legacy/N014"
  ],
- "embedding_text": "ic.n014 | IC | IC cluster containing 1 tier C part in the N014 package family with an N014 footprint. | ic n014 ic n014 n014 footprint package family n014 tier c dist-legacy footprint package family unknown mount generated pad mm pitch pins | N014 | ",
+ "embedding_text": "ic.n014 | IC | 1 ic parts using N014 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | n014 ic pad mm pitch pins | N014 | ",
  "class": "ic"
 }

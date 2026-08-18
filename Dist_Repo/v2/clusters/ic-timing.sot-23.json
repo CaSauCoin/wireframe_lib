@@ -6,38 +6,32 @@
   "IC",
   "Timing"
  ],
- "description": "Surface-mount timing IC cluster comprising 7 tier-A parts in SOT-23 package family footprints including SOT-23-6 and TSOT-23-6.",
+ "description": "7 ic timing parts using SOT-23 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when requiring surface-mount timing ICs using SOT-23 package family footprints.",
-  "Choose when TSOT-23-6 or SOT-23-6 footprints match the intended PCB land pattern.",
-  "Select specific part variants based on required timing IC part numbers in the cluster."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SOT-23 land pattern is intended."
  ],
  "avoid_when": [
-  "Through-hole assembly is required instead of surface-mount (SMD).",
-  "The board layout requires footprints other than SOT-23-6 or TSOT-23-6.",
-  "Components outside the timing IC class are required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SOT-23."
  ],
  "keywords": [
-  "ic",
-  "timing",
-  "sot-23",
-  "sot-23-6",
-  "tsot-23-6",
   "tsot",
-  "smd",
-  "surface mount",
-  "timing ic",
-  "ltc6993xs6",
-  "ltc6994xs6",
-  "timer",
   "sot",
   "timerblox",
+  "timer",
   "monostable",
   "pulse",
   "to",
+  "smd",
+  "ic",
+  "timing",
   "generator",
   "edge",
   "programmable",
+  "ltc6993xs6",
   "one",
   "shot"
  ],
@@ -61,7 +55,7 @@
   "tier_counts": {
    "A": 7
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -114,6 +108,6 @@
   "kicad-symbols/Timer/LTC6994xS6-2",
   "kicad-symbols/Timer/PL611-01-xxxT"
  ],
- "embedding_text": "ic-timing.sot-23 | IC Timing | Surface-mount timing IC cluster comprising 7 tier-A parts in SOT-23 package family footprints including SOT-23-6 and TSOT-23-6. | ic timing sot-23 sot-23-6 tsot-23-6 tsot smd surface mount timing ic ltc6993xs6 ltc6994xs6 timer sot timerblox monostable pulse to generator edge programmable one shot | SOT-23 | ",
+ "embedding_text": "ic-timing.sot-23 | IC Timing | 7 ic timing parts using SOT-23 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | tsot sot timerblox timer monostable pulse to smd ic timing generator edge programmable ltc6993xs6 one shot | SOT-23 | ",
  "class": "ic.timing"
 }

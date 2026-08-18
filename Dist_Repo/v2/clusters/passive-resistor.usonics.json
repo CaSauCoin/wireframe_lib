@@ -6,30 +6,22 @@
   "Passive",
   "Resistor"
  ],
- "description": "Passive resistor components in the USONICS package family supporting SMD and through-hole footprints.",
+ "description": "2 passive resistor parts using USONICS footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Verify whether the design requires the USONICS_SMD surface mount or USONICS through-hole footprint.",
-  "Inspect component ratings and land patterns since all parts are currently tier C quality.",
-  "Confirm compatibility with chilaboard Altium library footprint definitions."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a USONICS land pattern is intended."
  ],
  "avoid_when": [
-  "A package family or footprint other than USONICS or USONICS_SMD is required.",
-  "Applications require verified, higher quality tier parts.",
-  "Non-resistor passive components are needed."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than USONICS."
  ],
  "keywords": [
+  "usonics",
+  "smd",
   "passive",
   "resistor",
-  "usonics",
-  "usonics_smd",
-  "smd",
-  "through_hole",
-  "surface mount",
-  "through hole",
-  "chilaboard",
-  "altium",
-  "passive resistor",
-  "resistor usonics",
   "pad",
   "mm",
   "pitch",
@@ -60,13 +52,13 @@
   "tier_counts": {
    "C": 2
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
   "chilaboard-altium-library/USONICS/USONICS",
   "chilaboard-altium-library/USONICS_SMD/USONICS_SMD"
  ],
- "embedding_text": "passive-resistor.usonics | Passive Resistor | Passive resistor components in the USONICS package family supporting SMD and through-hole footprints. | passive resistor usonics usonics_smd smd through_hole surface mount through hole chilaboard altium passive resistor resistor usonics pad mm pitch pins through hole surface mount | USONICS | ",
+ "embedding_text": "passive-resistor.usonics | Passive Resistor | 2 passive resistor parts using USONICS footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | usonics smd passive resistor pad mm pitch pins through hole surface mount | USONICS | ",
  "class": "passive.resistor"
 }

@@ -5,32 +5,22 @@
  "category_path": [
   "IC"
  ],
- "description": "EDA component cluster of 1,025 IC parts utilizing the QFN package family across tier A, B, and C quality levels.",
+ "description": "1025 ic parts using QFN footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Filter parts by quality tier preference, including 45 tier A and 206 tier B parts.",
-  "Match target footprint requirements such as pin count, pitch, and exposed pad dimensions.",
-  "Verify mounting configuration compatibility including SMD and through-hole options."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a QFN land pattern is intended."
  ],
  "avoid_when": [
-  "The target design requires package families other than QFN.",
-  "Unspecified electrical limits, pinouts, or manufacturer details are required for part selection."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than QFN."
  ],
  "keywords": [
-  "ic",
   "qfn",
-  "smd",
-  "through_hole",
-  "package family",
-  "qfn50",
-  "qfn40",
-  "qfn65",
-  "tier a",
-  "tier b",
-  "tier c",
-  "kicad",
-  "altium",
   "p0",
   "1ep",
+  "ic",
   "5mm",
   "thermalvias",
   "vqfn",
@@ -39,7 +29,10 @@
   "4mm",
   "pins",
   "mm",
-  "pitch"
+  "pitch",
+  "ep2",
+  "surface",
+  "mount"
  ],
  "facts": {
   "package_family": "QFN",
@@ -84,7 +77,7 @@
    "B": 206,
    "C": 774
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -1155,6 +1148,6 @@
   "dist-legacy/WQFN-38-1EP_5x7mm_P0.5mm_EP3.65x5.65mm",
   "chilaboard-altium-library/QFN50_16_3X3/QFN50_16_3X3"
  ],
- "embedding_text": "ic.qfn | IC | EDA component cluster of 1,025 IC parts utilizing the QFN package family across tier A, B, and C quality levels. | ic qfn smd through_hole package family qfn50 qfn40 qfn65 tier a tier b tier c kicad altium p0 1ep 5mm thermalvias vqfn package pad 4mm pins mm pitch | QFN | ",
+ "embedding_text": "ic.qfn | IC | 1025 ic parts using QFN footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | qfn p0 1ep ic 5mm thermalvias vqfn package pad 4mm pins mm pitch ep2 surface mount | QFN | ",
  "class": "ic"
 }

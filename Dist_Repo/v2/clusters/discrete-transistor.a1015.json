@@ -6,28 +6,23 @@
   "Discrete",
   "Transistor"
  ],
- "description": "Discrete transistor cluster containing one tier-B entry associated with the A1015 footprint.",
+ "description": "1 discrete transistor parts using A1015 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Use when an A1015 footprint is required for a discrete transistor.",
-  "Verify electrical parameters and pin mapping, as ratings are not specified in the cluster facts.",
-  "Evaluate tier B quality status and dist-legacy source suitability for your design."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a A1015 land pattern is intended."
  ],
  "avoid_when": [
-  "The PCB layout requires a footprint family other than A1015.",
-  "Specific electrical ratings or package dimensions are required upfront.",
-  "Tier A quality verification or fully defined mount types are required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than A1015."
  ],
  "keywords": [
   "a1015",
   "c1815",
   "smd",
-  "discrete transistor",
   "transistor",
   "discrete",
-  "a1015 footprint",
-  "dist-legacy",
-  "tier b",
-  "a1015___c1815_smd",
   "surface",
   "mount",
   "bipolar",
@@ -59,7 +54,7 @@
   "tier_counts": {
    "B": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -74,6 +69,6 @@
  "part_ids": [
   "dist-legacy/A1015 + C1815_SMD"
  ],
- "embedding_text": "discrete-transistor.a1015 | Discrete Transistor | Discrete transistor cluster containing one tier-B entry associated with the A1015 footprint. | a1015 c1815 smd discrete transistor transistor discrete a1015 footprint dist-legacy tier b a1015___c1815_smd surface mount bipolar junction featuring base collector and emitter terminals bjt | A1015 | ",
+ "embedding_text": "discrete-transistor.a1015 | Discrete Transistor | 1 discrete transistor parts using A1015 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | a1015 c1815 smd transistor discrete surface mount bipolar junction featuring base collector and emitter terminals bjt | A1015 | ",
  "class": "discrete.transistor"
 }

@@ -6,30 +6,21 @@
   "Passive",
   "Inductor"
  ],
- "description": "Cluster of 45 passive inductor parts using DIP package footprints sourced from legacy distributor data with tier C review status.",
+ "description": "45 passive inductor parts using DIP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select based on the specific L-DIP-M footprint variant required by the layout.",
-  "Verify part specifications independently as all entries are currently tier C with unverified mounting.",
-  "Confirm package dimensions against the designated DIP footprint."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a DIP land pattern is intended."
  ],
  "avoid_when": [
-  "The board layout requires a package family other than DIP.",
-  "A verified planner-visible part or tier A/B entry is required.",
-  "Specific mounting requirements cannot tolerate unknown mount classifications."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than DIP."
  ],
  "keywords": [
-  "passive inductor",
-  "inductor",
   "dip",
   "passive",
-  "dip package",
-  "passive.inductor",
-  "l-dip-m-10",
-  "l-dip-m-12x5",
-  "l-dip-m-14x7",
-  "l-dip-m-15.5x8",
-  "dist-legacy",
-  "tier c",
+  "inductor",
   "pad",
   "mm",
   "pitch",
@@ -41,7 +32,8 @@
   "12x5",
   "5x13",
   "10x5",
-  "12x6"
+  "12x6",
+  "5x7"
  ],
  "facts": {
   "package_family": "DIP",
@@ -73,7 +65,7 @@
   "tier_counts": {
    "C": 45
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
@@ -123,6 +115,6 @@
   "dist-legacy/L-DIP-D-46x27",
   "dist-legacy/L-DIP-D-47x27"
  ],
- "embedding_text": "passive-inductor.dip | Passive Inductor | Cluster of 45 passive inductor parts using DIP package footprints sourced from legacy distributor data with tier C review status. | passive inductor inductor dip passive dip package passive.inductor l-dip-m-10 l-dip-m-12x5 l-dip-m-14x7 l-dip-m-15.5x8 dist-legacy tier c pad mm pitch pins 5x8 5x5 5x6 5x9 12x5 5x13 10x5 12x6 | DIP | ",
+ "embedding_text": "passive-inductor.dip | Passive Inductor | 45 passive inductor parts using DIP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | dip passive inductor pad mm pitch pins 5x8 5x5 5x6 5x9 12x5 5x13 10x5 12x6 5x7 | DIP | ",
  "class": "passive.inductor"
 }

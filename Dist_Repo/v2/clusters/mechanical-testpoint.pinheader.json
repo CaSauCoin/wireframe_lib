@@ -6,35 +6,29 @@
   "Mechanical",
   "Test Point"
  ],
- "description": "Mechanical test point components in the PinHeader package family utilizing surface-mount (SMD) PinHeader_1x2_P2mm footprints.",
+ "description": "1 mechanical test point parts using PinHeader footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when requiring a 2-pole surface-mount (SMD) mechanical test point.",
-  "Verify compatibility with the PinHeader_1x2_P2mm footprint pattern.",
-  "Confirm suitability of tier B KiCad symbol definitions."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a PinHeader land pattern is intended."
  ],
  "avoid_when": [
-  "Do not use if through-hole mounting is required instead of SMD.",
-  "Avoid when board designs require a footprint or package family other than PinHeader_1x2_P2mm.",
-  "Do not use if single-pole or non-header test point configurations are required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than PinHeader."
  ],
  "keywords": [
-  "test point",
-  "mechanical testpoint",
-  "pinheader",
-  "pinheader_1x2_p2mm",
-  "smd",
-  "2pole",
-  "1x2",
-  "p2mm",
-  "kicad-symbols",
-  "testpoint_2pole",
-  "mechanical",
   "point",
   "test",
+  "pinheader",
   "testpoint",
+  "2pole",
   "connector",
   "polar",
-  "tp"
+  "1x2",
+  "p2mm",
+  "tp",
+  "mechanical"
  ],
  "facts": {
   "package_family": "PinHeader",
@@ -55,7 +49,7 @@
   "tier_counts": {
    "B": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -70,6 +64,6 @@
  "part_ids": [
   "kicad-symbols/Connector/TestPoint_2Pole"
  ],
- "embedding_text": "mechanical-testpoint.pinheader | Mechanical Test Point | Mechanical test point components in the PinHeader package family utilizing surface-mount (SMD) PinHeader_1x2_P2mm footprints. | test point mechanical testpoint pinheader pinheader_1x2_p2mm smd 2pole 1x2 p2mm kicad-symbols testpoint_2pole mechanical point test testpoint connector polar tp | PinHeader | ",
+ "embedding_text": "mechanical-testpoint.pinheader | Mechanical Test Point | 1 mechanical test point parts using PinHeader footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | point test pinheader testpoint 2pole connector polar 1x2 p2mm tp mechanical | PinHeader | ",
  "class": "mechanical.testpoint"
 }

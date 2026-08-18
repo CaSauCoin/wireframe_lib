@@ -6,42 +6,34 @@
   "Connector",
   "Terminal Block"
  ],
- "description": "3-position PCB terminal block connector cluster with 2 tier-C parts from a legacy source, using the 3P_PCB_TERM_BLOCK_HDR footprint; mount type is unspecified and no part is marked planner-visible.",
+ "description": "2 connector terminal block parts using 3P footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Confirm the 3P_PCB_TERM_BLOCK_HDR footprint matches your intended land pattern before committing.",
-  "Both available parts are tier C sourced from dist-legacy; verify specs independently.",
-  "Mount style (THT/SMD) is not recorded here — check the part or footprint directly."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a 3P land pattern is intended."
  ],
  "avoid_when": [
-  "You require a higher-tier or planner-visible part (none exist in this cluster yet).",
-  "You need a terminal block with a pin count other than 3 positions.",
-  "You need confirmed electrical ratings, dimensions, or mounting style, since none are stated."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than 3P."
  ],
  "keywords": [
-  "terminal block",
-  "3p",
-  "3-position",
-  "3 pin",
-  "connector",
-  "pcb terminal block",
-  "terminal block header",
-  "hdr",
-  "block header",
-  "3p_pcb_term_block_hdr",
-  "legacy source",
-  "tier c",
-  "generated",
-  "unknown mount",
   "block",
+  "3p",
   "pcb",
   "term",
+  "hdr",
   "terminal",
+  "connector",
   "duplica",
   "pin",
   "mm",
   "pitch",
   "header",
-  "bare"
+  "bare",
+  "land",
+  "pattern",
+  "for"
  ],
  "facts": {
   "package_family": "3P",
@@ -62,13 +54,13 @@
   "tier_counts": {
    "C": 2
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
   "dist-legacy/3P_PCB_TERM_BLOCK_HDR - duplica",
   "dist-legacy/3P_PCB_TERM_BLOCK_HDR"
  ],
- "embedding_text": "connector-terminal-block.3p | Connector Terminal Block | 3-position PCB terminal block connector cluster with 2 tier-C parts from a legacy source, using the 3P_PCB_TERM_BLOCK_HDR footprint; mount type is unspecified and no part is marked planner-visible. | terminal block 3p 3-position 3 pin connector pcb terminal block terminal block header hdr block header 3p_pcb_term_block_hdr legacy source tier c generated unknown mount block pcb term terminal duplica pin mm pitch header bare | 3P | ",
+ "embedding_text": "connector-terminal-block.3p | Connector Terminal Block | 2 connector terminal block parts using 3P footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | block 3p pcb term hdr terminal connector duplica pin mm pitch header bare land pattern for | 3P | ",
  "class": "connector.terminal_block"
 }

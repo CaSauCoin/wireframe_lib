@@ -7,37 +7,32 @@
   "Power",
   "Switching Regulator"
  ],
- "description": "Generic cluster containing switching regulator IC entries from KiCad symbols with package assignment deferred.",
+ "description": "2 ic power switching regulator parts with package chosen later. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select an explicit package footprint prior to PCB layout.",
-  "Choose between available part variants KA5H0265RCTU and KA5H0265RCYDTU.",
-  "Verify part ratings and pinouts against official documentation."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Select a footprint/package explicitly before placement."
  ],
  "avoid_when": [
-  "A pre-defined PCB footprint or package family is strictly required.",
-  "Parts rated above quality tier G are required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review."
  ],
  "keywords": [
-  "ic",
-  "power",
-  "switching regulator",
-  "switching",
   "regulator",
-  "ka5h0265rctu",
-  "ka5h0265rcydtu",
-  "kicad-symbols",
-  "package chosen later",
-  "tier g",
+  "switching",
   "smps",
   "controller",
   "ac",
   "dc",
+  "ka5h0265rctu",
   "100khz",
   "soft",
   "start",
   "to",
   "220f",
   "5l",
+  "ic",
+  "power",
   "package"
  ],
  "facts": {
@@ -55,7 +50,7 @@
   "tier_counts": {
    "G": 2
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -79,6 +74,6 @@
   "kicad-symbols/Regulator_Switching/KA5H0265RCTU",
   "kicad-symbols/Regulator_Switching/KA5H0265RCYDTU"
  ],
- "embedding_text": "ic-power-switching.generic | IC Power Switching Regulator | Generic cluster containing switching regulator IC entries from KiCad symbols with package assignment deferred. | ic power switching regulator switching regulator ka5h0265rctu ka5h0265rcydtu kicad-symbols package chosen later tier g smps controller ac dc 100khz soft start to 220f 5l package | package chosen later | ",
+ "embedding_text": "ic-power-switching.generic | IC Power Switching Regulator | 2 ic power switching regulator parts with package chosen later. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | regulator switching smps controller ac dc ka5h0265rctu 100khz soft start to 220f 5l ic power package | package chosen later | ",
  "class": "ic.power.switching"
 }

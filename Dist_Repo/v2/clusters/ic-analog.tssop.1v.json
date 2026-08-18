@@ -6,31 +6,23 @@
   "IC",
   "Analog"
  ],
- "description": "Analog IC cluster in surface-mount TSSOP packaging associated with 1V operation, featuring footprint TSSOP-16_4.4x5mm_P0.65mm and representative part PGA281AxPW.",
+ "description": "1 ic analog parts for 1V using TSSOP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when requiring surface-mount analog ICs in TSSOP packaging with 1V classification.",
-  "Verify compatibility with TSSOP-16_4.4x5mm_P0.65mm footprint and pin-to-pad mappings.",
-  "Prefer tier A parts with KiCad symbol source validation."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a TSSOP land pattern is intended."
  ],
  "avoid_when": [
-  "The design requires packages other than surface-mount TSSOP.",
-  "The PCB footprint differs from TSSOP-16_4.4x5mm_P0.65mm or requires through-hole mounting.",
-  "Required electrical specifications or voltage levels are not satisfied by the cluster parts."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than TSSOP."
  ],
  "keywords": [
-  "ic",
-  "analog",
-  "ic.analog",
   "tssop",
-  "1v",
-  "smd",
-  "tssop-16",
-  "tssop-16_4.4x5mm_p0.65mm",
-  "pga281axpw",
-  "kicad-symbols",
-  "4.4x5mm",
-  "p0.65mm",
+  "analog",
   "gain",
+  "1v",
+  "pga281axpw",
   "zero",
   "drift",
   "programmable",
@@ -64,7 +56,7 @@
   "tier_counts": {
    "A": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -79,6 +71,6 @@
  "part_ids": [
   "kicad-symbols/Analog/PGA281AxPW"
  ],
- "embedding_text": "ic-analog.tssop.1v | IC Analog | Analog IC cluster in surface-mount TSSOP packaging associated with 1V operation, featuring footprint TSSOP-16_4.4x5mm_P0.65mm and representative part PGA281AxPW. | ic analog ic.analog tssop 1v smd tssop-16 tssop-16_4.4x5mm_p0.65mm pga281axpw kicad-symbols 4.4x5mm p0.65mm gain zero drift programmable amplifier or 125v scaling factor 4x5mm p0 65mm | TSSOP | 1V",
+ "embedding_text": "ic-analog.tssop.1v | IC Analog | 1 ic analog parts for 1V using TSSOP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | tssop analog gain 1v pga281axpw zero drift programmable amplifier or 125v scaling factor 4x5mm p0 65mm | TSSOP | 1V",
  "class": "ic.analog"
 }

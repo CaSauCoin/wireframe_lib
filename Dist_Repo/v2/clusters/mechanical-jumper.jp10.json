@@ -6,31 +6,21 @@
   "Mechanical",
   "Jumper"
  ],
- "description": "Mechanical jumper cluster in the JP10 package family containing 9 tier C parts across various JP10 footprint variants.",
+ "description": "9 mechanical jumper parts using JP10 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select based on the required JP10 footprint variant.",
-  "Verify physical footprint details as the mounting type is listed as unknown.",
-  "Confirm entry suitability as all 9 parts are tier C items."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a JP10 land pattern is intended."
  ],
  "avoid_when": [
-  "The design requires a package family other than JP10.",
-  "A non-JP10 footprint pattern is needed for the PCB layout.",
-  "Higher quality tier components or verified mounting specifications are required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than JP10."
  ],
  "keywords": [
-  "mechanical jumper",
   "jp10",
   "mechanical",
   "jumper",
-  "jp10-c1c",
-  "jp10-c1t",
-  "jp10-c2c",
-  "jp10-c2t",
-  "jp10-d1c",
-  "jp10-d1t",
-  "jp10-d2t",
-  "jp10-d2c",
-  "jp10_1",
   "pad",
   "mm",
   "pitch",
@@ -41,7 +31,8 @@
   "c2t",
   "d1c",
   "d1t",
-  "d2t"
+  "d2t",
+  "d2c"
  ],
  "facts": {
   "package_family": "JP10",
@@ -70,7 +61,7 @@
   "tier_counts": {
    "C": 9
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
@@ -84,6 +75,6 @@
   "dist-legacy/JP10_1",
   "dist-legacy/JP10-D2C"
  ],
- "embedding_text": "mechanical-jumper.jp10 | Mechanical Jumper | Mechanical jumper cluster in the JP10 package family containing 9 tier C parts across various JP10 footprint variants. | mechanical jumper jp10 mechanical jumper jp10-c1c jp10-c1t jp10-c2c jp10-c2t jp10-d1c jp10-d1t jp10-d2t jp10-d2c jp10_1 pad mm pitch pins c1c c1t c2c c2t d1c d1t d2t | JP10 | ",
+ "embedding_text": "mechanical-jumper.jp10 | Mechanical Jumper | 9 mechanical jumper parts using JP10 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | jp10 mechanical jumper pad mm pitch pins c1c c1t c2c c2t d1c d1t d2t d2c | JP10 | ",
  "class": "mechanical.jumper"
 }

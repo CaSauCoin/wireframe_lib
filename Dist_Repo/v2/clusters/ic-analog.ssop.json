@@ -6,42 +6,34 @@
   "IC",
   "Analog"
  ],
- "description": "Analog IC cluster containing 20 SMD components in SSOP packages (including 14, 16, 20, and 24-pin variants) from standard and alternate KiCad symbol libraries.",
+ "description": "20 ic analog parts using SSOP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select based on required pin count and SSOP footprint dimensions such as SSOP-14, SSOP-16, SSOP-20, or SSOP-24.",
-  "Verify lead pitch (0.635mm vs 0.65mm) and package body dimensions match the land pattern.",
-  "Prefer tier A parts when higher library quality status is desired."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SSOP land pattern is intended."
  ],
  "avoid_when": [
-  "Through-hole mounting is required instead of SMD.",
-  "The PCB design requires packages other than SSOP.",
-  "Non-analog or pure digital integrated circuits are needed."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SSOP."
  ],
  "keywords": [
   "ssop",
-  "ic",
   "analog",
-  "smd",
-  "ssop-14",
-  "ssop-16",
-  "ssop-20",
-  "ssop-24",
-  "0.635mm",
-  "0.65mm",
-  "kicad-symbols",
-  "alternate-kicad-library",
-  "dac1220e",
-  "mlx90320xfr",
-  "ad604ars",
-  "adcmp551brqz",
   "comparator",
+  "ic",
   "ultrafast",
   "dual",
   "p0",
   "voltage",
   "complementary",
   "adc",
-  "akl"
+  "akl",
+  "alternate",
+  "kicad",
+  "library",
+  "635mm",
+  "propagation"
  ],
  "facts": {
   "package_family": "SSOP",
@@ -69,7 +61,7 @@
    "A": 14,
    "B": 6
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -135,6 +127,6 @@
   "kicad-symbols/Analog_ADC/LTC1598CG",
   "kicad-symbols/Analog_ADC/LTC1598IG"
  ],
- "embedding_text": "ic-analog.ssop | IC Analog | Analog IC cluster containing 20 SMD components in SSOP packages (including 14, 16, 20, and 24-pin variants) from standard and alternate KiCad symbol libraries. | ssop ic analog smd ssop-14 ssop-16 ssop-20 ssop-24 0.635mm 0.65mm kicad-symbols alternate-kicad-library dac1220e mlx90320xfr ad604ars adcmp551brqz comparator ultrafast dual p0 voltage complementary adc akl | SSOP | ",
+ "embedding_text": "ic-analog.ssop | IC Analog | 20 ic analog parts using SSOP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | ssop analog comparator ic ultrafast dual p0 voltage complementary adc akl alternate kicad library 635mm propagation | SSOP | ",
  "class": "ic.analog"
 }

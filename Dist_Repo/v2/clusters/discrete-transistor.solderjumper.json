@@ -6,39 +6,34 @@
   "Discrete",
   "Transistor"
  ],
- "description": "A cluster of 22 SMD discrete transistor entries associated with SolderJumper package footprints featuring 1.3mm pitch and 1.0x1.5mm pad variants.",
+ "description": "22 discrete transistor parts using SolderJumper footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when requiring SMD discrete transistor parts matching SolderJumper footprints.",
-  "Choose based on specific footprint features such as pad shape, bridging layout, and number labels.",
-  "Verify footprint requirements for 1.3mm pitch and 1.0x1.5mm pad geometry."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SolderJumper land pattern is intended."
  ],
  "avoid_when": [
-  "Avoid if board layout requires package footprints other than SolderJumper.",
-  "Do not use when surface-mount (SMD) packaging is not appropriate.",
-  "Avoid if tier C quality classification does not meet application standards."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SolderJumper."
  ],
  "keywords": [
-  "discrete transistor",
   "solderjumper",
-  "smd",
-  "discrete",
-  "transistor",
-  "p1.3mm",
-  "pad1.0x1.5mm",
-  "bridged",
-  "roundedpad",
-  "numberlabels",
   "5mm",
   "3mm",
   "0x1",
   "p1",
+  "numberlabels",
   "pad1",
   "roundedpad1",
+  "discrete",
+  "transistor",
   "solder",
   "jumper",
   "open",
   "pads",
-  "pad"
+  "pad",
+  "bridged"
  ],
  "facts": {
   "package_family": "SolderJumper",
@@ -70,7 +65,7 @@
   "tier_counts": {
    "C": 22
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
@@ -97,6 +92,6 @@
   "dist-legacy/SolderJumper-3_P2.0mm_Open_TrianglePad1.0x1.5mm",
   "dist-legacy/SolderJumper-3_P2.0mm_Open_TrianglePad1.0x1.5mm_NumberLabels"
  ],
- "embedding_text": "discrete-transistor.solderjumper | Discrete Transistor | A cluster of 22 SMD discrete transistor entries associated with SolderJumper package footprints featuring 1.3mm pitch and 1.0x1.5mm pad variants. | discrete transistor solderjumper smd discrete transistor p1.3mm pad1.0x1.5mm bridged roundedpad numberlabels 5mm 3mm 0x1 p1 pad1 roundedpad1 solder jumper open pads pad | SolderJumper | ",
+ "embedding_text": "discrete-transistor.solderjumper | Discrete Transistor | 22 discrete transistor parts using SolderJumper footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | solderjumper 5mm 3mm 0x1 p1 numberlabels pad1 roundedpad1 discrete transistor solder jumper open pads pad bridged | SolderJumper | ",
  "class": "discrete.transistor"
 }

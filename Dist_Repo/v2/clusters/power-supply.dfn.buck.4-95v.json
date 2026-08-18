@@ -6,29 +6,19 @@
   "Power",
   "Power Supply"
  ],
- "description": "Surface-mount buck power supply components rated for 4.95V in 12-lead DFN packages.",
+ "description": "2 power power supply parts for buck, 4.95V using DFN footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Verify compatibility with the DFN-12-1EP exposed-pad footprint.",
-  "Confirm the 4.95V buck regulation specification suits circuit requirements.",
-  "Select between LT3652EDD and LT3652IDD part variants based on application needs."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a DFN land pattern is intended."
  ],
  "avoid_when": [
-  "The circuit requires non-DFN packaging or through-hole mounting.",
-  "The application requires a topology other than buck regulation.",
-  "Target operating voltage differs from 4.95V."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than DFN."
  ],
  "keywords": [
-  "power supply",
-  "buck",
-  "4.95v",
   "dfn",
-  "smd",
-  "surface mount",
-  "dfn-12",
-  "lt3652edd",
-  "lt3652idd",
-  "battery management",
-  "step down",
   "battery",
   "power",
   "charger",
@@ -41,7 +31,9 @@
   "down",
   "for",
   "phosphate",
-  "lifepo4"
+  "lifepo4",
+  "lead",
+  "pb"
  ],
  "facts": {
   "package_family": "DFN",
@@ -65,7 +57,7 @@
   "tier_counts": {
    "A": 2
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -89,6 +81,6 @@
   "kicad-symbols/Battery_Management/LT3652EDD",
   "kicad-symbols/Battery_Management/LT3652IDD"
  ],
- "embedding_text": "power-supply.dfn.buck.4-95v | Power Power Supply | Surface-mount buck power supply components rated for 4.95V in 12-lead DFN packages. | power supply buck 4.95v dfn smd surface mount dfn-12 lt3652edd lt3652idd battery management step down battery power charger solar lithium 95v to management step down for phosphate lifepo4 | DFN | buck 4.95V",
+ "embedding_text": "power-supply.dfn.buck.4-95v | Power Power Supply | 2 power power supply parts for buck, 4.95V using DFN footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | dfn battery power charger solar lithium 95v to management step down for phosphate lifepo4 lead pb | DFN | buck 4.95V",
  "class": "power.supply"
 }

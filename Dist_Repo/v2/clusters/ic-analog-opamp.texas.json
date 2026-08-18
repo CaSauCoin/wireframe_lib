@@ -7,42 +7,34 @@
   "Analog",
   "Op-Amp"
  ],
- "description": "Cluster of 5 SMD IC analog op-amp parts using Texas package family footprints.",
+ "description": "5 ic analog op-amp parts using Texas footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select parts matching specific Texas SMD footprints such as S-PWSON-N8, R-PDSO-G8, R-PDSO-G5, or X2SON-5.",
-  "Verify component source between kicad-symbols and Alternate-KiCad-Library.",
-  "Choose between operational and instrumentation amplifier part options."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a Texas land pattern is intended."
  ],
  "avoid_when": [
-  "Through-hole mounting is required.",
-  "Designs require footprints outside the Texas package family.",
-  "Tier A quality rated parts are strictly required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than Texas."
  ],
  "keywords": [
-  "ic",
-  "analog",
-  "op-amp",
-  "opamp",
-  "operational amplifier",
-  "instrumentation amplifier",
-  "texas",
-  "smd",
-  "s-pwson-n8",
-  "r-pdso-g8",
-  "r-pdso-g5",
-  "x2son-5",
-  "ina188",
-  "ina826",
-  "ths3491",
-  "opa810",
-  "tlv9061",
   "amplifier",
+  "texas",
   "instrumentation",
   "rail",
   "operational",
+  "ic",
+  "analog",
   "op",
   "amp",
-  "to"
+  "to",
+  "precision",
+  "mhz",
+  "pdso",
+  "opamp",
+  "single",
+  "x2son"
  ],
  "facts": {
   "package_family": "Texas",
@@ -68,7 +60,7 @@
   "tier_counts": {
    "B": 5
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -119,6 +111,6 @@
   "kicad-symbols/Amplifier_Operational/OPA810xDCK",
   "kicad-symbols/Amplifier_Operational/TLV9061xDPW"
  ],
- "embedding_text": "ic-analog-opamp.texas | IC Analog Op-Amp | Cluster of 5 SMD IC analog op-amp parts using Texas package family footprints. | ic analog op-amp opamp operational amplifier instrumentation amplifier texas smd s-pwson-n8 r-pdso-g8 r-pdso-g5 x2son-5 ina188 ina826 ths3491 opa810 tlv9061 amplifier instrumentation rail operational op amp to | Texas | ",
+ "embedding_text": "ic-analog-opamp.texas | IC Analog Op-Amp | 5 ic analog op-amp parts using Texas footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | amplifier texas instrumentation rail operational ic analog op amp to precision mhz pdso opamp single x2son | Texas | ",
  "class": "ic.analog.opamp"
 }

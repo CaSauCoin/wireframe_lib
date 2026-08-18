@@ -7,38 +7,30 @@
   "Power",
   "Converter"
  ],
- "description": "Cluster of 7 IC power converter parts for 9V buck conversion with SMD and through-hole mounting options.",
+ "description": "7 ic power converter parts for buck, 9V using Converter footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select between surface-mount (SMD) and through-hole (THT) footprint options.",
-  "Choose between TSR0.5, TSR0.6, TSR1, and TSR2 series footprint variants.",
-  "Prefer Tier A rated parts over Tier B parts."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a Converter land pattern is intended."
  ],
  "avoid_when": [
-  "A converter topology other than buck or an output voltage other than 9V is required.",
-  "The board layout requires packages outside the Converter package family.",
-  "A surface-mount or through-hole DC-DC converter is not suitable for the design."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than Converter."
  ],
  "keywords": [
-  "ic",
-  "power converter",
-  "buck",
-  "9v",
   "converter",
-  "smd",
-  "through hole",
-  "tht",
   "dcdc",
-  "tsr",
-  "tsr0.5",
-  "tsr0.6",
-  "tsr1",
-  "tsr2",
   "traco",
+  "9v",
   "voltage",
   "step",
   "down",
   "regulator",
+  "tht",
   "tsr0",
+  "buck",
+  "tsr2",
   "fixed",
   "output",
   "input",
@@ -73,7 +65,7 @@
    "A": 1,
    "B": 6
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -126,6 +118,6 @@
   "kicad-symbols/Converter_DCDC/TSR2-2490N",
   "kicad-symbols/Converter_DCDC/TSR3-2490N"
  ],
- "embedding_text": "ic-power-converter.converter.buck.9v | IC Power Converter | Cluster of 7 IC power converter parts for 9V buck conversion with SMD and through-hole mounting options. | ic power converter buck 9v converter smd through hole tht dcdc tsr tsr0.5 tsr0.6 tsr1 tsr2 traco voltage step down regulator tsr0 fixed output input to | Converter | buck 9V",
+ "embedding_text": "ic-power-converter.converter.buck.9v | IC Power Converter | 7 ic power converter parts for buck, 9V using Converter footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | converter dcdc traco 9v voltage step down regulator tht tsr0 buck tsr2 fixed output input to | Converter | buck 9V",
  "class": "ic.power.converter"
 }

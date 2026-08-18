@@ -5,35 +5,20 @@
  "category_path": [
   "IC"
  ],
- "description": "IC component cluster containing 12 surface-mount parts using PICOBLADE package footprints ranging from 5 to 17 pins.",
+ "description": "12 ic parts using PICOBLADE footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when surface-mount (SMD) IC components with PICOBLADE footprints are required.",
-  "Choose based on the specific footprint pin count needed from PICOBLADE_5 through PICOBLADE_17.",
-  "Verify part suitability from the chilaboard-altium-library source."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a PICOBLADE land pattern is intended."
  ],
  "avoid_when": [
-  "Through-hole mounting is required instead of surface-mount.",
-  "The board layout requires a package family other than PICOBLADE.",
-  "Required pin counts fall outside the available 5 to 17 pin footprint variants."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than PICOBLADE."
  ],
  "keywords": [
-  "ic",
   "picoblade",
-  "smd",
-  "surface mount",
-  "chilaboard-altium-library",
-  "picoblade_5",
-  "picoblade_6",
-  "picoblade_7",
-  "picoblade_8",
-  "picoblade_9",
-  "picoblade_10",
-  "picoblade_11",
-  "picoblade_12",
-  "picoblade_13",
-  "picoblade_14",
-  "picoblade_15",
-  "picoblade_17",
+  "ic",
   "surface",
   "mount",
   "pad",
@@ -71,7 +56,7 @@
   "tier_counts": {
    "C": 12
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
@@ -88,6 +73,6 @@
   "chilaboard-altium-library/PICOBLADE_8/PICOBLADE_8",
   "chilaboard-altium-library/PICOBLADE_9/PICOBLADE_9"
  ],
- "embedding_text": "ic.picoblade | IC | IC component cluster containing 12 surface-mount parts using PICOBLADE package footprints ranging from 5 to 17 pins. | ic picoblade smd surface mount chilaboard-altium-library picoblade_5 picoblade_6 picoblade_7 picoblade_8 picoblade_9 picoblade_10 picoblade_11 picoblade_12 picoblade_13 picoblade_14 picoblade_15 picoblade_17 surface mount pad mm pitch pins | PICOBLADE | ",
+ "embedding_text": "ic.picoblade | IC | 12 ic parts using PICOBLADE footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | picoblade ic surface mount pad mm pitch pins | PICOBLADE | ",
  "class": "ic"
 }

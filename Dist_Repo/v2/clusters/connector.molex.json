@@ -5,44 +5,34 @@
  "category_path": [
   "Connector"
  ],
- "description": "Cluster of 1210 Molex-footprint connector parts (single-row 0.5mm vertical, Micro-Fit 3.0 3.00mm vertical, dual-row 0.5/0.6mm horizontal/vertical); mostly low-tier, generated entries needing footprint verification.",
+ "description": "1210 connector parts using Molex footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Match exact footprint pitch and pin count (e.g. 0.5mm 1-row, 3.00mm Micro-Fit 2x0N, or 0.6mm 2-row horizontal) to the intended Molex land pattern.",
-  "Prefer tier A entries (11 of 1210) with a confirmed footprint over the much larger tier C set (1102, review_status: generated).",
-  "Confirm mount type needed (smd vs through_hole) against the part's listed mount before layout.",
-  "Cross-check source trust (dist-legacy vs kicad-symbols vs celestial-altium-library vs digikey-kicad-library) when multiple candidates share a footprint."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a Molex land pattern is intended."
  ],
  "avoid_when": [
-  "The exact Molex part number or footprint pitch/pin-count is not confirmed for the selected entry.",
-  "Required electrical ratings (voltage, current) are needed but not stated by the part.",
-  "The board requires a mount type (smd or through_hole) not matching the part's listed mount.",
-  "The design needs a non-Molex footprint or connector family."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than Molex."
  ],
  "keywords": [
   "molex",
   "connector",
-  "micro-fit",
-  "micro-fit 3.0",
   "vertical",
   "horizontal",
-  "through hole",
-  "smd",
-  "dual row",
-  "single row",
-  "0.5mm pitch",
-  "3.00mm pitch",
-  "0.6mm pitch",
-  "mounting pin",
-  "header",
-  "pin connector",
-  "board-to-board",
-  "wire-to-board",
   "fit",
   "sd",
   "00mm",
   "pins",
   "1mp",
-  "p2"
+  "p2",
+  "pitch",
+  "micro",
+  "mm",
+  "p1",
+  "pad",
+  "p3"
  ],
  "facts": {
   "package_family": "Molex",
@@ -81,7 +71,7 @@
    "B": 97,
    "C": 1102
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -1337,6 +1327,6 @@
   "dist-legacy/molex_EDGELOCK_6-CKT",
   "dist-legacy/molex_EDGELOCK_8-CKT"
  ],
- "embedding_text": "connector.molex | Connector | Cluster of 1210 Molex-footprint connector parts (single-row 0.5mm vertical, Micro-Fit 3.0 3.00mm vertical, dual-row 0.5/0.6mm horizontal/vertical); mostly low-tier, generated entries needing footprint verification. | molex connector micro-fit micro-fit 3.0 vertical horizontal through hole smd dual row single row 0.5mm pitch 3.00mm pitch 0.6mm pitch mounting pin header pin connector board-to-board wire-to-board fit sd 00mm pins 1mp p2 | Molex | ",
+ "embedding_text": "connector.molex | Connector | 1210 connector parts using Molex footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | molex connector vertical horizontal fit sd 00mm pins 1mp p2 pitch micro mm p1 pad p3 | Molex | ",
  "class": "connector"
 }

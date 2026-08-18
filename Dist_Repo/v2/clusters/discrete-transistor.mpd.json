@@ -6,32 +6,23 @@
   "Discrete",
   "Transistor"
  ],
- "description": "A cluster of 4 discrete transistor parts in the MPD package family featuring through-hole footprints.",
+ "description": "4 discrete transistor parts using MPD footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when using discrete transistor components in the MPD package family.",
-  "Confirm compatibility with footprints like MPD, MPD BC2AAPC, or MPD BH9VPC.",
-  "Review tier B and tier C quality designations before selecting a part."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a MPD land pattern is intended."
  ],
  "avoid_when": [
-  "Avoid when the board design requires non-MPD package footprints.",
-  "Avoid if surface-mount packaging is required.",
-  "Avoid when tier B or tier C library parts do not meet project requirements."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than MPD."
  ],
  "keywords": [
-  "discrete",
-  "transistor",
-  "discrete transistor",
   "mpd",
-  "mpd bc2aapc",
-  "mpd bh9vpc",
-  "mpd_bc2aapc",
-  "mpd_bh9vpc",
-  "through_hole",
-  "through hole",
-  "dist-legacy",
-  "celestial-altium-library",
+  "transistor",
   "bc2aapc",
   "bh9vpc",
+  "discrete",
   "pin",
   "three",
   "bipolar",
@@ -41,7 +32,8 @@
   "and",
   "emitter",
   "terminals",
-  "bjt"
+  "bjt",
+  "through"
  ],
  "facts": {
   "package_family": "MPD",
@@ -67,7 +59,7 @@
    "B": 2,
    "C": 2
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -93,6 +85,6 @@
   "celestial-altium-library/MPD BC2AAPC/MPD_BC2AAPC",
   "celestial-altium-library/MPD BH9VPC/MPD_BH9VPC"
  ],
- "embedding_text": "discrete-transistor.mpd | Discrete Transistor | A cluster of 4 discrete transistor parts in the MPD package family featuring through-hole footprints. | discrete transistor discrete transistor mpd mpd bc2aapc mpd bh9vpc mpd_bc2aapc mpd_bh9vpc through_hole through hole dist-legacy celestial-altium-library bc2aapc bh9vpc pin three bipolar with base collector and emitter terminals bjt | MPD | ",
+ "embedding_text": "discrete-transistor.mpd | Discrete Transistor | 4 discrete transistor parts using MPD footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | mpd transistor bc2aapc bh9vpc discrete pin three bipolar with base collector and emitter terminals bjt through | MPD | ",
  "class": "discrete.transistor"
 }

@@ -6,34 +6,22 @@
   "Discrete",
   "Transistor"
  ],
- "description": "Discrete transistor cluster containing 7 SMD parts categorized under 8V across SOT footprints including SOT-143, SOT-143R_Reverse, SOT-343_SC-70-4, and SOT-363_SC-70-6 from Alternate-KiCad-Library.",
+ "description": "7 discrete transistor parts for 8V using SOT footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select based on required footprint such as SOT-143, SOT-143R_Reverse, SOT-343_SC-70-4, or SOT-363_SC-70-6.",
-  "Choose when requiring 8V surface-mount discrete transistors from Alternate-KiCad-Library.",
-  "Select specific part models such as BF2040, BF2040R, BF2040W, BF5030, or BF5030R."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SOT land pattern is intended."
  ],
  "avoid_when": [
-  "The design requires package families other than SOT or non-SMD mounting.",
-  "Voltage requirements differ from the 8V facet.",
-  "Components outside the discrete transistor category are needed."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SOT."
  ],
  "keywords": [
-  "discrete",
+  "sot",
+  "mosfet",
   "transistor",
   "8v",
-  "sot",
-  "smd",
-  "sot-143",
-  "sot-143r_reverse",
-  "sot-343_sc-70-4",
-  "sot-363_sc-70-6",
-  "alternate-kicad-library",
-  "bf2040",
-  "bf2040r",
-  "bf2040w",
-  "bf5030",
-  "bf5030r",
-  "mosfet",
   "enhancement",
   "tetrode",
   "mos",
@@ -41,7 +29,11 @@
   "alternate",
   "kicad",
   "library",
-  "nmos"
+  "nmos",
+  "emos",
+  "emosfet",
+  "discrete",
+  "mode"
  ],
  "facts": {
   "package_family": "SOT",
@@ -67,7 +59,7 @@
   "tier_counts": {
    "A": 7
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -120,6 +112,6 @@
   "Alternate-KiCad-Library/Transistor_MOSFET_AKL/BF5030W",
   "Alternate-KiCad-Library/Transistor_MOSFET_AKL/NTJD4105C"
  ],
- "embedding_text": "discrete-transistor.sot.8v | Discrete Transistor | Discrete transistor cluster containing 7 SMD parts categorized under 8V across SOT footprints including SOT-143, SOT-143R_Reverse, SOT-343_SC-70-4, and SOT-363_SC-70-6 from Alternate-KiCad-Library. | discrete transistor 8v sot smd sot-143 sot-143r_reverse sot-343_sc-70-4 sot-363_sc-70-6 alternate-kicad-library bf2040 bf2040r bf2040w bf5030 bf5030r mosfet enhancement tetrode mos akl alternate kicad library nmos | SOT | 8V",
+ "embedding_text": "discrete-transistor.sot.8v | Discrete Transistor | 7 discrete transistor parts for 8V using SOT footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | sot mosfet transistor 8v enhancement tetrode mos akl alternate kicad library nmos emos emosfet discrete mode | SOT | 8V",
  "class": "discrete.transistor"
 }

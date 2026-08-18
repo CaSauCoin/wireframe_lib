@@ -6,42 +6,34 @@
   "IC",
   "Analog"
  ],
- "description": "Analog IC cluster comprising 9 surface-mount parts across PLCC package footprints including PLCC-20, PLCC-28, PLCC-44, and PLCC-20_SMD-Socket.",
+ "description": "9 ic analog parts using PLCC footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Verify the required PLCC footprint pin count such as PLCC-20, PLCC-28, or PLCC-44.",
-  "Select surface-mount (SMD) mounting compatible with PLCC land patterns or SMD sockets.",
-  "Confirm part suitability among tier B entries sourced from KiCad libraries."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a PLCC land pattern is intended."
  ],
  "avoid_when": [
-  "Through-hole mounting or non-PLCC package footprints are required.",
-  "Footprints outside of PLCC-20, PLCC-28, PLCC-44, or PLCC-20_SMD-Socket are needed.",
-  "Parts with Quality Tier A rating are strictly required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than PLCC."
  ],
  "keywords": [
-  "ic",
-  "analog",
-  "ic.analog",
   "plcc",
-  "smd",
-  "plcc-20",
-  "plcc-28",
-  "plcc-44",
-  "plcc-20_smd-socket",
-  "ad7224kp",
-  "ad7224lp",
-  "ad7225kp",
-  "ad7225lp",
-  "ad7226kp",
   "dac",
+  "analog",
   "8bit",
   "smt",
+  "ic",
   "single",
   "reference",
   "dual",
   "supply",
   "quad",
   "voltage",
-  "4ch"
+  "4ch",
+  "channel",
+  "or",
+  "separate"
  ],
  "facts": {
   "package_family": "PLCC",
@@ -66,7 +58,7 @@
   "tier_counts": {
    "B": 9
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -121,6 +113,6 @@
   "kicad-symbols/Analog_Switch/DG884DN",
   "Alternate-KiCad-Library/Analog_AKL/AD585JP"
  ],
- "embedding_text": "ic-analog.plcc | IC Analog | Analog IC cluster comprising 9 surface-mount parts across PLCC package footprints including PLCC-20, PLCC-28, PLCC-44, and PLCC-20_SMD-Socket. | ic analog ic.analog plcc smd plcc-20 plcc-28 plcc-44 plcc-20_smd-socket ad7224kp ad7224lp ad7225kp ad7225lp ad7226kp dac 8bit smt single reference dual supply quad voltage 4ch | PLCC | ",
+ "embedding_text": "ic-analog.plcc | IC Analog | 9 ic analog parts using PLCC footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | plcc dac analog 8bit smt ic single reference dual supply quad voltage 4ch channel or separate | PLCC | ",
  "class": "ic.analog"
 }

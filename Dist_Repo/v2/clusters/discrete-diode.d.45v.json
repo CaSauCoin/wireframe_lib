@@ -6,44 +6,34 @@
   "Discrete",
   "Diode"
  ],
- "description": "Cluster of 32 discrete diode parts under the 45V facet, using D-family footprints (D_SMC, D_SMA, D_SMB, D_SOD-123F, D_DO-201AD, D_P600, D_PowerDI-123) including standard, TVS, and Zener footprint variants, in SMD and through-hole mounts.",
+ "description": "32 discrete diode parts for 45V using D footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Match the exact D footprint variant (e.g. SMC, SMA, SMB, SOD-123F, DO-201AD, P600, PowerDI-123) to the intended land pattern.",
-  "Distinguish standard, TVS, and Zener footprint variants (e.g. D_SMC vs D_SMC_TVS) before substituting parts.",
-  "Prefer tier A entries (31 of 32 parts are tier A) for higher confidence.",
-  "Confirm SMD vs through-hole mount matches the board assembly process."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a D land pattern is intended."
  ],
  "avoid_when": [
-  "The required footprint is not one of the listed D-family variants.",
-  "A voltage facet other than 45V is needed.",
-  "Standard, TVS, and Zener variants are not distinguished for the target function.",
-  "review_status is 'generated' and the part has not been verified against a datasheet."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than D."
  ],
  "keywords": [
-  "discrete diode",
   "diode",
   "tvs",
-  "zener",
   "45v",
-  "d package",
-  "d_smc",
-  "d_sma",
-  "d_smb",
-  "d_sod-123f",
-  "d_do-201ad",
-  "d_p600",
-  "d_powerdi-123",
-  "smd",
-  "through hole",
-  "horizontal",
-  "alternate kicad library",
   "akl",
   "unidirectional",
   "alternate",
   "kicad",
   "library",
   "discrete",
-  "smc"
+  "smc",
+  "bidirectional",
+  "do",
+  "p600",
+  "horizontal",
+  "sma",
+  "schottky"
  ],
  "facts": {
   "package_family": "D",
@@ -79,7 +69,7 @@
    "A": 31,
    "B": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -157,6 +147,6 @@
   "Alternate-KiCad-Library/Diode_TVS_AKL/TPSMF4L45A",
   "Alternate-KiCad-Library/Diode_TVS_AKL/TPSMA6L45A"
  ],
- "embedding_text": "discrete-diode.d.45v | Discrete Diode | Cluster of 32 discrete diode parts under the 45V facet, using D-family footprints (D_SMC, D_SMA, D_SMB, D_SOD-123F, D_DO-201AD, D_P600, D_PowerDI-123) including standard, TVS, and Zener footprint variants, in SMD and through-hole mounts. | discrete diode diode tvs zener 45v d package d_smc d_sma d_smb d_sod-123f d_do-201ad d_p600 d_powerdi-123 smd through hole horizontal alternate kicad library akl unidirectional alternate kicad library discrete smc | D | 45V",
+ "embedding_text": "discrete-diode.d.45v | Discrete Diode | 32 discrete diode parts for 45V using D footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | diode tvs 45v akl unidirectional alternate kicad library discrete smc bidirectional do p600 horizontal sma schottky | D | 45V",
  "class": "discrete.diode"
 }

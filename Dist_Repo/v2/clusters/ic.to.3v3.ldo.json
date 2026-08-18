@@ -5,33 +5,23 @@
  "category_path": [
   "IC"
  ],
- "description": "Cluster of 3.3V LDO IC parts in the TO package family supporting surface-mount and through-hole mounting options.",
+ "description": "67 ic parts for 3.3V, LDO using TO footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when a 3.3V LDO regulator in a TO package family is required.",
-  "Choose based on mounting style between surface mount (SMD) and through-hole.",
-  "Match the specific TO package footprint such as TO-252, TO-263, TO-220, or TO-92."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a TO land pattern is intended."
  ],
  "avoid_when": [
-  "The design requires a supply voltage other than 3.3V.",
-  "A regulator type other than LDO is needed.",
-  "The PCB footprint requires a package family other than TO."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than TO."
  ],
  "keywords": [
-  "ic",
-  "3.3v",
-  "ldo",
   "to",
-  "voltage regulator",
-  "low dropout",
-  "smd",
-  "through hole",
-  "to-252",
-  "to-263",
-  "to-220",
-  "to-92",
   "voltage",
   "regulator",
   "3v",
+  "ldo",
   "low",
   "dropout",
   "akl",
@@ -40,7 +30,9 @@
   "library",
   "vreg",
   "pmic",
-  "power"
+  "ic",
+  "power",
+  "supply"
  ],
  "facts": {
   "package_family": "TO",
@@ -72,7 +64,7 @@
   "tier_counts": {
    "A": 67
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -185,6 +177,6 @@
   "Alternate-KiCad-Library/Voltage_Regulator_AKL/TLE42744GV33",
   "Alternate-KiCad-Library/Voltage_Regulator_AKL/ZLDO1117K33TC"
  ],
- "embedding_text": "ic.to.3v3.ldo | IC | Cluster of 3.3V LDO IC parts in the TO package family supporting surface-mount and through-hole mounting options. | ic 3.3v ldo to voltage regulator low dropout smd through hole to-252 to-263 to-220 to-92 voltage regulator 3v low dropout akl alternate kicad library vreg pmic power | TO | 3.3V LDO",
+ "embedding_text": "ic.to.3v3.ldo | IC | 67 ic parts for 3.3V, LDO using TO footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | to voltage regulator 3v ldo low dropout akl alternate kicad library vreg pmic ic power supply | TO | 3.3V LDO",
  "class": "ic"
 }

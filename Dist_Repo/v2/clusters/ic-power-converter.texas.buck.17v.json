@@ -7,39 +7,33 @@
   "Power",
   "Converter"
  ],
- "description": "Cluster of 17V buck power converter SMD ICs featuring Texas MicroSiP-8 footprints and tier B parts TPS82130, TPS82140, and TPS82150.",
+ "description": "3 ic power converter parts for buck, 17V using Texas footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Requires a 17V buck converter IC in an SMD package.",
-  "Using TPS82130, TPS82140, or TPS82150 surface-mount parts.",
-  "Intended for Texas SIL0008D MicroSiP-8 land patterns with thermal vias."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a Texas land pattern is intended."
  ],
  "avoid_when": [
-  "Designs requiring topologies other than buck power conversion.",
-  "Applications needing non-SMD or through-hole component mounting.",
-  "Layouts that require footprints other than Texas MicroSiP-8 SIL0008D."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than Texas."
  ],
  "keywords": [
-  "ic",
-  "power converter",
-  "buck",
-  "17v",
-  "smd",
-  "texas",
-  "microsip",
-  "sil0008d",
-  "tps82130",
-  "tps82140",
-  "tps82150",
-  "dcdc",
   "converter",
+  "17v",
+  "microsip",
+  "texas",
   "step",
   "down",
   "module",
+  "buck",
+  "dcdc",
   "input",
   "with",
   "integrated",
   "inductor",
   "sil",
+  "sil0008d",
   "1ep"
  ],
  "facts": {
@@ -64,7 +58,7 @@
   "tier_counts": {
    "B": 3
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -97,6 +91,6 @@
   "kicad-symbols/Converter_DCDC/TPS82140",
   "kicad-symbols/Converter_DCDC/TPS82150"
  ],
- "embedding_text": "ic-power-converter.texas.buck.17v | IC Power Converter | Cluster of 17V buck power converter SMD ICs featuring Texas MicroSiP-8 footprints and tier B parts TPS82130, TPS82140, and TPS82150. | ic power converter buck 17v smd texas microsip sil0008d tps82130 tps82140 tps82150 dcdc converter step down module input with integrated inductor sil 1ep | Texas | buck 17V",
+ "embedding_text": "ic-power-converter.texas.buck.17v | IC Power Converter | 3 ic power converter parts for buck, 17V using Texas footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | converter 17v microsip texas step down module buck dcdc input with integrated inductor sil sil0008d 1ep | Texas | buck 17V",
  "class": "ic.power.converter"
 }

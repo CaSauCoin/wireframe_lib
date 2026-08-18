@@ -6,34 +6,20 @@
   "Discrete",
   "Diode"
  ],
- "description": "Cluster of 10 discrete diode parts sharing STACKPOLE footprints, all tier B and sourced from dist-legacy; mount type is unstated, so verify footprint fit before use.",
+ "description": "10 discrete diode parts using STACKPOLE footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "All 10 entries are tier B with score 90 — compare by exact footprint code (e.g. CSR0603 vs CSR0805) rather than tier",
-  "Confirm mount type manually since it is recorded as unknown for this cluster",
-  "Match the STACKPOLE footprint variant to your intended land pattern before placement",
-  "All entries trace to a single source (dist-legacy) — cross-check against a datasheet if available"
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a STACKPOLE land pattern is intended."
  ],
  "avoid_when": [
-  "You need a tier A part or a datasheet-verified entry — none exist in this cluster",
-  "The board requires a non-STACKPOLE footprint or package",
-  "Mount type (SMD vs THT) must be confirmed and cannot be verified from available data",
-  "Electrical ratings (voltage, current, speed) are required but not stated in these facts"
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than STACKPOLE."
  ],
  "keywords": [
   "stackpole",
   "diode",
-  "discrete diode",
-  "csm2512",
-  "csr0402",
-  "csr0603",
-  "csr0805",
-  "csr1206",
-  "stackpole footprint",
-  "tier b",
-  "dist-legacy",
-  "two pin",
-  "generated cluster",
-  "package family stackpole",
   "two",
   "pin",
   "in",
@@ -43,7 +29,11 @@
   "package",
   "smd",
   "anode",
-  "cathode"
+  "cathode",
+  "csr0603",
+  "csr0805",
+  "csr1206",
+  "csr1210"
  ],
  "facts": {
   "package_family": "STACKPOLE",
@@ -64,7 +54,7 @@
   "tier_counts": {
    "B": 10
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -120,6 +110,6 @@
   "dist-legacy/STACKPOLE CSRN2010",
   "dist-legacy/STACKPOLE CSRN2512"
  ],
- "embedding_text": "discrete-diode.stackpole | Discrete Diode | Cluster of 10 discrete diode parts sharing STACKPOLE footprints, all tier B and sourced from dist-legacy; mount type is unstated, so verify footprint fit before use. | stackpole diode discrete diode csm2512 csr0402 csr0603 csr0805 csr1206 stackpole footprint tier b dist-legacy two pin generated cluster package family stackpole two pin in discrete surface mount package smd anode cathode | STACKPOLE | ",
+ "embedding_text": "discrete-diode.stackpole | Discrete Diode | 10 discrete diode parts using STACKPOLE footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | stackpole diode two pin in discrete surface mount package smd anode cathode csr0603 csr0805 csr1206 csr1210 | STACKPOLE | ",
  "class": "discrete.diode"
 }

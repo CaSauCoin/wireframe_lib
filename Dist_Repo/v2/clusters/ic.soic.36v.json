@@ -5,28 +5,20 @@
  "category_path": [
   "IC"
  ],
- "description": "This IC cluster contains surface-mount 36V IC components in SOIC packaging, including the TL072CDT op-amp.",
+ "description": "1 ic parts for 36V using SOIC footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when surface-mount SOIC packaging is required for a 36V IC.",
-  "Verify footprint match with SOIC-8_L5.0-W4.0-P1.27-LS6.0-BL.",
-  "Review tier B part details from the JLCPCB KiCad library."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SOIC land pattern is intended."
  ],
  "avoid_when": [
-  "Do not use if through-hole or non-SOIC packages are required.",
-  "Avoid if voltage requirements differ from 36V.",
-  "Avoid if tier A component verification is required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SOIC."
  ],
  "keywords": [
-  "ic",
   "36v",
   "soic",
-  "soic-8",
-  "smd",
-  "op-amp",
-  "tl072cdt",
-  "jlcpcb-kicad-library",
-  "analog",
-  "tier b",
   "l5",
   "w4",
   "p1",
@@ -34,7 +26,9 @@
   "bl",
   "op",
   "amp",
+  "tl072cdt",
   "jlcpcb",
+  "analog",
   "4ma",
   "10uv",
   "15nv",
@@ -61,7 +55,7 @@
   "tier_counts": {
    "B": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -76,6 +70,6 @@
  "part_ids": [
   "JLCPCB-Kicad-Library/JLCPCB-Analog/Op-Amp, TL072CDT"
  ],
- "embedding_text": "ic.soic.36v | IC | This IC cluster contains surface-mount 36V IC components in SOIC packaging, including the TL072CDT op-amp. | ic 36v soic soic-8 smd op-amp tl072cdt jlcpcb-kicad-library analog tier b l5 w4 p1 ls6 bl op amp jlcpcb 4ma 10uv 15nv hz | SOIC | 36V",
+ "embedding_text": "ic.soic.36v | IC | 1 ic parts for 36V using SOIC footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | 36v soic l5 w4 p1 ls6 bl op amp tl072cdt jlcpcb analog 4ma 10uv 15nv hz | SOIC | 36V",
  "class": "ic"
 }

@@ -5,31 +5,21 @@
  "category_path": [
   "IC"
  ],
- "description": "Cluster of 9 surface-mount integrated circuits featuring I2C interfaces in SOIC package footprints.",
+ "description": "9 ic parts for I2C using SOIC footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select according to the required footprint variant such as SOIC-8, SOIC-16W, or SOIC-28_W7.5mm.",
-  "Prioritize Tier A parts over Tier B parts when available.",
-  "Verify component availability across KiCad symbols, DigiKey KiCad library, or Altium libraries."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SOIC land pattern is intended."
  ],
  "avoid_when": [
-  "The PCB layout requires package families other than SOIC.",
-  "The design requires through-hole components instead of surface mount.",
-  "The required integrated circuit interface is not I2C."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SOIC."
  ],
  "keywords": [
-  "ic",
-  "i2c",
   "soic",
-  "smd",
-  "surface mount",
-  "soic-8",
-  "soic-16w",
-  "soic-28",
-  "soic-8_3.9x4.9mm_p1.27mm",
-  "soic-8_w3.9mm",
-  "soic-28_w7.5mm",
-  "kicad-symbols",
-  "digikey-kicad-library",
+  "i2c",
+  "ic",
   "cryptographic",
   "9mm",
   "expander",
@@ -40,7 +30,9 @@
   "clock",
   "timing",
   "real",
-  "time"
+  "time",
+  "clocks",
+  "integrated"
  ],
  "facts": {
   "package_family": "SOIC",
@@ -70,7 +62,7 @@
    "A": 3,
    "B": 6
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -125,6 +117,6 @@
   "matthiasbock-altium-libraries/TC1321/TC1321",
   "matthiasbock-altium-libraries/PCF8574/PCF8574"
  ],
- "embedding_text": "ic.soic.i2c | IC | Cluster of 9 surface-mount integrated circuits featuring I2C interfaces in SOIC package footprints. | ic i2c soic smd surface mount soic-8 soic-16w soic-28 soic-8_3.9x4.9mm_p1.27mm soic-8_w3.9mm soic-28_w7.5mm kicad-symbols digikey-kicad-library cryptographic 9mm expander with and so dk clock timing real time | SOIC | I2C",
+ "embedding_text": "ic.soic.i2c | IC | 9 ic parts for I2C using SOIC footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | soic i2c ic cryptographic 9mm expander with and so dk clock timing real time clocks integrated | SOIC | I2C",
  "class": "ic"
 }

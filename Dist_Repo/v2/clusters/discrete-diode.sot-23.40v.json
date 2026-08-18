@@ -6,42 +6,34 @@
   "Discrete",
   "Diode"
  ],
- "description": "Cluster of 24 tier-A discrete diode parts rated 40V in SOT-23 or SOT-23-6 SMD footprints, sourced from Alternate-KiCad-Library and kicad-symbols.",
+ "description": "24 discrete diode parts for 40V using SOT-23 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "All 24 parts are tier A with score 100; differentiate by exact part number and footprint variant (SOT-23 vs SOT-23-6).",
-  "Confirm which footprint (SOT-23 or SOT-23-6) matches the intended land pattern before use.",
-  "Cross-check source library (Alternate-KiCad-Library vs kicad-symbols) for symbol/footprint provenance."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SOT-23 land pattern is intended."
  ],
  "avoid_when": [
-  "A voltage rating other than 40V is required.",
-  "The design needs a package other than SOT-23 or SOT-23-6.",
-  "Through-hole mounting is required instead of SMD."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SOT-23."
  ],
  "keywords": [
-  "diode",
-  "discrete diode",
-  "sot-23",
-  "sot-23-6",
-  "40v",
-  "smd diode",
-  "discrete",
-  "kicad-symbols",
-  "alternate-kicad-library",
-  "pmeg4010et",
-  "bas40",
-  "bas40-04",
-  "bas40-05",
-  "bas40-06",
-  "tier a",
   "sot",
+  "diode",
   "schottky",
+  "40v",
+  "discrete",
   "akl",
   "alternate",
   "kicad",
   "library",
   "dual",
+  "bas40",
   "common",
-  "bat64"
+  "bat64",
+  "series",
+  "120ma",
+  "cathode"
  ],
  "facts": {
   "package_family": "SOT-23",
@@ -66,7 +58,7 @@
   "tier_counts": {
    "A": 24
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -136,6 +128,6 @@
   "Alternate-KiCad-Library/Diode_Schottky_AKL/ZLLS500",
   "kicad-symbols/Diode/BAS40-04"
  ],
- "embedding_text": "discrete-diode.sot-23.40v | Discrete Diode | Cluster of 24 tier-A discrete diode parts rated 40V in SOT-23 or SOT-23-6 SMD footprints, sourced from Alternate-KiCad-Library and kicad-symbols. | diode discrete diode sot-23 sot-23-6 40v smd diode discrete kicad-symbols alternate-kicad-library pmeg4010et bas40 bas40-04 bas40-05 bas40-06 tier a sot schottky akl alternate kicad library dual common bat64 | SOT-23 | 40V",
+ "embedding_text": "discrete-diode.sot-23.40v | Discrete Diode | 24 discrete diode parts for 40V using SOT-23 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | sot diode schottky 40v discrete akl alternate kicad library dual bas40 common bat64 series 120ma cathode | SOT-23 | 40V",
  "class": "discrete.diode"
 }

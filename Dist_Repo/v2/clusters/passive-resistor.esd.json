@@ -6,28 +6,22 @@
   "Passive",
   "Resistor"
  ],
- "description": "Cluster of surface-mount passive resistor components using the ESD package family and ESD_XDFN2 footprint.",
+ "description": "1 passive resistor parts using ESD footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Verify compatibility with SMD ESD_XDFN2 footprint land patterns.",
-  "Confirm specific resistance value and electrical ratings before placement.",
-  "Review component quality tier and library source details."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a ESD land pattern is intended."
  ],
  "avoid_when": [
-  "The PCB layout requires a package or footprint other than ESD_XDFN2.",
-  "Through-hole mounting is required.",
-  "Required electrical ratings and tolerances are unspecified."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than ESD."
  ],
  "keywords": [
+  "esd",
+  "xdfn2",
   "passive",
   "resistor",
-  "passive.resistor",
-  "esd",
-  "esd_xdfn2",
-  "xdfn2",
-  "smd",
-  "surface mount",
-  "chilaboard-altium-library",
-  "resistors",
   "surface",
   "mount",
   "pad",
@@ -54,12 +48,12 @@
   "tier_counts": {
    "C": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
   "chilaboard-altium-library/ESD_XDFN2/ESD_XDFN2"
  ],
- "embedding_text": "passive-resistor.esd | Passive Resistor | Cluster of surface-mount passive resistor components using the ESD package family and ESD_XDFN2 footprint. | passive resistor passive.resistor esd esd_xdfn2 xdfn2 smd surface mount chilaboard-altium-library resistors surface mount pad mm pitch pins | ESD | ",
+ "embedding_text": "passive-resistor.esd | Passive Resistor | 1 passive resistor parts using ESD footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | esd xdfn2 passive resistor surface mount pad mm pitch pins | ESD | ",
  "class": "passive.resistor"
 }

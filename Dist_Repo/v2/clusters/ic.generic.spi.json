@@ -5,34 +5,28 @@
  "category_path": [
   "IC"
  ],
- "description": "A cluster of 8 IC parts featuring SPI facets with unassigned package families from celestial-altium-library.",
+ "description": "8 ic parts for SPI with package chosen later. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Use when looking for SPI EEPROM or Flash ICs with package selection deferred.",
-  "Check part suitability between 6-pin and 8-pin variants.",
-  "Assign an explicit footprint and package before PCB placement."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Select a footprint/package explicitly before placement."
  ],
  "avoid_when": [
-  "Avoid if a specific footprint or package family must be defined upfront.",
-  "Do not use if higher quality tier ratings than Tier G are required.",
-  "Avoid when non-SPI bus interfaces are needed."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review."
  ],
  "keywords": [
   "spi",
-  "ic",
-  "eeprom",
-  "flash",
-  "6 pin",
   "8pin",
-  "package chosen later",
-  "celestial-altium-library",
-  "microchip",
-  "spansion",
-  "on semi",
-  "spi ic",
+  "ic",
+  "flash",
+  "eeprom",
   "pins",
   "package",
   "chosen",
   "later",
+  "microchip",
+  "spansion",
   "dp",
   "winbond",
   "pin",
@@ -56,7 +50,7 @@
   "tier_counts": {
    "G": 8
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -110,6 +104,6 @@
   "celestial-altium-library/WINBOND FLASH SPI 8PIN/WINBOND FLASH SPI 8PIN",
   "celestial-altium-library/WINBOND FLASH SPI 8PIN_DP/WINBOND FLASH SPI 8PIN_DP"
  ],
- "embedding_text": "ic.generic.spi | IC | A cluster of 8 IC parts featuring SPI facets with unassigned package families from celestial-altium-library. | spi ic eeprom flash 6 pin 8pin package chosen later celestial-altium-library microchip spansion on semi spi ic pins package chosen later dp winbond pin on semi | package chosen later | SPI",
+ "embedding_text": "ic.generic.spi | IC | 8 ic parts for SPI with package chosen later. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | spi 8pin ic flash eeprom pins package chosen later microchip spansion dp winbond pin on semi | package chosen later | SPI",
  "class": "ic"
 }

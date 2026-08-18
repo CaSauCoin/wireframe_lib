@@ -6,42 +6,34 @@
   "Discrete",
   "Transistor"
  ],
- "description": "A cluster of 10 discrete transistor parts categorized under quality tier C with surface-mount and unknown mounting options across ON, ON SEMI, and ON Semiconductor footprints.",
+ "description": "10 discrete transistor parts using ON footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when needing surface-mount or unknown mount discrete transistors.",
-  "Choose for layouts matching ON, ON SEMI (SO8FL 488AA-1, SOT-323, SOT-723, SOT-89 H), or ON Semiconductor SC-75 footprints.",
-  "Select when sourcing from celestial-altium-library or dist-legacy repositories."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a ON land pattern is intended."
  ],
  "avoid_when": [
-  "Avoid if quality tier C parts do not satisfy project standards.",
-  "Avoid when the design requires package footprints outside the ON family.",
-  "Avoid if planner-visible parts are required, as planner visible count is zero."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than ON."
  ],
  "keywords": [
-  "discrete",
-  "transistor",
   "on",
-  "on semi",
-  "on semiconductor",
-  "smd",
-  "so8fl",
-  "488aa-1",
-  "sot-323",
-  "sot-723",
-  "sot-89 h",
-  "sc-75",
-  "tier c",
-  "dist-legacy",
-  "celestial-altium-library",
   "semi",
   "sot",
+  "discrete",
+  "transistor",
   "semiconductor",
   "land",
   "pattern",
   "package",
+  "so8fl",
   "488aa",
   "sc",
-  "bare"
+  "bare",
+  "for",
+  "an",
+  "pin"
  ],
  "facts": {
   "package_family": "ON",
@@ -69,7 +61,7 @@
   "tier_counts": {
    "C": 10
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
@@ -84,6 +76,6 @@
   "celestial-altium-library/ON SEMI SOT-89 H/ON_SEMI_SOT-89_H",
   "celestial-altium-library/ON Semiconductor SC-75/ON_Semiconductor_SC-75"
  ],
- "embedding_text": "discrete-transistor.on | Discrete Transistor | A cluster of 10 discrete transistor parts categorized under quality tier C with surface-mount and unknown mounting options across ON, ON SEMI, and ON Semiconductor footprints. | discrete transistor on on semi on semiconductor smd so8fl 488aa-1 sot-323 sot-723 sot-89 h sc-75 tier c dist-legacy celestial-altium-library semi sot semiconductor land pattern package 488aa sc bare | ON | ",
+ "embedding_text": "discrete-transistor.on | Discrete Transistor | 10 discrete transistor parts using ON footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | on semi sot discrete transistor semiconductor land pattern package so8fl 488aa sc bare for an pin | ON | ",
  "class": "discrete.transistor"
 }

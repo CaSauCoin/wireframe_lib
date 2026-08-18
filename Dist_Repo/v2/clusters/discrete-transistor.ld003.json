@@ -6,27 +6,21 @@
   "Discrete",
   "Transistor"
  ],
- "description": "Discrete transistor cluster containing 1 part utilizing the LD003 footprint and package family.",
+ "description": "1 discrete transistor parts using LD003 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Use when designing with a discrete transistor requiring an LD003 footprint.",
-  "Verify mounting configuration as mount type is recorded as unknown.",
-  "Check quality tier C specifications and source trust before selection."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a LD003 land pattern is intended."
  ],
  "avoid_when": [
-  "Avoid when the PCB layout requires a footprint other than LD003.",
-  "Avoid if higher quality tier parts or planner-visible entries are required.",
-  "Do not use when verified mounting specifications are necessary."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than LD003."
  ],
  "keywords": [
   "ld003",
   "discrete",
   "transistor",
-  "discrete transistor",
-  "ld003 footprint",
-  "ld003 package family",
-  "tier c",
-  "dist-legacy",
-  "discrete.transistor",
   "pad",
   "mm",
   "pitch",
@@ -51,12 +45,12 @@
   "tier_counts": {
    "C": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
   "dist-legacy/LD003"
  ],
- "embedding_text": "discrete-transistor.ld003 | Discrete Transistor | Discrete transistor cluster containing 1 part utilizing the LD003 footprint and package family. | ld003 discrete transistor discrete transistor ld003 footprint ld003 package family tier c dist-legacy discrete.transistor pad mm pitch pins | LD003 | ",
+ "embedding_text": "discrete-transistor.ld003 | Discrete Transistor | 1 discrete transistor parts using LD003 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | ld003 discrete transistor pad mm pitch pins | LD003 | ",
  "class": "discrete.transistor"
 }

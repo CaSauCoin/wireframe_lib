@@ -6,28 +6,18 @@
   "Discrete",
   "Diode"
  ],
- "description": "Through-hole 24V discrete Zener diodes in TO package options including TO-18-2 and vertical TO-126-2 footprints.",
+ "description": "2 discrete diode parts for 24V using TO footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select based on the required footprint variant between TO-18-2 and vertical TO-126-2.",
-  "Use when a 24V through-hole Zener diode in a TO package is required.",
-  "Choose between BZP630-C24 and BZP650-C24 according to layout constraints."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a TO land pattern is intended."
  ],
  "avoid_when": [
-  "Surface mount (SMD) packaging is required.",
-  "A package family other than TO is required.",
-  "Target design requires a voltage rating or component type other than a 24V Zener diode."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than TO."
  ],
  "keywords": [
-  "discrete diode",
-  "24v zener",
-  "to package",
-  "through hole",
-  "to-18-2",
-  "to-126-2",
-  "bzp630-c24",
-  "bzp650-c24",
-  "vertical zener",
-  "alternate-kicad-library",
   "diode",
   "zener",
   "to",
@@ -41,7 +31,9 @@
   "discrete",
   "bzp650",
   "vertical",
-  "25w"
+  "25w",
+  "2w",
+  "rm"
  ],
  "facts": {
   "package_family": "TO",
@@ -65,7 +57,7 @@
   "tier_counts": {
    "A": 2
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -89,6 +81,6 @@
   "Alternate-KiCad-Library/Diode_Zener_AKL/BZP630-C24",
   "Alternate-KiCad-Library/Diode_Zener_AKL/BZP650-C24"
  ],
- "embedding_text": "discrete-diode.to.24v | Discrete Diode | Through-hole 24V discrete Zener diodes in TO package options including TO-18-2 and vertical TO-126-2 footprints. | discrete diode 24v zener to package through hole to-18-2 to-126-2 bzp630-c24 bzp650-c24 vertical zener alternate-kicad-library diode zener to 24v bzp630 c24 akl alternate kicad library discrete bzp650 vertical 25w | TO | 24V",
+ "embedding_text": "discrete-diode.to.24v | Discrete Diode | 2 discrete diode parts for 24V using TO footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | diode zener to 24v bzp630 c24 akl alternate kicad library discrete bzp650 vertical 25w 2w rm | TO | 24V",
  "class": "discrete.diode"
 }

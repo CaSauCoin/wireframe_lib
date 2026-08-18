@@ -6,44 +6,34 @@
   "Discrete",
   "Diode"
  ],
- "description": "Discrete rectifier/zener/TVS diodes rated 56V, packaged in D-family footprints (SMB, SMA, MiniMELF, DO-41, DO-35, DO-15, DO-201, P600), for smd or through-hole boards.",
+ "description": "93 discrete diode parts for 56V using D footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Match device type (zener vs TVS vs general rectifier) implied by the specific part, not just voltage",
-  "Match the exact D-family footprint required by the layout (SMB, SMA, MiniMELF, DO-41, DO-35, DO-15, DO-201, P600)",
-  "Prefer tier A entries with higher score and clear source trust",
-  "Confirm mount type (smd or through_hole) matches the board assembly process"
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a D land pattern is intended."
  ],
  "avoid_when": [
-  "The circuit needs a voltage rating other than 56V",
-  "The application needs a diode function not confirmed for the chosen part (e.g. general rectifier vs zener vs TVS)",
-  "The design requires a footprint outside the D family listed here",
-  "The part's symbol-footprint pairing is unverified or flagged for review"
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than D."
  ],
  "keywords": [
   "diode",
-  "56v",
   "zener",
+  "56v",
   "tvs",
-  "discrete diode",
-  "d package",
-  "smb",
-  "sma",
-  "minimelf",
-  "do-41",
-  "do-35",
-  "do-15",
-  "do-201",
-  "p600",
-  "smd diode",
-  "through hole diode",
-  "horizontal diode",
-  "axial diode",
   "do",
   "discrete",
   "akl",
   "alternate",
   "kicad",
-  "library"
+  "library",
+  "horizontal",
+  "smb",
+  "series",
+  "axial",
+  "pin",
+  "pitch"
  ],
  "facts": {
   "package_family": "D",
@@ -80,7 +70,7 @@
    "A": 88,
    "B": 5
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -219,6 +209,6 @@
   "Alternate-KiCad-Library/Diode_TVS_AKL/BZW03-D56",
   "Alternate-KiCad-Library/Diode_Zener_AKL/BZX884-C56"
  ],
- "embedding_text": "discrete-diode.d.56v | Discrete Diode | Discrete rectifier/zener/TVS diodes rated 56V, packaged in D-family footprints (SMB, SMA, MiniMELF, DO-41, DO-35, DO-15, DO-201, P600), for smd or through-hole boards. | diode 56v zener tvs discrete diode d package smb sma minimelf do-41 do-35 do-15 do-201 p600 smd diode through hole diode horizontal diode axial diode do discrete akl alternate kicad library | D | 56V",
+ "embedding_text": "discrete-diode.d.56v | Discrete Diode | 93 discrete diode parts for 56V using D footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | diode zener 56v tvs do discrete akl alternate kicad library horizontal smb series axial pin pitch | D | 56V",
  "class": "discrete.diode"
 }

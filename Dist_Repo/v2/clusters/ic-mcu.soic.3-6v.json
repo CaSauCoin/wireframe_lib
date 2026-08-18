@@ -6,42 +6,34 @@
   "IC",
   "Microcontroller"
  ],
- "description": "Cluster of 15 surface-mount 3.6V microcontroller ICs in SOIC footprints sourced from KiCad symbols.",
+ "description": "15 ic microcontroller parts for 3.6V using SOIC footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when a 3.6V surface-mount microcontroller in a SOIC footprint is required.",
-  "Choose based on the required footprint size such as SOIC-8, SOIC-14, or SOIC-20W.",
-  "Verify part selection against tier A KiCad symbol entries."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SOIC land pattern is intended."
  ],
  "avoid_when": [
-  "Do not use if the board design requires non-SOIC packages or through-hole mounting.",
-  "Avoid when operating requirements fall outside 3.6V microcontrollers.",
-  "Do not use if footprints other than SOIC-8, SOIC-14, or SOIC-20W are needed."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SOIC."
  ],
  "keywords": [
   "soic",
-  "microcontroller",
-  "ic",
-  "3.6v",
-  "smd",
-  "soic-8",
-  "soic-14",
-  "soic-20w",
-  "ic.mcu",
-  "kicad-symbols",
-  "atsamd09c13a-ss",
-  "atsamd10c13a-ss",
-  "atsamd10c14a-ss",
-  "atsamd10d13a-ss",
-  "atsamd10d14a-ss",
   "mcu",
   "arm",
   "cortex",
   "m0",
   "6v",
+  "microcontroller",
   "flash",
   "ram",
   "gpio",
-  "p1"
+  "p1",
+  "27mm",
+  "so",
+  "ic",
+  "stm32g0",
+  "8kb"
  ],
  "facts": {
   "package_family": "SOIC",
@@ -66,7 +58,7 @@
   "tier_counts": {
    "A": 15
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -127,6 +119,6 @@
   "kicad-symbols/MCU_ST_STM32G0/STM32G031J_4-6_Mx",
   "kicad-symbols/MCU_ST_STM32G0/STM32G041J6Mx"
  ],
- "embedding_text": "ic-mcu.soic.3-6v | IC Microcontroller | Cluster of 15 surface-mount 3.6V microcontroller ICs in SOIC footprints sourced from KiCad symbols. | soic microcontroller ic 3.6v smd soic-8 soic-14 soic-20w ic.mcu kicad-symbols atsamd09c13a-ss atsamd10c13a-ss atsamd10c14a-ss atsamd10d13a-ss atsamd10d14a-ss mcu arm cortex m0 6v flash ram gpio p1 | SOIC | 3.6V",
+ "embedding_text": "ic-mcu.soic.3-6v | IC Microcontroller | 15 ic microcontroller parts for 3.6V using SOIC footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | soic mcu arm cortex m0 6v microcontroller flash ram gpio p1 27mm so ic stm32g0 8kb | SOIC | 3.6V",
  "class": "ic.mcu"
 }

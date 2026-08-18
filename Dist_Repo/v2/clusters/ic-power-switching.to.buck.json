@@ -7,36 +7,28 @@
   "Power",
   "Switching Regulator"
  ],
- "description": "This cluster contains 16 tier A IC power switching buck regulator parts in the TO package family for surface-mount and through-hole mounting.",
+ "description": "16 ic power switching regulator parts for buck using TO footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select based on mounting style required, either surface-mount or through-hole.",
-  "Choose the target TO footprint variant, such as TO-220-5, TO-252-5, or TO-263-5.",
-  "Select by specific part number, such as LM2575, GL2576, or APE1707."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a TO land pattern is intended."
  ],
  "avoid_when": [
-  "A package family other than TO is required.",
-  "A switching regulator topology other than buck is needed.",
-  "None of the supported TO-220-5, TO-252-5, or TO-263-5 footprints fit the design layout."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than TO."
  ],
  "keywords": [
-  "ic",
-  "power",
-  "switching",
-  "regulator",
-  "buck",
   "to",
-  "smd",
-  "through_hole",
-  "to-220-5",
-  "to-252-5",
-  "to-263-5",
-  "ape1707",
-  "gl2576",
-  "lm2575",
+  "regulator",
+  "switching",
+  "buck",
   "adjustable",
   "voltage",
   "step",
   "down",
+  "ic",
+  "power",
   "d2pak",
   "3a",
   "vertical",
@@ -69,7 +61,7 @@
   "tier_counts": {
    "A": 16
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -131,6 +123,6 @@
   "kicad-symbols/Regulator_Switching/LM2596S-ADJ",
   "kicad-symbols/Regulator_Switching/LM2596T-ADJ"
  ],
- "embedding_text": "ic-power-switching.to.buck | IC Power Switching Regulator | This cluster contains 16 tier A IC power switching buck regulator parts in the TO package family for surface-mount and through-hole mounting. | ic power switching regulator buck to smd through_hole to-220-5 to-252-5 to-263-5 ape1707 gl2576 lm2575 adjustable voltage step down d2pak 3a vertical dc adj tabpin3 | TO | buck",
+ "embedding_text": "ic-power-switching.to.buck | IC Power Switching Regulator | 16 ic power switching regulator parts for buck using TO footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | to regulator switching buck adjustable voltage step down ic power d2pak 3a vertical dc adj tabpin3 | TO | buck",
  "class": "ic.power.switching"
 }

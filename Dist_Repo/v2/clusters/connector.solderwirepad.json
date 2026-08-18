@@ -5,33 +5,21 @@
  "category_path": [
   "Connector"
  ],
- "description": "Cluster of 3 single-pin (01x01) generic connector symbols sharing the SolderWirePad_1x01_SMD_1x2mm SMD footprint, sourced from kicad-symbols and tier-B rated.",
+ "description": "3 connector parts using SolderWirePad footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Pick Conn_01x01_Pin or Conn_01x01_Socket if the schematic needs to distinguish pin vs. socket gender; otherwise use generic Conn_01x01",
-  "All three entries share the same SolderWirePad_1x01_SMD_1x2mm footprint and tier B score, so choice mainly depends on symbol semantics",
-  "Confirm the SolderWirePad_1x01_SMD_1x2mm land pattern matches the intended wire/pad interface before layout"
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SolderWirePad land pattern is intended."
  ],
  "avoid_when": [
-  "The design needs a multi-pin connector (this cluster is single-pin/01x01 only)",
-  "A through-hole or non-SMD mounting is required",
-  "A footprint other than SolderWirePad_1x01_SMD_1x2mm is needed"
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SolderWirePad."
  ],
  "keywords": [
   "connector",
-  "solderwirepad",
-  "conn_01x01",
-  "conn_01x01_pin",
-  "conn_01x01_socket",
   "01x01",
-  "single pin",
-  "smd pad",
-  "1x2mm",
-  "wire pad",
-  "generic connector",
-  "kicad-symbols",
-  "tier b",
-  "solder wire pad",
-  "single row",
+  "solderwirepad",
   "generic",
   "conn",
   "single",
@@ -40,7 +28,11 @@
   "generated",
   "1x01",
   "smd",
-  "measurementpoint"
+  "1x2mm",
+  "measurementpoint",
+  "square",
+  "smdpad",
+  "1mmx2mm"
  ],
  "facts": {
   "package_family": "SolderWirePad",
@@ -61,7 +53,7 @@
   "tier_counts": {
    "B": 3
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -94,6 +86,6 @@
   "kicad-symbols/Connector/Conn_01x01_Pin",
   "kicad-symbols/Connector/Conn_01x01_Socket"
  ],
- "embedding_text": "connector.solderwirepad | Connector | Cluster of 3 single-pin (01x01) generic connector symbols sharing the SolderWirePad_1x01_SMD_1x2mm SMD footprint, sourced from kicad-symbols and tier-B rated. | connector solderwirepad conn_01x01 conn_01x01_pin conn_01x01_socket 01x01 single pin smd pad 1x2mm wire pad generic connector kicad-symbols tier b solder wire pad single row generic conn single row script generated 1x01 smd measurementpoint | SolderWirePad | ",
+ "embedding_text": "connector.solderwirepad | Connector | 3 connector parts using SolderWirePad footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | connector 01x01 solderwirepad generic conn single row script generated 1x01 smd 1x2mm measurementpoint square smdpad 1mmx2mm | SolderWirePad | ",
  "class": "connector"
 }

@@ -7,32 +7,23 @@
   "Analog",
   "Amplifier"
  ],
- "description": "Cluster of 65V surface-mount analog amplifier ICs in DFN-8-1EP packaging sourced from Alternate-KiCad-Library.",
+ "description": "3 ic analog amplifier parts for 65V using DFN footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when an analog amplifier IC in a surface-mount DFN package is required.",
-  "Verify footprint layout match with DFN-8-1EP_3x3mm_P0.5mm_EP1.66x2.38mm.",
-  "Choose between LT1994CDD, LT1994HDD, or LT1994IDD variants as needed."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a DFN land pattern is intended."
  ],
  "avoid_when": [
-  "Avoid if through-hole mounting or non-DFN packaging is required.",
-  "Avoid when the layout does not accept the DFN-8-1EP_3x3mm_P0.5mm_EP1.66x2.38mm footprint.",
-  "Avoid if voltage requirements are incompatible with the 65V rating."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than DFN."
  ],
  "keywords": [
-  "ic",
-  "analog",
   "amplifier",
-  "65v",
   "dfn",
-  "dfn-8-1ep",
-  "smd",
-  "lt1994",
-  "lt1994cdd",
-  "lt1994hdd",
-  "lt1994idd",
-  "alternate-kicad-library",
   "differential",
   "driver",
+  "65v",
   "akl",
   "70mhz",
   "bandwidth",
@@ -42,7 +33,8 @@
   "offset",
   "alternate",
   "kicad",
-  "library"
+  "library",
+  "1ep"
  ],
  "facts": {
   "package_family": "DFN",
@@ -65,7 +57,7 @@
   "tier_counts": {
    "A": 3
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -98,6 +90,6 @@
   "Alternate-KiCad-Library/Amplifier_Differential_AKL/LT1994HDD",
   "Alternate-KiCad-Library/Amplifier_Differential_AKL/LT1994IDD"
  ],
- "embedding_text": "ic-analog-amplifier.dfn.65v | IC Analog Amplifier | Cluster of 65V surface-mount analog amplifier ICs in DFN-8-1EP packaging sourced from Alternate-KiCad-Library. | ic analog amplifier 65v dfn dfn-8-1ep smd lt1994 lt1994cdd lt1994hdd lt1994idd alternate-kicad-library differential driver akl 70mhz bandwidth slew rate 2mv offset alternate kicad library | DFN | 65V",
+ "embedding_text": "ic-analog-amplifier.dfn.65v | IC Analog Amplifier | 3 ic analog amplifier parts for 65V using DFN footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | amplifier dfn differential driver 65v akl 70mhz bandwidth slew rate 2mv offset alternate kicad library 1ep | DFN | 65V",
  "class": "ic.analog.amplifier"
 }

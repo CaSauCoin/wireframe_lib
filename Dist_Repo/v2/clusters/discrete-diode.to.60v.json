@@ -6,44 +6,34 @@
   "Discrete",
   "Diode"
  ],
- "description": "Cluster of 86 discrete TO-package diode parts grouped under the 60V facet, covering SMD and through-hole TO-220/TO-247/TO-263/TO-252/TO-277/TO-262 footprint variants, mostly sourced from Alternate-KiCad-Library.",
+ "description": "86 discrete diode parts for 60V using TO footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Match the exact TO footprint variant (e.g. TO-220-3_Vertical_AKA vs TO-263-2_TabPin1) to the intended PCB land pattern.",
-  "Prefer tier A entries (85 of 86 parts, score 100) over the single tier B entry.",
-  "Confirm mount style (smd vs through_hole) matches the assembly process before committing.",
-  "Several representative parts originate from Schottky-named sources; verify diode type from the chosen part's own source/name."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a TO land pattern is intended."
  ],
  "avoid_when": [
-  "The required footprint is not one of the listed TO-220/TO-247/TO-263/TO-252/TO-277/TO-262 variants.",
-  "Electrical ratings beyond the 60V facet (current, forward drop, switching speed) are not confirmed by the selected part's own data.",
-  "The BOM requires a specific diode type (e.g. rectifier vs schottky) not confirmed from the part's source or name.",
-  "Only the sole tier B entry is available and review-quality trust is required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than TO."
  ],
  "keywords": [
   "to",
   "diode",
-  "discrete",
-  "60v",
-  "to-220",
-  "to-247",
-  "to-263",
-  "to-252",
-  "to-277",
-  "to-262",
-  "smd",
-  "through_hole",
   "schottky",
-  "alternate-kicad-library",
-  "kicad-symbols",
-  "jlcpcb",
+  "60v",
   "vertical",
-  "footprint",
   "dual",
+  "discrete",
   "akl",
   "alternate",
   "kicad",
   "library",
-  "rm"
+  "rm",
+  "common",
+  "cathode",
+  "commoncathode",
+  "aka"
  ],
  "facts": {
   "package_family": "TO",
@@ -81,7 +71,7 @@
    "A": 85,
    "B": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -213,6 +203,6 @@
   "Alternate-KiCad-Library/Diode_Schottky_AKL/VS-8TQ060",
   "JLCPCB-Kicad-Library/177092/Super Barrier Rectifier, SBR40U60CT"
  ],
- "embedding_text": "discrete-diode.to.60v | Discrete Diode | Cluster of 86 discrete TO-package diode parts grouped under the 60V facet, covering SMD and through-hole TO-220/TO-247/TO-263/TO-252/TO-277/TO-262 footprint variants, mostly sourced from Alternate-KiCad-Library. | to diode discrete 60v to-220 to-247 to-263 to-252 to-277 to-262 smd through_hole schottky alternate-kicad-library kicad-symbols jlcpcb vertical footprint dual akl alternate kicad library rm | TO | 60V",
+ "embedding_text": "discrete-diode.to.60v | Discrete Diode | 86 discrete diode parts for 60V using TO footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | to diode schottky 60v vertical dual discrete akl alternate kicad library rm common cathode commoncathode aka | TO | 60V",
  "class": "discrete.diode"
 }

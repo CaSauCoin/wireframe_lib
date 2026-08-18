@@ -5,31 +5,20 @@
  "category_path": [
   "Mechanical"
  ],
- "description": "Mechanical heatsink components supporting SMD and through-hole mounting across U-shape, E-shape, and H-shape footprint packages.",
+ "description": "5 mechanical parts using Heatsink footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Match the specific footprint geometry such as U-Shape, E-Shape, or H-Shape.",
-  "Select according to the required mounting method, whether SMD or through-hole.",
-  "Choose the appropriate pin or pad configuration for the mechanical connection."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a Heatsink land pattern is intended."
  ],
  "avoid_when": [
-  "The PCB layout requires a component package other than a heatsink footprint.",
-  "The design requires Tier A verified parts rather than Tier B or C entries.",
-  "Mounting requirements do not align with SMD or through-hole heatsink patterns."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than Heatsink."
  ],
  "keywords": [
   "heatsink",
   "mechanical",
-  "smd",
-  "through_hole",
-  "heatsink pad",
-  "u-shape",
-  "e-shape",
-  "h-shape",
-  "15x7mm",
-  "25x8mm",
-  "70x30mm",
-  "2pin",
-  "3pin",
   "heat",
   "shape",
   "sink",
@@ -40,7 +29,10 @@
   "with",
   "electrical",
   "connection",
-  "15x7"
+  "15x7mm",
+  "15x7",
+  "mm",
+  "pcb"
  ],
  "facts": {
   "package_family": "Heatsink",
@@ -66,7 +58,7 @@
    "B": 3,
    "C": 2
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -101,6 +93,6 @@
   "kicad-symbols/Mechanical/Heatsink",
   "kicad-symbols/Mechanical/Mechanical_Shape"
  ],
- "embedding_text": "mechanical.heatsink | Mechanical | Mechanical heatsink components supporting SMD and through-hole mounting across U-shape, E-shape, and H-shape footprint packages. | heatsink mechanical smd through_hole heatsink pad u-shape e-shape h-shape 15x7mm 25x8mm 70x30mm 2pin 3pin heat shape sink pin thermal temperature pad with electrical connection 15x7 | Heatsink | ",
+ "embedding_text": "mechanical.heatsink | Mechanical | 5 mechanical parts using Heatsink footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | heatsink mechanical heat shape sink pin thermal temperature pad with electrical connection 15x7mm 15x7 mm pcb | Heatsink | ",
  "class": "mechanical"
 }

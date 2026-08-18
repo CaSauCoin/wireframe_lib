@@ -6,44 +6,34 @@
   "Discrete",
   "Diode"
  ],
- "description": "Cluster of 10 tier A SOT-package discrete diodes (Schottky and Zener types) tagged with a 3V facet, all sourced from the Alternate-KiCad-Library, spanning SOT-363, SOT-343, SOT-323, SOT-89-3 and SOT-223-3 footprints.",
+ "description": "10 discrete diode parts for 3V using SOT footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Match the exact SOT footprint (SOT-363/343/323/89-3/223-3) to your PCB land pattern",
-  "Confirm whether the specific part is Schottky or Zener from its name before use",
-  "All 10 parts are tier A from Alternate-KiCad-Library, so compare by footprint and part name",
-  "Verify exact voltage and current ratings against the source datasheet, not just the 3V facet"
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SOT land pattern is intended."
  ],
  "avoid_when": [
-  "The required package is not SOT (e.g. THT or a different SMD footprint)",
-  "The diode type (Schottky vs Zener) needed for the design isn't confirmed from the part data",
-  "Electrical ratings beyond the 3V facet aren't verified from the source",
-  "The symbol-footprint pairing needs review beyond generated tier A status"
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SOT."
  ],
  "keywords": [
   "diode",
   "sot",
-  "sot-363",
-  "sot-343",
-  "sot-323",
-  "sot-89-3",
-  "sot-223-3",
-  "sc-70",
   "zener",
-  "schottky",
   "3v",
-  "smd",
-  "discrete",
-  "discrete diode",
-  "alternate-kicad-library",
-  "akl",
-  "bat63",
-  "bzb784",
-  "bzv49",
-  "bzv90",
   "sc",
   "dual",
   "independent",
-  "alternate"
+  "akl",
+  "alternate",
+  "kicad",
+  "library",
+  "discrete",
+  "schottky",
+  "200mw",
+  "bat63",
+  "07w"
  ],
  "facts": {
   "package_family": "SOT",
@@ -70,7 +60,7 @@
   "tier_counts": {
    "A": 10
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -126,6 +116,6 @@
   "Alternate-KiCad-Library/Diode_Zener_AKL/MMBZ5225BS",
   "Alternate-KiCad-Library/Diode_Zener_AKL/MMBZ5225BSs"
  ],
- "embedding_text": "discrete-diode.sot.3v | Discrete Diode | Cluster of 10 tier A SOT-package discrete diodes (Schottky and Zener types) tagged with a 3V facet, all sourced from the Alternate-KiCad-Library, spanning SOT-363, SOT-343, SOT-323, SOT-89-3 and SOT-223-3 footprints. | diode sot sot-363 sot-343 sot-323 sot-89-3 sot-223-3 sc-70 zener schottky 3v smd discrete discrete diode alternate-kicad-library akl bat63 bzb784 bzv49 bzv90 sc dual independent alternate | SOT | 3V",
+ "embedding_text": "discrete-diode.sot.3v | Discrete Diode | 10 discrete diode parts for 3V using SOT footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | diode sot zener 3v sc dual independent akl alternate kicad library discrete schottky 200mw bat63 07w | SOT | 3V",
  "class": "discrete.diode"
 }

@@ -7,42 +7,34 @@
   "Power",
   "Linear Regulator"
  ],
- "description": "Surface-mount LDO linear power regulator IC cluster in MSOP package variants with standard and exposed-pad footprint options.",
+ "description": "10 ic power linear regulator parts for LDO using MSOP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select based on required pin count (8, 10, or 12 pins) and lead pitch.",
-  "Choose between standard MSOP or exposed-pad (1EP) footprint variants.",
-  "Verify specific footprint dimensions against part selection."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a MSOP land pattern is intended."
  ],
  "avoid_when": [
-  "The PCB design requires packages other than MSOP.",
-  "Through-hole mounting or non-SMD footprints are required.",
-  "A non-linear power converter or non-LDO regulator is needed."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than MSOP."
  ],
  "keywords": [
-  "ic",
-  "power",
-  "linear regulator",
-  "ldo",
   "msop",
-  "msop-8",
-  "msop-10",
-  "msop-12",
-  "msop-8-1ep",
-  "msop-10-1ep",
-  "msop-12-1ep",
-  "smd",
-  "surface mount",
-  "exposed pad",
   "regulator",
   "linear",
+  "ldo",
   "low",
   "noise",
   "adjustable",
   "p0",
   "so",
+  "ic",
+  "power",
   "65mm",
   "500ma",
-  "3x3mm"
+  "3x3mm",
+  "voltage",
+  "ultralow"
  ],
  "facts": {
   "package_family": "MSOP",
@@ -68,7 +60,7 @@
   "tier_counts": {
    "A": 10
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -124,6 +116,6 @@
   "kicad-symbols/Regulator_Linear/MIC5219-5.0YMM",
   "kicad-symbols/Regulator_Linear/MIC5219YMM"
  ],
- "embedding_text": "ic-power-ldo.msop.ldo | IC Power Linear Regulator | Surface-mount LDO linear power regulator IC cluster in MSOP package variants with standard and exposed-pad footprint options. | ic power linear regulator ldo msop msop-8 msop-10 msop-12 msop-8-1ep msop-10-1ep msop-12-1ep smd surface mount exposed pad regulator linear low noise adjustable p0 so 65mm 500ma 3x3mm | MSOP | LDO",
+ "embedding_text": "ic-power-ldo.msop.ldo | IC Power Linear Regulator | 10 ic power linear regulator parts for LDO using MSOP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | msop regulator linear ldo low noise adjustable p0 so ic power 65mm 500ma 3x3mm voltage ultralow | MSOP | LDO",
  "class": "ic.power.ldo"
 }

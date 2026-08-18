@@ -5,44 +5,31 @@
  "category_path": [
   "Connector"
  ],
- "description": "Cluster of 4 tier-C, generated-status 14-pin (14P) connector parts from legacy sources, spanning straight and right-angle PCB header board-mount footprints; none are currently planner-visible.",
+ "description": "4 connector parts using 14P footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Pick 14P_PCB_HEADER_BRD_MNT for straight mounting or 14P_PCB_HEADER_BRD_MNT_RA for right-angle mounting",
-  "Confirm the part's pin count is exactly 14 before use",
-  "All 4 parts are tier C with review_status 'generated'; verify details independently",
-  "Mount type is recorded as unknown, so check the footprint drawing before layout"
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a 14P land pattern is intended."
  ],
  "avoid_when": [
-  "A pin count other than 14 is required",
-  "A verified or higher-tier (non tier-C, non-generated) connector is needed",
-  "Mount style (through-hole vs SMD) must be confirmed but cannot be determined from available data",
-  "A planner-visible or vetted part is required, since none in this cluster are planner-visible"
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than 14P."
  ],
  "keywords": [
   "14p",
-  "14 pin",
-  "14-pin connector",
-  "pcb header",
-  "board mount header",
-  "board mount",
-  "right angle header",
-  "ra header",
-  "straight header",
-  "pin header",
-  "header connector",
-  "brd mnt",
-  "tier c",
-  "generated",
-  "legacy source",
-  "connector",
   "pcb",
   "header",
   "brd",
   "mnt",
   "ra",
+  "connector",
   "pad",
   "mm",
-  "pitch"
+  "pitch",
+  "pins",
+  "duplic",
+  "dup"
  ],
  "facts": {
   "package_family": "14P",
@@ -64,7 +51,7 @@
   "tier_counts": {
    "C": 4
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
@@ -73,6 +60,6 @@
   "dist-legacy/14P_PCB_HEADER_BRD_MNT",
   "dist-legacy/14P_PCB_HEADER_BRD_MNT_RA"
  ],
- "embedding_text": "connector.14p | Connector | Cluster of 4 tier-C, generated-status 14-pin (14P) connector parts from legacy sources, spanning straight and right-angle PCB header board-mount footprints; none are currently planner-visible. | 14p 14 pin 14-pin connector pcb header board mount header board mount right angle header ra header straight header pin header header connector brd mnt tier c generated legacy source connector pcb header brd mnt ra pad mm pitch | 14P | ",
+ "embedding_text": "connector.14p | Connector | 4 connector parts using 14P footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | 14p pcb header brd mnt ra connector pad mm pitch pins duplic dup | 14P | ",
  "class": "connector"
 }

@@ -6,42 +6,34 @@
   "Discrete",
   "Diode"
  ],
- "description": "Cluster of 7 SMD diodes rated 16V in SOT packages (SOT-363_SC-70-6, SOT-89-3, SOT-223-3_TabPin2, SOT-323_SC-70), sourced from Alternate-KiCad-Library, all tier A with quality score 100.",
+ "description": "7 discrete diode parts for 16V using SOT footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Match the exact SOT footprint variant (SOT-363, SOT-89-3, SOT-223-3, or SOT-323) to the intended PCB land pattern.",
-  "All 7 parts in this cluster are tier A with score 100, so differentiate by footprint rather than tier.",
-  "Confirm the 16V facet matches the required rating before selecting a specific part."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SOT land pattern is intended."
  ],
  "avoid_when": [
-  "The design requires a package other than SOT.",
-  "A voltage rating other than 16V is needed.",
-  "Pin-to-pad mapping for the chosen footprint has not been verified against the schematic symbol."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SOT."
  ],
  "keywords": [
   "diode",
   "sot",
-  "16v",
-  "smd",
-  "sot-363",
-  "sot-89-3",
-  "sot-223-3",
-  "sot-323",
-  "sc-70",
-  "discrete diode",
-  "alternate kicad library",
-  "akl",
-  "bzv49-c16",
-  "bzv90-c16",
-  "bzx84c16s",
-  "bzx84c16w",
-  "tier a",
   "zener",
+  "16v",
   "sc",
   "dual",
   "independent",
+  "akl",
   "alternate",
   "kicad",
-  "library"
+  "library",
+  "discrete",
+  "200mw",
+  "bzv49",
+  "c16",
+  "bzv90"
  ],
  "facts": {
   "package_family": "SOT",
@@ -67,7 +59,7 @@
   "tier_counts": {
    "A": 7
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -120,6 +112,6 @@
   "Alternate-KiCad-Library/Diode_Zener_AKL/MMBZ5246BS",
   "Alternate-KiCad-Library/Diode_Zener_AKL/MMBZ5246BSs"
  ],
- "embedding_text": "discrete-diode.sot.16v | Discrete Diode | Cluster of 7 SMD diodes rated 16V in SOT packages (SOT-363_SC-70-6, SOT-89-3, SOT-223-3_TabPin2, SOT-323_SC-70), sourced from Alternate-KiCad-Library, all tier A with quality score 100. | diode sot 16v smd sot-363 sot-89-3 sot-223-3 sot-323 sc-70 discrete diode alternate kicad library akl bzv49-c16 bzv90-c16 bzx84c16s bzx84c16w tier a zener sc dual independent alternate kicad library | SOT | 16V",
+ "embedding_text": "discrete-diode.sot.16v | Discrete Diode | 7 discrete diode parts for 16V using SOT footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | diode sot zener 16v sc dual independent akl alternate kicad library discrete 200mw bzv49 c16 bzv90 | SOT | 16V",
  "class": "discrete.diode"
 }

@@ -7,34 +7,21 @@
   "Analog",
   "Op-Amp"
  ],
- "description": "Surface-mount analog operational amplifier IC cluster featuring LFCSP packages with 2.7V and 5V facets across 3 KiCad symbol library parts.",
+ "description": "3 ic analog op-amp parts for 5V, 2.7V using LFCSP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Match the required footprint among LFCSP-8, LFCSP-10, or LFCSP-16-1EP.",
-  "Prefer tier A parts like ADA4691-2ACPZ and ADA4691-4ACPZ over tier B parts.",
-  "Ensure compatibility with 2.7V and 5V facets and SMD mounting."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a LFCSP land pattern is intended."
  ],
  "avoid_when": [
-  "The layout requires a package family other than LFCSP.",
-  "The design requires through-hole mounting instead of SMD.",
-  "Operating requirements differ from the specified 2.7V and 5V facets."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than LFCSP."
  ],
  "keywords": [
-  "ic",
-  "analog",
-  "op-amp",
-  "opamp",
   "lfcsp",
   "5v",
-  "2.7v",
-  "smd",
-  "ada4691-2acpz",
-  "ada4691-4acpz",
-  "ada4692-2acpz",
-  "lfcsp-10_2x2mm_p0.5mm",
-  "lfcsp-16-1ep_3x3mm_p0.5mm_ep1.6x1.6mm",
-  "lfcsp-8_2x2mm_p0.5mm",
-  "kicad-symbols",
-  "amplifier_operational",
+  "analog",
   "amplifier",
   "operational",
   "op",
@@ -42,7 +29,12 @@
   "7v",
   "to",
   "supply",
-  "dual"
+  "dual",
+  "5mm",
+  "rro",
+  "single",
+  "35v",
+  "mhz"
  ],
  "facts": {
   "package_family": "LFCSP",
@@ -69,7 +61,7 @@
    "A": 2,
    "B": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -102,6 +94,6 @@
   "kicad-symbols/Amplifier_Operational/ADA4691-4ACPZ",
   "kicad-symbols/Amplifier_Operational/ADA4692-2ACPZ"
  ],
- "embedding_text": "ic-analog-opamp.lfcsp.5v.2-7v | IC Analog Op-Amp | Surface-mount analog operational amplifier IC cluster featuring LFCSP packages with 2.7V and 5V facets across 3 KiCad symbol library parts. | ic analog op-amp opamp lfcsp 5v 2.7v smd ada4691-2acpz ada4691-4acpz ada4692-2acpz lfcsp-10_2x2mm_p0.5mm lfcsp-16-1ep_3x3mm_p0.5mm_ep1.6x1.6mm lfcsp-8_2x2mm_p0.5mm kicad-symbols amplifier_operational amplifier operational op amp 7v to supply dual | LFCSP | 5V 2.7V",
+ "embedding_text": "ic-analog-opamp.lfcsp.5v.2-7v | IC Analog Op-Amp | 3 ic analog op-amp parts for 5V, 2.7V using LFCSP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | lfcsp 5v analog amplifier operational op amp 7v to supply dual 5mm rro single 35v mhz | LFCSP | 5V 2.7V",
  "class": "ic.analog.opamp"
 }

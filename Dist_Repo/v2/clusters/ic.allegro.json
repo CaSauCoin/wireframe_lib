@@ -5,33 +5,26 @@
  "category_path": [
   "IC"
  ],
- "description": "Integrated circuit cluster containing 8 quality tier C parts in the ALLEGRO package family with SMD, through-hole, and unknown mounting types.",
+ "description": "8 ic parts using ALLEGRO footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Verify footprint compatibility with ALLEGRO, ALLEGRO PFF, or ALLEGRO SOICN-8 LC land patterns.",
-  "Choose parts based on required mounting styles including SMD or through-hole.",
-  "Evaluate part sourcing from dist-legacy or celestial-altium-library datasets."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a ALLEGRO land pattern is intended."
  ],
  "avoid_when": [
-  "The board layout requires a package family other than ALLEGRO.",
-  "Quality tier C components without planner visibility do not satisfy design requirements.",
-  "Specific mounting or pinout details are unknown or unverified for the application."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than ALLEGRO."
  ],
  "keywords": [
   "allegro",
   "ic",
-  "smd",
-  "through hole",
   "pff",
-  "soicn-8 lc",
-  "soicn",
-  "allegro pff",
-  "celestial altium library",
-  "dist legacy",
-  "tier c",
   "pad",
   "mm",
   "pitch",
   "pins",
+  "soicn",
   "lc",
   "tssop",
   "lp",
@@ -66,7 +59,7 @@
   "tier_counts": {
    "C": 8
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
@@ -79,6 +72,6 @@
   "celestial-altium-library/ALLEGRO PFF/ALLEGRO_PFF",
   "celestial-altium-library/ALLEGRO SOICN-8 LC/ALLEGRO_SOICN-8_LC"
  ],
- "embedding_text": "ic.allegro | IC | Integrated circuit cluster containing 8 quality tier C parts in the ALLEGRO package family with SMD, through-hole, and unknown mounting types. | allegro ic smd through hole pff soicn-8 lc soicn allegro pff celestial altium library dist legacy tier c pad mm pitch pins lc tssop lp qfn et 16ep through hole | ALLEGRO | ",
+ "embedding_text": "ic.allegro | IC | 8 ic parts using ALLEGRO footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | allegro ic pff pad mm pitch pins soicn lc tssop lp qfn et 16ep through hole | ALLEGRO | ",
  "class": "ic"
 }

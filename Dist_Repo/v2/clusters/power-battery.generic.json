@@ -6,30 +6,21 @@
   "Power",
   "Battery"
  ],
- "description": "Generic power battery and battery cell schematic symbols from kicad-symbols with unassigned footprints and deferred package selection.",
+ "description": "2 power battery parts with package chosen later. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Choose between single-cell (Battery_Cell) and multi-cell (Battery) schematic representations.",
-  "Assign a physical footprint and package before PCB layout as none are predefined.",
-  "Verify part specifications independently because entries are tier G generic symbols."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Select a footprint/package explicitly before placement."
  ],
  "avoid_when": [
-  "A fully specified manufacturer part with a pre-assigned PCB footprint is required.",
-  "Specific mechanical mountings or package dimensions must be defined up front.",
-  "A higher quality tier or validated electrical rating is required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review."
  ],
  "keywords": [
   "battery",
-  "battery cell",
-  "power battery",
   "cell",
-  "power",
-  "kicad-symbols",
   "device",
-  "package chosen later",
-  "generic battery",
-  "schematic symbol",
-  "unassigned footprint",
-  "dc source",
+  "power",
   "package",
   "chosen",
   "later",
@@ -54,7 +45,7 @@
   "tier_counts": {
    "G": 2
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -78,6 +69,6 @@
   "kicad-symbols/Device/Battery",
   "kicad-symbols/Device/Battery_Cell"
  ],
- "embedding_text": "power-battery.generic | Power Battery | Generic power battery and battery cell schematic symbols from kicad-symbols with unassigned footprints and deferred package selection. | battery battery cell power battery cell power kicad-symbols device package chosen later generic battery schematic symbol unassigned footprint dc source package chosen later multiple batt voltage source single | package chosen later | ",
+ "embedding_text": "power-battery.generic | Power Battery | 2 power battery parts with package chosen later. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | battery cell device power package chosen later multiple batt voltage source single | package chosen later | ",
  "class": "power.battery"
 }

@@ -5,42 +5,34 @@
  "category_path": [
   "IC"
  ],
- "description": "This cluster contains 20 IC components with 18V facet in TO package family supporting surface-mount and through-hole footprints.",
+ "description": "20 ic parts for 18V using TO footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Choose when requiring an 18V IC component in a TO package footprint.",
-  "Select between surface-mount (smd) and through-hole mounting options.",
-  "Filter by specific footprint requirements such as TO-220, TO-252, TO-263, TO-92, or TO-3."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a TO land pattern is intended."
  ],
  "avoid_when": [
-  "The design requires package families other than TO.",
-  "The circuit requires non-18V IC components.",
-  "Footprint requirements do not match SMD or through-hole TO land patterns."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than TO."
  ],
  "keywords": [
-  "ic",
-  "18v",
   "to",
-  "smd",
-  "through_hole",
-  "to-220-3_vertical",
-  "to-92_inline_wide",
-  "to-252-2",
-  "to-263-7_tabpin4",
-  "to-220f-3_vertical",
-  "to-3",
-  "to-263-2",
-  "alternate-kicad-library",
-  "kicad-symbols",
+  "18v",
   "voltage",
   "regulator",
   "terminal",
   "power",
+  "ic",
   "akl",
   "alternate",
   "kicad",
   "library",
   "vreg",
-  "pmic"
+  "pmic",
+  "supply",
+  "1a",
+  "vertical"
  ],
  "facts": {
   "package_family": "TO",
@@ -71,7 +63,7 @@
   "tier_counts": {
    "A": 20
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -137,6 +129,6 @@
   "Alternate-KiCad-Library/Voltage_Regulator_AKL/MC7918CTG",
   "Alternate-KiCad-Library/Voltage_Regulator_AKL/MC79L18ACPG"
  ],
- "embedding_text": "ic.to.18v | IC | This cluster contains 20 IC components with 18V facet in TO package family supporting surface-mount and through-hole footprints. | ic 18v to smd through_hole to-220-3_vertical to-92_inline_wide to-252-2 to-263-7_tabpin4 to-220f-3_vertical to-3 to-263-2 alternate-kicad-library kicad-symbols voltage regulator terminal power akl alternate kicad library vreg pmic | TO | 18V",
+ "embedding_text": "ic.to.18v | IC | 20 ic parts for 18V using TO footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | to 18v voltage regulator terminal power ic akl alternate kicad library vreg pmic supply 1a vertical | TO | 18V",
  "class": "ic"
 }

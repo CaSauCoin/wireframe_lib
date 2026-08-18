@@ -5,44 +5,34 @@
  "category_path": [
   "Connector"
  ],
- "description": "Cluster of 3 SMD JAE connector parts (tier B/C) spanning SIM card and MXM3.0-style footprints (JAE_SIM_Card_SF72S006, JAE_MM70-314-310B1); select the exact footprint match for the target land pattern.",
+ "description": "3 connector parts using JAE footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Match the exact JAE footprint (SF72S006 vs MM70-314-310B1) to the intended land pattern",
-  "Prefer the tier B entry (MXM3.0, score 100) over the tier C entries when tier data is available",
-  "Confirm SMD mounting is compatible with the target board process",
-  "Verify symbol-footprint pairing before use since review_status is 'generated'"
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a JAE land pattern is intended."
  ],
  "avoid_when": [
-  "The board requires a non-JAE connector footprint or land pattern",
-  "Electrical ratings or pinout are not documented for the selected part",
-  "A through-hole mount is needed, since only SMD mounts are listed",
-  "A reviewed/verified part is required and only generated, unreviewed entries are available"
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than JAE."
  ],
  "keywords": [
   "jae",
-  "connector",
-  "smd",
-  "sim card connector",
-  "sf72s006",
-  "mxm3.0",
-  "mm70-314-310b1",
-  "jae connector",
-  "card connector",
-  "board-to-board",
-  "smd connector",
-  "kicad symbol",
-  "generated part",
-  "tier b",
-  "tier c",
   "sim",
   "card",
+  "connector",
+  "sf72s006",
   "with",
   "detect",
   "switch",
   "topics",
   "mxm3",
   "mxm",
-  "4ff"
+  "4ff",
+  "push",
+  "mm70",
+  "310b1",
+  "nano"
  ],
  "facts": {
   "package_family": "JAE",
@@ -66,7 +56,7 @@
    "B": 1,
    "C": 2
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -83,6 +73,6 @@
   "kicad-symbols/Connector/JAE_SIM_Card_SF72S006",
   "dist-legacy/JAE_SIM_Card_SF72S006"
  ],
- "embedding_text": "connector.jae | Connector | Cluster of 3 SMD JAE connector parts (tier B/C) spanning SIM card and MXM3.0-style footprints (JAE_SIM_Card_SF72S006, JAE_MM70-314-310B1); select the exact footprint match for the target land pattern. | jae connector smd sim card connector sf72s006 mxm3.0 mm70-314-310b1 jae connector card connector board-to-board smd connector kicad symbol generated part tier b tier c sim card with detect switch topics mxm3 mxm 4ff | JAE | ",
+ "embedding_text": "connector.jae | Connector | 3 connector parts using JAE footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | jae sim card connector sf72s006 with detect switch topics mxm3 mxm 4ff push mm70 310b1 nano | JAE | ",
  "class": "connector"
 }

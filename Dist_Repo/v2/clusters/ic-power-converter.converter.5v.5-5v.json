@@ -7,33 +7,26 @@
   "Power",
   "Converter"
  ],
- "description": "Cluster of 61 IC power converter parts supporting 5V and 5.5V facets with SMD and through-hole mounting options across KiCad symbol libraries.",
+ "description": "61 ic power converter parts for 5V, 5.5V using Converter footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select based on mounting requirement, supporting SMD or through-hole footprints.",
-  "Match the required 5V or 5.5V facet for the target IC power converter application.",
-  "Verify the specific footprint variant among available DC-DC converter package patterns."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a Converter land pattern is intended."
  ],
  "avoid_when": [
-  "The design requires mounting methods other than SMD or through-hole.",
-  "The application requires voltage facets outside 5V or 5.5V.",
-  "The target package family is not an IC power converter."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than Converter."
  ],
  "keywords": [
-  "ic power converter",
-  "power converter",
   "converter",
-  "ic",
+  "dc",
   "5v",
-  "5.5v",
-  "smd",
-  "through_hole",
-  "tht",
   "dcdc",
   "traco",
-  "kicad",
-  "dc",
   "output",
   "regulated",
+  "tht",
   "1w",
   "sip",
   "single",
@@ -77,7 +70,7 @@
   "tier_counts": {
    "B": 61
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -184,6 +177,6 @@
   "kicad-symbols/Converter_DCDC/TRI1-0512SM",
   "kicad-symbols/Converter_DCDC/TRI1-0513SM"
  ],
- "embedding_text": "ic-power-converter.converter.5v.5-5v | IC Power Converter | Cluster of 61 IC power converter parts supporting 5V and 5.5V facets with SMD and through-hole mounting options across KiCad symbol libraries. | ic power converter power converter converter ic 5v 5.5v smd through_hole tht dcdc traco kicad dc output regulated 1w sip single unregulated input voltage isolation isolated | Converter | 5V 5.5V",
+ "embedding_text": "ic-power-converter.converter.5v.5-5v | IC Power Converter | 61 ic power converter parts for 5V, 5.5V using Converter footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | converter dc 5v dcdc traco output regulated tht 1w sip single unregulated input voltage isolation isolated | Converter | 5V 5.5V",
  "class": "ic.power.converter"
 }

@@ -6,33 +6,24 @@
   "Discrete",
   "Diode"
  ],
- "description": "Surface-mount discrete diode cluster rated for 6.1V in an SO-8 footprint (3.9x4.9mm, 1.27mm pitch).",
+ "description": "1 discrete diode parts for 6.1V using SO footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Use when requiring a 6.1V discrete surface-mount diode.",
-  "Verify compatibility with the SO-8_3.9x4.9mm_P1.27mm footprint.",
-  "Choose when Tier A quality parts from Alternate-KiCad-Library are preferred."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SO land pattern is intended."
  ],
  "avoid_when": [
-  "Do not use if a footprint other than SO-8 is required.",
-  "Avoid if operating voltage differs from 6.1V.",
-  "Do not use for through-hole mounting requirements."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SO."
  ],
  "keywords": [
-  "discrete",
-  "diode",
-  "6.1v",
   "so",
-  "so-8",
-  "smd",
-  "esda6v1u1",
-  "alternate-kicad-library",
-  "so-8_3.9x4.9mm_p1.27mm",
-  "3.9x4.9mm",
-  "1.27mm pitch",
-  "discrete.diode",
+  "diode",
   "tvs",
   "array",
   "1v",
+  "esda6v1u1",
   "akl",
   "6xunidirectional",
   "200w",
@@ -41,7 +32,8 @@
   "library",
   "9x4",
   "9mm",
-  "p1"
+  "p1",
+  "27mm"
  ],
  "facts": {
   "package_family": "SO",
@@ -64,7 +56,7 @@
   "tier_counts": {
    "A": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -79,6 +71,6 @@
  "part_ids": [
   "Alternate-KiCad-Library/Diode_TVS_AKL/ESDA6V1U1"
  ],
- "embedding_text": "discrete-diode.so.6-1v | Discrete Diode | Surface-mount discrete diode cluster rated for 6.1V in an SO-8 footprint (3.9x4.9mm, 1.27mm pitch). | discrete diode 6.1v so so-8 smd esda6v1u1 alternate-kicad-library so-8_3.9x4.9mm_p1.27mm 3.9x4.9mm 1.27mm pitch discrete.diode tvs array 1v akl 6xunidirectional 200w alternate kicad library 9x4 9mm p1 | SO | 6.1V",
+ "embedding_text": "discrete-diode.so.6-1v | Discrete Diode | 1 discrete diode parts for 6.1V using SO footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | so diode tvs array 1v esda6v1u1 akl 6xunidirectional 200w alternate kicad library 9x4 9mm p1 27mm | SO | 6.1V",
  "class": "discrete.diode"
 }

@@ -5,31 +5,21 @@
  "category_path": [
   "IC"
  ],
- "description": "IC component cluster with 3 through-hole parts featuring APEM footprints including APEM NDS-05, APEM NDS-06, and APEM NDS-08 from matthiasbock-altium-libraries.",
+ "description": "3 ic parts using APEM footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when requiring through-hole IC parts with APEM NDS-05, NDS-06, or NDS-08 footprints.",
-  "Verify footprints against layout requirements, as all 3 parts are tier C quality.",
-  "Confirm pin assignments and physical footprint geometry prior to design integration."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a APEM land pattern is intended."
  ],
  "avoid_when": [
-  "The layout requires surface-mount components or package families other than APEM.",
-  "Unverified tier C library parts are unacceptable without manual inspection.",
-  "Footprints other than APEM NDS-05, NDS-06, or NDS-08 are needed."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than APEM."
  ],
  "keywords": [
-  "ic",
   "apem",
-  "apem nds-05",
-  "apem nds-06",
-  "apem nds-08",
-  "nds-05",
-  "nds-06",
-  "nds-08",
-  "through_hole",
-  "through hole",
-  "matthiasbock-altium-libraries",
-  "integrated circuit",
   "nds",
+  "ic",
   "through",
   "hole",
   "pad",
@@ -58,7 +48,7 @@
   "tier_counts": {
    "C": 3
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
@@ -66,6 +56,6 @@
   "matthiasbock-altium-libraries/APEM NDS-06/APEM NDS-06",
   "matthiasbock-altium-libraries/APEM NDS-08/APEM NDS-08"
  ],
- "embedding_text": "ic.apem | IC | IC component cluster with 3 through-hole parts featuring APEM footprints including APEM NDS-05, APEM NDS-06, and APEM NDS-08 from matthiasbock-altium-libraries. | ic apem apem nds-05 apem nds-06 apem nds-08 nds-05 nds-06 nds-08 through_hole through hole matthiasbock-altium-libraries integrated circuit nds through hole pad mm pitch pins | APEM | ",
+ "embedding_text": "ic.apem | IC | 3 ic parts using APEM footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | apem nds ic through hole pad mm pitch pins | APEM | ",
  "class": "ic"
 }

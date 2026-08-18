@@ -7,31 +7,19 @@
   "Analog",
   "Audio"
  ],
- "description": "Sanyo analog audio amplifier IC cluster containing 7 through-hole STK series parts with Sanyo STK4xx-15 footprint variants.",
+ "description": "7 ic analog audio parts using Sanyo footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select for Sanyo STK series analog audio amplifier ICs requiring through-hole mounting.",
-  "Choose when using Sanyo STK4xx-15 footprints with a 2.54mm pitch.",
-  "Match the specific part footprint to either the 59.2x8.0mm or 78.0x8.0mm variant."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a Sanyo land pattern is intended."
  ],
  "avoid_when": [
-  "Surface-mount design is required.",
-  "The PCB design uses non-Sanyo audio amplifier ICs or non-STK footprints.",
-  "A footprint lead pitch other than 2.54mm is required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than Sanyo."
  ],
  "keywords": [
   "sanyo",
-  "analog audio",
-  "audio amplifier",
-  "stk4xx",
-  "stk433",
-  "stk435",
-  "stk436",
-  "stk437",
-  "stk439",
-  "through hole",
-  "ic analog audio",
-  "stk amplifier",
-  "p2.54mm",
   "audio",
   "amplifier",
   "sip",
@@ -39,10 +27,14 @@
   "wmin",
   "frequency",
   "power",
+  "stk4xx",
   "0mm",
   "p2",
   "54mm",
-  "2ch"
+  "2ch",
+  "ic",
+  "analog",
+  "0x8"
  ],
  "facts": {
   "package_family": "Sanyo",
@@ -64,7 +56,7 @@
   "tier_counts": {
    "A": 7
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -117,6 +109,6 @@
   "kicad-symbols/Amplifier_Audio/STK441_Sanyo",
   "kicad-symbols/Amplifier_Audio/STK443_Sanyo"
  ],
- "embedding_text": "ic-analog-audio.sanyo | IC Analog Audio | Sanyo analog audio amplifier IC cluster containing 7 through-hole STK series parts with Sanyo STK4xx-15 footprint variants. | sanyo analog audio audio amplifier stk4xx stk433 stk435 stk436 stk437 stk439 through hole ic analog audio stk amplifier p2.54mm audio amplifier sip channel wmin frequency power 0mm p2 54mm 2ch | Sanyo | ",
+ "embedding_text": "ic-analog-audio.sanyo | IC Analog Audio | 7 ic analog audio parts using Sanyo footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | sanyo audio amplifier sip channel wmin frequency power stk4xx 0mm p2 54mm 2ch ic analog 0x8 | Sanyo | ",
  "class": "ic.analog.audio"
 }

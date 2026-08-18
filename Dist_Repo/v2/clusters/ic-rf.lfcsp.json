@@ -6,42 +6,34 @@
   "IC",
   "RF"
  ],
- "description": "Surface-mount RF integrated circuits in LFCSP packages including RF switches and RF mixers from KiCad symbols.",
+ "description": "9 ic rf parts using LFCSP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select based on required pin count (8, 16, 24, or 32 pins) and matching LFCSP footprint dimensions.",
-  "Prefer Tier A rated parts (4 available) over Tier B parts (5 available) when available.",
-  "Verify whether the component function is an RF switch or RF mixer."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a LFCSP land pattern is intended."
  ],
  "avoid_when": [
-  "Through-hole (THT) mounting is required rather than surface-mount (SMD).",
-  "The design requires a package family other than LFCSP.",
-  "The required pin count or footprint size is not within the supported LFCSP footprint list."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than LFCSP."
  ],
  "keywords": [
-  "ic",
-  "rf",
   "lfcsp",
-  "smd",
-  "rf switch",
-  "rf mixer",
-  "adg901bcpz",
-  "adg918bcpz",
-  "adg919bcpz",
-  "hmc7992",
-  "adl5801",
-  "kicad-symbols",
-  "tier a",
-  "tier b",
+  "rf",
   "switch",
   "1ep",
   "p0",
   "5mm",
+  "ic",
   "nolead",
   "spdt",
   "mixer",
   "ghz",
   "amplifier",
-  "to"
+  "to",
+  "dc",
+  "isolation",
+  "3x3mm"
  ],
  "facts": {
   "package_family": "LFCSP",
@@ -68,7 +60,7 @@
    "A": 4,
    "B": 5
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -123,6 +115,6 @@
   "kicad-symbols/RF_Switch/HMC849A",
   "kicad-symbols/RF_Amplifier/HMC8500PM5E"
  ],
- "embedding_text": "ic-rf.lfcsp | IC RF | Surface-mount RF integrated circuits in LFCSP packages including RF switches and RF mixers from KiCad symbols. | ic rf lfcsp smd rf switch rf mixer adg901bcpz adg918bcpz adg919bcpz hmc7992 adl5801 kicad-symbols tier a tier b switch 1ep p0 5mm nolead spdt mixer ghz amplifier to | LFCSP | ",
+ "embedding_text": "ic-rf.lfcsp | IC RF | 9 ic rf parts using LFCSP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | lfcsp rf switch 1ep p0 5mm ic nolead spdt mixer ghz amplifier to dc isolation 3x3mm | LFCSP | ",
  "class": "ic.rf"
 }

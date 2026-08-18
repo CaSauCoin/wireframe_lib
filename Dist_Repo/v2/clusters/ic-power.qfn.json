@@ -6,31 +6,23 @@
   "IC",
   "Power"
  ],
- "description": "Power IC cluster featuring surface-mount components in QFN footprints, including representative part LT4295xUFD.",
+ "description": "1 ic power parts using QFN footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when a surface-mount power IC in a QFN package is needed.",
-  "Check footprint specifications against QFN-28-1EP_4x5mm_P0.5mm_EP2.65x3.65mm.",
-  "Evaluate part quality tier B and KiCad symbol source suitability."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a QFN land pattern is intended."
  ],
  "avoid_when": [
-  "The design requires through-hole components or non-QFN packaging.",
-  "The target application needs components outside the IC Power category.",
-  "The footprint layout requires a pin count or pad size other than QFN-28-1EP."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than QFN."
  ],
  "keywords": [
-  "ic",
-  "power",
-  "ic power",
-  "qfn",
-  "smd",
-  "lt4295xufd",
-  "qfn-28-1ep",
-  "regulator controller",
-  "kicad-symbols",
-  "qfn footprint",
   "ieee",
+  "qfn",
   "controller",
   "3bt",
+  "lt4295xufd",
   "regulator",
   "pd",
   "interface",
@@ -62,7 +54,7 @@
   "tier_counts": {
    "B": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -77,6 +69,6 @@
  "part_ids": [
   "kicad-symbols/Regulator_Controller/LT4295xUFD"
  ],
- "embedding_text": "ic-power.qfn | IC Power | Power IC cluster featuring surface-mount components in QFN footprints, including representative part LT4295xUFD. | ic power ic power qfn smd lt4295xufd qfn-28-1ep regulator controller kicad-symbols qfn footprint ieee controller 3bt regulator pd interface with forward flyback 1ep 4x5mm p0 5mm ep2 | QFN | ",
+ "embedding_text": "ic-power.qfn | IC Power | 1 ic power parts using QFN footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | ieee qfn controller 3bt lt4295xufd regulator pd interface with forward flyback 1ep 4x5mm p0 5mm ep2 | QFN | ",
  "class": "ic.power"
 }

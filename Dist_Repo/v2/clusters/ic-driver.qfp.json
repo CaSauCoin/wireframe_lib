@@ -6,31 +6,21 @@
   "IC",
   "Driver"
  ],
- "description": "Cluster of surface-mount driver integrated circuits available in QFP package footprints, including PQFP-44, PQFP-80, and PQFP-128.",
+ "description": "3 ic driver parts using QFP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when surface-mount driver ICs in QFP packages are required.",
-  "Match specific footprint requirements such as PQFP-44, PQFP-80, or PQFP-128.",
-  "Check component quality tier, prioritizing Tier A parts."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a QFP land pattern is intended."
  ],
  "avoid_when": [
-  "The board design requires packages other than QFP.",
-  "Through-hole mounting is required instead of SMD."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than QFP."
  ],
  "keywords": [
-  "ic driver",
-  "driver ic",
-  "qfp",
   "pqfp",
-  "smd",
-  "pqfp-44",
-  "pqfp-80",
-  "pqfp-128",
-  "hv5622pg",
-  "hd44780uxxxfs",
-  "315-5313a",
-  "hitachi fp80b",
-  "kicad-symbols",
   "driver",
+  "qfp",
   "display",
   "hitachi",
   "p0",
@@ -40,7 +30,10 @@
   "mqfp",
   "sega",
   "yamaha",
-  "qfp128"
+  "qfp128",
+  "lcd",
+  "fp",
+  "80b"
  ],
  "facts": {
   "package_family": "QFP",
@@ -64,7 +57,7 @@
    "A": 1,
    "B": 2
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -97,6 +90,6 @@
   "kicad-symbols/Driver_Display/315-5313A",
   "kicad-symbols/Driver_Display/HD44780UxxxFS"
  ],
- "embedding_text": "ic-driver.qfp | IC Driver | Cluster of surface-mount driver integrated circuits available in QFP package footprints, including PQFP-44, PQFP-80, and PQFP-128. | ic driver driver ic qfp pqfp smd pqfp-44 pqfp-80 pqfp-128 hv5622pg hd44780uxxxfs 315-5313a hitachi fp80b kicad-symbols driver display hitachi p0 8mm bit ic mqfp sega yamaha qfp128 | QFP | ",
+ "embedding_text": "ic-driver.qfp | IC Driver | 3 ic driver parts using QFP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | pqfp driver qfp display hitachi p0 8mm bit ic mqfp sega yamaha qfp128 lcd fp 80b | QFP | ",
  "class": "ic.driver"
 }

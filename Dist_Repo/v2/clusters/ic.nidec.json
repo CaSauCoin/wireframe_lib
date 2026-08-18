@@ -5,32 +5,22 @@
  "category_path": [
   "IC"
  ],
- "description": "EDA IC component cluster containing 6 tier-C parts with NIDEC package footprints supporting surface-mount and through-hole mounting.",
+ "description": "6 ic parts using NIDEC footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Verify exact footprint compatibility with Nidec Copal SH-7010 or CS-4-13NTA footprint variants.",
-  "Choose appropriate mounting type between surface-mount and through-hole.",
-  "Evaluate part suitability considering all entries are currently rated tier C."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a NIDEC land pattern is intended."
  ],
  "avoid_when": [
-  "The PCB footprint requirement differs from NIDEC package land patterns.",
-  "Tier C quality level or legacy library sources do not meet project criteria.",
-  "Mounting requirements fall outside surface-mount or through-hole options."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than NIDEC."
  ],
  "keywords": [
-  "ic",
   "nidec",
-  "nidec copal",
-  "sh-7010a",
-  "sh-7010b",
-  "sh-7010c",
-  "cs-4-13nta",
   "copal",
-  "smd",
-  "through_hole",
-  "celestial-altium-library",
-  "dist-legacy",
-  "tier-c",
   "sh",
+  "ic",
   "switch",
   "cs",
   "13nta",
@@ -40,7 +30,9 @@
   "pins",
   "rotary",
   "7010a",
-  "7010b"
+  "7010b",
+  "7010c",
+  "cf"
  ],
  "facts": {
   "package_family": "NIDEC",
@@ -69,7 +61,7 @@
   "tier_counts": {
    "C": 6
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
@@ -80,6 +72,6 @@
   "dist-legacy/Nidec_Copal_SH-7010C",
   "celestial-altium-library/Nidec Copal CS-4-13NTA/Nidec Copal CS-4-13NTA"
  ],
- "embedding_text": "ic.nidec | IC | EDA IC component cluster containing 6 tier-C parts with NIDEC package footprints supporting surface-mount and through-hole mounting. | ic nidec nidec copal sh-7010a sh-7010b sh-7010c cs-4-13nta copal smd through_hole celestial-altium-library dist-legacy tier-c sh switch cs 13nta pad mm pitch pins rotary 7010a 7010b | NIDEC | ",
+ "embedding_text": "ic.nidec | IC | 6 ic parts using NIDEC footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | nidec copal sh ic switch cs 13nta pad mm pitch pins rotary 7010a 7010b 7010c cf | NIDEC | ",
  "class": "ic"
 }

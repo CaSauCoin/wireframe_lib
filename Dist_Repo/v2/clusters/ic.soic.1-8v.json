@@ -5,42 +5,34 @@
  "category_path": [
   "IC"
  ],
- "description": "Surface-mount 1.8V integrated circuit cluster using SOIC-8 package footprints sourced from KiCad and JLCPCB libraries.",
+ "description": "2 ic parts for 1.8V using SOIC footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Selecting surface-mount 1.8V integrated circuits in SOIC-8 package footprints.",
-  "Choosing parts based on quality tier A or B from KiCad or JLCPCB library sources.",
-  "Matching specific footprint variants such as SOIC-8_3.9x4.9mm_P1.27mm."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SOIC land pattern is intended."
  ],
  "avoid_when": [
-  "The design requires through-hole mounting or package footprints other than SOIC-8.",
-  "Operating voltage requirement differs from 1.8V.",
-  "Components other than surface-mount integrated circuits are required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SOIC."
  ],
  "keywords": [
-  "ic",
   "soic",
-  "soic-8",
-  "1.8v",
-  "smd",
-  "surface mount",
-  "kicad",
-  "jlcpcb",
-  "mcp1501",
-  "mcp6002t",
-  "op-amp",
-  "reference voltage",
   "8v",
   "rail",
   "reference",
   "voltage",
   "p1",
   "precision",
+  "ic",
   "1pa",
   "to",
   "l4",
   "w3",
   "ls6",
-  "bl"
+  "bl",
+  "mcp1501",
+  "18xsn"
  ],
  "facts": {
   "package_family": "SOIC",
@@ -66,7 +58,7 @@
    "A": 1,
    "B": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -90,6 +82,6 @@
   "kicad-symbols/Reference_Voltage/MCP1501-18xSN",
   "JLCPCB-Kicad-Library/JLCPCB-Analog/Op-Amp, MCP6002T-I/SN"
  ],
- "embedding_text": "ic.soic.1-8v | IC | Surface-mount 1.8V integrated circuit cluster using SOIC-8 package footprints sourced from KiCad and JLCPCB libraries. | ic soic soic-8 1.8v smd surface mount kicad jlcpcb mcp1501 mcp6002t op-amp reference voltage 8v rail reference voltage p1 precision 1pa to l4 w3 ls6 bl | SOIC | 1.8V",
+ "embedding_text": "ic.soic.1-8v | IC | 2 ic parts for 1.8V using SOIC footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | soic 8v rail reference voltage p1 precision ic 1pa to l4 w3 ls6 bl mcp1501 18xsn | SOIC | 1.8V",
  "class": "ic"
 }

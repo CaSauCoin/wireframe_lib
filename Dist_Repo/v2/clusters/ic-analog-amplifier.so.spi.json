@@ -7,34 +7,23 @@
   "Analog",
   "Amplifier"
  ],
- "description": "Cluster of 8 surface-mount SPI analog amplifier ICs featuring SO-8 footprints from Alternate-KiCad-Library.",
+ "description": "8 ic analog amplifier parts for SPI using SO footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Require an SMD analog amplifier IC with an SPI interface.",
-  "Selecting parts in an SO-8 package footprint (SO-8_3.9x4.9mm_P1.27mm).",
-  "Choosing tier A components sourced from Alternate-KiCad-Library."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SO land pattern is intended."
  ],
  "avoid_when": [
-  "The design requires through-hole mounting instead of SMD.",
-  "A communication interface other than SPI is required.",
-  "The PCB layout requires a footprint other than SO-8."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SO."
  ],
  "keywords": [
-  "ic",
-  "analog amplifier",
-  "amplifier",
-  "spi",
   "so",
-  "so-8",
-  "smd",
-  "surface mount",
-  "alternate-kicad-library",
-  "mcp6s21t-e-sn",
-  "mcp6s22t-e-sn",
-  "mcp6s91t-e-sn",
-  "ic.analog.amplifier",
-  "so-8_3.9x4.9mm_p1.27mm",
+  "amplifier",
   "programmable",
   "gain",
+  "spi",
   "sn",
   "akl",
   "interface",
@@ -42,7 +31,10 @@
   "offset",
   "alternate",
   "kicad",
-  "library"
+  "library",
+  "9x4",
+  "9mm",
+  "p1"
  ],
  "facts": {
   "package_family": "SO",
@@ -65,7 +57,7 @@
   "tier_counts": {
    "A": 8
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -119,6 +111,6 @@
   "Alternate-KiCad-Library/Amplifier_Programmable_AKL/MCP6S92T-E-SN",
   "Alternate-KiCad-Library/Amplifier_Programmable_AKL/MCP6S92T-I-SN"
  ],
- "embedding_text": "ic-analog-amplifier.so.spi | IC Analog Amplifier | Cluster of 8 surface-mount SPI analog amplifier ICs featuring SO-8 footprints from Alternate-KiCad-Library. | ic analog amplifier amplifier spi so so-8 smd surface mount alternate-kicad-library mcp6s21t-e-sn mcp6s22t-e-sn mcp6s91t-e-sn ic.analog.amplifier so-8_3.9x4.9mm_p1.27mm programmable gain sn akl interface error offset alternate kicad library | SO | SPI",
+ "embedding_text": "ic-analog-amplifier.so.spi | IC Analog Amplifier | 8 ic analog amplifier parts for SPI using SO footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | so amplifier programmable gain spi sn akl interface error offset alternate kicad library 9x4 9mm p1 | SO | SPI",
  "class": "ic.analog.amplifier"
 }

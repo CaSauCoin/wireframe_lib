@@ -6,34 +6,23 @@
   "IC",
   "Sensor"
  ],
- "description": "Surface-mount I2C 32V sensor ICs in QFN package footprints including VQFN-16 and UQFN-16.",
+ "description": "9 ic sensor parts for I2C, 32V using QFN footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Choose between VQFN-16 and UQFN-16 footprint options based on PCB layout requirements.",
-  "Select the appropriate PAC series part variant for the specific application.",
-  "Ensure compatibility with surface-mount QFN land patterns."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a QFN land pattern is intended."
  ],
  "avoid_when": [
-  "Through-hole mounting or non-SMD packaging is required.",
-  "The board layout requires package families other than QFN.",
-  "System specifications require interfaces or voltage ratings other than 32V I2C."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than QFN."
  ],
  "keywords": [
-  "ic",
-  "sensor",
   "i2c",
-  "32v",
-  "qfn",
-  "smd",
-  "vqfn-16",
-  "uqfn-16",
-  "pac1932x",
-  "pac1933x",
-  "pac1934x",
-  "pac1951x",
-  "ic sensor",
-  "sensor energy",
+  "sensor",
   "power",
   "monitor",
+  "32v",
   "vqfn",
   "energy",
   "channel",
@@ -41,7 +30,10 @@
   "uqfn",
   "1ep",
   "p0",
-  "nolead"
+  "nolead",
+  "ic",
+  "qfn",
+  "high"
  ],
  "facts": {
   "package_family": "QFN",
@@ -66,7 +58,7 @@
   "tier_counts": {
    "B": 9
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -121,6 +113,6 @@
   "kicad-symbols/Sensor_Energy/PAC1953x-x4MX",
   "kicad-symbols/Sensor_Energy/PAC1954x-x4MX"
  ],
- "embedding_text": "ic-sensor.qfn.i2c.32v | IC Sensor | Surface-mount I2C 32V sensor ICs in QFN package footprints including VQFN-16 and UQFN-16. | ic sensor i2c 32v qfn smd vqfn-16 uqfn-16 pac1932x pac1933x pac1934x pac1951x ic sensor sensor energy power monitor vqfn energy channel side uqfn 1ep p0 nolead | QFN | I2C 32V",
+ "embedding_text": "ic-sensor.qfn.i2c.32v | IC Sensor | 9 ic sensor parts for I2C, 32V using QFN footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | i2c sensor power monitor 32v vqfn energy channel side uqfn 1ep p0 nolead ic qfn high | QFN | I2C 32V",
  "class": "ic.sensor"
 }

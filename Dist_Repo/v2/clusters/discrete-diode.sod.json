@@ -6,42 +6,34 @@
   "Discrete",
   "Diode"
  ],
- "description": "A collection of 15 discrete diode parts using surface-mount SOD package footprints including SOD-123, SOD-323, SOD-523, SOD-923, and SOD-80 MiniMELF.",
+ "description": "15 discrete diode parts using SOD footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select by required package variant such as SOD-123, SOD-323, SOD-523, or SOD-80 MiniMELF.",
-  "Filter by quality tier, favoring Tier A representative parts.",
-  "Confirm surface-mount footprint matching for the target PCB design."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SOD land pattern is intended."
  ],
  "avoid_when": [
-  "The board layout requires a non-SOD diode footprint family.",
-  "Through-hole mounting is required.",
-  "Tier C unverified components do not meet quality requirements for the design."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SOD."
  ],
  "keywords": [
   "sod",
   "diode",
   "discrete",
-  "smd",
-  "sod-123",
-  "sod-323",
-  "sod-523",
-  "sod-923",
-  "sod-123w",
-  "sod-80",
-  "minimelf",
-  "schottky",
-  "discrete diode",
-  "surface mount",
   "sparkfun",
   "pins",
   "pad",
   "mm",
   "pitch",
   "123w",
+  "minimelf",
   "surface",
   "mount",
   "discretesemi",
-  "fast"
+  "schottky",
+  "fast",
+  "switching"
  ],
  "facts": {
   "package_family": "SOD",
@@ -73,7 +65,7 @@
    "B": 1,
    "C": 10
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -134,6 +126,6 @@
   "celestial-altium-library/SOD-80 MiniMELF/SOD-80_MiniMELF",
   "celestial-altium-library/SOD-923/SOD-923"
  ],
- "embedding_text": "discrete-diode.sod | Discrete Diode | A collection of 15 discrete diode parts using surface-mount SOD package footprints including SOD-123, SOD-323, SOD-523, SOD-923, and SOD-80 MiniMELF. | sod diode discrete smd sod-123 sod-323 sod-523 sod-923 sod-123w sod-80 minimelf schottky discrete diode surface mount sparkfun pins pad mm pitch 123w surface mount discretesemi fast | SOD | ",
+ "embedding_text": "discrete-diode.sod | Discrete Diode | 15 discrete diode parts using SOD footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | sod diode discrete sparkfun pins pad mm pitch 123w minimelf surface mount discretesemi schottky fast switching | SOD | ",
  "class": "discrete.diode"
 }

@@ -7,41 +7,34 @@
   "Power",
   "Switching Regulator"
  ],
- "description": "A cluster of 4 IC power switching regulator converter parts with 5V and 12V facets, available in SMD and through-hole mounting options.",
+ "description": "4 ic power switching regulator parts for 5V, 12V using Converter footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Choose between surface-mount (SMD) and through-hole (THT) mounting configurations.",
-  "Select matching footprint for CRE1, NMA, or NXE series converter footprints.",
-  "Ensure application requires 5V and 12V voltage facets."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a Converter land pattern is intended."
  ],
  "avoid_when": [
-  "The design requires package footprints other than the supported Murata converter land patterns.",
-  "The required mounting style is neither surface-mount (SMD) nor through-hole (THT).",
-  "The application requires voltage facets other than 5V and 12V."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than Converter."
  ],
  "keywords": [
-  "ic",
-  "power",
-  "switching regulator",
-  "converter",
-  "5v",
-  "12v",
-  "smd",
-  "through_hole",
-  "tht",
-  "murata",
-  "dcdc",
-  "cre1s1205sc",
-  "nma1205dc",
-  "nma1205sc",
-  "nxe2s1205mc",
   "dc",
+  "converter",
+  "murata",
   "regulator",
   "switching",
+  "12v",
+  "5v",
   "isolated",
   "isolation",
+  "dcdc",
   "output",
+  "ic",
+  "power",
   "1w",
-  "voltage"
+  "voltage",
+  "tht"
  ],
  "facts": {
   "package_family": "Converter",
@@ -69,7 +62,7 @@
   "tier_counts": {
    "A": 4
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -111,6 +104,6 @@
   "kicad-symbols/Regulator_Switching/NMA1205SC",
   "kicad-symbols/Regulator_Switching/NXE2S1205MC"
  ],
- "embedding_text": "ic-power-switching.converter.5v.12v | IC Power Switching Regulator | A cluster of 4 IC power switching regulator converter parts with 5V and 12V facets, available in SMD and through-hole mounting options. | ic power switching regulator converter 5v 12v smd through_hole tht murata dcdc cre1s1205sc nma1205dc nma1205sc nxe2s1205mc dc regulator switching isolated isolation output 1w voltage | Converter | 5V 12V",
+ "embedding_text": "ic-power-switching.converter.5v.12v | IC Power Switching Regulator | 4 ic power switching regulator parts for 5V, 12V using Converter footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | dc converter murata regulator switching 12v 5v isolated isolation dcdc output ic power 1w voltage tht | Converter | 5V 12V",
  "class": "ic.power.switching"
 }

@@ -6,44 +6,34 @@
   "Discrete",
   "Diode"
  ],
- "description": "Cluster of 65 discrete diode parts in TO-family packages tagged with the 30V facet, spanning SMD, through-hole, and unknown mount types; sourced mainly from Alternate-KiCad-Library with 63 tier-A and 2 tier-B entries, review status generated.",
+ "description": "65 discrete diode parts for 30V using TO footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Prefer tier A entries (63 of 65 parts) and check the exact footprint variant before use.",
-  "Representative parts include Schottky- and Zener-named entries — confirm which type matches your design intent.",
-  "Match the specific TO footprint (e.g. TO-220-3_Vertical_AKA, TO-263-2, TO-18-2_Zener, TO-92-2_AK) to your land pattern.",
-  "Review status is 'generated' — verify against a datasheet before committing to a PCB."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a TO land pattern is intended."
  ],
  "avoid_when": [
-  "The design requires a package outside the TO family.",
-  "The mount type needed (SMD vs through-hole) isn't confirmed for the candidate part, since some entries list 'unknown'.",
-  "Electrical ratings beyond the 30V facet (current, forward voltage, switching speed, etc.) aren't documented for the chosen part.",
-  "Only a tier B or unreviewed entry matches and stricter source verification is required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than TO."
  ],
  "keywords": [
-  "discrete diode",
-  "to package",
-  "30v",
-  "schottky",
-  "zener",
-  "to-220",
-  "to-263",
-  "to-247",
-  "to-252",
-  "to-18",
-  "to-277b",
-  "to-262",
-  "to-218",
-  "to-126",
-  "to-92",
-  "akl",
-  "alternate-kicad-library",
-  "through hole",
   "to",
   "diode",
+  "schottky",
+  "30v",
   "dual",
   "vertical",
   "discrete",
-  "alternate"
+  "akl",
+  "alternate",
+  "kicad",
+  "library",
+  "common",
+  "cathode",
+  "commoncathode",
+  "rm",
+  "d2pak"
  ],
  "facts": {
   "package_family": "TO",
@@ -81,7 +71,7 @@
    "A": 63,
    "B": 2
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -192,6 +182,6 @@
   "digikey-kicad-library/dk_Thyristors-SCRs/2N5060",
   "Alternate-KiCad-Library/Diode_AKL/TDA1061"
  ],
- "embedding_text": "discrete-diode.to.30v | Discrete Diode | Cluster of 65 discrete diode parts in TO-family packages tagged with the 30V facet, spanning SMD, through-hole, and unknown mount types; sourced mainly from Alternate-KiCad-Library with 63 tier-A and 2 tier-B entries, review status generated. | discrete diode to package 30v schottky zener to-220 to-263 to-247 to-252 to-18 to-277b to-262 to-218 to-126 to-92 akl alternate-kicad-library through hole to diode dual vertical discrete alternate | TO | 30V",
+ "embedding_text": "discrete-diode.to.30v | Discrete Diode | 65 discrete diode parts for 30V using TO footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | to diode schottky 30v dual vertical discrete akl alternate kicad library common cathode commoncathode rm d2pak | TO | 30V",
  "class": "discrete.diode"
 }

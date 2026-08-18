@@ -6,30 +6,24 @@
   "Discrete",
   "Diode"
  ],
- "description": "Cluster of 2 discrete diode parts in the DIOT package family featuring DIOT_BIENDUNG_SMD and DIOT_BIENDUNG_THUONG footprints.",
+ "description": "2 discrete diode parts using DIOT footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Verify footprint compatibility between DIOT_BIENDUNG_SMD and DIOT_BIENDUNG_THUONG variants.",
-  "Check part details as all entries in this cluster are quality tier C.",
-  "Select when a DIOT package family diode is required."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a DIOT land pattern is intended."
  ],
  "avoid_when": [
-  "A package family other than DIOT is required for the layout.",
-  "A footprint option other than DIOT_BIENDUNG_SMD or DIOT_BIENDUNG_THUONG is needed.",
-  "High-tier or planner-visible verified parts are required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than DIOT."
  ],
  "keywords": [
   "diot",
-  "discrete",
-  "diode",
-  "discrete diode",
-  "diot_biendung_smd",
-  "diot_biendung_thuong",
   "biendung",
   "smd",
   "thuong",
-  "package family diot",
-  "dist-legacy",
-  "tier c",
+  "discrete",
+  "diode",
   "pad",
   "mm",
   "pitch",
@@ -55,13 +49,13 @@
   "tier_counts": {
    "C": 2
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
   "dist-legacy/DIOT_BIENDUNG_SMD",
   "dist-legacy/DIOT_BIENDUNG_THUONG"
  ],
- "embedding_text": "discrete-diode.diot | Discrete Diode | Cluster of 2 discrete diode parts in the DIOT package family featuring DIOT_BIENDUNG_SMD and DIOT_BIENDUNG_THUONG footprints. | diot discrete diode discrete diode diot_biendung_smd diot_biendung_thuong biendung smd thuong package family diot dist-legacy tier c pad mm pitch pins | DIOT | ",
+ "embedding_text": "discrete-diode.diot | Discrete Diode | 2 discrete diode parts using DIOT footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | diot biendung smd thuong discrete diode pad mm pitch pins | DIOT | ",
  "class": "discrete.diode"
 }

@@ -6,42 +6,34 @@
   "Discrete",
   "Transistor"
  ],
- "description": "Cluster of 7 surface-mount discrete transistors rated for 5V using SOT-23 package family and Q_SOT-23 footprint.",
+ "description": "7 discrete transistor parts for 5V using SOT-23 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when needing a surface-mount discrete transistor with a SOT-23 package family and Q_SOT-23 footprint.",
-  "Choose among specific NPN, PNP, or PMOS transistor options available in the cluster.",
-  "Use when sourcing Tier B quality parts from the JLCPCB-Kicad-Library."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SOT-23 land pattern is intended."
  ],
  "avoid_when": [
-  "The design requires through-hole components rather than surface-mount (smd).",
-  "A package family other than SOT-23 or footprint other than Q_SOT-23 is required.",
-  "Voltage requirement differs from the 5V facet specification."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SOT-23."
  ],
  "keywords": [
-  "discrete transistor",
-  "discrete",
-  "transistor",
-  "sot-23",
-  "q_sot-23",
-  "5v",
-  "smd",
-  "npn",
-  "pnp",
-  "pmos",
-  "jlcpcb-kicad-library",
-  "mmbta42",
-  "lbss84lt1g",
-  "bc856b",
-  "mmbt2907a",
-  "mmbt5401",
   "sot",
+  "pnp",
+  "5v",
   "jlcpcb",
   "transistors",
   "rohs",
   "to",
+  "smd",
+  "discrete",
+  "transistor",
   "100na",
   "bipolar",
-  "bjt"
+  "bjt",
+  "npn",
+  "200mv",
+  "100mhz"
  ],
  "facts": {
   "package_family": "SOT-23",
@@ -64,7 +56,7 @@
   "tier_counts": {
    "B": 7
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -117,6 +109,6 @@
   "JLCPCB-Kicad-Library/JLCPCB-Transistors/PNP,MMBT5401 200-300",
   "JLCPCB-Kicad-Library/JLCPCB-Transistors/PNP,MMBTA92"
  ],
- "embedding_text": "discrete-transistor.sot-23.5v | Discrete Transistor | Cluster of 7 surface-mount discrete transistors rated for 5V using SOT-23 package family and Q_SOT-23 footprint. | discrete transistor discrete transistor sot-23 q_sot-23 5v smd npn pnp pmos jlcpcb-kicad-library mmbta42 lbss84lt1g bc856b mmbt2907a mmbt5401 sot jlcpcb transistors rohs to 100na bipolar bjt | SOT-23 | 5V",
+ "embedding_text": "discrete-transistor.sot-23.5v | Discrete Transistor | 7 discrete transistor parts for 5V using SOT-23 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | sot pnp 5v jlcpcb transistors rohs to smd discrete transistor 100na bipolar bjt npn 200mv 100mhz | SOT-23 | 5V",
  "class": "discrete.transistor"
 }

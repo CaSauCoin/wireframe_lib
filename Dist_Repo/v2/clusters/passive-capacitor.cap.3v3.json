@@ -6,31 +6,25 @@
   "Passive",
   "Capacitor"
  ],
- "description": "Cluster of 3 passive capacitor parts associated with 3.3V facets and CAP footprints from legacy distributor sources.",
+ "description": "3 passive capacitor parts for 3.3V using CAP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Verify part compatibility with 3.3V facet and CAP footprint requirements.",
-  "Check part quality tiers (Tier B or C) and legacy source records.",
-  "Prioritize planner-visible parts with higher quality scores."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a CAP land pattern is intended."
  ],
  "avoid_when": [
-  "A package family or footprint other than CAP is required.",
-  "Designs require verified mounting types or Tier A components.",
-  "Application specifications require voltage ratings other than 3.3V."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than CAP."
  ],
  "keywords": [
-  "passive",
-  "capacitor",
-  "3.3v",
   "cap",
-  "passive capacitor",
-  "alsmd",
-  "elec",
-  "dist-legacy",
-  "3.3mm",
-  "h5.4mm",
-  "h5.5mm",
+  "capacitor",
   "mm",
   "3mm",
+  "passive",
+  "alsmd",
+  "elec",
   "h5",
   "aluminum",
   "electrolytic",
@@ -63,7 +57,7 @@
    "B": 2,
    "C": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -88,6 +82,6 @@
   "dist-legacy/CAP ALSMD ELEC 3.3MM H5.5MM",
   "dist-legacy/CAP 2220_5650 3.3MM"
  ],
- "embedding_text": "passive-capacitor.cap.3v3 | Passive Capacitor | Cluster of 3 passive capacitor parts associated with 3.3V facets and CAP footprints from legacy distributor sources. | passive capacitor 3.3v cap passive capacitor alsmd elec dist-legacy 3.3mm h5.4mm h5.5mm mm 3mm h5 aluminum electrolytic surface mount with height smd 3v | CAP | 3.3V",
+ "embedding_text": "passive-capacitor.cap.3v3 | Passive Capacitor | 3 passive capacitor parts for 3.3V using CAP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | cap capacitor mm 3mm passive alsmd elec h5 aluminum electrolytic surface mount with height smd 3v | CAP | 3.3V",
  "class": "passive.capacitor"
 }

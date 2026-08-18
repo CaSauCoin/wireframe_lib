@@ -5,27 +5,21 @@
  "category_path": [
   "IC"
  ],
- "description": "IC cluster containing 1 tier C part associated with the MAX package family and MAX-6Q footprint.",
+ "description": "1 ic parts using MAX footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when requiring an IC component in the MAX package family or MAX-6Q footprint.",
-  "Verify pinout and mounting configuration as mounting type is unknown.",
-  "Check part specifications given the tier C quality rating and dist-legacy source."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a MAX land pattern is intended."
  ],
  "avoid_when": [
-  "The application requires footprint options other than MAX-6Q.",
-  "Tier C quality components or legacy distributor data are not acceptable.",
-  "Unspecified electrical limits or mounting details cannot be tolerated."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than MAX."
  ],
  "keywords": [
-  "ic",
   "max",
-  "max-6q",
   "6q",
-  "max package",
-  "dist-legacy",
-  "tier c",
-  "ic max",
-  "max footprint",
+  "ic",
   "pad",
   "mm",
   "pitch",
@@ -50,12 +44,12 @@
   "tier_counts": {
    "C": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
   "dist-legacy/MAX-6Q"
  ],
- "embedding_text": "ic.max | IC | IC cluster containing 1 tier C part associated with the MAX package family and MAX-6Q footprint. | ic max max-6q 6q max package dist-legacy tier c ic max max footprint pad mm pitch pins | MAX | ",
+ "embedding_text": "ic.max | IC | 1 ic parts using MAX footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | max 6q ic pad mm pitch pins | MAX | ",
  "class": "ic"
 }

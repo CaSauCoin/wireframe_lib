@@ -5,33 +5,23 @@
  "category_path": [
   "IC"
  ],
- "description": "Integrated circuit cluster featuring surface-mount components in QSOP package footprints with 0.635mm pitch.",
+ "description": "5 ic parts using QSOP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Verify required pin count and dimensions for QSOP-16, QSOP-20, or QSOP-28 footprints.",
-  "Select parts by quality tier preference such as tier A.",
-  "Confirm compatibility with 0.635mm pitch surface-mount footprints."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a QSOP land pattern is intended."
  ],
  "avoid_when": [
-  "The application requires through-hole mounting instead of SMD.",
-  "The PCB layout specifies a package family other than QSOP.",
-  "Footprint dimensions or lead pitch differ from standard 0.635mm QSOP."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than QSOP."
  ],
  "keywords": [
-  "ic",
   "qsop",
-  "qsop-16",
-  "qsop-20",
-  "qsop-28",
-  "smd",
-  "surface mount",
-  "0.635mm pitch",
-  "p0.635mm",
-  "adm1270arqz",
-  "integrated circuit",
-  "qsop package",
   "p0",
   "635mm",
   "9mm",
+  "ic",
   "9x4",
   "package",
   "9x8",
@@ -40,7 +30,9 @@
   "so",
   "surface",
   "mount",
-  "pad"
+  "pad",
+  "mm",
+  "pitch"
  ],
  "facts": {
   "package_family": "QSOP",
@@ -67,7 +59,7 @@
    "A": 1,
    "C": 4
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -86,6 +78,6 @@
   "dist-legacy/QSOP-28_3.9x9.9mm_P0.635mm",
   "francescosacco-hardwarelibrary/QSOP-20/QSOP-20"
  ],
- "embedding_text": "ic.qsop | IC | Integrated circuit cluster featuring surface-mount components in QSOP package footprints with 0.635mm pitch. | ic qsop qsop-16 qsop-20 qsop-28 smd surface mount 0.635mm pitch p0.635mm adm1270arqz integrated circuit qsop package p0 635mm 9mm 9x4 package 9x8 7mm 9x9 so surface mount pad | QSOP | ",
+ "embedding_text": "ic.qsop | IC | 5 ic parts using QSOP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | qsop p0 635mm 9mm ic 9x4 package 9x8 7mm 9x9 so surface mount pad mm pitch | QSOP | ",
  "class": "ic"
 }

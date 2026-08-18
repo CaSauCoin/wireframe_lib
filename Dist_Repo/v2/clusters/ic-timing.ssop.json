@@ -6,29 +6,19 @@
   "IC",
   "Timing"
  ],
- "description": "Timing IC cluster featuring surface-mount parts in SSOP-28 (3.9x9.9mm, 0.635mm pitch) footprints.",
+ "description": "2 ic timing parts using SSOP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select for surface-mount timing IC applications requiring an SSOP package.",
-  "Verify layout compatibility with the SSOP-28_3.9x9.9mm_P0.635mm footprint.",
-  "Use when selecting tier A timing parts sourced from kicad-symbols."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SSOP land pattern is intended."
  ],
  "avoid_when": [
-  "Through-hole mounting or packages other than SSOP are required.",
-  "The PCB design requires footprints other than SSOP-28_3.9x9.9mm_P0.635mm.",
-  "Specific electrical operating parameters not listed in cluster facts are required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SSOP."
  ],
  "keywords": [
-  "ic timing",
-  "timing ic",
   "ssop",
-  "ssop-28",
-  "smd",
-  "ics525-01r",
-  "ics525r-02",
-  "ics525",
-  "0.635mm pitch",
-  "kicad-symbols",
-  "tier a",
   "configurable",
   "clock",
   "timer",
@@ -41,7 +31,9 @@
   "9mm",
   "p0",
   "635mm",
-  "ic"
+  "ic",
+  "timing",
+  "ics525"
  ],
  "facts": {
   "package_family": "SSOP",
@@ -62,7 +54,7 @@
   "tier_counts": {
    "A": 2
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -86,6 +78,6 @@
   "kicad-symbols/Timer_PLL/ICS525-01R",
   "kicad-symbols/Timer_PLL/ICS525R-02"
  ],
- "embedding_text": "ic-timing.ssop | IC Timing | Timing IC cluster featuring surface-mount parts in SSOP-28 (3.9x9.9mm, 0.635mm pitch) footprints. | ic timing timing ic ssop ssop-28 smd ics525-01r ics525r-02 ics525 0.635mm pitch kicad-symbols tier a configurable clock timer pll user up to mhz 9x9 9mm p0 635mm ic | SSOP | ",
+ "embedding_text": "ic-timing.ssop | IC Timing | 2 ic timing parts using SSOP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | ssop configurable clock timer pll user up to mhz 9x9 9mm p0 635mm ic timing ics525 | SSOP | ",
  "class": "ic.timing"
 }

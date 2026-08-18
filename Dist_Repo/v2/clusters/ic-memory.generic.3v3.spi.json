@@ -6,34 +6,22 @@
   "IC",
   "Memory"
  ],
- "description": "Generic cluster of 6 memory IC parts operating at 3.3V with an SPI interface, with package family and footprint chosen later.",
+ "description": "6 ic memory parts for 3.3V, SPI with package chosen later. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select a specific footprint and package family prior to PCB layout.",
-  "Ensure system compatibility with 3.3V supply and SPI bus communication.",
-  "Evaluate specific memory part numbers based on required capacity and quality tier G rating."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Select a footprint/package explicitly before placement."
  ],
  "avoid_when": [
-  "Operating voltages other than 3.3V or non-SPI memory interfaces are required.",
-  "An explicit package footprint must be predefined at the cluster level.",
-  "Parts rated only at quality tier G do not meet component selection criteria."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review."
  ],
  "keywords": [
-  "ic memory",
-  "memory ic",
-  "3.3v",
-  "spi",
-  "spi memory",
-  "package chosen later",
-  "nvram",
-  "mb85rs128b",
-  "mb85rs16",
-  "mb85rs1mt",
-  "mb85rs256b",
-  "mb85rs512t",
-  "kicad-symbols",
   "memory",
+  "spi",
   "fram",
   "3v",
+  "nvram",
   "with",
   "interface",
   "soic",
@@ -41,7 +29,10 @@
   "ic",
   "package",
   "chosen",
-  "later"
+  "later",
+  "mb85rs128b",
+  "mb85rs16",
+  "mb85rs1mt"
  ],
  "facts": {
   "package_family": "package chosen later",
@@ -61,7 +52,7 @@
   "tier_counts": {
    "G": 6
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -113,6 +104,6 @@
   "kicad-symbols/Memory_NVRAM/MB85RS512T",
   "kicad-symbols/Memory_NVRAM/MB85RS64"
  ],
- "embedding_text": "ic-memory.generic.3v3.spi | IC Memory | Generic cluster of 6 memory IC parts operating at 3.3V with an SPI interface, with package family and footprint chosen later. | ic memory memory ic 3.3v spi spi memory package chosen later nvram mb85rs128b mb85rs16 mb85rs1mt mb85rs256b mb85rs512t kicad-symbols memory fram 3v with interface soic son ic package chosen later | package chosen later | 3.3V SPI",
+ "embedding_text": "ic-memory.generic.3v3.spi | IC Memory | 6 ic memory parts for 3.3V, SPI with package chosen later. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | memory spi fram 3v nvram with interface soic son ic package chosen later mb85rs128b mb85rs16 mb85rs1mt | package chosen later | 3.3V SPI",
  "class": "ic.memory"
 }

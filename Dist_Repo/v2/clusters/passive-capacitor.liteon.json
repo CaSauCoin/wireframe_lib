@@ -6,31 +6,24 @@
   "Passive",
   "Capacitor"
  ],
- "description": "Passive SMD capacitor cluster containing 2 Tier C parts associated with LITEON footprints from the celestial-altium-library.",
+ "description": "2 passive capacitor parts using LITEON footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Verify compatibility with specific LITEON footprints like LTST-C21KRKT or LTST-C230KFKT.",
-  "Inspect component ratings and Tier C library quality status before schematic integration.",
-  "Confirm SMD land pattern match for target assembly process."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a LITEON land pattern is intended."
  ],
  "avoid_when": [
-  "Non-SMD or through-hole capacitor mounting is required.",
-  "Footprints outside the LITEON package family are needed.",
-  "Application requirements require verified Tier A or B components."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than LITEON."
  ],
  "keywords": [
-  "passive",
-  "capacitor",
-  "passive capacitor",
-  "smd",
-  "surface mount",
   "liteon",
-  "ltst-c21krkt",
-  "ltst-c230kfkt",
-  "celestial-altium-library",
-  "tier c",
   "ltst",
   "c21krkt",
   "c230kfkt",
+  "passive",
+  "capacitor",
   "surface",
   "mount",
   "pad",
@@ -58,13 +51,13 @@
   "tier_counts": {
    "C": 2
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
   "celestial-altium-library/LITEON LTST-C21KRKT/LITEON_LTST-C21KRKT",
   "celestial-altium-library/LITEON LTST-C230KFKT/LITEON_LTST-C230KFKT"
  ],
- "embedding_text": "passive-capacitor.liteon | Passive Capacitor | Passive SMD capacitor cluster containing 2 Tier C parts associated with LITEON footprints from the celestial-altium-library. | passive capacitor passive capacitor smd surface mount liteon ltst-c21krkt ltst-c230kfkt celestial-altium-library tier c ltst c21krkt c230kfkt surface mount pad mm pitch pins | LITEON | ",
+ "embedding_text": "passive-capacitor.liteon | Passive Capacitor | 2 passive capacitor parts using LITEON footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | liteon ltst c21krkt c230kfkt passive capacitor surface mount pad mm pitch pins | LITEON | ",
  "class": "passive.capacitor"
 }

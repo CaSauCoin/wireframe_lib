@@ -6,32 +6,23 @@
   "IC",
   "Memory"
  ],
- "description": "Cluster of 9 surface-mount memory ICs featuring I2C interfaces with 5V and 5.5V ratings in SOIC-8 footprints.",
+ "description": "9 ic memory parts for 5V, I2C, 5.5V using SOIC footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when an I2C memory IC operating at 5V or 5.5V is required.",
-  "Verify compatibility with the SOIC-8_3.9x4.9mm_P1.27mm footprint.",
-  "Choose between EEPROM and NVRAM variants based on application needs."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SOIC land pattern is intended."
  ],
  "avoid_when": [
-  "The board requires through-hole or non-SOIC packages.",
-  "The design uses a communication protocol other than I2C.",
-  "Operating voltage requirements differ from 5V or 5.5V."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SOIC."
  ],
  "keywords": [
-  "ic memory",
-  "memory ic",
   "soic",
-  "soic-8",
-  "i2c",
-  "5v",
-  "5.5v",
-  "smd",
-  "eeprom",
-  "nvram",
-  "24c02",
-  "fm24c64",
-  "m24c01",
   "memory",
+  "5v",
+  "i2c",
+  "eeprom",
   "serial",
   "9x4",
   "9mm",
@@ -41,7 +32,8 @@
   "nonvolatile",
   "ic",
   "sn",
-  "fram"
+  "fram",
+  "non"
  ],
  "facts": {
   "package_family": "SOIC",
@@ -66,7 +58,7 @@
   "tier_counts": {
    "A": 9
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -121,6 +113,6 @@
   "kicad-symbols/Memory_EEPROM/M24C02-RMN",
   "kicad-symbols/Memory_EEPROM/M24C02-WMN"
  ],
- "embedding_text": "ic-memory.soic.5v.i2c | IC Memory | Cluster of 9 surface-mount memory ICs featuring I2C interfaces with 5V and 5.5V ratings in SOIC-8 footprints. | ic memory memory ic soic soic-8 i2c 5v 5.5v smd eeprom nvram 24c02 fm24c64 m24c01 memory serial 9x4 9mm p1 27mm so nonvolatile ic sn fram | SOIC | 5V I2C 5.5V",
+ "embedding_text": "ic-memory.soic.5v.i2c | IC Memory | 9 ic memory parts for 5V, I2C, 5.5V using SOIC footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | soic memory 5v i2c eeprom serial 9x4 9mm p1 27mm so nonvolatile ic sn fram non | SOIC | 5V I2C 5.5V",
  "class": "ic.memory"
 }

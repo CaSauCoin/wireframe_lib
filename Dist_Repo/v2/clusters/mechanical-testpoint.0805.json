@@ -6,30 +6,18 @@
   "Mechanical",
   "Test Point"
  ],
- "description": "Mechanical surface-mount test point cluster using 0805 probe pad footprints.",
+ "description": "1 mechanical test point parts using 0805 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when a surface-mount (SMD) mechanical test point is required.",
-  "Choose when using an 0805 package family land pattern.",
-  "Confirm footprint matching with PROBE_PAD_0805."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a 0805 land pattern is intended."
  ],
  "avoid_when": [
-  "Avoid when through-hole mounting is required.",
-  "Do not use if package sizes other than 0805 are needed.",
-  "Avoid if a non-test point component is required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than 0805."
  ],
  "keywords": [
-  "mechanical test point",
-  "test point",
-  "0805",
-  "probe_pad_0805",
-  "probe pad",
-  "smd",
-  "surface mount",
-  "rct-0c",
-  "mechanical",
-  "probe",
-  "smd test point",
-  "test point 0805",
   "test",
   "points",
   "point",
@@ -38,10 +26,14 @@
   "dk",
   "pc",
   "natural",
+  "probe",
   "pad",
   "and",
   "measurement",
-  "connectivity"
+  "connectivity",
+  "amp",
+  "connectors",
+  "mechanical"
  ],
  "facts": {
   "package_family": "0805",
@@ -62,7 +54,7 @@
   "tier_counts": {
    "B": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -77,6 +69,6 @@
  "part_ids": [
   "digikey-kicad-library/dk_Test-Points/RCT-0C"
  ],
- "embedding_text": "mechanical-testpoint.0805 | Mechanical Test Point | Mechanical surface-mount test point cluster using 0805 probe pad footprints. | mechanical test point test point 0805 probe_pad_0805 probe pad smd surface mount rct-0c mechanical probe smd test point test point 0805 test points point rct 0c dk pc natural pad and measurement connectivity | 0805 | ",
+ "embedding_text": "mechanical-testpoint.0805 | Mechanical Test Point | 1 mechanical test point parts using 0805 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | test points point rct 0c dk pc natural probe pad and measurement connectivity amp connectors mechanical | 0805 | ",
  "class": "mechanical.testpoint"
 }

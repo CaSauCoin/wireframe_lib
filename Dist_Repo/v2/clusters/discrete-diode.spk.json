@@ -6,30 +6,21 @@
   "Discrete",
   "Diode"
  ],
- "description": "Discrete diode cluster containing 1 tier C part associated with the SPK footprint family.",
+ "description": "1 discrete diode parts using SPK footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Verify SPK footprint compatibility before PCB placement.",
-  "Check electrical ratings and specifications for the tier C part entry.",
-  "Use only where an SPK land pattern is intended."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SPK land pattern is intended."
  ],
  "avoid_when": [
-  "The board layout requires a package family other than SPK.",
-  "Planner-visible components are required, as planner visible count is zero.",
-  "Unverified tier C parts do not meet project quality requirements."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SPK."
  ],
  "keywords": [
   "spk",
   "discrete",
   "diode",
-  "discrete diode",
-  "spk footprint",
-  "spk package",
-  "spk diode",
-  "discrete component",
-  "tier c",
-  "dist-legacy",
-  "diode cluster",
-  "spk land pattern",
   "pad",
   "mm",
   "pitch",
@@ -54,12 +45,12 @@
   "tier_counts": {
    "C": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
   "dist-legacy/SPK"
  ],
- "embedding_text": "discrete-diode.spk | Discrete Diode | Discrete diode cluster containing 1 tier C part associated with the SPK footprint family. | spk discrete diode discrete diode spk footprint spk package spk diode discrete component tier c dist-legacy diode cluster spk land pattern pad mm pitch pins | SPK | ",
+ "embedding_text": "discrete-diode.spk | Discrete Diode | 1 discrete diode parts using SPK footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | spk discrete diode pad mm pitch pins | SPK | ",
  "class": "discrete.diode"
 }

@@ -7,42 +7,34 @@
   "Power",
   "Linear Regulator"
  ],
- "description": "Cluster of 4 tier-A linear regulator IC parts featuring LDO and 35V facets in surface-mount SOIC-8 (3.9x4.9mm, P1.27mm) footprint.",
+ "description": "4 ic power linear regulator parts for LDO, 35V using SOIC footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Choosing surface-mount linear regulator ICs in an SOIC-8 package.",
-  "Selecting parts with LDO or 35V facets from KiCad symbol library.",
-  "Choosing between LM317L_SO8, LM337L_SO8, MC79L12_SO8, and MC79L15_SO8 parts."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SOIC land pattern is intended."
  ],
  "avoid_when": [
-  "The layout requires footprints other than SOIC-8_3.9x4.9mm_P1.27mm.",
-  "The design specifies through-hole mounting instead of SMD.",
-  "Components outside the ic.power.ldo class or LDO/35V facets are required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SOIC."
  ],
  "keywords": [
-  "ic",
-  "power",
-  "linear regulator",
-  "ldo",
-  "35v",
-  "soic",
-  "soic-8",
-  "smd",
-  "kicad-symbols",
-  "lm317l",
-  "lm337l",
-  "mc79l12",
-  "mc79l15",
-  "so8",
   "regulator",
   "linear",
+  "soic",
   "100ma",
+  "35v",
   "so",
   "negative",
+  "so8",
   "adjustable",
   "9x4",
   "9mm",
   "p1",
-  "27mm"
+  "27mm",
+  "voltage",
+  "ic",
+  "power"
  ],
  "facts": {
   "package_family": "SOIC",
@@ -66,7 +58,7 @@
   "tier_counts": {
    "A": 4
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -108,6 +100,6 @@
   "kicad-symbols/Regulator_Linear/MC79L12_SO8",
   "kicad-symbols/Regulator_Linear/MC79L15_SO8"
  ],
- "embedding_text": "ic-power-ldo.soic.ldo.35v | IC Power Linear Regulator | Cluster of 4 tier-A linear regulator IC parts featuring LDO and 35V facets in surface-mount SOIC-8 (3.9x4.9mm, P1.27mm) footprint. | ic power linear regulator ldo 35v soic soic-8 smd kicad-symbols lm317l lm337l mc79l12 mc79l15 so8 regulator linear 100ma so negative adjustable 9x4 9mm p1 27mm | SOIC | LDO 35V",
+ "embedding_text": "ic-power-ldo.soic.ldo.35v | IC Power Linear Regulator | 4 ic power linear regulator parts for LDO, 35V using SOIC footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | regulator linear soic 100ma 35v so negative so8 adjustable 9x4 9mm p1 27mm voltage ic power | SOIC | LDO 35V",
  "class": "ic.power.ldo"
 }

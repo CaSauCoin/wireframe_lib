@@ -6,30 +6,21 @@
   "IC",
   "Memory"
  ],
- "description": "Through-hole memory IC cluster in the TO package family featuring TO-92 and TO-92_Inline footprints.",
+ "description": "2 ic memory parts using TO footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when a through-hole IC memory part in a TO package family is required.",
-  "Choose between TO-92 and TO-92_Inline footprint variations based on layout needs.",
-  "Verify part selection against tier A KiCad symbol entries such as DS2431 or DS28E07."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a TO land pattern is intended."
  ],
  "avoid_when": [
-  "Do not use when surface-mount (SMD) packages are required instead of through-hole.",
-  "Avoid if the PCB design requires a package family other than TO.",
-  "Do not select if footprints other than TO-92 or TO-92_Inline are needed."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than TO."
  ],
  "keywords": [
-  "ic memory",
   "to",
-  "to-92",
-  "to-92_inline",
-  "through hole",
-  "through_hole",
-  "eeprom",
-  "ds2431",
-  "ds28e07",
-  "kicad",
-  "ic",
   "memory",
+  "eeprom",
   "sc",
   "bit",
   "wire",
@@ -39,7 +30,10 @@
   "pa33",
   "transistor",
   "1kb",
-  "inline"
+  "ic",
+  "ds2431",
+  "inline",
+  "ds28e07"
  ],
  "facts": {
   "package_family": "TO",
@@ -61,7 +55,7 @@
   "tier_counts": {
    "A": 2
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -85,6 +79,6 @@
   "kicad-symbols/Memory_EEPROM/DS2431",
   "kicad-symbols/Memory_EEPROM/DS28E07"
  ],
- "embedding_text": "ic-memory.to | IC Memory | Through-hole memory IC cluster in the TO package family featuring TO-92 and TO-92_Inline footprints. | ic memory to to-92 to-92_inline through hole through_hole eeprom ds2431 ds28e07 kicad ic memory sc bit wire chip 43a sot54 pa33 transistor 1kb inline | TO | ",
+ "embedding_text": "ic-memory.to | IC Memory | 2 ic memory parts using TO footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | to memory eeprom sc bit wire chip 43a sot54 pa33 transistor 1kb ic ds2431 inline ds28e07 | TO | ",
  "class": "ic.memory"
 }

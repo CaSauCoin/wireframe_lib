@@ -6,42 +6,34 @@
   "Electromechanical",
   "Motor"
  ],
- "description": "Electromechanical motor cluster containing 17 KiCad parts utilizing 2.54mm pitch PinHeader footprints ranging from 1x02 to 1x06 for through-hole mounting.",
+ "description": "17 electromechanical motor parts using PinHeader footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select tier A parts for higher quality scoring where available.",
-  "Match the motor pin count to the corresponding 2.54mm pitch PinHeader footprint (1x02 to 1x06).",
-  "Choose specific servo motor symbol variants matching project requirements."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a PinHeader land pattern is intended."
  ],
  "avoid_when": [
-  "Surface-mount design is required, as listed mounts are through-hole or unknown.",
-  "A footprint family other than PinHeader is needed.",
-  "The required pin count is greater than 6 or uses non-2.54mm pin pitch."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than PinHeader."
  ],
  "keywords": [
-  "electromechanical",
   "motor",
   "pinheader",
-  "pin header",
-  "2.54mm",
-  "p2.54mm",
-  "through hole",
-  "tht",
-  "servo motor",
-  "servo",
-  "1x02",
-  "1x03",
-  "1x04",
-  "1x05",
-  "1x06",
-  "kicad motor",
   "54mm",
+  "servo",
   "p2",
+  "electromechanical",
+  "1x03",
   "fan",
   "vertical",
   "through",
   "hole",
   "pin",
-  "header"
+  "header",
+  "tht",
+  "single",
+  "row"
  ],
  "facts": {
   "package_family": "PinHeader",
@@ -68,7 +60,7 @@
    "A": 10,
    "B": 7
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -131,6 +123,6 @@
   "kicad-symbols/Motor/Motor_DC",
   "kicad-symbols/Motor/Motor_DC_ALT"
  ],
- "embedding_text": "electromechanical-motor.pinheader | Electromechanical Motor | Electromechanical motor cluster containing 17 KiCad parts utilizing 2.54mm pitch PinHeader footprints ranging from 1x02 to 1x06 for through-hole mounting. | electromechanical motor pinheader pin header 2.54mm p2.54mm through hole tht servo motor servo 1x02 1x03 1x04 1x05 1x06 kicad motor 54mm p2 fan vertical through hole pin header | PinHeader | ",
+ "embedding_text": "electromechanical-motor.pinheader | Electromechanical Motor | 17 electromechanical motor parts using PinHeader footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | motor pinheader 54mm servo p2 electromechanical 1x03 fan vertical through hole pin header tht single row | PinHeader | ",
  "class": "electromechanical.motor"
 }

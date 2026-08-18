@@ -6,33 +6,24 @@
   "Electromechanical",
   "Relay"
  ],
- "description": "Cluster of 10 Tier A electromechanical relay parts in through-hole SIP4 packaging using the SIP4_Sharp-SSR_P7.62mm_Straight footprint.",
+ "description": "10 electromechanical relay parts using SIP4 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when requiring a through-hole electromechanical relay in a SIP4 package.",
-  "Use for designs requiring the SIP4_Sharp-SSR_P7.62mm_Straight footprint.",
-  "Choose when using Tier A component entries from kicad-symbols."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SIP4 land pattern is intended."
  ],
  "avoid_when": [
-  "The PCB layout requires surface-mount mounting rather than through-hole.",
-  "The footprint required is different from SIP4_Sharp-SSR_P7.62mm_Straight.",
-  "The package family required is not SIP4."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SIP4."
  ],
  "keywords": [
-  "electromechanical",
-  "relay",
-  "sip4",
-  "through-hole",
-  "sharp",
-  "ssr",
-  "straight",
-  "kicad-symbols",
-  "s102s01",
-  "s102s02",
-  "s112s01",
-  "s116s01",
-  "s116s02",
   "opto",
   "triac",
+  "relay",
+  "sip4",
+  "sharp",
+  "ssr",
   "solid",
   "state",
   "random",
@@ -41,7 +32,8 @@
   "vdrm",
   "ift",
   "8ma",
-  "it"
+  "it",
+  "p7"
  ],
  "facts": {
   "package_family": "SIP4",
@@ -62,7 +54,7 @@
   "tier_counts": {
    "A": 10
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -118,6 +110,6 @@
   "kicad-symbols/Relay_SolidState/S216S01",
   "kicad-symbols/Relay_SolidState/S216S02"
  ],
- "embedding_text": "electromechanical-relay.sip4 | Electromechanical Relay | Cluster of 10 Tier A electromechanical relay parts in through-hole SIP4 packaging using the SIP4_Sharp-SSR_P7.62mm_Straight footprint. | electromechanical relay sip4 through-hole sharp ssr straight kicad-symbols s102s01 s102s02 s112s01 s116s01 s116s02 opto triac solid state random phase solidstate vdrm ift 8ma it | SIP4 | ",
+ "embedding_text": "electromechanical-relay.sip4 | Electromechanical Relay | 10 electromechanical relay parts using SIP4 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | opto triac relay sip4 sharp ssr solid state random phase solidstate vdrm ift 8ma it p7 | SIP4 | ",
  "class": "electromechanical.relay"
 }

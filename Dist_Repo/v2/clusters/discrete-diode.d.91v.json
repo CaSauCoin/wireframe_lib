@@ -6,44 +6,34 @@
   "Discrete",
   "Diode"
  ],
- "description": "Cluster of 62 discrete D-package diode parts (zener and TVS footprint variants) tagged with the 91V facet, spanning SMD and through-hole land patterns like SMB, SMA, SMC, SMF, MELF, and DO-series.",
+ "description": "62 discrete diode parts for 91V using D footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Match the exact footprint (D_SMB, D_SMA, D_SMC, D_SMF, D_MELF, D_MiniMELF, D_DO-41, D_DO-15, D_DO-201) to your PCB land pattern",
-  "Distinguish zener-labeled footprints from TVS-labeled footprints before placing",
-  "Prefer tier A entries (58 of 62 parts) over the 4 tier B entries",
-  "Confirm smd vs through_hole mount matches your assembly process"
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a D land pattern is intended."
  ],
  "avoid_when": [
-  "The required land pattern is not one of the listed D footprints",
-  "It is unclear whether a zener or TVS device is needed and the footprint variant doesn't disambiguate it",
-  "Only a tier B entry fits and a higher-confidence tier A match is required",
-  "A package family other than D is required"
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than D."
  ],
  "keywords": [
   "diode",
   "zener",
-  "tvs",
   "91v",
-  "discrete diode",
-  "d package",
-  "d_smb",
-  "d_sma",
-  "d_smc",
-  "d_smf",
-  "melf",
-  "minimelf",
-  "do-41",
-  "do-15",
-  "do-201",
-  "sod81",
-  "sod-64",
-  "through hole",
-  "smd",
-  "alternate kicad library",
+  "tvs",
   "do",
   "akl",
   "alternate",
-  "kicad"
+  "kicad",
+  "library",
+  "discrete",
+  "horizontal",
+  "smb",
+  "sma",
+  "unidirectional",
+  "16mm",
+  "melf"
  ],
  "facts": {
   "package_family": "D",
@@ -79,7 +69,7 @@
    "A": 58,
    "B": 4
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -187,6 +177,6 @@
   "Alternate-KiCad-Library/Diode_TVS_AKL/BZW03-C91",
   "Alternate-KiCad-Library/Diode_TVS_AKL/BZW03-D91"
  ],
- "embedding_text": "discrete-diode.d.91v | Discrete Diode | Cluster of 62 discrete D-package diode parts (zener and TVS footprint variants) tagged with the 91V facet, spanning SMD and through-hole land patterns like SMB, SMA, SMC, SMF, MELF, and DO-series. | diode zener tvs 91v discrete diode d package d_smb d_sma d_smc d_smf melf minimelf do-41 do-15 do-201 sod81 sod-64 through hole smd alternate kicad library do akl alternate kicad | D | 91V",
+ "embedding_text": "discrete-diode.d.91v | Discrete Diode | 62 discrete diode parts for 91V using D footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | diode zener 91v tvs do akl alternate kicad library discrete horizontal smb sma unidirectional 16mm melf | D | 91V",
  "class": "discrete.diode"
 }

@@ -5,29 +5,18 @@
  "category_path": [
   "IC"
  ],
- "description": "Generic IC cluster containing 8557 integrated circuit parts with package family designated as package chosen later.",
+ "description": "8557 ic parts with package chosen later. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when placing generic IC schematic symbols where package assignment is deferred.",
-  "Filter parts by quality tier, with 8352 tier G parts and 205 tier C parts available.",
-  "Verify part-specific symbol definitions and footprint assignments before PCB layout."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Select a footprint/package explicitly before placement."
  ],
  "avoid_when": [
-  "A specific package family, footprint, or mounting style is required upfront.",
-  "Component selection depends on pre-defined physical dimensions or pin layouts."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review."
  ],
  "keywords": [
   "ic",
-  "integrated circuit",
-  "generic ic",
-  "package chosen later",
-  "kicad-symbols",
-  "altium library",
-  "ad9708ar",
-  "av9173",
-  "icx415aq",
-  "max310",
-  "max311",
-  "tier g",
   "package",
   "chosen",
   "later",
@@ -39,7 +28,10 @@
   "pin",
   "nuvoton",
   "labs",
-  "si"
+  "si",
+  "infineon",
+  "qfn",
+  "lqfp"
  ],
  "facts": {
   "package_family": "package chosen later",
@@ -65,7 +57,7 @@
    "C": 205,
    "G": 8352
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -8668,6 +8660,6 @@
   "dist-legacy/ZIP32",
   "dist-legacy/keypad_4x4"
  ],
- "embedding_text": "ic.generic | IC | Generic IC cluster containing 8557 integrated circuit parts with package family designated as package chosen later. | ic integrated circuit generic ic package chosen later kicad-symbols altium library ad9708ar av9173 icx415aq max310 max311 tier g package chosen later pins ti microchip st microelectronics pin nuvoton labs si | package chosen later | ",
+ "embedding_text": "ic.generic | IC | 8557 ic parts with package chosen later. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | ic package chosen later pins ti microchip st microelectronics pin nuvoton labs si infineon qfn lqfp | package chosen later | ",
  "class": "ic"
 }

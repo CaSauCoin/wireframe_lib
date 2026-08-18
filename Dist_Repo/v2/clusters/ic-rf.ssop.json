@@ -6,42 +6,34 @@
   "IC",
   "RF"
  ],
- "description": "Surface-mount RF integrated circuit cluster featuring SSOP-20 and SSOP-24 packages across 6 Tier A parts from KiCad symbols.",
+ "description": "6 ic rf parts using SSOP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Designs requiring surface-mount RF ICs in SSOP packaging.",
-  "Projects using SSOP-20 (0.65mm pitch) or SSOP-24 (0.635mm pitch) footprints.",
-  "Selecting verified Tier A components from KiCad RF symbol libraries."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SSOP land pattern is intended."
  ],
  "avoid_when": [
-  "Through-hole mounting or non-SSOP package families are required.",
-  "Footprint requirements differ from SSOP-20 4.4x6.5mm or SSOP-24 3.9x8.7mm.",
-  "Non-RF integrated circuits are needed."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SSOP."
  ],
  "keywords": [
-  "ic",
-  "rf",
   "ssop",
-  "smd",
-  "ssop-20",
-  "ssop-24",
-  "rf_am_fm",
-  "sa605dk",
-  "sa636dk",
-  "si4730",
-  "si4731",
-  "si4734",
-  "p0.65mm",
-  "p0.635mm",
   "fm",
   "am",
+  "rf",
   "broadcast",
   "radio",
   "receiver",
   "p0",
+  "ic",
   "high",
   "monolithic",
   "low",
-  "if"
+  "if",
+  "d60",
+  "gu",
+  "9x8"
  ],
  "facts": {
   "package_family": "SSOP",
@@ -63,7 +55,7 @@
   "tier_counts": {
    "A": 6
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -115,6 +107,6 @@
   "kicad-symbols/RF_AM_FM/Si4734-D60-GU",
   "kicad-symbols/RF_AM_FM/Si4735-D60-GU"
  ],
- "embedding_text": "ic-rf.ssop | IC RF | Surface-mount RF integrated circuit cluster featuring SSOP-20 and SSOP-24 packages across 6 Tier A parts from KiCad symbols. | ic rf ssop smd ssop-20 ssop-24 rf_am_fm sa605dk sa636dk si4730 si4731 si4734 p0.65mm p0.635mm fm am broadcast radio receiver p0 high monolithic low if | SSOP | ",
+ "embedding_text": "ic-rf.ssop | IC RF | 6 ic rf parts using SSOP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | ssop fm am rf broadcast radio receiver p0 ic high monolithic low if d60 gu 9x8 | SSOP | ",
  "class": "ic.rf"
 }

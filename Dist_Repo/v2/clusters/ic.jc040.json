@@ -5,27 +5,20 @@
  "category_path": [
   "IC"
  ],
- "description": "IC cluster containing 1 tier C part associated with the JC040 package family and footprint.",
+ "description": "1 ic parts using JC040 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Use when a design specifically calls for a JC040 footprint or package family.",
-  "Verify mounting type and pin definitions as mount status is unknown.",
-  "Review part data carefully, as this cluster contains a single tier C entry."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a JC040 land pattern is intended."
  ],
  "avoid_when": [
-  "The PCB layout requires a footprint family other than JC040.",
-  "The application requires verified parts from quality tiers higher than C.",
-  "Unverified or tier C component entries are not permitted for the design."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than JC040."
  ],
  "keywords": [
-  "ic",
   "jc040",
-  "jc040 footprint",
-  "jc040 package",
-  "integrated circuit",
-  "tier c",
-  "dist-legacy",
-  "package family jc040",
-  "unknown mount",
+  "ic",
   "pad",
   "mm",
   "pitch",
@@ -50,12 +43,12 @@
   "tier_counts": {
    "C": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
   "dist-legacy/JC040"
  ],
- "embedding_text": "ic.jc040 | IC | IC cluster containing 1 tier C part associated with the JC040 package family and footprint. | ic jc040 jc040 footprint jc040 package integrated circuit tier c dist-legacy package family jc040 unknown mount pad mm pitch pins | JC040 | ",
+ "embedding_text": "ic.jc040 | IC | 1 ic parts using JC040 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | jc040 ic pad mm pitch pins | JC040 | ",
  "class": "ic"
 }

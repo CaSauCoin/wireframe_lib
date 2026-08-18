@@ -6,31 +6,21 @@
   "Discrete",
   "Diode"
  ],
- "description": "A cluster of 6 discrete diode library parts in the CN2.5 package family, offering footprint variants CN2.5, CN2.5-BR, CN2.5-R, and CN2.5-RV.",
+ "description": "6 discrete diode parts using CN2.5 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select based on the required footprint variant (CN2.5, CN2.5-BR, CN2.5-R, or CN2.5-RV).",
-  "Prefer the tier B part over tier C parts for higher recorded quality score.",
-  "Verify mounting requirements, as the mount type is listed as unknown."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a CN2.5 land pattern is intended."
  ],
  "avoid_when": [
-  "The application requires a package family other than CN2.5.",
-  "Tier A quality components are strictly required.",
-  "A component class other than discrete diode is needed."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than CN2.5."
  ],
  "keywords": [
+  "cn2",
   "discrete",
   "diode",
-  "discrete diode",
-  "cn2.5",
-  "cn2.5-br",
-  "cn2.5-r",
-  "cn2.5-rv",
-  "dist-legacy",
-  "473j",
-  "tier b",
-  "tier c",
-  "cn2.5 package",
-  "cn2",
   "pitch",
   "capacitor",
   "mm",
@@ -38,10 +28,12 @@
   "rv",
   "pad",
   "pins",
+  "473j",
   "pin",
   "footprint",
   "tht",
-  "97mm"
+  "97mm",
+  "duplicate"
  ],
  "facts": {
   "package_family": "CN2.5",
@@ -66,7 +58,7 @@
    "B": 1,
    "C": 5
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -86,6 +78,6 @@
   "dist-legacy/CN2.5-R",
   "dist-legacy/CN2.5-RV"
  ],
- "embedding_text": "discrete-diode.cn2-5 | Discrete Diode | A cluster of 6 discrete diode library parts in the CN2.5 package family, offering footprint variants CN2.5, CN2.5-BR, CN2.5-R, and CN2.5-RV. | discrete diode discrete diode cn2.5 cn2.5-br cn2.5-r cn2.5-rv dist-legacy 473j tier b tier c cn2.5 package cn2 pitch capacitor mm br rv pad pins pin footprint tht 97mm | CN2.5 | ",
+ "embedding_text": "discrete-diode.cn2-5 | Discrete Diode | 6 discrete diode parts using CN2.5 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | cn2 discrete diode pitch capacitor mm br rv pad pins 473j pin footprint tht 97mm duplicate | CN2.5 | ",
  "class": "discrete.diode"
 }

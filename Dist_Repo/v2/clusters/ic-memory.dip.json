@@ -6,42 +6,34 @@
   "IC",
   "Memory"
  ],
- "description": "Through-hole DIP memory IC cluster containing 29 parts across DIP-8, DIP-16, DIP-24, DIP-28, and DIP-32 footprints.",
+ "description": "29 ic memory parts using DIP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Match the required pin count and footprint width such as DIP-8, DIP-16, DIP-24, DIP-28, or DIP-32.",
-  "Prefer Tier A memory components available in this cluster.",
-  "Verify target memory part number against representative parts like 2764, 27128, 27256, 27512, or 27C010."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a DIP land pattern is intended."
  ],
  "avoid_when": [
-  "Surface mount mounting is required for the layout instead of through-hole.",
-  "The design requires non-memory ICs or non-DIP package families.",
-  "Required footprint is not among the supported DIP-8, DIP-16, DIP-24, DIP-28, or DIP-32 variants."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than DIP."
  ],
  "keywords": [
-  "ic",
-  "memory",
   "dip",
-  "through_hole",
-  "eprom",
-  "dip-8",
-  "dip-16",
-  "dip-24",
-  "dip-28",
-  "dip-32",
-  "2764",
-  "27128",
-  "27256",
-  "27512",
-  "27c010",
-  "ic memory",
-  "memory eprom",
+  "memory",
   "24mm",
+  "eprom",
   "tht",
   "dil",
   "pdip",
   "54mm",
+  "ic",
   "ram",
-  "62mm"
+  "62mm",
+  "w15",
+  "600mil",
+  "otp",
+  "cmos",
+  "eeprom"
  ],
  "facts": {
   "package_family": "DIP",
@@ -68,7 +60,7 @@
    "A": 28,
    "B": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -143,6 +135,6 @@
   "kicad-symbols/Memory_EEPROM/TMS4C1050N",
   "kicad-symbols/Memory_RAM/M48Tx2"
  ],
- "embedding_text": "ic-memory.dip | IC Memory | Through-hole DIP memory IC cluster containing 29 parts across DIP-8, DIP-16, DIP-24, DIP-28, and DIP-32 footprints. | ic memory dip through_hole eprom dip-8 dip-16 dip-24 dip-28 dip-32 2764 27128 27256 27512 27c010 ic memory memory eprom 24mm tht dil pdip 54mm ram 62mm | DIP | ",
+ "embedding_text": "ic-memory.dip | IC Memory | 29 ic memory parts using DIP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | dip memory 24mm eprom tht dil pdip 54mm ic ram 62mm w15 600mil otp cmos eeprom | DIP | ",
  "class": "ic.memory"
 }

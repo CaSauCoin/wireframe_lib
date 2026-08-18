@@ -5,28 +5,20 @@
  "category_path": [
   "IC"
  ],
- "description": "Cluster of 3 integrated circuit parts in the 32A package family associated with 32A_L, 32A_M, and 32A_N footprints.",
+ "description": "3 ic parts using 32A footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Verify footprint compatibility with 32A_L, 32A_M, or 32A_N land patterns.",
-  "Note that all 3 parts in this cluster are categorized under quality tier C.",
-  "Confirm mounting specifications as mount type is listed as unknown."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a 32A land pattern is intended."
  ],
  "avoid_when": [
-  "The PCB layout requires a package family other than 32A.",
-  "Land patterns other than 32A_L, 32A_M, or 32A_N are required.",
-  "Parts categorized strictly under quality tier C are not acceptable for the design."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than 32A."
  ],
  "keywords": [
-  "ic",
   "32a",
-  "32a_l",
-  "32a_m",
-  "32a_n",
-  "integrated circuit",
-  "package family 32a",
-  "dist-legacy",
-  "tier c",
-  "unknown mount",
+  "ic",
   "pad",
   "mm",
   "pitch",
@@ -53,7 +45,7 @@
   "tier_counts": {
    "C": 3
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
@@ -61,6 +53,6 @@
   "dist-legacy/32A_M",
   "dist-legacy/32A_N"
  ],
- "embedding_text": "ic.32a | IC | Cluster of 3 integrated circuit parts in the 32A package family associated with 32A_L, 32A_M, and 32A_N footprints. | ic 32a 32a_l 32a_m 32a_n integrated circuit package family 32a dist-legacy tier c unknown mount pad mm pitch pins | 32A | ",
+ "embedding_text": "ic.32a | IC | 3 ic parts using 32A footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | 32a ic pad mm pitch pins | 32A | ",
  "class": "ic"
 }

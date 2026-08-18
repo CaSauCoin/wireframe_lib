@@ -6,30 +6,23 @@
   "IC",
   "Power"
  ],
- "description": "Surface-mount power IC cluster with 5V and 5.5V facets in DFN packaging, featuring KiCad symbols LTC3221EDC and LTC3221EDC-5.",
+ "description": "2 ic power parts for 5V, 5.5V using DFN footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when requiring surface-mount power ICs with 5V or 5.5V ratings.",
-  "Choose for designs requiring a DFN-6-1EP package footprint.",
-  "Verify compatibility with LTC3221EDC or LTC3221EDC-5 symbol entries."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a DFN land pattern is intended."
  ],
  "avoid_when": [
-  "Avoid if through-hole mounting is required instead of SMD.",
-  "Do not use if the layout requires a package family other than DFN.",
-  "Avoid when voltage requirements fall outside 5V or 5.5V."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than DFN."
  ],
  "keywords": [
-  "ic power",
   "dfn",
-  "dfn-6-1ep",
   "5v",
-  "5.5v",
-  "smd",
-  "ltc3221edc",
-  "ltc3221edc-5",
-  "regulator",
-  "switched capacitor",
-  "kicad-symbols",
   "dc",
+  "ltc3221edc",
+  "regulator",
   "switchedcapacitor",
   "micropower",
   "regulated",
@@ -64,7 +57,7 @@
   "tier_counts": {
    "A": 2
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -88,6 +81,6 @@
   "kicad-symbols/Regulator_SwitchedCapacitor/LTC3221EDC",
   "kicad-symbols/Regulator_SwitchedCapacitor/LTC3221EDC-5"
  ],
- "embedding_text": "ic-power.dfn.5v.5-5v | IC Power | Surface-mount power IC cluster with 5V and 5.5V facets in DFN packaging, featuring KiCad symbols LTC3221EDC and LTC3221EDC-5. | ic power dfn dfn-6-1ep 5v 5.5v smd ltc3221edc ltc3221edc-5 regulator switched capacitor kicad-symbols dc switchedcapacitor micropower regulated charge pump input supply output current up to | DFN | 5V 5.5V",
+ "embedding_text": "ic-power.dfn.5v.5-5v | IC Power | 2 ic power parts for 5V, 5.5V using DFN footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | dfn 5v dc ltc3221edc regulator switchedcapacitor micropower regulated charge pump input supply output current up to | DFN | 5V 5.5V",
  "class": "ic.power"
 }

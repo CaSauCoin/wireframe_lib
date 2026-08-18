@@ -6,44 +6,34 @@
   "Discrete",
   "BJT"
  ],
- "description": "Discrete BJT, 25V-class, SOT-23 package, 10 tier-A parts (BC808/BC818/SS8050/SS8550 and similar) for general-purpose small-signal NPN/PNP switching and amplification.",
+ "description": "10 discrete bjt parts for 25V using SOT-23 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Pick NPN vs PNP per part number (e.g. SS8050 NPN, SS8550 PNP, BC818 NPN, BC808 PNP).",
-  "Prefer tier A entries with confirmed SOT-23 footprint match.",
-  "Cross-check source count: 6 Alternate-KiCad-Library and 4 kicad-symbols entries for the same part may differ in symbol/footprint pairing.",
-  "Confirm current, voltage, and hFE needs against the specific part's own datasheet, not the cluster."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SOT-23 land pattern is intended."
  ],
  "avoid_when": [
-  "Required breakdown voltage exceeds the 25V facet for this cluster.",
-  "Design needs a footprint other than SOT-23.",
-  "Exact current/gain/switching-speed limits aren't confirmed on the individual part's datasheet.",
-  "Polarity (NPN vs PNP) required by the schematic isn't yet determined."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SOT-23."
  ],
  "keywords": [
-  "bjt",
+  "sot",
   "transistor",
-  "sot-23",
-  "sot23",
+  "bjt",
   "25v",
   "npn",
-  "pnp",
-  "discrete transistor",
-  "bc808",
-  "bc818",
-  "ss8050",
-  "ss8550",
-  "small signal transistor",
-  "smd transistor",
-  "switching transistor",
-  "kicad",
-  "alternate-kicad-library",
-  "tier a",
-  "sot",
   "discrete",
+  "pnp",
   "akl",
   "alternate",
+  "kicad",
   "library",
-  "ic"
+  "ic",
+  "vce",
+  "to",
+  "smd",
+  "5a"
  ],
  "facts": {
   "package_family": "SOT-23",
@@ -67,7 +57,7 @@
   "tier_counts": {
    "A": 10
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -123,6 +113,6 @@
   "kicad-symbols/Transistor_BJT/SS8050",
   "kicad-symbols/Transistor_BJT/SS8550"
  ],
- "embedding_text": "discrete-bjt.sot-23.25v | Discrete BJT | Discrete BJT, 25V-class, SOT-23 package, 10 tier-A parts (BC808/BC818/SS8050/SS8550 and similar) for general-purpose small-signal NPN/PNP switching and amplification. | bjt transistor sot-23 sot23 25v npn pnp discrete transistor bc808 bc818 ss8050 ss8550 small signal transistor smd transistor switching transistor kicad alternate-kicad-library tier a sot discrete akl alternate library ic | SOT-23 | 25V",
+ "embedding_text": "discrete-bjt.sot-23.25v | Discrete BJT | 10 discrete bjt parts for 25V using SOT-23 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | sot transistor bjt 25v npn discrete pnp akl alternate kicad library ic vce to smd 5a | SOT-23 | 25V",
  "class": "discrete.bjt"
 }

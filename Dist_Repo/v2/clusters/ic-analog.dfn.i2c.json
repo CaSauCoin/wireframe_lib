@@ -6,29 +6,21 @@
   "IC",
   "Analog"
  ],
- "description": "Surface-mount analog integrated circuit cluster using I2C interface in DFN package footprints.",
+ "description": "2 ic analog parts for I2C using DFN footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Designs requiring analog ICs in surface-mount DFN packages.",
-  "Applications utilizing an I2C communication interface.",
-  "Layouts matching DFN-8 exposed pad footprints."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a DFN land pattern is intended."
  ],
  "avoid_when": [
-  "Designs requiring packages other than DFN.",
-  "Circuits requiring non-I2C communication protocols.",
-  "Applications that specify through-hole components."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than DFN."
  ],
  "keywords": [
-  "ic analog",
-  "i2c",
   "dfn",
-  "smd",
-  "dfn-8",
-  "dfn-8-1ep",
-  "mcp3426axx-xmc",
-  "kicad-symbols",
-  "surface mount",
-  "analog ic",
   "analog",
+  "i2c",
   "adc",
   "bit",
   "multi",
@@ -66,7 +58,7 @@
    "A": 1,
    "C": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -82,6 +74,6 @@
   "kicad-symbols/Analog_ADC/MCP3426Axx-xMC",
   "kicad-symbols/Analog_ADC/MCP3427x-xMF"
  ],
- "embedding_text": "ic-analog.dfn.i2c | IC Analog | Surface-mount analog integrated circuit cluster using I2C interface in DFN package footprints. | ic analog i2c dfn smd dfn-8 dfn-8-1ep mcp3426axx-xmc kicad-symbols surface mount analog ic analog adc bit multi channel to digital converter with interface and on board reference | DFN | I2C",
+ "embedding_text": "ic-analog.dfn.i2c | IC Analog | 2 ic analog parts for I2C using DFN footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | dfn analog i2c adc bit multi channel to digital converter with interface and on board reference | DFN | I2C",
  "class": "ic.analog"
 }

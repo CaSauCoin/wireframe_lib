@@ -6,30 +6,23 @@
   "IC",
   "Driver"
  ],
- "description": "IC driver cluster featuring surface-mount parts for 5V and 4.5V applications in Texas VSSOP-8-1EP footprints.",
+ "description": "1 ic driver parts for 5V, 4.5V using Texas footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select for surface-mount IC driver designs requiring 5V or 4.5V operation.",
-  "Suitable when using the Texas DGN0008G VSSOP-8-1EP footprint with thermal vias.",
-  "Verify part specifications and symbol mappings for Tier B parts like UCC27524DGN."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a Texas land pattern is intended."
  ],
  "avoid_when": [
-  "Through-hole mounting or non-SMD assembly is required.",
-  "The target circuit operates at voltages outside 5V or 4.5V.",
-  "The PCB layout requires footprints other than the Texas VSSOP-8-1EP."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than Texas."
  ],
  "keywords": [
-  "ic driver",
   "driver",
   "5v",
-  "4.5v",
   "texas",
-  "smd",
-  "vssop-8-1ep",
   "vssop",
-  "dgn0008g",
   "ucc27524dgn",
-  "kicad-symbols",
-  "thermal vias",
   "fet",
   "dual",
   "5a",
@@ -39,7 +32,8 @@
   "non",
   "inverting",
   "htssop",
-  "msop"
+  "msop",
+  "dgn0008g"
  ],
  "facts": {
   "package_family": "Texas",
@@ -63,7 +57,7 @@
   "tier_counts": {
    "B": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -78,6 +72,6 @@
  "part_ids": [
   "kicad-symbols/Driver_FET/UCC27524DGN"
  ],
- "embedding_text": "ic-driver.texas.5v.4-5v | IC Driver | IC driver cluster featuring surface-mount parts for 5V and 4.5V applications in Texas VSSOP-8-1EP footprints. | ic driver driver 5v 4.5v texas smd vssop-8-1ep vssop dgn0008g ucc27524dgn kicad-symbols thermal vias fet dual 5a mosfet 18v supply non inverting htssop msop | Texas | 5V 4.5V",
+ "embedding_text": "ic-driver.texas.5v.4-5v | IC Driver | 1 ic driver parts for 5V, 4.5V using Texas footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | driver 5v texas vssop ucc27524dgn fet dual 5a mosfet 18v supply non inverting htssop msop dgn0008g | Texas | 5V 4.5V",
  "class": "ic.driver"
 }

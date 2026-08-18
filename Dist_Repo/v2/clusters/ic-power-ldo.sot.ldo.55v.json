@@ -7,32 +7,23 @@
   "Power",
   "Linear Regulator"
  ],
- "description": "Cluster of surface-mount SOT linear low-dropout voltage regulators rated for 55V with SOT-223-3_TabPin2 footprints.",
+ "description": "2 ic power linear regulator parts for LDO, 55V using SOT footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when needing a 55V low-dropout linear regulator in an SMD SOT package.",
-  "Verify PCB design compatibility with the SOT-223-3_TabPin2 footprint.",
-  "Choose from tier A representative parts like MCP1792x-4102xDB or MCP1792x-5002xDB."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SOT land pattern is intended."
  ],
  "avoid_when": [
-  "Do not use when surface-mount (SMD) packaging is not suitable.",
-  "Avoid if the design requires footprints other than SOT-223-3_TabPin2.",
-  "Avoid when a switching regulator or non-linear power topology is needed."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SOT."
  ],
  "keywords": [
-  "ic",
-  "power",
-  "linear regulator",
-  "ldo",
-  "55v",
-  "sot",
-  "smd",
-  "sot-223-3_tabpin2",
-  "mcp1792x-4102xdb",
-  "mcp1792x-5002xdb",
-  "voltage regulator",
-  "kicad-symbols",
   "regulator",
+  "sot",
+  "ldo",
   "linear",
+  "55v",
   "mcp1792x",
   "low",
   "quiescent",
@@ -41,6 +32,8 @@
   "100ma",
   "tabpin2",
   "cms",
+  "ic",
+  "power",
   "4102xdb"
  ],
  "facts": {
@@ -65,7 +58,7 @@
   "tier_counts": {
    "A": 2
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -89,6 +82,6 @@
   "kicad-symbols/Regulator_Linear/MCP1792x-4102xDB",
   "kicad-symbols/Regulator_Linear/MCP1792x-5002xDB"
  ],
- "embedding_text": "ic-power-ldo.sot.ldo.55v | IC Power Linear Regulator | Cluster of surface-mount SOT linear low-dropout voltage regulators rated for 55V with SOT-223-3_TabPin2 footprints. | ic power linear regulator ldo 55v sot smd sot-223-3_tabpin2 mcp1792x-4102xdb mcp1792x-5002xdb voltage regulator kicad-symbols regulator linear mcp1792x low quiescent current input 100ma tabpin2 cms 4102xdb | SOT | LDO 55V",
+ "embedding_text": "ic-power-ldo.sot.ldo.55v | IC Power Linear Regulator | 2 ic power linear regulator parts for LDO, 55V using SOT footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | regulator sot ldo linear 55v mcp1792x low quiescent current input 100ma tabpin2 cms ic power 4102xdb | SOT | LDO 55V",
  "class": "ic.power.ldo"
 }

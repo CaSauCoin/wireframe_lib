@@ -6,37 +6,29 @@
   "IC",
   "Sensor"
  ],
- "description": "Surface-mount sensor IC cluster providing I2C and SPI interface support in QFN packages including 16-pin and 24-pin footprint options.",
+ "description": "4 ic sensor parts for I2C, SPI using QFN footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select based on required communication interface, either I2C or SPI.",
-  "Match board layout to specific package footprint (QFN-16 3x3mm, QFN-24 3x3mm, or QFN-24 4x4mm).",
-  "Check required lead pitch of 0.4mm or 0.5mm against manufacturing rules."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a QFN land pattern is intended."
  ],
  "avoid_when": [
-  "The design requires through-hole or non-QFN package types.",
-  "Interfaces other than I2C or SPI are required.",
-  "PCB fabrication processes cannot support 0.4mm or 0.5mm pitch QFN SMD patterns."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than QFN."
  ],
  "keywords": [
-  "ic",
-  "sensor",
   "qfn",
-  "i2c",
+  "sensor",
   "spi",
-  "smd",
-  "invensense",
-  "qfn-16",
-  "qfn-24",
-  "3x3mm",
-  "4x4mm",
-  "mlx90395xlw",
-  "mpu-6000",
-  "mpu-9250",
-  "icm-20948",
+  "i2c",
   "motion",
+  "invensense",
   "axis",
   "p0",
+  "ic",
   "magnetometer",
+  "3x3mm",
   "gyroscope",
   "accelerometer",
   "mems",
@@ -67,7 +59,7 @@
   "tier_counts": {
    "B": 4
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -109,6 +101,6 @@
   "kicad-symbols/Sensor_Motion/MPU-9250",
   "kicad-symbols/Sensor_Motion/ICM-20948"
  ],
- "embedding_text": "ic-sensor.qfn.i2c.spi | IC Sensor | Surface-mount sensor IC cluster providing I2C and SPI interface support in QFN packages including 16-pin and 24-pin footprint options. | ic sensor qfn i2c spi smd invensense qfn-16 qfn-24 3x3mm 4x4mm mlx90395xlw mpu-6000 mpu-9250 icm-20948 motion axis p0 magnetometer gyroscope accelerometer mems 5mm mpu | QFN | I2C SPI",
+ "embedding_text": "ic-sensor.qfn.i2c.spi | IC Sensor | 4 ic sensor parts for I2C, SPI using QFN footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | qfn sensor spi i2c motion invensense axis p0 ic magnetometer 3x3mm gyroscope accelerometer mems 5mm mpu | QFN | I2C SPI",
  "class": "ic.sensor"
 }

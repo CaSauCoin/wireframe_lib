@@ -5,33 +5,20 @@
  "category_path": [
   "IC"
  ],
- "description": "Integrated circuit (IC) cluster of 82 surface-mount (SMD) components utilizing SOT package family footprints including SOT-223, SOT-323, SOT-353, SOT-363, SOT-553, SOT-563, SOT-583, SOT-753, and SOT-89.",
+ "description": "82 ic parts using SOT footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Match the exact footprint among supported SOT variants such as SOT-223, SOT-363, SOT-353, SOT-89, SOT-753, SOT-553, SOT-563, SOT-583, or SOT-323.",
-  "Filter parts by quality tier, favoring Tier A entries (32 parts available) for higher library quality.",
-  "Ensure compatibility with surface-mount (SMD) land patterns."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SOT land pattern is intended."
  ],
  "avoid_when": [
-  "Designs require through-hole components instead of surface-mount devices.",
-  "The PCB footprint requires a non-SOT package family.",
-  "Components outside the integrated circuit (IC) class are needed."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SOT."
  ],
  "keywords": [
-  "ic",
   "sot",
-  "smd",
-  "surface mount",
-  "integrated circuit",
-  "sot-223",
-  "sot-323",
-  "sot-353",
-  "sot-363",
-  "sot-553",
-  "sot-563",
-  "sot-583",
-  "sot-753",
-  "sot-89",
-  "sc-70",
+  "ic",
   "voltage",
   "sc",
   "regulator",
@@ -40,7 +27,12 @@
   "adjustable",
   "dk",
   "ics",
-  "integrated"
+  "integrated",
+  "circuits",
+  "pins",
+  "package",
+  "pitch",
+  "sot23"
  ],
  "facts": {
   "package_family": "SOT",
@@ -80,7 +72,7 @@
    "B": 30,
    "C": 20
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -208,6 +200,6 @@
   "dist-legacy/SOT-457T",
   "dist-legacy/SOT-89-5_Handsoldering"
  ],
- "embedding_text": "ic.sot | IC | Integrated circuit (IC) cluster of 82 surface-mount (SMD) components utilizing SOT package family footprints including SOT-223, SOT-323, SOT-353, SOT-363, SOT-553, SOT-563, SOT-583, SOT-753, and SOT-89. | ic sot smd surface mount integrated circuit sot-223 sot-323 sot-353 sot-363 sot-553 sot-563 sot-583 sot-753 sot-89 sc-70 voltage sc regulator pmic power adjustable dk ics integrated | SOT | ",
+ "embedding_text": "ic.sot | IC | 82 ic parts using SOT footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | sot ic voltage sc regulator pmic power adjustable dk ics integrated circuits pins package pitch sot23 | SOT | ",
  "class": "ic"
 }

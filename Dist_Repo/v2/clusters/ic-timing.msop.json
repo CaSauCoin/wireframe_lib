@@ -6,34 +6,27 @@
   "IC",
   "Timing"
  ],
- "description": "Surface-mount timing integrated circuits in MSOP-10 and MSOP-16 packages.",
+ "description": "3 ic timing parts using MSOP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select between MSOP-10 (3x3mm) and MSOP-16 (3x4.039mm) footprint variants.",
-  "Verify the 0.5mm pin pitch matches PCB manufacturing and layout rules.",
-  "Match circuit requirements to specific parts such as CS2000-CP, LTC6902, or LTC6909."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a MSOP land pattern is intended."
  ],
  "avoid_when": [
-  "Through-hole mounting or non-SMD assembly is required.",
-  "The circuit requires a package family other than MSOP.",
-  "An integrated circuit category other than timing is needed."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than MSOP."
  ],
  "keywords": [
-  "ic",
-  "timing",
   "msop",
-  "msop-10",
-  "msop-16",
-  "smd",
-  "timer",
-  "cs2000-cp",
-  "ltc6902",
-  "ltc6909",
-  "3x3mm",
-  "0.5mm pitch",
   "clock",
   "p0",
   "5mm",
+  "3x3mm",
+  "timer",
   "so",
+  "ic",
+  "timing",
   "synthesizer",
   "multiplier",
   "tssop",
@@ -62,7 +55,7 @@
   "tier_counts": {
    "A": 3
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -95,6 +88,6 @@
   "kicad-symbols/Timer/LTC6902",
   "kicad-symbols/Timer/LTC6909"
  ],
- "embedding_text": "ic-timing.msop | IC Timing | Surface-mount timing integrated circuits in MSOP-10 and MSOP-16 packages. | ic timing msop msop-10 msop-16 smd timer cs2000-cp ltc6902 ltc6909 3x3mm 0.5mm pitch clock p0 5mm so synthesizer multiplier tssop multiphase oscillator spread spectrum | MSOP | ",
+ "embedding_text": "ic-timing.msop | IC Timing | 3 ic timing parts using MSOP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | msop clock p0 5mm 3x3mm timer so ic timing synthesizer multiplier tssop multiphase oscillator spread spectrum | MSOP | ",
  "class": "ic.timing"
 }

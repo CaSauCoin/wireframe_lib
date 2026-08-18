@@ -6,30 +6,24 @@
   "Passive",
   "Resistor"
  ],
- "description": "Cluster of 3 through-hole passive resistor parts in the FUSH package family with FUSH_5X20MM and FUSH_6X32MM footprint variants.",
+ "description": "3 passive resistor parts using FUSH footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select based on the specific footprint variant: FUSH_5X20MM, FUSH_5X20MM_4PIN, or FUSH_6X32MM_4PIN.",
-  "Verify part specifications and through-hole mounting compatibility for the board layout.",
-  "Note that all 3 entries are tier C parts sourced from chilaboard-altium-library."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a FUSH land pattern is intended."
  ],
  "avoid_when": [
-  "The board design requires surface mount (SMD) components instead of through-hole.",
-  "A package family other than FUSH is required.",
-  "The design requires pre-verified Tier A or Tier B parts."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than FUSH."
  ],
  "keywords": [
+  "fush",
+  "5x20mm",
+  "4pin",
   "passive",
   "resistor",
-  "fush",
-  "through hole",
-  "through_hole",
-  "fush_5x20mm",
-  "fush_5x20mm_4pin",
-  "fush_6x32mm_4pin",
-  "5x20mm",
   "6x32mm",
-  "4pin",
-  "chilaboard-altium-library",
   "through",
   "hole",
   "pad",
@@ -58,7 +52,7 @@
   "tier_counts": {
    "C": 3
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
@@ -66,6 +60,6 @@
   "chilaboard-altium-library/FUSH_5X20MM_4PIN/FUSH_5X20MM_4PIN",
   "chilaboard-altium-library/FUSH_6X32MM_4PIN/FUSH_6X32MM_4PIN"
  ],
- "embedding_text": "passive-resistor.fush | Passive Resistor | Cluster of 3 through-hole passive resistor parts in the FUSH package family with FUSH_5X20MM and FUSH_6X32MM footprint variants. | passive resistor fush through hole through_hole fush_5x20mm fush_5x20mm_4pin fush_6x32mm_4pin 5x20mm 6x32mm 4pin chilaboard-altium-library through hole pad mm pitch pins | FUSH | ",
+ "embedding_text": "passive-resistor.fush | Passive Resistor | 3 passive resistor parts using FUSH footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | fush 5x20mm 4pin passive resistor 6x32mm through hole pad mm pitch pins | FUSH | ",
  "class": "passive.resistor"
 }

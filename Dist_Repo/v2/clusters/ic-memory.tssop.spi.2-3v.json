@@ -6,32 +6,24 @@
   "IC",
   "Memory"
  ],
- "description": "Surface-mount SPI memory IC cluster operating at 2.3V using TSSOP packages, including TSSOP-8 4.4x3mm footprint options.",
+ "description": "1 ic memory parts for SPI, 2.3V using TSSOP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when requiring an SPI memory IC operating at 2.3V.",
-  "Verify PCB layout compatibility with TSSOP-8 4.4x3mm P0.65mm surface-mount land patterns.",
-  "Choose tier A entries for verified symbol and footprint pairings."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a TSSOP land pattern is intended."
  ],
  "avoid_when": [
-  "The design requires a package family other than TSSOP.",
-  "The circuit operates at voltage levels incompatible with 2.3V.",
-  "An interface protocol other than SPI is required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than TSSOP."
  ],
  "keywords": [
-  "ic",
-  "memory",
-  "spi",
-  "2.3v",
   "tssop",
-  "tssop-8",
-  "smd",
-  "surface mount",
-  "at25sf081",
-  "kicad-symbols",
-  "4.4x3mm",
-  "p0.65mm",
+  "memory",
   "3v",
+  "spi",
   "flash",
+  "at25sf081",
   "xmhf",
   "mbit",
   "minimum",
@@ -65,7 +57,7 @@
   "tier_counts": {
    "A": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -80,6 +72,6 @@
  "part_ids": [
   "kicad-symbols/Memory_Flash/AT25SF081-XMHF-X"
  ],
- "embedding_text": "ic-memory.tssop.spi.2-3v | IC Memory | Surface-mount SPI memory IC cluster operating at 2.3V using TSSOP packages, including TSSOP-8 4.4x3mm footprint options. | ic memory spi 2.3v tssop tssop-8 smd surface mount at25sf081 kicad-symbols 4.4x3mm p0.65mm 3v flash xmhf mbit minimum serial with dual and quad support 4x3mm | TSSOP | SPI 2.3V",
+ "embedding_text": "ic-memory.tssop.spi.2-3v | IC Memory | 1 ic memory parts for SPI, 2.3V using TSSOP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | tssop memory 3v spi flash at25sf081 xmhf mbit minimum serial with dual and quad support 4x3mm | TSSOP | SPI 2.3V",
  "class": "ic.memory"
 }

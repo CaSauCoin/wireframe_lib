@@ -6,30 +6,27 @@
   "Passive",
   "Resistor"
  ],
- "description": "Cluster of 3 SMD passive resistors in the ST package family supporting DO214AA SMB, DO214AB SMC, and DO214AC SMA footprints from the celestial-altium-library source.",
+ "description": "3 passive resistor parts using ST footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Match the required footprint variant between ST DO214AA SMB, DO214AB SMC, and DO214AC SMA.",
-  "Confirm compatibility with surface-mount (SMD) assembly requirements.",
-  "Verify part specifications and geometry as all entries are tier C with generated review status."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a ST land pattern is intended."
  ],
  "avoid_when": [
-  "The PCB design requires through-hole mounting instead of SMD.",
-  "The layout requires package formats other than the ST DO214 family.",
-  "Applications requiring parts with verified review status or quality tiers above tier C."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than ST."
  ],
  "keywords": [
+  "st",
   "passive",
   "resistor",
-  "st",
-  "smd",
-  "surface mount",
   "do214aa",
   "smb",
   "do214ab",
   "smc",
   "do214ac",
   "sma",
-  "celestial-altium-library",
   "surface",
   "mount",
   "pad",
@@ -58,7 +55,7 @@
   "tier_counts": {
    "C": 3
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
@@ -66,6 +63,6 @@
   "celestial-altium-library/ST DO214AB SMC/ST_DO214AB_SMC",
   "celestial-altium-library/ST DO214AC SMA/ST_DO214AC_SMA"
  ],
- "embedding_text": "passive-resistor.st | Passive Resistor | Cluster of 3 SMD passive resistors in the ST package family supporting DO214AA SMB, DO214AB SMC, and DO214AC SMA footprints from the celestial-altium-library source. | passive resistor st smd surface mount do214aa smb do214ab smc do214ac sma celestial-altium-library surface mount pad mm pitch pins | ST | ",
+ "embedding_text": "passive-resistor.st | Passive Resistor | 3 passive resistor parts using ST footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | st passive resistor do214aa smb do214ab smc do214ac sma surface mount pad mm pitch pins | ST | ",
  "class": "passive.resistor"
 }

@@ -6,31 +6,21 @@
   "IC",
   "Memory"
  ],
- "description": "Cluster of 5V memory IC parts in surface-mount SOJ-32 packages with 1.27mm pitch.",
+ "description": "4 ic memory parts for 5V using SOJ footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select based on required SOJ-32 footprint body width (7.62mm vs 10.16mm).",
-  "Choose specific part designation (AS7C1024B or IS6xC1024AL).",
-  "Verify 5V operation and surface-mount SOJ footprint compatibility."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SOJ land pattern is intended."
  ],
  "avoid_when": [
-  "Operating voltage differs from 5V.",
-  "PCB design requires through-hole mounting instead of SMD.",
-  "Package requirement is not a 32-pin SOJ footprint."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SOJ."
  ],
  "keywords": [
   "soj",
-  "soj-32",
-  "5v",
-  "ic memory",
-  "memory ic",
-  "smd",
-  "1.27mm",
-  "as7c1024b",
-  "is6xc1024al",
-  "soj-32_10.16x20.955mm_p1.27mm",
-  "soj-32_7.62x20.955mm_p1.27mm",
-  "kicad-symbols",
   "memory",
+  "5v",
   "ram",
   "128k",
   "bit",
@@ -41,7 +31,9 @@
   "27mm",
   "so",
   "cmos",
-  "static"
+  "static",
+  "1mbit",
+  "ic"
  ],
  "facts": {
   "package_family": "SOJ",
@@ -65,7 +57,7 @@
   "tier_counts": {
    "B": 4
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -107,6 +99,6 @@
   "kicad-symbols/Memory_RAM/IS6xC1024AL-xxJ",
   "kicad-symbols/Memory_RAM/IS6xC1024AL-xxK"
  ],
- "embedding_text": "ic-memory.soj.5v | IC Memory | Cluster of 5V memory IC parts in surface-mount SOJ-32 packages with 1.27mm pitch. | soj soj-32 5v ic memory memory ic smd 1.27mm as7c1024b is6xc1024al soj-32_10.16x20.955mm_p1.27mm soj-32_7.62x20.955mm_p1.27mm kicad-symbols memory ram 128k bit sram mil 955mm p1 27mm so cmos static | SOJ | 5V",
+ "embedding_text": "ic-memory.soj.5v | IC Memory | 4 ic memory parts for 5V using SOJ footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | soj memory 5v ram 128k bit sram mil 955mm p1 27mm so cmos static 1mbit ic | SOJ | 5V",
  "class": "ic.memory"
 }

@@ -6,43 +6,34 @@
   "Discrete",
   "Diode"
  ],
- "description": "Diode cluster (1V facet) covering multiple D-family footprints (MELF, SOD-123/-323/-123FL, SMA, SMC, DO-41/SOD81, Mini-MELF) sourced from Alternate-KiCad-Library and JLCPCB-Kicad-Library, 14 parts.",
+ "description": "14 discrete diode parts for 1V using D footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Match the exact footprint (e.g. D_SMA vs D_MELF vs D_SOD-123) to the intended land pattern before picking a part.",
-  "Prefer tier A entries with score 100 shown among representative parts.",
-  "Confirm the part is rated for the required 1V-related facet and any other electrical parameters before use.",
-  "Check source library (Alternate-KiCad-Library or JLCPCB-Kicad-Library) for trust/provenance."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a D land pattern is intended."
  ],
  "avoid_when": [
-  "Electrical ratings beyond the stated 1V facet are needed but not confirmed for the chosen part.",
-  "A tier B part is being considered without verifying its data against tier A alternatives.",
-  "The symbol-footprint pairing has not been checked against the actual PCB land pattern."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than D."
  ],
  "keywords": [
   "diode",
   "1v",
-  "discrete diode",
-  "melf",
-  "mini melf",
-  "sod-123",
-  "sod-123fl",
-  "sod-323",
-  "sma",
-  "smc",
-  "do-41",
-  "sod81",
   "zener",
-  "tvs",
-  "through hole diode",
-  "smd diode",
-  "alternate kicad library",
-  "jlcpcb kicad library",
   "sod",
   "discrete",
+  "melf",
   "diodes",
   "do",
   "akl",
-  "alternate"
+  "alternate",
+  "kicad",
+  "library",
+  "jlcpcb",
+  "independent",
+  "rohs",
+  "schottky"
  ],
  "facts": {
   "package_family": "D",
@@ -76,7 +67,7 @@
    "A": 13,
    "B": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -136,6 +127,6 @@
   "JLCPCB-Kicad-Library/JLCPCB-Diodes/Zener,MM1Z3V6",
   "JLCPCB-Kicad-Library/JLCPCB-Diodes/General,1N4004W"
  ],
- "embedding_text": "discrete-diode.d.1v | Discrete Diode | Diode cluster (1V facet) covering multiple D-family footprints (MELF, SOD-123/-323/-123FL, SMA, SMC, DO-41/SOD81, Mini-MELF) sourced from Alternate-KiCad-Library and JLCPCB-Kicad-Library, 14 parts. | diode 1v discrete diode melf mini melf sod-123 sod-123fl sod-323 sma smc do-41 sod81 zener tvs through hole diode smd diode alternate kicad library jlcpcb kicad library sod discrete diodes do akl alternate | D | 1V",
+ "embedding_text": "discrete-diode.d.1v | Discrete Diode | 14 discrete diode parts for 1V using D footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | diode 1v zener sod discrete melf diodes do akl alternate kicad library jlcpcb independent rohs schottky | D | 1V",
  "class": "discrete.diode"
 }

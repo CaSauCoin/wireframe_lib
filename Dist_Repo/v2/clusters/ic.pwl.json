@@ -5,32 +5,20 @@
  "category_path": [
   "IC"
  ],
- "description": "IC cluster containing 6 through-hole parts using PWL footprints (PWL_5 to PWL_10) from the chilaboard Altium library.",
+ "description": "6 ic parts using PWL footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when requiring a through-hole IC with a PWL footprint variant (PWL_5 to PWL_10).",
-  "Verify compatibility with parts sourced from the chilaboard Altium library.",
-  "Note that all 6 parts in this cluster are categorized in quality tier C."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a PWL land pattern is intended."
  ],
  "avoid_when": [
-  "Surface-mount assembly is required instead of through-hole mounting.",
-  "The PCB design requires a footprint other than PWL_5, PWL_6, PWL_7, PWL_8, PWL_9, or PWL_10.",
-  "Higher quality tier parts (Tier A or B) are required for the design."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than PWL."
  ],
  "keywords": [
-  "ic",
   "pwl",
-  "through hole",
-  "through_hole",
-  "chilaboard",
-  "altium",
-  "pwl_5",
-  "pwl_6",
-  "pwl_7",
-  "pwl_8",
-  "pwl_9",
-  "pwl_10",
-  "package pwl",
-  "tier c",
+  "ic",
   "through",
   "hole",
   "pad",
@@ -62,7 +50,7 @@
   "tier_counts": {
    "C": 6
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
@@ -73,6 +61,6 @@
   "chilaboard-altium-library/PWL_8/PWL_8",
   "chilaboard-altium-library/PWL_9/PWL_9"
  ],
- "embedding_text": "ic.pwl | IC | IC cluster containing 6 through-hole parts using PWL footprints (PWL_5 to PWL_10) from the chilaboard Altium library. | ic pwl through hole through_hole chilaboard altium pwl_5 pwl_6 pwl_7 pwl_8 pwl_9 pwl_10 package pwl tier c through hole pad mm pitch pins | PWL | ",
+ "embedding_text": "ic.pwl | IC | 6 ic parts using PWL footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | pwl ic through hole pad mm pitch pins | PWL | ",
  "class": "ic"
 }

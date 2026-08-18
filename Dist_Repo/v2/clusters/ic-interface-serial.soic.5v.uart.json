@@ -7,41 +7,34 @@
   "Interface",
   "Serial"
  ],
- "description": "Cluster of 15 surface-mount 5V UART/serial interface ICs in SOIC footprints (SOIC-8, SOIC-16, SOIC-24W, and SOIC-28W) from KiCad symbols.",
+ "description": "15 ic interface serial parts for 5V, UART/serial using SOIC footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select based on required footprint size: SOIC-8, SOIC-16, SOIC-24W, or SOIC-28W.",
-  "Verify 5V operation and UART/serial interface compatibility.",
-  "Confirm surface-mount (SMD) land pattern with 1.27mm pitch."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SOIC land pattern is intended."
  ],
  "avoid_when": [
-  "The PCB design requires packages other than SOIC or non-SMD mounting.",
-  "The circuit requires an interface format or operating voltage other than 5V UART/serial."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SOIC."
  ],
  "keywords": [
   "soic",
   "uart",
-  "serial",
   "5v",
   "interface",
-  "smd",
-  "soic-8",
-  "soic-16",
-  "soic-24w",
-  "soic-28w",
-  "ic",
-  "adm1485xrz",
-  "adm211",
-  "adm213",
-  "adm232a",
-  "icl3232",
+  "serial",
   "rs232",
   "transceiver",
   "p1",
   "27mm",
   "so",
+  "ic",
   "9mm",
   "rs",
-  "driver"
+  "driver",
+  "9x9",
+  "pin"
  ],
  "facts": {
   "package_family": "SOIC",
@@ -68,7 +61,7 @@
   "tier_counts": {
    "A": 15
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -129,6 +122,6 @@
   "kicad-symbols/Interface_UART/ST485E",
   "kicad-symbols/Interface_UART/THVD1500"
  ],
- "embedding_text": "ic-interface-serial.soic.5v.uart | IC Interface Serial | Cluster of 15 surface-mount 5V UART/serial interface ICs in SOIC footprints (SOIC-8, SOIC-16, SOIC-24W, and SOIC-28W) from KiCad symbols. | soic uart serial 5v interface smd soic-8 soic-16 soic-24w soic-28w ic adm1485xrz adm211 adm213 adm232a icl3232 rs232 transceiver p1 27mm so 9mm rs driver | SOIC | 5V UART/serial",
+ "embedding_text": "ic-interface-serial.soic.5v.uart | IC Interface Serial | 15 ic interface serial parts for 5V, UART/serial using SOIC footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | soic uart 5v interface serial rs232 transceiver p1 27mm so ic 9mm rs driver 9x9 pin | SOIC | 5V UART/serial",
  "class": "ic.interface.serial"
 }

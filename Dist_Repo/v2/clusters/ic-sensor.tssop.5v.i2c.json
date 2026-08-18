@@ -6,33 +6,28 @@
   "IC",
   "Sensor"
  ],
- "description": "Surface-mount sensor IC cluster featuring I2C communication and 2.7V or 5V operation in a TSSOP-16 package.",
+ "description": "1 ic sensor parts for 5V, I2C, 2.7V using TSSOP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when requiring an I2C sensor IC operating at 2.7V or 5V.",
-  "Choose for surface-mount designs matching the TSSOP-16 footprint.",
-  "Verify tier A rating and KiCad symbol availability for INA260."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a TSSOP land pattern is intended."
  ],
  "avoid_when": [
-  "Do not use if through-hole mounting or non-SMD assembly is required.",
-  "Avoid when layout requires a package other than TSSOP-16.",
-  "Avoid if the application does not support an I2C interface or 2.7V/5V supply levels."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than TSSOP."
  ],
  "keywords": [
-  "ic",
-  "sensor",
   "tssop",
-  "tssop-16",
-  "i2c",
-  "5v",
-  "2.7v",
-  "smd",
-  "ina260",
-  "surface mount",
+  "sensor",
   "current",
   "power",
   "voltage",
   "monitor",
   "7v",
+  "5v",
+  "i2c",
+  "ina260",
   "energy",
   "with",
   "integrated",
@@ -63,7 +58,7 @@
   "tier_counts": {
    "A": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -78,6 +73,6 @@
  "part_ids": [
   "kicad-symbols/Sensor_Energy/INA260"
  ],
- "embedding_text": "ic-sensor.tssop.5v.i2c | IC Sensor | Surface-mount sensor IC cluster featuring I2C communication and 2.7V or 5V operation in a TSSOP-16 package. | ic sensor tssop tssop-16 i2c 5v 2.7v smd ina260 surface mount current power voltage monitor 7v energy with integrated 2m shunt resistor | TSSOP | 5V I2C 2.7V",
+ "embedding_text": "ic-sensor.tssop.5v.i2c | IC Sensor | 1 ic sensor parts for 5V, I2C, 2.7V using TSSOP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | tssop sensor current power voltage monitor 7v 5v i2c ina260 energy with integrated 2m shunt resistor | TSSOP | 5V I2C 2.7V",
  "class": "ic.sensor"
 }

@@ -6,34 +6,24 @@
   "IC",
   "Analog"
  ],
- "description": "Analog IC cluster containing 2 surface-mount 5V tier B parts using UQFN-16_1.8x2.6mm_P0.4mm footprints from KiCad symbol libraries.",
+ "description": "2 ic analog parts for 5V using QFN footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when a surface-mount 5V analog IC is required.",
-  "Ensure design compatibility with the UQFN-16_1.8x2.6mm_P0.4mm footprint.",
-  "Verify part requirements against tier B KiCad symbol entries."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a QFN land pattern is intended."
  ],
  "avoid_when": [
-  "Do not use if through-hole mounting is required instead of SMD.",
-  "Avoid when the PCB layout requires a footprint other than UQFN-16_1.8x2.6mm_P0.4mm.",
-  "Avoid if non-5V analog IC specifications are required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than QFN."
  ],
  "keywords": [
-  "ic",
   "analog",
   "5v",
-  "qfn",
-  "uqfn",
-  "smd",
-  "uqfn-16",
-  "1.8x2.6mm",
-  "0.4mm",
-  "p0.4mm",
-  "tmux1108rsv",
-  "tmux1208rsv",
-  "analog switch",
-  "kicad-symbols",
   "switch",
   "multiplexer",
+  "qfn",
+  "uqfn",
   "ohm",
   "ron",
   "8x2",
@@ -41,7 +31,9 @@
   "p0",
   "4mm",
   "nolead",
-  "texas"
+  "texas",
+  "rsv0016a",
+  "selector"
  ],
  "facts": {
   "package_family": "QFN",
@@ -64,7 +56,7 @@
   "tier_counts": {
    "B": 2
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -88,6 +80,6 @@
   "kicad-symbols/Analog_Switch/TMUX1108RSV",
   "kicad-symbols/Analog_Switch/TMUX1208RSV"
  ],
- "embedding_text": "ic-analog.qfn.5v | IC Analog | Analog IC cluster containing 2 surface-mount 5V tier B parts using UQFN-16_1.8x2.6mm_P0.4mm footprints from KiCad symbol libraries. | ic analog 5v qfn uqfn smd uqfn-16 1.8x2.6mm 0.4mm p0.4mm tmux1108rsv tmux1208rsv analog switch kicad-symbols switch multiplexer ohm ron 8x2 6mm p0 4mm nolead texas | QFN | 5V",
+ "embedding_text": "ic-analog.qfn.5v | IC Analog | 2 ic analog parts for 5V using QFN footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | analog 5v switch multiplexer qfn uqfn ohm ron 8x2 6mm p0 4mm nolead texas rsv0016a selector | QFN | 5V",
  "class": "ic.analog"
 }

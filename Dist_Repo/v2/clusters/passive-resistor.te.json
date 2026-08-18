@@ -6,32 +6,21 @@
   "Passive",
   "Resistor"
  ],
- "description": "A collection of 11 passive resistor parts in the TE package family, offering surface-mount and through-hole mounting configurations across quality tiers B and C.",
+ "description": "11 passive resistor parts using TE footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Verify the specific TE footprint variant needed, such as TLRP 2512, FSMSMTR, or 4DB-P108-02.",
-  "Select based on required mounting style between surface mount (SMD) and through hole.",
-  "Filter by tier B representative parts when higher source confidence is preferred."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a TE land pattern is intended."
  ],
  "avoid_when": [
-  "The board layout requires standard non-TE package footprints.",
-  "A tier A verified part is strictly required.",
-  "The target component is not a passive resistor."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than TE."
  ],
  "keywords": [
+  "te",
   "passive",
   "resistor",
-  "te",
-  "smd",
-  "through hole",
-  "tlrp 2512",
-  "fsmsmtr",
-  "consma024-g",
-  "c-1909763",
-  "4db-p108-02",
-  "nc6-p108-02",
-  "282834-2",
-  "282837-2",
-  "5413631-1",
   "p108",
   "pad",
   "mm",
@@ -41,7 +30,10 @@
   "two",
   "terminal",
   "4db",
-  "nc6"
+  "fsmsmtr",
+  "nc6",
+  "tlrp",
+  "through"
  ],
  "facts": {
   "package_family": "TE",
@@ -74,7 +66,7 @@
    "B": 3,
    "C": 8
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -115,6 +107,6 @@
   "celestial-altium-library/TE NC6-P108-02/TE_NC6-P108-02",
   "celestial-altium-library/TE TLRP 2512/TE_TLRP_2512"
  ],
- "embedding_text": "passive-resistor.te | Passive Resistor | A collection of 11 passive resistor parts in the TE package family, offering surface-mount and through-hole mounting configurations across quality tiers B and C. | passive resistor te smd through hole tlrp 2512 fsmsmtr consma024-g c-1909763 4db-p108-02 nc6-p108-02 282834-2 282837-2 5413631-1 p108 pad mm pitch pins consma024 two terminal 4db nc6 | TE | ",
+ "embedding_text": "passive-resistor.te | Passive Resistor | 11 passive resistor parts using TE footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | te passive resistor p108 pad mm pitch pins consma024 two terminal 4db fsmsmtr nc6 tlrp through | TE | ",
  "class": "passive.resistor"
 }

@@ -5,29 +5,20 @@
  "category_path": [
   "IC"
  ],
- "description": "Integrated circuit cluster containing 3 parts in the PJ package family with footprints PJ-320, PJ-307N3, and PJ-317-B.",
+ "description": "3 ic parts using PJ footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Verify footprint compatibility with PJ-320, PJ-307N3, or PJ-317-B land patterns.",
-  "Note that all 3 parts are currently classified under quality tier C.",
-  "Check mounting requirements as mounting type is listed as unknown."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a PJ land pattern is intended."
  ],
  "avoid_when": [
-  "The board layout requires a package family other than PJ.",
-  "Unvalidated tier C quality ratings are unacceptable.",
-  "The design requires a footprint other than PJ-320, PJ-307N3, or PJ-317-B."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than PJ."
  ],
  "keywords": [
   "pj",
   "ic",
-  "pj-320",
-  "pj-307n3",
-  "pj-317-b",
-  "pj package",
-  "tier c",
-  "dist-legacy",
-  "ic cluster",
-  "integrated circuit",
-  "pj footprint",
   "307n3",
   "pad",
   "mm",
@@ -55,7 +46,7 @@
   "tier_counts": {
    "C": 3
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
@@ -63,6 +54,6 @@
   "dist-legacy/PJ-307N3",
   "dist-legacy/PJ-317-B"
  ],
- "embedding_text": "ic.pj | IC | Integrated circuit cluster containing 3 parts in the PJ package family with footprints PJ-320, PJ-307N3, and PJ-317-B. | pj ic pj-320 pj-307n3 pj-317-b pj package tier c dist-legacy ic cluster integrated circuit pj footprint 307n3 pad mm pitch pins | PJ | ",
+ "embedding_text": "ic.pj | IC | 3 ic parts using PJ footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | pj ic 307n3 pad mm pitch pins | PJ | ",
  "class": "ic"
 }

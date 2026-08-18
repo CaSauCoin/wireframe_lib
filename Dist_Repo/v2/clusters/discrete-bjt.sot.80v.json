@@ -6,44 +6,34 @@
   "Discrete",
   "BJT"
  ],
- "description": "Cluster of 25 discrete BJT parts rated for the 80V facet, using SOT package footprints (SOT-223-3_TabPin2, SOT-89-3) in SMD mount; sourced from kicad-symbols and Alternate-KiCad-Library.",
+ "description": "25 discrete bjt parts for 80V using SOT footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Match the exact footprint (SOT-223-3_TabPin2 or SOT-89-3) to the intended land pattern",
-  "Prefer tier A entries (23 of 25 parts) over tier C",
-  "Cross-check source library (kicad-symbols vs Alternate-KiCad-Library) for trust level",
-  "Confirm the 80V facet meets your circuit's actual voltage requirement before use"
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SOT land pattern is intended."
  ],
  "avoid_when": [
-  "Design requires a package outside the SOT family",
-  "Required voltage, current, or other electrical rating is not confirmed by the specific part chosen",
-  "Only tier C parts match and higher confidence is needed",
-  "Through-hole mounting is required instead of SMD"
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SOT."
  ],
  "keywords": [
-  "bjt",
-  "discrete bjt",
-  "transistor",
   "sot",
-  "sot-223",
-  "sot-89",
-  "sot-223-3_tabpin2",
+  "transistor",
+  "bjt",
   "80v",
-  "smd",
-  "surface mount",
-  "kicad-symbols",
-  "alternate-kicad-library",
-  "bcx53",
-  "bcx56",
-  "bcp53",
-  "bcp53-10",
-  "bcp53-16",
-  "tier a",
   "pnp",
   "discrete",
   "1a",
   "npn",
   "akl",
-  "alternate"
+  "alternate",
+  "kicad",
+  "library",
+  "darlington",
+  "tabpin2",
+  "cms",
+  "bcp53"
  ],
  "facts": {
   "package_family": "SOT",
@@ -69,7 +59,7 @@
    "A": 23,
    "C": 2
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -140,6 +130,6 @@
   "kicad-symbols/Transistor_BJT/BCP53",
   "kicad-symbols/Transistor_BJT/BCP56"
  ],
- "embedding_text": "discrete-bjt.sot.80v | Discrete BJT | Cluster of 25 discrete BJT parts rated for the 80V facet, using SOT package footprints (SOT-223-3_TabPin2, SOT-89-3) in SMD mount; sourced from kicad-symbols and Alternate-KiCad-Library. | bjt discrete bjt transistor sot sot-223 sot-89 sot-223-3_tabpin2 80v smd surface mount kicad-symbols alternate-kicad-library bcx53 bcx56 bcp53 bcp53-10 bcp53-16 tier a pnp discrete 1a npn akl alternate | SOT | 80V",
+ "embedding_text": "discrete-bjt.sot.80v | Discrete BJT | 25 discrete bjt parts for 80V using SOT footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | sot transistor bjt 80v pnp discrete 1a npn akl alternate kicad library darlington tabpin2 cms bcp53 | SOT | 80V",
  "class": "discrete.bjt"
 }

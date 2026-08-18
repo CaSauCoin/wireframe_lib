@@ -5,28 +5,20 @@
  "category_path": [
   "IC"
  ],
- "description": "Integrated circuit cluster using LCC16 footprints, containing tier C parts from legacy distributor sources.",
+ "description": "1 ic parts using LCC16 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Use when an integrated circuit requiring an LCC16 footprint family is needed.",
-  "Verify package dimensions and mounting requirements since mount type is unspecified.",
-  "Review datasheets and part details carefully given tier C legacy distribution status."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a LCC16 land pattern is intended."
  ],
  "avoid_when": [
-  "The board layout requires a footprint or package family other than LCC16.",
-  "Tier C or legacy distributor parts do not meet project reliability standards.",
-  "Explicit mounting type or electrical specifications are required but missing."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than LCC16."
  ],
  "keywords": [
   "lcc16",
   "ic",
-  "integrated circuit",
-  "lcc16 footprint",
-  "package family lcc16",
-  "tier c",
-  "dist-legacy",
-  "legacy distributor",
-  "unknown mount",
-  "lcc",
   "pad",
   "mm",
   "pitch",
@@ -51,12 +43,12 @@
   "tier_counts": {
    "C": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
   "dist-legacy/LCC16"
  ],
- "embedding_text": "ic.lcc16 | IC | Integrated circuit cluster using LCC16 footprints, containing tier C parts from legacy distributor sources. | lcc16 ic integrated circuit lcc16 footprint package family lcc16 tier c dist-legacy legacy distributor unknown mount lcc pad mm pitch pins | LCC16 | ",
+ "embedding_text": "ic.lcc16 | IC | 1 ic parts using LCC16 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | lcc16 ic pad mm pitch pins | LCC16 | ",
  "class": "ic"
 }

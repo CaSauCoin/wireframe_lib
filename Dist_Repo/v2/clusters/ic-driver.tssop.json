@@ -6,42 +6,34 @@
   "IC",
   "Driver"
  ],
- "description": "Surface-mount driver IC cluster featuring 7 KiCad symbol parts in TSSOP and HTSSOP package footprints with thermal pad options.",
+ "description": "7 ic driver parts using TSSOP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when requiring driver ICs in surface-mount TSSOP or HTSSOP packages.",
-  "Choose based on required pin count (16, 20, or 28 pins) and exposed pad dimensions.",
-  "Prefer Tier A parts such as DRV8860 when higher quality tier classification is needed."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a TSSOP land pattern is intended."
  ],
  "avoid_when": [
-  "Do not use if through-hole or non-TSSOP footprints are required.",
-  "Avoid when the design requires a lead pitch other than 0.65mm.",
-  "Avoid if specific electrical limits or driver functionality not documented in the cluster facts are required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than TSSOP."
  ],
  "keywords": [
-  "ic",
   "driver",
   "tssop",
   "htssop",
-  "smd",
-  "surface mount",
-  "tssop-16",
-  "htssop-16",
-  "htssop-20",
-  "htssop-28",
-  "0.65mm pitch",
-  "exposed pad",
-  "drv8860",
-  "drv2510-q1",
-  "max1968xui",
-  "max1969xui",
   "p0",
   "65mm",
+  "ic",
   "1ep",
   "so",
   "channel",
   "interface",
   "low",
-  "side"
+  "side",
+  "4x5mm",
+  "relay",
+  "ep2",
+  "serial"
  ],
  "facts": {
   "package_family": "TSSOP",
@@ -67,7 +59,7 @@
    "A": 2,
    "B": 5
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -120,6 +112,6 @@
   "kicad-symbols/Driver/MAX4820xUP",
   "kicad-symbols/Driver/MAX4821xUP"
  ],
- "embedding_text": "ic-driver.tssop | IC Driver | Surface-mount driver IC cluster featuring 7 KiCad symbol parts in TSSOP and HTSSOP package footprints with thermal pad options. | ic driver tssop htssop smd surface mount tssop-16 htssop-16 htssop-20 htssop-28 0.65mm pitch exposed pad drv8860 drv2510-q1 max1968xui max1969xui p0 65mm 1ep so channel interface low side | TSSOP | ",
+ "embedding_text": "ic-driver.tssop | IC Driver | 7 ic driver parts using TSSOP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | driver tssop htssop p0 65mm ic 1ep so channel interface low side 4x5mm relay ep2 serial | TSSOP | ",
  "class": "ic.driver"
 }

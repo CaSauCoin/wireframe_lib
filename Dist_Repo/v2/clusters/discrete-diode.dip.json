@@ -6,32 +6,26 @@
   "Discrete",
   "Diode"
  ],
- "description": "Cluster of discrete diode components featuring DIP package family footprints such as DIP-4_W7.62mm and DIP3MM.",
+ "description": "2 discrete diode parts using DIP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Prefer tier A parts such as DF04M with matched footprints.",
-  "Verify the PCB land pattern matches DIP footprint options like DIP-4_W7.62mm or DIP3MM.",
-  "Check quality tier and source catalog data prior to part selection."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a DIP land pattern is intended."
  ],
  "avoid_when": [
-  "The board layout requires packages other than DIP.",
-  "Surface mount or non-DIP packages are required by the design.",
-  "Required electrical ratings or specifications are not confirmed in the cluster facts."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than DIP."
  ],
  "keywords": [
+  "dip3mm",
   "discrete",
+  "bridge",
+  "dip",
   "diode",
   "diodes",
-  "dip",
-  "dip-4_w7.62mm",
-  "dip3mm",
-  "df04m",
-  "bridge rectifiers",
-  "digikey",
-  "kicad",
-  "discrete diode",
-  "dip package",
-  "bridge",
   "rectifiers",
+  "df04m",
   "dk",
   "rect",
   "1p",
@@ -63,7 +57,7 @@
    "A": 1,
    "C": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -79,6 +73,6 @@
   "digikey-kicad-library/dk_Diodes-Bridge-Rectifiers/DF04M",
   "dist-legacy/DIP3MM"
  ],
- "embedding_text": "discrete-diode.dip | Discrete Diode | Cluster of discrete diode components featuring DIP package family footprints such as DIP-4_W7.62mm and DIP3MM. | discrete diode diodes dip dip-4_w7.62mm dip3mm df04m bridge rectifiers digikey kicad discrete diode dip package bridge rectifiers dk rect 1p 400v 5a 4dip w7 62mm | DIP | ",
+ "embedding_text": "discrete-diode.dip | Discrete Diode | 2 discrete diode parts using DIP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | dip3mm discrete bridge dip diode diodes rectifiers df04m dk rect 1p 400v 5a 4dip w7 62mm | DIP | ",
  "class": "discrete.diode"
 }

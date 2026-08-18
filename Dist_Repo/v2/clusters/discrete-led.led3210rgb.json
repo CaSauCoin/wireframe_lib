@@ -6,28 +6,21 @@
   "Discrete",
   "LED"
  ],
- "description": "Cluster of 3 surface-mount discrete LED parts using LED3210RGB footprints sourced from chilaboard-altium-library.",
+ "description": "3 discrete led parts using LED3210RGB footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when requiring surface-mount discrete LEDs using LED3210RGB footprint variants.",
-  "Match design layout against LED3210RGB, LED3210RGB_R, or LED3210RGB_RA land patterns.",
-  "Verify generated tier C library entries before committing to PCB design."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a LED3210RGB land pattern is intended."
  ],
  "avoid_when": [
-  "Board layout requires non-SMD mounting or footprints other than LED3210RGB variants.",
-  "Unreviewed tier C component entries are prohibited by project quality rules.",
-  "Application requires unlisted electrical ratings or specific datasheet claims."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than LED3210RGB."
  ],
  "keywords": [
-  "discrete led",
   "led3210rgb",
-  "smd",
-  "discrete.led",
-  "surface mount",
-  "led3210rgb_r",
-  "led3210rgb_ra",
-  "chilaboard-altium-library",
-  "led",
   "discrete",
+  "led",
   "ra",
   "surface",
   "mount",
@@ -57,7 +50,7 @@
   "tier_counts": {
    "C": 3
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
@@ -65,6 +58,6 @@
   "chilaboard-altium-library/LED3210RGB_R/LED3210RGB_R",
   "chilaboard-altium-library/LED3210RGB_RA/LED3210RGB_RA"
  ],
- "embedding_text": "discrete-led.led3210rgb | Discrete LED | Cluster of 3 surface-mount discrete LED parts using LED3210RGB footprints sourced from chilaboard-altium-library. | discrete led led3210rgb smd discrete.led surface mount led3210rgb_r led3210rgb_ra chilaboard-altium-library led discrete ra surface mount pad mm pitch pins | LED3210RGB | ",
+ "embedding_text": "discrete-led.led3210rgb | Discrete LED | 3 discrete led parts using LED3210RGB footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | led3210rgb discrete led ra surface mount pad mm pitch pins | LED3210RGB | ",
  "class": "discrete.led"
 }

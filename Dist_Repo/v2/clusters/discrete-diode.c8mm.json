@@ -6,25 +6,21 @@
   "Discrete",
   "Diode"
  ],
- "description": "Discrete diode cluster containing 1 quality tier C part using the C8mm footprint.",
+ "description": "1 discrete diode parts using C8mm footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Use when a C8mm footprint is required.",
-  "Verify suitability for tier C quality parts from dist-legacy source."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a C8mm land pattern is intended."
  ],
  "avoid_when": [
-  "The layout requires a footprint other than C8mm.",
-  "Higher quality tiers (tier A or B) are required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than C8mm."
  ],
  "keywords": [
   "c8mm",
   "discrete",
   "diode",
-  "discrete diode",
-  "discrete.diode",
-  "c8mm footprint",
-  "tier c",
-  "dist-legacy",
-  "package family c8mm",
   "pad",
   "mm",
   "pitch",
@@ -49,12 +45,12 @@
   "tier_counts": {
    "C": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
   "dist-legacy/C8mm"
  ],
- "embedding_text": "discrete-diode.c8mm | Discrete Diode | Discrete diode cluster containing 1 quality tier C part using the C8mm footprint. | c8mm discrete diode discrete diode discrete.diode c8mm footprint tier c dist-legacy package family c8mm pad mm pitch pins | C8mm | ",
+ "embedding_text": "discrete-diode.c8mm | Discrete Diode | 1 discrete diode parts using C8mm footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | c8mm discrete diode pad mm pitch pins | C8mm | ",
  "class": "discrete.diode"
 }

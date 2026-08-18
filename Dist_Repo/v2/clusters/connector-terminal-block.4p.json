@@ -6,44 +6,31 @@
   "Connector",
   "Terminal Block"
  ],
- "description": "Cluster of 2 four-position PCB terminal block connector parts sharing the 4P_PCB_TERM_BLOCK_HDR_RA footprint; all entries are tier C, sourced from dist-legacy, with review status 'generated' and mount type unrecorded.",
+ "description": "2 connector terminal block parts using 4P footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Confirm the footprint matches 4P_PCB_TERM_BLOCK_HDR_RA exactly before use.",
-  "Verify mounting style separately, as it is recorded as unknown for this cluster.",
-  "Check the datasheet for electrical ratings, since none are captured in the cluster metadata.",
-  "Prefer a higher-tier or reviewed part if one becomes available, as all current entries are tier C and 'generated'."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a 4P land pattern is intended."
  ],
  "avoid_when": [
-  "A pin count or footprint other than 4P / 4P_PCB_TERM_BLOCK_HDR_RA is needed.",
-  "Mounting style (e.g. right-angle vs straight, THT vs SMD) must be guaranteed and cannot be confirmed here.",
-  "Electrical ratings (voltage, current, pitch) must be verified but are not stated in this cluster's metadata.",
-  "A reviewed, higher-trust source than dist-legacy is required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than 4P."
  ],
  "keywords": [
-  "terminal block",
-  "connector",
-  "4p",
-  "4 position",
-  "pcb terminal block",
-  "hdr ra",
-  "header",
-  "right angle",
-  "4-pin connector",
-  "dist-legacy",
-  "tier c",
-  "generated",
-  "unreviewed",
-  "block connector",
   "block",
+  "4p",
   "pcb",
   "term",
   "hdr",
   "ra",
+  "connector",
   "terminal",
   "dupl",
   "pad",
   "mm",
-  "pitch"
+  "pitch",
+  "pins"
  ],
  "facts": {
   "package_family": "4P",
@@ -64,13 +51,13 @@
   "tier_counts": {
    "C": 2
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
   "dist-legacy/4P_PCB_TERM_BLOCK_HDR_RA - dupl",
   "dist-legacy/4P_PCB_TERM_BLOCK_HDR_RA"
  ],
- "embedding_text": "connector-terminal-block.4p | Connector Terminal Block | Cluster of 2 four-position PCB terminal block connector parts sharing the 4P_PCB_TERM_BLOCK_HDR_RA footprint; all entries are tier C, sourced from dist-legacy, with review status 'generated' and mount type unrecorded. | terminal block connector 4p 4 position pcb terminal block hdr ra header right angle 4-pin connector dist-legacy tier c generated unreviewed block connector block pcb term hdr ra terminal dupl pad mm pitch | 4P | ",
+ "embedding_text": "connector-terminal-block.4p | Connector Terminal Block | 2 connector terminal block parts using 4P footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | block 4p pcb term hdr ra connector terminal dupl pad mm pitch pins | 4P | ",
  "class": "connector.terminal_block"
 }

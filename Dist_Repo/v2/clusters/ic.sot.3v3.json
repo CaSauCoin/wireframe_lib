@@ -5,33 +5,23 @@
  "category_path": [
   "IC"
  ],
- "description": "Surface-mount 3.3V IC cluster containing 18 parts across SOT package footprints including SOT-223, SOT-89-3, and SOT-753.",
+ "description": "18 ic parts for 3.3V using SOT footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Verify the specific SOT footprint variation, such as SOT-223, SOT-89-3, or SOT-753.",
-  "Select based on quality tier preference (13 Tier A and 5 Tier B parts available).",
-  "Confirm part source library from digikey-kicad-library or Alternate-KiCad-Library."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SOT land pattern is intended."
  ],
  "avoid_when": [
-  "Through-hole mounting or non-SMD footprint is required.",
-  "Package families other than SOT are needed.",
-  "Operating voltage requirements differ from 3.3V."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SOT."
  ],
  "keywords": [
-  "ic",
-  "3.3v",
   "sot",
-  "smd",
-  "sot-223",
-  "sot-89-3",
-  "sot-753",
-  "sot-223-3_tabpin2",
-  "sot-223-6_tabpin3",
-  "digikey-kicad-library",
-  "alternate-kicad-library",
-  "surface mount",
   "voltage",
   "3v",
   "pmic",
+  "ic",
   "regulator",
   "linear",
   "regulators",
@@ -40,7 +30,9 @@
   "reg",
   "integrated",
   "circuits",
-  "ics"
+  "ics",
+  "akl",
+  "100ma"
  ],
  "facts": {
   "package_family": "SOT",
@@ -69,7 +61,7 @@
    "A": 13,
    "B": 5
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -133,6 +125,6 @@
   "digikey-kicad-library/dk_PMIC-Voltage-Regulators-Linear/LP5907MFX-3_3_NOPB",
   "Alternate-KiCad-Library/Voltage_Regulator_AKL/MCP1791T-3302E-DC"
  ],
- "embedding_text": "ic.sot.3v3 | IC | Surface-mount 3.3V IC cluster containing 18 parts across SOT package footprints including SOT-223, SOT-89-3, and SOT-753. | ic 3.3v sot smd sot-223 sot-89-3 sot-753 sot-223-3_tabpin2 sot-223-6_tabpin3 digikey-kicad-library alternate-kicad-library surface mount voltage 3v pmic regulator linear regulators terminal dk reg integrated circuits ics | SOT | 3.3V",
+ "embedding_text": "ic.sot.3v3 | IC | 18 ic parts for 3.3V using SOT footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | sot voltage 3v pmic ic regulator linear regulators terminal dk reg integrated circuits ics akl 100ma | SOT | 3.3V",
  "class": "ic"
 }

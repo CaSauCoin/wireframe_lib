@@ -6,41 +6,34 @@
   "IC",
   "Sensor"
  ],
- "description": "Surface-mount I2C sensor IC cluster rated for 3.6V using the Lite-On_LTR-303ALS-01 footprint.",
+ "description": "1 ic sensor parts for I2C, 3.6V using Lite footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select for surface-mount sensor designs requiring an I2C interface.",
-  "Match against the 3.6V rating and Lite-On_LTR-303ALS-01 footprint.",
-  "Suitable for designs using KiCad symbol library parts rated at quality tier B."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a Lite land pattern is intended."
  ],
  "avoid_when": [
-  "The application requires through-hole components rather than surface-mount.",
-  "The design requires an interface other than I2C or a voltage rating other than 3.6V.",
-  "The PCB layout requires a footprint other than Lite-On_LTR-303ALS-01."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than Lite."
  ],
  "keywords": [
-  "ic",
   "sensor",
-  "ic.sensor",
-  "i2c",
-  "3.6v",
-  "lite",
-  "smd",
-  "ltr-303als-01",
-  "lite-on_ltr-303als-01",
-  "kicad-symbols",
-  "sensor_optical",
   "ambient",
   "light",
+  "i2c",
   "ltr",
   "303als",
   "6v",
+  "lite",
   "optical",
   "interface",
   "to",
   "64k",
   "lux",
   "on",
-  "chipled"
+  "chipled",
+  "ic"
  ],
  "facts": {
   "package_family": "Lite",
@@ -64,7 +57,7 @@
   "tier_counts": {
    "B": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -79,6 +72,6 @@
  "part_ids": [
   "kicad-symbols/Sensor_Optical/LTR-303ALS-01"
  ],
- "embedding_text": "ic-sensor.lite.i2c.3-6v | IC Sensor | Surface-mount I2C sensor IC cluster rated for 3.6V using the Lite-On_LTR-303ALS-01 footprint. | ic sensor ic.sensor i2c 3.6v lite smd ltr-303als-01 lite-on_ltr-303als-01 kicad-symbols sensor_optical ambient light ltr 303als 6v optical interface to 64k lux on chipled | Lite | I2C 3.6V",
+ "embedding_text": "ic-sensor.lite.i2c.3-6v | IC Sensor | 1 ic sensor parts for I2C, 3.6V using Lite footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | sensor ambient light i2c ltr 303als 6v lite optical interface to 64k lux on chipled ic | Lite | I2C 3.6V",
  "class": "ic.sensor"
 }

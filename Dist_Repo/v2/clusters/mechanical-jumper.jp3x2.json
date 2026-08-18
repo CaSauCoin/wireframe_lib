@@ -6,28 +6,21 @@
   "Mechanical",
   "Jumper"
  ],
- "description": "Cluster of 4 mechanical jumper parts with unknown mounting types utilizing JP3x2 footprint variants.",
+ "description": "4 mechanical jumper parts using JP3x2 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Verify the specific footprint variant among JP3x2, JP3x2_1, JP3x2_2, and JP3x2_3.",
-  "Confirm mounting requirements since the mounting type is unspecified.",
-  "Review legacy source data and tier C status before design use."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a JP3x2 land pattern is intended."
  ],
  "avoid_when": [
-  "The design requires a package family or footprint other than JP3x2.",
-  "Applications require verified mounting types or quality tiers higher than C.",
-  "The workflow requires planner-visible parts."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than JP3x2."
  ],
  "keywords": [
+  "jp3x2",
   "mechanical",
   "jumper",
-  "mechanical jumper",
-  "mechanical.jumper",
-  "jp3x2",
-  "jp3x2_1",
-  "jp3x2_2",
-  "jp3x2_3",
-  "dist-legacy",
-  "tier c",
   "pad",
   "mm",
   "pitch",
@@ -55,7 +48,7 @@
   "tier_counts": {
    "C": 4
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
@@ -64,6 +57,6 @@
   "dist-legacy/JP3x2_2",
   "dist-legacy/JP3x2_3"
  ],
- "embedding_text": "mechanical-jumper.jp3x2 | Mechanical Jumper | Cluster of 4 mechanical jumper parts with unknown mounting types utilizing JP3x2 footprint variants. | mechanical jumper mechanical jumper mechanical.jumper jp3x2 jp3x2_1 jp3x2_2 jp3x2_3 dist-legacy tier c pad mm pitch pins | JP3x2 | ",
+ "embedding_text": "mechanical-jumper.jp3x2 | Mechanical Jumper | 4 mechanical jumper parts using JP3x2 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | jp3x2 mechanical jumper pad mm pitch pins | JP3x2 | ",
  "class": "mechanical.jumper"
 }

@@ -6,44 +6,34 @@
   "Discrete",
   "Diode"
  ],
- "description": "Cluster of 57 discrete diode parts rated 80V using D-family footprints (SMA, SMB, SMC, SOD-123F/323/523, SMAFL, SMBFL, DO-35, DO-34, DO-201AD, P600), spanning SMD and through-hole mounts, from Alternate-KiCad-Library and kicad-symbols.",
+ "description": "57 discrete diode parts for 80V using D footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Match the exact D-family footprint (e.g. SMA, SMB, SOD-123F, DO-35) to the intended land pattern.",
-  "Prefer tier A entries (47 of 57 parts) over tier B for higher confidence.",
-  "Confirm whether SMD or through-hole mounting is required for the assembly.",
-  "Note the source library (Alternate-KiCad-Library vs kicad-symbols) when weighing trust."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a D land pattern is intended."
  ],
  "avoid_when": [
-  "The required footprint is not one of the listed D-family variants.",
-  "The needed mount type (SMD or through-hole) does not match the selected part's footprint.",
-  "The part is tier B and has not been reviewed for the target design.",
-  "A voltage rating other than 80V is required, since this cluster is scoped to 80V."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than D."
  ],
  "keywords": [
   "diode",
-  "discrete diode",
   "80v",
-  "d package",
-  "sma",
-  "smb",
-  "smc",
-  "sod-123",
-  "sod-323",
-  "sod-523",
-  "do-35",
-  "do-34",
-  "do-201ad",
-  "p600",
-  "smaf l",
-  "smd",
-  "through hole",
-  "kicad-symbols",
-  "alternate-kicad-library",
   "schottky",
   "do",
   "discrete",
   "akl",
-  "alternate"
+  "alternate",
+  "kicad",
+  "library",
+  "horizontal",
+  "sod",
+  "sma",
+  "smb",
+  "axial",
+  "pin",
+  "pitch"
  ],
  "facts": {
   "package_family": "D",
@@ -80,7 +70,7 @@
    "A": 47,
    "B": 10
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -183,6 +173,6 @@
   "Alternate-KiCad-Library/Diode_Schottky_AKL/SS58BF",
   "Alternate-KiCad-Library/Diode_Schottky_AKL/SS58F"
  ],
- "embedding_text": "discrete-diode.d.80v | Discrete Diode | Cluster of 57 discrete diode parts rated 80V using D-family footprints (SMA, SMB, SMC, SOD-123F/323/523, SMAFL, SMBFL, DO-35, DO-34, DO-201AD, P600), spanning SMD and through-hole mounts, from Alternate-KiCad-Library and kicad-symbols. | diode discrete diode 80v d package sma smb smc sod-123 sod-323 sod-523 do-35 do-34 do-201ad p600 smaf l smd through hole kicad-symbols alternate-kicad-library schottky do discrete akl alternate | D | 80V",
+ "embedding_text": "discrete-diode.d.80v | Discrete Diode | 57 discrete diode parts for 80V using D footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | diode 80v schottky do discrete akl alternate kicad library horizontal sod sma smb axial pin pitch | D | 80V",
  "class": "discrete.diode"
 }

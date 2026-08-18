@@ -6,32 +6,23 @@
   "Discrete",
   "Diode"
  ],
- "description": "A cluster of SMD SOT-23 discrete diodes featuring 5V and 16V voltage ratings across 2 tier-B parts.",
+ "description": "2 discrete diode parts for 5V, 16V using SOT-23 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select between 5V and 16V rated parts based on application voltage.",
-  "Match the target PCB layout to either SOT-23-3 footprint variant.",
-  "Verify suitability for tier-B parts sourced from JLCPCB-Kicad-Library."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SOT-23 land pattern is intended."
  ],
  "avoid_when": [
-  "The PCB layout requires a footprint other than SOT-23.",
-  "The application requires voltage ratings other than 5V or 16V.",
-  "Designs require higher quality tier classification than tier B."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SOT-23."
  ],
  "keywords": [
-  "discrete diode",
-  "diode",
-  "sot-23",
-  "sot-23-3",
-  "5v",
-  "16v",
-  "smd",
-  "discrete",
-  "h5vut2u",
-  "sm712",
-  "tvs-bi",
-  "jlcpcb-kicad-library",
   "sot",
   "esd",
+  "5v",
+  "diode",
+  "16v",
   "iec",
   "l2",
   "w1",
@@ -41,7 +32,8 @@
   "tvs",
   "jlcpcb",
   "packages",
-  "20us"
+  "20us",
+  "and"
  ],
  "facts": {
   "package_family": "SOT-23",
@@ -66,7 +58,7 @@
   "tier_counts": {
    "B": 2
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -90,6 +82,6 @@
   "JLCPCB-Kicad-Library/JLCPCB-Diode-Packages/Package, H5VUT2U",
   "JLCPCB-Kicad-Library/JLCPCB-Diode-Packages/TVS-Bi, SM712"
  ],
- "embedding_text": "discrete-diode.sot-23.5v.16v | Discrete Diode | A cluster of SMD SOT-23 discrete diodes featuring 5V and 16V voltage ratings across 2 tier-B parts. | discrete diode diode sot-23 sot-23-3 5v 16v smd discrete h5vut2u sm712 tvs-bi jlcpcb-kicad-library sot esd iec l2 w1 p1 ls2 br tvs jlcpcb packages 20us | SOT-23 | 5V 16V",
+ "embedding_text": "discrete-diode.sot-23.5v.16v | Discrete Diode | 2 discrete diode parts for 5V, 16V using SOT-23 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | sot esd 5v diode 16v iec l2 w1 p1 ls2 br tvs jlcpcb packages 20us and | SOT-23 | 5V 16V",
  "class": "discrete.diode"
 }

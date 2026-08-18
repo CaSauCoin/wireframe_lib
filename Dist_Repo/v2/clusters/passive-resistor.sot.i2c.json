@@ -6,42 +6,34 @@
   "Passive",
   "Resistor"
  ],
- "description": "Surface-mount passive resistor components featuring I2C interface support in SOT-353 (SC-70-5) and SOT-363 (SC-70-6) footprints.",
+ "description": "3 passive resistor parts for I2C using SOT footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select between SOT-353 (SC-70-5) and SOT-363 (SC-70-6) footprint options.",
-  "Verify part model requirements among MCP4017, MCP4018, or MCP4019 variants.",
-  "Confirm that an I2C communication interface is required for the application."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SOT land pattern is intended."
  ],
  "avoid_when": [
-  "Through-hole mounting is required rather than surface-mount (SMD).",
-  "Packages other than SOT-353 or SOT-363 are needed.",
-  "A non-I2C interface or a standard fixed resistor without digital control is required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SOT."
  ],
  "keywords": [
   "sot",
-  "sot-353",
-  "sot-363",
-  "sc-70-5",
-  "sc-70-6",
-  "i2c",
-  "smd",
-  "passive",
-  "resistor",
-  "potentiometer",
-  "digital potentiometer",
-  "mcp4017",
-  "mcp4018",
-  "mcp4019",
   "sc",
+  "potentiometer",
   "digital",
+  "i2c",
   "xxxxlt",
   "low",
   "cost",
   "step",
   "volatile",
   "to",
+  "smd",
   "twi",
-  "pot"
+  "pot",
+  "passive",
+  "resistor"
  ],
  "facts": {
   "package_family": "SOT",
@@ -65,7 +57,7 @@
   "tier_counts": {
    "A": 3
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -98,6 +90,6 @@
   "kicad-symbols/Potentiometer_Digital/MCP4018-xxxxLT",
   "kicad-symbols/Potentiometer_Digital/MCP4019-xxxxLT"
  ],
- "embedding_text": "passive-resistor.sot.i2c | Passive Resistor | Surface-mount passive resistor components featuring I2C interface support in SOT-353 (SC-70-5) and SOT-363 (SC-70-6) footprints. | sot sot-353 sot-363 sc-70-5 sc-70-6 i2c smd passive resistor potentiometer digital potentiometer mcp4017 mcp4018 mcp4019 sc digital xxxxlt low cost step volatile to twi pot | SOT | I2C",
+ "embedding_text": "passive-resistor.sot.i2c | Passive Resistor | 3 passive resistor parts for I2C using SOT footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | sot sc potentiometer digital i2c xxxxlt low cost step volatile to smd twi pot passive resistor | SOT | I2C",
  "class": "passive.resistor"
 }

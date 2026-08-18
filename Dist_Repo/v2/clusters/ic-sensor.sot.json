@@ -6,42 +6,34 @@
   "IC",
   "Sensor"
  ],
- "description": "Cluster of surface-mount sensor ICs using SOT package family footprints including SOT-353_SC-70-5, SOT-553, and SOT-563.",
+ "description": "9 ic sensor parts using SOT footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when requiring surface-mount sensor ICs in SOT packaging.",
-  "Choose for designs utilizing SOT-353_SC-70-5, SOT-553, or SOT-563 footprints.",
-  "Verify part selection within available Tier A symbols from kicad-symbols."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SOT land pattern is intended."
  ],
  "avoid_when": [
-  "Through-hole mounting is required instead of surface-mount.",
-  "The layout requires package families other than SOT.",
-  "Required footprints are not among SOT-353_SC-70-5, SOT-553, or SOT-563."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SOT."
  ],
  "keywords": [
-  "ic",
-  "sensor",
   "sot",
-  "smd",
-  "sot-353",
-  "sc-70-5",
-  "sot-553",
-  "sot-563",
-  "kicad-symbols",
-  "magnetic sensor",
-  "temperature sensor",
-  "ah1806-z",
-  "lm20bim7",
-  "mcp9700ax",
+  "sensor",
   "sc",
   "temperature",
   "to",
   "thermistor",
+  "smd",
+  "ic",
   "accuracy",
   "88a",
   "analog",
   "low",
   "power",
-  "40c"
+  "40c",
+  "in",
+  "hall"
  ],
  "facts": {
   "package_family": "SOT",
@@ -64,7 +56,7 @@
   "tier_counts": {
    "A": 9
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -119,6 +111,6 @@
   "kicad-symbols/Sensor_Temperature/TMP20AIDCK",
   "kicad-symbols/Sensor_Temperature/TMP20AIDRL"
  ],
- "embedding_text": "ic-sensor.sot | IC Sensor | Cluster of surface-mount sensor ICs using SOT package family footprints including SOT-353_SC-70-5, SOT-553, and SOT-563. | ic sensor sot smd sot-353 sc-70-5 sot-553 sot-563 kicad-symbols magnetic sensor temperature sensor ah1806-z lm20bim7 mcp9700ax sc temperature to thermistor accuracy 88a analog low power 40c | SOT | ",
+ "embedding_text": "ic-sensor.sot | IC Sensor | 9 ic sensor parts using SOT footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | sot sensor sc temperature to thermistor smd ic accuracy 88a analog low power 40c in hall | SOT | ",
  "class": "ic.sensor"
 }

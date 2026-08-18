@@ -6,28 +6,21 @@
   "Discrete",
   "Transistor"
  ],
- "description": "Discrete transistor cluster using the VR5K package family and footprint, containing one tier C part from dist-legacy.",
+ "description": "1 discrete transistor parts using VR5K footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Use when a discrete transistor in a VR5K package family or footprint is required.",
-  "Verify pinout and mounting configuration since the mount type is listed as unknown.",
-  "Review tier C part details and legacy distributor source data prior to use."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a VR5K land pattern is intended."
  ],
  "avoid_when": [
-  "The board layout requires a package family other than VR5K.",
-  "Planner-visible parts or higher quality tier components are required.",
-  "Required electrical ratings or package specifications are missing from the entry."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than VR5K."
  ],
  "keywords": [
   "vr5k",
   "discrete",
   "transistor",
-  "discrete transistor",
-  "discrete.transistor",
-  "vr5k footprint",
-  "vr5k package",
-  "dist-legacy",
-  "tier c",
-  "package family vr5k",
   "pad",
   "mm",
   "pitch",
@@ -52,12 +45,12 @@
   "tier_counts": {
    "C": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
   "dist-legacy/VR5K"
  ],
- "embedding_text": "discrete-transistor.vr5k | Discrete Transistor | Discrete transistor cluster using the VR5K package family and footprint, containing one tier C part from dist-legacy. | vr5k discrete transistor discrete transistor discrete.transistor vr5k footprint vr5k package dist-legacy tier c package family vr5k pad mm pitch pins | VR5K | ",
+ "embedding_text": "discrete-transistor.vr5k | Discrete Transistor | 1 discrete transistor parts using VR5K footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | vr5k discrete transistor pad mm pitch pins | VR5K | ",
  "class": "discrete.transistor"
 }

@@ -6,31 +6,19 @@
   "Mechanical",
   "Jumper"
  ],
- "description": "Mechanical jumper component cluster in the JP36 package family comprising 8 tier C parts across JP36 footprint variants including C1C, C1T, C2C, C2T, D1C, D1T, D2C, and D2T.",
+ "description": "8 mechanical jumper parts using JP36 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when requiring a mechanical jumper in the JP36 package family.",
-  "Choose based on the required JP36 footprint variant such as JP36-C1C, JP36-C1T, or JP36-D1C.",
-  "Verify design suitability considering all 8 entries are tier C quality."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a JP36 land pattern is intended."
  ],
  "avoid_when": [
-  "The PCB design requires a package family other than JP36.",
-  "Tier A or Tier B quality parts are required for the project.",
-  "Planner-visible component entries are required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than JP36."
  ],
  "keywords": [
-  "mechanical jumper",
   "jp36",
-  "mechanical.jumper",
-  "jp36-c1c",
-  "jp36-c1t",
-  "jp36-c2c",
-  "jp36-c2t",
-  "jp36-d1c",
-  "jp36-d1t",
-  "jp36-d2c",
-  "jp36-d2t",
-  "tier c",
-  "dist-legacy",
   "mechanical",
   "jumper",
   "pad",
@@ -41,7 +29,10 @@
   "c1t",
   "c2c",
   "c2t",
-  "d1c"
+  "d1c",
+  "d1t",
+  "d2t",
+  "d2c"
  ],
  "facts": {
   "package_family": "JP36",
@@ -69,7 +60,7 @@
   "tier_counts": {
    "C": 8
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
@@ -82,6 +73,6 @@
   "dist-legacy/JP36-D2T",
   "dist-legacy/JP36-D2C"
  ],
- "embedding_text": "mechanical-jumper.jp36 | Mechanical Jumper | Mechanical jumper component cluster in the JP36 package family comprising 8 tier C parts across JP36 footprint variants including C1C, C1T, C2C, C2T, D1C, D1T, D2C, and D2T. | mechanical jumper jp36 mechanical.jumper jp36-c1c jp36-c1t jp36-c2c jp36-c2t jp36-d1c jp36-d1t jp36-d2c jp36-d2t tier c dist-legacy mechanical jumper pad mm pitch pins c1c c1t c2c c2t d1c | JP36 | ",
+ "embedding_text": "mechanical-jumper.jp36 | Mechanical Jumper | 8 mechanical jumper parts using JP36 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | jp36 mechanical jumper pad mm pitch pins c1c c1t c2c c2t d1c d1t d2t d2c | JP36 | ",
  "class": "mechanical.jumper"
 }

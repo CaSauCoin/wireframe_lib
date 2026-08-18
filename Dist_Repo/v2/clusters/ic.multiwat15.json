@@ -5,27 +5,20 @@
  "category_path": [
   "IC"
  ],
- "description": "Integrated circuit cluster containing a single part using the MULTIWAT15 package footprint.",
+ "description": "1 ic parts using MULTIWAT15 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when a MULTIWAT15 footprint is required for the PCB layout.",
-  "Verify part dimensions and pin configuration against design requirements.",
-  "Confirm suitability of tier C quality legacy catalog entries."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a MULTIWAT15 land pattern is intended."
  ],
  "avoid_when": [
-  "Avoid if the design requires a package family other than MULTIWAT15.",
-  "Do not use when explicit electrical parameters or datasheets are required.",
-  "Avoid if legacy catalog sources or tier C parts are unsuited for production."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than MULTIWAT15."
  ],
  "keywords": [
-  "ic",
   "multiwat15",
-  "integrated circuit",
-  "multiwat15 footprint",
-  "multiwat15 package",
-  "package family multiwat15",
-  "dist legacy",
-  "tier c",
-  "unknown mount",
+  "ic",
   "pad",
   "mm",
   "pitch",
@@ -50,12 +43,12 @@
   "tier_counts": {
    "C": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
   "dist-legacy/MULTIWAT15"
  ],
- "embedding_text": "ic.multiwat15 | IC | Integrated circuit cluster containing a single part using the MULTIWAT15 package footprint. | ic multiwat15 integrated circuit multiwat15 footprint multiwat15 package package family multiwat15 dist legacy tier c unknown mount pad mm pitch pins | MULTIWAT15 | ",
+ "embedding_text": "ic.multiwat15 | IC | 1 ic parts using MULTIWAT15 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | multiwat15 ic pad mm pitch pins | MULTIWAT15 | ",
  "class": "ic"
 }

@@ -5,42 +5,34 @@
  "category_path": [
   "IC"
  ],
- "description": "This cluster contains 16 surface-mount 3V IC components in SOT-23 package family footprints.",
+ "description": "16 ic parts for 3V using SOT-23 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Choose when needing a 3V surface-mount IC in an SOT-23 package footprint.",
-  "Verify the specific footprint variant required, such as SOT-23, SOT-23-3, or SOT-23-6.",
-  "Prioritize Tier A parts available from KiCad symbols, DigiKey, or JLCPCB libraries."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SOT-23 land pattern is intended."
  ],
  "avoid_when": [
-  "The PCB layout requires a through-hole or non-SOT-23 package footprint.",
-  "The application requires a voltage facet other than 3V.",
-  "Components outside the IC class are required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SOT-23."
  ],
  "keywords": [
-  "ic",
-  "sot-23",
-  "sot-23-3",
-  "sot-23-6",
-  "3v",
-  "smd",
-  "surface mount",
-  "integrated circuit",
-  "reference voltage",
-  "lm4040dbz-3",
-  "max6035",
-  "max6070",
   "sot",
   "voltage",
   "reference",
+  "3v",
   "precision",
+  "ic",
   "low",
   "to",
+  "smd",
   "noise",
   "high",
   "series",
   "initial",
   "accuracy",
-  "supervisor"
+  "supervisor",
+  "reset"
  ],
  "facts": {
   "package_family": "SOT-23",
@@ -69,7 +61,7 @@
    "A": 15,
    "B": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -131,6 +123,6 @@
   "kicad-symbols/Reference_Voltage/REF35300QDBVR",
   "JLCPCB-Kicad-Library/2868666/Ref, 3V, 15mA"
  ],
- "embedding_text": "ic.sot-23.3v | IC | This cluster contains 16 surface-mount 3V IC components in SOT-23 package family footprints. | ic sot-23 sot-23-3 sot-23-6 3v smd surface mount integrated circuit reference voltage lm4040dbz-3 max6035 max6070 sot voltage reference precision low to noise high series initial accuracy supervisor | SOT-23 | 3V",
+ "embedding_text": "ic.sot-23.3v | IC | 16 ic parts for 3V using SOT-23 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | sot voltage reference 3v precision ic low to smd noise high series initial accuracy supervisor reset | SOT-23 | 3V",
  "class": "ic"
 }

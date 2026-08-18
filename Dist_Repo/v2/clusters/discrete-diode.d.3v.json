@@ -6,44 +6,34 @@
   "Discrete",
   "Diode"
  ],
- "description": "Cluster of 47 discrete diode parts tagged with the 3V facet in the D package family, spanning SMD and through-hole footprints such as SOD-123, SOD-323, MELF variants, and DO-35/DO-41/DO-34 zener-style outlines.",
+ "description": "47 discrete diode parts for 3V using D footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Match the exact footprint (e.g. D_SOD-123 vs D_MiniMELF vs D_DO-35_SOD27) to the intended PCB land pattern",
-  "Prefer tier A entries; only 1 of 47 parts is tier B",
-  "Confirm mount type (smd or through_hole) fits the assembly process",
-  "Cross-check source library (kicad-symbols, Alternate-KiCad-Library, JLCPCB-Kicad-Library) for trust level"
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a D land pattern is intended."
  ],
  "avoid_when": [
-  "The design needs a package outside the D family",
-  "The 3V facet does not match the required diode voltage rating for the application",
-  "The symbol-footprint pairing has not been verified against the datasheet",
-  "A specific diode type (zener vs schottky vs general-purpose) is required but not confirmed for the chosen part"
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than D."
  ],
  "keywords": [
   "diode",
-  "discrete diode",
-  "3v",
-  "d package",
-  "sod-123",
-  "sod-323",
-  "sod-523",
-  "minimelf",
-  "micromelf",
-  "melf",
-  "do-35",
-  "do-41",
-  "do-34",
-  "smd diode",
-  "through hole diode",
   "zener",
-  "kicad symbols",
-  "jlcpcb",
+  "3v",
   "sod",
   "discrete",
   "akl",
   "alternate",
   "kicad",
-  "library"
+  "library",
+  "do",
+  "500mw",
+  "horizontal",
+  "62mm",
+  "323f",
+  "sod27",
+  "c3v0"
  ],
  "facts": {
   "package_family": "D",
@@ -81,7 +71,7 @@
    "A": 46,
    "B": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -174,6 +164,6 @@
   "JLCPCB-Kicad-Library/JLCPCB-Diodes/Zener,MM1Z6V2",
   "Alternate-KiCad-Library/Diode_Zener_AKL/BZX884-C3V0"
  ],
- "embedding_text": "discrete-diode.d.3v | Discrete Diode | Cluster of 47 discrete diode parts tagged with the 3V facet in the D package family, spanning SMD and through-hole footprints such as SOD-123, SOD-323, MELF variants, and DO-35/DO-41/DO-34 zener-style outlines. | diode discrete diode 3v d package sod-123 sod-323 sod-523 minimelf micromelf melf do-35 do-41 do-34 smd diode through hole diode zener kicad symbols jlcpcb sod discrete akl alternate kicad library | D | 3V",
+ "embedding_text": "discrete-diode.d.3v | Discrete Diode | 47 discrete diode parts for 3V using D footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | diode zener 3v sod discrete akl alternate kicad library do 500mw horizontal 62mm 323f sod27 c3v0 | D | 3V",
  "class": "discrete.diode"
 }

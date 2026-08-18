@@ -6,35 +6,27 @@
   "IC",
   "Microcontroller"
  ],
- "description": "Cluster of 75 surface-mount USB microcontroller ICs in QFN package variants from KiCad symbols.",
+ "description": "75 ic microcontroller parts for USB using QFN footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select based on required QFN pin count, package dimensions, pitch, and exposed pad size.",
-  "Choose between Tier A (36 parts) and Tier B (39 parts) quality entries.",
-  "Verify the specific QFN footprint variant required for SMD mounting."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a QFN land pattern is intended."
  ],
  "avoid_when": [
-  "Do not use when a package family other than QFN or non-SMD mounting is required.",
-  "Avoid when USB facet functionality is not needed for the MCU application.",
-  "Avoid if target electrical specifications or pinouts are not verified in part data."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than QFN."
  ],
  "keywords": [
-  "ic",
-  "mcu",
-  "microcontroller",
-  "usb",
   "qfn",
-  "smd",
-  "wqfn",
-  "drqfn",
-  "1ep",
-  "kicad-symbols",
-  "nxp",
-  "microchip",
-  "mc9s08",
-  "qfn-48",
+  "usb",
+  "microcontroller",
   "flash",
   "kinetis",
+  "mcu",
+  "1ep",
   "p0",
+  "ic",
   "nolead",
   "sram",
   "5mm",
@@ -75,7 +67,7 @@
    "A": 36,
    "B": 39
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -196,6 +188,6 @@
   "kicad-symbols/MCU_Microchip_PIC18/PIC18LF4550-IML",
   "kicad-symbols/MCU_Microchip_PIC18/PIC18LF4553-IML"
  ],
- "embedding_text": "ic-mcu.qfn.usb | IC Microcontroller | Cluster of 75 surface-mount USB microcontroller ICs in QFN package variants from KiCad symbols. | ic mcu microcontroller usb qfn smd wqfn drqfn 1ep kicad-symbols nxp microchip mc9s08 qfn-48 flash kinetis p0 nolead sram 5mm kb arm cortex bit | QFN | USB",
+ "embedding_text": "ic-mcu.qfn.usb | IC Microcontroller | 75 ic microcontroller parts for USB using QFN footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | qfn usb microcontroller flash kinetis mcu 1ep p0 ic nolead sram 5mm kb arm cortex bit | QFN | USB",
  "class": "ic.mcu"
 }

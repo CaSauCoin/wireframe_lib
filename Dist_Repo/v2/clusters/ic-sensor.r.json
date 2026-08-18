@@ -6,42 +6,34 @@
   "IC",
   "Sensor"
  ],
- "description": "Cluster of 9 through-hole optical light-dependent resistor (LDR) sensor parts in package family R with vertical and horizontal footprint options.",
+ "description": "9 ic sensor parts using R footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Match required pitch and body dimensions from available vertical or horizontal LDR footprints.",
-  "Confirm required pin pitch like 2.54mm, 3mm, 3.4mm, 3.5mm, or 7.6mm.",
-  "Select specific tier A part numbers such as A1050, A1060, A9013, A9050, or A9060."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a R land pattern is intended."
  ],
  "avoid_when": [
-  "Surface-mount layout (SMD) is required.",
-  "Footprints other than through-hole R_LDR series are needed.",
-  "Electrical parameter verification requires unstated datasheet specifications."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than R."
  ],
  "keywords": [
-  "ic",
-  "sensor",
-  "ic sensor",
-  "ldr",
-  "optical sensor",
-  "through hole",
-  "package family r",
-  "r_ldr",
-  "vertical mount",
-  "horizontal mount",
-  "a1050",
-  "a1060",
-  "a9013",
-  "a9050",
-  "a9060",
   "resistor",
+  "sensor",
   "light",
   "dependent",
+  "ldr",
   "optical",
   "photo",
+  "ic",
   "4mm",
   "vertical",
   "1mm",
-  "p3"
+  "p3",
+  "0x4",
+  "p3mm",
+  "ldr5x4",
+  "5mm"
  ],
  "facts": {
   "package_family": "R",
@@ -67,7 +59,7 @@
   "tier_counts": {
    "A": 9
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -122,6 +114,6 @@
   "kicad-symbols/Sensor_Optical/M9960",
   "kicad-symbols/Sensor_Optical/VT93xx"
  ],
- "embedding_text": "ic-sensor.r | IC Sensor | Cluster of 9 through-hole optical light-dependent resistor (LDR) sensor parts in package family R with vertical and horizontal footprint options. | ic sensor ic sensor ldr optical sensor through hole package family r r_ldr vertical mount horizontal mount a1050 a1060 a9013 a9050 a9060 resistor light dependent optical photo 4mm vertical 1mm p3 | R | ",
+ "embedding_text": "ic-sensor.r | IC Sensor | 9 ic sensor parts using R footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | resistor sensor light dependent ldr optical photo ic 4mm vertical 1mm p3 0x4 p3mm ldr5x4 5mm | R | ",
  "class": "ic.sensor"
 }

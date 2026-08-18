@@ -6,31 +6,22 @@
   "IC",
   "Analog"
  ],
- "description": "Analog IC cluster containing 20V surface-mount components in SO-14 packages with 1.27mm pitch, including CD4066BM and CD4066BNS.",
+ "description": "2 ic analog parts for 20V using SO footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select based on required package dimensions: SO-14 3.9x8.65mm (CD4066BM) or SO-14 5.3x10.2mm (CD4066BNS).",
-  "Prefer Tier A component CD4066BM over Tier B component CD4066BNS.",
-  "Ensure compatibility with 1.27mm pitch SMD land patterns."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SO land pattern is intended."
  ],
  "avoid_when": [
-  "Through-hole or non-SMD mounting is required.",
-  "The PCB design requires footprint packages other than SO-14.",
-  "Voltage requirements differ from the specified 20V rating."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SO."
  ],
  "keywords": [
-  "ic",
-  "analog",
-  "20v",
   "so",
-  "so-14",
-  "smd",
-  "cd4066bm",
-  "cd4066bns",
-  "1.27mm",
-  "so-14_3.9x8.65mm",
-  "so-14_5.3x10.2mm",
-  "kicad-symbols",
+  "analog",
   "switch",
+  "20v",
   "spst",
   "quad",
   "9x8",
@@ -41,6 +32,7 @@
   "multiplexer",
   "mux",
   "amux",
+  "ic",
   "3x10"
  ],
  "facts": {
@@ -66,7 +58,7 @@
    "A": 1,
    "B": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -90,6 +82,6 @@
   "kicad-symbols/Analog_Switch/CD4066BM",
   "kicad-symbols/Analog_Switch/CD4066BNS"
  ],
- "embedding_text": "ic-analog.so.20v | IC Analog | Analog IC cluster containing 20V surface-mount components in SO-14 packages with 1.27mm pitch, including CD4066BM and CD4066BNS. | ic analog 20v so so-14 smd cd4066bm cd4066bns 1.27mm so-14_3.9x8.65mm so-14_5.3x10.2mm kicad-symbols switch spst quad 9x8 65mm p1 27mm selector multiplexer mux amux 3x10 | SO | 20V",
+ "embedding_text": "ic-analog.so.20v | IC Analog | 2 ic analog parts for 20V using SO footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | so analog switch 20v spst quad 9x8 65mm p1 27mm selector multiplexer mux amux ic 3x10 | SO | 20V",
  "class": "ic.analog"
 }

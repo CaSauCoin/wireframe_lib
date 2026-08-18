@@ -5,30 +5,25 @@
  "category_path": [
   "IC"
  ],
- "description": "Integrated circuit (IC) cluster containing 2 tier C parts using the IDE package family and IDE footprint.",
+ "description": "2 ic parts using IDE footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Use when designing with an IDE package family or land pattern.",
-  "Review tier C part details and legacy distributor sources before selection.",
-  "Confirm pin and footprint details since mounting type is listed as unknown."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a IDE land pattern is intended."
  ],
  "avoid_when": [
-  "The circuit design requires package families other than IDE.",
-  "Parts with higher quality tier ratings or planner visibility are required.",
-  "An unknown mount type cannot be accepted for assembly requirements."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than IDE."
  ],
  "keywords": [
-  "ic",
   "ide",
-  "ide package",
-  "ide footprint",
-  "integrated circuit",
-  "tier c",
-  "dist-legacy",
+  "ic",
   "10x2",
   "pad",
-  "pins",
   "mm",
-  "pitch"
+  "pitch",
+  "pins"
  ],
  "facts": {
   "package_family": "IDE",
@@ -49,13 +44,13 @@
   "tier_counts": {
    "C": 2
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
   "dist-legacy/IDE 10",
   "dist-legacy/IDE 10x2"
  ],
- "embedding_text": "ic.ide | IC | Integrated circuit (IC) cluster containing 2 tier C parts using the IDE package family and IDE footprint. | ic ide ide package ide footprint integrated circuit tier c dist-legacy 10x2 pad pins mm pitch | IDE | ",
+ "embedding_text": "ic.ide | IC | 2 ic parts using IDE footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | ide ic 10x2 pad mm pitch pins | IDE | ",
  "class": "ic"
 }

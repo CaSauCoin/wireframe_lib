@@ -6,35 +6,27 @@
   "IC",
   "Memory"
  ],
- "description": "Surface-mount SOIC memory IC cluster supporting SPI communication with 1.8V and 3.3V facets, featuring Tier A symbol MB85RS2MT.",
+ "description": "1 ic memory parts for 3.3V, SPI, 1.8V using SOIC footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select for surface-mount memory IC applications requiring a SOIC package, such as SOIC-8_5.3x5.3mm_P1.27mm.",
-  "Choose when requiring SPI bus communication with 1.8V or 3.3V operating facets.",
-  "Use when requiring Tier A rated KiCad memory symbols such as MB85RS2MT."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SOIC land pattern is intended."
  ],
  "avoid_when": [
-  "Avoid when the board layout requires pin-through-hole mounting or package families other than SOIC.",
-  "Do not use if the system requires non-SPI interfaces or operating voltage facets other than 1.8V or 3.3V.",
-  "Avoid if a specific memory density or electrical rating not stated in the cluster facts is required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SOIC."
  ],
  "keywords": [
-  "ic",
-  "memory",
   "soic",
-  "spi",
-  "3.3v",
-  "1.8v",
-  "smd",
-  "mb85rs2mt",
-  "soic-8_5.3x5.3mm_p1.27mm",
-  "kicad",
-  "ic.memory",
-  "tier a",
   "sop",
+  "memory",
   "so",
+  "spi",
   "8v",
   "w8",
   "3v",
+  "mb85rs2mt",
   "nvram",
   "feram",
   "with",
@@ -66,7 +58,7 @@
   "tier_counts": {
    "A": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -81,6 +73,6 @@
  "part_ids": [
   "kicad-symbols/Memory_NVRAM/MB85RS2MT"
  ],
- "embedding_text": "ic-memory.soic.3v3.spi | IC Memory | Surface-mount SOIC memory IC cluster supporting SPI communication with 1.8V and 3.3V facets, featuring Tier A symbol MB85RS2MT. | ic memory soic spi 3.3v 1.8v smd mb85rs2mt soic-8_5.3x5.3mm_p1.27mm kicad ic.memory tier a sop so 8v w8 3v nvram feram with interface 2mbit 256k to | SOIC | 3.3V SPI 1.8V",
+ "embedding_text": "ic-memory.soic.3v3.spi | IC Memory | 1 ic memory parts for 3.3V, SPI, 1.8V using SOIC footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | soic sop memory so spi 8v w8 3v mb85rs2mt nvram feram with interface 2mbit 256k to | SOIC | 3.3V SPI 1.8V",
  "class": "ic.memory"
 }

@@ -6,30 +6,19 @@
   "Discrete",
   "Transistor"
  ],
- "description": "Cluster of 17 discrete transistor parts using Jac package family footprints with through-hole or unknown mounting options.",
+ "description": "17 discrete transistor parts using Jac footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when a discrete transistor requiring a Jac family footprint is needed.",
-  "Choose between specific footprints such as Jac, JAC_PWR1, JAC_PWR2, or JAC_PWRS2 series.",
-  "Check part quality tier (Tier B or C) and library source."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a Jac land pattern is intended."
  ],
  "avoid_when": [
-  "Do not use if the board design requires a package family other than Jac.",
-  "Avoid if surface mount mounting is required.",
-  "Avoid when parts must meet Tier A quality standards."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than Jac."
  ],
  "keywords": [
-  "discrete transistor",
   "jac",
-  "discrete.transistor",
-  "through_hole",
-  "jac_pwr07",
-  "jac_pwr1",
-  "jac_pwr2",
-  "jac_pwrs2",
-  "jac_pwrs2p5",
-  "chilaboard-altium-library",
-  "dist-legacy",
-  "jac package",
   "transistor",
   "discrete",
   "pwrs2",
@@ -41,7 +30,10 @@
   "pad",
   "pins",
   "pwrs2p5",
-  "pj011"
+  "pj011",
+  "ac",
+  "jack",
+  "connector"
  ],
  "facts": {
   "package_family": "Jac",
@@ -76,7 +68,7 @@
    "B": 2,
    "C": 15
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -115,6 +107,6 @@
   "chilaboard-altium-library/JAC_PWRS2_PJ064/JAC_PWRS2_PJ064",
   "chilaboard-altium-library/JAC_PWRS2_PJ065/JAC_PWRS2_PJ065"
  ],
- "embedding_text": "discrete-transistor.jac | Discrete Transistor | Cluster of 17 discrete transistor parts using Jac package family footprints with through-hole or unknown mounting options. | discrete transistor jac discrete.transistor through_hole jac_pwr07 jac_pwr1 jac_pwr2 jac_pwrs2 jac_pwrs2p5 chilaboard-altium-library dist-legacy jac package transistor discrete pwrs2 pwr2 pitch mm through hole pad pins pwrs2p5 pj011 | Jac | ",
+ "embedding_text": "discrete-transistor.jac | Discrete Transistor | 17 discrete transistor parts using Jac footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | jac transistor discrete pwrs2 pwr2 pitch mm through hole pad pins pwrs2p5 pj011 ac jack connector | Jac | ",
  "class": "discrete.transistor"
 }

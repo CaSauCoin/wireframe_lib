@@ -6,44 +6,34 @@
   "Discrete",
   "BJT"
  ],
- "description": "Cluster of 2 discrete BJT parts (HFA3128RZ, HFA3127RZ) tagged for the 8V facet, both tier A, using the QFN-16-1EP_3x3mm_P0.5mm_EP1.7x1.7mm SMD footprint from Alternate-KiCad-Library.",
+ "description": "2 discrete bjt parts for 8V using QFN footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Both parts are tier A; HFA3128RZ scores 100 vs HFA3127RZ's 86",
-  "Confirm exact footprint match to QFN-16-1EP_3x3mm_P0.5mm_EP1.7x1.7mm before use",
-  "Both parts share the same footprint, so selection may hinge on part-specific data not listed here",
-  "review_status is 'generated' — verify against source before committing to a design"
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a QFN land pattern is intended."
  ],
  "avoid_when": [
-  "Design requires a footprint other than QFN-16-1EP_3x3mm_P0.5mm_EP1.7x1.7mm",
-  "A part sourced outside Alternate-KiCad-Library is required",
-  "Electrical requirements beyond the stated 8V facet cannot be confirmed from the part record",
-  "Generated/unreviewed data is not acceptable for the design stage"
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than QFN."
  ],
  "keywords": [
   "transistor",
-  "bjt",
-  "discrete bjt",
   "qfn",
-  "qfn-16",
-  "qfn16",
-  "8v",
-  "smd",
-  "hfa3128rz",
-  "hfa3127rz",
-  "tier a",
-  "alternate-kicad-library",
-  "3x3mm",
-  "p0.5mm",
-  "ep1.7x1.7mm",
-  "1ep",
-  "discrete",
-  "generated",
+  "bjt",
   "array",
+  "8v",
   "akl",
+  "qfn16",
   "65ma",
   "150mw",
   "5ghz",
-  "alternate"
+  "alternate",
+  "kicad",
+  "library",
+  "1ep",
+  "3x3mm",
+  "p0"
  ],
  "facts": {
   "package_family": "QFN",
@@ -66,7 +56,7 @@
   "tier_counts": {
    "A": 2
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -90,6 +80,6 @@
   "Alternate-KiCad-Library/Transistor_BJT_AKL/HFA3128RZ",
   "Alternate-KiCad-Library/Transistor_BJT_AKL/HFA3127RZ"
  ],
- "embedding_text": "discrete-bjt.qfn.8v | Discrete BJT | Cluster of 2 discrete BJT parts (HFA3128RZ, HFA3127RZ) tagged for the 8V facet, both tier A, using the QFN-16-1EP_3x3mm_P0.5mm_EP1.7x1.7mm SMD footprint from Alternate-KiCad-Library. | transistor bjt discrete bjt qfn qfn-16 qfn16 8v smd hfa3128rz hfa3127rz tier a alternate-kicad-library 3x3mm p0.5mm ep1.7x1.7mm 1ep discrete generated array akl 65ma 150mw 5ghz alternate | QFN | 8V",
+ "embedding_text": "discrete-bjt.qfn.8v | Discrete BJT | 2 discrete bjt parts for 8V using QFN footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | transistor qfn bjt array 8v akl qfn16 65ma 150mw 5ghz alternate kicad library 1ep 3x3mm p0 | QFN | 8V",
  "class": "discrete.bjt"
 }

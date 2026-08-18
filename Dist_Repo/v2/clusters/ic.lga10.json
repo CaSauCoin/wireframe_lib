@@ -5,28 +5,21 @@
  "category_path": [
   "IC"
  ],
- "description": "Integrated circuit cluster containing 1 tier C part using the LGA10 package family and LGA10_BMP390 footprint.",
+ "description": "1 ic parts using LGA10 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Verify compatibility with the LGA10 package family and LGA10_BMP390 footprint.",
-  "Note that the cluster currently contains a single tier C part.",
-  "Check dist-legacy source data before committing to design."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a LGA10 land pattern is intended."
  ],
  "avoid_when": [
-  "Designs require packages other than LGA10.",
-  "Higher quality tiers or planner-visible parts are required.",
-  "The footprint LGA10_BMP390 does not match the target component layout."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than LGA10."
  ],
  "keywords": [
-  "ic",
   "lga10",
-  "lga10_bmp390",
   "bmp390",
-  "lga10 package",
-  "lga10 footprint",
-  "ic lga10",
-  "tier c",
-  "dist-legacy",
-  "package family lga10",
+  "ic",
   "pad",
   "mm",
   "pitch",
@@ -51,12 +44,12 @@
   "tier_counts": {
    "C": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
   "dist-legacy/LGA10_BMP390"
  ],
- "embedding_text": "ic.lga10 | IC | Integrated circuit cluster containing 1 tier C part using the LGA10 package family and LGA10_BMP390 footprint. | ic lga10 lga10_bmp390 bmp390 lga10 package lga10 footprint ic lga10 tier c dist-legacy package family lga10 pad mm pitch pins | LGA10 | ",
+ "embedding_text": "ic.lga10 | IC | 1 ic parts using LGA10 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | lga10 bmp390 ic pad mm pitch pins | LGA10 | ",
  "class": "ic"
 }

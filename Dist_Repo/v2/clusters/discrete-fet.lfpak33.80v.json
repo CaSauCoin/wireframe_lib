@@ -6,30 +6,21 @@
   "Discrete",
   "FET"
  ],
- "description": "A cluster of 6 Tier-A surface-mount 80V discrete FET components using LFPAK33 footprints.",
+ "description": "6 discrete fet parts for 80V using LFPAK33 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Requires an 80V rated surface-mount discrete FET.",
-  "Target footprint family is LFPAK33.",
-  "Selecting among Tier-A KiCad symbol parts such as BUK7M17-80EX or BUK9M23-80EX."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a LFPAK33 land pattern is intended."
  ],
  "avoid_when": [
-  "A non-SMD mounting type is required.",
-  "The PCB design requires a package footprint other than LFPAK33.",
-  "Voltage rating requirement is not 80V."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than LFPAK33."
  ],
  "keywords": [
-  "discrete fet",
-  "fet",
   "lfpak33",
+  "fet",
   "80v",
-  "smd",
-  "buk7m17-80ex",
-  "buk7m22-80ex",
-  "buk7m27-80ex",
-  "buk9m23-80ex",
-  "buk9m28-80ex",
-  "discrete",
-  "kicad-symbols",
   "mosfet",
   "80ex",
   "transistor",
@@ -41,7 +32,8 @@
   "qqd",
   "to",
   "sot",
-  "power"
+  "power",
+  "mos"
  ],
  "facts": {
   "package_family": "LFPAK33",
@@ -64,7 +56,7 @@
   "tier_counts": {
    "A": 6
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -116,6 +108,6 @@
   "kicad-symbols/Transistor_FET/BUK9M28-80EX",
   "kicad-symbols/Transistor_FET/BUK9M35-80EX"
  ],
- "embedding_text": "discrete-fet.lfpak33.80v | Discrete FET | A cluster of 6 Tier-A surface-mount 80V discrete FET components using LFPAK33 footprints. | discrete fet fet lfpak33 80v smd buk7m17-80ex buk7m22-80ex buk7m27-80ex buk9m23-80ex buk9m28-80ex discrete kicad-symbols mosfet 80ex transistor id vds channel trenchmos ron qqd to sot power | LFPAK33 | 80V",
+ "embedding_text": "discrete-fet.lfpak33.80v | Discrete FET | 6 discrete fet parts for 80V using LFPAK33 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | lfpak33 fet 80v mosfet 80ex transistor id vds channel trenchmos ron qqd to sot power mos | LFPAK33 | 80V",
  "class": "discrete.fet"
 }

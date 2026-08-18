@@ -6,44 +6,34 @@
   "Discrete",
   "BJT"
  ],
- "description": "Discrete BJT cluster for 40V designs using SOIC-14 SMD packages, currently holding one tier-A part (MAT14, score 88) from the Alternate-KiCad-Library source.",
+ "description": "1 discrete bjt parts for 40V using SOIC footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Only one part available (MAT14), tier A, score 88",
-  "Confirm the SOIC-14_3.9x8.7mm_P1.27mm footprint matches your PCB land pattern",
-  "Check that the 40V facet matches your circuit's required rating",
-  "Single-source cluster (Alternate-KiCad-Library) — verify source trust for your workflow"
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SOIC land pattern is intended."
  ],
  "avoid_when": [
-  "Design requires a footprint other than SOIC-14_3.9x8.7mm_P1.27mm",
-  "Circuit needs a voltage rating other than 40V",
-  "You need multiple candidate parts to compare — only one is present",
-  "The symbol-footprint pairing has not been independently verified"
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SOIC."
  ],
  "keywords": [
   "transistor",
-  "bjt",
-  "discrete bjt",
   "soic",
-  "soic-14",
   "mat14",
-  "40v",
-  "smd",
-  "discrete",
-  "alternate-kicad-library",
-  "akl",
-  "3.9x8.7mm",
-  "p1.27mm",
-  "tier a",
-  "package soic",
-  "footprint soic-14",
+  "bjt",
   "so",
   "array",
+  "40v",
+  "akl",
   "4xnpn",
   "matched",
   "30ma",
   "alternate",
   "kicad",
-  "library"
+  "library",
+  "9x8",
+  "7mm"
  ],
  "facts": {
   "package_family": "SOIC",
@@ -66,7 +56,7 @@
   "tier_counts": {
    "A": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -81,6 +71,6 @@
  "part_ids": [
   "Alternate-KiCad-Library/Transistor_BJT_AKL/MAT14"
  ],
- "embedding_text": "discrete-bjt.soic.40v | Discrete BJT | Discrete BJT cluster for 40V designs using SOIC-14 SMD packages, currently holding one tier-A part (MAT14, score 88) from the Alternate-KiCad-Library source. | transistor bjt discrete bjt soic soic-14 mat14 40v smd discrete alternate-kicad-library akl 3.9x8.7mm p1.27mm tier a package soic footprint soic-14 so array 4xnpn matched 30ma alternate kicad library | SOIC | 40V",
+ "embedding_text": "discrete-bjt.soic.40v | Discrete BJT | 1 discrete bjt parts for 40V using SOIC footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | transistor soic mat14 bjt so array 40v akl 4xnpn matched 30ma alternate kicad library 9x8 7mm | SOIC | 40V",
  "class": "discrete.bjt"
 }

@@ -6,29 +6,22 @@
   "Discrete",
   "Transistor"
  ],
- "description": "Discrete transistor cluster containing 1 part in the EQ package family using an EQ-711L footprint.",
+ "description": "1 discrete transistor parts using EQ footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Use when an EQ package family part with an EQ-711L footprint is required.",
-  "Check footprint dimensions and pin-to-pad mappings before layout.",
-  "Verify part suitability given the tier C generated quality status."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a EQ land pattern is intended."
  ],
  "avoid_when": [
-  "The design requires a package family other than EQ.",
-  "Unreviewed tier C catalog data is not acceptable for production.",
-  "Specific electrical limits or mount details not documented in the cluster facts are needed."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than EQ."
  ],
  "keywords": [
-  "discrete transistor",
   "eq",
-  "eq-711l",
+  "711l",
   "discrete",
   "transistor",
-  "eq package",
-  "eq package family",
-  "eq-711l footprint",
-  "dist-legacy",
-  "tier c",
-  "711l",
   "pad",
   "mm",
   "pitch",
@@ -53,12 +46,12 @@
   "tier_counts": {
    "C": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
   "dist-legacy/EQ-711L"
  ],
- "embedding_text": "discrete-transistor.eq | Discrete Transistor | Discrete transistor cluster containing 1 part in the EQ package family using an EQ-711L footprint. | discrete transistor eq eq-711l discrete transistor eq package eq package family eq-711l footprint dist-legacy tier c 711l pad mm pitch pins | EQ | ",
+ "embedding_text": "discrete-transistor.eq | Discrete Transistor | 1 discrete transistor parts using EQ footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | eq 711l discrete transistor pad mm pitch pins | EQ | ",
  "class": "discrete.transistor"
 }

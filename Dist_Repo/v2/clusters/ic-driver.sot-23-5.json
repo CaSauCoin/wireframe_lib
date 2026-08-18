@@ -6,31 +6,20 @@
   "IC",
   "Driver"
  ],
- "description": "Surface-mount driver IC cluster featuring 4 tier A KiCad library parts including MCP1415 and MCP1416 variants in SOT-23-5 footprints.",
+ "description": "4 ic driver parts using SOT-23-5 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when requiring a driver IC in an SMD SOT-23-5 footprint.",
-  "Choose between MCP1415, MCP1415R, MCP1416, and MCP1416R variants based on application needs.",
-  "Verify exact pin mapping and part specifications prior to PCB placement."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SOT-23-5 land pattern is intended."
  ],
  "avoid_when": [
-  "A package family other than SOT-23-5 is required.",
-  "Non-SMD or through-hole mounting is specified for the design.",
-  "Electrical ratings or functional parameters are not verified against part documentation."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SOT-23-5."
  ],
  "keywords": [
-  "ic driver",
-  "driver ic",
-  "sot-23-5",
-  "sot23-5",
-  "smd",
-  "mcp1415",
-  "mcp1415r",
-  "mcp1416",
-  "mcp1416r",
-  "kicad-symbols",
-  "driver",
-  "ic",
   "sot",
+  "driver",
   "mosfet",
   "fet",
   "5a",
@@ -41,7 +30,10 @@
   "inverting",
   "output",
   "to",
-  "gate"
+  "smd",
+  "gate",
+  "ic",
+  "non"
  ],
  "facts": {
   "package_family": "SOT-23-5",
@@ -62,7 +54,7 @@
   "tier_counts": {
    "A": 4
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -104,6 +96,6 @@
   "kicad-symbols/Driver_FET/MCP1416",
   "kicad-symbols/Driver_FET/MCP1416R"
  ],
- "embedding_text": "ic-driver.sot-23-5 | IC Driver | Surface-mount driver IC cluster featuring 4 tier A KiCad library parts including MCP1415 and MCP1416 variants in SOT-23-5 footprints. | ic driver driver ic sot-23-5 sot23-5 smd mcp1415 mcp1415r mcp1416 mcp1416r kicad-symbols driver ic sot mosfet fet 5a high speed power with inverting output to gate | SOT-23-5 | ",
+ "embedding_text": "ic-driver.sot-23-5 | IC Driver | 4 ic driver parts using SOT-23-5 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | sot driver mosfet fet 5a high speed power with inverting output to smd gate ic non | SOT-23-5 | ",
  "class": "ic.driver"
 }

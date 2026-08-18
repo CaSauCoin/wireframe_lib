@@ -5,42 +5,34 @@
  "category_path": [
   "IC"
  ],
- "description": "Surface-mount IC cluster featuring I2C, buck, and LDO capabilities across QFN footprints including QFN40_32T, QFN35_68T, QFN40_56T, and QFN40_48T.",
+ "description": "6 ic parts for I2C, buck, LDO using QFN footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Match the specific QFN footprint variant such as QFN40_32T, QFN40_48T, QFN40_56T, or QFN35_68T.",
-  "Verify requirement for combined I2C, buck, and LDO integrated circuit functionality.",
-  "Select when surface-mount (SMD) QFN packaging is required."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a QFN land pattern is intended."
  ],
  "avoid_when": [
-  "The board layout requires packages other than QFN.",
-  "The design requires non-SMD or through-hole mounting.",
-  "Integrated I2C, buck, or LDO features are not needed."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than QFN."
  ],
  "keywords": [
-  "ic",
-  "qfn",
   "i2c",
+  "qfn",
   "buck",
+  "ic",
   "ldo",
-  "smd",
-  "qfn40_32t",
-  "qfn35_68t",
-  "qfn40_56t",
-  "qfn40_48t",
-  "rk805",
-  "axp805",
-  "rk808",
-  "chilaboard-altium-library",
-  "surface mount",
   "power",
   "management",
   "pmic",
   "regulators",
+  "rk805",
   "qfn32",
   "and",
   "in",
   "package",
-  "regulator"
+  "regulator",
+  "dc"
  ],
  "facts": {
   "package_family": "QFN",
@@ -68,7 +60,7 @@
   "tier_counts": {
    "B": 6
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -120,6 +112,6 @@
   "chilaboard-altium-library/RK808-D_QFN68/RK808-D_QFN68",
   "chilaboard-altium-library/TPS65910AA1_QFN48/TPS65910AA1_QFN48"
  ],
- "embedding_text": "ic.qfn.i2c.buck | IC | Surface-mount IC cluster featuring I2C, buck, and LDO capabilities across QFN footprints including QFN40_32T, QFN35_68T, QFN40_56T, and QFN40_48T. | ic qfn i2c buck ldo smd qfn40_32t qfn35_68t qfn40_56t qfn40_48t rk805 axp805 rk808 chilaboard-altium-library surface mount power management pmic regulators qfn32 and in package regulator | QFN | I2C buck LDO",
+ "embedding_text": "ic.qfn.i2c.buck | IC | 6 ic parts for I2C, buck, LDO using QFN footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | i2c qfn buck ic ldo power management pmic regulators rk805 qfn32 and in package regulator dc | QFN | I2C buck LDO",
  "class": "ic"
 }

@@ -6,31 +6,22 @@
   "IC",
   "Memory"
  ],
- "description": "Surface-mount memory IC cluster supporting 5V and 5.5V operating voltage facets in TSOP package footprints like TSOP-I-32_18.4x8mm_P0.5mm.",
+ "description": "1 ic memory parts for 5V, 5.5V using TSOP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select for surface-mount memory IC designs operating at 5V or 5.5V.",
-  "Use when requiring a TSOP package family matching TSOP-I-32_18.4x8mm_P0.5mm footprint.",
-  "Prefer tier A entries such as CY62128Exx-xxZ from KiCad symbol libraries."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a TSOP land pattern is intended."
  ],
  "avoid_when": [
-  "Do not use when the layout requires through-hole mounting or non-TSOP packages.",
-  "Avoid when operating supply voltages outside 5V or 5.5V are required.",
-  "Avoid if non-memory IC functionality is needed."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than TSOP."
  ],
  "keywords": [
-  "ic memory",
-  "memory ic",
   "tsop",
-  "5v",
-  "5.5v",
-  "smd",
-  "tsop-i-32_18.4x8mm_p0.5mm",
-  "cy62128exx-xxz",
-  "kicad-symbols",
-  "ram",
-  "memory_ram",
-  "tsop-i-32",
   "memory",
+  "5v",
+  "ram",
   "cy62128exx",
   "xxz",
   "mbit",
@@ -41,7 +32,8 @@
   "55ns",
   "4x8mm",
   "p0",
-  "5mm"
+  "5mm",
+  "so"
  ],
  "facts": {
   "package_family": "TSOP",
@@ -65,7 +57,7 @@
   "tier_counts": {
    "A": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -80,6 +72,6 @@
  "part_ids": [
   "kicad-symbols/Memory_RAM/CY62128Exx-xxZ"
  ],
- "embedding_text": "ic-memory.tsop.5v.5-5v | IC Memory | Surface-mount memory IC cluster supporting 5V and 5.5V operating voltage facets in TSOP package footprints like TSOP-I-32_18.4x8mm_P0.5mm. | ic memory memory ic tsop 5v 5.5v smd tsop-i-32_18.4x8mm_p0.5mm cy62128exx-xxz kicad-symbols ram memory_ram tsop-i-32 memory cy62128exx xxz mbit 128k bit static vcc 55ns 4x8mm p0 5mm | TSOP | 5V 5.5V",
+ "embedding_text": "ic-memory.tsop.5v.5-5v | IC Memory | 1 ic memory parts for 5V, 5.5V using TSOP footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | tsop memory 5v ram cy62128exx xxz mbit 128k bit static vcc 55ns 4x8mm p0 5mm so | TSOP | 5V 5.5V",
  "class": "ic.memory"
 }

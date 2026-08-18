@@ -6,43 +6,34 @@
   "Discrete",
   "Diode"
  ],
- "description": "Cluster of 7 tier-A discrete diode parts rated 34V in D-family packages, mixing general diode, zener, TVS, and diac types across DO-35, SOD-523, SOD-323, MiniMELF, and P600 footprints.",
+ "description": "7 discrete diode parts for 34V using D footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Match the exact footprint (SOD-523, SOD-323, DO-35, MiniMELF, or P600) to your board land pattern.",
-  "Confirm device function (general diode, zener, TVS, or diac) since this cluster mixes different diode types.",
-  "Check mount type (smd or through_hole) against your assembly process.",
-  "Cross-check source library (Alternate-KiCad-Library, kicad-symbols, JLCPCB-Kicad-Library) for symbol/footprint trust."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a D land pattern is intended."
  ],
  "avoid_when": [
-  "The specific diode function needed (rectifier, zener, TVS, diac) is not confirmed for the chosen part.",
-  "Your required package is not one of the listed D-family footprints.",
-  "Mount type (smd vs through_hole) does not match the target assembly."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than D."
  ],
  "keywords": [
   "diode",
   "34v",
-  "d package",
   "tvs",
-  "zener",
-  "diac",
-  "do-35",
-  "sod-523",
-  "sod-323",
-  "minimelf",
-  "p600",
-  "axial",
-  "smd",
-  "through hole",
-  "discrete",
-  "kicad",
-  "jlcpcb",
-  "alternate-kicad-library",
   "horizontal",
+  "diac",
+  "discrete",
+  "p600",
   "do",
   "akl",
   "sod",
   "alternate",
-  "library"
+  "kicad",
+  "library",
+  "series",
+  "axial",
+  "pin"
  ],
  "facts": {
   "package_family": "D",
@@ -74,7 +65,7 @@
   "tier_counts": {
    "A": 7
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -127,6 +118,6 @@
   "Alternate-KiCad-Library/Diac_AKL/DLDB34",
   "JLCPCB-Kicad-Library/JLCPCB-Diodes/Zener,BZT52C36S"
  ],
- "embedding_text": "discrete-diode.d.34v | Discrete Diode | Cluster of 7 tier-A discrete diode parts rated 34V in D-family packages, mixing general diode, zener, TVS, and diac types across DO-35, SOD-523, SOD-323, MiniMELF, and P600 footprints. | diode 34v d package tvs zener diac do-35 sod-523 sod-323 minimelf p600 axial smd through hole discrete kicad jlcpcb alternate-kicad-library horizontal do akl sod alternate library | D | 34V",
+ "embedding_text": "discrete-diode.d.34v | Discrete Diode | 7 discrete diode parts for 34V using D footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | diode 34v tvs horizontal diac discrete p600 do akl sod alternate kicad library series axial pin | D | 34V",
  "class": "discrete.diode"
 }

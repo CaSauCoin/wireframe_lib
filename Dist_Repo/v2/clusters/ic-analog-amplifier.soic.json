@@ -7,42 +7,34 @@
   "Analog",
   "Amplifier"
  ],
- "description": "Surface-mount analog amplifier integrated circuits in SOIC package variants, including 8-pin, 14-pin, 16-pin, and 28-pin footprints.",
+ "description": "28 ic analog amplifier parts using SOIC footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Match the required lead count and footprint dimensions to available SOIC-8, SOIC-14, SOIC-16, or SOIC-28 options.",
-  "Check whether an exposed thermal pad footprint is required, such as SOIC-8-1EP.",
-  "Prefer Tier A parts over Tier B parts within the cluster."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SOIC land pattern is intended."
  ],
  "avoid_when": [
-  "The design requires through-hole mounting rather than surface-mount (SMD).",
-  "The board layout requires package families other than SOIC.",
-  "The required footprint pitch is different from 1.27mm."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SOIC."
  ],
  "keywords": [
   "soic",
-  "ic",
-  "analog",
   "amplifier",
-  "analog amplifier",
-  "smd",
-  "soic-8",
-  "soic-14",
-  "soic-16w",
-  "soic-28w-8",
-  "soic-8-1ep",
-  "1.27mm pitch",
-  "kicad-symbols",
   "so",
   "isolation",
   "p1",
   "27mm",
+  "ic",
+  "analog",
   "current",
   "gain",
   "programmable",
   "akl",
   "alternate",
   "kicad",
-  "library"
+  "library",
+  "9mm"
  ],
  "facts": {
   "package_family": "SOIC",
@@ -71,7 +63,7 @@
    "A": 25,
    "B": 3
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -145,6 +137,6 @@
   "Alternate-KiCad-Library/Amplifier_Isolation_AKL/ISO122U",
   "Alternate-KiCad-Library/Amplifier_Isolation_AKL/ISO124U"
  ],
- "embedding_text": "ic-analog-amplifier.soic | IC Analog Amplifier | Surface-mount analog amplifier integrated circuits in SOIC package variants, including 8-pin, 14-pin, 16-pin, and 28-pin footprints. | soic ic analog amplifier analog amplifier smd soic-8 soic-14 soic-16w soic-28w-8 soic-8-1ep 1.27mm pitch kicad-symbols so isolation p1 27mm current gain programmable akl alternate kicad library | SOIC | ",
+ "embedding_text": "ic-analog-amplifier.soic | IC Analog Amplifier | 28 ic analog amplifier parts using SOIC footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | soic amplifier so isolation p1 27mm ic analog current gain programmable akl alternate kicad library 9mm | SOIC | ",
  "class": "ic.analog.amplifier"
 }

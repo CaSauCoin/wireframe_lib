@@ -5,28 +5,20 @@
  "category_path": [
   "IC"
  ],
- "description": "Cluster of 4 surface-mount IC components using SEAF and SEAF_PLUS footprints from chilaboard-altium-library.",
+ "description": "4 ic parts using SEAF footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when a surface-mount IC with a SEAF or SEAF_PLUS footprint is required.",
-  "Verify compatibility with tier C parts from chilaboard-altium-library.",
-  "Check whether SEAF or SEAF_PLUS footprint variant is needed."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a SEAF land pattern is intended."
  ],
  "avoid_when": [
-  "The PCB design requires through-hole components instead of SMD.",
-  "The required package footprint is something other than SEAF or SEAF_PLUS.",
-  "Parts with a quality tier higher than tier C are required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than SEAF."
  ],
  "keywords": [
-  "ic",
   "seaf",
-  "seaf_plus",
-  "seaf plus",
-  "smd",
-  "surface mount",
-  "chilaboard",
-  "altium",
-  "chilaboard-altium-library",
-  "tier c",
+  "ic",
   "plus",
   "surface",
   "mount",
@@ -55,7 +47,7 @@
   "tier_counts": {
    "C": 4
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
@@ -64,6 +56,6 @@
   "chilaboard-altium-library/SEAF/SEAF",
   "chilaboard-altium-library/SEAF_PLUS/SEAF_PLUS"
  ],
- "embedding_text": "ic.seaf | IC | Cluster of 4 surface-mount IC components using SEAF and SEAF_PLUS footprints from chilaboard-altium-library. | ic seaf seaf_plus seaf plus smd surface mount chilaboard altium chilaboard-altium-library tier c plus surface mount pad mm pitch pins | SEAF | ",
+ "embedding_text": "ic.seaf | IC | 4 ic parts using SEAF footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | seaf ic plus surface mount pad mm pitch pins | SEAF | ",
  "class": "ic"
 }

@@ -6,29 +6,21 @@
   "Passive",
   "Resistor"
  ],
- "description": "Passive resistor cluster containing through-hole parts associated with a 3.3V facet and TE footprints including TE 5413631-1.",
+ "description": "1 passive resistor parts for 3.3V using TE footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when a through-hole passive resistor associated with 3.3V is needed.",
-  "Verify compatibility with the TE 5413631-1 footprint.",
-  "Check part specifications and quality tier ratings before finalizing selection."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a TE land pattern is intended."
  ],
  "avoid_when": [
-  "Surface-mount mounting is required instead of through-hole.",
-  "The design requires footprints outside the TE package family.",
-  "The application does not use 3.3V facet parameters."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than TE."
  ],
  "keywords": [
+  "te",
   "passive",
   "resistor",
-  "passive resistor",
-  "through hole",
-  "through_hole",
-  "3.3v",
-  "3v3",
-  "te",
-  "te 5413631-1",
-  "5413631-1",
-  "celestial altium library",
   "through",
   "hole",
   "pad",
@@ -58,12 +50,12 @@
   "tier_counts": {
    "C": 1
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [],
  "part_ids": [
   "celestial-altium-library/TE 5413631-1/TE_5413631-1"
  ],
- "embedding_text": "passive-resistor.te.3v3 | Passive Resistor | Passive resistor cluster containing through-hole parts associated with a 3.3V facet and TE footprints including TE 5413631-1. | passive resistor passive resistor through hole through_hole 3.3v 3v3 te te 5413631-1 5413631-1 celestial altium library through hole pad mm pitch pins 3v | TE | 3.3V",
+ "embedding_text": "passive-resistor.te.3v3 | Passive Resistor | 1 passive resistor parts for 3.3V using TE footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | te passive resistor through hole pad mm pitch pins 3v | TE | 3.3V",
  "class": "passive.resistor"
 }

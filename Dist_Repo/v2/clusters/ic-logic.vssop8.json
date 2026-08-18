@@ -6,41 +6,34 @@
   "IC",
   "Logic"
  ],
- "description": "Logic integrated circuit components in surface-mount VSSOP8 packaging, featuring 8 tier-B entries sourced from KiCad symbols.",
+ "description": "8 ic logic parts using VSSOP8 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier.",
  "selection_hints": [
-  "Select when needing logic IC parts in surface-mount VSSOP8 packaging.",
-  "Verify exact logic function requirements against representative parts such as 74AUC2G125 or 74LVC2G125.",
-  "Choose when using tier-B logic components from the KiCad symbol library."
+  "Prefer tier A entries with datasheets and exact footprint matches.",
+  "Check pin-to-pad mapping and package dimensions before committing a PCB.",
+  "Use only where a VSSOP8 land pattern is intended."
  ],
  "avoid_when": [
-  "The PCB layout requires package footprints other than VSSOP8.",
-  "Through-hole mounting is required instead of surface mount.",
-  "Components with quality tiers higher than tier B are strictly required."
+  "The required voltage, current, speed or tolerance is not stated by the selected part.",
+  "The symbol-footprint pairing is guessed or flagged for review.",
+  "The board layout needs a package other than VSSOP8."
  ],
  "keywords": [
-  "ic",
-  "logic",
-  "ic.logic",
-  "vssop8",
-  "smd",
-  "kicad-symbols",
-  "74xgxx",
-  "74auc2g125",
-  "74auc2g126",
-  "74auc2g240",
-  "74auc2g241",
-  "74lvc2g125",
   "dual",
   "tri",
   "state",
   "cmos",
+  "vssop8",
+  "74xgxx",
   "buffer",
   "low",
   "voltage",
   "buff",
   "lvc",
+  "ic",
+  "logic",
   "inverter",
-  "inv"
+  "inv",
+  "74auc2g125"
  ],
  "facts": {
   "package_family": "VSSOP8",
@@ -61,7 +54,7 @@
   "tier_counts": {
    "B": 8
   },
-  "review_status": "ai_generated"
+  "review_status": "generated"
  },
  "representative_parts": [
   {
@@ -115,6 +108,6 @@
   "kicad-symbols/74xGxx/74LVC2G240",
   "kicad-symbols/74xGxx/74LVC2G241"
  ],
- "embedding_text": "ic-logic.vssop8 | IC Logic | Logic integrated circuit components in surface-mount VSSOP8 packaging, featuring 8 tier-B entries sourced from KiCad symbols. | ic logic ic.logic vssop8 smd kicad-symbols 74xgxx 74auc2g125 74auc2g126 74auc2g240 74auc2g241 74lvc2g125 dual tri state cmos buffer low voltage buff lvc inverter inv | VSSOP8 | ",
+ "embedding_text": "ic-logic.vssop8 | IC Logic | 8 ic logic parts using VSSOP8 footprints. Choose an entry by electrical rating, exact footprint, source trust and quality tier. | dual tri state cmos vssop8 74xgxx buffer low voltage buff lvc ic logic inverter inv 74auc2g125 | VSSOP8 | ",
  "class": "ic.logic"
 }
