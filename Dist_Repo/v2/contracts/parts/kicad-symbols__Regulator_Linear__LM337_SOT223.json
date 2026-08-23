@@ -1,0 +1,240 @@
+{
+  "contract_schema": 1,
+  "part": {
+    "lib_id": "kicad-symbols/Regulator_Linear/LM337_SOT223",
+    "slug": "kicad-symbols__Regulator_Linear__LM337_SOT223",
+    "name": "LM337_SOT223",
+    "class": "ic.power.ldo",
+    "archetype": "ic.regulator.ldo.adjustable",
+    "family": "reg.ldo.adj",
+    "footprint": "SOT-223-3_TabPin2",
+    "pad_count": 3,
+    "mount": "smd",
+    "datasheet": "http://www.ti.com/lit/ds/symlink/lm337-n.pdf",
+    "description": "Negative 1A 35V Adjustable Linear Regulator, SOT-223",
+    "source": "kicad-symbols"
+  },
+  "domains": [
+    {
+      "id": "VI",
+      "kind": "supply",
+      "ref": "",
+      "v_min": null,
+      "v_nom": null,
+      "v_max": null,
+      "i_typ_ma": null,
+      "provenance": "pattern",
+      "note": ""
+    },
+    {
+      "id": "VO",
+      "kind": "supply",
+      "ref": "",
+      "v_min": null,
+      "v_nom": null,
+      "v_max": null,
+      "i_typ_ma": null,
+      "provenance": "pattern",
+      "note": ""
+    }
+  ],
+  "pins": [
+    {
+      "number": "1",
+      "name": "ADJ",
+      "sym_type": "input",
+      "unit": 1,
+      "role": "feedback",
+      "domain": "",
+      "required": "yes",
+      "polarity": "unknown",
+      "pull": "unknown",
+      "v_abs_max": null,
+      "v_abs_min": null,
+      "i_max_ma": null,
+      "provenance": {
+        "number": "symbol",
+        "name": "symbol",
+        "sym_type": "symbol",
+        "role": "pattern",
+        "required": "pattern"
+      },
+      "matched_pattern": "regulator.feedback",
+      "note": "The node that sets the output voltage. It is high impedance and defines the regulation loop."
+    },
+    {
+      "number": "2",
+      "name": "VI",
+      "sym_type": "power_in",
+      "unit": 1,
+      "role": "power_in",
+      "domain": "VI",
+      "required": "yes",
+      "polarity": "active_high",
+      "pull": "unknown",
+      "v_abs_max": null,
+      "v_abs_min": null,
+      "i_max_ma": null,
+      "provenance": {
+        "number": "symbol",
+        "name": "symbol",
+        "sym_type": "symbol",
+        "role": "pattern",
+        "domain": "pattern",
+        "required": "pattern",
+        "polarity": "pattern"
+      },
+      "matched_pattern": "power.regulator_in",
+      "note": "On a regulator, IN is the unregulated supply. The same name on a logic part is a signal, which is why this rule is scoped."
+    },
+    {
+      "number": "3",
+      "name": "VO",
+      "sym_type": "power_out",
+      "unit": 1,
+      "role": "power_out",
+      "domain": "VO",
+      "required": "yes",
+      "polarity": "active_high",
+      "pull": "unknown",
+      "v_abs_max": null,
+      "v_abs_min": null,
+      "i_max_ma": null,
+      "provenance": {
+        "number": "symbol",
+        "name": "symbol",
+        "sym_type": "symbol",
+        "role": "pattern",
+        "domain": "pattern",
+        "required": "pattern",
+        "polarity": "pattern"
+      },
+      "matched_pattern": "power.regulator_out",
+      "note": "On a regulator, OUT is the rail it produces."
+    }
+  ],
+  "companions": [
+    {
+      "id": "input_cap",
+      "kind": "cap_to_gnd",
+      "scope": "pin",
+      "applies_to": [],
+      "applies_to_roles": [
+        "power_in"
+      ],
+      "value": "1uF",
+      "value_min": "",
+      "value_max": "",
+      "max_distance_mm": 5.0,
+      "count": 1,
+      "severity": "error",
+      "provenance": "archetype",
+      "rationale": "The input capacitor supplies the transient the source's inductance cannot, and stops the regulator oscillating against its own supply lead.",
+      "severity_cap": "error"
+    },
+    {
+      "id": "output_cap",
+      "kind": "cap_to_gnd",
+      "scope": "pin",
+      "applies_to": [],
+      "applies_to_roles": [
+        "power_out"
+      ],
+      "value": "10uF",
+      "value_min": "",
+      "value_max": "",
+      "max_distance_mm": 5.0,
+      "count": 1,
+      "severity": "error",
+      "provenance": "archetype",
+      "rationale": "An LDO's control loop is compensated assuming this capacitor. Omit it and the part does not merely regulate poorly, it oscillates.",
+      "severity_cap": "error"
+    },
+    {
+      "id": "feedback_network",
+      "kind": "feedback_divider",
+      "scope": "pin",
+      "applies_to": [],
+      "applies_to_roles": [
+        "feedback"
+      ],
+      "value": "",
+      "value_min": "",
+      "value_max": "",
+      "max_distance_mm": null,
+      "count": 1,
+      "severity": "error",
+      "provenance": "archetype",
+      "rationale": "On an adjustable part the divider is what sets the output voltage. Without it the feedback pin floats and the output runs to the input rail.",
+      "severity_cap": "error"
+    }
+  ],
+  "rules": [
+    {
+      "id": "power_pins_connected",
+      "kind": "must_connect",
+      "applies_to": [],
+      "applies_to_roles": [
+        "power_in",
+        "ground"
+      ],
+      "params": {},
+      "severity": "error",
+      "provenance": "archetype",
+      "rationale": "A supply or return pin that reaches no net means the part is unpowered.",
+      "severity_cap": "error"
+    },
+    {
+      "id": "supply_domains_consistent",
+      "kind": "domain_consistency",
+      "applies_to": [],
+      "applies_to_roles": [
+        "power_in",
+        "power_out",
+        "ground"
+      ],
+      "params": {},
+      "severity": "warn",
+      "provenance": "archetype",
+      "rationale": "Pins the symbol groups into one domain landing on different nets is usually a wiring slip, occasionally deliberate.",
+      "severity_cap": "warn"
+    },
+    {
+      "id": "in_out_distinct",
+      "kind": "no_direct_tie",
+      "applies_to": [],
+      "applies_to_roles": [
+        "power_out"
+      ],
+      "params": {
+        "against_roles": [
+          "power_in"
+        ]
+      },
+      "severity": "error",
+      "provenance": "archetype",
+      "rationale": "Input shorted to output bypasses the pass element and hands the downstream rail the unregulated supply.",
+      "severity_cap": "error"
+    }
+  ],
+  "coverage": {
+    "pins_total": 3,
+    "pins_with_role": 3,
+    "pins_classified": 3,
+    "pins_role_from_symbol": 0,
+    "pins_role_from_pattern": 3,
+    "pins_role_from_datasheet": 0,
+    "domains": 2,
+    "domains_with_voltage": 0,
+    "clauses": 6,
+    "clauses_enforceable": 6,
+    "clauses_error_grade": 5,
+    "clauses_cited": 0,
+    "score": 80.0
+  },
+  "flags": [
+    "pruned:5",
+    "no_supply_voltages"
+  ],
+  "hash": "sha256:d5afeb6cf83adb204a4d549ccdc4a423ab6877401f77e5795cad46878f595604"
+}

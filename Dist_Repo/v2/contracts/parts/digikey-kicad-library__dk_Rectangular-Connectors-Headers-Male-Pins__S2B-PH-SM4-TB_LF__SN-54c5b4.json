@@ -1,0 +1,113 @@
+{
+  "contract_schema": 1,
+  "part": {
+    "lib_id": "digikey-kicad-library/dk_Rectangular-Connectors-Headers-Male-Pins/S2B-PH-SM4-TB_LF__SN_",
+    "slug": "digikey-kicad-library__dk_Rectangular-Connectors-Headers-Male-Pins__S2B-PH-SM4-TB_LF__SN-54c5b4",
+    "name": "S2B-PH-SM4-TB_LF__SN_",
+    "class": "connector",
+    "archetype": "discrete.diode",
+    "family": "diode.rectifier",
+    "footprint": "PinHeader_2x1mm_P2mm_SMD_RA",
+    "pad_count": 2,
+    "mount": "smd",
+    "datasheet": "http://www.jst-mfg.com/product/pdf/eng/ePH.pdf",
+    "description": "CONN HEADER SMD R/A 2POS 2MM",
+    "source": "digikey-kicad-library"
+  },
+  "domains": [],
+  "pins": [
+    {
+      "number": "1",
+      "name": "",
+      "sym_type": "passive",
+      "unit": 1,
+      "role": "passive",
+      "domain": "",
+      "required": "unknown",
+      "polarity": "unknown",
+      "pull": "unknown",
+      "v_abs_max": null,
+      "v_abs_min": null,
+      "i_max_ma": null,
+      "provenance": {
+        "number": "symbol",
+        "name": "symbol",
+        "sym_type": "symbol",
+        "role": "symbol"
+      },
+      "matched_pattern": "",
+      "note": ""
+    },
+    {
+      "number": "2",
+      "name": "",
+      "sym_type": "passive",
+      "unit": 1,
+      "role": "passive",
+      "domain": "",
+      "required": "unknown",
+      "polarity": "unknown",
+      "pull": "unknown",
+      "v_abs_max": null,
+      "v_abs_min": null,
+      "i_max_ma": null,
+      "provenance": {
+        "number": "symbol",
+        "name": "symbol",
+        "sym_type": "symbol",
+        "role": "symbol"
+      },
+      "matched_pattern": "",
+      "note": ""
+    }
+  ],
+  "companions": [],
+  "rules": [
+    {
+      "id": "both_legs_connected",
+      "kind": "must_connect",
+      "applies_to": [],
+      "applies_to_roles": [
+        "passive"
+      ],
+      "params": {},
+      "severity": "error",
+      "provenance": "archetype",
+      "rationale": "A two-terminal part with one leg on no net is not in the circuit.",
+      "severity_cap": "error"
+    },
+    {
+      "id": "polarity_respected",
+      "kind": "polarity_match",
+      "applies_to": [],
+      "applies_to_roles": [
+        "passive"
+      ],
+      "params": {},
+      "severity": "error",
+      "provenance": "archetype",
+      "rationale": "A diode installed backwards blocks the current the circuit needs and conducts the one it does not.",
+      "severity_cap": "error"
+    }
+  ],
+  "coverage": {
+    "pins_total": 2,
+    "pins_with_role": 2,
+    "pins_classified": 0,
+    "pins_role_from_symbol": 2,
+    "pins_role_from_pattern": 0,
+    "pins_role_from_datasheet": 0,
+    "domains": 0,
+    "domains_with_voltage": 0,
+    "clauses": 2,
+    "clauses_enforceable": 2,
+    "clauses_error_grade": 2,
+    "clauses_cited": 0,
+    "score": 12.5
+  },
+  "flags": [
+    "pruned:6",
+    "no_supply_voltages"
+  ],
+  "hash": "sha256:9d4e23603fda3e352c3eda8c1f9ea6d97dd08f85fd1baee16109a9ba010fe045"
+}
