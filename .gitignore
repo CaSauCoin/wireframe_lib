@@ -12,3 +12,10 @@ Dist_Repo/v2/lib_search.sqlite
 # Build-run output, not part of the published index.
 Dist_Repo/validation/
 reports/
+
+# One JSON per contract, rewritten in full by every `libcontract build`. At 399
+# contracts it was 6 MB a rebuild and worth having in git for the diff; at
+# 7,111 it is 131 MB a rebuild for a diff nobody reads at that size. Nothing
+# consumes it — the app reads contracts/contracts.json and the per-part summary
+# lives in contracts/contract_index.json, both of which stay committed.
+Dist_Repo/v2/contracts/parts/
