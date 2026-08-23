@@ -1,0 +1,192 @@
+{
+  "contract_schema": 1,
+  "part": {
+    "lib_id": "kicad-symbols/RF/ADCH-80",
+    "slug": "kicad-symbols__RF__ADCH-80",
+    "name": "ADCH-80",
+    "class": "passive.inductor",
+    "archetype": "passive.inductor",
+    "family": "ind.generic",
+    "footprint": "Mini-Circuits_CD542_H2.84mm",
+    "pad_count": 6,
+    "mount": "smd",
+    "datasheet": "https://www.minicircuits.com/pdfs/ADCH-80+.pdf",
+    "description": "50-10000MHz, RF Choke, Mini-Circuits CD542",
+    "source": "kicad-symbols"
+  },
+  "domains": [],
+  "pins": [
+    {
+      "number": "1",
+      "name": "NC",
+      "sym_type": "no_connect",
+      "unit": 1,
+      "role": "nc",
+      "domain": "",
+      "required": "no",
+      "polarity": "unknown",
+      "pull": "unknown",
+      "v_abs_max": null,
+      "v_abs_min": null,
+      "i_max_ma": null,
+      "provenance": {
+        "number": "symbol",
+        "name": "symbol",
+        "sym_type": "symbol",
+        "role": "pattern",
+        "required": "pattern"
+      },
+      "matched_pattern": "structural.nc",
+      "note": "Explicitly not connected. Distinct from a pin nobody has classified."
+    },
+    {
+      "number": "2",
+      "name": "RF&DC",
+      "sym_type": "passive",
+      "unit": 1,
+      "role": "passive",
+      "domain": "",
+      "required": "unknown",
+      "polarity": "unknown",
+      "pull": "unknown",
+      "v_abs_max": null,
+      "v_abs_min": null,
+      "i_max_ma": null,
+      "provenance": {
+        "number": "symbol",
+        "name": "symbol",
+        "sym_type": "symbol",
+        "role": "symbol"
+      },
+      "matched_pattern": "",
+      "note": ""
+    },
+    {
+      "number": "3",
+      "name": "NC",
+      "sym_type": "no_connect",
+      "unit": 1,
+      "role": "nc",
+      "domain": "",
+      "required": "no",
+      "polarity": "unknown",
+      "pull": "unknown",
+      "v_abs_max": null,
+      "v_abs_min": null,
+      "i_max_ma": null,
+      "provenance": {
+        "number": "symbol",
+        "name": "symbol",
+        "sym_type": "symbol",
+        "role": "pattern",
+        "required": "pattern"
+      },
+      "matched_pattern": "structural.nc",
+      "note": "Explicitly not connected. Distinct from a pin nobody has classified."
+    },
+    {
+      "number": "4",
+      "name": "NC",
+      "sym_type": "no_connect",
+      "unit": 1,
+      "role": "nc",
+      "domain": "",
+      "required": "no",
+      "polarity": "unknown",
+      "pull": "unknown",
+      "v_abs_max": null,
+      "v_abs_min": null,
+      "i_max_ma": null,
+      "provenance": {
+        "number": "symbol",
+        "name": "symbol",
+        "sym_type": "symbol",
+        "role": "pattern",
+        "required": "pattern"
+      },
+      "matched_pattern": "structural.nc",
+      "note": "Explicitly not connected. Distinct from a pin nobody has classified."
+    },
+    {
+      "number": "5",
+      "name": "DC",
+      "sym_type": "passive",
+      "unit": 1,
+      "role": "passive",
+      "domain": "",
+      "required": "unknown",
+      "polarity": "unknown",
+      "pull": "unknown",
+      "v_abs_max": null,
+      "v_abs_min": null,
+      "i_max_ma": null,
+      "provenance": {
+        "number": "symbol",
+        "name": "symbol",
+        "sym_type": "symbol",
+        "role": "symbol"
+      },
+      "matched_pattern": "",
+      "note": ""
+    },
+    {
+      "number": "6",
+      "name": "NC",
+      "sym_type": "no_connect",
+      "unit": 1,
+      "role": "nc",
+      "domain": "",
+      "required": "no",
+      "polarity": "unknown",
+      "pull": "unknown",
+      "v_abs_max": null,
+      "v_abs_min": null,
+      "i_max_ma": null,
+      "provenance": {
+        "number": "symbol",
+        "name": "symbol",
+        "sym_type": "symbol",
+        "role": "pattern",
+        "required": "pattern"
+      },
+      "matched_pattern": "structural.nc",
+      "note": "Explicitly not connected. Distinct from a pin nobody has classified."
+    }
+  ],
+  "companions": [],
+  "rules": [
+    {
+      "id": "both_legs_connected",
+      "kind": "must_connect",
+      "applies_to": [],
+      "applies_to_roles": [
+        "passive"
+      ],
+      "params": {},
+      "severity": "error",
+      "provenance": "archetype",
+      "rationale": "A two-terminal part with one leg on no net is not in the circuit.",
+      "severity_cap": "error"
+    }
+  ],
+  "coverage": {
+    "pins_total": 6,
+    "pins_with_role": 6,
+    "pins_classified": 4,
+    "pins_role_from_symbol": 2,
+    "pins_role_from_pattern": 4,
+    "pins_role_from_datasheet": 0,
+    "domains": 0,
+    "domains_with_voltage": 0,
+    "clauses": 1,
+    "clauses_enforceable": 1,
+    "clauses_error_grade": 1,
+    "clauses_cited": 0,
+    "score": 42.9
+  },
+  "flags": [
+    "pruned:6",
+    "no_supply_voltages"
+  ],
+  "hash": "sha256:1f6fafea47e86272ee0fbca0e958a168155dd3bd8ed1d927009271c0758f205b"
+}

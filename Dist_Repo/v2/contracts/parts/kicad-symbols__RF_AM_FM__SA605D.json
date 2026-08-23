@@ -5,7 +5,7 @@
     "slug": "kicad-symbols__RF_AM_FM__SA605D",
     "name": "SA605D",
     "class": "ic.rf",
-    "archetype": "base.ic",
+    "archetype": "ic.rf",
     "family": "rf.generic",
     "footprint": "SO-20_12.8x7.5mm_P1.27mm",
     "pad_count": 20,
@@ -523,6 +523,22 @@
       "provenance": "archetype",
       "rationale": "One bulk capacitor per device holds the rail up through load steps the decoupling caps are too small for.",
       "severity_cap": "warn"
+    },
+    {
+      "id": "rail_bulk",
+      "kind": "bulk_cap",
+      "scope": "device",
+      "applies_to": [],
+      "applies_to_roles": [],
+      "value": "10uF",
+      "value_min": "",
+      "value_max": "",
+      "max_distance_mm": null,
+      "count": 1,
+      "severity": "warn",
+      "provenance": "archetype",
+      "rationale": "An RF stage draws in bursts as the transmitter keys. The 100nF at each supply pin answers the fast edge and is far too small to hold the rail through a burst; the bulk capacitor is what stops the supply sagging mid-packet.",
+      "severity_cap": "warn"
     }
   ],
   "rules": [
@@ -620,8 +636,8 @@
     "pins_role_from_datasheet": 0,
     "domains": 2,
     "domains_with_voltage": 0,
-    "clauses": 7,
-    "clauses_enforceable": 7,
+    "clauses": 8,
+    "clauses_enforceable": 8,
     "clauses_error_grade": 4,
     "clauses_cited": 0,
     "score": 36.0
@@ -630,5 +646,5 @@
     "pruned:1",
     "no_supply_voltages"
   ],
-  "hash": "sha256:5d1269cdd95a418cf2c955840ad4919570620235c415751814b33754de5c5854"
+  "hash": "sha256:193cdd458a26237e5aae54bdfa0893d875ec74dba8ba2acde58a2da1faeabc81"
 }

@@ -5,7 +5,7 @@
     "slug": "kicad-symbols__Memory_RAM__23AA02M-IST",
     "name": "23AA02M-IST",
     "class": "ic.memory",
-    "archetype": "base.ic",
+    "archetype": "ic.memory",
     "family": "mem.generic",
     "footprint": "TSSOP-8_4.4x3mm_P0.65mm",
     "pad_count": 8,
@@ -261,6 +261,31 @@
       "provenance": "archetype",
       "rationale": "One bulk capacitor per device holds the rail up through load steps the decoupling caps are too small for.",
       "severity_cap": "warn"
+    },
+    {
+      "id": "cs_pull",
+      "kind": "pull_up",
+      "scope": "pin",
+      "applies_to": [
+        "CS",
+        "NCS",
+        "CE",
+        "NCE",
+        "SS",
+        "NSS",
+        "CS1",
+        "CS2"
+      ],
+      "applies_to_roles": [],
+      "value": "10k",
+      "value_min": "",
+      "value_max": "",
+      "max_distance_mm": null,
+      "count": 1,
+      "severity": "warn",
+      "provenance": "archetype",
+      "rationale": "Chip select is active low and shared with whatever else sits on the bus. Held high while the host is in reset, the device ignores the bus; floating, it answers noise as though it were a command — and on a writable device that is a corrupted cell rather than a bad read.",
+      "severity_cap": "warn"
     }
   ],
   "rules": [
@@ -320,8 +345,8 @@
     "pins_role_from_datasheet": 0,
     "domains": 2,
     "domains_with_voltage": 0,
-    "clauses": 5,
-    "clauses_enforceable": 5,
+    "clauses": 6,
+    "clauses_enforceable": 6,
     "clauses_error_grade": 2,
     "clauses_cited": 0,
     "score": 33.1
@@ -330,5 +355,5 @@
     "pruned:3",
     "no_supply_voltages"
   ],
-  "hash": "sha256:51cf306bfb6aead730faa0ce79d5043ccc6c8e525b25415858814483e46fe188"
+  "hash": "sha256:e4db5154587a10d05a8b01a7899a81faf7fa0a47af9d7ca6cd4975348decbff6"
 }

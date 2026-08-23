@@ -5,7 +5,7 @@
     "slug": "kicad-symbols__FPGA_Lattice__ICE40HX1K-TQ144",
     "name": "ICE40HX1K-TQ144",
     "class": "ic.fpga",
-    "archetype": "base.ic",
+    "archetype": "ic.fpga",
     "family": "logic.fpga",
     "footprint": "TQFP-144_20x20mm_P0.5mm",
     "pad_count": 144,
@@ -3379,6 +3379,22 @@
       "provenance": "archetype",
       "rationale": "One bulk capacitor per device holds the rail up through load steps the decoupling caps are too small for.",
       "severity_cap": "warn"
+    },
+    {
+      "id": "rail_bulk",
+      "kind": "bulk_cap",
+      "scope": "net",
+      "applies_to": [],
+      "applies_to_roles": [],
+      "value": "10uF",
+      "value_min": "",
+      "value_max": "",
+      "max_distance_mm": null,
+      "count": 1,
+      "severity": "warn",
+      "provenance": "archetype",
+      "rationale": "An FPGA runs several independent supplies — core, auxiliary, and one per I/O bank — and they are separate rails, not one rail arriving on several pins. base.ic's single bulk capacitor per device covers whichever rail it happens to sit on and leaves the others with only their decoupling, so this asks for one per supply net instead.",
+      "severity_cap": "warn"
     }
   ],
   "rules": [
@@ -3453,8 +3469,8 @@
     "pins_role_from_datasheet": 0,
     "domains": 8,
     "domains_with_voltage": 0,
-    "clauses": 6,
-    "clauses_enforceable": 6,
+    "clauses": 7,
+    "clauses_enforceable": 7,
     "clauses_error_grade": 3,
     "clauses_cited": 0,
     "score": 31.4
@@ -3463,5 +3479,5 @@
     "pruned:2",
     "no_supply_voltages"
   ],
-  "hash": "sha256:fcd5cb1ff47f88f9c823116332b2435c442e09fd420fbfb3f4c13388ff0e7d24"
+  "hash": "sha256:86c837f4d53f66e860710c4eeed47744392019088ecbb2a984156cf44aa4dbda"
 }

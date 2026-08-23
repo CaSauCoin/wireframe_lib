@@ -5,7 +5,7 @@
     "slug": "kicad-symbols__RF_Mixer__HMC213B",
     "name": "HMC213B",
     "class": "ic.rf",
-    "archetype": "base.ic",
+    "archetype": "ic.rf",
     "family": "rf.generic",
     "footprint": "MSOP-8_3x3mm_P0.65mm",
     "pad_count": 8,
@@ -214,7 +214,24 @@
       "note": ""
     }
   ],
-  "companions": [],
+  "companions": [
+    {
+      "id": "rail_bulk",
+      "kind": "bulk_cap",
+      "scope": "device",
+      "applies_to": [],
+      "applies_to_roles": [],
+      "value": "10uF",
+      "value_min": "",
+      "value_max": "",
+      "max_distance_mm": null,
+      "count": 1,
+      "severity": "warn",
+      "provenance": "archetype",
+      "rationale": "An RF stage draws in bursts as the transmitter keys. The 100nF at each supply pin answers the fast edge and is far too small to hold the rail through a burst; the bulk capacitor is what stops the supply sagging mid-packet.",
+      "severity_cap": "warn"
+    }
+  ],
   "rules": [
     {
       "id": "power_pins_connected",
@@ -255,8 +272,8 @@
     "pins_role_from_datasheet": 0,
     "domains": 1,
     "domains_with_voltage": 0,
-    "clauses": 2,
-    "clauses_enforceable": 2,
+    "clauses": 3,
+    "clauses_enforceable": 3,
     "clauses_error_grade": 1,
     "clauses_cited": 0,
     "score": 40.6
@@ -265,5 +282,5 @@
     "pruned:6",
     "no_supply_voltages"
   ],
-  "hash": "sha256:9edd92d7eb8ae66ade69d7b10a28da00ddf389afd547276845d949df0d36b3f9"
+  "hash": "sha256:914d18906c676f607a268f37c9cde880368e5deb6cbea3f4c439c3f43be3ac26"
 }

@@ -1,0 +1,179 @@
+{
+  "contract_schema": 1,
+  "part": {
+    "lib_id": "kicad-symbols/Power_Protection/CM1213A-01SO",
+    "slug": "kicad-symbols__Power_Protection__CM1213A-01SO",
+    "name": "CM1213A-01SO",
+    "class": "discrete.diode",
+    "archetype": "discrete.diode",
+    "family": "diode.generic",
+    "footprint": "SOT-23",
+    "pad_count": 3,
+    "mount": "smd",
+    "datasheet": "http://www.onsemi.com/pub_link/Collateral/CM1213A-D.PDF",
+    "description": "Single Channel ESD Protection Array",
+    "source": "kicad-symbols"
+  },
+  "domains": [
+    {
+      "id": "VP",
+      "kind": "supply",
+      "ref": "",
+      "v_min": null,
+      "v_nom": null,
+      "v_max": null,
+      "i_typ_ma": null,
+      "provenance": "pattern",
+      "note": ""
+    }
+  ],
+  "pins": [
+    {
+      "number": "1",
+      "name": "CH1",
+      "sym_type": "passive",
+      "unit": 1,
+      "role": "passive",
+      "domain": "",
+      "required": "unknown",
+      "polarity": "unknown",
+      "pull": "unknown",
+      "v_abs_max": null,
+      "v_abs_min": null,
+      "i_max_ma": null,
+      "provenance": {
+        "number": "symbol",
+        "name": "symbol",
+        "sym_type": "symbol",
+        "role": "symbol"
+      },
+      "matched_pattern": "",
+      "note": ""
+    },
+    {
+      "number": "2",
+      "name": "VP",
+      "sym_type": "passive",
+      "unit": 1,
+      "role": "power_in",
+      "domain": "VP",
+      "required": "yes",
+      "polarity": "active_high",
+      "pull": "unknown",
+      "v_abs_max": null,
+      "v_abs_min": null,
+      "i_max_ma": null,
+      "provenance": {
+        "number": "symbol",
+        "name": "symbol",
+        "sym_type": "symbol",
+        "role": "pattern",
+        "domain": "pattern",
+        "required": "pattern",
+        "polarity": "pattern"
+      },
+      "matched_pattern": "power.in_generic",
+      "note": ""
+    },
+    {
+      "number": "3",
+      "name": "VN",
+      "sym_type": "passive",
+      "unit": 1,
+      "role": "passive",
+      "domain": "",
+      "required": "unknown",
+      "polarity": "unknown",
+      "pull": "unknown",
+      "v_abs_max": null,
+      "v_abs_min": null,
+      "i_max_ma": null,
+      "provenance": {
+        "number": "symbol",
+        "name": "symbol",
+        "sym_type": "symbol",
+        "role": "symbol"
+      },
+      "matched_pattern": "",
+      "note": ""
+    }
+  ],
+  "companions": [],
+  "rules": [
+    {
+      "id": "power_pins_connected",
+      "kind": "must_connect",
+      "applies_to": [],
+      "applies_to_roles": [
+        "power_in",
+        "ground"
+      ],
+      "params": {},
+      "severity": "error",
+      "provenance": "archetype",
+      "rationale": "A supply or return pin that reaches no net means the part is unpowered.",
+      "severity_cap": "error"
+    },
+    {
+      "id": "supply_domains_consistent",
+      "kind": "domain_consistency",
+      "applies_to": [],
+      "applies_to_roles": [
+        "power_in",
+        "power_out",
+        "ground"
+      ],
+      "params": {},
+      "severity": "warn",
+      "provenance": "archetype",
+      "rationale": "Pins the symbol groups into one domain landing on different nets is usually a wiring slip, occasionally deliberate.",
+      "severity_cap": "warn"
+    },
+    {
+      "id": "both_legs_connected",
+      "kind": "must_connect",
+      "applies_to": [],
+      "applies_to_roles": [
+        "passive"
+      ],
+      "params": {},
+      "severity": "error",
+      "provenance": "archetype",
+      "rationale": "A two-terminal part with one leg on no net is not in the circuit.",
+      "severity_cap": "error"
+    },
+    {
+      "id": "polarity_respected",
+      "kind": "polarity_match",
+      "applies_to": [],
+      "applies_to_roles": [
+        "passive"
+      ],
+      "params": {},
+      "severity": "error",
+      "provenance": "archetype",
+      "rationale": "A diode installed backwards blocks the current the circuit needs and conducts the one it does not.",
+      "severity_cap": "error"
+    }
+  ],
+  "coverage": {
+    "pins_total": 3,
+    "pins_with_role": 3,
+    "pins_classified": 1,
+    "pins_role_from_symbol": 2,
+    "pins_role_from_pattern": 1,
+    "pins_role_from_datasheet": 0,
+    "domains": 1,
+    "domains_with_voltage": 0,
+    "clauses": 4,
+    "clauses_enforceable": 4,
+    "clauses_error_grade": 3,
+    "clauses_cited": 0,
+    "score": 37.1
+  },
+  "flags": [
+    "pruned:4",
+    "no_supply_voltages"
+  ],
+  "hash": "sha256:a8fa49480e60fd85198cb01d4b8c41ad048a1c660f24a14a0e11751af1115f7b"
+}

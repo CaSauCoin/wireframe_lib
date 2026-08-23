@@ -1,0 +1,213 @@
+{
+  "contract_schema": 1,
+  "part": {
+    "lib_id": "kicad-symbols/Relay/COTO_3602_Split",
+    "slug": "kicad-symbols__Relay__COTO_3602_Split",
+    "name": "COTO_3602_Split",
+    "class": "electromechanical.relay",
+    "archetype": "electromechanical.relay",
+    "family": "relay.generic",
+    "footprint": "Relay_DPST_COTO_3602",
+    "pad_count": 6,
+    "mount": "through_hole",
+    "datasheet": "https://cotorelay.com/wp-content/uploads/2014/09/3600_series_reed_relay_datasheet.pdf",
+    "description": "Low thermal EMF DPST-NO reed relay, 150V 0.25A, 30.48x16.76x12.06mm",
+    "source": "kicad-symbols"
+  },
+  "domains": [],
+  "pins": [
+    {
+      "number": "A1",
+      "name": "",
+      "sym_type": "passive",
+      "unit": 1,
+      "role": "passive",
+      "domain": "",
+      "required": "unknown",
+      "polarity": "unknown",
+      "pull": "unknown",
+      "v_abs_max": null,
+      "v_abs_min": null,
+      "i_max_ma": null,
+      "provenance": {
+        "number": "symbol",
+        "name": "symbol",
+        "sym_type": "symbol",
+        "role": "symbol"
+      },
+      "matched_pattern": "",
+      "note": ""
+    },
+    {
+      "number": "A2",
+      "name": "",
+      "sym_type": "passive",
+      "unit": 1,
+      "role": "passive",
+      "domain": "",
+      "required": "unknown",
+      "polarity": "unknown",
+      "pull": "unknown",
+      "v_abs_max": null,
+      "v_abs_min": null,
+      "i_max_ma": null,
+      "provenance": {
+        "number": "symbol",
+        "name": "symbol",
+        "sym_type": "symbol",
+        "role": "symbol"
+      },
+      "matched_pattern": "",
+      "note": ""
+    },
+    {
+      "number": "SH",
+      "name": "",
+      "sym_type": "passive",
+      "unit": 1,
+      "role": "passive",
+      "domain": "",
+      "required": "unknown",
+      "polarity": "unknown",
+      "pull": "unknown",
+      "v_abs_max": null,
+      "v_abs_min": null,
+      "i_max_ma": null,
+      "provenance": {
+        "number": "symbol",
+        "name": "symbol",
+        "sym_type": "symbol",
+        "role": "symbol"
+      },
+      "matched_pattern": "",
+      "note": ""
+    },
+    {
+      "number": "13",
+      "name": "",
+      "sym_type": "passive",
+      "unit": 2,
+      "role": "passive",
+      "domain": "",
+      "required": "unknown",
+      "polarity": "unknown",
+      "pull": "unknown",
+      "v_abs_max": null,
+      "v_abs_min": null,
+      "i_max_ma": null,
+      "provenance": {
+        "number": "symbol",
+        "name": "symbol",
+        "sym_type": "symbol",
+        "role": "symbol"
+      },
+      "matched_pattern": "",
+      "note": ""
+    },
+    {
+      "number": "14",
+      "name": "",
+      "sym_type": "passive",
+      "unit": 2,
+      "role": "passive",
+      "domain": "",
+      "required": "unknown",
+      "polarity": "unknown",
+      "pull": "unknown",
+      "v_abs_max": null,
+      "v_abs_min": null,
+      "i_max_ma": null,
+      "provenance": {
+        "number": "symbol",
+        "name": "symbol",
+        "sym_type": "symbol",
+        "role": "symbol"
+      },
+      "matched_pattern": "",
+      "note": ""
+    },
+    {
+      "number": "23",
+      "name": "",
+      "sym_type": "passive",
+      "unit": 3,
+      "role": "passive",
+      "domain": "",
+      "required": "unknown",
+      "polarity": "unknown",
+      "pull": "unknown",
+      "v_abs_max": null,
+      "v_abs_min": null,
+      "i_max_ma": null,
+      "provenance": {
+        "number": "symbol",
+        "name": "symbol",
+        "sym_type": "symbol",
+        "role": "symbol"
+      },
+      "matched_pattern": "",
+      "note": ""
+    },
+    {
+      "number": "24",
+      "name": "",
+      "sym_type": "passive",
+      "unit": 3,
+      "role": "passive",
+      "domain": "",
+      "required": "unknown",
+      "polarity": "unknown",
+      "pull": "unknown",
+      "v_abs_max": null,
+      "v_abs_min": null,
+      "i_max_ma": null,
+      "provenance": {
+        "number": "symbol",
+        "name": "symbol",
+        "sym_type": "symbol",
+        "role": "symbol"
+      },
+      "matched_pattern": "",
+      "note": ""
+    }
+  ],
+  "companions": [
+    {
+      "id": "flyback",
+      "kind": "flyback_diode",
+      "scope": "device",
+      "applies_to": [],
+      "applies_to_roles": [],
+      "value": "",
+      "value_min": "",
+      "value_max": "",
+      "max_distance_mm": null,
+      "count": 1,
+      "severity": "error",
+      "provenance": "archetype",
+      "rationale": "The coil is an inductor. When the drive turns off, its collapsing field produces whatever voltage it takes to keep the current flowing — enough to destroy the transistor driving it.",
+      "severity_cap": "error"
+    }
+  ],
+  "rules": [],
+  "coverage": {
+    "pins_total": 7,
+    "pins_with_role": 7,
+    "pins_classified": 0,
+    "pins_role_from_symbol": 7,
+    "pins_role_from_pattern": 0,
+    "pins_role_from_datasheet": 0,
+    "domains": 0,
+    "domains_with_voltage": 0,
+    "clauses": 1,
+    "clauses_enforceable": 1,
+    "clauses_error_grade": 1,
+    "clauses_cited": 0,
+    "score": 6.2
+  },
+  "flags": [
+    "pruned:6",
+    "no_supply_voltages"
+  ],
+  "hash": "sha256:8befdf8c4d0f2a56dc6ee7cb612809f987d52ae9544fe15241ef13cc36d6ccae"
+}
