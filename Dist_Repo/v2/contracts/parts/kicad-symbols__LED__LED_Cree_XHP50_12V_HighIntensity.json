@@ -1,0 +1,170 @@
+{
+  "contract_schema": 1,
+  "part": {
+    "lib_id": "kicad-symbols/LED/LED_Cree_XHP50_12V_HighIntensity",
+    "slug": "kicad-symbols__LED__LED_Cree_XHP50_12V_HighIntensity",
+    "name": "LED_Cree_XHP50_12V_HighIntensity",
+    "class": "discrete.led",
+    "archetype": "discrete.led",
+    "family": "diode.led",
+    "footprint": "LED_Cree-XHP50_12V_HighIntensity",
+    "pad_count": 3,
+    "mount": "smd",
+    "datasheet": "https://downloads.cree-led.com/files/ds/x/XLamp-XHP50.3.pdf",
+    "description": "XLamp® XHP50 LED, 12V, all 4 LEDs in series, high intensity",
+    "source": "kicad-symbols"
+  },
+  "domains": [
+    {
+      "id": "VSS",
+      "kind": "ground",
+      "ref": "",
+      "v_min": null,
+      "v_nom": null,
+      "v_max": null,
+      "i_typ_ma": null,
+      "provenance": "pattern",
+      "note": ""
+    }
+  ],
+  "pins": [
+    {
+      "number": "1",
+      "name": "K",
+      "sym_type": "passive",
+      "unit": 1,
+      "role": "passive",
+      "domain": "",
+      "required": "yes",
+      "polarity": "active_low",
+      "pull": "unknown",
+      "v_abs_max": null,
+      "v_abs_min": null,
+      "i_max_ma": null,
+      "provenance": {
+        "number": "symbol",
+        "name": "symbol",
+        "sym_type": "symbol",
+        "role": "pattern",
+        "required": "pattern",
+        "polarity": "pattern"
+      },
+      "matched_pattern": "discrete.cathode",
+      "note": "Cathode. Paired with the anode rule above for polarity checking."
+    },
+    {
+      "number": "2",
+      "name": "A",
+      "sym_type": "passive",
+      "unit": 1,
+      "role": "passive",
+      "domain": "",
+      "required": "yes",
+      "polarity": "active_high",
+      "pull": "unknown",
+      "v_abs_max": null,
+      "v_abs_min": null,
+      "i_max_ma": null,
+      "provenance": {
+        "number": "symbol",
+        "name": "symbol",
+        "sym_type": "symbol",
+        "role": "pattern",
+        "required": "pattern",
+        "polarity": "pattern"
+      },
+      "matched_pattern": "discrete.anode",
+      "note": "Anode of a polarised two-terminal part. Reversing it is the single most common build fault."
+    },
+    {
+      "number": "3",
+      "name": "PAD",
+      "sym_type": "passive",
+      "unit": 1,
+      "role": "thermal_pad",
+      "domain": "VSS",
+      "required": "yes",
+      "polarity": "unknown",
+      "pull": "unknown",
+      "v_abs_max": null,
+      "v_abs_min": null,
+      "i_max_ma": null,
+      "provenance": {
+        "number": "symbol",
+        "name": "symbol",
+        "sym_type": "symbol",
+        "role": "pattern",
+        "domain": "pattern",
+        "required": "pattern"
+      },
+      "matched_pattern": "ground.exposed_pad",
+      "note": "Exposed pad. Usually the ground return and always a thermal path; leaving it unconnected changes the part's ratings."
+    }
+  ],
+  "companions": [
+    {
+      "id": "series_limit",
+      "kind": "series_resistor",
+      "scope": "device",
+      "applies_to": [],
+      "applies_to_roles": [],
+      "value": "",
+      "value_min": "",
+      "value_max": "",
+      "max_distance_mm": null,
+      "count": 1,
+      "severity": "error",
+      "provenance": "archetype",
+      "rationale": "An LED's current rises exponentially with voltage. Across a rail with no series resistance it draws until something gives.",
+      "severity_cap": "error"
+    }
+  ],
+  "rules": [
+    {
+      "id": "both_legs_connected",
+      "kind": "must_connect",
+      "applies_to": [],
+      "applies_to_roles": [
+        "passive"
+      ],
+      "params": {},
+      "severity": "error",
+      "provenance": "archetype",
+      "rationale": "A two-terminal part with one leg on no net is not in the circuit.",
+      "severity_cap": "error"
+    },
+    {
+      "id": "polarity_respected",
+      "kind": "polarity_match",
+      "applies_to": [],
+      "applies_to_roles": [
+        "passive"
+      ],
+      "params": {},
+      "severity": "error",
+      "provenance": "archetype",
+      "rationale": "A diode installed backwards blocks the current the circuit needs and conducts the one it does not.",
+      "severity_cap": "error"
+    }
+  ],
+  "coverage": {
+    "pins_total": 3,
+    "pins_with_role": 3,
+    "pins_classified": 3,
+    "pins_role_from_symbol": 0,
+    "pins_role_from_pattern": 3,
+    "pins_role_from_datasheet": 0,
+    "domains": 1,
+    "domains_with_voltage": 0,
+    "clauses": 3,
+    "clauses_enforceable": 3,
+    "clauses_error_grade": 3,
+    "clauses_cited": 0,
+    "score": 73.8
+  },
+  "flags": [
+    "pruned:6",
+    "no_supply_voltages"
+  ],
+  "hash": "sha256:10db710b54156b43a9ff533ad38c23bb50f23f530be2c07fad15d3f168649980"
+}

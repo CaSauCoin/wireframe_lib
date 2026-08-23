@@ -1,0 +1,469 @@
+{
+  "contract_schema": 1,
+  "part": {
+    "lib_id": "SparkFun-KiCad-Libraries/SparkFun-Connector/USB_C_Receptacle",
+    "slug": "SparkFun-KiCad-Libraries__SparkFun-Connector__USB_C_Receptacle",
+    "name": "USB_C_Receptacle",
+    "class": "connector",
+    "archetype": "connector.usb",
+    "family": "conn.usb",
+    "footprint": "USB-C_16",
+    "pad_count": 14,
+    "mount": "through_hole",
+    "datasheet": "https://www.usb.org/sites/default/files/documents/usb_type-c.zip",
+    "description": "USB 2.0-only Type-C Receptacle connector",
+    "source": "SparkFun-KiCad-Libraries"
+  },
+  "domains": [
+    {
+      "id": "GND",
+      "kind": "ground",
+      "ref": "",
+      "v_min": null,
+      "v_nom": null,
+      "v_max": null,
+      "i_typ_ma": null,
+      "provenance": "pattern",
+      "note": ""
+    },
+    {
+      "id": "VBUS",
+      "kind": "supply",
+      "ref": "GND",
+      "v_min": null,
+      "v_nom": null,
+      "v_max": null,
+      "i_typ_ma": null,
+      "provenance": "pattern",
+      "note": ""
+    }
+  ],
+  "pins": [
+    {
+      "number": "A5",
+      "name": "CC1",
+      "sym_type": "bidirectional",
+      "unit": 1,
+      "role": "bidirectional",
+      "domain": "",
+      "required": "unknown",
+      "polarity": "unknown",
+      "pull": "unknown",
+      "v_abs_max": null,
+      "v_abs_min": null,
+      "i_max_ma": null,
+      "provenance": {
+        "number": "symbol",
+        "name": "symbol",
+        "sym_type": "symbol",
+        "role": "symbol"
+      },
+      "matched_pattern": "",
+      "note": ""
+    },
+    {
+      "number": "A6",
+      "name": "D+",
+      "sym_type": "bidirectional",
+      "unit": 1,
+      "role": "diff_p",
+      "domain": "",
+      "required": "if_used",
+      "polarity": "unknown",
+      "pull": "unknown",
+      "v_abs_max": null,
+      "v_abs_min": null,
+      "i_max_ma": null,
+      "provenance": {
+        "number": "symbol",
+        "name": "symbol",
+        "sym_type": "symbol",
+        "role": "pattern",
+        "required": "pattern"
+      },
+      "matched_pattern": "bus.usb_dp",
+      "note": ""
+    },
+    {
+      "number": "A7",
+      "name": "D-",
+      "sym_type": "bidirectional",
+      "unit": 1,
+      "role": "diff_n",
+      "domain": "",
+      "required": "if_used",
+      "polarity": "unknown",
+      "pull": "unknown",
+      "v_abs_max": null,
+      "v_abs_min": null,
+      "i_max_ma": null,
+      "provenance": {
+        "number": "symbol",
+        "name": "symbol",
+        "sym_type": "symbol",
+        "role": "pattern",
+        "required": "pattern"
+      },
+      "matched_pattern": "bus.usb_dm",
+      "note": ""
+    },
+    {
+      "number": "A8",
+      "name": "NC",
+      "sym_type": "no_connect",
+      "unit": 1,
+      "role": "nc",
+      "domain": "",
+      "required": "no",
+      "polarity": "unknown",
+      "pull": "unknown",
+      "v_abs_max": null,
+      "v_abs_min": null,
+      "i_max_ma": null,
+      "provenance": {
+        "number": "symbol",
+        "name": "symbol",
+        "sym_type": "symbol",
+        "role": "pattern",
+        "required": "pattern"
+      },
+      "matched_pattern": "structural.nc",
+      "note": "Explicitly not connected. Distinct from a pin nobody has classified."
+    },
+    {
+      "number": "B5",
+      "name": "CC2",
+      "sym_type": "bidirectional",
+      "unit": 1,
+      "role": "bidirectional",
+      "domain": "",
+      "required": "unknown",
+      "polarity": "unknown",
+      "pull": "unknown",
+      "v_abs_max": null,
+      "v_abs_min": null,
+      "i_max_ma": null,
+      "provenance": {
+        "number": "symbol",
+        "name": "symbol",
+        "sym_type": "symbol",
+        "role": "symbol"
+      },
+      "matched_pattern": "",
+      "note": ""
+    },
+    {
+      "number": "B6",
+      "name": "D+",
+      "sym_type": "bidirectional",
+      "unit": 1,
+      "role": "diff_p",
+      "domain": "",
+      "required": "if_used",
+      "polarity": "unknown",
+      "pull": "unknown",
+      "v_abs_max": null,
+      "v_abs_min": null,
+      "i_max_ma": null,
+      "provenance": {
+        "number": "symbol",
+        "name": "symbol",
+        "sym_type": "symbol",
+        "role": "pattern",
+        "required": "pattern"
+      },
+      "matched_pattern": "bus.usb_dp",
+      "note": ""
+    },
+    {
+      "number": "B7",
+      "name": "D-",
+      "sym_type": "bidirectional",
+      "unit": 1,
+      "role": "diff_n",
+      "domain": "",
+      "required": "if_used",
+      "polarity": "unknown",
+      "pull": "unknown",
+      "v_abs_max": null,
+      "v_abs_min": null,
+      "i_max_ma": null,
+      "provenance": {
+        "number": "symbol",
+        "name": "symbol",
+        "sym_type": "symbol",
+        "role": "pattern",
+        "required": "pattern"
+      },
+      "matched_pattern": "bus.usb_dm",
+      "note": ""
+    },
+    {
+      "number": "B8",
+      "name": "NC",
+      "sym_type": "no_connect",
+      "unit": 1,
+      "role": "nc",
+      "domain": "",
+      "required": "no",
+      "polarity": "unknown",
+      "pull": "unknown",
+      "v_abs_max": null,
+      "v_abs_min": null,
+      "i_max_ma": null,
+      "provenance": {
+        "number": "symbol",
+        "name": "symbol",
+        "sym_type": "symbol",
+        "role": "pattern",
+        "required": "pattern"
+      },
+      "matched_pattern": "structural.nc",
+      "note": "Explicitly not connected. Distinct from a pin nobody has classified."
+    },
+    {
+      "number": "GND",
+      "name": "GND",
+      "sym_type": "passive",
+      "unit": 1,
+      "role": "ground",
+      "domain": "GND",
+      "required": "yes",
+      "polarity": "unknown",
+      "pull": "unknown",
+      "v_abs_max": null,
+      "v_abs_min": null,
+      "i_max_ma": null,
+      "provenance": {
+        "number": "symbol",
+        "name": "symbol",
+        "sym_type": "symbol",
+        "role": "pattern",
+        "domain": "pattern",
+        "required": "pattern"
+      },
+      "matched_pattern": "ground.digital",
+      "note": ""
+    },
+    {
+      "number": "NC1",
+      "name": "NC",
+      "sym_type": "no_connect",
+      "unit": 1,
+      "role": "nc",
+      "domain": "",
+      "required": "no",
+      "polarity": "unknown",
+      "pull": "unknown",
+      "v_abs_max": null,
+      "v_abs_min": null,
+      "i_max_ma": null,
+      "provenance": {
+        "number": "symbol",
+        "name": "symbol",
+        "sym_type": "symbol",
+        "role": "pattern",
+        "required": "pattern"
+      },
+      "matched_pattern": "structural.nc",
+      "note": "Explicitly not connected. Distinct from a pin nobody has classified."
+    },
+    {
+      "number": "NC2",
+      "name": "NC",
+      "sym_type": "no_connect",
+      "unit": 1,
+      "role": "nc",
+      "domain": "",
+      "required": "no",
+      "polarity": "unknown",
+      "pull": "unknown",
+      "v_abs_max": null,
+      "v_abs_min": null,
+      "i_max_ma": null,
+      "provenance": {
+        "number": "symbol",
+        "name": "symbol",
+        "sym_type": "symbol",
+        "role": "pattern",
+        "required": "pattern"
+      },
+      "matched_pattern": "structural.nc",
+      "note": "Explicitly not connected. Distinct from a pin nobody has classified."
+    },
+    {
+      "number": "NC3",
+      "name": "NC",
+      "sym_type": "no_connect",
+      "unit": 1,
+      "role": "nc",
+      "domain": "",
+      "required": "no",
+      "polarity": "unknown",
+      "pull": "unknown",
+      "v_abs_max": null,
+      "v_abs_min": null,
+      "i_max_ma": null,
+      "provenance": {
+        "number": "symbol",
+        "name": "symbol",
+        "sym_type": "symbol",
+        "role": "pattern",
+        "required": "pattern"
+      },
+      "matched_pattern": "structural.nc",
+      "note": "Explicitly not connected. Distinct from a pin nobody has classified."
+    },
+    {
+      "number": "S",
+      "name": "SHIELD",
+      "sym_type": "passive",
+      "unit": 1,
+      "role": "shield",
+      "domain": "",
+      "required": "no",
+      "polarity": "unknown",
+      "pull": "unknown",
+      "v_abs_max": null,
+      "v_abs_min": null,
+      "i_max_ma": null,
+      "provenance": {
+        "number": "symbol",
+        "name": "symbol",
+        "sym_type": "symbol",
+        "role": "pattern",
+        "required": "pattern"
+      },
+      "matched_pattern": "structural.shield",
+      "note": ""
+    },
+    {
+      "number": "VBUS",
+      "name": "VBUS",
+      "sym_type": "power_out",
+      "unit": 1,
+      "role": "power_in",
+      "domain": "VBUS",
+      "required": "if_used",
+      "polarity": "active_high",
+      "pull": "unknown",
+      "v_abs_max": null,
+      "v_abs_min": null,
+      "i_max_ma": null,
+      "provenance": {
+        "number": "symbol",
+        "name": "symbol",
+        "sym_type": "symbol",
+        "role": "pattern",
+        "domain": "pattern",
+        "required": "pattern",
+        "polarity": "pattern"
+      },
+      "matched_pattern": "power.usb_bus",
+      "note": ""
+    }
+  ],
+  "companions": [
+    {
+      "id": "shield_tie",
+      "kind": "cap_to_gnd",
+      "scope": "pin",
+      "applies_to": [],
+      "applies_to_roles": [
+        "shield"
+      ],
+      "value": "4.7nF",
+      "value_min": "",
+      "value_max": "",
+      "max_distance_mm": null,
+      "count": 1,
+      "severity": "warn",
+      "provenance": "archetype",
+      "rationale": "The shell is normally tied to ground through a capacitor and a bleed resistor rather than directly, so cable currents do not run through the board's ground.",
+      "severity_cap": "warn"
+    },
+    {
+      "id": "vbus_protection",
+      "kind": "tvs",
+      "scope": "pin",
+      "applies_to": [
+        "VBUS"
+      ],
+      "applies_to_roles": [],
+      "value": "",
+      "value_min": "",
+      "value_max": "",
+      "max_distance_mm": null,
+      "count": 1,
+      "severity": "warn",
+      "provenance": "archetype",
+      "rationale": "VBUS arrives from outside the board and is the usual entry point for a surge.",
+      "severity_cap": "warn"
+    }
+  ],
+  "rules": [
+    {
+      "id": "power_pins_connected",
+      "kind": "must_connect",
+      "applies_to": [],
+      "applies_to_roles": [
+        "power_in",
+        "ground"
+      ],
+      "params": {},
+      "severity": "error",
+      "provenance": "archetype",
+      "rationale": "A supply or return pin that reaches no net means the part is unpowered.",
+      "severity_cap": "error"
+    },
+    {
+      "id": "supply_domains_consistent",
+      "kind": "domain_consistency",
+      "applies_to": [],
+      "applies_to_roles": [
+        "power_in",
+        "power_out",
+        "ground"
+      ],
+      "params": {},
+      "severity": "warn",
+      "provenance": "archetype",
+      "rationale": "Pins the symbol groups into one domain landing on different nets is usually a wiring slip, occasionally deliberate.",
+      "severity_cap": "warn"
+    },
+    {
+      "id": "pair_present",
+      "kind": "must_connect",
+      "applies_to": [],
+      "applies_to_roles": [
+        "diff_p",
+        "diff_n"
+      ],
+      "params": {},
+      "severity": "error",
+      "provenance": "archetype",
+      "rationale": "Both halves of the data pair must be wired.",
+      "severity_cap": "error"
+    }
+  ],
+  "coverage": {
+    "pins_total": 14,
+    "pins_with_role": 14,
+    "pins_classified": 12,
+    "pins_role_from_symbol": 2,
+    "pins_role_from_pattern": 12,
+    "pins_role_from_datasheet": 0,
+    "domains": 2,
+    "domains_with_voltage": 0,
+    "clauses": 5,
+    "clauses_enforceable": 5,
+    "clauses_error_grade": 2,
+    "clauses_cited": 0,
+    "score": 59.6
+  },
+  "flags": [
+    "pruned:5",
+    "no_supply_voltages"
+  ],
+  "hash": "sha256:f93c8951b6b5914da780d05c70ec54a011b12b66228990825734a410db076917"
+}

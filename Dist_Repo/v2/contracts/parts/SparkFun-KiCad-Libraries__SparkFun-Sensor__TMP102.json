@@ -1,0 +1,325 @@
+{
+  "contract_schema": 1,
+  "part": {
+    "lib_id": "SparkFun-KiCad-Libraries/SparkFun-Sensor/TMP102",
+    "slug": "SparkFun-KiCad-Libraries__SparkFun-Sensor__TMP102",
+    "name": "TMP102",
+    "class": "ic",
+    "archetype": "ic.sensor.i2c",
+    "family": "sensor.common",
+    "footprint": "SOT-563",
+    "pad_count": 6,
+    "mount": "smd",
+    "datasheet": "https://www.ti.com/lit/ds/symlink/tmp102.pdf",
+    "description": "Digital Temperature Sensor, ±3°C, low-Power, SMBus, 12 bit, Two-Wire Serial Interface, SOT-563",
+    "source": "SparkFun-KiCad-Libraries"
+  },
+  "domains": [
+    {
+      "id": "GND",
+      "kind": "ground",
+      "ref": "",
+      "v_min": null,
+      "v_nom": null,
+      "v_max": null,
+      "i_typ_ma": null,
+      "provenance": "pattern",
+      "note": ""
+    },
+    {
+      "id": "V_PLUS",
+      "kind": "supply",
+      "ref": "GND",
+      "v_min": null,
+      "v_nom": null,
+      "v_max": null,
+      "i_typ_ma": null,
+      "provenance": "pattern",
+      "note": ""
+    }
+  ],
+  "pins": [
+    {
+      "number": "1",
+      "name": "SCL",
+      "sym_type": "input",
+      "unit": 1,
+      "role": "open_drain",
+      "domain": "",
+      "required": "if_used",
+      "polarity": "unknown",
+      "pull": "up_required",
+      "v_abs_max": null,
+      "v_abs_min": null,
+      "i_max_ma": null,
+      "provenance": {
+        "number": "symbol",
+        "name": "symbol",
+        "sym_type": "symbol",
+        "role": "pattern",
+        "required": "pattern",
+        "pull": "pattern"
+      },
+      "matched_pattern": "bus.i2c",
+      "note": "I2C is open drain: without a pull-up on the bus nothing ever drives a logic high."
+    },
+    {
+      "number": "2",
+      "name": "GND",
+      "sym_type": "power_in",
+      "unit": 1,
+      "role": "ground",
+      "domain": "GND",
+      "required": "yes",
+      "polarity": "unknown",
+      "pull": "unknown",
+      "v_abs_max": null,
+      "v_abs_min": null,
+      "i_max_ma": null,
+      "provenance": {
+        "number": "symbol",
+        "name": "symbol",
+        "sym_type": "symbol",
+        "role": "pattern",
+        "domain": "pattern",
+        "required": "pattern"
+      },
+      "matched_pattern": "ground.digital",
+      "note": ""
+    },
+    {
+      "number": "3",
+      "name": "ALERT",
+      "sym_type": "open_collector",
+      "unit": 1,
+      "role": "open_drain",
+      "domain": "",
+      "required": "no",
+      "polarity": "unknown",
+      "pull": "up_required",
+      "v_abs_max": null,
+      "v_abs_min": null,
+      "i_max_ma": null,
+      "provenance": {
+        "number": "symbol",
+        "name": "symbol",
+        "sym_type": "symbol",
+        "role": "pattern",
+        "required": "pattern",
+        "pull": "pattern"
+      },
+      "matched_pattern": "iface.interrupt",
+      "note": ""
+    },
+    {
+      "number": "4",
+      "name": "ADD0",
+      "sym_type": "input",
+      "unit": 1,
+      "role": "input",
+      "domain": "",
+      "required": "unknown",
+      "polarity": "unknown",
+      "pull": "unknown",
+      "v_abs_max": null,
+      "v_abs_min": null,
+      "i_max_ma": null,
+      "provenance": {
+        "number": "symbol",
+        "name": "symbol",
+        "sym_type": "symbol",
+        "role": "symbol"
+      },
+      "matched_pattern": "",
+      "note": ""
+    },
+    {
+      "number": "5",
+      "name": "V+",
+      "sym_type": "power_in",
+      "unit": 1,
+      "role": "power_in",
+      "domain": "V_PLUS",
+      "required": "yes",
+      "polarity": "active_high",
+      "pull": "unknown",
+      "v_abs_max": null,
+      "v_abs_min": null,
+      "i_max_ma": null,
+      "provenance": {
+        "number": "symbol",
+        "name": "symbol",
+        "sym_type": "symbol",
+        "role": "pattern",
+        "domain": "pattern",
+        "required": "pattern",
+        "polarity": "pattern"
+      },
+      "matched_pattern": "power.in_generic",
+      "note": ""
+    },
+    {
+      "number": "6",
+      "name": "SDA",
+      "sym_type": "bidirectional",
+      "unit": 1,
+      "role": "open_drain",
+      "domain": "",
+      "required": "if_used",
+      "polarity": "unknown",
+      "pull": "up_required",
+      "v_abs_max": null,
+      "v_abs_min": null,
+      "i_max_ma": null,
+      "provenance": {
+        "number": "symbol",
+        "name": "symbol",
+        "sym_type": "symbol",
+        "role": "pattern",
+        "required": "pattern",
+        "pull": "pattern"
+      },
+      "matched_pattern": "bus.i2c",
+      "note": "I2C is open drain: without a pull-up on the bus nothing ever drives a logic high."
+    }
+  ],
+  "companions": [
+    {
+      "id": "decoupling",
+      "kind": "decoupling_cap",
+      "scope": "pin",
+      "applies_to": [],
+      "applies_to_roles": [
+        "power_in"
+      ],
+      "value": "100nF",
+      "value_min": "",
+      "value_max": "",
+      "max_distance_mm": 3.0,
+      "count": 1,
+      "severity": "error",
+      "provenance": "archetype",
+      "rationale": "Each supply pin needs a local ceramic to supply the switching current the rail cannot deliver fast enough; without it the die sees its own supply collapse on every edge.",
+      "severity_cap": "error"
+    },
+    {
+      "id": "bulk",
+      "kind": "bulk_cap",
+      "scope": "device",
+      "applies_to": [],
+      "applies_to_roles": [
+        "power_in"
+      ],
+      "value": "10uF",
+      "value_min": "",
+      "value_max": "",
+      "max_distance_mm": null,
+      "count": 1,
+      "severity": "warn",
+      "provenance": "archetype",
+      "rationale": "One bulk capacitor per device holds the rail up through load steps the decoupling caps are too small for.",
+      "severity_cap": "warn"
+    },
+    {
+      "id": "bus_pullups",
+      "kind": "pull_up",
+      "scope": "bus",
+      "applies_to": [],
+      "applies_to_roles": [
+        "open_drain"
+      ],
+      "value": "4.7k",
+      "value_min": "",
+      "value_max": "",
+      "max_distance_mm": null,
+      "count": 1,
+      "severity": "error",
+      "provenance": "archetype",
+      "rationale": "One pull-up pair per I2C bus, not per device. With none the bus never idles high and no transfer ever starts.",
+      "severity_cap": "error"
+    }
+  ],
+  "rules": [
+    {
+      "id": "power_pins_connected",
+      "kind": "must_connect",
+      "applies_to": [],
+      "applies_to_roles": [
+        "power_in",
+        "ground"
+      ],
+      "params": {},
+      "severity": "error",
+      "provenance": "archetype",
+      "rationale": "A supply or return pin that reaches no net means the part is unpowered.",
+      "severity_cap": "error"
+    },
+    {
+      "id": "inputs_not_floating",
+      "kind": "no_floating",
+      "applies_to": [],
+      "applies_to_roles": [
+        "input",
+        "enable",
+        "boot_mode",
+        "reset",
+        "clock_in"
+      ],
+      "params": {},
+      "severity": "warn",
+      "provenance": "archetype",
+      "rationale": "A floating input sits at an undefined level and picks up whatever is nearby.",
+      "severity_cap": "warn"
+    },
+    {
+      "id": "open_drain_needs_pull",
+      "kind": "requires_pull",
+      "applies_to": [],
+      "applies_to_roles": [
+        "open_drain"
+      ],
+      "params": {
+        "direction": "up"
+      },
+      "severity": "error",
+      "provenance": "archetype",
+      "rationale": "An open-drain pin can only pull down; without a pull-up its net never reaches a logic high.",
+      "severity_cap": "error"
+    },
+    {
+      "id": "supply_domains_consistent",
+      "kind": "domain_consistency",
+      "applies_to": [],
+      "applies_to_roles": [
+        "power_in",
+        "power_out",
+        "ground"
+      ],
+      "params": {},
+      "severity": "warn",
+      "provenance": "archetype",
+      "rationale": "Pins the symbol groups into one domain landing on different nets is usually a wiring slip, occasionally deliberate.",
+      "severity_cap": "warn"
+    }
+  ],
+  "coverage": {
+    "pins_total": 6,
+    "pins_with_role": 6,
+    "pins_classified": 5,
+    "pins_role_from_symbol": 1,
+    "pins_role_from_pattern": 5,
+    "pins_role_from_datasheet": 0,
+    "domains": 2,
+    "domains_with_voltage": 0,
+    "clauses": 7,
+    "clauses_enforceable": 7,
+    "clauses_error_grade": 4,
+    "clauses_cited": 0,
+    "score": 70.8
+  },
+  "flags": [
+    "pruned:3",
+    "no_supply_voltages"
+  ],
+  "hash": "sha256:975d055de0e4c5a14cb8a75f68b6eb2db5d71c76c09f6af74f9cf5551989c23d"
+}

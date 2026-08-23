@@ -1,0 +1,163 @@
+{
+  "contract_schema": 1,
+  "part": {
+    "lib_id": "SparkFun-KiCad-Libraries/SparkFun-DiscreteSemi/Q_NPN_1A_40V",
+    "slug": "SparkFun-KiCad-Libraries__SparkFun-DiscreteSemi__Q_NPN_1A_40V",
+    "name": "Q_NPN_1A_40V",
+    "class": "discrete.transistor",
+    "archetype": "discrete.transistor.bjt",
+    "family": "bjt.npn",
+    "footprint": "SOT23-3",
+    "pad_count": 3,
+    "mount": "smd",
+    "datasheet": "https://www.onsemi.com/pdf/datasheet/mmbt2222lt1-d.pdf",
+    "description": "NPN transistor, base/emitter/collector",
+    "source": "SparkFun-KiCad-Libraries"
+  },
+  "domains": [],
+  "pins": [
+    {
+      "number": "1",
+      "name": "B",
+      "sym_type": "input",
+      "unit": 1,
+      "role": "input",
+      "domain": "",
+      "required": "yes",
+      "polarity": "unknown",
+      "pull": "unknown",
+      "v_abs_max": null,
+      "v_abs_min": null,
+      "i_max_ma": null,
+      "provenance": {
+        "number": "symbol",
+        "name": "symbol",
+        "sym_type": "symbol",
+        "role": "pattern",
+        "required": "pattern"
+      },
+      "matched_pattern": "discrete.bjt_base",
+      "note": ""
+    },
+    {
+      "number": "2",
+      "name": "E",
+      "sym_type": "passive",
+      "unit": 1,
+      "role": "passive",
+      "domain": "",
+      "required": "yes",
+      "polarity": "unknown",
+      "pull": "unknown",
+      "v_abs_max": null,
+      "v_abs_min": null,
+      "i_max_ma": null,
+      "provenance": {
+        "number": "symbol",
+        "name": "symbol",
+        "sym_type": "symbol",
+        "role": "pattern",
+        "required": "pattern"
+      },
+      "matched_pattern": "discrete.bjt_emitter",
+      "note": ""
+    },
+    {
+      "number": "3",
+      "name": "C",
+      "sym_type": "passive",
+      "unit": 1,
+      "role": "passive",
+      "domain": "",
+      "required": "yes",
+      "polarity": "unknown",
+      "pull": "unknown",
+      "v_abs_max": null,
+      "v_abs_min": null,
+      "i_max_ma": null,
+      "provenance": {
+        "number": "symbol",
+        "name": "symbol",
+        "sym_type": "symbol",
+        "role": "pattern",
+        "required": "pattern"
+      },
+      "matched_pattern": "discrete.bjt_collector",
+      "note": ""
+    }
+  ],
+  "companions": [
+    {
+      "id": "base_resistor",
+      "kind": "series_resistor",
+      "scope": "pin",
+      "applies_to": [
+        "B",
+        "BASE"
+      ],
+      "applies_to_roles": [],
+      "value": "1k",
+      "value_min": "",
+      "value_max": "",
+      "max_distance_mm": null,
+      "count": 1,
+      "severity": "error",
+      "provenance": "archetype",
+      "rationale": "The base-emitter junction is a diode. Driven from a logic pin with no series resistor it takes the whole drive current.",
+      "severity_cap": "error"
+    }
+  ],
+  "rules": [
+    {
+      "id": "inputs_not_floating",
+      "kind": "no_floating",
+      "applies_to": [],
+      "applies_to_roles": [
+        "input",
+        "enable",
+        "boot_mode",
+        "reset",
+        "clock_in"
+      ],
+      "params": {},
+      "severity": "warn",
+      "provenance": "archetype",
+      "rationale": "A floating input sits at an undefined level and picks up whatever is nearby.",
+      "severity_cap": "warn"
+    },
+    {
+      "id": "legs_connected",
+      "kind": "must_connect",
+      "applies_to": [],
+      "applies_to_roles": [
+        "passive",
+        "input"
+      ],
+      "params": {},
+      "severity": "error",
+      "provenance": "archetype",
+      "rationale": "A transistor with an unconnected terminal does nothing.",
+      "severity_cap": "error"
+    }
+  ],
+  "coverage": {
+    "pins_total": 3,
+    "pins_with_role": 3,
+    "pins_classified": 3,
+    "pins_role_from_symbol": 0,
+    "pins_role_from_pattern": 3,
+    "pins_role_from_datasheet": 0,
+    "domains": 0,
+    "domains_with_voltage": 0,
+    "clauses": 3,
+    "clauses_enforceable": 3,
+    "clauses_error_grade": 2,
+    "clauses_cited": 0,
+    "score": 67.5
+  },
+  "flags": [
+    "pruned:5",
+    "no_supply_voltages"
+  ],
+  "hash": "sha256:75d324bebd35806fca6aaacc3eb3736d96b850468225386eb3457edf976871f4"
+}
