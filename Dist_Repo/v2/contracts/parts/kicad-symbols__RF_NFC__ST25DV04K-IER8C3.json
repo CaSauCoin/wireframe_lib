@@ -5,7 +5,7 @@
     "slug": "kicad-symbols__RF_NFC__ST25DV04K-IER8C3",
     "name": "ST25DV04K-IER8C3",
     "class": "ic.rf",
-    "archetype": "base.ic",
+    "archetype": "ic.rf",
     "family": "rf.generic",
     "footprint": "DFN-8-1EP_3x2mm_P0.5mm_EP1.36x1.46mm",
     "pad_count": 9,
@@ -297,6 +297,22 @@
       "provenance": "archetype",
       "rationale": "One bulk capacitor per device holds the rail up through load steps the decoupling caps are too small for.",
       "severity_cap": "warn"
+    },
+    {
+      "id": "rail_bulk",
+      "kind": "bulk_cap",
+      "scope": "device",
+      "applies_to": [],
+      "applies_to_roles": [],
+      "value": "10uF",
+      "value_min": "",
+      "value_max": "",
+      "max_distance_mm": null,
+      "count": 1,
+      "severity": "warn",
+      "provenance": "archetype",
+      "rationale": "An RF stage draws in bursts as the transmitter keys. The 100nF at each supply pin answers the fast edge and is far too small to hold the rail through a burst; the bulk capacitor is what stops the supply sagging mid-packet.",
+      "severity_cap": "warn"
     }
   ],
   "rules": [
@@ -354,8 +370,8 @@
     "pins_role_from_datasheet": 0,
     "domains": 3,
     "domains_with_voltage": 0,
-    "clauses": 5,
-    "clauses_enforceable": 5,
+    "clauses": 6,
+    "clauses_enforceable": 6,
     "clauses_error_grade": 3,
     "clauses_cited": 0,
     "score": 49.3
@@ -364,5 +380,5 @@
     "pruned:3",
     "no_supply_voltages"
   ],
-  "hash": "sha256:c7205c5a51eedf659a66ba78ccd67ae45c243f0fcfb3e61c2c453d3badb674c4"
+  "hash": "sha256:7f9552e4c47e930be7b9870b4f4b9ff3bacc298e92c6a7bc6b55ee320a70bad8"
 }

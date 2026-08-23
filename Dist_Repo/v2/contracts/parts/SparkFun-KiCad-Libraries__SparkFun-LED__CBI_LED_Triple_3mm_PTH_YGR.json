@@ -1,0 +1,201 @@
+{
+  "contract_schema": 1,
+  "part": {
+    "lib_id": "SparkFun-KiCad-Libraries/SparkFun-LED/CBI_LED_Triple_3mm_PTH_YGR",
+    "slug": "SparkFun-KiCad-Libraries__SparkFun-LED__CBI_LED_Triple_3mm_PTH_YGR",
+    "name": "CBI_LED_Triple_3mm_PTH_YGR",
+    "class": "discrete.diode",
+    "archetype": "discrete.diode",
+    "family": "diode.generic",
+    "footprint": "CBI_LED_Triple_3mm_PTH",
+    "pad_count": 6,
+    "mount": "through_hole",
+    "datasheet": "https://www.mouser.com/datasheet/2/244/SSF-LXH340LYGID-1176757.pdf",
+    "description": "Triple CBI LED, 3mm dia., PTH, Yellow-Green-Red",
+    "source": "SparkFun-KiCad-Libraries"
+  },
+  "domains": [],
+  "pins": [
+    {
+      "number": "ANODE_1",
+      "name": "ANODE_1",
+      "sym_type": "passive",
+      "unit": 1,
+      "role": "passive",
+      "domain": "",
+      "required": "unknown",
+      "polarity": "unknown",
+      "pull": "unknown",
+      "v_abs_max": null,
+      "v_abs_min": null,
+      "i_max_ma": null,
+      "provenance": {
+        "number": "symbol",
+        "name": "symbol",
+        "sym_type": "symbol",
+        "role": "symbol"
+      },
+      "matched_pattern": "",
+      "note": ""
+    },
+    {
+      "number": "ANODE_2",
+      "name": "ANODE_2",
+      "sym_type": "passive",
+      "unit": 1,
+      "role": "passive",
+      "domain": "",
+      "required": "unknown",
+      "polarity": "unknown",
+      "pull": "unknown",
+      "v_abs_max": null,
+      "v_abs_min": null,
+      "i_max_ma": null,
+      "provenance": {
+        "number": "symbol",
+        "name": "symbol",
+        "sym_type": "symbol",
+        "role": "symbol"
+      },
+      "matched_pattern": "",
+      "note": ""
+    },
+    {
+      "number": "ANODE_3",
+      "name": "ANODE_3",
+      "sym_type": "passive",
+      "unit": 1,
+      "role": "passive",
+      "domain": "",
+      "required": "unknown",
+      "polarity": "unknown",
+      "pull": "unknown",
+      "v_abs_max": null,
+      "v_abs_min": null,
+      "i_max_ma": null,
+      "provenance": {
+        "number": "symbol",
+        "name": "symbol",
+        "sym_type": "symbol",
+        "role": "symbol"
+      },
+      "matched_pattern": "",
+      "note": ""
+    },
+    {
+      "number": "CATHODE_1",
+      "name": "CATHODE_1",
+      "sym_type": "passive",
+      "unit": 1,
+      "role": "passive",
+      "domain": "",
+      "required": "unknown",
+      "polarity": "unknown",
+      "pull": "unknown",
+      "v_abs_max": null,
+      "v_abs_min": null,
+      "i_max_ma": null,
+      "provenance": {
+        "number": "symbol",
+        "name": "symbol",
+        "sym_type": "symbol",
+        "role": "symbol"
+      },
+      "matched_pattern": "",
+      "note": ""
+    },
+    {
+      "number": "CATHODE_2",
+      "name": "CATHODE_2",
+      "sym_type": "passive",
+      "unit": 1,
+      "role": "passive",
+      "domain": "",
+      "required": "unknown",
+      "polarity": "unknown",
+      "pull": "unknown",
+      "v_abs_max": null,
+      "v_abs_min": null,
+      "i_max_ma": null,
+      "provenance": {
+        "number": "symbol",
+        "name": "symbol",
+        "sym_type": "symbol",
+        "role": "symbol"
+      },
+      "matched_pattern": "",
+      "note": ""
+    },
+    {
+      "number": "CATHODE_3",
+      "name": "CATHODE_3",
+      "sym_type": "passive",
+      "unit": 1,
+      "role": "passive",
+      "domain": "",
+      "required": "unknown",
+      "polarity": "unknown",
+      "pull": "unknown",
+      "v_abs_max": null,
+      "v_abs_min": null,
+      "i_max_ma": null,
+      "provenance": {
+        "number": "symbol",
+        "name": "symbol",
+        "sym_type": "symbol",
+        "role": "symbol"
+      },
+      "matched_pattern": "",
+      "note": ""
+    }
+  ],
+  "companions": [],
+  "rules": [
+    {
+      "id": "both_legs_connected",
+      "kind": "must_connect",
+      "applies_to": [],
+      "applies_to_roles": [
+        "passive"
+      ],
+      "params": {},
+      "severity": "error",
+      "provenance": "archetype",
+      "rationale": "A two-terminal part with one leg on no net is not in the circuit.",
+      "severity_cap": "error"
+    },
+    {
+      "id": "polarity_respected",
+      "kind": "polarity_match",
+      "applies_to": [],
+      "applies_to_roles": [
+        "passive"
+      ],
+      "params": {},
+      "severity": "error",
+      "provenance": "archetype",
+      "rationale": "A diode installed backwards blocks the current the circuit needs and conducts the one it does not.",
+      "severity_cap": "error"
+    }
+  ],
+  "coverage": {
+    "pins_total": 6,
+    "pins_with_role": 6,
+    "pins_classified": 0,
+    "pins_role_from_symbol": 6,
+    "pins_role_from_pattern": 0,
+    "pins_role_from_datasheet": 0,
+    "domains": 0,
+    "domains_with_voltage": 0,
+    "clauses": 2,
+    "clauses_enforceable": 2,
+    "clauses_error_grade": 2,
+    "clauses_cited": 0,
+    "score": 12.5
+  },
+  "flags": [
+    "pruned:6",
+    "no_supply_voltages"
+  ],
+  "hash": "sha256:f14317fcd8b66adaaaa92227520fd381c48d404524582c6cfa558e8cc0264342"
+}

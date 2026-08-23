@@ -5,7 +5,7 @@
     "slug": "kicad-symbols__RF_Bluetooth__nRF8001",
     "name": "nRF8001",
     "class": "ic.rf",
-    "archetype": "base.ic",
+    "archetype": "ic.rf",
     "family": "rf.generic",
     "footprint": "QFN-32-1EP_5x5mm_P0.5mm_EP3.45x3.45mm",
     "pad_count": 33,
@@ -844,6 +844,22 @@
       "provenance": "archetype",
       "rationale": "One bulk capacitor per device holds the rail up through load steps the decoupling caps are too small for.",
       "severity_cap": "warn"
+    },
+    {
+      "id": "rail_bulk",
+      "kind": "bulk_cap",
+      "scope": "device",
+      "applies_to": [],
+      "applies_to_roles": [],
+      "value": "10uF",
+      "value_min": "",
+      "value_max": "",
+      "max_distance_mm": null,
+      "count": 1,
+      "severity": "warn",
+      "provenance": "archetype",
+      "rationale": "An RF stage draws in bursts as the transmitter keys. The 100nF at each supply pin answers the fast edge and is far too small to hold the rail through a burst; the bulk capacitor is what stops the supply sagging mid-packet.",
+      "severity_cap": "warn"
     }
   ],
   "rules": [
@@ -941,8 +957,8 @@
     "pins_role_from_datasheet": 0,
     "domains": 3,
     "domains_with_voltage": 0,
-    "clauses": 7,
-    "clauses_enforceable": 7,
+    "clauses": 8,
+    "clauses_enforceable": 8,
     "clauses_error_grade": 4,
     "clauses_cited": 0,
     "score": 46.7
@@ -951,5 +967,5 @@
     "pruned:1",
     "no_supply_voltages"
   ],
-  "hash": "sha256:54546a6114ab0d4d4a46b0827602af6d4f9b682694bcb9c8fb45f71293fb2d61"
+  "hash": "sha256:e372c1fc351b4414a1226eab5bcf1273d74de4a8928b1627a12812f1a6800c88"
 }

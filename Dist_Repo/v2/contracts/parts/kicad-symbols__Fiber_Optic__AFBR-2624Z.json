@@ -1,0 +1,283 @@
+{
+  "contract_schema": 1,
+  "part": {
+    "lib_id": "kicad-symbols/Fiber_Optic/AFBR-2624Z",
+    "slug": "kicad-symbols__Fiber_Optic__AFBR-2624Z",
+    "name": "AFBR-2624Z",
+    "class": "connector",
+    "archetype": "connector.header",
+    "family": "conn.generic",
+    "footprint": "Broadcom_AFBR-16xxZ_Tilted",
+    "pad_count": 6,
+    "mount": "through_hole",
+    "datasheet": "https://docs.broadcom.com/docs/AV02-4369EN",
+    "description": "Versatile Link Fiber Optic Receiver",
+    "source": "kicad-symbols"
+  },
+  "domains": [
+    {
+      "id": "VEER",
+      "kind": "supply",
+      "ref": "",
+      "v_min": null,
+      "v_nom": null,
+      "v_max": null,
+      "i_typ_ma": null,
+      "provenance": "pattern",
+      "note": ""
+    },
+    {
+      "id": "VCCR",
+      "kind": "supply",
+      "ref": "",
+      "v_min": null,
+      "v_nom": null,
+      "v_max": null,
+      "i_typ_ma": null,
+      "provenance": "pattern",
+      "note": ""
+    }
+  ],
+  "pins": [
+    {
+      "number": "1",
+      "name": "Data_Out",
+      "sym_type": "output",
+      "unit": 1,
+      "role": "output",
+      "domain": "",
+      "required": "unknown",
+      "polarity": "unknown",
+      "pull": "unknown",
+      "v_abs_max": null,
+      "v_abs_min": null,
+      "i_max_ma": null,
+      "provenance": {
+        "number": "symbol",
+        "name": "symbol",
+        "sym_type": "symbol",
+        "role": "symbol"
+      },
+      "matched_pattern": "",
+      "note": ""
+    },
+    {
+      "number": "2",
+      "name": "VEER",
+      "sym_type": "power_in",
+      "unit": 1,
+      "role": "power_in",
+      "domain": "VEER",
+      "required": "unknown",
+      "polarity": "active_high",
+      "pull": "unknown",
+      "v_abs_max": null,
+      "v_abs_min": null,
+      "i_max_ma": null,
+      "provenance": {
+        "number": "symbol",
+        "name": "symbol",
+        "sym_type": "symbol",
+        "role": "symbol",
+        "domain": "pattern",
+        "polarity": "pattern"
+      },
+      "matched_pattern": "",
+      "note": ""
+    },
+    {
+      "number": "3",
+      "name": "VCCR",
+      "sym_type": "power_in",
+      "unit": 1,
+      "role": "power_in",
+      "domain": "VCCR",
+      "required": "unknown",
+      "polarity": "active_high",
+      "pull": "unknown",
+      "v_abs_max": null,
+      "v_abs_min": null,
+      "i_max_ma": null,
+      "provenance": {
+        "number": "symbol",
+        "name": "symbol",
+        "sym_type": "symbol",
+        "role": "symbol",
+        "domain": "pattern",
+        "polarity": "pattern"
+      },
+      "matched_pattern": "",
+      "note": ""
+    },
+    {
+      "number": "4",
+      "name": "NC",
+      "sym_type": "no_connect",
+      "unit": 1,
+      "role": "nc",
+      "domain": "",
+      "required": "no",
+      "polarity": "unknown",
+      "pull": "unknown",
+      "v_abs_max": null,
+      "v_abs_min": null,
+      "i_max_ma": null,
+      "provenance": {
+        "number": "symbol",
+        "name": "symbol",
+        "sym_type": "symbol",
+        "role": "pattern",
+        "required": "pattern"
+      },
+      "matched_pattern": "structural.nc",
+      "note": "Explicitly not connected. Distinct from a pin nobody has classified."
+    },
+    {
+      "number": "5",
+      "name": "HP",
+      "sym_type": "passive",
+      "unit": 1,
+      "role": "passive",
+      "domain": "",
+      "required": "unknown",
+      "polarity": "unknown",
+      "pull": "unknown",
+      "v_abs_max": null,
+      "v_abs_min": null,
+      "i_max_ma": null,
+      "provenance": {
+        "number": "symbol",
+        "name": "symbol",
+        "sym_type": "symbol",
+        "role": "symbol"
+      },
+      "matched_pattern": "",
+      "note": ""
+    },
+    {
+      "number": "8",
+      "name": "HP",
+      "sym_type": "passive",
+      "unit": 1,
+      "role": "passive",
+      "domain": "",
+      "required": "unknown",
+      "polarity": "unknown",
+      "pull": "unknown",
+      "v_abs_max": null,
+      "v_abs_min": null,
+      "i_max_ma": null,
+      "provenance": {
+        "number": "symbol",
+        "name": "symbol",
+        "sym_type": "symbol",
+        "role": "symbol"
+      },
+      "matched_pattern": "",
+      "note": ""
+    }
+  ],
+  "companions": [],
+  "rules": [
+    {
+      "id": "power_pins_connected",
+      "kind": "must_connect",
+      "applies_to": [],
+      "applies_to_roles": [
+        "power_in",
+        "ground"
+      ],
+      "params": {},
+      "severity": "error",
+      "provenance": "archetype",
+      "rationale": "A supply or return pin that reaches no net means the part is unpowered.",
+      "severity_cap": "error"
+    },
+    {
+      "id": "no_driver_conflict",
+      "kind": "no_direct_tie",
+      "applies_to": [],
+      "applies_to_roles": [
+        "output",
+        "clock_out",
+        "analog_out"
+      ],
+      "params": {
+        "against_roles": [
+          "output",
+          "clock_out",
+          "analog_out",
+          "power_out"
+        ],
+        "scope": "any"
+      },
+      "severity": "error",
+      "provenance": "archetype",
+      "rationale": "Two drivers on one net fight; whichever is stronger sources the other's short-circuit current.",
+      "severity_cap": "error"
+    },
+    {
+      "id": "no_output_into_rail",
+      "kind": "no_short_to_rail",
+      "applies_to": [],
+      "applies_to_roles": [
+        "output",
+        "clock_out",
+        "analog_out"
+      ],
+      "params": {},
+      "severity": "error",
+      "provenance": "archetype",
+      "rationale": "An output tied straight to a supply or ground is a short the moment it drives the other way.",
+      "severity_cap": "error"
+    },
+    {
+      "id": "supply_domains_consistent",
+      "kind": "domain_consistency",
+      "applies_to": [],
+      "applies_to_roles": [
+        "power_in",
+        "power_out",
+        "ground"
+      ],
+      "params": {},
+      "severity": "warn",
+      "provenance": "archetype",
+      "rationale": "Pins the symbol groups into one domain landing on different nets is usually a wiring slip, occasionally deliberate.",
+      "severity_cap": "warn"
+    },
+    {
+      "id": "pins_connected",
+      "kind": "must_connect",
+      "applies_to": [],
+      "applies_to_roles": [
+        "passive"
+      ],
+      "params": {},
+      "severity": "warn",
+      "provenance": "archetype",
+      "rationale": "An unconnected header pin is often deliberate — a spare, a key, a mechanical post — so this stays a warning.",
+      "severity_cap": "warn"
+    }
+  ],
+  "coverage": {
+    "pins_total": 6,
+    "pins_with_role": 6,
+    "pins_classified": 1,
+    "pins_role_from_symbol": 5,
+    "pins_role_from_pattern": 1,
+    "pins_role_from_datasheet": 0,
+    "domains": 2,
+    "domains_with_voltage": 0,
+    "clauses": 5,
+    "clauses_enforceable": 5,
+    "clauses_error_grade": 3,
+    "clauses_cited": 0,
+    "score": 27.9
+  },
+  "flags": [
+    "pruned:2",
+    "no_supply_voltages"
+  ],
+  "hash": "sha256:de5879478902c79311a499d7c5da28b69de630ff50adf8922351ecf504b4adbb"
+}

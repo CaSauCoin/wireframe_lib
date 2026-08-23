@@ -1,0 +1,385 @@
+{
+  "contract_schema": 1,
+  "part": {
+    "lib_id": "kicad-symbols/Potentiometer_Digital/AD5272BRM",
+    "slug": "kicad-symbols__Potentiometer_Digital__AD5272BRM",
+    "name": "AD5272BRM",
+    "class": "passive.resistor",
+    "archetype": "passive.resistor",
+    "family": "res.generic",
+    "footprint": "MSOP-10_3x3mm_P0.5mm",
+    "pad_count": 10,
+    "mount": "smd",
+    "datasheet": "https://www.analog.com/media/en/technical-documentation/data-sheets/AD5272_5274.pdf",
+    "description": "Digital potentiometer, 1024 position, 1% Resistor Tolerance, I2C interface, MSOP-10",
+    "source": "kicad-symbols"
+  },
+  "domains": [
+    {
+      "id": "VDD",
+      "kind": "supply",
+      "ref": "VSS",
+      "v_min": null,
+      "v_nom": null,
+      "v_max": null,
+      "i_typ_ma": null,
+      "provenance": "pattern",
+      "note": ""
+    },
+    {
+      "id": "VSS",
+      "kind": "ground",
+      "ref": "",
+      "v_min": null,
+      "v_nom": null,
+      "v_max": null,
+      "i_typ_ma": null,
+      "provenance": "pattern",
+      "note": ""
+    },
+    {
+      "id": "GND",
+      "kind": "ground",
+      "ref": "",
+      "v_min": null,
+      "v_nom": null,
+      "v_max": null,
+      "i_typ_ma": null,
+      "provenance": "pattern",
+      "note": ""
+    }
+  ],
+  "pins": [
+    {
+      "number": "1",
+      "name": "VDD",
+      "sym_type": "power_in",
+      "unit": 1,
+      "role": "power_in",
+      "domain": "VDD",
+      "required": "yes",
+      "polarity": "active_high",
+      "pull": "unknown",
+      "v_abs_max": null,
+      "v_abs_min": null,
+      "i_max_ma": null,
+      "provenance": {
+        "number": "symbol",
+        "name": "symbol",
+        "sym_type": "symbol",
+        "role": "pattern",
+        "domain": "pattern",
+        "required": "pattern",
+        "polarity": "pattern"
+      },
+      "matched_pattern": "power.in_generic",
+      "note": ""
+    },
+    {
+      "number": "2",
+      "name": "A",
+      "sym_type": "passive",
+      "unit": 1,
+      "role": "passive",
+      "domain": "",
+      "required": "unknown",
+      "polarity": "unknown",
+      "pull": "unknown",
+      "v_abs_max": null,
+      "v_abs_min": null,
+      "i_max_ma": null,
+      "provenance": {
+        "number": "symbol",
+        "name": "symbol",
+        "sym_type": "symbol",
+        "role": "symbol"
+      },
+      "matched_pattern": "",
+      "note": ""
+    },
+    {
+      "number": "3",
+      "name": "W",
+      "sym_type": "passive",
+      "unit": 1,
+      "role": "passive",
+      "domain": "",
+      "required": "unknown",
+      "polarity": "unknown",
+      "pull": "unknown",
+      "v_abs_max": null,
+      "v_abs_min": null,
+      "i_max_ma": null,
+      "provenance": {
+        "number": "symbol",
+        "name": "symbol",
+        "sym_type": "symbol",
+        "role": "symbol"
+      },
+      "matched_pattern": "",
+      "note": ""
+    },
+    {
+      "number": "4",
+      "name": "VSS",
+      "sym_type": "power_in",
+      "unit": 1,
+      "role": "ground",
+      "domain": "VSS",
+      "required": "yes",
+      "polarity": "unknown",
+      "pull": "unknown",
+      "v_abs_max": null,
+      "v_abs_min": null,
+      "i_max_ma": null,
+      "provenance": {
+        "number": "symbol",
+        "name": "symbol",
+        "sym_type": "symbol",
+        "role": "pattern",
+        "domain": "pattern",
+        "required": "pattern"
+      },
+      "matched_pattern": "ground.digital",
+      "note": ""
+    },
+    {
+      "number": "5",
+      "name": "EXT_CAP",
+      "sym_type": "passive",
+      "unit": 1,
+      "role": "passive",
+      "domain": "",
+      "required": "unknown",
+      "polarity": "unknown",
+      "pull": "unknown",
+      "v_abs_max": null,
+      "v_abs_min": null,
+      "i_max_ma": null,
+      "provenance": {
+        "number": "symbol",
+        "name": "symbol",
+        "sym_type": "symbol",
+        "role": "symbol"
+      },
+      "matched_pattern": "",
+      "note": ""
+    },
+    {
+      "number": "6",
+      "name": "GND",
+      "sym_type": "power_in",
+      "unit": 1,
+      "role": "ground",
+      "domain": "GND",
+      "required": "yes",
+      "polarity": "unknown",
+      "pull": "unknown",
+      "v_abs_max": null,
+      "v_abs_min": null,
+      "i_max_ma": null,
+      "provenance": {
+        "number": "symbol",
+        "name": "symbol",
+        "sym_type": "symbol",
+        "role": "pattern",
+        "domain": "pattern",
+        "required": "pattern"
+      },
+      "matched_pattern": "ground.digital",
+      "note": ""
+    },
+    {
+      "number": "7",
+      "name": "~{RESET}",
+      "sym_type": "input",
+      "unit": 1,
+      "role": "reset",
+      "domain": "",
+      "required": "yes",
+      "polarity": "active_low",
+      "pull": "either_required",
+      "v_abs_max": null,
+      "v_abs_min": null,
+      "i_max_ma": null,
+      "provenance": {
+        "number": "symbol",
+        "name": "symbol",
+        "sym_type": "symbol",
+        "role": "pattern",
+        "required": "pattern",
+        "pull": "pattern",
+        "polarity": "symbol"
+      },
+      "matched_pattern": "control.reset",
+      "note": "Reset must be strapped or driven. A floating reset is the classic intermittent-boot fault."
+    },
+    {
+      "number": "8",
+      "name": "SDA",
+      "sym_type": "bidirectional",
+      "unit": 1,
+      "role": "open_drain",
+      "domain": "",
+      "required": "if_used",
+      "polarity": "unknown",
+      "pull": "up_required",
+      "v_abs_max": null,
+      "v_abs_min": null,
+      "i_max_ma": null,
+      "provenance": {
+        "number": "symbol",
+        "name": "symbol",
+        "sym_type": "symbol",
+        "role": "pattern",
+        "required": "pattern",
+        "pull": "pattern"
+      },
+      "matched_pattern": "bus.i2c",
+      "note": "I2C is open drain: without a pull-up on the bus nothing ever drives a logic high."
+    },
+    {
+      "number": "9",
+      "name": "SCL",
+      "sym_type": "input",
+      "unit": 1,
+      "role": "open_drain",
+      "domain": "",
+      "required": "if_used",
+      "polarity": "unknown",
+      "pull": "up_required",
+      "v_abs_max": null,
+      "v_abs_min": null,
+      "i_max_ma": null,
+      "provenance": {
+        "number": "symbol",
+        "name": "symbol",
+        "sym_type": "symbol",
+        "role": "pattern",
+        "required": "pattern",
+        "pull": "pattern"
+      },
+      "matched_pattern": "bus.i2c",
+      "note": "I2C is open drain: without a pull-up on the bus nothing ever drives a logic high."
+    },
+    {
+      "number": "10",
+      "name": "ADDR",
+      "sym_type": "passive",
+      "unit": 1,
+      "role": "passive",
+      "domain": "",
+      "required": "unknown",
+      "polarity": "unknown",
+      "pull": "unknown",
+      "v_abs_max": null,
+      "v_abs_min": null,
+      "i_max_ma": null,
+      "provenance": {
+        "number": "symbol",
+        "name": "symbol",
+        "sym_type": "symbol",
+        "role": "symbol"
+      },
+      "matched_pattern": "",
+      "note": ""
+    }
+  ],
+  "companions": [],
+  "rules": [
+    {
+      "id": "power_pins_connected",
+      "kind": "must_connect",
+      "applies_to": [],
+      "applies_to_roles": [
+        "power_in",
+        "ground"
+      ],
+      "params": {},
+      "severity": "error",
+      "provenance": "archetype",
+      "rationale": "A supply or return pin that reaches no net means the part is unpowered.",
+      "severity_cap": "error"
+    },
+    {
+      "id": "inputs_not_floating",
+      "kind": "no_floating",
+      "applies_to": [],
+      "applies_to_roles": [
+        "input",
+        "enable",
+        "boot_mode",
+        "reset",
+        "clock_in"
+      ],
+      "params": {},
+      "severity": "warn",
+      "provenance": "archetype",
+      "rationale": "A floating input sits at an undefined level and picks up whatever is nearby.",
+      "severity_cap": "warn"
+    },
+    {
+      "id": "open_drain_needs_pull",
+      "kind": "requires_pull",
+      "applies_to": [],
+      "applies_to_roles": [
+        "open_drain"
+      ],
+      "params": {
+        "direction": "up"
+      },
+      "severity": "error",
+      "provenance": "archetype",
+      "rationale": "An open-drain pin can only pull down; without a pull-up its net never reaches a logic high.",
+      "severity_cap": "error"
+    },
+    {
+      "id": "supply_domains_consistent",
+      "kind": "domain_consistency",
+      "applies_to": [],
+      "applies_to_roles": [
+        "power_in",
+        "power_out",
+        "ground"
+      ],
+      "params": {},
+      "severity": "warn",
+      "provenance": "archetype",
+      "rationale": "Pins the symbol groups into one domain landing on different nets is usually a wiring slip, occasionally deliberate.",
+      "severity_cap": "warn"
+    },
+    {
+      "id": "both_legs_connected",
+      "kind": "must_connect",
+      "applies_to": [],
+      "applies_to_roles": [
+        "passive"
+      ],
+      "params": {},
+      "severity": "error",
+      "provenance": "archetype",
+      "rationale": "A two-terminal part with one leg on no net is not in the circuit.",
+      "severity_cap": "error"
+    }
+  ],
+  "coverage": {
+    "pins_total": 10,
+    "pins_with_role": 10,
+    "pins_classified": 6,
+    "pins_role_from_symbol": 4,
+    "pins_role_from_pattern": 6,
+    "pins_role_from_datasheet": 0,
+    "domains": 3,
+    "domains_with_voltage": 0,
+    "clauses": 5,
+    "clauses_enforceable": 5,
+    "clauses_error_grade": 3,
+    "clauses_cited": 0,
+    "score": 51.8
+  },
+  "flags": [
+    "pruned:2",
+    "no_supply_voltages"
+  ],
+  "hash": "sha256:5e793d6e5f933634b25e1cd326cff7b09eb694dba5befafe7d5cc5daeac60df0"
+}

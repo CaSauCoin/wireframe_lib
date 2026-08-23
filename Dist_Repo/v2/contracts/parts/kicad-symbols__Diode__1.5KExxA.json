@@ -1,0 +1,113 @@
+{
+  "contract_schema": 1,
+  "part": {
+    "lib_id": "kicad-symbols/Diode/1.5KExxA",
+    "slug": "kicad-symbols__Diode__1.5KExxA",
+    "name": "1.5KExxA",
+    "class": "discrete.diode",
+    "archetype": "discrete.diode",
+    "family": "diode.generic",
+    "footprint": "D_DO-201AE_P15.24mm_Horizontal",
+    "pad_count": 2,
+    "mount": "through_hole",
+    "datasheet": "https://www.vishay.com/docs/88301/15ke.pdf",
+    "description": "1500W unidirectional TVS diode, DO-201AE",
+    "source": "kicad-symbols"
+  },
+  "domains": [],
+  "pins": [
+    {
+      "number": "1",
+      "name": "A1",
+      "sym_type": "passive",
+      "unit": 1,
+      "role": "passive",
+      "domain": "",
+      "required": "unknown",
+      "polarity": "unknown",
+      "pull": "unknown",
+      "v_abs_max": null,
+      "v_abs_min": null,
+      "i_max_ma": null,
+      "provenance": {
+        "number": "symbol",
+        "name": "symbol",
+        "sym_type": "symbol",
+        "role": "symbol"
+      },
+      "matched_pattern": "",
+      "note": ""
+    },
+    {
+      "number": "2",
+      "name": "A2",
+      "sym_type": "passive",
+      "unit": 1,
+      "role": "passive",
+      "domain": "",
+      "required": "unknown",
+      "polarity": "unknown",
+      "pull": "unknown",
+      "v_abs_max": null,
+      "v_abs_min": null,
+      "i_max_ma": null,
+      "provenance": {
+        "number": "symbol",
+        "name": "symbol",
+        "sym_type": "symbol",
+        "role": "symbol"
+      },
+      "matched_pattern": "",
+      "note": ""
+    }
+  ],
+  "companions": [],
+  "rules": [
+    {
+      "id": "both_legs_connected",
+      "kind": "must_connect",
+      "applies_to": [],
+      "applies_to_roles": [
+        "passive"
+      ],
+      "params": {},
+      "severity": "error",
+      "provenance": "archetype",
+      "rationale": "A two-terminal part with one leg on no net is not in the circuit.",
+      "severity_cap": "error"
+    },
+    {
+      "id": "polarity_respected",
+      "kind": "polarity_match",
+      "applies_to": [],
+      "applies_to_roles": [
+        "passive"
+      ],
+      "params": {},
+      "severity": "error",
+      "provenance": "archetype",
+      "rationale": "A diode installed backwards blocks the current the circuit needs and conducts the one it does not.",
+      "severity_cap": "error"
+    }
+  ],
+  "coverage": {
+    "pins_total": 2,
+    "pins_with_role": 2,
+    "pins_classified": 0,
+    "pins_role_from_symbol": 2,
+    "pins_role_from_pattern": 0,
+    "pins_role_from_datasheet": 0,
+    "domains": 0,
+    "domains_with_voltage": 0,
+    "clauses": 2,
+    "clauses_enforceable": 2,
+    "clauses_error_grade": 2,
+    "clauses_cited": 0,
+    "score": 12.5
+  },
+  "flags": [
+    "pruned:6",
+    "no_supply_voltages"
+  ],
+  "hash": "sha256:d429753be2ab010244366c844d1eb2c7885efa4baa4931ba046d418b265e8c3f"
+}

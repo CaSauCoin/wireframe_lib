@@ -1,0 +1,125 @@
+{
+  "contract_schema": 1,
+  "part": {
+    "lib_id": "kicad-symbols/Transistor_FET_Other/VNB35N07xx-E",
+    "slug": "kicad-symbols__Transistor_FET_Other__VNB35N07xx-E",
+    "name": "VNB35N07xx-E",
+    "class": "discrete.fet",
+    "archetype": "discrete.transistor.mosfet",
+    "family": "fet.generic",
+    "footprint": "TO-263-2",
+    "pad_count": 3,
+    "mount": "smd",
+    "datasheet": "https://www.st.com/resource/en/datasheet/vnp35n07-e.pdf",
+    "description": "Fully autoprotected Power MOSFET, OMNIFET, 35A Ilim, 70V Vclamp, 0.028 ohms Rds(on), diagnostic/fault feedback, TO-263-2 (D2PAK)",
+    "source": "kicad-symbols"
+  },
+  "domains": [],
+  "pins": [
+    {
+      "number": "1",
+      "name": "INPUT",
+      "sym_type": "bidirectional",
+      "unit": 1,
+      "role": "bidirectional",
+      "domain": "",
+      "required": "unknown",
+      "polarity": "unknown",
+      "pull": "unknown",
+      "v_abs_max": null,
+      "v_abs_min": null,
+      "i_max_ma": null,
+      "provenance": {
+        "number": "symbol",
+        "name": "symbol",
+        "sym_type": "symbol",
+        "role": "symbol"
+      },
+      "matched_pattern": "",
+      "note": ""
+    },
+    {
+      "number": "2",
+      "name": "DRAIN",
+      "sym_type": "passive",
+      "unit": 1,
+      "role": "passive",
+      "domain": "",
+      "required": "yes",
+      "polarity": "unknown",
+      "pull": "unknown",
+      "v_abs_max": null,
+      "v_abs_min": null,
+      "i_max_ma": null,
+      "provenance": {
+        "number": "symbol",
+        "name": "symbol",
+        "sym_type": "symbol",
+        "role": "pattern",
+        "required": "pattern"
+      },
+      "matched_pattern": "discrete.fet_drain",
+      "note": ""
+    },
+    {
+      "number": "3",
+      "name": "SOURCE",
+      "sym_type": "passive",
+      "unit": 1,
+      "role": "passive",
+      "domain": "",
+      "required": "yes",
+      "polarity": "unknown",
+      "pull": "unknown",
+      "v_abs_max": null,
+      "v_abs_min": null,
+      "i_max_ma": null,
+      "provenance": {
+        "number": "symbol",
+        "name": "symbol",
+        "sym_type": "symbol",
+        "role": "pattern",
+        "required": "pattern"
+      },
+      "matched_pattern": "discrete.fet_source",
+      "note": ""
+    }
+  ],
+  "companions": [],
+  "rules": [
+    {
+      "id": "legs_connected",
+      "kind": "must_connect",
+      "applies_to": [],
+      "applies_to_roles": [
+        "passive",
+        "input"
+      ],
+      "params": {},
+      "severity": "error",
+      "provenance": "archetype",
+      "rationale": "A MOSFET with an unconnected terminal does nothing.",
+      "severity_cap": "error"
+    }
+  ],
+  "coverage": {
+    "pins_total": 3,
+    "pins_with_role": 3,
+    "pins_classified": 2,
+    "pins_role_from_symbol": 1,
+    "pins_role_from_pattern": 2,
+    "pins_role_from_datasheet": 0,
+    "domains": 0,
+    "domains_with_voltage": 0,
+    "clauses": 1,
+    "clauses_enforceable": 1,
+    "clauses_error_grade": 1,
+    "clauses_cited": 0,
+    "score": 42.9
+  },
+  "flags": [
+    "pruned:8",
+    "no_supply_voltages"
+  ],
+  "hash": "sha256:8a304eefdccdb841275b512b4c8c562a748824ce79f278a58bf8646ebcc9ab87"
+}
