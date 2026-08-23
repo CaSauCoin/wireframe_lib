@@ -1,0 +1,540 @@
+{
+  "contract_schema": 1,
+  "part": {
+    "lib_id": "kicad-symbols/Converter_DCDC/TPS54240DGQ",
+    "slug": "kicad-symbols__Converter_DCDC__TPS54240DGQ",
+    "name": "TPS54240DGQ",
+    "class": "ic.power.converter",
+    "archetype": "ic.regulator.buck",
+    "family": "reg.buck",
+    "footprint": "HVSSOP-10-1EP_3x3mm_P0.5mm_EP1.83x1.89mm",
+    "pad_count": 11,
+    "mount": "smd",
+    "datasheet": "http://www.ti.com/lit/ds/symlink/tps54240.pdf",
+    "description": "3.5-V to 42-V 2.5A Step-Down DC DC Converter, SSOP-10",
+    "source": "kicad-symbols"
+  },
+  "domains": [
+    {
+      "id": "VIN",
+      "kind": "supply",
+      "ref": "GND",
+      "v_min": null,
+      "v_nom": null,
+      "v_max": null,
+      "i_typ_ma": null,
+      "provenance": "pattern",
+      "note": ""
+    },
+    {
+      "id": "GND",
+      "kind": "ground",
+      "ref": "",
+      "v_min": null,
+      "v_nom": null,
+      "v_max": null,
+      "i_typ_ma": null,
+      "provenance": "pattern",
+      "note": ""
+    }
+  ],
+  "pins": [
+    {
+      "number": "1",
+      "name": "BOOT",
+      "sym_type": "input",
+      "unit": 1,
+      "role": "bootstrap",
+      "domain": "",
+      "required": "yes",
+      "polarity": "unknown",
+      "pull": "unknown",
+      "v_abs_max": null,
+      "v_abs_min": null,
+      "i_max_ma": null,
+      "provenance": {
+        "number": "symbol",
+        "name": "symbol",
+        "sym_type": "symbol",
+        "role": "pattern",
+        "required": "pattern"
+      },
+      "matched_pattern": "regulator.bootstrap",
+      "note": "High-side gate drive supply. Needs its capacitor to the switch node or the high side never turns on."
+    },
+    {
+      "number": "2",
+      "name": "VIN",
+      "sym_type": "power_in",
+      "unit": 1,
+      "role": "power_in",
+      "domain": "VIN",
+      "required": "yes",
+      "polarity": "active_high",
+      "pull": "unknown",
+      "v_abs_max": null,
+      "v_abs_min": null,
+      "i_max_ma": null,
+      "provenance": {
+        "number": "symbol",
+        "name": "symbol",
+        "sym_type": "symbol",
+        "role": "pattern",
+        "domain": "pattern",
+        "required": "pattern",
+        "polarity": "pattern"
+      },
+      "matched_pattern": "power.regulator_in",
+      "note": "On a regulator, IN is the unregulated supply. The same name on a logic part is a signal, which is why this rule is scoped."
+    },
+    {
+      "number": "3",
+      "name": "EN",
+      "sym_type": "input",
+      "unit": 1,
+      "role": "enable",
+      "domain": "",
+      "required": "yes",
+      "polarity": "unknown",
+      "pull": "either_required",
+      "v_abs_max": null,
+      "v_abs_min": null,
+      "i_max_ma": null,
+      "provenance": {
+        "number": "symbol",
+        "name": "symbol",
+        "sym_type": "symbol",
+        "role": "pattern",
+        "required": "pattern",
+        "pull": "pattern"
+      },
+      "matched_pattern": "control.enable",
+      "note": "An enable left floating gives a part that works on the bench and not in the field."
+    },
+    {
+      "number": "4",
+      "name": "SS/TR",
+      "sym_type": "passive",
+      "unit": 1,
+      "role": "passive",
+      "domain": "",
+      "required": "unknown",
+      "polarity": "unknown",
+      "pull": "unknown",
+      "v_abs_max": null,
+      "v_abs_min": null,
+      "i_max_ma": null,
+      "provenance": {
+        "number": "symbol",
+        "name": "symbol",
+        "sym_type": "symbol",
+        "role": "symbol"
+      },
+      "matched_pattern": "",
+      "note": ""
+    },
+    {
+      "number": "5",
+      "name": "RT/CLK",
+      "sym_type": "passive",
+      "unit": 1,
+      "role": "passive",
+      "domain": "",
+      "required": "unknown",
+      "polarity": "unknown",
+      "pull": "unknown",
+      "v_abs_max": null,
+      "v_abs_min": null,
+      "i_max_ma": null,
+      "provenance": {
+        "number": "symbol",
+        "name": "symbol",
+        "sym_type": "symbol",
+        "role": "symbol"
+      },
+      "matched_pattern": "",
+      "note": ""
+    },
+    {
+      "number": "6",
+      "name": "PWRGD",
+      "sym_type": "open_collector",
+      "unit": 1,
+      "role": "open_drain",
+      "domain": "",
+      "required": "unknown",
+      "polarity": "unknown",
+      "pull": "unknown",
+      "v_abs_max": null,
+      "v_abs_min": null,
+      "i_max_ma": null,
+      "provenance": {
+        "number": "symbol",
+        "name": "symbol",
+        "sym_type": "symbol",
+        "role": "symbol"
+      },
+      "matched_pattern": "",
+      "note": ""
+    },
+    {
+      "number": "7",
+      "name": "VSENSE",
+      "sym_type": "input",
+      "unit": 1,
+      "role": "feedback",
+      "domain": "",
+      "required": "yes",
+      "polarity": "unknown",
+      "pull": "unknown",
+      "v_abs_max": null,
+      "v_abs_min": null,
+      "i_max_ma": null,
+      "provenance": {
+        "number": "symbol",
+        "name": "symbol",
+        "sym_type": "symbol",
+        "role": "pattern",
+        "required": "pattern"
+      },
+      "matched_pattern": "regulator.feedback",
+      "note": "The node that sets the output voltage. It is high impedance and defines the regulation loop."
+    },
+    {
+      "number": "8",
+      "name": "COMP",
+      "sym_type": "passive",
+      "unit": 1,
+      "role": "feedback",
+      "domain": "",
+      "required": "yes",
+      "polarity": "unknown",
+      "pull": "unknown",
+      "v_abs_max": null,
+      "v_abs_min": null,
+      "i_max_ma": null,
+      "provenance": {
+        "number": "symbol",
+        "name": "symbol",
+        "sym_type": "symbol",
+        "role": "pattern",
+        "required": "pattern"
+      },
+      "matched_pattern": "regulator.feedback",
+      "note": "The node that sets the output voltage. It is high impedance and defines the regulation loop."
+    },
+    {
+      "number": "9",
+      "name": "GND",
+      "sym_type": "power_in",
+      "unit": 1,
+      "role": "ground",
+      "domain": "GND",
+      "required": "yes",
+      "polarity": "unknown",
+      "pull": "unknown",
+      "v_abs_max": null,
+      "v_abs_min": null,
+      "i_max_ma": null,
+      "provenance": {
+        "number": "symbol",
+        "name": "symbol",
+        "sym_type": "symbol",
+        "role": "pattern",
+        "domain": "pattern",
+        "required": "pattern"
+      },
+      "matched_pattern": "ground.digital",
+      "note": ""
+    },
+    {
+      "number": "10",
+      "name": "PH",
+      "sym_type": "power_out",
+      "unit": 1,
+      "role": "switch_node",
+      "domain": "",
+      "required": "yes",
+      "polarity": "unknown",
+      "pull": "unknown",
+      "v_abs_max": null,
+      "v_abs_min": null,
+      "i_max_ma": null,
+      "provenance": {
+        "number": "symbol",
+        "name": "symbol",
+        "sym_type": "symbol",
+        "role": "pattern",
+        "required": "pattern"
+      },
+      "matched_pattern": "regulator.switch_node",
+      "note": "The switching node. It carries the full edge rate and belongs only to the inductor, the catch diode and the bootstrap cap."
+    },
+    {
+      "number": "11",
+      "name": "GND",
+      "sym_type": "passive",
+      "unit": 1,
+      "role": "ground",
+      "domain": "GND",
+      "required": "yes",
+      "polarity": "unknown",
+      "pull": "unknown",
+      "v_abs_max": null,
+      "v_abs_min": null,
+      "i_max_ma": null,
+      "provenance": {
+        "number": "symbol",
+        "name": "symbol",
+        "sym_type": "symbol",
+        "role": "pattern",
+        "domain": "pattern",
+        "required": "pattern"
+      },
+      "matched_pattern": "ground.digital",
+      "note": ""
+    }
+  ],
+  "companions": [
+    {
+      "id": "decoupling",
+      "kind": "decoupling_cap",
+      "scope": "pin",
+      "applies_to": [],
+      "applies_to_roles": [
+        "power_in"
+      ],
+      "value": "100nF",
+      "value_min": "",
+      "value_max": "",
+      "max_distance_mm": 3.0,
+      "count": 1,
+      "severity": "error",
+      "provenance": "archetype",
+      "rationale": "Each supply pin needs a local ceramic to supply the switching current the rail cannot deliver fast enough; without it the die sees its own supply collapse on every edge.",
+      "severity_cap": "error"
+    },
+    {
+      "id": "bulk",
+      "kind": "bulk_cap",
+      "scope": "device",
+      "applies_to": [],
+      "applies_to_roles": [
+        "power_in"
+      ],
+      "value": "10uF",
+      "value_min": "",
+      "value_max": "",
+      "max_distance_mm": null,
+      "count": 1,
+      "severity": "warn",
+      "provenance": "archetype",
+      "rationale": "One bulk capacitor per device holds the rail up through load steps the decoupling caps are too small for.",
+      "severity_cap": "warn"
+    },
+    {
+      "id": "input_cap",
+      "kind": "cap_to_gnd",
+      "scope": "pin",
+      "applies_to": [],
+      "applies_to_roles": [
+        "power_in"
+      ],
+      "value": "10uF",
+      "value_min": "",
+      "value_max": "",
+      "max_distance_mm": 5.0,
+      "count": 1,
+      "severity": "error",
+      "provenance": "archetype",
+      "rationale": "The input capacitor carries the switching current. Placed far away, or absent, the input rail carries it instead and the whole board sees the ripple.",
+      "severity_cap": "error"
+    },
+    {
+      "id": "inductor",
+      "kind": "inductor",
+      "scope": "pin",
+      "applies_to": [],
+      "applies_to_roles": [
+        "switch_node"
+      ],
+      "value": "",
+      "value_min": "",
+      "value_max": "",
+      "max_distance_mm": null,
+      "count": 1,
+      "severity": "error",
+      "provenance": "archetype",
+      "rationale": "The inductor is the energy-storage element; a switcher without one is a shorted transistor.",
+      "severity_cap": "error"
+    },
+    {
+      "id": "output_cap",
+      "kind": "cap_to_gnd",
+      "scope": "device",
+      "applies_to": [],
+      "applies_to_roles": [],
+      "value": "22uF",
+      "value_min": "",
+      "value_max": "",
+      "max_distance_mm": null,
+      "count": 1,
+      "severity": "error",
+      "provenance": "archetype",
+      "rationale": "The output capacitor turns the inductor's triangular current into a usable rail and closes the loop.",
+      "severity_cap": "error"
+    },
+    {
+      "id": "bootstrap_cap",
+      "kind": "bootstrap_cap",
+      "scope": "pin",
+      "applies_to": [],
+      "applies_to_roles": [
+        "bootstrap"
+      ],
+      "value": "100nF",
+      "value_min": "",
+      "value_max": "",
+      "max_distance_mm": null,
+      "count": 1,
+      "severity": "error",
+      "provenance": "archetype",
+      "rationale": "The bootstrap capacitor is the only supply the high-side gate driver has. Without it the high-side switch never fully turns on.",
+      "severity_cap": "error"
+    },
+    {
+      "id": "feedback_network",
+      "kind": "feedback_divider",
+      "scope": "pin",
+      "applies_to": [],
+      "applies_to_roles": [
+        "feedback"
+      ],
+      "value": "",
+      "value_min": "",
+      "value_max": "",
+      "max_distance_mm": null,
+      "count": 1,
+      "severity": "error",
+      "provenance": "archetype",
+      "rationale": "The divider sets the output voltage. A floating feedback pin makes the converter run to its duty-cycle limit.",
+      "severity_cap": "error"
+    }
+  ],
+  "rules": [
+    {
+      "id": "power_pins_connected",
+      "kind": "must_connect",
+      "applies_to": [],
+      "applies_to_roles": [
+        "power_in",
+        "ground"
+      ],
+      "params": {},
+      "severity": "error",
+      "provenance": "archetype",
+      "rationale": "A supply or return pin that reaches no net means the part is unpowered.",
+      "severity_cap": "error"
+    },
+    {
+      "id": "inputs_not_floating",
+      "kind": "no_floating",
+      "applies_to": [],
+      "applies_to_roles": [
+        "input",
+        "enable",
+        "boot_mode",
+        "reset",
+        "clock_in"
+      ],
+      "params": {},
+      "severity": "warn",
+      "provenance": "archetype",
+      "rationale": "A floating input sits at an undefined level and picks up whatever is nearby.",
+      "severity_cap": "warn"
+    },
+    {
+      "id": "open_drain_needs_pull",
+      "kind": "requires_pull",
+      "applies_to": [],
+      "applies_to_roles": [
+        "open_drain"
+      ],
+      "params": {
+        "direction": "up"
+      },
+      "severity": "error",
+      "provenance": "archetype",
+      "rationale": "An open-drain pin can only pull down; without a pull-up its net never reaches a logic high.",
+      "severity_cap": "error"
+    },
+    {
+      "id": "supply_domains_consistent",
+      "kind": "domain_consistency",
+      "applies_to": [],
+      "applies_to_roles": [
+        "power_in",
+        "power_out",
+        "ground"
+      ],
+      "params": {},
+      "severity": "warn",
+      "provenance": "archetype",
+      "rationale": "Pins the symbol groups into one domain landing on different nets is usually a wiring slip, occasionally deliberate.",
+      "severity_cap": "warn"
+    },
+    {
+      "id": "switch_node_private",
+      "kind": "exclusive_net",
+      "applies_to": [],
+      "applies_to_roles": [
+        "switch_node"
+      ],
+      "params": {
+        "allowed_kinds": [
+          "inductor",
+          "flyback_diode",
+          "bootstrap_cap",
+          "snubber"
+        ]
+      },
+      "severity": "error",
+      "provenance": "archetype",
+      "rationale": "The switch node swings the full input voltage at the switching edge rate. Anything else sharing it is both a victim and an antenna.",
+      "severity_cap": "error"
+    },
+    {
+      "id": "feedback_not_shorted",
+      "kind": "no_short_to_rail",
+      "applies_to": [],
+      "applies_to_roles": [
+        "feedback"
+      ],
+      "params": {},
+      "severity": "error",
+      "provenance": "archetype",
+      "rationale": "Feedback tied straight to a rail tells the loop the output is already wrong in one direction, permanently.",
+      "severity_cap": "error"
+    }
+  ],
+  "coverage": {
+    "pins_total": 11,
+    "pins_with_role": 11,
+    "pins_classified": 8,
+    "pins_role_from_symbol": 3,
+    "pins_role_from_pattern": 8,
+    "pins_role_from_datasheet": 0,
+    "domains": 2,
+    "domains_with_voltage": 0,
+    "clauses": 13,
+    "clauses_enforceable": 13,
+    "clauses_error_grade": 10,
+    "clauses_cited": 0,
+    "score": 65.0
+  },
+  "flags": [
+    "pruned:2",
+    "no_supply_voltages"
+  ],
+  "hash": "sha256:c4449fa2bb926ffb6191fc691b73f62630f9e4f6968cc58b19a05a6c59d59c7d"
+}

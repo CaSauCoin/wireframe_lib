@@ -1,0 +1,264 @@
+{
+  "contract_schema": 1,
+  "part": {
+    "lib_id": "digikey-kicad-library/dk_Optoisolators-Transistor-Photovoltaic-Output/4N25",
+    "slug": "digikey-kicad-library__dk_Optoisolators-Transistor-Photovoltaic-Output__4N25",
+    "name": "4N25",
+    "class": "ic",
+    "archetype": "ic.optocoupler",
+    "family": "iso.optocoupler",
+    "footprint": "DIP-6_W7.62mm",
+    "pad_count": 6,
+    "mount": "unknown",
+    "datasheet": "http://optoelectronics.liteon.com/upload/download/DS-70-99-0010/4N2X%20series%20Datasheet%201115.pdf",
+    "description": "OPTOISO 2.5KV TRANS W/BASE 6DIP",
+    "source": "digikey-kicad-library"
+  },
+  "domains": [],
+  "pins": [
+    {
+      "number": "1",
+      "name": "",
+      "sym_type": "passive",
+      "unit": 1,
+      "role": "passive",
+      "domain": "",
+      "required": "unknown",
+      "polarity": "unknown",
+      "pull": "unknown",
+      "v_abs_max": null,
+      "v_abs_min": null,
+      "i_max_ma": null,
+      "provenance": {
+        "number": "symbol",
+        "name": "symbol",
+        "sym_type": "symbol",
+        "role": "symbol"
+      },
+      "matched_pattern": "",
+      "note": ""
+    },
+    {
+      "number": "2",
+      "name": "",
+      "sym_type": "passive",
+      "unit": 1,
+      "role": "passive",
+      "domain": "",
+      "required": "unknown",
+      "polarity": "unknown",
+      "pull": "unknown",
+      "v_abs_max": null,
+      "v_abs_min": null,
+      "i_max_ma": null,
+      "provenance": {
+        "number": "symbol",
+        "name": "symbol",
+        "sym_type": "symbol",
+        "role": "symbol"
+      },
+      "matched_pattern": "",
+      "note": ""
+    },
+    {
+      "number": "3",
+      "name": "",
+      "sym_type": "no_connect",
+      "unit": 1,
+      "role": "nc",
+      "domain": "",
+      "required": "unknown",
+      "polarity": "unknown",
+      "pull": "unknown",
+      "v_abs_max": null,
+      "v_abs_min": null,
+      "i_max_ma": null,
+      "provenance": {
+        "number": "symbol",
+        "name": "symbol",
+        "sym_type": "symbol",
+        "role": "symbol"
+      },
+      "matched_pattern": "",
+      "note": ""
+    },
+    {
+      "number": "4",
+      "name": "",
+      "sym_type": "passive",
+      "unit": 1,
+      "role": "passive",
+      "domain": "",
+      "required": "unknown",
+      "polarity": "unknown",
+      "pull": "unknown",
+      "v_abs_max": null,
+      "v_abs_min": null,
+      "i_max_ma": null,
+      "provenance": {
+        "number": "symbol",
+        "name": "symbol",
+        "sym_type": "symbol",
+        "role": "symbol"
+      },
+      "matched_pattern": "",
+      "note": ""
+    },
+    {
+      "number": "5",
+      "name": "",
+      "sym_type": "output",
+      "unit": 1,
+      "role": "output",
+      "domain": "",
+      "required": "unknown",
+      "polarity": "unknown",
+      "pull": "unknown",
+      "v_abs_max": null,
+      "v_abs_min": null,
+      "i_max_ma": null,
+      "provenance": {
+        "number": "symbol",
+        "name": "symbol",
+        "sym_type": "symbol",
+        "role": "symbol"
+      },
+      "matched_pattern": "",
+      "note": ""
+    },
+    {
+      "number": "6",
+      "name": "",
+      "sym_type": "input",
+      "unit": 1,
+      "role": "input",
+      "domain": "",
+      "required": "unknown",
+      "polarity": "unknown",
+      "pull": "unknown",
+      "v_abs_max": null,
+      "v_abs_min": null,
+      "i_max_ma": null,
+      "provenance": {
+        "number": "symbol",
+        "name": "symbol",
+        "sym_type": "symbol",
+        "role": "symbol"
+      },
+      "matched_pattern": "",
+      "note": ""
+    }
+  ],
+  "companions": [
+    {
+      "id": "led_series",
+      "kind": "series_resistor",
+      "scope": "device",
+      "applies_to": [],
+      "applies_to_roles": [],
+      "value": "1k",
+      "value_min": "",
+      "value_max": "",
+      "max_distance_mm": null,
+      "count": 1,
+      "severity": "error",
+      "provenance": "archetype",
+      "rationale": "The input side is an LED. Driven from a logic pin with no series resistor it takes the pin's whole current capability.",
+      "severity_cap": "error"
+    },
+    {
+      "id": "output_pull",
+      "kind": "pull_up",
+      "scope": "device",
+      "applies_to": [],
+      "applies_to_roles": [],
+      "value": "10k",
+      "value_min": "",
+      "value_max": "",
+      "max_distance_mm": null,
+      "count": 1,
+      "severity": "error",
+      "provenance": "archetype",
+      "rationale": "The output is a phototransistor: it can only pull down, so the receiving side needs a pull-up.",
+      "severity_cap": "error"
+    }
+  ],
+  "rules": [
+    {
+      "id": "no_driver_conflict",
+      "kind": "no_direct_tie",
+      "applies_to": [],
+      "applies_to_roles": [
+        "output",
+        "clock_out",
+        "analog_out"
+      ],
+      "params": {
+        "against_roles": [
+          "output",
+          "clock_out",
+          "analog_out",
+          "power_out"
+        ],
+        "scope": "any"
+      },
+      "severity": "error",
+      "provenance": "archetype",
+      "rationale": "Two drivers on one net fight; whichever is stronger sources the other's short-circuit current.",
+      "severity_cap": "error"
+    },
+    {
+      "id": "no_output_into_rail",
+      "kind": "no_short_to_rail",
+      "applies_to": [],
+      "applies_to_roles": [
+        "output",
+        "clock_out",
+        "analog_out"
+      ],
+      "params": {},
+      "severity": "error",
+      "provenance": "archetype",
+      "rationale": "An output tied straight to a supply or ground is a short the moment it drives the other way.",
+      "severity_cap": "error"
+    },
+    {
+      "id": "inputs_not_floating",
+      "kind": "no_floating",
+      "applies_to": [],
+      "applies_to_roles": [
+        "input",
+        "enable",
+        "boot_mode",
+        "reset",
+        "clock_in"
+      ],
+      "params": {},
+      "severity": "warn",
+      "provenance": "archetype",
+      "rationale": "A floating input sits at an undefined level and picks up whatever is nearby.",
+      "severity_cap": "warn"
+    }
+  ],
+  "coverage": {
+    "pins_total": 6,
+    "pins_with_role": 6,
+    "pins_classified": 0,
+    "pins_role_from_symbol": 6,
+    "pins_role_from_pattern": 0,
+    "pins_role_from_datasheet": 0,
+    "domains": 0,
+    "domains_with_voltage": 0,
+    "clauses": 5,
+    "clauses_enforceable": 5,
+    "clauses_error_grade": 4,
+    "clauses_cited": 0,
+    "score": 25.0
+  },
+  "flags": [
+    "pruned:3",
+    "no_supply_pins_found",
+    "no_supply_voltages"
+  ],
+  "hash": "sha256:9aa60fd7e896f9cd8ad0086bf01a92b2adf5e86d1c8966364d9bd1e584fac38a"
+}

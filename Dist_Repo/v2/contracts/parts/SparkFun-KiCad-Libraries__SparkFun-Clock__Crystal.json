@@ -1,0 +1,121 @@
+{
+  "contract_schema": 1,
+  "part": {
+    "lib_id": "SparkFun-KiCad-Libraries/SparkFun-Clock/Crystal",
+    "slug": "SparkFun-KiCad-Libraries__SparkFun-Clock__Crystal",
+    "name": "Crystal",
+    "class": "passive.crystal",
+    "archetype": "passive.crystal",
+    "family": "passive.crystal",
+    "footprint": "Crystal_SMD_HC49-SD",
+    "pad_count": 2,
+    "mount": "smd",
+    "datasheet": "",
+    "description": "Crystal",
+    "source": "SparkFun-KiCad-Libraries"
+  },
+  "domains": [],
+  "pins": [
+    {
+      "number": "1",
+      "name": "1",
+      "sym_type": "passive",
+      "unit": 1,
+      "role": "passive",
+      "domain": "",
+      "required": "yes",
+      "polarity": "unknown",
+      "pull": "unknown",
+      "v_abs_max": null,
+      "v_abs_min": null,
+      "i_max_ma": null,
+      "provenance": {
+        "number": "symbol",
+        "name": "symbol",
+        "sym_type": "symbol",
+        "role": "pattern",
+        "required": "pattern"
+      },
+      "matched_pattern": "passive.numbered_leg",
+      "note": "A bare number on a small part is one of its legs. On anything larger it means the symbol was never given pin names, which is a library defect, not a role."
+    },
+    {
+      "number": "2",
+      "name": "2",
+      "sym_type": "passive",
+      "unit": 1,
+      "role": "passive",
+      "domain": "",
+      "required": "yes",
+      "polarity": "unknown",
+      "pull": "unknown",
+      "v_abs_max": null,
+      "v_abs_min": null,
+      "i_max_ma": null,
+      "provenance": {
+        "number": "symbol",
+        "name": "symbol",
+        "sym_type": "symbol",
+        "role": "pattern",
+        "required": "pattern"
+      },
+      "matched_pattern": "passive.numbered_leg",
+      "note": "A bare number on a small part is one of its legs. On anything larger it means the symbol was never given pin names, which is a library defect, not a role."
+    }
+  ],
+  "companions": [
+    {
+      "id": "load_caps",
+      "kind": "crystal_load_cap",
+      "scope": "pin",
+      "applies_to": [],
+      "applies_to_roles": [
+        "passive"
+      ],
+      "value": "18pF",
+      "value_min": "",
+      "value_max": "",
+      "max_distance_mm": null,
+      "count": 2,
+      "severity": "error",
+      "provenance": "archetype",
+      "rationale": "A crystal only oscillates at its rated frequency into its specified load capacitance; the two caps to ground are what create it. The value shown is a placeholder — the real one is (2 x CL) minus stray, from the crystal's own datasheet.",
+      "severity_cap": "error"
+    }
+  ],
+  "rules": [
+    {
+      "id": "both_legs_connected",
+      "kind": "must_connect",
+      "applies_to": [],
+      "applies_to_roles": [
+        "passive"
+      ],
+      "params": {},
+      "severity": "error",
+      "provenance": "archetype",
+      "rationale": "A two-terminal part with one leg on no net is not in the circuit.",
+      "severity_cap": "error"
+    }
+  ],
+  "coverage": {
+    "pins_total": 2,
+    "pins_with_role": 2,
+    "pins_classified": 2,
+    "pins_role_from_symbol": 0,
+    "pins_role_from_pattern": 2,
+    "pins_role_from_datasheet": 0,
+    "domains": 0,
+    "domains_with_voltage": 0,
+    "clauses": 2,
+    "clauses_enforceable": 2,
+    "clauses_error_grade": 2,
+    "clauses_cited": 0,
+    "score": 67.5
+  },
+  "flags": [
+    "pruned:6",
+    "no_supply_voltages"
+  ],
+  "hash": "sha256:a3f9cd5807f6a3ade6ba2d54d3b98afadcb9a93dbb7098b3e342b3a161ee2ef3"
+}

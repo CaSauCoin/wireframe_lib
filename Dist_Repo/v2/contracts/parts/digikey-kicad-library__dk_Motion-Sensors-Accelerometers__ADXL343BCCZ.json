@@ -1,0 +1,535 @@
+{
+  "contract_schema": 1,
+  "part": {
+    "lib_id": "digikey-kicad-library/dk_Motion-Sensors-Accelerometers/ADXL343BCCZ",
+    "slug": "digikey-kicad-library__dk_Motion-Sensors-Accelerometers__ADXL343BCCZ",
+    "name": "ADXL343BCCZ",
+    "class": "ic",
+    "archetype": "ic.sensor.i2c",
+    "family": "sensor.common",
+    "footprint": "LGA-14_3x5mm_RevA",
+    "pad_count": 14,
+    "mount": "smd",
+    "datasheet": "https://www.analog.com/media/en/technical-documentation/data-sheets/ADXL343.pdf",
+    "description": "ACCEL 2-16G I2C/SPI 14LGA",
+    "source": "digikey-kicad-library"
+  },
+  "domains": [
+    {
+      "id": "VDD_I/O",
+      "kind": "supply",
+      "ref": "GND",
+      "v_min": null,
+      "v_nom": null,
+      "v_max": null,
+      "i_typ_ma": null,
+      "provenance": "pattern",
+      "note": ""
+    },
+    {
+      "id": "GND",
+      "kind": "ground",
+      "ref": "",
+      "v_min": null,
+      "v_nom": null,
+      "v_max": null,
+      "i_typ_ma": null,
+      "provenance": "pattern",
+      "note": ""
+    },
+    {
+      "id": "RES",
+      "kind": "supply",
+      "ref": "GND",
+      "v_min": null,
+      "v_nom": null,
+      "v_max": null,
+      "i_typ_ma": null,
+      "provenance": "pattern",
+      "note": ""
+    },
+    {
+      "id": "VS",
+      "kind": "supply",
+      "ref": "GND",
+      "v_min": null,
+      "v_nom": null,
+      "v_max": null,
+      "i_typ_ma": null,
+      "provenance": "pattern",
+      "note": ""
+    }
+  ],
+  "pins": [
+    {
+      "number": "1",
+      "name": "VDD_I/O",
+      "sym_type": "power_in",
+      "unit": 1,
+      "role": "power_in",
+      "domain": "VDD_I/O",
+      "required": "unknown",
+      "polarity": "active_high",
+      "pull": "unknown",
+      "v_abs_max": null,
+      "v_abs_min": null,
+      "i_max_ma": null,
+      "provenance": {
+        "number": "symbol",
+        "name": "symbol",
+        "sym_type": "symbol",
+        "role": "symbol",
+        "domain": "pattern",
+        "polarity": "pattern"
+      },
+      "matched_pattern": "",
+      "note": ""
+    },
+    {
+      "number": "2",
+      "name": "GND",
+      "sym_type": "power_in",
+      "unit": 1,
+      "role": "ground",
+      "domain": "GND",
+      "required": "yes",
+      "polarity": "unknown",
+      "pull": "unknown",
+      "v_abs_max": null,
+      "v_abs_min": null,
+      "i_max_ma": null,
+      "provenance": {
+        "number": "symbol",
+        "name": "symbol",
+        "sym_type": "symbol",
+        "role": "pattern",
+        "domain": "pattern",
+        "required": "pattern"
+      },
+      "matched_pattern": "ground.digital",
+      "note": ""
+    },
+    {
+      "number": "3",
+      "name": "RES",
+      "sym_type": "power_in",
+      "unit": 1,
+      "role": "power_in",
+      "domain": "RES",
+      "required": "unknown",
+      "polarity": "active_high",
+      "pull": "unknown",
+      "v_abs_max": null,
+      "v_abs_min": null,
+      "i_max_ma": null,
+      "provenance": {
+        "number": "symbol",
+        "name": "symbol",
+        "sym_type": "symbol",
+        "role": "symbol",
+        "domain": "pattern",
+        "polarity": "pattern"
+      },
+      "matched_pattern": "",
+      "note": ""
+    },
+    {
+      "number": "4",
+      "name": "GND",
+      "sym_type": "power_in",
+      "unit": 1,
+      "role": "ground",
+      "domain": "GND",
+      "required": "yes",
+      "polarity": "unknown",
+      "pull": "unknown",
+      "v_abs_max": null,
+      "v_abs_min": null,
+      "i_max_ma": null,
+      "provenance": {
+        "number": "symbol",
+        "name": "symbol",
+        "sym_type": "symbol",
+        "role": "pattern",
+        "domain": "pattern",
+        "required": "pattern"
+      },
+      "matched_pattern": "ground.digital",
+      "note": ""
+    },
+    {
+      "number": "5",
+      "name": "GND",
+      "sym_type": "power_in",
+      "unit": 1,
+      "role": "ground",
+      "domain": "GND",
+      "required": "yes",
+      "polarity": "unknown",
+      "pull": "unknown",
+      "v_abs_max": null,
+      "v_abs_min": null,
+      "i_max_ma": null,
+      "provenance": {
+        "number": "symbol",
+        "name": "symbol",
+        "sym_type": "symbol",
+        "role": "pattern",
+        "domain": "pattern",
+        "required": "pattern"
+      },
+      "matched_pattern": "ground.digital",
+      "note": ""
+    },
+    {
+      "number": "6",
+      "name": "VS",
+      "sym_type": "power_in",
+      "unit": 1,
+      "role": "power_in",
+      "domain": "VS",
+      "required": "yes",
+      "polarity": "active_high",
+      "pull": "unknown",
+      "v_abs_max": null,
+      "v_abs_min": null,
+      "i_max_ma": null,
+      "provenance": {
+        "number": "symbol",
+        "name": "symbol",
+        "sym_type": "symbol",
+        "role": "pattern",
+        "domain": "pattern",
+        "required": "pattern",
+        "polarity": "pattern"
+      },
+      "matched_pattern": "power.in_generic",
+      "note": ""
+    },
+    {
+      "number": "7",
+      "name": "~CS",
+      "sym_type": "input",
+      "unit": 1,
+      "role": "input",
+      "domain": "",
+      "required": "if_used",
+      "polarity": "active_low",
+      "pull": "up_required",
+      "v_abs_max": null,
+      "v_abs_min": null,
+      "i_max_ma": null,
+      "provenance": {
+        "number": "symbol",
+        "name": "symbol",
+        "sym_type": "symbol",
+        "role": "pattern",
+        "required": "pattern",
+        "pull": "pattern",
+        "polarity": "symbol"
+      },
+      "matched_pattern": "iface.chip_select",
+      "note": "An unstrapped chip select leaves the device selected at random during power-up."
+    },
+    {
+      "number": "8",
+      "name": "INT1",
+      "sym_type": "output",
+      "unit": 1,
+      "role": "open_drain",
+      "domain": "",
+      "required": "no",
+      "polarity": "unknown",
+      "pull": "up_required",
+      "v_abs_max": null,
+      "v_abs_min": null,
+      "i_max_ma": null,
+      "provenance": {
+        "number": "symbol",
+        "name": "symbol",
+        "sym_type": "symbol",
+        "role": "pattern",
+        "required": "pattern",
+        "pull": "pattern"
+      },
+      "matched_pattern": "iface.interrupt",
+      "note": ""
+    },
+    {
+      "number": "9",
+      "name": "INT2",
+      "sym_type": "output",
+      "unit": 1,
+      "role": "open_drain",
+      "domain": "",
+      "required": "no",
+      "polarity": "unknown",
+      "pull": "up_required",
+      "v_abs_max": null,
+      "v_abs_min": null,
+      "i_max_ma": null,
+      "provenance": {
+        "number": "symbol",
+        "name": "symbol",
+        "sym_type": "symbol",
+        "role": "pattern",
+        "required": "pattern",
+        "pull": "pattern"
+      },
+      "matched_pattern": "iface.interrupt",
+      "note": ""
+    },
+    {
+      "number": "10",
+      "name": "NC",
+      "sym_type": "no_connect",
+      "unit": 1,
+      "role": "nc",
+      "domain": "",
+      "required": "no",
+      "polarity": "unknown",
+      "pull": "unknown",
+      "v_abs_max": null,
+      "v_abs_min": null,
+      "i_max_ma": null,
+      "provenance": {
+        "number": "symbol",
+        "name": "symbol",
+        "sym_type": "symbol",
+        "role": "pattern",
+        "required": "pattern"
+      },
+      "matched_pattern": "structural.nc",
+      "note": "Explicitly not connected. Distinct from a pin nobody has classified."
+    },
+    {
+      "number": "11",
+      "name": "RES",
+      "sym_type": "power_in",
+      "unit": 1,
+      "role": "power_in",
+      "domain": "RES",
+      "required": "unknown",
+      "polarity": "active_high",
+      "pull": "unknown",
+      "v_abs_max": null,
+      "v_abs_min": null,
+      "i_max_ma": null,
+      "provenance": {
+        "number": "symbol",
+        "name": "symbol",
+        "sym_type": "symbol",
+        "role": "symbol",
+        "domain": "pattern",
+        "polarity": "pattern"
+      },
+      "matched_pattern": "",
+      "note": ""
+    },
+    {
+      "number": "12",
+      "name": "SDO/ALT_ADD",
+      "sym_type": "bidirectional",
+      "unit": 1,
+      "role": "bidirectional",
+      "domain": "",
+      "required": "unknown",
+      "polarity": "unknown",
+      "pull": "unknown",
+      "v_abs_max": null,
+      "v_abs_min": null,
+      "i_max_ma": null,
+      "provenance": {
+        "number": "symbol",
+        "name": "symbol",
+        "sym_type": "symbol",
+        "role": "symbol"
+      },
+      "matched_pattern": "",
+      "note": ""
+    },
+    {
+      "number": "13",
+      "name": "SDA/SDI/SDIO",
+      "sym_type": "bidirectional",
+      "unit": 1,
+      "role": "bidirectional",
+      "domain": "",
+      "required": "unknown",
+      "polarity": "unknown",
+      "pull": "unknown",
+      "v_abs_max": null,
+      "v_abs_min": null,
+      "i_max_ma": null,
+      "provenance": {
+        "number": "symbol",
+        "name": "symbol",
+        "sym_type": "symbol",
+        "role": "symbol"
+      },
+      "matched_pattern": "",
+      "note": ""
+    },
+    {
+      "number": "14",
+      "name": "SCL/SCLK",
+      "sym_type": "bidirectional",
+      "unit": 1,
+      "role": "bidirectional",
+      "domain": "",
+      "required": "unknown",
+      "polarity": "unknown",
+      "pull": "unknown",
+      "v_abs_max": null,
+      "v_abs_min": null,
+      "i_max_ma": null,
+      "provenance": {
+        "number": "symbol",
+        "name": "symbol",
+        "sym_type": "symbol",
+        "role": "symbol"
+      },
+      "matched_pattern": "",
+      "note": ""
+    }
+  ],
+  "companions": [
+    {
+      "id": "decoupling",
+      "kind": "decoupling_cap",
+      "scope": "pin",
+      "applies_to": [],
+      "applies_to_roles": [
+        "power_in"
+      ],
+      "value": "100nF",
+      "value_min": "",
+      "value_max": "",
+      "max_distance_mm": 3.0,
+      "count": 1,
+      "severity": "error",
+      "provenance": "archetype",
+      "rationale": "Each supply pin needs a local ceramic to supply the switching current the rail cannot deliver fast enough; without it the die sees its own supply collapse on every edge.",
+      "severity_cap": "error"
+    },
+    {
+      "id": "bulk",
+      "kind": "bulk_cap",
+      "scope": "device",
+      "applies_to": [],
+      "applies_to_roles": [
+        "power_in"
+      ],
+      "value": "10uF",
+      "value_min": "",
+      "value_max": "",
+      "max_distance_mm": null,
+      "count": 1,
+      "severity": "warn",
+      "provenance": "archetype",
+      "rationale": "One bulk capacitor per device holds the rail up through load steps the decoupling caps are too small for.",
+      "severity_cap": "warn"
+    },
+    {
+      "id": "bus_pullups",
+      "kind": "pull_up",
+      "scope": "bus",
+      "applies_to": [],
+      "applies_to_roles": [
+        "open_drain"
+      ],
+      "value": "4.7k",
+      "value_min": "",
+      "value_max": "",
+      "max_distance_mm": null,
+      "count": 1,
+      "severity": "error",
+      "provenance": "archetype",
+      "rationale": "One pull-up pair per I2C bus, not per device. With none the bus never idles high and no transfer ever starts.",
+      "severity_cap": "error"
+    }
+  ],
+  "rules": [
+    {
+      "id": "power_pins_connected",
+      "kind": "must_connect",
+      "applies_to": [],
+      "applies_to_roles": [
+        "power_in",
+        "ground"
+      ],
+      "params": {},
+      "severity": "error",
+      "provenance": "archetype",
+      "rationale": "A supply or return pin that reaches no net means the part is unpowered.",
+      "severity_cap": "error"
+    },
+    {
+      "id": "inputs_not_floating",
+      "kind": "no_floating",
+      "applies_to": [],
+      "applies_to_roles": [
+        "input",
+        "enable",
+        "boot_mode",
+        "reset",
+        "clock_in"
+      ],
+      "params": {},
+      "severity": "warn",
+      "provenance": "archetype",
+      "rationale": "A floating input sits at an undefined level and picks up whatever is nearby.",
+      "severity_cap": "warn"
+    },
+    {
+      "id": "open_drain_needs_pull",
+      "kind": "requires_pull",
+      "applies_to": [],
+      "applies_to_roles": [
+        "open_drain"
+      ],
+      "params": {
+        "direction": "up"
+      },
+      "severity": "error",
+      "provenance": "archetype",
+      "rationale": "An open-drain pin can only pull down; without a pull-up its net never reaches a logic high.",
+      "severity_cap": "error"
+    },
+    {
+      "id": "supply_domains_consistent",
+      "kind": "domain_consistency",
+      "applies_to": [],
+      "applies_to_roles": [
+        "power_in",
+        "power_out",
+        "ground"
+      ],
+      "params": {},
+      "severity": "warn",
+      "provenance": "archetype",
+      "rationale": "Pins the symbol groups into one domain landing on different nets is usually a wiring slip, occasionally deliberate.",
+      "severity_cap": "warn"
+    }
+  ],
+  "coverage": {
+    "pins_total": 14,
+    "pins_with_role": 14,
+    "pins_classified": 8,
+    "pins_role_from_symbol": 6,
+    "pins_role_from_pattern": 8,
+    "pins_role_from_datasheet": 0,
+    "domains": 4,
+    "domains_with_voltage": 0,
+    "clauses": 7,
+    "clauses_enforceable": 7,
+    "clauses_error_grade": 4,
+    "clauses_cited": 0,
+    "score": 56.4
+  },
+  "flags": [
+    "pruned:3",
+    "no_supply_voltages"
+  ],
+  "hash": "sha256:fe717af73e12c2fd8ad62558453deef25301066e424221081c82cb17e9a4f667"
+}
