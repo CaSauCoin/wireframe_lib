@@ -1,0 +1,558 @@
+{
+  "contract_schema": 1,
+  "part": {
+    "lib_id": "kicad-symbols/Amplifier_Audio/MAX98306xDT",
+    "slug": "kicad-symbols__Amplifier_Audio__MAX98306xDT",
+    "name": "MAX98306xDT",
+    "class": "ic.analog.audio",
+    "archetype": "ic.comparator",
+    "family": "analog.comparator",
+    "footprint": "TDFN-14-1EP_3x3mm_P0.4mm_EP1.78x2.35mm",
+    "pad_count": 15,
+    "mount": "smd",
+    "datasheet": "https://datasheets.maximintegrated.com/en/ds/MAX98306.pdf",
+    "description": "Stereo 3.7 W Class D Amplifier, TDFN-14",
+    "source": "kicad-symbols"
+  },
+  "domains": [
+    {
+      "id": "PGND",
+      "kind": "ground",
+      "ref": "",
+      "v_min": null,
+      "v_nom": null,
+      "v_max": null,
+      "i_typ_ma": null,
+      "provenance": "pattern",
+      "note": ""
+    },
+    {
+      "id": "OUTR_MINUS",
+      "kind": "supply",
+      "ref": "PGND",
+      "v_min": null,
+      "v_nom": null,
+      "v_max": null,
+      "i_typ_ma": null,
+      "provenance": "pattern",
+      "note": ""
+    },
+    {
+      "id": "OUTR_PLUS",
+      "kind": "supply",
+      "ref": "PGND",
+      "v_min": null,
+      "v_nom": null,
+      "v_max": null,
+      "i_typ_ma": null,
+      "provenance": "pattern",
+      "note": ""
+    },
+    {
+      "id": "PVDD",
+      "kind": "supply",
+      "ref": "PGND",
+      "v_min": null,
+      "v_nom": null,
+      "v_max": null,
+      "i_typ_ma": null,
+      "provenance": "pattern",
+      "note": ""
+    },
+    {
+      "id": "OUTL_PLUS",
+      "kind": "supply",
+      "ref": "PGND",
+      "v_min": null,
+      "v_nom": null,
+      "v_max": null,
+      "i_typ_ma": null,
+      "provenance": "pattern",
+      "note": ""
+    },
+    {
+      "id": "OUTL_MINUS",
+      "kind": "supply",
+      "ref": "PGND",
+      "v_min": null,
+      "v_nom": null,
+      "v_max": null,
+      "i_typ_ma": null,
+      "provenance": "pattern",
+      "note": ""
+    }
+  ],
+  "pins": [
+    {
+      "number": "1",
+      "name": "PGND",
+      "sym_type": "power_in",
+      "unit": 1,
+      "role": "ground",
+      "domain": "PGND",
+      "required": "yes",
+      "polarity": "unknown",
+      "pull": "unknown",
+      "v_abs_max": null,
+      "v_abs_min": null,
+      "i_max_ma": null,
+      "provenance": {
+        "number": "symbol",
+        "name": "symbol",
+        "sym_type": "symbol",
+        "role": "pattern",
+        "domain": "pattern",
+        "required": "pattern"
+      },
+      "matched_pattern": "ground.power",
+      "note": "Power-stage return on a switcher."
+    },
+    {
+      "number": "2",
+      "name": "~{SHDN}",
+      "sym_type": "input",
+      "unit": 1,
+      "role": "enable",
+      "domain": "",
+      "required": "yes",
+      "polarity": "active_low",
+      "pull": "either_required",
+      "v_abs_max": null,
+      "v_abs_min": null,
+      "i_max_ma": null,
+      "provenance": {
+        "number": "symbol",
+        "name": "symbol",
+        "sym_type": "symbol",
+        "role": "pattern",
+        "required": "pattern",
+        "pull": "pattern",
+        "polarity": "symbol"
+      },
+      "matched_pattern": "control.enable",
+      "note": "An enable left floating gives a part that works on the bench and not in the field."
+    },
+    {
+      "number": "3",
+      "name": "INL+",
+      "sym_type": "input",
+      "unit": 1,
+      "role": "input",
+      "domain": "",
+      "required": "unknown",
+      "polarity": "unknown",
+      "pull": "unknown",
+      "v_abs_max": null,
+      "v_abs_min": null,
+      "i_max_ma": null,
+      "provenance": {
+        "number": "symbol",
+        "name": "symbol",
+        "sym_type": "symbol",
+        "role": "symbol"
+      },
+      "matched_pattern": "",
+      "note": ""
+    },
+    {
+      "number": "4",
+      "name": "INL-",
+      "sym_type": "input",
+      "unit": 1,
+      "role": "input",
+      "domain": "",
+      "required": "unknown",
+      "polarity": "unknown",
+      "pull": "unknown",
+      "v_abs_max": null,
+      "v_abs_min": null,
+      "i_max_ma": null,
+      "provenance": {
+        "number": "symbol",
+        "name": "symbol",
+        "sym_type": "symbol",
+        "role": "symbol"
+      },
+      "matched_pattern": "",
+      "note": ""
+    },
+    {
+      "number": "5",
+      "name": "GAIN",
+      "sym_type": "input",
+      "unit": 1,
+      "role": "input",
+      "domain": "",
+      "required": "unknown",
+      "polarity": "unknown",
+      "pull": "unknown",
+      "v_abs_max": null,
+      "v_abs_min": null,
+      "i_max_ma": null,
+      "provenance": {
+        "number": "symbol",
+        "name": "symbol",
+        "sym_type": "symbol",
+        "role": "symbol"
+      },
+      "matched_pattern": "",
+      "note": ""
+    },
+    {
+      "number": "6",
+      "name": "INR-",
+      "sym_type": "input",
+      "unit": 1,
+      "role": "input",
+      "domain": "",
+      "required": "unknown",
+      "polarity": "unknown",
+      "pull": "unknown",
+      "v_abs_max": null,
+      "v_abs_min": null,
+      "i_max_ma": null,
+      "provenance": {
+        "number": "symbol",
+        "name": "symbol",
+        "sym_type": "symbol",
+        "role": "symbol"
+      },
+      "matched_pattern": "",
+      "note": ""
+    },
+    {
+      "number": "7",
+      "name": "INR+",
+      "sym_type": "input",
+      "unit": 1,
+      "role": "input",
+      "domain": "",
+      "required": "unknown",
+      "polarity": "unknown",
+      "pull": "unknown",
+      "v_abs_max": null,
+      "v_abs_min": null,
+      "i_max_ma": null,
+      "provenance": {
+        "number": "symbol",
+        "name": "symbol",
+        "sym_type": "symbol",
+        "role": "symbol"
+      },
+      "matched_pattern": "",
+      "note": ""
+    },
+    {
+      "number": "8",
+      "name": "PGND",
+      "sym_type": "passive",
+      "unit": 1,
+      "role": "ground",
+      "domain": "PGND",
+      "required": "yes",
+      "polarity": "unknown",
+      "pull": "unknown",
+      "v_abs_max": null,
+      "v_abs_min": null,
+      "i_max_ma": null,
+      "provenance": {
+        "number": "symbol",
+        "name": "symbol",
+        "sym_type": "symbol",
+        "role": "pattern",
+        "domain": "pattern",
+        "required": "pattern"
+      },
+      "matched_pattern": "ground.power",
+      "note": "Power-stage return on a switcher."
+    },
+    {
+      "number": "9",
+      "name": "OUTR-",
+      "sym_type": "power_out",
+      "unit": 1,
+      "role": "power_out",
+      "domain": "OUTR_MINUS",
+      "required": "unknown",
+      "polarity": "active_high",
+      "pull": "unknown",
+      "v_abs_max": null,
+      "v_abs_min": null,
+      "i_max_ma": null,
+      "provenance": {
+        "number": "symbol",
+        "name": "symbol",
+        "sym_type": "symbol",
+        "role": "symbol",
+        "domain": "pattern",
+        "polarity": "pattern"
+      },
+      "matched_pattern": "",
+      "note": ""
+    },
+    {
+      "number": "10",
+      "name": "OUTR+",
+      "sym_type": "power_out",
+      "unit": 1,
+      "role": "power_out",
+      "domain": "OUTR_PLUS",
+      "required": "unknown",
+      "polarity": "active_high",
+      "pull": "unknown",
+      "v_abs_max": null,
+      "v_abs_min": null,
+      "i_max_ma": null,
+      "provenance": {
+        "number": "symbol",
+        "name": "symbol",
+        "sym_type": "symbol",
+        "role": "symbol",
+        "domain": "pattern",
+        "polarity": "pattern"
+      },
+      "matched_pattern": "",
+      "note": ""
+    },
+    {
+      "number": "11",
+      "name": "PVDD",
+      "sym_type": "power_in",
+      "unit": 1,
+      "role": "power_in",
+      "domain": "PVDD",
+      "required": "unknown",
+      "polarity": "active_high",
+      "pull": "unknown",
+      "v_abs_max": null,
+      "v_abs_min": null,
+      "i_max_ma": null,
+      "provenance": {
+        "number": "symbol",
+        "name": "symbol",
+        "sym_type": "symbol",
+        "role": "symbol",
+        "domain": "pattern",
+        "polarity": "pattern"
+      },
+      "matched_pattern": "",
+      "note": ""
+    },
+    {
+      "number": "12",
+      "name": "PVDD",
+      "sym_type": "passive",
+      "unit": 1,
+      "role": "passive",
+      "domain": "",
+      "required": "unknown",
+      "polarity": "unknown",
+      "pull": "unknown",
+      "v_abs_max": null,
+      "v_abs_min": null,
+      "i_max_ma": null,
+      "provenance": {
+        "number": "symbol",
+        "name": "symbol",
+        "sym_type": "symbol",
+        "role": "symbol"
+      },
+      "matched_pattern": "",
+      "note": ""
+    },
+    {
+      "number": "13",
+      "name": "OUTL+",
+      "sym_type": "power_out",
+      "unit": 1,
+      "role": "power_out",
+      "domain": "OUTL_PLUS",
+      "required": "unknown",
+      "polarity": "active_high",
+      "pull": "unknown",
+      "v_abs_max": null,
+      "v_abs_min": null,
+      "i_max_ma": null,
+      "provenance": {
+        "number": "symbol",
+        "name": "symbol",
+        "sym_type": "symbol",
+        "role": "symbol",
+        "domain": "pattern",
+        "polarity": "pattern"
+      },
+      "matched_pattern": "",
+      "note": ""
+    },
+    {
+      "number": "14",
+      "name": "OUTL-",
+      "sym_type": "power_out",
+      "unit": 1,
+      "role": "power_out",
+      "domain": "OUTL_MINUS",
+      "required": "unknown",
+      "polarity": "active_high",
+      "pull": "unknown",
+      "v_abs_max": null,
+      "v_abs_min": null,
+      "i_max_ma": null,
+      "provenance": {
+        "number": "symbol",
+        "name": "symbol",
+        "sym_type": "symbol",
+        "role": "symbol",
+        "domain": "pattern",
+        "polarity": "pattern"
+      },
+      "matched_pattern": "",
+      "note": ""
+    },
+    {
+      "number": "15",
+      "name": "PGND",
+      "sym_type": "passive",
+      "unit": 1,
+      "role": "ground",
+      "domain": "PGND",
+      "required": "yes",
+      "polarity": "unknown",
+      "pull": "unknown",
+      "v_abs_max": null,
+      "v_abs_min": null,
+      "i_max_ma": null,
+      "provenance": {
+        "number": "symbol",
+        "name": "symbol",
+        "sym_type": "symbol",
+        "role": "pattern",
+        "domain": "pattern",
+        "required": "pattern"
+      },
+      "matched_pattern": "ground.power",
+      "note": "Power-stage return on a switcher."
+    }
+  ],
+  "companions": [
+    {
+      "id": "decoupling",
+      "kind": "decoupling_cap",
+      "scope": "pin",
+      "applies_to": [],
+      "applies_to_roles": [
+        "power_in"
+      ],
+      "value": "100nF",
+      "value_min": "",
+      "value_max": "",
+      "max_distance_mm": 3.0,
+      "count": 1,
+      "severity": "error",
+      "provenance": "archetype",
+      "rationale": "An op-amp's supply rejection falls away above audio frequencies; the local capacitor is what keeps its own output current out of its own supply.",
+      "severity_cap": "error"
+    },
+    {
+      "id": "bulk",
+      "kind": "bulk_cap",
+      "scope": "device",
+      "applies_to": [],
+      "applies_to_roles": [
+        "power_in"
+      ],
+      "value": "10uF",
+      "value_min": "",
+      "value_max": "",
+      "max_distance_mm": null,
+      "count": 1,
+      "severity": "warn",
+      "provenance": "archetype",
+      "rationale": "One bulk capacitor per device holds the rail up through load steps the decoupling caps are too small for.",
+      "severity_cap": "warn"
+    },
+    {
+      "id": "hysteresis",
+      "kind": "feedback_divider",
+      "scope": "device",
+      "applies_to": [],
+      "applies_to_roles": [],
+      "value": "",
+      "value_min": "",
+      "value_max": "",
+      "max_distance_mm": null,
+      "count": 1,
+      "severity": "warn",
+      "provenance": "archetype",
+      "rationale": "Without positive feedback a comparator chatters for the whole time its inputs are within a millivolt of each other.",
+      "severity_cap": "warn"
+    }
+  ],
+  "rules": [
+    {
+      "id": "power_pins_connected",
+      "kind": "must_connect",
+      "applies_to": [],
+      "applies_to_roles": [
+        "power_in",
+        "ground"
+      ],
+      "params": {},
+      "severity": "error",
+      "provenance": "archetype",
+      "rationale": "A supply or return pin that reaches no net means the part is unpowered.",
+      "severity_cap": "error"
+    },
+    {
+      "id": "inputs_not_floating",
+      "kind": "no_floating",
+      "applies_to": [],
+      "applies_to_roles": [
+        "input",
+        "enable",
+        "boot_mode",
+        "reset",
+        "clock_in"
+      ],
+      "params": {},
+      "severity": "warn",
+      "provenance": "archetype",
+      "rationale": "A floating input sits at an undefined level and picks up whatever is nearby.",
+      "severity_cap": "warn"
+    },
+    {
+      "id": "supply_domains_consistent",
+      "kind": "domain_consistency",
+      "applies_to": [],
+      "applies_to_roles": [
+        "power_in",
+        "power_out",
+        "ground"
+      ],
+      "params": {},
+      "severity": "warn",
+      "provenance": "archetype",
+      "rationale": "Pins the symbol groups into one domain landing on different nets is usually a wiring slip, occasionally deliberate.",
+      "severity_cap": "warn"
+    }
+  ],
+  "coverage": {
+    "pins_total": 15,
+    "pins_with_role": 15,
+    "pins_classified": 4,
+    "pins_role_from_symbol": 11,
+    "pins_role_from_pattern": 4,
+    "pins_role_from_datasheet": 0,
+    "domains": 6,
+    "domains_with_voltage": 0,
+    "clauses": 6,
+    "clauses_enforceable": 6,
+    "clauses_error_grade": 2,
+    "clauses_cited": 0,
+    "score": 27.2
+  },
+  "flags": [
+    "pruned:6",
+    "no_supply_voltages"
+  ],
+  "hash": "sha256:bbbd18169d593233b80fa06d2bb3d67933369b649891d65b4c738770459edde2"
+}

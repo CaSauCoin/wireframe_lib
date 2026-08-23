@@ -1,0 +1,152 @@
+{
+  "contract_schema": 1,
+  "part": {
+    "lib_id": "digikey-kicad-library/dk_Temperature-Sensors-Analog-and-Digital-Output/DS18B20_PAR",
+    "slug": "digikey-kicad-library__dk_Temperature-Sensors-Analog-and-Digital-Output__DS18B20_PAR",
+    "name": "DS18B20_PAR",
+    "class": "ic",
+    "archetype": "ic.sensor.i2c",
+    "family": "sensor.common",
+    "footprint": "TO-92-3",
+    "pad_count": 3,
+    "mount": "unknown",
+    "datasheet": "https://datasheets.maximintegrated.com/en/ds/DS18B20-PAR.pdf",
+    "description": "SENSOR DIGITAL -55C-125C TO92-3",
+    "source": "digikey-kicad-library"
+  },
+  "domains": [
+    {
+      "id": "GND",
+      "kind": "ground",
+      "ref": "",
+      "v_min": null,
+      "v_nom": null,
+      "v_max": null,
+      "i_typ_ma": null,
+      "provenance": "pattern",
+      "note": ""
+    }
+  ],
+  "pins": [
+    {
+      "number": "1",
+      "name": "GND",
+      "sym_type": "power_in",
+      "unit": 1,
+      "role": "ground",
+      "domain": "GND",
+      "required": "yes",
+      "polarity": "unknown",
+      "pull": "unknown",
+      "v_abs_max": null,
+      "v_abs_min": null,
+      "i_max_ma": null,
+      "provenance": {
+        "number": "symbol",
+        "name": "symbol",
+        "sym_type": "symbol",
+        "role": "pattern",
+        "domain": "pattern",
+        "required": "pattern"
+      },
+      "matched_pattern": "ground.digital",
+      "note": ""
+    },
+    {
+      "number": "2",
+      "name": "DQ",
+      "sym_type": "bidirectional",
+      "unit": 1,
+      "role": "bidirectional",
+      "domain": "",
+      "required": "unknown",
+      "polarity": "unknown",
+      "pull": "unknown",
+      "v_abs_max": null,
+      "v_abs_min": null,
+      "i_max_ma": null,
+      "provenance": {
+        "number": "symbol",
+        "name": "symbol",
+        "sym_type": "symbol",
+        "role": "symbol"
+      },
+      "matched_pattern": "",
+      "note": ""
+    },
+    {
+      "number": "3",
+      "name": "N.C.",
+      "sym_type": "no_connect",
+      "unit": 1,
+      "role": "nc",
+      "domain": "",
+      "required": "unknown",
+      "polarity": "unknown",
+      "pull": "unknown",
+      "v_abs_max": null,
+      "v_abs_min": null,
+      "i_max_ma": null,
+      "provenance": {
+        "number": "symbol",
+        "name": "symbol",
+        "sym_type": "symbol",
+        "role": "symbol"
+      },
+      "matched_pattern": "",
+      "note": ""
+    }
+  ],
+  "companions": [],
+  "rules": [
+    {
+      "id": "power_pins_connected",
+      "kind": "must_connect",
+      "applies_to": [],
+      "applies_to_roles": [
+        "power_in",
+        "ground"
+      ],
+      "params": {},
+      "severity": "error",
+      "provenance": "archetype",
+      "rationale": "A supply or return pin that reaches no net means the part is unpowered.",
+      "severity_cap": "error"
+    },
+    {
+      "id": "supply_domains_consistent",
+      "kind": "domain_consistency",
+      "applies_to": [],
+      "applies_to_roles": [
+        "power_in",
+        "power_out",
+        "ground"
+      ],
+      "params": {},
+      "severity": "warn",
+      "provenance": "archetype",
+      "rationale": "Pins the symbol groups into one domain landing on different nets is usually a wiring slip, occasionally deliberate.",
+      "severity_cap": "warn"
+    }
+  ],
+  "coverage": {
+    "pins_total": 3,
+    "pins_with_role": 3,
+    "pins_classified": 1,
+    "pins_role_from_symbol": 2,
+    "pins_role_from_pattern": 1,
+    "pins_role_from_datasheet": 0,
+    "domains": 1,
+    "domains_with_voltage": 0,
+    "clauses": 2,
+    "clauses_enforceable": 2,
+    "clauses_error_grade": 1,
+    "clauses_cited": 0,
+    "score": 24.6
+  },
+  "flags": [
+    "pruned:8",
+    "no_supply_voltages"
+  ],
+  "hash": "sha256:4e44b2f28be0d921c9ea3ae8151631c97f09609d8cc366982dd6a3017c03f07f"
+}

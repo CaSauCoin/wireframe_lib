@@ -1,0 +1,344 @@
+{
+  "contract_schema": 1,
+  "part": {
+    "lib_id": "kicad-symbols/Isolator/6N137",
+    "slug": "kicad-symbols__Isolator__6N137",
+    "name": "6N137",
+    "class": "ic.isolator",
+    "archetype": "ic.optocoupler",
+    "family": "iso.optocoupler",
+    "footprint": "DIP-8_W7.62mm",
+    "pad_count": 8,
+    "mount": "through_hole",
+    "datasheet": "https://docs.broadcom.com/docs/AV02-0940EN",
+    "description": "Single High Speed LSTTL/TTL Compatible Optocoupler with enable, dV/dt 1000/us, VCM 10, max 7V VCC, DIP-8",
+    "source": "kicad-symbols"
+  },
+  "domains": [
+    {
+      "id": "GND",
+      "kind": "ground",
+      "ref": "",
+      "v_min": null,
+      "v_nom": null,
+      "v_max": null,
+      "i_typ_ma": null,
+      "provenance": "pattern",
+      "note": ""
+    },
+    {
+      "id": "VO",
+      "kind": "supply",
+      "ref": "GND",
+      "v_min": null,
+      "v_nom": null,
+      "v_max": null,
+      "i_typ_ma": null,
+      "provenance": "pattern",
+      "note": ""
+    },
+    {
+      "id": "VCC",
+      "kind": "supply",
+      "ref": "GND",
+      "v_min": null,
+      "v_nom": null,
+      "v_max": null,
+      "i_typ_ma": null,
+      "provenance": "pattern",
+      "note": ""
+    }
+  ],
+  "pins": [
+    {
+      "number": "1",
+      "name": "NC",
+      "sym_type": "passive",
+      "unit": 1,
+      "role": "nc",
+      "domain": "",
+      "required": "no",
+      "polarity": "unknown",
+      "pull": "unknown",
+      "v_abs_max": null,
+      "v_abs_min": null,
+      "i_max_ma": null,
+      "provenance": {
+        "number": "symbol",
+        "name": "symbol",
+        "sym_type": "symbol",
+        "role": "pattern",
+        "required": "pattern"
+      },
+      "matched_pattern": "structural.nc",
+      "note": "Explicitly not connected. Distinct from a pin nobody has classified."
+    },
+    {
+      "number": "2",
+      "name": "A",
+      "sym_type": "passive",
+      "unit": 1,
+      "role": "passive",
+      "domain": "",
+      "required": "unknown",
+      "polarity": "unknown",
+      "pull": "unknown",
+      "v_abs_max": null,
+      "v_abs_min": null,
+      "i_max_ma": null,
+      "provenance": {
+        "number": "symbol",
+        "name": "symbol",
+        "sym_type": "symbol",
+        "role": "symbol"
+      },
+      "matched_pattern": "",
+      "note": ""
+    },
+    {
+      "number": "3",
+      "name": "C",
+      "sym_type": "passive",
+      "unit": 1,
+      "role": "passive",
+      "domain": "",
+      "required": "unknown",
+      "polarity": "unknown",
+      "pull": "unknown",
+      "v_abs_max": null,
+      "v_abs_min": null,
+      "i_max_ma": null,
+      "provenance": {
+        "number": "symbol",
+        "name": "symbol",
+        "sym_type": "symbol",
+        "role": "symbol"
+      },
+      "matched_pattern": "",
+      "note": ""
+    },
+    {
+      "number": "4",
+      "name": "NC",
+      "sym_type": "passive",
+      "unit": 1,
+      "role": "nc",
+      "domain": "",
+      "required": "no",
+      "polarity": "unknown",
+      "pull": "unknown",
+      "v_abs_max": null,
+      "v_abs_min": null,
+      "i_max_ma": null,
+      "provenance": {
+        "number": "symbol",
+        "name": "symbol",
+        "sym_type": "symbol",
+        "role": "pattern",
+        "required": "pattern"
+      },
+      "matched_pattern": "structural.nc",
+      "note": "Explicitly not connected. Distinct from a pin nobody has classified."
+    },
+    {
+      "number": "5",
+      "name": "GND",
+      "sym_type": "power_in",
+      "unit": 1,
+      "role": "ground",
+      "domain": "GND",
+      "required": "yes",
+      "polarity": "unknown",
+      "pull": "unknown",
+      "v_abs_max": null,
+      "v_abs_min": null,
+      "i_max_ma": null,
+      "provenance": {
+        "number": "symbol",
+        "name": "symbol",
+        "sym_type": "symbol",
+        "role": "pattern",
+        "domain": "pattern",
+        "required": "pattern"
+      },
+      "matched_pattern": "ground.digital",
+      "note": ""
+    },
+    {
+      "number": "6",
+      "name": "VO",
+      "sym_type": "open_collector",
+      "unit": 1,
+      "role": "power_out",
+      "domain": "VO",
+      "required": "yes",
+      "polarity": "active_high",
+      "pull": "unknown",
+      "v_abs_max": null,
+      "v_abs_min": null,
+      "i_max_ma": null,
+      "provenance": {
+        "number": "symbol",
+        "name": "symbol",
+        "sym_type": "symbol",
+        "role": "pattern",
+        "domain": "pattern",
+        "required": "pattern",
+        "polarity": "pattern"
+      },
+      "matched_pattern": "power.out_regulated",
+      "note": "A rail the part produces. A rule engine must not treat it as a supply the part consumes."
+    },
+    {
+      "number": "7",
+      "name": "EN",
+      "sym_type": "input",
+      "unit": 1,
+      "role": "enable",
+      "domain": "",
+      "required": "yes",
+      "polarity": "unknown",
+      "pull": "either_required",
+      "v_abs_max": null,
+      "v_abs_min": null,
+      "i_max_ma": null,
+      "provenance": {
+        "number": "symbol",
+        "name": "symbol",
+        "sym_type": "symbol",
+        "role": "pattern",
+        "required": "pattern",
+        "pull": "pattern"
+      },
+      "matched_pattern": "control.enable",
+      "note": "An enable left floating gives a part that works on the bench and not in the field."
+    },
+    {
+      "number": "8",
+      "name": "VCC",
+      "sym_type": "power_in",
+      "unit": 1,
+      "role": "power_in",
+      "domain": "VCC",
+      "required": "yes",
+      "polarity": "active_high",
+      "pull": "unknown",
+      "v_abs_max": null,
+      "v_abs_min": null,
+      "i_max_ma": null,
+      "provenance": {
+        "number": "symbol",
+        "name": "symbol",
+        "sym_type": "symbol",
+        "role": "pattern",
+        "domain": "pattern",
+        "required": "pattern",
+        "polarity": "pattern"
+      },
+      "matched_pattern": "power.in_generic",
+      "note": ""
+    }
+  ],
+  "companions": [
+    {
+      "id": "led_series",
+      "kind": "series_resistor",
+      "scope": "device",
+      "applies_to": [],
+      "applies_to_roles": [],
+      "value": "1k",
+      "value_min": "",
+      "value_max": "",
+      "max_distance_mm": null,
+      "count": 1,
+      "severity": "error",
+      "provenance": "archetype",
+      "rationale": "The input side is an LED. Driven from a logic pin with no series resistor it takes the pin's whole current capability.",
+      "severity_cap": "error"
+    },
+    {
+      "id": "output_pull",
+      "kind": "pull_up",
+      "scope": "device",
+      "applies_to": [],
+      "applies_to_roles": [],
+      "value": "10k",
+      "value_min": "",
+      "value_max": "",
+      "max_distance_mm": null,
+      "count": 1,
+      "severity": "error",
+      "provenance": "archetype",
+      "rationale": "The output is a phototransistor: it can only pull down, so the receiving side needs a pull-up.",
+      "severity_cap": "error"
+    }
+  ],
+  "rules": [
+    {
+      "id": "power_pins_connected",
+      "kind": "must_connect",
+      "applies_to": [],
+      "applies_to_roles": [
+        "power_in",
+        "ground"
+      ],
+      "params": {},
+      "severity": "error",
+      "provenance": "archetype",
+      "rationale": "A supply or return pin that reaches no net means the part is unpowered.",
+      "severity_cap": "error"
+    },
+    {
+      "id": "inputs_not_floating",
+      "kind": "no_floating",
+      "applies_to": [],
+      "applies_to_roles": [
+        "input",
+        "enable",
+        "boot_mode",
+        "reset",
+        "clock_in"
+      ],
+      "params": {},
+      "severity": "warn",
+      "provenance": "archetype",
+      "rationale": "A floating input sits at an undefined level and picks up whatever is nearby.",
+      "severity_cap": "warn"
+    },
+    {
+      "id": "supply_domains_consistent",
+      "kind": "domain_consistency",
+      "applies_to": [],
+      "applies_to_roles": [
+        "power_in",
+        "power_out",
+        "ground"
+      ],
+      "params": {},
+      "severity": "warn",
+      "provenance": "archetype",
+      "rationale": "Pins the symbol groups into one domain landing on different nets is usually a wiring slip, occasionally deliberate.",
+      "severity_cap": "warn"
+    }
+  ],
+  "coverage": {
+    "pins_total": 8,
+    "pins_with_role": 8,
+    "pins_classified": 6,
+    "pins_role_from_symbol": 2,
+    "pins_role_from_pattern": 6,
+    "pins_role_from_datasheet": 0,
+    "domains": 3,
+    "domains_with_voltage": 0,
+    "clauses": 5,
+    "clauses_enforceable": 5,
+    "clauses_error_grade": 3,
+    "clauses_cited": 0,
+    "score": 60.0
+  },
+  "flags": [
+    "pruned:3",
+    "no_supply_voltages"
+  ],
+  "hash": "sha256:8344a799fb3fe6922e09b5dff0e0847aadd7d7ddd29207382cd99c6be9fe3441"
+}
