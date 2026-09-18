@@ -6,8 +6,8 @@ this file is the summary.
 
 | Source | Licence | Upstream | Commit |
 | ------ | ------- | -------- | ------ |
-| wireframe-curated-maker | mixed per PROVENANCE.json | https://github.com/CaSauCoin/WireFrameEDA | `a5d6ef9c6feeb2d8041d9c9b4253d4c83a017a8a` |
-| wireframe-curated-maker-3d | mixed per PROVENANCE.json | https://github.com/CaSauCoin/WireFrameEDA | `a5d6ef9c6feeb2d8041d9c9b4253d4c83a017a8a` |
+| wireframe-curated-maker | mixed per PROVENANCE.json | https://github.com/CaSauCoin/WireFrameEDA | `4b2775ba4ea5526b6093d05baa35e33cb29417b6` |
+| wireframe-curated-maker-3d | mixed per PROVENANCE.json | https://github.com/CaSauCoin/WireFrameEDA | `4b2775ba4ea5526b6093d05baa35e33cb29417b6` |
 | kicad-symbols | CC-BY-SA-4.0 WITH KiCad-Libraries-exception | https://gitlab.com/kicad/libraries/kicad-symbols | `b705e03a5b374ec0700469011805bf1fd5102df2` |
 | kicad-footprints | CC-BY-SA-4.0 WITH KiCad-Libraries-exception | https://gitlab.com/kicad/libraries/kicad-footprints | `c2593cf26a475def24d7b2135fc46daf4d96d608` |
 | kicad-packages3D | CC-BY-SA-4.0 WITH KiCad-Libraries-exception | https://gitlab.com/kicad/libraries/kicad-packages3D | `e62ed1fc7862da83f789bd562671b5e4b82afcdf` |
