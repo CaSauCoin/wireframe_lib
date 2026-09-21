@@ -949,6 +949,368 @@ PARTS.append(CuratedPart(
 ))
 
 
+
+# ==============================================================================
+# 5. Multi-Digit 7-Segment & Multi-Block LED Matrix Displays
+# ==============================================================================
+
+# 1. 0.56" 2-Digit 7-Segment Display (5261AS / 5261BS)
+p5261_pins = [
+    ("1", "E", -5.08, 7.62, "input", "L"),
+    ("2", "D", -2.54, 7.62, "input", "L"),
+    ("3", "DP", 0.0, 7.62, "input", "L"),
+    ("4", "C", 2.54, 7.62, "input", "L"),
+    ("5", "DIG2", 5.08, 7.62, "power_in", "L"),
+    ("6", "B", 5.08, -7.62, "input", "R"),
+    ("7", "A", 2.54, -7.62, "input", "R"),
+    ("8", "DIG1", 0.0, -7.62, "power_in", "R"),
+    ("9", "F", -2.54, -7.62, "input", "R"),
+    ("10", "G", -5.08, -7.62, "input", "R"),
+]
+PARTS.append(CuratedPart(
+    name="LED-7Segment-2Digit-0.56in",
+    reference="DISP",
+    keywords="display led segment 7-segment 2-digit 0.56 5261as 5261bs dual dip-10",
+    description="0.56 inch 2-digit 7-segment LED display, 10-pin DIP multiplexed (5261AS / 5261BS compatible), 25.0 x 19.0 mm",
+    datasheet="https://datasheet.lcsc.com/lcsc/1811081912_FUXIN-5261AS_C317180.pdf",
+    provenance_url="https://www.sparkfun.com/products/11408",
+    license="published vendor standard component; symbol & footprint project-authored",
+    dimensions_mm=(25.0, 19.0, 8.0),
+    color_rgb=(0.1, 0.1, 0.1),
+    pins=p5261_pins,
+))
+
+# 2. 0.36" 3-Digit 7-Segment Display (3361AS / 3361BS)
+p3361_pins = [
+    ("1", "E", -6.35, 3.81, "input", "L"),
+    ("2", "D", -3.81, 3.81, "input", "L"),
+    ("3", "DP", -1.27, 3.81, "input", "L"),
+    ("4", "C", 1.27, 3.81, "input", "L"),
+    ("5", "G", 3.81, 3.81, "input", "L"),
+    ("6", "DIG3", 6.35, 3.81, "power_in", "L"),
+    ("7", "B", 5.08, -3.81, "input", "R"),
+    ("8", "DIG2", 2.54, -3.81, "power_in", "R"),
+    ("9", "F", 0.0, -3.81, "input", "R"),
+    ("10", "A", -2.54, -3.81, "input", "R"),
+    ("11", "DIG1", -5.08, -3.81, "power_in", "R"),
+]
+PARTS.append(CuratedPart(
+    name="LED-7Segment-3Digit-0.36in",
+    reference="DISP",
+    keywords="display led segment 7-segment 3-digit 0.36 3361as 3361bs triple",
+    description="0.36 inch 3-digit 7-segment LED display, 11-pin compact DIP (3361AS / 3361BS compatible), 22.5 x 14.0 mm",
+    datasheet="https://datasheet.lcsc.com/lcsc/1811081912_FUXIN-3361AS_C317178.pdf",
+    provenance_url="https://www.adafruit.com/product/1270",
+    license="published vendor standard component; symbol & footprint project-authored",
+    dimensions_mm=(22.5, 14.0, 7.2),
+    color_rgb=(0.1, 0.1, 0.1),
+    pins=p3361_pins,
+))
+
+# 3. 0.56" 3-Digit 7-Segment Display (5361AS / 5361BS)
+p5361_pins = [
+    ("1", "E", -6.35, 7.62, "input", "L"),
+    ("2", "D", -3.81, 7.62, "input", "L"),
+    ("3", "DP", -1.27, 7.62, "input", "L"),
+    ("4", "C", 1.27, 7.62, "input", "L"),
+    ("5", "G", 3.81, 7.62, "input", "L"),
+    ("6", "DIG3", 6.35, 7.62, "power_in", "L"),
+    ("7", "B", 6.35, -7.62, "input", "R"),
+    ("8", "DIG2", 3.81, -7.62, "power_in", "R"),
+    ("9", "NC", 1.27, -7.62, "no_connect", "R"),
+    ("10", "F", -1.27, -7.62, "input", "R"),
+    ("11", "A", -3.81, -7.62, "input", "R"),
+    ("12", "DIG1", -6.35, -7.62, "power_in", "R"),
+]
+PARTS.append(CuratedPart(
+    name="LED-7Segment-3Digit-0.56in",
+    reference="DISP",
+    keywords="display led segment 7-segment 3-digit 0.56 5361as 5361bs triple dip-12",
+    description="0.56 inch 3-digit 7-segment LED display, 12-pin DIP multiplexed (5361AS / 5361BS compatible), 37.6 x 19.0 mm",
+    datasheet="https://datasheet.lcsc.com/lcsc/1811081912_FUXIN-5361AS_C317181.pdf",
+    provenance_url="https://www.sparkfun.com/products/11409",
+    license="published vendor standard component; symbol & footprint project-authored",
+    dimensions_mm=(37.6, 19.0, 8.0),
+    color_rgb=(0.1, 0.1, 0.1),
+    pins=p5361_pins,
+))
+
+# 4. 0.56" 4-Digit 7-Segment Display with Clock Colon (5461AS-Clock / 5641BS-Clock)
+p5461_clock_pins = [
+    ("1", "E", -6.35, 7.62, "input", "L"),
+    ("2", "D", -3.81, 7.62, "input", "L"),
+    ("3", "COLON", -1.27, 7.62, "input", "L"),
+    ("4", "C", 1.27, 7.62, "input", "L"),
+    ("5", "G", 3.81, 7.62, "input", "L"),
+    ("6", "DIG4", 6.35, 7.62, "power_in", "L"),
+    ("7", "B", 6.35, -7.62, "input", "R"),
+    ("8", "DIG3", 3.81, -7.62, "power_in", "R"),
+    ("9", "DIG2", 1.27, -7.62, "power_in", "R"),
+    ("10", "F", -1.27, -7.62, "input", "R"),
+    ("11", "A", -3.81, -7.62, "input", "R"),
+    ("12", "DIG1", -6.35, -7.62, "power_in", "R"),
+]
+PARTS.append(CuratedPart(
+    name="LED-7Segment-4Digit-Clock-0.56in",
+    reference="DISP",
+    keywords="display led segment 7-segment 4-digit 0.56 clock colon 5461as 5641bs digital-clock",
+    description="0.56 inch 4-digit 7-segment LED display with central clock colon (:), 12-pin DIP (5461AS-Clock / 5641BS-Clock), 50.3 x 19.0 mm",
+    datasheet="https://datasheet.lcsc.com/lcsc/1811081912_FUXIN-5461AS_C317182.pdf",
+    provenance_url="https://www.adafruit.com/product/811",
+    license="published vendor standard component; symbol & footprint project-authored",
+    dimensions_mm=(50.3, 19.0, 8.0),
+    color_rgb=(0.1, 0.1, 0.1),
+    pins=p5461_clock_pins,
+))
+
+# 5. TM1638 8-Digit Display + 8 Keys + 8 Dual-Color LEDs Module
+tm1638_pins = [
+    ("1", "VCC", 34.0, -5.08, "power_in", "L"),
+    ("2", "GND", 34.0, -2.54, "power_in", "L"),
+    ("3", "CLK", 34.0, 0.0, "input", "L"),
+    ("4", "DIO", 34.0, 2.54, "bidirectional", "R"),
+    ("5", "STB", 34.0, 5.08, "input", "R"),
+]
+PARTS.append(CuratedPart(
+    name="TM1638-8Digit-Display-Key-Module",
+    reference="DISP",
+    keywords="display segment led 7-segment tm1638 8-digit key buttons leds spi keypad",
+    description="TM1638 8-digit 7-segment display module with 8 push buttons and 8 bi-color LEDs, 5-pin serial interface, 76.2 x 50.8 mm",
+    datasheet="https://datasheet.lcsc.com/lcsc/2108131830_TM-Titan-Micro-Elec-TM1638_C2683936.pdf",
+    provenance_url="https://www.handsontec.com/dataspecs/module/TM1638.pdf",
+    license="published vendor module; symbol & footprint project-authored",
+    dimensions_mm=(76.2, 50.8, 12.0),
+    color_rgb=(0.05, 0.1, 0.3),
+    holes=[(-35.0, -22.0, 3.2), (35.0, -22.0, 3.2), (-35.0, 22.0, 3.2), (35.0, 22.0, 3.2)],
+    pins=tm1638_pins,
+))
+
+# 6. HT16K33 4-Digit 14-Segment Alphanumeric Backpack (0.54in)
+ht16k33_alpha_pins = [
+    ("1", "VCC", -5.08, 11.43, "power_in", "L"),
+    ("2", "GND", -2.54, 11.43, "power_in", "L"),
+    ("3", "SDA", 0.0, 11.43, "bidirectional", "R"),
+    ("4", "SCL", 2.54, 11.43, "input", "R"),
+    ("5", "IO", 5.08, 11.43, "bidirectional", "R"),
+]
+PARTS.append(CuratedPart(
+    name="HT16K33-4Digit-14Seg-Alphanumeric",
+    reference="DISP",
+    keywords="display alphanumeric 14-segment ht16k33 i2c 4-character adafruit feather backpack",
+    description="0.54 inch 4-character 14-segment alphanumeric LED display module with HT16K33 I2C driver, 50.8 x 28.0 mm",
+    datasheet="https://cdn-shop.adafruit.com/datasheets/ht16K33v110.pdf",
+    provenance_url="https://www.adafruit.com/product/1911",
+    license="published vendor module; symbol & footprint project-authored",
+    dimensions_mm=(50.8, 28.0, 12.0),
+    color_rgb=(0.05, 0.1, 0.3),
+    holes=[(-22.0, -11.0, 2.5), (22.0, -11.0, 2.5), (-22.0, 11.0, 2.5), (22.0, 11.0, 2.5)],
+    pins=ht16k33_alpha_pins,
+))
+
+# 7. HT16K33 4-Digit 7-Segment Backpack (0.56in)
+ht16k33_7seg_pins = [
+    ("1", "VCC", -3.81, 11.43, "power_in", "L"),
+    ("2", "GND", -1.27, 11.43, "power_in", "L"),
+    ("3", "SDA", 1.27, 11.43, "bidirectional", "R"),
+    ("4", "SCL", 3.81, 11.43, "input", "R"),
+]
+PARTS.append(CuratedPart(
+    name="HT16K33-4Digit-7Segment-0.56in",
+    reference="DISP",
+    keywords="display segment led 7-segment ht16k33 i2c 4-digit 0.56 clock backpack",
+    description="0.56 inch 4-digit 7-segment LED display module with HT16K33 I2C backpack and clock colon, 50.0 x 28.0 mm",
+    datasheet="https://cdn-shop.adafruit.com/datasheets/ht16K33v110.pdf",
+    provenance_url="https://www.adafruit.com/product/878",
+    license="published vendor module; symbol & footprint project-authored",
+    dimensions_mm=(50.0, 28.0, 12.0),
+    color_rgb=(0.05, 0.1, 0.3),
+    holes=[(-21.0, -10.0, 2.5), (21.0, -10.0, 2.5), (-21.0, 10.0, 2.5), (21.0, 10.0, 2.5)],
+    pins=ht16k33_7seg_pins,
+))
+
+# 8. MAX7219 Dot Matrix 4-in-1 Module (32x8)
+max7219_4in1_pins = [
+    ("1", "VCC_IN", -61.0, -5.08, "power_in", "L"),
+    ("2", "GND_IN", -61.0, -2.54, "power_in", "L"),
+    ("3", "DIN", -61.0, 0.0, "input", "L"),
+    ("4", "CS_IN", -61.0, 2.54, "input", "L"),
+    ("5", "CLK_IN", -61.0, 5.08, "input", "L"),
+    ("6", "VCC_OUT", 61.0, -5.08, "power_out", "R"),
+    ("7", "GND_OUT", 61.0, -2.54, "power_out", "R"),
+    ("8", "DOUT", 61.0, 0.0, "output", "R"),
+    ("9", "CS_OUT", 61.0, 2.54, "output", "R"),
+    ("10", "CLK_OUT", 61.0, 5.08, "output", "R"),
+]
+PARTS.append(CuratedPart(
+    name="MAX7219-DotMatrix-4in1-32x8",
+    reference="DISP",
+    keywords="display led matrix dot 32x8 8x8 4in1 4-block max7219 spi daisy-chain",
+    description="32x8 Red LED dot matrix display module (4 cascaded 8x8 blocks, 4x MAX7219 drivers), SPI input & daisy-chain output, 128.0 x 32.0 mm",
+    datasheet="https://datasheets.maximintegrated.com/en/ds/MAX7219-MAX7221.pdf",
+    provenance_url="https://www.makerfabs.com/max7219-dot-matrix-4-in-1-display-module.html",
+    license="published vendor module; symbol & footprint project-authored",
+    dimensions_mm=(128.0, 32.0, 13.0),
+    color_rgb=(0.05, 0.1, 0.3),
+    holes=[(-61.0, -12.5, 3.2), (61.0, -12.5, 3.2), (-61.0, 12.5, 3.2), (61.0, 12.5, 3.2)],
+    pins=max7219_4in1_pins,
+))
+
+# 9. MAX7219 Dot Matrix 2-in-1 Module (16x8)
+max7219_2in1_pins = [
+    ("1", "VCC_IN", -29.0, -5.08, "power_in", "L"),
+    ("2", "GND_IN", -29.0, -2.54, "power_in", "L"),
+    ("3", "DIN", -29.0, 0.0, "input", "L"),
+    ("4", "CS_IN", -29.0, 2.54, "input", "L"),
+    ("5", "CLK_IN", -29.0, 5.08, "input", "L"),
+    ("6", "VCC_OUT", 29.0, -5.08, "power_out", "R"),
+    ("7", "GND_OUT", 29.0, -2.54, "power_out", "R"),
+    ("8", "DOUT", 29.0, 0.0, "output", "R"),
+    ("9", "CS_OUT", 29.0, 2.54, "output", "R"),
+    ("10", "CLK_OUT", 29.0, 5.08, "output", "R"),
+]
+PARTS.append(CuratedPart(
+    name="MAX7219-DotMatrix-2in1-16x8",
+    reference="DISP",
+    keywords="display led matrix dot 16x8 8x8 2in1 2-block max7219 spi daisy-chain",
+    description="16x8 Red LED dot matrix display module (2 cascaded 8x8 blocks, 2x MAX7219 drivers), SPI input & daisy-chain output, 64.0 x 32.0 mm",
+    datasheet="https://datasheets.maximintegrated.com/en/ds/MAX7219-MAX7221.pdf",
+    provenance_url="https://www.makerfabs.com/max7219-dot-matrix-2-in-1-display-module.html",
+    license="published vendor module; symbol & footprint project-authored",
+    dimensions_mm=(64.0, 32.0, 13.0),
+    color_rgb=(0.05, 0.1, 0.3),
+    holes=[(-29.0, -12.5, 3.2), (29.0, -12.5, 3.2), (-29.0, 12.5, 3.2), (29.0, 12.5, 3.2)],
+    pins=max7219_2in1_pins,
+))
+
+# 10. WS2812B RGB Matrix 8x8 Panel
+ws2812_8x8_pins = [
+    ("1", "5V_IN", -27.0, -2.54, "power_in", "L"),
+    ("2", "DIN", -27.0, 0.0, "input", "L"),
+    ("3", "GND_IN", -27.0, 2.54, "power_in", "L"),
+    ("4", "5V_OUT", 27.0, -2.54, "power_out", "R"),
+    ("5", "DOUT", 27.0, 0.0, "output", "R"),
+    ("6", "GND_OUT", 27.0, 2.54, "power_out", "R"),
+]
+PARTS.append(CuratedPart(
+    name="WS2812B-RGB-Matrix-8x8",
+    reference="DISP",
+    keywords="display led matrix rgb ws2812b neopixel 8x8 64-led addressable flexible",
+    description="8x8 Addressable RGB LED matrix panel, 64 WS2812B / NeoPixel LEDs, cascaded DIN/DOUT 3-pin headers, 65.0 x 65.0 mm",
+    datasheet="https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf",
+    provenance_url="https://www.adafruit.com/product/1487",
+    license="published vendor module; symbol & footprint project-authored",
+    dimensions_mm=(65.0, 65.0, 3.0),
+    color_rgb=(0.1, 0.1, 0.1),
+    holes=[(-28.0, -28.0, 2.5), (28.0, -28.0, 2.5), (-28.0, 28.0, 2.5), (28.0, 28.0, 2.5)],
+    pins=ws2812_8x8_pins,
+))
+
+# 11. WS2812B RGB Matrix 16x16 Panel
+ws2812_16x16_pins = [
+    ("1", "5V_IN", -75.0, -2.54, "power_in", "L"),
+    ("2", "DIN", -75.0, 0.0, "input", "L"),
+    ("3", "GND_IN", -75.0, 2.54, "power_in", "L"),
+    ("4", "5V_OUT", 75.0, -2.54, "power_out", "R"),
+    ("5", "DOUT", 75.0, 0.0, "output", "R"),
+    ("6", "GND_OUT", 75.0, 2.54, "power_out", "R"),
+    ("7", "5V_PWR", -2.54, 75.0, "power_in", "L"),
+    ("8", "GND_PWR", 2.54, 75.0, "power_in", "L"),
+]
+PARTS.append(CuratedPart(
+    name="WS2812B-RGB-Matrix-16x16",
+    reference="DISP",
+    keywords="display led matrix rgb ws2812b neopixel 16x16 256-led addressable panel",
+    description="16x16 Addressable RGB LED matrix panel, 256 WS2812B / NeoPixel LEDs, DIN/DOUT and power injection pads, 160.0 x 160.0 mm",
+    datasheet="https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf",
+    provenance_url="https://www.adafruit.com/product/2547",
+    license="published vendor module; symbol & footprint project-authored",
+    dimensions_mm=(160.0, 160.0, 3.0),
+    color_rgb=(0.1, 0.1, 0.1),
+    holes=[(-75.0, -75.0, 3.0), (75.0, -75.0, 3.0), (-75.0, 75.0, 3.0), (75.0, 75.0, 3.0)],
+    pins=ws2812_16x16_pins,
+))
+
+# 12. Bi-Color 8x8 LED Matrix (Red/Green 24-Pin DIP)
+bicolor_pins = [
+    # Bottom row (12 pins, Y = 15.24mm)
+    ("1", "ROW1", -13.97, 15.24, "power_in", "L"),
+    ("2", "ROW2", -11.43, 15.24, "power_in", "L"),
+    ("3", "ROW3", -8.89, 15.24, "power_in", "L"),
+    ("4", "ROW4", -6.35, 15.24, "power_in", "L"),
+    ("5", "ROW5", -3.81, 15.24, "power_in", "L"),
+    ("6", "ROW6", -1.27, 15.24, "power_in", "L"),
+    ("7", "ROW7", 1.27, 15.24, "power_in", "L"),
+    ("8", "ROW8", 3.81, 15.24, "power_in", "L"),
+    ("9", "RED1", 6.35, 15.24, "input", "L"),
+    ("10", "RED2", 8.89, 15.24, "input", "L"),
+    ("11", "RED3", 11.43, 15.24, "input", "L"),
+    ("12", "RED4", 13.97, 15.24, "input", "L"),
+    # Top row (12 pins, Y = -15.24mm)
+    ("13", "RED5", 13.97, -15.24, "input", "R"),
+    ("14", "RED6", 11.43, -15.24, "input", "R"),
+    ("15", "RED7", 8.89, -15.24, "input", "R"),
+    ("16", "RED8", 6.35, -15.24, "input", "R"),
+    ("17", "GRN1", 3.81, -15.24, "input", "R"),
+    ("18", "GRN2", 1.27, -15.24, "input", "R"),
+    ("19", "GRN3", -1.27, -15.24, "input", "R"),
+    ("20", "GRN4", -3.81, -15.24, "input", "R"),
+    ("21", "GRN5", -6.35, -15.24, "input", "R"),
+    ("22", "GRN6", -8.89, -15.24, "input", "R"),
+    ("23", "GRN7", -11.43, -15.24, "input", "R"),
+    ("24", "GRN8", -13.97, -15.24, "input", "R"),
+]
+PARTS.append(CuratedPart(
+    name="LED-Matrix-8x8-BiColor",
+    reference="DISP",
+    keywords="display led matrix dot 8x8 bicolor dual-color red-green 24-pin dip-24",
+    description="8x8 Dual-color (Red/Green/Yellow) LED dot matrix display block, 24-pin DIP standard pinout, 38.0 x 38.0 mm",
+    datasheet="https://cdn-shop.adafruit.com/datasheets/BL-M12A881XX.pdf",
+    provenance_url="https://www.adafruit.com/product/902",
+    license="published vendor standard component; symbol & footprint project-authored",
+    dimensions_mm=(38.0, 38.0, 8.5),
+    color_rgb=(0.1, 0.1, 0.1),
+    pins=bicolor_pins,
+))
+
+# 13. HUB75 RGB Matrix Panel 64x32
+hub75_pins = [
+    # 16-pin 2x8 IDC header at left
+    ("1", "R1", -63.81, -1.27, "input", "L"),
+    ("2", "G1", -63.81, 1.27, "input", "L"),
+    ("3", "B1", -61.27, -1.27, "input", "L"),
+    ("4", "GND_1", -61.27, 1.27, "power_in", "L"),
+    ("5", "R2", -58.73, -1.27, "input", "L"),
+    ("6", "G2", -58.73, 1.27, "input", "L"),
+    ("7", "B2", -56.19, -1.27, "input", "L"),
+    ("8", "GND_2", -56.19, 1.27, "power_in", "L"),
+    ("9", "A", -53.65, -1.27, "input", "L"),
+    ("10", "B", -53.65, 1.27, "input", "L"),
+    ("11", "C", -51.11, -1.27, "input", "L"),
+    ("12", "D", -51.11, 1.27, "input", "L"),
+    ("13", "CLK", -48.57, -1.27, "input", "L"),
+    ("14", "LAT", -48.57, 1.27, "input", "L"),
+    ("15", "OE", -46.03, -1.27, "input", "L"),
+    ("16", "GND_3", -46.03, 1.27, "power_in", "L"),
+    # Power terminal block at right
+    ("17", "VCC_1", 56.19, -3.81, "power_in", "R"),
+    ("18", "VCC_2", 56.19, -1.27, "power_in", "R"),
+    ("19", "GND_A", 56.19, 1.27, "power_in", "R"),
+    ("20", "GND_B", 56.19, 3.81, "power_in", "R"),
+]
+PARTS.append(CuratedPart(
+    name="HUB75-RGB-Matrix-64x32",
+    reference="DISP",
+    keywords="display led matrix rgb hub75 64x32 p3 p4 p5 panel billboard billboard-display",
+    description="HUB75 RGB LED matrix panel 64x32 pixels, P3/P4/P5 standard 16-pin IDC control header and 4-pin power terminal, 192.0 x 96.0 mm",
+    datasheet="https://cdn-learn.adafruit.com/downloads/pdf/32x16-32x32-rgb-led-matrix.pdf",
+    provenance_url="https://www.adafruit.com/product/2279",
+    license="published vendor standard component; symbol & footprint project-authored",
+    dimensions_mm=(192.0, 96.0, 15.0),
+    color_rgb=(0.05, 0.05, 0.05),
+    holes=[(-90.0, -42.0, 3.2), (90.0, -42.0, 3.2), (-90.0, 42.0, 3.2), (90.0, 42.0, 3.2)],
+    pins=hub75_pins,
+))
+
 def build_all() -> None:
     SYMBOL_DIR.mkdir(parents=True, exist_ok=True)
     FOOTPRINT_DIR.mkdir(parents=True, exist_ok=True)
