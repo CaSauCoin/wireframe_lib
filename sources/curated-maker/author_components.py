@@ -1602,6 +1602,461 @@ PARTS.append(CuratedPart(
     pins=px9c103_pins,
 ))
 
+
+# --- 24 Curated Parts across Classes 2-7 ---
+
+PARTS.append(CuratedPart(
+    name="2N7002-N-MOSFET-SOT23",
+    reference="Q",
+    keywords="transistor mosfet n-channel nmos 2n7002 sot23 switch",
+    description="2N7002 60V 115mA N-Channel Enhancement Mode Field Effect Transistor, SOT-23 (1: Gate, 2: Source, 3: Drain)",
+    datasheet="https://www.diodes.com/assets/Datasheets/ds11303.pdf",
+    provenance_url="https://www.diodes.com/assets/Datasheets/ds11303.pdf",
+    license="published vendor standard component; symbol & footprint project-authored",
+    dimensions_mm=(2.9, 1.3, 1.1),
+    color_rgb=(0.1, 0.1, 0.1),
+    pins=[
+    ("1", "G", -0.950, -1.000, "input", "L"),
+    ("2", "S", 0.950, -1.000, "passive", "R"),
+    ("3", "D", 0.000, 1.000, "passive", "R")
+    ]
+))
+
+PARTS.append(CuratedPart(
+    name="AO3400A-N-MOSFET-SOT23",
+    reference="Q",
+    keywords="transistor mosfet n-channel nmos ao3400 ao3400a sot23 power-switch",
+    description="Alpha & Omega AO3400A 30V 5.7A N-Channel Power MOSFET, SOT-23 (1: Gate, 2: Source, 3: Drain)",
+    datasheet="http://www.aosmd.com/res/data_sheets/AO3400A.pdf",
+    provenance_url="http://www.aosmd.com/res/data_sheets/AO3400A.pdf",
+    license="published vendor standard component; symbol & footprint project-authored",
+    dimensions_mm=(2.9, 1.3, 1.1),
+    color_rgb=(0.1, 0.1, 0.1),
+    pins=[
+    ("1", "G", -0.950, -1.000, "input", "L"),
+    ("2", "S", 0.950, -1.000, "passive", "R"),
+    ("3", "D", 0.000, 1.000, "passive", "R")
+    ]
+))
+
+PARTS.append(CuratedPart(
+    name="AO3401A-P-MOSFET-SOT23",
+    reference="Q",
+    keywords="transistor mosfet p-channel pmos ao3401 ao3401a sot23 high-side-switch",
+    description="Alpha & Omega AO3401A -30V -4.0A P-Channel Power MOSFET, SOT-23 (1: Gate, 2: Source, 3: Drain)",
+    datasheet="http://www.aosmd.com/res/data_sheets/AO3401A.pdf",
+    provenance_url="http://www.aosmd.com/res/data_sheets/AO3401A.pdf",
+    license="published vendor standard component; symbol & footprint project-authored",
+    dimensions_mm=(2.9, 1.3, 1.1),
+    color_rgb=(0.1, 0.1, 0.1),
+    pins=[
+    ("1", "G", -0.950, -1.000, "input", "L"),
+    ("2", "S", 0.950, -1.000, "passive", "R"),
+    ("3", "D", 0.000, 1.000, "passive", "R")
+    ]
+))
+
+PARTS.append(CuratedPart(
+    name="BSS138-N-MOSFET-SOT23",
+    reference="Q",
+    keywords="transistor mosfet n-channel bss138 sot23 logic-shifter i2c",
+    description="BSS138 50V 220mA N-Channel Logic-Level MOSFET, SOT-23 (1: Gate, 2: Source, 3: Drain)",
+    datasheet="https://www.onsemi.com/pdf/datasheet/bss138-d.pdf",
+    provenance_url="https://www.onsemi.com/pdf/datasheet/bss138-d.pdf",
+    license="published vendor standard component; symbol & footprint project-authored",
+    dimensions_mm=(2.9, 1.3, 1.1),
+    color_rgb=(0.1, 0.1, 0.1),
+    pins=[
+    ("1", "G", -0.950, -1.000, "input", "L"),
+    ("2", "S", 0.950, -1.000, "passive", "R"),
+    ("3", "D", 0.000, 1.000, "passive", "R")
+    ]
+))
+
+PARTS.append(CuratedPart(
+    name="2N3904-NPN-BJT-TO92",
+    reference="Q",
+    keywords="transistor bjt npn 2n3904 to92 amplifier switch",
+    description="2N3904 40V 200mA General Purpose NPN Bipolar Junction Transistor, TO-92 (1: Emitter, 2: Base, 3: Collector)",
+    datasheet="https://www.sparkfun.com/datasheets/Components/2N3904.pdf",
+    provenance_url="https://www.sparkfun.com/datasheets/Components/2N3904.pdf",
+    license="published vendor standard component; symbol & footprint project-authored",
+    dimensions_mm=(4.5, 3.8, 4.9),
+    color_rgb=(0.12, 0.12, 0.12),
+    pins=[
+    ("1", "E", -1.270, 0.000, "passive", "L"),
+    ("2", "B", 0.000, 0.000, "input", "L"),
+    ("3", "C", 1.270, 0.000, "passive", "R")
+    ]
+))
+
+PARTS.append(CuratedPart(
+    name="2N3904-NPN-BJT-SOT23",
+    reference="Q",
+    keywords="transistor bjt npn mmbt3904 2n3904 sot23 switch",
+    description="MMBT3904 40V 200mA SMD NPN Bipolar Junction Transistor, SOT-23 (1: Base, 2: Emitter, 3: Collector)",
+    datasheet="https://www.diodes.com/assets/Datasheets/ds30036.pdf",
+    provenance_url="https://www.diodes.com/assets/Datasheets/ds30036.pdf",
+    license="published vendor standard component; symbol & footprint project-authored",
+    dimensions_mm=(2.9, 1.3, 1.1),
+    color_rgb=(0.1, 0.1, 0.1),
+    pins=[
+    ("1", "B", -0.950, -1.000, "input", "L"),
+    ("2", "E", 0.950, -1.000, "passive", "R"),
+    ("3", "C", 0.000, 1.000, "passive", "R")
+    ]
+))
+
+PARTS.append(CuratedPart(
+    name="BAT54S-DualDiode-Series-SOT23",
+    reference="D",
+    keywords="diode schottky dual series bat54 bat54s sot23 clamp protection",
+    description="BAT54S 30V 200mA Dual Schottky Barrier Diodes in Series, SOT-23 (1: Anode D1, 2: Cathode D2, 3: Common Cathode D1/Anode D2)",
+    datasheet="https://www.diodes.com/assets/Datasheets/ds11005.pdf",
+    provenance_url="https://www.diodes.com/assets/Datasheets/ds11005.pdf",
+    license="published vendor standard component; symbol & footprint project-authored",
+    dimensions_mm=(2.9, 1.3, 1.1),
+    color_rgb=(0.1, 0.1, 0.1),
+    pins=[
+    ("1", "A1", -0.950, -1.000, "passive", "L"),
+    ("2", "C2", 0.950, -1.000, "passive", "R"),
+    ("3", "C1_A2", 0.000, 1.000, "passive", "R")
+    ]
+))
+
+PARTS.append(CuratedPart(
+    name="BAT54C-DualDiode-CommonCathode-SOT23",
+    reference="D",
+    keywords="diode schottky dual common-cathode bat54 bat54c sot23 or-ing",
+    description="BAT54C 30V 200mA Dual Schottky Diodes Common Cathode, SOT-23 (1: Anode 1, 2: Anode 2, 3: Common Cathode)",
+    datasheet="https://www.diodes.com/assets/Datasheets/ds11005.pdf",
+    provenance_url="https://www.diodes.com/assets/Datasheets/ds11005.pdf",
+    license="published vendor standard component; symbol & footprint project-authored",
+    dimensions_mm=(2.9, 1.3, 1.1),
+    color_rgb=(0.1, 0.1, 0.1),
+    pins=[
+    ("1", "A1", -0.950, -1.000, "passive", "L"),
+    ("2", "A2", 0.950, -1.000, "passive", "L"),
+    ("3", "CC", 0.000, 1.000, "passive", "R")
+    ]
+))
+
+PARTS.append(CuratedPart(
+    name="IRFZ44N-N-MOSFET-TO220",
+    reference="Q",
+    keywords="transistor mosfet power irfz44 irfz44n to220 high-current motor",
+    description="Infineon IRFZ44N 55V 49A 17.5mΩ N-Channel Power MOSFET, TO-220 (1: Gate, 2: Drain, 3: Source, Tab: Drain)",
+    datasheet="https://www.infineon.com/dgdl/irfz44n.pdf?fileId=5546d462533600a40153563b3a9f220d",
+    provenance_url="https://www.infineon.com/dgdl/irfz44n.pdf?fileId=5546d462533600a40153563b3a9f220d",
+    license="published vendor standard component; symbol & footprint project-authored",
+    dimensions_mm=(10.0, 4.5, 15.0),
+    color_rgb=(0.15, 0.15, 0.15),
+    pins=[
+    ("1", "G", -2.540, 0.000, "input", "L"),
+    ("2", "D", 0.000, 0.000, "passive", "R"),
+    ("3", "S", 2.540, 0.000, "passive", "R")
+    ]
+))
+
+PARTS.append(CuratedPart(
+    name="SW-Tactile-6x6mm-4Pin-THT",
+    reference="SW",
+    keywords="switch button tactile b3f push momentary 6x6mm 4pin",
+    description="Omron B3F-1000 / Standard 6x6mm Momentary Tactile Push Button, 4-pin THT (Pads 1-2 bridged, Pads 3-4 bridged)",
+    datasheet="https://omronfs.omron.com/en_US/ecb/products/pdf/en-b3f.pdf",
+    provenance_url="https://omronfs.omron.com/en_US/ecb/products/pdf/en-b3f.pdf",
+    license="published vendor standard component; symbol & footprint project-authored",
+    dimensions_mm=(6.0, 6.0, 5.0),
+    color_rgb=(0.1, 0.1, 0.1),
+    pins=[
+    ("1", "1", -3.250, -2.250, "passive", "L"),
+    ("2", "1", 3.250, -2.250, "passive", "R"),
+    ("3", "2", -3.250, 2.250, "passive", "L"),
+    ("4", "2", 3.250, 2.250, "passive", "R")
+    ]
+))
+
+PARTS.append(CuratedPart(
+    name="SW-Tactile-12x12mm-4Pin-THT",
+    reference="SW",
+    keywords="switch button tactile 12x12mm b3f-4050 4pin large-button",
+    description="B3F-4050 / Standard 12x12mm Heavy Duty Momentary Tactile Switch, 4-pin THT",
+    datasheet="https://omronfs.omron.com/en_US/ecb/products/pdf/en-b3f.pdf",
+    provenance_url="https://omronfs.omron.com/en_US/ecb/products/pdf/en-b3f.pdf",
+    license="published vendor standard component; symbol & footprint project-authored",
+    dimensions_mm=(12.0, 12.0, 7.5),
+    color_rgb=(0.1, 0.1, 0.1),
+    pins=[
+    ("1", "1", -6.250, -2.500, "passive", "L"),
+    ("2", "1", 6.250, -2.500, "passive", "R"),
+    ("3", "2", -6.250, 2.500, "passive", "L"),
+    ("4", "2", 6.250, 2.500, "passive", "R")
+    ]
+))
+
+PARTS.append(CuratedPart(
+    name="SW-Slide-SPDT-3Pin-THT",
+    reference="SW",
+    keywords="switch slide spdt on-on ss12d00 power-switch 3pin",
+    description="SS12D00 / SS12F15 Subminiature Slide Switch SPDT On-On, 3-pin THT pitch 2.54mm (1: A, 2: Common, 3: B)",
+    datasheet="https://www.c-ko.com/product/ss12d00/",
+    provenance_url="https://www.c-ko.com/product/ss12d00/",
+    license="published vendor standard component; symbol & footprint project-authored",
+    dimensions_mm=(8.5, 4.0, 10.0),
+    color_rgb=(0.5, 0.53, 0.56),
+    pins=[
+    ("1", "1", -2.540, 0.000, "passive", "L"),
+    ("2", "COM", 0.000, 0.000, "passive", "L"),
+    ("3", "2", 2.540, 0.000, "passive", "R")
+    ]
+))
+
+PARTS.append(CuratedPart(
+    name="Rotary-Encoder-EC11-Switch",
+    reference="SW",
+    keywords="encoder rotary ec11 incremental quadrature volume push-switch",
+    description="Alps / Bourns EC11 11mm Incremental Rotary Encoder with Push Switch, 5 electrical pins + 2 mounting brackets",
+    datasheet="https://www.bourns.com/docs/product-datasheets/pec11r.pdf",
+    provenance_url="https://www.bourns.com/docs/product-datasheets/pec11r.pdf",
+    license="published vendor standard component; symbol & footprint project-authored",
+    dimensions_mm=(11.7, 13.5, 20.0),
+    color_rgb=(0.45, 0.48, 0.52),
+    pins=[
+    ("1", "A", -2.500, -7.000, "output", "L"),
+    ("2", "COM", 0.000, -7.000, "power_in", "L"),
+    ("3", "B", 2.500, -7.000, "output", "L"),
+    ("4", "SW1", -2.500, 7.000, "passive", "R"),
+    ("5", "SW2", 2.500, 7.000, "passive", "R")
+    ],
+    holes=[(-5.85, 0.0, 2.2), (5.85, 0.0, 2.2)]
+))
+
+PARTS.append(CuratedPart(
+    name="DC-Jack-Barrel-DC005-THT",
+    reference="J",
+    keywords="connector dc jack barrel dc-005 5.5x2.1mm power supply 12v 9v",
+    description="DC-005 5.5mm x 2.1mm DC Power Barrel Jack, 3-pin THT (1: Center Pin Pos, 2: Shunt Switch, 3: Sleeve Ground)",
+    datasheet="http://www.sz-cwb.com/upload/pdf/DC-005.pdf",
+    provenance_url="http://www.sz-cwb.com/upload/pdf/DC-005.pdf",
+    license="published vendor standard component; symbol & footprint project-authored",
+    dimensions_mm=(14.0, 9.0, 11.0),
+    color_rgb=(0.1, 0.1, 0.1),
+    pins=[
+    ("1", "PIN", 0.000, 3.000, "power_in", "L"),
+    ("2", "SWITCH", 4.700, 0.000, "passive", "R"),
+    ("3", "SLEEVE", 0.000, -3.000, "power_in", "R")
+    ]
+))
+
+PARTS.append(CuratedPart(
+    name="Audio-Jack-3.5mm-PJ320A-THT",
+    reference="J",
+    keywords="connector audio jack 3.5mm trs headphone stereo pj320 pj320a",
+    description="PJ-320A 3.5mm Stereo Headphone Audio Jack Socket, 5-pin THT (1: Sleeve/GND, 2: Tip/Left, 3: Ring/Right, 4: Tip Switch, 5: Ring Switch)",
+    datasheet="http://www.sz-cwb.com/upload/pdf/PJ-320A.pdf",
+    provenance_url="http://www.sz-cwb.com/upload/pdf/PJ-320A.pdf",
+    license="published vendor standard component; symbol & footprint project-authored",
+    dimensions_mm=(14.0, 6.0, 5.0),
+    color_rgb=(0.08, 0.08, 0.08),
+    pins=[
+    ("1", "GND", -5.000, 0.000, "power_in", "L"),
+    ("2", "TIP", -2.500, 3.000, "passive", "L"),
+    ("3", "RING", 2.500, 3.000, "passive", "R"),
+    ("4", "TIP_SW", -2.500, -3.000, "passive", "L"),
+    ("5", "RING_SW", 2.500, -3.000, "passive", "R")
+    ]
+))
+
+PARTS.append(CuratedPart(
+    name="USB-C-Receptacle-6Pin-PowerOnly",
+    reference="J",
+    keywords="connector usb usb-c type-c 6pin power charging sink pd",
+    description="USB Type-C 6-Pin Power Only Receptacle, 240W 5A USB-PD charging (VBUS, GND, CC1, CC2)",
+    datasheet="https://gct.co/files/drawings/usb4125.pdf",
+    provenance_url="https://gct.co/files/drawings/usb4125.pdf",
+    license="published vendor standard component; symbol & footprint project-authored",
+    dimensions_mm=(8.94, 6.8, 3.16),
+    color_rgb=(0.5, 0.5, 0.5),
+    pins=[
+    ("1", "GND1", -3.200, 0.000, "power_in", "L"),
+    ("2", "VBUS1", -1.600, 0.000, "power_in", "L"),
+    ("3", "CC1", -0.500, 0.000, "input", "L"),
+    ("4", "CC2", 0.500, 0.000, "input", "R"),
+    ("5", "VBUS2", 1.600, 0.000, "power_in", "R"),
+    ("6", "GND2", 3.200, 0.000, "power_in", "R")
+    ]
+))
+
+PARTS.append(CuratedPart(
+    name="USB-C-Receptacle-16Pin-USB2",
+    reference="J",
+    keywords="connector usb usb-c type-c 16pin usb2.0 pd fast-charge",
+    description="USB Type-C 16-Pin Receptacle for USB 2.0 and Power Delivery (VBUS, GND, CC1, CC2, D+, D-, SBU1, SBU2)",
+    datasheet="https://gct.co/files/drawings/usb4085.pdf",
+    provenance_url="https://gct.co/files/drawings/usb4085.pdf",
+    license="published vendor standard component; symbol & footprint project-authored",
+    dimensions_mm=(8.94, 7.35, 3.26),
+    color_rgb=(0.5, 0.5, 0.5),
+    pins=[
+    ("1", "GND", -3.200, 0.000, "power_in", "L"),
+    ("2", "VBUS", -2.400, 0.000, "power_in", "L"),
+    ("3", "CC1", -1.600, 0.000, "input", "L"),
+    ("4", "DP1", -0.800, 0.000, "bidirectional", "L"),
+    ("5", "DN1", -0.300, 0.000, "bidirectional", "L"),
+    ("6", "SBU1", 0.300, 0.000, "passive", "L"),
+    ("7", "VBUS2", 0.800, 0.000, "power_in", "R"),
+    ("8", "GND2", 1.600, 0.000, "power_in", "R"),
+    ("9", "GND3", 2.400, 0.000, "power_in", "R"),
+    ("10", "VBUS3", 3.200, 0.000, "power_in", "R"),
+    ("11", "CC2", -1.600, 1.000, "input", "L"),
+    ("12", "DP2", -0.800, 1.000, "bidirectional", "L"),
+    ("13", "DN2", -0.300, 1.000, "bidirectional", "L"),
+    ("14", "SBU2", 0.300, 1.000, "passive", "R"),
+    ("15", "VBUS4", 0.800, 1.000, "power_in", "R"),
+    ("16", "GND4", 1.600, 1.000, "power_in", "R")
+    ]
+))
+
+PARTS.append(CuratedPart(
+    name="TerminalBlock-5.08mm-2Pin",
+    reference="J",
+    keywords="connector terminal block screw 5.08mm kf301 2pin high-current power",
+    description="KF301 / Phoenix Contact MKDS 5.08mm Pitch 2-Pin Screw Terminal Block Connector",
+    datasheet="https://www.phoenixcontact.com",
+    provenance_url="https://www.phoenixcontact.com",
+    license="published vendor standard component; symbol & footprint project-authored",
+    dimensions_mm=(10.16, 7.6, 10.0),
+    color_rgb=(0.16, 0.47, 0.19),
+    pins=[
+    ("1", "1", -2.540, 0.000, "passive", "L"),
+    ("2", "2", 2.540, 0.000, "passive", "R")
+    ]
+))
+
+PARTS.append(CuratedPart(
+    name="TerminalBlock-5.08mm-3Pin",
+    reference="J",
+    keywords="connector terminal block screw 5.08mm kf301 3pin power ac-dc",
+    description="KF301 / Phoenix Contact MKDS 5.08mm Pitch 3-Pin Screw Terminal Block Connector",
+    datasheet="https://www.phoenixcontact.com",
+    provenance_url="https://www.phoenixcontact.com",
+    license="published vendor standard component; symbol & footprint project-authored",
+    dimensions_mm=(15.24, 7.6, 10.0),
+    color_rgb=(0.16, 0.47, 0.19),
+    pins=[
+    ("1", "1", -5.080, 0.000, "passive", "L"),
+    ("2", "2", 0.000, 0.000, "passive", "L"),
+    ("3", "3", 5.080, 0.000, "passive", "R")
+    ]
+))
+
+PARTS.append(CuratedPart(
+    name="Crystal-HC49S-THT-2Pin",
+    reference="Y",
+    keywords="crystal quartz resonator hc49s hc49 16mhz 8mhz 2pin",
+    description="HC-49S Low Profile Quartz Crystal Resonator 2-Pin THT (16MHz/8MHz/12MHz)",
+    datasheet="https://www.ecsxtal.com/store/pdf/hc-49us.pdf",
+    provenance_url="https://www.ecsxtal.com/store/pdf/hc-49us.pdf",
+    license="published vendor standard component; symbol & footprint project-authored",
+    dimensions_mm=(11.0, 4.65, 3.5),
+    color_rgb=(0.75, 0.75, 0.75),
+    pins=[
+    ("1", "OSC1", -2.440, 0.000, "passive", "L"),
+    ("2", "OSC2", 2.440, 0.000, "passive", "R")
+    ]
+))
+
+PARTS.append(CuratedPart(
+    name="Crystal-SMD-3225-4Pin",
+    reference="Y",
+    keywords="crystal smd 3225 4pin 4pad 16mhz 24mhz 25mhz mcu clock",
+    description="3225 Miniature SMD Quartz Crystal 4-Pad (Pins 1 & 3: Quartz OSC, Pins 2 & 4: Metal Lid Shield GND)",
+    datasheet="https://www.txccorp.com/download/products/quartz_crystals/7M.pdf",
+    provenance_url="https://www.txccorp.com/download/products/quartz_crystals/7M.pdf",
+    license="published vendor standard component; symbol & footprint project-authored",
+    dimensions_mm=(3.2, 2.5, 0.8),
+    color_rgb=(0.72, 0.72, 0.69),
+    pins=[
+    ("1", "OSC1", -1.100, -0.800, "passive", "L"),
+    ("2", "GND1", 1.100, -0.800, "power_in", "R"),
+    ("3", "OSC2", 1.100, 0.800, "passive", "R"),
+    ("4", "GND2", -1.100, 0.800, "power_in", "L")
+    ]
+))
+
+PARTS.append(CuratedPart(
+    name="Oscillator-Active-3225-4Pin",
+    reference="U",
+    keywords="oscillator active spxo clock 3225 4pin vdd gnd clk oe",
+    description="3225 Active SPXO Clock Oscillator 4-Pin SMD (1: Output Enable/Tri-state, 2: GND, 3: Clock OUT, 4: VDD)",
+    datasheet="https://www.epsondevice.com",
+    provenance_url="https://www.epsondevice.com",
+    license="published vendor standard component; symbol & footprint project-authored",
+    dimensions_mm=(3.2, 2.5, 1.0),
+    color_rgb=(0.56, 0.56, 0.53),
+    pins=[
+    ("1", "OE", -1.100, -0.800, "input", "L"),
+    ("2", "GND", 1.100, -0.800, "power_in", "R"),
+    ("3", "OUT", 1.100, 0.800, "output", "R"),
+    ("4", "VDD", -1.100, 0.800, "power_in", "L")
+    ]
+))
+
+PARTS.append(CuratedPart(
+    name="Choke-CommonMode-ACM2012-4Pin",
+    reference="FL",
+    keywords="choke inductor common-mode emi filter acm2012 0805 usb can",
+    description="TDK ACM2012 / 0805 SMD Common Mode Choke Filter for USB 2.0 / CAN Bus EMI suppression, 4-pin",
+    datasheet="https://product.tdk.com/info/en/catalog/datasheets/cmf_commercial_signal_acm2012_en.pdf",
+    provenance_url="https://product.tdk.com/info/en/catalog/datasheets/cmf_commercial_signal_acm2012_en.pdf",
+    license="published vendor standard component; symbol & footprint project-authored",
+    dimensions_mm=(2.0, 1.2, 1.2),
+    color_rgb=(0.19, 0.19, 0.19),
+    pins=[
+    ("1", "L1_IN", -0.800, -0.400, "passive", "L"),
+    ("2", "L1_OUT", 0.800, -0.400, "passive", "R"),
+    ("3", "L2_OUT", 0.800, 0.400, "passive", "R"),
+    ("4", "L2_IN", -0.800, 0.400, "passive", "L")
+    ]
+))
+
+PARTS.append(CuratedPart(
+    name="Choke-CommonMode-UU9.8-THT-4Pin",
+    reference="FL",
+    keywords="choke filter common-mode uu9.8 mains line-filter emi ac-filter",
+    description="UU9.8 Mains Line Filter Common Mode Choke Inductor, 4-pin THT (1-2: Coils A, 3-4: Coils B)",
+    datasheet="https://www.tdk.com",
+    provenance_url="https://www.tdk.com",
+    license="published vendor standard component; symbol & footprint project-authored",
+    dimensions_mm=(16.0, 12.0, 15.0),
+    color_rgb=(0.12, 0.25, 0.12),
+    pins=[
+    ("1", "L1_A", -3.500, -4.000, "passive", "L"),
+    ("2", "L1_B", 3.500, -4.000, "passive", "R"),
+    ("3", "L2_A", -3.500, 4.000, "passive", "L"),
+    ("4", "L2_B", 3.500, 4.000, "passive", "R")
+    ]
+))
+
+PARTS.append(CuratedPart(
+    name="AP2112K-3.3-SOT23-5",
+    reference="U",
+    keywords="regulator ldo linear ap2112 ap2112k 3.3v sot23-5 power esp32 stm32",
+    description="Diodes Inc AP2112K-3.3 600mA Low Dropout Linear Regulator with Enable, SOT-23-5 (1: VIN, 2: GND, 3: EN, 4: NC, 5: VOUT)",
+    datasheet="https://www.diodes.com/assets/Datasheets/AP2112.pdf",
+    provenance_url="https://www.diodes.com/assets/Datasheets/AP2112.pdf",
+    license="published vendor standard component; symbol & footprint project-authored",
+    dimensions_mm=(2.9, 1.6, 1.1),
+    color_rgb=(0.1, 0.1, 0.1),
+    pins=[
+    ("1", "VIN", -0.950, -1.300, "power_in", "L"),
+    ("2", "GND", 0.000, -1.300, "power_in", "L"),
+    ("3", "EN", 0.950, -1.300, "input", "L"),
+    ("4", "NC", 0.950, 1.300, "no_connect", "R"),
+    ("5", "VOUT", -0.950, 1.300, "power_out", "R")
+    ]
+))
+
 def build_all() -> None:
     SYMBOL_DIR.mkdir(parents=True, exist_ok=True)
     FOOTPRINT_DIR.mkdir(parents=True, exist_ok=True)
