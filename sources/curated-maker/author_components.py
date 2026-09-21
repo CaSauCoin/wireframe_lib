@@ -1311,6 +1311,297 @@ PARTS.append(CuratedPart(
     pins=hub75_pins,
 ))
 
+
+# ---------------------------------------------------------------------------
+# Potentiometers & Trimpots (14 curated components)
+# ---------------------------------------------------------------------------
+
+# 1. Bourns 3296W (3-pin inline 2.54mm, vertical adjust)
+p3296w_pins = [
+    ("1", "1", -2.54, 0.0, "passive", "L"),
+    ("2", "2", 0.0, 0.0, "passive", "R"),
+    ("3", "3", 2.54, 0.0, "passive", "L"),
+]
+PARTS.append(CuratedPart(
+    name="Bourns-3296W-Trimpot",
+    reference="RV",
+    keywords="potentiometer pot trimpot trimmer 3296 3296W bourns 10k 50k 100k variable resistor RV",
+    description="Bourns 3296W 3/8inch Square Cermet Trimming Potentiometer, multi-turn top adjust, 3-pin inline 2.54mm pitch (1: CCW, 2: Wiper, 3: CW), 9.53 x 4.83 mm",
+    datasheet="https://www.bourns.com/docs/product-datasheets/3296.pdf",
+    provenance_url="https://www.bourns.com/products/trimpot-trimming-potentiometers/multiturn-cermet/product/3296",
+    license="published vendor standard component; symbol & footprint project-authored",
+    dimensions_mm=(9.53, 4.83, 10.03),
+    color_rgb=(0.0, 0.35, 0.8),
+    pins=p3296w_pins,
+))
+
+# 2. Bourns 3296Y (3-pin triangular layout 2.54mm, top adjust)
+p3296y_pins = [
+    ("1", "1", -2.54, 1.27, "passive", "L"),
+    ("2", "2", 0.0, -1.27, "passive", "R"),
+    ("3", "3", 2.54, 1.27, "passive", "L"),
+]
+PARTS.append(CuratedPart(
+    name="Bourns-3296Y-Trimpot",
+    reference="RV",
+    keywords="potentiometer pot trimpot trimmer 3296 3296Y bourns 10k variable resistor RV",
+    description="Bourns 3296Y 3/8inch Square Cermet Trimpot, multi-turn top adjust, triangular pin layout 2.54mm (1: CCW, 2: Wiper, 3: CW), 9.53 x 4.83 mm",
+    datasheet="https://www.bourns.com/docs/product-datasheets/3296.pdf",
+    provenance_url="https://www.bourns.com/products/trimpot-trimming-potentiometers/multiturn-cermet/product/3296",
+    license="published vendor standard component; symbol & footprint project-authored",
+    dimensions_mm=(9.53, 4.83, 10.03),
+    color_rgb=(0.0, 0.35, 0.8),
+    pins=p3296y_pins,
+))
+
+# 3. Bourns 3296X (3-pin side adjust)
+p3296x_pins = [
+    ("1", "1", -2.54, 2.54, "passive", "L"),
+    ("2", "2", 0.0, 0.0, "passive", "R"),
+    ("3", "3", 2.54, 2.54, "passive", "L"),
+]
+PARTS.append(CuratedPart(
+    name="Bourns-3296X-Trimpot",
+    reference="RV",
+    keywords="potentiometer pot trimpot trimmer 3296 3296X bourns 10k side adjust RV",
+    description="Bourns 3296X 3/8inch Square Cermet Trimpot, multi-turn side adjust, triangular pin layout (1: CCW, 2: Wiper, 3: CW), 9.53 x 4.83 mm",
+    datasheet="https://www.bourns.com/docs/product-datasheets/3296.pdf",
+    provenance_url="https://www.bourns.com/products/trimpot-trimming-potentiometers/multiturn-cermet/product/3296",
+    license="published vendor standard component; symbol & footprint project-authored",
+    dimensions_mm=(9.53, 4.83, 10.03),
+    color_rgb=(0.0, 0.35, 0.8),
+    pins=p3296x_pins,
+))
+
+# 4. Bourns 3362P (1/4inch single turn, triangular)
+p3362p_pins = [
+    ("1", "1", -2.54, 1.27, "passive", "L"),
+    ("2", "2", 0.0, -1.27, "passive", "R"),
+    ("3", "3", 2.54, 1.27, "passive", "L"),
+]
+PARTS.append(CuratedPart(
+    name="Bourns-3362P-Trimpot",
+    reference="RV",
+    keywords="potentiometer pot trimpot trimmer 3362 3362P bourns single turn 10k 50k RV",
+    description="Bourns 3362P 1/4inch Square Single-Turn Cermet Trimpot, top adjust, triangular layout 2.54mm pitch (1: CCW, 2: Wiper, 3: CW), 6.6 x 7.0 mm",
+    datasheet="https://www.bourns.com/docs/product-datasheets/3362.pdf",
+    provenance_url="https://www.bourns.com/products/trimpot-trimming-potentiometers/single-turn-cermet/product/3362",
+    license="published vendor standard component; symbol & footprint project-authored",
+    dimensions_mm=(6.6, 7.0, 4.7),
+    color_rgb=(0.0, 0.35, 0.8),
+    pins=p3362p_pins,
+))
+
+# 5. Bourns 3386P (3/8inch single turn)
+p3386p_pins = [
+    ("1", "1", -2.54, 2.54, "passive", "L"),
+    ("2", "2", 0.0, -2.54, "passive", "R"),
+    ("3", "3", 2.54, 2.54, "passive", "L"),
+]
+PARTS.append(CuratedPart(
+    name="Bourns-3386P-Trimpot",
+    reference="RV",
+    keywords="potentiometer pot trimpot trimmer 3386 3386P bourns 10k 100k RV",
+    description="Bourns 3386P 3/8inch Square Single-Turn Cermet Trimpot, top adjust, triangular layout (1: CCW, 2: Wiper, 3: CW), 9.53 x 9.53 mm",
+    datasheet="https://www.bourns.com/docs/product-datasheets/3386.pdf",
+    provenance_url="https://www.bourns.com/products/trimpot-trimming-potentiometers/single-turn-cermet/product/3386",
+    license="published vendor standard component; symbol & footprint project-authored",
+    dimensions_mm=(9.53, 9.53, 4.7),
+    color_rgb=(0.0, 0.35, 0.8),
+    pins=p3386p_pins,
+))
+
+# 6. Alps RK09L (9mm rotary potentiometer)
+prk09l_pins = [
+    ("1", "1", -2.5, 0.0, "passive", "L"),
+    ("2", "2", 0.0, 0.0, "passive", "R"),
+    ("3", "3", 2.5, 0.0, "passive", "L"),
+]
+PARTS.append(CuratedPart(
+    name="Potentiometer-Alps-RK09L",
+    reference="RV",
+    keywords="potentiometer pot rotary alps rk09 rk09l volume audio 10k 50k RV",
+    description="Alps Alpine RK09L 9mm Rotary Metal Shaft Potentiometer, 3-pin THT pitch 2.5mm with 2 snap-in mounting tabs (1: CCW, 2: Wiper, 3: CW), 9.8 x 11.0 mm",
+    datasheet="https://tech.alpsalpine.com/e/products/detail/RK09L114001T/",
+    provenance_url="https://tech.alpsalpine.com/e/products/category/potentiometer/sub/01/",
+    license="published vendor standard component; symbol & footprint project-authored",
+    dimensions_mm=(9.8, 11.0, 15.0),
+    color_rgb=(0.68, 0.70, 0.74),
+    holes=[(-4.5, 7.0, 1.5), (4.5, 7.0, 1.5)],
+    pins=prk09l_pins,
+))
+
+# 7. WH148 Single (16mm rotary pot)
+pwh148_pins = [
+    ("1", "1", -5.0, 0.0, "passive", "L"),
+    ("2", "2", 0.0, 0.0, "passive", "R"),
+    ("3", "3", 5.0, 0.0, "passive", "L"),
+]
+PARTS.append(CuratedPart(
+    name="Potentiometer-WH148-16mm",
+    reference="RV",
+    keywords="potentiometer pot wh148 rotary volume 16mm knurled shaft 10k 50k 100k RV",
+    description="Alpha / Song Huei WH148 16mm Rotary Potentiometer Single-Unit Mono, 3-pin THT pitch 5.0mm (1: CCW, 2: Wiper, 3: CW), 17.0 x 17.0 mm",
+    datasheet="http://www.song-huei.com.tw/upload/product/20170425114757_pdf.pdf",
+    provenance_url="https://www.sparkfun.com/products/9939",
+    license="published vendor standard component; symbol & footprint project-authored",
+    dimensions_mm=(17.0, 17.0, 20.0),
+    color_rgb=(0.5, 0.55, 0.65),
+    pins=pwh148_pins,
+))
+
+# 8. WH148 Dual (16mm stereo rotary pot, 6 pins)
+pwh148_dual_pins = [
+    ("1A", "1A", -5.0, -2.5, "passive", "L"),
+    ("2A", "2A", 0.0, -2.5, "passive", "R"),
+    ("3A", "3A", 5.0, -2.5, "passive", "L"),
+    ("1B", "1B", -5.0, 2.5, "passive", "L"),
+    ("2B", "2B", 0.0, 2.5, "passive", "R"),
+    ("3B", "3B", 5.0, 2.5, "passive", "L"),
+]
+PARTS.append(CuratedPart(
+    name="Potentiometer-WH148-Dual-16mm",
+    reference="RV",
+    keywords="potentiometer pot wh148 dual stereo audio volume 6-pin 10k 50k RV",
+    description="WH148 Dual-Unit Stereo 16mm Rotary Potentiometer, 6-pin dual row THT pitch 5.0mm x 5.0mm (Ch A: 1A, 2A, 3A; Ch B: 1B, 2B, 3B), 17.0 x 25.0 mm",
+    datasheet="http://www.song-huei.com.tw/upload/product/20170425114757_pdf.pdf",
+    provenance_url="https://www.adafruit.com/product/3393",
+    license="published vendor standard component; symbol & footprint project-authored",
+    dimensions_mm=(17.0, 25.0, 20.0),
+    color_rgb=(0.5, 0.55, 0.65),
+    pins=pwh148_dual_pins,
+))
+
+# 9. RV09 Vertical (9mm rotary potentiometer)
+prv09_pins = [
+    ("1", "1", -2.5, 0.0, "passive", "L"),
+    ("2", "2", 0.0, 0.0, "passive", "R"),
+    ("3", "3", 2.5, 0.0, "passive", "L"),
+]
+PARTS.append(CuratedPart(
+    name="Potentiometer-RV09-Vertical",
+    reference="RV",
+    keywords="potentiometer pot rv09 9mm rotary vertical volume 10k 50k RV",
+    description="RV09 Vertical 9mm Rotary Potentiometer with bracket, 3-pin THT pitch 2.5mm (1: CCW, 2: Wiper, 3: CW), 9.5 x 11.5 mm",
+    datasheet="http://www.taiwan-alpha.com/en/products/12",
+    provenance_url="https://www.adafruit.com/product/4133",
+    license="published vendor standard component; symbol & footprint project-authored",
+    dimensions_mm=(9.5, 11.5, 12.0),
+    color_rgb=(0.6, 0.65, 0.7),
+    holes=[(-4.0, 6.5, 1.2), (4.0, 6.5, 1.2)],
+    pins=prv09_pins,
+))
+
+# 10. Bourns 3314G (4mm SMD Trimmer)
+p3314g_pins = [
+    ("1", "1", -1.3, -2.25, "passive", "L"),
+    ("2", "2", 0.0, 2.25, "passive", "R"),
+    ("3", "3", 1.3, -2.25, "passive", "L"),
+]
+PARTS.append(CuratedPart(
+    name="Bourns-3314G-SMD-Trimpot",
+    reference="RV",
+    keywords="potentiometer trimpot trimmer 3314 3314G bourns smd 4mm 10k RV",
+    description="Bourns 3314G 4mm Square SMD Trimming Potentiometer, single turn, gull-wing leads (1: CCW, 2: Wiper, 3: CW), 4.5 x 4.5 mm",
+    datasheet="https://www.bourns.com/docs/product-datasheets/3314.pdf",
+    provenance_url="https://www.bourns.com/products/trimpot-trimming-potentiometers/single-turn-cermet/product/3314",
+    license="published vendor standard component; symbol & footprint project-authored",
+    dimensions_mm=(4.5, 4.5, 2.55),
+    color_rgb=(0.15, 0.15, 0.15),
+    pins=p3314g_pins,
+))
+
+# 11. Bourns TC33X (3mm SMD Trimmer)
+ptc33x_pins = [
+    ("1", "1", -1.0, -1.2, "passive", "L"),
+    ("2", "2", 0.0, 1.2, "passive", "R"),
+    ("3", "3", 1.0, -1.2, "passive", "L"),
+]
+PARTS.append(CuratedPart(
+    name="Bourns-TC33X-SMD-Trimpot",
+    reference="RV",
+    keywords="potentiometer trimpot trimmer tc33 tc33x bourns smd 3mm 10k RV",
+    description="Bourns TC33X 3mm SMD Cermet Trimming Potentiometer, ultra-compact (1: CCW, 2: Wiper, 3: CW), 3.8 x 3.0 mm",
+    datasheet="https://www.bourns.com/docs/product-datasheets/tc33.pdf",
+    provenance_url="https://www.bourns.com/products/trimpot-trimming-potentiometers/single-turn-cermet/product/TC33",
+    license="published vendor standard component; symbol & footprint project-authored",
+    dimensions_mm=(3.8, 3.0, 1.5),
+    color_rgb=(0.8, 0.75, 0.2),
+    pins=ptc33x_pins,
+))
+
+# 12. MCP41010 DIP-8 (Digital Potentiometer 10k SPI)
+pmcp41010_dip8_pins = [
+    ("1", "CS", -3.81, -3.81, "input", "L"),
+    ("2", "SCK", -3.81, -1.27, "input", "L"),
+    ("3", "SI", -3.81, 1.27, "input", "L"),
+    ("4", "VSS", -3.81, 3.81, "power_in", "L"),
+    ("5", "PA0", 3.81, 3.81, "passive", "R"),
+    ("6", "PW0", 3.81, 1.27, "passive", "R"),
+    ("7", "PB0", 3.81, -1.27, "passive", "R"),
+    ("8", "VDD", 3.81, -3.81, "power_in", "R"),
+]
+PARTS.append(CuratedPart(
+    name="MCP41010-Digital-Pot-DIP8",
+    reference="U",
+    keywords="ic digital potentiometer spi mcp41010 mcp41050 10k dip8 pot",
+    description="Microchip MCP41010 1-Channel 10k Digital Potentiometer with SPI Interface, DIP-8 package, 9.2 x 6.35 mm",
+    datasheet="https://ww1.microchip.com/downloads/en/DeviceDoc/11195c.pdf",
+    provenance_url="https://www.microchip.com/en-us/product/MCP41010",
+    license="published vendor standard component; symbol & footprint project-authored",
+    dimensions_mm=(9.2, 6.35, 3.3),
+    color_rgb=(0.12, 0.12, 0.12),
+    pins=pmcp41010_dip8_pins,
+))
+
+# 13. MCP41010 SOIC-8 (Digital Potentiometer 10k SPI)
+pmcp41010_soic8_pins = [
+    ("1", "CS", -1.905, -2.54, "input", "L"),
+    ("2", "SCK", -1.905, -0.85, "input", "L"),
+    ("3", "SI", -1.905, 0.85, "input", "L"),
+    ("4", "VSS", -1.905, 2.54, "power_in", "L"),
+    ("5", "PA0", 1.905, 2.54, "passive", "R"),
+    ("6", "PW0", 1.905, 0.85, "passive", "R"),
+    ("7", "PB0", 1.905, -0.85, "passive", "R"),
+    ("8", "VDD", 1.905, -2.54, "power_in", "R"),
+]
+PARTS.append(CuratedPart(
+    name="MCP41010-Digital-Pot-SOIC8",
+    reference="U",
+    keywords="ic digital potentiometer spi mcp41010 soic8 smd 10k pot",
+    description="Microchip MCP41010 1-Channel 10k Digital Potentiometer with SPI Interface, SOIC-8 package, 4.9 x 3.9 mm",
+    datasheet="https://ww1.microchip.com/downloads/en/DeviceDoc/11195c.pdf",
+    provenance_url="https://www.microchip.com/en-us/product/MCP41010",
+    license="published vendor standard component; symbol & footprint project-authored",
+    dimensions_mm=(4.9, 3.9, 1.75),
+    color_rgb=(0.12, 0.12, 0.12),
+    pins=pmcp41010_soic8_pins,
+))
+
+# 14. X9C103 DIP-8 (Digital Potentiometer 10k 100-step)
+px9c103_pins = [
+    ("1", "INC", -3.81, -3.81, "input", "L"),
+    ("2", "U_D", -3.81, -1.27, "input", "L"),
+    ("3", "RH", -3.81, 1.27, "passive", "L"),
+    ("4", "VSS", -3.81, 3.81, "power_in", "L"),
+    ("5", "RW", 3.81, 3.81, "passive", "R"),
+    ("6", "RL", 3.81, 1.27, "passive", "R"),
+    ("7", "CS", 3.81, -1.27, "input", "R"),
+    ("8", "VCC", 3.81, -3.81, "power_in", "R"),
+]
+PARTS.append(CuratedPart(
+    name="X9C103-Digital-Pot-DIP8",
+    reference="U",
+    keywords="ic digital potentiometer x9c103 x9c102 x9c104 x9c503 10k 100-tap dip8 pot",
+    description="Renesas / Intersil X9C103P 10kΩ 100-Tap Nonvolatile Digital Potentiometer, 3-wire increment/decrement interface, DIP-8, 9.2 x 6.35 mm",
+    datasheet="https://www.renesas.com/us/en/document/dst/x9c102-x9c103-x9c104-x9c503-datasheet",
+    provenance_url="https://www.renesas.com/us/en/products/power-power-management/digital-potentiometers/x9c103",
+    license="published vendor standard component; symbol & footprint project-authored",
+    dimensions_mm=(9.2, 6.35, 3.3),
+    color_rgb=(0.12, 0.12, 0.12),
+    pins=px9c103_pins,
+))
+
 def build_all() -> None:
     SYMBOL_DIR.mkdir(parents=True, exist_ok=True)
     FOOTPRINT_DIR.mkdir(parents=True, exist_ok=True)
