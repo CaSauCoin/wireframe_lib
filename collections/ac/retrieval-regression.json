@@ -1,0 +1,93 @@
+{
+  "note": "Baseline reconstructed from unchanged old part rows, excluding added AC packages; includes the same original embedded descriptions.",
+  "before": {
+    "name": "retrieval",
+    "findings": [
+      {
+        "check": "retrieval.no_match",
+        "severity": "error",
+        "message": "golden queries whose expected kind of part is not in the results",
+        "count": 5,
+        "sample": [
+          "'Arduino Nano ESP32 development board': nothing matching in top 10 (first was Arduino_Nano_ESP32 [module.devboard] Arduino_Nano)",
+          "'STM32 Nucleo development board': nothing matching in top 10 (first was NUCLEO64-F411RE [module.devboard] NUCLEO64-F411RE_Module)",
+          "'Raspberry Pi compute module': nothing matching in top 10 (first was Raspberry-Pi-Compute-Module-4 [module.compute] Raspberry-Pi-Compute-Module-4_Carrier)",
+          "'U.FL coax antenna connector': nothing matching in top 10 (first was Ai-Thinker-Ra-02 [module.wireless] Ai-Thinker-Ra-01-LoRa)",
+          "'M.2 socket connector': nothing matching in top 10 (first was MicroMod-Processor [module.devboard] M.2-E-MicroMod-Processor-Outline)"
+        ],
+        "measured": {}
+      },
+      {
+        "check": "retrieval.rank",
+        "severity": "warn",
+        "message": "golden queries where the right part ranks lower than expected",
+        "count": 1,
+        "sample": [
+          "'ESP32 WiFi module': first match at rank 6, wanted within 5"
+        ],
+        "measured": {}
+      },
+      {
+        "check": "retrieval.summary",
+        "severity": "info",
+        "message": "23/29 golden queries answered within their expected rank",
+        "count": 1,
+        "sample": [],
+        "measured": {
+          "passed": 23,
+          "total": 29,
+          "missed": 5,
+          "late": 1,
+          "empty": 0
+        }
+      }
+    ],
+    "seconds": 0.0,
+    "skipped": ""
+  },
+  "after": {
+    "name": "retrieval",
+    "findings": [
+      {
+        "check": "retrieval.no_match",
+        "severity": "error",
+        "message": "golden queries whose expected kind of part is not in the results",
+        "count": 5,
+        "sample": [
+          "'Arduino Nano ESP32 development board': nothing matching in top 10 (first was Arduino_Nano_ESP32 [module.devboard] Arduino_Nano)",
+          "'STM32 Nucleo development board': nothing matching in top 10 (first was NUCLEO64-F411RE [module.devboard] NUCLEO64-F411RE_Module)",
+          "'Raspberry Pi compute module': nothing matching in top 10 (first was Raspberry-Pi-Compute-Module-4 [module.compute] Raspberry-Pi-Compute-Module-4_Carrier)",
+          "'U.FL coax antenna connector': nothing matching in top 10 (first was Ai-Thinker-Ra-02 [module.wireless] Ai-Thinker-Ra-01-LoRa)",
+          "'M.2 socket connector': nothing matching in top 10 (first was MicroMod-Processor [module.devboard] M.2-E-MicroMod-Processor-Outline)"
+        ],
+        "measured": {}
+      },
+      {
+        "check": "retrieval.rank",
+        "severity": "warn",
+        "message": "golden queries where the right part ranks lower than expected",
+        "count": 1,
+        "sample": [
+          "'ESP32 WiFi module': first match at rank 6, wanted within 5"
+        ],
+        "measured": {}
+      },
+      {
+        "check": "retrieval.summary",
+        "severity": "info",
+        "message": "23/29 golden queries answered within their expected rank",
+        "count": 1,
+        "sample": [],
+        "measured": {
+          "passed": 23,
+          "total": 29,
+          "missed": 5,
+          "late": 1,
+          "empty": 0
+        }
+      }
+    ],
+    "seconds": 0.0,
+    "skipped": ""
+  }
+}
