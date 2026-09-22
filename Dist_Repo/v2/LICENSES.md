@@ -25,3 +25,11 @@ CC-BY-SA-4.0 with an exception permitting use in designs without the
 design itself becoming a derivative work. Redistribution of the library
 content, as here, requires attribution — which this file and the
 per-part `source` block provide.
+
+## WireFrame AC generic packages
+
+KiCad-derived generic protection symbols and unmodified footprints; CC-BY-SA-4.0 WITH KiCad-Libraries-exception. See `sources/ac-packages/PROVENANCE.json` for upstream commits and hashes. No electrical rating or mains certification is implied.
+
+## WireFrame interface connector packages
+
+Unmodified KiCad footprints and project-authored numbered contact symbols. CC-BY-SA-4.0 WITH KiCad-Libraries-exception; see sources/interface-packages/PROVENANCE.json. No protocol or cable compatibility is inferred.
