@@ -446,11 +446,51 @@
   .canvas-3d-wrapper {
     flex: 1;
     min-width: 480px;
-    background: radial-gradient(circle at center, #1b222d 0%, #0d1117 100%);
+    background: radial-gradient(circle at 50% 40%, #2a3547 0%, #151b24 100%);
     position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: background 0.3s ease;
+  }
+  .canvas-3d-wrapper.theme-light {
+    background: radial-gradient(circle at 50% 40%, #ffffff 0%, #dbe2ea 100%);
+  }
+  .canvas-3d-wrapper.theme-dark {
+    background: radial-gradient(circle at 50% 40%, #18202c 0%, #0a0d12 100%);
+  }
+  .studio-toolbar {
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    display: flex;
+    gap: 6px;
+    z-index: 10;
+  }
+  .studio-btn {
+    background: rgba(22, 27, 34, 0.85);
+    border: 1px solid rgba(88, 166, 255, 0.4);
+    color: #e6edf3;
+    font-size: 11px;
+    font-weight: 500;
+    padding: 5px 10px;
+    border-radius: 6px;
+    cursor: pointer;
+    backdrop-filter: blur(8px);
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    transition: all 0.2s;
+  }
+  .studio-btn:hover {
+    background: rgba(56, 139, 253, 0.3);
+    border-color: #58a6ff;
+    color: #ffffff;
+  }
+  .studio-btn.active {
+    background: #1f6feb;
+    border-color: #58a6ff;
+    color: #ffffff;
   }
   #threeCanvas {
     width: 100% !important;
@@ -634,7 +674,13 @@
       <button class="close-btn" onclick="close3DModal()">&times;</button>
     </div>
     <div class="modal-3d-body">
-      <div class="canvas-3d-wrapper">
+      <div class="canvas-3d-wrapper" id="canvas3dWrapper">
+        <div class="studio-toolbar">
+          <button class="studio-btn active" id="btnThemeCad" onclick="setStudioTheme('cad')">💎 Studio CAD</button>
+          <button class="studio-btn" id="btnThemeLight" onclick="setStudioTheme('light')">☀️ Nền Sáng</button>
+          <button class="studio-btn" id="btnThemeDark" onclick="setStudioTheme('dark')">🌙 Nền Tối</button>
+          <button class="studio-btn" onclick="reset3DCamera()" title="Đặt lại góc nhìn">🔄 Reset View</button>
+        </div>
         <canvas id="threeCanvas"></canvas>
         <div class="drag-hint">🖱️ Nhấp & kéo để xoay 360° • Cuộn chuột để Phóng to/Thu nhỏ</div>
       </div>
@@ -843,41 +889,88 @@ tierFilter.addEventListener('change', applyFilters);
 let scene, camera, renderer, currentMeshGroup, animationFrameId;
 let isDragging = false;
 let previousMousePosition = { x: 0, y: 0 };
+let currentStudioTheme = 'cad';
+let targetCameraDistance = 28;
+
+function setStudioTheme(theme) {
+  currentStudioTheme = theme;
+  const wrapper = document.getElementById('canvas3dWrapper');
+  document.querySelectorAll('.studio-btn').forEach(b => b.classList.remove('active'));
+  
+  if (wrapper) {
+    wrapper.classList.remove('theme-light', 'theme-dark');
+    if (theme === 'light') {
+      wrapper.classList.add('theme-light');
+      document.getElementById('btnThemeLight')?.classList.add('active');
+    } else if (theme === 'dark') {
+      wrapper.classList.add('theme-dark');
+      document.getElementById('btnThemeDark')?.classList.add('active');
+    } else {
+      document.getElementById('btnThemeCad')?.classList.add('active');
+    }
+  }
+}
+
+function reset3DCamera() {
+  if (!camera) return;
+  camera.position.set(0, targetCameraDistance * 0.45, targetCameraDistance);
+  camera.lookAt(0, 0, 0);
+  if (currentMeshGroup) {
+    currentMeshGroup.rotation.set(0.55, -0.65, 0);
+  }
+}
 
 function initThreeJS() {
   const canvas = document.getElementById('threeCanvas');
   if (!canvas || !window.THREE) return;
 
-  const width = canvas.parentElement.clientWidth;
+  const width = canvas.parentElement.clientWidth || 580;
   const height = canvas.parentElement.clientHeight || 480;
 
   scene = new THREE.Scene();
-  scene.background = new THREE.Color(0x0d1117);
+  // Transparent background so the beautiful CSS studio gradient shows through!
+  scene.background = null;
 
   camera = new THREE.PerspectiveCamera(45, width / height, 0.1, 1000);
-  camera.position.set(0, 20, 35);
+  camera.position.set(0, 16, 26);
   camera.lookAt(0, 0, 0);
 
   renderer = new THREE.WebGLRenderer({ canvas: canvas, antialias: true, alpha: true });
   renderer.setSize(width, height);
-  renderer.setPixelRatio(window.devicePixelRatio);
+  renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
+  renderer.toneMapping = THREE.ACESFilmicToneMapping;
+  renderer.toneMappingExposure = 1.35;
   renderer.shadowMap.enabled = true;
+  renderer.shadowMap.type = THREE.PCFSoftShadowMap;
 
-  // Studio Lighting
-  const ambientLight = new THREE.AmbientLight(0xffffff, 0.6);
-  scene.add(ambientLight);
+  // ===== RICH 4-POINT STUDIO LIGHTING =====
+  // 1. Hemisphere Light (Omnidirectional sky + ground bounce)
+  const hemiLight = new THREE.HemisphereLight(0xffffff, 0x64748b, 1.8);
+  scene.add(hemiLight);
 
-  const mainLight = new THREE.DirectionalLight(0xffffff, 0.8);
-  mainLight.position.set(15, 30, 20);
-  scene.add(mainLight);
+  // 2. Main Key Light (Top-Front-Right)
+  const keyLight = new THREE.DirectionalLight(0xffffff, 1.8);
+  keyLight.position.set(25, 40, 30);
+  scene.add(keyLight);
 
-  const fillLight = new THREE.DirectionalLight(0x58a6ff, 0.4);
-  fillLight.position.set(-15, -10, -15);
+  // 3. Fill Light (Soft cool light from opposite angle)
+  const fillLight = new THREE.DirectionalLight(0xb0d4ff, 1.1);
+  fillLight.position.set(-25, 10, -20);
   scene.add(fillLight);
 
-  // Ground Grid
-  const gridHelper = new THREE.GridHelper(40, 20, 0x30363d, 0x161b22);
-  gridHelper.position.y = -4;
+  // 4. Rim / Edge Light (High intensity backlight for crisp silhouette)
+  const rimLight = new THREE.DirectionalLight(0x60a5fa, 1.3);
+  rimLight.position.set(0, 30, -35);
+  scene.add(rimLight);
+
+  // 5. Bottom Bounce Light (prevents dark undersides)
+  const bottomBounce = new THREE.DirectionalLight(0xfff8ee, 0.8);
+  bottomBounce.position.set(0, -30, 10);
+  scene.add(bottomBounce);
+
+  // Elegant CAD Ground Grid
+  const gridHelper = new THREE.GridHelper(50, 25, 0x58a6ff, 0x30363d);
+  gridHelper.position.y = -5;
   scene.add(gridHelper);
 
   // Mouse drag rotate controls
@@ -893,8 +986,8 @@ function initThreeJS() {
     const deltaX = e.clientX - previousMousePosition.x;
     const deltaY = e.clientY - previousMousePosition.y;
 
-    currentMeshGroup.rotation.y += deltaX * 0.01;
-    currentMeshGroup.rotation.x += deltaY * 0.01;
+    currentMeshGroup.rotation.y += deltaX * 0.012;
+    currentMeshGroup.rotation.x += deltaY * 0.012;
 
     previousMousePosition = { x: e.clientX, y: e.clientY };
   });
@@ -902,9 +995,10 @@ function initThreeJS() {
   // Wheel zoom
   canvas.addEventListener('wheel', (e) => {
     e.preventDefault();
-    camera.position.z += e.deltaY * 0.05;
-    camera.position.z = Math.max(10, Math.min(80, camera.position.z));
-  });
+    camera.position.z += e.deltaY * 0.035;
+    camera.position.z = Math.max(8, Math.min(80, camera.position.z));
+  }, { passive: false });
+}
 
   animate();
 }
@@ -926,17 +1020,56 @@ function createProceduralICMesh(fpName, padCount, stepFile) {
   const combined = (fp + ' ' + step).toLowerCase();
   const pc = padCount || 0;
 
-  // Standard PBR materials
-  const bodyDark = new THREE.MeshStandardMaterial({ color: 0x1a1e24, roughness: 0.35, metalness: 0.1 });
-  const ceramicBrown = new THREE.MeshStandardMaterial({ color: 0xa07855, roughness: 0.5, metalness: 0.1 });
-  const resinBlack = new THREE.MeshStandardMaterial({ color: 0x0f141c, roughness: 0.3, metalness: 0.1 });
-  const silverCap = new THREE.MeshStandardMaterial({ color: 0xecf2f8, roughness: 0.2, metalness: 0.95 });
-  const silverPin = new THREE.MeshStandardMaterial({ color: 0xd8dee4, roughness: 0.25, metalness: 0.92 });
-  const copperWire = new THREE.MeshStandardMaterial({ color: 0xb87333, roughness: 0.3, metalness: 0.85 });
-  const goldAlum = new THREE.MeshStandardMaterial({ color: 0xc8963e, roughness: 0.3, metalness: 0.8 });
-  const cementMat = new THREE.MeshStandardMaterial({ color: 0xdedcd5, roughness: 0.9, metalness: 0.05 });
-  const markMat = new THREE.MeshBasicMaterial({ color: 0x8b949e });
-  const stripeWhite = new THREE.MeshBasicMaterial({ color: 0xf0f6fc });
+  // ===== BRILLIANT STUDIO PBR MATERIALS =====
+  // Chrome / Solder Silver pins (low metalness so diffuse white shines bright!)
+  const silverPin = new THREE.MeshStandardMaterial({ 
+    color: 0xffffff, 
+    roughness: 0.22, 
+    metalness: 0.35 
+  });
+  const silverCap = new THREE.MeshStandardMaterial({ 
+    color: 0xf8fafc, 
+    roughness: 0.18, 
+    metalness: 0.4 
+  });
+
+  // Resistor body: deep slate-blue (distinct from black background, realistic SMD look)
+  const resistorBodyMat = new THREE.MeshStandardMaterial({ 
+    color: 0x243348, 
+    roughness: 0.35, 
+    metalness: 0.15 
+  });
+
+  // Capacitor body: warm ceramic tan/brown (Kemet / Murata style)
+  const ceramicBrown = new THREE.MeshStandardMaterial({ 
+    color: 0xc4824d, 
+    roughness: 0.4, 
+    metalness: 0.05 
+  });
+
+  // IC Epoxy Body: visible matte charcoal grey (NOT pitch black)
+  const bodyDark = new THREE.MeshStandardMaterial({ 
+    color: 0x323943, 
+    roughness: 0.45, 
+    metalness: 0.1 
+  });
+
+  // Nichicon / Panasonic Electrolytic Can body (deep metallic navy)
+  const canBody = new THREE.MeshStandardMaterial({ 
+    color: 0x1e3654, 
+    roughness: 0.3, 
+    metalness: 0.25 
+  });
+
+  // High-contrast accents
+  const markMat = new THREE.MeshBasicMaterial({ color: 0xfacc15 }); // bright gold dot
+  const stripeWhite = new THREE.MeshBasicMaterial({ color: 0xffffff }); // pure white polarity band
+  const cementMat = new THREE.MeshStandardMaterial({ color: 0xf4f2ec, roughness: 0.85, metalness: 0.02 });
+  const goldAlum = new THREE.MeshStandardMaterial({ color: 0xf59e0b, roughness: 0.35, metalness: 0.55 });
+  const copperWire = new THREE.MeshStandardMaterial({ color: 0xdf7a15, roughness: 0.25, metalness: 0.65 });
+
+  // Default camera distance for auto-zoom
+  targetCameraDistance = 26;
 
   // ===== 1. ALUMINUM ELECTROLYTIC CAN / RADIAL CAPACITOR =====
   if (/c_radial|c_elec|radial_d|electrolytic|cap_can|snap-in/.test(combined)) {
@@ -946,45 +1079,49 @@ function createProceduralICMesh(fpName, padCount, stepFile) {
     if (mD) dia = Math.min(22, Math.max(5, parseFloat(mD[1])));
     if (mH) height = Math.min(35, Math.max(8, parseFloat(mH[1])));
 
+    targetCameraDistance = Math.max(24, height * 1.3);
+
     // Main cylindrical can
-    const canGeo = new THREE.CylinderGeometry(dia/2, dia/2, height, 32);
-    const canMesh = new THREE.Mesh(canGeo, resinBlack);
+    const canGeo = new THREE.CylinderGeometry(dia/2, dia/2, height, 36);
+    const canMesh = new THREE.Mesh(canGeo, canBody);
     group.add(canMesh);
 
-    // Negative polarity stripe
-    const stripeGeo = new THREE.CylinderGeometry(dia/2 + 0.05, dia/2 + 0.05, height, 32, 1, true, -Math.PI*0.12, Math.PI*0.24);
+    // Negative polarity stripe (pure white ribbon on side)
+    const stripeGeo = new THREE.CylinderGeometry(dia/2 + 0.06, dia/2 + 0.06, height, 36, 1, true, -Math.PI*0.14, Math.PI*0.28);
     const stripeMesh = new THREE.Mesh(stripeGeo, stripeWhite);
     group.add(stripeMesh);
 
-    // Embossed safety vent top score (cross '+' or 'K')
-    const ventMat = new THREE.MeshBasicMaterial({ color: 0x22272e });
-    const vent1 = new THREE.Mesh(new THREE.BoxGeometry(dia * 0.7, 0.1, 0.5), ventMat);
-    vent1.position.y = height/2 + 0.06;
-    const vent2 = new THREE.Mesh(new THREE.BoxGeometry(0.5, 0.1, dia * 0.7), ventMat);
-    vent2.position.y = height/2 + 0.06;
+    // Silver top vent dome
+    const ventMat = new THREE.MeshStandardMaterial({ color: 0x94a3b8, roughness: 0.3, metalness: 0.4 });
+    const vent1 = new THREE.Mesh(new THREE.BoxGeometry(dia * 0.65, 0.15, 0.6), ventMat);
+    vent1.position.y = height/2 + 0.08;
+    const vent2 = new THREE.Mesh(new THREE.BoxGeometry(0.6, 0.15, dia * 0.65), ventMat);
+    vent2.position.y = height/2 + 0.08;
     group.add(vent1); group.add(vent2);
 
-    // Through-hole leads (2 wires pointing down)
-    const leadGeo = new THREE.CylinderGeometry(0.35, 0.35, 8, 12);
+    // Shiny through-hole leads
+    const leadGeo = new THREE.CylinderGeometry(0.4, 0.4, 9, 16);
     const pitch = Math.min(dia * 0.6, 5);
     const lead1 = new THREE.Mesh(leadGeo, silverPin);
-    lead1.position.set(-pitch/2, -height/2 - 4, 0);
+    lead1.position.set(-pitch/2, -height/2 - 4.5, 0);
     const lead2 = new THREE.Mesh(leadGeo, silverPin);
-    lead2.position.set(pitch/2, -height/2 - 4, 0);
+    lead2.position.set(pitch/2, -height/2 - 4.5, 0);
     group.add(lead1); group.add(lead2);
   }
 
   // ===== 2. CEMENT POWER RESISTOR (SQP / SQM) =====
   else if (/cement|sqp|sqm|power_res|r_radial_power|r_axial_power/.test(combined)) {
     let len = 22, w = 9.5, h = 9.5;
-    if (/10w|1000/.test(combined)) { len = 35; w = 10; h = 10; }
-    else if (/20w|2000/.test(combined)) { len = 45; w = 12; h = 12; }
+    if (/10w|1000/.test(combined)) { len = 32; w = 10; h = 10; }
+    else if (/20w|2000/.test(combined)) { len = 46; w = 12.5; h = 12.5; }
+
+    targetCameraDistance = Math.max(28, len * 0.9);
 
     const bodyGeo = new THREE.BoxGeometry(len, h, w);
     group.add(new THREE.Mesh(bodyGeo, cementMat));
 
-    // Two lead wires on ends
-    const leadGeo = new THREE.CylinderGeometry(0.5, 0.5, 10, 12);
+    // Two bright silver lead wires
+    const leadGeo = new THREE.CylinderGeometry(0.55, 0.55, 10, 16);
     const l1 = new THREE.Mesh(leadGeo, silverPin);
     l1.rotation.z = Math.PI / 2;
     l1.position.set(-len/2 - 5, 0, 0);
@@ -994,170 +1131,180 @@ function createProceduralICMesh(fpName, padCount, stepFile) {
     group.add(l1); group.add(l2);
   }
 
-  // ===== 3. CHASSIS MOUNT ALUMINUM POWER RESISTOR (RX24 / ARCOL / HS) =====
+  // ===== 3. CHASSIS MOUNT ALUMINUM POWER RESISTOR (RX24) =====
   else if (/rx24|chassis|aluminum_power|arcol|dale_nh/.test(combined)) {
     const len = 28, w = 15, h = 15;
+    targetCameraDistance = 34;
+
     const bodyGeo = new THREE.BoxGeometry(len, h, w);
     group.add(new THREE.Mesh(bodyGeo, goldAlum));
 
     // Heatsink fins
-    const finGeo = new THREE.BoxGeometry(len, 2.5, 0.8);
-    for (let fz = -w/2 + 2; fz <= w/2 - 2; fz += 2.5) {
+    const finGeo = new THREE.BoxGeometry(len, 3.0, 0.9);
+    for (let fz = -w/2 + 2.5; fz <= w/2 - 2.5; fz += 2.5) {
       const fin = new THREE.Mesh(finGeo, goldAlum);
-      fin.position.set(0, h/2 + 1.2, fz);
+      fin.position.set(0, h/2 + 1.5, fz);
       group.add(fin);
     }
-    // Solder lugs on both sides
+    // Solder lugs
     const lugGeo = new THREE.BoxGeometry(6, 4, 1.2);
     const lug1 = new THREE.Mesh(lugGeo, silverPin); lug1.position.set(-len/2 - 3, 0, 0);
     const lug2 = new THREE.Mesh(lugGeo, silverPin); lug2.position.set(len/2 + 3, 0, 0);
     group.add(lug1); group.add(lug2);
   }
 
-  // ===== 4. TOROID POWER CHOKE / INDUCTOR =====
+  // ===== 4. TOROID POWER CHOKE =====
   else if (/toroid|choke|t50|t68|t80|t106|inductor_choke/.test(combined)) {
-    const torGeo = new THREE.TorusGeometry(8, 3.2, 16, 32);
-    const torMesh = new THREE.Mesh(torGeo, resinBlack);
+    targetCameraDistance = 30;
+    const torGeo = new THREE.TorusGeometry(8, 3.2, 20, 40);
+    const torMesh = new THREE.Mesh(torGeo, bodyDark);
     torMesh.rotation.x = Math.PI / 2;
     group.add(torMesh);
 
-    // Copper winding rings around the torus
-    const numTurns = 18;
+    // Copper winding rings
+    const numTurns = 20;
     for (let i = 0; i < numTurns; i++) {
-      const angle = (i / numTurns) * Math.PI * 1.8 - Math.PI * 0.9;
-      const wireRing = new THREE.Mesh(new THREE.TorusGeometry(3.6, 0.45, 8, 16), copperWire);
+      const angle = (i / numTurns) * Math.PI * 1.85 - Math.PI * 0.92;
+      const wireRing = new THREE.Mesh(new THREE.TorusGeometry(3.6, 0.5, 10, 20), copperWire);
       wireRing.position.set(Math.cos(angle) * 8, 0, Math.sin(angle) * 8);
       wireRing.rotation.y = -angle;
       group.add(wireRing);
     }
-    // Leads pointing down
-    const l1 = new THREE.Mesh(new THREE.CylinderGeometry(0.5, 0.5, 8, 8), copperWire);
+    const l1 = new THREE.Mesh(new THREE.CylinderGeometry(0.55, 0.55, 8, 12), copperWire);
     l1.position.set(-5, -6, 0);
-    const l2 = new THREE.Mesh(new THREE.CylinderGeometry(0.5, 0.5, 8, 8), copperWire);
+    const l2 = new THREE.Mesh(new THREE.CylinderGeometry(0.55, 0.55, 8, 12), copperWire);
     l2.position.set(5, -6, 0);
     group.add(l1); group.add(l2);
   }
 
   // ===== 5. PASSIVE 2-PIN SMD CHIPS (0402, 0603, 0805, 1206, 1210, 2010, 2512) =====
   else if (pc === 2 && (/\b(r_|c_|l_|r0|c0|l0)\d{4}\b/.test(combined) || /\b(0402|0603|0805|1206|1210|1812|2010|2512)\b/.test(combined))) {
-    let len = 12, w = 6, h = 5;
-    if (/0402/.test(combined)) { len = 8; w = 4; h = 3.5; }
-    else if (/0603/.test(combined)) { len = 12; w = 6; h = 5; }
-    else if (/0805/.test(combined)) { len = 16; w = 8; h = 7; }
-    else if (/1206/.test(combined)) { len = 22; w = 10; h = 8; }
-    else if (/1210/.test(combined)) { len = 22; w = 14; h = 10; }
-    else if (/1812/.test(combined)) { len = 28; w = 18; h = 10; }
-    else if (/2010/.test(combined)) { len = 32; w = 14; h = 10; }
-    else if (/2512/.test(combined)) { len = 36; w = 18; h = 12; }
+    let len = 14, w = 7, h = 6;
+    if (/0402/.test(combined)) { len = 10; w = 5; h = 4.5; targetCameraDistance = 18; }
+    else if (/0603/.test(combined)) { len = 12; w = 6; h = 5.2; targetCameraDistance = 20; }
+    else if (/0805/.test(combined)) { len = 16; w = 8; h = 7; targetCameraDistance = 22; }
+    else if (/1206/.test(combined)) { len = 22; w = 11; h = 8.5; targetCameraDistance = 25; }
+    else if (/1210/.test(combined)) { len = 22; w = 15; h = 10; targetCameraDistance = 26; }
+    else if (/1812/.test(combined)) { len = 28; w = 18; h = 11; targetCameraDistance = 30; }
+    else if (/2010/.test(combined)) { len = 32; w = 14; h = 11; targetCameraDistance = 32; }
+    else if (/2512/.test(combined)) { len = 36; w = 18; h = 12; targetCameraDistance = 35; }
 
     const isCap = combined.includes('c_') || /capacitor|cap|uf|pf|nf/.test(combined);
-    const chipMat = isCap ? ceramicBrown : resinBlack;
+    const chipMat = isCap ? ceramicBrown : resistorBodyMat;
 
-    const bodyGeo = new THREE.BoxGeometry(len * 0.7, h, w);
+    // Center body
+    const bodyGeo = new THREE.BoxGeometry(len * 0.68, h, w);
     group.add(new THREE.Mesh(bodyGeo, chipMat));
 
-    const capGeo = new THREE.BoxGeometry(len * 0.2, h * 1.02, w * 1.02);
-    const capL = new THREE.Mesh(capGeo, silverCap); capL.position.x = -len * 0.4; group.add(capL);
-    const capR = new THREE.Mesh(capGeo, silverCap); capR.position.x = len * 0.4; group.add(capR);
+    // Sparkling bright silver end caps
+    const capGeo = new THREE.BoxGeometry(len * 0.22, h * 1.04, w * 1.04);
+    const capL = new THREE.Mesh(capGeo, silverCap); capL.position.x = -len * 0.39; group.add(capL);
+    const capR = new THREE.Mesh(capGeo, silverCap); capR.position.x = len * 0.39; group.add(capR);
   }
 
-  // ===== 6. SOT-23-8 / TSOT-23-8 (8 pins small body, exactly 4 leads per side) =====
+  // ===== 6. SOT-23-8 / TSOT-23-8 (8 pins, 4 per side) =====
   else if (pc === 8 && /sot[-_]?23[-_]?8|tsot[-_]?23[-_]?8/.test(combined)) {
-    const bodyGeo = new THREE.BoxGeometry(10, 2.5, 6);
+    targetCameraDistance = 22;
+    const bodyGeo = new THREE.BoxGeometry(11, 3.2, 7);
     group.add(new THREE.Mesh(bodyGeo, bodyDark));
-    const dotGeo = new THREE.CylinderGeometry(0.35, 0.35, 0.15, 12);
-    const dot = new THREE.Mesh(dotGeo, markMat); dot.position.set(-3.5, 1.3, -1.8); group.add(dot);
-    const pg = new THREE.BoxGeometry(0.8, 0.35, 1.8);
+    const dotGeo = new THREE.CylinderGeometry(0.4, 0.4, 0.2, 16);
+    const dot = new THREE.Mesh(dotGeo, markMat); dot.position.set(-4.0, 1.7, -2.2); group.add(dot);
+    const pg = new THREE.BoxGeometry(0.9, 0.4, 2.2);
     for (let i = 0; i < 4; i++) {
-      const x = -3.0 + i * 2.0;
-      const p1 = new THREE.Mesh(pg, silverPin); p1.position.set(x, -0.9, 3.6); group.add(p1);
-      const p2 = new THREE.Mesh(pg, silverPin); p2.position.set(x, -0.9, -3.6); group.add(p2);
+      const x = -3.3 + i * 2.2;
+      const p1 = new THREE.Mesh(pg, silverPin); p1.position.set(x, -1.2, 4.2); group.add(p1);
+      const p2 = new THREE.Mesh(pg, silverPin); p2.position.set(x, -1.2, -4.2); group.add(p2);
     }
   }
 
-  // ===== 7. SOT-23-6 / SOT-363 / SC-70-6 (6 pins) =====
+  // ===== 7. SOT-23-6 / SOT-363 (6 pins) =====
   else if (pc === 6 && /sot[-_]?23[-_]?6|sot[-_]?363|sc[-_]?70[-_]?6/.test(combined)) {
-    const bodyGeo = new THREE.BoxGeometry(8, 3, 5);
+    targetCameraDistance = 20;
+    const bodyGeo = new THREE.BoxGeometry(9, 3.2, 6);
     group.add(new THREE.Mesh(bodyGeo, bodyDark));
-    const pg = new THREE.BoxGeometry(1.2, 0.5, 2.2);
-    for (let i = -2.6; i <= 2.6; i += 2.6) {
-      const p1 = new THREE.Mesh(pg, silverPin); p1.position.set(i, -1.2, 3.2); group.add(p1);
-      const p2 = new THREE.Mesh(pg, silverPin); p2.position.set(i, -1.2, -3.2); group.add(p2);
+    const pg = new THREE.BoxGeometry(1.2, 0.5, 2.4);
+    for (let i = -2.8; i <= 2.8; i += 2.8) {
+      const p1 = new THREE.Mesh(pg, silverPin); p1.position.set(i, -1.2, 3.8); group.add(p1);
+      const p2 = new THREE.Mesh(pg, silverPin); p2.position.set(i, -1.2, -3.8); group.add(p2);
     }
   }
 
-  // ===== 8. SOT-23-5 / SOT-353 / SC-70-5 (5 pins) =====
+  // ===== 8. SOT-23-5 / SOT-353 (5 pins) =====
   else if (pc === 5 && /sot[-_]?23[-_]?5|sot[-_]?353|sc[-_]?70[-_]?5|sot[-_]?753/.test(combined)) {
-    const bodyGeo = new THREE.BoxGeometry(8, 3, 5);
+    targetCameraDistance = 20;
+    const bodyGeo = new THREE.BoxGeometry(9, 3.2, 6);
     group.add(new THREE.Mesh(bodyGeo, bodyDark));
-    const pg = new THREE.BoxGeometry(1.2, 0.5, 2.2);
-    // 3 pins on one side
-    for (let i = -2.6; i <= 2.6; i += 2.6) {
-      const p = new THREE.Mesh(pg, silverPin); p.position.set(i, -1.2, 3.2); group.add(p);
+    const pg = new THREE.BoxGeometry(1.2, 0.5, 2.4);
+    for (let i = -2.8; i <= 2.8; i += 2.8) {
+      const p = new THREE.Mesh(pg, silverPin); p.position.set(i, -1.2, 3.8); group.add(p);
     }
-    // 2 pins on other side
-    for (let i = -1.3; i <= 1.3; i += 2.6) {
-      const p = new THREE.Mesh(pg, silverPin); p.position.set(i, -1.2, -3.2); group.add(p);
+    for (let i = -1.4; i <= 1.4; i += 2.8) {
+      const p = new THREE.Mesh(pg, silverPin); p.position.set(i, -1.2, -3.8); group.add(p);
     }
   }
 
   // ===== 9. SOT-23 (3 pins) =====
   else if (pc === 3 && /sot[-_]?23|to[-_]?236/.test(combined)) {
-    const bodyGeo = new THREE.BoxGeometry(8, 3, 5);
+    targetCameraDistance = 20;
+    const bodyGeo = new THREE.BoxGeometry(9, 3.2, 6);
     group.add(new THREE.Mesh(bodyGeo, bodyDark));
-    const pg = new THREE.BoxGeometry(1.6, 0.5, 2.5);
-    const p1 = new THREE.Mesh(pg, silverPin); p1.position.set(-2.6, -1.2, 3.2); group.add(p1);
-    const p2 = new THREE.Mesh(pg, silverPin); p2.position.set(2.6, -1.2, 3.2); group.add(p2);
-    const p3 = new THREE.Mesh(pg, silverPin); p3.position.set(0, -1.2, -3.2); group.add(p3);
+    const pg = new THREE.BoxGeometry(1.5, 0.5, 2.6);
+    const p1 = new THREE.Mesh(pg, silverPin); p1.position.set(-2.8, -1.2, 3.8); group.add(p1);
+    const p2 = new THREE.Mesh(pg, silverPin); p2.position.set(2.8, -1.2, 3.8); group.add(p2);
+    const p3 = new THREE.Mesh(pg, silverPin); p3.position.set(0, -1.2, -3.8); group.add(p3);
   }
 
   // ===== 10. SOT-223 (3 pins + large thermal tab) =====
   else if (/sot[-_]?223/.test(combined)) {
-    const bodyGeo = new THREE.BoxGeometry(14, 3.5, 8);
+    targetCameraDistance = 24;
+    const bodyGeo = new THREE.BoxGeometry(15, 3.6, 8.5);
     group.add(new THREE.Mesh(bodyGeo, bodyDark));
-    const smallPg = new THREE.BoxGeometry(1.6, 0.5, 3);
-    for (let i = -4; i <= 4; i += 4) {
-      const p = new THREE.Mesh(smallPg, silverPin); p.position.set(i, -1.5, 5); group.add(p);
+    const smallPg = new THREE.BoxGeometry(1.8, 0.6, 3.2);
+    for (let i = -4.5; i <= 4.5; i += 4.5) {
+      const p = new THREE.Mesh(smallPg, silverPin); p.position.set(i, -1.5, 5.4); group.add(p);
     }
-    const tabGeo = new THREE.BoxGeometry(6, 0.5, 3);
-    const tab = new THREE.Mesh(tabGeo, silverPin); tab.position.set(0, -1.5, -5); group.add(tab);
+    const tabGeo = new THREE.BoxGeometry(7, 0.6, 3.2);
+    const tab = new THREE.Mesh(tabGeo, silverPin); tab.position.set(0, -1.5, -5.4); group.add(tab);
   }
 
-  // ===== 11. TO-220 / TO-247 (Heatsink tab + 3 vertical leads) =====
+  // ===== 11. TO-220 / TO-247 =====
   else if (/to[-_]?220|to[-_]?247/.test(combined)) {
     const is247 = combined.includes('247');
     const bW = is247 ? 16 : 12;
     const bH = is247 ? 16 : 12;
-    const bodyGeo = new THREE.BoxGeometry(bW, bH, 5);
+    targetCameraDistance = 32;
+
+    const bodyGeo = new THREE.BoxGeometry(bW, bH, 5.2);
     group.add(new THREE.Mesh(bodyGeo, bodyDark));
-    const tabGeo = new THREE.BoxGeometry(bW, 7, 1.5);
-    const tabMat = new THREE.MeshStandardMaterial({ color: 0xcccccc, roughness: 0.2, metalness: 0.9 });
+    const tabGeo = new THREE.BoxGeometry(bW, 7, 1.6);
+    const tabMat = new THREE.MeshStandardMaterial({ color: 0xd1d5db, roughness: 0.25, metalness: 0.7 });
     const tab = new THREE.Mesh(tabGeo, tabMat); tab.position.set(0, bH/2 + 3.5, 0); group.add(tab);
-    const holeGeo = new THREE.CylinderGeometry(1.6, 1.6, 1.7, 16);
-    const hole = new THREE.Mesh(holeGeo, new THREE.MeshBasicMaterial({ color: 0x0d1117 }));
+    const holeGeo = new THREE.CylinderGeometry(1.6, 1.6, 1.8, 20);
+    const hole = new THREE.Mesh(holeGeo, new THREE.MeshBasicMaterial({ color: 0x1f2937 }));
     hole.position.set(0, bH/2 + 3.5, 0); hole.rotation.x = Math.PI / 2; group.add(hole);
-    const pinGeo = new THREE.BoxGeometry(1.0, 10, 0.5);
+    const pinGeo = new THREE.BoxGeometry(1.1, 11, 0.6);
     for (let i = -2.54; i <= 2.54; i += 2.54) {
-      const p = new THREE.Mesh(pinGeo, silverPin); p.position.set(i, -bH/2 - 5, 0); group.add(p);
+      const p = new THREE.Mesh(pinGeo, silverPin); p.position.set(i, -bH/2 - 5.5, 0); group.add(p);
     }
   }
 
-  // ===== 12. QUAD PACKAGES (QFP / QFN / LQFP / TQFP / UFQFPN) =====
+  // ===== 12. QUAD PACKAGES (QFP / QFN / LQFP / TQFP) =====
   else if (/qfp|qfn|lqfp|tqfp|ufqfpn/.test(combined)) {
-    const bodyGeo = new THREE.BoxGeometry(16, 2.2, 16);
+    targetCameraDistance = 32;
+    const bodyGeo = new THREE.BoxGeometry(16, 2.5, 16);
     group.add(new THREE.Mesh(bodyGeo, bodyDark));
-    const dotGeo = new THREE.CylinderGeometry(0.7, 0.7, 0.2, 16);
-    const dot = new THREE.Mesh(dotGeo, markMat); dot.position.set(-6, 1.2, -6); group.add(dot);
-    const pinGeoX = new THREE.BoxGeometry(0.5, 0.35, 2.5);
-    const pinGeoZ = new THREE.BoxGeometry(2.5, 0.35, 0.5);
+    const dotGeo = new THREE.CylinderGeometry(0.8, 0.8, 0.25, 20);
+    const dot = new THREE.Mesh(dotGeo, markMat); dot.position.set(-6, 1.4, -6); group.add(dot);
+    const pinGeoX = new THREE.BoxGeometry(0.55, 0.4, 2.8);
+    const pinGeoZ = new THREE.BoxGeometry(2.8, 0.4, 0.55);
     const pinsPerSide = Math.max(4, Math.round(pc / 4));
-    const span = Math.min(12, (pinsPerSide - 1) * 1.0);
+    const span = Math.min(12, (pinsPerSide - 1) * 1.1);
     for (let i = 0; i < pinsPerSide; i++) {
       const x = -span/2 + i * (span / Math.max(1, pinsPerSide - 1));
-      const pT = new THREE.Mesh(pinGeoX, silverPin); pT.position.set(x, -0.8, -9); group.add(pT);
-      const pB = new THREE.Mesh(pinGeoX, silverPin); pB.position.set(x, -0.8, 9); group.add(pB);
-      const pL = new THREE.Mesh(pinGeoZ, silverPin); pL.position.set(-9, -0.8, x); group.add(pL);
-      const pR = new THREE.Mesh(pinGeoZ, silverPin); pR.position.set(9, -0.8, x); group.add(pR);
+      const pT = new THREE.Mesh(pinGeoX, silverPin); pT.position.set(x, -0.9, -9.2); group.add(pT);
+      const pB = new THREE.Mesh(pinGeoX, silverPin); pB.position.set(x, -0.9, 9.2); group.add(pB);
+      const pL = new THREE.Mesh(pinGeoZ, silverPin); pL.position.set(-9.2, -0.9, x); group.add(pL);
+      const pR = new THREE.Mesh(pinGeoZ, silverPin); pR.position.set(9.2, -0.9, x); group.add(pR);
     }
   }
 
@@ -1165,62 +1312,69 @@ function createProceduralICMesh(fpName, padCount, stepFile) {
   else if (/dip[-_]?\d/.test(combined) && !(/smdip|soic|sop|ssop|tssop|msop/.test(combined))) {
     const pinsPerSide = Math.max(4, Math.round(pc / 2));
     const bodyLen = Math.max(12, pinsPerSide * 2.54);
-    const bodyGeo = new THREE.BoxGeometry(bodyLen, 4.5, 8);
+    targetCameraDistance = Math.max(26, bodyLen * 0.9);
+
+    const bodyGeo = new THREE.BoxGeometry(bodyLen, 4.8, 8.5);
     group.add(new THREE.Mesh(bodyGeo, bodyDark));
-    const notchGeo = new THREE.CylinderGeometry(1.2, 1.2, 4.6, 16, 1, false, 0, Math.PI);
-    const notch = new THREE.Mesh(notchGeo, new THREE.MeshBasicMaterial({ color: 0x0d1117 }));
+    const notchGeo = new THREE.CylinderGeometry(1.3, 1.3, 4.9, 20, 1, false, 0, Math.PI);
+    const notch = new THREE.Mesh(notchGeo, new THREE.MeshBasicMaterial({ color: 0x111827 }));
     notch.position.set(-bodyLen/2, 0, 0); notch.rotation.y = Math.PI / 2; group.add(notch);
-    const pinGeo = new THREE.BoxGeometry(0.6, 6, 0.35);
+    const pinGeo = new THREE.BoxGeometry(0.7, 7, 0.4);
     for (let i = 0; i < pinsPerSide; i++) {
       const x = -bodyLen/2 + 2.54 + i * 2.54;
-      const p1 = new THREE.Mesh(pinGeo, silverPin); p1.position.set(x, -3.5, 4.3); group.add(p1);
-      const p2 = new THREE.Mesh(pinGeo, silverPin); p2.position.set(x, -3.5, -4.3); group.add(p2);
+      const p1 = new THREE.Mesh(pinGeo, silverPin); p1.position.set(x, -4.0, 4.6); group.add(p1);
+      const p2 = new THREE.Mesh(pinGeo, silverPin); p2.position.set(x, -4.0, -4.6); group.add(p2);
     }
   }
 
-  // ===== 14. TSSOP / SSOP / MSOP (Thin small outline dual-side) =====
+  // ===== 14. TSSOP / SSOP / MSOP =====
   else if (/tssop|ssop|msop/.test(combined)) {
     const pinsPerSide = Math.max(4, Math.round(pc / 2));
-    const bodyLen = Math.max(8, pinsPerSide * 0.65 + 2);
-    const bodyGeo = new THREE.BoxGeometry(bodyLen, 1.5, 5);
+    const bodyLen = Math.max(8, pinsPerSide * 0.65 + 2.5);
+    targetCameraDistance = 22;
+
+    const bodyGeo = new THREE.BoxGeometry(bodyLen, 1.8, 5.5);
     group.add(new THREE.Mesh(bodyGeo, bodyDark));
-    const dotGeo = new THREE.CylinderGeometry(0.3, 0.3, 0.15, 16);
-    const dot = new THREE.Mesh(dotGeo, markMat); dot.position.set(-bodyLen/2 + 1, 0.8, -1.5); group.add(dot);
-    const pinGeo = new THREE.BoxGeometry(0.35, 0.25, 1.8);
+    const dotGeo = new THREE.CylinderGeometry(0.35, 0.35, 0.2, 16);
+    const dot = new THREE.Mesh(dotGeo, markMat); dot.position.set(-bodyLen/2 + 1, 1.0, -1.8); group.add(dot);
+    const pinGeo = new THREE.BoxGeometry(0.4, 0.3, 2.0);
     for (let i = 0; i < pinsPerSide; i++) {
       const x = -bodyLen/2 + 1 + i * (bodyLen - 2) / Math.max(1, pinsPerSide - 1);
-      const p1 = new THREE.Mesh(pinGeo, silverPin); p1.position.set(x, -0.5, 3.2); group.add(p1);
-      const p2 = new THREE.Mesh(pinGeo, silverPin); p2.position.set(x, -0.5, -3.2); group.add(p2);
+      const p1 = new THREE.Mesh(pinGeo, silverPin); p1.position.set(x, -0.6, 3.6); group.add(p1);
+      const p2 = new THREE.Mesh(pinGeo, silverPin); p2.position.set(x, -0.6, -3.6); group.add(p2);
     }
   }
 
-  // ===== 15. SOIC / SOP / SO (Standard dual-side gull wing) =====
+  // ===== 15. SOIC / SOP / SO =====
   else if (/soic|sop[-_]?\d|so[-_]?\d|smdip/.test(combined) || (pc >= 6 && pc <= 28 && /\bso\b/.test(combined))) {
     const pinsPerSide = Math.max(3, Math.round(pc / 2));
     const bodyLen = Math.max(8, pinsPerSide * 1.27 + 2);
-    const bodyGeo = new THREE.BoxGeometry(bodyLen, 2.8, 7);
+    targetCameraDistance = Math.max(22, bodyLen * 0.9);
+
+    const bodyGeo = new THREE.BoxGeometry(bodyLen, 3.0, 7.5);
     group.add(new THREE.Mesh(bodyGeo, bodyDark));
-    const dotGeo = new THREE.CylinderGeometry(0.5, 0.5, 0.2, 16);
-    const dot = new THREE.Mesh(dotGeo, markMat); dot.position.set(-bodyLen/2 + 1.5, 1.5, -2.4); group.add(dot);
-    const pinGeo = new THREE.BoxGeometry(0.8, 0.4, 2.2);
+    const dotGeo = new THREE.CylinderGeometry(0.6, 0.6, 0.25, 16);
+    const dot = new THREE.Mesh(dotGeo, markMat); dot.position.set(-bodyLen/2 + 1.5, 1.6, -2.6); group.add(dot);
+    const pinGeo = new THREE.BoxGeometry(0.85, 0.45, 2.4);
     for (let i = 0; i < pinsPerSide; i++) {
       const x = -bodyLen/2 + 1.5 + i * (bodyLen - 3) / Math.max(1, pinsPerSide - 1);
-      const p1 = new THREE.Mesh(pinGeo, silverPin); p1.position.set(x, -1.0, 4.4); group.add(p1);
-      const p2 = new THREE.Mesh(pinGeo, silverPin); p2.position.set(x, -1.0, -4.4); group.add(p2);
+      const p1 = new THREE.Mesh(pinGeo, silverPin); p1.position.set(x, -1.1, 4.7); group.add(p1);
+      const p2 = new THREE.Mesh(pinGeo, silverPin); p2.position.set(x, -1.1, -4.7); group.add(p2);
     }
   }
 
-  // ===== 16. BGA (Ball Grid Array) =====
+  // ===== 16. BGA =====
   else if (/bga/.test(combined)) {
     const side = Math.max(10, Math.ceil(Math.sqrt(pc)));
-    const bodyGeo = new THREE.BoxGeometry(side * 1.2, 2, side * 1.2);
+    targetCameraDistance = 30;
+    const bodyGeo = new THREE.BoxGeometry(side * 1.2, 2.2, side * 1.2);
     group.add(new THREE.Mesh(bodyGeo, bodyDark));
-    const ballGeo = new THREE.SphereGeometry(0.3, 8, 8);
+    const ballGeo = new THREE.SphereGeometry(0.35, 12, 12);
     const ballsPerSide = Math.min(side, 8);
     for (let r = 0; r < ballsPerSide; r++) {
       for (let c = 0; c < ballsPerSide; c++) {
         const ball = new THREE.Mesh(ballGeo, silverPin);
-        ball.position.set(-ballsPerSide * 0.5 + c * 1.0 + 0.5, -1.2, -ballsPerSide * 0.5 + r * 1.0 + 0.5);
+        ball.position.set(-ballsPerSide * 0.5 + c * 1.0 + 0.5, -1.3, -ballsPerSide * 0.5 + r * 1.0 + 0.5);
         group.add(ball);
       }
     }
@@ -1228,17 +1382,18 @@ function createProceduralICMesh(fpName, padCount, stepFile) {
 
   // ===== 17. DEFAULT FALLBACK IC =====
   else {
-    const bodyGeo = new THREE.BoxGeometry(14, 2.8, 7);
+    targetCameraDistance = 26;
+    const bodyGeo = new THREE.BoxGeometry(14, 3.0, 7.5);
     group.add(new THREE.Mesh(bodyGeo, bodyDark));
-    const dotGeo = new THREE.CylinderGeometry(0.5, 0.5, 0.2, 16);
-    const dot = new THREE.Mesh(dotGeo, markMat); dot.position.set(-5.5, 1.5, -2.4); group.add(dot);
+    const dotGeo = new THREE.CylinderGeometry(0.6, 0.6, 0.25, 16);
+    const dot = new THREE.Mesh(dotGeo, markMat); dot.position.set(-5.5, 1.6, -2.6); group.add(dot);
     if (pc > 0) {
       const pinsPerSide = Math.max(2, Math.round(pc / 2));
-      const pinGeo = new THREE.BoxGeometry(0.8, 0.4, 2.0);
+      const pinGeo = new THREE.BoxGeometry(0.85, 0.45, 2.2);
       for (let i = 0; i < pinsPerSide; i++) {
         const x = -5 + i * (10 / Math.max(1, pinsPerSide - 1));
-        const p1 = new THREE.Mesh(pinGeo, silverPin); p1.position.set(x, -1.0, 4.4); group.add(p1);
-        const p2 = new THREE.Mesh(pinGeo, silverPin); p2.position.set(x, -1.0, -4.4); group.add(p2);
+        const p1 = new THREE.Mesh(pinGeo, silverPin); p1.position.set(x, -1.1, 4.7); group.add(p1);
+        const p2 = new THREE.Mesh(pinGeo, silverPin); p2.position.set(x, -1.1, -4.7); group.add(p2);
       }
     }
   }
