@@ -596,6 +596,9 @@
 
 </style>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/loaders/GLTFLoader.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/loaders/STLLoader.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/loaders/VRMLLoader.js"></script>
 </head>
 <body>
 
@@ -1915,20 +1918,114 @@ function open3DModal(name, stepFile, fpName, slug, desc, padCount) {
     initThreeJS();
   }
 
-  // Update Mesh
+  // Clear previous mesh
   if (currentMeshGroup) {
     scene.remove(currentMeshGroup);
+    currentMeshGroup = null;
   }
-  currentMeshGroup = createProceduralICMesh(fpName, padCount || 0, stepFile, name, desc);
-  scene.add(currentMeshGroup);
 
   // Resize canvas to container
   const canvas = document.getElementById('threeCanvas');
   const width = canvas.parentElement.clientWidth;
-  const height = canvas.parentElement.clientHeight || 480;
+  const height = canvas.parentElement.clientHeight || 450;
+  renderer.setSize(width, height);
   camera.aspect = width / height;
   camera.updateProjectionMatrix();
-  renderer.setSize(width, height);
+
+  // Potential authentic model candidates
+  const cleanBase = (s) => (s || '').replace(/\.(step|stp|wrl|stl|glb)$/i, '').trim();
+  const stepBase = cleanBase(stepFile);
+  const nameBase = cleanBase(name);
+  const fpBase = cleanBase(fpName);
+
+  const candidates = [];
+  const baseNames = [stepBase, nameBase, fpBase].filter(Boolean);
+  for (const b of baseNames) {
+    candidates.push(`3dmodels/${b}.glb`);
+    candidates.push(`3dmodels/${b}.stl`);
+    candidates.push(`3dmodels/${b}.wrl`);
+  }
+
+  // Function to apply authentic loaded 3D object to scene
+  function applyLoadedObject(obj, filename) {
+    if (currentMeshGroup) scene.remove(currentMeshGroup);
+    currentMeshGroup = new THREE.Group();
+    currentMeshGroup.add(obj);
+
+    const box = new THREE.Box3().setFromObject(obj);
+    const center = new THREE.Vector3();
+    box.getCenter(center);
+    obj.position.sub(center);
+
+    const size = new THREE.Vector3();
+    box.getSize(size);
+    const maxDim = Math.max(size.x, size.y, size.z) || 30;
+
+    targetCameraDistance = Math.max(30, maxDim * 1.6);
+    camera.position.set(0, targetCameraDistance * 0.7, targetCameraDistance * 0.9);
+    if (controls) {
+      controls.target.set(0, 0, 0);
+      controls.update();
+    }
+    scene.add(currentMeshGroup);
+
+    document.getElementById('info3DFile').innerHTML =
+      `<span style="color:#22c55e; font-weight:bold; display:inline-flex; align-items:center; gap:5px;">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path></svg>
+        Mô hình CAD Gốc Chính Hãng (${filename})
+      </span>`;
+  }
+
+  // Try fetching authentic 3D model candidates asynchronously
+  async function loadAuthenticModel() {
+    for (const url of candidates) {
+      try {
+        const resp = await fetch(url, { method: 'HEAD' });
+        if (resp.ok) {
+          const fname = url.split('/').pop();
+          if (url.endsWith('.glb') && THREE.GLTFLoader) {
+            new THREE.GLTFLoader().load(url, (gltf) => {
+              applyLoadedObject(gltf.scene, fname);
+            });
+            return;
+          } else if (url.endsWith('.stl') && THREE.STLLoader) {
+            new THREE.STLLoader().load(url, (geom) => {
+              // CAD Studio Metal & FR4 Material
+              geom.computeVertexNormals();
+              const isDark = document.body.classList.contains('light-theme');
+              const mat = new THREE.MeshStandardMaterial({
+                color: /cpx|circuit/i.test(fname) ? 0x1e293b : (/redboard|uno/i.test(fname) ? 0x00878f : 0x1d4ed8),
+                roughness: 0.35,
+                metalness: 0.25
+              });
+              const mesh = new THREE.Mesh(geom, mat);
+              mesh.rotation.x = -Math.PI / 2; // Orient standard CAD Z-up to Three Y-up
+              applyLoadedObject(mesh, fname);
+            });
+            return;
+          } else if (url.endsWith('.wrl') && THREE.VRMLLoader) {
+            new THREE.VRMLLoader().load(url, (vrml) => {
+              applyLoadedObject(vrml, fname);
+            });
+            return;
+          }
+        }
+      } catch (e) {
+        // Continue to next candidate
+      }
+    }
+
+    // Fallback: Procedural Mesh Generator
+    currentMeshGroup = createProceduralICMesh(fpName, padCount || 0, stepFile, name, desc);
+    scene.add(currentMeshGroup);
+    camera.position.set(0, targetCameraDistance * 0.75, targetCameraDistance * 0.95);
+    if (controls) {
+      controls.target.set(0, 0, 0);
+      controls.update();
+    }
+  }
+
+  loadAuthenticModel();
 }
 
 function close3DModal(e) {
