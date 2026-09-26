@@ -598,7 +598,8 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/loaders/GLTFLoader.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/loaders/STLLoader.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/loaders/VRMLLoader.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/libs/chevrotain.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/loaders/VRMLLoader.js"></script>
 </head>
 <body>
 
@@ -900,6 +901,45 @@ tierFilter.addEventListener('change', applyFilters);
 
 
 // ==================== 3D INTERACTIVE VIEWER ====================
+// ===== GRABCAD-STYLE CAD OUTLINES HELPER (GLOBAL SCOPE) =====
+let showCadEdges = true;
+let cadEdgeLines = [];
+let gridHelper = null;
+
+function toggleCadEdges() {
+  showCadEdges = !showCadEdges;
+  cadEdgeLines.forEach(line => {
+    if (line) line.visible = showCadEdges;
+  });
+  const btn = document.getElementById('btnToggleEdges');
+  if (btn) {
+    btn.classList.toggle('active', showCadEdges);
+    btn.innerHTML = showCadEdges ? '📐 Viền CAD: Bật' : '📐 Viền CAD: Tắt';
+  }
+}
+
+function applyCadEdgesToObject(obj, edgeColor = 0x0a0f1d) {
+  if (!obj) return;
+  const edgeMat = new THREE.LineBasicMaterial({
+    color: edgeColor,
+    linewidth: 1,
+    transparent: true,
+    opacity: 0.95
+  });
+
+  obj.traverse((child) => {
+    if (child.isMesh && child.geometry) {
+      try {
+        const edges = new THREE.EdgesGeometry(child.geometry, 24);
+        const line = new THREE.LineSegments(edges, edgeMat);
+        line.visible = showCadEdges;
+        child.add(line);
+        cadEdgeLines.push(line);
+      } catch (e) {}
+    }
+  });
+}
+
 let scene, camera, renderer, currentMeshGroup, animationFrameId;
 let isDragging = false;
 let previousMousePosition = { x: 0, y: 0 };
@@ -983,7 +1023,7 @@ function initThreeJS() {
   scene.add(bottomBounce);
 
   // Elegant CAD Ground Grid
-  const gridHelper = new THREE.GridHelper(50, 25, 0x58a6ff, 0x30363d);
+  gridHelper = new THREE.GridHelper(50, 25, 0x58a6ff, 0x30363d);
   gridHelper.position.y = -5;
   scene.add(gridHelper);
 
@@ -2003,6 +2043,7 @@ function open3DModal(name, stepFile, fpName, slug, desc, padCount) {
     scene.remove(currentMeshGroup);
     currentMeshGroup = null;
   }
+  cadEdgeLines = [];
 
   // Resize canvas to container
   const canvas = document.getElementById('threeCanvas');
@@ -2028,70 +2069,53 @@ function open3DModal(name, stepFile, fpName, slug, desc, padCount) {
 
   // Function to apply authentic loaded 3D object to scene
   
-// ===== GRABCAD-STYLE CAD OUTLINES HELPER =====
-let showCadEdges = true;
-const cadEdgeLines = [];
-
-function toggleCadEdges() {
-  showCadEdges = !showCadEdges;
-  cadEdgeLines.forEach(line => {
-    line.visible = showCadEdges;
-  });
-  const btn = document.getElementById('btnToggleEdges');
-  if (btn) {
-    btn.classList.toggle('active', showCadEdges);
-    btn.innerHTML = showCadEdges ? '📐 Viền CAD: Bật' : '📐 Viền CAD: Tắt';
-  }
-}
-
-function applyCadEdgesToObject(obj, edgeColor = 0x05070a) {
-  const edgeMat = new THREE.LineBasicMaterial({
-    color: edgeColor,
-    linewidth: 1,
-    transparent: true,
-    opacity: 0.95
-  });
-
-  obj.traverse((child) => {
-    if (child.isMesh && child.geometry) {
-      try {
-        const edges = new THREE.EdgesGeometry(child.geometry, 24);
-        const line = new THREE.LineSegments(edges, edgeMat);
-        line.visible = showCadEdges;
-        child.add(line);
-        cadEdgeLines.push(line);
-      } catch (e) {}
-    }
-  });
-}
+// CAD edge helpers moved to global scope
 
   function applyLoadedObject(obj, filename) {
     if (currentMeshGroup) scene.remove(currentMeshGroup);
+    cadEdgeLines = [];
     currentMeshGroup = new THREE.Group();
     currentMeshGroup.add(obj);
 
+    // Bounding Box và Center vật thể
     const box = new THREE.Box3().setFromObject(obj);
     const center = new THREE.Vector3();
     box.getCenter(center);
-    obj.position.sub(center);
+    obj.position.sub(center); // Căn chính giữa tâm gốc toạ độ
 
     const size = new THREE.Vector3();
     box.getSize(size);
-    const maxDim = Math.max(size.x, size.y, size.z) || 30;
+    let maxDim = Math.max(size.x, size.y, size.z);
+    if (!maxDim || isNaN(maxDim) || maxDim <= 0.001) maxDim = 10;
 
-    targetCameraDistance = Math.max(30, maxDim * 1.6);
-    camera.position.set(0, targetCameraDistance * 0.7, targetCameraDistance * 0.9);
+    // Tự động căn chỉnh khoảng cách camera zoom chuẩn xác theo kích thước vật thể
+    targetCameraDistance = Math.max(1.8, maxDim * 2.2);
+    camera.near = Math.min(0.01, targetCameraDistance * 0.01);
+    camera.far = Math.max(2000, targetCameraDistance * 100);
+    camera.position.set(0, targetCameraDistance * 0.75, targetCameraDistance * 0.95);
+    camera.updateProjectionMatrix();
+
     if (controls) {
       controls.target.set(0, 0, 0);
+      controls.minDistance = targetCameraDistance * 0.1;
+      controls.maxDistance = targetCameraDistance * 15;
       controls.update();
     }
+
+    // Đặt sàn lưới grid ngay dưới chân đế vật thể
+    if (gridHelper) {
+      gridHelper.position.y = -size.y / 2;
+      const idealGridSize = Math.max(10, Math.ceil(maxDim * 4));
+      gridHelper.scale.set(idealGridSize / 50, 1, idealGridSize / 50);
+    }
+
     applyCadEdgesToObject(currentMeshGroup);
     scene.add(currentMeshGroup);
 
     document.getElementById('info3DFile').innerHTML =
       `<span style="color:#22c55e; font-weight:bold; display:inline-flex; align-items:center; gap:5px;">
         <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path></svg>
-        Mô hình CAD Gốc Chính Hãng (${filename})
+        Mô hình CAD Gốc Chuẩn Xác (${filename})
       </span>`;
   }
 
@@ -2109,16 +2133,14 @@ function applyCadEdgesToObject(obj, edgeColor = 0x05070a) {
             return;
           } else if (url.endsWith('.stl') && THREE.STLLoader) {
             new THREE.STLLoader().load(url, (geom) => {
-              // CAD Studio Metal & FR4 Material
               geom.computeVertexNormals();
-              const isDark = document.body.classList.contains('light-theme');
               const mat = new THREE.MeshStandardMaterial({
                 color: /cpx|circuit/i.test(fname) ? 0x1e293b : (/redboard|uno/i.test(fname) ? 0x00878f : 0x1d4ed8),
                 roughness: 0.35,
                 metalness: 0.25
               });
               const mesh = new THREE.Mesh(geom, mat);
-              mesh.rotation.x = -Math.PI / 2; // Orient standard CAD Z-up to Three Y-up
+              mesh.rotation.x = -Math.PI / 2;
               applyLoadedObject(mesh, fname);
             });
             return;
@@ -2137,7 +2159,15 @@ function applyCadEdgesToObject(obj, edgeColor = 0x05070a) {
     // Fallback: Procedural Mesh Generator
     currentMeshGroup = createProceduralICMesh(fpName, padCount || 0, stepFile, name, desc);
     scene.add(currentMeshGroup);
+    const pBox = new THREE.Box3().setFromObject(currentMeshGroup);
+    const pSize = new THREE.Vector3();
+    pBox.getSize(pSize);
+    const pMaxDim = Math.max(pSize.x, pSize.y, pSize.z) || targetCameraDistance;
+    targetCameraDistance = Math.max(2, pMaxDim * 2.2);
+    camera.near = Math.min(0.01, targetCameraDistance * 0.01);
+    camera.far = Math.max(2000, targetCameraDistance * 100);
     camera.position.set(0, targetCameraDistance * 0.75, targetCameraDistance * 0.95);
+    camera.updateProjectionMatrix();
     if (controls) {
       controls.target.set(0, 0, 0);
       controls.update();
