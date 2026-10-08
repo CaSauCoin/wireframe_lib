@@ -178,6 +178,8 @@ const base = (url) => (url || '').split('/').pop();
 // The shards point previews at raw.githubusercontent; the copy beside this page
 // is the same file and also covers parts not pushed yet.
 const local = (url) => url ? 'previews/' + base(url) : '';
+// The tools rewrite these files in place; a cached copy is a stale answer.
+const fresh = (url) => fetch(url, { cache: 'no-cache' });
 const num = (v) => (Math.round(v * 100) / 100).toString();
 const size = (b) => b == null ? '' : b > 1e6 ? (b / 1e6).toFixed(1) + ' MB' : b > 1e3 ? Math.round(b / 1e3) + ' kB' : b + ' B';
 
@@ -190,9 +192,9 @@ async function load() {
     note('This page was opened from disk, and the browser will not let it read the index beside it. ' +
          'Run <code>python3 tools/view.py</code> in the wireframe_lib checkout.');
   }
-  const index = await (await fetch('lib_index.json')).json();
+  const index = await (await fresh('lib_index.json')).json();
   $('gen').textContent = `${(index.counts?.total ?? 0).toLocaleString()} parts · ${String(index.generated_at || '').slice(0, 10)}`;
-  const shards = await Promise.all(index.shards.map(async (s) => (await (await fetch(s.file)).json()).entries));
+  const shards = await Promise.all(index.shards.map(async (s) => (await (await fresh(s.file)).json()).entries));
   parts = shards.flat();
   for (const p of parts)
     p._text = [p.name, p.description, p.footprint, p.library, p.id, p.class, ...(p.keywords || [])].join(' ').toLowerCase();
@@ -201,7 +203,7 @@ async function load() {
   readHash();
   apply();
   // Contracts are a second file; the grid does not wait for it.
-  fetch('contracts/contract_index.json').then((r) => r.ok ? r.json() : null).then((ci) => {
+  fresh('contracts/contract_index.json').then((r) => r.ok ? r.json() : null).then((ci) => {
     for (const c of ci?.parts || []) contracts.set(c.slug, c);
     apply(true);
   }).catch(() => {});
@@ -291,7 +293,7 @@ function chipsFor(p) {
     p.mount ? `<span class="chip">${p.mount === 'through_hole' ? 'THT' : esc(p.mount.toUpperCase())}</span>` : '',
     p.pin_count ? `<span class="chip">${p.pin_count} pin${p.pin_count === 1 ? '' : 's'}</span>` : '',
     p.has_3d ? '<span class="chip ok">3D</span>' : '<span class="chip">no 3D</span>',
-    c ? `<span class="chip ${c.enforceable ? 'ok' : ''}">contract ${c.enforceable ?? 0}/${c.rules ?? 0}</span>` : '',
+    c ? `<span class="chip ${c.enforceable ? 'ok' : ''}">contract · ${(c.rules ?? 0) + (c.companions ?? 0)} clauses</span>` : '',
   ].join('');
 }
 
@@ -345,7 +347,8 @@ function openDetail(p) {
   ].join('');
   const c = contracts.get(p.slug);
   $('dContract').innerHTML = c
-    ? `${esc(c.archetype || c.family || '')} — ${c.rules ?? 0} rule(s), ${c.enforceable ?? 0} enforceable` +
+    ? `${esc(c.archetype || c.family || '')} — ${c.rules ?? 0} rule(s), ${c.companions ?? 0} companion(s); ` +
+      `${c.enforceable ?? 0} can raise a warning` +
       (c.flags?.length ? `<br><span class="mono">${esc(c.flags.join(' · '))}</span>` : '')
     : (contracts.size ? 'No contract for this part.' : 'The contract index did not load.');
   $('dFiles').innerHTML = '<li class="sub">reading…</li>';
@@ -429,7 +432,7 @@ const viewer = (() => {
     try { await setup(); } catch (e) { say(`The 3D libraries did not load (${esc(e.message)}). They come from a CDN.`); return; }
     let bytes;
     try {
-      const r = await fetch(`parts/${encodeURIComponent(p.slug)}.zip`);
+      const r = await fresh(`parts/${encodeURIComponent(p.slug)}.zip`);
       if (!r.ok) throw new Error(String(r.status));
       bytes = await r.arrayBuffer();
     } catch {

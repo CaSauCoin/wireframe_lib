@@ -1,0 +1,190 @@
+# Parts fetched from LCSC by EXACT manufacturer part number with
+#   WireFrame/cmake-build-debug/tests/cpp/wf-lcsc-collect --out sources/lcsc-parts/kicad --list sources/lcsc-parts/to_collect.txt
+# (to_collect.txt = this list minus what the published library already has;
+#  see tools/add_lcsc_parts.py --plan).
+#
+# One part number a line, optionally <TAB>package to choose between makers.
+# Chosen for what the AI planner picks and the published KiCad-derived
+# library lacks: MCUs and radio modules, power and charger ICs, interface and
+# level shifting, sensors, memory, LED/display drivers, and connectors whose
+# land pattern is the maker's own (card sockets, USB-C, JST, magjacks).
+# Plain resistors and capacitors are left to KiCad's generic footprints.
+
+# ── MCUs ────────────────────────────────────────────────────────────────────
+STM32F103C8T6	LQFP-48
+STM32F030F4P6	TSSOP-20
+STM32F401CCU6	QFN-48
+STM32F411CEU6	QFN-48
+STM32G030F6P6	TSSOP-20
+STM32G031K8T6	LQFP-32
+STM32F072C8T6	LQFP-48
+STM32L052K8T6	LQFP-32
+GD32F103C8T6	LQFP-48
+CH32V003F4P6	TSSOP-20
+CH32V203C8T6	LQFP-48
+CH552T	TSSOP-20
+ATMEGA328P-AU	TQFP-32
+ATMEGA32U4-AU	TQFP-44
+ATTINY85-20SU	SOIC-8
+ATTINY1616-SNR	SOIC-20
+RP2040	QFN-56
+SAMD21G18A-AU	TQFP-48
+NRF52832-QFAA-R	QFN-48
+STM8S003F3P6	TSSOP-20
+# ── Radio modules ───────────────────────────────────────────────────────────
+ESP32-S3-WROOM-1-N16R8
+ESP32-WROOM-32E-N4
+ESP32-C3-WROOM-02-N4
+ESP32-C3-MINI-1
+ESP32-C6-WROOM-1-N8
+ESP-12F
+RA-02
+NRF24L01P-R
+CC1101RGPR
+# ── USB / UART / bus interfaces ─────────────────────────────────────────────
+CH340C	SOP-16
+CH340N	SOP-8
+CH340G	SOP-16
+CH9102F	QFN-24
+CP2102N-A02-GQFN28
+CP2104-F03-GMR
+FT232RL	SSOP-28
+FT231XS-R
+MAX3232ESE+T
+SP3485EN-L/TR
+MAX485ESA+T
+SN65HVD230DR
+TJA1050T/CM,118
+MCP2515-I/SO
+MCP2551-I/SN
+W5500	LQFP-48
+ENC28J60-I/SO
+LAN8720A-CP-TR
+TXS0108EPWR
+TXB0104PWR
+PCA9306DCUR
+USBLC6-2SC6
+TPD4E05U06DQAR
+SRV05-4
+# ── Power: linear ───────────────────────────────────────────────────────────
+AMS1117-3.3	SOT-223
+AMS1117-5.0	SOT-223
+AP2112K-3.3TRG1
+XC6206P332MR
+ME6211C33M5G-N
+RT9013-33GB
+HT7333-A
+LM1117MPX-3.3
+MCP1700T-3302E/TT
+TLV1117-33IDCYR
+LM2936-3.3
+HT7533-1
+# ── Power: switching, charging, protection ──────────────────────────────────
+MP1584EN
+MP2307DN
+LM2596S-5.0
+XL4015E1
+XL1509-5.0E1
+MT3608
+TPS563200DDCR
+TPS54331DR
+SY8089AAAC
+TP4056
+TP4057
+IP5306
+BQ24075RGTR
+MCP73831T-2ACI/OT
+DW01A
+FS8205A
+TPS2113APWR
+MF-MSMF110-2
+SMBJ5.0A
+SMAJ15A
+# ── Discrete ────────────────────────────────────────────────────────────────
+AO3400A
+AO3401A
+SI2301
+IRLML6402TRPBF
+2N7002
+BSS138
+BSS84
+DMG2305UX-7
+SS34
+SS14
+1N5819W
+1N4148W
+B5819W
+MBR0530
+MBR1045
+# ── Analog, timing, drivers ─────────────────────────────────────────────────
+LM358DR2G
+LM393DR2G
+TL431AIDBZR
+LMV358IDGKR
+OPA2333AIDR
+INA219AIDCNR
+INA226AIDGSR
+ACS712ELCTR-05B-T
+NE555DR
+ULN2003ADR
+DRV8833PWPR
+TB6612FNG
+L9110S
+74HC595D
+74HC165D
+74HCT595D
+74LVC1T45GW
+SN74LVC1G17DBVR
+CD4051BM96
+# ── Sensors, converters, RTC ────────────────────────────────────────────────
+BME280
+BMP280
+SHT30-DIS-B
+SHT31-DIS-B
+AHT20
+HDC1080DMBR
+MPU-6050
+ICM-20948
+LIS3DHTR
+ADXL345BCCZ
+QMC5883L
+VL53L0CXV0DH/1
+BH1750FVI-TR
+MAX30102EFD+T
+HX711
+ADS1115IDGSR
+MCP3008-I/SL
+MCP4725A0T-E/CH
+PCF8574T
+MCP23017-E/SO
+DS3231SN
+PCF8563T
+# ── Memory ──────────────────────────────────────────────────────────────────
+W25Q32JVSSIQ
+W25Q64JVSSIQ
+W25Q128JVSIQ
+AT24C02D-SSHM-T
+24LC256-I/SN
+FM24CL64B-GTR
+# ── LED and display drivers ─────────────────────────────────────────────────
+MAX7219CWG
+TM1637
+WS2812B-B/W
+SK6812MINI-E
+HT16K33
+PCA9685PW
+TLC5940PWP
+# ── Connectors with the maker's own land pattern ────────────────────────────
+TYPE-C-31-M-12
+DM3AT-SF-PEJM5
+B2B-PH-K-S(LF)(SN)
+S2B-PH-SM4-TB(LF)(SN)
+B4B-XH-A(LF)(SN)
+SM04B-SRSS-TB(LF)(SN)
+FTSH-105-01-L-DV
+HR911105A
+DC-005
+PJ-320A
+XT60PW-M
+TS-1187A-B-A-B
+MSK12C02

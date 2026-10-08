@@ -41,3 +41,7 @@ KiCad `Connector` USB symbols bound to unmodified KiCad `Connector_USB` footprin
 ## WireFrame card socket packages
 
 KiCad `Connector` microSD, SD and SIM symbols bound to unmodified KiCad `Connector_Card` footprints by identical pin/pad designators; 3D models from kicad-packages3D where the footprint declares one. CC-BY-SA-4.0 WITH KiCad-Libraries-exception; see sources/card-packages/PROVENANCE.json.
+
+## WireFrame LCSC parts
+
+Symbols and footprints served by LCSC/EasyEDA for an EXACT manufacturer part number, each checked against that number and its own pads; see sources/lcsc-parts/PROVENANCE.json for the LCSC code, maker and URL of every part. Redistribution terms of this content are to be confirmed before a public release.
