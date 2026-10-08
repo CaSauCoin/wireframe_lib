@@ -51,6 +51,13 @@ AUDIO = ['AudioJack2', 'AudioJack2_Ground', 'AudioJack2_Switch', 'AudioJack2_Swi
          'AudioJack3_Ground_Switch', 'AudioJack3_Ground_SwitchTR', 'AudioJack3_Dual_Switch',
          'AudioJack3_Dual_Ground_Switch', 'AudioJack4', 'AudioJack4_Ground', 'AudioJack4_SwitchT1',
          'AudioJack4_SwitchTR1', 'AudioJack4_Ground_SwitchTR1', 'AudioJack5', 'AudioJack5_Ground']
+POTS = ['R_Potentiometer', 'R_Potentiometer_Trim', 'R_Potentiometer_MountingPin', 'R_Potentiometer_Dual',
+        'R_Potentiometer_Dual_Separate', 'R_Potentiometer_Dual_MountingPin']
+TERMINALS = [f'Screw_Terminal_01x{n:02d}' for n in range(1, 25)]
+TERMINAL_LIBS = ('TerminalBlock', 'TerminalBlock_4Ucon', 'TerminalBlock_Altech', 'TerminalBlock_CUI',
+                 'TerminalBlock_Degson', 'TerminalBlock_Dinkle', 'TerminalBlock_MetzConnect',
+                 'TerminalBlock_Ningbo-Kagnex', 'TerminalBlock_Phoenix', 'TerminalBlock_RND',
+                 'TerminalBlock_TE-Connectivity', 'TerminalBlock_WAGO', 'TerminalBlock_Wuerth')
 SWITCH = ['SW_Push', 'SW_Push_Dual', 'SW_Push_45deg', 'SW_Push_Shielded', 'SW_Push_SPDT', 'SW_Push_DPDT',
           'SW_SPDT', 'SW_Slide_DPDT', 'SW_Push_LED']
 
@@ -88,9 +95,16 @@ FAMILIES: list[tuple[str, str, str, list[str], str, str, str]] = [
      'connector.power', 'J', 'DC barrel jack power input cổng sạc'),
     ('Connector_Wire', r'_1x0[12]_|^SolderWirePad_1x01', 'Connector_Generic', ['Conn_01x01', 'Conn_01x02'],
      'connector.wire', 'J', 'solder wire pad wire joint mối nối dây hàn'),
+    *[(lib, r'', 'Device', POTS, 'passive.resistor.variable', 'RV', 'potentiometer trimmer trimpot chiết áp biến trở')
+      for lib in ('Potentiometer_THT', 'Potentiometer_SMD')],
+    ('Rotary_Encoder', r'', 'Device', ['RotaryEncoder', 'RotaryEncoder_Switch', 'RotaryEncoder_Switch_MP'],
+     'electromechanical.encoder', 'SW', 'rotary encoder EC11 EC12 núm xoay'),
+    *[(lib, r'', 'Connector', TERMINALS, 'connector.terminal_block', 'J',
+       'screw terminal block cầu đấu domino mối nối dây') for lib in TERMINAL_LIBS],
 ]
 # A symbol two families share and the words that say it is meant.
-PREFER = {'Battery': r'_[2-9]x', 'Speaker': r'Speaker', 'SolderJumper_2_Bridged': r'Bridged',
+PREFER = {'R_Potentiometer_Trim': r'Bourns_3\d{3}|Trimmer|Trim_|Piher_PT|Vishay_T|ACP_CA|TC33|Suntan_TSR',
+          'Battery': r'_[2-9]x', 'Speaker': r'Speaker', 'SolderJumper_2_Bridged': r'Bridged',
           'SolderJumper_3_Bridged12': r'Bridged12', 'SolderJumper_3_Bridged123': r'Bridged123',
           'SolderJumper_2_Open': r'Open', 'SolderJumper_3_Open': r'Open'}
 
