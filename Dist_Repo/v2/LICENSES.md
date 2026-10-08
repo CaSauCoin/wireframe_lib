@@ -37,3 +37,7 @@ Unmodified KiCad footprints and project-authored numbered contact symbols. CC-BY
 ## WireFrame USB connector packages
 
 KiCad `Connector` USB symbols bound to unmodified KiCad `Connector_USB` footprints by identical pin/pad designators; 3D models from kicad-packages3D where the footprint declares one. CC-BY-SA-4.0 WITH KiCad-Libraries-exception; see sources/usb-packages/PROVENANCE.json.
+
+## WireFrame card socket packages
+
+KiCad `Connector` microSD, SD and SIM symbols bound to unmodified KiCad `Connector_Card` footprints by identical pin/pad designators; 3D models from kicad-packages3D where the footprint declares one. CC-BY-SA-4.0 WITH KiCad-Libraries-exception; see sources/card-packages/PROVENANCE.json.
