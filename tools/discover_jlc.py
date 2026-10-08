@@ -88,6 +88,34 @@ def search(keyword: str, size: int, delay: float) -> list[dict]:
     return ((data.get('data') or {}).get('componentPageInfo') or {}).get('list') or []
 
 
+def spread(hits: list[dict], count: int) -> list[dict]:
+    """`count` parts from one query, spread over what it returned: only the
+    subcategories that carry most of the hits ("HDMI" also finds TVS arrays
+    and common-mode filters), then round-robin over package, stated size and
+    digit count, the most stocked of each first."""
+    if not hits:
+        return []
+    subs = Counter(r.get('firstSortName') for r in hits)
+    top = subs.most_common(1)[0][1]
+    hits = [r for r in hits if subs[r.get('firstSortName')] >= max(3, top * 0.3)]
+
+    def kind(r: dict) -> tuple:
+        text = f"{r.get('describe') or ''} {r.get('componentModelEn') or ''}"
+        size = re.search(r'(\d+(?:\.\d+)?)\s*(?:inch|in\b|")', text, re.I)
+        digits = re.search(r'(\d+)\s*(?:digit|bit)', text, re.I)
+        return (r.get('componentSpecificationEn') or '', size[1] if size else '', digits[1] if digits else '')
+
+    groups: dict[tuple, list] = {}
+    for r in sorted(hits, key=lambda r: -(r.get('stockCount') or 0)):
+        groups.setdefault(kind(r), []).append(r)
+    out, queues = [], list(groups.values())
+    while len(out) < count and any(queues):
+        for q in queues:
+            if q and len(out) < count:
+                out.append(q.pop(0))
+    return out
+
+
 def main() -> None:
     ap = argparse.ArgumentParser(description=__doc__.splitlines()[0])
     ap.add_argument('--size', type=int, default=100)
@@ -97,6 +125,9 @@ def main() -> None:
     ap.add_argument('--keywords', type=Path, default=ROOT / 'sources/lcsc-parts/keywords.txt',
                     help='one catalogue search a line; the most stocked real-maker parts of each are added')
     ap.add_argument('--per-keyword', type=int, default=4)
+    ap.add_argument('--categories', type=Path, default=ROOT / 'sources/lcsc-parts/categories.txt',
+                    help='"query<TAB>count" a line: a catalogue search by category name or part-number '
+                         'fragment, the parts spread over package, size and digit count')
     args = ap.parse_args()
 
     rows: dict[str, dict] = {}
@@ -127,19 +158,34 @@ def main() -> None:
                     added += 1
         print(f'keywords: {len(words)} searches, {added} more part numbers')
 
+    if args.categories and args.categories.exists():
+        lines = [l.split('\t') for l in args.categories.read_text().splitlines() if l.strip() and not l.startswith('#')]
+        added = 0
+        for query, count in ((q.strip(), int(n)) for q, n in lines):
+            hits = [r for r in search(query, 100, args.delay)
+                    if (r.get('componentBrandEn') or '') not in ('', 'JLCPCB Assembly') and (r.get('stockCount') or 0) > 0]
+            for row in spread(hits, count):
+                k = key(row.get('componentModelEn') or '')
+                if k and k not in rows:
+                    rows[k] = {**row, '_list': 'keyword:' + query}
+                    added += 1
+        print(f'categories: {len(lines)} queries, {added} more part numbers')
+
     with sqlite3.connect(ROOT / 'Dist_Repo/v2/lib_search.sqlite') as conn:
         published = {key(n) for (n,) in conn.execute('SELECT name FROM part')}
     collected = {key(json.loads(p.read_text()).get('mpn', '')) for p in KICAD.glob('*.lcsc.json')}
 
-    keep, why = [], Counter()
+    keep, why, have = [], Counter(), Counter()
     for k, row in rows.items():
         top, sub = row.get('secondSortName') or '', row.get('firstSortName') or ''
         if top in SKIP_TOP or SKIP_SUB.search(sub):
             why['generic passive'] += 1
         elif k in published:
             why['already published'] += 1
+            have[sub] += 1
         elif k in collected:
             why['already collected'] += 1
+            have[sub] += 1
         elif (row.get('componentBrandEn') or '') == 'JLCPCB Assembly':
             why['assembly placeholder'] += 1
         else:
@@ -147,11 +193,21 @@ def main() -> None:
     keep.sort(key=lambda r: (r.get('secondSortName') or '', r.get('firstSortName') or '', -(r.get('stockCount') or 0)))
     # Variety over volume: the preferred list is hundreds of zener and TVS
     # values on three packages. A few of each subcategory carry the land
-    # patterns and the contracts; the rest are one value apart.
-    per, capped = Counter(), []
+    # patterns and the contracts; the rest are one value apart. A keyword's
+    # hits are already limited (--per-keyword) and are what was asked for —
+    # "0.56 inch 7 segment 4 digit" and "1 inch 7 segment" share a
+    # subcategory, and the cap dropped one size for the other — so they
+    # come first and are not capped.
+    keep.sort(key=lambda r: not str(r.get('_list', '')).startswith('keyword:'))
+    # The cap counts what the library already holds of a subcategory: 15
+    # zener diodes collected last run are 15 toward this run's cap.
+    per, capped = Counter(have), []
     for r in keep:
         sub = r.get('firstSortName') or '?'
-        if per[sub] < args.per_category:
+        if str(r.get('_list', '')).startswith('keyword:'):
+            per[sub] += 1
+            capped.append(r)
+        elif per[sub] < args.per_category:
             per[sub] += 1
             capped.append(r)
         else:
@@ -162,6 +218,7 @@ def main() -> None:
     print(f'{len(rows)} distinct part numbers; skipped {dict(why)}; {len(keep)} to collect -> {OUT}')
     for top, n in Counter(r.get('secondSortName') or '?' for r in keep).most_common():
         print(f'  {n:4d}  {top}')
+    print(f"  of which {sum(str(r.get('_list', '')).startswith('keyword:') for r in keep)} from the keyword searches")
 
 
 if __name__ == '__main__':
