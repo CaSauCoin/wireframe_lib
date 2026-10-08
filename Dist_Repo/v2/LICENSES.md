@@ -33,3 +33,7 @@ KiCad-derived generic protection symbols and unmodified footprints; CC-BY-SA-4.0
 ## WireFrame interface connector packages
 
 Unmodified KiCad footprints and project-authored numbered contact symbols. CC-BY-SA-4.0 WITH KiCad-Libraries-exception; see sources/interface-packages/PROVENANCE.json. No protocol or cable compatibility is inferred.
+
+## WireFrame USB connector packages
+
+KiCad `Connector` USB symbols bound to unmodified KiCad `Connector_USB` footprints by identical pin/pad designators; 3D models from kicad-packages3D where the footprint declares one. CC-BY-SA-4.0 WITH KiCad-Libraries-exception; see sources/usb-packages/PROVENANCE.json.

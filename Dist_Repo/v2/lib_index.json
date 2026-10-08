@@ -1,14 +1,15 @@
 {
   "schema": 2,
-  "generated_at": "2026-09-22T04:05:42+00:00",
+  "generated_at": "2026-10-08T02:07:43+00:00",
   "base_url": "https://raw.githubusercontent.com/CaSauCoin/wireframe_lib/main/Dist_Repo/v2",
   "parts_base_url": "https://github.com/CaSauCoin/wireframe_lib/releases/download/lib-v2",
   "counts": {
-    "total": 9979,
-    "planner_visible": 9979,
+    "total": 10118,
+    "planner_visible": 10047,
     "by_tier": {
-      "A": 6676,
-      "B": 3411
+      "A": 6705,
+      "B": 3342,
+      "C": 71
     },
     "by_source": {
       "wireframe-curated-maker": 55,
@@ -18,25 +19,27 @@
       "Seeed-OPL-Kicad-Library": 136,
       "curated-maker": 39,
       "wireframe-interface-packages": 474,
-      "JLCPCB-Kicad-Library": 580,
-      "espressif-kicad-libraries": 44,
-      "wireframe-ac-packages": 140,
       "wireframe-popular-packages": 37,
+      "JLCPCB-Kicad-Library": 582,
+      "espressif-kicad-libraries": 44,
       "wireframe-mechanical-packages": 29,
-      "wireframe-board-outlines": 30
+      "wireframe-board-outlines": 30,
+      "WireFrame-Standard-Library": 66,
+      "wireframe-ac-packages": 140,
+      "wireframe-usb-packages": 71
     },
-    "with_description": 9883,
-    "with_footprint": 9883,
-    "with_3d": 6424,
+    "with_description": 10047,
+    "with_footprint": 10047,
+    "with_3d": 7691,
     "description_origin": {
-      "upstream": 9071,
-      "rules": 812
+      "upstream": 9169,
+      "rules": 878
     }
   },
   "shards": [
     {
       "name": "connector",
-      "count": 1172,
+      "count": 1254,
       "file": "shards/connector.json"
     },
     {
@@ -87,13 +90,16 @@
   ],
   "clusters": {
     "index": "clusters/index.json",
-    "count": 1654,
+    "count": 1693,
     "by_class": {
-      "connector": 46,
+      "audio.amplifier": 1,
+      "audio.dac": 1,
+      "connector": 47,
       "connector.audio": 1,
       "connector.power": 2,
-      "connector.terminal_block": 9,
-      "connector.usb": 2,
+      "connector.terminal_block": 10,
+      "connector.usb": 4,
+      "connector.wire_to_board": 1,
       "discrete.bjt": 36,
       "discrete.bridge": 15,
       "discrete.diode": 99,
@@ -103,9 +109,12 @@
       "discrete.semiconductor.diode": 1,
       "discrete.semiconductor.transistor": 6,
       "discrete.transistor": 26,
+      "discrete.transistor.mosfet": 1,
       "display.character": 13,
       "display.graphic": 14,
       "display.led": 6,
+      "driver.motor": 1,
+      "driver.transistor_array": 1,
       "electromechanical.encoder": 1,
       "electromechanical.motor": 5,
       "electromechanical.relay": 31,
@@ -142,12 +151,16 @@
       "ic.sensor": 80,
       "ic.timing": 18,
       "mechanical": 3,
-      "mechanical.jumper": 1,
+      "mechanical.board_outline": 2,
+      "mechanical.jumper": 2,
+      "mechanical.mounting_hole": 1,
+      "mechanical.pad": 2,
       "mechanical.testpoint": 5,
+      "mechanical.tooling_hole": 1,
       "module.compute": 3,
       "module.devboard": 41,
       "module.wireless": 56,
-      "passive.capacitor": 34,
+      "passive.capacitor": 39,
       "passive.crystal": 13,
       "passive.ferrite": 4,
       "passive.inductor": 22,
@@ -157,10 +170,22 @@
       "passive.resistor.variable": 4,
       "passive.transformer": 2,
       "power.battery": 3,
+      "power.battery_charger": 2,
+      "power.battery_protection": 1,
+      "power.dc_dc_converter": 4,
+      "power.linear_regulator": 1,
       "power.regulator.linear": 1,
       "power.supply": 14,
       "protection": 23,
-      "protection.fuse": 8
+      "protection.fuse": 8,
+      "rf.module.gps": 1,
+      "rf.module.lora": 1,
+      "rf.module.wifi_bluetooth": 1,
+      "sensor.environmental": 2,
+      "sensor.gas": 1,
+      "sensor.imu": 1,
+      "sensor.optical": 1,
+      "sensor.temperature": 1
     }
   },
   "search_index": "lib_search.sqlite",
@@ -257,6 +282,14 @@
       "rank": 100,
       "commit": "",
       "provenance": "sources/interface-packages/PROVENANCE.json"
+    },
+    {
+      "name": "wireframe-usb-packages",
+      "license": "CC-BY-SA-4.0 WITH KiCad-Libraries-exception",
+      "url": "https://github.com/CaSauCoin/wireframe_lib/tree/main/sources/usb-packages",
+      "rank": 100,
+      "commit": "",
+      "provenance": "sources/usb-packages/PROVENANCE.json"
     }
   ]
 }

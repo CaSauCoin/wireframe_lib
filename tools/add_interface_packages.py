@@ -89,7 +89,7 @@ def update_indexes(out,entries,manifest,additions):
     path.write_text(json.dumps(shard,indent=2))
     clusters=common.cluster.cluster_parts(all_parts);counts=common.cluster.write_clusters(clusters,out)
     common.package.write_search_index(all_parts,out/'lib_search.sqlite',base,clusters,packaged_models={e['slug'] for e in entries.values() if e.get('has_3d')})
-    with sqlite3.connect(out/'lib_search.sqlite') as conn:conn.executemany('UPDATE part SET slug=?,download_url=? WHERE id=?',[(e['slug'],e['download_url'],e['id']) for e in entries.values()])
+    with sqlite3.connect(out/'lib_search.sqlite') as conn:conn.executemany('UPDATE part SET slug=?,download_url=? WHERE id=?',[(e['slug'],e['download_url'],e['id']) for e in entries.values() if e.get('download_url')])
     visible=[p for p in all_parts if p.record.tier in {'A','B','G'}]
     manifest['generated_at']=common.package._now();manifest['counts']={'total':len(entries),'planner_visible':len(visible),
         'by_tier':dict(Counter(p.record.tier for p in all_parts)),'by_source':dict(Counter(p.record.source for p in all_parts)),
@@ -103,7 +103,9 @@ def update_indexes(out,entries,manifest,additions):
         manifest['sources'].append({'name':'wireframe-interface-packages','license':LICENSE,'url':'https://github.com/CaSauCoin/wireframe_lib/tree/main/sources/interface-packages','rank':100,'commit':'','provenance':'sources/interface-packages/PROVENANCE.json'})
         with (out/'LICENSES.md').open('a') as f:f.write('\n## WireFrame interface connector packages\n\nUnmodified KiCad footprints and project-authored numbered contact symbols. CC-BY-SA-4.0 WITH KiCad-Libraries-exception; see sources/interface-packages/PROVENANCE.json. No protocol or cable compatibility is inferred.\n')
     (out/'lib_index.json').write_text(json.dumps(manifest,ensure_ascii=False,indent=2)+'\n')
-    cp=out/'compat/lib_index.json';compat=json.loads(cp.read_text());by_slug={e['slug']:e for e in entries.values()};present={e['id'] for e in compat['libraries']}
+    cp=out/'compat/lib_index.json';compat=json.loads(cp.read_text())
+    if 'libraries' not in compat:return  # compat now mirrors the v2 manifest; no legacy list to extend
+    by_slug={e['slug']:e for e in entries.values()};present={e['id'] for e in compat['libraries']}
     for e in additions:
         if e['slug'] not in present:
             compat['libraries'].append({'id':e['slug'],'name':e['name'],'category':e['class'],'download_url':e['download_url'],'hash':e['hash'],'preview_sym':e['preview_sym'],'preview_fp':e['preview_fp'],'components':[{'type':'sym'},{'type':'fp'}]+([{'type':'3d'}] if e['has_3d'] else [])})
