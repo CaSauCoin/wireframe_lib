@@ -57,6 +57,13 @@ CHIP = 'a generic package drawn from a description, a second copy of a real part
 # id prefix or exact id -> (reason, regex naming the real part to use instead)
 WITHDRAW: list[tuple[str, str, str]] = [
     ('wireframe-board-outlines/', BOARDS, ''),
+    ('wireframe-curated-maker/Arduino_UNO_R4_', 'the four mounting holes are a symmetric rectangle; the UNO\'s are not '
+     '(KiCad Module:Arduino_UNO_R3, the same shield layout: (-4.83, 0), (-3.56, 48.26), (47.24, 5.08), '
+     '(47.24, 33.02) from the header) and the header rows are 50.8 mm apart where the UNO\'s are 48.26',
+     r'^Arduino_UNO_R3$'),
+    ('wireframe-curated-maker/Arduino_Mega_2560', 'the UNO-pattern holes are mirrored top to bottom against KiCad\'s '
+     'Arduino_UNO_R3 — a board seen from underneath; a shield laid on it would be mirrored', r'^Arduino_Mega'),
+    ('wireframe-curated-maker/Arduino_Due', 'the same mirrored outline as the Mega 2560 entry', r'^Arduino_Due'),
     ('source:curated-maker', 'every pad drawn as a 1.7 mm through-hole circle whatever the package — a SOT-23\'s three '
      'pads 0.95 mm apart overlap, a USB-C receptacle\'s sixteen sit 0.5 mm apart — and the 3D model is a typed box',
      ''),
