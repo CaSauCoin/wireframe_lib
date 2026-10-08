@@ -45,3 +45,7 @@ KiCad `Connector` microSD, SD and SIM symbols bound to unmodified KiCad `Connect
 ## WireFrame LCSC parts
 
 Symbols and footprints served by LCSC/EasyEDA for an EXACT manufacturer part number, each checked against that number and its own pads; see sources/lcsc-parts/PROVENANCE.json for the LCSC code, maker and URL of every part. Redistribution terms of this content are to be confirmed before a public release.
+
+## WireFrame KiCad families
+
+KiCad mechanical, switch, audio, power-entry, battery, buzzer and wire-pad symbols bound to unmodified KiCad footprints by identical pin/pad designators; 3D from kicad-packages3D where the footprint declares one. CC-BY-SA-4.0 WITH KiCad-Libraries-exception; see sources/kicad-families/PROVENANCE.json.

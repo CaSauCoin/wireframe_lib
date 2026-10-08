@@ -128,7 +128,9 @@ def normalize_filter(path, archive, manifest):
     temporary.replace(path)
 
 
-def validate(z, m, exact=True):
+def validate(z, m, exact=True, allow_pinless=False):
+    """`allow_pinless`: a mounting hole, a fiducial, a heatsink has no
+    electrical pin and no numbered pad — empty on both sides is a match."""
     if z.testzip():
         return 'archive CRC failure'
     f = m.get('footprint') or {}
@@ -158,7 +160,7 @@ def validate(z, m, exact=True):
         return 'expected symbol/footprint not found'
     pins = {p.number for p in sym.pins if p.number and p.number.lower() not in parse.MECHANICAL_DESIGNATORS}
     pads = set(fp.electrical_designators)
-    if not pins or pins != pads:
+    if (not pins and not allow_pinless) or pins != pads:
         return f'pin/pad designators differ: pins={sorted(pins)}, pads={sorted(pads)}'
     if len(pins) != m['symbol']['pin_count'] or len(pads) != f['pad_count']:
         return 'manifest pin/pad count differs from files'

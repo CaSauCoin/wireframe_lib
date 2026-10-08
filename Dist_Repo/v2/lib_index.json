@@ -1,13 +1,13 @@
 {
   "schema": 2,
-  "generated_at": "2026-10-08T16:36:06+00:00",
+  "generated_at": "2026-10-08T16:41:58+00:00",
   "base_url": "https://raw.githubusercontent.com/CaSauCoin/wireframe_lib/main/Dist_Repo/v2",
   "parts_base_url": "https://github.com/CaSauCoin/wireframe_lib/releases/download/lib-v2",
   "counts": {
-    "total": 10429,
-    "planner_visible": 10357,
+    "total": 11448,
+    "planner_visible": 11376,
     "by_tier": {
-      "A": 6610,
+      "A": 7629,
       "C": 72,
       "B": 3747
     },
@@ -25,20 +25,21 @@
       "espressif-kicad-libraries": 44,
       "wireframe-mechanical-packages": 27,
       "WireFrame-Standard-Library": 66,
-      "wireframe-ac-packages": 140
+      "wireframe-ac-packages": 140,
+      "wireframe-kicad-families": 1019
     },
-    "with_description": 10357,
-    "with_footprint": 10357,
-    "with_3d": 7164,
+    "with_description": 11376,
+    "with_footprint": 11376,
+    "with_3d": 7660,
     "description_origin": {
       "upstream": 9504,
-      "rules": 853
+      "rules": 1872
     }
   },
   "shards": [
     {
       "name": "connector",
-      "count": 1275,
+      "count": 1460,
       "file": "shards/connector.json"
     },
     {
@@ -53,7 +54,7 @@
     },
     {
       "name": "electromechanical",
-      "count": 409,
+      "count": 698,
       "file": "shards/electromechanical.json"
     },
     {
@@ -63,7 +64,7 @@
     },
     {
       "name": "mechanical",
-      "count": 61,
+      "count": 557,
       "file": "shards/mechanical.json"
     },
     {
@@ -78,7 +79,7 @@
     },
     {
       "name": "power",
-      "count": 33,
+      "count": 82,
       "file": "shards/power.json"
     },
     {
@@ -89,14 +90,15 @@
   ],
   "clusters": {
     "index": "clusters/index.json",
-    "count": 1870,
+    "count": 1899,
     "by_class": {
       "connector": 48,
-      "connector.audio": 1,
+      "connector.audio": 2,
       "connector.card": 4,
-      "connector.power": 2,
+      "connector.power": 5,
       "connector.terminal_block": 8,
       "connector.usb": 9,
+      "connector.wire": 3,
       "connector.wire_to_board": 3,
       "discrete.bjt": 42,
       "discrete.bridge": 26,
@@ -108,10 +110,10 @@
       "display.character": 13,
       "display.graphic": 15,
       "display.led": 8,
-      "electromechanical.buzzer": 3,
+      "electromechanical.buzzer": 11,
       "electromechanical.motor": 5,
       "electromechanical.relay": 32,
-      "electromechanical.switch": 14,
+      "electromechanical.switch": 16,
       "ic": 25,
       "ic.analog": 39,
       "ic.analog.amplifier": 27,
@@ -142,9 +144,13 @@
       "ic.sensor": 91,
       "ic.timing": 19,
       "mechanical": 3,
+      "mechanical.fiducial": 1,
+      "mechanical.heatsink": 1,
       "mechanical.jumper": 2,
-      "mechanical.mounting_hole": 1,
+      "mechanical.mounting_hole": 3,
+      "mechanical.net_tie": 1,
       "mechanical.pad": 2,
+      "mechanical.standoff": 3,
       "mechanical.testpoint": 5,
       "module.compute": 3,
       "module.devboard": 41,
@@ -157,7 +163,7 @@
       "passive.resistor.array": 2,
       "passive.resistor.variable": 3,
       "passive.transformer": 2,
-      "power.battery": 3,
+      "power.battery": 7,
       "power.supply": 18,
       "protection": 40,
       "protection.fuse": 9
@@ -281,6 +287,14 @@
       "rank": 55,
       "commit": "",
       "provenance": "sources/lcsc-parts/PROVENANCE.json"
+    },
+    {
+      "name": "wireframe-kicad-families",
+      "license": "CC-BY-SA-4.0 WITH KiCad-Libraries-exception",
+      "url": "https://github.com/CaSauCoin/wireframe_lib/tree/main/sources/kicad-families",
+      "rank": 100,
+      "commit": "",
+      "provenance": "sources/kicad-families/PROVENANCE.json"
     }
   ],
   "parts_release": {
