@@ -475,6 +475,9 @@ def main() -> None:
     ap.add_argument('--uncovered', action='store_true',
                     help='with --emit-research: list the parts no libcontract family covers, of any class '
                          '(a crystal, a TVS, a buzzer by its maker\'s name), instead of the chips')
+    ap.add_argument('--refresh', action='store_true',
+                    help='rebuild the LCSC parts already in the library from sources/lcsc-parts/kicad (zips, '
+                         'previews, entries) — after the collector itself was fixed')
     ap.add_argument('--contracts-only', action='store_true',
                     help='lay --contracts over the LCSC parts already in the library and stop (research that finished '
                          'after the parts were added)')
@@ -500,7 +503,9 @@ def main() -> None:
     for p in parts:
         key = re.sub(r'[^a-z0-9]', '', p.record.name.lower().rstrip('+'))
         shard = p.klass.split('.')[0]
-        if key in have or p.record.id in entries:
+        if args.refresh and (entries.get(p.record.id) or {}).get('source') == SOURCE_NAME:
+            adding.append(p)
+        elif key in have or p.record.id in entries:
             skipped.append({'name': p.record.name, 'why': 'already in the library'})
         elif shard not in shard_names:
             deferred.append({'name': p.record.name, 'class': p.klass,
@@ -573,7 +578,9 @@ def main() -> None:
         'schema': 1, 'license': LICENSE,
         'policy': 'Exact manufacturer part number only; the drawing\'s own part number checked; every '
                   'symbol pin on a pad of its own footprint. Collected with wf-lcsc-collect.',
-        'parts': [x for x in provenance if x['id'] in added_ids]}, indent=2, ensure_ascii=False) + '\n')
+        # Every LCSC part the library holds, not only this run's: a later run
+        # adding ten parts must not erase where the first 405 came from.
+        'parts': [x for x in provenance if x['id'] in entries]}, indent=2, ensure_ascii=False) + '\n')
     COLLECTION.mkdir(parents=True, exist_ok=True)
     (COLLECTION / 'catalog.json').write_text(json.dumps({
         'schema': 1, 'added': len(adding), 'after': len(entries),

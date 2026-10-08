@@ -1,9 +1,9 @@
 {
   "contract_schema": 1,
   "counts": {
-    "parts": 8501,
+    "parts": 8527,
     "families": 77,
-    "archetypes": 83
+    "archetypes": 138
   },
   "parts": [
     {
@@ -146399,12 +146399,12 @@
       "archetype": "ic.regulator.ldo",
       "class": "ic.power.ldo",
       "pin_count": 3,
-      "companions": 2,
-      "rules": 3,
+      "companions": 4,
+      "rules": 4,
       "enforceable": 5,
       "flags": [
         "pruned:5",
-        "no_supply_voltages"
+        "datasheet_read"
       ],
       "coverage": {},
       "hash": "sha256:61601bb0a2e4a299ed72d5c00cec17805c5957dbaeabddab8446e251a7bce55b"
@@ -146505,15 +146505,15 @@
       "slug": "wireframe-lcsc-parts__Amplifier_Operational__LM358DR-a4600877",
       "name": "LM358DR",
       "family": "analog.opamp",
-      "archetype": "ic.opamp",
+      "archetype": "ic.amplifier.opamp.dual",
       "class": "ic.analog.opamp",
       "pin_count": 2,
-      "companions": 2,
-      "rules": 2,
+      "companions": 3,
+      "rules": 3,
       "enforceable": 4,
       "flags": [
         "pruned:6",
-        "no_supply_voltages"
+        "datasheet_read"
       ],
       "coverage": {},
       "hash": "sha256:a0ca5ed5b7e911389f3cad38b970144eddff9c18a29ec8a557f1ebd72f4222fd"
@@ -146541,15 +146541,15 @@
       "slug": "wireframe-lcsc-parts__Amplifier_Operational__LM324DR-795e9aee",
       "name": "LM324DR",
       "family": "analog.opamp",
-      "archetype": "ic.opamp",
+      "archetype": "ic.amplifier.quad_opamp",
       "class": "ic.analog.opamp",
       "pin_count": 2,
       "companions": 2,
-      "rules": 2,
+      "rules": 3,
       "enforceable": 4,
       "flags": [
         "pruned:6",
-        "no_supply_voltages"
+        "datasheet_read"
       ],
       "coverage": {},
       "hash": "sha256:111acaa7f762195814cd8f9ad66ba874b13876272a9902c94bffa67da923c9f0"
@@ -146559,15 +146559,15 @@
       "slug": "wireframe-lcsc-parts__Amplifier_Operational__LM324DT-cac6d1d6",
       "name": "LM324DT",
       "family": "analog.opamp",
-      "archetype": "ic.opamp",
+      "archetype": "ic.amplifier.opamp",
       "class": "ic.analog.opamp",
       "pin_count": 10,
       "companions": 2,
-      "rules": 4,
+      "rules": 5,
       "enforceable": 6,
       "flags": [
         "pruned:4",
-        "no_supply_voltages"
+        "datasheet_read"
       ],
       "coverage": {},
       "hash": "sha256:2b60b187280d99f645fa4e98b958934f47811e6d5b7670e9d0fac640dcbff2db"
@@ -146595,14 +146595,15 @@
       "slug": "wireframe-lcsc-parts__Amplifier_Operational__MCP6002T-I_SN-7a165ed3",
       "name": "MCP6002T-I_SN",
       "family": "analog.opamp",
-      "archetype": "ic.opamp",
+      "archetype": "ic.amplifier.opamp.dual",
       "class": "ic.analog.opamp",
       "pin_count": 2,
-      "companions": 2,
-      "rules": 3,
+      "companions": 3,
+      "rules": 4,
       "enforceable": 5,
       "flags": [
-        "pruned:6"
+        "pruned:6",
+        "datasheet_read"
       ],
       "coverage": {},
       "hash": "sha256:a519836d2746b7afcfe15d4088e49b1373c72e78dec764fd25e003870d48ebce"
@@ -146641,7 +146642,7 @@
         "no_supply_voltages"
       ],
       "coverage": {},
-      "hash": "sha256:15be9368ec0b46e41b6ae2e8cdb09fd871b76d6e29a6bbe6720759428731276d"
+      "hash": "sha256:6025e94bcb7b5874cf03eda83430e6dbc5eced7417220b2cc85ea136fb100e69"
     },
     {
       "lib_id": "wireframe-lcsc-parts/Transistor_FET/IRLML6402TRPBF",
@@ -146902,13 +146903,13 @@
       "family": "iface.usb_uart",
       "archetype": "ic.interface.usb_uart",
       "class": "ic.interface.usb",
-      "pin_count": 7,
-      "companions": 3,
-      "rules": 4,
+      "pin_count": 8,
+      "companions": 7,
+      "rules": 6,
       "enforceable": 7,
       "flags": [
         "pruned:3",
-        "no_supply_voltages"
+        "datasheet_read"
       ],
       "coverage": {},
       "hash": "sha256:ec5362746bda0cd7223be285723b081abae2f7410fdd2b3ebcd47c1d1e630be4"
@@ -147019,7 +147020,7 @@
         "no_supply_voltages"
       ],
       "coverage": {},
-      "hash": "sha256:4e951156874328dae5c00953ffee3f1fd97676e889ce84519871c7c9eac62fca"
+      "hash": "sha256:7f24638816e3599e8248fa55aea7d234d4f74f8b822bb8f994e88276e33e733c"
     },
     {
       "lib_id": "wireframe-lcsc-parts/Diode/SS54",
@@ -147064,12 +147065,13 @@
       "family": "reg.buck",
       "archetype": "ic.regulator.buck",
       "class": "ic.power.switching",
-      "pin_count": 4,
-      "companions": 5,
-      "rules": 4,
+      "pin_count": 6,
+      "companions": 7,
+      "rules": 7,
       "enforceable": 9,
       "flags": [
-        "pruned:7"
+        "pruned:7",
+        "datasheet_read"
       ],
       "coverage": {},
       "hash": "sha256:41d566ae0f0add60c0e05fb293fcb4201b8e56288c07d5b04baa99ce6ddb70c5"
@@ -147098,13 +147100,13 @@
       "family": "reg.buck",
       "archetype": "ic.regulator.buck",
       "class": "ic.power.switching",
-      "pin_count": 5,
-      "companions": 7,
-      "rules": 4,
+      "pin_count": 7,
+      "companions": 9,
+      "rules": 6,
       "enforceable": 11,
       "flags": [
         "pruned:4",
-        "no_supply_voltages"
+        "datasheet_read"
       ],
       "coverage": {},
       "hash": "sha256:96a480652e0d3fee20910fe2f63a0d43f67931e33175a7ed416f496fc9dfaf34"
@@ -147116,13 +147118,13 @@
       "family": "reg.buck",
       "archetype": "ic.regulator.buck",
       "class": "ic.power.switching",
-      "pin_count": 5,
-      "companions": 5,
-      "rules": 3,
+      "pin_count": 6,
+      "companions": 7,
+      "rules": 6,
       "enforceable": 8,
       "flags": [
         "pruned:7",
-        "no_supply_voltages"
+        "datasheet_read"
       ],
       "coverage": {},
       "hash": "sha256:7cd14c3fd0f6856eb1395af3ff21b51d681fddaa7222dbc7ac5a8a76ccd7472e"
@@ -147276,14 +147278,15 @@
       "slug": "wireframe-lcsc-parts__Logic_LCSC__74HC165D_653-aab09feb",
       "name": "74HC165D_653",
       "family": "logic.gate",
-      "archetype": "ic.logic",
+      "archetype": "ic.logic.shift_register",
       "class": "ic.logic",
       "pin_count": 3,
       "companions": 2,
-      "rules": 4,
+      "rules": 5,
       "enforceable": 6,
       "flags": [
-        "pruned:4"
+        "pruned:4",
+        "datasheet_read"
       ],
       "coverage": {},
       "hash": "sha256:d07c7d234f7d4575ddaca2f743be58ae48f2aa421df8e1ad71465b85fdd9b929"
@@ -147293,14 +147296,15 @@
       "slug": "wireframe-lcsc-parts__Logic_LCSC__74HC245D_653-294ae91a",
       "name": "74HC245D_653",
       "family": "logic.gate",
-      "archetype": "ic.logic",
+      "archetype": "ic.logic.transceiver",
       "class": "ic.logic",
-      "pin_count": 2,
+      "pin_count": 3,
       "companions": 2,
-      "rules": 3,
+      "rules": 4,
       "enforceable": 5,
       "flags": [
-        "pruned:5"
+        "pruned:5",
+        "datasheet_read"
       ],
       "coverage": {},
       "hash": "sha256:b691c7aa1cbc7485ba3a1daa47d27d6e1b00d0348d2070233c9c2de6b4379ba1"
@@ -147310,15 +147314,15 @@
       "slug": "wireframe-lcsc-parts__Logic_LCSC__74HC14D_653-ba54fc0e",
       "name": "74HC14D_653",
       "family": "logic.gate",
-      "archetype": "ic.logic",
+      "archetype": "ic.logic.inverter.hex",
       "class": "ic.logic",
       "pin_count": 2,
       "companions": 2,
-      "rules": 2,
+      "rules": 3,
       "enforceable": 4,
       "flags": [
         "pruned:5",
-        "no_supply_voltages"
+        "datasheet_read"
       ],
       "coverage": {},
       "hash": "sha256:67e5e2aee3648033a9e236dac4c9991cd2356053d61c0458c5ca8a381433f9ed"
@@ -147328,15 +147332,15 @@
       "slug": "wireframe-lcsc-parts__Logic_LCSC__74HC04D_653-472ec091",
       "name": "74HC04D_653",
       "family": "logic.gate",
-      "archetype": "ic.logic",
+      "archetype": "ic.logic.inverter",
       "class": "ic.logic",
       "pin_count": 2,
       "companions": 2,
-      "rules": 2,
+      "rules": 3,
       "enforceable": 4,
       "flags": [
         "pruned:5",
-        "no_supply_voltages"
+        "datasheet_read"
       ],
       "coverage": {},
       "hash": "sha256:7b13bba4bbd693934c936f5379c79c9bd414383b6e3937b2d3104983f4214a56"
@@ -147346,15 +147350,15 @@
       "slug": "wireframe-lcsc-parts__Logic_LCSC__74HC08D_653-183df559",
       "name": "74HC08D_653",
       "family": "logic.gate",
-      "archetype": "ic.logic",
+      "archetype": "ic.logic.gate",
       "class": "ic.logic",
       "pin_count": 2,
       "companions": 2,
-      "rules": 2,
+      "rules": 3,
       "enforceable": 4,
       "flags": [
         "pruned:5",
-        "no_supply_voltages"
+        "datasheet_read"
       ],
       "coverage": {},
       "hash": "sha256:cb9f8f37f911f73e42c5bc75357585c3a2021c20a7c5d7f2c772a76c645d8592"
@@ -147367,12 +147371,12 @@
       "archetype": "ic.regulator.ldo.adjustable",
       "class": "ic.power.ldo",
       "pin_count": 3,
-      "companions": 3,
-      "rules": 3,
+      "companions": 5,
+      "rules": 4,
       "enforceable": 6,
       "flags": [
         "pruned:5",
-        "no_supply_voltages"
+        "datasheet_read"
       ],
       "coverage": {},
       "hash": "sha256:5cfa3a773a7d4f2b1320826b065139ca446e8762511e34d1d2afe24fe9c7998a"
@@ -147506,14 +147510,15 @@
       "slug": "wireframe-lcsc-parts__Memory_LCSC__W25Q128JVSIQ-b19bb732",
       "name": "W25Q128JVSIQ",
       "family": "mem.flash_spi",
-      "archetype": "ic.memory.spi",
+      "archetype": "ic.memory.flash.spi",
       "class": "ic.memory",
       "pin_count": 3,
-      "companions": 3,
+      "companions": 4,
       "rules": 4,
       "enforceable": 7,
       "flags": [
-        "pruned:4"
+        "pruned:4",
+        "datasheet_read"
       ],
       "coverage": {},
       "hash": "sha256:a5ae01388ff86279b7ebec31258383313743524667f931591236587973a2e7c5"
@@ -147544,11 +147549,12 @@
       "archetype": "ic.memory.i2c",
       "class": "ic.memory",
       "pin_count": 4,
-      "companions": 4,
-      "rules": 4,
+      "companions": 5,
+      "rules": 5,
       "enforceable": 8,
       "flags": [
-        "pruned:3"
+        "pruned:3",
+        "datasheet_read"
       ],
       "coverage": {},
       "hash": "sha256:a6ac6c72aac2862e677115f4352ec2204d5d65a56ec5b35767ec8f82bd526b0e"
@@ -147561,11 +147567,12 @@
       "archetype": "ic.memory.i2c",
       "class": "ic.memory",
       "pin_count": 4,
-      "companions": 4,
-      "rules": 4,
+      "companions": 5,
+      "rules": 5,
       "enforceable": 8,
       "flags": [
-        "pruned:3"
+        "pruned:3",
+        "datasheet_read"
       ],
       "coverage": {},
       "hash": "sha256:804e802f9da6a5e15b3cdcb1cae3176b78fffbf9e2a1cfa549e9447f9214a46c"
@@ -147614,13 +147621,13 @@
       "family": "power.motor_driver",
       "archetype": "ic.motor_driver",
       "class": "ic.driver.motor",
-      "pin_count": 7,
-      "companions": 1,
-      "rules": 5,
+      "pin_count": 14,
+      "companions": 8,
+      "rules": 8,
       "enforceable": 6,
       "flags": [
         "pruned:4",
-        "no_supply_voltages"
+        "datasheet_read"
       ],
       "coverage": {},
       "hash": "sha256:d68f2eef9ca9a7785f25ae2dcec1032554ada20e1b825246715177844d9f0201"
@@ -147632,13 +147639,13 @@
       "family": "power.motor_driver",
       "archetype": "ic.motor_driver",
       "class": "ic.driver.motor",
-      "pin_count": 13,
-      "companions": 3,
-      "rules": 5,
+      "pin_count": 18,
+      "companions": 5,
+      "rules": 8,
       "enforceable": 8,
       "flags": [
         "pruned:2",
-        "no_supply_voltages"
+        "datasheet_read"
       ],
       "coverage": {},
       "hash": "sha256:23d5251489ad5d6527a2c6bcc9344024eee955278e20ac45b2be1d6e3ca56f37"
@@ -147705,11 +147712,12 @@
       "archetype": "ic.regulator.switching",
       "class": "ic.power.switching",
       "pin_count": 5,
-      "companions": 6,
-      "rules": 6,
+      "companions": 7,
+      "rules": 9,
       "enforceable": 12,
       "flags": [
-        "pruned:4"
+        "pruned:4",
+        "datasheet_read"
       ],
       "coverage": {},
       "hash": "sha256:bb035aef2f5aa2005628517f16dfd723ef8d5f6732031215cf9bf9787588025a"
@@ -147739,13 +147747,13 @@
       "family": "reg.switching.generic",
       "archetype": "ic.regulator.switching",
       "class": "ic.power.switching",
-      "pin_count": 7,
-      "companions": 5,
-      "rules": 3,
+      "pin_count": 8,
+      "companions": 7,
+      "rules": 4,
       "enforceable": 8,
       "flags": [
         "pruned:7",
-        "no_supply_voltages"
+        "datasheet_read"
       ],
       "coverage": {},
       "hash": "sha256:e53260b9ef23ceb0232005f0d88b1b4ef21918fdb419e899c64653f04ec9b5e5"
@@ -147808,14 +147816,15 @@
       "slug": "wireframe-lcsc-parts__Interface_CAN__SN65HVD230DR-5986ce50",
       "name": "SN65HVD230DR",
       "family": "iface.rs485",
-      "archetype": "ic.interface.rs485",
+      "archetype": "ic.interface.can.transceiver",
       "class": "ic.interface.can",
       "pin_count": 5,
       "companions": 4,
-      "rules": 3,
+      "rules": 4,
       "enforceable": 7,
       "flags": [
-        "pruned:4"
+        "pruned:4",
+        "datasheet_read"
       ],
       "coverage": {},
       "hash": "sha256:8724e7236f937a3463d8e8377f981db0afe8ffe5093ac100e289829ab99fdab0"
@@ -147827,12 +147836,13 @@
       "family": "iface.rs485",
       "archetype": "ic.interface.rs485",
       "class": "ic.interface.serial",
-      "pin_count": 2,
+      "pin_count": 4,
       "companions": 4,
-      "rules": 3,
+      "rules": 4,
       "enforceable": 7,
       "flags": [
-        "pruned:4"
+        "pruned:4",
+        "datasheet_read"
       ],
       "coverage": {},
       "hash": "sha256:f704462a8c412bd571cfd56c6282a43d32400cee41fb3e3f6303c5d8020f01f2"
@@ -147860,15 +147870,15 @@
       "slug": "wireframe-lcsc-parts__Sensor_Magnetic__A1339LLPTR-DD-T-7ac4dbbe",
       "name": "A1339LLPTR-DD-T",
       "family": "sensor.generic",
-      "archetype": "ic.sensor",
+      "archetype": "ic.sensor.magnetic",
       "class": "ic.sensor",
-      "pin_count": 3,
-      "companions": 0,
-      "rules": 2,
+      "pin_count": 7,
+      "companions": 4,
+      "rules": 4,
       "enforceable": 2,
       "flags": [
         "pruned:6",
-        "no_supply_voltages"
+        "datasheet_read"
       ],
       "coverage": {},
       "hash": "sha256:e1d79ce6def707fe0f075227a35244582e290c085d4bebcc904e8ce5af15f23a"
@@ -147878,15 +147888,15 @@
       "slug": "wireframe-lcsc-parts__Sensor_Magnetic__AAS33001LLEATR-5-a50dd196",
       "name": "AAS33001LLEATR-5",
       "family": "sensor.generic",
-      "archetype": "ic.sensor",
+      "archetype": "ic.sensor.hall_angle",
       "class": "ic.sensor",
-      "pin_count": 3,
-      "companions": 0,
-      "rules": 2,
+      "pin_count": 6,
+      "companions": 1,
+      "rules": 4,
       "enforceable": 2,
       "flags": [
         "pruned:6",
-        "no_supply_voltages"
+        "datasheet_read"
       ],
       "coverage": {},
       "hash": "sha256:a06aeacce9f0f8fe3b2976ba4afaa045c172556dca54012b99130a2cca1d9823"
@@ -147926,21 +147936,22 @@
         "no_supply_voltages"
       ],
       "coverage": {},
-      "hash": "sha256:aa99ce64ff9b96dba1684c5855fa3f2d77a8f08dabd66897a8627301e53a69f7"
+      "hash": "sha256:e27023e3ff3909e0ef7c8d70e61708ac2877ba0bf6b8728ec88561fed43f24f6"
     },
     {
       "lib_id": "wireframe-lcsc-parts/Sensor_LCSC/BH1730FVC-TR",
       "slug": "wireframe-lcsc-parts__Sensor_LCSC__BH1730FVC-TR-ed04e3bd",
       "name": "BH1730FVC-TR",
       "family": "sensor.generic",
-      "archetype": "ic.sensor",
+      "archetype": "ic.sensor.optical",
       "class": "ic.sensor",
-      "pin_count": 6,
-      "companions": 2,
-      "rules": 4,
+      "pin_count": 7,
+      "companions": 5,
+      "rules": 6,
       "enforceable": 6,
       "flags": [
-        "pruned:3"
+        "pruned:3",
+        "datasheet_read"
       ],
       "coverage": {},
       "hash": "sha256:0aabb0af4f95d73de9eb53c1fe17cd3c00fc8921c9333fa453b94b0d807158e7"
@@ -147968,15 +147979,15 @@
       "slug": "wireframe-lcsc-parts__Sensor_LCSC__BMA253-a7befd37",
       "name": "BMA253",
       "family": "sensor.generic",
-      "archetype": "ic.sensor",
+      "archetype": "ic.sensor.mems_accelerometer",
       "class": "ic.sensor",
       "pin_count": 6,
       "companions": 2,
-      "rules": 3,
+      "rules": 5,
       "enforceable": 5,
       "flags": [
         "pruned:3",
-        "no_supply_voltages"
+        "datasheet_read"
       ],
       "coverage": {},
       "hash": "sha256:12312619674acd348c8af47a82a4e569b62c7d2ec9936e30380e37f248d8d110"
@@ -147986,15 +147997,15 @@
       "slug": "wireframe-lcsc-parts__Sensor_LCSC__ICM-20602-5ed6d23f",
       "name": "ICM-20602",
       "family": "sensor.generic",
-      "archetype": "ic.sensor",
+      "archetype": "ic.sensor.imu",
       "class": "ic.sensor",
-      "pin_count": 5,
-      "companions": 2,
-      "rules": 4,
+      "pin_count": 11,
+      "companions": 14,
+      "rules": 6,
       "enforceable": 6,
       "flags": [
         "pruned:2",
-        "no_supply_voltages"
+        "datasheet_read"
       ],
       "coverage": {},
       "hash": "sha256:223f71aeb181075b6969f6380d056cae57ad1ce818a5df5ac043a57cecdf3dd0"
@@ -148025,11 +148036,12 @@
       "archetype": "ic.sensor",
       "class": "ic.sensor",
       "pin_count": 2,
-      "companions": 2,
-      "rules": 3,
+      "companions": 3,
+      "rules": 4,
       "enforceable": 5,
       "flags": [
-        "pruned:4"
+        "pruned:4",
+        "datasheet_read"
       ],
       "coverage": {},
       "hash": "sha256:eb06a80870eb5ae4520a59e5eeaafebda7655c5ed4d12eacba3e15863f48d6cd"
@@ -148039,14 +148051,15 @@
       "slug": "wireframe-lcsc-parts__Sensor_Touch__JSM8233-2067b5ca",
       "name": "JSM8233",
       "family": "sensor.generic",
-      "archetype": "ic.sensor",
+      "archetype": "ic.sensor.touch.capacitive",
       "class": "ic.sensor",
       "pin_count": 2,
       "companions": 2,
-      "rules": 3,
+      "rules": 4,
       "enforceable": 5,
       "flags": [
-        "pruned:4"
+        "pruned:4",
+        "datasheet_read"
       ],
       "coverage": {},
       "hash": "sha256:e83af2b33d8cb39f7c4d642113aa6b5111789e9555289afc2da6d8a77cec3a1e"
@@ -148056,15 +148069,15 @@
       "slug": "wireframe-lcsc-parts__Sensor_Magnetic__KTH5763AQ3DNE-13ff1887",
       "name": "KTH5763AQ3DNE",
       "family": "sensor.generic",
-      "archetype": "ic.sensor",
+      "archetype": "ic.sensor.magnetic",
       "class": "ic.sensor",
       "pin_count": 6,
       "companions": 2,
-      "rules": 4,
+      "rules": 6,
       "enforceable": 6,
       "flags": [
         "pruned:2",
-        "no_supply_voltages"
+        "datasheet_read"
       ],
       "coverage": {},
       "hash": "sha256:4af2109f1f8da6375c7e31aab0b9e150d7ff774a662fb20438f1867adf1b22e6"
@@ -148128,15 +148141,15 @@
       "slug": "wireframe-lcsc-parts__Sensor_LCSC__QMI8658A-52b747c6",
       "name": "QMI8658A",
       "family": "sensor.generic",
-      "archetype": "ic.sensor",
+      "archetype": "ic.sensor.imu",
       "class": "ic.sensor",
       "pin_count": 9,
-      "companions": 2,
-      "rules": 4,
+      "companions": 6,
+      "rules": 7,
       "enforceable": 6,
       "flags": [
         "pruned:2",
-        "no_supply_voltages"
+        "datasheet_read"
       ],
       "coverage": {},
       "hash": "sha256:5b5b5ee96a5816ba9ff98fdc91e1f4286ce060d7a842e3a98dc1d2f292d2fedb"
@@ -148164,14 +148177,15 @@
       "slug": "wireframe-lcsc-parts__Sensor_Magnetic__A1335LLETR-T-01452ec7",
       "name": "A1335LLETR-T",
       "family": "sensor.generic",
-      "archetype": "ic.sensor",
+      "archetype": "ic.sensor.position",
       "class": "ic.sensor",
-      "pin_count": 5,
-      "companions": 2,
-      "rules": 3,
+      "pin_count": 8,
+      "companions": 7,
+      "rules": 5,
       "enforceable": 5,
       "flags": [
-        "pruned:4"
+        "pruned:4",
+        "datasheet_read"
       ],
       "coverage": {},
       "hash": "sha256:1c8ed3a8d903b89b10d79c91600afda3573a6036b3ce12386617c6df71e96d83"
@@ -148217,14 +148231,15 @@
       "slug": "wireframe-lcsc-parts__Sensor_LCSC__GP2AP03VT00F-4904d1ca",
       "name": "GP2AP03VT00F",
       "family": "sensor.generic",
-      "archetype": "ic.sensor",
+      "archetype": "ic.sensor.optical.tof",
       "class": "ic.sensor",
-      "pin_count": 7,
-      "companions": 2,
-      "rules": 5,
+      "pin_count": 8,
+      "companions": 8,
+      "rules": 7,
       "enforceable": 7,
       "flags": [
-        "pruned:2"
+        "pruned:2",
+        "datasheet_read"
       ],
       "coverage": {},
       "hash": "sha256:aa1777836efe83dad893c325c3a5fe52b9e0c21f43cf284901c604e7b12d193c"
@@ -148318,7 +148333,7 @@
         "no_supply_voltages"
       ],
       "coverage": {},
-      "hash": "sha256:2db0967755aee45766a534b07c5df7e4748bae28ccb407d80dc58a2421c06f35"
+      "hash": "sha256:bfa44a205a2a5f692c0b4c3bf78dde28e5f8bb646e77cf799d1f78609bef4201"
     },
     {
       "lib_id": "wireframe-lcsc-parts/Interface_CAN/MCP2515-I_SO",
@@ -148432,15 +148447,15 @@
       "slug": "wireframe-lcsc-parts__Reference_Voltage__REF3025AIDBZR-bbf9b30a",
       "name": "REF3025AIDBZR",
       "family": "reg.reference",
-      "archetype": "ic.reference",
+      "archetype": "ic.reference.voltage",
       "class": "ic.analog.reference",
       "pin_count": 3,
-      "companions": 2,
-      "rules": 2,
+      "companions": 3,
+      "rules": 3,
       "enforceable": 4,
       "flags": [
         "pruned:5",
-        "no_supply_voltages"
+        "datasheet_read"
       ],
       "coverage": {},
       "hash": "sha256:25e5290839576b73ac77ce762f861d4613bea119e48d64e5e97a1f60d0b616f4"
@@ -148450,15 +148465,15 @@
       "slug": "wireframe-lcsc-parts__Reference_Voltage__REF5025AIDR-d4124b6e",
       "name": "REF5025AIDR",
       "family": "reg.reference",
-      "archetype": "ic.reference",
+      "archetype": "ic.power.reference.series",
       "class": "ic.analog.reference",
       "pin_count": 3,
-      "companions": 3,
-      "rules": 2,
+      "companions": 5,
+      "rules": 5,
       "enforceable": 5,
       "flags": [
         "pruned:4",
-        "no_supply_voltages"
+        "datasheet_read"
       ],
       "coverage": {},
       "hash": "sha256:b9ca0ccfade48256ec22a2eedcff117b1e5bfacc51dd0e19a06ec2ddb48f30de"
@@ -148543,12 +148558,12 @@
       "archetype": "ic.interface.rs485",
       "class": "ic.interface.serial",
       "pin_count": 4,
-      "companions": 4,
-      "rules": 2,
+      "companions": 7,
+      "rules": 3,
       "enforceable": 6,
       "flags": [
         "pruned:4",
-        "no_supply_voltages"
+        "datasheet_read"
       ],
       "coverage": {},
       "hash": "sha256:89ca3b887ef44a200baa532532da98f40c042c563128cd5d416dba5df1b51faf"
@@ -148612,15 +148627,16 @@
       "slug": "wireframe-lcsc-parts__Isolator__LTV-817S-TA1-C-203c73fa",
       "name": "LTV-817S-TA1-C",
       "family": "iso.digital",
-      "archetype": "base.ic",
+      "archetype": "ic.isolator.optocoupler.transistor",
       "class": "ic.isolator",
       "pin_count": 0,
-      "companions": 0,
+      "companions": 1,
       "rules": 0,
       "enforceable": 0,
       "flags": [
         "pruned:8",
-        "no_supply_voltages"
+        "no_supply_voltages",
+        "datasheet_read"
       ],
       "coverage": {},
       "hash": "sha256:d55f9fe31f7372620d46da35635dc256eea046e574900ec276db2557f54c6fbd"
@@ -148677,7 +148693,7 @@
         "no_supply_voltages"
       ],
       "coverage": {},
-      "hash": "sha256:bf428fdf320bc8c1db178b0d7694fe97f086ed37d7dd84aae4dd2d317b1b3c8c"
+      "hash": "sha256:440f100fa87fd8e764c8ab05cee09f94dbb109087c44fc4ce62f80421d057d5f"
     },
     {
       "lib_id": "wireframe-lcsc-parts/Diode_Bridge/GBJ3510",
@@ -148695,7 +148711,7 @@
         "no_supply_voltages"
       ],
       "coverage": {},
-      "hash": "sha256:e8a40aee1e1dd7bb97eb62fd7fe81ef2d058526c9452b74258b33adf4147c020"
+      "hash": "sha256:0c1247772bd74eeec39010360013e7f71588e41dced62b3fc6db09643d1cb6d7"
     },
     {
       "lib_id": "wireframe-lcsc-parts/Diode_Bridge/GBJ5010",
@@ -148713,7 +148729,7 @@
         "no_supply_voltages"
       ],
       "coverage": {},
-      "hash": "sha256:fc9429453a5aa8450926067e6b31cc75d981dc8f7dac53293c34e30fa076d8c9"
+      "hash": "sha256:1b52e1c84e1bba3e8de8d64b1be4642251d5061ff374a248e8bf007ccf31a5d2"
     },
     {
       "lib_id": "wireframe-lcsc-parts/Diode_Bridge/GBJL1506",
@@ -148731,7 +148747,7 @@
         "no_supply_voltages"
       ],
       "coverage": {},
-      "hash": "sha256:bdad054017d7900096b81be11b9bf17e693711a2e10ea114f2c30df47e348e28"
+      "hash": "sha256:9df75f9951cb416e8de90f0bd73fbd174a0ab71c7efc997dcea8648cdf8dc970"
     },
     {
       "lib_id": "wireframe-lcsc-parts/Diode_Bridge/GBP310",
@@ -148749,7 +148765,7 @@
         "no_supply_voltages"
       ],
       "coverage": {},
-      "hash": "sha256:70e866e579b3990d60874f40a172f41d5d0691ecff080a4934972077f3f97bcd"
+      "hash": "sha256:01c1a41d1cb9d010ddd2e4f9aa1d43cbd08a20a77d1ed35d19fc84fbfbe67c5b"
     },
     {
       "lib_id": "wireframe-lcsc-parts/Diode_Bridge/GBU1010",
@@ -148767,7 +148783,7 @@
         "no_supply_voltages"
       ],
       "coverage": {},
-      "hash": "sha256:53ed48ee107e832e0fba3d77c904559b19b4fccf7337b82bd2a7c95496f2f405"
+      "hash": "sha256:8e22399168e15f09b2ba0356e065c5aa1f2c3f383b623e01f5eb2f0028ab32b2"
     },
     {
       "lib_id": "wireframe-lcsc-parts/Diode_Bridge/GBU1510",
@@ -148785,7 +148801,7 @@
         "no_supply_voltages"
       ],
       "coverage": {},
-      "hash": "sha256:233dd098f000a19675837387173e4df44b5a72766441bf062062e47746eb56f6"
+      "hash": "sha256:0cc4264cfa5fbb76502dcfae0abd70749b9bf668bb7387addc4975223044dc27"
     },
     {
       "lib_id": "wireframe-lcsc-parts/Diode_Bridge/GBU2510",
@@ -148803,7 +148819,7 @@
         "no_supply_voltages"
       ],
       "coverage": {},
-      "hash": "sha256:a326ecae7fb79f476055cd4297c7db6fc9527e1c46143c9af388e8a7f657a512"
+      "hash": "sha256:4f14b211db82ab20c190018d006f5c9dbe056e1cd1875d326869681b00e7a957"
     },
     {
       "lib_id": "wireframe-lcsc-parts/Diode_Bridge/GBU606",
@@ -148821,7 +148837,7 @@
         "no_supply_voltages"
       ],
       "coverage": {},
-      "hash": "sha256:192609524e638ade32746304e41efa3ad5d2c9f20231597fc1f1916445f37849"
+      "hash": "sha256:702abf8ecdd16eb448763691b5ce25af318b0360cac5c410cd6b788c8f2d25ce"
     },
     {
       "lib_id": "wireframe-lcsc-parts/Diode_Bridge/GBU808",
@@ -148839,7 +148855,7 @@
         "no_supply_voltages"
       ],
       "coverage": {},
-      "hash": "sha256:88a1834a466bcbeaf3b4f0a7c405d5044a56618957e51ad528326b704afe09fd"
+      "hash": "sha256:8a76fb61c410abb2fa6940a7abaf83117cc74840e43c978c96c36d2d1f0aa819"
     },
     {
       "lib_id": "wireframe-lcsc-parts/Diode_Bridge/KBJ410",
@@ -148857,7 +148873,7 @@
         "no_supply_voltages"
       ],
       "coverage": {},
-      "hash": "sha256:3ce7656f0639f026447042da68d84d7644df22696c822535f7173f8236828087"
+      "hash": "sha256:5939aa49a15aadcd8bfd2c4c755594b81754b76d014402b373f65d4b70090833"
     },
     {
       "lib_id": "wireframe-lcsc-parts/Diode_Bridge/MB10S-50MIL",
@@ -148903,12 +148919,12 @@
       "archetype": "ic.dac",
       "class": "ic.analog",
       "pin_count": 3,
-      "companions": 2,
-      "rules": 2,
+      "companions": 4,
+      "rules": 3,
       "enforceable": 4,
       "flags": [
         "pruned:5",
-        "no_supply_voltages"
+        "datasheet_read"
       ],
       "coverage": {},
       "hash": "sha256:8668da132f9284ac4d93c83440cb1e7d840781315b6c6ff266668ff4a8308861"
@@ -148939,11 +148955,12 @@
       "archetype": "ic.dac",
       "class": "ic.analog",
       "pin_count": 5,
-      "companions": 2,
-      "rules": 6,
+      "companions": 4,
+      "rules": 7,
       "enforceable": 8,
       "flags": [
-        "pruned:2"
+        "pruned:2",
+        "datasheet_read"
       ],
       "coverage": {},
       "hash": "sha256:c53b92e6709cebf49adf2d8cb5dd20b47a75671e8cfaf999be9252b628e292c6"
@@ -148953,14 +148970,15 @@
       "slug": "wireframe-lcsc-parts__Analog_DAC__MCP4922-E_SL-fdbe9765",
       "name": "MCP4922-E_SL",
       "family": "analog.dac",
-      "archetype": "ic.dac",
+      "archetype": "ic.regulator.switching",
       "class": "ic.analog",
-      "pin_count": 6,
-      "companions": 2,
-      "rules": 6,
+      "pin_count": 8,
+      "companions": 4,
+      "rules": 8,
       "enforceable": 8,
       "flags": [
-        "pruned:2"
+        "pruned:2",
+        "datasheet_read"
       ],
       "coverage": {},
       "hash": "sha256:f46a24fc0ee5eb5445daf1ee654467cd62aba4ec0b757428775ac620b65e1e0e"
@@ -149041,15 +149059,15 @@
       "slug": "wireframe-lcsc-parts__Driver_FET__IR2101STRPBF-f785b16d",
       "name": "IR2101STRPBF",
       "family": "driver.generic",
-      "archetype": "base.ic",
+      "archetype": "ic.driver.half_bridge",
       "class": "ic.driver",
       "pin_count": 6,
       "companions": 2,
-      "rules": 4,
+      "rules": 6,
       "enforceable": 6,
       "flags": [
         "pruned:2",
-        "no_supply_voltages"
+        "datasheet_read"
       ],
       "coverage": {},
       "hash": "sha256:5cf3fd2a4bd35296a086df1270cf8e332380781f29a3a21877c8a75f1e674b96"
@@ -149059,15 +149077,15 @@
       "slug": "wireframe-lcsc-parts__Driver_FET__IR2103STRPBF-b23056fa",
       "name": "IR2103STRPBF",
       "family": "driver.generic",
-      "archetype": "base.ic",
+      "archetype": "ic.driver.half_bridge",
       "class": "ic.driver",
-      "pin_count": 2,
-      "companions": 2,
-      "rules": 2,
+      "pin_count": 4,
+      "companions": 4,
+      "rules": 4,
       "enforceable": 4,
       "flags": [
         "pruned:4",
-        "no_supply_voltages"
+        "datasheet_read"
       ],
       "coverage": {},
       "hash": "sha256:2937fc286607fba67e908a18d3282b6c2fa3fe4352d6413d55a6e00795778efd"
@@ -149077,15 +149095,15 @@
       "slug": "wireframe-lcsc-parts__Driver_FET__IR2104STRPBF-86550107",
       "name": "IR2104STRPBF",
       "family": "driver.generic",
-      "archetype": "base.ic",
+      "archetype": "ic.driver.half_bridge",
       "class": "ic.driver",
-      "pin_count": 2,
-      "companions": 2,
-      "rules": 2,
+      "pin_count": 4,
+      "companions": 4,
+      "rules": 4,
       "enforceable": 4,
       "flags": [
         "pruned:4",
-        "no_supply_voltages"
+        "datasheet_read"
       ],
       "coverage": {},
       "hash": "sha256:e05cb8a2427a0e8ff0e4f2af7c0404b6f24605f90742540409c37d265e1e2749"
@@ -149095,15 +149113,15 @@
       "slug": "wireframe-lcsc-parts__Driver_FET__IR21531STRPBF-45de95c6",
       "name": "IR21531STRPBF",
       "family": "driver.generic",
-      "archetype": "base.ic",
+      "archetype": "ic.driver.gate",
       "class": "ic.driver",
-      "pin_count": 2,
-      "companions": 2,
-      "rules": 2,
+      "pin_count": 4,
+      "companions": 4,
+      "rules": 4,
       "enforceable": 4,
       "flags": [
         "pruned:4",
-        "no_supply_voltages"
+        "datasheet_read"
       ],
       "coverage": {},
       "hash": "sha256:ad6007640292b5a29ab70ae69765f2a4919e1bf53cc4fb53b353a9ec78646310"
@@ -149168,15 +149186,15 @@
       "slug": "wireframe-lcsc-parts__Interface_Ethernet__DP83848IVVX_NOPB-f2138228",
       "name": "DP83848IVVX_NOPB",
       "family": "iface.generic",
-      "archetype": "base.ic",
+      "archetype": "ic.interface.ethernet.phy",
       "class": "ic.interface.ethernet",
-      "pin_count": 24,
-      "companions": 2,
-      "rules": 5,
+      "pin_count": 26,
+      "companions": 10,
+      "rules": 8,
       "enforceable": 7,
       "flags": [
         "pruned:1",
-        "no_supply_voltages"
+        "datasheet_read"
       ],
       "coverage": {},
       "hash": "sha256:0296435febabe7925788070dbf6972cf7d3217fff51eb3814b15cb03231edcc9"
@@ -149186,14 +149204,14 @@
       "slug": "wireframe-lcsc-parts__Interface_Ethernet__ENC28J60-I_SO-32304d90",
       "name": "ENC28J60-I_SO",
       "family": "iface.generic",
-      "archetype": "base.ic",
+      "archetype": "ic.interface.ethernet.controller",
       "class": "ic.interface.ethernet",
-      "pin_count": 13,
-      "companions": 2,
-      "rules": 6,
+      "pin_count": 17,
+      "companions": 5,
+      "rules": 9,
       "enforceable": 8,
       "flags": [
-        "no_supply_voltages"
+        "datasheet_read"
       ],
       "coverage": {},
       "hash": "sha256:2eb5991f8a526e5e0205bfd713ea4c4cdb30c198cff681c8780508ecdeb031b5"
@@ -149221,14 +149239,15 @@
       "slug": "wireframe-lcsc-parts__Interface_Ethernet__LAN8720AI-CP-TR-042cc924",
       "name": "LAN8720AI-CP-TR",
       "family": "iface.generic",
-      "archetype": "base.ic",
+      "archetype": "ic.interface.ethernet.phy",
       "class": "ic.interface.ethernet",
-      "pin_count": 4,
-      "companions": 2,
-      "rules": 4,
+      "pin_count": 9,
+      "companions": 3,
+      "rules": 9,
       "enforceable": 6,
       "flags": [
-        "pruned:3"
+        "pruned:3",
+        "datasheet_read"
       ],
       "coverage": {},
       "hash": "sha256:4352b5a7aa3c07be50eeca6c09808aed3c50f5d613550f227235164dc8088838"
@@ -149256,15 +149275,15 @@
       "slug": "wireframe-lcsc-parts__Interface_Ethernet__RTL8201F-VB-CG-d3eece4b",
       "name": "RTL8201F-VB-CG",
       "family": "iface.generic",
-      "archetype": "base.ic",
+      "archetype": "ic.interface.ethernet_phy",
       "class": "ic.interface.ethernet",
-      "pin_count": 1,
-      "companions": 0,
-      "rules": 0,
+      "pin_count": 9,
+      "companions": 3,
+      "rules": 3,
       "enforceable": 0,
       "flags": [
         "pruned:8",
-        "no_supply_voltages"
+        "datasheet_read"
       ],
       "coverage": {},
       "hash": "sha256:6e5eeb6c3012b587573721e5a74ed51059d57dfd81661b53d896e1f512f948c4"
@@ -149274,14 +149293,15 @@
       "slug": "wireframe-lcsc-parts__Interface_UART__SN75176BDR-c7452e5b",
       "name": "SN75176BDR",
       "family": "iface.generic",
-      "archetype": "base.ic",
+      "archetype": "ic.interface.transceiver",
       "class": "ic.interface.serial",
-      "pin_count": 2,
+      "pin_count": 4,
       "companions": 2,
-      "rules": 3,
+      "rules": 4,
       "enforceable": 5,
       "flags": [
-        "pruned:4"
+        "pruned:4",
+        "datasheet_read"
       ],
       "coverage": {},
       "hash": "sha256:3f91e288ef47a9813ff69963bdf0fa915d6eb018ae754420364c52fd47a72417"
@@ -149291,14 +149311,15 @@
       "slug": "wireframe-lcsc-parts__Interface_UART__SP485EEN-L_TR-c67c1bb1",
       "name": "SP485EEN-L_TR",
       "family": "iface.generic",
-      "archetype": "base.ic",
+      "archetype": "ic.interface.rs485",
       "class": "ic.interface.serial",
-      "pin_count": 2,
+      "pin_count": 4,
       "companions": 2,
-      "rules": 3,
+      "rules": 4,
       "enforceable": 5,
       "flags": [
-        "pruned:4"
+        "pruned:4",
+        "datasheet_read"
       ],
       "coverage": {},
       "hash": "sha256:10c6582e67a2ee5d67d79a85559c42bcca1c84385ad18140a78880569ba036c0"
@@ -149326,14 +149347,15 @@
       "slug": "wireframe-lcsc-parts__Analog_Switch__CD4051BM96-3f74e77f",
       "name": "CD4051BM96",
       "family": "analog.generic",
-      "archetype": "base.ic",
+      "archetype": "ic.switch.analog.mux",
       "class": "ic.analog",
       "pin_count": 4,
-      "companions": 2,
-      "rules": 4,
+      "companions": 3,
+      "rules": 7,
       "enforceable": 6,
       "flags": [
-        "pruned:3"
+        "pruned:3",
+        "datasheet_read"
       ],
       "coverage": {},
       "hash": "sha256:ba70707b1f7bee6537a52877c285b22083f1bcb589e4e00c7dbc9885ad031f06"
@@ -149343,14 +149365,15 @@
       "slug": "wireframe-lcsc-parts__Analog_Switch__CD4052BM96-19ee7967",
       "name": "CD4052BM96",
       "family": "analog.generic",
-      "archetype": "base.ic",
+      "archetype": "ic.switch.analog.mux",
       "class": "ic.analog",
       "pin_count": 4,
       "companions": 2,
-      "rules": 4,
+      "rules": 5,
       "enforceable": 6,
       "flags": [
-        "pruned:3"
+        "pruned:3",
+        "datasheet_read"
       ],
       "coverage": {},
       "hash": "sha256:bc9b1662d1ce8e9765fbfd680e12741dccc9461c77466ac1445cc98c46de0b34"
@@ -149360,15 +149383,15 @@
       "slug": "wireframe-lcsc-parts__Reference_Voltage__CJ431-60a8369a",
       "name": "CJ431",
       "family": "analog.generic",
-      "archetype": "base.ic",
+      "archetype": "ic.power.reference.shunt",
       "class": "ic.analog.reference",
-      "pin_count": 0,
+      "pin_count": 3,
       "companions": 0,
-      "rules": 0,
+      "rules": 4,
       "enforceable": 0,
       "flags": [
         "pruned:8",
-        "no_supply_voltages"
+        "datasheet_read"
       ],
       "coverage": {},
       "hash": "sha256:e991b1e6a3aad8e79d1a222f2cfaeb8eba6ae740ce9259cc28367045021e01ea"
@@ -149378,15 +149401,15 @@
       "slug": "wireframe-lcsc-parts__Reference_Voltage__CJ432___1-29f1d770",
       "name": "CJ432___1",
       "family": "analog.generic",
-      "archetype": "base.ic",
+      "archetype": "ic.power.reference.shunt",
       "class": "ic.analog.reference",
-      "pin_count": 0,
+      "pin_count": 3,
       "companions": 0,
-      "rules": 0,
+      "rules": 1,
       "enforceable": 0,
       "flags": [
         "pruned:8",
-        "no_supply_voltages"
+        "datasheet_read"
       ],
       "coverage": {},
       "hash": "sha256:c75e5f3c00d49c5635f31e270bb10fa05ab6de5cb917d39b9768bfc73059e777"
@@ -149396,15 +149419,15 @@
       "slug": "wireframe-lcsc-parts__Amplifier_Operational__LM258DR-d58735d4",
       "name": "LM258DR",
       "family": "analog.generic",
-      "archetype": "base.ic",
+      "archetype": "ic.amplifier.opamp.dual",
       "class": "ic.analog.opamp",
       "pin_count": 2,
-      "companions": 2,
-      "rules": 2,
+      "companions": 3,
+      "rules": 3,
       "enforceable": 4,
       "flags": [
         "pruned:4",
-        "no_supply_voltages"
+        "datasheet_read"
       ],
       "coverage": {},
       "hash": "sha256:0f030c71064401584ca1229c7d43f278e5ecc67bf53980ceb4caf7975186aaa3"
@@ -149450,14 +149473,15 @@
       "slug": "wireframe-lcsc-parts__Amplifier_Operational__MC33078DR2G-a294f9da",
       "name": "MC33078DR2G",
       "family": "analog.generic",
-      "archetype": "base.ic",
+      "archetype": "ic.amplifier.opamp",
       "class": "ic.analog.opamp",
       "pin_count": 2,
       "companions": 2,
-      "rules": 3,
+      "rules": 4,
       "enforceable": 5,
       "flags": [
-        "pruned:4"
+        "pruned:4",
+        "datasheet_read"
       ],
       "coverage": {},
       "hash": "sha256:0a6fd3a76ae2d26ffb72faafa50e63d6f6e82fab2c4fd68c033f8d9726453100"
@@ -149467,15 +149491,15 @@
       "slug": "wireframe-lcsc-parts__Amplifier_Operational__OP07CDR-e6d4e7ba",
       "name": "OP07CDR",
       "family": "analog.generic",
-      "archetype": "base.ic",
+      "archetype": "ic.amplifier.opamp.single",
       "class": "ic.analog.opamp",
       "pin_count": 5,
       "companions": 2,
-      "rules": 4,
+      "rules": 6,
       "enforceable": 6,
       "flags": [
         "pruned:2",
-        "no_supply_voltages"
+        "datasheet_read"
       ],
       "coverage": {},
       "hash": "sha256:3e167b9507f282ed724d388493e98c2d7a26e422a0e61bf618e82bae936a8882"
@@ -149485,15 +149509,16 @@
       "slug": "wireframe-lcsc-parts__Amplifier_Operational__TJM4558CDT-0ce99990",
       "name": "TJM4558CDT",
       "family": "analog.generic",
-      "archetype": "base.ic",
+      "archetype": "ic.amplifier.opamp",
       "class": "ic.analog.opamp",
       "pin_count": 2,
       "companions": 2,
-      "rules": 2,
+      "rules": 3,
       "enforceable": 4,
       "flags": [
         "pruned:4",
-        "no_supply_voltages"
+        "no_supply_voltages",
+        "datasheet_read"
       ],
       "coverage": {},
       "hash": "sha256:6302efcb0260071e95989306a32238fd7413315588828e9a3de971eaae57b493"
@@ -149503,14 +149528,15 @@
       "slug": "wireframe-lcsc-parts__Amplifier_Operational__LMV321IDBVR-50c27ef1",
       "name": "LMV321IDBVR",
       "family": "analog.generic",
-      "archetype": "base.ic",
+      "archetype": "ic.amplifier.opamp",
       "class": "ic.analog.opamp",
       "pin_count": 5,
-      "companions": 2,
-      "rules": 6,
+      "companions": 3,
+      "rules": 7,
       "enforceable": 8,
       "flags": [
-        "pruned:1"
+        "pruned:1",
+        "datasheet_read"
       ],
       "coverage": {},
       "hash": "sha256:eb2c08455ef0fe8e8d8eca29864aad98a473ca0edcf68df44ec983d69e0f3f95"
@@ -149520,14 +149546,15 @@
       "slug": "wireframe-lcsc-parts__Memory_LCSC__AT93C46DN-SH-T-a7512804",
       "name": "AT93C46DN-SH-T",
       "family": "mem.generic",
-      "archetype": "ic.memory",
+      "archetype": "ic.memory.eeprom",
       "class": "ic.memory",
       "pin_count": 3,
       "companions": 3,
-      "rules": 4,
+      "rules": 5,
       "enforceable": 7,
       "flags": [
-        "pruned:3"
+        "pruned:3",
+        "datasheet_read"
       ],
       "coverage": {},
       "hash": "sha256:d4a13a5a432994a55dc0c815191f003e5caf8cc5b2624f54f7aa7f00b4535132"
@@ -149573,14 +149600,15 @@
       "slug": "wireframe-lcsc-parts__Memory_LCSC__FM25CL64B-GTR-3ab6e412",
       "name": "FM25CL64B-GTR",
       "family": "mem.generic",
-      "archetype": "ic.memory",
+      "archetype": "ic.memory.fram",
       "class": "ic.memory",
       "pin_count": 3,
       "companions": 3,
-      "rules": 4,
+      "rules": 7,
       "enforceable": 7,
       "flags": [
-        "pruned:3"
+        "pruned:3",
+        "datasheet_read"
       ],
       "coverage": {},
       "hash": "sha256:3370b66886d2826c5eba985944366e2fc23c397bdf23f027065d911154674260"
@@ -149590,14 +149618,15 @@
       "slug": "wireframe-lcsc-parts__Memory_LCSC__FM25V10-GTR-6adbead3",
       "name": "FM25V10-GTR",
       "family": "mem.generic",
-      "archetype": "ic.memory",
+      "archetype": "ic.memory.fram",
       "class": "ic.memory",
       "pin_count": 3,
-      "companions": 3,
-      "rules": 4,
+      "companions": 5,
+      "rules": 5,
       "enforceable": 7,
       "flags": [
-        "pruned:3"
+        "pruned:3",
+        "datasheet_read"
       ],
       "coverage": {},
       "hash": "sha256:5d9d9274cfe2ad0878974fbfeb6ac62ab60980e1b94b2053ce3c455fdd1ff206"
@@ -149607,14 +149636,15 @@
       "slug": "wireframe-lcsc-parts__Memory_LCSC__M24C02-WMN6TP-5566d816",
       "name": "M24C02-WMN6TP",
       "family": "mem.generic",
-      "archetype": "ic.memory",
+      "archetype": "ic.memory.eeprom",
       "class": "ic.memory",
       "pin_count": 4,
-      "companions": 2,
-      "rules": 4,
+      "companions": 3,
+      "rules": 5,
       "enforceable": 6,
       "flags": [
-        "pruned:4"
+        "pruned:4",
+        "datasheet_read"
       ],
       "coverage": {},
       "hash": "sha256:f7d9a4f042f90b12948b9b4c9be48da819a14de0fed1c2b4a512802f70681b2f"
@@ -149641,14 +149671,15 @@
       "slug": "wireframe-lcsc-parts__Memory_LCSC__FM24CL16B-GTR-23155129",
       "name": "FM24CL16B-GTR",
       "family": "mem.generic",
-      "archetype": "ic.memory",
+      "archetype": "ic.memory.fram",
       "class": "ic.memory",
       "pin_count": 4,
-      "companions": 2,
-      "rules": 4,
+      "companions": 3,
+      "rules": 5,
       "enforceable": 6,
       "flags": [
-        "pruned:4"
+        "pruned:4",
+        "datasheet_read"
       ],
       "coverage": {},
       "hash": "sha256:902caefe90340490c956355ef56ddd2eae554ed825c4c346d993688270508e4c"
@@ -149658,15 +149689,15 @@
       "slug": "wireframe-lcsc-parts__Memory_LCSC__FEMDRM008G-58A39-09ad4606",
       "name": "FEMDRM008G-58A39",
       "family": "mem.generic",
-      "archetype": "ic.memory",
+      "archetype": "ic.memory.emmc",
       "class": "ic.memory",
-      "pin_count": 15,
-      "companions": 2,
-      "rules": 2,
+      "pin_count": 22,
+      "companions": 3,
+      "rules": 4,
       "enforceable": 4,
       "flags": [
         "pruned:5",
-        "no_supply_voltages"
+        "datasheet_read"
       ],
       "coverage": {},
       "hash": "sha256:bc74263f1253cee18761a55aa0eee865d7611fbc7304ca933d1644902007a24a"
@@ -149750,13 +149781,13 @@
       "family": "mcu.generic",
       "archetype": "ic.mcu",
       "class": "ic.mcu",
-      "pin_count": 4,
-      "companions": 4,
-      "rules": 3,
+      "pin_count": 6,
+      "companions": 5,
+      "rules": 4,
       "enforceable": 7,
       "flags": [
         "pruned:5",
-        "no_supply_voltages"
+        "datasheet_read"
       ],
       "coverage": {},
       "hash": "sha256:6a04420c18f0b8adc1b92b1857a8d673e7508d4d38b0ce61f08e573b4757bf90"
@@ -149768,13 +149799,13 @@
       "family": "mcu.generic",
       "archetype": "ic.mcu",
       "class": "ic.mcu",
-      "pin_count": 7,
-      "companions": 4,
+      "pin_count": 9,
+      "companions": 5,
       "rules": 3,
       "enforceable": 7,
       "flags": [
         "pruned:5",
-        "no_supply_voltages"
+        "datasheet_read"
       ],
       "coverage": {},
       "hash": "sha256:53f1c1eeb09bc40dbd99f2a2ff4361cbf46c459a051e9c2483f986568198d721"
@@ -149787,12 +149818,12 @@
       "archetype": "ic.regulator.ldo",
       "class": "ic.power.ldo",
       "pin_count": 3,
-      "companions": 2,
-      "rules": 3,
+      "companions": 4,
+      "rules": 4,
       "enforceable": 5,
       "flags": [
         "pruned:5",
-        "no_supply_voltages"
+        "datasheet_read"
       ],
       "coverage": {},
       "hash": "sha256:c306c7ed22b9c782099f1bf6b360526484263f248b2bb1b60bf9b8f64401faff"
@@ -149805,12 +149836,12 @@
       "archetype": "ic.regulator.ldo",
       "class": "ic.power.ldo",
       "pin_count": 3,
-      "companions": 2,
-      "rules": 3,
+      "companions": 4,
+      "rules": 4,
       "enforceable": 5,
       "flags": [
         "pruned:5",
-        "no_supply_voltages"
+        "datasheet_read"
       ],
       "coverage": {},
       "hash": "sha256:18430a975affae2a1164d962461435f819c4bc3d142831f33384edc75d0487e0"
@@ -149823,12 +149854,12 @@
       "archetype": "ic.regulator.ldo",
       "class": "ic.power.ldo",
       "pin_count": 4,
-      "companions": 2,
-      "rules": 3,
+      "companions": 4,
+      "rules": 4,
       "enforceable": 5,
       "flags": [
         "pruned:5",
-        "no_supply_voltages"
+        "datasheet_read"
       ],
       "coverage": {},
       "hash": "sha256:042f89feb3798fa7cc508c732efbe9a709516b7539a22950e1ff4107d16c1de7"
@@ -149841,12 +149872,12 @@
       "archetype": "ic.regulator.ldo",
       "class": "ic.power.ldo",
       "pin_count": 3,
-      "companions": 2,
-      "rules": 3,
+      "companions": 4,
+      "rules": 4,
       "enforceable": 5,
       "flags": [
         "pruned:5",
-        "no_supply_voltages"
+        "datasheet_read"
       ],
       "coverage": {},
       "hash": "sha256:f5fbf67f6b1fcc20bfe5f069be1eda295756263ca198409a1d96026f7cba5cc4"
@@ -149859,12 +149890,12 @@
       "archetype": "ic.regulator.ldo",
       "class": "ic.power.ldo",
       "pin_count": 3,
-      "companions": 2,
-      "rules": 3,
+      "companions": 3,
+      "rules": 4,
       "enforceable": 5,
       "flags": [
         "pruned:5",
-        "no_supply_voltages"
+        "datasheet_read"
       ],
       "coverage": {},
       "hash": "sha256:ee8eb2b6198b6e8a9212c2f2c35314d092f5c92a3cb079db0ef048a330740cef"
@@ -149928,15 +149959,15 @@
       "slug": "wireframe-lcsc-parts__Regulator_SwitchedCapacitor__ICL7660AIBAZA-T-d4c3232e",
       "name": "ICL7660AIBAZA-T",
       "family": "reg.controller",
-      "archetype": "ic.regulator.switching",
+      "archetype": "ic.power.charge_pump.inverter",
       "class": "ic.power",
-      "pin_count": 3,
-      "companions": 4,
-      "rules": 2,
+      "pin_count": 7,
+      "companions": 6,
+      "rules": 3,
       "enforceable": 6,
       "flags": [
         "pruned:9",
-        "no_supply_voltages"
+        "datasheet_read"
       ],
       "coverage": {},
       "hash": "sha256:f0041c6582d1fc62f6dba1f1cdcf6d80a33e7292904ab7d56a919b5087918f92"
@@ -149946,14 +149977,15 @@
       "slug": "wireframe-lcsc-parts__Regulator_Controller__OB2263MP-de2a4294",
       "name": "OB2263MP",
       "family": "reg.controller",
-      "archetype": "ic.regulator.switching",
+      "archetype": "ic.power.controller.flyback",
       "class": "ic.power",
-      "pin_count": 4,
-      "companions": 5,
-      "rules": 4,
+      "pin_count": 5,
+      "companions": 7,
+      "rules": 8,
       "enforceable": 9,
       "flags": [
-        "pruned:7"
+        "pruned:7",
+        "datasheet_read"
       ],
       "coverage": {},
       "hash": "sha256:04842fd9fc75336d8e952579e8a77c7cf2cc507f7434338ec740ddc257df6956"
@@ -149963,15 +149995,16 @@
       "slug": "wireframe-lcsc-parts__Regulator_Controller__OB2532MP-cb733cd2",
       "name": "OB2532MP",
       "family": "reg.controller",
-      "archetype": "ic.regulator.switching",
+      "archetype": "ic.power.controller.flyback",
       "class": "ic.power",
-      "pin_count": 4,
-      "companions": 5,
-      "rules": 4,
+      "pin_count": 6,
+      "companions": 7,
+      "rules": 7,
       "enforceable": 9,
       "flags": [
         "pruned:6",
-        "no_supply_voltages"
+        "no_supply_voltages",
+        "datasheet_read"
       ],
       "coverage": {},
       "hash": "sha256:0da3e37a17a2f5156c3409a75bdeb8d6f61a88ab87d63bfade6dbeb874ba6cad"
@@ -149992,22 +150025,22 @@
         "datasheet_read"
       ],
       "coverage": {},
-      "hash": "sha256:5de7cafcac0837fe668a817f59c93d3987ae293cba6833854c16ca9cd31f8cb6"
+      "hash": "sha256:f860a419e302ce4163a97f3cf53e22005df69b16b4dd7891316f6b70eae9e33a"
     },
     {
       "lib_id": "wireframe-lcsc-parts/Regulator_Controller/UCC28C44DR",
       "slug": "wireframe-lcsc-parts__Regulator_Controller__UCC28C44DR-49d347fc",
       "name": "UCC28C44DR",
       "family": "reg.controller",
-      "archetype": "ic.regulator.switching",
+      "archetype": "ic.power.controller.pwm",
       "class": "ic.power",
       "pin_count": 7,
-      "companions": 5,
-      "rules": 4,
+      "companions": 7,
+      "rules": 7,
       "enforceable": 9,
       "flags": [
         "pruned:6",
-        "no_supply_voltages"
+        "datasheet_read"
       ],
       "coverage": {},
       "hash": "sha256:3db0f035f90b182f660cf56696812df30c6bf929f9df8e6a4891da03e19c47a5"
@@ -150017,14 +150050,15 @@
       "slug": "wireframe-lcsc-parts__Regulator_Controller__UCC3895DWTR-adc45323",
       "name": "UCC3895DWTR",
       "family": "reg.controller",
-      "archetype": "ic.regulator.switching",
+      "archetype": "ic.power.controller.pwm",
       "class": "ic.power",
       "pin_count": 5,
-      "companions": 4,
-      "rules": 4,
+      "companions": 6,
+      "rules": 5,
       "enforceable": 8,
       "flags": [
-        "pruned:8"
+        "pruned:8",
+        "datasheet_read"
       ],
       "coverage": {},
       "hash": "sha256:590195dcc5b6cc5f5b9622054f091da62d20b3d5585a21ca5507141d227c727e"
@@ -151503,7 +151537,7 @@
         "no_supply_voltages"
       ],
       "coverage": {},
-      "hash": "sha256:f6d202d305782feb31946f74fae2bab523a113442f708fe0e9bc3916758df958"
+      "hash": "sha256:8ea08d4bb8efb2241f99180de8356cb64fe259861ae118a98f8256dfc7c5edb7"
     },
     {
       "lib_id": "wireframe-lcsc-parts/Connector_USB/MICRO_4P_DIP",
@@ -151521,7 +151555,7 @@
         "no_supply_voltages"
       ],
       "coverage": {},
-      "hash": "sha256:22f29a5b44ef3f6597a543d33266dec750580a9fa888d6f4b18b50c84425a229"
+      "hash": "sha256:02cd12070cd2ad60ccd8f1c9520efa1b5ccf1685988239bda6a40ef6e656344b"
     },
     {
       "lib_id": "wireframe-lcsc-parts/Connector_USB/MICRO_XNJ_ZB",
@@ -151539,7 +151573,7 @@
         "no_supply_voltages"
       ],
       "coverage": {},
-      "hash": "sha256:13cd03548df797c90a79714b54e40179e7bef3c5f1f288d2920c34b6ba1ae2ee"
+      "hash": "sha256:458c1f9c12c3c52c0e9fa7a17dfbf9fe90eaab19d6c777996e94ca989b4c55b6"
     },
     {
       "lib_id": "wireframe-lcsc-parts/Connector_USB/MicroQTJ",
@@ -151575,7 +151609,7 @@
         "no_supply_voltages"
       ],
       "coverage": {},
-      "hash": "sha256:8160491ffeb58a5813927b521dc472ca3f9d128cef3e1720e061b657aaee577d"
+      "hash": "sha256:a1a14fcc85261f450cb9921d3eb8ab0ee0e3b777d89661e5597158ccd4ad00ba"
     },
     {
       "lib_id": "wireframe-lcsc-parts/Connector_USB/TYPE-C-31-M-12",
@@ -151593,7 +151627,7 @@
         "no_supply_voltages"
       ],
       "coverage": {},
-      "hash": "sha256:a01b0be48b1616f1c395f530be5f0c27bcf5c7374af46d2c0f54db308c42e8af"
+      "hash": "sha256:bdb0092e4b0f174a7d448bea90480383637ce5c8b0cc95604408e3ffe8243594"
     },
     {
       "lib_id": "wireframe-lcsc-parts/Connector_USB/TYPE-C16PIN",
@@ -151611,7 +151645,7 @@
         "no_supply_voltages"
       ],
       "coverage": {},
-      "hash": "sha256:5c84685263eac97528531840b2c5459d0d8b2d704886f78647c0a0a724a5543b"
+      "hash": "sha256:44183078c981169fa76d8bfe19358b6edb949654631c0fecffd4199eb58d6e3f"
     },
     {
       "lib_id": "wireframe-lcsc-parts/Connector_USB/TYPE-C_24P_QT",
@@ -151629,7 +151663,7 @@
         "no_supply_voltages"
       ],
       "coverage": {},
-      "hash": "sha256:f9ec452a08cc554cf68ba61ac3e1bc05870c713231607695492b53dfa315bdd4"
+      "hash": "sha256:e66ef1a309d779e9b9c28ec7f18d53fe9bcb74a6bf8928143082d69d5ba5211e"
     },
     {
       "lib_id": "wireframe-lcsc-parts/Connector_USB/TYPE-C_6P",
@@ -151647,7 +151681,7 @@
         "no_supply_voltages"
       ],
       "coverage": {},
-      "hash": "sha256:956968fce31276ba42af92b26f94a9138f781dc632b45fb3ec81c9acb25c9434"
+      "hash": "sha256:25803d98b0a5e412aaec0bb66347f4df460858de5c87629856963b4c05d82e11"
     },
     {
       "lib_id": "wireframe-lcsc-parts/Connector_Card/DM3AT-SF-PEJM5",
@@ -151683,7 +151717,7 @@
         "no_supply_voltages"
       ],
       "coverage": {},
-      "hash": "sha256:67e4b6f1210e0b66d544e6aa0831968c9f602afc696e74094e1e91b8eaf425c5"
+      "hash": "sha256:a18d607141fb6398b9221af9913ceb03007ebb9cce00822edc7d000da3f7ef17"
     },
     {
       "lib_id": "wireframe-lcsc-parts/Connector_WireToBoard/B4B-XH-A_LF__SN",
@@ -151701,7 +151735,7 @@
         "no_supply_voltages"
       ],
       "coverage": {},
-      "hash": "sha256:03e6d414400d25ee665f7ac43bd7718a92a2ee750bb632039a0469e2bc6ae297"
+      "hash": "sha256:54a2ecab4ff56ab2d92244ff2e0fb87c4e34665aa275f4b6e0cdee8949e818e5"
     },
     {
       "lib_id": "wireframe-lcsc-parts/Connector/FTSH-105-01-L-DV",
@@ -151737,7 +151771,7 @@
         "no_supply_voltages"
       ],
       "coverage": {},
-      "hash": "sha256:3c193ae4bfcede4be7f4277c7b671b7701c9356f8037753ea5b8e3dff90b2b6e"
+      "hash": "sha256:6e5cf10c9db2a3d70fade56c580db37e7645adc778ac841af2dbcec24a0d3060"
     },
     {
       "lib_id": "wireframe-lcsc-parts/Connector_Audio/PJ-320A",
@@ -151755,7 +151789,7 @@
         "no_supply_voltages"
       ],
       "coverage": {},
-      "hash": "sha256:6f826f11ef4538bb1c9881b16b4dfa4f241290cd0a59c7ab3110aa4a762a67aa"
+      "hash": "sha256:bb6753a7467168cb1b06e309f84e98ed6a48cb45799a66a8ad58c2b69fc5e74e"
     },
     {
       "lib_id": "wireframe-lcsc-parts/Connector_RJ/R-RJ45R08P-A004",
@@ -151773,7 +151807,7 @@
         "no_supply_voltages"
       ],
       "coverage": {},
-      "hash": "sha256:01f2b865b8c1f2bc5c5912321e6c60ef9eff98c8aa3e31eaaa52fbe252a73237"
+      "hash": "sha256:d10292e7022fd4bf2f1a002e035d169e966f4b8e60a0295dff4f2e00f063775f"
     },
     {
       "lib_id": "wireframe-lcsc-parts/Connector_RJ/R-RJ45R08P-C000",
@@ -151791,7 +151825,7 @@
         "no_supply_voltages"
       ],
       "coverage": {},
-      "hash": "sha256:c806343b7d603104d71e0d940591ecad1e58375e72ef6a897c7dc6043649139d"
+      "hash": "sha256:163c21a6e9681d1012bfef3f6f01463493f003450afd8719e75ebf204031d62f"
     },
     {
       "lib_id": "wireframe-lcsc-parts/Connector_RJ/R-RJ45R10P-B000",
@@ -151809,7 +151843,7 @@
         "no_supply_voltages"
       ],
       "coverage": {},
-      "hash": "sha256:07201104fd2e151c756604ec906cb96a0880f27d471074fa6d283ffe53029b2e"
+      "hash": "sha256:3fbb2855267c17d80974863fef9c752fcc2c4ccc882c64d067d0c398eb7073e4"
     },
     {
       "lib_id": "wireframe-lcsc-parts/Connector_RJ/R-RJ45S08P-B000",
@@ -151827,7 +151861,7 @@
         "no_supply_voltages"
       ],
       "coverage": {},
-      "hash": "sha256:88c8a53a20c3a319420ef8b2237949b37c4530b5f6199f863fee4bdba7f6fd65"
+      "hash": "sha256:455c6387e625e90b89969e70fdd60e356052c4727b84056fd254cedc27954bb0"
     },
     {
       "lib_id": "wireframe-lcsc-parts/Connector_WireToBoard/SM04B-SRSS-TB_LF__SN",
@@ -151863,22 +151897,22 @@
         "no_supply_voltages"
       ],
       "coverage": {},
-      "hash": "sha256:76586a6e7dd439c2dc1ee0dedca8c9b433e3b6959ccd6a301e49e2ae55a52d55"
+      "hash": "sha256:59f0a8285e8f0bc7d6b8c3340800fd879300d11efb18dba7d62b6142ef45ebf1"
     },
     {
       "lib_id": "wireframe-lcsc-parts/Logic_LevelTranslator/SN74LVC4245APWR",
       "slug": "wireframe-lcsc-parts__Logic_LevelTranslator__SN74LVC4245APWR-2c5eada3",
       "name": "SN74LVC4245APWR",
       "family": "logic.generic",
-      "archetype": "ic.logic",
+      "archetype": "ic.logic.translator.bidirectional",
       "class": "ic.logic",
-      "pin_count": 4,
-      "companions": 2,
-      "rules": 2,
+      "pin_count": 8,
+      "companions": 3,
+      "rules": 6,
       "enforceable": 4,
       "flags": [
         "pruned:5",
-        "no_supply_voltages"
+        "datasheet_read"
       ],
       "coverage": {},
       "hash": "sha256:557d091318844bf4b742c50b8883527bb832f4d4e195d6d5ea6a1149fe566927"
@@ -151899,7 +151933,7 @@
         "no_supply_voltages"
       ],
       "coverage": {},
-      "hash": "sha256:44b7add5a67f8bda66f6aa5e1e0e31e88e5afa92d5257c9842a2b11321cb13b9"
+      "hash": "sha256:0f31290c407fe50ae637087da5b98b6d1bbcaf3cdb7f28a1d6eb69f71e35bb9a"
     },
     {
       "lib_id": "wireframe-lcsc-parts/Relay/ST140-16-1CF_DC24",
@@ -151917,7 +151951,7 @@
         "no_supply_voltages"
       ],
       "coverage": {},
-      "hash": "sha256:6c13ef56e4bf0faf2470f0a0e4678f37517c80a73a348098f6eececb682449b9"
+      "hash": "sha256:afd14823f14e83d55b2780c91423bdacb14b4b5cde5ec5cceb96548b663ebb95"
     },
     {
       "lib_id": "wireframe-lcsc-parts/Inductor/CMI201209U2R2KT",
@@ -152176,14 +152210,15 @@
       "slug": "wireframe-lcsc-parts__Battery_Management__TP4054-42-SOT25R-7ad5559e",
       "name": "TP4054-42-SOT25R",
       "family": "power.battery",
-      "archetype": "base.ic",
+      "archetype": "ic.power.charger",
       "class": "power.supply",
-      "pin_count": 2,
+      "pin_count": 4,
       "companions": 2,
-      "rules": 3,
+      "rules": 6,
       "enforceable": 5,
       "flags": [
-        "pruned:4"
+        "pruned:4",
+        "datasheet_read"
       ],
       "coverage": {},
       "hash": "sha256:e4a9dfe94ccb02f9d4a9464e2b7074428e0e65c4f9d7f7066a807b4cb990e8f8"
@@ -152229,14 +152264,15 @@
       "slug": "wireframe-lcsc-parts__Battery_Management__TP4057-42-SOT26-R-eaac5c66",
       "name": "TP4057-42-SOT26-R",
       "family": "power.battery",
-      "archetype": "base.ic",
+      "archetype": "ic.power.charger",
       "class": "power.supply",
-      "pin_count": 2,
-      "companions": 2,
-      "rules": 3,
+      "pin_count": 5,
+      "companions": 3,
+      "rules": 6,
       "enforceable": 5,
       "flags": [
-        "pruned:4"
+        "pruned:4",
+        "datasheet_read"
       ],
       "coverage": {},
       "hash": "sha256:8e206c30692de064762002d26938b8bc37abfcafacc39255ff2422e9b6fcd5c9"
@@ -152264,14 +152300,15 @@
       "slug": "wireframe-lcsc-parts__Power_Supervisor__MAX809STRG-42bf36c0",
       "name": "MAX809STRG",
       "family": "ic.generic",
-      "archetype": "base.ic",
+      "archetype": "ic.supervisor.voltage_reset",
       "class": "ic.power",
       "pin_count": 3,
       "companions": 2,
-      "rules": 4,
+      "rules": 6,
       "enforceable": 6,
       "flags": [
-        "pruned:3"
+        "pruned:3",
+        "datasheet_read"
       ],
       "coverage": {},
       "hash": "sha256:69f0274c7ea7f6b20088c41500ab7dee56e0147c80bbfc4a42aa8c61064f1efe"
@@ -152299,14 +152336,15 @@
       "slug": "wireframe-lcsc-parts__Power_Supervisor__TPS3808G33DBVR-14ae56eb",
       "name": "TPS3808G33DBVR",
       "family": "ic.generic",
-      "archetype": "base.ic",
+      "archetype": "ic.power.supervisor",
       "class": "ic.power",
-      "pin_count": 4,
-      "companions": 2,
-      "rules": 4,
+      "pin_count": 5,
+      "companions": 4,
+      "rules": 8,
       "enforceable": 6,
       "flags": [
-        "pruned:3"
+        "pruned:3",
+        "datasheet_read"
       ],
       "coverage": {},
       "hash": "sha256:daf4609bdc37b651e1c5a746050840923798311d67472ce6252069528541444b"
@@ -152316,15 +152354,15 @@
       "slug": "wireframe-lcsc-parts__Power_Supervisor__TPS3823-33DBVR-77ea558d",
       "name": "TPS3823-33DBVR",
       "family": "ic.generic",
-      "archetype": "base.ic",
+      "archetype": "ic.supervisor.voltage_monitor",
       "class": "ic.power",
-      "pin_count": 3,
-      "companions": 2,
-      "rules": 3,
+      "pin_count": 4,
+      "companions": 3,
+      "rules": 4,
       "enforceable": 5,
       "flags": [
         "pruned:3",
-        "no_supply_voltages"
+        "datasheet_read"
       ],
       "coverage": {},
       "hash": "sha256:f4725a9e12e1275938c21587f2591851a65c189310b339fe1735e316b5273653"
@@ -152334,14 +152372,15 @@
       "slug": "wireframe-lcsc-parts__Power_Supervisor__TPS3828-33DBVR-fcdaea58",
       "name": "TPS3828-33DBVR",
       "family": "ic.generic",
-      "archetype": "base.ic",
+      "archetype": "ic.supervisor.reset",
       "class": "ic.power",
-      "pin_count": 3,
-      "companions": 2,
-      "rules": 4,
+      "pin_count": 4,
+      "companions": 4,
+      "rules": 5,
       "enforceable": 6,
       "flags": [
-        "pruned:3"
+        "pruned:3",
+        "datasheet_read"
       ],
       "coverage": {},
       "hash": "sha256:673687d6fd411ef05077f8b739979ccbe6e6be9bef32d90446c8cc0fa3902123"
@@ -152435,6 +152474,397 @@
       "hash": "sha256:7ef7e6c4ca2a6eaa8bee453a2de80bd58e80b7d1be3abd57563e6341e85ca154"
     },
     {
+      "lib_id": "wireframe-lcsc-parts/Buzzer/TMB12A12",
+      "slug": "wireframe-lcsc-parts__Buzzer__TMB12A12-c5251a45",
+      "name": "TMB12A12",
+      "family": "",
+      "archetype": "audio.buzzer.active",
+      "class": "electromechanical.buzzer",
+      "pin_count": 2,
+      "companions": 0,
+      "rules": 1,
+      "enforceable": 1,
+      "flags": [
+        "datasheet_read"
+      ],
+      "coverage": {},
+      "hash": "sha256:197b37d81ffad60e9f956b40184146e6889ee45db4d7ec97a8c0f633125466f8"
+    },
+    {
+      "lib_id": "wireframe-lcsc-parts/Display_Graphic/HS96L03W2C03",
+      "slug": "wireframe-lcsc-parts__Display_Graphic__HS96L03W2C03-eac73693",
+      "name": "HS96L03W2C03",
+      "family": "",
+      "archetype": "display.oled.i2c",
+      "class": "display.graphic",
+      "pin_count": 2,
+      "companions": 0,
+      "rules": 1,
+      "enforceable": 1,
+      "flags": [
+        "datasheet_read"
+      ],
+      "coverage": {},
+      "hash": "sha256:4c34ce0517b2b5477ff1e2a99906f73fe49462636a3d85502972383ba3e8cd7e"
+    },
+    {
+      "lib_id": "wireframe-lcsc-parts/Transistor_Thyristor/MAC97A6",
+      "slug": "wireframe-lcsc-parts__Transistor_Thyristor__MAC97A6-b86e9c55",
+      "name": "MAC97A6",
+      "family": "",
+      "archetype": "discrete.thyristor.triac",
+      "class": "discrete.transistor",
+      "pin_count": 0,
+      "companions": 0,
+      "rules": 1,
+      "enforceable": 1,
+      "flags": [
+        "datasheet_read"
+      ],
+      "coverage": {},
+      "hash": "sha256:bf5dfe2d2892fe6ebd0d8a01d87ecef7a8f9e5a40af3d9b87bfb15f458704c89"
+    },
+    {
+      "lib_id": "wireframe-lcsc-parts/Display_Graphic/HS96L01W4S03",
+      "slug": "wireframe-lcsc-parts__Display_Graphic__HS96L01W4S03-d0a7ee80",
+      "name": "HS96L01W4S03",
+      "family": "",
+      "archetype": "display.oled.pm",
+      "class": "display.graphic",
+      "pin_count": 3,
+      "companions": 1,
+      "rules": 1,
+      "enforceable": 2,
+      "flags": [
+        "datasheet_read"
+      ],
+      "coverage": {},
+      "hash": "sha256:6a3520a36394f5416c12e7cbcefe7762609df263ad8356a67d29029518142459"
+    },
+    {
+      "lib_id": "wireframe-lcsc-parts/Power_Protection/H5VLD3B",
+      "slug": "wireframe-lcsc-parts__Power_Protection__H5VLD3B-de1784fa",
+      "name": "H5VLD3B",
+      "family": "",
+      "archetype": "diode.tvs.bidirectional",
+      "class": "protection",
+      "pin_count": 0,
+      "companions": 0,
+      "rules": 1,
+      "enforceable": 1,
+      "flags": [
+        "datasheet_read"
+      ],
+      "coverage": {},
+      "hash": "sha256:66aac4f9928a3b322a5975d79628a8e422ba4f23875668764cd2a3a0f0da74b2"
+    },
+    {
+      "lib_id": "wireframe-lcsc-parts/Crystal/SC-32S32.768kHz20PPM12.5pF",
+      "slug": "wireframe-lcsc-parts__Crystal__SC-32S32.768kHz20PPM12.5pF-94c0f453",
+      "name": "SC-32S32.768kHz20PPM12.5pF",
+      "family": "",
+      "archetype": "passive.crystal",
+      "class": "passive.crystal",
+      "pin_count": 2,
+      "companions": 2,
+      "rules": 2,
+      "enforceable": 4,
+      "flags": [
+        "datasheet_read"
+      ],
+      "coverage": {},
+      "hash": "sha256:2b9d35f975040ac9fd02ee931ad774887f12da6199989faf76d3952a7c53956a"
+    },
+    {
+      "lib_id": "wireframe-lcsc-parts/Transistor_Array/ULN2803ADWR",
+      "slug": "wireframe-lcsc-parts__Transistor_Array__ULN2803ADWR-0c987703",
+      "name": "ULN2803ADWR",
+      "family": "",
+      "archetype": "ic.driver.darlington",
+      "class": "discrete.transistor",
+      "pin_count": 9,
+      "companions": 0,
+      "rules": 3,
+      "enforceable": 3,
+      "flags": [
+        "datasheet_read"
+      ],
+      "coverage": {},
+      "hash": "sha256:46d114040c5fb66ff7862df8dc3c954b0c0a2f095347e9d157174530a378962f"
+    },
+    {
+      "lib_id": "wireframe-lcsc-parts/Display_Character/GS3011CB-G",
+      "slug": "wireframe-lcsc-parts__Display_Character__GS3011CB-G-4beee070",
+      "name": "GS3011CB-G",
+      "family": "",
+      "archetype": "display.seven_segment",
+      "class": "display.led",
+      "pin_count": 2,
+      "companions": 8,
+      "rules": 0,
+      "enforceable": 8,
+      "flags": [
+        "datasheet_read"
+      ],
+      "coverage": {},
+      "hash": "sha256:e42273d7abafee67787bb7cb2c93b1e881b886e013295311bc0560a89910bbf5"
+    },
+    {
+      "lib_id": "wireframe-lcsc-parts/Buzzer/MLT-7525",
+      "slug": "wireframe-lcsc-parts__Buzzer__MLT-7525-c8e8cf1e",
+      "name": "MLT-7525",
+      "family": "",
+      "archetype": "transducer.acoustic.buzzer",
+      "class": "electromechanical.buzzer",
+      "pin_count": 0,
+      "companions": 1,
+      "rules": 1,
+      "enforceable": 2,
+      "flags": [
+        "datasheet_read"
+      ],
+      "coverage": {},
+      "hash": "sha256:13b30303e90e9c58686b905dc9bc42276c55551e9a31a367a473c45a3a63efe1"
+    },
+    {
+      "lib_id": "wireframe-lcsc-parts/RF_Module/E104-BT02",
+      "slug": "wireframe-lcsc-parts__RF_Module__E104-BT02-fb5f712d",
+      "name": "E104-BT02",
+      "family": "",
+      "archetype": "module.wireless.bluetooth",
+      "class": "module.wireless",
+      "pin_count": 5,
+      "companions": 0,
+      "rules": 1,
+      "enforceable": 1,
+      "flags": [
+        "datasheet_read"
+      ],
+      "coverage": {},
+      "hash": "sha256:2a5ec42e8f576084c39516179c463fafa85814f4159fb3ed831c02eead5c86cb"
+    },
+    {
+      "lib_id": "wireframe-lcsc-parts/Display_Graphic/X087-2832TSWIG02-H14",
+      "slug": "wireframe-lcsc-parts__Display_Graphic__X087-2832TSWIG02-H14-079de293",
+      "name": "X087-2832TSWIG02-H14",
+      "family": "",
+      "archetype": "display.oled.pmoled",
+      "class": "display.graphic",
+      "pin_count": 6,
+      "companions": 3,
+      "rules": 3,
+      "enforceable": 6,
+      "flags": [
+        "datasheet_read"
+      ],
+      "coverage": {},
+      "hash": "sha256:edf501840260828feb8c13a13fcb8bc9c89e1495ebfc7905148db31bb4cc4241"
+    },
+    {
+      "lib_id": "wireframe-lcsc-parts/Power_Protection/SMF5.0CA",
+      "slug": "wireframe-lcsc-parts__Power_Protection__SMF5.0CA-a6d3073e",
+      "name": "SMF5.0CA",
+      "family": "",
+      "archetype": "diode.tvs.bidirectional",
+      "class": "protection",
+      "pin_count": 0,
+      "companions": 0,
+      "rules": 1,
+      "enforceable": 1,
+      "flags": [
+        "datasheet_read"
+      ],
+      "coverage": {},
+      "hash": "sha256:7b4725db1b3783e06a80f4f8063eecaa431ca2ce0b99a6eae926ab50be743c88"
+    },
+    {
+      "lib_id": "wireframe-lcsc-parts/Crystal/Q13FC13500004",
+      "slug": "wireframe-lcsc-parts__Crystal__Q13FC13500004-f0301fe1",
+      "name": "Q13FC13500004",
+      "family": "",
+      "archetype": "passive.crystal.tuning_fork",
+      "class": "passive.crystal",
+      "pin_count": 0,
+      "companions": 2,
+      "rules": 2,
+      "enforceable": 4,
+      "flags": [
+        "datasheet_read"
+      ],
+      "coverage": {},
+      "hash": "sha256:8f36d8b9df939432d86f79e5588d1dd9369d15f42089af096bf7e1c26e3bed5a"
+    },
+    {
+      "lib_id": "wireframe-lcsc-parts/RF_Module/lora2021-433MHz",
+      "slug": "wireframe-lcsc-parts__RF_Module__lora2021-433MHz-8e1856f1",
+      "name": "lora2021-433MHz",
+      "family": "",
+      "archetype": "module.rf.transceiver",
+      "class": "module.wireless",
+      "pin_count": 7,
+      "companions": 0,
+      "rules": 1,
+      "enforceable": 1,
+      "flags": [
+        "datasheet_read"
+      ],
+      "coverage": {},
+      "hash": "sha256:b1bdcc1b9c4b6abbe0a15a0a861d1b5447a268ba14567d719b6b19a263e63655"
+    },
+    {
+      "lib_id": "wireframe-lcsc-parts/Switch/MST-12D18G4_SPDT_Slide_Switch",
+      "slug": "wireframe-lcsc-parts__Switch__MST-12D18G4_SPDT_Slide_Switch-ed945f38",
+      "name": "MST-12D18G4_SPDT_Slide_Switch",
+      "family": "",
+      "archetype": "switch.spdt",
+      "class": "electromechanical.switch",
+      "pin_count": 0,
+      "companions": 0,
+      "rules": 1,
+      "enforceable": 1,
+      "flags": [
+        "datasheet_read"
+      ],
+      "coverage": {},
+      "hash": "sha256:2f844e2115217dcfcd979f12b777940979605b62831c228b2352fe35799b1db6"
+    },
+    {
+      "lib_id": "wireframe-lcsc-parts/RF_Module/WH-LTE-7S1",
+      "slug": "wireframe-lcsc-parts__RF_Module__WH-LTE-7S1-49e6092a",
+      "name": "WH-LTE-7S1",
+      "family": "",
+      "archetype": "module.cellular.lte_cat1",
+      "class": "module.wireless",
+      "pin_count": 7,
+      "companions": 0,
+      "rules": 2,
+      "enforceable": 2,
+      "flags": [
+        "datasheet_read"
+      ],
+      "coverage": {},
+      "hash": "sha256:613341268ff0a96488f70d3db473879cb54c225b92d5fe556213b6fabbfab8da"
+    },
+    {
+      "lib_id": "wireframe-lcsc-parts/Buzzer/MLT-8530",
+      "slug": "wireframe-lcsc-parts__Buzzer__MLT-8530-1f244247",
+      "name": "MLT-8530",
+      "family": "",
+      "archetype": "transducer.buzzer.electromagnetic",
+      "class": "electromechanical.buzzer",
+      "pin_count": 1,
+      "companions": 1,
+      "rules": 1,
+      "enforceable": 2,
+      "flags": [
+        "datasheet_read"
+      ],
+      "coverage": {},
+      "hash": "sha256:1eb6508516f474c0dc040702dfcb6db4ff7a0d7dd183ace932361d3e98f99ce0"
+    },
+    {
+      "lib_id": "wireframe-lcsc-parts/Crystal/DT-26_32.768KHz",
+      "slug": "wireframe-lcsc-parts__Crystal__DT-26_32.768KHz-13d34014",
+      "name": "DT-26_32.768KHz",
+      "family": "",
+      "archetype": "passive.crystal.tuning_fork",
+      "class": "passive.crystal",
+      "pin_count": 2,
+      "companions": 2,
+      "rules": 0,
+      "enforceable": 2,
+      "flags": [
+        "datasheet_read"
+      ],
+      "coverage": {},
+      "hash": "sha256:fa4331362caa75db8036b1778828d9ae1a7afb91666ae4a0231f3dada9f1b004"
+    },
+    {
+      "lib_id": "wireframe-lcsc-parts/RF_Module/LLCC68-433-LORA",
+      "slug": "wireframe-lcsc-parts__RF_Module__LLCC68-433-LORA-6d00759b",
+      "name": "LLCC68-433-LORA",
+      "family": "",
+      "archetype": "ic.rf.transceiver",
+      "class": "module.wireless",
+      "pin_count": 6,
+      "companions": 1,
+      "rules": 2,
+      "enforceable": 3,
+      "flags": [
+        "datasheet_read"
+      ],
+      "coverage": {},
+      "hash": "sha256:3897ce3099e529168023b105a3f710d7f4559a30d4e3f752d471fc0990bb04f5"
+    },
+    {
+      "lib_id": "wireframe-lcsc-parts/Display_Graphic/HS91L02W2C01",
+      "slug": "wireframe-lcsc-parts__Display_Graphic__HS91L02W2C01-d4175d61",
+      "name": "HS91L02W2C01",
+      "family": "",
+      "archetype": "display.oled.i2c",
+      "class": "display.graphic",
+      "pin_count": 2,
+      "companions": 0,
+      "rules": 3,
+      "enforceable": 3,
+      "flags": [
+        "datasheet_read"
+      ],
+      "coverage": {},
+      "hash": "sha256:7a3d5b94c3b688bfd51589ea3475edc48b21ac3f083362df17a1ce76e3abefd5"
+    },
+    {
+      "lib_id": "wireframe-lcsc-parts/Buzzer/TMB12A05",
+      "slug": "wireframe-lcsc-parts__Buzzer__TMB12A05-9476b5ed",
+      "name": "TMB12A05",
+      "family": "",
+      "archetype": "transducer.acoustic.buzzer.active",
+      "class": "electromechanical.buzzer",
+      "pin_count": 2,
+      "companions": 0,
+      "rules": 1,
+      "enforceable": 1,
+      "flags": [
+        "datasheet_read"
+      ],
+      "coverage": {},
+      "hash": "sha256:d33becd094c000d47b69ad8f0ed44414df1654c85e91756e7f6645150a34219e"
+    },
+    {
+      "lib_id": "wireframe-lcsc-parts/Crystal/VT-200-F_32.768KHz_5PPM_12.5pF",
+      "slug": "wireframe-lcsc-parts__Crystal__VT-200-F_32.768KHz_5PPM_12.5pF-c366aa57",
+      "name": "VT-200-F_32.768KHz_5PPM_12.5pF",
+      "family": "",
+      "archetype": "passive.resonator.crystal",
+      "class": "passive.crystal",
+      "pin_count": 2,
+      "companions": 2,
+      "rules": 0,
+      "enforceable": 2,
+      "flags": [
+        "datasheet_read"
+      ],
+      "coverage": {},
+      "hash": "sha256:1b9a90435cf50926f7bfcc4347eb1fc91c86fb7e58dbd981ae7333f3f4fe4018"
+    },
+    {
+      "lib_id": "wireframe-lcsc-parts/Crystal/SC-32S32.768kHz20PPM7pF",
+      "slug": "wireframe-lcsc-parts__Crystal__SC-32S32.768kHz20PPM7pF-ad28a615",
+      "name": "SC-32S32.768kHz20PPM7pF",
+      "family": "",
+      "archetype": "passive.crystal",
+      "class": "passive.crystal",
+      "pin_count": 2,
+      "companions": 2,
+      "rules": 2,
+      "enforceable": 4,
+      "flags": [
+        "datasheet_read"
+      ],
+      "coverage": {},
+      "hash": "sha256:ddbed68b36a2eb84304406339d380bd117876cbbee7d0e763c66db1f7dc797e7"
+    },
+    {
       "lib_id": "wireframe-lcsc-parts/RF_Module/Ra-02",
       "slug": "wireframe-lcsc-parts__RF_Module__Ra-02-9382c7e4",
       "name": "Ra-02",
@@ -152450,6 +152880,57 @@
       ],
       "coverage": {},
       "hash": "sha256:d9b039c11df060f771573db453eb7f2017dc0d9d9f0f69e499356a2d10f61279"
+    },
+    {
+      "lib_id": "wireframe-lcsc-parts/RF_Module/E73-2G4M04S1B",
+      "slug": "wireframe-lcsc-parts__RF_Module__E73-2G4M04S1B-43e6f1d6",
+      "name": "E73-2G4M04S1B",
+      "family": "",
+      "archetype": "ic.rf.ble_module",
+      "class": "module.wireless",
+      "pin_count": 8,
+      "companions": 0,
+      "rules": 1,
+      "enforceable": 1,
+      "flags": [
+        "datasheet_read"
+      ],
+      "coverage": {},
+      "hash": "sha256:c1332088bc3884559760588699f89c9d4386e5b102d3144b661a72f23ed17c2d"
+    },
+    {
+      "lib_id": "wireframe-lcsc-parts/Power_Protection/H3V3HD3U",
+      "slug": "wireframe-lcsc-parts__Power_Protection__H3V3HD3U-c1274058",
+      "name": "H3V3HD3U",
+      "family": "",
+      "archetype": "diode.tvs.unidirectional",
+      "class": "protection",
+      "pin_count": 1,
+      "companions": 0,
+      "rules": 1,
+      "enforceable": 1,
+      "flags": [
+        "datasheet_read"
+      ],
+      "coverage": {},
+      "hash": "sha256:2ac69e224b69c75b039d623e023a0b52e883d0a1f642f5a151cdc0bad23fc73b"
+    },
+    {
+      "lib_id": "wireframe-lcsc-parts/LED/KT-0805W",
+      "slug": "wireframe-lcsc-parts__LED__KT-0805W-0413aece",
+      "name": "KT-0805W",
+      "family": "",
+      "archetype": "led",
+      "class": "discrete.led",
+      "pin_count": 0,
+      "companions": 1,
+      "rules": 0,
+      "enforceable": 1,
+      "flags": [
+        "datasheet_read"
+      ],
+      "coverage": {},
+      "hash": "sha256:8a6939a9d446caaf94af98dc1385d0ba4d3689df9d732448dc2902cec09ef1e3"
     }
   ]
 }
