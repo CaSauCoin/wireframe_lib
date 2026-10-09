@@ -78,7 +78,7 @@ CATEGORY_TO_LIBRARY: list[tuple[str, str, str]] = [
     (r'Wire To Board', 'Connector_WireToBoard', 'connector.wire_to_board'),
     (r'Terminal Block|Screw Terminal', 'Connector_TerminalBlock', 'connector.terminal_block'),
     (r'HDMI|DisplayPort|\bDVI\b', 'Connector_Video', 'connector.video'),
-    (r'Battery Holder|Battery Clip|Battery Contact|Battery Connector', 'Battery', 'power.battery'),
+    (r'Battery (Holder|Clip|Spring|Contact|Connector)', 'Battery', 'power.battery'),
     (r'Pogo|Spring Probe|Spring Contact', 'Connector', 'connector'),
     (r'Header|Board To Board|FFC|FPC|Connector', 'Connector', 'connector'),
 
@@ -92,7 +92,8 @@ CATEGORY_TO_LIBRARY: list[tuple[str, str, str]] = [
     (r'Battery Management|Battery Charg', 'Battery_Management', ''),
     (r'Supervisor|Reset IC|Voltage Detector', 'Power_Supervisor', ''),
     (r'Voltage Reference', 'Reference_Voltage', ''),
-    (r'Power Distribution Switch|Load Switch|Power Mux|Ideal Diode|ORing', 'Power_Management', ''),
+    (r'Power Distribution Switch|Load Switch|Power Mux|Ideal Diode|ORing|Power Management - Specialized|PMIC',
+     'Power_Management', ''),
     (r'Microcontroller|MCU', 'MCU_LCSC', ''),
     (r'(WiFi|Bluetooth|LoRa|Zigbee|GPS|GNSS|NFC|RFID|\dG|NB-IoT|Communication|RF) ?\S* ?Modules?', 'RF_Module', ''),
     (r'RF ', 'RF', ''),
