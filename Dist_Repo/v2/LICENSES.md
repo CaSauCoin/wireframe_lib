@@ -49,3 +49,10 @@ Symbols and footprints served by LCSC/EasyEDA for an EXACT manufacturer part num
 ## WireFrame KiCad families
 
 KiCad mechanical, switch, audio, power-entry, battery, buzzer and wire-pad symbols bound to unmodified KiCad footprints by identical pin/pad designators; 3D from kicad-packages3D where the footprint declares one. CC-BY-SA-4.0 WITH KiCad-Libraries-exception; see sources/kicad-families/PROVENANCE.json.
+
+## 3D models added by tools/fill_3d_models.py
+
+Each part zip's `part.json` names where its model came from (`model3d.origin`) and what was measured before it was accepted (`model3d.fit`: the share of copper pads the model's feet land on). collections/3d/fill_report.json records every decision.
+
+- `origin: generator` — built by KiCad's own 3D generator (kicad-library-tools, CadQuery) for a model name a KiCad footprint declares and kicad-packages3D does not ship. CC-BY-SA-4.0 WITH KiCad-Libraries-exception, as kicad-packages3D.
+- `origin: easyeda` — the 3D model the JLCEDA/EasyEDA Official Library attaches to the LCSC part's footprint. Source: JLCEDA/EasyEDA Official Library — https://lceda.cn/ and https://easyeda.com. Copyright in those models belongs to JLCEDA/EasyEDA.

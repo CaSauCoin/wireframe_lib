@@ -270,8 +270,28 @@ def overlay(entry: dict, read: dict, datasheet: str) -> dict:
     """A pack entry with what the datasheet said laid over it."""
     merged = dict(entry)
     pins = {p['number']: dict(p) for p in entry.get('pins', [])}
+
+    def spelled(name) -> str:
+        return (name or '').strip().upper()
+    numbers_named: dict[str, list[str]] = {}
+    for p in entry.get('pins', []):
+        numbers_named.setdefault(spelled(p.get('name')), []).append(p['number'])
     for p in read.get('pins', []):
-        mine = pins.setdefault(p['number'], {'number': p['number'], 'name': p.get('name', '')})
+        number = p['number']
+        here = pins.get(number)
+        if here and spelled(p.get('name')) and spelled(here.get('name')) not in ('', '~', spelled(p.get('name'))):
+            # The researched pin's number is a DIFFERENT pin on this symbol: the
+            # research copied its numbers from an older drawing. Until the
+            # EasyEDA decoder read the number label, XC6206's VIN was drawn on
+            # pin 2 and the contract says so; laid on the corrected symbol by
+            # number, VOUT would have become the input. The name is what the
+            # datasheet was read for, so follow it — or drop the pin if it is
+            # ambiguous.
+            same = numbers_named.get(spelled(p.get('name')), [])
+            if len(same) != 1:
+                continue
+            number = same[0]
+        mine = pins.setdefault(number, {'number': number, 'name': p.get('name', '')})
         for key in ('role', 'domain', 'required', 'pull', 'polarity'):
             if p.get(key):
                 mine[key] = p[key]
@@ -492,6 +512,9 @@ def main() -> None:
     ap.add_argument('--refresh', action='store_true',
                     help='rebuild the LCSC parts already in the library from sources/lcsc-parts/kicad (zips, '
                          'previews, entries) — after the collector itself was fixed')
+    ap.add_argument('--only', nargs='+', metavar='NAME', default=[],
+                    help='with --refresh: rebuild only these parts (symbol names), leaving the rest of the LCSC '
+                         'parts and their contracts as they are')
     ap.add_argument('--contracts-only', action='store_true',
                     help='lay --contracts over the LCSC parts already in the library and stop (research that finished '
                          'after the parts were added)')
@@ -518,7 +541,8 @@ def main() -> None:
         key = re.sub(r'[^a-z0-9]', '', p.record.name.lower().rstrip('+'))
         shard = p.klass.split('.')[0]
         if args.refresh and (entries.get(p.record.id) or {}).get('source') == SOURCE_NAME:
-            adding.append(p)
+            if not args.only or p.record.name in args.only:
+                adding.append(p)
         elif key in have or p.record.id in entries:
             skipped.append({'name': p.record.name, 'why': 'already in the library'})
         elif shard not in shard_names:
