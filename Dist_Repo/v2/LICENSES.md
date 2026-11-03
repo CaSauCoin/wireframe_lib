@@ -4,19 +4,19 @@ Every part distributed here is derived from one of the sources below.
 Each `part.json` carries its own `source.license` and `source.commit`;
 this file is the summary.
 
-| Source | Licence | Upstream | Commit |
-| ------ | ------- | -------- | ------ |
-| wireframe-curated-maker | mixed per PROVENANCE.json | https://github.com/CaSauCoin/WireFrameEDA | `4b2775ba4ea5526b6093d05baa35e33cb29417b6` |
-| wireframe-curated-maker-3d | mixed per PROVENANCE.json | https://github.com/CaSauCoin/WireFrameEDA | `4b2775ba4ea5526b6093d05baa35e33cb29417b6` |
-| kicad-symbols | CC-BY-SA-4.0 WITH KiCad-Libraries-exception | https://gitlab.com/kicad/libraries/kicad-symbols | `b705e03a5b374ec0700469011805bf1fd5102df2` |
-| kicad-footprints | CC-BY-SA-4.0 WITH KiCad-Libraries-exception | https://gitlab.com/kicad/libraries/kicad-footprints | `c2593cf26a475def24d7b2135fc46daf4d96d608` |
-| kicad-packages3D | CC-BY-SA-4.0 WITH KiCad-Libraries-exception | https://gitlab.com/kicad/libraries/kicad-packages3D | `e62ed1fc7862da83f789bd562671b5e4b82afcdf` |
-| Alternate-KiCad-Library | CC-BY-SA-4.0 WITH KiCad-Libraries-exception | https://github.com/DawidCislo/Alternate-KiCad-Library | `cf93181d5934eca1b0560f66895f1b06958700f7` |
-| digikey-kicad-library | CC-BY-SA-4.0 with KiCad-style exception | https://github.com/Digi-Key/digikey-kicad-library | `d4bd68f42e6ccc474526811a853a03692e170b58` |
-| SparkFun-KiCad-Libraries | CC-BY-4.0 | https://github.com/sparkfun/SparkFun-KiCad-Libraries | `5741e46fc9824e1e83e5cd353fc43880803dafcb` |
-| espressif-kicad-libraries | CC-BY-SA-4.0 WITH KiCad-Libraries-exception | https://github.com/espressif/kicad-libraries | `dd76561812ab300351234ba6e0ec1295641796f0` |
-| JLCPCB-Kicad-Library | MIT | https://github.com/CDFER/JLCPCB-Kicad-Library | `e37fb96f4a4b54013293b80963efb1208d573d43` |
-| Seeed-OPL-Kicad-Library | CC-BY-SA-4.0 | https://github.com/Seeed-Studio/OPL_Kicad_Library | `b0035c51eb0348bb3e165fdb2f2765fa3d1d17bd` |
+| Source | Licence | Upstream | Commit | Upstream notice |
+| ------ | ------- | -------- | ------ | --------------- |
+| wireframe-curated-maker | mixed per PROVENANCE.json | https://github.com/CaSauCoin/WireFrameEDA | `4b2775ba4ea5526b6093d05baa35e33cb29417b6` | — |
+| wireframe-curated-maker-3d | mixed per PROVENANCE.json | https://github.com/CaSauCoin/WireFrameEDA | `4b2775ba4ea5526b6093d05baa35e33cb29417b6` | — |
+| kicad-symbols | CC-BY-SA-4.0 WITH KiCad-Libraries-exception | https://gitlab.com/kicad/libraries/kicad-symbols | `b705e03a5b374ec0700469011805bf1fd5102df2` | [kicad-symbols-LICENSE.md](LICENSES/kicad-symbols-LICENSE.md) |
+| kicad-footprints | CC-BY-SA-4.0 WITH KiCad-Libraries-exception | https://gitlab.com/kicad/libraries/kicad-footprints | `c2593cf26a475def24d7b2135fc46daf4d96d608` | [kicad-footprints-LICENSE.md](LICENSES/kicad-footprints-LICENSE.md) |
+| kicad-packages3D | CC-BY-SA-4.0 WITH KiCad-Libraries-exception | https://gitlab.com/kicad/libraries/kicad-packages3D | `e62ed1fc7862da83f789bd562671b5e4b82afcdf` | [kicad-packages3D-LICENSE.md](LICENSES/kicad-packages3D-LICENSE.md) |
+| Alternate-KiCad-Library | CC-BY-SA-4.0 WITH KiCad-Libraries-exception | https://github.com/DawidCislo/Alternate-KiCad-Library | `cf93181d5934eca1b0560f66895f1b06958700f7` | [Alternate-KiCad-Library-README.md](LICENSES/Alternate-KiCad-Library-README.md) |
+| digikey-kicad-library | CC-BY-SA-4.0 with KiCad-style exception | https://github.com/Digi-Key/digikey-kicad-library | `d4bd68f42e6ccc474526811a853a03692e170b58` | [digikey-kicad-library-LICENSE.md](LICENSES/digikey-kicad-library-LICENSE.md) |
+| SparkFun-KiCad-Libraries | CC-BY-4.0 | https://github.com/sparkfun/SparkFun-KiCad-Libraries | `5741e46fc9824e1e83e5cd353fc43880803dafcb` | [SparkFun-KiCad-Libraries-README.md](LICENSES/SparkFun-KiCad-Libraries-README.md) |
+| espressif-kicad-libraries | CC-BY-SA-4.0 WITH KiCad-Libraries-exception | https://github.com/espressif/kicad-libraries | `dd76561812ab300351234ba6e0ec1295641796f0` | [espressif-kicad-libraries-LICENSE.md](LICENSES/espressif-kicad-libraries-LICENSE.md) |
+| JLCPCB-Kicad-Library | MIT | https://github.com/CDFER/JLCPCB-Kicad-Library | `e37fb96f4a4b54013293b80963efb1208d573d43` | [JLCPCB-Kicad-Library-LICENSE](LICENSES/JLCPCB-Kicad-Library-LICENSE) |
+| Seeed-OPL-Kicad-Library | CC-BY-SA-4.0 | https://github.com/Seeed-Studio/OPL_Kicad_Library | `b0035c51eb0348bb3e165fdb2f2765fa3d1d17bd` | [Seeed-OPL-Kicad-Library-LICENSE](LICENSES/Seeed-OPL-Kicad-Library-LICENSE) |
 
 ## KiCad libraries
 
@@ -56,3 +56,11 @@ Each part zip's `part.json` names where its model came from (`model3d.origin`) a
 
 - `origin: generator` — built by KiCad's own 3D generator (kicad-library-tools, CadQuery) for a model name a KiCad footprint declares and kicad-packages3D does not ship. CC-BY-SA-4.0 WITH KiCad-Libraries-exception, as kicad-packages3D.
 - `origin: easyeda` — the 3D model the JLCEDA/EasyEDA Official Library attaches to the LCSC part's footprint. Source: JLCEDA/EasyEDA Official Library — https://lceda.cn/ and https://easyeda.com. Copyright in those models belongs to JLCEDA/EasyEDA.
+
+## Licence texts
+
+`LICENSES/` holds each upstream's own licence or notice, named after the
+source, and the full texts of the Creative Commons licences they use:
+`CC-BY-SA-4.0.txt` (KiCad, Digi-Key, Seeed, espressif and the WireFrame
+packages derived from KiCad) and `CC-BY-4.0.txt` (SparkFun). JLCPCB's MIT
+notice is its own licence file.
