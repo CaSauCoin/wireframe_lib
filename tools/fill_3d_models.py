@@ -323,7 +323,9 @@ def fix_offsets(shards: dict, plan: bool) -> dict[str, bool]:
 def main():
     ap = argparse.ArgumentParser(description=__doc__.split('\n')[0])
     ap.add_argument('--generated', type=Path, help='STEP files built by KiCad\'s generator (any depth)')
-    ap.add_argument('--sources', default='generator,easyeda', help='comma-separated, in order of preference')
+    # easyeda is withdrawn (EasyEDA's terms forbid redistributing its models; add_lcsc_parts.py): only
+    # --drop easyeda still has a use, on a tree built before 2026-11-03.
+    ap.add_argument('--sources', default='generator', help='comma-separated, in order of preference')
     ap.add_argument('--only', default='', help='substring of part ids to consider')
     ap.add_argument('--plan', action='store_true', help='measure and report; write nothing')
     ap.add_argument('--drop', metavar='ORIGIN', help='remove every model this tool added from ORIGIN, and stop')

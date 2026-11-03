@@ -42,10 +42,6 @@ KiCad `Connector` USB symbols bound to unmodified KiCad `Connector_USB` footprin
 
 KiCad `Connector` microSD, SD and SIM symbols bound to unmodified KiCad `Connector_Card` footprints by identical pin/pad designators; 3D models from kicad-packages3D where the footprint declares one. CC-BY-SA-4.0 WITH KiCad-Libraries-exception; see sources/card-packages/PROVENANCE.json.
 
-## WireFrame LCSC parts
-
-Symbols and footprints served by LCSC/EasyEDA for an EXACT manufacturer part number, each checked against that number and its own pads; see sources/lcsc-parts/PROVENANCE.json for the LCSC code, maker and URL of every part. Redistribution terms of this content are to be confirmed before a public release.
-
 ## WireFrame KiCad families
 
 KiCad mechanical, switch, audio, power-entry, battery, buzzer and wire-pad symbols bound to unmodified KiCad footprints by identical pin/pad designators; 3D from kicad-packages3D where the footprint declares one. CC-BY-SA-4.0 WITH KiCad-Libraries-exception; see sources/kicad-families/PROVENANCE.json.
@@ -55,7 +51,6 @@ KiCad mechanical, switch, audio, power-entry, battery, buzzer and wire-pad symbo
 Each part zip's `part.json` names where its model came from (`model3d.origin`) and what was measured before it was accepted (`model3d.fit`: the share of copper pads the model's feet land on). collections/3d/fill_report.json records every decision.
 
 - `origin: generator` — built by KiCad's own 3D generator (kicad-library-tools, CadQuery) for a model name a KiCad footprint declares and kicad-packages3D does not ship. CC-BY-SA-4.0 WITH KiCad-Libraries-exception, as kicad-packages3D.
-- `origin: easyeda` — the 3D model the JLCEDA/EasyEDA Official Library attaches to the LCSC part's footprint. Source: JLCEDA/EasyEDA Official Library — https://lceda.cn/ and https://easyeda.com. Copyright in those models belongs to JLCEDA/EasyEDA.
 
 ## Licence texts
 

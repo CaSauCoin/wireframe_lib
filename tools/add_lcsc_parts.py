@@ -28,8 +28,13 @@ previews, the affected class shards, clusters, the search index, the manifest,
 LICENSES.md, PROVENANCE.json and collections/lcsc/catalog.json. No network,
 no upload. `--plan` prints what would be added and writes nothing.
 
-EasyEDA's terms for redistributing this content must be confirmed before a
-PUBLIC release of a library built with it.
+WITHDRAWN 2026-11-03. EasyEDA's terms (effective 2026-09-21, section VII)
+allow its content to be downloaded for personal, noncommercial use only, and
+forbid redistributing it and collecting it in bulk by script. The published
+library therefore carries no LCSC part, and `main` refuses to add one. The app
+fetches a part from LCSC on the user's own machine when they ask for it
+(AI/Library/AI_Lcsc_Source). `update_indexes` stays here: withdraw_parts.py
+uses it.
 """
 from __future__ import annotations
 
@@ -486,19 +491,12 @@ def update_indexes(out: Path, entries: dict, manifest: dict, touched_shards: set
         'with_3d': sum(bool(e.get('has_3d')) for e in entries.values() if e['tier'] in {'A', 'B', 'G'}),
         'description_origin': dict(Counter(p.record.description_origin for p in visible))}
     manifest['clusters'] = {'index': 'clusters/index.json', 'count': len(clusters), 'by_class': counts}
-    if not any(s['name'] == SOURCE_NAME for s in manifest['sources']):
-        manifest['sources'].append({'name': SOURCE_NAME, 'license': LICENSE,
-                                    'url': 'https://github.com/CaSauCoin/wireframe_lib/tree/main/sources/lcsc-parts',
-                                    'rank': 55, 'commit': '', 'provenance': 'sources/lcsc-parts/PROVENANCE.json'})
-        with (out / 'LICENSES.md').open('a') as f:
-            f.write('\n## WireFrame LCSC parts\n\nSymbols and footprints served by LCSC/EasyEDA for an EXACT '
-                    'manufacturer part number, each checked against that number and its own pads; see '
-                    'sources/lcsc-parts/PROVENANCE.json for the LCSC code, maker and URL of every part. '
-                    'Redistribution terms of this content are to be confirmed before a public release.\n')
     (out / 'lib_index.json').write_text(json.dumps(manifest, ensure_ascii=False, indent=2) + '\n')
 
 
 def main() -> None:
+    raise SystemExit('LCSC/EasyEDA content may not be redistributed (EasyEDA terms, section VII); '
+                     'the app fetches LCSC parts per user. See this file\'s docstring.')
     ap = argparse.ArgumentParser(description=__doc__.splitlines()[0])
     ap.add_argument('--plan', action='store_true', help='print what would be added; write nothing')
     ap.add_argument('--contracts', type=Path, metavar='FILE',
